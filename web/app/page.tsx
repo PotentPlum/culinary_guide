@@ -119,7 +119,7 @@ export default function App() {
                 What&apos;s in season <em>right now</em>
               </h1>
               <p className="hero-sub">
-                {counts.peak} vegetables at their peak,{" "}
+                {counts.peak} locally grown vegetables at peak freshness,{" "}
                 {counts.soon} coming soon,{" "}
                 {counts.ending} on their way out.
               </p>
