@@ -3,7 +3,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Mise — a cook's almanac",
-  description: "Seasonal vegetables in the Netherlands, month by month.",
+  description: "Locally grown, seasonal vegetables in the Netherlands — peak freshness, month by month.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

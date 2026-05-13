@@ -1,6 +1,16 @@
 /**
  * VegItem — one entry in the vegetable database.
  *
+ * SCOPE: This dataset covers fresh, locally grown vegetables in the Netherlands only.
+ * Seasonality reflects field/greenhouse harvest windows for Dutch-grown produce —
+ * not import availability. "Peak" means the vegetable is at its flavour best from
+ * local soil, not simply available in a supermarket.
+ *
+ * Do NOT add:
+ *  - Imported produce that is available year-round (e.g. avocado, mango, citrus)
+ *  - Fruits, berries, or nuts (separate dataset if needed)
+ *  - Anything whose seasonality is driven by import rather than local harvest
+ *
  * Required fields must always be filled in.
  * Optional fields (marked ?) can be left out when data isn't available yet.
  *
@@ -29,14 +39,16 @@
  *              "Squash", "Tuber", "Fruit-vegetable", "Mushroom", "Herb"
  *              Add new categories as needed, but keep the list short.
  *
- * peak         Months when this vegetable is at its absolute best — flavour peak, full
- *              availability. Array of integers 1–12 (1 = January). Can span a year-boundary
- *              naturally: [11, 12, 1, 2] means November through February.
+ * peak         Months when this vegetable is at its absolute best from Dutch local harvest —
+ *              full flavour, peak freshness, widely available from nearby growers.
+ *              Array of integers 1–12 (1 = January). Can span a year-boundary naturally:
+ *              [11, 12, 1, 2] means November through February.
  *              Example: [4, 5, 6] means April, May, June.
+ *              Base these on Dutch field/greenhouse cycles, not retail import windows.
  *
- * shoulder     Months when the vegetable is available but not at its best — just coming in
- *              or fading out. Optional. Shown as "half" cells in the calendar.
- *              Same integer format as peak.
+ * shoulder     Months when the vegetable is locally available but not at its best —
+ *              just starting or winding down. Optional. Shown as "half" cells in calendar.
+ *              Same integer format as peak. Still must reflect NL local harvest.
  *
  * blurb        One or two sentences of editorial copy shown on the card/detail panel.
  *              Should capture what's special, seasonal, or surprising. Avoid generic health
