@@ -1,13 +1,14 @@
-type Counts = { all: number; peak: number; soon: number; ending: number };
-type Filter = "all" | "peak" | "soon" | "ending";
+export type Counts = { all: number; peak: number; shoulder: number; soon: number; ending: number };
+export type Filter = "all" | "peak" | "shoulder" | "soon" | "ending";
 
 type Props = { value: Filter; onChange: (f: Filter) => void; counts: Counts };
 
 const OPTIONS: { id: Filter; label: string }[] = [
-  { id: "all",    label: "All in season" },
-  { id: "peak",   label: "In peak" },
-  { id: "soon",   label: "Coming soon" },
-  { id: "ending", label: "Ending soon" },
+  { id: "all",      label: "All in season" },
+  { id: "peak",     label: "In peak" },
+  { id: "shoulder", label: "Available" },
+  { id: "soon",     label: "Coming soon" },
+  { id: "ending",   label: "Ending soon" },
 ];
 
 export default function FilterPills({ value, onChange, counts }: Props) {

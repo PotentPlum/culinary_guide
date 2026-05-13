@@ -3,9 +3,39 @@ import { VEG_DATA, MONTHS, MONTHS_LONG } from "@/lib/vegetables";
 
 type Props = { month: number; onOpen: (v: VegItem) => void };
 
+/**
+ * Returns the calendar month where a vegetable's season begins, accounting
+ * for seasons that wrap across the December→January boundary.
+ *
+ * Strategy: find the largest gap between consecutive peak months (including
+ * the wraparound gap from the last month back to the first). The season
+ * starts at the month immediately after that gap.
+ *
+ * Examples:
+ *   kale  [10,11,12,1,2,3] → largest gap is 3→10 (7 months) → starts Oct (10)
+ *   kale was sorting to Jan (1) with Math.min, which was wrong.
+ */
+function seasonStart(peak: number[]): number {
+  const sorted = [...peak].sort((a, b) => a - b);
+  let maxGap = 0;
+  let start = sorted[0];
+  for (let i = 0; i < sorted.length; i++) {
+    const nextIdx = (i + 1) % sorted.length;
+    // Wraparound gap: distance from last month back around to the first.
+    const gap = nextIdx === 0
+      ? sorted[0] + 12 - sorted[i]
+      : sorted[nextIdx] - sorted[i];
+    if (gap > maxGap) {
+      maxGap = gap;
+      start = nextIdx === 0 ? sorted[0] : sorted[nextIdx];
+    }
+  }
+  return start;
+}
+
 export default function CalendarPage({ month, onOpen }: Props) {
   const sorted = [...VEG_DATA].sort(
-    (a, b) => Math.min(...a.peak) - Math.min(...b.peak) || a.name.localeCompare(b.name)
+    (a, b) => seasonStart(a.peak) - seasonStart(b.peak) || a.name.localeCompare(b.name)
   );
 
   return (

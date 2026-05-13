@@ -4,7 +4,7 @@ import { useState, useMemo } from "react";
 import { VEG_DATA, statusFor, MONTHS_LONG, type VegItem, type VegStatus } from "@/lib/vegetables";
 import NavIcon from "@/components/NavIcon";
 import VegCard from "@/components/VegCard";
-import FilterPills from "@/components/FilterPills";
+import FilterPills, { type Filter, type Counts } from "@/components/FilterPills";
 import FuturePeek from "@/components/FuturePeek";
 import CalendarPage from "@/components/CalendarPage";
 import DetailPanel from "@/components/DetailPanel";
@@ -12,7 +12,6 @@ import DetailPanel from "@/components/DetailPanel";
 type Page = "seasonal" | "calendar";
 type View = "grid" | "list";
 type Density = "cozy" | "comfortable" | "compact";
-type Filter = "all" | "peak" | "soon" | "ending";
 
 const NAV_ITEMS = [
   { id: "seasonal",      label: "Seasonal",      icon: "leaf",    ready: true },
@@ -23,18 +22,16 @@ const NAV_ITEMS = [
   { id: "foraging",      label: "Foraging",      icon: "compass", ready: false },
 ];
 
-const STATUS_ORDER: Record<VegStatus, number> = { peak: 0, soon: 1, ending: 2, shoulder: 3, off: 4 };
+const STATUS_ORDER: Record<VegStatus, number> = { peak: 0, shoulder: 1, soon: 2, ending: 3, off: 4 };
 
 export default function App() {
-  const currentMonth = new Date().getMonth() + 1;
+  const month = new Date().getMonth() + 1;
   const [page, setPage] = useState<Page>("seasonal");
   const [filter, setFilter] = useState<Filter>("all");
   const [query, setQuery] = useState("");
   const [view, setView] = useState<View>("grid");
-  const [density, setDensity] = useState<Density>("comfortable");
+  const [density] = useState<Density>("comfortable");
   const [openVeg, setOpenVeg] = useState<VegItem | null>(null);
-
-  const month = currentMonth;
 
   const all = useMemo(
     () => VEG_DATA.map((v) => ({ ...v, _status: statusFor(v, month) })),
@@ -42,11 +39,12 @@ export default function App() {
   );
   const inSeason = useMemo(() => all.filter((v) => v._status !== "off"), [all]);
 
-  const counts = useMemo(() => ({
-    all: inSeason.length,
-    peak: inSeason.filter((v) => v._status === "peak").length,
-    soon: inSeason.filter((v) => v._status === "soon").length,
-    ending: inSeason.filter((v) => v._status === "ending").length,
+  const counts = useMemo<Counts>(() => ({
+    all:      inSeason.length,
+    peak:     inSeason.filter((v) => v._status === "peak").length,
+    shoulder: inSeason.filter((v) => v._status === "shoulder").length,
+    soon:     inSeason.filter((v) => v._status === "soon").length,
+    ending:   inSeason.filter((v) => v._status === "ending").length,
   }), [inSeason]);
 
   const filtered = useMemo(() => {
@@ -119,9 +117,8 @@ export default function App() {
                 What&apos;s in season <em>right now</em>
               </h1>
               <p className="hero-sub">
-                {counts.peak} locally grown vegetables at peak freshness,{" "}
-                {counts.soon} coming soon,{" "}
-                {counts.ending} on their way out.
+                {counts.peak} at peak · {counts.shoulder} available ·{" "}
+                {counts.soon} coming soon · {counts.ending} ending
               </p>
             </header>
 
