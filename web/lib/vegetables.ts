@@ -1,32 +1,326 @@
-import data from "@/data/vegetables.json";
-
-export type Vegetable = {
+export type VegItem = {
+  id: string;
   name: string;
-  url: string;
-  kenmerken: string;
-  beschikbaarheid: string;
-  voedingsstoffen?: string;
-  in_de_keuken?: string;
-  "hoe_bewaren?"?: string;
-  start_month: number;
-  end_month: number;
+  nl: string;
+  color: string;
+  accent: string;
+  family: string;
+  peak: number[];
+  shoulder?: number[];
+  blurb: string;
+  storage: string;
+  prep: string;
+  pairings: string[];
+  substitutions: string[];
+  technique: string;
 };
 
-export const vegetables = data as Vegetable[];
+export type VegStatus = "peak" | "soon" | "ending" | "shoulder" | "off";
 
-export function isInSeason(v: Vegetable, month: number): boolean {
-  if (v.start_month <= v.end_month) {
-    return month >= v.start_month && month <= v.end_month;
-  }
-  // wraps around year-end (e.g. nov–feb)
-  return month >= v.start_month || month <= v.end_month;
+export function statusFor(veg: VegItem, month: number): VegStatus {
+  if (veg.peak.includes(month)) return "peak";
+  const upcoming = veg.peak.some((m) => {
+    const diff = (m - month + 12) % 12;
+    return diff > 0 && diff <= 2;
+  });
+  if (upcoming) return "soon";
+  const ending =
+    veg.peak.includes(((month - 2 + 12) % 12) + 1) && !veg.peak.includes(month);
+  if (ending) return "ending";
+  if (veg.shoulder && veg.shoulder.includes(month)) return "shoulder";
+  return "off";
 }
 
-export function getInSeason(month: number): Vegetable[] {
-  return vegetables.filter((v) => isInSeason(v, month));
-}
+export const MONTHS = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+export const MONTHS_LONG = ["January","February","March","April","May","June","July","August","September","October","November","December"];
 
-export const MONTHS = [
-  "Januari", "Februari", "Maart", "April", "Mei", "Juni",
-  "Juli", "Augustus", "September", "Oktober", "November", "December",
+export const VEG_DATA: VegItem[] = [
+  {
+    id: "asparagus-white",
+    name: "White asparagus",
+    nl: "Witte asperges",
+    color: "#EFE3CD",
+    accent: "#C9B58A",
+    family: "Stalk",
+    peak: [5, 6],
+    shoulder: [4],
+    blurb: "The Netherlands' beloved 'witte goud' — only available for a short window each spring.",
+    storage: "Wrap in a damp cloth, refrigerate upright in the crisper. Best eaten within 2–3 days of buying.",
+    prep: "Peel from just below the head downward with a sharp peeler. Snap off the woody ends. Simmer 10–14 min in salted water with a pinch of sugar and a knob of butter.",
+    pairings: ["Brown butter", "Hard-boiled egg", "Ham", "Nutmeg", "Hollandaise", "Chervil", "New potatoes"],
+    substitutions: ["Green asparagus", "Salsify", "Leek hearts"],
+    technique: "Classic Dutch service: peel, simmer, serve with melted butter, egg & ham.",
+  },
+  {
+    id: "asparagus-green",
+    name: "Green asparagus",
+    nl: "Groene asperges",
+    color: "#A6B96A",
+    accent: "#6E8A3D",
+    family: "Stalk",
+    peak: [5, 6],
+    shoulder: [4, 7],
+    blurb: "More assertive than its white cousin — no peeling needed.",
+    storage: "Stand upright in 2 cm of water in the fridge, cover loosely. Up to 4 days.",
+    prep: "Snap off the woody end. Roast at 220°C for 8–10 min, grill, or shave raw into salads.",
+    pairings: ["Lemon zest", "Parmesan", "Olive oil", "Garlic", "Goat cheese", "Pine nuts"],
+    substitutions: ["White asparagus", "Tenderstem broccoli", "Sugar snaps"],
+    technique: "Lay flat on a hot grill pan, char on one side only for maximum flavor.",
+  },
+  {
+    id: "rhubarb",
+    name: "Rhubarb",
+    nl: "Rabarber",
+    color: "#D86A7A",
+    accent: "#9C2E47",
+    family: "Stalk",
+    peak: [4, 5, 6],
+    shoulder: [3, 7],
+    blurb: "Technically a vegetable. Tart, pink, and brilliant with anything dairy.",
+    storage: "Wrap stalks in foil, refrigerate up to a week. Freeze chopped for compotes.",
+    prep: "Trim leaves (toxic, discard). Slice into 2 cm pieces. Roast at 180°C with sugar 15 min — keeps its shape.",
+    pairings: ["Vanilla", "Ginger", "Strawberry", "Cream", "Orange", "Cardamom", "Pork"],
+    substitutions: ["Tart apple", "Quince", "Sour cherries"],
+    technique: "Roast, never boil — boiling turns it to mush.",
+  },
+  {
+    id: "spinach",
+    name: "Spinach",
+    nl: "Spinazie",
+    color: "#3F6B3A",
+    accent: "#274E27",
+    family: "Leaf",
+    peak: [4, 5, 6, 9, 10],
+    shoulder: [3, 7, 8, 11],
+    blurb: "Dutch spring spinach is tender enough to eat raw.",
+    storage: "Loose-leaf wrapped in a tea towel inside a bag — fridge, 3 days max.",
+    prep: "Wash thoroughly. Wilt in a dry pan for 60 seconds, squeeze out water. Or use raw in salads.",
+    pairings: ["Nutmeg", "Garlic", "Feta", "Lemon", "Pine nuts", "Eggs", "Cream"],
+    substitutions: ["Chard", "Sorrel", "Young kale"],
+    technique: "Add to hot pasta off heat — the residual warmth wilts it perfectly.",
+  },
+  {
+    id: "radish",
+    name: "Radish",
+    nl: "Radijs",
+    color: "#E14B5A",
+    accent: "#8B1F30",
+    family: "Root",
+    peak: [4, 5, 6, 7],
+    shoulder: [3, 8, 9],
+    blurb: "Peppery, crunchy, and ready in under a month from seed.",
+    storage: "Separate leaves from roots. Roots in a bag with a damp paper towel, 1 week.",
+    prep: "Eat raw with butter and flaky salt. Or slow-roast halved with honey for 20 min.",
+    pairings: ["Butter", "Sea salt", "Chives", "Goat cheese", "Sourdough", "Anchovy"],
+    substitutions: ["Daikon", "Kohlrabi", "Turnip"],
+    technique: "Don't bin the tops — they make a peppery pesto.",
+  },
+  {
+    id: "spring-onion",
+    name: "Spring onion",
+    nl: "Lente-ui",
+    color: "#8FB861",
+    accent: "#3E6A2A",
+    family: "Allium",
+    peak: [4, 5, 6, 7],
+    shoulder: [3, 8, 9, 10],
+    blurb: "Use everything from white root to green tip — different textures, different uses.",
+    storage: "Trim roots, stand whites in a glass of water on the counter. Up to 5 days.",
+    prep: "Whites: cook like mild onion. Greens: raw garnish, last 30s of stir-fry.",
+    pairings: ["Soy", "Sesame", "Ginger", "Eggs", "Smoked salmon", "Crème fraîche"],
+    substitutions: ["Chives", "Leek (mild parts)", "Shallot"],
+    technique: "Char whole on a dry pan until blistered — instant smoky depth.",
+  },
+  {
+    id: "butterhead-lettuce",
+    name: "Butterhead lettuce",
+    nl: "Botersla",
+    color: "#C4D88A",
+    accent: "#7B9A3D",
+    family: "Leaf",
+    peak: [5, 6, 7, 8, 9],
+    shoulder: [4, 10],
+    blurb: "Soft, silky leaves — the everyday salad green of the Lage Landen.",
+    storage: "Whole head, root-down in a damp paper towel inside a bag, fridge 4 days.",
+    prep: "Tear, don't cut. Dress only at the moment of serving — it bruises.",
+    pairings: ["Walnut oil", "Soft herbs", "Cider vinegar", "Boiled egg", "Mustard", "Bacon"],
+    substitutions: ["Little gem", "Oakleaf", "Lamb's lettuce"],
+    technique: "A whole leaf is the best edible spoon — fill with herb salad as an amuse.",
+  },
+  {
+    id: "sorrel",
+    name: "Sorrel",
+    nl: "Zuring",
+    color: "#7CA84E",
+    accent: "#3E5C24",
+    family: "Leaf",
+    peak: [4, 5, 6],
+    shoulder: [3, 7, 8],
+    blurb: "Lemony-sour leaf — a foraging favorite, also at good markets.",
+    storage: "Damp paper towel in bag, fridge, 2 days max — wilts fast.",
+    prep: "Chiffonade raw into soups at the last second. Or wilt into butter for fish.",
+    pairings: ["Butter", "Cream", "Eggs", "Trout", "Potato", "Tarragon"],
+    substitutions: ["Spinach + lemon", "Watercress", "Wood sorrel"],
+    technique: "Cooked sorrel turns army-green and disintegrates — that's normal, it tastes amazing.",
+  },
+  {
+    id: "kohlrabi",
+    name: "Kohlrabi",
+    nl: "Koolrabi",
+    color: "#BBD1B8",
+    accent: "#6F8E6C",
+    family: "Brassica",
+    peak: [5, 6, 7, 8, 9, 10],
+    shoulder: [4, 11],
+    blurb: "Crunchy as an apple, mild as broccoli stem. Underrated.",
+    storage: "Trim leaves, keep bulb in crisper, up to 2 weeks.",
+    prep: "Peel thick outer skin. Matchstick raw for slaw, or roast wedges with olive oil.",
+    pairings: ["Apple", "Mustard", "Caraway", "Dill", "Sour cream", "Smoked fish"],
+    substitutions: ["Jicama", "Daikon", "Turnip"],
+    technique: "Try a remoulade: julienned raw + mustard mayo + capers.",
+  },
+  {
+    id: "new-potato",
+    name: "New potato",
+    nl: "Krieltjes",
+    color: "#E5D7A8",
+    accent: "#A89154",
+    family: "Tuber",
+    peak: [5, 6, 7],
+    shoulder: [4, 8],
+    blurb: "Thin-skinned spring spuds — sweet, waxy, and built for boiling.",
+    storage: "Paper bag in a cool, dark place. Use within a week — they don't keep like old potatoes.",
+    prep: "Scrub, don't peel. Boil whole in heavily salted water 12 min until just tender.",
+    pairings: ["Butter", "Mint", "Dill", "Crème fraîche", "Smoked herring", "Capers"],
+    substitutions: ["Fingerling potatoes", "Charlotte", "Waxy yellow"],
+    technique: "Crash hot: boil, then crush slightly and roast in butter until crisp.",
+  },
+  {
+    id: "watercress",
+    name: "Watercress",
+    nl: "Waterkers",
+    color: "#5C8C3E",
+    accent: "#2E5320",
+    family: "Leaf",
+    peak: [4, 5, 6, 9, 10],
+    shoulder: [3, 7, 8, 11],
+    blurb: "Peppery, mineral, and grown in clean Dutch streams.",
+    storage: "Submerge stems in a glass of water, bag over leaves, fridge — 4 days.",
+    prep: "Pick leaves and tender tips. Stems make excellent green soup base.",
+    pairings: ["Pear", "Blue cheese", "Walnut", "Roast beef", "Orange", "Smoked mackerel"],
+    substitutions: ["Arugula", "Garden cress", "Mizuna"],
+    technique: "Blitz raw with stock for a vivid green soup — heat just to serving temp.",
+  },
+  {
+    id: "broad-bean",
+    name: "Broad bean",
+    nl: "Tuinboon",
+    color: "#B6C36B",
+    accent: "#6B7A26",
+    family: "Legume",
+    peak: [6, 7, 8],
+    shoulder: [5, 9],
+    blurb: "Worth every minute of double-podding. Buttery, grassy, brief.",
+    storage: "In the pod, fridge, up to 5 days. Once shelled, blanch and freeze.",
+    prep: "Pod, blanch 60s, slip off the pale skin to reveal the bright green bean.",
+    pairings: ["Mint", "Pecorino", "Lemon", "Prosciutto", "Olive oil", "Ricotta"],
+    substitutions: ["Edamame", "Peas", "Lima beans"],
+    technique: "Crush with mint and pecorino on grilled bread — Italian-style.",
+  },
+  {
+    id: "pea",
+    name: "Garden peas",
+    nl: "Doperwten",
+    color: "#82B25A",
+    accent: "#3F6E22",
+    family: "Legume",
+    peak: [6, 7, 8],
+    shoulder: [5, 9],
+    blurb: "From pod to pan in under an hour is the goal.",
+    storage: "Pod within a day if possible — sugars convert to starch fast. Shelled peas freeze beautifully.",
+    prep: "Pod and blanch 2 min. Or raw straight from the pod, just-picked.",
+    pairings: ["Mint", "Butter", "Lettuce", "Ham hock", "Parmesan", "Tarragon"],
+    substitutions: ["Frozen peas", "Sugar snaps", "Mangetout"],
+    technique: "À la française: braise with shredded lettuce and a knob of butter.",
+  },
+  {
+    id: "courgette",
+    name: "Courgette",
+    nl: "Courgette",
+    color: "#5C8C3E",
+    accent: "#2E5320",
+    family: "Squash",
+    peak: [6, 7, 8, 9],
+    shoulder: [5, 10],
+    blurb: "Soon: the workhorse of summer cooking, when you can't give them away fast enough.",
+    storage: "Crisper, dry, up to a week. Don't wash until use.",
+    prep: "Salt sliced rounds 10 min, pat dry, then sauté hot and fast.",
+    pairings: ["Mint", "Basil", "Lemon", "Goat cheese", "Anchovy", "Pine nuts"],
+    substitutions: ["Yellow squash", "Pattypan", "Eggplant"],
+    technique: "Ribbon raw with a peeler, dress with lemon — no cooking needed.",
+  },
+  {
+    id: "beetroot",
+    name: "Beetroot",
+    nl: "Rode biet",
+    color: "#6E1F3A",
+    accent: "#3A0A1C",
+    family: "Root",
+    peak: [6, 7, 8, 9, 10, 11],
+    shoulder: [5, 12],
+    blurb: "First young beets arrive in June — sweet, earthy, and unbeatable roasted.",
+    storage: "Trim greens (cook separately), unwashed bulbs in crisper, up to 2 weeks.",
+    prep: "Wrap in foil with olive oil and salt, roast 60–75 min at 180°C. Skins slip off warm.",
+    pairings: ["Goat cheese", "Walnut", "Orange", "Dill", "Horseradish", "Smoked fish"],
+    substitutions: ["Golden beet", "Carrot (different but earthy)"],
+    technique: "Salt-bake whole for the deepest flavor — bury in coarse salt and roast.",
+  },
+  {
+    id: "leek",
+    name: "Leek",
+    nl: "Prei",
+    color: "#A8C97D",
+    accent: "#446A2A",
+    family: "Allium",
+    peak: [9, 10, 11, 12, 1, 2, 3],
+    shoulder: [4, 5, 8],
+    blurb: "Winter's quiet workhorse — last good ones around until late May.",
+    storage: "Don't trim greens until use. Fridge, 1 week. Stands up to freezing chopped.",
+    prep: "Split lengthwise, fan under cold water — grit hides in the layers. Sweat low and slow in butter.",
+    pairings: ["Butter", "Thyme", "Cream", "Potato", "Mustard", "Gruyère"],
+    substitutions: ["Spring onion (mild)", "Onion + green tops"],
+    technique: "Braise whole halves cut-side down in butter and stock until silky.",
+  },
+  {
+    id: "purple-sprouting-broccoli",
+    name: "Purple sprouting broccoli",
+    nl: "Paarse broccoli",
+    color: "#7B5A8E",
+    accent: "#3E2A48",
+    family: "Brassica",
+    peak: [2, 3, 4],
+    shoulder: [1, 5],
+    blurb: "The last of the brassicas before summer — grab it while you still can.",
+    storage: "Damp paper towel in a bag, fridge, 4 days.",
+    prep: "Trim woody base. Steam or quick-blanch the spears — tender all the way through.",
+    pairings: ["Anchovy", "Chili", "Lemon", "Garlic", "Almond", "Parmesan"],
+    substitutions: ["Tenderstem", "Rapini", "Broccoli florets"],
+    technique: "Char in a smoking-hot pan with olive oil, finish with anchovy butter.",
+  },
+  {
+    id: "wild-garlic",
+    name: "Wild garlic",
+    nl: "Daslook",
+    color: "#5E8B3A",
+    accent: "#2E4A1A",
+    family: "Allium",
+    peak: [4, 5],
+    shoulder: [3, 6],
+    blurb: "Forage in damp Dutch woodland. Last weeks before it flowers and toughens.",
+    storage: "Damp paper towel in a bag, fridge, 3 days. Freezes well as pesto.",
+    prep: "Use raw chiffonade, or wilt 10 seconds in butter. Buds and flowers also edible.",
+    pairings: ["Butter", "Cream", "Eggs", "Potato", "Sourdough", "Goat cheese"],
+    substitutions: ["Spring onion green + garlic", "Ramps", "Chives + garlic clove"],
+    technique: "Blend with olive oil, salt, and pine nuts for a green pesto that beats basil in spring.",
+  },
 ];
