@@ -112,10 +112,10 @@ export function statusFor(veg: VegItem, month: number): VegStatus {
   // Check shoulder before soon/ending: the vegetable is available right now.
   if (veg.shoulder?.includes(month)) return "shoulder";
 
-  // Peak is 1–2 months away but not currently available.
+  // Peak is 1–3 months away but not currently available.
   const soon = veg.peak.some((m) => {
     const diff = (m - month + 12) % 12;
-    return diff >= 1 && diff <= 2;
+    return diff >= 1 && diff <= 3;
   });
   if (soon) return "soon";
 
