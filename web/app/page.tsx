@@ -13,6 +13,9 @@ type Page = "seasonal" | "calendar";
 type View = "grid" | "list";
 type Density = "cozy" | "comfortable" | "compact";
 
+/** VegItem with its computed seasonal status for the current month attached. */
+type VegWithStatus = VegItem & { _status: VegStatus };
+
 const NAV_ITEMS = [
   { id: "seasonal",      label: "Seasonal",      icon: "leaf",    ready: true },
   { id: "calendar",      label: "Calendar",      icon: "cal",     ready: true },
@@ -22,6 +25,7 @@ const NAV_ITEMS = [
   { id: "foraging",      label: "Foraging",      icon: "compass", ready: false },
 ];
 
+/** Lower number = shown earlier in the seasonal grid. */
 const STATUS_ORDER: Record<VegStatus, number> = { peak: 0, shoulder: 1, soon: 2, ending: 3, off: 4 };
 
 export default function App() {
@@ -30,33 +34,57 @@ export default function App() {
   const [filter, setFilter] = useState<Filter>("all");
   const [query, setQuery] = useState("");
   const [view, setView] = useState<View>("grid");
+  /** Density is a planned UI preference feature; the setter is unused until that ships. */
   const [density] = useState<Density>("comfortable");
   const [openVeg, setOpenVeg] = useState<VegItem | null>(null);
 
-  const all = useMemo(
+  /** All vegetables with their seasonal status for this month. */
+  const all = useMemo<VegWithStatus[]>(
     () => VEG_DATA.map((v) => ({ ...v, _status: statusFor(v, month) })),
     [month]
   );
-  const inSeason = useMemo(() => all.filter((v) => v._status !== "off"), [all]);
 
+  /** Subset that is currently reachable (peak, shoulder, soon, or ending — not fully off). */
+  const inSeason = useMemo(
+    () => all.filter((v) => v._status !== "off"),
+    [all]
+  );
+
+  /**
+   * Badge counts for the filter pills.
+   * "All" reflects the full dataset; the status-specific counts cover in-season only.
+   */
   const counts = useMemo<Counts>(() => ({
-    all:      inSeason.length,
+    all:      all.length,
     peak:     inSeason.filter((v) => v._status === "peak").length,
     shoulder: inSeason.filter((v) => v._status === "shoulder").length,
     soon:     inSeason.filter((v) => v._status === "soon").length,
     ending:   inSeason.filter((v) => v._status === "ending").length,
-  }), [inSeason]);
+  }), [all, inSeason]);
 
-  const filtered = useMemo(() => {
+  /**
+   * "All" searches and shows the entire dataset so out-of-season vegetables are
+   * still reachable (they render in a dimmed section below the in-season grid).
+   * Status-specific filters (peak / shoulder / soon / ending) operate within
+   * the in-season pool only.
+   */
+  const filtered = useMemo<VegWithStatus[]>(() => {
     const q = query.trim().toLowerCase();
-    return inSeason
+    const source = filter === "all" ? all : inSeason;
+    return source
       .filter((v) => {
-        const matchesFilter = filter === "all" ? true : v._status === filter;
-        const matchesQuery = !q || v.name.toLowerCase().includes(q) || v.nl.toLowerCase().includes(q) || v.family.toLowerCase().includes(q);
-        return matchesFilter && matchesQuery;
+        if (filter !== "all" && v._status !== filter) return false;
+        return !q || v.name.toLowerCase().includes(q) || v.nl.toLowerCase().includes(q) || v.family.toLowerCase().includes(q);
       })
       .sort((a, b) => STATUS_ORDER[a._status] - STATUS_ORDER[b._status] || a.name.localeCompare(b.name));
-  }, [inSeason, filter, query]);
+  }, [all, inSeason, filter, query]);
+
+  /**
+   * Split filtered results so in-season and out-of-season items can be rendered
+   * with a visual divider between them.
+   */
+  const inSeasonItems  = useMemo(() => filtered.filter((v) => v._status !== "off"), [filtered]);
+  const offSeasonItems = useMemo(() => filtered.filter((v) => v._status === "off"),  [filtered]);
 
   return (
     <div className="app">
@@ -149,18 +177,50 @@ export default function App() {
 
             {filtered.length === 0 ? (
               <div className="empty">No vegetables match. Try clearing the search.</div>
-            ) : view === "list" ? (
-              <div className="veg-list">
-                {filtered.map((v) => (
-                  <VegCard key={v.id} veg={v} month={month} density={density} onOpen={setOpenVeg} listMode />
-                ))}
-              </div>
             ) : (
-              <div className={`veg-grid grid-${density}`}>
-                {filtered.map((v) => (
-                  <VegCard key={v.id} veg={v} month={month} density={density} onOpen={setOpenVeg} />
-                ))}
-              </div>
+              <>
+                {/* In-season vegetables */}
+                {inSeasonItems.length > 0 && (
+                  view === "list" ? (
+                    <div className="veg-list">
+                      {inSeasonItems.map((v) => (
+                        <VegCard key={v.id} veg={v} status={v._status} month={month} density={density} onOpen={setOpenVeg} listMode />
+                      ))}
+                    </div>
+                  ) : (
+                    <div className={`veg-grid grid-${density}`}>
+                      {inSeasonItems.map((v) => (
+                        <VegCard key={v.id} veg={v} status={v._status} month={month} density={density} onOpen={setOpenVeg} />
+                      ))}
+                    </div>
+                  )
+                )}
+
+                {/* Out-of-season vegetables — dimmed and separated below in-season items.
+                    Visible when "All" is the active filter (the only filter that uses
+                    the full dataset). Status-specific filters never produce off items. */}
+                {offSeasonItems.length > 0 && (
+                  <>
+                    <div className="offseason-divider">
+                      <span>Out of season</span>
+                      <span className="offseason-count">{offSeasonItems.length}</span>
+                    </div>
+                    {view === "list" ? (
+                      <div className="veg-list">
+                        {offSeasonItems.map((v) => (
+                          <VegCard key={v.id} veg={v} status={v._status} month={month} density={density} onOpen={setOpenVeg} listMode />
+                        ))}
+                      </div>
+                    ) : (
+                      <div className={`veg-grid grid-${density}`}>
+                        {offSeasonItems.map((v) => (
+                          <VegCard key={v.id} veg={v} status={v._status} month={month} density={density} onOpen={setOpenVeg} />
+                        ))}
+                      </div>
+                    )}
+                  </>
+                )}
+              </>
             )}
 
             <FuturePeek />

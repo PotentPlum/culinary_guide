@@ -81,7 +81,6 @@ button { font-family: inherit; }
   line-height: 1;
   color: var(--ink);
 }
-body.sans-display .brand-title { font-family: var(--sans); font-style: normal; font-weight: 600; letter-spacing: -0.02em; }
 .brand-sub {
   font-size: 10.5px;
   color: var(--ink-soft);
@@ -194,14 +193,6 @@ body.sans-display .brand-title { font-family: var(--sans); font-style: normal; f
   font-style: italic;
   color: var(--primary);
 }
-body.sans-display .hero-title {
-  font-family: var(--sans);
-  font-weight: 600;
-  letter-spacing: -0.03em;
-}
-body.sans-display .hero-title em {
-  font-style: normal;
-}
 .hero-sub {
   font-size: 17px;
   color: var(--ink-soft);
@@ -299,9 +290,9 @@ body.sans-display .hero-title em {
   gap: 18px;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
 }
-.veg-grid.grid-cozy     { grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 24px; }
+.veg-grid.grid-cozy        { grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 24px; }
 .veg-grid.grid-comfortable { grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: 16px; }
-.veg-grid.grid-compact  { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 10px; }
+.veg-grid.grid-compact     { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 10px; }
 
 .veg-card {
   display: flex;
@@ -314,7 +305,7 @@ body.sans-display .hero-title em {
   cursor: pointer;
   text-align: left;
   font: inherit; color: inherit;
-  transition: transform 150ms cubic-bezier(.3,.7,.4,1), box-shadow 150ms, border-color 120ms;
+  transition: transform 150ms cubic-bezier(.3,.7,.4,1), box-shadow 150ms, border-color 120ms, opacity 150ms;
 }
 .veg-card:hover {
   transform: translateY(-2px);
@@ -323,6 +314,12 @@ body.sans-display .hero-title em {
 }
 .veg-card.density-compact { padding: 10px; gap: 8px; }
 .veg-card.density-cozy { padding: 20px; gap: 18px; }
+
+/* Out-of-season cards are dimmed to visually subordinate them to the in-season content. */
+.veg-card.off-season,
+.veg-row.off-season { opacity: 0.6; }
+.veg-card.off-season:hover,
+.veg-row.off-season:hover { opacity: 0.9; }
 
 .veg-card-illus {
   position: relative;
@@ -347,7 +344,6 @@ body.sans-display .hero-title em {
   letter-spacing: -0.005em;
   margin: 0;
 }
-body.sans-display .veg-card-name { font-family: var(--sans); font-weight: 600; letter-spacing: -0.02em; font-size: 18px; }
 .veg-card.density-compact .veg-card-name { font-size: 17px; }
 .veg-card.density-cozy .veg-card-name { font-size: 26px; }
 .veg-card-nl {
@@ -372,15 +368,42 @@ body.sans-display .veg-card-name { font-family: var(--sans); font-weight: 600; l
   cursor: pointer;
   text-align: left;
   font: inherit; color: inherit;
-  transition: background 120ms;
+  transition: background 120ms, opacity 150ms;
   width: 100%;
 }
 .veg-row:hover { background: #FFFFFF; }
 .veg-row-swatch { width: 28px; height: 28px; border-radius: 50%; border: 1px solid; }
 .veg-row-name { font-family: var(--serif); font-size: 19px; }
-body.sans-display .veg-row-name { font-family: var(--sans); font-weight: 600; font-size: 16px; letter-spacing: -0.015em; }
 .veg-row-nl { font-size: 11px; color: var(--ink-soft); letter-spacing: 0.04em; text-transform: uppercase; margin-top: 2px; }
 .veg-row-arrow { color: var(--ink-soft); }
+
+/* ---- Out-of-season section divider ---- */
+.offseason-divider {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 4px 0;
+  font-size: 11.5px;
+  font-weight: 600;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+.offseason-divider::before,
+.offseason-divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: var(--line-strong);
+}
+.offseason-count {
+  font-family: var(--mono);
+  font-size: 10.5px;
+  padding: 1px 7px;
+  border-radius: 999px;
+  background: rgba(30,26,20,0.06);
+  color: var(--ink-soft);
+}
 
 /* ---- Peak bar ---- */
 .peak-bar {
@@ -450,7 +473,6 @@ body.sans-display .veg-row-name { font-family: var(--sans); font-weight: 600; fo
   line-height: 1.1;
   margin-bottom: 8px;
 }
-body.sans-display .fp-card-title { font-family: var(--sans); font-weight: 600; font-size: 18px; letter-spacing: -0.02em; }
 .fp-card-note { font-size: 13px; color: var(--ink-soft); max-width: 28ch; }
 .fp-card-stripe {
   position: absolute;
@@ -522,7 +544,6 @@ body.sans-display .fp-card-title { font-family: var(--sans); font-weight: 600; f
 }
 .cal-swatch { width: 22px; height: 22px; border-radius: 50%; border: 1px solid; flex-shrink: 0; }
 .cal-name { font-family: var(--serif); font-size: 17px; line-height: 1.1; }
-body.sans-display .cal-name { font-family: var(--sans); font-weight: 600; font-size: 14.5px; letter-spacing: -0.015em; }
 .cal-nl { font-size: 10.5px; color: var(--ink-soft); letter-spacing: 0.04em; text-transform: uppercase; margin-top: 2px; }
 .cal-cell {
   height: 22px;
@@ -601,14 +622,12 @@ body.sans-display .cal-name { font-family: var(--sans); font-weight: 600; font-s
   margin: 0;
   letter-spacing: -0.01em;
 }
-body.sans-display .detail-name { font-family: var(--sans); font-weight: 600; letter-spacing: -0.03em; font-size: 36px; }
 .detail-nl {
   font-family: var(--serif);
   font-style: italic;
   font-size: 18px;
   color: var(--ink-soft);
 }
-body.sans-display .detail-nl { font-family: var(--sans); font-style: normal; font-weight: 500; }
 .detail-status { margin-top: 4px; }
 .detail-body { padding: 32px 36px 60px; }
 .detail-blurb {
@@ -620,7 +639,6 @@ body.sans-display .detail-nl { font-family: var(--sans); font-style: normal; fon
   margin: 0 0 32px;
   text-wrap: pretty;
 }
-body.sans-display .detail-blurb { font-family: var(--sans); font-style: normal; font-size: 16px; }
 .detail-section {
   padding: 18px 0;
   border-top: 1px solid var(--line);
@@ -670,6 +688,21 @@ body.sans-display .detail-blurb { font-family: var(--sans); font-style: normal; 
 }
 .ghost-preview { font-size: 13.5px; color: var(--ink); }
 .ghost-note { font-size: 12px; color: var(--ink-soft); margin-top: 4px !important; font-style: italic; }
+
+/* =========== SANS-SERIF DISPLAY VARIANT ===========
+   These overrides apply when a parent sets body.sans-display via JavaScript
+   (e.g., a user typography preference toggle). Not active by default.
+   ================================================== */
+body.sans-display .brand-title      { font-family: var(--sans); font-style: normal; font-weight: 600; letter-spacing: -0.02em; }
+body.sans-display .hero-title       { font-family: var(--sans); font-weight: 600; letter-spacing: -0.03em; }
+body.sans-display .hero-title em    { font-style: normal; }
+body.sans-display .veg-card-name    { font-family: var(--sans); font-weight: 600; letter-spacing: -0.02em; font-size: 18px; }
+body.sans-display .veg-row-name     { font-family: var(--sans); font-weight: 600; font-size: 16px; letter-spacing: -0.015em; }
+body.sans-display .cal-name         { font-family: var(--sans); font-weight: 600; font-size: 14.5px; letter-spacing: -0.015em; }
+body.sans-display .fp-card-title    { font-family: var(--sans); font-weight: 600; font-size: 18px; letter-spacing: -0.02em; }
+body.sans-display .detail-name      { font-family: var(--sans); font-weight: 600; letter-spacing: -0.03em; font-size: 36px; }
+body.sans-display .detail-nl        { font-family: var(--sans); font-style: normal; font-weight: 500; }
+body.sans-display .detail-blurb     { font-family: var(--sans); font-style: normal; font-size: 16px; }
 
 /* ---- Responsive ---- */
 @media (max-width: 880px) {

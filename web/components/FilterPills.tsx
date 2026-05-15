@@ -4,7 +4,7 @@ export type Filter = "all" | "peak" | "shoulder" | "soon" | "ending";
 type Props = { value: Filter; onChange: (f: Filter) => void; counts: Counts };
 
 const OPTIONS: { id: Filter; label: string }[] = [
-  { id: "all",      label: "All in season" },
+  { id: "all",      label: "All" },
   { id: "peak",     label: "In peak" },
   { id: "shoulder", label: "Available" },
   { id: "soon",     label: "Coming soon" },
