@@ -705,6 +705,37 @@ body.sans-display .detail-blurb { font-family: var(--sans); font-style: normal; 
   .veg-row-bar { display: none; }
 }
 
+/* ---- Small mobile (≤540px) ---- */
+@media (max-width: 540px) {
+  /* Nav: icon-only on all items to prevent header overflow */
+  .nav-item.active span:not(.nav-soon) { display: none; }
+
+  /* Hero: tighter typography */
+  .hero-title { font-size: 30px; }
+  .hero-sub { font-size: 15px; }
+
+  /* Controls: stack filter pills above search/view toggle */
+  .controls { flex-direction: column; align-items: stretch; gap: 10px; }
+  .control-right { justify-content: flex-end; }
+  .search { flex: 1; }
+  .search input { width: auto; flex: 1; min-width: 0; }
+
+  /* Calendar: horizontal scroll so month columns stay legible */
+  .cal-table { overflow-x: auto; }
+  .cal-row { grid-template-columns: 100px repeat(12, 1fr); min-width: 480px; }
+  .cal-name { font-size: 11px; }
+  .cal-swatch { width: 12px; height: 12px; }
+
+  /* Detail panel: reduce side padding and heading size */
+  .detail-hero { padding: 36px 18px 20px; }
+  .detail-body { padding: 20px 18px 48px; }
+  .detail-name { font-size: 34px; }
+  .detail-blurb { font-size: 17px; margin-bottom: 24px; }
+
+  /* Future peek: single column */
+  .fp-grid { grid-template-columns: 1fr; }
+}
+
 /* =========== RECIPES =========== */
 .recipe-list {
   display: flex;
