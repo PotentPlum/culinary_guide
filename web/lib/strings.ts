@@ -118,6 +118,10 @@ export const UI = {
     labelProtein:   "Eiwit",
     labelCarbs:     "Koolh.",
     labelFat:       "Vet",
+    saveBtn:        "Bewaren",
+    savedBtn:       "Bewaard",
+    savedSection:   "Opgeslagen recepten",
+    savedRemoveLabel: "Verwijderen",
   },
 
   // Future peek section
