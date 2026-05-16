@@ -513,7 +513,7 @@ describe("ingestRecipeFromHtml — @graph layout", () => {
       "@graph": [
         { "@type": "WebSite", url: "https://example.com" },
         { "@type": "BreadcrumbList" },
-        { "@type": "Recipe", ...BASE_RECIPE },
+        { ...BASE_RECIPE },
       ],
     };
     const result = ingestRecipeFromHtml(htmlWithJsonLd(payload));
@@ -527,7 +527,7 @@ describe("ingestRecipeFromHtml — @graph layout", () => {
         { "@type": "WebSite" },
         {
           "@type": "WebPage",
-          mainEntity: { "@type": "Recipe", ...BASE_RECIPE },
+          mainEntity: { ...BASE_RECIPE },
         },
       ],
     };
@@ -538,7 +538,7 @@ describe("ingestRecipeFromHtml — @graph layout", () => {
   it("handles multiple JSON-LD script tags — uses the one with Recipe", () => {
     const html = `<!DOCTYPE html><html><head>
       <script type="application/ld+json">{"@type":"WebSite","name":"Food Blog"}</script>
-      <script type="application/ld+json">${JSON.stringify({ "@type": "Recipe", ...BASE_RECIPE })}</script>
+      <script type="application/ld+json">${JSON.stringify({ ...BASE_RECIPE })}</script>
     </head><body></body></html>`;
     const result = ingestRecipeFromHtml(html);
     expect(result.title).toBe("Test Recipe");
@@ -705,7 +705,7 @@ describe("ingestRecipeFromHtml — error handling", () => {
   it("skips a malformed JSON-LD block and finds Recipe in a later valid block", () => {
     const html = `<html><head>
       <script type="application/ld+json">{ BROKEN }</script>
-      <script type="application/ld+json">${JSON.stringify({ "@type": "Recipe", ...BASE_RECIPE })}</script>
+      <script type="application/ld+json">${JSON.stringify({ ...BASE_RECIPE })}</script>
     </head></html>`;
     const result = ingestRecipeFromHtml(html);
     expect(result.title).toBe("Test Recipe");

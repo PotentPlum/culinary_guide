@@ -8,15 +8,16 @@ import FilterPills, { type Filter, type Counts } from "@/components/FilterPills"
 import FuturePeek from "@/components/FuturePeek";
 import CalendarPage from "@/components/CalendarPage";
 import DetailPanel from "@/components/DetailPanel";
+import RecipesPage from "@/components/RecipesPage";
 
-type Page = "seasonal" | "calendar";
+type Page = "seasonal" | "calendar" | "recipes";
 type View = "grid" | "list";
 type Density = "cozy" | "comfortable" | "compact";
 
 const NAV_ITEMS = [
   { id: "seasonal",      label: "Seizoenen",     icon: "leaf",    ready: true },
   { id: "calendar",      label: "Kalender",      icon: "cal",     ready: true },
-  { id: "recipes",       label: "Recepten",      icon: "book",    ready: false },
+  { id: "recipes",       label: "Recepten",      icon: "book",    ready: true  },
   { id: "substitutions", label: "Vervangers",    icon: "swap",    ready: false },
   { id: "techniques",    label: "Technieken",    icon: "knife",   ready: false },
   { id: "foraging",      label: "Plukken",       icon: "compass", ready: false },
@@ -171,6 +172,8 @@ export default function App() {
         {page === "calendar" && (
           <CalendarPage month={month} onOpen={setOpenVeg} />
         )}
+
+        {page === "recipes" && <RecipesPage />}
       </main>
 
       <DetailPanel veg={openVeg} month={month} onClose={() => setOpenVeg(null)} />

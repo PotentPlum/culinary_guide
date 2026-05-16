@@ -92,6 +92,34 @@ export const UI = {
     difficultyHard:   "Moeilijk",
   },
 
+  // Recipes ingestion page
+  recipes: {
+    pageTitle:      "Recept inladen",
+    pageSubtitle:   "Plak een receptlink uit een kookblog of -website. Wij halen de ingrediënten en bereiding op via de gestructureerde gegevens van de pagina.",
+    inputPlaceholder: "https://www.kookblog.nl/recept/…",
+    inputLabel:     "Receptlink",
+    submitBtn:      "Laden",
+    loadingBtn:     "Bezig…",
+    loadingMsg:     "Recept ophalen…",
+    errorTitle:     "Niet gelukt",
+    errorFallback:  "Er is een onbekende fout opgetreden.",
+    errorNetwork:   "Kon de server niet bereiken. Controleer je verbinding.",
+    retryBtn:       "Opnieuw proberen",
+    clearBtn:       "Nieuw recept",
+    hintText:       "Werkt met recepten die gestructureerde data (Schema.org) gebruiken — de meeste grote kookblogs doen dit automatisch.",
+    sectionIngredients: "Ingrediënten",
+    sectionInstructions: "Bereiding",
+    sectionNutrition: "Voedingswaarden",
+    labelPrepTime:  "Voorbereiding",
+    labelCookTime:  "Bereiden",
+    labelTotalTime: "Totaal",
+    labelMinutes:   "min",
+    labelCalories:  "Kcal",
+    labelProtein:   "Eiwit",
+    labelCarbs:     "Koolh.",
+    labelFat:       "Vet",
+  },
+
   // Future peek section
   futurePeek: {
     label: "Binnenkort",
