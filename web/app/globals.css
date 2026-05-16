@@ -1087,6 +1087,112 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
 }
 .recipe-nutrition-value { font-weight: 600; color: var(--ink); }
 
+/* Save button (in result header) */
+.recipe-result-actions {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  flex-shrink: 0;
+  margin-top: 6px;
+}
+.recipe-save-btn {
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  border-radius: 999px;
+  padding: 5px 14px;
+  font: inherit;
+  font-size: 12.5px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: opacity 120ms;
+}
+.recipe-save-btn:hover:not(:disabled) { opacity: 0.85; }
+.recipe-save-btn--saved {
+  background: transparent;
+  border: 1px solid var(--line-strong);
+  color: var(--ink-soft);
+  cursor: default;
+}
+
+/* Saved recipes list */
+.recipe-saved-section {
+  margin-top: 40px;
+}
+.recipe-saved-heading {
+  font-family: var(--sans);
+  font-size: 10.5px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  font-weight: 600;
+  margin: 0 0 12px;
+}
+.recipe-saved-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.recipe-saved-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--surface-card);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 4px 4px 4px 16px;
+  transition: border-color 120ms;
+}
+.recipe-saved-item:hover { border-color: var(--line-strong); }
+.recipe-saved-item-load {
+  flex: 1;
+  background: none;
+  border: none;
+  padding: 10px 0;
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  min-width: 0;
+}
+.recipe-saved-item-title {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 17px;
+  color: var(--ink);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.recipe-saved-item-meta {
+  font-size: 11.5px;
+  color: var(--ink-soft);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.recipe-saved-item-remove {
+  background: none;
+  border: none;
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  font-size: 18px;
+  line-height: 1;
+  color: var(--ink-soft);
+  cursor: pointer;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 100ms, color 100ms;
+}
+.recipe-saved-item-remove:hover { background: rgba(185,81,40,0.09); color: var(--accent); }
+
 /* Responsive */
 @media (max-width: 880px) {
   .recipe-result-body { grid-template-columns: 1fr; }
