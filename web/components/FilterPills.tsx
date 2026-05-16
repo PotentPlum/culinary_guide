@@ -4,11 +4,11 @@ export type Filter = "all" | "peak" | "shoulder" | "soon" | "ending";
 type Props = { value: Filter; onChange: (f: Filter) => void; counts: Counts };
 
 const OPTIONS: { id: Filter; label: string }[] = [
-  { id: "all",      label: "All in season" },
-  { id: "peak",     label: "In peak" },
-  { id: "shoulder", label: "Available" },
-  { id: "soon",     label: "Coming soon" },
-  { id: "ending",   label: "Ending soon" },
+  { id: "all",      label: "Alles in seizoen" },
+  { id: "peak",     label: "Op hoogtepunt" },
+  { id: "shoulder", label: "Beschikbaar" },
+  { id: "soon",     label: "Binnenkort" },
+  { id: "ending",   label: "Aflopend" },
 ];
 
 export default function FilterPills({ value, onChange, counts }: Props) {

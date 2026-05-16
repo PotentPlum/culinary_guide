@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Mise — a cook's almanac",
-  description: "Locally grown, seasonal vegetables in the Netherlands — peak freshness, month by month.",
+  title: "Mise — een kooksalmanak",
+  description: "Lokaal geteelde, seizoensgroenten in Nederland — op hun best, maand voor maand.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

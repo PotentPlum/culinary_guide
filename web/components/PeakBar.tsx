@@ -16,7 +16,7 @@ export default function PeakBar({ veg, month, compact = false }: Props) {
         else if (isShoulder) cls += " half";
         if (isNow) cls += " now";
         return (
-          <div key={m} className={cls} title={`${MONTHS_LONG[i]}: ${isPeak ? "peak" : isShoulder ? "available" : "out of season"}`}>
+          <div key={m} className={cls} title={`${MONTHS_LONG[i]}: ${isPeak ? "hoogtepunt" : isShoulder ? "beschikbaar" : "buiten seizoen"}`}>
             {!compact && <span className="peak-letter">{m[0]}</span>}
           </div>
         );

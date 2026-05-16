@@ -27,7 +27,7 @@ export default function DetailPanel({ veg, month, onClose }: Props) {
   return (
     <div className="detail-scrim" onClick={onClose}>
       <aside className="detail-panel" onClick={(e) => e.stopPropagation()}>
-        <button className="detail-close" onClick={onClose} aria-label="Close">✕</button>
+        <button className="detail-close" onClick={onClose} aria-label="Sluiten">✕</button>
 
         <div className="detail-hero" style={{ background: veg.color }}>
           <div className="detail-illus">
@@ -35,8 +35,7 @@ export default function DetailPanel({ veg, month, onClose }: Props) {
           </div>
           <div className="detail-hero-meta">
             <div className="detail-family">{veg.family}</div>
-            <h2 className="detail-name">{veg.name}</h2>
-            <div className="detail-nl">{veg.nl}</div>
+            <h2 className="detail-name">{veg.nl}</h2>
             <div className="detail-status"><StatusDot status={status} withLabel /></div>
           </div>
         </div>
@@ -45,27 +44,27 @@ export default function DetailPanel({ veg, month, onClose }: Props) {
           <p className="detail-blurb">{veg.blurb}</p>
 
           <section className="detail-section">
-            <h3>Peak season</h3>
+            <h3>Seizoen</h3>
             <PeakBar veg={veg} month={month} />
             <div className="peak-legend">
-              <span><span className="dot on" /> Peak</span>
-              <span><span className="dot half" /> Available</span>
+              <span><span className="dot on" /> Hoogtepunt</span>
+              <span><span className="dot half" /> Beschikbaar</span>
               <span><span className="dot now" /> {MONTHS_LONG[month - 1]}</span>
             </div>
           </section>
 
           <section className="detail-section">
-            <h3>How to store</h3>
+            <h3>Bewaren</h3>
             <p>{veg.storage}</p>
           </section>
 
           <section className="detail-section">
-            <h3>How to prep</h3>
+            <h3>Bereiden</h3>
             <p>{veg.prep}</p>
           </section>
 
           <section className="detail-section">
-            <h3>Goes well with</h3>
+            <h3>Combineert goed met</h3>
             <div className="chips">
               {veg.pairings.map((p) => <span key={p} className="chip">{p}</span>)}
             </div>
@@ -73,18 +72,18 @@ export default function DetailPanel({ veg, month, onClose }: Props) {
 
           <section className="detail-section ghost">
             <div className="ghost-head">
-              <h3>If you don&apos;t have it</h3>
-              <span className="ghost-tag">Substitutions · soon</span>
+              <h3>Als je het niet hebt</h3>
+              <span className="ghost-tag">Vervangers · binnenkort</span>
             </div>
             <div className="ghost-body">
-              <p className="ghost-preview">Likely subs: <em>{veg.substitutions.join(", ")}</em></p>
-              <p className="ghost-note">A full pairing &amp; substitution explorer is coming in the next release.</p>
+              <p className="ghost-preview">Mogelijke vervangers: <em>{veg.substitutions.join(", ")}</em></p>
+              <p className="ghost-note">Een volledige vervanger- &amp; combinatieverkenner komt in de volgende versie.</p>
             </div>
           </section>
 
           {veg.recipes && veg.recipes.length > 0 ? (
             <section className="detail-section">
-              <h3>Cook it</h3>
+              <h3>Bereid het</h3>
               <div className="recipe-list">
                 {veg.recipes.map((r, i) => (
                   <a
@@ -112,23 +111,23 @@ export default function DetailPanel({ veg, month, onClose }: Props) {
           ) : (
             <section className="detail-section ghost">
               <div className="ghost-head">
-                <h3>Cook it</h3>
+                <h3>Bereid het</h3>
                 <span className="ghost-tag">Recepten · binnenkort</span>
               </div>
               <div className="ghost-body">
-                <p className="ghost-preview"><em>Technique tip:</em> {veg.technique}</p>
-                <p className="ghost-note">Linked recipes drop with the recipe module.</p>
+                <p className="ghost-preview"><em>Bereidingstip:</em> {veg.technique}</p>
+                <p className="ghost-note">Gekoppelde recepten verschijnen met de receptenmodule.</p>
               </div>
             </section>
           )}
 
           <section className="detail-section ghost">
             <div className="ghost-head">
-              <h3>Find it nearby</h3>
-              <span className="ghost-tag">Markets &amp; foraging · soon</span>
+              <h3>Vind het in de buurt</h3>
+              <span className="ghost-tag">Markten &amp; plukken · binnenkort</span>
             </div>
             <div className="ghost-body">
-              <p className="ghost-note">Farmers&apos; market schedules and (for wild species) safe foraging spots will live here.</p>
+              <p className="ghost-note">Boerenmarktschema&apos;s en (voor wilde soorten) veilige plekplekken komen hier.</p>
             </div>
           </section>
         </div>

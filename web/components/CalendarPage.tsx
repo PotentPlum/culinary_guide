@@ -42,12 +42,12 @@ export default function CalendarPage({ month, onOpen }: Props) {
     <div className="page calendar">
       <header className="page-hero">
         <div className="hero-eyebrow">
-          <span className="hero-loc">📍 Netherlands</span>
+          <span className="hero-loc">📍 Nederland</span>
           <span className="hero-dot">·</span>
-          <span>Year at a glance</span>
+          <span>Jaar in één oogopslag</span>
         </div>
-        <h1 className="hero-title">The <em>calendar</em></h1>
-        <p className="hero-sub">When each vegetable peaks across the year. Filled = at its best, half = available.</p>
+        <h1 className="hero-title">De <em>kalender</em></h1>
+        <p className="hero-sub">Wanneer elke groente zijn hoogtepunt bereikt. Gevuld = op zijn best, half = beschikbaar.</p>
       </header>
 
       <div className="cal-table">
@@ -62,8 +62,7 @@ export default function CalendarPage({ month, onOpen }: Props) {
             <div className="cal-name-cell">
               <div className="cal-swatch" style={{ background: v.color, borderColor: v.accent }} />
               <div>
-                <div className="cal-name">{v.name}</div>
-                <div className="cal-nl">{v.nl}</div>
+                <div className="cal-name">{v.nl}</div>
               </div>
             </div>
             {MONTHS.map((m, i) => {
