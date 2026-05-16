@@ -113,12 +113,12 @@ type JsonObject = { [key: string]: JsonValue };
  *   - mainEntity / mainEntityOfPage wrappers
  *   - Arbitrary nesting via other keys
  */
-export function findRecipeNode(value: JsonValue): JsonObject | null {
+export function findRecipeNode(value: unknown): JsonObject | null {
   if (value === null || typeof value !== "object") return null;
 
   if (Array.isArray(value)) {
     for (const item of value) {
-      const found = findRecipeNode(item);
+      const found = findRecipeNode(item as unknown);
       if (found) return found;
     }
     return null;
