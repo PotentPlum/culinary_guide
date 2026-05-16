@@ -22,8 +22,7 @@ export default function VegCard({ veg, month, density = "comfortable", onOpen, l
       <button className="veg-row" onClick={() => onOpen(veg)}>
         <div className="veg-row-swatch" style={{ background: veg.color, borderColor: veg.accent }} />
         <div className="veg-row-text">
-          <div className="veg-row-name">{veg.name}</div>
-          <div className="veg-row-nl">{veg.nl}</div>
+          <div className="veg-row-name">{veg.nl}</div>
         </div>
         <div className="veg-row-bar"><PeakBar veg={veg} month={month} compact /></div>
         <StatusDot status={status} withLabel />
@@ -43,8 +42,7 @@ export default function VegCard({ veg, month, density = "comfortable", onOpen, l
         </div>
       </div>
       <div className="veg-card-text">
-        <div className="veg-card-name">{veg.name}</div>
-        <div className="veg-card-nl">{veg.nl}</div>
+        <div className="veg-card-name">{veg.nl}</div>
         {density !== "compact" && <PeakBar veg={veg} month={month} />}
       </div>
     </button>

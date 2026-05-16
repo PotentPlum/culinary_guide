@@ -1,13 +1,13 @@
 const ITEMS = [
-  { label: "Recipes by ingredient",    note: "We'll suggest dishes that use what's peaking this week." },
-  { label: "Substitutions & pairings", note: "Find what works instead — and what to put it next to." },
-  { label: "Foraging map",             note: "Where wild garlic, sorrel and chanterelles grow in NL." },
+  { label: "Recepten op ingrediënt",   note: "We stellen gerechten voor die gebruikmaken van wat er nu piekt." },
+  { label: "Vervangers & combinaties", note: "Vind wat er in de plaats komt — en wat er goed bij past." },
+  { label: "Plukkaart",                note: "Waar daslook, zuring en cantharellen groeien in Nederland." },
 ];
 
 export default function FuturePeek() {
   return (
     <section className="future-peek">
-      <div className="fp-label">Coming next</div>
+      <div className="fp-label">Binnenkort</div>
       <div className="fp-grid">
         {ITEMS.map((it) => (
           <div className="fp-card" key={it.label}>

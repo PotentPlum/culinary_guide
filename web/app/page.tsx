@@ -14,12 +14,12 @@ type View = "grid" | "list";
 type Density = "cozy" | "comfortable" | "compact";
 
 const NAV_ITEMS = [
-  { id: "seasonal",      label: "Seasonal",      icon: "leaf",    ready: true },
-  { id: "calendar",      label: "Calendar",      icon: "cal",     ready: true },
-  { id: "recipes",       label: "Recipes",       icon: "book",    ready: false },
-  { id: "substitutions", label: "Substitutions", icon: "swap",    ready: false },
-  { id: "techniques",    label: "Techniques",    icon: "knife",   ready: false },
-  { id: "foraging",      label: "Foraging",      icon: "compass", ready: false },
+  { id: "seasonal",      label: "Seizoenen",     icon: "leaf",    ready: true },
+  { id: "calendar",      label: "Kalender",      icon: "cal",     ready: true },
+  { id: "recipes",       label: "Recepten",      icon: "book",    ready: false },
+  { id: "substitutions", label: "Vervangers",    icon: "swap",    ready: false },
+  { id: "techniques",    label: "Technieken",    icon: "knife",   ready: false },
+  { id: "foraging",      label: "Plukken",       icon: "compass", ready: false },
 ];
 
 const STATUS_ORDER: Record<VegStatus, number> = { peak: 0, shoulder: 1, soon: 2, ending: 3, off: 4 };
@@ -71,7 +71,7 @@ export default function App() {
           </div>
           <div className="brand-name">
             <div className="brand-title">Mise</div>
-            <div className="brand-sub">a cook&apos;s almanac</div>
+            <div className="brand-sub">een kooksalmanak</div>
           </div>
         </div>
 
@@ -82,11 +82,11 @@ export default function App() {
               className={`nav-item${page === item.id ? " active" : ""}${!item.ready ? " soon" : ""}`}
               onClick={() => item.ready && setPage(item.id as Page)}
               disabled={!item.ready}
-              title={item.ready ? item.label : `${item.label} — coming soon`}
+              title={item.ready ? item.label : `${item.label} — binnenkort`}
             >
               <NavIcon name={item.icon} />
               <span>{item.label}</span>
-              {!item.ready && <span className="nav-soon">soon</span>}
+              {!item.ready && <span className="nav-soon">binnenkort</span>}
             </button>
           ))}
         </nav>
@@ -95,11 +95,11 @@ export default function App() {
           <div className="footer-loc">
             <span className="footer-flag" />
             <div>
-              <div className="footer-loc-label">Region</div>
-              <div className="footer-loc-name">The Netherlands</div>
+              <div className="footer-loc-label">Regio</div>
+              <div className="footer-loc-name">Nederland</div>
             </div>
           </div>
-          <div className="footer-build">v0.1 · seasonal module</div>
+          <div className="footer-build">v0.1 · seizoensmodule</div>
         </div>
       </aside>
 
@@ -109,16 +109,16 @@ export default function App() {
           <div className="page seasonal">
             <header className="page-hero">
               <div className="hero-eyebrow">
-                <span className="hero-loc">📍 Netherlands</span>
+                <span className="hero-loc">📍 Nederland</span>
                 <span className="hero-dot">·</span>
                 <span>{MONTHS_LONG[month - 1]} {new Date().getFullYear()}</span>
               </div>
               <h1 className="hero-title">
-                What&apos;s in season <em>right now</em>
+                Wat is er nu <em>in het seizoen</em>
               </h1>
               <p className="hero-sub">
-                {counts.peak} at peak · {counts.shoulder} available ·{" "}
-                {counts.soon} coming soon · {counts.ending} ending
+                {counts.peak} op hoogtepunt · {counts.shoulder} beschikbaar ·{" "}
+                {counts.soon} binnenkort · {counts.ending} aflopend
               </p>
             </header>
 
@@ -132,15 +132,15 @@ export default function App() {
                   <input
                     value={query}
                     onChange={(e) => setQuery(e.target.value)}
-                    placeholder="Search…"
-                    aria-label="Search vegetables"
+                    placeholder="Zoeken…"
+                    aria-label="Groenten zoeken"
                   />
                 </div>
                 <div className="seg">
-                  <button className={view === "grid" ? "on" : ""} onClick={() => setView("grid")} aria-label="Grid view">
+                  <button className={view === "grid" ? "on" : ""} onClick={() => setView("grid")} aria-label="Rasterweergave">
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><rect x="3" y="3" width="8" height="8" rx="1"/><rect x="13" y="3" width="8" height="8" rx="1"/><rect x="3" y="13" width="8" height="8" rx="1"/><rect x="13" y="13" width="8" height="8" rx="1"/></svg>
                   </button>
-                  <button className={view === "list" ? "on" : ""} onClick={() => setView("list")} aria-label="List view">
+                  <button className={view === "list" ? "on" : ""} onClick={() => setView("list")} aria-label="Lijstweergave">
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
                   </button>
                 </div>
@@ -148,7 +148,7 @@ export default function App() {
             </div>
 
             {filtered.length === 0 ? (
-              <div className="empty">No vegetables match. Try clearing the search.</div>
+              <div className="empty">Geen groenten gevonden. Probeer de zoekopdracht te wissen.</div>
             ) : view === "list" ? (
               <div className="veg-list">
                 {filtered.map((v) => (
