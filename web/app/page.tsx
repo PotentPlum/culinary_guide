@@ -30,6 +30,7 @@ export default function App() {
   const [filter, setFilter] = useState<Filter>("all");
   const [query, setQuery] = useState("");
   const [view, setView] = useState<View>("grid");
+  // density toggle UI is not yet built — state is wired through but fixed at "comfortable"
   const [density] = useState<Density>("comfortable");
   const [openVeg, setOpenVeg] = useState<VegItem | null>(null);
 

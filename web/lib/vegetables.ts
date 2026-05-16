@@ -19,11 +19,13 @@
  * id           Unique slug, kebab-case, English. Used as React key and future URL.
  *              Example: "butterhead-lettuce", "red-cabbage"
  *
- * name         English display name shown in the UI. Use the most common culinary term.
+ * name         Internal English identifier. NEVER shown to users — used only for
+ *              sorting, search matching, and as a React key base. Display the `nl`
+ *              field instead. Use the most common culinary term in English.
  *              Example: "Kohlrabi", "Garden peas"
  *
  * nl           Dutch name(s) as used in the Netherlands. Multiple common names separated
- *              by " / ". Shown in the UI alongside the English name.
+ *              by " / ". This is the display name shown to users in the UI.
  *              Example: "Koolrabi", "Witlof / Brussels lof"
  *
  * color        Background / fill colour for the vegetable card and illustration.
@@ -35,8 +37,8 @@
  *              Must be a hex string. Example: "#7B9A3D"
  *
  * family       Broad culinary/botanical category. Used for grouping and search.
- *              Use one of: "Root", "Leaf", "Brassica", "Allium", "Legume", "Stalk",
- *              "Squash", "Tuber", "Fruit-vegetable", "Mushroom", "Herb"
+ *              Use one of: "Wortel", "Blad", "Brassica", "Allium", "Peulvrucht",
+ *              "Stengel", "Pompoen", "Knolgewas", "Vruchtgroente", "Paddenstoel", "Kruid"
  *              Add new categories as needed, but keep the list short.
  *
  * peak         Months when this vegetable is at its absolute best from Dutch local harvest —
