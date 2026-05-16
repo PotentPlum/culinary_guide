@@ -1,17 +1,44 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import type { RecipeOutput } from "@/lib/recipeIngestion";
 import { UI } from "@/lib/strings";
 
 type Phase = "idle" | "loading" | "error" | "done";
+
+type SavedRecipe = {
+  url: string;
+  recipe: RecipeOutput;
+  savedAt: number;
+};
+
+const STORAGE_KEY = "mise-saved-recipes";
+
+function loadSaved(): SavedRecipe[] {
+  if (typeof window === "undefined") return [];
+  try {
+    return JSON.parse(localStorage.getItem(STORAGE_KEY) ?? "[]");
+  } catch {
+    return [];
+  }
+}
+
+function persistSaved(items: SavedRecipe[]) {
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(items));
+}
 
 export default function RecipesPage() {
   const [url, setUrl] = useState("");
   const [phase, setPhase] = useState<Phase>("idle");
   const [errorMsg, setErrorMsg] = useState("");
   const [recipe, setRecipe] = useState<RecipeOutput | null>(null);
+  const [activeUrl, setActiveUrl] = useState("");
+  const [savedRecipes, setSavedRecipes] = useState<SavedRecipe[]>([]);
   const inputRef = useRef<HTMLInputElement>(null);
+
+  useEffect(() => {
+    setSavedRecipes(loadSaved());
+  }, []);
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
@@ -37,6 +64,7 @@ export default function RecipesPage() {
       }
 
       setRecipe(data);
+      setActiveUrl(trimmed);
       setPhase("done");
     } catch {
       setPhase("error");
@@ -49,8 +77,33 @@ export default function RecipesPage() {
     setRecipe(null);
     setErrorMsg("");
     setUrl("");
+    setActiveUrl("");
     setTimeout(() => inputRef.current?.focus(), 0);
   }
+
+  function handleSave() {
+    if (!recipe || !activeUrl) return;
+    const item: SavedRecipe = { url: activeUrl, recipe, savedAt: Date.now() };
+    const updated = [item, ...savedRecipes.filter((r) => r.url !== activeUrl)];
+    setSavedRecipes(updated);
+    persistSaved(updated);
+  }
+
+  function handleRemoveSaved(savedUrl: string) {
+    const updated = savedRecipes.filter((r) => r.url !== savedUrl);
+    setSavedRecipes(updated);
+    persistSaved(updated);
+  }
+
+  function handleLoadSaved(saved: SavedRecipe) {
+    setRecipe(saved.recipe);
+    setActiveUrl(saved.url);
+    setUrl(saved.url);
+    setPhase("done");
+    setErrorMsg("");
+  }
+
+  const isSaved = savedRecipes.some((r) => r.url === activeUrl);
 
   return (
     <div className="page recipes-page">
@@ -104,15 +157,83 @@ export default function RecipesPage() {
       )}
 
       {phase === "done" && recipe && (
-        <RecipeResult recipe={recipe} onReset={handleReset} />
+        <RecipeResult
+          recipe={recipe}
+          isSaved={isSaved}
+          onSave={handleSave}
+          onReset={handleReset}
+        />
+      )}
+
+      {phase === "idle" && savedRecipes.length > 0 && (
+        <SavedRecipesList
+          savedRecipes={savedRecipes}
+          onLoad={handleLoadSaved}
+          onRemove={handleRemoveSaved}
+        />
       )}
     </div>
   );
 }
 
+// ─── Saved recipes list ───────────────────────────────────────────────────────
+
+function SavedRecipesList({
+  savedRecipes,
+  onLoad,
+  onRemove,
+}: {
+  savedRecipes: SavedRecipe[];
+  onLoad: (saved: SavedRecipe) => void;
+  onRemove: (url: string) => void;
+}) {
+  return (
+    <section className="recipe-saved-section">
+      <h2 className="recipe-saved-heading">{UI.recipes.savedSection}</h2>
+      <ul className="recipe-saved-list">
+        {savedRecipes.map((saved) => {
+          let domain = saved.url;
+          try {
+            domain = new URL(saved.url).hostname.replace(/^www\./, "");
+          } catch {}
+          const date = new Date(saved.savedAt).toLocaleDateString("nl-NL", {
+            day: "numeric",
+            month: "long",
+          });
+          return (
+            <li key={saved.url} className="recipe-saved-item">
+              <button className="recipe-saved-item-load" onClick={() => onLoad(saved)}>
+                <span className="recipe-saved-item-title">{saved.recipe.title}</span>
+                <span className="recipe-saved-item-meta">{domain} · {date}</span>
+              </button>
+              <button
+                className="recipe-saved-item-remove"
+                onClick={() => onRemove(saved.url)}
+                aria-label={UI.recipes.savedRemoveLabel}
+              >
+                ×
+              </button>
+            </li>
+          );
+        })}
+      </ul>
+    </section>
+  );
+}
+
 // ─── Recipe result display ────────────────────────────────────────────────────
 
-function RecipeResult({ recipe, onReset }: { recipe: RecipeOutput; onReset: () => void }) {
+function RecipeResult({
+  recipe,
+  isSaved,
+  onSave,
+  onReset,
+}: {
+  recipe: RecipeOutput;
+  isSaved: boolean;
+  onSave: () => void;
+  onReset: () => void;
+}) {
   const times = (
     [
       { label: UI.recipes.labelPrepTime, value: recipe.prepTimeMinutes },
@@ -131,9 +252,18 @@ function RecipeResult({ recipe, onReset }: { recipe: RecipeOutput; onReset: () =
       {/* ── Header ── */}
       <div className="recipe-result-header">
         <h2 className="recipe-result-title">{recipe.title}</h2>
-        <button className="recipe-clear-btn" onClick={onReset} aria-label={UI.recipes.clearBtn}>
-          {UI.recipes.clearBtn}
-        </button>
+        <div className="recipe-result-actions">
+          <button
+            className={`recipe-save-btn${isSaved ? " recipe-save-btn--saved" : ""}`}
+            onClick={onSave}
+            disabled={isSaved}
+          >
+            {isSaved ? UI.recipes.savedBtn : UI.recipes.saveBtn}
+          </button>
+          <button className="recipe-clear-btn" onClick={onReset} aria-label={UI.recipes.clearBtn}>
+            {UI.recipes.clearBtn}
+          </button>
+        </div>
       </div>
 
       {recipe.description && (
