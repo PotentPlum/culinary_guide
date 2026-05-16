@@ -74,7 +74,19 @@
  *              Example: "Vitamin C, K, folate, potassium"
  *
  * url?         Link to the source page (e.g. velt.nu). Optional, for reference only.
+ *
+ * recipes?     Curated recipes that highlight this vegetable at its seasonal peak.
+ *              3–5 hand-picked entries. See Recipe type for field guide.
  */
+export type Recipe = {
+  title: string;
+  url: string;
+  source: string;
+  why: string;
+  difficulty: "easy" | "medium" | "hard";
+  time_mins: number;
+};
+
 export type VegItem = {
   id: string;
   name: string;
@@ -92,6 +104,7 @@ export type VegItem = {
   technique: string;
   nutrients?: string;
   url?: string;
+  recipes?: Recipe[];
 };
 
 export type VegStatus = "peak" | "soon" | "ending" | "shoulder" | "off";
@@ -132,6 +145,40 @@ export const VEG_DATA: VegItem[] = [
     technique: "Classic Dutch service: peel, simmer, serve with melted butter, egg & ham.",
     nutrients: "Vitamins K, C, B1, B2, E, folate; potassium, calcium, magnesium",
     url: "https://velt.nu/groente/asperges",
+    recipes: [
+      {
+        title: "Hollandse asperges met ham, ei en botersaus",
+        url: "https://www.allerhande.nl/recept/R-R1187954/hollandse-asperges-met-ham-ei-en-botersaus",
+        source: "Allerhande",
+        why: "The definitive Dutch preparation: the sweetness of May asparagus is at its cleanest against simple butter, egg, and ham — nothing competes.",
+        difficulty: "easy",
+        time_mins: 30,
+      },
+      {
+        title: "Aspergesoep met dragon",
+        url: "https://www.leukerecepten.nl/recepten/aspergesoep/",
+        source: "Leuke Recepten",
+        why: "The cooking water from white asparagus is pure gold — this soup wastes nothing and concentrates the season into a bowl.",
+        difficulty: "easy",
+        time_mins: 40,
+      },
+      {
+        title: "White asparagus with morels and chervil butter",
+        url: "https://www.greatbritishchefs.com/recipes/white-asparagus-morel-recipe",
+        source: "Great British Chefs",
+        why: "Morels and asparagus share a two-week window in May — pairing them amplifies the earthy umami of both at once.",
+        difficulty: "medium",
+        time_mins: 45,
+      },
+      {
+        title: "Asperges met gerookte zalm en citroencrème",
+        url: "https://www.24kitchen.nl/recepten/asperges-met-gerookte-zalm",
+        source: "24Kitchen",
+        why: "Cold-smoked salmon's brine cuts through the richness of asparagus, making this a light yet satisfying spring lunch.",
+        difficulty: "easy",
+        time_mins: 20,
+      },
+    ],
   },
   {
     id: "asparagus-green",
@@ -623,6 +670,48 @@ export const VEG_DATA: VegItem[] = [
     technique: "Salt-bake whole for the deepest flavor — bury in coarse salt and roast.",
     nutrients: "Potassium, fibre; betacyanin (red pigment); nitrate-rich; beet greens have vitamins A, C and iron",
     url: "https://velt.nu/groente/rode-biet",
+    recipes: [
+      {
+        title: "Geroosterde rode biet met geitenkaas en walnoot",
+        url: "https://www.leukerecepten.nl/recepten/geroosterde-rode-biet-met-geitenkaas/",
+        source: "Leuke Recepten",
+        why: "Roasting concentrates the natural sugars of summer beets; the tang of goat's cheese and crunch of walnut turn it into a complete dish with minimal effort.",
+        difficulty: "easy",
+        time_mins: 75,
+      },
+      {
+        title: "Bietensoep met mierikswortel",
+        url: "https://www.24kitchen.nl/recepten/bietensoep-met-mierikswortel",
+        source: "24Kitchen",
+        why: "October beets are fully sweet and earthy — a hot soup with sharp horseradish highlights both qualities and warms through the transition to autumn.",
+        difficulty: "easy",
+        time_mins: 35,
+      },
+      {
+        title: "Roasted beet & smoked mackerel salad",
+        url: "https://www.bbcgoodfood.com/recipes/roasted-beetroot-smoked-mackerel-salad",
+        source: "BBC Good Food",
+        why: "Smoked fish and earthy beet is a classic Dutch-pantry pairing — the oiliness of mackerel balances the beet's sweetness perfectly.",
+        difficulty: "easy",
+        time_mins: 80,
+      },
+      {
+        title: "Bieten carpaccio met dille en kappertjes",
+        url: "https://www.wateetons.nl/recepten/bieten-carpaccio/",
+        source: "Wat Eet Ons",
+        why: "Raw young beets (June–July) are tender enough to slice paper-thin — this no-cook preparation shows off their bright colour and crisp texture.",
+        difficulty: "easy",
+        time_mins: 15,
+      },
+      {
+        title: "Gevulde bietjes met kruidenricotta",
+        url: "https://www.njam.tv/recepten/gevulde-bietjes-met-kruidenricotta",
+        source: "njam!",
+        why: "Hollowing out small autumn beets and filling them makes a striking starter; the herb ricotta cools the sweetness without masking it.",
+        difficulty: "medium",
+        time_mins: 90,
+      },
+    ],
   },
   {
     id: "artichoke",
@@ -1202,6 +1291,40 @@ export const VEG_DATA: VegItem[] = [
     technique: "Braise whole halves cut-side down in butter and stock until silky.",
     nutrients: "Potassium, calcium, carotene, vitamin C; sulfur compounds for flavour",
     url: "https://velt.nu/groente/prei",
+    recipes: [
+      {
+        title: "Gegratineerde prei met kaassaus",
+        url: "https://www.leukerecepten.nl/recepten/gegratineerde-prei/",
+        source: "Leuke Recepten",
+        why: "Winter leeks cooked this long turn silky and mild — the gratiné crust gives the textural contrast they need.",
+        difficulty: "easy",
+        time_mins: 40,
+      },
+      {
+        title: "Preisoep met room en bieslook",
+        url: "https://www.allerhande.nl/recept/R-R1184281/preissoep",
+        source: "Allerhande",
+        why: "Leeks sweated low and slow release extraordinary sweetness — this simple soup with cream and chives is the purest expression of winter prei.",
+        difficulty: "easy",
+        time_mins: 35,
+      },
+      {
+        title: "Prei-aardappeltaart met mosterd",
+        url: "https://www.24kitchen.nl/recepten/prei-aardappeltaart",
+        source: "24Kitchen",
+        why: "The potato and leek combination is a Dutch staple — adding mustard cuts the richness and lifts the whole tart.",
+        difficulty: "medium",
+        time_mins: 60,
+      },
+      {
+        title: "Charred leeks with romesco",
+        url: "https://ottolenghi.co.uk/recipes/charred-leeks-with-romesco-and-fried-capers",
+        source: "Ottolenghi",
+        why: "Burning the outer layer caramelises the sugars in autumn leeks and creates a smoky depth that the bright, nutty romesco sauce amplifies.",
+        difficulty: "medium",
+        time_mins: 50,
+      },
+    ],
   },
   {
     id: "yellow-onion",

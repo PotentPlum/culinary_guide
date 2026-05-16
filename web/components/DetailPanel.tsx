@@ -82,16 +82,45 @@ export default function DetailPanel({ veg, month, onClose }: Props) {
             </div>
           </section>
 
-          <section className="detail-section ghost">
-            <div className="ghost-head">
+          {veg.recipes && veg.recipes.length > 0 ? (
+            <section className="detail-section">
               <h3>Cook it</h3>
-              <span className="ghost-tag">Recipes · soon</span>
-            </div>
-            <div className="ghost-body">
-              <p className="ghost-preview"><em>Technique tip:</em> {veg.technique}</p>
-              <p className="ghost-note">Linked recipes drop with the recipe module.</p>
-            </div>
-          </section>
+              <div className="recipe-list">
+                {veg.recipes.map((r, i) => (
+                  <a
+                    key={`${r.url}-${i}`}
+                    href={r.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="recipe-card"
+                  >
+                    <div className="recipe-card-top">
+                      <span className="recipe-source">{r.source}</span>
+                      <div className="recipe-meta">
+                        <span className="recipe-chip">{r.time_mins} min</span>
+                        <span className={`recipe-chip recipe-difficulty recipe-difficulty--${r.difficulty}`}>
+                          {r.difficulty === "easy" ? "Makkelijk" : r.difficulty === "medium" ? "Gemiddeld" : "Moeilijk"}
+                        </span>
+                      </div>
+                    </div>
+                    <div className="recipe-title">{r.title}</div>
+                    <p className="recipe-why">{r.why}</p>
+                  </a>
+                ))}
+              </div>
+            </section>
+          ) : (
+            <section className="detail-section ghost">
+              <div className="ghost-head">
+                <h3>Cook it</h3>
+                <span className="ghost-tag">Recepten · binnenkort</span>
+              </div>
+              <div className="ghost-body">
+                <p className="ghost-preview"><em>Technique tip:</em> {veg.technique}</p>
+                <p className="ghost-note">Linked recipes drop with the recipe module.</p>
+              </div>
+            </section>
+          )}
 
           <section className="detail-section ghost">
             <div className="ghost-head">

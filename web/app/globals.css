@@ -704,3 +704,78 @@ body.sans-display .detail-blurb { font-family: var(--sans); font-style: normal; 
   .veg-row { grid-template-columns: 28px 1fr auto 16px; }
   .veg-row-bar { display: none; }
 }
+
+/* =========== RECIPES =========== */
+.recipe-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 2px;
+}
+.recipe-card {
+  display: block;
+  padding: 14px 16px;
+  background: var(--surface-warm);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  text-decoration: none;
+  color: inherit;
+  transition: border-color 120ms, background 120ms, transform 150ms cubic-bezier(.3,.7,.4,1);
+}
+.recipe-card:hover {
+  border-color: var(--line-strong);
+  background: #FFFFFF;
+  transform: translateY(-1px);
+}
+.recipe-card:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+  border-color: var(--line-strong);
+  background: #FFFFFF;
+}
+.recipe-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 6px;
+}
+.recipe-source {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+.recipe-meta {
+  display: flex;
+  gap: 5px;
+  flex-shrink: 0;
+}
+.recipe-chip {
+  font-family: var(--mono);
+  font-size: 10.5px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: rgba(30,26,20,0.07);
+  color: var(--ink-soft);
+}
+.recipe-difficulty--easy   { background: rgba(63, 94, 42, 0.10); color: var(--primary); }
+.recipe-difficulty--medium { background: rgba(201,139,42, 0.12); color: var(--soon-fg); }
+.recipe-difficulty--hard   { background: rgba(153,81,74, 0.12);  color: var(--ending-fg); }
+.recipe-title {
+  font-family: var(--serif);
+  font-size: 16px;
+  line-height: 1.25;
+  margin-bottom: 6px;
+  color: var(--ink);
+}
+body.sans-display .recipe-title { font-family: var(--sans); font-weight: 600; font-size: 14px; letter-spacing: -0.01em; }
+.recipe-why {
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--ink-soft);
+  margin: 0;
+  font-style: italic;
+  text-wrap: pretty;
+}
