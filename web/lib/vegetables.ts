@@ -109,17 +109,33 @@ export type VegItem = {
 
 export type VegStatus = "peak" | "soon" | "ending" | "shoulder" | "off";
 
+/**
+ * Returns the seasonal status of a vegetable for a given month.
+ *
+ * Priority order matters: a vegetable currently in shoulder (available now)
+ * must not be shadowed by "soon" or "ending" — those labels imply the
+ * vegetable is not yet (or no longer) accessible, which is false when a
+ * shoulder month is active.
+ *
+ * Order: peak → shoulder → soon → ending → off
+ */
 export function statusFor(veg: VegItem, month: number): VegStatus {
   if (veg.peak.includes(month)) return "peak";
-  const upcoming = veg.peak.some((m) => {
+
+  // Check shoulder before soon/ending: the vegetable is available right now.
+  if (veg.shoulder?.includes(month)) return "shoulder";
+
+  // Peak is 1–2 months away but not currently available.
+  const soon = veg.peak.some((m) => {
     const diff = (m - month + 12) % 12;
-    return diff > 0 && diff <= 2;
+    return diff >= 1 && diff <= 2;
   });
-  if (upcoming) return "soon";
-  const ending =
-    veg.peak.includes(((month - 2 + 12) % 12) + 1) && !veg.peak.includes(month);
-  if (ending) return "ending";
-  if (veg.shoulder && veg.shoulder.includes(month)) return "shoulder";
+  if (soon) return "soon";
+
+  // Peak ended last month — still worth flagging as recently past.
+  const prevMonth = ((month - 2 + 12) % 12) + 1;
+  if (veg.peak.includes(prevMonth)) return "ending";
+
   return "off";
 }
 
