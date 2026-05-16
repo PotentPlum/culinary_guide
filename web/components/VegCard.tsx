@@ -19,7 +19,7 @@ export default function VegCard({ veg, month, density = "comfortable", onOpen, l
 
   if (listMode) {
     return (
-      <button className="veg-row" onClick={() => onOpen(veg)}>
+      <button className="veg-row" onClick={() => onOpen(veg)} aria-label={`Bekijk ${veg.nl}`}>
         <div className="veg-row-swatch" style={{ background: veg.color, borderColor: veg.accent }} />
         <div className="veg-row-text">
           <div className="veg-row-name">{veg.nl}</div>
@@ -34,7 +34,7 @@ export default function VegCard({ veg, month, density = "comfortable", onOpen, l
   const tokenSize = density === "compact" ? 64 : density === "cozy" ? 104 : 84;
 
   return (
-    <button className={`veg-card density-${density}`} onClick={() => onOpen(veg)}>
+    <button className={`veg-card density-${density}`} onClick={() => onOpen(veg)} aria-label={`Bekijk ${veg.nl}`}>
       <div className="veg-card-illus">
         <VegToken veg={veg} size={tokenSize} />
         <div className="veg-card-status">
