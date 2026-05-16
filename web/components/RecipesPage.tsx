@@ -1,0 +1,238 @@
+"use client";
+
+import { useRef, useState } from "react";
+import type { RecipeOutput } from "@/lib/recipeIngestion";
+import { UI } from "@/lib/strings";
+
+type Phase = "idle" | "loading" | "error" | "done";
+
+export default function RecipesPage() {
+  const [url, setUrl] = useState("");
+  const [phase, setPhase] = useState<Phase>("idle");
+  const [errorMsg, setErrorMsg] = useState("");
+  const [recipe, setRecipe] = useState<RecipeOutput | null>(null);
+  const inputRef = useRef<HTMLInputElement>(null);
+
+  async function handleSubmit(e: React.FormEvent) {
+    e.preventDefault();
+    const trimmed = url.trim();
+    if (!trimmed) return;
+
+    setPhase("loading");
+    setErrorMsg("");
+    setRecipe(null);
+
+    try {
+      const res = await fetch("/api/recipe", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ url: trimmed }),
+      });
+      const data = (await res.json()) as RecipeOutput & { error?: string };
+
+      if (!res.ok) {
+        setPhase("error");
+        setErrorMsg(data.error ?? UI.recipes.errorFallback);
+        return;
+      }
+
+      setRecipe(data);
+      setPhase("done");
+    } catch {
+      setPhase("error");
+      setErrorMsg(UI.recipes.errorNetwork);
+    }
+  }
+
+  function handleReset() {
+    setPhase("idle");
+    setRecipe(null);
+    setErrorMsg("");
+    setUrl("");
+    setTimeout(() => inputRef.current?.focus(), 0);
+  }
+
+  return (
+    <div className="page recipes-page">
+      <header className="page-hero">
+        <h1 className="hero-title">
+          Recept <em>inladen</em>
+        </h1>
+        <p className="hero-sub">{UI.recipes.pageSubtitle}</p>
+      </header>
+
+      <form className="recipe-import-form" onSubmit={handleSubmit}>
+        <div className="recipe-import-row">
+          <input
+            ref={inputRef}
+            type="url"
+            className="recipe-import-input"
+            value={url}
+            onChange={(e) => setUrl(e.target.value)}
+            placeholder={UI.recipes.inputPlaceholder}
+            aria-label={UI.recipes.inputLabel}
+            required
+            disabled={phase === "loading"}
+            autoFocus
+          />
+          <button
+            type="submit"
+            className="recipe-import-btn"
+            disabled={phase === "loading" || !url.trim()}
+          >
+            {phase === "loading" ? UI.recipes.loadingBtn : UI.recipes.submitBtn}
+          </button>
+        </div>
+        <p className="recipe-import-hint">{UI.recipes.hintText}</p>
+      </form>
+
+      {phase === "loading" && (
+        <div className="recipe-state-loading" aria-live="polite">
+          <div className="recipe-spinner" aria-hidden="true" />
+          <span>{UI.recipes.loadingMsg}</span>
+        </div>
+      )}
+
+      {phase === "error" && (
+        <div className="recipe-state-error" role="alert">
+          <strong>{UI.recipes.errorTitle}</strong>
+          <p>{errorMsg}</p>
+          <button className="recipe-retry-btn" onClick={handleReset}>
+            {UI.recipes.retryBtn}
+          </button>
+        </div>
+      )}
+
+      {phase === "done" && recipe && (
+        <RecipeResult recipe={recipe} onReset={handleReset} />
+      )}
+    </div>
+  );
+}
+
+// ─── Recipe result display ────────────────────────────────────────────────────
+
+function RecipeResult({ recipe, onReset }: { recipe: RecipeOutput; onReset: () => void }) {
+  const times = (
+    [
+      { label: UI.recipes.labelPrepTime, value: recipe.prepTimeMinutes },
+      { label: UI.recipes.labelCookTime, value: recipe.cookTimeMinutes },
+      { label: UI.recipes.labelTotalTime, value: recipe.totalTimeMinutes },
+    ] as { label: string; value: number | null }[]
+  ).filter((t) => t.value !== null);
+
+  const cuisines = toArray(recipe.cuisine);
+  const categories = toArray(recipe.category);
+  const hasMeta = times.length > 0 || cuisines.length > 0 || categories.length > 0;
+  const hasNutrition = Object.values(recipe.nutrition).some(Boolean);
+
+  return (
+    <article className="recipe-result">
+      {/* ── Header ── */}
+      <div className="recipe-result-header">
+        <h2 className="recipe-result-title">{recipe.title}</h2>
+        <button className="recipe-clear-btn" onClick={onReset} aria-label={UI.recipes.clearBtn}>
+          {UI.recipes.clearBtn}
+        </button>
+      </div>
+
+      {recipe.description && (
+        <p className="recipe-result-desc">{recipe.description}</p>
+      )}
+
+      {/* ── Meta chips ── */}
+      {hasMeta && (
+        <div className="recipe-result-meta">
+          {times.map((t) => (
+            <span key={t.label} className="recipe-meta-chip recipe-meta-chip--time">
+              <span className="recipe-meta-label">{t.label}</span>
+              <span className="recipe-meta-value">
+                {t.value} {UI.recipes.labelMinutes}
+              </span>
+            </span>
+          ))}
+          {[...cuisines, ...categories].map((tag) => (
+            <span key={tag} className="recipe-meta-chip recipe-meta-chip--tag">
+              {tag}
+            </span>
+          ))}
+        </div>
+      )}
+
+      {/* ── Body: ingredients + instructions ── */}
+      <div className="recipe-result-body">
+        {/* Ingredients column */}
+        <div className="recipe-col recipe-ing-col">
+          <h3 className="recipe-col-title">{UI.recipes.sectionIngredients}</h3>
+          {recipe.ingredientSections.map((section, si) => (
+            <div key={si} className="recipe-section">
+              {!(section.sectionName === "Ingredients" && recipe.ingredientSections.length === 1) && (
+                <div className="recipe-section-name">{section.sectionName}</div>
+              )}
+              <ul className="recipe-ing-list">
+                {section.ingredients.map((ing, ii) => (
+                  <li key={ii}>{ing}</li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+
+        {/* Instructions column */}
+        <div className="recipe-col recipe-step-col">
+          <h3 className="recipe-col-title">{UI.recipes.sectionInstructions}</h3>
+          {recipe.instructionSections.map((section, si) => (
+            <div key={si} className="recipe-section">
+              {!(section.sectionName === "Instructions" && recipe.instructionSections.length === 1) && (
+                <div className="recipe-section-name">{section.sectionName}</div>
+              )}
+              {section.steps.map((step) => (
+                <div key={step.stepNumber} className="recipe-step">
+                  <span className="recipe-step-num" aria-hidden="true">
+                    {step.stepNumber}
+                  </span>
+                  <p className="recipe-step-text">{step.text}</p>
+                </div>
+              ))}
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* ── Nutrition ── */}
+      {hasNutrition && (
+        <div className="recipe-nutrition">
+          <h3 className="recipe-col-title">{UI.recipes.sectionNutrition}</h3>
+          <div className="recipe-nutrition-chips">
+            {recipe.nutrition.calories && (
+              <NutritionChip label={UI.recipes.labelCalories} value={recipe.nutrition.calories} />
+            )}
+            {recipe.nutrition.protein && (
+              <NutritionChip label={UI.recipes.labelProtein} value={recipe.nutrition.protein} />
+            )}
+            {recipe.nutrition.carbs && (
+              <NutritionChip label={UI.recipes.labelCarbs} value={recipe.nutrition.carbs} />
+            )}
+            {recipe.nutrition.fat && (
+              <NutritionChip label={UI.recipes.labelFat} value={recipe.nutrition.fat} />
+            )}
+          </div>
+        </div>
+      )}
+    </article>
+  );
+}
+
+function NutritionChip({ label, value }: { label: string; value: string }) {
+  return (
+    <span className="recipe-nutrition-chip">
+      <span className="recipe-nutrition-label">{label}</span>
+      <span className="recipe-nutrition-value">{value}</span>
+    </span>
+  );
+}
+
+function toArray(v: string | string[]): string[] {
+  if (!v) return [];
+  return Array.isArray(v) ? v.filter(Boolean) : v ? [v] : [];
+}
