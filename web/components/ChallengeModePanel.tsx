@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { UI } from "@/lib/strings";
 
 type ChallengeResult = {
   ingredient: string;
@@ -53,14 +54,20 @@ export default function ChallengeModePanel({ ingredients }: Props) {
         onClick={handleGenerate}
         disabled={!selected || loading}
       >
-        {loading ? "Genereren…" : "Genereer uitdaging"}
+        {loading ? UI.recipes.loadingBtn : "Genereer uitdaging"}
       </button>
       {error && <p className="error-text">{error}</p>}
       {result && (
         <div className="challenge-result">
           <p className="challenge-text">{result.challenge_text}</p>
           {result.difficulty && (
-            <span className="challenge-difficulty">{result.difficulty}</span>
+            <span className="challenge-difficulty">
+              {result.difficulty === "easy"
+                ? UI.detail.difficultyEasy
+                : result.difficulty === "hard"
+                ? UI.detail.difficultyHard
+                : UI.detail.difficultyMedium}
+            </span>
           )}
         </div>
       )}
