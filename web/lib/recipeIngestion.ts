@@ -81,14 +81,35 @@ export function parseIso8601Duration(value: string | null | undefined): number |
   return total === 0 ? null : total;
 }
 
-// ─── Text utilities ───────────────────────────────────────────────────────────
+// ─── Text utilities ────────────────────────────────────────────────────────────────────────────────
+
+/**
+ * Removes HTML tags from a string, replacing block-level elements with spaces
+ * so adjacent words don't run together after tag removal.
+ * Also decodes common HTML entities.
+ */
+export function stripHtml(text: string): string {
+  return text
+    .replace(/<\/(p|li|td|th|div|h[1-6]|section|article)>/gi, " ")
+    .replace(/<br\s*\/?>\s*/gi, " ")
+    .replace(/<[^>]+>/g, "")
+    .replace(/&amp;/g, "&")
+    .replace(/&lt;/g, "<")
+    .replace(/&gt;/g, ">")
+    .replace(/&quot;/g, '"')
+    .replace(/&#39;/g, "'")
+    .replace(/&apos;/g, "'")
+    .replace(/&nbsp;/g, " ")
+    .replace(/&#(\d+);/g, (_, code) => String.fromCharCode(parseInt(code, 10)))
+    .replace(/&#x([0-9a-f]+);/gi, (_, hex) => String.fromCharCode(parseInt(hex, 16)));
+}
 
 /**
  * Strips common unicode artifacts and normalises whitespace.
  * ˚ is the ring-above diacritic sometimes emitted instead of the degree sign.
  */
 export function cleanText(text: string): string {
-  return text
+  return stripHtml(text)
     .replace(/˚/g, "°") // ring above → degree sign
     .replace(/°/g, "°") // already a degree sign, normalise
     .replace(/’/g, "'") // right single quotation mark
@@ -233,11 +254,28 @@ export function parseIngredientSections(ingredients: string[]): IngredientSectio
 
 type RawInstruction = string | JsonObject;
 
+function isHowToSection(item: RawInstruction): boolean {
+  return (
+    item !== null &&
+    typeof item === "object" &&
+    !Array.isArray(item) &&
+    (item as JsonObject)["@type"] === "HowToSection"
+  );
+}
+
+function stepsFromItems(items: RawInstruction[]): InstructionStep[] {
+  return items.map((step, idx) => ({
+    stepNumber: idx + 1,
+    text: cleanText(extractStepText(step)),
+  }));
+}
+
 /**
  * Normalises recipeInstructions which may arrive as:
  *   1. A flat array of plain strings
- *   2. A flat array of HowToStep objects  ({ "@type": "HowToStep", "text": "..." })
- *   3. A structured array of HowToSection objects containing nested itemListElement arrays
+ *   2. A flat array of HowToStep objects ({ "@type": "HowToStep", "text": "..." })
+ *   3. An array of HowToSection objects containing nested itemListElement arrays
+ *   4. A mixed array where HowToSection and HowToStep appear at the same level
  */
 export function parseInstructionSections(raw: JsonValue | undefined): InstructionSection[] {
   if (raw == null) return [];
@@ -248,38 +286,44 @@ export function parseInstructionSections(raw: JsonValue | undefined): Instructio
 
   if (arr.length === 0) return [];
 
-  // Detect HowToSection structure by inspecting the first element
-  const first = arr[0];
-  if (
-    first !== null &&
-    typeof first === "object" &&
-    !Array.isArray(first) &&
-    (first as JsonObject)["@type"] === "HowToSection"
-  ) {
-    return arr.map((section) => {
-      const s = section as JsonObject;
-      const sectionName = cleanText(String(s["name"] ?? "Instructions"));
-      const itemList = s["itemListElement"];
-      const items: RawInstruction[] = Array.isArray(itemList)
-        ? (itemList as RawInstruction[])
-        : [];
+  const hasSections = arr.some(isHowToSection);
 
-      const steps: InstructionStep[] = items.map((step, idx) => ({
-        stepNumber: idx + 1,
-        text: cleanText(extractStepText(step)),
-      }));
+  if (hasSections) {
+    // Mixed or pure HowToSection array: collect loose steps under the preceding section,
+    // or under a default "Instructions" section if they appear before any named section.
+    const result: InstructionSection[] = [];
+    let currentName = "Instructions";
+    let currentItems: RawInstruction[] = [];
 
-      return { sectionName, steps };
-    });
+    for (const item of arr) {
+      if (isHowToSection(item)) {
+        // Flush accumulated loose steps before this section
+        if (currentItems.length > 0) {
+          result.push({ sectionName: currentName, steps: stepsFromItems(currentItems) });
+          currentItems = [];
+        }
+        const s = item as JsonObject;
+        const sectionName = cleanText(String(s["name"] ?? "Instructions"));
+        const itemList = s["itemListElement"];
+        const nestedItems: RawInstruction[] = Array.isArray(itemList)
+          ? (itemList as RawInstruction[])
+          : [];
+        result.push({ sectionName, steps: stepsFromItems(nestedItems) });
+        currentName = sectionName;
+      } else {
+        currentItems.push(item);
+      }
+    }
+
+    if (currentItems.length > 0) {
+      result.push({ sectionName: currentName, steps: stepsFromItems(currentItems) });
+    }
+
+    return result;
   }
 
   // Flat array of strings or HowToStep objects
-  const steps: InstructionStep[] = arr.map((item, idx) => ({
-    stepNumber: idx + 1,
-    text: cleanText(extractStepText(item)),
-  }));
-
-  return [{ sectionName: "Instructions", steps }];
+  return [{ sectionName: "Instructions", steps: stepsFromItems(arr) }];
 }
 
 function extractStepText(item: RawInstruction): string {
