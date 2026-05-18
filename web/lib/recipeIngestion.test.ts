@@ -6,7 +6,8 @@
  *   - JSON-LD extraction from HTML
  *   - Deep traversal: @graph, mainEntity, arbitrary nesting
  *   - Ingredient section detection (colon headers, uppercase headers)
- *   - Instruction normalisation: plain strings, HowToStep, HowToSection
+ *   - Instruction normalisation: plain strings, HowToStep, HowToSection, mixed arrays
+ *   - HTML stripping and entity decoding in step and ingredient text
  *   - Full end-to-end ingestRecipeFromHtml across fixture layouts
  *   - Error path: missing recipe node, malformed JSON-LD
  */
@@ -22,6 +23,7 @@ import {
   parseIngredientSections,
   parseInstructionSections,
   parseIso8601Duration,
+  stripHtml,
 } from "./recipeIngestion";
 
 // ─── Helpers ──────────────────────────────────────────────────────────────────
@@ -717,5 +719,120 @@ describe("ingestRecipeFromHtml — error handling", () => {
     } catch (err) {
       expect((err as RecipeIngestionError).name).toBe("RecipeIngestionError");
     }
+  });
+});
+
+// ─── stripHtml ────────────────────────────────────────────────────────────────
+
+describe("stripHtml", () => {
+  it("strips simple HTML tags", () => {
+    expect(stripHtml("<p>Hello world</p>")).toBe("Hello world ");
+  });
+
+  it("replaces block-level closing tags with spaces", () => {
+    expect(stripHtml("<p>Step one.</p><p>Step two.</p>")).toBe("Step one. Step two. ");
+  });
+
+  it("replaces <br> with a space", () => {
+    expect(stripHtml("Line one.<br/>Line two.")).toBe("Line one. Line two.");
+  });
+
+  it("decodes &amp; entity", () => {
+    expect(stripHtml("salt &amp; pepper")).toBe("salt & pepper");
+  });
+
+  it("decodes &nbsp; entity", () => {
+    expect(stripHtml("200&nbsp;g flour")).toBe("200 g flour");
+  });
+
+  it("decodes &#39; numeric entity", () => {
+    expect(stripHtml("don&#39;t burn it")).toBe("don't burn it");
+  });
+
+  it("passes plain text through unchanged", () => {
+    expect(stripHtml("Mix flour and eggs.")).toBe("Mix flour and eggs.");
+  });
+});
+
+// ─── cleanText HTML stripping ─────────────────────────────────────────────────
+
+describe("cleanText — HTML stripping", () => {
+  it("strips HTML tags from step text", () => {
+    expect(cleanText("<p>Add the green papaya.</p>")).toBe("Add the green papaya.");
+  });
+
+  it("strips inline tags like <strong>", () => {
+    expect(cleanText("Mix <strong>well</strong> until combined.")).toBe(
+      "Mix well until combined.",
+    );
+  });
+
+  it("strips and normalises nested HTML with entities", () => {
+    expect(cleanText("<p>Heat oil at 180&nbsp;°C.</p>")).toBe("Heat oil at 180 °C.");
+  });
+});
+
+// ─── parseInstructionSections — mixed arrays ──────────────────────────────────
+
+describe("parseInstructionSections — mixed HowToSection and HowToStep", () => {
+  it("groups loose HowToStep items that appear after a HowToSection into that section", () => {
+    const raw = [
+      {
+        "@type": "HowToSection",
+        name: "Prep",
+        itemListElement: [{ "@type": "HowToStep", text: "Chop the vegetables." }],
+      },
+      { "@type": "HowToStep", text: "This step appears after the section." },
+    ];
+    const result = parseInstructionSections(raw);
+    expect(result).toHaveLength(2);
+    expect(result[0].sectionName).toBe("Prep");
+    expect(result[0].steps).toHaveLength(1);
+    expect(result[1].sectionName).toBe("Prep");
+    expect(result[1].steps[0].text).toBe("This step appears after the section.");
+  });
+
+  it("groups loose steps before the first HowToSection under 'Instructions'", () => {
+    const raw = [
+      { "@type": "HowToStep", text: "Pre-section step." },
+      {
+        "@type": "HowToSection",
+        name: "Main",
+        itemListElement: [{ "@type": "HowToStep", text: "Main step." }],
+      },
+    ];
+    const result = parseInstructionSections(raw);
+    expect(result[0].sectionName).toBe("Instructions");
+    expect(result[0].steps[0].text).toBe("Pre-section step.");
+    expect(result[1].sectionName).toBe("Main");
+    expect(result[1].steps[0].text).toBe("Main step.");
+  });
+});
+
+// ─── parseInstructionSections — HTML in step text ────────────────────────────
+
+describe("parseInstructionSections — HTML in step text", () => {
+  it("strips HTML tags from HowToStep text fields", () => {
+    const raw = [
+      { "@type": "HowToStep", text: "<p>Pound the garlic in a mortar.</p>" },
+      { "@type": "HowToStep", text: "<p>Add <strong>fish sauce</strong> and lime.</p>" },
+    ];
+    const result = parseInstructionSections(raw);
+    expect(result[0].steps[0].text).toBe("Pound the garlic in a mortar.");
+    expect(result[0].steps[1].text).toBe("Add fish sauce and lime.");
+  });
+
+  it("strips HTML from HowToSection itemListElement step text", () => {
+    const raw = [
+      {
+        "@type": "HowToSection",
+        name: "Make the dressing",
+        itemListElement: [
+          { "@type": "HowToStep", text: "<p>Mix <em>fish sauce</em> and sugar.</p>" },
+        ],
+      },
+    ];
+    const result = parseInstructionSections(raw);
+    expect(result[0].steps[0].text).toBe("Mix fish sauce and sugar.");
   });
 });
