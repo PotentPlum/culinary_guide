@@ -8,6 +8,12 @@ import VegToken from "./VegToken";
 import StatusDot from "./StatusDot";
 import PeakBar from "./PeakBar";
 
+const DIFFICULTY_LABEL: Record<string, string> = {
+  easy:   UI.detail.difficultyEasy,
+  medium: UI.detail.difficultyMedium,
+  hard:   UI.detail.difficultyHard,
+};
+
 type Props = { veg: VegItem | null; month: number; onClose: () => void };
 
 export default function DetailPanel({ veg, month, onClose }: Props) {
@@ -99,7 +105,7 @@ export default function DetailPanel({ veg, month, onClose }: Props) {
                       <div className="recipe-meta">
                         <span className="recipe-chip">{r.time_mins} min</span>
                         <span className={`recipe-chip recipe-difficulty recipe-difficulty--${r.difficulty}`}>
-                          {r.difficulty === "easy" ? UI.detail.difficultyEasy : r.difficulty === "medium" ? UI.detail.difficultyMedium : UI.detail.difficultyHard}
+                          {DIFFICULTY_LABEL[r.difficulty] ?? UI.detail.difficultyHard}
                         </span>
                       </div>
                     </div>

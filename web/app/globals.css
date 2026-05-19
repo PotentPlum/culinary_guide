@@ -245,7 +245,7 @@ body.sans-display .hero-title em {
   font-size: 14px;
 }
 .hero-stat--peak     { background: rgba(63,94,42,0.08);   color: var(--primary);    border-color: rgba(63,94,42,0.15); }
-.hero-stat--shoulder { background: rgba(122,156,92,0.08); color: #4A6830;           border-color: rgba(122,156,92,0.15); }
+.hero-stat--shoulder { background: rgba(122,156,92,0.08); color: var(--primary);    border-color: rgba(122,156,92,0.15); }
 .hero-stat--soon     { background: rgba(201,139,42,0.08); color: var(--soon-fg);    border-color: rgba(201,139,42,0.15); }
 .hero-stat--ending   { background: rgba(153,81,74,0.08);  color: var(--ending-fg);  border-color: rgba(153,81,74,0.15); }
 
