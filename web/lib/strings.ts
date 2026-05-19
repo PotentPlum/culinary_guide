@@ -189,6 +189,7 @@ export const UI = {
     difficultyBeginner:     "Beginner",
     difficultyIntermediate: "Gevorderd",
     difficultyAdvanced:     "Expert",
+    errorTitle:             "Niet gelukt",
   },
 
   // Future peek section
