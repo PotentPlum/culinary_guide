@@ -1483,6 +1483,89 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
   gap: 6px;
 }
 
+/* Technique breadcrumb navigation */
+.technique-breadcrumb {
+  padding: 16px 0 8px;
+  margin-bottom: 8px;
+}
+
+.breadcrumb-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: var(--ink-soft);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  font-family: var(--sans);
+  transition: color 120ms;
+}
+
+.breadcrumb-back:hover {
+  color: var(--ink);
+}
+
+/* Category & subcategory selection grids */
+.category-grid,
+.subcategory-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+@media (max-width: 640px) {
+  .category-grid,
+  .subcategory-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.category-button,
+.subcategory-button {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 24px 18px;
+  background: var(--surface-card);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  cursor: pointer;
+  text-align: left;
+  font: inherit;
+  color: var(--ink);
+  transition: transform 150ms cubic-bezier(.3,.7,.4,1), box-shadow 150ms, border-color 120ms;
+  text-decoration: none;
+}
+
+.category-button:hover,
+.subcategory-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(30,26,20,0.07), 0 2px 4px rgba(30,26,20,0.04);
+  border-color: var(--line-strong);
+}
+
+.category-name,
+.subcategory-name {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 20px;
+  line-height: 1.1;
+  letter-spacing: -0.005em;
+  margin: 0;
+}
+
+.category-count,
+.subcategory-count {
+  display: inline-block;
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+
 /* Technique page controls */
 .technique-controls {
   display: flex;
