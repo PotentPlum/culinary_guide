@@ -84,6 +84,12 @@ const ARROW_BACK = (
   </svg>
 );
 
+const SEARCH_ICON = (
+  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
+    <circle cx="11" cy="11" r="7" /><path d="M21 21l-4.3-4.3" />
+  </svg>
+);
+
 type ViewState =
   | { level: "category" }
   | { level: "subcategory"; category: TechniqueCategory }
@@ -211,9 +217,7 @@ export default function TechniquesPage() {
         <>
           <div className="technique-controls">
             <div className="search">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
-                <circle cx="11" cy="11" r="7" /><path d="M21 21l-4.3-4.3" />
-              </svg>
+              {SEARCH_ICON}
               <input
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
