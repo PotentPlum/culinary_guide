@@ -1,20 +1,88 @@
 "use client";
 
-import { useState, useMemo, useCallback } from "react";
+import { useState, useMemo, useCallback, type ReactNode } from "react";
 import { TECHNIQUES, type Technique, type TechniqueCategory } from "@/lib/techniques";
 import { UI } from "@/lib/strings";
 import TechniqueCard from "./TechniqueCard";
 import TechniqueDetail from "./TechniqueDetail";
 
-const PRIMARY_CATEGORIES: Array<{ id: TechniqueCategory; label: string }> = [
-  { id: "snijden", label: UI.techniques.categorySnijden },
-  { id: "garing", label: UI.techniques.categoryGaring },
-  { id: "smaak", label: UI.techniques.categorySmaak },
-  { id: "eiwitten", label: UI.techniques.categoryEiwitten },
-  { id: "sauzen", label: UI.techniques.categorySauzen },
-  { id: "groenten", label: UI.techniques.categoryGroenten },
-  { id: "gereedschap", label: UI.techniques.categoryGereedschap },
+const PRIMARY_CATEGORIES: Array<{ id: TechniqueCategory; label: string; icon: ReactNode }> = [
+  {
+    id: "snijden",
+    label: UI.techniques.categorySnijden,
+    icon: (
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M3 21L17 7M17 7l2-2a2 2 0 112.8 2.8L3 21"/><path d="M7.5 17.5l-3 3"/>
+      </svg>
+    ),
+  },
+  {
+    id: "garing",
+    label: UI.techniques.categoryGaring,
+    icon: (
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M12 2c0 5-4 7-4 11a4 4 0 008 0c0-4-4-6-4-11z"/><path d="M9 17.5a2.5 2.5 0 005 0"/>
+      </svg>
+    ),
+  },
+  {
+    id: "smaak",
+    label: UI.techniques.categorySmaak,
+    icon: (
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round">
+        <polygon points="12,2 15,9 22,9 16.5,14 18.5,21 12,17 5.5,21 7.5,14 2,9 9,9"/>
+      </svg>
+    ),
+  },
+  {
+    id: "eiwitten",
+    label: UI.techniques.categoryEiwitten,
+    icon: (
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round">
+        <ellipse cx="12" cy="13.5" rx="6.5" ry="7.5"/><path d="M8.5 8.5C8.5 6 9.5 3 12 3s3.5 3 3.5 5.5"/>
+      </svg>
+    ),
+  },
+  {
+    id: "sauzen",
+    label: UI.techniques.categorySauzen,
+    icon: (
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M12 3l4 9H8l4-9z"/><path d="M7 13v1a5 5 0 0010 0v-1"/>
+      </svg>
+    ),
+  },
+  {
+    id: "groenten",
+    label: UI.techniques.categoryGroenten,
+    icon: (
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M12 22V12"/><path d="M12 12c0 0-5-2.5-6-8 4.5 0 6 4 6 8z"/><path d="M12 12c0 0 5-2.5 6-8-4.5 0-6 4-6 8z"/>
+      </svg>
+    ),
+  },
+  {
+    id: "gereedschap",
+    label: UI.techniques.categoryGereedschap,
+    icon: (
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3-3a6 6 0 01-7.9 7.9L6.4 20.7a2.1 2.1 0 01-3-3l6.8-6.8A6 6 0 0114.7 6.3z"/>
+      </svg>
+    ),
+  },
 ];
+
+const CHEVRON = (
+  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M9 18l6-6-6-6"/>
+  </svg>
+);
+
+const ARROW_BACK = (
+  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.25" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M15 18l-6-6 6-6"/>
+  </svg>
+);
 
 type ViewState =
   | { level: "category" }
@@ -65,6 +133,10 @@ export default function TechniquesPage() {
   const showSubcategoryView = viewState.level === "subcategory";
   const showTechniquesView = viewState.level === "techniques";
 
+  const currentCategoryLabel = viewState.level !== "category"
+    ? PRIMARY_CATEGORIES.find((c) => c.id === viewState.category)?.label
+    : null;
+
   return (
     <div className="page">
       <header className="page-hero">
@@ -73,51 +145,65 @@ export default function TechniquesPage() {
       </header>
 
       {!showCategoryView && (
-        <div className="technique-breadcrumb">
-          <button className="breadcrumb-back" onClick={() => {
-            if (showTechniquesView) {
-              setViewState({ level: "subcategory", category: viewState.category });
-            } else {
-              setViewState({ level: "category" });
-            }
-            setQuery("");
-          }}>
-            ← {UI.techniques.backButton}
+        <nav className="technique-breadcrumb">
+          <button
+            className="breadcrumb-back"
+            onClick={() => {
+              if (showTechniquesView) {
+                setViewState({ level: "subcategory", category: viewState.category });
+              } else {
+                setViewState({ level: "category" });
+              }
+              setQuery("");
+            }}
+          >
+            {ARROW_BACK}
+            {showSubcategoryView ? UI.techniques.pageTitle : currentCategoryLabel}
           </button>
-        </div>
+          {showTechniquesView && (
+            <>
+              <span className="breadcrumb-sep">/</span>
+              <span className="breadcrumb-current">{viewState.subcategory}</span>
+            </>
+          )}
+        </nav>
       )}
 
       {showCategoryView && (
-        <div className="technique-controls">
-          <div className="category-grid">
-            {PRIMARY_CATEGORIES.map((cat) => (
-              <button
-                key={cat.id}
-                className="category-button"
-                onClick={() => setViewState({ level: "subcategory", category: cat.id })}
-              >
+        <div className="category-list">
+          {PRIMARY_CATEGORIES.map((cat) => (
+            <button
+              key={cat.id}
+              className="category-item"
+              onClick={() => setViewState({ level: "subcategory", category: cat.id })}
+            >
+              <div className="category-item-icon">{cat.icon}</div>
+              <div className="category-item-body">
                 <span className="category-name">{cat.label}</span>
                 <span className="category-count">{getCategoryCount(cat.id)}</span>
-              </button>
-            ))}
-          </div>
+              </div>
+              <span className="category-item-arrow">{CHEVRON}</span>
+            </button>
+          ))}
         </div>
       )}
 
       {showSubcategoryView && (
-        <div className="technique-controls">
-          <div className="subcategory-grid">
-            {getSubcategories(viewState.category).map((sub) => (
-              <button
-                key={sub}
-                className="subcategory-button"
-                onClick={() => setViewState({ level: "techniques", category: viewState.category, subcategory: sub })}
-              >
+        <div className="subcategory-list">
+          {getSubcategories(viewState.category).map((sub) => (
+            <button
+              key={sub}
+              className="subcategory-item"
+              onClick={() => setViewState({ level: "techniques", category: viewState.category, subcategory: sub })}
+            >
+              <div className="subcategory-item-accent" />
+              <div className="category-item-body">
                 <span className="subcategory-name">{sub}</span>
                 <span className="subcategory-count">{getSubcategoryCount(viewState.category, sub)}</span>
-              </button>
-            ))}
-          </div>
+              </div>
+              <span className="subcategory-item-arrow">{CHEVRON}</span>
+            </button>
+          ))}
         </div>
       )}
 
