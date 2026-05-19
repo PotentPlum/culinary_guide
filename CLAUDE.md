@@ -1,8 +1,8 @@
 # Culinary Guide — Project Instructions
 
 ## Stack
-- Next.js (App Router) + TypeScript + Tailwind, deployed to Vercel
-- No backend yet — all data is static in `web/lib/vegetables.ts`
+- Next.js 16 (App Router) + TypeScript, deployed to Vercel
+- Backend: Next.js API routes in `web/app/api/` (recipe ingestion, Supabase persistence, Claude challenge generation)
 - All work lives in `web/`
 
 ## Data scope
@@ -18,25 +18,54 @@ All user-visible text must be in **Dutch**. Code, variable names, comments, and 
 ## Design system
 "Mise — een kooksalmanak". Editorial cookbook aesthetic:
 - Fonts: Instrument Serif italic + Instrument Sans body
-- Colors: cream `#F4EFE6`, leaf-green `#3F5E2A`, terracotta accent
+- Colors: cream `#F4EFE6`, leaf-green `#3F5E2A`, terracotta `#B95128` accent
 - Layout via plain CSS classes in `web/app/globals.css` — no Tailwind utilities for layout
 - Tailwind is installed but intentionally unused for layout; do not introduce Tailwind utility classes
 
-## Key data files
-- `web/lib/vegetables.ts` — `VegItem` type, `VEG_DATA[]`, `statusFor(veg, month)` helper, `MONTHS`/`MONTHS_LONG`
-- `web/lib/strings.ts` — all Dutch UI strings; update here when adding new labels
-- `web/data/vegetables.json` — original Dutch source data (reference only, not imported)
+## Key files
+| File | Purpose |
+|------|---------|
+| `web/lib/vegetables.ts` | `VegItem` type, `VEG_DATA[]` (66 entries), `statusFor(veg, month)`, `MONTHS`/`MONTHS_LONG` |
+| `web/lib/strings.ts` | All Dutch UI strings; add new labels here, never hardcode in components |
+| `web/lib/types.ts` | `SavedRecipe` and `Challenge` types for Supabase rows |
+| `web/lib/supabase.ts` | Supabase client singleton; throws at startup if env vars missing |
+| `web/lib/recipeIngestion.ts` | Schema.org JSON-LD extractor; unit-tested in `recipeIngestion.test.ts` |
+| `web/data/vegetables.json` | Original Dutch source data — reference only, not imported |
+| `ToDo` | Quick notes on upcoming features (repo root) |
+
+## Environment variables
+Copy `web/.env.local.example` to `web/.env.local`:
+```
+NEXT_PUBLIC_SUPABASE_URL=...      # browser-safe; used by supabase.ts
+NEXT_PUBLIC_SUPABASE_ANON_KEY=... # browser-safe; RLS-enforced
+CLAUDE_API_KEY=...                # server-only; used by /api/challenge
+```
+
+## API routes
+All in `web/app/api/`:
+| Route | Status | Notes |
+|-------|--------|-------|
+| `POST /api/recipe` | Done | Fetches URL, extracts Schema.org recipe data |
+| `POST /api/recipes/save` | **Stub** | Needs Supabase `recipes` insert wired |
+| `GET /api/recipes/list` | **Stub** | Needs Supabase `recipes` SELECT wired |
+| `POST /api/challenge` | **Stub** | Needs Claude API call + Supabase `challenges` insert |
+
+See `web/.claude/batch-plan.md` for the full integration plan and SQL DDL.
 
 ## Validation
 - `npm run validate` — checks all 66 VegItem entries for hex colors, valid months (1–12), required fields, allowed family values
 - `npm run build` runs validate first; a failing validate blocks the build
 - Allowed `family` values: `"Wortel"`, `"Blad"`, `"Brassica"`, `"Allium"`, `"Peulvrucht"`, `"Stengel"`, `"Pompoen"`, `"Knolgewas"`, `"Vruchtgroente"`, `"Paddenstoel"`, `"Kruid"`
 
+## Testing
+- `npm test` / `npm run test:watch` — vitest; tests live in `web/lib/*.test.ts`
+- `npm run test:coverage` — v8 coverage report
+
 ## Component contracts
 
 | Component | File | Props summary | Responsibility |
 |-----------|------|---------------|----------------|
-| `App` | `app/page.tsx` | — (root) | App shell, all state (page, filter, query, view, density, openVeg), month computed from `new Date()` |
+| `App` | `app/page.tsx` | — (root) | App shell; all state (page, filter, query, view, density, openVeg); month from `new Date()` |
 | `VegCard` | `components/VegCard.tsx` | `veg, month, density?, onOpen, listMode?` | Grid card or list row; calls `onOpen(veg)` on click |
 | `DetailPanel` | `components/DetailPanel.tsx` | `veg\|null, month, onClose` | Slide-in drawer; ESC closes; blocks body scroll while open |
 | `FilterPills` | `components/FilterPills.tsx` | `value, onChange, counts` | Tab-style season filter; exports `Filter` and `Counts` types |
@@ -44,13 +73,18 @@ All user-visible text must be in **Dutch**. Code, variable names, comments, and 
 | `PeakBar` | `components/PeakBar.tsx` | `veg, month, compact?` | 12-month peak/shoulder availability strip with tooltips |
 | `StatusDot` | `components/StatusDot.tsx` | `status, withLabel?` | Colored dot + optional Dutch status label |
 | `VegToken` | `components/VegToken.tsx` | `veg, size` | Geometric SVG circle illustration placeholder |
-| `NavIcon` | `components/NavIcon.tsx` | `name` | Monoline SVG icon switcher (9 icons) |
+| `NavIcon` | `components/NavIcon.tsx` | `name` | Monoline SVG icon switcher (6 icons: leaf, cal, book, swap, knife, compass) |
 | `FuturePeek` | `components/FuturePeek.tsx` | — | Teaser cards for upcoming modules (static, strings from `lib/strings.ts`) |
+| `RecipesPage` | `components/RecipesPage.tsx` | — | Recipe URL ingestion UI; localStorage persistence; Supabase save pending |
+| `RecipeSaver` | `components/RecipeSaver.tsx` | `recipe, onSaved?` | **Stub** — Supabase save button; not yet wired |
+| `ChallengeModePanel` | `components/ChallengeModePanel.tsx` | `ingredients` | **Stub** — Claude challenge generator UI; not yet wired |
 
 ## Known intentional gaps
-- `density` state exists in `App` but has no toggle UI yet — it's initialized to `"comfortable"` and passed through. Adding the toggle button is a planned future task, not a bug.
+- `density` state exists in `App` but has no toggle UI — fixed at `"comfortable"`, passed through. Adding the toggle is a future task, not a bug.
 - `VegItem.shoulder` is optional; not all vegetables have shoulder months.
-- Month detection uses local client timezone (`new Date().getMonth()`). This is intentional — the app is NL-only.
+- Month detection uses local client timezone (`new Date().getMonth()`). Intentional — NL-only app.
+- `RecipeSaver` and `ChallengeModePanel` are UI stubs pending API wiring.
+- Some Dutch strings in `page.tsx` hero section are still hardcoded; they should be migrated to `lib/strings.ts`.
 
 ## Future modules (not yet built)
-Recepten, Vervangers, Technieken, Plukken — ghost nav items in the sidebar, defined in `NAV_ITEMS` in `page.tsx`.
+Vervangers, Technieken, Plukken — ghost nav items in `NAV_ITEMS` in `page.tsx`.

@@ -15,3 +15,43 @@ All user-visible content in this web app must be in Dutch. This is a hard requir
 - The `name` field on `VegItem` is the internal English identifier used for search matching and sorting only — it is never rendered to users. Display only the `nl` field.
 - Code, variable names, comments, filenames, and anything not visible to website visitors may remain in English.
 <!-- END:language-rules -->
+
+<!-- BEGIN:strings-rules -->
+# Strings: always import from lib/strings.ts
+
+Never hardcode a Dutch string in a component. Add new strings to `lib/strings.ts` under the appropriate key, then import `UI` from there.
+
+```ts
+import { UI } from "@/lib/strings";
+// ✓ correct
+<button>{UI.controls.searchAriaLabel}</button>
+// ✗ wrong
+<button>Groenten zoeken</button>
+```
+<!-- END:strings-rules -->
+
+<!-- BEGIN:design-rules -->
+# Design system
+
+- Use CSS class names from `app/globals.css` only — do NOT introduce Tailwind utility classes.
+- CSS variables for colors: `--primary`, `--surface`, `--surface-card`, `--ink`, `--ink-soft`, `--accent`.
+- Fonts via CSS variables: `--serif` (headings/emphasis), `--sans` (body/UI), `--mono` (meta labels).
+- New components go in `components/`; new pages go in `app/`; new lib utilities go in `lib/`.
+<!-- END:design-rules -->
+
+<!-- BEGIN:data-rules -->
+# Data: vegetables
+
+- All 66 VegItem entries live in `lib/vegetables.ts`. Run `npm run validate` after any change.
+- Never add a vegetable without: `id` (kebab-case), `nl` (Dutch name), `color`, `accent` (hex), `family`, `peak` (months 1–12), `blurb`, `storage`, `prep`, `pairings` (≥2), `substitutions` (≥1).
+- `VegItem.name` is the English internal slug — never displayed, used for search/sort only.
+- Seasonal data source: velt.nu. Do not use supermarket availability windows.
+<!-- END:data-rules -->
+
+<!-- BEGIN:api-rules -->
+# API routes
+
+- Server-only secrets (`CLAUDE_API_KEY`) must never be referenced in client components or files that import into them.
+- `NEXT_PUBLIC_*` env vars are browser-safe; all others are server-only.
+- Recipe ingestion (`/api/recipe`) is complete. Save/list/challenge routes are stubs awaiting Supabase + Claude wiring — see `.claude/batch-plan.md`.
+<!-- END:api-rules -->
