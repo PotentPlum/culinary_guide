@@ -17,6 +17,7 @@ export const UI = {
     substitutions: "Vervangers",
     techniques:    "Technieken",
     foraging:      "Plukken",
+    challenge:     "Uitdaging",
     soon:          "binnenkort",
   },
 
@@ -165,6 +166,29 @@ export const UI = {
     emptyState:      "Geen technieken gevonden. Probeer de zoekopdracht te wissen.",
     closeAriaLabel:  "Sluiten",
     backButton:      "Terug",
+  },
+
+  // Challenge page
+  challenge: {
+    pageTitle:              "Kookuitdaging",
+    pageSubtitle:           "Typ een ingrediënt en ontvang een gerichte kookoefening om een specifieke techniek te oefenen.",
+    inputPlaceholder:       "Bijv. aardappel, wortel, ui…",
+    inputLabel:             "Ingrediënt",
+    submitBtn:              "Geef uitdaging",
+    loadingBtn:             "Bezig…",
+    loadingMsg:             "Uitdaging genereren…",
+    tryAnotherBtn:          "Andere uitdaging",
+    clearBtn:               "Wissen",
+    errorFallback:          "Er is een onbekende fout opgetreden.",
+    errorNetwork:           "Kon de server niet bereiken. Controleer je verbinding.",
+    retryBtn:               "Opnieuw proberen",
+    labelSkill:             "Techniek",
+    labelTime:              "Tijd",
+    labelMinutes:           "min",
+    labelWhy:               "Waarom deze uitdaging?",
+    difficultyBeginner:     "Beginner",
+    difficultyIntermediate: "Gevorderd",
+    difficultyAdvanced:     "Expert",
   },
 
   // Future peek section
