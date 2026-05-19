@@ -3,9 +3,16 @@
 import { useEffect } from "react";
 import type { VegItem } from "@/lib/vegetables";
 import { statusFor, MONTHS_LONG } from "@/lib/vegetables";
+import { UI } from "@/lib/strings";
 import VegToken from "./VegToken";
 import StatusDot from "./StatusDot";
 import PeakBar from "./PeakBar";
+
+const DIFFICULTY_LABEL: Record<string, string> = {
+  easy:   UI.detail.difficultyEasy,
+  medium: UI.detail.difficultyMedium,
+  hard:   UI.detail.difficultyHard,
+};
 
 type Props = { veg: VegItem | null; month: number; onClose: () => void };
 
@@ -27,7 +34,7 @@ export default function DetailPanel({ veg, month, onClose }: Props) {
   return (
     <div className="detail-scrim" onClick={onClose}>
       <aside className="detail-panel" onClick={(e) => e.stopPropagation()}>
-        <button className="detail-close" onClick={onClose} aria-label="Sluiten">✕</button>
+        <button className="detail-close" onClick={onClose} aria-label={UI.detail.close}>✕</button>
 
         <div className="detail-hero" style={{ background: veg.color }}>
           <div className="detail-illus">
@@ -44,27 +51,27 @@ export default function DetailPanel({ veg, month, onClose }: Props) {
           <p className="detail-blurb">{veg.blurb}</p>
 
           <section className="detail-section">
-            <h3>Seizoen</h3>
+            <h3>{UI.detail.sectionSeason}</h3>
             <PeakBar veg={veg} month={month} />
             <div className="peak-legend">
-              <span><span className="dot on" /> Hoogtepunt</span>
-              <span><span className="dot half" /> Beschikbaar</span>
+              <span><span className="dot on" /> {UI.detail.legendPeak}</span>
+              <span><span className="dot half" /> {UI.detail.legendShoulder}</span>
               <span><span className="dot now" /> {MONTHS_LONG[month - 1]}</span>
             </div>
           </section>
 
           <section className="detail-section">
-            <h3>Bewaren</h3>
+            <h3>{UI.detail.sectionStorage}</h3>
             <p>{veg.storage}</p>
           </section>
 
           <section className="detail-section">
-            <h3>Bereiden</h3>
+            <h3>{UI.detail.sectionPrep}</h3>
             <p>{veg.prep}</p>
           </section>
 
           <section className="detail-section">
-            <h3>Combineert goed met</h3>
+            <h3>{UI.detail.sectionPairings}</h3>
             <div className="chips">
               {veg.pairings.map((p) => <span key={p} className="chip">{p}</span>)}
             </div>
@@ -72,18 +79,18 @@ export default function DetailPanel({ veg, month, onClose }: Props) {
 
           <section className="detail-section ghost">
             <div className="ghost-head">
-              <h3>Als je het niet hebt</h3>
-              <span className="ghost-tag">Vervangers · binnenkort</span>
+              <h3>{UI.detail.sectionSubs}</h3>
+              <span className="ghost-tag">{UI.detail.subsTag}</span>
             </div>
             <div className="ghost-body">
-              <p className="ghost-preview">Mogelijke vervangers: <em>{veg.substitutions.join(", ")}</em></p>
-              <p className="ghost-note">Een volledige vervanger- &amp; combinatieverkenner komt in de volgende versie.</p>
+              <p className="ghost-preview">{UI.detail.subsPreviewPre} <em>{veg.substitutions.join(", ")}</em></p>
+              <p className="ghost-note">{UI.detail.subsNote}</p>
             </div>
           </section>
 
           {veg.recipes && veg.recipes.length > 0 ? (
             <section className="detail-section">
-              <h3>Bereid het</h3>
+              <h3>{UI.detail.sectionRecipes}</h3>
               <div className="recipe-list">
                 {veg.recipes.map((r, i) => (
                   <a
@@ -98,7 +105,7 @@ export default function DetailPanel({ veg, month, onClose }: Props) {
                       <div className="recipe-meta">
                         <span className="recipe-chip">{r.time_mins} min</span>
                         <span className={`recipe-chip recipe-difficulty recipe-difficulty--${r.difficulty}`}>
-                          {r.difficulty === "easy" ? "Makkelijk" : r.difficulty === "medium" ? "Gemiddeld" : "Moeilijk"}
+                          {DIFFICULTY_LABEL[r.difficulty] ?? UI.detail.difficultyHard}
                         </span>
                       </div>
                     </div>
@@ -111,23 +118,23 @@ export default function DetailPanel({ veg, month, onClose }: Props) {
           ) : (
             <section className="detail-section ghost">
               <div className="ghost-head">
-                <h3>Bereid het</h3>
-                <span className="ghost-tag">Recepten · binnenkort</span>
+                <h3>{UI.detail.sectionRecipes}</h3>
+                <span className="ghost-tag">{UI.detail.recipesTag}</span>
               </div>
               <div className="ghost-body">
-                <p className="ghost-preview"><em>Bereidingstip:</em> {veg.technique}</p>
-                <p className="ghost-note">Gekoppelde recepten verschijnen met de receptenmodule.</p>
+                <p className="ghost-preview"><em>{UI.detail.recipeTechPre}</em> {veg.technique}</p>
+                <p className="ghost-note">{UI.detail.recipesNote}</p>
               </div>
             </section>
           )}
 
           <section className="detail-section ghost">
             <div className="ghost-head">
-              <h3>Vind het in de buurt</h3>
-              <span className="ghost-tag">Markten &amp; plukken · binnenkort</span>
+              <h3>{UI.detail.sectionForaging}</h3>
+              <span className="ghost-tag">{UI.detail.foragingTag}</span>
             </div>
             <div className="ghost-body">
-              <p className="ghost-note">Boerenmarktschema&apos;s en (voor wilde soorten) veilige plekplekken komen hier.</p>
+              <p className="ghost-note">{UI.detail.foragingNote}</p>
             </div>
           </section>
         </div>

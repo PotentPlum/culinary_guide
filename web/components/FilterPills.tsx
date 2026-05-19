@@ -1,14 +1,16 @@
+import { UI } from "@/lib/strings";
+
 export type Counts = { all: number; peak: number; shoulder: number; soon: number; ending: number };
 export type Filter = "all" | "peak" | "shoulder" | "soon" | "ending";
 
 type Props = { value: Filter; onChange: (f: Filter) => void; counts: Counts };
 
 const OPTIONS: { id: Filter; label: string }[] = [
-  { id: "all",      label: "Alles in seizoen" },
-  { id: "peak",     label: "Op hoogtepunt" },
-  { id: "shoulder", label: "Beschikbaar" },
-  { id: "soon",     label: "Binnenkort" },
-  { id: "ending",   label: "Aflopend" },
+  { id: "all",      label: UI.filter.all },
+  { id: "peak",     label: UI.filter.peak },
+  { id: "shoulder", label: UI.filter.shoulder },
+  { id: "soon",     label: UI.filter.soon },
+  { id: "ending",   label: UI.filter.ending },
 ];
 
 export default function FilterPills({ value, onChange, counts }: Props) {

@@ -1,5 +1,6 @@
 import type { VegItem } from "@/lib/vegetables";
 import { VEG_DATA, MONTHS, MONTHS_LONG } from "@/lib/vegetables";
+import { UI } from "@/lib/strings";
 
 type Props = { month: number; onOpen: (v: VegItem) => void };
 
@@ -42,7 +43,7 @@ export default function CalendarPage({ month, onOpen }: Props) {
     <div className="page calendar">
       <header className="page-hero">
         <div className="hero-eyebrow">
-          <span className="hero-loc">📍 Nederland</span>
+          <span className="hero-loc">{UI.hero.eyebrowLoc}</span>
           <span className="hero-dot">·</span>
           <span>Jaar in één oogopslag</span>
         </div>
