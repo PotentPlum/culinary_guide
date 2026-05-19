@@ -50,7 +50,7 @@ export const TECHNIQUES: Technique[] = [
     level: "basis",
     heatLevel: "geen",
     body: [
-      "De julienne snijtechniek geeft dunne, gelijkmatige reepjes van zo'n 3–4 mm breed en 5–6 cm lang. De snijding is vernoemd naar de klassieke Franse soep met fijngesneden groenten en wordt gebruikt als basis voor brunoise, maar ook als garnituur of in roerbakgerechten.",
+      "De julienne snijtechniek geeft dunne, gelijkmatige reepjes van zo'n 3 mm breed en 5–6 cm lang. De term wordt gebruikt voor zowel de snijding als de klassieke Franse soep met fijngesneden groenten. Julienne dient als basis voor brunoise, maar ook als garnituur of in roerbakgerechten.",
       "Begin met het maken van plakken van gelijke dikte, stapel deze en snijd ze vervolgens in lange reepjes. Voor ronde groenten zoals wortels geef je ze eerst een platte kant door een dunne plak af te snijden, zodat de groente stabiel op de snijplank ligt.",
     ],
     tips: [
@@ -94,7 +94,7 @@ export const TECHNIQUES: Technique[] = [
     level: "gevorderd",
     heatLevel: "geen",
     body: [
-      "Bij de tourné-snijding geef je wortelgroenten een klassieke, zevenzijdige Football-vorm met afgeronde uiteinden. Het resultaat is een elegant, symmetrisch stuk groente van zo'n 5 cm lang. De techniek vereist een speciaal gebogen tourné-mesje en veel oefening, maar levert een verfijnde restaurantpresentatie op.",
+      "Bij de tourné-snijding geef je wortelgroenten een klassieke, zevenzijdige footballvorm met afgeronde uiteinden. Het resultaat is een elegant, symmetrisch stuk groente van zo'n 5 cm lang. De techniek vereist een speciaal gebogen tourné-mesje en veel oefening, maar levert een verfijnde restaurantpresentatie op.",
       "Naast de esthetiek dient de tourné ook een praktisch doel: de gelijkmatige grootte zorgt voor een perfecte, gelijkmatige garing. Alle randen zijn afgerond, waardoor de groente niet uitdroogt of verbrandt tijdens het bakken of smoren.",
     ],
     tips: [
@@ -123,7 +123,7 @@ export const TECHNIQUES: Technique[] = [
     ],
     tips: [
       "Verwarm de pan altijd eerst goed voor je het vet toevoegt — zo voorkom je aanplakken.",
-      "Gebruik een pan met brede, schuine zijkanten (sauteerpan of wok) zodat je makkelijk kunt bewegen.",
+      "Gebruik een pan met rechte zijkanten (sauteerpan) of een wok zodat je makkelijk kunt bewegen.",
       "Snij alles op gelijke grootte voor een gelijkmatige garing.",
       "Voeg delicate kruiden zoals peterselie of dragon pas toe na het vuur: ze verliezen anders al hun aroma.",
     ],
@@ -191,7 +191,7 @@ export const TECHNIQUES: Technique[] = [
     tips: [
       "Bruin het vlees of de groenten goed aan voordat je vloeistof toevoegt — dat anbraden-laagje is de basis van de smaak.",
       "Gebruik een zware pan met een goed sluitend deksel zodat stoom niet ontsnapt.",
-      "Voeg zout pas toe na het aanbraden, niet ervoor: zout trekt vocht uit de groente en belemmert de bruining.",
+      "Kruid vlees royaal met zout voor het aanbraden — dit bevordert de bruining en bouwt smaakdiepte. Bij groenten geldt het omgekeerde: die zout je na het aanbraden.",
       "Controleer regelmatig of er nog genoeg vloeistof in de pan zit — bij te weinig vocht droogt het gerecht uit.",
     ],
     relatedVeg: ["Celeriac", "Carrot", "Parsnip", "Fennel", "Leek"],
@@ -213,7 +213,7 @@ export const TECHNIQUES: Technique[] = [
     tips: [
       "Zet het vuur zo laag dat er slechts zelden een belletje opstijgt — actief borrelen is al te heet.",
       "Schep het schuim regelmatig af bij het trekken van bouillon voor een heldere, schone smaak.",
-      "Voeg kruiden pas in de laatste twintig minuten toe: bij te lang sudderen vervliegen de vluchtige aroma's.",
+      "Voeg delicate verse kruiden (peterselie, basilicum, dragon) pas in de laatste tien minuten toe. Stevige kruiden en specerijen (tijm, laurier, peperkorrels) mogen vanaf het begin mee — die worden beter van lang trekken.",
       "Een sudderig vuur is makkelijker te handhaven met een warmhoudplaat onder de pan.",
     ],
     relatedVeg: ["Carrot", "Celeriac", "Leek", "Jerusalem artichoke"],
@@ -259,7 +259,7 @@ export const TECHNIQUES: Technique[] = [
     tips: [
       "Bak vlees of groenten altijd eerst aan op hoog vuur voor smaak — daarna pas de oven in op lage temperatuur.",
       "Dek de pan goed af: vocht is de motor van langzame garing.",
-      "Voeg zuurhoudende ingrediënten zoals wijn of tomaat pas na de eerste anderhalf uur toe, anders kan het vlees taai blijven.",
+      "Wijn en tomaat kun je vanaf het begin toevoegen — de bewering dat zuurheid het vlees taai maakt is een keukenlegende. Bij lange garing helpt zuur de smaak te balanceren en draagt het bij aan de sausvorming.",
       "Een kernthermometer is je vriend: streef naar kerntemperaturen in plaats van tijden.",
     ],
     relatedVeg: ["Celeriac", "Parsnip", "Swede", "Carrot", "Beetroot"],
@@ -279,7 +279,7 @@ export const TECHNIQUES: Technique[] = [
       "Het vet werkt als een perfect geleidend medium dat de hitte gelijkmatig distribueert. Het product droogt nooit uit. Bovendien conserveert het vet het eindproduct — klassiek werd dit als conserveringsmethode gebruikt in tijden zonder koelkast. Bewaar confit bedekt met vet in de koelkast voor weken.",
     ],
     tips: [
-      "Gebruik goed gedrenkt olijfolie of kippenschmaltz voor groenten-confit — de smaak van het vet bepaalt mee het resultaat.",
+      "Gebruik milde olijfolie of kippenschmaltz voor groenten-confit — de smaak van het vet bepaalt mee het eindresultaat.",
       "Voeg tijm, knoflook en laurier toe aan het vet voor extra aroma.",
       "Houd de temperatuur constant: gebruik een thermometer en een warmhoudplaat of gebruik de oven op 80°C.",
       "Na de garing kun je het vet filtreren en opnieuw gebruiken — het draagt de smaken van de vorige batch mee.",
@@ -322,7 +322,7 @@ export const TECHNIQUES: Technique[] = [
     heatLevel: "geen",
     body: [
       "Zout is het meest krachtige smaakmaker in de keuken, maar het moment van toevoegen bepaalt het effect. Vroeg zout toegevoegd trekt vocht uit groenten en vlees (osmose), wat bij vlees een zachter eindresultaat geeft, maar bij groenten kan leiden tot slappe textuur. Laat zout toevoegen kruidt enkel het oppervlak.",
-      "Elke bereiding vraagt een andere timing. Pasta-kookwater moet zout genoeg zijn om als zeezout te smaken. Vlees profiteert van zout minstens dertig minuten voor het bakken — of helemaal een dag van tevoren — zodat het zout volledig kan intrekken. Sauzen zouten op het einde, zodat je de eindconcentratie beter controleert.",
+      "Elke bereiding vraagt een andere timing. Pasta-kookwater moet flink gezouten zijn — ruwweg één eetlepel per liter — zodat het water merkbaar zout smaakt. Vlees profiteert van zout minstens dertig minuten voor het bakken — of helemaal een dag van tevoren — zodat het zout volledig kan intrekken. Sauzen zouten op het einde, zodat je de eindconcentratie beter controleert.",
     ],
     tips: [
       "Proef altijd meerdere keren tijdens het koken — niet eenmalig aan het einde.",
@@ -346,7 +346,7 @@ export const TECHNIQUES: Technique[] = [
       "De stoom die opstijgt bij het toevoegen van vloeistof aan een hete pan werkt als een reinigingsmiddel. De plotselinge temperatuurverandering laat de aanbaksels loskomen van het staal of gietijzer. Roer snel en goed met een houten lepel om alle smaak los te maken.",
     ],
     tips: [
-      "Gebruik een koude of kamertemperatuur vloeistof bij het deglaceren — dit zorgt voor de meeste stoomblauw en het loskomen van de fond.",
+      "Gebruik een koude of kamertemperatuur vloeistof bij het deglaceren — het temperatuurverschil zorgt voor maximale stoomontwikkeling en het loskomen van de fond.",
       "Rode wijn voor vlees, witte wijn of vermout voor vis en gevogelte, groentebouillon voor plantaardige gerechten.",
       "Laat de vloeistof volledig inkoken voordat je meer toevoegt — zo concentreer je de smaak optimaal.",
       "Een RVS of gietijzeren pan geeft de meeste fond; anti-aanbak pannen zijn hier minder geschikt voor.",
@@ -501,7 +501,7 @@ export const TECHNIQUES: Technique[] = [
       "Kies vlees met veel bindweefsel: sukade, schouder, rib en kuit worden het zachtst bij smoren.",
       "Snij groenten voor de saus groot — ze moeten meerdere uren meegaren zonder te vergaan.",
       "Na het smoren het vlees laten rusten voor het snijden: minstens tien minuten.",
-      "De smoriasaus inkoken na het vlees verwijderen geeft een geconcentreerde, rijke jus.",
+      "De smoorjus inkoken na het vlees verwijderen geeft een geconcentreerde, rijke saus.",
     ],
     relatedVeg: ["Carrot", "Celeriac", "Parsnip"],
     relatedTechniqueIds: ["smoren", "vlees-schroeien", "fond-deglaceren"],
@@ -718,7 +718,7 @@ export const TECHNIQUES: Technique[] = [
     ],
     tips: [
       "Gebruik zo vers mogelijke eieren — de kwaliteit van het ei bepaalt het resultaat meer dan de techniek.",
-      "Pocheer meerdere eieren tegelijk door ze één voor één snel in het water te laten glijden.",
+      "Pocheer meerdere kippen tegelijk als je voor een grote groep kookt — laat het vocht op temperatuur komen tussen batches in.",
       "Gepocheerde eieren kunnen van tevoren worden gemaakt en bewaard in koud water — warm op in heet water vlak voor serveren.",
       "Een scheut azijn in het water zorgt dat het eiwit sneller stolt en de dooier beter beschermd wordt.",
     ],
@@ -738,7 +738,7 @@ export const TECHNIQUES: Technique[] = [
       "Voor het romige Franse roerei gebruik je een pan au bain-marie of het allerlaagste directe vuur. Roer constant met een spatel, tel de eieren van de warmte af en terug, totdat de consistentie cremig is maar nog licht ondergaar. Voeg boter en crème fraîche toe van het vuur om het gaarpunt te fixeren.",
     ],
     tips: [
-      "Kruid roerei aan het einde, niet vooraf: zout maakt eieren waterig als het te vroeg wordt toegevoegd.",
+      "Voeg zout toe vóór het kloppen en laat de eieren minimaal vijftien minuten rusten: zout breekt eiwitketens af wat de eieren romiger en zachter maakt, niet wateriger.",
       "Gebruik koude boter in kleine stukjes voor het ultieme romige roerei — de boter koelt de massa en geeft een emulsie.",
       "Lage temperatuur en geduld zijn de sleutels tot romig roerei; haast geeft taai, sponsachtig roerei.",
       "Verse kruiden toevoegen van het vuur: bieslook, dragon of kervel zijn klassiek.",
@@ -762,7 +762,7 @@ export const TECHNIQUES: Technique[] = [
       "Gebruik een kleine pan: 3 eieren in een 18 cm pan geeft de perfecte dikte en is makkelijker te vouwen.",
       "De pan moet echt goed heet zijn: een druppel water moet direct dansen op het staal.",
       "Oefen de omelet-vouwbeweging zonder eieren eerst met een stuk papier in de pan.",
-      "Een omelet mag nooit bruin worden — pas je vuurgaotte aan als de boter te snel bruin kleurt.",
+      "Een omelet mag nooit bruin worden — pas je vuurgrootte aan als de boter te snel bruin kleurt.",
     ],
     relatedTechniqueIds: ["eieren-roerei"],
     cookware: ["Kleine koekenpan (18–20 cm, anti-aanbak)", "Vork", "Houten spatel"],
@@ -776,13 +776,13 @@ export const TECHNIQUES: Technique[] = [
     level: "gevorderd",
     heatLevel: "laag",
     body: [
-      "Emulsies op basis van eigeel — hollandaise en mayonaise — zijn twee van de meest fundstmentele sauzen in de klassieke keuken. Het eigeel dient als emulgator: de lecithine in de dooier bindt vet (boter of olie) met waterige vloeistof tot een stabiele, gladde emulsie.",
+      "Emulsies op basis van eigeel — hollandaise en mayonaise — zijn twee van de meest fundamentele sauzen in de klassieke keuken. Het eigeel dient als emulgator: de lecithine in de dooier bindt vet (boter of olie) met waterige vloeistof tot een stabiele, gladde emulsie.",
       "Bij hollandaise wordt het eigeel verwarmd over een bain-marie tot het lint lichtgeel en een lint trekt, dan wordt geklaarde boter er in een dun straaltje bij geklopt. Mayonaise is een koude emulsie: rauw eigeel met mosterd (extra emulgator) en de olie langzaam toevoegen terwijl je klopt.",
     ],
     tips: [
       "Voeg het vet altijd in een dun straaltje toe, nooit in één keer — dit is de gouden regel van emulsies.",
       "Als de emulsie breekt, begin opnieuw met een verse dooier en voeg de gebroken saus er langzaam aan toe.",
-      "Hollandaise op kamertemperatuur bewaren en nooit koelen: de emulsie breekt bij koude.",
+      "Serveer hollandaise direct of houd hem warm in een bain-marie op 60–65°C — de saus mag nooit bij kamertemperatuur worden weggezet, want dat valt in de gevarenzone voor bacteriegroei.",
       "Gebruik kwaliteitsolie voor mayonaise — de oliesmaak is dominant in het eindresultaat.",
     ],
     relatedTechniqueIds: ["emulgeren", "hollandaise", "mayonaise"],
@@ -799,8 +799,8 @@ export const TECHNIQUES: Technique[] = [
     level: "basis",
     heatLevel: "hoog",
     body: [
-      "Blancheren is het kort onderdompelen van groenten in kokend gezouten water, gevolgd door direct afkoelen in ijswater. De korte hitte deactiveert enzymen die groenten laten verkleuren en zet de kleur vast: blancheer spinazie en je houdt een felgroen, no gare bladgroente. Het ijswater stopt het garingsproces onmiddellijk.",
-      "De blanchi-tijden variëren sterk: fijne groene bonen hebben drie minuten nodig, wortelen vijf minuten, bladspinazie slechts dertig seconden. Na het blancheren zijn groenten voor 70–80% gaar en kunnen snel worden afgemaakt in de pan bij serveren. Blancheren is ook de eerste stap bij het invriezen van groenten.",
+      "Blancheren is het kort onderdompelen van groenten in kokend gezouten water, gevolgd door direct afkoelen in ijswater. De korte hitte deactiveert enzymen die groenten laten verkleuren en zet de kleur vast: blancheer spinazie en je houdt een felgroen, licht gegare bladgroente. Het ijswater stopt het garingsproces onmiddellijk.",
+      "De blancheertijden variëren sterk: fijne groene bonen hebben drie minuten nodig, wortelen vijf minuten, bladspinazie slechts dertig seconden. Na het blancheren zijn groenten voor 70–80% gaar en kunnen snel worden afgemaakt in de pan bij serveren. Blancheren is ook de eerste stap bij het invriezen van groenten.",
     ],
     tips: [
       "Gebruik royaal gezouten kookwater — pasta-zout-niveau — voor de beste smaak en kleur.",
@@ -843,14 +843,14 @@ export const TECHNIQUES: Technique[] = [
     level: "gemiddeld",
     heatLevel: "middel",
     body: [
-      "Groenten smoren is ze langzaam laten garen in een kleine hoeveelheid vloeistof in een afgedekte pan. De combinatie van stoom en vocht geeft een diepe, zachte smaak. Witlof, venkel en selderij zijn klassieke smoorgrojjenten die bij langzame garing hun bitterheid verliezen en zoeter worden.",
+      "Groenten smoren is ze langzaam laten garen in een kleine hoeveelheid vloeistof in een afgedekte pan. De combinatie van stoom en vocht geeft een diepe, zachte smaak. Witlof, venkel en selderij zijn klassieke smoorgroenten die bij langzame garing hun bitterheid verliezen en zoeter worden.",
       "Begin met het aanbraden van de groenten in boter voor kleur en smaak. Voeg een scheut vloeistof (water, bouillon of witte wijn) toe, dek af en laat zacht garen op laag vuur. De smoring is klaar wanneer de groenten zacht zijn en het vocht bijna volledig is opgenomen.",
     ],
     tips: [
       "Voeg een klontje koude boter toe aan het einde voor een glanzende, rijke saus.",
       "Witlof en endive worden beter van smoren op lage temperatuur — hoge hitte maakt ze bitter.",
       "Gebruik bouillon in plaats van water voor een diepere smaak.",
-      "Witlof smorend kun je met suiker een beetje karameliseren voor een zoet-zuur contrast.",
+      "Witlof kun je tijdens het smoren met een snufje suiker lichtjes karameliseren voor een zoetzuur contrast.",
     ],
     relatedVeg: ["Chicory", "Endive", "Fennel", "Celery", "Leek"],
     relatedTechniqueIds: ["smoren", "groenten-roasten"],
@@ -894,7 +894,7 @@ export const TECHNIQUES: Technique[] = [
       "Gebruik mandoline voor flinterdunne schijfjes die snel marineren — hand snijden geeft te veel dikte-variatie.",
       "Zout groenten ruim voor serveren voor een marinade-effect: het zout trekt sap dat met azijn een instant dressing vormt.",
       "Fermenteer altijd in een schone, gesteriliseerde pot voor voedselveiligheid.",
-      "Voeg zuur (citroen, azijn) toe aan gehakte avocado, venkel of koolraap — het neutraliseert bittere verbindingen.",
+      "Voeg zuur (citroen, azijn) toe aan gesneden avocado om oxidatieve bruinkleuring tegen te gaan. Bij venkel en koolraap balanceert zuur de smaak en maakt de rauwe textuur aangenamer.",
     ],
     relatedVeg: ["Beetroot", "Kohlrabi", "Radish", "Cucumber", "Carrot"],
     relatedTechniqueIds: ["marineren", "julienne", "chiffonade"],
@@ -1044,7 +1044,7 @@ export const TECHNIQUES: Technique[] = [
     heatLevel: "laag",
     body: [
       "Beurre blanc is een klassieke Franse botersaus gemaakt van een reductie van witte wijn, wijnazijn en sjalotjes waaraan koude boter in kleine stukjes wordt ingeroerd. Het resultaat is een zijdezachte, romige saus die door de boter een lichte emulsie vormt. Het is de perfecte saus voor vis en lichte groentegerechten.",
-      "De temperatuur is alles bij beurre blanc: de saus moet warm genoeg zijn om de boter te smelten maar nooit koken. Boven 70°C breekt de emulsie en eindigt de saus in een vettige plas. Werk op laag vuur en voeg de koude boter stuk voor stuk toe terwijl je continu roert.",
+      "De temperatuur is alles bij beurre blanc: de saus moet warm genoeg zijn om de boter te smelten maar nooit koken. Boven 55–60°C breekt de emulsie en eindigt de saus in een vettige plas. Werk op laag vuur en voeg de koude boter stuk voor stuk toe terwijl je continu roert.",
     ],
     tips: [
       "Gebruik koude boter in kleine stukjes — dit is essentieel voor de emulsie.",
