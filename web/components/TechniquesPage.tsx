@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, useCallback } from "react";
 import { TECHNIQUES, type Technique, type TechniqueCategory } from "@/lib/techniques";
 import { UI } from "@/lib/strings";
 import TechniqueCard from "./TechniqueCard";
@@ -16,7 +16,6 @@ const CATEGORY_OPTIONS: { id: CategoryFilter; label: string }[] = [
   { id: "sauzen",   label: UI.techniques.categorySauzen },
 ];
 
-// Counts are derived from the static TECHNIQUES array — computed once at module load.
 const COUNTS: Record<CategoryFilter, number> = { all: TECHNIQUES.length, methoden: 0, eiwitten: 0, groenten: 0, sauzen: 0 };
 for (const t of TECHNIQUES) COUNTS[t.category]++;
 
@@ -24,6 +23,8 @@ export default function TechniquesPage() {
   const [activeCategory, setActiveCategory] = useState<CategoryFilter>("all");
   const [query, setQuery] = useState("");
   const [openTechnique, setOpenTechnique] = useState<Technique | null>(null);
+
+  const handleClose = useCallback(() => setOpenTechnique(null), []);
 
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();
@@ -83,7 +84,7 @@ export default function TechniquesPage() {
         </div>
       )}
 
-      <TechniqueDetail technique={openTechnique} onClose={() => setOpenTechnique(null)} />
+      <TechniqueDetail technique={openTechnique} onClose={handleClose} onOpen={setOpenTechnique} />
     </div>
   );
 }

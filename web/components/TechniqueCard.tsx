@@ -1,9 +1,15 @@
 "use client";
 
 import type { Technique } from "@/lib/techniques";
-import { LEVEL_LABELS } from "@/lib/techniques";
+import { UI } from "@/lib/strings";
 
 type Props = { technique: Technique; onOpen: (t: Technique) => void };
+
+const LEVEL_LABELS: Record<Technique["level"], string> = {
+  basis:     UI.techniques.levelBasis,
+  gemiddeld: UI.techniques.levelGemiddeld,
+  gevorderd: UI.techniques.levelGevorderd,
+};
 
 export default function TechniqueCard({ technique, onOpen }: Props) {
   const levelLabel = LEVEL_LABELS[technique.level];
