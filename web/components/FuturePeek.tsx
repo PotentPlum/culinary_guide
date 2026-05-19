@@ -1,15 +1,11 @@
-const ITEMS = [
-  { label: "Recepten op ingrediënt",   note: "We stellen gerechten voor die gebruikmaken van wat er nu piekt." },
-  { label: "Vervangers & combinaties", note: "Vind wat er in de plaats komt — en wat er goed bij past." },
-  { label: "Plukkaart",                note: "Waar daslook, zuring en cantharellen groeien in Nederland." },
-];
+import { UI } from "@/lib/strings";
 
 export default function FuturePeek() {
   return (
     <section className="future-peek">
-      <div className="fp-label">Binnenkort</div>
+      <div className="fp-label">{UI.futurePeek.label}</div>
       <div className="fp-grid">
-        {ITEMS.map((it) => (
+        {UI.futurePeek.items.map((it) => (
           <div className="fp-card" key={it.label}>
             <div className="fp-card-title">{it.label}</div>
             <div className="fp-card-note">{it.note}</div>
