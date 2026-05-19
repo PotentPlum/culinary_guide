@@ -15,3 +15,11 @@ export type Challenge = {
   difficulty?: "easy" | "medium" | "hard";
   created_at: string;
 };
+
+export type ChallengeResponse = {
+  challenge: string;
+  skill: string;
+  difficulty: "Beginner" | "Intermediate" | "Advanced";
+  timeEstimate: number;
+  why: string;
+};
