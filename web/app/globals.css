@@ -485,7 +485,6 @@ body.sans-display .fp-card-title { font-family: var(--sans); font-weight: 600; f
   border: 1px solid var(--line);
   border-radius: 12px;
   overflow: hidden;
-  /* horizontal scroll on small screens without leaking to page */
   -webkit-overflow-scrolling: touch;
 }
 .cal-row {
@@ -1548,8 +1547,6 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
 .subcategory-item {
   display: flex;
   align-items: center;
-  gap: 16px;
-  padding: 0 20px;
   height: 68px;
   border: 0;
   border-bottom: 1px solid var(--line);
@@ -1560,6 +1557,17 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
   color: var(--ink);
   transition: background 100ms;
   width: 100%;
+}
+
+.category-item {
+  gap: 16px;
+  padding: 0 20px;
+}
+
+.subcategory-item {
+  gap: 0;
+  padding-left: 0;
+  padding-right: 20px;
 }
 
 .category-item:last-child,
@@ -1619,12 +1627,6 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
 .subcategory-item:hover .subcategory-item-arrow {
   transform: translateX(4px);
   color: var(--primary);
-}
-
-/* Subcategory: color accent strip on left */
-.subcategory-item {
-  padding-left: 0;
-  gap: 0;
 }
 
 .subcategory-item-accent {
