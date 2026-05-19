@@ -1,28 +1,6 @@
-import { UI } from "./strings";
-
 export type TechniqueLevel = 'basis' | 'gemiddeld' | 'gevorderd';
 export type TechniqueCategory = 'methoden' | 'eiwitten' | 'groenten' | 'sauzen';
 export type HeatLevel = 'hoog' | 'middel' | 'laag' | 'geen';
-
-export const LEVEL_LABELS: Record<TechniqueLevel, string> = {
-  basis:     UI.techniques.levelBasis,
-  gemiddeld: UI.techniques.levelGemiddeld,
-  gevorderd: UI.techniques.levelGevorderd,
-};
-
-export const HEAT_LABELS: Record<HeatLevel, string> = {
-  hoog:   UI.techniques.heatHoog,
-  middel: UI.techniques.heatMiddel,
-  laag:   UI.techniques.heatLaag,
-  geen:   UI.techniques.heatGeen,
-};
-
-export const CATEGORY_LABELS: Record<TechniqueCategory, string> = {
-  methoden: UI.techniques.categoryMethoden,
-  eiwitten: UI.techniques.categoryEiwitten,
-  groenten: UI.techniques.categoryGroenten,
-  sauzen:   UI.techniques.categorySauzen,
-};
 
 export interface Technique {
   id: string;

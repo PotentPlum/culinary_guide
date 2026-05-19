@@ -1381,6 +1381,28 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
   padding: 32px 36px 60px;
 }
 
+.technique-body-para {
+  font-size: 15px;
+  line-height: 1.65;
+  color: var(--ink);
+  margin: 0;
+  padding: 14px 0;
+  border-top: 1px solid var(--line);
+  text-wrap: pretty;
+}
+.technique-body-para:first-child {
+  border-top: none;
+  padding-top: 0;
+}
+
+.technique-heat-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: var(--ink-soft);
+}
+
 .technique-tips-list {
   list-style: none;
   padding: 0;

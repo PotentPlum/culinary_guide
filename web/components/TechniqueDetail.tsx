@@ -2,13 +2,33 @@
 
 import { useEffect } from "react";
 import type { Technique } from "@/lib/techniques";
-import { TECHNIQUES, LEVEL_LABELS, HEAT_LABELS, CATEGORY_LABELS } from "@/lib/techniques";
+import { TECHNIQUES } from "@/lib/techniques";
 import { VEG_DATA } from "@/lib/vegetables";
 import { UI } from "@/lib/strings";
 
-type Props = { technique: Technique | null; onClose: () => void };
+type Props = { technique: Technique | null; onClose: () => void; onOpen: (t: Technique) => void };
 
-export default function TechniqueDetail({ technique, onClose }: Props) {
+const LEVEL_LABELS: Record<Technique["level"], string> = {
+  basis:     UI.techniques.levelBasis,
+  gemiddeld: UI.techniques.levelGemiddeld,
+  gevorderd: UI.techniques.levelGevorderd,
+};
+
+const HEAT_LABELS: Record<NonNullable<Technique["heatLevel"]>, string> = {
+  hoog:   UI.techniques.heatHoog,
+  middel: UI.techniques.heatMiddel,
+  laag:   UI.techniques.heatLaag,
+  geen:   UI.techniques.heatGeen,
+};
+
+const CATEGORY_LABELS: Record<Technique["category"], string> = {
+  methoden: UI.techniques.categoryMethoden,
+  eiwitten: UI.techniques.categoryEiwitten,
+  groenten: UI.techniques.categoryGroenten,
+  sauzen:   UI.techniques.categorySauzen,
+};
+
+export default function TechniqueDetail({ technique, onClose, onOpen }: Props) {
   useEffect(() => {
     if (!technique) return;
     const onKey = (e: KeyboardEvent) => { if (e.key === "Escape") onClose(); };
@@ -23,7 +43,9 @@ export default function TechniqueDetail({ technique, onClose }: Props) {
   if (!technique) return null;
 
   const levelLabel = LEVEL_LABELS[technique.level];
-  const heatLabel = technique.heatLevel != null ? HEAT_LABELS[technique.heatLevel] : null;
+  const heatLabel = (technique.heatLevel && technique.heatLevel !== "geen")
+    ? HEAT_LABELS[technique.heatLevel]
+    : null;
   const categoryLabel = CATEGORY_LABELS[technique.category];
 
   const relatedVegItems = (technique.relatedVeg ?? [])
@@ -47,8 +69,8 @@ export default function TechniqueDetail({ technique, onClose }: Props) {
           <p className="technique-drawer-subtitle">{technique.subtitle}</p>
           <div className="technique-drawer-badges">
             <span className="technique-level-badge">{levelLabel}</span>
-            {technique.heatLevel && heatLabel && (
-              <span style={{ display: "inline-flex", alignItems: "center", gap: "6px", fontSize: "12px", color: "var(--ink-soft)" }}>
+            {heatLabel && (
+              <span className="technique-heat-label">
                 <span className={`technique-heat-dot ${technique.heatLevel}`} />
                 {heatLabel}
               </span>
@@ -58,13 +80,7 @@ export default function TechniqueDetail({ technique, onClose }: Props) {
 
         <div className="technique-drawer-body">
           {technique.body.map((para, i) => (
-            <p
-              key={i}
-              className="detail-section"
-              style={{ borderTop: i === 0 ? "none" : undefined, paddingTop: i === 0 ? 0 : undefined }}
-            >
-              {para}
-            </p>
+            <p key={i} className="technique-body-para">{para}</p>
           ))}
 
           <section className="detail-section">
@@ -110,7 +126,7 @@ export default function TechniqueDetail({ technique, onClose }: Props) {
                     className="technique-related-card"
                     onClick={(e) => {
                       e.stopPropagation();
-                      onClose();
+                      onOpen(t);
                     }}
                   >
                     <div className="technique-related-card-name">{t.nl}</div>
