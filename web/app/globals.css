@@ -1236,3 +1236,239 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
   .recipe-import-row { flex-direction: column; align-items: stretch; }
   .recipe-import-btn { width: 100%; }
 }
+
+/* =========== TECHNIEKEN =========== */
+.technique-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+@media (max-width: 880px) {
+  .technique-grid { grid-template-columns: 1fr; }
+}
+
+.technique-card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 18px 20px;
+  background: var(--surface-card);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  cursor: pointer;
+  text-align: left;
+  font: inherit; color: inherit;
+  transition: transform 150ms cubic-bezier(.3,.7,.4,1), box-shadow 150ms, border-color 120ms;
+}
+.technique-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(30,26,20,0.07), 0 2px 4px rgba(30,26,20,0.04);
+  border-color: var(--line-strong);
+}
+
+.technique-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.technique-card-name {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 22px;
+  line-height: 1.05;
+  letter-spacing: -0.005em;
+  margin: 0;
+}
+
+.technique-card-subtitle {
+  font-size: 13.5px;
+  color: var(--ink-soft);
+  margin: 0;
+  line-height: 1.4;
+}
+
+.technique-card-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 4px;
+}
+
+.technique-subcategory {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+
+.technique-level-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 9px;
+  border-radius: 999px;
+  background: var(--primary);
+  color: #fff;
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
+.technique-heat-dot {
+  width: 9px; height: 9px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  display: inline-block;
+}
+.technique-heat-dot.hoog   { background: var(--accent); }
+.technique-heat-dot.middel { background: var(--soon); }
+.technique-heat-dot.laag   { background: var(--primary-soft); }
+.technique-heat-dot.geen   { background: rgba(30,26,20,0.15); }
+
+/* Technique drawer — extends detail panel styles */
+.technique-drawer {
+  width: min(600px, 100vw);
+  background: var(--surface-card);
+  overflow-y: auto;
+  animation: panelIn 320ms cubic-bezier(.3,.7,.4,1);
+  position: relative;
+  box-shadow: -20px 0 60px rgba(20,15,10,0.18);
+}
+
+.technique-drawer-hero {
+  padding: 48px 36px 28px;
+  background: var(--surface-warm);
+  border-bottom: 1px solid var(--line);
+}
+
+.technique-drawer-category {
+  font-family: var(--mono);
+  font-size: 10.5px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  margin-bottom: 8px;
+}
+
+.technique-drawer-name {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 40px;
+  line-height: 1.05;
+  margin: 0 0 8px;
+  letter-spacing: -0.01em;
+}
+
+.technique-drawer-subtitle {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 18px;
+  color: var(--ink-soft);
+  margin: 0 0 16px;
+}
+
+.technique-drawer-badges {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.technique-drawer-body {
+  padding: 32px 36px 60px;
+}
+
+.technique-tips-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.technique-tips-list li {
+  padding: 10px 14px;
+  background: var(--surface-warm);
+  border-radius: 8px;
+  font-size: 14px;
+  line-height: 1.5;
+  position: relative;
+  padding-left: 28px;
+}
+
+.technique-tips-list li::before {
+  content: "→";
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  color: var(--accent);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.technique-veg-chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 12px;
+  border-radius: 999px;
+  font-size: 13px;
+  border: 1px solid var(--line-strong);
+  color: var(--ink);
+}
+
+.technique-related-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+}
+
+.technique-related-card {
+  padding: 10px 14px;
+  background: var(--surface-warm);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: left;
+  font: inherit; color: inherit;
+  transition: border-color 120ms, background 120ms;
+}
+
+.technique-related-card:hover {
+  border-color: var(--line-strong);
+  background: #fff;
+}
+
+.technique-related-card-name {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 15px;
+  line-height: 1.2;
+}
+
+.technique-related-card-sub {
+  font-size: 11.5px;
+  color: var(--ink-soft);
+  margin-top: 2px;
+}
+
+.technique-cookware-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+/* Technique page controls */
+.technique-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  padding: 14px 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
