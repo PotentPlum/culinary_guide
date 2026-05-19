@@ -7,7 +7,15 @@
       "Bash(git diff*)",
       "Bash(git log*)",
       "Bash(git add*)",
-      "Bash(git commit*)"
+      "Bash(git commit*)",
+      "Bash(git push*)",
+      "Bash(git fetch*)",
+      "Bash(git pull*)",
+      "Bash(git branch*)",
+      "Bash(git checkout*)",
+      "Bash(find . *)",
+      "Bash(ls*)",
+      "Bash(grep*)"
     ]
   },
   "hooks": {
@@ -17,7 +25,16 @@
         "hooks": [
           {
             "type": "command",
-            "command": "cd web && npx tsc --noEmit 2>&1 | head -30"
+            "command": "npx tsc --noEmit 2>&1 | head -30"
+          }
+        ]
+      },
+      {
+        "matcher": "Edit|Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo '$CLAUDE_TOOL_INPUT' | grep -q 'vegetables' && npm run validate 2>&1 | tail -10 || true"
           }
         ]
       }
