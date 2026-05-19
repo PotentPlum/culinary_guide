@@ -10,8 +10,9 @@ import FuturePeek from "@/components/FuturePeek";
 import CalendarPage from "@/components/CalendarPage";
 import DetailPanel from "@/components/DetailPanel";
 import RecipesPage from "@/components/RecipesPage";
+import TechniquesPage from "@/components/TechniquesPage";
 
-type Page = "seasonal" | "calendar" | "recipes";
+type Page = "seasonal" | "calendar" | "recipes" | "technieken";
 type View = "grid" | "list";
 type Density = "cozy" | "comfortable" | "compact";
 
@@ -20,7 +21,7 @@ const NAV_ITEMS = [
   { id: "calendar",      label: UI.nav.calendar,      icon: "cal",     ready: true },
   { id: "recipes",       label: UI.nav.recipes,       icon: "book",    ready: true },
   { id: "substitutions", label: UI.nav.substitutions, icon: "swap",    ready: false },
-  { id: "techniques",    label: UI.nav.techniques,    icon: "knife",   ready: false },
+  { id: "technieken",    label: UI.nav.techniques,    icon: "knife",   ready: true },
   { id: "foraging",      label: UI.nav.foraging,      icon: "compass", ready: false },
 ];
 
@@ -175,6 +176,8 @@ export default function App() {
         )}
 
         {page === "recipes" && <RecipesPage />}
+
+        {page === "technieken" && <TechniquesPage />}
       </main>
 
       <DetailPanel veg={openVeg} month={month} onClose={() => setOpenVeg(null)} />
