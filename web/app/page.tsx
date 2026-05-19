@@ -2,6 +2,7 @@
 
 import { useState, useMemo } from "react";
 import { VEG_DATA, statusFor, MONTHS_LONG, type VegItem, type VegStatus } from "@/lib/vegetables";
+import { UI } from "@/lib/strings";
 import NavIcon from "@/components/NavIcon";
 import VegCard from "@/components/VegCard";
 import FilterPills, { type Filter, type Counts } from "@/components/FilterPills";
@@ -15,12 +16,12 @@ type View = "grid" | "list";
 type Density = "cozy" | "comfortable" | "compact";
 
 const NAV_ITEMS = [
-  { id: "seasonal",      label: "Seizoenen",     icon: "leaf",    ready: true },
-  { id: "calendar",      label: "Kalender",      icon: "cal",     ready: true },
-  { id: "recipes",       label: "Recepten",      icon: "book",    ready: true  },
-  { id: "substitutions", label: "Vervangers",    icon: "swap",    ready: false },
-  { id: "techniques",    label: "Technieken",    icon: "knife",   ready: false },
-  { id: "foraging",      label: "Plukken",       icon: "compass", ready: false },
+  { id: "seasonal",      label: UI.nav.seasonal,      icon: "leaf",    ready: true },
+  { id: "calendar",      label: UI.nav.calendar,      icon: "cal",     ready: true },
+  { id: "recipes",       label: UI.nav.recipes,       icon: "book",    ready: true },
+  { id: "substitutions", label: UI.nav.substitutions, icon: "swap",    ready: false },
+  { id: "techniques",    label: UI.nav.techniques,    icon: "knife",   ready: false },
+  { id: "foraging",      label: UI.nav.foraging,      icon: "compass", ready: false },
 ];
 
 const STATUS_ORDER: Record<VegStatus, number> = { peak: 0, shoulder: 1, soon: 2, ending: 3, off: 4 };
@@ -72,8 +73,8 @@ export default function App() {
             </svg>
           </div>
           <div className="brand-name">
-            <div className="brand-title">Mise</div>
-            <div className="brand-sub">een kooksalmanak</div>
+            <div className="brand-title">{UI.brandTitle}</div>
+            <div className="brand-sub">{UI.brandSub}</div>
           </div>
         </div>
 
@@ -84,11 +85,11 @@ export default function App() {
               className={`nav-item${page === item.id ? " active" : ""}${!item.ready ? " soon" : ""}`}
               onClick={() => item.ready && setPage(item.id as Page)}
               disabled={!item.ready}
-              title={item.ready ? item.label : `${item.label} — binnenkort`}
+              title={item.ready ? item.label : `${item.label} — ${UI.nav.soon}`}
             >
               <NavIcon name={item.icon} />
               <span>{item.label}</span>
-              {!item.ready && <span className="nav-soon">binnenkort</span>}
+              {!item.ready && <span className="nav-soon">{UI.nav.soon}</span>}
             </button>
           ))}
         </nav>
@@ -97,11 +98,11 @@ export default function App() {
           <div className="footer-loc">
             <span className="footer-flag" />
             <div>
-              <div className="footer-loc-label">Regio</div>
-              <div className="footer-loc-name">Nederland</div>
+              <div className="footer-loc-label">{UI.footer.regionLabel}</div>
+              <div className="footer-loc-name">{UI.footer.regionName}</div>
             </div>
           </div>
-          <div className="footer-build">v0.1 · seizoensmodule</div>
+          <div className="footer-build">{UI.footer.build}</div>
         </div>
       </aside>
 
@@ -111,16 +112,16 @@ export default function App() {
           <div className="page seasonal">
             <header className="page-hero">
               <div className="hero-eyebrow">
-                <span className="hero-loc">📍 Nederland</span>
+                <span className="hero-loc">{UI.hero.eyebrowLoc}</span>
                 <span className="hero-dot">·</span>
                 <span>{MONTHS_LONG[month - 1]} {new Date().getFullYear()}</span>
               </div>
               <h1 className="hero-title">
-                Wat is er nu <em>in het seizoen</em>
+                {UI.hero.title} <em>{UI.hero.titleEm}</em>
               </h1>
               <p className="hero-sub">
-                {counts.peak} op hoogtepunt · {counts.shoulder} beschikbaar ·{" "}
-                {counts.soon} binnenkort · {counts.ending} aflopend
+                {counts.peak} {UI.hero.statPeak} · {counts.shoulder} {UI.hero.statShoulder} ·{" "}
+                {counts.soon} {UI.hero.statSoon} · {counts.ending} {UI.hero.statEnding}
               </p>
             </header>
 
@@ -134,15 +135,15 @@ export default function App() {
                   <input
                     value={query}
                     onChange={(e) => setQuery(e.target.value)}
-                    placeholder="Zoeken…"
-                    aria-label="Groenten zoeken"
+                    placeholder={UI.controls.searchPlaceholder}
+                    aria-label={UI.controls.searchAriaLabel}
                   />
                 </div>
                 <div className="seg">
-                  <button className={view === "grid" ? "on" : ""} onClick={() => setView("grid")} aria-label="Rasterweergave">
+                  <button className={view === "grid" ? "on" : ""} onClick={() => setView("grid")} aria-label={UI.controls.gridAriaLabel}>
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><rect x="3" y="3" width="8" height="8" rx="1"/><rect x="13" y="3" width="8" height="8" rx="1"/><rect x="3" y="13" width="8" height="8" rx="1"/><rect x="13" y="13" width="8" height="8" rx="1"/></svg>
                   </button>
-                  <button className={view === "list" ? "on" : ""} onClick={() => setView("list")} aria-label="Lijstweergave">
+                  <button className={view === "list" ? "on" : ""} onClick={() => setView("list")} aria-label={UI.controls.listAriaLabel}>
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
                   </button>
                 </div>
@@ -150,7 +151,7 @@ export default function App() {
             </div>
 
             {filtered.length === 0 ? (
-              <div className="empty">Geen groenten gevonden. Probeer de zoekopdracht te wissen.</div>
+              <div className="empty">{UI.emptyState}</div>
             ) : view === "list" ? (
               <div className="veg-list">
                 {filtered.map((v) => (
