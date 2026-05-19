@@ -122,10 +122,24 @@ export default function App() {
               <h1 className="hero-title">
                 {UI.hero.title} <em>{UI.hero.titleEm}</em>
               </h1>
-              <p className="hero-sub">
-                {counts.peak} {UI.hero.statPeak} · {counts.shoulder} {UI.hero.statShoulder} ·{" "}
-                {counts.soon} {UI.hero.statSoon} · {counts.ending} {UI.hero.statEnding}
-              </p>
+              <div className="hero-stats">
+                <span className="hero-stat hero-stat--peak">
+                  <span className="hero-stat-num">{counts.peak}</span>
+                  {UI.hero.statPeak}
+                </span>
+                <span className="hero-stat hero-stat--shoulder">
+                  <span className="hero-stat-num">{counts.shoulder}</span>
+                  {UI.hero.statShoulder}
+                </span>
+                <span className="hero-stat hero-stat--soon">
+                  <span className="hero-stat-num">{counts.soon}</span>
+                  {UI.hero.statSoon}
+                </span>
+                <span className="hero-stat hero-stat--ending">
+                  <span className="hero-stat-num">{counts.ending}</span>
+                  {UI.hero.statEnding}
+                </span>
+              </div>
             </header>
 
             <div className="controls">

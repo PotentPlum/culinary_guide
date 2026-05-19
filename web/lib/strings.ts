@@ -30,7 +30,7 @@ export const UI = {
 
   // Hero / page header
   hero: {
-    eyebrowLoc: "📍 Nederland",
+    eyebrowLoc: "Nederland",
     title:      "Wat is er nu",
     titleEm:    "in het seizoen",
     statPeak:      "op hoogtepunt",
