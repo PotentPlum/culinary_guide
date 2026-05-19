@@ -22,10 +22,13 @@ const HEAT_LABELS: Record<NonNullable<Technique["heatLevel"]>, string> = {
 };
 
 const CATEGORY_LABELS: Record<Technique["category"], string> = {
-  methoden: UI.techniques.categoryMethoden,
+  snijden: UI.techniques.categorySnijden,
+  garing: UI.techniques.categoryGaring,
+  smaak: UI.techniques.categorySmaak,
   eiwitten: UI.techniques.categoryEiwitten,
+  sauzen: UI.techniques.categorySauzen,
   groenten: UI.techniques.categoryGroenten,
-  sauzen:   UI.techniques.categorySauzen,
+  gereedschap: UI.techniques.categoryGereedschap,
 };
 
 export default function TechniqueDetail({ technique, onClose, onOpen }: Props) {
