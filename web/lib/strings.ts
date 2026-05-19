@@ -124,6 +124,32 @@ export const UI = {
     savedRemoveLabel: "Verwijderen",
   },
 
+  // Technieken page
+  techniques: {
+    pageTitle:       "Technieken",
+    pageSubtitle:    "Fundamentele bereidingsmethoden voor de Nederlandse keuken",
+    filterAll:       "Alle technieken",
+    categoryMethoden: "Methoden",
+    categoryEiwitten: "Eiwitten",
+    categoryGroenten: "Groenten",
+    categorySauzen:   "Sauzen",
+    levelBasis:      "Basis",
+    levelGemiddeld:  "Gemiddeld",
+    levelGevorderd:  "Gevorderd",
+    heatHoog:        "Hoog vuur",
+    heatMiddel:      "Middel vuur",
+    heatLaag:        "Laag vuur",
+    heatGeen:        "Geen vuur",
+    sectionTips:     "Tips",
+    sectionRelatedVeg: "Aanbevolen groenten",
+    sectionRelatedTechniques: "Verwante technieken",
+    sectionCookware: "Benodigde kookgerei",
+    searchPlaceholder: "Techniek zoeken…",
+    searchAriaLabel: "Technieken zoeken",
+    emptyState:      "Geen technieken gevonden. Probeer de zoekopdracht te wissen.",
+    closeAriaLabel:  "Sluiten",
+  },
+
   // Future peek section
   futurePeek: {
     label: "Binnenkort",
