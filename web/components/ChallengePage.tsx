@@ -6,11 +6,17 @@ import { UI } from "@/lib/strings";
 
 type Phase = "idle" | "loading" | "error" | "done";
 
-function difficultyLabel(d: ChallengeResponse["difficulty"]): string {
-  if (d === "Beginner") return UI.challenge.difficultyBeginner;
-  if (d === "Intermediate") return UI.challenge.difficultyIntermediate;
-  return UI.challenge.difficultyAdvanced;
-}
+const DIFFICULTY_LABEL: Record<ChallengeResponse["difficulty"], string> = {
+  Beginner:     UI.challenge.difficultyBeginner,
+  Intermediate: UI.challenge.difficultyIntermediate,
+  Advanced:     UI.challenge.difficultyAdvanced,
+};
+
+const DIFFICULTY_CLASS: Record<ChallengeResponse["difficulty"], string> = {
+  Beginner:     "challenge-badge--beginner",
+  Intermediate: "challenge-badge--intermediate",
+  Advanced:     "challenge-badge--advanced",
+};
 
 export default function ChallengePage() {
   const [ingredient, setIngredient] = useState("");
@@ -108,7 +114,7 @@ export default function ChallengePage() {
 
       {phase === "error" && (
         <div className="challenge-state-error" role="alert">
-          <strong>{UI.recipes.errorTitle}</strong>
+          <strong>{UI.challenge.errorTitle}</strong>
           <p>{errorMsg}</p>
           <button className="recipe-retry-btn" onClick={handleClear}>
             {UI.challenge.retryBtn}
@@ -139,22 +145,13 @@ function ChallengeCard({
   onTryAnother: () => void;
   onClear: () => void;
 }) {
-  const diffClass =
-    challenge.difficulty === "Beginner"
-      ? "challenge-badge--beginner"
-      : challenge.difficulty === "Intermediate"
-      ? "challenge-badge--intermediate"
-      : "challenge-badge--advanced";
-
   return (
     <article className="challenge-card">
       <div className="challenge-card-header">
         <span className="challenge-ingredient-label">{ingredient}</span>
-        <div className="challenge-badges">
-          <span className={`challenge-badge ${diffClass}`}>
-            {difficultyLabel(challenge.difficulty)}
-          </span>
-        </div>
+        <span className={`challenge-badge ${DIFFICULTY_CLASS[challenge.difficulty]}`}>
+          {DIFFICULTY_LABEL[challenge.difficulty]}
+        </span>
       </div>
 
       <p className="challenge-objective">{challenge.challenge}</p>

@@ -1755,8 +1755,6 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
   color: var(--ink-soft);
 }
 
-.challenge-badges { display: flex; gap: 8px; }
-
 .challenge-badge {
   display: inline-block;
   padding: 3px 10px;
