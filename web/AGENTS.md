@@ -53,5 +53,6 @@ import { UI } from "@/lib/strings";
 
 - Server-only secrets (`CLAUDE_API_KEY`) must never be referenced in client components or files that import into them.
 - `NEXT_PUBLIC_*` env vars are browser-safe; all others are server-only.
-- Recipe ingestion (`/api/recipe`) is complete. Challenge generation (`/api/challenge`) is complete. Save/list routes are stubs awaiting Supabase wiring.
+- All recipe routes are complete: `/api/recipe` (URL ingestion), `/api/recipe-from-images` (photo/Claude vision), `/api/recipes/save` (Supabase insert), `/api/recipes/list` (Supabase SELECT), `/api/recipes/[id]` (PATCH update).
+- Challenge generation (`/api/challenge`) is complete.
 <!-- END:api-rules -->
