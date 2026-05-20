@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import type { RecipeOutput } from "@/lib/recipeIngestion";
 import { UI } from "@/lib/strings";
 
@@ -14,6 +14,7 @@ type SavedRecipe = {
 };
 
 const STORAGE_KEY = "mise-saved-recipes";
+const PHOTO_URL_PREFIX = "mise-photo:";
 const MAX_PHOTOS = 5;
 const MAX_PHOTO_BYTES = 10 * 1024 * 1024;
 const ACCEPTED_TYPES = ["image/jpeg", "image/png", "image/webp"];
@@ -134,7 +135,7 @@ export default function RecipesPage() {
 
   function handleTabChange(newTab: Tab) {
     setTab(newTab);
-    if (phase !== "done") {
+    if (phase === "error") {
       setPhase("idle");
       setErrorMsg("");
     }
@@ -195,7 +196,7 @@ export default function RecipesPage() {
       }
 
       setRecipe(data);
-      setActiveUrl(`mise-photo:${Date.now()}`);
+      setActiveUrl(`${PHOTO_URL_PREFIX}${Date.now()}`);
       setPhase("done");
     } catch {
       setPhase("error");
@@ -236,7 +237,7 @@ export default function RecipesPage() {
   function handleLoadSaved(saved: SavedRecipe) {
     setRecipe(saved.recipe);
     setActiveUrl(saved.url);
-    setUrl(saved.url.startsWith("mise-photo:") ? "" : saved.url);
+    setUrl(saved.url.startsWith(PHOTO_URL_PREFIX) ? "" : saved.url);
     setPhase("done");
     setErrorMsg("");
   }
@@ -252,11 +253,17 @@ export default function RecipesPage() {
     });
   }
 
-  const handleDropzoneDrop = useCallback((e: React.DragEvent) => {
+  function handleDropzoneDrop(e: React.DragEvent) {
     e.preventDefault();
     setPhotoDrag(false);
     addFiles(e.dataTransfer.files);
-  }, []); // eslint-disable-line react-hooks/exhaustive-deps
+  }
+
+  // Stable object URLs — created once per File reference, revoked when files are removed or component unmounts
+  const photoObjectUrls = useMemo(() => photoFiles.map((f) => URL.createObjectURL(f)), [photoFiles]);
+  useEffect(() => {
+    return () => { photoObjectUrls.forEach((u) => URL.revokeObjectURL(u)); };
+  }, [photoObjectUrls]);
 
   const isSaved = savedRecipes.some((r) => r.url === activeUrl);
   const subtitle = tab === "photo" ? UI.recipes.pageSubtitlePhoto : UI.recipes.pageSubtitle;
@@ -270,7 +277,6 @@ export default function RecipesPage() {
         <p className="hero-sub">{subtitle}</p>
       </header>
 
-      {/* Tab switcher */}
       <div className="recipe-tabs">
         <button
           type="button"
@@ -288,7 +294,6 @@ export default function RecipesPage() {
         </button>
       </div>
 
-      {/* URL tab */}
       {tab === "url" && (
         <form className="recipe-import-form" onSubmit={handleSubmit}>
           <div className="recipe-import-row">
@@ -316,10 +321,8 @@ export default function RecipesPage() {
         </form>
       )}
 
-      {/* Photo tab */}
       {tab === "photo" && (
         <div className="recipe-import-form">
-          {/* Hidden file input */}
           <input
             ref={fileInputRef}
             type="file"
@@ -329,7 +332,6 @@ export default function RecipesPage() {
             onChange={(e) => addFiles(e.target.files)}
           />
 
-          {/* Dropzone */}
           <div
             className={`recipe-photo-zone${photoDrag ? " recipe-photo-zone--drag" : ""}`}
             onClick={() => fileInputRef.current?.click()}
@@ -345,19 +347,15 @@ export default function RecipesPage() {
             <p className="recipe-import-hint">{UI.recipes.photoHint}</p>
           </div>
 
-          {/* Preview thumbnails */}
           {photoFiles.length > 0 && (
             <ul className="recipe-photo-list" aria-label="Geselecteerde foto's">
-              {photoFiles.map((file, i) => {
-                const src = URL.createObjectURL(file);
-                return (
-                  <li key={i} className="recipe-photo-item">
+              {photoFiles.map((file, i) => (
+                  <li key={photoObjectUrls[i]} className="recipe-photo-item">
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
-                      src={src}
+                      src={photoObjectUrls[i]}
                       alt={file.name}
                       className="recipe-photo-thumb"
-                      onLoad={() => URL.revokeObjectURL(src)}
                     />
                     <button
                       type="button"
@@ -371,12 +369,10 @@ export default function RecipesPage() {
                       ×
                     </button>
                   </li>
-                );
-              })}
+              ))}
             </ul>
           )}
 
-          {/* Submit row */}
           <div className="recipe-photo-actions">
             <button
               type="button"
@@ -445,7 +441,7 @@ function SavedRecipesList({
       <ul className="recipe-saved-list">
         {savedRecipes.map((saved) => {
           let domain: string;
-          if (saved.url.startsWith("mise-photo:")) {
+          if (saved.url.startsWith(PHOTO_URL_PREFIX)) {
             domain = UI.recipes.photoSource;
           } else {
             domain = saved.url;
@@ -556,7 +552,7 @@ function RecipeResult({
           <h3 className="recipe-col-title">{UI.recipes.sectionIngredients}</h3>
           {recipe.ingredientSections.map((section, si) => (
             <div key={si} className="recipe-section">
-              {!(section.sectionName === "Ingrediënten" && recipe.ingredientSections.length === 1) && (
+              {!(section.sectionName === UI.recipes.sectionIngredients && recipe.ingredientSections.length === 1) && (
                 <div className="recipe-section-name">{section.sectionName}</div>
               )}
               <ul className="recipe-ing-list">
@@ -573,7 +569,7 @@ function RecipeResult({
           <h3 className="recipe-col-title">{UI.recipes.sectionInstructions}</h3>
           {recipe.instructionSections.map((section, si) => (
             <div key={si} className="recipe-section">
-              {!(section.sectionName === "Bereiding" && recipe.instructionSections.length === 1) && (
+              {!(section.sectionName === UI.recipes.sectionInstructions && recipe.instructionSections.length === 1) && (
                 <div className="recipe-section-name">{section.sectionName}</div>
               )}
               {section.steps.map((step) => (
