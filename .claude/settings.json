@@ -14,7 +14,6 @@
       "Bash(git branch*)",
       "Bash(git checkout*)",
       "Bash(find . *)",
-      "Bash(find /home/user/culinary_guide *)",
       "Bash(ls*)",
       "Bash(grep*)"
     ]
@@ -26,7 +25,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "cd /home/user/culinary_guide/web && npx tsc --noEmit 2>&1 | head -30"
+            "command": "cd web && npx tsc --noEmit 2>&1 | head -30"
           }
         ]
       },
@@ -35,7 +34,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "echo '$CLAUDE_TOOL_INPUT' | grep -q 'vegetables' && cd /home/user/culinary_guide/web && npm run validate 2>&1 | tail -10 || true"
+            "command": "echo '$CLAUDE_TOOL_INPUT' | grep -q 'vegetables' && cd web && npm run validate 2>&1 | tail -10 || true"
           }
         ]
       }

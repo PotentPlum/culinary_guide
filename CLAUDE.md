@@ -25,7 +25,7 @@ All user-visible text must be in **Dutch**. Code, variable names, comments, and 
 ## Key files
 | File | Purpose |
 |------|---------|
-| `web/lib/vegetables.ts` | `VegItem` type, `VEG_DATA[]` (66 entries), `statusFor(veg, month)`, `MONTHS`/`MONTHS_LONG` |
+| `web/lib/vegetables.ts` | `VegItem` type, `VEG_DATA[]` (67 entries), `statusFor(veg, month)`, `MONTHS`/`MONTHS_LONG` |
 | `web/lib/strings.ts` | All Dutch UI strings; add new labels here, never hardcode in components |
 | `web/lib/types.ts` | `SavedRecipe` and `Challenge` types for Supabase rows |
 | `web/lib/supabase.ts` | Supabase client singleton; throws at startup if env vars missing |
@@ -48,12 +48,10 @@ All in `web/app/api/`:
 | `POST /api/recipe` | Done | Fetches URL, extracts Schema.org recipe data |
 | `POST /api/recipes/save` | **Stub** | Needs Supabase `recipes` insert wired |
 | `GET /api/recipes/list` | **Stub** | Needs Supabase `recipes` SELECT wired |
-| `POST /api/challenge` | **Stub** | Needs Claude API call + Supabase `challenges` insert |
-
-See `web/.claude/batch-plan.md` for the full integration plan and SQL DDL.
+| `POST /api/challenge` | Done | Calls Claude API and inserts into Supabase `challenges` |
 
 ## Validation
-- `npm run validate` — checks all 66 VegItem entries for hex colors, valid months (1–12), required fields, allowed family values
+- `npm run validate` — checks all 67 VegItem entries for hex colors, valid months (1–12), required fields, allowed family values
 - `npm run build` runs validate first; a failing validate blocks the build
 - Allowed `family` values: `"Wortel"`, `"Blad"`, `"Brassica"`, `"Allium"`, `"Peulvrucht"`, `"Stengel"`, `"Pompoen"`, `"Knolgewas"`, `"Vruchtgroente"`, `"Paddenstoel"`, `"Kruid"`
 

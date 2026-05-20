@@ -42,7 +42,7 @@ import { UI } from "@/lib/strings";
 <!-- BEGIN:data-rules -->
 # Data: vegetables
 
-- All 66 VegItem entries live in `lib/vegetables.ts`. Run `npm run validate` after any change.
+- All 67 VegItem entries live in `lib/vegetables.ts`. Run `npm run validate` after any change.
 - Never add a vegetable without: `id` (kebab-case), `nl` (Dutch name), `color`, `accent` (hex), `family`, `peak` (months 1–12), `blurb`, `storage`, `prep`, `pairings` (≥2), `substitutions` (≥1).
 - `VegItem.name` is the English internal slug — never displayed, used for search/sort only.
 - Seasonal data source: velt.nu. Do not use supermarket availability windows.
@@ -53,5 +53,5 @@ import { UI } from "@/lib/strings";
 
 - Server-only secrets (`CLAUDE_API_KEY`) must never be referenced in client components or files that import into them.
 - `NEXT_PUBLIC_*` env vars are browser-safe; all others are server-only.
-- Recipe ingestion (`/api/recipe`) is complete. Save/list/challenge routes are stubs awaiting Supabase + Claude wiring — see `.claude/batch-plan.md`.
+- Recipe ingestion (`/api/recipe`) is complete. Challenge generation (`/api/challenge`) is complete. Save/list routes are stubs awaiting Supabase wiring.
 <!-- END:api-rules -->
