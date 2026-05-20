@@ -17,6 +17,7 @@ type FlatRecipe = {
   prepTimeMinutes?: number | null;
   cookTimeMinutes?: number | null;
   totalTimeMinutes?: number | null;
+  servings?: number | null;
   ingredients?: string[];
   steps?: string[];
 };
@@ -32,6 +33,7 @@ function toRecipeOutput(flat: FlatRecipe): RecipeOutput {
     prepTimeMinutes: flat.prepTimeMinutes ?? null,
     cookTimeMinutes: flat.cookTimeMinutes ?? null,
     totalTimeMinutes: flat.totalTimeMinutes ?? null,
+    servings: flat.servings ?? null,
     cuisine: [],
     category: [],
     nutrition: { calories: null, protein: null, carbs: null, fat: null },
@@ -58,6 +60,7 @@ async function extractRecipe(
   "prepTimeMinutes": 20,
   "cookTimeMinutes": 30,
   "totalTimeMinutes": 50,
+  "servings": 4,
   "ingredients": ["200g bloem", "3 eieren"],
   "steps": ["Stap 1 tekst", "Stap 2 tekst"]
 }
@@ -65,6 +68,7 @@ async function extractRecipe(
 Regels:
 - Alle maten in metrisch: oz→g, cups→ml, °F→°C
 - Tijden als geheel getal in minuten, of null als niet vermeld
+- servings: aantal porties als geheel getal, of null als niet vermeld
 - Ingrediënten vóór stappen
 - Alleen JSON, geen extra tekst`,
   };

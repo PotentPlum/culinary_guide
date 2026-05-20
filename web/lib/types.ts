@@ -4,6 +4,7 @@ export type SavedRecipe = {
   ingredients: string[];
   instructions: string;
   source_url: string;
+  source: string;
   created_at: string;
   updated_at: string;
 };
