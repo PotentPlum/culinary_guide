@@ -37,6 +37,15 @@ export const UI = {
     statShoulder:  "beschikbaar",
     statSoon:      "binnenkort",
     statEnding:    "aflopend",
+    heroSub:       "Lokale groenten, gegroeid op Nederlandse bodem — gesorteerd op wat er nu op zijn best is.",
+  },
+
+  // Calendar page
+  calendar: {
+    eyebrowSub:  "Jaar in één oogopslag",
+    title:       "De",
+    titleEm:     "kalender",
+    heroSub:     "Wanneer elke groente zijn hoogtepunt bereikt. Gevuld = op zijn best, half = beschikbaar.",
   },
 
   // Controls
