@@ -1,21 +1,21 @@
 {
   "permissions": {
     "allow": [
-      "Bash(npm run *)",
+      "Bash(npm *)",
       "Bash(npx *)",
-      "Bash(git status)",
-      "Bash(git diff*)",
-      "Bash(git log*)",
-      "Bash(git add*)",
-      "Bash(git commit*)",
-      "Bash(git push*)",
-      "Bash(git fetch*)",
-      "Bash(git pull*)",
-      "Bash(git branch*)",
-      "Bash(git checkout*)",
-      "Bash(find . *)",
+      "Bash(git *)",
+      "Bash(gh *)",
+      "Bash(find *)",
       "Bash(ls*)",
-      "Bash(grep*)"
+      "Bash(grep*)",
+      "Bash(cd *)",
+      "mcp__supabase__apply_migration",
+      "mcp__supabase__execute_sql",
+      "mcp__supabase__list_tables",
+      "mcp__supabase__list_migrations",
+      "mcp__supabase__list_branches",
+      "mcp__supabase__get_project_url",
+      "mcp__supabase__get_publishable_keys"
     ]
   },
   "hooks": {

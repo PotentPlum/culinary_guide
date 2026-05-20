@@ -201,6 +201,33 @@ export const UI = {
     errorTitle:             "Niet gelukt",
   },
 
+  // Home page
+  home: {
+    heroTitle:    "Jouw persoonlijke",
+    heroTitleEm:  "kookgids",
+    heroTitleEnd: "voor het seizoen",
+    heroSub:      "Lokale groenten op hun best, kooktechnieken, recepten en uitdagingen — alles op één plek.",
+    statPeak:     "op hoogtepunt",
+    statSoon:     "binnenkort",
+    statEnding:   "aflopend",
+    modulesLabel: "Verken de gids",
+    modules: [
+      { id: "seasonal",   name: "Seizoenen",  desc: "Welke groenten zijn nu op hun best",          icon: "leaf",    css: "seasonal"   },
+      { id: "calendar",   name: "Kalender",   desc: "Het seizoensoverzicht voor het hele jaar",    icon: "cal",     css: "calendar"   },
+      { id: "recipes",    name: "Recepten",   desc: "Importeer en bewaar recepten van het web",    icon: "book",    css: "recipes"    },
+      { id: "technieken", name: "Technieken", desc: "Bereidingsmethoden en kooktechnieken",        icon: "knife",   css: "techniques" },
+      { id: "challenge",  name: "Uitdaging",  desc: "Ontvang een gerichte kookoefening van AI",   icon: "flame",   css: "challenge"  },
+    ],
+    spotlightTitle:  "Nu op hoogtepunt",
+    spotlightMore:   (n: number) => `Alle ${n} groenten →`,
+    soonTitle:       "Binnenkort",
+    endingTitle:     "Laatste kans",
+    moreLink:        "Meer →",
+    tipLabel:        "Seizoenstip",
+    tipFallback:     "Kies groenten die nu op het hoogtepunt van hun seizoen zijn — ze smaken beter en zijn goedkoper.",
+    tipLink:         (name: string) => `Meer over ${name} →`,
+  },
+
   // Future peek section
   futurePeek: {
     label: "Binnenkort",
