@@ -21,6 +21,9 @@ type FlatRecipe = {
   steps?: string[];
 };
 
+type ImageBlock = { type: "image"; source: { type: "base64"; media_type: AllowedMediaType; data: string } };
+type TextBlock = { type: "text"; text: string };
+
 function toRecipeOutput(flat: FlatRecipe): RecipeOutput {
   const steps = (flat.steps ?? []).map((text, i) => ({ stepNumber: i + 1, text }));
   return {
@@ -41,9 +44,6 @@ async function extractRecipe(
   apiKey: string,
   images: Array<{ data: string; mediaType: AllowedMediaType }>,
 ): Promise<RecipeOutput> {
-  type ImageBlock = { type: "image"; source: { type: "base64"; media_type: AllowedMediaType; data: string } };
-  type TextBlock = { type: "text"; text: string };
-
   const imageBlocks: ImageBlock[] = images.map(({ data, mediaType }) => ({
     type: "image",
     source: { type: "base64", media_type: mediaType, data },
@@ -125,7 +125,6 @@ export async function POST(req: NextRequest) {
     }
   }
 
-  // Try twice: silent retry on parse/validation failure
   let lastError: unknown;
   for (let attempt = 0; attempt < 2; attempt++) {
     try {
@@ -136,6 +135,7 @@ export async function POST(req: NextRequest) {
       return Response.json(recipe);
     } catch (err) {
       lastError = err;
+      if (err instanceof Error && err.message.startsWith("Claude API fout:")) break;
     }
   }
 
