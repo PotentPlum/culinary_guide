@@ -46,8 +46,10 @@ All in `web/app/api/`:
 | Route | Status | Notes |
 |-------|--------|-------|
 | `POST /api/recipe` | Done | Fetches URL, extracts Schema.org recipe data |
-| `POST /api/recipes/save` | **Stub** | Needs Supabase `recipes` insert wired |
-| `GET /api/recipes/list` | **Stub** | Needs Supabase `recipes` SELECT wired |
+| `POST /api/recipe-from-images` | Done | Claude vision — reads recipe text from up to 5 photos, normalises to metric |
+| `POST /api/recipes/save` | Done | Supabase `recipes` insert; accepts `name, ingredients[], instructions, source_url, source` |
+| `GET /api/recipes/list` | Done | Supabase `recipes` SELECT; returns `id, name, instructions, source_url, source, created_at` |
+| `PATCH /api/recipes/[id]` | Done | Supabase `recipes` update by id; accepts `name, ingredients[], instructions, source` |
 | `POST /api/challenge` | Done | Calls Claude API and inserts into Supabase `challenges` |
 
 ## Validation
@@ -73,16 +75,47 @@ All in `web/app/api/`:
 | `VegToken` | `components/VegToken.tsx` | `veg, size` | Geometric SVG circle illustration placeholder |
 | `NavIcon` | `components/NavIcon.tsx` | `name` | Monoline SVG icon switcher (6 icons: leaf, cal, book, swap, knife, compass) |
 | `FuturePeek` | `components/FuturePeek.tsx` | — | Teaser cards for upcoming modules (static, strings from `lib/strings.ts`) |
-| `RecipesPage` | `components/RecipesPage.tsx` | — | Recipe URL ingestion UI; localStorage persistence; Supabase save pending |
-| `RecipeSaver` | `components/RecipeSaver.tsx` | `recipe, onSaved?` | **Stub** — Supabase save button; not yet wired |
-| `ChallengeModePanel` | `components/ChallengeModePanel.tsx` | `ingredients` | **Stub** — Claude challenge generator UI; not yet wired |
+| `RecipesPage` | `components/RecipesPage.tsx` | — | Full recipe library: card grid, search/sort, add via URL or photos, edit, ingredient checklist, serving scaler; localStorage + Supabase dual persistence |
+| `TechniquesPage` | `components/TechniquesPage.tsx` | — | Cooking techniques browser with search, category filter, and detail panel |
+| `TechniqueCard` | `components/TechniqueCard.tsx` | technique props | Card for a single technique in the grid |
+| `TechniqueDetail` | `components/TechniqueDetail.tsx` | technique props | Detail panel for a technique |
+| `ChallengePage` | `components/ChallengePage.tsx` | — | Claude-powered cooking challenge generator; takes an ingredient, returns a targeted exercise |
+| `HomePage` | `components/HomePage.tsx` | — | Landing page with seasonal spotlight, module cards, and tip section |
+| `RecipeSaver` | `components/RecipeSaver.tsx` | `recipe, onSaved?` | **Stub** — legacy; superseded by save logic in `RecipesPage` |
+| `ChallengeModePanel` | `components/ChallengeModePanel.tsx` | `ingredients` | **Stub** — legacy; superseded by `ChallengePage` |
+
+## RecipesPage data model
+Local `SavedRecipe` type (in `RecipesPage.tsx`, not the same as the exported type in `lib/types.ts`):
+```ts
+type SavedRecipe = {
+  url: string;        // technical key — real URL or "mise-photo:timestamp"
+  source: string;     // human-readable: domain name, cookbook title, etc.
+  recipe: RecipeOutput;
+  savedAt: number;
+  remoteId?: string;  // Supabase row id, populated after list fetch
+};
+```
+Supabase `recipes` table columns: `id, name, ingredients[] (text[]), instructions (text/JSON string), source_url (text), source (text), created_at`.
+The `source` column was added via migration: `ALTER TABLE recipes ADD COLUMN IF NOT EXISTS source TEXT DEFAULT ''`.
+
+## RecipesPage features (as of branch claude/recepten-page-library-redesign)
+- Library-first layout: recipe cards are the primary focus; add panel is a secondary FAB/drawer
+- Add panel: URL tab (auto-derives source from domain) + Photo tab (up to 5 images, Claude vision)
+- Editable source field (cookbook name or URL) on both tabs
+- Sorting: newest first / oldest first / A–Z
+- Search with inline × clear and result count
+- Card accent colour derived from cuisine via `CUISINE_COLORS` map
+- Recipe editing modal (`EditRecipePanel`): title, description, ingredients (1/line), instructions (1/step/line), source; saves to localStorage + PATCH `/api/recipes/[id]` when `remoteId` is set
+- Ingredient checklist: checkboxes with strikethrough, state resets on back navigation
+- Serving size scaler: `−`/`+` controls, scales numeric quantities in ingredient text (handles unicode fractions)
 
 ## Known intentional gaps
 - `density` state exists in `App` but has no toggle UI — fixed at `"comfortable"`, passed through. Adding the toggle is a future task, not a bug.
 - `VegItem.shoulder` is optional; not all vegetables have shoulder months.
 - Month detection uses local client timezone (`new Date().getMonth()`). Intentional — NL-only app.
-- `RecipeSaver` and `ChallengeModePanel` are UI stubs pending API wiring.
 - Some Dutch strings in `page.tsx` hero section are still hardcoded; they should be migrated to `lib/strings.ts`.
+- `RecipeSaver` and `ChallengeModePanel` are legacy stubs; their functionality lives in `RecipesPage` and `ChallengePage` respectively.
 
 ## Future modules (not yet built)
-Vervangers, Technieken, Plukken — ghost nav items in `NAV_ITEMS` in `page.tsx`.
+Vervangers, Plukken — ghost nav items in `NAV_ITEMS` in `page.tsx`.
+Technieken is built (`TechniquesPage`) but may not be fully wired into the nav yet.

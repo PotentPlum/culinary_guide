@@ -232,6 +232,27 @@ export const UI = {
     difficultyIntermediate: "Gevorderd",
     difficultyAdvanced:     "Expert",
     errorTitle:             "Niet gelukt",
+    // Parameters section
+    paramsTitle:            "Verfijn de uitdaging",
+    techniqueLabel:         "Techniek",
+    techniquePlaceholder:   "Laat AI kiezen",
+    cuisineLabel:           "Keuken",
+    cuisinePlaceholder:     "Alle keukens",
+    timeLimitLabel:         "Beschikbare tijd",
+    timeLimitAny:           "Geen beperking",
+    timeLimit15:            "< 15 minuten",
+    timeLimit30:            "< 30 minuten",
+    timeLimit60:            "< 60 minuten",
+    timeLimitOver60:        "> 60 minuten",
+    simpleLabel:            "Klein & eenvoudig",
+    simpleDescription:      "Weinig ingrediënten, alleen wat je doorgaans in huis hebt",
+    // Result extras
+    labelOutputType:        "Resultaat",
+    labelRecipe:            "Recept",
+    labelServings:          "porties",
+    labelIngredients:       "Ingrediënten",
+    labelSteps:             "Bereiding",
+    labelRecipeTips:        "Tips",
   },
 
   // Home page

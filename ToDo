@@ -12,3 +12,14 @@ maak een routine:
 -- homepage Maken
 -- layout van paginas (seasonal, uitdagingen etc)
 -- security voor gebruik van challenges, ik wil absoluut geen ongewenste bezoekers die mij geld kosten of extreem dure responses. 
+
+Expand the challenge functionality with the following features:
+1. add parameters to be sent along with the ingredient in order to further specify the challenge
+	1. allow for a specific technique to be included, through a dropdown list. if no technique is chosen the API can decide on this.
+	2. Cuisine (e.g. Asian, Latin-american, French, Italian etc....)
+	3. Time available < 15 / < 30 / < 60 / > 60
+	4. Small and Simple (Few ingredients, only those often found in the pantry) this is a tick the box, if this is chosen it will provide an easy recipe with few ingredients that are 	often in ones pantry.
+2. It should always result in something usable, with a high quality recipe included in the answer. 
+3. The challenge should always result in something edible or usable such as:
+Component / Building Block: A foundational element meant to be part of a larger dish (e.g., a broth, stock, sauce, dressing, or pickle).
+Anything eaten with your hands (e.g., a sandwich, taco, wrap, or burger). Plated Dish: A complete, structured meal, Small Plate / Appetizer: A light, starter-sized creation (e.g., a snack, dip, or finger food).
