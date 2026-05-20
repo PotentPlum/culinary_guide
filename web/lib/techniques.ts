@@ -718,7 +718,7 @@ export const TECHNIQUES: Technique[] = [
     ],
     tips: [
       "Gebruik zo vers mogelijke eieren — de kwaliteit van het ei bepaalt het resultaat meer dan de techniek.",
-      "Pocheer meerdere kippen tegelijk als je voor een grote groep kookt — laat het vocht op temperatuur komen tussen batches in.",
+      "Pocheer meerdere eieren tegelijk als je voor een grote groep kookt — laat het vocht op temperatuur komen tussen batches in.",
       "Gepocheerde eieren kunnen van tevoren worden gemaakt en bewaard in koud water — warm op in heet water vlak voor serveren.",
       "Een scheut azijn in het water zorgt dat het eiwit sneller stolt en de dooier beter beschermd wordt.",
     ],
@@ -848,7 +848,7 @@ export const TECHNIQUES: Technique[] = [
     ],
     tips: [
       "Voeg een klontje koude boter toe aan het einde voor een glanzende, rijke saus.",
-      "Witlof en endive worden beter van smoren op lage temperatuur — hoge hitte maakt ze bitter.",
+      "Witlof en andijvie worden beter van smoren op lage temperatuur — hoge hitte maakt ze bitter.",
       "Gebruik bouillon in plaats van water voor een diepere smaak.",
       "Witlof kun je tijdens het smoren met een snufje suiker lichtjes karameliseren voor een zoetzuur contrast.",
     ],
