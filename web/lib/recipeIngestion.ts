@@ -36,6 +36,7 @@ export interface RecipeOutput {
   prepTimeMinutes: number | null;
   cookTimeMinutes: number | null;
   totalTimeMinutes: number | null;
+  servings?: number | null;
   cuisine: string | string[];
   category: string | string[];
   nutrition: NutritionInfo;
@@ -358,6 +359,15 @@ function extractNutrition(raw: JsonValue | undefined): NutritionInfo {
   };
 }
 
+// ─── Servings parser ──────────────────────────────────────────────────────────
+
+function parseServings(raw: unknown): number | null {
+  if (!raw) return null;
+  const str = String(raw);
+  const match = str.match(/(\d+)/);
+  return match ? parseInt(match[1], 10) : null;
+}
+
 // ─── String coercion helpers ──────────────────────────────────────────────────
 
 function toStringOrArray(v: JsonValue | undefined): string | string[] {
@@ -395,6 +405,7 @@ export function ingestRecipeFromHtml(html: string): RecipeOutput {
     prepTimeMinutes: parseIso8601Duration(recipe["prepTime"] as string | null),
     cookTimeMinutes: parseIso8601Duration(recipe["cookTime"] as string | null),
     totalTimeMinutes: parseIso8601Duration(recipe["totalTime"] as string | null),
+    servings: parseServings(recipe["recipeYield"]),
     cuisine: toStringOrArray(recipe["recipeCuisine"]),
     category: toStringOrArray(recipe["recipeCategory"]),
     nutrition: extractNutrition(recipe["nutrition"]),

@@ -8,7 +8,7 @@ export async function POST(req: NextRequest) {
   } catch {
     return Response.json({ error: "Ongeldig verzoekformaat." }, { status: 400 });
   }
-  const { name, ingredients, instructions, source_url } = body as Record<string, unknown>;
+  const { name, ingredients, instructions, source_url, source } = body as Record<string, unknown>;
   if (!name || !instructions) {
     return Response.json({ error: "Naam en instructies zijn verplicht." }, { status: 400 });
   }
@@ -19,6 +19,7 @@ export async function POST(req: NextRequest) {
       ingredients: Array.isArray(ingredients) ? (ingredients as string[]) : [],
       instructions: instructions as string,
       source_url: typeof source_url === "string" ? source_url : "",
+      source: typeof source === "string" ? source : "",
     })
     .select()
     .single();
