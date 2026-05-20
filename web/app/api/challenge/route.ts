@@ -1,25 +1,78 @@
 import type { NextRequest } from "next/server";
-import type { ChallengeResponse } from "@/lib/types";
+import type { ChallengeResponse, ChallengeParams } from "@/lib/types";
 
-const SYSTEM_PROMPT = `Je bent een kookcoach voor thuiskoks. Wanneer je een ingrediënt krijgt, genereer je een gerichte kookuitdaging om een specifieke culinaire techniek te oefenen.
+const TIME_LABEL: Record<NonNullable<ChallengeParams["timeLimit"]>, string> = {
+  "<15": "minder dan 15 minuten",
+  "<30": "minder dan 30 minuten",
+  "<60": "minder dan 60 minuten",
+  ">60": "meer dan 60 minuten",
+};
+
+const SYSTEM_PROMPT = `Je bent een kookcoach voor thuiskoks. Wanneer je een ingrediënt en optionele parameters krijgt, genereer je een gerichte kookuitdaging die resulteert in een concreet, klaargemaakt gerecht.
+
+Het resultaat moet ALTIJD één van de volgende zijn:
+- Een component of bouwsteen (bijv. bouillon, saus, dressing, augurken)
+- Een gerecht dat je met je handen eet (bijv. sandwich, taco, wrap, burger)
+- Een compleet bord (volledig, gestructureerde maaltijd)
+- Een klein bordje / voorgerecht (snack, dip, fingerfood)
 
 Geef ALLEEN een JSON-object terug met deze exacte velden:
 {
-  "challenge": "Een duidelijke, motiverende uitdagingsomschrijving (2-3 zinnen, in het Nederlands)",
-  "skill": "De specifieke culinaire techniek die geoefend wordt (3-5 woorden, in het Nederlands)",
+  "challenge": "Een duidelijke, motiverende uitdagingsomschrijving (2–3 zinnen, in het Nederlands)",
+  "skill": "De specifieke culinaire techniek die geoefend wordt (3–5 woorden, in het Nederlands)",
   "difficulty": "Beginner" of "Intermediate" of "Advanced",
   "timeEstimate": getal (minuten als geheel getal),
-  "why": "Korte uitleg waarom deze techniek belangrijk is (1-2 zinnen, in het Nederlands)"
+  "why": "Korte uitleg waarom deze techniek belangrijk is (1–2 zinnen, in het Nederlands)",
+  "outputType": "Korte omschrijving van het type resultaat in het Nederlands (bijv. 'Compleet bord', 'Saus', 'Sandwich')",
+  "recipe": {
+    "title": "Naam van het gerecht (in het Nederlands)",
+    "servings": getal (aantal personen als geheel getal),
+    "ingredients": [
+      { "amount": "hoeveelheid als string", "unit": "eenheid (bijv. g, el, tl, stuks — of lege string)", "name": "ingrediëntnaam in het Nederlands" }
+    ],
+    "steps": [
+      { "step": 1, "instruction": "Duidelijke bereidingsstap in het Nederlands" }
+    ],
+    "tips": ["Optionele praktische tip in het Nederlands"]
+  }
 }
 
-Het veld "difficulty" moet exact één van deze Engelse waarden zijn: "Beginner", "Intermediate", "Advanced".
-De velden "challenge", "skill" en "why" moeten in het Nederlands zijn.
-Schrijf geen tekst buiten het JSON-object.`;
+Regels:
+- "difficulty" moet exact één van deze Engelse waarden zijn: "Beginner", "Intermediate", "Advanced"
+- Alle andere tekstvelden moeten in het Nederlands zijn
+- Het recept moet volledig en bruikbaar zijn — geen vage stappen
+- Schrijf geen tekst buiten het JSON-object
+- Als een parameter is meegegeven (techniek, keuken, tijd, eenvoudig), houd je daar strikt rekening mee`;
 
 type ClaudeTextBlock = { type: "text"; text: string };
 type ClaudeContent = ClaudeTextBlock[];
 
-async function callClaude(apiKey: string, ingredient: string): Promise<ChallengeResponse> {
+function buildUserMessage(ingredient: string, params: ChallengeParams): string {
+  const lines = [`Ingrediënt: ${ingredient}`];
+
+  if (params.technique) {
+    lines.push(`Techniek: ${params.technique}`);
+  }
+  if (params.cuisine) {
+    lines.push(`Keuken: ${params.cuisine}`);
+  }
+  if (params.timeLimit) {
+    lines.push(`Beschikbare tijd: ${TIME_LABEL[params.timeLimit]}`);
+  }
+  if (params.simpleAndSmall) {
+    lines.push(
+      "Stijl: Klein en eenvoudig — gebruik weinig ingrediënten, bij voorkeur alleen wat iemand doorgaans in huis heeft (pantry-ingrediënten)"
+    );
+  }
+
+  return lines.join("\n");
+}
+
+async function callClaude(
+  apiKey: string,
+  ingredient: string,
+  params: ChallengeParams
+): Promise<ChallengeResponse> {
   const res = await fetch("https://api.anthropic.com/v1/messages", {
     method: "POST",
     headers: {
@@ -29,11 +82,11 @@ async function callClaude(apiKey: string, ingredient: string): Promise<Challenge
     },
     body: JSON.stringify({
       model: "claude-sonnet-4-6",
-      max_tokens: 1000,
+      max_tokens: 2000,
       temperature: 0.7,
       system: SYSTEM_PROMPT,
       messages: [
-        { role: "user", content: `Ingrediënt: ${ingredient}` },
+        { role: "user", content: buildUserMessage(ingredient, params) },
       ],
     }),
   });
@@ -55,7 +108,12 @@ async function callClaude(apiKey: string, ingredient: string): Promise<Challenge
     typeof parsed.skill !== "string" ||
     !["Beginner", "Intermediate", "Advanced"].includes(parsed.difficulty ?? "") ||
     typeof parsed.timeEstimate !== "number" ||
-    typeof parsed.why !== "string"
+    typeof parsed.why !== "string" ||
+    typeof parsed.outputType !== "string" ||
+    !parsed.recipe ||
+    typeof parsed.recipe.title !== "string" ||
+    !Array.isArray(parsed.recipe.ingredients) ||
+    !Array.isArray(parsed.recipe.steps)
   ) {
     throw new Error("Ongeldig antwoordformaat van Claude");
   }
@@ -70,9 +128,11 @@ export async function POST(req: NextRequest) {
   }
 
   let ingredient: string;
+  let params: ChallengeParams;
   try {
-    const body = (await req.json()) as { ingredient?: unknown };
+    const body = (await req.json()) as { ingredient?: unknown; params?: unknown };
     ingredient = typeof body.ingredient === "string" ? body.ingredient.trim() : "";
+    params = (typeof body.params === "object" && body.params !== null ? body.params : {}) as ChallengeParams;
   } catch {
     return Response.json({ error: "Ongeldig verzoekformaat." }, { status: 400 });
   }
@@ -81,11 +141,10 @@ export async function POST(req: NextRequest) {
     return Response.json({ error: "Geen ingrediënt opgegeven." }, { status: 400 });
   }
 
-  // Try twice: initial call, then one silent retry on parse/validation failure
   let lastError: unknown;
   for (let attempt = 0; attempt < 2; attempt++) {
     try {
-      const result = await callClaude(apiKey, ingredient);
+      const result = await callClaude(apiKey, ingredient, params);
       return Response.json(result);
     } catch (err) {
       lastError = err;
