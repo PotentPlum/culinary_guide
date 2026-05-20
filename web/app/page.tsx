@@ -36,7 +36,7 @@ export default function App() {
   const [page, setPage] = useState<Page>("home");
   const [filter, setFilter] = useState<Filter>("all");
   const [query, setQuery] = useState("");
-  const [view, setView] = useState<View>("grid");
+  const [view] = useState<View>("list");
   // density toggle UI is not yet built — state is wired through but fixed at "comfortable"
   const [density] = useState<Density>("comfortable");
   const [openVeg, setOpenVeg] = useState<VegItem | null>(null);
@@ -133,24 +133,6 @@ export default function App() {
                 {UI.hero.title} <em>{UI.hero.titleEm}</em>
               </h1>
               <p className="hero-sub">{UI.hero.heroSub}</p>
-              <div className="hero-stats">
-                <span className="hero-stat hero-stat--peak">
-                  <span className="hero-stat-num">{counts.peak}</span>
-                  {UI.hero.statPeak}
-                </span>
-                <span className="hero-stat hero-stat--shoulder">
-                  <span className="hero-stat-num">{counts.shoulder}</span>
-                  {UI.hero.statShoulder}
-                </span>
-                <span className="hero-stat hero-stat--soon">
-                  <span className="hero-stat-num">{counts.soon}</span>
-                  {UI.hero.statSoon}
-                </span>
-                <span className="hero-stat hero-stat--ending">
-                  <span className="hero-stat-num">{counts.ending}</span>
-                  {UI.hero.statEnding}
-                </span>
-              </div>
             </header>
 
             <div className="controls">
@@ -166,14 +148,6 @@ export default function App() {
                     placeholder={UI.controls.searchPlaceholder}
                     aria-label={UI.controls.searchAriaLabel}
                   />
-                </div>
-                <div className="seg">
-                  <button className={view === "grid" ? "on" : ""} onClick={() => setView("grid")} aria-label={UI.controls.gridAriaLabel}>
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><rect x="3" y="3" width="8" height="8" rx="1"/><rect x="13" y="3" width="8" height="8" rx="1"/><rect x="3" y="13" width="8" height="8" rx="1"/><rect x="13" y="13" width="8" height="8" rx="1"/></svg>
-                  </button>
-                  <button className={view === "list" ? "on" : ""} onClick={() => setView("list")} aria-label={UI.controls.listAriaLabel}>
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
-                  </button>
                 </div>
               </div>
             </div>
