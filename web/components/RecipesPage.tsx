@@ -14,7 +14,7 @@ type SavedRecipe = {
 
 const STORAGE_KEY = "mise-saved-recipes";
 
-function loadSaved(): SavedRecipe[] {
+function loadLocalSaved(): SavedRecipe[] {
   if (typeof window === "undefined") return [];
   try {
     return JSON.parse(localStorage.getItem(STORAGE_KEY) ?? "[]");
@@ -23,8 +23,51 @@ function loadSaved(): SavedRecipe[] {
   }
 }
 
-function persistSaved(items: SavedRecipe[]) {
-  localStorage.setItem(STORAGE_KEY, JSON.stringify(items));
+async function fetchRemoteSaved(): Promise<SavedRecipe[]> {
+  try {
+    const res = await fetch("/api/recipes/list");
+    if (!res.ok) return [];
+    const json = (await res.json()) as { recipes: Array<{ id: string; name: string; instructions: string; source_url: string; created_at: string }> };
+    return (json.recipes ?? []).map((row) => {
+      let recipe: RecipeOutput;
+      try {
+        recipe = JSON.parse(row.instructions) as RecipeOutput;
+      } catch {
+        recipe = {
+          title: row.name,
+          description: "",
+          prepTimeMinutes: null,
+          cookTimeMinutes: null,
+          totalTimeMinutes: null,
+          cuisine: [],
+          category: [],
+          nutrition: { calories: null, protein: null, carbs: null, fat: null },
+          ingredientSections: [],
+          instructionSections: [],
+        };
+      }
+      return { url: row.source_url, recipe, savedAt: new Date(row.created_at).getTime() };
+    });
+  } catch {
+    return [];
+  }
+}
+
+async function saveRemote(item: SavedRecipe): Promise<void> {
+  const res = await fetch("/api/recipes/save", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      name: item.recipe.title,
+      ingredients: item.recipe.ingredientSections.flatMap((s) => s.ingredients),
+      instructions: JSON.stringify(item.recipe),
+      source_url: item.url,
+    }),
+  });
+  if (!res.ok) {
+    const json = (await res.json()) as { error?: string };
+    throw new Error(json.error ?? "Opslaan mislukt");
+  }
 }
 
 export default function RecipesPage() {
@@ -34,10 +77,14 @@ export default function RecipesPage() {
   const [recipe, setRecipe] = useState<RecipeOutput | null>(null);
   const [activeUrl, setActiveUrl] = useState("");
   const [savedRecipes, setSavedRecipes] = useState<SavedRecipe[]>([]);
+  const [saveError, setSaveError] = useState("");
   const inputRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
-    setSavedRecipes(loadSaved());
+    setSavedRecipes(loadLocalSaved());
+    fetchRemoteSaved().then((remote) => {
+      if (remote.length > 0) setSavedRecipes(remote);
+    });
   }, []);
 
   async function handleSubmit(e: React.FormEvent) {
@@ -81,18 +128,22 @@ export default function RecipesPage() {
     setTimeout(() => inputRef.current?.focus(), 0);
   }
 
-  function handleSave() {
+  async function handleSave() {
     if (!recipe || !activeUrl) return;
+    setSaveError("");
     const item: SavedRecipe = { url: activeUrl, recipe, savedAt: Date.now() };
     const updated = [item, ...savedRecipes.filter((r) => r.url !== activeUrl)];
     setSavedRecipes(updated);
-    persistSaved(updated);
+    try {
+      await saveRemote(item);
+    } catch (err) {
+      setSaveError(err instanceof Error ? err.message : "Opslaan mislukt");
+    }
   }
 
   function handleRemoveSaved(savedUrl: string) {
     const updated = savedRecipes.filter((r) => r.url !== savedUrl);
     setSavedRecipes(updated);
-    persistSaved(updated);
   }
 
   function handleLoadSaved(saved: SavedRecipe) {
@@ -162,6 +213,7 @@ export default function RecipesPage() {
           isSaved={isSaved}
           onSave={handleSave}
           onReset={handleReset}
+          saveError={saveError}
         />
       )}
 
@@ -228,11 +280,13 @@ function RecipeResult({
   isSaved,
   onSave,
   onReset,
+  saveError,
 }: {
   recipe: RecipeOutput;
   isSaved: boolean;
   onSave: () => void;
   onReset: () => void;
+  saveError?: string;
 }) {
   const times = (
     [
@@ -260,6 +314,7 @@ function RecipeResult({
           >
             {isSaved ? UI.recipes.savedBtn : UI.recipes.saveBtn}
           </button>
+          {saveError && <p className="recipe-save-error">{saveError}</p>}
           <button className="recipe-clear-btn" onClick={onReset} aria-label={UI.recipes.clearBtn}>
             {UI.recipes.clearBtn}
           </button>
