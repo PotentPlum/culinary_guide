@@ -1,5 +1,11 @@
+import { supabase } from "@/lib/supabase";
+
 export async function GET() {
-  // TODO: wire up Supabase client from @/lib/supabase
-  // const { data, error } = await supabase.from("recipes").select("*").order("created_at", { ascending: false });
-  return Response.json({ recipes: [] });
+  const { data, error } = await supabase
+    .from("recipes")
+    .select("*")
+    .order("created_at", { ascending: false });
+
+  if (error) return Response.json({ error: error.message }, { status: 500 });
+  return Response.json({ recipes: data });
 }
