@@ -9,14 +9,6 @@ export type SavedRecipe = {
   updated_at: string;
 };
 
-export type Challenge = {
-  id: string;
-  ingredient: string;
-  challenge_text: string;
-  difficulty?: "easy" | "medium" | "hard";
-  created_at: string;
-};
-
 export type ChallengeParams = {
   technique?: string;
   cuisine?: string;
@@ -49,4 +41,18 @@ export type ChallengeResponse = {
     steps: RecipeStep[];
     tips?: string[];
   };
+};
+
+export type Challenge = {
+  id: string;
+  ingredient: string;
+  challenge_text: string;
+  skill: string;
+  difficulty: "Beginner" | "Intermediate" | "Advanced";
+  time_estimate: number;
+  why: string;
+  output_type: string;
+  recipe: ChallengeResponse["recipe"];
+  params: ChallengeParams | null;
+  created_at: string;
 };

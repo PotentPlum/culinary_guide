@@ -1,5 +1,6 @@
 import type { NextRequest } from "next/server";
 import type { ChallengeResponse, ChallengeParams } from "@/lib/types";
+import { supabase } from "@/lib/supabase";
 
 const TIME_LABEL: Record<NonNullable<ChallengeParams["timeLimit"]>, string> = {
   "<15": "minder dan 15 minuten",
@@ -145,6 +146,19 @@ export async function POST(req: NextRequest) {
   for (let attempt = 0; attempt < 2; attempt++) {
     try {
       const result = await callClaude(apiKey, ingredient, params);
+
+      await supabase.from("challenges").insert({
+        ingredient,
+        challenge_text: result.challenge,
+        skill: result.skill,
+        difficulty: result.difficulty,
+        time_estimate: result.timeEstimate,
+        why: result.why,
+        output_type: result.outputType,
+        recipe: result.recipe,
+        params: Object.keys(params).length ? params : null,
+      });
+
       return Response.json(result);
     } catch (err) {
       lastError = err;
