@@ -96,7 +96,7 @@ export const UI = {
     recipesNote:     "Gekoppelde recepten verschijnen met de receptenmodule.",
     sectionForaging: "Vind het in de buurt",
     foragingTag:     "Markten & plukken · binnenkort",
-    foragingNote:    "Boerenmarktschema's en (voor wilde soorten) veilige plekplekken komen hier.",
+    foragingNote:    "Boerenmarktschema's en (voor wilde soorten) veilige plekken komen hier.",
     difficultyEasy:   "Makkelijk",
     difficultyMedium: "Gemiddeld",
     difficultyHard:   "Moeilijk",
