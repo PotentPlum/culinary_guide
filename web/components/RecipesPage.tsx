@@ -181,7 +181,7 @@ export default function RecipesPage() {
     setRecipe(null);
 
     try {
-      const resized = await Promise.all(photoFiles.map(resizeToBase64));
+      const resized = await Promise.all(photoFiles.map((f) => resizeToBase64(f)));
       const res = await fetch("/api/recipe-from-images", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
