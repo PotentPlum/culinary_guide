@@ -15,7 +15,7 @@ When expanding the dataset, only add vegetables that are genuinely grown and har
 
 ## Data
 
-- `web/lib/vegetables.ts` — typed vegetable data (51 entries). This is the single source of truth. Read the JSDoc at the top of that file before adding entries.
+- `web/lib/vegetables.ts` — typed vegetable data (67 entries). This is the single source of truth. Read the JSDoc at the top of that file before adding entries.
 - `web/data/vegetables.json` — original Dutch source data from velt.nu (read-only reference).
 
 ## Stack
