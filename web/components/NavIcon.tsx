@@ -1,4 +1,5 @@
-type Props = { name: string };
+type IconName = "leaf" | "cal" | "book" | "swap" | "knife" | "home" | "compass" | "flame";
+type Props = { name: IconName | string };
 
 export default function NavIcon({ name }: Props) {
   const stroke = "currentColor";
@@ -32,6 +33,13 @@ export default function NavIcon({ name }: Props) {
       return (
         <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke={stroke} strokeWidth={sw} strokeLinecap="round" strokeLinejoin="round">
           <path d="M3 17l11-11 6 3-14 11z" /><path d="M3 17l3 3" />
+        </svg>
+      );
+    case "home":
+      return (
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke={stroke} strokeWidth={sw} strokeLinecap="round" strokeLinejoin="round">
+          <path d="M3 9.5L12 3l9 6.5V20a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9.5Z" />
+          <path d="M9 21V12h6v9" />
         </svg>
       );
     case "compass":

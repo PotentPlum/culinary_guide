@@ -12,12 +12,14 @@ import DetailPanel from "@/components/DetailPanel";
 import RecipesPage from "@/components/RecipesPage";
 import TechniquesPage from "@/components/TechniquesPage";
 import ChallengePage from "@/components/ChallengePage";
+import HomePage from "@/components/HomePage";
 
-type Page = "seasonal" | "calendar" | "recipes" | "technieken" | "challenge";
+type Page = "home" | "seasonal" | "calendar" | "recipes" | "technieken" | "challenge";
 type View = "grid" | "list";
 type Density = "cozy" | "comfortable" | "compact";
 
 const NAV_ITEMS = [
+  { id: "home",          label: "Home",               icon: "home",    ready: true },
   { id: "seasonal",      label: UI.nav.seasonal,      icon: "leaf",    ready: true },
   { id: "calendar",      label: UI.nav.calendar,      icon: "cal",     ready: true },
   { id: "recipes",       label: UI.nav.recipes,       icon: "book",    ready: true },
@@ -31,7 +33,7 @@ const STATUS_ORDER: Record<VegStatus, number> = { peak: 0, shoulder: 1, soon: 2,
 
 export default function App() {
   const month = new Date().getMonth() + 1;
-  const [page, setPage] = useState<Page>("seasonal");
+  const [page, setPage] = useState<Page>("home");
   const [filter, setFilter] = useState<Filter>("all");
   const [query, setQuery] = useState("");
   const [view, setView] = useState<View>("grid");
@@ -111,6 +113,14 @@ export default function App() {
 
       {/* Main content */}
       <main className="main">
+        {page === "home" && (
+          <HomePage
+            month={month}
+            onNavigate={(p) => setPage(p)}
+            onOpen={setOpenVeg}
+          />
+        )}
+
         {page === "seasonal" && (
           <div className="page seasonal">
             <header className="page-hero">

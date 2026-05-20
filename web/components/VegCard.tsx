@@ -38,7 +38,7 @@ export default function VegCard({ veg, month, density = "comfortable", onOpen, l
       <div className="veg-card-illus">
         <VegToken veg={veg} size={tokenSize} />
         <div className="veg-card-status">
-          <StatusDot status={status} withLabel />
+          <StatusDot status={status} />
         </div>
       </div>
       <div className="veg-card-text">
