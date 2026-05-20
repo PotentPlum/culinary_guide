@@ -1,9 +1,10 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import type { RecipeOutput } from "@/lib/recipeIngestion";
 import { UI } from "@/lib/strings";
 
+type Tab = "url" | "photo";
 type Phase = "idle" | "loading" | "error" | "done";
 
 type SavedRecipe = {
@@ -13,6 +14,10 @@ type SavedRecipe = {
 };
 
 const STORAGE_KEY = "mise-saved-recipes";
+const PHOTO_URL_PREFIX = "mise-photo:";
+const MAX_PHOTOS = 5;
+const MAX_PHOTO_BYTES = 10 * 1024 * 1024;
+const ACCEPTED_TYPES = ["image/jpeg", "image/png", "image/webp"];
 
 function loadLocalSaved(): SavedRecipe[] {
   if (typeof window === "undefined") return [];
@@ -70,7 +75,45 @@ async function saveRemote(item: SavedRecipe): Promise<void> {
   }
 }
 
+async function resizeToBase64(
+  file: File,
+  maxDim = 1200,
+  quality = 0.82,
+): Promise<{ data: string; mediaType: string }> {
+  return new Promise((resolve, reject) => {
+    const img = new Image();
+    const objectUrl = URL.createObjectURL(file);
+    img.onload = () => {
+      URL.revokeObjectURL(objectUrl);
+      let { width, height } = img;
+      if (width > maxDim || height > maxDim) {
+        if (width >= height) {
+          height = Math.round((height / width) * maxDim);
+          width = maxDim;
+        } else {
+          width = Math.round((width / height) * maxDim);
+          height = maxDim;
+        }
+      }
+      const canvas = document.createElement("canvas");
+      canvas.width = width;
+      canvas.height = height;
+      const ctx = canvas.getContext("2d");
+      if (!ctx) { reject(new Error("Canvas niet beschikbaar")); return; }
+      ctx.drawImage(img, 0, 0, width, height);
+      const dataUrl = canvas.toDataURL("image/jpeg", quality);
+      resolve({ data: dataUrl.split(",")[1], mediaType: "image/jpeg" });
+    };
+    img.onerror = () => {
+      URL.revokeObjectURL(objectUrl);
+      reject(new Error("Afbeelding kon niet worden geladen"));
+    };
+    img.src = objectUrl;
+  });
+}
+
 export default function RecipesPage() {
+  const [tab, setTab] = useState<Tab>("url");
   const [url, setUrl] = useState("");
   const [phase, setPhase] = useState<Phase>("idle");
   const [errorMsg, setErrorMsg] = useState("");
@@ -78,7 +121,10 @@ export default function RecipesPage() {
   const [activeUrl, setActiveUrl] = useState("");
   const [savedRecipes, setSavedRecipes] = useState<SavedRecipe[]>([]);
   const [saveError, setSaveError] = useState("");
+  const [photoFiles, setPhotoFiles] = useState<File[]>([]);
+  const [photoDrag, setPhotoDrag] = useState(false);
   const inputRef = useRef<HTMLInputElement>(null);
+  const fileInputRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
     setSavedRecipes(loadLocalSaved());
@@ -86,6 +132,14 @@ export default function RecipesPage() {
       if (remote.length > 0) setSavedRecipes(remote);
     });
   }, []);
+
+  function handleTabChange(newTab: Tab) {
+    setTab(newTab);
+    if (phase === "error") {
+      setPhase("idle");
+      setErrorMsg("");
+    }
+  }
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
@@ -119,12 +173,44 @@ export default function RecipesPage() {
     }
   }
 
+  async function handlePhotoSubmit() {
+    if (photoFiles.length === 0) return;
+
+    setPhase("loading");
+    setErrorMsg("");
+    setRecipe(null);
+
+    try {
+      const resized = await Promise.all(photoFiles.map(resizeToBase64));
+      const res = await fetch("/api/recipe-from-images", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ images: resized }),
+      });
+      const data = (await res.json()) as RecipeOutput & { error?: string };
+
+      if (!res.ok) {
+        setPhase("error");
+        setErrorMsg(data.error ?? UI.recipes.errorFallback);
+        return;
+      }
+
+      setRecipe(data);
+      setActiveUrl(`${PHOTO_URL_PREFIX}${Date.now()}`);
+      setPhase("done");
+    } catch {
+      setPhase("error");
+      setErrorMsg(UI.recipes.errorNetwork);
+    }
+  }
+
   function handleReset() {
     setPhase("idle");
     setRecipe(null);
     setErrorMsg("");
     setUrl("");
     setActiveUrl("");
+    setPhotoFiles([]);
     setTimeout(() => inputRef.current?.focus(), 0);
   }
 
@@ -134,6 +220,7 @@ export default function RecipesPage() {
     const item: SavedRecipe = { url: activeUrl, recipe, savedAt: Date.now() };
     const updated = [item, ...savedRecipes.filter((r) => r.url !== activeUrl)];
     setSavedRecipes(updated);
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(updated));
     try {
       await saveRemote(item);
     } catch (err) {
@@ -144,17 +231,42 @@ export default function RecipesPage() {
   function handleRemoveSaved(savedUrl: string) {
     const updated = savedRecipes.filter((r) => r.url !== savedUrl);
     setSavedRecipes(updated);
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(updated));
   }
 
   function handleLoadSaved(saved: SavedRecipe) {
     setRecipe(saved.recipe);
     setActiveUrl(saved.url);
-    setUrl(saved.url);
+    setUrl(saved.url.startsWith(PHOTO_URL_PREFIX) ? "" : saved.url);
     setPhase("done");
     setErrorMsg("");
   }
 
+  function addFiles(incoming: FileList | null) {
+    if (!incoming) return;
+    const valid = Array.from(incoming).filter(
+      (f) => ACCEPTED_TYPES.includes(f.type) && f.size <= MAX_PHOTO_BYTES,
+    );
+    setPhotoFiles((prev) => {
+      const merged = [...prev, ...valid];
+      return merged.slice(0, MAX_PHOTOS);
+    });
+  }
+
+  function handleDropzoneDrop(e: React.DragEvent) {
+    e.preventDefault();
+    setPhotoDrag(false);
+    addFiles(e.dataTransfer.files);
+  }
+
+  // Stable object URLs — created once per File reference, revoked when files are removed or component unmounts
+  const photoObjectUrls = useMemo(() => photoFiles.map((f) => URL.createObjectURL(f)), [photoFiles]);
+  useEffect(() => {
+    return () => { photoObjectUrls.forEach((u) => URL.revokeObjectURL(u)); };
+  }, [photoObjectUrls]);
+
   const isSaved = savedRecipes.some((r) => r.url === activeUrl);
+  const subtitle = tab === "photo" ? UI.recipes.pageSubtitlePhoto : UI.recipes.pageSubtitle;
 
   return (
     <div className="page recipes-page">
@@ -162,38 +274,122 @@ export default function RecipesPage() {
         <h1 className="hero-title">
           Recept <em>inladen</em>
         </h1>
-        <p className="hero-sub">{UI.recipes.pageSubtitle}</p>
+        <p className="hero-sub">{subtitle}</p>
       </header>
 
-      <form className="recipe-import-form" onSubmit={handleSubmit}>
-        <div className="recipe-import-row">
+      <div className="recipe-tabs">
+        <button
+          type="button"
+          className={`recipe-tab${tab === "url" ? " recipe-tab--active" : ""}`}
+          onClick={() => handleTabChange("url")}
+        >
+          {UI.recipes.tabUrl}
+        </button>
+        <button
+          type="button"
+          className={`recipe-tab${tab === "photo" ? " recipe-tab--active" : ""}`}
+          onClick={() => handleTabChange("photo")}
+        >
+          {UI.recipes.tabPhoto}
+        </button>
+      </div>
+
+      {tab === "url" && (
+        <form className="recipe-import-form" onSubmit={handleSubmit}>
+          <div className="recipe-import-row">
+            <input
+              ref={inputRef}
+              type="url"
+              className="recipe-import-input"
+              value={url}
+              onChange={(e) => setUrl(e.target.value)}
+              placeholder={UI.recipes.inputPlaceholder}
+              aria-label={UI.recipes.inputLabel}
+              required
+              disabled={phase === "loading"}
+              autoFocus
+            />
+            <button
+              type="submit"
+              className="recipe-import-btn"
+              disabled={phase === "loading" || !url.trim()}
+            >
+              {phase === "loading" ? UI.recipes.loadingBtn : UI.recipes.submitBtn}
+            </button>
+          </div>
+          <p className="recipe-import-hint">{UI.recipes.hintText}</p>
+        </form>
+      )}
+
+      {tab === "photo" && (
+        <div className="recipe-import-form">
           <input
-            ref={inputRef}
-            type="url"
-            className="recipe-import-input"
-            value={url}
-            onChange={(e) => setUrl(e.target.value)}
-            placeholder={UI.recipes.inputPlaceholder}
-            aria-label={UI.recipes.inputLabel}
-            required
-            disabled={phase === "loading"}
-            autoFocus
+            ref={fileInputRef}
+            type="file"
+            accept="image/jpeg,image/png,image/webp"
+            multiple
+            style={{ display: "none" }}
+            onChange={(e) => addFiles(e.target.files)}
           />
-          <button
-            type="submit"
-            className="recipe-import-btn"
-            disabled={phase === "loading" || !url.trim()}
+
+          <div
+            className={`recipe-photo-zone${photoDrag ? " recipe-photo-zone--drag" : ""}`}
+            onClick={() => fileInputRef.current?.click()}
+            onDragOver={(e) => { e.preventDefault(); setPhotoDrag(true); }}
+            onDragLeave={() => setPhotoDrag(false)}
+            onDrop={handleDropzoneDrop}
+            role="button"
+            tabIndex={0}
+            onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") fileInputRef.current?.click(); }}
+            aria-label={UI.recipes.photoDropzone}
           >
-            {phase === "loading" ? UI.recipes.loadingBtn : UI.recipes.submitBtn}
-          </button>
+            <p className="recipe-photo-zone-label">{UI.recipes.photoDropzone}</p>
+            <p className="recipe-import-hint">{UI.recipes.photoHint}</p>
+          </div>
+
+          {photoFiles.length > 0 && (
+            <ul className="recipe-photo-list" aria-label="Geselecteerde foto's">
+              {photoFiles.map((file, i) => (
+                  <li key={photoObjectUrls[i]} className="recipe-photo-item">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
+                      src={photoObjectUrls[i]}
+                      alt={file.name}
+                      className="recipe-photo-thumb"
+                    />
+                    <button
+                      type="button"
+                      className="recipe-photo-remove"
+                      aria-label={`Verwijder ${file.name}`}
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        setPhotoFiles((prev) => prev.filter((_, j) => j !== i));
+                      }}
+                    >
+                      ×
+                    </button>
+                  </li>
+              ))}
+            </ul>
+          )}
+
+          <div className="recipe-photo-actions">
+            <button
+              type="button"
+              className="recipe-photo-submit"
+              disabled={phase === "loading" || photoFiles.length === 0}
+              onClick={handlePhotoSubmit}
+            >
+              {phase === "loading" ? UI.recipes.loadingBtn : UI.recipes.photoSubmitBtn}
+            </button>
+          </div>
         </div>
-        <p className="recipe-import-hint">{UI.recipes.hintText}</p>
-      </form>
+      )}
 
       {phase === "loading" && (
         <div className="recipe-state-loading" aria-live="polite">
           <div className="recipe-spinner" aria-hidden="true" />
-          <span>{UI.recipes.loadingMsg}</span>
+          <span>{tab === "photo" ? UI.recipes.photoLoadingMsg : UI.recipes.loadingMsg}</span>
         </div>
       )}
 
@@ -244,10 +440,15 @@ function SavedRecipesList({
       <h2 className="recipe-saved-heading">{UI.recipes.savedSection}</h2>
       <ul className="recipe-saved-list">
         {savedRecipes.map((saved) => {
-          let domain = saved.url;
-          try {
-            domain = new URL(saved.url).hostname.replace(/^www\./, "");
-          } catch {}
+          let domain: string;
+          if (saved.url.startsWith(PHOTO_URL_PREFIX)) {
+            domain = UI.recipes.photoSource;
+          } else {
+            domain = saved.url;
+            try {
+              domain = new URL(saved.url).hostname.replace(/^www\./, "");
+            } catch {}
+          }
           const date = new Date(saved.savedAt).toLocaleDateString("nl-NL", {
             day: "numeric",
             month: "long",
@@ -351,7 +552,7 @@ function RecipeResult({
           <h3 className="recipe-col-title">{UI.recipes.sectionIngredients}</h3>
           {recipe.ingredientSections.map((section, si) => (
             <div key={si} className="recipe-section">
-              {!(section.sectionName === "Ingredients" && recipe.ingredientSections.length === 1) && (
+              {!(section.sectionName === UI.recipes.sectionIngredients && recipe.ingredientSections.length === 1) && (
                 <div className="recipe-section-name">{section.sectionName}</div>
               )}
               <ul className="recipe-ing-list">
@@ -368,7 +569,7 @@ function RecipeResult({
           <h3 className="recipe-col-title">{UI.recipes.sectionInstructions}</h3>
           {recipe.instructionSections.map((section, si) => (
             <div key={si} className="recipe-section">
-              {!(section.sectionName === "Instructions" && recipe.instructionSections.length === 1) && (
+              {!(section.sectionName === UI.recipes.sectionInstructions && recipe.instructionSections.length === 1) && (
                 <div className="recipe-section-name">{section.sectionName}</div>
               )}
               {section.steps.map((step) => (
