@@ -45,10 +45,10 @@ export default function CalendarPage({ month, onOpen }: Props) {
         <div className="hero-eyebrow">
           <span className="hero-loc">{UI.hero.eyebrowLoc}</span>
           <span className="hero-dot">·</span>
-          <span>Jaar in één oogopslag</span>
+          <span>{UI.calendar.eyebrowSub}</span>
         </div>
-        <h1 className="hero-title">De <em>kalender</em></h1>
-        <p className="hero-sub">Wanneer elke groente zijn hoogtepunt bereikt. Gevuld = op zijn best, half = beschikbaar.</p>
+        <h1 className="hero-title">{UI.calendar.title} <em>{UI.calendar.titleEm}</em></h1>
+        <p className="hero-sub">{UI.calendar.heroSub}</p>
       </header>
 
       <div className="cal-table">
