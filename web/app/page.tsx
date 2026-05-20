@@ -122,6 +122,7 @@ export default function App() {
               <h1 className="hero-title">
                 {UI.hero.title} <em>{UI.hero.titleEm}</em>
               </h1>
+              <p className="hero-sub">{UI.hero.heroSub}</p>
               <div className="hero-stats">
                 <span className="hero-stat hero-stat--peak">
                   <span className="hero-stat-num">{counts.peak}</span>
