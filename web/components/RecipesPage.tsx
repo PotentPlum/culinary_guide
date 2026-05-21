@@ -3,6 +3,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import type { RecipeOutput } from "@/lib/recipeIngestion";
 import { UI } from "@/lib/strings";
+import { FACETS, type FacetKey, type RecipeTags, getCuisineColor } from "@/lib/facets";
 
 type Tab = "url" | "photo";
 type Phase = "idle" | "loading" | "error" | "done";
@@ -15,6 +16,7 @@ type SavedRecipe = {
   recipe: RecipeOutput;
   savedAt: number;
   remoteId?: string;     // Supabase row ID, set after list
+  tags?: RecipeTags;
 };
 
 const STORAGE_KEY = "mise-saved-recipes";
@@ -23,20 +25,16 @@ const MAX_PHOTOS = 5;
 const MAX_PHOTO_BYTES = 10 * 1024 * 1024;
 const ACCEPTED_TYPES = ["image/jpeg", "image/png", "image/webp"];
 
-const CUISINE_COLORS: Record<string, string> = {
-  "Italiaans": "#C25B2A",
-  "Frans": "#2A6BB9",
-  "Aziatisch": "#B92A6B",
-  "Nederlands": "#3F5E2A",
-  "Mexicaans": "#B98A2A",
-  "Grieks": "#2A8AB9",
-  "Spaans": "#B9622A",
-  "Indiaas": "#B98A2A",
-};
-
-function getCuisineAccent(recipe: RecipeOutput): string | undefined {
-  for (const c of toArray(recipe.cuisine)) {
-    if (CUISINE_COLORS[c]) return CUISINE_COLORS[c];
+function getAccentColor(saved: SavedRecipe): string | undefined {
+  const cuisineTags = saved.tags?.cuisine ?? [];
+  for (const c of cuisineTags) {
+    const color = getCuisineColor(c);
+    if (color) return color;
+  }
+  // Fall back to Schema.org cuisine field
+  for (const c of toArray(saved.recipe.cuisine)) {
+    const color = getCuisineColor(c);
+    if (color) return color;
   }
   return undefined;
 }
@@ -59,7 +57,7 @@ async function fetchRemoteSaved(): Promise<SavedRecipe[]> {
   try {
     const res = await fetch("/api/recipes/list");
     if (!res.ok) return [];
-    const json = (await res.json()) as { recipes: Array<{ id: string; name: string; instructions: string; source_url: string; source: string; created_at: string }> };
+    const json = (await res.json()) as { recipes: Array<{ id: string; name: string; instructions: string; source_url: string; source: string; tags?: RecipeTags; created_at: string }> };
     return (json.recipes ?? []).map((row) => {
       let recipe: RecipeOutput;
       try {
@@ -78,7 +76,14 @@ async function fetchRemoteSaved(): Promise<SavedRecipe[]> {
           instructionSections: [],
         };
       }
-      return { url: row.source_url, source: row.source ?? deriveDomain(row.source_url), recipe, savedAt: new Date(row.created_at).getTime(), remoteId: row.id };
+      return {
+        url: row.source_url,
+        source: row.source ?? deriveDomain(row.source_url),
+        recipe,
+        savedAt: new Date(row.created_at).getTime(),
+        remoteId: row.id,
+        tags: row.tags ?? {},
+      };
     });
   } catch {
     return [];
@@ -95,6 +100,7 @@ async function saveRemote(item: SavedRecipe): Promise<void> {
       instructions: JSON.stringify(item.recipe),
       source_url: item.url,
       source: item.source,
+      tags: item.tags ?? {},
     }),
   });
   if (!res.ok) {
@@ -158,6 +164,9 @@ export default function RecipesPage() {
   const [searchQuery, setSearchQuery] = useState("");
   const [sortOrder, setSortOrder] = useState<SortOrder>("date-desc");
   const [editTarget, setEditTarget] = useState<SavedRecipe | null>(null);
+  const [facetFilters, setFacetFilters] = useState<Partial<Record<FacetKey, string[]>>>({});
+  const [filterOpen, setFilterOpen] = useState(false);
+  const [pendingTags, setPendingTags] = useState<RecipeTags>({});
   const inputRef = useRef<HTMLInputElement>(null);
   const fileInputRef = useRef<HTMLInputElement>(null);
   const sourceRef = useRef<HTMLInputElement>(null);
@@ -200,6 +209,7 @@ export default function RecipesPage() {
     setPhase("loading");
     setErrorMsg("");
     setRecipe(null);
+    setPendingTags({});
 
     try {
       const res = await fetch("/api/recipe", {
@@ -232,6 +242,7 @@ export default function RecipesPage() {
     setPhase("loading");
     setErrorMsg("");
     setRecipe(null);
+    setPendingTags({});
 
     try {
       const resized = await Promise.all(photoFiles.map((f) => resizeToBase64(f)));
@@ -240,7 +251,7 @@ export default function RecipesPage() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ images: resized }),
       });
-      const data = (await res.json()) as RecipeOutput & { error?: string };
+      const data = (await res.json()) as RecipeOutput & { tags?: RecipeTags; error?: string };
 
       if (!res.ok) {
         setPhase("error");
@@ -249,6 +260,7 @@ export default function RecipesPage() {
       }
 
       setRecipe(data);
+      setPendingTags(data.tags ?? {});
       setActiveUrl(`${PHOTO_URL_PREFIX}${Date.now()}`);
       setPhase("done");
       setAddOpen(false);
@@ -268,6 +280,7 @@ export default function RecipesPage() {
     setPhotoFiles([]);
     setPendingSource("");
     setSourceManuallyEdited(false);
+    setPendingTags({});
     setView("library");
     setAddOpen(false);
     setTimeout(() => inputRef.current?.focus(), 0);
@@ -281,6 +294,7 @@ export default function RecipesPage() {
       source: pendingSource.trim() || deriveDomain(activeUrl),
       recipe,
       savedAt: Date.now(),
+      tags: pendingTags,
     };
     const updated = [item, ...savedRecipes.filter((r) => r.url !== activeUrl)];
     setSavedRecipes(updated);
@@ -302,6 +316,7 @@ export default function RecipesPage() {
     setRecipe(saved.recipe);
     setActiveUrl(saved.url);
     setUrl(saved.url.startsWith(PHOTO_URL_PREFIX) ? "" : saved.url);
+    setPendingTags(saved.tags ?? {});
     setPhase("done");
     setErrorMsg("");
     setView("detail");
@@ -323,6 +338,7 @@ export default function RecipesPage() {
             ingredients: updated.recipe.ingredientSections.flatMap(s => s.ingredients),
             instructions: JSON.stringify(updated.recipe),
             source: updated.source,
+            tags: updated.tags ?? {},
           }),
         });
       } catch { /* silent */ }
@@ -353,15 +369,29 @@ export default function RecipesPage() {
 
   const isSaved = savedRecipes.some((r) => r.url === activeUrl);
 
+  const activeFilterCount = Object.values(facetFilters).filter(v => v && v.length > 0).length;
+
   const filteredRecipes = useMemo(() => {
-    const list = searchQuery.trim()
+    let list = searchQuery.trim()
       ? savedRecipes.filter(r => r.recipe.title.toLowerCase().includes(searchQuery.toLowerCase()))
       : [...savedRecipes];
+
+    const activeFilters = Object.entries(facetFilters).filter(([, vals]) => vals && vals.length > 0) as [FacetKey, string[]][];
+    if (activeFilters.length > 0) {
+      list = list.filter(r => {
+        if (!r.tags || Object.keys(r.tags).length === 0) return false;
+        return activeFilters.every(([key, vals]) => {
+          const recipeFacetVals = r.tags?.[key] ?? [];
+          return vals.some(v => recipeFacetVals.includes(v));
+        });
+      });
+    }
+
     if (sortOrder === "date-asc") list.sort((a, b) => a.savedAt - b.savedAt);
     else if (sortOrder === "alpha-asc") list.sort((a, b) => a.recipe.title.localeCompare(b.recipe.title, "nl"));
     else list.sort((a, b) => b.savedAt - a.savedAt);
     return list;
-  }, [savedRecipes, searchQuery, sortOrder]);
+  }, [savedRecipes, searchQuery, sortOrder, facetFilters]);
 
   // ── Detail view ─────────────────────────────────────────────────────────────
   if (view === "detail" && recipe) {
@@ -452,7 +482,7 @@ export default function RecipesPage() {
           )}
         </div>
 
-        {/* Search + Sort controls */}
+        {/* Search + Sort + Filter controls */}
         {savedRecipes.length > 1 && (
           <div className="rl-header-controls">
             {savedRecipes.length > 2 && (
@@ -494,9 +524,31 @@ export default function RecipesPage() {
                 <option value="alpha-asc">{UI.recipes.sortAlpha}</option>
               </select>
             </div>
+            <button
+              className={`rl-filter-btn${activeFilterCount > 0 ? " rl-filter-btn--active" : ""}`}
+              onClick={() => setFilterOpen(v => !v)}
+              aria-expanded={filterOpen}
+              type="button"
+            >
+              <svg width="13" height="13" viewBox="0 0 13 13" fill="none" aria-hidden="true">
+                <path d="M2 3.5h9M4 6.5h5M6 9.5h1" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round"/>
+              </svg>
+              {UI.recipes.facetFilterLabel}
+              {activeFilterCount > 0 && (
+                <span className="rl-filter-btn-count">{activeFilterCount}</span>
+              )}
+            </button>
           </div>
         )}
       </header>
+
+      {/* Facet filter bar */}
+      {filterOpen && savedRecipes.length > 1 && (
+        <FacetFilterBar
+          filters={facetFilters}
+          onChange={setFacetFilters}
+        />
+      )}
 
       {/* Error state */}
       {phase === "error" && (
@@ -537,17 +589,23 @@ export default function RecipesPage() {
               onOpen={handleOpenRecipe}
               onRemove={handleRemoveSaved}
               onEdit={setEditTarget}
-              accentColor={getCuisineAccent(saved.recipe)}
+              accentColor={getAccentColor(saved)}
             />
           ))}
         </div>
       )}
 
-      {/* No results for search */}
-      {filteredRecipes.length === 0 && savedRecipes.length > 0 && searchQuery && (
+      {/* No results for search or filter */}
+      {filteredRecipes.length === 0 && savedRecipes.length > 0 && (searchQuery || activeFilterCount > 0) && (
         <div className="rl-no-results">
-          <p>Geen recepten gevonden voor &ldquo;{searchQuery}&rdquo;</p>
-          <button className="rl-error-retry" onClick={() => setSearchQuery("")}>Wis zoekopdracht</button>
+          <p>
+            {searchQuery
+              ? `Geen recepten gevonden voor "${searchQuery}"`
+              : "Geen recepten gevonden met deze filters"}
+          </p>
+          <button className="rl-error-retry" onClick={() => { setSearchQuery(""); setFacetFilters({}); }}>
+            Wis zoekopdracht en filters
+          </button>
         </div>
       )}
 
@@ -604,6 +662,7 @@ export default function RecipesPage() {
                     {UI.recipes.labelSource}
                   </label>
                   <input
+                    ref={sourceRef}
                     id="url-source-input"
                     type="text"
                     className="rl-add-input"
@@ -730,6 +789,60 @@ export default function RecipesPage() {
   );
 }
 
+// ─── Facet filter bar ──────────────────────────────────────────────────────────
+
+function FacetFilterBar({
+  filters,
+  onChange,
+}: {
+  filters: Partial<Record<FacetKey, string[]>>;
+  onChange: (filters: Partial<Record<FacetKey, string[]>>) => void;
+}) {
+  const hasActive = Object.values(filters).some(v => v && v.length > 0);
+
+  function toggle(facetKey: FacetKey, value: string) {
+    const current = filters[facetKey] ?? [];
+    const next = current.includes(value)
+      ? current.filter(v => v !== value)
+      : [...current, value];
+    onChange({ ...filters, [facetKey]: next });
+  }
+
+  return (
+    <div className="rl-facet-bar">
+      {FACETS.map(facet => (
+        <div key={facet.key} className="rl-facet-group">
+          <span className="rl-facet-group-label">{facet.nl}</span>
+          <div className="rl-facet-pills">
+            {facet.options.map(option => {
+              const active = (filters[facet.key] ?? []).includes(option.value);
+              return (
+                <button
+                  key={option.value}
+                  className={`rl-facet-pill${active ? " rl-facet-pill--active" : ""}`}
+                  onClick={() => toggle(facet.key, option.value)}
+                  type="button"
+                >
+                  {option.nl}
+                </button>
+              );
+            })}
+          </div>
+        </div>
+      ))}
+      {hasActive && (
+        <button
+          className="rl-facet-reset"
+          onClick={() => onChange({})}
+          type="button"
+        >
+          {UI.recipes.facetFilterReset}
+        </button>
+      )}
+    </div>
+  );
+}
+
 // ─── Recipe card ──────────────────────────────────────────────────────────────
 
 function RecipeCard({
@@ -758,9 +871,17 @@ function RecipeCard({
 
   const totalTime = saved.recipe.totalTimeMinutes ?? saved.recipe.cookTimeMinutes ?? null;
 
-  const cuisines = toArray(saved.recipe.cuisine);
-  const categories = toArray(saved.recipe.category);
-  const tags = [...cuisines, ...categories].slice(0, 2);
+  // Prefer structured facet tags; fall back to Schema.org cuisine/category
+  const displayTags: string[] = (() => {
+    if (saved.tags && Object.keys(saved.tags).length > 0) {
+      const parts: string[] = [
+        ...(saved.tags.dishType ?? []).slice(0, 1),
+        ...(saved.tags.mainIngredient ?? []).slice(0, 1),
+      ];
+      return parts.length > 0 ? parts : Object.values(saved.tags).flat().slice(0, 2);
+    }
+    return [...toArray(saved.recipe.cuisine), ...toArray(saved.recipe.category)].slice(0, 2);
+  })();
 
   return (
     <article
@@ -804,7 +925,7 @@ function RecipeCard({
 
         <div className="rl-card-footer">
           <div className="rl-card-tags">
-            {tags.map((tag) => (
+            {displayTags.map((tag) => (
               <span key={tag} className="rl-card-tag">{tag}</span>
             ))}
           </div>
@@ -872,6 +993,7 @@ function EditRecipePanel({
     target.recipe.instructionSections.flatMap(s => s.steps.map(st => st.text)).join("\n")
   );
   const [sourceVal, setSourceVal] = useState(target.source || deriveDomain(target.url));
+  const [tagsVal, setTagsVal] = useState<RecipeTags>(target.tags ?? {});
 
   useEffect(() => {
     function onKey(e: KeyboardEvent) {
@@ -881,6 +1003,14 @@ function EditRecipePanel({
     return () => document.removeEventListener("keydown", onKey);
   }, [onClose]);
 
+  function toggleTag(facetKey: FacetKey, value: string) {
+    const current = tagsVal[facetKey] ?? [];
+    const next = current.includes(value)
+      ? current.filter(v => v !== value)
+      : [...current, value];
+    setTagsVal(prev => ({ ...prev, [facetKey]: next }));
+  }
+
   function handleSave() {
     const updatedRecipe: RecipeOutput = {
       ...target.recipe,
@@ -889,7 +1019,12 @@ function EditRecipePanel({
       ingredientSections: [{ sectionName: UI.recipes.sectionIngredients, ingredients: ingredientsVal.split("\n").map(s => s.trim()).filter(Boolean) }],
       instructionSections: [{ sectionName: UI.recipes.sectionInstructions, steps: instructionsVal.split("\n").map(s => s.trim()).filter(Boolean).map((text, i) => ({ stepNumber: i + 1, text })) }],
     };
-    const updated: SavedRecipe = { ...target, recipe: updatedRecipe, source: sourceVal.trim() || deriveDomain(target.url) };
+    const updated: SavedRecipe = {
+      ...target,
+      recipe: updatedRecipe,
+      source: sourceVal.trim() || deriveDomain(target.url),
+      tags: tagsVal,
+    };
     onSave(updated);
   }
 
@@ -946,6 +1081,31 @@ function EditRecipePanel({
               value={sourceVal}
               onChange={(e) => setSourceVal(e.target.value)}
             />
+          </div>
+          <div className="rl-edit-field">
+            <label className="rl-edit-label">{UI.recipes.editLabelTags}</label>
+            <div className="rl-edit-facets">
+              {FACETS.map(facet => (
+                <div key={facet.key} className="rl-edit-facet-group">
+                  <span className="rl-edit-facet-label">{facet.nl}</span>
+                  <div className="rl-edit-facet-pills">
+                    {facet.options.map(option => {
+                      const active = (tagsVal[facet.key] ?? []).includes(option.value);
+                      return (
+                        <button
+                          key={option.value}
+                          type="button"
+                          className={`rl-edit-facet-pill${active ? " rl-edit-facet-pill--active" : ""}`}
+                          onClick={() => toggleTag(facet.key, option.value)}
+                        >
+                          {option.nl}
+                        </button>
+                      );
+                    })}
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
         <div className="rl-edit-footer">

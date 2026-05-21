@@ -7,7 +7,7 @@ export async function PATCH(req: NextRequest, { params }: { params: Promise<{ id
   try { body = await req.json(); } catch {
     return Response.json({ error: "Ongeldig verzoekformaat." }, { status: 400 });
   }
-  const { name, ingredients, instructions, source } = body as Record<string, unknown>;
+  const { name, ingredients, instructions, source, tags } = body as Record<string, unknown>;
   if (!name || !instructions) {
     return Response.json({ error: "Naam en instructies zijn verplicht." }, { status: 400 });
   }
@@ -18,6 +18,7 @@ export async function PATCH(req: NextRequest, { params }: { params: Promise<{ id
       ingredients: Array.isArray(ingredients) ? (ingredients as string[]) : [],
       instructions: instructions as string,
       source: typeof source === "string" ? source : "",
+      tags: tags && typeof tags === "object" ? tags : {},
     })
     .eq("id", id)
     .select()
