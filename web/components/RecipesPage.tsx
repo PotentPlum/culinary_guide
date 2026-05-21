@@ -987,6 +987,29 @@ function RecipeDetail({ recipe }: { recipe: RecipeOutput }) {
   const [servings, setServings] = useState<number>(baseServings);
   const ratio = servings / baseServings;
 
+  const [cookingMode, setCookingMode] = useState(false);
+  const [wakeLockUnsupported, setWakeLockUnsupported] = useState(false);
+
+  useEffect(() => {
+    if (!cookingMode) return;
+    if (!('wakeLock' in navigator)) {
+      setWakeLockUnsupported(true);
+      setCookingMode(false);
+      return;
+    }
+    let sentinel: WakeLockSentinel | null = null;
+    navigator.wakeLock.request('screen')
+      .then(s => {
+        sentinel = s;
+        s.addEventListener('release', () => setCookingMode(false));
+      })
+      .catch(() => {
+        setWakeLockUnsupported(true);
+        setCookingMode(false);
+      });
+    return () => { sentinel?.release(); };
+  }, [cookingMode]);
+
   useEffect(() => { setServings(recipe.servings ?? 4); }, [recipe]);
 
   function toggleChecked(key: string) {
@@ -1049,6 +1072,27 @@ function RecipeDetail({ recipe }: { recipe: RecipeOutput }) {
                 aria-label={UI.recipes.servingsIncrease}
               >+</button>
             </div>
+          </div>
+
+          <div className="rl-cooking-mode-row">
+            <span className="rl-cooking-mode-text">
+              {UI.recipes.cookingMode}
+              {cookingMode && (
+                <span className="rl-cooking-mode-active-label">{UI.recipes.cookingModeActive}</span>
+              )}
+              {wakeLockUnsupported && (
+                <span className="rl-cooking-mode-unsupported">{UI.recipes.cookingModeUnsupported}</span>
+              )}
+            </span>
+            <button
+              role="switch"
+              aria-checked={cookingMode}
+              className={`rl-cooking-mode-switch${cookingMode ? " rl-cooking-mode-switch--on" : ""}`}
+              onClick={() => { setWakeLockUnsupported(false); setCookingMode(v => !v); }}
+              aria-label={UI.recipes.cookingMode}
+            >
+              <span className="rl-cooking-mode-thumb" />
+            </button>
           </div>
         </div>
       </header>

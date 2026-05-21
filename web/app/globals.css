@@ -2080,6 +2080,77 @@ body.sans-display .recipe-title { font-family: var(--sans); font-style: normal; 
   line-height: 1;
 }
 
+/* ── Cooking mode toggle ── */
+.rl-cooking-mode-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 14px;
+  padding-top: 14px;
+  border-top: 1px solid var(--line);
+}
+.rl-cooking-mode-text {
+  font-family: var(--mono);
+  font-size: 9.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--ink-soft);
+  opacity: 0.65;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.rl-cooking-mode-active-label {
+  font-family: var(--mono);
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--primary);
+  opacity: 1;
+  background: color-mix(in srgb, var(--primary) 12%, transparent);
+  padding: 2px 7px;
+  border-radius: var(--radius-pill);
+}
+.rl-cooking-mode-unsupported {
+  font-family: var(--mono);
+  font-size: 9px;
+  text-transform: none;
+  letter-spacing: 0;
+  color: var(--ink-soft);
+  opacity: 0.7;
+}
+.rl-cooking-mode-switch {
+  position: relative;
+  width: 40px;
+  height: 22px;
+  border-radius: var(--radius-pill);
+  border: 1.5px solid var(--line-strong);
+  background: var(--surface-card);
+  cursor: pointer;
+  padding: 0;
+  flex-shrink: 0;
+  transition: background 200ms, border-color 200ms;
+}
+.rl-cooking-mode-switch--on {
+  background: var(--primary);
+  border-color: var(--primary);
+}
+.rl-cooking-mode-thumb {
+  position: absolute;
+  top: 50%;
+  left: 3px;
+  transform: translateY(-50%);
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--line-strong);
+  transition: left 200ms, background 200ms;
+}
+.rl-cooking-mode-switch--on .rl-cooking-mode-thumb {
+  left: calc(100% - 17px);
+  background: var(--surface);
+}
+
 /* ── Responsive ── */
 @media (max-width: 880px) {
   .rl-detail-body { grid-template-columns: 1fr; }
