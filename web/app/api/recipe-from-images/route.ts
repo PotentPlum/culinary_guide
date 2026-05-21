@@ -2,6 +2,8 @@ import type { NextRequest } from "next/server";
 import type { RecipeOutput } from "@/lib/recipeIngestion";
 
 const MAX_IMAGES = 5;
+// ~500 KB base64 ≈ 375 KB image ≈ roughly an 800×600 JPEG at 0.75 quality
+const MAX_BASE64_BYTES = 500_000;
 const ALLOWED_MEDIA_TYPES = ["image/jpeg", "image/png", "image/webp"] as const;
 type AllowedMediaType = (typeof ALLOWED_MEDIA_TYPES)[number];
 
@@ -126,6 +128,9 @@ export async function POST(req: NextRequest) {
   for (const img of images) {
     if (!ALLOWED_MEDIA_TYPES.includes(img.mediaType as AllowedMediaType)) {
       return Response.json({ error: "Alleen JPEG, PNG en WebP zijn toegestaan." }, { status: 400 });
+    }
+    if (img.data.length > MAX_BASE64_BYTES) {
+      return Response.json({ error: "Afbeelding te groot — verklein de foto voor het uploaden." }, { status: 400 });
     }
   }
 
