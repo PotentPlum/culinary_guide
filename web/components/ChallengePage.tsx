@@ -135,12 +135,11 @@ export default function ChallengePage() {
             min={1}
             className="challenge-quantity-input"
             value={params.quantity ?? ""}
-            onChange={(e) => {
-              const val = e.target.value;
-              setParam("quantity", val ? Math.max(1, Number(val)) : undefined);
+            onChange={(e) => setParam("quantity", e.target.value ? Number(e.target.value) : undefined)}
+            onBlur={() => {
+              if (params.quantity !== undefined && params.quantity < 1) setParam("quantity", 1);
             }}
             placeholder={UI.challenge.quantityPlaceholder}
-            aria-label={UI.challenge.quantityLabel}
             disabled={phase === "loading"}
           />
           <select
