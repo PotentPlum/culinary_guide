@@ -105,8 +105,8 @@ async function saveRemote(item: SavedRecipe): Promise<void> {
 
 async function resizeToBase64(
   file: File,
-  maxDim = 1200,
-  quality = 0.82,
+  maxDim = 800,
+  quality = 0.75,
 ): Promise<{ data: string; mediaType: string }> {
   return new Promise((resolve, reject) => {
     const img = new Image();
