@@ -4,6 +4,7 @@ import { useRef, useState } from "react";
 import type { ChallengeResponse, ChallengeParams } from "@/lib/types";
 import { UI } from "@/lib/strings";
 import { TECHNIQUES } from "@/lib/techniques";
+import { getFacet } from "@/lib/facets";
 
 type Phase = "idle" | "loading" | "error" | "done";
 
@@ -13,11 +14,7 @@ const DIFFICULTY: Record<ChallengeResponse["difficulty"], { label: string; cls: 
   Advanced:     { label: UI.challenge.difficultyAdvanced,     cls: "challenge-badge--advanced" },
 };
 
-const CUISINES = [
-  "Aziatisch", "Chinees", "Frans", "Grieks", "Indiaas", "Italiaans",
-  "Japans", "Koreaans", "Latijns-Amerikaans", "Midden-Oosten",
-  "Nederlands", "Mexicaans", "Noord-Afrikaans", "Spaans", "Thai",
-];
+const CUISINES = getFacet("cuisine").options.map((o) => o.value);
 
 const TIME_OPTIONS: { value: ChallengeParams["timeLimit"]; label: string }[] = [
   { value: undefined, label: UI.challenge.timeLimitAny },
