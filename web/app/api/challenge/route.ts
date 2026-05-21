@@ -1,6 +1,12 @@
 import type { NextRequest } from "next/server";
 import type { ChallengeResponse, ChallengeParams } from "@/lib/types";
 import { supabase } from "@/lib/supabase";
+import { getFacet } from "@/lib/facets";
+
+const DISH_TYPES   = getFacet("dishType").options.map((o) => o.value).join(", ");
+const CUISINES     = getFacet("cuisine").options.map((o) => o.value).join(", ");
+const MAIN_INGR    = getFacet("mainIngredient").options.map((o) => o.value).join(", ");
+const PREP_TIMES   = getFacet("prepTime").options.map((o) => o.value).join(", ");
 
 const TIME_LABEL: Record<NonNullable<ChallengeParams["timeLimit"]>, string> = {
   "<15": "minder dan 15 minuten",
@@ -11,12 +17,6 @@ const TIME_LABEL: Record<NonNullable<ChallengeParams["timeLimit"]>, string> = {
 
 const SYSTEM_PROMPT = `Je bent een kookcoach voor thuiskoks. Wanneer je een ingrediënt en optionele parameters krijgt, genereer je een gerichte kookuitdaging die resulteert in een concreet, klaargemaakt gerecht.
 
-Het resultaat moet ALTIJD één van de volgende zijn:
-- Een component of bouwsteen (bijv. bouillon, saus, dressing, augurken)
-- Een gerecht dat je met je handen eet (bijv. sandwich, taco, wrap, burger)
-- Een compleet bord (volledig, gestructureerde maaltijd)
-- Een klein bordje / voorgerecht (snack, dip, fingerfood)
-
 Geef ALLEEN een JSON-object terug met deze exacte velden:
 {
   "challenge": "Een duidelijke, motiverende uitdagingsomschrijving (2–3 zinnen, in het Nederlands)",
@@ -24,7 +24,13 @@ Geef ALLEEN een JSON-object terug met deze exacte velden:
   "difficulty": "Beginner" of "Intermediate" of "Advanced",
   "timeEstimate": getal (minuten als geheel getal),
   "why": "Korte uitleg waarom deze techniek belangrijk is (1–2 zinnen, in het Nederlands)",
-  "outputType": "Korte omschrijving van het type resultaat in het Nederlands (bijv. 'Compleet bord', 'Saus', 'Sandwich')",
+  "outputType": "Type gerecht — VERPLICHT een van: ${DISH_TYPES}",
+  "tags": {
+    "cuisine": ["optioneel — een of meer van: ${CUISINES}"],
+    "dishType": ["VERPLICHT — zelfde waarde als outputType"],
+    "mainIngredient": ["een of meer van: ${MAIN_INGR}"],
+    "prepTime": ["VERPLICHT — een van: ${PREP_TIMES}, gebaseerd op timeEstimate"]
+  },
   "recipe": {
     "title": "Naam van het gerecht (in het Nederlands)",
     "servings": getal (aantal personen als geheel getal),
@@ -40,6 +46,9 @@ Geef ALLEEN een JSON-object terug met deze exacte velden:
 
 Regels:
 - "difficulty" moet exact één van deze Engelse waarden zijn: "Beginner", "Intermediate", "Advanced"
+- "outputType" moet exact één van de opgegeven gerechttypes zijn
+- "tags.dishType" moet dezelfde waarde hebben als "outputType"
+- "tags.prepTime" moet één waarde bevatten gebaseerd op timeEstimate: <15 (tot 15 min), <30 (15–30 min), <60 (30–60 min), >60 (meer dan 60 min)
 - Alle andere tekstvelden moeten in het Nederlands zijn
 - Het recept moet volledig en bruikbaar zijn — geen vage stappen
 - Schrijf geen tekst buiten het JSON-object
@@ -104,6 +113,7 @@ async function callClaude(
 
   const parsed = JSON.parse(jsonMatch[0]) as Partial<ChallengeResponse>;
 
+  const validDishTypes = getFacet("dishType").options.map((o) => o.value);
   if (
     typeof parsed.challenge !== "string" ||
     typeof parsed.skill !== "string" ||
@@ -111,6 +121,7 @@ async function callClaude(
     typeof parsed.timeEstimate !== "number" ||
     typeof parsed.why !== "string" ||
     typeof parsed.outputType !== "string" ||
+    !validDishTypes.includes(parsed.outputType) ||
     !parsed.recipe ||
     typeof parsed.recipe.title !== "string" ||
     !Array.isArray(parsed.recipe.ingredients) ||
@@ -155,7 +166,7 @@ export async function POST(req: NextRequest) {
         time_estimate: result.timeEstimate,
         why: result.why,
         output_type: result.outputType,
-        recipe: result.recipe,
+        recipe: { ...result.recipe, tags: result.tags },
         params: Object.keys(params).length ? params : null,
       });
 

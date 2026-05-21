@@ -1,11 +1,18 @@
 import type { NextRequest } from "next/server";
 import type { RecipeOutput } from "@/lib/recipeIngestion";
+import { getFacet } from "@/lib/facets";
+import type { RecipeTags } from "@/lib/facets";
 
 const MAX_IMAGES = 5;
 // ~500 KB base64 ≈ 375 KB image ≈ roughly an 800×600 JPEG at 0.75 quality
 const MAX_BASE64_BYTES = 500_000;
 const ALLOWED_MEDIA_TYPES = ["image/jpeg", "image/png", "image/webp"] as const;
 type AllowedMediaType = (typeof ALLOWED_MEDIA_TYPES)[number];
+
+const DISH_TYPES = getFacet("dishType").options.map((o) => o.value).join(", ");
+const CUISINES   = getFacet("cuisine").options.map((o) => o.value).join(", ");
+const MAIN_INGR  = getFacet("mainIngredient").options.map((o) => o.value).join(", ");
+const PREP_TIMES = getFacet("prepTime").options.map((o) => o.value).join(", ");
 
 const SYSTEM_PROMPT = `Je bent een kookassistent die recepten uit foto's leest.
 Extraheer het recept uit de afbeelding(en) en geef ALLEEN een geldig JSON-object terug.
@@ -22,6 +29,7 @@ type FlatRecipe = {
   servings?: number | null;
   ingredients?: string[];
   steps?: string[];
+  tags?: RecipeTags;
 };
 
 type ImageBlock = { type: "image"; source: { type: "base64"; media_type: AllowedMediaType; data: string } };
@@ -47,7 +55,7 @@ function toRecipeOutput(flat: FlatRecipe): RecipeOutput {
 async function extractRecipe(
   apiKey: string,
   images: Array<{ data: string; mediaType: AllowedMediaType }>,
-): Promise<RecipeOutput> {
+): Promise<RecipeOutput & { tags: RecipeTags }> {
   const imageBlocks: ImageBlock[] = images.map(({ data, mediaType }) => ({
     type: "image",
     source: { type: "base64", media_type: mediaType, data },
@@ -64,13 +72,21 @@ async function extractRecipe(
   "totalTimeMinutes": 50,
   "servings": 4,
   "ingredients": ["200g bloem", "3 eieren"],
-  "steps": ["Stap 1 tekst", "Stap 2 tekst"]
+  "steps": ["Stap 1 tekst", "Stap 2 tekst"],
+  "tags": {
+    "cuisine": ["optioneel — een of meer van: ${CUISINES}"],
+    "dishType": ["VERPLICHT — een van: ${DISH_TYPES}"],
+    "mainIngredient": ["een of meer van: ${MAIN_INGR}"],
+    "prepTime": ["VERPLICHT — een van: ${PREP_TIMES}, gebaseerd op totalTimeMinutes"]
+  }
 }
 
 Regels:
 - Alle maten in metrisch: oz→g, cups→ml, °F→°C
 - Tijden als geheel getal in minuten, of null als niet vermeld
 - servings: aantal porties als geheel getal, of null als niet vermeld
+- tags.cuisine: alleen invullen als duidelijk uit het recept — anders weglaten of lege array
+- tags.dishType en tags.prepTime zijn verplicht
 - Ingrediënten vóór stappen
 - Alleen JSON, geen extra tekst`,
   };
@@ -101,7 +117,8 @@ Regels:
   if (!jsonMatch) throw new Error("Geen JSON gevonden in antwoord");
 
   const flat = JSON.parse(jsonMatch[0]) as FlatRecipe;
-  return toRecipeOutput(flat);
+  const tags: RecipeTags = flat.tags ?? {};
+  return { ...toRecipeOutput(flat), tags };
 }
 
 export async function POST(req: NextRequest) {
@@ -137,11 +154,11 @@ export async function POST(req: NextRequest) {
   let lastError: unknown;
   for (let attempt = 0; attempt < 2; attempt++) {
     try {
-      const recipe = await extractRecipe(
+      const result = await extractRecipe(
         apiKey,
         images as Array<{ data: string; mediaType: AllowedMediaType }>,
       );
-      return Response.json(recipe);
+      return Response.json(result);
     } catch (err) {
       lastError = err;
       if (err instanceof Error && err.message.startsWith("Claude API fout:")) break;

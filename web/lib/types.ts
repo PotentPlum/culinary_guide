@@ -1,3 +1,5 @@
+import type { RecipeTags } from "./facets";
+
 export type SavedRecipe = {
   id: string;
   name: string;
@@ -5,6 +7,7 @@ export type SavedRecipe = {
   instructions: string;
   source_url: string;
   source: string;
+  tags: RecipeTags;
   created_at: string;
   updated_at: string;
 };
@@ -34,12 +37,14 @@ export type ChallengeResponse = {
   timeEstimate: number;
   why: string;
   outputType: string;
+  tags?: RecipeTags;
   recipe: {
     title: string;
     servings: number;
     ingredients: RecipeIngredient[];
     steps: RecipeStep[];
     tips?: string[];
+    tags?: RecipeTags;
   };
 };
 
