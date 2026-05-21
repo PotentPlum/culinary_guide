@@ -18,7 +18,7 @@ export default function TechniqueCard({ technique, onOpen }: Props) {
     <button className="technique-card" onClick={() => onOpen(technique)}>
       <div className="technique-card-header">
         <h3 className="technique-card-name">{technique.nl}</h3>
-        <span className="technique-level-badge">{levelLabel}</span>
+        <span className={`technique-level-badge technique-level-badge--${technique.level}`}>{levelLabel}</span>
       </div>
       <p className="technique-card-subtitle">{technique.subtitle}</p>
       <div className="technique-card-meta">
