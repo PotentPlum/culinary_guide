@@ -165,6 +165,9 @@ export const UI = {
     searchResultLabel: "recepten",
     searchResultCount: "recepten gevonden",
     searchClearAriaLabel: "Zoekopdracht wissen",
+    cookingMode:             "Kookmodus",
+    cookingModeActive:       "Scherm blijft aan",
+    cookingModeUnsupported:  "Niet beschikbaar op dit apparaat",
   },
 
   // Technieken page
