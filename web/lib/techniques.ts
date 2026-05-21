@@ -53,7 +53,7 @@ export const TECHNIQUES: Technique[] = [
     heatLevel: "geen",
     body: [
       "De brunoise is een van de meest fundamentele snijdingen in de klassieke keuken. Je snijdt groenten eerst in plakken, dan in reepjes (julienne), en tot slot in fijne blokjes van 2 tot 3 millimeter. Deze kleine afmeting zorgt voor een gelijkmatige garing en een elegante presentatie.",
-      "Precisie is essentieel bij de brunoise. Gebruik een scherp mes ...",
+      "Precisie is essentieel bij de brunoise. Gebruik een scherp koksmes en een stevige snijplank. Leg de julienne-reepjes netjes naast elkaar en snijd ze in gelijke blokjes. Hoe uniformer de grootte, hoe gelijkmatiger de garing en hoe eleganter de presentatie op het bord.",
     ],
     tips: [
       "Gebruik een scherp koksmes — een bot mes verbrijzelt de groente in plaats van te snijden.",
@@ -75,16 +75,16 @@ export const TECHNIQUES: Technique[] = [
     heatLevel: "geen",
     body: [
       "Bâtonnet betekent letterlijk 'stokje' en vormt de opstap naar grovere snijwijzen of grotere blokjes (macedoine). De afmetingen zijn standaard 6 mm bij 6 mm breed en ongeveer 5 tot 6 cm lang. Het is de klassieke snijwijze voor authentieke Franse frites en stevige groentegarnituren.",
-      "Net als bij julienne snijd je eerst de zijkanten van de groente recht af om een stabiel blok te vormen, waarna je gelijkmatige plakken en vervolgens staven snijdt."
+      "Net als bij julienne snijd je eerst de zijkanten van de groente recht af om een stabiel blok te vormen, waarna je gelijkmatige plakken en vervolgens staven snijdt.",
     ],
     tips: [
       "Zorg dat het product stabiel ligt; snijd altijd eerst een dun plakje van de onderkant af.",
       "Gebruik restjes die overblijven bij het recht snijden direct in soepen of bouillons.",
-      "Bâtonnet-snijwerk leent zich uitstekend voor groenten die geroosterd of gefrituurd gaan worden."
+      "Bâtonnet-snijwerk leent zich uitstekend voor groenten die geroosterd of gefrituurd gaan worden.",
     ],
     relatedVeg: ["Carrot", "Parsnip", "Celeriac", "Potato"],
     relatedTechniqueIds: ["julienne", "brunoise"],
-    cookware: ["Koksmes (20–25 cm)", "Snijplank"]
+    cookware: ["Koksmes (20–25 cm)", "Snijplank"],
   },
   {
     id: "snipperen",
@@ -96,16 +96,16 @@ export const TECHNIQUES: Technique[] = [
     heatLevel: "geen",
     body: [
       "Snipperen is een specifieke snijtechniek die wordt gebruikt voor uien en sjalotten om gelijkmatige, fijne stukjes te krijgen. Door de natuurlijke gelaagdheid van de ui te gebruiken, kan men met een paar strategische sneden snel en efficiënt te werk gaan.",
-      "Laat bij het snipperen altijd de wortelzijde intact; dit houdt de ui bij elkaar tijdens het snijden. Maak horizontale en verticale inkepingen tot vlak voor de wortel, en snijd de ui vervolgens dwars in fijne stukjes."
+      "Laat bij het snipperen altijd de wortelzijde intact; dit houdt de ui bij elkaar tijdens het snijden. Maak horizontale en verticale inkepingen tot vlak voor de wortel, en snijd de ui vervolgens dwars in fijne stukjes.",
     ],
     tips: [
       "Houd het koksmes scherp om de cellen van de ui te snijden in plaats van te pletten, wat tranende ogen vermindert.",
       "Hoe fijner de ui gesnipperd is, hoe sneller hij smelt en karameliseert in de pan.",
-      "Sjalotten snipper je nog fijner dan uien vanwege hun sterkere, verfijndere smaak."
+      "Sjalotten snipper je nog fijner dan uien vanwege hun sterkere, verfijndere smaak.",
     ],
     relatedVeg: ["Yellow onion", "Shallot"],
     relatedTechniqueIds: ["brunoise"],
-    cookware: ["Koksmes (20–25 cm)", "Snijplank"]
+    cookware: ["Koksmes (20–25 cm)", "Snijplank"],
   },
   {
     id: "chiffonade",
@@ -116,11 +116,14 @@ export const TECHNIQUES: Technique[] = [
     level: "basis",
     heatLevel: "geen",
     body: [
-      "Bij de chiffonade rol je bladgroenten strak op tot een sigaarvorm en snijdt ze vervolgens in dunne linten van 1–3 mm...",
+      "Bij de chiffonade rol je bladgroenten strak op tot een sigaarvorm en snijdt ze vervolgens in dunne linten van 1–3 mm. Hoe strakker je de bladeren oprolt, hoe gelijkmatiger de linten worden.",
+      "De techniek is bijzonder geschikt voor basilicum, spinazie, zuring en andere zachte bladgroenten die rauw of op het laatste moment worden toegevoegd. Voor grotere bladeren zoals snijbiet of palmkool kun je de linten ook in kokend water blancheren voor een zijdeachtige textuur.",
     ],
     tips: [
       "Droog de bladeren goed voor het snijden — vochtige bladeren plakken samen en snijden minder schoon.",
       "Snij basilicum altijd op het allerlaatste moment: het oxideeringsproces gaat razendsnel na het snijden.",
+      "Rol meerdere bladeren tegelijk op voor efficiëntie, maar zorg dat de rol niet te dik wordt — anders snij je ongelijkmatig.",
+      "Voor een ultrafijn resultaat gebruik je het mes in een trekkende beweging in plaats van te hakken.",
     ],
     relatedVeg: ["Spinach", "Sorrel", "Chard", "Butterhead lettuce"],
     relatedTechniqueIds: ["julienne"],
@@ -135,10 +138,13 @@ export const TECHNIQUES: Technique[] = [
     level: "gevorderd",
     heatLevel: "geen",
     body: [
-      "Bij de tourné-snijding geef je wortelgroenten een klassieke, zevenzijdige footballvorm met afgeronde uiteinden...",
+      "Bij de tourné-snijding geef je wortelgroenten een klassieke, zevenzijdige tonvorm met afgeronde uiteinden van 4–5 cm lang. De techniek dient voor verfijnde presentatie en zorgt voor gelijkmatige garing doordat alle stukken dezelfde maat hebben.",
+      "De afsnijdsels gebruik je voor bouillon of puree — er gaat niets verloren. Tourné is een techniek die oefening vergt: begin met grote wortelgroenten zoals pastinaak of wortel voor het meeste snijvlak.",
     ],
     tips: [
       "Gebruik altijd een scherp tourné-mesje — probeer niet met een gewoon koksmes, dat geeft te weinig controle.",
+      "Snij eerst een platte onderkant voor stabiliteit voordat je begint met de gebogen sneden.",
+      "Alle zeven vlakken moeten gelijkmatig zijn — draai het product na elke snede even zodat je de symmetrie bewaakt.",
     ],
     relatedVeg: ["Carrot", "Parsnip", "Turnip", "New potato"],
     relatedTechniqueIds: ["brunoise"],
@@ -155,10 +161,13 @@ export const TECHNIQUES: Technique[] = [
     level: "basis",
     heatLevel: "hoog",
     body: [
-      "Sauteren betekent letterlijk 'laten springen' (van het Franse sauter): kleine stukken voedsel worden in weinig vet op hoog vuur snel gaar gemaakt...",
+      "Sauteren betekent letterlijk 'laten springen' (van het Franse sauter): kleine stukken voedsel worden in weinig vet op hoog vuur snel gaar gemaakt terwijl ze voortdurend in beweging worden gehouden.",
+      "Door de snelle, intense hitte karameliseren de oppervlakken, terwijl de binnenkant mals en sappig blijft. De sleutel is een hete pan, droge ingrediënten en kleine porties — te veel tegelijk verlaagt de temperatuur en geeft stoom in plaats van kleur.",
     ],
     tips: [
       "Verwarm de pan altijd eerst goed voor je het vet toevoegt — zo voorkom je aanplakken.",
+      "Snij alle ingrediënten voor het sauteren op gelijke grootte voor gelijkmatige garing.",
+      "Gooi de pan niet te vol: twee porties zijn beter dan één overvolle pan.",
     ],
     relatedVeg: ["Courgette", "Bell pepper", "Green beans", "Spinach"],
     relatedTechniqueIds: ["groenten-roerbakken", "schroeien"],
@@ -173,10 +182,13 @@ export const TECHNIQUES: Technique[] = [
     level: "gemiddeld",
     heatLevel: "hoog",
     body: [
-      "Schroeien (of aanbraden) is het snel bakken van een oppervlak op zeer hoog vuur om een goudbruine, aromatische korst te vormen...",
+      "Schroeien (of aanbraden) is het snel bakken van een oppervlak op zeer hoog vuur om een goudbruine, aromatische korst te vormen. De Maillard-reactie — de chemische reactie tussen aminozuren en suikers bij temperaturen boven 140°C — zorgt voor honderden nieuwe smaak- en geurmoleculen.",
+      "Hoe droger het oppervlak en hoe heter de pan, hoe beter de korst. Schroei altijd in kleine porties zodat de pantemperatuur niet te ver daalt. Na het schroeien kun je het product verder garen via een andere methode.",
     ],
     tips: [
       "De pan moet echt goed heet zijn voordat je het product inlegt — een druppel water moet direct sissen en verdampen.",
+      "Dep het product kurkdroog met keukenpapier voor het schroeien — zelfs kleine hoeveelheden vocht verhinderen bruinkleuring.",
+      "Beweeg het product pas als het vanzelf loslaat van de pan: vroeg bewegen scheurt de korst.",
     ],
     relatedTechniqueIds: ["sauteren", "vlees-schroeien", "vis-pansearen"],
     cookware: ["Gietijzeren pan of RVS koekenpan", "Tang"],
@@ -190,10 +202,13 @@ export const TECHNIQUES: Technique[] = [
     level: "basis",
     heatLevel: "hoog",
     body: [
-      "Gratineren is het goudbruin en krokant afwerken van een gerecht onder de grill of in een hete oven...",
+      "Gratineren is het goudbruin en krokant afwerken van een gerecht onder de grill of in een hete oven. De intense bovenwarmte karameliseert de bovenste laag — vaak kaas, paneermeel of een bechamelsaus — en geeft het gerecht een knapperige, smaakvolle korst.",
+      "Het gerecht zelf is al gaar; gratineren is uitsluitend een kwestie van minuten voor kleur en textuur. Houd het goed in de gaten: het verschil tussen goudbruin en verbrand is slechts dertig seconden.",
     ],
     tips: [
       "Zet de ovenschaal dicht bij het grillvlak voor een snellere, knapperigere korst.",
+      "Laat de schaal niet onbewaakt — gratineren gaat snel en kan zomaar aanbranden.",
+      "Voeg een laag geraspte oude kaas toe bovenop de bechamelsaus voor de beste gratin-korst.",
     ],
     relatedVeg: ["Cauliflower", "Fennel", "Chicory", "Endive"],
     relatedTechniqueIds: ["bechamel"],
@@ -210,10 +225,13 @@ export const TECHNIQUES: Technique[] = [
     level: "gemiddeld",
     heatLevel: "middel",
     body: [
-      "Smoren is een techniek waarbij voedsel eerst wordt aangebraden op hoog vuur en vervolgens langzaam gaart in een kleine hoeveelheid vocht...",
+      "Smoren is een techniek waarbij voedsel eerst wordt aangebraden op hoog vuur en vervolgens langzaam gaart in een kleine hoeveelheid vocht in een afgesloten pan.",
+      "De combinatie van droge hitte (voor de korst) en natte hitte (voor malsheid en smaakuitwisseling) geeft smoren zijn karakter. Het vocht kan bouillon, wijn, bier of water zijn — en absorbeert gedurende het garen alle smaken van het product.",
     ],
     tips: [
-      "Bruin het vlees of de groenten goed aan voordat je vloeistof toevoegt — dat anbraden-laagje is de basis van de smaak.",
+      "Bruin het vlees of de groenten goed aan voordat je vloeistof toevoegt — dat aanbraden-laagje is de basis van de smaak.",
+      "Gebruik niet te veel vocht: het product mag half ondergedompeld zijn, niet volledig.",
+      "Kook de deksel er halverwege af zodat de saus kan inkoken en concentreren.",
     ],
     relatedVeg: ["Celeriac", "Carrot", "Parsnip", "Fennel", "Leek"],
     relatedTechniqueIds: ["sudderen", "vlees-smoren", "groenten-smoren"],
@@ -228,10 +246,13 @@ export const TECHNIQUES: Technique[] = [
     level: "basis",
     heatLevel: "middel",
     body: [
-      "Sudderen is garen in vloeistof net onder het kookpunt, bij 85–95°C. Er stijgen af en toe kleine belletjes op, maar de vloeistof kookt nooit heftig...",
+      "Sudderen is garen in vloeistof net onder het kookpunt, bij 85–95°C. Er stijgen af en toe kleine belletjes op, maar de vloeistof kookt nooit heftig.",
+      "Bij deze temperatuur lossen collageen en bindweefsel langzaam op tot gelatine, waardoor taaier vlees boterzacht wordt zonder uit te drogen. Soepen en fond sudderen urenlang op deze manier voor maximale smaakextractie.",
     ],
     tips: [
       "Zet het vuur zo laag dat er slechts zelden een belletje opstijgt — actief borrelen is al te heet.",
+      "Schuim de bovenkant de eerste 20 minuten regelmatig af voor een heldere bouillon.",
+      "Sudderen kan niet haastig: geef de tijd die het gerecht nodig heeft voor het beste resultaat.",
     ],
     relatedVeg: ["Carrot", "Celeriac", "Leek", "Jerusalem artichoke"],
     relatedTechniqueIds: ["smoren", "kippenfond", "groentebouillon"],
@@ -247,16 +268,16 @@ export const TECHNIQUES: Technique[] = [
     heatLevel: "middel",
     body: [
       "Koken is een van de meest basale kooktechnieken waarbij ingrediënten volledig worden ondergedompeld in een vloeistof (meestal water of bouillon) die het kookpunt van 100°C heeft bereikt. Grote actieve bellen verplaatsen het voedsel voortdurend.",
-      "Deze methode is ideaal voor het bereiden van zetmeelproducten zoals pasta, aardappelen en rijst, of het snel garen van taaiere peulvruchten."
+      "Deze methode is ideaal voor het bereiden van zetmeelproducten zoals pasta, aardappelen en rijst, of het snel garen van taaiere peulvruchten.",
     ],
     tips: [
       "Breng het water altijd eerst op een rollend kookpunt voordat je ingrediënten toevoegt.",
       "Zout het water royaal wanneer je pasta of aardappelen kookt; dit trekt diep in de kern van het product.",
-      "Houd de pan onafgedekt als je groene groenten kookt om vluchtige zuren te laten ontsnappen, zodat ze hun kleur niet verliezen."
+      "Houd de pan onafgedekt als je groene groenten kookt om vluchtige zuren te laten ontsnappen, zodat ze hun kleur niet verliezen.",
     ],
     relatedVeg: ["Potato", "Green beans"],
     relatedTechniqueIds: ["blancheren", "sudderen"],
-    cookware: ["Grote kookpan"]
+    cookware: ["Grote kookpan"],
   },
   {
     id: "panroosteren",
@@ -267,10 +288,13 @@ export const TECHNIQUES: Technique[] = [
     level: "basis",
     heatLevel: "middel",
     body: [
-      "Bij panroosteren bak je ingrediënten in een droge pan — zonder olie of vet — op middelhoog vuur...",
+      "Bij panroosteren bak je ingrediënten in een droge pan — zonder olie of vet — op middelhoog vuur tot ze geurig en licht gebruind zijn.",
+      "De techniek wordt veel gebruikt voor specerijen, noten, zaden en kleine groenten. De directe contacthitte activeert vluchtige aromaten die anders verloren gaan; gemalen specerijen doen dit in slechts 30–60 seconden.",
     ],
     tips: [
       "Verwarm de pan voor op middelhoog vuur voor je de specerijen toevoegt.",
+      "Beweeg of schud de pan voortdurend — specerijen en noten branden snel aan.",
+      "Haal de pan direct van het vuur zodra je de geur ruikt; de restwarmte gaart nog een moment door.",
     ],
     relatedVeg: ["Fennel", "Carrot"],
     relatedTechniqueIds: ["groenten-roasten"],
@@ -287,10 +311,13 @@ export const TECHNIQUES: Technique[] = [
     level: "gemiddeld",
     heatLevel: "laag",
     body: [
-      "Langzaam garen is het koken van voedsel bij lage temperatures (60–120°C) gedurende langere tijd...",
+      "Langzaam garen is het koken van voedsel bij lage temperaturen (60–120°C) gedurende langere tijd, waardoor taaiere stukken vlees en wortelgroenten geleidelijk zacht worden.",
+      "De lage temperatuur voorkomt dat eiwitten samentrekken en vocht verliezen. Het resultaat is bijzonder mals en aromatisch — en het gerecht kan uren grotendeels onbeheerd op het vuur of in de oven staan.",
     ],
     tips: [
       "Bak vlees of groenten altijd eerst aan op hoog vuur voor smaak — daarna pas de oven in op lage temperatuur.",
+      "Gebruik een kernthermometer om de exacte gaarheid te bewaken zonder te hoeven snijden.",
+      "Dek de pan af om uitdrogen te voorkomen; haal het deksel er pas de laatste 30 minuten af als je een korst wilt.",
     ],
     relatedVeg: ["Celeriac", "Parsnip", "Swede", "Carrot", "Beetroot"],
     relatedTechniqueIds: ["smoren", "confit"],
@@ -305,10 +332,13 @@ export const TECHNIQUES: Technique[] = [
     level: "gevorderd",
     heatLevel: "laag",
     body: [
-      "Bij confit gaart voedsel volledig ondergedompeld in vet op een lage, constante temperatuur (60–90°C)...",
+      "Bij confit gaart voedsel volledig ondergedompeld in vet op een lage, constante temperatuur (60–90°C). Het vet beschermt het product tegen uitdrogen en draagt aromen over.",
+      "Groenten- en vlees-confit worden daarna kort gekorst in een hete pan voor textuurcontrast. Bewaard onder het vet blijft confit meerdere weken goed in de koelkast.",
     ],
     tips: [
-      "Gebruik milde olijfolie of kippenschmaltz voor groenten-confit — de smaak van het vet determines the output.",
+      "Gebruik milde olijfolie of kippenschmaltz voor groenten-confit — de smaak van het vet bepaalt het eindresultaat.",
+      "Houd de temperatuur stabiel op 70–85°C; te hoog en het product droogt uit, te laag en het gaart niet goed.",
+      "Voeg aromatische kruiden (tijm, laurier, knoflook) toe aan het vet voor extra smaakdoordringing.",
     ],
     relatedVeg: ["Fennel", "New potato", "Leek", "Yellow onion"],
     relatedTechniqueIds: ["langzaam-garen", "sous-vide"],
@@ -323,10 +353,13 @@ export const TECHNIQUES: Technique[] = [
     level: "gevorderd",
     heatLevel: "laag",
     body: [
-      "Sous-vide (Frans voor 'onder vacuüm') is een techniek waarbij voedsel vacuüm wordt verpakt en dan in een waterbad...",
+      "Sous-vide (Frans voor 'onder vacuüm') is een techniek waarbij voedsel vacuüm wordt verpakt en dan in een waterbad op een precieze, constante temperatuur gaart. Zonder zuurstof en zonder direct contact met water behoudt het product al zijn sappen, vitaminen en structuur.",
+      "De nauwkeurigheid maakt perfecte garing herhaalbaar: een biefstuk op 54°C blijft precies medium-rare, ook na een uur. Na sous-vide wordt het product altijd snel afgewerkt in een hete pan voor korstvorming.",
     ],
     tips: [
-      "Gebruik een vacuümzakje van goede kwaliteit en zorg dat er geen lucht achterblijft...",
+      "Gebruik een vacuümzakje van goede kwaliteit en zorg dat er geen lucht achterblijft — lucht verslechtert de warmteoverdracht en kan het zakje laten drijven.",
+      "Voeg aromatische boter of kruiden toe in het zakje — de smaken worden bij sous-vide intenser opgenomen.",
+      "Koel het product na sous-vide direct af in ijswater als je het niet meteen afwerkt — zo stop je de garing volledig.",
     ],
     relatedVeg: ["Carrot", "Beetroot", "New potato", "Fennel"],
     relatedTechniqueIds: ["confit", "langzaam-garen"],
@@ -343,10 +376,13 @@ export const TECHNIQUES: Technique[] = [
     level: "basis",
     heatLevel: "geen",
     body: [
-      "Zout is het meest krachtige smaakmaker in de keuken, maar het moment van toevoegen bepaalt het effect...",
+      "Zout is de krachtigste smaakmaker in de keuken, maar het moment van toevoegen bepaalt het effect. Vroeg zouten ontrekt vocht via osmose en helpt structuren afbreken; laat zouten geeft een intensere, minder geïntegreerde smaakimpuls.",
+      "Bij groenten kan vroeg zouten vocht trekken en smaak versterken; bij vlees vlak voor het bakken geeft het de droogste, best gekorste buitenkant. Leer hoe elk product reageert en pas de timing aan.",
     ],
     tips: [
       "Proef altijd meerdere keren tijdens het koken — niet eenmalig aan het einde.",
+      "Gebruik grof zeezout voor het afwerken: het geeft een crunch en smaakburst die fijn zout niet kan evenaren.",
+      "Pasta- en aardappelwater moet zo zout smaken als licht zeewater — dit is de enige kans om het zetmeel van binnenuit te kruiden.",
     ],
     relatedTechniqueIds: ["marineren", "fond-deglaceren", "pekelen"],
     cookware: ["Zoutvat"],
@@ -362,15 +398,15 @@ export const TECHNIQUES: Technique[] = [
     heatLevel: "geen",
     body: [
       "Pekelen is het weken van ingrediënten (vooral vlees of gevogelte) in een zoutwateroplossing (nat pekelen) of het direct inzouten (droog pekelen). Via osmose en diffusie dringt het zout diep door in de cellen, wat de eiwitstructuur verandert en zorgt dat het product tot 30% meer vocht vasthoudt tijdens de garing.",
-      "Nat pekelen is ideaal voor mager vlees dat snel uitdroogt, zoals kipfilet of varkenshaas. Droog pekelen werkt uitstekend voor biefstuk en eendenborst, omdat het tevens het oppervlak uitdroogt, wat leidt tot een superieure korstvorming bij het bakken."
+      "Nat pekelen is ideaal voor mager vlees dat snel uitdroogt, zoals kipfilet of varkenshaas. Droog pekelen werkt uitstekend voor biefstuk en eendenborst, omdat het tevens het oppervlak uitdroogt, wat leidt tot een superieure korstvorming bij het bakken.",
     ],
     tips: [
       "Houd voor een standaard natte pekel een verhouding aan van 50 tot 60 gram zout per liter water.",
       "Voeg aromaten zoals laurier, peperkorrels en tijm toe aan de pekel, en kook deze kort om de smaken te activeren voordat je de pekel volledig laat afkoelen.",
-      "Spoel het product na nat pekelen altijd af met koud water en dep het grondig droog."
+      "Spoel het product na nat pekelen altijd af met koud water en dep het grondig droog.",
     ],
     relatedTechniqueIds: ["zout-timing", "marineren"],
-    cookware: ["Grote kom of container", "Koelkast"]
+    cookware: ["Grote kom of container", "Koelkast"],
   },
   {
     id: "fond-deglaceren",
@@ -381,10 +417,13 @@ export const TECHNIQUES: Technique[] = [
     level: "gemiddeld",
     heatLevel: "middel",
     body: [
-      "Deglaceren is het losmaken van de aanbaksels (fond) die aan de bodem van de pan plakken na het braden...",
+      "Deglaceren is het losmaken van de aanbaksels (fond) die aan de bodem van de pan plakken na het braden. Door vloeistof — wijn, bouillon of water — in de hete pan te gieten en te roeren, lossen de gekarameliseerde suikers en eiwitten op.",
+      "De fond bevat alle smaak die tijdens het bakken op de bodem is geconcentreerd. Dit vormt de basis van een rijke saus; reduceer de vloeistof daarna tot de gewenste dikte.",
     ],
     tips: [
-      "Gebruik een koude of kamertemperatuur vloeistof bij het deglaceren.",
+      "Gebruik een koude of kamertemperatuur vloeistof bij het deglaceren — dit geeft een krachtigere stoomreactie die de aanbaksels sneller losmaakt.",
+      "Kras met een houten spatel langs de bodem zodra de vloeistof de pan raakt voor het beste resultaat.",
+      "Wijn deglaceren: laat de alcohol 1–2 minuten verkoken voor je verdere vloeistof toevoegt.",
     ],
     relatedTechniqueIds: ["smoren", "vlees-schroeien", "sauteren"],
     cookware: ["RVS of gietijzeren koekenpan", "Houten spatel"],
@@ -398,10 +437,13 @@ export const TECHNIQUES: Technique[] = [
     level: "gemiddeld",
     heatLevel: "geen",
     body: [
-      "Een emulsie is een stabiel mengsel van twee vloeistoffen die normaal niet mengen, zoals olie en water...",
+      "Een emulsie is een stabiel mengsel van twee vloeistoffen die normaal niet mengen, zoals olie en water. Een emulgator — zoals lecitine in eigeel of de eiwitten in mosterd — omhult kleine vetdruppeltjes en houdt ze in suspensie.",
+      "Zonder emulgator scheidt een vinaigrette of saus snel; met de juiste emulgator en techniek blijft de binding stabiel en fluweelzacht. De meeste emulsies zijn gevoelig voor temperatuur: te heet of te koud kan de binding breken.",
     ],
     tips: [
       "Alle ingrediënten op kamertemperatuur versnelt de emulgatie.",
+      "Voeg de olie altijd in een dun straaltje toe — te snel gieten geeft geen tijd voor verdeling van de vetdruppeltjes.",
+      "Als een emulsie breekt, begin met een kleine hoeveelheid nieuw eigeel en voeg de gebroken emulsie druppelsgewijs toe.",
     ],
     relatedTechniqueIds: ["hollandaise", "mayonaise", "vinaigrette", "beurre-blanc", "monteren"],
     cookware: ["Garde", "Staafmixer", "Kom"],
@@ -415,10 +457,13 @@ export const TECHNIQUES: Technique[] = [
     level: "basis",
     heatLevel: "geen",
     body: [
-      "Marineren is het weken van vlees, vis of groenten in een gekruide vloeistof (marinade) voor het bereiden...",
+      "Marineren is het weken van vlees, vis of groenten in een gekruide vloeistof (marinade) voor het bereiden. Een marinade bestaat typisch uit een zuur (citroen, azijn, yoghurt), een vet (olie) en aromaten (kruiden, knoflook, specerijen).",
+      "Het zuur verzacht de buitenste laag licht, terwijl de olie smaken overbrengt en droogte voorkomt tijdens het garen. Overmarineren in sterk zuur kan de textuur juist rubberen — voor vis geldt een maximum van 30 minuten in citroenmarinade.",
     ],
     tips: [
       "Marineer altijd in de koelkast, nooit op kamertemperatuur.",
+      "Dep het product droog na het marineren voor het bakken — vochtige oppervlakken stomen in plaats van schroeien.",
+      "Gebruik de marinade nooit rauw als saus — verhit haar eerst volledig door voor voedselveiligheid.",
     ],
     relatedVeg: ["Courgette", "Aubergine", "Bell pepper", "Beetroot"],
     relatedTechniqueIds: ["groenten-rauw", "zout-timing"],
@@ -435,10 +480,13 @@ export const TECHNIQUES: Technique[] = [
     level: "basis",
     heatLevel: "geen",
     body: [
-      "De koekenpan is het meest veelzijdige stuk kookgerei in de keuken...",
+      "De koekenpan is het meest veelzijdige stuk kookgerei in de keuken. Gietijzeren pannen houden hitte uitstekend vast en geven de beste korstvorming; RVS pannen reageren sneller op temperatuurwijzigingen; anti-aanbak pannen zijn ideaal voor eieren en delicate vis.",
+      "Elke keuken heeft baat bij één goed exemplaar van elk type voor optimale veelzijdigheid. Kwaliteitspannen gaan tientallen jaren mee bij goed onderhoud: nooit in de afwasmachine, altijd handmatig wassen.",
     ],
     tips: [
       "Investeer in één goede pan per type: een gietijzeren koekenpan van 26 cm dekt de meeste bereidingen.",
+      "Verwarm de pan altijd voor op het fornuis voor je olie toevoegt — een warme pan plus koud vet kleeft minder.",
+      "Een gietijzeren pan inbranden: inwrijven met olie en 1 uur op 200°C in de oven — dit bouwt een natuurlijke anti-aanbaklaag op.",
     ],
     relatedTechniqueIds: ["schroeien", "sauteren", "panroosteren"],
     cookware: ["Gietijzeren koekenpan", "RVS koekenpan", "Anti-aanbak koekenpan"],
@@ -452,10 +500,13 @@ export const TECHNIQUES: Technique[] = [
     level: "basis",
     heatLevel: "geen",
     body: [
-      "De braadpan (ook cocotte of Dutch oven) is de meest veelzijdige pan voor smoren, langzaam garen en soepen...",
+      "De braadpan (ook cocotte of Dutch oven) is de meest veelzijdige pan voor smoren, langzaam garen en soepen. Dankzij het zware gietijzer of de dikke bodem verdeelt hij warmte gelijkmatig en houdt hij temperatuur lang vast.",
+      "De straksluitende deksel houdt stoom en smaak binnen. Een goede braadpan gaat bij juist gebruik tientallen jaren mee: zorg dat hij niet te snel verhit wordt en niet leeg op hoog vuur staat.",
     ],
     tips: [
       "Begin altijd op middelhoog vuur — een braadpan heeft tijd nodig om gelijkmatig op te warmen.",
+      "Een emaillen braadpan heeft geen inbranden nodig; gietijzer zonder emaillering vraag een regelmatige olie-behandeling.",
+      "Gebruik de braadpan ook als serveerschaal — hij houdt gerechten warm aan tafel.",
     ],
     relatedTechniqueIds: ["smoren", "langzaam-garen", "kippenfond"],
     cookware: ["Braadpan / cocotte (4–6 L)", "Ovenhandschoenen"],
@@ -469,10 +520,13 @@ export const TECHNIQUES: Technique[] = [
     level: "basis",
     heatLevel: "geen",
     body: [
-      "De steelpan is de werkpaard van sauzen, bouillons en smeltbewerkingen...",
+      "De steelpan is het werkpaard van sauzen, bouillons en smeltbewerkingen. Dankzij zijn hoge zijwanden en lange steel kun je gemakkelijk roeren, zwenken en gieten zonder morsen.",
+      "RVS steelpannen zijn ideaal voor sauzen die lang worden geroerd; voor gevoelige emulsies zoals hollandaise gebruik je een lichte pan die je goed in de hand houdt boven een bain-marie.",
     ],
     tips: [
-      "Gebruik een kleinere steelpan dan je denkt nodig te hebben.",
+      "Gebruik een kleinere steelpan dan je denkt nodig te hebben — een te grote pan maakt sauzen moeilijker te roeren en te controleren.",
+      "Een steelpan met een dikke bodem voorkomt brandplekken bij suikerwerk en delicate sauzen.",
+      "Kies een steelpan met een giettuit voor nauwkeurig inschenken zonder morsen.",
     ],
     relatedTechniqueIds: ["bechamel", "hollandaise", "beurre-blanc"],
     cookware: ["Steelpan RVS (16–20 cm)", "Garde", "Houten lepel"],
@@ -489,10 +543,13 @@ export const TECHNIQUES: Technique[] = [
     level: "gemiddeld",
     heatLevel: "hoog",
     body: [
-      "Het schroeien van vlees is het aanbraden op zeer hoog vuur om een goudbruine, smaakvolle korst te vormen via de Maillard-reactie...",
+      "Het schroeien van vlees is het aanbraden op zeer hoog vuur om een goudbruine, smaakvolle korst te vormen via de Maillard-reactie. Dit is geen 'poriën sluiten' — een hardnekkige mythe — maar het creëren van honderden geur- en smaakstoffen door verhitting van eiwitten en suikers.",
+      "Een kurkdroog oppervlak en een gloeiend hete pan zijn vereist: vochtig vlees of een te koude pan geeft stoom in plaats van korst. Schroei nooit te veel stukken tegelijk; de temperatuur van de pan moet hoog blijven.",
     ],
     tips: [
-      "Dep vlees always droog met keukenpapier voor het bakken.",
+      "Dep vlees altijd droog met keukenpapier voor het bakken.",
+      "Laat het vlees op kamertemperatuur komen voor het schroeien — koud vlees koelt de pan te sterk af.",
+      "Beweeg het vlees pas als het vanzelf loslaat: vroeg bewegen scheurt de korst.",
     ],
     relatedTechniqueIds: ["schroeien", "vlees-braden", "fond-deglaceren"],
     cookware: ["Gietijzeren koekenpan of RVS pan", "Tang", "Lepel voor basten"],
@@ -507,10 +564,13 @@ export const TECHNIQUES: Technique[] = [
     level: "gemiddeld",
     heatLevel: "middel",
     body: [
-      "Vlees smoren transformeert goedkopere, taai-vezelige stukken vlees tot boterzacht, smaakintensief gerecht...",
+      "Vlees smoren transformeert goedkopere, taai-vezelige stukken vlees tot boterzacht, smaakintensief gerecht. Collageen in het bindweefsel smelt bij temperaturen boven 75°C langzaam om tot gelatine, wat het braadvocht een zijdeachtige, rijke consistentie geeft.",
+      "Dit proces vraagt twee tot vier uur, maar kan grotendeels onbeheerd verlopen in de oven. Kies vlees met veel bindweefsel: sukade, schouder, rib en kuit worden het zachtst en meest smaakvol.",
     ],
     tips: [
       "Kies vlees met veel bindweefsel: sukade, schouder, rib en kuit worden het zachtst.",
+      "Smoor op een zo laag mogelijke temperatuur (150–160°C oven) voor het meest malse resultaat.",
+      "Laat gesmoord vlees een dag rusten in het braadvocht — opgewarmd smaakt het altijd beter dan vers.",
     ],
     relatedVeg: ["Carrot", "Celeriac", "Parsnip"],
     relatedTechniqueIds: ["smoren", "vlees-schroeien", "fond-deglaceren"],
@@ -525,10 +585,13 @@ export const TECHNIQUES: Technique[] = [
     level: "gemiddeld",
     heatLevel: "middel",
     body: [
-      "Braden in de oven is de methode voor grotere stukken vlees die te groot zijn voor alleen de pan...",
+      "Braden in de oven is de methode voor grotere stukken vlees die te groot zijn voor alleen de pan. Hoge aanvangstemperatuur (220–230°C) zorgt voor korstvorming; daarna daalt de temperatuur (160–180°C) voor gelijkmatige garing naar de gewenste kerntemperatuur.",
+      "Laat het vlees altijd rusten na het braden: de sappen herverdelen zich en het vlees is tot 5°C warmer in de kern dan direct na de oven. Rust van 10–20 minuten is essentieel voor een sappig resultaat.",
     ],
     tips: [
       "Breng vlees op kamertemperatuur voor het braden — koud vlees gaart ongelijkmatig.",
+      "Gebruik een kernthermometer voor betrouwbare gaarheid: 54°C voor medium-rare, 60°C voor medium.",
+      "Dek het vlees losjes af met aluminiumfolie tijdens het rusten om warmteverlies te beperken.",
     ],
     relatedTechniqueIds: ["vlees-schroeien", "vlees-smoren"],
     cookware: ["Braadslee met rooster", "Kernthermometer", "Aluminiumfolie"],
@@ -542,10 +605,13 @@ export const TECHNIQUES: Technique[] = [
     level: "basis",
     heatLevel: "geen",
     body: [
-      "Vlees snijden dwars op de draad (haaks op de spiervezels) is de meest invloedrijke techniek voor een mals eindresultaat...",
+      "Vlees snijden dwars op de draad (haaks op de spiervezels) is de meest invloedrijke techniek voor een mals eindresultaat. Lange spiervezels maken vlees taai bij het kauwen; door ze kort te snijden, verminder je de weerstand drastisch.",
+      "Een biefstuk met de draad mee gesneden kan taai aanvoelen, terwijl diezelfde biefstuk correct gesneden zacht lijkt. Bekijk altijd de richting van de spiervezels voor je het mes zet.",
     ],
     tips: [
       "Een scherp, lang vleesmes geeft schonere sneden en vereist minder kracht.",
+      "Snijd na het rusten — niet direct uit de oven of pan — voor de sappigste plakken.",
+      "Voor gerold of groot vlees: snijd loodrecht op de lengte-as van de rol of het stuk.",
     ],
     relatedTechniqueIds: ["vlees-braden", "vlees-smoren"],
     cookware: ["Lang vleesmes (25–30 cm)", "Vleesnaald of -vork", "Snijplank"],
@@ -561,10 +627,13 @@ export const TECHNIQUES: Technique[] = [
     level: "gemiddeld",
     heatLevel: "middel",
     body: [
-      "Een perfect gebraden kip of eend begint met een droge huid. Dep het gevogelte goed droog...",
+      "Een perfect gebraden kip of eend begint met een droge huid. Dep het gevogelte goed droog met keukenpapier en laat het indien mogelijk een nacht onafgedekt in de koelkast staan.",
+      "De droge huid krimpt sneller bij verhitting en geeft een knapperige, goudbruine korst. Begin op hoge temperatuur (220°C) voor de korst en verlaag daarna voor gelijkmatige garing tot de kern — kerntemperatuur kip: 75°C.",
     ],
     tips: [
       "Leg aromaten (citroen, tijm, knoflook) in de holte voor extra smaak.",
+      "Sprenkel de huid in met boter of olie en bestrooi royaal met zout voor het braden.",
+      "Laat de kip 10–15 minuten rusten voor het aansnijden zodat de sappen zich herverdelen.",
     ],
     relatedTechniqueIds: ["vlees-braden", "gevogelte-ontleden"],
     cookware: ["Braadslee met rooster", "Kernthermometer", "Braadpenseel"],
@@ -579,10 +648,13 @@ export const TECHNIQUES: Technique[] = [
     level: "gemiddeld",
     heatLevel: "laag",
     body: [
-      "Pocheren van gevogelte in hete bouillon of court-bouillon geeft een van de sappigste, zachtste resultaten...",
+      "Pocheren van gevogelte in hete bouillon of court-bouillon geeft een van de sappigste, zachtste resultaten. Door te garen op 75–80°C — net onder het kookpunt — blijft het vlees mals en sappig.",
+      "Gebruik de pocheerbouillon daarna als basis voor een saus of soep: die is nu doortrokken van kippensmaken.",
     ],
     tips: [
       "Begin altijd met voldoende koud water en voeg de kip toe voor het vuur aan gaat.",
+      "Schep het schuim af zodra het water begint te trillen, voor het kookpunt bereikt wordt.",
+      "Pocheer kipfilets niet langer dan 15–18 minuten: overtijd geeft droge, vezelige textuur.",
     ],
     relatedVeg: ["Carrot", "Celery", "Leek"],
     relatedTechniqueIds: ["sudderen", "kippenfond"],
@@ -591,16 +663,19 @@ export const TECHNIQUES: Technique[] = [
   {
     id: "gevogelte-ontleden",
     nl: "Gevogelte ontleden",
-    subtitle: "Uitbenen og portioneren",
+    subtitle: "Uitbenen en portioneren",
     category: "eiwitten",
     subcategory: "Gevogelte",
     level: "gevorderd",
     heatLevel: "geen",
     body: [
-      "Het ontleden van gevogelte — een hele kip in acht stukken verdelen — is een fundamentele keukenbekwaamheid...",
+      "Het ontleden van gevogelte — een hele kip in acht stukken verdelen — is een fundamentele keukenbekwaamheid die tijd en geld bespaart. Een heel dier is goedkoper dan losse stukken en geeft meer controle over de grootte.",
+      "De afsnijdsels gebruik je voor bouillon of puree — er gaat niets verloren. Tourné is een techniek die oefening vergt: begin met grote wortelgroenten zoals pastinaak of wortel voor het meeste snijvlak.",
     ],
     tips: [
       "Gebruik een scherp mesje (uitbeenmesje) voor de precieze werkzaamheden.",
+      "Snij altijd langs het bot — voel met het mesje waar het gewricht zit voor je snijdt.",
+      "Bewaar het karkas in de vriezer voor de volgende kippenfond.",
     ],
     relatedTechniqueIds: ["gevogelte-braden", "kippenfond"],
     cookware: ["Koksmes (20–25 cm)", "Uitbeenmesje", "Snijplank"],
@@ -616,10 +691,13 @@ export const TECHNIQUES: Technique[] = [
     level: "basis",
     heatLevel: "middel",
     body: [
-      "Stomen is de meest delicate methode voor het garen van vis...",
+      "Stomen is de meest delicate methode voor het garen van vis. Direct contact met water zou textuur en smaak wegspoelen; stoom omhult het product en gaart het gelijkmatig van alle kanten.",
+      "Vis stoomt snel — een filet van 2 cm is in 6–8 minuten gaar. Voeg aromaten toe aan het stoomwater voor subtiele smaakdoordringing: citroenschil, gember of laurier werken goed.",
     ],
     tips: [
       "Zorg dat het water al kookt voordat je de vis erin plaatst.",
+      "Controleer de gaarheid door met een vork zachtjes in het dikste deel te duwen — de vlokken moeten net gaan scheiden.",
+      "Stoom vis op een bedje van groenten of kruiden voor extra smaak en een elegante presentatie.",
     ],
     relatedVeg: ["Fennel", "Spring onion", "Wild garlic"],
     relatedTechniqueIds: ["vis-pocheren"],
@@ -635,10 +713,13 @@ export const TECHNIQUES: Technique[] = [
     level: "gemiddeld",
     heatLevel: "hoog",
     body: [
-      "Pansearen van vis — de huid krokant bakken in een hete pan — is een van de meest bevredigende technieken...",
+      "Pansearen van vis — de huid krokant bakken in een hete pan — is een van de meest bevredigende technieken in de keuken. De sleutel is een volledig droge huid en een hete pan met weinig vet.",
+      "Leg de vis huidkant naar beneden, druk even aan met een spatel en raak hem daarna niet meer aan. Drie kwart van de totale garing vindt aan de huidkant plaats; draai de vis pas om in de laatste minuut.",
     ],
     tips: [
       "Dep de vissenhuid kurkdroog — zelfs kleine hoeveelheden vocht verhinderen een knapperige huid.",
+      "Gebruik een RVS pan in plaats van anti-aanbak voor de beste korst op de huid.",
+      "Snij de huid op twee plaatsen licht in bij dikke visfilets om kromlopen te voorkomen.",
     ],
     relatedTechniqueIds: ["schroeien", "vis-pocheren"],
     cookware: ["RVS of gietijzeren koekenpan", "Spatel", "Tang"],
@@ -653,10 +734,13 @@ export const TECHNIQUES: Technique[] = [
     level: "basis",
     heatLevel: "laag",
     body: [
-      "Court-bouillon is de klassieke vloeistof voor het pocheren van vis...",
+      "Court-bouillon is de klassieke vloeistof voor het pocheren van vis, gemaakt van water, witte wijn, azijn, groenten en kruiden. Vis pocheert op 75–80°C — nooit koken, want dan valt het visvlees uiteen.",
+      "Witte vis, zalm en zeevruchten profiteren het meest van pocheren: de delicate textuur blijft intact en de smaak van de bouillon trekt subtiel door. Bereid de court-bouillon minstens 20 minuten van tevoren.",
     ],
     tips: [
       "Bereid de court-bouillon twintig minuten van tevoren zodat de smaken kunnen intrekken.",
+      "Pocheer nooit boven 80°C: de eiwitten van vis worden bij hogere temperaturen snel droog en rubberachtig.",
+      "Gebruik de pocheerbouillon daarna als basis voor een lichte sabayon of beurre blanc.",
     ],
     relatedTechniqueIds: ["vis-stomen", "vis-pansearen", "groentebouillon"],
     cookware: ["Brede lage pan", "Kookthermometer"],
@@ -670,10 +754,13 @@ export const TECHNIQUES: Technique[] = [
     level: "gemiddeld",
     heatLevel: "middel",
     body: [
-      "Zeevruchten zijn de meest precieze categorie qua garing...",
+      "Zeevruchten zijn de meest precieze categorie qua garing: enkele minuten te lang en garnalen worden rubberachtig, inktvis taai en mosselen droog. De meeste zeevruchten zijn gaar bij 60–65°C.",
+      "Hoge hitte en korte tijd is de basisregel: heet in, snel eruit. Gooi mosselen weg die voor het koken al open zijn en niet sluiten als je ertegen tikt.",
     ],
     tips: [
       "Gooi mosselen weg die voor het koken al open zijn en niet sluiten bij aantippen.",
+      "Garnalen zijn gaar zodra ze van doorzichtig naar roze verkleuren — haal ze dan direct van het vuur.",
+      "Inktvis is ofwel kort gebakken (2–3 min, krokant en zacht) of lang gestoofd (45+ min, boterzacht) — alles ertussenin is taai.",
     ],
     relatedTechniqueIds: ["vis-stomen", "sauteren"],
     cookware: ["Grote pan met deksel", "Tang", "Schuimspaan"],
@@ -690,10 +777,13 @@ export const TECHNIQUES: Technique[] = [
     level: "gemiddeld",
     heatLevel: "laag",
     body: [
-      "Een gepocheerd ei heeft een gestold eiwit en een vloeibare, romige dooier...",
+      "Een gepocheerd ei heeft een gestold eiwit en een vloeibare, romige dooier. Het water moet zacht sudderen — niet koken — bij 80–85°C. Een scheut azijn helpt het eiwit sneller te stollen rond de dooier.",
+      "Breek het ei eerst in een klein kommetje en laat het voorzichtig in het water glijden voor de mooiste, compacte vorm. Verse eieren geven het beste resultaat: het eiwit is strakker en loopt minder uit.",
     ],
     tips: [
       "Gebruik zo vers mogelijke eieren — de kwaliteit van het ei bepaalt het resultaat.",
+      "Roer het water voor het pocheren kort in een cirkelvorm; de draaikolk helpt het eiwit om de dooier te wikkelen.",
+      "Pocheerbak meerdere eieren tegelijk in een brede pan; haal ze na 3 minuten uit met een schuimspaan.",
     ],
     relatedTechniqueIds: ["eieren-emulsies"],
     cookware: ["Diepe pan", "Schuimspaan", "Klein kommetje"],
@@ -707,10 +797,13 @@ export const TECHNIQUES: Technique[] = [
     level: "basis",
     heatLevel: "laag",
     body: [
-      "Er zijn twee stijlen roerei: het Engelse luchtige roerei en het Franse romige roerei...",
+      "Er zijn twee stijlen roerei: het Engelse luchtige roerei (klokken, hoog vuur, grote stukken) en het Franse romige roerei (constant roeren, laag vuur, een bijna vloeibare custardconsistentie).",
+      "Het Franse roerei vraagt geduld — tien tot vijftien minuten op het laagste vuur — maar het resultaat is onvergelijkbaar zacht en romig. Beide stijlen zijn pas klaar van het vuur als ze er nog te zacht uitzien.",
     ],
     tips: [
       "Voeg zout toe vóór het kloppen en laat de eieren minimaal vijftien minuten rusten.",
+      "Gebruik een rubberen spatel voor Frans roerei: die krabt de bodem schoon zonder scheuren.",
+      "Finish met een klontje koude boter van het vuur: dit stopt de garing en geeft glans.",
     ],
     relatedTechniqueIds: ["eieren-omelet"],
     cookware: ["Kleine koekenpan of steelpan", "Spatel of houten lepel"],
@@ -724,10 +817,13 @@ export const TECHNIQUES: Technique[] = [
     level: "gemiddeld",
     heatLevel: "middel",
     body: [
-      "De Franse omelet is een klassieke techniek die behendigheid vraagt...",
+      "De Franse omelet is een klassieke techniek die behendigheid vraagt: het eigeel mengt zich amper met het eiwit, de omelet kleurt nauwelijks en wordt opgerold terwijl de binnenkant nog net vloeibaar is.",
+      "Anders dan een gewoon roerei gaat een goede omelet in minder dan twee minuten. Oefening en een schone anti-aanbak pan zijn de belangrijkste factoren.",
     ],
     tips: [
       "Gebruik een kleine pan: 3 eieren in een 18 cm pan geeft de perfecte dikte.",
+      "Klop de eieren slechts licht — te lang kloppen geeft een rubber textuur.",
+      "Houd de pan schuingehouden terwijl je oprolt: zwaar op de handgreep zodat de omelet naar het uiteinde van de pan schuift.",
     ],
     relatedTechniqueIds: ["eieren-roerei"],
     cookware: ["Kleine koekenpan (18–20 cm, anti-aanbak)", "Vork", "Houten spatel"],
@@ -742,10 +838,13 @@ export const TECHNIQUES: Technique[] = [
     level: "gevorderd",
     heatLevel: "laag",
     body: [
-      "Emulsies op basis van eigeel — hollandaise en mayonaise — zijn twee van de meest fundamentele sauzen...",
+      "Emulsies op basis van eigeel — hollandaise en mayonaise — zijn twee van de meest fundamentele sauzen in de klassieke keuken. Eigeel bevat lecitine, een natuurlijke emulgator die olie en water stabiel verbindt.",
+      "Bij hollandaise doe je dit warm (bain-marie op 60–65°C), bij mayonaise koud (garde of staafmixer). Temperatuurbeheersing is cruciaal: te heet en de dooier stolt, te koud en de emulsie breekt.",
     ],
     tips: [
       "Voeg het vet altijd in een dun straaltje toe, nooit in één keer.",
+      "Als de emulsie breekt, begin opnieuw met een frisch eigeel en voeg de gebroken saus druppelsgewijs toe.",
+      "Gebruik eidooiers op kamertemperatuur voor de stabilste emulsie.",
     ],
     relatedTechniqueIds: ["emulgeren", "hollandaise", "mayonaise"],
     cookware: ["Garde", "Bain-marie", "Staafmixer"],
@@ -761,10 +860,13 @@ export const TECHNIQUES: Technique[] = [
     level: "basis",
     heatLevel: "hoog",
     body: [
-      "Blancheren is het kort onderdompelen van groenten in kokend gezouten water, gevolgd door direct afkoelen in ijswater...",
+      "Blancheren is het kort onderdompelen van groenten in kokend gezouten water, gevolgd door direct afkoelen in ijswater. Het kookwater doodt enzymen die kleur afbreken; het ijswater stopt de garing onmiddellijk.",
+      "Het resultaat: groenten die felgroen, knapperig en 80–90% gaar zijn — klaar voor roerbakken, salade of invriezen. Blancheer in grote porties water zodat de temperatuur niet te sterk daalt.",
     ],
     tips: [
       "Gebruik royaal gezouten kookwater — pasta-zout-niveau — voor de beste smaak en kleur.",
+      "Zorg dat het ijswater echt ijskoud is: veel ijs, weinig water.",
+      "Blancheer groenten in kleine porties zodat het water snel terugkeert naar het kookpunt.",
     ],
     relatedVeg: ["Green beans", "Spinach", "Broad bean", "Broccoli", "Cauliflower"],
     relatedTechniqueIds: ["groenten-roerbakken", "groenten-rauw"],
@@ -779,10 +881,13 @@ export const TECHNIQUES: Technique[] = [
     level: "basis",
     heatLevel: "hoog",
     body: [
-      "Roosteren in de oven transformeert groenten door karamelisatie en de Maillard-reactie...",
+      "Roosteren in de oven transformeert groenten door karamelisatie en de Maillard-reactie. De vochtige binnenkant gaart zacht en zoet, terwijl het droge oppervlak geconcentreerd en licht krokant wordt.",
+      "De sleutel: hoge temperatuur (200–220°C), voldoende ruimte op de bakplaat zodat groenten niet op elkaar liggen, en goed gedroogde, licht ingevette groenten.",
     ],
     tips: [
       "Droog groenten goed voor het roosteren: vochtige groenten stomen in de oven.",
+      "Draai halverwege de oventijd om voor een gelijkmatig geroosterd resultaat.",
+      "Voeg zachte kruiden (basilicum, peterselie) pas na het roosteren toe — harde kruiden (tijm, rozemarijn) kunnen mee in de oven.",
     ],
     relatedVeg: ["Cauliflower", "Beetroot", "Carrot", "Kohlrabi", "Aubergine", "Pumpkin / squash"],
     relatedTechniqueIds: ["sauteren", "groenten-smoren"],
@@ -798,10 +903,13 @@ export const TECHNIQUES: Technique[] = [
     level: "gemiddeld",
     heatLevel: "middel",
     body: [
-      "Groenten smoren is ze langzaam laten garen in een kleine hoeveelheid vloeistof in een afgedekte pan...",
+      "Groenten smoren is ze langzaam laten garen in een kleine hoeveelheid vloeistof in een afgedekte pan. De vochtige warmte maakt stevige groenten zoals venkel, witlof en prei zijdeachtig zacht, terwijl hun bitterheid afneemt en zoetheid naar voren komt.",
+      "Het vocht wordt aan het einde ingekookt tot een geconcentreerde, glanzende saus.",
     ],
     tips: [
-      "Voeg een klontje koude boter toe aan het ende voor een glanzende, rijke saus.",
+      "Voeg een klontje koude boter toe aan het einde voor een glanzende, rijke saus.",
+      "Smoor groenten snijkant naar beneden voor de beste karamelisatie aan de onderkant.",
+      "Gebruik bouillon in plaats van water voor meer smaakdiepte in de smoorvloeistof.",
     ],
     relatedVeg: ["Chicory", "Endive", "Fennel", "Celery", "Leek"],
     relatedTechniqueIds: ["smoren", "groenten-roasten"],
@@ -817,10 +925,13 @@ export const TECHNIQUES: Technique[] = [
     level: "basis",
     heatLevel: "hoog",
     body: [
-      "Roerbakken is de snelste methode voor groenten: hoog vuur, weinig vet, constante beweging...",
+      "Roerbakken is de snelste methode voor groenten: hoog vuur, weinig vet, constante beweging en kleine porties per keer. De hitte moet zo hoog zijn dat het voedsel sist zodra het de pan raakt.",
+      "Te veel tegelijk verlaagt de temperatuur, waardoor groenten stomen in plaats van bakken — en dan verliezen ze kleur, textuur en smaak.",
     ],
     tips: [
       "Verwarm de wok of pan tot het rookpunt voor je olie toevoegt.",
+      "Voeg ingrediënten toe van het langst naar het kortst gaar: harde wortels eerst, zachte bladgroenten als laatste.",
+      "Saus of marinade toevoegen op het allerlaatste moment: zo behoudt de groente haar bite.",
     ],
     relatedVeg: ["Bell pepper", "Courgette", "Green beans", "Sugar snap / mangetout", "Chard", "Spinach"],
     relatedTechniqueIds: ["sauteren", "blancheren"],
@@ -835,10 +946,13 @@ export const TECHNIQUES: Technique[] = [
     level: "basis",
     heatLevel: "geen",
     body: [
-      "Rauwe bereidingen zijn in opkomst: van carpaccio van rode biet tot gefermenteerde koolraap...",
+      "Rauwe bereidingen halen het beste uit groenten die bij verhitting textuur of vitaminen verliezen: bieten, koolrabi, venkel, radijs en komkommer zijn op hun knapperigst en meest aromatisch rauw.",
+      "De sleutel is het balanceren van zout, zuur en vet om rauwe structuren smakelijk en verteerbaar te maken — van dunne carpaccio tot gefermenteerde koolraap.",
     ],
     tips: [
       "Gebruik mandoline voor flinterdunne schijfjes die snel marineren.",
+      "Zout rauwe groenten 10–15 minuten voor gebruik om de smaken te openen en lichte bitterheid te reduceren.",
+      "Fermenteren is de meest smaakintensieve rauwe bereiding: zout plus tijd creëert complexiteit die geen enkel recept kan evenaren.",
     ],
     relatedVeg: ["Beetroot", "Kohlrabi", "Radish", "Cucumber", "Carrot"],
     relatedTechniqueIds: ["marineren", "julienne", "chiffonade"],
@@ -856,15 +970,15 @@ export const TECHNIQUES: Technique[] = [
     heatLevel: "laag",
     body: [
       "Een roux is het klassieke bindmiddel voor soepen en sauzen, bestaande uit gelijke delen vet (meestal boter) en bloem. Door de bloem in het vet te garen, zwellen de zetmeelkorrels op zonder te klonteren, waardoor ze vloeistof effectief kunnen binden wanneer deze wordt toegevoegd.",
-      "Afhankelijk van de kooktijd verandert een roux van kleur en smaak: van een blanke roux (korte garing, maximale binding) naar een blonde roux tot een bruine roux (lange garing, nootachtige smaak, minder bindkracht)."
+      "Afhankelijk van de kooktijd verandert een roux van kleur en smaak: van een blanke roux (korte garing, maximale binding) naar een blonde roux tot een bruine roux (lange garing, nootachtige smaak, minder bindkracht).",
     ],
     tips: [
       "Weeg bloem en boter nauwkeurig af — een verhouding van 1:1 is essentieel.",
       "Laat de roux minstens twee minuten garen om de rauwe bloemsmaak volledig te neutraliseren.",
-      "Voeg koude vloeistof toe aan een hete roux, of hete vloeistof aan een afgekoelde roux om klontjes te vermijden."
+      "Voeg koude vloeistof toe aan een hete roux, of hete vloeistof aan een afgekoelde roux om klontjes te vermijden.",
     ],
     relatedTechniqueIds: ["bechamel", "veloute"],
-    cookware: ["Steelpan", "Garde"]
+    cookware: ["Steelpan", "Garde"],
   },
   {
     id: "bechamel",
@@ -876,10 +990,13 @@ export const TECHNIQUES: Technique[] = [
     level: "basis",
     heatLevel: "laag",
     body: [
-      "Béchamel is één van de vijf moedersauzen van de klassieke Franse keuken en de basis voor talloze gerechten...",
+      "Béchamel is één van de vijf moedersauzen van de klassieke Franse keuken en de basis voor lasagne, croque monsieur en gegratineerde groenten. De saus bestaat uit melk, gebonden met een blanke roux van boter en bloem.",
+      "Door warme melk toe te voegen aan de koele roux — of vice versa — en goed te roeren, blijft de saus klontvrij en fluweelzacht.",
     ],
     tips: [
       "Roer altijd met een garde voor een klontvrije saus — een houten lepel laat soms klontjes staan.",
+      "Voeg nootmuskaat toe aan het einde: dit is de klassieke smaakmaker voor béchamel.",
+      "Dek de saus direct af met plasticfolie op het oppervlak om velvorming te voorkomen.",
     ],
     relatedVeg: ["Cauliflower", "Fennel", "Endive"],
     relatedTechniqueIds: ["gratineren", "emulgeren"],
@@ -895,10 +1012,13 @@ export const TECHNIQUES: Technique[] = [
     level: "gemiddeld",
     heatLevel: "middel",
     body: [
-      "Velouté is een moedersaus van witte fond (kip, vis of groente) gebonden met een lichte roux...",
+      "Velouté is een moedersaus van witte fond (kip, vis of groente) gebonden met een lichte roux. De naam betekent 'fluweelachtig' — de textuur moet glad, glanzend en licht zijn.",
+      "Velouté vormt de basis voor afgeleide sauzen zoals suprême (met room), Allemande (met eigeel en room) en Normande (met room en champignons).",
     ],
     tips: [
       "Gebruik alleen heldere, goed gemaakte fond voor een goede velouté.",
+      "Zeven door een fijne zeef na het koken voor de gladste textuur.",
+      "Reduceer de velouté licht voor het afwerken: dit concentreert de smaak en verbetert de consistentie.",
     ],
     relatedTechniqueIds: ["kippenfond", "groentebouillon", "bechamel"],
     cookware: ["Steelpan", "Garde", "Fijne zeef"],
@@ -912,10 +1032,13 @@ export const TECHNIQUES: Technique[] = [
     level: "basis",
     heatLevel: "laag",
     body: [
-      "Een goede tomatensaus vraagt geduld: de tomaten moeten lang en zacht koken om hun zuurheid te verliezen...",
+      "Een goede tomatensaus vraagt geduld: de tomaten moeten lang en zacht koken om hun zuurheid te verliezen en hun zoetheid te concentreren. Begin met een sofrito van ui, knoflook en eventueel wortel in olijfolie.",
+      "Voeg de tomaten toe en laat minstens 45 minuten sudderen. Hoe langer de saus trekt, hoe ronder en geconcentreerder de smaak wordt.",
     ],
     tips: [
-      "Roer de saus regelmatig och houd het vuur laag.",
+      "Roer de saus regelmatig en houd het vuur laag.",
+      "Gebruik San Marzano tomaten of rijpe zomertomaten voor de beste smaak.",
+      "Voeg een snufje suiker toe als de saus te zuur smaakt — dit balanceert de tomatzuren.",
     ],
     relatedVeg: ["Tomato", "Celery", "Carrot"],
     relatedTechniqueIds: ["sudderen", "sauteren"],
@@ -931,10 +1054,13 @@ export const TECHNIQUES: Technique[] = [
     level: "gevorderd",
     heatLevel: "laag",
     body: [
-      "Hollandaise is een warme emulsiesaus van eidooiers en geklaarde boter, met een citroensap...",
+      "Hollandaise is een warme emulsiesaus van eidooiers en geklaarde boter, aangemaakt met citroensap. Ze is de klassieke begeleider van witte asperges en gepocheerde eieren (Eggs Benedict).",
+      "De saus wordt bereid op een bain-marie: de dooiers worden met een wijn-azijnreductie geklopt tot een lintstructuur, waarna de warme geklaarde boter druppelsgewijs wordt toegevoegd.",
     ],
     tips: [
       "De bain-marie mag nooit het kookpunt bereiken: de dooiers mogen niet stollen.",
+      "De juiste consistentie: de saus trekt een lint als je de garde optilt — te dun en ze breekt, te dik en ze smaakt zwaar.",
+      "Houd de afgewerkte hollandaise warm in een bain-marie van 50–55°C; boven 65°C breekt ze.",
     ],
     relatedVeg: ["White asparagus", "Green asparagus"],
     relatedTechniqueIds: ["emulgeren", "eieren-emulsies"],
@@ -952,10 +1078,13 @@ export const TECHNIQUES: Technique[] = [
     level: "basis",
     heatLevel: "geen",
     body: [
-      "Een vinaigrette is de eenvoudigste emulsie in de keuken: azijn en olie verbonden met een emulgator...",
+      "Een vinaigrette is de eenvoudigste emulsie in de keuken: azijn en olie verbonden met een emulgator zoals mosterd of een druppel eigeel. De klassieke verhouding is 1 deel azijn op 3 delen olie, maar smaak bepaalt de balans.",
+      "Mosterd geeft meer binding en houdbaarheid; honing geeft zoetheid en glans. Goed geroerd blijft een vinaigrette enige tijd stabiel.",
     ],
     tips: [
       "Gebruik kwaliteitsazijn: witte wijnazijn, sherryazijn of champagneazijn geven de beste resultaten.",
+      "Maak vinaigrette altijd direct voor gebruik of roer goed door voor serveren.",
+      "Voeg gehakte sjalot toe voor diepte en een zachte bite die de dressing balanceert.",
     ],
     relatedVeg: ["Butterhead lettuce", "Rocket", "Lamb's lettuce", "Beetroot"],
     relatedTechniqueIds: ["emulgeren", "marineren"],
@@ -971,10 +1100,13 @@ export const TECHNIQUES: Technique[] = [
     level: "gemiddeld",
     heatLevel: "geen",
     body: [
-      "Mayonaise is een koude emulsie van eidooier, mosterd, olie en zuur...",
+      "Mayonaise is een koude emulsie van eidooier, mosterd, olie en zuur. Eigeel en mosterd bevatten lecitine, die de olie in kleine druppeltjes omhult en in suspensie houdt.",
+      "Zelfgemaakte mayonaise heeft een rijkere, versere smaak dan fabrieksvariant, en kan naar wens worden aangemaakt met knoflook (aioli), kruiden, dragon of chilipeper.",
     ],
     tips: [
       "Als de mayonaise breekt, voeg een druppel water toe en klop dan snel.",
+      "Voeg de olie in het begin heel langzaam toe — de eerste druppels zijn het meest kritieke moment.",
+      "Gebruik een neutrale olie (zonnebloem, druivenpit) voor basis mayonaise; olijfolie geeft een bittere smaak bij grote hoeveelheden.",
     ],
     relatedTechniqueIds: ["emulgeren", "eieren-emulsies", "vinaigrette"],
     cookware: ["Garde of staafmixer", "Kom of maatbeker"],
@@ -989,10 +1121,13 @@ export const TECHNIQUES: Technique[] = [
     level: "gevorderd",
     heatLevel: "laag",
     body: [
-      "Beurre blanc is een klassieke Franse botersaus gemaakt van een reductie van witte wijn, wijnazijn en sjalotjes...",
+      "Beurre blanc is een klassieke Franse botersaus gemaakt van een reductie van witte wijn, wijnazijn en sjalotjes, afgewerkt met koude boter. De melkeiwitten in de koude boter emulgeren met het water in de reductie, waardoor een lichte, fluweelzachte saus ontstaat.",
+      "Beurre blanc is instabiel en moet direct worden geserveerd: te hoge hitte of te koude bewaring doet de emulsie breken.",
     ],
     tips: [
       "Gebruik koude boter in kleine stukjes — dit is essentieel voor de emulsie.",
+      "Reduceer de wijn-azijnreductie tot slechts 2–3 eetlepels voor een geconcentreerde basis.",
+      "Zeef de sjalotjes voor het serveren voor een gladde, elegante textuur.",
     ],
     relatedVeg: ["White asparagus", "Green asparagus", "Leek"],
     relatedTechniqueIds: ["emulgeren", "fond-deglaceren"],
@@ -1009,15 +1144,15 @@ export const TECHNIQUES: Technique[] = [
     heatLevel: "laag",
     body: [
       "Monteren (of monter au beurre) is het glanzend en licht binden van een warme saus door er op het allerlaatste moment ijskoude klontjes boter door te kloppen of te zwenken. De saus mag hierna absoluut niet meer koken, anders smelt het vet volledig en breekt de binding.",
-      "De melkvreemden en eiwitten in de koude boter werken als een natuurlijke emulgator die de vetdruppeltjes in de saus verdeelt. Dit geeft de saus een zijdezachte textuur, een rijke smaak en een prachtige glans."
+      "De melkeiwitten en vaste bestanddelen in de koude boter werken als een natuurlijke emulgator die de vetdruppeltjes in de saus verdeelt. Dit geeft de saus een zijdezachte textuur, een rijke smaak en een prachtige glans.",
     ],
     tips: [
       "Zorg dat de boter echt ijskoud is en in kleine blokjes is gesneden.",
       "Haal de pan volledig van het vuur voordat je begint met monteren.",
-      "Serveer de saus onmiddellijk na het monteren om kwaliteitsverlies te voorkomen."
+      "Serveer de saus onmiddellijk na het monteren om kwaliteitsverlies te voorkomen.",
     ],
     relatedTechniqueIds: ["beurre-blanc", "emulgeren"],
-    cookware: ["Steelpan", "Garde of panhandvat"]
+    cookware: ["Steelpan", "Garde of panhandvat"],
   },
 
   // ─── SAUZEN › Fonds & Bouillons ──────────────────────────────────────────
@@ -1031,10 +1166,13 @@ export const TECHNIQUES: Technique[] = [
     level: "basis",
     heatLevel: "laag",
     body: [
-      "Kippenfond is de basis van de klassieke keuken: soepen, sauzen, risotto en smoorgerechten...",
+      "Kippenfond is de basis van de klassieke keuken: soepen, sauzen, risotto en smoorgerechten worden er allemaal beter van. Een goede fond begint met rug, vleugels en karkassen (voor collageen en smaak), gespoeld in koud water en dan langzaam verhit.",
+      "Het schuim dat bij het eerste koken opstijgt, schep je zorgvuldig af voor een heldere fond. Sudder daarna 2–3 uur op laag vuur zonder deksel.",
     ],
     tips: [
       "Gebruik nooit deksel op de fond: de stoom geeft troebele resultaten.",
+      "Voeg groenten pas na het eerste afschuimen toe — zo blijft de bouillon helderder.",
+      "Koel de afgezeefde fond snel af in een ijsbad en bewaar geportioneerd in de vriezer.",
     ],
     relatedVeg: ["Carrot", "Celery", "Leek", "Yellow onion"],
     relatedTechniqueIds: ["sudderen", "veloute", "smoren"],
@@ -1050,10 +1188,13 @@ export const TECHNIQUES: Technique[] = [
     level: "basis",
     heatLevel: "laag",
     body: [
-      "Groentebouillon is lichter en sneller klaar dan vleesfond: vijfenveertig minuten sudderen geeft al een aromatische basis...",
+      "Groentebouillon is lichter en sneller klaar dan vleesfond: vijfenveertig minuten sudderen geeft al een aromatische basis. Gebruik een gevarieerd palet — ui, wortel, selderij, venkel, prei.",
+      "Beperk aardappelen en brassica's, die troebelen of ongewenste smaken geven. Voeg een Parmezaankorst of kombu-zeewier toe voor extra umami-diepte.",
     ],
     tips: [
       "Voeg een stuk kombu-zeewier toe voor umami-diepte.",
+      "Rooste de groenten licht in de oven voor het sudderen voor een rijkere, diepere bouillon.",
+      "Kook groentebouillon nooit langer dan een uur — daarna worden de smaken bitter en modderig.",
     ],
     relatedVeg: ["Carrot", "Celery", "Leek", "Fennel", "Yellow onion"],
     relatedTechniqueIds: ["sudderen", "veloute"],
@@ -1068,10 +1209,13 @@ export const TECHNIQUES: Technique[] = [
     level: "gevorderd",
     heatLevel: "hoog",
     body: [
-      "Bruine fond is de rijkste, meest complexe basis in de klassieke keuken. De botten worden eerst geroosterd...",
+      "Bruine fond is de rijkste, meest complexe basis in de klassieke keuken. De botten worden eerst geroosterd in een hete oven (220°C) tot ze diepbruin zijn — dit karameliseert het collageen en de eiwitten en geeft de fond zijn diepe kleur en umami-rijkdom.",
+      "Daarna sudderen ze met geroosterde groenten en tomatenpuree gedurende acht tot vierentwintig uur.",
     ],
     tips: [
       "Rooster de botten tot ze echt diep bruin zijn — dit geeft de fond zijn kleur.",
+      "Voeg tomatenpuree toe aan de geroosterde groenten en laat deze even meebakken voor extra diepte.",
+      "Reduceer de afgezeefde fond tot demi-glace (half volume) voor een geconcentreerde saus-basis.",
     ],
     relatedVeg: ["Carrot", "Celery", "Yellow onion"],
     relatedTechniqueIds: ["smoren", "fond-deglaceren"],
