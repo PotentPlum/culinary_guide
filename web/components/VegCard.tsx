@@ -35,7 +35,7 @@ export default function VegCard({ veg, month, density = "comfortable", onOpen, l
 
   return (
     <button className={`veg-card density-${density}`} onClick={() => onOpen(veg)} aria-label={`Bekijk ${veg.nl}`}>
-      <div className="veg-card-illus">
+      <div className="veg-card-illus" style={{ '--veg-color': veg.color } as React.CSSProperties}>
         <VegToken veg={veg} size={tokenSize} />
         <div className="veg-card-status">
           <StatusDot status={status} />
