@@ -3287,6 +3287,58 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
   gap: 10px;
 }
 
+.challenge-quantity-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.challenge-quantity-label {
+  font-family: var(--sans);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--ink-soft);
+  white-space: nowrap;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.challenge-quantity-input {
+  width: 96px;
+  height: 38px;
+  padding: 0 12px;
+  background: var(--surface-card);
+  border: 1px solid var(--line-strong);
+  border-radius: 8px;
+  font-family: var(--sans);
+  font-size: 14px;
+  color: var(--ink);
+  transition: border-color 120ms, box-shadow 120ms;
+}
+.challenge-quantity-input::placeholder { color: var(--ink-soft); opacity: 0.5; }
+.challenge-quantity-input:focus { outline: none; border-color: var(--primary); box-shadow: 0 0 0 3px rgba(63,94,42,0.08); }
+.challenge-quantity-input:disabled { opacity: 0.5; cursor: not-allowed; }
+
+.challenge-quantity-select {
+  height: 38px;
+  padding: 0 28px 0 10px;
+  background: var(--surface-card);
+  border: 1px solid var(--line-strong);
+  border-radius: 8px;
+  font-family: var(--sans);
+  font-size: 14px;
+  color: var(--ink);
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%236B7280' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  cursor: pointer;
+  transition: border-color 120ms, box-shadow 120ms;
+}
+.challenge-quantity-select:focus { outline: none; border-color: var(--primary); box-shadow: 0 0 0 3px rgba(63,94,42,0.08); }
+.challenge-quantity-select:disabled { opacity: 0.5; cursor: not-allowed; }
+
 .challenge-input {
   flex: 1;
   height: 48px;

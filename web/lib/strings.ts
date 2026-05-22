@@ -252,6 +252,14 @@ export const UI = {
     timeLimitOver60:        "> 60 minuten",
     simpleLabel:            "Klein & eenvoudig",
     simpleDescription:      "Weinig ingrediënten, alleen wat je doorgaans in huis hebt",
+    // Quantity
+    quantityLabel:          "Hoeveelheid",
+    quantityPlaceholder:    "Bijv. 500",
+    unitLabel:              "Eenheid",
+    unitStuks:              "stuks",
+    unitGram:               "gram",
+    unitMl:                 "ml",
+    unitLiter:              "liter",
     // Result extras
     labelOutputType:        "Resultaat",
     labelRecipe:            "Recept",

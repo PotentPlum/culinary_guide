@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef, useState } from "react";
-import type { ChallengeResponse, ChallengeParams } from "@/lib/types";
+import type { ChallengeResponse, ChallengeParams, IngredientUnit } from "@/lib/types";
 import { UI } from "@/lib/strings";
 import { TECHNIQUES } from "@/lib/techniques";
 import { getFacet } from "@/lib/facets";
@@ -15,6 +15,13 @@ const DIFFICULTY: Record<ChallengeResponse["difficulty"], { label: string; cls: 
 };
 
 const CUISINES = getFacet("cuisine").options.map((o) => o.value);
+
+const UNIT_OPTIONS: { value: IngredientUnit; label: string }[] = [
+  { value: "stuks", label: UI.challenge.unitStuks },
+  { value: "gram",  label: UI.challenge.unitGram },
+  { value: "ml",    label: UI.challenge.unitMl },
+  { value: "liter", label: UI.challenge.unitLiter },
+];
 
 const TIME_OPTIONS: { value: ChallengeParams["timeLimit"]; label: string }[] = [
   { value: undefined, label: UI.challenge.timeLimitAny },
@@ -79,6 +86,7 @@ export default function ChallengePage() {
     setErrorMsg("");
     setIngredient("");
     setSubmitted(null);
+    setParams({});
     setTimeout(() => inputRef.current?.focus(), 0);
   }
 
@@ -115,6 +123,38 @@ export default function ChallengePage() {
           >
             {phase === "loading" ? UI.challenge.loadingBtn : UI.challenge.submitBtn}
           </button>
+        </div>
+
+        <div className="challenge-quantity-row">
+          <label className="challenge-quantity-label" htmlFor="quantity-input">
+            {UI.challenge.quantityLabel}
+          </label>
+          <input
+            id="quantity-input"
+            type="number"
+            min={1}
+            className="challenge-quantity-input"
+            value={params.quantity ?? ""}
+            onChange={(e) => setParam("quantity", e.target.value ? Number(e.target.value) : undefined)}
+            onBlur={() => {
+              if (params.quantity !== undefined && params.quantity < 1) setParam("quantity", 1);
+            }}
+            placeholder={UI.challenge.quantityPlaceholder}
+            disabled={phase === "loading"}
+          />
+          <select
+            id="unit-input"
+            className="challenge-quantity-select"
+            value={params.unit ?? ""}
+            onChange={(e) => setParam("unit", (e.target.value as IngredientUnit) || undefined)}
+            disabled={phase === "loading"}
+            aria-label={UI.challenge.unitLabel}
+          >
+            <option value="">—</option>
+            {UNIT_OPTIONS.map((o) => (
+              <option key={o.value} value={o.value}>{o.label}</option>
+            ))}
+          </select>
         </div>
 
         <div className="challenge-params">
