@@ -175,6 +175,9 @@ export const UI = {
     labelKeywords:           "Trefwoorden",
     labelSuitableForDiet:    "Geschikt voor",
     labelVideo:              "Bekijk video",
+    unitToggleLabel:         "Eenheid",
+    unitUs:                  "US",
+    unitMetric:              "Metrisch",
   },
 
   // Technieken page

@@ -2311,6 +2311,45 @@ body.sans-display .recipe-title { font-family: var(--sans); font-style: normal; 
   line-height: 1;
 }
 
+/* ── Unit system toggle ── */
+.rl-unit-toggle-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+.rl-unit-toggle-label {
+  font-family: var(--mono);
+  font-size: 9.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--ink-soft);
+  opacity: 0.65;
+}
+.rl-unit-toggle {
+  display: flex;
+  border: 1px solid var(--primary);
+  border-radius: 4px;
+  overflow: hidden;
+}
+.rl-unit-btn {
+  padding: 0.25rem 0.75rem;
+  font-family: var(--sans);
+  font-size: 0.8125rem;
+  background: transparent;
+  color: var(--primary);
+  border: none;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+.rl-unit-btn + .rl-unit-btn {
+  border-left: 1px solid var(--primary);
+}
+.rl-unit-btn--active {
+  background: var(--primary);
+  color: #fff;
+}
+
 /* ── Cooking mode toggle ── */
 .rl-cooking-mode-row {
   display: flex;

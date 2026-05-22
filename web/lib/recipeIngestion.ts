@@ -15,9 +15,14 @@ export interface NutritionInfo {
   fat: string | null;
 }
 
+export interface IngredientItem {
+  text: string;
+  textMetric?: string;
+}
+
 export interface IngredientSection {
   sectionName: string;
-  ingredients: string[];
+  ingredients: IngredientItem[];
 }
 
 export interface InstructionStep {
@@ -54,6 +59,7 @@ export interface RecipeOutput {
   nutrition: NutritionInfo;
   ingredientSections: IngredientSection[];
   instructionSections: InstructionSection[];
+  unitSystems?: { hasMetric: true };
 }
 
 // ─── Error type ──────────────────────────────────────────────────────────────
@@ -240,7 +246,7 @@ function normaliseSectionName(raw: string): string {
 export function parseIngredientSections(ingredients: string[]): IngredientSection[] {
   const sections: IngredientSection[] = [];
   let currentName = "Ingredients";
-  let currentItems: string[] = [];
+  let currentItems: IngredientItem[] = [];
 
   for (const item of ingredients) {
     if (isIngredientHeader(item)) {
@@ -253,7 +259,7 @@ export function parseIngredientSections(ingredients: string[]): IngredientSectio
       }
       currentName = normaliseSectionName(item);
     } else {
-      currentItems.push(cleanText(item));
+      currentItems.push({ text: cleanText(item) });
     }
   }
 
@@ -458,6 +464,92 @@ function extractVideo(v: JsonValue | undefined): string | null {
   return null;
 }
 
+// ─── WPRM ingredient extractor ───────────────────────────────────────────────
+
+interface WprmIngredient {
+  uid?: number;
+  amount?: string | number;
+  unit?: string;
+  name?: string;
+  notes?: string;
+  unit_systems?: {
+    "unit-system-1"?: { amount?: string | number; unit?: string };
+    "unit-system-2"?: { amount?: string | number; unit?: string };
+  };
+}
+
+function buildWprmIngredientText(
+  amount: string,
+  unit: string,
+  name: string,
+  notes: string,
+): string {
+  const parts = [amount, unit, name].filter((p) => p !== "");
+  const text = parts.join(" ");
+  return notes ? (text ? `${text}, ${notes}` : notes) : text;
+}
+
+/**
+ * Extracts ingredients from WP Recipe Maker's `window.wprm_recipes` inline JS object.
+ *
+ * WPRM embeds both US Customary (unit-system-1) and Metric (unit-system-2) amounts.
+ * Returns a single section named "Ingrediënten", or null when no WPRM data is found
+ * or on any parse error.
+ */
+export function extractWprmIngredients(html: string): IngredientSection[] | null {
+  if (!html.includes("wprm_recipes")) return null;
+  try {
+    const scriptRe = /<script(?![^>]+\bsrc\b)[^>]*>([\s\S]*?)<\/script>/gi;
+    let match: RegExpExecArray | null;
+
+    while ((match = scriptRe.exec(html)) !== null) {
+      const content = match[1];
+      if (!content.includes("wprm_recipes")) continue;
+
+      // Greedy match to capture the full (potentially deeply nested) JSON object
+      const assignRe = /window\.wprm_recipes\s*=\s*(\{[\s\S]*\})(?:\s*;|\s*$)/;
+      const assignMatch = content.match(assignRe);
+      if (!assignMatch) continue;
+
+      const wprmData = JSON.parse(assignMatch[1]) as Record<
+        string,
+        { ingredients?: WprmIngredient[] }
+      >;
+
+      const firstKey = Object.keys(wprmData)[0];
+      if (!firstKey) return null;
+
+      const rawIngredients = wprmData[firstKey]?.ingredients;
+      if (!Array.isArray(rawIngredients)) return null;
+
+      const items: IngredientItem[] = rawIngredients.map((ing) => {
+        const amount = String(ing.amount ?? "").trim();
+        const unit = String(ing.unit ?? "").trim();
+        const name = String(ing.name ?? "").trim();
+        const notes = String(ing.notes ?? "").trim();
+        const usText = buildWprmIngredientText(amount, unit, name, notes);
+
+        const sys2 = ing.unit_systems?.["unit-system-2"];
+        const metricAmount = String(sys2?.amount ?? "").trim();
+        const metricUnit = String(sys2?.unit ?? "").trim();
+
+        if (metricAmount !== "") {
+          const textMetric = buildWprmIngredientText(metricAmount, metricUnit, name, notes);
+          if (textMetric !== usText) return { text: usText, textMetric };
+        }
+
+        return { text: usText };
+      });
+
+      return [{ sectionName: "Ingrediënten", ingredients: items }];
+    }
+
+    return null;
+  } catch {
+    return null;
+  }
+}
+
 // ─── Public API ───────────────────────────────────────────────────────────────
 
 /**
@@ -481,6 +573,16 @@ export function ingestRecipeFromHtml(html: string): RecipeOutput {
     );
   }
 
+  const schemaIngredientSections = parseIngredientSections(
+    Array.isArray(recipe["recipeIngredient"]) ? (recipe["recipeIngredient"] as string[]) : [],
+  );
+
+  const wprmSections = extractWprmIngredients(html);
+  const ingredientSections = wprmSections ?? schemaIngredientSections;
+  const hasMetric =
+    wprmSections !== null &&
+    wprmSections.some((s) => s.ingredients.some((i) => i.textMetric !== undefined));
+
   return {
     title: cleanText(String(recipe["name"] ?? "")),
     description: cleanText(String(recipe["description"] ?? "")),
@@ -498,12 +600,9 @@ export function ingestRecipeFromHtml(html: string): RecipeOutput {
     aggregateRating: extractAggregateRating(recipe["aggregateRating"]),
     video: extractVideo(recipe["video"]),
     nutrition: extractNutrition(recipe["nutrition"]),
-    ingredientSections: parseIngredientSections(
-      Array.isArray(recipe["recipeIngredient"])
-        ? (recipe["recipeIngredient"] as string[])
-        : [],
-    ),
+    ingredientSections,
     instructionSections: parseInstructionSections(recipe["recipeInstructions"]),
+    ...(hasMetric ? { unitSystems: { hasMetric: true } } : {}),
   };
 }
 

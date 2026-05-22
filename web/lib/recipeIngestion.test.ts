@@ -17,6 +17,7 @@ import {
   RecipeIngestionError,
   cleanText,
   extractJsonLdBlocks,
+  extractWprmIngredients,
   findRecipeNode,
   ingestRecipeFromHtml,
   isIngredientHeader,
@@ -295,7 +296,11 @@ describe("parseIngredientSections — no headers", () => {
     const result = parseIngredientSections(["200g flour", "2 eggs", "100ml milk"]);
     expect(result).toHaveLength(1);
     expect(result[0].sectionName).toBe("Ingredients");
-    expect(result[0].ingredients).toEqual(["200g flour", "2 eggs", "100ml milk"]);
+    expect(result[0].ingredients).toEqual([
+      { text: "200g flour" },
+      { text: "2 eggs" },
+      { text: "100ml milk" },
+    ]);
   });
 
   it("returns a single empty section for an empty array", () => {
@@ -318,9 +323,9 @@ describe("parseIngredientSections — colon headers", () => {
     const result = parseIngredientSections(items);
     expect(result).toHaveLength(2);
     expect(result[0].sectionName).toBe("For the crust");
-    expect(result[0].ingredients).toEqual(["200g butter", "300g flour"]);
+    expect(result[0].ingredients).toEqual([{ text: "200g butter" }, { text: "300g flour" }]);
     expect(result[1].sectionName).toBe("For the filling");
-    expect(result[1].ingredients).toEqual(["4 apples", "2 tbsp sugar"]);
+    expect(result[1].ingredients).toEqual([{ text: "4 apples" }, { text: "2 tbsp sugar" }]);
   });
 
   it("handles list that begins immediately with a header", () => {
@@ -360,7 +365,7 @@ describe("parseIngredientSections — mixed headers", () => {
   it("cleans unicode artifacts in ingredient text", () => {
     const items = ["200g butter", "Bake at 180˚C"];
     const result = parseIngredientSections(items);
-    expect(result[0].ingredients[1]).toBe("Bake at 180°C");
+    expect(result[0].ingredients[1]).toEqual({ text: "Bake at 180°C" });
   });
 });
 
@@ -504,7 +509,11 @@ describe("ingestRecipeFromHtml — root-level recipe", () => {
     const { ingredientSections } = ingestRecipeFromHtml(html);
     expect(ingredientSections).toHaveLength(1);
     expect(ingredientSections[0].sectionName).toBe("Ingredients");
-    expect(ingredientSections[0].ingredients).toEqual(["200g flour", "2 eggs", "100ml milk"]);
+    expect(ingredientSections[0].ingredients).toEqual([
+      { text: "200g flour" },
+      { text: "2 eggs" },
+      { text: "100ml milk" },
+    ]);
   });
 });
 
@@ -621,6 +630,8 @@ describe("ingestRecipeFromHtml — multi-section ingredients", () => {
     expect(ingredientSections[0].ingredients).toHaveLength(2);
     expect(ingredientSections[1].sectionName).toBe("For the filling");
     expect(ingredientSections[1].ingredients).toHaveLength(3);
+    // items are IngredientItem objects
+    expect(ingredientSections[0].ingredients[0]).toEqual({ text: "250g flour" });
   });
 
   it("splits ingredients at uppercase headers", () => {
@@ -834,5 +845,136 @@ describe("parseInstructionSections — HTML in step text", () => {
     ];
     const result = parseInstructionSections(raw);
     expect(result[0].steps[0].text).toBe("Mix fish sauce and sugar.");
+  });
+});
+
+// ─── extractWprmIngredients ───────────────────────────────────────────────────
+
+/** Builds a minimal HTML page with a wprm_recipes inline script. */
+function htmlWithWprm(wprmData: unknown): string {
+  return `<!DOCTYPE html><html><head>
+<script type="application/ld+json">${JSON.stringify({ "@type": "Recipe", name: "Duck Curry", recipeIngredient: ["2 cups coconut milk"] })}</script>
+</head><body>
+<script>
+window.wprm_recipes = ${JSON.stringify(wprmData)};
+</script>
+</body></html>`;
+}
+
+const WPRM_FIXTURE = {
+  "recipe-24724": {
+    ingredients: [
+      {
+        uid: 2,
+        amount: "2",
+        unit: "cups",
+        name: "coconut milk",
+        notes: "",
+        unit_systems: {
+          "unit-system-1": { amount: "2", unit: "cups" },
+          "unit-system-2": { amount: "500", unit: "ml" },
+        },
+      },
+      {
+        uid: 0,
+        amount: "1",
+        unit: "",
+        name: "Chinese barbecued duck",
+        notes: "",
+        unit_systems: {
+          "unit-system-1": { amount: "1", unit: "" },
+          "unit-system-2": { amount: "1", unit: "" },
+        },
+      },
+      {
+        uid: 3,
+        amount: "2",
+        unit: "tbsp",
+        name: "fish sauce",
+        notes: "or to taste",
+        unit_systems: {
+          "unit-system-1": { amount: "2", unit: "tbsp" },
+          "unit-system-2": { amount: "30", unit: "ml" },
+        },
+      },
+    ],
+  },
+};
+
+describe("extractWprmIngredients — basic parsing", () => {
+  it("returns a single section named 'Ingrediënten'", () => {
+    const result = extractWprmIngredients(htmlWithWprm(WPRM_FIXTURE));
+    expect(result).not.toBeNull();
+    expect(result).toHaveLength(1);
+    expect(result![0].sectionName).toBe("Ingrediënten");
+  });
+
+  it("extracts US Customary text for all ingredients", () => {
+    const result = extractWprmIngredients(htmlWithWprm(WPRM_FIXTURE));
+    const items = result![0].ingredients;
+    expect(items[0].text).toBe("2 cups coconut milk");
+    expect(items[1].text).toBe("1 Chinese barbecued duck");
+  });
+
+  it("sets textMetric when metric differs from US text", () => {
+    const result = extractWprmIngredients(htmlWithWprm(WPRM_FIXTURE));
+    const items = result![0].ingredients;
+    expect(items[0].textMetric).toBe("500 ml coconut milk");
+  });
+
+  it("omits textMetric when amounts are identical in both systems", () => {
+    const result = extractWprmIngredients(htmlWithWprm(WPRM_FIXTURE));
+    const items = result![0].ingredients;
+    expect(items[1].textMetric).toBeUndefined();
+  });
+
+  it("includes notes in the ingredient text", () => {
+    const result = extractWprmIngredients(htmlWithWprm(WPRM_FIXTURE));
+    const items = result![0].ingredients;
+    expect(items[2].text).toBe("2 tbsp fish sauce, or to taste");
+    expect(items[2].textMetric).toBe("30 ml fish sauce, or to taste");
+  });
+});
+
+describe("extractWprmIngredients — fallback behaviour", () => {
+  it("returns null when no wprm_recipes script is present", () => {
+    const html = htmlWithJsonLd({ "@type": "Recipe", name: "Test", recipeIngredient: ["1 egg"] });
+    expect(extractWprmIngredients(html)).toBeNull();
+  });
+
+  it("returns null on malformed wprm JSON", () => {
+    const html = `<html><body><script>window.wprm_recipes = { BROKEN };</script></body></html>`;
+    expect(extractWprmIngredients(html)).toBeNull();
+  });
+});
+
+describe("ingestRecipeFromHtml — WPRM override", () => {
+  it("replaces schema.org ingredients with WPRM data when present", () => {
+    const html = htmlWithWprm(WPRM_FIXTURE);
+    const result = ingestRecipeFromHtml(html);
+    expect(result.ingredientSections).toHaveLength(1);
+    expect(result.ingredientSections[0].sectionName).toBe("Ingrediënten");
+    // US text comes from WPRM, not schema.org "2 cups coconut milk" vs schema "2 cups coconut milk"
+    expect(result.ingredientSections[0].ingredients[0].text).toBe("2 cups coconut milk");
+  });
+
+  it("sets unitSystems.hasMetric when any ingredient has a metric alternative", () => {
+    const html = htmlWithWprm(WPRM_FIXTURE);
+    const result = ingestRecipeFromHtml(html);
+    expect(result.unitSystems).toEqual({ hasMetric: true });
+  });
+
+  it("does not set unitSystems when no WPRM data present", () => {
+    const html = htmlWithJsonLd({ "@context": "https://schema.org", ...BASE_RECIPE });
+    const result = ingestRecipeFromHtml(html);
+    expect(result.unitSystems).toBeUndefined();
+  });
+
+  it("falls back to schema.org ingredients (as IngredientItem[]) when no WPRM data", () => {
+    const html = htmlWithJsonLd({ "@context": "https://schema.org", ...BASE_RECIPE });
+    const result = ingestRecipeFromHtml(html);
+    expect(result.ingredientSections[0].ingredients[0]).toEqual({ text: "200g flour" });
+    // No textMetric on schema.org-derived items
+    expect(result.ingredientSections[0].ingredients[0].textMetric).toBeUndefined();
   });
 });
