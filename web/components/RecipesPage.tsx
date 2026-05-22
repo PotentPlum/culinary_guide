@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useRef, useState } from "react";
-import type { RecipeOutput } from "@/lib/recipeIngestion";
+import type { IngredientItem, IngredientSection, RecipeOutput } from "@/lib/recipeIngestion";
 import { UI } from "@/lib/strings";
 import { FACETS, type FacetKey, type RecipeTags, getCuisineColor } from "@/lib/facets";
 import type { RecipeRow } from "@/app/api/recipes/list/route";
@@ -124,7 +124,7 @@ async function saveRemote(item: SavedRecipe): Promise<void> {
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
       name: r.title,
-      ingredients: r.ingredientSections.flatMap((s) => s.ingredients),
+      ingredients: flatIngredientTexts(r.ingredientSections),
       instructions: JSON.stringify(r),
       source_url: item.url,
       source: item.source,
@@ -386,7 +386,7 @@ export default function RecipesPage() {
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({
             name: r.title,
-            ingredients: r.ingredientSections.flatMap(s => s.ingredients),
+            ingredients: flatIngredientTexts(r.ingredientSections),
             instructions: JSON.stringify(r),
             source: updated.source,
             tags: updated.tags ?? {},
@@ -1053,7 +1053,7 @@ function EditRecipePanel({
   const [titleVal, setTitleVal] = useState(target.recipe.title);
   const [descVal, setDescVal] = useState(target.recipe.description ?? "");
   const [ingredientsVal, setIngredientsVal] = useState(
-    target.recipe.ingredientSections.flatMap(s => s.ingredients).join("\n")
+    flatIngredientTexts(target.recipe.ingredientSections).join("\n")
   );
   const [instructionsVal, setInstructionsVal] = useState(
     target.recipe.instructionSections.flatMap(s => s.steps.map(st => st.text)).join("\n")
@@ -1082,7 +1082,7 @@ function EditRecipePanel({
       ...target.recipe,
       title: titleVal.trim(),
       description: descVal.trim(),
-      ingredientSections: [{ sectionName: UI.recipes.sectionIngredients, ingredients: ingredientsVal.split("\n").map(s => s.trim()).filter(Boolean) }],
+      ingredientSections: [{ sectionName: UI.recipes.sectionIngredients, ingredients: ingredientsVal.split("\n").map(s => s.trim()).filter(Boolean).map(text => ({ text })) }],
       instructionSections: [{ sectionName: UI.recipes.sectionInstructions, steps: instructionsVal.split("\n").map(s => s.trim()).filter(Boolean).map((text, i) => ({ stepNumber: i + 1, text })) }],
     };
     const updated: SavedRecipe = {
@@ -1185,23 +1185,32 @@ function EditRecipePanel({
 
 // ─── Serving size scaler ──────────────────────────────────────────────────────
 
-const UNICODE_FRACTIONS: Record<string, string> = {
-  "½": "0.5", "¼": "0.25", "¾": "0.75",
-  "⅓": "0.333", "⅔": "0.667", "⅛": "0.125", "⅜": "0.375",
-  "⅝": "0.625", "⅞": "0.875",
-};
+const FRACTION_REPLACEMENTS: [RegExp, string][] = [
+  [/½/g, "0.5"], [/¼/g, "0.25"], [/¾/g, "0.75"],
+  [/⅓/g, "0.333"], [/⅔/g, "0.667"], [/⅛/g, "0.125"], [/⅜/g, "0.375"],
+  [/⅝/g, "0.625"], [/⅞/g, "0.875"],
+];
 
 function scaleIngredient(text: string, ratio: number): string {
   if (ratio === 1) return text;
   let result = text;
-  for (const [frac, dec] of Object.entries(UNICODE_FRACTIONS)) {
-    result = result.replace(new RegExp(frac, "g"), dec);
+  for (const [re, dec] of FRACTION_REPLACEMENTS) {
+    result = result.replace(re, dec);
   }
   return result.replace(/([\d]+(?:[.,][\d]+)?)/g, (match) => {
     const num = parseFloat(match.replace(",", ".")) * ratio;
     if (num === Math.round(num)) return String(Math.round(num));
     return num.toFixed(1).replace(/\.0$/, "");
   });
+}
+
+function flatIngredientTexts(sections: IngredientSection[]): string[] {
+  return sections.flatMap(s => s.ingredients.map(i => i.text));
+}
+
+function displayIngredient(item: IngredientItem, system: 'us' | 'metric', ratio: number): string {
+  const text = system === 'metric' && item.textMetric ? item.textMetric : item.text;
+  return scaleIngredient(text, ratio);
 }
 
 // ─── Recipe detail ────────────────────────────────────────────────────────────
@@ -1212,6 +1221,8 @@ function RecipeDetail({ recipe }: { recipe: RecipeOutput }) {
   const baseServings = recipe.servings ?? 4;
   const [servings, setServings] = useState<number>(baseServings);
   const ratio = servings / baseServings;
+
+  const [unitSystem, setUnitSystem] = useState<'us' | 'metric'>('us');
 
   const [cookingMode, setCookingMode] = useState(false);
   const [wakeLockUnsupported, setWakeLockUnsupported] = useState(false);
@@ -1236,7 +1247,10 @@ function RecipeDetail({ recipe }: { recipe: RecipeOutput }) {
     return () => { sentinel?.release(); };
   }, [cookingMode]);
 
-  useEffect(() => { setServings(recipe.servings ?? 4); }, [recipe]);
+  useEffect(() => {
+    setServings(recipe.servings ?? 4);
+    setUnitSystem('us');
+  }, [recipe]);
 
   function toggleChecked(key: string) {
     setChecked(prev => {
@@ -1334,6 +1348,24 @@ function RecipeDetail({ recipe }: { recipe: RecipeOutput }) {
             </div>
           </div>
 
+          {recipe.unitSystems?.hasMetric && (
+            <div className="rl-unit-toggle-row">
+              <span className="rl-unit-toggle-label">{UI.recipes.unitToggleLabel}</span>
+              <div className="rl-unit-toggle">
+                <button
+                  type="button"
+                  className={`rl-unit-btn${unitSystem === 'us' ? ' rl-unit-btn--active' : ''}`}
+                  onClick={() => setUnitSystem('us')}
+                >{UI.recipes.unitUs}</button>
+                <button
+                  type="button"
+                  className={`rl-unit-btn${unitSystem === 'metric' ? ' rl-unit-btn--active' : ''}`}
+                  onClick={() => setUnitSystem('metric')}
+                >{UI.recipes.unitMetric}</button>
+              </div>
+            </div>
+          )}
+
           <div className="rl-cooking-mode-row">
             <span className="rl-cooking-mode-text">
               {UI.recipes.cookingMode}
@@ -1366,10 +1398,10 @@ function RecipeDetail({ recipe }: { recipe: RecipeOutput }) {
                 <p className="rl-detail-section-name">{section.sectionName}</p>
               )}
               <ul className="rl-ing-list">
-                {section.ingredients.map((ing, ii) => {
+                {section.ingredients.map((item, ii) => {
                   const key = `${si}-${ii}`;
                   const isChecked = checked.has(key);
-                  const scaledIng = scaleIngredient(ing, ratio);
+                  const scaledIng = displayIngredient(item, unitSystem, ratio);
                   return (
                     <li key={ii} className={`rl-ing-item${isChecked ? " rl-ing-item--checked" : ""}`}>
                       <label className="rl-ing-label">

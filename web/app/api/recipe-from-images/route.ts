@@ -54,7 +54,7 @@ function toRecipeOutput(flat: FlatRecipe): RecipeOutput {
     aggregateRating: null,
     video: null,
     nutrition: { calories: null, protein: null, carbs: null, fat: null },
-    ingredientSections: [{ sectionName: "Ingrediënten", ingredients: flat.ingredients ?? [] }],
+    ingredientSections: [{ sectionName: "Ingrediënten", ingredients: (flat.ingredients ?? []).map(text => ({ text })) }],
     instructionSections: [{ sectionName: "Bereiding", steps }],
   };
 }
