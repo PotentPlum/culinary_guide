@@ -12,11 +12,15 @@ export type SavedRecipe = {
   updated_at: string;
 };
 
+export type IngredientUnit = "stuks" | "gram" | "ml" | "liter";
+
 export type ChallengeParams = {
   technique?: string;
   cuisine?: string;
   timeLimit?: "<15" | "<30" | "<60" | ">60";
   simpleAndSmall?: boolean;
+  quantity?: number;
+  unit?: IngredientUnit;
 };
 
 export type RecipeStep = {

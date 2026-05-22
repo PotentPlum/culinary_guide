@@ -58,7 +58,11 @@ type ClaudeTextBlock = { type: "text"; text: string };
 type ClaudeContent = ClaudeTextBlock[];
 
 function buildUserMessage(ingredient: string, params: ChallengeParams): string {
-  const lines = [`Ingrediënt: ${ingredient}`];
+  const ingredientLine =
+    params.quantity && params.unit
+      ? `Ingrediënt: ${params.quantity} ${params.unit} ${ingredient}`
+      : `Ingrediënt: ${ingredient}`;
+  const lines = [ingredientLine];
 
   if (params.technique) {
     lines.push(`Techniek: ${params.technique}`);
