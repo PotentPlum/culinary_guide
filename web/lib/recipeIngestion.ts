@@ -30,6 +30,11 @@ export interface InstructionSection {
   steps: InstructionStep[];
 }
 
+export interface AggregateRating {
+  ratingValue: number | null;
+  ratingCount: number | null;
+}
+
 export interface RecipeOutput {
   title: string;
   description: string;
@@ -43,6 +48,9 @@ export interface RecipeOutput {
   image: string | null;
   author: string | null;
   suitableForDiet: string[];
+  datePublished: string | null;
+  aggregateRating: AggregateRating | null;
+  video: string | null;
   nutrition: NutritionInfo;
   ingredientSections: IngredientSection[];
   instructionSections: InstructionSection[];
@@ -420,6 +428,36 @@ function extractAuthor(v: JsonValue | undefined): string | null {
   return null;
 }
 
+function extractAggregateRating(v: JsonValue | undefined): AggregateRating | null {
+  if (!v || typeof v !== "object" || Array.isArray(v)) return null;
+  const obj = v as JsonObject;
+  const parseNum = (key: string): number | null => {
+    const raw = obj[key];
+    if (raw == null) return null;
+    const n = parseFloat(String(raw));
+    return isNaN(n) ? null : n;
+  };
+  const ratingValue = parseNum("ratingValue");
+  const ratingCount = parseNum("ratingCount") ?? parseNum("reviewCount");
+  if (ratingValue === null && ratingCount === null) return null;
+  return { ratingValue, ratingCount };
+}
+
+function extractVideo(v: JsonValue | undefined): string | null {
+  if (v == null) return null;
+  if (typeof v === "string") return v.trim() || null;
+  if (Array.isArray(v)) {
+    const first = (v as JsonValue[]).find((i) => i && typeof i === "object" && !Array.isArray(i));
+    return first ? extractVideo(first) : null;
+  }
+  if (typeof v === "object") {
+    const obj = v as JsonObject;
+    const url = obj["contentUrl"] ?? obj["embedUrl"] ?? obj["url"];
+    return url ? String(url).trim() || null : null;
+  }
+  return null;
+}
+
 // ─── Public API ───────────────────────────────────────────────────────────────
 
 /**
@@ -456,6 +494,9 @@ export function ingestRecipeFromHtml(html: string): RecipeOutput {
     image: extractImage(recipe["image"]),
     author: extractAuthor(recipe["author"]),
     suitableForDiet: toStringArray(recipe["suitableForDiet"]),
+    datePublished: recipe["datePublished"] ? String(recipe["datePublished"]).trim() || null : null,
+    aggregateRating: extractAggregateRating(recipe["aggregateRating"]),
+    video: extractVideo(recipe["video"]),
     nutrition: extractNutrition(recipe["nutrition"]),
     ingredientSections: parseIngredientSections(
       Array.isArray(recipe["recipeIngredient"])

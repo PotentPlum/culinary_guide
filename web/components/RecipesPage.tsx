@@ -4,6 +4,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import type { RecipeOutput } from "@/lib/recipeIngestion";
 import { UI } from "@/lib/strings";
 import { FACETS, type FacetKey, type RecipeTags, getCuisineColor } from "@/lib/facets";
+import type { RecipeRow } from "@/app/api/recipes/list/route";
 
 type Tab = "url" | "photo";
 type Phase = "idle" | "loading" | "error" | "done";
@@ -57,16 +58,7 @@ async function fetchRemoteSaved(): Promise<SavedRecipe[]> {
   try {
     const res = await fetch("/api/recipes/list");
     if (!res.ok) return [];
-    const json = (await res.json()) as {
-      recipes: Array<{
-        id: string; name: string; instructions: string; source_url: string; source: string;
-        tags?: RecipeTags; created_at: string; description?: string;
-        prep_time?: number | null; cook_time?: number | null; total_time?: number | null;
-        servings?: number | null; cuisine?: string[]; category?: string[];
-        keywords?: string[]; image_url?: string | null; author?: string | null;
-        suitable_for_diet?: string[]; nutrition?: RecipeOutput["nutrition"];
-      }>
-    };
+    const json = (await res.json()) as { recipes: RecipeRow[] };
     return (json.recipes ?? []).map((row) => {
       let recipe: RecipeOutput;
       try {
@@ -85,12 +77,14 @@ async function fetchRemoteSaved(): Promise<SavedRecipe[]> {
           image: row.image_url ?? null,
           author: row.author ?? null,
           suitableForDiet: row.suitable_for_diet ?? [],
+          datePublished: row.date_published ?? null,
+          aggregateRating: row.aggregate_rating ?? null,
+          video: row.video_url ?? null,
           nutrition: row.nutrition ?? { calories: null, protein: null, carbs: null, fat: null },
           ingredientSections: [],
           instructionSections: [],
         };
       }
-      // Overlay dedicated columns onto parsed recipe so they stay in sync
       recipe = {
         ...recipe,
         description: row.description ?? recipe.description,
@@ -98,12 +92,15 @@ async function fetchRemoteSaved(): Promise<SavedRecipe[]> {
         cookTimeMinutes: row.cook_time ?? recipe.cookTimeMinutes,
         totalTimeMinutes: row.total_time ?? recipe.totalTimeMinutes,
         servings: row.servings ?? recipe.servings,
-        cuisine: row.cuisine?.length ? row.cuisine : recipe.cuisine,
-        category: row.category?.length ? row.category : recipe.category,
-        keywords: row.keywords?.length ? row.keywords : (recipe.keywords ?? []),
+        cuisine: row.cuisine ?? recipe.cuisine,
+        category: row.category ?? recipe.category,
+        keywords: row.keywords ?? recipe.keywords ?? [],
         image: row.image_url ?? recipe.image ?? null,
         author: row.author ?? recipe.author ?? null,
-        suitableForDiet: row.suitable_for_diet?.length ? row.suitable_for_diet : (recipe.suitableForDiet ?? []),
+        suitableForDiet: row.suitable_for_diet ?? recipe.suitableForDiet ?? [],
+        datePublished: row.date_published ?? recipe.datePublished ?? null,
+        aggregateRating: row.aggregate_rating ?? recipe.aggregateRating ?? null,
+        video: row.video_url ?? recipe.video ?? null,
         nutrition: row.nutrition ?? recipe.nutrition,
       };
       return {
@@ -137,12 +134,15 @@ async function saveRemote(item: SavedRecipe): Promise<void> {
       cook_time: r.cookTimeMinutes ?? null,
       total_time: r.totalTimeMinutes ?? null,
       servings: r.servings ?? null,
-      cuisine: Array.isArray(r.cuisine) ? r.cuisine : r.cuisine ? [r.cuisine] : [],
-      category: Array.isArray(r.category) ? r.category : r.category ? [r.category] : [],
+      cuisine: toArray(r.cuisine),
+      category: toArray(r.category),
       keywords: r.keywords ?? [],
       image_url: r.image ?? null,
       author: r.author ?? null,
       suitable_for_diet: r.suitableForDiet ?? [],
+      date_published: r.datePublished ?? null,
+      aggregate_rating: r.aggregateRating ?? null,
+      video_url: r.video ?? null,
       nutrition: r.nutrition ?? {},
     }),
   });
@@ -350,12 +350,15 @@ export default function RecipesPage() {
   }
 
   function handleRemoveSaved(savedUrl: string) {
-    const target = savedRecipes.find((r) => r.url === savedUrl);
-    const updated = savedRecipes.filter((r) => r.url !== savedUrl);
+    let remoteId: string | undefined;
+    const updated = savedRecipes.filter((r) => {
+      if (r.url === savedUrl) { remoteId = r.remoteId; return false; }
+      return true;
+    });
     setSavedRecipes(updated);
     localStorage.setItem(STORAGE_KEY, JSON.stringify(updated));
-    if (target?.remoteId) {
-      fetch(`/api/recipes/${target.remoteId}`, { method: "DELETE" }).catch(() => {});
+    if (remoteId) {
+      fetch(`/api/recipes/${remoteId}`, { method: "DELETE" }).catch(() => {});
     }
   }
 
@@ -392,12 +395,15 @@ export default function RecipesPage() {
             cook_time: r.cookTimeMinutes ?? null,
             total_time: r.totalTimeMinutes ?? null,
             servings: r.servings ?? null,
-            cuisine: Array.isArray(r.cuisine) ? r.cuisine : r.cuisine ? [r.cuisine] : [],
-            category: Array.isArray(r.category) ? r.category : r.category ? [r.category] : [],
+            cuisine: toArray(r.cuisine),
+            category: toArray(r.category),
             keywords: r.keywords ?? [],
             image_url: r.image ?? null,
             author: r.author ?? null,
             suitable_for_diet: r.suitableForDiet ?? [],
+            date_published: r.datePublished ?? null,
+            aggregate_rating: r.aggregateRating ?? null,
+            video_url: r.video ?? null,
             nutrition: r.nutrition ?? {},
           }),
         });
@@ -937,10 +943,8 @@ function RecipeCard({
       vals.flatMap(v => v.split(",").map(s => s.trim())).filter(Boolean);
 
     if (saved.tags && Object.keys(saved.tags).length > 0) {
-      const all = splitAndTrim(Object.values(saved.tags).flat());
-      const seen = new Set<string>();
-      const deduped = all.filter(t => { if (seen.has(t)) return false; seen.add(t); return true; });
-      return deduped.slice(0, 3);
+      const uniqueTags = [...new Set(splitAndTrim(Object.values(saved.tags).flat()))];
+      return uniqueTags.slice(0, 3);
     }
     return splitAndTrim([...toArray(saved.recipe.cuisine), ...toArray(saved.recipe.category)]).slice(0, 3);
   })();
@@ -1254,6 +1258,9 @@ function RecipeDetail({ recipe }: { recipe: RecipeOutput }) {
   const categories = toArray(recipe.category);
   const hasMeta = times.length > 0 || cuisines.length > 0 || categories.length > 0;
   const hasNutrition = Object.values(recipe.nutrition).some(Boolean);
+  const keywords = recipe.keywords ?? [];
+  const diets = recipe.suitableForDiet ?? [];
+  const rating = recipe.aggregateRating;
 
   return (
     <article className="rl-detail">
@@ -1267,6 +1274,37 @@ function RecipeDetail({ recipe }: { recipe: RecipeOutput }) {
           <h1 className="rl-detail-title">{recipe.title}</h1>
           {recipe.description && (
             <p className="rl-detail-desc">{recipe.description}</p>
+          )}
+          {(recipe.author || rating || recipe.datePublished) && (
+            <p className="rl-detail-author">
+              {recipe.author && (
+                <>{UI.recipes.labelAuthor} <span className="rl-detail-author-name">{recipe.author}</span></>
+              )}
+              {rating?.ratingValue != null && (
+                <span className="rl-detail-rating">
+                  {" "}· ★ {rating.ratingValue.toFixed(1)}{rating.ratingCount != null ? ` (${rating.ratingCount})` : ""}
+                </span>
+              )}
+              {recipe.datePublished && (
+                <span className="rl-detail-date-published">
+                  {" "}· {recipe.datePublished.slice(0, 10)}
+                </span>
+              )}
+            </p>
+          )}
+          {diets.length > 0 && (
+            <div className="rl-detail-pills-row" aria-label={UI.recipes.labelSuitableForDiet}>
+              {diets.map((d) => (
+                <span key={d} className="rl-detail-pill rl-detail-pill--diet">{d}</span>
+              ))}
+            </div>
+          )}
+          {keywords.length > 0 && (
+            <div className="rl-detail-pills-row" aria-label={UI.recipes.labelKeywords}>
+              {keywords.map((k) => (
+                <span key={k} className="rl-detail-pill">{k}</span>
+              ))}
+            </div>
           )}
           {hasMeta && (
             <div className="rl-detail-meta">
@@ -1380,6 +1418,22 @@ function RecipeDetail({ recipe }: { recipe: RecipeOutput }) {
             {recipe.nutrition.carbs && <NutritionChip label={UI.recipes.labelCarbs} value={recipe.nutrition.carbs} />}
             {recipe.nutrition.fat && <NutritionChip label={UI.recipes.labelFat} value={recipe.nutrition.fat} />}
           </div>
+        </footer>
+      )}
+      {recipe.video && (
+        <footer className="rl-detail-video">
+          <a
+            href={recipe.video}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="rl-detail-video-link"
+          >
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+              <rect x="1" y="2.5" width="8" height="9" rx="1.2" stroke="currentColor" strokeWidth="1.3"/>
+              <path d="M9 5.5l3.5-2v7L9 8.5" stroke="currentColor" strokeWidth="1.3" strokeLinejoin="round"/>
+            </svg>
+            {UI.recipes.labelVideo}
+          </a>
         </footer>
       )}
     </article>

@@ -171,6 +171,10 @@ export const UI = {
     cookingMode:             "Kookmodus",
     cookingModeActive:       "Scherm blijft aan",
     cookingModeUnsupported:  "Niet beschikbaar op dit apparaat",
+    labelAuthor:             "Recept van",
+    labelKeywords:           "Trefwoorden",
+    labelSuitableForDiet:    "Geschikt voor",
+    labelVideo:              "Bekijk video",
   },
 
   // Technieken page
