@@ -350,9 +350,13 @@ export default function RecipesPage() {
   }
 
   function handleRemoveSaved(savedUrl: string) {
+    const target = savedRecipes.find((r) => r.url === savedUrl);
     const updated = savedRecipes.filter((r) => r.url !== savedUrl);
     setSavedRecipes(updated);
     localStorage.setItem(STORAGE_KEY, JSON.stringify(updated));
+    if (target?.remoteId) {
+      fetch(`/api/recipes/${target.remoteId}`, { method: "DELETE" }).catch(() => {});
+    }
   }
 
   function handleOpenRecipe(saved: SavedRecipe) {
