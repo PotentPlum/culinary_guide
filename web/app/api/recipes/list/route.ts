@@ -1,5 +1,5 @@
 import { supabase } from "@/lib/supabase";
-import type { NutritionInfo } from "@/lib/recipeIngestion";
+import type { NutritionInfo, AggregateRating } from "@/lib/recipeIngestion";
 import type { RecipeTags } from "@/lib/facets";
 
 export type RecipeRow = {
@@ -21,6 +21,9 @@ export type RecipeRow = {
   image_url: string | null;
   author: string | null;
   suitable_for_diet: string[];
+  date_published: string | null;
+  aggregate_rating: AggregateRating | null;
+  video_url: string | null;
   nutrition: NutritionInfo;
 };
 

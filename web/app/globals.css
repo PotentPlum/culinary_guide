@@ -2202,6 +2202,65 @@ body.sans-display .recipe-title { font-family: var(--sans); font-style: normal; 
   color: var(--ink);
 }
 
+/* ── Author / keywords / diet ── */
+.rl-detail-author {
+  margin-top: 10px;
+  font-family: var(--sans);
+  font-size: 13px;
+  color: var(--ink-soft);
+}
+.rl-detail-author-name {
+  color: var(--ink);
+  font-style: italic;
+}
+.rl-detail-rating {
+  color: var(--ink-soft);
+}
+.rl-detail-date-published {
+  color: var(--ink-soft);
+}
+.rl-detail-pills-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 10px;
+}
+.rl-detail-pill {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  font-family: var(--mono);
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--ink-soft);
+  background: var(--surface-warm, var(--surface-card));
+}
+.rl-detail-pill--diet {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+/* ── Video link ── */
+.rl-detail-video {
+  background: var(--surface-card);
+  border: 1px solid var(--line);
+  border-radius: 0 0 16px 16px;
+  border-top: none;
+  padding: 16px 28px;
+}
+.rl-detail-video-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-family: var(--sans);
+  font-size: 13px;
+  color: var(--primary);
+  text-decoration: none;
+}
+.rl-detail-video-link:hover { text-decoration: underline; }
+
 /* ── Serving size scaler ── */
 .rl-servings-row {
   display: flex;

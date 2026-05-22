@@ -10,7 +10,8 @@ export async function PATCH(req: NextRequest, { params }: { params: Promise<{ id
   const {
     name, ingredients, instructions, source, tags,
     description, prep_time, cook_time, total_time, servings,
-    cuisine, category, keywords, image_url, author, suitable_for_diet, nutrition,
+    cuisine, category, keywords, image_url, author, suitable_for_diet,
+    date_published, aggregate_rating, video_url, nutrition,
   } = body as Record<string, unknown>;
   if (!name || !instructions) {
     return Response.json({ error: "Naam en instructies zijn verplicht." }, { status: 400 });
@@ -34,6 +35,9 @@ export async function PATCH(req: NextRequest, { params }: { params: Promise<{ id
       image_url: typeof image_url === "string" ? image_url : null,
       author: typeof author === "string" ? author : null,
       suitable_for_diet: Array.isArray(suitable_for_diet) ? suitable_for_diet : [],
+      date_published: typeof date_published === "string" ? date_published : null,
+      aggregate_rating: aggregate_rating && typeof aggregate_rating === "object" ? aggregate_rating : null,
+      video_url: typeof video_url === "string" ? video_url : null,
       nutrition: nutrition && typeof nutrition === "object" ? nutrition : {},
     })
     .eq("id", id)
