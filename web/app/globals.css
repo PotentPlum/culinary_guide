@@ -312,6 +312,7 @@ body.sans-display .hero-title em {
 .pill.active {
   background: var(--primary);
   color: var(--surface);
+  border-color: transparent;
   box-shadow: 0 2px 6px rgba(63,94,42,0.24);
 }
 .pill-count {
