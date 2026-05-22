@@ -57,7 +57,16 @@ async function fetchRemoteSaved(): Promise<SavedRecipe[]> {
   try {
     const res = await fetch("/api/recipes/list");
     if (!res.ok) return [];
-    const json = (await res.json()) as { recipes: Array<{ id: string; name: string; instructions: string; source_url: string; source: string; tags?: RecipeTags; created_at: string }> };
+    const json = (await res.json()) as {
+      recipes: Array<{
+        id: string; name: string; instructions: string; source_url: string; source: string;
+        tags?: RecipeTags; created_at: string; description?: string;
+        prep_time?: number | null; cook_time?: number | null; total_time?: number | null;
+        servings?: number | null; cuisine?: string[]; category?: string[];
+        keywords?: string[]; image_url?: string | null; author?: string | null;
+        suitable_for_diet?: string[]; nutrition?: RecipeOutput["nutrition"];
+      }>
+    };
     return (json.recipes ?? []).map((row) => {
       let recipe: RecipeOutput;
       try {
@@ -65,17 +74,38 @@ async function fetchRemoteSaved(): Promise<SavedRecipe[]> {
       } catch {
         recipe = {
           title: row.name,
-          description: "",
-          prepTimeMinutes: null,
-          cookTimeMinutes: null,
-          totalTimeMinutes: null,
-          cuisine: [],
-          category: [],
-          nutrition: { calories: null, protein: null, carbs: null, fat: null },
+          description: row.description ?? "",
+          prepTimeMinutes: row.prep_time ?? null,
+          cookTimeMinutes: row.cook_time ?? null,
+          totalTimeMinutes: row.total_time ?? null,
+          servings: row.servings ?? null,
+          cuisine: row.cuisine ?? [],
+          category: row.category ?? [],
+          keywords: row.keywords ?? [],
+          image: row.image_url ?? null,
+          author: row.author ?? null,
+          suitableForDiet: row.suitable_for_diet ?? [],
+          nutrition: row.nutrition ?? { calories: null, protein: null, carbs: null, fat: null },
           ingredientSections: [],
           instructionSections: [],
         };
       }
+      // Overlay dedicated columns onto parsed recipe so they stay in sync
+      recipe = {
+        ...recipe,
+        description: row.description ?? recipe.description,
+        prepTimeMinutes: row.prep_time ?? recipe.prepTimeMinutes,
+        cookTimeMinutes: row.cook_time ?? recipe.cookTimeMinutes,
+        totalTimeMinutes: row.total_time ?? recipe.totalTimeMinutes,
+        servings: row.servings ?? recipe.servings,
+        cuisine: row.cuisine?.length ? row.cuisine : recipe.cuisine,
+        category: row.category?.length ? row.category : recipe.category,
+        keywords: row.keywords?.length ? row.keywords : (recipe.keywords ?? []),
+        image: row.image_url ?? recipe.image ?? null,
+        author: row.author ?? recipe.author ?? null,
+        suitableForDiet: row.suitable_for_diet?.length ? row.suitable_for_diet : (recipe.suitableForDiet ?? []),
+        nutrition: row.nutrition ?? recipe.nutrition,
+      };
       return {
         url: row.source_url,
         source: row.source ?? deriveDomain(row.source_url),
@@ -91,16 +121,29 @@ async function fetchRemoteSaved(): Promise<SavedRecipe[]> {
 }
 
 async function saveRemote(item: SavedRecipe): Promise<void> {
+  const r = item.recipe;
   const res = await fetch("/api/recipes/save", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
-      name: item.recipe.title,
-      ingredients: item.recipe.ingredientSections.flatMap((s) => s.ingredients),
-      instructions: JSON.stringify(item.recipe),
+      name: r.title,
+      ingredients: r.ingredientSections.flatMap((s) => s.ingredients),
+      instructions: JSON.stringify(r),
       source_url: item.url,
       source: item.source,
       tags: item.tags ?? {},
+      description: r.description ?? "",
+      prep_time: r.prepTimeMinutes ?? null,
+      cook_time: r.cookTimeMinutes ?? null,
+      total_time: r.totalTimeMinutes ?? null,
+      servings: r.servings ?? null,
+      cuisine: Array.isArray(r.cuisine) ? r.cuisine : r.cuisine ? [r.cuisine] : [],
+      category: Array.isArray(r.category) ? r.category : r.category ? [r.category] : [],
+      keywords: r.keywords ?? [],
+      image_url: r.image ?? null,
+      author: r.author ?? null,
+      suitable_for_diet: r.suitableForDiet ?? [],
+      nutrition: r.nutrition ?? {},
     }),
   });
   if (!res.ok) {
@@ -329,16 +372,29 @@ export default function RecipesPage() {
     if (activeUrl === updated.url) setRecipe(updated.recipe);
     setEditTarget(null);
     if (updated.remoteId) {
+      const r = updated.recipe;
       try {
         await fetch(`/api/recipes/${updated.remoteId}`, {
           method: "PATCH",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({
-            name: updated.recipe.title,
-            ingredients: updated.recipe.ingredientSections.flatMap(s => s.ingredients),
-            instructions: JSON.stringify(updated.recipe),
+            name: r.title,
+            ingredients: r.ingredientSections.flatMap(s => s.ingredients),
+            instructions: JSON.stringify(r),
             source: updated.source,
             tags: updated.tags ?? {},
+            description: r.description ?? "",
+            prep_time: r.prepTimeMinutes ?? null,
+            cook_time: r.cookTimeMinutes ?? null,
+            total_time: r.totalTimeMinutes ?? null,
+            servings: r.servings ?? null,
+            cuisine: Array.isArray(r.cuisine) ? r.cuisine : r.cuisine ? [r.cuisine] : [],
+            category: Array.isArray(r.category) ? r.category : r.category ? [r.category] : [],
+            keywords: r.keywords ?? [],
+            image_url: r.image ?? null,
+            author: r.author ?? null,
+            suitable_for_diet: r.suitableForDiet ?? [],
+            nutrition: r.nutrition ?? {},
           }),
         });
       } catch { /* silent */ }

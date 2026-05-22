@@ -39,6 +39,10 @@ export interface RecipeOutput {
   servings?: number | null;
   cuisine: string | string[];
   category: string | string[];
+  keywords: string[];
+  image: string | null;
+  author: string | null;
+  suitableForDiet: string[];
   nutrition: NutritionInfo;
   ingredientSections: IngredientSection[];
   instructionSections: InstructionSection[];
@@ -376,6 +380,46 @@ function toStringOrArray(v: JsonValue | undefined): string | string[] {
   return String(v);
 }
 
+function toStringArray(v: JsonValue | undefined): string[] {
+  if (v == null) return [];
+  if (Array.isArray(v)) return (v as JsonValue[]).map(String).filter(Boolean);
+  const s = String(v).trim();
+  return s ? s.split(",").map((t) => t.trim()).filter(Boolean) : [];
+}
+
+function extractImage(v: JsonValue | undefined): string | null {
+  if (v == null) return null;
+  if (typeof v === "string") return v.trim() || null;
+  if (Array.isArray(v)) {
+    const first = (v as JsonValue[]).find((i) => i && typeof i === "string");
+    if (first) return String(first).trim() || null;
+    const obj = (v as JsonValue[]).find((i) => i && typeof i === "object" && !Array.isArray(i));
+    if (obj) return extractImage(obj);
+    return null;
+  }
+  if (typeof v === "object") {
+    const obj = v as JsonObject;
+    const url = obj["url"] ?? obj["contentUrl"];
+    return url ? String(url).trim() || null : null;
+  }
+  return null;
+}
+
+function extractAuthor(v: JsonValue | undefined): string | null {
+  if (v == null) return null;
+  if (typeof v === "string") return v.trim() || null;
+  if (Array.isArray(v)) {
+    const names = (v as JsonValue[]).map(extractAuthor).filter(Boolean);
+    return names.length ? names.join(", ") : null;
+  }
+  if (typeof v === "object") {
+    const obj = v as JsonObject;
+    const name = obj["name"];
+    return name ? String(name).trim() || null : null;
+  }
+  return null;
+}
+
 // ─── Public API ───────────────────────────────────────────────────────────────
 
 /**
@@ -408,6 +452,10 @@ export function ingestRecipeFromHtml(html: string): RecipeOutput {
     servings: parseServings(recipe["recipeYield"]),
     cuisine: toStringOrArray(recipe["recipeCuisine"]),
     category: toStringOrArray(recipe["recipeCategory"]),
+    keywords: toStringArray(recipe["keywords"]),
+    image: extractImage(recipe["image"]),
+    author: extractAuthor(recipe["author"]),
+    suitableForDiet: toStringArray(recipe["suitableForDiet"]),
     nutrition: extractNutrition(recipe["nutrition"]),
     ingredientSections: parseIngredientSections(
       Array.isArray(recipe["recipeIngredient"])
