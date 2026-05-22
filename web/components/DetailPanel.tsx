@@ -36,7 +36,7 @@ export default function DetailPanel({ veg, month, onClose }: Props) {
       <aside className="detail-panel" onClick={(e) => e.stopPropagation()}>
         <button className="detail-close" onClick={onClose} aria-label={UI.detail.close}>✕</button>
 
-        <div className="detail-hero" style={{ background: veg.color }}>
+        <div className="detail-hero" style={{ '--hero-color': veg.color } as React.CSSProperties}>
           <div className="detail-illus">
             <VegToken veg={veg} size={180} />
           </div>
