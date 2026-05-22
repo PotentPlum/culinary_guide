@@ -670,10 +670,10 @@ export const TECHNIQUES: Technique[] = [
     heatLevel: "geen",
     body: [
       "Het ontleden van gevogelte — een hele kip in acht stukken verdelen — is een fundamentele keukenbekwaamheid die tijd en geld bespaart. Een heel dier is goedkoper dan losse stukken en geeft meer controle over de grootte.",
-      "De afsnijdsels gebruik je voor bouillon of puree — er gaat niets verloren. Tourné is een techniek die oefening vergt: begin met grote wortelgroenten zoals pastinaak of wortel voor het meeste snijvlak.",
+      "Het uitbeenmesje volgt de gewrichten en botten nauwkeurig — de sneden horen te glijden, niet te hakken. Begin met het verwijderen van de dijen en vleugels, fileert dan de borsten van het karkas. De afsnijdsels en het karkas gebruik je voor kippenfond — er gaat niets verloren.",
     ],
     tips: [
-      "Gebruik een scherp mesje (uitbeenmesje) voor de precieze werkzaamheden.",
+      "Gebruik een scherp uitbeenmesje voor de precieze werkzaamheden — een koksmes is te groot voor de gewrichten.",
       "Snij altijd langs het bot — voel met het mesje waar het gewricht zit voor je snijdt.",
       "Bewaar het karkas in de vriezer voor de volgende kippenfond.",
     ],
@@ -1193,7 +1193,7 @@ export const TECHNIQUES: Technique[] = [
     ],
     tips: [
       "Voeg een stuk kombu-zeewier toe voor umami-diepte.",
-      "Rooste de groenten licht in de oven voor het sudderen voor een rijkere, diepere bouillon.",
+      "Rooster de groenten licht in de oven voor het sudderen voor een rijkere, diepere bouillon.",
       "Kook groentebouillon nooit langer dan een uur — daarna worden de smaken bitter en modderig.",
     ],
     relatedVeg: ["Carrot", "Celery", "Leek", "Fennel", "Yellow onion"],
