@@ -11,18 +11,21 @@ export async function PATCH(req: NextRequest, { params }: { params: Promise<{ id
   if (!name || !instructions) {
     return Response.json({ error: "Naam en instructies zijn verplicht." }, { status: 400 });
   }
-  const { data, error } = await supabase
-    .from("recipes")
-    .update({
-      name: name as string,
-      ingredients: Array.isArray(ingredients) ? (ingredients as string[]) : [],
-      instructions: instructions as string,
-      source: typeof source === "string" ? source : "",
-      tags: tags && typeof tags === "object" ? tags : {},
-    })
-    .eq("id", id)
-    .select()
-    .single();
+  const basePayload = {
+    name: name as string,
+    ingredients: Array.isArray(ingredients) ? (ingredients as string[]) : [],
+    instructions: instructions as string,
+  };
+  const fullPayload = {
+    ...basePayload,
+    source: typeof source === "string" ? source : "",
+    tags: tags && typeof tags === "object" ? tags : {},
+  };
+
+  let { data, error } = await supabase.from("recipes").update(fullPayload).eq("id", id).select().single();
+  if (error?.message?.toLowerCase().includes("schema cache")) {
+    ({ data, error } = await supabase.from("recipes").update(basePayload).eq("id", id).select().single());
+  }
   if (error) return Response.json({ error: error.message }, { status: 500 });
   return Response.json(data);
 }
