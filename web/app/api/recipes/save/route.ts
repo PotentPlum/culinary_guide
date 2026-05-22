@@ -8,7 +8,11 @@ export async function POST(req: NextRequest) {
   } catch {
     return Response.json({ error: "Ongeldig verzoekformaat." }, { status: 400 });
   }
-  const { name, ingredients, instructions, source_url, source, tags } = body as Record<string, unknown>;
+  const {
+    name, ingredients, instructions, source_url, source, tags,
+    description, prep_time, cook_time, total_time, servings,
+    cuisine, category, keywords, image_url, author, suitable_for_diet, nutrition,
+  } = body as Record<string, unknown>;
   if (!name || !instructions) {
     return Response.json({ error: "Naam en instructies zijn verplicht." }, { status: 400 });
   }
@@ -21,6 +25,18 @@ export async function POST(req: NextRequest) {
       source_url: typeof source_url === "string" ? source_url : "",
       source: typeof source === "string" ? source : "",
       tags: tags && typeof tags === "object" ? tags : {},
+      description: typeof description === "string" ? description : "",
+      prep_time: typeof prep_time === "number" ? prep_time : null,
+      cook_time: typeof cook_time === "number" ? cook_time : null,
+      total_time: typeof total_time === "number" ? total_time : null,
+      servings: typeof servings === "number" ? servings : null,
+      cuisine: Array.isArray(cuisine) ? cuisine : [],
+      category: Array.isArray(category) ? category : [],
+      keywords: Array.isArray(keywords) ? keywords : [],
+      image_url: typeof image_url === "string" ? image_url : null,
+      author: typeof author === "string" ? author : null,
+      suitable_for_diet: Array.isArray(suitable_for_diet) ? suitable_for_diet : [],
+      nutrition: nutrition && typeof nutrition === "object" ? nutrition : {},
     })
     .select()
     .single();
