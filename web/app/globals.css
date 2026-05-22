@@ -422,6 +422,7 @@ body.sans-display .hero-title em {
   border-radius: 999px;
   backdrop-filter: blur(8px);
   box-shadow: 0 1px 4px rgba(30,26,20,0.08);
+  z-index: 1;
 }
 .veg-card-name {
   font-family: var(--serif);
@@ -678,7 +679,7 @@ body.sans-display .cal-name { font-family: var(--sans); font-weight: 600; font-s
   content: '';
   position: absolute;
   inset: 0;
-  background: var(--hero-accent, transparent);
+  background: var(--hero-color, transparent);
   opacity: 0.10;
   pointer-events: none;
 }
