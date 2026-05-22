@@ -873,14 +873,16 @@ function RecipeCard({
 
   // Prefer structured facet tags; fall back to Schema.org cuisine/category
   const displayTags: string[] = (() => {
+    const splitAndTrim = (vals: string[]) =>
+      vals.flatMap(v => v.split(",").map(s => s.trim())).filter(Boolean);
+
     if (saved.tags && Object.keys(saved.tags).length > 0) {
-      const parts: string[] = [
-        ...(saved.tags.dishType ?? []).slice(0, 1),
-        ...(saved.tags.mainIngredient ?? []).slice(0, 1),
-      ];
-      return parts.length > 0 ? parts : Object.values(saved.tags).flat().slice(0, 2);
+      const all = splitAndTrim(Object.values(saved.tags).flat());
+      const seen = new Set<string>();
+      const deduped = all.filter(t => { if (seen.has(t)) return false; seen.add(t); return true; });
+      return deduped.slice(0, 3);
     }
-    return [...toArray(saved.recipe.cuisine), ...toArray(saved.recipe.category)].slice(0, 2);
+    return splitAndTrim([...toArray(saved.recipe.cuisine), ...toArray(saved.recipe.category)]).slice(0, 3);
   })();
 
   return (
