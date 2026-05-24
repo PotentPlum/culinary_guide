@@ -505,7 +505,7 @@ export const TECHNIQUES: Technique[] = [
     ],
     tips: [
       "Begin altijd op middelhoog vuur — een braadpan heeft tijd nodig om gelijkmatig op te warmen.",
-      "Een emaillen braadpan heeft geen inbranden nodig; gietijzer zonder emaillering vraag een regelmatige olie-behandeling.",
+      "Een emaillen braadpan heeft geen inbranden nodig; gietijzer zonder emaillering vraagt een regelmatige olie-behandeling.",
       "Gebruik de braadpan ook als serveerschaal — hij houdt gerechten warm aan tafel.",
     ],
     relatedTechniqueIds: ["smoren", "langzaam-garen", "kippenfond"],
@@ -568,7 +568,7 @@ export const TECHNIQUES: Technique[] = [
       "Dit proces vraagt twee tot vier uur, maar kan grotendeels onbeheerd verlopen in de oven. Kies vlees met veel bindweefsel: sukade, schouder, rib en kuit worden het zachtst en meest smaakvol.",
     ],
     tips: [
-      "Kies vlees met veel bindweefsel: sukade, schouder, rib en kuit worden het zachtst.",
+      "Begin altijd met aanbraden op hoog vuur: het bruine aanbaksel op de bodem is de basis van de uiteindelijke saus.",
       "Smoor op een zo laag mogelijke temperatuur (150–160°C oven) voor het meest malse resultaat.",
       "Laat gesmoord vlees een dag rusten in het braadvocht — opgewarmd smaakt het altijd beter dan vers.",
     ],
@@ -1060,7 +1060,7 @@ export const TECHNIQUES: Technique[] = [
     tips: [
       "De bain-marie mag nooit het kookpunt bereiken: de dooiers mogen niet stollen.",
       "De juiste consistentie: de saus trekt een lint als je de garde optilt — te dun en ze breekt, te dik en ze smaakt zwaar.",
-      "Houd de afgewerkte hollandaise warm in een bain-marie van 50–55°C; boven 65°C breekt ze.",
+      "Houd de afgewerkte hollandaise warm in een bain-marie van 60–63°C en gebruik haar binnen twee uur; boven ±70°C stollen de dooiers en breekt de emulsie.",
     ],
     relatedVeg: ["White asparagus", "Green asparagus"],
     relatedTechniqueIds: ["emulgeren", "eieren-emulsies"],
@@ -1101,7 +1101,7 @@ export const TECHNIQUES: Technique[] = [
     heatLevel: "geen",
     body: [
       "Mayonaise is een koude emulsie van eidooier, mosterd, olie en zuur. Eigeel en mosterd bevatten lecitine, die de olie in kleine druppeltjes omhult en in suspensie houdt.",
-      "Zelfgemaakte mayonaise heeft een rijkere, versere smaak dan fabrieksvariant, en kan naar wens worden aangemaakt met knoflook (aioli), kruiden, dragon of chilipeper.",
+      "Zelfgemaakte mayonaise heeft een rijkere, versere smaak dan de fabrieksvariant, en kan naar wens worden aangemaakt met knoflook (aioli), kruiden, dragon of chilipeper.",
     ],
     tips: [
       "Als de mayonaise breekt, voeg een druppel water toe en klop dan snel.",
