@@ -123,7 +123,9 @@ export default function HomePage({ month, onNavigate, onOpen }: Props) {
               className={`hp-module-card hp-module--${mod.css}`}
               onClick={() => onNavigate(mod.id as Page)}
             >
-              <NavIcon name={mod.icon} />
+              <div className="hp-module-icon-wrap">
+                <NavIcon name={mod.icon} />
+              </div>
               <div className="hp-module-body">
                 <div className="hp-module-name">{mod.name}</div>
                 <div className="hp-module-desc">{mod.desc}</div>
@@ -148,8 +150,13 @@ export default function HomePage({ month, onNavigate, onOpen }: Props) {
           </div>
           <div className="hp-spotlight-grid">
             {spotlight.map((v) => (
-              <button key={v.id} className="hp-spotlight-card" onClick={() => onOpen(v)}>
-                <VegToken veg={v} size={52} />
+              <button
+                key={v.id}
+                className="hp-spotlight-card"
+                onClick={() => onOpen(v)}
+                style={{ '--spot-color': v.color } as React.CSSProperties}
+              >
+                <VegToken veg={v} size={56} />
                 <div className="hp-spotlight-body">
                   <div className="hp-spotlight-name">{v.nl}</div>
                   <div className="hp-spotlight-family">{v.family}</div>
