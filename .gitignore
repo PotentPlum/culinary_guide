@@ -1,2 +1,4 @@
 # MCP server config contains credentials — do not commit
 .mcp.json
+
+node_modules/
