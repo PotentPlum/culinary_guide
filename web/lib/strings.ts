@@ -182,7 +182,9 @@ export const UI = {
 
   // Technieken page
   techniques: {
-    pageTitle:       "Technieken",
+    pageTitle:     "Technieken",
+    pageTitleBase: "Kook",
+    pageTitleEm:   "technieken",
     pageSubtitle:    "Fundamentele bereidingsmethoden voor de Nederlandse keuken",
     categorySnijden: "Snijdtechnieken",
     categoryGaring: "Garingsmethoden",
@@ -225,7 +227,10 @@ export const UI = {
 
   // Challenge page
   challenge: {
-    pageTitle:              "Kookuitdaging",
+    pageTitle:     "Kookuitdaging",
+    pageTitleBase: "Kook",
+    pageTitleEm:   "uitdaging",
+    pageEyebrow:   "AI kookoefening",
     pageSubtitle:           "Typ een ingrediënt en ontvang een gerichte kookoefening om een specifieke techniek te oefenen.",
     inputPlaceholder:       "Bijv. aardappel, wortel, ui…",
     inputLabel:             "Ingrediënt",

@@ -99,12 +99,12 @@ export default function ChallengePage() {
       <header className="page-hero">
         <div className="hero-eyebrow">
           <span className="hero-flag" />
-          <span className="hero-loc">Nederland</span>
+          <span className="hero-loc">{UI.hero.eyebrowLoc}</span>
           <span className="hero-dot">·</span>
-          <span>AI kookoefening</span>
+          <span>{UI.challenge.pageEyebrow}</span>
         </div>
         <h1 className="hero-title">
-          Kook<em>uitdaging</em>
+          {UI.challenge.pageTitleBase}<em>{UI.challenge.pageTitleEm}</em>
         </h1>
         <p className="hero-sub">{UI.challenge.pageSubtitle}</p>
       </header>
