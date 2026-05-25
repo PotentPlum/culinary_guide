@@ -125,6 +125,7 @@ export default function App() {
           <div className="page seasonal">
             <header className="page-hero">
               <div className="hero-eyebrow">
+                <span className="hero-flag" />
                 <span className="hero-loc">{UI.hero.eyebrowLoc}</span>
                 <span className="hero-dot">·</span>
                 <span>{MONTHS_LONG[month - 1]} {new Date().getFullYear()}</span>

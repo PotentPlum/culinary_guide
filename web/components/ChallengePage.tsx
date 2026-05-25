@@ -97,6 +97,12 @@ export default function ChallengePage() {
   return (
     <div className="page challenge-page">
       <header className="page-hero">
+        <div className="hero-eyebrow">
+          <span className="hero-flag" />
+          <span className="hero-loc">Nederland</span>
+          <span className="hero-dot">·</span>
+          <span>AI kookoefening</span>
+        </div>
         <h1 className="hero-title">
           Kook<em>uitdaging</em>
         </h1>

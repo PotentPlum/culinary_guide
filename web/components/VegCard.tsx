@@ -19,7 +19,7 @@ export default function VegCard({ veg, month, density = "comfortable", onOpen, l
 
   if (listMode) {
     return (
-      <button className="veg-row" onClick={() => onOpen(veg)} aria-label={`Bekijk ${veg.nl}`}>
+      <button className="veg-row" onClick={() => onOpen(veg)} aria-label={`Bekijk ${veg.nl}`} style={{ '--veg-color': veg.color } as React.CSSProperties}>
         <div className="veg-row-swatch" style={{ background: veg.color, borderColor: veg.accent }} />
         <div className="veg-row-text">
           <div className="veg-row-name">{veg.nl}</div>

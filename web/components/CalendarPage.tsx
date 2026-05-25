@@ -43,6 +43,7 @@ export default function CalendarPage({ month, onOpen }: Props) {
     <div className="page calendar">
       <header className="page-hero">
         <div className="hero-eyebrow">
+          <span className="hero-flag" />
           <span className="hero-loc">{UI.hero.eyebrowLoc}</span>
           <span className="hero-dot">·</span>
           <span>{UI.calendar.eyebrowSub}</span>

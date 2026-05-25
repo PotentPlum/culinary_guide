@@ -123,7 +123,9 @@ export default function HomePage({ month, onNavigate, onOpen }: Props) {
               className={`hp-module-card hp-module--${mod.css}`}
               onClick={() => onNavigate(mod.id as Page)}
             >
-              <NavIcon name={mod.icon} />
+              <div className="hp-module-icon">
+                <NavIcon name={mod.icon} />
+              </div>
               <div className="hp-module-body">
                 <div className="hp-module-name">{mod.name}</div>
                 <div className="hp-module-desc">{mod.desc}</div>
