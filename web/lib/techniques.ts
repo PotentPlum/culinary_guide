@@ -758,7 +758,7 @@ export const TECHNIQUES: Technique[] = [
       "Hoge hitte en korte tijd is de basisregel: heet in, snel eruit. Gooi mosselen weg die voor het koken al open zijn en niet sluiten als je ertegen tikt.",
     ],
     tips: [
-      "Gooi mosselen weg die voor het koken al open zijn en niet sluiten bij aantippen.",
+      "Verwijder de baard van mosselen (de draden langs de naad) vlak voor het koken — dit te vroeg doen doodt de mossel.",
       "Garnalen zijn gaar zodra ze van doorzichtig naar roze verkleuren — haal ze dan direct van het vuur.",
       "Inktvis is ofwel kort gebakken (2–3 min, krokant en zacht) of lang gestoofd (45+ min, boterzacht) — alles ertussenin is taai.",
     ],
@@ -1170,7 +1170,7 @@ export const TECHNIQUES: Technique[] = [
       "Het schuim dat bij het eerste koken opstijgt, schep je zorgvuldig af voor een heldere fond. Sudder daarna 2–3 uur op laag vuur zonder deksel.",
     ],
     tips: [
-      "Gebruik nooit deksel op de fond: de stoom geeft troebele resultaten.",
+      "Gebruik nooit een deksel op de fond: de stoom geeft troebele resultaten.",
       "Voeg groenten pas na het eerste afschuimen toe — zo blijft de bouillon helderder.",
       "Koel de afgezeefde fond snel af in een ijsbad en bewaar geportioneerd in de vriezer.",
     ],
