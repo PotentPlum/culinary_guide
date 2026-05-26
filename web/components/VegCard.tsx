@@ -42,7 +42,10 @@ export default function VegCard({ veg, month, density = "comfortable", onOpen, l
         </div>
       </div>
       <div className="veg-card-text">
-        <div className="veg-card-name">{veg.nl}</div>
+        <div>
+          <div className="veg-card-name">{veg.nl}</div>
+          {density !== "compact" && <div className="veg-card-nl">{veg.family}</div>}
+        </div>
         {density !== "compact" && <PeakBar veg={veg} month={month} />}
       </div>
     </button>
