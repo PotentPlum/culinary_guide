@@ -34,7 +34,7 @@ export const FACETS: FacetDef[] = [
       { value: "Nederlands",         nl: "Nederlands",         color: "#3F5E2A" },
       { value: "Noord-Afrikaans",    nl: "Noord-Afrikaans",    color: "#B98A2A" },
       { value: "Spaans",             nl: "Spaans",             color: "#B9622A" },
-      { value: "Thai",               nl: "Thai",               color: "#B92A6B" },
+      { value: "Thai",               nl: "Thais",              color: "#B92A6B" },
       { value: "Overig",             nl: "Overig" },
     ],
   },

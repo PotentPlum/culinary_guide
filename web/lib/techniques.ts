@@ -843,7 +843,7 @@ export const TECHNIQUES: Technique[] = [
     ],
     tips: [
       "Voeg het vet altijd in een dun straaltje toe, nooit in één keer.",
-      "Als de emulsie breekt, begin opnieuw met een frisch eigeel en voeg de gebroken saus druppelsgewijs toe.",
+      "Als de emulsie breekt, begin opnieuw met een vers eigeel en voeg de gebroken saus druppelsgewijs toe.",
       "Gebruik eidooiers op kamertemperatuur voor de stabilste emulsie.",
     ],
     relatedTechniqueIds: ["emulgeren", "hollandaise", "mayonaise"],
