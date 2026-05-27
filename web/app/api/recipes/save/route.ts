@@ -1,9 +1,8 @@
 import type { NextRequest } from "next/server";
-import { supabase } from "@/lib/supabase";
-import { requireSecret } from "@/lib/auth";
+import { requireSession } from "@/lib/auth";
 
 export async function POST(req: NextRequest) {
-  const authError = requireSecret(req);
+  const { error: authError, client } = await requireSession();
   if (authError) return authError;
 
   let body: unknown;
@@ -21,7 +20,7 @@ export async function POST(req: NextRequest) {
   if (!name || !instructions) {
     return Response.json({ error: "Naam en instructies zijn verplicht." }, { status: 400 });
   }
-  const { data, error } = await supabase
+  const { data, error } = await client
     .from("recipes")
     .insert({
       name: name as string,

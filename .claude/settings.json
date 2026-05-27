@@ -35,7 +35,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "cd web && npx tsc --noEmit 2>&1 | head -30"
+            "command": "cd /workspaces/culinary_guide/web && npx tsc --noEmit 2>&1 | head -30"
           }
         ]
       },

@@ -1,6 +1,6 @@
 import type { NextRequest } from "next/server";
 import { ingestRecipeFromHtml, RecipeIngestionError } from "@/lib/recipeIngestion";
-import { requireSecret } from "@/lib/auth";
+import { requireSession } from "@/lib/auth";
 
 const BROWSER_HEADERS: Record<string, string> = {
   "User-Agent":
@@ -36,7 +36,7 @@ const BLOCKED_HOST_PATTERNS = [
 ];
 
 export async function POST(req: NextRequest) {
-  const authError = requireSecret(req);
+  const { error: authError } = await requireSession();
   if (authError) return authError;
 
   let url: string;

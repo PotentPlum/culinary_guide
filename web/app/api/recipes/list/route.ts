@@ -1,8 +1,7 @@
-import { supabase } from "@/lib/supabase";
 import type { NutritionInfo, AggregateRating } from "@/lib/recipeIngestion";
 import type { RecipeTags } from "@/lib/facets";
 import type { NextRequest } from "next/server";
-import { requireSecret } from "@/lib/auth";
+import { requireSession } from "@/lib/auth";
 
 export type RecipeRow = {
   id: string;
@@ -30,10 +29,10 @@ export type RecipeRow = {
 };
 
 export async function GET(req: NextRequest) {
-  const authError = requireSecret(req);
+  const { error: authError, client } = await requireSession();
   if (authError) return authError;
 
-  const { data, error } = await supabase
+  const { data, error } = await client
     .from("recipes")
     .select("*")
     .order("created_at", { ascending: false });
