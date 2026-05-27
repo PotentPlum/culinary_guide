@@ -29,6 +29,7 @@ const CATEGORY_LABELS: Record<Technique["category"], string> = {
   sauzen: UI.techniques.categorySauzen,
   groenten: UI.techniques.categoryGroenten,
   gereedschap: UI.techniques.categoryGereedschap,
+  bewaren: UI.techniques.categoryBewaren,
 };
 
 export default function TechniqueDetail({ technique, onClose, onOpen }: Props) {
