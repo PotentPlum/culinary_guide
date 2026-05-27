@@ -159,7 +159,7 @@ async function callClaude(
 }
 
 export async function POST(req: NextRequest) {
-  const { error: authError, client } = await requireSession();
+  const { error: authError, client, user } = await requireSession();
   if (authError) return authError;
 
   const apiKey = process.env.CLAUDE_API_KEY;
@@ -200,6 +200,7 @@ export async function POST(req: NextRequest) {
       const result = await callClaude(apiKey, ingredient, params);
 
       const { data: insertData, error: insertError } = await client.from("challenges").insert({
+        user_id: user.id,
         ingredient,
         challenge_text: result.challenge,
         skill: result.skill,

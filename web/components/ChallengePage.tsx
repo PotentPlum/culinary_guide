@@ -1,12 +1,13 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import type { ChallengeResponse, ChallengeParams, IngredientUnit } from "@/lib/types";
 import { UI } from "@/lib/strings";
 import { TECHNIQUES } from "@/lib/techniques";
 import { getFacet } from "@/lib/facets";
 import { apiHeaders } from "@/lib/apiClient";
 import EvaluationOverlay, { type AttemptInput } from "@/components/EvaluationOverlay";
+import type { ChallengeRecord } from "@/app/api/challenges/list/route";
 
 // ─── Log attempt helper ───────────────────────────────────────────────────────
 
@@ -23,6 +24,21 @@ async function logAttempt(attempt: AttemptInput) {
 }
 
 type Phase = "idle" | "loading" | "error" | "done";
+
+function formatDate(iso: string): string {
+  return new Date(iso).toLocaleDateString("nl-NL", { day: "numeric", month: "short", year: "numeric" });
+}
+
+async function fetchHistory(): Promise<ChallengeRecord[]> {
+  try {
+    const res = await fetch("/api/challenges/list", { headers: apiHeaders() });
+    if (!res.ok) return [];
+    const d = (await res.json()) as { challenges?: ChallengeRecord[] };
+    return d.challenges ?? [];
+  } catch {
+    return [];
+  }
+}
 
 const DIFFICULTY: Record<ChallengeResponse["difficulty"], { label: string; cls: string }> = {
   Beginner:     { label: UI.challenge.difficultyBeginner,     cls: "challenge-badge--beginner" },
@@ -56,7 +72,12 @@ export default function ChallengePage() {
   const [challenge, setChallenge] = useState<ChallengeResponse | null>(null);
   const [submitted, setSubmitted] = useState<Submitted | null>(null);
   const [params, setParams] = useState<ChallengeParams>({});
+  const [history, setHistory] = useState<ChallengeRecord[]>([]);
   const inputRef = useRef<HTMLInputElement>(null);
+
+  useEffect(() => {
+    fetchHistory().then(setHistory);
+  }, []);
 
   async function fetchChallenge(ing: string, p: ChallengeParams) {
     setPhase("loading");
@@ -79,6 +100,7 @@ export default function ChallengePage() {
       setChallenge(data);
       setSubmitted({ ingredient: ing, params: p });
       setPhase("done");
+      fetchHistory().then(setHistory);
     } catch {
       setPhase("error");
       setErrorMsg(UI.challenge.errorNetwork);
@@ -246,6 +268,31 @@ export default function ChallengePage() {
           onTryAnother={handleTryAnother}
           onClear={handleClear}
         />
+      )}
+
+      {history.length > 0 && (
+        <section className="challenge-history">
+          <h2 className="challenge-history-title">{UI.challenge.historyTitle}</h2>
+          <div className="challenge-history-list">
+            {history.map((c) => (
+              <div key={c.id} className="challenge-history-entry">
+                <div className="challenge-history-entry-meta">
+                  <span className="challenge-history-ingredient">{c.ingredient}</span>
+                  {c.difficulty && (
+                    <span className={`challenge-badge challenge-badge--${c.difficulty.toLowerCase()}`}>
+                      {c.difficulty === "Beginner" ? UI.challenge.difficultyBeginner
+                        : c.difficulty === "Intermediate" ? UI.challenge.difficultyIntermediate
+                        : UI.challenge.difficultyAdvanced}
+                    </span>
+                  )}
+                  <span className="challenge-history-date">{formatDate(c.created_at)}</span>
+                </div>
+                <p className="challenge-history-text">{c.challenge_text}</p>
+                {c.skill && <p className="challenge-history-skill">{c.skill}</p>}
+              </div>
+            ))}
+          </div>
+        </section>
       )}
     </div>
   );
