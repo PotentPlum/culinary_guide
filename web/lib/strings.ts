@@ -242,7 +242,7 @@ export const UI = {
     labelMinutes:           "min",
     labelWhy:               "Waarom deze uitdaging?",
     difficultyBeginner:     "Beginner",
-    difficultyIntermediate: "Gevorderd",
+    difficultyIntermediate: "Gemiddeld",
     difficultyAdvanced:     "Expert",
     errorTitle:             "Niet gelukt",
     // Parameters section
