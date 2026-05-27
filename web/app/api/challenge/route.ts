@@ -214,7 +214,10 @@ export async function POST(req: NextRequest) {
         cuisines: result.taxonomy?.cuisines ?? [],
         ingredients: result.taxonomy?.ingredients ?? [],
       }).select("id").single();
-      if (insertError) console.error("Challenge insert failed:", insertError.message);
+      if (insertError) {
+        console.error("Challenge insert failed:", insertError.message);
+        return Response.json({ error: "Opslaan mislukt: " + insertError.message }, { status: 500 });
+      }
 
       return Response.json({
         ...result,

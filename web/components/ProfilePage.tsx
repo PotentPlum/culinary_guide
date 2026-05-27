@@ -68,16 +68,14 @@ export default function ProfilePage() {
   const maxFreq = Math.max(...stats.disciplines.map((d) => d.frequency), 1);
   const maxProf = 10;
 
-  const radarAxes: RadarAxis[] = DISCIPLINE_ORDER.map((disc) => {
-    const d = stats.disciplines.find((x) => x.discipline === disc)!;
-    return {
-      label: d.label,
-      frequency: d.frequency / maxFreq,
-      proficiency: d.proficiency / maxProf,
-    };
+  const radarAxes: RadarAxis[] = DISCIPLINE_ORDER.flatMap((disc) => {
+    const d = stats.disciplines.find((x) => x.discipline === disc);
+    if (!d) return [];
+    return [{ label: d.label, frequency: d.frequency / maxFreq, proficiency: d.proficiency / maxProf }];
   });
 
   const topCuisinesMax = stats.topCuisines[0]?.count ?? 1;
+  const ingredientCloudMax = stats.ingredientCloud[0]?.count ?? 1;
   const highRatedCuisines = [...stats.topCuisines]
     .filter((c) => c.avgScore > 0)
     .sort((a, b) => b.avgScore - a.avgScore)
@@ -167,12 +165,11 @@ export default function ProfilePage() {
             <p className="profile-section-label" style={{ marginTop: 12 }}>{UI.profile.ingredientCloudTitle}</p>
             <div className="profile-ingredient-cloud">
               {stats.ingredientCloud.slice(0, 30).map((item) => {
-                const maxCount = stats.ingredientCloud[0]?.count ?? 1;
-                const scale = 0.75 + (item.count / maxCount) * 0.75;
+                const scale = 0.75 + (item.count / ingredientCloudMax) * 0.75;
                 return (
                   <span
                     key={item.ingredient}
-                    style={{ fontSize: `${scale}em`, opacity: 0.5 + (item.count / maxCount) * 0.5 }}
+                    style={{ fontSize: `${scale}em`, opacity: 0.5 + (item.count / ingredientCloudMax) * 0.5 }}
                   >
                     {item.ingredient}
                   </span>

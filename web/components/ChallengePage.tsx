@@ -74,9 +74,15 @@ export default function ChallengePage() {
   const [params, setParams] = useState<ChallengeParams>({});
   const [history, setHistory] = useState<ChallengeRecord[]>([]);
   const inputRef = useRef<HTMLInputElement>(null);
+  const historySeq = useRef(0);
+
+  function refreshHistory() {
+    const seq = ++historySeq.current;
+    fetchHistory().then((h) => { if (historySeq.current === seq) setHistory(h); });
+  }
 
   useEffect(() => {
-    fetchHistory().then(setHistory);
+    refreshHistory();
   }, []);
 
   async function fetchChallenge(ing: string, p: ChallengeParams) {
@@ -100,7 +106,7 @@ export default function ChallengePage() {
       setChallenge(data);
       setSubmitted({ ingredient: ing, params: p });
       setPhase("done");
-      fetchHistory().then(setHistory);
+      refreshHistory();
     } catch {
       setPhase("error");
       setErrorMsg(UI.challenge.errorNetwork);
@@ -278,11 +284,9 @@ export default function ChallengePage() {
               <div key={c.id} className="challenge-history-entry">
                 <div className="challenge-history-entry-meta">
                   <span className="challenge-history-ingredient">{c.ingredient}</span>
-                  {c.difficulty && (
-                    <span className={`challenge-badge challenge-badge--${c.difficulty.toLowerCase()}`}>
-                      {c.difficulty === "Beginner" ? UI.challenge.difficultyBeginner
-                        : c.difficulty === "Intermediate" ? UI.challenge.difficultyIntermediate
-                        : UI.challenge.difficultyAdvanced}
+                  {c.difficulty && DIFFICULTY[c.difficulty as keyof typeof DIFFICULTY] && (
+                    <span className={`challenge-badge ${DIFFICULTY[c.difficulty as keyof typeof DIFFICULTY].cls}`}>
+                      {DIFFICULTY[c.difficulty as keyof typeof DIFFICULTY].label}
                     </span>
                   )}
                   <span className="challenge-history-date">{formatDate(c.created_at)}</span>
