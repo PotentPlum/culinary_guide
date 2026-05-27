@@ -65,6 +65,21 @@ const TIME_OPTIONS: { value: ChallengeParams["timeLimit"]; label: string }[] = [
 
 type Submitted = { ingredient: string; params: ChallengeParams };
 
+function recordToResponse(c: ChallengeRecord): ChallengeResponse {
+  return {
+    id: c.id,
+    challenge: c.challenge_text,
+    skill: c.skill ?? "",
+    difficulty: (c.difficulty as ChallengeResponse["difficulty"]) ?? "Beginner",
+    timeEstimate: c.time_estimate ?? 0,
+    why: c.why ?? "",
+    outputType: c.output_type ?? "",
+    tags: {},
+    taxonomy: { techniques: c.techniques, cuisines: c.cuisines, ingredients: c.ingredients },
+    recipe: c.recipe ?? { title: "", servings: 0, ingredients: [], steps: [] },
+  };
+}
+
 export default function ChallengePage() {
   const [ingredient, setIngredient] = useState("");
   const [phase, setPhase] = useState<Phase>("idle");
@@ -132,6 +147,13 @@ export default function ChallengePage() {
     setSubmitted(null);
     setParams({});
     setTimeout(() => inputRef.current?.focus(), 0);
+  }
+
+  function handleOpenHistory(c: ChallengeRecord) {
+    setChallenge(recordToResponse(c));
+    setSubmitted({ ingredient: c.ingredient, params: (c.params as ChallengeParams) ?? {} });
+    setPhase("done");
+    window.scrollTo({ top: 0, behavior: "smooth" });
   }
 
   function setParam<K extends keyof ChallengeParams>(key: K, value: ChallengeParams[K]) {
@@ -269,6 +291,7 @@ export default function ChallengePage() {
 
       {phase === "done" && challenge && submitted && (
         <ChallengeCard
+          key={challenge.id ?? challenge.challenge}
           challenge={challenge}
           ingredient={submitted.ingredient}
           onTryAnother={handleTryAnother}
@@ -281,7 +304,12 @@ export default function ChallengePage() {
           <h2 className="challenge-history-title">{UI.challenge.historyTitle}</h2>
           <div className="challenge-history-list">
             {history.map((c) => (
-              <div key={c.id} className="challenge-history-entry">
+              <button
+                key={c.id}
+                type="button"
+                className="challenge-history-entry challenge-history-entry--clickable"
+                onClick={() => handleOpenHistory(c)}
+              >
                 <div className="challenge-history-entry-meta">
                   <span className="challenge-history-ingredient">{c.ingredient}</span>
                   {c.difficulty && DIFFICULTY[c.difficulty as keyof typeof DIFFICULTY] && (
@@ -293,7 +321,7 @@ export default function ChallengePage() {
                 </div>
                 <p className="challenge-history-text">{c.challenge_text}</p>
                 {c.skill && <p className="challenge-history-skill">{c.skill}</p>}
-              </div>
+              </button>
             ))}
           </div>
         </section>

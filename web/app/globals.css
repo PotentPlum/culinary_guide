@@ -5083,6 +5083,23 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
   border-bottom: none;
 }
 
+.challenge-history-entry--clickable {
+  display: block;
+  width: 100%;
+  background: none;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  transition: background 0.15s;
+  border-radius: 6px;
+  padding: 14px 10px;
+  margin: 0 -10px;
+}
+
+.challenge-history-entry--clickable:hover {
+  background: color-mix(in srgb, var(--primary) 6%, transparent);
+}
+
 .challenge-history-entry-meta {
   display: flex;
   align-items: center;
