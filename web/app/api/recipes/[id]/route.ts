@@ -1,7 +1,11 @@
 import type { NextRequest } from "next/server";
 import { supabase } from "@/lib/supabase";
+import { requireSecret } from "@/lib/auth";
 
 export async function PATCH(req: NextRequest, { params }: { params: Promise<{ id: string }> }) {
+  const authError = requireSecret(req);
+  if (authError) return authError;
+
   const { id } = await params;
   let body: unknown;
   try { body = await req.json(); } catch {
@@ -47,7 +51,10 @@ export async function PATCH(req: NextRequest, { params }: { params: Promise<{ id
   return Response.json(data);
 }
 
-export async function DELETE(_req: NextRequest, { params }: { params: Promise<{ id: string }> }) {
+export async function DELETE(req: NextRequest, { params }: { params: Promise<{ id: string }> }) {
+  const authError = requireSecret(req);
+  if (authError) return authError;
+
   const { id } = await params;
   const { error } = await supabase.from("recipes").delete().eq("id", id);
   if (error) return Response.json({ error: error.message }, { status: 500 });

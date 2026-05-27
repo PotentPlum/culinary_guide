@@ -5,6 +5,7 @@ import type { IngredientItem, IngredientSection, RecipeOutput } from "@/lib/reci
 import { UI } from "@/lib/strings";
 import { FACETS, type FacetKey, type RecipeTags, getCuisineColor } from "@/lib/facets";
 import type { RecipeRow } from "@/app/api/recipes/list/route";
+import { apiHeaders } from "@/lib/apiClient";
 
 type Tab = "url" | "photo";
 type Phase = "idle" | "loading" | "error" | "done";
@@ -56,7 +57,7 @@ function loadLocalSaved(): SavedRecipe[] {
 
 async function fetchRemoteSaved(): Promise<SavedRecipe[]> {
   try {
-    const res = await fetch("/api/recipes/list");
+    const res = await fetch("/api/recipes/list", { headers: apiHeaders() });
     if (!res.ok) return [];
     const json = (await res.json()) as { recipes: RecipeRow[] };
     return (json.recipes ?? []).map((row) => {
@@ -121,7 +122,7 @@ async function saveRemote(item: SavedRecipe): Promise<void> {
   const r = item.recipe;
   const res = await fetch("/api/recipes/save", {
     method: "POST",
-    headers: { "Content-Type": "application/json" },
+    headers: apiHeaders({ "Content-Type": "application/json" }),
     body: JSON.stringify({
       name: r.title,
       ingredients: flatIngredientTexts(r.ingredientSections),
@@ -257,7 +258,7 @@ export default function RecipesPage() {
     try {
       const res = await fetch("/api/recipe", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: apiHeaders({ "Content-Type": "application/json" }),
         body: JSON.stringify({ url: trimmed }),
       });
       const data = (await res.json()) as RecipeOutput & { error?: string };
@@ -291,7 +292,7 @@ export default function RecipesPage() {
       const resized = await Promise.all(photoFiles.map((f) => resizeToBase64(f)));
       const res = await fetch("/api/recipe-from-images", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: apiHeaders({ "Content-Type": "application/json" }),
         body: JSON.stringify({ images: resized }),
       });
       const data = (await res.json()) as RecipeOutput & { tags?: RecipeTags; error?: string };
@@ -358,7 +359,7 @@ export default function RecipesPage() {
     setSavedRecipes(updated);
     localStorage.setItem(STORAGE_KEY, JSON.stringify(updated));
     if (remoteId) {
-      fetch(`/api/recipes/${remoteId}`, { method: "DELETE" }).catch(() => {});
+      fetch(`/api/recipes/${remoteId}`, { method: "DELETE", headers: apiHeaders() }).catch(() => {});
     }
   }
 
@@ -383,7 +384,7 @@ export default function RecipesPage() {
       try {
         await fetch(`/api/recipes/${updated.remoteId}`, {
           method: "PATCH",
-          headers: { "Content-Type": "application/json" },
+          headers: apiHeaders({ "Content-Type": "application/json" }),
           body: JSON.stringify({
             name: r.title,
             ingredients: flatIngredientTexts(r.ingredientSections),
@@ -563,7 +564,7 @@ export default function RecipesPage() {
                   placeholder="Recept zoeken…"
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
-                  aria-label="Recepten zoeken"
+                  aria-label={UI.recipes.searchAriaLabel}
                 />
                 {searchQuery && (
                   <button
@@ -635,12 +636,12 @@ export default function RecipesPage() {
       {savedRecipes.length === 0 && phase !== "error" && (
         <div className="rl-empty-state">
           <div className="rl-empty-illustration" aria-hidden="true" />
-          <h2 className="rl-empty-title">Nog geen recepten</h2>
+          <h2 className="rl-empty-title">{UI.recipes.emptyTitle}</h2>
           <p className="rl-empty-sub">
-            Voeg je eerste recept toe via een link of een foto van een kookboek.
+            {UI.recipes.emptySub}
           </p>
           <button className="rl-empty-cta" onClick={() => setAddOpen(true)}>
-            Eerste recept toevoegen
+            {UI.recipes.emptyCta}
           </button>
         </div>
       )}
@@ -667,10 +668,10 @@ export default function RecipesPage() {
           <p>
             {searchQuery
               ? `Geen recepten gevonden voor "${searchQuery}"`
-              : "Geen recepten gevonden met deze filters"}
+              : UI.recipes.noResultsFilters}
           </p>
           <button className="rl-error-retry" onClick={() => { setSearchQuery(""); setFacetFilters({}); }}>
-            Wis zoekopdracht en filters
+            {UI.recipes.clearAll}
           </button>
         </div>
       )}
@@ -680,8 +681,8 @@ export default function RecipesPage() {
         {addOpen && (
           <div className="rl-add-panel">
             <div className="rl-add-panel-header">
-              <p className="rl-add-panel-title">Recept toevoegen</p>
-              <button className="rl-add-panel-close" onClick={() => setAddOpen(false)} aria-label="Sluiten">
+              <p className="rl-add-panel-title">{UI.recipes.addPanelTitle}</p>
+              <button className="rl-add-panel-close" onClick={() => setAddOpen(false)} aria-label={UI.recipes.addPanelClose}>
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
                   <path d="M4 4l8 8M12 4l-8 8" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round"/>
                 </svg>
@@ -837,7 +838,7 @@ export default function RecipesPage() {
         <button
           className={`rl-fab${addOpen ? " rl-fab--open" : ""}`}
           onClick={() => setAddOpen((v) => !v)}
-          aria-label="Recept toevoegen"
+          aria-label={UI.recipes.addPanelTitle}
           aria-expanded={addOpen}
         >
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">

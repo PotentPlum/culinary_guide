@@ -5,6 +5,7 @@ import type { ChallengeResponse, ChallengeParams, IngredientUnit } from "@/lib/t
 import { UI } from "@/lib/strings";
 import { TECHNIQUES } from "@/lib/techniques";
 import { getFacet } from "@/lib/facets";
+import { apiHeaders } from "@/lib/apiClient";
 
 type Phase = "idle" | "loading" | "error" | "done";
 
@@ -49,7 +50,7 @@ export default function ChallengePage() {
     try {
       const res = await fetch("/api/challenge", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: apiHeaders({ "Content-Type": "application/json" }),
         body: JSON.stringify({ ingredient: ing, params: p }),
       });
       const data = (await res.json()) as ChallengeResponse & { error?: string };
