@@ -27,6 +27,8 @@ Copy `web/.env.local.example` to `web/.env.local`:
 NEXT_PUBLIC_SUPABASE_URL=...      # browser-safe
 NEXT_PUBLIC_SUPABASE_ANON_KEY=... # browser-safe, RLS-enforced
 CLAUDE_API_KEY=...                # server-only; never import in client components
+NEXT_PUBLIC_API_SECRET=...        # optional; forwarded by apiClient.ts as x-api-secret header
+API_SECRET=...                    # optional; server-side guard in requireSecret()
 ```
 
 ## Language: Dutch only
@@ -55,7 +57,10 @@ Dutch locally grown vegetables only. Seasonality = field/greenhouse harvest wind
 | `web/lib/types.ts` | `SavedRecipe`, `Challenge`, `ChallengeResponse`, `ChallengeParams` types for Supabase rows |
 | `web/lib/facets.ts` | Recipe tagging schema: `FacetKey`, `FACETS[]`, `RecipeTags`, `getCuisineColor()` |
 | `web/lib/techniques.ts` | Cooking techniques data + types; tested in `techniques.test.ts` |
-| `web/lib/supabase.ts` | Supabase client singleton; throws at startup if env vars missing |
+| `web/lib/supabase.ts` | Browser-side Supabase client singleton; throws at startup if env vars missing |
+| `web/lib/supabase-server.ts` | Server-side Supabase client (SSR cookie-based); use in API routes + Server Components |
+| `web/lib/auth.ts` | `requireSession()` (session guard for API routes) and `requireSecret()` (optional API secret guard) |
+| `web/lib/apiClient.ts` | `apiHeaders()` — injects `x-api-secret` header for all fetch calls to internal API routes |
 | `web/lib/recipeIngestion.ts` | Schema.org JSON-LD extractor; unit-tested |
 | `web/data/vegetables.json` | Original Dutch source — reference only, not imported |
 | `web/scripts/validate-data.ts` | Validates all VegItem entries; runs before every build |
@@ -67,7 +72,7 @@ Allowed `family` values: `"Wortel"`, `"Blad"`, `"Brassica"`, `"Allium"`, `"Peulv
 
 ## App architecture
 
-`app/page.tsx` is the single-page shell (`App` component). It owns all top-level state — current page, filter, search query, view, density, open vegetable — and renders the active page component. Navigation is driven by `NAV_ITEMS`; pages with `ready: false` are ghost nav items (Vervangers, Plukken).
+`app/page.tsx` is the single-page shell (`App` component). It owns all top-level state — current page, filter, search query, view, density, open vegetable — and renders the active page component. Navigation is driven by `NAV_ITEMS`; pages with `ready: false` are ghost nav items (`substitutions`, `foraging`).
 
 Month is always derived from `new Date().getMonth() + 1` on the client (intentional — NL-only app).
 
@@ -81,6 +86,14 @@ Recipes carry `tags: RecipeTags` (a `Partial<Record<FacetKey, string[]>>`). Face
 There are **two** `SavedRecipe` types:
 1. `lib/types.ts` — Supabase row shape (exported, used by API routes)
 2. Local type inside `RecipesPage.tsx` — adds `url` (technical key), `recipe: RecipeOutput`, `savedAt: number`, `remoteId?: string`
+
+### Authentication
+The app is fully gated behind Supabase Auth. `web/middleware.ts` redirects unauthenticated requests to `/login`; unauthenticated API calls get a 401. The login page is at `app/login/page.tsx`.
+
+- **Browser:** use `supabase` from `lib/supabase.ts` (`supabase.auth.signInWithPassword`, etc.)
+- **API routes:** call `requireSession()` from `lib/auth.ts` — returns `{ client, error }`. If `error` is non-null, return it immediately.
+- **Server Components:** use `createSupabaseServerClient()` from `lib/supabase-server.ts`.
+- All `fetch()` calls from client → internal API routes should use `apiHeaders()` from `lib/apiClient.ts`.
 
 ## API routes (`web/app/api/`)
 
@@ -102,7 +115,6 @@ Migrations in `supabase/migrations/`. Key columns added after initial schema:
 - `density` state in `App` is wired through but fixed at `"comfortable"` — no toggle UI yet.
 - Some Dutch strings in the `page.tsx` hero section are still hardcoded; should migrate to `lib/strings.ts`.
 - `RecipeSaver` and `ChallengeModePanel` are legacy stubs — superseded by `RecipesPage` and `ChallengePage`.
-- `Technieken` is built but nav wiring may be incomplete.
 
 ## Next.js version note
 This uses Next.js 16 — APIs and conventions may differ from training data. Check `node_modules/next/dist/docs/` before writing framework-specific code.
