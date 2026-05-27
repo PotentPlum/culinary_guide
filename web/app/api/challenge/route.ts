@@ -9,6 +9,10 @@ const CUISINES     = getFacet("cuisine").options.map((o) => o.value).join(", ");
 const MAIN_INGR    = getFacet("mainIngredient").options.map((o) => o.value).join(", ");
 const PREP_TIMES   = getFacet("prepTime").options.map((o) => o.value).join(", ");
 
+const ALLOWED_PARAMS = new Set([
+  "technique", "cuisine", "timeLimit", "simpleAndSmall", "quantity", "unit",
+]);
+
 const TIME_LABEL: Record<NonNullable<ChallengeParams["timeLimit"]>, string> = {
   "<15": "minder dan 15 minuten",
   "<30": "minder dan 30 minuten",
@@ -152,13 +156,26 @@ export async function POST(req: NextRequest) {
   try {
     const body = (await req.json()) as { ingredient?: unknown; params?: unknown };
     ingredient = typeof body.ingredient === "string" ? body.ingredient.trim() : "";
-    params = (typeof body.params === "object" && body.params !== null ? body.params : {}) as ChallengeParams;
+    const rawParams =
+      typeof body.params === "object" && body.params !== null ? body.params : {};
+    params = Object.fromEntries(
+      Object.entries(rawParams as Record<string, unknown>).filter(([k]) =>
+        ALLOWED_PARAMS.has(k),
+      ),
+    ) as ChallengeParams;
   } catch {
     return Response.json({ error: "Ongeldig verzoekformaat." }, { status: 400 });
   }
 
   if (!ingredient) {
     return Response.json({ error: "Geen ingrediënt opgegeven." }, { status: 400 });
+  }
+
+  if (ingredient.length > 200) {
+    return Response.json(
+      { error: "Ingrediëntnaam is te lang (max. 200 tekens)." },
+      { status: 400 },
+    );
   }
 
   let lastError: unknown;
