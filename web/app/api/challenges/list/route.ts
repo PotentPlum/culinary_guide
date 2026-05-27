@@ -1,5 +1,6 @@
 import type { NextRequest } from "next/server";
 import { requireSession } from "@/lib/auth";
+import type { ChallengeResponse } from "@/lib/types";
 
 export type ChallengeRecord = {
   id: string;
@@ -11,6 +12,11 @@ export type ChallengeRecord = {
   why: string | null;
   output_type: string | null;
   created_at: string;
+  recipe: ChallengeResponse["recipe"] | null;
+  techniques: string[];
+  cuisines: string[];
+  ingredients: string[];
+  params: unknown | null;
 };
 
 export async function GET(_req: NextRequest) {
@@ -19,7 +25,7 @@ export async function GET(_req: NextRequest) {
 
   const { data, error } = await client
     .from("challenges")
-    .select("id, ingredient, challenge_text, skill, difficulty, time_estimate, why, output_type, created_at")
+    .select("id, ingredient, challenge_text, skill, difficulty, time_estimate, why, output_type, created_at, recipe, techniques, cuisines, ingredients, params")
     .eq("user_id", user.id)
     .order("created_at", { ascending: false });
 
