@@ -1,7 +1,7 @@
 import { requireSession } from "@/lib/auth";
 
 export async function POST(req: Request) {
-  const { error: authError, client } = await requireSession();
+  const { error: authError, client, user } = await requireSession();
   if (authError) return authError;
 
   const body = await req.json() as Record<string, unknown>;
@@ -11,12 +11,10 @@ export async function POST(req: Request) {
     return Response.json({ error: "Ongeldig brontype." }, { status: 400 });
   }
 
-  const { data: { user } } = await client.auth.getUser();
-
   const { data, error } = await client
     .from("user_attempts")
     .insert({
-      user_id: user!.id,
+      user_id: user.id,
       source_type,
       source_id: (source_id as string) ?? null,
       score: (score as number) ?? null,

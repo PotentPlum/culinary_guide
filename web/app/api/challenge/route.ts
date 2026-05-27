@@ -199,7 +199,7 @@ export async function POST(req: NextRequest) {
     try {
       const result = await callClaude(apiKey, ingredient, params);
 
-      const { error: insertError } = await client.from("challenges").insert({
+      const { data: insertData, error: insertError } = await client.from("challenges").insert({
         ingredient,
         challenge_text: result.challenge,
         skill: result.skill,
@@ -212,11 +212,12 @@ export async function POST(req: NextRequest) {
         techniques: result.taxonomy?.techniques ?? [],
         cuisines: result.taxonomy?.cuisines ?? [],
         ingredients: result.taxonomy?.ingredients ?? [],
-      });
+      }).select("id").single();
       if (insertError) console.error("Challenge insert failed:", insertError.message);
 
       return Response.json({
         ...result,
+        id: insertData?.id ?? null,
         taxonomy: result.taxonomy ?? { techniques: [], cuisines: [], ingredients: [] },
       });
     } catch (err) {

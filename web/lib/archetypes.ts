@@ -1,5 +1,6 @@
 import type { ProfileStats, UserAttempt, ArchetypeResult } from './profileTypes';
 import { getDiscipline } from './disciplineMap';
+import { UI } from './strings';
 
 const SAUCE_TECHNIQUE_IDS = new Set([
   'roux',
@@ -18,8 +19,8 @@ export const ARCHETYPES: Array<{
 }> = [
   {
     id: 'emulsie-ingenieur',
-    nl: 'De Emulsie-ingenieur',
-    description: 'Meester in emulsies en sauzen',
+    nl: UI.profile.archetypes.emulsieIngenieur.nl,
+    description: UI.profile.archetypes.emulsieIngenieur.desc,
     check: (_stats, attempts) => {
       const flavorAttempts = attempts.filter((a) =>
         a.techniques.some((t) => getDiscipline(t) === 'flavor'),
@@ -35,8 +36,8 @@ export const ARCHETYPES: Array<{
   },
   {
     id: 'koolstof-artisan',
-    nl: 'De Koolstof-artisan',
-    description: 'Heer van het hoge vuur',
+    nl: UI.profile.archetypes.koolstofArtisan.nl,
+    description: UI.profile.archetypes.koolstofArtisan.desc,
     check: (_stats, attempts) => {
       const count = attempts.filter((a) =>
         a.techniques.some((t) => t === 'schroeien' || t === 'gratineren'),
@@ -46,8 +47,8 @@ export const ARCHETYPES: Array<{
   },
   {
     id: 'messenvirtuoos',
-    nl: 'De Messenvirtuoos',
-    description: 'Precisie aan het snijvlak',
+    nl: UI.profile.archetypes.messenvirtuoos.nl,
+    description: UI.profile.archetypes.messenvirtuoos.desc,
     check: (_stats, attempts) => {
       const count = attempts.filter((a) =>
         a.techniques.some((t) => getDiscipline(t) === 'mechanical'),
@@ -57,8 +58,8 @@ export const ARCHETYPES: Array<{
   },
   {
     id: 'saus-architect',
-    nl: 'De Saus-architect',
-    description: 'Bouwer van complexe sauzen',
+    nl: UI.profile.archetypes.sausArchitect.nl,
+    description: UI.profile.archetypes.sausArchitect.desc,
     check: (_stats, attempts) => {
       const sauceAttempts = attempts.filter((a) =>
         a.techniques.some((t) => SAUCE_TECHNIQUE_IDS.has(t)),
@@ -74,12 +75,14 @@ export const ARCHETYPES: Array<{
   },
   {
     id: 'stille-fermenteur',
-    nl: 'De Stille Fermenteur',
-    description: 'Geduld als geheime ingrediënt',
+    nl: UI.profile.archetypes.stilleFermenteur.nl,
+    description: UI.profile.archetypes.stilleFermenteur.desc,
     check: (_stats, attempts) => {
-      return attempts.some((a) =>
-        a.techniques.some((t) => t.includes('pekelen') || t.includes('marineren')),
-      );
+      const FERMENT_IDS = new Set(['pekelen', 'marineren', 'fermenteren', 'inmaken']);
+      const count = attempts.filter((a) =>
+        a.techniques.some((t) => FERMENT_IDS.has(t)),
+      ).length;
+      return count >= 3;
     },
   },
 ];
