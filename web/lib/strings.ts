@@ -199,6 +199,7 @@ export const UI = {
     categorySauzen: "Sauzen & Fonds",
     categoryGroenten: "Groentenvoorbereiding",
     categoryGereedschap: "Gereedschap",
+    categoryBewaren: "Conservering",
     subcategoryKlassieken: "Klassieken",
     subcategoryHoogVuur: "Hoog vuur",
     subcategoryMiddelVuur: "Middel vuur",
