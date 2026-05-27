@@ -3,6 +3,7 @@
 import { useState, useMemo } from "react";
 import { VEG_DATA, statusFor, MONTHS_LONG, type VegItem, type VegStatus } from "@/lib/vegetables";
 import { UI } from "@/lib/strings";
+import { supabase } from "@/lib/supabase";
 import NavIcon from "@/components/NavIcon";
 import VegCard from "@/components/VegCard";
 import FilterPills, { type Filter, type Counts } from "@/components/FilterPills";
@@ -108,6 +109,15 @@ export default function App() {
             </div>
           </div>
           <div className="footer-build">{UI.footer.build}</div>
+          <button
+            className="logout-btn"
+            onClick={async () => {
+              await supabase.auth.signOut();
+              window.location.href = "/login";
+            }}
+          >
+            {UI.auth.logoutBtn}
+          </button>
         </div>
       </aside>
 

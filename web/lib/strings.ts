@@ -311,6 +311,20 @@ export const UI = {
     tipLink:         (name: string) => `Meer over ${name} →`,
   },
 
+  // Auth
+  auth: {
+    loginTitle:       "Inloggen",
+    loginSubtitle:    "Voer je gegevens in om toegang te krijgen.",
+    emailLabel:       "E-mailadres",
+    emailPlaceholder: "jouw@email.nl",
+    passwordLabel:    "Wachtwoord",
+    submitBtn:        "Inloggen",
+    loadingBtn:       "Bezig…",
+    errorFallback:    "Er is een fout opgetreden. Probeer het opnieuw.",
+    errorInvalid:     "Ongeldig e-mailadres of wachtwoord.",
+    logoutBtn:        "Uitloggen",
+  },
+
   // Future peek section
   futurePeek: {
     label: "Binnenkort",

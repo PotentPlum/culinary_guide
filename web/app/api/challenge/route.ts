@@ -1,8 +1,7 @@
 import type { NextRequest } from "next/server";
 import type { ChallengeResponse, ChallengeParams } from "@/lib/types";
-import { supabase } from "@/lib/supabase";
 import { getFacet } from "@/lib/facets";
-import { requireSecret } from "@/lib/auth";
+import { requireSession } from "@/lib/auth";
 
 const DISH_TYPES   = getFacet("dishType").options.map((o) => o.value).join(", ");
 const CUISINES     = getFacet("cuisine").options.map((o) => o.value).join(", ");
@@ -143,7 +142,7 @@ async function callClaude(
 }
 
 export async function POST(req: NextRequest) {
-  const authError = requireSecret(req);
+  const { error: authError, client } = await requireSession();
   if (authError) return authError;
 
   const apiKey = process.env.CLAUDE_API_KEY;
@@ -183,7 +182,7 @@ export async function POST(req: NextRequest) {
     try {
       const result = await callClaude(apiKey, ingredient, params);
 
-      const { error: insertError } = await supabase.from("challenges").insert({
+      const { error: insertError } = await client.from("challenges").insert({
         ingredient,
         challenge_text: result.challenge,
         skill: result.skill,

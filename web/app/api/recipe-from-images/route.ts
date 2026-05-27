@@ -1,6 +1,6 @@
 import type { NextRequest } from "next/server";
 import type { RecipeOutput } from "@/lib/recipeIngestion";
-import { requireSecret } from "@/lib/auth";
+import { requireSession } from "@/lib/auth";
 import { getFacet } from "@/lib/facets";
 import type { RecipeTags } from "@/lib/facets";
 
@@ -130,7 +130,7 @@ Regels:
 }
 
 export async function POST(req: NextRequest) {
-  const authError = requireSecret(req);
+  const { error: authError } = await requireSession();
   if (authError) return authError;
 
   const apiKey = process.env.CLAUDE_API_KEY;

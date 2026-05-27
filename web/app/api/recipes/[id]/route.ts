@@ -1,9 +1,8 @@
 import type { NextRequest } from "next/server";
-import { supabase } from "@/lib/supabase";
-import { requireSecret } from "@/lib/auth";
+import { requireSession } from "@/lib/auth";
 
 export async function PATCH(req: NextRequest, { params }: { params: Promise<{ id: string }> }) {
-  const authError = requireSecret(req);
+  const { error: authError, client } = await requireSession();
   if (authError) return authError;
 
   const { id } = await params;
@@ -20,7 +19,7 @@ export async function PATCH(req: NextRequest, { params }: { params: Promise<{ id
   if (!name || !instructions) {
     return Response.json({ error: "Naam en instructies zijn verplicht." }, { status: 400 });
   }
-  const { data, error } = await supabase
+  const { data, error } = await client
     .from("recipes")
     .update({
       name: name as string,
@@ -52,11 +51,11 @@ export async function PATCH(req: NextRequest, { params }: { params: Promise<{ id
 }
 
 export async function DELETE(req: NextRequest, { params }: { params: Promise<{ id: string }> }) {
-  const authError = requireSecret(req);
+  const { error: authError, client } = await requireSession();
   if (authError) return authError;
 
   const { id } = await params;
-  const { error } = await supabase.from("recipes").delete().eq("id", id);
+  const { error } = await client.from("recipes").delete().eq("id", id);
   if (error) return Response.json({ error: error.message }, { status: 500 });
   return new Response(null, { status: 204 });
 }
