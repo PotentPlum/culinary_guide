@@ -7,6 +7,105 @@ import { TECHNIQUES } from "@/lib/techniques";
 import { getFacet } from "@/lib/facets";
 import { apiHeaders } from "@/lib/apiClient";
 
+// ─── Log attempt helper ───────────────────────────────────────────────────────
+
+async function logAttempt(attempt: {
+  source_type: "challenge" | "recipe";
+  source_id: string | null;
+  score: number | null;
+  techniques: string[];
+  cuisines: string[];
+  ingredients: string[];
+  taste_score: number | null;
+  notes: string | null;
+}) {
+  try {
+    await fetch("/api/profile/log-attempt", {
+      method: "POST",
+      headers: { "Content-Type": "application/json", ...apiHeaders() },
+      body: JSON.stringify(attempt),
+    });
+  } catch {
+    // fail silently — logging is non-blocking
+  }
+}
+
+// ─── Evaluation overlay ───────────────────────────────────────────────────────
+
+function EvaluationOverlay({
+  onSubmit,
+  onDismiss,
+}: {
+  onSubmit: (score: number | null, tasteScore: number | null, notes: string) => void;
+  onDismiss: () => void;
+}) {
+  const [score, setScore] = useState<number | null>(null);
+  const [tasteScore, setTasteScore] = useState<number | null>(null);
+  const [notes, setNotes] = useState("");
+
+  return (
+    <div className="eval-overlay-backdrop" onClick={(e) => { if (e.target === e.currentTarget) onDismiss(); }}>
+      <div className="eval-overlay-modal" role="dialog" aria-modal="true" aria-label={UI.evaluation.title}>
+        <h2 className="eval-overlay-title">{UI.evaluation.title}</h2>
+
+        <div className="eval-score-section">
+          <p className="eval-score-label">{UI.evaluation.labelScore}</p>
+          <div className="eval-score-grid" role="group" aria-label={UI.evaluation.labelScore}>
+            {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((n) => (
+              <button
+                key={n}
+                type="button"
+                className={`eval-score-btn${score === n ? " selected" : ""}`}
+                onClick={() => setScore(score === n ? null : n)}
+                aria-pressed={score === n}
+              >
+                {n}
+              </button>
+            ))}
+          </div>
+        </div>
+
+        <div className="eval-score-section">
+          <p className="eval-score-label">{UI.evaluation.labelTaste}</p>
+          <div className="eval-score-grid" role="group" aria-label={UI.evaluation.labelTaste}>
+            {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((n) => (
+              <button
+                key={n}
+                type="button"
+                className={`eval-score-btn${tasteScore === n ? " selected" : ""}`}
+                onClick={() => setTasteScore(tasteScore === n ? null : n)}
+                aria-pressed={tasteScore === n}
+              >
+                {n}
+              </button>
+            ))}
+          </div>
+        </div>
+
+        <div className="eval-notes-section">
+          <p className="eval-score-label">{UI.evaluation.labelNotes}</p>
+          <textarea
+            className="eval-notes-textarea"
+            value={notes}
+            onChange={(e) => setNotes(e.target.value)}
+            placeholder={UI.evaluation.labelNotes}
+            rows={3}
+          />
+        </div>
+
+        <div className="eval-overlay-actions">
+          <button className="eval-skip-btn" type="button" onClick={onDismiss}>
+            {UI.evaluation.skipBtn}
+          </button>
+          <button className="eval-submit-btn" type="button" onClick={() => onSubmit(score, tasteScore, notes)}>
+            {UI.evaluation.submitBtn}
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 type Phase = "idle" | "loading" | "error" | "done";
 
 const DIFFICULTY: Record<ChallengeResponse["difficulty"], { label: string; cls: string }> = {
@@ -278,92 +377,134 @@ function ChallengeCard({
   onClear: () => void;
 }) {
   const diff = DIFFICULTY[challenge.difficulty];
+  const [showEval, setShowEval] = useState(false);
+  const [evalSuccess, setEvalSuccess] = useState(false);
+
+  async function handleEvalSubmit(score: number | null, tasteScore: number | null, notes: string) {
+    setShowEval(false);
+    await logAttempt({
+      source_type: "challenge",
+      source_id: (challenge as { id?: string }).id ?? null,
+      score,
+      techniques: (challenge as { techniques?: string[] }).techniques ?? [],
+      cuisines: (challenge as { cuisines?: string[] }).cuisines ?? [],
+      ingredients: [],
+      taste_score: tasteScore,
+      notes: notes.trim() || null,
+    });
+    setEvalSuccess(true);
+  }
 
   return (
-    <article className="challenge-card">
-      <div className="challenge-card-header">
-        <span className="challenge-ingredient-label">{ingredient}</span>
-        <div className="challenge-card-badges">
-          {challenge.outputType && (
-            <span className="challenge-output-badge">{challenge.outputType}</span>
-          )}
-          <span className={`challenge-badge ${diff.cls}`}>{diff.label}</span>
-        </div>
-      </div>
-
-      <p className="challenge-objective">{challenge.challenge}</p>
-
-      <div className="challenge-meta">
-        <div className="challenge-meta-item">
-          <span className="challenge-meta-label">{UI.challenge.labelSkill}</span>
-          <span className="challenge-meta-value">{challenge.skill}</span>
-        </div>
-        <div className="challenge-meta-item">
-          <span className="challenge-meta-label">{UI.challenge.labelTime}</span>
-          <span className="challenge-meta-value">
-            {challenge.timeEstimate} {UI.challenge.labelMinutes}
-          </span>
-        </div>
-      </div>
-
-      <div className="challenge-why">
-        <div className="challenge-why-label">{UI.challenge.labelWhy}</div>
-        <p className="challenge-why-text">{challenge.why}</p>
-      </div>
-
-      {challenge.recipe && (
-        <div className="challenge-recipe">
-          <h3 className="challenge-recipe-title">{challenge.recipe.title}</h3>
-          {challenge.recipe.servings > 0 && (
-            <p className="challenge-recipe-servings">
-              {challenge.recipe.servings} {UI.challenge.labelServings}
-            </p>
-          )}
-
-          <div className="challenge-recipe-section">
-            <h4 className="challenge-recipe-section-label">{UI.challenge.labelIngredients}</h4>
-            <ul className="challenge-recipe-ingredients">
-              {challenge.recipe.ingredients.map((ing, i) => (
-                <li key={i} className="challenge-recipe-ingredient">
-                  <span className="challenge-recipe-amount">
-                    {ing.amount}{ing.unit ? ` ${ing.unit}` : ""}
-                  </span>
-                  <span className="challenge-recipe-ing-name">{ing.name}</span>
-                </li>
-              ))}
-            </ul>
+    <>
+      {showEval && (
+        <EvaluationOverlay
+          onSubmit={handleEvalSubmit}
+          onDismiss={() => setShowEval(false)}
+        />
+      )}
+      <article className="challenge-card">
+        <div className="challenge-card-header">
+          <span className="challenge-ingredient-label">{ingredient}</span>
+          <div className="challenge-card-badges">
+            {challenge.outputType && (
+              <span className="challenge-output-badge">{challenge.outputType}</span>
+            )}
+            <span className={`challenge-badge ${diff.cls}`}>{diff.label}</span>
           </div>
+        </div>
 
-          <div className="challenge-recipe-section">
-            <h4 className="challenge-recipe-section-label">{UI.challenge.labelSteps}</h4>
-            <ol className="challenge-recipe-steps">
-              {challenge.recipe.steps.map((s) => (
-                <li key={s.step} className="challenge-recipe-step">{s.instruction}</li>
-              ))}
-            </ol>
+        <p className="challenge-objective">{challenge.challenge}</p>
+
+        <div className="challenge-meta">
+          <div className="challenge-meta-item">
+            <span className="challenge-meta-label">{UI.challenge.labelSkill}</span>
+            <span className="challenge-meta-value">{challenge.skill}</span>
           </div>
+          <div className="challenge-meta-item">
+            <span className="challenge-meta-label">{UI.challenge.labelTime}</span>
+            <span className="challenge-meta-value">
+              {challenge.timeEstimate} {UI.challenge.labelMinutes}
+            </span>
+          </div>
+        </div>
 
-          {challenge.recipe.tips && challenge.recipe.tips.length > 0 && (
-            <div className="challenge-recipe-section challenge-recipe-tips-section">
-              <h4 className="challenge-recipe-section-label">{UI.challenge.labelRecipeTips}</h4>
-              <ul className="challenge-recipe-tips">
-                {challenge.recipe.tips.map((tip, i) => (
-                  <li key={i}>{tip}</li>
+        <div className="challenge-why">
+          <div className="challenge-why-label">{UI.challenge.labelWhy}</div>
+          <p className="challenge-why-text">{challenge.why}</p>
+        </div>
+
+        {challenge.recipe && (
+          <div className="challenge-recipe">
+            <h3 className="challenge-recipe-title">{challenge.recipe.title}</h3>
+            {challenge.recipe.servings > 0 && (
+              <p className="challenge-recipe-servings">
+                {challenge.recipe.servings} {UI.challenge.labelServings}
+              </p>
+            )}
+
+            <div className="challenge-recipe-section">
+              <h4 className="challenge-recipe-section-label">{UI.challenge.labelIngredients}</h4>
+              <ul className="challenge-recipe-ingredients">
+                {challenge.recipe.ingredients.map((ing, i) => (
+                  <li key={i} className="challenge-recipe-ingredient">
+                    <span className="challenge-recipe-amount">
+                      {ing.amount}{ing.unit ? ` ${ing.unit}` : ""}
+                    </span>
+                    <span className="challenge-recipe-ing-name">{ing.name}</span>
+                  </li>
                 ))}
               </ul>
             </div>
+
+            <div className="challenge-recipe-section">
+              <h4 className="challenge-recipe-section-label">{UI.challenge.labelSteps}</h4>
+              <ol className="challenge-recipe-steps">
+                {challenge.recipe.steps.map((s) => (
+                  <li key={s.step} className="challenge-recipe-step">{s.instruction}</li>
+                ))}
+              </ol>
+            </div>
+
+            {challenge.recipe.tips && challenge.recipe.tips.length > 0 && (
+              <div className="challenge-recipe-section challenge-recipe-tips-section">
+                <h4 className="challenge-recipe-section-label">{UI.challenge.labelRecipeTips}</h4>
+                <ul className="challenge-recipe-tips">
+                  {challenge.recipe.tips.map((tip, i) => (
+                    <li key={i}>{tip}</li>
+                  ))}
+                </ul>
+              </div>
+            )}
+          </div>
+        )}
+
+        <div className="challenge-cooked-row">
+          {evalSuccess ? (
+            <span className="eval-success-banner">{UI.challenge.completedMsg}</span>
+          ) : (
+            <button
+              type="button"
+              className="cooked-btn"
+              onClick={() => setShowEval(true)}
+            >
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                <path d="M2 7l3.5 3.5L12 3" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
+              {UI.challenge.completedBtn}
+            </button>
           )}
         </div>
-      )}
 
-      <div className="challenge-actions">
-        <button className="challenge-try-btn" onClick={onTryAnother}>
-          {UI.challenge.tryAnotherBtn}
-        </button>
-        <button className="challenge-clear-btn" onClick={onClear}>
-          {UI.challenge.clearBtn}
-        </button>
-      </div>
-    </article>
+        <div className="challenge-actions">
+          <button className="challenge-try-btn" onClick={onTryAnother}>
+            {UI.challenge.tryAnotherBtn}
+          </button>
+          <button className="challenge-clear-btn" onClick={onClear}>
+            {UI.challenge.clearBtn}
+          </button>
+        </div>
+      </article>
+    </>
   );
 }

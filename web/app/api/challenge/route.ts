@@ -35,6 +35,11 @@ Geef ALLEEN een JSON-object terug met deze exacte velden:
     "mainIngredient": ["een of meer van: ${MAIN_INGR}"],
     "prepTime": ["VERPLICHT — een van: ${PREP_TIMES}, gebaseerd op timeEstimate"]
   },
+  "taxonomy": {
+    "techniques": ["array of technique IDs from the official list: julienne, brunoise, batonnet, snipperen, chiffonade, tournee, vlees-snijden, sauteren, schroeien, gratineren, smoren, sudderen, koken, panroosteren, langzaam-garen, confit, sous-vide, vlees-schroeien, vlees-smoren, vlees-braden, gevogelte-braden, gevogelte-pocheren, gevogelte-ontleden, vis-stomen, vis-pansearen, vis-pocheren, zeevruchten-bereiden, eieren-pocheren, eieren-roerei, eieren-omelet, blancheren, groenten-roasten, groenten-smoren, groenten-roerbakken, groenten-rauw, zout-timing, pekelen, fond-deglaceren, emulgeren, marineren, roux, bechamel, veloute, tomatensaus, hollandaise, mayonaise, vinaigrette, beurre-blanc, monteren, kippenfond, groentebouillon, koekenpan, braadpan, steelpan"],
+    "cuisines": ["zero or more cuisine values: Aziatisch, Chinees, Frans, Grieks, Indiaas, Italiaans, Japans, Koreaans, Latijns-Amerikaans, Mediterraan, Mexicaans, Midden-Oosten, Nederlands, Noord-Afrikaans, Spaans, Thai, Overig"],
+    "ingredients": ["main ingredient names in Dutch, lowercase, max 8 items"]
+  },
   "recipe": {
     "title": "Naam van het gerecht (in het Nederlands)",
     "servings": getal (aantal personen als geheel getal),
@@ -138,6 +143,18 @@ async function callClaude(
     throw new Error("Ongeldig antwoordformaat van Claude");
   }
 
+  // Validate taxonomy if present — it is optional, degrade gracefully if missing
+  if (parsed.taxonomy !== undefined) {
+    if (
+      !Array.isArray(parsed.taxonomy.techniques) ||
+      !Array.isArray(parsed.taxonomy.cuisines) ||
+      !Array.isArray(parsed.taxonomy.ingredients)
+    ) {
+      // Discard malformed taxonomy rather than failing the whole request
+      parsed.taxonomy = { techniques: [], cuisines: [], ingredients: [] };
+    }
+  }
+
   return parsed as ChallengeResponse;
 }
 
@@ -192,10 +209,16 @@ export async function POST(req: NextRequest) {
         output_type: result.outputType,
         recipe: { ...result.recipe, tags: result.tags },
         params: Object.keys(params).length ? params : null,
+        techniques: result.taxonomy?.techniques ?? [],
+        cuisines: result.taxonomy?.cuisines ?? [],
+        ingredients: result.taxonomy?.ingredients ?? [],
       });
       if (insertError) console.error("Challenge insert failed:", insertError.message);
 
-      return Response.json(result);
+      return Response.json({
+        ...result,
+        taxonomy: result.taxonomy ?? { techniques: [], cuisines: [], ingredients: [] },
+      });
     } catch (err) {
       lastError = err;
     }

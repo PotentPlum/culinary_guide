@@ -21,6 +21,105 @@ type SavedRecipe = {
   tags?: RecipeTags;
 };
 
+// ─── Log attempt helper ───────────────────────────────────────────────────────
+
+async function logAttempt(attempt: {
+  source_type: "challenge" | "recipe";
+  source_id: string | null;
+  score: number | null;
+  techniques: string[];
+  cuisines: string[];
+  ingredients: string[];
+  taste_score: number | null;
+  notes: string | null;
+}) {
+  try {
+    await fetch("/api/profile/log-attempt", {
+      method: "POST",
+      headers: { "Content-Type": "application/json", ...apiHeaders() },
+      body: JSON.stringify(attempt),
+    });
+  } catch {
+    // fail silently — logging is non-blocking
+  }
+}
+
+// ─── Evaluation overlay ───────────────────────────────────────────────────────
+
+function EvaluationOverlay({
+  onSubmit,
+  onDismiss,
+}: {
+  onSubmit: (score: number | null, tasteScore: number | null, notes: string) => void;
+  onDismiss: () => void;
+}) {
+  const [score, setScore] = useState<number | null>(null);
+  const [tasteScore, setTasteScore] = useState<number | null>(null);
+  const [notes, setNotes] = useState("");
+
+  return (
+    <div className="eval-overlay-backdrop" onClick={(e) => { if (e.target === e.currentTarget) onDismiss(); }}>
+      <div className="eval-overlay-modal" role="dialog" aria-modal="true" aria-label={UI.evaluation.title}>
+        <h2 className="eval-overlay-title">{UI.evaluation.title}</h2>
+
+        <div className="eval-score-section">
+          <p className="eval-score-label">{UI.evaluation.labelScore}</p>
+          <div className="eval-score-grid" role="group" aria-label={UI.evaluation.labelScore}>
+            {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((n) => (
+              <button
+                key={n}
+                type="button"
+                className={`eval-score-btn${score === n ? " selected" : ""}`}
+                onClick={() => setScore(score === n ? null : n)}
+                aria-pressed={score === n}
+              >
+                {n}
+              </button>
+            ))}
+          </div>
+        </div>
+
+        <div className="eval-score-section">
+          <p className="eval-score-label">{UI.evaluation.labelTaste}</p>
+          <div className="eval-score-grid" role="group" aria-label={UI.evaluation.labelTaste}>
+            {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((n) => (
+              <button
+                key={n}
+                type="button"
+                className={`eval-score-btn${tasteScore === n ? " selected" : ""}`}
+                onClick={() => setTasteScore(tasteScore === n ? null : n)}
+                aria-pressed={tasteScore === n}
+              >
+                {n}
+              </button>
+            ))}
+          </div>
+        </div>
+
+        <div className="eval-notes-section">
+          <p className="eval-score-label">{UI.evaluation.labelNotes}</p>
+          <textarea
+            className="eval-notes-textarea"
+            value={notes}
+            onChange={(e) => setNotes(e.target.value)}
+            placeholder={UI.evaluation.labelNotes}
+            rows={3}
+          />
+        </div>
+
+        <div className="eval-overlay-actions">
+          <button className="eval-skip-btn" type="button" onClick={onDismiss}>
+            {UI.evaluation.skipBtn}
+          </button>
+          <button className="eval-submit-btn" type="button" onClick={() => onSubmit(score, tasteScore, notes)}>
+            {UI.evaluation.submitBtn}
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 const STORAGE_KEY = "mise-saved-recipes";
 const PHOTO_URL_PREFIX = "mise-photo:";
 const MAX_PHOTOS = 5;
@@ -213,6 +312,8 @@ export default function RecipesPage() {
   const [facetFilters, setFacetFilters] = useState<Partial<Record<FacetKey, string[]>>>({});
   const [filterOpen, setFilterOpen] = useState(false);
   const [pendingTags, setPendingTags] = useState<RecipeTags>({});
+  const [showEvalOverlay, setShowEvalOverlay] = useState(false);
+  const [evalSuccess, setEvalSuccess] = useState(false);
   const inputRef = useRef<HTMLInputElement>(null);
   const fileInputRef = useRef<HTMLInputElement>(null);
   const sourceRef = useRef<HTMLInputElement>(null);
@@ -384,6 +485,8 @@ export default function RecipesPage() {
     setPendingTags(saved.tags ?? {});
     setPhase("done");
     setErrorMsg("");
+    setShowEvalOverlay(false);
+    setEvalSuccess(false);
     setView("detail");
   }
 
@@ -476,8 +579,31 @@ export default function RecipesPage() {
 
   // ── Detail view ─────────────────────────────────────────────────────────────
   if (view === "detail" && recipe) {
+    const activeSaved = savedRecipes.find((r) => r.url === activeUrl) ?? null;
+
+    async function handleEvalSubmit(score: number | null, tasteScore: number | null, notes: string) {
+      setShowEvalOverlay(false);
+      await logAttempt({
+        source_type: "recipe",
+        source_id: activeSaved?.remoteId ?? null,
+        score,
+        techniques: [],
+        cuisines: activeSaved?.tags?.cuisine ?? toArray(recipe?.cuisine ?? []),
+        ingredients: [],
+        taste_score: tasteScore,
+        notes: notes.trim() || null,
+      });
+      setEvalSuccess(true);
+    }
+
     return (
       <div className="page rl-detail-page">
+        {showEvalOverlay && (
+          <EvaluationOverlay
+            onSubmit={handleEvalSubmit}
+            onDismiss={() => setShowEvalOverlay(false)}
+          />
+        )}
         {editTarget && (
           <EditRecipePanel
             target={editTarget}
@@ -517,6 +643,22 @@ export default function RecipesPage() {
             {saveError && <span className="rl-save-error">{saveError}</span>}
           </div>
         </nav>
+        <div className="rl-detail-cooked-row">
+          {evalSuccess ? (
+            <span className="eval-success-banner">{UI.challenge.completedMsg}</span>
+          ) : (
+            <button
+              type="button"
+              className="cooked-btn"
+              onClick={() => setShowEvalOverlay(true)}
+            >
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                <path d="M2 7l3.5 3.5L12 3" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
+              {UI.recipes.cookedThisBtn}
+            </button>
+          )}
+        </div>
         <RecipeDetail recipe={recipe} />
       </div>
     );

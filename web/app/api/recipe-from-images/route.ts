@@ -21,6 +21,12 @@ Combineer meerdere foto's als ze onderdelen van hetzelfde recept tonen.
 Converteer alle maten naar metrisch systeem (g, ml, °C — geen oz, cups, °F).
 Schrijf geen tekst buiten het JSON-object.`;
 
+type Taxonomy = {
+  techniques: string[];
+  cuisines: string[];
+  ingredients: string[];
+};
+
 type FlatRecipe = {
   title?: string;
   description?: string;
@@ -31,6 +37,7 @@ type FlatRecipe = {
   ingredients?: string[];
   steps?: string[];
   tags?: RecipeTags;
+  taxonomy?: Taxonomy;
 };
 
 type ImageBlock = { type: "image"; source: { type: "base64"; media_type: AllowedMediaType; data: string } };
@@ -63,7 +70,7 @@ function toRecipeOutput(flat: FlatRecipe): RecipeOutput {
 async function extractRecipe(
   apiKey: string,
   images: Array<{ data: string; mediaType: AllowedMediaType }>,
-): Promise<RecipeOutput & { tags: RecipeTags }> {
+): Promise<RecipeOutput & { tags: RecipeTags; taxonomy: Taxonomy }> {
   const imageBlocks: ImageBlock[] = images.map(({ data, mediaType }) => ({
     type: "image",
     source: { type: "base64", media_type: mediaType, data },
@@ -86,6 +93,11 @@ async function extractRecipe(
     "dishType": ["VERPLICHT — een van: ${DISH_TYPES}"],
     "mainIngredient": ["een of meer van: ${MAIN_INGR}"],
     "prepTime": ["VERPLICHT — een van: ${PREP_TIMES}, gebaseerd op totalTimeMinutes"]
+  },
+  "taxonomy": {
+    "techniques": ["techniek-ID's die voorkomen in dit recept, uit: julienne, brunoise, batonnet, snipperen, chiffonade, sauteren, schroeien, smoren, sudderen, koken, blancheren, groenten-roasten, groenten-roerbakken, emulgeren, fond-deglaceren, marineren, pekelen, roux, bechamel, tomatensaus, hollandaise, mayonaise, vinaigrette"],
+    "cuisines": ["nul of meer van: Aziatisch, Chinees, Frans, Grieks, Indiaas, Italiaans, Japans, Koreaans, Latijns-Amerikaans, Mediterraan, Mexicaans, Midden-Oosten, Nederlands, Noord-Afrikaans, Spaans, Thai, Overig"],
+    "ingredients": ["hoofdingrediënten in het Nederlands, kleine letters, maximaal 8"]
   }
 }
 
@@ -95,6 +107,9 @@ Regels:
 - servings: aantal porties als geheel getal, of null als niet vermeld
 - tags.cuisine: alleen invullen als duidelijk uit het recept — anders weglaten of lege array
 - tags.dishType en tags.prepTime zijn verplicht
+- taxonomy.techniques: alleen technieken die duidelijk zichtbaar zijn in het recept
+- taxonomy.cuisines: alleen invullen als duidelijk uit het recept — anders lege array
+- taxonomy.ingredients: maximaal 8 hoofdingrediënten, in het Nederlands, kleine letters
 - Ingrediënten vóór stappen
 - Alleen JSON, geen extra tekst`,
   };
@@ -126,7 +141,12 @@ Regels:
 
   const flat = JSON.parse(jsonMatch[0]) as FlatRecipe;
   const tags: RecipeTags = flat.tags ?? {};
-  return { ...toRecipeOutput(flat), tags };
+  const taxonomy: Taxonomy = {
+    techniques: flat.taxonomy?.techniques ?? [],
+    cuisines: flat.taxonomy?.cuisines ?? [],
+    ingredients: flat.taxonomy?.ingredients ?? [],
+  };
+  return { ...toRecipeOutput(flat), tags, taxonomy };
 }
 
 export async function POST(req: NextRequest) {
