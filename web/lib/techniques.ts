@@ -738,7 +738,7 @@ export const TECHNIQUES: Technique[] = [
       "Witte vis, zalm en zeevruchten profiteren het meest van pocheren: de delicate textuur blijft intact en de smaak van de bouillon trekt subtiel door. Bereid de court-bouillon minstens 20 minuten van tevoren.",
     ],
     tips: [
-      "Bereid de court-bouillon twintig minuten van tevoren zodat de smaken kunnen intrekken.",
+      "Controleer de gaarheid door met een vork zachtjes in het dikste deel te prikken — de vlokken moeten net beginnen te scheiden en het vlees nog glanzend en vochtig zijn.",
       "Pocheer nooit boven 80°C: de eiwitten van vis worden bij hogere temperaturen snel droog en rubberachtig.",
       "Gebruik de pocheerbouillon daarna als basis voor een lichte sabayon of beurre blanc.",
     ],
@@ -758,7 +758,7 @@ export const TECHNIQUES: Technique[] = [
       "Hoge hitte en korte tijd is de basisregel: heet in, snel eruit. Gooi mosselen weg die voor het koken al open zijn en niet sluiten als je ertegen tikt.",
     ],
     tips: [
-      "Gooi mosselen weg die voor het koken al open zijn en niet sluiten bij aantippen.",
+      "Verhit de pan of kookpot eerst goed voordat je zeevruchten toevoegt — bij te lage temperatuur stomen ze in hun eigen vocht in plaats van te garen.",
       "Garnalen zijn gaar zodra ze van doorzichtig naar roze verkleuren — haal ze dan direct van het vuur.",
       "Inktvis is ofwel kort gebakken (2–3 min, krokant en zacht) of lang gestoofd (45+ min, boterzacht) — alles ertussenin is taai.",
     ],
@@ -843,7 +843,7 @@ export const TECHNIQUES: Technique[] = [
     ],
     tips: [
       "Voeg het vet altijd in een dun straaltje toe, nooit in één keer.",
-      "Als de emulsie breekt, begin opnieuw met een frisch eigeel en voeg de gebroken saus druppelsgewijs toe.",
+      "Als de emulsie breekt, begin opnieuw met een vers eigeel en voeg de gebroken saus druppelsgewijs toe.",
       "Gebruik eidooiers op kamertemperatuur voor de stabilste emulsie.",
     ],
     relatedTechniqueIds: ["emulgeren", "hollandaise", "mayonaise"],
