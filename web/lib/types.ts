@@ -35,6 +35,7 @@ export type RecipeIngredient = {
 };
 
 export type ChallengeResponse = {
+  id?: string | null;
   challenge: string;
   skill: string;
   difficulty: "Beginner" | "Intermediate" | "Advanced";

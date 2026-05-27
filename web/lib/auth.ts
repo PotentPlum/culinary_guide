@@ -10,17 +10,17 @@ export function requireSecret(req: NextRequest): Response | null {
   return null;
 }
 
-import type { SupabaseClient } from "@supabase/supabase-js";
+import type { SupabaseClient, User } from "@supabase/supabase-js";
 
 type SessionResult =
-  | { error: Response; client: null }
-  | { error: null; client: SupabaseClient };
+  | { error: Response; client: null; user: null }
+  | { error: null; client: SupabaseClient; user: User };
 
 export async function requireSession(): Promise<SessionResult> {
   const client = await createSupabaseServerClient();
   const { data: { user } } = await client.auth.getUser();
   if (!user) {
-    return { error: Response.json({ error: "Niet geautoriseerd." }, { status: 401 }), client: null };
+    return { error: Response.json({ error: "Niet geautoriseerd." }, { status: 401 }), client: null, user: null };
   }
-  return { error: null, client };
+  return { error: null, client, user };
 }

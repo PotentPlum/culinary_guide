@@ -6,11 +6,14 @@ import { UI } from "@/lib/strings";
 import { FACETS, type FacetKey, type RecipeTags, getCuisineColor } from "@/lib/facets";
 import type { RecipeRow } from "@/app/api/recipes/list/route";
 import { apiHeaders } from "@/lib/apiClient";
+import EvaluationOverlay, { type AttemptInput } from "@/components/EvaluationOverlay";
 
 type Tab = "url" | "photo";
 type Phase = "idle" | "loading" | "error" | "done";
 type View = "library" | "detail";
 type SortOrder = "date-desc" | "date-asc" | "alpha-asc";
+
+type RecipeTaxonomy = { techniques: string[]; cuisines: string[]; ingredients: string[] };
 
 type SavedRecipe = {
   url: string;           // technical key — real URL or mise-photo:timestamp
@@ -19,20 +22,12 @@ type SavedRecipe = {
   savedAt: number;
   remoteId?: string;     // Supabase row ID, set after list
   tags?: RecipeTags;
+  taxonomy?: RecipeTaxonomy;
 };
 
 // ─── Log attempt helper ───────────────────────────────────────────────────────
 
-async function logAttempt(attempt: {
-  source_type: "challenge" | "recipe";
-  source_id: string | null;
-  score: number | null;
-  techniques: string[];
-  cuisines: string[];
-  ingredients: string[];
-  taste_score: number | null;
-  notes: string | null;
-}) {
+async function logAttempt(attempt: AttemptInput) {
   try {
     await fetch("/api/profile/log-attempt", {
       method: "POST",
@@ -42,82 +37,6 @@ async function logAttempt(attempt: {
   } catch {
     // fail silently — logging is non-blocking
   }
-}
-
-// ─── Evaluation overlay ───────────────────────────────────────────────────────
-
-function EvaluationOverlay({
-  onSubmit,
-  onDismiss,
-}: {
-  onSubmit: (score: number | null, tasteScore: number | null, notes: string) => void;
-  onDismiss: () => void;
-}) {
-  const [score, setScore] = useState<number | null>(null);
-  const [tasteScore, setTasteScore] = useState<number | null>(null);
-  const [notes, setNotes] = useState("");
-
-  return (
-    <div className="eval-overlay-backdrop" onClick={(e) => { if (e.target === e.currentTarget) onDismiss(); }}>
-      <div className="eval-overlay-modal" role="dialog" aria-modal="true" aria-label={UI.evaluation.title}>
-        <h2 className="eval-overlay-title">{UI.evaluation.title}</h2>
-
-        <div className="eval-score-section">
-          <p className="eval-score-label">{UI.evaluation.labelScore}</p>
-          <div className="eval-score-grid" role="group" aria-label={UI.evaluation.labelScore}>
-            {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((n) => (
-              <button
-                key={n}
-                type="button"
-                className={`eval-score-btn${score === n ? " selected" : ""}`}
-                onClick={() => setScore(score === n ? null : n)}
-                aria-pressed={score === n}
-              >
-                {n}
-              </button>
-            ))}
-          </div>
-        </div>
-
-        <div className="eval-score-section">
-          <p className="eval-score-label">{UI.evaluation.labelTaste}</p>
-          <div className="eval-score-grid" role="group" aria-label={UI.evaluation.labelTaste}>
-            {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((n) => (
-              <button
-                key={n}
-                type="button"
-                className={`eval-score-btn${tasteScore === n ? " selected" : ""}`}
-                onClick={() => setTasteScore(tasteScore === n ? null : n)}
-                aria-pressed={tasteScore === n}
-              >
-                {n}
-              </button>
-            ))}
-          </div>
-        </div>
-
-        <div className="eval-notes-section">
-          <p className="eval-score-label">{UI.evaluation.labelNotes}</p>
-          <textarea
-            className="eval-notes-textarea"
-            value={notes}
-            onChange={(e) => setNotes(e.target.value)}
-            placeholder={UI.evaluation.labelNotes}
-            rows={3}
-          />
-        </div>
-
-        <div className="eval-overlay-actions">
-          <button className="eval-skip-btn" type="button" onClick={onDismiss}>
-            {UI.evaluation.skipBtn}
-          </button>
-          <button className="eval-submit-btn" type="button" onClick={() => onSubmit(score, tasteScore, notes)}>
-            {UI.evaluation.submitBtn}
-          </button>
-        </div>
-      </div>
-    </div>
-  );
 }
 
 const STORAGE_KEY = "mise-saved-recipes";
@@ -312,6 +231,7 @@ export default function RecipesPage() {
   const [facetFilters, setFacetFilters] = useState<Partial<Record<FacetKey, string[]>>>({});
   const [filterOpen, setFilterOpen] = useState(false);
   const [pendingTags, setPendingTags] = useState<RecipeTags>({});
+  const [pendingTaxonomy, setPendingTaxonomy] = useState<RecipeTaxonomy>({ techniques: [], cuisines: [], ingredients: [] });
   const [showEvalOverlay, setShowEvalOverlay] = useState(false);
   const [evalSuccess, setEvalSuccess] = useState(false);
   const inputRef = useRef<HTMLInputElement>(null);
@@ -362,6 +282,7 @@ export default function RecipesPage() {
     setErrorMsg("");
     setRecipe(null);
     setPendingTags({});
+    setPendingTaxonomy({ techniques: [], cuisines: [], ingredients: [] });
 
     try {
       const res = await fetch("/api/recipe", {
@@ -369,7 +290,7 @@ export default function RecipesPage() {
         headers: apiHeaders({ "Content-Type": "application/json" }),
         body: JSON.stringify({ url: trimmed }),
       });
-      const data = (await res.json()) as RecipeOutput & { error?: string };
+      const data = (await res.json()) as RecipeOutput & { taxonomy?: RecipeTaxonomy; error?: string };
 
       if (!res.ok) {
         setPhase("error");
@@ -378,6 +299,7 @@ export default function RecipesPage() {
       }
 
       setRecipe(data);
+      if (data.taxonomy) setPendingTaxonomy(data.taxonomy);
       setActiveUrl(trimmed);
       setPhase("done");
       setAddOpen(false);
@@ -395,6 +317,7 @@ export default function RecipesPage() {
     setErrorMsg("");
     setRecipe(null);
     setPendingTags({});
+    setPendingTaxonomy({ techniques: [], cuisines: [], ingredients: [] });
 
     try {
       const resized = await Promise.all(photoFiles.map((f) => resizeToBase64(f)));
@@ -403,7 +326,7 @@ export default function RecipesPage() {
         headers: apiHeaders({ "Content-Type": "application/json" }),
         body: JSON.stringify({ images: resized }),
       });
-      const data = (await res.json()) as RecipeOutput & { tags?: RecipeTags; error?: string };
+      const data = (await res.json()) as RecipeOutput & { tags?: RecipeTags; taxonomy?: RecipeTaxonomy; error?: string };
 
       if (!res.ok) {
         setPhase("error");
@@ -413,6 +336,7 @@ export default function RecipesPage() {
 
       setRecipe(data);
       setPendingTags(data.tags ?? {});
+      if (data.taxonomy) setPendingTaxonomy(data.taxonomy);
       setActiveUrl(`${PHOTO_URL_PREFIX}${Date.now()}`);
       setPhase("done");
       setAddOpen(false);
@@ -433,6 +357,7 @@ export default function RecipesPage() {
     setPendingSource("");
     setSourceManuallyEdited(false);
     setPendingTags({});
+    setPendingTaxonomy({ techniques: [], cuisines: [], ingredients: [] });
     setView("library");
     setAddOpen(false);
     setTimeout(() => inputRef.current?.focus(), 0);
@@ -447,6 +372,7 @@ export default function RecipesPage() {
       recipe,
       savedAt: Date.now(),
       tags: pendingTags,
+      taxonomy: pendingTaxonomy,
     };
     const updated = [item, ...savedRecipes.filter((r) => r.url !== activeUrl)];
     setSavedRecipes(updated);
@@ -483,6 +409,7 @@ export default function RecipesPage() {
     setActiveUrl(saved.url);
     setUrl(saved.url.startsWith(PHOTO_URL_PREFIX) ? "" : saved.url);
     setPendingTags(saved.tags ?? {});
+    setPendingTaxonomy(saved.taxonomy ?? { techniques: [], cuisines: [], ingredients: [] });
     setPhase("done");
     setErrorMsg("");
     setShowEvalOverlay(false);
@@ -581,18 +508,9 @@ export default function RecipesPage() {
   if (view === "detail" && recipe) {
     const activeSaved = savedRecipes.find((r) => r.url === activeUrl) ?? null;
 
-    async function handleEvalSubmit(score: number | null, tasteScore: number | null, notes: string) {
+    async function handleEvalSubmit(attempt: AttemptInput) {
       setShowEvalOverlay(false);
-      await logAttempt({
-        source_type: "recipe",
-        source_id: activeSaved?.remoteId ?? null,
-        score,
-        techniques: [],
-        cuisines: activeSaved?.tags?.cuisine ?? toArray(recipe?.cuisine ?? []),
-        ingredients: [],
-        taste_score: tasteScore,
-        notes: notes.trim() || null,
-      });
+      await logAttempt(attempt);
       setEvalSuccess(true);
     }
 
@@ -600,6 +518,11 @@ export default function RecipesPage() {
       <div className="page rl-detail-page">
         {showEvalOverlay && (
           <EvaluationOverlay
+            sourceType="recipe"
+            sourceId={activeSaved?.remoteId ?? null}
+            techniques={pendingTaxonomy.techniques}
+            cuisines={pendingTaxonomy.cuisines.length ? pendingTaxonomy.cuisines : (activeSaved?.tags?.cuisine ?? toArray(recipe?.cuisine ?? []))}
+            ingredients={pendingTaxonomy.ingredients}
             onSubmit={handleEvalSubmit}
             onDismiss={() => setShowEvalOverlay(false)}
           />

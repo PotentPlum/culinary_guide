@@ -6,19 +6,11 @@ import { UI } from "@/lib/strings";
 import { TECHNIQUES } from "@/lib/techniques";
 import { getFacet } from "@/lib/facets";
 import { apiHeaders } from "@/lib/apiClient";
+import EvaluationOverlay, { type AttemptInput } from "@/components/EvaluationOverlay";
 
 // ─── Log attempt helper ───────────────────────────────────────────────────────
 
-async function logAttempt(attempt: {
-  source_type: "challenge" | "recipe";
-  source_id: string | null;
-  score: number | null;
-  techniques: string[];
-  cuisines: string[];
-  ingredients: string[];
-  taste_score: number | null;
-  notes: string | null;
-}) {
+async function logAttempt(attempt: AttemptInput) {
   try {
     await fetch("/api/profile/log-attempt", {
       method: "POST",
@@ -28,82 +20,6 @@ async function logAttempt(attempt: {
   } catch {
     // fail silently — logging is non-blocking
   }
-}
-
-// ─── Evaluation overlay ───────────────────────────────────────────────────────
-
-function EvaluationOverlay({
-  onSubmit,
-  onDismiss,
-}: {
-  onSubmit: (score: number | null, tasteScore: number | null, notes: string) => void;
-  onDismiss: () => void;
-}) {
-  const [score, setScore] = useState<number | null>(null);
-  const [tasteScore, setTasteScore] = useState<number | null>(null);
-  const [notes, setNotes] = useState("");
-
-  return (
-    <div className="eval-overlay-backdrop" onClick={(e) => { if (e.target === e.currentTarget) onDismiss(); }}>
-      <div className="eval-overlay-modal" role="dialog" aria-modal="true" aria-label={UI.evaluation.title}>
-        <h2 className="eval-overlay-title">{UI.evaluation.title}</h2>
-
-        <div className="eval-score-section">
-          <p className="eval-score-label">{UI.evaluation.labelScore}</p>
-          <div className="eval-score-grid" role="group" aria-label={UI.evaluation.labelScore}>
-            {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((n) => (
-              <button
-                key={n}
-                type="button"
-                className={`eval-score-btn${score === n ? " selected" : ""}`}
-                onClick={() => setScore(score === n ? null : n)}
-                aria-pressed={score === n}
-              >
-                {n}
-              </button>
-            ))}
-          </div>
-        </div>
-
-        <div className="eval-score-section">
-          <p className="eval-score-label">{UI.evaluation.labelTaste}</p>
-          <div className="eval-score-grid" role="group" aria-label={UI.evaluation.labelTaste}>
-            {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((n) => (
-              <button
-                key={n}
-                type="button"
-                className={`eval-score-btn${tasteScore === n ? " selected" : ""}`}
-                onClick={() => setTasteScore(tasteScore === n ? null : n)}
-                aria-pressed={tasteScore === n}
-              >
-                {n}
-              </button>
-            ))}
-          </div>
-        </div>
-
-        <div className="eval-notes-section">
-          <p className="eval-score-label">{UI.evaluation.labelNotes}</p>
-          <textarea
-            className="eval-notes-textarea"
-            value={notes}
-            onChange={(e) => setNotes(e.target.value)}
-            placeholder={UI.evaluation.labelNotes}
-            rows={3}
-          />
-        </div>
-
-        <div className="eval-overlay-actions">
-          <button className="eval-skip-btn" type="button" onClick={onDismiss}>
-            {UI.evaluation.skipBtn}
-          </button>
-          <button className="eval-submit-btn" type="button" onClick={() => onSubmit(score, tasteScore, notes)}>
-            {UI.evaluation.submitBtn}
-          </button>
-        </div>
-      </div>
-    </div>
-  );
 }
 
 type Phase = "idle" | "loading" | "error" | "done";
@@ -380,18 +296,9 @@ function ChallengeCard({
   const [showEval, setShowEval] = useState(false);
   const [evalSuccess, setEvalSuccess] = useState(false);
 
-  async function handleEvalSubmit(score: number | null, tasteScore: number | null, notes: string) {
+  async function handleEvalSubmit(attempt: AttemptInput) {
     setShowEval(false);
-    await logAttempt({
-      source_type: "challenge",
-      source_id: (challenge as { id?: string }).id ?? null,
-      score,
-      techniques: (challenge as { techniques?: string[] }).techniques ?? [],
-      cuisines: (challenge as { cuisines?: string[] }).cuisines ?? [],
-      ingredients: [],
-      taste_score: tasteScore,
-      notes: notes.trim() || null,
-    });
+    await logAttempt(attempt);
     setEvalSuccess(true);
   }
 
@@ -399,6 +306,11 @@ function ChallengeCard({
     <>
       {showEval && (
         <EvaluationOverlay
+          sourceType="challenge"
+          sourceId={challenge.id ?? null}
+          techniques={challenge.taxonomy?.techniques ?? []}
+          cuisines={challenge.taxonomy?.cuisines ?? []}
+          ingredients={challenge.taxonomy?.ingredients ?? []}
           onSubmit={handleEvalSubmit}
           onDismiss={() => setShowEval(false)}
         />

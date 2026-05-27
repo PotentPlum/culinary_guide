@@ -8,8 +8,9 @@ Aantal keren gekookt toevoegen
 Edit mode in recept zelf toevoegen 
 
 Challenges:
-Grammen of stuks dat je van een ingredient hebt toevoegen zodat hier rekening mee gehouden kan worden bij het genereren van een challenge
-Overzicht van oude challenges inzichtelijk per ingredient
-Moeilijkheidsgraad toevoegen 
+Overzicht van oude challenges inzichtelijk
+Moeilijkheidsgraad toevoegen als keuze
 Mogelijkheid dat een challenge specifiek een "Saus maken" of "bouillon maken" of in bredere zin "Component maken" is.
-Niet alleen ingredienten maar ook specifiek techniek challenges (smaken in lagen, smaak op smaak)
+Tickbox toevoegen die is gebaseerd op het gebruiken van een ingredient wat nu in seizoen is, dit kun je leeg laten (Dan kiest claude er 1 voor je) of er 1 kiezen uti een dropdown menu
+Mogelijkheid dat je een soort eten aangeeft, bijv: bijgerecht, saus, bouillon, component, maaltijd, lunch.
+Hernoemen van Challenges naar "Quests"
