@@ -1,7 +1,11 @@
 import type { NextRequest } from "next/server";
 import { supabase } from "@/lib/supabase";
+import { requireSecret } from "@/lib/auth";
 
 export async function POST(req: NextRequest) {
+  const authError = requireSecret(req);
+  if (authError) return authError;
+
   let body: unknown;
   try {
     body = await req.json();

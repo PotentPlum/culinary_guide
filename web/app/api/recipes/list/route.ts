@@ -1,6 +1,8 @@
 import { supabase } from "@/lib/supabase";
 import type { NutritionInfo, AggregateRating } from "@/lib/recipeIngestion";
 import type { RecipeTags } from "@/lib/facets";
+import type { NextRequest } from "next/server";
+import { requireSecret } from "@/lib/auth";
 
 export type RecipeRow = {
   id: string;
@@ -27,7 +29,10 @@ export type RecipeRow = {
   nutrition: NutritionInfo;
 };
 
-export async function GET() {
+export async function GET(req: NextRequest) {
+  const authError = requireSecret(req);
+  if (authError) return authError;
+
   const { data, error } = await supabase
     .from("recipes")
     .select("*")

@@ -1,5 +1,6 @@
 import type { NextRequest } from "next/server";
 import { ingestRecipeFromHtml, RecipeIngestionError } from "@/lib/recipeIngestion";
+import { requireSecret } from "@/lib/auth";
 
 const BROWSER_HEADERS: Record<string, string> = {
   "User-Agent":
@@ -21,6 +22,9 @@ const BROWSER_HEADERS: Record<string, string> = {
 };
 
 export async function POST(req: NextRequest) {
+  const authError = requireSecret(req);
+  if (authError) return authError;
+
   let url: string;
   try {
     const body = (await req.json()) as { url?: unknown };

@@ -2,6 +2,7 @@ import type { NextRequest } from "next/server";
 import type { ChallengeResponse, ChallengeParams } from "@/lib/types";
 import { supabase } from "@/lib/supabase";
 import { getFacet } from "@/lib/facets";
+import { requireSecret } from "@/lib/auth";
 
 const DISH_TYPES   = getFacet("dishType").options.map((o) => o.value).join(", ");
 const CUISINES     = getFacet("cuisine").options.map((o) => o.value).join(", ");
@@ -138,6 +139,9 @@ async function callClaude(
 }
 
 export async function POST(req: NextRequest) {
+  const authError = requireSecret(req);
+  if (authError) return authError;
+
   const apiKey = process.env.CLAUDE_API_KEY;
   if (!apiKey) {
     return Response.json({ error: "Claude API-sleutel niet geconfigureerd." }, { status: 500 });
@@ -162,7 +166,7 @@ export async function POST(req: NextRequest) {
     try {
       const result = await callClaude(apiKey, ingredient, params);
 
-      await supabase.from("challenges").insert({
+      const { error: insertError } = await supabase.from("challenges").insert({
         ingredient,
         challenge_text: result.challenge,
         skill: result.skill,
@@ -173,6 +177,7 @@ export async function POST(req: NextRequest) {
         recipe: { ...result.recipe, tags: result.tags },
         params: Object.keys(params).length ? params : null,
       });
+      if (insertError) console.error("Challenge insert failed:", insertError.message);
 
       return Response.json(result);
     } catch (err) {
