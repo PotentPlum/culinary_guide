@@ -136,7 +136,45 @@ export async function POST(req: NextRequest) {
 
   try {
     const recipe = ingestRecipeFromHtml(html);
-    return Response.json(recipe);
+
+    // Secondary Haiku call: extract taxonomy from the parsed recipe
+    let taxonomy = { techniques: [] as string[], cuisines: [] as string[], ingredients: [] as string[] };
+    const apiKey = process.env.CLAUDE_API_KEY;
+    if (apiKey) {
+      try {
+        const ingredientText = recipe.ingredientSections
+          .flatMap((s: { ingredients: { text: string }[] }) => s.ingredients.map((i) => i.text))
+          .join('\n');
+        const taxonomyPrompt = `Recipe: "${recipe.title}"\nIngredients:\n${ingredientText}\n\nExtract JSON with exactly these fields:\n{\n  "techniques": [technique IDs used, from: julienne, brunoise, sauteren, schroeien, smoren, blancheren, groenten-roasten, groenten-roerbakken, emulgeren, marineren, pekelen, roux, bechamel, tomatensaus, hollandaise, mayonaise, vinaigrette, fond-deglaceren],\n  "cuisines": [from: Aziatisch, Chinees, Frans, Grieks, Indiaas, Italiaans, Japans, Koreaans, Latijns-Amerikaans, Mediterraan, Mexicaans, Midden-Oosten, Nederlands, Noord-Afrikaans, Spaans, Thai, Overig],\n  "ingredients": [main ingredients in Dutch, lowercase, max 8]\n}\nReturn ONLY the JSON object, no explanation.`;
+
+        const haikuRes = await fetch("https://api.anthropic.com/v1/messages", {
+          method: "POST",
+          headers: {
+            "x-api-key": apiKey,
+            "anthropic-version": "2023-06-01",
+            "content-type": "application/json",
+          },
+          body: JSON.stringify({
+            model: "claude-haiku-4-5-20251001",
+            max_tokens: 300,
+            messages: [{ role: "user", content: taxonomyPrompt }],
+          }),
+        });
+
+        if (haikuRes.ok) {
+          const haikuData = (await haikuRes.json()) as { content: { type: string; text: string }[] };
+          const rawText = haikuData.content.find((b) => b.type === "text")?.text ?? "{}";
+          const jsonMatch = rawText.match(/\{[\s\S]*\}/);
+          if (jsonMatch) {
+            taxonomy = JSON.parse(jsonMatch[0]);
+          }
+        }
+      } catch {
+        // fail gracefully — taxonomy stays as empty arrays
+      }
+    }
+
+    return Response.json({ ...recipe, taxonomy });
   } catch (err) {
     if (err instanceof RecipeIngestionError && err.code === "UNSUPPORTED_RECIPE_FORMAT") {
       return Response.json(

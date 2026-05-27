@@ -13,9 +13,10 @@ import DetailPanel from "@/components/DetailPanel";
 import RecipesPage from "@/components/RecipesPage";
 import TechniquesPage from "@/components/TechniquesPage";
 import ChallengePage from "@/components/ChallengePage";
+import ProfilePage from "@/components/ProfilePage";
 import HomePage from "@/components/HomePage";
 
-type Page = "home" | "seasonal" | "calendar" | "recipes" | "technieken" | "challenge";
+type Page = "home" | "seasonal" | "calendar" | "recipes" | "technieken" | "challenge" | "profiel";
 type View = "grid" | "list";
 type Density = "cozy" | "comfortable" | "compact";
 
@@ -27,6 +28,7 @@ const NAV_ITEMS = [
   { id: "substitutions", label: UI.nav.substitutions, icon: "swap",    ready: false },
   { id: "technieken",    label: UI.nav.techniques,    icon: "knife",   ready: true },
   { id: "challenge",     label: UI.nav.challenge,     icon: "flame",   ready: true },
+  { id: "profiel",       label: UI.nav.profile,       icon: "user",    ready: true },
   { id: "foraging",      label: UI.nav.foraging,      icon: "compass", ready: false },
 ];
 
@@ -191,6 +193,8 @@ export default function App() {
         {page === "technieken" && <TechniquesPage />}
 
         {page === "challenge" && <ChallengePage />}
+
+        {page === "profiel" && <ProfilePage />}
       </main>
 
       <DetailPanel veg={openVeg} month={month} onClose={() => setOpenVeg(null)} />

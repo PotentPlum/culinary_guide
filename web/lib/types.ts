@@ -42,6 +42,7 @@ export type ChallengeResponse = {
   why: string;
   outputType: string;
   tags?: RecipeTags;
+  taxonomy?: { techniques: string[]; cuisines: string[]; ingredients: string[] };
   recipe: {
     title: string;
     servings: number;
@@ -64,4 +65,7 @@ export type Challenge = {
   recipe: ChallengeResponse["recipe"];
   params: ChallengeParams | null;
   created_at: string;
+  techniques?: string[];
+  cuisines?: string[];
+  ingredients?: string[];
 };

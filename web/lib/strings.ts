@@ -18,6 +18,7 @@ export const UI = {
     techniques:    "Technieken",
     foraging:      "Plukken",
     challenge:     "Uitdaging",
+    profile:       "Profiel",
     soon:          "binnenkort",
   },
 
@@ -186,6 +187,7 @@ export const UI = {
     searchAriaLabel:         "Recepten zoeken",
     noResultsFilters:        "Geen recepten gevonden met deze filters",
     clearAll:                "Wis zoekopdracht en filters",
+    cookedThisBtn:           "Ik heb dit gekookt",
   },
 
   // Technieken page
@@ -230,6 +232,16 @@ export const UI = {
     emptyState:      "Geen technieken gevonden. Probeer de zoekopdracht te wissen.",
     closeAriaLabel:  "Sluiten",
     backButton:      "Terug",
+  },
+
+  // Evaluation overlay
+  evaluation: {
+    title:       "Hoe ging het?",
+    labelScore:  "Uitvoering (1–10)",
+    labelTaste:  "Smaak (1–10)",
+    labelNotes:  "Notities (optioneel)",
+    submitBtn:   "Vastleggen",
+    skipBtn:     "Overslaan",
   },
 
   // Challenge page
@@ -283,6 +295,8 @@ export const UI = {
     labelIngredients:       "Ingrediënten",
     labelSteps:             "Bereiding",
     labelRecipeTips:        "Tips",
+    completedBtn:           "Uitdaging voltooid",
+    completedMsg:           "Goed gedaan! Je voortgang is bijgehouden.",
   },
 
   // Home page
@@ -324,6 +338,41 @@ export const UI = {
     errorFallback:    "Er is een fout opgetreden. Probeer het opnieuw.",
     errorInvalid:     "Ongeldig e-mailadres of wachtwoord.",
     logoutBtn:        "Uitloggen",
+  },
+
+  // Profile page
+  profile: {
+    pageTitle: "Profiel",
+    pageSubtitle: "Jouw culinaire ontwikkeling in beeld",
+    pillarA: "Vaardigheidsprofiel",
+    pillarB: "Jouw kookidentiteit",
+    pillarC: "Keukens & ingrediënten",
+    pillarD: "Statistieken",
+    pillarE: "Uitdagingsgeschiedenis",
+    disciplineMechanical: "Mechanisch Meesterschap",
+    disciplineThermal: "Thermische Controle",
+    disciplineFlavor: "Smaakcompositie",
+    disciplineMaterial: "Materiaalbeheersing",
+    labelFrequency: "Frequentie",
+    labelProficiency: "Vaardigheid",
+    labelTopTechniques: "Meest geoefend",
+    labelHighRated: "Hoogst beoordeeld",
+    labelNeglected: "Verwaarloosd (30 dagen)",
+    neglectedEmpty: "Alle disciplines zijn recent geoefend",
+    ledgerEmpty: "Nog geen uitdagingen voltooid",
+    ingredientCloudEmpty: "Nog geen ingrediënten geregistreerd",
+    loadingMsg: "Profiel laden…",
+    emptyState: "Voltooi je eerste uitdaging of recept om je profiel op te bouwen.",
+    topCuisinesTitle: "Meest gekookte keukens",
+    highRatedCuisinesTitle: "Hoogst gewaardeerde keukens",
+    ingredientCloudTitle: "Ingrediënten",
+    archetypes: {
+      emulsieIngenieur: { nl: "De Emulsie-ingenieur", desc: "Meester in emulsies en sauzen" },
+      koolstofArtisan:  { nl: "De Koolstof-artisan",  desc: "Heer van het hoge vuur" },
+      messenvirtuoos:   { nl: "De Messenvirtuoos",    desc: "Precisie aan het snijvlak" },
+      sausArchitect:    { nl: "De Saus-architect",    desc: "Bouwer van complexe sauzen" },
+      stilleFermenteur: { nl: "De Stille Fermenteur", desc: "Geduld als geheime ingrediënt" },
+    },
   },
 
   // Future peek section
