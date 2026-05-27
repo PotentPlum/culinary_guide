@@ -5034,3 +5034,88 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
   color: var(--primary);
   font-style: italic;
 }
+
+/* ─── Ledger entry text ────────────────────────────────────────────────────── */
+
+.ledger-entry-techniques {
+  font-size: 13px;
+  color: var(--ink-soft);
+  margin: 2px 0 0;
+}
+
+.ledger-entry-notes {
+  font-size: 13px;
+  color: var(--ink);
+  font-style: italic;
+  margin: 2px 0 0;
+}
+
+/* ─── Challenge history section ────────────────────────────────────────────── */
+
+.challenge-history {
+  margin-top: 40px;
+  padding-top: 32px;
+  border-top: 1px solid var(--line);
+}
+
+.challenge-history-title {
+  font-family: var(--sans);
+  font-size: 10.5px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  font-weight: 600;
+  margin: 0 0 20px;
+}
+
+.challenge-history-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.challenge-history-entry {
+  padding: 14px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.challenge-history-entry:last-child {
+  border-bottom: none;
+}
+
+.challenge-history-entry-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 6px;
+}
+
+.challenge-history-ingredient {
+  font-family: var(--serif);
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.challenge-history-date {
+  font-family: var(--mono);
+  font-size: 10.5px;
+  color: var(--ink-soft);
+  opacity: 0.7;
+  margin-left: auto;
+}
+
+.challenge-history-text {
+  font-size: 14px;
+  color: var(--ink);
+  line-height: 1.55;
+  margin: 0 0 4px;
+}
+
+.challenge-history-skill {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--ink-soft);
+  margin: 0;
+}

@@ -297,6 +297,7 @@ export const UI = {
     labelRecipeTips:        "Tips",
     completedBtn:           "Uitdaging voltooid",
     completedMsg:           "Goed gedaan! Je voortgang is bijgehouden.",
+    historyTitle:           "Eerdere uitdagingen",
   },
 
   // Home page
