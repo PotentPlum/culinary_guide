@@ -118,7 +118,7 @@ async function fetchRemoteSaved(): Promise<SavedRecipe[]> {
   }
 }
 
-async function saveRemote(item: SavedRecipe): Promise<void> {
+async function saveRemote(item: SavedRecipe): Promise<string> {
   const r = item.recipe;
   const res = await fetch("/api/recipes/save", {
     method: "POST",
@@ -151,6 +151,8 @@ async function saveRemote(item: SavedRecipe): Promise<void> {
     const json = (await res.json()) as { error?: string };
     throw new Error(json.error ?? "Opslaan mislukt");
   }
+  const json = (await res.json()) as { id: string };
+  return json.id;
 }
 
 async function resizeToBase64(
@@ -219,7 +221,12 @@ export default function RecipesPage() {
   useEffect(() => {
     setSavedRecipes(loadLocalSaved());
     fetchRemoteSaved().then((remote) => {
-      if (remote.length > 0) setSavedRecipes(remote);
+      if (remote.length === 0) return;
+      setSavedRecipes((prev) => {
+        const remoteByUrl = new Map(remote.map((r) => [r.url, r]));
+        const localOnly = prev.filter((r) => !remoteByUrl.has(r.url));
+        return [...remote, ...localOnly];
+      });
     });
   }, []);
 
@@ -344,7 +351,14 @@ export default function RecipesPage() {
     setSavedRecipes(updated);
     localStorage.setItem(STORAGE_KEY, JSON.stringify(updated));
     try {
-      await saveRemote(item);
+      const remoteId = await saveRemote(item);
+      setSavedRecipes((prev) => {
+        const withId = prev.map((r) =>
+          r.url === item.url ? { ...r, remoteId } : r,
+        );
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(withId));
+        return withId;
+      });
     } catch (err) {
       setSaveError(err instanceof Error ? err.message : "Opslaan mislukt");
     }

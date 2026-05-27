@@ -178,6 +178,14 @@ export const UI = {
     unitToggleLabel:         "Eenheid",
     unitUs:                  "US",
     unitMetric:              "Metrisch",
+    emptyTitle:              "Nog geen recepten",
+    emptySub:                "Voeg je eerste recept toe via een link of een foto van een kookboek.",
+    emptyCta:                "Eerste recept toevoegen",
+    addPanelTitle:           "Recept toevoegen",
+    addPanelClose:           "Sluiten",
+    searchAriaLabel:         "Recepten zoeken",
+    noResultsFilters:        "Geen recepten gevonden met deze filters",
+    clearAll:                "Wis zoekopdracht en filters",
   },
 
   // Technieken page

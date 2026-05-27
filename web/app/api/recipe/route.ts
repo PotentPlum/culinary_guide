@@ -21,6 +21,20 @@ const BROWSER_HEADERS: Record<string, string> = {
   "Sec-CH-UA-Platform": '"Windows"',
 };
 
+const BLOCKED_HOST_PATTERNS = [
+  /^localhost$/i,
+  /^127\./,
+  /^10\./,
+  /^192\.168\./,
+  /^172\.(1[6-9]|2\d|3[01])\./,
+  /^169\.254\./,
+  /^0\.0\.0\.0$/,
+  /^::1$/,
+  /^::ffff:/i,
+  /^fc[0-9a-f]{2}:/i,
+  /^fd[0-9a-f]{2}:/i,
+];
+
 export async function POST(req: NextRequest) {
   const authError = requireSecret(req);
   if (authError) return authError;
@@ -51,11 +65,18 @@ export async function POST(req: NextRequest) {
     );
   }
 
+  if (BLOCKED_HOST_PATTERNS.some((p) => p.test(parsed.hostname))) {
+    return Response.json(
+      { error: "URL niet toegestaan." },
+      { status: 400 },
+    );
+  }
+
   let html: string;
   try {
     const upstream = await fetch(url, {
       headers: BROWSER_HEADERS,
-      redirect: "follow",
+      redirect: "error",
     });
 
     if (!upstream.ok) {
@@ -65,7 +86,47 @@ export async function POST(req: NextRequest) {
       );
     }
 
-    html = await upstream.text();
+    const rawContentLength = upstream.headers.get("content-length");
+    const contentLength = rawContentLength !== null ? parseInt(rawContentLength, 10) : null;
+    if (contentLength !== null && (isNaN(contentLength) || contentLength > 5_000_000)) {
+      return Response.json(
+        { error: "De pagina is te groot om te verwerken." },
+        { status: 422 },
+      );
+    }
+
+    // Also cap actual bytes read to guard against absent or lying Content-Length headers.
+    const MAX_BYTES = 5_000_000;
+    const reader = upstream.body?.getReader();
+    if (!reader) {
+      return Response.json(
+        { error: "De URL kon niet worden bereikt. Controleer de link en probeer opnieuw." },
+        { status: 502 },
+      );
+    }
+    const chunks: Uint8Array[] = [];
+    let totalBytes = 0;
+    while (true) {
+      const { done, value } = await reader.read();
+      if (done) break;
+      totalBytes += value.byteLength;
+      if (totalBytes > MAX_BYTES) {
+        await reader.cancel();
+        return Response.json(
+          { error: "De pagina is te groot om te verwerken." },
+          { status: 422 },
+        );
+      }
+      chunks.push(value);
+    }
+    html = new TextDecoder().decode(
+      chunks.reduce((acc, chunk) => {
+        const merged = new Uint8Array(acc.byteLength + chunk.byteLength);
+        merged.set(acc, 0);
+        merged.set(chunk, acc.byteLength);
+        return merged;
+      }, new Uint8Array(0)),
+    );
   } catch {
     return Response.json(
       { error: "De URL kon niet worden bereikt. Controleer de link en probeer opnieuw." },
