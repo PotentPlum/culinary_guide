@@ -87,19 +87,26 @@ export default function App() {
         </div>
 
         <nav className="nav">
-          {NAV_ITEMS.map((item) => (
-            <button
-              key={item.id}
-              className={`nav-item${page === item.id ? " active" : ""}${!item.ready ? " soon" : ""}`}
-              onClick={() => item.ready && setPage(item.id as Page)}
-              disabled={!item.ready}
-              title={item.ready ? item.label : `${item.label} — ${UI.nav.soon}`}
-            >
-              <NavIcon name={item.icon} />
-              <span>{item.label}</span>
-              {!item.ready && <span className="nav-soon">{UI.nav.soon}</span>}
-            </button>
-          ))}
+          {NAV_ITEMS.flatMap((item, idx) => {
+            const prevReady = idx > 0 && NAV_ITEMS[idx - 1].ready;
+            const divider = !item.ready && prevReady
+              ? [<div key={`div-${item.id}`} className="nav-divider" />]
+              : [];
+            return [
+              ...divider,
+              <button
+                key={item.id}
+                className={`nav-item${page === item.id ? " active" : ""}${!item.ready ? " soon" : ""}`}
+                onClick={() => item.ready && setPage(item.id as Page)}
+                disabled={!item.ready}
+                title={item.ready ? item.label : `${item.label} — ${UI.nav.soon}`}
+              >
+                <NavIcon name={item.icon} />
+                <span>{item.label}</span>
+                {!item.ready && <span className="nav-soon">{UI.nav.soon}</span>}
+              </button>,
+            ];
+          })}
         </nav>
 
         <div className="sidenav-footer">
@@ -145,6 +152,32 @@ export default function App() {
                 {UI.hero.title} <em>{UI.hero.titleEm}</em>
               </h1>
               <p className="hero-sub">{UI.hero.heroSub}</p>
+              <div className="hero-stats">
+                {counts.peak > 0 && (
+                  <div className="hero-stat hero-stat--peak">
+                    <span className="hero-stat-num">{counts.peak}</span>
+                    <span>{UI.hero.statPeak}</span>
+                  </div>
+                )}
+                {counts.shoulder > 0 && (
+                  <div className="hero-stat hero-stat--shoulder">
+                    <span className="hero-stat-num">{counts.shoulder}</span>
+                    <span>{UI.hero.statShoulder}</span>
+                  </div>
+                )}
+                {counts.soon > 0 && (
+                  <div className="hero-stat hero-stat--soon">
+                    <span className="hero-stat-num">{counts.soon}</span>
+                    <span>{UI.hero.statSoon}</span>
+                  </div>
+                )}
+                {counts.ending > 0 && (
+                  <div className="hero-stat hero-stat--ending">
+                    <span className="hero-stat-num">{counts.ending}</span>
+                    <span>{UI.hero.statEnding}</span>
+                  </div>
+                )}
+              </div>
             </header>
 
             <div className="controls">

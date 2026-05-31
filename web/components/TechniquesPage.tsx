@@ -146,7 +146,12 @@ export default function TechniquesPage() {
   return (
     <div className="page">
       <header className="page-hero">
-        <h1 className="hero-title">{UI.techniques.pageTitle}</h1>
+        <div className="hero-eyebrow">
+          <span className="hero-loc">{UI.hero.eyebrowLoc}</span>
+          <span className="hero-dot">·</span>
+          <span>{UI.techniques.eyebrow}</span>
+        </div>
+        <h1 className="hero-title">{UI.techniques.pageTitleBase}<em>{UI.techniques.pageTitleEm}</em></h1>
         <p className="hero-sub">{UI.techniques.pageSubtitle}</p>
       </header>
 

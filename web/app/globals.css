@@ -167,6 +167,11 @@ body.sans-display .brand-title { font-family: var(--sans); font-style: normal; f
   opacity: 0.55;
   font-weight: 600;
 }
+.nav-divider {
+  height: 1px;
+  margin: 6px 8px;
+  background: var(--line);
+}
 
 .sidenav-footer {
   margin-top: auto;
@@ -206,7 +211,7 @@ body.sans-display .brand-title { font-family: var(--sans); font-style: normal; f
   padding: 44px 52px 88px;
   max-width: 1280px;
   min-width: 0;
-  overflow-x: hidden;
+  overflow-x: clip;
 }
 .page { display: flex; flex-direction: column; gap: 28px; }
 
@@ -218,13 +223,15 @@ body.sans-display .brand-title { font-family: var(--sans); font-style: normal; f
   max-width: 760px;
 }
 .hero-eyebrow {
-  display: flex; align-items: center; gap: 10px;
-  font-size: 13px;
+  display: flex; align-items: center; gap: 8px;
+  font-family: var(--mono);
+  font-size: 11px;
   color: var(--ink-soft);
-  letter-spacing: 0.04em;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
 }
-.hero-dot { opacity: 0.4; }
-.hero-loc { font-weight: 500; }
+.hero-dot { opacity: 0.35; }
+.hero-loc { font-weight: 600; color: var(--primary); }
 .hero-title {
   font-family: var(--serif);
   font-weight: 400;
@@ -291,8 +298,15 @@ body.sans-display .hero-title em {
   justify-content: space-between;
   gap: 16px;
   flex-wrap: wrap;
-  padding: 16px 0;
+  padding: 12px 52px;
+  margin: 0 -52px;
   border-bottom: 1px solid var(--line);
+  position: sticky;
+  top: 0;
+  z-index: 8;
+  background: color-mix(in srgb, var(--surface) 96%, transparent);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
 }
 .filter-pills {
   display: flex;
@@ -817,6 +831,7 @@ body.sans-display .detail-blurb { font-family: var(--sans); font-style: normal; 
   .nav-soon { display: none; }
   .sidenav-footer { display: none; }
   .main { padding: 24px 20px 64px; }
+  .controls { margin: 0 -20px; padding-left: 20px; padding-right: 20px; }
   .hero-title { font-size: 40px; }
   .cal-row { grid-template-columns: 140px repeat(12, 1fr); padding: 8px; }
   .cal-name { font-size: 13px; }
@@ -4095,11 +4110,11 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
 }
 
 /* Per-module tinted backgrounds + icon bubble colors */
-.hp-module--seasonal  { background: linear-gradient(115deg, rgba(63,94,42,0.05) 0%, var(--surface-card) 55%); border-color: rgba(63,94,42,0.14); }
-.hp-module--calendar  { background: linear-gradient(115deg, rgba(122,156,92,0.05) 0%, var(--surface-card) 55%); border-color: rgba(122,156,92,0.13); }
-.hp-module--recipes   { background: linear-gradient(115deg, rgba(201,139,42,0.06) 0%, var(--surface-card) 55%); border-color: rgba(201,139,42,0.14); }
-.hp-module--techniques{ background: linear-gradient(115deg, rgba(185,81,40,0.05) 0%, var(--surface-card) 55%); border-color: rgba(185,81,40,0.13); }
-.hp-module--challenge { background: linear-gradient(115deg, rgba(130,90,180,0.05) 0%, var(--surface-card) 55%); border-color: rgba(130,90,180,0.11); }
+.hp-module--seasonal  { background: linear-gradient(115deg, rgba(63,94,42,0.05) 0%, var(--surface-card) 55%); border-color: rgba(63,94,42,0.14); border-left: 3px solid rgba(63,94,42,0.40); }
+.hp-module--calendar  { background: linear-gradient(115deg, rgba(122,156,92,0.05) 0%, var(--surface-card) 55%); border-color: rgba(122,156,92,0.13); border-left: 3px solid rgba(122,156,92,0.40); }
+.hp-module--recipes   { background: linear-gradient(115deg, rgba(201,139,42,0.06) 0%, var(--surface-card) 55%); border-color: rgba(201,139,42,0.14); border-left: 3px solid rgba(201,139,42,0.45); }
+.hp-module--techniques{ background: linear-gradient(115deg, rgba(185,81,40,0.05) 0%, var(--surface-card) 55%); border-color: rgba(185,81,40,0.13); border-left: 3px solid rgba(185,81,40,0.40); }
+.hp-module--challenge { background: linear-gradient(115deg, rgba(130,90,180,0.05) 0%, var(--surface-card) 55%); border-color: rgba(130,90,180,0.11); border-left: 3px solid rgba(130,90,180,0.38); }
 
 .hp-module--seasonal  .hp-module-icon-wrap { background: rgba(63,94,42,0.12);  color: var(--primary); }
 .hp-module--calendar  .hp-module-icon-wrap { background: rgba(122,156,92,0.14); color: var(--primary-soft); }
@@ -5059,23 +5074,27 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
 }
 
 .challenge-history-title {
-  font-family: var(--sans);
+  font-family: var(--mono);
   font-size: 10.5px;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--ink-soft);
   font-weight: 600;
-  margin: 0 0 20px;
+  margin: 0 0 14px;
 }
 
 .challenge-history-list {
   display: flex;
   flex-direction: column;
-  gap: 0;
+  background: var(--surface-card);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
 }
 
 .challenge-history-entry {
-  padding: 14px 0;
+  padding: 0;
   border-bottom: 1px solid var(--line);
 }
 
@@ -5086,18 +5105,18 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
 .challenge-history-entry--clickable {
   display: block;
   width: 100%;
-  background: none;
+  background: transparent;
   border: none;
   text-align: left;
   cursor: pointer;
-  transition: background 0.15s;
-  border-radius: 6px;
-  padding: 14px 10px;
-  margin: 0 -10px;
+  transition: background 130ms;
+  border-radius: 0;
+  padding: 16px 20px;
+  margin: 0;
 }
 
 .challenge-history-entry--clickable:hover {
-  background: color-mix(in srgb, var(--primary) 6%, transparent);
+  background: rgba(30, 26, 20, 0.025);
 }
 
 .challenge-history-entry-meta {
