@@ -249,7 +249,6 @@ export const UI = {
 
   // Challenge page
   challenge: {
-    pageTitle:              "Kookuitdaging",
     pageTitleBase:          "Kook",
     pageTitleEm:            "uitdaging",
     eyebrow:                "AI-gestuurde kookoefeningen",

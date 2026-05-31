@@ -34,6 +34,13 @@ const NAV_ITEMS = [
 
 const STATUS_ORDER: Record<VegStatus, number> = { peak: 0, shoulder: 1, soon: 2, ending: 3, off: 4 };
 
+const STAT_META: Array<{ key: "peak" | "shoulder" | "soon" | "ending"; label: string }> = [
+  { key: "peak",     label: UI.hero.statPeak },
+  { key: "shoulder", label: UI.hero.statShoulder },
+  { key: "soon",     label: UI.hero.statSoon },
+  { key: "ending",   label: UI.hero.statEnding },
+];
+
 export default function App() {
   const month = new Date().getMonth() + 1;
   const [page, setPage] = useState<Page>("home");
@@ -153,30 +160,12 @@ export default function App() {
               </h1>
               <p className="hero-sub">{UI.hero.heroSub}</p>
               <div className="hero-stats">
-                {counts.peak > 0 && (
-                  <div className="hero-stat hero-stat--peak">
-                    <span className="hero-stat-num">{counts.peak}</span>
-                    <span>{UI.hero.statPeak}</span>
+                {STAT_META.filter(s => counts[s.key] > 0).map(s => (
+                  <div key={s.key} className={`hero-stat hero-stat--${s.key}`}>
+                    <span className="hero-stat-num">{counts[s.key]}</span>
+                    <span>{s.label}</span>
                   </div>
-                )}
-                {counts.shoulder > 0 && (
-                  <div className="hero-stat hero-stat--shoulder">
-                    <span className="hero-stat-num">{counts.shoulder}</span>
-                    <span>{UI.hero.statShoulder}</span>
-                  </div>
-                )}
-                {counts.soon > 0 && (
-                  <div className="hero-stat hero-stat--soon">
-                    <span className="hero-stat-num">{counts.soon}</span>
-                    <span>{UI.hero.statSoon}</span>
-                  </div>
-                )}
-                {counts.ending > 0 && (
-                  <div className="hero-stat hero-stat--ending">
-                    <span className="hero-stat-num">{counts.ending}</span>
-                    <span>{UI.hero.statEnding}</span>
-                  </div>
-                )}
+                ))}
               </div>
             </header>
 
