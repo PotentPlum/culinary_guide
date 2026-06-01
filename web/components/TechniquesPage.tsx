@@ -146,7 +146,12 @@ export default function TechniquesPage() {
   return (
     <div className="page">
       <header className="page-hero">
-        <h1 className="hero-title">{UI.techniques.pageTitle}</h1>
+        <div className="hero-eyebrow">
+          <span className="hero-loc">{UI.techniques.pageTitle}</span>
+          <span className="hero-dot">·</span>
+          <span>Kookmethoden</span>
+        </div>
+        <h1 className="hero-title">Leer de <em>techniek</em></h1>
         <p className="hero-sub">{UI.techniques.pageSubtitle}</p>
       </header>
 

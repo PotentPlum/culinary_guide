@@ -52,6 +52,11 @@ export default function ProfilePage() {
     return (
       <div className="page profile-page">
         <header className="profile-page-hero">
+          <div className="hero-eyebrow">
+            <span className="hero-loc">{UI.profile.pageTitle}</span>
+            <span className="hero-dot">·</span>
+            <span>Culinaire voortgang</span>
+          </div>
           <h1 className="hero-title"><em>{UI.profile.pageTitle}</em></h1>
           <p className="hero-sub">{UI.profile.pageSubtitle}</p>
         </header>
@@ -90,33 +95,40 @@ export default function ProfilePage() {
   return (
     <div className="page profile-page">
       <header className="profile-page-hero">
+        <div className="hero-eyebrow">
+          <span className="hero-loc">{UI.profile.pageTitle}</span>
+          <span className="hero-dot">·</span>
+          <span>Culinaire voortgang</span>
+        </div>
         <h1 className="hero-title"><em>{UI.profile.pageTitle}</em></h1>
         <p className="hero-sub">{UI.profile.pageSubtitle}</p>
       </header>
 
-      {/* Pillar A — Radar */}
-      <section className="profile-pillar">
-        <p className="profile-pillar-title">{UI.profile.pillarA}</p>
-        <div className="profile-radar-wrapper">
-          <RadarChart axes={radarAxes} size={280} />
-        </div>
-        <div className="profile-radar-legend">
-          <span className="profile-radar-legend-item">
-            <span className="profile-radar-legend-dot" style={{ background: "rgba(63,94,42,0.25)" }} />
-            {UI.profile.labelFrequency}
-          </span>
-          <span className="profile-radar-legend-item">
-            <span className="profile-radar-legend-dot" style={{ background: "var(--primary)" }} />
-            {UI.profile.labelProficiency}
-          </span>
-        </div>
-      </section>
+      <div className="profile-pillars-duo">
+        {/* Pillar A — Radar */}
+        <section className="profile-pillar">
+          <p className="profile-pillar-title">{UI.profile.pillarA}</p>
+          <div className="profile-radar-wrapper">
+            <RadarChart axes={radarAxes} size={280} />
+          </div>
+          <div className="profile-radar-legend">
+            <span className="profile-radar-legend-item">
+              <span className="profile-radar-legend-dot" style={{ background: "rgba(63,94,42,0.25)" }} />
+              {UI.profile.labelFrequency}
+            </span>
+            <span className="profile-radar-legend-item">
+              <span className="profile-radar-legend-dot" style={{ background: "var(--primary)" }} />
+              {UI.profile.labelProficiency}
+            </span>
+          </div>
+        </section>
 
-      {/* Pillar B — Archetypes */}
-      <section className="profile-pillar">
-        <p className="profile-pillar-title">{UI.profile.pillarB}</p>
-        <ArchetypeBadges archetypes={archetypes} />
-      </section>
+        {/* Pillar B — Archetypes */}
+        <section className="profile-pillar">
+          <p className="profile-pillar-title">{UI.profile.pillarB}</p>
+          <ArchetypeBadges archetypes={archetypes} />
+        </section>
+      </div>
 
       {/* Pillar C — Cuisines & Ingredients */}
       <section className="profile-pillar">

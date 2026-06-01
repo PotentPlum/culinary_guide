@@ -208,7 +208,8 @@ body.sans-display .brand-title { font-family: var(--sans); font-style: normal; f
   min-width: 0;
   overflow-x: hidden;
 }
-.page { display: flex; flex-direction: column; gap: 28px; }
+.page { display: flex; flex-direction: column; gap: 28px; animation: pageIn 220ms ease; }
+@keyframes pageIn { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
 
 /* ---- Hero ---- */
 .page-hero {
@@ -4079,9 +4080,11 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
   font-size: 12.5px;
   color: var(--ink-soft);
   margin-top: 3px;
-  white-space: nowrap;
+  line-height: 1.45;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
   overflow: hidden;
-  text-overflow: ellipsis;
 }
 .hp-module-arrow {
   color: var(--ink-soft);
@@ -4786,11 +4789,23 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
   gap: 28px;
 }
 
+.profile-pillars-duo {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+@media (min-width: 880px) {
+  .profile-pillars-duo {
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+  }
+}
+
 .profile-page-hero {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  padding-bottom: 32px;
+  gap: 14px;
+  padding-bottom: 36px;
   border-bottom: 1px solid var(--line);
   max-width: 760px;
 }
@@ -5071,16 +5086,14 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
 .challenge-history-list {
   display: flex;
   flex-direction: column;
-  gap: 0;
+  gap: 8px;
 }
 
 .challenge-history-entry {
-  padding: 14px 0;
-  border-bottom: 1px solid var(--line);
-}
-
-.challenge-history-entry:last-child {
-  border-bottom: none;
+  background: var(--surface-card);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  overflow: hidden;
 }
 
 .challenge-history-entry--clickable {
@@ -5091,13 +5104,11 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
   text-align: left;
   cursor: pointer;
   transition: background 0.15s;
-  border-radius: 6px;
-  padding: 14px 10px;
-  margin: 0 -10px;
+  padding: 16px 18px;
 }
 
 .challenge-history-entry--clickable:hover {
-  background: color-mix(in srgb, var(--primary) 6%, transparent);
+  background: rgba(63, 94, 42, 0.04);
 }
 
 .challenge-history-entry-meta {
@@ -5105,7 +5116,7 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
   align-items: center;
   gap: 8px;
   flex-wrap: wrap;
-  margin-bottom: 6px;
+  margin-bottom: 8px;
 }
 
 .challenge-history-ingredient {
