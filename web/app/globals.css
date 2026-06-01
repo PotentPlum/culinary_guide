@@ -4791,7 +4791,6 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
 
 .profile-pillars-duo {
   display: grid;
-  grid-template-columns: 1fr;
   gap: 20px;
 }
 @media (min-width: 880px) {
@@ -4799,15 +4798,6 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
     grid-template-columns: 1fr 1fr;
     align-items: start;
   }
-}
-
-.profile-page-hero {
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-  padding-bottom: 36px;
-  border-bottom: 1px solid var(--line);
-  max-width: 760px;
 }
 
 .profile-pillar {
@@ -5108,7 +5098,7 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
 }
 
 .challenge-history-entry--clickable:hover {
-  background: rgba(63, 94, 42, 0.04);
+  background: color-mix(in srgb, var(--primary) 4%, transparent);
 }
 
 .challenge-history-entry-meta {

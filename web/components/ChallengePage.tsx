@@ -166,10 +166,10 @@ export default function ChallengePage() {
         <div className="hero-eyebrow">
           <span className="hero-loc">{UI.challenge.pageTitle}</span>
           <span className="hero-dot">·</span>
-          <span>AI-gegenereerd</span>
+          <span>{UI.challenge.eyebrowSub}</span>
         </div>
         <h1 className="hero-title">
-          Kook<em>uitdaging</em>
+          {UI.challenge.heroTitle}<em>{UI.challenge.heroTitleEm}</em>
         </h1>
         <p className="hero-sub">{UI.challenge.pageSubtitle}</p>
       </header>

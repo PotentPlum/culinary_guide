@@ -51,10 +51,11 @@ export const UI = {
 
   // Controls
   controls: {
-    searchPlaceholder: "Zoeken…",
-    searchAriaLabel:   "Groenten zoeken",
-    gridAriaLabel:     "Rasterweergave",
-    listAriaLabel:     "Lijstweergave",
+    searchPlaceholder:   "Zoeken…",
+    searchAriaLabel:     "Groenten zoeken",
+    gridAriaLabel:       "Rasterweergave",
+    listAriaLabel:       "Lijstweergave",
+    viewToggleAriaLabel: "Weergave",
   },
 
   // Empty state
@@ -193,6 +194,9 @@ export const UI = {
   // Technieken page
   techniques: {
     pageTitle:       "Technieken",
+    eyebrowSub:      "Kookmethoden",
+    heroTitle:       "Leer de ",
+    heroTitleEm:     "techniek",
     pageSubtitle:    "Fundamentele bereidingsmethoden voor de Nederlandse keuken",
     categorySnijden: "Snijdtechnieken",
     categoryGaring: "Garingsmethoden",
@@ -247,6 +251,9 @@ export const UI = {
   // Challenge page
   challenge: {
     pageTitle:              "Kookuitdaging",
+    eyebrowSub:             "AI-gegenereerd",
+    heroTitle:              "Kook",
+    heroTitleEm:            "uitdaging",
     pageSubtitle:           "Typ een ingrediënt en ontvang een gerichte kookoefening om een specifieke techniek te oefenen.",
     inputPlaceholder:       "Bijv. aardappel, wortel, ui…",
     inputLabel:             "Ingrediënt",
@@ -343,7 +350,8 @@ export const UI = {
 
   // Profile page
   profile: {
-    pageTitle: "Profiel",
+    pageTitle:    "Profiel",
+    eyebrowSub:   "Culinaire voortgang",
     pageSubtitle: "Jouw culinaire ontwikkeling in beeld",
     pillarA: "Vaardigheidsprofiel",
     pillarB: "Jouw kookidentiteit",

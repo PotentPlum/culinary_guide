@@ -48,18 +48,22 @@ export default function ProfilePage() {
     );
   }
 
+  const profileHeader = (
+    <header className="page-hero">
+      <div className="hero-eyebrow">
+        <span className="hero-loc">{UI.profile.pageTitle}</span>
+        <span className="hero-dot">·</span>
+        <span>{UI.profile.eyebrowSub}</span>
+      </div>
+      <h1 className="hero-title"><em>{UI.profile.pageTitle}</em></h1>
+      <p className="hero-sub">{UI.profile.pageSubtitle}</p>
+    </header>
+  );
+
   if (attempts.length === 0) {
     return (
       <div className="page profile-page">
-        <header className="profile-page-hero">
-          <div className="hero-eyebrow">
-            <span className="hero-loc">{UI.profile.pageTitle}</span>
-            <span className="hero-dot">·</span>
-            <span>Culinaire voortgang</span>
-          </div>
-          <h1 className="hero-title"><em>{UI.profile.pageTitle}</em></h1>
-          <p className="hero-sub">{UI.profile.pageSubtitle}</p>
-        </header>
+        {profileHeader}
         <div className="profile-empty-state">
           <p>{UI.profile.emptyState}</p>
         </div>
@@ -94,15 +98,7 @@ export default function ProfilePage() {
 
   return (
     <div className="page profile-page">
-      <header className="profile-page-hero">
-        <div className="hero-eyebrow">
-          <span className="hero-loc">{UI.profile.pageTitle}</span>
-          <span className="hero-dot">·</span>
-          <span>Culinaire voortgang</span>
-        </div>
-        <h1 className="hero-title"><em>{UI.profile.pageTitle}</em></h1>
-        <p className="hero-sub">{UI.profile.pageSubtitle}</p>
-      </header>
+      {profileHeader}
 
       <div className="profile-pillars-duo">
         {/* Pillar A — Radar */}
