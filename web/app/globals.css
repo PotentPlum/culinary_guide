@@ -152,7 +152,7 @@ body.sans-display .brand-title { font-family: var(--sans); font-style: normal; f
   font-weight: 600;
   box-shadow: inset 2px 0 0 var(--primary), 0 2px 8px rgba(30,26,20,0.10);
 }
-.nav-item.active:hover { background: rgba(255,255,255,0.86); box-shadow: inset 2px 0 0 var(--primary), 0 2px 8px rgba(30,26,20,0.10); }
+.nav-item.active:hover { background: rgba(255,255,255,0.86); }
 .nav-item.soon { cursor: default; }
 .nav-item.soon:hover { background: transparent; color: var(--ink-soft); }
 .nav-item svg { flex-shrink: 0; opacity: 0.8; }
@@ -600,7 +600,7 @@ body.sans-display .fp-card-title { font-family: var(--sans); font-weight: 600; f
 .cal-row:nth-child(even):not(.cal-head) { background: rgba(30,26,20,0.012); }
 .cal-row:nth-child(even):not(.cal-head):hover { background: rgba(30,26,20,0.045); }
 .cal-head {
-  background: linear-gradient(90deg, #E8DCC9 0%, #EDE6D6 100%);
+  background: linear-gradient(90deg, var(--surface-warm) 0%, var(--surface-warm-light) 100%);
   padding: 14px 16px;
   border-top: 0;
   border-bottom: 1px solid var(--line-strong);
@@ -677,7 +677,7 @@ body.sans-display .cal-name { font-family: var(--sans); font-weight: 600; font-s
 .detail-hero {
   padding: 52px 40px 36px;
   position: relative;
-  background: linear-gradient(180deg, #EBE3D2 0%, #F3EFE7 60%, var(--surface-card) 100%);
+  background: linear-gradient(180deg, var(--surface-warm) 0%, var(--surface-card) 100%);
   border-bottom: 1px solid var(--line);
 }
 .detail-hero::before {
@@ -3983,7 +3983,7 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
   margin-top: 8px;
   background: rgba(255,255,255,0.86);
   border: 1px solid rgba(30,26,20,0.11);
-  border-radius: 18px;
+  border-radius: var(--radius-xl);
   overflow: hidden;
   width: fit-content;
   box-shadow: var(--shadow-md);
@@ -4339,7 +4339,7 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(160deg, #EDE5D4 0%, var(--surface) 55%);
+  background: linear-gradient(160deg, var(--surface-warm-light) 0%, var(--surface) 55%);
   padding: 24px;
 }
 .login-card {
@@ -4414,8 +4414,8 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
   color: var(--accent);
   margin: 0;
   padding: 10px 14px;
-  background: rgba(185,81,40,0.07);
-  border: 1px solid rgba(185,81,40,0.18);
+  background: color-mix(in srgb, var(--accent) 7%, transparent);
+  border: 1px solid color-mix(in srgb, var(--accent) 18%, transparent);
   border-radius: var(--radius-md);
   line-height: 1.45;
 }
