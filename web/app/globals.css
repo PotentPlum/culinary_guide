@@ -43,17 +43,10 @@
 
   --ink-faint: rgba(30, 26, 20, 0.38);
 
+  --t-micro:  80ms;
   --t-fast:  110ms;
   --t-base:  160ms;
-  --t-slow:  260ms;
   --t-panel: 320ms;
-
-  --space-xs:  6px;
-  --space-sm:  12px;
-  --space-md:  20px;
-  --space-lg:  32px;
-  --space-xl:  48px;
-  --space-2xl: 64px;
 }
 
 * { box-sizing: border-box; }
@@ -112,7 +105,7 @@ button { font-family: inherit; }
 }
 .brand-mark {
   width: 42px; height: 42px;
-  border-radius: 13px;
+  border-radius: var(--radius-lg);
   background: var(--gradient-primary);
   color: var(--surface);
   display: grid; place-items: center;
@@ -242,7 +235,7 @@ body.sans-display .brand-title { font-family: var(--sans); font-style: normal; f
   font-weight: 600;
 }
 .hero-dot { opacity: 0.35; }
-.hero-loc { color: var(--ink-soft); }
+.hero-loc { font-weight: 500; }
 .hero-title {
   font-family: var(--serif);
   font-weight: 400;
@@ -327,7 +320,7 @@ body.sans-display .hero-title em {
   font-size: 13px;
   font-weight: 500;
   cursor: pointer;
-  transition: background var(--t-fast), color var(--t-fast), border-color var(--t-fast), box-shadow var(--t-fast);
+  transition: background var(--t-fast), color var(--t-fast), border-color var(--t-fast);
   letter-spacing: 0.005em;
 }
 .pill:hover { background: rgba(255,255,255,0.75); color: var(--ink); border-color: rgba(30,26,20,0.14); }
@@ -475,7 +468,6 @@ body.sans-display .veg-card-name { font-family: var(--sans); font-weight: 600; l
   gap: 18px;
   padding: 14px 22px;
   background: var(--surface-card);
-  border: 0;
   border-top: 1px solid var(--line);
   cursor: pointer;
   text-align: left;
@@ -4119,17 +4111,18 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
 }
 
 /* Per-module tinted backgrounds + icon bubble colors */
-.hp-module--seasonal  { background: linear-gradient(125deg, rgba(63,94,42,0.08) 0%, var(--surface-card) 52%); border-color: rgba(63,94,42,0.18); }
-.hp-module--calendar  { background: linear-gradient(125deg, rgba(122,156,92,0.08) 0%, var(--surface-card) 52%); border-color: rgba(122,156,92,0.16); }
-.hp-module--recipes   { background: linear-gradient(125deg, rgba(201,139,42,0.09) 0%, var(--surface-card) 52%); border-color: rgba(201,139,42,0.18); }
-.hp-module--techniques{ background: linear-gradient(125deg, rgba(185,81,40,0.08) 0%, var(--surface-card) 52%); border-color: rgba(185,81,40,0.16); }
-.hp-module--challenge { background: linear-gradient(125deg, rgba(130,90,180,0.07) 0%, var(--surface-card) 52%); border-color: rgba(130,90,180,0.14); }
+/* Each variant sets --mod-tint (card gradient) and --mod-border (card border) */
+.hp-module-card {
+  background: linear-gradient(125deg, var(--mod-tint, transparent) 0%, var(--surface-card) 52%);
+  border-color: var(--mod-border, var(--line));
+}
+.hp-module-card .hp-module-icon-wrap { background: var(--mod-icon-bg, rgba(30,26,20,0.07)); color: var(--mod-icon-color, var(--ink-soft)); }
 
-.hp-module--seasonal  .hp-module-icon-wrap { background: rgba(63,94,42,0.14);  color: var(--primary); }
-.hp-module--calendar  .hp-module-icon-wrap { background: rgba(122,156,92,0.16); color: var(--primary-soft); }
-.hp-module--recipes   .hp-module-icon-wrap { background: rgba(201,139,42,0.15); color: var(--soon-fg); }
-.hp-module--techniques .hp-module-icon-wrap { background: rgba(185,81,40,0.14); color: var(--accent); }
-.hp-module--challenge .hp-module-icon-wrap { background: rgba(130,90,180,0.14); color: #7B54B0; }
+.hp-module--seasonal  { --mod-tint: rgba(63,94,42,0.08);   --mod-border: rgba(63,94,42,0.18);   --mod-icon-bg: rgba(63,94,42,0.14);   --mod-icon-color: var(--primary); }
+.hp-module--calendar  { --mod-tint: rgba(122,156,92,0.08);  --mod-border: rgba(122,156,92,0.16);  --mod-icon-bg: rgba(122,156,92,0.16);  --mod-icon-color: var(--primary-soft); }
+.hp-module--recipes   { --mod-tint: rgba(201,139,42,0.09);  --mod-border: rgba(201,139,42,0.18);  --mod-icon-bg: rgba(201,139,42,0.15);  --mod-icon-color: var(--soon-fg); }
+.hp-module--techniques{ --mod-tint: rgba(185,81,40,0.08);   --mod-border: rgba(185,81,40,0.16);   --mod-icon-bg: rgba(185,81,40,0.14);   --mod-icon-color: var(--accent); }
+.hp-module--challenge { --mod-tint: rgba(130,90,180,0.07);  --mod-border: rgba(130,90,180,0.14);  --mod-icon-bg: rgba(130,90,180,0.14);  --mod-icon-color: #7B54B0; }
 
 /* ── Section pattern ── */
 .hp-section { display: flex; flex-direction: column; gap: 13px; }
@@ -4355,7 +4348,7 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
 @media (max-width: 560px) {
   .hp-hero { padding: 28px 16px 32px; margin: -28px -24px 0; }
   .hp-hero-title { font-size: 32px; }
-  .hp-season-stats { width: 100%; justify-content: space-around; border-radius: 14px; }
+  .hp-season-stats { width: 100%; justify-content: space-around; border-radius: var(--radius-lg); }
   .hp-stat { flex: 1; padding: 14px 8px; }
   .hp-stat-num { font-size: 26px; }
   .hp-module-grid { grid-template-columns: 1fr; }
@@ -4385,7 +4378,7 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
 .login-card {
   background: var(--surface-card);
   border: 1px solid rgba(30,26,20,0.12);
-  border-radius: 20px;
+  border-radius: var(--radius-xl);
   padding: 44px 40px;
   width: 100%;
   max-width: 400px;
@@ -4397,9 +4390,6 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
   z-index: 1;
 }
 .login-card .brand {
-  display: flex;
-  align-items: center;
-  gap: 11px;
   margin-bottom: 20px;
 }
 .login-title {
@@ -4457,7 +4447,7 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
   padding: 9px 13px;
   background: rgba(185,81,40,0.07);
   border: 1px solid rgba(185,81,40,0.18);
-  border-radius: 8px;
+  border-radius: var(--radius-sm);
 }
 .btn-primary {
   padding: 11px 18px;
@@ -4469,7 +4459,7 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
   font-size: 14.5px;
   font-weight: 600;
   cursor: pointer;
-  transition: opacity var(--t-fast), transform 80ms;
+  transition: opacity var(--t-fast), transform var(--t-micro);
   margin-top: 4px;
   letter-spacing: 0.01em;
 }
@@ -4484,7 +4474,7 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
   padding: 7px 12px;
   background: none;
   border: 1px solid rgba(30,26,20,0.14);
-  border-radius: 8px;
+  border-radius: var(--radius-sm);
   color: var(--ink-soft);
   font-family: var(--sans);
   font-size: 12px;
