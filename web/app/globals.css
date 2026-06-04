@@ -31,6 +31,7 @@
   --shadow-hover: 0 12px 32px rgba(30,26,20,0.13), 0 4px 10px rgba(30,26,20,0.06);
 
   --surface-warm-light: #EDE5D2;
+  --surface-hover:      #FFFEFB;
   --gradient-primary:   linear-gradient(145deg, #527A38 0%, var(--primary) 100%);
   --border-hover:       rgba(63,94,42,0.28);
   --paper:              var(--surface-card);
@@ -393,14 +394,14 @@ body.sans-display .hero-title em {
   cursor: pointer;
   text-align: left;
   font: inherit; color: inherit;
-  transition: transform 180ms cubic-bezier(.25,.7,.35,1), box-shadow 180ms, border-color 130ms;
+  transition: transform 180ms cubic-bezier(.25,.7,.35,1), box-shadow 180ms, border-color 130ms, background 130ms;
   box-shadow: var(--shadow-sm);
 }
 .veg-card:hover {
   transform: translateY(-3px);
   box-shadow: var(--shadow-hover);
   border-color: var(--border-hover);
-  background: #FFFEFB;
+  background: var(--surface-hover);
 }
 .veg-card.density-compact { padding: 10px; gap: 8px; }
 .veg-card.density-cozy { padding: 20px; gap: 18px; }
@@ -568,7 +569,7 @@ body.sans-display .fp-card-title { font-family: var(--sans); font-weight: 600; f
   font-size: 19px;
   border: 1px dashed var(--line-strong);
   border-radius: 20px;
-  background: linear-gradient(135deg, rgba(63,94,42,0.02) 0%, transparent 60%);
+  background: rgba(63,94,42,0.015);
   line-height: 1.55;
 }
 
@@ -881,7 +882,7 @@ body.sans-display .detail-blurb { font-family: var(--sans); font-style: normal; 
 }
 .recipe-card:hover {
   border-color: rgba(63,94,42,0.22);
-  background: #FFFEFB;
+  background: var(--surface-hover);
   transform: translateY(-2px);
   box-shadow: var(--shadow-sm);
 }
@@ -1087,7 +1088,7 @@ body.sans-display .recipe-title { font-family: var(--sans); font-style: normal; 
   border: 1px solid var(--line);
   border-radius: 20px;
   overflow: visible;
-  transition: transform 180ms cubic-bezier(.25,.7,.35,1), box-shadow 180ms, border-color 130ms;
+  transition: transform 180ms cubic-bezier(.25,.7,.35,1), box-shadow 180ms, border-color 130ms, background 130ms;
   box-shadow: var(--shadow-sm);
   position: relative;
   display: flex;
@@ -1097,7 +1098,7 @@ body.sans-display .recipe-title { font-family: var(--sans); font-style: normal; 
   transform: translateY(-3px);
   box-shadow: var(--shadow-hover);
   border-color: var(--border-hover);
-  background: #FFFEFB;
+  background: var(--surface-hover);
 }
 .rl-card--accented {
   border-top-width: 2px;
@@ -3022,14 +3023,14 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
   cursor: pointer;
   text-align: left;
   font: inherit; color: inherit;
-  transition: transform 180ms cubic-bezier(.3,.7,.4,1), box-shadow 180ms, border-color 130ms;
+  transition: transform 180ms cubic-bezier(.3,.7,.4,1), box-shadow 180ms, border-color 130ms, background 130ms;
   box-shadow: var(--shadow-sm);
 }
 .technique-card:hover {
   transform: translateY(-3px);
   box-shadow: var(--shadow-hover);
   border-color: var(--border-hover);
-  background: #FFFEFB;
+  background: var(--surface-hover);
 }
 
 .technique-card-header {
@@ -3946,9 +3947,11 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
   display: flex;
   align-items: center;
   gap: 8px;
+  font-family: var(--mono);
   font-size: 12px;
   color: var(--ink-soft);
-  letter-spacing: 0.04em;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 .hp-hero-flag {
   width: 20px; height: 13px;
@@ -4058,14 +4061,14 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
   cursor: pointer;
   text-align: left;
   font: inherit; color: inherit;
-  transition: transform 180ms cubic-bezier(.25,.7,.35,1), box-shadow 180ms, border-color 130ms;
+  transition: transform 180ms cubic-bezier(.25,.7,.35,1), box-shadow 180ms, border-color 130ms, background 130ms;
   box-shadow: var(--shadow-sm);
 }
 .hp-module-card:hover {
   transform: translateY(-3px);
   box-shadow: var(--shadow-hover);
   border-color: var(--border-hover);
-  background: #FFFEFB;
+  background: var(--surface-hover);
 }
 /* Icon bubble per module */
 .hp-module-icon-wrap {
