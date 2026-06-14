@@ -209,8 +209,11 @@ body.sans-display .brand-title { font-family: var(--sans); font-style: normal; f
   min-width: 0;
   overflow-x: hidden;
 }
-.page { display: flex; flex-direction: column; gap: 28px; animation: pageIn 220ms cubic-bezier(.25,.5,.45,1); }
-@keyframes pageIn { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
+.page { display: flex; flex-direction: column; gap: 28px; }
+@media (prefers-reduced-motion: no-preference) {
+  .page { animation: pageIn 220ms cubic-bezier(.25,.5,.45,1); }
+  @keyframes pageIn { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
+}
 
 /* ---- Hero ---- */
 .page-hero {
@@ -4471,11 +4474,9 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
   border-color: rgba(30,26,20,0.22);
 }
 .logout-btn::before {
-  content: "→";
+  content: "←";
   font-size: 12px;
   opacity: 0.45;
-  transform: rotate(180deg);
-  display: inline-block;
 }
 
 /* =========== EVALUATION OVERLAY =========== */
@@ -4839,10 +4840,9 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
   font-size: 11.5px;
   letter-spacing: 0.09em;
   text-transform: uppercase;
-  color: var(--primary);
+  color: var(--primary-soft);
   font-weight: 700;
   margin: 0;
-  opacity: 0.85;
 }
 
 .profile-radar-wrapper {
