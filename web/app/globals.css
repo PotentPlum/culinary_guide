@@ -3421,9 +3421,16 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
 
 /* ─── Challenge page ─────────────────────────────────────────────────────── */
 
-.challenge-page { max-width: 680px; }
+.challenge-page { max-width: 900px; }
 
-.challenge-form { margin-bottom: 28px; }
+.challenge-form {
+  margin-bottom: 28px;
+  padding: 28px 32px 32px;
+  background: var(--surface-card);
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  box-shadow: var(--shadow-sm);
+}
 
 .challenge-form-row {
   display: flex;
@@ -4090,9 +4097,11 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
   font-size: 12.5px;
   color: var(--ink-soft);
   margin-top: 3px;
-  white-space: nowrap;
+  line-height: 1.45;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
   overflow: hidden;
-  text-overflow: ellipsis;
 }
 .hp-module-arrow {
   color: var(--ink-soft);
@@ -4820,13 +4829,16 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
 }
 
 .profile-pillar-title {
-  font-family: var(--sans);
-  font-size: 11px;
-  letter-spacing: 0.10em;
-  text-transform: uppercase;
-  color: var(--ink-soft);
-  font-weight: 600;
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 24px;
+  line-height: 1.15;
+  letter-spacing: -0.015em;
+  color: var(--ink);
+  font-weight: 400;
   margin: 0;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--line);
 }
 
 .profile-radar-wrapper {
@@ -5072,12 +5084,12 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
 }
 
 .challenge-history-title {
-  font-family: var(--sans);
-  font-size: 11px;
-  letter-spacing: 0.10em;
-  text-transform: uppercase;
-  color: var(--ink-soft);
-  font-weight: 600;
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 20px;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+  font-weight: 400;
   margin: 0 0 20px;
 }
 
