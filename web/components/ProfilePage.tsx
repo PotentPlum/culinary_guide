@@ -38,6 +38,18 @@ export default function ProfilePage() {
       .finally(() => setLoading(false));
   }, []);
 
+  const pageHero = (
+    <header className="profile-page-hero">
+      <div className="hero-eyebrow">
+        <span className="hero-loc">{UI.hero.eyebrowLoc}</span>
+        <span className="hero-dot">·</span>
+        <span>{UI.profile.eyebrowSub}</span>
+      </div>
+      <h1 className="hero-title"><em>{UI.profile.pageTitle}</em></h1>
+      <p className="hero-sub">{UI.profile.pageSubtitle}</p>
+    </header>
+  );
+
   if (loading) {
     return (
       <div className="page profile-page">
@@ -51,15 +63,7 @@ export default function ProfilePage() {
   if (attempts.length === 0) {
     return (
       <div className="page profile-page">
-        <header className="profile-page-hero">
-          <div className="hero-eyebrow">
-            <span className="hero-loc">{UI.hero.eyebrowLoc}</span>
-            <span className="hero-dot">·</span>
-            <span>{UI.profile.eyebrowSub}</span>
-          </div>
-          <h1 className="hero-title"><em>{UI.profile.pageTitle}</em></h1>
-          <p className="hero-sub">{UI.profile.pageSubtitle}</p>
-        </header>
+        {pageHero}
         <div className="profile-empty-state">
           <p>{UI.profile.emptyState}</p>
         </div>
@@ -94,15 +98,7 @@ export default function ProfilePage() {
 
   return (
     <div className="page profile-page">
-      <header className="profile-page-hero">
-        <div className="hero-eyebrow">
-          <span className="hero-loc">{UI.hero.eyebrowLoc}</span>
-          <span className="hero-dot">·</span>
-          <span>{UI.profile.eyebrowSub}</span>
-        </div>
-        <h1 className="hero-title"><em>{UI.profile.pageTitle}</em></h1>
-        <p className="hero-sub">{UI.profile.pageSubtitle}</p>
-      </header>
+      {pageHero}
 
       {/* Pillar A — Radar */}
       <section className="profile-pillar">
