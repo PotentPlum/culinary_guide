@@ -52,6 +52,11 @@ export default function ProfilePage() {
     return (
       <div className="page profile-page">
         <header className="profile-page-hero">
+          <div className="hero-eyebrow">
+            <span className="hero-loc">{UI.hero.eyebrowLoc}</span>
+            <span className="hero-dot">·</span>
+            <span>{UI.profile.eyebrowSub}</span>
+          </div>
           <h1 className="hero-title"><em>{UI.profile.pageTitle}</em></h1>
           <p className="hero-sub">{UI.profile.pageSubtitle}</p>
         </header>
@@ -90,6 +95,11 @@ export default function ProfilePage() {
   return (
     <div className="page profile-page">
       <header className="profile-page-hero">
+        <div className="hero-eyebrow">
+          <span className="hero-loc">{UI.hero.eyebrowLoc}</span>
+          <span className="hero-dot">·</span>
+          <span>{UI.profile.eyebrowSub}</span>
+        </div>
         <h1 className="hero-title"><em>{UI.profile.pageTitle}</em></h1>
         <p className="hero-sub">{UI.profile.pageSubtitle}</p>
       </header>
