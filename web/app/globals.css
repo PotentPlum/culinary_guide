@@ -128,8 +128,10 @@ body.sans-display .brand-title { font-family: var(--sans); font-style: normal; f
 .nav {
   display: flex;
   flex-direction: column;
-  gap: 2px;
+  gap: 3px;
   margin-top: 4px;
+  padding-top: 12px;
+  border-top: 1px solid rgba(30,26,20,0.10);
 }
 .nav-item {
   display: flex; align-items: center; gap: 10px;
@@ -148,12 +150,12 @@ body.sans-display .brand-title { font-family: var(--sans); font-style: normal; f
 }
 .nav-item:hover:not(:disabled) { background: rgba(255,255,255,0.48); color: var(--ink); }
 .nav-item.active {
-  background: rgba(255,255,255,0.68);
+  background: rgba(255,255,255,0.82);
   color: var(--primary);
   font-weight: 600;
-  box-shadow: inset 2px 0 0 var(--primary), 0 1px 4px rgba(30,26,20,0.07);
+  box-shadow: inset 3px 0 0 var(--primary), 0 2px 6px rgba(30,26,20,0.10);
 }
-.nav-item.active:hover { background: rgba(255,255,255,0.78); box-shadow: inset 2px 0 0 var(--primary), 0 1px 4px rgba(30,26,20,0.07); }
+.nav-item.active:hover { background: rgba(255,255,255,0.92); box-shadow: inset 3px 0 0 var(--primary), 0 2px 6px rgba(30,26,20,0.10); }
 .nav-item.soon { cursor: default; }
 .nav-item.soon:hover { background: transparent; color: var(--ink-soft); }
 .nav-item svg { flex-shrink: 0; opacity: 0.8; }
@@ -200,6 +202,7 @@ body.sans-display .brand-title { font-family: var(--sans); font-style: normal; f
   font-size: 10.5px;
   color: var(--ink-soft);
   padding: 0 4px;
+  opacity: 0.55;
 }
 
 /* =========== MAIN =========== */
@@ -214,7 +217,7 @@ body.sans-display .brand-title { font-family: var(--sans); font-style: normal; f
 /* ---- Hero ---- */
 .page-hero {
   display: flex; flex-direction: column; gap: 16px;
-  padding-bottom: 40px;
+  padding-bottom: 44px;
   border-bottom: 1px solid var(--line);
   max-width: 760px;
 }
@@ -351,7 +354,7 @@ body.sans-display .hero-title em {
 .search input {
   border: 0; outline: 0; background: transparent;
   font: inherit; color: var(--ink);
-  width: 150px;
+  width: 180px;
 }
 .seg {
   display: flex;
@@ -468,7 +471,11 @@ body.sans-display .veg-card-name { font-family: var(--sans); font-weight: 600; l
   transition: background 130ms;
   width: 100%;
 }
-.veg-row:hover { background: rgba(63,94,42,0.025); }
+.veg-row:hover { background: rgba(63,94,42,0.028); }
+.veg-row.status-peak     { box-shadow: inset 4px 0 0 var(--primary); }
+.veg-row.status-shoulder { box-shadow: inset 4px 0 0 var(--primary-soft); }
+.veg-row.status-soon     { box-shadow: inset 4px 0 0 var(--soon); }
+.veg-row.status-ending   { box-shadow: inset 4px 0 0 var(--ending); }
 .veg-row-swatch { width: 32px; height: 32px; border-radius: 50%; border: 1px solid; box-shadow: 0 1px 3px rgba(30,26,20,0.08); }
 .veg-row-name { font-family: var(--serif); font-size: 19px; letter-spacing: -0.005em; }
 body.sans-display .veg-row-name { font-family: var(--sans); font-weight: 600; font-size: 16px; letter-spacing: -0.015em; }
@@ -520,7 +527,7 @@ body.sans-display .veg-row-name { font-family: var(--sans); font-weight: 600; fo
 .future-peek { margin-top: 40px; padding-top: 32px; border-top: 1px dashed var(--line-strong); }
 .fp-label {
   font-family: var(--mono);
-  font-size: 11px; text-transform: uppercase; letter-spacing: 0.10em;
+  font-size: 11.5px; text-transform: uppercase; letter-spacing: 0.08em;
   color: var(--ink-soft);
   margin-bottom: 16px;
 }
@@ -561,16 +568,16 @@ body.sans-display .fp-card-title { font-family: var(--sans); font-weight: 600; f
 }
 
 .empty {
-  padding: 64px 44px;
+  padding: 80px 44px;
   text-align: center;
   color: var(--ink-soft);
   font-family: var(--serif);
   font-style: italic;
-  font-size: 19px;
+  font-size: 21px;
   border: 1px dashed var(--line-strong);
   border-radius: 20px;
-  background: rgba(63,94,42,0.015);
-  line-height: 1.55;
+  background: rgba(63,94,42,0.012);
+  line-height: 1.65;
 }
 
 /* =========== CALENDAR =========== */
@@ -620,6 +627,10 @@ body.sans-display .fp-card-title { font-family: var(--sans); font-weight: 600; f
 .cal-month.now {
   color: var(--primary);
   font-weight: 700;
+  background: rgba(63,94,42,0.12);
+  border-radius: 3px;
+  padding: 2px 4px;
+  margin: 0 -4px;
 }
 .cal-name-cell {
   display: flex; gap: 10px; align-items: center;
@@ -627,7 +638,7 @@ body.sans-display .fp-card-title { font-family: var(--sans); font-weight: 600; f
 .cal-swatch { width: 22px; height: 22px; border-radius: 50%; border: 1px solid; flex-shrink: 0; }
 .cal-name { font-family: var(--serif); font-size: 18px; line-height: 1.1; }
 body.sans-display .cal-name { font-family: var(--sans); font-weight: 600; font-size: 14.5px; letter-spacing: -0.015em; }
-.cal-nl { font-size: 10px; color: var(--ink-soft); letter-spacing: 0.06em; text-transform: uppercase; margin-top: 2px; font-weight: 500; }
+.cal-nl { font-size: 10.5px; color: var(--ink-soft); letter-spacing: 0.05em; text-transform: uppercase; margin-top: 2px; font-weight: 500; }
 .cal-cell {
   height: 22px;
   border-radius: 4px;
@@ -746,30 +757,30 @@ body.sans-display .detail-blurb { font-family: var(--sans); font-style: normal; 
 .detail-section:first-of-type { border-top: 0; padding-top: 0; }
 .detail-section h3 {
   font-family: var(--sans);
-  font-size: 11px;
-  letter-spacing: 0.10em;
+  font-size: 11.5px;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--ink-soft);
-  margin: 0 0 13px;
+  margin: 0 0 14px;
   font-weight: 600;
 }
 .detail-section p { margin: 0; font-size: 15px; line-height: 1.6; text-wrap: pretty; }
 .chips { display: flex; flex-wrap: wrap; gap: 6px; }
 .chip {
-  padding: 5px 14px;
+  padding: 6px 15px;
   background: var(--surface-warm);
   border: 1px solid var(--line-strong);
   border-radius: 999px;
-  font-size: 13px;
+  font-size: 13.5px;
   font-weight: 500;
   color: var(--ink);
   transition: border-color 130ms, background 130ms, box-shadow 130ms;
   letter-spacing: 0.01em;
 }
 .chip:hover {
-  border-color: rgba(30,26,20,0.30);
+  border-color: rgba(30,26,20,0.28);
   background: var(--surface-warm-light);
-  box-shadow: 0 1px 4px rgba(30,26,20,0.07);
+  box-shadow: 0 1px 5px rgba(30,26,20,0.08);
 }
 
 .detail-section.ghost {
@@ -3066,8 +3077,8 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
 
 .technique-subcategory {
   font-family: var(--mono);
-  font-size: 10px;
-  letter-spacing: 0.1em;
+  font-size: 10.5px;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--ink-soft);
 }
@@ -3621,8 +3632,8 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
 
 .challenge-meta-label {
   font-family: var(--mono);
-  font-size: 10px;
-  letter-spacing: 0.08em;
+  font-size: 10.5px;
+  letter-spacing: 0.07em;
   text-transform: uppercase;
   color: var(--ink-soft);
 }
@@ -3638,8 +3649,8 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
 
 .challenge-why-label {
   font-family: var(--mono);
-  font-size: 10px;
-  letter-spacing: 0.08em;
+  font-size: 10.5px;
+  letter-spacing: 0.07em;
   text-transform: uppercase;
   color: var(--ink-soft);
 }
@@ -3699,9 +3710,9 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
 
 .challenge-params-title {
   font-family: var(--sans);
-  font-size: 11px;
+  font-size: 11.5px;
   font-weight: 600;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.07em;
   text-transform: uppercase;
   color: var(--ink-soft);
   margin: 0 0 12px;
@@ -3928,10 +3939,10 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
 .hp-hero {
   display: flex;
   flex-direction: column;
-  gap: 18px;
-  padding: 52px 60px 58px;
+  gap: 20px;
+  padding: 56px 60px 62px;
   margin: -44px -52px 0;
-  background: linear-gradient(165deg, #E8DFCA 0%, #EDE6D8 30%, var(--surface) 62%);
+  background: linear-gradient(160deg, #E2D7BA 0%, #EAE2D2 28%, #EDE8DC 52%, var(--surface) 72%);
   border-bottom: 1px solid var(--line);
   position: relative;
   overflow: hidden;
@@ -3940,7 +3951,9 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
   content: "";
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse 55% 75% at 92% 18%, rgba(63,94,42,0.07) 0%, transparent 68%);
+  background:
+    radial-gradient(ellipse 60% 80% at 95% 10%, rgba(63,94,42,0.08) 0%, transparent 65%),
+    radial-gradient(ellipse 40% 50% at 5% 90%, rgba(185,81,40,0.04) 0%, transparent 60%);
   pointer-events: none;
 }
 .hp-hero-eyebrow {
@@ -3990,13 +4003,14 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
   display: flex;
   align-items: center;
   gap: 0;
-  margin-top: 6px;
-  background: rgba(255,255,255,0.82);
-  border: 1px solid rgba(30,26,20,0.13);
-  border-radius: 16px;
+  margin-top: 8px;
+  background: rgba(255,255,255,0.88);
+  border: 1px solid rgba(30,26,20,0.12);
+  border-radius: 18px;
   overflow: hidden;
   width: fit-content;
-  box-shadow: var(--shadow-md);
+  box-shadow: var(--shadow-md), 0 0 0 1px rgba(255,255,255,0.6) inset;
+  backdrop-filter: blur(12px);
   position: relative;
   z-index: 1;
 }
@@ -4018,8 +4032,8 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
   letter-spacing: -0.025em;
 }
 .hp-stat-label {
-  font-size: 10px;
-  letter-spacing: 0.08em;
+  font-size: 10.5px;
+  letter-spacing: 0.07em;
   text-transform: uppercase;
   color: var(--ink-soft);
   white-space: nowrap;
@@ -4039,9 +4053,9 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
 .hp-modules { display: flex; flex-direction: column; gap: 16px; }
 .hp-module-label {
   font-family: var(--mono);
-  font-size: 10px;
+  font-size: 10.5px;
   text-transform: uppercase;
-  letter-spacing: 0.14em;
+  letter-spacing: 0.12em;
   color: var(--ink-soft);
   opacity: 0.75;
 }
@@ -4054,7 +4068,7 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
   display: flex;
   align-items: center;
   gap: 18px;
-  padding: 22px 24px;
+  padding: 20px 22px;
   background: var(--surface-card);
   border: 1px solid var(--line);
   border-radius: 20px;
@@ -4063,6 +4077,7 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
   font: inherit; color: inherit;
   transition: transform 180ms cubic-bezier(.25,.7,.35,1), box-shadow 180ms, border-color 130ms, background 130ms;
   box-shadow: var(--shadow-sm);
+  min-height: 80px;
 }
 .hp-module-card:hover {
   transform: translateY(-3px);
@@ -4087,12 +4102,10 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
   line-height: 1.1;
 }
 .hp-module-desc {
-  font-size: 12.5px;
+  font-size: 13px;
   color: var(--ink-soft);
-  margin-top: 3px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  margin-top: 4px;
+  line-height: 1.45;
 }
 .hp-module-arrow {
   color: var(--ink-soft);
@@ -4131,10 +4144,10 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
   align-items: center;
   gap: 8px;
   font-family: var(--sans);
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.10em;
+  letter-spacing: 0.08em;
   color: var(--ink-soft);
 }
 .hp-section-dot {
@@ -4200,16 +4213,13 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
   font-family: var(--serif);
   font-style: italic;
   font-size: 19px;
-  line-height: 1.1;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  line-height: 1.15;
 }
 .hp-spotlight-family {
-  font-size: 10px;
+  font-size: 10.5px;
   color: var(--ink-soft);
   text-transform: uppercase;
-  letter-spacing: 0.07em;
+  letter-spacing: 0.06em;
   font-weight: 500;
 }
 .hp-spotlight-arrow {
@@ -4821,8 +4831,8 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
 
 .profile-pillar-title {
   font-family: var(--sans);
-  font-size: 11px;
-  letter-spacing: 0.10em;
+  font-size: 11.5px;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--ink-soft);
   font-weight: 600;
@@ -5019,9 +5029,9 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
 
 .profile-section-label {
   font-family: var(--mono);
-  font-size: 11px;
+  font-size: 11.5px;
   text-transform: uppercase;
-  letter-spacing: 0.10em;
+  letter-spacing: 0.08em;
   color: var(--ink-soft);
   font-weight: 600;
   margin: 0 0 10px;
@@ -5073,8 +5083,8 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
 
 .challenge-history-title {
   font-family: var(--sans);
-  font-size: 11px;
-  letter-spacing: 0.10em;
+  font-size: 11.5px;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--ink-soft);
   font-weight: 600;
