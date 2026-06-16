@@ -155,7 +155,7 @@ body.sans-display .brand-title { font-family: var(--sans); font-style: normal; f
   font-weight: 600;
   box-shadow: inset 3px 0 0 var(--primary), 0 2px 6px rgba(30,26,20,0.10);
 }
-.nav-item.active:hover { background: rgba(255,255,255,0.92); box-shadow: inset 3px 0 0 var(--primary), 0 2px 6px rgba(30,26,20,0.10); }
+.nav-item.active:hover { background: rgba(255,255,255,0.92); }
 .nav-item.soon { cursor: default; }
 .nav-item.soon:hover { background: transparent; color: var(--ink-soft); }
 .nav-item svg { flex-shrink: 0; opacity: 0.8; }
@@ -472,10 +472,11 @@ body.sans-display .veg-card-name { font-family: var(--sans); font-weight: 600; l
   width: 100%;
 }
 .veg-row:hover { background: rgba(63,94,42,0.028); }
-.veg-row.status-peak     { box-shadow: inset 4px 0 0 var(--primary); }
-.veg-row.status-shoulder { box-shadow: inset 4px 0 0 var(--primary-soft); }
-.veg-row.status-soon     { box-shadow: inset 4px 0 0 var(--soon); }
-.veg-row.status-ending   { box-shadow: inset 4px 0 0 var(--ending); }
+.veg-row.status-peak     { --row-accent: var(--primary); }
+.veg-row.status-shoulder { --row-accent: var(--primary-soft); }
+.veg-row.status-soon     { --row-accent: var(--soon); }
+.veg-row.status-ending   { --row-accent: var(--ending); }
+.veg-row[class*="status-"] { box-shadow: inset 4px 0 0 var(--row-accent); }
 .veg-row-swatch { width: 32px; height: 32px; border-radius: 50%; border: 1px solid; box-shadow: 0 1px 3px rgba(30,26,20,0.08); }
 .veg-row-name { font-family: var(--serif); font-size: 19px; letter-spacing: -0.005em; }
 body.sans-display .veg-row-name { font-family: var(--sans); font-weight: 600; font-size: 16px; letter-spacing: -0.015em; }
@@ -4820,7 +4821,7 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
 .profile-pillar {
   background: var(--surface-card);
   border: 1px solid var(--line);
-  border-top: 2px solid rgba(63,94,42,0.18);
+  border-top: 2px solid color-mix(in srgb, var(--primary) 18%, transparent);
   border-radius: 20px;
   padding: 28px 32px 32px;
   box-shadow: var(--shadow-sm);
