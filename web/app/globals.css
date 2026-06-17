@@ -131,7 +131,7 @@ body.sans-display .brand-title { font-family: var(--sans); font-style: normal; f
   gap: 2px;
   margin-top: 4px;
   padding-top: 10px;
-  border-top: 1px solid rgba(30,26,20,0.08);
+  border-top: 1px solid var(--line);
 }
 .nav-item {
   display: flex; align-items: center; gap: 10px;
@@ -155,7 +155,7 @@ body.sans-display .brand-title { font-family: var(--sans); font-style: normal; f
   font-weight: 600;
   box-shadow: inset 3px 0 0 var(--primary), 0 2px 8px rgba(30,26,20,0.09);
 }
-.nav-item.active:hover { background: rgba(255,255,255,0.84); box-shadow: inset 3px 0 0 var(--primary), 0 2px 8px rgba(30,26,20,0.09); }
+.nav-item.active:hover { background: rgba(255,255,255,0.84); }
 .nav-item.soon { cursor: default; }
 .nav-item.soon:hover { background: transparent; color: var(--ink-soft); }
 .nav-item svg { flex-shrink: 0; opacity: 0.8; }
@@ -234,7 +234,7 @@ body.sans-display .brand-title { font-family: var(--sans); font-style: normal; f
 .hero-title {
   font-family: var(--serif);
   font-weight: 400;
-  font-size: clamp(40px, 6vw, 74px);
+  font-size: clamp(38px, 6vw, 74px);
   line-height: 1.0;
   letter-spacing: -0.028em;
   margin: 0;
@@ -4430,10 +4430,8 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
   transition: border-color 0.15s, box-shadow 0.15s;
 }
 .form-field input:focus {
-  box-shadow: 0 0 0 3px rgba(63,94,42,0.08);
-}
-.form-field input:focus {
   border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(63,94,42,0.08);
 }
 .login-error {
   font-size: 13px;
