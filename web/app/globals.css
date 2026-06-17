@@ -130,6 +130,8 @@ body.sans-display .brand-title { font-family: var(--sans); font-style: normal; f
   flex-direction: column;
   gap: 2px;
   margin-top: 4px;
+  padding-top: 10px;
+  border-top: 1px solid rgba(30,26,20,0.08);
 }
 .nav-item {
   display: flex; align-items: center; gap: 10px;
@@ -148,12 +150,12 @@ body.sans-display .brand-title { font-family: var(--sans); font-style: normal; f
 }
 .nav-item:hover:not(:disabled) { background: rgba(255,255,255,0.48); color: var(--ink); }
 .nav-item.active {
-  background: rgba(255,255,255,0.68);
+  background: linear-gradient(90deg, rgba(255,255,255,0.84) 0%, rgba(255,255,255,0.62) 100%);
   color: var(--primary);
   font-weight: 600;
-  box-shadow: inset 2px 0 0 var(--primary), 0 1px 4px rgba(30,26,20,0.07);
+  box-shadow: inset 3px 0 0 var(--primary), 0 2px 8px rgba(30,26,20,0.09);
 }
-.nav-item.active:hover { background: rgba(255,255,255,0.78); box-shadow: inset 2px 0 0 var(--primary), 0 1px 4px rgba(30,26,20,0.07); }
+.nav-item.active:hover { background: rgba(255,255,255,0.84); box-shadow: inset 3px 0 0 var(--primary), 0 2px 8px rgba(30,26,20,0.09); }
 .nav-item.soon { cursor: default; }
 .nav-item.soon:hover { background: transparent; color: var(--ink-soft); }
 .nav-item svg { flex-shrink: 0; opacity: 0.8; }
@@ -209,31 +211,32 @@ body.sans-display .brand-title { font-family: var(--sans); font-style: normal; f
   min-width: 0;
   overflow-x: hidden;
 }
-.page { display: flex; flex-direction: column; gap: 28px; }
+.page { display: flex; flex-direction: column; gap: 36px; }
 
 /* ---- Hero ---- */
 .page-hero {
-  display: flex; flex-direction: column; gap: 16px;
-  padding-bottom: 40px;
+  display: flex; flex-direction: column; gap: 20px;
+  padding-bottom: 56px;
   border-bottom: 1px solid var(--line);
-  max-width: 760px;
+  max-width: 800px;
 }
 .hero-eyebrow {
-  display: flex; align-items: center; gap: 10px;
-  font-size: 12px;
+  display: flex; align-items: center; gap: 8px;
+  font-size: 11px;
   color: var(--ink-soft);
-  letter-spacing: 0.06em;
+  letter-spacing: 0.09em;
   font-family: var(--mono);
   text-transform: uppercase;
+  opacity: 0.72;
 }
 .hero-dot { opacity: 0.4; }
 .hero-loc { font-weight: 500; }
 .hero-title {
   font-family: var(--serif);
   font-weight: 400;
-  font-size: clamp(38px, 5.5vw, 68px);
-  line-height: 1.02;
-  letter-spacing: -0.025em;
+  font-size: clamp(40px, 6vw, 74px);
+  line-height: 1.0;
+  letter-spacing: -0.028em;
   margin: 0;
   text-wrap: pretty;
 }
@@ -253,9 +256,9 @@ body.sans-display .hero-title em {
   font-size: 17px;
   color: var(--ink-soft);
   margin: 0;
-  max-width: 60ch;
+  max-width: 62ch;
   text-wrap: pretty;
-  line-height: 1.7;
+  line-height: 1.75;
 }
 
 /* ---- Hero stats chips ---- */
@@ -306,8 +309,8 @@ body.sans-display .hero-title em {
   display: inline-flex; align-items: center; gap: 7px;
   padding: 7px 16px;
   border-radius: 999px;
-  border: 1px solid transparent;
-  background: transparent;
+  border: 1px solid rgba(30,26,20,0.09);
+  background: rgba(255,255,255,0.48);
   color: var(--ink-soft);
   font-size: 13px;
   font-weight: 500;
@@ -315,7 +318,7 @@ body.sans-display .hero-title em {
   transition: background 130ms, color 130ms, border-color 130ms, box-shadow 130ms;
   letter-spacing: 0.005em;
 }
-.pill:hover { background: rgba(255,255,255,0.70); color: var(--ink); border-color: rgba(30,26,20,0.13); }
+.pill:hover { background: rgba(255,255,255,0.84); color: var(--ink); border-color: rgba(30,26,20,0.16); }
 .pill.active {
   background: var(--primary);
   color: var(--surface);
@@ -398,7 +401,7 @@ body.sans-display .hero-title em {
   box-shadow: var(--shadow-sm);
 }
 .veg-card:hover {
-  transform: translateY(-3px);
+  transform: translateY(-2px);
   box-shadow: var(--shadow-hover);
   border-color: var(--border-hover);
   background: var(--surface-hover);
@@ -561,16 +564,17 @@ body.sans-display .fp-card-title { font-family: var(--sans); font-weight: 600; f
 }
 
 .empty {
-  padding: 64px 44px;
+  padding: 80px 44px;
   text-align: center;
   color: var(--ink-soft);
   font-family: var(--serif);
   font-style: italic;
-  font-size: 19px;
+  font-size: 22px;
   border: 1px dashed var(--line-strong);
   border-radius: 20px;
-  background: rgba(63,94,42,0.015);
-  line-height: 1.55;
+  background: rgba(63,94,42,0.018);
+  line-height: 1.6;
+  letter-spacing: -0.006em;
 }
 
 /* =========== CALENDAR =========== */
@@ -601,7 +605,7 @@ body.sans-display .fp-card-title { font-family: var(--sans); font-weight: 600; f
   width: 100%;
 }
 .cal-row:first-child { border-top: 0; cursor: default; }
-.cal-row:not(.cal-head):hover { background: rgba(63,94,42,0.028); }
+.cal-row:not(.cal-head):hover { background: rgba(63,94,42,0.036); }
 .cal-row:nth-child(even):not(.cal-head) { background: rgba(30,26,20,0.012); }
 .cal-row:nth-child(even):not(.cal-head):hover { background: rgba(63,94,42,0.038); }
 .cal-head {
@@ -620,6 +624,10 @@ body.sans-display .fp-card-title { font-family: var(--sans); font-weight: 600; f
 .cal-month.now {
   color: var(--primary);
   font-weight: 700;
+  background: rgba(63,94,42,0.10);
+  border-radius: 4px;
+  padding: 2px 4px;
+  margin: -2px -4px;
 }
 .cal-name-cell {
   display: flex; gap: 10px; align-items: center;
@@ -641,7 +649,7 @@ body.sans-display .cal-name { font-family: var(--sans); font-weight: 600; font-s
 }
 .cal-cell.on .cal-fill { width: 100%; height: 100%; border-radius: 4px; }
 .cal-cell.half .cal-fill { opacity: 0.45; }
-.cal-cell.now { box-shadow: inset 0 0 0 1.5px var(--ink); }
+.cal-cell.now { box-shadow: inset 0 0 0 2px rgba(63,94,42,0.45); background: rgba(63,94,42,0.05); }
 
 /* =========== DETAIL =========== */
 .detail-scrim {
@@ -732,11 +740,13 @@ body.sans-display .detail-nl { font-family: var(--sans); font-style: normal; fon
   font-family: var(--serif);
   font-style: italic;
   font-size: 19px;
-  line-height: 1.65;
-  color: var(--ink-soft);
+  line-height: 1.68;
+  color: var(--ink);
+  opacity: 0.72;
   margin: 0 0 34px;
   text-wrap: pretty;
   padding-bottom: 4px;
+  letter-spacing: -0.004em;
 }
 body.sans-display .detail-blurb { font-family: var(--sans); font-style: normal; font-size: 16px; }
 .detail-section {
@@ -746,12 +756,13 @@ body.sans-display .detail-blurb { font-family: var(--sans); font-style: normal; 
 .detail-section:first-of-type { border-top: 0; padding-top: 0; }
 .detail-section h3 {
   font-family: var(--sans);
-  font-size: 11px;
-  letter-spacing: 0.10em;
+  font-size: 10.5px;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--ink-soft);
-  margin: 0 0 13px;
-  font-weight: 600;
+  margin: 0 0 14px;
+  font-weight: 700;
+  opacity: 0.82;
 }
 .detail-section p { margin: 0; font-size: 15px; line-height: 1.6; text-wrap: pretty; }
 .chips { display: flex; flex-wrap: wrap; gap: 6px; }
@@ -822,7 +833,7 @@ body.sans-display .detail-blurb { font-family: var(--sans); font-style: normal; 
   .nav-soon { display: none; }
   .sidenav-footer { display: none; }
   .main { padding: 24px 20px 64px; }
-  .hero-title { font-size: 40px; }
+  .hero-title { font-size: 38px; }
   .cal-row { grid-template-columns: 140px repeat(12, 1fr); padding: 8px; }
   .cal-name { font-size: 13px; }
   .cal-nl { display: none; }
@@ -953,9 +964,9 @@ body.sans-display .recipe-title { font-family: var(--sans); font-style: normal; 
   align-items: flex-start;
   justify-content: space-between;
   gap: 24px;
-  padding-bottom: 36px;
+  padding-bottom: 48px;
   border-bottom: 1px solid var(--line);
-  margin-bottom: 40px;
+  margin-bottom: 48px;
   flex-wrap: wrap;
 }
 
@@ -971,11 +982,11 @@ body.sans-display .recipe-title { font-family: var(--sans); font-style: normal; 
 
 .rl-library-title {
   font-family: var(--serif);
-  font-size: clamp(36px, 5vw, 60px);
+  font-size: clamp(40px, 6vw, 74px);
   font-weight: 400;
   font-style: normal;
   line-height: 1.0;
-  letter-spacing: -0.025em;
+  letter-spacing: -0.028em;
   margin: 0;
   color: var(--ink);
 }
@@ -1095,7 +1106,7 @@ body.sans-display .recipe-title { font-family: var(--sans); font-style: normal; 
   flex-direction: column;
 }
 .rl-card:hover {
-  transform: translateY(-3px);
+  transform: translateY(-2px);
   box-shadow: var(--shadow-hover);
   border-color: var(--border-hover);
   background: var(--surface-hover);
@@ -1158,10 +1169,10 @@ body.sans-display .recipe-title { font-family: var(--sans); font-style: normal; 
 .rl-card-title {
   font-family: var(--serif);
   font-style: italic;
-  font-size: 21px;
+  font-size: 22px;
   font-weight: 400;
-  line-height: 1.12;
-  letter-spacing: -0.012em;
+  line-height: 1.1;
+  letter-spacing: -0.014em;
   margin: 0 0 8px;
   color: var(--ink);
   text-wrap: pretty;
@@ -3027,7 +3038,7 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
   box-shadow: var(--shadow-sm);
 }
 .technique-card:hover {
-  transform: translateY(-3px);
+  transform: translateY(-2px);
   box-shadow: var(--shadow-hover);
   border-color: var(--border-hover);
   background: var(--surface-hover);
@@ -3109,7 +3120,7 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
 
 .technique-drawer-hero {
   padding: 56px 44px 36px;
-  background: linear-gradient(180deg, #E8DFCA 0%, #EDE6D8 55%, var(--surface-warm) 100%);
+  background: linear-gradient(180deg, #E8DFCA 0%, #F0EBE0 55%, var(--surface-card) 100%);
   border-bottom: 1px solid var(--line);
 }
 
@@ -3421,7 +3432,7 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
 
 /* ─── Challenge page ─────────────────────────────────────────────────────── */
 
-.challenge-page { max-width: 680px; }
+.challenge-page { max-width: 760px; }
 
 .challenge-form { margin-bottom: 28px; }
 
@@ -3596,12 +3607,12 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
 .challenge-objective {
   font-family: var(--serif);
   font-style: italic;
-  font-size: 26px;
-  line-height: 1.4;
-  letter-spacing: -0.015em;
+  font-size: 29px;
+  line-height: 1.35;
+  letter-spacing: -0.018em;
   color: var(--ink);
   margin: 0;
-  padding: 4px 0 8px;
+  padding: 6px 0 10px;
 }
 
 .challenge-meta {
@@ -3920,7 +3931,7 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
 .homepage {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 44px;
   padding-bottom: 24px;
 }
 
@@ -4065,7 +4076,7 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
   box-shadow: var(--shadow-sm);
 }
 .hp-module-card:hover {
-  transform: translateY(-3px);
+  transform: translateY(-2px);
   box-shadow: var(--shadow-hover);
   border-color: var(--border-hover);
   background: var(--surface-hover);
@@ -4132,10 +4143,11 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
   gap: 8px;
   font-family: var(--sans);
   font-size: 11px;
-  font-weight: 600;
+  font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.10em;
+  letter-spacing: 0.11em;
   color: var(--ink-soft);
+  opacity: 0.85;
 }
 .hp-section-dot {
   width: 7px; height: 7px;
@@ -4189,7 +4201,7 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
   pointer-events: none;
 }
 .hp-spotlight-card:hover {
-  transform: translateY(-3px);
+  transform: translateY(-2px);
   box-shadow: var(--shadow-hover);
   border-color: var(--border-hover);
 }
@@ -4244,8 +4256,8 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
 .hp-mini-item {
   display: flex;
   align-items: center;
-  gap: 12px;
-  padding: 14px 20px;
+  gap: 14px;
+  padding: 16px 22px;
   background: none;
   border: none;
   border-top: 1px solid var(--line);
@@ -4256,7 +4268,7 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
   width: 100%;
 }
 .hp-mini-item:first-child { border-top: none; }
-.hp-mini-item:hover { background: rgba(30,26,20,0.03); }
+.hp-mini-item:hover { background: rgba(63,94,42,0.028); }
 .hp-mini-swatch {
   width: 26px; height: 26px;
   border-radius: 50%;
@@ -4268,8 +4280,9 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
   flex: 1;
   font-family: var(--serif);
   font-style: italic;
-  font-size: 19px;
+  font-size: 20px;
   line-height: 1.1;
+  letter-spacing: -0.005em;
 }
 
 /* ── Tip strip ── */
@@ -4308,13 +4321,14 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
 .hp-tip-text {
   font-family: var(--serif);
   font-style: italic;
-  font-size: 21px;
-  line-height: 1.7;
+  font-size: 22px;
+  line-height: 1.68;
   color: var(--ink);
   margin: 0;
   text-wrap: pretty;
-  max-width: 70ch;
+  max-width: 68ch;
   position: relative;
+  letter-spacing: -0.006em;
 }
 .hp-tip-link {
   background: none;
@@ -4405,15 +4419,18 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
   color: var(--ink);
 }
 .form-field input {
-  padding: 9px 12px;
+  padding: 10px 14px;
   border: 1px solid color-mix(in srgb, var(--ink) 18%, transparent);
-  border-radius: 8px;
+  border-radius: 10px;
   background: var(--surface);
   color: var(--ink);
   font-family: var(--sans);
   font-size: 14px;
   outline: none;
-  transition: border-color 0.15s;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+.form-field input:focus {
+  box-shadow: 0 0 0 3px rgba(63,94,42,0.08);
 }
 .form-field input:focus {
   border-color: var(--primary);
@@ -4431,10 +4448,10 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
   background: var(--primary);
   color: #fff;
   border: none;
-  border-radius: 8px;
+  border-radius: 999px;
   font-family: var(--sans);
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 600;
   cursor: pointer;
   transition: opacity 0.15s;
   margin-top: 4px;
@@ -4810,7 +4827,7 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
 .profile-pillar {
   background: var(--surface-card);
   border: 1px solid var(--line);
-  border-top: 2px solid rgba(63,94,42,0.18);
+  border-top: 3px solid var(--primary);
   border-radius: 20px;
   padding: 28px 32px 32px;
   box-shadow: var(--shadow-sm);
@@ -4821,12 +4838,13 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
 
 .profile-pillar-title {
   font-family: var(--sans);
-  font-size: 11px;
-  letter-spacing: 0.10em;
+  font-size: 10.5px;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--ink-soft);
-  font-weight: 600;
+  font-weight: 700;
   margin: 0;
+  opacity: 0.82;
 }
 
 .profile-radar-wrapper {
