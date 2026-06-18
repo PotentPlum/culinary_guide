@@ -47,7 +47,7 @@
 
 * { box-sizing: border-box; }
 html, body { margin: 0; padding: 0; }
-html { background: var(--surface); scroll-behavior: smooth; }
+html { background: var(--surface); }
 body {
   font-family: var(--sans);
   color: var(--ink);
@@ -3571,17 +3571,22 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
   flex-wrap: wrap;
 }
 
-.challenge-ingredient-label {
+/* shared base for both primary-green pill badges */
+.challenge-ingredient-label,
+.challenge-history-ingredient {
   font-family: var(--mono);
-  font-size: 12px;
-  letter-spacing: 0.09em;
+  font-weight: 600;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--primary);
-  font-weight: 600;
   background: rgba(63,94,42,0.08);
-  padding: 3px 10px;
-  border-radius: 999px;
+  border-radius: var(--radius-pill);
 }
+.challenge-ingredient-label {
+  font-size: 12px;
+  padding: 3px 10px;
+}
+/* .challenge-history-ingredient size overrides are co-located with its element rules below */
 
 .challenge-badge {
   display: inline-block;
@@ -3919,7 +3924,7 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
   .challenge-objective { font-size: 17px; }
   .challenge-params-grid { grid-template-columns: 1fr; }
   .challenge-param-field--checkbox { grid-column: 1; }
-  .challenge-history-list { grid-template-columns: 1fr; }
+  /* challenge-history-list mobile override is co-located with its base rule below */
 }
 
 /* =========== HOMEPAGE =========== */
@@ -5090,10 +5095,8 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 12px;
 }
-
-.challenge-history-entry {
-  border-bottom: none;
-  padding: 0;
+@media (max-width: 540px) {
+  .challenge-history-list { grid-template-columns: 1fr; }
 }
 
 .challenge-history-entry--clickable {
@@ -5127,15 +5130,8 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
 }
 
 .challenge-history-ingredient {
-  font-family: var(--mono);
   font-size: 11px;
-  font-weight: 600;
-  letter-spacing: 0.07em;
-  text-transform: uppercase;
-  color: var(--primary);
-  background: rgba(63,94,42,0.08);
   padding: 2px 8px;
-  border-radius: 999px;
 }
 
 .challenge-history-date {
