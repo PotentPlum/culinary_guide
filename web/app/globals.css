@@ -47,7 +47,7 @@
 
 * { box-sizing: border-box; }
 html, body { margin: 0; padding: 0; }
-html { background: var(--surface); }
+html { background: var(--surface); scroll-behavior: smooth; }
 body {
   font-family: var(--sans);
   color: var(--ink);
@@ -209,7 +209,7 @@ body.sans-display .brand-title { font-family: var(--sans); font-style: normal; f
   min-width: 0;
   overflow-x: hidden;
 }
-.page { display: flex; flex-direction: column; gap: 28px; }
+.page { display: flex; flex-direction: column; gap: 40px; }
 
 /* ---- Hero ---- */
 .page-hero {
@@ -520,7 +520,7 @@ body.sans-display .veg-row-name { font-family: var(--sans); font-weight: 600; fo
 .future-peek { margin-top: 40px; padding-top: 32px; border-top: 1px dashed var(--line-strong); }
 .fp-label {
   font-family: var(--mono);
-  font-size: 11px; text-transform: uppercase; letter-spacing: 0.10em;
+  font-size: 12px; text-transform: uppercase; letter-spacing: 0.09em;
   color: var(--ink-soft);
   margin-bottom: 16px;
 }
@@ -746,8 +746,8 @@ body.sans-display .detail-blurb { font-family: var(--sans); font-style: normal; 
 .detail-section:first-of-type { border-top: 0; padding-top: 0; }
 .detail-section h3 {
   font-family: var(--sans);
-  font-size: 11px;
-  letter-spacing: 0.10em;
+  font-size: 12px;
+  letter-spacing: 0.09em;
   text-transform: uppercase;
   color: var(--ink-soft);
   margin: 0 0 13px;
@@ -961,12 +961,12 @@ body.sans-display .recipe-title { font-family: var(--sans); font-style: normal; 
 
 .rl-library-eyebrow {
   font-family: var(--mono);
-  font-size: 11px;
-  letter-spacing: 0.10em;
+  font-size: 12px;
+  letter-spacing: 0.09em;
   text-transform: uppercase;
   color: var(--ink-soft);
   margin: 0 0 8px;
-  opacity: 0.7;
+  opacity: 0.75;
 }
 
 .rl-library-title {
@@ -1992,12 +1992,12 @@ body.sans-display .recipe-title { font-family: var(--sans); font-style: normal; 
 }
 .rl-detail-eyebrow {
   font-family: var(--mono);
-  font-size: 10px;
-  letter-spacing: 0.14em;
+  font-size: 11px;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--ink-soft);
   margin: 0 0 10px;
-  opacity: 0.7;
+  opacity: 0.75;
 }
 .rl-detail-title {
   font-family: var(--serif);
@@ -2071,8 +2071,8 @@ body.sans-display .recipe-title { font-family: var(--sans); font-style: normal; 
 }
 .rl-detail-col-title {
   font-family: var(--sans);
-  font-size: 10px;
-  letter-spacing: 0.15em;
+  font-size: 11px;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--ink-soft);
   font-weight: 600;
@@ -2658,8 +2658,8 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
 .recipe-ing-col { border-right: 1px solid var(--line); }
 .recipe-col-title {
   font-family: var(--sans);
-  font-size: 10.5px;
-  letter-spacing: 0.14em;
+  font-size: 11px;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--ink-soft);
   font-weight: 600;
@@ -2792,8 +2792,8 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
 }
 .recipe-saved-heading {
   font-family: var(--sans);
-  font-size: 10.5px;
-  letter-spacing: 0.14em;
+  font-size: 12px;
+  letter-spacing: 0.09em;
   text-transform: uppercase;
   color: var(--ink-soft);
   font-weight: 600;
@@ -2975,7 +2975,7 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
   background: var(--primary);
   color: #fff;
   border: none;
-  border-radius: 8px;
+  border-radius: 999px;
   padding: 10px 28px;
   font-family: var(--sans);
   font-size: 14px;
@@ -3019,7 +3019,7 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
   padding: 22px 24px;
   background: var(--surface-card);
   border: 1px solid var(--line);
-  border-radius: 18px;
+  border-radius: 20px;
   cursor: pointer;
   text-align: left;
   font: inherit; color: inherit;
@@ -3066,8 +3066,8 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
 
 .technique-subcategory {
   font-family: var(--mono);
-  font-size: 10px;
-  letter-spacing: 0.1em;
+  font-size: 11px;
+  letter-spacing: 0.09em;
   text-transform: uppercase;
   color: var(--ink-soft);
 }
@@ -3115,8 +3115,8 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
 
 .technique-drawer-category {
   font-family: var(--mono);
-  font-size: 10.5px;
-  letter-spacing: 0.14em;
+  font-size: 12px;
+  letter-spacing: 0.10em;
   text-transform: uppercase;
   color: var(--ink-soft);
   margin-bottom: 8px;
@@ -3573,10 +3573,14 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
 
 .challenge-ingredient-label {
   font-family: var(--mono);
-  font-size: 11px;
+  font-size: 12px;
   letter-spacing: 0.09em;
   text-transform: uppercase;
-  color: var(--ink-soft);
+  color: var(--primary);
+  font-weight: 600;
+  background: rgba(63,94,42,0.08);
+  padding: 3px 10px;
+  border-radius: 999px;
 }
 
 .challenge-badge {
@@ -3596,12 +3600,13 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
 .challenge-objective {
   font-family: var(--serif);
   font-style: italic;
-  font-size: 26px;
-  line-height: 1.4;
-  letter-spacing: -0.015em;
+  font-size: 28px;
+  line-height: 1.35;
+  letter-spacing: -0.018em;
   color: var(--ink);
   margin: 0;
   padding: 4px 0 8px;
+  text-wrap: pretty;
 }
 
 .challenge-meta {
@@ -3621,7 +3626,7 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
 
 .challenge-meta-label {
   font-family: var(--mono);
-  font-size: 10px;
+  font-size: 11px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--ink-soft);
@@ -3638,7 +3643,7 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
 
 .challenge-why-label {
   font-family: var(--mono);
-  font-size: 10px;
+  font-size: 11px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--ink-soft);
@@ -3692,14 +3697,14 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
 .challenge-params {
   margin-top: 16px;
   padding: 18px 20px;
-  background: rgba(63, 94, 42, 0.035);
-  border: 1px solid rgba(63,94,42,0.12);
+  background: var(--surface-card);
+  border: 1px solid var(--line-strong);
   border-radius: 12px;
 }
 
 .challenge-params-title {
   font-family: var(--sans);
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 600;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -3835,7 +3840,7 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
 
 .challenge-recipe-section-label {
   font-family: var(--sans);
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 600;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -3914,6 +3919,7 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
   .challenge-objective { font-size: 17px; }
   .challenge-params-grid { grid-template-columns: 1fr; }
   .challenge-param-field--checkbox { grid-column: 1; }
+  .challenge-history-list { grid-template-columns: 1fr; }
 }
 
 /* =========== HOMEPAGE =========== */
@@ -4039,9 +4045,9 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
 .hp-modules { display: flex; flex-direction: column; gap: 16px; }
 .hp-module-label {
   font-family: var(--mono);
-  font-size: 10px;
+  font-size: 12px;
   text-transform: uppercase;
-  letter-spacing: 0.14em;
+  letter-spacing: 0.10em;
   color: var(--ink-soft);
   opacity: 0.75;
 }
@@ -4090,9 +4096,7 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
   font-size: 12.5px;
   color: var(--ink-soft);
   margin-top: 3px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  line-height: 1.45;
 }
 .hp-module-arrow {
   color: var(--ink-soft);
@@ -4131,10 +4135,10 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
   align-items: center;
   gap: 8px;
   font-family: var(--sans);
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.10em;
+  letter-spacing: 0.09em;
   color: var(--ink-soft);
 }
 .hp-section-dot {
@@ -4293,7 +4297,7 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
   font-size: 160px;
   line-height: 1;
   color: var(--primary);
-  opacity: 0.06;
+  opacity: 0.09;
   pointer-events: none;
   user-select: none;
 }
@@ -4810,7 +4814,7 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
 .profile-pillar {
   background: var(--surface-card);
   border: 1px solid var(--line);
-  border-top: 2px solid rgba(63,94,42,0.18);
+  border-top: 2px solid var(--primary);
   border-radius: 20px;
   padding: 28px 32px 32px;
   box-shadow: var(--shadow-sm);
@@ -4821,8 +4825,8 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
 
 .profile-pillar-title {
   font-family: var(--sans);
-  font-size: 11px;
-  letter-spacing: 0.10em;
+  font-size: 12px;
+  letter-spacing: 0.09em;
   text-transform: uppercase;
   color: var(--ink-soft);
   font-weight: 600;
@@ -5019,9 +5023,9 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
 
 .profile-section-label {
   font-family: var(--mono);
-  font-size: 11px;
+  font-size: 12px;
   text-transform: uppercase;
-  letter-spacing: 0.10em;
+  letter-spacing: 0.09em;
   color: var(--ink-soft);
   font-weight: 600;
   margin: 0 0 10px;
@@ -5073,8 +5077,8 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
 
 .challenge-history-title {
   font-family: var(--sans);
-  font-size: 11px;
-  letter-spacing: 0.10em;
+  font-size: 12px;
+  letter-spacing: 0.09em;
   text-transform: uppercase;
   color: var(--ink-soft);
   font-weight: 600;
@@ -5082,70 +5086,78 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
 }
 
 .challenge-history-list {
-  display: flex;
-  flex-direction: column;
-  gap: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 12px;
 }
 
 .challenge-history-entry {
-  padding: 14px 0;
-  border-bottom: 1px solid var(--line);
-}
-
-.challenge-history-entry:last-child {
   border-bottom: none;
+  padding: 0;
 }
 
 .challenge-history-entry--clickable {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
   width: 100%;
-  background: none;
-  border: none;
+  background: var(--surface-card);
+  border: 1px solid var(--line);
+  border-radius: 16px;
   text-align: left;
   cursor: pointer;
-  transition: background 0.15s;
-  border-radius: 6px;
-  padding: 14px 10px;
-  margin: 0 -10px;
+  padding: 18px 20px;
+  margin: 0;
+  transition: transform 180ms cubic-bezier(.25,.7,.35,1), box-shadow 180ms, border-color 130ms, background 130ms;
+  box-shadow: var(--shadow-sm);
 }
 
 .challenge-history-entry--clickable:hover {
-  background: color-mix(in srgb, var(--primary) 6%, transparent);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-hover);
+  border-color: var(--border-hover);
+  background: var(--surface-hover);
 }
 
 .challenge-history-entry-meta {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 7px;
   flex-wrap: wrap;
-  margin-bottom: 6px;
 }
 
 .challenge-history-ingredient {
-  font-family: var(--serif);
-  font-size: 15px;
+  font-family: var(--mono);
+  font-size: 11px;
   font-weight: 600;
-  color: var(--ink);
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--primary);
+  background: rgba(63,94,42,0.08);
+  padding: 2px 8px;
+  border-radius: 999px;
 }
 
 .challenge-history-date {
   font-family: var(--mono);
-  font-size: 10.5px;
+  font-size: 10px;
   color: var(--ink-soft);
-  opacity: 0.7;
+  opacity: 0.65;
   margin-left: auto;
 }
 
 .challenge-history-text {
-  font-size: 14px;
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 16px;
   color: var(--ink);
-  line-height: 1.55;
-  margin: 0 0 4px;
+  line-height: 1.45;
+  margin: 0;
 }
 
 .challenge-history-skill {
   font-family: var(--mono);
-  font-size: 11px;
+  font-size: 10.5px;
   color: var(--ink-soft);
   margin: 0;
 }
