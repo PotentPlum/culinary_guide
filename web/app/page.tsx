@@ -39,7 +39,7 @@ export default function App() {
   const [page, setPage] = useState<Page>("home");
   const [filter, setFilter] = useState<Filter>("all");
   const [query, setQuery] = useState("");
-  const [view] = useState<View>("list");
+  const [view] = useState<View>("grid");
   // density toggle UI is not yet built — state is wired through but fixed at "comfortable"
   const [density] = useState<Density>("comfortable");
   const [openVeg, setOpenVeg] = useState<VegItem | null>(null);
@@ -145,6 +145,32 @@ export default function App() {
                 {UI.hero.title} <em>{UI.hero.titleEm}</em>
               </h1>
               <p className="hero-sub">{UI.hero.heroSub}</p>
+              <div className="hero-stats">
+                {counts.peak > 0 && (
+                  <button className="hero-stat hero-stat--peak hero-stat-btn" onClick={() => setFilter("peak")}>
+                    <span className="hero-stat-num">{counts.peak}</span>
+                    {UI.filter.peak}
+                  </button>
+                )}
+                {counts.shoulder > 0 && (
+                  <button className="hero-stat hero-stat--shoulder hero-stat-btn" onClick={() => setFilter("shoulder")}>
+                    <span className="hero-stat-num">{counts.shoulder}</span>
+                    {UI.filter.shoulder}
+                  </button>
+                )}
+                {counts.soon > 0 && (
+                  <button className="hero-stat hero-stat--soon hero-stat-btn" onClick={() => setFilter("soon")}>
+                    <span className="hero-stat-num">{counts.soon}</span>
+                    {UI.filter.soon}
+                  </button>
+                )}
+                {counts.ending > 0 && (
+                  <button className="hero-stat hero-stat--ending hero-stat-btn" onClick={() => setFilter("ending")}>
+                    <span className="hero-stat-num">{counts.ending}</span>
+                    {UI.filter.ending}
+                  </button>
+                )}
+              </div>
             </header>
 
             <div className="controls">

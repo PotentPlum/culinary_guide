@@ -94,6 +94,7 @@ export default function ProfilePage() {
         <p className="hero-sub">{UI.profile.pageSubtitle}</p>
       </header>
 
+      <div className="profile-pillars">
       {/* Pillar A — Radar */}
       <section className="profile-pillar">
         <p className="profile-pillar-title">{UI.profile.pillarA}</p>
@@ -274,6 +275,7 @@ export default function ProfilePage() {
           </div>
         )}
       </section>
+      </div>
     </div>
   );
 }
