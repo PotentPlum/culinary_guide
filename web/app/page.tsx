@@ -50,13 +50,11 @@ export default function App() {
   );
   const inSeason = useMemo(() => all.filter((v) => v._status !== "off"), [all]);
 
-  const counts = useMemo<Counts>(() => ({
-    all:      inSeason.length,
-    peak:     inSeason.filter((v) => v._status === "peak").length,
-    shoulder: inSeason.filter((v) => v._status === "shoulder").length,
-    soon:     inSeason.filter((v) => v._status === "soon").length,
-    ending:   inSeason.filter((v) => v._status === "ending").length,
-  }), [inSeason]);
+  const counts = useMemo<Counts>(() => {
+    const c: Counts = { all: inSeason.length, peak: 0, shoulder: 0, soon: 0, ending: 0 };
+    for (const v of inSeason) if (v._status !== "off") c[v._status]++;
+    return c;
+  }, [inSeason]);
 
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();
@@ -146,30 +144,12 @@ export default function App() {
               </h1>
               <p className="hero-sub">{UI.hero.heroSub}</p>
               <div className="hero-stats">
-                {counts.peak > 0 && (
-                  <button className="hero-stat hero-stat--peak hero-stat-btn" onClick={() => setFilter("peak")}>
-                    <span className="hero-stat-num">{counts.peak}</span>
-                    {UI.filter.peak}
+                {(["peak", "shoulder", "soon", "ending"] as const).filter(k => counts[k] > 0).map(k => (
+                  <button key={k} className={`hero-stat hero-stat--${k}`} onClick={() => setFilter(k)}>
+                    <span className="hero-stat-num">{counts[k]}</span>
+                    {UI.filter[k]}
                   </button>
-                )}
-                {counts.shoulder > 0 && (
-                  <button className="hero-stat hero-stat--shoulder hero-stat-btn" onClick={() => setFilter("shoulder")}>
-                    <span className="hero-stat-num">{counts.shoulder}</span>
-                    {UI.filter.shoulder}
-                  </button>
-                )}
-                {counts.soon > 0 && (
-                  <button className="hero-stat hero-stat--soon hero-stat-btn" onClick={() => setFilter("soon")}>
-                    <span className="hero-stat-num">{counts.soon}</span>
-                    {UI.filter.soon}
-                  </button>
-                )}
-                {counts.ending > 0 && (
-                  <button className="hero-stat hero-stat--ending hero-stat-btn" onClick={() => setFilter("ending")}>
-                    <span className="hero-stat-num">{counts.ending}</span>
-                    {UI.filter.ending}
-                  </button>
-                )}
+                ))}
               </div>
             </header>
 
