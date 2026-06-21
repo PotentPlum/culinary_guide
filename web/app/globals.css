@@ -38,11 +38,17 @@
 
   --radius-sm:   8px;
   --radius-md:   12px;
-  --radius-lg:   14px;
+  --radius-lg:   16px;
   --radius-xl:   20px;
   --radius-pill: 999px;
 
   --ink-faint: rgba(30, 26, 20, 0.38);
+
+  --dur-fast: 120ms;
+  --dur-base: 180ms;
+  --dur-slow: 320ms;
+  --ease-card: cubic-bezier(.25,.7,.35,1);
+  --ease-panel: cubic-bezier(.3,.7,.4,1);
 }
 
 * { box-sizing: border-box; }
@@ -209,7 +215,16 @@ body.sans-display .brand-title { font-family: var(--sans); font-style: normal; f
   min-width: 0;
   overflow-x: hidden;
 }
-.page { display: flex; flex-direction: column; gap: 28px; }
+@keyframes pageEnter {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  animation: pageEnter 200ms cubic-bezier(.25,.7,.35,1) both;
+}
 
 /* ---- Hero ---- */
 .page-hero {
@@ -465,10 +480,13 @@ body.sans-display .veg-card-name { font-family: var(--sans); font-weight: 600; l
   cursor: pointer;
   text-align: left;
   font: inherit; color: inherit;
-  transition: background 130ms;
+  transition: background 130ms, box-shadow 130ms;
   width: 100%;
 }
-.veg-row:hover { background: rgba(63,94,42,0.025); }
+.veg-row:hover {
+  background: rgba(63,94,42,0.03);
+  box-shadow: inset 3px 0 0 var(--primary-soft);
+}
 .veg-row-swatch { width: 32px; height: 32px; border-radius: 50%; border: 1px solid; box-shadow: 0 1px 3px rgba(30,26,20,0.08); }
 .veg-row-name { font-family: var(--serif); font-size: 19px; letter-spacing: -0.005em; }
 body.sans-display .veg-row-name { font-family: var(--sans); font-weight: 600; font-size: 16px; letter-spacing: -0.015em; }
@@ -746,12 +764,12 @@ body.sans-display .detail-blurb { font-family: var(--sans); font-style: normal; 
 .detail-section:first-of-type { border-top: 0; padding-top: 0; }
 .detail-section h3 {
   font-family: var(--sans);
-  font-size: 11px;
-  letter-spacing: 0.10em;
+  font-size: 10.5px;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--ink-soft);
-  margin: 0 0 13px;
-  font-weight: 600;
+  margin: 0 0 14px;
+  font-weight: 700;
 }
 .detail-section p { margin: 0; font-size: 15px; line-height: 1.6; text-wrap: pretty; }
 .chips { display: flex; flex-wrap: wrap; gap: 6px; }
@@ -2975,7 +2993,7 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
   background: var(--primary);
   color: #fff;
   border: none;
-  border-radius: 8px;
+  border-radius: var(--radius-pill);
   padding: 10px 28px;
   font-family: var(--sans);
   font-size: 14px;
@@ -3229,8 +3247,8 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
 }
 
 .technique-related-card:hover {
-  border-color: var(--line-strong);
-  background: #fff;
+  border-color: var(--border-hover);
+  background: var(--surface-hover);
 }
 
 .technique-related-card-name {
@@ -3922,6 +3940,7 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
   flex-direction: column;
   gap: 40px;
   padding-bottom: 24px;
+  animation: pageEnter 200ms cubic-bezier(.25,.7,.35,1) both;
 }
 
 /* ── Hero ── */
@@ -4090,9 +4109,11 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
   font-size: 12.5px;
   color: var(--ink-soft);
   margin-top: 3px;
-  white-space: nowrap;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
   overflow: hidden;
-  text-overflow: ellipsis;
+  line-height: 1.45;
 }
 .hp-module-arrow {
   color: var(--ink-soft);
@@ -4427,20 +4448,22 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
   border-radius: 6px;
 }
 .btn-primary {
-  padding: 10px 16px;
+  padding: 10px 20px;
   background: var(--primary);
   color: #fff;
   border: none;
-  border-radius: 8px;
+  border-radius: var(--radius-pill);
   font-family: var(--sans);
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 600;
   cursor: pointer;
-  transition: opacity 0.15s;
+  transition: opacity var(--dur-fast), transform 80ms;
   margin-top: 4px;
+  box-shadow: 0 2px 8px rgba(63,94,42,0.22);
 }
 .btn-primary:disabled { opacity: 0.6; cursor: not-allowed; }
 .btn-primary:hover:not(:disabled) { opacity: 0.88; }
+.btn-primary:active:not(:disabled) { transform: translateY(1px); }
 
 /* ── Logout button ──────────────────────────────────────── */
 .logout-btn {
@@ -4810,7 +4833,7 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
 .profile-pillar {
   background: var(--surface-card);
   border: 1px solid var(--line);
-  border-top: 2px solid rgba(63,94,42,0.18);
+  border-top: 3px solid var(--primary);
   border-radius: 20px;
   padding: 28px 32px 32px;
   box-shadow: var(--shadow-sm);
@@ -5103,14 +5126,15 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
   border: none;
   text-align: left;
   cursor: pointer;
-  transition: background 0.15s;
-  border-radius: 6px;
-  padding: 14px 10px;
-  margin: 0 -10px;
+  transition: background var(--dur-fast), box-shadow var(--dur-fast);
+  border-radius: 8px;
+  padding: 14px 12px;
+  margin: 0 -12px;
 }
 
 .challenge-history-entry--clickable:hover {
-  background: color-mix(in srgb, var(--primary) 6%, transparent);
+  background: color-mix(in srgb, var(--primary) 5%, transparent);
+  box-shadow: inset 3px 0 0 var(--primary-soft);
 }
 
 .challenge-history-entry-meta {
@@ -5123,8 +5147,8 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
 
 .challenge-history-ingredient {
   font-family: var(--serif);
-  font-size: 15px;
-  font-weight: 600;
+  font-style: italic;
+  font-size: 17px;
   color: var(--ink);
 }
 
@@ -5138,14 +5162,25 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
 
 .challenge-history-text {
   font-size: 14px;
-  color: var(--ink);
-  line-height: 1.55;
+  color: var(--ink-soft);
+  line-height: 1.6;
   margin: 0 0 4px;
 }
 
 .challenge-history-skill {
   font-family: var(--mono);
-  font-size: 11px;
+  font-size: 10.5px;
   color: var(--ink-soft);
+  opacity: 0.7;
   margin: 0;
+}
+
+/* ── Reduced motion ── */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
