@@ -148,14 +148,14 @@ body.sans-display .brand-title { font-family: var(--sans); font-style: normal; f
 }
 .nav-item:hover:not(:disabled) { background: rgba(255,255,255,0.48); color: var(--ink); }
 .nav-item.active {
-  background: rgba(255,255,255,0.68);
+  background: rgba(255,255,255,0.72);
   color: var(--primary);
   font-weight: 600;
-  box-shadow: inset 2px 0 0 var(--primary), 0 1px 4px rgba(30,26,20,0.07);
+  box-shadow: inset 3px 0 0 var(--primary), 0 2px 8px rgba(30,26,20,0.08);
 }
-.nav-item.active:hover { background: rgba(255,255,255,0.78); box-shadow: inset 2px 0 0 var(--primary), 0 1px 4px rgba(30,26,20,0.07); }
-.nav-item.soon { cursor: default; }
-.nav-item.soon:hover { background: transparent; color: var(--ink-soft); }
+.nav-item.active:hover { background: rgba(255,255,255,0.82); box-shadow: inset 3px 0 0 var(--primary), 0 2px 8px rgba(30,26,20,0.08); }
+.nav-item.soon { cursor: default; opacity: 0.55; }
+.nav-item.soon:hover { background: transparent; color: var(--ink-soft); opacity: 0.55; }
 .nav-item svg { flex-shrink: 0; opacity: 0.8; }
 .nav-item.active svg { opacity: 1; }
 .nav-item span { flex: 1; }
@@ -187,7 +187,7 @@ body.sans-display .brand-title { font-family: var(--sans); font-style: normal; f
   width: 26px; height: 18px;
   border-radius: 3px;
   background: linear-gradient(to bottom, #AE1C28 33.3%, #FFFFFF 33.3% 66.6%, #21468B 66.6%);
-  box-shadow: 0 0 0 1px var(--line);
+  box-shadow: 0 0 0 1px rgba(30,26,20,0.15);
   flex-shrink: 0;
 }
 .footer-loc-label {
@@ -282,10 +282,10 @@ body.sans-display .hero-title em {
   line-height: 1;
   letter-spacing: -0.01em;
 }
-.hero-stat--peak     { background: rgba(63,94,42,0.08);   color: var(--primary);    border-color: rgba(63,94,42,0.15); }
-.hero-stat--shoulder { background: rgba(122,156,92,0.08); color: var(--primary);    border-color: rgba(122,156,92,0.15); }
-.hero-stat--soon     { background: rgba(201,139,42,0.08); color: var(--soon-fg);    border-color: rgba(201,139,42,0.15); }
-.hero-stat--ending   { background: rgba(153,81,74,0.08);  color: var(--ending-fg);  border-color: rgba(153,81,74,0.15); }
+.hero-stat--peak     { background: rgba(63,94,42,0.09);   color: var(--primary);    border-color: rgba(63,94,42,0.20); }
+.hero-stat--shoulder { background: rgba(122,156,92,0.09); color: var(--primary);    border-color: rgba(122,156,92,0.20); }
+.hero-stat--soon     { background: rgba(201,139,42,0.09); color: var(--soon-fg);    border-color: rgba(201,139,42,0.20); }
+.hero-stat--ending   { background: rgba(153,81,74,0.09);  color: var(--ending-fg);  border-color: rgba(153,81,74,0.20); }
 
 /* ---- Controls bar ---- */
 .controls {
@@ -468,7 +468,7 @@ body.sans-display .veg-card-name { font-family: var(--sans); font-weight: 600; l
   transition: background 130ms;
   width: 100%;
 }
-.veg-row:hover { background: rgba(63,94,42,0.025); }
+.veg-row:hover { background: rgba(63,94,42,0.04); }
 .veg-row-swatch { width: 32px; height: 32px; border-radius: 50%; border: 1px solid; box-shadow: 0 1px 3px rgba(30,26,20,0.08); }
 .veg-row-name { font-family: var(--serif); font-size: 19px; letter-spacing: -0.005em; }
 body.sans-display .veg-row-name { font-family: var(--sans); font-weight: 600; font-size: 16px; letter-spacing: -0.015em; }
@@ -532,10 +532,10 @@ body.sans-display .veg-row-name { font-family: var(--sans); font-weight: 600; fo
 .fp-card {
   position: relative;
   overflow: hidden;
-  padding: 18px 20px 24px;
-  border: 1px dashed var(--line-strong);
-  border-radius: 12px;
-  background: transparent;
+  padding: 20px 22px 28px;
+  border: 1px dashed rgba(30,26,20,0.16);
+  border-radius: 14px;
+  background: rgba(251,248,241,0.5);
   min-height: 140px;
 }
 .fp-card-title {
@@ -561,16 +561,17 @@ body.sans-display .fp-card-title { font-family: var(--sans); font-weight: 600; f
 }
 
 .empty {
-  padding: 64px 44px;
+  padding: 72px 44px;
   text-align: center;
   color: var(--ink-soft);
   font-family: var(--serif);
   font-style: italic;
-  font-size: 19px;
-  border: 1px dashed var(--line-strong);
+  font-size: 20px;
+  border: 1px dashed rgba(30,26,20,0.18);
   border-radius: 20px;
-  background: rgba(63,94,42,0.015);
-  line-height: 1.55;
+  background: linear-gradient(135deg, rgba(63,94,42,0.02) 0%, transparent 60%);
+  line-height: 1.6;
+  letter-spacing: 0.005em;
 }
 
 /* =========== CALENDAR =========== */
@@ -602,8 +603,8 @@ body.sans-display .fp-card-title { font-family: var(--sans); font-weight: 600; f
 }
 .cal-row:first-child { border-top: 0; cursor: default; }
 .cal-row:not(.cal-head):hover { background: rgba(63,94,42,0.028); }
-.cal-row:nth-child(even):not(.cal-head) { background: rgba(30,26,20,0.012); }
-.cal-row:nth-child(even):not(.cal-head):hover { background: rgba(63,94,42,0.038); }
+.cal-row:nth-child(even):not(.cal-head) { background: rgba(30,26,20,0.022); }
+.cal-row:nth-child(even):not(.cal-head):hover { background: rgba(63,94,42,0.045); }
 .cal-head {
   background: linear-gradient(90deg, #E5DAC8 0%, var(--surface-warm-light) 100%);
   padding: 14px 16px;
@@ -620,6 +621,10 @@ body.sans-display .fp-card-title { font-family: var(--sans); font-weight: 600; f
 .cal-month.now {
   color: var(--primary);
   font-weight: 700;
+  background: rgba(63,94,42,0.08);
+  border-radius: 4px;
+  padding: 2px 3px;
+  margin: 0 -3px;
 }
 .cal-name-cell {
   display: flex; gap: 10px; align-items: center;
@@ -641,7 +646,7 @@ body.sans-display .cal-name { font-family: var(--sans); font-weight: 600; font-s
 }
 .cal-cell.on .cal-fill { width: 100%; height: 100%; border-radius: 4px; }
 .cal-cell.half .cal-fill { opacity: 0.45; }
-.cal-cell.now { box-shadow: inset 0 0 0 1.5px var(--ink); }
+.cal-cell.now { box-shadow: inset 0 0 0 1.5px rgba(63,94,42,0.5); background: rgba(63,94,42,0.05); }
 
 /* =========== DETAIL =========== */
 .detail-scrim {
@@ -736,7 +741,8 @@ body.sans-display .detail-nl { font-family: var(--sans); font-style: normal; fon
   color: var(--ink-soft);
   margin: 0 0 34px;
   text-wrap: pretty;
-  padding-bottom: 4px;
+  padding: 0 0 4px 20px;
+  border-left: 2px solid rgba(63,94,42,0.25);
 }
 body.sans-display .detail-blurb { font-family: var(--sans); font-style: normal; font-size: 16px; }
 .detail-section {
@@ -746,19 +752,20 @@ body.sans-display .detail-blurb { font-family: var(--sans); font-style: normal; 
 .detail-section:first-of-type { border-top: 0; padding-top: 0; }
 .detail-section h3 {
   font-family: var(--sans);
-  font-size: 11px;
+  font-size: 11.5px;
   letter-spacing: 0.10em;
   text-transform: uppercase;
-  color: var(--ink-soft);
+  color: var(--ink);
   margin: 0 0 13px;
   font-weight: 600;
+  opacity: 0.65;
 }
 .detail-section p { margin: 0; font-size: 15px; line-height: 1.6; text-wrap: pretty; }
 .chips { display: flex; flex-wrap: wrap; gap: 6px; }
 .chip {
-  padding: 5px 14px;
+  padding: 6px 16px;
   background: var(--surface-warm);
-  border: 1px solid var(--line-strong);
+  border: 1px solid rgba(30,26,20,0.15);
   border-radius: 999px;
   font-size: 13px;
   font-weight: 500;
@@ -767,9 +774,9 @@ body.sans-display .detail-blurb { font-family: var(--sans); font-style: normal; 
   letter-spacing: 0.01em;
 }
 .chip:hover {
-  border-color: rgba(30,26,20,0.30);
+  border-color: rgba(30,26,20,0.28);
   background: var(--surface-warm-light);
-  box-shadow: 0 1px 4px rgba(30,26,20,0.07);
+  box-shadow: 0 2px 6px rgba(30,26,20,0.08);
 }
 
 .detail-section.ghost {
@@ -961,7 +968,7 @@ body.sans-display .recipe-title { font-family: var(--sans); font-style: normal; 
 
 .rl-library-eyebrow {
   font-family: var(--mono);
-  font-size: 11px;
+  font-size: 12px;
   letter-spacing: 0.10em;
   text-transform: uppercase;
   color: var(--ink-soft);
@@ -1086,6 +1093,7 @@ body.sans-display .recipe-title { font-family: var(--sans); font-style: normal; 
 .rl-card {
   background: var(--surface-card);
   border: 1px solid var(--line);
+  border-top: 2px solid rgba(30,26,20,0.08);
   border-radius: 20px;
   overflow: visible;
   transition: transform 180ms cubic-bezier(.25,.7,.35,1), box-shadow 180ms, border-color 130ms, background 130ms;
@@ -1590,7 +1598,7 @@ body.sans-display .recipe-title { font-family: var(--sans); font-style: normal; 
 }
 .rl-edit-label {
   font-family: var(--mono);
-  font-size: 9.5px;
+  font-size: 10.5px;
   text-transform: uppercase;
   letter-spacing: 0.13em;
   color: var(--ink-soft);
@@ -1715,7 +1723,7 @@ body.sans-display .recipe-title { font-family: var(--sans); font-style: normal; 
 }
 .rl-facet-group-label {
   font-family: var(--mono);
-  font-size: 9.5px;
+  font-size: 10.5px;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   color: var(--ink-soft);
@@ -1777,7 +1785,7 @@ body.sans-display .recipe-title { font-family: var(--sans); font-style: normal; 
 }
 .rl-edit-facet-label {
   font-family: var(--mono);
-  font-size: 9px;
+  font-size: 10.5px;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   color: var(--ink-soft);
@@ -1845,7 +1853,7 @@ body.sans-display .recipe-title { font-family: var(--sans); font-style: normal; 
 /* ── Add panel field labels ── */
 .rl-add-label {
   font-family: var(--mono);
-  font-size: 9.5px;
+  font-size: 10.5px;
   text-transform: uppercase;
   letter-spacing: 0.12em;
   color: var(--ink-soft);
@@ -1992,7 +2000,7 @@ body.sans-display .recipe-title { font-family: var(--sans); font-style: normal; 
 }
 .rl-detail-eyebrow {
   font-family: var(--mono);
-  font-size: 10px;
+  font-size: 11px;
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--ink-soft);
@@ -2038,7 +2046,7 @@ body.sans-display .recipe-title { font-family: var(--sans); font-style: normal; 
 .rl-detail-meta-item:last-child { border-right: none; }
 .rl-detail-meta-label {
   font-family: var(--mono);
-  font-size: 9.5px;
+  font-size: 10.5px;
   text-transform: uppercase;
   letter-spacing: 0.12em;
   color: var(--ink-soft);
@@ -2071,7 +2079,7 @@ body.sans-display .recipe-title { font-family: var(--sans); font-style: normal; 
 }
 .rl-detail-col-title {
   font-family: var(--sans);
-  font-size: 10px;
+  font-size: 11px;
   letter-spacing: 0.15em;
   text-transform: uppercase;
   color: var(--ink-soft);
@@ -2208,7 +2216,7 @@ body.sans-display .recipe-title { font-family: var(--sans); font-style: normal; 
 }
 .rl-nutrition-label {
   font-family: var(--mono);
-  font-size: 9.5px;
+  font-size: 10.5px;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   color: var(--ink-soft);
@@ -2287,7 +2295,7 @@ body.sans-display .recipe-title { font-family: var(--sans); font-style: normal; 
 }
 .rl-servings-label {
   font-family: var(--mono);
-  font-size: 9.5px;
+  font-size: 10.5px;
   text-transform: uppercase;
   letter-spacing: 0.12em;
   color: var(--ink-soft);
@@ -2337,7 +2345,7 @@ body.sans-display .recipe-title { font-family: var(--sans); font-style: normal; 
 }
 .rl-unit-toggle-label {
   font-family: var(--mono);
-  font-size: 9.5px;
+  font-size: 10.5px;
   text-transform: uppercase;
   letter-spacing: 0.12em;
   color: var(--ink-soft);
@@ -2346,7 +2354,7 @@ body.sans-display .recipe-title { font-family: var(--sans); font-style: normal; 
 .rl-unit-toggle {
   display: flex;
   border: 1px solid var(--primary);
-  border-radius: 4px;
+  border-radius: 8px;
   overflow: hidden;
 }
 .rl-unit-btn {
@@ -2378,7 +2386,7 @@ body.sans-display .recipe-title { font-family: var(--sans); font-style: normal; 
 }
 .rl-cooking-mode-text {
   font-family: var(--mono);
-  font-size: 9.5px;
+  font-size: 10.5px;
   text-transform: uppercase;
   letter-spacing: 0.12em;
   color: var(--ink-soft);
@@ -2641,7 +2649,7 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
 }
 .recipe-meta-label {
   font-family: var(--mono);
-  font-size: 10px;
+  font-size: 11px;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   opacity: 0.7;
@@ -2658,7 +2666,7 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
 .recipe-ing-col { border-right: 1px solid var(--line); }
 .recipe-col-title {
   font-family: var(--sans);
-  font-size: 10.5px;
+  font-size: 11.5px;
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--ink-soft);
@@ -2751,7 +2759,7 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
 }
 .recipe-nutrition-label {
   font-family: var(--mono);
-  font-size: 10px;
+  font-size: 11px;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   color: var(--ink-soft);
@@ -2975,7 +2983,7 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
   background: var(--primary);
   color: #fff;
   border: none;
-  border-radius: 8px;
+  border-radius: 999px;
   padding: 10px 28px;
   font-family: var(--sans);
   font-size: 14px;
@@ -3066,7 +3074,7 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
 
 .technique-subcategory {
   font-family: var(--mono);
-  font-size: 10px;
+  font-size: 11px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--ink-soft);
@@ -3108,8 +3116,8 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
 }
 
 .technique-drawer-hero {
-  padding: 56px 44px 36px;
-  background: linear-gradient(180deg, #E8DFCA 0%, #EDE6D8 55%, var(--surface-warm) 100%);
+  padding: 52px 44px 32px;
+  background: linear-gradient(160deg, #E5DBCA 0%, #EDE6D8 45%, var(--surface-warm) 100%);
   border-bottom: 1px solid var(--line);
 }
 
@@ -3341,7 +3349,7 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
 .subcategory-item:last-child { border-bottom: 0; }
 
 .category-item:hover,
-.subcategory-item:hover { background: rgba(30,26,20,0.03); }
+.subcategory-item:hover { background: rgba(30,26,20,0.04); }
 
 .category-item:active,
 .subcategory-item:active { background: rgba(30,26,20,0.06); }
@@ -3554,7 +3562,7 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
 .challenge-card {
   background: var(--surface-card);
   border: 1px solid var(--line);
-  border-top: 2px solid var(--primary);
+  border-top: 3px solid var(--primary);
   border-radius: 22px;
   padding: 36px;
   display: flex;
@@ -3699,7 +3707,7 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
 
 .challenge-params-title {
   font-family: var(--sans);
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 600;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -3736,7 +3744,7 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
   height: 36px;
   padding: 0 10px;
   border: 1px solid var(--line-strong);
-  border-radius: 7px;
+  border-radius: 10px;
   background: var(--paper);
   font-family: var(--sans);
   font-size: 13px;
@@ -3990,10 +3998,10 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
   display: flex;
   align-items: center;
   gap: 0;
-  margin-top: 6px;
-  background: rgba(255,255,255,0.82);
-  border: 1px solid rgba(30,26,20,0.13);
-  border-radius: 16px;
+  margin-top: 8px;
+  background: rgba(255,255,255,0.88);
+  border: 1px solid rgba(30,26,20,0.11);
+  border-radius: 18px;
   overflow: hidden;
   width: fit-content;
   box-shadow: var(--shadow-md);
@@ -4090,9 +4098,11 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
   font-size: 12.5px;
   color: var(--ink-soft);
   margin-top: 3px;
-  white-space: nowrap;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
   overflow: hidden;
-  text-overflow: ellipsis;
+  line-height: 1.45;
 }
 .hp-module-arrow {
   color: var(--ink-soft);
@@ -4131,11 +4141,11 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
   align-items: center;
   gap: 8px;
   font-family: var(--sans);
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.10em;
-  color: var(--ink-soft);
+  color: var(--ink);
 }
 .hp-section-dot {
   width: 7px; height: 7px;
@@ -4299,7 +4309,7 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
 }
 .hp-tip-label {
   font-family: var(--mono);
-  font-size: 10.5px;
+  font-size: 11px;
   text-transform: uppercase;
   letter-spacing: 0.12em;
   color: var(--primary);
@@ -4337,8 +4347,8 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
     padding: 32px 22px 38px;
     margin: -24px -20px 0;
   }
-  .hp-stat { padding: 16px 22px; }
-  .hp-stat-num { font-size: 28px; }
+  .hp-stat { padding: 16px 24px; }
+  .hp-stat-num { font-size: 32px; }
 }
 @media (max-width: 540px) {
   .hp-hero { padding: 28px 16px 32px; margin: -24px -20px 0; }
@@ -4446,21 +4456,22 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
 .logout-btn {
   display: block;
   width: 100%;
-  margin-top: 8px;
-  padding: 7px 12px;
+  margin-top: 6px;
+  padding: 8px 12px;
   background: none;
-  border: 1px solid color-mix(in srgb, var(--ink) 15%, transparent);
-  border-radius: 7px;
+  border: 1px solid rgba(30,26,20,0.14);
+  border-radius: 8px;
   color: var(--ink-soft);
   font-family: var(--sans);
-  font-size: 12px;
+  font-size: 12.5px;
   cursor: pointer;
   text-align: left;
-  transition: color 0.15s, border-color 0.15s;
+  transition: color 0.15s, border-color 0.15s, background 0.15s;
 }
 .logout-btn:hover {
   color: var(--ink);
-  border-color: color-mix(in srgb, var(--ink) 30%, transparent);
+  border-color: rgba(30,26,20,0.28);
+  background: rgba(30,26,20,0.04);
 }
 
 /* =========== EVALUATION OVERLAY =========== */
@@ -4810,7 +4821,7 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
 .profile-pillar {
   background: var(--surface-card);
   border: 1px solid var(--line);
-  border-top: 2px solid rgba(63,94,42,0.18);
+  border-top: 3px solid rgba(63,94,42,0.28);
   border-radius: 20px;
   padding: 28px 32px 32px;
   box-shadow: var(--shadow-sm);
@@ -4821,10 +4832,10 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
 
 .profile-pillar-title {
   font-family: var(--sans);
-  font-size: 11px;
+  font-size: 12px;
   letter-spacing: 0.10em;
   text-transform: uppercase;
-  color: var(--ink-soft);
+  color: var(--ink);
   font-weight: 600;
   margin: 0;
 }
@@ -5019,12 +5030,13 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
 
 .profile-section-label {
   font-family: var(--mono);
-  font-size: 11px;
+  font-size: 11.5px;
   text-transform: uppercase;
   letter-spacing: 0.10em;
-  color: var(--ink-soft);
+  color: var(--ink);
   font-weight: 600;
   margin: 0 0 10px;
+  opacity: 0.7;
 }
 
 .profile-neglected-list {
@@ -5073,7 +5085,7 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
 
 .challenge-history-title {
   font-family: var(--sans);
-  font-size: 11px;
+  font-size: 12px;
   letter-spacing: 0.10em;
   text-transform: uppercase;
   color: var(--ink-soft);

@@ -23,6 +23,7 @@ export default function VegCard({ veg, month, density = "comfortable", onOpen, l
         <div className="veg-row-swatch" style={{ background: veg.color, borderColor: veg.accent }} />
         <div className="veg-row-text">
           <div className="veg-row-name">{veg.nl}</div>
+          <div className="veg-row-nl">{veg.family}</div>
         </div>
         <div className="veg-row-bar"><PeakBar veg={veg} month={month} compact /></div>
         <StatusDot status={status} withLabel />
