@@ -155,7 +155,7 @@ body.sans-display .brand-title { font-family: var(--sans); font-style: normal; f
 }
 .nav-item.active:hover { background: rgba(255,255,255,0.82); box-shadow: inset 3px 0 0 var(--primary), 0 2px 8px rgba(30,26,20,0.08); }
 .nav-item.soon { cursor: default; opacity: 0.55; }
-.nav-item.soon:hover { background: transparent; color: var(--ink-soft); opacity: 0.55; }
+.nav-item.soon:hover { background: transparent; color: var(--ink-soft); }
 .nav-item svg { flex-shrink: 0; opacity: 0.8; }
 .nav-item.active svg { opacity: 1; }
 .nav-item span { flex: 1; }
@@ -758,7 +758,6 @@ body.sans-display .detail-blurb { font-family: var(--sans); font-style: normal; 
   color: var(--ink);
   margin: 0 0 13px;
   font-weight: 600;
-  opacity: 0.65;
 }
 .detail-section p { margin: 0; font-size: 15px; line-height: 1.6; text-wrap: pretty; }
 .chips { display: flex; flex-wrap: wrap; gap: 6px; }
@@ -5036,7 +5035,6 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
   color: var(--ink);
   font-weight: 600;
   margin: 0 0 10px;
-  opacity: 0.7;
 }
 
 .profile-neglected-list {
