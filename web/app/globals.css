@@ -148,12 +148,12 @@ body.sans-display .brand-title { font-family: var(--sans); font-style: normal; f
 }
 .nav-item:hover:not(:disabled) { background: rgba(255,255,255,0.48); color: var(--ink); }
 .nav-item.active {
-  background: rgba(255,255,255,0.68);
+  background: rgba(255,255,255,0.78);
   color: var(--primary);
   font-weight: 600;
-  box-shadow: inset 2px 0 0 var(--primary), 0 1px 4px rgba(30,26,20,0.07);
+  box-shadow: inset 3px 0 0 var(--primary), 0 2px 8px rgba(30,26,20,0.09);
 }
-.nav-item.active:hover { background: rgba(255,255,255,0.78); box-shadow: inset 2px 0 0 var(--primary), 0 1px 4px rgba(30,26,20,0.07); }
+.nav-item.active:hover { background: rgba(255,255,255,0.90); box-shadow: inset 3px 0 0 var(--primary), 0 2px 8px rgba(30,26,20,0.09); }
 .nav-item.soon { cursor: default; }
 .nav-item.soon:hover { background: transparent; color: var(--ink-soft); }
 .nav-item svg { flex-shrink: 0; opacity: 0.8; }
@@ -171,6 +171,8 @@ body.sans-display .brand-title { font-family: var(--sans); font-style: normal; f
 
 .sidenav-footer {
   margin-top: auto;
+  padding-top: 16px;
+  border-top: 1px solid rgba(30,26,20,0.12);
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -419,7 +421,7 @@ body.sans-display .hero-title em {
   position: absolute;
   inset: 0;
   background: var(--veg-color, transparent);
-  opacity: 0.22;
+  opacity: 0.28;
   pointer-events: none;
 }
 .veg-card-status {
@@ -468,7 +470,7 @@ body.sans-display .veg-card-name { font-family: var(--sans); font-weight: 600; l
   transition: background 130ms;
   width: 100%;
 }
-.veg-row:hover { background: rgba(63,94,42,0.025); }
+.veg-row:hover { background: rgba(63,94,42,0.040); }
 .veg-row-swatch { width: 32px; height: 32px; border-radius: 50%; border: 1px solid; box-shadow: 0 1px 3px rgba(30,26,20,0.08); }
 .veg-row-name { font-family: var(--serif); font-size: 19px; letter-spacing: -0.005em; }
 body.sans-display .veg-row-name { font-family: var(--sans); font-weight: 600; font-size: 16px; letter-spacing: -0.015em; }
@@ -605,7 +607,7 @@ body.sans-display .fp-card-title { font-family: var(--sans); font-weight: 600; f
 .cal-row:nth-child(even):not(.cal-head) { background: rgba(30,26,20,0.012); }
 .cal-row:nth-child(even):not(.cal-head):hover { background: rgba(63,94,42,0.038); }
 .cal-head {
-  background: linear-gradient(90deg, #E5DAC8 0%, var(--surface-warm-light) 100%);
+  background: linear-gradient(90deg, #DDD0B8 0%, #E8DFCE 60%, var(--surface-warm-light) 100%);
   padding: 14px 16px;
   border-top: 0;
   border-bottom: 1px solid var(--line-strong);
@@ -682,7 +684,7 @@ body.sans-display .cal-name { font-family: var(--sans); font-weight: 600; font-s
 .detail-hero {
   padding: 56px 44px 36px;
   position: relative;
-  background: linear-gradient(180deg, #E8DFCA 0%, #F0EBE0 55%, var(--surface-card) 100%);
+  background: linear-gradient(180deg, #E2D8C2 0%, #EDE6D8 45%, #F3EEE6 72%, var(--surface-card) 100%);
   border-bottom: 1px solid var(--line);
 }
 .detail-hero::before {
@@ -746,12 +748,12 @@ body.sans-display .detail-blurb { font-family: var(--sans); font-style: normal; 
 .detail-section:first-of-type { border-top: 0; padding-top: 0; }
 .detail-section h3 {
   font-family: var(--sans);
-  font-size: 11px;
-  letter-spacing: 0.10em;
+  font-size: 10.5px;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--ink-soft);
+  color: var(--ink-faint);
   margin: 0 0 13px;
-  font-weight: 600;
+  font-weight: 700;
 }
 .detail-section p { margin: 0; font-size: 15px; line-height: 1.6; text-wrap: pretty; }
 .chips { display: flex; flex-wrap: wrap; gap: 6px; }
@@ -763,12 +765,13 @@ body.sans-display .detail-blurb { font-family: var(--sans); font-style: normal; 
   font-size: 13px;
   font-weight: 500;
   color: var(--ink);
-  transition: border-color 130ms, background 130ms, box-shadow 130ms;
+  transition: border-color 130ms, background 130ms, box-shadow 130ms, color 130ms;
   letter-spacing: 0.01em;
 }
 .chip:hover {
-  border-color: rgba(30,26,20,0.30);
-  background: var(--surface-warm-light);
+  border-color: rgba(63,94,42,0.30);
+  background: rgba(63,94,42,0.06);
+  color: var(--primary);
   box-shadow: 0 1px 4px rgba(30,26,20,0.07);
 }
 
@@ -1158,10 +1161,10 @@ body.sans-display .recipe-title { font-family: var(--sans); font-style: normal; 
 .rl-card-title {
   font-family: var(--serif);
   font-style: italic;
-  font-size: 21px;
+  font-size: 22px;
   font-weight: 400;
-  line-height: 1.12;
-  letter-spacing: -0.012em;
+  line-height: 1.10;
+  letter-spacing: -0.014em;
   margin: 0 0 8px;
   color: var(--ink);
   text-wrap: pretty;
@@ -3029,7 +3032,7 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
 .technique-card:hover {
   transform: translateY(-3px);
   box-shadow: var(--shadow-hover);
-  border-color: var(--border-hover);
+  border-color: rgba(63,94,42,0.24);
   background: var(--surface-hover);
 }
 
@@ -3109,7 +3112,7 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
 
 .technique-drawer-hero {
   padding: 56px 44px 36px;
-  background: linear-gradient(180deg, #E8DFCA 0%, #EDE6D8 55%, var(--surface-warm) 100%);
+  background: linear-gradient(180deg, #E2D8C2 0%, #EBE3D2 45%, #F0EAE0 72%, var(--surface-warm) 100%);
   border-bottom: 1px solid var(--line);
 }
 
@@ -3552,9 +3555,9 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
 
 /* Challenge card */
 .challenge-card {
-  background: var(--surface-card);
-  border: 1px solid var(--line);
-  border-top: 2px solid var(--primary);
+  background: linear-gradient(165deg, rgba(63,94,42,0.045) 0%, var(--surface-card) 52%);
+  border: 1px solid rgba(63,94,42,0.18);
+  border-top: 3px solid var(--primary);
   border-radius: 22px;
   padding: 36px;
   display: flex;
@@ -3596,12 +3599,13 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
 .challenge-objective {
   font-family: var(--serif);
   font-style: italic;
-  font-size: 26px;
-  line-height: 1.4;
-  letter-spacing: -0.015em;
+  font-size: 28px;
+  line-height: 1.38;
+  letter-spacing: -0.018em;
   color: var(--ink);
   margin: 0;
   padding: 4px 0 8px;
+  text-wrap: pretty;
 }
 
 .challenge-meta {
@@ -3929,9 +3933,9 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
   display: flex;
   flex-direction: column;
   gap: 18px;
-  padding: 52px 60px 58px;
+  padding: 52px 60px 60px;
   margin: -44px -52px 0;
-  background: linear-gradient(165deg, #E8DFCA 0%, #EDE6D8 30%, var(--surface) 62%);
+  background: linear-gradient(165deg, #E4D9C4 0%, #EBE2D4 28%, #F0EBE2 55%, var(--surface) 78%);
   border-bottom: 1px solid var(--line);
   position: relative;
   overflow: hidden;
@@ -3940,7 +3944,9 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
   content: "";
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse 55% 75% at 92% 18%, rgba(63,94,42,0.07) 0%, transparent 68%);
+  background:
+    radial-gradient(ellipse 55% 75% at 94% 15%, rgba(63,94,42,0.10) 0%, transparent 65%),
+    radial-gradient(ellipse 35% 50% at 85% 90%, rgba(185,81,40,0.05) 0%, transparent 60%);
   pointer-events: none;
 }
 .hp-hero-eyebrow {
@@ -4004,26 +4010,26 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 5px;
-  padding: 22px 38px;
+  gap: 4px;
+  padding: 18px 28px;
   cursor: pointer;
   transition: background 130ms;
 }
 .hp-stat:hover { background: rgba(63,94,42,0.05); }
 .hp-stat-num {
   font-family: var(--mono);
-  font-size: 40px;
+  font-size: 34px;
   font-weight: 700;
   line-height: 1;
   letter-spacing: -0.025em;
 }
 .hp-stat-label {
   font-size: 10px;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.09em;
   text-transform: uppercase;
   color: var(--ink-soft);
   white-space: nowrap;
-  font-weight: 500;
+  font-weight: 600;
 }
 .hp-stat--peak   .hp-stat-num { color: var(--primary); }
 .hp-stat--soon   .hp-stat-num { color: var(--soon-fg); }
@@ -4090,9 +4096,7 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
   font-size: 12.5px;
   color: var(--ink-soft);
   margin-top: 3px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  line-height: 1.45;
 }
 .hp-module-arrow {
   color: var(--ink-soft);
@@ -4106,11 +4110,11 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
 }
 
 /* Per-module tinted backgrounds + icon bubble colors */
-.hp-module--seasonal  { background: linear-gradient(115deg, rgba(63,94,42,0.05) 0%, var(--surface-card) 55%); border-color: rgba(63,94,42,0.14); }
-.hp-module--calendar  { background: linear-gradient(115deg, rgba(122,156,92,0.05) 0%, var(--surface-card) 55%); border-color: rgba(122,156,92,0.13); }
-.hp-module--recipes   { background: linear-gradient(115deg, rgba(201,139,42,0.06) 0%, var(--surface-card) 55%); border-color: rgba(201,139,42,0.14); }
-.hp-module--techniques{ background: linear-gradient(115deg, rgba(185,81,40,0.05) 0%, var(--surface-card) 55%); border-color: rgba(185,81,40,0.13); }
-.hp-module--challenge { background: linear-gradient(115deg, rgba(140,100,30,0.06) 0%, var(--surface-card) 55%); border-color: rgba(140,100,30,0.14); }
+.hp-module--seasonal  { background: linear-gradient(115deg, rgba(63,94,42,0.10) 0%, var(--surface-card) 65%); border-color: rgba(63,94,42,0.22); }
+.hp-module--calendar  { background: linear-gradient(115deg, rgba(122,156,92,0.10) 0%, var(--surface-card) 65%); border-color: rgba(122,156,92,0.20); }
+.hp-module--recipes   { background: linear-gradient(115deg, rgba(201,139,42,0.11) 0%, var(--surface-card) 65%); border-color: rgba(201,139,42,0.22); }
+.hp-module--techniques{ background: linear-gradient(115deg, rgba(185,81,40,0.10) 0%, var(--surface-card) 65%); border-color: rgba(185,81,40,0.20); }
+.hp-module--challenge { background: linear-gradient(115deg, rgba(140,100,30,0.11) 0%, var(--surface-card) 65%); border-color: rgba(140,100,30,0.22); }
 
 .hp-module--seasonal  .hp-module-icon-wrap { background: rgba(63,94,42,0.12);  color: var(--primary); }
 .hp-module--calendar  .hp-module-icon-wrap { background: rgba(122,156,92,0.14); color: var(--primary-soft); }
@@ -4131,11 +4135,12 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
   align-items: center;
   gap: 8px;
   font-family: var(--sans);
-  font-size: 11px;
-  font-weight: 600;
+  font-size: 11.5px;
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.10em;
-  color: var(--ink-soft);
+  color: var(--ink);
+  opacity: 0.75;
 }
 .hp-section-dot {
   width: 7px; height: 7px;
@@ -4185,7 +4190,7 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
   position: absolute;
   inset: 0;
   background: var(--spot-color, transparent);
-  opacity: 0.10;
+  opacity: 0.14;
   pointer-events: none;
 }
 .hp-spotlight-card:hover {
@@ -4193,7 +4198,7 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
   box-shadow: var(--shadow-hover);
   border-color: var(--border-hover);
 }
-.hp-spotlight-card:hover::before { opacity: 0.17; }
+.hp-spotlight-card:hover::before { opacity: 0.22; }
 .hp-spotlight-token { flex-shrink: 0; position: relative; z-index: 1; }
 .hp-spotlight-body { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 5px; position: relative; z-index: 1; }
 .hp-spotlight-name {
@@ -4337,8 +4342,8 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
     padding: 32px 22px 38px;
     margin: -24px -20px 0;
   }
-  .hp-stat { padding: 16px 22px; }
-  .hp-stat-num { font-size: 28px; }
+  .hp-stat { padding: 14px 20px; }
+  .hp-stat-num { font-size: 26px; }
 }
 @media (max-width: 540px) {
   .hp-hero { padding: 28px 16px 32px; margin: -24px -20px 0; }
@@ -4810,7 +4815,7 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
 .profile-pillar {
   background: var(--surface-card);
   border: 1px solid var(--line);
-  border-top: 2px solid rgba(63,94,42,0.18);
+  border-top: 2px solid rgba(63,94,42,0.32);
   border-radius: 20px;
   padding: 28px 32px 32px;
   box-shadow: var(--shadow-sm);
