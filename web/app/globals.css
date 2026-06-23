@@ -153,7 +153,7 @@ body.sans-display .brand-title { font-family: var(--sans); font-style: normal; f
   font-weight: 600;
   box-shadow: inset 3px 0 0 var(--primary), 0 2px 8px rgba(30,26,20,0.09);
 }
-.nav-item.active:hover { background: rgba(255,255,255,0.90); box-shadow: inset 3px 0 0 var(--primary), 0 2px 8px rgba(30,26,20,0.09); }
+.nav-item.active:hover { background: rgba(255,255,255,0.90); }
 .nav-item.soon { cursor: default; }
 .nav-item.soon:hover { background: transparent; color: var(--ink-soft); }
 .nav-item svg { flex-shrink: 0; opacity: 0.8; }
@@ -751,7 +751,7 @@ body.sans-display .detail-blurb { font-family: var(--sans); font-style: normal; 
   font-size: 10.5px;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--ink-faint);
+  color: var(--ink-soft);
   margin: 0 0 13px;
   font-weight: 700;
 }
@@ -771,7 +771,6 @@ body.sans-display .detail-blurb { font-family: var(--sans); font-style: normal; 
 .chip:hover {
   border-color: rgba(63,94,42,0.30);
   background: rgba(63,94,42,0.06);
-  color: var(--primary);
   box-shadow: 0 1px 4px rgba(30,26,20,0.07);
 }
 
@@ -4139,8 +4138,7 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.10em;
-  color: var(--ink);
-  opacity: 0.75;
+  color: var(--ink-soft);
 }
 .hp-section-dot {
   width: 7px; height: 7px;
