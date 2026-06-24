@@ -151,7 +151,7 @@ body.sans-display .brand-title { font-family: var(--sans); font-style: normal; f
   font-weight: 500;
   cursor: pointer;
   text-align: left;
-  transition: background 130ms, color 130ms, box-shadow 130ms, transform 120ms;
+  transition: background 130ms, color 130ms, box-shadow 130ms, transform 130ms;
   width: 100%;
   letter-spacing: 0.005em;
 }
@@ -787,7 +787,7 @@ body.sans-display .detail-blurb { font-family: var(--sans); font-style: normal; 
   font-size: 13px;
   font-weight: 500;
   color: var(--ink);
-  transition: border-color 130ms, background 130ms, box-shadow 130ms, transform 120ms;
+  transition: border-color 130ms, background 130ms, box-shadow 130ms;
   letter-spacing: 0.01em;
 }
 .chip:hover {
@@ -4186,7 +4186,8 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
   transition: opacity 100ms;
   text-decoration: none;
 }
-.hp-section-link:hover { opacity: 0.75; text-decoration: underline; text-underline-offset: 2px; }
+.hp-section-link:hover,
+.hp-tip-link:hover { opacity: 0.75; text-decoration: underline; text-underline-offset: 2px; }
 
 /* ── Spotlight grid ── */
 .hp-spotlight-grid {
@@ -4360,7 +4361,6 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
   letter-spacing: 0.01em;
   text-decoration: none;
 }
-.hp-tip-link:hover { opacity: 0.75; text-decoration: underline; text-underline-offset: 2px; }
 
 /* ── Homepage responsive ── */
 @media (max-width: 880px) {
