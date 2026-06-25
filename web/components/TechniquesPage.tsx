@@ -146,7 +146,14 @@ export default function TechniquesPage() {
   return (
     <div className="page">
       <header className="page-hero">
-        <h1 className="hero-title">{UI.techniques.pageTitle}</h1>
+        <div className="hero-eyebrow">
+          <span className="hero-loc">{UI.hero.eyebrowLoc}</span>
+          <span className="hero-dot">·</span>
+          <span>{UI.techniques.eyebrowSub}</span>
+        </div>
+        <h1 className="hero-title">
+          {UI.techniques.pageTitlePre}<em>{UI.techniques.pageTitleEm}</em>
+        </h1>
         <p className="hero-sub">{UI.techniques.pageSubtitle}</p>
       </header>
 
@@ -168,7 +175,7 @@ export default function TechniquesPage() {
           </button>
           {showTechniquesView && (
             <>
-              <span className="breadcrumb-sep">/</span>
+              <span className="breadcrumb-sep">·</span>
               <span className="breadcrumb-current">{viewState.subcategory}</span>
             </>
           )}

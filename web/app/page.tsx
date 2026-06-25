@@ -145,6 +145,32 @@ export default function App() {
                 {UI.hero.title} <em>{UI.hero.titleEm}</em>
               </h1>
               <p className="hero-sub">{UI.hero.heroSub}</p>
+              <div className="hero-stats">
+                {counts.peak > 0 && (
+                  <span className="hero-stat hero-stat--peak">
+                    <span className="hero-stat-num">{counts.peak}</span>
+                    {UI.hero.statPeak}
+                  </span>
+                )}
+                {counts.shoulder > 0 && (
+                  <span className="hero-stat hero-stat--shoulder">
+                    <span className="hero-stat-num">{counts.shoulder}</span>
+                    {UI.hero.statShoulder}
+                  </span>
+                )}
+                {counts.soon > 0 && (
+                  <span className="hero-stat hero-stat--soon">
+                    <span className="hero-stat-num">{counts.soon}</span>
+                    {UI.hero.statSoon}
+                  </span>
+                )}
+                {counts.ending > 0 && (
+                  <span className="hero-stat hero-stat--ending">
+                    <span className="hero-stat-num">{counts.ending}</span>
+                    {UI.hero.statEnding}
+                  </span>
+                )}
+              </div>
             </header>
 
             <div className="controls">

@@ -151,9 +151,9 @@ body.sans-display .brand-title { font-family: var(--sans); font-style: normal; f
   background: rgba(255,255,255,0.68);
   color: var(--primary);
   font-weight: 600;
-  box-shadow: inset 2px 0 0 var(--primary), 0 1px 4px rgba(30,26,20,0.07);
+  box-shadow: inset 3px 0 0 var(--primary), 0 1px 4px rgba(30,26,20,0.07);
 }
-.nav-item.active:hover { background: rgba(255,255,255,0.78); box-shadow: inset 2px 0 0 var(--primary), 0 1px 4px rgba(30,26,20,0.07); }
+.nav-item.active:hover { background: rgba(255,255,255,0.78); box-shadow: inset 3px 0 0 var(--primary), 0 1px 4px rgba(30,26,20,0.07); }
 .nav-item.soon { cursor: default; }
 .nav-item.soon:hover { background: transparent; color: var(--ink-soft); }
 .nav-item svg { flex-shrink: 0; opacity: 0.8; }
@@ -209,7 +209,7 @@ body.sans-display .brand-title { font-family: var(--sans); font-style: normal; f
   min-width: 0;
   overflow-x: hidden;
 }
-.page { display: flex; flex-direction: column; gap: 28px; }
+.page { display: flex; flex-direction: column; gap: 32px; }
 
 /* ---- Hero ---- */
 .page-hero {
@@ -468,7 +468,7 @@ body.sans-display .veg-card-name { font-family: var(--sans); font-weight: 600; l
   transition: background 130ms;
   width: 100%;
 }
-.veg-row:hover { background: rgba(63,94,42,0.025); }
+.veg-row:hover { background: rgba(63,94,42,0.04); }
 .veg-row-swatch { width: 32px; height: 32px; border-radius: 50%; border: 1px solid; box-shadow: 0 1px 3px rgba(30,26,20,0.08); }
 .veg-row-name { font-family: var(--serif); font-size: 19px; letter-spacing: -0.005em; }
 body.sans-display .veg-row-name { font-family: var(--sans); font-weight: 600; font-size: 16px; letter-spacing: -0.015em; }
@@ -601,9 +601,9 @@ body.sans-display .fp-card-title { font-family: var(--sans); font-weight: 600; f
   width: 100%;
 }
 .cal-row:first-child { border-top: 0; cursor: default; }
-.cal-row:not(.cal-head):hover { background: rgba(63,94,42,0.028); }
+.cal-row:not(.cal-head):hover { background: rgba(63,94,42,0.04); }
 .cal-row:nth-child(even):not(.cal-head) { background: rgba(30,26,20,0.012); }
-.cal-row:nth-child(even):not(.cal-head):hover { background: rgba(63,94,42,0.038); }
+.cal-row:nth-child(even):not(.cal-head):hover { background: rgba(63,94,42,0.055); }
 .cal-head {
   background: linear-gradient(90deg, #E5DAC8 0%, var(--surface-warm-light) 100%);
   padding: 14px 16px;
@@ -3282,8 +3282,9 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
 }
 
 .breadcrumb-sep {
-  font-size: 12px;
-  color: var(--line-strong);
+  font-size: 14px;
+  color: var(--ink-soft);
+  opacity: 0.4;
 }
 
 .breadcrumb-current {
@@ -4431,10 +4432,10 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
   background: var(--primary);
   color: #fff;
   border: none;
-  border-radius: 8px;
+  border-radius: 999px;
   font-family: var(--sans);
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 600;
   cursor: pointer;
   transition: opacity 0.15s;
   margin-top: 4px;
@@ -4798,19 +4799,10 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
   gap: 28px;
 }
 
-.profile-page-hero {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  padding-bottom: 36px;
-  border-bottom: 1px solid var(--line);
-  max-width: 760px;
-}
-
 .profile-pillar {
   background: var(--surface-card);
   border: 1px solid var(--line);
-  border-top: 2px solid rgba(63,94,42,0.18);
+  border-top: 2px solid rgba(63,94,42,0.28);
   border-radius: 20px;
   padding: 28px 32px 32px;
   box-shadow: var(--shadow-sm);
