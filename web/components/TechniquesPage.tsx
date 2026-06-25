@@ -5,6 +5,7 @@ import { TECHNIQUES, type Technique, type TechniqueCategory } from "@/lib/techni
 import { UI } from "@/lib/strings";
 import TechniqueCard from "./TechniqueCard";
 import TechniqueDetail from "./TechniqueDetail";
+import HeroEyebrow from "./HeroEyebrow";
 
 const PRIMARY_CATEGORIES: Array<{ id: TechniqueCategory; label: string; icon: ReactNode }> = [
   {
@@ -146,11 +147,7 @@ export default function TechniquesPage() {
   return (
     <div className="page">
       <header className="page-hero">
-        <div className="hero-eyebrow">
-          <span className="hero-loc">{UI.hero.eyebrowLoc}</span>
-          <span className="hero-dot">·</span>
-          <span>{UI.techniques.eyebrowSub}</span>
-        </div>
+        <HeroEyebrow sub={UI.techniques.eyebrowSub} />
         <h1 className="hero-title">
           {UI.techniques.pageTitlePre}<em>{UI.techniques.pageTitleEm}</em>
         </h1>

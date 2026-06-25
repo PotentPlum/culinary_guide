@@ -9,6 +9,7 @@ import { TECHNIQUES } from "@/lib/techniques";
 import type { UserAttempt, ProfileStats } from "@/lib/profileTypes";
 import RadarChart, { type RadarAxis } from "@/components/RadarChart";
 import ArchetypeBadges from "@/components/ArchetypeBadges";
+import HeroEyebrow from "@/components/HeroEyebrow";
 
 const DISCIPLINE_ORDER = ["mechanical", "thermal", "flavor", "material"] as const;
 
@@ -52,11 +53,7 @@ export default function ProfilePage() {
     return (
       <div className="page profile-page">
         <header className="page-hero">
-          <div className="hero-eyebrow">
-            <span className="hero-loc">{UI.hero.eyebrowLoc}</span>
-            <span className="hero-dot">·</span>
-            <span>{UI.profile.eyebrowSub}</span>
-          </div>
+          <HeroEyebrow sub={UI.profile.eyebrowSub} />
           <h1 className="hero-title"><em>{UI.profile.pageTitle}</em></h1>
           <p className="hero-sub">{UI.profile.pageSubtitle}</p>
         </header>
