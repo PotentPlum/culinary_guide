@@ -7,6 +7,7 @@ import { TECHNIQUES } from "@/lib/techniques";
 import { getFacet } from "@/lib/facets";
 import { apiHeaders } from "@/lib/apiClient";
 import EvaluationOverlay, { type AttemptInput } from "@/components/EvaluationOverlay";
+import HeroEyebrow from "@/components/HeroEyebrow";
 import type { ChallengeRecord } from "@/app/api/challenges/list/route";
 
 // ─── Log attempt helper ───────────────────────────────────────────────────────
@@ -163,11 +164,7 @@ export default function ChallengePage() {
   return (
     <div className="page challenge-page">
       <header className="page-hero">
-        <div className="hero-eyebrow">
-          <span className="hero-loc">{UI.hero.eyebrowLoc}</span>
-          <span className="hero-dot">·</span>
-          <span>{UI.challenge.eyebrowSub}</span>
-        </div>
+        <HeroEyebrow sub={UI.challenge.eyebrowSub} />
         <h1 className="hero-title">
           {UI.challenge.pageTitlePre}<em>{UI.challenge.pageTitleEm}</em>
         </h1>
