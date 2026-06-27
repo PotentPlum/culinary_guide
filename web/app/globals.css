@@ -274,7 +274,12 @@ body.sans-display .hero-title em {
   font-weight: 500;
   border: 1px solid transparent;
   white-space: nowrap;
+  background: none;
+  cursor: pointer;
+  font-family: inherit;
+  transition: filter 130ms, transform 130ms;
 }
+.hero-stat:hover { filter: brightness(0.93); transform: translateY(-1px); }
 .hero-stat-num {
   font-family: var(--mono);
   font-weight: 700;
@@ -419,7 +424,7 @@ body.sans-display .hero-title em {
   position: absolute;
   inset: 0;
   background: var(--veg-color, transparent);
-  opacity: 0.22;
+  opacity: 0.30;
   pointer-events: none;
 }
 .veg-card-status {
@@ -470,6 +475,7 @@ body.sans-display .veg-card-name { font-family: var(--sans); font-weight: 600; l
 }
 .veg-row:hover { background: rgba(63,94,42,0.025); }
 .veg-row-swatch { width: 32px; height: 32px; border-radius: 50%; border: 1px solid; box-shadow: 0 1px 3px rgba(30,26,20,0.08); }
+.veg-row-text { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
 .veg-row-name { font-family: var(--serif); font-size: 19px; letter-spacing: -0.005em; }
 body.sans-display .veg-row-name { font-family: var(--sans); font-weight: 600; font-size: 16px; letter-spacing: -0.015em; }
 .veg-row-nl { font-size: 10.5px; color: var(--ink-soft); letter-spacing: 0.06em; text-transform: uppercase; margin-top: 2px; font-weight: 500; }
@@ -4090,9 +4096,7 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
   font-size: 12.5px;
   color: var(--ink-soft);
   margin-top: 3px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  line-height: 1.4;
 }
 .hp-module-arrow {
   color: var(--ink-soft);
@@ -4805,6 +4809,12 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
   padding-bottom: 36px;
   border-bottom: 1px solid var(--line);
   max-width: 760px;
+}
+
+.profile-pillars-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  gap: 16px;
 }
 
 .profile-pillar {

@@ -39,7 +39,7 @@ export default function App() {
   const [page, setPage] = useState<Page>("home");
   const [filter, setFilter] = useState<Filter>("all");
   const [query, setQuery] = useState("");
-  const [view] = useState<View>("list");
+  const [view, setView] = useState<View>("grid");
   // density toggle UI is not yet built — state is wired through but fixed at "comfortable"
   const [density] = useState<Density>("comfortable");
   const [openVeg, setOpenVeg] = useState<VegItem | null>(null);
@@ -145,6 +145,32 @@ export default function App() {
                 {UI.hero.title} <em>{UI.hero.titleEm}</em>
               </h1>
               <p className="hero-sub">{UI.hero.heroSub}</p>
+              <div className="hero-stats">
+                {counts.peak > 0 && (
+                  <button className="hero-stat hero-stat--peak" onClick={() => setFilter("peak")}>
+                    <span className="hero-stat-num">{counts.peak}</span>
+                    <span>{UI.hero.statPeak}</span>
+                  </button>
+                )}
+                {counts.shoulder > 0 && (
+                  <button className="hero-stat hero-stat--shoulder" onClick={() => setFilter("shoulder")}>
+                    <span className="hero-stat-num">{counts.shoulder}</span>
+                    <span>{UI.hero.statShoulder}</span>
+                  </button>
+                )}
+                {counts.soon > 0 && (
+                  <button className="hero-stat hero-stat--soon" onClick={() => setFilter("soon")}>
+                    <span className="hero-stat-num">{counts.soon}</span>
+                    <span>{UI.hero.statSoon}</span>
+                  </button>
+                )}
+                {counts.ending > 0 && (
+                  <button className="hero-stat hero-stat--ending" onClick={() => setFilter("ending")}>
+                    <span className="hero-stat-num">{counts.ending}</span>
+                    <span>{UI.hero.statEnding}</span>
+                  </button>
+                )}
+              </div>
             </header>
 
             <div className="controls">
@@ -160,6 +186,30 @@ export default function App() {
                     placeholder={UI.controls.searchPlaceholder}
                     aria-label={UI.controls.searchAriaLabel}
                   />
+                </div>
+                <div className="seg" role="group" aria-label="Weergave">
+                  <button
+                    className={view === "list" ? "on" : ""}
+                    onClick={() => setView("list")}
+                    aria-label={UI.controls.listAriaLabel}
+                    title={UI.controls.listAriaLabel}
+                  >
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
+                      <line x1="9" y1="6" x2="21" y2="6"/><line x1="9" y1="12" x2="21" y2="12"/><line x1="9" y1="18" x2="21" y2="18"/>
+                      <circle cx="4" cy="6" r="1" fill="currentColor" stroke="none"/><circle cx="4" cy="12" r="1" fill="currentColor" stroke="none"/><circle cx="4" cy="18" r="1" fill="currentColor" stroke="none"/>
+                    </svg>
+                  </button>
+                  <button
+                    className={view === "grid" ? "on" : ""}
+                    onClick={() => setView("grid")}
+                    aria-label={UI.controls.gridAriaLabel}
+                    title={UI.controls.gridAriaLabel}
+                  >
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
+                      <rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/>
+                      <rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/>
+                    </svg>
+                  </button>
                 </div>
               </div>
             </div>
