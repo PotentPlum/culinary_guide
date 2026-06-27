@@ -276,7 +276,6 @@ body.sans-display .hero-title em {
   white-space: nowrap;
   background: none;
   cursor: pointer;
-  font-family: inherit;
   transition: filter 130ms, transform 130ms;
 }
 .hero-stat:hover { filter: brightness(0.93); transform: translateY(-1px); }
@@ -4816,6 +4815,7 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
   grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
   gap: 16px;
 }
+.profile-pillar--full { grid-column: 1 / -1; }
 
 .profile-pillar {
   background: var(--surface-card);

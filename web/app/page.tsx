@@ -34,6 +34,13 @@ const NAV_ITEMS = [
 
 const STATUS_ORDER: Record<VegStatus, number> = { peak: 0, shoulder: 1, soon: 2, ending: 3, off: 4 };
 
+const HERO_STATS: Array<{ key: Exclude<Filter, "all">; label: string }> = [
+  { key: "peak",     label: UI.hero.statPeak },
+  { key: "shoulder", label: UI.hero.statShoulder },
+  { key: "soon",     label: UI.hero.statSoon },
+  { key: "ending",   label: UI.hero.statEnding },
+];
+
 export default function App() {
   const month = new Date().getMonth() + 1;
   const [page, setPage] = useState<Page>("home");
@@ -146,29 +153,13 @@ export default function App() {
               </h1>
               <p className="hero-sub">{UI.hero.heroSub}</p>
               <div className="hero-stats">
-                {counts.peak > 0 && (
-                  <button className="hero-stat hero-stat--peak" onClick={() => setFilter("peak")}>
-                    <span className="hero-stat-num">{counts.peak}</span>
-                    <span>{UI.hero.statPeak}</span>
-                  </button>
-                )}
-                {counts.shoulder > 0 && (
-                  <button className="hero-stat hero-stat--shoulder" onClick={() => setFilter("shoulder")}>
-                    <span className="hero-stat-num">{counts.shoulder}</span>
-                    <span>{UI.hero.statShoulder}</span>
-                  </button>
-                )}
-                {counts.soon > 0 && (
-                  <button className="hero-stat hero-stat--soon" onClick={() => setFilter("soon")}>
-                    <span className="hero-stat-num">{counts.soon}</span>
-                    <span>{UI.hero.statSoon}</span>
-                  </button>
-                )}
-                {counts.ending > 0 && (
-                  <button className="hero-stat hero-stat--ending" onClick={() => setFilter("ending")}>
-                    <span className="hero-stat-num">{counts.ending}</span>
-                    <span>{UI.hero.statEnding}</span>
-                  </button>
+                {HERO_STATS.map(({ key, label }) =>
+                  counts[key] > 0 ? (
+                    <button key={key} className={`hero-stat hero-stat--${key}`} onClick={() => setFilter(key)}>
+                      <span className="hero-stat-num">{counts[key]}</span>
+                      <span>{label}</span>
+                    </button>
+                  ) : null
                 )}
               </div>
             </header>
