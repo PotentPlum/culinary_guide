@@ -94,29 +94,31 @@ export default function ProfilePage() {
         <p className="hero-sub">{UI.profile.pageSubtitle}</p>
       </header>
 
-      {/* Pillar A — Radar */}
-      <section className="profile-pillar">
-        <p className="profile-pillar-title">{UI.profile.pillarA}</p>
-        <div className="profile-radar-wrapper">
-          <RadarChart axes={radarAxes} size={280} />
-        </div>
-        <div className="profile-radar-legend">
-          <span className="profile-radar-legend-item">
-            <span className="profile-radar-legend-dot" style={{ background: "rgba(63,94,42,0.25)" }} />
-            {UI.profile.labelFrequency}
-          </span>
-          <span className="profile-radar-legend-item">
-            <span className="profile-radar-legend-dot" style={{ background: "var(--primary)" }} />
-            {UI.profile.labelProficiency}
-          </span>
-        </div>
-      </section>
+      <div className="profile-pillars-grid">
+        {/* Pillar A — Radar */}
+        <section className="profile-pillar">
+          <p className="profile-pillar-title">{UI.profile.pillarA}</p>
+          <div className="profile-radar-wrapper">
+            <RadarChart axes={radarAxes} size={280} />
+          </div>
+          <div className="profile-radar-legend">
+            <span className="profile-radar-legend-item">
+              <span className="profile-radar-legend-dot" style={{ background: "rgba(63,94,42,0.25)" }} />
+              {UI.profile.labelFrequency}
+            </span>
+            <span className="profile-radar-legend-item">
+              <span className="profile-radar-legend-dot" style={{ background: "var(--primary)" }} />
+              {UI.profile.labelProficiency}
+            </span>
+          </div>
+        </section>
 
-      {/* Pillar B — Archetypes */}
-      <section className="profile-pillar">
-        <p className="profile-pillar-title">{UI.profile.pillarB}</p>
-        <ArchetypeBadges archetypes={archetypes} />
-      </section>
+        {/* Pillar B — Archetypes */}
+        <section className="profile-pillar">
+          <p className="profile-pillar-title">{UI.profile.pillarB}</p>
+          <ArchetypeBadges archetypes={archetypes} />
+        </section>
+      </div>
 
       {/* Pillar C — Cuisines & Ingredients */}
       <section className="profile-pillar">
