@@ -118,10 +118,10 @@ export default function ProfilePage() {
           <p className="profile-pillar-title">{UI.profile.pillarB}</p>
           <ArchetypeBadges archetypes={archetypes} />
         </section>
-      </div>
 
-      {/* Pillar C — Cuisines & Ingredients */}
-      <section className="profile-pillar">
+
+        {/* Pillar C — Cuisines & Ingredients */}
+        <section className="profile-pillar profile-pillar--full">
         <p className="profile-pillar-title">{UI.profile.pillarC}</p>
 
         {stats.topCuisines.length > 0 && (
@@ -186,10 +186,10 @@ export default function ProfilePage() {
             {UI.profile.ingredientCloudEmpty}
           </p>
         )}
-      </section>
+        </section>
 
-      {/* Pillar D — Technique stats */}
-      <section className="profile-pillar">
+        {/* Pillar D — Technique stats */}
+        <section className="profile-pillar profile-pillar--full">
         <p className="profile-pillar-title">{UI.profile.pillarD}</p>
 
         {topTechniquesDisplay.length > 0 && (
@@ -242,40 +242,41 @@ export default function ProfilePage() {
             {UI.profile.neglectedEmpty}
           </p>
         )}
-      </section>
+        </section>
 
-      {/* Pillar E — Attempt ledger */}
-      <section className="profile-pillar">
-        <p className="profile-pillar-title">{UI.profile.pillarE}</p>
-        {stats.recentAttempts.length === 0 ? (
-          <p className="profile-stat-name" style={{ fontStyle: "italic", color: "var(--ink-soft)" }}>
-            {UI.profile.ledgerEmpty}
-          </p>
-        ) : (
-          <div className="ledger-list">
-            {stats.recentAttempts.map((a) => (
-              <div key={a.id} className="ledger-entry">
-                <div className="ledger-entry-meta">
-                  <span className="ledger-entry-date">{formatDate(a.attempted_at)}</span>
-                  <span className="ledger-entry-source">{a.source_type}</span>
-                  {a.score !== null && (
-                    <span className="profile-score-chip">{a.score}/10</span>
+        {/* Pillar E — Attempt ledger */}
+        <section className="profile-pillar profile-pillar--full">
+          <p className="profile-pillar-title">{UI.profile.pillarE}</p>
+          {stats.recentAttempts.length === 0 ? (
+            <p className="profile-stat-name" style={{ fontStyle: "italic", color: "var(--ink-soft)" }}>
+              {UI.profile.ledgerEmpty}
+            </p>
+          ) : (
+            <div className="ledger-list">
+              {stats.recentAttempts.map((a) => (
+                <div key={a.id} className="ledger-entry">
+                  <div className="ledger-entry-meta">
+                    <span className="ledger-entry-date">{formatDate(a.attempted_at)}</span>
+                    <span className="ledger-entry-source">{a.source_type}</span>
+                    {a.score !== null && (
+                      <span className="profile-score-chip">{a.score}/10</span>
+                    )}
+                    {a.taste_score !== null && (
+                      <span className="profile-score-chip profile-score-chip--taste">{a.taste_score}/10</span>
+                    )}
+                  </div>
+                  {a.techniques.length > 0 && (
+                    <p className="ledger-entry-techniques">
+                      {a.techniques.slice(0, 4).map(getTechniqueLabel).join(" · ")}
+                    </p>
                   )}
-                  {a.taste_score !== null && (
-                    <span className="profile-score-chip profile-score-chip--taste">{a.taste_score}/10</span>
-                  )}
+                  {a.notes && <p className="ledger-entry-notes">{a.notes}</p>}
                 </div>
-                {a.techniques.length > 0 && (
-                  <p className="ledger-entry-techniques">
-                    {a.techniques.slice(0, 4).map(getTechniqueLabel).join(" · ")}
-                  </p>
-                )}
-                {a.notes && <p className="ledger-entry-notes">{a.notes}</p>}
-              </div>
-            ))}
-          </div>
-        )}
-      </section>
+              ))}
+            </div>
+          )}
+        </section>
+      </div>
     </div>
   );
 }
