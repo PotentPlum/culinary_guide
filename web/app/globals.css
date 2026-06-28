@@ -43,6 +43,9 @@
   --radius-pill: 999px;
 
   --ink-faint: rgba(30, 26, 20, 0.38);
+  --ink-dim:   rgba(30, 26, 20, 0.55);
+
+  --transition-card: transform 200ms cubic-bezier(.25,.7,.35,1), box-shadow 200ms, border-color 140ms, background 140ms;
 }
 
 * { box-sizing: border-box; }
@@ -138,7 +141,7 @@ body.sans-display .brand-title { font-family: var(--sans); font-style: normal; f
   border-radius: 9px;
   border: 0;
   background: transparent;
-  color: rgba(30,26,20,0.55);
+  color: var(--ink-dim);
   font-size: 13.5px;
   font-weight: 500;
   cursor: pointer;
@@ -156,7 +159,7 @@ body.sans-display .brand-title { font-family: var(--sans); font-style: normal; f
 }
 .nav-item.active:hover { background: rgba(255,255,255,0.82); box-shadow: inset 3px 0 0 var(--primary), 0 1px 6px rgba(30,26,20,0.08); }
 .nav-item.soon { cursor: default; }
-.nav-item.soon:hover { background: transparent; color: rgba(30,26,20,0.55); }
+.nav-item.soon:hover { background: transparent; color: var(--ink-dim); }
 .nav-item svg { flex-shrink: 0; opacity: 0.72; }
 .nav-item.active svg { opacity: 1; }
 .nav-item span { flex: 1; }
@@ -347,9 +350,9 @@ body.sans-display .hero-title em {
   border-radius: 999px;
   color: var(--ink-soft);
   transition: border-color 150ms, box-shadow 150ms;
-  box-shadow: 0 1px 3px rgba(30,26,20,0.05);
+  box-shadow: var(--shadow-xs);
 }
-.search:focus-within { border-color: var(--primary); box-shadow: 0 0 0 3px rgba(63,94,42,0.08), 0 1px 3px rgba(30,26,20,0.05); }
+.search:focus-within { border-color: var(--primary); box-shadow: 0 0 0 3px rgba(63,94,42,0.08), var(--shadow-xs); }
 .search input {
   border: 0; outline: 0; background: transparent;
   font: inherit; color: var(--ink);
@@ -397,7 +400,7 @@ body.sans-display .hero-title em {
   cursor: pointer;
   text-align: left;
   font: inherit; color: inherit;
-  transition: transform 200ms cubic-bezier(.25,.7,.35,1), box-shadow 200ms, border-color 140ms, background 140ms;
+  transition: var(--transition-card);
   box-shadow: var(--shadow-sm);
 }
 .veg-card:hover {
@@ -424,15 +427,13 @@ body.sans-display .hero-title em {
   background: var(--veg-color, transparent);
   opacity: 0.18;
   pointer-events: none;
-  mix-blend-mode: multiply;
 }
 .veg-card-status {
   position: absolute;
   top: 8px; left: 8px;
-  background: rgba(251,248,241,0.96);
+  background: rgba(251,248,241,0.98);
   padding: 3px 9px;
   border-radius: 999px;
-  backdrop-filter: blur(10px);
   box-shadow: 0 1px 4px rgba(30,26,20,0.10);
   z-index: 1;
   border: 1px solid rgba(30,26,20,0.06);
@@ -468,14 +469,13 @@ body.sans-display .veg-card-name { font-family: var(--sans); font-weight: 600; l
   padding: 14px 22px;
   background: var(--surface-card);
   border: 0;
-  border-top: 1px solid var(--line);
   cursor: pointer;
   text-align: left;
   font: inherit; color: inherit;
   transition: background 120ms;
   width: 100%;
 }
-.veg-row:first-child { border-top: 0; }
+.veg-row + .veg-row { border-top: 1px solid var(--line); }
 .veg-row:hover { background: rgba(63,94,42,0.02); }
 .veg-row-swatch { width: 30px; height: 30px; border-radius: 50%; border: 1px solid; box-shadow: 0 1px 3px rgba(30,26,20,0.08); }
 .veg-row-name { font-family: var(--serif); font-size: 18.5px; letter-spacing: -0.008em; }
@@ -1113,7 +1113,7 @@ body.sans-display .recipe-title { font-family: var(--sans); font-style: normal; 
   border: 1px solid var(--line);
   border-radius: 18px;
   overflow: visible;
-  transition: transform 200ms cubic-bezier(.25,.7,.35,1), box-shadow 200ms, border-color 140ms, background 140ms;
+  transition: var(--transition-card);
   box-shadow: var(--shadow-xs);
   position: relative;
   display: flex;
@@ -4023,7 +4023,7 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
   border-radius: 18px;
   overflow: hidden;
   width: fit-content;
-  box-shadow: 0 4px 20px rgba(30,26,20,0.10), 0 1px 4px rgba(30,26,20,0.06);
+  box-shadow: var(--shadow-md);
   position: relative;
   z-index: 1;
 }
@@ -4089,7 +4089,7 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
   cursor: pointer;
   text-align: left;
   font: inherit; color: inherit;
-  transition: transform 200ms cubic-bezier(.25,.7,.35,1), box-shadow 200ms, border-color 140ms, background 140ms;
+  transition: var(--transition-card);
   box-shadow: var(--shadow-xs);
 }
 .hp-module-card:hover {
@@ -4206,7 +4206,7 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
   cursor: pointer;
   text-align: left;
   font: inherit; color: inherit;
-  transition: transform 200ms cubic-bezier(.25,.7,.35,1), box-shadow 200ms, border-color 140ms;
+  transition: var(--transition-card);
   box-shadow: var(--shadow-xs);
   position: relative;
   overflow: hidden;
