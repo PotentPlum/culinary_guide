@@ -47,7 +47,7 @@
 
 * { box-sizing: border-box; }
 html, body { margin: 0; padding: 0; }
-html { background: var(--surface); }
+html { background: var(--surface); scroll-behavior: smooth; }
 body {
   font-family: var(--sans);
   color: var(--ink);
@@ -55,7 +55,7 @@ body {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   font-size: 15px;
-  line-height: 1.6;
+  line-height: 1.65;
   font-feature-settings: "kern" 1, "calt" 1, "liga" 1;
 }
 
@@ -148,12 +148,12 @@ body.sans-display .brand-title { font-family: var(--sans); font-style: normal; f
 }
 .nav-item:hover:not(:disabled) { background: rgba(255,255,255,0.48); color: var(--ink); }
 .nav-item.active {
-  background: rgba(255,255,255,0.68);
+  background: rgba(255,255,255,0.74);
   color: var(--primary);
   font-weight: 600;
-  box-shadow: inset 2px 0 0 var(--primary), 0 1px 4px rgba(30,26,20,0.07);
+  box-shadow: inset 3px 0 0 var(--primary), 0 1px 6px rgba(30,26,20,0.08);
 }
-.nav-item.active:hover { background: rgba(255,255,255,0.78); box-shadow: inset 2px 0 0 var(--primary), 0 1px 4px rgba(30,26,20,0.07); }
+.nav-item.active:hover { background: rgba(255,255,255,0.84); box-shadow: inset 3px 0 0 var(--primary), 0 1px 6px rgba(30,26,20,0.08); }
 .nav-item.soon { cursor: default; }
 .nav-item.soon:hover { background: transparent; color: var(--ink-soft); }
 .nav-item svg { flex-shrink: 0; opacity: 0.8; }
@@ -173,28 +173,32 @@ body.sans-display .brand-title { font-family: var(--sans); font-style: normal; f
   margin-top: auto;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 8px;
 }
 .footer-loc {
   display: flex; align-items: center; gap: 10px;
   padding: 10px 12px;
-  background: rgba(255,255,255,0.52);
-  border: 1px solid rgba(30,26,20,0.13);
-  border-radius: 11px;
+  background: rgba(255,255,255,0.48);
+  border: 1px solid rgba(30,26,20,0.12);
+  border-radius: 12px;
   box-shadow: var(--shadow-xs);
+  transition: background 130ms;
 }
+.footer-loc:hover { background: rgba(255,255,255,0.62); }
 .footer-flag {
-  width: 26px; height: 18px;
+  width: 24px; height: 16px;
   border-radius: 3px;
   background: linear-gradient(to bottom, #AE1C28 33.3%, #FFFFFF 33.3% 66.6%, #21468B 66.6%);
-  box-shadow: 0 0 0 1px var(--line);
+  box-shadow: 0 0 0 1px rgba(30,26,20,0.15);
   flex-shrink: 0;
 }
 .footer-loc-label {
-  font-size: 9.5px; text-transform: uppercase; letter-spacing: 0.1em;
+  font-family: var(--mono);
+  font-size: 9px; text-transform: uppercase; letter-spacing: 0.11em;
   color: var(--ink-soft);
+  opacity: 0.75;
 }
-.footer-loc-name { font-size: 13px; font-weight: 500; }
+.footer-loc-name { font-size: 12.5px; font-weight: 600; letter-spacing: -0.01em; }
 .footer-build {
   font-family: var(--mono);
   font-size: 10.5px;
@@ -231,8 +235,8 @@ body.sans-display .brand-title { font-family: var(--sans); font-style: normal; f
 .hero-title {
   font-family: var(--serif);
   font-weight: 400;
-  font-size: clamp(38px, 5.5vw, 68px);
-  line-height: 1.02;
+  font-size: clamp(36px, 5vw, 62px);
+  line-height: 1.03;
   letter-spacing: -0.025em;
   margin: 0;
   text-wrap: pretty;
@@ -250,12 +254,12 @@ body.sans-display .hero-title em {
   font-style: normal;
 }
 .hero-sub {
-  font-size: 17px;
+  font-size: 16.5px;
   color: var(--ink-soft);
   margin: 0;
-  max-width: 60ch;
+  max-width: 58ch;
   text-wrap: pretty;
-  line-height: 1.7;
+  line-height: 1.72;
 }
 
 /* ---- Hero stats chips ---- */
@@ -410,7 +414,7 @@ body.sans-display .hero-title em {
   position: relative;
   aspect-ratio: 4 / 3;
   border-radius: 14px;
-  background: linear-gradient(150deg, #F2EDE3 0%, #E9E1D3 60%, #DDD4C4 100%);
+  background: linear-gradient(150deg, #F4EFE5 0%, #EBE2D4 55%, #DED4C2 100%);
   display: grid; place-items: center;
   overflow: hidden;
 }
@@ -468,13 +472,13 @@ body.sans-display .veg-card-name { font-family: var(--sans); font-weight: 600; l
   transition: background 130ms;
   width: 100%;
 }
-.veg-row:hover { background: rgba(63,94,42,0.025); }
-.veg-row-swatch { width: 32px; height: 32px; border-radius: 50%; border: 1px solid; box-shadow: 0 1px 3px rgba(30,26,20,0.08); }
+.veg-row:hover { background: rgba(63,94,42,0.032); }
+.veg-row-swatch { width: 32px; height: 32px; border-radius: 50%; border: 1.5px solid; box-shadow: 0 1px 4px rgba(30,26,20,0.10); }
 .veg-row-name { font-family: var(--serif); font-size: 19px; letter-spacing: -0.005em; }
 body.sans-display .veg-row-name { font-family: var(--sans); font-weight: 600; font-size: 16px; letter-spacing: -0.015em; }
-.veg-row-nl { font-size: 10.5px; color: var(--ink-soft); letter-spacing: 0.06em; text-transform: uppercase; margin-top: 2px; font-weight: 500; }
-.veg-row-arrow { color: var(--ink-soft); opacity: 0.4; transition: opacity 120ms, transform 120ms; }
-.veg-row:hover .veg-row-arrow { opacity: 0.8; transform: translateX(2px); }
+.veg-row-nl { font-size: 10px; color: var(--ink-soft); letter-spacing: 0.07em; text-transform: uppercase; margin-top: 3px; font-weight: 600; }
+.veg-row-arrow { color: var(--ink-soft); opacity: 0.35; transition: opacity 130ms, transform 130ms; }
+.veg-row:hover .veg-row-arrow { opacity: 0.75; transform: translateX(3px); }
 
 /* ---- Peak bar ---- */
 .peak-bar {
@@ -561,7 +565,7 @@ body.sans-display .fp-card-title { font-family: var(--sans); font-weight: 600; f
 }
 
 .empty {
-  padding: 64px 44px;
+  padding: 72px 44px;
   text-align: center;
   color: var(--ink-soft);
   font-family: var(--serif);
@@ -569,8 +573,9 @@ body.sans-display .fp-card-title { font-family: var(--sans); font-weight: 600; f
   font-size: 19px;
   border: 1px dashed var(--line-strong);
   border-radius: 20px;
-  background: rgba(63,94,42,0.015);
-  line-height: 1.55;
+  background: linear-gradient(160deg, rgba(63,94,42,0.025) 0%, rgba(63,94,42,0.008) 100%);
+  line-height: 1.6;
+  letter-spacing: -0.005em;
 }
 
 /* =========== CALENDAR =========== */
@@ -605,7 +610,7 @@ body.sans-display .fp-card-title { font-family: var(--sans); font-weight: 600; f
 .cal-row:nth-child(even):not(.cal-head) { background: rgba(30,26,20,0.012); }
 .cal-row:nth-child(even):not(.cal-head):hover { background: rgba(63,94,42,0.038); }
 .cal-head {
-  background: linear-gradient(90deg, #E5DAC8 0%, var(--surface-warm-light) 100%);
+  background: linear-gradient(135deg, #DDD3B8 0%, #E8DFCB 40%, var(--surface-warm-light) 100%);
   padding: 14px 16px;
   border-top: 0;
   border-bottom: 1px solid var(--line-strong);
@@ -971,11 +976,11 @@ body.sans-display .recipe-title { font-family: var(--sans); font-style: normal; 
 
 .rl-library-title {
   font-family: var(--serif);
-  font-size: clamp(36px, 5vw, 60px);
+  font-size: clamp(34px, 4.5vw, 56px);
   font-weight: 400;
   font-style: normal;
-  line-height: 1.0;
-  letter-spacing: -0.025em;
+  line-height: 1.03;
+  letter-spacing: -0.023em;
   margin: 0;
   color: var(--ink);
 }
@@ -3019,7 +3024,7 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
   padding: 22px 24px;
   background: var(--surface-card);
   border: 1px solid var(--line);
-  border-radius: 18px;
+  border-radius: 20px;
   cursor: pointer;
   text-align: left;
   font: inherit; color: inherit;
@@ -3920,8 +3925,8 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
 .homepage {
   display: flex;
   flex-direction: column;
-  gap: 40px;
-  padding-bottom: 24px;
+  gap: 44px;
+  padding-bottom: 32px;
 }
 
 /* ── Hero ── */
@@ -3964,9 +3969,9 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
 .hp-hero-title {
   font-family: var(--serif);
   font-weight: 400;
-  font-size: clamp(40px, 6.5vw, 76px);
-  line-height: 1.0;
-  letter-spacing: -0.028em;
+  font-size: clamp(38px, 6vw, 70px);
+  line-height: 1.02;
+  letter-spacing: -0.026em;
   margin: 0;
   text-wrap: pretty;
   position: relative;
@@ -4090,9 +4095,7 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
   font-size: 12.5px;
   color: var(--ink-soft);
   margin-top: 3px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  line-height: 1.5;
 }
 .hp-module-arrow {
   color: var(--ink-soft);
@@ -4119,7 +4122,7 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
 .hp-module--challenge .hp-module-icon-wrap { background: rgba(140,100,30,0.13); color: #7A5818; }
 
 /* ── Section pattern ── */
-.hp-section { display: flex; flex-direction: column; gap: 13px; }
+.hp-section { display: flex; flex-direction: column; gap: 14px; }
 .hp-section-header {
   display: flex;
   align-items: center;
@@ -4130,11 +4133,11 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
   display: flex;
   align-items: center;
   gap: 8px;
-  font-family: var(--sans);
-  font-size: 11px;
+  font-family: var(--mono);
+  font-size: 10.5px;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.10em;
+  letter-spacing: 0.11em;
   color: var(--ink-soft);
 }
 .hp-section-dot {
@@ -4237,15 +4240,15 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
   flex-direction: column;
   background: var(--surface-card);
   border: 1px solid var(--line);
-  border-radius: 16px;
+  border-radius: 20px;
   overflow: hidden;
-  box-shadow: var(--shadow-xs);
+  box-shadow: var(--shadow-sm);
 }
 .hp-mini-item {
   display: flex;
   align-items: center;
   gap: 12px;
-  padding: 14px 20px;
+  padding: 13px 20px;
   background: none;
   border: none;
   border-top: 1px solid var(--line);
@@ -4256,7 +4259,7 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
   width: 100%;
 }
 .hp-mini-item:first-child { border-top: none; }
-.hp-mini-item:hover { background: rgba(30,26,20,0.03); }
+.hp-mini-item:hover { background: rgba(63,94,42,0.028); }
 .hp-mini-swatch {
   width: 26px; height: 26px;
   border-radius: 50%;
@@ -4268,8 +4271,8 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
   flex: 1;
   font-family: var(--serif);
   font-style: italic;
-  font-size: 19px;
-  line-height: 1.1;
+  font-size: 18px;
+  line-height: 1.15;
 }
 
 /* ── Tip strip ── */
@@ -4810,7 +4813,7 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
 .profile-pillar {
   background: var(--surface-card);
   border: 1px solid var(--line);
-  border-top: 2px solid rgba(63,94,42,0.18);
+  border-top: 2px solid rgba(63,94,42,0.30);
   border-radius: 20px;
   padding: 28px 32px 32px;
   box-shadow: var(--shadow-sm);
@@ -5072,9 +5075,9 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
 }
 
 .challenge-history-title {
-  font-family: var(--sans);
-  font-size: 11px;
-  letter-spacing: 0.10em;
+  font-family: var(--mono);
+  font-size: 10.5px;
+  letter-spacing: 0.11em;
   text-transform: uppercase;
   color: var(--ink-soft);
   font-weight: 600;
@@ -5145,7 +5148,238 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
 
 .challenge-history-skill {
   font-family: var(--mono);
-  font-size: 11px;
+  font-size: 10.5px;
   color: var(--ink-soft);
   margin: 0;
+}
+
+/* =========== GLOBAL POLISH LAYER =========== */
+
+/* ── Page entrance animation ── */
+.page {
+  animation: pageIn 200ms ease both;
+}
+@keyframes pageIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.homepage, .rl-library-page, .challenge-page, .profile-page, .calendar {
+  animation: pageIn 200ms ease both;
+}
+
+/* ── Consistent section labels across all pages ── */
+.profile-pillar-title,
+.profile-section-label,
+.rl-library-eyebrow,
+.technique-drawer-category,
+.hp-module-label,
+.challenge-history-title {
+  font-family: var(--mono);
+  font-size: 10.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.11em;
+  color: var(--ink-soft);
+  font-weight: 600;
+}
+
+/* ── Veg list: round first/last row corners ── */
+.veg-list .veg-row:first-child { border-radius: 20px 20px 0 0; }
+.veg-list .veg-row:last-child  { border-radius: 0 0 20px 20px; }
+.veg-list .veg-row:only-child  { border-radius: 20px; }
+
+/* ── Status dot sizing refinement ── */
+.status-dot .dot { width: 7px; height: 7px; }
+.status-dot { font-size: 11px; letter-spacing: 0.015em; }
+
+/* ── Chip press effect ── */
+.chip { cursor: default; }
+.chip.interactive { cursor: pointer; }
+.chip.interactive:hover {
+  border-color: rgba(30,26,20,0.32);
+  background: var(--surface-warm-light);
+  box-shadow: 0 1px 5px rgba(30,26,20,0.08);
+}
+
+/* ── Detail panel: veg-specific color tint on hero ── */
+.detail-hero {
+  transition: background 300ms ease;
+}
+
+/* ── Technique card name: match detail panel style ── */
+.technique-card-name {
+  font-style: normal;
+}
+
+/* ── Calendar: better current-month column highlight ── */
+.cal-month.now {
+  background: rgba(63,94,42,0.08);
+  border-radius: 4px;
+  padding: 2px 4px;
+  margin: -2px -4px;
+}
+
+/* ── Homepage modules label ── */
+.hp-module-label {
+  font-family: var(--mono);
+  font-size: 10.5px;
+  letter-spacing: 0.11em;
+  opacity: 0.8;
+}
+
+/* ── Homepage stat widget refinement ── */
+.hp-stat {
+  user-select: none;
+}
+.hp-stat-label {
+  letter-spacing: 0.09em;
+}
+
+/* ── Veg card: subtler name label ── */
+.veg-card-nl {
+  letter-spacing: 0.08em;
+}
+
+/* ── Technique card subtitle line-height ── */
+.technique-card-subtitle {
+  line-height: 1.5;
+}
+
+/* ── Challenge page max-width bump for readability ── */
+.challenge-page {
+  max-width: 700px;
+}
+
+/* ── Profile radar legend spacing ── */
+.profile-radar-legend {
+  margin-top: 8px;
+  gap: 20px;
+}
+
+/* ── Ledger entry improved spacing ── */
+.ledger-entry {
+  padding: 14px 0;
+}
+
+/* ── Profile cuisine track height ── */
+.profile-cuisine-track {
+  height: 6px;
+}
+.profile-cuisine-fill {
+  transition: width 400ms cubic-bezier(.25,.7,.35,1);
+}
+
+/* ── Spotlight card: slightly richer border on hover ── */
+.hp-spotlight-card:hover {
+  border-color: rgba(63,94,42,0.26);
+}
+
+/* ── Technique related cards: brighter hover ── */
+.technique-related-card:hover {
+  background: var(--surface-card);
+  border-color: rgba(30,26,20,0.22);
+}
+
+/* ── Recipe card description clamp ── */
+.rl-card-desc {
+  -webkit-line-clamp: 3;
+}
+
+/* ── Better future peek ── */
+.future-peek {
+  margin-top: 48px;
+  padding-top: 36px;
+}
+.fp-card-title {
+  font-size: 20px;
+}
+
+/* ── Veg grid card: richer shadow on hover ── */
+.veg-card:hover {
+  box-shadow: 0 14px 36px rgba(30,26,20,0.14), 0 4px 12px rgba(30,26,20,0.07);
+}
+
+/* ── Pill filter active: slightly richer shadow ── */
+.pill.active {
+  box-shadow: 0 2px 10px rgba(63,94,42,0.28);
+}
+
+/* ── Search input placeholder ── */
+.search input::placeholder {
+  color: var(--ink-soft);
+  opacity: 0.6;
+}
+
+/* ── Focus rings on cards ── */
+.veg-card:focus-visible,
+.veg-row:focus-visible,
+.hp-spotlight-card:focus-visible,
+.hp-module-card:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+
+/* ── Page section separator (used by several pages) ── */
+.page-section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-top: 36px;
+  border-top: 1px solid var(--line);
+}
+
+/* ── Consistent control bar padding ── */
+.controls {
+  padding: 14px 0;
+}
+
+/* ── Detail panel sections: tighter first section ── */
+.detail-section:first-child {
+  padding-top: 0;
+}
+
+/* ── Better brand mark leaf icon alignment ── */
+.brand-mark svg {
+  margin-top: -1px;
+}
+
+/* ── Logout button refinement ── */
+.logout-btn {
+  border-radius: 10px;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  transition: color 130ms, border-color 130ms, background 130ms;
+}
+.logout-btn:hover {
+  background: rgba(30,26,20,0.05);
+}
+
+/* ── Better scrollbar in detail panel ── */
+.detail-panel::-webkit-scrollbar { width: 4px; }
+.technique-drawer::-webkit-scrollbar { width: 4px; }
+
+/* ── Responsive: technique grid single col below 700px ── */
+@media (max-width: 700px) {
+  .technique-grid { grid-template-columns: 1fr; }
+}
+
+/* ── Responsive: profile layout ── */
+@media (max-width: 700px) {
+  .profile-pillar { padding: 20px 20px 24px; }
+}
+
+/* ── Responsive: hide peak bar in veg list on mobile ── */
+@media (max-width: 620px) {
+  .veg-row { grid-template-columns: 28px 1fr auto 16px; }
+  .veg-row-bar { display: none; }
+}
+
+/* ── Recipe grid single col on small screens ── */
+@media (max-width: 600px) {
+  .rl-recipe-grid { grid-template-columns: 1fr; }
+}
+
+/* ── Spotlight grid: 2 cols on medium screens ── */
+@media (min-width: 541px) and (max-width: 880px) {
+  .hp-spotlight-grid { grid-template-columns: repeat(2, 1fr); }
+  .hp-module-grid { grid-template-columns: repeat(2, 1fr); }
 }
