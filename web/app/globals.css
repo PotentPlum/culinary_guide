@@ -28,7 +28,7 @@
   --shadow-sm:    0 1px 4px rgba(30,26,20,0.07), 0 2px 8px rgba(30,26,20,0.04);
   --shadow-md:    0 4px 16px rgba(30,26,20,0.10), 0 2px 6px rgba(30,26,20,0.05);
   --shadow-lg:    0 8px 32px rgba(30,26,20,0.14), 0 4px 12px rgba(30,26,20,0.07);
-  --shadow-hover: 0 12px 32px rgba(30,26,20,0.13), 0 4px 10px rgba(30,26,20,0.06);
+  --shadow-hover: 0 14px 36px rgba(30,26,20,0.14), 0 4px 12px rgba(30,26,20,0.07);
 
   --surface-warm-light: #EDE5D2;
   --surface-hover:      #FFFEFB;
@@ -298,7 +298,7 @@ body.sans-display .hero-title em {
   justify-content: space-between;
   gap: 16px;
   flex-wrap: wrap;
-  padding: 16px 0;
+  padding: 14px 0;
   border-bottom: 1px solid var(--line);
 }
 .filter-pills {
@@ -324,7 +324,7 @@ body.sans-display .hero-title em {
   background: var(--primary);
   color: var(--surface);
   border-color: transparent;
-  box-shadow: 0 2px 8px rgba(63,94,42,0.26);
+  box-shadow: 0 2px 10px rgba(63,94,42,0.28);
 }
 .pill-count {
   font-family: var(--mono);
@@ -449,7 +449,7 @@ body.sans-display .veg-card-name { font-family: var(--sans); font-weight: 600; l
 .veg-card-nl {
   font-size: 10.5px;
   color: var(--ink-soft);
-  letter-spacing: 0.07em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
   margin-top: 3px;
   font-weight: 500;
@@ -521,7 +521,7 @@ body.sans-display .veg-row-name { font-family: var(--sans); font-weight: 600; fo
 .peak-legend .dot.now { background: transparent; border: 1.5px solid var(--ink); }
 
 /* ---- Future peek ---- */
-.future-peek { margin-top: 40px; padding-top: 32px; border-top: 1px dashed var(--line-strong); }
+.future-peek { margin-top: 48px; padding-top: 36px; border-top: 1px dashed var(--line-strong); }
 .fp-label {
   font-family: var(--mono);
   font-size: 11px; text-transform: uppercase; letter-spacing: 0.10em;
@@ -545,7 +545,7 @@ body.sans-display .veg-row-name { font-family: var(--sans); font-weight: 600; fo
 .fp-card-title {
   font-family: var(--serif);
   font-style: italic;
-  font-size: 22px;
+  font-size: 20px;
   line-height: 1.1;
   margin-bottom: 8px;
 }
@@ -835,6 +835,7 @@ body.sans-display .detail-blurb { font-family: var(--sans); font-style: normal; 
   .detail-panel { width: 100vw; }
   .veg-row { grid-template-columns: 28px 1fr auto 16px; }
   .veg-row-bar { display: none; }
+  .profile-pillar { padding: 20px 20px 24px; }
 }
 
 /* ---- Small mobile (≤540px) ---- */
@@ -1178,7 +1179,7 @@ body.sans-display .recipe-title { font-family: var(--sans); font-style: normal; 
   color: var(--ink-soft);
   margin: 0 0 14px;
   display: -webkit-box;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-wrap: pretty;
@@ -3058,7 +3059,7 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
   font-size: 13.5px;
   color: var(--ink-soft);
   margin: 0;
-  line-height: 1.4;
+  line-height: 1.5;
 }
 
 .technique-card-meta {
@@ -3426,7 +3427,7 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
 
 /* ─── Challenge page ─────────────────────────────────────────────────────── */
 
-.challenge-page { max-width: 680px; }
+.challenge-page { max-width: 700px; }
 
 .challenge-form { margin-bottom: 28px; }
 
@@ -4024,7 +4025,7 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
 }
 .hp-stat-label {
   font-size: 10px;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.09em;
   text-transform: uppercase;
   color: var(--ink-soft);
   white-space: nowrap;
@@ -4044,11 +4045,12 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
 .hp-modules { display: flex; flex-direction: column; gap: 16px; }
 .hp-module-label {
   font-family: var(--mono);
-  font-size: 10px;
+  font-size: 10.5px;
   text-transform: uppercase;
-  letter-spacing: 0.14em;
+  letter-spacing: 0.11em;
   color: var(--ink-soft);
-  opacity: 0.75;
+  opacity: 0.8;
+  font-weight: 600;
 }
 .hp-module-grid {
   display: grid;
@@ -4453,17 +4455,20 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
   padding: 7px 12px;
   background: none;
   border: 1px solid color-mix(in srgb, var(--ink) 15%, transparent);
-  border-radius: 7px;
+  border-radius: 10px;
   color: var(--ink-soft);
   font-family: var(--sans);
   font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.01em;
   cursor: pointer;
   text-align: left;
-  transition: color 0.15s, border-color 0.15s;
+  transition: color 130ms, border-color 130ms, background 130ms;
 }
 .logout-btn:hover {
   color: var(--ink);
   border-color: color-mix(in srgb, var(--ink) 30%, transparent);
+  background: rgba(30,26,20,0.05);
 }
 
 /* =========== EVALUATION OVERLAY =========== */
@@ -4840,10 +4845,10 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
 
 .profile-radar-legend {
   display: flex;
-  gap: 16px;
+  gap: 20px;
   justify-content: center;
   flex-wrap: wrap;
-  margin-top: 4px;
+  margin-top: 8px;
 }
 
 .profile-radar-legend-item {
@@ -4886,7 +4891,7 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
 }
 
 .profile-cuisine-track {
-  height: 7px;
+  height: 6px;
   background: rgba(30,26,20,0.07);
   border-radius: 999px;
   overflow: hidden;
@@ -4896,7 +4901,7 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
   height: 100%;
   background: var(--primary);
   border-radius: 999px;
-  transition: width 300ms ease;
+  transition: width 400ms cubic-bezier(.25,.7,.35,1);
 }
 
 .profile-ingredient-cloud {
@@ -4961,7 +4966,7 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
   display: flex;
   flex-direction: column;
   gap: 4px;
-  padding: 12px 0;
+  padding: 14px 0;
   border-bottom: 1px solid var(--line);
 }
 
@@ -5163,16 +5168,12 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
   from { opacity: 0; transform: translateY(6px); }
   to   { opacity: 1; transform: translateY(0); }
 }
-.homepage, .rl-library-page, .challenge-page, .profile-page, .calendar {
-  animation: pageIn 200ms ease both;
-}
 
 /* ── Consistent section labels across all pages ── */
 .profile-pillar-title,
 .profile-section-label,
 .rl-library-eyebrow,
 .technique-drawer-category,
-.hp-module-label,
 .challenge-history-title {
   font-family: var(--mono);
   font-size: 10.5px;
@@ -5181,11 +5182,6 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
   color: var(--ink-soft);
   font-weight: 600;
 }
-
-/* ── Veg list: round first/last row corners ── */
-.veg-list .veg-row:first-child { border-radius: 20px 20px 0 0; }
-.veg-list .veg-row:last-child  { border-radius: 0 0 20px 20px; }
-.veg-list .veg-row:only-child  { border-radius: 20px; }
 
 /* ── Status dot sizing refinement ── */
 .status-dot .dot { width: 7px; height: 7px; }
@@ -5218,54 +5214,9 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
   margin: -2px -4px;
 }
 
-/* ── Homepage modules label ── */
-.hp-module-label {
-  font-family: var(--mono);
-  font-size: 10.5px;
-  letter-spacing: 0.11em;
-  opacity: 0.8;
-}
-
-/* ── Homepage stat widget refinement ── */
+/* ── Homepage stat widget: no accidental text selection ── */
 .hp-stat {
   user-select: none;
-}
-.hp-stat-label {
-  letter-spacing: 0.09em;
-}
-
-/* ── Veg card: subtler name label ── */
-.veg-card-nl {
-  letter-spacing: 0.08em;
-}
-
-/* ── Technique card subtitle line-height ── */
-.technique-card-subtitle {
-  line-height: 1.5;
-}
-
-/* ── Challenge page max-width bump for readability ── */
-.challenge-page {
-  max-width: 700px;
-}
-
-/* ── Profile radar legend spacing ── */
-.profile-radar-legend {
-  margin-top: 8px;
-  gap: 20px;
-}
-
-/* ── Ledger entry improved spacing ── */
-.ledger-entry {
-  padding: 14px 0;
-}
-
-/* ── Profile cuisine track height ── */
-.profile-cuisine-track {
-  height: 6px;
-}
-.profile-cuisine-fill {
-  transition: width 400ms cubic-bezier(.25,.7,.35,1);
 }
 
 /* ── Spotlight card: slightly richer border on hover ── */
@@ -5277,30 +5228,6 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
 .technique-related-card:hover {
   background: var(--surface-card);
   border-color: rgba(30,26,20,0.22);
-}
-
-/* ── Recipe card description clamp ── */
-.rl-card-desc {
-  -webkit-line-clamp: 3;
-}
-
-/* ── Better future peek ── */
-.future-peek {
-  margin-top: 48px;
-  padding-top: 36px;
-}
-.fp-card-title {
-  font-size: 20px;
-}
-
-/* ── Veg grid card: richer shadow on hover ── */
-.veg-card:hover {
-  box-shadow: 0 14px 36px rgba(30,26,20,0.14), 0 4px 12px rgba(30,26,20,0.07);
-}
-
-/* ── Pill filter active: slightly richer shadow ── */
-.pill.active {
-  box-shadow: 0 2px 10px rgba(63,94,42,0.28);
 }
 
 /* ── Search input placeholder ── */
@@ -5327,51 +5254,14 @@ body.sans-display .recipe-result-desc { font-family: var(--sans); font-style: no
   border-top: 1px solid var(--line);
 }
 
-/* ── Consistent control bar padding ── */
-.controls {
-  padding: 14px 0;
-}
-
-/* ── Detail panel sections: tighter first section ── */
-.detail-section:first-child {
-  padding-top: 0;
-}
-
 /* ── Better brand mark leaf icon alignment ── */
 .brand-mark svg {
   margin-top: -1px;
 }
 
-/* ── Logout button refinement ── */
-.logout-btn {
-  border-radius: 10px;
-  font-weight: 500;
-  letter-spacing: 0.01em;
-  transition: color 130ms, border-color 130ms, background 130ms;
-}
-.logout-btn:hover {
-  background: rgba(30,26,20,0.05);
-}
-
 /* ── Better scrollbar in detail panel ── */
 .detail-panel::-webkit-scrollbar { width: 4px; }
 .technique-drawer::-webkit-scrollbar { width: 4px; }
-
-/* ── Responsive: technique grid single col below 700px ── */
-@media (max-width: 700px) {
-  .technique-grid { grid-template-columns: 1fr; }
-}
-
-/* ── Responsive: profile layout ── */
-@media (max-width: 700px) {
-  .profile-pillar { padding: 20px 20px 24px; }
-}
-
-/* ── Responsive: hide peak bar in veg list on mobile ── */
-@media (max-width: 620px) {
-  .veg-row { grid-template-columns: 28px 1fr auto 16px; }
-  .veg-row-bar { display: none; }
-}
 
 /* ── Recipe grid single col on small screens ── */
 @media (max-width: 600px) {
