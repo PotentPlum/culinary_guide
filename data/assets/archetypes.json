@@ -5,38 +5,42 @@
       "id": "emulsie-ingenieur",
       "nl": "De Emulsie-ingenieur",
       "description": "Meester in emulsies en sauzen",
-      "match": {
-        "discipline": "flavor"
-      },
-      "minAttempts": 10,
-      "minAvgScore": 7
+      "rule": {
+        "type": "techniques",
+        "discipline": "flavor",
+        "minAttempts": 6,
+        "minAvgScore": 7.0
+      }
     },
     {
       "id": "koolstof-artisan",
       "nl": "De Koolstof-artisan",
       "description": "Heer van het hoge vuur",
-      "match": {
+      "rule": {
+        "type": "techniques",
         "techniqueIds": [
           "schroeien",
           "gratineren"
-        ]
-      },
-      "minAttempts": 5
+        ],
+        "minAttempts": 5
+      }
     },
     {
       "id": "messenvirtuoos",
       "nl": "De Messenvirtuoos",
       "description": "Precisie aan het snijvlak",
-      "match": {
-        "discipline": "mechanical"
-      },
-      "minAttempts": 10
+      "rule": {
+        "type": "techniques",
+        "discipline": "mechanical",
+        "minAttempts": 8
+      }
     },
     {
       "id": "saus-architect",
       "nl": "De Saus-architect",
       "description": "Bouwer van complexe sauzen",
-      "match": {
+      "rule": {
+        "type": "techniques",
         "techniqueIds": [
           "roux",
           "bechamel",
@@ -44,24 +48,42 @@
           "tomatensaus",
           "hollandaise",
           "beurre-blanc"
-        ]
-      },
-      "minAttempts": 3,
-      "minAvgScore": 8
+        ],
+        "minAttempts": 3,
+        "minAvgScore": 8.0
+      }
     },
     {
       "id": "stille-fermenteur",
       "nl": "De Stille Fermenteur",
       "description": "Geduld als geheime ingrediënt",
-      "match": {
+      "rule": {
+        "type": "techniques",
         "techniqueIds": [
           "pekelen",
-          "marineren",
           "fermenteren",
           "inmaken"
-        ]
-      },
-      "minAttempts": 3
+        ],
+        "minAttempts": 3
+      }
+    },
+    {
+      "id": "seizoenskok",
+      "nl": "De Seizoenskok",
+      "description": "Kookte 15 verschillende groenten op hun hoogtepunt",
+      "rule": {
+        "type": "distinctPeakVegetables",
+        "min": 15
+      }
+    },
+    {
+      "id": "jaarrond",
+      "nl": "Het Hele Jaar Rond",
+      "description": "Kookte in elke maand van het jaar met een piekgroente",
+      "rule": {
+        "type": "peakMonths",
+        "min": 12
+      }
     }
   ]
 }

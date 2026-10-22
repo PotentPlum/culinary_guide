@@ -54,6 +54,17 @@ def validate(value: object, schema: dict, root: dict, path: str) -> None:
         assert ref.startswith("#/$defs/"), ref
         validate(value, root["$defs"][ref.split("/")[-1]], root, path)
         return
+    if "oneOf" in schema:
+        before = len(errors)
+        passing = 0
+        for option in schema["oneOf"]:
+            mark = len(errors)
+            validate(value, option, root, path)
+            passing += len(errors) == mark
+        del errors[before:]
+        if passing != 1:
+            err(path, f"must match exactly one oneOf option (matched {passing})")
+        return
     if "enum" in schema and value not in schema["enum"]:
         err(path, f"{value!r} not in {schema['enum']}")
         return
@@ -150,8 +161,11 @@ for t in techs:
     for vid in t.get("relatedVegIds", []):
         if vid not in veg_ids:
             err(where, f"relatedVegIds {vid!r} does not resolve")
-    if t.get("discipline") not in disc_ids:
-        err(where, f"discipline {t.get('discipline')!r} not in disciplines.json")
+    if t.get("discipline") is None:
+        if t.get("category") != "gereedschap":
+            err(where, "only cookware guides (category gereedschap) may have no discipline")
+    elif t["discipline"] not in disc_ids:
+        err(where, f"discipline {t['discipline']!r} not in disciplines.json")
 
 facets = facet_doc.get("facets", [])
 unique("facets.key", [f.get("key", "") for f in facets])
@@ -161,12 +175,17 @@ for f in facets:
 archs = arch_doc.get("archetypes", [])
 unique("archetypes.id", [a.get("id", "") for a in archs])
 for a in archs:
-    match = a.get("match", {})
-    if "discipline" in match and match["discipline"] not in disc_ids:
-        err(f"archetypes[{a.get('id')}]", f"discipline {match['discipline']!r} does not resolve")
-    for tid in match.get("techniqueIds", []):
+    rule = a.get("rule", {})
+    where = f"archetypes[{a.get('id')}]"
+    if "discipline" in rule and rule["discipline"] not in disc_ids:
+        err(where, f"discipline {rule['discipline']!r} does not resolve")
+    for tid in rule.get("techniqueIds", []):
         if tid not in tech_ids:
-            err(f"archetypes[{a.get('id')}]", f"techniqueId {tid!r} does not resolve")
+            err(where, f"techniqueId {tid!r} does not resolve")
+    if rule.get("type") == "peakMonths" and rule.get("min", 0) > 12:
+        err(where, "peakMonths min cannot exceed 12")
+    if rule.get("type") == "distinctPeakVegetables" and rule.get("min", 0) > len(veg_ids):
+        err(where, f"distinctPeakVegetables min exceeds the {len(veg_ids)} vegetables in the dataset")
 
 # ── strings.xml ──────────────────────────────────────────────────────────────
 
