@@ -1,0 +1,149 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "techniques.schema.json",
+  "title": "Mise cooking techniques",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "techniques"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "techniques": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/technique"
+      }
+    }
+  },
+  "$defs": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+    },
+    "text": {
+      "type": "string",
+      "minLength": 1
+    },
+    "technique": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "nl",
+        "subtitle",
+        "category",
+        "subcategory",
+        "parentId",
+        "level",
+        "heatLevel",
+        "discipline",
+        "body",
+        "tips",
+        "cookware",
+        "relatedTechniqueIds",
+        "relatedVegIds"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "nl": {
+          "$ref": "#/$defs/text"
+        },
+        "subtitle": {
+          "$ref": "#/$defs/text"
+        },
+        "category": {
+          "enum": [
+            "snijden",
+            "garing",
+            "smaak",
+            "eiwitten",
+            "sauzen",
+            "groenten",
+            "gereedschap",
+            "bewaren"
+          ]
+        },
+        "subcategory": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "parentId": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+        },
+        "level": {
+          "enum": [
+            "basis",
+            "gemiddeld",
+            "gevorderd"
+          ]
+        },
+        "heatLevel": {
+          "enum": [
+            "hoog",
+            "middel",
+            "laag",
+            "geen",
+            null
+          ]
+        },
+        "discipline": {
+          "description": "Skill discipline for the journal; null for cookware guides (category gereedschap) that are not a practised skill.",
+          "enum": [
+            "mechanical",
+            "thermal",
+            "flavor",
+            null
+          ]
+        },
+        "body": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/text"
+          }
+        },
+        "tips": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/text"
+          }
+        },
+        "cookware": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/text"
+          }
+        },
+        "relatedTechniqueIds": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/id"
+          }
+        },
+        "relatedVegIds": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/id"
+          }
+        }
+      }
+    }
+  }
+}

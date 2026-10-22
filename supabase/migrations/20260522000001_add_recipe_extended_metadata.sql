@@ -1,3 +1,0 @@
-ALTER TABLE recipes ADD COLUMN IF NOT EXISTS date_published TEXT;
-ALTER TABLE recipes ADD COLUMN IF NOT EXISTS aggregate_rating JSONB;
-ALTER TABLE recipes ADD COLUMN IF NOT EXISTS video_url TEXT;

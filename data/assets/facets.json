@@ -1,0 +1,209 @@
+{
+  "schemaVersion": 1,
+  "facets": [
+    {
+      "key": "cuisine",
+      "nl": "Keuken",
+      "options": [
+        {
+          "value": "Aziatisch",
+          "nl": "Aziatisch",
+          "color": "#B92A6B"
+        },
+        {
+          "value": "Chinees",
+          "nl": "Chinees",
+          "color": "#B92A6B"
+        },
+        {
+          "value": "Frans",
+          "nl": "Frans",
+          "color": "#2A6BB9"
+        },
+        {
+          "value": "Grieks",
+          "nl": "Grieks",
+          "color": "#2A8AB9"
+        },
+        {
+          "value": "Indiaas",
+          "nl": "Indiaas",
+          "color": "#B98A2A"
+        },
+        {
+          "value": "Italiaans",
+          "nl": "Italiaans",
+          "color": "#C25B2A"
+        },
+        {
+          "value": "Japans",
+          "nl": "Japans",
+          "color": "#B92A6B"
+        },
+        {
+          "value": "Koreaans",
+          "nl": "Koreaans",
+          "color": "#B92A6B"
+        },
+        {
+          "value": "Latijns-Amerikaans",
+          "nl": "Latijns-Amerikaans",
+          "color": "#B98A2A"
+        },
+        {
+          "value": "Mediterraan",
+          "nl": "Mediterraan",
+          "color": "#2A8AB9"
+        },
+        {
+          "value": "Mexicaans",
+          "nl": "Mexicaans",
+          "color": "#B98A2A"
+        },
+        {
+          "value": "Midden-Oosten",
+          "nl": "Midden-Oosten",
+          "color": "#B95128"
+        },
+        {
+          "value": "Nederlands",
+          "nl": "Nederlands",
+          "color": "#3F5E2A"
+        },
+        {
+          "value": "Noord-Afrikaans",
+          "nl": "Noord-Afrikaans",
+          "color": "#B98A2A"
+        },
+        {
+          "value": "Spaans",
+          "nl": "Spaans",
+          "color": "#B9622A"
+        },
+        {
+          "value": "Thai",
+          "nl": "Thai",
+          "color": "#B92A6B"
+        },
+        {
+          "value": "Overig",
+          "nl": "Overig"
+        }
+      ]
+    },
+    {
+      "key": "dishType",
+      "nl": "Gerecht",
+      "options": [
+        {
+          "value": "Hoofdgerecht",
+          "nl": "Hoofdgerecht"
+        },
+        {
+          "value": "Bijgerecht",
+          "nl": "Bijgerecht"
+        },
+        {
+          "value": "Soep",
+          "nl": "Soep"
+        },
+        {
+          "value": "Salade",
+          "nl": "Salade"
+        },
+        {
+          "value": "Saus/Basis",
+          "nl": "Saus/Basis"
+        },
+        {
+          "value": "Ontbijt",
+          "nl": "Ontbijt"
+        },
+        {
+          "value": "Dessert",
+          "nl": "Dessert"
+        },
+        {
+          "value": "Snack",
+          "nl": "Snack"
+        }
+      ]
+    },
+    {
+      "key": "mainIngredient",
+      "nl": "Hoofdingrediënt",
+      "options": [
+        {
+          "value": "Groenten",
+          "nl": "Groenten"
+        },
+        {
+          "value": "Gevogelte",
+          "nl": "Gevogelte"
+        },
+        {
+          "value": "Rood vlees",
+          "nl": "Rood vlees"
+        },
+        {
+          "value": "Vis",
+          "nl": "Vis"
+        },
+        {
+          "value": "Zeevruchten",
+          "nl": "Zeevruchten"
+        },
+        {
+          "value": "Pasta/Graan",
+          "nl": "Pasta/Graan"
+        },
+        {
+          "value": "Peulvruchten",
+          "nl": "Peulvruchten"
+        },
+        {
+          "value": "Ei",
+          "nl": "Ei"
+        },
+        {
+          "value": "Kaas/Zuivel",
+          "nl": "Kaas/Zuivel"
+        },
+        {
+          "value": "Paddenstoelen",
+          "nl": "Paddenstoelen"
+        },
+        {
+          "value": "Wild",
+          "nl": "Wild"
+        },
+        {
+          "value": "Overig",
+          "nl": "Overig"
+        }
+      ]
+    },
+    {
+      "key": "prepTime",
+      "nl": "Bereidingstijd",
+      "options": [
+        {
+          "value": "<15",
+          "nl": "< 15 min"
+        },
+        {
+          "value": "<30",
+          "nl": "< 30 min"
+        },
+        {
+          "value": "<60",
+          "nl": "< 60 min"
+        },
+        {
+          "value": ">60",
+          "nl": "> 60 min"
+        }
+      ]
+    }
+  ]
+}

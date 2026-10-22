@@ -1,2 +1,26 @@
-# MCP server config contains credentials — do not commit
+# MCP server config may contain credentials — do not commit
 .mcp.json
+
+# Android / Gradle
+.gradle/
+.kotlin/
+build/
+local.properties
+captures/
+.externalNativeBuild/
+.cxx/
+*.apk
+*.aab
+
+# Signing material — never commit
+*.keystore
+*.jks
+keystore.properties
+
+# IDE
+.idea/
+*.iml
+.DS_Store
+
+# Python
+__pycache__/
