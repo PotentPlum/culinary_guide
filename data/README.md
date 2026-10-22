@@ -19,7 +19,7 @@ python3 tools/validate_data.py
 | `assets/facets.json` | Recipe tag vocabulary: cuisine (with colours), dish type, main ingredient, prep time | APK asset; also the enum source for Claude output schemas (spec §8) |
 | `assets/disciplines.json` | The 3 skill disciplines (Dagboek bars) with Dutch labels, in display order | APK asset |
 | `assets/archetypes.json` | 7 Dagboek badges as typed rules (`techniques`, `distinctPeakVegetables`, `peakMonths`) | APK asset → `BadgeEvaluator` (spec §12) |
-| `res/values/strings.xml` | 275 Dutch UI strings + `months_short` / `months_long` arrays | Android resource dir (`res.srcDir`) |
+| `res/values/strings.xml` | Dutch UI strings, plurals and string arrays (`months_short` / `months_long` / `months_initial`, `score_steps`) | Android resource dir (`res.srcDir`) |
 | `fixtures/recipe-ingestion/golden.json` | 104 recorded input→output cases for the recipe parser, from the 94 passing TS tests | JVM unit-test resource; the Kotlin port must reproduce all of them |
 | `fixtures/seasonality/status.json` | Expected `peak/shoulder/soon/ending/off` for every vegetable × month (792 cells) | JVM unit-test resource |
 | `schemas/*.schema.json` | JSON Schemas for every asset and fixture file | Used by `tools/validate_data.py`; Kotlin tests may reuse them |
@@ -57,14 +57,20 @@ android.sourceSets {
 - **strings.xml:** keys are the `UI.*` paths in snake_case (`recipes.saveBtn` → `recipes_save_btn`).
   Web-only groups were dropped (`auth`, `footer`, `futurePeek`, `home.modules`, `nav.soon`, and later
   `profile_discipline_material`), and the archetype names live in `archetypes.json` instead. The two template functions became format strings (`home_spotlight_more` →
-  `%1$d`, `home_tip_link` → `%1$s`). The text itself is unchanged: renaming "Uitdaging" → "Quest" and pruning
-  web-specific copy are tracked in `todo.md`.
+  `%1$d`, `home_tip_link` → `%1$s`). Renaming "Uitdaging" → "Quest" and pruning web-specific copy are tracked in `todo.md`.
+- **strings.xml, UI/UX review (spec Appendix D):** one season vocabulary (Op z'n best / Verkrijgbaar / Komt eraan; the "aflopend"
+  strings are gone), one difficulty scale (`level_*` replaces three key sets), headlines as single strings with `<i>` emphasis instead
+  of `*_em` / `*_end` fragments, "Zonder cijfers vastleggen", and new strings for Vanavond, cook sessions, Dagboek segments and first run.
+- **Vegetable colours:** `radish`, `wild-garlic` and `watercress` fills were lightened slightly so ink initials reach 4.5:1.
 
 ## Content rules (unchanged from the web app)
 
 - **Dutch locally grown vegetables only.** Seasonality means Dutch field/greenhouse harvest windows (velt.nu),
   not supermarket imports. No imported year-round produce (avocado, citrus, mango), no fruit, berries or nuts.
 - Every user-visible string is Dutch. `nameEn` / `nutrientsEn` are never shown as they are.
+- Every vegetable `color` must reach 4.5:1 with ink (`#1E1A14`) or white, because it is the background for the `VegToken` initials
+  and the detail header (the validator checks this). `accent` is decorative only and has no contrast requirement (spec §5).
+- `strings.xml` allows only `<i>` and `<b>` markup, for emphasis inside one string; never split a sentence across keys.
 - `family` must be one of: Wortel, Blad, Brassica, Allium, Peulvrucht, Stengel, Pompoen, Knolgewas,
   Vruchtgroente, Paddenstoel, Kruid.
 
