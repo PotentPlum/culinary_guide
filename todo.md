@@ -15,8 +15,11 @@ The web app keeps running from its last Vercel deployment until you turn it off,
 - [ ] **Export browser data**: open the deployed site in the browser you used, open the devtools console, and run the `localStorage` snippet in spec §13.3. Save the result as `mise-legacy-local.json`.
 - [ ] Check both files open and look complete (count the recipes).
 - [ ] Review the assumptions A1–A8 in spec §0 and change any you disagree with **before** P0. A5 (applicationId) is hard to change later.
-- [ ] Once the app has restored the converted data (P1 › Backup and legacy): disconnect the Vercel project, then pause or delete the Supabase project.
-      Merging the PR that removes `web/` makes new Vercel builds fail; the existing deployment keeps serving until you disconnect it.
+- [x] Stop Vercel builds for this repo: `vercel.json` sets `git.deploymentEnabled: false`, so pushes and PRs no longer deploy or post a failing
+      "Vercel" status. The existing production deployment keeps serving, so the browser export above still works.
+- [ ] Once the app has restored the converted data (P1 › Backup and legacy): delete the Vercel project (or disconnect its Git repository and
+      uninstall the Vercel GitHub App, which also removes the "Vercel Preview Comments" check), then delete `vercel.json`, and pause or
+      delete the Supabase project.
 
 ---
 
