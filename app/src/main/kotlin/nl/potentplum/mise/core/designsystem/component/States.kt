@@ -7,8 +7,8 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.automirrored.outlined.MenuBook
 import androidx.compose.material.icons.outlined.ErrorOutline
-import androidx.compose.material.icons.outlined.MenuBook
 import androidx.compose.material3.Button
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
@@ -88,7 +88,7 @@ private fun StatesPreview() {
             EmptyState(
                 title = "Nog geen recepten",
                 body = "Voeg je eerste recept toe via een link of een foto van een kookboek.",
-                icon = Icons.Outlined.MenuBook,
+                icon = Icons.AutoMirrored.Outlined.MenuBook,
             ) { Button(onClick = {}) { Text("Eerste recept toevoegen") } }
             ErrorState(message = "Kon de pagina niet bereiken. Controleer je verbinding.", onRetry = {})
         }
