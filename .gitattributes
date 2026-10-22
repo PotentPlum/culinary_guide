@@ -18,3 +18,4 @@
 *.jar binary
 *.apk binary
 *.aab binary
+*.bat text eol=crlf

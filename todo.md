@@ -26,50 +26,51 @@ The web app keeps running from its last Vercel deployment until you turn it off,
 ## P0 — Foundation
 
 ### Project setup
-- [ ] Scaffold the Android project at the repo root: `settings.gradle.kts`, root `build.gradle.kts`, `gradle/libs.versions.toml`, Gradle wrapper, `:app` module (spec §4.1, §4.3).
-- [ ] Set `minSdk 30`, `targetSdk`/`compileSdk 36`, applicationId `nl.potentplum.mise`, debug suffix `.debug` (spec §0 A4/A5, §17).
-- [ ] Wire `data/` into source sets: assets, res and test resources (spec §4.3). Acceptance: `strings.xml` from `data/res` resolves via `R.string.*`.
-- [ ] Add Hilt, Compose BOM, Material 3, Navigation Compose, Room + KSP, DataStore, kotlinx.serialization, OkHttp, Jsoup, Coil 3, WorkManager, Timber.
-- [ ] Lint config: `HardcodedText` = error; add ktlint (or detekt). Acceptance: a hardcoded `Text("Hallo")` fails `./gradlew lint`.
-- [ ] Create the package skeleton from spec §4.2.
+- [x] Scaffold the Android project at the repo root: `settings.gradle.kts`, root `build.gradle.kts`, `gradle/libs.versions.toml`, Gradle wrapper, `:app` module (spec §4.1, §4.3).
+- [x] Set `minSdk 30`, `targetSdk`/`compileSdk 36`, applicationId `nl.potentplum.mise`, debug suffix `.debug` (spec §0 A4/A5, §17). compileSdk is 37: current AndroidX and OkHttp releases require it (spec §0 A4).
+- [x] Wire `data/` into source sets: assets, res and test resources (spec §4.3). Acceptance: `strings.xml` from `data/res` resolves via `R.string.*`.
+- [x] Add Hilt, Compose BOM, Material 3, Navigation Compose, Room + KSP, DataStore, kotlinx.serialization, OkHttp, Jsoup, Coil 3, WorkManager, Timber.
+- [x] Lint config: `HardcodedText` = error; add ktlint (or detekt). Acceptance: a hardcoded `Text("Hallo")` fails `./gradlew lint`. Android's `HardcodedText` only covers XML, so `:lint-checks` adds `ComposeHardcodedText`.
+- [x] Create the package skeleton from spec §4.2.
 - [x] Update `.gitignore` for Android and signing material, and `.gitattributes` for binary artifacts (done in the overhaul PR).
 
 ### CI
-- [ ] `.github/workflows/ci.yml`: Python `tools/validate_data.py` → `./gradlew lint ktlintCheck testDebugUnitTest assembleDebug` → upload the debug APK artifact (spec §16, §17).
-- [ ] Add a Claude Code SessionStart hook that installs the Android SDK command-line tools if missing, accepts licences and warms the Gradle cache, so cloud sessions can build. Document it in `CLAUDE.md`.
+- [x] `.github/workflows/ci.yml`: Python `tools/validate_data.py` → `./gradlew lint ktlintCheck testDebugUnitTest assembleDebug` → upload the debug APK artifact (spec §16, §17).
+- [x] Add a Claude Code SessionStart hook that installs the Android SDK command-line tools if missing, accepts licences and warms the Gradle cache, so cloud sessions can build. Document it in `CLAUDE.md`.
 
 ### Design system (spec §5)
-- [ ] Bundle the fonts Instrument Serif (regular + italic), Instrument Sans (400/500/600) and JetBrains Mono (400/500) under `res/font`, plus their OFL licence texts.
-- [ ] `MiseTheme`: colour scheme from the token table, `MiseColors` for the status colours (shoulder = primary outline + soft fill), typography, shapes. Dynamic colour off.
+- [x] Bundle the fonts Instrument Serif (regular + italic), Instrument Sans (400/500/600) and JetBrains Mono (400/500) under `res/font`, plus their OFL licence texts.
+- [x] `MiseTheme`: colour scheme from the token table, `MiseColors` for the status colours (shoulder = primary outline + soft fill), typography, shapes. Dynamic colour off.
       Acceptance: a unit test checks every text/indicator pair in the §5 table against its contrast floor (4.5:1 text, 3:1 graphics).
-- [ ] `styledStringResource()`: renders `<i>`/`<b>` from string resources as `AnnotatedString` (italic → Instrument Serif italic). Acceptance: `today_hero_title` renders "vandaag" in italic and TalkBack reads one sentence.
-- [ ] Shared components: `HeroHeader`, `Eyebrow`, `VegToken` (initials in ink or white by contrast, always beside the name), `StatusDot`, `SeasonBadge`, `PeakBar` (status colours, never the vegetable accent), `FilterPills`, `FacetChips`, `DifficultyBadge`, `EmptyState`, `ErrorState`.
-- [ ] Review components (spec §5, Appendix D): `SuggestionCard` (reason + time + Niet vandaag / Dit kook ik vanavond), `TonightCard`, `SeasonTally`, `ScoreScale` (5 steps → 2/4/6/8/10), `TimerChip` (idle / running / done), `RecipeActionBar`.
-- [ ] Compose `@Preview`s for every component (light theme).
+- [x] `styledStringResource()`: renders `<i>`/`<b>` from string resources as `AnnotatedString` (italic → Instrument Serif italic). Acceptance: `today_hero_title` renders "vandaag" in italic and TalkBack reads one sentence.
+- [x] Shared components: `HeroHeader`, `Eyebrow`, `VegToken` (initials in ink or white by contrast, always beside the name), `StatusDot`, `SeasonBadge`, `PeakBar` (status colours, never the vegetable accent), `FilterPills`, `FacetChips`, `DifficultyBadge`, `EmptyState`, `ErrorState`.
+- [x] Review components (spec §5, Appendix D): `SuggestionCard` (reason + time + Niet vandaag / Dit kook ik vanavond), `TonightCard`, `SeasonTally`, `ScoreScale` (5 steps → 2/4/6/8/10), `TimerChip` (idle / running / done), `RecipeActionBar`.
+- [x] Compose `@Preview`s for every component (light theme).
 
 ### App shell (spec §6.1)
-- [ ] `MainActivity` (edge-to-edge) + `NavHost` with type-safe routes, a bottom bar (Vandaag · Seizoen · Recepten · Boodschappen · Dagboek; Boodschappen shows the unticked count), a back stack per tab and predictive back.
-- [ ] Top-bar overflow menu: Technieken, Instellingen, Over Mise.
-- [ ] `Clock`/`MonthProvider` abstraction (Europe/Amsterdam), injectable for tests.
+- [x] `MainActivity` (edge-to-edge) + `NavHost` with type-safe routes, a bottom bar (Vandaag · Seizoen · Recepten · Boodschappen · Dagboek; Boodschappen shows the unticked count), a back stack per tab and predictive back. Feature screens are placeholders until P1.
+- [x] Top-bar overflow menu: Technieken, Instellingen, Over Mise.
+- [x] `Clock`/`MonthProvider` abstraction (Europe/Amsterdam), injectable for tests. (`MiseClock`)
 
 ### Content layer (spec §7.1, §11.1)
-- [ ] Kotlin models + serializers for `vegetables`, `techniques` (nullable `discipline`), `facets`, `disciplines`, `archetypes` (typed `rule`), matching `data/schemas/*` exactly.
-- [ ] `ContentRepository`: loads once off the main thread, exposes id maps, fails loudly on an unknown `schemaVersion` in debug builds.
-- [ ] Unit test: every asset deserialises with `ignoreUnknownKeys = false`, and the counts match the validator (66 vegetables / 74 techniques / 4 facets / 3 disciplines / 7 badges).
-- [ ] `Seasonality.statusFor`. Acceptance: all 792 cells of `fixtures/seasonality/status.json` pass.
-- [ ] `SeasonPresentation`: Nu verkrijgbaar / Komt eraan, the Laatste kans and Kort seizoen badges, the ranked order (spec §11.1), with unit tests including September (43 vegetables at peak).
+- [x] Kotlin models + serializers for `vegetables`, `techniques` (nullable `discipline`), `facets`, `disciplines`, `archetypes` (typed `rule`), matching `data/schemas/*` exactly.
+- [x] `ContentRepository`: loads once off the main thread, exposes id maps, fails loudly on an unknown `schemaVersion` in debug builds.
+- [x] Unit test: every asset deserialises with `ignoreUnknownKeys = false`, and the counts match the validator (66 vegetables / 74 techniques / 4 facets / 3 disciplines / 7 badges).
+- [x] `Seasonality.statusFor`. Acceptance: all 792 cells of `fixtures/seasonality/status.json` pass.
+- [x] `SeasonPresentation`: Nu verkrijgbaar / Komt eraan, the Laatste kans and Kort seizoen badges, the ranked order (spec §11.1), with unit tests including September (43 vegetables at peak).
 
 ### Database (spec §7.2, §7.3)
-- [ ] Room entities, DAOs and the DB v1 for every table in §7.2 (structured `ingredient`, the single `recipe_tag`, `attempt` with `vegIds`/`peakVegIds`/`photoPath`), with schema export enabled (`app/schemas/` committed).
-- [ ] `MigrationTestHelper` set up (a trivial v1 test now; real migrations later).
-- [ ] DataStore `SettingsRepository` (spec §7.3), including `showQuestCard` and the day/session state (`tonight`, `todayDismissed`, `cookSession`) with their expiry rules; unit tests for expiry across midnight and the 24-hour cook-session limit.
+- [x] Room entities, DAOs and the DB v1 for every table in §7.2 (structured `ingredient`, the single `recipe_tag`, `attempt` with `vegIds`/`peakVegIds`/`photoPath`), with schema export enabled (`app/schemas/` committed).
+- [x] `MigrationTestHelper` set up (a trivial v1 test now; real migrations later).
+- [x] DataStore `SettingsRepository` (spec §7.3), including `showQuestCard` and the day/session state (`tonight`, `todayDismissed`, `cookSession`) with their expiry rules; unit tests for expiry across midnight and the 24-hour cook-session limit.
 
 ### Security and Claude spike (spec §8.1, §9)
-- [ ] **Spike:** call `GET /v1/models` and a minimal structured-output `messages` request with the Anthropic Java SDK on a real device with an R8 release build. Record the outcome in `spec.md` §8.1 and choose the SDK or the OkHttp client.
-- [ ] `KeystoreCipher` (AES-256-GCM, StrongBox with TEE fallback, `setUnlockedDeviceRequired`) + `SecretStore` (a separate DataStore file).
+- [ ] **[owner]** **Spike:** call `GET /v1/models` and a minimal structured-output `messages` request with the Anthropic Java SDK on a real device with an R8 release build. Record the outcome in `spec.md` §8.1 and choose the SDK or the OkHttp client.
+- [x] `KeystoreCipher` (AES-256-GCM, StrongBox with TEE fallback, `setUnlockedDeviceRequired`) + `SecretStore` (a separate DataStore file). `KeystoreCipherTest` (instrumented) still has to run on a device.
 - [ ] `data_extraction_rules.xml` + `full_backup_content.xml` exclude `secrets.preferences_pb`. Acceptance: `adb shell bmgr backupnow` output does not contain the file.
-- [ ] Handle invalidated or missing keys gracefully: the status becomes "opnieuw invoeren", with no crash (test on Robolectric or instrumented).
-- [ ] Scrub `sk-ant-…` from exception messages; Timber no-op in release; no HTTP logging in release.
+      Rules written and unit-tested (`BackupExclusionTest`); **[owner]** the `bmgr` check needs a phone.
+- [x] Handle invalidated or missing keys gracefully: the status becomes "opnieuw invoeren", with no crash (test on Robolectric or instrumented).
+- [x] Scrub `sk-ant-…` from exception messages; Timber no-op in release; no HTTP logging in release.
 
 ---
 
