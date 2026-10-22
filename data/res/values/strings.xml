@@ -7,7 +7,7 @@
 <resources>
     <string name="brand_title">Mise</string>
     <string name="brand_sub">een kooksalmanak</string>
-    <string name="nav_seasonal">Seizoenen</string>
+    <string name="nav_seasonal">Seizoen</string>
     <string name="nav_calendar">Kalender</string>
     <string name="nav_recipes">Recepten</string>
     <string name="nav_substitutions">Vervangers</string>
@@ -313,6 +313,23 @@
     <string name="onboarding_first_recipe_title">Je eerste recept</string>
     <string name="onboarding_first_recipe_sub">Tip: deel een recept vanuit Chrome of Instagram met Mise, dan komt het direct binnen.</string>
     <string name="onboarding_later">Later</string>
+    <!-- Android app shell and shared components (P0). -->
+    <string name="nav_journal">Dagboek</string>
+    <string name="menu_more">Meer opties</string>
+    <string name="menu_settings">Instellingen</string>
+    <string name="menu_about">Over Mise</string>
+    <string name="common_back">Terug</string>
+    <string name="common_error_title">Niet gelukt</string>
+    <string name="common_retry">Opnieuw proberen</string>
+    <string name="placeholder_under_construction">Dit deel van Mise is nog in aanbouw.</string>
+    <string name="today_eyebrow">Nederland · %1$s %2$d</string>
+    <string name="minutes_short">%1$d min</string>
+    <string name="peakbar_description">Op z\'n best: %1$s. Verkrijgbaar: %2$s.</string>
+    <string name="peakbar_none">geen</string>
+    <plurals name="shopping_badge_description">
+        <item quantity="one">%1$d item op je lijst</item>
+        <item quantity="other">%1$d items op je lijst</item>
+    </plurals>
     <string-array name="score_steps">
         <item>Mislukt</item>
         <item>Matig</item>

@@ -72,6 +72,8 @@ android {
     testOptions {
         unitTests {
             isIncludeAndroidResources = true
+            // Robolectric's SDK 36 sandbox reflects into FileDescriptor and SharedSecrets, which JDK 17+ close by default.
+            all { it.jvmArgs("--add-opens=java.base/java.io=ALL-UNNAMED", "--add-exports=java.base/jdk.internal.access=ALL-UNNAMED") }
         }
     }
 

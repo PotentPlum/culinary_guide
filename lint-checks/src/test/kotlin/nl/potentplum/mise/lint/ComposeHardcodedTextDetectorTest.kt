@@ -69,6 +69,29 @@ class ComposeHardcodedTextDetectorTest : LintDetectorTest() {
             .expectErrorCount(2)
     }
 
+    fun testPreviewSampleDataIsClean() {
+        lint()
+            .files(
+                *stubs,
+                kotlin(
+                    """
+                    package androidx.compose.ui.tooling.preview
+                    annotation class Preview
+                    """,
+                ).indented(),
+                kotlin(
+                    """
+                    package test
+                    import androidx.compose.material3.Text
+                    import androidx.compose.runtime.Composable
+                    import androidx.compose.ui.tooling.preview.Preview
+                    @Preview @Composable private fun ScreenPreview() { Text("Pompoenrisotto") }
+                    """,
+                ).indented(),
+            ).run()
+            .expectClean()
+    }
+
     fun testResourcesSymbolsAndKeysAreClean() {
         lint()
             .files(
