@@ -13,7 +13,9 @@ import org.jetbrains.uast.UCallExpression
 import org.jetbrains.uast.UElement
 import org.jetbrains.uast.UExpression
 import org.jetbrains.uast.ULiteralExpression
+import org.jetbrains.uast.UMethod
 import org.jetbrains.uast.UPolyadicExpression
+import org.jetbrains.uast.getParentOfType
 import org.jetbrains.uast.skipParenthesizedExprDown
 
 /**
@@ -31,6 +33,7 @@ class ComposeHardcodedTextDetector :
             override fun visitCallExpression(node: UCallExpression) {
                 val method = node.resolve() ?: return
                 if (!method.hasAnnotation(COMPOSABLE)) return
+                if (node.isInsidePreview()) return
                 val mapping = context.evaluator.computeArgumentMapping(node, method)
                 for ((argument, parameter) in mapping) {
                     if (parameter.name !in TEXT_PARAMETERS) continue
@@ -45,6 +48,12 @@ class ComposeHardcodedTextDetector :
                 }
             }
         }
+
+    /** `@Preview` functions show sample data, not UI text. */
+    private fun UElement.isInsidePreview(): Boolean =
+        getParentOfType(UMethod::class.java, true)?.uAnnotations?.any { annotation ->
+            annotation.qualifiedName?.substringAfterLast('.')?.endsWith("Preview") == true
+        } == true
 
     private fun UExpression.hasLiteralText(): Boolean =
         when (val expression = skipParenthesizedExprDown()) {
