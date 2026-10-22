@@ -38,3 +38,8 @@ Once scaffolded: `./gradlew lint ktlintCheck testDebugUnitTest assembleDebug` (s
 "Mise — een kooksalmanak": editorial cookbook look. Cream `#F4EFE6`, ink `#1E1A14`, leaf green `#3F5E2A` (primary),
 terracotta `#B95128` (accent). Instrument Serif (headlines, italic emphasis), Instrument Sans (body), JetBrains Mono
 (meta labels). Full token table in spec §5. No dynamic colour.
+- Contrast: text ≥ 4.5:1, meaningful graphics ≥ 3:1. `PeakBar`/calendar use the status colours, never a vegetable's `accent`;
+  terracotta only for fills and large text.
+- Italic emphasis is `<i>` inside one string resource, rendered with `styledStringResource()`; never split a sentence across keys.
+- One vocabulary (spec §5): Op z'n best / Verkrijgbaar / Komt eraan, badges Laatste kans / Kort seizoen,
+  difficulty Basis / Gemiddeld / Gevorderd, scores Mislukt · Matig · Oké · Goed · Top (stored 2/4/6/8/10).
