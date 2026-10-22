@@ -1,0 +1,2683 @@
+{
+  "schemaVersion": 1,
+  "vegetables": [
+    {
+      "id": "asparagus-white",
+      "nl": "Witte asperges",
+      "nameEn": "White asparagus",
+      "family": "Stengel",
+      "color": "#EFE3CD",
+      "accent": "#C9B58A",
+      "peak": [
+        5,
+        6
+      ],
+      "shoulder": [
+        4
+      ],
+      "blurb": "Het geliefde 'witte goud' van Nederland — slechts voor een korte periode in het voorjaar beschikbaar.",
+      "storage": "Wikkel in een vochtige doek en zet rechtop in de groentelade. Bij voorkeur binnen 2–3 dagen na aankoop eten.",
+      "prep": "Schil van net onder de kop naar beneden met een scherpe dunschiller. Breek de houtige uiteinden af. Kook 10–14 min in gezouten water met een snufje suiker en een klontje boter.",
+      "technique": "Klassieke Nederlandse bereiding: schil, kook en serveer met gesmolten boter, ei en ham.",
+      "pairings": [
+        "Bruine boter",
+        "Hardgekookt ei",
+        "Ham",
+        "Nootmuskaat",
+        "Hollandaisesaus",
+        "Kervel",
+        "Krieltjes"
+      ],
+      "substitutions": [
+        "Groene asperges",
+        "Schorseneren",
+        "Preihart"
+      ],
+      "nutrientsEn": "Vitamins K, C, B1, B2, E, folate; potassium, calcium, magnesium",
+      "sourceUrl": "https://velt.nu/groente/asperges",
+      "curatedRecipes": [
+        {
+          "title": "Hollandse asperges met ham, ei en botersaus",
+          "url": "https://www.allerhande.nl/recept/R-R1187954/hollandse-asperges-met-ham-ei-en-botersaus",
+          "source": "Allerhande",
+          "why": "De definitieve Nederlandse bereiding: de zoetheid van mei-asperges komt het zuiverst tot uiting met simpele boter, ei en ham — niets concurreert hiermee.",
+          "difficulty": "easy",
+          "timeMinutes": 30
+        },
+        {
+          "title": "Aspergesoep met dragon",
+          "url": "https://www.leukerecepten.nl/recepten/aspergesoep/",
+          "source": "Leuke Recepten",
+          "why": "Het kookwater van witte asperges is puur goud — deze soep verspilt niets en vangt het seizoen in één kom.",
+          "difficulty": "easy",
+          "timeMinutes": 40
+        },
+        {
+          "title": "White asparagus with morels and chervil butter",
+          "url": "https://www.greatbritishchefs.com/recipes/white-asparagus-morel-recipe",
+          "source": "Great British Chefs",
+          "why": "Morilles en asperges hebben maar een raakvlak van twee weken in mei — samen versterken ze elkaars aardse umami.",
+          "difficulty": "medium",
+          "timeMinutes": 45
+        },
+        {
+          "title": "Asperges met gerookte zalm en citroencrème",
+          "url": "https://www.24kitchen.nl/recepten/asperges-met-gerookte-zalm",
+          "source": "24Kitchen",
+          "why": "Het zout van koudgerookte zalm snijdt door de rijkheid van asperges — een lichte maar bevredigende lentemaaltijd.",
+          "difficulty": "easy",
+          "timeMinutes": 20
+        }
+      ]
+    },
+    {
+      "id": "asparagus-green",
+      "nl": "Groene asperges",
+      "nameEn": "Green asparagus",
+      "family": "Stengel",
+      "color": "#A6B96A",
+      "accent": "#6E8A3D",
+      "peak": [
+        5,
+        6
+      ],
+      "shoulder": [
+        4,
+        7
+      ],
+      "blurb": "Uitgesproken van smaak en hoeft niet geschild te worden — een stap voor op zijn witte neef.",
+      "storage": "Rechtop in 2 cm water in de koelkast, losjes afdekken. Tot 4 dagen houdbaar.",
+      "prep": "Breek het houtige uiteinde af. Rooster op 220°C voor 8–10 min, grill, of schaaf rauw in salades.",
+      "technique": "Leg plat op een hete grillpan en schroei slechts één kant — zo haal je de meeste smaak eruit.",
+      "pairings": [
+        "Citroenrasp",
+        "Parmezaan",
+        "Olijfolie",
+        "Knoflook",
+        "Geitenkaas",
+        "Pijnboompitten"
+      ],
+      "substitutions": [
+        "Witte asperges",
+        "Tenderstem broccoli",
+        "Suikererwten"
+      ],
+      "sourceUrl": "https://velt.nu/groente/asperges",
+      "curatedRecipes": []
+    },
+    {
+      "id": "rhubarb",
+      "nl": "Rabarber",
+      "nameEn": "Rhubarb",
+      "family": "Stengel",
+      "color": "#D86A7A",
+      "accent": "#9C2E47",
+      "peak": [
+        4,
+        5,
+        6
+      ],
+      "shoulder": [
+        3,
+        7
+      ],
+      "blurb": "Technisch gezien een groente. Zuur, roze en heerlijk bij alles met zuivel.",
+      "storage": "Wikkel de stelen in folie en bewaar in de koelkast tot een week. Snijd in stukken en vries in voor compotes.",
+      "prep": "Verwijder de bladeren (giftig, weggooien). Snij in stukken van 2 cm. Rooster op 180°C met suiker 15 min — behoudt zo de vorm.",
+      "technique": "Roosteren, nooit koken — door koken wordt het een brei.",
+      "pairings": [
+        "Vanille",
+        "Gember",
+        "Aardbei",
+        "Room",
+        "Sinaasappel",
+        "Kardemom",
+        "Varkensvlees"
+      ],
+      "substitutions": [
+        "Zure appel",
+        "Kweepeer",
+        "Zure kersen"
+      ],
+      "sourceUrl": "https://velt.nu/plant/rabarber",
+      "curatedRecipes": []
+    },
+    {
+      "id": "spinach",
+      "nl": "Spinazie",
+      "nameEn": "Spinach",
+      "family": "Blad",
+      "color": "#3F6B3A",
+      "accent": "#274E27",
+      "peak": [
+        4,
+        5,
+        6,
+        9,
+        10
+      ],
+      "shoulder": [
+        3,
+        7,
+        8,
+        11
+      ],
+      "blurb": "Nederlandse voorjaarsspinazie is zo mals dat je hem rauw kunt eten.",
+      "storage": "Los blad gewikkeld in een theedoek in een zak — koelkast, maximaal 3 dagen.",
+      "prep": "Grondig wassen. 60 seconden laten slinken in een droge pan en water uitknijpen. Of rauw in salades gebruiken.",
+      "technique": "Toevoegen aan hete pasta van het vuur — de resterende warmte laat hem perfect slinken.",
+      "pairings": [
+        "Nootmuskaat",
+        "Knoflook",
+        "Feta",
+        "Citroen",
+        "Pijnboompitten",
+        "Eieren",
+        "Room"
+      ],
+      "substitutions": [
+        "Snijbiet",
+        "Zuring",
+        "Jonge boerenkool"
+      ],
+      "nutrientsEn": "Iron, potassium, carotene, vitamin E, antioxidants",
+      "sourceUrl": "https://velt.nu/groente/spinazie",
+      "curatedRecipes": []
+    },
+    {
+      "id": "radish",
+      "nl": "Radijs",
+      "nameEn": "Radish",
+      "family": "Wortel",
+      "color": "#E14B5A",
+      "accent": "#8B1F30",
+      "peak": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "shoulder": [
+        3,
+        8,
+        9
+      ],
+      "blurb": "Pittig, knapperig en al binnen een maand na zaai klaar.",
+      "storage": "Loof en wortels scheiden. Wortels in een zak met een vochtig keukenpapier, 1 week houdbaar.",
+      "prep": "Rauw eten met boter en grof zout. Of gehalveerd langzaam roosteren met honing, 20 min.",
+      "technique": "Gooi het loof niet weg — het maakt een heerlijke pittige pesto.",
+      "pairings": [
+        "Boter",
+        "Zeezout",
+        "Bieslook",
+        "Geitenkaas",
+        "Zuurdesembrood",
+        "Ansjovis"
+      ],
+      "substitutions": [
+        "Daikon",
+        "Koolrabi",
+        "Raap"
+      ],
+      "nutrientsEn": "Vitamin C, potassium, calcium, sodium, phosphorus, fibre",
+      "sourceUrl": "https://velt.nu/groente/radijs",
+      "curatedRecipes": []
+    },
+    {
+      "id": "spring-onion",
+      "nl": "Lente-ui",
+      "nameEn": "Spring onion",
+      "family": "Allium",
+      "color": "#8FB861",
+      "accent": "#3E6A2A",
+      "peak": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "shoulder": [
+        3,
+        8,
+        9,
+        10
+      ],
+      "blurb": "Gebruik alles van witte wortel tot groene punt — verschillende texturen, verschillende toepassingen.",
+      "storage": "Wortels bijsnijden, witten rechtop in een glas water op het aanrecht. Tot 5 dagen houdbaar.",
+      "prep": "Witten: bereiden als milde ui. Groenen: rauw als garnering of de laatste 30s van een roerbak.",
+      "technique": "Heel roosteren op een droge pan tot ze blaren vormen — direct rokerige diepte.",
+      "pairings": [
+        "Sojasaus",
+        "Sesam",
+        "Gember",
+        "Eieren",
+        "Gerookte zalm",
+        "Crème fraîche"
+      ],
+      "substitutions": [
+        "Bieslook",
+        "Prei (mild gedeelte)",
+        "Sjalot"
+      ],
+      "curatedRecipes": []
+    },
+    {
+      "id": "sorrel",
+      "nl": "Zuring",
+      "nameEn": "Sorrel",
+      "family": "Blad",
+      "color": "#7CA84E",
+      "accent": "#3E5C24",
+      "peak": [
+        4,
+        5,
+        6
+      ],
+      "shoulder": [
+        3,
+        7,
+        8
+      ],
+      "blurb": "Citroenzure bladeren — favoriet bij plukkers en ook te vinden op goede markten.",
+      "storage": "Vochtig keukenpapier in een zak, koelkast, maximaal 2 dagen — slap snel.",
+      "prep": "Chiffonade rauw door soepen op het laatste moment. Of laten slinken in boter bij vis.",
+      "technique": "Gekookte zuring wordt legergroen en valt uiteen — dat is normaal, het smaakt geweldig.",
+      "pairings": [
+        "Boter",
+        "Room",
+        "Eieren",
+        "Forel",
+        "Aardappel",
+        "Dragon"
+      ],
+      "substitutions": [
+        "Spinazie + citroen",
+        "Waterkers",
+        "Klaverzuring"
+      ],
+      "curatedRecipes": []
+    },
+    {
+      "id": "wild-garlic",
+      "nl": "Daslook",
+      "nameEn": "Wild garlic",
+      "family": "Allium",
+      "color": "#5E8B3A",
+      "accent": "#2E4A1A",
+      "peak": [
+        4,
+        5
+      ],
+      "shoulder": [
+        3,
+        6
+      ],
+      "blurb": "Pluk in vochtig Nederlands loofbos. Slechts weken beschikbaar voordat het bloeit en taai wordt.",
+      "storage": "Vochtig keukenpapier in een zak, koelkast, 3 dagen. Bevriest goed als pesto.",
+      "prep": "Controleer altijd de knoflookgeur vóór consumptie — bladeren lijken sterk op het giftige lelietje-van-dalen (Convallaria majalis). Rauw als chiffonade gebruiken of 10 seconden laten slinken in boter. Knoppen en bloemen zijn ook eetbaar.",
+      "technique": "Mix met olijfolie, zout en pijnboompitten voor een groene pesto die basilicum in het voorjaar overtreft.",
+      "pairings": [
+        "Boter",
+        "Room",
+        "Eieren",
+        "Aardappel",
+        "Zuurdesembrood",
+        "Geitenkaas"
+      ],
+      "substitutions": [
+        "Lente-ui groen + knoflook",
+        "Bieslook + knoflookteen"
+      ],
+      "curatedRecipes": []
+    },
+    {
+      "id": "purple-sprouting-broccoli",
+      "nl": "Paarse broccoli",
+      "nameEn": "Purple sprouting broccoli",
+      "family": "Brassica",
+      "color": "#7B5A8E",
+      "accent": "#3E2A48",
+      "peak": [
+        2,
+        3,
+        4
+      ],
+      "shoulder": [
+        1,
+        5
+      ],
+      "blurb": "De laatste koolsoort voor de zomer — pak hem terwijl je nog kunt.",
+      "storage": "Vochtig keukenpapier in een zak, koelkast, 4 dagen.",
+      "prep": "Houtachtige basis bijsnijden. Stomen of kort blancheren — mals van boven tot onder.",
+      "technique": "Aanbraden in een gloeiend hete pan met olijfolie, afmaken met ansjovisboter.",
+      "pairings": [
+        "Ansjovis",
+        "Chili",
+        "Citroen",
+        "Knoflook",
+        "Amandel",
+        "Parmezaan"
+      ],
+      "substitutions": [
+        "Tenderstem",
+        "Rapini",
+        "Broccoli roosjes"
+      ],
+      "curatedRecipes": []
+    },
+    {
+      "id": "mizuna",
+      "nl": "Mizuna / mosterdsla",
+      "nameEn": "Mizuna",
+      "family": "Blad",
+      "color": "#B8D48A",
+      "accent": "#6A9A3C",
+      "peak": [
+        3,
+        4,
+        5,
+        9,
+        10
+      ],
+      "shoulder": [
+        2,
+        6,
+        8,
+        11
+      ],
+      "blurb": "Japanse mosterdsla met een pittige bite — groeit snel in voor- én najaar.",
+      "storage": "Wassen in koud water, drogen en in een afgesloten bakje in de koelkast bewaren. Tot 1 week houdbaar.",
+      "prep": "Jonge blaadjes zijn het lekkerst rauw. Oudere bladeren kunnen slinken of door een stamppot worden geroerd.",
+      "technique": "Meng jonge blaadjes door salades met een sterkere salade — het pittige accent verbindt de twee.",
+      "pairings": [
+        "Sesam",
+        "Miso",
+        "Citroen",
+        "Sojasaus",
+        "Chili",
+        "Gerookte vis"
+      ],
+      "substitutions": [
+        "Rucola",
+        "Waterkers",
+        "Jonge spinazie"
+      ],
+      "nutrientsEn": "Vitamins A, C, K; calcium, potassium, iron, antioxidants",
+      "sourceUrl": "https://velt.nu/plant/mizuna-mosterblad",
+      "curatedRecipes": []
+    },
+    {
+      "id": "turnip-tops",
+      "nl": "Raapstelen",
+      "nameEn": "Turnip tops",
+      "family": "Blad",
+      "color": "#A8D480",
+      "accent": "#5A8A30",
+      "peak": [
+        4,
+        5
+      ],
+      "shoulder": [
+        2,
+        3
+      ],
+      "blurb": "Jonge raaploofblaadjes — een voorjaarsgroente met een prettig pittige rand, zeldzaam in winkels maar het zoeken waard.",
+      "storage": "In een vochtige doek in de groentelade bewaren, maximaal 3 dagen.",
+      "prep": "Wortels bijsnijden, goed wassen. Stomen, slinken of rauw in salades gebruiken als ze heel jong zijn.",
+      "technique": "Klassieke Pugliese bereiding: mengen met orecchiette, olijfolie en wat chili.",
+      "pairings": [
+        "Olijfolie",
+        "Chili",
+        "Knoflook",
+        "Orecchiette",
+        "Ansjovis",
+        "Citroen"
+      ],
+      "substitutions": [
+        "Raaploof",
+        "Waterkers",
+        "Jonge boerenkool"
+      ],
+      "nutrientsEn": "Vitamins C, betacarotene; calcium, potassium, iron",
+      "sourceUrl": "https://velt.nu/groente/raapstelen",
+      "curatedRecipes": []
+    },
+    {
+      "id": "butterhead-lettuce",
+      "nl": "Botersla",
+      "nameEn": "Butterhead lettuce",
+      "family": "Blad",
+      "color": "#C4D88A",
+      "accent": "#7B9A3D",
+      "peak": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "shoulder": [
+        4,
+        10
+      ],
+      "blurb": "Zachte, zijdeachtige blaadjes — de dagelijkse saladegroente van de Lage Landen.",
+      "storage": "Hele krop, wortel naar beneden in vochtig keukenpapier in een zak, koelkast 4 dagen.",
+      "prep": "Scheuren, niet snijden. Pas aanmaken op het moment van serveren — hij kneust snel.",
+      "technique": "Een heel blad is de beste eetbare lepel — vul met kruidensalade als amuse.",
+      "pairings": [
+        "Walnootolie",
+        "Zachte kruiden",
+        "Appelazijn",
+        "Hardgekookt ei",
+        "Mosterd",
+        "Spekjes"
+      ],
+      "substitutions": [
+        "Little gem",
+        "Eikenbladslaa",
+        "Veldsla"
+      ],
+      "curatedRecipes": []
+    },
+    {
+      "id": "kohlrabi",
+      "nl": "Koolrabi",
+      "nameEn": "Kohlrabi",
+      "family": "Brassica",
+      "color": "#BBD1B8",
+      "accent": "#6F8E6C",
+      "peak": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "shoulder": [
+        4,
+        11
+      ],
+      "blurb": "Knapperig als een appel, mild als broccolistengel. Ondergewaardeerd.",
+      "storage": "Loof bijsnijden, knol in de groentelade bewaren, tot 2 weken.",
+      "prep": "Dikke buitenkant schillen. Rauw julienne snijden voor koolsla, of partjes roosteren met olijfolie.",
+      "technique": "Probeer een rémoulade: rauw gejulienned + mosterdmayonaise + kappertjes.",
+      "pairings": [
+        "Appel",
+        "Mosterd",
+        "Karwij",
+        "Dille",
+        "Zure room",
+        "Gerookte vis"
+      ],
+      "substitutions": [
+        "Jicama",
+        "Daikon",
+        "Raap"
+      ],
+      "nutrientsEn": "Iron, calcium, vitamins B and C",
+      "sourceUrl": "https://velt.nu/groente/koolrabi",
+      "curatedRecipes": []
+    },
+    {
+      "id": "new-potato",
+      "nl": "Krieltjes",
+      "nameEn": "New potato",
+      "family": "Knolgewas",
+      "color": "#E5D7A8",
+      "accent": "#A89154",
+      "peak": [
+        5,
+        6,
+        7
+      ],
+      "shoulder": [
+        4,
+        8
+      ],
+      "blurb": "Dungeschilde voorjaarsaardappelen — zoet, wasachtig en gemaakt om te koken.",
+      "storage": "Papieren zak op een koele, donkere plek. Binnen een week gebruiken — ze bewaren niet als oude aardappelen.",
+      "prep": "Borstelen, niet schillen. Heel koken in goed gezouten water 12 min tot net gaar.",
+      "technique": "Crash hot: koken, licht verpletteren en bakken in boter tot krokant.",
+      "pairings": [
+        "Boter",
+        "Munt",
+        "Dille",
+        "Crème fraîche",
+        "Gerookte haring",
+        "Kappertjes"
+      ],
+      "substitutions": [
+        "Fingerlingaardappelen",
+        "Charlotte",
+        "Vastkokend geel"
+      ],
+      "nutrientsEn": "Vitamins B group, C; potassium, phosphorus, calcium, starch",
+      "curatedRecipes": []
+    },
+    {
+      "id": "watercress",
+      "nl": "Waterkers",
+      "nameEn": "Watercress",
+      "family": "Blad",
+      "color": "#5C8C3E",
+      "accent": "#2E5320",
+      "peak": [
+        4,
+        5,
+        6,
+        9,
+        10
+      ],
+      "shoulder": [
+        3,
+        7,
+        8,
+        11
+      ],
+      "blurb": "Pittig, mineraalrijk en geteeld in speciaal geconstrueerde waterbassins — Nederland heeft slechts één commerciële teler.",
+      "storage": "Stelen onderdompelen in een glas water, zak over de bladeren, koelkast — 4 dagen.",
+      "prep": "Bladeren en malse topjes plukken. Stelen zijn een uitstekende basis voor groene soep.",
+      "technique": "Rauw pureren met bouillon voor een levendige groene soep — alleen verwarmen tot serveertemperatuur.",
+      "pairings": [
+        "Peer",
+        "Blauwschimmelkaas",
+        "Walnoot",
+        "Rosbief",
+        "Sinaasappel",
+        "Gerookte makreel"
+      ],
+      "substitutions": [
+        "Rucola",
+        "Tuinkers",
+        "Mizuna"
+      ],
+      "nutrientsEn": "Vitamins C, A, B1, B11, B6, E, K; calcium, iodine, iron, magnesium, phosphorus, potassium, zinc",
+      "sourceUrl": "https://velt.nu/plant/waterkers",
+      "curatedRecipes": []
+    },
+    {
+      "id": "broad-bean",
+      "nl": "Tuinboon",
+      "nameEn": "Broad bean",
+      "family": "Peulvrucht",
+      "color": "#B6C36B",
+      "accent": "#6B7A26",
+      "peak": [
+        6,
+        7,
+        8
+      ],
+      "shoulder": [
+        5,
+        9
+      ],
+      "blurb": "Elke minuut dubbeldoppen waard. Boterzacht, grassig en van korte duur.",
+      "storage": "In de peul, koelkast, tot 5 dagen. Eenmaal gepeld, blancheren en invriezen.",
+      "prep": "Doppen, 60s blancheren, de lichte schil eraf schuiven om de heldere groene boon te onthullen.",
+      "technique": "Geplet met munt en pecorino op gegrild brood — op zijn Italiaans.",
+      "pairings": [
+        "Munt",
+        "Pecorino",
+        "Citroen",
+        "Prosciutto",
+        "Olijfolie",
+        "Ricotta"
+      ],
+      "substitutions": [
+        "Edamame",
+        "Doperwten",
+        "Limabonen"
+      ],
+      "curatedRecipes": []
+    },
+    {
+      "id": "pea",
+      "nl": "Doperwten",
+      "nameEn": "Garden peas",
+      "family": "Peulvrucht",
+      "color": "#82B25A",
+      "accent": "#3F6E22",
+      "peak": [
+        5,
+        6,
+        7
+      ],
+      "shoulder": [
+        4,
+        8
+      ],
+      "blurb": "Van peul tot pan in minder dan een uur — dat is het doel.",
+      "storage": "Zo snel mogelijk doppen — suikers worden snel zetmeel. Gepelde erwten vriezen prachtig.",
+      "prep": "Doppen en 2 min blancheren. Of rauw rechtstreeks uit de peul, net geplukt.",
+      "technique": "À la française: smoren met gesneden sla en een klontje boter.",
+      "pairings": [
+        "Munt",
+        "Boter",
+        "Sla",
+        "Hamschenkel",
+        "Parmezaan",
+        "Dragon"
+      ],
+      "substitutions": [
+        "Diepvriesdoperwten",
+        "Suikererwten",
+        "Peulerwten"
+      ],
+      "nutrientsEn": "Vitamins B1, B2; iron, fibre",
+      "sourceUrl": "https://velt.nu/groente/doperwt",
+      "curatedRecipes": []
+    },
+    {
+      "id": "sugar-snap",
+      "nl": "Sluimererwt / peulerwt",
+      "nameEn": "Sugar snap / mangetout",
+      "family": "Peulvrucht",
+      "color": "#90C85A",
+      "accent": "#4A7E24",
+      "peak": [
+        5,
+        6,
+        7
+      ],
+      "shoulder": [
+        4,
+        8
+      ],
+      "blurb": "Eet de hele peul — het breken is het punt. Jonge peulen plukken of ze worden taai.",
+      "storage": "Koelkast in een open zak, 3–5 dagen. Zo snel mogelijk eten.",
+      "prep": "Topje en staartje eraf, draadje eraf trekken. Stomen, roerbakken of rauw eten — 2 minuten is genoeg.",
+      "technique": "Op hoog vuur roerbakken voor maximaal 2 minuten — ze moeten nog knappen.",
+      "pairings": [
+        "Sesam",
+        "Gember",
+        "Sojasaus",
+        "Munt",
+        "Boter",
+        "Chili"
+      ],
+      "substitutions": [
+        "Doperwten",
+        "Tuinbonen",
+        "Sperziebonen"
+      ],
+      "nutrientsEn": "Vitamin C, protein, fibre",
+      "sourceUrl": "https://velt.nu/plant/sluimererwt-peulerwt",
+      "curatedRecipes": []
+    },
+    {
+      "id": "courgette",
+      "nl": "Courgette",
+      "nameEn": "Courgette",
+      "family": "Pompoen",
+      "color": "#507838",
+      "accent": "#284A18",
+      "peak": [
+        7,
+        8,
+        9
+      ],
+      "shoulder": [
+        6,
+        10
+      ],
+      "blurb": "Het werkpaard van de zomerkeuken — binnenkort kun je ze niet snel genoeg kwijt.",
+      "storage": "Groentelade, droog, tot een week. Niet wassen tot gebruik.",
+      "prep": "Gesneden plakken 10 min zouten, droogdeppen, daarna heet en snel bakken.",
+      "technique": "Rauw in linten schaven met een dunschiller, aanmaken met citroen — geen koken nodig.",
+      "pairings": [
+        "Munt",
+        "Basilicum",
+        "Citroen",
+        "Geitenkaas",
+        "Ansjovis",
+        "Pijnboompitten"
+      ],
+      "substitutions": [
+        "Gele courgette",
+        "Pattypan pompoen",
+        "Aubergine"
+      ],
+      "nutrientsEn": "Potassium, phosphorus, calcium; vitamins (95% water, very low calorie)",
+      "sourceUrl": "https://velt.nu/groente/courgette",
+      "curatedRecipes": []
+    },
+    {
+      "id": "cucumber",
+      "nl": "Komkommer",
+      "nameEn": "Cucumber",
+      "family": "Pompoen",
+      "color": "#8FC87A",
+      "accent": "#3A7040",
+      "peak": [
+        7,
+        8,
+        9
+      ],
+      "shoulder": [
+        6
+      ],
+      "blurb": "Een echte zomergroente — het lekkerst op de dag dat je hem koopt.",
+      "storage": "Niet kouder dan 13°C bewaren. Op een koele, donkere plek tot 10 dagen houdbaar.",
+      "prep": "Wassen en snijden — schillen is niet nodig tenzij de schil gewaxed is. Gesneden plakken zouten om vocht te trekken.",
+      "technique": "Plakken 15 min zouten en afspoelen — verwijdert bitterheid en voorkomt dat salades waterig worden.",
+      "pairings": [
+        "Dille",
+        "Yoghurt",
+        "Knoflook",
+        "Munt",
+        "Azijn",
+        "Feta",
+        "Zalm"
+      ],
+      "substitutions": [
+        "Courgette",
+        "Venkel (rauw)",
+        "Bleekselderij"
+      ],
+      "nutrientsEn": "Potassium (94% water, very low calorie)",
+      "sourceUrl": "https://velt.nu/groente/komkommer",
+      "curatedRecipes": []
+    },
+    {
+      "id": "green-beans",
+      "nl": "Prinsessenbonen / sperziebonen",
+      "nameEn": "Green beans",
+      "family": "Peulvrucht",
+      "color": "#74B058",
+      "accent": "#3A6828",
+      "peak": [
+        7,
+        8,
+        9
+      ],
+      "shoulder": [
+        6,
+        10
+      ],
+      "blurb": "Zoet en knapperig als ze vers geplukt zijn — een wereld van verschil met de blikversie.",
+      "storage": "In een zak met ventilatieopeningen, koele plek of groentelade, 3–4 dagen.",
+      "prep": "Beide uiteinden afbreken of snijden. 3 minuten blancheren in goed gezouten water, dan koud afspoelen om de kleur te bewaren.",
+      "technique": "Altijd blancheren voor gebruik — rauw kunnen ze bij gevoelige magen lichte klachten geven; 3 minuten in gezouten kokend water is voldoende.",
+      "pairings": [
+        "Boter",
+        "Sjalot",
+        "Knoflook",
+        "Amandelen",
+        "Tomaat",
+        "Ansjovis",
+        "Parmezaan"
+      ],
+      "substitutions": [
+        "Snijbonen",
+        "Peulerwten",
+        "Tuinbonen"
+      ],
+      "nutrientsEn": "Vitamins A, C; potassium, iron, calcium",
+      "sourceUrl": "https://velt.nu/groente/prinsessenbonen",
+      "curatedRecipes": []
+    },
+    {
+      "id": "runner-beans",
+      "nl": "Snijbonen",
+      "nameEn": "Runner beans",
+      "family": "Peulvrucht",
+      "color": "#58A040",
+      "accent": "#2A5C18",
+      "peak": [
+        7,
+        8,
+        9,
+        10
+      ],
+      "shoulder": [
+        6
+      ],
+      "blurb": "Plat, stevig vlees en buiten stamppotseizoen onderbenut. Klein plukken of ze worden dradig.",
+      "storage": "In een geventileerde zak in de koelkast, 2 dagen. Op dezelfde dag het beste gebruiken.",
+      "prep": "Wassen, topjes afbreken en het zijdraad verwijderen. Diagonaal snijden of raspen.",
+      "technique": "Fijn raspen en langzaam smoren in boter met ui — geeft een zijdeachtig, zoet resultaat.",
+      "pairings": [
+        "Tomaat",
+        "Spek",
+        "Knoflook",
+        "Boter",
+        "Ui",
+        "Kaassaus"
+      ],
+      "substitutions": [
+        "Sperziebonen",
+        "Tuinbonen",
+        "Peulerwten"
+      ],
+      "nutrientsEn": "Vitamins A, C; fibre, iron, calcium, phosphorus",
+      "sourceUrl": "https://velt.nu/groente/snijbonen",
+      "curatedRecipes": []
+    },
+    {
+      "id": "corn",
+      "nl": "Suikermaïs",
+      "nameEn": "Sweetcorn",
+      "family": "Stengel",
+      "color": "#F0D060",
+      "accent": "#C8900A",
+      "peak": [
+        8,
+        9
+      ],
+      "shoulder": [
+        7
+      ],
+      "blurb": "Het zoetst rechtstreeks van de stengel — suikers worden al snel na de oogst zetmeel; koop op een boerenmarkt en eet dezelfde dag.",
+      "storage": "Op dezelfde dag eten als mogelijk. In de schil bewaren in de koelkast tot 3 dagen.",
+      "prep": "Buitenste schillen verwijderen, zijde eraf halen. 7–10 min koken in ruim gezouten kokend water, of grillen in de schil boven hete kolen 15–20 min.",
+      "technique": "Grillen in de schil boven hete kolen — de stoom binnenin karameliseert de korrels.",
+      "pairings": [
+        "Boter",
+        "Chili",
+        "Limoen",
+        "Gerookt paprika",
+        "Feta",
+        "Koriander"
+      ],
+      "substitutions": [
+        "Diepvriesmaïs",
+        "Hominy",
+        "Tuinbonen"
+      ],
+      "nutrientsEn": "Potassium, phosphorus, magnesium; vitamins B1 (thiamine), B9 (folate)",
+      "sourceUrl": "https://velt.nu/groente/mais",
+      "curatedRecipes": []
+    },
+    {
+      "id": "celery",
+      "nl": "Bleekselderij",
+      "nameEn": "Celery",
+      "family": "Stengel",
+      "color": "#C8E4B0",
+      "accent": "#6A9A4C",
+      "peak": [
+        8,
+        9,
+        10,
+        11
+      ],
+      "shoulder": [
+        7
+      ],
+      "blurb": "De ruggengraat van een goede bouillon — maar ook geweldig rauw met blauwkaas dip.",
+      "storage": "Ongewassen, gewikkeld in folie of een vochtige doek in de koelkast. Tot 1 week houdbaar.",
+      "prep": "Draden van de buitenste stelen verwijderen met een dunschiller. Binnenstelen hebben geen voorbereiding nodig. Gebruik de bladeren als kruid.",
+      "technique": "De heilige drievuldigheid (selderij, wortel, ui) zweten als basis voor elke smoor of soep.",
+      "pairings": [
+        "Blauwschimmelkaas",
+        "Appel",
+        "Walnoot",
+        "Ansjovis",
+        "Citroen",
+        "Bouillon",
+        "Ui"
+      ],
+      "substitutions": [
+        "Venkel",
+        "Knolselder",
+        "Lavas"
+      ],
+      "nutrientsEn": "Vitamins B, C; iron, fibre, minerals; naturally diuretic",
+      "sourceUrl": "https://velt.nu/groente/bleekselderij",
+      "curatedRecipes": []
+    },
+    {
+      "id": "fennel",
+      "nl": "Venkel",
+      "nameEn": "Fennel",
+      "family": "Stengel",
+      "color": "#C8E0A8",
+      "accent": "#6A9050",
+      "peak": [
+        7,
+        8,
+        9
+      ],
+      "shoulder": [
+        6,
+        10,
+        11
+      ],
+      "blurb": "Anijszoet rauw, zacht en zijdeachtig geroosterd. Het loof is een gratis kruid.",
+      "storage": "Koelkast in de groentelade, enkele dagen. Het loof wordt snel slap — eerst gebruiken.",
+      "prep": "Bovenstelen bijsnijden (loof bewaren), door de wortel halveren, de taaie kern verwijderen, daarna snijden of kwarten.",
+      "technique": "Gehalveerde partjes snijkant naar beneden roosteren met olijfolie tot gekarameliseerd — de zoetheid transformeert.",
+      "pairings": [
+        "Sinaasappel",
+        "Citroen",
+        "Zalm",
+        "Olijfolie",
+        "Parmezaan",
+        "Kappertjes",
+        "Anijs"
+      ],
+      "substitutions": [
+        "Bleekselderij",
+        "Knolselder (voor roosteren)",
+        "Andijvie"
+      ],
+      "nutrientsEn": "Vitamin C, iron, fibre; low calorie; anethole aids digestion",
+      "sourceUrl": "https://velt.nu/groente/venkel",
+      "curatedRecipes": []
+    },
+    {
+      "id": "bell-pepper",
+      "nl": "Paprika",
+      "nameEn": "Bell pepper",
+      "family": "Vruchtgroente",
+      "color": "#E86040",
+      "accent": "#A02010",
+      "peak": [
+        7,
+        8,
+        9
+      ],
+      "shoulder": [
+        6,
+        10
+      ],
+      "blurb": "Rode paprika's zijn simpelweg volledig rijpe groene — zoeter, rijker en beter geroosterd.",
+      "storage": "Niet kouder dan 10°C bewaren. Op een koele plek tot 7 dagen houdbaar.",
+      "prep": "Halveren, zaadjes en wit merg verwijderen. Heel roosteren onder de grill tot zwartgeblakerd, daarna schillen voor de beste smaak.",
+      "technique": "Roosteren en schillen — het verkoolde, zoete vruchtvlees is een ingrediënt op zichzelf.",
+      "pairings": [
+        "Olijfolie",
+        "Knoflook",
+        "Kappertjes",
+        "Ansjovisjes",
+        "Feta",
+        "Basilicum",
+        "Eieren"
+      ],
+      "substitutions": [
+        "Tomaat (voor saus)",
+        "Piment",
+        "Geroosterde aubergine"
+      ],
+      "nutrientsEn": "Carotenoids, vitamins A, C; fibre, iron; red peppers are richest in nutrients",
+      "sourceUrl": "https://velt.nu/groente/paprika",
+      "curatedRecipes": []
+    },
+    {
+      "id": "tomato",
+      "nl": "Tomaat",
+      "nameEn": "Tomato",
+      "family": "Vruchtgroente",
+      "color": "#D04030",
+      "accent": "#880C0C",
+      "peak": [
+        7,
+        8,
+        9
+      ],
+      "shoulder": [
+        6,
+        10
+      ],
+      "blurb": "Nederlandse kastomaten zijn wereldklasse — maar een veldtomaat in augustus is iets anders.",
+      "storage": "Nooit in de koelkast — onder 12°C gaan aroma's onomkeerbaar verloren. Bewaar op kamertemperatuur (12–18°C). Rijpt verder op het aanrecht.",
+      "prep": "Snijden en 10 minuten voor het serveren kruiden met goed zout — zo komt de smaak vrij.",
+      "technique": "Zouten en rusten voor het aanmaken — tomaten hebben tijd nodig om zichzelf te uiten.",
+      "pairings": [
+        "Basilicum",
+        "Olijfolie",
+        "Mozzarella",
+        "Kappertjes",
+        "Ansjovis",
+        "Knoflook",
+        "Balsamico"
+      ],
+      "substitutions": [
+        "Geroosterde paprika",
+        "Zongedroogde tomaten",
+        "Tomatillo"
+      ],
+      "nutrientsEn": "Vitamins A, B9, C; carotene, lycopene (antioxidant); the riper, the more lycopene",
+      "sourceUrl": "https://velt.nu/groente/tomaten",
+      "curatedRecipes": []
+    },
+    {
+      "id": "aubergine",
+      "nl": "Aubergine",
+      "nameEn": "Aubergine",
+      "family": "Vruchtgroente",
+      "color": "#5A2A6A",
+      "accent": "#300A40",
+      "peak": [
+        8,
+        9,
+        10
+      ],
+      "shoulder": [
+        7
+      ],
+      "blurb": "Sponsachtig rauw, zijdeachtig gekookt. Hoge hitte nodig om ergens naar te smaken.",
+      "storage": "Niet in de koelkast — maximaal 10–13°C. Tot 10 dagen houdbaar op een geventileerde, licht vochtige plek.",
+      "prep": "Gesneden rondjes zouten om bitterheid eruit te trekken en olieopname te verminderen. Droogdeppen voor het bakken.",
+      "technique": "Direct boven een gasvlam verbranden tot hij volledig instort — het vruchtvlees binnenin wordt rokerig en zijdeachtig.",
+      "pairings": [
+        "Knoflook",
+        "Tahini",
+        "Tomaat",
+        "Munt",
+        "Yoghurt",
+        "Granaatappel",
+        "Specerijen"
+      ],
+      "substitutions": [
+        "Courgette",
+        "Portobello champignon",
+        "Gele courgette"
+      ],
+      "nutrientsEn": "Fibre source; low in vitamins but absorbs flavour-carrying fats well",
+      "sourceUrl": "https://velt.nu/groente/aubergine",
+      "curatedRecipes": []
+    },
+    {
+      "id": "beetroot",
+      "nl": "Rode biet",
+      "nameEn": "Beetroot",
+      "family": "Wortel",
+      "color": "#6E1F3A",
+      "accent": "#3A0A1C",
+      "peak": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "shoulder": [
+        5,
+        12
+      ],
+      "blurb": "De eerste jonge bieten komen in juni — zoet, aards en onovertroffen geroosterd.",
+      "storage": "Loof bijsnijden (apart koken), ongewassen knollen in groentelade, tot 2 weken.",
+      "prep": "In folie wikkelen met olijfolie en zout, 60–75 min roosteren op 180°C. Schillen glijden er warm af.",
+      "technique": "Heel zoutbakken voor de diepste smaak — begraven in grof zout en roosteren.",
+      "pairings": [
+        "Geitenkaas",
+        "Walnoot",
+        "Sinaasappel",
+        "Dille",
+        "Mierikswortel",
+        "Gerookte vis"
+      ],
+      "substitutions": [
+        "Gouden biet",
+        "Wortel (anders maar aards)"
+      ],
+      "nutrientsEn": "Potassium, fibre; betacyanin (red pigment); nitrate-rich; beet greens have vitamins A, C and iron",
+      "sourceUrl": "https://velt.nu/groente/rode-biet",
+      "curatedRecipes": [
+        {
+          "title": "Geroosterde rode biet met geitenkaas en walnoot",
+          "url": "https://www.leukerecepten.nl/recepten/geroosterde-rode-biet-met-geitenkaas/",
+          "source": "Leuke Recepten",
+          "why": "Roosteren concentreert de natuurlijke suikers van zomerbieten; de pittigheid van geitenkaas en de knapperigheid van walnoot maken er met minimale moeite een compleet gerecht van.",
+          "difficulty": "easy",
+          "timeMinutes": 75
+        },
+        {
+          "title": "Bietensoep met mierikswortel",
+          "url": "https://www.24kitchen.nl/recepten/bietensoep-met-mierikswortel",
+          "source": "24Kitchen",
+          "why": "Oktoberbieten zijn volledig zoet en aards — een warme soep met scherpe mierikswortel benadrukt beide kwaliteiten en warmt je door de overgang naar de herfst.",
+          "difficulty": "easy",
+          "timeMinutes": 35
+        },
+        {
+          "title": "Roasted beet & smoked mackerel salad",
+          "url": "https://www.bbcgoodfood.com/recipes/roasted-beetroot-smoked-mackerel-salad",
+          "source": "BBC Good Food",
+          "why": "Gerookte vis en aardse biet is een klassieke Nederlandse voorraadkast-combinatie — de vettigheid van makreel balanceert de zoetheid van de biet perfect.",
+          "difficulty": "easy",
+          "timeMinutes": 80
+        },
+        {
+          "title": "Bieten carpaccio met dille en kappertjes",
+          "url": "https://www.wateetons.nl/recepten/bieten-carpaccio/",
+          "source": "Wat Eet Ons",
+          "why": "Rauwe jonge bieten (juni–juli) zijn mals genoeg om papierdun te snijden — deze bereidingswijze zonder koken toont hun heldere kleur en knapperige textuur.",
+          "difficulty": "easy",
+          "timeMinutes": 15
+        },
+        {
+          "title": "Gevulde bietjes met kruidenricotta",
+          "url": "https://www.njam.tv/recepten/gevulde-bietjes-met-kruidenricotta",
+          "source": "njam!",
+          "why": "Kleine herfstbieten uithollen en vullen maakt een opvallend voorgerecht; de kruidenricotta koelt de zoetheid zonder hem te maskeren.",
+          "difficulty": "medium",
+          "timeMinutes": 90
+        }
+      ]
+    },
+    {
+      "id": "artichoke",
+      "nl": "Artisjok",
+      "nameEn": "Artichoke",
+      "family": "Stengel",
+      "color": "#8A9A60",
+      "accent": "#4A5A28",
+      "peak": [
+        7,
+        8,
+        9,
+        10
+      ],
+      "shoulder": [
+        6
+      ],
+      "blurb": "De bloemknop die je blad voor blad eet. Omslachtig, theatraal en elke minuut waard.",
+      "storage": "In een vochtige doek in de koelkast. Tot 5 dagen. Niet bewaren als gekookt — direct gebruiken.",
+      "prep": "Buitenste bladeren verwijderen en de bovenkant bijsnijden. 30–50 min koken in gezouten water met citroen. Bladeren één voor één losmaken en het vruchtvlees met je tanden afschrapen.",
+      "technique": "Meteen citroensap op alle gesneden oppervlakken — ze bruinen sneller dan een appel.",
+      "pairings": [
+        "Citroen",
+        "Knoflook",
+        "Olijfolie",
+        "Gesmolten boter",
+        "Vinaigrette",
+        "Parmezaan"
+      ],
+      "substitutions": [
+        "Artisjokkharten (pot)",
+        "Schorseneren",
+        "Aardpeer"
+      ],
+      "nutrientsEn": "Calcium, iron, vitamin C; phenols including cynarine (blocks sweet receptors — water tastes sweet after eating artichoke)",
+      "sourceUrl": "https://velt.nu/groente/artisjok",
+      "curatedRecipes": []
+    },
+    {
+      "id": "chard",
+      "nl": "Warmoes / snijbiet",
+      "nameEn": "Chard",
+      "family": "Blad",
+      "color": "#3A7840",
+      "accent": "#1A4820",
+      "peak": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "shoulder": [
+        5,
+        11,
+        12
+      ],
+      "blurb": "De miskende broer van spinazie — milder, steviger en de stelen zijn een bonusingrediënt.",
+      "storage": "In een geventileerde plastic zak in de groentelade, 4–5 dagen.",
+      "prep": "Stelen van de bladeren scheiden — ze hebben verschillende kooktijden. Beide goed wassen.",
+      "technique": "Eerst de stelen koken (3 min) en dan de bladeren toevoegen (1 min) — ze zijn twee groenten in één.",
+      "pairings": [
+        "Knoflook",
+        "Olijfolie",
+        "Citroen",
+        "Nootmuskaat",
+        "Room",
+        "Gruyère",
+        "Chili"
+      ],
+      "substitutions": [
+        "Spinazie",
+        "Boerenkool",
+        "Bietenloof"
+      ],
+      "nutrientsEn": "Vitamin C, iron; high nitrate (like spinach — don't reheat)",
+      "sourceUrl": "https://velt.nu/groente/warmoes",
+      "curatedRecipes": []
+    },
+    {
+      "id": "broccoli",
+      "nl": "Broccoli",
+      "nameEn": "Broccoli",
+      "family": "Brassica",
+      "color": "#5A7A40",
+      "accent": "#244015",
+      "peak": [
+        7,
+        8,
+        9,
+        10
+      ],
+      "shoulder": [
+        6,
+        11
+      ],
+      "blurb": "De zomerse tegenhanger van paarse broccoli — dichte koppen die hoge hitte belonen. Gooi de stengel niet weg: dat is het zoetste deel.",
+      "storage": "Droog bewaren in de groentelade, roosjes naar beneden. Binnen 3–4 dagen gebruiken. Vergeling betekent dat suikers zetmeel worden — direct gebruiken.",
+      "prep": "In gelijkmatige roosjes snijden. De stengel schillen en snijden — hij gaart even snel als de roosjes eenmaal gesneden. Kort weken in koud gezouten water als rauw gebruikt.",
+      "technique": "2 minuten blancheren en dan hard bakken in een zeer hete pan met olijfolie en knoflook — verkoolde randen transformeren de smaak.",
+      "pairings": [
+        "Knoflook",
+        "Ansjovis",
+        "Citroen",
+        "Chili",
+        "Parmezaan",
+        "Oestersaus",
+        "Sesam",
+        "Blauwschimmelkaas"
+      ],
+      "substitutions": [
+        "Paarse broccoli",
+        "Bloemkool",
+        "Tenderstem",
+        "Romanesco"
+      ],
+      "nutrientsEn": "Vitamins C and K, calcium, iron, betacarotene, folate; one of the most nutrient-dense brassicas",
+      "sourceUrl": "https://velt.nu/groente/broccoli",
+      "curatedRecipes": []
+    },
+    {
+      "id": "cauliflower",
+      "nl": "Bloemkool",
+      "nameEn": "Cauliflower",
+      "family": "Brassica",
+      "color": "#F0EDD8",
+      "accent": "#B8A87A",
+      "peak": [
+        7,
+        8,
+        9,
+        10
+      ],
+      "shoulder": [
+        3,
+        4,
+        5,
+        6,
+        11
+      ],
+      "blurb": "Zomerbloemkool uit Nederlandse bodem is een heel ander beest dan geïmporteerd — dicht, zoet, zonder het zwavel van te lang gekookte kantinebloemkool.",
+      "storage": "Heel bewaren in de groentelade met bladeren eraan om de kool te beschermen. Binnen 3–4 dagen gebruiken. Eenmaal gesneden, strak inpakken — brunt snel.",
+      "prep": "Buitenste bladeren verwijderen, in roosjes breken of heel houden voor roosteren. 10 minuten weken in gezouten water om insecten weg te jagen.",
+      "technique": "Roosteren op 220°C in een enkele laag met veel olie — de hoge hitte karameliseert de gesneden oppervlakken en verwijdert alle bitterheid.",
+      "pairings": [
+        "Bruine boter",
+        "Tahini",
+        "Curry",
+        "Kappertjes",
+        "Parmezaan",
+        "Ansjovis",
+        "Cheddar",
+        "Koriander"
+      ],
+      "substitutions": [
+        "Broccoli",
+        "Romanesco",
+        "Koolrabi (rauw)"
+      ],
+      "nutrientsEn": "Vitamins C and K, potassium, folate, fibre; lighter to digest than most brassicas",
+      "sourceUrl": "https://velt.nu/groente/bloemkool",
+      "curatedRecipes": []
+    },
+    {
+      "id": "leaf-celery",
+      "nl": "Groene selderij / snijselderij",
+      "nameEn": "Leaf celery",
+      "family": "Kruid",
+      "color": "#B0CC80",
+      "accent": "#507A28",
+      "peak": [
+        7,
+        8,
+        9,
+        10
+      ],
+      "shoulder": [
+        4,
+        5,
+        6,
+        11,
+        12,
+        1,
+        2,
+        3
+      ],
+      "blurb": "De aromatische krachtpatser in het zicht — Nederlandse soep zou onherkenbaar zijn zonder hem. Meer smaak per gram dan elke andere selderij.",
+      "storage": "In een vochtige doek wikkelen of stelen in een glas water in de koelkast zetten. Binnen een week gebruiken. Hakken en invriezen voor langdurig gebruik.",
+      "prep": "Goed wassen — de stelen houden grond vast. Bladeren als kruid gebruiken (chiffonade of heel); dunne stelen in soepen en bouillons snijden.",
+      "technique": "Aan het begin toevoegen aan soepen en bouillons samen met de ui en wortel — geeft een diepte die geen enkel ander kruid kan vervangen.",
+      "pairings": [
+        "Ui",
+        "Wortel",
+        "Peterselie",
+        "Bouillon",
+        "Tomaat",
+        "Aardappel",
+        "Gerookte vis",
+        "Boter"
+      ],
+      "substitutions": [
+        "Selderiebladeren",
+        "Lavas",
+        "Peterselie (milder)"
+      ],
+      "nutrientsEn": "Potassium, vitamin A, B vitamins; diuretic; very low calorie",
+      "sourceUrl": "https://velt.nu/groente/groene-selderij",
+      "curatedRecipes": []
+    },
+    {
+      "id": "groenlof",
+      "nl": "Groenlof / suikerbrood",
+      "nameEn": "Green chicory",
+      "family": "Blad",
+      "color": "#C8E090",
+      "accent": "#6A9030",
+      "peak": [
+        9,
+        10,
+        11
+      ],
+      "shoulder": [
+        8,
+        12
+      ],
+      "blurb": "Minder bitter dan witlof, robuuster dan andijvie — een vergeten herfstgroente die van september tot en met november op de markt is.",
+      "storage": "In de groentelade bewaren, afgedekt, tot 1 week. Niet wassen tot nodig.",
+      "prep": "Buitenste bladeren verwijderen. Binnenste bladeren rauw in salades gebruiken of hele koppen smoren in boter en bouillon.",
+      "technique": "Gehalveerde koppen snijkant naar beneden smoren in boter — de zachte hitte tempert de bitterheid en brengt de zoetheid naar voren.",
+      "pairings": [
+        "Ham",
+        "Bechamelsaus",
+        "Blauwschimmelkaas",
+        "Walnoot",
+        "Mosterd",
+        "Room",
+        "Citroen"
+      ],
+      "substitutions": [
+        "Witlof",
+        "Andijvie",
+        "Radicchio"
+      ],
+      "nutrientsEn": "Low calorie; calcium, iron; bitters beneficial for liver and digestion; vitamins B1, B2, C",
+      "sourceUrl": "https://velt.nu/groente/groenlof",
+      "curatedRecipes": []
+    },
+    {
+      "id": "pumpkin",
+      "nl": "Pompoen",
+      "nameEn": "Pumpkin / squash",
+      "family": "Pompoen",
+      "color": "#D07828",
+      "accent": "#904010",
+      "peak": [
+        9,
+        10
+      ],
+      "shoulder": [
+        8,
+        11
+      ],
+      "blurb": "Oogsten in september voor de eerste vorst — wintervariëteiten bewaren maandenlang.",
+      "storage": "Heel: ophangen in een net of op krant op een koele, luchtige, vorstvrije plek. Tot 3–6 maanden voor de meeste wintervariëteiten. Gesneden: inpakken in vershoudfolie, koelkast 2–5 dagen.",
+      "prep": "Snijden met een zwaar mes, zaden eruit scheppen (apart roosteren). Geen schillen nodig voor roosteren — schil wordt knapperig.",
+      "technique": "Snijkant naar beneden roosteren — de gekarameliseerde bodem voegt zoetheid toe die je op geen andere manier krijgt.",
+      "pairings": [
+        "Salie",
+        "Chili",
+        "Gember",
+        "Room",
+        "Blauwschimmelkaas",
+        "Nootmuskaat",
+        "Honing"
+      ],
+      "substitutions": [
+        "Butternut squash",
+        "Zoete aardappel",
+        "Knolselder"
+      ],
+      "nutrientsEn": "Potassium, magnesium; seeds rich in healthy fats and protein",
+      "sourceUrl": "https://velt.nu/groente/pompoen",
+      "curatedRecipes": []
+    },
+    {
+      "id": "kale",
+      "nl": "Boerenkool",
+      "nameEn": "Kale",
+      "family": "Brassica",
+      "color": "#3A5828",
+      "accent": "#1A3010",
+      "peak": [
+        10,
+        11,
+        12,
+        1,
+        2,
+        3
+      ],
+      "shoulder": [
+        9
+      ],
+      "blurb": "Wordt zoeter na vorst — zijn bitterheid is eigenlijk een kenmerk, geen fout.",
+      "storage": "In de tuin tot nodig. Gekocht: koele, donkere, droge plek. Koelkast in een zak.",
+      "prep": "De taaie middennerf verwijderen, daarna de bladeren snijden of scheuren. Grondig wassen — insecten verstoppen zich in de krullen.",
+      "technique": "Rauwe boerenkool 2 minuten masseren met zout en olijfolie — hij slaat volledig neer en wordt zoeter.",
+      "pairings": [
+        "Aardappel",
+        "Worst",
+        "Knoflook",
+        "Olijfolie",
+        "Citroen",
+        "Tahini",
+        "Spek"
+      ],
+      "substitutions": [
+        "Palmkool",
+        "Savooikool",
+        "Spinazie"
+      ],
+      "nutrientsEn": "Extremely rich in vitamins and minerals; gets sweeter after frost (starch → sugar)",
+      "sourceUrl": "https://velt.nu/groente/boerenkool",
+      "curatedRecipes": []
+    },
+    {
+      "id": "cavolo-nero",
+      "nl": "Palmkool / zwarte kool",
+      "nameEn": "Cavolo nero",
+      "family": "Brassica",
+      "color": "#2A4020",
+      "accent": "#0E2008",
+      "peak": [
+        9,
+        10,
+        11,
+        12,
+        1,
+        2
+      ],
+      "shoulder": [
+        8
+      ],
+      "blurb": "Verfijnder dan boerenkool — de Toscaanse zwarte kool met een subtiel zoete, bijna rokerige diepte.",
+      "storage": "In een vochtige doek of papier in de koelkast wikkelen. 3–4 dagen.",
+      "prep": "De centrale nerf verwijderen, daarna scheuren of snijden. Uitstekend in soepen, pesto en stamppot.",
+      "technique": "Het sleutelingrediënt van Ribollita — in de laatste 10 minuten aan de soep toevoegen zodat hij levendig blijft.",
+      "pairings": [
+        "Cannellinibonen",
+        "Olijfolie",
+        "Knoflook",
+        "Chili",
+        "Parmezaan",
+        "Citroen"
+      ],
+      "substitutions": [
+        "Boerenkool",
+        "Savooikool",
+        "Snijbiet"
+      ],
+      "nutrientsEn": "Calcium, vitamin C; vitamins A and K; iron, copper, phosphorus, folate, potassium",
+      "sourceUrl": "https://velt.nu/plant/palmkool",
+      "curatedRecipes": []
+    },
+    {
+      "id": "celeriac",
+      "nl": "Knolselder",
+      "nameEn": "Celeriac",
+      "family": "Wortel",
+      "color": "#D4C898",
+      "accent": "#887A48",
+      "peak": [
+        9,
+        10,
+        11,
+        12,
+        1,
+        2,
+        3
+      ],
+      "shoulder": [
+        8
+      ],
+      "blurb": "De lelijke wortel met een zachte, complexe smaak — selderij en peterselie en iets aards.",
+      "storage": "Koel en droog, tot 3–4 maanden. In een kelder met vochtig zand. Beschermen tegen uitdrogen.",
+      "prep": "Goed borstelen voor schillen. Royaal schillen — de vezelige kanalen bij de basis moeten weg. Besprenkelen met citroen om bruinen te voorkomen.",
+      "technique": "Knolselder rémoulade: rauw juliennen, aanmaken met mosterdmayonaise — Frans bistro klassiek.",
+      "pairings": [
+        "Appel",
+        "Mosterd",
+        "Citroen",
+        "Walnoot",
+        "Truffel",
+        "Room",
+        "Ham"
+      ],
+      "substitutions": [
+        "Bleekselderij + aardappel",
+        "Pastinaak",
+        "Raap"
+      ],
+      "nutrientsEn": "Iron, vitamins B, C, K; calcium, potassium; low calorie",
+      "sourceUrl": "https://velt.nu/groente/knolselder",
+      "curatedRecipes": []
+    },
+    {
+      "id": "parsnip",
+      "nl": "Pastinaak",
+      "nameEn": "Parsnip",
+      "family": "Wortel",
+      "color": "#E8D8A0",
+      "accent": "#A08040",
+      "peak": [
+        11,
+        12,
+        1,
+        2
+      ],
+      "shoulder": [
+        10,
+        3
+      ],
+      "blurb": "Vorstzoet en aromatisch — het best na november, de vergeten wortel die een comeback verdient.",
+      "storage": "In de koelkast bewaren in een geperforeerde zak, tot 3–4 dagen. In de grond bewaren tot nodig als je zelf kweekt.",
+      "prep": "Licht schillen. In de lengte kwarten en de houtachtige kern verwijderen als groot.",
+      "technique": "Roosteren in honing en boter tot de randen karameliseren — eenvoudig en buitengewoon.",
+      "pairings": [
+        "Honing",
+        "Tijm",
+        "Room",
+        "Appel",
+        "Gember",
+        "Boter",
+        "Nootmuskaat"
+      ],
+      "substitutions": [
+        "Wortel",
+        "Knolselder",
+        "Raap"
+      ],
+      "nutrientsEn": "Vitamin C, calcium, iron; inulin (prebiotic, suitable for diabetics)",
+      "sourceUrl": "https://velt.nu/groente/pastinaak",
+      "curatedRecipes": []
+    },
+    {
+      "id": "carrot",
+      "nl": "Wortelen / peen",
+      "nameEn": "Carrot",
+      "family": "Wortel",
+      "color": "#E87028",
+      "accent": "#A03808",
+      "peak": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "shoulder": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "blurb": "Het hele jaar door beschikbaar maar piekzoet na de zomer — de ruggengraat van de Nederlandse keuken.",
+      "storage": "Koel, vochtig, goed geventileerd. Maandenlang bewaren in een kelder. Koelkast in een zak na aankoop.",
+      "prep": "Schrapen in plaats van schillen — de meeste voedingsstoffen zitten net onder de schil. Schrapen vlak voor bereiding, daarna afspoelen.",
+      "technique": "Glazuren in boter en honing op hoog vuur de laatste paar minuten — maakt ze iets bijzonders.",
+      "pairings": [
+        "Boter",
+        "Tijm",
+        "Gember",
+        "Sinaasappel",
+        "Komijn",
+        "Koriander",
+        "Honing"
+      ],
+      "substitutions": [
+        "Pastinaak",
+        "Rode biet",
+        "Zoete aardappel"
+      ],
+      "nutrientsEn": "Very high in betacarotene (vitamin A precursor); potassium, sodium, calcium, fibre",
+      "sourceUrl": "https://velt.nu/groente/wortelen",
+      "curatedRecipes": []
+    },
+    {
+      "id": "brussels-sprouts",
+      "nl": "Spruitjes",
+      "nameEn": "Brussels sprouts",
+      "family": "Brassica",
+      "color": "#5A8040",
+      "accent": "#2A4818",
+      "peak": [
+        10,
+        11,
+        12,
+        1,
+        2
+      ],
+      "shoulder": [
+        9,
+        3
+      ],
+      "blurb": "Verdelend aan tafel, maar geroosterd met boter overtuigen ze de meeste sceptici.",
+      "storage": "Op de stengel in de tuin tot nodig. Gekocht: koelkast, tot 8 dagen.",
+      "prep": "Basis bijsnijden, buitenste bladeren verwijderen. Een kruis insnijden in de basis voor gelijkmatig garen — of halveren voor sneller roosteren.",
+      "technique": "Halveren en snijkant naar beneden roosteren op 220°C — het platte vlak karameliseert en de bitterheid wordt zachter.",
+      "pairings": [
+        "Spek",
+        "Boter",
+        "Kastanje",
+        "Walnoot",
+        "Citroen",
+        "Mosterd",
+        "Parmezaan"
+      ],
+      "substitutions": [
+        "Savooikool",
+        "Boerenkool",
+        "Broccoli"
+      ],
+      "nutrientsEn": "Vitamins A, C; fibre",
+      "sourceUrl": "https://velt.nu/groente/spruiten",
+      "curatedRecipes": []
+    },
+    {
+      "id": "red-cabbage",
+      "nl": "Rodekool",
+      "nameEn": "Red cabbage",
+      "family": "Brassica",
+      "color": "#7A3060",
+      "accent": "#3A1028",
+      "peak": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        1,
+        2,
+        3
+      ],
+      "shoulder": [
+        7
+      ],
+      "blurb": "De klassieke Nederlandse gestoofde rodekool — langzaam gekookt met appel, kruidnagel en azijn.",
+      "storage": "Heel: koele, donkere, luchtige ruimte voor maanden. Gesneden: strak inpakken en binnen een dag gebruiken.",
+      "prep": "Buitenste bladeren verwijderen, kwarten, kern verwijderen, daarna snijden.",
+      "technique": "Langzaam smoren met appel, azijn en een snufje suiker — het heeft minstens een uur nodig om zijdeachtig te worden.",
+      "pairings": [
+        "Appel",
+        "Kruidnagel",
+        "Kaneel",
+        "Azijn",
+        "Rode wijn",
+        "Jeneverbes",
+        "Eend"
+      ],
+      "substitutions": [
+        "Wittekool",
+        "Radicchio",
+        "Savooikool"
+      ],
+      "nutrientsEn": "Fibre, calcium, iron; vitamins A, B, C; anthocyanin pigment",
+      "sourceUrl": "https://velt.nu/groente/rodekool",
+      "curatedRecipes": []
+    },
+    {
+      "id": "savoy-cabbage",
+      "nl": "Savooikool",
+      "nameEn": "Savoy cabbage",
+      "family": "Brassica",
+      "color": "#78A050",
+      "accent": "#3A5820",
+      "peak": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        1,
+        2,
+        3
+      ],
+      "shoulder": [
+        6
+      ],
+      "blurb": "De meest elegante kool — gerimpeld, mals en veel gemakkelijker te verteren dan zijn broers.",
+      "storage": "Losse krop, dus minder duurzaam dan strakke kolen. Koelkast, enkele dagen.",
+      "prep": "Taaie buitenste bladeren verwijderen, kern eruit snijden. Wassen in de groeven waar gruis verstopt zit.",
+      "technique": "2 min blancheren in gezouten water en dan bakken in boter — behoudt de kleur en verwijdert bitterheid.",
+      "pairings": [
+        "Boter",
+        "Karwij",
+        "Spek",
+        "Room",
+        "Mosterd",
+        "Knoflook",
+        "Kastanjes"
+      ],
+      "substitutions": [
+        "Wittekool",
+        "Boerenkool",
+        "Snijbiet"
+      ],
+      "nutrientsEn": "Vitamin C, calcium, phosphorus, potassium",
+      "sourceUrl": "https://velt.nu/groente/savooikool",
+      "curatedRecipes": []
+    },
+    {
+      "id": "white-cabbage",
+      "nl": "Wittekool",
+      "nameEn": "White cabbage",
+      "family": "Brassica",
+      "color": "#D8E8C0",
+      "accent": "#88A860",
+      "peak": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        1,
+        2,
+        3
+      ],
+      "shoulder": [
+        7
+      ],
+      "blurb": "De klassieke zuurkoolbasis — en rauw gegeten in een goede Nederlandse koolsla.",
+      "storage": "Heel: koele, donkere, droge plek voor maanden. De dichte krop bewaart uitzonderlijk goed.",
+      "prep": "Buitenste bladeren verwijderen, kwarten, kern eruit snijden, daarna raspen of snijden.",
+      "technique": "Zouten en masseren om thuis snel gefermenteerde zuurkool te maken — drie weken in een pot.",
+      "pairings": [
+        "Karwij",
+        "Azijn",
+        "Appel",
+        "Mosterd",
+        "Spek",
+        "Jeneverbes",
+        "Sinaasappel"
+      ],
+      "substitutions": [
+        "Savooikool",
+        "Spitskool",
+        "Rodekool"
+      ],
+      "nutrientsEn": "Iron, calcium, phosphorus, sodium, magnesium; vitamin C; protein; fibre",
+      "sourceUrl": "https://velt.nu/groente/wittekool",
+      "curatedRecipes": []
+    },
+    {
+      "id": "pointed-cabbage",
+      "nl": "Spitskool",
+      "nameEn": "Pointed cabbage",
+      "family": "Brassica",
+      "color": "#C0D890",
+      "accent": "#70A038",
+      "peak": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "shoulder": [
+        5
+      ],
+      "blurb": "De zomerkool — zoeter, sappiger en sneller te koken dan ronde variëteiten.",
+      "storage": "Koele plek, 12–15°C. Koelkast tot 1 week. Gesneden kool: afdekken en binnen een dag gebruiken.",
+      "prep": "Halveren, kern verwijderen, raspen of snijden. Geen blancheren nodig — direct bakken.",
+      "technique": "Op hoog vuur roerbakken met boter en karwij — klaar in 5 minuten en veel beter dan koken.",
+      "pairings": [
+        "Boter",
+        "Karwij",
+        "Citroen",
+        "Knoflook",
+        "Chili",
+        "Gerookte vis"
+      ],
+      "substitutions": [
+        "Savooikool",
+        "Wittekool",
+        "Chinese kool"
+      ],
+      "nutrientsEn": "Potassium, calcium, folate, vitamin C",
+      "sourceUrl": "https://velt.nu/groente/spitskool",
+      "curatedRecipes": []
+    },
+    {
+      "id": "chinese-cabbage",
+      "nl": "Chinese kool / paksoi",
+      "nameEn": "Chinese cabbage",
+      "family": "Brassica",
+      "color": "#C8E0A0",
+      "accent": "#6A9840",
+      "peak": [
+        8,
+        9,
+        10,
+        11
+      ],
+      "shoulder": [
+        7
+      ],
+      "blurb": "Mild en zoet met een lichte knapperigheid — de kool die niet naar kool smaakt.",
+      "storage": "Koelkast in een plastic zak, tot enkele weken voor dichte koppen. Binnenste bladeren slinken sneller.",
+      "prep": "Bladeren scheiden — binnenste bladeren rauw gebruiken (fijn gesneden), buitenste bladeren voor roerbakken.",
+      "technique": "De basis van kimchi — fermenteren met gochugaru, knoflook en gember voor 1–3 weken.",
+      "pairings": [
+        "Sesam",
+        "Sojasaus",
+        "Gember",
+        "Chili",
+        "Miso",
+        "Knoflook",
+        "Tofu"
+      ],
+      "substitutions": [
+        "Spitskool",
+        "Andijvie",
+        "Paksoi"
+      ],
+      "nutrientsEn": "Vitamin C, calcium; light and easy to digest, low calorie",
+      "sourceUrl": "https://velt.nu/groente/chinese-kool",
+      "curatedRecipes": []
+    },
+    {
+      "id": "endive",
+      "nl": "Andijvie",
+      "nameEn": "Endive",
+      "family": "Blad",
+      "color": "#D0E080",
+      "accent": "#80A020",
+      "peak": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "shoulder": [
+        5
+      ],
+      "blurb": "Bitter — en die bitterheid is het hele punt. Tegengaan met room en zout, niet suiker.",
+      "storage": "Koelkast, enkele dagen. Bladeren oogsten van afgesneden koppen op grondniveau; de plant groeit opnieuw.",
+      "prep": "Buitenste bladeren verwijderen, de rest raspen. 2–3 min blancheren voor stamppot, of rauw laten in salades.",
+      "technique": "De bitterheid tegengaan met iets vettigs en zouts — nooit zoets.",
+      "pairings": [
+        "Room",
+        "Kaassaus",
+        "Spek",
+        "Walnoot",
+        "Blauwschimmelkaas",
+        "Ansjovis"
+      ],
+      "substitutions": [
+        "Witlof",
+        "Radicchio",
+        "Rucola"
+      ],
+      "nutrientsEn": "Vitamins A, C; minerals including calcium, magnesium, silicon, iron; bitters good for heart and liver",
+      "sourceUrl": "https://velt.nu/groente/andijvie",
+      "curatedRecipes": []
+    },
+    {
+      "id": "chicory",
+      "nl": "Witlof",
+      "nameEn": "Chicory",
+      "family": "Blad",
+      "color": "#F0ECD0",
+      "accent": "#A09060",
+      "peak": [
+        11,
+        12,
+        1,
+        2,
+        3,
+        4
+      ],
+      "shoulder": [
+        10
+      ],
+      "blurb": "Bleek, bitter en briljant — het lekkerst gestoofd in boter of rauw met sterke kaas.",
+      "storage": "Koel en donker — licht maakt het groener en bitterder. Koelkast in een zak, tot 1 à 2 weken.",
+      "prep": "Beschadigde buitenste bladeren verwijderen, basis bijsnijden. Niet wassen tot nodig. Bittere kern verwijderen als gestoofd.",
+      "technique": "Gehalveerde koppen snijkant naar beneden smoren in boter en bouillon voor 20 min — bitter wordt zoet.",
+      "pairings": [
+        "Ham",
+        "Bechamelsaus",
+        "Gruyère",
+        "Blauwschimmelkaas",
+        "Walnoot",
+        "Sinaasappel",
+        "Citroen"
+      ],
+      "substitutions": [
+        "Andijvie",
+        "Radicchio",
+        "Venkel"
+      ],
+      "nutrientsEn": "Water, fibre, vitamin C; potassium",
+      "sourceUrl": "https://velt.nu/groente/witlof",
+      "curatedRecipes": []
+    },
+    {
+      "id": "radicchio",
+      "nl": "Roodlof",
+      "nameEn": "Radicchio",
+      "family": "Blad",
+      "color": "#A03870",
+      "accent": "#601040",
+      "peak": [
+        9,
+        10,
+        11
+      ],
+      "shoulder": [
+        8,
+        12
+      ],
+      "blurb": "Italiaans van oorsprong, bitter, prachtig. Wordt pas rood als de nachten kouder worden — een eerlijk teken van het najaar.",
+      "storage": "Koelkast in de groentelade, enkele weken. Niet laten uitdrogen.",
+      "prep": "Buitenste bladeren verwijderen, halveren of kwarten. Dun snijden voor rauw gebruik, halveren voor grillen.",
+      "technique": "Halveren en grillen op een hete gietijzeren pan tot licht verkold — bitterheid verdwijnt, zoetheid verschijnt.",
+      "pairings": [
+        "Walnoot",
+        "Gedroogde vijg",
+        "Gorgonzola",
+        "Balsamico",
+        "Honing",
+        "Olijfolie",
+        "Pancetta"
+      ],
+      "substitutions": [
+        "Andijvie",
+        "Rodekool",
+        "Treviso"
+      ],
+      "nutrientsEn": "Folate (vitamin B), vitamin E (antioxidant), vitamin K; potassium",
+      "sourceUrl": "https://velt.nu/plant/roodlof",
+      "curatedRecipes": []
+    },
+    {
+      "id": "rocket",
+      "nl": "Rucola",
+      "nameEn": "Rocket",
+      "family": "Blad",
+      "color": "#7AB050",
+      "accent": "#3A6020",
+      "peak": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "shoulder": [
+        4
+      ],
+      "blurb": "Pittig, nootachtig en het lekkerst als jong — schiet snel door in warmte dus timing is belangrijk.",
+      "storage": "Gewikkeld in een vochtige doek in de koelkast. 3–4 dagen.",
+      "prep": "Wassen in koud water, droogcentrifugeren. Jonge bladeren rauw gebruiken, of oudere kort laten slinken.",
+      "technique": "Direct uit de oven op pizza leggen — de hitte laat het net genoeg slinken.",
+      "pairings": [
+        "Parmezaan",
+        "Citroen",
+        "Olijfolie",
+        "Pijnboompitten",
+        "Prosciutto",
+        "Tomaat",
+        "Ansjovis"
+      ],
+      "substitutions": [
+        "Waterkers",
+        "Mizuna",
+        "Babyspinazie"
+      ],
+      "nutrientsEn": "Calcium, fibre, protein, vitamin C",
+      "sourceUrl": "https://velt.nu/plant/rucola",
+      "curatedRecipes": []
+    },
+    {
+      "id": "lamb-lettuce",
+      "nl": "Veldsla",
+      "nameEn": "Lamb's lettuce",
+      "family": "Blad",
+      "color": "#9AC870",
+      "accent": "#508038",
+      "peak": [
+        11,
+        12,
+        1,
+        2,
+        3
+      ],
+      "shoulder": [
+        10
+      ],
+      "blurb": "Mild en nootachtig — het wintersaladeblad dat groeit als niets anders doet.",
+      "storage": "Koelkast in een zak of bak, tot 1 week.",
+      "prep": "Worteltjes verwijderen als nog aangehecht. Voorzichtig wassen — de kleine blaadjes kneuzen gemakkelijk.",
+      "technique": "Een simpele walnootolie en citroendressing is alles wat het nodig heeft — niet overweldigen.",
+      "pairings": [
+        "Walnoot",
+        "Biet",
+        "Geitenkaas",
+        "Citroen",
+        "Sjalot",
+        "Appelazijn"
+      ],
+      "substitutions": [
+        "Spinazie",
+        "Waterkers",
+        "Jonge rucola"
+      ],
+      "nutrientsEn": "Vitamins A, C; calcium, iron; mild and easy to digest",
+      "sourceUrl": "https://velt.nu/groente/veldsla",
+      "curatedRecipes": []
+    },
+    {
+      "id": "salsify",
+      "nl": "Schorseneren",
+      "nameEn": "Salsify",
+      "family": "Wortel",
+      "color": "#B89870",
+      "accent": "#705830",
+      "peak": [
+        11,
+        12,
+        1,
+        2
+      ],
+      "shoulder": [
+        10,
+        3
+      ],
+      "blurb": "De 'oesterplant' met een melkachtige, artisjokkachtige smaak — een van de meest ondergewaardeerde wortels in Nederlandse keukens.",
+      "storage": "Koel en droog, 12–15°C, in een geperforeerde zak. Enkele weken. Invriezen na blancheren voor langere bewaring.",
+      "prep": "Handschoenen dragen — het latexsap vlekt. In de schil koken en daarna schillen; of rauw schillen en in aangezuurd water bewaren.",
+      "technique": "Ongeschild koken en daarna de schil eraf schuiven als koel — veel gemakkelijker dan rauw schillen.",
+      "pairings": [
+        "Boter",
+        "Room",
+        "Citroen",
+        "Nootmuskaat",
+        "Parmezaan",
+        "Hazelnoot"
+      ],
+      "substitutions": [
+        "Artisjokkharten",
+        "Aardpeer",
+        "Pastinaak"
+      ],
+      "nutrientsEn": "Phosphorus, calcium, fibre including inulin (prebiotic)",
+      "sourceUrl": "https://velt.nu/groente/schorseneren",
+      "curatedRecipes": []
+    },
+    {
+      "id": "swede",
+      "nl": "Koolraap",
+      "nameEn": "Swede",
+      "family": "Wortel",
+      "color": "#D8A858",
+      "accent": "#885820",
+      "peak": [
+        11,
+        12,
+        1,
+        2,
+        3
+      ],
+      "shoulder": [
+        10
+      ],
+      "blurb": "Aards, zoet en vorstbestendig — de vergeten Nederlandse wortel die de hele winter meegaat.",
+      "storage": "Koele, donkere plek voor weken. Hele knollen bewaren goed; eerst de bovenkant bijsnijden.",
+      "prep": "Royaal schillen — de schil is dik. In stukken snijden voor roosteren of blokjes voor stamppot.",
+      "technique": "Roosteren in boter en honing tot gekarameliseerd — veel beter dan gekookt.",
+      "pairings": [
+        "Boter",
+        "Tijm",
+        "Wortel",
+        "Aardappel",
+        "Peper",
+        "Curry",
+        "Honing"
+      ],
+      "substitutions": [
+        "Raap",
+        "Knolselder",
+        "Pastinaak"
+      ],
+      "nutrientsEn": "Vitamin C, potassium, iron",
+      "sourceUrl": "https://velt.nu/groente/koolraap",
+      "curatedRecipes": []
+    },
+    {
+      "id": "turnip",
+      "nl": "Raap / meiraap",
+      "nameEn": "Turnip",
+      "family": "Wortel",
+      "color": "#E0C890",
+      "accent": "#987840",
+      "peak": [
+        4,
+        5,
+        6,
+        10,
+        11
+      ],
+      "shoulder": [
+        3,
+        9,
+        12
+      ],
+      "blurb": "Jonge meiraapjes zijn zoet en knapperig genoeg om rauw te eten — oudere hebben langzaam koken nodig.",
+      "storage": "Koel en licht vochtig, 3–5°C. Tot meerdere maanden voor herfst geoogste wortels.",
+      "prep": "Schillen, daarna op maat snijden. Jonge: rauw in plakken. Grotere: roosteren of smoren.",
+      "technique": "Hele kleine raapjes glazuren in boter en bouillon tot mals en glanzend.",
+      "pairings": [
+        "Boter",
+        "Tijm",
+        "Appel",
+        "Honing",
+        "Mosterd",
+        "Worst",
+        "Miso"
+      ],
+      "substitutions": [
+        "Koolraap",
+        "Koolrabi",
+        "Knolselder"
+      ],
+      "nutrientsEn": "Vitamin A, calcium, phosphorus; low calorie; tap root of the Western diet before potatoes",
+      "sourceUrl": "https://velt.nu/groente/raap",
+      "curatedRecipes": []
+    },
+    {
+      "id": "winter-radish",
+      "nl": "Rammenas / daikon",
+      "nameEn": "Winter radish / daikon",
+      "family": "Wortel",
+      "color": "#E8E0D0",
+      "accent": "#9A9080",
+      "peak": [
+        9,
+        10,
+        11,
+        12,
+        1,
+        2,
+        3
+      ],
+      "shoulder": [],
+      "blurb": "Milder dan een zomerradijs — de Japanse daikon en de zwarte Vlaamse rammenas behoren tot dezelfde soort.",
+      "storage": "Koelkast in een geperforeerde zak (zonder loof), tot 2 weken. Zwarte variëteit: koel, 12°C, niet de koelkast.",
+      "prep": "Borstelen of schillen. Raspen of juliennen rauw voor salades. Of sudderen in soepen en smoorgerechten.",
+      "technique": "Geraspte daikon zouten en 10 min laten huilen, dan uitknijpen en aanmaken — instant Japanse pickle.",
+      "pairings": [
+        "Sojasaus",
+        "Sesam",
+        "Miso",
+        "Gember",
+        "Azijn",
+        "Mosterd",
+        "Gerookte vis"
+      ],
+      "substitutions": [
+        "Radijs",
+        "Raap",
+        "Koolrabi"
+      ],
+      "nutrientsEn": "Vitamins K, B1, B2, C; potassium, sodium, iron, calcium",
+      "sourceUrl": "https://velt.nu/groente/rammenas",
+      "curatedRecipes": []
+    },
+    {
+      "id": "champignon",
+      "nl": "Champignon",
+      "nameEn": "Champignon",
+      "family": "Paddenstoel",
+      "color": "#E8DCB8",
+      "accent": "#A89060",
+      "peak": [
+        9,
+        10,
+        11,
+        12,
+        1,
+        2
+      ],
+      "shoulder": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "blurb": "Nederland is een van Europa's toonaangevende champignonproducenten — verse champignons van Nederlandse telers zijn het hele jaar beschikbaar en merkbaar beter dan geïmporteerde.",
+      "storage": "In de originele verpakking of op een bord losjes afgedekt met vershoudfolie — ze moeten ademen, niet afsluiten. Koelkast, 3–5 dagen. Nooit wassen voor bewaren.",
+      "prep": "Schoonvegen met een vochtige doek — ze absorberen water snel en verliezen smaak. Kwarten of snijden; heel houden voor roosteren. Bakken in een zeer hete, droge pan voor bruinkleuring.",
+      "technique": "Nooit de pan overladen — bakken in een enkele laag op hoog vuur voor 3–4 minuten. Overladen stoomt in plaats van braadt.",
+      "pairings": [
+        "Boter",
+        "Knoflook",
+        "Tijm",
+        "Room",
+        "Peterselie",
+        "Ei",
+        "Sjalot",
+        "Sojasaus"
+      ],
+      "substitutions": [
+        "Portobello",
+        "Oesterzwam",
+        "Gedroogde porcini (geweekt)"
+      ],
+      "nutrientsEn": "Low calorie, fat-free; protein, fibre, B vitamins, selenium; significant source of vitamin D when UV-exposed (dark-grown contain negligible vitamin D)",
+      "sourceUrl": "https://velt.nu/groente/paddenstoelen",
+      "curatedRecipes": []
+    },
+    {
+      "id": "wild-mushroom",
+      "nl": "Wilde paddenstoelen",
+      "nameEn": "Wild mushrooms",
+      "family": "Paddenstoel",
+      "color": "#B8924C",
+      "accent": "#7A5820",
+      "peak": [
+        9,
+        10,
+        11
+      ],
+      "shoulder": [
+        8,
+        12
+      ],
+      "blurb": "Een korte herfstgave uit Nederlandse bossen — cantharellen en eekhoorntjesbrood die geen gelijkenis vertonen met gekweekte versies.",
+      "storage": "Binnen 2–3 dagen gebruiken. Bewaren in een papieren zak in de koelkast — nooit afgesloten plastic, ze zweten en gaan snel achteruit.",
+      "prep": "Wilde paddenstoelen kunnen kort gespoeld worden, dan heel droog deppen. Scheuren in plaats van snijden voor onregelmatige stukken die meer boter vangen.",
+      "technique": "Heet en snel bakken in boter met een geplet knoflookteen en tijm — stoppen zodra ze goudbruin en geurig zijn.",
+      "pairings": [
+        "Boter",
+        "Knoflook",
+        "Tijm",
+        "Room",
+        "Peterselie",
+        "Ei",
+        "Truffelolie",
+        "Wild"
+      ],
+      "substitutions": [
+        "Champignons",
+        "Gedroogde wilde paddenstoelen (geweekt)",
+        "Oesterzwam"
+      ],
+      "nutrientsEn": "Vitamins D and B group; potassium; antioxidants; significantly higher mineral density than cultivated varieties",
+      "sourceUrl": "https://velt.nu/groente/paddenstoelen",
+      "curatedRecipes": []
+    },
+    {
+      "id": "yacon",
+      "nl": "Yacon / appelwortel",
+      "nameEn": "Yacon",
+      "family": "Knolgewas",
+      "color": "#D4B880",
+      "accent": "#8C6830",
+      "peak": [
+        10,
+        11
+      ],
+      "shoulder": [],
+      "blurb": "De Andesknol die smaakt als een zoete appel gecombineerd met watermeloen — geteeld op Nederlandse velden en nog grotendeels onontdekt door thuiskoks.",
+      "storage": "Koele, donkere, droge plek zoals een kelder — bewaart maandenlang, zoals een aardappel. Niet in de koelkast.",
+      "prep": "Schillen met een dunschiller. Dun snijden en rauw eten, of roosteren en bakken. Het vruchtvlees brunt snel — citroensap gebruiken om oxidatie te voorkomen.",
+      "technique": "Schillen en scheermesdun snijden, aanmaken met citroen en goede olijfolie — zijn natuurlijke zoetheid heeft geen versiering nodig.",
+      "pairings": [
+        "Appel",
+        "Gember",
+        "Citroen",
+        "Honing",
+        "Venkel",
+        "Munt",
+        "Yoghurt"
+      ],
+      "substitutions": [
+        "Jicama",
+        "Waterchestnoot",
+        "Koolrabi (rauw)"
+      ],
+      "nutrientsEn": "Inulin (prebiotic, suitable for diabetics), potassium, folate, vitamin B6, fibre; very low glycaemic index",
+      "sourceUrl": "https://velt.nu/plant/yacon",
+      "curatedRecipes": []
+    },
+    {
+      "id": "sweet-potato",
+      "nl": "Zoete aardappel / bataat",
+      "nameEn": "Sweet potato",
+      "family": "Knolgewas",
+      "color": "#E89040",
+      "accent": "#A84C10",
+      "peak": [
+        9,
+        10
+      ],
+      "shoulder": [],
+      "blurb": "Nederlands geteeld op de zandgronden van Zeeland en Noord-Brabant — een kort veldseizoen dat een groente intensiveert die je anders het hele jaar geïmporteerd kunt kopen.",
+      "storage": "Nooit in de koelkast — bewaren op 14–15°C in een koele, droge kamer. Bewaart 1–2 maanden na de oogst.",
+      "prep": "Borstelen — geen schillen nodig voor roosteren. Schillen voor puree of soepen. Gelijkmatig snijden; ze karameliseren snel.",
+      "technique": "Heel roosteren op 200°C tot de schil borrelt en inzakt — het binnenste wordt zijdeachtig en zoet zonder enige voorbereiding.",
+      "pairings": [
+        "Boter",
+        "Chili",
+        "Koriander",
+        "Limoen",
+        "Kokosmelk",
+        "Gember",
+        "Feta",
+        "Zwarte bonen"
+      ],
+      "substitutions": [
+        "Butternut squash",
+        "Pompoen",
+        "Wortel (voor zoetheid)"
+      ],
+      "nutrientsEn": "Rich in betacarotene, vitamins B and C, iron, magnesium; fibre, inulin; low fat; low glycaemic index",
+      "sourceUrl": "https://velt.nu/plant/zoete-aardappel",
+      "curatedRecipes": []
+    },
+    {
+      "id": "leek",
+      "nl": "Prei",
+      "nameEn": "Leek",
+      "family": "Allium",
+      "color": "#A8C97D",
+      "accent": "#446A2A",
+      "peak": [
+        9,
+        10,
+        11,
+        12,
+        1,
+        2,
+        3
+      ],
+      "shoulder": [
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "blurb": "Het stille werkpaard van de winter — de laatste goede exemplaren nog tot laat in mei.",
+      "storage": "Loof niet bijsnijden tot gebruik. Koelkast, 1 week. Verdraagt goed invriezen als gehakt.",
+      "prep": "In de lengte splijten, openwaaiend afspoelen onder koud water — gruis verstopt zich in de lagen. Langzaam en zacht zweten in boter.",
+      "technique": "Hele helften snijkant naar beneden smoren in boter en bouillon tot zijdeachtig.",
+      "pairings": [
+        "Boter",
+        "Tijm",
+        "Room",
+        "Aardappel",
+        "Mosterd",
+        "Gruyère"
+      ],
+      "substitutions": [
+        "Lente-ui (mild)",
+        "Ui + groene toppen"
+      ],
+      "nutrientsEn": "Potassium, calcium, carotene, vitamin C; sulfur compounds for flavour",
+      "sourceUrl": "https://velt.nu/groente/prei",
+      "curatedRecipes": [
+        {
+          "title": "Gegratineerde prei met kaassaus",
+          "url": "https://www.leukerecepten.nl/recepten/gegratineerde-prei/",
+          "source": "Leuke Recepten",
+          "why": "Winterprei zo lang gekookt wordt zijdeachtig en mild — de gratineerkorst geeft het texturele contrast dat ze nodig hebben.",
+          "difficulty": "easy",
+          "timeMinutes": 40
+        },
+        {
+          "title": "Preisoep met room en bieslook",
+          "url": "https://www.allerhande.nl/recept/R-R1184281/preissoep",
+          "source": "Allerhande",
+          "why": "Prei langzaam en zacht gezweet geeft buitengewone zoetheid vrij — deze eenvoudige soep met room en bieslook is de puurste uitdrukking van winterprei.",
+          "difficulty": "easy",
+          "timeMinutes": 35
+        },
+        {
+          "title": "Prei-aardappeltaart met mosterd",
+          "url": "https://www.24kitchen.nl/recepten/prei-aardappeltaart",
+          "source": "24Kitchen",
+          "why": "De combinatie aardappel en prei is een Nederlands basisgerecht — mosterd toevoegen snijdt door de rijkheid en tilt de hele taart op.",
+          "difficulty": "medium",
+          "timeMinutes": 60
+        },
+        {
+          "title": "Charred leeks with romesco",
+          "url": "https://ottolenghi.co.uk/recipes/charred-leeks-with-romesco-and-fried-capers",
+          "source": "Ottolenghi",
+          "why": "De buitenste laag verbranden karameliseert de suikers in herfstprei en creëert een rokerige diepte die de heldere, nootachtige romescosaus versterkt.",
+          "difficulty": "medium",
+          "timeMinutes": 50
+        }
+      ]
+    },
+    {
+      "id": "yellow-onion",
+      "nl": "Gele ui",
+      "nameEn": "Yellow onion",
+      "family": "Allium",
+      "color": "#C8A858",
+      "accent": "#806020",
+      "peak": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "shoulder": [
+        1,
+        2,
+        3
+      ],
+      "blurb": "De Nederlandse gele ui is de ruggengraat van bijna elk hartig gerecht. Goed behandeld — langzaam en zacht gezweet tot goudbruin — is het een van de grote smaken.",
+      "storage": "Droog, koel, goed geventileerd, weg van licht en aardappelen. Goed gedroogd bewaren ze maandenlang.",
+      "prep": "Schillen en halveren. Voor het snijden koelen om oogirritatie te verminderen. Eenmaal gesneden, direct gebruiken of strak afdekken.",
+      "technique": "Op de laagste warmte 30+ minuten zweten om maximale zoetheid te krijgen zonder kleur.",
+      "pairings": [
+        "Tijm",
+        "Boter",
+        "Azijn",
+        "Laurierblad",
+        "Room",
+        "Gruyère",
+        "Wijn"
+      ],
+      "substitutions": [
+        "Rode ui",
+        "Sjalot",
+        "Prei"
+      ],
+      "nutrientsEn": "Potassium, phosphorus, iron, calcium; vitamins B and C; quercetin (antioxidant)",
+      "sourceUrl": "https://velt.nu/groente/ui",
+      "curatedRecipes": []
+    },
+    {
+      "id": "red-onion",
+      "nl": "Rode ui",
+      "nameEn": "Red onion",
+      "family": "Allium",
+      "color": "#8A2A50",
+      "accent": "#480A24",
+      "peak": [
+        8,
+        9,
+        10,
+        11
+      ],
+      "shoulder": [
+        12,
+        1
+      ],
+      "blurb": "Milder en zoeter dan gele ui rauw — de frisse, heldere keuze voor salades, snelle pickles en alles wat kleur op het bord nodig heeft.",
+      "storage": "Droog, koel, goed geventileerd. Rode uien bewaren minder goed dan gele — het beste binnen 1–2 maanden na aankoop gebruiken.",
+      "prep": "Dun snijden voor rauw gebruik. Snel inmaken in rode wijnazijn met een snufje suiker voor 20 minuten — transformeert alles waar het aankomt.",
+      "technique": "Dunne ringen snel inmaken in rode wijnazijn en suiker — 20 minuten verandert scherpe rauwe ui in iets elektrisch.",
+      "pairings": [
+        "Rode wijnazijn",
+        "Citroen",
+        "Sinaasappel",
+        "Feta",
+        "Olijfolie",
+        "Komkommer",
+        "Munt",
+        "Granaatappel"
+      ],
+      "substitutions": [
+        "Gele ui",
+        "Sjalot",
+        "Lente-ui"
+      ],
+      "nutrientsEn": "Quercetin and anthocyanins (antioxidants), vitamin C, potassium",
+      "sourceUrl": "https://velt.nu/groente/ui",
+      "curatedRecipes": []
+    },
+    {
+      "id": "shallot",
+      "nl": "Sjalot / sjalotje",
+      "nameEn": "Shallot",
+      "family": "Allium",
+      "color": "#B87840",
+      "accent": "#7A4820",
+      "peak": [
+        7,
+        8,
+        9
+      ],
+      "shoulder": [
+        10,
+        11,
+        12
+      ],
+      "blurb": "Verfijnder dan de ui, complexer dan de lente-ui — het allium bij uitstek als je diepte wilt zonder agressie.",
+      "storage": "Droog en koel, goed geventileerd. Bewaart 1–2 maanden. Eenmaal gesneden, direct gebruiken.",
+      "prep": "Schillen en fijn snijden voor rauw gebruik. Halveren of snijden voor bakken — ze garen sneller dan uien en branden gemakkelijk aan, dus let op de hitte.",
+      "technique": "Rauwe sjalot heel fijn hakken, combineren met rode wijnazijn en Dijon — de basis van een klassieke Franse vinaigrette.",
+      "pairings": [
+        "Boter",
+        "Azijn",
+        "Witte wijn",
+        "Room",
+        "Champignons",
+        "Kruiden",
+        "Vis",
+        "Kip"
+      ],
+      "substitutions": [
+        "Gele ui (gebruik de helft)",
+        "Lente-ui",
+        "Prei"
+      ],
+      "nutrientsEn": "Folic acid, potassium, vitamins B and C; higher allicin concentration than regular onion",
+      "sourceUrl": "https://velt.nu/groente/ui",
+      "curatedRecipes": []
+    },
+    {
+      "id": "potato",
+      "nl": "Aardappel",
+      "nameEn": "Potato",
+      "family": "Knolgewas",
+      "color": "#D4B870",
+      "accent": "#8A6820",
+      "peak": [
+        9,
+        10,
+        11,
+        12,
+        1,
+        2,
+        3
+      ],
+      "shoulder": [
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "blurb": "Het hele jaar beschikbaar maar bewaarvariëteiten in herfst en winter zijn op hun zetmeelrijkst.",
+      "storage": "Koel, donker, goed geventileerd. Nooit in de koelkast — zetmeel verandert in suiker. Uit de buurt van licht houden (produceert solanine).",
+      "prep": "Borstelen of schillen afhankelijk van gebruik. Nooit groene delen eten — ze bevatten solanine.",
+      "technique": "Beginnen in koud water en aan de kook brengen voor gelijkmatig garen — heet water gaart de buitenkant voor de binnenkant.",
+      "pairings": [
+        "Boter",
+        "Room",
+        "Dille",
+        "Spek",
+        "Kaas",
+        "Prei",
+        "Ui"
+      ],
+      "substitutions": [
+        "Zoete aardappel",
+        "Knolselder (voor puree)",
+        "Pastinaak"
+      ],
+      "nutrientsEn": "Vitamins B group, C; potassium, phosphorus, calcium, starch",
+      "sourceUrl": "https://velt.nu/groente/aardappel",
+      "curatedRecipes": []
+    },
+    {
+      "id": "jerusalem-artichoke",
+      "nl": "Aardpeer",
+      "nameEn": "Jerusalem artichoke",
+      "family": "Knolgewas",
+      "color": "#C8A060",
+      "accent": "#786020",
+      "peak": [
+        11,
+        12,
+        1,
+        2
+      ],
+      "shoulder": [
+        10,
+        3
+      ],
+      "blurb": "De knobbelige winterknol die smaakt als artisjokkharten — aards, nootachtig en de moeite waard.",
+      "storage": "In een doos met vochtig zand in de kelder — ze drogen snel uit als blootgesteld. Of laat ze de hele winter in de grond.",
+      "prep": "Geen schillen nodig — goed borstelen. In de schil koken voor de gemakkelijkste voorbereiding.",
+      "technique": "Heel roosteren met olijfolie en zout op 200°C — de schil wordt knapperig en het binnenste zijdeachtig.",
+      "pairings": [
+        "Boter",
+        "Truffel",
+        "Room",
+        "Citroen",
+        "Spek",
+        "Tijm",
+        "Hazelnoten"
+      ],
+      "substitutions": [
+        "Artisjokkharten",
+        "Schorseneren",
+        "Pastinaak"
+      ],
+      "nutrientsEn": "Protein, phosphorus, potassium, calcium, iron, magnesium; inulin (prebiotic, suitable for diabetics)",
+      "sourceUrl": "https://velt.nu/groente/aardpeer",
+      "curatedRecipes": []
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "disciplines": [
+    {
+      "id": "mechanical",
+      "nl": "Mechanisch Meesterschap"
+    },
+    {
+      "id": "thermal",
+      "nl": "Thermische Controle"
+    },
+    {
+      "id": "flavor",
+      "nl": "Smaakcompositie"
+    }
+  ]
+}

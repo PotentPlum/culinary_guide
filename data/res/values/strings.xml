@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Dutch UI strings for Mise. Generated once from the retired web app's lib/strings.ts
+  (commit cf3ec39); this file is now the source of truth. Dutch is the default (and only)
+  locale, so these live in values/, not values-nl/.
+-->
+<resources>
+    <string name="brand_title">Mise</string>
+    <string name="brand_sub">een kooksalmanak</string>
+    <string name="nav_seasonal">Seizoenen</string>
+    <string name="nav_calendar">Kalender</string>
+    <string name="nav_recipes">Recepten</string>
+    <string name="nav_substitutions">Vervangers</string>
+    <string name="nav_techniques">Technieken</string>
+    <string name="nav_foraging">Plukken</string>
+    <string name="nav_challenge">Uitdaging</string>
+    <string name="nav_profile">Profiel</string>
+    <string name="hero_eyebrow_loc">Nederland</string>
+    <string name="hero_title">Wat is er nu</string>
+    <string name="hero_title_em">in het seizoen</string>
+    <string name="hero_stat_peak">op hoogtepunt</string>
+    <string name="hero_stat_shoulder">beschikbaar</string>
+    <string name="hero_stat_soon">binnenkort</string>
+    <string name="hero_stat_ending">aflopend</string>
+    <string name="hero_hero_sub">Lokale groenten, gegroeid op Nederlandse bodem — gesorteerd op wat er nu op zijn best is.</string>
+    <string name="calendar_eyebrow_sub">Jaar in één oogopslag</string>
+    <string name="calendar_title">De</string>
+    <string name="calendar_title_em">kalender</string>
+    <string name="calendar_hero_sub">Wanneer elke groente zijn hoogtepunt bereikt. Gevuld = op zijn best, half = beschikbaar.</string>
+    <string name="controls_search_placeholder">Zoeken…</string>
+    <string name="controls_search_aria_label">Groenten zoeken</string>
+    <string name="controls_grid_aria_label">Rasterweergave</string>
+    <string name="controls_list_aria_label">Lijstweergave</string>
+    <string name="empty_state">Geen groenten gevonden. Probeer de zoekopdracht te wissen.</string>
+    <string name="filter_all">Alles in seizoen</string>
+    <string name="filter_peak">Op hoogtepunt</string>
+    <string name="filter_shoulder">Beschikbaar</string>
+    <string name="filter_soon">Binnenkort</string>
+    <string name="filter_ending">Aflopend</string>
+    <string name="status_peak">Op hoogtepunt</string>
+    <string name="status_soon">Binnenkort</string>
+    <string name="status_ending">Aflopend</string>
+    <string name="status_shoulder">Beschikbaar</string>
+    <string name="status_off">Buiten seizoen</string>
+    <string name="detail_close">Sluiten</string>
+    <string name="detail_section_season">Seizoen</string>
+    <string name="detail_legend_peak">Hoogtepunt</string>
+    <string name="detail_legend_shoulder">Beschikbaar</string>
+    <string name="detail_section_storage">Bewaren</string>
+    <string name="detail_section_prep">Bereiden</string>
+    <string name="detail_section_pairings">Combineert goed met</string>
+    <string name="detail_section_subs">Als je het niet hebt</string>
+    <string name="detail_subs_tag">Vervangers · binnenkort</string>
+    <string name="detail_subs_preview_pre">Mogelijke vervangers:</string>
+    <string name="detail_subs_note">Een volledige vervanger- &amp; combinatieverkenner komt in de volgende versie.</string>
+    <string name="detail_section_recipes">Bereid het</string>
+    <string name="detail_recipes_tag">Recepten · binnenkort</string>
+    <string name="detail_recipe_tech_pre">Bereidingstip:</string>
+    <string name="detail_recipes_note">Gekoppelde recepten verschijnen met de receptenmodule.</string>
+    <string name="detail_section_foraging">Vind het in de buurt</string>
+    <string name="detail_foraging_tag">Markten &amp; plukken · binnenkort</string>
+    <string name="detail_foraging_note">Boerenmarktschema\'s en (voor wilde soorten) veilige plekken komen hier.</string>
+    <string name="detail_difficulty_easy">Makkelijk</string>
+    <string name="detail_difficulty_medium">Gemiddeld</string>
+    <string name="detail_difficulty_hard">Moeilijk</string>
+    <string name="recipes_page_title">Recept inladen</string>
+    <string name="recipes_page_subtitle">Plak een receptlink uit een kookblog of -website. Wij halen de ingrediënten en bereiding op via de gestructureerde gegevens van de pagina.</string>
+    <string name="recipes_page_subtitle_photo">Maak foto\'s van een recept — tot 5 foto\'s van ingrediënten en bereiding. Claude leest de tekst, structureert het recept en zet alle maten om naar metrisch.</string>
+    <string name="recipes_tab_url">Link</string>
+    <string name="recipes_tab_photo">Foto</string>
+    <string name="recipes_input_placeholder">https://www.kookblog.nl/recept/…</string>
+    <string name="recipes_input_label">Receptlink</string>
+    <string name="recipes_submit_btn">Laden</string>
+    <string name="recipes_loading_btn">Bezig…</string>
+    <string name="recipes_loading_msg">Recept ophalen…</string>
+    <string name="recipes_photo_dropzone">Sleep foto\'s hierheen of klik om te uploaden</string>
+    <string name="recipes_photo_hint">Tot 5 foto\'s · JPEG, PNG of WebP · maten worden naar metrisch omgezet</string>
+    <string name="recipes_photo_submit_btn">Lees recept</string>
+    <string name="recipes_photo_loading_msg">Foto\'s analyseren…</string>
+    <string name="recipes_photo_source">Foto</string>
+    <string name="recipes_error_title">Niet gelukt</string>
+    <string name="recipes_error_fallback">Er is een onbekende fout opgetreden.</string>
+    <string name="recipes_error_network">Kon de server niet bereiken. Controleer je verbinding.</string>
+    <string name="recipes_retry_btn">Opnieuw proberen</string>
+    <string name="recipes_clear_btn">Nieuw recept</string>
+    <string name="recipes_hint_text">Werkt met recepten die gestructureerde data (Schema.org) gebruiken — de meeste grote kookblogs doen dit automatisch.</string>
+    <string name="recipes_section_ingredients">Ingrediënten</string>
+    <string name="recipes_section_instructions">Bereiding</string>
+    <string name="recipes_section_nutrition">Voedingswaarden</string>
+    <string name="recipes_label_prep_time">Voorbereiding</string>
+    <string name="recipes_label_cook_time">Bereiden</string>
+    <string name="recipes_label_total_time">Totaal</string>
+    <string name="recipes_label_minutes">min</string>
+    <string name="recipes_label_calories">Kcal</string>
+    <string name="recipes_label_protein">Eiwit</string>
+    <string name="recipes_label_carbs">Koolh.</string>
+    <string name="recipes_label_fat">Vet</string>
+    <string name="recipes_save_btn">Bewaren</string>
+    <string name="recipes_saved_btn">Bewaard</string>
+    <string name="recipes_saved_section">Opgeslagen recepten</string>
+    <string name="recipes_saved_remove_label">Verwijderen</string>
+    <string name="recipes_label_source">Bron</string>
+    <string name="recipes_placeholder_source">Naam van kookboek of website…</string>
+    <string name="recipes_source_hint">Wordt weergegeven op de receptkaart</string>
+    <string name="recipes_photo_count_of">van</string>
+    <string name="recipes_photo_count_label">foto\'s</string>
+    <string name="recipes_edit_btn">Bewerken</string>
+    <string name="recipes_edit_title">Recept bewerken</string>
+    <string name="recipes_edit_save_btn">Opslaan</string>
+    <string name="recipes_edit_cancel_btn">Annuleren</string>
+    <string name="recipes_edit_label_title">Naam</string>
+    <string name="recipes_edit_label_desc">Beschrijving</string>
+    <string name="recipes_edit_label_ingredients">Ingrediënten (één per regel)</string>
+    <string name="recipes_edit_label_instructions">Bereiding (één stap per regel)</string>
+    <string name="recipes_edit_label_source">Bron</string>
+    <string name="recipes_edit_label_tags">Tags</string>
+    <string name="recipes_facet_filter_label">Filter</string>
+    <string name="recipes_facet_filter_reset">Wis filters</string>
+    <string name="recipes_label_servings">Porties</string>
+    <string name="recipes_servings_decrease">Minder porties</string>
+    <string name="recipes_servings_increase">Meer porties</string>
+    <string name="recipes_sort_label">Sorteer op</string>
+    <string name="recipes_sort_date_desc">Nieuwste eerst</string>
+    <string name="recipes_sort_date_asc">Oudste eerst</string>
+    <string name="recipes_sort_alpha">A–Z</string>
+    <string name="recipes_search_result_of">van</string>
+    <string name="recipes_search_result_label">recepten</string>
+    <string name="recipes_search_result_count">recepten gevonden</string>
+    <string name="recipes_search_clear_aria_label">Zoekopdracht wissen</string>
+    <string name="recipes_cooking_mode">Kookmodus</string>
+    <string name="recipes_cooking_mode_active">Scherm blijft aan</string>
+    <string name="recipes_cooking_mode_unsupported">Niet beschikbaar op dit apparaat</string>
+    <string name="recipes_label_author">Recept van</string>
+    <string name="recipes_label_keywords">Trefwoorden</string>
+    <string name="recipes_label_suitable_for_diet">Geschikt voor</string>
+    <string name="recipes_label_video">Bekijk video</string>
+    <string name="recipes_unit_toggle_label">Eenheid</string>
+    <string name="recipes_unit_us">US</string>
+    <string name="recipes_unit_metric">Metrisch</string>
+    <string name="recipes_empty_title">Nog geen recepten</string>
+    <string name="recipes_empty_sub">Voeg je eerste recept toe via een link of een foto van een kookboek.</string>
+    <string name="recipes_empty_cta">Eerste recept toevoegen</string>
+    <string name="recipes_add_panel_title">Recept toevoegen</string>
+    <string name="recipes_add_panel_close">Sluiten</string>
+    <string name="recipes_search_aria_label">Recepten zoeken</string>
+    <string name="recipes_no_results_filters">Geen recepten gevonden met deze filters</string>
+    <string name="recipes_clear_all">Wis zoekopdracht en filters</string>
+    <string name="recipes_cooked_this_btn">Ik heb dit gekookt</string>
+    <string name="techniques_page_title">Technieken</string>
+    <string name="techniques_page_subtitle">Fundamentele bereidingsmethoden voor de Nederlandse keuken</string>
+    <string name="techniques_category_snijden">Snijdtechnieken</string>
+    <string name="techniques_category_garing">Garingsmethoden</string>
+    <string name="techniques_category_smaak">Smaakgebouw</string>
+    <string name="techniques_category_eiwitten">Eiwitten</string>
+    <string name="techniques_category_sauzen">Sauzen &amp; Fonds</string>
+    <string name="techniques_category_groenten">Groentenvoorbereiding</string>
+    <string name="techniques_category_gereedschap">Gereedschap</string>
+    <string name="techniques_category_bewaren">Conservering</string>
+    <string name="techniques_subcategory_klassieken">Klassieken</string>
+    <string name="techniques_subcategory_hoog_vuur">Hoog vuur</string>
+    <string name="techniques_subcategory_middel_vuur">Middel vuur</string>
+    <string name="techniques_subcategory_laag_vuur">Laag vuur</string>
+    <string name="techniques_subcategory_vlees">Vlees</string>
+    <string name="techniques_subcategory_gevogelte">Gevogelte</string>
+    <string name="techniques_subcategory_vis">Vis &amp; Zeevruchten</string>
+    <string name="techniques_subcategory_eieren">Eieren</string>
+    <string name="techniques_subcategory_klassieke_sauzen">Klassieke sauzen</string>
+    <string name="techniques_subcategory_emulsies">Emulsies</string>
+    <string name="techniques_subcategory_fonds">Fonds &amp; Bouillons</string>
+    <string name="techniques_subcategory_bereidingsmethoden">Bereidingsmethoden</string>
+    <string name="techniques_subcategory_smaaklagen">Smaaklagen</string>
+    <string name="techniques_subcategory_kookgerei">Kookgerei</string>
+    <string name="techniques_level_basis">Basis</string>
+    <string name="techniques_level_gemiddeld">Gemiddeld</string>
+    <string name="techniques_level_gevorderd">Gevorderd</string>
+    <string name="techniques_heat_hoog">Hoog vuur</string>
+    <string name="techniques_heat_middel">Middel vuur</string>
+    <string name="techniques_heat_laag">Laag vuur</string>
+    <string name="techniques_heat_geen">Geen vuur</string>
+    <string name="techniques_section_tips">Tips</string>
+    <string name="techniques_section_related_veg">Aanbevolen groenten</string>
+    <string name="techniques_section_related_techniques">Verwante technieken</string>
+    <string name="techniques_section_cookware">Benodigde kookgerei</string>
+    <string name="techniques_search_placeholder">Techniek zoeken…</string>
+    <string name="techniques_search_aria_label">Technieken zoeken</string>
+    <string name="techniques_empty_state">Geen technieken gevonden. Probeer de zoekopdracht te wissen.</string>
+    <string name="techniques_close_aria_label">Sluiten</string>
+    <string name="techniques_back_button">Terug</string>
+    <string name="evaluation_title">Hoe ging het?</string>
+    <string name="evaluation_label_score">Uitvoering (1–10)</string>
+    <string name="evaluation_label_taste">Smaak (1–10)</string>
+    <string name="evaluation_label_notes">Notities (optioneel)</string>
+    <string name="evaluation_submit_btn">Vastleggen</string>
+    <string name="evaluation_skip_btn">Overslaan</string>
+    <string name="challenge_page_title">Kookuitdaging</string>
+    <string name="challenge_page_subtitle">Typ een ingrediënt en ontvang een gerichte kookoefening om een specifieke techniek te oefenen.</string>
+    <string name="challenge_input_placeholder">Bijv. aardappel, wortel, ui…</string>
+    <string name="challenge_input_label">Ingrediënt</string>
+    <string name="challenge_submit_btn">Geef uitdaging</string>
+    <string name="challenge_loading_btn">Bezig…</string>
+    <string name="challenge_loading_msg">Uitdaging genereren…</string>
+    <string name="challenge_try_another_btn">Andere uitdaging</string>
+    <string name="challenge_clear_btn">Wissen</string>
+    <string name="challenge_error_fallback">Er is een onbekende fout opgetreden.</string>
+    <string name="challenge_error_network">Kon de server niet bereiken. Controleer je verbinding.</string>
+    <string name="challenge_retry_btn">Opnieuw proberen</string>
+    <string name="challenge_label_skill">Techniek</string>
+    <string name="challenge_label_time">Tijd</string>
+    <string name="challenge_label_minutes">min</string>
+    <string name="challenge_label_why">Waarom deze uitdaging?</string>
+    <string name="challenge_difficulty_beginner">Beginner</string>
+    <string name="challenge_difficulty_intermediate">Gemiddeld</string>
+    <string name="challenge_difficulty_advanced">Expert</string>
+    <string name="challenge_error_title">Niet gelukt</string>
+    <string name="challenge_params_title">Verfijn de uitdaging</string>
+    <string name="challenge_technique_label">Techniek</string>
+    <string name="challenge_technique_placeholder">Laat AI kiezen</string>
+    <string name="challenge_cuisine_label">Keuken</string>
+    <string name="challenge_cuisine_placeholder">Alle keukens</string>
+    <string name="challenge_time_limit_label">Beschikbare tijd</string>
+    <string name="challenge_time_limit_any">Geen beperking</string>
+    <string name="challenge_time_limit15">&lt; 15 minuten</string>
+    <string name="challenge_time_limit30">&lt; 30 minuten</string>
+    <string name="challenge_time_limit60">&lt; 60 minuten</string>
+    <string name="challenge_time_limit_over60">&gt; 60 minuten</string>
+    <string name="challenge_simple_label">Klein &amp; eenvoudig</string>
+    <string name="challenge_simple_description">Weinig ingrediënten, alleen wat je doorgaans in huis hebt</string>
+    <string name="challenge_quantity_label">Hoeveelheid</string>
+    <string name="challenge_quantity_placeholder">Bijv. 500</string>
+    <string name="challenge_unit_label">Eenheid</string>
+    <string name="challenge_unit_stuks">stuks</string>
+    <string name="challenge_unit_gram">gram</string>
+    <string name="challenge_unit_ml">ml</string>
+    <string name="challenge_unit_liter">liter</string>
+    <string name="challenge_label_output_type">Resultaat</string>
+    <string name="challenge_label_recipe">Recept</string>
+    <string name="challenge_label_servings">porties</string>
+    <string name="challenge_label_ingredients">Ingrediënten</string>
+    <string name="challenge_label_steps">Bereiding</string>
+    <string name="challenge_label_recipe_tips">Tips</string>
+    <string name="challenge_completed_btn">Uitdaging voltooid</string>
+    <string name="challenge_completed_msg">Goed gedaan! Je voortgang is bijgehouden.</string>
+    <string name="challenge_history_title">Eerdere uitdagingen</string>
+    <string name="home_hero_title">Jouw persoonlijke</string>
+    <string name="home_hero_title_em">kookgids</string>
+    <string name="home_hero_title_end">voor het seizoen</string>
+    <string name="home_hero_sub">Lokale groenten op hun best, kooktechnieken, recepten en uitdagingen — alles op één plek.</string>
+    <string name="home_stat_peak">op hoogtepunt</string>
+    <string name="home_stat_soon">binnenkort</string>
+    <string name="home_stat_ending">aflopend</string>
+    <string name="home_modules_label">Verken de gids</string>
+    <string name="home_spotlight_title">Nu op hoogtepunt</string>
+    <string name="home_spotlight_more">Alle %1$d groenten →</string>
+    <string name="home_soon_title">Binnenkort</string>
+    <string name="home_ending_title">Laatste kans</string>
+    <string name="home_more_link">Meer →</string>
+    <string name="home_tip_label">Seizoenstip</string>
+    <string name="home_tip_fallback">Kies groenten die nu op het hoogtepunt van hun seizoen zijn — ze smaken beter en zijn goedkoper.</string>
+    <string name="home_tip_link">Meer over %1$s →</string>
+    <string name="profile_page_title">Profiel</string>
+    <string name="profile_page_subtitle">Jouw culinaire ontwikkeling in beeld</string>
+    <string name="profile_pillar_a">Vaardigheidsprofiel</string>
+    <string name="profile_pillar_b">Jouw kookidentiteit</string>
+    <string name="profile_pillar_c">Keukens &amp; ingrediënten</string>
+    <string name="profile_pillar_d">Statistieken</string>
+    <string name="profile_pillar_e">Uitdagingsgeschiedenis</string>
+    <string name="profile_discipline_mechanical">Mechanisch Meesterschap</string>
+    <string name="profile_discipline_thermal">Thermische Controle</string>
+    <string name="profile_discipline_flavor">Smaakcompositie</string>
+    <string name="profile_label_frequency">Frequentie</string>
+    <string name="profile_label_proficiency">Vaardigheid</string>
+    <string name="profile_label_top_techniques">Meest geoefend</string>
+    <string name="profile_label_high_rated">Hoogst beoordeeld</string>
+    <string name="profile_label_neglected">Verwaarloosd (30 dagen)</string>
+    <string name="profile_neglected_empty">Alle disciplines zijn recent geoefend</string>
+    <string name="profile_ledger_empty">Nog geen uitdagingen voltooid</string>
+    <string name="profile_ingredient_cloud_empty">Nog geen ingrediënten geregistreerd</string>
+    <string name="profile_loading_msg">Profiel laden…</string>
+    <string name="profile_empty_state">Voltooi je eerste uitdaging of recept om je profiel op te bouwen.</string>
+    <string name="profile_top_cuisines_title">Meest gekookte keukens</string>
+    <string name="profile_high_rated_cuisines_title">Hoogst gewaardeerde keukens</string>
+    <string name="profile_ingredient_cloud_title">Ingrediënten</string>
+    <string-array name="months_short">
+        <item>Jan</item>
+        <item>Feb</item>
+        <item>Mrt</item>
+        <item>Apr</item>
+        <item>Mei</item>
+        <item>Jun</item>
+        <item>Jul</item>
+        <item>Aug</item>
+        <item>Sep</item>
+        <item>Okt</item>
+        <item>Nov</item>
+        <item>Dec</item>
+    </string-array>
+    <string-array name="months_long">
+        <item>Januari</item>
+        <item>Februari</item>
+        <item>Maart</item>
+        <item>April</item>
+        <item>Mei</item>
+        <item>Juni</item>
+        <item>Juli</item>
+        <item>Augustus</item>
+        <item>September</item>
+        <item>Oktober</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+</resources>
