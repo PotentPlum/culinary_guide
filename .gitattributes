@@ -14,3 +14,7 @@
 *.eot binary
 *.pdf binary
 *.zip binary
+*.webp binary
+*.jar binary
+*.apk binary
+*.aab binary

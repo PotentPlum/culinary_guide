@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "vegetables.schema.json",
+  "title": "Mise vegetables",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "vegetables"],
+  "properties": {
+    "schemaVersion": { "type": "integer", "minimum": 1 },
+    "vegetables": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/vegetable" }
+    }
+  },
+  "$defs": {
+    "month": { "type": "integer", "minimum": 1, "maximum": 12 },
+    "hex": { "type": "string", "pattern": "^#[0-9A-Fa-f]{6}$" },
+    "text": { "type": "string", "minLength": 1 },
+    "vegetable": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id", "nl", "nameEn", "family", "color", "accent", "peak", "shoulder",
+        "blurb", "storage", "prep", "technique", "pairings", "substitutions", "curatedRecipes"
+      ],
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+        "nl": { "$ref": "#/$defs/text" },
+        "nameEn": { "$ref": "#/$defs/text" },
+        "family": {
+          "enum": [
+            "Wortel", "Blad", "Brassica", "Allium", "Peulvrucht", "Stengel",
+            "Pompoen", "Knolgewas", "Vruchtgroente", "Paddenstoel", "Kruid"
+          ]
+        },
+        "color": { "$ref": "#/$defs/hex" },
+        "accent": { "$ref": "#/$defs/hex" },
+        "peak": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "$ref": "#/$defs/month" } },
+        "shoulder": { "type": "array", "uniqueItems": true, "items": { "$ref": "#/$defs/month" } },
+        "blurb": { "$ref": "#/$defs/text" },
+        "storage": { "$ref": "#/$defs/text" },
+        "prep": { "$ref": "#/$defs/text" },
+        "technique": { "$ref": "#/$defs/text" },
+        "pairings": { "type": "array", "minItems": 2, "uniqueItems": true, "items": { "$ref": "#/$defs/text" } },
+        "substitutions": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "$ref": "#/$defs/text" } },
+        "nutrientsEn": { "$ref": "#/$defs/text" },
+        "sourceUrl": { "type": "string", "pattern": "^https://" },
+        "curatedRecipes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["title", "url", "source", "why", "difficulty", "timeMinutes"],
+            "properties": {
+              "title": { "$ref": "#/$defs/text" },
+              "url": { "type": "string", "pattern": "^https://" },
+              "source": { "$ref": "#/$defs/text" },
+              "why": { "$ref": "#/$defs/text" },
+              "difficulty": { "enum": ["easy", "medium", "hard"] },
+              "timeMinutes": { "type": "integer", "minimum": 1 }
+            }
+          }
+        }
+      }
+    }
+  }
+}

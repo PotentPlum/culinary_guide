@@ -1,0 +1,2573 @@
+{
+  "schemaVersion": 1,
+  "description": "Golden input/output pairs for the recipe ingestion parser, recorded from the passing TypeScript test suite (web/lib/recipeIngestion.test.ts @ cf3ec39). The Kotlin port must reproduce every result exactly; 'error' means the call must throw RecipeIngestionError with that code.",
+  "cases": [
+    {
+      "test": "parseIso8601Duration > parses minutes only — PT20M",
+      "fn": "parseIso8601Duration",
+      "args": [
+        "PT20M"
+      ],
+      "result": 20
+    },
+    {
+      "test": "parseIso8601Duration > parses hours and minutes — PT1H15M",
+      "fn": "parseIso8601Duration",
+      "args": [
+        "PT1H15M"
+      ],
+      "result": 75
+    },
+    {
+      "test": "parseIso8601Duration > parses hours only — PT2H",
+      "fn": "parseIso8601Duration",
+      "args": [
+        "PT2H"
+      ],
+      "result": 120
+    },
+    {
+      "test": "parseIso8601Duration > parses days — P1DT30M",
+      "fn": "parseIso8601Duration",
+      "args": [
+        "P1DT30M"
+      ],
+      "result": 1470
+    },
+    {
+      "test": "parseIso8601Duration > rounds seconds up to next minute — PT1M30S",
+      "fn": "parseIso8601Duration",
+      "args": [
+        "PT1M30S"
+      ],
+      "result": 2
+    },
+    {
+      "test": "parseIso8601Duration > returns null for empty string",
+      "fn": "parseIso8601Duration",
+      "args": [
+        ""
+      ],
+      "result": null
+    },
+    {
+      "test": "parseIso8601Duration > returns null for null input",
+      "fn": "parseIso8601Duration",
+      "args": [
+        null
+      ],
+      "result": null
+    },
+    {
+      "test": "parseIso8601Duration > returns null for undefined input",
+      "fn": "parseIso8601Duration",
+      "args": [
+        null
+      ],
+      "result": null
+    },
+    {
+      "test": "parseIso8601Duration > returns null for non-ISO strings",
+      "fn": "parseIso8601Duration",
+      "args": [
+        "30 minutes"
+      ],
+      "result": null
+    },
+    {
+      "test": "parseIso8601Duration > returns null for non-ISO strings",
+      "fn": "parseIso8601Duration",
+      "args": [
+        "20"
+      ],
+      "result": null
+    },
+    {
+      "test": "parseIso8601Duration > returns null for a valid but zero-value duration",
+      "fn": "parseIso8601Duration",
+      "args": [
+        "PT0M"
+      ],
+      "result": null
+    },
+    {
+      "test": "cleanText > converts ring-above to degree sign",
+      "fn": "cleanText",
+      "args": [
+        "180˚C"
+      ],
+      "result": "180°C"
+    },
+    {
+      "test": "cleanText > normalises curly quotes",
+      "fn": "cleanText",
+      "args": [
+        "‘hello’"
+      ],
+      "result": "'hello'"
+    },
+    {
+      "test": "cleanText > normalises curly quotes",
+      "fn": "cleanText",
+      "args": [
+        "“hello”"
+      ],
+      "result": "\"hello\""
+    },
+    {
+      "test": "cleanText > collapses internal whitespace",
+      "fn": "cleanText",
+      "args": [
+        "mix   well   then  stir"
+      ],
+      "result": "mix well then stir"
+    },
+    {
+      "test": "cleanText > trims leading and trailing whitespace",
+      "fn": "cleanText",
+      "args": [
+        "  hello  "
+      ],
+      "result": "hello"
+    },
+    {
+      "test": "extractJsonLdBlocks > extracts a single block",
+      "fn": "extractJsonLdBlocks",
+      "args": [
+        "<!DOCTYPE html><html><head>\n<script type=\"application/ld+json\">{\"@type\":\"WebPage\"}</script>\n</head><body></body></html>"
+      ],
+      "result": [
+        {
+          "@type": "WebPage"
+        }
+      ]
+    },
+    {
+      "test": "extractJsonLdBlocks > extracts multiple blocks from one page",
+      "fn": "extractJsonLdBlocks",
+      "args": [
+        "<html><head>\n      <script type=\"application/ld+json\">{\"@type\":\"WebPage\"}</script>\n      <script type=\"application/ld+json\">{\"@type\":\"Recipe\",\"name\":\"Soup\"}</script>\n    </head></html>"
+      ],
+      "result": [
+        {
+          "@type": "WebPage"
+        },
+        {
+          "@type": "Recipe",
+          "name": "Soup"
+        }
+      ]
+    },
+    {
+      "test": "extractJsonLdBlocks > silently skips malformed JSON blocks",
+      "fn": "extractJsonLdBlocks",
+      "args": [
+        "<html><head>\n      <script type=\"application/ld+json\">{ BROKEN JSON }</script>\n      <script type=\"application/ld+json\">{\"@type\":\"Recipe\",\"name\":\"Cake\"}</script>\n    </head></html>"
+      ],
+      "result": [
+        {
+          "@type": "Recipe",
+          "name": "Cake"
+        }
+      ]
+    },
+    {
+      "test": "extractJsonLdBlocks > returns empty array when no ld+json blocks present",
+      "fn": "extractJsonLdBlocks",
+      "args": [
+        "<html><body>No structured data</body></html>"
+      ],
+      "result": []
+    },
+    {
+      "test": "extractJsonLdBlocks > handles single-quoted type attribute",
+      "fn": "extractJsonLdBlocks",
+      "args": [
+        "<script type='application/ld+json'>{\"@type\":\"Recipe\",\"name\":\"X\"}</script>"
+      ],
+      "result": [
+        {
+          "@type": "Recipe",
+          "name": "X"
+        }
+      ]
+    },
+    {
+      "test": "findRecipeNode — root object > finds a root-level Recipe node",
+      "fn": "findRecipeNode",
+      "args": [
+        {
+          "@type": "Recipe",
+          "name": "Pancakes"
+        }
+      ],
+      "result": {
+        "@type": "Recipe",
+        "name": "Pancakes"
+      }
+    },
+    {
+      "test": "findRecipeNode — root object > handles @type as an array containing Recipe",
+      "fn": "findRecipeNode",
+      "args": [
+        {
+          "@type": [
+            "Thing",
+            "Recipe"
+          ],
+          "name": "Soup"
+        }
+      ],
+      "result": {
+        "@type": [
+          "Thing",
+          "Recipe"
+        ],
+        "name": "Soup"
+      }
+    },
+    {
+      "test": "findRecipeNode — root object > returns null for non-recipe objects",
+      "fn": "findRecipeNode",
+      "args": [
+        {
+          "@type": "WebPage",
+          "name": "Home"
+        }
+      ],
+      "result": null
+    },
+    {
+      "test": "findRecipeNode — root object > returns null for primitives",
+      "fn": "findRecipeNode",
+      "args": [
+        null
+      ],
+      "result": null
+    },
+    {
+      "test": "findRecipeNode — root object > returns null for primitives",
+      "fn": "findRecipeNode",
+      "args": [
+        "string"
+      ],
+      "result": null
+    },
+    {
+      "test": "findRecipeNode — root object > returns null for primitives",
+      "fn": "findRecipeNode",
+      "args": [
+        42
+      ],
+      "result": null
+    },
+    {
+      "test": "findRecipeNode — @graph layout > finds Recipe inside a @graph array",
+      "fn": "findRecipeNode",
+      "args": [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "WebSite",
+              "name": "Food Blog"
+            },
+            {
+              "@type": "WebPage",
+              "name": "About"
+            },
+            {
+              "@type": "Recipe",
+              "name": "Apple Tart"
+            }
+          ]
+        }
+      ],
+      "result": {
+        "@type": "Recipe",
+        "name": "Apple Tart"
+      }
+    },
+    {
+      "test": "findRecipeNode — @graph layout > finds Recipe nested inside a @graph item",
+      "fn": "findRecipeNode",
+      "args": [
+        {
+          "@graph": [
+            {
+              "@type": "WebPage",
+              "mainEntity": {
+                "@type": "Recipe",
+                "name": "Nested Pie"
+              }
+            }
+          ]
+        }
+      ],
+      "result": {
+        "@type": "Recipe",
+        "name": "Nested Pie"
+      }
+    },
+    {
+      "test": "findRecipeNode — @graph layout > returns null when @graph contains no Recipe",
+      "fn": "findRecipeNode",
+      "args": [
+        {
+          "@graph": [
+            {
+              "@type": "WebSite"
+            },
+            {
+              "@type": "BreadcrumbList"
+            }
+          ]
+        }
+      ],
+      "result": null
+    },
+    {
+      "test": "findRecipeNode — mainEntity wrapper > finds Recipe inside mainEntity",
+      "fn": "findRecipeNode",
+      "args": [
+        {
+          "@type": "WebPage",
+          "mainEntity": {
+            "@type": "Recipe",
+            "name": "Stroopwafel"
+          }
+        }
+      ],
+      "result": {
+        "@type": "Recipe",
+        "name": "Stroopwafel"
+      }
+    },
+    {
+      "test": "findRecipeNode — mainEntity wrapper > finds Recipe inside mainEntityOfPage",
+      "fn": "findRecipeNode",
+      "args": [
+        {
+          "mainEntityOfPage": {
+            "@type": "Recipe",
+            "name": "Erwtensoep"
+          }
+        }
+      ],
+      "result": {
+        "@type": "Recipe",
+        "name": "Erwtensoep"
+      }
+    },
+    {
+      "test": "findRecipeNode — flat array at root > finds Recipe in a root-level array",
+      "fn": "findRecipeNode",
+      "args": [
+        [
+          {
+            "@type": "Organization"
+          },
+          {
+            "@type": "Recipe",
+            "name": "Appelmoes"
+          }
+        ]
+      ],
+      "result": {
+        "@type": "Recipe",
+        "name": "Appelmoes"
+      }
+    },
+    {
+      "test": "isIngredientHeader > detects colon-terminated strings",
+      "fn": "isIngredientHeader",
+      "args": [
+        "For the crust:"
+      ],
+      "result": true
+    },
+    {
+      "test": "isIngredientHeader > detects colon-terminated strings",
+      "fn": "isIngredientHeader",
+      "args": [
+        "Sauce:"
+      ],
+      "result": true
+    },
+    {
+      "test": "isIngredientHeader > detects all-uppercase strings without digits",
+      "fn": "isIngredientHeader",
+      "args": [
+        "DRESSING"
+      ],
+      "result": true
+    },
+    {
+      "test": "isIngredientHeader > detects all-uppercase strings without digits",
+      "fn": "isIngredientHeader",
+      "args": [
+        "FOR THE SAUCE"
+      ],
+      "result": true
+    },
+    {
+      "test": "isIngredientHeader > does not flag mixed-case ingredient lines",
+      "fn": "isIngredientHeader",
+      "args": [
+        "200g plain flour"
+      ],
+      "result": false
+    },
+    {
+      "test": "isIngredientHeader > does not flag mixed-case ingredient lines",
+      "fn": "isIngredientHeader",
+      "args": [
+        "2 large eggs"
+      ],
+      "result": false
+    },
+    {
+      "test": "isIngredientHeader > does not flag uppercase strings with digits",
+      "fn": "isIngredientHeader",
+      "args": [
+        "2 CUPS FLOUR"
+      ],
+      "result": false
+    },
+    {
+      "test": "isIngredientHeader > does not flag single-character strings",
+      "fn": "isIngredientHeader",
+      "args": [
+        "A"
+      ],
+      "result": false
+    },
+    {
+      "test": "isIngredientHeader > returns false for empty strings",
+      "fn": "isIngredientHeader",
+      "args": [
+        ""
+      ],
+      "result": false
+    },
+    {
+      "test": "isIngredientHeader > returns false for empty strings",
+      "fn": "isIngredientHeader",
+      "args": [
+        "   "
+      ],
+      "result": false
+    },
+    {
+      "test": "parseIngredientSections — no headers > groups all items under default 'Ingredients' section",
+      "fn": "parseIngredientSections",
+      "args": [
+        [
+          "200g flour",
+          "2 eggs",
+          "100ml milk"
+        ]
+      ],
+      "result": [
+        {
+          "sectionName": "Ingredients",
+          "ingredients": [
+            {
+              "text": "200g flour"
+            },
+            {
+              "text": "2 eggs"
+            },
+            {
+              "text": "100ml milk"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "test": "parseIngredientSections — no headers > returns a single empty section for an empty array",
+      "fn": "parseIngredientSections",
+      "args": [
+        []
+      ],
+      "result": [
+        {
+          "sectionName": "Ingredients",
+          "ingredients": []
+        }
+      ]
+    },
+    {
+      "test": "parseIngredientSections — colon headers > splits ingredients at colon-terminated dividers",
+      "fn": "parseIngredientSections",
+      "args": [
+        [
+          "For the crust:",
+          "200g butter",
+          "300g flour",
+          "For the filling:",
+          "4 apples",
+          "2 tbsp sugar"
+        ]
+      ],
+      "result": [
+        {
+          "sectionName": "For the crust",
+          "ingredients": [
+            {
+              "text": "200g butter"
+            },
+            {
+              "text": "300g flour"
+            }
+          ]
+        },
+        {
+          "sectionName": "For the filling",
+          "ingredients": [
+            {
+              "text": "4 apples"
+            },
+            {
+              "text": "2 tbsp sugar"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "test": "parseIngredientSections — colon headers > handles list that begins immediately with a header",
+      "fn": "parseIngredientSections",
+      "args": [
+        [
+          "For the dough:",
+          "500g flour",
+          "7g yeast"
+        ]
+      ],
+      "result": [
+        {
+          "sectionName": "For the dough",
+          "ingredients": [
+            {
+              "text": "500g flour"
+            },
+            {
+              "text": "7g yeast"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "test": "parseIngredientSections — uppercase headers > splits ingredients at all-uppercase dividers",
+      "fn": "parseIngredientSections",
+      "args": [
+        [
+          "DRESSING",
+          "3 tbsp olive oil",
+          "1 tbsp vinegar",
+          "SALAD",
+          "100g lettuce"
+        ]
+      ],
+      "result": [
+        {
+          "sectionName": "DRESSING",
+          "ingredients": [
+            {
+              "text": "3 tbsp olive oil"
+            },
+            {
+              "text": "1 tbsp vinegar"
+            }
+          ]
+        },
+        {
+          "sectionName": "SALAD",
+          "ingredients": [
+            {
+              "text": "100g lettuce"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "test": "parseIngredientSections — mixed headers > handles a mix of colon and uppercase headers in one list",
+      "fn": "parseIngredientSections",
+      "args": [
+        [
+          "For the base:",
+          "200g biscuits",
+          "TOPPING",
+          "300g cream cheese",
+          "100g sugar"
+        ]
+      ],
+      "result": [
+        {
+          "sectionName": "For the base",
+          "ingredients": [
+            {
+              "text": "200g biscuits"
+            }
+          ]
+        },
+        {
+          "sectionName": "TOPPING",
+          "ingredients": [
+            {
+              "text": "300g cream cheese"
+            },
+            {
+              "text": "100g sugar"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "test": "parseIngredientSections — mixed headers > cleans unicode artifacts in ingredient text",
+      "fn": "parseIngredientSections",
+      "args": [
+        [
+          "200g butter",
+          "Bake at 180˚C"
+        ]
+      ],
+      "result": [
+        {
+          "sectionName": "Ingredients",
+          "ingredients": [
+            {
+              "text": "200g butter"
+            },
+            {
+              "text": "Bake at 180°C"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "test": "parseInstructionSections — flat string array > wraps plain strings in a single Instructions section",
+      "fn": "parseInstructionSections",
+      "args": [
+        [
+          "Mix the ingredients.",
+          "Pour into a pan.",
+          "Bake 30 minutes."
+        ]
+      ],
+      "result": [
+        {
+          "sectionName": "Instructions",
+          "steps": [
+            {
+              "stepNumber": 1,
+              "text": "Mix the ingredients."
+            },
+            {
+              "stepNumber": 2,
+              "text": "Pour into a pan."
+            },
+            {
+              "stepNumber": 3,
+              "text": "Bake 30 minutes."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "test": "parseInstructionSections — HowToStep objects > extracts .text from HowToStep objects into a single section",
+      "fn": "parseInstructionSections",
+      "args": [
+        [
+          {
+            "@type": "HowToStep",
+            "text": "Preheat oven to 200°C."
+          },
+          {
+            "@type": "HowToStep",
+            "text": "Grease a baking tin."
+          },
+          {
+            "@type": "HowToStep",
+            "text": "Bake for 25 minutes."
+          }
+        ]
+      ],
+      "result": [
+        {
+          "sectionName": "Instructions",
+          "steps": [
+            {
+              "stepNumber": 1,
+              "text": "Preheat oven to 200°C."
+            },
+            {
+              "stepNumber": 2,
+              "text": "Grease a baking tin."
+            },
+            {
+              "stepNumber": 3,
+              "text": "Bake for 25 minutes."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "test": "parseInstructionSections — HowToStep objects > assigns sequential step numbers starting at 1",
+      "fn": "parseInstructionSections",
+      "args": [
+        [
+          {
+            "@type": "HowToStep",
+            "text": "Step A"
+          },
+          {
+            "@type": "HowToStep",
+            "text": "Step B"
+          }
+        ]
+      ],
+      "result": [
+        {
+          "sectionName": "Instructions",
+          "steps": [
+            {
+              "stepNumber": 1,
+              "text": "Step A"
+            },
+            {
+              "stepNumber": 2,
+              "text": "Step B"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "test": "parseInstructionSections — HowToSection objects > creates one InstructionSection per HowToSection",
+      "fn": "parseInstructionSections",
+      "args": [
+        [
+          {
+            "@type": "HowToSection",
+            "name": "Make the dough",
+            "itemListElement": [
+              {
+                "@type": "HowToStep",
+                "text": "Combine flour and yeast."
+              },
+              {
+                "@type": "HowToStep",
+                "text": "Knead for 10 minutes."
+              }
+            ]
+          },
+          {
+            "@type": "HowToSection",
+            "name": "Bake",
+            "itemListElement": [
+              {
+                "@type": "HowToStep",
+                "text": "Preheat oven to 220˚C."
+              },
+              {
+                "@type": "HowToStep",
+                "text": "Bake for 30 minutes."
+              }
+            ]
+          }
+        ]
+      ],
+      "result": [
+        {
+          "sectionName": "Make the dough",
+          "steps": [
+            {
+              "stepNumber": 1,
+              "text": "Combine flour and yeast."
+            },
+            {
+              "stepNumber": 2,
+              "text": "Knead for 10 minutes."
+            }
+          ]
+        },
+        {
+          "sectionName": "Bake",
+          "steps": [
+            {
+              "stepNumber": 1,
+              "text": "Preheat oven to 220°C."
+            },
+            {
+              "stepNumber": 2,
+              "text": "Bake for 30 minutes."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "test": "parseInstructionSections — HowToSection objects > resets stepNumber to 1 for each section",
+      "fn": "parseInstructionSections",
+      "args": [
+        [
+          {
+            "@type": "HowToSection",
+            "name": "Prep",
+            "itemListElement": [
+              {
+                "@type": "HowToStep",
+                "text": "Chop vegetables."
+              },
+              {
+                "@type": "HowToStep",
+                "text": "Boil water."
+              }
+            ]
+          },
+          {
+            "@type": "HowToSection",
+            "name": "Cook",
+            "itemListElement": [
+              {
+                "@type": "HowToStep",
+                "text": "Add vegetables."
+              }
+            ]
+          }
+        ]
+      ],
+      "result": [
+        {
+          "sectionName": "Prep",
+          "steps": [
+            {
+              "stepNumber": 1,
+              "text": "Chop vegetables."
+            },
+            {
+              "stepNumber": 2,
+              "text": "Boil water."
+            }
+          ]
+        },
+        {
+          "sectionName": "Cook",
+          "steps": [
+            {
+              "stepNumber": 1,
+              "text": "Add vegetables."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "test": "parseInstructionSections — edge cases > returns empty array for null/undefined",
+      "fn": "parseInstructionSections",
+      "args": [
+        null
+      ],
+      "result": []
+    },
+    {
+      "test": "parseInstructionSections — edge cases > returns empty array for null/undefined",
+      "fn": "parseInstructionSections",
+      "args": [
+        null
+      ],
+      "result": []
+    },
+    {
+      "test": "parseInstructionSections — edge cases > wraps a single string (non-array) in a section",
+      "fn": "parseInstructionSections",
+      "args": [
+        "Mix everything together."
+      ],
+      "result": [
+        {
+          "sectionName": "Instructions",
+          "steps": [
+            {
+              "stepNumber": 1,
+              "text": "Mix everything together."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "test": "ingestRecipeFromHtml — root-level recipe > parses a straightforward root-level Recipe",
+      "fn": "ingestRecipeFromHtml",
+      "args": [
+        "<!DOCTYPE html><html><head>\n<script type=\"application/ld+json\">{\"@context\":\"https://schema.org\",\"@type\":\"Recipe\",\"name\":\"Test Recipe\",\"description\":\"A test recipe.\",\"prepTime\":\"PT10M\",\"cookTime\":\"PT20M\",\"totalTime\":\"PT30M\",\"recipeCuisine\":\"Dutch\",\"recipeCategory\":\"Dinner\",\"nutrition\":{\"@type\":\"NutritionInformation\",\"calories\":\"350 kcal\",\"proteinContent\":\"12g\",\"carbohydrateContent\":\"45g\",\"fatContent\":\"8g\"},\"recipeIngredient\":[\"200g flour\",\"2 eggs\",\"100ml milk\"],\"recipeInstructions\":[{\"@type\":\"HowToStep\",\"text\":\"Mix flour and eggs.\"},{\"@type\":\"HowToStep\",\"text\":\"Add milk slowly.\"}]}</script>\n</head><body></body></html>"
+      ],
+      "result": {
+        "title": "Test Recipe",
+        "description": "A test recipe.",
+        "prepTimeMinutes": 10,
+        "cookTimeMinutes": 20,
+        "totalTimeMinutes": 30,
+        "servings": null,
+        "cuisine": "Dutch",
+        "category": "Dinner",
+        "keywords": [],
+        "image": null,
+        "author": null,
+        "suitableForDiet": [],
+        "datePublished": null,
+        "aggregateRating": null,
+        "video": null,
+        "nutrition": {
+          "calories": "350 kcal",
+          "protein": "12g",
+          "carbs": "45g",
+          "fat": "8g"
+        },
+        "ingredientSections": [
+          {
+            "sectionName": "Ingredients",
+            "ingredients": [
+              {
+                "text": "200g flour"
+              },
+              {
+                "text": "2 eggs"
+              },
+              {
+                "text": "100ml milk"
+              }
+            ]
+          }
+        ],
+        "instructionSections": [
+          {
+            "sectionName": "Instructions",
+            "steps": [
+              {
+                "stepNumber": 1,
+                "text": "Mix flour and eggs."
+              },
+              {
+                "stepNumber": 2,
+                "text": "Add milk slowly."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "test": "ingestRecipeFromHtml — root-level recipe > normalises nutrition fields",
+      "fn": "ingestRecipeFromHtml",
+      "args": [
+        "<!DOCTYPE html><html><head>\n<script type=\"application/ld+json\">{\"@context\":\"https://schema.org\",\"@type\":\"Recipe\",\"name\":\"Test Recipe\",\"description\":\"A test recipe.\",\"prepTime\":\"PT10M\",\"cookTime\":\"PT20M\",\"totalTime\":\"PT30M\",\"recipeCuisine\":\"Dutch\",\"recipeCategory\":\"Dinner\",\"nutrition\":{\"@type\":\"NutritionInformation\",\"calories\":\"350 kcal\",\"proteinContent\":\"12g\",\"carbohydrateContent\":\"45g\",\"fatContent\":\"8g\"},\"recipeIngredient\":[\"200g flour\",\"2 eggs\",\"100ml milk\"],\"recipeInstructions\":[{\"@type\":\"HowToStep\",\"text\":\"Mix flour and eggs.\"},{\"@type\":\"HowToStep\",\"text\":\"Add milk slowly.\"}]}</script>\n</head><body></body></html>"
+      ],
+      "result": {
+        "title": "Test Recipe",
+        "description": "A test recipe.",
+        "prepTimeMinutes": 10,
+        "cookTimeMinutes": 20,
+        "totalTimeMinutes": 30,
+        "servings": null,
+        "cuisine": "Dutch",
+        "category": "Dinner",
+        "keywords": [],
+        "image": null,
+        "author": null,
+        "suitableForDiet": [],
+        "datePublished": null,
+        "aggregateRating": null,
+        "video": null,
+        "nutrition": {
+          "calories": "350 kcal",
+          "protein": "12g",
+          "carbs": "45g",
+          "fat": "8g"
+        },
+        "ingredientSections": [
+          {
+            "sectionName": "Ingredients",
+            "ingredients": [
+              {
+                "text": "200g flour"
+              },
+              {
+                "text": "2 eggs"
+              },
+              {
+                "text": "100ml milk"
+              }
+            ]
+          }
+        ],
+        "instructionSections": [
+          {
+            "sectionName": "Instructions",
+            "steps": [
+              {
+                "stepNumber": 1,
+                "text": "Mix flour and eggs."
+              },
+              {
+                "stepNumber": 2,
+                "text": "Add milk slowly."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "test": "ingestRecipeFromHtml — root-level recipe > returns null nutrition fields when absent",
+      "fn": "ingestRecipeFromHtml",
+      "args": [
+        "<!DOCTYPE html><html><head>\n<script type=\"application/ld+json\">{\"@type\":\"Recipe\",\"name\":\"Test Recipe\",\"description\":\"A test recipe.\",\"prepTime\":\"PT10M\",\"cookTime\":\"PT20M\",\"totalTime\":\"PT30M\",\"recipeCuisine\":\"Dutch\",\"recipeCategory\":\"Dinner\",\"recipeIngredient\":[\"200g flour\",\"2 eggs\",\"100ml milk\"],\"recipeInstructions\":[{\"@type\":\"HowToStep\",\"text\":\"Mix flour and eggs.\"},{\"@type\":\"HowToStep\",\"text\":\"Add milk slowly.\"}]}</script>\n</head><body></body></html>"
+      ],
+      "result": {
+        "title": "Test Recipe",
+        "description": "A test recipe.",
+        "prepTimeMinutes": 10,
+        "cookTimeMinutes": 20,
+        "totalTimeMinutes": 30,
+        "servings": null,
+        "cuisine": "Dutch",
+        "category": "Dinner",
+        "keywords": [],
+        "image": null,
+        "author": null,
+        "suitableForDiet": [],
+        "datePublished": null,
+        "aggregateRating": null,
+        "video": null,
+        "nutrition": {
+          "calories": null,
+          "protein": null,
+          "carbs": null,
+          "fat": null
+        },
+        "ingredientSections": [
+          {
+            "sectionName": "Ingredients",
+            "ingredients": [
+              {
+                "text": "200g flour"
+              },
+              {
+                "text": "2 eggs"
+              },
+              {
+                "text": "100ml milk"
+              }
+            ]
+          }
+        ],
+        "instructionSections": [
+          {
+            "sectionName": "Instructions",
+            "steps": [
+              {
+                "stepNumber": 1,
+                "text": "Mix flour and eggs."
+              },
+              {
+                "stepNumber": 2,
+                "text": "Add milk slowly."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "test": "ingestRecipeFromHtml — root-level recipe > parses ingredients into default section",
+      "fn": "ingestRecipeFromHtml",
+      "args": [
+        "<!DOCTYPE html><html><head>\n<script type=\"application/ld+json\">{\"@type\":\"Recipe\",\"name\":\"Test Recipe\",\"description\":\"A test recipe.\",\"prepTime\":\"PT10M\",\"cookTime\":\"PT20M\",\"totalTime\":\"PT30M\",\"recipeCuisine\":\"Dutch\",\"recipeCategory\":\"Dinner\",\"nutrition\":{\"@type\":\"NutritionInformation\",\"calories\":\"350 kcal\",\"proteinContent\":\"12g\",\"carbohydrateContent\":\"45g\",\"fatContent\":\"8g\"},\"recipeIngredient\":[\"200g flour\",\"2 eggs\",\"100ml milk\"],\"recipeInstructions\":[{\"@type\":\"HowToStep\",\"text\":\"Mix flour and eggs.\"},{\"@type\":\"HowToStep\",\"text\":\"Add milk slowly.\"}]}</script>\n</head><body></body></html>"
+      ],
+      "result": {
+        "title": "Test Recipe",
+        "description": "A test recipe.",
+        "prepTimeMinutes": 10,
+        "cookTimeMinutes": 20,
+        "totalTimeMinutes": 30,
+        "servings": null,
+        "cuisine": "Dutch",
+        "category": "Dinner",
+        "keywords": [],
+        "image": null,
+        "author": null,
+        "suitableForDiet": [],
+        "datePublished": null,
+        "aggregateRating": null,
+        "video": null,
+        "nutrition": {
+          "calories": "350 kcal",
+          "protein": "12g",
+          "carbs": "45g",
+          "fat": "8g"
+        },
+        "ingredientSections": [
+          {
+            "sectionName": "Ingredients",
+            "ingredients": [
+              {
+                "text": "200g flour"
+              },
+              {
+                "text": "2 eggs"
+              },
+              {
+                "text": "100ml milk"
+              }
+            ]
+          }
+        ],
+        "instructionSections": [
+          {
+            "sectionName": "Instructions",
+            "steps": [
+              {
+                "stepNumber": 1,
+                "text": "Mix flour and eggs."
+              },
+              {
+                "stepNumber": 2,
+                "text": "Add milk slowly."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "test": "ingestRecipeFromHtml — @graph layout > finds Recipe inside a @graph block alongside other node types",
+      "fn": "ingestRecipeFromHtml",
+      "args": [
+        "<!DOCTYPE html><html><head>\n<script type=\"application/ld+json\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"WebSite\",\"url\":\"https://example.com\"},{\"@type\":\"BreadcrumbList\"},{\"@type\":\"Recipe\",\"name\":\"Test Recipe\",\"description\":\"A test recipe.\",\"prepTime\":\"PT10M\",\"cookTime\":\"PT20M\",\"totalTime\":\"PT30M\",\"recipeCuisine\":\"Dutch\",\"recipeCategory\":\"Dinner\",\"nutrition\":{\"@type\":\"NutritionInformation\",\"calories\":\"350 kcal\",\"proteinContent\":\"12g\",\"carbohydrateContent\":\"45g\",\"fatContent\":\"8g\"},\"recipeIngredient\":[\"200g flour\",\"2 eggs\",\"100ml milk\"],\"recipeInstructions\":[{\"@type\":\"HowToStep\",\"text\":\"Mix flour and eggs.\"},{\"@type\":\"HowToStep\",\"text\":\"Add milk slowly.\"}]}]}</script>\n</head><body></body></html>"
+      ],
+      "result": {
+        "title": "Test Recipe",
+        "description": "A test recipe.",
+        "prepTimeMinutes": 10,
+        "cookTimeMinutes": 20,
+        "totalTimeMinutes": 30,
+        "servings": null,
+        "cuisine": "Dutch",
+        "category": "Dinner",
+        "keywords": [],
+        "image": null,
+        "author": null,
+        "suitableForDiet": [],
+        "datePublished": null,
+        "aggregateRating": null,
+        "video": null,
+        "nutrition": {
+          "calories": "350 kcal",
+          "protein": "12g",
+          "carbs": "45g",
+          "fat": "8g"
+        },
+        "ingredientSections": [
+          {
+            "sectionName": "Ingredients",
+            "ingredients": [
+              {
+                "text": "200g flour"
+              },
+              {
+                "text": "2 eggs"
+              },
+              {
+                "text": "100ml milk"
+              }
+            ]
+          }
+        ],
+        "instructionSections": [
+          {
+            "sectionName": "Instructions",
+            "steps": [
+              {
+                "stepNumber": 1,
+                "text": "Mix flour and eggs."
+              },
+              {
+                "stepNumber": 2,
+                "text": "Add milk slowly."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "test": "ingestRecipeFromHtml — @graph layout > finds Recipe nested inside a @graph item's mainEntity",
+      "fn": "ingestRecipeFromHtml",
+      "args": [
+        "<!DOCTYPE html><html><head>\n<script type=\"application/ld+json\">{\"@graph\":[{\"@type\":\"WebSite\"},{\"@type\":\"WebPage\",\"mainEntity\":{\"@type\":\"Recipe\",\"name\":\"Test Recipe\",\"description\":\"A test recipe.\",\"prepTime\":\"PT10M\",\"cookTime\":\"PT20M\",\"totalTime\":\"PT30M\",\"recipeCuisine\":\"Dutch\",\"recipeCategory\":\"Dinner\",\"nutrition\":{\"@type\":\"NutritionInformation\",\"calories\":\"350 kcal\",\"proteinContent\":\"12g\",\"carbohydrateContent\":\"45g\",\"fatContent\":\"8g\"},\"recipeIngredient\":[\"200g flour\",\"2 eggs\",\"100ml milk\"],\"recipeInstructions\":[{\"@type\":\"HowToStep\",\"text\":\"Mix flour and eggs.\"},{\"@type\":\"HowToStep\",\"text\":\"Add milk slowly.\"}]}}]}</script>\n</head><body></body></html>"
+      ],
+      "result": {
+        "title": "Test Recipe",
+        "description": "A test recipe.",
+        "prepTimeMinutes": 10,
+        "cookTimeMinutes": 20,
+        "totalTimeMinutes": 30,
+        "servings": null,
+        "cuisine": "Dutch",
+        "category": "Dinner",
+        "keywords": [],
+        "image": null,
+        "author": null,
+        "suitableForDiet": [],
+        "datePublished": null,
+        "aggregateRating": null,
+        "video": null,
+        "nutrition": {
+          "calories": "350 kcal",
+          "protein": "12g",
+          "carbs": "45g",
+          "fat": "8g"
+        },
+        "ingredientSections": [
+          {
+            "sectionName": "Ingredients",
+            "ingredients": [
+              {
+                "text": "200g flour"
+              },
+              {
+                "text": "2 eggs"
+              },
+              {
+                "text": "100ml milk"
+              }
+            ]
+          }
+        ],
+        "instructionSections": [
+          {
+            "sectionName": "Instructions",
+            "steps": [
+              {
+                "stepNumber": 1,
+                "text": "Mix flour and eggs."
+              },
+              {
+                "stepNumber": 2,
+                "text": "Add milk slowly."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "test": "ingestRecipeFromHtml — @graph layout > handles multiple JSON-LD script tags — uses the one with Recipe",
+      "fn": "ingestRecipeFromHtml",
+      "args": [
+        "<!DOCTYPE html><html><head>\n      <script type=\"application/ld+json\">{\"@type\":\"WebSite\",\"name\":\"Food Blog\"}</script>\n      <script type=\"application/ld+json\">{\"@type\":\"Recipe\",\"name\":\"Test Recipe\",\"description\":\"A test recipe.\",\"prepTime\":\"PT10M\",\"cookTime\":\"PT20M\",\"totalTime\":\"PT30M\",\"recipeCuisine\":\"Dutch\",\"recipeCategory\":\"Dinner\",\"nutrition\":{\"@type\":\"NutritionInformation\",\"calories\":\"350 kcal\",\"proteinContent\":\"12g\",\"carbohydrateContent\":\"45g\",\"fatContent\":\"8g\"},\"recipeIngredient\":[\"200g flour\",\"2 eggs\",\"100ml milk\"],\"recipeInstructions\":[{\"@type\":\"HowToStep\",\"text\":\"Mix flour and eggs.\"},{\"@type\":\"HowToStep\",\"text\":\"Add milk slowly.\"}]}</script>\n    </head><body></body></html>"
+      ],
+      "result": {
+        "title": "Test Recipe",
+        "description": "A test recipe.",
+        "prepTimeMinutes": 10,
+        "cookTimeMinutes": 20,
+        "totalTimeMinutes": 30,
+        "servings": null,
+        "cuisine": "Dutch",
+        "category": "Dinner",
+        "keywords": [],
+        "image": null,
+        "author": null,
+        "suitableForDiet": [],
+        "datePublished": null,
+        "aggregateRating": null,
+        "video": null,
+        "nutrition": {
+          "calories": "350 kcal",
+          "protein": "12g",
+          "carbs": "45g",
+          "fat": "8g"
+        },
+        "ingredientSections": [
+          {
+            "sectionName": "Ingredients",
+            "ingredients": [
+              {
+                "text": "200g flour"
+              },
+              {
+                "text": "2 eggs"
+              },
+              {
+                "text": "100ml milk"
+              }
+            ]
+          }
+        ],
+        "instructionSections": [
+          {
+            "sectionName": "Instructions",
+            "steps": [
+              {
+                "stepNumber": 1,
+                "text": "Mix flour and eggs."
+              },
+              {
+                "stepNumber": 2,
+                "text": "Add milk slowly."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "test": "ingestRecipeFromHtml — instruction layouts > handles flat string instructions",
+      "fn": "ingestRecipeFromHtml",
+      "args": [
+        "<!DOCTYPE html><html><head>\n<script type=\"application/ld+json\">{\"@type\":\"Recipe\",\"name\":\"Test Recipe\",\"description\":\"A test recipe.\",\"prepTime\":\"PT10M\",\"cookTime\":\"PT20M\",\"totalTime\":\"PT30M\",\"recipeCuisine\":\"Dutch\",\"recipeCategory\":\"Dinner\",\"nutrition\":{\"@type\":\"NutritionInformation\",\"calories\":\"350 kcal\",\"proteinContent\":\"12g\",\"carbohydrateContent\":\"45g\",\"fatContent\":\"8g\"},\"recipeIngredient\":[\"200g flour\",\"2 eggs\",\"100ml milk\"],\"recipeInstructions\":[\"Mix.\",\"Bake.\",\"Serve.\"]}</script>\n</head><body></body></html>"
+      ],
+      "result": {
+        "title": "Test Recipe",
+        "description": "A test recipe.",
+        "prepTimeMinutes": 10,
+        "cookTimeMinutes": 20,
+        "totalTimeMinutes": 30,
+        "servings": null,
+        "cuisine": "Dutch",
+        "category": "Dinner",
+        "keywords": [],
+        "image": null,
+        "author": null,
+        "suitableForDiet": [],
+        "datePublished": null,
+        "aggregateRating": null,
+        "video": null,
+        "nutrition": {
+          "calories": "350 kcal",
+          "protein": "12g",
+          "carbs": "45g",
+          "fat": "8g"
+        },
+        "ingredientSections": [
+          {
+            "sectionName": "Ingredients",
+            "ingredients": [
+              {
+                "text": "200g flour"
+              },
+              {
+                "text": "2 eggs"
+              },
+              {
+                "text": "100ml milk"
+              }
+            ]
+          }
+        ],
+        "instructionSections": [
+          {
+            "sectionName": "Instructions",
+            "steps": [
+              {
+                "stepNumber": 1,
+                "text": "Mix."
+              },
+              {
+                "stepNumber": 2,
+                "text": "Bake."
+              },
+              {
+                "stepNumber": 3,
+                "text": "Serve."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "test": "ingestRecipeFromHtml — instruction layouts > handles HowToStep array instructions",
+      "fn": "ingestRecipeFromHtml",
+      "args": [
+        "<!DOCTYPE html><html><head>\n<script type=\"application/ld+json\">{\"@type\":\"Recipe\",\"name\":\"Test Recipe\",\"description\":\"A test recipe.\",\"prepTime\":\"PT10M\",\"cookTime\":\"PT20M\",\"totalTime\":\"PT30M\",\"recipeCuisine\":\"Dutch\",\"recipeCategory\":\"Dinner\",\"nutrition\":{\"@type\":\"NutritionInformation\",\"calories\":\"350 kcal\",\"proteinContent\":\"12g\",\"carbohydrateContent\":\"45g\",\"fatContent\":\"8g\"},\"recipeIngredient\":[\"200g flour\",\"2 eggs\",\"100ml milk\"],\"recipeInstructions\":[{\"@type\":\"HowToStep\",\"text\":\"Preheat oven.\"},{\"@type\":\"HowToStep\",\"text\":\"Mix batter.\"},{\"@type\":\"HowToStep\",\"text\":\"Pour and bake.\"}]}</script>\n</head><body></body></html>"
+      ],
+      "result": {
+        "title": "Test Recipe",
+        "description": "A test recipe.",
+        "prepTimeMinutes": 10,
+        "cookTimeMinutes": 20,
+        "totalTimeMinutes": 30,
+        "servings": null,
+        "cuisine": "Dutch",
+        "category": "Dinner",
+        "keywords": [],
+        "image": null,
+        "author": null,
+        "suitableForDiet": [],
+        "datePublished": null,
+        "aggregateRating": null,
+        "video": null,
+        "nutrition": {
+          "calories": "350 kcal",
+          "protein": "12g",
+          "carbs": "45g",
+          "fat": "8g"
+        },
+        "ingredientSections": [
+          {
+            "sectionName": "Ingredients",
+            "ingredients": [
+              {
+                "text": "200g flour"
+              },
+              {
+                "text": "2 eggs"
+              },
+              {
+                "text": "100ml milk"
+              }
+            ]
+          }
+        ],
+        "instructionSections": [
+          {
+            "sectionName": "Instructions",
+            "steps": [
+              {
+                "stepNumber": 1,
+                "text": "Preheat oven."
+              },
+              {
+                "stepNumber": 2,
+                "text": "Mix batter."
+              },
+              {
+                "stepNumber": 3,
+                "text": "Pour and bake."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "test": "ingestRecipeFromHtml — instruction layouts > handles HowToSection structured instructions",
+      "fn": "ingestRecipeFromHtml",
+      "args": [
+        "<!DOCTYPE html><html><head>\n<script type=\"application/ld+json\">{\"@type\":\"Recipe\",\"name\":\"Test Recipe\",\"description\":\"A test recipe.\",\"prepTime\":\"PT10M\",\"cookTime\":\"PT20M\",\"totalTime\":\"PT30M\",\"recipeCuisine\":\"Dutch\",\"recipeCategory\":\"Dinner\",\"nutrition\":{\"@type\":\"NutritionInformation\",\"calories\":\"350 kcal\",\"proteinContent\":\"12g\",\"carbohydrateContent\":\"45g\",\"fatContent\":\"8g\"},\"recipeIngredient\":[\"200g flour\",\"2 eggs\",\"100ml milk\"],\"recipeInstructions\":[{\"@type\":\"HowToSection\",\"name\":\"Prepare dough\",\"itemListElement\":[{\"@type\":\"HowToStep\",\"text\":\"Mix flour and water.\"},{\"@type\":\"HowToStep\",\"text\":\"Rest 1 hour.\"}]},{\"@type\":\"HowToSection\",\"name\":\"Bake\",\"itemListElement\":[{\"@type\":\"HowToStep\",\"text\":\"Bake at 200˚C for 20 minutes.\"}]}]}</script>\n</head><body></body></html>"
+      ],
+      "result": {
+        "title": "Test Recipe",
+        "description": "A test recipe.",
+        "prepTimeMinutes": 10,
+        "cookTimeMinutes": 20,
+        "totalTimeMinutes": 30,
+        "servings": null,
+        "cuisine": "Dutch",
+        "category": "Dinner",
+        "keywords": [],
+        "image": null,
+        "author": null,
+        "suitableForDiet": [],
+        "datePublished": null,
+        "aggregateRating": null,
+        "video": null,
+        "nutrition": {
+          "calories": "350 kcal",
+          "protein": "12g",
+          "carbs": "45g",
+          "fat": "8g"
+        },
+        "ingredientSections": [
+          {
+            "sectionName": "Ingredients",
+            "ingredients": [
+              {
+                "text": "200g flour"
+              },
+              {
+                "text": "2 eggs"
+              },
+              {
+                "text": "100ml milk"
+              }
+            ]
+          }
+        ],
+        "instructionSections": [
+          {
+            "sectionName": "Prepare dough",
+            "steps": [
+              {
+                "stepNumber": 1,
+                "text": "Mix flour and water."
+              },
+              {
+                "stepNumber": 2,
+                "text": "Rest 1 hour."
+              }
+            ]
+          },
+          {
+            "sectionName": "Bake",
+            "steps": [
+              {
+                "stepNumber": 1,
+                "text": "Bake at 200°C for 20 minutes."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "test": "ingestRecipeFromHtml — multi-section ingredients > splits ingredients at colon headers",
+      "fn": "ingestRecipeFromHtml",
+      "args": [
+        "<!DOCTYPE html><html><head>\n<script type=\"application/ld+json\">{\"@type\":\"Recipe\",\"name\":\"Test Recipe\",\"description\":\"A test recipe.\",\"prepTime\":\"PT10M\",\"cookTime\":\"PT20M\",\"totalTime\":\"PT30M\",\"recipeCuisine\":\"Dutch\",\"recipeCategory\":\"Dinner\",\"nutrition\":{\"@type\":\"NutritionInformation\",\"calories\":\"350 kcal\",\"proteinContent\":\"12g\",\"carbohydrateContent\":\"45g\",\"fatContent\":\"8g\"},\"recipeIngredient\":[\"For the pastry:\",\"250g flour\",\"125g cold butter\",\"For the filling:\",\"500g apples\",\"2 tbsp brown sugar\",\"1 tsp cinnamon\"],\"recipeInstructions\":[{\"@type\":\"HowToStep\",\"text\":\"Mix flour and eggs.\"},{\"@type\":\"HowToStep\",\"text\":\"Add milk slowly.\"}]}</script>\n</head><body></body></html>"
+      ],
+      "result": {
+        "title": "Test Recipe",
+        "description": "A test recipe.",
+        "prepTimeMinutes": 10,
+        "cookTimeMinutes": 20,
+        "totalTimeMinutes": 30,
+        "servings": null,
+        "cuisine": "Dutch",
+        "category": "Dinner",
+        "keywords": [],
+        "image": null,
+        "author": null,
+        "suitableForDiet": [],
+        "datePublished": null,
+        "aggregateRating": null,
+        "video": null,
+        "nutrition": {
+          "calories": "350 kcal",
+          "protein": "12g",
+          "carbs": "45g",
+          "fat": "8g"
+        },
+        "ingredientSections": [
+          {
+            "sectionName": "For the pastry",
+            "ingredients": [
+              {
+                "text": "250g flour"
+              },
+              {
+                "text": "125g cold butter"
+              }
+            ]
+          },
+          {
+            "sectionName": "For the filling",
+            "ingredients": [
+              {
+                "text": "500g apples"
+              },
+              {
+                "text": "2 tbsp brown sugar"
+              },
+              {
+                "text": "1 tsp cinnamon"
+              }
+            ]
+          }
+        ],
+        "instructionSections": [
+          {
+            "sectionName": "Instructions",
+            "steps": [
+              {
+                "stepNumber": 1,
+                "text": "Mix flour and eggs."
+              },
+              {
+                "stepNumber": 2,
+                "text": "Add milk slowly."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "test": "ingestRecipeFromHtml — multi-section ingredients > splits ingredients at uppercase headers",
+      "fn": "ingestRecipeFromHtml",
+      "args": [
+        "<!DOCTYPE html><html><head>\n<script type=\"application/ld+json\">{\"@type\":\"Recipe\",\"name\":\"Test Recipe\",\"description\":\"A test recipe.\",\"prepTime\":\"PT10M\",\"cookTime\":\"PT20M\",\"totalTime\":\"PT30M\",\"recipeCuisine\":\"Dutch\",\"recipeCategory\":\"Dinner\",\"nutrition\":{\"@type\":\"NutritionInformation\",\"calories\":\"350 kcal\",\"proteinContent\":\"12g\",\"carbohydrateContent\":\"45g\",\"fatContent\":\"8g\"},\"recipeIngredient\":[\"BASE\",\"200g digestive biscuits\",\"100g melted butter\",\"FILLING\",\"400g cream cheese\",\"150g sugar\"],\"recipeInstructions\":[{\"@type\":\"HowToStep\",\"text\":\"Mix flour and eggs.\"},{\"@type\":\"HowToStep\",\"text\":\"Add milk slowly.\"}]}</script>\n</head><body></body></html>"
+      ],
+      "result": {
+        "title": "Test Recipe",
+        "description": "A test recipe.",
+        "prepTimeMinutes": 10,
+        "cookTimeMinutes": 20,
+        "totalTimeMinutes": 30,
+        "servings": null,
+        "cuisine": "Dutch",
+        "category": "Dinner",
+        "keywords": [],
+        "image": null,
+        "author": null,
+        "suitableForDiet": [],
+        "datePublished": null,
+        "aggregateRating": null,
+        "video": null,
+        "nutrition": {
+          "calories": "350 kcal",
+          "protein": "12g",
+          "carbs": "45g",
+          "fat": "8g"
+        },
+        "ingredientSections": [
+          {
+            "sectionName": "BASE",
+            "ingredients": [
+              {
+                "text": "200g digestive biscuits"
+              },
+              {
+                "text": "100g melted butter"
+              }
+            ]
+          },
+          {
+            "sectionName": "FILLING",
+            "ingredients": [
+              {
+                "text": "400g cream cheese"
+              },
+              {
+                "text": "150g sugar"
+              }
+            ]
+          }
+        ],
+        "instructionSections": [
+          {
+            "sectionName": "Instructions",
+            "steps": [
+              {
+                "stepNumber": 1,
+                "text": "Mix flour and eggs."
+              },
+              {
+                "stepNumber": 2,
+                "text": "Add milk slowly."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "test": "ingestRecipeFromHtml — cuisine and category arrays > returns arrays when recipeCuisine/recipeCategory are arrays",
+      "fn": "ingestRecipeFromHtml",
+      "args": [
+        "<!DOCTYPE html><html><head>\n<script type=\"application/ld+json\">{\"@type\":\"Recipe\",\"name\":\"Test Recipe\",\"description\":\"A test recipe.\",\"prepTime\":\"PT10M\",\"cookTime\":\"PT20M\",\"totalTime\":\"PT30M\",\"recipeCuisine\":[\"Dutch\",\"Belgian\"],\"recipeCategory\":[\"Dessert\",\"Cake\"],\"nutrition\":{\"@type\":\"NutritionInformation\",\"calories\":\"350 kcal\",\"proteinContent\":\"12g\",\"carbohydrateContent\":\"45g\",\"fatContent\":\"8g\"},\"recipeIngredient\":[\"200g flour\",\"2 eggs\",\"100ml milk\"],\"recipeInstructions\":[{\"@type\":\"HowToStep\",\"text\":\"Mix flour and eggs.\"},{\"@type\":\"HowToStep\",\"text\":\"Add milk slowly.\"}]}</script>\n</head><body></body></html>"
+      ],
+      "result": {
+        "title": "Test Recipe",
+        "description": "A test recipe.",
+        "prepTimeMinutes": 10,
+        "cookTimeMinutes": 20,
+        "totalTimeMinutes": 30,
+        "servings": null,
+        "cuisine": [
+          "Dutch",
+          "Belgian"
+        ],
+        "category": [
+          "Dessert",
+          "Cake"
+        ],
+        "keywords": [],
+        "image": null,
+        "author": null,
+        "suitableForDiet": [],
+        "datePublished": null,
+        "aggregateRating": null,
+        "video": null,
+        "nutrition": {
+          "calories": "350 kcal",
+          "protein": "12g",
+          "carbs": "45g",
+          "fat": "8g"
+        },
+        "ingredientSections": [
+          {
+            "sectionName": "Ingredients",
+            "ingredients": [
+              {
+                "text": "200g flour"
+              },
+              {
+                "text": "2 eggs"
+              },
+              {
+                "text": "100ml milk"
+              }
+            ]
+          }
+        ],
+        "instructionSections": [
+          {
+            "sectionName": "Instructions",
+            "steps": [
+              {
+                "stepNumber": 1,
+                "text": "Mix flour and eggs."
+              },
+              {
+                "stepNumber": 2,
+                "text": "Add milk slowly."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "test": "ingestRecipeFromHtml — time fields > sets time fields to null when absent from node",
+      "fn": "ingestRecipeFromHtml",
+      "args": [
+        "<!DOCTYPE html><html><head>\n<script type=\"application/ld+json\">{\"@type\":\"Recipe\",\"name\":\"Test Recipe\",\"description\":\"A test recipe.\",\"recipeCuisine\":\"Dutch\",\"recipeCategory\":\"Dinner\",\"nutrition\":{\"@type\":\"NutritionInformation\",\"calories\":\"350 kcal\",\"proteinContent\":\"12g\",\"carbohydrateContent\":\"45g\",\"fatContent\":\"8g\"},\"recipeIngredient\":[\"200g flour\",\"2 eggs\",\"100ml milk\"],\"recipeInstructions\":[{\"@type\":\"HowToStep\",\"text\":\"Mix flour and eggs.\"},{\"@type\":\"HowToStep\",\"text\":\"Add milk slowly.\"}]}</script>\n</head><body></body></html>"
+      ],
+      "result": {
+        "title": "Test Recipe",
+        "description": "A test recipe.",
+        "prepTimeMinutes": null,
+        "cookTimeMinutes": null,
+        "totalTimeMinutes": null,
+        "servings": null,
+        "cuisine": "Dutch",
+        "category": "Dinner",
+        "keywords": [],
+        "image": null,
+        "author": null,
+        "suitableForDiet": [],
+        "datePublished": null,
+        "aggregateRating": null,
+        "video": null,
+        "nutrition": {
+          "calories": "350 kcal",
+          "protein": "12g",
+          "carbs": "45g",
+          "fat": "8g"
+        },
+        "ingredientSections": [
+          {
+            "sectionName": "Ingredients",
+            "ingredients": [
+              {
+                "text": "200g flour"
+              },
+              {
+                "text": "2 eggs"
+              },
+              {
+                "text": "100ml milk"
+              }
+            ]
+          }
+        ],
+        "instructionSections": [
+          {
+            "sectionName": "Instructions",
+            "steps": [
+              {
+                "stepNumber": 1,
+                "text": "Mix flour and eggs."
+              },
+              {
+                "stepNumber": 2,
+                "text": "Add milk slowly."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "test": "ingestRecipeFromHtml — time fields > correctly converts complex durations",
+      "fn": "ingestRecipeFromHtml",
+      "args": [
+        "<!DOCTYPE html><html><head>\n<script type=\"application/ld+json\">{\"@type\":\"Recipe\",\"name\":\"Test Recipe\",\"description\":\"A test recipe.\",\"prepTime\":\"PT45M\",\"cookTime\":\"PT1H30M\",\"totalTime\":\"PT2H15M\",\"recipeCuisine\":\"Dutch\",\"recipeCategory\":\"Dinner\",\"nutrition\":{\"@type\":\"NutritionInformation\",\"calories\":\"350 kcal\",\"proteinContent\":\"12g\",\"carbohydrateContent\":\"45g\",\"fatContent\":\"8g\"},\"recipeIngredient\":[\"200g flour\",\"2 eggs\",\"100ml milk\"],\"recipeInstructions\":[{\"@type\":\"HowToStep\",\"text\":\"Mix flour and eggs.\"},{\"@type\":\"HowToStep\",\"text\":\"Add milk slowly.\"}]}</script>\n</head><body></body></html>"
+      ],
+      "result": {
+        "title": "Test Recipe",
+        "description": "A test recipe.",
+        "prepTimeMinutes": 45,
+        "cookTimeMinutes": 90,
+        "totalTimeMinutes": 135,
+        "servings": null,
+        "cuisine": "Dutch",
+        "category": "Dinner",
+        "keywords": [],
+        "image": null,
+        "author": null,
+        "suitableForDiet": [],
+        "datePublished": null,
+        "aggregateRating": null,
+        "video": null,
+        "nutrition": {
+          "calories": "350 kcal",
+          "protein": "12g",
+          "carbs": "45g",
+          "fat": "8g"
+        },
+        "ingredientSections": [
+          {
+            "sectionName": "Ingredients",
+            "ingredients": [
+              {
+                "text": "200g flour"
+              },
+              {
+                "text": "2 eggs"
+              },
+              {
+                "text": "100ml milk"
+              }
+            ]
+          }
+        ],
+        "instructionSections": [
+          {
+            "sectionName": "Instructions",
+            "steps": [
+              {
+                "stepNumber": 1,
+                "text": "Mix flour and eggs."
+              },
+              {
+                "stepNumber": 2,
+                "text": "Add milk slowly."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "test": "ingestRecipeFromHtml — error handling > throws RecipeIngestionError with code UNSUPPORTED_RECIPE_FORMAT when no recipe found",
+      "fn": "ingestRecipeFromHtml",
+      "args": [
+        "<!DOCTYPE html><html><head>\n<script type=\"application/ld+json\">{\"@type\":\"WebPage\",\"name\":\"About Us\"}</script>\n</head><body></body></html>"
+      ],
+      "error": {
+        "name": "RecipeIngestionError",
+        "code": "UNSUPPORTED_RECIPE_FORMAT"
+      }
+    },
+    {
+      "test": "ingestRecipeFromHtml — error handling > throws RecipeIngestionError with code UNSUPPORTED_RECIPE_FORMAT when no recipe found",
+      "fn": "ingestRecipeFromHtml",
+      "args": [
+        "<!DOCTYPE html><html><head>\n<script type=\"application/ld+json\">{\"@type\":\"WebPage\",\"name\":\"About Us\"}</script>\n</head><body></body></html>"
+      ],
+      "error": {
+        "name": "RecipeIngestionError",
+        "code": "UNSUPPORTED_RECIPE_FORMAT"
+      }
+    },
+    {
+      "test": "ingestRecipeFromHtml — error handling > throws UNSUPPORTED_RECIPE_FORMAT when page has no JSON-LD at all",
+      "fn": "ingestRecipeFromHtml",
+      "args": [
+        "<html><body><h1>Hello world</h1></body></html>"
+      ],
+      "error": {
+        "name": "RecipeIngestionError",
+        "code": "UNSUPPORTED_RECIPE_FORMAT"
+      }
+    },
+    {
+      "test": "ingestRecipeFromHtml — error handling > throws UNSUPPORTED_RECIPE_FORMAT when all JSON-LD blocks are malformed",
+      "fn": "ingestRecipeFromHtml",
+      "args": [
+        "<script type=\"application/ld+json\">{ INVALID }</script>"
+      ],
+      "error": {
+        "name": "RecipeIngestionError",
+        "code": "UNSUPPORTED_RECIPE_FORMAT"
+      }
+    },
+    {
+      "test": "ingestRecipeFromHtml — error handling > skips a malformed JSON-LD block and finds Recipe in a later valid block",
+      "fn": "ingestRecipeFromHtml",
+      "args": [
+        "<html><head>\n      <script type=\"application/ld+json\">{ BROKEN }</script>\n      <script type=\"application/ld+json\">{\"@type\":\"Recipe\",\"name\":\"Test Recipe\",\"description\":\"A test recipe.\",\"prepTime\":\"PT10M\",\"cookTime\":\"PT20M\",\"totalTime\":\"PT30M\",\"recipeCuisine\":\"Dutch\",\"recipeCategory\":\"Dinner\",\"nutrition\":{\"@type\":\"NutritionInformation\",\"calories\":\"350 kcal\",\"proteinContent\":\"12g\",\"carbohydrateContent\":\"45g\",\"fatContent\":\"8g\"},\"recipeIngredient\":[\"200g flour\",\"2 eggs\",\"100ml milk\"],\"recipeInstructions\":[{\"@type\":\"HowToStep\",\"text\":\"Mix flour and eggs.\"},{\"@type\":\"HowToStep\",\"text\":\"Add milk slowly.\"}]}</script>\n    </head></html>"
+      ],
+      "result": {
+        "title": "Test Recipe",
+        "description": "A test recipe.",
+        "prepTimeMinutes": 10,
+        "cookTimeMinutes": 20,
+        "totalTimeMinutes": 30,
+        "servings": null,
+        "cuisine": "Dutch",
+        "category": "Dinner",
+        "keywords": [],
+        "image": null,
+        "author": null,
+        "suitableForDiet": [],
+        "datePublished": null,
+        "aggregateRating": null,
+        "video": null,
+        "nutrition": {
+          "calories": "350 kcal",
+          "protein": "12g",
+          "carbs": "45g",
+          "fat": "8g"
+        },
+        "ingredientSections": [
+          {
+            "sectionName": "Ingredients",
+            "ingredients": [
+              {
+                "text": "200g flour"
+              },
+              {
+                "text": "2 eggs"
+              },
+              {
+                "text": "100ml milk"
+              }
+            ]
+          }
+        ],
+        "instructionSections": [
+          {
+            "sectionName": "Instructions",
+            "steps": [
+              {
+                "stepNumber": 1,
+                "text": "Mix flour and eggs."
+              },
+              {
+                "stepNumber": 2,
+                "text": "Add milk slowly."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "test": "ingestRecipeFromHtml — error handling > RecipeIngestionError has correct name property",
+      "fn": "ingestRecipeFromHtml",
+      "args": [
+        "<html></html>"
+      ],
+      "error": {
+        "name": "RecipeIngestionError",
+        "code": "UNSUPPORTED_RECIPE_FORMAT"
+      }
+    },
+    {
+      "test": "stripHtml > strips simple HTML tags",
+      "fn": "stripHtml",
+      "args": [
+        "<p>Hello world</p>"
+      ],
+      "result": "Hello world "
+    },
+    {
+      "test": "stripHtml > replaces block-level closing tags with spaces",
+      "fn": "stripHtml",
+      "args": [
+        "<p>Step one.</p><p>Step two.</p>"
+      ],
+      "result": "Step one. Step two. "
+    },
+    {
+      "test": "stripHtml > replaces <br> with a space",
+      "fn": "stripHtml",
+      "args": [
+        "Line one.<br/>Line two."
+      ],
+      "result": "Line one. Line two."
+    },
+    {
+      "test": "stripHtml > decodes &amp; entity",
+      "fn": "stripHtml",
+      "args": [
+        "salt &amp; pepper"
+      ],
+      "result": "salt & pepper"
+    },
+    {
+      "test": "stripHtml > decodes &nbsp; entity",
+      "fn": "stripHtml",
+      "args": [
+        "200&nbsp;g flour"
+      ],
+      "result": "200 g flour"
+    },
+    {
+      "test": "stripHtml > decodes &#39; numeric entity",
+      "fn": "stripHtml",
+      "args": [
+        "don&#39;t burn it"
+      ],
+      "result": "don't burn it"
+    },
+    {
+      "test": "stripHtml > passes plain text through unchanged",
+      "fn": "stripHtml",
+      "args": [
+        "Mix flour and eggs."
+      ],
+      "result": "Mix flour and eggs."
+    },
+    {
+      "test": "cleanText — HTML stripping > strips HTML tags from step text",
+      "fn": "cleanText",
+      "args": [
+        "<p>Add the green papaya.</p>"
+      ],
+      "result": "Add the green papaya."
+    },
+    {
+      "test": "cleanText — HTML stripping > strips inline tags like <strong>",
+      "fn": "cleanText",
+      "args": [
+        "Mix <strong>well</strong> until combined."
+      ],
+      "result": "Mix well until combined."
+    },
+    {
+      "test": "cleanText — HTML stripping > strips and normalises nested HTML with entities",
+      "fn": "cleanText",
+      "args": [
+        "<p>Heat oil at 180&nbsp;°C.</p>"
+      ],
+      "result": "Heat oil at 180 °C."
+    },
+    {
+      "test": "parseInstructionSections — mixed HowToSection and HowToStep > groups loose HowToStep items that appear after a HowToSection into that section",
+      "fn": "parseInstructionSections",
+      "args": [
+        [
+          {
+            "@type": "HowToSection",
+            "name": "Prep",
+            "itemListElement": [
+              {
+                "@type": "HowToStep",
+                "text": "Chop the vegetables."
+              }
+            ]
+          },
+          {
+            "@type": "HowToStep",
+            "text": "This step appears after the section."
+          }
+        ]
+      ],
+      "result": [
+        {
+          "sectionName": "Prep",
+          "steps": [
+            {
+              "stepNumber": 1,
+              "text": "Chop the vegetables."
+            }
+          ]
+        },
+        {
+          "sectionName": "Prep",
+          "steps": [
+            {
+              "stepNumber": 1,
+              "text": "This step appears after the section."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "test": "parseInstructionSections — mixed HowToSection and HowToStep > groups loose steps before the first HowToSection under 'Instructions'",
+      "fn": "parseInstructionSections",
+      "args": [
+        [
+          {
+            "@type": "HowToStep",
+            "text": "Pre-section step."
+          },
+          {
+            "@type": "HowToSection",
+            "name": "Main",
+            "itemListElement": [
+              {
+                "@type": "HowToStep",
+                "text": "Main step."
+              }
+            ]
+          }
+        ]
+      ],
+      "result": [
+        {
+          "sectionName": "Instructions",
+          "steps": [
+            {
+              "stepNumber": 1,
+              "text": "Pre-section step."
+            }
+          ]
+        },
+        {
+          "sectionName": "Main",
+          "steps": [
+            {
+              "stepNumber": 1,
+              "text": "Main step."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "test": "parseInstructionSections — HTML in step text > strips HTML tags from HowToStep text fields",
+      "fn": "parseInstructionSections",
+      "args": [
+        [
+          {
+            "@type": "HowToStep",
+            "text": "<p>Pound the garlic in a mortar.</p>"
+          },
+          {
+            "@type": "HowToStep",
+            "text": "<p>Add <strong>fish sauce</strong> and lime.</p>"
+          }
+        ]
+      ],
+      "result": [
+        {
+          "sectionName": "Instructions",
+          "steps": [
+            {
+              "stepNumber": 1,
+              "text": "Pound the garlic in a mortar."
+            },
+            {
+              "stepNumber": 2,
+              "text": "Add fish sauce and lime."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "test": "parseInstructionSections — HTML in step text > strips HTML from HowToSection itemListElement step text",
+      "fn": "parseInstructionSections",
+      "args": [
+        [
+          {
+            "@type": "HowToSection",
+            "name": "Make the dressing",
+            "itemListElement": [
+              {
+                "@type": "HowToStep",
+                "text": "<p>Mix <em>fish sauce</em> and sugar.</p>"
+              }
+            ]
+          }
+        ]
+      ],
+      "result": [
+        {
+          "sectionName": "Make the dressing",
+          "steps": [
+            {
+              "stepNumber": 1,
+              "text": "Mix fish sauce and sugar."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "test": "extractWprmIngredients — basic parsing > returns a single section named 'Ingrediënten'",
+      "fn": "extractWprmIngredients",
+      "args": [
+        "<!DOCTYPE html><html><head>\n<script type=\"application/ld+json\">{\"@type\":\"Recipe\",\"name\":\"Duck Curry\",\"recipeIngredient\":[\"2 cups coconut milk\"]}</script>\n</head><body>\n<script>\nwindow.wprm_recipes = {\"recipe-24724\":{\"ingredients\":[{\"uid\":2,\"amount\":\"2\",\"unit\":\"cups\",\"name\":\"coconut milk\",\"notes\":\"\",\"unit_systems\":{\"unit-system-1\":{\"amount\":\"2\",\"unit\":\"cups\"},\"unit-system-2\":{\"amount\":\"500\",\"unit\":\"ml\"}}},{\"uid\":0,\"amount\":\"1\",\"unit\":\"\",\"name\":\"Chinese barbecued duck\",\"notes\":\"\",\"unit_systems\":{\"unit-system-1\":{\"amount\":\"1\",\"unit\":\"\"},\"unit-system-2\":{\"amount\":\"1\",\"unit\":\"\"}}},{\"uid\":3,\"amount\":\"2\",\"unit\":\"tbsp\",\"name\":\"fish sauce\",\"notes\":\"or to taste\",\"unit_systems\":{\"unit-system-1\":{\"amount\":\"2\",\"unit\":\"tbsp\"},\"unit-system-2\":{\"amount\":\"30\",\"unit\":\"ml\"}}}]}};\n</script>\n</body></html>"
+      ],
+      "result": [
+        {
+          "sectionName": "Ingrediënten",
+          "ingredients": [
+            {
+              "text": "2 cups coconut milk",
+              "textMetric": "500 ml coconut milk"
+            },
+            {
+              "text": "1 Chinese barbecued duck"
+            },
+            {
+              "text": "2 tbsp fish sauce, or to taste",
+              "textMetric": "30 ml fish sauce, or to taste"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "test": "extractWprmIngredients — basic parsing > extracts US Customary text for all ingredients",
+      "fn": "extractWprmIngredients",
+      "args": [
+        "<!DOCTYPE html><html><head>\n<script type=\"application/ld+json\">{\"@type\":\"Recipe\",\"name\":\"Duck Curry\",\"recipeIngredient\":[\"2 cups coconut milk\"]}</script>\n</head><body>\n<script>\nwindow.wprm_recipes = {\"recipe-24724\":{\"ingredients\":[{\"uid\":2,\"amount\":\"2\",\"unit\":\"cups\",\"name\":\"coconut milk\",\"notes\":\"\",\"unit_systems\":{\"unit-system-1\":{\"amount\":\"2\",\"unit\":\"cups\"},\"unit-system-2\":{\"amount\":\"500\",\"unit\":\"ml\"}}},{\"uid\":0,\"amount\":\"1\",\"unit\":\"\",\"name\":\"Chinese barbecued duck\",\"notes\":\"\",\"unit_systems\":{\"unit-system-1\":{\"amount\":\"1\",\"unit\":\"\"},\"unit-system-2\":{\"amount\":\"1\",\"unit\":\"\"}}},{\"uid\":3,\"amount\":\"2\",\"unit\":\"tbsp\",\"name\":\"fish sauce\",\"notes\":\"or to taste\",\"unit_systems\":{\"unit-system-1\":{\"amount\":\"2\",\"unit\":\"tbsp\"},\"unit-system-2\":{\"amount\":\"30\",\"unit\":\"ml\"}}}]}};\n</script>\n</body></html>"
+      ],
+      "result": [
+        {
+          "sectionName": "Ingrediënten",
+          "ingredients": [
+            {
+              "text": "2 cups coconut milk",
+              "textMetric": "500 ml coconut milk"
+            },
+            {
+              "text": "1 Chinese barbecued duck"
+            },
+            {
+              "text": "2 tbsp fish sauce, or to taste",
+              "textMetric": "30 ml fish sauce, or to taste"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "test": "extractWprmIngredients — basic parsing > sets textMetric when metric differs from US text",
+      "fn": "extractWprmIngredients",
+      "args": [
+        "<!DOCTYPE html><html><head>\n<script type=\"application/ld+json\">{\"@type\":\"Recipe\",\"name\":\"Duck Curry\",\"recipeIngredient\":[\"2 cups coconut milk\"]}</script>\n</head><body>\n<script>\nwindow.wprm_recipes = {\"recipe-24724\":{\"ingredients\":[{\"uid\":2,\"amount\":\"2\",\"unit\":\"cups\",\"name\":\"coconut milk\",\"notes\":\"\",\"unit_systems\":{\"unit-system-1\":{\"amount\":\"2\",\"unit\":\"cups\"},\"unit-system-2\":{\"amount\":\"500\",\"unit\":\"ml\"}}},{\"uid\":0,\"amount\":\"1\",\"unit\":\"\",\"name\":\"Chinese barbecued duck\",\"notes\":\"\",\"unit_systems\":{\"unit-system-1\":{\"amount\":\"1\",\"unit\":\"\"},\"unit-system-2\":{\"amount\":\"1\",\"unit\":\"\"}}},{\"uid\":3,\"amount\":\"2\",\"unit\":\"tbsp\",\"name\":\"fish sauce\",\"notes\":\"or to taste\",\"unit_systems\":{\"unit-system-1\":{\"amount\":\"2\",\"unit\":\"tbsp\"},\"unit-system-2\":{\"amount\":\"30\",\"unit\":\"ml\"}}}]}};\n</script>\n</body></html>"
+      ],
+      "result": [
+        {
+          "sectionName": "Ingrediënten",
+          "ingredients": [
+            {
+              "text": "2 cups coconut milk",
+              "textMetric": "500 ml coconut milk"
+            },
+            {
+              "text": "1 Chinese barbecued duck"
+            },
+            {
+              "text": "2 tbsp fish sauce, or to taste",
+              "textMetric": "30 ml fish sauce, or to taste"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "test": "extractWprmIngredients — basic parsing > omits textMetric when amounts are identical in both systems",
+      "fn": "extractWprmIngredients",
+      "args": [
+        "<!DOCTYPE html><html><head>\n<script type=\"application/ld+json\">{\"@type\":\"Recipe\",\"name\":\"Duck Curry\",\"recipeIngredient\":[\"2 cups coconut milk\"]}</script>\n</head><body>\n<script>\nwindow.wprm_recipes = {\"recipe-24724\":{\"ingredients\":[{\"uid\":2,\"amount\":\"2\",\"unit\":\"cups\",\"name\":\"coconut milk\",\"notes\":\"\",\"unit_systems\":{\"unit-system-1\":{\"amount\":\"2\",\"unit\":\"cups\"},\"unit-system-2\":{\"amount\":\"500\",\"unit\":\"ml\"}}},{\"uid\":0,\"amount\":\"1\",\"unit\":\"\",\"name\":\"Chinese barbecued duck\",\"notes\":\"\",\"unit_systems\":{\"unit-system-1\":{\"amount\":\"1\",\"unit\":\"\"},\"unit-system-2\":{\"amount\":\"1\",\"unit\":\"\"}}},{\"uid\":3,\"amount\":\"2\",\"unit\":\"tbsp\",\"name\":\"fish sauce\",\"notes\":\"or to taste\",\"unit_systems\":{\"unit-system-1\":{\"amount\":\"2\",\"unit\":\"tbsp\"},\"unit-system-2\":{\"amount\":\"30\",\"unit\":\"ml\"}}}]}};\n</script>\n</body></html>"
+      ],
+      "result": [
+        {
+          "sectionName": "Ingrediënten",
+          "ingredients": [
+            {
+              "text": "2 cups coconut milk",
+              "textMetric": "500 ml coconut milk"
+            },
+            {
+              "text": "1 Chinese barbecued duck"
+            },
+            {
+              "text": "2 tbsp fish sauce, or to taste",
+              "textMetric": "30 ml fish sauce, or to taste"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "test": "extractWprmIngredients — basic parsing > includes notes in the ingredient text",
+      "fn": "extractWprmIngredients",
+      "args": [
+        "<!DOCTYPE html><html><head>\n<script type=\"application/ld+json\">{\"@type\":\"Recipe\",\"name\":\"Duck Curry\",\"recipeIngredient\":[\"2 cups coconut milk\"]}</script>\n</head><body>\n<script>\nwindow.wprm_recipes = {\"recipe-24724\":{\"ingredients\":[{\"uid\":2,\"amount\":\"2\",\"unit\":\"cups\",\"name\":\"coconut milk\",\"notes\":\"\",\"unit_systems\":{\"unit-system-1\":{\"amount\":\"2\",\"unit\":\"cups\"},\"unit-system-2\":{\"amount\":\"500\",\"unit\":\"ml\"}}},{\"uid\":0,\"amount\":\"1\",\"unit\":\"\",\"name\":\"Chinese barbecued duck\",\"notes\":\"\",\"unit_systems\":{\"unit-system-1\":{\"amount\":\"1\",\"unit\":\"\"},\"unit-system-2\":{\"amount\":\"1\",\"unit\":\"\"}}},{\"uid\":3,\"amount\":\"2\",\"unit\":\"tbsp\",\"name\":\"fish sauce\",\"notes\":\"or to taste\",\"unit_systems\":{\"unit-system-1\":{\"amount\":\"2\",\"unit\":\"tbsp\"},\"unit-system-2\":{\"amount\":\"30\",\"unit\":\"ml\"}}}]}};\n</script>\n</body></html>"
+      ],
+      "result": [
+        {
+          "sectionName": "Ingrediënten",
+          "ingredients": [
+            {
+              "text": "2 cups coconut milk",
+              "textMetric": "500 ml coconut milk"
+            },
+            {
+              "text": "1 Chinese barbecued duck"
+            },
+            {
+              "text": "2 tbsp fish sauce, or to taste",
+              "textMetric": "30 ml fish sauce, or to taste"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "test": "extractWprmIngredients — fallback behaviour > returns null when no wprm_recipes script is present",
+      "fn": "extractWprmIngredients",
+      "args": [
+        "<!DOCTYPE html><html><head>\n<script type=\"application/ld+json\">{\"@type\":\"Recipe\",\"name\":\"Test\",\"recipeIngredient\":[\"1 egg\"]}</script>\n</head><body></body></html>"
+      ],
+      "result": null
+    },
+    {
+      "test": "extractWprmIngredients — fallback behaviour > returns null on malformed wprm JSON",
+      "fn": "extractWprmIngredients",
+      "args": [
+        "<html><body><script>window.wprm_recipes = { BROKEN };</script></body></html>"
+      ],
+      "result": null
+    },
+    {
+      "test": "ingestRecipeFromHtml — WPRM override > replaces schema.org ingredients with WPRM data when present",
+      "fn": "ingestRecipeFromHtml",
+      "args": [
+        "<!DOCTYPE html><html><head>\n<script type=\"application/ld+json\">{\"@type\":\"Recipe\",\"name\":\"Duck Curry\",\"recipeIngredient\":[\"2 cups coconut milk\"]}</script>\n</head><body>\n<script>\nwindow.wprm_recipes = {\"recipe-24724\":{\"ingredients\":[{\"uid\":2,\"amount\":\"2\",\"unit\":\"cups\",\"name\":\"coconut milk\",\"notes\":\"\",\"unit_systems\":{\"unit-system-1\":{\"amount\":\"2\",\"unit\":\"cups\"},\"unit-system-2\":{\"amount\":\"500\",\"unit\":\"ml\"}}},{\"uid\":0,\"amount\":\"1\",\"unit\":\"\",\"name\":\"Chinese barbecued duck\",\"notes\":\"\",\"unit_systems\":{\"unit-system-1\":{\"amount\":\"1\",\"unit\":\"\"},\"unit-system-2\":{\"amount\":\"1\",\"unit\":\"\"}}},{\"uid\":3,\"amount\":\"2\",\"unit\":\"tbsp\",\"name\":\"fish sauce\",\"notes\":\"or to taste\",\"unit_systems\":{\"unit-system-1\":{\"amount\":\"2\",\"unit\":\"tbsp\"},\"unit-system-2\":{\"amount\":\"30\",\"unit\":\"ml\"}}}]}};\n</script>\n</body></html>"
+      ],
+      "result": {
+        "title": "Duck Curry",
+        "description": "",
+        "prepTimeMinutes": null,
+        "cookTimeMinutes": null,
+        "totalTimeMinutes": null,
+        "servings": null,
+        "cuisine": "",
+        "category": "",
+        "keywords": [],
+        "image": null,
+        "author": null,
+        "suitableForDiet": [],
+        "datePublished": null,
+        "aggregateRating": null,
+        "video": null,
+        "nutrition": {
+          "calories": null,
+          "protein": null,
+          "carbs": null,
+          "fat": null
+        },
+        "ingredientSections": [
+          {
+            "sectionName": "Ingrediënten",
+            "ingredients": [
+              {
+                "text": "2 cups coconut milk",
+                "textMetric": "500 ml coconut milk"
+              },
+              {
+                "text": "1 Chinese barbecued duck"
+              },
+              {
+                "text": "2 tbsp fish sauce, or to taste",
+                "textMetric": "30 ml fish sauce, or to taste"
+              }
+            ]
+          }
+        ],
+        "instructionSections": [],
+        "unitSystems": {
+          "hasMetric": true
+        }
+      }
+    },
+    {
+      "test": "ingestRecipeFromHtml — WPRM override > sets unitSystems.hasMetric when any ingredient has a metric alternative",
+      "fn": "ingestRecipeFromHtml",
+      "args": [
+        "<!DOCTYPE html><html><head>\n<script type=\"application/ld+json\">{\"@type\":\"Recipe\",\"name\":\"Duck Curry\",\"recipeIngredient\":[\"2 cups coconut milk\"]}</script>\n</head><body>\n<script>\nwindow.wprm_recipes = {\"recipe-24724\":{\"ingredients\":[{\"uid\":2,\"amount\":\"2\",\"unit\":\"cups\",\"name\":\"coconut milk\",\"notes\":\"\",\"unit_systems\":{\"unit-system-1\":{\"amount\":\"2\",\"unit\":\"cups\"},\"unit-system-2\":{\"amount\":\"500\",\"unit\":\"ml\"}}},{\"uid\":0,\"amount\":\"1\",\"unit\":\"\",\"name\":\"Chinese barbecued duck\",\"notes\":\"\",\"unit_systems\":{\"unit-system-1\":{\"amount\":\"1\",\"unit\":\"\"},\"unit-system-2\":{\"amount\":\"1\",\"unit\":\"\"}}},{\"uid\":3,\"amount\":\"2\",\"unit\":\"tbsp\",\"name\":\"fish sauce\",\"notes\":\"or to taste\",\"unit_systems\":{\"unit-system-1\":{\"amount\":\"2\",\"unit\":\"tbsp\"},\"unit-system-2\":{\"amount\":\"30\",\"unit\":\"ml\"}}}]}};\n</script>\n</body></html>"
+      ],
+      "result": {
+        "title": "Duck Curry",
+        "description": "",
+        "prepTimeMinutes": null,
+        "cookTimeMinutes": null,
+        "totalTimeMinutes": null,
+        "servings": null,
+        "cuisine": "",
+        "category": "",
+        "keywords": [],
+        "image": null,
+        "author": null,
+        "suitableForDiet": [],
+        "datePublished": null,
+        "aggregateRating": null,
+        "video": null,
+        "nutrition": {
+          "calories": null,
+          "protein": null,
+          "carbs": null,
+          "fat": null
+        },
+        "ingredientSections": [
+          {
+            "sectionName": "Ingrediënten",
+            "ingredients": [
+              {
+                "text": "2 cups coconut milk",
+                "textMetric": "500 ml coconut milk"
+              },
+              {
+                "text": "1 Chinese barbecued duck"
+              },
+              {
+                "text": "2 tbsp fish sauce, or to taste",
+                "textMetric": "30 ml fish sauce, or to taste"
+              }
+            ]
+          }
+        ],
+        "instructionSections": [],
+        "unitSystems": {
+          "hasMetric": true
+        }
+      }
+    },
+    {
+      "test": "ingestRecipeFromHtml — WPRM override > does not set unitSystems when no WPRM data present",
+      "fn": "ingestRecipeFromHtml",
+      "args": [
+        "<!DOCTYPE html><html><head>\n<script type=\"application/ld+json\">{\"@context\":\"https://schema.org\",\"@type\":\"Recipe\",\"name\":\"Test Recipe\",\"description\":\"A test recipe.\",\"prepTime\":\"PT10M\",\"cookTime\":\"PT20M\",\"totalTime\":\"PT30M\",\"recipeCuisine\":\"Dutch\",\"recipeCategory\":\"Dinner\",\"nutrition\":{\"@type\":\"NutritionInformation\",\"calories\":\"350 kcal\",\"proteinContent\":\"12g\",\"carbohydrateContent\":\"45g\",\"fatContent\":\"8g\"},\"recipeIngredient\":[\"200g flour\",\"2 eggs\",\"100ml milk\"],\"recipeInstructions\":[{\"@type\":\"HowToStep\",\"text\":\"Mix flour and eggs.\"},{\"@type\":\"HowToStep\",\"text\":\"Add milk slowly.\"}]}</script>\n</head><body></body></html>"
+      ],
+      "result": {
+        "title": "Test Recipe",
+        "description": "A test recipe.",
+        "prepTimeMinutes": 10,
+        "cookTimeMinutes": 20,
+        "totalTimeMinutes": 30,
+        "servings": null,
+        "cuisine": "Dutch",
+        "category": "Dinner",
+        "keywords": [],
+        "image": null,
+        "author": null,
+        "suitableForDiet": [],
+        "datePublished": null,
+        "aggregateRating": null,
+        "video": null,
+        "nutrition": {
+          "calories": "350 kcal",
+          "protein": "12g",
+          "carbs": "45g",
+          "fat": "8g"
+        },
+        "ingredientSections": [
+          {
+            "sectionName": "Ingredients",
+            "ingredients": [
+              {
+                "text": "200g flour"
+              },
+              {
+                "text": "2 eggs"
+              },
+              {
+                "text": "100ml milk"
+              }
+            ]
+          }
+        ],
+        "instructionSections": [
+          {
+            "sectionName": "Instructions",
+            "steps": [
+              {
+                "stepNumber": 1,
+                "text": "Mix flour and eggs."
+              },
+              {
+                "stepNumber": 2,
+                "text": "Add milk slowly."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "test": "ingestRecipeFromHtml — WPRM override > falls back to schema.org ingredients (as IngredientItem[]) when no WPRM data",
+      "fn": "ingestRecipeFromHtml",
+      "args": [
+        "<!DOCTYPE html><html><head>\n<script type=\"application/ld+json\">{\"@context\":\"https://schema.org\",\"@type\":\"Recipe\",\"name\":\"Test Recipe\",\"description\":\"A test recipe.\",\"prepTime\":\"PT10M\",\"cookTime\":\"PT20M\",\"totalTime\":\"PT30M\",\"recipeCuisine\":\"Dutch\",\"recipeCategory\":\"Dinner\",\"nutrition\":{\"@type\":\"NutritionInformation\",\"calories\":\"350 kcal\",\"proteinContent\":\"12g\",\"carbohydrateContent\":\"45g\",\"fatContent\":\"8g\"},\"recipeIngredient\":[\"200g flour\",\"2 eggs\",\"100ml milk\"],\"recipeInstructions\":[{\"@type\":\"HowToStep\",\"text\":\"Mix flour and eggs.\"},{\"@type\":\"HowToStep\",\"text\":\"Add milk slowly.\"}]}</script>\n</head><body></body></html>"
+      ],
+      "result": {
+        "title": "Test Recipe",
+        "description": "A test recipe.",
+        "prepTimeMinutes": 10,
+        "cookTimeMinutes": 20,
+        "totalTimeMinutes": 30,
+        "servings": null,
+        "cuisine": "Dutch",
+        "category": "Dinner",
+        "keywords": [],
+        "image": null,
+        "author": null,
+        "suitableForDiet": [],
+        "datePublished": null,
+        "aggregateRating": null,
+        "video": null,
+        "nutrition": {
+          "calories": "350 kcal",
+          "protein": "12g",
+          "carbs": "45g",
+          "fat": "8g"
+        },
+        "ingredientSections": [
+          {
+            "sectionName": "Ingredients",
+            "ingredients": [
+              {
+                "text": "200g flour"
+              },
+              {
+                "text": "2 eggs"
+              },
+              {
+                "text": "100ml milk"
+              }
+            ]
+          }
+        ],
+        "instructionSections": [
+          {
+            "sectionName": "Instructions",
+            "steps": [
+              {
+                "stepNumber": 1,
+                "text": "Mix flour and eggs."
+              },
+              {
+                "stepNumber": 2,
+                "text": "Add milk slowly."
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
