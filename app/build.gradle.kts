@@ -64,9 +64,10 @@ android {
         getByName("test") {
             resources.srcDir(rootProject.file("data/fixtures"))
             resources.srcDir(rootProject.file("data/assets"))
-            // Room schemas for MigrationTestHelper under Robolectric.
-            assets.srcDir(file("schemas"))
         }
+        // Room's MigrationTestHelper reads schemas from the app's assets; Robolectric ignores test-only assets.
+        // Debug builds only, so release APKs don't carry them.
+        getByName("debug") { assets.srcDir(file("schemas")) }
     }
 
     testOptions {
