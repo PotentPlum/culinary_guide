@@ -7,8 +7,9 @@ shapes the next suggestions. A technique library supports every step.
 
 All data stays on the phone. The Claude API key you enter is stored encrypted with the Android Keystore.
 
-**Status:** being rebuilt as a native Kotlin/Jetpack Compose app. The previous Next.js + Supabase web app was retired
-(last version: commit `cf3ec39`).
+**Status:** being rebuilt as a native Kotlin/Jetpack Compose app. The P0 foundation (project, design system, app shell,
+content layer, database, settings, key storage, CI) is in place; the features follow in P1. The previous Next.js +
+Supabase web app was retired (last version: commit `cf3ec39`).
 
 | Document | Contents |
 |---|---|
@@ -17,7 +18,8 @@ All data stays on the phone. The Claude API key you enter is stored encrypted wi
 | [`data/README.md`](data/README.md) | Curated content (66 vegetables, 74 techniques, badges, Dutch UI strings), test fixtures, schemas |
 
 ```bash
-python3 tools/validate_data.py   # validate all content and fixtures
+python3 tools/validate_data.py                                         # validate all content and fixtures
+./gradlew lint ktlintCheck testDebugUnitTest :lint-checks:test assembleDebug   # build and test (JDK 17+, Android SDK)
 ```
 
 Seasonal data reference: [velt.nu](https://www.velt.nu).
