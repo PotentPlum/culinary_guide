@@ -70,7 +70,7 @@
     {
       "id": "seizoenskok",
       "nl": "De Seizoenskok",
-      "description": "Kookte 15 verschillende groenten op hun hoogtepunt",
+      "description": "Kookte 15 verschillende groenten op hun best",
       "rule": {
         "type": "distinctPeakVegetables",
         "min": 15
