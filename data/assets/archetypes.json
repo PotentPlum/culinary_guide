@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "archetypes": [
+    {
+      "id": "emulsie-ingenieur",
+      "nl": "De Emulsie-ingenieur",
+      "description": "Meester in emulsies en sauzen",
+      "match": {
+        "discipline": "flavor"
+      },
+      "minAttempts": 10,
+      "minAvgScore": 7
+    },
+    {
+      "id": "koolstof-artisan",
+      "nl": "De Koolstof-artisan",
+      "description": "Heer van het hoge vuur",
+      "match": {
+        "techniqueIds": [
+          "schroeien",
+          "gratineren"
+        ]
+      },
+      "minAttempts": 5
+    },
+    {
+      "id": "messenvirtuoos",
+      "nl": "De Messenvirtuoos",
+      "description": "Precisie aan het snijvlak",
+      "match": {
+        "discipline": "mechanical"
+      },
+      "minAttempts": 10
+    },
+    {
+      "id": "saus-architect",
+      "nl": "De Saus-architect",
+      "description": "Bouwer van complexe sauzen",
+      "match": {
+        "techniqueIds": [
+          "roux",
+          "bechamel",
+          "veloute",
+          "tomatensaus",
+          "hollandaise",
+          "beurre-blanc"
+        ]
+      },
+      "minAttempts": 3,
+      "minAvgScore": 8
+    },
+    {
+      "id": "stille-fermenteur",
+      "nl": "De Stille Fermenteur",
+      "description": "Geduld als geheime ingrediënt",
+      "match": {
+        "techniqueIds": [
+          "pekelen",
+          "marineren",
+          "fermenteren",
+          "inmaken"
+        ]
+      },
+      "minAttempts": 3
+    }
+  ]
+}

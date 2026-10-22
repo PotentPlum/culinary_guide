@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "archetypes.schema.json",
+  "title": "Mise cooking archetypes (profile badges)",
+  "description": "An archetype is earned when at least minAttempts logged attempts match (any technique in the attempt has the given discipline, or is one of techniqueIds) and, if minAvgScore is set, the mean of their non-null execution scores is >= minAvgScore (no scores means not earned).",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "archetypes"],
+  "properties": {
+    "schemaVersion": { "type": "integer", "minimum": 1 },
+    "archetypes": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "nl", "description", "match", "minAttempts"],
+        "properties": {
+          "id": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+          "nl": { "type": "string", "minLength": 1 },
+          "description": { "type": "string", "minLength": 1 },
+          "match": {
+            "type": "object",
+            "additionalProperties": false,
+            "minProperties": 1,
+            "maxProperties": 1,
+            "properties": {
+              "discipline": { "enum": ["mechanical", "thermal", "flavor", "material"] },
+              "techniqueIds": {
+                "type": "array",
+                "minItems": 1,
+                "uniqueItems": true,
+                "items": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" }
+              }
+            }
+          },
+          "minAttempts": { "type": "integer", "minimum": 1 },
+          "minAvgScore": { "type": "number", "minimum": 1, "maximum": 10 }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,73 @@
+# data/ — content and fixtures for the Mise Android app
+
+Everything here is hand-curated content that you can't easily download again, rescued from the retired
+Next.js app (last web commit: `cf3ec39`). It is stored in neutral formats (JSON, Android XML,
+Markdown) so the Kotlin app reads it directly. Nothing in this folder is generated at build time.
+
+Run the validator after **any** edit (a Claude Code hook does this automatically):
+
+```bash
+python3 tools/validate_data.py
+```
+
+## Layout and how each part is integrated
+
+| Path | What | Integrated as |
+|---|---|---|
+| `assets/vegetables.json` | 66 Dutch locally grown vegetables: Dutch name, family, colours, peak/shoulder months, blurb, storage, prep, technique tip, pairings, substitutions, curated recipe links | APK asset → `ContentRepository` (spec §7.1) |
+| `assets/techniques.json` | 74 cooking techniques in Dutch: body text, tips, cookware, level, heat, **discipline**, related techniques, related vegetables (by id) | APK asset → `ContentRepository` |
+| `assets/facets.json` | Recipe tag vocabulary: cuisine (with colours), dish type, main ingredient, prep time | APK asset; also the enum source for Claude output schemas (spec §8) |
+| `assets/disciplines.json` | The 4 skill disciplines (profile radar axes) with Dutch labels, in display order | APK asset |
+| `assets/archetypes.json` | 5 profile badges as data-driven rules (`match` + `minAttempts` + optional `minAvgScore`) | APK asset → `ArchetypeEvaluator` (spec §12) |
+| `res/values/strings.xml` | 276 Dutch UI strings + `months_short` / `months_long` arrays | Android resource dir (`res.srcDir`) |
+| `fixtures/recipe-ingestion/golden.json` | 104 recorded input→output cases for the recipe parser, from the 94 passing TS tests | JVM unit-test resource; the Kotlin port must reproduce all of them |
+| `fixtures/seasonality/status.json` | Expected `peak/shoulder/soon/ending/off` for every vegetable × month (792 cells) | JVM unit-test resource |
+| `schemas/*.schema.json` | JSON Schemas for every asset and fixture file | Used by `tools/validate_data.py`; Kotlin tests may reuse them |
+| `reference/velt-vegetables.json` | Original scraped velt.nu source data (77 vegetables, Dutch text, harvest months) | **Not shipped.** Third-party text for research and adding vegetables; do not copy its prose into the app |
+| `reference/prompts/*.md` | The three Claude prompts from the web app, word for word | **Not shipped.** Source material for the rewritten prompts (spec §8) |
+
+Gradle wiring (from spec §4.3):
+
+```kotlin
+android.sourceSets {
+    getByName("main") {
+        assets.srcDir(rootProject.file("data/assets"))
+        res.srcDir(rootProject.file("data/res"))
+    }
+    getByName("test") { resources.srcDir(rootProject.file("data/fixtures")) }
+}
+```
+
+## Changes from the web sources (all deliberate)
+
+- **camelCase keys and `schemaVersion: 1`** at the root of every file, so the app can refuse files it doesn't understand.
+- **Vegetables:** `name` → `nameEn` (an internal English alias for search, never shown); `nutrients` →
+  `nutrientsEn` (it *is* English, so translate before ever showing it); `url` → `sourceUrl`;
+  `recipes` → `curatedRecipes` with `time_mins` → `timeMinutes`; `shoulder` is always present (may be `[]`).
+- **Techniques:** `relatedVeg` (English names, fragile) → `relatedVegIds` (vegetable ids).
+  `discipline` is folded in from `disciplineMap.ts`, so one file is the source of truth.
+- **Archetypes:** the TypeScript `check` functions became declarative rules. The behaviour is the same: count the
+  attempts that contain ≥1 matching technique; if `minAvgScore` is set, average the non-null execution scores of
+  those attempts; no scores means not earned.
+- **strings.xml:** keys are the `UI.*` paths in snake_case (`recipes.saveBtn` → `recipes_save_btn`).
+  Web-only groups were dropped (`auth`, `footer`, `futurePeek`, `home.modules`, `nav.soon`), and the archetype
+  names live in `archetypes.json` instead. The two template functions became format strings (`home_spotlight_more` →
+  `%1$d`, `home_tip_link` → `%1$s`). The text itself is unchanged: renaming "Uitdaging" → "Quest" and pruning
+  web-specific copy are tracked in `todo.md`.
+
+## Content rules (unchanged from the web app)
+
+- **Dutch locally grown vegetables only.** Seasonality means Dutch field/greenhouse harvest windows (velt.nu),
+  not supermarket imports. No imported year-round produce (avocado, citrus, mango), no fruit, berries or nuts.
+- Every user-visible string is Dutch. `nameEn` / `nutrientsEn` are never shown as they are.
+- `family` must be one of: Wortel, Blad, Brassica, Allium, Peulvrucht, Stengel, Pompoen, Knolgewas,
+  Vruchtgroente, Paddenstoel, Kruid.
+
+## Known content gaps (tracked in todo.md)
+
+- `nutrientsEn` is English for 58 vegetables; 8 have none.
+- Only 3 vegetables have `curatedRecipes`; 7 have no `sourceUrl`.
+- 31 of 74 techniques have no `relatedVegIds`.
+- Every in-scope vegetable in `reference/velt-vegetables.json` is already covered: its "Kropsla" is our `butterhead-lettuce`
+  (Botersla), and that entry could take `https://velt.nu/groente/kropsla` as its `sourceUrl`. The other 18 velt entries are fruit and nuts,
+  which are out of scope.
