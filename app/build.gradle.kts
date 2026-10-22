@@ -63,6 +63,7 @@ android {
         }
         getByName("test") {
             resources.srcDir(rootProject.file("data/fixtures"))
+            resources.srcDir(rootProject.file("data/assets"))
             // Room schemas for MigrationTestHelper under Robolectric.
             assets.srcDir(file("schemas"))
         }
@@ -92,7 +93,6 @@ room {
 
 ktlint {
     version.set(libs.versions.ktlint)
-    android.set(true)
 }
 
 dependencies {
