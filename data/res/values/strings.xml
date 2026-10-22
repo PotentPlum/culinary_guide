@@ -326,6 +326,8 @@
     <string name="minutes_short">%1$d min</string>
     <string name="peakbar_description">Op z\'n best: %1$s. Verkrijgbaar: %2$s.</string>
     <string name="peakbar_none">geen</string>
+    <string name="notification_channel_season">Seizoen</string>
+    <string name="notification_channel_background">Achtergrondtaken</string>
     <plurals name="shopping_badge_description">
         <item quantity="one">%1$d item op je lijst</item>
         <item quantity="other">%1$d items op je lijst</item>
