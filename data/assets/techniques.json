@@ -702,7 +702,7 @@
       "parentId": null,
       "level": "basis",
       "heatLevel": "geen",
-      "discipline": "material",
+      "discipline": null,
       "body": [
         "De koekenpan is het meest veelzijdige stuk kookgerei in de keuken. Gietijzeren pannen houden hitte uitstekend vast en geven de beste korstvorming; RVS pannen reageren sneller op temperatuurwijzigingen; anti-aanbak pannen zijn ideaal voor eieren en delicate vis.",
         "Elke keuken heeft baat bij één goed exemplaar van elk type voor optimale veelzijdigheid. Kwaliteitspannen gaan tientallen jaren mee bij goed onderhoud: nooit in de afwasmachine, altijd handmatig wassen."
@@ -733,7 +733,7 @@
       "parentId": null,
       "level": "basis",
       "heatLevel": "geen",
-      "discipline": "material",
+      "discipline": null,
       "body": [
         "De braadpan (ook cocotte of Dutch oven) is de meest veelzijdige pan voor smoren, langzaam garen en soepen. Dankzij het zware gietijzer of de dikke bodem verdeelt hij warmte gelijkmatig en houdt hij temperatuur lang vast.",
         "De straksluitende deksel houdt stoom en smaak binnen. Een goede braadpan gaat bij juist gebruik tientallen jaren mee: zorg dat hij niet te snel verhit wordt en niet leeg op hoog vuur staat."
@@ -763,7 +763,7 @@
       "parentId": null,
       "level": "basis",
       "heatLevel": "geen",
-      "discipline": "material",
+      "discipline": null,
       "body": [
         "De steelpan is het werkpaard van sauzen, bouillons en smeltbewerkingen. Dankzij zijn hoge zijwanden en lange steel kun je gemakkelijk roeren, zwenken en gieten zonder morsen.",
         "RVS steelpannen zijn ideaal voor sauzen die lang worden geroerd; voor gevoelige emulsies zoals hollandaise gebruik je een lichte pan die je goed in de hand houdt boven een bain-marie."
@@ -2190,7 +2190,7 @@
       "parentId": null,
       "level": "basis",
       "heatLevel": "geen",
-      "discipline": "material",
+      "discipline": "mechanical",
       "body": [
         "Een scherp mes is het veiligste gereedschap in de keuken: een bot mes vereist meer kracht, glijdt gemakkelijker af en geeft onregelmatige sneden. Een goede kok besteedt dagelijks dertig seconden aan het strijken van het mes over een aanzetstaal en laat het mes drie à vier keer per jaar professioneel slijpen of slijpt het zelf op een wetsteen.",
         "Het aanzetstaal richt de microbraam van het lemmet recht maar verwijdert geen materiaal — het strijkt de scherpe rand terug op lijn. Een wetsteen verwijdert daadwerkelijk materiaal en herstelt een beschadigd of dof lemmet. Beweeg het mes altijd van hiel naar punt over het staal, met een constante hoek van 15–20 graden."

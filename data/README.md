@@ -15,11 +15,11 @@ python3 tools/validate_data.py
 | Path | What | Integrated as |
 |---|---|---|
 | `assets/vegetables.json` | 66 Dutch locally grown vegetables: Dutch name, family, colours, peak/shoulder months, blurb, storage, prep, technique tip, pairings, substitutions, curated recipe links | APK asset → `ContentRepository` (spec §7.1) |
-| `assets/techniques.json` | 74 cooking techniques in Dutch: body text, tips, cookware, level, heat, **discipline**, related techniques, related vegetables (by id) | APK asset → `ContentRepository` |
+| `assets/techniques.json` | 74 cooking techniques in Dutch: body text, tips, cookware, level, heat, **discipline** (null for the 3 cookware guides), related techniques, related vegetables (by id) | APK asset → `ContentRepository` |
 | `assets/facets.json` | Recipe tag vocabulary: cuisine (with colours), dish type, main ingredient, prep time | APK asset; also the enum source for Claude output schemas (spec §8) |
-| `assets/disciplines.json` | The 4 skill disciplines (profile radar axes) with Dutch labels, in display order | APK asset |
-| `assets/archetypes.json` | 5 profile badges as data-driven rules (`match` + `minAttempts` + optional `minAvgScore`) | APK asset → `ArchetypeEvaluator` (spec §12) |
-| `res/values/strings.xml` | 276 Dutch UI strings + `months_short` / `months_long` arrays | Android resource dir (`res.srcDir`) |
+| `assets/disciplines.json` | The 3 skill disciplines (Dagboek bars) with Dutch labels, in display order | APK asset |
+| `assets/archetypes.json` | 7 Dagboek badges as typed rules (`techniques`, `distinctPeakVegetables`, `peakMonths`) | APK asset → `BadgeEvaluator` (spec §12) |
+| `res/values/strings.xml` | 275 Dutch UI strings + `months_short` / `months_long` arrays | Android resource dir (`res.srcDir`) |
 | `fixtures/recipe-ingestion/golden.json` | 104 recorded input→output cases for the recipe parser, from the 94 passing TS tests | JVM unit-test resource; the Kotlin port must reproduce all of them |
 | `fixtures/seasonality/status.json` | Expected `peak/shoulder/soon/ending/off` for every vegetable × month (792 cells) | JVM unit-test resource |
 | `schemas/*.schema.json` | JSON Schemas for every asset and fixture file | Used by `tools/validate_data.py`; Kotlin tests may reuse them |
@@ -46,12 +46,17 @@ android.sourceSets {
   `recipes` → `curatedRecipes` with `time_mins` → `timeMinutes`; `shoulder` is always present (may be `[]`).
 - **Techniques:** `relatedVeg` (English names, fragile) → `relatedVegIds` (vegetable ids).
   `discipline` is folded in from `disciplineMap.ts`, so one file is the source of truth.
-- **Archetypes:** the TypeScript `check` functions became declarative rules. The behaviour is the same: count the
-  attempts that contain ≥1 matching technique; if `minAvgScore` is set, average the non-null execution scores of
-  those attempts; no scores means not earned.
+- **Disciplines (spec v2 review):** "material" was dropped. It was fed only by three cookware pages (koekenpan, braadpan,
+  steelpan), which are reference guides, not skills, so they now have `discipline: null`. `messenonderhoud` moved to
+  `mechanical`.
+- **Archetypes → badges:** the TypeScript `check` functions became typed rules. The `techniques` rule keeps the web logic: count
+  attempts with ≥1 matching technique; if `minAvgScore` is set, average their non-null execution scores; no scores means
+  not earned. Spec v2 review changes: *Stille Fermenteur* no longer counts `marineren`; thresholds were lowered so badges
+  are reachable in weeks (emulsie 10→6, messen 10→8); two seasonal badges were added (*De Seizoenskok*: 15 distinct vegetables
+  cooked at peak; *Het Hele Jaar Rond*: a peak vegetable cooked in all 12 months).
 - **strings.xml:** keys are the `UI.*` paths in snake_case (`recipes.saveBtn` → `recipes_save_btn`).
-  Web-only groups were dropped (`auth`, `footer`, `futurePeek`, `home.modules`, `nav.soon`), and the archetype
-  names live in `archetypes.json` instead. The two template functions became format strings (`home_spotlight_more` →
+  Web-only groups were dropped (`auth`, `footer`, `futurePeek`, `home.modules`, `nav.soon`, and later
+  `profile_discipline_material`), and the archetype names live in `archetypes.json` instead. The two template functions became format strings (`home_spotlight_more` →
   `%1$d`, `home_tip_link` → `%1$s`). The text itself is unchanged: renaming "Uitdaging" → "Quest" and pruning
   web-specific copy are tracked in `todo.md`.
 
@@ -67,7 +72,8 @@ android.sourceSets {
 
 - `nutrientsEn` is English for 58 vegetables; 8 have none.
 - Only 3 vegetables have `curatedRecipes`; 7 have no `sourceUrl`.
-- 31 of 74 techniques have no `relatedVegIds`.
+- 31 of 74 techniques have no `relatedVegIds`, and only 5 are about preparing vegetables.
+- `units.json` (spec §11.2) and `backup.schema.json` (spec §13.1) are still to be created (todo P1).
 - Every in-scope vegetable in `reference/velt-vegetables.json` is already covered: its "Kropsla" is our `butterhead-lettuce`
   (Botersla), and that entry could take `https://velt.nu/groente/kropsla` as its `sourceUrl`. The other 18 velt entries are fruit and nuts,
   which are out of scope.

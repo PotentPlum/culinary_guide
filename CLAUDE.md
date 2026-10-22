@@ -29,6 +29,7 @@ Once scaffolded: `./gradlew lint ktlintCheck testDebugUnitTest assembleDebug` (s
   settings, backups, exports or test fixtures, and never commit a real key.
 - **Claude API calls:** structured outputs (`output_config.format`). Never send `temperature`/`top_p`/`top_k`.
   Build enums from the content assets (spec §8).
+- **Quests have no checkpoints or success criteria.** The owner rejected them (spec §0 D5); evaluation is scores + notes + photo.
 - **Room:** never use destructive migrations. Every schema change gets a numbered migration and a migration test.
 - **Data edits:** keep `data/schemas/*` and the Kotlin models in sync, and run the validator.
   The recipe parser must keep passing all cases in `data/fixtures/recipe-ingestion/golden.json`.

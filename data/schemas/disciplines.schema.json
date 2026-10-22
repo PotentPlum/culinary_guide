@@ -4,19 +4,37 @@
   "title": "Mise skill disciplines (profile radar axes, in display order)",
   "type": "object",
   "additionalProperties": false,
-  "required": ["schemaVersion", "disciplines"],
+  "required": [
+    "schemaVersion",
+    "disciplines"
+  ],
   "properties": {
-    "schemaVersion": { "type": "integer", "minimum": 1 },
+    "schemaVersion": {
+      "type": "integer",
+      "minimum": 1
+    },
     "disciplines": {
       "type": "array",
       "minItems": 1,
       "items": {
         "type": "object",
         "additionalProperties": false,
-        "required": ["id", "nl"],
+        "required": [
+          "id",
+          "nl"
+        ],
         "properties": {
-          "id": { "enum": ["mechanical", "thermal", "flavor", "material"] },
-          "nl": { "type": "string", "minLength": 1 }
+          "id": {
+            "enum": [
+              "mechanical",
+              "thermal",
+              "flavor"
+            ]
+          },
+          "nl": {
+            "type": "string",
+            "minLength": 1
+          }
         }
       }
     }
