@@ -1,6 +1,6 @@
 # Mise — een kooksalmanak · Android app specification
 
-Status: **draft v2** (2026-10-22). v2 applies the feature review (Appendix C). Supersedes the Next.js/Supabase web app
+Status: **draft v3** (2026-10-22). v2 applied the feature review (Appendix C); v3 applies the UI/UX review (Appendix D). Supersedes the Next.js/Supabase web app
 (last web commit `cf3ec39`). Actionable breakdown: [`todo.md`](todo.md). Content & fixtures: [`data/README.md`](data/README.md).
 
 ---
@@ -16,6 +16,7 @@ Decided by the owner:
 | D3 | The **Claude API key** is entered in the app and stored encrypted with the Android Keystore (§9). |
 | D4 | Start from a fresh project; carry over only the curated content and test fixtures in `data/`. |
 | D5 | Apply the feature review (Appendix C), **except quest checkpoints**: quests do not get success criteria to tick off. Evaluation stays free scores + notes (§6.12). |
+| D6 | Apply the UI/UX review (Appendix D) in full: one season and difficulty vocabulary, Boodschappen as a tab with quest history in Dagboek, "Vanavond" pinning, a 5-step score scale, cook-mode resume, and the contrast rules in §5. |
 
 Assumptions; each one can be changed by editing this table:
 
@@ -39,11 +40,11 @@ Four parts feed that question and each other:
 
 1. **Seizoen**: which Dutch-grown vegetables are at their best right now (seasonal list, calendar, vegetable details).
 2. **Recepten**: your recipe library, imported from websites, cookbook photos or typed in, with structured ingredients.
-3. **Quests**: AI-generated cooking exercises, one tap for today's quest, shaped by the season and your journal.
-4. **Dagboek**: what you cooked, how it went, and how seasonally and broadly you cook.
+3. **Quests**: AI-generated cooking exercises, one tap for today's quest on Vandaag, shaped by the season and your journal.
+4. **Dagboek**: what you cooked, how it went, your quests, and how seasonally and broadly you cook.
 
-The loop: the season ranks recipes and quests (Vandaag) → you cook (cook mode) → you log it (Dagboek) → your
-journal shapes the next suggestions and quests. The **technique library** supports every step.
+The loop: the season ranks recipes and quests (Vandaag) → you pick tonight's dish and shop for it (Boodschappen) → you cook
+(cook mode) → you log it (Dagboek) → your journal shapes the next suggestions and quests. The **technique library** supports every step.
 
 All UI text is **Dutch**. Code, identifiers, comments and filenames are English.
 
@@ -149,38 +150,66 @@ android.sourceSets {
 The "Mise — een kooksalmanak" look is editorial and cookbook-like: cream paper, ink text, a leaf-green primary, a terracotta accent, and
 serif headlines with italic emphasis words.
 
-**Colour tokens** (from the web CSS):
+**Colour tokens** (from the web CSS; contrast measured on cream `#F4EFE6`):
 
-| Token | Value | M3 role |
-|---|---|---|
-| primary | `#3F5E2A` | `primary` |
-| primary-soft | `#7A9C5C` | `primaryContainer` (with `onPrimaryContainer` = ink) |
-| accent (terracotta) | `#B95128` | `tertiary` |
-| surface (cream) | `#F4EFE6` | `background`, `surface` |
-| surface-card | `#FBF8F1` | `surfaceContainerLow` (cards) |
-| surface-warm | `#EAE2D0` | `surfaceContainerHigh` |
-| ink | `#1E1A14` | `onBackground`, `onSurface` |
-| ink-soft | `#5A5347` | `onSurfaceVariant` |
-| line | ink @ 10% | `outlineVariant`; ink @ 22% = `outline` |
-| status peak | `#3F5E2A` | custom `MiseColors.peak` |
-| status soon | `#C98B2A` / fg `#8A5C12` | custom (used for "Komt eraan") |
-| status last chance | `#99514A` / fg `#6E3A35` | custom (used for "Laatste kans") |
-| status shoulder | primary-soft | custom |
+| Token | Value | M3 role | Contrast on cream |
+|---|---|---|---|
+| primary | `#3F5E2A` | `primary` | 6.4:1 |
+| primary-soft | `#7A9C5C` | `primaryContainer` (with `onPrimaryContainer` = ink, 5.6:1) | 2.7:1: fills only, never alone |
+| accent (terracotta) | `#B95128` | `tertiary` (`onTertiary` white, 4.9:1) | 4.3:1: large text and fills only |
+| surface (cream) | `#F4EFE6` | `background`, `surface` | |
+| surface-card | `#FBF8F1` | `surfaceContainerLow` (cards) | |
+| surface-warm | `#EAE2D0` | `surfaceContainerHigh` | |
+| ink | `#1E1A14` | `onBackground`, `onSurface` | |
+| ink-soft | `#5A5347` | `onSurfaceVariant` | 6.6:1 |
+| line | ink @ 10% | `outlineVariant`; ink @ 22% = `outline` | |
+| status peak | `#3F5E2A` | custom `MiseColors.peak` | 6.4:1 |
+| status shoulder | outline `#3F5E2A` on fill primary-soft | custom `MiseColors.shoulder` | (outline carries the contrast) |
+| status soon | fill `#C98B2A` / fg `#8A5C12` | custom ("Komt eraan") | fill 2.5:1, fg 5.1:1 |
+| status last chance | fill `#99514A` / fg `#6E3A35` | custom (badge "Laatste kans") | fill 5.1:1, fg 7.9:1 |
 
-Vegetables bring their own `color` (fill) and `accent` (bars, borders). Cuisine tags use the `facets.json` colours.
+**Colour rules** (WCAG 2.1 AA):
+- Text and small labels: ≥ 4.5:1. Status text, status dots and `SeasonBadge` text use the `*-fg` variants (or primary for peak).
+- Graphical indicators that carry meaning (status dots, `PeakBar` and calendar cells, progress bars, focus rings): ≥ 3:1.
+  The soft fills (`primary-soft`, the soon fill) never carry meaning on their own: a shoulder cell or dot is a primary outline
+  with a primary-soft fill, so it stays readable as "half" without colour.
+- Terracotta is for fills (buttons, the active filter pill) and text ≥ 18 sp; never for small text or inline links (use primary).
+- **Vegetable colours:** each vegetable's `color` is the `VegToken` fill and the detail header background; its initials and header text use ink
+  or white, whichever contrasts more, and that must reach 4.5:1 (`tools/validate_data.py` enforces it). The vegetable's `accent` is
+  decorative only (header rule, card edge); many accents are below 3:1, so **`PeakBar` and the calendar always use the status colours**,
+  never the vegetable's accent.
+- Colour is never the only signal: every status has a label, every shoulder cell a shape.
 
 **Typography** (bundled fonts, SIL OFL, licence files included in the app's licences screen):
-- *Instrument Serif* (regular + italic) → display/headline. Emphasis words are set in italic, e.g. "Wat kook ik *vandaag*?".
+- *Instrument Serif* (regular + italic) → display/headline only (≥ 22 sp). Emphasis words are set in italic, e.g. "Wat kook ik *vandaag*?".
+  The emphasis is **inline markup in one string resource** (`<i>vandaag</i>`), rendered by a `styledStringResource()` helper that maps
+  `StyleSpan(ITALIC)` to the serif italic. Never split a sentence across string keys: that breaks TalkBack phrasing and
+  wrapping at large font scales.
 - *Instrument Sans* (400/500/600) → title, body, label.
-- *JetBrains Mono* (400/500) → meta labels: eyebrows, month abbreviations, counts. Uppercase with letter spacing.
+- *JetBrains Mono* (400/500) → meta labels only: eyebrows, month abbreviations, counts (≥ 11 sp). Uppercase with letter spacing.
+  The uppercase is applied in the composable; the string resource stays in sentence case so TalkBack reads words, not letters.
 
 **Shape:** radius 8 / 12 / 14 / 20 dp; pills fully rounded. Cards have a hairline outline (line colour) and minimal
 elevation. Touch targets are at least 48 dp.
 
-**Components:** `VegToken` (coloured circle with initials), `StatusDot`, `SeasonBadge` (Laatste kans / Kort seizoen),
-`PeakBar` (12 cells: peak filled, shoulder half), `FilterPills`, `FacetChips`, `RecipeCard`, `SuggestionCard`
-(recipe + reason line), `TechniqueCard`, `DifficultyBadge`, `Eyebrow` (mono label), `HeroHeader`, `DisciplineBars`,
-`ProgressRing` (seasonal metric), `EmptyState`, `ErrorState`.
+**Components:** `VegToken` (coloured circle with initials; always shown next to the vegetable's name, never as its only label),
+`StatusDot`, `SeasonBadge` (Laatste kans / Kort seizoen), `PeakBar` (12 cells: peak filled, shoulder outlined + soft fill),
+`FilterPills`, `FacetChips`, `RecipeCard`, `SuggestionCard` (recipe + reason line + total time + "Niet vandaag" / "Dit kook ik vanavond"),
+`TonightCard`, `TechniqueCard`, `DifficultyBadge`, `Eyebrow` (mono label), `HeroHeader` (styled headline), `DisciplineBars`,
+`SeasonTally` (count of vegetables cooked at peak + "nog te proberen" tokens), `ScoreScale` (5 labelled steps, §6.12),
+`TimerChip` (idle / running with remaining time / done), `RecipeActionBar` (sticky bottom actions), `EmptyState`, `ErrorState`.
+
+**Vocabulary** (one word per concept, everywhere in the UI, notifications and content):
+
+| Concept | Label |
+|---|---|
+| Status PEAK / SHOULDER / SOON | **Op z'n best** / **Verkrijgbaar** / **Komt eraan** |
+| Status ENDING and OFF | **Buiten seizoen** (ENDING is only visible as the grid shape in the calendar) |
+| Badges | **Laatste kans**, **Kort seizoen** |
+| Difficulty (quests, techniques, curated recipes) | **Basis** / **Gemiddeld** / **Gevorderd** (+ **Automatisch** in the quest form) |
+| Score steps (§6.12) | **Mislukt** / **Matig** / **Oké** / **Goed** / **Top** |
+
+Internal enums keep their names (`BEGINNER` / `INTERMEDIATE` / `ADVANCED`, `easy` / `medium` / `hard`); only the labels are unified.
 
 ---
 
@@ -189,8 +218,10 @@ elevation. Touch targets are at least 48 dp.
 ### 6.1 App shell
 
 - Single activity, edge-to-edge, Material 3 `NavigationBar` with 5 destinations:
-  **Vandaag · Seizoen · Recepten · Quests · Dagboek**.
-- Each top app bar has an overflow menu (⋮) with **Technieken, Boodschappenlijst, Instellingen, Over Mise**.
+  **Vandaag · Seizoen · Recepten · Boodschappen · Dagboek**. The Boodschappen icon shows a badge with the number of unticked items.
+- Quests have no tab: they start from the **Quest van vandaag** card on Vandaag (and "Quest met …" / "Oefen in een quest" on vegetable
+  and technique detail), and their history lives in **Dagboek › Quests** (§6.13). Completed quests are journal entries anyway.
+- Each top app bar has an overflow menu (⋮) with **Technieken, Instellingen, Over Mise**.
   Techniques are mostly reached through links (§6.6).
 - System back and predictive back work everywhere, and each tab keeps its own back stack.
 - Share targets (§6.9) open the import flow on top of the current stack.
@@ -199,38 +230,53 @@ elevation. Touch targets are at least 48 dp.
 ### 6.2 Vandaag (home)
 
 Replaces the web app's Home. Its seasonal lists are folded into one shortlist, so Home no longer duplicates Seizoen.
-Top to bottom:
+Vandaag answers "wat kook ik vandaag?" and gets you from the answer to cooking. Top to bottom:
 
-1. Hero: eyebrow "NEDERLAND · {Maand} {jaar}", title "Wat kook ik *vandaag*?".
-2. **Suggesties**: 3 recipes from the library, ranked by §11.5. Each card shows a reason line, e.g. "Pompoen en boerenkool zijn
-   op hun best · 6 weken niet gekookt". "Andere suggesties" shows the next 3. When the library has fewer than 3
-   eligible recipes, the remaining slots show curated links of peak vegetables (`curatedRecipes`) and an import CTA.
-3. **Quest van vandaag**: one button that generates a quest with smart defaults (§11.6). If today's quest already exists,
-   the card shows it instead (open or completed). "Verfijn" opens the full quest form (§6.11).
-4. **Nu op hoogtepunt**: a horizontal shortlist of at most 8 peak vegetables, ordered by §11.1, with `SeasonBadge`s.
+1. Hero: eyebrow "NEDERLAND · {Maand} {jaar}", title "Wat kook ik *vandaag*?" (`today_hero_title`).
+2. **Vanavond** (only when a recipe is pinned for today): `TonightCard` with the recipe, total time and three actions:
+   **Kookmodus**, **Op boodschappenlijst** (scaled, §6.14) and **Toch niet** (unpins). The pin expires at the end of the day and is
+   cleared when an attempt is logged for that recipe. While a recipe is pinned, the suggestions below are collapsed under "Andere ideeën".
+3. **Suggesties**: 3 recipes from the library, ranked by §11.5. Each `SuggestionCard` shows the total time and a reason line, e.g.
+   "Pompoen en boerenkool zijn op hun best · 6 weken niet gekookt", plus two actions:
+   - **Dit kook ik vanavond** pins it (item 2).
+   - **Niet vandaag** removes it for the rest of the day; the next-ranked recipe slides into its slot.
+   A single chip **≤ 30 min** above the cards restricts the suggestions to recipes with `totalMinutes ≤ 30` (recipes without a time are
+   hidden while it's on). The chip state is not persisted.
+   When the library has fewer than 3 eligible recipes, the remaining slots show curated links of peak vegetables (`curatedRecipes`).
+   With an **empty library**, this section becomes an `EmptyState` that leads with import: "Begin met je eerste recept",
+   with the buttons Link plakken · Foto's maken, and the tip to share a recipe from the browser; the curated links follow below it.
+4. **Quest van vandaag**: one button that generates a quest with smart defaults (§11.6). If today's quest already exists,
+   the card shows it instead (open or completed). "Verfijn" opens the full quest form (§6.11). "Alle quests" opens Dagboek › Quests.
+   Without a Claude key, the card explains what is needed with **Sleutel toevoegen** (→ Instellingen) and **Verbergen**. Hidden, the
+   card stays away until a key is added or it is turned back on in Instellingen (`showQuestCard`).
+5. **Nu op z'n best**: a horizontal shortlist of at most 8 peak vegetables, ordered by §11.1, with `SeasonBadge`s.
    "Alle groenten →" goes to Seizoen.
-5. **Dit seizoen**: `ProgressRing` "{x} van {y} piekgroenten gekookt" (§12), linking to Dagboek.
 
-Works offline. Without a Claude key, the quest card explains what is needed and links to Instellingen.
+The seasonal tally lives on Dagboek only (§6.13); Vandaag stays about today. Works offline.
 
 ### 6.3 Seizoen
 
-- **Nu** view (default): filter pills with counts: **Nu verkrijgbaar** (PEAK + SHOULDER, default) / **Op hoogtepunt** /
+- **Nu** view (default): filter pills with counts: **Verkrijgbaar** (PEAK + SHOULDER, default) / **Op z'n best** (PEAK) /
   **Komt eraan** (SOON). ENDING vegetables are not available, so they don't get a filter.
   The calendar still shows when the peak just ended.
-- Rows: `VegToken`, `nl`, family, status dot + label, `SeasonBadge`s, mini `PeakBar`. Order per §11.1.
+- Rows: `VegToken` next to `nl`, family, status dot + label (§5 vocabulary), `SeasonBadge`s, mini `PeakBar`. Order per §11.1.
 - Search matches `nl`, `nameEn` (a hidden alias) and `family`; case- and diacritic-insensitive.
 - A segmented toggle switches between **Nu** and **Kalender** (§6.4).
 
 ### 6.4 Kalender
 
-- A year grid: each row is a vegetable, with 12 month columns (peak filled, shoulder half-filled). The current month column is highlighted.
-- The grid can be grouped by family (default) or listed A–Z. The name column stays fixed while the grid scrolls horizontally when it doesn't fit.
-- Tapping a row opens the vegetable detail. TalkBack reads each row as "{nl}: hoogtepunt {maanden}; beschikbaar {maanden}".
+- A year grid: each row is a vegetable, with 12 month columns (peak filled, shoulder outlined + soft fill, §5). The current month column is highlighted.
+- **The 12 months always fit the screen width**, so the year reads at a glance without horizontal scrolling: month headers are
+  single letters (`months_initial`: J F M A M J J A S O N D), the name column takes about a third of the width and ellipsizes long
+  names (the full name is in the row's TalkBack description and on the detail screen). Rows are at least 48 dp high.
+- The grid can be grouped by family (default, with sticky family headers) or listed A–Z.
+- Tapping a row opens the vegetable detail. TalkBack reads each row as "{nl}: op z'n best {maanden}; verkrijgbaar {maanden}", with
+  month names in full.
 
 ### 6.5 Groente-detail
 
-- Header in the vegetable's colours: `nl`, family, current status, `SeasonBadge`s, and a 12-month `PeakBar` with a legend.
+- Header on the vegetable's `color` (text in ink or white, §5): `nl`, family, current status, `SeasonBadge`s, and a 12-month
+  `PeakBar` in the status colours with a legend (Op z'n best / Verkrijgbaar).
 - Sections: **Bewaren** (`storage`), **Bereiden** (`prep`), **Bereidingstip** (`technique`),
   **Combineert goed met** (`pairings` chips), **Als je het niet hebt** (`substitutions` chips; a chip whose text
   matches another vegetable's `nl` opens that vegetable).
@@ -271,16 +317,21 @@ Works offline. Without a Claude key, the quest card explains what is needed and 
 - Image, title, source (tap → original URL), author (when known), description, times (voorbereiding / bereiden / totaal),
   and a servings stepper (1–99) that scales structured ingredients (§11.2).
 - **Ingredient groups** with headers ("Voor de saus", "Voor de marinade"). Items are rendered from structured fields
-  ("150 g boter, in blokjes"); unparsed items show their text. Items can be ticked off.
+  ("150 g boter, in blokjes"); unparsed items show their text. Items can be ticked off; the ticks are the same state as in
+  cook mode (the cook session, §6.10).
   "Op boodschappenlijst" adds all ingredients or a selection, scaled.
 - **Technieken in dit recept**: chips for the recipe's technique tags (→ technique detail).
 - **Step groups** with headers. Steps show timer chips (§11.3), and technique names in the text are tappable (alias match, §6.6).
 - **Extra velden**: free label/value pairs, for example "Wijnpairing: Chablis", "Bron pagina: 112", "Opmerking".
-- Tags (cuisine, dish type, main ingredient) and personal notes, a favourite toggle, the **cooked count and last cooked date**,
+- Tags (cuisine, dish type, main ingredient) and personal notes, the **cooked count and last cooked date**,
   and the attempts for this recipe with photos.
 - Imported website metadata (rating, date published, keywords, diet labels, nutrition, video) is stored in `sourceMeta`
   but **not displayed**.
-- Actions: **Kookmodus**, **Ik heb dit gekookt** (→ evaluation §6.12), Bewerken, Delen (as text), Verwijderen (with undo).
+- **Layout of actions:** a sticky `RecipeActionBar` at the bottom with **Kookmodus** (primary; "Verder bij stap {n}" when a cook
+  session for this recipe is open, §6.10) and **Gekookt** (→ evaluation §6.12). The top app bar holds the favourite toggle and ⋮ with
+  **Dit kook ik vanavond**, Bewerken, Delen (as text) and Verwijderen (with undo). "Op boodschappenlijst" sits with the ingredients.
+- **Order of sections** (cook-first): image and title, times and servings, ingredients, steps, Technieken in dit recept, then the
+  reference material (extra fields, tags, notes, cooked count, attempts).
 
 **Edit mode (in place)**
 - "Bewerken" switches the same screen to editable fields: title, description, servings, times, source label/URL, groups (add,
@@ -299,8 +350,11 @@ Works offline. Without a Claude key, the quest card explains what is needed and 
 | No JSON-LD found | Offer "**Lees de pagina met Claude**" (§8.5) or "Zelf invoeren" |
 | Zelf invoeren | An empty recipe in edit mode |
 
-- The preview is the detail screen in edit mode, so the user can fix anything before saving. A source label is suggested
-  (domain, or a cookbook title detected by Claude).
+- **Preview:** the detail screen in **read view** with a bottom bar **Bewaren** (primary) and **Aanpassen** (switches to edit mode).
+  A clean import is one tap to save. Lines the local parser could not structure are marked subtly ("Niet herkend; wordt aangevuld als
+  er een sleutel is"). The preview opens **directly in edit mode** only for "Zelf invoeren" and when the import has no title, no
+  ingredients or no steps; the missing parts are highlighted. A source label is suggested (domain, or a cookbook title detected by Claude).
+- **Sharing is the main way in** (§3), so the `ACTION_SEND` share targets for links and images ship in P1, not later.
 - **Enrichment:** after a URL import or a manual save, the local ingredient parser runs immediately. When a key is set,
   a background job then calls Claude once per recipe for structured ingredients **and** tags (§8.4). The recipe shows
   "wordt verrijkt…" and a failure never blocks the save. Photo and page imports already return structured
@@ -311,24 +365,35 @@ Works offline. Without a Claude key, the quest card explains what is needed and 
 ### 6.10 Kookmodus
 
 - A full-screen, step-by-step pager: one step per page, large type (scales with the system font), group name as an eyebrow,
-  progress "Stap 3 van 9". Swipe or tap the large previous/next buttons.
-- The ingredients panel is one tap away (bottom sheet), shows the scaled amounts and remembers ticks.
+  progress "Stap 3 van 9" with a thin progress bar. Swipe or tap the large previous/next buttons.
+- **Landscape** (phone propped up sideways): two panes, the step on the left and the ingredients list on the right. In portrait the
+  ingredients panel is one tap away (bottom sheet). Both show the scaled amounts.
 - The screen stays on (`FLAG_KEEP_SCREEN_ON`) while cook mode is visible.
+- **Cook session:** one open session at a time (§7.3): recipe, current step, servings, ingredient ticks and started timers. It is
+  saved on every change, so leaving and coming back (or process death) resumes at the same step: the recipe's Kookmodus button reads
+  "Verder bij stap {n}". It is cleared when an attempt is logged for the recipe, or after 24 hours.
 - **Timers use the phone's Clock app:** tapping a timer chip (§11.3) fires `AlarmClock.ACTION_SET_TIMER` with
   `EXTRA_LENGTH`, `EXTRA_MESSAGE` = "Mise · Stap 4" and `EXTRA_SKIP_UI = true`, so the timer starts without leaving cook mode.
   A snackbar confirms "Timer van 12 min gestart". If no app handles the intent, chips are hidden and a one-time hint explains why.
   In-app timers are P3 (§18).
+- **Running timers stay visible:** Mise records each start time in the cook session and shows a `TimerChip` strip at the top of cook
+  mode ("Stap 4 · nog ~9 min", then "Stap 4 · klaar"), computed locally; it is an estimate, the Clock app rings. Tapping a running
+  chip opens the Clock app's timer list (`AlarmClock.ACTION_SHOW_TIMERS`). No extra permissions.
 - **Technique help:** a step whose text names a technique shows an info button that opens that technique as a bottom sheet.
-- Leaving cook mode asks "Heb je dit gekookt?" → evaluation (§6.12), or not now.
+- **Finishing:** the last page has a large **Klaar met koken** button → evaluation (§6.12). Leaving cook mode **after reaching the last
+  step** asks "Heb je dit gekookt?" (Vastleggen / Nu niet). Leaving earlier never asks: the session is kept for resuming.
 
 ### 6.11 Quests
 
-A quest is a focused cooking exercise generated by Claude (§8.3). There are **no checkpoints** (D5).
+A quest is a focused cooking exercise generated by Claude (§8.3). There are **no checkpoints** (D5). Quests start from the
+Quest van vandaag card on Vandaag; their history is **Dagboek › Quests** (§6.13).
 
 **Quest van vandaag (one tap)**
-- From Vandaag or the Quests tab. Uses the defaults from §11.6 (in-season vegetable, neglected discipline, adapted
-  difficulty, no repeats) and generates right away. Shows what was chosen ("Seizoensgroente: pastinaak · Focus:
-  snijtechnieken · Gemiddeld") with a "Verfijn" link.
+- From the Vandaag card (or Dagboek › Quests). Uses the defaults from §11.6 (in-season vegetable, neglected discipline, adapted
+  difficulty, no repeats) and generates right away.
+- **While generating** (this can take tens of seconds), the card already shows what was chosen ("Seizoensgroente: pastinaak ·
+  Focus: snijtechnieken · Gemiddeld"), a progress indicator and **Annuleren**; cancelling returns the card to its idle state
+  and records no quest. A "Verfijn" link is always there.
 - At most one "quest van vandaag" per day. Regenerating replaces it (the old one stays in history).
 
 **Verfijn (full form, collapsed by default)**
@@ -338,7 +403,7 @@ A quest is a focused cooking exercise generated by Claude (§8.3). There are **n
   - *Verras me* (default): Claude chooses from the in-season list and returns its id.
 - **Soort quest** (chips): Maaltijd · Lunch · Bijgerecht · Saus · Bouillon / fond · Component · Laat Claude kiezen.
   "Component" means a building block such as a pickle, crumble, flavoured oil or dressing.
-- **Moeilijkheid**: Automatisch (§11.6) · Beginner · Gemiddeld · Gevorderd.
+- **Moeilijkheid**: Automatisch (§11.6) · Basis · Gemiddeld · Gevorderd.
 - Optional: **Techniek** (searchable, skills only), **Keuken** (facet values), **Beschikbare tijd** (<15 / <30 / <60 / >60),
   **Klein & eenvoudig** (pantry ingredients only).
 - "Geef quest". The button is disabled with an explanation when offline or when no key is set.
@@ -346,46 +411,64 @@ A quest is a focused cooking exercise generated by Claude (§8.3). There are **n
 **Result**
 - Quest text, skill, difficulty badge, time estimate, "Waarom deze quest?", result type (dish type), the chosen vegetable (if any),
   technique chips (→ technique detail) and a full recipe (ingredient groups, steps, tips).
-- Actions: **Start koken** (cook mode on the quest's recipe), **Andere quest** (same parameters),
-  **Bewaar recept in bibliotheek** (sets `inLibrary = true`), **Quest voltooid** (→ evaluation; status COMPLETED).
+- Actions: **Start koken** (cook mode on the quest's recipe; primary), **Quest voltooid** (→ evaluation), **Andere quest**
+  (same parameters), and in ⋮ **Bewaar recept in bibliotheek** (sets `inLibrary = true`).
+- **One way to complete:** any attempt logged for the quest's recipe, whether from Quest voltooid, "Klaar met koken" in cook mode, or
+  the cook-mode exit prompt, links the attempt to the quest (`questId`) and sets the quest to COMPLETED.
 
-**History**
-- A tab with all quests: filter on Open / Voltooid, plus type and difficulty. Each item can be reopened, retried with the same parameters, or deleted.
+### 6.12 Evaluatie ("Gekookt")
 
-### 6.12 Evaluatie ("Ik heb dit gekookt")
-
-- A bottom sheet: **Uitvoering (1–10)**, **Smaak (1–10)** (both optional), **Notities**, **Foto** (optional; camera or
-  gallery, stored locally), and the date (default today; editable).
-- **Vastleggen** logs an attempt (§7.2) with snapshots of techniques, cuisines and the vegetables used (§11.4). **Overslaan** logs it without scores.
-- The recipe's cooked count and last cooked date update right away.
+- A bottom sheet, reached from every place that ends a cook: **Gekookt** on recipe detail, **Klaar met koken** and the exit prompt in
+  cook mode, and **Quest voltooid**.
+- **Uitvoering** and **Smaak** (both optional) are each a `ScoreScale`: one row of 5 labelled steps, one tap each, at least 48 dp:
+  **Mislukt · Matig · Oké · Goed · Top**, stored as **2 · 4 · 6 · 8 · 10** in the 1–10 fields (§7.2). Tapping the selected step clears it.
+  The thresholds in §11.6 (≥ 8 up, ≤ 5 down) and the badges' `minAvgScore` keep working on the stored values. Older attempts with
+  other values (restored web data) show the nearest step label (1–2 Mislukt, 3–4 Matig, 5–6 Oké, 7–8 Goed, 9–10 Top) and keep
+  their stored value until a step is tapped.
+- **Notities**, **Foto** (optional; camera or gallery, stored locally), and the date (default today; editable).
+- **Vastleggen** logs an attempt (§7.2) with snapshots of techniques, cuisines and the vegetables used (§11.4).
+  **Zonder cijfers vastleggen** logs it without scores. Dismissing the sheet logs nothing.
+- The recipe's cooked count and last cooked date update right away; the cook session and a Vanavond pin for the recipe are cleared.
 
 ### 6.13 Dagboek (replaces "Profiel")
 
-A cooking journal first, statistics second.
+A cooking journal first, statistics second. Three segments at the top: **Tijdlijn** (default) · **Quests** · **Inzichten**.
 
-- **Tijdlijn**: attempts grouped by month (newest first), each with photo, title, scores, notes, and recipe or quest.
+**Tijdlijn**
+- Attempts grouped by month (newest first), each with photo, title, scores (step labels), notes, and recipe or quest.
   Filter: alles / recepten / quests. Tapping an entry edits it (scores, notes, photo, date) or opens the recipe.
-- **Dit seizoen**: `ProgressRing` "{x} van {y} piekgroenten gekookt", the cooked vegetables as tokens, and "nog te proberen"
-  (peak vegetables this season not yet cooked, each linking to vegetable detail) (§12).
+
+**Quests** (the quest history)
+- All quests, newest first: filter on Open / Voltooid, plus type and difficulty. Each item can be reopened, retried with the same
+  parameters, or deleted. A **Nieuwe quest** button opens the Verfijn form (§6.11).
+
+**Inzichten**
+- Header stats: attempts this month, total attempts, quests completed.
+- **Dit seizoen**: a `SeasonTally`: "{x} groenten op hun best gekookt dit seizoen" (no denominator, §12), the cooked vegetables as
+  tokens, and **Nog te proberen**: the first 3 vegetables that are PEAK this month and not yet cooked this season, in §11.1 order
+  (so Laatste kans comes first), each linking to vegetable detail, plus "Alle →".
 - **Technieken**: `DisciplineBars` for the 3 disciplines (count + average execution score), meest geoefende technieken
   (top 10), and **verwaarloosd** (disciplines not practised in the last 30 days). Quest van vandaag uses this list.
 - **Keukens**: meest gekookte keukens (top 5).
-- **Insignes**: badges from `archetypes.json`, earned or locked, with progress text ("Nog 3 groenten op hun hoogtepunt").
-- Header stats: attempts this month, total attempts, quests completed.
+- **Insignes**: badges from `archetypes.json`, earned or locked, with progress text ("Nog 3 groenten op hun best").
 - Dropped from the web profile: radar chart, ingredient cloud, "hoogst gewaardeerde keukens", "hoogst beoordeelde technieken".
 
-### 6.14 Boodschappenlijst
+### 6.14 Boodschappen (tab)
 
+- A bottom-bar tab (§6.1), because it is used in the shop with one hand. Items arrive from recipe detail ("Op boodschappenlijst")
+  and the Vanavond card.
 - Items from several recipes are **combined** by ingredient name and compatible unit (§11.7): "3 uien" from two recipes
   is one line, with the source recipes as small chips. Unparsed lines stay separate.
 - Sections: combined items (A–Z) and "Los" (manual items). Tick off, swipe to delete, add manual items.
+  Ticked items move to the bottom of their section.
 - Clear ticked items, or clear everything (with undo). "Delen" shares the list as plain text.
+- Empty state: "Je lijst is leeg" with a hint to add ingredients from a recipe.
 
 ### 6.15 Instellingen
 
 - **Claude**: key status (none / valid / invalid), add/replace/delete key (§9), "Sleutel testen", **Kwaliteit**
-  (Snel / Gebalanceerd / Beste, A8), usage this month (tokens + estimated €), and a tip to set a monthly spend limit
-  in the Anthropic Console.
+  (Snel / Gebalanceerd / Beste, A8), usage this month (tokens + estimated €), a tip to set a monthly spend limit
+  in the Anthropic Console, and **Quest-kaart tonen op Vandaag** (`showQuestCard`, §6.2).
 - **Gegevens**: export a backup, restore a backup (this also restores converted web-app data, §13.3), automatic
   backup (folder + frequency, last run), "Ingrediënten verrijken" for all unparsed recipes (shows an estimated cost first),
   delete all data (typed confirmation "VERWIJDER").
@@ -396,8 +479,11 @@ A cooking journal first, statistics second.
 
 1. Welcome (brand + one sentence).
 2. Optional: "Claude-sleutel toevoegen" (explains which features need it, what it costs, how it is stored) or "Later".
-3. Optional: "Back-up terugzetten", for an earlier backup or the converted web-app data (§13.3).
-4. Notification permission is asked **only** when the seasonal notification is turned on.
+3. Optional: "Back-up terugzetten", for an earlier backup or the converted web-app data (§13.3). Skipped automatically after a restore.
+4. **Je eerste recept** (skipped when a restore brought recipes): Link plakken · Foto's maken · Later, with the tip that sharing a recipe
+   from Chrome or Instagram to Mise imports it directly. Choosing an option ends onboarding in that import flow; "Later" lands on
+   Vandaag, whose empty-library state repeats the same choice (§6.2).
+5. Notification permission is asked **only** when the seasonal notification is turned on.
 
 ---
 
@@ -424,7 +510,7 @@ IDs are UUID strings; timestamps are epoch millis (UTC). Lists that are only eve
 | `recipe_extra_field` | `id`, `recipeId`, `position`, `label`, `value` |
 | `recipe_tag` | `recipeId`, `key` (cuisine / dishType / mainIngredient / technique), `value` (PK all three) |
 | `quest` | `id`, `createdAt`, `isDaily`, `status` (OPEN / COMPLETED), `completedAt?`, `ingredientMode` (CUSTOM / SEASONAL / SURPRISE), `ingredient`, `vegId?`, `quantity?`, `unit?`, `questType`, `requestedDifficulty?`, `focusDiscipline?`, `requestedTechniqueId?`, `requestedCuisine?`, `timeLimit?`, `simpleAndSmall`, `text`, `skill`, `difficulty`, `timeEstimateMinutes`, `why`, `dishType`, `tips` (json), `recipeId` (FK → `recipe` with `sourceType = QUEST`) |
-| `attempt` | `id`, `sourceType` (RECIPE / QUEST), `recipeId?`, `questId?`, `cookedAt`, `score?` (1–10), `tasteScore?` (1–10), `notes?`, `photoPath?`, `techniques` (json snapshot), `cuisines` (json snapshot), `vegIds` (json snapshot, §11.4), `peakVegIds` (json: subset at PEAK on `cookedAt`) |
+| `attempt` | `id`, `sourceType` (RECIPE / QUEST), `recipeId?`, `questId?`, `cookedAt`, `score?` (1–10; the UI writes 2/4/6/8/10, §6.12), `tasteScore?` (1–10, same), `notes?`, `photoPath?`, `techniques` (json snapshot), `cuisines` (json snapshot), `vegIds` (json snapshot, §11.4), `peakVegIds` (json: subset at PEAK on `cookedAt`) |
 | `shopping_item` | `id`, `text`, `quantity?`, `unit?`, `name?`, `recipeId?`, `checked`, `position`, `createdAt` |
 | `claude_usage` | `id`, `at`, `feature` (QUEST / PHOTO_IMPORT / PAGE_IMPORT / ENRICH / KEY_CHECK), `model`, `inputTokens`, `outputTokens`, `cacheReadTokens`, `costMicroUsd` |
 
@@ -439,7 +525,13 @@ IDs are UUID strings; timestamps are epoch millis (UTC). Lists that are only eve
 
 `quality` (FAST / BALANCED / BEST), `seasonalNotificationsEnabled`, `autoBackupTreeUri?`, `autoBackupFrequency`
 (OFF / DAILY / WEEKLY), `lastBackupAt?`, `lastSeasonalNotifiedMonth?`, `onboardingDone`, `librarySort`,
-`clockTimerHintShown`. The API key is **not** stored here (§9).
+`clockTimerHintShown`, `showQuestCard` (default true). The API key is **not** stored here (§9).
+
+Day and session state (JSON strings in the same file; never backed up, §13.1):
+- `tonight?`: `{ date, recipeId }`, the Vanavond pin (§6.2). Ignored when `date` is not today.
+- `todayDismissed?`: `{ date, recipeIds[] }`, suggestions dismissed with "Niet vandaag". Ignored when `date` is not today.
+- `cookSession?`: `{ recipeId, stepIndex, servings, checkedIngredientIds[], timers[{ stepIndex, lengthSeconds, startedAt }], updatedAt }`
+  (§6.10). Ignored and cleared when `updatedAt` is more than 24 hours old or the recipe no longer exists.
 
 ### 7.4 Files
 
@@ -622,10 +714,11 @@ statusFor(veg, month):
 Acceptance: matches `data/fixtures/seasonality/status.json` for all 66 × 12 cells. The rule is unchanged from the web app;
 only the presentation changes:
 
-- **Nu verkrijgbaar** = PEAK or SHOULDER. **Komt eraan** = SOON. ENDING is shown in the calendar only.
+- Labels follow the §5 vocabulary: PEAK **Op z'n best**, SHOULDER **Verkrijgbaar**, SOON **Komt eraan**, ENDING and OFF
+  **Buiten seizoen**. The default filter **Verkrijgbaar** = PEAK or SHOULDER. ENDING is visible only as the grid shape in the calendar.
 - **Laatste kans** badge: PEAK now and neither PEAK nor SHOULDER next month.
 - **Kort seizoen** badge: `|peak ∪ shoulder| ≤ 3` months (e.g. white asparagus).
-- **Order** (Nu op hoogtepunt shortlist, Seizoen lists, dropdowns): status (PEAK, SHOULDER, SOON) → Laatste kans first →
+- **Order** (Nu op z'n best shortlist, Seizoen lists, dropdowns, Nog te proberen): status (PEAK, SHOULDER, SOON) → Laatste kans first →
   Kort seizoen first → fewer available months first → `nl` (Dutch collation). This keeps the list meaningful in
   September, when 43 vegetables are at peak at once.
 
@@ -669,7 +762,10 @@ score    = season + recency + (favourite ? 0.4 : 0)
 
 - Exclude recipes with `inLibrary = false`. Ties are broken by fewest times cooked, then title.
 - The reason line names the top contributors: up to 2 peak vegetables, "{n} weken niet gekookt", "Nog nooit gekookt", "Favoriet".
-- The ranking is deterministic for a given day (stable across app restarts). "Andere suggesties" pages through the list.
+- The ranking is deterministic for a given day (stable across app restarts). Vandaag shows the first 3 recipes that are not in
+  `todayDismissed` and not the Vanavond pin; with the **≤ 30 min** chip on, only recipes with `totalMinutes ≤ 30` qualify.
+  Dismissing a card takes the next qualifying recipe. When none are left, the empty slots fall back to curated links (§6.2).
+- The `SuggestionCard` shows `totalMinutes` (or nothing when unknown) next to the reason line.
 - Pure function, unit-tested with fixed dates.
 
 ### 11.6 Quest van vandaag defaults
@@ -678,7 +774,7 @@ score    = season + recency + (favourite ? 0.4 : 0)
   that leaves fewer than 3, and all in-season vegetables if PEAK is empty.
 - **Focus discipline**: the most neglected discipline (§12). If none is neglected, the one with the fewest attempts in 30 days.
 - **Difficulty**: from the last 5 completed quests with an execution score. Average ≥ 8 → one level up from the most recent
-  difficulty; ≤ 5 → one level down; otherwise the same. No history → Beginner.
+  difficulty; ≤ 5 → one level down; otherwise the same. No history → Basis (`BEGINNER`).
 - **Soort quest**: Laat Claude kiezen. Other parameters are empty.
 - **History**: the last 10 quests (skill + title) are sent as the "niet herhalen" list.
 
@@ -702,15 +798,16 @@ Input: all attempts. "Matches discipline D" means at least one technique id in t
 - **Top techniques:** count per technique id, desc, top 10.
 - **Neglected disciplines:** disciplines with no matching attempt, or whose most recent matching attempt is more than 30 days ago.
 - **Top cuisines:** count per cuisine (attempt snapshot), desc, top 5.
-- **Dit seizoen:** seasons are lente (Mar–May), zomer (Jun–Aug), herfst (Sep–Nov) and winter (Dec–Feb). `y` = distinct
-  vegetables that are PEAK in at least one month of the current season. `x` = distinct vegetables in `peakVegIds` of
-  attempts cooked in the current season.
+- **Dit seizoen:** seasons are lente (Mar–May), zomer (Jun–Aug), herfst (Sep–Nov) and winter (Dec–Feb). `x` = distinct vegetables
+  in `peakVegIds` of attempts cooked in the current season. It is shown **without a denominator**: the number of vegetables that peak
+  in a season (21 in winter up to 53 in autumn) made "2 van 53" read as failure. **Nog te proberen** = vegetables that are PEAK in the
+  current month and not in `x`, in §11.1 order.
 - **Badges** (`archetypes.json`, typed rules):
   - `techniques`: matching attempts (by `discipline` or `techniqueIds`) ≥ `minAttempts`, and, if `minAvgScore` is set, the mean of their
     non-null execution scores ≥ `minAvgScore`. No scores means not earned.
   - `distinctPeakVegetables`: distinct ids across all `peakVegIds` ≥ `min`.
   - `peakMonths`: distinct calendar months (1–12) of attempts with non-empty `peakVegIds` ≥ `min`.
-  - Progress text shows what's missing ("Nog 4 groenten op hun hoogtepunt").
+  - Progress text shows what's missing ("Nog 4 groenten op hun best").
 - Acceptance: port the applicable cases from `web/lib/profileAggregation.test.ts@cf3ec39` (adapted to 3 disciplines), plus tests
   for the seasonal metric (season boundaries, December/January wrap) and every badge rule at and around its threshold.
 
@@ -723,7 +820,7 @@ Input: all attempts. "Matches discipline D" means at least one technique id in t
 - `Mise-backup-YYYYMMDD-HHmm.zip` via the system file picker (SAF `CreateDocument`) or the share sheet.
 - Contents: `backup.json` + `images/{recipeId}.jpg` + `journal/{attemptId}.jpg`. `backup.json` holds
   `{ format: "mise-backup", schemaVersion: 1, exportedAt, appVersion, recipes[] (the full graph with groups, items, extra fields, tags),
-  quests[], attempts[], shoppingItems[], settings (non-secret subset) }`.
+  quests[], attempts[], shoppingItems[], settings (non-secret subset, without the day and session state of §7.3) }`.
 - **Never** includes the API key or Keystore material. `claude_usage` is left out.
 - The format is documented in `data/schemas/backup.schema.json` (todo P1), so the legacy converter and the app share one contract.
 
@@ -764,7 +861,7 @@ There is no legacy code in the app. A one-off script converts the old exports in
 
 | Channel | Importance | Use |
 |---|---|---|
-| `season` | DEFAULT | Monthly "Nu op hoogtepunt: asperges, rabarber, …" (vegetables that became PEAK this month) |
+| `season` | DEFAULT | Monthly "Nu op z'n best: asperges, rabarber, …" (vegetables that became PEAK this month) |
 | `background` | LOW | Automatic backup or enrichment failed |
 
 - Seasonal notification: a daily WorkManager job posts once per month (on the first run on or after the 1st, ~09:00), only when enabled.
@@ -790,8 +887,12 @@ There is no legacy code in the app. A one-off script converts the old exports in
 
 ### 15.3 Accessibility
 - TalkBack labels in Dutch for every icon button, chart and status (month names in full, not abbreviated).
-- Supports font scale up to 200% without clipping; 48 dp targets; colour is never the only status signal (dot + label).
-- Status colours meet WCAG AA contrast on cream for text use (the `*-fg` variants).
+- Supports font scale up to 200% without clipping; 48 dp targets; colour is never the only status signal (dot + label,
+  outlined shoulder cells).
+- Contrast follows the colour rules in §5: text ≥ 4.5:1 (status text uses the `*-fg` variants), meaningful graphics ≥ 3:1,
+  vegetable fills checked by the data validator.
+- Headlines with italic emphasis are single string resources (§5), so TalkBack reads them as one sentence.
+- Every way to finish an action is a visible button; swipes (cook-mode pager, swipe to delete) always have a button or undo next to them.
 
 ### 15.4 Language
 - Every user-visible string lives in `res/values/strings.xml` (Dutch is the default and only locale). Lint `HardcodedText`
@@ -809,12 +910,12 @@ There is no legacy code in the app. A one-off script converts the old exports in
 
 | Level | What |
 |---|---|
-| Data | `python3 tools/validate_data.py` (schemas, cross-references, strings.xml, seasonality drift) in CI and as a Claude Code hook |
+| Data | `python3 tools/validate_data.py` (schemas, cross-references, strings.xml incl. markup and plurals, vegetable colour contrast, seasonality drift) in CI and as a Claude Code hook |
 | Unit (JVM) | Asset deserialisation of every file (`ignoreUnknownKeys = false`); seasonality goldens + presentation order and badges; parser goldens; local ingredient parser (table-driven: fractions, ranges, comma decimals, aliases, notes, pack sizes); scaling + rounding + Dutch formatting; shopping aggregation; duration detection; seasonal matcher; suggestion ranking (fixed dates); quest defaults; journal aggregation; badges; Claude schema builders + response mapping (recorded JSON responses, no live calls); backup round-trip |
 | Tools | `tools/legacy_to_backup.py` tested with synthetic legacy fixtures covering every branch of Appendix A; its output validates against `backup.schema.json` and restores in an instrumented test |
 | Integration | Room DAOs + `MigrationTestHelper`; `SecretStore` on Robolectric/instrumented (encrypt → decrypt, invalidation path) |
-| UI (Compose) | Vandaag with seeded data, import from URL (fake fetcher), edit-in-place save/cancel, quest van vandaag (fake client), key entry states, cook mode timer chip intent |
-| Manual checklist | Share from Chrome/Instagram, camera import, Clock timer from cook mode on 2 phones, restore on a fresh install, legacy restore with real data |
+| UI (Compose) | Vandaag with seeded data (Niet vandaag refill, ≤ 30 min chip, Vanavond pin), import from URL (fake fetcher; clean import saves in one tap), edit-in-place save/cancel, quest van vandaag (fake client, cancel while generating), key entry states, cook mode (timer chip intent, resume at step after leaving, exit prompt only after the last step), evaluation score steps |
+| Manual checklist | Share from Chrome/Instagram, camera import, cook mode in landscape, TalkBack and 200% font scale on Vandaag, Kalender and cook mode, Clock timer from cook mode on 2 phones, restore on a fresh install, legacy restore with real data |
 
 CI must stay green on every push: validate data → `./gradlew lint ktlintCheck testDebugUnitTest assembleDebug`.
 
@@ -912,3 +1013,30 @@ Entries with a `remoteId` that matches a Supabase row are merged into that row; 
 | Custom timers are complex | Clock app handoff; custom timers P3 | §6.10, §18 |
 | Legacy import code lives forever in the app | One-off converter script → normal restore | §13.3, Appendix A |
 | Too much configuration | One Kwaliteit setting; biometric lock P3; 3 sort orders | §0 A8, §6.7, §6.15 |
+
+## Appendix D — UI/UX review outcome (v3)
+
+The spec was reviewed for usability before any UI was built (2026-10-22). The owner accepted all findings (D6).
+
+| Finding | Change | Where |
+|---|---|---|
+| Vandaag ranks recipes but nothing connects choosing to cooking; no cooking time on the cards | Total time on `SuggestionCard`, a ≤ 30 min chip, "Dit kook ik vanavond" → Vanavond card with Kookmodus and Op boodschappenlijst | §6.2, §11.5 |
+| "Andere suggesties" replaces all three cards at once | Per-card "Niet vandaag"; the next-ranked recipe slides in | §6.2, §11.5 |
+| Day one is empty: onboarding never leads to a first recipe; share import was P2 although sharing is the main way in | First-run step "Je eerste recept", an import-led empty state on Vandaag, share targets moved to P1 | §6.2, §6.9, §6.16 |
+| "{x} van {y} piekgroenten" reads as failure (y = 53 in autumn) and is shown twice | `SeasonTally` without a denominator plus 3 "nog te proberen" tokens, on Dagboek only | §6.13, §12 |
+| Eight overlapping season words (Op hoogtepunt, Beschikbaar, Nu verkrijgbaar, Binnenkort, Aflopend, …) | Three statuses (Op z'n best / Verkrijgbaar / Komt eraan) + two badges; ENDING shows as Buiten seizoen | §5, §6.3, §11.1, `strings.xml` |
+| Three difficulty vocabularies (Beginner/Expert, Makkelijk/Moeilijk, Basis/Gevorderd) | One scale: Basis / Gemiddeld / Gevorderd (+ Automatisch) | §5, §6.11, `strings.xml` |
+| "Overslaan" in the evaluation sheet still saves an attempt | Renamed "Zonder cijfers vastleggen"; dismissing logs nothing | §6.12 |
+| Soft fills and 14 vegetable accents below 3:1 used for meaning; 3 vegetable fills below 4.5:1 for initials; terracotta 4.3:1 | Colour rules: status colours for `PeakBar`/calendar, outlined shoulder cells, terracotta only large; fills fixed and checked by the validator | §5, §15.3, `vegetables.json`, `tools/validate_data.py` |
+| Headlines split across string keys for the italic word | One string with `<i>` markup and a `styledStringResource()` helper; the validator allows only `<i>`/`<b>` | §5, `strings.xml` |
+| Initials-only `VegToken`s collide among 66 mostly green vegetables | The token is always paired with the name | §5, §6.3 |
+| Year grid scrolls horizontally on a phone, losing the "year at a glance" | 12 columns always fit; single-letter months; ellipsized names | §6.4 |
+| Cook mode asks "Heb je dit gekookt?" on every exit and forgets where you were | Prompt only after the last step; "Klaar met koken" button; persisted cook session with "Verder bij stap n" | §6.10, §7.3 |
+| Clock-app timers run out of sight | Local `TimerChip` strip with remaining time; tap opens the Clock app's timers | §6.10 |
+| Phone propped up sideways | Two-pane landscape cook mode; ingredient ticks shared with recipe detail | §6.8, §6.10 |
+| Import preview starts in edit mode even for a clean import | Read-view preview with Bewaren; edit mode only for manual entry or missing parts | §6.9 |
+| Recipe detail: long scroll, five equal actions | Sticky Kookmodus / Gekookt bar, favourite in the top bar, the rest in ⋮, cook-first section order | §6.8 |
+| Two ways to complete a quest | Any attempt on the quest's recipe completes it | §6.11 |
+| Quest generation waits silently; a dead quest card every day without a key | Chosen defaults + cancel while generating; "Verbergen" for the no-key card | §6.2, §6.11, §6.15 |
+| Two 1–10 sliders are fiddly with wet hands | 5 labelled steps stored as 2/4/6/8/10, so thresholds and badges keep working | §6.12, §7.2 |
+| Dagboek mixes the journal with statistics in one scroll; the Quests tab duplicates Vandaag while the shopping list is two taps deep | Dagboek segments Tijdlijn · Quests · Inzichten; Boodschappen replaces Quests in the bottom bar | §6.1, §6.13, §6.14 |

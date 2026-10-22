@@ -122,6 +122,21 @@ def load(rel: str, schema: str | None = None) -> dict | list:
     return doc
 
 
+def contrast(a: str, b: str) -> float:
+    """WCAG 2 contrast ratio between two #RRGGBB colours."""
+
+    def luminance(hex_colour: str) -> float:
+        channels = [int(hex_colour[i : i + 2], 16) / 255 for i in (1, 3, 5)]
+        r, g, b = [c / 12.92 if c <= 0.03928 else ((c + 0.055) / 1.055) ** 2.4 for c in channels]
+        return 0.2126 * r + 0.7152 * g + 0.0722 * b
+
+    hi, lo = sorted((luminance(a), luminance(b)), reverse=True)
+    return (hi + 0.05) / (lo + 0.05)
+
+
+INK, WHITE = "#1E1A14", "#FFFFFF"
+
+
 def unique(where: str, values: list[str]) -> set[str]:
     seen: set[str] = set()
     for v in values:
@@ -146,6 +161,10 @@ for v in vegs:
     overlap = set(v.get("peak", [])) & set(v.get("shoulder", []))
     if overlap:
         err(f"vegetables[{v.get('id')}]", f"months {sorted(overlap)} are both peak and shoulder")
+    # VegToken initials are drawn in ink or white, whichever reads better (spec §5): one must reach WCAG AA.
+    fill = v.get("color", "")
+    if re.fullmatch(r"#[0-9A-Fa-f]{6}", fill) and max(contrast(fill, INK), contrast(fill, WHITE)) < 4.5:
+        err(f"vegetables[{v.get('id')}]", f"color {fill} reaches < 4.5:1 with both ink and white initials")
 
 disc_ids = unique("disciplines.id", [d.get("id", "") for d in disc_doc.get("disciplines", [])])
 
@@ -204,9 +223,18 @@ if tree is not None:
         where = f"{STRINGS}[{name}]"
         if not re.fullmatch(r"[a-z][a-z0-9_]*", name):
             err(where, "name must be snake_case")
-        texts = [el.text or ""] if el.tag == "string" else [i.text or "" for i in el.findall("item")]
-        if el.tag not in ("string", "string-array"):
+        items = [el] if el.tag == "string" else el.findall("item")
+        texts = ["".join(i.itertext()) for i in items]
+        if el.tag not in ("string", "string-array", "plurals"):
             err(where, f"unexpected element <{el.tag}>")
+        if el.tag == "plurals":
+            quantities = [i.get("quantity") for i in items]
+            if "other" not in quantities or not set(quantities) <= {"zero", "one", "two", "few", "many", "other"}:
+                err(where, f"plurals need an 'other' item and valid quantities (got {quantities})")
+        # Emphasis is inline markup inside one string (spec §5), never a sentence split across keys.
+        for child in (c for i in items for c in i.iter() if c is not i):
+            if child.tag not in ("i", "b"):
+                err(where, f"unexpected markup <{child.tag}> (only <i> and <b>)")
         for text in texts:
             if not text.strip():
                 err(where, "empty text")
@@ -219,7 +247,7 @@ if tree is not None:
             if len(specs) > 1 and not all(specs):
                 err(where, "multiple format args must be positional (%1$s, %2$d)")
     unique(STRINGS, names)
-    months = [el for el in tree.getroot() if el.get("name") in ("months_short", "months_long")]
+    months = [el for el in tree.getroot() if el.get("name") in ("months_short", "months_long", "months_initial")]
     for el in months:
         if len(el.findall("item")) != 12:
             err(f"{STRINGS}[{el.get('name')}]", "needs exactly 12 items")

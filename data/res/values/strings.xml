@@ -16,36 +16,32 @@
     <string name="nav_challenge">Uitdaging</string>
     <string name="nav_profile">Profiel</string>
     <string name="hero_eyebrow_loc">Nederland</string>
-    <string name="hero_title">Wat is er nu</string>
-    <string name="hero_title_em">in het seizoen</string>
-    <string name="hero_stat_peak">op hoogtepunt</string>
-    <string name="hero_stat_shoulder">beschikbaar</string>
-    <string name="hero_stat_soon">binnenkort</string>
-    <string name="hero_stat_ending">aflopend</string>
-    <string name="hero_hero_sub">Lokale groenten, gegroeid op Nederlandse bodem — gesorteerd op wat er nu op zijn best is.</string>
+    <string name="hero_title">Wat is er nu <i>in het seizoen</i></string>
+    <string name="hero_stat_peak">op z\'n best</string>
+    <string name="hero_stat_shoulder">verkrijgbaar</string>
+    <string name="hero_stat_soon">komt eraan</string>
+    <string name="hero_hero_sub">Lokale groenten, gegroeid op Nederlandse bodem — gesorteerd op wat er nu op z\'n best is.</string>
     <string name="calendar_eyebrow_sub">Jaar in één oogopslag</string>
-    <string name="calendar_title">De</string>
-    <string name="calendar_title_em">kalender</string>
-    <string name="calendar_hero_sub">Wanneer elke groente zijn hoogtepunt bereikt. Gevuld = op zijn best, half = beschikbaar.</string>
+    <string name="calendar_title">De <i>kalender</i></string>
+    <string name="calendar_hero_sub">Wanneer elke groente op z\'n best is. Gevuld = op z\'n best, half = verkrijgbaar.</string>
     <string name="controls_search_placeholder">Zoeken…</string>
     <string name="controls_search_aria_label">Groenten zoeken</string>
     <string name="controls_grid_aria_label">Rasterweergave</string>
     <string name="controls_list_aria_label">Lijstweergave</string>
     <string name="empty_state">Geen groenten gevonden. Probeer de zoekopdracht te wissen.</string>
-    <string name="filter_all">Alles in seizoen</string>
-    <string name="filter_peak">Op hoogtepunt</string>
-    <string name="filter_shoulder">Beschikbaar</string>
-    <string name="filter_soon">Binnenkort</string>
-    <string name="filter_ending">Aflopend</string>
-    <string name="status_peak">Op hoogtepunt</string>
-    <string name="status_soon">Binnenkort</string>
-    <string name="status_ending">Aflopend</string>
-    <string name="status_shoulder">Beschikbaar</string>
+    <string name="filter_available">Verkrijgbaar</string>
+    <string name="filter_peak">Op z\'n best</string>
+    <string name="filter_soon">Komt eraan</string>
+    <string name="status_peak">Op z\'n best</string>
+    <string name="status_soon">Komt eraan</string>
+    <string name="status_shoulder">Verkrijgbaar</string>
     <string name="status_off">Buiten seizoen</string>
+    <string name="badge_last_chance">Laatste kans</string>
+    <string name="badge_short_season">Kort seizoen</string>
     <string name="detail_close">Sluiten</string>
     <string name="detail_section_season">Seizoen</string>
-    <string name="detail_legend_peak">Hoogtepunt</string>
-    <string name="detail_legend_shoulder">Beschikbaar</string>
+    <string name="detail_legend_peak">Op z\'n best</string>
+    <string name="detail_legend_shoulder">Verkrijgbaar</string>
     <string name="detail_section_storage">Bewaren</string>
     <string name="detail_section_prep">Bereiden</string>
     <string name="detail_section_pairings">Combineert goed met</string>
@@ -60,9 +56,6 @@
     <string name="detail_section_foraging">Vind het in de buurt</string>
     <string name="detail_foraging_tag">Markten &amp; plukken · binnenkort</string>
     <string name="detail_foraging_note">Boerenmarktschema\'s en (voor wilde soorten) veilige plekken komen hier.</string>
-    <string name="detail_difficulty_easy">Makkelijk</string>
-    <string name="detail_difficulty_medium">Gemiddeld</string>
-    <string name="detail_difficulty_hard">Moeilijk</string>
     <string name="recipes_page_title">Recept inladen</string>
     <string name="recipes_page_subtitle">Plak een receptlink uit een kookblog of -website. Wij halen de ingrediënten en bereiding op via de gestructureerde gegevens van de pagina.</string>
     <string name="recipes_page_subtitle_photo">Maak foto\'s van een recept — tot 5 foto\'s van ingrediënten en bereiding. Claude leest de tekst, structureert het recept en zet alle maten om naar metrisch.</string>
@@ -170,9 +163,10 @@
     <string name="techniques_subcategory_bereidingsmethoden">Bereidingsmethoden</string>
     <string name="techniques_subcategory_smaaklagen">Smaaklagen</string>
     <string name="techniques_subcategory_kookgerei">Kookgerei</string>
-    <string name="techniques_level_basis">Basis</string>
-    <string name="techniques_level_gemiddeld">Gemiddeld</string>
-    <string name="techniques_level_gevorderd">Gevorderd</string>
+    <string name="level_basis">Basis</string>
+    <string name="level_gemiddeld">Gemiddeld</string>
+    <string name="level_gevorderd">Gevorderd</string>
+    <string name="level_auto">Automatisch</string>
     <string name="techniques_heat_hoog">Hoog vuur</string>
     <string name="techniques_heat_middel">Middel vuur</string>
     <string name="techniques_heat_laag">Laag vuur</string>
@@ -187,11 +181,11 @@
     <string name="techniques_close_aria_label">Sluiten</string>
     <string name="techniques_back_button">Terug</string>
     <string name="evaluation_title">Hoe ging het?</string>
-    <string name="evaluation_label_score">Uitvoering (1–10)</string>
-    <string name="evaluation_label_taste">Smaak (1–10)</string>
+    <string name="evaluation_label_score">Uitvoering</string>
+    <string name="evaluation_label_taste">Smaak</string>
     <string name="evaluation_label_notes">Notities (optioneel)</string>
     <string name="evaluation_submit_btn">Vastleggen</string>
-    <string name="evaluation_skip_btn">Overslaan</string>
+    <string name="evaluation_skip_btn">Zonder cijfers vastleggen</string>
     <string name="challenge_page_title">Kookuitdaging</string>
     <string name="challenge_page_subtitle">Typ een ingrediënt en ontvang een gerichte kookoefening om een specifieke techniek te oefenen.</string>
     <string name="challenge_input_placeholder">Bijv. aardappel, wortel, ui…</string>
@@ -208,9 +202,6 @@
     <string name="challenge_label_time">Tijd</string>
     <string name="challenge_label_minutes">min</string>
     <string name="challenge_label_why">Waarom deze uitdaging?</string>
-    <string name="challenge_difficulty_beginner">Beginner</string>
-    <string name="challenge_difficulty_intermediate">Gemiddeld</string>
-    <string name="challenge_difficulty_advanced">Expert</string>
     <string name="challenge_error_title">Niet gelukt</string>
     <string name="challenge_params_title">Verfijn de uitdaging</string>
     <string name="challenge_technique_label">Techniek</string>
@@ -241,21 +232,18 @@
     <string name="challenge_completed_btn">Uitdaging voltooid</string>
     <string name="challenge_completed_msg">Goed gedaan! Je voortgang is bijgehouden.</string>
     <string name="challenge_history_title">Eerdere uitdagingen</string>
-    <string name="home_hero_title">Jouw persoonlijke</string>
-    <string name="home_hero_title_em">kookgids</string>
-    <string name="home_hero_title_end">voor het seizoen</string>
+    <string name="home_hero_title">Jouw persoonlijke <i>kookgids</i> voor het seizoen</string>
     <string name="home_hero_sub">Lokale groenten op hun best, kooktechnieken, recepten en uitdagingen — alles op één plek.</string>
-    <string name="home_stat_peak">op hoogtepunt</string>
-    <string name="home_stat_soon">binnenkort</string>
-    <string name="home_stat_ending">aflopend</string>
+    <string name="home_stat_peak">op z\'n best</string>
+    <string name="home_stat_soon">komt eraan</string>
     <string name="home_modules_label">Verken de gids</string>
-    <string name="home_spotlight_title">Nu op hoogtepunt</string>
+    <string name="home_spotlight_title">Nu op z\'n best</string>
     <string name="home_spotlight_more">Alle %1$d groenten →</string>
-    <string name="home_soon_title">Binnenkort</string>
+    <string name="home_soon_title">Komt eraan</string>
     <string name="home_ending_title">Laatste kans</string>
     <string name="home_more_link">Meer →</string>
     <string name="home_tip_label">Seizoenstip</string>
-    <string name="home_tip_fallback">Kies groenten die nu op het hoogtepunt van hun seizoen zijn — ze smaken beter en zijn goedkoper.</string>
+    <string name="home_tip_fallback">Kies groenten die nu op z\'n best zijn — ze smaken beter en zijn goedkoper.</string>
     <string name="home_tip_link">Meer over %1$s →</string>
     <string name="profile_page_title">Profiel</string>
     <string name="profile_page_subtitle">Jouw culinaire ontwikkeling in beeld</string>
@@ -280,6 +268,72 @@
     <string name="profile_top_cuisines_title">Meest gekookte keukens</string>
     <string name="profile_high_rated_cuisines_title">Hoogst gewaardeerde keukens</string>
     <string name="profile_ingredient_cloud_title">Ingrediënten</string>
+    <!-- UI/UX review (spec Appendix D): copy for the new interactions. -->
+    <string name="today_hero_title">Wat kook ik <i>vandaag</i>?</string>
+    <string name="today_tonight_title">Vanavond</string>
+    <string name="today_tonight_action">Dit kook ik vanavond</string>
+    <string name="today_tonight_unpin">Toch niet</string>
+    <string name="today_dismiss">Niet vandaag</string>
+    <string name="today_other_ideas">Andere ideeën</string>
+    <string name="today_all_quests">Alle quests</string>
+    <string name="today_quick_filter">≤ 30 min</string>
+    <string name="today_empty_library_title">Begin met je eerste recept</string>
+    <string name="today_empty_library_sub">Deel een receptlink vanuit je browser, plak een link of maak een foto van een kookboekpagina.</string>
+    <string name="nav_today">Vandaag</string>
+    <string name="nav_shopping">Boodschappen</string>
+    <string name="shopping_empty_title">Je lijst is leeg</string>
+    <string name="shopping_empty_sub">Voeg ingrediënten toe vanuit een recept of typ zelf iets.</string>
+    <string name="recipe_add_to_shopping">Op boodschappenlijst</string>
+    <string name="quest_card_hide">Verbergen</string>
+    <string name="quest_generating_cancel">Annuleren</string>
+    <string name="quest_new">Nieuwe quest</string>
+    <string name="quest_card_no_key">Voor een quest is een Claude-sleutel nodig.</string>
+    <string name="quest_card_add_key">Sleutel toevoegen</string>
+    <string name="settings_show_quest_card">Quest-kaart tonen op Vandaag</string>
+    <string name="recipe_action_cooked">Gekookt</string>
+    <string name="import_preview_edit">Aanpassen</string>
+    <string name="import_preview_unparsed">Niet herkend; wordt aangevuld als er een sleutel is</string>
+    <string name="cook_step_progress">Stap %1$d van %2$d</string>
+    <string name="cook_finish_btn">Klaar met koken</string>
+    <string name="cook_exit_prompt">Heb je dit gekookt?</string>
+    <string name="cook_exit_log">Vastleggen</string>
+    <string name="cook_exit_not_now">Nu niet</string>
+    <string name="cook_resume">Verder bij stap %1$d</string>
+    <string name="cook_timer_running">Stap %1$d · nog ~%2$d min</string>
+    <string name="cook_timer_done">Stap %1$d · klaar</string>
+    <string name="journal_tab_timeline">Tijdlijn</string>
+    <string name="journal_tab_quests">Quests</string>
+    <string name="journal_tab_insights">Inzichten</string>
+    <plurals name="journal_season_count">
+        <item quantity="one">%1$d groente op z\'n best gekookt dit seizoen</item>
+        <item quantity="other">%1$d groenten op hun best gekookt dit seizoen</item>
+    </plurals>
+    <string name="journal_season_to_try">Nog te proberen</string>
+    <string name="journal_season_all">Alle →</string>
+    <string name="onboarding_first_recipe_title">Je eerste recept</string>
+    <string name="onboarding_first_recipe_sub">Tip: deel een recept vanuit Chrome of Instagram met Mise, dan komt het direct binnen.</string>
+    <string name="onboarding_later">Later</string>
+    <string-array name="score_steps">
+        <item>Mislukt</item>
+        <item>Matig</item>
+        <item>Oké</item>
+        <item>Goed</item>
+        <item>Top</item>
+    </string-array>
+    <string-array name="months_initial">
+        <item>J</item>
+        <item>F</item>
+        <item>M</item>
+        <item>A</item>
+        <item>M</item>
+        <item>J</item>
+        <item>J</item>
+        <item>A</item>
+        <item>S</item>
+        <item>O</item>
+        <item>N</item>
+        <item>D</item>
+    </string-array>
     <string-array name="months_short">
         <item>Jan</item>
         <item>Feb</item>
