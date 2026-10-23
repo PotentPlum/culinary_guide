@@ -63,6 +63,7 @@ import nl.potentplum.mise.core.navigation.JournalGraph
 import nl.potentplum.mise.core.navigation.JournalRoute
 import nl.potentplum.mise.core.navigation.PhotoImportRoute
 import nl.potentplum.mise.core.navigation.QuestRefineRoute
+import nl.potentplum.mise.core.navigation.QuestRoute
 import nl.potentplum.mise.core.navigation.RecipeEditRoute
 import nl.potentplum.mise.core.navigation.RecipeRoute
 import nl.potentplum.mise.core.navigation.RecipesGraph
@@ -80,6 +81,7 @@ import nl.potentplum.mise.core.navigation.VegetableRoute
 import nl.potentplum.mise.feature.PlaceholderScreen
 import nl.potentplum.mise.feature.journal.JournalScreen
 import nl.potentplum.mise.feature.quests.QuestRefineScreen
+import nl.potentplum.mise.feature.quests.QuestScreen
 import nl.potentplum.mise.feature.recipes.AddRecipeOption
 import nl.potentplum.mise.feature.recipes.ImportLinkScreen
 import nl.potentplum.mise.feature.recipes.LibraryScreen
@@ -136,6 +138,7 @@ fun MiseAppShell(
     val onVegetable: (String) -> Unit = { navController.navigate(VegetableRoute(it)) }
     val onTechnique: (String) -> Unit = { navController.navigate(TechniqueRoute(it)) }
     val onRecipe: (String) -> Unit = { navController.navigate(RecipeRoute(it)) }
+    val onAddKey: () -> Unit = { navController.navigate(SettingsRoute) { launchSingleTop = true } }
 
     /** Opens [route] in place of the import screen that led to it. */
     val replaceImport: (Any) -> Unit = { route ->
@@ -168,7 +171,15 @@ fun MiseAppShell(
                 modifier = Modifier.padding(padding).consumeWindowInsets(padding),
             ) {
                 navigation<TodayGraph>(startDestination = TodayRoute) {
-                    composable<TodayRoute> { TodayScreen(today = today, onOverflowItem = onOverflowItem) }
+                    composable<TodayRoute> {
+                        TodayScreen(
+                            today = today,
+                            onOverflowItem = onOverflowItem,
+                            onOpenQuest = { navController.navigate(QuestRoute(it)) },
+                            onRefineQuest = { navController.navigate(QuestRefineRoute()) },
+                            onAddKey = onAddKey,
+                        )
+                    }
                 }
                 navigation<SeasonGraph>(startDestination = SeasonRoute) {
                     composable<SeasonRoute> { SeasonScreen(onVegetable = onVegetable, onOverflowItem = onOverflowItem) }
@@ -195,7 +206,13 @@ fun MiseAppShell(
                     composable<ShoppingRoute> { ShoppingScreen(onOverflowItem = onOverflowItem) }
                 }
                 navigation<JournalGraph>(startDestination = JournalRoute) {
-                    composable<JournalRoute> { JournalScreen(onOverflowItem = onOverflowItem) }
+                    composable<JournalRoute> {
+                        JournalScreen(
+                            onOverflowItem = onOverflowItem,
+                            onOpenQuest = { navController.navigate(QuestRoute(it)) },
+                            onNewQuest = { navController.navigate(QuestRefineRoute()) },
+                        )
+                    }
                 }
                 composable<TechniquesRoute> {
                     TechniquesScreen(
@@ -224,7 +241,24 @@ fun MiseAppShell(
                         onOverflowItem = onOverflowItem,
                     )
                 }
-                composable<QuestRefineRoute> { QuestRefineScreen(onBack = onBack, onOverflowItem = onOverflowItem) }
+                composable<QuestRefineRoute> {
+                    QuestRefineScreen(
+                        onBack = onBack,
+                        onOpenQuest = { navController.navigate(QuestRoute(it)) },
+                        onAddKey = onAddKey,
+                        onOverflowItem = onOverflowItem,
+                    )
+                }
+                composable<QuestRoute> {
+                    QuestScreen(
+                        onBack = onBack,
+                        onCook = { navController.navigate(CookRoute(it)) },
+                        onCompleted = { navController.navigate(EvaluationRoute(it)) },
+                        onReplaced = { id -> navController.navigate(QuestRoute(id)) { popUpTo<QuestRoute> { inclusive = true } } },
+                        onTechnique = onTechnique,
+                        onOverflowItem = onOverflowItem,
+                    )
+                }
                 composable<RecipeRoute> {
                     RecipeDetailScreen(
                         onBack = onBack,
@@ -277,7 +311,7 @@ fun MiseAppShell(
                         onEdit = { id, highlight ->
                             navController.navigate(RecipeEditRoute(id, draft = true, highlightMissing = highlight))
                         },
-                        onAddKey = { navController.navigate(SettingsRoute) { launchSingleTop = true } },
+                        onAddKey = onAddKey,
                         onOverflowItem = onOverflowItem,
                     )
                 }

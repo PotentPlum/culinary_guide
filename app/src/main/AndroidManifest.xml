@@ -3,6 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <!-- Disables Claude features with an explanation when offline (spec §6.11); a normal permission. -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <!-- Asked only when the seasonal notification is turned on (spec §14); background notices are skipped without it. -->
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
 

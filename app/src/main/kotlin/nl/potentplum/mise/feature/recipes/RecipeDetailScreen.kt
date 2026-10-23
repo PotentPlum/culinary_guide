@@ -194,9 +194,14 @@ fun RecipeBody(
     onTechnique: (String) -> Unit,
     contentPadding: PaddingValues = PaddingValues(bottom = 24.dp),
     unparsedHint: String? = null,
+    /** Items before the recipe, such as a quest's text (spec §6.11). */
+    leading: LazyListScope.() -> Unit = {},
+    /** Items after the tags and notes, such as a quest's tips. */
+    trailing: LazyListScope.() -> Unit = {},
 ) {
     val uriHandler = LocalUriHandler.current
     LazyColumn(Modifier.fillMaxSize(), contentPadding = contentPadding) {
+        leading()
         item(key = "header") {
             Column {
                 if (recipe.imagePath != null) RecipeImage(recipe.imagePath, null, Modifier.fillMaxWidth().height(220.dp))
@@ -256,6 +261,7 @@ fun RecipeBody(
                 key = "notes",
             ) { Section(stringResource(R.string.recipe_notes_title)) { Text(notes, style = MaterialTheme.typography.bodyMedium) } }
         }
+        trailing()
         item(key = "cooked") { Cooked(state.attempts) }
     }
 }
@@ -395,7 +401,7 @@ private fun LazyListScope.steps(recipe: Recipe) {
 }
 
 @Composable
-private fun Section(
+internal fun Section(
     title: String,
     content: @Composable () -> Unit,
 ) {

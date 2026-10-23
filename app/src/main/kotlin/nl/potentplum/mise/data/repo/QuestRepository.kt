@@ -6,11 +6,18 @@ import nl.potentplum.mise.core.util.MiseClock
 import nl.potentplum.mise.data.db.MiseDatabase
 import nl.potentplum.mise.data.db.dao.AttemptDao
 import nl.potentplum.mise.data.db.dao.QuestDao
+import nl.potentplum.mise.data.db.dao.QuestWithTitle
 import nl.potentplum.mise.data.db.entity.QuestEntity
 import nl.potentplum.mise.data.db.entity.QuestStatus
 import nl.potentplum.mise.domain.PastQuest
 import javax.inject.Inject
 import javax.inject.Singleton
+
+data class DeletedQuest(
+    val quest: QuestEntity,
+    val recipe: Recipe,
+    val attemptIds: List<String>,
+)
 
 /** Quests and their hidden recipes (spec §6.11, §7.2). */
 @Singleton
@@ -71,9 +78,25 @@ class QuestRepository
             questDao.upsert(quest.copy(status = QuestStatus.COMPLETED, completedAt = at))
         }
 
+        fun observeHistory(): Flow<List<QuestWithTitle>> = questDao.observeHistory()
+
         /** Deletes the quest and its hidden recipe; attempts keep their snapshots (spec §7.2). */
         suspend fun delete(id: String) {
             questDao.get(id)?.let { questDao.deleteWithRecipe(it) }
+        }
+
+        /** Deletes, but remembers enough for [restore] to undo it exactly. */
+        suspend fun deleteForUndo(id: String): DeletedQuest? {
+            val quest = questDao.get(id) ?: return null
+            val recipe = db.recipeDao().getGraph(quest.recipeId)?.toRecipe() ?: return null
+            val attemptIds = attemptDao.idsForQuest(id)
+            questDao.deleteWithRecipe(quest)
+            return DeletedQuest(quest, recipe, attemptIds)
+        }
+
+        suspend fun restore(deleted: DeletedQuest) {
+            insert(deleted.quest, deleted.recipe)
+            attemptDao.relinkQuest(deleted.attemptIds, deleted.quest.id)
         }
 
         /** Input for [nl.potentplum.mise.domain.QuestDefaults]: every quest with its title and latest execution score. */

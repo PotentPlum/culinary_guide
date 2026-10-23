@@ -65,6 +65,12 @@ data class QuestRefineRoute(
     val techniqueId: String? = null,
 )
 
+/** A generated quest and its recipe (spec §6.11 Result). */
+@Serializable
+data class QuestRoute(
+    val id: String,
+)
+
 @Serializable
 data class RecipeRoute(
     val id: String,

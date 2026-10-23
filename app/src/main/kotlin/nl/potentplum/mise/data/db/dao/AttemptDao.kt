@@ -45,6 +45,15 @@ interface AttemptDao {
         recipeId: String,
     )
 
+    @Query("SELECT id FROM attempt WHERE questId = :questId")
+    suspend fun idsForQuest(questId: String): List<String>
+
+    @Query("UPDATE attempt SET questId = :questId WHERE id IN (:ids)")
+    suspend fun relinkQuest(
+        ids: List<String>,
+        questId: String,
+    )
+
     @Query("DELETE FROM attempt WHERE id = :id")
     suspend fun delete(id: String)
 }

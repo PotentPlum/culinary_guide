@@ -131,12 +131,16 @@ The web app keeps running from its last Vercel deployment until you turn it off,
 - [x] `QuestDefaults` (pure): vegetable choice (peak, not cooked in 60 days, with fallbacks), focus discipline, adaptive difficulty, last-10 history. Unit tests with fixed dates.
       Today's one-tap quest uses one candidate (stable per day, the next one for "Andere quest") as Seizoensgroente, so the card can
       show it while generating; "Verras me" in Verfijn sends the whole candidate list.
-- [ ] Quest van vandaag: one-tap generation; the "what was chosen" line, a progress indicator and Annuleren show while generating (cancel records nothing); one daily quest (regenerate replaces it; the old one stays in history).
-- [ ] Verfijn form (collapsed): ingredient modes, soort quest, difficulty (Automatisch · Basis · Gemiddeld · Gevorderd), technique (skills only), cuisine, time, simple, quantity + unit.
-- [ ] Generation → `quest` + hidden recipe in one transaction; result screen with technique chips and the actions Start koken / Quest voltooid / Andere quest (+ Bewaar recept in ⋮).
+- [x] Quest van vandaag: one-tap generation; the "what was chosen" line, a progress indicator and Annuleren show while generating (cancel records nothing); one daily quest (regenerate replaces it; the old one stays in history).
+- [x] Verfijn form (collapsed): ingredient modes, soort quest, difficulty (Automatisch · Basis · Gemiddeld · Gevorderd), technique (skills only), cuisine, time, simple, quantity + unit.
+      Its own screen (from the card, Dagboek › Quests, groente- and techniekdetail), so there is nothing to collapse.
+- [x] Generation → `quest` + hidden recipe in one transaction; result screen with technique chips and the actions Start koken / Quest voltooid / Andere quest (+ Bewaar recept in ⋮).
+      Start koken and Quest voltooid open the cook-mode and evaluation routes, which are still placeholders (Cooking section).
 - [ ] Completion from any entry point: an attempt on the quest's recipe sets `questId` and COMPLETED (Quest voltooid, Klaar met koken, cook-mode exit prompt). Unit test for each path.
-- [ ] Quest history as **Dagboek › Quests** (spec §6.13) with filters (open/completed, type, difficulty), reopen, retry with the same parameters, delete, Nieuwe quest.
+- [x] Quest history as **Dagboek › Quests** (spec §6.13) with filters (open/completed, type, difficulty), reopen, retry with the same parameters, delete, Nieuwe quest.
+      Delete offers Ongedaan maken. Tijdlijn and Inzichten are still placeholders (Dagboek section).
 - [ ] Offline / no-key state on the Vandaag card: explanation, Sleutel toevoegen, Verbergen (`showQuestCard`, restored when a key is added or in Instellingen).
+      Card states done; restoring `showQuestCard` comes with the key screen and Instellingen.
 
 ### Vandaag (spec §6.2, §11.5)
 - [ ] `TodaySuggester` (pure): season score, recency, favourite bonus, exclusions (incl. `todayDismissed` and the Vanavond pin), the ≤ 30 min filter, tie-breaks, reason lines, stable per day. Unit tests with fixed dates and a seeded library.

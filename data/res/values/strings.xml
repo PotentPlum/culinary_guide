@@ -400,6 +400,43 @@
     <string name="photo_import_move_right">Foto %1$d naar achteren</string>
     <string name="photo_import_count">%1$d van %2$d foto\'s</string>
     <string name="photo_import_add_key">Sleutel toevoegen</string>
+    <!-- P1: quests. -->
+    <string name="quest_daily_title">Quest van vandaag</string>
+    <string name="quest_daily_body">Eén gerichte kookoefening met een groente die nu op z\'n best is, afgestemd op wat je weinig oefent.</string>
+    <string name="quest_open">Bekijk quest</string>
+    <string name="quest_offline">Je bent offline. Een quest heeft internet nodig.</string>
+    <string name="quest_chosen_seasonal">Seizoensgroente: %1$s</string>
+    <string name="quest_chosen_custom">Ingrediënt: %1$s</string>
+    <string name="quest_chosen_surprise">Verras me</string>
+    <string name="quest_chosen_focus">Focus: %1$s</string>
+    <string name="quest_chosen_technique">Techniek: %1$s</string>
+    <string name="quest_start_cooking">Start koken</string>
+    <string name="quest_save_recipe">Bewaar recept in bibliotheek</string>
+    <string name="quest_recipe_saved">Recept bewaard in je bibliotheek</string>
+    <string name="quest_status_open">Open</string>
+    <string name="quest_status_completed">Voltooid</string>
+    <string name="quest_ingredient_custom">Zelf kiezen</string>
+    <string name="quest_ingredient_seasonal">Seizoensgroente</string>
+    <string name="quest_ingredient_surprise">Verras me</string>
+    <string name="quest_seasonal_label">Groente</string>
+    <string name="quest_type_label">Soort quest</string>
+    <string name="quest_type_maaltijd">Maaltijd</string>
+    <string name="quest_type_lunch">Lunch</string>
+    <string name="quest_type_bijgerecht">Bijgerecht</string>
+    <string name="quest_type_saus">Saus</string>
+    <string name="quest_type_bouillon">Bouillon / fond</string>
+    <string name="quest_type_component">Component</string>
+    <string name="quest_type_claude">Laat Claude kiezen</string>
+    <string name="quest_type_component_hint">Een bouwsteen zoals een pickle, crumble, gearomatiseerde olie of dressing.</string>
+    <string name="quest_difficulty_label">Moeilijkheid</string>
+    <string name="quest_no_unit">Geen eenheid</string>
+    <string name="quest_history_empty">Nog geen quests. Begin met de quest van vandaag of maak er zelf een.</string>
+    <string name="quest_filter_all">Alle</string>
+    <string name="quest_retry">Opnieuw</string>
+    <string name="quest_delete">Verwijderen</string>
+    <string name="quest_deleted">Quest verwijderd</string>
+    <string name="quest_meta">%1$s · %2$s</string>
+    <string name="quest_row_more">Opties voor %1$s</string>
     <string-array name="score_steps">
         <item>Mislukt</item>
         <item>Matig</item>

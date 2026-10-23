@@ -4,6 +4,9 @@ import dagger.Module
 import dagger.Provides
 import dagger.hilt.components.SingletonComponent
 import dagger.hilt.testing.TestInstallIn
+import kotlinx.coroutines.CompletableDeferred
+import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.serialization.json.Json
 import kotlinx.serialization.json.JsonObject
 import kotlinx.serialization.json.jsonObject
@@ -16,6 +19,8 @@ import nl.potentplum.mise.claude.KeyCheck
 import nl.potentplum.mise.claude.Usage
 import nl.potentplum.mise.claude.enrich.EnrichmentModule
 import nl.potentplum.mise.claude.enrich.EnrichmentScheduler
+import nl.potentplum.mise.core.network.NetworkStatus
+import nl.potentplum.mise.core.network.NetworkStatusModule
 import nl.potentplum.mise.security.SecretCipher
 import nl.potentplum.mise.security.SecurityModule
 
@@ -25,9 +30,13 @@ object FakeClaudeClient : ClaudeClient {
     var failure: ClaudeError? = null
     val requests = mutableListOf<ClaudeRequest>()
 
+    /** When set, a call waits for it: lets a test see the progress UI and cancel. */
+    var gate: CompletableDeferred<Unit>? = null
+
     fun reset() {
         reply = JsonObject(emptyMap())
         failure = null
+        gate = null
         requests.clear()
     }
 
@@ -36,6 +45,7 @@ object FakeClaudeClient : ClaudeClient {
         request: ClaudeRequest,
     ): ClaudeResponse {
         requests += request
+        gate?.await()
         failure?.let { throw it }
         return ClaudeResponse(reply, Usage(3_000, 800), request.model)
     }
@@ -66,6 +76,18 @@ object FakeClaudeModule {
 object FakeEnrichmentModule {
     @Provides
     fun scheduler(): EnrichmentScheduler = FakeEnrichmentScheduler
+}
+
+object FakeNetworkStatus : NetworkStatus {
+    val state = MutableStateFlow(true)
+    override val online: Flow<Boolean> = state
+}
+
+@Module
+@TestInstallIn(components = [SingletonComponent::class], replaces = [NetworkStatusModule::class])
+object FakeNetworkModule {
+    @Provides
+    fun networkStatus(): NetworkStatus = FakeNetworkStatus
 }
 
 /** Robolectric has no AndroidKeyStore. */
