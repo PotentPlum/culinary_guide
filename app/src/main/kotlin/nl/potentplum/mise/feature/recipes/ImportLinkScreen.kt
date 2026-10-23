@@ -39,6 +39,7 @@ import nl.potentplum.mise.core.designsystem.component.EmptyState
 import nl.potentplum.mise.core.designsystem.component.ErrorState
 import nl.potentplum.mise.core.designsystem.component.MiseTopAppBar
 import nl.potentplum.mise.core.designsystem.component.OverflowItem
+import nl.potentplum.mise.data.repo.Recipe
 import nl.potentplum.mise.ingest.RecipeImportError
 
 /** "Link plakken" and shared links (spec §6.9). */
@@ -73,23 +74,7 @@ fun ImportLinkScreen(
         },
         bottomBar = {
             if (preview != null || state.phase == ImportPhase.Saving) {
-                Surface(color = MaterialTheme.colorScheme.surface) {
-                    Column {
-                        HorizontalDivider(color = MaterialTheme.colorScheme.outlineVariant)
-                        Row(
-                            Modifier.navigationBarsPadding().padding(horizontal = 16.dp, vertical = 12.dp),
-                            horizontalArrangement = Arrangement.spacedBy(12.dp),
-                        ) {
-                            Button(onClick = viewModel::save, enabled = preview != null, modifier = Modifier.weight(1f)) {
-                                Text(stringResource(R.string.recipes_save_btn))
-                            }
-                            OutlinedButton(
-                                onClick = viewModel::edit,
-                                enabled = preview != null,
-                            ) { Text(stringResource(R.string.import_preview_edit)) }
-                        }
-                    }
-                }
+                ImportPreviewBar(enabled = preview != null, onSave = viewModel::save, onEdit = viewModel::edit)
             }
         },
     ) { padding ->
@@ -100,21 +85,7 @@ fun ImportLinkScreen(
         ) {
             when (val phase = state.phase) {
                 is ImportPhase.Preview -> {
-                    RecipeBody(
-                        state =
-                            RecipeDetailUiState(
-                                loading = false,
-                                recipe = phase.draft,
-                                servings = phase.draft.servings,
-                                ingredients = phase.ingredients,
-                            ),
-                        recipe = phase.draft,
-                        onServings = null,
-                        onToggle = null,
-                        onAddToShopping = null,
-                        onTechnique = {},
-                        unparsedHint = stringResource(R.string.import_preview_unparsed),
-                    )
+                    ImportPreview(phase.draft, phase.ingredients)
                 }
 
                 ImportPhase.Saving -> {
@@ -203,3 +174,43 @@ fun importErrorMessage(error: RecipeImportError): String =
         RecipeImportError.TooLarge -> stringResource(R.string.recipes_error_too_large)
         RecipeImportError.NoRecipe -> stringResource(R.string.recipes_error_no_recipe)
     }
+
+/** Bewaren (primary) and Aanpassen under an import preview (spec §6.9). */
+@Composable
+fun ImportPreviewBar(
+    enabled: Boolean,
+    onSave: () -> Unit,
+    onEdit: () -> Unit,
+) {
+    Surface(color = MaterialTheme.colorScheme.surface) {
+        Column {
+            HorizontalDivider(color = MaterialTheme.colorScheme.outlineVariant)
+            Row(
+                Modifier.navigationBarsPadding().padding(horizontal = 16.dp, vertical = 12.dp),
+                horizontalArrangement = Arrangement.spacedBy(12.dp),
+            ) {
+                Button(onClick = onSave, enabled = enabled, modifier = Modifier.weight(1f)) {
+                    Text(stringResource(R.string.recipes_save_btn))
+                }
+                OutlinedButton(onClick = onEdit, enabled = enabled) { Text(stringResource(R.string.import_preview_edit)) }
+            }
+        }
+    }
+}
+
+/** The detail screen's read view for a draft; unparsed lines are marked. */
+@Composable
+fun ImportPreview(
+    draft: Recipe,
+    ingredients: List<IngredientGroupLines>,
+) {
+    RecipeBody(
+        state = RecipeDetailUiState(loading = false, recipe = draft, servings = draft.servings, ingredients = ingredients),
+        recipe = draft,
+        onServings = null,
+        onToggle = null,
+        onAddToShopping = null,
+        onTechnique = {},
+        unparsedHint = stringResource(R.string.import_preview_unparsed),
+    )
+}

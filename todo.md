@@ -109,8 +109,8 @@ The web app keeps running from its last Vercel deployment until you turn it off,
 - [x] Import by pasted link (spec §6.9) with a read-view preview (Bewaren / Aanpassen; unparsed lines marked; edit mode only when title, ingredients or steps are missing) and duplicate detection; manual entry ("Zelf invoeren") opens in edit mode.
 - [x] Share target `ACTION_SEND text/plain` → URL import (extract the first URL from the shared text; tested with real Chrome and Instagram share text). Moved from P2: sharing is the main way in (spec §3, §6.9).
       Unit-tested with Chrome- and Instagram-style share text; **[owner]** check real shares on the phone.
-- [ ] Share target `ACTION_SEND(_MULTIPLE) image/*` → photo import (moved from P2).
-      The intent filters and routing exist; the photo import itself comes with the Claude section.
+- [x] Share target `ACTION_SEND(_MULTIPLE) image/*` → photo import (moved from P2).
+      Shared URIs are copied into the import folder at once (UI-tested with file URIs); **[owner]** check a real gallery share.
 - [x] `SeasonalMatcher` (spec §11.4) with tests for plurals, " / " names, and structured versus unparsed items; "Seizoen nu" filter.
 - [x] Delete with undo; "Delen" as text.
 
@@ -123,7 +123,9 @@ The web app keeps running from its last Vercel deployment until you turn it off,
 - [x] **Enrichment** worker (Haiku, spec §6.9/§8.4): structured ingredients + tags in one call per recipe, `enrichState`, never overwrites MANUAL parses, failure notification on the `background` channel.
       `EnrichmentWorker` (unique expedited work per recipe, needs network, 3 retries for network/429/5xx); queued after a URL import
       or a save with new or changed lines when a key is stored. A reply for lines edited in the meantime is discarded.
-- [ ] Photo import (spec §6.9): photo picker + camera, 1–5 photos, reorder/remove, downscale to ≤ 1568 px, call, preview in edit mode, keep the first photo as the image.
+- [x] Photo import (spec §6.9): photo picker + camera, 1–5 photos, reorder/remove, downscale to ≤ 1568 px, call, preview in edit mode, keep the first photo as the image.
+      Previews in read view like a link import (edit mode only when parts are missing, spec §6.9); camera via `TakePicture` +
+      `FileProvider` (no camera permission). UI-tested with recorded replies; **[owner]** try the camera on the phone.
 
 ### Quests (spec §6.11, §11.6)
 - [ ] `QuestDefaults` (pure): vegetable choice (peak, not cooked in 60 days, with fallbacks), focus discipline, adaptive difficulty, last-10 history. Unit tests with fixed dates.

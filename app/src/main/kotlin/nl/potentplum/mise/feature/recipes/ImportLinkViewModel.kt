@@ -19,6 +19,7 @@ import nl.potentplum.mise.core.util.MiseClock
 import nl.potentplum.mise.data.repo.Recipe
 import nl.potentplum.mise.data.repo.RecipeDrafts
 import nl.potentplum.mise.data.repo.RecipeRepository
+import nl.potentplum.mise.domain.IngredientScaler
 import nl.potentplum.mise.ingest.ImageStore
 import nl.potentplum.mise.ingest.JsonLdRecipeParser
 import nl.potentplum.mise.ingest.PageFetcher
@@ -27,6 +28,22 @@ import nl.potentplum.mise.ingest.RecipeImportMapper
 import nl.potentplum.mise.ingest.RecipeIngestionException
 import nl.potentplum.mise.ingest.RecipeUrls
 import javax.inject.Inject
+
+/** Shared by link and photo import: when a draft can be previewed, and its ingredient lines for the preview. */
+object ImportReview {
+    fun isComplete(draft: Recipe): Boolean = draft.title.isNotBlank() && draft.ingredients.isNotEmpty() && draft.steps.isNotEmpty()
+
+    fun lines(
+        scaler: IngredientScaler,
+        draft: Recipe,
+    ): List<IngredientGroupLines> =
+        draft.ingredientGroups.map { group ->
+            IngredientGroupLines(
+                group.name,
+                group.items.map { IngredientLine(it.id, scaler.format(it.parsed), false, it.parsed.parsed) },
+            )
+        }
+}
 
 sealed interface ImportPhase {
     data object Idle : ImportPhase
@@ -165,20 +182,11 @@ class ImportLinkViewModel
             draft: Recipe,
             lines: List<IngredientGroupLines>,
         ): ImportPhase {
-            val complete = draft.title.isNotBlank() && draft.ingredients.isNotEmpty() && draft.steps.isNotEmpty()
-            if (complete) return ImportPhase.Preview(draft, lines)
+            if (ImportReview.isComplete(draft)) return ImportPhase.Preview(draft, lines)
             drafts.put(draft)
             _events.trySend(ImportEvent.Edit(draft.id, highlightMissing = true))
             return ImportPhase.Idle
         }
 
-        private suspend fun previewLines(draft: Recipe): List<IngredientGroupLines> {
-            val scaler = recipes.scaler()
-            return draft.ingredientGroups.map { group ->
-                IngredientGroupLines(
-                    group.name,
-                    group.items.map { IngredientLine(it.id, scaler.format(it.parsed), false, it.parsed.parsed) },
-                )
-            }
-        }
+        private suspend fun previewLines(draft: Recipe): List<IngredientGroupLines> = ImportReview.lines(recipes.scaler(), draft)
     }

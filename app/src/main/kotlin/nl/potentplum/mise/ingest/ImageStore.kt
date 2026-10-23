@@ -3,6 +3,7 @@ package nl.potentplum.mise.ingest
 import android.content.Context
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
+import android.net.Uri
 import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.withContext
@@ -13,6 +14,7 @@ import okhttp3.Request
 import okio.Buffer
 import java.io.ByteArrayOutputStream
 import java.io.File
+import java.util.UUID
 import javax.inject.Inject
 import javax.inject.Singleton
 import kotlin.math.max
@@ -22,6 +24,9 @@ import kotlin.math.roundToInt
 object ImageProcessor {
     const val MAX_EDGE = 1600
     const val QUALITY = 85
+
+    /** Claude vision's long-edge limit (spec §8.2). */
+    const val VISION_MAX_EDGE = 1568
 
     /** The largest power-of-two subsample that still leaves the long edge ≥ [maxEdge]. */
     fun sampleSize(
@@ -119,6 +124,40 @@ class ImageStore
                 temp.copyTo(target, overwrite = true)
                 temp.delete()
             }
+            return target.absolutePath
+        }
+
+        /** Photos for a photo import wait here until the recipe is saved (spec §6.9); the camera writes here too. */
+        fun importDir(): File = File(context.cacheDir, "import").apply { mkdirs() }
+
+        fun newImportFile(): File = File(importDir(), "${UUID.randomUUID()}.jpg")
+
+        /**
+         * Copies a picked or shared photo into the import folder, downscaled for Claude vision (≤ 1568 px, spec §8.2);
+         * null when it can't be read or is not an image.
+         */
+        suspend fun importPhoto(uri: Uri): String? =
+            withContext(dispatcher) {
+                runCatching {
+                    val bytes = context.contentResolver.openInputStream(uri)?.use { it.readBytes() } ?: return@runCatching null
+                    downscaleForImport(newImportFile(), bytes)
+                }.getOrNull()
+            }
+
+        /** Downscales a camera shot in place; deletes it when it is not a usable image. */
+        suspend fun finishCameraPhoto(file: File): String? =
+            withContext(dispatcher) {
+                val result = runCatching { file.takeIf { it.length() > 0 }?.readBytes()?.let { downscaleForImport(file, it) } }.getOrNull()
+                if (result == null) file.delete()
+                result
+            }
+
+        private fun downscaleForImport(
+            target: File,
+            bytes: ByteArray,
+        ): String? {
+            val jpeg = ImageProcessor.toJpeg(bytes, ImageProcessor.VISION_MAX_EDGE) ?: return null
+            target.writeBytes(jpeg)
             return target.absolutePath
         }
 

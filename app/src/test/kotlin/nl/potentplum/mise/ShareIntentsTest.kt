@@ -42,4 +42,15 @@ class ShareIntentsTest {
         assertNull(ShareIntents.read(Intent(Intent.ACTION_VIEW)))
         assertNull(ShareIntents.read(null))
     }
+
+    @Test
+    fun `a failure notification opens its recipe`() {
+        val intent =
+            ShareIntents.openRecipe(
+                androidx.test.core.app.ApplicationProvider
+                    .getApplicationContext(),
+                "r1",
+            )
+        assertEquals(SharedContent.OpenRecipe("r1"), ShareIntents.read(intent))
+    }
 }

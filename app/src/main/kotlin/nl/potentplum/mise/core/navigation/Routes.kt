@@ -90,7 +90,10 @@ data class ImportLinkRoute(
 /** Import from cookbook photos (spec §6.9). */
 @Serializable
 data class PhotoImportRoute(
+    /** Open the camera right away. */
     val camera: Boolean = false,
+    /** Content URIs shared into Mise; copied into the import folder at once, while the share grant holds. */
+    val shared: List<String> = emptyList(),
 )
 
 /** Kookmodus for a recipe (spec §6.10). */

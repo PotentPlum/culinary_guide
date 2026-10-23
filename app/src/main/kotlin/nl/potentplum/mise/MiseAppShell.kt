@@ -51,6 +51,7 @@ import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.navigation
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.toRoute
+import kotlinx.coroutines.flow.first
 import nl.potentplum.mise.core.designsystem.component.LocalMiseSnackbar
 import nl.potentplum.mise.core.designsystem.component.MiseSnackbar
 import nl.potentplum.mise.core.designsystem.component.OverflowItem
@@ -82,6 +83,7 @@ import nl.potentplum.mise.feature.quests.QuestRefineScreen
 import nl.potentplum.mise.feature.recipes.AddRecipeOption
 import nl.potentplum.mise.feature.recipes.ImportLinkScreen
 import nl.potentplum.mise.feature.recipes.LibraryScreen
+import nl.potentplum.mise.feature.recipes.PhotoImportScreen
 import nl.potentplum.mise.feature.recipes.RecipeDetailScreen
 import nl.potentplum.mise.feature.recipes.RecipeEditScreen
 import nl.potentplum.mise.feature.season.SeasonScreen
@@ -142,9 +144,12 @@ fun MiseAppShell(
 
     // Shares open the import flow on top of the current stack (spec §6.1).
     LaunchedEffect(pendingShare) {
+        if (pendingShare == null) return@LaunchedEffect
+        // A share can arrive with the cold start, before the NavHost has set its graph.
+        navController.currentBackStackEntryFlow.first()
         when (pendingShare) {
             is SharedContent.Link -> navController.navigate(ImportLinkRoute(pendingShare.url))
-            is SharedContent.Images -> navController.navigate(PhotoImportRoute())
+            is SharedContent.Images -> navController.navigate(PhotoImportRoute(shared = pendingShare.uris.map { it.toString() }))
             is SharedContent.OpenRecipe -> navController.navigate(RecipeRoute(pendingShare.id))
             null -> return@LaunchedEffect
         }
@@ -242,6 +247,7 @@ fun MiseAppShell(
                                 navController.navigate(RecipeRoute(id)) {
                                     popUpTo<RecipeEditRoute> { inclusive = true }
                                     popUpTo<ImportLinkRoute> { inclusive = true }
+                                    popUpTo<PhotoImportRoute> { inclusive = true }
                                 }
                             }
                         },
@@ -263,10 +269,16 @@ fun MiseAppShell(
                     )
                 }
                 composable<PhotoImportRoute> {
-                    PlaceholderScreen(
-                        title = stringResource(R.string.recipes_add_gallery),
-                        onOverflowItem = onOverflowItem,
+                    PhotoImportScreen(
                         onBack = onBack,
+                        onSaved = { id ->
+                            navController.navigate(RecipeRoute(id)) { popUpTo<PhotoImportRoute> { inclusive = true } }
+                        },
+                        onEdit = { id, highlight ->
+                            navController.navigate(RecipeEditRoute(id, draft = true, highlightMissing = highlight))
+                        },
+                        onAddKey = { navController.navigate(SettingsRoute) { launchSingleTop = true } },
+                        onOverflowItem = onOverflowItem,
                     )
                 }
                 composable<CookRoute> {
