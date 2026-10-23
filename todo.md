@@ -166,7 +166,7 @@ The web app keeps running from its last Vercel deployment until you turn it off,
   _Done: `EvaluationSheet` hosted by recipe detail, cook mode and the quest screen (the `EvaluationRoute` placeholder is gone); photos are staged in the import folder and moved to `files/journal/`._
 
 ### Dagboek (spec §6.13, §12)
-- [ ] `JournalAggregator` port (3 disciplines). Acceptance: the applicable cases from `git show cf3ec39:web/lib/profileAggregation.test.ts` pass, plus the seasonal metric (season boundaries, Dec/Jan wrap) and "nog te proberen" (PEAK this month, not cooked this season).
+- [ ] `JournalAggregator` port (3 disciplines). Acceptance: the applicable cases from `git show e76778c:web/lib/profileAggregation.test.ts` pass, plus the seasonal metric (season boundaries, Dec/Jan wrap) and "nog te proberen" (PEAK this month, not cooked this season).
 - [ ] `BadgeEvaluator` for all three rule types + progress text; tests at and around each threshold.
 - [ ] Dagboek screen (spec §6.13): segments Tijdlijn · Quests · Inzichten. Tijdlijn with photos, filters and entry editing; Inzichten with header stats, `SeasonTally` (count without denominator, cooked tokens, 3 "nog te proberen" in §11.1 order), discipline bars, top techniques, neglected, top cuisines, badges.
 
@@ -192,6 +192,7 @@ The web app keeps running from its last Vercel deployment until you turn it off,
 
 ### P1 release
 - [ ] Release signing (keystore outside the repo, **[owner]** back it up offline), R8 keep rules, `release.yml` producing a signed APK on tag `v*`.
+  _Partly: signing from env/Actions secrets and `release.yml` (signed APK + checksum on a `v*` tag, verified locally with a throwaway key; owner steps in README). Open: the owner's keystore and secrets, a first tagged release, and checking the R8 build on the phone._
 - [ ] Manual checklist from spec §16 on a real phone.
 - [ ] **[owner]** Install `v1.0.0` and use it for a week before P2.
 

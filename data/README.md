@@ -1,7 +1,7 @@
 # data/ — content and fixtures for the Mise Android app
 
 Everything here is hand-curated content that you can't easily download again, rescued from the retired
-Next.js app (last web commit: `cf3ec39`). It is stored in neutral formats (JSON, Android XML,
+Next.js app (last web commit: `e76778c`). It is stored in neutral formats (JSON, Android XML,
 Markdown) so the Kotlin app reads it directly. Nothing in this folder is generated at build time.
 
 Run the validator after **any** edit (a Claude Code hook does this automatically):

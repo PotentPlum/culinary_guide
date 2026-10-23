@@ -8,7 +8,7 @@ import kotlinx.serialization.json.JsonObject
 
 /**
  * Ingredients from WP Recipe Maker's inline `window.wprm_recipes`, which carries US amounts and a metric unit system
- * (spec §10). Port of `extractWprmIngredients` in `web/lib/recipeIngestion.ts@cf3ec39`.
+ * (spec §10). Port of `extractWprmIngredients` in `web/lib/recipeIngestion.ts@e76778c`.
  */
 object WprmExtractor {
     const val SECTION_NAME = "Ingrediënten"

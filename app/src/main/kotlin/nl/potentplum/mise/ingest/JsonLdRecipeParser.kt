@@ -10,7 +10,7 @@ import java.math.BigInteger
 import kotlin.math.ceil
 
 /**
- * Schema.org JSON-LD recipe extractor: a faithful port of `web/lib/recipeIngestion.ts@cf3ec39` (spec §10). Every
+ * Schema.org JSON-LD recipe extractor: a faithful port of `web/lib/recipeIngestion.ts@e76778c` (spec §10). Every
  * function reproduces the golden cases in `data/fixtures/recipe-ingestion/golden.json`. The default section names
  * ("Ingredients", "Instructions") stay byte-identical; the mapping to Room turns them into untitled groups.
  */

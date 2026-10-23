@@ -14,7 +14,7 @@ import kotlinx.serialization.json.JsonEncoder
 import kotlinx.serialization.json.JsonPrimitive
 import kotlinx.serialization.json.jsonPrimitive
 
-// The parser's output, field for field the `RecipeOutput` of web/lib/recipeIngestion.ts@cf3ec39, so the golden
+// The parser's output, field for field the `RecipeOutput` of web/lib/recipeIngestion.ts@e76778c, so the golden
 // fixtures compare by JSON equality (spec §10). Mapping to Room happens later and turns default section names into
 // untitled groups.
 

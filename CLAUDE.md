@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## State of the repo
 Mise is being rebuilt as a **native Android app (Kotlin + Jetpack Compose, local-only data)**. The old Next.js/Supabase
-web app was removed; its last version is commit `cf3ec39` (`git show cf3ec39:web/<path>` to read old code).
+web app was removed; its last version is commit `e76778c` (`git show e76778c:web/<path>` to read old code).
 
 - `spec.md`: the full specification. It is the source of truth for behaviour; when code and spec disagree, fix one deliberately.
 - `todo.md`: the phased task list (P0 → P3). Tick boxes only when the acceptance check passes.

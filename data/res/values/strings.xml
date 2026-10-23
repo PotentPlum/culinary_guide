@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
   Dutch UI strings for Mise. Generated once from the retired web app's lib/strings.ts
-  (commit cf3ec39); this file is now the source of truth. Dutch is the default (and only)
+  (commit e76778c); this file is now the source of truth. Dutch is the default (and only)
   locale, so these live in values/, not values-nl/.
 -->
 <resources>

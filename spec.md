@@ -1,7 +1,7 @@
 # Mise — een kooksalmanak · Android app specification
 
 Status: **draft v3** (2026-10-22). v2 applied the feature review (Appendix C); v3 applies the UI/UX review (Appendix D). Supersedes the Next.js/Supabase web app
-(last web commit `cf3ec39`). Actionable breakdown: [`todo.md`](todo.md). Content & fixtures: [`data/README.md`](data/README.md).
+(last web commit `e76778c`). Actionable breakdown: [`todo.md`](todo.md). Content & fixtures: [`data/README.md`](data/README.md).
 
 ---
 
@@ -681,7 +681,7 @@ schema. The URL is kept as `sourceUrl`.
 - Body capped at **5 MB** while streaming. Charset comes from the headers or `<meta charset>`.
 - Errors map to the Dutch strings (`recipes_error_*`): unreachable, HTTP {code}, too large, no recipe found.
 
-**Parse** (`JsonLdRecipeParser`): a faithful port of `web/lib/recipeIngestion.ts@cf3ec39`.
+**Parse** (`JsonLdRecipeParser`): a faithful port of `web/lib/recipeIngestion.ts@e76778c`.
 - Collect every `<script type="application/ld+json">` (single or double quotes); skip malformed blocks silently.
 - Find the Recipe node by deep traversal: the root object, arrays, `@graph`, `mainEntity`, `mainEntityOfPage`, and `@type` as a string or array.
 - Ingredients: split into sections at "header" lines (ending in `:`, or ALL-CAPS without digits, length > 1).
@@ -814,7 +814,7 @@ Input: all attempts. "Matches discipline D" means at least one technique id in t
   - `distinctPeakVegetables`: distinct ids across all `peakVegIds` ≥ `min`.
   - `peakMonths`: distinct calendar months (1–12) of attempts with non-empty `peakVegIds` ≥ `min`.
   - Progress text shows what's missing ("Nog 4 groenten op hun best").
-- Acceptance: port the applicable cases from `web/lib/profileAggregation.test.ts@cf3ec39` (adapted to 3 disciplines), plus tests
+- Acceptance: port the applicable cases from `web/lib/profileAggregation.test.ts@e76778c` (adapted to 3 disciplines), plus tests
   for the seasonal metric (season boundaries, December/January wrap) and every badge rule at and around its threshold.
 
 ---
