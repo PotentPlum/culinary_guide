@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "description": "Golden input/output pairs for the recipe ingestion parser, recorded from the passing TypeScript test suite (web/lib/recipeIngestion.test.ts @ cf3ec39). The Kotlin port must reproduce every result exactly; 'error' means the call must throw RecipeIngestionError with that code.",
+  "description": "Golden input/output pairs for the recipe ingestion parser, recorded from the passing TypeScript test suite (web/lib/recipeIngestion.test.ts @ e76778c). The Kotlin port must reproduce every result exactly; 'error' means the call must throw RecipeIngestionError with that code.",
   "cases": [
     {
       "test": "parseIso8601Duration > parses minutes only — PT20M",

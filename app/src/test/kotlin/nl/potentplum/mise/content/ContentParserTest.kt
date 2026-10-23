@@ -1,6 +1,7 @@
 package nl.potentplum.mise.content
 
 import nl.potentplum.mise.content.model.BadgeRule
+import nl.potentplum.mise.content.model.Dimension
 import nl.potentplum.mise.content.model.DisciplineId
 import nl.potentplum.mise.content.model.FacetKey
 import nl.potentplum.mise.content.model.TechniqueCategory
@@ -8,6 +9,7 @@ import nl.potentplum.mise.testing.TestContent
 import nl.potentplum.mise.testing.TestResources
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertNotNull
+import org.junit.Assert.assertNull
 import org.junit.Assert.assertTrue
 import org.junit.Test
 
@@ -21,6 +23,18 @@ class ContentParserTest {
         assertEquals(4, content.facets.size)
         assertEquals(3, content.disciplines.size)
         assertEquals(7, content.archetypes.size)
+        assertEquals(28, content.units.size)
+    }
+
+    @Test
+    fun `units resolve by alias and convert to their base unit`() {
+        assertEquals("el", content.unitsByAlias.getValue("eetlepels").id)
+        assertEquals(15.0, content.unit("el")!!.factor!!, 0.0)
+        assertEquals(Dimension.VOLUME, content.unit("el")!!.dimension)
+        assertEquals(1000.0, content.unitsByAlias.getValue("kilo").factor!!, 0.0)
+        assertNull(content.unit("teen")!!.factor)
+        assertEquals("tenen", content.unit("teen")!!.label(2.0))
+        assertEquals("teen", content.unit("teen")!!.label(1.0))
     }
 
     @Test

@@ -23,15 +23,25 @@ import androidx.compose.material3.NavigationBar
 import androidx.compose.material3.NavigationBarItem
 import androidx.compose.material3.NavigationBarItemDefaults
 import androidx.compose.material3.Scaffold
+import androidx.compose.material3.SnackbarHost
+import androidx.compose.material3.SnackbarHostState
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.CompositionLocalProvider
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.rememberCoroutineScope
+import androidx.compose.runtime.saveable.rememberSaveable
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.res.pluralStringResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.semantics.contentDescription
 import androidx.compose.ui.semantics.semantics
+import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.navigation.NavDestination.Companion.hasRoute
 import androidx.navigation.NavDestination.Companion.hierarchy
 import androidx.navigation.NavGraph.Companion.findStartDestination
@@ -41,10 +51,21 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.navigation
 import androidx.navigation.compose.rememberNavController
+import androidx.navigation.toRoute
+import kotlinx.coroutines.flow.first
+import nl.potentplum.mise.core.designsystem.component.LocalMiseSnackbar
+import nl.potentplum.mise.core.designsystem.component.MiseSnackbar
 import nl.potentplum.mise.core.designsystem.component.OverflowItem
 import nl.potentplum.mise.core.navigation.AboutRoute
+import nl.potentplum.mise.core.navigation.CookRoute
+import nl.potentplum.mise.core.navigation.ImportLinkRoute
 import nl.potentplum.mise.core.navigation.JournalGraph
 import nl.potentplum.mise.core.navigation.JournalRoute
+import nl.potentplum.mise.core.navigation.PhotoImportRoute
+import nl.potentplum.mise.core.navigation.QuestRefineRoute
+import nl.potentplum.mise.core.navigation.QuestRoute
+import nl.potentplum.mise.core.navigation.RecipeEditRoute
+import nl.potentplum.mise.core.navigation.RecipeRoute
 import nl.potentplum.mise.core.navigation.RecipesGraph
 import nl.potentplum.mise.core.navigation.RecipesRoute
 import nl.potentplum.mise.core.navigation.SeasonGraph
@@ -52,17 +73,32 @@ import nl.potentplum.mise.core.navigation.SeasonRoute
 import nl.potentplum.mise.core.navigation.SettingsRoute
 import nl.potentplum.mise.core.navigation.ShoppingGraph
 import nl.potentplum.mise.core.navigation.ShoppingRoute
+import nl.potentplum.mise.core.navigation.TechniqueRoute
 import nl.potentplum.mise.core.navigation.TechniquesRoute
 import nl.potentplum.mise.core.navigation.TodayGraph
 import nl.potentplum.mise.core.navigation.TodayRoute
+import nl.potentplum.mise.core.navigation.VegetableRoute
+import nl.potentplum.mise.feature.PlaceholderScreen
+import nl.potentplum.mise.feature.cook.CookScreen
 import nl.potentplum.mise.feature.journal.JournalScreen
-import nl.potentplum.mise.feature.recipes.RecipesScreen
+import nl.potentplum.mise.feature.journal.JournalSegment
+import nl.potentplum.mise.feature.quests.QuestRefineScreen
+import nl.potentplum.mise.feature.quests.QuestScreen
+import nl.potentplum.mise.feature.recipes.AddRecipeOption
+import nl.potentplum.mise.feature.recipes.ImportLinkScreen
+import nl.potentplum.mise.feature.recipes.LibraryScreen
+import nl.potentplum.mise.feature.recipes.PhotoImportScreen
+import nl.potentplum.mise.feature.recipes.RecipeDetailScreen
+import nl.potentplum.mise.feature.recipes.RecipeEditScreen
 import nl.potentplum.mise.feature.season.SeasonScreen
 import nl.potentplum.mise.feature.settings.AboutScreen
 import nl.potentplum.mise.feature.settings.SettingsScreen
 import nl.potentplum.mise.feature.shopping.ShoppingScreen
+import nl.potentplum.mise.feature.techniques.TechniqueScreen
 import nl.potentplum.mise.feature.techniques.TechniquesScreen
+import nl.potentplum.mise.feature.today.TodayActions
 import nl.potentplum.mise.feature.today.TodayScreen
+import nl.potentplum.mise.feature.vegetable.VegetableScreen
 import java.time.LocalDate
 
 /** The five bottom-bar tabs (spec §6.1). Quests have no tab; their history lives in Dagboek. */
@@ -79,13 +115,19 @@ enum class TopLevelDestination(
     Journal(JournalGraph, R.string.nav_journal, Icons.Filled.Book, Icons.Outlined.Book),
 }
 
-/** Single-activity shell: a [NavHost] with one nested graph per tab and the bottom [NavigationBar]. */
+/** Single-activity shell: a [NavHost] with one nested graph per tab, the bottom [NavigationBar] and one snackbar host. */
 @Composable
 fun MiseAppShell(
     today: LocalDate,
     uncheckedShoppingCount: Int,
     navController: NavHostController = rememberNavController(),
+    pendingShare: SharedContent? = null,
+    onShareHandled: () -> Unit = {},
 ) {
+    val snackbarHost = remember { SnackbarHostState() }
+    val scope = rememberCoroutineScope()
+    val snackbar = remember(snackbarHost, scope) { MiseSnackbar(snackbarHost, scope) }
+
     val onOverflowItem: (OverflowItem) -> Unit = { item ->
         navController.navigate(
             when (item) {
@@ -96,57 +138,249 @@ fun MiseAppShell(
         ) { launchSingleTop = true }
     }
     val onBack: () -> Unit = { navController.navigateUp() }
+    val onVegetable: (String) -> Unit = { navController.navigate(VegetableRoute(it)) }
+    val onTechnique: (String) -> Unit = { navController.navigate(TechniqueRoute(it)) }
+    val onRecipe: (String) -> Unit = { navController.navigate(RecipeRoute(it)) }
+    val onAddKey: () -> Unit = { navController.navigate(SettingsRoute) { launchSingleTop = true } }
 
-    Scaffold(
-        contentWindowInsets = WindowInsets(0),
-        bottomBar = { MiseNavigationBar(navController, uncheckedShoppingCount) },
-    ) { padding ->
-        NavHost(
-            navController = navController,
-            startDestination = TodayGraph,
-            modifier = Modifier.padding(padding).consumeWindowInsets(padding),
-        ) {
-            navigation<TodayGraph>(startDestination = TodayRoute) {
-                composable<TodayRoute> { TodayScreen(today = today, onOverflowItem = onOverflowItem) }
+    /** Opens [route] in place of the import screen that led to it. */
+    val replaceImport: (Any) -> Unit = { route ->
+        navController.navigate(route) { popUpTo<ImportLinkRoute> { inclusive = true } }
+    }
+
+    // Shares open the import flow on top of the current stack (spec §6.1).
+    LaunchedEffect(pendingShare) {
+        if (pendingShare == null) return@LaunchedEffect
+        // A share can arrive with the cold start, before the NavHost has set its graph.
+        navController.currentBackStackEntryFlow.first()
+        when (pendingShare) {
+            is SharedContent.Link -> navController.navigate(ImportLinkRoute(pendingShare.url))
+            is SharedContent.Images -> navController.navigate(PhotoImportRoute(shared = pendingShare.uris.map { it.toString() }))
+            is SharedContent.OpenRecipe -> navController.navigate(RecipeRoute(pendingShare.id))
+            null -> return@LaunchedEffect
+        }
+        onShareHandled()
+    }
+
+    CompositionLocalProvider(LocalMiseSnackbar provides snackbar) {
+        Scaffold(
+            contentWindowInsets = WindowInsets(0),
+            bottomBar = {
+                // Kookmodus is full screen (spec §6.10).
+                val entry by navController.currentBackStackEntryAsState()
+                if (entry?.destination?.hasRoute<CookRoute>() != true) MiseNavigationBar(navController, uncheckedShoppingCount)
+            },
+            snackbarHost = { SnackbarHost(snackbarHost) },
+        ) { padding ->
+            NavHost(
+                navController = navController,
+                startDestination = TodayGraph,
+                modifier = Modifier.padding(padding).consumeWindowInsets(padding),
+            ) {
+                navigation<TodayGraph>(startDestination = TodayRoute) {
+                    composable<TodayRoute> {
+                        TodayScreen(
+                            today = today,
+                            actions =
+                                TodayActions(
+                                    onRecipe = onRecipe,
+                                    onCook = { navController.navigate(CookRoute(it)) },
+                                    onImportLink = { navController.navigate(ImportLinkRoute()) },
+                                    onPhotos = { navController.navigate(PhotoImportRoute(camera = true)) },
+                                    onVegetable = onVegetable,
+                                    onAllVegetables = { navController.navigateToTab(TopLevelDestination.Season) },
+                                    onOpenQuest = { navController.navigate(QuestRoute(it)) },
+                                    onRefineQuest = { navController.navigate(QuestRefineRoute()) },
+                                    onAllQuests = {
+                                        navController.navigateToTab(TopLevelDestination.Journal)
+                                        runCatching { navController.getBackStackEntry<JournalRoute>() }
+                                            .getOrNull()
+                                            ?.savedStateHandle
+                                            ?.set(KEY_JOURNAL_SEGMENT, JournalSegment.QUESTS)
+                                    },
+                                    onAddKey = onAddKey,
+                                ),
+                            onOverflowItem = onOverflowItem,
+                        )
+                    }
+                }
+                navigation<SeasonGraph>(startDestination = SeasonRoute) {
+                    composable<SeasonRoute> { SeasonScreen(onVegetable = onVegetable, onOverflowItem = onOverflowItem) }
+                }
+                navigation<RecipesGraph>(startDestination = RecipesRoute) {
+                    composable<RecipesRoute> {
+                        LibraryScreen(
+                            onRecipe = onRecipe,
+                            onAdd = { option ->
+                                navController.navigate(
+                                    when (option) {
+                                        AddRecipeOption.Link -> ImportLinkRoute()
+                                        AddRecipeOption.Camera -> PhotoImportRoute(camera = true)
+                                        AddRecipeOption.Gallery -> PhotoImportRoute(camera = false)
+                                        AddRecipeOption.Manual -> RecipeEditRoute()
+                                    },
+                                )
+                            },
+                            onOverflowItem = onOverflowItem,
+                        )
+                    }
+                }
+                navigation<ShoppingGraph>(startDestination = ShoppingRoute) {
+                    composable<ShoppingRoute> { ShoppingScreen(onOverflowItem = onOverflowItem) }
+                }
+                navigation<JournalGraph>(startDestination = JournalRoute) {
+                    composable<JournalRoute> { entry ->
+                        val requested by entry.savedStateHandle
+                            .getStateFlow<JournalSegment?>(KEY_JOURNAL_SEGMENT, null)
+                            .collectAsStateWithLifecycle()
+                        JournalScreen(
+                            onOverflowItem = onOverflowItem,
+                            onOpenQuest = { navController.navigate(QuestRoute(it)) },
+                            onNewQuest = { navController.navigate(QuestRefineRoute()) },
+                            requestedSegment = requested,
+                            onSegmentRequestHandled = { entry.savedStateHandle[KEY_JOURNAL_SEGMENT] = null },
+                        )
+                    }
+                }
+                composable<TechniquesRoute> {
+                    TechniquesScreen(
+                        onBack = onBack,
+                        onTechnique = onTechnique,
+                        onOverflowItem = onOverflowItem,
+                    )
+                }
+                composable<SettingsRoute> { SettingsScreen(onBack = onBack, onOverflowItem = onOverflowItem) }
+                composable<AboutRoute> { AboutScreen(onBack = onBack, onOverflowItem = onOverflowItem) }
+                composable<VegetableRoute> {
+                    VegetableScreen(
+                        onBack = onBack,
+                        onVegetable = onVegetable,
+                        onTechnique = onTechnique,
+                        onQuest = { navController.navigate(QuestRefineRoute(vegId = it)) },
+                        onOverflowItem = onOverflowItem,
+                    )
+                }
+                composable<TechniqueRoute> {
+                    TechniqueScreen(
+                        onBack = onBack,
+                        onTechnique = onTechnique,
+                        onVegetable = onVegetable,
+                        onQuest = { navController.navigate(QuestRefineRoute(techniqueId = it)) },
+                        onOverflowItem = onOverflowItem,
+                    )
+                }
+                composable<QuestRefineRoute> {
+                    QuestRefineScreen(
+                        onBack = onBack,
+                        onOpenQuest = { navController.navigate(QuestRoute(it)) },
+                        onAddKey = onAddKey,
+                        onOverflowItem = onOverflowItem,
+                    )
+                }
+                composable<QuestRoute> {
+                    QuestScreen(
+                        onBack = onBack,
+                        onCook = { navController.navigate(CookRoute(it)) },
+                        onReplaced = { id -> navController.navigate(QuestRoute(id)) { popUpTo<QuestRoute> { inclusive = true } } },
+                        onTechnique = onTechnique,
+                        onOverflowItem = onOverflowItem,
+                    )
+                }
+                composable<RecipeRoute> {
+                    RecipeDetailScreen(
+                        onBack = onBack,
+                        onEdit = { navController.navigate(RecipeEditRoute(it)) },
+                        onCook = { id, servings -> navController.navigate(CookRoute(id, servings)) },
+                        onTechnique = onTechnique,
+                        onOverflowItem = onOverflowItem,
+                    )
+                }
+                composable<RecipeEditRoute> { entry ->
+                    val route = entry.toRoute<RecipeEditRoute>()
+                    RecipeEditScreen(
+                        onClose = onBack,
+                        onSaved = { id ->
+                            if (route.id != null && !route.draft) {
+                                navController.popBackStack()
+                            } else {
+                                // A new or imported recipe: show it in place of the editor (and the import screen).
+                                navController.navigate(RecipeRoute(id)) {
+                                    popUpTo<RecipeEditRoute> { inclusive = true }
+                                    popUpTo<ImportLinkRoute> { inclusive = true }
+                                    popUpTo<PhotoImportRoute> { inclusive = true }
+                                }
+                            }
+                        },
+                    )
+                }
+                composable<ImportLinkRoute> {
+                    ImportLinkScreen(
+                        onBack = onBack,
+                        onSaved = { replaceImport(RecipeRoute(it)) },
+                        onEdit = {
+                            id,
+                            highlight,
+                            ->
+                            navController.navigate(RecipeEditRoute(id, draft = true, highlightMissing = highlight))
+                        },
+                        onOpenExisting = { replaceImport(RecipeRoute(it)) },
+                        onManual = { replaceImport(RecipeEditRoute()) },
+                        onOverflowItem = onOverflowItem,
+                    )
+                }
+                composable<PhotoImportRoute> {
+                    PhotoImportScreen(
+                        onBack = onBack,
+                        onSaved = { id ->
+                            navController.navigate(RecipeRoute(id)) { popUpTo<PhotoImportRoute> { inclusive = true } }
+                        },
+                        onEdit = { id, highlight ->
+                            navController.navigate(RecipeEditRoute(id, draft = true, highlightMissing = highlight))
+                        },
+                        onAddKey = onAddKey,
+                        onOverflowItem = onOverflowItem,
+                    )
+                }
+                composable<CookRoute> {
+                    CookScreen(onClose = onBack, onLogged = onBack)
+                }
             }
-            navigation<SeasonGraph>(startDestination = SeasonRoute) {
-                composable<SeasonRoute> { SeasonScreen(onOverflowItem = onOverflowItem) }
-            }
-            navigation<RecipesGraph>(startDestination = RecipesRoute) {
-                composable<RecipesRoute> { RecipesScreen(onOverflowItem = onOverflowItem) }
-            }
-            navigation<ShoppingGraph>(startDestination = ShoppingRoute) {
-                composable<ShoppingRoute> { ShoppingScreen(onOverflowItem = onOverflowItem) }
-            }
-            navigation<JournalGraph>(startDestination = JournalRoute) {
-                composable<JournalRoute> { JournalScreen(onOverflowItem = onOverflowItem) }
-            }
-            composable<TechniquesRoute> { TechniquesScreen(onBack = onBack, onOverflowItem = onOverflowItem) }
-            composable<SettingsRoute> { SettingsScreen(onBack = onBack, onOverflowItem = onOverflowItem) }
-            composable<AboutRoute> { AboutScreen(onBack = onBack, onOverflowItem = onOverflowItem) }
         }
     }
 }
+
+private const val KEY_JOURNAL_SEGMENT = "journalSegment"
+
+/** Switching tabs saves the old tab's stack and restores the new one's (spec §6.1). */
+private fun NavHostController.navigateToTab(destination: TopLevelDestination) =
+    navigate(destination.graph) {
+        popUpTo(graph.findStartDestination().id) { saveState = true }
+        launchSingleTop = true
+        restoreState = true
+    }
 
 @Composable
 private fun MiseNavigationBar(
     navController: NavHostController,
     uncheckedShoppingCount: Int,
 ) {
+    // Detail and overflow screens live at the root and stack on the tab they were opened from, so they keep that tab
+    // selected: the selection follows clicks and any destination inside a tab graph, and stays put otherwise.
+    var selectedTab by rememberSaveable { mutableStateOf(TopLevelDestination.Today) }
     val backStackEntry by navController.currentBackStackEntryAsState()
-    val current = backStackEntry?.destination
+    val inTab =
+        backStackEntry?.destination?.hierarchy?.firstNotNullOfOrNull { destination ->
+            TopLevelDestination.entries.firstOrNull { destination.hasRoute(it.graph::class) }
+        }
+    if (inTab != null && inTab != selectedTab) selectedTab = inTab
     NavigationBar(containerColor = MaterialTheme.colorScheme.surfaceContainerLow) {
         TopLevelDestination.entries.forEach { destination ->
-            val selected = current?.hierarchy?.any { it.hasRoute(destination.graph::class) } == true
+            val selected = destination == selectedTab
             NavigationBarItem(
                 selected = selected,
                 onClick = {
-                    navController.navigate(destination.graph) {
-                        // Switching tabs saves the old tab's stack and restores the new one's (spec §6.1).
-                        popUpTo(navController.graph.findStartDestination().id) { saveState = true }
-                        launchSingleTop = true
-                        restoreState = true
-                    }
+                    selectedTab = destination
+                    navController.navigateToTab(destination)
                 },
                 icon = { TabIcon(destination, selected, uncheckedShoppingCount) },
                 label = { Text(stringResource(destination.labelRes), maxLines = 1) },

@@ -1,5 +1,6 @@
 package nl.potentplum.mise.core.designsystem.component
 
+import android.content.res.Resources
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -22,17 +23,19 @@ import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalResources
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import nl.potentplum.mise.R
 import nl.potentplum.mise.core.designsystem.MiseTheme
+import nl.potentplum.mise.core.util.DutchNumbers
 
 sealed interface TimerChipState {
     /** A duration detected in a step; tapping starts a Clock-app timer. */
     data class Idle(
-        val minutes: Int,
+        val seconds: Int,
     ) : TimerChipState
 
     /** Started from step [step]; [remainingMinutes] is a local estimate, the Clock app rings. */
@@ -46,6 +49,31 @@ sealed interface TimerChipState {
     ) : TimerChipState
 }
 
+/** "45 sec", "12 min", "1,5 min", "2 uur". */
+fun durationLabel(
+    resources: Resources,
+    seconds: Int,
+): String =
+    when {
+        seconds < 60 -> {
+            resources.getString(R.string.cook_duration_seconds, seconds)
+        }
+
+        seconds >= 3_600 && seconds % 3_600 == 0 -> {
+            resources.getString(
+                R.string.cook_duration_hours,
+                DutchNumbers.format(seconds / 3_600.0, 1),
+            )
+        }
+
+        else -> {
+            resources.getString(R.string.cook_duration_minutes, DutchNumbers.format(seconds / 60.0, 1))
+        }
+    }
+
+@Composable
+fun durationLabel(seconds: Int): String = durationLabel(LocalResources.current, seconds)
+
 /** A timer chip in cook mode (spec §6.10): idle "12 min", running "Stap 4 · nog ~9 min", done "Stap 4 · klaar". */
 @Composable
 fun TimerChip(
@@ -56,7 +84,7 @@ fun TimerChip(
     val (label, icon) =
         when (state) {
             is TimerChipState.Idle -> {
-                stringResource(R.string.minutes_short, state.minutes) to Icons.Outlined.Timer
+                durationLabel(state.seconds) to Icons.Outlined.Timer
             }
 
             is TimerChipState.Running -> {
@@ -130,7 +158,7 @@ private fun CookControlsPreview() {
     MiseTheme {
         Column(verticalArrangement = Arrangement.spacedBy(12.dp)) {
             Row(Modifier.padding(16.dp), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-                TimerChip(TimerChipState.Idle(12), onClick = {})
+                TimerChip(TimerChipState.Idle(720), onClick = {})
                 TimerChip(TimerChipState.Running(step = 4, remainingMinutes = 9), onClick = {})
                 TimerChip(TimerChipState.Done(step = 2), onClick = {})
             }

@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "description": "Expected seasonal status per vegetable for months 1..12 (index 0 = January), recorded from statusFor() in web/lib/vegetables.ts @ cf3ec39. Must stay in sync with assets/vegetables.json; tools/validate_data.py recomputes it.",
+ "description": "Expected seasonal status per vegetable for months 1..12 (index 0 = January), recorded from statusFor() in web/lib/vegetables.ts @ e76778c. Must stay in sync with assets/vegetables.json; tools/validate_data.py recomputes it.",
  "statuses": {
   "asparagus-white": [
    "off",

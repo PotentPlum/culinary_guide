@@ -7,6 +7,7 @@ import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.test.StandardTestDispatcher
 import kotlinx.coroutines.test.TestScope
 import kotlinx.coroutines.test.runTest
+import nl.potentplum.mise.testing.FakeCipher
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertFalse
 import org.junit.Assert.assertNull
@@ -98,6 +99,17 @@ class SecretStoreTest {
         }
 
     @Test
+    fun `a 401 marks the key invalid until it is replaced`() =
+        runTest {
+            val (store, _) = store()
+            store.saveClaudeKey(key)
+            store.markInvalid()
+            assertEquals(ClaudeKeyStatus.INVALID, store.keyState.first().status)
+            store.saveClaudeKey(key)
+            assertEquals(ClaudeKeyStatus.STORED, store.keyState.first().status)
+        }
+
+    @Test
     fun `a temporarily unavailable keystore keeps the key`() =
         runTest {
             val (store, _) = store()
@@ -109,24 +121,4 @@ class SecretStoreTest {
             assertEquals(ClaudeKeyStatus.STORED, store.keyState.first().status)
             assertFalse(cipher.deleted)
         }
-
-    /** Reversible, deliberately not real crypto: XOR with a fixed byte behind a 12-byte "IV". */
-    private class FakeCipher : SecretCipher {
-        var decryptFailure: Exception? = null
-        var deleted = false
-
-        override fun encrypt(plaintext: ByteArray): ByteArray {
-            deleted = false
-            return ByteArray(12) + plaintext.map { (it.toInt() xor 0x5A).toByte() }
-        }
-
-        override fun decrypt(blob: ByteArray): ByteArray {
-            decryptFailure?.let { throw it }
-            return blob.drop(12).map { (it.toInt() xor 0x5A).toByte() }.toByteArray()
-        }
-
-        override fun deleteKey() {
-            deleted = true
-        }
-    }
 }

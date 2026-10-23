@@ -9,7 +9,7 @@ All data stays on the phone. The Claude API key you enter is stored encrypted wi
 
 **Status:** being rebuilt as a native Kotlin/Jetpack Compose app. The P0 foundation (project, design system, app shell,
 content layer, database, settings, key storage, CI) is in place; the features follow in P1. The previous Next.js +
-Supabase web app was retired (last version: commit `cf3ec39`).
+Supabase web app was retired (last version: commit `e76778c`).
 
 | Document | Contents |
 |---|---|
@@ -23,3 +23,23 @@ python3 tools/validate_data.py                                         # validat
 ```
 
 Seasonal data reference: [velt.nu](https://www.velt.nu).
+
+## Releasing
+
+Pushing a tag `v*` runs [`release.yml`](.github/workflows/release.yml): the CI checks, a signed and shrunk release APK,
+and a GitHub Release with `mise-<tag>.apk` and its SHA-256 checksum. A tag with a hyphen (`v0.1.0-alpha1`) becomes a
+pre-release. `versionName` is the tag without the `v`; `versionCode` is `major·10000 + minor·100 + patch`.
+
+One-time setup, on your own machine (the keystore never goes in the repo, spec §17):
+
+```bash
+keytool -genkeypair -v -keystore mise-release.jks -alias mise -keyalg RSA -keysize 4096 -validity 10000
+base64 -w0 mise-release.jks > mise-release.jks.b64      # macOS: base64 -i mise-release.jks -o mise-release.jks.b64
+```
+
+Back up `mise-release.jks` and its passwords offline: without them, installed copies can never be updated. Then add four
+repository secrets (Settings → Secrets and variables → Actions): `MISE_KEYSTORE_BASE64` (the `.b64` file's contents),
+`MISE_KEYSTORE_PASSWORD`, `MISE_KEY_ALIAS` (`mise`) and `MISE_KEY_PASSWORD`, and delete the `.b64` file.
+
+To release: `git tag v0.1.0 && git push origin v0.1.0`. Push the tag; don't create the release in the GitHub UI first,
+or the workflow's own `gh release create` will find it already there.

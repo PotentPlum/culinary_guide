@@ -21,6 +21,10 @@ val gitVersion: String =
         .ifBlank { "0.0.0" }
 val versionParts = gitVersion.split('.', '-').mapNotNull { it.toIntOrNull() } + listOf(0, 0, 0)
 
+// Release signing comes from the environment only (spec §17): CI decodes the keystore from Actions secrets. The keystore and
+// its passwords never live in the repo. Without them, assembleRelease still builds, unsigned.
+val releaseKeystore: String? = providers.environmentVariable("MISE_KEYSTORE_FILE").orNull
+
 android {
     namespace = "nl.potentplum.mise"
     compileSdk = 37
@@ -34,6 +38,17 @@ android {
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
+    signingConfigs {
+        if (releaseKeystore != null) {
+            create("release") {
+                storeFile = file(releaseKeystore)
+                storePassword = providers.environmentVariable("MISE_KEYSTORE_PASSWORD").get()
+                keyAlias = providers.environmentVariable("MISE_KEY_ALIAS").get()
+                keyPassword = providers.environmentVariable("MISE_KEY_PASSWORD").get()
+            }
+        }
+    }
+
     buildTypes {
         debug {
             applicationIdSuffix = ".debug"
@@ -42,6 +57,7 @@ android {
             isMinifyEnabled = true
             isShrinkResources = true
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
+            signingConfig = signingConfigs.findByName("release")
         }
     }
 
@@ -144,6 +160,10 @@ dependencies {
     testImplementation(libs.room.testing)
     testImplementation(platform(libs.compose.bom))
     testImplementation(libs.compose.ui.test.junit4)
+    testImplementation(libs.hilt.android.testing)
+    testImplementation(libs.okhttp.mockwebserver)
+    testImplementation(libs.work.testing)
+    kspTest(libs.hilt.compiler)
 
     androidTestImplementation(libs.androidx.test.runner)
     androidTestImplementation(libs.androidx.test.junit)

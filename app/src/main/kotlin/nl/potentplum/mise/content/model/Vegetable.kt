@@ -36,40 +36,43 @@ data class Vegetable(
     val curatedRecipes: List<CuratedRecipe>,
 )
 
+/** The family as written in the content (Dutch); content, so it is displayed as is. */
 @Serializable
-enum class Family {
+enum class Family(
+    val nl: String,
+) {
     @SerialName("Wortel")
-    WORTEL,
+    WORTEL("Wortel"),
 
     @SerialName("Blad")
-    BLAD,
+    BLAD("Blad"),
 
     @SerialName("Brassica")
-    BRASSICA,
+    BRASSICA("Brassica"),
 
     @SerialName("Allium")
-    ALLIUM,
+    ALLIUM("Allium"),
 
     @SerialName("Peulvrucht")
-    PEULVRUCHT,
+    PEULVRUCHT("Peulvrucht"),
 
     @SerialName("Stengel")
-    STENGEL,
+    STENGEL("Stengel"),
 
     @SerialName("Pompoen")
-    POMPOEN,
+    POMPOEN("Pompoen"),
 
     @SerialName("Knolgewas")
-    KNOLGEWAS,
+    KNOLGEWAS("Knolgewas"),
 
     @SerialName("Vruchtgroente")
-    VRUCHTGROENTE,
+    VRUCHTGROENTE("Vruchtgroente"),
 
     @SerialName("Paddenstoel")
-    PADDENSTOEL,
+    PADDENSTOEL("Paddenstoel"),
 
     @SerialName("Kruid")
-    KRUID,
+    KRUID("Kruid"),
 }
 
 @Serializable

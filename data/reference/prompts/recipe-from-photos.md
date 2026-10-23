@@ -1,6 +1,6 @@
 # Legacy prompt: recipe-from-photos
 
-Verbatim from `web/app/api/recipe-from-images/route.ts` at commit cf3ec39. `${...}` placeholders were filled from `facets.json` option values at runtime. Reference only: the Android app rewrites these for structured outputs (see spec.md §8).
+Verbatim from `web/app/api/recipe-from-images/route.ts` at commit e76778c. `${...}` placeholders were filled from `facets.json` option values at runtime. Reference only: the Android app rewrites these for structured outputs (see spec.md §8).
 
 ## `SYSTEM_PROMPT`
 

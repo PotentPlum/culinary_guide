@@ -1,7 +1,7 @@
 # Mise — een kooksalmanak · Android app specification
 
 Status: **draft v3** (2026-10-22). v2 applied the feature review (Appendix C); v3 applies the UI/UX review (Appendix D). Supersedes the Next.js/Supabase web app
-(last web commit `cf3ec39`). Actionable breakdown: [`todo.md`](todo.md). Content & fixtures: [`data/README.md`](data/README.md).
+(last web commit `e76778c`). Actionable breakdown: [`todo.md`](todo.md). Content & fixtures: [`data/README.md`](data/README.md).
 
 ---
 
@@ -548,8 +548,11 @@ Day and session state (JSON strings in the same file; never backed up, §13.1):
 ### 8.1 Client
 
 - The `ClaudeClient` interface (suspend functions) has two implementations: `AnthropicSdkClaudeClient` (the official Java SDK, preferred)
-  and `OkHttpClaudeClient` (raw `POST https://api.anthropic.com/v1/messages`, `anthropic-version: 2023-06-01`).
+  and `OkHttpClaudeClient` (raw `POST https://api.anthropic.com/v1/messages`, `anthropic-version: 2026-10-21`).
   A P0 spike decides which one ships. The SDK must work on API 30+ with R8 enabled.
+  **Status (P1):** the spike needs a real device and has not run, so P1 ships `OkHttpClaudeClient`: it reuses the app's
+  OkHttp client, adds no dependency or R8 rules, and sends exactly the body this section describes (the SDK's builder for
+  `fallbacks: "default"` is not documented). Swapping in the SDK later only touches the Hilt binding in `ClaudeModule`.
 - The key is read from `SecretStore` per call (§9). It never appears in logs, crash reports or exceptions shown to the user.
 - **Structured outputs** for every generation call: `output_config.format` = JSON Schema (§8.6). No regex extraction of JSON.
 - **Do not send** `temperature`, `top_p` or `top_k`: since 2026-10-21 the API rejects them with a 400. The legacy quest prompt
@@ -678,7 +681,7 @@ schema. The URL is kept as `sourceUrl`.
 - Body capped at **5 MB** while streaming. Charset comes from the headers or `<meta charset>`.
 - Errors map to the Dutch strings (`recipes_error_*`): unreachable, HTTP {code}, too large, no recipe found.
 
-**Parse** (`JsonLdRecipeParser`): a faithful port of `web/lib/recipeIngestion.ts@cf3ec39`.
+**Parse** (`JsonLdRecipeParser`): a faithful port of `web/lib/recipeIngestion.ts@e76778c`.
 - Collect every `<script type="application/ld+json">` (single or double quotes); skip malformed blocks silently.
 - Find the Recipe node by deep traversal: the root object, arrays, `@graph`, `mainEntity`, `mainEntityOfPage`, and `@type` as a string or array.
 - Ingredients: split into sections at "header" lines (ending in `:`, or ALL-CAPS without digits, length > 1).
@@ -773,6 +776,8 @@ score    = season + recency + (favourite ? 0.4 : 0)
 
 - **Ingredient**: *Verras me* restricted to PEAK vegetables not cooked (`attempt.vegIds`) in the last 60 days. Use all PEAK if
   that leaves fewer than 3, and all in-season vegetables if PEAK is empty.
+  The one-tap quest picks one of these candidates itself (stable for the day; "Andere quest" takes the next) and sends it as
+  *Seizoensgroente*, so the card can name it while generating. *Verras me* in Verfijn sends the whole list and Claude chooses.
 - **Focus discipline**: the most neglected discipline (§12). If none is neglected, the one with the fewest attempts in 30 days.
 - **Difficulty**: from the last 5 completed quests with an execution score. Average ≥ 8 → one level up from the most recent
   difficulty; ≤ 5 → one level down; otherwise the same. No history → Basis (`BEGINNER`).
@@ -809,7 +814,7 @@ Input: all attempts. "Matches discipline D" means at least one technique id in t
   - `distinctPeakVegetables`: distinct ids across all `peakVegIds` ≥ `min`.
   - `peakMonths`: distinct calendar months (1–12) of attempts with non-empty `peakVegIds` ≥ `min`.
   - Progress text shows what's missing ("Nog 4 groenten op hun best").
-- Acceptance: port the applicable cases from `web/lib/profileAggregation.test.ts@cf3ec39` (adapted to 3 disciplines), plus tests
+- Acceptance: port the applicable cases from `web/lib/profileAggregation.test.ts@e76778c` (adapted to 3 disciplines), plus tests
   for the seasonal metric (season boundaries, December/January wrap) and every badge rule at and around its threshold.
 
 ---

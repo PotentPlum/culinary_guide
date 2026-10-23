@@ -15,7 +15,6 @@ import androidx.compose.ui.geometry.CornerRadius
 import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.geometry.Size
 import androidx.compose.ui.graphics.drawscope.Stroke
-import androidx.compose.ui.platform.LocalResources
 import androidx.compose.ui.res.stringArrayResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.semantics.clearAndSetSemantics
@@ -27,7 +26,6 @@ import androidx.compose.ui.unit.dp
 import nl.potentplum.mise.R
 import nl.potentplum.mise.core.designsystem.MiseTextStyles
 import nl.potentplum.mise.core.designsystem.MiseTheme
-import java.util.Locale
 
 /**
  * Twelve month cells in the status colours, never the vegetable's accent (spec §5): peak filled, shoulder outlined with a
@@ -102,14 +100,7 @@ fun PeakBar(
 fun peakBarDescription(
     peak: List<Int>,
     shoulder: List<Int>,
-): String {
-    val months = LocalResources.current.getStringArray(R.array.months_long)
-    val none = stringResource(R.string.peakbar_none)
-    val dutch = Locale.forLanguageTag("nl-NL")
-
-    fun names(list: List<Int>) = list.sorted().joinToString(", ") { months[it - 1].lowercase(dutch) }.ifEmpty { none }
-    return stringResource(R.string.peakbar_description, names(peak), names(shoulder))
-}
+): String = stringResource(R.string.peakbar_description, monthList(peak), monthList(shoulder))
 
 @Preview(showBackground = true, backgroundColor = 0xFFF4EFE6, widthDp = 320)
 @Composable

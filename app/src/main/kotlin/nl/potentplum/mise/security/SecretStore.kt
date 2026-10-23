@@ -26,6 +26,9 @@ enum class ClaudeKeyStatus {
 
     /** The stored key could not be decrypted and was wiped: "Sleutel opnieuw invoeren" (spec §9). */
     NEEDS_REENTRY,
+
+    /** The API answered 401: the key is wrong or revoked (spec §8.1). Replacing it clears this. */
+    INVALID,
 }
 
 data class ClaudeKeyState(
@@ -57,6 +60,7 @@ class SecretStore
             dataStore.data
                 .map { prefs ->
                     when {
+                        prefs[CIPHERTEXT] != null && prefs[INVALID] == true -> ClaudeKeyState(ClaudeKeyStatus.INVALID, prefs[HINT])
                         prefs[CIPHERTEXT] != null -> ClaudeKeyState(ClaudeKeyStatus.STORED, prefs[HINT])
                         prefs[NEEDS_REENTRY] == true -> ClaudeKeyState(ClaudeKeyStatus.NEEDS_REENTRY)
                         else -> ClaudeKeyState(ClaudeKeyStatus.NONE)
@@ -71,6 +75,7 @@ class SecretStore
                 it[CIPHERTEXT] = Base64.getEncoder().encodeToString(blob)
                 it[HINT] = trimmed.takeLast(HINT_LENGTH)
                 it.remove(NEEDS_REENTRY)
+                it.remove(INVALID)
             }
         }
 
@@ -95,6 +100,11 @@ class SecretStore
             }
         }
 
+        /** After a 401 from the API; the key stays until it is replaced or deleted. */
+        suspend fun markInvalid() {
+            dataStore.edit { if (it[CIPHERTEXT] != null) it[INVALID] = true }
+        }
+
         /** "Sleutel verwijderen": wipes the ciphertext and the Keystore alias. */
         suspend fun deleteClaudeKey() = wipe(needsReentry = false)
 
@@ -102,6 +112,7 @@ class SecretStore
             dataStore.edit {
                 it.remove(CIPHERTEXT)
                 it.remove(HINT)
+                it.remove(INVALID)
                 if (needsReentry) it[NEEDS_REENTRY] = true else it.remove(NEEDS_REENTRY)
             }
             withContext(dispatcher) { runCatching { cipher.deleteKey() } }
@@ -118,5 +129,6 @@ class SecretStore
             val CIPHERTEXT = stringPreferencesKey("claudeKeyCiphertext")
             val HINT = stringPreferencesKey("claudeKeyHint")
             val NEEDS_REENTRY = booleanPreferencesKey("claudeKeyNeedsReentry")
+            val INVALID = booleanPreferencesKey("claudeKeyInvalid")
         }
     }

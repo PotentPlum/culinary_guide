@@ -64,7 +64,12 @@ class SettingsRepository
         suspend fun pinTonight(recipeId: String) =
             edit { it[Keys.TONIGHT] = json.encodeToString(TonightPin.serializer(), TonightPin(clock.today().toString(), recipeId)) }
 
-        suspend fun unpinTonight() = edit { it.remove(Keys.TONIGHT) }
+        /** Removes the pin; with [recipeId], only when that recipe is the one pinned. */
+        suspend fun unpinTonight(recipeId: String? = null) =
+            edit { prefs ->
+                val pin = decode(prefs, Keys.TONIGHT, TonightPin.serializer())
+                if (recipeId == null || pin == null || pin.recipeId == recipeId) prefs.remove(Keys.TONIGHT)
+            }
 
         /** Recipe ids dismissed with "Niet vandaag" today. */
         val todayDismissed: Flow<Set<String>> =
@@ -94,6 +99,23 @@ class SettingsRepository
         suspend fun saveCookSession(session: CookSession) =
             edit {
                 it[Keys.COOK_SESSION] = json.encodeToString(CookSession.serializer(), session.copy(updatedAt = clock.nowMillis()))
+            }
+
+        /**
+         * Changes the open session in one DataStore transaction, so changes made in quick succession (a step, a timer, a
+         * tick) can't overwrite each other. [change] gets the current, unexpired session (or null) and returns the new one,
+         * or null to clear it.
+         */
+        suspend fun updateCookSession(change: (CookSession?) -> CookSession?) =
+            edit { prefs ->
+                val now = clock.nowMillis()
+                val current = decode(prefs, Keys.COOK_SESSION, CookSession.serializer())?.takeUnless { it.isExpired(now) }
+                val next = change(current)
+                if (next == null) {
+                    prefs.remove(Keys.COOK_SESSION)
+                } else if (next != current) {
+                    prefs[Keys.COOK_SESSION] = json.encodeToString(CookSession.serializer(), next.copy(updatedAt = now))
+                }
             }
 
         /** Clears the session, or only when it belongs to [recipeId] (an attempt was logged for that recipe). */

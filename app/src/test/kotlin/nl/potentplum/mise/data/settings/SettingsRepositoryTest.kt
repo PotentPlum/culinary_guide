@@ -2,6 +2,8 @@ package nl.potentplum.mise.data.settings
 
 import androidx.datastore.preferences.core.PreferenceDataStoreFactory
 import kotlinx.coroutines.flow.first
+import kotlinx.coroutines.joinAll
+import kotlinx.coroutines.launch
 import kotlinx.coroutines.test.TestScope
 import kotlinx.coroutines.test.runTest
 import nl.potentplum.mise.core.util.MiseClock
@@ -125,6 +127,30 @@ class SettingsRepositoryTest {
             repo.saveCookSession(repo.cookSession.first()!!.copy(stepIndex = 1))
             clock.advance(Duration.ofHours(20))
             assertEquals(1, repo.cookSession.first()?.stepIndex)
+        }
+
+    @Test
+    fun `changes made at the same time all survive`() =
+        runTest {
+            val repo = repository()
+            repo.saveCookSession(CookSession(recipeId = "r1", stepIndex = 0, updatedAt = 0))
+            // A step change, a timer and ticks launched together: none may overwrite another (the pager used to jump back).
+            val jobs =
+                listOf(
+                    launch { repo.updateCookSession { it?.copy(stepIndex = 1) } },
+                    launch { repo.updateCookSession { it?.copy(timers = it.timers + CookTimer(1, 180, 0)) } },
+                ) +
+                    (1..5).map { n ->
+                        launch { repo.updateCookSession { it?.copy(checkedIngredientIds = it.checkedIngredientIds + "i$n") } }
+                    }
+            jobs.joinAll()
+            val session = repo.cookSession.first()!!
+            assertEquals(1, session.stepIndex)
+            assertEquals(1, session.timers.size)
+            assertEquals((1..5).map { "i$it" }.toSet(), session.checkedIngredientIds.toSet())
+
+            repo.updateCookSession { null }
+            assertNull(repo.cookSession.first())
         }
 
     @Test
