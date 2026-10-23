@@ -92,6 +92,12 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           prerelease=""
+          # The tag may have appeared while this ran: never publish under a tag that points at another commit.
+          existing="$(git ls-remote origin "refs/tags/$TAG^{}" | cut -f1)"
+          [ -n "$existing" ] || existing="$(git ls-remote origin "refs/tags/$TAG" | cut -f1)"
+          if [ -n "$existing" ] && [ "$existing" != "$GITHUB_SHA" ]; then
+            echo "::error::Tag $TAG points at $existing, not at $GITHUB_SHA"; exit 1
+          fi
           case "$TAG" in *-*) prerelease="--prerelease" ;; esac
           # --target only matters on a manual run, where the tag doesn't exist yet: it is created at this commit.
           gh release create "$TAG" "mise-${TAG}.apk" "mise-${TAG}.apk.sha256" \
