@@ -77,13 +77,13 @@ The web app keeps running from its last Vercel deployment until you turn it off,
 ## P1 — Core loop
 
 ### Content and strings
-- [ ] Create `data/assets/units.json` + `data/schemas/units.schema.json` (id, Dutch singular/plural, aliases, dimension, factor; spec §11.2), and extend `tools/validate_data.py` (unique ids and aliases, factors > 0).
-- [ ] Rename user-facing "Uitdaging" → "Quest(s)" in `strings.xml` (`challenge_*` keys → `quest_*`; history title "Eerdere quests"; result buttons).
-- [ ] Rename "Profiel" → "Dagboek" strings; remove the strings for dropped views (radar, ingredient cloud, highest-rated cuisines, US/metric toggle, nutrition labels).
+- [x] Create `data/assets/units.json` + `data/schemas/units.schema.json` (id, Dutch singular/plural, aliases, dimension, factor; spec §11.2), and extend `tools/validate_data.py` (unique ids and aliases, factors > 0).
+- [x] Rename user-facing "Uitdaging" → "Quest(s)" in `strings.xml` (`challenge_*` keys → `quest_*`; history title "Eerdere quests"; result buttons).
+- [x] Rename "Profiel" → "Dagboek" strings; remove the strings for dropped views (radar, ingredient cloud, highest-rated cuisines, US/metric toggle, nutrition labels).
 - [x] Season vocabulary in `strings.xml` (spec §5): Op z'n best / Verkrijgbaar / Komt eraan, filter `filter_available`, badges "Laatste kans" and "Kort seizoen"; the "aflopend" strings removed (UI/UX review).
 - [x] One difficulty scale: `level_basis` / `level_gemiddeld` / `level_gevorderd` / `level_auto` replace the `challenge_difficulty_*`, `detail_difficulty_*` and `techniques_level_*` keys (UI/UX review).
 - [x] Headlines as single strings with `<i>` markup (`hero_title`, `calendar_title`, `home_hero_title`, `today_hero_title`); evaluation copy ("Zonder cijfers vastleggen", `score_steps`); `months_initial`; strings for Vanavond, Niet vandaag, cook session, Dagboek segments and first run (UI/UX review).
-- [ ] Prune web-only copy: `recipes_photo_dropzone`, `recipes_error_network` ("server" → "internet"), the "binnenkort" detail tags/notes, `controls_grid/list_aria_label`, `recipes_cooking_mode_unsupported`.
+- [x] Prune web-only copy: `recipes_photo_dropzone`, `recipes_error_network` ("server" → "internet"), the "binnenkort" detail tags/notes, `controls_grid/list_aria_label`, `recipes_cooking_mode_unsupported`.
 - [ ] Add every new string needed below to `data/res/values/strings.xml` as you go (Dutch only, snake_case keys, run the validator).
 
 ### Seizoen and vegetables

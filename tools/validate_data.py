@@ -153,6 +153,7 @@ tech_doc = load("assets/techniques.json", "techniques.schema.json")
 facet_doc = load("assets/facets.json", "facets.schema.json")
 disc_doc = load("assets/disciplines.json", "disciplines.schema.json")
 arch_doc = load("assets/archetypes.json", "archetypes.schema.json")
+unit_doc = load("assets/units.json", "units.schema.json")
 
 vegs = veg_doc.get("vegetables", [])
 veg_ids = unique("vegetables.id", [v.get("id", "") for v in vegs])
@@ -255,6 +256,26 @@ if tree is not None:
 # ── Test fixtures and reference data ────────────────────────────────────────
 
 
+units = unit_doc.get("units", [])
+unique("units.id", [u.get("id", "") for u in units])
+# Every alias maps to exactly one unit, or the local ingredient parser would be ambiguous (spec §11.2).
+unique("units.aliases", [a for u in units for a in u.get("aliases", [])])
+base_units = {"MASS": "g", "VOLUME": "ml", "COUNT": "stuks"}
+for u in units:
+    where = f"units[{u.get('id')}]"
+    dimension, factor = u.get("dimension"), u.get("factor")
+    if dimension == "OTHER":
+        if factor is not None:
+            err(where, "OTHER units are never converted, so factor must be null")
+    elif not isinstance(factor, (int, float)) or isinstance(factor, bool) or factor <= 0:
+        err(where, "factor must be a number > 0")
+    elif u.get("id") == base_units.get(dimension) and factor != 1:
+        err(where, f"the {dimension} base unit must have factor 1")
+for dimension, base in base_units.items():
+    if not any(u.get("id") == base and u.get("dimension") == dimension for u in units):
+        err("units", f"missing base unit {base!r} for {dimension}")
+
+
 def status_for(veg: dict, month: int) -> str:
     """Reference implementation of the seasonality rule (spec.md §11.1)."""
     peak, shoulder = veg["peak"], veg["shoulder"]
@@ -302,6 +323,6 @@ if errors:
     sys.exit(1)
 print(
     f"data OK — {len(vegs)} vegetables, {len(techs)} techniques, {len(facets)} facets, "
-    f"{len(archs)} archetypes, {len(names) if tree is not None else 0} string resources, "
+    f"{len(archs)} archetypes, {len(units)} units, {len(names) if tree is not None else 0} string resources, "
     f"{len(golden.get('cases', []))} golden cases"
 )

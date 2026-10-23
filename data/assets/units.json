@@ -1,0 +1,353 @@
+{
+  "schemaVersion": 1,
+  "units": [
+    {
+      "id": "g",
+      "singular": "g",
+      "plural": "g",
+      "aliases": [
+        "g",
+        "gr",
+        "gr.",
+        "gram",
+        "grammen"
+      ],
+      "dimension": "MASS",
+      "factor": 1
+    },
+    {
+      "id": "kg",
+      "singular": "kg",
+      "plural": "kg",
+      "aliases": [
+        "kg",
+        "kilo",
+        "kilos",
+        "kilogram"
+      ],
+      "dimension": "MASS",
+      "factor": 1000
+    },
+    {
+      "id": "ons",
+      "singular": "ons",
+      "plural": "ons",
+      "aliases": [
+        "ons"
+      ],
+      "dimension": "MASS",
+      "factor": 100
+    },
+    {
+      "id": "pond",
+      "singular": "pond",
+      "plural": "pond",
+      "aliases": [
+        "pond"
+      ],
+      "dimension": "MASS",
+      "factor": 500
+    },
+    {
+      "id": "ml",
+      "singular": "ml",
+      "plural": "ml",
+      "aliases": [
+        "ml",
+        "milliliter"
+      ],
+      "dimension": "VOLUME",
+      "factor": 1
+    },
+    {
+      "id": "cl",
+      "singular": "cl",
+      "plural": "cl",
+      "aliases": [
+        "cl",
+        "centiliter"
+      ],
+      "dimension": "VOLUME",
+      "factor": 10
+    },
+    {
+      "id": "dl",
+      "singular": "dl",
+      "plural": "dl",
+      "aliases": [
+        "dl",
+        "deciliter"
+      ],
+      "dimension": "VOLUME",
+      "factor": 100
+    },
+    {
+      "id": "l",
+      "singular": "l",
+      "plural": "l",
+      "aliases": [
+        "l",
+        "liter",
+        "liters",
+        "ltr"
+      ],
+      "dimension": "VOLUME",
+      "factor": 1000
+    },
+    {
+      "id": "el",
+      "singular": "el",
+      "plural": "el",
+      "aliases": [
+        "el",
+        "el.",
+        "eetlepel",
+        "eetlepels",
+        "eetl.",
+        "els"
+      ],
+      "dimension": "VOLUME",
+      "factor": 15
+    },
+    {
+      "id": "tl",
+      "singular": "tl",
+      "plural": "tl",
+      "aliases": [
+        "tl",
+        "tl.",
+        "theelepel",
+        "theelepels",
+        "theel."
+      ],
+      "dimension": "VOLUME",
+      "factor": 5
+    },
+    {
+      "id": "stuks",
+      "singular": "stuk",
+      "plural": "stuks",
+      "aliases": [
+        "stuk",
+        "stuks",
+        "st.",
+        "st"
+      ],
+      "dimension": "COUNT",
+      "factor": 1
+    },
+    {
+      "id": "snuf",
+      "singular": "snufje",
+      "plural": "snufjes",
+      "aliases": [
+        "snuf",
+        "snufje",
+        "snufjes",
+        "snuifje"
+      ],
+      "dimension": "OTHER",
+      "factor": null
+    },
+    {
+      "id": "mespunt",
+      "singular": "mespunt",
+      "plural": "mespunten",
+      "aliases": [
+        "mespunt",
+        "mespuntje",
+        "mespunten"
+      ],
+      "dimension": "OTHER",
+      "factor": null
+    },
+    {
+      "id": "teen",
+      "singular": "teen",
+      "plural": "tenen",
+      "aliases": [
+        "teen",
+        "teentje",
+        "teentjes",
+        "tenen"
+      ],
+      "dimension": "OTHER",
+      "factor": null
+    },
+    {
+      "id": "bos",
+      "singular": "bos",
+      "plural": "bossen",
+      "aliases": [
+        "bos",
+        "bosje",
+        "bosjes",
+        "bossen"
+      ],
+      "dimension": "OTHER",
+      "factor": null
+    },
+    {
+      "id": "takje",
+      "singular": "takje",
+      "plural": "takjes",
+      "aliases": [
+        "takje",
+        "takjes",
+        "tak",
+        "takken"
+      ],
+      "dimension": "OTHER",
+      "factor": null
+    },
+    {
+      "id": "blaadje",
+      "singular": "blaadje",
+      "plural": "blaadjes",
+      "aliases": [
+        "blaadje",
+        "blaadjes",
+        "blad",
+        "bladeren"
+      ],
+      "dimension": "OTHER",
+      "factor": null
+    },
+    {
+      "id": "stengel",
+      "singular": "stengel",
+      "plural": "stengels",
+      "aliases": [
+        "stengel",
+        "stengels"
+      ],
+      "dimension": "OTHER",
+      "factor": null
+    },
+    {
+      "id": "handvol",
+      "singular": "handvol",
+      "plural": "handvol",
+      "aliases": [
+        "handvol",
+        "handjevol",
+        "handje",
+        "handjes"
+      ],
+      "dimension": "OTHER",
+      "factor": null
+    },
+    {
+      "id": "blik",
+      "singular": "blik",
+      "plural": "blikken",
+      "aliases": [
+        "blik",
+        "blikje",
+        "blikjes",
+        "blikken"
+      ],
+      "dimension": "OTHER",
+      "factor": null
+    },
+    {
+      "id": "pot",
+      "singular": "pot",
+      "plural": "potten",
+      "aliases": [
+        "pot",
+        "potje",
+        "potjes",
+        "potten"
+      ],
+      "dimension": "OTHER",
+      "factor": null
+    },
+    {
+      "id": "pak",
+      "singular": "pak",
+      "plural": "pakken",
+      "aliases": [
+        "pak",
+        "pakje",
+        "pakjes",
+        "pakken"
+      ],
+      "dimension": "OTHER",
+      "factor": null
+    },
+    {
+      "id": "zak",
+      "singular": "zak",
+      "plural": "zakken",
+      "aliases": [
+        "zak",
+        "zakje",
+        "zakjes",
+        "zakken"
+      ],
+      "dimension": "OTHER",
+      "factor": null
+    },
+    {
+      "id": "plak",
+      "singular": "plak",
+      "plural": "plakken",
+      "aliases": [
+        "plak",
+        "plakje",
+        "plakjes",
+        "plakken"
+      ],
+      "dimension": "OTHER",
+      "factor": null
+    },
+    {
+      "id": "snee",
+      "singular": "snee",
+      "plural": "sneetjes",
+      "aliases": [
+        "snee",
+        "sneetje",
+        "sneetjes",
+        "sneden"
+      ],
+      "dimension": "OTHER",
+      "factor": null
+    },
+    {
+      "id": "scheut",
+      "singular": "scheut",
+      "plural": "scheutjes",
+      "aliases": [
+        "scheut",
+        "scheutje",
+        "scheutjes"
+      ],
+      "dimension": "OTHER",
+      "factor": null
+    },
+    {
+      "id": "krop",
+      "singular": "krop",
+      "plural": "kroppen",
+      "aliases": [
+        "krop",
+        "kropje",
+        "kroppen"
+      ],
+      "dimension": "OTHER",
+      "factor": null
+    },
+    {
+      "id": "naar-smaak",
+      "singular": "naar smaak",
+      "plural": "naar smaak",
+      "aliases": [
+        "naar smaak"
+      ],
+      "dimension": "OTHER",
+      "factor": null
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "units.schema.json",
+  "title": "Mise measurement units",
+  "description": "Units for structured ingredients (spec §11.2). 'aliases' are what the local parser recognises after a quantity (lowercase, matched as whole words). 'factor' converts to the base unit of the dimension (g, ml, stuks); OTHER units are never converted, so their factor is null.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "units"],
+  "properties": {
+    "schemaVersion": { "type": "integer", "minimum": 1 },
+    "units": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "singular", "plural", "aliases", "dimension", "factor"],
+        "properties": {
+          "id": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+          "singular": { "type": "string", "minLength": 1 },
+          "plural": { "type": "string", "minLength": 1 },
+          "aliases": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": { "type": "string", "minLength": 1, "pattern": "^[a-zà-ÿ.]+( [a-zà-ÿ.]+)*$" }
+          },
+          "dimension": { "enum": ["MASS", "VOLUME", "COUNT", "OTHER"] },
+          "factor": { "type": ["number", "null"] }
+        }
+      }
+    }
+  }
+}

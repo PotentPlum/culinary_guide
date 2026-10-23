@@ -9,6 +9,7 @@ import nl.potentplum.mise.content.model.ArchetypesFile
 import nl.potentplum.mise.content.model.DisciplinesFile
 import nl.potentplum.mise.content.model.FacetsFile
 import nl.potentplum.mise.content.model.TechniquesFile
+import nl.potentplum.mise.content.model.UnitsFile
 import nl.potentplum.mise.content.model.VegetablesFile
 
 class UnsupportedContentException(
@@ -36,6 +37,7 @@ class ContentParser(
             facets = decode(read, FACETS, FacetsFile.serializer()).facets,
             disciplines = decode(read, DISCIPLINES, DisciplinesFile.serializer()).disciplines,
             archetypes = decode(read, ARCHETYPES, ArchetypesFile.serializer()).archetypes,
+            units = decode(read, UNITS, UnitsFile.serializer()).units,
         )
 
     private fun <T> decode(
@@ -64,5 +66,6 @@ class ContentParser(
         const val FACETS = "facets.json"
         const val DISCIPLINES = "disciplines.json"
         const val ARCHETYPES = "archetypes.json"
+        const val UNITS = "units.json"
     }
 }
