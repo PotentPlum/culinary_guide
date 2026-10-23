@@ -1,5 +1,6 @@
 package nl.potentplum.mise.feature.quests
 
+import androidx.compose.ui.semantics.SemanticsActions
 import androidx.compose.ui.test.assertIsNotEnabled
 import androidx.compose.ui.test.hasClickAction
 import androidx.compose.ui.test.hasScrollToNodeAction
@@ -9,8 +10,8 @@ import androidx.compose.ui.test.onAllNodesWithText
 import androidx.compose.ui.test.onFirst
 import androidx.compose.ui.test.onNodeWithContentDescription
 import androidx.compose.ui.test.performClick
-import androidx.compose.ui.test.performScrollTo
 import androidx.compose.ui.test.performScrollToNode
+import androidx.compose.ui.test.performSemanticsAction
 import dagger.hilt.android.testing.HiltAndroidRule
 import dagger.hilt.android.testing.HiltAndroidTest
 import dagger.hilt.android.testing.HiltTestApplication
@@ -21,6 +22,8 @@ import nl.potentplum.mise.HiltTestActivity
 import nl.potentplum.mise.MiseAppShell
 import nl.potentplum.mise.claude.ContentPart
 import nl.potentplum.mise.core.designsystem.MiseTheme
+import nl.potentplum.mise.data.db.dao.AttemptDao
+import nl.potentplum.mise.data.db.entity.QuestStatus
 import nl.potentplum.mise.data.repo.QuestRepository
 import nl.potentplum.mise.data.repo.RecipeRepository
 import nl.potentplum.mise.data.settings.SettingsRepository
@@ -63,6 +66,9 @@ class QuestFlowsTest {
     @Inject
     lateinit var settings: SettingsRepository
 
+    @Inject
+    lateinit var attempts: AttemptDao
+
     @Before
     fun setUp() {
         hilt.inject()
@@ -86,10 +92,10 @@ class QuestFlowsTest {
     private fun saveKey() = runBlocking { secrets.saveClaudeKey("sk-ant-test") }
 
     private fun click(text: String) {
-        compose.reveal(hasText(text) and hasClickAction())
-        val node = compose.onAllNodes(hasText(text) and hasClickAction()).onFirst()
-        runCatching { node.performScrollTo() }
-        node.performClick()
+        val matcher = hasText(text) and hasClickAction()
+        compose.reveal(matcher)
+        // The click action, not a touch: a lazy item can recompose or sit half under the top bar between finding and tapping.
+        compose.onAllNodes(matcher).onFirst().performSemanticsAction(SemanticsActions.OnClick)
     }
 
     private fun waitForText(text: String) = compose.reveal(text)
@@ -190,5 +196,22 @@ class QuestFlowsTest {
         compose.waitUntil(5_000) { runBlocking { quests.observeAll().first() }.isNotEmpty() }
         scrollHistoryTo("Geroosterde pastinaak")
         assertEquals(1, runBlocking { quests.observeAll().first() }.size)
+    }
+
+    @Test
+    fun `Quest voltooid opens the evaluation and logging completes the quest`() {
+        saveKey()
+        click("Geef quest")
+        waitForText("Start koken")
+        click("Quest voltooid")
+        waitForText("Hoe ging het?")
+        click("Top")
+        click("Vastleggen")
+        waitForText("Goed gedaan!")
+        val quest = runBlocking { quests.observeAll().first() }.single()
+        assertEquals(QuestStatus.COMPLETED, quest.status)
+        val attempt = runBlocking { attempts.all() }.single()
+        assertEquals(quest.id, attempt.questId)
+        assertEquals(10, attempt.score)
     }
 }

@@ -161,6 +161,18 @@ class ImageStore
             return target.absolutePath
         }
 
+        /** Moves a staged photo (camera or picker, in the import folder) to the journal; null when it is not an image. */
+        suspend fun saveJournalPhoto(
+            attemptId: String,
+            stagedPath: String,
+        ): String? =
+            withContext(dispatcher) {
+                val staged = File(stagedPath)
+                val stored = runCatching { store(journalPhoto(attemptId), staged.readBytes()) }.getOrNull()
+                staged.delete()
+                stored
+            }
+
         fun deleteRecipeImage(recipeId: String) {
             recipeImage(recipeId).delete()
         }

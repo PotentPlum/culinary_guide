@@ -136,7 +136,8 @@ The web app keeps running from its last Vercel deployment until you turn it off,
       Its own screen (from the card, Dagboek › Quests, groente- and techniekdetail), so there is nothing to collapse.
 - [x] Generation → `quest` + hidden recipe in one transaction; result screen with technique chips and the actions Start koken / Quest voltooid / Andere quest (+ Bewaar recept in ⋮).
       Start koken and Quest voltooid open the cook-mode and evaluation routes, which are still placeholders (Cooking section).
-- [ ] Completion from any entry point: an attempt on the quest's recipe sets `questId` and COMPLETED (Quest voltooid, Klaar met koken, cook-mode exit prompt). Unit test for each path.
+- [x] Completion from any entry point: an attempt on the quest's recipe sets `questId` and COMPLETED (Quest voltooid, Klaar met koken, cook-mode exit prompt). Unit test for each path.
+  _Done: `AttemptRepository.log` looks the quest up by recipe, so every path that logs an attempt completes it. Tested via Quest voltooid (`QuestFlowsTest`) and Klaar met koken (`CookFlowsTest`); the exit prompt opens the same sheet._
 - [x] Quest history as **Dagboek › Quests** (spec §6.13) with filters (open/completed, type, difficulty), reopen, retry with the same parameters, delete, Nieuwe quest.
       Delete offers Ongedaan maken. Tijdlijn and Inzichten are still placeholders (Dagboek section).
 - [ ] Offline / no-key state on the Vandaag card: explanation, Sleutel toevoegen, Verbergen (`showQuestCard`, restored when a key is added or in Instellingen).
@@ -151,12 +152,18 @@ The web app keeps running from its last Vercel deployment until you turn it off,
   _Partly: ranking runs on `Dispatchers.Default`, only when the library or the day changes (1,000 recipes rank in < 250 ms in a unit test). Cold start < 1.5 s still needs a device._
 
 ### Cooking (spec §6.10, §6.12)
-- [ ] Cook mode (spec §6.10): step pager with progress bar, ingredients sheet (portrait) / two panes (landscape) with scaled amounts, keep screen on, technique info buttons, "Klaar met koken" on the last page, "Heb je dit gekookt?" on exit **only after the last step was reached**.
-- [ ] Cook session (spec §7.3): persisted step, servings, ingredient ticks (shared with recipe detail) and timers; "Verder bij stap n" on the recipe; cleared on an attempt or after 24 hours. Acceptance: leave at step 3, kill the process, reopen → step 3.
-- [ ] `DurationDetector` (spec §11.3) + timer chips; unit tests with Dutch and English steps, ranges, and false-positive guards (°C, g).
-- [ ] `TimerChip` strip in cook mode: remaining time computed from the recorded start ("Stap 4 · nog ~9 min" → "klaar"); tapping a running chip opens `AlarmClock.ACTION_SHOW_TIMERS`.
+- [x] Cook mode (spec §6.10): step pager with progress bar, ingredients sheet (portrait) / two panes (landscape) with scaled amounts, keep screen on, technique info buttons, "Klaar met koken" on the last page, "Heb je dit gekookt?" on exit **only after the last step was reached**.
+  _Done: `feature/cook/CookScreen` + `CookViewModel`; technique buttons come from `TechniqueMentions` (imperative stems). The bottom bar is hidden in cook mode. `CookFlowsTest`._
+- [x] Cook session (spec §7.3): persisted step, servings, ingredient ticks (shared with recipe detail) and timers; "Verder bij stap n" on the recipe; cleared on an attempt or after 24 hours. Acceptance: leave at step 3, kill the process, reopen → step 3.
+  _Done: leaving at step 3 and reopening resumes at step 3 through a fresh ViewModel reading the DataStore session (`CookFlowsTest`); a real process kill is still worth a check on the phone._
+- [x] `DurationDetector` (spec §11.3) + timer chips; unit tests with Dutch and English steps, ranges, and false-positive guards (°C, g).
+  _Done: `domain/DurationDetector.kt`, `DurationDetectorTest`._
+- [x] `TimerChip` strip in cook mode: remaining time computed from the recorded start ("Stap 4 · nog ~9 min" → "klaar"); tapping a running chip opens `AlarmClock.ACTION_SHOW_TIMERS`.
+  _Done: chips count down every 15 s from the recorded start._
 - [ ] `ClockTimerLauncher`: `ACTION_SET_TIMER` with length, message and skip-UI; `SET_ALARM` permission; a `<queries>` entry; a snackbar; hide chips + a one-time hint when unsupported. **[owner]** Test on your phone's Clock app.
-- [ ] Evaluation sheet (spec §6.12): two `ScoreScale`s (Mislukt · Matig · Oké · Goed · Top → 2/4/6/8/10; legacy values shown as the nearest step), notes, **photo**, date → `attempt` with snapshots of techniques, cuisines, `vegIds` and `peakVegIds`; "Zonder cijfers vastleggen" logs without scores; dismissing logs nothing; clears the cook session and Vanavond pin.
+  _Code done (`platform/ClockTimerLauncher.kt`, manifest permission and `<queries>`, snackbar, hidden chips + one-time hint, faked in tests). Open until the owner checks it with the phone's Clock app._
+- [x] Evaluation sheet (spec §6.12): two `ScoreScale`s (Mislukt · Matig · Oké · Goed · Top → 2/4/6/8/10; legacy values shown as the nearest step), notes, **photo**, date → `attempt` with snapshots of techniques, cuisines, `vegIds` and `peakVegIds`; "Zonder cijfers vastleggen" logs without scores; dismissing logs nothing; clears the cook session and Vanavond pin.
+  _Done: `EvaluationSheet` hosted by recipe detail, cook mode and the quest screen (the `EvaluationRoute` placeholder is gone); photos are staged in the import folder and moved to `files/journal/`._
 
 ### Dagboek (spec §6.13, §12)
 - [ ] `JournalAggregator` port (3 disciplines). Acceptance: the applicable cases from `git show cf3ec39:web/lib/profileAggregation.test.ts` pass, plus the seasonal metric (season boundaries, Dec/Jan wrap) and "nog te proberen" (PEAK this month, not cooked this season).

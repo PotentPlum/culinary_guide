@@ -106,10 +106,6 @@ data class PhotoImportRoute(
 @Serializable
 data class CookRoute(
     val recipeId: String,
-)
-
-/** The evaluation sheet, "Gekookt" (spec §6.12). */
-@Serializable
-data class EvaluationRoute(
-    val recipeId: String,
+    /** The servings chosen on recipe detail; an open session's servings win. */
+    val servings: Int? = null,
 )

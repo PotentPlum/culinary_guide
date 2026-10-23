@@ -34,6 +34,9 @@ import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.saveable.rememberSaveable
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
@@ -66,14 +69,14 @@ import nl.potentplum.mise.data.db.entity.AttemptEntity
 import nl.potentplum.mise.data.db.entity.EnrichState
 import nl.potentplum.mise.data.repo.Recipe
 import nl.potentplum.mise.domain.ScoreSteps
+import nl.potentplum.mise.feature.cook.EvaluationSheet
 
 /** Recept — detail (spec §6.8), in cook-first order, with the sticky Kookmodus / Gekookt bar. */
 @Composable
 fun RecipeDetailScreen(
     onBack: () -> Unit,
     onEdit: (String) -> Unit,
-    onCook: (String) -> Unit,
-    onCooked: (String) -> Unit,
+    onCook: (recipeId: String, servings: Int?) -> Unit,
     onTechnique: (String) -> Unit,
     onOverflowItem: (OverflowItem) -> Unit,
     viewModel: RecipeDetailViewModel = hiltViewModel(),
@@ -83,6 +86,7 @@ fun RecipeDetailScreen(
     val context = LocalContext.current
     val resources = LocalResources.current
     val recipe = state.recipe
+    var evaluating by rememberSaveable { mutableStateOf(false) }
     LaunchedEffect(viewModel) {
         viewModel.events.collect { event ->
             when (event) {
@@ -150,7 +154,11 @@ fun RecipeDetailScreen(
         },
         bottomBar = {
             if (recipe != null) {
-                RecipeActionBar(resumeStep = state.resumeStep, onCook = { onCook(recipe.id) }, onCooked = { onCooked(recipe.id) })
+                RecipeActionBar(
+                    resumeStep = state.resumeStep,
+                    onCook = { onCook(recipe.id, state.servings) },
+                    onCooked = { evaluating = true },
+                )
             }
         },
     ) { padding ->
@@ -180,6 +188,9 @@ fun RecipeDetailScreen(
                 }
             }
         }
+    }
+    if (evaluating && recipe != null) {
+        EvaluationSheet(recipeId = recipe.id, onDismiss = { evaluating = false }, onLogged = { evaluating = false })
     }
 }
 

@@ -22,6 +22,9 @@ import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.saveable.rememberSaveable
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
@@ -42,6 +45,7 @@ import nl.potentplum.mise.core.designsystem.component.OverflowItem
 import nl.potentplum.mise.core.ui.claudeErrorMessage
 import nl.potentplum.mise.data.db.entity.QuestEntity
 import nl.potentplum.mise.data.db.entity.QuestStatus
+import nl.potentplum.mise.feature.cook.EvaluationSheet
 import nl.potentplum.mise.feature.recipes.RecipeBody
 import nl.potentplum.mise.feature.recipes.RecipeDetailUiState
 import nl.potentplum.mise.feature.recipes.Section
@@ -51,7 +55,6 @@ import nl.potentplum.mise.feature.recipes.Section
 fun QuestScreen(
     onBack: () -> Unit,
     onCook: (recipeId: String) -> Unit,
-    onCompleted: (recipeId: String) -> Unit,
     onReplaced: (questId: String) -> Unit,
     onTechnique: (String) -> Unit,
     onOverflowItem: (OverflowItem) -> Unit,
@@ -70,6 +73,7 @@ fun QuestScreen(
     }
     val quest = state.quest
     val recipe = state.recipe
+    var evaluating by rememberSaveable { mutableStateOf(false) }
     val saveEntry = MenuEntry(stringResource(R.string.quest_save_recipe), viewModel::saveToLibrary)
     Scaffold(
         topBar = {
@@ -81,7 +85,7 @@ fun QuestScreen(
             )
         },
         bottomBar = {
-            if (quest != null && recipe != null) QuestActionBar(state, viewModel, { onCook(recipe.id) }, { onCompleted(recipe.id) })
+            if (quest != null && recipe != null) QuestActionBar(state, viewModel, { onCook(recipe.id) }, { evaluating = true })
         },
     ) { padding ->
         Box(
@@ -126,6 +130,9 @@ fun QuestScreen(
                 }
             }
         }
+    }
+    if (evaluating && recipe != null) {
+        EvaluationSheet(recipeId = recipe.id, onDismiss = { evaluating = false }, onLogged = { evaluating = false })
     }
 }
 

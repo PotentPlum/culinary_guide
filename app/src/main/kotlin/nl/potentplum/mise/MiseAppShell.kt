@@ -58,7 +58,6 @@ import nl.potentplum.mise.core.designsystem.component.MiseSnackbar
 import nl.potentplum.mise.core.designsystem.component.OverflowItem
 import nl.potentplum.mise.core.navigation.AboutRoute
 import nl.potentplum.mise.core.navigation.CookRoute
-import nl.potentplum.mise.core.navigation.EvaluationRoute
 import nl.potentplum.mise.core.navigation.ImportLinkRoute
 import nl.potentplum.mise.core.navigation.JournalGraph
 import nl.potentplum.mise.core.navigation.JournalRoute
@@ -80,6 +79,7 @@ import nl.potentplum.mise.core.navigation.TodayGraph
 import nl.potentplum.mise.core.navigation.TodayRoute
 import nl.potentplum.mise.core.navigation.VegetableRoute
 import nl.potentplum.mise.feature.PlaceholderScreen
+import nl.potentplum.mise.feature.cook.CookScreen
 import nl.potentplum.mise.feature.journal.JournalScreen
 import nl.potentplum.mise.feature.journal.JournalSegment
 import nl.potentplum.mise.feature.quests.QuestRefineScreen
@@ -165,7 +165,11 @@ fun MiseAppShell(
     CompositionLocalProvider(LocalMiseSnackbar provides snackbar) {
         Scaffold(
             contentWindowInsets = WindowInsets(0),
-            bottomBar = { MiseNavigationBar(navController, uncheckedShoppingCount) },
+            bottomBar = {
+                // Kookmodus is full screen (spec §6.10).
+                val entry by navController.currentBackStackEntryAsState()
+                if (entry?.destination?.hasRoute<CookRoute>() != true) MiseNavigationBar(navController, uncheckedShoppingCount)
+            },
             snackbarHost = { SnackbarHost(snackbarHost) },
         ) { padding ->
             NavHost(
@@ -277,7 +281,6 @@ fun MiseAppShell(
                     QuestScreen(
                         onBack = onBack,
                         onCook = { navController.navigate(CookRoute(it)) },
-                        onCompleted = { navController.navigate(EvaluationRoute(it)) },
                         onReplaced = { id -> navController.navigate(QuestRoute(id)) { popUpTo<QuestRoute> { inclusive = true } } },
                         onTechnique = onTechnique,
                         onOverflowItem = onOverflowItem,
@@ -287,8 +290,7 @@ fun MiseAppShell(
                     RecipeDetailScreen(
                         onBack = onBack,
                         onEdit = { navController.navigate(RecipeEditRoute(it)) },
-                        onCook = { navController.navigate(CookRoute(it)) },
-                        onCooked = { navController.navigate(EvaluationRoute(it)) },
+                        onCook = { id, servings -> navController.navigate(CookRoute(id, servings)) },
                         onTechnique = onTechnique,
                         onOverflowItem = onOverflowItem,
                     )
@@ -340,14 +342,7 @@ fun MiseAppShell(
                     )
                 }
                 composable<CookRoute> {
-                    PlaceholderScreen(
-                        title = stringResource(R.string.recipes_cooking_mode),
-                        onOverflowItem = onOverflowItem,
-                        onBack = onBack,
-                    )
-                }
-                composable<EvaluationRoute> {
-                    PlaceholderScreen(title = stringResource(R.string.evaluation_title), onOverflowItem = onOverflowItem, onBack = onBack)
+                    CookScreen(onClose = onBack, onLogged = onBack)
                 }
             }
         }
