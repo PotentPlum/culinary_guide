@@ -64,3 +64,43 @@ data class QuestRefineRoute(
     val vegId: String? = null,
     val techniqueId: String? = null,
 )
+
+@Serializable
+data class RecipeRoute(
+    val id: String,
+)
+
+/**
+ * Edit mode of recipe detail; a null [id] starts an empty recipe ("Zelf invoeren"). With [draft], [id] names an unsaved
+ * import in [nl.potentplum.mise.data.repo.RecipeDrafts]; [highlightMissing] marks a missing title, ingredients or steps.
+ */
+@Serializable
+data class RecipeEditRoute(
+    val id: String? = null,
+    val draft: Boolean = false,
+    val highlightMissing: Boolean = false,
+)
+
+/** Import by link (spec §6.9); [url] is prefilled from a share or the clipboard. */
+@Serializable
+data class ImportLinkRoute(
+    val url: String? = null,
+)
+
+/** Import from cookbook photos (spec §6.9). */
+@Serializable
+data class PhotoImportRoute(
+    val camera: Boolean = false,
+)
+
+/** Kookmodus for a recipe (spec §6.10). */
+@Serializable
+data class CookRoute(
+    val recipeId: String,
+)
+
+/** The evaluation sheet, "Gekookt" (spec §6.12). */
+@Serializable
+data class EvaluationRoute(
+    val recipeId: String,
+)

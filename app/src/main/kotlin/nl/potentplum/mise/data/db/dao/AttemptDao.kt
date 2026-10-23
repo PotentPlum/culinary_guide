@@ -36,6 +36,15 @@ interface AttemptDao {
     )
     fun observeCookedStats(): Flow<List<CookedStats>>
 
+    @Query("SELECT id FROM attempt WHERE recipeId = :recipeId")
+    suspend fun idsForRecipe(recipeId: String): List<String>
+
+    @Query("UPDATE attempt SET recipeId = :recipeId WHERE id IN (:ids)")
+    suspend fun relink(
+        ids: List<String>,
+        recipeId: String,
+    )
+
     @Query("DELETE FROM attempt WHERE id = :id")
     suspend fun delete(id: String)
 }

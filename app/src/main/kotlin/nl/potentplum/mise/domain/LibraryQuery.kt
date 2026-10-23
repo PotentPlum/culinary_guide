@@ -1,5 +1,7 @@
 package nl.potentplum.mise.domain
 
+import kotlinx.serialization.Serializable
+
 /** A library recipe with what the list, search and filters need (spec §6.7). */
 data class LibraryItem(
     val id: String,
@@ -23,6 +25,7 @@ data class LibraryItem(
 enum class LibrarySortOrder { RECENTLY_ADDED, ALPHABETICAL, RECENTLY_COOKED }
 
 /** Search, quick filters ("Seizoen nu", Favorieten, Nooit gekookt, dish type) and the "Meer filters" sheet. */
+@Serializable
 data class LibraryFilter(
     val query: String = "",
     val seasonNow: Boolean = false,

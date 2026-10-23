@@ -66,6 +66,11 @@ object RecipeUrls {
     fun upgrade(url: HttpUrl): HttpUrl = if (url.scheme == "http") url.newBuilder().scheme("https").build() else url
 }
 
+/** Where pages come from; UI tests swap in a fake. */
+interface PageFetcher {
+    suspend fun fetch(input: String): FetchedPage
+}
+
 /**
  * Downloads a recipe page (spec §10): https only, at most 5 redirects, browser-like headers, 20 s timeouts, the body
  * capped at 5 MB while streaming, and the charset from the headers or `<meta charset>`.
@@ -75,7 +80,7 @@ class RecipeFetcher(
     private val dispatcher: CoroutineDispatcher,
     /** Tests run against a plain-http MockWebServer. */
     private val upgradeToHttps: Boolean = true,
-) {
+) : PageFetcher {
     @Inject
     constructor(
         client: OkHttpClient,
@@ -91,7 +96,7 @@ class RecipeFetcher(
             .readTimeout(TIMEOUT_SECONDS, TimeUnit.SECONDS)
             .build()
 
-    suspend fun fetch(input: String): FetchedPage {
+    override suspend fun fetch(input: String): FetchedPage {
         var url =
             (if (upgradeToHttps) RecipeUrls.normalize(input) else input.trim().toHttpUrlOrNull())
                 ?: throw RecipeImportError.InvalidUrl

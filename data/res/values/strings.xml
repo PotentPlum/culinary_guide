@@ -308,6 +308,77 @@
     <string name="recipes_error_http">De website gaf een foutmelding (HTTP %1$d).</string>
     <string name="recipes_error_too_large">Deze pagina is te groot om in te lezen.</string>
     <string name="recipes_error_no_recipe">Op deze pagina staat geen recept dat Mise kan lezen.</string>
+    <string name="recipes_filter_season_now">Seizoen nu</string>
+    <string name="recipes_filter_favorites">Favorieten</string>
+    <string name="recipes_filter_never_cooked">Nooit gekookt</string>
+    <string name="recipes_more_filters">Meer filters</string>
+    <string name="recipes_more_filters_count">Meer filters (%1$d)</string>
+    <string name="recipes_filter_technique">Techniek</string>
+    <string name="recipes_filter_any">Alle</string>
+    <string name="recipes_sort_recent">Laatst toegevoegd</string>
+    <string name="recipes_sort_cooked">Laatst gekookt</string>
+    <plurals name="recipes_cooked_count">
+        <item quantity="one">%1$d× gekookt</item>
+        <item quantity="other">%1$d× gekookt</item>
+    </plurals>
+    <string name="recipes_add">Recept toevoegen</string>
+    <string name="recipes_add_link">Link plakken</string>
+    <string name="recipes_add_camera">Foto\'s maken</string>
+    <string name="recipes_add_gallery">Foto\'s kiezen</string>
+    <string name="recipes_add_manual">Zelf invoeren</string>
+    <string name="recipes_image_placeholder">Geen foto</string>
+    <string name="common_done">Klaar</string>
+    <string name="import_title">Recept via link</string>
+    <string name="common_cancel">Annuleren</string>
+    <string name="import_duplicate_title">Dit recept heb je al</string>
+    <string name="import_duplicate_open">Openen</string>
+    <string name="import_duplicate_copy">Toch importeren</string>
+    <!-- P1: recipe detail. -->
+    <string name="recipe_favorite_add">Als favoriet bewaren</string>
+    <string name="recipe_favorite_remove">Niet meer favoriet</string>
+    <string name="recipe_menu_share">Delen</string>
+    <string name="recipe_deleted">Recept verwijderd</string>
+    <string name="common_undo">Ongedaan maken</string>
+    <string name="recipe_pinned">Staat op Vanavond</string>
+    <string name="recipe_techniques_title">Technieken in dit recept</string>
+    <string name="recipe_extra_title">Extra</string>
+    <string name="recipe_notes_title">Notities</string>
+    <string name="recipe_never_cooked">Nog niet gekookt</string>
+    <string name="recipe_cooked_summary">%1$s · laatst op %2$s</string>
+    <string name="recipe_attempts_title">Eerder gekookt</string>
+    <string name="recipe_attempt_scores">%1$s: %2$s · %3$s: %4$s</string>
+    <string name="recipe_attempt_score">%1$s: %2$s</string>
+    <string name="recipe_servings_value">%1$d porties</string>
+    <string name="recipe_share_chooser">Recept delen</string>
+    <plurals name="shopping_added">
+        <item quantity="one">%1$d ingrediënt op je lijst gezet</item>
+        <item quantity="other">%1$d ingrediënten op je lijst gezet</item>
+    </plurals>
+    <string name="recipe_author">Recept van %1$s</string>
+    <string name="recipe_extra_field">%1$s: %2$s</string>
+    <!-- P1: recipe edit mode. -->
+    <string name="edit_new_title">Nieuw recept</string>
+    <string name="edit_title_required">Geef het recept een naam.</string>
+    <string name="edit_source_url">Link naar de bron</string>
+    <string name="edit_add_group">Groep toevoegen</string>
+    <string name="edit_group_name">Kopje (optioneel), bijv. Voor de saus</string>
+    <string name="edit_delete_group">Groep verwijderen</string>
+    <string name="edit_move_up">Omhoog</string>
+    <string name="edit_move_down">Omlaag</string>
+    <string name="edit_drag_handle">Slepen om te verplaatsen</string>
+    <string name="edit_extra_add">Veld toevoegen</string>
+    <string name="edit_extra_label">Naam van het veld</string>
+    <string name="edit_extra_value">Waarde</string>
+    <string name="edit_extra_delete">Veld verwijderen</string>
+    <string name="edit_image_add">Foto toevoegen</string>
+    <string name="edit_image_replace">Foto vervangen</string>
+    <string name="edit_image_remove">Foto verwijderen</string>
+    <string name="edit_techniques_pick">Technieken kiezen</string>
+    <string name="edit_discard_title">Wijzigingen weggooien?</string>
+    <string name="edit_discard_body">Je aanpassingen aan dit recept worden niet bewaard.</string>
+    <string name="edit_discard_confirm">Weggooien</string>
+    <string name="edit_keep_editing">Verder bewerken</string>
+    <string name="edit_missing_parts">Vul de ontbrekende delen aan.</string>
     <string-array name="score_steps">
         <item>Mislukt</item>
         <item>Matig</item>

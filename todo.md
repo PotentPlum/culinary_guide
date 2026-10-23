@@ -102,15 +102,17 @@ The web app keeps running from its last Vercel deployment until you turn it off,
 - [x] Mapping to Room: default section names → untitled groups, metric text wins, Schema.org extras → `sourceMeta`, image download/downscale.
 - [x] `IngredientParser` (local, spec §11.2): table-driven tests for fractions, `1/2`, comma decimals, ranges, unit aliases, notes after a comma, pack sizes ("1 blik à 400 g tomaten" → note), unparseable lines.
 - [x] `IngredientScaler` + Dutch formatting (spec §11.2): rounding rules per dimension, g→kg / ml→l switch, singular/plural labels, the text fallback for unparsed lines.
-- [ ] `RecipeRepository`: full graph read and write in one transaction, search, quick filters + "Meer filters", 3 sort orders, cooked count via `attempt`, derived prep-time bucket.
-- [ ] Library screen (spec §6.7): cards with cooked count and in-season chips, quick filter chips, the "Meer filters" sheet, empty states, the FAB sheet.
-- [ ] Recipe detail (spec §6.8): cook-first section order, sticky `RecipeActionBar` (Kookmodus / "Verder bij stap n" + Gekookt), favourite in the top bar, ⋮ with Dit kook ik vanavond / Bewerken / Delen / Verwijderen, structured ingredient rendering + check-off shared with the cook session, servings scaling, "Technieken in dit recept", extra fields, tags, notes, attempts with photos. No metadata display.
-- [ ] **In-place edit mode** (spec §6.8): groups (add/rename/delete/drag-reorder), ingredient lines (re-parsed on save; MANUAL parses kept), steps, extra fields, tags, image, notes; unsaved-changes guard.
-- [ ] Import by pasted link (spec §6.9) with a read-view preview (Bewaren / Aanpassen; unparsed lines marked; edit mode only when title, ingredients or steps are missing) and duplicate detection; manual entry ("Zelf invoeren") opens in edit mode.
-- [ ] Share target `ACTION_SEND text/plain` → URL import (extract the first URL from the shared text; tested with real Chrome and Instagram share text). Moved from P2: sharing is the main way in (spec §3, §6.9).
+- [x] `RecipeRepository`: full graph read and write in one transaction, search, quick filters + "Meer filters", 3 sort orders, cooked count via `attempt`, derived prep-time bucket.
+- [x] Library screen (spec §6.7): cards with cooked count and in-season chips, quick filter chips, the "Meer filters" sheet, empty states, the FAB sheet.
+- [x] Recipe detail (spec §6.8): cook-first section order, sticky `RecipeActionBar` (Kookmodus / "Verder bij stap n" + Gekookt), favourite in the top bar, ⋮ with Dit kook ik vanavond / Bewerken / Delen / Verwijderen, structured ingredient rendering + check-off shared with the cook session, servings scaling, "Technieken in dit recept", extra fields, tags, notes, attempts with photos. No metadata display.
+- [x] **In-place edit mode** (spec §6.8): groups (add/rename/delete/drag-reorder), ingredient lines (re-parsed on save; MANUAL parses kept), steps, extra fields, tags, image, notes; unsaved-changes guard.
+- [x] Import by pasted link (spec §6.9) with a read-view preview (Bewaren / Aanpassen; unparsed lines marked; edit mode only when title, ingredients or steps are missing) and duplicate detection; manual entry ("Zelf invoeren") opens in edit mode.
+- [x] Share target `ACTION_SEND text/plain` → URL import (extract the first URL from the shared text; tested with real Chrome and Instagram share text). Moved from P2: sharing is the main way in (spec §3, §6.9).
+      Unit-tested with Chrome- and Instagram-style share text; **[owner]** check real shares on the phone.
 - [ ] Share target `ACTION_SEND(_MULTIPLE) image/*` → photo import (moved from P2).
-- [ ] `SeasonalMatcher` (spec §11.4) with tests for plurals, " / " names, and structured versus unparsed items; "Seizoen nu" filter.
-- [ ] Delete with undo; "Delen" as text.
+      The intent filters and routing exist; the photo import itself comes with the Claude section.
+- [x] `SeasonalMatcher` (spec §11.4) with tests for plurals, " / " names, and structured versus unparsed items; "Seizoen nu" filter.
+- [x] Delete with undo; "Delen" as text.
 
 ### Claude (spec §8)
 - [ ] `ClaudeClient` (the implementation chosen in P0), retry policy, error mapping, refusal / `max_tokens` handling, refusal fallback header for Sonnet/Opus, Kwaliteit → model mapping.

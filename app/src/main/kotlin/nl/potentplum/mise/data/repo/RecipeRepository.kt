@@ -17,6 +17,11 @@ import nl.potentplum.mise.domain.SeasonalMatcher
 import javax.inject.Inject
 import javax.inject.Singleton
 
+data class DeletedRecipe(
+    val recipe: Recipe,
+    val attemptIds: List<String>,
+)
+
 /** Recipes: the whole graph read and written in one transaction, and the library as [LibraryItem]s (spec §6.7, §7.2). */
 @Singleton
 class RecipeRepository
@@ -55,6 +60,28 @@ class RecipeRepository
 
         /** Attempts keep their snapshots; their `recipeId` becomes null (spec §7.2). */
         suspend fun delete(id: String) = recipeDao.delete(id)
+
+        /** Deletes the recipe but remembers it and its attempts, so [restore] can undo it exactly. */
+        suspend fun deleteForUndo(id: String): DeletedRecipe? {
+            val recipe = get(id) ?: return null
+            val attemptIds = attemptDao.idsForRecipe(id)
+            recipeDao.delete(id)
+            return DeletedRecipe(recipe, attemptIds)
+        }
+
+        suspend fun restore(deleted: DeletedRecipe) {
+            val rows = RecipeRows(deleted.recipe)
+            recipeDao.replaceGraph(
+                rows.recipe,
+                rows.ingredientGroups,
+                rows.ingredients,
+                rows.stepGroups,
+                rows.steps,
+                rows.extraFields,
+                rows.tags,
+            )
+            attemptDao.relink(deleted.attemptIds, deleted.recipe.id)
+        }
 
         /** Duplicate detection: the same canonical URL already in the library (spec §6.9). */
         suspend fun findInLibraryByUrl(url: String): String? = recipeDao.findInLibraryBySourceUrl(url)?.id

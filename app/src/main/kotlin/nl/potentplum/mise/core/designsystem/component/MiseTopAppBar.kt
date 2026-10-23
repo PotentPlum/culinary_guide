@@ -6,6 +6,7 @@ import androidx.compose.material.icons.outlined.MoreVert
 import androidx.compose.material3.DropdownMenu
 import androidx.compose.material3.DropdownMenuItem
 import androidx.compose.material3.ExperimentalMaterial3Api
+import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
@@ -26,6 +27,12 @@ import nl.potentplum.mise.core.designsystem.MiseTheme
 /** The overflow menu every top app bar carries (spec §6.1). */
 enum class OverflowItem { Techniques, Settings, About }
 
+/** A screen's own ⋮ entry, listed above the app-wide ones. */
+data class MenuEntry(
+    val label: String,
+    val onClick: () -> Unit,
+)
+
 /** A top app bar with an optional back arrow, screen [actions], and the ⋮ menu: Technieken, Instellingen, Over Mise. */
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -34,6 +41,7 @@ fun MiseTopAppBar(
     onOverflowItem: (OverflowItem) -> Unit,
     onBack: (() -> Unit)? = null,
     actions: @Composable () -> Unit = {},
+    menuEntries: List<MenuEntry> = emptyList(),
 ) {
     var menuOpen by remember { mutableStateOf(false) }
     TopAppBar(
@@ -51,6 +59,16 @@ fun MiseTopAppBar(
                 Icon(Icons.Outlined.MoreVert, contentDescription = stringResource(R.string.menu_more))
             }
             DropdownMenu(expanded = menuOpen, onDismissRequest = { menuOpen = false }) {
+                menuEntries.forEach { entry ->
+                    DropdownMenuItem(
+                        text = { Text(entry.label) },
+                        onClick = {
+                            menuOpen = false
+                            entry.onClick()
+                        },
+                    )
+                }
+                if (menuEntries.isNotEmpty()) HorizontalDivider()
                 OverflowItem.entries.forEach { item ->
                     DropdownMenuItem(
                         text = { Text(stringResource(item.labelRes)) },
