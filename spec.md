@@ -548,8 +548,11 @@ Day and session state (JSON strings in the same file; never backed up, §13.1):
 ### 8.1 Client
 
 - The `ClaudeClient` interface (suspend functions) has two implementations: `AnthropicSdkClaudeClient` (the official Java SDK, preferred)
-  and `OkHttpClaudeClient` (raw `POST https://api.anthropic.com/v1/messages`, `anthropic-version: 2023-06-01`).
+  and `OkHttpClaudeClient` (raw `POST https://api.anthropic.com/v1/messages`, `anthropic-version: 2026-10-21`).
   A P0 spike decides which one ships. The SDK must work on API 30+ with R8 enabled.
+  **Status (P1):** the spike needs a real device and has not run, so P1 ships `OkHttpClaudeClient`: it reuses the app's
+  OkHttp client, adds no dependency or R8 rules, and sends exactly the body this section describes (the SDK's builder for
+  `fallbacks: "default"` is not documented). Swapping in the SDK later only touches the Hilt binding in `ClaudeModule`.
 - The key is read from `SecretStore` per call (§9). It never appears in logs, crash reports or exceptions shown to the user.
 - **Structured outputs** for every generation call: `output_config.format` = JSON Schema (§8.6). No regex extraction of JSON.
 - **Do not send** `temperature`, `top_p` or `top_k`: since 2026-10-21 the API rejects them with a 400. The legacy quest prompt

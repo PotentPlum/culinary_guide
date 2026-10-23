@@ -115,9 +115,10 @@ The web app keeps running from its last Vercel deployment until you turn it off,
 - [x] Delete with undo; "Delen" as text.
 
 ### Claude (spec §8)
-- [ ] `ClaudeClient` (the implementation chosen in P0), retry policy, error mapping, refusal / `max_tokens` handling, refusal fallback header for Sonnet/Opus, Kwaliteit → model mapping.
-- [ ] `Pricing` + `claude_usage` recording; unit tests for cost maths.
-- [ ] Runtime schema builders (quest, photo/page recipe, enrichment) from the content assets, with the shared structured ingredient item and the merged tags. Post-parse validation (spec §8.6). Unit tests with recorded responses.
+- [x] `ClaudeClient` (the implementation chosen in P0), retry policy, error mapping, refusal / `max_tokens` handling, refusal fallback header for Sonnet/Opus, Kwaliteit → model mapping.
+      `OkHttpClaudeClient` ships (spec §8.1 status); the SDK spike stays an **[owner]** item in P0.
+- [x] `Pricing` + `claude_usage` recording; unit tests for cost maths.
+- [x] Runtime schema builders (quest, photo/page recipe, enrichment) from the content assets, with the shared structured ingredient item and the merged tags. Post-parse validation (spec §8.6). Unit tests with recorded responses.
 - [ ] Rewrite the prompts from `data/reference/prompts/` as Kotlin templates without JSON-format instructions; add the quest focus discipline and the "niet herhalen" list (spec §8.3). **No checkpoints.**
 - [ ] **Enrichment** worker (Haiku, spec §6.9/§8.4): structured ingredients + tags in one call per recipe, `enrichState`, never overwrites MANUAL parses, failure notification on the `background` channel.
 - [ ] Photo import (spec §6.9): photo picker + camera, 1–5 photos, reorder/remove, downscale to ≤ 1568 px, call, preview in edit mode, keep the first photo as the image.
