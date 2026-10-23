@@ -1,13 +1,21 @@
 # Spec §17: a `v*` tag builds the signed release APK and attaches it, with its checksum, to a GitHub Release.
-# Needs four repository secrets: MISE_KEYSTORE_BASE64, MISE_KEYSTORE_PASSWORD, MISE_KEY_ALIAS, MISE_KEY_PASSWORD.
+# Either push the tag, or run this workflow by hand (Actions → Release → Run workflow) with a version: it then tags the
+# chosen branch's commit itself. Needs four repository secrets: MISE_KEYSTORE_BASE64, MISE_KEYSTORE_PASSWORD,
+# MISE_KEY_ALIAS, MISE_KEY_PASSWORD.
 name: Release
 
 on:
   push:
     tags: ["v*"]
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: "Version tag to create on the chosen branch, e.g. v0.1.0 or v0.1.0-alpha1"
+        required: true
+        type: string
 
 concurrency:
-  group: release-${{ github.ref }}
+  group: release-${{ inputs.tag || github.ref }}
   cancel-in-progress: false
 
 permissions:
@@ -17,11 +25,25 @@ jobs:
   release:
     runs-on: ubuntu-latest
     timeout-minutes: 45
+    env:
+      TAG: ${{ inputs.tag || github.ref_name }}
     steps:
       - uses: actions/checkout@v7
         with:
           # versionName and versionCode come from the tag (git describe).
           fetch-depth: 0
+
+      - name: Tag the commit (manual run)
+        if: github.event_name == 'workflow_dispatch'
+        run: |
+          if ! [[ "$TAG" =~ ^v[0-9]+\.[0-9]+\.[0-9]+(-[0-9A-Za-z.]+)?$ ]]; then
+            echo "::error::'$TAG' is not a version tag like v0.1.0 or v0.1.0-alpha1"; exit 1
+          fi
+          if git ls-remote --exit-code --tags origin "refs/tags/$TAG" > /dev/null; then
+            echo "::error::Tag $TAG already exists"; exit 1
+          fi
+          # Local only, so versionName/versionCode see it; the release step creates it on GitHub at this commit.
+          git tag "$TAG"
 
       - uses: actions/setup-python@v7
         with:
@@ -60,7 +82,7 @@ jobs:
       - name: Verify the signature and write the checksum
         run: |
           apksigner="$(ls -d "$ANDROID_HOME"/build-tools/*/ | sort -V | tail -1)apksigner"
-          apk="mise-${GITHUB_REF_NAME}.apk"
+          apk="mise-${TAG}.apk"
           cp app/build/outputs/apk/release/app-release.apk "$apk"
           "$apksigner" verify --print-certs "$apk"
           sha256sum "$apk" > "$apk.sha256"
@@ -70,9 +92,16 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           prerelease=""
-          case "$GITHUB_REF_NAME" in *-*) prerelease="--prerelease" ;; esac
-          gh release create "$GITHUB_REF_NAME" "mise-${GITHUB_REF_NAME}.apk" "mise-${GITHUB_REF_NAME}.apk.sha256" \
-            --title "Mise ${GITHUB_REF_NAME}" --generate-notes --verify-tag $prerelease
+          # The tag may have appeared while this ran: never publish under a tag that points at another commit.
+          existing="$(git ls-remote origin "refs/tags/$TAG^{}" | cut -f1)"
+          [ -n "$existing" ] || existing="$(git ls-remote origin "refs/tags/$TAG" | cut -f1)"
+          if [ -n "$existing" ] && [ "$existing" != "$GITHUB_SHA" ]; then
+            echo "::error::Tag $TAG points at $existing, not at $GITHUB_SHA"; exit 1
+          fi
+          case "$TAG" in *-*) prerelease="--prerelease" ;; esac
+          # --target only matters on a manual run, where the tag doesn't exist yet: it is created at this commit.
+          gh release create "$TAG" "mise-${TAG}.apk" "mise-${TAG}.apk.sha256" \
+            --title "Mise ${TAG}" --generate-notes --target "$GITHUB_SHA" $prerelease
 
       - name: Remove the keystore
         if: always()
