@@ -9,7 +9,6 @@ import kotlinx.coroutines.channels.Channel
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.combine
-import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.flow.receiveAsFlow
 import kotlinx.coroutines.flow.stateIn
@@ -135,21 +134,22 @@ class RecipeDetailViewModel
             val clamped = value.coerceIn(1, 99)
             savedState[KEY_SERVINGS] = clamped
             viewModelScope.launch {
-                settings.cookSession
-                    .first()
-                    ?.takeIf { it.recipeId == id }
-                    ?.let { settings.saveCookSession(it.copy(servings = clamped)) }
+                settings.updateCookSession { session -> if (session?.recipeId == id) session.copy(servings = clamped) else session }
             }
         }
 
         /** Ticks are the cook session's ticks (spec §6.8), so they follow into cook mode and back. */
         fun toggleIngredient(ingredientId: String) {
+            val servings = state.value.servings
             viewModelScope.launch {
-                val current = settings.cookSession.first()?.takeIf { it.recipeId == id }
-                val session = current ?: CookSession(recipeId = id, stepIndex = 0, servings = state.value.servings, updatedAt = 0)
-                val ticks = session.checkedIngredientIds.toMutableSet()
-                if (!ticks.add(ingredientId)) ticks.remove(ingredientId)
-                settings.saveCookSession(session.copy(checkedIngredientIds = ticks.toList()))
+                settings.updateCookSession { current ->
+                    val session =
+                        current?.takeIf { it.recipeId == id }
+                            ?: CookSession(recipeId = id, stepIndex = 0, servings = servings, updatedAt = 0)
+                    val ticks = session.checkedIngredientIds.toMutableSet()
+                    if (!ticks.add(ingredientId)) ticks.remove(ingredientId)
+                    session.copy(checkedIngredientIds = ticks.toList())
+                }
             }
         }
 

@@ -248,12 +248,12 @@ private fun StepPane(
     onFinish: () -> Unit,
     modifier: Modifier = Modifier,
 ) {
+    // The pager owns the visible page: the session only seeds it (a resumed cook) and records where it settles. Following
+    // the session back would fight fast paging, since each save lands a moment later.
     val pager = rememberPagerState(initialPage = state.stepIndex) { state.steps.size }
     val scope = rememberCoroutineScope()
     val resources = LocalResources.current
     LaunchedEffect(pager) { snapshotFlow { pager.settledPage }.collect(viewModel::goTo) }
-    // The session moved elsewhere (another device rotation, a restored session): follow it.
-    LaunchedEffect(state.stepIndex) { if (pager.settledPage != state.stepIndex) pager.scrollToPage(state.stepIndex) }
 
     Column(modifier) {
         if (state.timersSupported && state.timers.isNotEmpty()) {

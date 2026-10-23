@@ -191,7 +191,7 @@ class CookViewModel
             if (steps.isEmpty()) return
             val target = index.coerceIn(0, steps.lastIndex)
             if (target == steps.lastIndex) savedState[KEY_REACHED_END] = true
-            if (target != state.value.stepIndex) update { it.copy(stepIndex = target) }
+            update { it.copy(stepIndex = target) }
         }
 
         fun toggleIngredient(ingredientId: String) =
@@ -231,8 +231,7 @@ class CookViewModel
         private fun update(change: (CookSession) -> CookSession) {
             viewModelScope.launch {
                 if (ended) return@launch
-                val session = settings.cookSession.first()?.takeIf { it.recipeId == recipeId } ?: return@launch
-                settings.saveCookSession(change(session))
+                settings.updateCookSession { session -> if (session?.recipeId == recipeId) change(session) else session }
             }
         }
 
