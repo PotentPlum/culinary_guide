@@ -43,6 +43,7 @@ import nl.potentplum.mise.content.model.CuratedRecipe
 import nl.potentplum.mise.content.model.Technique
 import nl.potentplum.mise.core.designsystem.Contrast
 import nl.potentplum.mise.core.designsystem.MiseTheme
+import nl.potentplum.mise.core.designsystem.component.CuratedRecipeCard
 import nl.potentplum.mise.core.designsystem.component.DifficultyBadge
 import nl.potentplum.mise.core.designsystem.component.EmptyState
 import nl.potentplum.mise.core.designsystem.component.FacetChip
@@ -220,37 +221,6 @@ private fun TechniqueLink(
         Column(Modifier.padding(vertical = 8.dp)) {
             Text(technique.nl, style = MaterialTheme.typography.bodyLarge, color = MaterialTheme.colorScheme.primary)
             Text(technique.subtitle, style = MaterialTheme.typography.bodySmall, color = MiseTheme.colors.inkSoft)
-        }
-    }
-}
-
-@Composable
-private fun CuratedRecipeCard(
-    recipe: CuratedRecipe,
-    onOpen: () -> Unit,
-) {
-    Card(
-        onClick = onOpen,
-        colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surfaceContainerLow),
-        border = BorderStroke(1.dp, MaterialTheme.colorScheme.outlineVariant),
-        modifier = Modifier.fillMaxWidth(),
-    ) {
-        Column(Modifier.padding(12.dp), verticalArrangement = Arrangement.spacedBy(6.dp)) {
-            Row(verticalAlignment = Alignment.CenterVertically) {
-                Text(recipe.title, style = MaterialTheme.typography.titleSmall, modifier = Modifier.weight(1f))
-                Icon(
-                    Icons.AutoMirrored.Outlined.OpenInNew,
-                    contentDescription = stringResource(R.string.detail_open_link),
-                    modifier = Modifier.size(18.dp),
-                )
-            }
-            Text(
-                stringResource(R.string.detail_curated_meta, recipe.source, recipe.timeMinutes),
-                style = MaterialTheme.typography.labelMedium,
-                color = MiseTheme.colors.inkSoft,
-            )
-            Text(recipe.why, style = MaterialTheme.typography.bodySmall)
-            DifficultyBadge(Difficulty.of(recipe.difficulty))
         }
     }
 }

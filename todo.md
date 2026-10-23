@@ -143,9 +143,12 @@ The web app keeps running from its last Vercel deployment until you turn it off,
       Card states done; restoring `showQuestCard` comes with the key screen and Instellingen.
 
 ### Vandaag (spec §6.2, §11.5)
-- [ ] `TodaySuggester` (pure): season score, recency, favourite bonus, exclusions (incl. `todayDismissed` and the Vanavond pin), the ≤ 30 min filter, tie-breaks, reason lines, stable per day. Unit tests with fixed dates and a seeded library.
-- [ ] Vandaag screen (spec §6.2): hero, Vanavond card (Kookmodus / Op boodschappenlijst / Toch niet), 3 suggestions with total time, Niet vandaag (refills the slot) and Dit kook ik vanavond, the ≤ 30 min chip, curated-link fallback for small libraries, the import-led empty state for an empty library, the Quest van vandaag card, the "Nu op z'n best" shortlist (8). No seasonal ring here.
+- [x] `TodaySuggester` (pure): season score, recency, favourite bonus, exclusions (incl. `todayDismissed` and the Vanavond pin), the ≤ 30 min filter, tie-breaks, reason lines, stable per day. Unit tests with fixed dates and a seeded library.
+  _Done: `domain/TodaySuggester.kt` (`rank` + `pick`) and `CuratedFallback`; "≤ 30 days → × 0.5" halves season + favourite. `TodaySuggesterTest`._
+- [x] Vandaag screen (spec §6.2): hero, Vanavond card (Kookmodus / Op boodschappenlijst / Toch niet), 3 suggestions with total time, Niet vandaag (refills the slot) and Dit kook ik vanavond, the ≤ 30 min chip, curated-link fallback for small libraries, the import-led empty state for an empty library, the Quest van vandaag card, the "Nu op z'n best" shortlist (8). No seasonal ring here.
+  _Done: `TodayViewModel` + `TodayScreen`; Kookmodus opens the `CookRoute` placeholder until Cooking lands. "Alle quests" opens Dagboek › Quests. `TodayFlowsTest`._
 - [ ] Performance: ranking for 1,000 synthetic recipes off the main thread, cached per day, Vandaag visible in < 1.5 s cold start.
+  _Partly: ranking runs on `Dispatchers.Default`, only when the library or the day changes (1,000 recipes rank in < 250 ms in a unit test). Cold start < 1.5 s still needs a device._
 
 ### Cooking (spec §6.10, §6.12)
 - [ ] Cook mode (spec §6.10): step pager with progress bar, ingredients sheet (portrait) / two panes (landscape) with scaled amounts, keep screen on, technique info buttons, "Klaar met koken" on the last page, "Heb je dit gekookt?" on exit **only after the last step was reached**.

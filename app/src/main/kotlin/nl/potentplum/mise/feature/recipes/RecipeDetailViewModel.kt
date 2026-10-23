@@ -25,7 +25,6 @@ import nl.potentplum.mise.data.db.entity.TagKey
 import nl.potentplum.mise.data.repo.DeletedRecipe
 import nl.potentplum.mise.data.repo.Recipe
 import nl.potentplum.mise.data.repo.RecipeRepository
-import nl.potentplum.mise.data.repo.ShoppingLine
 import nl.potentplum.mise.data.repo.ShoppingRepository
 import nl.potentplum.mise.data.settings.CookSession
 import nl.potentplum.mise.data.settings.SettingsRepository
@@ -179,15 +178,7 @@ class RecipeDetailViewModel
 
         private suspend fun addLines(): Int {
             val recipe = state.value.recipe ?: return 0
-            val scaler = recipes.scaler()
-            val ratio = scaler.ratio(recipe.servings, state.value.servings ?: 0) ?: 1.0
-            // The raw scaled amount; the list rounds when it combines lines (spec §11.7).
-            val lines =
-                recipe.ingredients.map { ingredient ->
-                    val parse = ingredient.parsed
-                    ShoppingLine(scaler.format(parse, ratio), parse.quantity?.times(ratio), parse.unit, parse.name)
-                }
-            return shopping.add(lines, recipe.id)
+            return shopping.addRecipe(recipe, recipes.scaler(), state.value.servings)
         }
 
         fun shareText(

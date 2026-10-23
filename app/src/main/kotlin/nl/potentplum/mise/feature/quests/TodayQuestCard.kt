@@ -34,6 +34,7 @@ fun TodayQuestCard(
     onOpenQuest: (String) -> Unit,
     onRefine: () -> Unit,
     onAddKey: () -> Unit,
+    onAllQuests: () -> Unit,
     modifier: Modifier = Modifier,
     viewModel: TodayQuestViewModel = hiltViewModel(),
 ) {
@@ -56,7 +57,7 @@ fun TodayQuestCard(
 
         is TodayQuestUiState.Ready -> {
             QuestCardFrame(modifier) {
-                ReadyContent(current, viewModel, onOpenQuest, onRefine)
+                ReadyContent(current, viewModel, onOpenQuest, onRefine, onAllQuests)
             }
         }
     }
@@ -84,6 +85,7 @@ private fun ReadyContent(
     viewModel: TodayQuestViewModel,
     onOpenQuest: (String) -> Unit,
     onRefine: () -> Unit,
+    onAllQuests: () -> Unit,
 ) {
     when (val gen = state.generation) {
         is QuestGenState.Generating -> {
@@ -116,9 +118,10 @@ private fun ReadyContent(
                     DifficultyBadge(quest.difficulty)
                     Text(quest.skill, style = MaterialTheme.typography.bodySmall, color = MiseTheme.colors.inkSoft)
                 }
-                Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                FlowRow(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
                     Button(onClick = { onOpenQuest(quest.id) }) { Text(stringResource(R.string.quest_open)) }
                     TextButton(onClick = onRefine) { Text(stringResource(R.string.quest_params_title)) }
+                    TextButton(onClick = onAllQuests) { Text(stringResource(R.string.today_all_quests)) }
                 }
             } else {
                 Text(stringResource(R.string.quest_daily_body), style = MaterialTheme.typography.bodyMedium)
@@ -129,9 +132,10 @@ private fun ReadyContent(
                         color = MiseTheme.colors.inkSoft,
                     )
                 }
-                Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                FlowRow(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
                     Button(onClick = viewModel::start, enabled = state.online) { Text(stringResource(R.string.quest_submit_btn)) }
                     TextButton(onClick = onRefine) { Text(stringResource(R.string.quest_params_title)) }
+                    TextButton(onClick = onAllQuests) { Text(stringResource(R.string.today_all_quests)) }
                 }
             }
         }

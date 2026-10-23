@@ -8,6 +8,7 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.automirrored.outlined.OpenInNew
 import androidx.compose.material.icons.outlined.Schedule
 import androidx.compose.material3.Button
 import androidx.compose.material3.Card
@@ -25,7 +26,9 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import nl.potentplum.mise.R
+import nl.potentplum.mise.content.model.CuratedRecipe
 import nl.potentplum.mise.core.designsystem.MiseTheme
+import nl.potentplum.mise.domain.Difficulty
 
 /** "25 min" with a clock icon; nothing when the time is unknown. */
 @Composable
@@ -71,7 +74,9 @@ fun SuggestionCard(
         Column(Modifier.padding(16.dp), verticalArrangement = Arrangement.spacedBy(6.dp)) {
             Text(title, style = MaterialTheme.typography.titleMedium, maxLines = 2, overflow = TextOverflow.Ellipsis)
             TotalTime(totalMinutes)
-            Text(reason, style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
+            if (reason.isNotBlank()) {
+                Text(reason, style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
+            }
             Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(8.dp, Alignment.End)) {
                 TextButton(onClick = onDismiss) { Text(stringResource(R.string.today_dismiss)) }
                 OutlinedButton(onClick = onCookTonight) { Text(stringResource(R.string.today_tonight_action)) }
@@ -103,6 +108,41 @@ fun TonightCard(
                 }
                 TextButton(onClick = onUnpin) { Text(stringResource(R.string.today_tonight_unpin)) }
             }
+        }
+    }
+}
+
+/** A curated link from the content (spec §6.4); opens in the browser. */
+@Composable
+fun CuratedRecipeCard(
+    recipe: CuratedRecipe,
+    onOpen: () -> Unit,
+    modifier: Modifier = Modifier,
+    eyebrow: String? = null,
+) {
+    Card(
+        onClick = onOpen,
+        colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surfaceContainerLow),
+        border = BorderStroke(1.dp, MaterialTheme.colorScheme.outlineVariant),
+        modifier = modifier.fillMaxWidth(),
+    ) {
+        Column(Modifier.padding(12.dp), verticalArrangement = Arrangement.spacedBy(6.dp)) {
+            if (eyebrow != null) Eyebrow(eyebrow, color = MaterialTheme.colorScheme.primary)
+            Row(verticalAlignment = Alignment.CenterVertically) {
+                Text(recipe.title, style = MaterialTheme.typography.titleSmall, modifier = Modifier.weight(1f))
+                Icon(
+                    Icons.AutoMirrored.Outlined.OpenInNew,
+                    contentDescription = stringResource(R.string.detail_open_link),
+                    modifier = Modifier.size(18.dp),
+                )
+            }
+            Text(
+                stringResource(R.string.detail_curated_meta, recipe.source, recipe.timeMinutes),
+                style = MaterialTheme.typography.labelMedium,
+                color = MiseTheme.colors.inkSoft,
+            )
+            Text(recipe.why, style = MaterialTheme.typography.bodySmall)
+            DifficultyBadge(Difficulty.of(recipe.difficulty))
         }
     }
 }

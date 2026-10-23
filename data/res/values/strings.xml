@@ -229,6 +229,19 @@
     <string name="today_quick_filter">≤ 30 min</string>
     <string name="today_empty_library_title">Begin met je eerste recept</string>
     <string name="today_empty_library_sub">Deel een receptlink vanuit je browser, plak een link of maak een foto van een kookboekpagina.</string>
+    <string name="today_suggestions_title">Suggesties</string>
+    <string name="today_curated_title">Seizoensrecepten om te proberen</string>
+    <string name="today_curated_eyebrow">%1$s is op z\'n best</string>
+    <string name="today_reason_peak_one">%1$s is op z\'n best</string>
+    <string name="today_reason_peak_two">%1$s en %2$s zijn op hun best</string>
+    <plurals name="today_reason_weeks">
+        <item quantity="one">%d week niet gekookt</item>
+        <item quantity="other">%d weken niet gekookt</item>
+    </plurals>
+    <string name="today_reason_never">Nog nooit gekookt</string>
+    <string name="today_reason_favourite">Favoriet</string>
+    <string name="today_reason_join">%1$s · %2$s</string>
+    <string name="today_quick_empty">Geen recepten van 30 minuten of minder meer voor vandaag.</string>
     <string name="nav_today">Vandaag</string>
     <string name="nav_shopping">Boodschappen</string>
     <string name="shopping_empty_title">Je lijst is leeg</string>

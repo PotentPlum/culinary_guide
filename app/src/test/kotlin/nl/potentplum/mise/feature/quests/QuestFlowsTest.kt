@@ -27,6 +27,7 @@ import nl.potentplum.mise.data.settings.SettingsRepository
 import nl.potentplum.mise.security.SecretStore
 import nl.potentplum.mise.testing.FakeClaudeClient
 import nl.potentplum.mise.testing.FakeNetworkStatus
+import nl.potentplum.mise.testing.reveal
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertFalse
 import org.junit.Assert.assertTrue
@@ -85,16 +86,13 @@ class QuestFlowsTest {
     private fun saveKey() = runBlocking { secrets.saveClaudeKey("sk-ant-test") }
 
     private fun click(text: String) {
-        compose.waitUntil(5_000) { compose.onAllNodes(hasText(text) and hasClickAction()).fetchSemanticsNodes().isNotEmpty() }
+        compose.reveal(hasText(text) and hasClickAction())
         val node = compose.onAllNodes(hasText(text) and hasClickAction()).onFirst()
         runCatching { node.performScrollTo() }
         node.performClick()
     }
 
-    private fun waitForText(text: String) =
-        compose.waitUntil(5_000) {
-            compose.onAllNodesWithText(text, substring = true, useUnmergedTree = true).fetchSemanticsNodes().isNotEmpty()
-        }
+    private fun waitForText(text: String) = compose.reveal(text)
 
     /** Dagboek › Quests is a lazy list: scroll it to the quest first. */
     private fun scrollHistoryTo(text: String) = compose.onNode(hasScrollToNodeAction()).performScrollToNode(hasText(text, substring = true))

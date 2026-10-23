@@ -41,6 +41,7 @@ import androidx.compose.ui.res.pluralStringResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.semantics.contentDescription
 import androidx.compose.ui.semantics.semantics
+import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.navigation.NavDestination.Companion.hasRoute
 import androidx.navigation.NavDestination.Companion.hierarchy
 import androidx.navigation.NavGraph.Companion.findStartDestination
@@ -80,6 +81,7 @@ import nl.potentplum.mise.core.navigation.TodayRoute
 import nl.potentplum.mise.core.navigation.VegetableRoute
 import nl.potentplum.mise.feature.PlaceholderScreen
 import nl.potentplum.mise.feature.journal.JournalScreen
+import nl.potentplum.mise.feature.journal.JournalSegment
 import nl.potentplum.mise.feature.quests.QuestRefineScreen
 import nl.potentplum.mise.feature.quests.QuestScreen
 import nl.potentplum.mise.feature.recipes.AddRecipeOption
@@ -94,6 +96,7 @@ import nl.potentplum.mise.feature.settings.SettingsScreen
 import nl.potentplum.mise.feature.shopping.ShoppingScreen
 import nl.potentplum.mise.feature.techniques.TechniqueScreen
 import nl.potentplum.mise.feature.techniques.TechniquesScreen
+import nl.potentplum.mise.feature.today.TodayActions
 import nl.potentplum.mise.feature.today.TodayScreen
 import nl.potentplum.mise.feature.vegetable.VegetableScreen
 import java.time.LocalDate
@@ -174,10 +177,26 @@ fun MiseAppShell(
                     composable<TodayRoute> {
                         TodayScreen(
                             today = today,
+                            actions =
+                                TodayActions(
+                                    onRecipe = onRecipe,
+                                    onCook = { navController.navigate(CookRoute(it)) },
+                                    onImportLink = { navController.navigate(ImportLinkRoute()) },
+                                    onPhotos = { navController.navigate(PhotoImportRoute(camera = true)) },
+                                    onVegetable = onVegetable,
+                                    onAllVegetables = { navController.navigateToTab(TopLevelDestination.Season) },
+                                    onOpenQuest = { navController.navigate(QuestRoute(it)) },
+                                    onRefineQuest = { navController.navigate(QuestRefineRoute()) },
+                                    onAllQuests = {
+                                        navController.navigateToTab(TopLevelDestination.Journal)
+                                        runCatching { navController.getBackStackEntry<JournalRoute>() }
+                                            .getOrNull()
+                                            ?.savedStateHandle
+                                            ?.set(KEY_JOURNAL_SEGMENT, JournalSegment.QUESTS)
+                                    },
+                                    onAddKey = onAddKey,
+                                ),
                             onOverflowItem = onOverflowItem,
-                            onOpenQuest = { navController.navigate(QuestRoute(it)) },
-                            onRefineQuest = { navController.navigate(QuestRefineRoute()) },
-                            onAddKey = onAddKey,
                         )
                     }
                 }
@@ -206,11 +225,16 @@ fun MiseAppShell(
                     composable<ShoppingRoute> { ShoppingScreen(onOverflowItem = onOverflowItem) }
                 }
                 navigation<JournalGraph>(startDestination = JournalRoute) {
-                    composable<JournalRoute> {
+                    composable<JournalRoute> { entry ->
+                        val requested by entry.savedStateHandle
+                            .getStateFlow<JournalSegment?>(KEY_JOURNAL_SEGMENT, null)
+                            .collectAsStateWithLifecycle()
                         JournalScreen(
                             onOverflowItem = onOverflowItem,
                             onOpenQuest = { navController.navigate(QuestRoute(it)) },
                             onNewQuest = { navController.navigate(QuestRefineRoute()) },
+                            requestedSegment = requested,
+                            onSegmentRequestHandled = { entry.savedStateHandle[KEY_JOURNAL_SEGMENT] = null },
                         )
                     }
                 }
@@ -330,6 +354,16 @@ fun MiseAppShell(
     }
 }
 
+private const val KEY_JOURNAL_SEGMENT = "journalSegment"
+
+/** Switching tabs saves the old tab's stack and restores the new one's (spec §6.1). */
+private fun NavHostController.navigateToTab(destination: TopLevelDestination) =
+    navigate(destination.graph) {
+        popUpTo(graph.findStartDestination().id) { saveState = true }
+        launchSingleTop = true
+        restoreState = true
+    }
+
 @Composable
 private fun MiseNavigationBar(
     navController: NavHostController,
@@ -351,12 +385,7 @@ private fun MiseNavigationBar(
                 selected = selected,
                 onClick = {
                     selectedTab = destination
-                    navController.navigate(destination.graph) {
-                        // Switching tabs saves the old tab's stack and restores the new one's (spec §6.1).
-                        popUpTo(navController.graph.findStartDestination().id) { saveState = true }
-                        launchSingleTop = true
-                        restoreState = true
-                    }
+                    navController.navigateToTab(destination)
                 },
                 icon = { TabIcon(destination, selected, uncheckedShoppingCount) },
                 label = { Text(stringResource(destination.labelRes), maxLines = 1) },

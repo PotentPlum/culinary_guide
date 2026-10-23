@@ -12,6 +12,7 @@ import androidx.compose.material3.SegmentedButtonDefaults
 import androidx.compose.material3.SingleChoiceSegmentedButtonRow
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.saveable.rememberSaveable
@@ -40,8 +41,17 @@ fun JournalScreen(
     onOpenQuest: (String) -> Unit,
     onNewQuest: () -> Unit,
     initialSegment: JournalSegment = JournalSegment.TIMELINE,
+    /** A segment another screen asked for ("Alle quests" on Vandaag); cleared through [onSegmentRequestHandled]. */
+    requestedSegment: JournalSegment? = null,
+    onSegmentRequestHandled: () -> Unit = {},
 ) {
     var segment by rememberSaveable { mutableStateOf(initialSegment) }
+    LaunchedEffect(requestedSegment) {
+        if (requestedSegment != null) {
+            segment = requestedSegment
+            onSegmentRequestHandled()
+        }
+    }
     Scaffold(topBar = { MiseTopAppBar(title = stringResource(R.string.nav_journal), onOverflowItem = onOverflowItem) }) { padding ->
         Column(
             Modifier
