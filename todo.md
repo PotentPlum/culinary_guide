@@ -87,13 +87,14 @@ The web app keeps running from its last Vercel deployment until you turn it off,
 - [ ] Add every new string needed below to `data/res/values/strings.xml` as you go (Dutch only, snake_case keys, run the validator).
 
 ### Seizoen and vegetables
-- [ ] Seizoen Nu view (spec §6.3): filter pills with counts, badges, ranked order, diacritic-insensitive search, Nu/Kalender toggle.
-- [ ] Kalender (spec §6.4): year grid where all 12 months always fit (single-letter headers, ellipsized names, no horizontal scroll), family grouping with sticky headers and A–Z, current-month highlight, TalkBack row descriptions. Acceptance: no horizontal scroll on a 360 dp wide screen at 200% font scale.
+- [x] Seizoen Nu view (spec §6.3): filter pills with counts, badges, ranked order, diacritic-insensitive search, Nu/Kalender toggle.
+- [x] Kalender (spec §6.4): year grid where all 12 months always fit (single-letter headers, ellipsized names, no horizontal scroll), family grouping with sticky headers and A–Z, current-month highlight, TalkBack row descriptions. Acceptance: no horizontal scroll on a 360 dp wide screen at 200% font scale.
 - [ ] Groente-detail (spec §6.5): all sections, substitution chips that link to other vegetables, related techniques, curated links, source link, "Quest met {nl}".
+      Done except "In jouw recepten" (needs `SeasonalMatcher` and the library) and importing a curated link.
 
 ### Technieken (spec §6.6)
-- [ ] Category list with subcategory grouping, level filter, search; cookware guides marked as reference.
-- [ ] Technique detail: body, tips, cookware, related vegetables, related techniques, parent and children, "Oefen in een quest".
+- [x] Category list with subcategory grouping, level filter, search; cookware guides marked as reference.
+- [x] Technique detail: body, tips, cookware, related vegetables, related techniques, parent and children, "Oefen in een quest".
 
 ### Recepten
 - [ ] `JsonLdRecipeParser` + `WprmExtractor` port (spec §10). Acceptance: all 104 cases in `fixtures/recipe-ingestion/golden.json` pass.

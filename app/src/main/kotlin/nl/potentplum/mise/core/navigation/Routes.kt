@@ -45,3 +45,22 @@ data object SettingsRoute
 
 @Serializable
 data object AboutRoute
+
+// Detail destinations, reachable from several tabs; they stack on the current tab.
+
+@Serializable
+data class VegetableRoute(
+    val id: String,
+)
+
+@Serializable
+data class TechniqueRoute(
+    val id: String,
+)
+
+/** The Verfijn quest form, optionally pre-filled (spec §6.5 "Quest met …", §6.6 "Oefen in een quest"). */
+@Serializable
+data class QuestRefineRoute(
+    val vegId: String? = null,
+    val techniqueId: String? = null,
+)

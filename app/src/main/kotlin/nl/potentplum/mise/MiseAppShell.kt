@@ -26,6 +26,9 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.saveable.rememberSaveable
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.res.pluralStringResource
@@ -45,6 +48,7 @@ import nl.potentplum.mise.core.designsystem.component.OverflowItem
 import nl.potentplum.mise.core.navigation.AboutRoute
 import nl.potentplum.mise.core.navigation.JournalGraph
 import nl.potentplum.mise.core.navigation.JournalRoute
+import nl.potentplum.mise.core.navigation.QuestRefineRoute
 import nl.potentplum.mise.core.navigation.RecipesGraph
 import nl.potentplum.mise.core.navigation.RecipesRoute
 import nl.potentplum.mise.core.navigation.SeasonGraph
@@ -52,17 +56,22 @@ import nl.potentplum.mise.core.navigation.SeasonRoute
 import nl.potentplum.mise.core.navigation.SettingsRoute
 import nl.potentplum.mise.core.navigation.ShoppingGraph
 import nl.potentplum.mise.core.navigation.ShoppingRoute
+import nl.potentplum.mise.core.navigation.TechniqueRoute
 import nl.potentplum.mise.core.navigation.TechniquesRoute
 import nl.potentplum.mise.core.navigation.TodayGraph
 import nl.potentplum.mise.core.navigation.TodayRoute
+import nl.potentplum.mise.core.navigation.VegetableRoute
 import nl.potentplum.mise.feature.journal.JournalScreen
+import nl.potentplum.mise.feature.quests.QuestRefineScreen
 import nl.potentplum.mise.feature.recipes.RecipesScreen
 import nl.potentplum.mise.feature.season.SeasonScreen
 import nl.potentplum.mise.feature.settings.AboutScreen
 import nl.potentplum.mise.feature.settings.SettingsScreen
 import nl.potentplum.mise.feature.shopping.ShoppingScreen
+import nl.potentplum.mise.feature.techniques.TechniqueScreen
 import nl.potentplum.mise.feature.techniques.TechniquesScreen
 import nl.potentplum.mise.feature.today.TodayScreen
+import nl.potentplum.mise.feature.vegetable.VegetableScreen
 import java.time.LocalDate
 
 /** The five bottom-bar tabs (spec §6.1). Quests have no tab; their history lives in Dagboek. */
@@ -96,6 +105,8 @@ fun MiseAppShell(
         ) { launchSingleTop = true }
     }
     val onBack: () -> Unit = { navController.navigateUp() }
+    val onVegetable: (String) -> Unit = { navController.navigate(VegetableRoute(it)) }
+    val onTechnique: (String) -> Unit = { navController.navigate(TechniqueRoute(it)) }
 
     Scaffold(
         contentWindowInsets = WindowInsets(0),
@@ -110,7 +121,7 @@ fun MiseAppShell(
                 composable<TodayRoute> { TodayScreen(today = today, onOverflowItem = onOverflowItem) }
             }
             navigation<SeasonGraph>(startDestination = SeasonRoute) {
-                composable<SeasonRoute> { SeasonScreen(onOverflowItem = onOverflowItem) }
+                composable<SeasonRoute> { SeasonScreen(onVegetable = onVegetable, onOverflowItem = onOverflowItem) }
             }
             navigation<RecipesGraph>(startDestination = RecipesRoute) {
                 composable<RecipesRoute> { RecipesScreen(onOverflowItem = onOverflowItem) }
@@ -121,7 +132,26 @@ fun MiseAppShell(
             navigation<JournalGraph>(startDestination = JournalRoute) {
                 composable<JournalRoute> { JournalScreen(onOverflowItem = onOverflowItem) }
             }
-            composable<TechniquesRoute> { TechniquesScreen(onBack = onBack, onOverflowItem = onOverflowItem) }
+            composable<TechniquesRoute> { TechniquesScreen(onBack = onBack, onTechnique = onTechnique, onOverflowItem = onOverflowItem) }
+            composable<VegetableRoute> {
+                VegetableScreen(
+                    onBack = onBack,
+                    onVegetable = onVegetable,
+                    onTechnique = onTechnique,
+                    onQuest = { navController.navigate(QuestRefineRoute(vegId = it)) },
+                    onOverflowItem = onOverflowItem,
+                )
+            }
+            composable<TechniqueRoute> {
+                TechniqueScreen(
+                    onBack = onBack,
+                    onTechnique = onTechnique,
+                    onVegetable = onVegetable,
+                    onQuest = { navController.navigate(QuestRefineRoute(techniqueId = it)) },
+                    onOverflowItem = onOverflowItem,
+                )
+            }
+            composable<QuestRefineRoute> { QuestRefineScreen(onBack = onBack, onOverflowItem = onOverflowItem) }
             composable<SettingsRoute> { SettingsScreen(onBack = onBack, onOverflowItem = onOverflowItem) }
             composable<AboutRoute> { AboutScreen(onBack = onBack, onOverflowItem = onOverflowItem) }
         }
@@ -133,14 +163,22 @@ private fun MiseNavigationBar(
     navController: NavHostController,
     uncheckedShoppingCount: Int,
 ) {
+    // Detail and overflow screens live at the root and stack on the tab they were opened from, so they keep that tab
+    // selected: the selection follows clicks and any destination inside a tab graph, and stays put otherwise.
+    var selectedTab by rememberSaveable { mutableStateOf(TopLevelDestination.Today) }
     val backStackEntry by navController.currentBackStackEntryAsState()
-    val current = backStackEntry?.destination
+    val inTab =
+        backStackEntry?.destination?.hierarchy?.firstNotNullOfOrNull { destination ->
+            TopLevelDestination.entries.firstOrNull { destination.hasRoute(it.graph::class) }
+        }
+    if (inTab != null && inTab != selectedTab) selectedTab = inTab
     NavigationBar(containerColor = MaterialTheme.colorScheme.surfaceContainerLow) {
         TopLevelDestination.entries.forEach { destination ->
-            val selected = current?.hierarchy?.any { it.hasRoute(destination.graph::class) } == true
+            val selected = destination == selectedTab
             NavigationBarItem(
                 selected = selected,
                 onClick = {
+                    selectedTab = destination
                     navController.navigate(destination.graph) {
                         // Switching tabs saves the old tab's stack and restores the new one's (spec §6.1).
                         popUpTo(navController.graph.findStartDestination().id) { saveState = true }

@@ -282,6 +282,27 @@
         <item quantity="one">%1$d item op je lijst</item>
         <item quantity="other">%1$d items op je lijst</item>
     </plurals>
+    <!-- P1: Seizoen, Kalender, Groente-detail. -->
+    <string name="season_mode_now">Nu</string>
+    <string name="season_search_clear">Zoekopdracht wissen</string>
+    <string name="calendar_group_family">Per familie</string>
+    <string name="calendar_group_az">A–Z</string>
+    <string name="calendar_row_description">%1$s: op z\'n best %2$s; verkrijgbaar %3$s</string>
+    <string name="calendar_current_month">Deze maand: %1$s</string>
+    <string name="detail_section_technique">Bereidingstip</string>
+    <string name="detail_section_in_recipes">In jouw recepten</string>
+    <string name="detail_section_techniques">Technieken</string>
+    <string name="detail_section_ideas">Ideeën van het web</string>
+    <string name="detail_source">Bron: %1$s</string>
+    <string name="detail_quest_with">Quest met %1$s</string>
+    <string name="detail_open_link">Openen in de browser</string>
+    <string name="detail_curated_meta">%1$s · %2$d min</string>
+    <string name="techniques_filter_all">Alle niveaus</string>
+    <string name="techniques_reference">Naslag</string>
+    <string name="techniques_parent">Bouwt voort op</string>
+    <string name="techniques_children">Vervolgtechnieken</string>
+    <string name="techniques_practice">Oefen in een quest</string>
+    <string name="error_not_found">Dit item bestaat niet (meer).</string>
     <string-array name="score_steps">
         <item>Mislukt</item>
         <item>Matig</item>
