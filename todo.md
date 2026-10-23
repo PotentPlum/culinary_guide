@@ -98,10 +98,10 @@ The web app keeps running from its last Vercel deployment until you turn it off,
 
 ### Recepten
 - [x] `JsonLdRecipeParser` + `WprmExtractor` port (spec §10). Acceptance: all 104 cases in `fixtures/recipe-ingestion/golden.json` pass.
-- [ ] `RecipeFetcher` (OkHttp, https upgrade, 5 redirects, 5 MB cap, charset, timeouts, Dutch error mapping) with MockWebServer tests.
-- [ ] Mapping to Room: default section names → untitled groups, metric text wins, Schema.org extras → `sourceMeta`, image download/downscale.
-- [ ] `IngredientParser` (local, spec §11.2): table-driven tests for fractions, `1/2`, comma decimals, ranges, unit aliases, notes after a comma, pack sizes ("1 blik à 400 g tomaten" → note), unparseable lines.
-- [ ] `IngredientScaler` + Dutch formatting (spec §11.2): rounding rules per dimension, g→kg / ml→l switch, singular/plural labels, the text fallback for unparsed lines.
+- [x] `RecipeFetcher` (OkHttp, https upgrade, 5 redirects, 5 MB cap, charset, timeouts, Dutch error mapping) with MockWebServer tests.
+- [x] Mapping to Room: default section names → untitled groups, metric text wins, Schema.org extras → `sourceMeta`, image download/downscale.
+- [x] `IngredientParser` (local, spec §11.2): table-driven tests for fractions, `1/2`, comma decimals, ranges, unit aliases, notes after a comma, pack sizes ("1 blik à 400 g tomaten" → note), unparseable lines.
+- [x] `IngredientScaler` + Dutch formatting (spec §11.2): rounding rules per dimension, g→kg / ml→l switch, singular/plural labels, the text fallback for unparsed lines.
 - [ ] `RecipeRepository`: full graph read and write in one transaction, search, quick filters + "Meer filters", 3 sort orders, cooked count via `attempt`, derived prep-time bucket.
 - [ ] Library screen (spec §6.7): cards with cooked count and in-season chips, quick filter chips, the "Meer filters" sheet, empty states, the FAB sheet.
 - [ ] Recipe detail (spec §6.8): cook-first section order, sticky `RecipeActionBar` (Kookmodus / "Verder bij stap n" + Gekookt), favourite in the top bar, ⋮ with Dit kook ik vanavond / Bewerken / Delen / Verwijderen, structured ingredient rendering + check-off shared with the cook session, servings scaling, "Technieken in dit recept", extra fields, tags, notes, attempts with photos. No metadata display.

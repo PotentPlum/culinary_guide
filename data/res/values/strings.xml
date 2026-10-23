@@ -303,6 +303,11 @@
     <string name="techniques_children">Vervolgtechnieken</string>
     <string name="techniques_practice">Oefen in een quest</string>
     <string name="error_not_found">Dit item bestaat niet (meer).</string>
+    <!-- P1: recipe import. -->
+    <string name="recipes_error_invalid_url">Dit is geen geldige link. Plak een adres dat met https:// begint.</string>
+    <string name="recipes_error_http">De website gaf een foutmelding (HTTP %1$d).</string>
+    <string name="recipes_error_too_large">Deze pagina is te groot om in te lezen.</string>
+    <string name="recipes_error_no_recipe">Op deze pagina staat geen recept dat Mise kan lezen.</string>
     <string-array name="score_steps">
         <item>Mislukt</item>
         <item>Matig</item>

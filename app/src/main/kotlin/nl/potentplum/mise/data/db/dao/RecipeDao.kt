@@ -40,6 +40,13 @@ data class RecipeGraph(
     val tags: List<RecipeTagEntity>,
 )
 
+/** One ingredient line with its recipe, for search and seasonal matching across the library. */
+data class IngredientRow(
+    val recipeId: String,
+    val name: String?,
+    val text: String,
+)
+
 @Dao
 interface RecipeDao {
     @Upsert
@@ -112,6 +119,22 @@ interface RecipeDao {
 
     @Query("SELECT * FROM recipe WHERE inLibrary = 1 ORDER BY createdAt DESC")
     fun observeLibrary(): Flow<List<RecipeEntity>>
+
+    @Query(
+        "SELECT g.recipeId AS recipeId, i.name AS name, i.text AS text FROM ingredient i " +
+            "JOIN ingredient_group g ON i.groupId = g.id JOIN recipe r ON g.recipeId = r.id WHERE r.inLibrary = 1",
+    )
+    fun observeLibraryIngredients(): Flow<List<IngredientRow>>
+
+    @Query("SELECT t.* FROM recipe_tag t JOIN recipe r ON t.recipeId = r.id WHERE r.inLibrary = 1")
+    fun observeLibraryTags(): Flow<List<RecipeTagEntity>>
+
+    @Query("UPDATE recipe SET isFavorite = :favorite, updatedAt = :now WHERE id = :id")
+    suspend fun setFavorite(
+        id: String,
+        favorite: Boolean,
+        now: Long,
+    )
 
     @Query("SELECT EXISTS(SELECT 1 FROM recipe WHERE id = :id)")
     suspend fun exists(id: String): Boolean
