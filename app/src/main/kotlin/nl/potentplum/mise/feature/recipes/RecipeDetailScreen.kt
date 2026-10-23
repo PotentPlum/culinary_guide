@@ -24,6 +24,7 @@ import androidx.compose.material.icons.outlined.AddShoppingCart
 import androidx.compose.material.icons.outlined.FavoriteBorder
 import androidx.compose.material.icons.outlined.Remove
 import androidx.compose.material3.Checkbox
+import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
@@ -62,6 +63,7 @@ import nl.potentplum.mise.core.designsystem.component.RecipeActionBar
 import nl.potentplum.mise.core.designsystem.component.RecipeImage
 import nl.potentplum.mise.core.util.DutchDates
 import nl.potentplum.mise.data.db.entity.AttemptEntity
+import nl.potentplum.mise.data.db.entity.EnrichState
 import nl.potentplum.mise.data.repo.Recipe
 import nl.potentplum.mise.domain.ScoreSteps
 
@@ -317,6 +319,22 @@ private fun LazyListScope.ingredients(
                     Icon(Icons.Outlined.AddShoppingCart, contentDescription = null, modifier = Modifier.size(18.dp))
                     Text(stringResource(R.string.recipe_add_to_shopping), modifier = Modifier.padding(start = 6.dp))
                 }
+            }
+        }
+    }
+    if (state.recipe?.enrichState == EnrichState.PENDING) {
+        item(key = "ingredients-enriching") {
+            Row(
+                Modifier.padding(horizontal = 16.dp, vertical = 4.dp),
+                horizontalArrangement = Arrangement.spacedBy(8.dp),
+                verticalAlignment = Alignment.CenterVertically,
+            ) {
+                CircularProgressIndicator(Modifier.size(14.dp), strokeWidth = 2.dp)
+                Text(
+                    stringResource(R.string.recipe_enriching),
+                    style = MaterialTheme.typography.bodySmall,
+                    color = MiseTheme.colors.inkSoft,
+                )
             }
         }
     }

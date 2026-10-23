@@ -379,6 +379,27 @@
     <string name="edit_discard_confirm">Weggooien</string>
     <string name="edit_keep_editing">Verder bewerken</string>
     <string name="edit_missing_parts">Vul de ontbrekende delen aan.</string>
+    <!-- P1: Claude errors, enrichment and photo import. -->
+    <string name="claude_error_no_key">Hiervoor is een Claude-sleutel nodig. Voeg er een toe in Instellingen.</string>
+    <string name="claude_error_invalid_key">Claude accepteert je sleutel niet. Vervang hem in Instellingen.</string>
+    <string name="claude_error_refused">Claude wilde dit verzoek niet uitvoeren.</string>
+    <string name="claude_error_refused_explained">Claude wilde dit verzoek niet uitvoeren: %1$s</string>
+    <string name="claude_error_truncated">Antwoord was te lang en is afgebroken.</string>
+    <string name="claude_error_network">Kon Claude niet bereiken. Controleer je internetverbinding.</string>
+    <string name="claude_error_rate_limited">Het is even te druk bij Claude. Probeer het zo opnieuw.</string>
+    <string name="claude_error_http">Claude gaf een foutmelding (HTTP %1$d).</string>
+    <string name="claude_error_invalid_response">Claude gaf een antwoord dat Mise niet kon lezen.</string>
+    <string name="recipe_enriching">Ingrediënten worden aangevuld…</string>
+    <string name="enrich_failed_title">Ingrediënten aanvullen mislukt</string>
+    <string name="enrich_failed_text">Mise kon de ingrediënten van \"%1$s\" niet aanvullen. Je recept is wel bewaard.</string>
+    <string name="photo_import_title">Recept van foto\'s</string>
+    <string name="photo_import_add_camera">Foto maken</string>
+    <string name="photo_import_add_gallery">Foto\'s kiezen</string>
+    <string name="photo_import_remove">Foto %1$d verwijderen</string>
+    <string name="photo_import_move_left">Foto %1$d naar voren</string>
+    <string name="photo_import_move_right">Foto %1$d naar achteren</string>
+    <string name="photo_import_count">%1$d van %2$d foto\'s</string>
+    <string name="photo_import_add_key">Sleutel toevoegen</string>
     <string-array name="score_steps">
         <item>Mislukt</item>
         <item>Matig</item>

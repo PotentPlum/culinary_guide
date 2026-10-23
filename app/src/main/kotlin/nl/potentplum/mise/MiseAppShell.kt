@@ -145,6 +145,7 @@ fun MiseAppShell(
         when (pendingShare) {
             is SharedContent.Link -> navController.navigate(ImportLinkRoute(pendingShare.url))
             is SharedContent.Images -> navController.navigate(PhotoImportRoute())
+            is SharedContent.OpenRecipe -> navController.navigate(RecipeRoute(pendingShare.id))
             null -> return@LaunchedEffect
         }
         onShareHandled()

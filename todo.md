@@ -120,7 +120,9 @@ The web app keeps running from its last Vercel deployment until you turn it off,
 - [x] `Pricing` + `claude_usage` recording; unit tests for cost maths.
 - [x] Runtime schema builders (quest, photo/page recipe, enrichment) from the content assets, with the shared structured ingredient item and the merged tags. Post-parse validation (spec §8.6). Unit tests with recorded responses.
 - [ ] Rewrite the prompts from `data/reference/prompts/` as Kotlin templates without JSON-format instructions; add the quest focus discipline and the "niet herhalen" list (spec §8.3). **No checkpoints.**
-- [ ] **Enrichment** worker (Haiku, spec §6.9/§8.4): structured ingredients + tags in one call per recipe, `enrichState`, never overwrites MANUAL parses, failure notification on the `background` channel.
+- [x] **Enrichment** worker (Haiku, spec §6.9/§8.4): structured ingredients + tags in one call per recipe, `enrichState`, never overwrites MANUAL parses, failure notification on the `background` channel.
+      `EnrichmentWorker` (unique expedited work per recipe, needs network, 3 retries for network/429/5xx); queued after a URL import
+      or a save with new or changed lines when a key is stored. A reply for lines edited in the meantime is discarded.
 - [ ] Photo import (spec §6.9): photo picker + camera, 1–5 photos, reorder/remove, downscale to ≤ 1568 px, call, preview in edit mode, keep the first photo as the image.
 
 ### Quests (spec §6.11, §11.6)

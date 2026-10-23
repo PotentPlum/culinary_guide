@@ -8,6 +8,7 @@ import nl.potentplum.mise.content.ContentRepository
 import nl.potentplum.mise.core.util.MiseClock
 import nl.potentplum.mise.data.db.dao.AttemptDao
 import nl.potentplum.mise.data.db.dao.RecipeDao
+import nl.potentplum.mise.data.db.entity.EnrichState
 import nl.potentplum.mise.data.db.entity.TagKey
 import nl.potentplum.mise.domain.IngredientParser
 import nl.potentplum.mise.domain.IngredientRef
@@ -57,6 +58,12 @@ class RecipeRepository
             id: String,
             favorite: Boolean,
         ) = recipeDao.setFavorite(id, favorite, clock.nowMillis())
+
+        /** Enrichment progress only; does not touch `updatedAt`. */
+        suspend fun setEnrichState(
+            id: String,
+            state: EnrichState,
+        ) = recipeDao.setEnrichState(id, state)
 
         /** Attempts keep their snapshots; their `recipeId` becomes null (spec §7.2). */
         suspend fun delete(id: String) = recipeDao.delete(id)

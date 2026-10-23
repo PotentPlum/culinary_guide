@@ -13,6 +13,7 @@ import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.receiveAsFlow
 import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
+import nl.potentplum.mise.claude.enrich.EnrichmentQueue
 import nl.potentplum.mise.core.navigation.ImportLinkRoute
 import nl.potentplum.mise.core.util.MiseClock
 import nl.potentplum.mise.data.repo.Recipe
@@ -82,6 +83,7 @@ class ImportLinkViewModel
         private val drafts: RecipeDrafts,
         private val images: ImageStore,
         private val clock: MiseClock,
+        private val enrichment: EnrichmentQueue,
         savedState: SavedStateHandle,
     ) : ViewModel() {
         private val prefilled = savedState.toRoute<ImportLinkRoute>().url
@@ -147,6 +149,7 @@ class ImportLinkViewModel
             viewModelScope.launch {
                 val imagePath = draft.imageUrl?.let { images.downloadRecipeImage(draft.id, it) }
                 val saved = recipes.save(draft.copy(imagePath = imagePath))
+                enrichment.request(saved.id)
                 _events.send(ImportEvent.Saved(saved.id))
             }
         }

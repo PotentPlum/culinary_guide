@@ -21,12 +21,14 @@ import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import kotlinx.serialization.json.Json
+import nl.potentplum.mise.claude.enrich.EnrichmentQueue
 import nl.potentplum.mise.content.ContentRepository
 import nl.potentplum.mise.content.model.FacetKey
 import nl.potentplum.mise.content.model.FacetOption
 import nl.potentplum.mise.content.model.Technique
 import nl.potentplum.mise.core.navigation.RecipeEditRoute
 import nl.potentplum.mise.core.util.IoDispatcher
+import nl.potentplum.mise.data.db.entity.RecipeSourceType
 import nl.potentplum.mise.data.repo.Recipe
 import nl.potentplum.mise.data.repo.RecipeDrafts
 import nl.potentplum.mise.data.repo.RecipeRepository
@@ -64,6 +66,7 @@ class RecipeEditViewModel
         private val recipes: RecipeRepository,
         private val drafts: RecipeDrafts,
         private val images: ImageStore,
+        private val enrichment: EnrichmentQueue,
         content: ContentRepository,
         @param:ApplicationContext private val context: Context,
         @param:IoDispatcher private val io: CoroutineDispatcher,
@@ -176,10 +179,24 @@ class RecipeEditViewModel
             val recipe = RecipeEditorMapper.toRecipe(editor.copy(imagePath = finalImage), original, recipes.parser())
             val saved = recipes.save(recipe)
             if (route.draft) drafts.remove(saved.id)
+            if (needsEnrichment(saved, original)) enrichment.request(saved.id)
             original = saved
             initial.value = RecipeEditorMapper.fromRecipe(saved)
             savedState[KEY_EDITOR] = encode(initial.value!!)
             return saved.id
+        }
+
+        /**
+         * A new recipe or an unsaved URL import is enriched as a whole, except photo and page imports, which Claude
+         * already structured (spec §6.9); an edit only when lines were added or changed.
+         */
+        private fun needsEnrichment(
+            saved: Recipe,
+            before: Recipe?,
+        ): Boolean {
+            val firstSave = routeId == null || route.draft
+            if (firstSave && saved.sourceType !in CLAUDE_STRUCTURED) return true
+            return RecipeEditorMapper.ingredientsChanged(saved, before)
         }
 
         private fun encode(state: RecipeEditorState) = Json.encodeToString(RecipeEditorState.serializer(), state)
@@ -188,5 +205,6 @@ class RecipeEditViewModel
 
         private companion object {
             const val KEY_EDITOR = "editor"
+            val CLAUDE_STRUCTURED = setOf(RecipeSourceType.PHOTO, RecipeSourceType.PAGE, RecipeSourceType.QUEST)
         }
     }

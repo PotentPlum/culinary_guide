@@ -7,6 +7,7 @@ import androidx.room.Relation
 import androidx.room.Transaction
 import androidx.room.Upsert
 import kotlinx.coroutines.flow.Flow
+import nl.potentplum.mise.data.db.entity.EnrichState
 import nl.potentplum.mise.data.db.entity.IngredientEntity
 import nl.potentplum.mise.data.db.entity.IngredientGroupEntity
 import nl.potentplum.mise.data.db.entity.RecipeEntity
@@ -134,6 +135,12 @@ interface RecipeDao {
         id: String,
         favorite: Boolean,
         now: Long,
+    )
+
+    @Query("UPDATE recipe SET enrichState = :state WHERE id = :id")
+    suspend fun setEnrichState(
+        id: String,
+        state: EnrichState,
     )
 
     @Query("SELECT EXISTS(SELECT 1 FROM recipe WHERE id = :id)")
