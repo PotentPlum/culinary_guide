@@ -25,7 +25,7 @@ Assumptions; each one can be changed by editing this table:
 | A1 | Distribution as a **signed APK via GitHub Releases** (sideload). The Play Store is optional, later (§17). | Single user; avoids Play listing and policy overhead. |
 | A2 | Existing Supabase + browser data is converted once by a **script** into a normal Mise backup, which the app restores (§13.3). | No one-off migration code in the app. |
 | A3 | Delivery is **phased**: P0 foundation → P1 core loop → P2 depth and polish → P3 later (see `todo.md`). | Get a usable app early. |
-| A4 | `minSdk 30` (Android 11), `targetSdk`/`compileSdk 36`. | Simplifies the Keystore APIs; covers practically all current phones. |
+| A4 | `minSdk 30` (Android 11), `targetSdk 36`, `compileSdk 37` (the current AndroidX and OkHttp releases require it; P0 scaffold). | Simplifies the Keystore APIs; covers practically all current phones. |
 | A5 | applicationId **`nl.potentplum.mise`**. Kotlin root package is the same. | Permanent once installed; change before the first release if desired. |
 | A6 | One Gradle **`:app` module** with strict package boundaries (§4.2). | Least ceremony for a personal app. |
 | A7 | Light theme in P1; dark theme in P2. | The brand palette is designed light-first. |
@@ -131,6 +131,7 @@ Rules: features depend on `domain`/`data` interfaces, never on each other. Navig
 /data                   curated content, fixtures, schemas (see data/README.md)
 /tools/validate_data.py stdlib-only data validator (runs in CI and as a Claude Code hook)
 /tools/legacy_to_backup.py  one-off converter for the old web-app exports (§13.3)
+/lint-checks            custom Android Lint rules (ComposeHardcodedText, §15.4); build tooling, not shipped
 /.github/workflows      CI + release
 ```
 
@@ -917,7 +918,7 @@ There is no legacy code in the app. A one-off script converts the old exports in
 | UI (Compose) | Vandaag with seeded data (Niet vandaag refill, ≤ 30 min chip, Vanavond pin), import from URL (fake fetcher; clean import saves in one tap), edit-in-place save/cancel, quest van vandaag (fake client, cancel while generating), key entry states, cook mode (timer chip intent, resume at step after leaving, exit prompt only after the last step), evaluation score steps |
 | Manual checklist | Share from Chrome/Instagram, camera import, cook mode in landscape, TalkBack and 200% font scale on Vandaag, Kalender and cook mode, Clock timer from cook mode on 2 phones, restore on a fresh install, legacy restore with real data |
 
-CI must stay green on every push: validate data → `./gradlew lint ktlintCheck testDebugUnitTest assembleDebug`.
+CI must stay green on every push: validate data → `./gradlew lint ktlintCheck testDebugUnitTest :lint-checks:test assembleDebug`.
 
 ## 17. Build, CI and release
 

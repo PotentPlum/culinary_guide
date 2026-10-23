@@ -24,3 +24,6 @@ keystore.properties
 
 # Python
 __pycache__/
+
+# Leftovers of the retired web app
+node_modules/
