@@ -41,5 +41,6 @@ Back up `mise-release.jks` and its passwords offline: without them, installed co
 repository secrets (Settings → Secrets and variables → Actions): `MISE_KEYSTORE_BASE64` (the `.b64` file's contents),
 `MISE_KEYSTORE_PASSWORD`, `MISE_KEY_ALIAS` (`mise`) and `MISE_KEY_PASSWORD`, and delete the `.b64` file.
 
-To release: `git tag v0.1.0 && git push origin v0.1.0`. Push the tag; don't create the release in the GitHub UI first,
-or the workflow's own `gh release create` will find it already there.
+To release, either run the workflow by hand (Actions → Release → Run workflow, pick the branch, enter `v0.1.0`), which
+tags that branch's commit itself, or push a tag: `git tag v0.1.0 && git push origin v0.1.0`. Don't create the release in
+the GitHub UI first, or the workflow's own `gh release create` will find it already there.
