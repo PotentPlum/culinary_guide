@@ -97,7 +97,7 @@ The web app keeps running from its last Vercel deployment until you turn it off,
 - [x] Technique detail: body, tips, cookware, related vegetables, related techniques, parent and children, "Oefen in een quest".
 
 ### Recepten
-- [ ] `JsonLdRecipeParser` + `WprmExtractor` port (spec §10). Acceptance: all 104 cases in `fixtures/recipe-ingestion/golden.json` pass.
+- [x] `JsonLdRecipeParser` + `WprmExtractor` port (spec §10). Acceptance: all 104 cases in `fixtures/recipe-ingestion/golden.json` pass.
 - [ ] `RecipeFetcher` (OkHttp, https upgrade, 5 redirects, 5 MB cap, charset, timeouts, Dutch error mapping) with MockWebServer tests.
 - [ ] Mapping to Room: default section names → untitled groups, metric text wins, Schema.org extras → `sourceMeta`, image download/downscale.
 - [ ] `IngredientParser` (local, spec §11.2): table-driven tests for fractions, `1/2`, comma decimals, ranges, unit aliases, notes after a comma, pack sizes ("1 blik à 400 g tomaten" → note), unparseable lines.
