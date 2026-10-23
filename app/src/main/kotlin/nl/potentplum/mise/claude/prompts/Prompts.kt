@@ -1,6 +1,14 @@
 package nl.potentplum.mise.claude.prompts
 
 import nl.potentplum.mise.content.Content
+import nl.potentplum.mise.content.model.DisciplineId
+import nl.potentplum.mise.core.util.DutchNumbers
+import nl.potentplum.mise.data.db.entity.IngredientMode
+import nl.potentplum.mise.data.db.entity.QuestType
+import nl.potentplum.mise.data.db.entity.TimeLimit
+import nl.potentplum.mise.domain.Difficulty
+import nl.potentplum.mise.domain.QuestHistoryEntry
+import nl.potentplum.mise.domain.QuestParams
 
 /**
  * The Dutch prompts (spec §8.3), rewritten from `data/reference/prompts/` without JSON-format instructions: the output
@@ -98,4 +106,94 @@ object Prompts {
 
         ${vocabulary(content)}
         """.trimIndent()
+
+    /**
+     * The per-request part of a quest (spec §8.3): every given parameter, the [difficulty] (already resolved from
+     * Automatisch), the [focus] discipline unless a technique is given, the in-season list for "Verras me", and the
+     * "niet herhalen" list.
+     */
+    fun questRequest(
+        content: Content,
+        params: QuestParams,
+        difficulty: Difficulty,
+        focus: DisciplineId?,
+        inSeason: List<String>,
+        history: List<QuestHistoryEntry>,
+    ): String =
+        buildString {
+            when (params.ingredientMode) {
+                IngredientMode.CUSTOM -> {
+                    append("Ingrediënt: ${params.ingredient.trim()}")
+                    params.quantity?.let { quantity ->
+                        val unit = params.unit?.let { content.unit(it)?.let { u -> if (quantity == 1.0) u.singular else u.plural } }
+                        append(" (hoeveelheid: ${DutchNumbers.format(quantity)}${unit?.let { " $it" }.orEmpty()})")
+                    }
+                    appendLine()
+                }
+
+                IngredientMode.SEASONAL -> {
+                    val veg = params.vegId?.let(content::vegetable)
+                    appendLine("Ingrediënt: ${veg?.nl?.lowercase() ?: params.ingredient} (seizoensgroente, id: ${params.vegId})")
+                }
+
+                IngredientMode.SURPRISE -> {
+                    appendLine("Ingrediënt: verras me. Kies één groente uit de lijst van groenten in het seizoen en geef haar id terug.")
+                }
+            }
+            appendLine("Soort quest: ${questTypeText(params.questType)}")
+            appendLine("Moeilijkheid: ${difficultyText(difficulty)} ($difficulty)")
+            val technique = params.techniqueId?.let(content::technique)
+            if (technique != null) {
+                appendLine("Techniek: ${technique.nl} (id: ${technique.id})")
+            } else if (focus != null) {
+                val name = content.disciplines.first { it.id == focus }.nl
+                val examples =
+                    content.skills
+                        .filter { it.discipline == focus }
+                        .take(FOCUS_EXAMPLES)
+                        .joinToString { it.nl.lowercase() }
+                appendLine("Focus: oefen vooral $name, zoals $examples.")
+            }
+            params.cuisine?.let { appendLine("Keuken: $it") }
+            params.timeLimit?.let { appendLine("Beschikbare tijd: ${timeLimitText(it)}") }
+            if (params.simpleAndSmall) appendLine("Klein & eenvoudig: weinig ingrediënten die je meestal in huis hebt.")
+            if (params.ingredientMode == IngredientMode.SURPRISE) {
+                appendLine()
+                appendLine("Groenten in het seizoen (id: naam):")
+                inSeason.forEach { id -> appendLine("- $id: ${content.vegetable(id)?.nl?.lowercase() ?: id}") }
+            }
+            if (history.isNotEmpty()) {
+                appendLine()
+                appendLine("Niet herhalen (eerdere quests, techniek en titel):")
+                history.forEach { appendLine("- ${it.skill}: ${it.title}") }
+            }
+        }.trimEnd()
+
+    private const val FOCUS_EXAMPLES = 4
+
+    private fun questTypeText(type: QuestType): String =
+        when (type) {
+            QuestType.MAALTIJD -> "maaltijd"
+            QuestType.LUNCH -> "lunch"
+            QuestType.BIJGERECHT -> "bijgerecht"
+            QuestType.SAUS -> "saus (geen hele maaltijd)"
+            QuestType.BOUILLON -> "bouillon of fond"
+            QuestType.COMPONENT -> "component: een bouwsteen zoals een pickle, crumble, gearomatiseerde olie of dressing"
+            QuestType.CLAUDE_CHOICE -> "laat Claude kiezen"
+        }
+
+    private fun difficultyText(difficulty: Difficulty): String =
+        when (difficulty) {
+            Difficulty.BEGINNER -> "basis"
+            Difficulty.INTERMEDIATE -> "gemiddeld"
+            Difficulty.ADVANCED -> "gevorderd"
+        }
+
+    private fun timeLimitText(limit: TimeLimit): String =
+        when (limit) {
+            TimeLimit.UNDER_15 -> "minder dan 15 minuten"
+            TimeLimit.UNDER_30 -> "minder dan 30 minuten"
+            TimeLimit.UNDER_60 -> "minder dan 60 minuten"
+            TimeLimit.OVER_60 -> "meer dan 60 minuten"
+        }
 }

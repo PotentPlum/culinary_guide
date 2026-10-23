@@ -119,7 +119,7 @@ The web app keeps running from its last Vercel deployment until you turn it off,
       `OkHttpClaudeClient` ships (spec §8.1 status); the SDK spike stays an **[owner]** item in P0.
 - [x] `Pricing` + `claude_usage` recording; unit tests for cost maths.
 - [x] Runtime schema builders (quest, photo/page recipe, enrichment) from the content assets, with the shared structured ingredient item and the merged tags. Post-parse validation (spec §8.6). Unit tests with recorded responses.
-- [ ] Rewrite the prompts from `data/reference/prompts/` as Kotlin templates without JSON-format instructions; add the quest focus discipline and the "niet herhalen" list (spec §8.3). **No checkpoints.**
+- [x] Rewrite the prompts from `data/reference/prompts/` as Kotlin templates without JSON-format instructions; add the quest focus discipline and the "niet herhalen" list (spec §8.3). **No checkpoints.**
 - [x] **Enrichment** worker (Haiku, spec §6.9/§8.4): structured ingredients + tags in one call per recipe, `enrichState`, never overwrites MANUAL parses, failure notification on the `background` channel.
       `EnrichmentWorker` (unique expedited work per recipe, needs network, 3 retries for network/429/5xx); queued after a URL import
       or a save with new or changed lines when a key is stored. A reply for lines edited in the meantime is discarded.
@@ -128,7 +128,9 @@ The web app keeps running from its last Vercel deployment until you turn it off,
       `FileProvider` (no camera permission). UI-tested with recorded replies; **[owner]** try the camera on the phone.
 
 ### Quests (spec §6.11, §11.6)
-- [ ] `QuestDefaults` (pure): vegetable choice (peak, not cooked in 60 days, with fallbacks), focus discipline, adaptive difficulty, last-10 history. Unit tests with fixed dates.
+- [x] `QuestDefaults` (pure): vegetable choice (peak, not cooked in 60 days, with fallbacks), focus discipline, adaptive difficulty, last-10 history. Unit tests with fixed dates.
+      Today's one-tap quest uses one candidate (stable per day, the next one for "Andere quest") as Seizoensgroente, so the card can
+      show it while generating; "Verras me" in Verfijn sends the whole candidate list.
 - [ ] Quest van vandaag: one-tap generation; the "what was chosen" line, a progress indicator and Annuleren show while generating (cancel records nothing); one daily quest (regenerate replaces it; the old one stays in history).
 - [ ] Verfijn form (collapsed): ingredient modes, soort quest, difficulty (Automatisch · Basis · Gemiddeld · Gevorderd), technique (skills only), cuisine, time, simple, quantity + unit.
 - [ ] Generation → `quest` + hidden recipe in one transaction; result screen with technique chips and the actions Start koken / Quest voltooid / Andere quest (+ Bewaar recept in ⋮).

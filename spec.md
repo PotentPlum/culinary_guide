@@ -776,6 +776,8 @@ score    = season + recency + (favourite ? 0.4 : 0)
 
 - **Ingredient**: *Verras me* restricted to PEAK vegetables not cooked (`attempt.vegIds`) in the last 60 days. Use all PEAK if
   that leaves fewer than 3, and all in-season vegetables if PEAK is empty.
+  The one-tap quest picks one of these candidates itself (stable for the day; "Andere quest" takes the next) and sends it as
+  *Seizoensgroente*, so the card can name it while generating. *Verras me* in Verfijn sends the whole list and Claude chooses.
 - **Focus discipline**: the most neglected discipline (§12). If none is neglected, the one with the fewest attempts in 30 days.
 - **Difficulty**: from the last 5 completed quests with an execution score. Average ≥ 8 → one level up from the most recent
   difficulty; ≤ 5 → one level down; otherwise the same. No history → Basis (`BEGINNER`).

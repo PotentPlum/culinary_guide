@@ -8,7 +8,9 @@ import kotlinx.serialization.json.doubleOrNull
 import kotlinx.serialization.json.intOrNull
 import nl.potentplum.mise.content.Content
 import nl.potentplum.mise.content.model.FacetKey
+import nl.potentplum.mise.data.db.entity.EnrichState
 import nl.potentplum.mise.data.db.entity.ParseSource
+import nl.potentplum.mise.data.db.entity.RecipeSourceType
 import nl.potentplum.mise.data.db.entity.TagKey
 import nl.potentplum.mise.data.repo.ExtraField
 import nl.potentplum.mise.data.repo.Ingredient
@@ -150,6 +152,37 @@ class ResponseMapping(
                 },
             tags = tags(reply["tags"] as? JsonObject),
         )
+
+    /**
+     * A quest reply (spec §8.6) as its hidden `QUEST` recipe; the quest fields are read by the caller. The dish type comes
+     * from the quest itself, so the recipe's tags are complete.
+     */
+    fun questRecipe(reply: JsonObject): Recipe {
+        val recipe = reply["recipe"] as? JsonObject ?: JsonObject(emptyMap())
+        val tags = tags(reply["tags"] as? JsonObject).filter { it.key != TagKey.DISH_TYPE }.toSet()
+        val dishType = reply.string("dishType")?.takeIf { it in options(FacetKey.DISH_TYPE) }
+        return Recipe(
+            title = recipe.string("title").orEmpty(),
+            sourceType = RecipeSourceType.QUEST,
+            servings = recipe.int("servings")?.takeIf { it in 1..99 },
+            totalMinutes = reply.int("timeEstimateMinutes")?.takeIf { it > 0 },
+            inLibrary = false,
+            enrichState = EnrichState.DONE,
+            ingredientGroups =
+                recipe
+                    .objects("ingredientGroups")
+                    .map { group ->
+                        IngredientGroup(
+                            name = group.string("name"),
+                            items = group.objects("items").mapNotNull { item -> item.string("text")?.let { ingredient(item, it) } },
+                        )
+                    }.filter { it.items.isNotEmpty() },
+            stepGroups =
+                listOf(StepGroup(steps = recipe.objects("steps").mapNotNull { it.string("text") }.map { Step(text = it) }))
+                    .filter { it.steps.isNotEmpty() },
+            tags = tags + listOfNotNull(dishType?.let { Tag(TagKey.DISH_TYPE, it) }),
+        )
+    }
 
     companion object {
         fun JsonObject.string(key: String): String? =
