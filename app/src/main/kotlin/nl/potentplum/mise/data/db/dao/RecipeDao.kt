@@ -121,6 +121,9 @@ interface RecipeDao {
     @Query("SELECT * FROM recipe WHERE inLibrary = 1 ORDER BY createdAt DESC")
     fun observeLibrary(): Flow<List<RecipeEntity>>
 
+    @Query("SELECT id FROM recipe WHERE inLibrary = 1 ORDER BY createdAt DESC")
+    suspend fun libraryIds(): List<String>
+
     @Query(
         "SELECT g.recipeId AS recipeId, i.name AS name, i.text AS text FROM ingredient i " +
             "JOIN ingredient_group g ON i.groupId = g.id JOIN recipe r ON g.recipeId = r.id WHERE r.inLibrary = 1",

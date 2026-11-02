@@ -46,6 +46,14 @@ data object SettingsRoute
 @Serializable
 data object AboutRoute
 
+/** First run (spec §6.16); full screen, opened once on top of Vandaag until it is finished. */
+@Serializable
+data object OnboardingRoute
+
+/** Claude-sleutel toevoegen of vervangen (spec §9); `FLAG_SECURE` while shown. */
+@Serializable
+data object KeyRoute
+
 // Detail destinations, reachable from several tabs; they stack on the current tab.
 
 @Serializable

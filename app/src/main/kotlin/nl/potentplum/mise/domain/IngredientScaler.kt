@@ -76,6 +76,28 @@ class IngredientScaler(
         }
     }
 
+    /**
+     * Rounds a raw amount for display the way scaling does: g/ml (and kg, l, …) to base units with the g → kg / ml → l
+     * switch, everything else to the nearest half. The shopping list sums raw amounts and rounds once (spec §11.7).
+     */
+    fun round(
+        quantity: Double,
+        unit: MeasureUnit?,
+    ): DisplayQuantity =
+        when {
+            unit == null || unit.dimension == Dimension.COUNT || unit.dimension == Dimension.OTHER -> {
+                DisplayQuantity(nearestHalf(quantity), null, unit)
+            }
+
+            unit.id == "el" || unit.id == "tl" -> {
+                DisplayQuantity(nearestHalf(quantity), null, unit)
+            }
+
+            else -> {
+                metric(quantity, null, unit)
+            }
+        }
+
     /** g/ml: < 50 whole numbers, ≥ 50 nearest 5; from 1000 on in kg/l with one decimal. */
     private fun metric(
         min: Double,

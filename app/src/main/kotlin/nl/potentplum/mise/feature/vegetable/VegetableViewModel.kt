@@ -5,15 +5,18 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import androidx.navigation.toRoute
 import dagger.hilt.android.lifecycle.HiltViewModel
-import kotlinx.coroutines.flow.MutableStateFlow
+import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
-import kotlinx.coroutines.flow.asStateFlow
-import kotlinx.coroutines.launch
+import kotlinx.coroutines.flow.combine
+import kotlinx.coroutines.flow.flow
+import kotlinx.coroutines.flow.stateIn
 import nl.potentplum.mise.content.Content
 import nl.potentplum.mise.content.ContentRepository
 import nl.potentplum.mise.content.model.Technique
 import nl.potentplum.mise.core.navigation.VegetableRoute
 import nl.potentplum.mise.core.util.MiseClock
+import nl.potentplum.mise.data.repo.RecipeRepository
+import nl.potentplum.mise.domain.LibraryItem
 import nl.potentplum.mise.domain.SeasonPresentation
 import nl.potentplum.mise.domain.TextMatch
 import nl.potentplum.mise.domain.VegetableInSeason
@@ -35,6 +38,8 @@ sealed interface VegetableUiState {
         val month: Int,
         val substitutions: List<Substitution>,
         val techniques: List<Technique>,
+        /** "In jouw recepten" (spec §6.5): library recipes that use this vegetable, most cooked first. */
+        val recipes: List<LibraryItem> = emptyList(),
     ) : VegetableUiState
 }
 
@@ -43,16 +48,29 @@ class VegetableViewModel
     @Inject
     constructor(
         content: ContentRepository,
+        recipes: RecipeRepository,
         clock: MiseClock,
         savedState: SavedStateHandle,
     ) : ViewModel() {
         private val id = savedState.toRoute<VegetableRoute>().id
-        private val _state = MutableStateFlow<VegetableUiState>(VegetableUiState.Loading)
-        val state: StateFlow<VegetableUiState> = _state.asStateFlow()
 
-        init {
-            viewModelScope.launch { _state.value = build(content.content(), clock.currentMonth()) }
-        }
+        val state: StateFlow<VegetableUiState> =
+            combine(flow { emit(content.content()) }, recipes.observeLibrary()) { content, library ->
+                when (val built = build(content, clock.currentMonth())) {
+                    is VegetableUiState.Loaded -> {
+                        built.copy(
+                            recipes =
+                                library
+                                    .filter { id in it.vegIds }
+                                    .sortedWith(compareByDescending<LibraryItem> { it.cookedCount }.thenBy { it.title }),
+                        )
+                    }
+
+                    else -> {
+                        built
+                    }
+                }
+            }.stateIn(viewModelScope, SharingStarted.WhileSubscribed(5_000), VegetableUiState.Loading)
 
         private fun build(
             content: Content,

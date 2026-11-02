@@ -14,6 +14,8 @@ import dagger.hilt.InstallIn
 import dagger.hilt.android.qualifiers.ApplicationContext
 import dagger.hilt.components.SingletonComponent
 import kotlinx.coroutines.flow.first
+import nl.potentplum.mise.claude.ClaudeModels
+import nl.potentplum.mise.claude.Pricing
 import nl.potentplum.mise.data.db.entity.EnrichState
 import nl.potentplum.mise.data.repo.RecipeRepository
 import nl.potentplum.mise.security.ClaudeKeyStatus
@@ -62,7 +64,30 @@ class EnrichmentQueue
             scheduler.schedule(recipeId)
             return true
         }
+
+        /** Library recipes that still have unparsed lines or missing tags, with a rough Haiku cost estimate. */
+        suspend fun estimateAll(): EnrichAllEstimate {
+            val candidates =
+                recipes.libraryIds().mapNotNull { id ->
+                    recipes.get(id)?.takeIf { it.enrichState != EnrichState.PENDING && RecipeEnricher.needsEnrichment(it) }
+                }
+            val cost =
+                candidates.sumOf { recipe ->
+                    val characters = recipe.title.length + recipe.ingredients.sumOf { it.text.length + 1 }
+                    Pricing.estimateMicroUsdForText(ClaudeModels.ENRICHMENT, characters, outputTokens = 800)
+                }
+            return EnrichAllEstimate(candidates.map { it.id }, cost)
+        }
+
+        /** Queues every recipe in [recipeIds] that still needs it; returns how many were queued. */
+        suspend fun requestAll(recipeIds: List<String>): Int = recipeIds.count { request(it) }
     }
+
+/** "Ingrediënten verrijken" for the whole library (spec §6.15): what would be sent, and its estimated cost. */
+data class EnrichAllEstimate(
+    val recipeIds: List<String>,
+    val costMicroUsd: Long,
+)
 
 @Module
 @InstallIn(SingletonComponent::class)

@@ -1,10 +1,12 @@
 package nl.potentplum.mise.data.repo
 
 import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.map
 import nl.potentplum.mise.core.util.MiseClock
 import nl.potentplum.mise.data.db.dao.ShoppingDao
 import nl.potentplum.mise.data.db.entity.ShoppingItemEntity
 import nl.potentplum.mise.domain.IngredientScaler
+import nl.potentplum.mise.domain.ShoppingEntry
 import javax.inject.Inject
 import javax.inject.Singleton
 
@@ -24,6 +26,27 @@ class ShoppingRepository
         private val clock: MiseClock,
     ) {
         fun observe(): Flow<List<ShoppingItemEntity>> = dao.observeAll()
+
+        /** Items with their source recipe titles, ready for [nl.potentplum.mise.domain.ShoppingAggregator]. */
+        fun observeEntries(): Flow<List<ShoppingEntry>> =
+            dao.observeRows().map { rows ->
+                rows.map { (item, title) ->
+                    ShoppingEntry(
+                        item.id,
+                        item.text,
+                        item.quantity,
+                        item.unit,
+                        item.name,
+                        item.recipeId,
+                        title,
+                        item.checked,
+                        item.position,
+                    )
+                }
+            }
+
+        /** A manual item ("Los"). */
+        suspend fun addManual(text: String): Int = text.trim().takeIf { it.isNotEmpty() }?.let { add(listOf(ShoppingLine(it))) } ?: 0
 
         /** Adds lines from [recipeId] (or manual lines when null) at the end of the list. */
         suspend fun add(
@@ -66,7 +89,22 @@ class ShoppingRepository
 
         suspend fun delete(id: String) = dao.delete(id)
 
+        suspend fun setChecked(
+            ids: List<String>,
+            checked: Boolean,
+        ) = dao.setChecked(ids, checked)
+
+        /** Deletes [ids] and returns what was deleted, for Ongedaan maken. */
+        suspend fun deleteForUndo(ids: List<String>): List<ShoppingItemEntity> = dao.get(ids).also { dao.delete(ids) }
+
         suspend fun deleteChecked() = dao.deleteChecked()
+
+        /** Clears ticked items (or everything) and returns what was deleted, for Ongedaan maken. */
+        suspend fun clearForUndo(onlyChecked: Boolean): List<ShoppingItemEntity> {
+            val removed = dao.all().filter { !onlyChecked || it.checked }
+            if (onlyChecked) dao.deleteChecked() else dao.deleteAll()
+            return removed
+        }
 
         suspend fun deleteAll() = dao.deleteAll()
 

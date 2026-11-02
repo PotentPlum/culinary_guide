@@ -332,6 +332,7 @@
     <string name="detail_quest_with">Quest met %1$s</string>
     <string name="detail_open_link">Openen in de browser</string>
     <string name="detail_curated_meta">%1$s · %2$d min</string>
+    <string name="detail_curated_import">Importeren</string>
     <string name="techniques_filter_all">Alle niveaus</string>
     <string name="techniques_reference">Naslag</string>
     <string name="techniques_parent">Bouwt voort op</string>
@@ -472,6 +473,192 @@
     <string name="quest_deleted">Quest verwijderd</string>
     <string name="quest_meta">%1$s · %2$s</string>
     <string name="quest_row_more">Opties voor %1$s</string>
+    <!-- P1: Instellingen, Claude-sleutel, back-up, Over. -->
+    <string name="settings_section_claude">Claude</string>
+    <string name="settings_section_data">Gegevens</string>
+    <string name="settings_key_none">Geen sleutel ingesteld. Quests, recepten van foto\'s en het aanvullen van ingrediënten werken pas met een sleutel.</string>
+    <string name="settings_key_stored">Sleutel opgeslagen: %1$s</string>
+    <string name="settings_key_invalid">Claude accepteert deze sleutel niet: %1$s. Vervang hem.</string>
+    <string name="settings_key_reentry_body">Sleutel opnieuw invoeren: de opgeslagen sleutel kon niet meer worden ontsleuteld en is gewist.</string>
+    <string name="settings_key_add">Sleutel toevoegen</string>
+    <string name="settings_key_replace">Sleutel vervangen</string>
+    <string name="settings_key_test">Sleutel testen</string>
+    <string name="settings_key_test_ok">De sleutel werkt.</string>
+    <string name="settings_key_delete">Sleutel verwijderen</string>
+    <string name="settings_key_delete_title">Sleutel verwijderen?</string>
+    <string name="settings_key_delete_body">Quests, recepten van foto\'s en het aanvullen van ingrediënten werken pas weer als je een nieuwe sleutel invoert.</string>
+    <string name="settings_key_deleted">Sleutel verwijderd</string>
+    <string name="settings_quality_title">Kwaliteit</string>
+    <string name="settings_quality_sub">Voor quests en recepten van foto\'s. Ingrediënten aanvullen gebruikt altijd het snelste model.</string>
+    <string name="settings_quality_fast">Snel</string>
+    <string name="settings_quality_fast_sub">Het snelst en het goedkoopst</string>
+    <string name="settings_quality_balanced">Gebalanceerd</string>
+    <string name="settings_quality_balanced_sub">Goede resultaten voor een redelijke prijs (aanbevolen)</string>
+    <string name="settings_quality_best">Beste</string>
+    <string name="settings_quality_best_sub">De beste resultaten, ongeveer twee keer zo duur</string>
+    <string name="settings_usage_title">Gebruik deze maand</string>
+    <string name="settings_usage_value">%1$s tokens · ongeveer %2$s</string>
+    <string name="settings_usage_tip">Tip: stel in de Anthropic Console een maandlimiet in voor deze sleutel. Dan kan een fout nooit veel kosten.</string>
+    <string name="settings_enrich_title">Ingrediënten verrijken</string>
+    <string name="settings_enrich_sub">Laat Claude de ingrediënten structureren en tags toevoegen bij alle recepten waar dat nog niet gebeurd is.</string>
+    <string name="settings_enrich_none">Alle recepten zijn al verrijkt.</string>
+    <string name="settings_enrich_confirm_title">Ingrediënten verrijken?</string>
+    <plurals name="settings_enrich_confirm_body">
+        <item quantity="one">%1$d recept wordt op de achtergrond aangevuld. Geschatte kosten: %2$s.</item>
+        <item quantity="other">%1$d recepten worden op de achtergrond aangevuld. Geschatte kosten: %2$s.</item>
+    </plurals>
+    <string name="settings_enrich_confirm">Verrijken</string>
+    <plurals name="settings_enrich_queued">
+        <item quantity="one">%1$d recept wordt aangevuld</item>
+        <item quantity="other">%1$d recepten worden aangevuld</item>
+    </plurals>
+    <string name="settings_about_open">Versie, bronnen, privacy en licenties</string>
+    <string name="key_title">Claude-sleutel</string>
+    <string name="key_intro">Mise gebruikt je eigen Claude-sleutel voor quests, recepten van foto\'s en het aanvullen van ingrediënten. Je betaalt per gebruik aan Anthropic; een quest kost meestal een paar cent.</string>
+    <string name="key_storage">De sleutel wordt versleuteld met de Android Keystore op deze telefoon bewaard. Hij komt nooit in een back-up; op een nieuwe telefoon voer je hem opnieuw in.</string>
+    <string name="key_where">Een sleutel maak je in de Anthropic Console (console.anthropic.com) onder API keys. Maak er een speciaal voor Mise, met een maandlimiet.</string>
+    <string name="key_current">Huidige sleutel: %1$s</string>
+    <string name="key_field_label">API-sleutel</string>
+    <string name="key_show">Sleutel tonen</string>
+    <string name="key_hide">Sleutel verbergen</string>
+    <string name="key_format_warning">Een Claude-sleutel begint meestal met sk-ant-.</string>
+    <string name="key_check_btn">Controleren en opslaan</string>
+    <string name="key_checking">Sleutel controleren…</string>
+    <string name="key_invalid">Ongeldige sleutel. Controleer of je hem volledig hebt geplakt.</string>
+    <string name="key_unreachable">Kon Claude niet bereiken om de sleutel te controleren.</string>
+    <string name="key_save_anyway">Toch opslaan</string>
+    <string name="key_saved">Sleutel opgeslagen</string>
+    <string name="key_clear_clipboard">Klembord wissen</string>
+    <string name="key_clipboard_cleared">Klembord gewist</string>
+    <string name="key_privacy">Naar Claude gaan alleen de foto\'s en receptteksten die je zelf importeert, de instellingen van een quest, de groenten van het seizoen en de titels van je laatste 10 quests.</string>
+    <string name="backup_title">Back-up</string>
+    <string name="backup_sub">Recepten, quests, je dagboek met foto\'s en de boodschappenlijst in één zip-bestand. De Claude-sleutel zit er nooit in.</string>
+    <string name="backup_export">Back-up maken</string>
+    <string name="backup_restore">Back-up terugzetten</string>
+    <plurals name="backup_exported">
+        <item quantity="one">Back-up opgeslagen met %1$d recept</item>
+        <item quantity="other">Back-up opgeslagen met %1$d recepten</item>
+    </plurals>
+    <string name="backup_restore_title">Back-up terugzetten</string>
+    <string name="backup_summary">%1$s, %2$s, %3$s</string>
+    <plurals name="backup_count_recipes">
+        <item quantity="one">%1$d recept</item>
+        <item quantity="other">%1$d recepten</item>
+    </plurals>
+    <plurals name="backup_count_quests">
+        <item quantity="one">%1$d quest</item>
+        <item quantity="other">%1$d quests</item>
+    </plurals>
+    <plurals name="backup_count_attempts">
+        <item quantity="one">%1$d keer gekookt</item>
+        <item quantity="other">%1$d keer gekookt</item>
+    </plurals>
+    <string name="backup_restore_merge">Samenvoegen</string>
+    <string name="backup_restore_merge_sub">Samenvoegen: voegt toe wat je nog niet hebt; van een recept dat je al hebt wint de nieuwste versie.</string>
+    <string name="backup_restore_replace">Vervangen</string>
+    <string name="backup_restore_replace_sub">Vervangen: wist eerst al je recepten, quests, dagboek en boodschappenlijst.</string>
+    <string name="backup_replace_title">Alles vervangen?</string>
+    <string name="backup_replace_body">Je huidige recepten, quests, dagboek en boodschappenlijst worden gewist. Typ %1$s om door te gaan.</string>
+    <string name="backup_restored_title">Back-up teruggezet</string>
+    <plurals name="backup_restored_enrich">
+        <item quantity="one">%1$d recept heeft nog ingrediënten die Mise niet herkent. Laat Claude ze aanvullen?</item>
+        <item quantity="other">%1$d recepten hebben nog ingrediënten die Mise niet herkent. Laat Claude ze aanvullen?</item>
+    </plurals>
+    <string name="backup_error_not_a_backup">Dit is geen Mise-back-up.</string>
+    <string name="backup_error_newer">Deze back-up is gemaakt met een nieuwere versie van Mise. Werk de app eerst bij.</string>
+    <string name="backup_error_corrupt">Deze back-up is beschadigd en kan niet worden gelezen.</string>
+    <string name="backup_error_io">Het bestand kon niet worden gelezen of geschreven.</string>
+    <string name="about_version">Versie %1$s</string>
+    <string name="about_sources_title">Bronnen</string>
+    <string name="about_sources_body">Oogstperiodes van groenten: velt.nu (Vereniging voor Ecologische Leef- en Teeltwijze). De teksten over groenten en technieken zijn voor Mise samengesteld.</string>
+    <string name="about_privacy_title">Privacy</string>
+    <string name="about_privacy_body">Al je gegevens blijven op deze telefoon. Mise heeft geen account, geen analytics, geen crashrapportage en geen advertenties. Mise maakt alleen verbinding met de receptlinks die je zelf invoert of deelt, met de afbeeldingen van geïmporteerde recepten en met api.anthropic.com. Naar Claude gaan alleen de foto\'s en receptteksten die je importeert of laat aanvullen, de instellingen van een quest, de groenten van het seizoen en de titels en technieken van je laatste 10 quests.</string>
+    <string name="about_security_title">Je sleutel</string>
+    <string name="about_security_body">Je Claude-sleutel is versleuteld met de Android Keystore en zit nooit in een back-up, export of log. Dat beschermt tegen back-ups, andere apps, iemand die even je ontgrendelde telefoon pakt en logbestanden. Het beschermt niet tegen een geroote of gehackte telefoon. Gebruik daarom een aparte sleutel met een maandlimiet.</string>
+    <string name="about_licences_title">Open-source licenties</string>
+    <string name="about_fonts_body">Lettertypen, onder de SIL Open Font License 1.1 (tik voor de licentietekst):</string>
+    <string name="about_font_instrument_serif">Instrument Serif</string>
+    <string name="about_font_instrument_sans">Instrument Sans</string>
+    <string name="about_font_jetbrains_mono">JetBrains Mono</string>
+    <string name="about_libraries_body">Bibliotheken:</string>
+    <string-array name="about_libraries">
+        <item>AndroidX, Jetpack Compose, Room, WorkManager, DataStore, Navigation · Apache License 2.0</item>
+        <item>Kotlin, kotlinx.coroutines, kotlinx.serialization · Apache License 2.0</item>
+        <item>Dagger / Hilt · Apache License 2.0</item>
+        <item>OkHttp, Okio · Apache License 2.0</item>
+        <item>Coil · Apache License 2.0</item>
+        <item>Timber · Apache License 2.0</item>
+        <item>jsoup · MIT License</item>
+        <item>Material Design-iconen · Apache License 2.0</item>
+    </string-array>
+    <!-- P1: Boodschappen. -->
+    <string name="shopping_section_recipes">Uit recepten</string>
+    <string name="shopping_section_manual">Los</string>
+    <string name="shopping_add_label">Iets toevoegen</string>
+    <string name="shopping_add">Toevoegen</string>
+    <string name="shopping_delete_item">%1$s verwijderen</string>
+    <string name="shopping_removed">Verwijderd van je lijst</string>
+    <string name="shopping_clear_checked">Afgevinkte items wissen</string>
+    <string name="shopping_clear_all">Hele lijst wissen</string>
+    <string name="shopping_share">Lijst delen</string>
+    <string name="shopping_share_title">Boodschappen</string>
+    <!-- P1: Dagboek. -->
+    <string name="journal_filter_all">Alles</string>
+    <string name="journal_filter_recipes">Recepten</string>
+    <string name="journal_filter_quests">Quests</string>
+    <string name="journal_month">%1$s %2$d</string>
+    <string name="journal_deleted_recipe">Verwijderd recept</string>
+    <string name="journal_kind_recipe">Recept</string>
+    <string name="journal_kind_quest">Quest</string>
+    <string name="journal_open_recipe">Recept openen</string>
+    <string name="journal_delete_entry">Uit dagboek verwijderen</string>
+    <string name="journal_entry_deleted">Verwijderd uit je dagboek</string>
+    <string name="journal_stat_month">deze maand gekookt</string>
+    <string name="journal_stat_total">keer gekookt in totaal</string>
+    <string name="journal_stat_quests">quests voltooid</string>
+    <string name="journal_season_title">Dit seizoen: %1$s</string>
+    <string name="season_spring">lente</string>
+    <string name="season_summer">zomer</string>
+    <string name="season_autumn">herfst</string>
+    <string name="season_winter">winter</string>
+    <string name="journal_techniques_title">Technieken</string>
+    <string name="journal_none_yet">Nog niets vastgelegd.</string>
+    <string name="journal_count">%1$d×</string>
+    <plurals name="journal_discipline_detail">
+        <item quantity="one">%1$d keer</item>
+        <item quantity="other">%1$d keer</item>
+    </plurals>
+    <plurals name="journal_discipline_detail_scored">
+        <item quantity="one">%1$d keer · gemiddeld %2$s</item>
+        <item quantity="other">%1$d keer · gemiddeld %2$s</item>
+    </plurals>
+    <string name="journal_badges_title">Insignes</string>
+    <string name="journal_badge_earned">Behaald</string>
+    <string name="journal_badge_locked">Nog niet behaald</string>
+    <plurals name="badge_missing_attempts">
+        <item quantity="one">Nog %1$d keer oefenen</item>
+        <item quantity="other">Nog %1$d keer oefenen</item>
+    </plurals>
+    <plurals name="badge_missing_peak_vegetables">
+        <item quantity="one">Nog %1$d groente op z\'n best</item>
+        <item quantity="other">Nog %1$d groenten op hun best</item>
+    </plurals>
+    <plurals name="badge_missing_peak_months">
+        <item quantity="one">Nog %1$d maand met een groente op z\'n best</item>
+        <item quantity="other">Nog %1$d maanden met een groente op z\'n best</item>
+    </plurals>
+    <string name="badge_missing_score">Gemiddelde uitvoering %1$s; %2$s (%3$s) nodig</string>
+    <string name="badge_missing_scores">Geef je pogingen een cijfer voor uitvoering; gemiddeld %1$s nodig</string>
+    <!-- P1: first run. -->
+    <string name="onboarding_welcome_title">Welkom bij <i>Mise</i></string>
+    <string name="onboarding_welcome_body">Wat kook ik vandaag? Mise zet je eigen recepten bovenaan met de Nederlandse groenten die nu op hun best zijn, en houdt bij wat je kookt.</string>
+    <string name="onboarding_start">Beginnen</string>
+    <string name="onboarding_next">Verder</string>
+    <string name="onboarding_skip">Overslaan</string>
+    <string name="onboarding_key_title">Claude-sleutel (optioneel)</string>
+    <string name="onboarding_restore_title">Back-up terugzetten (optioneel)</string>
+    <string name="onboarding_restore_body">Heb je een back-up van Mise, of de omgezette gegevens van de oude web-app? Zet die dan nu terug.</string>
+    <string name="backup_restored_enrich_later">Dat kan later via Instellingen › Ingrediënten verrijken.</string>
     <string-array name="score_steps">
         <item>Mislukt</item>
         <item>Matig</item>

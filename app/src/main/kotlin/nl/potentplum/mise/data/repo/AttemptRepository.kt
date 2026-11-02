@@ -5,6 +5,7 @@ import nl.potentplum.mise.content.Content
 import nl.potentplum.mise.content.ContentRepository
 import nl.potentplum.mise.core.util.MiseClock
 import nl.potentplum.mise.data.db.dao.AttemptDao
+import nl.potentplum.mise.data.db.dao.AttemptRow
 import nl.potentplum.mise.data.db.entity.AttemptEntity
 import nl.potentplum.mise.data.db.entity.AttemptSourceType
 import nl.potentplum.mise.data.db.entity.TagKey
@@ -69,6 +70,67 @@ class AttemptRepository
         private val clock: MiseClock,
     ) {
         fun observeAll(): Flow<List<AttemptEntity>> = attemptDao.observeAll()
+
+        /** Dagboek › Tijdlijn (spec §6.13). */
+        fun observeTimeline(): Flow<List<AttemptRow>> = attemptDao.observeTimeline()
+
+        /**
+         * Edits a journal entry (spec §6.13): scores, notes, date, and removing the photo. A new date in another month
+         * recomputes which of its vegetables were at peak.
+         */
+        suspend fun update(
+            id: String,
+            score: Int?,
+            tasteScore: Int?,
+            notes: String?,
+            cookedOn: LocalDate,
+            removePhoto: Boolean,
+        ) {
+            val attempt = attemptDao.get(id) ?: return
+            val zone = MiseClock.ZONE
+            val old =
+                java.time.Instant
+                    .ofEpochMilli(attempt.cookedAt)
+                    .atZone(zone)
+            val cookedAt =
+                if (old.toLocalDate() ==
+                    cookedOn
+                ) {
+                    attempt.cookedAt
+                } else {
+                    cookedOn
+                        .atTime(old.toLocalTime())
+                        .atZone(zone)
+                        .toInstant()
+                        .toEpochMilli()
+                }
+            val month = cookedOn.monthValue
+            val c = content.content()
+            if (removePhoto) attempt.photoPath?.let { java.io.File(it).delete() }
+            attemptDao.upsert(
+                attempt.copy(
+                    score = score,
+                    tasteScore = tasteScore,
+                    notes = notes?.trim()?.takeIf { it.isNotEmpty() },
+                    cookedAt = cookedAt,
+                    photoPath = if (removePhoto) null else attempt.photoPath,
+                    peakVegIds =
+                        attempt.vegIds
+                            .filter { vegId -> c.vegetable(vegId)?.let { Seasonality.statusFor(it, month) } == SeasonStatus.PEAK }
+                            .sorted(),
+                ),
+            )
+        }
+
+        /** Deletes an entry but keeps its photo until [discardPhoto], so [restore] can undo it. */
+        suspend fun deleteForUndo(id: String): AttemptEntity? = attemptDao.get(id)?.also { attemptDao.delete(id) }
+
+        suspend fun restore(attempt: AttemptEntity) = attemptDao.upsert(attempt)
+
+        /** After the undo window: the deleted entry's photo goes too. */
+        fun discardPhoto(attempt: AttemptEntity) {
+            attempt.photoPath?.let { java.io.File(it).delete() }
+        }
 
         /**
          * Logs a cook of [recipeId] (spec §6.12): snapshots, the photo, and quest completion when the recipe is a quest's,

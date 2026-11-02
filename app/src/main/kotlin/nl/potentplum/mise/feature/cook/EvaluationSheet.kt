@@ -186,7 +186,7 @@ fun EvaluationSheet(
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-private fun DateDialog(
+internal fun DateDialog(
     selected: LocalDate,
     today: LocalDate,
     onPick: (LocalDate) -> Unit,

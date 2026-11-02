@@ -1,0 +1,223 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "backup.schema.json",
+  "title": "Mise backup (backup.json)",
+  "description": "The backup.json inside a Mise-backup-*.zip (spec §13.1), next to images/{recipeId}.jpg and journal/{attemptId}.jpg. Written by the app and by tools/legacy_to_backup.py; read by the restore. Timestamps are epoch millis (UTC). Optional fields may be absent or null. Never contains the Claude API key or claude_usage. Keep in sync with data/backup/BackupFormat.kt.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["format", "schemaVersion", "exportedAt", "appVersion"],
+  "properties": {
+    "format": { "enum": ["mise-backup"] },
+    "schemaVersion": { "type": "integer", "minimum": 1, "maximum": 1 },
+    "exportedAt": { "$ref": "#/$defs/millis" },
+    "appVersion": { "type": "string", "minLength": 1 },
+    "recipes": { "type": "array", "items": { "$ref": "#/$defs/recipe" } },
+    "quests": { "type": "array", "items": { "$ref": "#/$defs/quest" } },
+    "attempts": { "type": "array", "items": { "$ref": "#/$defs/attempt" } },
+    "shoppingItems": { "type": "array", "items": { "$ref": "#/$defs/shoppingItem" } },
+    "settings": { "oneOf": [{ "type": "null" }, { "$ref": "#/$defs/settings" }] }
+  },
+  "$defs": {
+    "id": { "type": "string", "minLength": 1, "pattern": "^[A-Za-z0-9_-]{1,64}$" },
+    "millis": { "type": "integer", "minimum": 0 },
+    "optionalString": { "type": ["string", "null"] },
+    "optionalInt": { "type": ["integer", "null"] },
+    "optionalNumber": { "type": ["number", "null"] },
+    "stringList": { "type": "array", "items": { "type": "string" } },
+    "difficulty": { "enum": ["BEGINNER", "INTERMEDIATE", "ADVANCED"] },
+    "recipe": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "title", "sourceType", "createdAt", "updatedAt"],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "title": { "type": "string", "minLength": 1 },
+        "description": { "type": "string" },
+        "sourceType": { "enum": ["URL", "PHOTO", "PAGE", "MANUAL", "QUEST", "LEGACY"] },
+        "sourceUrl": { "$ref": "#/$defs/optionalString" },
+        "sourceLabel": { "type": "string" },
+        "author": { "$ref": "#/$defs/optionalString" },
+        "image": { "type": ["string", "null"], "pattern": "^images/[A-Za-z0-9_-]{1,64}\\.jpg$" },
+        "imageUrl": { "$ref": "#/$defs/optionalString" },
+        "servings": { "$ref": "#/$defs/optionalInt" },
+        "prepMinutes": { "$ref": "#/$defs/optionalInt" },
+        "cookMinutes": { "$ref": "#/$defs/optionalInt" },
+        "totalMinutes": { "$ref": "#/$defs/optionalInt" },
+        "notes": { "$ref": "#/$defs/optionalString" },
+        "isFavorite": { "type": "boolean" },
+        "inLibrary": { "type": "boolean" },
+        "enrichState": { "enum": ["NONE", "PENDING", "DONE", "FAILED"] },
+        "sourceMeta": { "oneOf": [{ "type": "null" }, { "$ref": "#/$defs/sourceMeta" }] },
+        "createdAt": { "$ref": "#/$defs/millis" },
+        "updatedAt": { "$ref": "#/$defs/millis" },
+        "ingredientGroups": { "type": "array", "items": { "$ref": "#/$defs/ingredientGroup" } },
+        "stepGroups": { "type": "array", "items": { "$ref": "#/$defs/stepGroup" } },
+        "extraFields": { "type": "array", "items": { "$ref": "#/$defs/extraField" } },
+        "tags": { "type": "array", "items": { "$ref": "#/$defs/tag" } }
+      }
+    },
+    "sourceMeta": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "ratingValue": { "$ref": "#/$defs/optionalNumber" },
+        "ratingCount": { "$ref": "#/$defs/optionalInt" },
+        "datePublished": { "$ref": "#/$defs/optionalString" },
+        "keywords": { "$ref": "#/$defs/stringList" },
+        "diet": { "$ref": "#/$defs/stringList" },
+        "nutrition": {
+          "oneOf": [
+            { "type": "null" },
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "calories": { "$ref": "#/$defs/optionalString" },
+                "protein": { "$ref": "#/$defs/optionalString" },
+                "carbs": { "$ref": "#/$defs/optionalString" },
+                "fat": { "$ref": "#/$defs/optionalString" }
+              }
+            }
+          ]
+        },
+        "video": { "$ref": "#/$defs/optionalString" }
+      }
+    },
+    "ingredientGroup": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id"],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "name": { "$ref": "#/$defs/optionalString" },
+        "items": { "type": "array", "items": { "$ref": "#/$defs/ingredient" } }
+      }
+    },
+    "ingredient": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "text"],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "text": { "type": "string" },
+        "quantity": { "$ref": "#/$defs/optionalNumber" },
+        "quantityMax": { "$ref": "#/$defs/optionalNumber" },
+        "unit": { "$ref": "#/$defs/optionalString" },
+        "name": { "$ref": "#/$defs/optionalString" },
+        "note": { "$ref": "#/$defs/optionalString" },
+        "parseSource": { "enum": ["NONE", "LOCAL", "CLAUDE", "MANUAL"] }
+      }
+    },
+    "stepGroup": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id"],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "name": { "$ref": "#/$defs/optionalString" },
+        "steps": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["id", "text"],
+            "properties": { "id": { "$ref": "#/$defs/id" }, "text": { "type": "string" } }
+          }
+        }
+      }
+    },
+    "extraField": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "label", "value"],
+      "properties": { "id": { "$ref": "#/$defs/id" }, "label": { "type": "string" }, "value": { "type": "string" } }
+    },
+    "tag": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["key", "value"],
+      "properties": {
+        "key": { "enum": ["CUISINE", "DISH_TYPE", "MAIN_INGREDIENT", "TECHNIQUE"] },
+        "value": { "type": "string", "minLength": 1 }
+      }
+    },
+    "quest": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "createdAt", "ingredientMode", "ingredient", "questType", "text", "skill", "difficulty", "timeEstimateMinutes", "why", "dishType", "recipeId"],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "createdAt": { "$ref": "#/$defs/millis" },
+        "isDaily": { "type": "boolean" },
+        "status": { "enum": ["OPEN", "COMPLETED"] },
+        "completedAt": { "type": ["integer", "null"] },
+        "ingredientMode": { "enum": ["CUSTOM", "SEASONAL", "SURPRISE"] },
+        "ingredient": { "type": "string" },
+        "vegId": { "$ref": "#/$defs/optionalString" },
+        "quantity": { "$ref": "#/$defs/optionalNumber" },
+        "unit": { "$ref": "#/$defs/optionalString" },
+        "questType": { "enum": ["MAALTIJD", "LUNCH", "BIJGERECHT", "SAUS", "BOUILLON", "COMPONENT", "CLAUDE_CHOICE"] },
+        "requestedDifficulty": { "oneOf": [{ "type": "null" }, { "$ref": "#/$defs/difficulty" }] },
+        "focusDiscipline": { "enum": ["mechanical", "thermal", "flavor", null] },
+        "requestedTechniqueId": { "$ref": "#/$defs/optionalString" },
+        "requestedCuisine": { "$ref": "#/$defs/optionalString" },
+        "timeLimit": { "enum": ["UNDER_15", "UNDER_30", "UNDER_60", "OVER_60", null] },
+        "simpleAndSmall": { "type": "boolean" },
+        "text": { "type": "string" },
+        "skill": { "type": "string" },
+        "difficulty": { "$ref": "#/$defs/difficulty" },
+        "timeEstimateMinutes": { "type": "integer", "minimum": 0 },
+        "why": { "type": "string" },
+        "dishType": { "type": "string" },
+        "tips": { "$ref": "#/$defs/stringList" },
+        "recipeId": { "$ref": "#/$defs/id" }
+      }
+    },
+    "attempt": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "sourceType", "cookedAt"],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "sourceType": { "enum": ["RECIPE", "QUEST"] },
+        "recipeId": { "$ref": "#/$defs/optionalString" },
+        "questId": { "$ref": "#/$defs/optionalString" },
+        "cookedAt": { "$ref": "#/$defs/millis" },
+        "score": { "type": ["integer", "null"], "minimum": 1, "maximum": 10 },
+        "tasteScore": { "type": ["integer", "null"], "minimum": 1, "maximum": 10 },
+        "notes": { "$ref": "#/$defs/optionalString" },
+        "photo": { "type": ["string", "null"], "pattern": "^journal/[A-Za-z0-9_-]{1,64}\\.jpg$" },
+        "techniques": { "$ref": "#/$defs/stringList" },
+        "cuisines": { "$ref": "#/$defs/stringList" },
+        "vegIds": { "$ref": "#/$defs/stringList" },
+        "peakVegIds": { "$ref": "#/$defs/stringList" }
+      }
+    },
+    "shoppingItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "text", "position", "createdAt"],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "text": { "type": "string" },
+        "quantity": { "$ref": "#/$defs/optionalNumber" },
+        "unit": { "$ref": "#/$defs/optionalString" },
+        "name": { "$ref": "#/$defs/optionalString" },
+        "recipeId": { "$ref": "#/$defs/optionalString" },
+        "checked": { "type": "boolean" },
+        "position": { "type": "integer", "minimum": 0 },
+        "createdAt": { "$ref": "#/$defs/millis" }
+      }
+    },
+    "settings": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "quality": { "enum": ["FAST", "BALANCED", "BEST", null] },
+        "seasonalNotificationsEnabled": { "type": ["boolean", "null"] },
+        "librarySort": { "enum": ["RECENTLY_ADDED", "ALPHABETICAL", "RECENTLY_COOKED", null] },
+        "showQuestCard": { "type": ["boolean", "null"] }
+      }
+    }
+  }
+}

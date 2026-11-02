@@ -307,6 +307,34 @@ for i, case in enumerate(golden.get("cases", [])):
     if "error" in case and case["error"].get("name") != "RecipeIngestionError":
         err(f"golden.cases[{i}]", "only RecipeIngestionError may be expected")
 
+# Backup format (spec §13.1): the sample must match backup.schema.json and reference only what it contains.
+BACKUP = "fixtures/backup/sample.json"
+backup = load(BACKUP, "backup.schema.json")
+veg_ids = {v["id"] for v in vegs}
+backup_recipes = {r["id"] for r in backup.get("recipes", [])}
+backup_quests = {q["id"] for q in backup.get("quests", [])}
+for kind in ("recipes", "quests", "attempts", "shoppingItems"):
+    unique(f"{BACKUP}.{kind}", [x["id"] for x in backup.get(kind, [])])
+for q in backup.get("quests", []):
+    if q["recipeId"] not in backup_recipes:
+        err(f"{BACKUP}.quests.{q['id']}", f"unknown recipeId {q['recipeId']!r}")
+for a in backup.get("attempts", []):
+    where = f"{BACKUP}.attempts.{a['id']}"
+    if a.get("recipeId") and a["recipeId"] not in backup_recipes:
+        err(where, f"unknown recipeId {a['recipeId']!r}")
+    if a.get("questId") and a["questId"] not in backup_quests:
+        err(where, f"unknown questId {a['questId']!r}")
+    for vid in a.get("vegIds", []) + a.get("peakVegIds", []):
+        if vid not in veg_ids:
+            err(where, f"unknown vegetable {vid!r}")
+    if not set(a.get("peakVegIds", [])) <= set(a.get("vegIds", [])):
+        err(where, "peakVegIds must be a subset of vegIds")
+    if a.get("photo") and a["photo"] != f"journal/{a['id']}.jpg":
+        err(where, "photo must be journal/{id}.jpg")
+for r in backup.get("recipes", []):
+    if r.get("image") and r["image"] != f"images/{r['id']}.jpg":
+        err(f"{BACKUP}.recipes.{r['id']}", "image must be images/{id}.jpg")
+
 velt = load("reference/velt-vegetables.json")
 if not isinstance(velt, list) or not all(isinstance(v, dict) and v.get("name") and v.get("url") for v in velt):
     err("reference/velt-vegetables.json", "expected a list of objects with name + url")
