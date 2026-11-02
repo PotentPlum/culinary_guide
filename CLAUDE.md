@@ -12,7 +12,7 @@ web app was removed; its last version is commit `e76778c` (`git show e76778c:web
 - `tools/validate_data.py`: stdlib-only validator for everything in `data/`.
 - `app/`: the Android app (single `:app` module, packages as in spec §4.2). `lint-checks/`: the custom lint rule
   `ComposeHardcodedText` (Android's `HardcodedText` only covers XML layouts). P0 is done except the owner/device items;
-  feature screens are placeholders until P1.
+  P1 features are in; what's left of P1 is in `todo.md` (mostly the legacy converter and owner/device checks).
 
 ## Commands
 ```bash
@@ -24,6 +24,9 @@ python3 tools/validate_data.py --write-fixtures  # regenerate seasonality fixtur
 ```
 Versions are pinned in `gradle/libs.versions.toml`. compileSdk is 37 (current AndroidX/OkHttp require it), targetSdk 36.
 Room schemas are exported to `app/schemas/` (commit them); unit tests use Robolectric for anything Android.
+Hilt UI tests run on a fixed clock (22 Oct 2026, `testing/FakeClockModule.kt`). In `waitUntil`, wait for the UI rather than
+`runBlocking` on DataStore: that blocks the main thread and flakes.
+`MISE_SIGN_WITH_DEBUG_KEY=true ./gradlew assembleRelease` signs a release APK with the debug key (test releases only).
 
 **Cloud sessions:** `.claude/hooks/session-start.sh` (SessionStart, remote only) installs the Android SDK into
 `/opt/android-sdk` if missing (platform 37.0, build-tools 36.0.0), writes `local.properties`, adds a user-level Gradle

@@ -25,6 +25,11 @@ val versionParts = gitVersion.split('.', '-').mapNotNull { it.toIntOrNull() } + 
 // its passwords never live in the repo. Without them, assembleRelease still builds, unsigned.
 val releaseKeystore: String? = providers.environmentVariable("MISE_KEYSTORE_FILE").orNull
 
+// MISE_SIGN_WITH_DEBUG_KEY=true signs the release build with the machine's debug key instead, for a test release before
+// the owner's keystore exists. Such an APK can't be updated by one signed with another key: uninstall first.
+val signWithDebugKey: Boolean =
+    releaseKeystore == null && providers.environmentVariable("MISE_SIGN_WITH_DEBUG_KEY").orNull == "true"
+
 android {
     namespace = "nl.potentplum.mise"
     compileSdk = 37
@@ -57,7 +62,7 @@ android {
             isMinifyEnabled = true
             isShrinkResources = true
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
-            signingConfig = signingConfigs.findByName("release")
+            signingConfig = if (signWithDebugKey) signingConfigs.getByName("debug") else signingConfigs.findByName("release")
         }
     }
 
