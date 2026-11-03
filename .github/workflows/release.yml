@@ -2,8 +2,9 @@
 # Either push the tag, or run this workflow by hand (Actions → Release → Run workflow) with a version: it then tags the
 # chosen branch's commit itself. Needs four repository secrets: MISE_KEYSTORE_BASE64, MISE_KEYSTORE_PASSWORD,
 # MISE_KEY_ALIAS, MISE_KEY_PASSWORD.
-# A manual run with "debug_key" needs no secrets: it signs with the runner's throwaway debug key and publishes a
-# pre-release. Every such build has a different key, so installing the next one means uninstalling first.
+# A manual run with "debug_key" needs no secrets: it signs with the runner's throwaway debug key and publishes a normal
+# (latest) release, so app stores like Obtainium find it without "Include prereleases". Every such build has a
+# different key, so installing the next one means uninstalling first.
 name: Release
 
 on:
@@ -16,7 +17,7 @@ on:
         required: true
         type: string
       debug_key:
-        description: "Sign with a throwaway debug key (no secrets needed; pre-release; uninstall before the next one)"
+        description: "Sign with a throwaway debug key (no secrets needed; published as the latest release; uninstall before the next one)"
         required: false
         default: false
         type: boolean
@@ -107,7 +108,7 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          prerelease=""
+          release_flag=""
           title="Mise ${TAG}"
           # The tag may have appeared while this ran: never publish under a tag that points at another commit.
           existing="$(git ls-remote origin "refs/tags/$TAG^{}" | cut -f1)"
@@ -115,11 +116,12 @@ jobs:
           if [ -n "$existing" ] && [ "$existing" != "$GITHUB_SHA" ]; then
             echo "::error::Tag $TAG points at $existing, not at $GITHUB_SHA"; exit 1
           fi
-          case "$TAG" in *-*) prerelease="--prerelease" ;; esac
-          if [ "$DEBUG_KEY" = "true" ]; then prerelease="--prerelease"; title="Mise ${TAG} (debug key)"; fi
+          case "$TAG" in *-*) release_flag="--prerelease" ;; esac
+          # Debug-key test builds are published as normal releases, even with a hyphenated tag, so Obtainium sees them.
+          if [ "$DEBUG_KEY" = "true" ]; then release_flag="--latest"; title="Mise ${TAG} (debug key)"; fi
           # --target only matters on a manual run, where the tag doesn't exist yet: it is created at this commit.
           gh release create "$TAG" "mise-${TAG}.apk" "mise-${TAG}.apk.sha256" \
-            --title "$title" --generate-notes --target "$GITHUB_SHA" $prerelease
+            --title "$title" --generate-notes --target "$GITHUB_SHA" $release_flag
 
       - name: Remove the keystore
         if: always()

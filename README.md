@@ -43,7 +43,8 @@ repository secrets (Settings → Secrets and variables → Actions): `MISE_KEYST
 `MISE_KEYSTORE_PASSWORD`, `MISE_KEY_ALIAS` (`mise`) and `MISE_KEY_PASSWORD`, and delete the `.b64` file.
 
 **Test release without a keystore:** run the workflow by hand with **debug_key** ticked. It needs no secrets, signs with
-the runner's throwaway debug key and publishes a pre-release titled "(debug key)". Locally the same build is
+the runner's throwaway debug key and publishes a normal release titled "(debug key)" (not a pre-release, even for a
+tag like `v0.1.0-alpha2`, so Obtainium finds it with default settings). Locally the same build is
 `MISE_SIGN_WITH_DEBUG_KEY=true ./gradlew assembleRelease`. Each debug key is different, so installing a later build (or
 the first one signed with the real key) means uninstalling first, which deletes the app's data: make a backup in
 Instellingen before you do.
