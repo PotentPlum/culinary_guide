@@ -185,7 +185,7 @@ evidence record over the stage, not in a single check.
 | S3 | [`NUT-3`](05-courses/S3/NUT-3.md) | 6 / 6 | 3 / 3 | 16 | 8 | 4 | €40 |
 | S4 | [`CLS-4`](05-courses/S4/CLS-4.md) | 13 / 13 | 8 / 8 | 32 | 4 | 15 | €230 |
 | S4 | `CUI-4` | 0 / 12 | — | — | — | — | — |
-| S4 | `PRO-4` | 0 / 11 | — | — | — | — | — |
+| S4 | [`PRO-4`](05-courses/S4/PRO-4.md) | 11 / 11 | 7 / 7 | 40 | 17 | 15 | €260 |
 | S4 | `PST-4` | 0 / 11 | — | — | — | — | — |
 | S4 | `MOD-4` | 0 / 7 | — | — | — | — | — |
 | S4 | `PLT-4` | 0 / 6 | — | — | — | — | — |
@@ -216,8 +216,8 @@ row rests on the quiz alone.
 | `IN-VEG` | 2 | 3 | 4 | 4 | 3 · 3 · 2 · 0 |
 | `IN-STA` | 2 | 3 | 4 | 4 | 4 · 3 · 3 · 0 |
 | `IN-DAI` | 2 | 3 | 4 | 4 | 2 · 2 · 2 · 0 |
-| `IN-MEA` | 1 | 3 | 3 | 4 ✗ | 0 · 3 · 0 · 0 |
-| `IN-FSH` | 1 | 3 | 3 | 4 ✗ | 0 · 3 · 0 · 0 |
+| `IN-MEA` | 1 | 3 | 3 | 4 | 0 · 3 · 2 · 0 |
+| `IN-FSH` | 1 | 3 | 3 | 4 | 0 · 3 · 2 · 0 |
 | `IN-ARO` | 1 | 2 | 4 | 4 | 1 · 0 · 4 · 0 |
 | `IN-BAK` | – | 3 | 3 | 4 ✗ | 0 · 3 · 0 · 0 |
 | `TS-MEP` | 3 | 4 | 4 | 5 ✗ | 1 · 1 · 2 · 0 |
@@ -231,8 +231,8 @@ row rests on the quiz alone.
 | `TS-STA` | 3 | 3 | 4 | 4 | 1 · 4 · 4 · 0 |
 | `TS-STK` | – | 3 | 4 | 4 | 0 · 5 · 3 · 0 |
 | `TS-SAU` | – | 3 | 4 | 5 | 0 · 8 · 5 · 2 |
-| `TS-PRO` | 1 | 3 | 4 | 5 ✗ | 0 · 8 · 3 · 0 |
-| `TS-FAB` | – | 2 | 3 | 3 | 4 · 3 · 0 · 0 |
+| `TS-PRO` | 1 | 3 | 4 | 5 | 0 · 8 · 4 · 5 |
+| `TS-FAB` | – | 2 | 3 | 3 | 4 · 4 · 0 · 0 |
 | `TS-BAK` | – | 3 | 4 | 4 | 0 · 6 · 6 · 0 |
 | `TS-BRD` | – | 2 | 3 | 3 | 3 · 4 · 0 · 0 |
 | `TS-GRD` | – | – | 3 | 3 | 0 · 3 · 0 · 0 |
@@ -248,7 +248,7 @@ row rests on the quiz alone.
 | `FL-SENS` | 2 | 3 | 4 | 4 | 3 · 1 · 1 · 0 |
 | `FL-SEAS` | 2 | 3 | 4 | 5 | 4 · 2 · 2 · 2 |
 | `FL-TEXT` | 1 | 2 | 3 | 4 ✗ | 4 · 4 · 0 · 0 |
-| `FL-ARCH` | – | 2 | 3 | 4 | 2 · 12 · 1 · 0 |
+| `FL-ARCH` | – | 2 | 3 | 4 | 2 · 12 · 2 · 0 |
 | `FL-CORR` | 1 | 3 | 4 | 4 | 0 · 2 · 1 · 0 |
 | `KM-PLAN` | 2 | 3 | 4 | 4 | 2 · 2 · 5 · 0 |
 | `KM-MATH` | 2 | 3 | 4 | 4 | 1 · 1 · 3 · 0 |
@@ -256,7 +256,7 @@ row rests on the quiz alone.
 | `KM-WAST` | 2 | 3 | 4 | 4 | 2 · 3 · 4 · 0 |
 | `KM-EQPT` | 2 | 3 | 3 | 4 ✗ | 3 · 5 · 0 · 0 |
 | `SA-HYG` | 3 | 4 | 5 | 5 | 1 · 1 · 5 · 1 |
-| `SA-TEMP` | 3 | 4 | 4 | 5 ✗ | 1 · 3 · 5 · 0 |
+| `SA-TEMP` | 3 | 4 | 4 | 5 | 1 · 3 · 5 · 1 |
 | `SA-PHYS` | 3 | 4 | 5 | 5 | 0 · 2 · 2 · 2 |
 | `SA-ALLG` | 2 | 3 | 4 | 4 | 1 · 2 · 1 · 0 |
 | `SA-HRPR` | – | 1 | 4 | 4 | 0 · 0 · 6 · 0 |
@@ -264,10 +264,10 @@ row rests on the quiz alone.
 | `RD-ADPT` | 1 | 2 | 3 | 4 ✗ | 3 · 2 · 0 · 0 |
 | `RD-TEST` | 1 | 2 | 3 | 4 ✗ | 4 · 2 · 0 · 0 |
 | `RD-WRIT` | 2 | 2 | 3 | 4 ✗ | 1 · 1 · 0 · 0 |
-| `JD-CUES` | 2 | 3 | 4 | 4 | 4 · 5 · 4 · 0 |
+| `JD-CUES` | 2 | 3 | 4 | 4 | 4 · 5 · 5 · 0 |
 | `JD-CHSE` | 1 | 2 | 3 | 4 ✗ | 2 · 5 · 0 · 0 |
 | `JD-TRBL` | 1 | 3 | 4 | 4 | 1 · 3 · 2 · 0 |
-| `JD-REFL` | 2 | 3 | 4 | 4 | 4 · 3 · 1 · 0 |
+| `JD-REFL` | 2 | 3 | 4 | 4 | 4 · 3 · 2 · 0 |
 | `CR-COMP` | – | 1 | 3 | 4 ✗ | 2 · 7 · 0 · 0 |
 | `CR-MENU` | – | – | 2 | 4 ✗ | 1 · 0 · 0 · 0 |
 | `CR-IMPV` | – | 1 | 3 | 3 | 0 · 1 · 0 · 0 |
@@ -302,7 +302,7 @@ row rests on the quiz alone.
 | [Assessment §9](04-assessment.md#9-safety-figures-used-in-assessment) (S2 review) | No figure for raw-bean lectins; no word on the Food Code's roast oven chart | A row for dried common beans (soak at least 5 h, boil at least 30 min, no slow cooker; FDA *Bad Bug Book* [S33]); a rule that the oven chart is not adopted | S2 review answers 2 and 3. `LEG-2.M1.L1`, `LEG-2.M1.L2`, `LEG-2.M1.X2` (now chickpeas, so the unsoaked pots stay within the rule) and `LEG-2.M1.Q4` follow the row. |
 | [Assessment §9](04-assessment.md#9-safety-figures-used-in-assessment) (S3) | No figures for low-temperature poultry, cook-chill storage, raw fish, risk groups, acidity, canning, fermentation salt or nitrite | Rows for each, from sources checked on 2026-11-04 ([S25], [S27], [S34]–[S37]); the sous vide rule now names which table applies to which food | S2 recommendations 2 and 3: `SAF-3`, `SLW-3`, `GRD-3`, `PRS-3` and `CUI-3` need these figures, and no figure is written from memory. To be confirmed at the S3 review. |
 | `PRS-3.M3.L1` objective | salt by weight (2 %) | salt by weight (2.25–2.5 %) | The checked source [S36] gives 2.25–2.5 %; 2 % is below it. |
-| [Assessment §9](04-assessment.md#9-safety-figures-used-in-assessment) (S4) | No figures for egg-thickened desserts, raw-egg desserts, game, game birds, wild boar, live crustaceans or alcohol; no rule for tier 3 equipment | Rows for each, from sources checked on 2026-11-04 ([S25], [S38]–[S43]); a rule that the siphon and blowtorch follow the maker's instructions | S3 recommendations 2 and 3: `PST-4`, `MOD-4`, `PRO-4` and `MNU-4` need them, and no figure is written from memory. To be confirmed at the S4 review. |
+| [Assessment §9](04-assessment.md#9-safety-figures-used-in-assessment) (S4) | No figures for egg-thickened desserts, raw-egg desserts, game, game birds, offal, wild boar, live crustaceans or alcohol; no rule for tier 3 equipment | Rows for each, from sources checked on 2026-11-04 ([S25], [S38]–[S43]); a rule that the siphon and blowtorch follow the maker's instructions | S3 recommendations 2 and 3: `PST-4`, `MOD-4`, `PRO-4` and `MNU-4` need them, and no figure is written from memory. To be confirmed at the S4 review. |
 | `PRO-4.M5` objective, `PRO-4.M5.L1` objective | [S] handle and cook live crustaceans humanely; [S] humane dispatch | [S] handle and cook crustaceans humanely; [K] humane dispatch (by a trained fishmonger) and why it is not done at home | The checked welfare sources [S40][S41] say manual dispatch may fail in untrained hands and that humane slaughter cannot be done at home. The skill becomes buying, handling and cooking; dispatch is knowledge. To be confirmed at the S4 review. |
 
 No course, module, lesson, hour, exercise or `Moves` entry has been added, removed or moved; only the objective wording above changed.
@@ -328,22 +328,22 @@ No course, module, lesson, hour, exercise or `Moves` entry has been added, remov
 |---|---|---|
 | Bowl for ice water | 0 | `HEA-1` |
 | Bread knife | 0 | `EQP-1` |
-| Cast-iron or carbon-steel skillet | 0 | `EQP-1`, `HEA-1`, `MEA-2`, `CUI-3`, `FIR-3`, `VEG-3` |
+| Cast-iron or carbon-steel skillet | 0 | `EQP-1`, `HEA-1`, `MEA-2`, `CUI-3`, `FIR-3`, `VEG-3`, `PRO-4` |
 | Chef's knife (20 cm) | 0 | `EQP-1`, `KNF-1`, `KNF-2`, `POU-2` |
 | Deep heavy pot for frying | 0 | `HEA-2` |
 | Deep pot with a rack | 0 | `PRS-3` |
 | Digital scale (1 g) | 0 | `ORI-1`, `TST-1`, `WRK-1`, `BAK-2`, `BRD-2`, `KNF-2`, `SCI-2`, `BRD-3`, `BUT-3`, `FLV-3`, `KMG-3`, `PRS-3` |
 | Heavy saucepan with a lid | 0 | `STA-1`, `LEG-2`, `SAU-2`, `PRS-3` |
-| Heavy stainless sauté pan | 0 | `EQP-1`, `HEA-1`, `VEG-1`, `POU-2`, `SAU-2`, `VEG-3`, `CLS-4` |
+| Heavy stainless sauté pan | 0 | `EQP-1`, `HEA-1`, `VEG-1`, `POU-2`, `SAU-2`, `VEG-3`, `CLS-4`, `PRO-4` |
 | Honing steel | 0 | `EQP-1`, `KNF-1` |
-| Instant-read thermometer | 0 | `EGG-1`, `EQP-1`, `HEA-1`, `ORI-1`, `SAF-1`, `BRD-2`, `FSH-2`, `HEA-2`, `LEG-2`, `MEA-2`, `POU-2`, `SAU-2`, `SCI-2`, `STK-2`, `BUT-3`, `CUI-3`, `GRD-3`, `PST-3`, `SAF-3`, `SLW-3`, `CLS-4` |
+| Instant-read thermometer | 0 | `EGG-1`, `EQP-1`, `HEA-1`, `ORI-1`, `SAF-1`, `BRD-2`, `FSH-2`, `HEA-2`, `LEG-2`, `MEA-2`, `POU-2`, `SAU-2`, `SCI-2`, `STK-2`, `BUT-3`, `CUI-3`, `GRD-3`, `PST-3`, `SAF-3`, `SLW-3`, `CLS-4`, `PRO-4` |
 | Labels and a marker | 0 | `KMG-3`, `NUT-3`, `PRS-3`, `SAF-3` |
 | Large stable board | 0 | `EQP-1`, `KNF-1` |
 | Mixing bowls | 0 | `WRK-1`, `BAK-2`, `SCI-2`, `GRD-3` |
 | Oven thermometer | 0 | `EQP-1`, `ORI-1`, `BAK-2`, `BRD-2` |
 | Oven thermometer for the grate | 0 | `FIR-3` |
 | Paring knife | 0 | `EQP-1`, `KNF-1` |
-| Probe thermometer | 0 | `FIR-3` |
+| Probe thermometer | 0 | `FIR-3`, `PRO-4` |
 | Saucepans | 0 | `EQP-1`, `HEA-1`, `VEG-1`, `SCI-2` |
 | Shallow containers | 0 | `SAF-3` |
 | Sheet pan as a tray | 0 | `WRK-1` |
@@ -351,14 +351,14 @@ No course, module, lesson, hour, exercise or `Moves` entry has been added, remov
 | Sieve | 0 | `STA-1` |
 | Small saucepan | 0 | `EGG-1`, `SAU-2`, `CLS-4` |
 | Small saucepans and a skillet | 0 | `FLV-3` |
-| Stockpot | 0 | `EQP-1`, `FSH-2`, `POU-2`, `STK-2`, `SAF-3`, `CLS-4` |
+| Stockpot | 0 | `EQP-1`, `FSH-2`, `POU-2`, `STK-2`, `SAF-3`, `CLS-4`, `PRO-4` |
 | Stockpot or large pot | 0 | `STA-1` |
 | Tongs | 0 | `HEA-1` |
 | Baking stone or steel | 1 | `BRD-2`, `PST-3` |
 | Bench scraper | 1 | `BAK-2`, `BRD-2`, `BRD-3` |
 | Fine sieve | 1 | `EGG-1`, `LEG-2`, `SAU-2`, `SCI-2`, `STK-2`, `SLW-3`, `VEG-3`, `CLS-4` |
 | Frying thermometer | 1 | `HEA-2` |
-| Heavy lidded casserole (*braadpan*) | 1 | `BRD-2`, `HEA-2`, `LEG-2`, `MEA-2`, `BRD-3`, `CUI-3`, `SLW-3`, `VEG-3` |
+| Heavy lidded casserole (*braadpan*) | 1 | `BRD-2`, `HEA-2`, `LEG-2`, `MEA-2`, `BRD-3`, `CUI-3`, `SLW-3`, `VEG-3`, `PRO-4` |
 | Loaf tin | 1 | `BAK-2`, `BRD-2`, `BRD-3`, `GRD-3` |
 | Mixer | 1 | `BAK-2` |
 | Rolling pin | 1 | `BAK-2`, `PST-3` |
@@ -371,8 +371,8 @@ No course, module, lesson, hour, exercise or `Moves` entry has been added, remov
 | Mandoline | 2 | `SAF-3`, `VEG-3` |
 | Pressure cooker | 2 | `SAF-3`, `SLW-3` |
 | Scale (0.01 g) | 2 | `PRS-3` |
-| Sous vide circulator | 2 | `SLW-3` |
-| Zip-top or vacuum bags | 2 | `SLW-3` |
+| Sous vide circulator | 2 | `SLW-3`, `PRO-4` |
+| Zip-top or vacuum bags | 2 | `SLW-3`, `PRO-4` |
 | Baking beans | — | `BAK-2` |
 | Balloon whisk | — | `SAU-2`, `CLS-4` |
 | Blender | — | `STK-2`, `VEG-3` |
@@ -391,11 +391,12 @@ No course, module, lesson, hour, exercise or `Moves` entry has been added, remov
 | Cut-resistant glove | — | `BUT-3` |
 | Deep roasting tin for a water bath | — | `EGG-1`, `GRD-3` |
 | Dough container | — | `BRD-2`, `BRD-3` |
-| Filleting knife | — | `FSH-2`, `BUT-3` |
+| Filleting knife | — | `FSH-2`, `BUT-3`, `PRO-4` |
 | Fire blanket | — | `SAF-1`, `HEA-2`, `FIR-3` |
 | First-aid kit | — | `SAF-1` |
+| Fish knife and serving spoon | — | `PRO-4` |
 | Fish scaler | — | `FSH-2`, `BUT-3` |
-| Fish spatula | — | `HEA-1`, `FSH-2` |
+| Fish spatula | — | `HEA-1`, `FSH-2`, `PRO-4` |
 | Fish tweezers | — | `FSH-2`, `BUT-3` |
 | Freezer containers | — | `LEG-2`, `STK-2`, `KMG-3`, `CLS-4` |
 | Freezer thermometer | — | `GRD-3`, `KMG-3`, `SAF-3` |
@@ -410,7 +411,7 @@ No course, module, lesson, hour, exercise or `Moves` entry has been added, remov
 | Jar lifter and funnel | — | `PRS-3` |
 | Jars with lids | — | `SCI-2` |
 | Journal | — | `ORI-1` |
-| Kitchen shears | — | `POU-2`, `FIR-3` |
+| Kitchen shears | — | `POU-2`, `FIR-3`, `PRO-4` |
 | Kitchen string | — | `MEA-2`, `STK-2`, `BUT-3`, `CLS-4` |
 | Kitchen timer | — | `KNF-1`, `WRK-1` |
 | Labels and pen | — | `ORI-1`, `SAF-1`, `LEG-2` |
@@ -445,13 +446,14 @@ No course, module, lesson, hour, exercise or `Moves` entry has been added, remov
 | Ramekins | — | `EGG-1`, `BAK-2`, `CLS-4` |
 | Rice pan with a tight lid | — | `CUI-3` |
 | Roasting rack | — | `HEA-2` |
-| Roasting tin | — | `MEA-2`, `POU-2`, `BUT-3` |
+| Roasting tin | — | `MEA-2`, `POU-2`, `BUT-3`, `PRO-4` |
 | Room thermometer | — | `BRD-3`, `PRS-3` |
 | Round cake tins | — | `BAK-2` |
 | Salad spinner | — | `VEG-1`, `GRD-3` |
 | Seasonal calendar | — | `VEG-1`, `VEG-3` |
-| Second cutting board for raw protein | — | `SAF-1`, `FSH-2`, `KNF-2`, `MEA-2`, `POU-2`, `BUT-3`, `NUT-3` |
-| Shallow containers with lids | — | `SAF-1`, `STA-1`, `MEA-2`, `POU-2`, `KMG-3` |
+| Second cutting board for raw protein | — | `SAF-1`, `FSH-2`, `KNF-2`, `MEA-2`, `POU-2`, `BUT-3`, `NUT-3`, `PRO-4` |
+| Shallow containers with lids | — | `SAF-1`, `STA-1`, `MEA-2`, `POU-2`, `KMG-3`, `PRO-4` |
+| Shellfish tools | — | `PRO-4` |
 | Slotted spoon | — | `EGG-1` |
 | Slow cooker | — | `SLW-3` |
 | Small moulds for aspic | — | `CLS-4` |
