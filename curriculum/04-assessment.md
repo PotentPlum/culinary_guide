@@ -1,6 +1,6 @@
 # Phase 4 — Assessment design
 
-Status: **in progress** (2026-11-04). This document defines how the program assesses the learner:
+Status: **ready for review** (2026-11-04). This document defines how the program assesses the learner:
 - the assessment types and criteria;
 - how rubrics are scored and passed;
 - the module checks;
@@ -135,7 +135,7 @@ The quiz items themselves are written in Phase 5. Phase 4 fixes the blueprint:
 An evidence check asks for the evidence named in the module's *Assessment* line, such as photos, logs, forms or tasters'
 cards, from at least one of the module's exercises. It passes when, for each competency the module's lessons move, the
 evidence meets the competency's success row for the **highest level the module reaches**
-(`04-competencies/`). Level 1 is covered by the quiz.
+([`04-competencies/`](04-competencies/)). Level 1 is covered by the quiz.
 
 ---
 
@@ -149,7 +149,8 @@ can, the learner prepares them in advance and lets them cool and mix up, using n
 ### 5.1 Salt series
 
 - **Base:** unsalted vegetable stock or water with a little sugar-free stock base, at serving temperature.
-- **Samples:** 6, 8, 10, 12 and 15 g of salt per litre (0.6–1.5 %), weighed on a 0.1 g scale.
+- **Samples:** 6, 8, 10, 12 and 15 g of salt per litre (0.6–1.5 %). A full litre per sample keeps the weighing
+  accurate enough on the 1 g kitchen scale of the basic equipment tier (Phase 1 §9.4); a 0.1 g scale is better.
 - **Ranking test:** the five samples, coded, in random order. The learner puts them in order.
   - **Pass:** at most one swap between neighbouring samples.
 - **Triangle test:** three cups, two the same and one different (10 g/l against 12 g/l). The learner picks the odd one

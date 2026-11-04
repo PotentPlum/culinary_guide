@@ -103,7 +103,9 @@ which is why the practice rule (§4.3) exists.
 
 A caveat on the source: the catalog page's per-course rows add up to less than its stated culinary subtotal (50.5
 credits), so the per-course credits above are read as listed and should be re-checked against the catalog PDF before
-anyone relies on a single figure.
+anyone relies on a single figure. *Resolved in Phase 4 (2026-11-04):* the page also lists two "complete one" groups of
+restaurant courses (back of house and front of house, 6 credits each); with those, the rows add up to exactly 50.5, and
+every per-course credit used above matches the page ([Phase 4 §6.1](04-competency-framework.md#61-decisions-and-assumptions)).
 
 ### 3.2 *The Professional Chef* [S8] and Gisslen [S10]
 

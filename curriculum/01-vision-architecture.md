@@ -237,7 +237,7 @@ The brief's subject list was reviewed against the benchmarks. The changes and th
 ## 5. Competency framework (top level)
 
 The framework is defined **separately from the courses**: courses teach competencies, but competencies define the
-graduate. The full framework comes in Phase 4:
+graduate. The full framework is in [Phase 4](04-competency-framework.md):
 - each competency's knowledge and practical requirements;
 - its assessment method;
 - its success criteria;
@@ -784,7 +784,8 @@ Good = supermarket butter, Best = cultured butter from a dairy or cheese shop), 
 
 ## 10. Assessment approach (overview)
 
-Full rubrics, item banks and milestone briefs come in Phase 4. This section fixes the principles.
+This section fixes the principles. The full design (rubrics, the quiz blueprint, calibration tests, the milestone briefs
+and the capstone) is in [Phase 4](04-assessment.md).
 
 ### 10.1 Methods
 

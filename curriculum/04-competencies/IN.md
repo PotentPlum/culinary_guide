@@ -129,7 +129,7 @@ pigments and their reactions, and the best uses and methods for each.
 - S5 (5): handles the unfamiliar.
 
 **Assessment:** quiz (groups, structure, pigments, images); comparison exercises; vegetable-led dishes; re-tested at
-`MS-S1` and in the capstone's vegetable-led course.
+`MS-S1`. The capstone's vegetable-led course re-tests the cooking under `TS-VEG`.
 
 **Success criteria:**
 

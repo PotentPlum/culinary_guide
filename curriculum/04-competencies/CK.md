@@ -31,7 +31,7 @@ menu and shop language. Each in English, Dutch (NL) and, where the kitchen uses 
 **Assessment:**
 - quiz items in the module checks, including image identification (cuts, garnishes);
 - the terminology in written plans, recipes and menus, reviewed against a term list;
-- re-tested in the milestone knowledge quizzes.
+- re-tested in the `MS-S1` knowledge quiz.
 
 **Success criteria:**
 
@@ -84,8 +84,8 @@ properties.
 - S5 (5): teaches it.
 
 **Assessment:** quiz (classification and scenarios); written method choices in framework and brief exercises;
-comparison exercises (one ingredient, two methods); re-tested in the milestone quizzes and in the capstone brief
-analysis.
+comparison exercises (one ingredient, two methods); re-tested in the `MS-S1` quiz.
+The capstone's brief analysis and defence show method choice too, but its rubric scores them under `JD-CHSE`.
 
 **Success criteria:**
 

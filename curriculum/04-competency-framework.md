@@ -1,6 +1,6 @@
 # Phase 4 — Competency framework
 
-Status: **in progress** (2026-11-04). This phase sets out the complete competency framework:
+Status: **ready for review** (2026-11-04); the open questions are in §6.2. This phase sets out the complete competency framework:
 - what each competency asks the learner to know and do at every level;
 - how each competency is assessed, and what counts as a successful demonstration;
 - where it is taught, practised and re-tested;
@@ -14,7 +14,7 @@ rule). It does not repeat them.
 | File | Content |
 |---|---|
 | this file | How the framework works, the evidence model, the stage progression criteria, and the traceability summary |
-| `04-competencies/` | One file per domain, with an entry for each of the 67 competencies |
+| [`04-competencies/`](04-competencies/) | One file per domain, with an entry for each of the 67 competencies |
 | [`04-assessment.md`](04-assessment.md) | The assessment methodology, calibration tests, module checks, and the milestone and capstone briefs and rubrics |
 
 **Review decisions (2026-11-04).**
@@ -56,7 +56,7 @@ to specializations and are not defined.
 
 ### 1.2 The entry format
 
-Every competency has one entry in `04-competencies/<domain>.md`. The validator checks that every
+Every competency has one entry in [`04-competencies/<domain>.md`](04-competencies/). The validator checks that every
 field is present and that there is a success row for each level from 2 up to the target.
 
 | Field | Content |
@@ -292,33 +292,33 @@ Each entry gives the per-stage detail.
 | [`SC-STRC`](04-competencies/SC.md#sc-strc--starches-and-gluten) | 4 | 6 | 7 | 8 | 7 | 8 | 1 |
 | [`SC-EMUL`](04-competencies/SC.md#sc-emul--fats-emulsions-foams-and-gels) | 4 | 7 | 9 | 11 | 11 | 18 | 1 |
 | [`SC-MICR`](04-competencies/SC.md#sc-micr--microbiology-and-preservation-hurdles) | 3 | 5 | 6 | 7 | 7 | 4 | 1 |
-| `FL-SENS` | 5 | 6 | 9 | 10 | 13 | 13 | 2 |
-| `FL-SEAS` | 5 | 7 | 9 | 16 | 14 | 20 | 6 |
-| `FL-TEXT` | 4 | 10 | 12 | 13 | 17 | 17 | 2 |
-| `FL-ARCH` | 4 | 10 | 18 | 24 | 26 | 36 | 1 |
-| `FL-CORR` | 5 | 5 | 5 | 5 | 6 | 10 | 1 |
-| `KM-PLAN` | 5 | 11 | 15 | 17 | 18 | 20 | 5 |
-| `KM-MATH` | 4 | 5 | 6 | 8 | 6 | 8 | 3 |
-| `KM-PURC` | 4 | 7 | 8 | 9 | 9 | 9 | 3 |
-| `KM-WAST` | 4 | 9 | 9 | 10 | 11 | 12 | 1 |
-| `KM-EQPT` | 4 | 9 | 12 | 18 | 15 | 19 | 1 |
-| `SA-HYG` | 5 | 6 | 8 | 11 | 8 | 12 | 3 |
-| `SA-TEMP` | 5 | 10 | 11 | 13 | 14 | 11 | 5 |
-| `SA-PHYS` | 5 | 6 | 7 | 9 | 8 | 9 | 2 |
-| `SA-ALLG` | 4 | 5 | 5 | 6 | 5 | 7 | 2 |
-| `SA-HRPR` | 4 | 6 | 7 | 9 | 9 | 5 | 2 |
-| `RD-RATO` | 4 | 9 | 11 | 12 | 13 | 19 | 1 |
-| `RD-ADPT` | 5 | 7 | 10 | 14 | 11 | 23 | 1 |
-| `RD-TEST` | 4 | 9 | 9 | 11 | 10 | 17 | 1 |
-| `RD-WRIT` | 4 | 4 | 6 | 6 | 6 | 10 | 1 |
-| `JD-CUES` | 5 | 13 | 15 | 16 | 21 | 24 | 1 |
-| `JD-CHSE` | 5 | 8 | 15 | 16 | 24 | 16 | 2 |
-| `JD-TRBL` | 5 | 8 | 8 | 9 | 11 | 14 | 1 |
-| `JD-REFL` | 5 | 12 | 13 | 17 | 14 | 26 | 7 |
-| `CR-COMP` | 4 | 9 | 12 | 14 | 16 | 18 | 2 |
-| `CR-MENU` | 4 | 2 | 3 | 4 | 3 | 5 | 3 |
-| `CR-IMPV` | 4 | 4 | 5 | 8 | 5 | 13 | 1 |
-| `CR-ORIG` | 4 | 4 | 6 | 11 | 7 | 24 | 2 |
+| [`FL-SENS`](04-competencies/FL.md#fl-sens--sensory-evaluation) | 5 | 6 | 9 | 10 | 13 | 13 | 2 |
+| [`FL-SEAS`](04-competencies/FL.md#fl-seas--seasoning-and-balance) | 5 | 7 | 9 | 16 | 14 | 20 | 6 |
+| [`FL-TEXT`](04-competencies/FL.md#fl-text--texture-and-contrast) | 4 | 10 | 12 | 13 | 17 | 17 | 2 |
+| [`FL-ARCH`](04-competencies/FL.md#fl-arch--flavour-composition) | 4 | 10 | 18 | 24 | 26 | 36 | 1 |
+| [`FL-CORR`](04-competencies/FL.md#fl-corr--diagnosing-and-correcting-faults) | 5 | 5 | 5 | 5 | 6 | 10 | 1 |
+| [`KM-PLAN`](04-competencies/KM.md#km-plan--planning-and-timing) | 5 | 11 | 15 | 17 | 18 | 20 | 5 |
+| [`KM-MATH`](04-competencies/KM.md#km-math--culinary-math) | 4 | 5 | 6 | 8 | 6 | 8 | 3 |
+| [`KM-PURC`](04-competencies/KM.md#km-purc--purchasing-and-budgeting) | 4 | 7 | 8 | 9 | 9 | 9 | 3 |
+| [`KM-WAST`](04-competencies/KM.md#km-wast--using-ingredients-fully) | 4 | 9 | 9 | 10 | 11 | 12 | 1 |
+| [`KM-EQPT`](04-competencies/KM.md#km-eqpt--equipment) | 4 | 9 | 12 | 18 | 15 | 19 | 1 |
+| [`SA-HYG`](04-competencies/SA.md#sa-hyg--hygiene-and-cross-contamination) | 5 | 6 | 8 | 11 | 8 | 12 | 3 |
+| [`SA-TEMP`](04-competencies/SA.md#sa-temp--temperature-control) | 5 | 10 | 11 | 13 | 14 | 11 | 5 |
+| [`SA-PHYS`](04-competencies/SA.md#sa-phys--physical-safety) | 5 | 6 | 7 | 9 | 8 | 9 | 2 |
+| [`SA-ALLG`](04-competencies/SA.md#sa-allg--allergens) | 4 | 5 | 5 | 6 | 5 | 7 | 2 |
+| [`SA-HRPR`](04-competencies/SA.md#sa-hrpr--high-risk-processes) | 4 | 6 | 7 | 9 | 9 | 5 | 2 |
+| [`RD-RATO`](04-competencies/RD.md#rd-rato--ratios-and-formulas) | 4 | 9 | 11 | 12 | 13 | 19 | 1 |
+| [`RD-ADPT`](04-competencies/RD.md#rd-adpt--adaptation-and-substitution) | 5 | 7 | 10 | 14 | 11 | 23 | 1 |
+| [`RD-TEST`](04-competencies/RD.md#rd-test--systematic-testing) | 4 | 9 | 9 | 11 | 10 | 17 | 1 |
+| [`RD-WRIT`](04-competencies/RD.md#rd-writ--writing-recipes-and-technique-notes) | 4 | 4 | 6 | 6 | 6 | 10 | 1 |
+| [`JD-CUES`](04-competencies/JD.md#jd-cues--reading-cues) | 5 | 13 | 15 | 16 | 21 | 24 | 1 |
+| [`JD-CHSE`](04-competencies/JD.md#jd-chse--choosing-an-approach-from-first-principles) | 5 | 8 | 15 | 16 | 24 | 16 | 2 |
+| [`JD-TRBL`](04-competencies/JD.md#jd-trbl--troubleshooting-and-recovery) | 5 | 8 | 8 | 9 | 11 | 14 | 1 |
+| [`JD-REFL`](04-competencies/JD.md#jd-refl--self-assessment-and-reflection) | 5 | 12 | 13 | 17 | 14 | 26 | 7 |
+| [`CR-COMP`](04-competencies/CR.md#cr-comp--composing-a-dish) | 4 | 9 | 12 | 14 | 16 | 18 | 2 |
+| [`CR-MENU`](04-competencies/CR.md#cr-menu--designing-menus) | 4 | 2 | 3 | 4 | 3 | 5 | 3 |
+| [`CR-IMPV`](04-competencies/CR.md#cr-impv--improvising-under-constraints) | 4 | 4 | 5 | 8 | 5 | 13 | 1 |
+| [`CR-ORIG`](04-competencies/CR.md#cr-orig--original-dishes-and-a-personal-point-of-view) | 4 | 4 | 6 | 11 | 7 | 24 | 2 |
 <!-- END generated:traceability -->
 
 ---
@@ -327,13 +327,96 @@ Each entry gives the per-stage detail.
 
 | Domain | File |
 |---|---|
-| CK Culinary knowledge | `04-competencies/CK.md` |
-| IN Ingredient knowledge | `04-competencies/IN.md` |
-| TS Technical skills | `04-competencies/TS.md` |
-| SC Food science | `04-competencies/SC.md` |
-| FL Flavour | `04-competencies/FL.md` |
-| KM Kitchen management | `04-competencies/KM.md` |
-| SA Food safety | `04-competencies/SA.md` |
-| RD Recipe development | `04-competencies/RD.md` |
-| JD Independent judgment | `04-competencies/JD.md` |
-| CR Creativity and adaptability | `04-competencies/CR.md` |
+| CK Culinary knowledge | [`04-competencies/CK.md`](04-competencies/CK.md) |
+| IN Ingredient knowledge | [`04-competencies/IN.md`](04-competencies/IN.md) |
+| TS Technical skills | [`04-competencies/TS.md`](04-competencies/TS.md) |
+| SC Food science | [`04-competencies/SC.md`](04-competencies/SC.md) |
+| FL Flavour | [`04-competencies/FL.md`](04-competencies/FL.md) |
+| KM Kitchen management | [`04-competencies/KM.md`](04-competencies/KM.md) |
+| SA Food safety | [`04-competencies/SA.md`](04-competencies/SA.md) |
+| RD Recipe development | [`04-competencies/RD.md`](04-competencies/RD.md) |
+| JD Independent judgment | [`04-competencies/JD.md`](04-competencies/JD.md) |
+| CR Creativity and adaptability | [`04-competencies/CR.md`](04-competencies/CR.md) |
+
+---
+
+## 6. End of phase
+
+### 6.1 Decisions and assumptions
+
+1. **No new competency IDs** (review decision). Broad competencies list their elements, and the success criteria say how
+   many elements each level needs. The 67 Phase 1 IDs remain the unit of tracking.
+2. **Stage gate with an allowance** (review decision, §3.1):
+   - up to two non-safety competencies may be one level short, if the gap is closed before the next milestone;
+   - safety competencies have no allowance;
+   - module checks gate the course, not the next module;
+   - a course's "competencies on completion" are checked at the stage gate, not per course.
+3. **Evidence:**
+   - every level needs at least one objective or partly verifiable method; self-assessment never carries a level alone
+     (validator);
+   - sensory self-assessment counts only with a calibration passed in the last 6 months;
+   - when the learner and the outside evidence differ by two bands or more, the lower band stands (assessment §3.4).
+4. **Rubrics:**
+   - four bands; a pass needs every gate passed, no row at *Not yet*, and a score of at least 66.7;
+   - the capstone gives a distinction from 85;
+   - food safety is always a gate, in every milestone and in the capstone (validator);
+   - at most 10 % of any rubric's weight rests on self-assessed evidence only (assessment §10).
+5. **Safety figures:**
+   - Dutch home advice (Voedingscentrum) wherever it gives a rule;
+   - the FDA *Food Code* 2022 as the measurable standard where it doesn't;
+   - the stricter of the two always applies (assessment §9).
+6. **The mapping counts an exercise for every competency of its module** (§1.2). This is an approximation until
+   Phase 5 tags exercises.
+7. **Levels above the core target are not defined.** They belong to specializations (Phase 1 §11).
+8. **The CIA credits of Phase 3 §3.1 are confirmed.** The catalog page [S1] was re-read. Its culinary rows add up to
+   the stated 50.5 credits once the two "complete one" groups of restaurant courses (6 credits each) are counted, and
+   every per-course credit Phase 3 used matches. The Phase 3 caveat is resolved, and the comparison stands.
+9. **No change to the outline.** Phase 4 changed no course, module, lesson, hour or `Moves` entry. It added the
+   competency entries, the assessment design and validator checks, and updated `sources.md` (S21, S22, S24, S25).
+
+### 6.2 Gaps and open questions for the review
+
+1. **Re-test levels.** 29 of the 67 competencies are never re-tested at their **core target** in a milestone or the
+   capstone. Their final level rests on the evidence record, which the stage gate and the core completion rule require
+   anyway (§3.1; assessment §8.5).
+   - For 20 of them the target is level 4. Course work and the record are an adequate basis for that.
+   - For 9, the target is **level 5**: `CK-METH`, `IN-VEG`, `TS-DRY`, `FL-SENS`, `FL-CORR`, `SA-PHYS`, `RD-ADPT`,
+     `JD-CUES` and `JD-TRBL`. Mastery should be seen in the capstone.
+
+   **Proposal** (not applied, because it changes the outline). Add these re-tests to capstone components that already
+   ask for the work. Hours stay the same, and each re-test is scored by an existing rubric row:
+
+   | Component | Add | Rubric row |
+   |---|---|---|
+   | `CAP-5.M1.L1` Analysing the brief | `CK-METH→5` | `CAP-5.R1` |
+   | `CAP-5.M1.L2` Menu and rationale (the dietary requirement) | `RD-ADPT→5` | `CAP-5.R1` |
+   | `CAP-5.M2.L4` Prep day 2 | `SA-PHYS→5` | `CAP-5.R3` (gate) |
+   | `CAP-5.M2.L5` Service: first and second course (the vegetable-led course) | `IN-VEG→5`, `FL-CORR→5` | `CAP-5.R6`, `CAP-5.R7` |
+   | `CAP-5.M2.L6` Service: main course and dessert | `TS-DRY→5`, `JD-CUES→5` | `CAP-5.R6` |
+   | `CAP-5.M2.L7` Evidence (recoveries logged) | `JD-TRBL→5` | `CAP-5.R12` |
+   | `CAP-5.M3.L2` Self-evaluation (calibrated form against the guests) | `FL-SENS→5` | `CAP-5.R7` |
+
+   Should these be applied (recommended), extended to all 29, or left to the evidence record?
+2. **No human examiner.** Scoring rests on the learner, AI review and household tasters. The cautious rule for
+   disagreements (assessment §3.4) is the main safeguard. Is that acceptable, or would you like an optional outside
+   review for the capstone, such as a cook or a chef among friends?
+3. **Safety figures.**
+   - The Voedingscentrum gives no core temperatures, so gates use the FDA *Food Code* figures (a U.S. professional
+     standard).
+   - The USDA FSIS chart cited in Phase 1 [S24] refused automated access when re-checked; its figures are not used.
+
+   Is a U.S. professional standard acceptable as the measurable reference, or would you prefer a Dutch or EU source
+   (for example an NVWA hygiene code [S26]) once one is found?
+
+### 6.3 Recommendations for Phase 5
+
+1. Write the **quiz item banks** to the blueprint (assessment §4.1), and the **reference images and short rubrics** for
+   every exercise and rubric row that uses AI review (assessment §6).
+2. **Tag each exercise** with the competencies it evidences, and the level, replacing the module approximation (§1.2).
+   Let the validator check that every success row of every competency is reachable through at least one exercise.
+3. Turn each module's *Assessment* line into an **evidence check**: which success rows, which evidence, which
+   exercise.
+4. Cite a **tested sous vide pasteurisation table** in `SLW-3`, and an NCHFP [S27] page for each preservation method in
+   `PRS-3`. Phase 4 could verify neither on the pages it read.
+5. Write the **calibration kit** into the equipment lists of `TST-1` and `FLV-3` (cups, codes, a key sheet, 1 g or
+   0.1 g scale).
