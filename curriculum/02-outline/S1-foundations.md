@@ -76,8 +76,8 @@ lessons when the evidence shows level 3.
 ### SAF-1 — Food safety and hygiene I (15.5 h)
 
 **Purpose:** prevent foodborne illness and kitchen accidents at home. This is the non-negotiable basis of every
-practical. Follows the Dutch Voedingscentrum guidance [S21][S22], with US temperature references where they are more
-precise [S24].
+practical. Follows the Dutch Voedingscentrum guidance [S21][S22], with the FDA *Food Code* where a measurable figure is
+needed [S25] (Phase 4 review).
 **Prerequisites:** ORI-1
 **Equipment:** an instant-read thermometer, a fridge thermometer, separate boards.
 **Outcomes:**
@@ -122,8 +122,8 @@ precise [S24].
 
 | ID | Lesson | Objectives | Prereqs | h | Practice | Elapsed | Moves |
 |---|---|---|---|---|---|---|---|
-| SAF-1.M3.L1 | The danger zone and the fridge | [K] growth between about 7 and 60 °C; [S] check that the fridge holds 4 °C and the freezer −18 °C [S22] | SAF-1.M1.L2 | 1.5 | 1 | 1 wk | SA-TEMP→2, IN-STO→2 |
-| SAF-1.M3.L2 | Thermometers and core temperatures | [S] calibrate with ice water; probe correctly; [K] the safe core temperatures of the main protein groups [S24] | — | 1.5 | 1 | — | SA-TEMP→2, KM-EQPT→1 |
+| SAF-1.M3.L1 | The danger zone and the fridge | [K] growth between the cold and hot holding limits (5 and 57 °C) [S25]; [S] check that the fridge holds 4 °C and the freezer −18 °C [S22] | SAF-1.M1.L2 | 1.5 | 1 | 1 wk | SA-TEMP→2, IN-STO→2 |
+| SAF-1.M3.L2 | Thermometers and core temperatures | [S] calibrate with ice water; probe correctly; [K] the safe core temperatures of the main protein groups [S25] | — | 1.5 | 1 | — | SA-TEMP→2, KM-EQPT→1 |
 | SAF-1.M3.L3 | Cooling, storing and reheating | [S] cool food fast in shallow containers; label it; reheat until steaming hot; [K] rice and *Bacillus cereus* | SAF-1.M3.L1 | 2 | 1 | 2 d | SA-TEMP→3, IN-STO→3 |
 
 - `SAF-1.M3.X1` *drill, recipe* — Thermometer calibration and fridge temperature log (one week).

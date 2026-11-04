@@ -102,7 +102,8 @@ written in Phase 6 (review decision, 2026-11-04).
 
 **Evidence check.** For each competency the module's lessons move to level 2 or more, a row gives:
 - the level, which is the highest level the module reaches;
-- the exercises that supply the evidence, each tagged at that level;
+- the exercises that supply the evidence, each tagged at that level, or `knowledge check` where the Phase 4 success
+  row at that level rests on the quiz alone (for example `SA-PHYS` level 2);
 - the evidence methods and what must be shown.
 
 The standard is the competency's Phase 4 success row at that level ([assessment §4.2](04-assessment.md#42-evidence-check)).
@@ -144,9 +145,9 @@ evidence record over the stage, not in a single check.
 | Stage | Course | Lessons outlined | Exercises specified | Knowledge-check items | Safety items | Evidence rows | Budget |
 |---|---|---|---|---|---|---|---|
 | S1 | [`ORI-1`](05-courses/S1/ORI-1.md) | 7 / 7 | 5 / 5 | 24 | 0 | 2 | €15 |
-| S1 | `SAF-1` | 0 / 10 | — | — | — | — | — |
-| S1 | `WRK-1` | 0 / 11 | — | — | — | — | — |
-| S1 | `EQP-1` | 0 / 9 | — | — | — | — | — |
+| S1 | [`SAF-1`](05-courses/S1/SAF-1.md) | 10 / 10 | 5 / 5 | 32 | 32 | 7 | €20 |
+| S1 | [`WRK-1`](05-courses/S1/WRK-1.md) | 11 / 11 | 6 / 6 | 32 | 0 | 7 | €15 |
+| S1 | [`EQP-1`](05-courses/S1/EQP-1.md) | 9 / 9 | 3 / 3 | 24 | 0 | 4 | €10 |
 | S1 | `KNF-1` | 0 / 15 | — | — | — | — | — |
 | S1 | `TST-1` | 0 / 13 | — | — | — | — | — |
 | S1 | `HEA-1` | 0 / 17 | — | — | — | — | — |
@@ -193,23 +194,24 @@ evidence record over the stage, not in a single check.
 ## 4. Exercise reachability (generated)
 
 For each competency with a target in a developed stage: the target per stage, and how many exercises give evidence at
-each level. ✗ marks a stage target that no exercise up to that stage evidences.
+each level. ✗ marks a stage target that no exercise up to that stage evidences; *(quiz)* marks a target whose success
+row rests on the quiz alone.
 
 <!-- BEGIN generated:reachability -->
 | Competency | S1 (in progress) | Exercises at L2 · L3 · L4 · L5 |
 |---|---|---|
-| `CK-TERM` | 2 ✗ | 0 · 0 · 0 · 0 |
-| `CK-METH` | 2 ✗ | 0 · 0 · 0 · 0 |
-| `CK-RCPT` | 3 ✗ | 0 · 0 · 0 · 0 |
+| `CK-TERM` | 2 (quiz) | 0 · 0 · 0 · 0 |
+| `CK-METH` | 2 (quiz) | 0 · 0 · 0 · 0 |
+| `CK-RCPT` | 3 | 0 · 2 · 0 · 0 |
 | `IN-SEL` | 2 ✗ | 0 · 0 · 0 · 0 |
-| `IN-STO` | 3 ✗ | 0 · 0 · 0 · 0 |
+| `IN-STO` | 3 | 1 · 2 · 0 · 0 |
 | `IN-VEG` | 2 ✗ | 0 · 0 · 0 · 0 |
 | `IN-STA` | 2 ✗ | 0 · 0 · 0 · 0 |
 | `IN-DAI` | 2 ✗ | 0 · 0 · 0 · 0 |
 | `IN-MEA` | 1 | 0 · 0 · 0 · 0 |
 | `IN-FSH` | 1 | 0 · 0 · 0 · 0 |
 | `IN-ARO` | 1 | 0 · 0 · 0 · 0 |
-| `TS-MEP` | 3 ✗ | 0 · 0 · 0 · 0 |
+| `TS-MEP` | 3 | 1 · 1 · 0 · 0 |
 | `TS-KNF` | 3 ✗ | 0 · 0 · 0 · 0 |
 | `TS-DRY` | 2 ✗ | 0 · 0 · 0 · 0 |
 | `TS-MOI` | 3 ✗ | 0 · 0 · 0 · 0 |
@@ -218,32 +220,32 @@ each level. ✗ marks a stage target that no exercise up to that stage evidences
 | `TS-STA` | 3 ✗ | 0 · 0 · 0 · 0 |
 | `TS-PRO` | 1 | 0 · 0 · 0 · 0 |
 | `TS-PLT` | 1 | 0 · 0 · 0 · 0 |
-| `SC-HEAT` | 2 ✗ | 0 · 0 · 0 · 0 |
-| `SC-BRWN` | 2 ✗ | 0 · 0 · 0 · 0 |
-| `SC-PROT` | 2 ✗ | 0 · 0 · 0 · 0 |
-| `SC-STRC` | 2 ✗ | 0 · 0 · 0 · 0 |
+| `SC-HEAT` | 2 | 1 · 0 · 0 · 0 |
+| `SC-BRWN` | 2 (quiz) | 0 · 0 · 0 · 0 |
+| `SC-PROT` | 2 (quiz) | 0 · 0 · 0 · 0 |
+| `SC-STRC` | 2 (quiz) | 0 · 0 · 0 · 0 |
 | `SC-EMUL` | 1 | 0 · 0 · 0 · 0 |
 | `SC-MICR` | 1 | 0 · 0 · 0 · 0 |
 | `FL-SENS` | 2 ✗ | 0 · 0 · 0 · 0 |
 | `FL-SEAS` | 2 ✗ | 0 · 0 · 0 · 0 |
 | `FL-TEXT` | 1 | 0 · 0 · 0 · 0 |
 | `FL-CORR` | 1 | 0 · 0 · 0 · 0 |
-| `KM-PLAN` | 2 ✗ | 0 · 0 · 0 · 0 |
-| `KM-MATH` | 2 ✗ | 0 · 0 · 0 · 0 |
+| `KM-PLAN` | 2 | 1 · 0 · 0 · 0 |
+| `KM-MATH` | 2 | 1 · 0 · 0 · 0 |
 | `KM-PURC` | 1 | 0 · 0 · 0 · 0 |
 | `KM-WAST` | 2 ✗ | 0 · 0 · 0 · 0 |
-| `KM-EQPT` | 2 ✗ | 0 · 0 · 0 · 0 |
-| `SA-HYG` | 3 ✗ | 0 · 0 · 0 · 0 |
-| `SA-TEMP` | 3 ✗ | 0 · 0 · 0 · 0 |
+| `KM-EQPT` | 2 | 3 · 0 · 0 · 0 |
+| `SA-HYG` | 3 | 1 · 1 · 0 · 0 |
+| `SA-TEMP` | 3 | 1 · 1 · 0 · 0 |
 | `SA-PHYS` | 3 ✗ | 0 · 0 · 0 · 0 |
-| `SA-ALLG` | 2 ✗ | 0 · 0 · 0 · 0 |
+| `SA-ALLG` | 2 | 1 · 0 · 0 · 0 |
 | `RD-ADPT` | 1 | 0 · 0 · 0 · 0 |
 | `RD-TEST` | 1 | 0 · 0 · 0 · 0 |
-| `RD-WRIT` | 2 ✗ | 0 · 0 · 0 · 0 |
+| `RD-WRIT` | 2 | 1 · 0 · 0 · 0 |
 | `JD-CUES` | 2 ✗ | 0 · 0 · 0 · 0 |
 | `JD-CHSE` | 1 | 0 · 0 · 0 · 0 |
 | `JD-TRBL` | 1 | 0 · 0 · 0 · 0 |
-| `JD-REFL` | 2 | 2 · 0 · 0 · 0 |
+| `JD-REFL` | 2 | 3 · 0 · 0 · 0 |
 <!-- END generated:reachability -->
 
 ## 5. Decisions and change log
@@ -256,19 +258,47 @@ each level. ✗ marks a stage target that no exercise up to that stage evidences
 4. **Exercises are tagged** with the competencies they evidence (§1.2). The Phase 4 mapping blocks still show the
    module-level approximation; the tags are in the course files and in the reachability table.
 
-No outline change has been made in this phase so far.
+**Outline changes** (applied, because they follow decisions already reviewed):
+
+| Where | Was | Now | Why |
+|---|---|---|---|
+| `SAF-1` purpose, `SAF-1.M3.L2` | USDA FSIS chart [S24] | FDA *Food Code* [S25] | Phase 4 stopped using [S24] (it refused automated access), and the review accepted the Food Code as the reference. |
+| `SAF-1.M3.L1` objective | growth "between about 7 and 60 °C" | growth between the cold and hot holding limits (5 and 57 °C) | The rounded range disagreed with the figures the gates use ([assessment §9](04-assessment.md#9-safety-figures-used-in-assessment)). |
+
+No course, module, lesson, hour, exercise or `Moves` entry has changed.
 
 ## 6. Equipment across the developed courses (generated)
 
 <!-- BEGIN generated:equipment -->
 | Item | Tier | Courses |
 |---|---|---|
-| Digital scale (1 g) | 0 | `ORI-1` |
-| Instant-read thermometer | 0 | `ORI-1` |
-| Oven thermometer | 0 | `ORI-1` |
+| Bread knife | 0 | `EQP-1` |
+| Cast-iron or carbon-steel skillet | 0 | `EQP-1` |
+| Chef's knife (20 cm) | 0 | `EQP-1` |
+| Digital scale (1 g) | 0 | `ORI-1`, `WRK-1` |
+| Heavy stainless sauté pan | 0 | `EQP-1` |
+| Honing steel | 0 | `EQP-1` |
+| Instant-read thermometer | 0 | `EQP-1`, `ORI-1`, `SAF-1` |
+| Large stable board | 0 | `EQP-1` |
+| Mixing bowls | 0 | `WRK-1` |
+| Oven thermometer | 0 | `EQP-1`, `ORI-1` |
+| Paring knife | 0 | `EQP-1` |
+| Saucepans | 0 | `EQP-1` |
+| Sheet pan as a tray | 0 | `WRK-1` |
+| Sheet pans | 0 | `EQP-1` |
+| Stockpot | 0 | `EQP-1` |
 | Camera | — | `ORI-1` |
+| Fire blanket | — | `SAF-1` |
+| First-aid kit | — | `SAF-1` |
+| Fridge thermometer | — | `SAF-1` |
 | Grid board or ruler | — | `ORI-1` |
+| Hand towels and dish cloths | — | `SAF-1` |
 | Journal | — | `ORI-1` |
-| Labels and pen | — | `ORI-1` |
+| Kitchen timer | — | `WRK-1` |
+| Labels and pen | — | `ORI-1`, `SAF-1` |
+| Measuring jug and spoons | — | `WRK-1` |
+| Second cutting board for raw protein | — | `SAF-1` |
+| Shallow containers with lids | — | `SAF-1` |
+| Small prep bowls | — | `WRK-1` |
 | Tasting cups | — | `ORI-1` |
 <!-- END generated:equipment -->

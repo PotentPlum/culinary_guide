@@ -407,6 +407,16 @@ class ValidateCurriculumTest(unittest.TestCase):
         self.assertIn("KNF-1.M1: no evidence row for TS-KNF (level 2)", errors)
         self.assertIn("KNF-1.M1: evidence row SA-HYG 1: level 1 is shown by the quiz", errors)
 
+    def test_a_knowledge_check_replaces_an_exercise_only_for_quiz_only_rows(self) -> None:
+        row = "| TS-KNF | 2 | knowledge check | quiz — the cut names |"
+        self.write_entries(knf=entry("TS-KNF", "Knife skills", {2: "quiz", 3: "measure, photo"}))
+        self.assertEqual(self.course_errors(course_doc(evidence_row=row)), [])
+        self.write_entries()
+        self.assertIn(
+            "KNF-1.M1: TS-KNF 2 needs more than the quiz (its success row), so name an exercise",
+            self.course_errors(course_doc(evidence_row=row)),
+        )
+
     def test_generated_blocks_and_developed_stages_are_checked(self) -> None:
         self.assertEqual(self.course_errors(course_doc()), [])
         path = self.root / "05-courses" / "S1" / "KNF-1.md"

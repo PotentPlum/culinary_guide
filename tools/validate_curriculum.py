@@ -1222,6 +1222,12 @@ def module_levels(module: Module) -> dict[str, int]:
     return best
 
 
+def quiz_only(phase4: Phase4, comp: str, level: int) -> bool:
+    """The competency's success row at this level rests on the quiz alone, so no exercise is needed."""
+    entry = phase4.entries.get(comp)
+    return entry is not None and set(entry.success.get(level, [])) == {"quiz"}
+
+
 def check_phase5(root: Path, stages: dict[str, list[Course]], phase1: Phase1, phase4: Phase4, report: Report) -> Phase5:
     phase5 = Phase5()
     overview = root / "05-course-development.md"
@@ -1260,7 +1266,12 @@ def check_phase5(root: Path, stages: dict[str, list[Course]], phase1: Phase1, ph
             continue
         for comp, levels in phase1.targets.items():
             target = levels[index]
-            if target and target >= 2 and not any(tagged[comp][s].get(target) for s in STAGES[: index + 1]):
+            if (
+                target
+                and target >= 2
+                and not quiz_only(phase4, comp, target)
+                and not any(tagged[comp][s].get(target) for s in STAGES[: index + 1])
+            ):
                 report.error(f"reachability: no exercise up to {stage} evidences {comp} at its {stage} target {target}")
     return phase5
 
@@ -1343,6 +1354,12 @@ def check_course_doc(doc: CourseDoc, course: Course, phase4: Phase4, report: Rep
             entry = phase4.entries.get(comp)
             if entry is not None and level not in entry.success:
                 report.error(f"{module.id}: {comp} has no success row for level {level}")
+            if exercises == ["knowledge check"]:
+                if entry is not None and set(entry.success.get(level, [])) != {"quiz"}:
+                    report.error(f"{module.id}: {comp} {level} needs more than the quiz (its success row), so name an exercise")
+                if not any(comp in lessons[i.lesson].moves for i in items if i.lesson in lessons):
+                    report.error(f"{module.id}: {comp} rests on the knowledge check, but no item tests a lesson that moves it")
+                continue
             for ident in exercises:
                 if ident not in outline_exercises:
                     report.error(f"{module.id}: evidence row {comp} names {ident}, not an exercise of this module")
@@ -1367,7 +1384,7 @@ def check_course_doc(doc: CourseDoc, course: Course, phase4: Phase4, report: Rep
         report.error(f"{course.id}: no '**Indicative ingredient budget:** about €…' line")
     for outcome in course.outcomes:
         for comp, level in outcome[2].items():
-            if level >= 2 and not any(s.tags.get(comp) for s in doc.exercises.values()):
+            if level >= 2 and not quiz_only(phase4, comp, level) and not any(s.tags.get(comp) for s in doc.exercises.values()):
                 report.error(f"{course.id}: outcome {comp}→{level} is practised in no exercise")
 
 
@@ -1573,8 +1590,13 @@ def phase5_tables(
             cells = []
             for s in shown:
                 target = levels[STAGES.index(s)]
-                ok = target is None or target < 2 or any(tagged[comp][x].get(target) for x in STAGES[: STAGES.index(s) + 1])
-                cells.append("–" if target is None else f"{target}{'' if ok else ' ✗'}")
+                ok = (
+                    target is None
+                    or target < 2
+                    or any(tagged[comp][x].get(target) for x in STAGES[: STAGES.index(s) + 1])
+                )
+                quiz = target is not None and not ok and quiz_only(phase4, comp, target)
+                cells.append("–" if target is None else f"{target}{' (quiz)' if quiz else '' if ok else ' ✗'}")
             counts = " · ".join(str(sum(len(tagged[comp][s].get(lv, [])) for s in STAGES)) for lv in (2, 3, 4, 5))
             rch.append(f"| `{comp}` | " + " | ".join(cells) + f" | {counts} |")
         equip: dict[str, list] = {}  # lower-case name -> [name, tier, courses]
