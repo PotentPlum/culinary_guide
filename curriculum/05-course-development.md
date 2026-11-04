@@ -188,7 +188,7 @@ evidence record over the stage, not in a single check.
 | S4 | [`PRO-4`](05-courses/S4/PRO-4.md) | 11 / 11 | 7 / 7 | 40 | 17 | 15 | €260 |
 | S4 | [`PST-4`](05-courses/S4/PST-4.md) | 11 / 11 | 5 / 5 | 40 | 8 | 12 | €110 |
 | S4 | [`MOD-4`](05-courses/S4/MOD-4.md) | 7 / 7 | 5 / 5 | 32 | 3 | 10 | €45 |
-| S4 | `PLT-4` | 0 / 6 | — | — | — | — | — |
+| S4 | [`PLT-4`](05-courses/S4/PLT-4.md) | 6 / 6 | 4 / 4 | 16 | 1 | 6 | €60 |
 | S4 | `RDV-4` | 0 / 10 | — | — | — | — | — |
 | S4 | `MNU-4` | 0 / 14 | — | — | — | — | — |
 | S5 | `IND-5` | 0 / 15 | — | — | — | — | — |
@@ -238,7 +238,7 @@ row rests on the quiz alone.
 | `TS-GRD` | – | – | 3 | 3 | 0 · 3 · 0 · 0 |
 | `TS-PRS` | – | – | 3 | 3 | 0 · 5 · 0 · 0 |
 | `TS-MOD` | – | – | 1 | 2 | 4 · 0 · 0 · 0 |
-| `TS-PLT` | 1 | 2 | 2 | 4 | 2 · 0 · 1 · 0 |
+| `TS-PLT` | 1 | 2 | 2 | 4 | 2 · 1 · 4 · 0 |
 | `SC-HEAT` | 2 | 3 | 4 | 4 | 3 · 2 · 2 · 0 |
 | `SC-BRWN` | 2 | 3 | 4 | 4 | 1 · 4 · 2 · 0 |
 | `SC-PROT` | 2 | 3 | 4 | 4 | 1 · 4 · 3 · 0 |
@@ -267,8 +267,8 @@ row rests on the quiz alone.
 | `JD-CUES` | 2 | 3 | 4 | 4 | 4 · 5 · 5 · 0 |
 | `JD-CHSE` | 1 | 2 | 3 | 4 | 2 · 5 · 1 · 0 |
 | `JD-TRBL` | 1 | 3 | 4 | 4 | 1 · 3 · 2 · 0 |
-| `JD-REFL` | 2 | 3 | 4 | 4 | 4 · 3 · 2 · 0 |
-| `CR-COMP` | – | 1 | 3 | 4 | 2 · 7 · 1 · 0 |
+| `JD-REFL` | 2 | 3 | 4 | 4 | 4 · 3 · 3 · 0 |
+| `CR-COMP` | – | 1 | 3 | 4 | 2 · 7 · 2 · 0 |
 | `CR-MENU` | – | – | 2 | 4 ✗ | 1 · 0 · 0 · 0 |
 | `CR-IMPV` | – | 1 | 3 | 3 | 0 · 1 · 0 · 0 |
 | `CR-ORIG` | – | – | 1 | 3 ✗ | 0 · 0 · 0 · 0 |
@@ -377,7 +377,7 @@ No course, module, lesson, hour, exercise or `Moves` entry has been added, remov
 | Ice-cream machine (optional) | 3 | `PST-4` |
 | Kitchen blowtorch | 3 | `PST-4` |
 | Piping bags and nozzles | 3 | `PST-3`, `PST-4` |
-| Plating tools | 3 | `PST-4` |
+| Plating tools | 3 | `PLT-4`, `PST-4` |
 | Whipping siphon (optional) | 3 | `MOD-4` |
 | Acetate strips | — | `PST-4` |
 | Airtight boxes with a desiccant | — | `MOD-4` |
@@ -387,7 +387,7 @@ No course, module, lesson, hour, exercise or `Moves` entry has been added, remov
 | Boning knife | — | `KNF-2`, `POU-2`, `BUT-3` |
 | Calibration kit: coded cups | — | `TST-1`, `FLV-3`, `VEG-3` |
 | Calibration kit: key sheets | — | `TST-1` |
-| Camera | — | `ORI-1` |
+| Camera | — | `ORI-1`, `PLT-4` |
 | Canning jars with new lids | — | `PRS-3` |
 | Carving board | — | `MEA-2` |
 | Carving knife | — | `MEA-2` |
@@ -410,7 +410,7 @@ No course, module, lesson, hour, exercise or `Moves` entry has been added, remov
 | Freezer thermometer | — | `GRD-3`, `KMG-3`, `SAF-3` |
 | Fridge thermometer | — | `SAF-1` |
 | Gratin dish | — | `VEG-3` |
-| Grid board or ruler | — | `KNF-1`, `ORI-1`, `KNF-2`, `CLS-4` |
+| Grid board or ruler | — | `KNF-1`, `ORI-1`, `KNF-2`, `CLS-4`, `PLT-4` |
 | Grill brush | — | `FIR-3` |
 | Grill pan | — | `HEA-2` |
 | Hand towels and dish cloths | — | `SAF-1` |
@@ -437,6 +437,7 @@ No course, module, lesson, hour, exercise or `Moves` entry has been added, remov
 | Muffin tin | — | `BAK-2` |
 | Muslin or cheesecloth | — | `LEG-2`, `STK-2`, `CLS-4` |
 | Non-slip mat or damp towel | — | `KNF-1` |
+| Offset spatula | — | `PLT-4` |
 | Omelette pan (20 cm) | — | `EGG-1` |
 | Oven gloves | — | `BRD-2`, `BRD-3` |
 | Palette knife | — | `BAK-2` |
@@ -444,9 +445,12 @@ No course, module, lesson, hour, exercise or `Moves` entry has been added, remov
 | Pasta machine | — | `CUI-3` |
 | Peeler | — | `KNF-1` |
 | pH strips | — | `SCI-2`, `PRS-3` |
-| Phone stand | — | `KNF-1`, `FSH-2`, `MEA-2`, `POU-2`, `SAU-2`, `BUT-3`, `NUT-3`, `CLS-4` |
+| Phone stand | — | `KNF-1`, `FSH-2`, `MEA-2`, `POU-2`, `SAU-2`, `BUT-3`, `NUT-3`, `CLS-4`, `PLT-4` |
+| Photo background | — | `PLT-4` |
 | Pie dish | — | `PST-3` |
 | Planning templates | — | `KMG-3` |
+| Plates in different sizes and colours | — | `PLT-4` |
+| Platters and serving bowls | — | `PLT-4` |
 | Potato masher | — | `VEG-1` |
 | Precision scale (0.1 g) | — | `TST-1`, `BAK-2`, `GRD-3`, `PST-3`, `PST-4` |
 | Proofing basket | — | `BRD-2`, `BRD-3` |
@@ -471,6 +475,7 @@ No course, module, lesson, hour, exercise or `Moves` entry has been added, remov
 | Spice grinder | — | `CUI-3`, `FLV-3` |
 | Spice jars and labels | — | `FLV-3` |
 | Spider or slotted spoon | — | `HEA-2` |
+| Squeeze bottles | — | `PLT-4` |
 | Steamer | — | `HEA-1`, `VEG-1`, `FSH-2`, `CUI-3` |
 | Stick blender | — | `EGG-1`, `SAU-2`, `PST-3`, `MOD-4` |
 | Stick blender or blender | — | `FLV-3`, `PST-4` |
