@@ -422,7 +422,7 @@ a resit) and the cooling and storage on the prep day (`MS-S3.M1.L2`). The plan o
 | Instant-read thermometer | 0 | See `ORI-1` | See `ORI-1` |
 | Shallow containers | 0 | Two oven dishes or trays of about 5 cm deep | Stainless gastronorm trays (1/2 or 1/3) with lids |
 | Labels and a marker | 0 | Masking tape and a marker | Removable food labels |
-| Large stockpot | 1 | See `STK-2` | See `STK-2` |
+| Stockpot | 0 | See `STK-2` | See `STK-2` |
 | Freezer thermometer | — | A simple fridge-and-freezer thermometer reading to −30 °C | A digital min/max thermometer |
 | Mandoline | 2 | A simple Japanese-style mandoline with its guard | A sturdy mandoline with an adjustable blade and a cut-resistant glove |
 | Pressure cooker | 2 | Optional: a 6-litre stove-top pressure cooker | An electric multi-cooker with pressure function |
