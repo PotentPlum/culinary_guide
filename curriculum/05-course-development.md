@@ -1,8 +1,7 @@
 # Phase 5 — Course development
 
-Status: **S1 ready for review** (2026-11-04). S1 is developed and comes up for review first (review decision). S2–S5
-follow one stage at a time, in the format agreed on S1. The end of the S1 batch, with its decisions and open questions,
-is in §7.
+Status: **S1 reviewed; answers applied** (2026-11-04). S2–S5 follow one stage at a time, in the format agreed on S1.
+The end of the S1 batch, with its decisions and the review answers, is in §7.
 
 **Stages developed:** S1
 
@@ -292,8 +291,8 @@ No course, module, lesson, hour, exercise or `Moves` entry has changed.
 - `EQP-1.M1.X1` ends with pan choices for three recipes, from the `KM-EQPT` level 2 row.
 - `EGG-1.M2.X1` and `STA-1.M2.X1` repeat the target dish on later days without a recipe, because level 3 asks for
   independent execution on two occasions.
-- `KNF-1` adds working sizes for *bâtonnet* (5–7 mm square, 5–6 cm long) and *paysanne* (10–12 mm, 2–3 mm thick),
-  which the Phase 4 tolerance note does not list.
+- `KNF-1` introduced working sizes for *bâtonnet* (5–7 mm square, 5–6 cm long) and *paysanne* (10–12 mm, 2–3 mm
+  thick). After the S1 review they are in the Phase 4 tolerance note (`04-competencies/TS.md`).
 
 ## 6. Equipment across the developed courses (generated)
 
@@ -392,16 +391,20 @@ The decisions are numbered in §5. The assumptions:
 - **Reference images:** the knowledge checks and the AI-review exercises name the images Phase 6 must produce. None
   exist yet.
 
-### 7.3 Gaps and open questions for the review
+### 7.3 Gaps and open questions (review answers, 2026-11-04)
 
 1. **Exercise scope notes** (§5). Seven exercise specs do more than the outline's one-line description, so that their
    module can meet the Phase 4 success row. Hours are unchanged.
    - Option 1: keep the outline's short descriptions and let the specs carry the detail. This is my recommendation.
    - Option 2: rewrite the outline descriptions to match.
+
+   **Answer:** option 1. The outline keeps its short descriptions; the specs carry the detail.
 2. **Success rows that span modules** (decision 6). Rows such as `TS-STA` level 3 and `IN-STA` level 2 are completed
    over several modules or courses.
    - Option 1: the evidence rows say which part each module covers. This is what S1 does, and my recommendation.
    - Option 2: split those Phase 4 rows by element.
+
+   **Answer:** option 1. The Phase 4 rows stay as they are.
 3. **Burn first aid.** `SAF-1.M4.L2` does not give a cooling time for burns, because the program has no source for it
    yet. Phase 6 should cite the Dutch Red Cross; it is not yet in `sources.md`.
 4. **The knowledge-check items have not been reviewed by a second reader.** The validator checks their number, type,
@@ -409,6 +412,8 @@ The decisions are numbered in §5. The assumptions:
    for the 48 safety items.
 5. **The tolerance note.** Should the working sizes for *bâtonnet* and *paysanne* that `KNF-1` adds be added to the
    Phase 4 tolerance note in `04-competencies/TS.md`? I recommend yes.
+
+   **Answer:** yes; they are added.
 
 ### 7.4 Recommendations for S2
 

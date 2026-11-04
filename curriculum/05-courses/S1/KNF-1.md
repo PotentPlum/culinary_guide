@@ -33,7 +33,7 @@ unlearned later. The program's sizes and tolerances are fixed in the Phase 4 fra
 - large dice 20 mm;
 - "8 of 10" means 8 of 10 random pieces within the range.
 
-This course adds working sizes for the cuts the framework does not list:
+The same note gives the sizes of two cuts this course introduced (S1 review):
 - *bâtonnet*: 5–7 mm square and 5–6 cm long, the stick that small dice is cut from;
 - *paysanne*: 10–12 mm squares or triangles, 2–3 mm thick.
 
