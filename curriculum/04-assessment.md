@@ -497,12 +497,16 @@ The figures were checked on the pages and in the sections named on 2026-11-04.
 | Cooking poultry, and stuffed foods | 74 °C, instantaneous | §3-401.11(A)(3) [S25] |
 | Cooking minced meat and minced fish | 68 °C for 17 seconds, or 63 °C for 3 minutes, 66 °C for 1 minute, 70 °C instantaneous | §3-401.11(A)(2) [S25] |
 | Cooking fish and intact meat | 63 °C for 15 seconds | §3-401.11(A)(1) [S25] |
+| Whole-muscle, intact beef steaks served rare | Cooked on top and bottom to a surface temperature of 63 °C or above, with a cooked colour change on all outside surfaces; the steak kept intact (not pierced, needle-tenderised or rolled); not served to risk groups | §3-401.11(C) [S25] |
 | Whole meat roasts | A time-temperature table, from 54.4 °C held for 112 minutes to 62.8 °C held for 4 minutes (the holding time may include the rise after the oven) | §3-401.11(B) [S25] |
 | Garlic or herbs in oil | Needs time and temperature control (refrigeration) unless modified to stop pathogen growth | Food Code definition of TCS food, §1-201.10 [S25] |
 | Home preserving | Use tested methods and recipes only | National Center for Home Food Preservation [S27] |
 
 **Rules for the program's assessments:**
 - A probe reading below the figure for the food is a gate **Fail**, even if the dish looks done.
+- A whole-muscle beef steak served below 63 °C at the core is checked against the steak row above (seared on both
+  faces, colour changed on every outside surface, kept intact), not against a core reading. Minced, tenderised or
+  rolled beef is not a steak under this rule.
 - Sous vide and low-temperature cooking follow the time-temperature tables above. A cook below them needs a tested
   pasteurisation table, which Phase 5 cites in `SLW-3`.
 - The Dutch home advice wins where it is stricter, for example 4 °C rather than 5 °C in the fridge.
