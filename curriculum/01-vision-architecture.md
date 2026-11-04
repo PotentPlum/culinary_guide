@@ -80,6 +80,7 @@ Core subjects come back several times, each time at a higher level (Bruner's spi
 - knife skills: `KNF-1` → `KNF-2` → `BUT-3`;
 - sauces: `SAU-2` → `CLS-4`;
 - flavour: `TST-1` → `FLV-3` → `RDV-4`;
+- vegetables: `VEG-1` → `VEG-3`;
 - pastry and bread: `BAK-2` → `PST-3` → `PST-4`, and `BRD-2` → `BRD-3`.
 
 A later course always **re-assesses** earlier competencies under harder conditions instead of assuming they were
@@ -168,7 +169,7 @@ Key:
   - This is an assumption, to be refined in Phase 3.
 - The Le Cordon Bleu cuisine diploma is about **540 h** of mostly practical classes [S4], but it covers classical cuisine
   only, with no pastry, bread, cuisines or management.
-- This program's core is about **1,000 h** (§8):
+- This program's core is about **1,020 h** (§8):
   - It includes the theory and planning that schools fit into lectures and homework.
   - It leaves out professional production and operations (about a third of the CIA program).
   - It adds what a school gives through supervision: structured self-assessment and repetition.
@@ -210,7 +211,7 @@ The brief's subject list was reviewed against the benchmarks. The changes and th
 | *Flavour development* + *Herbs and spices* | Basic seasoning goes in `TST-1`. Herbs, spices, aromatics and flavour composition go in **`FLV-3`**, the integrating flavour course. |
 | *Cooking methods* as one subject | Split by level: **`HEA-1`** (basic dry and moist methods), **`HEA-2`** (the full method matrix including frying and grilling), **`SLW-3`** (combination methods, braising, sous vide). |
 | *Advanced cooking* | Not a subject but a stage (**S4**), plus `MOD-4` for modern techniques. |
-| *Vegetables and fruits* | Vegetables are core (`VEG-1`, then built into every later course). Fruit is taught where it is used: pastry and desserts, preserving, salads, savoury pairings. |
+| *Vegetables and fruits* | Vegetables are core: `VEG-1` (S1) and `VEG-3` (vegetable-led cooking, S3), and they are built into every later course. Fruit is taught where it is used: pastry and desserts, preserving, salads, savoury pairings. |
 
 ### 4.3 Re-weighting and re-placement
 
@@ -295,7 +296,7 @@ target are left to specializations (§11).
 |---|---|---|---|---|---|---|---|
 | IN-SEL | Judges quality, freshness and ripeness, and buys seasonally | 2 | 3 | 4 | 4 | 4 | 4 |
 | IN-STO | Stores ingredients and prepared food for quality and safety | 3 | 3 | 4 | 4 | 4 | 4 |
-| IN-VEG | Knows vegetables and fruit: types, structure, and their best uses and methods | 2 | 3 | 4 | 4 | 4 | 4 |
+| IN-VEG | Knows vegetables and fruit: types, structure, and their best uses and methods | 2 | 3 | 4 | 4 | 5 | 5 |
 | IN-STA | Knows grains, legumes, pasta, rice and potatoes: varieties and behaviour | 2 | 3 | 4 | 4 | 4 | 4 |
 | IN-DAI | Knows eggs and dairy: how they behave with heat, acid and fat | 2 | 3 | 4 | 4 | 4 | 4 |
 | IN-MEA | Knows meat and poultry: anatomy, cuts, matching cut to method | 1 | 3 | 3 | 4 | 4 | 4 |
@@ -395,8 +396,8 @@ target are left to specializations (§11).
 | CR-ORIG | Develops original dishes with a recognisable personal point of view | – | – | 1 | 3 | 4 | 4 |
 
 That is **66 competencies in 10 domains**:
-- 19 target level 5;
-- 40 target level 4;
+- 20 target level 5;
+- 39 target level 4;
 - 6 target level 3;
 - 1 targets level 2.
 
@@ -412,7 +413,7 @@ into sub-competencies. The IDs above stay as the parents.
 ```mermaid
 flowchart LR
   S1["S1 Foundations<br/>~170 h · ~26 wk"] --> S2["S2 Core techniques<br/>~260 h · ~40 wk"]
-  S2 --> S3["S3 Integration<br/>~250 h · ~38 wk"]
+  S2 --> S3["S3 Integration<br/>~270 h · ~42 wk"]
   S3 --> S4["S4 Advanced<br/>~210 h · ~32 wk"]
   S4 --> S5["S5 Mastery & independence<br/>~110 h · ~17 wk"]
   S5 --> SP["Specializations<br/>(optional, after the core)"]
@@ -422,10 +423,10 @@ flowchart LR
 |---|---|---|---|---|---|
 | **S1** | Foundations (*Fundament*) | Can I work safely, organised and with control in my kitchen, and taste what I make? | 170 | 26 | `MS-S1` |
 | **S2** | Core techniques (*Kerntechnieken*) | Can I carry out the core professional techniques across the main ingredient groups? | 260 | 40 | `MS-S2` |
-| **S3** | Integration (*Integratie*) | Can I combine techniques into complete dishes, control flavour on purpose, and plan and manage my kitchen? | 250 | 38 | `MS-S3` |
+| **S3** | Integration (*Integratie*) | Can I combine techniques into complete dishes, control flavour on purpose, and plan and manage my kitchen? | 270 | 42 | `MS-S3` |
 | **S4** | Advanced (*Gevorderd*) | Can I execute advanced and classical techniques, compose plates and menus, and develop recipes? | 210 | 32 | `MS-S4` |
 | **S5** | Mastery and independence (*Meesterschap*) | Can I cook anything well without a recipe, create my own food, and prove it under pressure? | 110 | 17 | `CAP-5` |
-| | **Core program** | | **1,000** | **~154** | |
+| | **Core program** | | **1,020** | **~157** | |
 
 Stage names in Dutch follow the vocabulary of the existing *Mise* app (Basis / Gemiddeld / Gevorderd). The exact app
 wording is decided in Phase 7.
@@ -452,12 +453,13 @@ wording is decided in Phase 7.
   starch garnish. Cooked from a brief with a framework recipe. Plus a baked item, and a science-and-safety quiz.
 
 **S3 — Integration**
-- *Purpose.* Combine techniques, design flavour on purpose, and widen the repertoire: butchery, braising, sous vide, the
-  cold kitchen, preservation, pastry, sourdough, and the logic of world cuisines. Learn to run a kitchen economically.
+- *Purpose.* Combine techniques, design flavour on purpose, and widen the repertoire: vegetable-led cooking, butchery,
+  braising, sous vide, the cold kitchen, preservation, pastry, sourdough, and the logic of world cuisines. Learn to run a kitchen economically.
 - *Entry.* `MS-S2` passed.
 - *Emphasis.* About 25 % K, 45 % S, 30 % J. Recipes are reduced to frameworks (§6.6).
 - *Exit gate `MS-S3`.* A week-long plan:
-  - a costed menu for 4–6 days that uses whole ingredients (a whole bird or fish, a preserved component, a braise);
+  - a costed menu for 4–6 days that uses whole ingredients (a whole bird or fish, a preserved component, a braise, a
+    vegetable-led main dish);
   - one evening of a two-course meal, cooked without a full recipe;
   - a flavour-correction test on dishes deliberately put out of balance;
   - a written review.
@@ -538,6 +540,7 @@ flowchart TD
     PST3[PST-3 Pastry II]
     BRD3[BRD-3 Bread II]
     CUI3[CUI-3 World cuisines I]
+    VEG3[VEG-3 Vegetables II]
     KMG3[KMG-3 Kitchen management]
     NUT3[NUT-3 Nutrition & allergens]
     SAF3 --> PRS3
@@ -573,6 +576,8 @@ flowchart TD
   BAK2 --> PST3 --> PST4
   SCI2 --> SAF3
   FLV3 --> CUI3 --> CUI4
+  VEG1 --> VEG3
+  FLV3 --> VEG3
   KMG3 --> MNU4
   SLW3 --> MOD4
 ```
@@ -608,8 +613,8 @@ How much support a practical exercise gives drops through the stages. This is a 
 
 ## 7. Curriculum structure: courses
 
-**43 core courses** plus 4 milestone assessments and the capstone:
-- 10 courses in S1, 11 in S2, 11 in S3, 8 in S4 and 3 in S5;
+**44 core courses** plus 4 milestone assessments and the capstone:
+- 10 courses in S1, 11 in S2, 12 in S3, 8 in S4 and 3 in S5;
 - the capstone (`CAP-5`) is listed with S5 but counted as an assessment, not a course.
 
 Hours include theory, practice, journaling and the course's own assessments. Main competencies are listed by ID;
@@ -650,7 +655,7 @@ Phase 4 adds the full mapping.
 | MS-S2 | *Milestone S2* | §6.2 | 16 | all S2 | |
 | | **Total** | | **260** | | |
 
-### 7.3 S3 — Integration (250 h)
+### 7.3 S3 — Integration (270 h)
 
 | ID | Course | Purpose | Hours | Prerequisites | Main competencies |
 |---|---|---|---|---|---|
@@ -665,8 +670,9 @@ Phase 4 adds the full mapping.
 | CUI-3 | World cuisines I | The logic of 8 traditions (pantry, core techniques, flavour profile, meal structure, history), each with a representative cooking project. The eight: French regional, Italian, Iberian, Levantine and North African, Indian subcontinent, Chinese, Japanese, Mexican (§13.2 Q3). Dutch and Northern European cooking gets no course of its own; it appears where it fits, for example in vegetables, preserving and bread. | 34 | MS-S2, FLV-3 | CK-CUIS, FL-ARCH, IN-ARO, JD-CHSE |
 | KMG-3 | Kitchen management | Weekly planning; purchasing and quantities; cost per portion and budget; yield; batch cooking and turning leftovers into new dishes; freezer management; reducing waste. | 18 | MS-S2 | KM-PLAN, KM-PURC, KM-WAST, KM-MATH |
 | NUT-3 | Applied nutrition and allergens | Macronutrients and their role in cooking; balanced meals; adapting to diets (vegetarian, vegan, gluten-free, lower salt); the 14 EU allergens and cross-contact [S23]. | 12 | MS-S2 | SA-ALLG, RD-ADPT |
+| VEG-3 | Vegetables II: vegetable-led cooking | Vegetables as the main event: whole-roasting, charring, salt-baking, glazing, confit; purées and vegetable emulsions; fermented and pickled vegetables used in cooking; satisfying plant-based dishes (umami, fat, texture, protein); composing a plate around a vegetable; cooking a vegetable through its whole season. Added after review (§13.2 Q7). | 20 | MS-S2, FLV-3 | TS-VEG, IN-VEG, FL-ARCH, FL-TEXT, CR-COMP |
 | MS-S3 | *Milestone S3* | §6.2 | 20 | all S3 | |
-| | **Total** | | **250** | | |
+| | **Total** | | **270** | | |
 
 ### 7.4 S4 — Advanced (210 h)
 
@@ -702,21 +708,21 @@ Phase 4 adds the full mapping.
 | Stage | Hours | Share | Weeks at 6.5 h/wk | Weeks at 5 h | Weeks at 8 h |
 |---|---|---|---|---|---|
 | S1 | 170 | 17 % | 26 | 34 | 21 |
-| S2 | 260 | 26 % | 40 | 52 | 33 |
-| S3 | 250 | 25 % | 38 | 50 | 31 |
+| S2 | 260 | 25 % | 40 | 52 | 33 |
+| S3 | 270 | 26 % | 42 | 54 | 34 |
 | S4 | 210 | 21 % | 32 | 42 | 26 |
 | S5 | 110 | 11 % | 17 | 22 | 14 |
-| **Core** | **1,000** | 100 % | **~154 (≈ 3.3 years at 46 wk/yr)** | 200 (≈ 4.3 yr) | 125 (≈ 2.7 yr) |
+| **Core** | **1,020** | 100 % | **~157 (≈ 3.4 years at 46 wk/yr)** | 204 (≈ 4.4 yr) | 128 (≈ 2.8 yr) |
 | Specializations | 40–120 h each | | | | |
 
 ### 8.2 How the hours are spent (core, approximate)
 
 | Activity | Share | About | Notes |
 |---|---|---|---|
-| Theory (reading, video, quizzes) | 20 % | 200 h | Mostly short blocks (10–30 min) that fit on a phone. |
-| Practical cooking | 60 % | 600 h | About 70 % of it eaten as household meals (A3). |
-| Planning, journaling, reflection | 10 % | 100 h | Plan and evaluation for every practical. |
-| Assessment (course checks, milestones, capstone) | 10 % | 100 h | Milestones and the capstone total 102 h. |
+| Theory (reading, video, quizzes) | 20 % | 204 h | Mostly short blocks (10–30 min) that fit on a phone. |
+| Practical cooking | 60 % | 612 h | About 70 % of it eaten as household meals (A3). |
+| Planning, journaling, reflection | 10 % | 102 h | Plan and evaluation for every practical. |
+| Assessment (course checks, milestones, capstone) | 10 % | 102 h | Milestones and the capstone total 102 h. |
 
 A typical week at 6.5 h: one or two short theory blocks (about 1–1.5 h), two or three practical sessions (about 4 h,
 mostly weeknight dinners plus one longer weekend session), and journaling (about 0.5–1 h).
@@ -862,7 +868,7 @@ competencies above the core targets. They don't change the core.
 | Asian cuisines (series per tradition) | `CUI-3` + `MS-S3` | CK-CUIS → 5 for each tradition; wok, dumplings, fermentation pantries |
 | Fermentation | `PRS-3` + `SCI-2` + `MS-S3` | TS-PRS → 5; koji, miso, vinegar, kombucha, sourdough beyond bread |
 | Modernist cuisine | `MOD-4` + `MS-S4` | TS-MOD → 4; advanced hydrocolloids, precision cooking, texture design |
-| Plant-based cooking | `MS-S3` | RD-ADPT and FL-ARCH applied to plant proteins and umami |
+| Plant-based cooking | `VEG-3` + `MS-S3` | RD-ADPT and FL-ARCH applied to plant proteins and umami |
 | Professional kitchen management | Core complete | Station work, volume, costing, HACCP planning; preparation for kitchen work, but still no qualification |
 
 ---
@@ -875,7 +881,7 @@ competencies above the core targets. They don't change the core.
 |---|---|
 | **S1** | Work safely and organised; cut accurately; control heat on a domestic stove; cook eggs, vegetables, rice, grains and pasta reliably; taste and season with intent; follow and plan from a recipe; keep a useful journal. |
 | **S2** | Carry out every core cooking method; make stocks, soups and the main sauce families; cook poultry, meat and fish to a chosen doneness; bake quick breads, shortcrust, sponges, custards and a lean bread; explain the science behind these techniques. |
-| **S3** | Combine techniques into complete, balanced dishes; build flavour on purpose; break down a bird and fillet a fish; braise and use sous vide safely; preserve with tested methods; make choux, tarts and sourdough; cook from the logic of several world cuisines; plan, shop and budget a week; adapt to diets and allergens. |
+| **S3** | Combine techniques into complete, balanced dishes; cook vegetable-led main dishes; build flavour on purpose; break down a bird and fillet a fish; braise and use sous vide safely; preserve with tested methods; make choux, tarts and sourdough; cook from the logic of several world cuisines; plan, shop and budget a week; adapt to diets and allergens. |
 | **S4** | Use the classical repertoire as a system; cook three chosen cuisines in depth; handle advanced proteins and pastry; use modern techniques where they add something; plate with intent; develop and write recipes; design and execute a multi-course dinner for guests. |
 | **S5** | Cook well without recipes; recreate dishes from descriptions; improvise under constraints; create original dishes; plan and deliver a four-course dinner on their own and critique it. |
 
@@ -906,10 +912,10 @@ competencies above the core targets. They don't change the core.
 1. **Five stages** (Foundations → Core techniques → Integration → Advanced → Mastery). This matches the brief's
    example, and the stages are defined by the dominant mode of learning (habits → techniques → combination → refinement →
    independence).
-2. **About 1,000 core hours over about 3.3 years** at 6.5 h/week, with specializations on top. The hours buy breadth
+2. **About 1,020 core hours over about 3.4 years** at 6.5 h/week, with specializations on top. The hours buy breadth
    comparable to a professional program's culinary content [S1], minus professional production and operations, plus
    the extra repetition a self-taught learner needs.
-3. **43 core courses** with stable `AAA-n` IDs, plus 4 milestones and a capstone.
+3. **44 core courses** with stable `AAA-n` IDs, plus 4 milestones and a capstone.
 4. **66 competencies in 10 domains**, with explicit level targets per stage. Not everything aims at level 5.
 5. **Threads** (safety, tasting, journal, knife, science, terminology) run through every stage and are re-assessed at
    every milestone.
@@ -922,17 +928,18 @@ competencies above the core targets. They don't change the core.
 
 ### 13.2 Review answers (2026-11-04)
 
-The reviewer answered the six open questions. The changes are applied in this document and listed here, so that the
+The reviewer answered the six open questions and one follow-up (Q7). The changes are applied in this document and listed here, so that the
 change is traceable:
 
 | # | Question | Answer | Applied in |
 |---|---|---|---|
-| Q1 | Are **1,000 h / about 3.3 years** acceptable? | Yes. | No change. |
+| Q1 | Are **1,000 h / about 3.3 years** acceptable? | Yes. | No change then; Q7 later raised the core to 1,020 h. |
 | Q2 | Any **dietary limits**? | No. | A6: meat, fish and beverage modules are core. |
 | Q3 | **Which world cuisines**, and should Dutch / Northern European cooking be prominent? | Dutch / Northern European should **not** get a prominent place. | `CUI-3` covers eight traditions without it. |
 | Q4 | Is **outside evaluation** realistic? | Household tasters and AI review of photos and video: yes. | A7; §10.1, §10.2. A human coach is not assumed. |
 | Q5 | **Budget limits**? | No, but recommendations in categories such as "Good / The best". | A9; §9.4: Good / Best for equipment and ingredients. |
 | Q6 | **Food–drink pairing**? | Only if the CIA includes it, and then the basics of both alcoholic and non-alcoholic drinks. | The CIA core has HOSP-355 *Wine and Beverage Studies* [S1], so it is in: a required module in `MNU-4`, new competency `CK-BEVR` (target 3), §3.2, §4.1. |
+| Q7 | Follow-up: shouldn't **vegetables** be a core element too? | Yes. Add a second vegetable course, and let the core grow from 1,000 to 1,020 h rather than cut other courses. | New course `VEG-3` (20 h, S3); `IN-VEG` target raised from 4 to 5; S3 270 h; §2.5, §4.2, §6, §7.3, §8, §11, §12. |
 
 Gaps recorded for later phases:
 - **Phase 3**: a detailed chapter-level comparison against [S8] and [S10]; a work-process comparison against the MBO
