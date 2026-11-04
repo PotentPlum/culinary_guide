@@ -706,7 +706,7 @@ different fruit) with the effect recorded; photos and tasting forms. The extensi
 | PST-3.M4.Q4 | multiple choice | PST-3.M4.L2 | — | Your ganache looks oily and grainy. How do you fix it? A) heat it hard B) blend in a spoon of warm milk or cream from the centre C) add chocolate D) whisk vigorously | B | Re-emulsify. |
 | PST-3.M4.Q5 | multiple choice | PST-3.M4.L3 | — | Why is gelatine dosed by weight? A) it's tradition B) sheets differ in strength, so weight is the reliable measure C) to save money D) it isn't | B | Dosing by weight. |
 | PST-3.M4.Q6 | multiple choice | PST-3.M4.L3 | — | Why does a gelatine-set mousse melt in the mouth? A) it contains butter B) gelatine melts close to body temperature C) sugar D) air | B | Setting and melting points. |
-| PST-3.M4.Q7 | multiple choice | PST-3.M4.L3 | yes | A chocolate mousse with raw eggs is planned, and a guest is pregnant. What do you do? A) serve it B) use pasteurised egg, or a cooked base, for her portion C) add more chocolate D) chill it longer | B | Assessment §9, risk groups. |
+| PST-3.M4.Q7 | multiple choice | PST-3.M4.L3 | yes | A chocolate mousse with raw eggs is planned, and a guest is pregnant. What do you do? A) serve it B) use pasteurised egg, or a cooked base, for the guest's portion C) add more chocolate D) chill it longer | B | Assessment §9, risk groups. |
 | PST-3.M4.Q8 | multiple choice | PST-3.M4.L3 | — | Gelatine set in strings in your fruit mousse. Why? A) too much sugar B) it was added to a base that was too cold C) the fruit was too ripe D) too much cream | B | Compatible temperatures. |
 
 **Evidence check:**

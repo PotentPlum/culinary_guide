@@ -677,7 +677,7 @@ module are written up in the same way, so that three dishes have their textures 
 | FLV-3.M4.Q5 | multiple choice | FLV-3.M4.L2 | — | Your fried shallots are perfect in the pan. What happens if you leave them? A) nothing B) they keep cooking and darken, turning bitter C) they go soft D) they shrink | B | Take them out just before they look done. |
 | FLV-3.M4.Q6 | multiple choice | FLV-3.M4.L2 | — | Where do fried crunchy elements drain? A) in a pile on paper B) on a rack in one layer C) in the pan D) in a bowl | B | Steam softens a pile. |
 | FLV-3.M4.Q7 | scenario | FLV-3.M4.L2 | — | A creamy soup needs crunch. Which element would you choose, and when do you add it? | Toasted seeds or *pangrattato* (or fried shallots), on top at the last moment, so they don't sit in the soup. | Contrast, added late. |
-| FLV-3.M4.Q8 | multiple choice | FLV-3.M4.L2 | yes | A guest has a tree-nut allergy and your recipe uses toasted hazelnuts for crunch. What do you do? A) use fewer B) replace them with toasted seeds or crumbs, check those labels, and keep tools apart C) pick them off her plate D) nothing | B | Allergen rule (`SAF-1.M4`). |
+| FLV-3.M4.Q8 | multiple choice | FLV-3.M4.L2 | yes | A guest has a tree-nut allergy and your recipe uses toasted hazelnuts for crunch. What do you do? A) use fewer B) replace them with toasted seeds or crumbs, check those labels, and keep tools apart C) pick them off the guest's plate D) nothing | B | Allergen rule (`SAF-1.M4`). |
 
 **Evidence check:**
 

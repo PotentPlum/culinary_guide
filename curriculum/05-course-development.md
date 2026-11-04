@@ -182,7 +182,7 @@ evidence record over the stage, not in a single check.
 | S3 | [`BRD-3`](05-courses/S3/BRD-3.md) | 11 / 11 | 6 / 6 | 32 | 2 | 11 | €40 |
 | S3 | `CUI-3` | 0 / 34 | — | — | — | — | — |
 | S3 | [`KMG-3`](05-courses/S3/KMG-3.md) | 9 / 9 | 5 / 5 | 16 | 6 | 13 | €0 |
-| S3 | `NUT-3` | 0 / 6 | — | — | — | — | — |
+| S3 | [`NUT-3`](05-courses/S3/NUT-3.md) | 6 / 6 | 3 / 3 | 16 | 8 | 4 | €40 |
 | S4 | `CLS-4` | 0 / 13 | — | — | — | — | — |
 | S4 | `CUI-4` | 0 / 12 | — | — | — | — | — |
 | S4 | `PRO-4` | 0 / 11 | — | — | — | — | — |
@@ -258,17 +258,17 @@ row rests on the quiz alone.
 | `SA-HYG` | 3 | 4 | 5 | 1 · 1 · 5 · 1 |
 | `SA-TEMP` | 3 | 4 | 4 | 1 · 3 · 5 · 0 |
 | `SA-PHYS` | 3 | 4 | 5 | 0 · 2 · 2 · 2 |
-| `SA-ALLG` | 2 | 3 | 4 ✗ | 1 · 2 · 0 · 0 |
+| `SA-ALLG` | 2 | 3 | 4 | 1 · 2 · 1 · 0 |
 | `SA-HRPR` | – | 1 | 4 | 0 · 0 · 6 · 0 |
 | `RD-RATO` | – | 2 | 3 | 4 · 5 · 0 · 0 |
-| `RD-ADPT` | 1 | 2 | 3 | 2 · 1 · 0 · 0 |
+| `RD-ADPT` | 1 | 2 | 3 | 3 · 2 · 0 · 0 |
 | `RD-TEST` | 1 | 2 | 3 | 4 · 2 · 0 · 0 |
 | `RD-WRIT` | 2 | 2 | 3 | 1 · 1 · 0 · 0 |
 | `JD-CUES` | 2 | 3 | 4 | 4 · 5 · 4 · 0 |
 | `JD-CHSE` | 1 | 2 | 3 | 2 · 1 · 0 · 0 |
 | `JD-TRBL` | 1 | 3 | 4 | 1 · 3 · 2 · 0 |
 | `JD-REFL` | 2 | 3 | 4 | 4 · 3 · 1 · 0 |
-| `CR-COMP` | – | 1 | 3 | 1 · 5 · 0 · 0 |
+| `CR-COMP` | – | 1 | 3 | 2 · 5 · 0 · 0 |
 | `CR-MENU` | – | – | 2 | 1 · 0 · 0 · 0 |
 | `CR-IMPV` | – | 1 | 3 | 0 · 1 · 0 · 0 |
 | `CR-ORIG` | – | – | 1 | 0 · 0 · 0 · 0 |
@@ -335,7 +335,7 @@ No course, module, lesson, hour, exercise or `Moves` entry has been added, remov
 | Heavy stainless sauté pan | 0 | `EQP-1`, `HEA-1`, `VEG-1`, `POU-2`, `SAU-2`, `VEG-3` |
 | Honing steel | 0 | `EQP-1`, `KNF-1` |
 | Instant-read thermometer | 0 | `EGG-1`, `EQP-1`, `HEA-1`, `ORI-1`, `SAF-1`, `BRD-2`, `FSH-2`, `HEA-2`, `LEG-2`, `MEA-2`, `POU-2`, `SAU-2`, `SCI-2`, `STK-2`, `BUT-3`, `GRD-3`, `PST-3`, `SAF-3`, `SLW-3` |
-| Labels and a marker | 0 | `KMG-3`, `PRS-3`, `SAF-3` |
+| Labels and a marker | 0 | `KMG-3`, `NUT-3`, `PRS-3`, `SAF-3` |
 | Large stable board | 0 | `EQP-1`, `KNF-1` |
 | Mixing bowls | 0 | `WRK-1`, `BAK-2`, `SCI-2`, `GRD-3` |
 | Oven thermometer | 0 | `EQP-1`, `ORI-1`, `BAK-2`, `BRD-2` |
@@ -383,6 +383,7 @@ No course, module, lesson, hour, exercise or `Moves` entry has been added, remov
 | Carving knife | — | `MEA-2` |
 | Cheese knives and a board | — | `GRD-3` |
 | Closed-cell foam tape | — | `SLW-3` |
+| Coloured boards and tools for allergen-free cooking | — | `NUT-3` |
 | Containers with lids | — | `KNF-2` |
 | Cut-resistant glove | — | `BUT-3` |
 | Deep roasting tin for a water bath | — | `EGG-1`, `GRD-3` |
@@ -429,7 +430,7 @@ No course, module, lesson, hour, exercise or `Moves` entry has been added, remov
 | Parchment paper | — | `FSH-2` |
 | Peeler | — | `KNF-1` |
 | pH strips | — | `SCI-2`, `PRS-3` |
-| Phone stand | — | `KNF-1`, `FSH-2`, `MEA-2`, `POU-2`, `SAU-2`, `BUT-3` |
+| Phone stand | — | `KNF-1`, `FSH-2`, `MEA-2`, `POU-2`, `SAU-2`, `BUT-3`, `NUT-3` |
 | Pie dish | — | `PST-3` |
 | Piping bags and nozzles | — | `PST-3` |
 | Planning templates | — | `KMG-3` |
@@ -443,7 +444,7 @@ No course, module, lesson, hour, exercise or `Moves` entry has been added, remov
 | Round cake tins | — | `BAK-2` |
 | Salad spinner | — | `VEG-1`, `GRD-3` |
 | Seasonal calendar | — | `VEG-1`, `VEG-3` |
-| Second cutting board for raw protein | — | `SAF-1`, `FSH-2`, `KNF-2`, `MEA-2`, `POU-2`, `BUT-3` |
+| Second cutting board for raw protein | — | `SAF-1`, `FSH-2`, `KNF-2`, `MEA-2`, `POU-2`, `BUT-3`, `NUT-3` |
 | Shallow containers with lids | — | `SAF-1`, `STA-1`, `MEA-2`, `POU-2`, `KMG-3` |
 | Slotted spoon | — | `EGG-1` |
 | Slow cooker | — | `SLW-3` |
