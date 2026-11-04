@@ -70,7 +70,19 @@ milestone checks that the level was actually *demonstrated*; the lessons are whe
 | S1 | `VEG-1` | Vegetables I | 6 | 15 | 24 | 24 | ±0 |
 | S1 | `STA-1` | Rice, grains and pasta I | 4 | 11 | 14 | 14 | ±0 |
 | S1 | `MS-S1` | Milestone S1 | 1 | 4 | 6 | 6 | ±0 |
-| | | **Total** | **45** | **123** | **170** | **170** | |
+| S2 | `SCI-2` | Food science II | 6 | 11 | 20 | 20 | ±0 |
+| S2 | `HEA-2` | Cooking methods II | 6 | 12 | 22 | 22 | ±0 |
+| S2 | `KNF-2` | Knife skills II | 3 | 5 | 8 | 8 | ±0 |
+| S2 | `STK-2` | Stocks and soups | 5 | 14 | 24 | 24 | ±0 |
+| S2 | `SAU-2` | Sauces I | 7 | 12 | 26 | 26 | ±0 |
+| S2 | `POU-2` | Poultry | 6 | 13 | 22 | 22 | ±0 |
+| S2 | `MEA-2` | Meat I | 6 | 14 | 28 | 28 | ±0 |
+| S2 | `FSH-2` | Fish and shellfish I | 5 | 12 | 24 | 24 | ±0 |
+| S2 | `LEG-2` | Legumes, grains II and dairy | 4 | 10 | 18 | 18 | ±0 |
+| S2 | `BAK-2` | Baking science and pastry I | 6 | 16 | 30 | 30 | ±0 |
+| S2 | `BRD-2` | Bread I | 5 | 11 | 22 | 22 | ±0 |
+| S2 | `MS-S2` | Milestone S2 | 1 | 6 | 16 | 16 | ±0 |
+| | | **Total** | **105** | **259** | **430** | **430** | |
 <!-- END generated:summary -->
 
 ## Competency coverage (generated)
@@ -81,72 +93,72 @@ the stage file doesn't exist yet; ✗ marks a miss.
 <!-- BEGIN generated:coverage -->
 | Competency | S1 | S2 | S3 | S4 | S5 |
 |---|---|---|---|---|---|
-| `CK-TERM` | 2 / 2 | · | · | · | · |
-| `CK-METH` | 2 / 2 | · | · | · | · |
-| `CK-RCPT` | 3 / 3 | · | · | · | · |
-| `CK-CLAS` | – | · | · | · | · |
-| `CK-CUIS` | – | · | · | · | · |
-| `CK-BEVR` | – | · | · | · | · |
-| `IN-SEL` | 2 / 2 | · | · | · | · |
-| `IN-STO` | 3 / 3 | · | · | · | · |
-| `IN-VEG` | 2 / 2 | · | · | · | · |
-| `IN-STA` | 2 / 2 | · | · | · | · |
-| `IN-DAI` | 2 / 2 | · | · | · | · |
-| `IN-MEA` | 1 / 1 | · | · | · | · |
-| `IN-FSH` | 1 / 1 | · | · | · | · |
-| `IN-ARO` | 1 / 1 | · | · | · | · |
-| `IN-BAK` | – | · | · | · | · |
-| `TS-MEP` | 3 / 3 | · | · | · | · |
-| `TS-KNF` | 3 / 3 | · | · | · | · |
-| `TS-DRY` | 2 / 2 | · | · | · | · |
-| `TS-MOI` | 3 / 3 | · | · | · | · |
-| `TS-CMB` | – | · | · | · | · |
-| `TS-EGG` | 3 / 3 | · | · | · | · |
-| `TS-VEG` | 3 / 3 | · | · | · | · |
-| `TS-STA` | 3 / 3 | · | · | · | · |
-| `TS-STK` | – | · | · | · | · |
-| `TS-SAU` | – | · | · | · | · |
-| `TS-PRO` | 1 / 1 | · | · | · | · |
-| `TS-FAB` | – | · | · | · | · |
-| `TS-BAK` | – | · | · | · | · |
-| `TS-BRD` | – | · | · | · | · |
-| `TS-GRD` | – | · | · | · | · |
-| `TS-PRS` | – | · | · | · | · |
-| `TS-MOD` | – | · | · | · | · |
-| `TS-PLT` | 1 / 1 | · | · | · | · |
-| `SC-HEAT` | 2 / 2 | · | · | · | · |
-| `SC-BRWN` | 2 / 2 | · | · | · | · |
-| `SC-PROT` | 2 / 2 | · | · | · | · |
-| `SC-STRC` | 2 / 2 | · | · | · | · |
-| `SC-EMUL` | 1 / 1 | · | · | · | · |
-| `SC-MICR` | 1 / 1 | · | · | · | · |
-| `FL-SENS` | 2 / 2 | · | · | · | · |
-| `FL-SEAS` | 2 / 2 | · | · | · | · |
-| `FL-TEXT` | 1 / 1 | · | · | · | · |
-| `FL-ARCH` | – | · | · | · | · |
-| `FL-CORR` | 1 / 1 | · | · | · | · |
-| `KM-PLAN` | 2 / 2 | · | · | · | · |
-| `KM-MATH` | 2 / 2 | · | · | · | · |
-| `KM-PURC` | 1 / 1 | · | · | · | · |
-| `KM-WAST` | 2 / 2 | · | · | · | · |
-| `KM-EQPT` | 2 / 2 | · | · | · | · |
-| `SA-HYG` | 3 / 3 | · | · | · | · |
-| `SA-TEMP` | 3 / 3 | · | · | · | · |
-| `SA-PHYS` | 3 / 3 | · | · | · | · |
-| `SA-ALLG` | 2 / 2 | · | · | · | · |
-| `SA-HRPR` | – | · | · | · | · |
-| `RD-RATO` | – | · | · | · | · |
-| `RD-ADPT` | 1 / 1 | · | · | · | · |
-| `RD-TEST` | 1 / 1 | · | · | · | · |
-| `RD-WRIT` | 2 / 2 | · | · | · | · |
-| `JD-CUES` | 2 / 2 | · | · | · | · |
-| `JD-CHSE` | 1 / 1 | · | · | · | · |
-| `JD-TRBL` | 1 / 1 | · | · | · | · |
-| `JD-REFL` | 2 / 2 | · | · | · | · |
-| `CR-COMP` | – | · | · | · | · |
-| `CR-MENU` | – | · | · | · | · |
-| `CR-IMPV` | – | · | · | · | · |
-| `CR-ORIG` | – | · | · | · | · |
+| `CK-TERM` | 2 / 2 | 3 / 3 | · | · | · |
+| `CK-METH` | 2 / 2 | 3 / 3 | · | · | · |
+| `CK-RCPT` | 3 / 3 | 3 / 3 | · | · | · |
+| `CK-CLAS` | – | 2 / 2 | · | · | · |
+| `CK-CUIS` | – | 1 / 1 | · | · | · |
+| `CK-BEVR` | – | – | · | · | · |
+| `IN-SEL` | 2 / 2 | 3 / 3 | · | · | · |
+| `IN-STO` | 3 / 3 | 3 / 3 | · | · | · |
+| `IN-VEG` | 2 / 2 | 3 / 3 | · | · | · |
+| `IN-STA` | 2 / 2 | 3 / 3 | · | · | · |
+| `IN-DAI` | 2 / 2 | 3 / 3 | · | · | · |
+| `IN-MEA` | 1 / 1 | 3 / 3 | · | · | · |
+| `IN-FSH` | 1 / 1 | 3 / 3 | · | · | · |
+| `IN-ARO` | 1 / 1 | 2 / 2 | · | · | · |
+| `IN-BAK` | – | 3 / 3 | · | · | · |
+| `TS-MEP` | 3 / 3 | 4 / 4 | · | · | · |
+| `TS-KNF` | 3 / 3 | 4 / 4 | · | · | · |
+| `TS-DRY` | 2 / 2 | 3 / 3 | · | · | · |
+| `TS-MOI` | 3 / 3 | 4 / 4 | · | · | · |
+| `TS-CMB` | – | 2 / 2 | · | · | · |
+| `TS-EGG` | 3 / 3 | 4 / 4 | · | · | · |
+| `TS-VEG` | 3 / 3 | 4 / 4 | · | · | · |
+| `TS-STA` | 3 / 3 | 3 / 3 | · | · | · |
+| `TS-STK` | – | 3 / 3 | · | · | · |
+| `TS-SAU` | – | 3 / 3 | · | · | · |
+| `TS-PRO` | 1 / 1 | 3 / 3 | · | · | · |
+| `TS-FAB` | – | 2 / 2 | · | · | · |
+| `TS-BAK` | – | 3 / 3 | · | · | · |
+| `TS-BRD` | – | 2 / 2 | · | · | · |
+| `TS-GRD` | – | – | · | · | · |
+| `TS-PRS` | – | – | · | · | · |
+| `TS-MOD` | – | – | · | · | · |
+| `TS-PLT` | 1 / 1 | 2 / 2 | · | · | · |
+| `SC-HEAT` | 2 / 2 | 3 / 3 | · | · | · |
+| `SC-BRWN` | 2 / 2 | 3 / 3 | · | · | · |
+| `SC-PROT` | 2 / 2 | 3 / 3 | · | · | · |
+| `SC-STRC` | 2 / 2 | 3 / 3 | · | · | · |
+| `SC-EMUL` | 1 / 1 | 3 / 3 | · | · | · |
+| `SC-MICR` | 1 / 1 | 3 / 3 | · | · | · |
+| `FL-SENS` | 2 / 2 | 3 / 3 | · | · | · |
+| `FL-SEAS` | 2 / 2 | 3 / 3 | · | · | · |
+| `FL-TEXT` | 1 / 1 | 2 / 2 | · | · | · |
+| `FL-ARCH` | – | 2 / 2 | · | · | · |
+| `FL-CORR` | 1 / 1 | 3 / 3 | · | · | · |
+| `KM-PLAN` | 2 / 2 | 3 / 3 | · | · | · |
+| `KM-MATH` | 2 / 2 | 3 / 3 | · | · | · |
+| `KM-PURC` | 1 / 1 | 2 / 2 | · | · | · |
+| `KM-WAST` | 2 / 2 | 3 / 3 | · | · | · |
+| `KM-EQPT` | 2 / 2 | 3 / 3 | · | · | · |
+| `SA-HYG` | 3 / 3 | 4 / 4 | · | · | · |
+| `SA-TEMP` | 3 / 3 | 4 / 4 | · | · | · |
+| `SA-PHYS` | 3 / 3 | 4 / 4 | · | · | · |
+| `SA-ALLG` | 2 / 2 | 3 / 3 | · | · | · |
+| `SA-HRPR` | – | 1 / 1 | · | · | · |
+| `RD-RATO` | – | 2 / 2 | · | · | · |
+| `RD-ADPT` | 1 / 1 | 2 / 2 | · | · | · |
+| `RD-TEST` | 1 / 1 | 2 / 2 | · | · | · |
+| `RD-WRIT` | 2 / 2 | 2 / 2 | · | · | · |
+| `JD-CUES` | 2 / 2 | 3 / 3 | · | · | · |
+| `JD-CHSE` | 1 / 1 | 2 / 2 | · | · | · |
+| `JD-TRBL` | 1 / 1 | 3 / 3 | · | · | · |
+| `JD-REFL` | 2 / 2 | 3 / 3 | · | · | · |
+| `CR-COMP` | – | 1 / 1 | · | · | · |
+| `CR-MENU` | – | – | · | · | · |
+| `CR-IMPV` | – | 1 / 1 | · | · | · |
+| `CR-ORIG` | – | – | · | · | · |
 <!-- END generated:coverage -->
 
 ## Support mix (generated)
@@ -157,4 +169,5 @@ Share of practical exercises per support level, against Phase 1 §6.6.
 | Stage | Exercises | Recipe | Framework | Brief | Phase 1 §6.6 target |
 |---|---|---|---|---|---|
 | S1 | 58 | 78 % | 22 % | 0 % | 70 / 30 / 0 % |
+| S2 | 70 | 41 % | 49 % | 10 % | 40 / 50 / 10 % |
 <!-- END generated:support -->
