@@ -1,8 +1,7 @@
 # Phase 5 — Course development
 
-Status: **S3 ready for review** (2026-11-04). S1 and S2 are reviewed and their answers applied (§7.3 and §8.3). S3 is
-developed in the same format; the end of the S3 batch, with its decisions, gaps and questions, is in §9. S4 and S5
-follow one stage at a time.
+Status: **S1–S3 reviewed; S4 in progress** (2026-11-04). S1, S2 and S3 are reviewed and their answers applied (§7.3,
+§8.3 and §9.3). S4 is being developed in the same format. S5 follows.
 
 **Stages developed:** S1, S2, S3
 
@@ -911,7 +910,7 @@ the Phase 4 success row):
 
 Hours, lessons and `Moves` entries are unchanged.
 
-### 9.3 Gaps and open questions
+### 9.3 Gaps and open questions (review answers, 2026-11-04)
 
 1. **The new §9 rows** (decision 1).
    - Option 1: keep them as written. This is my recommendation: each comes from a checked source, and where the home rule
@@ -921,19 +920,31 @@ Hours, lessons and `Moves` entries are unchanged.
 
    The FSIS poultry table was read in Baldwin's reproduction, because the FSIS site refused automated access; it should
    be checked against the FSIS text before Phase 6.
+
+   **Answer:** option 1 (the review followed the recommendations). The rows stay; the FSIS table stays on the Phase 6
+   re-check list (question 5).
 2. **The stricter storage rules** (decision 2): cures and confit at 2 days or frozen, poultry sous vide from 60 °C, duck
    breast at 74 °C.
    - Option 1: keep them, and look for checked sources for longer limits before Phase 6. This is my recommendation.
    - Option 2: accept the traditional limits without a source. I don't recommend it, because the program's rule is that
      safety figures come only from §9.
+
+   **Answer:** option 1. Longer limits come in only with a checked source.
 3. **The budget.** About €1,305 for S3, against €725 for S2. Most of it replaces household meals, and the course files
    give Good options throughout. Is it acceptable?
+
+   **Answer:** accepted, as €725 was for S2. The specs stay as they are, with the Good options as alternatives.
 4. **The knowledge-check items have not been reviewed by a second reader.** There are 392 items, 107 of them safety
    items. I checked them against §9 while writing, but an independent human read of the safety items of S1 to S3 (about
    217 items) is still advised before Phase 6.
+
+   **Answer:** recommended and accepted. It cannot be done by the author, so it is recorded as a condition for starting
+   Phase 6: a person other than the author reads every safety item of the developed stages and logs the result.
 5. **Sources Phase 6 must add or re-check:** the Voedingscentrum pages on meat (the steak row), pregnancy (raw-milk cheese
    and cured meats) and the *Schijf van Vijf* (`NUT-3`); the Dutch Red Cross on burns (S1 question 3); the FSIS poultry
    table (question 1).
+
+   **Answer:** kept as the Phase 6 list. Phase 6 adds or re-checks these before it writes the lessons that rest on them.
 
 ### 9.4 Recommendations for S4
 
@@ -945,8 +956,12 @@ Hours, lessons and `Moves` entries are unchanged.
 3. **Settle the S4 safety figures before writing:** ice-cream bases (cooked custard, raw-egg alternatives for risk
    groups), the consommé and *aspic* of `CLS-4`, and any modern technique in `MOD-4` that holds food at low temperatures
    for long.
-4. **Rows that S3 begins and S4 completes:** `TS-FIRE` 4 (low-and-slow cooks and live-fire meals in two conditions),
-   `TS-STK` 4 (the consommé), `JD-REFL` 4 (the plan worked), and the productions of `SA-HYG` 5 and `SA-PHYS` 5. S4's
-   course files should name where each is completed.
+4. **Rows that S3 begins and a later stage completes:** `TS-FIRE` 4 (low-and-slow cooks and live-fire meals in two
+   conditions), `TS-STK` 4 (the consommé), `JD-REFL` 4 (the plan worked), and the productions of `SA-HYG` 5 and
+   `SA-PHYS` 5. The course files that complete them should name where each is completed.
+
+   *Correction (2026-11-04):* this item first said S4 completes all five. The S4 outline moves only `TS-STK` 4
+   (`CLS-4.M4`) and `JD-REFL` 4 (`PRO-4.M6`, `PLT-4`, `MNU-4`, `MS-S4`); `TS-FIRE` 4, `SA-HYG` 5 and `SA-PHYS` 5
+   complete in S5 (`S5-mastery.md`).
 5. **A small validator addition:** extend the ID check to module and lesson IDs named in course files (for example
    `SAU-2.M2` or `FLV-3.M2.L1`), which S3 uses often in its text.
