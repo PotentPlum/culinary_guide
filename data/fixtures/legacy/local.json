@@ -1,0 +1,218 @@
+{
+ "format": "mise-legacy-local",
+ "localRecipes": [
+  {
+   "url": "",
+   "source": "Oma",
+   "recipe": {
+    "title": "Boerenkool stamppot",
+    "description": "",
+    "prepTimeMinutes": null,
+    "cookTimeMinutes": null,
+    "totalTimeMinutes": 40,
+    "cuisine": [],
+    "category": [],
+    "keywords": [],
+    "image": null,
+    "author": null,
+    "suitableForDiet": [],
+    "datePublished": null,
+    "aggregateRating": null,
+    "video": null,
+    "nutrition": {
+     "calories": null,
+     "protein": null,
+     "carbs": null,
+     "fat": null
+    },
+    "ingredientSections": [
+     {
+      "sectionName": "Ingrediënten",
+      "ingredients": [
+       {
+        "text": "500 g boerenkool"
+       },
+       {
+        "text": "1 kg kruimige aardappels"
+       }
+      ]
+     }
+    ],
+    "instructionSections": [
+     {
+      "sectionName": "Bereiding",
+      "steps": [
+       {
+        "stepNumber": 1,
+        "text": "Kook de aardappels met de boerenkool."
+       }
+      ]
+     }
+    ]
+   },
+   "savedAt": 1780000000000,
+   "remoteId": "0b6f6a52-1c1e-4b55-9d61-1f0c3f1a0004",
+   "tags": {},
+   "taxonomy": {
+    "techniques": [
+     "koken",
+     "koekenpan",
+     "bestaat-niet"
+    ],
+    "cuisines": [
+     "Nederlands"
+    ],
+    "ingredients": [
+     "boerenkool"
+    ]
+   }
+  },
+  {
+   "url": "https://www.example.nl/pompoensoep",
+   "source": "example.nl",
+   "recipe": {
+    "title": "Pompoensoep met salie",
+    "description": "Uit de JSON",
+    "prepTimeMinutes": 15,
+    "cookTimeMinutes": 30,
+    "totalTimeMinutes": 45,
+    "servings": 2,
+    "cuisine": "Nederlands",
+    "category": [
+     "Soep"
+    ],
+    "keywords": [
+     "soep",
+     "herfst"
+    ],
+    "image": "https://www.example.nl/pompoensoep.jpg",
+    "author": "Example",
+    "suitableForDiet": [
+     "VegetarianDiet"
+    ],
+    "datePublished": "2025-10-01",
+    "aggregateRating": {
+     "ratingValue": 4.5,
+     "ratingCount": 12
+    },
+    "video": null,
+    "nutrition": {
+     "calories": "210 kcal",
+     "protein": null,
+     "carbs": null,
+     "fat": null
+    },
+    "ingredientSections": [
+     {
+      "sectionName": "Ingredients",
+      "ingredients": [
+       {
+        "text": "2 lb pumpkin",
+        "textMetric": "1 kg pompoen"
+       },
+       {
+        "text": "2 uien, gesnipperd"
+       },
+       {
+        "text": "  "
+       }
+      ]
+     },
+     {
+      "sectionName": "Topping:",
+      "ingredients": [
+       {
+        "text": "een handje salie"
+       }
+      ]
+     }
+    ],
+    "instructionSections": [
+     {
+      "sectionName": "Instructions",
+      "steps": [
+       {
+        "stepNumber": 2,
+        "text": "Kook 20 minuten en pureer."
+       },
+       {
+        "stepNumber": 1,
+        "text": "Snijd de pompoen in blokjes."
+       }
+      ]
+     }
+    ],
+    "unitSystems": {
+     "hasMetric": true
+    }
+   },
+   "savedAt": 1779358272000,
+   "taxonomy": {
+    "techniques": [
+     "sauteren"
+    ],
+    "cuisines": [],
+    "ingredients": []
+   }
+  },
+  {
+   "url": "https://koken.example.org/spruitjes",
+   "source": "",
+   "savedAt": 1779900000000,
+   "recipe": {
+    "title": "Geroosterde spruitjes",
+    "description": "Knapperig uit de oven",
+    "prepTimeMinutes": null,
+    "cookTimeMinutes": null,
+    "totalTimeMinutes": 30,
+    "cuisine": [],
+    "category": [],
+    "keywords": [],
+    "image": null,
+    "author": null,
+    "suitableForDiet": [],
+    "datePublished": null,
+    "aggregateRating": null,
+    "video": null,
+    "nutrition": {
+     "calories": null,
+     "protein": null,
+     "carbs": null,
+     "fat": null
+    },
+    "ingredientSections": [
+     {
+      "sectionName": "Ingredients",
+      "ingredients": [
+       {
+        "text": "500 g spruitjes"
+       },
+       {
+        "text": "2 el olijfolie"
+       }
+      ]
+     }
+    ],
+    "instructionSections": [
+     {
+      "sectionName": "Instructions",
+      "steps": [
+       {
+        "stepNumber": 1,
+        "text": "Rooster 25 minuten op 220 °C."
+       }
+      ]
+     }
+    ]
+   },
+   "tags": {
+    "dishType": [
+     "Bijgerecht"
+    ],
+    "mainIngredient": [
+     "Groenten"
+    ]
+   }
+  }
+ ]
+}

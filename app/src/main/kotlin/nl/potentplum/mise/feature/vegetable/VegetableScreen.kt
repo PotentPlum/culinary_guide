@@ -58,13 +58,15 @@ import nl.potentplum.mise.core.designsystem.hexColor
 import nl.potentplum.mise.domain.Difficulty
 import java.net.URI
 
-/** Groente-detail (spec §6.5). "In jouw recepten" arrives with the recipe library; "Jouw dagboek" is P2. */
+/** Groente-detail (spec §6.5). "Jouw dagboek" is P2. */
 @Composable
 fun VegetableScreen(
     onBack: () -> Unit,
     onVegetable: (String) -> Unit,
     onTechnique: (String) -> Unit,
     onQuest: (String) -> Unit,
+    onRecipe: (String) -> Unit = {},
+    onImportLink: (String) -> Unit = {},
     onOverflowItem: (OverflowItem) -> Unit,
     viewModel: VegetableViewModel = hiltViewModel(),
 ) {
@@ -84,7 +86,7 @@ fun VegetableScreen(
             when (val current = state) {
                 VegetableUiState.Loading -> Unit
                 VegetableUiState.NotFound -> EmptyState(title = stringResource(R.string.error_not_found))
-                is VegetableUiState.Loaded -> VegetableDetail(current, onVegetable, onTechnique, onQuest)
+                is VegetableUiState.Loaded -> VegetableDetail(current, onVegetable, onTechnique, onQuest, onRecipe, onImportLink)
             }
         }
     }
@@ -97,6 +99,8 @@ private fun VegetableDetail(
     onVegetable: (String) -> Unit,
     onTechnique: (String) -> Unit,
     onQuest: (String) -> Unit,
+    onRecipe: (String) -> Unit,
+    onImportLink: (String) -> Unit,
 ) {
     val vegetable = state.presentation.vegetable
     val uriHandler = LocalUriHandler.current
@@ -119,6 +123,24 @@ private fun VegetableDetail(
                     }
                 }
             }
+            if (state.recipes.isNotEmpty()) {
+                Section(stringResource(R.string.detail_section_in_recipes)) {
+                    state.recipes.forEach { recipe ->
+                        Surface(
+                            onClick = { onRecipe(recipe.id) },
+                            color = androidx.compose.ui.graphics.Color.Transparent,
+                            modifier = Modifier.fillMaxWidth(),
+                        ) {
+                            Text(
+                                recipe.title,
+                                style = MaterialTheme.typography.bodyLarge,
+                                color = MaterialTheme.colorScheme.primary,
+                                modifier = Modifier.padding(vertical = 8.dp),
+                            )
+                        }
+                    }
+                }
+            }
             if (state.techniques.isNotEmpty()) {
                 Section(stringResource(R.string.detail_section_techniques)) {
                     state.techniques.forEach { TechniqueLink(it, onClick = { onTechnique(it.id) }) }
@@ -126,7 +148,13 @@ private fun VegetableDetail(
             }
             if (vegetable.curatedRecipes.isNotEmpty()) {
                 Section(stringResource(R.string.detail_section_ideas)) {
-                    vegetable.curatedRecipes.forEach { CuratedRecipeCard(it, onOpen = { uriHandler.openUri(it.url) }) }
+                    vegetable.curatedRecipes.forEach {
+                        CuratedRecipeCard(
+                            it,
+                            onOpen = { uriHandler.openUri(it.url) },
+                            onImport = { onImportLink(it.url) },
+                        )
+                    }
                 }
             }
             Button(onClick = { onQuest(vegetable.id) }, modifier = Modifier.fillMaxWidth()) {

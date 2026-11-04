@@ -5,6 +5,7 @@ import androidx.room.RoomDatabase
 import androidx.room.TypeConverters
 import androidx.room.migration.Migration
 import nl.potentplum.mise.data.db.dao.AttemptDao
+import nl.potentplum.mise.data.db.dao.BackupDao
 import nl.potentplum.mise.data.db.dao.QuestDao
 import nl.potentplum.mise.data.db.dao.RecipeDao
 import nl.potentplum.mise.data.db.dao.ShoppingDao
@@ -53,6 +54,8 @@ abstract class MiseDatabase : RoomDatabase() {
     abstract fun shoppingDao(): ShoppingDao
 
     abstract fun usageDao(): UsageDao
+
+    abstract fun backupDao(): BackupDao
 
     companion object {
         const val NAME = "mise.db"

@@ -89,8 +89,8 @@ The web app keeps running from its last Vercel deployment until you turn it off,
 ### Seizoen and vegetables
 - [x] Seizoen Nu view (spec §6.3): filter pills with counts, badges, ranked order, diacritic-insensitive search, Nu/Kalender toggle.
 - [x] Kalender (spec §6.4): year grid where all 12 months always fit (single-letter headers, ellipsized names, no horizontal scroll), family grouping with sticky headers and A–Z, current-month highlight, TalkBack row descriptions. Acceptance: no horizontal scroll on a 360 dp wide screen at 200% font scale.
-- [ ] Groente-detail (spec §6.5): all sections, substitution chips that link to other vegetables, related techniques, curated links, source link, "Quest met {nl}".
-      Done except "In jouw recepten" (needs `SeasonalMatcher` and the library) and importing a curated link.
+- [x] Groente-detail (spec §6.5): all sections, substitution chips that link to other vegetables, related techniques, curated links, source link, "Quest met {nl}".
+      "In jouw recepten" lists library recipes that use the vegetable (most cooked first); curated links have Importeren (link import).
 
 ### Technieken (spec §6.6)
 - [x] Category list with subcategory grouping, level filter, search; cookware guides marked as reference.
@@ -140,8 +140,8 @@ The web app keeps running from its last Vercel deployment until you turn it off,
   _Done: `AttemptRepository.log` looks the quest up by recipe, so every path that logs an attempt completes it. Tested via Quest voltooid (`QuestFlowsTest`) and Klaar met koken (`CookFlowsTest`); the exit prompt opens the same sheet._
 - [x] Quest history as **Dagboek › Quests** (spec §6.13) with filters (open/completed, type, difficulty), reopen, retry with the same parameters, delete, Nieuwe quest.
       Delete offers Ongedaan maken. Tijdlijn and Inzichten are still placeholders (Dagboek section).
-- [ ] Offline / no-key state on the Vandaag card: explanation, Sleutel toevoegen, Verbergen (`showQuestCard`, restored when a key is added or in Instellingen).
-      Card states done; restoring `showQuestCard` comes with the key screen and Instellingen.
+- [x] Offline / no-key state on the Vandaag card: explanation, Sleutel toevoegen, Verbergen (`showQuestCard`, restored when a key is added or in Instellingen).
+      Saving a key turns the card back on; Instellingen has the switch. Sleutel toevoegen opens the key screen directly.
 
 ### Vandaag (spec §6.2, §11.5)
 - [x] `TodaySuggester` (pure): season score, recency, favourite bonus, exclusions (incl. `todayDismissed` and the Vanavond pin), the ≤ 30 min filter, tie-breaks, reason lines, stable per day. Unit tests with fixed dates and a seeded library.
@@ -166,33 +166,44 @@ The web app keeps running from its last Vercel deployment until you turn it off,
   _Done: `EvaluationSheet` hosted by recipe detail, cook mode and the quest screen (the `EvaluationRoute` placeholder is gone); photos are staged in the import folder and moved to `files/journal/`._
 
 ### Dagboek (spec §6.13, §12)
-- [ ] `JournalAggregator` port (3 disciplines). Acceptance: the applicable cases from `git show e76778c:web/lib/profileAggregation.test.ts` pass, plus the seasonal metric (season boundaries, Dec/Jan wrap) and "nog te proberen" (PEAK this month, not cooked this season).
-- [ ] `BadgeEvaluator` for all three rule types + progress text; tests at and around each threshold.
-- [ ] Dagboek screen (spec §6.13): segments Tijdlijn · Quests · Inzichten. Tijdlijn with photos, filters and entry editing; Inzichten with header stats, `SeasonTally` (count without denominator, cooked tokens, 3 "nog te proberen" in §11.1 order), discipline bars, top techniques, neglected, top cuisines, badges.
+- [x] `JournalAggregator` port (3 disciplines). Acceptance: the applicable cases from `git show e76778c:web/lib/profileAggregation.test.ts` pass, plus the seasonal metric (season boundaries, Dec/Jan wrap) and "nog te proberen" (PEAK this month, not cooked this season).
+  _Done: `domain/JournalAggregator.kt` (+ `CookingSeason`), `JournalAggregatorTest`._
+- [x] `BadgeEvaluator` for all three rule types + progress text; tests at and around each threshold.
+- [x] Dagboek screen (spec §6.13): segments Tijdlijn · Quests · Inzichten. Tijdlijn with photos, filters and entry editing; Inzichten with header stats, `SeasonTally` (count without denominator, cooked tokens, 3 "nog te proberen" in §11.1 order), discipline bars, top techniques, neglected, top cuisines, badges.
+  _Done: entry editing covers scores, notes, date (re-derives `peakVegIds` for the new month) and removing the photo; adding a photo to an existing entry is not there yet. Entries can be deleted with undo. `JournalFlowsTest`._
 
 ### Settings and key (spec §6.15, §9)
-- [ ] Key entry screen: password field without IME learning, `FLAG_SECURE`, live check via `GET /v1/models`, masked display, offer to clear the clipboard, delete key.
-- [ ] Kwaliteit setting (Snel / Gebalanceerd / Beste), usage this month, the Anthropic Console spend-limit tip, "Quest-kaart tonen op Vandaag".
-- [ ] "Ingrediënten verrijken" for all unparsed recipes, with an estimated cost confirmation.
-- [ ] Over screen: version, data sources, OSS licences (including fonts), privacy statement and the threat-model note.
+- [x] Key entry screen: password field without IME learning, `FLAG_SECURE`, live check via `GET /v1/models`, masked display, offer to clear the clipboard, delete key.
+  _Done: `feature/settings/KeyScreen.kt` (`IME_FLAG_NO_PERSONALIZED_LEARNING` through `InterceptPlatformTextInput`; the typed key is never in saved state). "Toch opslaan" when Claude can't be reached; "Sleutel testen" in Instellingen. `SettingsFlowsTest`._
+- [x] Kwaliteit setting (Snel / Gebalanceerd / Beste), usage this month, the Anthropic Console spend-limit tip, "Quest-kaart tonen op Vandaag".
+  _Usage shows tokens and an estimate in euros at a fixed rough rate (`DutchNumbers.USD_TO_EUR`)._
+- [x] "Ingrediënten verrijken" for all unparsed recipes, with an estimated cost confirmation.
+- [x] Over screen: version, data sources, OSS licences (including fonts), privacy statement and the threat-model note.
 
 ### Backup and legacy (spec §13)
-- [ ] `data/schemas/backup.schema.json` for the backup format (spec §13.1), shared by the app and the converter.
-- [ ] Export to zip (`backup.json` + images + journal photos) via SAF/share. The key is never included (unit test asserts this).
-- [ ] Restore: validate, summary, Samenvoegen / Vervangen, in one transaction, then offer enrichment. Round-trip test: export → wipe → restore gives an identical DB.
-- [ ] `tools/legacy_to_backup.py` (stdlib, spec §13.3 + Appendix A): converts both legacy exports into a backup zip and prints a report. Include synthetic legacy fixtures covering every branch (JSON-in-`instructions`, column fallback, photo prefix, localStorage merge by `remoteId`, legacy difficulty values, unresolved `source_id`, `vegIds`/`peakVegIds` computation). Its output must validate against `backup.schema.json`.
+- [x] `data/schemas/backup.schema.json` for the backup format (spec §13.1), shared by the app and the converter.
+  _With `data/fixtures/backup/sample.json`, checked by `tools/validate_data.py` and parsed + restored by `BackupManagerTest`._
+- [x] Export to zip (`backup.json` + images + journal photos) via SAF/share. The key is never included (unit test asserts this).
+  _Via the system file picker (`CreateDocument`); a share-sheet export is not there yet._
+- [x] Restore: validate, summary, Samenvoegen / Vervangen, in one transaction, then offer enrichment. Round-trip test: export → wipe → restore gives an identical DB.
+  _Vervangen asks to type VERVANGEN. References to recipes or quests that aren't there are dropped instead of breaking the restore._
+- [x] `tools/legacy_to_backup.py` (stdlib, spec §13.3 + Appendix A): converts both legacy exports into a backup zip and prints a report. Include synthetic legacy fixtures covering every branch (JSON-in-`instructions`, column fallback, photo prefix, localStorage merge by `remoteId`, legacy difficulty values, unresolved `source_id`, `vegIds`/`peakVegIds` computation). Its output must validate against `backup.schema.json`.
+  _Fixtures in `data/fixtures/legacy/`: `validate_data.py` checks they convert to exactly `expected-backup.json`, `tools/test_legacy_to_backup.py` (CI) pins each rule, and `BackupManagerTest` restores the result. Also handles the SQL editor's JSON download (wrapped in a row), localStorage entries without `remoteId` (merged by URL, like the web app) and plain-text `instructions` (become steps)._
 - [ ] **[owner]** Convert your real exports, restore them on your phone, run enrichment, and spot-check 5 recipes, 3 quests and the Dagboek numbers.
 
 ### Boodschappen (spec §6.14, §11.7; a bottom-bar tab, so P1)
-- [ ] `ShoppingAggregator` (pure): group by name, sum within a dimension via base units, best display unit, never merge across dimensions or unnamed items. Table-driven tests.
-- [ ] Boodschappen tab: add from recipe and the Vanavond card (scaled, all or selected), combined lines with source-recipe chips, manual items, check off (ticked items sink), clear with undo, share as text, empty state.
+- [x] `ShoppingAggregator` (pure): group by name, sum within a dimension via base units, best display unit, never merge across dimensions or unnamed items. Table-driven tests.
+- [x] Boodschappen tab: add from recipe and the Vanavond card (scaled, all or selected), combined lines with source-recipe chips, manual items, check off (ticked items sink), clear with undo, share as text, empty state.
+  _"Op boodschappenlijst" opens `AddToShoppingSheet`: the scaled lines, all ticked; untick what you have, then "n ingrediënten toevoegen". Swipe or ✕ deletes a line (with undo). `ShoppingFlowsTest`, `TodayFlowsTest`._
 
 ### First run (spec §6.16)
-- [ ] Welcome → optional key → optional "Back-up terugzetten" → "Je eerste recept" (Link plakken · Foto's maken · Later; skipped when a restore brought recipes) → done (`onboardingDone`).
+- [x] Welcome → optional key → optional "Back-up terugzetten" → "Je eerste recept" (Link plakken · Foto's maken · Later; skipped when a restore brought recipes) → done (`onboardingDone`).
+  _Done: `feature/onboarding/`, opened over Vandaag until finished (a share that starts the app goes first). `OnboardingFlowsTest`._
 
 ### P1 release
 - [ ] Release signing (keystore outside the repo, **[owner]** back it up offline), R8 keep rules, `release.yml` producing a signed APK on tag `v*`.
   _Partly: signing from env/Actions secrets and `release.yml` (signed APK + checksum on a `v*` tag, verified locally with a throwaway key; owner steps in README). Open: the owner's keystore and secrets, a first tagged release, and checking the R8 build on the phone._
+  _A test release can be signed with a debug key (`MISE_SIGN_WITH_DEBUG_KEY=true`, or "debug_key" on a manual `release.yml` run); the real key later means one uninstall._
 - [ ] Manual checklist from spec §16 on a real phone.
 - [ ] **[owner]** Install `v1.0.0` and use it for a week before P2.
 

@@ -11,7 +11,6 @@ import nl.potentplum.mise.data.repo.newId
 import nl.potentplum.mise.security.ClaudeKeyStatus
 import nl.potentplum.mise.security.SecretStore
 import nl.potentplum.mise.security.SecretUnavailableException
-import java.time.LocalDate
 import javax.inject.Inject
 import javax.inject.Singleton
 
@@ -59,11 +58,31 @@ class ClaudeService
             return result
         }
 
+        /**
+         * "Sleutel testen" (spec §6.15) on the stored key: a refused key is marked invalid, a working one valid again.
+         * Null when there is no usable key.
+         */
+        suspend fun testStoredKey(): KeyCheck? {
+            val key =
+                try {
+                    secrets.readClaudeKey()
+                } catch (_: SecretUnavailableException) {
+                    null
+                } ?: return null
+            val result = checkKey(key)
+            when (result) {
+                KeyCheck.VALID -> secrets.markValid()
+                KeyCheck.INVALID -> secrets.markInvalid()
+                KeyCheck.UNREACHABLE -> Unit
+            }
+            return result
+        }
+
         /** Tokens and estimated cost since the first of this month (Instellingen, spec §6.15). */
         fun thisMonth(): Flow<UsageTotals> {
             val start =
-                LocalDate
-                    .now(MiseClock.ZONE)
+                clock
+                    .today()
                     .withDayOfMonth(1)
                     .atStartOfDay(MiseClock.ZONE)
                     .toInstant()

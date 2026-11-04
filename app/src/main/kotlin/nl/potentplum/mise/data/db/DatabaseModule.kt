@@ -8,6 +8,7 @@ import dagger.hilt.InstallIn
 import dagger.hilt.android.qualifiers.ApplicationContext
 import dagger.hilt.components.SingletonComponent
 import nl.potentplum.mise.data.db.dao.AttemptDao
+import nl.potentplum.mise.data.db.dao.BackupDao
 import nl.potentplum.mise.data.db.dao.QuestDao
 import nl.potentplum.mise.data.db.dao.RecipeDao
 import nl.potentplum.mise.data.db.dao.ShoppingDao
@@ -41,4 +42,7 @@ object DatabaseModule {
 
     @Provides
     fun usageDao(db: MiseDatabase): UsageDao = db.usageDao()
+
+    @Provides
+    fun backupDao(db: MiseDatabase): BackupDao = db.backupDao()
 }

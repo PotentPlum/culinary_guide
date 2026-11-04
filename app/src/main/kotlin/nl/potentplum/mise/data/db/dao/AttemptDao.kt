@@ -1,6 +1,7 @@
 package nl.potentplum.mise.data.db.dao
 
 import androidx.room.Dao
+import androidx.room.Embedded
 import androidx.room.Query
 import androidx.room.Upsert
 import kotlinx.coroutines.flow.Flow
@@ -13,8 +14,17 @@ data class CookedStats(
     val lastCookedAt: Long,
 )
 
+/** A journal entry with the title of its recipe (or of the quest's recipe); null once that recipe is deleted. */
+data class AttemptRow(
+    @Embedded val attempt: AttemptEntity,
+    val recipeTitle: String?,
+)
+
 @Dao
 interface AttemptDao {
+    @Query("SELECT a.*, r.title AS recipeTitle FROM attempt a LEFT JOIN recipe r ON r.id = a.recipeId ORDER BY a.cookedAt DESC")
+    fun observeTimeline(): Flow<List<AttemptRow>>
+
     @Upsert
     suspend fun upsert(attempt: AttemptEntity)
 

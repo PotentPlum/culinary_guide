@@ -50,7 +50,6 @@ import nl.potentplum.mise.core.designsystem.component.CuratedRecipeCard
 import nl.potentplum.mise.core.designsystem.component.EmptyState
 import nl.potentplum.mise.core.designsystem.component.Eyebrow
 import nl.potentplum.mise.core.designsystem.component.HeroHeader
-import nl.potentplum.mise.core.designsystem.component.LocalMiseSnackbar
 import nl.potentplum.mise.core.designsystem.component.MiseTopAppBar
 import nl.potentplum.mise.core.designsystem.component.OverflowItem
 import nl.potentplum.mise.core.designsystem.component.SeasonBadge
@@ -64,6 +63,7 @@ import nl.potentplum.mise.core.designsystem.styledStringResource
 import nl.potentplum.mise.domain.CuratedSuggestion
 import nl.potentplum.mise.domain.VegetableInSeason
 import nl.potentplum.mise.feature.quests.TodayQuestCard
+import nl.potentplum.mise.feature.shopping.AddToShoppingSheet
 import java.time.LocalDate
 import java.util.Locale
 
@@ -90,20 +90,11 @@ fun TodayScreen(
     viewModel: TodayViewModel = hiltViewModel(),
 ) {
     val state by viewModel.state.collectAsStateWithLifecycle()
-    val snackbar = LocalMiseSnackbar.current
     val resources = LocalResources.current
     LaunchedEffect(today) { viewModel.onDay(today) }
-    LaunchedEffect(viewModel) {
-        viewModel.events.collect { event ->
-            when (event) {
-                is TodayEvent.AddedToShopping -> {
-                    snackbar.show(resources.getQuantityString(R.plurals.shopping_added, event.count, event.count))
-                }
-            }
-        }
-    }
     val month = resources.getStringArray(R.array.months_long)[today.monthValue - 1]
     var othersOpen by rememberSaveable { mutableStateOf(false) }
+    var addingToShopping by rememberSaveable { mutableStateOf<String?>(null) }
 
     Scaffold(topBar = { MiseTopAppBar(title = stringResource(R.string.nav_today), onOverflowItem = onOverflowItem) }) { padding ->
         LazyColumn(
@@ -128,7 +119,7 @@ fun TodayScreen(
                             totalMinutes = tonight.totalMinutes,
                             onOpen = { actions.onRecipe(tonight.id) },
                             onCook = { actions.onCook(tonight.id) },
-                            onAddToShopping = viewModel::addTonightToShopping,
+                            onAddToShopping = { addingToShopping = tonight.id },
                             onUnpin = viewModel::unpin,
                         )
                     }
@@ -155,6 +146,8 @@ fun TodayScreen(
             }
         }
     }
+    // The pinned recipe at its own servings (spec §6.2, §6.14).
+    addingToShopping?.let { recipeId -> AddToShoppingSheet(recipeId = recipeId, servings = null, onDismiss = { addingToShopping = null }) }
 }
 
 private fun LazyListScope.suggestions(

@@ -105,6 +105,11 @@ class SecretStore
             dataStore.edit { if (it[CIPHERTEXT] != null) it[INVALID] = true }
         }
 
+        /** "Sleutel testen" succeeded: the key works again. */
+        suspend fun markValid() {
+            dataStore.edit { it.remove(INVALID) }
+        }
+
         /** "Sleutel verwijderen": wipes the ciphertext and the Keystore alias. */
         suspend fun deleteClaudeKey() = wipe(needsReentry = false)
 

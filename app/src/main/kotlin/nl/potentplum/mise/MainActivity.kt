@@ -31,11 +31,13 @@ class MainActivity : ComponentActivity() {
         setContent {
             val unchecked by shell.uncheckedShoppingCount.collectAsStateWithLifecycle()
             val share by pendingShare.collectAsStateWithLifecycle()
+            val onboardingDone by shell.onboardingDone.collectAsStateWithLifecycle()
             MiseTheme {
                 MiseAppShell(
                     today = clock.today(),
                     uncheckedShoppingCount = unchecked,
                     pendingShare = share,
+                    showOnboarding = onboardingDone == false,
                     onShareHandled = { pendingShare.value = null },
                 )
             }

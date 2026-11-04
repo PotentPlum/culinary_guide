@@ -12,18 +12,26 @@ web app was removed; its last version is commit `e76778c` (`git show e76778c:web
 - `tools/validate_data.py`: stdlib-only validator for everything in `data/`.
 - `app/`: the Android app (single `:app` module, packages as in spec §4.2). `lint-checks/`: the custom lint rule
   `ComposeHardcodedText` (Android's `HardcodedText` only covers XML layouts). P0 is done except the owner/device items;
-  feature screens are placeholders until P1.
+  P1 features are in; what's left of P1 is in `todo.md` (mostly owner/device checks).
+- `tools/legacy_to_backup.py`: one-off converter of the old web-app exports into a backup zip (spec §13.3, Appendix A).
+- `curriculum/`: phased design of a competency-based culinary education program (`curriculum/README.md`). It is
+  app-independent until its Phase 7 and does not change `spec.md` or `data/`.
 
 ## Commands
 ```bash
 python3 tools/validate_data.py                   # validate data/ (also runs automatically after edits under data/)
-python3 tools/validate_data.py --write-fixtures  # regenerate seasonality fixture after intended peak/shoulder edits
+python3 tools/validate_data.py --write-fixtures  # regenerate the seasonality and legacy fixtures after intended edits
+python3 -m unittest discover -s tools            # tests for the Python tools (legacy converter, curriculum validator)
+python3 tools/validate_curriculum.py [--write]    # check curriculum/ (IDs, hours, prerequisites, coverage, practice, competency entries, rubrics, course files); --write regenerates its tables
 ./gradlew lint ktlintCheck testDebugUnitTest :lint-checks:test assembleDebug   # the CI gate (spec §16–17)
 ./gradlew ktlintFormat                           # fix formatting (ktlint_official style)
 ./gradlew testDebugUnitTest --tests '*SeasonalityTest*'   # one test class
 ```
 Versions are pinned in `gradle/libs.versions.toml`. compileSdk is 37 (current AndroidX/OkHttp require it), targetSdk 36.
 Room schemas are exported to `app/schemas/` (commit them); unit tests use Robolectric for anything Android.
+Hilt UI tests run on a fixed clock (22 Oct 2026, `testing/FakeClockModule.kt`). In `waitUntil`, wait for the UI rather than
+`runBlocking` on DataStore: that blocks the main thread and flakes.
+`MISE_SIGN_WITH_DEBUG_KEY=true ./gradlew assembleRelease` signs a release APK with the debug key (test releases only).
 
 **Cloud sessions:** `.claude/hooks/session-start.sh` (SessionStart, remote only) installs the Android SDK into
 `/opt/android-sdk` if missing (platform 37.0, build-tools 36.0.0), writes `local.properties`, adds a user-level Gradle

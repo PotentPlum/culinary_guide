@@ -3,7 +3,6 @@ package nl.potentplum.mise.feature.quests
 import androidx.compose.ui.semantics.SemanticsActions
 import androidx.compose.ui.test.assertIsNotEnabled
 import androidx.compose.ui.test.hasClickAction
-import androidx.compose.ui.test.hasScrollToNodeAction
 import androidx.compose.ui.test.hasText
 import androidx.compose.ui.test.junit4.createAndroidComposeRule
 import androidx.compose.ui.test.onAllNodesWithText
@@ -100,8 +99,11 @@ class QuestFlowsTest {
 
     private fun waitForText(text: String) = compose.reveal(text)
 
-    /** Dagboek › Quests is a lazy list: scroll it to the quest first. */
-    private fun scrollHistoryTo(text: String) = compose.onNode(hasScrollToNodeAction()).performScrollToNode(hasText(text, substring = true))
+    /**
+     * Dagboek › Quests is a lazy list: scroll it to the quest, retrying until it is there. Right after a filter change the
+     * list can still hold the old rows, so a single scroll attempt flakes.
+     */
+    private fun scrollHistoryTo(text: String) = compose.reveal(hasText(text, substring = true))
 
     private fun gone(text: String) =
         compose.onAllNodesWithText(text, substring = true, useUnmergedTree = true).fetchSemanticsNodes().isEmpty()
@@ -189,7 +191,8 @@ class QuestFlowsTest {
         compose.waitUntil(5_000) { gone("Geroosterde pastinaak") }
         click("Alle")
         scrollHistoryTo("Geroosterde pastinaak")
-        compose.onNodeWithContentDescription("Opties voor Geroosterde pastinaak").performClick()
+        // The click action, not a touch: after scrolling, the button can sit at the list edge under the top bar.
+        compose.onNodeWithContentDescription("Opties voor Geroosterde pastinaak").performSemanticsAction(SemanticsActions.OnClick)
         click("Verwijderen")
         compose.waitUntil(5_000) { gone("Geroosterde pastinaak") }
         click("Ongedaan maken")

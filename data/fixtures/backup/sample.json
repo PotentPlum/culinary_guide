@@ -1,0 +1,117 @@
+{
+  "format": "mise-backup",
+  "schemaVersion": 1,
+  "exportedAt": 1793620800000,
+  "appVersion": "0.1.0",
+  "recipes": [
+    {
+      "id": "r-pompoensoep",
+      "title": "Pompoensoep met salie",
+      "description": "Romige soep van flespompoen.",
+      "sourceType": "URL",
+      "sourceUrl": "https://www.example.nl/pompoensoep",
+      "sourceLabel": "example.nl",
+      "image": "images/r-pompoensoep.jpg",
+      "servings": 4,
+      "totalMinutes": 45,
+      "isFavorite": true,
+      "inLibrary": true,
+      "enrichState": "DONE",
+      "sourceMeta": { "ratingValue": 4.5, "ratingCount": 12, "keywords": ["soep", "herfst"], "diet": [] },
+      "createdAt": 1790000000000,
+      "updatedAt": 1791000000000,
+      "ingredientGroups": [
+        {
+          "id": "g1",
+          "items": [
+            { "id": "i1", "text": "1 kg flespompoen", "quantity": 1.0, "unit": "kg", "name": "flespompoen", "parseSource": "LOCAL" },
+            { "id": "i2", "text": "2 uien, gesnipperd", "quantity": 2.0, "name": "ui", "note": "gesnipperd", "parseSource": "CLAUDE" },
+            { "id": "i3", "text": "een handje salie", "parseSource": "NONE" }
+          ]
+        }
+      ],
+      "stepGroups": [
+        { "id": "s1", "steps": [{ "id": "st1", "text": "Snijd de pompoen in blokjes." }, { "id": "st2", "text": "Kook 20 minuten." }] }
+      ],
+      "extraFields": [{ "id": "e1", "label": "Bewaren", "value": "3 dagen in de koelkast" }],
+      "tags": [
+        { "key": "CUISINE", "value": "Nederlands" },
+        { "key": "TECHNIQUE", "value": "blancheren" }
+      ]
+    },
+    {
+      "id": "r-quest",
+      "title": "Gebrande prei met beurre blanc",
+      "sourceType": "QUEST",
+      "sourceLabel": "Quest",
+      "inLibrary": false,
+      "createdAt": 1791500000000,
+      "updatedAt": 1791500000000,
+      "ingredientGroups": [{ "id": "g2", "items": [{ "id": "i4", "text": "2 preien", "quantity": 2.0, "name": "prei", "parseSource": "CLAUDE" }] }],
+      "stepGroups": [{ "id": "s2", "steps": [{ "id": "st3", "text": "Brand de prei zwart." }] }]
+    }
+  ],
+  "quests": [
+    {
+      "id": "q1",
+      "createdAt": 1791500000000,
+      "isDaily": true,
+      "status": "COMPLETED",
+      "completedAt": 1791600000000,
+      "ingredientMode": "SEASONAL",
+      "ingredient": "prei",
+      "vegId": "leek",
+      "questType": "BIJGERECHT",
+      "focusDiscipline": "flavor",
+      "timeLimit": "UNDER_60",
+      "simpleAndSmall": false,
+      "text": "Maak gebrande prei met een beurre blanc.",
+      "skill": "beurre-blanc",
+      "difficulty": "INTERMEDIATE",
+      "timeEstimateMinutes": 40,
+      "why": "Je oefent emulgeren.",
+      "dishType": "Bijgerecht",
+      "tips": ["Houd de saus lauw."],
+      "recipeId": "r-quest"
+    }
+  ],
+  "attempts": [
+    {
+      "id": "a1",
+      "sourceType": "RECIPE",
+      "recipeId": "r-pompoensoep",
+      "cookedAt": 1791100000000,
+      "score": 8,
+      "tasteScore": 10,
+      "notes": "Meer salie.",
+      "photo": "journal/a1.jpg",
+      "techniques": ["blancheren"],
+      "cuisines": ["Nederlands"],
+      "vegIds": ["pumpkin"],
+      "peakVegIds": ["pumpkin"]
+    },
+    {
+      "id": "a2",
+      "sourceType": "QUEST",
+      "recipeId": "r-quest",
+      "questId": "q1",
+      "cookedAt": 1791600000000,
+      "score": 6,
+      "techniques": ["beurre-blanc"],
+      "vegIds": ["leek"],
+      "peakVegIds": ["leek"]
+    },
+    {
+      "id": "a3",
+      "sourceType": "RECIPE",
+      "recipeId": null,
+      "cookedAt": 1780000000000,
+      "notes": "Recept bestaat niet meer."
+    }
+  ],
+  "shoppingItems": [
+    { "id": "sh1", "text": "1 kg flespompoen", "quantity": 1.0, "unit": "kg", "name": "flespompoen", "recipeId": "r-pompoensoep", "checked": false, "position": 0, "createdAt": 1791700000000 },
+    { "id": "sh2", "text": "Koffiefilters", "checked": true, "position": 1, "createdAt": 1791700000000 }
+  ],
+  "settings": { "quality": "BALANCED", "seasonalNotificationsEnabled": false, "librarySort": "RECENTLY_ADDED", "showQuestCard": true }
+}

@@ -119,6 +119,8 @@ fun CuratedRecipeCard(
     onOpen: () -> Unit,
     modifier: Modifier = Modifier,
     eyebrow: String? = null,
+    /** "Importeren": brings the recipe into the library through the link import (spec §6.5). */
+    onImport: (() -> Unit)? = null,
 ) {
     Card(
         onClick = onOpen,
@@ -143,6 +145,9 @@ fun CuratedRecipeCard(
             )
             Text(recipe.why, style = MaterialTheme.typography.bodySmall)
             DifficultyBadge(Difficulty.of(recipe.difficulty))
+            if (onImport != null) {
+                androidx.compose.material3.TextButton(onClick = onImport) { Text(stringResource(R.string.detail_curated_import)) }
+            }
         }
     }
 }

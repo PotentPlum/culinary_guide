@@ -5,21 +5,18 @@ import androidx.lifecycle.viewModelScope
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.ExperimentalCoroutinesApi
-import kotlinx.coroutines.channels.Channel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.combine
 import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.flow.flowOn
-import kotlinx.coroutines.flow.receiveAsFlow
 import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.launch
 import nl.potentplum.mise.content.ContentRepository
 import nl.potentplum.mise.content.model.Vegetable
 import nl.potentplum.mise.core.util.MiseClock
 import nl.potentplum.mise.data.repo.RecipeRepository
-import nl.potentplum.mise.data.repo.ShoppingRepository
 import nl.potentplum.mise.data.settings.SettingsRepository
 import nl.potentplum.mise.domain.CuratedFallback
 import nl.potentplum.mise.domain.CuratedSuggestion
@@ -56,12 +53,6 @@ data class TodayUiState(
     val availableCount: Int = 0,
 )
 
-sealed interface TodayEvent {
-    data class AddedToShopping(
-        val count: Int,
-    ) : TodayEvent
-}
-
 /**
  * Vandaag (spec §6.2). The ranking runs off the main thread and only when the library or the day changes; dismissing,
  * pinning and the ≤ 30 min chip only re-pick from the cached ranking.
@@ -72,7 +63,6 @@ class TodayViewModel
     @Inject
     constructor(
         private val recipes: RecipeRepository,
-        private val shopping: ShoppingRepository,
         private val settings: SettingsRepository,
         content: ContentRepository,
         clock: MiseClock,
@@ -125,9 +115,6 @@ class TodayViewModel
             }.flowOn(Dispatchers.Default)
                 .stateIn(viewModelScope, SharingStarted.WhileSubscribed(5_000), TodayUiState())
 
-        private val _events = Channel<TodayEvent>(Channel.BUFFERED)
-        val events = _events.receiveAsFlow()
-
         /** The shell's day; a new day re-ranks (the pin and dismissals expire on their own). */
         fun onDay(today: LocalDate) {
             day.value = today
@@ -147,15 +134,6 @@ class TodayViewModel
 
         fun unpin() {
             viewModelScope.launch { settings.unpinTonight() }
-        }
-
-        /** The pinned recipe at its own servings (spec §6.14). */
-        fun addTonightToShopping() {
-            val id = state.value.tonight?.id ?: return
-            viewModelScope.launch {
-                val recipe = recipes.get(id) ?: return@launch
-                _events.send(TodayEvent.AddedToShopping(shopping.addRecipe(recipe, recipes.scaler())))
-            }
         }
 
         private companion object {

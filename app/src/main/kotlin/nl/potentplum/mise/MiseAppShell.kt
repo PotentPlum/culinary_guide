@@ -61,6 +61,8 @@ import nl.potentplum.mise.core.navigation.CookRoute
 import nl.potentplum.mise.core.navigation.ImportLinkRoute
 import nl.potentplum.mise.core.navigation.JournalGraph
 import nl.potentplum.mise.core.navigation.JournalRoute
+import nl.potentplum.mise.core.navigation.KeyRoute
+import nl.potentplum.mise.core.navigation.OnboardingRoute
 import nl.potentplum.mise.core.navigation.PhotoImportRoute
 import nl.potentplum.mise.core.navigation.QuestRefineRoute
 import nl.potentplum.mise.core.navigation.QuestRoute
@@ -82,6 +84,8 @@ import nl.potentplum.mise.feature.PlaceholderScreen
 import nl.potentplum.mise.feature.cook.CookScreen
 import nl.potentplum.mise.feature.journal.JournalScreen
 import nl.potentplum.mise.feature.journal.JournalSegment
+import nl.potentplum.mise.feature.onboarding.FirstRecipeChoice
+import nl.potentplum.mise.feature.onboarding.OnboardingScreen
 import nl.potentplum.mise.feature.quests.QuestRefineScreen
 import nl.potentplum.mise.feature.quests.QuestScreen
 import nl.potentplum.mise.feature.recipes.AddRecipeOption
@@ -92,6 +96,7 @@ import nl.potentplum.mise.feature.recipes.RecipeDetailScreen
 import nl.potentplum.mise.feature.recipes.RecipeEditScreen
 import nl.potentplum.mise.feature.season.SeasonScreen
 import nl.potentplum.mise.feature.settings.AboutScreen
+import nl.potentplum.mise.feature.settings.KeyScreen
 import nl.potentplum.mise.feature.settings.SettingsScreen
 import nl.potentplum.mise.feature.shopping.ShoppingScreen
 import nl.potentplum.mise.feature.techniques.TechniqueScreen
@@ -123,6 +128,8 @@ fun MiseAppShell(
     navController: NavHostController = rememberNavController(),
     pendingShare: SharedContent? = null,
     onShareHandled: () -> Unit = {},
+    /** First run (spec §6.16) is not finished yet: it opens on top of Vandaag. */
+    showOnboarding: Boolean = false,
 ) {
     val snackbarHost = remember { SnackbarHostState() }
     val scope = rememberCoroutineScope()
@@ -141,11 +148,21 @@ fun MiseAppShell(
     val onVegetable: (String) -> Unit = { navController.navigate(VegetableRoute(it)) }
     val onTechnique: (String) -> Unit = { navController.navigate(TechniqueRoute(it)) }
     val onRecipe: (String) -> Unit = { navController.navigate(RecipeRoute(it)) }
-    val onAddKey: () -> Unit = { navController.navigate(SettingsRoute) { launchSingleTop = true } }
+    val onAddKey: () -> Unit = { navController.navigate(KeyRoute) { launchSingleTop = true } }
 
     /** Opens [route] in place of the import screen that led to it. */
     val replaceImport: (Any) -> Unit = { route ->
         navController.navigate(route) { popUpTo<ImportLinkRoute> { inclusive = true } }
+    }
+
+    // Once per launch: the restored back stack already holds it after a configuration change.
+    var onboardingOpened by rememberSaveable { mutableStateOf(false) }
+    LaunchedEffect(showOnboarding) {
+        if (!showOnboarding || onboardingOpened) return@LaunchedEffect
+        navController.currentBackStackEntryFlow.first()
+        onboardingOpened = true
+        // A share that started the app goes first; first run comes back on the next launch.
+        if (pendingShare == null) navController.navigate(OnboardingRoute) { launchSingleTop = true }
     }
 
     // Shares open the import flow on top of the current stack (spec §6.1).
@@ -168,7 +185,8 @@ fun MiseAppShell(
             bottomBar = {
                 // Kookmodus is full screen (spec §6.10).
                 val entry by navController.currentBackStackEntryAsState()
-                if (entry?.destination?.hasRoute<CookRoute>() != true) MiseNavigationBar(navController, uncheckedShoppingCount)
+                val fullScreen = entry?.destination?.let { it.hasRoute<CookRoute>() || it.hasRoute<OnboardingRoute>() } == true
+                if (!fullScreen) MiseNavigationBar(navController, uncheckedShoppingCount)
             },
             snackbarHost = { SnackbarHost(snackbarHost) },
         ) { padding ->
@@ -237,6 +255,10 @@ fun MiseAppShell(
                             onOverflowItem = onOverflowItem,
                             onOpenQuest = { navController.navigate(QuestRoute(it)) },
                             onNewQuest = { navController.navigate(QuestRefineRoute()) },
+                            onRecipe = onRecipe,
+                            onVegetable = onVegetable,
+                            onAllVegetables = { navController.navigateToTab(TopLevelDestination.Season) },
+                            onTechnique = onTechnique,
                             requestedSegment = requested,
                             onSegmentRequestHandled = { entry.savedStateHandle[KEY_JOURNAL_SEGMENT] = null },
                         )
@@ -249,7 +271,33 @@ fun MiseAppShell(
                         onOverflowItem = onOverflowItem,
                     )
                 }
-                composable<SettingsRoute> { SettingsScreen(onBack = onBack, onOverflowItem = onOverflowItem) }
+                composable<SettingsRoute> {
+                    SettingsScreen(
+                        onBack = onBack,
+                        onKey = onAddKey,
+                        onAbout = { navController.navigate(AboutRoute) { launchSingleTop = true } },
+                        onRestored = {},
+                        onOverflowItem = onOverflowItem,
+                    )
+                }
+                composable<KeyRoute> { KeyScreen(onBack = onBack, onOverflowItem = onOverflowItem) }
+                composable<OnboardingRoute> {
+                    OnboardingScreen(
+                        onAddKey = onAddKey,
+                        onDone = { choice ->
+                            when (choice) {
+                                FirstRecipeChoice.LATER -> {
+                                    navController.popBackStack()
+                                }
+
+                                FirstRecipeChoice.LINK, FirstRecipeChoice.PHOTOS -> {
+                                    val route = if (choice == FirstRecipeChoice.LINK) ImportLinkRoute() else PhotoImportRoute(camera = true)
+                                    navController.navigate(route) { popUpTo<OnboardingRoute> { inclusive = true } }
+                                }
+                            }
+                        },
+                    )
+                }
                 composable<AboutRoute> { AboutScreen(onBack = onBack, onOverflowItem = onOverflowItem) }
                 composable<VegetableRoute> {
                     VegetableScreen(
@@ -257,6 +305,8 @@ fun MiseAppShell(
                         onVegetable = onVegetable,
                         onTechnique = onTechnique,
                         onQuest = { navController.navigate(QuestRefineRoute(vegId = it)) },
+                        onRecipe = onRecipe,
+                        onImportLink = { navController.navigate(ImportLinkRoute(it)) },
                         onOverflowItem = onOverflowItem,
                     )
                 }

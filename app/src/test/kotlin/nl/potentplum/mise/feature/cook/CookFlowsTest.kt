@@ -38,6 +38,7 @@ import nl.potentplum.mise.data.settings.SettingsRepository
 import nl.potentplum.mise.domain.Difficulty
 import nl.potentplum.mise.testing.FakeClaudeClient
 import nl.potentplum.mise.testing.FakeClockTimers
+import nl.potentplum.mise.testing.REVEAL_TIMEOUT_MILLIS
 import nl.potentplum.mise.testing.reveal
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertNull
@@ -145,7 +146,7 @@ class CookFlowsTest {
 
     private fun clickDescribed(description: String) {
         val matcher = hasContentDescription(description) and hasClickAction()
-        compose.waitUntil(5_000) { compose.onAllNodes(matcher).fetchSemanticsNodes().isNotEmpty() }
+        compose.waitUntil(REVEAL_TIMEOUT_MILLIS) { compose.onAllNodes(matcher).fetchSemanticsNodes().isNotEmpty() }
         compose.onAllNodes(matcher).onFirst().performSemanticsAction(SemanticsActions.OnClick)
     }
 
@@ -165,7 +166,7 @@ class CookFlowsTest {
         waitFor("Stap 2 van 4")
         click("Volgende stap")
         waitFor("Stap 3 van 4")
-        compose.waitUntil(5_000) { session()?.stepIndex == 2 }
+        compose.waitUntil(REVEAL_TIMEOUT_MILLIS) { session()?.stepIndex == 2 }
 
         clickDescribed("Kookmodus sluiten")
         // Not at the last step yet: no question, straight back.

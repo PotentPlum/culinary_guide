@@ -1,0 +1,531 @@
+{
+ "format": "mise-backup",
+ "schemaVersion": 1,
+ "exportedAt": 1793620800000,
+ "appVersion": "legacy-converter",
+ "recipes": [
+  {
+   "id": "0b6f6a52-1c1e-4b55-9d61-1f0c3f1a0001",
+   "title": "Pompoensoep met salie",
+   "description": "Romige soep van pompoen.",
+   "sourceType": "URL",
+   "sourceUrl": "https://www.example.nl/pompoensoep",
+   "sourceLabel": "example.nl",
+   "author": "Example",
+   "imageUrl": "https://www.example.nl/pompoensoep.jpg",
+   "servings": 4,
+   "prepMinutes": 15,
+   "cookMinutes": 30,
+   "totalMinutes": 45,
+   "inLibrary": true,
+   "enrichState": "NONE",
+   "sourceMeta": {
+    "ratingValue": 4.5,
+    "ratingCount": 12,
+    "datePublished": "2025-10-01",
+    "keywords": [
+     "soep",
+     "herfst"
+    ],
+    "diet": [
+     "VegetarianDiet"
+    ],
+    "nutrition": {
+     "calories": "210 kcal"
+    }
+   },
+   "createdAt": 1779358272123,
+   "updatedAt": 1779436800000,
+   "ingredientGroups": [
+    {
+     "id": "b3485eb0-1ffb-58ed-a6af-32a09af9e384",
+     "name": null,
+     "items": [
+      {
+       "id": "13f39bea-fa9d-549e-a648-fce1ef96c69e",
+       "text": "1 kg pompoen",
+       "parseSource": "NONE"
+      },
+      {
+       "id": "6739d585-13fd-5c9b-935f-ea2544af0ef4",
+       "text": "2 uien, gesnipperd",
+       "parseSource": "NONE"
+      }
+     ]
+    },
+    {
+     "id": "66471394-6407-522d-a6f0-06cc33b86a0a",
+     "name": "Topping",
+     "items": [
+      {
+       "id": "bbe2afd6-96f2-5961-adb0-0eeeed790835",
+       "text": "een handje salie",
+       "parseSource": "NONE"
+      }
+     ]
+    }
+   ],
+   "stepGroups": [
+    {
+     "id": "16a3ab04-1251-5ea3-93db-b7914de51c12",
+     "name": null,
+     "steps": [
+      {
+       "id": "80397f46-6bbd-57fa-a5b5-41f2f223aabb",
+       "text": "Snijd de pompoen in blokjes."
+      },
+      {
+       "id": "ce175180-f4af-5eb8-8c61-b7b66f5c5ef0",
+       "text": "Kook 20 minuten en pureer."
+      }
+     ]
+    }
+   ],
+   "tags": [
+    {
+     "key": "CUISINE",
+     "value": "Nederlands"
+    },
+    {
+     "key": "DISH_TYPE",
+     "value": "Soep"
+    },
+    {
+     "key": "TECHNIQUE",
+     "value": "sauteren"
+    }
+   ]
+  },
+  {
+   "id": "0b6f6a52-1c1e-4b55-9d61-1f0c3f1a0002",
+   "title": "Tomatensalade",
+   "description": "Zomers",
+   "sourceType": "URL",
+   "sourceUrl": "http://salades.example.com/tomaat?id=3",
+   "sourceLabel": "salades.example.com",
+   "author": "Anna",
+   "servings": 2,
+   "prepMinutes": 10,
+   "totalMinutes": 10,
+   "inLibrary": true,
+   "enrichState": "NONE",
+   "sourceMeta": {
+    "ratingValue": 4.0,
+    "ratingCount": 3,
+    "datePublished": "2024-07-01",
+    "keywords": [
+     "zomer"
+    ],
+    "nutrition": {
+     "calories": "120"
+    },
+    "video": "https://video.example.com/1"
+   },
+   "createdAt": 1779526800000,
+   "updatedAt": 1779526800000,
+   "ingredientGroups": [
+    {
+     "id": "abb3177d-d6e5-51d3-b8b5-8273fd684251",
+     "name": null,
+     "items": [
+      {
+       "id": "63491236-af33-5157-8cae-649af5da2a69",
+       "text": "4 tomaten",
+       "parseSource": "NONE"
+      },
+      {
+       "id": "0b3ad1eb-f214-56d0-b33e-8dbe1f3ab744",
+       "text": "1 rode ui",
+       "parseSource": "NONE"
+      },
+      {
+       "id": "bed5d593-4afa-5077-892a-bafeb064885c",
+       "text": "olijfolie",
+       "parseSource": "NONE"
+      }
+     ]
+    }
+   ],
+   "stepGroups": [
+    {
+     "id": "d1fc4d4b-1028-5d29-a678-c502ac2a5f6d",
+     "name": null,
+     "steps": [
+      {
+       "id": "a2eecf02-d613-51c5-a1b5-f52bb956d09d",
+       "text": "Snijd de tomaten."
+      },
+      {
+       "id": "91921a64-8ccc-522d-8e0c-1921f682e560",
+       "text": "Meng met de ui en olie."
+      }
+     ]
+    }
+   ],
+   "tags": [
+    {
+     "key": "CUISINE",
+     "value": "Italiaans"
+    },
+    {
+     "key": "DISH_TYPE",
+     "value": "Salade"
+    }
+   ]
+  },
+  {
+   "id": "0b6f6a52-1c1e-4b55-9d61-1f0c3f1a0003",
+   "title": "Prei met beurre noisette",
+   "description": "",
+   "sourceType": "PHOTO",
+   "sourceLabel": "Tobias",
+   "totalMinutes": 25,
+   "inLibrary": true,
+   "enrichState": "NONE",
+   "createdAt": 1779883200000,
+   "updatedAt": 1779883200000,
+   "ingredientGroups": [
+    {
+     "id": "6bce204e-f8f7-5855-bf9f-aeadd243d440",
+     "name": null,
+     "items": [
+      {
+       "id": "fa3111af-c62a-5531-85ec-e3adc7fad2b3",
+       "text": "3 preien",
+       "parseSource": "NONE"
+      },
+      {
+       "id": "62ef0660-f5eb-5cf2-86e6-0592c1a756db",
+       "text": "50 g boter",
+       "parseSource": "NONE"
+      }
+     ]
+    }
+   ],
+   "stepGroups": [
+    {
+     "id": "707797a9-c229-56aa-9e19-6501a92ab04c",
+     "name": null,
+     "steps": [
+      {
+       "id": "d4315316-f8b6-557b-ba4f-22fd0a39f2cf",
+       "text": "Stoom de prei."
+      },
+      {
+       "id": "40043dd1-fe7d-5371-8b60-fe7626f9e39c",
+       "text": "Bruin de boter."
+      }
+     ]
+    }
+   ],
+   "tags": [
+    {
+     "key": "DISH_TYPE",
+     "value": "Bijgerecht"
+    }
+   ]
+  },
+  {
+   "id": "0b6f6a52-1c1e-4b55-9d61-1f0c3f1a0004",
+   "title": "Boerenkool stamppot",
+   "description": "",
+   "sourceType": "LEGACY",
+   "sourceLabel": "Oma",
+   "totalMinutes": 40,
+   "inLibrary": true,
+   "enrichState": "NONE",
+   "createdAt": 1779993000000,
+   "updatedAt": 1779993000000,
+   "ingredientGroups": [
+    {
+     "id": "682055d6-7488-57fd-924e-a6ce9148e21f",
+     "name": null,
+     "items": [
+      {
+       "id": "76463a09-4a88-5d71-a68f-d84c826644d2",
+       "text": "500 g boerenkool",
+       "parseSource": "NONE"
+      },
+      {
+       "id": "dc46b141-d3b1-57cc-9269-6ff9d768b9c8",
+       "text": "1 kg kruimige aardappels",
+       "parseSource": "NONE"
+      }
+     ]
+    }
+   ],
+   "stepGroups": [
+    {
+     "id": "b56ba30c-882a-5951-98b6-49626252268b",
+     "name": null,
+     "steps": [
+      {
+       "id": "ecdd12d2-e1fd-5db4-83ee-c7bce2c61ef2",
+       "text": "Kook de aardappels met de boerenkool."
+      }
+     ]
+    }
+   ],
+   "tags": [
+    {
+     "key": "TECHNIQUE",
+     "value": "koken"
+    },
+    {
+     "key": "CUISINE",
+     "value": "Nederlands"
+    }
+   ]
+  },
+  {
+   "id": "a36790f7-b28a-5412-a554-88034b99d638",
+   "title": "Geroosterde spruitjes",
+   "description": "Knapperig uit de oven",
+   "sourceType": "URL",
+   "sourceUrl": "https://koken.example.org/spruitjes",
+   "sourceLabel": "koken.example.org",
+   "totalMinutes": 30,
+   "inLibrary": true,
+   "enrichState": "NONE",
+   "createdAt": 1779900000000,
+   "updatedAt": 1779900000000,
+   "ingredientGroups": [
+    {
+     "id": "fd0227fe-bfe5-5da8-a648-d3e3f248fe1c",
+     "name": null,
+     "items": [
+      {
+       "id": "3984b629-2afc-5ef1-85bd-a442727b03d9",
+       "text": "500 g spruitjes",
+       "parseSource": "NONE"
+      },
+      {
+       "id": "d2c2d32d-2204-5ec2-9eaf-b6be64c40456",
+       "text": "2 el olijfolie",
+       "parseSource": "NONE"
+      }
+     ]
+    }
+   ],
+   "stepGroups": [
+    {
+     "id": "598c6e85-0ec3-5bae-bde8-76e3e7238079",
+     "name": null,
+     "steps": [
+      {
+       "id": "1bd8b837-6715-5d28-b964-14f901eeb6bc",
+       "text": "Rooster 25 minuten op 220 °C."
+      }
+     ]
+    }
+   ],
+   "tags": [
+    {
+     "key": "DISH_TYPE",
+     "value": "Bijgerecht"
+    },
+    {
+     "key": "MAIN_INGREDIENT",
+     "value": "Groenten"
+    }
+   ]
+  },
+  {
+   "id": "38ade731-6182-55b8-9f9d-d454a652a645",
+   "title": "Beurre blanc met prei",
+   "sourceType": "QUEST",
+   "servings": 2,
+   "totalMinutes": 40,
+   "inLibrary": false,
+   "enrichState": "NONE",
+   "createdAt": 1780045200000,
+   "updatedAt": 1780045200000,
+   "ingredientGroups": [
+    {
+     "id": "eba20b0c-bf3c-5718-8699-d5d14d63bf56",
+     "name": null,
+     "items": [
+      {
+       "id": "05d046fb-1102-5315-8bdb-7ed5ecef8892",
+       "text": "2 Prei",
+       "parseSource": "NONE",
+       "name": "prei"
+      },
+      {
+       "id": "57a87a77-31f1-53b9-9a5a-bbe7a1f98ecf",
+       "text": "100 g koude boter",
+       "parseSource": "NONE",
+       "name": "koude boter"
+      },
+      {
+       "id": "262c566e-b66c-5819-aaed-21cfd710569f",
+       "text": "zout",
+       "parseSource": "NONE",
+       "name": "zout"
+      }
+     ]
+    }
+   ],
+   "stepGroups": [
+    {
+     "id": "26b91c1f-768e-5518-abde-9e9f4b6d8989",
+     "name": null,
+     "steps": [
+      {
+       "id": "c0e8467c-8b1e-5f82-b55e-b1aca1769cb7",
+       "text": "Reduceer de wijn met sjalot."
+      },
+      {
+       "id": "f8a61686-67a4-5797-8382-c4258a8f4d7a",
+       "text": "Monteer met de boter."
+      }
+     ]
+    }
+   ],
+   "tags": [
+    {
+     "key": "CUISINE",
+     "value": "Frans"
+    },
+    {
+     "key": "DISH_TYPE",
+     "value": "Saus/Basis"
+    },
+    {
+     "key": "TECHNIQUE",
+     "value": "emulgeren"
+    }
+   ]
+  },
+  {
+   "id": "b46e32f4-5592-5d5e-a42d-93a7cda4e116",
+   "title": "Rooster pompoen in partjes.",
+   "sourceType": "QUEST",
+   "inLibrary": false,
+   "enrichState": "NONE",
+   "createdAt": 1779267600000,
+   "updatedAt": 1779267600000,
+   "ingredientGroups": [],
+   "stepGroups": [],
+   "tags": [
+    {
+     "key": "DISH_TYPE",
+     "value": "Hoofdgerecht"
+    }
+   ]
+  }
+ ],
+ "quests": [
+  {
+   "id": "7c1d2e3f-0000-4000-8000-00000000c001",
+   "createdAt": 1780045200000,
+   "isDaily": false,
+   "status": "COMPLETED",
+   "ingredientMode": "CUSTOM",
+   "ingredient": "prei",
+   "quantity": 500.0,
+   "unit": "g",
+   "questType": "SAUS",
+   "requestedTechniqueId": "emulgeren",
+   "requestedCuisine": "Frans",
+   "timeLimit": "UNDER_60",
+   "simpleAndSmall": true,
+   "text": "Maak een beurre blanc en serveer die bij geroosterde prei.",
+   "skill": "emulgeren",
+   "difficulty": "INTERMEDIATE",
+   "timeEstimateMinutes": 40,
+   "why": "Je oefent een warme emulsie.",
+   "dishType": "Saus/Basis",
+   "tips": [
+    "Houd de saus lauw."
+   ],
+   "recipeId": "38ade731-6182-55b8-9f9d-d454a652a645",
+   "completedAt": 1780426800000
+  },
+  {
+   "id": "7c1d2e3f-0000-4000-8000-00000000c002",
+   "createdAt": 1779267600000,
+   "isDaily": false,
+   "status": "OPEN",
+   "ingredientMode": "CUSTOM",
+   "ingredient": "pompoen",
+   "questType": "MAALTIJD",
+   "simpleAndSmall": false,
+   "text": "Rooster pompoen in partjes.",
+   "skill": "",
+   "difficulty": "ADVANCED",
+   "timeEstimateMinutes": 0,
+   "why": "",
+   "dishType": "Hoofdgerecht",
+   "tips": [],
+   "recipeId": "b46e32f4-5592-5d5e-a42d-93a7cda4e116"
+  }
+ ],
+ "attempts": [
+  {
+   "id": "9e8d7c6b-0000-4000-8000-0000000000a2",
+   "sourceType": "QUEST",
+   "recipeId": "38ade731-6182-55b8-9f9d-d454a652a645",
+   "questId": "7c1d2e3f-0000-4000-8000-00000000c001",
+   "cookedAt": 1780426800000,
+   "score": 6,
+   "techniques": [
+    "emulgeren"
+   ],
+   "cuisines": [
+    "Frans"
+   ],
+   "vegIds": [
+    "leek"
+   ],
+   "peakVegIds": []
+  },
+  {
+   "id": "9e8d7c6b-0000-4000-8000-0000000000a3",
+   "sourceType": "RECIPE",
+   "cookedAt": 1781118000000,
+   "notes": "Recept was verwijderd.",
+   "techniques": [],
+   "cuisines": [],
+   "vegIds": [
+    "asparagus-green"
+   ],
+   "peakVegIds": [
+    "asparagus-green"
+   ]
+  },
+  {
+   "id": "9e8d7c6b-0000-4000-8000-0000000000a4",
+   "sourceType": "QUEST",
+   "cookedAt": 1781204400000,
+   "techniques": [],
+   "cuisines": [],
+   "vegIds": [],
+   "peakVegIds": []
+  },
+  {
+   "id": "9e8d7c6b-0000-4000-8000-0000000000a1",
+   "sourceType": "RECIPE",
+   "recipeId": "0b6f6a52-1c1e-4b55-9d61-1f0c3f1a0001",
+   "cookedAt": 1791828000000,
+   "score": 7,
+   "tasteScore": 9,
+   "notes": "Meer salie.\nVolgende keer gember.",
+   "techniques": [
+    "blancheren"
+   ],
+   "cuisines": [
+    "Nederlands"
+   ],
+   "vegIds": [
+    "leek",
+    "pumpkin"
+   ],
+   "peakVegIds": [
+    "leek",
+    "pumpkin"
+   ]
+  }
+ ],
+ "shoppingItems": []
+}

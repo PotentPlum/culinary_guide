@@ -320,7 +320,8 @@ The seasonal tally lives on Dagboek only (§6.13); Vandaag stays about today. Wo
 - **Ingredient groups** with headers ("Voor de saus", "Voor de marinade"). Items are rendered from structured fields
   ("150 g boter, in blokjes"); unparsed items show their text. Items can be ticked off; the ticks are the same state as in
   cook mode (the cook session, §6.10).
-  "Op boodschappenlijst" adds all ingredients or a selection, scaled.
+  "Op boodschappenlijst" adds all ingredients or a selection, scaled: a sheet lists the scaled lines, all ticked; untick what is
+  already in the house (the same sheet serves the Vanavond card, at the recipe's own servings).
 - **Technieken in dit recept**: chips for the recipe's technique tags (→ technique detail).
 - **Step groups** with headers. Steps show timer chips (§11.3), and technique names in the text are tappable (alias match, §6.6).
 - **Extra velden**: free label/value pairs, for example "Wijnpairing: Chablis", "Bron pagina: 112", "Opmerking".
@@ -954,7 +955,8 @@ CI must stay green on every push: validate data → `./gradlew lint ktlintCheck 
   columns: `name`, `ingredients[]` (one untitled group), `description`, `prep_time`, `cook_time`, `total_time`, `servings`,
   `cuisine[]`, `category[]`, `keywords[]`, `image_url`, `author`, `suitable_for_diet[]`, `date_published`,
   `aggregate_rating{ratingValue,ratingCount}`, `video_url`, `nutrition{calories,protein,carbs,fat}`.
-- Column values override the JSON when they are non-null (the same precedence as the web app's `fetchRemoteSaved`).
+- Column values override the JSON when they are set (the same precedence as the web app's `fetchRemoteSaved`). The Postgres
+  defaults `''`, `'{}'` and `[]` count as not set, so they never wipe a JSON value. Plain-text `instructions` become one step per line.
 - `source` → `sourceLabel`; `tags` (`{cuisine?,dishType?,mainIngredient?,prepTime?: string[]}`) → `recipe_tag` (cuisine,
   dishType, mainIngredient; prepTime is dropped because it is derived); `created_at` → `createdAt`.
 - Ingredients are exported as text only (`parseSource = NONE`); the app enriches them after restore.
@@ -967,7 +969,8 @@ CI must stay green on every push: validate data → `./gradlew lint ktlintCheck 
 `instructionSections[{ sectionName, steps[{ stepNumber, text }] }]`, `unitSystems?{ hasMetric }`.
 
 **localStorage `mise-saved-recipes`** entries: `{ url, source, recipe: RecipeOutput, savedAt (ms), remoteId?, tags?, taxonomy?{techniques,cuisines,ingredients} }`.
-Entries with a `remoteId` that matches a Supabase row are merged into that row; the rest become new recipes. `taxonomy.techniques`
+Entries with a `remoteId` that matches a Supabase row (or, without one, the same URL, as the web app merged) are merged into that
+row, which keeps its data and only fills gaps from the entry; the rest become new recipes. `taxonomy.techniques`
 → `technique` tags (only ids that exist with a non-null discipline); `taxonomy.cuisines` → `cuisine` tags when missing;
 `taxonomy.ingredients` is dropped.
 
@@ -983,7 +986,10 @@ Entries with a `remoteId` that matches a Supabase row are merged into that row; 
 
 **Supabase `user_attempts` row** → backup attempt: `source_type` (challenge → QUEST, recipe → RECIPE), `source_id` → `questId`/`recipeId`
 (dropped if unresolved), `attempted_at` → `cookedAt`, `score`, `taste_score`, `notes`, `techniques[]`, `cuisines[]`.
-`vegIds`/`peakVegIds` are computed by the script with the §11.4 name match against `ingredients[]` and §11.1 for the month of `cookedAt`.
+`vegIds`/`peakVegIds` are computed by the script with the §11.4 name match against `ingredients[]` (plus the linked recipe's
+lines, as the app snapshots them) and §11.1 for the month of `cookedAt` (Europe/Amsterdam). Legacy 1–10 scores are kept as they are.
+Ids the legacy data lacks (groups, lines, steps, hidden quest recipes, local-only recipes) are uuid5s of the legacy ids, so the output
+is deterministic and restoring it twice with Samenvoegen adds nothing.
 
 ## Appendix B — traceability of the old `ToDo` file
 

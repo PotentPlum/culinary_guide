@@ -190,6 +190,8 @@ class TodayFlowsTest {
         assertEquals("leek", runBlocking { settings.tonight.first() }?.recipeId)
 
         click("Op boodschappenlijst")
+        // The sheet lists both lines, ticked.
+        click("2 ingrediënten toevoegen")
         // The snackbar follows the insert.
         waitFor("2 ingrediënten op je lijst gezet")
         assertEquals(listOf("500 g prei", "1 ui"), runBlocking { shopping.observe().first() }.map { it.text })

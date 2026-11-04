@@ -1,10 +1,12 @@
 package nl.potentplum.mise.data.repo
 
 import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.map
 import nl.potentplum.mise.core.util.MiseClock
 import nl.potentplum.mise.data.db.dao.ShoppingDao
 import nl.potentplum.mise.data.db.entity.ShoppingItemEntity
 import nl.potentplum.mise.domain.IngredientScaler
+import nl.potentplum.mise.domain.ShoppingEntry
 import javax.inject.Inject
 import javax.inject.Singleton
 
@@ -25,6 +27,27 @@ class ShoppingRepository
     ) {
         fun observe(): Flow<List<ShoppingItemEntity>> = dao.observeAll()
 
+        /** Items with their source recipe titles, ready for [nl.potentplum.mise.domain.ShoppingAggregator]. */
+        fun observeEntries(): Flow<List<ShoppingEntry>> =
+            dao.observeRows().map { rows ->
+                rows.map { (item, title) ->
+                    ShoppingEntry(
+                        item.id,
+                        item.text,
+                        item.quantity,
+                        item.unit,
+                        item.name,
+                        item.recipeId,
+                        title,
+                        item.checked,
+                        item.position,
+                    )
+                }
+            }
+
+        /** A manual item ("Los"). */
+        suspend fun addManual(text: String): Int = text.trim().takeIf { it.isNotEmpty() }?.let { add(listOf(ShoppingLine(it))) } ?: 0
+
         /** Adds lines from [recipeId] (or manual lines when null) at the end of the list. */
         suspend fun add(
             lines: List<ShoppingLine>,
@@ -42,21 +65,30 @@ class ShoppingRepository
         }
 
         /**
-         * Every ingredient of [recipe], scaled from its own servings to [servings] (spec §6.14). The raw scaled amount is
-         * kept; the list rounds when it combines lines (spec §11.7).
+         * The ingredients of [recipe] (or only those in [only], by ingredient id), scaled from its own servings to [servings]
+         * (spec §6.14). The raw scaled amount is kept; the list rounds when it combines lines (spec §11.7).
          */
         suspend fun addRecipe(
             recipe: Recipe,
             scaler: IngredientScaler,
             servings: Int? = null,
+            only: Set<String>? = null,
         ): Int {
+            val lines = recipeLines(recipe, scaler, servings).filter { (id, _) -> only == null || id in only }
+            return add(lines.map { it.second }, recipe.id)
+        }
+
+        /** What [addRecipe] adds for each ingredient (by ingredient id), in recipe order: also what the selection sheet shows. */
+        fun recipeLines(
+            recipe: Recipe,
+            scaler: IngredientScaler,
+            servings: Int? = null,
+        ): List<Pair<String, ShoppingLine>> {
             val ratio = servings?.let { scaler.ratio(recipe.servings, it) } ?: 1.0
-            val lines =
-                recipe.ingredients.map { ingredient ->
-                    val parse = ingredient.parsed
-                    ShoppingLine(scaler.format(parse, ratio), parse.quantity?.times(ratio), parse.unit, parse.name)
-                }
-            return add(lines, recipe.id)
+            return recipe.ingredients.map { ingredient ->
+                val parse = ingredient.parsed
+                ingredient.id to ShoppingLine(scaler.format(parse, ratio), parse.quantity?.times(ratio), parse.unit, parse.name)
+            }
         }
 
         suspend fun setChecked(
@@ -66,7 +98,22 @@ class ShoppingRepository
 
         suspend fun delete(id: String) = dao.delete(id)
 
+        suspend fun setChecked(
+            ids: List<String>,
+            checked: Boolean,
+        ) = dao.setChecked(ids, checked)
+
+        /** Deletes [ids] and returns what was deleted, for Ongedaan maken. */
+        suspend fun deleteForUndo(ids: List<String>): List<ShoppingItemEntity> = dao.get(ids).also { dao.delete(ids) }
+
         suspend fun deleteChecked() = dao.deleteChecked()
+
+        /** Clears ticked items (or everything) and returns what was deleted, for Ongedaan maken. */
+        suspend fun clearForUndo(onlyChecked: Boolean): List<ShoppingItemEntity> {
+            val removed = dao.all().filter { !onlyChecked || it.checked }
+            if (onlyChecked) dao.deleteChecked() else dao.deleteAll()
+            return removed
+        }
 
         suspend fun deleteAll() = dao.deleteAll()
 

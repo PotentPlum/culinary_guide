@@ -33,11 +33,17 @@ object FakeClaudeClient : ClaudeClient {
     /** When set, a call waits for it: lets a test see the progress UI and cancel. */
     var gate: CompletableDeferred<Unit>? = null
 
+    /** What `GET /v1/models` answers. */
+    var keyCheck: KeyCheck = KeyCheck.VALID
+    val checkedKeys = mutableListOf<String>()
+
     fun reset() {
         reply = JsonObject(emptyMap())
         failure = null
         gate = null
+        keyCheck = KeyCheck.VALID
         requests.clear()
+        checkedKeys.clear()
     }
 
     override suspend fun send(
@@ -50,7 +56,10 @@ object FakeClaudeClient : ClaudeClient {
         return ClaudeResponse(reply, Usage(3_000, 800), request.model)
     }
 
-    override suspend fun checkKey(key: String) = KeyCheck.VALID
+    override suspend fun checkKey(key: String): KeyCheck {
+        checkedKeys += key
+        return keyCheck
+    }
 
     fun json(text: String): JsonObject = Json.parseToJsonElement(text).jsonObject
 }
