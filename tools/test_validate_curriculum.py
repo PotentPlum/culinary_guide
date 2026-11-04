@@ -36,10 +36,10 @@ S1_GOOD = """# S1
 
 #### SAF-1.M1 — Hygiene (4 h)
 
-| ID | Lesson | Objectives | Prereqs | h | Moves |
-|---|---|---|---|---|---|
-| SAF-1.M1.L1 | Hands | [S] wash hands [S1] | — | 2 | SA-HYG→1 |
-| SAF-1.M1.L2 | Boards | [S] separate boards | — | 2 | SA-HYG→2 |
+| ID | Lesson | Objectives | Prereqs | h | Practice | Elapsed | Moves |
+|---|---|---|---|---|---|---|---|
+| SAF-1.M1.L1 | Hands | [S] wash hands [S1] | — | 2 | 1 | — | SA-HYG→1 |
+| SAF-1.M1.L2 | Boards | [S] separate boards | — | 2 | 1 | 1 wk | SA-HYG→2 |
 
 - `SAF-1.M1.X1` *drill, recipe* — Audit.
 
@@ -51,10 +51,10 @@ S1_GOOD = """# S1
 
 #### KNF-1.M1 — Cuts (6 h)
 
-| ID | Lesson | Objectives | Prereqs | h | Moves |
-|---|---|---|---|---|---|
-| KNF-1.M1.L1 | Grip | [S] grip | SAF-1.M1.L2 | 3 | TS-KNF→1 |
-| KNF-1.M1.L2 | Dice | [S] dice | — | 3 | TS-KNF→2 |
+| ID | Lesson | Objectives | Prereqs | h | Practice | Elapsed | Moves |
+|---|---|---|---|---|---|---|---|
+| KNF-1.M1.L1 | Grip | [S] grip | SAF-1.M1.L2 | 3 | 2 | — | TS-KNF→1 |
+| KNF-1.M1.L2 | Dice | [S] dice | — | 3 | 2 | — | TS-KNF→2 |
 
 - `KNF-1.M1.X1` *framework, framework* — Dice.
 
@@ -69,6 +69,8 @@ OVERVIEW = """# Outline
 <!-- END generated:coverage -->
 <!-- BEGIN generated:support -->
 <!-- END generated:support -->
+<!-- BEGIN generated:load -->
+<!-- END generated:load -->
 """
 
 
@@ -143,8 +145,35 @@ class ValidateCurriculumTest(unittest.TestCase):
         self.assertEqual(self.run_main("--write"), 0)
         self.assertEqual(self.run_main(), 0)
         overview = (self.root / "02-curriculum-outline.md").read_text(encoding="utf-8")
-        self.assertIn("| `TS-KNF` | 2 / 2 | · | · | · | · |", overview)
+        self.assertIn("| `TS-KNF` | 2 / 2 | · | · | · | · | 4 (level 2 needs 1) |", overview)
         self.assertIn("| S1 | 2 | 50 % | 50 % | 0 % | 70 / 30 / 0 % |", overview)
+        self.assertIn("| S1 | 4 | 10 | 6 | 1 | 2 | 2 | 1 |", overview)
+
+    def test_a_level_needs_enough_practical_sessions(self) -> None:
+        bad = S1_GOOD.replace("| Grip | [S] grip | SAF-1.M1.L2 | 3 | 2 |", "| Grip | [S] grip | SAF-1.M1.L2 | 3 | 0 |").replace(
+            "| Dice | [S] dice | — | 3 | 2 |", "| Dice | [S] dice | — | 3 | 0 |"
+        )
+        self.assertIn(
+            "practice: TS-KNF is taught to level 2 by the end of S1 with 0 practical session(s); level 2 needs 1",
+            self.errors(bad),
+        )
+
+    def test_elapsed_time_and_session_hours_are_checked(self) -> None:
+        errors = self.errors(S1_GOOD.replace("| 1 | 1 wk |", "| 1 | a week |").replace("| Dice | [S] dice | — | 3 | 2 |", "| Dice | [S] dice | — | 3 | 7 |"))
+        self.assertTrue(any("bad elapsed time 'a week'" in e for e in errors))
+        self.assertIn("KNF-1.M1.L2: 7 practical sessions don't fit in 3 h", errors)
+
+    def test_every_competency_needs_a_milestone_retest_once_all_stages_exist(self) -> None:
+        for stage in ("S2", "S3", "S4", "S5"):
+            (self.root / "02-outline" / f"{stage}-x.md").write_text("# empty\n", encoding="utf-8")
+        errors = self.errors(S1_GOOD)
+        self.assertIn("assessment: TS-KNF is not re-tested in any milestone or the capstone", errors)
+        retest = S1_GOOD + (
+            "\n### MS-S1 — Milestone (1 h)\n\n#### MS-S1.M1 — Gate (1 h)\n\n"
+            "| ID | Lesson | Objectives | Prereqs | h | Practice | Elapsed | Moves |\n|---|---|---|---|---|---|---|---|\n"
+            "| MS-S1.M1.L1 | Gate | Re-tests | — | 1 | 1 | — | TS-KNF→2, SA-HYG→1 |\n"
+        )
+        self.assertFalse([e for e in self.errors(retest) if e.startswith("assessment:")])
 
 
 if __name__ == "__main__":

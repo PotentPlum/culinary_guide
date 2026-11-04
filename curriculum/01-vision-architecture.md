@@ -1,6 +1,8 @@
 # Phase 1 — Educational vision and curriculum architecture
 
-Status: **reviewed** (2026-11-04). The reviewer's answers to the open questions are applied (see §13.2). Conventions (dimensions K/S/J/M, levels 1–5, IDs) are in [`README.md`](README.md);
+Status: **reviewed** (2026-11-04). The reviewer's answers to the open questions are applied (see §13.2). **Revised in
+Phase 3** ([`03-validation.md`](03-validation.md)): realistic hours (1,277.5 h), the new course `FIR-3` and competency
+`TS-FIRE`; every change is listed in §13.5. Conventions (dimensions K/S/J/M, levels 1–5, IDs) are in [`README.md`](README.md);
 sources `[S#]` are in [`sources.md`](sources.md).
 
 This document is the blueprint for every later phase:
@@ -166,10 +168,11 @@ Key:
 - The CIA AOS does not publish contact hours per credit [S1][S2].
   - Our estimate: four 15-week full-time semesters come to roughly **1,500–2,000 on-campus hours**, plus the 550-hour
     externship.
-  - This is an assumption, to be refined in Phase 3.
+  - Phase 3 §3 refines this: the CIA follows the federal credit-hour definition, at least 45 h of student work per
+    credit, so the 33 credits whose content this program covers (the Americas aside) stand for at least about 1,485 h.
 - The Le Cordon Bleu cuisine diploma is about **540 h** of mostly practical classes [S4], but it covers classical cuisine
   only, with no pastry, bread, cuisines or management.
-- This program's core is about **1,020 h** (§8):
+- This program's core is about **1,277.5 h** (§8; 1,020 h before the Phase 3 revision):
   - It includes the theory and planning that schools fit into lectures and homework.
   - It leaves out professional production and operations (about a third of the CIA program).
   - It adds what a school gives through supervision: structured self-assessment and repetition.
@@ -313,6 +316,7 @@ target are left to specializations (§11).
 | TS-DRY | Dry-heat methods: sauté, pan-fry, sear, roast, grill/broil, deep-fry | 2 | 3 | 4 | 4 | 5 | 5 |
 | TS-MOI | Moist-heat methods: boil, simmer, poach, steam, blanch | 3 | 4 | 4 | 4 | 4 | 4 |
 | TS-CMB | Combination methods: braise, stew, pot-roast, sous vide | – | 2 | 4 | 4 | 4 | 4 |
+| TS-FIRE | Live fire and barbecue: builds and controls a charcoal or wood fire; direct, indirect and ember cooking; low-and-slow barbecue. Added in Phase 3 (R2) | – | – | 3 | 3 | 4 | 4 |
 | TS-EGG | Egg cookery: boiled, poached, fried, scrambled, omelette, custards | 3 | 4 | 4 | 4 | 4 | 4 |
 | TS-VEG | Vegetable preparation and cookery across methods | 3 | 4 | 4 | 5 | 5 | 5 |
 | TS-STA | Starch cookery: rice, grains, legumes, pasta (dried and fresh), potatoes | 3 | 3 | 4 | 4 | 4 | 4 |
@@ -395,9 +399,9 @@ target are left to specializations (§11).
 | CR-IMPV | Improvises under constraints (pantry, mystery basket, time, diet) | – | 1 | 3 | 3 | 4 | 4 |
 | CR-ORIG | Develops original dishes with a recognisable personal point of view | – | – | 1 | 3 | 4 | 4 |
 
-That is **66 competencies in 10 domains**:
+That is **67 competencies in 10 domains** (`TS-FIRE` added in Phase 3):
 - 20 target level 5;
-- 39 target level 4;
+- 40 target level 4;
 - 6 target level 3;
 - 1 targets level 2.
 
@@ -412,21 +416,21 @@ into sub-competencies. The IDs above stay as the parents.
 
 ```mermaid
 flowchart LR
-  S1["S1 Foundations<br/>~170 h · ~26 wk"] --> S2["S2 Core techniques<br/>~260 h · ~40 wk"]
-  S2 --> S3["S3 Integration<br/>~270 h · ~42 wk"]
-  S3 --> S4["S4 Advanced<br/>~210 h · ~32 wk"]
-  S4 --> S5["S5 Mastery & independence<br/>~110 h · ~17 wk"]
+  S1["S1 Foundations<br/>~200 h · ~31 wk"] --> S2["S2 Core techniques<br/>~285 h · ~44 wk"]
+  S2 --> S3["S3 Integration<br/>~396 h · ~61 wk"]
+  S3 --> S4["S4 Advanced<br/>~249 h · ~38 wk"]
+  S4 --> S5["S5 Mastery & independence<br/>~148 h · ~23 wk"]
   S5 --> SP["Specializations<br/>(optional, after the core)"]
 ```
 
 | Stage | Name | Core question | Hours | Weeks at 6.5 h | Exit gate |
 |---|---|---|---|---|---|
-| **S1** | Foundations (*Fundament*) | Can I work safely, organised and with control in my kitchen, and taste what I make? | 170 | 26 | `MS-S1` |
-| **S2** | Core techniques (*Kerntechnieken*) | Can I carry out the core professional techniques across the main ingredient groups? | 260 | 40 | `MS-S2` |
-| **S3** | Integration (*Integratie*) | Can I combine techniques into complete dishes, control flavour on purpose, and plan and manage my kitchen? | 270 | 42 | `MS-S3` |
-| **S4** | Advanced (*Gevorderd*) | Can I execute advanced and classical techniques, compose plates and menus, and develop recipes? | 210 | 32 | `MS-S4` |
-| **S5** | Mastery and independence (*Meesterschap*) | Can I cook anything well without a recipe, create my own food, and prove it under pressure? | 110 | 17 | `CAP-5` |
-| | **Core program** | | **1,020** | **~157** | |
+| **S1** | Foundations (*Fundament*) | Can I work safely, organised and with control in my kitchen, and taste what I make? | 200.5 | 31 | `MS-S1` |
+| **S2** | Core techniques (*Kerntechnieken*) | Can I carry out the core professional techniques across the main ingredient groups? | 285 | 44 | `MS-S2` |
+| **S3** | Integration (*Integratie*) | Can I combine techniques into complete dishes, control flavour on purpose, and plan and manage my kitchen? | 396 | 61 | `MS-S3` |
+| **S4** | Advanced (*Gevorderd*) | Can I execute advanced and classical techniques, compose plates and menus, and develop recipes? | 248.5 | 38 | `MS-S4` |
+| **S5** | Mastery and independence (*Meesterschap*) | Can I cook anything well without a recipe, create my own food, and prove it under pressure? | 147.5 | 23 | `CAP-5` |
+| | **Core program** | | **1,277.5** | **~197** | |
 
 Stage names in Dutch follow the vocabulary of the existing *Mise* app (Basis / Gemiddeld / Gevorderd). The exact app
 wording is decided in Phase 7.
@@ -454,7 +458,8 @@ wording is decided in Phase 7.
 
 **S3 — Integration**
 - *Purpose.* Combine techniques, design flavour on purpose, and widen the repertoire: vegetable-led cooking, butchery,
-  braising, sous vide, the cold kitchen, preservation, pastry, sourdough, and the logic of world cuisines. Learn to run a kitchen economically.
+  braising, sous vide, barbecue and live fire, the cold kitchen, preservation, pastry, sourdough, and the logic of world
+  cuisines. Learn to run a kitchen economically.
 - *Entry.* `MS-S2` passed.
 - *Emphasis.* About 25 % K, 45 % S, 30 % J. Recipes are reduced to frameworks (§6.6).
 - *Exit gate `MS-S3`.* A week-long plan:
@@ -534,6 +539,7 @@ flowchart TD
     FLV3[FLV-3 Flavour architecture]
     BUT3[BUT-3 Home butchery]
     SLW3[SLW-3 Braising, slow & sous vide]
+    FIR3[FIR-3 Barbecue & live fire]
     GRD3[GRD-3 Cold kitchen]
     SAF3[SAF-3 Food safety II]
     PRS3[PRS-3 Preservation]
@@ -545,6 +551,7 @@ flowchart TD
     NUT3[NUT-3 Nutrition & allergens]
     SAF3 --> PRS3
     SAF3 --> SLW3
+    SLW3 --> FIR3
   end
   subgraph S4[S4 Advanced]
     CLS4[CLS-4 Classical French]
@@ -613,91 +620,92 @@ How much support a practical exercise gives drops through the stages. This is a 
 
 ## 7. Curriculum structure: courses
 
-**44 core courses** plus 4 milestone assessments and the capstone:
-- 10 courses in S1, 11 in S2, 12 in S3, 8 in S4 and 3 in S5;
+**45 core courses** plus 4 milestone assessments and the capstone:
+- 10 courses in S1, 11 in S2, 13 in S3, 8 in S4 and 3 in S5 (`FIR-3` added in Phase 3);
 - the capstone (`CAP-5`) is listed with S5 but counted as an assessment, not a course.
 
 Hours include theory, practice, journaling and the course's own assessments. Main competencies are listed by ID;
 Phase 4 adds the full mapping.
 
-### 7.1 S1 — Foundations (170 h)
+### 7.1 S1 — Foundations (200.5 h)
 
 | ID | Course | Purpose | Hours | Prerequisites | Main competencies |
 |---|---|---|---|---|---|
-| ORI-1 | Orientation and baseline | Set up the kitchen and journal; equipment audit; a diagnostic cook and tasting baseline; how the program works; equipment tier 0. | 8 | — | JD-REFL, KM-EQPT, FL-SENS |
-| SAF-1 | Food safety and hygiene I | Hygiene, cross-contamination, the temperature danger zone, chilling and reheating, a thermometer, storage, allergen basics, kitchen accidents. | 12 | ORI-1 | SA-HYG, SA-TEMP, SA-PHYS, SA-ALLG, IN-STO |
-| WRK-1 | Mise en place, workflow and recipe literacy | Organising a workspace; reading and planning from recipes; terminology; kitchen math I (weights, volumes, conversions, scaling). | 14 | ORI-1 | TS-MEP, CK-RCPT, CK-TERM, KM-MATH, KM-PLAN |
+| ORI-1 | Orientation and baseline | Set up the kitchen and journal; equipment audit; a diagnostic cook and tasting baseline; how the program works; equipment tier 0. | 10.5 | — | JD-REFL, KM-EQPT, FL-SENS |
+| SAF-1 | Food safety and hygiene I | Hygiene, cross-contamination, the temperature danger zone, chilling and reheating, a thermometer, storage, allergen basics, kitchen accidents. | 15.5 | ORI-1 | SA-HYG, SA-TEMP, SA-PHYS, SA-ALLG, IN-STO |
+| WRK-1 | Mise en place, workflow and recipe literacy | Organising a workspace; reading and planning from recipes; terminology; kitchen math I (weights, volumes, conversions, scaling). | 16 | ORI-1 | TS-MEP, CK-RCPT, CK-TERM, KM-MATH, KM-PLAN |
 | EQP-1 | Equipment, heat sources and tools | Cookware materials and their heat behaviour; knowing your stove and oven (output, hot spots, calibration); knife care and sharpening basics; small tools. | 12 | ORI-1 | KM-EQPT, SC-HEAT |
-| KNF-1 | Knife skills I | Grip, guiding hand, board set-up; the classical cuts (*brunoise*, *julienne*, *macédoine*, *paysanne*, *chiffonade*, mince); onion, garlic, herbs; uniformity before speed. | 22 | SAF-1, EQP-1 | TS-KNF, SA-PHYS |
-| TST-1 | Tasting and seasoning I | The five tastes plus aroma, texture and temperature; salt as a tool; acid, fat, sweetness, bitterness; tasting vocabulary; calibration exercises. | 16 | ORI-1 | FL-SENS, FL-SEAS, FL-CORR |
-| HEA-1 | Heat and cooking methods I | Heat transfer; browning; the basic dry methods (sauté, pan-fry, roast) and moist methods (boil, simmer, poach, steam, blanch); reading heat by eye and ear. | 26 | SAF-1, EQP-1 | TS-DRY, TS-MOI, SC-HEAT, SC-BRWN, JD-CUES |
-| EGG-1 | Eggs and breakfast cookery | Egg structure; coagulation temperatures; boiled, poached, fried, scrambled, omelette; simple custards. The first protein and doneness lab. | 16 | HEA-1 | TS-EGG, IN-DAI, SC-PROT, JD-CUES |
-| VEG-1 | Vegetables I | Vegetable structure and groups; seasonal selection; preparation; matching method to vegetable; colour, texture and flavour changes; potatoes. | 24 | KNF-1, HEA-1 | TS-VEG, IN-VEG, IN-SEL, SC-STRC |
-| STA-1 | Rice, grains and pasta I | Absorption, pilaf and risotto methods; cooking dried pasta and saucing it; couscous and bulgur; starch behaviour. | 14 | HEA-1 | TS-STA, IN-STA, SC-STRC |
-| MS-S1 | *Milestone S1* | §6.2 | 6 | all S1 | |
-| | **Total** | | **170** | | |
+| KNF-1 | Knife skills I | Grip, guiding hand, board set-up; the classical cuts (*brunoise*, *julienne*, *macédoine*, *paysanne*, *chiffonade*, mince); onion, garlic, herbs; uniformity before speed. | 28.5 | SAF-1, EQP-1 | TS-KNF, SA-PHYS |
+| TST-1 | Tasting and seasoning I | The five tastes plus aroma, texture and temperature; salt as a tool; acid, fat, sweetness, bitterness; tasting vocabulary; calibration exercises. | 17.5 | ORI-1 | FL-SENS, FL-SEAS, FL-CORR |
+| HEA-1 | Heat and cooking methods I | Heat transfer; browning; the basic dry methods (sauté, pan-fry, roast) and moist methods (boil, simmer, poach, steam, blanch); reading heat by eye and ear. | 30.5 | SAF-1, EQP-1 | TS-DRY, TS-MOI, SC-HEAT, SC-BRWN, JD-CUES |
+| EGG-1 | Eggs and breakfast cookery | Egg structure; coagulation temperatures; boiled, poached, fried, scrambled, omelette; simple custards. The first protein and doneness lab. | 18.5 | HEA-1 | TS-EGG, IN-DAI, SC-PROT, JD-CUES |
+| VEG-1 | Vegetables I | Vegetable structure and groups; seasonal selection; preparation; matching method to vegetable; colour, texture and flavour changes; potatoes. | 27.5 | KNF-1, HEA-1 | TS-VEG, IN-VEG, IN-SEL, SC-STRC |
+| STA-1 | Rice, grains and pasta I | Absorption, pilaf and risotto methods; cooking dried pasta and saucing it; couscous and bulgur; starch behaviour. | 17 | HEA-1 | TS-STA, IN-STA, SC-STRC |
+| MS-S1 | *Milestone S1* | §6.2 | 7 | all S1 | |
+| | **Total** | | **200.5** | | |
 
-### 7.2 S2 — Core techniques (260 h)
+### 7.2 S2 — Core techniques (285 h)
 
 | ID | Course | Purpose | Hours | Prerequisites | Main competencies |
 |---|---|---|---|---|---|
-| SCI-2 | Food science II | Experiments with proteins, starches and gluten, fats and emulsions, water and salt (brining, osmosis), acids and bases, microbiology basics. | 20 | MS-S1 | SC-PROT, SC-STRC, SC-EMUL, SC-MICR, RD-TEST |
-| HEA-2 | Cooking methods II | The full method matrix: searing and resting, grilling and broiling, shallow and deep frying (oil choice, temperature, safety), braising and stewing introduced, oven control. | 22 | MS-S1 | TS-DRY, TS-CMB, CK-METH, SA-PHYS |
-| KNF-2 | Knife skills II | Speed with uniformity; preparing herbs and aromatics at volume; portioning; basic fabrication cuts; whetstone sharpening. | 8 | MS-S1 | TS-KNF, TS-FAB, KM-EQPT |
-| STK-2 | Stocks and soups | White, brown, vegetable and fish stock (*fond*, *fumet*); extraction and clarity; clear, puréed, cream and hearty soups; garnishing soups. | 24 | MS-S1 | TS-STK, KM-WAST, SC-PROT |
-| SAU-2 | Sauces I | Pan sauces and reductions; roux and starch thickeners (*béchamel*, *velouté*); emulsions (mayonnaise, *hollandaise*, *beurre blanc*); vinaigrettes; saving a broken sauce. | 26 | STK-2 | TS-SAU, SC-EMUL, JD-TRBL, CK-CLAS |
-| POU-2 | Poultry | Chicken and other poultry: anatomy, parts, roasting, sautéing, poaching, doneness and safety, gravy from roasting. | 22 | HEA-2 | IN-MEA, TS-PRO, SA-TEMP, TS-FAB |
-| MEA-2 | Meat I | Muscle structure and tenderness; beef, pork and lamb cuts; matching cut to method; searing, roasting, resting; minced meat; doneness by cue and temperature. | 28 | HEA-2 | IN-MEA, TS-PRO, TS-DRY, JD-CUES |
-| FSH-2 | Fish and shellfish I | Freshness and sustainability; round and flat fish; fillets and portions; poaching, pan-frying, roasting, steaming; mussels and shrimp. | 24 | HEA-2 | IN-FSH, TS-PRO, TS-FAB |
-| LEG-2 | Legumes, grains II and dairy | Dried legumes (soaking, cooking, texture); whole grains, polenta; dairy behaviour (curdling, reduction); fresh cheeses introduced. | 18 | MS-S1 | TS-STA, IN-STA, IN-DAI |
-| BAK-2 | Baking science and pastry I | Weighing and baker's %; flour, sugar, fat, eggs and leaveners; quick breads; shortcrust; creaming and sponge methods; custards and pastry cream; biscuits. | 30 | SCI-2 | TS-BAK, IN-BAK, KM-MATH, SC-STRC |
-| BRD-2 | Bread I | Yeast and fermentation; gluten development; lean doughs (mixing, bulk proof, shaping, proofing, baking); steam in a home oven; enriched doughs introduced. | 22 | BAK-2 | TS-BRD, SC-STRC |
+| SCI-2 | Food science II | Experiments with proteins, starches and gluten, fats and emulsions, water and salt (brining, osmosis), acids and bases, microbiology basics. | 20.5 | MS-S1 | SC-PROT, SC-STRC, SC-EMUL, SC-MICR, RD-TEST |
+| HEA-2 | Cooking methods II | The full method matrix: searing and resting, grilling and broiling, shallow and deep frying (oil choice, temperature, safety), braising and stewing introduced, oven control. | 26.5 | MS-S1 | TS-DRY, TS-CMB, CK-METH, SA-PHYS |
+| KNF-2 | Knife skills II | Speed with uniformity; preparing herbs and aromatics at volume; portioning; basic fabrication cuts; whetstone sharpening. | 10.5 | MS-S1 | TS-KNF, TS-FAB, KM-EQPT |
+| STK-2 | Stocks and soups | White, brown, vegetable and fish stock (*fond*, *fumet*); extraction and clarity; clear, puréed, cream and hearty soups; garnishing soups. | 27 | MS-S1 | TS-STK, KM-WAST, SC-PROT |
+| SAU-2 | Sauces I | Pan sauces and reductions; roux and starch thickeners (*béchamel*, *velouté*); emulsions (mayonnaise, *hollandaise*, *beurre blanc*); vinaigrettes; saving a broken sauce. | 28 | STK-2 | TS-SAU, SC-EMUL, JD-TRBL, CK-CLAS |
+| POU-2 | Poultry | Chicken and other poultry: anatomy, parts, roasting, sautéing, poaching, doneness and safety, gravy from roasting. | 24.5 | HEA-2 | IN-MEA, TS-PRO, SA-TEMP, TS-FAB |
+| MEA-2 | Meat I | Muscle structure and tenderness; beef, pork and lamb cuts; matching cut to method; searing, roasting, resting; minced meat; doneness by cue and temperature. | 29 | HEA-2 | IN-MEA, TS-PRO, TS-DRY, JD-CUES |
+| FSH-2 | Fish and shellfish I | Freshness and sustainability; round and flat fish; fillets and portions; poaching, pan-frying, roasting, steaming; mussels and shrimp. | 23.5 | HEA-2 | IN-FSH, TS-PRO, TS-FAB |
+| LEG-2 | Legumes, grains II and dairy | Dried legumes (soaking, cooking, texture); whole grains, polenta; dairy behaviour (curdling, reduction); fresh cheeses introduced. | 19.5 | MS-S1 | TS-STA, IN-STA, IN-DAI |
+| BAK-2 | Baking science and pastry I | Weighing and baker's %; flour, sugar, fat, eggs and leaveners; quick breads; shortcrust; creaming and sponge methods; custards and pastry cream; biscuits. | 37 | SCI-2 | TS-BAK, IN-BAK, KM-MATH, SC-STRC |
+| BRD-2 | Bread I | Yeast and fermentation; gluten development; lean doughs (mixing, bulk proof, shaping, proofing, baking); steam in a home oven; enriched doughs introduced. | 23 | BAK-2 | TS-BRD, SC-STRC |
 | MS-S2 | *Milestone S2* | §6.2 | 16 | all S2 | |
-| | **Total** | | **260** | | |
+| | **Total** | | **285** | | |
 
-### 7.3 S3 — Integration (270 h)
+### 7.3 S3 — Integration (396 h)
 
 | ID | Course | Purpose | Hours | Prerequisites | Main competencies |
 |---|---|---|---|---|---|
-| FLV-3 | Flavour architecture | Aromatic bases across cuisines; herbs and spices (blooming, toasting, timing); umami; heat and pungency; texture and contrast; pairing; correcting a dish. | 26 | MS-S2 | FL-ARCH, FL-SEAS, FL-TEXT, FL-CORR, IN-ARO |
-| BUT-3 | Home butchery and fabrication | Breaking down a whole chicken; filleting round and flat fish; trimming and tying roasts; portioning; yield testing. | 18 | MS-S2 | TS-FAB, KM-MATH, KM-WAST |
-| SLW-3 | Braising, slow cooking and sous vide | Collagen and tough cuts; braises and stews by type; pressure cooking; sous vide doneness and its food safety; holding and reheating. | 22 | MS-S2, SAF-3 | TS-CMB, SC-PROT, SA-HRPR, TS-PRO |
-| GRD-3 | Cold kitchen (*garde manger*) | Composed and leafy salads; dressings and cold sauces; cured fish (*gravad*); terrines and pâtés introduced; cold platters. | 22 | MS-S2 | TS-GRD, FL-TEXT, CR-COMP |
-| SAF-3 | Food safety II | High-risk processes: cooling large batches, sous vide pasteurisation, botulism and acidity, curing salts, fermentation safety; HACCP-style thinking at home. | 6 | MS-S2 | SA-HRPR, SA-TEMP, SC-MICR |
-| PRS-3 | Preservation | Quick and canned pickles (tested methods only); lacto-fermentation; salt curing; drying; jams and fruit preserves; confit; using preserves in cooking. | 22 | SAF-3 | TS-PRS, SA-HRPR, SC-MICR, KM-WAST |
-| PST-3 | Pastry II | Choux; rough puff and laminated dough introduced; sweet and savoury tarts; creams (*crème anglaise*, *crème pâtissière* and variants); mousses; chocolate basics and tempering introduced. | 30 | MS-S2 | TS-BAK, IN-BAK, SC-EMUL |
-| BRD-3 | Bread II | Preferments; a sourdough culture; hydration; shaping and scoring; whole grain and rye; a baking schedule around a working week. | 20 | MS-S2 | TS-BRD, KM-PLAN |
-| CUI-3 | World cuisines I | The logic of 8 traditions (pantry, core techniques, flavour profile, meal structure, history), each with a representative cooking project. The eight: French regional, Italian, Iberian, Levantine and North African, Indian subcontinent, Chinese, Japanese, Mexican (§13.2 Q3). Dutch and Northern European cooking gets no course of its own; it appears where it fits, for example in vegetables, preserving and bread. | 34 | MS-S2, FLV-3 | CK-CUIS, FL-ARCH, IN-ARO, JD-CHSE |
-| KMG-3 | Kitchen management | Weekly planning; purchasing and quantities; cost per portion and budget; yield; batch cooking and turning leftovers into new dishes; freezer management; reducing waste. | 18 | MS-S2 | KM-PLAN, KM-PURC, KM-WAST, KM-MATH |
-| NUT-3 | Applied nutrition and allergens | Macronutrients and their role in cooking; balanced meals; adapting to diets (vegetarian, vegan, gluten-free, lower salt); the 14 EU allergens and cross-contact [S23]. | 12 | MS-S2 | SA-ALLG, RD-ADPT |
-| VEG-3 | Vegetables II: vegetable-led cooking | Vegetables as the main event: whole-roasting, charring, salt-baking, glazing, confit; purées and vegetable emulsions; fermented and pickled vegetables used in cooking; satisfying plant-based dishes (umami, fat, texture, protein); composing a plate around a vegetable; cooking a vegetable through its whole season. Added after review (§13.2 Q7). | 20 | MS-S2, FLV-3 | TS-VEG, IN-VEG, FL-ARCH, FL-TEXT, CR-COMP |
+| FLV-3 | Flavour architecture | Aromatic bases across cuisines; herbs and spices (blooming, toasting, timing); umami; heat and pungency; texture and contrast; pairing; correcting a dish. | 30 | MS-S2 | FL-ARCH, FL-SEAS, FL-TEXT, FL-CORR, IN-ARO |
+| BUT-3 | Home butchery and fabrication | Breaking down a whole chicken; filleting round and flat fish; trimming and tying roasts; portioning; yield testing. | 21.5 | MS-S2 | TS-FAB, KM-MATH, KM-WAST |
+| SLW-3 | Braising, slow cooking and sous vide | Collagen and tough cuts; braises and stews by type; pressure cooking; sous vide doneness and its food safety; holding and reheating. | 25.5 | MS-S2, SAF-3 | TS-CMB, SC-PROT, SA-HRPR, TS-PRO |
+| FIR-3 | Barbecue and live fire | Building and controlling a charcoal or wood fire; direct grilling of meat, fish, vegetables and bread; indirect roasting; wood smoke as a flavour; low-and-slow barbecue; cooking in the embers; a live-fire meal for guests. Added in Phase 3 (R2). | 28.5 | MS-S2, SAF-3, SLW-3 | TS-FIRE, TS-PRO, TS-CMB, SA-PHYS |
+| GRD-3 | Cold kitchen (*garde manger*) | Composed and leafy salads; dressings and cold sauces; cured fish (*gravad*); terrines and pâtés introduced; cold platters. | 25.5 | MS-S2 | TS-GRD, FL-TEXT, CR-COMP |
+| SAF-3 | Food safety II | High-risk processes: cooling large batches, sous vide pasteurisation, botulism and acidity, curing salts, fermentation safety; HACCP-style thinking at home. | 7 | MS-S2 | SA-HRPR, SA-TEMP, SC-MICR |
+| PRS-3 | Preservation | Quick and canned pickles (tested methods only); lacto-fermentation; salt curing; drying; jams and fruit preserves; confit; using preserves in cooking. | 23.5 | SAF-3 | TS-PRS, SA-HRPR, SC-MICR, KM-WAST |
+| PST-3 | Pastry II | Choux; rough puff and laminated dough introduced; sweet and savoury tarts; creams (*crème anglaise*, *crème pâtissière* and variants); mousses; chocolate basics and tempering introduced. | 33.5 | MS-S2 | TS-BAK, IN-BAK, SC-EMUL |
+| BRD-3 | Bread II | Preferments; a sourdough culture; hydration; shaping and scoring; whole grain and rye; a baking schedule around a working week. | 24 | MS-S2 | TS-BRD, KM-PLAN |
+| CUI-3 | World cuisines I | The logic of 8 traditions (pantry, core techniques, flavour profile, meal structure, history), each taught through history and pantry, two signature techniques and a meal (12 h each, Phase 3). The eight: French regional, Italian, Iberian, Levantine and North African, Indian subcontinent, Chinese, Japanese, Mexican (§13.2 Q3). Dutch and Northern European cooking gets no course of its own; it appears where it fits, for example in vegetables, preserving and bread. | 99 | MS-S2, FLV-3 | CK-CUIS, FL-ARCH, IN-ARO, JD-CHSE |
+| KMG-3 | Kitchen management | Weekly planning; purchasing and quantities; cost per portion and budget; yield; batch cooking and turning leftovers into new dishes; freezer management; reducing waste. | 19.5 | MS-S2 | KM-PLAN, KM-PURC, KM-WAST, KM-MATH |
+| NUT-3 | Applied nutrition and allergens | Macronutrients and their role in cooking; balanced meals; adapting to diets (vegetarian, vegan, gluten-free, lower salt); the 14 EU allergens and cross-contact [S23]. | 14 | MS-S2 | SA-ALLG, RD-ADPT |
+| VEG-3 | Vegetables II: vegetable-led cooking | Vegetables as the main event: whole-roasting, charring, salt-baking, glazing, confit; purées and vegetable emulsions; fermented and pickled vegetables used in cooking; satisfying plant-based dishes (umami, fat, texture, protein); composing a plate around a vegetable; cooking a vegetable through its whole season. Added after review (§13.2 Q7). | 24.5 | MS-S2, FLV-3 | TS-VEG, IN-VEG, FL-ARCH, FL-TEXT, CR-COMP |
 | MS-S3 | *Milestone S3* | §6.2 | 20 | all S3 | |
-| | **Total** | | **270** | | |
+| | **Total** | | **396** | | |
 
-### 7.4 S4 — Advanced (210 h)
+### 7.4 S4 — Advanced (248.5 h)
 
 | ID | Course | Purpose | Hours | Prerequisites | Main competencies |
 |---|---|---|---|---|---|
-| CLS-4 | Classical French repertoire | The classical sauce system and its derivatives; demi-glace (domestic version); classical preparations and garnishes; naming; how classical cuisine became modern cuisine [S11]. | 30 | MS-S3 | CK-CLAS, TS-SAU, TS-STK, CK-TERM |
-| CUI-4 | World cuisines II: deep dives | The learner picks **3 traditions** (from `CUI-3` or new ones, about 10 h each): pantry depth, signature techniques, a regional menu. | 30 | MS-S3 | CK-CUIS, JD-CHSE, FL-ARCH |
-| PRO-4 | Advanced proteins | Duck and game birds; game; offal; whole fish; shellfish (crab, lobster, scallops, squid); precise doneness under different methods. | 24 | MS-S3 | TS-PRO, IN-MEA, IN-FSH, TS-FAB |
-| PST-4 | Advanced pastry and plated desserts | Meringues; ice cream and sorbet (with and without a machine); sugar stages and caramel; layered desserts introduced; building a plated dessert. | 26 | MS-S3 | TS-BAK, TS-PLT, FL-TEXT |
-| MOD-4 | Modern techniques | Precision cooking (sous vide II); hydrocolloids (agar, gelatin, xanthan); gels, foams and airs; dehydration; when modern technique adds value. | 16 | MS-S3 | TS-MOD, SC-EMUL |
+| CLS-4 | Classical French repertoire | The classical sauce system and its derivatives; demi-glace (domestic version); classical preparations and garnishes; naming; how classical cuisine became modern cuisine [S11]. | 35.5 | MS-S3 | CK-CLAS, TS-SAU, TS-STK, CK-TERM |
+| CUI-4 | World cuisines II: deep dives | The learner picks **3 traditions** (from `CUI-3` or new ones, about 10 h each): pantry depth, signature techniques, a regional menu. | 42 | MS-S3 | CK-CUIS, JD-CHSE, FL-ARCH |
+| PRO-4 | Advanced proteins | Duck and game birds; game; offal; whole fish; shellfish (crab, lobster, scallops, squid); precise doneness under different methods. | 31.5 | MS-S3 | TS-PRO, IN-MEA, IN-FSH, TS-FAB |
+| PST-4 | Advanced pastry and plated desserts | Meringues; ice cream and sorbet (with and without a machine); sugar stages and caramel; layered desserts introduced; building a plated dessert. | 30 | MS-S3 | TS-BAK, TS-PLT, FL-TEXT |
+| MOD-4 | Modern techniques | Precision cooking (sous vide II); hydrocolloids (agar, gelatin, xanthan); gels, foams and airs; dehydration; when modern technique adds value. | 17 | MS-S3 | TS-MOD, SC-EMUL |
 | PLT-4 | Presentation and plating | Visual composition: colour, height, negative space, plate choice, saucing, portion size; styles (classical, family-style, modern); food photography for evidence. | 14 | MS-S3 | TS-PLT, CR-COMP |
-| RDV-4 | Recipe development | Working from ratios; deconstructing dishes; substitution and adaptation; test plans; writing reproducible recipes. | 22 | MS-S3 | RD-RATO, RD-ADPT, RD-TEST, RD-WRIT |
-| MNU-4 | Menu design and multi-course execution | Menu progression and balance; seasonal and themed menus; quantities and procurement; backwards timelines; hosting and service at home; beverage basics and food–drink pairing, alcoholic and non-alcoholic (required module, after CIA HOSP-355 [S1]). | 28 | PLT-4, RDV-4, KMG-3 | CR-MENU, KM-PLAN, KM-PURC, CK-BEVR |
+| RDV-4 | Recipe development | Working from ratios; deconstructing dishes; substitution and adaptation; test plans; writing reproducible recipes. | 25 | MS-S3 | RD-RATO, RD-ADPT, RD-TEST, RD-WRIT |
+| MNU-4 | Menu design and multi-course execution | Menu progression and balance; seasonal and themed menus; quantities and procurement; backwards timelines; hosting and service at home; beverage basics and food–drink pairing, alcoholic and non-alcoholic (required module, after CIA HOSP-355 [S1]). | 33.5 | PLT-4, RDV-4, KMG-3 | CR-MENU, KM-PLAN, KM-PURC, CK-BEVR |
 | MS-S4 | *Milestone S4* | §6.2 | 20 | all S4 | |
-| | **Total** | | **210** | | |
+| | **Total** | | **248.5** | | |
 
-### 7.5 S5 — Mastery and independence (110 h)
+### 7.5 S5 — Mastery and independence (147.5 h)
 
 | ID | Course | Purpose | Hours | Prerequisites | Main competencies |
 |---|---|---|---|---|---|
-| IND-5 | Cooking without recipes | A series of briefs: mystery basket, cooking from the pantry, recreating a dish from a written or tasted description, constraint challenges (time, equipment, diet), a troubleshooting clinic. | 40 | MS-S4 | JD-CHSE, CR-IMPV, FL-CORR, JD-TRBL |
-| RDV-5 | Original recipe portfolio | Develop, test and document at least 6 original dishes across categories, with test logs and final recipes. | 24 | MS-S4 | CR-ORIG, RD-TEST, RD-WRIT |
-| REV-5 | Consolidation | Targeted repetition of the competencies that are still below target, chosen from the learner's own record. | 6 | MS-S4 | (personal) |
-| CAP-5 | *Capstone* | §10.5 | 40 | IND-5, RDV-5, REV-5 | all |
-| | **Total** | | **110** | | |
+| IND-5 | Cooking without recipes | A series of briefs: mystery basket, cooking from the pantry, recreating a dish from a written or tasted description, constraint challenges (time, equipment, diet), a troubleshooting clinic. | 43.5 | MS-S4 | JD-CHSE, CR-IMPV, FL-CORR, JD-TRBL |
+| RDV-5 | Original recipe portfolio | Develop, test and document at least 6 original dishes across categories, with test logs and final recipes. | 38 | MS-S4 | CR-ORIG, RD-TEST, RD-WRIT |
+| REV-5 | Consolidation | Targeted repetition of the competencies that are still below target, chosen from the learner's own record. | 15 | MS-S4 | (personal) |
+| CAP-5 | *Capstone* | §10.5 | 51 | IND-5, RDV-5, REV-5 | all |
+| | **Total** | | **147.5** | | |
 
 ---
 
@@ -707,22 +715,26 @@ Phase 4 adds the full mapping.
 
 | Stage | Hours | Share | Weeks at 6.5 h/wk | Weeks at 5 h | Weeks at 8 h |
 |---|---|---|---|---|---|
-| S1 | 170 | 17 % | 26 | 34 | 21 |
-| S2 | 260 | 25 % | 40 | 52 | 33 |
-| S3 | 270 | 26 % | 42 | 54 | 34 |
-| S4 | 210 | 21 % | 32 | 42 | 26 |
-| S5 | 110 | 11 % | 17 | 22 | 14 |
-| **Core** | **1,020** | 100 % | **~157 (≈ 3.4 years at 46 wk/yr)** | 204 (≈ 4.4 yr) | 128 (≈ 2.8 yr) |
+| S1 | 200.5 | 16 % | 31 | 40 | 25 |
+| S2 | 285 | 22 % | 44 | 57 | 36 |
+| S3 | 396 | 31 % | 61 | 79 | 50 |
+| S4 | 248.5 | 19 % | 38 | 50 | 31 |
+| S5 | 147.5 | 12 % | 23 | 30 | 18 |
+| **Core** | **1,277.5** | 100 % | **~197 (≈ 4.3 years at 46 wk/yr)** | 256 (≈ 5.6 yr) | 160 (≈ 3.5 yr) |
 | Specializations | 40–120 h each | | | | |
+
+The hours are **active** hours: the time the learner is studying, cooking, tasting or writing. Waiting time (a
+stock simmering, dough proving, a ferment working) is recorded separately per lesson as *elapsed* time and is not
+counted (Phase 3 §4.2). Phase 3 replaced the original estimate of 1,020 h with this lesson-by-lesson one.
 
 ### 8.2 How the hours are spent (core, approximate)
 
 | Activity | Share | About | Notes |
 |---|---|---|---|
-| Theory (reading, video, quizzes) | 20 % | 204 h | Mostly short blocks (10–30 min) that fit on a phone. |
-| Practical cooking | 60 % | 612 h | About 70 % of it eaten as household meals (A3). |
-| Planning, journaling, reflection | 10 % | 102 h | Plan and evaluation for every practical. |
-| Assessment (course checks, milestones, capstone) | 10 % | 102 h | Milestones and the capstone total 102 h. |
+| Theory (reading, video, quizzes) | 20 % | 255 h | Mostly short blocks (10–30 min) that fit on a phone. |
+| Practical cooking | 61 % | 780 h | About 720 practical sessions; about 70 % of them eaten as household meals (A3). |
+| Planning, journaling, reflection | 10 % | 128 h | Plan and evaluation for every practical. |
+| Assessment (milestones, capstone) | 9 % | 114.5 h | Module checks are inside the course hours. |
 
 A typical week at 6.5 h: one or two short theory blocks (about 1–1.5 h), two or three practical sessions (about 4 h,
 mostly weeknight dinners plus one longer weekend session), and journaling (about 0.5–1 h).
@@ -765,7 +777,7 @@ Good = supermarket butter, Best = cultured butter from a dairy or cheese shop), 
 |---|---|---|---|
 | 0 | S1 | Chef's knife (20 cm), paring knife, bread knife, large stable board, honing steel; heavy stainless sauté pan, carbon-steel or cast-iron skillet, 2 saucepans, stockpot or large pot, sheet pans; a digital scale (1 g); an instant-read thermometer; an oven thermometer; bowls, sieve, whisk, spatulas, tongs. | Without the oven thermometer, oven temperatures can be off by tens of degrees. It is cheap and essential. |
 | 1 | S2 | A heavy lidded casserole (*braadpan* / Dutch oven); fine sieve; whetstone; a hand or stand mixer; mixing bowls; a loaf tin and tart tin; rolling pin; a bench scraper; a frying thermometer; a baking stone or steel (optional). | A Dutch oven can stand in for a baking stone and for steam when baking bread. |
-| 2 | S3 | A sous vide circulator; zip-top or vacuum bags; fermentation jars and weights; a 0.01 g scale (curing salts); pH strips (optional); a mandoline with a guard; a pressure cooker (optional). | Without a circulator, the sous vide lessons use the stove-top water-bath method, with temperature limits explained. |
+| 2 | S3 | A sous vide circulator; zip-top or vacuum bags; fermentation jars and weights; a 0.01 g scale (curing salts); pH strips (optional); a mandoline with a guard; a pressure cooker (optional); for `FIR-3`, a lidded charcoal grill, a chimney starter and heat-resistant gloves. | Without a circulator, the sous vide lessons use the stove-top water-bath method, with temperature limits explained. Without outdoor space, `FIR-3` uses a grill pan and the oven grill: browning is taught, fire control is not, and `TS-FIRE` stops at level 2. |
 | 3 | S4 | Kitchen blowtorch; piping bags and tips; an ice-cream machine (optional); a whipping siphon (optional); hydrocolloid starter set; plating tools. | Ice cream is taught still-frozen (no machine) first; the siphon is optional. |
 
 ---
@@ -815,7 +827,7 @@ self-assessed claim that the other evidence contradicts doesn't count.
 
 | ID | Format (summary; full brief in Phase 4) | Hours |
 |---|---|---|
-| MS-S1 | Timed mise en place with measured cuts; a two-component meal from a recipe; a salt and acid calibration test; a safety and knowledge quiz. | 6 |
+| MS-S1 | Timed mise en place with measured cuts; a two-component meal from a recipe; a salt and acid calibration test; a safety and knowledge quiz; a stage reflection (added in Phase 3). | 7 |
 | MS-S2 | A three-component plate from a brief with a framework (protein to a stated doneness, sauce, vegetable and starch); a baked item; a science and safety quiz; reflection. | 16 |
 | MS-S3 | A costed week plan using whole ingredients and a preserve; a two-course evening without a full recipe; a flavour-correction test; reflection. | 20 |
 | MS-S4 | A three-course dinner for guests within a theme: menu, quantities, cost, timeline, plating photos, guest cards, a written post-mortem. | 20 |
@@ -912,11 +924,11 @@ competencies above the core targets. They don't change the core.
 1. **Five stages** (Foundations → Core techniques → Integration → Advanced → Mastery). This matches the brief's
    example, and the stages are defined by the dominant mode of learning (habits → techniques → combination → refinement →
    independence).
-2. **About 1,020 core hours over about 3.4 years** at 6.5 h/week, with specializations on top. The hours buy breadth
+2. **About 1,020 core hours over about 3.4 years** at 6.5 h/week (revised in Phase 3 to 1,277.5 h, about 4.3 years), with specializations on top. The hours buy breadth
    comparable to a professional program's culinary content [S1], minus professional production and operations, plus
    the extra repetition a self-taught learner needs.
-3. **44 core courses** with stable `AAA-n` IDs, plus 4 milestones and a capstone.
-4. **66 competencies in 10 domains**, with explicit level targets per stage. Not everything aims at level 5.
+3. **44 core courses** (45 after Phase 3) with stable `AAA-n` IDs, plus 4 milestones and a capstone.
+4. **66 competencies in 10 domains** (67 after Phase 3), with explicit level targets per stage. Not everything aims at level 5.
 5. **Threads** (safety, tasting, journal, knife, science, terminology) run through every stage and are re-assessed at
    every milestone.
 6. **Food safety cannot be compensated** at any gate.
@@ -990,3 +1002,16 @@ Learning pathway (core; each specialization)
    `SAU-2` and `BAK-2`).
 4. Keep hour budgets per course within ±10 %. If a course overflows, document the change instead of absorbing it
    silently.
+
+### 13.5 Phase 3 revisions (2026-11-04)
+
+Phase 3 ([`03-validation.md`](03-validation.md)) changed this document as follows; its §6 has the full change log.
+
+| Change | Where here |
+|---|---|
+| Course hours re-estimated lesson by lesson: the core grows from 1,020 h to **1,277.5 h** (about 4.3 years at 6.5 h/week). Hours are now active hours; waiting time is recorded separately. | §3.3, §6.1, §7 (every course), §8 |
+| New course **`FIR-3` *Barbecue and live fire*** (S3, 28.5 h) after the reviewer's answer on thin subjects. | §6.2, §6.4, §7, §9.4 (grill items in tier 2) |
+| New competency **`TS-FIRE`** (target 4): 67 competencies, 40 of them targeting level 4. | §5.3 |
+| `MS-S1` gets a stage reflection (6 → 7 h). | §10.4 |
+| The CIA hour comparison rests on its credit-hour definition [S32]. | §3.3 |
+

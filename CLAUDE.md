@@ -22,7 +22,7 @@ web app was removed; its last version is commit `e76778c` (`git show e76778c:web
 python3 tools/validate_data.py                   # validate data/ (also runs automatically after edits under data/)
 python3 tools/validate_data.py --write-fixtures  # regenerate the seasonality and legacy fixtures after intended edits
 python3 -m unittest discover -s tools            # tests for the Python tools (legacy converter, curriculum validator)
-python3 tools/validate_curriculum.py [--write]    # check curriculum/ (IDs, hours, prerequisites, coverage); --write regenerates its tables
+python3 tools/validate_curriculum.py [--write]    # check curriculum/ (IDs, hours, prerequisites, coverage, practice); --write regenerates its tables
 ./gradlew lint ktlintCheck testDebugUnitTest :lint-checks:test assembleDebug   # the CI gate (spec §16–17)
 ./gradlew ktlintFormat                           # fix formatting (ktlint_official style)
 ./gradlew testDebugUnitTest --tests '*SeasonalityTest*'   # one test class

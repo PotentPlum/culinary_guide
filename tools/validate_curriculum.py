@@ -2,7 +2,8 @@
 """Validate the curriculum outline in curriculum/ (stdlib only).
 
 Phase 1 (curriculum/01-vision-architecture.md) defines the competencies, their target level per stage, and the
-courses with their hour budgets. Phase 2 (curriculum/02-outline/S*.md) breaks every course into modules and lessons.
+courses with their hour budgets (as revised in Phase 3). Phase 2 (curriculum/02-outline/S*.md) breaks every course into
+modules and lessons; each lesson row gives its active hours, its number of practical sessions and its elapsed time.
 This script checks that the two agree:
 
 - IDs are well formed, unique, and nested correctly (course > module > lesson / exercise).
@@ -13,7 +14,10 @@ This script checks that the two agree:
   (transitive) course prerequisite.
 - Every competency referenced exists; by the end of each stage, the lessons reach every Phase 1 target level.
   Milestone components re-test competencies and don't count towards coverage.
-- Every module has at least one practical exercise and an assessment line.
+- Practice: every level the lessons claim is backed by enough practical sessions (Phase 3 §4.3): the Phase 1 §10.3
+  demonstrations plus the sessions needed to learn the step.
+- Every module has at least one practical exercise and an assessment line; every competency is re-tested in at least
+  one milestone or the capstone.
 - Relative links and [S#] source references resolve.
 
 The generated tables in curriculum/02-curriculum-outline.md (between `<!-- BEGIN generated:NAME -->` and
@@ -35,6 +39,13 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent / "curriculum"
 STAGES = ("S1", "S2", "S3", "S4", "S5")
 DRIFT = 0.10
+LESSON_HOURS = (0.5, 6)
+#: Weekly study time (Phase 1 A2) used for the load table: low, planned, high.
+WEEKLY = (5, 6.5, 8)
+ACTIVE_WEEKS = 46
+#: Practical sessions needed, counted over all lessons that move a competency, before a level counts as taught
+#: (Phase 3 §4.3): the §10.3 demonstrations (L3 2, L4 3, L5 5) plus the learning sessions before them.
+PRACTICE_NEEDED = {0: 0, 1: 0, 2: 1, 3: 3, 4: 5, 5: 8}
 #: Phase 1 §6.6 share of exercises per support level (recipe, framework, brief), in percent.
 SUPPORT_TARGET = {
     "S1": (70, 30, 0),
@@ -50,7 +61,10 @@ COMP = r"[A-Z]{2}-[A-Z]{3,4}"
 COURSE = r"(?:[A-Z]{3}-\d|MS-S\d|CAP-5)"
 COURSE_RE = re.compile(rf"^### ({COURSE}) — (.+) \((\d+(?:\.\d+)?) h\)$")
 MODULE_RE = re.compile(rf"^#### ({COURSE}\.M\d+) — (.+) \((\d+(?:\.\d+)?) h\)$")
-LESSON_RE = re.compile(rf"^\| ({COURSE}\.M\d+\.L\d+) \| (.+?) \| (.+?) \| (.+?) \| (\d+(?:\.\d+)?) \| (.+?) \|$")
+LESSON_RE = re.compile(
+    rf"^\| ({COURSE}\.M\d+\.L\d+) \| (.+?) \| (.+?) \| (.+?) \| (\d+(?:\.\d+)?) \| (\d+) \| (.+?) \| (.+?) \|$"
+)
+ELAPSED_RE = re.compile(r"^(—|\d+(?:\.\d+)? (?:h|d|wk))$")
 EXERCISE_RE = re.compile(rf"^- `({COURSE}\.M\d+\.X\d+)` \*([a-z]+), ([a-z]+)\* — .+$")
 PREREQ_RE = re.compile(r"^\*\*Prerequisites:\*\* (.+)$")
 MOVE_RE = re.compile(rf"^({COMP})→([1-5])$")
@@ -63,6 +77,8 @@ class Lesson:
     title: str
     prereqs: list[str]
     hours: float
+    practice: int
+    elapsed: str
     moves: dict[str, int]
     order: int
 
@@ -177,8 +193,20 @@ def parse_stage(path: Path, stage: str, start_order: int, report: Report) -> lis
                 report.error(f"{where}: lesson {m.group(1)} is not inside its module")
                 continue
             order += 1
+            elapsed = m.group(7).strip()
+            if not ELAPSED_RE.match(elapsed):
+                report.error(f"{where}: bad elapsed time {elapsed!r} (expected — or e.g. 5 h, 2 d, 3 wk)")
             module.lessons.append(
-                Lesson(m.group(1), m.group(2), split_ids(m.group(4)), number(m.group(5)), parse_moves(m.group(6), where, report), order)
+                Lesson(
+                    m.group(1),
+                    m.group(2),
+                    split_ids(m.group(4)),
+                    number(m.group(5)),
+                    int(m.group(6)),
+                    elapsed,
+                    parse_moves(m.group(8), where, report),
+                    order,
+                )
             )
         elif m := EXERCISE_RE.match(line):
             if module is None or not m.group(1).startswith(module.id + "."):
@@ -259,8 +287,10 @@ def check(root: Path) -> tuple[Report, dict[str, list[Course]], Phase1]:
                     if not module.has_assessment:
                         report.error(f"{module.id}: has no **Assessment:** line")
                 for lesson in module.lessons:
-                    if not 0.5 <= lesson.hours <= 4:
-                        report.warn(f"{lesson.id}: {fmt(lesson.hours)} h is outside the 0.5–4 h lesson range")
+                    if not LESSON_HOURS[0] <= lesson.hours <= LESSON_HOURS[1]:
+                        report.warn(f"{lesson.id}: {fmt(lesson.hours)} h is outside the 0.5–6 h lesson range")
+                    if lesson.practice and lesson.hours < 0.5 * lesson.practice:
+                        report.error(f"{lesson.id}: {lesson.practice} practical sessions don't fit in {fmt(lesson.hours)} h")
             budget = phase1.budgets.get(course.id)
             if budget is None:
                 report.error(f"{course.id}: not in the Phase 1 course tables")
@@ -330,25 +360,34 @@ def check(root: Path) -> tuple[Report, dict[str, list[Course]], Phase1]:
                         if comp not in phase1.targets:
                             report.error(f"{lesson.id}: unknown competency {comp}")
 
-    # Coverage.
-    reached: dict[str, list[int]] = {comp: [0] * len(STAGES) for comp in phase1.targets}
-    best = {comp: 0 for comp in phase1.targets}
-    for index, stage in enumerate(STAGES):
-        for course in stages.get(stage, []):
-            if course.is_milestone:
-                continue
-            for module in course.modules:
-                for lesson in module.lessons:
-                    for comp, level in lesson.moves.items():
-                        if comp in best:
-                            best[comp] = max(best[comp], level)
-        for comp in phase1.targets:
-            reached[comp][index] = best[comp]
-        if stage in stages:
-            for comp, levels in phase1.targets.items():
-                target = levels[index]
-                if target is not None and best[comp] < target:
-                    report.error(f"coverage: {comp} reaches {best[comp]} by the end of {stage}, target {target}")
+    # Coverage and practice.
+    for index, (stage, best, practice) in enumerate(progress(stages, phase1)):
+        if stage not in stages:
+            continue
+        for comp, levels in phase1.targets.items():
+            target = levels[index]
+            if target is not None and best[comp] < target:
+                report.error(f"coverage: {comp} reaches {best[comp]} by the end of {stage}, target {target}")
+            needed = PRACTICE_NEEDED[best[comp]]
+            if practice[comp] < needed:
+                report.error(
+                    f"practice: {comp} is taught to level {best[comp]} by the end of {stage} with {practice[comp]} "
+                    f"practical session(s); level {best[comp]} needs {needed}"
+                )
+
+    # Every competency is re-tested at a milestone or the capstone, once all stages exist.
+    if len(stages) == len(STAGES):
+        retested = {
+            comp
+            for courses in stages.values()
+            for course in courses
+            if course.is_milestone
+            for module in course.modules
+            for lesson in module.lessons
+            for comp in lesson.moves
+        }
+        for comp in sorted(set(phase1.targets) - retested):
+            report.error(f"assessment: {comp} is not re-tested in any milestone or the capstone")
 
     # Sources and links.
     sources = set(re.findall(r"^\| (S\d+) \|", (root / "sources.md").read_text(encoding="utf-8"), re.M))
@@ -363,29 +402,14 @@ def check(root: Path) -> tuple[Report, dict[str, list[Course]], Phase1]:
     return report, stages, phase1
 
 
-def generated_tables(stages: dict[str, list[Course]], phase1: Phase1) -> dict[str, str]:
-    lines = ["| Stage | Course | Title | Modules | Lessons | Phase 1 h | Phase 2 h | Drift |", "|---|---|---|---|---|---|---|---|"]
-    totals = {"modules": 0, "lessons": 0, "p1": 0.0, "p2": 0.0}
-    for stage, courses in stages.items():
-        for course in courses:
-            lesson_count = sum(len(m.lessons) for m in course.modules)
-            p1 = phase1.budgets.get(course.id, (stage, 0.0))[1]
-            drift = course.hours - p1
-            lines.append(
-                f"| {stage} | `{course.id}` | {course.title} | {len(course.modules)} | {lesson_count} | {fmt(p1)} | "
-                f"{fmt(course.hours)} | {'±0' if drift == 0 else f'{drift:+g}'} |"
-            )
-            totals["modules"] += len(course.modules)
-            totals["lessons"] += lesson_count
-            totals["p1"] += p1
-            totals["p2"] += course.hours
-    lines.append(
-        f"| | | **Total** | **{totals['modules']}** | **{totals['lessons']}** | **{fmt(totals['p1'])}** | **{fmt(totals['p2'])}** | |"
-    )
-    summary = "\n".join(lines)
+def progress(stages: dict[str, list[Course]], phase1: Phase1) -> list[tuple[str, dict[str, int], dict[str, int]]]:
+    """Per stage, the highest level each competency is taught to and the practical sessions behind it, cumulatively.
 
-    reached: dict[str, list[int]] = {comp: [] for comp in phase1.targets}
-    best = {comp: 0 for comp in phase1.targets}
+    Milestone components re-test competencies; they count towards neither.
+    """
+    best = dict.fromkeys(phase1.targets, 0)
+    practice = dict.fromkeys(phase1.targets, 0)
+    result = []
     for stage in STAGES:
         for course in stages.get(stage, []):
             if course.is_milestone:
@@ -395,9 +419,42 @@ def generated_tables(stages: dict[str, list[Course]], phase1: Phase1) -> dict[st
                     for comp, level in lesson.moves.items():
                         if comp in best:
                             best[comp] = max(best[comp], level)
-        for comp in phase1.targets:
-            reached[comp].append(best[comp])
-    cov = ["| Competency | " + " | ".join(STAGES) + " |", "|---|" + "---|" * len(STAGES)]
+                            practice[comp] += lesson.practice
+        result.append((stage, dict(best), dict(practice)))
+    return result
+
+
+def generated_tables(stages: dict[str, list[Course]], phase1: Phase1) -> dict[str, str]:
+    lines = [
+        "| Stage | Course | Title | Modules | Lessons | Practical sessions | Budget h | Outline h | Drift |",
+        "|---|---|---|---|---|---|---|---|---|",
+    ]
+    totals = {"modules": 0, "lessons": 0, "practice": 0, "p1": 0.0, "p2": 0.0}
+    for stage, courses in stages.items():
+        for course in courses:
+            lesson_count = sum(len(m.lessons) for m in course.modules)
+            practice = sum(l.practice for m in course.modules for l in m.lessons)
+            p1 = phase1.budgets.get(course.id, (stage, 0.0))[1]
+            drift = course.hours - p1
+            lines.append(
+                f"| {stage} | `{course.id}` | {course.title} | {len(course.modules)} | {lesson_count} | {practice} | {fmt(p1)} | "
+                f"{fmt(course.hours)} | {'±0' if drift == 0 else f'{drift:+g}'} |"
+            )
+            totals["modules"] += len(course.modules)
+            totals["lessons"] += lesson_count
+            totals["practice"] += practice
+            totals["p1"] += p1
+            totals["p2"] += course.hours
+    lines.append(
+        f"| | | **Total** | **{totals['modules']}** | **{totals['lessons']}** | **{totals['practice']}** | "
+        f"**{fmt(totals['p1'])}** | **{fmt(totals['p2'])}** | |"
+    )
+    summary = "\n".join(lines)
+
+    steps = progress(stages, phase1)
+    reached = {comp: [best[comp] for _, best, _ in steps] for comp in phase1.targets}
+    sessions = {comp: [practice[comp] for _, _, practice in steps] for comp in phase1.targets}
+    cov = ["| Competency | " + " | ".join(STAGES) + " | Practical sessions |", "|---|" + "---|" * (len(STAGES) + 1)]
     for comp, levels in phase1.targets.items():
         cells = []
         for index, stage in enumerate(STAGES):
@@ -409,6 +466,8 @@ def generated_tables(stages: dict[str, list[Course]], phase1: Phase1) -> dict[st
             else:
                 mark = "" if reached[comp][index] >= target else " ✗"
                 cells.append(f"{reached[comp][index]} / {target}{mark}")
+        last = max((i for i, s in enumerate(STAGES) if s in stages), default=0)
+        cells.append(f"{sessions[comp][last]} (level {reached[comp][last]} needs {PRACTICE_NEEDED[reached[comp][last]]})")
         cov.append(f"| `{comp}` | " + " | ".join(cells) + " |")
     coverage = "\n".join(cov)
 
@@ -427,7 +486,27 @@ def generated_tables(stages: dict[str, list[Course]], phase1: Phase1) -> dict[st
             f"{target[0]} / {target[1]} / {target[2]} % |"
         )
     support = "\n".join(sup)
-    return {"summary": summary, "coverage": coverage, "support": support}
+
+    load = [
+        "| Stage | Lessons | Active h | Practical sessions | Lessons with ≥ 1 d elapsed | "
+        + " | ".join(f"Weeks at {fmt(w)} h" for w in WEEKLY)
+        + " |",
+        "|---|---|---|---|---|" + "---|" * len(WEEKLY),
+    ]
+    total_hours = 0.0
+    for stage, courses in stages.items():
+        all_lessons = [l for c in courses for m in c.modules for l in m.lessons]
+        hours = sum(c.hours for c in courses)
+        total_hours += hours
+        long_waits = sum(1 for l in all_lessons if l.elapsed.endswith((" d", " wk")))
+        load.append(
+            f"| {stage} | {len(all_lessons)} | {fmt(hours)} | {sum(l.practice for l in all_lessons)} | {long_waits} | "
+            + " | ".join(str(round(hours / w)) for w in WEEKLY)
+            + " |"
+        )
+    years = " | ".join(f"**{round(total_hours / w)}** (≈ {total_hours / w / ACTIVE_WEEKS:.1f} yr)" for w in WEEKLY)
+    load.append(f"| **Core** | | **{fmt(total_hours)}** | | | {years} |")
+    return {"summary": summary, "coverage": coverage, "support": support, "load": "\n".join(load)}
 
 
 def sync_generated(path: Path, tables: dict[str, str], write: bool, report: Report) -> None:
