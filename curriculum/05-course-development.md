@@ -1,9 +1,10 @@
 # Phase 5 — Course development
 
-Status: **S1–S3 reviewed; S4 in progress** (2026-11-04). S1, S2 and S3 are reviewed and their answers applied (§7.3,
-§8.3 and §9.3). S4 is being developed in the same format. S5 follows.
+Status: **S4 ready for review** (2026-11-04). S1, S2 and S3 are reviewed and their answers applied (§7.3, §8.3 and
+§9.3). S4 is developed in the same format; the end of the S4 batch, with its decisions, gaps and questions, is in §10.
+S5 follows.
 
-**Stages developed:** S1, S2, S3
+**Stages developed:** S1, S2, S3, S4
 
 This phase develops every course of the outline in depth. For each course it gives:
 - an introduction;
@@ -203,7 +204,7 @@ each level. ✗ marks a stage target that no exercise up to that stage evidences
 row rests on the quiz alone.
 
 <!-- BEGIN generated:reachability -->
-| Competency | S1 | S2 | S3 | S4 (in progress) | Exercises at L2 · L3 · L4 · L5 |
+| Competency | S1 | S2 | S3 | S4 | Exercises at L2 · L3 · L4 · L5 |
 |---|---|---|---|---|---|
 | `CK-TERM` | 2 (quiz) | 3 | 3 | 4 | 0 · 2 · 2 · 0 |
 | `CK-METH` | 2 | 3 | 4 | 4 | 1 · 2 · 2 · 0 |
@@ -1001,3 +1002,205 @@ Hours, lessons and `Moves` entries are unchanged.
    complete in S5 (`S5-mastery.md`).
 5. **A small validator addition:** extend the ID check to module and lesson IDs named in course files (for example
    `SAU-2.M2` or `FLV-3.M2.L1`), which S3 uses often in its text.
+
+## 10. End of the S4 batch
+
+### 10.1 What was delivered
+
+S4 is developed in eight course files in [`05-courses/S4/`](05-courses/S4/). In total:
+- 84 lesson outlines, each with a session plan that matches the outline's practical sessions;
+- 47 exercise specs, each tagged with the competencies it evidences;
+- 248 knowledge-check items in 31 checks, 51 of them safety items;
+- 94 evidence rows against the Phase 4 success rows.
+
+Nine modules have no quiz:
+- `CLS-4.M5`, `MOD-4.M5` and `PLT-4.M4` have no [K] or [J] objective;
+- `CLS-4.M2`, `PRO-4.M6`, `PLT-4.M2`, `RDV-4.M2`, `RDV-4.M5` and `MNU-4.M6` have only [J] objectives that their evidence
+  shows better than scenario items (decision 7 of §5).
+
+Six modules with only [J] objectives keep a quiz: `PRO-4.M4` (fish safety), `RDV-4.M3` and `RDV-4.M4` (substitution
+and test design are worth checking), `MNU-4.M2` (quantities), and `MNU-4.M3` and `MNU-4.M5`, which move `SA-TEMP` and
+`SA-ALLG` and so need safety items.
+
+Every S4 stage target is evidenced by an exercise at that level, or by the quiz where its success row asks only for the
+quiz (§4). `**Stages developed:**` now reads S1, S2, S3, S4. The milestone `MS-S4` is unchanged
+([assessment §7.4](04-assessment.md#74-ms-s4--advanced-20-h-over-about-two-weeks)).
+
+**The indicative ingredient budget** for the S4 exercises is about **€1,185**, over about 38 weeks at 6.5 hours a week
+(248.5 hours, including `MS-S4`). The largest items are `PRO-4` (€260: duck, game, offal, a whole fish, shellfish),
+`CLS-4` (€230: bones, steaks, a beef fillet, sole), `CUI-4` (€210 for three deep dives) and `MNU-4` (€200, with the
+tastings and the dinner project). Nearly all of it is household and guest meals; the course files give Good options
+throughout.
+
+### 10.2 Decisions and assumptions
+
+1. **New rows in [assessment §9](04-assessment.md#9-safety-figures-used-in-assessment)** (S3 recommendations 2 and 3),
+   each from a source checked on 2026-11-04 and logged in the outline-changes table of §5:
+
+   | Row | Figure | Source |
+   |---|---|---|
+   | Egg-thickened desserts cooked for later | Every part to at least 71 °C, probed | FDA egg safety [S38]; it also meets Food Code §3-401.11(A)(2) [S25] |
+   | Desserts with raw or lightly cooked egg | Pasteurised eggs or egg products, for every guest in S4 | [S38] |
+   | Game animals | Farmed game intact at 63 °C for 15 seconds; wild game (hunted deer, wild boar, hare) at 74 °C | Food Code §3-401.11, §3-201.17 [S25] |
+   | Duck, goose, pigeon and game birds | Poultry: the poultry row or the low-temperature poultry table | Food Code definition of poultry [S25]; [S34] |
+   | Offal | Liver, kidneys and sweetbreads are non-intact meat (for example 66 °C for 1 minute); chicken livers are poultry | Food Code definitions and §3-401.11 [S25] |
+   | Wild boar | Only from carcasses examined for *Trichinella*; cooked as wild game | EU 2015/1375 [S39] |
+   | Live crabs and lobsters | Not dispatched at home: bought cooked or dispatched by a trained fishmonger, cooked without delay | LSE sentience review [S40]; Crustacean Compassion [S41] |
+   | Alcohol in cooking | 5–85 % of the alcohol remains, by method; a dish cooked with alcohol is not alcohol-free | USDA retention factors [S42] |
+   | Alcohol and guests | None under 18, none in pregnancy, not while breastfeeding; a non-alcoholic pairing on every menu | Voedingscentrum [S43] |
+
+   A rule was added for tier 3 equipment: the siphon and the blowtorch are used only as their makers' instructions say,
+   with no pressure or gas figures in the course files. The offal row was added while `PRO-4` was written, when the
+   Food Code's definition of intact meat (whole muscle) showed that liver is not covered by the 63 °C row.
+2. **How the outline's objectives are met under §9:**
+   - **Pink duck and game-bird breasts** (`PRO-4.M1`) are cooked by the low-temperature poultry table (for example 60 °C
+     held for 35 minutes at the core), then crisped. A pan-only rare breast has no row and is not taught, as S3
+     decided.
+   - **The venison loin** (`PRO-4.M2.L1`) is from farmed deer, cooked to 63 °C; wild venison and wild boar are braised to
+     74 °C or more.
+   - **Calf's liver "pink"** (`PRO-4.M3`) is rosy at 66 °C held for 1 minute.
+   - **Translucent fish and scallops** (`PRO-4.M4`, `PRO-4.M5`) only from fish frozen first by the fish row, and never
+     for risk groups.
+   - **Humane dispatch** (`PRO-4.M5`) becomes knowledge, not a skill: an outline change logged in §5.
+   - **Eggs:** custards and Swiss meringue reach 71 °C; Italian meringue and other uncooked uses take pasteurised
+     eggs for every guest (question 3).
+3. **What S4 does not teach:** dispatching live crustaceans; dried meat or jerky (`MOD-4.M5` dries vegetables, fruit
+   and starches only); raw-fish dishes from unfrozen fish; pressure canning; rare beef other than steaks (the steak
+   row).
+4. **`CUI-4` and the learner's choice.** The outline says Phase 5 writes the content for each available tradition. The
+   course file has one 14-hour template, used in all three modules, and a **deep-dive catalogue** in its introduction:
+   for each of the eight `CUI-3` traditions, the regions, the extended pantry, two signature techniques with their §9
+   rows, a menu frame, the equipment (Good and Best) and the Dutch substitutions. `CUI-4.M2` adds a written comparison
+   of two traditions; `CUI-4.M3` is planned from the learner's own entry, so a tradition outside the catalogue is
+   possible there. (The outline's purpose speaks of a "10-hour template"; its lessons add up to 14 hours per module,
+   which the course file follows.)
+5. **Rows that span courses or stages** (decision 6 of §5). Where each part is shown:
+
+   | Row | Parts and where they are shown |
+   |---|---|
+   | `TS-STK` 4 | Stock adapted and soup: `CUI-3.M8.X1`, `CLS-4.M3.X1`. Consommé: `CLS-4.M4.X1`, which completes the row |
+   | `CK-CLAS` 4 | Quiz: the `CLS-4.M3` check. Three preparations from their names: `CLS-4.M5.X1`. Adaptation: `CLS-4.M6.X1` |
+   | `TS-SAU` 5, `FL-SEAS` 5 | Five services: `CLS-4.M3.X1` (three), `CLS-4.M3.X2` (guests and a timed service). Further: `MNU-4.M4.X1`; re-tested at `MS-S4` |
+   | `TS-PRO` 5 | Five services: `PRO-4.M2.X1`, `PRO-4.M3.X1`, `PRO-4.M4.X1`, `PRO-4.M5.X2`, `PRO-4.M6.X1` (with the note on faults) |
+   | `IN-MEA` 4 | Substitutions: `PRO-4.M1.X1`, `PRO-4.M3.X1`. Less common cuts: duck, game birds, offal |
+   | `IN-FSH` 4 | Substitutions and sustainability: `PRO-4.M4.X1`. Shellfish choice: `PRO-4.M5.X1` |
+   | `SA-TEMP` 5 | Five productions and a cooling plan: `PRO-4.M5.X1`. Re-tested with guests: `MNU-4.M3.X1`, `MS-S4.M1.L3` |
+   | `IN-BAK` 4 | Substitution one: `PST-4.M1.X1`. Substitution two: `PST-4.M2.X1` |
+   | `RD-RATO` 4 | Sweet formulas: `PST-4.M2.X1`. Savoury formulas: `RDV-4.M1.X1` |
+   | `FL-TEXT` 4 | Dish one: `PST-4.M2.X1`. Dish two and the menu: `PST-4.M5.X1`. Dish three: `MOD-4.M4.X1`; further `MOD-4.M5.X1` |
+   | `CR-COMP` 4 | Dish one: `PST-4.M5.X1`. Dishes two and three: `PLT-4.M3.X1` |
+   | `TS-PLT` 4 | Courses: `PST-4.M5.X1`, `PLT-4.M2.X1`, `PLT-4.M3.X1`. AI-review photos: `PLT-4.M4.X1`. For 6–8: `MNU-4.M3.X1` |
+   | `TS-MOD` 2 | Egg in a dish: `MOD-4.M2.X1`. Gel: `MOD-4.M3.X1`. Foam and xanthan sauce: `MOD-4.M4.X1`. Crisps: `MOD-4.M5.X1` |
+   | `SC-EMUL` 4 | Gel: `MOD-4.M3.X1`. Foam: `MOD-4.M4.X1` |
+   | `KM-EQPT` 4 | Calibration and workaround: `MOD-4.M2.X1`. Equipment plan for a guest dinner: `MNU-4.M3.X1` |
+   | `JD-CHSE` 4 | Dishes from a description: `MOD-4.M1.X1`, `RDV-4.M2.X1`, and two in each regional menu of `CUI-4` |
+   | `FL-ARCH` 4 | New combinations: `CLS-4.M6.X1`, `PRO-4.M2.X1`, `RDV-4.M2.X1`, and two in each deep dive of `CUI-4` |
+   | `CK-CUIS` 4 | Three regional meals: `CUI-4.M1.X2`, `CUI-4.M2.X2` (with the comparison), `CUI-4.M3.X2` |
+   | `IN-ARO` 4 | Blind and correction parts: S3. A blend per tradition: `CUI-4.M1.X1`, `CUI-4.M2.X1`, `CUI-4.M3.X1` |
+   | `KM-PLAN` 4 | Make-ahead plan: `MNU-4.M2.X1`. Timeline: `MNU-4.M3.X1`. Followed in the log: `MNU-4.M6.X1` |
+   | `CR-MENU` 4 | Menus: `MNU-4.M1.X1`. The guests' cards: `MNU-4.M6.X1` |
+   | `JD-REFL` 4 | The stage reflection began in `KMG-3.M5.X1`. Patterns and plans: `PRO-4.M6.X1`, `PLT-4.M4.X1`, `MNU-4.M5.X1`. Plans checked: `PLT-4.M4.X1`, `MNU-4.M5.X1`. Completed at `MS-S4.M1.L6` |
+   | `TS-FIRE` 4, `SA-HYG` 5, `SA-PHYS` 5 | Not moved in S4; completed in S5 (`IND-5`, `CAP-5`) |
+
+6. **Validator addition** (S3 recommendation 5): every module and lesson ID named in a course file must be in the
+   outline, and a named lesson of a developed stage must have its outline. It found no drifted reference in S1–S3.
+7. **Lesson titles.** Some S4 lesson headings were first drafted with other words than the outline's titles (`PLT-4`,
+   `RDV-4`, `MNU-4`); they were set back to the outline's titles before committing. S1–S3 differ from the outline only
+   in italics.
+8. **Assumptions,** as before:
+   - prices are rough;
+   - produce follows the Dutch seasons; fish is MSC-labelled or seasonal North Sea fish; game is in season from a game
+     supplier; pantry goods of `CUI-4` come from specialist shops, and every substitution is named in its exercise;
+   - nuts are replaced by seeds by default (`PST-4.M3`, `CUI-4`);
+   - Dutch fruit in season appears in desserts (`PST-4`), as in `BAK-2` and `PST-3`;
+   - alcohol is tasted, not drunk; the alcohol-free route through `MNU-4.M4` is complete on its own;
+   - reference images are to be made in Phase 6.
+
+**Exercise scope notes for S4** (the outline's one-line description is kept; the spec does more so its module can meet
+the Phase 4 success rows):
+- **`CLS-4`:**
+  - `M1.X1` adds six derivatives explained and two made, and an own menu and two recipes in classical terms;
+  - `M2.X1` runs five sessions over eight weeks with a teaching note; `M2.X2` is the first of five vegetable-led
+    courses;
+  - `M3.X1` adds the stock adapted to the bones and blind seasoning cards; `M3.X2` adds a fifth, timed service;
+  - `M4.X1` adds the soup course and a gelatin prediction;
+  - `M5.X1` adds three preparations from their names and four proteins probed after a written cue;
+  - `M6.X1` adds a second new combination.
+- **`PRO-4`:**
+  - `M1.X1` adds four proteins probed after cues and two cut substitutions;
+  - `M2.X1` to `M6.X1` (with `M5.X2`) are the five `TS-PRO` services; `M2.X1` adds two flavour combinations;
+  - `M3.X1` adds a substitution within offal;
+  - `M4.X1` adds filleting at the table, species substitutions and the prediction log to ten entries;
+  - `M5.X1` adds the five production logs and a cooling plan;
+  - `M6.X1` adds the pattern and practice plan.
+- **`PST-4`:**
+  - `M1.X1` and `M2.X1` each add a formula substitution; `M2.X1` serves the ice cream and sorbet as one dish with a named
+    contrast;
+  - `M3.X1` adds three caramel colours named in advance;
+  - `M5.X1` closes a three-course menu with contrasts named for every course.
+- **`MOD-4`:**
+  - `M1.X1` adds a dish recreated from a description;
+  - `M2.X1` adds an egg texture used in a dish, the calibration and a workaround;
+  - `M3.X1` and `M4.X1` add stated textures and timed stability checks; `M4.X1` makes both a foam and a xanthan sauce and
+    names a texture contrast.
+- **`PLT-4`:**
+  - `M2.X1` uses the best saucing on a course for four guests;
+  - `M3.X1` plates the formal version for four guests with written ideas for both versions;
+  - `M4.X1` re-shoots the three courses and reviews the photo record and the doneness plan.
+- **`RDV-4`:**
+  - `M1.X1` adds two savoury formulas and a costed week;
+  - `M2.X1` adds two new combinations and three improvised meals;
+  - `M3.X1` adds a dish adapted for an allergen or diet;
+  - `M4.X1` adds three recipes repeated a week later;
+  - `M5.X1` adds a second recipe cooked by someone else.
+- **`CUI-4`:** in each deep dive, `X1` makes the second practice of each technique a predicted new combination and adds
+  a spice blend; `X2` recreates two dishes from descriptions; `M2.X2` adds the comparison of two traditions.
+- **`MNU-4`:**
+  - `M1.X1` adds drinks and a dietary need to every menu;
+  - `M2.X1` adds the purchase reconciliation and the logged control points;
+  - `M3.X1` adds the equipment plan, the five productions, the cooling plan and a course plated for six to eight;
+  - `M4.X1` adds seasoning adjusted for the pairing, judged blind;
+  - `M5.X1` adds a guest with an allergen and the stage review.
+
+Hours, lessons and `Moves` entries are unchanged.
+
+### 10.3 Gaps and open questions
+
+1. **The new §9 rows** (decision 1) and how the outline's objectives are met under them (decision 2).
+   - Option 1: keep them as written. This is my recommendation: each comes from a checked source, and where the home
+     rule is stricter than habit (wild game at 74 °C, duck pink only by the poultry table, no home dispatch of
+     crustaceans), the stricter one is taught.
+   - Option 2: remove some, and drop or rewrite the lessons that rest on them.
+2. **Crustaceans** (the outline change to `PRO-4.M5`). Two checked welfare sources say humane dispatch can't reliably be
+   done at home.
+   - Option 1: keep dispatch as knowledge, with crab and lobster bought cooked or dispatched by the fishmonger. This is my
+     recommendation.
+   - Option 2: restore the skill (double spiking, whole-body splitting), with the welfare risk the sources describe.
+3. **Raw egg in one rule or two.** S4 uses pasteurised eggs for every guest where egg is served raw or lightly cooked
+   (the FDA's consumer advice [S38]); the raw-yolk sauces of `SAU-2` and the mousses of `PST-3` use them only for risk
+   groups.
+   - Option 1: one rule for the program, pasteurised eggs for every guest in raw-egg preparations, by updating `SAU-2`
+     and `PST-3` and the §9 risk-group row. This is my recommendation, because a single rule is easier to follow and
+     check; Phase 6 should confirm the Voedingscentrum's advice on raw egg first.
+   - Option 2: keep both as they are: S4 desserts for everyone, earlier sauces for risk groups only.
+4. **The budget.** About €1,185 for S4, against €1,305 for S3. Is it acceptable?
+5. **The knowledge-check items have not been reviewed by a second reader.** Recorded as a condition for Phase 6 at the
+   S3 review; S4 adds 51 safety items, so about 268 across S1–S4.
+6. **Sources Phase 6 must add or re-check,** in addition to the S3 list:
+   - the Dutch rules on nitrous oxide (the siphon rule; the Rijksoverheid pages refused or were missing);
+   - the verbatim text of *Alcoholwet* article 20 (only a summary could be read);
+   - Dutch guidance on wild game and *Trichinella* for hunters' own meat (NVWA; the pages found were missing);
+   - the FSIS egg pages, which refused automated access.
+
+### 10.4 Recommendations for S5
+
+1. **Keep mapping before writing.** S5 is mostly projects (`IND-5`, `RDV-5`, `REV-5`) and the capstone; their rows are
+   at level 4 or 5 and will span courses again.
+2. **Name where the stage-spanning rows complete:** `TS-FIRE` 4 (`IND-5`), `SA-HYG` 5 and `SA-PHYS` 5 (`CAP-5`), and
+   `JD-REFL` 5.
+3. **Use the `CUI-4` pattern for learner's-choice work:** where `RDV-5` or `IND-5` lets the learner choose the subject,
+   write one template and a short catalogue of worked options rather than one module per option.
+4. **A small validator addition:** check that each lesson heading in a course file matches the outline's lesson title
+   (ignoring italics), which would have caught the drafted titles of decision 7.
+5. **`REV-5` consolidation** can draw on the knowledge checks of S1–S4 (1,362 items), once the second reader has checked
+   the safety items.

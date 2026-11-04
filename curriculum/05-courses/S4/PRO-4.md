@@ -391,8 +391,8 @@ juniper, red wine, stock; seasonal vegetables (red cabbage, celeriac, Brussels s
 <!-- END generated:lesson-pro-4-m3-l1 -->
 
 **Concepts:**
-- **[K] Freshness and sourcing:** offal spoils faster than muscle meat. It is bought fresh from a butcher on the day (or
-  frozen), smells clean and sweet, looks glossy and firm, and is kept at 4 °C and cooked within a day. Calf's liver is
+- **[K] Freshness and sourcing:** offal spoils faster than muscle meat. It is bought fresh from a butcher close to
+  cooking (or frozen), smells clean and sweet, looks glossy and firm, and is kept at 4 °C and cooked soon. Calf's liver is
   milder and more tender than pig's or ox liver; veal kidneys are milder than pork.
 - **Liver:** the outer membrane peeled off, any tubes cut out, sliced about 1 cm thick; optionally soaked in milk for an
   hour for a milder taste.
@@ -491,7 +491,7 @@ The extensions:
 | ID | Type | Lesson | Safety | Item | Answer | Why |
 |---|---|---|---|---|---|---|
 | PRO-4.M3.Q1 | multiple choice | PRO-4.M3.L1 | — | Which is a sign of fresh liver? A) dull and dry B) glossy, firm, a clean sweet smell C) a strong smell D) grey edges | B | Offal spoils fast; freshness shows. |
-| PRO-4.M3.Q2 | multiple choice | PRO-4.M3.L1 | yes | How long may fresh offal wait in the fridge before cooking? A) a week B) it is bought on the day and cooked within a day, at 4 °C C) three days D) at room temperature until dinner | B | Offal spoils faster than muscle meat. |
+| PRO-4.M3.Q2 | multiple choice | PRO-4.M3.L1 | yes | How is fresh offal handled before cooking? A) kept a week in the fridge to age B) bought close to cooking, kept at 4 °C and cooked soon C) left out to come to room temperature for hours D) washed and kept in water | B | Offal spoils faster than muscle meat; the fridge at 4 °C (§9). |
 | PRO-4.M3.Q3 | multiple choice | PRO-4.M3.L1 | — | Why are sweetbreads pressed after blanching? A) to remove fat B) so they hold an even shape for slicing and crisping C) to cook them D) to drain blood | B | Pressing firms the shape. |
 | PRO-4.M3.Q4 | multiple choice | PRO-4.M3.L2 | yes | Which §9 rule applies to calf's liver? A) intact meat at 63 °C for 15 seconds B) non-intact meat: for example 66 °C for 1 minute C) poultry at 74 °C D) none | B | Liver is not whole muscle. |
 | PRO-4.M3.Q5 | multiple choice | PRO-4.M3.L2 | yes | And chicken livers? A) 63 °C B) 74 °C, as poultry C) 66 °C for 1 minute D) any pink | B | Poultry offal follows the poultry row. |

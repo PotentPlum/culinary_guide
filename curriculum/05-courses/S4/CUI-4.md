@@ -152,7 +152,8 @@ menu frame, the special equipment (Good and Best) and the usual Dutch substituti
 - *Technique I:* Sushi rice and *sushi*. Washing, soaking and cooking the rice, seasoning with vinegar, sugar and salt,
   cooling while fanning; *maki* and *nigiri* shaped by hand. Fish served raw only if frozen first by the fish row of §9
   (or bought so treated) and never for risk groups; otherwise cooked fish (seared mackerel to 63 °C, cooked prawns),
-  omelette (*tamagoyaki*) or vegetables. Sushi rice is kept cool and eaten the same day.
+  omelette (*tamagoyaki*) or vegetables. Sushi rice is made close to serving and is not out of the fridge longer
+  than 2 hours (the leftovers row of §9).
 - *Technique II:* *Tempura* and *agemono*. An ice-cold, barely mixed batter; oil at the right temperature checked with
   the thermometer; frying safety by `HEA-2.M4`; seasonal vegetables and fish.
 - *Menu frame:* a seasonal set meal (*ichijū sansai*: soup and three dishes with rice) or a *sushi* and *tempura* meal.
