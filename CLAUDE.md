@@ -12,12 +12,14 @@ web app was removed; its last version is commit `e76778c` (`git show e76778c:web
 - `tools/validate_data.py`: stdlib-only validator for everything in `data/`.
 - `app/`: the Android app (single `:app` module, packages as in spec §4.2). `lint-checks/`: the custom lint rule
   `ComposeHardcodedText` (Android's `HardcodedText` only covers XML layouts). P0 is done except the owner/device items;
-  P1 features are in; what's left of P1 is in `todo.md` (mostly the legacy converter and owner/device checks).
+  P1 features are in; what's left of P1 is in `todo.md` (mostly owner/device checks).
+- `tools/legacy_to_backup.py`: one-off converter of the old web-app exports into a backup zip (spec §13.3, Appendix A).
 
 ## Commands
 ```bash
 python3 tools/validate_data.py                   # validate data/ (also runs automatically after edits under data/)
-python3 tools/validate_data.py --write-fixtures  # regenerate seasonality fixture after intended peak/shoulder edits
+python3 tools/validate_data.py --write-fixtures  # regenerate the seasonality and legacy fixtures after intended edits
+python3 -m unittest discover -s tools            # tests for the Python tools (legacy converter)
 ./gradlew lint ktlintCheck testDebugUnitTest :lint-checks:test assembleDebug   # the CI gate (spec §16–17)
 ./gradlew ktlintFormat                           # fix formatting (ktlint_official style)
 ./gradlew testDebugUnitTest --tests '*SeasonalityTest*'   # one test class

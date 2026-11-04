@@ -2,12 +2,13 @@
 """Validate everything under data/: JSON Schema conformance, cross-references, strings.xml.
 
 Stdlib only, so it runs anywhere (CI, Claude Code hook, a fresh laptop) without setup.
-The schemas in data/schemas/ stick to the JSON Schema subset implemented below; the
+The schemas in data/schemas/ stick to the JSON Schema subset in tools/schema_check.py; the
 Android unit tests load the same assets, so this script is the fast pre-build gate.
 
 Usage: python3 tools/validate_data.py [--write-fixtures]
-  --write-fixtures  regenerate fixtures/seasonality/status.json from vegetables.json
-                    (do this deliberately after editing peak/shoulder months)
+  --write-fixtures  regenerate fixtures/seasonality/status.json from vegetables.json and
+                    fixtures/legacy/expected-backup.json from the legacy exports next to it
+                    (do this deliberately, after editing peak/shoulder months or the converter)
 Exit code 0 = all good, 1 = errors (printed one per line).
 """
 
@@ -19,94 +20,20 @@ import sys
 import xml.etree.ElementTree as ET
 from pathlib import Path
 
+import legacy_to_backup
+from schema_check import check_backup_references
+from schema_check import validate as validate_schema
+
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
 
 errors: list[str] = []
+# The legacy fixture's fixed conversion time, so expected-backup.json is stable.
+LEGACY_EXPORTED_AT = 1793620800000
 
 
 def err(where: str, msg: str) -> None:
     errors.append(f"{where}: {msg}")
-
-
-# ── Minimal JSON Schema validator (subset used by data/schemas) ──────────────
-
-TYPES = {
-    "object": dict,
-    "array": list,
-    "string": str,
-    "integer": int,
-    "number": (int, float),
-    "boolean": bool,
-    "null": type(None),
-}
-
-
-def type_ok(value: object, name: str) -> bool:
-    if name in ("integer", "number") and isinstance(value, bool):
-        return False
-    return isinstance(value, TYPES[name])
-
-
-def validate(value: object, schema: dict, root: dict, path: str) -> None:
-    if "$ref" in schema:
-        ref = schema["$ref"]
-        assert ref.startswith("#/$defs/"), ref
-        validate(value, root["$defs"][ref.split("/")[-1]], root, path)
-        return
-    if "oneOf" in schema:
-        before = len(errors)
-        passing = 0
-        for option in schema["oneOf"]:
-            mark = len(errors)
-            validate(value, option, root, path)
-            passing += len(errors) == mark
-        del errors[before:]
-        if passing != 1:
-            err(path, f"must match exactly one oneOf option (matched {passing})")
-        return
-    if "enum" in schema and value not in schema["enum"]:
-        err(path, f"{value!r} not in {schema['enum']}")
-        return
-    if "type" in schema:
-        types = schema["type"] if isinstance(schema["type"], list) else [schema["type"]]
-        if not any(type_ok(value, t) for t in types):
-            err(path, f"expected {'/'.join(types)}, got {type(value).__name__}")
-            return
-    if isinstance(value, str):
-        if len(value) < schema.get("minLength", 0):
-            err(path, "string too short")
-        if "pattern" in schema and not re.search(schema["pattern"], value):
-            err(path, f"{value!r} does not match {schema['pattern']}")
-    if isinstance(value, (int, float)) and not isinstance(value, bool):
-        if "minimum" in schema and value < schema["minimum"]:
-            err(path, f"{value} < minimum {schema['minimum']}")
-        if "maximum" in schema and value > schema["maximum"]:
-            err(path, f"{value} > maximum {schema['maximum']}")
-    if isinstance(value, list):
-        if len(value) < schema.get("minItems", 0):
-            err(path, f"needs at least {schema['minItems']} items")
-        if schema.get("uniqueItems"):
-            seen = [json.dumps(v, sort_keys=True) for v in value]
-            if len(seen) != len(set(seen)):
-                err(path, "items are not unique")
-        if "items" in schema:
-            for i, item in enumerate(value):
-                validate(item, schema["items"], root, f"{path}[{i}]")
-    if isinstance(value, dict):
-        for key in schema.get("required", []):
-            if key not in value:
-                err(path, f"missing required key {key!r}")
-        if "minProperties" in schema and len(value) < schema["minProperties"]:
-            err(path, f"needs at least {schema['minProperties']} keys")
-        if "maxProperties" in schema and len(value) > schema["maxProperties"]:
-            err(path, f"allows at most {schema['maxProperties']} keys")
-        props = schema.get("properties", {})
-        for key, sub in value.items():
-            if key in props:
-                validate(sub, props[key], root, f"{path}.{key}")
-            elif schema.get("additionalProperties") is False:
-                err(path, f"unexpected key {key!r}")
 
 
 def load(rel: str, schema: str | None = None) -> dict | list:
@@ -118,7 +45,7 @@ def load(rel: str, schema: str | None = None) -> dict | list:
         return {}
     if schema:
         root = json.loads((DATA / "schemas" / schema).read_text(encoding="utf-8"))
-        validate(doc, root, root, rel)
+        validate_schema(doc, root, root, rel, errors)
     return doc
 
 
@@ -309,31 +236,20 @@ for i, case in enumerate(golden.get("cases", [])):
 
 # Backup format (spec §13.1): the sample must match backup.schema.json and reference only what it contains.
 BACKUP = "fixtures/backup/sample.json"
-backup = load(BACKUP, "backup.schema.json")
-veg_ids = {v["id"] for v in vegs}
-backup_recipes = {r["id"] for r in backup.get("recipes", [])}
-backup_quests = {q["id"] for q in backup.get("quests", [])}
-for kind in ("recipes", "quests", "attempts", "shoppingItems"):
-    unique(f"{BACKUP}.{kind}", [x["id"] for x in backup.get(kind, [])])
-for q in backup.get("quests", []):
-    if q["recipeId"] not in backup_recipes:
-        err(f"{BACKUP}.quests.{q['id']}", f"unknown recipeId {q['recipeId']!r}")
-for a in backup.get("attempts", []):
-    where = f"{BACKUP}.attempts.{a['id']}"
-    if a.get("recipeId") and a["recipeId"] not in backup_recipes:
-        err(where, f"unknown recipeId {a['recipeId']!r}")
-    if a.get("questId") and a["questId"] not in backup_quests:
-        err(where, f"unknown questId {a['questId']!r}")
-    for vid in a.get("vegIds", []) + a.get("peakVegIds", []):
-        if vid not in veg_ids:
-            err(where, f"unknown vegetable {vid!r}")
-    if not set(a.get("peakVegIds", [])) <= set(a.get("vegIds", [])):
-        err(where, "peakVegIds must be a subset of vegIds")
-    if a.get("photo") and a["photo"] != f"journal/{a['id']}.jpg":
-        err(where, "photo must be journal/{id}.jpg")
-for r in backup.get("recipes", []):
-    if r.get("image") and r["image"] != f"images/{r['id']}.jpg":
-        err(f"{BACKUP}.recipes.{r['id']}", "image must be images/{id}.jpg")
+errors.extend(check_backup_references(load(BACKUP, "backup.schema.json"), veg_ids, BACKUP))
+
+# Legacy converter (spec §13.3): the synthetic exports must convert to exactly the expected backup, which is valid.
+LEGACY = "fixtures/legacy"
+legacy_converted = legacy_to_backup.Converter(legacy_to_backup.Content.load(DATA), exported_at=LEGACY_EXPORTED_AT).convert(
+    load(f"{LEGACY}/supabase.json"), load(f"{LEGACY}/local.json")
+)
+if "--write-fixtures" in sys.argv:
+    legacy_text = json.dumps(legacy_converted, ensure_ascii=False, indent=1) + "\n"
+    (DATA / LEGACY / "expected-backup.json").write_text(legacy_text, encoding="utf-8")
+legacy_expected = load(f"{LEGACY}/expected-backup.json", "backup.schema.json")
+errors.extend(check_backup_references(legacy_expected, veg_ids, f"{LEGACY}/expected-backup.json"))
+if legacy_converted != legacy_expected:
+    err(f"{LEGACY}/expected-backup.json", "differs from what tools/legacy_to_backup.py makes of the fixtures (rerun with --write-fixtures if intended)")
 
 velt = load("reference/velt-vegetables.json")
 if not isinstance(velt, list) or not all(isinstance(v, dict) and v.get("name") and v.get("url") for v in velt):

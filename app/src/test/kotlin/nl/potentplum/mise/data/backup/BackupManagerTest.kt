@@ -334,6 +334,30 @@ class BackupManagerTest {
         assertEquals("Pompoensoep met salie", runBlocking { recipes.get("r-pompoensoep") }!!.title)
     }
 
+    /** `legacy/expected-backup.json` is what tools/legacy_to_backup.py makes of the synthetic legacy exports (spec §13.3). */
+    @Test
+    fun `the legacy converter output restores, and a second merge adds nothing`() {
+        val zip = zipOf(BackupManager.parse(TestResources.read("legacy/expected-backup.json")))
+        val result = restore(zip, RestoreMode.REPLACE)
+        assertEquals(7, result.recipes) // 5 library recipes + 2 hidden quest recipes
+        assertEquals(2, result.quests)
+        assertEquals(4, result.attempts)
+        assertEquals(5, result.needsEnrichment)
+
+        val soup = runBlocking { recipes.get("0b6f6a52-1c1e-4b55-9d61-1f0c3f1a0001") }!!
+        assertEquals(RecipeSourceType.URL, soup.sourceType)
+        assertEquals(listOf(null, "Topping"), soup.ingredientGroups.map { it.name })
+        assertTrue(Tag(TagKey.TECHNIQUE, "sauteren") in soup.tags)
+        val quest = runBlocking { backupDao.quests() }.single { it.id == "7c1d2e3f-0000-4000-8000-00000000c001" }
+        assertEquals(QuestStatus.COMPLETED, quest.status)
+        val attempt = runBlocking { backupDao.attempts() }.single { it.id == "9e8d7c6b-0000-4000-8000-0000000000a2" }
+        assertEquals(quest.id, attempt.questId)
+        assertEquals(quest.recipeId, attempt.recipeId)
+
+        val again = restore(zip, RestoreMode.MERGE)
+        assertEquals(listOf(0, 0, 0), listOf(again.recipes, again.quests, again.attempts))
+    }
+
     @Test
     fun `other files are refused with a reason`() {
         fun reason(bytes: ByteArray): BackupException.Reason? =

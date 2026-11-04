@@ -187,7 +187,8 @@ The web app keeps running from its last Vercel deployment until you turn it off,
   _Via the system file picker (`CreateDocument`); a share-sheet export is not there yet._
 - [x] Restore: validate, summary, Samenvoegen / Vervangen, in one transaction, then offer enrichment. Round-trip test: export → wipe → restore gives an identical DB.
   _Vervangen asks to type VERVANGEN. References to recipes or quests that aren't there are dropped instead of breaking the restore._
-- [ ] `tools/legacy_to_backup.py` (stdlib, spec §13.3 + Appendix A): converts both legacy exports into a backup zip and prints a report. Include synthetic legacy fixtures covering every branch (JSON-in-`instructions`, column fallback, photo prefix, localStorage merge by `remoteId`, legacy difficulty values, unresolved `source_id`, `vegIds`/`peakVegIds` computation). Its output must validate against `backup.schema.json`.
+- [x] `tools/legacy_to_backup.py` (stdlib, spec §13.3 + Appendix A): converts both legacy exports into a backup zip and prints a report. Include synthetic legacy fixtures covering every branch (JSON-in-`instructions`, column fallback, photo prefix, localStorage merge by `remoteId`, legacy difficulty values, unresolved `source_id`, `vegIds`/`peakVegIds` computation). Its output must validate against `backup.schema.json`.
+  _Fixtures in `data/fixtures/legacy/`: `validate_data.py` checks they convert to exactly `expected-backup.json`, `tools/test_legacy_to_backup.py` (CI) pins each rule, and `BackupManagerTest` restores the result. Also handles the SQL editor's JSON download (wrapped in a row), localStorage entries without `remoteId` (merged by URL, like the web app) and plain-text `instructions` (become steps)._
 - [ ] **[owner]** Convert your real exports, restore them on your phone, run enrichment, and spot-check 5 recipes, 3 quests and the Dagboek numbers.
 
 ### Boodschappen (spec §6.14, §11.7; a bottom-bar tab, so P1)

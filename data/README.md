@@ -24,6 +24,7 @@ python3 tools/validate_data.py
 | `fixtures/recipe-ingestion/golden.json` | 104 recorded input→output cases for the recipe parser, from the 94 passing TS tests | JVM unit-test resource; the Kotlin port must reproduce all of them |
 | `fixtures/seasonality/status.json` | Expected `peak/shoulder/soon/ending/off` for every vegetable × month (792 cells) | JVM unit-test resource |
 | `fixtures/backup/sample.json` | A small but complete `backup.json` (spec §13.1): recipes with groups, a hidden quest recipe, a quest, attempts, shopping items, settings | Validated against `backup.schema.json`; parsed and restored by `BackupManagerTest` |
+| `fixtures/legacy/` | Synthetic old web-app exports (`supabase.json`, `local.json`) covering every branch of spec Appendix A, and `expected-backup.json`, what `tools/legacy_to_backup.py` makes of them | Checked by `tools/validate_data.py` (regenerate with `--write-fixtures`); restored by `BackupManagerTest` |
 | `schemas/*.schema.json` | JSON Schemas for every asset and fixture file | Used by `tools/validate_data.py`; Kotlin tests may reuse them |
 | `reference/velt-vegetables.json` | Original scraped velt.nu source data (77 vegetables, Dutch text, harvest months) | **Not shipped.** Third-party text for research and adding vegetables; do not copy its prose into the app |
 | `reference/prompts/*.md` | The three Claude prompts from the web app, word for word | **Not shipped.** Source material for the rewritten prompts (spec §8) |

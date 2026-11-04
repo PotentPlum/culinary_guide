@@ -1,0 +1,312 @@
+{
+ "format": "mise-legacy-supabase",
+ "recipes": [
+  {
+   "id": "0b6f6a52-1c1e-4b55-9d61-1f0c3f1a0001",
+   "name": "Pompoensoep",
+   "ingredients": [
+    "1 kg pompoen",
+    "2 uien, gesnipperd",
+    "een handje salie"
+   ],
+   "instructions": "{\"title\": \"Pompoensoep met salie\", \"description\": \"Uit de JSON\", \"prepTimeMinutes\": 15, \"cookTimeMinutes\": 30, \"totalTimeMinutes\": 45, \"servings\": 2, \"cuisine\": \"Nederlands\", \"category\": [\"Soep\"], \"keywords\": [\"soep\", \"herfst\"], \"image\": \"https://www.example.nl/pompoensoep.jpg\", \"author\": \"Example\", \"suitableForDiet\": [\"VegetarianDiet\"], \"datePublished\": \"2025-10-01\", \"aggregateRating\": {\"ratingValue\": 4.5, \"ratingCount\": 12}, \"video\": null, \"nutrition\": {\"calories\": \"210 kcal\", \"protein\": null, \"carbs\": null, \"fat\": null}, \"ingredientSections\": [{\"sectionName\": \"Ingredients\", \"ingredients\": [{\"text\": \"2 lb pumpkin\", \"textMetric\": \"1 kg pompoen\"}, {\"text\": \"2 uien, gesnipperd\"}, {\"text\": \"  \"}]}, {\"sectionName\": \"Topping:\", \"ingredients\": [{\"text\": \"een handje salie\"}]}], \"instructionSections\": [{\"sectionName\": \"Instructions\", \"steps\": [{\"stepNumber\": 2, \"text\": \"Kook 20 minuten en pureer.\"}, {\"stepNumber\": 1, \"text\": \"Snijd de pompoen in blokjes.\"}]}], \"unitSystems\": {\"hasMetric\": true}}",
+   "source_url": "https://www.example.nl/pompoensoep",
+   "source": "",
+   "tags": {
+    "cuisine": [
+     "Nederlands"
+    ],
+    "dishType": [
+     "Soep"
+    ],
+    "prepTime": [
+     "<60"
+    ],
+    "mainIngredient": [
+     "Knollen"
+    ]
+   },
+   "description": "Romige soep van pompoen.",
+   "prep_time": null,
+   "cook_time": null,
+   "total_time": 45,
+   "servings": 4,
+   "cuisine": [],
+   "category": [],
+   "keywords": [],
+   "image_url": null,
+   "author": null,
+   "suitable_for_diet": [],
+   "nutrition": {},
+   "date_published": null,
+   "aggregate_rating": null,
+   "video_url": null,
+   "created_at": "2026-05-21T10:11:12.123456+00:00",
+   "updated_at": "2026-05-22T08:00:00+00:00"
+  },
+  {
+   "id": "0b6f6a52-1c1e-4b55-9d61-1f0c3f1a0002",
+   "name": "Tomatensalade",
+   "ingredients": [
+    "4 tomaten",
+    "1 rode ui",
+    "olijfolie"
+   ],
+   "instructions": "Snijd de tomaten.\n\nMeng met de ui en olie.",
+   "source_url": "http://salades.example.com/tomaat?id=3",
+   "source": null,
+   "tags": {},
+   "description": "Zomers",
+   "prep_time": 10,
+   "cook_time": 0,
+   "total_time": 10,
+   "servings": 2,
+   "cuisine": [
+    "Italiaans"
+   ],
+   "category": [
+    "Salade"
+   ],
+   "keywords": [
+    "zomer"
+   ],
+   "image_url": "data:image/png;base64,AAAA",
+   "author": "Anna",
+   "suitable_for_diet": [],
+   "nutrition": {
+    "calories": 120,
+    "protein": null,
+    "carbs": null,
+    "fat": null
+   },
+   "date_published": "2024-07-01",
+   "aggregate_rating": {
+    "ratingValue": "4",
+    "ratingCount": "3"
+   },
+   "video_url": "https://video.example.com/1",
+   "created_at": "2026-05-23 09:00:00+00",
+   "updated_at": "2026-05-23 09:00:00+00"
+  },
+  {
+   "id": "0b6f6a52-1c1e-4b55-9d61-1f0c3f1a0003",
+   "name": "Prei met beurre noisette",
+   "ingredients": [
+    "3 preien",
+    "50 g boter"
+   ],
+   "instructions": "{\"title\": \"Prei met beurre noisette\", \"description\": \"\", \"prepTimeMinutes\": null, \"cookTimeMinutes\": null, \"totalTimeMinutes\": 25, \"cuisine\": [], \"category\": [], \"keywords\": [], \"image\": null, \"author\": null, \"suitableForDiet\": [], \"datePublished\": null, \"aggregateRating\": null, \"video\": null, \"nutrition\": {\"calories\": null, \"protein\": null, \"carbs\": null, \"fat\": null}, \"ingredientSections\": [{\"sectionName\": \"Ingredi\\u00ebnten\", \"ingredients\": [{\"text\": \"3 preien\"}, {\"text\": \"50 g boter\"}]}], \"instructionSections\": [{\"sectionName\": \"Bereiding\", \"steps\": [{\"stepNumber\": 1, \"text\": \"Stoom de prei.\"}, {\"stepNumber\": 2, \"text\": \"Bruin de boter.\"}]}]}",
+   "source_url": "mise-photo:1716800000000",
+   "source": "Tobias",
+   "tags": {
+    "dishType": [
+     "Bijgerecht"
+    ]
+   },
+   "description": "",
+   "prep_time": null,
+   "cook_time": null,
+   "total_time": 25,
+   "servings": null,
+   "cuisine": [],
+   "category": [],
+   "keywords": [],
+   "image_url": null,
+   "author": null,
+   "suitable_for_diet": [],
+   "nutrition": {},
+   "date_published": null,
+   "aggregate_rating": null,
+   "video_url": null,
+   "created_at": "2026-05-27T12:00:00Z",
+   "updated_at": "2026-05-27T12:00:00Z"
+  },
+  {
+   "id": "0b6f6a52-1c1e-4b55-9d61-1f0c3f1a0004",
+   "name": "Boerenkool stamppot",
+   "ingredients": [
+    "500 g boerenkool",
+    "1 kg kruimige aardappels"
+   ],
+   "instructions": "{\"title\": \"Boerenkool stamppot\", \"description\": \"\", \"prepTimeMinutes\": null, \"cookTimeMinutes\": null, \"totalTimeMinutes\": 40, \"cuisine\": [], \"category\": [], \"keywords\": [], \"image\": null, \"author\": null, \"suitableForDiet\": [], \"datePublished\": null, \"aggregateRating\": null, \"video\": null, \"nutrition\": {\"calories\": null, \"protein\": null, \"carbs\": null, \"fat\": null}, \"ingredientSections\": [{\"sectionName\": \"Ingredi\\u00ebnten\", \"ingredients\": [{\"text\": \"500 g boerenkool\"}, {\"text\": \"1 kg kruimige aardappels\"}]}], \"instructionSections\": [{\"sectionName\": \"Bereiding\", \"steps\": [{\"stepNumber\": 1, \"text\": \"Kook de aardappels met de boerenkool.\"}]}]}",
+   "source_url": "",
+   "source": "Oma",
+   "tags": {},
+   "description": "",
+   "prep_time": null,
+   "cook_time": null,
+   "total_time": null,
+   "servings": null,
+   "cuisine": [],
+   "category": [],
+   "keywords": [],
+   "image_url": null,
+   "author": null,
+   "suitable_for_diet": [],
+   "nutrition": {},
+   "date_published": null,
+   "aggregate_rating": null,
+   "video_url": null,
+   "created_at": "2026-05-28T18:30:00+00:00",
+   "updated_at": "2026-05-28T18:30:00+00:00"
+  }
+ ],
+ "challenges": [
+  {
+   "id": "7c1d2e3f-0000-4000-8000-00000000c001",
+   "ingredient": "prei",
+   "challenge_text": "Maak een beurre blanc en serveer die bij geroosterde prei.",
+   "difficulty": "Intermediate",
+   "created_at": "2026-05-29T09:00:00+00:00",
+   "skill": "emulgeren",
+   "time_estimate": 40,
+   "why": "Je oefent een warme emulsie.",
+   "output_type": "Saus/Basis",
+   "recipe": {
+    "title": "Beurre blanc met prei",
+    "servings": 2,
+    "ingredients": [
+     {
+      "amount": "2",
+      "unit": "",
+      "name": "Prei"
+     },
+     {
+      "amount": "100",
+      "unit": "g",
+      "name": "koude boter"
+     },
+     {
+      "amount": "",
+      "unit": "",
+      "name": "zout"
+     }
+    ],
+    "steps": [
+     {
+      "step": 2,
+      "instruction": "Monteer met de boter."
+     },
+     {
+      "step": 1,
+      "instruction": "Reduceer de wijn met sjalot."
+     }
+    ],
+    "tips": [
+     "Houd de saus lauw.",
+     " "
+    ],
+    "tags": {
+     "cuisine": [
+      "Frans"
+     ],
+     "dishType": [
+      "Saus/Basis"
+     ]
+    }
+   },
+   "params": {
+    "technique": "emulgeren",
+    "cuisine": "Frans",
+    "timeLimit": "<60",
+    "simpleAndSmall": true,
+    "quantity": 500,
+    "unit": "gram"
+   },
+   "techniques": [
+    "emulgeren",
+    "steelpan",
+    "bestaat-niet"
+   ],
+   "cuisines": [
+    "Frans"
+   ],
+   "ingredients": [
+    "prei",
+    "boter"
+   ]
+  },
+  {
+   "id": "7c1d2e3f-0000-4000-8000-00000000c002",
+   "ingredient": "pompoen",
+   "challenge_text": "Rooster pompoen in partjes.",
+   "difficulty": "hard",
+   "created_at": "2026-05-20T09:00:00+00:00",
+   "skill": null,
+   "time_estimate": null,
+   "why": null,
+   "output_type": "Hoofdgerecht",
+   "recipe": null,
+   "params": null,
+   "techniques": [],
+   "cuisines": [],
+   "ingredients": []
+  }
+ ],
+ "user_attempts": [
+  {
+   "id": "9e8d7c6b-0000-4000-8000-0000000000a1",
+   "user_id": "u1",
+   "source_type": "recipe",
+   "source_id": "0b6f6a52-1c1e-4b55-9d61-1f0c3f1a0001",
+   "attempted_at": "2026-10-12T18:00:00+00:00",
+   "score": 7,
+   "techniques": [
+    "blancheren"
+   ],
+   "cuisines": [
+    "Nederlands"
+   ],
+   "ingredients": [
+    "prei"
+   ],
+   "taste_score": 9,
+   "notes": "Meer salie.\nVolgende keer gember."
+  },
+  {
+   "id": "9e8d7c6b-0000-4000-8000-0000000000a2",
+   "user_id": "u1",
+   "source_type": "challenge",
+   "source_id": "7c1d2e3f-0000-4000-8000-00000000c001",
+   "attempted_at": "2026-06-02T19:00:00+00:00",
+   "score": 6,
+   "techniques": [
+    "emulgeren"
+   ],
+   "cuisines": [
+    "Frans"
+   ],
+   "ingredients": [],
+   "taste_score": null,
+   "notes": "  "
+  },
+  {
+   "id": "9e8d7c6b-0000-4000-8000-0000000000a3",
+   "user_id": "u1",
+   "source_type": "recipe",
+   "source_id": "00000000-dead-4000-8000-000000000000",
+   "attempted_at": "2026-06-10T19:00:00+00:00",
+   "score": null,
+   "techniques": [],
+   "cuisines": [],
+   "ingredients": [
+    "groene asperges"
+   ],
+   "taste_score": null,
+   "notes": "Recept was verwijderd."
+  },
+  {
+   "id": "9e8d7c6b-0000-4000-8000-0000000000a4",
+   "user_id": "u1",
+   "source_type": "challenge",
+   "source_id": null,
+   "attempted_at": "2026-06-11T19:00:00+00:00",
+   "score": 0,
+   "techniques": [],
+   "cuisines": [],
+   "ingredients": [],
+   "taste_score": null,
+   "notes": null
+  }
+ ]
+}
