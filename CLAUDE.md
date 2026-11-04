@@ -14,6 +14,8 @@ web app was removed; its last version is commit `e76778c` (`git show e76778c:web
   `ComposeHardcodedText` (Android's `HardcodedText` only covers XML layouts). P0 is done except the owner/device items;
   P1 features are in; what's left of P1 is in `todo.md` (mostly owner/device checks).
 - `tools/legacy_to_backup.py`: one-off converter of the old web-app exports into a backup zip (spec §13.3, Appendix A).
+- `curriculum/`: phased design of a competency-based culinary education program (`curriculum/README.md`). It is
+  app-independent until its Phase 7 and does not change `spec.md` or `data/`.
 
 ## Commands
 ```bash
