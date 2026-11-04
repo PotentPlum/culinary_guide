@@ -105,6 +105,60 @@ RUBRIC = """# Assessment
 """
 
 
+# Phase 5: KNF-1 with a [K] objective (so the blueprint asks for 8 items) and a safety competency in its module.
+S1_P5 = S1_GOOD.replace("| KNF-1.M1.L2 | Dice | [S] dice | — | 3 | 2 | — | TS-KNF→2 |",
+                        "| KNF-1.M1.L2 | Dice | [K] why size matters; [S] dice | — | 3 | 2 | — | TS-KNF→2, SA-HYG→1 |")
+
+COURSES_OVERVIEW = """# Phase 5
+
+**Stages developed:** {developed}
+
+<!-- BEGIN generated:status -->
+<!-- END generated:status -->
+<!-- BEGIN generated:reachability -->
+<!-- END generated:reachability -->
+<!-- BEGIN generated:equipment -->
+<!-- END generated:equipment -->
+"""
+
+
+def course_doc(
+    items: int = 8,
+    tag: str = "TS-KNF→2",
+    evidence_row: str = "| TS-KNF | 2 | `KNF-1.M1.X1` | photo — even dice |",
+    sessions: int = 2,
+    lessons: tuple[str, ...] = ("KNF-1.M1.L1", "KNF-1.M1.L2"),
+    safety: str = "yes",
+) -> str:
+    """A Phase 5 course file for KNF-1 of S1_P5, with empty generated blocks."""
+
+    def gen(name: str) -> list[str]:
+        return [f"<!-- BEGIN generated:{name} -->", f"<!-- END generated:{name} -->", ""]
+
+    lines = ["# KNF-1 — Knives", ""] + gen("header")
+    lines += ["## Introduction", "", "Why.", "", "## Learning outcomes", ""] + gen("outcomes")
+    lines += ["## Module structure and hours", ""] + gen("modules")
+    lines += ["## Modules", "", "### KNF-1.M1 — Cuts", ""] + gen("module-knf-1-m1")
+    for ident in lessons:
+        lines += [f"#### {ident} — Lesson", ""] + gen(f"lesson-{ident.lower().replace('.', '-')}")
+        lines += ["**Concepts:** x", "", "**Sessions:**"] + [f"{n}. Practise." for n in range(1, sessions + 1)]
+        lines += ["", "**Cues:** x", "", "**Faults:** x", ""]
+    lines += ["#### KNF-1.M1.X1 — Dice", ""] + gen("exercise-knf-1-m1-x1")
+    lines += [f"**Evidences:** {tag}", "**Aim:** x", "**Conditions:** x", "**Inputs:** x", "**Procedure:** x"]
+    lines += ["**Evidence:** photo — dice on a grid", "**Time:** 1 h", ""]
+    lines += ["#### Module check", ""] + gen("check-knf-1-m1")
+    lines += ["| ID | Type | Lesson | Safety | Item | Answer | Why |", "|---|---|---|---|---|---|---|"]
+    for n in range(1, items + 1):
+        flag = safety if n == 1 else "—"
+        lines.append(f"| KNF-1.M1.Q{n} | multiple choice | KNF-1.M1.L2 | {flag} | Q? A) x B) y | A | Because. |")
+    lines += ["", "**Evidence check:**", "", "| Competency | Level | Exercises | Evidence |", "|---|---|---|---|"]
+    lines += [evidence_row, "", "## Assessment criteria", ""] + gen("assessment")
+    lines += ["## Materials and equipment", "", "| Item | Tier | Good | Best |", "|---|---|---|---|"]
+    lines += ["| Chef's knife | 0 | Any | Forged |", "", "**Indicative ingredient budget:** about €10.", ""]
+    lines += ["## Validation", ""] + gen("validation")
+    return "\n".join(lines)
+
+
 class ValidateCurriculumTest(unittest.TestCase):
     def setUp(self) -> None:
         self.tmp = tempfile.TemporaryDirectory()
@@ -119,7 +173,7 @@ class ValidateCurriculumTest(unittest.TestCase):
 
     def errors(self, s1: str) -> list[str]:
         (self.root / "02-outline" / "S1-foundations.md").write_text(s1, encoding="utf-8")
-        report, _, _, _ = vc.check(self.root)
+        report, _, _, _, _ = vc.check(self.root)
         return report.errors
 
     def run_main(self, *args: str) -> int:
@@ -298,6 +352,68 @@ class ValidateCurriculumTest(unittest.TestCase):
             self.rubric_errors(RUBRIC.replace("| TS-KNF |", "| TS-KNF, TS-MEP |")),
         )
         self.assertTrue(any("criterion 'speed'" in e for e in self.rubric_errors(RUBRIC.replace("| Accuracy |", "| Speed |"))))
+
+    def course_errors(self, doc: str, developed: str = "—", write: bool = True) -> list[str]:
+        (self.root / "02-outline" / "S1-foundations.md").write_text(S1_P5, encoding="utf-8")
+        (self.root / "05-course-development.md").write_text(COURSES_OVERVIEW.format(developed=developed), encoding="utf-8")
+        folder = self.root / "05-courses" / "S1"
+        folder.mkdir(parents=True, exist_ok=True)
+        (folder / "KNF-1.md").write_text(doc, encoding="utf-8")
+        if write:
+            self.run_main("--write")
+        return self.checked()
+
+    def checked(self) -> list[str]:
+        """The errors of check() plus the Phase 5 generated-block check, without writing."""
+        report, stages, phase1, phase4, phase5 = vc.check(self.root)
+        for path, blocks in vc.phase5_tables(stages, phase1, phase4, phase5).items():
+            vc.sync_generated(path, blocks, False, report)
+        return report.errors
+
+    def test_a_complete_course_file_passes(self) -> None:
+        self.assertEqual(self.course_errors(course_doc()), [])
+        text = (self.root / "05-courses" / "S1" / "KNF-1.md").read_text(encoding="utf-8")
+        self.assertIn("**Stage:** S1 · **Hours:** 6 h active, 4 practical sessions", text)
+        self.assertIn("*Objectives:* [K] why size matters; [S] dice", text)
+        self.assertIn("1 [K] and 0 [J] objective(s) in the lessons → 8 items", text)
+        overview = (self.root / "05-course-development.md").read_text(encoding="utf-8")
+        self.assertIn("| S1 | [`KNF-1`](05-courses/S1/KNF-1.md) | 2 / 2 | 1 / 1 | 8 | 1 | 1 | €10 |", overview)
+        self.assertIn("| Chef's knife | 0 | `KNF-1` |", overview)
+
+    def test_lessons_exercises_and_sessions_must_match_the_outline(self) -> None:
+        errors = self.course_errors(course_doc(lessons=("KNF-1.M1.L2",)))
+        self.assertIn("KNF-1.M1.L1: no lesson outline", errors)
+        errors = self.course_errors(course_doc(sessions=1))
+        self.assertIn("KNF-1.M1.L2: 1 numbered session(s) under **Sessions:**, the outline has 2", errors)
+
+    def test_exercise_tags_stay_within_the_module(self) -> None:
+        errors = self.course_errors(course_doc(tag="TS-KNF→3"))
+        self.assertIn("KNF-1.M1.X1: TS-KNF→3 is above the level KNF-1.M1 reaches (2)", errors)
+        self.assertIn("KNF-1.M1: KNF-1.M1.X1 is not tagged TS-KNF→2", errors)
+        self.assertIn("KNF-1.M1.X1: SA-HYG→1: level 1 is shown by the quiz, not an exercise", self.course_errors(course_doc(tag="TS-KNF→2, SA-HYG→1")))
+
+    def test_knowledge_checks_follow_the_blueprint(self) -> None:
+        self.assertIn(
+            "KNF-1.M1: 7 knowledge-check item(s); the blueprint asks for 8 (1 [K], 0 [J])", self.course_errors(course_doc(items=7))
+        )
+        self.assertIn(
+            "KNF-1.M1: moves a safety competency, but no item is marked safety", self.course_errors(course_doc(safety="—"))
+        )
+
+    def test_evidence_rows_name_the_module_level_and_its_exercises(self) -> None:
+        errors = self.course_errors(course_doc(evidence_row="| TS-KNF | 2 | `KNF-1.M1.X2` | photo — dice |"))
+        self.assertIn("KNF-1.M1: evidence row TS-KNF names KNF-1.M1.X2, not an exercise of this module", errors)
+        errors = self.course_errors(course_doc(evidence_row="| SA-HYG | 1 | `KNF-1.M1.X1` | photo — x |"))
+        self.assertIn("KNF-1.M1: no evidence row for TS-KNF (level 2)", errors)
+        self.assertIn("KNF-1.M1: evidence row SA-HYG 1: level 1 is shown by the quiz", errors)
+
+    def test_generated_blocks_and_developed_stages_are_checked(self) -> None:
+        self.assertEqual(self.course_errors(course_doc()), [])
+        path = self.root / "05-courses" / "S1" / "KNF-1.md"
+        path.write_text(path.read_text(encoding="utf-8").replace("6 h active", "7 h active"), encoding="utf-8")
+        self.assertIn("KNF-1.md: generated tables are out of date (run with --write)", self.checked())
+        errors = self.course_errors(course_doc(), developed="S1")
+        self.assertIn("SAF-1: S1 is developed, but 05-courses/S1/SAF-1.md is missing", errors)
 
 
 if __name__ == "__main__":
