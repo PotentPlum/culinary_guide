@@ -1,8 +1,7 @@
 # Phase 5 — Course development
 
-Status: **S2 ready for review** (2026-11-04). S1 is reviewed and its answers are applied (§7). S2 is developed in the
-format agreed on S1; the end of the S2 batch, with its decisions, gaps and questions, is in §8. S3–S5 follow one stage
-at a time.
+Status: **S1 and S2 reviewed; S3 in progress** (2026-11-04). The review answers are applied (§7.3 and §8.3). S3–S5
+follow one stage at a time, in the format agreed on S1.
 
 **Stages developed:** S1, S2
 
@@ -292,7 +291,8 @@ row rests on the quiz alone.
 |---|---|---|---|
 | `SAF-1` purpose, `SAF-1.M3.L2` | USDA FSIS chart [S24] | FDA *Food Code* [S25] | Phase 4 stopped using [S24] (it refused automated access), and the review accepted the Food Code as the reference. |
 | `SAF-1.M3.L1` objective | growth "between about 7 and 60 °C" | growth between the cold and hot holding limits (5 and 57 °C) | The rounded range disagreed with the figures the gates use ([assessment §9](04-assessment.md#9-safety-figures-used-in-assessment)). |
-| [Assessment §9](04-assessment.md#9-safety-figures-used-in-assessment) (S2) | Intact meat only at 63 °C for 15 seconds | A row for whole-muscle, intact beef steaks served rare (Food Code §3-401.11(C)), and a gate rule for it | `MEA-2` teaches steaks to a chosen doneness, and its outline asks for rare to well done. Without the row, every rare steak would be a gate *Fail*. To be confirmed at the S2 review. |
+| [Assessment §9](04-assessment.md#9-safety-figures-used-in-assessment) (S2) | Intact meat only at 63 °C for 15 seconds | A row for whole-muscle, intact beef steaks served rare (Food Code §3-401.11(C)), and a gate rule for it | `MEA-2` teaches steaks to a chosen doneness, and its outline asks for rare to well done. Without the row, every rare steak would be a gate *Fail*. Kept at the S2 review. |
+| [Assessment §9](04-assessment.md#9-safety-figures-used-in-assessment) (S2 review) | No figure for raw-bean lectins; no word on the Food Code's roast oven chart | A row for dried common beans (soak at least 5 h, boil at least 30 min, no slow cooker; FDA *Bad Bug Book* [S33]); a rule that the oven chart is not adopted | S2 review answers 2 and 3. `LEG-2.M1.L1`, `LEG-2.M1.L2`, `LEG-2.M1.X2` (now chickpeas, so the unsoaked pots stay within the rule) and `LEG-2.M1.Q4` follow the row. |
 
 No course, module, lesson, hour, exercise or `Moves` entry has changed.
 
@@ -612,7 +612,7 @@ more so its module can meet the Phase 4 success row):
 
 Hours, lessons and `Moves` entries are unchanged.
 
-### 8.3 Gaps and open questions
+### 8.3 Gaps and open questions (review answers, 2026-11-04)
 
 1. **The steak row in §9** (decision 1).
    - Option 1: keep it. Rare and medium-rare steaks are taught, checked by the surface rule, and not served to risk
@@ -621,20 +621,42 @@ Hours, lessons and `Moves` entries are unchanged.
      be checked for the Dutch wording before Phase 6.
    - Option 2: remove it, and teach steaks to 63 °C only. `MEA-2.M1.X1` and `MEA-2.M3.X1` would then lose their rare
      and medium-rare targets.
+
+   **Answer:** option 1. The row stays.
 2. **The Food Code's oven chart for roasts** (§3-401.11(B)(2): a still oven at 177 °C or more for roasts under 4.5 kg)
    is not in §9. The reverse sear of `MEA-2.M4` uses a low oven and meets §9's core time-temperature table.
    - Option 1: keep §9 as it is, and add a note that the oven chart is not adopted for home roasting. This is my
      recommendation.
    - Option 2: adopt the chart. `MEA-2.M4` would then drop the reverse sear for small joints.
+
+   **Answer:** option 1. §9 now says the chart is not adopted for home roasting; roasts are judged by the core table.
 3. **No figure for raw-bean lectins.** `LEG-2.M1.L1` says to boil dried kidney beans hard for several minutes before
    simmering, without a number, because §9 has none. I recommend adding a checked figure, with its source in
    `sources.md`, before Phase 6 writes the lesson.
+
+   **Answer:** added. The FDA *Bad Bug Book* [S33] gives the figure: soaked at least 5 hours with the water poured
+   away, then boiled in fresh water for at least 30 minutes, never in a slow cooker. It applies to the common beans
+   (*Phaseolus vulgaris*), not to chickpeas, lentils or split peas. The source differs from the "several minutes" the
+   draft assumed, which is why no figure was written from memory. `LEG-2.M1.X2` now compares chickpeas, because its
+   unsoaked pots would break the rule for common beans.
 4. **The knowledge-check items have not been reviewed by a second reader** (as in S1). There are 408 items, 62 of them
    safety items. A read-through of the safety items is worth it.
+
+   **Answer:** done for all 62 safety items, each checked against §9 and its *Why* line. Four were changed:
+   - `LEG-2.M1.Q4`: the bean figure above;
+   - `HEA-2.M4.Q3`: the ordering item put "call 112" after "leave it covered until cold", which made no sense. It now
+     orders three steps, and the *Why* says when to leave and call 112;
+   - `SCI-2.M6.Q7`: the model answer also names the 6-hour step of the cooling rule;
+   - `FSH-2.M4.Q3`: the *Why* now gives the reason for discarding mussels that stay shut.
+
+   No other answer disagreed with §9. This was a careful reading by the author, not an independent check. A second
+   human reader is still advised for the safety items of every stage before Phase 6 publishes them.
 5. **The budget.** About €725 for S2, against €265 for S1, mostly meat and fish that replace household meals.
    - Is that acceptable?
    - Or should the Good options become the default in the specs (for example frozen MSC fish, *kogelbiefstuk*, chicken
      legs), which would bring it to roughly €550?
+
+   **Answer:** €725 is acceptable. The specs stay as they are, with the cheaper options as alternatives.
 
 ### 8.4 Recommendations for S3
 

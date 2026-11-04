@@ -499,6 +499,7 @@ The figures were checked on the pages and in the sections named on 2026-11-04.
 | Cooking fish and intact meat | 63 °C for 15 seconds | §3-401.11(A)(1) [S25] |
 | Whole-muscle, intact beef steaks served rare | Cooked on top and bottom to a surface temperature of 63 °C or above, with a cooked colour change on all outside surfaces; the steak kept intact (not pierced, needle-tenderised or rolled); not served to risk groups | §3-401.11(C) [S25] |
 | Whole meat roasts | A time-temperature table, from 54.4 °C held for 112 minutes to 62.8 °C held for 4 minutes (the holding time may include the rise after the oven) | §3-401.11(B) [S25] |
+| Dried kidney beans and other common beans (*Phaseolus vulgaris*) | Soaked for at least 5 hours with the water poured away, then boiled in fresh water for at least 30 minutes; never cooked in a slow cooker (which may reach only 75 °C) | FDA *Bad Bug Book* (2nd ed.), Phytohaemagglutinin [S33] |
 | Garlic or herbs in oil | Needs time and temperature control (refrigeration) unless modified to stop pathogen growth | Food Code definition of TCS food, §1-201.10 [S25] |
 | Home preserving | Use tested methods and recipes only | National Center for Home Food Preservation [S27] |
 
@@ -510,6 +511,10 @@ The figures were checked on the pages and in the sections named on 2026-11-04.
 - Sous vide and low-temperature cooking follow the time-temperature tables above. A cook below them needs a tested
   pasteurisation table, which Phase 5 cites in `SLW-3`.
 - The Dutch home advice wins where it is stricter, for example 4 °C rather than 5 °C in the fridge.
+- The Food Code's oven chart for roasts (§3-401.11(B)(2): a still oven at 177 °C or more for roasts under 4.5 kg) is
+  not adopted for home roasting. Whole roasts are judged by the core time-temperature table above, whatever the oven
+  temperature; a low oven (as in the reverse sear of `MEA-2.M4`) passes when the core meets the table. Decided at the
+  S2 review.
 
 ---
 

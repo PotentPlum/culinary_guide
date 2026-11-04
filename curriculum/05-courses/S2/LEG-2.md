@@ -94,12 +94,15 @@ At 5 / 6.5 / 8 hours a week the course takes about **3.9 / 3.0 / 2.4 weeks** of 
 - **Acid** (tomato, vinegar, wine) slows softening, so it goes in once the beans are tender.
 - **Digestibility:** beans contain sugars (oligosaccharides) that the gut ferments. Soaking, cooking well and eating
   legumes regularly help.
-- **Safety:** dried kidney beans and some other beans contain a lectin that cooking destroys:
-  - the beans are brought to a full, rolling boil and kept there for several minutes before simmering;
-  - they are never cooked from dry in a slow cooker;
+- **Safety:** dried kidney beans and the other common beans (*Phaseolus vulgaris*: white beans, borlotti, black
+  beans, *bruine bonen*) contain a lectin, phytohaemagglutinin, that proper cooking destroys. Four or five raw beans
+  can make someone ill. The rule (assessment §9):
+  - soaked for at least 5 hours, and the soak water poured away;
+  - boiled in fresh water for at least 30 minutes, before or as the start of the simmer;
+  - never cooked in a slow cooker, which may not get above 75 °C; undercooked beans are the danger, not raw ones alone;
   - tinned beans are already cooked.
 
-  The figure is a gap for the S2 review (§8 of the overview).
+  Chickpeas, lentils and split peas are other species and are not covered by this rule.
 
 **Sessions:**
 1. Soak (20 min, then overnight): set up the four soaks for `LEG-2.M1.X2`, weighed and labelled.
@@ -111,7 +114,7 @@ do.
 - Soaking lentils.
 - Adding tomatoes at the start.
 - A spoonful of baking soda.
-- Kidney beans in a slow cooker.
+- Kidney beans in a slow cooker, or common beans that never boiled for 30 minutes.
 
 #### LEG-2.M1.L2 — Cooking beans and chickpeas
 
@@ -124,10 +127,11 @@ do.
 **Concepts:**
 - **Simmer gently:**
   1. Cover the beans by a few centimetres of water.
-  2. Bring them to a boil and skim.
+  2. Bring them to a boil and skim. Common beans (*Phaseolus*) then stay at a steady boil for 30 minutes
+     (`LEG-2.M1.L1`, assessment §9); chickpeas need not.
   3. Lower to a bare simmer, partly covered.
 
-  Hard boiling bursts the skins. Most soaked beans take 45–90 minutes, chickpeas up to 2 hours, depending on age and
+  A hard boil for the whole cook bursts the skins. Most soaked beans take 45–90 minutes, chickpeas up to 2 hours, depending on age and
   size.
 - **Aromatics:** a halved onion, garlic, bay, a carrot, a strip of kombu or a rind of Parmesan, all lifted out at the
   end.
@@ -151,7 +155,7 @@ do.
 - A slightly thickened, flavoursome liquid.
 
 **Faults:**
-- A rolling boil.
+- A hard boil for the whole cook, or skipping the 30-minute boil for common beans.
 - Judging on one bean.
 - Draining away the liquid.
 - Salting only at the very end, so the beans taste flat inside.
@@ -261,8 +265,9 @@ traditions.
 
 They are cooked side by side at the same simmer. The learner writes predictions first.
 
-**Inputs:** 400 g of dried white beans or borlotti (100 g per pot), salt, four small pans. The beans then become soups
-and salads.
+**Inputs:** 400 g of dried chickpeas (100 g per pot), salt, four small pans. Chickpeas, not common beans, because the
+two unsoaked pots would not meet the soak rule of assessment §9 for *Phaseolus* beans. The chickpeas then become soups,
+salads and hummus.
 
 **Procedure:**
 1. Write the predictions.
@@ -288,7 +293,7 @@ of soaking and salt explained. This is part of `IN-STA` level 3: the explanation
 | LEG-2.M1.Q1 | multiple choice | LEG-2.M1.L1 | — | Which legume needs no soaking? A) chickpeas B) kidney beans C) red lentils D) white beans | C | Lentils and split peas cook quickly without soaking. |
 | LEG-2.M1.Q2 | multiple choice | LEG-2.M1.L1 | — | What does salt in the soaking water do to beans? A) makes them tough B) softens the skins and gives creamier, more intact beans C) nothing D) makes them cook slower | B | The myth is wrong; the comparison shows it. |
 | LEG-2.M1.Q3 | multiple choice | LEG-2.M1.L1 | — | Why are tomatoes added to a bean stew only once the beans are tender? A) they burn B) acid slows the softening of the beans C) for colour D) they curdle | B | Acid keeps the skins and cell walls firm. |
-| LEG-2.M1.Q4 | multiple choice | LEG-2.M1.L1 | yes | How are dried kidney beans made safe to eat? A) soaking alone B) a full, rolling boil for several minutes before simmering; never from dry in a slow cooker C) a long cook in a slow cooker on low D) rinsing | B | Cooking destroys the lectin; low heat doesn't. |
+| LEG-2.M1.Q4 | multiple choice | LEG-2.M1.L1 | yes | How are dried kidney beans made safe to eat? A) soaking alone B) soaked at least 5 hours, the water poured away, then boiled in fresh water for at least 30 minutes C) a long cook in a slow cooker on low D) rinsing and a 5-minute boil | B | Assessment §9 (FDA *Bad Bug Book*): boiling destroys the lectin; a slow cooker may stay at 75 °C or below, which doesn't. |
 | LEG-2.M1.Q5 | multiple choice | LEG-2.M1.L1 | — | A pinch of baking soda in the cooking water: A) makes beans soapy whatever the amount B) softens skins faster, especially in hard water; too much makes them mushy C) keeps them firm D) adds flavour | B | Use it sparingly. |
 | LEG-2.M1.Q6 | multiple choice | LEG-2.M1.L3 | — | Which lentils suit a warm lentil salad? A) red B) yellow C) green or brown D) any | C | They hold their shape. |
 | LEG-2.M1.Q7 | multiple choice | LEG-2.M1.L3 | — | What is a *tadka*? A) a lentil purée B) whole spices, garlic and onion fried in hot fat and poured over a dal at the end C) a bread D) a chutney | B | The finishing layer of a dal. |

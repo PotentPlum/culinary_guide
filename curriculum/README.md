@@ -23,7 +23,7 @@ silently change an agreed structure: changes are explained and logged in the pha
 | 2 | Complete curriculum outline (courses → modules → lessons, objectives, prerequisites, hours) | [`02-curriculum-outline.md`](02-curriculum-outline.md) and [`02-outline/`](02-outline/) | ✅ Reviewed; revised in Phase 3 |
 | 3 | Curriculum validation and optimization (benchmarks, realistic hours, barbecue added) | [`03-validation.md`](03-validation.md) | ✅ Reviewed; answers applied |
 | 4 | Full competency framework and assessment design (milestones, capstone rubrics) | [`04-competency-framework.md`](04-competency-framework.md) and [`04-assessment.md`](04-assessment.md) | ✅ Reviewed; answers applied |
-| 5 | Detailed course development (stage by stage) | [`05-course-development.md`](05-course-development.md) and [`05-courses/`](05-courses/) | 🔄 S2 ready for review |
+| 5 | Detailed course development (stage by stage) | [`05-course-development.md`](05-course-development.md) and [`05-courses/`](05-courses/) | 🔄 S1–S2 reviewed; S3 in progress |
 | 6 | Detailed lesson development | — | Pending |
 | 7 | App content architecture (entities, IDs, relationships, progress tracking) | — | Pending |
 
