@@ -170,7 +170,7 @@ evidence record over the stage, not in a single check.
 | S2 | [`LEG-2`](05-courses/S2/LEG-2.md) | 10 / 10 | 5 / 5 | 32 | 9 | 8 | €35 |
 | S2 | [`BAK-2`](05-courses/S2/BAK-2.md) | 17 / 17 | 9 / 9 | 40 | 3 | 16 | €80 |
 | S2 | [`BRD-2`](05-courses/S2/BRD-2.md) | 11 / 11 | 5 / 5 | 32 | 2 | 11 | €25 |
-| S3 | `SAF-3` | 0 / 5 | — | — | — | — | — |
+| S3 | [`SAF-3`](05-courses/S3/SAF-3.md) | 5 / 5 | 2 / 2 | 16 | 16 | 4 | €15 |
 | S3 | `FLV-3` | 0 / 14 | — | — | — | — | — |
 | S3 | `BUT-3` | 0 / 9 | — | — | — | — | — |
 | S3 | `SLW-3` | 0 / 12 | — | — | — | — | — |
@@ -203,68 +203,75 @@ each level. ✗ marks a stage target that no exercise up to that stage evidences
 row rests on the quiz alone.
 
 <!-- BEGIN generated:reachability -->
-| Competency | S1 | S2 | Exercises at L2 · L3 · L4 · L5 |
-|---|---|---|---|
-| `CK-TERM` | 2 (quiz) | 3 | 0 · 2 · 0 · 0 |
-| `CK-METH` | 2 | 3 | 1 · 2 · 0 · 0 |
-| `CK-RCPT` | 3 | 3 | 0 · 2 · 0 · 0 |
-| `CK-CLAS` | – | 2 | 2 · 0 · 0 · 0 |
-| `CK-CUIS` | – | 1 | 0 · 0 · 0 · 0 |
-| `IN-SEL` | 2 | 3 | 1 · 2 · 0 · 0 |
-| `IN-STO` | 3 | 3 | 1 · 5 · 0 · 0 |
-| `IN-VEG` | 2 | 3 | 3 · 2 · 0 · 0 |
-| `IN-STA` | 2 | 3 | 4 · 3 · 0 · 0 |
-| `IN-DAI` | 2 | 3 | 2 · 2 · 0 · 0 |
-| `IN-MEA` | 1 | 3 | 0 · 2 · 0 · 0 |
-| `IN-FSH` | 1 | 3 | 0 · 2 · 0 · 0 |
-| `IN-ARO` | 1 | 2 | 1 · 0 · 0 · 0 |
-| `IN-BAK` | – | 3 | 0 · 2 · 0 · 0 |
-| `TS-MEP` | 3 | 4 | 1 · 1 · 1 · 0 |
-| `TS-KNF` | 3 | 4 | 4 · 3 · 2 · 0 |
-| `TS-DRY` | 2 | 3 | 3 · 9 · 0 · 0 |
-| `TS-MOI` | 3 | 4 | 0 · 2 · 3 · 0 |
-| `TS-CMB` | – | 2 | 2 · 0 · 0 · 0 |
-| `TS-EGG` | 3 | 4 | 1 · 3 · 2 · 0 |
-| `TS-VEG` | 3 | 4 | 0 · 4 · 3 · 0 |
-| `TS-STA` | 3 | 3 | 1 · 4 · 0 · 0 |
-| `TS-STK` | – | 3 | 0 · 5 · 0 · 0 |
-| `TS-SAU` | – | 3 | 0 · 8 · 0 · 0 |
-| `TS-PRO` | 1 | 3 | 0 · 8 · 0 · 0 |
-| `TS-FAB` | – | 2 | 4 · 0 · 0 · 0 |
-| `TS-BAK` | – | 3 | 0 · 6 · 0 · 0 |
-| `TS-BRD` | – | 2 | 3 · 0 · 0 · 0 |
-| `TS-PLT` | 1 | 2 | 2 · 0 · 0 · 0 |
-| `SC-HEAT` | 2 | 3 | 3 · 2 · 0 · 0 |
-| `SC-BRWN` | 2 | 3 | 1 · 4 · 0 · 0 |
-| `SC-PROT` | 2 | 3 | 1 · 4 · 0 · 0 |
-| `SC-STRC` | 2 (quiz) | 3 | 0 · 2 · 0 · 0 |
-| `SC-EMUL` | 1 | 3 | 0 · 5 · 0 · 0 |
-| `SC-MICR` | 1 | 3 | 0 · 2 · 0 · 0 |
-| `FL-SENS` | 2 | 3 | 3 · 1 · 0 · 0 |
-| `FL-SEAS` | 2 | 3 | 4 · 2 · 0 · 0 |
-| `FL-TEXT` | 1 | 2 | 4 · 0 · 0 · 0 |
-| `FL-ARCH` | – | 2 | 2 · 0 · 0 · 0 |
-| `FL-CORR` | 1 | 3 | 0 · 2 · 0 · 0 |
-| `KM-PLAN` | 2 | 3 | 2 · 2 · 0 · 0 |
-| `KM-MATH` | 2 | 3 | 1 · 1 · 0 · 0 |
-| `KM-PURC` | 1 | 2 | 3 · 0 · 0 · 0 |
-| `KM-WAST` | 2 | 3 | 2 · 3 · 0 · 0 |
-| `KM-EQPT` | 2 | 3 | 3 · 5 · 0 · 0 |
-| `SA-HYG` | 3 | 4 | 1 · 1 · 5 · 0 |
-| `SA-TEMP` | 3 | 4 | 1 · 3 · 4 · 0 |
-| `SA-PHYS` | 3 | 4 | 0 · 2 · 1 · 0 |
-| `SA-ALLG` | 2 | 3 | 1 · 2 · 0 · 0 |
-| `SA-HRPR` | – | 1 | 0 · 0 · 0 · 0 |
-| `RD-RATO` | – | 2 | 4 · 0 · 0 · 0 |
-| `RD-ADPT` | 1 | 2 | 2 · 0 · 0 · 0 |
-| `RD-TEST` | 1 | 2 | 4 · 0 · 0 · 0 |
-| `RD-WRIT` | 2 | 2 | 1 · 0 · 0 · 0 |
-| `JD-CUES` | 2 | 3 | 4 · 5 · 0 · 0 |
-| `JD-CHSE` | 1 | 2 | 2 · 0 · 0 · 0 |
-| `JD-TRBL` | 1 | 3 | 1 · 3 · 0 · 0 |
-| `JD-REFL` | 2 | 3 | 4 · 3 · 0 · 0 |
-| `CR-COMP` | – | 1 | 0 · 0 · 0 · 0 |
-| `CR-IMPV` | – | 1 | 0 · 0 · 0 · 0 |
+| Competency | S1 | S2 | S3 (in progress) | Exercises at L2 · L3 · L4 · L5 |
+|---|---|---|---|---|
+| `CK-TERM` | 2 (quiz) | 3 | 3 | 0 · 2 · 0 · 0 |
+| `CK-METH` | 2 | 3 | 4 ✗ | 1 · 2 · 0 · 0 |
+| `CK-RCPT` | 3 | 3 | 4 ✗ | 0 · 2 · 0 · 0 |
+| `CK-CLAS` | – | 2 | 2 | 2 · 0 · 0 · 0 |
+| `CK-CUIS` | – | 1 | 3 ✗ | 0 · 0 · 0 · 0 |
+| `CK-BEVR` | – | – | 1 | 0 · 0 · 0 · 0 |
+| `IN-SEL` | 2 | 3 | 4 ✗ | 1 · 2 · 0 · 0 |
+| `IN-STO` | 3 | 3 | 4 ✗ | 1 · 5 · 0 · 0 |
+| `IN-VEG` | 2 | 3 | 4 ✗ | 3 · 2 · 0 · 0 |
+| `IN-STA` | 2 | 3 | 4 ✗ | 4 · 3 · 0 · 0 |
+| `IN-DAI` | 2 | 3 | 4 ✗ | 2 · 2 · 0 · 0 |
+| `IN-MEA` | 1 | 3 | 3 | 0 · 2 · 0 · 0 |
+| `IN-FSH` | 1 | 3 | 3 | 0 · 2 · 0 · 0 |
+| `IN-ARO` | 1 | 2 | 4 ✗ | 1 · 0 · 0 · 0 |
+| `IN-BAK` | – | 3 | 3 | 0 · 2 · 0 · 0 |
+| `TS-MEP` | 3 | 4 | 4 | 1 · 1 · 1 · 0 |
+| `TS-KNF` | 3 | 4 | 4 | 4 · 3 · 2 · 0 |
+| `TS-DRY` | 2 | 3 | 4 ✗ | 3 · 9 · 0 · 0 |
+| `TS-MOI` | 3 | 4 | 4 | 0 · 2 · 3 · 0 |
+| `TS-CMB` | – | 2 | 4 ✗ | 2 · 0 · 0 · 0 |
+| `TS-FIRE` | – | – | 3 ✗ | 0 · 0 · 0 · 0 |
+| `TS-EGG` | 3 | 4 | 4 | 1 · 3 · 2 · 0 |
+| `TS-VEG` | 3 | 4 | 4 | 0 · 4 · 3 · 0 |
+| `TS-STA` | 3 | 3 | 4 ✗ | 1 · 4 · 0 · 0 |
+| `TS-STK` | – | 3 | 4 ✗ | 0 · 5 · 0 · 0 |
+| `TS-SAU` | – | 3 | 4 ✗ | 0 · 8 · 0 · 0 |
+| `TS-PRO` | 1 | 3 | 4 ✗ | 0 · 8 · 0 · 0 |
+| `TS-FAB` | – | 2 | 3 ✗ | 4 · 0 · 0 · 0 |
+| `TS-BAK` | – | 3 | 4 ✗ | 0 · 6 · 0 · 0 |
+| `TS-BRD` | – | 2 | 3 ✗ | 3 · 0 · 0 · 0 |
+| `TS-GRD` | – | – | 3 ✗ | 0 · 0 · 0 · 0 |
+| `TS-PRS` | – | – | 3 ✗ | 0 · 0 · 0 · 0 |
+| `TS-MOD` | – | – | 1 | 0 · 0 · 0 · 0 |
+| `TS-PLT` | 1 | 2 | 2 | 2 · 0 · 0 · 0 |
+| `SC-HEAT` | 2 | 3 | 4 ✗ | 3 · 2 · 0 · 0 |
+| `SC-BRWN` | 2 | 3 | 4 ✗ | 1 · 4 · 0 · 0 |
+| `SC-PROT` | 2 | 3 | 4 ✗ | 1 · 4 · 0 · 0 |
+| `SC-STRC` | 2 (quiz) | 3 | 4 ✗ | 0 · 2 · 0 · 0 |
+| `SC-EMUL` | 1 | 3 | 3 | 0 · 5 · 0 · 0 |
+| `SC-MICR` | 1 | 3 | 3 | 0 · 2 · 0 · 0 |
+| `FL-SENS` | 2 | 3 | 4 ✗ | 3 · 1 · 0 · 0 |
+| `FL-SEAS` | 2 | 3 | 4 ✗ | 4 · 2 · 0 · 0 |
+| `FL-TEXT` | 1 | 2 | 3 ✗ | 4 · 0 · 0 · 0 |
+| `FL-ARCH` | – | 2 | 3 ✗ | 2 · 0 · 0 · 0 |
+| `FL-CORR` | 1 | 3 | 4 ✗ | 0 · 2 · 0 · 0 |
+| `KM-PLAN` | 2 | 3 | 4 ✗ | 2 · 2 · 0 · 0 |
+| `KM-MATH` | 2 | 3 | 4 ✗ | 1 · 1 · 0 · 0 |
+| `KM-PURC` | 1 | 2 | 4 ✗ | 3 · 0 · 0 · 0 |
+| `KM-WAST` | 2 | 3 | 4 ✗ | 2 · 3 · 0 · 0 |
+| `KM-EQPT` | 2 | 3 | 3 | 3 · 5 · 0 · 0 |
+| `SA-HYG` | 3 | 4 | 5 | 1 · 1 · 5 · 1 |
+| `SA-TEMP` | 3 | 4 | 4 | 1 · 3 · 5 · 0 |
+| `SA-PHYS` | 3 | 4 | 5 | 0 · 2 · 1 · 1 |
+| `SA-ALLG` | 2 | 3 | 4 ✗ | 1 · 2 · 0 · 0 |
+| `SA-HRPR` | – | 1 | 4 | 0 · 0 · 1 · 0 |
+| `RD-RATO` | – | 2 | 3 ✗ | 4 · 0 · 0 · 0 |
+| `RD-ADPT` | 1 | 2 | 3 ✗ | 2 · 0 · 0 · 0 |
+| `RD-TEST` | 1 | 2 | 3 ✗ | 4 · 0 · 0 · 0 |
+| `RD-WRIT` | 2 | 2 | 3 ✗ | 1 · 0 · 0 · 0 |
+| `JD-CUES` | 2 | 3 | 4 ✗ | 4 · 5 · 0 · 0 |
+| `JD-CHSE` | 1 | 2 | 3 ✗ | 2 · 0 · 0 · 0 |
+| `JD-TRBL` | 1 | 3 | 4 ✗ | 1 · 3 · 0 · 0 |
+| `JD-REFL` | 2 | 3 | 4 ✗ | 4 · 3 · 0 · 0 |
+| `CR-COMP` | – | 1 | 3 ✗ | 0 · 0 · 0 · 0 |
+| `CR-MENU` | – | – | 2 ✗ | 0 · 0 · 0 · 0 |
+| `CR-IMPV` | – | 1 | 3 ✗ | 0 · 0 · 0 · 0 |
+| `CR-ORIG` | – | – | 1 | 0 · 0 · 0 · 0 |
 <!-- END generated:reachability -->
 
 ## 5. Decisions and change log
@@ -326,12 +333,14 @@ No course, module, lesson, hour, exercise or `Moves` entry has been added, remov
 | Heavy saucepan with a lid | 0 | `STA-1`, `LEG-2`, `SAU-2` |
 | Heavy stainless sauté pan | 0 | `EQP-1`, `HEA-1`, `VEG-1`, `POU-2`, `SAU-2` |
 | Honing steel | 0 | `EQP-1`, `KNF-1` |
-| Instant-read thermometer | 0 | `EGG-1`, `EQP-1`, `HEA-1`, `ORI-1`, `SAF-1`, `BRD-2`, `FSH-2`, `HEA-2`, `LEG-2`, `MEA-2`, `POU-2`, `SAU-2`, `SCI-2`, `STK-2` |
+| Instant-read thermometer | 0 | `EGG-1`, `EQP-1`, `HEA-1`, `ORI-1`, `SAF-1`, `BRD-2`, `FSH-2`, `HEA-2`, `LEG-2`, `MEA-2`, `POU-2`, `SAU-2`, `SCI-2`, `STK-2`, `SAF-3` |
+| Labels and a marker | 0 | `SAF-3` |
 | Large stable board | 0 | `EQP-1`, `KNF-1` |
 | Mixing bowls | 0 | `WRK-1`, `BAK-2`, `SCI-2` |
 | Oven thermometer | 0 | `EQP-1`, `ORI-1`, `BAK-2`, `BRD-2` |
 | Paring knife | 0 | `EQP-1`, `KNF-1` |
 | Saucepans | 0 | `EQP-1`, `HEA-1`, `VEG-1`, `SCI-2` |
+| Shallow containers | 0 | `SAF-3` |
 | Sheet pan as a tray | 0 | `WRK-1` |
 | Sheet pans | 0 | `EQP-1`, `HEA-1`, `STA-1`, `VEG-1`, `LEG-2` |
 | Sieve | 0 | `STA-1` |
@@ -344,11 +353,14 @@ No course, module, lesson, hour, exercise or `Moves` entry has been added, remov
 | Fine sieve | 1 | `EGG-1`, `LEG-2`, `SAU-2`, `SCI-2`, `STK-2` |
 | Frying thermometer | 1 | `HEA-2` |
 | Heavy lidded casserole (*braadpan*) | 1 | `BRD-2`, `HEA-2`, `LEG-2`, `MEA-2` |
+| Large stockpot | 1 | `SAF-3` |
 | Loaf tin | 1 | `BAK-2`, `BRD-2` |
 | Mixer | 1 | `BAK-2` |
 | Rolling pin | 1 | `BAK-2` |
 | Tart tin | 1 | `BAK-2` |
 | Whetstone | 1 | `KNF-2` |
+| Mandoline | 2 | `SAF-3` |
+| Pressure cooker | 2 | `SAF-3` |
 | Baking beans | — | `BAK-2` |
 | Balloon whisk | — | `SAU-2` |
 | Blender | — | `STK-2` |
@@ -368,6 +380,7 @@ No course, module, lesson, hour, exercise or `Moves` entry has been added, remov
 | Fish spatula | — | `HEA-1`, `FSH-2` |
 | Fish tweezers | — | `FSH-2` |
 | Freezer containers | — | `LEG-2`, `STK-2` |
+| Freezer thermometer | — | `SAF-3` |
 | Fridge thermometer | — | `SAF-1` |
 | Grid board or ruler | — | `KNF-1`, `ORI-1`, `KNF-2` |
 | Grill pan | — | `HEA-2` |
