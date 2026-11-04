@@ -508,6 +508,14 @@ The figures were checked on the pages and in the sections named on 2026-11-04.
 | Lacto-fermented vegetables (sauerkraut) | Salt at 2.25–2.5 % of the vegetables' weight; fermented at 21–24 °C for about 3–4 weeks (5–6 weeks at 16–18 °C; below about 16 °C it may not ferment) | UW-Extension, *Make your own sauerkraut* [S36]; NCHFP sauerkraut [S27] |
 | Nitrite curing salt | Used only where a tested recipe needs it; the added nitrite at most 80 mg per kg of meat (as the nitrite ion), weighed from the nitrite content on the salt's label | Regulation (EC) 1333/2008, Annex II, as amended by Regulation (EU) 2023/2108, from 9 October 2025 (FSAI summary) [S37] |
 | Dried kidney beans and other common beans (*Phaseolus vulgaris*) | Soaked for at least 5 hours with the water poured away, then boiled in fresh water for at least 30 minutes; never cooked in a slow cooker (which may reach only 75 °C) | FDA *Bad Bug Book* (2nd ed.), Phytohaemagglutinin [S33] |
+| Egg-thickened desserts cooked for later (custard and ice-cream bases, *crème anglaise*, curds, Swiss meringue) | Every part to at least 71 °C, checked with a probe | FDA, *What You Need to Know About Egg Safety*: dishes containing eggs to 160 °F [S38]; it also meets Food Code §3-401.11(A)(2) for raw eggs not cooked to order (70 °C instantaneous) [S25] |
+| Desserts in which the egg is raw or lightly cooked when served (an uncooked ice-cream base, a mousse with uncooked meringue, Italian meringue below the row above) | Made with pasteurised eggs or egg products. From S4 this applies for every guest; the raw-yolk sauces of S2 and the mousses of S3 keep the risk-group row (open at the S4 review) | [S38]; risk groups §3-801.11 [S25] |
+| Game animals | Farmed (commercially raised) deer and other game, intact: 63 °C for 15 seconds; minced: the minced row. Wild game animals (hunted deer, wild boar, hare): 74 °C, instantaneous | §3-401.11(A)(1) and (A)(3), §3-201.17 [S25] |
+| Duck, goose, pigeon and game birds (pheasant, partridge) | Poultry: the poultry row, or the low-temperature poultry table | Food Code definition of poultry, §1-201.10 [S25]; [S34] |
+| Wild boar | Only meat from a carcass sampled and examined for *Trichinella*, as EU law requires for every wild-boar carcass in a game-handling establishment: bought from a supplier of inspected game, never untested meat from a hunt; cooked as wild game | Regulation (EU) 2015/1375, Article 2(2) and Annex III [S39]; [S25] |
+| Live crabs and lobsters | Not dispatched at home in the program. Bought cooked, or dispatched by a trained fishmonger (double spiking for crabs, whole-body splitting for lobsters, ideally after electrical stunning) and cooked without delay. Boiling alive, drowning in fresh water, chilling in a freezer or on ice, and live dismemberment are inhumane. Cooked shellfish are kept as leftovers | LSE *Review of the Evidence of Sentience in Cephalopod Molluscs and Decapod Crustaceans* (2021) [S40]; Crustacean Compassion, *Stunning and slaughter* [S41]; [S22] |
+| Alcohol in cooking | Alcohol stays after cooking. Retained: 85 % stirred into a boiling liquid and taken off the heat; 75 % flamed; 70 % stored overnight without heat; 45 % baked 25 minutes without stirring in; stirred in and baked or simmered: 40 % after 15 minutes, 35 % after 30 minutes, 25 % after 1 hour, 20 % after 1.5 hours, 10 % after 2 hours, 5 % after 2.5 hours. A dish cooked with alcohol is not alcohol-free | USDA *Table of Nutrient Retention Factors*, Release 6 (2007), alcohol rows [S42] |
+| Alcohol and guests | No alcohol under 18 (*Geen 18, geen alcohol*); none in pregnancy (no safe amount); the advice is not to drink while breastfeeding. The general advice is not to drink alcohol, so every menu with drinks has a non-alcoholic pairing | Voedingscentrum, *Alcohol* [S43] |
 | Garlic or herbs in oil | Needs time and temperature control (refrigeration) unless modified to stop pathogen growth | Food Code definition of TCS food, §1-201.10 [S25] |
 | Home preserving | Use tested methods and recipes only | National Center for Home Food Preservation [S27] |
 
@@ -520,7 +528,13 @@ The figures were checked on the pages and in the sections named on 2026-11-04.
   the poultry table for poultry, the steak row for intact beef steaks, and 63 °C for 15 seconds for other intact meat
   and fish (or the fish row, for fish served below it). A cook below these tables is a gate **Fail**.
 - The poultry table, the cook-chill row, the fish row, the risk-group row and the preserving rows were added for S3 and
-  are open for review (Phase 5 overview, S3 batch).
+  were kept at the S3 review.
+- The egg, game, poultry-definition, wild-boar, crustacean and alcohol rows were added for S4 and are open for review
+  (Phase 5 overview, S4 batch).
+- Tier 3 equipment (the whipping siphon, the blowtorch) is used only as its maker's instructions say: the siphon with
+  the maker's chargers and never above its fill line, the blowtorch refilled away from flames and never pointed at a
+  person. The course files give no pressure or gas figures. The Dutch rules on nitrous oxide are to be checked before
+  Phase 6.
 - The Dutch home advice wins where it is stricter, for example 4 °C rather than 5 °C in the fridge.
 - The Food Code's oven chart for roasts (§3-401.11(B)(2): a still oven at 177 °C or more for roasts under 4.5 kg) is
   not adopted for home roasting. Whole roasts are judged by the core time-temperature table above, whatever the oven

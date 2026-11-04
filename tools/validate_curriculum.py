@@ -38,7 +38,8 @@ Phase 5 (curriculum/05-course-development.md, 05-courses/<stage>/<course>.md) ad
   highest level it reaches, against a Phase 4 success row and an exercise tagged at that level.
 - Every course outcome from level 2 is practised in an exercise; equipment stays within the stage's tier; every
   developed stage target is evidenced by an exercise at that level.
-- Every exercise ID named in a course file is an exercise of the outline, with a spec once its stage is developed.
+- Every exercise ID named in a course file is an exercise of the outline, with a spec once its stage is developed;
+  every module and lesson ID named is in the outline, and a named lesson has its outline once its stage is developed.
 
 The generated blocks (between `<!-- BEGIN generated:NAME -->` and `<!-- END generated:NAME -->`) in
 02-curriculum-outline.md, 04-competency-framework.md, 04-assessment.md, 04-competencies/*.md,
@@ -1031,6 +1032,8 @@ DOC_MODULE_RE = re.compile(rf"^### ({COURSE}\.M\d+) — (.+)$")
 DOC_LESSON_RE = re.compile(rf"^#### ({COURSE}\.M\d+\.L\d+) — (.+)$")
 DOC_EXERCISE_RE = re.compile(rf"^#### ({COURSE}\.M\d+\.X\d+) — (.+)$")
 EXERCISE_REF_RE = re.compile(rf"\b({COURSE}\.M\d+\.X\d+)\b")
+#: Module and lesson IDs (`SAU-2.M2`, `FLV-3.M2.L1`), but not the module part of an exercise or item ID.
+UNIT_REF_RE = re.compile(rf"\b({COURSE}\.M\d+(?:\.L\d+)?)(?!\d|\.[A-Z]\d)")
 ITEM_RE = re.compile(rf"^\| ({COURSE}\.M\d+\.Q\d+) \| (.+?) \| (.+?) \| (yes|—) \| (.+?) \| (.+?) \| (.+?) \|$")
 EVROW_RE = re.compile(rf"^\| ({COMP}) \| ([1-5]) \| (.+?) \| (.+?) \|$")
 EQUIP_RE = re.compile(r"^\| (?!Item \|)(.+?) \| ([0-3]|—) \| (.+?) \| (.+?) \|$")
@@ -1261,9 +1264,11 @@ def check_phase5(root: Path, stages: dict[str, list[Course]], phase1: Phase1, ph
             if not course.is_milestone and course.id not in phase5.docs:
                 report.error(f"{course.id}: {stage} is developed, but 05-courses/{stage}/{course.id}.md is missing")
 
-    # Exercise IDs named anywhere in a course file (evidence rows, specs, notes) must exist in the outline, and have a
-    # spec once their stage is developed, so cross-course references can't drift.
+    # Exercise, module and lesson IDs named anywhere in a course file (evidence rows, specs, notes) must exist in the
+    # outline, and exercises and lessons must be written once their stage is developed, so references can't drift.
     outline_exercises = {e[0]: c for c in courses.values() for m in c.modules for e in m.exercises}
+    outline_units = {m.id: c for c in courses.values() for m in c.modules}
+    outline_units.update({lesson.id: c for c in courses.values() for m in c.modules for lesson in m.lessons})
     for doc in phase5.docs.values():
         text = doc.path.read_text(encoding="utf-8")
         for ident in sorted(set(EXERCISE_REF_RE.findall(text))):
@@ -1272,6 +1277,13 @@ def check_phase5(root: Path, stages: dict[str, list[Course]], phase1: Phase1, ph
                 report.error(f"{doc.id}: names {ident}, which is not an exercise in the outline")
             elif owner.stage in phase5.developed and owner.id in phase5.docs and ident not in phase5.docs[owner.id].exercises:
                 report.error(f"{doc.id}: names {ident}, which has no spec in {owner.id}")
+        for ident in sorted(set(UNIT_REF_RE.findall(text))):
+            owner = outline_units.get(ident)
+            if owner is None:
+                kind = "lesson" if ".L" in ident else "module"
+                report.error(f"{doc.id}: names {ident}, which is not a {kind} in the outline")
+            elif ".L" in ident and owner.stage in phase5.developed and owner.id in phase5.docs and ident not in phase5.docs[owner.id].lessons:
+                report.error(f"{doc.id}: names {ident}, which has no lesson outline in {owner.id}")
 
     # Reachability: in every developed stage, each competency's stage target is evidenced by an exercise at that level.
     tagged = reach(stages, phase1, phase5)

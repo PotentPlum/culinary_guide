@@ -416,6 +416,14 @@ class ValidateCurriculumTest(unittest.TestCase):
             self.course_errors(course_doc(evidence_row=row)),
         )
 
+    def test_module_and_lesson_ids_named_in_a_course_file_must_exist(self) -> None:
+        row = "| TS-KNF | 2 | `KNF-1.M1.X1` | photo — even dice, as taught in `KNF-1.M1.L1` of `KNF-1.M1` |"
+        self.assertEqual(self.course_errors(course_doc(evidence_row=row)), [])
+        row = "| TS-KNF | 2 | `KNF-1.M1.X1` | photo — even dice, as taught in `KNF-1.M1.L7` and `KNF-1.M8` |"
+        errors = self.course_errors(course_doc(evidence_row=row))
+        self.assertIn("KNF-1: names KNF-1.M1.L7, which is not a lesson in the outline", errors)
+        self.assertIn("KNF-1: names KNF-1.M8, which is not a module in the outline", errors)
+
     def test_a_knowledge_check_replaces_an_exercise_only_for_quiz_only_rows(self) -> None:
         row = "| TS-KNF | 2 | knowledge check | quiz — the cut names |"
         self.write_entries(knf=entry("TS-KNF", "Knife skills", {2: "quiz", 3: "measure, photo"}))
