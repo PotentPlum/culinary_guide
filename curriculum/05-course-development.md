@@ -184,7 +184,7 @@ evidence record over the stage, not in a single check.
 | S3 | [`KMG-3`](05-courses/S3/KMG-3.md) | 9 / 9 | 5 / 5 | 16 | 6 | 13 | €0 |
 | S3 | [`NUT-3`](05-courses/S3/NUT-3.md) | 6 / 6 | 3 / 3 | 16 | 8 | 4 | €40 |
 | S4 | [`CLS-4`](05-courses/S4/CLS-4.md) | 13 / 13 | 8 / 8 | 32 | 4 | 15 | €230 |
-| S4 | `CUI-4` | 0 / 12 | — | — | — | — | — |
+| S4 | [`CUI-4`](05-courses/S4/CUI-4.md) | 12 / 12 | 6 / 6 | 24 | 5 | 12 | €210 |
 | S4 | [`PRO-4`](05-courses/S4/PRO-4.md) | 11 / 11 | 7 / 7 | 40 | 17 | 15 | €260 |
 | S4 | [`PST-4`](05-courses/S4/PST-4.md) | 11 / 11 | 5 / 5 | 40 | 8 | 12 | €110 |
 | S4 | [`MOD-4`](05-courses/S4/MOD-4.md) | 7 / 7 | 5 / 5 | 32 | 3 | 10 | €45 |
@@ -209,7 +209,7 @@ row rests on the quiz alone.
 | `CK-METH` | 2 | 3 | 4 | 4 | 1 · 2 · 2 · 0 |
 | `CK-RCPT` | 3 | 3 | 4 | 4 | 0 · 2 · 1 · 0 |
 | `CK-CLAS` | – | 2 | 2 | 4 | 2 · 1 · 3 · 0 |
-| `CK-CUIS` | – | 1 | 3 | 4 ✗ | 0 · 17 · 0 · 0 |
+| `CK-CUIS` | – | 1 | 3 | 4 | 0 · 17 · 3 · 0 |
 | `CK-BEVR` | – | – | 1 | 3 ✗ | 0 · 0 · 0 · 0 |
 | `IN-SEL` | 2 | 3 | 4 | 4 | 1 · 2 · 3 · 0 |
 | `IN-STO` | 3 | 3 | 4 | 4 | 1 · 5 · 3 · 0 |
@@ -218,7 +218,7 @@ row rests on the quiz alone.
 | `IN-DAI` | 2 | 3 | 4 | 4 | 2 · 2 · 2 · 0 |
 | `IN-MEA` | 1 | 3 | 3 | 4 | 0 · 3 · 2 · 0 |
 | `IN-FSH` | 1 | 3 | 3 | 4 | 0 · 3 · 2 · 0 |
-| `IN-ARO` | 1 | 2 | 4 | 4 | 1 · 0 · 4 · 0 |
+| `IN-ARO` | 1 | 2 | 4 | 4 | 1 · 0 · 7 · 0 |
 | `IN-BAK` | – | 3 | 3 | 4 | 0 · 3 · 2 · 0 |
 | `TS-MEP` | 3 | 4 | 4 | 5 ✗ | 1 · 1 · 2 · 0 |
 | `TS-KNF` | 3 | 4 | 4 | 5 | 4 · 3 · 2 · 1 |
@@ -248,7 +248,7 @@ row rests on the quiz alone.
 | `FL-SENS` | 2 | 3 | 4 | 4 | 3 · 1 · 1 · 0 |
 | `FL-SEAS` | 2 | 3 | 4 | 5 | 4 · 2 · 2 · 2 |
 | `FL-TEXT` | 1 | 2 | 3 | 4 | 4 · 4 · 4 · 0 |
-| `FL-ARCH` | – | 2 | 3 | 4 | 2 · 12 · 3 · 0 |
+| `FL-ARCH` | – | 2 | 3 | 4 | 2 · 12 · 6 · 0 |
 | `FL-CORR` | 1 | 3 | 4 | 4 | 0 · 2 · 1 · 0 |
 | `KM-PLAN` | 2 | 3 | 4 | 4 | 2 · 2 · 5 · 0 |
 | `KM-MATH` | 2 | 3 | 4 | 4 | 1 · 1 · 4 · 0 |
@@ -265,7 +265,7 @@ row rests on the quiz alone.
 | `RD-TEST` | 1 | 2 | 3 | 4 | 4 · 2 · 1 · 0 |
 | `RD-WRIT` | 2 | 2 | 3 | 4 | 1 · 2 · 1 · 0 |
 | `JD-CUES` | 2 | 3 | 4 | 4 | 4 · 5 · 5 · 0 |
-| `JD-CHSE` | 1 | 2 | 3 | 4 | 2 · 5 · 2 · 0 |
+| `JD-CHSE` | 1 | 2 | 3 | 4 | 2 · 5 · 5 · 0 |
 | `JD-TRBL` | 1 | 3 | 4 | 4 | 1 · 3 · 2 · 0 |
 | `JD-REFL` | 2 | 3 | 4 | 4 | 4 · 3 · 3 · 0 |
 | `CR-COMP` | – | 1 | 3 | 4 | 2 · 7 · 2 · 0 |
@@ -330,13 +330,13 @@ No course, module, lesson, hour, exercise or `Moves` entry has been added, remov
 | Bread knife | 0 | `EQP-1` |
 | Cast-iron or carbon-steel skillet | 0 | `EQP-1`, `HEA-1`, `MEA-2`, `CUI-3`, `FIR-3`, `VEG-3`, `PRO-4` |
 | Chef's knife (20 cm) | 0 | `EQP-1`, `KNF-1`, `KNF-2`, `POU-2` |
-| Deep heavy pot for frying | 0 | `HEA-2` |
+| Deep heavy pot for frying | 0 | `HEA-2`, `CUI-4` |
 | Deep pot with a rack | 0 | `PRS-3` |
 | Digital scale (1 g) | 0 | `ORI-1`, `TST-1`, `WRK-1`, `BAK-2`, `BRD-2`, `KNF-2`, `SCI-2`, `BRD-3`, `BUT-3`, `FLV-3`, `KMG-3`, `PRS-3`, `RDV-4` |
 | Heavy saucepan with a lid | 0 | `STA-1`, `LEG-2`, `SAU-2`, `PRS-3`, `PST-4` |
 | Heavy stainless sauté pan | 0 | `EQP-1`, `HEA-1`, `VEG-1`, `POU-2`, `SAU-2`, `VEG-3`, `CLS-4`, `PRO-4` |
 | Honing steel | 0 | `EQP-1`, `KNF-1` |
-| Instant-read thermometer | 0 | `EGG-1`, `EQP-1`, `HEA-1`, `ORI-1`, `SAF-1`, `BRD-2`, `FSH-2`, `HEA-2`, `LEG-2`, `MEA-2`, `POU-2`, `SAU-2`, `SCI-2`, `STK-2`, `BUT-3`, `CUI-3`, `GRD-3`, `PST-3`, `SAF-3`, `SLW-3`, `CLS-4`, `MOD-4`, `PRO-4`, `PST-4` |
+| Instant-read thermometer | 0 | `EGG-1`, `EQP-1`, `HEA-1`, `ORI-1`, `SAF-1`, `BRD-2`, `FSH-2`, `HEA-2`, `LEG-2`, `MEA-2`, `POU-2`, `SAU-2`, `SCI-2`, `STK-2`, `BUT-3`, `CUI-3`, `GRD-3`, `PST-3`, `SAF-3`, `SLW-3`, `CLS-4`, `CUI-4`, `MOD-4`, `PRO-4`, `PST-4` |
 | Labels and a marker | 0 | `KMG-3`, `NUT-3`, `PRS-3`, `SAF-3` |
 | Large stable board | 0 | `EQP-1`, `KNF-1` |
 | Mixing bowls | 0 | `WRK-1`, `BAK-2`, `SCI-2`, `GRD-3` |
@@ -354,11 +354,11 @@ No course, module, lesson, hour, exercise or `Moves` entry has been added, remov
 | Stockpot | 0 | `EQP-1`, `FSH-2`, `POU-2`, `STK-2`, `SAF-3`, `CLS-4`, `PRO-4` |
 | Stockpot or large pot | 0 | `STA-1` |
 | Tongs | 0 | `HEA-1` |
-| Baking stone or steel | 1 | `BRD-2`, `PST-3` |
+| Baking stone or steel | 1 | `BRD-2`, `PST-3`, `CUI-4` |
 | Bench scraper | 1 | `BAK-2`, `BRD-2`, `BRD-3` |
 | Fine sieve | 1 | `EGG-1`, `LEG-2`, `SAU-2`, `SCI-2`, `STK-2`, `SLW-3`, `VEG-3`, `CLS-4`, `MOD-4` |
-| Frying thermometer | 1 | `HEA-2` |
-| Heavy lidded casserole (*braadpan*) | 1 | `BRD-2`, `HEA-2`, `LEG-2`, `MEA-2`, `BRD-3`, `CUI-3`, `SLW-3`, `VEG-3`, `PRO-4` |
+| Frying thermometer | 1 | `HEA-2`, `CUI-4` |
+| Heavy lidded casserole (*braadpan*) | 1 | `BRD-2`, `HEA-2`, `LEG-2`, `MEA-2`, `BRD-3`, `CUI-3`, `SLW-3`, `VEG-3`, `CUI-4`, `PRO-4` |
 | Loaf tin | 1 | `BAK-2`, `BRD-2`, `BRD-3`, `GRD-3` |
 | Mixer | 1 | `BAK-2`, `PST-4` |
 | Rolling pin | 1 | `BAK-2`, `PST-3` |
@@ -391,11 +391,13 @@ No course, module, lesson, hour, exercise or `Moves` entry has been added, remov
 | Canning jars with new lids | — | `PRS-3` |
 | Carving board | — | `MEA-2` |
 | Carving knife | — | `MEA-2` |
+| Cazuela | — | `CUI-4` |
 | Cheese knives and a board | — | `GRD-3` |
 | Chinois | — | `CLS-4` |
 | Closed-cell foam tape | — | `SLW-3` |
 | Coloured boards and tools for allergen-free cooking | — | `NUT-3` |
 | Containers with lids | — | `KNF-2` |
+| Couscoussier | — | `CUI-4` |
 | Cut-resistant glove | — | `BUT-3` |
 | Deep roasting tin for a water bath | — | `EGG-1`, `GRD-3` |
 | Dough container | — | `BRD-2`, `BRD-3` |
@@ -432,7 +434,7 @@ No course, module, lesson, hour, exercise or `Moves` entry has been added, remov
 | Measuring spoons and a pipette | — | `TST-1` |
 | Melon baller | — | `CLS-4` |
 | Metal ash bucket with a lid | — | `FIR-3` |
-| Mortar and pestle | — | `CUI-3`, `FLV-3` |
+| Mortar and pestle | — | `CUI-3`, `FLV-3`, `CUI-4` |
 | Moulds or rings for mousses | — | `PST-3`, `PST-4` |
 | Muffin tin | — | `BAK-2` |
 | Muslin or cheesecloth | — | `LEG-2`, `STK-2`, `CLS-4` |
@@ -442,7 +444,7 @@ No course, module, lesson, hour, exercise or `Moves` entry has been added, remov
 | Oven gloves | — | `BRD-2`, `BRD-3` |
 | Palette knife | — | `BAK-2` |
 | Parchment paper | — | `FSH-2` |
-| Pasta machine | — | `CUI-3` |
+| Pasta machine | — | `CUI-3`, `CUI-4` |
 | Peeler | — | `KNF-1` |
 | pH strips | — | `SCI-2`, `PRS-3` |
 | Phone stand | — | `KNF-1`, `FSH-2`, `MEA-2`, `POU-2`, `SAU-2`, `BUT-3`, `NUT-3`, `CLS-4`, `PLT-4` |
@@ -457,7 +459,7 @@ No course, module, lesson, hour, exercise or `Moves` entry has been added, remov
 | Ramekins | — | `EGG-1`, `BAK-2`, `CLS-4` |
 | Recipe and test log | — | `RDV-4` |
 | Refractometer (optional) | — | `PST-4` |
-| Rice pan with a tight lid | — | `CUI-3` |
+| Rice pan with a tight lid | — | `CUI-3`, `CUI-4` |
 | Roasting rack | — | `HEA-2` |
 | Roasting tin | — | `MEA-2`, `POU-2`, `BUT-3`, `PRO-4` |
 | Room thermometer | — | `BRD-3`, `PRS-3` |
@@ -473,24 +475,28 @@ No course, module, lesson, hour, exercise or `Moves` entry has been added, remov
 | Slow cooker | — | `SLW-3` |
 | Small moulds for aspic | — | `CLS-4` |
 | Small prep bowls | — | `WRK-1` |
-| Spice grinder | — | `CUI-3`, `FLV-3` |
+| Spice grinder | — | `CUI-3`, `FLV-3`, `CUI-4` |
 | Spice jars and labels | — | `FLV-3` |
 | Spider or slotted spoon | — | `HEA-2` |
 | Squeeze bottles | — | `PLT-4` |
-| Steamer | — | `HEA-1`, `VEG-1`, `FSH-2`, `CUI-3` |
+| Steamer | — | `HEA-1`, `VEG-1`, `FSH-2`, `CUI-3`, `CUI-4` |
 | Stick blender | — | `EGG-1`, `SAU-2`, `PST-3`, `MOD-4` |
 | Stick blender or blender | — | `FLV-3`, `PST-4` |
 | Sugar thermometer | — | `PST-4` |
+| Sushi tub and mat | — | `CUI-4` |
+| Tagine | — | `CUI-4` |
 | Tasting cups | — | `ORI-1`, `RDV-4` |
 | Tasting form | — | `TST-1`, `RDV-4` |
-| Tortilla press | — | `CUI-3` |
+| Tawa* or *comal | — | `CUI-4` |
+| Terrine mould | — | `CUI-4` |
+| Tortilla press | — | `CUI-3`, `CUI-4` |
 | Tuile stencil | — | `MOD-4` |
 | Turning knife | — | `CLS-4` |
 | Vacuum flask | — | `SAU-2` |
 | Weights for pressing | — | `GRD-3` |
 | Wide shallow pan for rice | — | `CUI-3` |
 | Wire rack | — | `BAK-2`, `BRD-2`, `HEA-2`, `FLV-3`, `PST-3`, `PST-4` |
-| Wok | — | `CUI-3` |
+| Wok | — | `CUI-3`, `CUI-4` |
 | Wood chunks | — | `FIR-3` |
 | Wooden spoon | — | `STA-1` |
 <!-- END generated:equipment -->
