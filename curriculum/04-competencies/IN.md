@@ -129,7 +129,7 @@ pigments and their reactions, and the best uses and methods for each.
 - S5 (5): handles the unfamiliar.
 
 **Assessment:** quiz (groups, structure, pigments, images); comparison exercises; vegetable-led dishes; re-tested at
-`MS-S1`. The capstone's vegetable-led course re-tests the cooking under `TS-VEG`.
+`MS-S1`, and at level 5 in the capstone's vegetable-led course (`CAP-5.R6`).
 
 **Success criteria:**
 
@@ -138,7 +138,7 @@ pigments and their reactions, and the best uses and methods for each.
 | 2 | Groups, parts and basic preparation at 80 %; prepares four vegetables from different groups correctly for a recipe | quiz, photo |
 | 3 | Explains in writing what heat, acid and alkali do to colour and texture, and shows it in a comparison (for example green beans with and without acid) | written, photo, quiz |
 | 4 | For three dishes, chooses the variety and method with a reason; the trimmings of one dish become part of another; the results meet the texture targets | written, photo, form |
-| 5 | Five vegetable-led dishes over at least 8 weeks, under three different conditions (one unfamiliar vegetable, one without a recipe, one for guests), each reasoned from structure; a short written guide to one group's behaviour | photo, written, tasters |
+| 5 | Five vegetable-led dishes over at least 8 weeks, under three different conditions (one unfamiliar vegetable, one without a recipe, one for guests: the capstone course counts), each reasoned from structure; a short written guide to one group's behaviour | photo, written, tasters |
 
 **Not yet:** every vegetable boiled the same way; grey green vegetables; trimmings thrown away by habit; an unfamiliar
 vegetable avoided rather than reasoned about.
@@ -154,7 +154,7 @@ vegetable avoided rather than reasoned about.
 | S2 | 3 | 3 | `HEA-2` M3.L2→3; `STK-2` M4.L3→3 | 3 (6) | `HEA-2` M3.X1; `STK-2` M4.X1, M4.X2 | — |
 | S3 | 4 | 4 | `PRS-3` M5.L2→3; `VEG-3` M1.L1→4, M4.L1→4 | 4 (10) | `PRS-3` M5.X1; `VEG-3` M1.X1, M4.X1 | — |
 | S4 | 4 | 4 | — | 0 (10) | — | — |
-| S5 | 5 | 5 | `IND-5` M1.L2→5; `RDV-5` M2.L3→5 | 5 (15) | `IND-5` M1.X1; `RDV-5` M2.X1 | — |
+| S5 | 5 | 5 | `IND-5` M1.L2→5; `RDV-5` M2.L3→5 | 5 (15) | `IND-5` M1.X1; `RDV-5` M2.X1 | `CAP-5` M2.L5→5 |
 <!-- END generated:map-in-veg -->
 
 ### IN-STA — Grains, legumes, pasta, rice and potatoes

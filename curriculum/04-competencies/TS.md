@@ -123,7 +123,7 @@ recovers; resting.
 - S5 (5): masters.
 
 **Assessment:** photos of surface and cross-section; oil and core temperature readings; comparison exercises; re-tested
-at `MS-S1` and through the protein rows of later milestones.
+at `MS-S1`, through the protein rows of later milestones, and at level 5 in the capstone main course (`CAP-5.R6`).
 
 **Success criteria:**
 
@@ -132,7 +132,7 @@ at `MS-S1` and through the protein rows of later milestones.
 | 2 | Sautés vegetables and pan-fries a protein from a recipe with even colour and no burning | photo |
 | 3 | Four of the six methods without a recipe: even browning, the right interior, fat at the right temperature (deep-frying held at 170–180 °C, logged) | photo, measure |
 | 4 | Five of the six methods, each also on a new ingredient or with a different pan or quantity, with the adaptation reasoned in writing; results to standard | photo, measure, written |
-| 5 | All six methods to standard over at least 8 weeks under three conditions (an unfamiliar ingredient, no recipe, guests); a written note on the variables and faults of dry heat | photo, measure, written |
+| 5 | All six methods to standard over at least 8 weeks under three conditions (an unfamiliar ingredient, no recipe, guests: the capstone main course counts); a written note on the variables and faults of dry heat | photo, measure, written |
 
 **Not yet:** a crowded pan that steams; oil too cold (greasy) or smoking; no rest after cooking; pale roasts.
 
@@ -147,7 +147,7 @@ at `MS-S1` and through the protein rows of later milestones.
 | S2 | 3 | 3 | `HEA-2` M2.L1→3, M2.L2→3, M3.L1→3, M4.L2→3, M4.L3→3; `POU-2` M4.L2→3; `MEA-2` M3.L1→3, M4.L1→3; `FSH-2` M3.L5→3 | 13 (21) | `HEA-2` M2.X1, M3.X1, M4.X1, M4.X2; `POU-2` M4.X1; `MEA-2` M3.X1, M3.X2, M4.X1; `FSH-2` M3.X1, M3.X2 | — |
 | S3 | 4 | 4 | `SLW-3` M5.L3→4; `FIR-3` M3.L1→4; `CUI-3` M7.L2→4 | 5 (26) | `SLW-3` M5.X1, M5.X2; `FIR-3` M3.X1; `CUI-3` M7.X1, M7.X2, M7.X3 | — |
 | S4 | 4 | 4 | — | 0 (26) | — | — |
-| S5 | 5 | 5 | `IND-5` M2.L2→5, M5.L1→5 | 4 (30) | `IND-5` M2.X1, M5.X1 | — |
+| S5 | 5 | 5 | `IND-5` M2.L2→5, M5.L1→5 | 4 (30) | `IND-5` M2.X1, M5.X1 | `CAP-5` M2.L6→5 |
 <!-- END generated:map-ts-dry -->
 
 ### TS-MOI — Moist-heat methods

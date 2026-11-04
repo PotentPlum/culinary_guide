@@ -29,7 +29,7 @@ reconstructed afterwards) set against the result.
 - S5 (5): masters.
 
 **Assessment:** "cue first, then reading" logs: the learner records the cue-based judgment before the reading.
-Re-tested at `MS-S2`.
+Re-tested at `MS-S2`, and at level 5 at the capstone main course (`CAP-5.R6`).
 
 **Success criteria:**
 
@@ -38,7 +38,7 @@ Re-tested at `MS-S2`.
 | 2 | Names the cue for five basic techniques at 80 %; one cue-then-reading entry | quiz, log |
 | 3 | Ten cue-then-reading entries over three sessions, with at least 8 within the tolerance of the technique (for example ±3 °C for a protein) | log, measure |
 | 4 | Ten entries in unfamiliar situations (a new cut, a new oven, a new dough), with at least 8 within tolerance | log, measure, photo |
-| 5 | Over at least 8 weeks, 20 entries under three conditions (guests, time pressure, no recipe) with at least 18 within tolerance; a short guide to the cues of one technique | log, measure, written |
+| 5 | Over at least 8 weeks, 20 entries under three conditions (guests, time pressure, no recipe: the capstone main course counts) with at least 18 within tolerance; a short guide to the cues of one technique | log, measure, written |
 
 **Not yet:** cooking by the clock alone; the probe used instead of looking; cues that are named but never checked.
 
@@ -53,7 +53,7 @@ Re-tested at `MS-S2`.
 | S2 | 3 | 3 | `POU-2` M6.L2→3; `MEA-2` M3.L3→3; `FSH-2` M3.L4→3; `BRD-2` M2.L2→3, M3.L3→3 | 7 (12) | `POU-2` M6.X1; `MEA-2` M3.X1, M3.X2; `FSH-2` M3.X1, M3.X2; `BRD-2` M2.X1, M3.X1 | `MS-S2` M1.L2→3 |
 | S3 | 4 | 4 | `SLW-3` M5.L3→4; `FIR-3` M1.L2→4; `PRS-3` M3.L2→4; `BRD-3` M2.L2→4 | 7 (19) | `SLW-3` M5.X1, M5.X2; `FIR-3` M1.X1; `PRS-3` M3.X1; `BRD-3` M2.X1, M2.X2 | — |
 | S4 | 4 | 4 | `PRO-4` M4.L2→4 | 2 (21) | `PRO-4` M4.X1 | — |
-| S5 | 5 | 5 | `IND-5` M6.L2→5 | 3 (24) | `IND-5` M6.X1 | — |
+| S5 | 5 | 5 | `IND-5` M6.L2→5 | 3 (24) | `IND-5` M6.X1 | `CAP-5` M2.L6→5 |
 <!-- END generated:map-jd-cues -->
 
 ### JD-CHSE — Choosing an approach from first principles
@@ -125,7 +125,7 @@ equipment failure. Diagnosing the cause, recovering the dish, and preventing it 
 - S5 (5): masters.
 
 **Assessment:** fault logs (what went wrong, the cause, the recovery, the result), with photos before and after;
-re-tested in the `MS-S3` flavour-correction test.
+re-tested in the `MS-S3` flavour-correction test and, at level 5, in the capstone evidence log (`CAP-5.R12`).
 
 **Success criteria:**
 
@@ -134,7 +134,7 @@ re-tested in the `MS-S3` flavour-correction test.
 | 2 | Common faults and recoveries at 80 %; one fault logged with its recovery | quiz, log |
 | 3 | Three faults from their own cooking recovered, with photos before and after and the cause named | log, photo, written |
 | 4 | Three unfamiliar faults diagnosed from the science and recovered (or a reasoned restart); the fault-diagnosis test passed | log, written, calibration |
-| 5 | Over at least 8 weeks, five recoveries under three conditions (guests, time pressure, no recipe), with the guests unaware; a written guide to the faults of one technique | log, written, tasters |
+| 5 | Over at least 8 weeks, five recoveries under three conditions (guests, time pressure, no recipe), with the guests unaware; the capstone log counts; a written guide to the faults of one technique | log, written, tasters |
 
 **Not yet:** throwing away instead of recovering; recovering without knowing why it went wrong; the same fault three times.
 
@@ -149,7 +149,7 @@ re-tested in the `MS-S3` flavour-correction test.
 | S2 | 3 | 3 | `STK-2` M5.L1→2; `SAU-2` M7.L1→3; `BAK-2` M4.L3→3, M4.L4→3 | 5 (8) | `STK-2` M5.X1; `SAU-2` M7.X1; `BAK-2` M4.X1, M4.X2, M4.X3 | — |
 | S3 | 4 | 4 | `FLV-3` M6.L1→4; `BRD-3` M5.L2→4 | 3 (11) | `FLV-3` M6.X1; `BRD-3` M5.X1 | `MS-S3` M1.L4→4 |
 | S4 | 4 | 4 | — | 0 (11) | — | — |
-| S5 | 5 | 5 | `IND-5` M6.L1→5 | 3 (14) | `IND-5` M6.X1 | — |
+| S5 | 5 | 5 | `IND-5` M6.L1→5 | 3 (14) | `IND-5` M6.X1 | `CAP-5` M2.L7→5 |
 <!-- END generated:map-jd-trbl -->
 
 ### JD-REFL — Self-assessment and reflection

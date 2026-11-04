@@ -71,7 +71,8 @@ adapting to season and availability; predicting the effect.
 - S4 (4): adapts dishes for guests.
 - S5 (5): masters.
 
-**Assessment:** written predictions before cooking, compared with the result; tasters; re-tested in the `MS-S4` menu.
+**Assessment:** written predictions before cooking, compared with the result; tasters; re-tested in the `MS-S4` menu and, at level 5, in the capstone menu's dietary
+adaptation (`CAP-5.R1`).
 
 **Success criteria:**
 
@@ -80,7 +81,7 @@ adapting to season and availability; predicting the effect.
 | 2 | A substitution from a guide (for example a different vinegar or herb) with the effect noted | written, form |
 | 3 | Three substitutions reasoned from the ingredient's function, with the effect predicted in writing and confirmed | written, photo, form |
 | 4 | Two dishes adapted (one for a diet or allergen, one for quantity or equipment), with predictions; the tasters judge the adapted dish as good as the original | written, tasters, photo |
-| 5 | Five adaptations over at least 8 weeks under three conditions (a diet, equipment, no recipe and on the day), each predicted and confirmed; a short guide to adapting one dish family | written, tasters, photo |
+| 5 | Five adaptations over at least 8 weeks under three conditions (a diet, equipment, no recipe and on the day), each predicted and confirmed, the capstone dietary adaptation among them; a short guide to adapting one dish family | written, tasters, photo |
 
 **Not yet:** substituting by name ("cream is cream"); a gluten-free version that is clearly worse; no prediction before
 cooking.
@@ -96,7 +97,7 @@ cooking.
 | S2 | 2 | 2 | `STK-2` M5.L2→2; `LEG-2` M4.L1→2 | 2 (3) | `STK-2` M5.X1; `LEG-2` M4.X1 | — |
 | S3 | 3 | 3 | `SLW-3` M4.L1→3, M4.L2→3; `NUT-3` M1.L1→2, M2.L1→3, M2.L2→3 | 8 (11) | `SLW-3` M4.X1; `NUT-3` M1.X1, M2.X1 | — |
 | S4 | 4 | 4 | `RDV-4` M3.L1→4, M3.L2→4 | 3 (14) | `RDV-4` M3.X1 | `MS-S4` M1.L1→4 |
-| S5 | 5 | 5 | `IND-5` M3.L1→5, M4.L3→5, M5.L2→5, M5.L3→5 | 9 (23) | `IND-5` M3.X1, M4.X1, M4.X2, M5.X1 | — |
+| S5 | 5 | 5 | `IND-5` M3.L1→5, M4.L3→5, M5.L2→5, M5.L3→5 | 9 (23) | `IND-5` M3.X1, M4.X1, M4.X2, M5.X1 | `CAP-5` M1.L2→5 |
 <!-- END generated:map-rd-adpt -->
 
 ### RD-TEST — Systematic testing

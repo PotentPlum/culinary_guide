@@ -1,6 +1,6 @@
 # Phase 4 — Assessment design
 
-Status: **ready for review** (2026-11-04). This document defines how the program assesses the learner:
+Status: **reviewed; answers applied** (2026-11-04). This document defines how the program assesses the learner:
 - the assessment types and criteria;
 - how rubrics are scored and passed;
 - the module checks;
@@ -109,7 +109,8 @@ are relative to it:
      journal.
 5. **Gates** are scored from the readings and checklists. A missing reading counts as a Fail.
 
-This rule errs on the side of caution, because no human examiner is assumed (Phase 1, review answer Q4).
+This rule errs on the side of caution, because no human examiner is assumed (Phase 1, review answer Q4). The Phase 4
+review confirmed it: there is no outside examiner, not even an optional one for the capstone.
 
 ---
 
@@ -426,18 +427,18 @@ requirements; all recipes are the learner's own.
 
 | ID | Criterion | Competent means | Components | Competencies | Evidence | Weight |
 |---|---|---|---|---|---|---|
-| CAP-5.R1 | Independent decisions | Every constraint of the brief met; the menu's progression, balance and technique choices reasoned from principles; pairings fit; the dishes are recognisably the learner's own; the defence answers "why" for each decision | CAP-5.M1.L1, CAP-5.M1.L2, CAP-5.M3.L3 | JD-CHSE, CR-MENU, CR-ORIG, CK-BEVR | written | 15 |
+| CAP-5.R1 | Independent decisions | Every constraint of the brief met; the menu's progression, balance and technique choices reasoned from principles; pairings fit; the dishes are recognisably the learner's own; the dietary requirement met by an adaptation that loses nothing; the defence answers "why" for each decision, including each choice of method | CAP-5.M1.L1, CAP-5.M1.L2, CAP-5.M3.L3 | JD-CHSE, CR-MENU, CR-ORIG, CK-BEVR, CK-METH, RD-ADPT | written | 15 |
 | CAP-5.R2 | Planning | Quantities right for the guests with little waste; costing within the budget and within 10 % of the receipts; a T−7 schedule with control points | CAP-5.M1.L3, CAP-5.M1.L4 | KM-PURC, KM-MATH, KM-PLAN | written, measure | 10 |
-| CAP-5.R3 | Food safety | Control points in the plan; the preserve made by a tested safe method; cooling, storage and reheating within the limits (§9); the allergen kept apart from shopping to plate | CAP-5.M1.L4, CAP-5.M2.L1, CAP-5.M2.L4 | SA-HYG, SA-HRPR, SA-TEMP | log, checklist, measure | gate |
+| CAP-5.R3 | Food safety | Control points in the plan; the preserve made by a tested safe method; cooling, storage and reheating within the limits (§9); the allergen kept apart from shopping to plate; safe knife, hot-oil and equipment work through the prep days, with no injury | CAP-5.M1.L4, CAP-5.M2.L1, CAP-5.M2.L4 | SA-HYG, SA-HRPR, SA-TEMP, SA-PHYS | log, checklist, measure | gate |
 | CAP-5.R4 | Organisation | Every untried dish test-cooked and adjusted, with notes; the prep days run to schedule, with the station organised | CAP-5.M1.L5, CAP-5.M2.L3 | RD-TEST, CR-ORIG, TS-MEP | log, written, photo | 5 |
 | CAP-5.R5 | Technical execution | The foundations to standard: the preserve, the bread or pastry, the stock and sauce, the fabrication and knife work | CAP-5.M2.L1, CAP-5.M2.L2, CAP-5.M2.L3, CAP-5.M2.L4 | TS-PRS, TS-BAK, TS-BRD, TS-STK, TS-SAU, TS-FAB, TS-KNF | photo, measure | 15 |
-| CAP-5.R6 | Technical execution | At service: vegetables at their best; the protein at the exact doneness (probe and cross-section); the sauce at the right consistency and temperature | CAP-5.M2.L5, CAP-5.M2.L6 | TS-VEG, TS-PRO, TS-SAU | measure, photo | 15 |
-| CAP-5.R7 | Flavour | Every course seasoned and balanced, with depth; the guests' cards and the calibrated form agree | CAP-5.M2.L5, CAP-5.M3.L1 | FL-SEAS | tasters, form | 10 |
+| CAP-5.R6 | Technical execution | At service: the vegetable-led course showing the vegetables at their best; the protein browned and at the exact doneness (probe and cross-section), judged by its cues; the sauce at the right consistency and temperature | CAP-5.M2.L5, CAP-5.M2.L6 | TS-VEG, TS-PRO, TS-SAU, IN-VEG, TS-DRY, JD-CUES | measure, photo | 15 |
+| CAP-5.R7 | Flavour | Every course seasoned and balanced, with depth, and corrected at the pass where needed; the guests' cards and the calibrated form agree | CAP-5.M2.L5, CAP-5.M3.L1, CAP-5.M3.L2 | FL-SEAS, FL-CORR, FL-SENS | tasters, form | 10 |
 | CAP-5.R8 | Texture | The intended textures in every course, with contrast across the menu | CAP-5.M3.L1 | FL-TEXT | tasters, form, photo | 5 |
 | CAP-5.R9 | Presentation | Every course composed with intent and served at the right temperature | CAP-5.M2.L5 | TS-PLT | photo | 5 |
 | CAP-5.R10 | Consistency | All 6–8 plates of each course match in portion, placement and doneness | CAP-5.M2.L5, CAP-5.M2.L6 | TS-PLT, TS-PRO | photo | 5 |
 | CAP-5.R11 | Timing | Every course out within 5 minutes of the plan, with no course waiting for another | CAP-5.M2.L6 | KM-PLAN | log | 5 |
-| CAP-5.R12 | Reflection | Complete evidence; a self-evaluation on every row with evidence that the reviews confirm; a defence that names what went wrong, why, and what the learner would change | CAP-5.M2.L7, CAP-5.M3.L2, CAP-5.M3.L3 | JD-REFL | written, log | 10 |
+| CAP-5.R12 | Reflection | Complete evidence; a self-evaluation on every row with evidence that the reviews confirm; every recovery from a problem logged with its cause; a defence that names what went wrong, why, and what the learner would change | CAP-5.M2.L7, CAP-5.M3.L2, CAP-5.M3.L3 | JD-REFL, JD-TRBL | written, log | 10 |
 
 ### 8.4 Band descriptors
 
@@ -476,7 +477,8 @@ A capstone with distinction is recorded as such. A failed capstone is retaken wi
 Gates and safety quiz items check against these figures. They follow two kinds of source:
 - for home practice, the Dutch Voedingscentrum [S21][S22];
 - where the Voedingscentrum gives no number, the U.S. FDA *Food Code* 2022 [S25]. It is written for professional
-  kitchens and is used here only as the measurable standard, because a gate needs a number.
+  kitchens and is used here only as the measurable standard, because a gate needs a number. The Phase 4 review accepted
+  it as the reference.
 
 The figures were checked on the pages and in the sections named on 2026-11-04.
 

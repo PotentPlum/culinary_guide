@@ -32,7 +32,7 @@ describing with precise words; comparison methods (side by side, triangle, ranki
 - S5 (5): calibrated and able to teach.
 
 **Assessment:** calibration tests (salt, acid, fault diagnosis); blind identification of aromas; sensory forms compared
-with tasters; re-tested at `MS-S1` and `MS-S3`.
+with tasters; re-tested at `MS-S1` and `MS-S3`, and at level 5 in the capstone self-evaluation (`CAP-5.R7`).
 
 **Success criteria:**
 
@@ -41,7 +41,7 @@ with tasters; re-tested at `MS-S1` and `MS-S3`.
 | 2 | Passes the salt and acid ranking tests ([assessment §5](../04-assessment.md#5-calibration-tests)); a sensory form for one dish uses the vocabulary for taste, aroma and texture | calibration, form |
 | 3 | Passes the salt and acid triangle tests; forms for three dishes that the tasters' cards broadly confirm | calibration, form, tasters |
 | 4 | Passes the fault-diagnosis test; identifies 12 of 16 aromas blind; forms that match the tasters in at least 4 of 5 dishes | calibration, form, tasters |
-| 5 | Calibration held over at least 8 weeks (all tests passed at least twice); sets up a blind triangle test for the household and interprets the result correctly; a short written guide to tasting | calibration, written, tasters |
+| 5 | Calibration held over at least 8 weeks (all tests passed at least twice), and the capstone form agreeing with the guests' cards; sets up a blind triangle test for the household and interprets the result correctly; a short written guide to tasting | calibration, written, tasters |
 
 **Not yet:** "it's nice" as a description; tasting only at the end; judging a cold sample for a hot dish; a palate that
 drifts and is never re-calibrated.
@@ -57,7 +57,7 @@ drifts and is never re-calibrated.
 | S2 | 3 | 3 | `STK-2` M3.L2→3 | 1 (6) | `STK-2` M3.X1 | — |
 | S3 | 4 | 4 | `FLV-3` M6.L2→4 | 1 (7) | `FLV-3` M6.X1 | `MS-S3` M1.L4→4 |
 | S4 | 4 | 4 | — | 0 (7) | — | — |
-| S5 | 5 | 5 | `IND-5` M4.L2→5, M6.L2→5; `RDV-5` M3.L2→5 | 6 (13) | `IND-5` M4.X1, M4.X2, M6.X1; `RDV-5` M3.X1 | — |
+| S5 | 5 | 5 | `IND-5` M4.L2→5, M6.L2→5; `RDV-5` M3.L2→5 | 6 (13) | `IND-5` M4.X1, M4.X2, M6.X1; `RDV-5` M3.X1 | `CAP-5` M3.L2→5 |
 <!-- END generated:map-fl-sens -->
 
 ### FL-SEAS — Seasoning and balance
@@ -223,7 +223,8 @@ spicy. Corrections during cooking and at the end.
 - S5 (5): masters.
 
 **Assessment:** the fault-diagnosis calibration test ([assessment §5.3](../04-assessment.md#53-fault-diagnosis-from-s3));
-written diagnosis notes; tasters; re-tested in the `MS-S3` flavour-correction test.
+written diagnosis notes; tasters; re-tested in the `MS-S3` flavour-correction test and, at level 5, at the capstone
+service (`CAP-5.R7`).
 
 **Success criteria:**
 
@@ -232,7 +233,7 @@ written diagnosis notes; tasters; re-tested in the `MS-S3` flavour-correction te
 | 2 | Names the usual fix for six common faults at 80 %; fixes one under-seasoned dish | quiz, form |
 | 3 | Three faults met in their own cooking named, fixed and written up with the reason; the tasters confirm the fix | written, form, tasters |
 | 4 | Passes the fault-diagnosis test (four of five faults named, both corrections judged good) | calibration, written, tasters |
-| 5 | Over at least 8 weeks, five faults caught and fixed during cooking under three conditions (guests, time pressure, no recipe), logged; a short written guide to fault correction | calibration, written, log |
+| 5 | Over at least 8 weeks, five faults caught and fixed during cooking under three conditions (guests, time pressure, no recipe), logged, the capstone service among them; a short written guide to fault correction | calibration, written, log |
 
 **Not yet:** adding salt to every problem; serving a fault rather than fixing it; trying to fix over-salting with sugar.
 
@@ -247,5 +248,5 @@ written diagnosis notes; tasters; re-tested in the `MS-S3` flavour-correction te
 | S2 | 3 | 3 | `STK-2` M5.L1→3; `SAU-2` M7.L1→3 | 3 (5) | `STK-2` M5.X1; `SAU-2` M7.X1 | — |
 | S3 | 4 | 4 | `FLV-3` M6.L1→4 | 2 (7) | `FLV-3` M6.X1 | `MS-S3` M1.L4→4 |
 | S4 | 4 | 4 | — | 0 (7) | — | — |
-| S5 | 5 | 5 | `IND-5` M6.L1→5 | 3 (10) | `IND-5` M6.X1 | — |
+| S5 | 5 | 5 | `IND-5` M6.L1→5 | 3 (10) | `IND-5` M6.X1 | `CAP-5` M2.L5→5 |
 <!-- END generated:map-fl-corr -->

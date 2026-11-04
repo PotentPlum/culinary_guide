@@ -219,8 +219,8 @@ comes in Phase 4.
 
 | ID | Lesson | Objectives | Prereqs | h | Practice | Elapsed | Moves |
 |---|---|---|---|---|---|---|---|
-| CAP-5.M1.L1 | Analysing the brief | Re-tests reading constraints: season, budget, diet, featured ingredient | — | 2 | 0 | — | JD-CHSE→5 |
-| CAP-5.M1.L2 | Menu and rationale | Re-tests menu design, drink pairings and written reasoning | — | 4 | 0 | — | CR-MENU→4, CR-ORIG→4, CK-BEVR→3 |
+| CAP-5.M1.L1 | Analysing the brief | Re-tests reading constraints (season, budget, diet, featured ingredient) and choosing methods for them from principles | — | 2 | 0 | — | JD-CHSE→5, CK-METH→5 |
+| CAP-5.M1.L2 | Menu and rationale | Re-tests menu design, drink pairings, adapting dishes to the dietary requirement, and written reasoning | — | 4 | 0 | — | CR-MENU→4, CR-ORIG→4, CK-BEVR→3, RD-ADPT→5 |
 | CAP-5.M1.L3 | Shopping, quantities and costing | Re-tests procurement and costing within the budget | — | 3 | 0 | — | KM-PURC→4, KM-MATH→4 |
 | CAP-5.M1.L4 | Prep schedule from T−7 days | Re-tests timeline planning and control points | — | 3 | 0 | — | KM-PLAN→5, SA-HYG→5 |
 | CAP-5.M1.L5 | Test cooks | Re-tests development discipline: every untried dish is test-cooked and adjusted before the dinner, with notes | — | 6 | 3 | 2 wk | RD-TEST→4, CR-ORIG→4 |
@@ -232,15 +232,15 @@ comes in Phase 4.
 | CAP-5.M2.L1 | The preserved element (T−7) | Re-tests a preservation method, safely | — | 3 | 1 | 1 wk | TS-PRS→3, SA-HRPR→4 |
 | CAP-5.M2.L2 | The bread or pastry element | Re-tests baking or pastry from scratch | — | 4 | 1 | 1 d | TS-BAK→4, TS-BRD→3 |
 | CAP-5.M2.L3 | Prep day 1 | Re-tests stocks, sauces and make-ahead components | — | 5 | 1 | — | TS-STK→4, TS-SAU→5, TS-MEP→5 |
-| CAP-5.M2.L4 | Prep day 2 | Re-tests fabrication, mise en place and safe storage | — | 5 | 1 | — | TS-FAB→3, TS-KNF→5, SA-TEMP→5 |
-| CAP-5.M2.L5 | Service: first and second course | Re-tests cooking, seasoning and plating on time | — | 3 | 1 | — | TS-VEG→5, FL-SEAS→5, TS-PLT→4 |
-| CAP-5.M2.L6 | Service: main course and dessert | Re-tests protein doneness, sauce, dessert and timing | — | 3 | 1 | — | TS-PRO→5, TS-SAU→5, KM-PLAN→5 |
-| CAP-5.M2.L7 | Evidence | Timestamped log, a photo of every course, temperature records | — | 2 | 0 | — | JD-REFL→5 |
+| CAP-5.M2.L4 | Prep day 2 | Re-tests fabrication, mise en place, safe knife and equipment work under load, and safe storage | — | 5 | 1 | — | TS-FAB→3, TS-KNF→5, SA-TEMP→5, SA-PHYS→5 |
+| CAP-5.M2.L5 | Service: first and second course | Re-tests the vegetable-led course, seasoning and correcting at the pass, and plating on time | — | 3 | 1 | — | TS-VEG→5, FL-SEAS→5, TS-PLT→4, IN-VEG→5, FL-CORR→5 |
+| CAP-5.M2.L6 | Service: main course and dessert | Re-tests dry-heat cooking of the protein to an exact doneness by its cues, the sauce, dessert and timing | — | 3 | 1 | — | TS-PRO→5, TS-SAU→5, KM-PLAN→5, TS-DRY→5, JD-CUES→5 |
+| CAP-5.M2.L7 | Evidence | Timestamped log, a photo of every course, temperature records, and every recovery from a problem with its cause | — | 2 | 0 | — | JD-REFL→5, JD-TRBL→5 |
 
 #### CAP-5.M3 — Evaluation and defence (8 h)
 
 | ID | Lesson | Objectives | Prereqs | h | Practice | Elapsed | Moves |
 |---|---|---|---|---|---|---|---|
 | CAP-5.M3.L1 | Guest evaluation | Structured guest cards for each course | — | 2 | 0 | — | FL-SEAS→5, FL-TEXT→4 |
-| CAP-5.M3.L2 | Self-evaluation against the rubric | Scores every rubric domain with evidence | — | 3 | 0 | — | JD-REFL→5 |
+| CAP-5.M3.L2 | Self-evaluation against the rubric | Scores every rubric domain with evidence; the calibrated sensory form is compared with the guests' cards | — | 3 | 0 | — | JD-REFL→5, FL-SENS→5 |
 | CAP-5.M3.L3 | Defence | A written or recorded defence of the decisions, and what the learner would change | — | 3 | 0 | — | JD-CHSE→5, JD-REFL→5 |

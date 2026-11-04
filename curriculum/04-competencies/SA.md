@@ -125,7 +125,8 @@ level, water, fire); fire (pan fires, oven, grill, the fire blanket); lifting he
 - S2 (4): organises.
 - S3–S5 (5): under pressure.
 
-**Assessment:** videos; checklists; quiz; re-tested at `MS-S1` and `MS-S2`.
+**Assessment:** videos; checklists; quiz; re-tested at `MS-S1` and `MS-S2`, and at level 5 on the capstone prep days
+(`CAP-5.R3`, a gate).
 
 **Success criteria:**
 
@@ -134,7 +135,7 @@ level, water, fire); fire (pan fires, oven, grill, the fire blanket); lifting he
 | 2 | Safety rules and emergency actions at 100 % in the quiz | quiz |
 | 3 | Videos of cutting and of moving hot pans show a safe grip, handles turned in, and a dry towel; a fire blanket within reach (photo) | video, checklist, photo |
 | 4 | A deep-frying session with the oil level, temperature and a lid ready shown on video; a station layout reasoned for safety | video, measure, written |
-| 5 | Five services over at least 8 weeks (guests, a timed service, live fire) with the safety checklist complete and nothing unsafe in any video | video, checklist, log |
+| 5 | Five services over at least 8 weeks (guests, a timed service, live fire), the capstone prep days among them, with the safety checklist complete and nothing unsafe in any video | video, checklist, log |
 
 **Not yet:** a knife left in the sink; a wet towel used as a pot holder; a pan handle sticking out; water near hot oil.
 
@@ -149,7 +150,7 @@ level, water, fire); fire (pan fires, oven, grill, the fire blanket); lifting he
 | S2 | 4 | 4 | `HEA-2` M4.L1→4 | 1 (6) | `HEA-2` M4.X1, M4.X2 | `MS-S2` M1.L4→4 |
 | S3 | 5 | 5 | `SAF-3` M2.L2→5; `BUT-3` M4.L2→4; `FIR-3` M1.L1→4, M1.L2→5 | 3 (9) | `SAF-3` M2.X1; `BUT-3` M4.X1; `FIR-3` M1.X1 | — |
 | S4 | 5 | 5 | — | 0 (9) | — | — |
-| S5 | 5 | 5 | — | 0 (9) | — | — |
+| S5 | 5 | 5 | — | 0 (9) | — | `CAP-5` M2.L4→5 |
 <!-- END generated:map-sa-phys -->
 
 ### SA-ALLG — Allergens

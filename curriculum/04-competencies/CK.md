@@ -84,7 +84,8 @@ properties.
 - S5 (5): teaches it.
 
 **Assessment:** quiz (classification and scenarios); written method choices in framework and brief exercises;
-comparison exercises (one ingredient, two methods); re-tested in the `MS-S1` quiz.
+comparison exercises (one ingredient, two methods); re-tested in the `MS-S1` quiz and, at level 5, in the capstone
+brief analysis (`CAP-5.R1`).
 The capstone's brief analysis and defence show method choice too, but its rubric scores them under `JD-CHSE`.
 
 **Success criteria:**
@@ -110,7 +111,7 @@ reason; describing methods only by recipe steps.
 | S2 | 3 | 3 | `HEA-2` M1.L1→3, M1.L2→3, M5.L1→3 | 1 (4) | `HEA-2` M1.X1, M5.X1 | — |
 | S3 | 4 | 4 | `SLW-3` M1.L2→4; `VEG-3` M2.L2→4 | 2 (6) | `SLW-3` M1.X1; `VEG-3` M2.X1 | — |
 | S4 | 4 | 4 | — | 0 (6) | — | — |
-| S5 | 5 | 5 | `IND-5` M1.L1→5, M1.L2→5 | 3 (9) | `IND-5` M1.X1 | — |
+| S5 | 5 | 5 | `IND-5` M1.L1→5, M1.L2→5 | 3 (9) | `IND-5` M1.X1 | `CAP-5` M1.L1→5 |
 <!-- END generated:map-ck-meth -->
 
 ### CK-RCPT — Reading recipes critically
