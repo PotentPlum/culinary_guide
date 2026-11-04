@@ -238,6 +238,9 @@ class ValidateCurriculumTest(unittest.TestCase):
         self.assertIn("TS-KNF: missing **Independence:**", errors)
         self.assertIn("TS-KNF: no success criteria for level 3", errors)
         self.assertIn("TS-KNF: success criteria for level 4, outside 2–3 (the core target)", errors)
+        swapped = ("Knowledge", "Elements") + vc.ENTRY_FIELDS[2:]
+        self.write_entries(knf=entry("TS-KNF", "Knife skills", {2: "photo", 3: "photo"}, swapped))
+        self.assertTrue(any(e.startswith("TS-KNF: fields out of order") for e in self.errors(S1_GOOD)))
 
     def test_a_level_cannot_rest_on_self_assessment_alone(self) -> None:
         self.write_entries(hyg=entry("SA-HYG", "Hygiene", {2: "checklist, tasters"}))

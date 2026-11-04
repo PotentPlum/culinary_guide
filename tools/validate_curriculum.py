@@ -606,6 +606,8 @@ def check_phase4(root: Path, stages: dict[str, list[Course]], phase1: Phase1, re
         for name in ENTRY_FIELDS:
             if name not in entry.fields:
                 report.error(f"{ident}: missing **{name}:**")
+        if entry.fields != [f for f in ENTRY_FIELDS if f in entry.fields]:
+            report.error(f"{ident}: fields out of order (expected {', '.join(ENTRY_FIELDS)})")
         target = phase1.targets[ident][-1] or 0
         for level in range(2, target + 1):
             if level not in entry.success:
