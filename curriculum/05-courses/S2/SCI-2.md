@@ -509,7 +509,7 @@ the mustard differs.
 
 **Evidence:** photo, written, quiz — the timed photos with the separation times, and the broken and repaired
 mayonnaise photographed at each step, each explained, with this module's quiz at 80 %. This is the **mayonnaise part**
-of the `SC-EMUL` level 3 row; the warm butter emulsion follows in `SAU-2.M5`.
+of the `SC-EMUL` level 3 row; the warm butter emulsion follows in `SAU-2.M2`.
 
 **Time:** 45 min.
 
@@ -534,7 +534,7 @@ of the `SC-EMUL` level 3 row; the warm butter emulsion follows in `SAU-2.M5`.
 
 | Competency | Level | Exercises | Evidence |
 |---|---|---|---|
-| SC-EMUL | 3 | `SCI-2.M4.X1` | photo, written, quiz — the mayonnaise part of the row: broken and repaired on purpose, photographed and explained, with the timed vinaigrettes; the warm butter emulsion follows in `SAU-2.M5` |
+| SC-EMUL | 3 | `SCI-2.M4.X1` | photo, written, quiz — the mayonnaise part of the row: broken and repaired on purpose, photographed and explained, with the timed vinaigrettes; the warm butter emulsion follows in `SAU-2.M2` |
 
 ### SCI-2.M5 — Water, salt, sugar and acid
 
