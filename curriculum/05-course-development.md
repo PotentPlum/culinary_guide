@@ -1,9 +1,10 @@
 # Phase 5 — Course development
 
-Status: **in progress**. Stage S1 is being written and comes up for review first (review decision, 2026-11-04). S2–S5
-follow one stage at a time, in the format agreed on S1.
+Status: **S1 ready for review** (2026-11-04). S1 is developed and comes up for review first (review decision). S2–S5
+follow one stage at a time, in the format agreed on S1. The end of the S1 batch, with its decisions and open questions,
+is in §7.
 
-**Stages developed:** —
+**Stages developed:** S1
 
 This phase develops every course of the outline in depth. For each course it gives:
 - an introduction;
@@ -157,8 +158,8 @@ evidence record over the stage, not in a single check.
 | S1 | [`TST-1`](05-courses/S1/TST-1.md) | 13 / 13 | 6 / 6 | 34 | 0 | 6 | €25 |
 | S1 | [`HEA-1`](05-courses/S1/HEA-1.md) | 17 / 17 | 8 / 8 | 40 | 2 | 10 | €60 |
 | S1 | [`EGG-1`](05-courses/S1/EGG-1.md) | 11 / 11 | 6 / 6 | 32 | 2 | 9 | €30 |
-| S1 | `VEG-1` | 0 / 15 | — | — | — | — | — |
-| S1 | `STA-1` | 0 / 11 | — | — | — | — | — |
+| S1 | [`VEG-1`](05-courses/S1/VEG-1.md) | 15 / 15 | 7 / 7 | 40 | 1 | 12 | €35 |
+| S1 | [`STA-1`](05-courses/S1/STA-1.md) | 11 / 11 | 5 / 5 | 32 | 5 | 10 | €20 |
 | S2 | `SCI-2` | 0 / 11 | — | — | — | — | — |
 | S2 | `HEA-2` | 0 / 12 | — | — | — | — | — |
 | S2 | `KNF-2` | 0 / 5 | — | — | — | — | — |
@@ -203,15 +204,15 @@ each level. ✗ marks a stage target that no exercise up to that stage evidences
 row rests on the quiz alone.
 
 <!-- BEGIN generated:reachability -->
-| Competency | S1 (in progress) | Exercises at L2 · L3 · L4 · L5 |
+| Competency | S1 | Exercises at L2 · L3 · L4 · L5 |
 |---|---|---|
 | `CK-TERM` | 2 (quiz) | 0 · 0 · 0 · 0 |
 | `CK-METH` | 2 | 1 · 0 · 0 · 0 |
 | `CK-RCPT` | 3 | 0 · 2 · 0 · 0 |
-| `IN-SEL` | 2 ✗ | 0 · 0 · 0 · 0 |
-| `IN-STO` | 3 | 1 · 2 · 0 · 0 |
-| `IN-VEG` | 2 ✗ | 0 · 0 · 0 · 0 |
-| `IN-STA` | 2 ✗ | 0 · 0 · 0 · 0 |
+| `IN-SEL` | 2 | 1 · 0 · 0 · 0 |
+| `IN-STO` | 3 | 1 · 4 · 0 · 0 |
+| `IN-VEG` | 2 | 3 · 0 · 0 · 0 |
+| `IN-STA` | 2 | 4 · 0 · 0 · 0 |
 | `IN-DAI` | 2 | 2 · 0 · 0 · 0 |
 | `IN-MEA` | 1 | 0 · 0 · 0 · 0 |
 | `IN-FSH` | 1 | 0 · 0 · 0 · 0 |
@@ -221,8 +222,8 @@ row rests on the quiz alone.
 | `TS-DRY` | 2 | 3 · 0 · 0 · 0 |
 | `TS-MOI` | 3 | 0 · 2 · 0 · 0 |
 | `TS-EGG` | 3 | 1 · 3 · 0 · 0 |
-| `TS-VEG` | 3 ✗ | 0 · 0 · 0 · 0 |
-| `TS-STA` | 3 ✗ | 0 · 0 · 0 · 0 |
+| `TS-VEG` | 3 | 0 · 4 · 0 · 0 |
+| `TS-STA` | 3 | 1 · 2 · 0 · 0 |
 | `TS-PRO` | 1 | 0 · 0 · 0 · 0 |
 | `TS-PLT` | 1 | 0 · 0 · 0 · 0 |
 | `SC-HEAT` | 2 | 3 · 0 · 0 · 0 |
@@ -238,16 +239,16 @@ row rests on the quiz alone.
 | `KM-PLAN` | 2 | 2 · 0 · 0 · 0 |
 | `KM-MATH` | 2 | 1 · 0 · 0 · 0 |
 | `KM-PURC` | 1 | 0 · 0 · 0 · 0 |
-| `KM-WAST` | 2 | 1 · 0 · 0 · 0 |
+| `KM-WAST` | 2 | 2 · 0 · 0 · 0 |
 | `KM-EQPT` | 2 | 3 · 0 · 0 · 0 |
 | `SA-HYG` | 3 | 1 · 1 · 0 · 0 |
-| `SA-TEMP` | 3 | 1 · 2 · 0 · 0 |
+| `SA-TEMP` | 3 | 1 · 3 · 0 · 0 |
 | `SA-PHYS` | 3 | 0 · 2 · 0 · 0 |
 | `SA-ALLG` | 2 | 1 · 0 · 0 · 0 |
 | `RD-ADPT` | 1 | 0 · 0 · 0 · 0 |
 | `RD-TEST` | 1 | 0 · 0 · 0 · 0 |
 | `RD-WRIT` | 2 | 1 · 0 · 0 · 0 |
-| `JD-CUES` | 2 | 3 · 0 · 0 · 0 |
+| `JD-CUES` | 2 | 4 · 0 · 0 · 0 |
 | `JD-CHSE` | 1 | 0 · 0 · 0 · 0 |
 | `JD-TRBL` | 1 | 0 · 0 · 0 · 0 |
 | `JD-REFL` | 2 | 4 · 0 · 0 · 0 |
@@ -262,6 +263,14 @@ row rests on the quiz alone.
 3. **One full check per module now; the bank of three in Phase 6** (review decision).
 4. **Exercises are tagged** with the competencies they evidence (§1.2). The Phase 4 mapping blocks still show the
    module-level approximation; the tags are in the course files and in the reachability table.
+5. **Quiz-only success rows.** Where a Phase 4 success row rests on the quiz alone (for example `SA-PHYS`, `SC-HEAT`
+   and `KM-MATH` at level 2), the module's evidence row names the knowledge check instead of an exercise.
+6. **Success rows that span modules.** Some Phase 4 rows combine parts that the outline teaches in different modules or
+   courses (for example `TS-STA` level 3: a pilaf, pasta, a mash). Each evidence row then says which part it covers
+   and where the rest is shown. The evidence record, not a single module, completes the row.
+7. **Evidence-only modules.** A module with only [J] objectives may skip the quiz when its judgments are better shown by
+   the evidence. In S1 this applies to `KNF-1.M5`, `HEA-1.M4` and `VEG-1.M6`. `KNF-1.M4` and `EGG-1.M5` have no [K]
+   or [J] objective at all.
 
 **Outline changes** (applied, because they follow decisions already reviewed):
 
@@ -279,6 +288,12 @@ No course, module, lesson, hour, exercise or `Moves` entry has changed.
   for video of raw-protein handling.
 - `KNF-1.M1.X1` adds moving a pot of hot water and a photo of the fire blanket, because the `SA-PHYS` level 3 row asks
   for them.
+- `VEG-1.M1.X1` adds preparing four vegetables of different groups, because the `IN-VEG` level 2 row asks for it.
+- `EQP-1.M1.X1` ends with pan choices for three recipes, from the `KM-EQPT` level 2 row.
+- `EGG-1.M2.X1` and `STA-1.M2.X1` repeat the target dish on later days without a recipe, because level 3 asks for
+  independent execution on two occasions.
+- `KNF-1` adds working sizes for *bâtonnet* (5–7 mm square, 5–6 cm long) and *paysanne* (10–12 mm, 2–3 mm thick),
+  which the Phase 4 tolerance note does not list.
 
 ## 6. Equipment across the developed courses (generated)
 
@@ -290,18 +305,21 @@ No course, module, lesson, hour, exercise or `Moves` entry has changed.
 | Cast-iron or carbon-steel skillet | 0 | `EQP-1`, `HEA-1` |
 | Chef's knife (20 cm) | 0 | `EQP-1`, `KNF-1` |
 | Digital scale (1 g) | 0 | `ORI-1`, `TST-1`, `WRK-1` |
-| Heavy stainless sauté pan | 0 | `EQP-1`, `HEA-1` |
+| Heavy saucepan with a lid | 0 | `STA-1` |
+| Heavy stainless sauté pan | 0 | `EQP-1`, `HEA-1`, `VEG-1` |
 | Honing steel | 0 | `EQP-1`, `KNF-1` |
 | Instant-read thermometer | 0 | `EGG-1`, `EQP-1`, `HEA-1`, `ORI-1`, `SAF-1` |
 | Large stable board | 0 | `EQP-1`, `KNF-1` |
 | Mixing bowls | 0 | `WRK-1` |
 | Oven thermometer | 0 | `EQP-1`, `ORI-1` |
 | Paring knife | 0 | `EQP-1`, `KNF-1` |
-| Saucepans | 0 | `EQP-1`, `HEA-1` |
+| Saucepans | 0 | `EQP-1`, `HEA-1`, `VEG-1` |
 | Sheet pan as a tray | 0 | `WRK-1` |
-| Sheet pans | 0 | `EQP-1`, `HEA-1` |
+| Sheet pans | 0 | `EQP-1`, `HEA-1`, `STA-1`, `VEG-1` |
+| Sieve | 0 | `STA-1` |
 | Small saucepan | 0 | `EGG-1` |
 | Stockpot | 0 | `EQP-1` |
+| Stockpot or large pot | 0 | `STA-1` |
 | Tongs | 0 | `HEA-1` |
 | Calibration kit: coded cups | — | `TST-1` |
 | Calibration kit: key sheets | — | `TST-1` |
@@ -317,6 +335,7 @@ No course, module, lesson, hour, exercise or `Moves` entry has changed.
 | Journal | — | `ORI-1` |
 | Kitchen timer | — | `KNF-1`, `WRK-1` |
 | Labels and pen | — | `ORI-1`, `SAF-1` |
+| Ladle | — | `STA-1` |
 | Measuring jug and spoons | — | `WRK-1` |
 | Measuring jugs or bottles (1 l) | — | `TST-1` |
 | Measuring spoons and a pipette | — | `TST-1` |
@@ -324,14 +343,81 @@ No course, module, lesson, hour, exercise or `Moves` entry has changed.
 | Omelette pan (20 cm) | — | `EGG-1` |
 | Peeler | — | `KNF-1` |
 | Phone stand | — | `KNF-1` |
+| Potato masher | — | `VEG-1` |
 | Precision scale (0.1 g) | — | `TST-1` |
 | Ramekins | — | `EGG-1` |
+| Salad spinner | — | `VEG-1` |
+| Seasonal calendar | — | `VEG-1` |
 | Second cutting board for raw protein | — | `SAF-1` |
-| Shallow containers with lids | — | `SAF-1` |
+| Shallow containers with lids | — | `SAF-1`, `STA-1` |
 | Slotted spoon | — | `EGG-1` |
 | Small prep bowls | — | `WRK-1` |
-| Steamer | — | `HEA-1` |
+| Steamer | — | `HEA-1`, `VEG-1` |
 | Stick blender | — | `EGG-1` |
 | Tasting cups | — | `ORI-1` |
 | Tasting form | — | `TST-1` |
+| Wooden spoon | — | `STA-1` |
 <!-- END generated:equipment -->
+
+---
+
+## 7. End of the S1 batch
+
+### 7.1 What was delivered
+
+S1 is developed in ten course files in [`05-courses/S1/`](05-courses/S1/). In total:
+- 119 lesson outlines, each with a session plan that matches the outline's practical sessions;
+- 58 exercise specs, each tagged with the competencies it evidences;
+- 314 knowledge-check items in 39 checks, 48 of them safety items;
+- 78 evidence rows against the Phase 4 success rows.
+
+The status table (§3) has the counts per course. Every S1 stage target is evidenced by an exercise at that level, or
+by the quiz where its success row asks only for the quiz (§4). The milestone `MS-S1` is unchanged
+([assessment §7.1](04-assessment.md#71-ms-s1--foundations-7-h)). Each course file says what it feeds into it.
+
+**The indicative ingredient budget** for the S1 exercises is about **€265** beyond normal meals, over about 31 weeks
+at 6.5 hours a week (200.5 hours, including `MS-S1`). On top of it come the one-off `ORI-1` pantry baseline (about €50) and the tier 0 equipment that
+the learner does not yet own.
+
+**Checks.** The validator now checks every course file against the outline and the competency framework (§1). Its
+generated *Validation* block in each course file lists what was checked.
+
+### 7.2 Decisions and assumptions
+
+The decisions are numbered in §5. The assumptions:
+- **Prices** are rough Dutch supermarket prices for 2026, not checked against shop data.
+- **Produce** follows the Dutch seasons. Each exercise gives a summer and a winter choice where the season matters.
+- **One helper:** the household includes at least one person who can code samples and taste blind (`TST-1`,
+  [assessment §5](04-assessment.md#5-calibration-tests)).
+- **Reference images:** the knowledge checks and the AI-review exercises name the images Phase 6 must produce. None
+  exist yet.
+
+### 7.3 Gaps and open questions for the review
+
+1. **Exercise scope notes** (§5). Seven exercise specs do more than the outline's one-line description, so that their
+   module can meet the Phase 4 success row. Hours are unchanged.
+   - Option 1: keep the outline's short descriptions and let the specs carry the detail. This is my recommendation.
+   - Option 2: rewrite the outline descriptions to match.
+2. **Success rows that span modules** (decision 6). Rows such as `TS-STA` level 3 and `IN-STA` level 2 are completed
+   over several modules or courses.
+   - Option 1: the evidence rows say which part each module covers. This is what S1 does, and my recommendation.
+   - Option 2: split those Phase 4 rows by element.
+3. **Burn first aid.** `SAF-1.M4.L2` does not give a cooling time for burns, because the program has no source for it
+   yet. Phase 6 should cite the Dutch Red Cross; it is not yet in `sources.md`.
+4. **The knowledge-check items have not been reviewed by a second reader.** The validator checks their number, type,
+   lesson and safety flag, not whether each answer is right. A read-through during the review is worth it, above all
+   for the 48 safety items.
+5. **The tolerance note.** Should the working sizes for *bâtonnet* and *paysanne* that `KNF-1` adds be added to the
+   Phase 4 tolerance note in `04-competencies/TS.md`? I recommend yes.
+
+### 7.4 Recommendations for S2
+
+1. **Keep the format.** Change it only where the S1 review asks; the validator then holds S2 to it.
+2. **Check every module's evidence row against its success row before writing.** In S1, most exercise extensions came
+   from success rows that asked for more than the outline's exercise description. Doing this check first shows any
+   such extension before the course is written.
+3. **Tier 1 equipment** (the Dutch oven, a fine sieve, a whetstone, a mixer) gets its Good and Best where it first
+   appears in S2.
+4. **`SCI-2` and the protein courses** use the doneness and cooling figures of assessment §9. The sous vide table that
+   `SLW-3` needs is a separate S3 question.
+
