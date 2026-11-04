@@ -68,7 +68,7 @@ and seven fields:
 | **Conditions** | Support, time limit, and the variable that changes when the exercise is part of a series (Phase 1 §9.2). |
 | **Inputs** | The kinds of ingredient and rough quantities, chosen for cost and for Dutch seasonal produce. Not a recipe. |
 | **Procedure** | The steps in outline. |
-| **Evidence** | The evidence methods first (`photo, measure — …`), then what to capture. Where AI review scores a photo or video, the field names the **reference images** Phase 6 must produce (*Competent* and *Not yet*) and the short rubric the AI scores against ([assessment §6](04-assessment.md#6-ai-review)). |
+| **Evidence** | The evidence methods first (`photo, measure — …`, or `photo, measure:` followed by a list), then what to capture. Where AI review scores a photo or video, the field names the **reference images** Phase 6 must produce (*Competent* and *Not yet*) and the short rubric the AI scores against ([assessment §6](04-assessment.md#6-ai-review)). |
 | **Time** | Active time, and calendar time if it differs. |
 
 **Tagging rules** (checked by the script):
@@ -85,7 +85,9 @@ Every module ends with `#### Module check`, which has two parts.
 the brief asks for knowledge checks in every course, and the [K] objectives need one (decision 2, §5). The size follows
 the [assessment §4.1 blueprint](04-assessment.md#41-quiz-blueprint), counted on the lessons' objectives: 2 items per [K]
 objective, plus up to 1 per [J] objective, with at least 8 and at most 20. A module with neither [K] nor [J]
-objectives has no quiz. The items are written out:
+objectives has no quiz. A module with only [J] objectives has a quiz where its judgments can be put as scenarios, and
+otherwise rests on its evidence check: the blueprint counts [J] objectives only "that can be put as a scenario". The
+items are written out:
 
 | Column | Content |
 |---|---|
@@ -107,6 +109,9 @@ written in Phase 6 (review decision, 2026-11-04).
 - the evidence methods and what must be shown.
 
 The standard is the competency's Phase 4 success row at that level ([assessment §4.2](04-assessment.md#42-evidence-check)).
+Where a success row has parts that the outline teaches in different modules (for example a sensory form and the
+calibration tests for `FL-SENS` level 2), the earlier module's row says which part it covers and where the rest is
+shown.
 The counts of the mastery criterion (two demonstrations on different days for level 3, and so on) are built up in the
 evidence record over the stage, not in a single check.
 
@@ -148,8 +153,8 @@ evidence record over the stage, not in a single check.
 | S1 | [`SAF-1`](05-courses/S1/SAF-1.md) | 10 / 10 | 5 / 5 | 32 | 32 | 7 | €20 |
 | S1 | [`WRK-1`](05-courses/S1/WRK-1.md) | 11 / 11 | 6 / 6 | 32 | 0 | 7 | €15 |
 | S1 | [`EQP-1`](05-courses/S1/EQP-1.md) | 9 / 9 | 3 / 3 | 24 | 0 | 4 | €10 |
-| S1 | `KNF-1` | 0 / 15 | — | — | — | — | — |
-| S1 | `TST-1` | 0 / 13 | — | — | — | — | — |
+| S1 | [`KNF-1`](05-courses/S1/KNF-1.md) | 15 / 15 | 7 / 7 | 24 | 6 | 11 | €35 |
+| S1 | [`TST-1`](05-courses/S1/TST-1.md) | 13 / 13 | 6 / 6 | 34 | 0 | 6 | €25 |
 | S1 | `HEA-1` | 0 / 17 | — | — | — | — | — |
 | S1 | `EGG-1` | 0 / 11 | — | — | — | — | — |
 | S1 | `VEG-1` | 0 / 15 | — | — | — | — | — |
@@ -212,7 +217,7 @@ row rests on the quiz alone.
 | `IN-FSH` | 1 | 0 · 0 · 0 · 0 |
 | `IN-ARO` | 1 | 0 · 0 · 0 · 0 |
 | `TS-MEP` | 3 | 1 · 1 · 0 · 0 |
-| `TS-KNF` | 3 ✗ | 0 · 0 · 0 · 0 |
+| `TS-KNF` | 3 | 4 · 3 · 0 · 0 |
 | `TS-DRY` | 2 ✗ | 0 · 0 · 0 · 0 |
 | `TS-MOI` | 3 ✗ | 0 · 0 · 0 · 0 |
 | `TS-EGG` | 3 ✗ | 0 · 0 · 0 · 0 |
@@ -220,24 +225,24 @@ row rests on the quiz alone.
 | `TS-STA` | 3 ✗ | 0 · 0 · 0 · 0 |
 | `TS-PRO` | 1 | 0 · 0 · 0 · 0 |
 | `TS-PLT` | 1 | 0 · 0 · 0 · 0 |
-| `SC-HEAT` | 2 | 1 · 0 · 0 · 0 |
+| `SC-HEAT` | 2 | 2 · 0 · 0 · 0 |
 | `SC-BRWN` | 2 (quiz) | 0 · 0 · 0 · 0 |
 | `SC-PROT` | 2 (quiz) | 0 · 0 · 0 · 0 |
 | `SC-STRC` | 2 (quiz) | 0 · 0 · 0 · 0 |
 | `SC-EMUL` | 1 | 0 · 0 · 0 · 0 |
 | `SC-MICR` | 1 | 0 · 0 · 0 · 0 |
-| `FL-SENS` | 2 ✗ | 0 · 0 · 0 · 0 |
-| `FL-SEAS` | 2 ✗ | 0 · 0 · 0 · 0 |
+| `FL-SENS` | 2 | 3 · 0 · 0 · 0 |
+| `FL-SEAS` | 2 | 4 · 0 · 0 · 0 |
 | `FL-TEXT` | 1 | 0 · 0 · 0 · 0 |
 | `FL-CORR` | 1 | 0 · 0 · 0 · 0 |
 | `KM-PLAN` | 2 | 1 · 0 · 0 · 0 |
 | `KM-MATH` | 2 | 1 · 0 · 0 · 0 |
 | `KM-PURC` | 1 | 0 · 0 · 0 · 0 |
-| `KM-WAST` | 2 ✗ | 0 · 0 · 0 · 0 |
+| `KM-WAST` | 2 | 1 · 0 · 0 · 0 |
 | `KM-EQPT` | 2 | 3 · 0 · 0 · 0 |
 | `SA-HYG` | 3 | 1 · 1 · 0 · 0 |
 | `SA-TEMP` | 3 | 1 · 1 · 0 · 0 |
-| `SA-PHYS` | 3 ✗ | 0 · 0 · 0 · 0 |
+| `SA-PHYS` | 3 | 0 · 2 · 0 · 0 |
 | `SA-ALLG` | 2 | 1 · 0 · 0 · 0 |
 | `RD-ADPT` | 1 | 0 · 0 · 0 · 0 |
 | `RD-TEST` | 1 | 0 · 0 · 0 · 0 |
@@ -245,7 +250,7 @@ row rests on the quiz alone.
 | `JD-CUES` | 2 ✗ | 0 · 0 · 0 · 0 |
 | `JD-CHSE` | 1 | 0 · 0 · 0 · 0 |
 | `JD-TRBL` | 1 | 0 · 0 · 0 · 0 |
-| `JD-REFL` | 2 | 3 · 0 · 0 · 0 |
+| `JD-REFL` | 2 | 4 · 0 · 0 · 0 |
 <!-- END generated:reachability -->
 
 ## 5. Decisions and change log
@@ -267,6 +272,14 @@ row rests on the quiz alone.
 
 No course, module, lesson, hour, exercise or `Moves` entry has changed.
 
+**Exercise scope notes** (the outline's one-line description is kept; the spec does more):
+- `TST-1.M2.X1` runs the acid series of [assessment §5.2](04-assessment.md#52-acid-series) as well as the salt series,
+  so that `FL-SENS` level 2 (which asks for both ranking tests) is complete in one module.
+- `SAF-1.M2.X1` holds both audits during a meal with raw protein, and films it, because the `SA-HYG` level 3 row asks
+  for video of raw-protein handling.
+- `KNF-1.M1.X1` adds moving a pot of hot water and a photo of the fire blanket, because the `SA-PHYS` level 3 row asks
+  for them.
+
 ## 6. Equipment across the developed courses (generated)
 
 <!-- BEGIN generated:equipment -->
@@ -274,31 +287,40 @@ No course, module, lesson, hour, exercise or `Moves` entry has changed.
 |---|---|---|
 | Bread knife | 0 | `EQP-1` |
 | Cast-iron or carbon-steel skillet | 0 | `EQP-1` |
-| Chef's knife (20 cm) | 0 | `EQP-1` |
-| Digital scale (1 g) | 0 | `ORI-1`, `WRK-1` |
+| Chef's knife (20 cm) | 0 | `EQP-1`, `KNF-1` |
+| Digital scale (1 g) | 0 | `ORI-1`, `TST-1`, `WRK-1` |
 | Heavy stainless sauté pan | 0 | `EQP-1` |
-| Honing steel | 0 | `EQP-1` |
+| Honing steel | 0 | `EQP-1`, `KNF-1` |
 | Instant-read thermometer | 0 | `EQP-1`, `ORI-1`, `SAF-1` |
-| Large stable board | 0 | `EQP-1` |
+| Large stable board | 0 | `EQP-1`, `KNF-1` |
 | Mixing bowls | 0 | `WRK-1` |
 | Oven thermometer | 0 | `EQP-1`, `ORI-1` |
-| Paring knife | 0 | `EQP-1` |
+| Paring knife | 0 | `EQP-1`, `KNF-1` |
 | Saucepans | 0 | `EQP-1` |
 | Sheet pan as a tray | 0 | `WRK-1` |
 | Sheet pans | 0 | `EQP-1` |
 | Stockpot | 0 | `EQP-1` |
+| Calibration kit: coded cups | — | `TST-1` |
+| Calibration kit: key sheets | — | `TST-1` |
 | Camera | — | `ORI-1` |
 | Fire blanket | — | `SAF-1` |
 | First-aid kit | — | `SAF-1` |
 | Fridge thermometer | — | `SAF-1` |
-| Grid board or ruler | — | `ORI-1` |
+| Grid board or ruler | — | `KNF-1`, `ORI-1` |
 | Hand towels and dish cloths | — | `SAF-1` |
 | Journal | — | `ORI-1` |
-| Kitchen timer | — | `WRK-1` |
+| Kitchen timer | — | `KNF-1`, `WRK-1` |
 | Labels and pen | — | `ORI-1`, `SAF-1` |
 | Measuring jug and spoons | — | `WRK-1` |
+| Measuring jugs or bottles (1 l) | — | `TST-1` |
+| Measuring spoons and a pipette | — | `TST-1` |
+| Non-slip mat or damp towel | — | `KNF-1` |
+| Peeler | — | `KNF-1` |
+| Phone stand | — | `KNF-1` |
+| Precision scale (0.1 g) | — | `TST-1` |
 | Second cutting board for raw protein | — | `SAF-1` |
 | Shallow containers with lids | — | `SAF-1` |
 | Small prep bowls | — | `WRK-1` |
 | Tasting cups | — | `ORI-1` |
+| Tasting form | — | `TST-1` |
 <!-- END generated:equipment -->

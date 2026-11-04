@@ -465,7 +465,7 @@ white-wine vinegar; 15 cups or glasses with codes; a 1 g scale.
 #### Module check
 
 <!-- BEGIN generated:check-ori-1-m3 -->
-*Blueprint (assessment §4.1): 0 [K] and 1 [J] objective(s) in the lessons → 8 items. Pass: 80 % and every safety item correct.*
+*Blueprint (assessment §4.1): 0 [K] and 1 [J] objective(s) in the lessons → no quiz, or 8 items if the [J] objectives are put as scenarios. Pass: 80 % and every safety item correct.*
 <!-- END generated:check-ori-1-m3 -->
 
 | ID | Type | Lesson | Safety | Item | Answer | Why |

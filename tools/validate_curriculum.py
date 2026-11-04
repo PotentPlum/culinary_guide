@@ -1078,8 +1078,8 @@ class Phase5:
 
 
 def split_methods(cell: str, where: str, report: Report) -> list[str]:
-    """`photo, measure — text`: the evidence methods before the dash."""
-    head = cell.split(" — ", 1)[0]
+    """`photo, measure — text` or `photo, measure:` (a list follows): the evidence methods first."""
+    head = cell.split(" — ", 1)[0].strip().removesuffix(":")
     return parse_evidence(head, where, report)
 
 
@@ -1325,8 +1325,10 @@ def check_course_doc(doc: CourseDoc, course: Course, phase4: Phase4, report: Rep
             continue
         items = doc.items.get(module.id, [])
         k, j, low, high = blueprint(module)
-        if not low <= len(items) <= high:
+        optional = k == 0  # [J] objectives only: a quiz only where they can be put as scenarios
+        if not low <= len(items) <= high and not (optional and not items):
             expected = f"{low}" if low == high else f"{low}–{high}"
+            expected = f"0 or {expected}" if optional and high else expected
             report.error(f"{module.id}: {len(items)} knowledge-check item(s); the blueprint asks for {expected} ({k} [K], {j} [J])")
         lessons = {l.id: l for l in module.lessons}
         for item in items:
@@ -1518,6 +1520,8 @@ def phase5_tables(
             size = "no quiz (no [K] or [J] objective)" if high == 0 else (
                 f"{low} items" if low == high else f"{low}–{high} items"
             )
+            if k == 0 and high:
+                size = f"no quiz, or {size} if the [J] objectives are put as scenarios"
             tables[f"check-{block(m.id)}"] = (
                 f"*Blueprint (assessment §4.1): {k} [K] and {j} [J] objective(s) in the lessons → {size}. "
                 "Pass: 80 % and every safety item correct.*"
