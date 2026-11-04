@@ -1,9 +1,10 @@
 # Phase 5 — Course development
 
-Status: **S1 reviewed; answers applied** (2026-11-04). S2–S5 follow one stage at a time, in the format agreed on S1.
-The end of the S1 batch, with its decisions and the review answers, is in §7.
+Status: **S2 ready for review** (2026-11-04). S1 is reviewed and its answers are applied (§7). S2 is developed in the
+format agreed on S1; the end of the S2 batch, with its decisions, gaps and questions, is in §8. S3–S5 follow one stage
+at a time.
 
-**Stages developed:** S1
+**Stages developed:** S1, S2
 
 This phase develops every course of the outline in depth. For each course it gives:
 - an introduction;
@@ -203,7 +204,7 @@ each level. ✗ marks a stage target that no exercise up to that stage evidences
 row rests on the quiz alone.
 
 <!-- BEGIN generated:reachability -->
-| Competency | S1 | S2 (in progress) | Exercises at L2 · L3 · L4 · L5 |
+| Competency | S1 | S2 | Exercises at L2 · L3 · L4 · L5 |
 |---|---|---|---|
 | `CK-TERM` | 2 (quiz) | 3 | 0 · 2 · 0 · 0 |
 | `CK-METH` | 2 | 3 | 1 · 2 · 0 · 0 |
@@ -483,3 +484,169 @@ The decisions are numbered in §5. The assumptions:
 4. **`SCI-2` and the protein courses** use the doneness and cooling figures of assessment §9. The sous vide table that
    `SLW-3` needs is a separate S3 question.
 
+## 8. End of the S2 batch
+
+### 8.1 What was delivered
+
+S2 is developed in eleven course files in [`05-courses/S2/`](05-courses/S2/). In total:
+- 131 lesson outlines, each with a session plan that matches the outline's practical sessions;
+- 71 exercise specs, each tagged with the competencies it evidences;
+- 408 knowledge-check items in 51 checks, 62 of them safety items;
+- 153 evidence rows against the Phase 4 success rows.
+
+Eight modules have no quiz:
+- `KNF-2.M1`, `KNF-2.M2` and `KNF-2.M3`, `POU-2.M2` and `FSH-2.M5` have no [K] or [J] objective;
+- `HEA-2.M6`, `BAK-2.M6` and `BRD-2.M5` have only a [J] objective that their evidence shows better than scenario items
+  (decision 7).
+
+Every S2 stage target is evidenced by an exercise at that level, or by the quiz where its success row asks only for the
+quiz (§4). `**Stages developed:**` now reads S1, S2, so the validator holds both stages to that. The milestone `MS-S2`
+is unchanged ([assessment §7.2](04-assessment.md#72-ms-s2--core-techniques-16-h)).
+
+**The indicative ingredient budget** for the S2 exercises is about **€725**, over about 40 weeks at 6.5 hours a week
+(260 hours, including `MS-S2`). Meat (€150) and fish (€110) are the largest items. Nearly all of it is household meals,
+so the true extra cost is much lower; the course files give Good options throughout.
+
+### 8.2 Decisions and assumptions
+
+1. **A row added to [assessment §9](04-assessment.md#9-safety-figures-used-in-assessment): rare beef steaks.**
+   - **What changed:** §9 had only "intact meat, 63 °C for 15 seconds". `MEA-2` teaches steaks to a chosen doneness, and
+     its outline asks for rare to well done, so every rare steak would have been a gate *Fail*.
+   - **The new row:** the Food Code's rule for whole-muscle, intact beef steaks (§3-401.11(C)). They may be served rare
+     when seared on top and bottom to a surface of 63 °C with the colour changed on every outside surface, kept intact,
+     and not served to risk groups. A gate rule says how it is checked.
+   - **Status:** logged in the outline-changes table of §5, and question 1 below.
+2. **What S2 does not teach**, because §9 has no figure for it:
+   - a beef roast below the roast table (rare roast beef);
+   - fish below 63 °C, raw or lightly cooked;
+   - a stock or sauce held below 57 °C for long.
+
+   Hollandaise and *beurre blanc* are made for the meal and thrown away after it.
+3. **Rows that span courses** (decision 6) are more common in S2 than in S1, because S2's competencies run across the
+   ingredient courses. Where each part is shown:
+
+   | Row | Parts and where they are shown |
+   |---|---|
+   | `SC-EMUL` 3 | Mayonnaise: `SCI-2.M4.X1`, `SAU-2.M4.X1`. Warm butter emulsion: `SAU-2.M2.X1`. Further foam and buttercream evidence: `BAK-2.M4` |
+   | `TS-PRO` 3 | Poultry: `POU-2.M3.X1`, `POU-2.M4.X1`. Meat: `MEA-2.M3`, `MEA-2.M5.X1`. Fish and shellfish: `FSH-2.M3`, `FSH-2.M4.X1` |
+   | `TS-FAB` 2 | Portioning: `KNF-2.M2.X1`. Chicken: `POU-2.M2.X1`. Carving and tying: `MEA-2.M4.X1`. Round fish: `FSH-2.M2.X1` |
+   | `TS-MOI` 4 | Simmer: `STK-2.M2.X1`. Poultry poach: `POU-2.M5.X1`. Fish poach and steaming: `FSH-2.M3.X1` |
+   | `TS-EGG` 4 | *Sabayon* and poached eggs for four: `SAU-2.M5.X1`. Stirred and baked custards: `BAK-2.M5.X1` |
+   | `IN-DAI` 3 | The explanation and a cream sauce: `LEG-2.M3.X1`. A stirred custard: `BAK-2.M5.X1` |
+   | `TS-SAU` 3 | One element each in `SAU-2.M2` to `SAU-2.M6`, four of the five needed |
+   | `KM-WAST` 3 | `STK-2.M2.X2`, `POU-2.M5.X1` (two meals), `LEG-2.M2.X1` |
+   | `FL-SEAS` 3 | `STK-2.M3.X1` and the two stews of `MEA-2.M6.X1` |
+   | `IN-SEL` 3 | Two trips: `MEA-2.M2.X1`. Seasonal quiz and a third trip: `FSH-2.M1.X1` |
+   | `IN-MEA` 3 | Poultry: `POU-2.M3.X1`. Buying: `MEA-2.M2.X1`. Cooking: `MEA-2.M3`, `MEA-2.M6` |
+   | `IN-FSH` 3 | Round fish: `FSH-2.M1.X1`. Bivalve: `FSH-2.M4.X1` |
+   | `RD-RATO` 2 | Ratios: `STK-2.M5.X1`. Roux sauce: `SAU-2.M3.X2`. Vinaigrette: `SAU-2.M6.X1`. Baking: `BAK-2.M1.X1` |
+   | `KM-MATH` 3 | Formulas and scaling: `BAK-2.M1.X1`. The bread formula baked: `BRD-2.M2.X1` |
+   | `KM-EQPT` 3 | Thermometer and oven: `HEA-2`. Knife: `KNF-2.M3.X1`. Baking oven, scale and tins: `BAK-2.M1.X1`. Bread oven: `BRD-2.M3.X1` |
+   | `SA-HYG` 4 | Raw-protein portioning: `KNF-2.M2.X1`. Raw chicken: `POU-2.M1.X1`. Further evidence in `MEA-2.M5`, `FSH-2.M2` and `FSH-2.M4` |
+   | `SC-STRC` 3 | Starches: `SCI-2.M3.X1`. Dough: `BRD-2.M1.X1` |
+   | `SC-MICR` 3 | Hurdles of five foods: `SCI-2.M6.X1`. Fermentation: `BRD-2.M1.X1`. The learner's own preserves: `PRS-3` (S3) |
+
+4. **One cross-reference corrected:** `SCI-2` had pointed the warm butter emulsion to `SAU-2.M5`. The module that moves
+   `SC-EMUL` is `SAU-2.M2` (mounting with butter), so the reference now points there.
+5. **The pressure cooker** stays optional in `LEG-2`. It is tier 2 in Phase 1 §9.4, above the S2 limit, so the course
+   never requires it.
+6. **Assumptions,** as in S1:
+   - prices are rough;
+   - produce follows the Dutch seasons, with fish MSC- or ASC-labelled or seasonal North Sea fish;
+   - one household member codes samples and introduces faults (`SAU-2.M7.X1`);
+   - reference images are to be made in Phase 6.
+
+   Fruit appears only as Dutch seasonal fruit or rhubarb in `BAK-2`, and lemon as a pantry acid.
+
+**Exercise scope notes for S2** (the outline's one-line description is kept, as the S1 review decided; the spec does
+more so its module can meet the Phase 4 success row):
+- **`SCI-2`:**
+  - `M3.X1` includes the short- and long-mixed doughs (`SC-STRC` 3);
+  - `M6.X1` logs the batch cooling (`SA-TEMP` 4).
+- **`HEA-2`:**
+  - `M1.X1` adds a sixth, unfamiliar ingredient;
+  - `M2.X1` adds the probe and oven checks (`KM-EQPT` 3);
+  - `M4.X1` films the frying station.
+- **`KNF-2`:**
+  - `M2.X1` films three minutes of raw-protein handling, with a work order (`SA-HYG` 4);
+  - `M3.X1` keeps the edge log for four weeks (`JD-REFL` 3).
+- **`STK-2`:**
+  - `M1.X1` adds a written framework with ten terms (`CK-TERM` 3);
+  - `M2.X1` adds the brown stock;
+  - `M3.X1` runs the triangle tests in the same week;
+  - `M5.X1` reports the fix test.
+- **`SAU-2`:**
+  - `M1.X1` adds a one-page framework (`CK-TERM` 3);
+  - `M2.X1` breaks and repairs a mounted sauce (`SC-EMUL` 3);
+  - `M5.X1` adapts the eggs and the sauce for quantity and timing, with a temperature log (`TS-EGG` 4);
+  - `M7.X1` runs two sessions, structural and flavour faults, in sauces of the learner's own cooking (`JD-TRBL` 3,
+    `FL-CORR` 3).
+- **`POU-2`:**
+  - `M1.X1` adds the shopping list (`KM-PURC` 2);
+  - `M5.X1` poaches the bird with the liquid logged (`TS-MOI` 4);
+  - `M6.X1` cools and reheats the leftovers (`SA-TEMP` 4), with the prediction log spread over three sessions.
+- **`MEA-2`:**
+  - `M1.X1` weighs the pieces for cooking loss (`SC-PROT` 3);
+  - `M2.X1` adds a second shopping trip and photos (`IN-SEL` 3);
+  - `M4.X1` adds the sear-first against reverse-sear comparison, caramelised onions, and trimming and tying (`SC-BRWN`
+    3, `TS-FAB` 2);
+  - `M5.X1` films the shaping and cools and reheats the batch (`SA-HYG` 4, `SA-TEMP` 4);
+  - `M6.X1` is made twice, with two classic stews (`FL-SEAS` 3).
+- **`FSH-2`:**
+  - `M2.X1` fillets a whole round fish, films the work and photographs the week's fridge (`TS-FAB` 2, `SA-HYG` 4,
+    `IN-STO` 3);
+  - `M4.X1` adds a starter of probed prawns, and films the mussel check (`TS-PRO` 3, `SA-HYG` 4).
+- **`LEG-2`:**
+  - `M3.X1` adds a reduced cream sauce and a written explanation (`IN-DAI` 3);
+  - `M4.X1` adds an allergen-free constraint and a predicted substitution (`SA-ALLG` 3, `RD-ADPT` 2).
+- **`BAK-2`:**
+  - `M1.X1` adds a flour comparison bake, a milk-free batch, and the oven, scale and tin checks (`IN-BAK` 3, `SA-ALLG`
+    3, `KM-EQPT` 3);
+  - `M4.X2` adds a correcting third bake (`JD-TRBL` 3);
+  - `M5.X1` adds a *crème anglaise* and baked custards in two sizes (`TS-EGG` 4, `IN-DAI` 3);
+  - `M6.X1` adds the baking-log review (`JD-REFL` 3).
+- **`BRD-2`:**
+  - `M2.X1` keeps the cue-then-reading entries (`JD-CUES` 3);
+  - `M3.X1` logs the oven and preheat times (`KM-EQPT` 3);
+  - `M5.X1` adds a dinner as a parallel task and the bread-log review (`KM-PLAN` 3, `JD-REFL` 3).
+
+Hours, lessons and `Moves` entries are unchanged.
+
+### 8.3 Gaps and open questions
+
+1. **The steak row in §9** (decision 1).
+   - Option 1: keep it. Rare and medium-rare steaks are taught, checked by the surface rule, and not served to risk
+     groups. This is my recommendation: it is the Food Code's own rule for professional kitchens, and it follows the
+     common reasoning that the bacteria of an intact steak are on its surface. The Voedingscentrum page on meat should
+     be checked for the Dutch wording before Phase 6.
+   - Option 2: remove it, and teach steaks to 63 °C only. `MEA-2.M1.X1` and `MEA-2.M3.X1` would then lose their rare
+     and medium-rare targets.
+2. **The Food Code's oven chart for roasts** (§3-401.11(B)(2): a still oven at 177 °C or more for roasts under 4.5 kg)
+   is not in §9. The reverse sear of `MEA-2.M4` uses a low oven and meets §9's core time-temperature table.
+   - Option 1: keep §9 as it is, and add a note that the oven chart is not adopted for home roasting. This is my
+     recommendation.
+   - Option 2: adopt the chart. `MEA-2.M4` would then drop the reverse sear for small joints.
+3. **No figure for raw-bean lectins.** `LEG-2.M1.L1` says to boil dried kidney beans hard for several minutes before
+   simmering, without a number, because §9 has none. I recommend adding a checked figure, with its source in
+   `sources.md`, before Phase 6 writes the lesson.
+4. **The knowledge-check items have not been reviewed by a second reader** (as in S1). There are 408 items, 62 of them
+   safety items. A read-through of the safety items is worth it.
+5. **The budget.** About €725 for S2, against €265 for S1, mostly meat and fish that replace household meals.
+   - Is that acceptable?
+   - Or should the Good options become the default in the specs (for example frozen MSC fish, *kogelbiefstuk*, chicken
+     legs), which would bring it to roughly €550?
+
+### 8.4 Recommendations for S3
+
+1. **Keep mapping before writing.** Checking each module's evidence row against its success row first caught every
+   exercise extension above before the course was written.
+2. **Settle the low-temperature figures before `SLW-3`.** Sous vide, confit and slow cooking need tested
+   pasteurisation tables in §9, and possibly the lightly cooked fish of `CUI-3`. They should be agreed before S3 is
+   written, as the S1 recommendations already noted.
+3. **`PRS-3` and `SA-HRPR`:** the home-preserving rule of §9 ("tested methods only") needs named, checkable sources
+   for each method taught (water-bath canning, fermentation, curing salts).
+4. **Tier 2 equipment** (a circulator, fermentation jars, a 0.01 g scale, a mandoline, the `FIR-3` grill) gets its Good
+   and Best where it first appears in S3.
+5. **Write `CUI-3` (34 lessons) as its own batch.** It is the largest course of the program.
+6. **A small validator addition:** check that every exercise ID named in an evidence row's text exists. The S2 rows
+   name exercises in other courses (§8.2, decision 3); the check would keep those references from drifting.
