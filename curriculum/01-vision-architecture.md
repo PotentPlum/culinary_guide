@@ -1,6 +1,6 @@
 # Phase 1 — Educational vision and curriculum architecture
 
-Status: **ready for review** (2026-11-04). Conventions (dimensions K/S/J/M, levels 1–5, IDs) are in [`README.md`](README.md);
+Status: **reviewed** (2026-11-04). The reviewer's answers to the open questions are applied (see §13.2). Conventions (dimensions K/S/J/M, levels 1–5, IDs) are in [`README.md`](README.md);
 sources `[S#]` are in [`sources.md`](sources.md).
 
 This document is the blueprint for every later phase:
@@ -24,8 +24,9 @@ It does **not** contain modules, lessons, recipes or lesson content. Those come 
 | A3 | About **70 % of practical work is cooked as real household meals**, so practice largely replaces cooking that would happen anyway. | Exercises are designed to give edible, sized-for-the-household results. Pure drills, such as knife practice, use ingredients that then go into a meal. | The household is a single person (more batch cooking and freezing), or larger (more scaling). |
 | A4 | **Netherlands / EU baseline**: metric units, Dutch supermarkets plus specialty shops (*toko*, Turkish/Moroccan grocer, fishmonger, butcher, market), Dutch and EU food safety guidance [S21][S22][S23][S26]. US references [S24][S25] are added where they are more detailed. | Ingredient lists, seasons and safety rules follow NL/EU first. | The learner lives elsewhere (swap the authority set and ingredient notes). |
 | A5 | A normal domestic kitchen: 2–4 burners (gas, ceramic or induction), one oven (often fan-assisted), a fridge-freezer, limited counter space. **Equipment is bought in tiers** (§9.4), only when a course needs it. | Each course states its minimum kit and a domestic alternative; professional equipment is optional and its effect on the result is explained. | |
-| A6 | The learner eats meat, fish, dairy, eggs and gluten. | Meat and fish courses are core. | The learner is vegetarian, has allergies, or avoids alcohol (§13 Q2): the affected modules get equivalent alternatives, and the competency targets stay the same. |
-| A7 | No live teacher. Feedback comes from the learner (structured self-assessment), from objective evidence (scales, thermometers, photos), from household tasters, and optionally from AI or a coach reviewing photos and video. | Assessment is designed around what can be verified at home (§10). | |
+| A6 | The learner has **no dietary limits** (confirmed, §13.2 Q2): eats meat, fish, dairy, eggs and gluten, and cooks with alcohol. | Meat, fish and beverage modules are core. | A future learner is vegetarian, has allergies, or avoids alcohol: the affected modules get equivalent alternatives, and the competency targets stay the same. |
+| A7 | No live teacher. Feedback comes from four sources (confirmed, §13.2 Q4): the learner (structured self-assessment), objective evidence (scales, thermometers, photos), **household tasters**, and **AI review of photos and video**. | Assessment is designed around what can be verified at home (§10). Household tasters and AI review are standard evidence sources, not optional extras. | A human coach becomes available (add expert review to milestones). |
+| A9 | **No fixed budget**, but every equipment and ingredient recommendation comes in two categories (§13.2 Q5): **Good** (*Goed*: a sound choice that does the job well at a sensible price) and **Best** (*Beste*: the choice a professional would make, where it makes a real difference). | Courses list both; the learner chooses. Where Best makes no real difference to the result, only Good is given, and the document says so. | |
 | A8 | The program does **not** give a qualification and does **not** prepare for a professional kitchen job. Professional-only content is reduced or optional (§3). | | |
 
 ---
@@ -157,7 +158,7 @@ Key:
 | Nutrition | CIA CUSC-110 [S1] | Medium | **Reduced** to applied nutrition | Enough to cook balanced meals and adapt to diets; not dietetics. |
 | Kitchen math | CIA MTSC-100 [S1] | High | **Core**, integrated (`WRK-1`, `BAK-2`, `KMG-3`) | Scaling, yield, conversions and baker's percentages are everyday tools. |
 | Gastronomy and culinary history | CIA APFS-150 [S1] | Medium | **Reduced**, integrated into `CUI-3`, `CUI-4` and `CLS-4` | Context explains technique; it isn't a stand-alone course. |
-| Wine and beverage | CIA HOSP-355 [S1]; Ballymaloe [S6] | Medium | **Optional module** in `MNU-4` | Food–drink pairing as part of menu design; a full wine course is out of scope. |
+| Wine and beverage | CIA HOSP-355 *Wine and Beverage Studies* (1.5 cr.) [S1]; Ballymaloe [S6] | Medium | **Reduced**, as a required module in `MNU-4` | Part of the CIA core, so it is kept (§13.2 Q6): the basics of both alcoholic (wine, beer, cider, fortified) and non-alcoholic (teas, infusions, ferments, juices, alcohol-free wines and beers) pairing, plus cooking with alcohol. A full sommelier course is out of scope. |
 | Externship / production work | CIA EXTN-250 [S1] | Not available | **Replaced** | Hosting projects in `MNU-4`, `MS-S4` and the capstone add real pressure: time, guests and quantity. |
 
 ### 3.3 Hours compared
@@ -196,7 +197,7 @@ The brief's subject list was reviewed against the benchmarks. The changes and th
 | **Leftover transformation and batch cooking** | `KMG-3` | Domestic economy and waste; specific to home cooking. |
 | **Kitchen journal and reflective practice** | `ORI-1`, then a thread | The main tool for a learner without a teacher (§2.9). |
 | **Hosting and serving at home** | `MNU-4` | Replaces the restaurant experience; gives multi-course timing real stakes. |
-| **Food–drink pairing (optional)** | `MNU-4` | Part of a professional curriculum [S1][S6]; useful for menus. |
+| **Beverage basics and food–drink pairing** (alcoholic and non-alcoholic) | `MNU-4`, `CK-BEVR` | Part of the CIA core (HOSP-355) [S1] and of Ballymaloe [S6]; needed for menu design. |
 | **Producer and seasonal knowledge** | `VEG-1`, `IN-SEL` | Ballymaloe treats it as core [S6]; it supports selection judgment. |
 
 ### 4.2 Overlaps resolved
@@ -286,6 +287,7 @@ target are left to specializations (§11).
 | CK-RCPT | Reads a recipe critically: understands intent, spots what is missing or wrong, and plans from it | 3 | 3 | 4 | 4 | 4 | 4 |
 | CK-CLAS | Knows the classical repertoire as a system (mother sauces and derivatives, classical cuts, garnishes, names) | – | 2 | 2 | 4 | 4 | 4 |
 | CK-CUIS | Explains major culinary traditions through their pantry, techniques, flavour logic and history | – | 1 | 3 | 4 | 4 | 4 |
+| CK-BEVR | Knows beverage basics (wine, beer and other drinks, alcoholic and non-alcoholic) and pairs drinks with food | – | – | 1 | 3 | 3 | 3 |
 
 **IN — Ingredient knowledge**
 
@@ -392,10 +394,10 @@ target are left to specializations (§11).
 | CR-IMPV | Improvises under constraints (pantry, mystery basket, time, diet) | – | 1 | 3 | 3 | 4 | 4 |
 | CR-ORIG | Develops original dishes with a recognisable personal point of view | – | – | 1 | 3 | 4 | 4 |
 
-That is **65 competencies in 10 domains**:
+That is **66 competencies in 10 domains**:
 - 19 target level 5;
 - 40 target level 4;
-- 5 target level 3;
+- 6 target level 3;
 - 1 targets level 2.
 
 Phase 4 may split broad competencies, such as `TS-DRY` (one per method) or `IN-MEA` (beef, pork, lamb, poultry, game),
@@ -660,7 +662,7 @@ Phase 4 adds the full mapping.
 | PRS-3 | Preservation | Quick and canned pickles (tested methods only); lacto-fermentation; salt curing; drying; jams and fruit preserves; confit; using preserves in cooking. | 22 | SAF-3 | TS-PRS, SA-HRPR, SC-MICR, KM-WAST |
 | PST-3 | Pastry II | Choux; rough puff and laminated dough introduced; sweet and savoury tarts; creams (*crème anglaise*, *crème pâtissière* and variants); mousses; chocolate basics and tempering introduced. | 30 | MS-S2 | TS-BAK, IN-BAK, SC-EMUL |
 | BRD-3 | Bread II | Preferments; a sourdough culture; hydration; shaping and scoring; whole grain and rye; a baking schedule around a working week. | 20 | MS-S2 | TS-BRD, KM-PLAN |
-| CUI-3 | World cuisines I | The logic of about 8 traditions (pantry, core techniques, flavour profile, meal structure, history), each with a representative cooking project. Suggested: French regional, Italian, Iberian, Levantine and North African, Indian subcontinent, Chinese, Japanese, Mexican, Dutch and Northern European. Final list in Phase 2. | 34 | MS-S2, FLV-3 | CK-CUIS, FL-ARCH, IN-ARO, JD-CHSE |
+| CUI-3 | World cuisines I | The logic of 8 traditions (pantry, core techniques, flavour profile, meal structure, history), each with a representative cooking project. The eight: French regional, Italian, Iberian, Levantine and North African, Indian subcontinent, Chinese, Japanese, Mexican (§13.2 Q3). Dutch and Northern European cooking gets no course of its own; it appears where it fits, for example in vegetables, preserving and bread. | 34 | MS-S2, FLV-3 | CK-CUIS, FL-ARCH, IN-ARO, JD-CHSE |
 | KMG-3 | Kitchen management | Weekly planning; purchasing and quantities; cost per portion and budget; yield; batch cooking and turning leftovers into new dishes; freezer management; reducing waste. | 18 | MS-S2 | KM-PLAN, KM-PURC, KM-WAST, KM-MATH |
 | NUT-3 | Applied nutrition and allergens | Macronutrients and their role in cooking; balanced meals; adapting to diets (vegetarian, vegan, gluten-free, lower salt); the 14 EU allergens and cross-contact [S23]. | 12 | MS-S2 | SA-ALLG, RD-ADPT |
 | MS-S3 | *Milestone S3* | §6.2 | 20 | all S3 | |
@@ -677,7 +679,7 @@ Phase 4 adds the full mapping.
 | MOD-4 | Modern techniques | Precision cooking (sous vide II); hydrocolloids (agar, gelatin, xanthan); gels, foams and airs; dehydration; when modern technique adds value. | 16 | MS-S3 | TS-MOD, SC-EMUL |
 | PLT-4 | Presentation and plating | Visual composition: colour, height, negative space, plate choice, saucing, portion size; styles (classical, family-style, modern); food photography for evidence. | 14 | MS-S3 | TS-PLT, CR-COMP |
 | RDV-4 | Recipe development | Working from ratios; deconstructing dishes; substitution and adaptation; test plans; writing reproducible recipes. | 22 | MS-S3 | RD-RATO, RD-ADPT, RD-TEST, RD-WRIT |
-| MNU-4 | Menu design and multi-course execution | Menu progression and balance; seasonal and themed menus; quantities and procurement; backwards timelines; hosting and service at home; optional food–drink pairing. | 28 | PLT-4, RDV-4, KMG-3 | CR-MENU, KM-PLAN, KM-PURC |
+| MNU-4 | Menu design and multi-course execution | Menu progression and balance; seasonal and themed menus; quantities and procurement; backwards timelines; hosting and service at home; beverage basics and food–drink pairing, alcoholic and non-alcoholic (required module, after CIA HOSP-355 [S1]). | 28 | PLT-4, RDV-4, KMG-3 | CR-MENU, KM-PLAN, KM-PURC, CK-BEVR |
 | MS-S4 | *Milestone S4* | §6.2 | 20 | all S4 | |
 | | **Total** | | **210** | | |
 
@@ -748,7 +750,10 @@ This produces the varied conditions that the mastery criterion needs (§10.3).
 - Each course states an indicative ingredient budget in Phase 5.
 
 ### 9.4 Equipment tiers
-Each course states its minimum kit; tiers are bought when a stage needs them.
+Each course states its minimum kit; tiers are bought when a stage needs them. There is no fixed budget (A9): from Phase 5
+on, every item is recommended in two categories, **Good** (*Goed*) and **Best** (*Beste*). An example for an instant-read
+thermometer: Good is any fast digital probe that reads within ±1 °C; Best is a fast thermocouple with a thin tip, which is quicker and more accurate in thin cuts. Ingredients follow the same pattern (for example
+Good = supermarket butter, Best = cultured butter from a dairy or cheese shop), but only where the choice changes the result.
 
 | Tier | Needed from | Items | Domestic alternatives and their effect |
 |---|---|---|---|
@@ -773,8 +778,8 @@ Full rubrics, item banks and milestone briefs come in Phase 4. This section fixe
 | Guided sensory evaluation | Taste, aroma, texture, balance | J, S | A structured tasting form; calibration tests against known references |
 | Written reflection | Reasoning, diagnosis, transfer | K, J | Journal entries against prompts |
 | Self-assessment checklist | Process (hygiene, organisation, sequence) | S, J | A checklist completed during or right after cooking |
-| Household or guest evaluation | An outside view on taste and enjoyment | J (indirect) | Structured evaluation cards |
-| Optional video | Process skills that photos can't show (knife technique, whisking, shaping) | S | Short clips; reviewed by the learner against a model, or optionally by a coach or AI |
+| Household or guest evaluation | An outside view on taste, texture and enjoyment | J (indirect) | Structured evaluation cards; tasters are also used blind in comparison and calibration tests |
+| AI review of photos and video | What is visible: cut uniformity, browning, doneness in cross-section, crumb, emulsion, plating; in video, technique and posture (knife grip, whisking, shaping) | S, J | Photos and short clips scored by AI against the exercise's rubric and reference images; the learner records agreement or disagreement in the journal |
 | Repeated demonstration | Consistency | M | Several dated entries for the same competency |
 
 ### 10.2 What can be verified, and what can't
@@ -783,9 +788,10 @@ Full rubrics, item banks and milestone briefs come in Phase 4. This section fixe
 |---|---|---|
 | **Objectively verifiable** | Quiz answers; weights and calculations; temperature readings; cut dimensions against a grid; timing against a plan; photos of cross-sections (doneness, crumb, lamination) | Counts as hard evidence. |
 | **Partly verifiable** | Sauce consistency (*nappe*), emulsion stability, browning colour, plating composition, bread shape | Photo against a reference image plus a short rubric; strengthened by repetition. |
-| **Self-assessed only** | Taste and seasoning, aroma, mouthfeel, hygiene in practice, calm and organisation | Made reliable through **calibration**: blind tests against known references (for example a salt-concentration series [S20]), triangle tests between versions, household tasters, and consistency across many entries. Never the only evidence at a milestone. |
+| **Self-assessed only** | Taste and seasoning, aroma, mouthfeel, hygiene in practice, calm and organisation | Made reliable through **calibration**: blind tests against known references (for example a salt-concentration series [S20]), triangle tests between versions, blind household tasters, and consistency across many entries. AI review cannot judge taste or aroma. Never the only evidence at a milestone. |
 
-The rule: **every milestone combines at least one objective, one partly verifiable and one self-assessed source.** A
+The rule: **every milestone combines at least one objective, one partly verifiable and one self-assessed source**, with household tasters for taste and AI review for what is visible.
+AI review is evidence, not a verdict: it can be wrong, it only sees what the camera sees, and the program never treats it as a qualification. A
 self-assessed claim that the other evidence contradicts doesn't count.
 
 ### 10.3 The mastery criterion
@@ -904,7 +910,7 @@ competencies above the core targets. They don't change the core.
    comparable to a professional program's culinary content [S1], minus professional production and operations, plus
    the extra repetition a self-taught learner needs.
 3. **43 core courses** with stable `AAA-n` IDs, plus 4 milestones and a capstone.
-4. **65 competencies in 10 domains**, with explicit level targets per stage. Not everything aims at level 5.
+4. **66 competencies in 10 domains**, with explicit level targets per stage. Not everything aims at level 5.
 5. **Threads** (safety, tasting, journal, knife, science, terminology) run through every stage and are re-assessed at
    every milestone.
 6. **Food safety cannot be compensated** at any gate.
@@ -914,16 +920,19 @@ competencies above the core targets. They don't change the core.
    specialization.
 10. A **Netherlands / EU baseline** for ingredients, seasons and safety rules.
 
-### 13.2 Open gaps and questions for the reviewer
+### 13.2 Review answers (2026-11-04)
 
-| # | Question | Why it matters | Default if not answered |
+The reviewer answered the six open questions. The changes are applied in this document and listed here, so that the
+change is traceable:
+
+| # | Question | Answer | Applied in |
 |---|---|---|---|
-| Q1 | Are **1,000 h / about 3.3 years** acceptable, or should the core be shorter (for example about 700 h, moving more into specializations)? | It is the main trade-off between depth and staying motivated. | Keep 1,000 h; a fast track through S1–S2 on demonstrated competence. |
-| Q2 | Any **dietary limits** for the learner (vegetarian, pescatarian, allergies, no alcohol in cooking)? | Changes the core status of the meat, fish and wine modules. | Omnivore core, with equivalent alternatives designed per module. |
-| Q3 | **Which world cuisines** should `CUI-3` cover, and should Dutch and Northern European cooking get a prominent place? | Shapes about 64 h (`CUI-3` + `CUI-4`). | The eight listed in `CUI-3`, including Dutch / Northern European. |
-| Q4 | Is **outside evaluation** realistic: household tasters, an optional coach, AI review of photos and video? | Decides how much self-assessment needs calibration. | Household tasters plus calibration; AI and coach optional. |
-| Q5 | **Budget limits** for ingredients and equipment? | Affects how much expensive protein and tier 2–3 equipment is used. | Moderate household budget; expensive items scheduled sparingly. |
-| Q6 | Is **food–drink pairing** wanted, and if so, with or without alcohol? | It is an optional module in `MNU-4`. | Optional, with non-alcoholic pairing included. |
+| Q1 | Are **1,000 h / about 3.3 years** acceptable? | Yes. | No change. |
+| Q2 | Any **dietary limits**? | No. | A6: meat, fish and beverage modules are core. |
+| Q3 | **Which world cuisines**, and should Dutch / Northern European cooking be prominent? | Dutch / Northern European should **not** get a prominent place. | `CUI-3` covers eight traditions without it. |
+| Q4 | Is **outside evaluation** realistic? | Household tasters and AI review of photos and video: yes. | A7; §10.1, §10.2. A human coach is not assumed. |
+| Q5 | **Budget limits**? | No, but recommendations in categories such as "Good / The best". | A9; §9.4: Good / Best for equipment and ingredients. |
+| Q6 | **Food–drink pairing**? | Only if the CIA includes it, and then the basics of both alcoholic and non-alcoholic drinks. | The CIA core has HOSP-355 *Wine and Beverage Studies* [S1], so it is in: a required module in `MNU-4`, new competency `CK-BEVR` (target 3), §3.2, §4.1. |
 
 Gaps recorded for later phases:
 - **Phase 3**: a detailed chapter-level comparison against [S8] and [S10]; a work-process comparison against the MBO
@@ -966,12 +975,11 @@ Learning pathway (core; each specialization)
 
 ### 13.4 Recommendations for Phase 2
 
-1. Settle Q1–Q6 first. Q1 and Q3 change the course list.
-2. Write the **module and lesson outline** course by course, in stage order, using the 9-question teaching pattern (§2.3)
+1. Write the **module and lesson outline** course by course, in stage order, using the 9-question teaching pattern (§2.3)
    as a checklist so every technique lesson covers *why*, *variables*, *mistakes* and *transfer*.
-3. Give every lesson its K/S/J/M tags and the competencies it moves, so Phase 4 can trace coverage both ways. Flag
+2. Give every lesson its K/S/J/M tags and the competencies it moves, so Phase 4 can trace coverage both ways. Flag
    every competency that no lesson reaches at its stage target.
-4. Draw module-level prerequisites, and check that no lesson needs a technique taught later (especially across `SCI-2`,
+3. Draw module-level prerequisites, and check that no lesson needs a technique taught later (especially across `SCI-2`,
    `SAU-2` and `BAK-2`).
-5. Keep hour budgets per course within ±10 %. If a course overflows, document the change instead of absorbing it
+4. Keep hour budgets per course within ±10 %. If a course overflows, document the change instead of absorbing it
    silently.

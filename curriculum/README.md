@@ -19,7 +19,7 @@ silently change an agreed structure: changes are explained and logged in the pha
 
 | Phase | Deliverable | File | Status |
 |---|---|---|---|
-| 1 | Educational vision and curriculum architecture | [`01-vision-architecture.md`](01-vision-architecture.md) | ✅ Ready for review |
+| 1 | Educational vision and curriculum architecture | [`01-vision-architecture.md`](01-vision-architecture.md) | ✅ Reviewed; answers applied |
 | 2 | Complete curriculum outline (courses → modules → lessons, objectives, prerequisites, hours) | — | Pending |
 | 3 | Curriculum validation and optimization | — | Pending |
 | 4 | Full competency framework and assessment design (milestones, capstone rubrics) | — | Pending |
