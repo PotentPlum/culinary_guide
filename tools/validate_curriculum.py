@@ -16,6 +16,7 @@ This script checks that the two agree:
   Milestone components re-test competencies and don't count towards coverage.
 - Practice: every level the lessons claim is backed by enough practical sessions (Phase 3 §4.3): the Phase 1 §10.3
   demonstrations plus the sessions needed to learn the step.
+- Optional course sections group consecutive modules, cover every module once, and add up.
 - Every module has at least one practical exercise and an assessment line; every competency is re-tested in at least
   one milestone or the capstone.
 - Relative links and [S#] source references resolve.
@@ -65,6 +66,7 @@ LESSON_RE = re.compile(
     rf"^\| ({COURSE}\.M\d+\.L\d+) \| (.+?) \| (.+?) \| (.+?) \| (\d+(?:\.\d+)?) \| (\d+) \| (.+?) \| (.+?) \|$"
 )
 ELAPSED_RE = re.compile(r"^(—|\d+(?:\.\d+)? (?:h|d|wk))$")
+SECTION_RE = re.compile(rf"^\| ({COURSE}\.SEC\d+) \| (.+?) \| M(\d+)–M(\d+) \| (\d+(?:\.\d+)?) \|$")
 EXERCISE_RE = re.compile(rf"^- `({COURSE}\.M\d+\.X\d+)` \*([a-z]+), ([a-z]+)\* — .+$")
 PREREQ_RE = re.compile(r"^\*\*Prerequisites:\*\* (.+)$")
 MOVE_RE = re.compile(rf"^({COMP})→([1-5])$")
@@ -103,6 +105,8 @@ class Course:
     order: int
     prereqs: list[str] = field(default_factory=list)
     modules: list[Module] = field(default_factory=list)
+    #: Optional sections: (id, title, first module number, last module number, hours).
+    sections: list[tuple[str, str, int, int, float]] = field(default_factory=list)
 
     @property
     def is_milestone(self) -> bool:
@@ -208,6 +212,11 @@ def parse_stage(path: Path, stage: str, start_order: int, report: Report) -> lis
                     order,
                 )
             )
+        elif m := SECTION_RE.match(line):
+            if course is None or module is not None or not m.group(1).startswith(course.id + "."):
+                report.error(f"{where}: section {m.group(1)} is not in its course header")
+                continue
+            course.sections.append((m.group(1), m.group(2), int(m.group(3)), int(m.group(4)), number(m.group(5))))
         elif m := EXERCISE_RE.match(line):
             if module is None or not m.group(1).startswith(module.id + "."):
                 report.error(f"{where}: exercise {m.group(1)} is not inside its module")
@@ -225,6 +234,25 @@ def parse_stage(path: Path, stage: str, start_order: int, report: Report) -> lis
         elif line.startswith("| ") and module is not None and re.match(rf"^\| {COURSE}\.M\d+\.L", line):
             report.error(f"{where}: malformed lesson row")
     return courses
+
+
+def check_sections(course: Course, report: Report) -> None:
+    """Sections group consecutive modules of one course; together they cover every module exactly once."""
+    if not course.sections:
+        return
+    numbers = [int(m.id.rsplit(".M", 1)[1]) for m in course.modules]
+    expected = 0
+    for ident, _, first, last, hours in course.sections:
+        if first != (numbers[expected] if expected < len(numbers) else None) or last < first or last not in numbers:
+            report.error(f"{ident}: modules M{first}–M{last} don't continue from the previous section")
+            return
+        members = [m for m in course.modules if first <= int(m.id.rsplit(".M", 1)[1]) <= last]
+        expected = numbers.index(last) + 1
+        total = sum(m.hours for m in members)
+        if abs(total - hours) > 1e-6:
+            report.error(f"{ident}: modules add up to {fmt(total)} h, section says {fmt(hours)} h")
+    if expected != len(numbers):
+        report.error(f"{course.id}: sections don't cover every module")
 
 
 def stage_files(root: Path) -> dict[str, Path]:
@@ -256,7 +284,7 @@ def check(root: Path) -> tuple[Report, dict[str, list[Course]], Phase1]:
     lessons: dict[str, tuple[Lesson, Course]] = {}
     for stage, courses in stages.items():
         for course in courses:
-            for ident in [course.id] + [m.id for m in course.modules] + [
+            for ident in [course.id] + [sec[0] for sec in course.sections] + [m.id for m in course.modules] + [
                 x for m in course.modules for x in [l.id for l in m.lessons] + [e[0] for e in m.exercises]
             ]:
                 if ident in seen:
@@ -291,6 +319,7 @@ def check(root: Path) -> tuple[Report, dict[str, list[Course]], Phase1]:
                         report.warn(f"{lesson.id}: {fmt(lesson.hours)} h is outside the 0.5–6 h lesson range")
                     if lesson.practice and lesson.hours < 0.5 * lesson.practice:
                         report.error(f"{lesson.id}: {lesson.practice} practical sessions don't fit in {fmt(lesson.hours)} h")
+            check_sections(course, report)
             budget = phase1.budgets.get(course.id)
             if budget is None:
                 report.error(f"{course.id}: not in the Phase 1 course tables")

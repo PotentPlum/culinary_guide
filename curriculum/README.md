@@ -21,7 +21,7 @@ silently change an agreed structure: changes are explained and logged in the pha
 |---|---|---|---|
 | 1 | Educational vision and curriculum architecture | [`01-vision-architecture.md`](01-vision-architecture.md) | ✅ Reviewed; answers applied |
 | 2 | Complete curriculum outline (courses → modules → lessons, objectives, prerequisites, hours) | [`02-curriculum-outline.md`](02-curriculum-outline.md) and [`02-outline/`](02-outline/) | ✅ Reviewed; revised in Phase 3 |
-| 3 | Curriculum validation and optimization (benchmarks, realistic hours, barbecue added) | [`03-validation.md`](03-validation.md) | ✅ Ready for review |
+| 3 | Curriculum validation and optimization (benchmarks, realistic hours, barbecue added) | [`03-validation.md`](03-validation.md) | ✅ Reviewed; answers applied |
 | 4 | Full competency framework and assessment design (milestones, capstone rubrics) | — | Pending |
 | 5 | Detailed course development | — | Pending |
 | 6 | Detailed lesson development | — | Pending |
@@ -64,6 +64,7 @@ Example: *sauté* (FR) / *sauteren* (NL).
 | Milestone assessment | `MS-Sn` | `MS-S3` | One per stage. |
 | Capstone | `CAP-5` | | |
 | Module, lesson, activity | defined in Phase 2 | `SAU-2.M3`, `SAU-2.M3.L2` | Order is a separate field, so inserting a module doesn't renumber the others. |
+| Course section | defined in Phase 3 | `CUI-3.SEC1` | Optional; groups consecutive modules of a large course into units of progress. |
 
 A retired entity keeps its ID, marked *retired*, so learner progress that refers to it stays valid. A materially changed
 entity keeps its ID and gets a new content version (detailed in Phase 7).

@@ -1,6 +1,6 @@
 # Phase 3 — Curriculum validation and optimization
 
-Status: **ready for review** (2026-11-04). This phase checks the Phase 2 outline critically: against the benchmarks,
+Status: **reviewed** (2026-11-04); the review answers are applied (§8). This phase checks the Phase 2 outline critically: against the benchmarks,
 against the nine checks the brief asks for, and against the time a home learner really needs. It then revises the
 curriculum. Every change is logged in §6 and applied in [Phase 1](01-vision-architecture.md) (budgets, competency
 table) and [Phase 2](02-curriculum-outline.md) (the outline files). Sources `[S#]` are in [`sources.md`](sources.md).
@@ -336,6 +336,7 @@ Lesson and module IDs are not renumbered: new lessons take the next free number,
 | R10 | **`CAP-5.M1.L5`** *Test cooks* (6 h, 3 sessions, 2 weeks); `CAP-5` prep days 2.5 → 5 h each. **`REV-5.M1.L4`** a third targeted-practice block. `RDV-5` development cycles 3 → 5 h each (3 test cycles over 3 weeks). | `S5-mastery.md` | §4.1. |
 | R11 | **Validator**: 8-column lesson rows, elapsed-time format, the practice rule, milestone re-tests, the 0.5–6 h lesson range, practical sessions in the course summary, and a generated *Weekly load* table. | `tools/validate_curriculum.py` and its tests | Keeps R1–R10 true on every later edit. |
 | R12 | Source **[S32]**: the CIA's credit-hour definition. | `sources.md` | §3.1. |
+| R13 | **Course sections**: `CUI-3` stays one overarching *World cuisines* course, taught in two sections, `CUI-3.SEC1` *Europe and the Mediterranean* (M1–M5, 51 h) and `CUI-3.SEC2` *Asia and Mexico* (M6–M9, 48 h). Sections are a new, optional level between course and module; the validator checks them. No ID changed. | `S3-integration.md`; Phase 1 §7.3, §13.3; Phase 2 *Conventions*; README | Review answer 3 (§8). |
 
 ---
 
@@ -356,6 +357,9 @@ Lesson and module IDs are not renumbered: new lessons take the next free number,
 
 ### Gaps and open questions for the review
 
+*Answered on 2026-11-04; see §8.*
+
+
 1. **Duration.** At the planned 6.5 h/week the core now takes about **4.3 years** (3.5 years at 8 h/week). Do you
    accept that, or should the planning assumption move to 8 h/week?
 2. **No outdoor space.** Without a garden or balcony, `FIR-3` teaches browning but not fire control, and `TS-FIRE`
@@ -374,3 +378,14 @@ Lesson and module IDs are not renumbered: new lessons take the next free number,
    that the practice rule can later be checked against the learner's record instead of the curriculum.
 4. Re-check the per-course CIA credits against the catalog PDF (§3.1 caveat), and cite exact safety figures for
    `FIR-3.M4.L1` (long cooks), `SAF-3` and `SLW-3.M5` from the primary authorities [S21][S22][S24].
+
+---
+
+## 8. Review answers (2026-11-04)
+
+| # | Question | Answer | Applied |
+|---|---|---|---|
+| 1 | About 4.3 years at 6.5 h/week: accept, or plan for 8 h/week? | Yes, accepted. | No change: Phase 1 A2 (6.5 h/week) and the 1,277.5-hour core stand. |
+| 2 | Without outdoor space, `TS-FIRE` stops at level 2. Acceptable? | Fine; it can evolve later. | No change. Recorded as a candidate for a later revision (for example an indoor alternative, or an optional competency). |
+| 3 | `CUI-3` is 99 h: one course, or split? | Make it sub-sections of the overarching world cuisines course. | R13: two sections inside `CUI-3`, with stable IDs. |
+

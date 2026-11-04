@@ -675,7 +675,7 @@ Phase 4 adds the full mapping.
 | PRS-3 | Preservation | Quick and canned pickles (tested methods only); lacto-fermentation; salt curing; drying; jams and fruit preserves; confit; using preserves in cooking. | 23.5 | SAF-3 | TS-PRS, SA-HRPR, SC-MICR, KM-WAST |
 | PST-3 | Pastry II | Choux; rough puff and laminated dough introduced; sweet and savoury tarts; creams (*crème anglaise*, *crème pâtissière* and variants); mousses; chocolate basics and tempering introduced. | 33.5 | MS-S2 | TS-BAK, IN-BAK, SC-EMUL |
 | BRD-3 | Bread II | Preferments; a sourdough culture; hydration; shaping and scoring; whole grain and rye; a baking schedule around a working week. | 24 | MS-S2 | TS-BRD, KM-PLAN |
-| CUI-3 | World cuisines I | The logic of 8 traditions (pantry, core techniques, flavour profile, meal structure, history), each taught through history and pantry, two signature techniques and a meal (12 h each, Phase 3). The eight: French regional, Italian, Iberian, Levantine and North African, Indian subcontinent, Chinese, Japanese, Mexican (§13.2 Q3). Dutch and Northern European cooking gets no course of its own; it appears where it fits, for example in vegetables, preserving and bread. | 99 | MS-S2, FLV-3 | CK-CUIS, FL-ARCH, IN-ARO, JD-CHSE |
+| CUI-3 | World cuisines I | The logic of 8 traditions (pantry, core techniques, flavour profile, meal structure, history), each taught through history and pantry, two signature techniques and a meal (12 h each, Phase 3). The overarching course has two sections (Phase 3 review): Europe and the Mediterranean; Asia and Mexico. The eight: French regional, Italian, Iberian, Levantine and North African, Indian subcontinent, Chinese, Japanese, Mexican (§13.2 Q3). Dutch and Northern European cooking gets no course of its own; it appears where it fits, for example in vegetables, preserving and bread. | 99 | MS-S2, FLV-3 | CK-CUIS, FL-ARCH, IN-ARO, JD-CHSE |
 | KMG-3 | Kitchen management | Weekly planning; purchasing and quantities; cost per portion and budget; yield; batch cooking and turning leftovers into new dishes; freezer management; reducing waste. | 19.5 | MS-S2 | KM-PLAN, KM-PURC, KM-WAST, KM-MATH |
 | NUT-3 | Applied nutrition and allergens | Macronutrients and their role in cooking; balanced meals; adapting to diets (vegetarian, vegan, gluten-free, lower salt); the 14 EU allergens and cross-contact [S23]. | 14 | MS-S2 | SA-ALLG, RD-ADPT |
 | VEG-3 | Vegetables II: vegetable-led cooking | Vegetables as the main event: whole-roasting, charring, salt-baking, glazing, confit; purées and vegetable emulsions; fermented and pickled vegetables used in cooking; satisfying plant-based dishes (umami, fat, texture, protein); composing a plate around a vegetable; cooking a vegetable through its whole season. Added after review (§13.2 Q7). | 24.5 | MS-S2, FLV-3 | TS-VEG, IN-VEG, FL-ARCH, FL-TEXT, CR-COMP |
@@ -968,6 +968,7 @@ The hierarchy this phase commits to:
 Learning pathway (core; each specialization)
  └─ Stage (S1–S5)
      └─ Course (AAA-n)
+         └─ Section (optional; AAA-n.SECn, Phase 3) groups consecutive modules
          └─ Module            (Phase 2)
              └─ Lesson        (Phase 2)
                  └─ Learning activity (theory block, drill, comparison, dish, brief, project)
@@ -1014,4 +1015,5 @@ Phase 3 ([`03-validation.md`](03-validation.md)) changed this document as follow
 | New competency **`TS-FIRE`** (target 4): 67 competencies, 40 of them targeting level 4. | §5.3 |
 | `MS-S1` gets a stage reflection (6 → 7 h). | §10.4 |
 | The CIA hour comparison rests on its credit-hour definition [S32]. | §3.3 |
+| Review of Phase 3: the 4.3-year duration at 6.5 h/week is **accepted**; `TS-FIRE` capped at 2 without outdoor space is accepted for now; `CUI-3` stays one overarching course in two **sections**. | §7.3, §8, §13.3 |
 

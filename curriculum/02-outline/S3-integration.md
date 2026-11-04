@@ -855,6 +855,16 @@ Indian subcontinent, Chinese, Japanese and Mexican (Phase 1 §13.2 Q3).
 - [J] Reads recipes from other traditions and sources the ingredients. `CK-RCPT→4`, `IN-SEL→4`
 
 **Competencies on completion:** CK-CUIS 3 · CK-RCPT 4 · CK-BEVR 1 · IN-SEL 4 · IN-STA 4 · IN-ARO 4 · TS-STA 4 · TS-DRY 4 · TS-STK 4 · TS-SAU 4 · TS-EGG 4 · TS-CMB 4 · TS-MOI 4 · FL-ARCH 3 · FL-SEAS 4 · FL-TEXT 3 · KM-PLAN 4 · CR-COMP 3 · JD-CHSE 3
+**Sections:** the course is the overarching *World cuisines* course, taught in two sections (Phase 3 review answer 3).
+Each section is a unit of progress: it is complete when the assessments of its modules are passed. `MS-S3` and `CUI-4`
+need the whole course.
+
+| ID | Section | Modules | h |
+|---|---|---|---|
+| CUI-3.SEC1 | Europe and the Mediterranean | M1–M5 | 51 |
+| CUI-3.SEC2 | Asia and Mexico | M6–M9 | 48 |
+
+**Section `CUI-3.SEC1` — Europe and the Mediterranean**
 
 #### CUI-3.M1 — How to study a cuisine (3 h)
 **Scope:** the lens used for every tradition; reading recipes from other traditions.
@@ -932,6 +942,8 @@ Indian subcontinent, Chinese, Japanese and Mexican (Phase 1 §13.2 Q3).
 - `CUI-3.M5.X2` *framework, framework* — A tagine with steamed couscous.
 
 **Assessment:** photos; guest cards.
+
+**Section `CUI-3.SEC2` — Asia and Mexico**
 
 #### CUI-3.M6 — Indian subcontinent (12 h)
 **Scope:** regional variety; spice technique; dals and breads.

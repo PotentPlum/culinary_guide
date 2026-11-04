@@ -31,10 +31,14 @@ consistent.
 ## Conventions
 
 **Hierarchy.** Stage → course → module → lesson. Practical exercises and the module assessment belong to the module.
+A large course may group consecutive modules into **sections** (since Phase 3): units of progress inside one course,
+listed in a *Sections* table in the course header. A section has no hours or prerequisites of its own; its modules
+add up to its hours, and the sections cover every module once. Only `CUI-3` has sections so far.
 
 | Level | Size | ID | Example |
 |---|---|---|---|
 | Course | as in Phase 1 §7 (±10 %) | `AAA-n` | `KNF-1` |
+| Section (optional) | a group of consecutive modules | `<course>.SEC<n>` | `CUI-3.SEC2` |
 | Module | about 1–14 h (milestone and capstone modules up to 30 h) | `<course>.M<n>` | `KNF-1.M3` |
 | Lesson | 0.5–6 h of active time: a theory block plus one or more practical sessions | `<module>.L<n>` | `KNF-1.M3.L2` |
 | Practical exercise | part of the module hours | `<module>.X<n>` | `KNF-1.M3.X1` |

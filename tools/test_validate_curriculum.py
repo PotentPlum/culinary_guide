@@ -149,6 +149,18 @@ class ValidateCurriculumTest(unittest.TestCase):
         self.assertIn("| S1 | 2 | 50 % | 50 % | 0 % | 70 / 30 / 0 % |", overview)
         self.assertIn("| S1 | 4 | 10 | 6 | 1 | 2 | 2 | 1 |", overview)
 
+    def test_sections_must_cover_the_modules_and_add_up(self) -> None:
+        def with_section(row: str) -> str:
+            table = "| ID | Section | Modules | h |\n|---|---|---|---|\n" + row + "\n"
+            return S1_GOOD.replace("**Prerequisites:** —\n", "**Prerequisites:** —\n\n" + table, 1)
+
+        self.assertEqual(self.errors(with_section("| SAF-1.SEC1 | All | M1–M1 | 4 |")), [])
+        self.assertIn("SAF-1.SEC1: modules add up to 4 h, section says 3 h", self.errors(with_section("| SAF-1.SEC1 | All | M1–M1 | 3 |")))
+        self.assertIn(
+            "SAF-1.SEC1: modules M2–M2 don't continue from the previous section",
+            self.errors(with_section("| SAF-1.SEC1 | All | M2–M2 | 4 |")),
+        )
+
     def test_a_level_needs_enough_practical_sessions(self) -> None:
         bad = S1_GOOD.replace("| Grip | [S] grip | SAF-1.M1.L2 | 3 | 2 |", "| Grip | [S] grip | SAF-1.M1.L2 | 3 | 0 |").replace(
             "| Dice | [S] dice | — | 3 | 2 |", "| Dice | [S] dice | — | 3 | 0 |"
