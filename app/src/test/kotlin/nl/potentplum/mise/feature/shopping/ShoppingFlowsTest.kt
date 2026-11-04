@@ -1,6 +1,8 @@
 package nl.potentplum.mise.feature.shopping
 
 import androidx.compose.ui.semantics.SemanticsActions
+import androidx.compose.ui.test.hasAnyAncestor
+import androidx.compose.ui.test.hasAnyDescendant
 import androidx.compose.ui.test.hasClickAction
 import androidx.compose.ui.test.hasContentDescription
 import androidx.compose.ui.test.hasSetTextAction
@@ -23,7 +25,10 @@ import kotlinx.coroutines.runBlocking
 import nl.potentplum.mise.HiltTestActivity
 import nl.potentplum.mise.MiseAppShell
 import nl.potentplum.mise.core.designsystem.MiseTheme
+import nl.potentplum.mise.data.db.entity.ParseSource
 import nl.potentplum.mise.data.db.entity.RecipeSourceType
+import nl.potentplum.mise.data.repo.Ingredient
+import nl.potentplum.mise.data.repo.IngredientGroup
 import nl.potentplum.mise.data.repo.Recipe
 import nl.potentplum.mise.data.repo.RecipeRepository
 import nl.potentplum.mise.data.repo.ShoppingLine
@@ -40,7 +45,7 @@ import org.robolectric.annotation.Config
 import java.time.LocalDate
 import javax.inject.Inject
 
-/** Spec §6.14: combined lines with source chips, ticking, manual items, clearing with undo. */
+/** Spec §6.14: adding a selection from a recipe, combined lines with source chips, ticking, manual items, clearing with undo. */
 @HiltAndroidTest
 @RunWith(RobolectricTestRunner::class)
 @Config(application = HiltTestApplication::class)
@@ -122,6 +127,57 @@ class ShoppingFlowsTest {
         compose.reveal("3 ui")
         compose.reveal("Koffiefilters")
         assertEquals(5, runBlocking { shopping.observe().first() }.size)
+    }
+
+    @Test
+    fun `from recipe detail, only the ticked lines are added, scaled to the servings shown`() {
+        runBlocking {
+            recipes.save(
+                Recipe(
+                    id = "pasta",
+                    title = "Pasta met prei",
+                    sourceType = RecipeSourceType.MANUAL,
+                    servings = 2,
+                    ingredientGroups =
+                        listOf(
+                            IngredientGroup(
+                                items =
+                                    listOf(
+                                        Ingredient(
+                                            text = "250 g prei",
+                                            quantity = 250.0,
+                                            unit = "g",
+                                            name = "prei",
+                                            parseSource = ParseSource.MANUAL,
+                                        ),
+                                        Ingredient(text = "1 ui", quantity = 1.0, name = "ui", parseSource = ParseSource.MANUAL),
+                                    ),
+                            ),
+                            IngredientGroup(name = "Voor erbij", items = listOf(Ingredient(text = "zout"))),
+                        ),
+                ),
+            )
+        }
+        compose.setContent { MiseTheme { MiseAppShell(today = LocalDate.of(2026, 10, 22), uncheckedShoppingCount = 0) } }
+        click("Recepten")
+        click("Pasta met prei")
+        // The action bar shows before the recipe has loaded; the stepper only with it.
+        compose.reveal(hasContentDescription("Meer porties"))
+        compose.onNodeWithContentDescription("Meer porties").performClick()
+        compose.onNodeWithContentDescription("Meer porties").performClick()
+        compose.reveal("500 g prei")
+        click("Op boodschappenlijst")
+
+        // In the sheet (its own window, next to the recipe's identical lines): untick the salt.
+        val inSheet = hasAnyAncestor(hasAnyDescendant(hasText("Alles uitvinken")))
+        compose.reveal(hasText("Hoeveelheden voor 4 porties"))
+        compose.onAllNodes(isToggleable() and hasText("zout") and inSheet).onFirst().performSemanticsAction(SemanticsActions.OnClick)
+        click("2 ingrediënten toevoegen")
+        compose.reveal("2 ingrediënten op je lijst gezet")
+        val items = runBlocking { shopping.observe().first() }
+        assertEquals(listOf("500 g prei", "2 ui"), items.map { it.text })
+        assertEquals(listOf(500.0, 2.0), items.map { it.quantity })
+        assertTrue(items.all { it.recipeId == "pasta" })
     }
 
     @Test

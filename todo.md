@@ -193,8 +193,8 @@ The web app keeps running from its last Vercel deployment until you turn it off,
 
 ### Boodschappen (spec §6.14, §11.7; a bottom-bar tab, so P1)
 - [x] `ShoppingAggregator` (pure): group by name, sum within a dimension via base units, best display unit, never merge across dimensions or unnamed items. Table-driven tests.
-- [ ] Boodschappen tab: add from recipe and the Vanavond card (scaled, all or selected), combined lines with source-recipe chips, manual items, check off (ticked items sink), clear with undo, share as text, empty state.
-  _Done except "selected": recipe detail and the Vanavond card add all ingredients. Swipe or ✕ deletes a line (with undo). `ShoppingFlowsTest`._
+- [x] Boodschappen tab: add from recipe and the Vanavond card (scaled, all or selected), combined lines with source-recipe chips, manual items, check off (ticked items sink), clear with undo, share as text, empty state.
+  _"Op boodschappenlijst" opens `AddToShoppingSheet`: the scaled lines, all ticked; untick what you have, then "n ingrediënten toevoegen". Swipe or ✕ deletes a line (with undo). `ShoppingFlowsTest`, `TodayFlowsTest`._
 
 ### First run (spec §6.16)
 - [x] Welcome → optional key → optional "Back-up terugzetten" → "Je eerste recept" (Link plakken · Foto's maken · Later; skipped when a restore brought recipes) → done (`onboardingDone`).

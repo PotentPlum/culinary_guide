@@ -65,21 +65,30 @@ class ShoppingRepository
         }
 
         /**
-         * Every ingredient of [recipe], scaled from its own servings to [servings] (spec §6.14). The raw scaled amount is
-         * kept; the list rounds when it combines lines (spec §11.7).
+         * The ingredients of [recipe] (or only those in [only], by ingredient id), scaled from its own servings to [servings]
+         * (spec §6.14). The raw scaled amount is kept; the list rounds when it combines lines (spec §11.7).
          */
         suspend fun addRecipe(
             recipe: Recipe,
             scaler: IngredientScaler,
             servings: Int? = null,
+            only: Set<String>? = null,
         ): Int {
+            val lines = recipeLines(recipe, scaler, servings).filter { (id, _) -> only == null || id in only }
+            return add(lines.map { it.second }, recipe.id)
+        }
+
+        /** What [addRecipe] adds for each ingredient (by ingredient id), in recipe order: also what the selection sheet shows. */
+        fun recipeLines(
+            recipe: Recipe,
+            scaler: IngredientScaler,
+            servings: Int? = null,
+        ): List<Pair<String, ShoppingLine>> {
             val ratio = servings?.let { scaler.ratio(recipe.servings, it) } ?: 1.0
-            val lines =
-                recipe.ingredients.map { ingredient ->
-                    val parse = ingredient.parsed
-                    ShoppingLine(scaler.format(parse, ratio), parse.quantity?.times(ratio), parse.unit, parse.name)
-                }
-            return add(lines, recipe.id)
+            return recipe.ingredients.map { ingredient ->
+                val parse = ingredient.parsed
+                ingredient.id to ShoppingLine(scaler.format(parse, ratio), parse.quantity?.times(ratio), parse.unit, parse.name)
+            }
         }
 
         suspend fun setChecked(

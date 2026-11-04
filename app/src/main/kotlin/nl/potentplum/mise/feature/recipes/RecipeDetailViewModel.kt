@@ -24,7 +24,6 @@ import nl.potentplum.mise.data.db.entity.TagKey
 import nl.potentplum.mise.data.repo.DeletedRecipe
 import nl.potentplum.mise.data.repo.Recipe
 import nl.potentplum.mise.data.repo.RecipeRepository
-import nl.potentplum.mise.data.repo.ShoppingRepository
 import nl.potentplum.mise.data.settings.CookSession
 import nl.potentplum.mise.data.settings.SettingsRepository
 import nl.potentplum.mise.domain.RecipeText
@@ -45,10 +44,6 @@ data class IngredientGroupLines(
 sealed interface RecipeDetailEvent {
     data class Deleted(
         val recipe: DeletedRecipe,
-    ) : RecipeDetailEvent
-
-    data class AddedToShopping(
-        val count: Int,
     ) : RecipeDetailEvent
 }
 
@@ -72,7 +67,6 @@ class RecipeDetailViewModel
     @Inject
     constructor(
         private val recipes: RecipeRepository,
-        private val shopping: ShoppingRepository,
         private val settings: SettingsRepository,
         attemptDao: AttemptDao,
         content: ContentRepository,
@@ -170,16 +164,6 @@ class RecipeDetailViewModel
         }
 
         suspend fun restore(deleted: DeletedRecipe) = recipes.restore(deleted)
-
-        /** Every ingredient, scaled to the current servings (spec §6.14). */
-        fun addToShopping() {
-            viewModelScope.launch { _events.send(RecipeDetailEvent.AddedToShopping(addLines())) }
-        }
-
-        private suspend fun addLines(): Int {
-            val recipe = state.value.recipe ?: return 0
-            return shopping.addRecipe(recipe, recipes.scaler(), state.value.servings)
-        }
 
         fun shareText(
             ingredientsHeading: String,

@@ -70,6 +70,7 @@ import nl.potentplum.mise.data.db.entity.EnrichState
 import nl.potentplum.mise.data.repo.Recipe
 import nl.potentplum.mise.domain.ScoreSteps
 import nl.potentplum.mise.feature.cook.EvaluationSheet
+import nl.potentplum.mise.feature.shopping.AddToShoppingSheet
 
 /** Recept — detail (spec §6.8), in cook-first order, with the sticky Kookmodus / Gekookt bar. */
 @Composable
@@ -87,6 +88,7 @@ fun RecipeDetailScreen(
     val resources = LocalResources.current
     val recipe = state.recipe
     var evaluating by rememberSaveable { mutableStateOf(false) }
+    var addingToShopping by rememberSaveable { mutableStateOf(false) }
     LaunchedEffect(viewModel) {
         viewModel.events.collect { event ->
             when (event) {
@@ -97,10 +99,6 @@ fun RecipeDetailScreen(
                         actionLabel = resources.getString(R.string.common_undo),
                         onAction = { viewModel.restore(event.recipe) },
                     )
-                }
-
-                is RecipeDetailEvent.AddedToShopping -> {
-                    snackbar.show(resources.getQuantityString(R.plurals.shopping_added, event.count, event.count))
                 }
             }
         }
@@ -182,7 +180,7 @@ fun RecipeDetailScreen(
                         recipe = recipe,
                         onServings = viewModel::setServings,
                         onToggle = viewModel::toggleIngredient,
-                        onAddToShopping = viewModel::addToShopping,
+                        onAddToShopping = { addingToShopping = true },
                         onTechnique = onTechnique,
                     )
                 }
@@ -191,6 +189,9 @@ fun RecipeDetailScreen(
     }
     if (evaluating && recipe != null) {
         EvaluationSheet(recipeId = recipe.id, onDismiss = { evaluating = false }, onLogged = { evaluating = false })
+    }
+    if (addingToShopping && recipe != null) {
+        AddToShoppingSheet(recipeId = recipe.id, servings = state.servings, onDismiss = { addingToShopping = false })
     }
 }
 

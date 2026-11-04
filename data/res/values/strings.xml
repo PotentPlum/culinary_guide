@@ -602,6 +602,17 @@
     <string name="shopping_clear_all">Hele lijst wissen</string>
     <string name="shopping_share">Lijst delen</string>
     <string name="shopping_share_title">Boodschappen</string>
+    <string name="shopping_pick_all">Alles aanvinken</string>
+    <string name="shopping_pick_none">Alles uitvinken</string>
+    <string name="shopping_pick_empty">Dit recept heeft nog geen ingrediënten.</string>
+    <plurals name="shopping_pick_servings">
+        <item quantity="one">Hoeveelheden voor %1$d portie</item>
+        <item quantity="other">Hoeveelheden voor %1$d porties</item>
+    </plurals>
+    <plurals name="shopping_pick_add">
+        <item quantity="one">%1$d ingrediënt toevoegen</item>
+        <item quantity="other">%1$d ingrediënten toevoegen</item>
+    </plurals>
     <!-- P1: Dagboek. -->
     <string name="journal_filter_all">Alles</string>
     <string name="journal_filter_recipes">Recepten</string>

@@ -320,7 +320,8 @@ The seasonal tally lives on Dagboek only (§6.13); Vandaag stays about today. Wo
 - **Ingredient groups** with headers ("Voor de saus", "Voor de marinade"). Items are rendered from structured fields
   ("150 g boter, in blokjes"); unparsed items show their text. Items can be ticked off; the ticks are the same state as in
   cook mode (the cook session, §6.10).
-  "Op boodschappenlijst" adds all ingredients or a selection, scaled.
+  "Op boodschappenlijst" adds all ingredients or a selection, scaled: a sheet lists the scaled lines, all ticked; untick what is
+  already in the house (the same sheet serves the Vanavond card, at the recipe's own servings).
 - **Technieken in dit recept**: chips for the recipe's technique tags (→ technique detail).
 - **Step groups** with headers. Steps show timer chips (§11.3), and technique names in the text are tappable (alias match, §6.6).
 - **Extra velden**: free label/value pairs, for example "Wijnpairing: Chablis", "Bron pagina: 112", "Opmerking".
