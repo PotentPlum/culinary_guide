@@ -146,7 +146,7 @@ class CookFlowsTest {
 
     private fun clickDescribed(description: String) {
         val matcher = hasContentDescription(description) and hasClickAction()
-        compose.waitUntil(5_000) { compose.onAllNodes(matcher).fetchSemanticsNodes().isNotEmpty() }
+        compose.waitUntil(REVEAL_TIMEOUT_MILLIS) { compose.onAllNodes(matcher).fetchSemanticsNodes().isNotEmpty() }
         compose.onAllNodes(matcher).onFirst().performSemanticsAction(SemanticsActions.OnClick)
     }
 
