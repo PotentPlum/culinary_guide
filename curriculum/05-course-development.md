@@ -173,7 +173,7 @@ evidence record over the stage, not in a single check.
 | S3 | [`SAF-3`](05-courses/S3/SAF-3.md) | 5 / 5 | 2 / 2 | 16 | 16 | 4 | €15 |
 | S3 | [`FLV-3`](05-courses/S3/FLV-3.md) | 14 / 14 | 7 / 7 | 32 | 2 | 13 | €60 |
 | S3 | [`BUT-3`](05-courses/S3/BUT-3.md) | 9 / 9 | 4 / 4 | 8 | 3 | 7 | €130 |
-| S3 | `SLW-3` | 0 / 12 | — | — | — | — | — |
+| S3 | [`SLW-3`](05-courses/S3/SLW-3.md) | 12 / 12 | 7 / 7 | 32 | 8 | 13 | €150 |
 | S3 | `FIR-3` | 0 / 12 | — | — | — | — | — |
 | S3 | `GRD-3` | 0 / 11 | — | — | — | — | — |
 | S3 | `PRS-3` | 0 / 10 | — | — | — | — | — |
@@ -206,7 +206,7 @@ row rests on the quiz alone.
 | Competency | S1 | S2 | S3 (in progress) | Exercises at L2 · L3 · L4 · L5 |
 |---|---|---|---|---|
 | `CK-TERM` | 2 (quiz) | 3 | 3 | 0 · 2 · 0 · 0 |
-| `CK-METH` | 2 | 3 | 4 ✗ | 1 · 2 · 0 · 0 |
+| `CK-METH` | 2 | 3 | 4 | 1 · 2 · 1 · 0 |
 | `CK-RCPT` | 3 | 3 | 4 ✗ | 0 · 2 · 0 · 0 |
 | `CK-CLAS` | – | 2 | 2 | 2 · 0 · 0 · 0 |
 | `CK-CUIS` | – | 1 | 3 ✗ | 0 · 0 · 0 · 0 |
@@ -216,22 +216,22 @@ row rests on the quiz alone.
 | `IN-VEG` | 2 | 3 | 4 ✗ | 3 · 2 · 0 · 0 |
 | `IN-STA` | 2 | 3 | 4 ✗ | 4 · 3 · 0 · 0 |
 | `IN-DAI` | 2 | 3 | 4 ✗ | 2 · 2 · 0 · 0 |
-| `IN-MEA` | 1 | 3 | 3 | 0 · 2 · 0 · 0 |
+| `IN-MEA` | 1 | 3 | 3 | 0 · 3 · 0 · 0 |
 | `IN-FSH` | 1 | 3 | 3 | 0 · 2 · 0 · 0 |
 | `IN-ARO` | 1 | 2 | 4 | 1 · 0 · 3 · 0 |
 | `IN-BAK` | – | 3 | 3 | 0 · 2 · 0 · 0 |
 | `TS-MEP` | 3 | 4 | 4 | 1 · 1 · 1 · 0 |
 | `TS-KNF` | 3 | 4 | 4 | 4 · 3 · 2 · 0 |
-| `TS-DRY` | 2 | 3 | 4 ✗ | 3 · 9 · 0 · 0 |
+| `TS-DRY` | 2 | 3 | 4 | 3 · 9 · 1 · 0 |
 | `TS-MOI` | 3 | 4 | 4 | 0 · 2 · 3 · 0 |
-| `TS-CMB` | – | 2 | 4 ✗ | 2 · 0 · 0 · 0 |
+| `TS-CMB` | – | 2 | 4 | 2 · 0 · 3 · 0 |
 | `TS-FIRE` | – | – | 3 ✗ | 0 · 0 · 0 · 0 |
 | `TS-EGG` | 3 | 4 | 4 | 1 · 3 · 2 · 0 |
 | `TS-VEG` | 3 | 4 | 4 | 0 · 4 · 3 · 0 |
 | `TS-STA` | 3 | 3 | 4 ✗ | 1 · 4 · 0 · 0 |
 | `TS-STK` | – | 3 | 4 ✗ | 0 · 5 · 0 · 0 |
-| `TS-SAU` | – | 3 | 4 ✗ | 0 · 8 · 0 · 0 |
-| `TS-PRO` | 1 | 3 | 4 ✗ | 0 · 8 · 0 · 0 |
+| `TS-SAU` | – | 3 | 4 | 0 · 8 · 1 · 0 |
+| `TS-PRO` | 1 | 3 | 4 | 0 · 8 · 1 · 0 |
 | `TS-FAB` | – | 2 | 3 | 4 · 3 · 0 · 0 |
 | `TS-BAK` | – | 3 | 4 ✗ | 0 · 6 · 0 · 0 |
 | `TS-BRD` | – | 2 | 3 ✗ | 3 · 0 · 0 · 0 |
@@ -239,9 +239,9 @@ row rests on the quiz alone.
 | `TS-PRS` | – | – | 3 ✗ | 0 · 0 · 0 · 0 |
 | `TS-MOD` | – | – | 1 | 0 · 0 · 0 · 0 |
 | `TS-PLT` | 1 | 2 | 2 | 2 · 0 · 0 · 0 |
-| `SC-HEAT` | 2 | 3 | 4 ✗ | 3 · 2 · 0 · 0 |
+| `SC-HEAT` | 2 | 3 | 4 | 3 · 2 · 2 · 0 |
 | `SC-BRWN` | 2 | 3 | 4 ✗ | 1 · 4 · 0 · 0 |
-| `SC-PROT` | 2 | 3 | 4 ✗ | 1 · 4 · 0 · 0 |
+| `SC-PROT` | 2 | 3 | 4 | 1 · 4 · 1 · 0 |
 | `SC-STRC` | 2 (quiz) | 3 | 4 ✗ | 0 · 2 · 0 · 0 |
 | `SC-EMUL` | 1 | 3 | 3 | 0 · 5 · 0 · 0 |
 | `SC-MICR` | 1 | 3 | 3 | 0 · 2 · 0 · 0 |
@@ -259,12 +259,12 @@ row rests on the quiz alone.
 | `SA-TEMP` | 3 | 4 | 4 | 1 · 3 · 5 · 0 |
 | `SA-PHYS` | 3 | 4 | 5 | 0 · 2 · 2 · 1 |
 | `SA-ALLG` | 2 | 3 | 4 ✗ | 1 · 2 · 0 · 0 |
-| `SA-HRPR` | – | 1 | 4 | 0 · 0 · 1 · 0 |
+| `SA-HRPR` | – | 1 | 4 | 0 · 0 · 2 · 0 |
 | `RD-RATO` | – | 2 | 3 ✗ | 4 · 0 · 0 · 0 |
-| `RD-ADPT` | 1 | 2 | 3 ✗ | 2 · 0 · 0 · 0 |
+| `RD-ADPT` | 1 | 2 | 3 | 2 · 1 · 0 · 0 |
 | `RD-TEST` | 1 | 2 | 3 ✗ | 4 · 0 · 0 · 0 |
 | `RD-WRIT` | 2 | 2 | 3 ✗ | 1 · 0 · 0 · 0 |
-| `JD-CUES` | 2 | 3 | 4 ✗ | 4 · 5 · 0 · 0 |
+| `JD-CUES` | 2 | 3 | 4 | 4 · 5 · 1 · 0 |
 | `JD-CHSE` | 1 | 2 | 3 ✗ | 2 · 0 · 0 · 0 |
 | `JD-TRBL` | 1 | 3 | 4 | 1 · 3 · 1 · 0 |
 | `JD-REFL` | 2 | 3 | 4 ✗ | 4 · 3 · 0 · 0 |
@@ -333,7 +333,7 @@ No course, module, lesson, hour, exercise or `Moves` entry has been added, remov
 | Heavy saucepan with a lid | 0 | `STA-1`, `LEG-2`, `SAU-2` |
 | Heavy stainless sauté pan | 0 | `EQP-1`, `HEA-1`, `VEG-1`, `POU-2`, `SAU-2` |
 | Honing steel | 0 | `EQP-1`, `KNF-1` |
-| Instant-read thermometer | 0 | `EGG-1`, `EQP-1`, `HEA-1`, `ORI-1`, `SAF-1`, `BRD-2`, `FSH-2`, `HEA-2`, `LEG-2`, `MEA-2`, `POU-2`, `SAU-2`, `SCI-2`, `STK-2`, `BUT-3`, `SAF-3` |
+| Instant-read thermometer | 0 | `EGG-1`, `EQP-1`, `HEA-1`, `ORI-1`, `SAF-1`, `BRD-2`, `FSH-2`, `HEA-2`, `LEG-2`, `MEA-2`, `POU-2`, `SAU-2`, `SCI-2`, `STK-2`, `BUT-3`, `SAF-3`, `SLW-3` |
 | Labels and a marker | 0 | `SAF-3` |
 | Large stable board | 0 | `EQP-1`, `KNF-1` |
 | Mixing bowls | 0 | `WRK-1`, `BAK-2`, `SCI-2` |
@@ -351,16 +351,18 @@ No course, module, lesson, hour, exercise or `Moves` entry has been added, remov
 | Tongs | 0 | `HEA-1` |
 | Baking stone or steel | 1 | `BRD-2` |
 | Bench scraper | 1 | `BAK-2`, `BRD-2` |
-| Fine sieve | 1 | `EGG-1`, `LEG-2`, `SAU-2`, `SCI-2`, `STK-2` |
+| Fine sieve | 1 | `EGG-1`, `LEG-2`, `SAU-2`, `SCI-2`, `STK-2`, `SLW-3` |
 | Frying thermometer | 1 | `HEA-2` |
-| Heavy lidded casserole (*braadpan*) | 1 | `BRD-2`, `HEA-2`, `LEG-2`, `MEA-2` |
+| Heavy lidded casserole (*braadpan*) | 1 | `BRD-2`, `HEA-2`, `LEG-2`, `MEA-2`, `SLW-3` |
 | Loaf tin | 1 | `BAK-2`, `BRD-2` |
 | Mixer | 1 | `BAK-2` |
 | Rolling pin | 1 | `BAK-2` |
 | Tart tin | 1 | `BAK-2` |
 | Whetstone | 1 | `KNF-2` |
 | Mandoline | 2 | `SAF-3` |
-| Pressure cooker | 2 | `SAF-3` |
+| Pressure cooker | 2 | `SAF-3`, `SLW-3` |
+| Sous vide circulator | 2 | `SLW-3` |
+| Zip-top or vacuum bags | 2 | `SLW-3` |
 | Baking beans | — | `BAK-2` |
 | Balloon whisk | — | `SAU-2` |
 | Blender | — | `STK-2` |
@@ -370,6 +372,7 @@ No course, module, lesson, hour, exercise or `Moves` entry has been added, remov
 | Camera | — | `ORI-1` |
 | Carving board | — | `MEA-2` |
 | Carving knife | — | `MEA-2` |
+| Closed-cell foam tape | — | `SLW-3` |
 | Containers with lids | — | `KNF-2` |
 | Cut-resistant glove | — | `BUT-3` |
 | Deep roasting tin for a water bath | — | `EGG-1` |
@@ -394,7 +397,7 @@ No course, module, lesson, hour, exercise or `Moves` entry has been added, remov
 | Kitchen timer | — | `KNF-1`, `WRK-1` |
 | Labels and pen | — | `ORI-1`, `SAF-1`, `LEG-2` |
 | Ladle | — | `STA-1` |
-| Ladle and skimmer | — | `STK-2` |
+| Ladle and skimmer | — | `STK-2`, `SLW-3` |
 | Lame or blade | — | `BRD-2` |
 | Measuring jug and spoons | — | `WRK-1` |
 | Measuring jugs or bottles (1 l) | — | `TST-1` |
@@ -422,6 +425,7 @@ No course, module, lesson, hour, exercise or `Moves` entry has been added, remov
 | Second cutting board for raw protein | — | `SAF-1`, `FSH-2`, `KNF-2`, `MEA-2`, `POU-2`, `BUT-3` |
 | Shallow containers with lids | — | `SAF-1`, `STA-1`, `MEA-2`, `POU-2` |
 | Slotted spoon | — | `EGG-1` |
+| Slow cooker | — | `SLW-3` |
 | Small prep bowls | — | `WRK-1` |
 | Spice grinder | — | `FLV-3` |
 | Spice jars and labels | — | `FLV-3` |
