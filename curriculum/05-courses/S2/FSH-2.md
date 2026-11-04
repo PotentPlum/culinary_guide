@@ -757,7 +757,7 @@ moment. It is scored as in `FSH-2.M3.X1`.
 
   The juices make the sauce, finished with butter or cream and parsley.
 - **Allergens:** molluscs and crustaceans are both EU allergen groups; the learner asks guests before serving them
-  (`SA-ALRG`).
+  (`SA-ALLG`).
 
 **Sessions:**
 1. Mussels (60 min): check, clean and steam 1–2 kg of mussels; count the discarded ones before and after cooking.
