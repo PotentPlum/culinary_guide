@@ -748,7 +748,7 @@ and a written idea. The extensions:
 - the dessert closes a three-course menu for the guests whose contrasts are named in advance for every course, as the
   second dish and the menu of the `FL-TEXT` level 4 row;
 - the dessert is the first of the three dishes of the `CR-COMP` level 4 row and the first of the three courses of the
-  `TS-PLT` level 4 row; the others follow in `PLT-4` and `MNU-4`.
+  `TS-PLT` level 4 row; the others follow in `PLT-4`.
 
 **Inputs:** the components chosen; seasonal Dutch fruit; the menu's other courses as household cooking.
 
@@ -765,7 +765,8 @@ and a written idea. The extensions:
 - **`CR-COMP` level 4, dish one of three:** composed with a written idea; photos and cards show every element serving it.
   The other two are in `PLT-4.M3.X1`.
 - **`TS-PLT` level 4, course one of three:** designed with a sketch and plated for four guests, the plates matching, and
-  judged by the AI review and the guests as composed with intent. The others follow in `PLT-4` and `MNU-4.M6.X1`.
+  judged by the AI review and the guests as composed with intent. The others follow in `PLT-4.M2.X1` and
+  `PLT-4.M3.X1`.
 
 **Time:** 3 h, plus the menu.
 
@@ -792,7 +793,7 @@ and a written idea. The extensions:
 |---|---|---|---|
 | FL-TEXT | 4 | `PST-4.M5.X1` | written, photo, tasters — dish two of three and the menu, contrasts named in advance and confirmed in every course; dish one in `PST-4.M2.X1`, dish three in `MOD-4` |
 | CR-COMP | 4 | `PST-4.M5.X1` | written, photo, tasters — dish one of three composed with a written idea; the others in `PLT-4.M3.X1` |
-| TS-PLT | 4 | `PST-4.M5.X1` | photo, written, tasters — course one of three, sketched and plated for four guests, the plates matching; the others in `PLT-4` and `MNU-4.M6.X1` |
+| TS-PLT | 4 | `PST-4.M5.X1` | photo, written, tasters — course one of three, sketched and plated for four guests, the plates matching; the others in `PLT-4.M2.X1` and `PLT-4.M3.X1` |
 
 ## Assessment criteria
 
