@@ -190,7 +190,7 @@ evidence record over the stage, not in a single check.
 | S4 | [`MOD-4`](05-courses/S4/MOD-4.md) | 7 / 7 | 5 / 5 | 32 | 3 | 10 | €45 |
 | S4 | [`PLT-4`](05-courses/S4/PLT-4.md) | 6 / 6 | 4 / 4 | 16 | 1 | 6 | €60 |
 | S4 | [`RDV-4`](05-courses/S4/RDV-4.md) | 10 / 10 | 5 / 5 | 24 | 2 | 10 | €70 |
-| S4 | `MNU-4` | 0 / 14 | — | — | — | — | — |
+| S4 | [`MNU-4`](05-courses/S4/MNU-4.md) | 14 / 14 | 7 / 7 | 40 | 11 | 14 | €200 |
 | S5 | `IND-5` | 0 / 15 | — | — | — | — | — |
 | S5 | `RDV-5` | 0 / 9 | — | — | — | — | — |
 | S5 | `REV-5` | 0 / 4 | — | — | — | — | — |
@@ -210,7 +210,7 @@ row rests on the quiz alone.
 | `CK-RCPT` | 3 | 3 | 4 | 4 | 0 · 2 · 1 · 0 |
 | `CK-CLAS` | – | 2 | 2 | 4 | 2 · 1 · 3 · 0 |
 | `CK-CUIS` | – | 1 | 3 | 4 | 0 · 17 · 3 · 0 |
-| `CK-BEVR` | – | – | 1 | 3 ✗ | 0 · 0 · 0 · 0 |
+| `CK-BEVR` | – | – | 1 | 3 | 0 · 2 · 0 · 0 |
 | `IN-SEL` | 2 | 3 | 4 | 4 | 1 · 2 · 3 · 0 |
 | `IN-STO` | 3 | 3 | 4 | 4 | 1 · 5 · 3 · 0 |
 | `IN-VEG` | 2 | 3 | 4 | 4 | 3 · 3 · 2 · 0 |
@@ -220,7 +220,7 @@ row rests on the quiz alone.
 | `IN-FSH` | 1 | 3 | 3 | 4 | 0 · 3 · 2 · 0 |
 | `IN-ARO` | 1 | 2 | 4 | 4 | 1 · 0 · 7 · 0 |
 | `IN-BAK` | – | 3 | 3 | 4 | 0 · 3 · 2 · 0 |
-| `TS-MEP` | 3 | 4 | 4 | 5 ✗ | 1 · 1 · 2 · 0 |
+| `TS-MEP` | 3 | 4 | 4 | 5 | 1 · 1 · 2 · 1 |
 | `TS-KNF` | 3 | 4 | 4 | 5 | 4 · 3 · 2 · 1 |
 | `TS-DRY` | 2 | 3 | 4 | 4 | 3 · 9 · 3 · 0 |
 | `TS-MOI` | 3 | 4 | 4 | 4 | 0 · 2 · 4 · 0 |
@@ -238,7 +238,7 @@ row rests on the quiz alone.
 | `TS-GRD` | – | – | 3 | 3 | 0 · 3 · 0 · 0 |
 | `TS-PRS` | – | – | 3 | 3 | 0 · 5 · 0 · 0 |
 | `TS-MOD` | – | – | 1 | 2 | 4 · 0 · 0 · 0 |
-| `TS-PLT` | 1 | 2 | 2 | 4 | 2 · 1 · 4 · 0 |
+| `TS-PLT` | 1 | 2 | 2 | 4 | 2 · 1 · 5 · 0 |
 | `SC-HEAT` | 2 | 3 | 4 | 4 | 3 · 2 · 2 · 0 |
 | `SC-BRWN` | 2 | 3 | 4 | 4 | 1 · 4 · 2 · 0 |
 | `SC-PROT` | 2 | 3 | 4 | 4 | 1 · 4 · 3 · 0 |
@@ -246,19 +246,19 @@ row rests on the quiz alone.
 | `SC-EMUL` | 1 | 3 | 3 | 4 | 0 · 6 · 2 · 0 |
 | `SC-MICR` | 1 | 3 | 3 | 3 | 0 · 4 · 0 · 0 |
 | `FL-SENS` | 2 | 3 | 4 | 4 | 3 · 1 · 1 · 0 |
-| `FL-SEAS` | 2 | 3 | 4 | 5 | 4 · 2 · 2 · 2 |
+| `FL-SEAS` | 2 | 3 | 4 | 5 | 4 · 2 · 2 · 3 |
 | `FL-TEXT` | 1 | 2 | 3 | 4 | 4 · 4 · 4 · 0 |
 | `FL-ARCH` | – | 2 | 3 | 4 | 2 · 12 · 6 · 0 |
 | `FL-CORR` | 1 | 3 | 4 | 4 | 0 · 2 · 1 · 0 |
-| `KM-PLAN` | 2 | 3 | 4 | 4 | 2 · 2 · 5 · 0 |
+| `KM-PLAN` | 2 | 3 | 4 | 4 | 2 · 2 · 8 · 0 |
 | `KM-MATH` | 2 | 3 | 4 | 4 | 1 · 1 · 4 · 0 |
-| `KM-PURC` | 1 | 2 | 4 | 4 | 3 · 1 · 2 · 0 |
+| `KM-PURC` | 1 | 2 | 4 | 4 | 3 · 1 · 3 · 0 |
 | `KM-WAST` | 2 | 3 | 4 | 4 | 2 · 3 · 4 · 0 |
-| `KM-EQPT` | 2 | 3 | 3 | 4 | 3 · 5 · 1 · 0 |
+| `KM-EQPT` | 2 | 3 | 3 | 4 | 3 · 5 · 2 · 0 |
 | `SA-HYG` | 3 | 4 | 5 | 5 | 1 · 1 · 5 · 1 |
-| `SA-TEMP` | 3 | 4 | 4 | 5 | 1 · 3 · 5 · 1 |
+| `SA-TEMP` | 3 | 4 | 4 | 5 | 1 · 3 · 5 · 2 |
 | `SA-PHYS` | 3 | 4 | 5 | 5 | 0 · 2 · 2 · 2 |
-| `SA-ALLG` | 2 | 3 | 4 | 4 | 1 · 2 · 1 · 0 |
+| `SA-ALLG` | 2 | 3 | 4 | 4 | 1 · 2 · 2 · 0 |
 | `SA-HRPR` | – | 1 | 4 | 4 | 0 · 0 · 6 · 0 |
 | `RD-RATO` | – | 2 | 3 | 4 | 4 · 5 · 2 · 0 |
 | `RD-ADPT` | 1 | 2 | 3 | 4 | 3 · 2 · 1 · 0 |
@@ -267,9 +267,9 @@ row rests on the quiz alone.
 | `JD-CUES` | 2 | 3 | 4 | 4 | 4 · 5 · 5 · 0 |
 | `JD-CHSE` | 1 | 2 | 3 | 4 | 2 · 5 · 5 · 0 |
 | `JD-TRBL` | 1 | 3 | 4 | 4 | 1 · 3 · 2 · 0 |
-| `JD-REFL` | 2 | 3 | 4 | 4 | 4 · 3 · 3 · 0 |
+| `JD-REFL` | 2 | 3 | 4 | 4 | 4 · 3 · 4 · 0 |
 | `CR-COMP` | – | 1 | 3 | 4 | 2 · 7 · 2 · 0 |
-| `CR-MENU` | – | – | 2 | 4 ✗ | 1 · 0 · 0 · 0 |
+| `CR-MENU` | – | – | 2 | 4 | 1 · 0 · 2 · 0 |
 | `CR-IMPV` | – | 1 | 3 | 3 | 0 · 2 · 0 · 0 |
 | `CR-ORIG` | – | – | 1 | 3 | 0 · 1 · 0 · 0 |
 <!-- END generated:reachability -->
@@ -336,8 +336,8 @@ No course, module, lesson, hour, exercise or `Moves` entry has been added, remov
 | Heavy saucepan with a lid | 0 | `STA-1`, `LEG-2`, `SAU-2`, `PRS-3`, `PST-4` |
 | Heavy stainless sauté pan | 0 | `EQP-1`, `HEA-1`, `VEG-1`, `POU-2`, `SAU-2`, `VEG-3`, `CLS-4`, `PRO-4` |
 | Honing steel | 0 | `EQP-1`, `KNF-1` |
-| Instant-read thermometer | 0 | `EGG-1`, `EQP-1`, `HEA-1`, `ORI-1`, `SAF-1`, `BRD-2`, `FSH-2`, `HEA-2`, `LEG-2`, `MEA-2`, `POU-2`, `SAU-2`, `SCI-2`, `STK-2`, `BUT-3`, `CUI-3`, `GRD-3`, `PST-3`, `SAF-3`, `SLW-3`, `CLS-4`, `CUI-4`, `MOD-4`, `PRO-4`, `PST-4` |
-| Labels and a marker | 0 | `KMG-3`, `NUT-3`, `PRS-3`, `SAF-3` |
+| Instant-read thermometer | 0 | `EGG-1`, `EQP-1`, `HEA-1`, `ORI-1`, `SAF-1`, `BRD-2`, `FSH-2`, `HEA-2`, `LEG-2`, `MEA-2`, `POU-2`, `SAU-2`, `SCI-2`, `STK-2`, `BUT-3`, `CUI-3`, `GRD-3`, `PST-3`, `SAF-3`, `SLW-3`, `CLS-4`, `CUI-4`, `MNU-4`, `MOD-4`, `PRO-4`, `PST-4` |
+| Labels and a marker | 0 | `KMG-3`, `NUT-3`, `PRS-3`, `SAF-3`, `MNU-4` |
 | Large stable board | 0 | `EQP-1`, `KNF-1` |
 | Mixing bowls | 0 | `WRK-1`, `BAK-2`, `SCI-2`, `GRD-3` |
 | Oven thermometer | 0 | `EQP-1`, `ORI-1`, `BAK-2`, `BRD-2`, `RDV-4` |
@@ -395,14 +395,15 @@ No course, module, lesson, hour, exercise or `Moves` entry has been added, remov
 | Cheese knives and a board | — | `GRD-3` |
 | Chinois | — | `CLS-4` |
 | Closed-cell foam tape | — | `SLW-3` |
-| Coloured boards and tools for allergen-free cooking | — | `NUT-3` |
+| Coloured boards and tools for allergen-free cooking | — | `NUT-3`, `MNU-4` |
 | Containers with lids | — | `KNF-2` |
 | Couscoussier | — | `CUI-4` |
 | Cut-resistant glove | — | `BUT-3` |
 | Deep roasting tin for a water bath | — | `EGG-1`, `GRD-3` |
 | Dough container | — | `BRD-2`, `BRD-3` |
+| Drinks thermometer | — | `MNU-4` |
 | Filleting knife | — | `FSH-2`, `BUT-3`, `PRO-4` |
-| Fire blanket | — | `SAF-1`, `HEA-2`, `FIR-3` |
+| Fire blanket | — | `SAF-1`, `HEA-2`, `FIR-3`, `MNU-4` |
 | First-aid kit | — | `SAF-1` |
 | Fish knife and serving spoon | — | `PRO-4` |
 | Fish scaler | — | `FSH-2`, `BUT-3` |
@@ -428,6 +429,7 @@ No course, module, lesson, hour, exercise or `Moves` entry has been added, remov
 | Ladle | — | `STA-1` |
 | Ladle and skimmer | — | `STK-2`, `SLW-3` |
 | Lame or blade | — | `BRD-2`, `BRD-3` |
+| Long lighter | — | `MNU-4` |
 | Long tongs | — | `FIR-3` |
 | Measuring jug and spoons | — | `WRK-1` |
 | Measuring jugs or bottles (1 l) | — | `TST-1` |
@@ -450,9 +452,10 @@ No course, module, lesson, hour, exercise or `Moves` entry has been added, remov
 | Phone stand | — | `KNF-1`, `FSH-2`, `MEA-2`, `POU-2`, `SAU-2`, `BUT-3`, `NUT-3`, `CLS-4`, `PLT-4` |
 | Photo background | — | `PLT-4` |
 | Pie dish | — | `PST-3` |
-| Planning templates | — | `KMG-3` |
+| Planning templates | — | `KMG-3`, `MNU-4` |
+| Plates for 6–8 | — | `MNU-4` |
 | Plates in different sizes and colours | — | `PLT-4` |
-| Platters and serving bowls | — | `PLT-4` |
+| Platters and serving bowls | — | `MNU-4`, `PLT-4` |
 | Potato masher | — | `VEG-1` |
 | Precision scale (0.1 g) | — | `TST-1`, `BAK-2`, `GRD-3`, `PST-3`, `PST-4`, `RDV-4` |
 | Proofing basket | — | `BRD-2`, `BRD-3` |
@@ -467,7 +470,7 @@ No course, module, lesson, hour, exercise or `Moves` entry has been added, remov
 | Salad spinner | — | `VEG-1`, `GRD-3` |
 | Seasonal calendar | — | `VEG-1`, `VEG-3` |
 | Second cutting board for raw protein | — | `SAF-1`, `FSH-2`, `KNF-2`, `MEA-2`, `POU-2`, `BUT-3`, `NUT-3`, `PRO-4` |
-| Shallow containers with lids | — | `SAF-1`, `STA-1`, `MEA-2`, `POU-2`, `KMG-3`, `PRO-4` |
+| Shallow containers with lids | — | `SAF-1`, `STA-1`, `MEA-2`, `POU-2`, `KMG-3`, `MNU-4`, `PRO-4` |
 | Shallow freezer tray | — | `MOD-4`, `PST-4` |
 | Shellfish tools | — | `PRO-4` |
 | Silicone baking mat | — | `MOD-4`, `PST-4` |
@@ -486,15 +489,16 @@ No course, module, lesson, hour, exercise or `Moves` entry has been added, remov
 | Sushi tub and mat | — | `CUI-4` |
 | Tagine | — | `CUI-4` |
 | Tasting cups | — | `ORI-1`, `RDV-4` |
-| Tasting form | — | `TST-1`, `RDV-4` |
+| Tasting form | — | `TST-1`, `MNU-4`, `RDV-4` |
 | Tawa* or *comal | — | `CUI-4` |
 | Terrine mould | — | `CUI-4` |
 | Tortilla press | — | `CUI-3`, `CUI-4` |
 | Tuile stencil | — | `MOD-4` |
 | Turning knife | — | `CLS-4` |
-| Vacuum flask | — | `SAU-2` |
+| Vacuum flask | — | `SAU-2`, `MNU-4` |
 | Weights for pressing | — | `GRD-3` |
 | Wide shallow pan for rice | — | `CUI-3` |
+| Wine glasses | — | `MNU-4` |
 | Wire rack | — | `BAK-2`, `BRD-2`, `HEA-2`, `FLV-3`, `PST-3`, `PST-4` |
 | Wok | — | `CUI-3`, `CUI-4` |
 | Wood chunks | — | `FIR-3` |
