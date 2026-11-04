@@ -27,6 +27,9 @@ jobs:
       - name: Validate data/
         run: python3 tools/validate_data.py
 
+      - name: Validate curriculum/
+        run: python3 tools/validate_curriculum.py
+
       - name: Test the Python tools
         run: python3 -m unittest discover -s tools
 
