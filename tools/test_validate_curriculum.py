@@ -407,6 +407,15 @@ class ValidateCurriculumTest(unittest.TestCase):
         self.assertIn("KNF-1.M1: no evidence row for TS-KNF (level 2)", errors)
         self.assertIn("KNF-1.M1: evidence row SA-HYG 1: level 1 is shown by the quiz", errors)
 
+    def test_exercise_ids_named_in_a_course_file_must_exist(self) -> None:
+        row = "| TS-KNF | 2 | `KNF-1.M1.X1` | photo — even dice; the hygiene part in `SAF-1.M1.X1` |"
+        self.assertEqual(self.course_errors(course_doc(evidence_row=row)), [])
+        row = "| TS-KNF | 2 | `KNF-1.M1.X1` | photo — even dice; the rest in `KNF-1.M9.X1` |"
+        self.assertIn(
+            "KNF-1: names KNF-1.M9.X1, which is not an exercise in the outline",
+            self.course_errors(course_doc(evidence_row=row)),
+        )
+
     def test_a_knowledge_check_replaces_an_exercise_only_for_quiz_only_rows(self) -> None:
         row = "| TS-KNF | 2 | knowledge check | quiz — the cut names |"
         self.write_entries(knf=entry("TS-KNF", "Knife skills", {2: "quiz", 3: "measure, photo"}))

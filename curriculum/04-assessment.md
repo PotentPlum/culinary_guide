@@ -499,6 +499,14 @@ The figures were checked on the pages and in the sections named on 2026-11-04.
 | Cooking fish and intact meat | 63 °C for 15 seconds | §3-401.11(A)(1) [S25] |
 | Whole-muscle, intact beef steaks served rare | Cooked on top and bottom to a surface temperature of 63 °C or above, with a cooked colour change on all outside surfaces; the steak kept intact (not pierced, needle-tenderised or rolled); not served to risk groups | §3-401.11(C) [S25] |
 | Whole meat roasts | A time-temperature table, from 54.4 °C held for 112 minutes to 62.8 °C held for 4 minutes (the holding time may include the rise after the oven) | §3-401.11(B) [S25] |
+| Poultry cooked at low temperature (sous vide) | Held at the core for the time in this table (the slowest column, for 12 % fat, used for all poultry): 60.0 °C for 35 minutes (times rounded up), 61.1 °C for 24 minutes, 62.2 °C for 17 minutes, 63.3 °C for 11.5 minutes, 64.4 °C for 8 minutes, 65.6 °C for 5 minutes, 66.7 °C for 3 minutes, 68.9 °C for 1 minute, 70.0 °C for 41 seconds; 74 °C instantaneous. The program uses no rows below 60 °C | USDA FSIS, poultry time-temperature tables (Notice 16-05, 2005) [S34] |
+| Sous vide and cook-chill food kept for later | Sealed, cooked to a row of this table, then cooled to the cooling rule above and kept as leftovers (at most 2 days in the fridge) or frozen. The Food Code's professional limits (up to 7 days at 5 °C under a HACCP plan) are not used at home | §3-502.12(D) [S25]; [S22] |
+| Fish eaten raw, cured, acid-marinated or cooked below 60 °C at the core | Frozen first to kill parasites: −20 °C or below in all parts for at least 24 hours (EU rule for businesses, so fish bought with that treatment qualifies), or in a home freezer shown by a thermometer to hold −20 °C or below, for 7 days. A freezer at −18 °C does not qualify. Salt, sugar and acid do not replace freezing. Heating to 60 °C at the core for 1 minute also kills the parasites | Regulation (EC) 853/2004, Annex III, Section VIII, Chapter III, Part D, as amended by Regulation (EU) 1276/2011 [S35]; Food Code §3-402.11 [S25] |
+| Raw or partly cooked animal foods (raw or lightly cooked fish, rare meat, soft eggs from raw eggs, raw-yolk sauces) | Not served to risk groups (pregnant people, young children, older people, people with weakened immunity); pasteurised egg replaces raw egg in raw-egg sauces for them | §3-801.11(B) and (C) [S25] |
+| Acidity and botulism | Foods at pH 4.6 or below are acid foods (fruit, pickles, sauerkraut, jams); above 4.6 is low-acid (meat, fish, poultry, milk, all fresh vegetables except most tomatoes) | NCHFP, *Ensuring Safe Canned Foods* [S27] |
+| Home canning | Acid foods only, in a boiling-water canner, by a tested recipe and its processing time, followed exactly. Low-acid foods need pressure canning, which the program does not teach | [S27] |
+| Lacto-fermented vegetables (sauerkraut) | Salt at 2.25–2.5 % of the vegetables' weight; fermented at 21–24 °C for about 3–4 weeks (5–6 weeks at 16–18 °C; below about 16 °C it may not ferment) | UW-Extension, *Make your own sauerkraut* [S36]; NCHFP sauerkraut [S27] |
+| Nitrite curing salt | Used only where a tested recipe needs it; the added nitrite at most 80 mg per kg of meat (as the nitrite ion), weighed from the nitrite content on the salt's label | Regulation (EC) 1333/2008, Annex II, as amended by Regulation (EU) 2023/2108, from 9 October 2025 (FSAI summary) [S37] |
 | Dried kidney beans and other common beans (*Phaseolus vulgaris*) | Soaked for at least 5 hours with the water poured away, then boiled in fresh water for at least 30 minutes; never cooked in a slow cooker (which may reach only 75 °C) | FDA *Bad Bug Book* (2nd ed.), Phytohaemagglutinin [S33] |
 | Garlic or herbs in oil | Needs time and temperature control (refrigeration) unless modified to stop pathogen growth | Food Code definition of TCS food, §1-201.10 [S25] |
 | Home preserving | Use tested methods and recipes only | National Center for Home Food Preservation [S27] |
@@ -508,8 +516,11 @@ The figures were checked on the pages and in the sections named on 2026-11-04.
 - A whole-muscle beef steak served below 63 °C at the core is checked against the steak row above (seared on both
   faces, colour changed on every outside surface, kept intact), not against a core reading. Minced, tenderised or
   rolled beef is not a steak under this rule.
-- Sous vide and low-temperature cooking follow the time-temperature tables above. A cook below them needs a tested
-  pasteurisation table, which Phase 5 cites in `SLW-3`.
+- Sous vide and low-temperature cooking follow the time-temperature tables above: the roast table for whole meat roasts,
+  the poultry table for poultry, the steak row for intact beef steaks, and 63 °C for 15 seconds for other intact meat
+  and fish (or the fish row, for fish served below it). A cook below these tables is a gate **Fail**.
+- The poultry table, the cook-chill row, the fish row, the risk-group row and the preserving rows were added for S3 and
+  are open for review (Phase 5 overview, S3 batch).
 - The Dutch home advice wins where it is stricter, for example 4 °C rather than 5 °C in the fridge.
 - The Food Code's oven chart for roasts (§3-401.11(B)(2): a still oven at 177 °C or more for roasts under 4.5 kg) is
   not adopted for home roasting. Whole roasts are judged by the core time-temperature table above, whatever the oven

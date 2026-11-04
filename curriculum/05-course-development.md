@@ -293,8 +293,10 @@ row rests on the quiz alone.
 | `SAF-1.M3.L1` objective | growth "between about 7 and 60 °C" | growth between the cold and hot holding limits (5 and 57 °C) | The rounded range disagreed with the figures the gates use ([assessment §9](04-assessment.md#9-safety-figures-used-in-assessment)). |
 | [Assessment §9](04-assessment.md#9-safety-figures-used-in-assessment) (S2) | Intact meat only at 63 °C for 15 seconds | A row for whole-muscle, intact beef steaks served rare (Food Code §3-401.11(C)), and a gate rule for it | `MEA-2` teaches steaks to a chosen doneness, and its outline asks for rare to well done. Without the row, every rare steak would be a gate *Fail*. Kept at the S2 review. |
 | [Assessment §9](04-assessment.md#9-safety-figures-used-in-assessment) (S2 review) | No figure for raw-bean lectins; no word on the Food Code's roast oven chart | A row for dried common beans (soak at least 5 h, boil at least 30 min, no slow cooker; FDA *Bad Bug Book* [S33]); a rule that the oven chart is not adopted | S2 review answers 2 and 3. `LEG-2.M1.L1`, `LEG-2.M1.L2`, `LEG-2.M1.X2` (now chickpeas, so the unsoaked pots stay within the rule) and `LEG-2.M1.Q4` follow the row. |
+| [Assessment §9](04-assessment.md#9-safety-figures-used-in-assessment) (S3) | No figures for low-temperature poultry, cook-chill storage, raw fish, risk groups, acidity, canning, fermentation salt or nitrite | Rows for each, from sources checked on 2026-11-04 ([S25], [S27], [S34]–[S37]); the sous vide rule now names which table applies to which food | S2 recommendations 2 and 3: `SAF-3`, `SLW-3`, `GRD-3`, `PRS-3` and `CUI-3` need these figures, and no figure is written from memory. To be confirmed at the S3 review. |
+| `PRS-3.M3.L1` objective | salt by weight (2 %) | salt by weight (2.25–2.5 %) | The checked source [S36] gives 2.25–2.5 %; 2 % is below it. |
 
-No course, module, lesson, hour, exercise or `Moves` entry has changed.
+No course, module, lesson, hour, exercise or `Moves` entry has been added, removed or moved; only the objective wording above changed.
 
 **Exercise scope notes** (the outline's one-line description is kept; the spec does more):
 - `TST-1.M2.X1` runs the acid series of [assessment §5.2](04-assessment.md#52-acid-series) as well as the salt series,

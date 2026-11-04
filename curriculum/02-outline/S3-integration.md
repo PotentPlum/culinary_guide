@@ -534,7 +534,7 @@ preserves, and cooking with preserves [S27].
 
 | ID | Lesson | Objectives | Prereqs | h | Practice | Elapsed | Moves |
 |---|---|---|---|---|---|---|---|
-| PRS-3.M3.L1 | Sauerkraut | [S] salt by weight (2 %), packing, weighting, temperature; [K] the bacterial succession | SCI-2.M6.L1 | 2.5 | 1 | 4 wk | TS-PRS→3 |
+| PRS-3.M3.L1 | Sauerkraut | [S] salt by weight (2.25–2.5 %), packing, weighting, temperature; [K] the bacterial succession | SCI-2.M6.L1 | 2.5 | 1 | 4 wk | TS-PRS→3 |
 | PRS-3.M3.L2 | Fermented vegetables and troubleshooting | [S] a kimchi-style mixed ferment; [J] kahm yeast versus mould; when to discard | PRS-3.M3.L1 | 2.5 | 2 | 2 wk | TS-PRS→3, JD-CUES→4 |
 
 - `PRS-3.M3.X1` *framework, framework* — Sauerkraut by percentage, with a daily log.
