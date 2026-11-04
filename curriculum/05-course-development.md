@@ -189,7 +189,7 @@ evidence record over the stage, not in a single check.
 | S4 | [`PST-4`](05-courses/S4/PST-4.md) | 11 / 11 | 5 / 5 | 40 | 8 | 12 | €110 |
 | S4 | [`MOD-4`](05-courses/S4/MOD-4.md) | 7 / 7 | 5 / 5 | 32 | 3 | 10 | €45 |
 | S4 | [`PLT-4`](05-courses/S4/PLT-4.md) | 6 / 6 | 4 / 4 | 16 | 1 | 6 | €60 |
-| S4 | `RDV-4` | 0 / 10 | — | — | — | — | — |
+| S4 | [`RDV-4`](05-courses/S4/RDV-4.md) | 10 / 10 | 5 / 5 | 24 | 2 | 10 | €70 |
 | S4 | `MNU-4` | 0 / 14 | — | — | — | — | — |
 | S5 | `IND-5` | 0 / 15 | — | — | — | — | — |
 | S5 | `RDV-5` | 0 / 9 | — | — | — | — | — |
@@ -248,10 +248,10 @@ row rests on the quiz alone.
 | `FL-SENS` | 2 | 3 | 4 | 4 | 3 · 1 · 1 · 0 |
 | `FL-SEAS` | 2 | 3 | 4 | 5 | 4 · 2 · 2 · 2 |
 | `FL-TEXT` | 1 | 2 | 3 | 4 | 4 · 4 · 4 · 0 |
-| `FL-ARCH` | – | 2 | 3 | 4 | 2 · 12 · 2 · 0 |
+| `FL-ARCH` | – | 2 | 3 | 4 | 2 · 12 · 3 · 0 |
 | `FL-CORR` | 1 | 3 | 4 | 4 | 0 · 2 · 1 · 0 |
 | `KM-PLAN` | 2 | 3 | 4 | 4 | 2 · 2 · 5 · 0 |
-| `KM-MATH` | 2 | 3 | 4 | 4 | 1 · 1 · 3 · 0 |
+| `KM-MATH` | 2 | 3 | 4 | 4 | 1 · 1 · 4 · 0 |
 | `KM-PURC` | 1 | 2 | 4 | 4 | 3 · 1 · 2 · 0 |
 | `KM-WAST` | 2 | 3 | 4 | 4 | 2 · 3 · 4 · 0 |
 | `KM-EQPT` | 2 | 3 | 3 | 4 | 3 · 5 · 1 · 0 |
@@ -260,18 +260,18 @@ row rests on the quiz alone.
 | `SA-PHYS` | 3 | 4 | 5 | 5 | 0 · 2 · 2 · 2 |
 | `SA-ALLG` | 2 | 3 | 4 | 4 | 1 · 2 · 1 · 0 |
 | `SA-HRPR` | – | 1 | 4 | 4 | 0 · 0 · 6 · 0 |
-| `RD-RATO` | – | 2 | 3 | 4 | 4 · 5 · 1 · 0 |
-| `RD-ADPT` | 1 | 2 | 3 | 4 ✗ | 3 · 2 · 0 · 0 |
-| `RD-TEST` | 1 | 2 | 3 | 4 ✗ | 4 · 2 · 0 · 0 |
-| `RD-WRIT` | 2 | 2 | 3 | 4 ✗ | 1 · 1 · 0 · 0 |
+| `RD-RATO` | – | 2 | 3 | 4 | 4 · 5 · 2 · 0 |
+| `RD-ADPT` | 1 | 2 | 3 | 4 | 3 · 2 · 1 · 0 |
+| `RD-TEST` | 1 | 2 | 3 | 4 | 4 · 2 · 1 · 0 |
+| `RD-WRIT` | 2 | 2 | 3 | 4 | 1 · 2 · 1 · 0 |
 | `JD-CUES` | 2 | 3 | 4 | 4 | 4 · 5 · 5 · 0 |
-| `JD-CHSE` | 1 | 2 | 3 | 4 | 2 · 5 · 1 · 0 |
+| `JD-CHSE` | 1 | 2 | 3 | 4 | 2 · 5 · 2 · 0 |
 | `JD-TRBL` | 1 | 3 | 4 | 4 | 1 · 3 · 2 · 0 |
 | `JD-REFL` | 2 | 3 | 4 | 4 | 4 · 3 · 3 · 0 |
 | `CR-COMP` | – | 1 | 3 | 4 | 2 · 7 · 2 · 0 |
 | `CR-MENU` | – | – | 2 | 4 ✗ | 1 · 0 · 0 · 0 |
-| `CR-IMPV` | – | 1 | 3 | 3 | 0 · 1 · 0 · 0 |
-| `CR-ORIG` | – | – | 1 | 3 ✗ | 0 · 0 · 0 · 0 |
+| `CR-IMPV` | – | 1 | 3 | 3 | 0 · 2 · 0 · 0 |
+| `CR-ORIG` | – | – | 1 | 3 | 0 · 1 · 0 · 0 |
 <!-- END generated:reachability -->
 
 ## 5. Decisions and change log
@@ -332,7 +332,7 @@ No course, module, lesson, hour, exercise or `Moves` entry has been added, remov
 | Chef's knife (20 cm) | 0 | `EQP-1`, `KNF-1`, `KNF-2`, `POU-2` |
 | Deep heavy pot for frying | 0 | `HEA-2` |
 | Deep pot with a rack | 0 | `PRS-3` |
-| Digital scale (1 g) | 0 | `ORI-1`, `TST-1`, `WRK-1`, `BAK-2`, `BRD-2`, `KNF-2`, `SCI-2`, `BRD-3`, `BUT-3`, `FLV-3`, `KMG-3`, `PRS-3` |
+| Digital scale (1 g) | 0 | `ORI-1`, `TST-1`, `WRK-1`, `BAK-2`, `BRD-2`, `KNF-2`, `SCI-2`, `BRD-3`, `BUT-3`, `FLV-3`, `KMG-3`, `PRS-3`, `RDV-4` |
 | Heavy saucepan with a lid | 0 | `STA-1`, `LEG-2`, `SAU-2`, `PRS-3`, `PST-4` |
 | Heavy stainless sauté pan | 0 | `EQP-1`, `HEA-1`, `VEG-1`, `POU-2`, `SAU-2`, `VEG-3`, `CLS-4`, `PRO-4` |
 | Honing steel | 0 | `EQP-1`, `KNF-1` |
@@ -340,7 +340,7 @@ No course, module, lesson, hour, exercise or `Moves` entry has been added, remov
 | Labels and a marker | 0 | `KMG-3`, `NUT-3`, `PRS-3`, `SAF-3` |
 | Large stable board | 0 | `EQP-1`, `KNF-1` |
 | Mixing bowls | 0 | `WRK-1`, `BAK-2`, `SCI-2`, `GRD-3` |
-| Oven thermometer | 0 | `EQP-1`, `ORI-1`, `BAK-2`, `BRD-2` |
+| Oven thermometer | 0 | `EQP-1`, `ORI-1`, `BAK-2`, `BRD-2`, `RDV-4` |
 | Oven thermometer for the grate | 0 | `FIR-3` |
 | Paring knife | 0 | `EQP-1`, `KNF-1` |
 | Probe thermometer | 0 | `FIR-3`, `PRO-4` |
@@ -422,7 +422,7 @@ No course, module, lesson, hour, exercise or `Moves` entry has been added, remov
 | Kitchen shears | — | `POU-2`, `FIR-3`, `PRO-4` |
 | Kitchen string | — | `MEA-2`, `STK-2`, `BUT-3`, `CLS-4` |
 | Kitchen timer | — | `KNF-1`, `WRK-1` |
-| Labels and pen | — | `ORI-1`, `SAF-1`, `LEG-2` |
+| Labels and pen | — | `ORI-1`, `SAF-1`, `LEG-2`, `RDV-4` |
 | Ladle | — | `STA-1` |
 | Ladle and skimmer | — | `STK-2`, `SLW-3` |
 | Lame or blade | — | `BRD-2`, `BRD-3` |
@@ -452,9 +452,10 @@ No course, module, lesson, hour, exercise or `Moves` entry has been added, remov
 | Plates in different sizes and colours | — | `PLT-4` |
 | Platters and serving bowls | — | `PLT-4` |
 | Potato masher | — | `VEG-1` |
-| Precision scale (0.1 g) | — | `TST-1`, `BAK-2`, `GRD-3`, `PST-3`, `PST-4` |
+| Precision scale (0.1 g) | — | `TST-1`, `BAK-2`, `GRD-3`, `PST-3`, `PST-4`, `RDV-4` |
 | Proofing basket | — | `BRD-2`, `BRD-3` |
 | Ramekins | — | `EGG-1`, `BAK-2`, `CLS-4` |
+| Recipe and test log | — | `RDV-4` |
 | Refractometer (optional) | — | `PST-4` |
 | Rice pan with a tight lid | — | `CUI-3` |
 | Roasting rack | — | `HEA-2` |
@@ -480,8 +481,8 @@ No course, module, lesson, hour, exercise or `Moves` entry has been added, remov
 | Stick blender | — | `EGG-1`, `SAU-2`, `PST-3`, `MOD-4` |
 | Stick blender or blender | — | `FLV-3`, `PST-4` |
 | Sugar thermometer | — | `PST-4` |
-| Tasting cups | — | `ORI-1` |
-| Tasting form | — | `TST-1` |
+| Tasting cups | — | `ORI-1`, `RDV-4` |
+| Tasting form | — | `TST-1`, `RDV-4` |
 | Tortilla press | — | `CUI-3` |
 | Tuile stencil | — | `MOD-4` |
 | Turning knife | — | `CLS-4` |
