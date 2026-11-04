@@ -168,7 +168,7 @@ evidence record over the stage, not in a single check.
 | S2 | [`MEA-2`](05-courses/S2/MEA-2.md) | 14 / 14 | 7 / 7 | 48 | 9 | 19 | €150 |
 | S2 | [`FSH-2`](05-courses/S2/FSH-2.md) | 12 / 12 | 6 / 6 | 32 | 8 | 14 | €110 |
 | S2 | [`LEG-2`](05-courses/S2/LEG-2.md) | 10 / 10 | 5 / 5 | 32 | 9 | 8 | €35 |
-| S2 | `BAK-2` | 0 / 17 | — | — | — | — | — |
+| S2 | [`BAK-2`](05-courses/S2/BAK-2.md) | 17 / 17 | 9 / 9 | 40 | 3 | 16 | €80 |
 | S2 | `BRD-2` | 0 / 11 | — | — | — | — | — |
 | S3 | `SAF-3` | 0 / 5 | — | — | — | — | — |
 | S3 | `FLV-3` | 0 / 14 | — | — | — | — | — |
@@ -214,55 +214,55 @@ row rests on the quiz alone.
 | `IN-STO` | 3 | 3 | 1 · 5 · 0 · 0 |
 | `IN-VEG` | 2 | 3 | 3 · 2 · 0 · 0 |
 | `IN-STA` | 2 | 3 | 4 · 3 · 0 · 0 |
-| `IN-DAI` | 2 | 3 | 2 · 1 · 0 · 0 |
+| `IN-DAI` | 2 | 3 | 2 · 2 · 0 · 0 |
 | `IN-MEA` | 1 | 3 | 0 · 2 · 0 · 0 |
 | `IN-FSH` | 1 | 3 | 0 · 2 · 0 · 0 |
 | `IN-ARO` | 1 | 2 | 1 · 0 · 0 · 0 |
-| `IN-BAK` | – | 3 ✗ | 0 · 0 · 0 · 0 |
+| `IN-BAK` | – | 3 | 0 · 1 · 0 · 0 |
 | `TS-MEP` | 3 | 4 | 1 · 1 · 1 · 0 |
 | `TS-KNF` | 3 | 4 | 4 · 3 · 2 · 0 |
 | `TS-DRY` | 2 | 3 | 3 · 9 · 0 · 0 |
 | `TS-MOI` | 3 | 4 | 0 · 2 · 3 · 0 |
 | `TS-CMB` | – | 2 | 2 · 0 · 0 · 0 |
-| `TS-EGG` | 3 | 4 | 1 · 3 · 1 · 0 |
+| `TS-EGG` | 3 | 4 | 1 · 3 · 2 · 0 |
 | `TS-VEG` | 3 | 4 | 0 · 4 · 3 · 0 |
 | `TS-STA` | 3 | 3 | 1 · 4 · 0 · 0 |
 | `TS-STK` | – | 3 | 0 · 5 · 0 · 0 |
 | `TS-SAU` | – | 3 | 0 · 8 · 0 · 0 |
 | `TS-PRO` | 1 | 3 | 0 · 8 · 0 · 0 |
 | `TS-FAB` | – | 2 | 4 · 0 · 0 · 0 |
-| `TS-BAK` | – | 3 ✗ | 0 · 0 · 0 · 0 |
+| `TS-BAK` | – | 3 | 0 · 6 · 0 · 0 |
 | `TS-BRD` | – | 2 ✗ | 0 · 0 · 0 · 0 |
 | `TS-PLT` | 1 | 2 | 2 · 0 · 0 · 0 |
 | `SC-HEAT` | 2 | 3 | 3 · 2 · 0 · 0 |
 | `SC-BRWN` | 2 | 3 | 1 · 4 · 0 · 0 |
 | `SC-PROT` | 2 | 3 | 1 · 4 · 0 · 0 |
 | `SC-STRC` | 2 (quiz) | 3 | 0 · 1 · 0 · 0 |
-| `SC-EMUL` | 1 | 3 | 0 · 3 · 0 · 0 |
+| `SC-EMUL` | 1 | 3 | 0 · 5 · 0 · 0 |
 | `SC-MICR` | 1 | 3 | 0 · 1 · 0 · 0 |
 | `FL-SENS` | 2 | 3 | 3 · 1 · 0 · 0 |
 | `FL-SEAS` | 2 | 3 | 4 · 2 · 0 · 0 |
-| `FL-TEXT` | 1 | 2 | 2 · 0 · 0 · 0 |
+| `FL-TEXT` | 1 | 2 | 4 · 0 · 0 · 0 |
 | `FL-ARCH` | – | 2 | 2 · 0 · 0 · 0 |
 | `FL-CORR` | 1 | 3 | 0 · 2 · 0 · 0 |
 | `KM-PLAN` | 2 | 3 | 2 · 1 · 0 · 0 |
-| `KM-MATH` | 2 | 3 ✗ | 1 · 0 · 0 · 0 |
+| `KM-MATH` | 2 | 3 | 1 · 1 · 0 · 0 |
 | `KM-PURC` | 1 | 2 | 3 · 0 · 0 · 0 |
 | `KM-WAST` | 2 | 3 | 2 · 3 · 0 · 0 |
-| `KM-EQPT` | 2 | 3 | 3 · 3 · 0 · 0 |
+| `KM-EQPT` | 2 | 3 | 3 · 4 · 0 · 0 |
 | `SA-HYG` | 3 | 4 | 1 · 1 · 5 · 0 |
 | `SA-TEMP` | 3 | 4 | 1 · 3 · 4 · 0 |
 | `SA-PHYS` | 3 | 4 | 0 · 2 · 1 · 0 |
-| `SA-ALLG` | 2 | 3 | 1 · 1 · 0 · 0 |
+| `SA-ALLG` | 2 | 3 | 1 · 2 · 0 · 0 |
 | `SA-HRPR` | – | 1 | 0 · 0 · 0 · 0 |
-| `RD-RATO` | – | 2 | 3 · 0 · 0 · 0 |
+| `RD-RATO` | – | 2 | 4 · 0 · 0 · 0 |
 | `RD-ADPT` | 1 | 2 | 2 · 0 · 0 · 0 |
-| `RD-TEST` | 1 | 2 | 3 · 0 · 0 · 0 |
+| `RD-TEST` | 1 | 2 | 4 · 0 · 0 · 0 |
 | `RD-WRIT` | 2 | 2 | 1 · 0 · 0 · 0 |
 | `JD-CUES` | 2 | 3 | 4 · 3 · 0 · 0 |
 | `JD-CHSE` | 1 | 2 | 2 · 0 · 0 · 0 |
-| `JD-TRBL` | 1 | 3 | 1 · 1 · 0 · 0 |
-| `JD-REFL` | 2 | 3 | 4 · 1 · 0 · 0 |
+| `JD-TRBL` | 1 | 3 | 1 · 3 · 0 · 0 |
+| `JD-REFL` | 2 | 3 | 4 · 2 · 0 · 0 |
 | `CR-COMP` | – | 1 | 0 · 0 · 0 · 0 |
 | `CR-IMPV` | – | 1 | 0 · 0 · 0 · 0 |
 <!-- END generated:reachability -->
@@ -319,14 +319,14 @@ No course, module, lesson, hour, exercise or `Moves` entry has changed.
 | Cast-iron or carbon-steel skillet | 0 | `EQP-1`, `HEA-1`, `MEA-2` |
 | Chef's knife (20 cm) | 0 | `EQP-1`, `KNF-1`, `KNF-2`, `POU-2` |
 | Deep heavy pot for frying | 0 | `HEA-2` |
-| Digital scale (1 g) | 0 | `ORI-1`, `TST-1`, `WRK-1`, `KNF-2`, `SCI-2` |
+| Digital scale (1 g) | 0 | `ORI-1`, `TST-1`, `WRK-1`, `BAK-2`, `KNF-2`, `SCI-2` |
 | Heavy saucepan with a lid | 0 | `STA-1`, `LEG-2`, `SAU-2` |
 | Heavy stainless sauté pan | 0 | `EQP-1`, `HEA-1`, `VEG-1`, `POU-2`, `SAU-2` |
 | Honing steel | 0 | `EQP-1`, `KNF-1` |
 | Instant-read thermometer | 0 | `EGG-1`, `EQP-1`, `HEA-1`, `ORI-1`, `SAF-1`, `FSH-2`, `HEA-2`, `LEG-2`, `MEA-2`, `POU-2`, `SAU-2`, `SCI-2`, `STK-2` |
 | Large stable board | 0 | `EQP-1`, `KNF-1` |
-| Mixing bowls | 0 | `WRK-1`, `SCI-2` |
-| Oven thermometer | 0 | `EQP-1`, `ORI-1` |
+| Mixing bowls | 0 | `WRK-1`, `BAK-2`, `SCI-2` |
+| Oven thermometer | 0 | `EQP-1`, `ORI-1`, `BAK-2` |
 | Paring knife | 0 | `EQP-1`, `KNF-1` |
 | Saucepans | 0 | `EQP-1`, `HEA-1`, `VEG-1`, `SCI-2` |
 | Sheet pan as a tray | 0 | `WRK-1` |
@@ -336,10 +336,16 @@ No course, module, lesson, hour, exercise or `Moves` entry has changed.
 | Stockpot | 0 | `EQP-1`, `FSH-2`, `POU-2`, `STK-2` |
 | Stockpot or large pot | 0 | `STA-1` |
 | Tongs | 0 | `HEA-1` |
+| Bench scraper | 1 | `BAK-2` |
 | Fine sieve | 1 | `EGG-1`, `LEG-2`, `SAU-2`, `SCI-2`, `STK-2` |
 | Frying thermometer | 1 | `HEA-2` |
 | Heavy lidded casserole (*braadpan*) | 1 | `HEA-2`, `LEG-2`, `MEA-2` |
+| Loaf tin | 1 | `BAK-2` |
+| Mixer | 1 | `BAK-2` |
+| Rolling pin | 1 | `BAK-2` |
+| Tart tin | 1 | `BAK-2` |
 | Whetstone | 1 | `KNF-2` |
+| Baking beans | — | `BAK-2` |
 | Balloon whisk | — | `SAU-2` |
 | Blender | — | `STK-2` |
 | Boning knife | — | `KNF-2`, `POU-2` |
@@ -373,18 +379,21 @@ No course, module, lesson, hour, exercise or `Moves` entry has changed.
 | Measuring jug and spoons | — | `WRK-1` |
 | Measuring jugs or bottles (1 l) | — | `TST-1` |
 | Measuring spoons and a pipette | — | `TST-1` |
+| Muffin tin | — | `BAK-2` |
 | Muslin or cheesecloth | — | `LEG-2`, `STK-2` |
 | Non-slip mat or damp towel | — | `KNF-1` |
 | Omelette pan (20 cm) | — | `EGG-1` |
+| Palette knife | — | `BAK-2` |
 | Parchment paper | — | `FSH-2` |
 | Peeler | — | `KNF-1` |
 | pH strips | — | `SCI-2` |
 | Phone stand | — | `KNF-1`, `FSH-2`, `MEA-2`, `POU-2`, `SAU-2` |
 | Potato masher | — | `VEG-1` |
-| Precision scale (0.1 g) | — | `TST-1` |
-| Ramekins | — | `EGG-1` |
+| Precision scale (0.1 g) | — | `TST-1`, `BAK-2` |
+| Ramekins | — | `EGG-1`, `BAK-2` |
 | Roasting rack | — | `HEA-2` |
 | Roasting tin | — | `MEA-2`, `POU-2` |
+| Round cake tins | — | `BAK-2` |
 | Salad spinner | — | `VEG-1` |
 | Seasonal calendar | — | `VEG-1` |
 | Second cutting board for raw protein | — | `SAF-1`, `FSH-2`, `KNF-2`, `MEA-2`, `POU-2` |
@@ -397,7 +406,7 @@ No course, module, lesson, hour, exercise or `Moves` entry has changed.
 | Tasting cups | — | `ORI-1` |
 | Tasting form | — | `TST-1` |
 | Vacuum flask | — | `SAU-2` |
-| Wire rack | — | `HEA-2` |
+| Wire rack | — | `BAK-2`, `HEA-2` |
 | Wooden spoon | — | `STA-1` |
 <!-- END generated:equipment -->
 
