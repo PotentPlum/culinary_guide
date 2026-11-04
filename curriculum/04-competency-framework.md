@@ -252,21 +252,21 @@ Each entry gives the per-stage detail.
 <!-- BEGIN generated:traceability -->
 | Competency | Target | Courses | Modules | Lessons | Exercises | Practical sessions | Re-tests |
 |---|---|---|---|---|---|---|---|
-| `CK-TERM` | 4 | 5 | 6 | 7 | 8 | 6 | 1 |
-| `CK-METH` | 5 | 5 | 8 | 11 | 9 | 9 | 1 |
-| `CK-RCPT` | 4 | 2 | 2 | 4 | 3 | 5 | 1 |
-| `CK-CLAS` | 4 | 3 | 7 | 9 | 10 | 12 | 1 |
-| `CK-CUIS` | 4 | 4 | 14 | 32 | 28 | 40 | 1 |
-| `CK-BEVR` | 3 | 2 | 2 | 5 | 3 | 5 | 2 |
-| `IN-SEL` | 4 | 6 | 6 | 6 | 6 | 7 | 1 |
-| `IN-STO` | 4 | 8 | 9 | 10 | 12 | 9 | 1 |
-| `IN-VEG` | 5 | 7 | 10 | 12 | 11 | 15 | 1 |
-| `IN-STA` | 4 | 4 | 9 | 10 | 13 | 9 | 1 |
-| `IN-DAI` | 4 | 5 | 6 | 8 | 7 | 7 | 1 |
-| `IN-MEA` | 4 | 5 | 8 | 10 | 9 | 9 | 1 |
-| `IN-FSH` | 4 | 4 | 6 | 7 | 9 | 9 | 1 |
-| `IN-ARO` | 4 | 5 | 8 | 10 | 13 | 12 | 1 |
-| `IN-BAK` | 4 | 5 | 7 | 7 | 7 | 8 | 1 |
+| [`CK-TERM`](04-competencies/CK.md#ck-term--kitchen-terminology) | 4 | 5 | 6 | 7 | 8 | 6 | 1 |
+| [`CK-METH`](04-competencies/CK.md#ck-meth--cooking-methods) | 5 | 5 | 8 | 11 | 9 | 9 | 1 |
+| [`CK-RCPT`](04-competencies/CK.md#ck-rcpt--reading-recipes-critically) | 4 | 2 | 2 | 4 | 3 | 5 | 1 |
+| [`CK-CLAS`](04-competencies/CK.md#ck-clas--classical-repertoire) | 4 | 3 | 7 | 9 | 10 | 12 | 1 |
+| [`CK-CUIS`](04-competencies/CK.md#ck-cuis--world-culinary-traditions) | 4 | 4 | 14 | 32 | 28 | 40 | 1 |
+| [`CK-BEVR`](04-competencies/CK.md#ck-bevr--beverages-and-pairing) | 3 | 2 | 2 | 5 | 3 | 5 | 2 |
+| [`IN-SEL`](04-competencies/IN.md#in-sel--selection-quality-and-seasonal-buying) | 4 | 6 | 6 | 6 | 6 | 7 | 1 |
+| [`IN-STO`](04-competencies/IN.md#in-sto--storage) | 4 | 8 | 9 | 10 | 12 | 9 | 1 |
+| [`IN-VEG`](04-competencies/IN.md#in-veg--vegetables-and-fruit) | 5 | 7 | 10 | 12 | 11 | 15 | 1 |
+| [`IN-STA`](04-competencies/IN.md#in-sta--grains-legumes-pasta-rice-and-potatoes) | 4 | 4 | 9 | 10 | 13 | 9 | 1 |
+| [`IN-DAI`](04-competencies/IN.md#in-dai--eggs-and-dairy) | 4 | 5 | 6 | 8 | 7 | 7 | 1 |
+| [`IN-MEA`](04-competencies/IN.md#in-mea--meat-and-poultry) | 4 | 5 | 8 | 10 | 9 | 9 | 1 |
+| [`IN-FSH`](04-competencies/IN.md#in-fsh--fish-and-shellfish) | 4 | 4 | 6 | 7 | 9 | 9 | 1 |
+| [`IN-ARO`](04-competencies/IN.md#in-aro--herbs-spices-aromatics-and-condiments) | 4 | 5 | 8 | 10 | 13 | 12 | 1 |
+| [`IN-BAK`](04-competencies/IN.md#in-bak--baking-ingredients) | 4 | 5 | 7 | 7 | 7 | 8 | 1 |
 | `TS-MEP` | 5 | 5 | 5 | 7 | 8 | 8 | 5 |
 | `TS-KNF` | 5 | 3 | 7 | 17 | 11 | 34 | 4 |
 | `TS-DRY` | 5 | 9 | 14 | 19 | 21 | 30 | 1 |
@@ -286,12 +286,12 @@ Each entry gives the per-stage detail.
 | `TS-PRS` | 3 | 1 | 4 | 8 | 5 | 11 | 1 |
 | `TS-MOD` | 2 | 2 | 5 | 5 | 6 | 9 | 1 |
 | `TS-PLT` | 4 | 7 | 10 | 11 | 10 | 14 | 2 |
-| `SC-HEAT` | 4 | 5 | 8 | 11 | 10 | 11 | 1 |
-| `SC-BRWN` | 4 | 8 | 8 | 9 | 11 | 11 | 1 |
-| `SC-PROT` | 4 | 8 | 9 | 12 | 10 | 9 | 1 |
-| `SC-STRC` | 4 | 6 | 7 | 8 | 7 | 8 | 1 |
-| `SC-EMUL` | 4 | 7 | 9 | 11 | 11 | 18 | 1 |
-| `SC-MICR` | 3 | 5 | 6 | 7 | 7 | 4 | 1 |
+| [`SC-HEAT`](04-competencies/SC.md#sc-heat--heat-transfer-and-equipment) | 4 | 5 | 8 | 11 | 10 | 11 | 1 |
+| [`SC-BRWN`](04-competencies/SC.md#sc-brwn--browning) | 4 | 8 | 8 | 9 | 11 | 11 | 1 |
+| [`SC-PROT`](04-competencies/SC.md#sc-prot--proteins) | 4 | 8 | 9 | 12 | 10 | 9 | 1 |
+| [`SC-STRC`](04-competencies/SC.md#sc-strc--starches-and-gluten) | 4 | 6 | 7 | 8 | 7 | 8 | 1 |
+| [`SC-EMUL`](04-competencies/SC.md#sc-emul--fats-emulsions-foams-and-gels) | 4 | 7 | 9 | 11 | 11 | 18 | 1 |
+| [`SC-MICR`](04-competencies/SC.md#sc-micr--microbiology-and-preservation-hurdles) | 3 | 5 | 6 | 7 | 7 | 4 | 1 |
 | `FL-SENS` | 5 | 6 | 9 | 10 | 13 | 13 | 2 |
 | `FL-SEAS` | 5 | 7 | 9 | 16 | 14 | 20 | 6 |
 | `FL-TEXT` | 4 | 10 | 12 | 13 | 17 | 17 | 2 |
