@@ -178,7 +178,7 @@ evidence record over the stage, not in a single check.
 | S3 | [`GRD-3`](05-courses/S3/GRD-3.md) | 11 / 11 | 6 / 6 | 32 | 12 | 11 | €135 |
 | S3 | [`PRS-3`](05-courses/S3/PRS-3.md) | 10 / 10 | 7 / 7 | 40 | 21 | 12 | €70 |
 | S3 | [`VEG-3`](05-courses/S3/VEG-3.md) | 10 / 10 | 6 / 6 | 24 | 1 | 16 | €80 |
-| S3 | `PST-3` | 0 / 14 | — | — | — | — | — |
+| S3 | [`PST-3`](05-courses/S3/PST-3.md) | 14 / 14 | 7 / 7 | 32 | 3 | 12 | €95 |
 | S3 | `BRD-3` | 0 / 11 | — | — | — | — | — |
 | S3 | `CUI-3` | 0 / 34 | — | — | — | — | — |
 | S3 | `KMG-3` | 0 / 9 | — | — | — | — | — |
@@ -215,25 +215,25 @@ row rests on the quiz alone.
 | `IN-STO` | 3 | 3 | 4 | 1 · 5 · 2 · 0 |
 | `IN-VEG` | 2 | 3 | 4 | 3 · 3 · 2 · 0 |
 | `IN-STA` | 2 | 3 | 4 ✗ | 4 · 3 · 0 · 0 |
-| `IN-DAI` | 2 | 3 | 4 | 2 · 2 · 1 · 0 |
+| `IN-DAI` | 2 | 3 | 4 | 2 · 2 · 2 · 0 |
 | `IN-MEA` | 1 | 3 | 3 | 0 · 3 · 0 · 0 |
 | `IN-FSH` | 1 | 3 | 3 | 0 · 3 · 0 · 0 |
 | `IN-ARO` | 1 | 2 | 4 | 1 · 0 · 3 · 0 |
-| `IN-BAK` | – | 3 | 3 | 0 · 2 · 0 · 0 |
+| `IN-BAK` | – | 3 | 3 | 0 · 3 · 0 · 0 |
 | `TS-MEP` | 3 | 4 | 4 | 1 · 1 · 1 · 0 |
 | `TS-KNF` | 3 | 4 | 4 | 4 · 3 · 2 · 0 |
 | `TS-DRY` | 2 | 3 | 4 | 3 · 9 · 2 · 0 |
 | `TS-MOI` | 3 | 4 | 4 | 0 · 2 · 3 · 0 |
 | `TS-CMB` | – | 2 | 4 | 2 · 0 · 4 · 0 |
 | `TS-FIRE` | – | – | 3 | 1 · 5 · 0 · 0 |
-| `TS-EGG` | 3 | 4 | 4 | 1 · 3 · 2 · 0 |
+| `TS-EGG` | 3 | 4 | 4 | 1 · 3 · 3 · 0 |
 | `TS-VEG` | 3 | 4 | 4 | 0 · 4 · 8 · 0 |
 | `TS-STA` | 3 | 3 | 4 ✗ | 1 · 4 · 0 · 0 |
 | `TS-STK` | – | 3 | 4 ✗ | 0 · 5 · 0 · 0 |
 | `TS-SAU` | – | 3 | 4 | 0 · 8 · 4 · 0 |
 | `TS-PRO` | 1 | 3 | 4 | 0 · 8 · 2 · 0 |
 | `TS-FAB` | – | 2 | 3 | 4 · 3 · 0 · 0 |
-| `TS-BAK` | – | 3 | 4 ✗ | 0 · 6 · 0 · 0 |
+| `TS-BAK` | – | 3 | 4 | 0 · 6 · 6 · 0 |
 | `TS-BRD` | – | 2 | 3 ✗ | 3 · 0 · 0 · 0 |
 | `TS-GRD` | – | – | 3 | 0 · 3 · 0 · 0 |
 | `TS-PRS` | – | – | 3 | 0 · 5 · 0 · 0 |
@@ -242,15 +242,15 @@ row rests on the quiz alone.
 | `SC-HEAT` | 2 | 3 | 4 | 3 · 2 · 2 · 0 |
 | `SC-BRWN` | 2 | 3 | 4 | 1 · 4 · 1 · 0 |
 | `SC-PROT` | 2 | 3 | 4 | 1 · 4 · 2 · 0 |
-| `SC-STRC` | 2 (quiz) | 3 | 4 ✗ | 0 · 2 · 0 · 0 |
-| `SC-EMUL` | 1 | 3 | 3 | 0 · 5 · 0 · 0 |
+| `SC-STRC` | 2 (quiz) | 3 | 4 | 0 · 2 · 1 · 0 |
+| `SC-EMUL` | 1 | 3 | 3 | 0 · 6 · 0 · 0 |
 | `SC-MICR` | 1 | 3 | 3 | 0 · 3 · 0 · 0 |
 | `FL-SENS` | 2 | 3 | 4 | 3 · 1 · 1 · 0 |
 | `FL-SEAS` | 2 | 3 | 4 | 4 · 2 · 1 · 0 |
 | `FL-TEXT` | 1 | 2 | 3 | 4 · 3 · 0 · 0 |
 | `FL-ARCH` | – | 2 | 3 | 2 · 6 · 0 · 0 |
 | `FL-CORR` | 1 | 3 | 4 | 0 · 2 · 1 · 0 |
-| `KM-PLAN` | 2 | 3 | 4 | 2 · 2 · 1 · 0 |
+| `KM-PLAN` | 2 | 3 | 4 | 2 · 2 · 2 · 0 |
 | `KM-MATH` | 2 | 3 | 4 | 1 · 1 · 1 · 0 |
 | `KM-PURC` | 1 | 2 | 4 ✗ | 3 · 1 · 0 · 0 |
 | `KM-WAST` | 2 | 3 | 4 | 2 · 3 · 3 · 0 |
@@ -260,7 +260,7 @@ row rests on the quiz alone.
 | `SA-PHYS` | 3 | 4 | 5 | 0 · 2 · 2 · 2 |
 | `SA-ALLG` | 2 | 3 | 4 ✗ | 1 · 2 · 0 · 0 |
 | `SA-HRPR` | – | 1 | 4 | 0 · 0 · 6 · 0 |
-| `RD-RATO` | – | 2 | 3 | 4 · 3 · 0 · 0 |
+| `RD-RATO` | – | 2 | 3 | 4 · 4 · 0 · 0 |
 | `RD-ADPT` | 1 | 2 | 3 | 2 · 1 · 0 · 0 |
 | `RD-TEST` | 1 | 2 | 3 | 4 · 1 · 0 · 0 |
 | `RD-WRIT` | 2 | 2 | 3 ✗ | 1 · 0 · 0 · 0 |
@@ -334,7 +334,7 @@ No course, module, lesson, hour, exercise or `Moves` entry has been added, remov
 | Heavy saucepan with a lid | 0 | `STA-1`, `LEG-2`, `SAU-2`, `PRS-3` |
 | Heavy stainless sauté pan | 0 | `EQP-1`, `HEA-1`, `VEG-1`, `POU-2`, `SAU-2`, `VEG-3` |
 | Honing steel | 0 | `EQP-1`, `KNF-1` |
-| Instant-read thermometer | 0 | `EGG-1`, `EQP-1`, `HEA-1`, `ORI-1`, `SAF-1`, `BRD-2`, `FSH-2`, `HEA-2`, `LEG-2`, `MEA-2`, `POU-2`, `SAU-2`, `SCI-2`, `STK-2`, `BUT-3`, `GRD-3`, `SAF-3`, `SLW-3` |
+| Instant-read thermometer | 0 | `EGG-1`, `EQP-1`, `HEA-1`, `ORI-1`, `SAF-1`, `BRD-2`, `FSH-2`, `HEA-2`, `LEG-2`, `MEA-2`, `POU-2`, `SAU-2`, `SCI-2`, `STK-2`, `BUT-3`, `GRD-3`, `PST-3`, `SAF-3`, `SLW-3` |
 | Labels and a marker | 0 | `PRS-3`, `SAF-3` |
 | Large stable board | 0 | `EQP-1`, `KNF-1` |
 | Mixing bowls | 0 | `WRK-1`, `BAK-2`, `SCI-2`, `GRD-3` |
@@ -352,15 +352,15 @@ No course, module, lesson, hour, exercise or `Moves` entry has been added, remov
 | Stockpot | 0 | `EQP-1`, `FSH-2`, `POU-2`, `STK-2`, `SAF-3` |
 | Stockpot or large pot | 0 | `STA-1` |
 | Tongs | 0 | `HEA-1` |
-| Baking stone or steel | 1 | `BRD-2` |
+| Baking stone or steel | 1 | `BRD-2`, `PST-3` |
 | Bench scraper | 1 | `BAK-2`, `BRD-2` |
 | Fine sieve | 1 | `EGG-1`, `LEG-2`, `SAU-2`, `SCI-2`, `STK-2`, `SLW-3`, `VEG-3` |
 | Frying thermometer | 1 | `HEA-2` |
 | Heavy lidded casserole (*braadpan*) | 1 | `BRD-2`, `HEA-2`, `LEG-2`, `MEA-2`, `SLW-3`, `VEG-3` |
 | Loaf tin | 1 | `BAK-2`, `BRD-2`, `GRD-3` |
 | Mixer | 1 | `BAK-2` |
-| Rolling pin | 1 | `BAK-2` |
-| Tart tin | 1 | `BAK-2` |
+| Rolling pin | 1 | `BAK-2`, `PST-3` |
+| Tart tin | 1 | `BAK-2`, `PST-3` |
 | Whetstone | 1 | `KNF-2` |
 | Chimney starter | 2 | `FIR-3` |
 | Fermentation jars and weights | 2 | `PRS-3` |
@@ -401,7 +401,7 @@ No course, module, lesson, hour, exercise or `Moves` entry has been added, remov
 | Grill brush | — | `FIR-3` |
 | Grill pan | — | `HEA-2` |
 | Hand towels and dish cloths | — | `SAF-1` |
-| Heatproof bowl for a bain-marie | — | `SAU-2` |
+| Heatproof bowl for a bain-marie | — | `SAU-2`, `PST-3` |
 | Jar lifter and funnel | — | `PRS-3` |
 | Jars with lids | — | `SCI-2` |
 | Journal | — | `ORI-1` |
@@ -418,6 +418,7 @@ No course, module, lesson, hour, exercise or `Moves` entry has been added, remov
 | Measuring spoons and a pipette | — | `TST-1` |
 | Metal ash bucket with a lid | — | `FIR-3` |
 | Mortar and pestle | — | `FLV-3` |
+| Moulds or rings for mousses | — | `PST-3` |
 | Muffin tin | — | `BAK-2` |
 | Muslin or cheesecloth | — | `LEG-2`, `STK-2` |
 | Non-slip mat or damp towel | — | `KNF-1` |
@@ -428,8 +429,10 @@ No course, module, lesson, hour, exercise or `Moves` entry has been added, remov
 | Peeler | — | `KNF-1` |
 | pH strips | — | `SCI-2`, `PRS-3` |
 | Phone stand | — | `KNF-1`, `FSH-2`, `MEA-2`, `POU-2`, `SAU-2`, `BUT-3` |
+| Pie dish | — | `PST-3` |
+| Piping bags and nozzles | — | `PST-3` |
 | Potato masher | — | `VEG-1` |
-| Precision scale (0.1 g) | — | `TST-1`, `BAK-2`, `GRD-3` |
+| Precision scale (0.1 g) | — | `TST-1`, `BAK-2`, `GRD-3`, `PST-3` |
 | Proofing basket | — | `BRD-2` |
 | Ramekins | — | `EGG-1`, `BAK-2` |
 | Roasting rack | — | `HEA-2` |
@@ -447,13 +450,13 @@ No course, module, lesson, hour, exercise or `Moves` entry has been added, remov
 | Spice jars and labels | — | `FLV-3` |
 | Spider or slotted spoon | — | `HEA-2` |
 | Steamer | — | `HEA-1`, `VEG-1`, `FSH-2` |
-| Stick blender | — | `EGG-1`, `SAU-2` |
+| Stick blender | — | `EGG-1`, `SAU-2`, `PST-3` |
 | Stick blender or blender | — | `FLV-3` |
 | Tasting cups | — | `ORI-1` |
 | Tasting form | — | `TST-1` |
 | Vacuum flask | — | `SAU-2` |
 | Weights for pressing | — | `GRD-3` |
-| Wire rack | — | `BAK-2`, `BRD-2`, `HEA-2`, `FLV-3` |
+| Wire rack | — | `BAK-2`, `BRD-2`, `HEA-2`, `FLV-3`, `PST-3` |
 | Wood chunks | — | `FIR-3` |
 | Wooden spoon | — | `STA-1` |
 <!-- END generated:equipment -->
