@@ -533,6 +533,12 @@ class ValidateCurriculumTest(unittest.TestCase):
         )
         self.assertEqual(self.lesson_errors(lesson_doc(extra="Cook it to 71 °C.")), [])
 
+    def test_every_number_of_a_temperature_list_is_checked(self) -> None:
+        self.assertEqual(vc.temperatures("62, 65 and 70 °C; 21–24 °C; −18 °C"), ["62.0", "65.0", "70.0", "21.0", "24.0", "-18.0"])
+        errors = self.lesson_errors(lesson_doc(extra="Hold it at 62, 65 and 70 °C."))
+        self.assertIn("06-lessons/S1/KNF-1.md:29: 62 °C is in neither assessment §9 nor the course file", errors)
+        self.assertIn("06-lessons/S1/KNF-1.md:29: 65 °C is in neither assessment §9 nor the course file", errors)
+
     def test_a_lesson_file_is_final_only_once_its_safety_items_are_agreed(self) -> None:
         self.assertIn(
             "KNF-1: final while 1 safety item(s) are not agreed in the safety review",

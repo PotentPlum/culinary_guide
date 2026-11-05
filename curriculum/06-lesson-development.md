@@ -5,7 +5,7 @@ reader's worksheet is open ([`06-safety-review.md`](06-safety-review.md)). This 
 review answer 4): lesson files are drafts until the reader's log is in (§3). The pilot (`ORI-1` and `SAF-1`, §6) was
 reviewed on 2026-11-05, and its answers are applied (§2, §5, §6.3).
 
-**Courses developed:** ORI-1, SAF-1, WRK-1
+**Courses developed:** ORI-1, SAF-1, WRK-1, EQP-1
 
 This phase writes the lessons that the course files of Phase 5 outline. For each course it gives one lesson file with:
 - every lesson, written for the learner: why it matters, what is needed, the explanation, the practice sessions step
@@ -159,6 +159,8 @@ Changes to an agreed structure are logged here.
 | §9, tier 3 rule | "The Dutch rules on nitrous oxide are to be checked" | Chargers bought for food use, a few at a time; never inhaled | [S50]; pilot review question 4 |
 | 26 course files and `06-lessons/S1/SAF-1.md` | 74 °C and 70 °C as safe core figures | 75 °C; the 24 worksheet rows whose text changed copied again, their verdicts empty | Follows the §9 change |
 | `BAK-2.M4.L4`, Swiss meringue buttercream | "hot, about 70 °C on the probe" | every part at least 71 °C on the probe | It contradicted the egg-thickened desserts row of §9 (71 °C); found while checking the 70 °C mentions |
+| `tools/validate_curriculum.py`, the temperature check (§1.4) | Only the last number of a list ("150, 180 and 220 °C") was read | Every number of a list or range is read, in lesson files and in the allowed figures | A list in a lesson ("62, 65 and 70 °C") would otherwise slip past the check; found with `EQP-1` |
+| `EQP-1.M3.L3`, the thermometer check | "checked in ice water" | "checked in ice water, where it reads 0 °C" | The lesson needs the reading, and figures in lessons come from the course file or §9 |
 
 ## 6. End of the pilot
 

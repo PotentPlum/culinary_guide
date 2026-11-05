@@ -1408,7 +1408,11 @@ COURSES_DEVELOPED_RE = re.compile(r"^\*\*Courses developed:\*\* (.+)$", re.M)
 STATUS_RE = re.compile(r"^\*\*Status:\*\* (draft|final)\b")
 LESSON_DOC_MODULE_RE = re.compile(rf"^## ({COURSE}\.M\d+) — (.+)$")
 LESSON_DOC_UNIT_RE = re.compile(rf"^### ({COURSE}\.M\d+\.[LX]\d+) — (.+)$")
-TEMP_RE = re.compile(r"([−-]?\d+(?:\.\d+)?)(?:\s*[–-]\s*([−-]?\d+(?:\.\d+)?))?\s*°C")
+TEMP_NUMBER = r"[−-]?\d+(?:\.\d+)?"
+# A temperature, a range, or a list that ends in one unit: "75 °C", "21–24 °C", "62, 65 and 70 °C", "60 and 70 °C".
+TEMP_RE = re.compile(
+    rf"(?<![\d.])({TEMP_NUMBER}(?:\s*(?:[–-]|,|,?\s+(?:and|or|to))\s*{TEMP_NUMBER})*)\s*°C"
+)
 
 
 @dataclass
@@ -1424,12 +1428,15 @@ class LessonDoc:
 
 
 def temperatures(text: str) -> list[str]:
-    """Every temperature written as `N °C` or `N–M °C`, normalised (`−18` and `-18` are the same)."""
+    """Every temperature written as `N °C`, `N–M °C` or `N, M and P °C`, normalised (`−18` and `-18` are the same).
+
+    Every number of a range or a list counts, so "62, 65 and 70 °C" is three temperatures, not one.
+    """
     found = []
     for m in TEMP_RE.finditer(text):
-        for g in m.groups():
-            if g is not None:
-                found.append(str(float(g.replace("−", "-"))))
+        # A minus sign right after a digit is a range dash ("21-24"), not a negative number.
+        for value in re.findall(rf"(?:(?<=^)|(?<=[^\d.]))({TEMP_NUMBER})", m.group(1)):
+            found.append(str(float(value.replace("−", "-"))))
     return found
 
 
