@@ -549,7 +549,7 @@ AI review scores the colour and the char. Reference set for Phase 6:
 **Concepts:**
 - **Double-fried chips** (*friet*, the Dutch way):
   - floury potatoes cut evenly, rinsed and dried;
-  - a first fry at a lower temperature until soft but pale;
+  - a first fry at a lower temperature (about 150 °C) until soft but pale;
   - a rest;
   - a second fry at about 180 °C until crisp and golden.
 
@@ -585,7 +585,7 @@ AI review scores the colour and the char. Reference set for Phase 6:
 **Inputs:** 1 kg of floury potatoes; 1.5–2 litres of refined oil; salt.
 
 **Procedure:**
-1. Check the frying thermometer in boiling water and log it.
+1. Check the frying thermometer in boiling water, where it reads about 100 °C, and log it.
 2. Set up and film the station.
 3. Fry twice, logging the oil temperature before and after each batch.
 4. Drain on a rack and salt.
@@ -683,7 +683,8 @@ AI review checks the station against the safety checklist. Reference set for Pha
 <!-- END generated:lesson-hea-2-m5-l1 -->
 
 **Concepts:**
-- **A braise:** large pieces, browned, then cooked covered with liquid partway up, gently, often in a low oven.
+- **A braise:** large pieces, browned, then cooked covered with liquid partway up, gently, often in a low oven (about
+  150 °C).
 - **A stew** (*stoofpot*): smaller pieces, fully covered with liquid.
 - **Why tough cuts need time:** collagen turns to gelatin only after long cooking at a gentle simmer
   (`SCI-2.M2.L1`). A boil tightens the muscle fibres and makes them stringy, so the liquid barely trembles, in a low

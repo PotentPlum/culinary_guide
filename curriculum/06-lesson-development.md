@@ -6,7 +6,7 @@ second reader's worksheet is open ([`06-safety-review.md`](06-safety-review.md))
 reviewed on 2026-11-05, and its answers are applied (§2, §5, §6.3). All ten S1 lesson files are written, and their
 review answers are applied (§7).
 
-**Courses developed:** ORI-1, SAF-1, WRK-1, EQP-1, KNF-1, TST-1, HEA-1, EGG-1, VEG-1, STA-1, SCI-2
+**Courses developed:** ORI-1, SAF-1, WRK-1, EQP-1, KNF-1, TST-1, HEA-1, EGG-1, VEG-1, STA-1, SCI-2, HEA-2
 
 This phase writes the lessons that the course files of Phase 5 outline. For each course it gives one lesson file with:
 - every lesson, written for the learner: why it matters, what is needed, the explanation, the practice sessions step
@@ -167,6 +167,9 @@ Changes to an agreed structure are logged here.
 | `TST-1.M2.X2`, Procedure 2 | "estimated by weighing the salt and the water" | "estimated as about half of its drained weight times the water's strength (about 1 g for 250 g at 10 g/l)" | The method the lesson uses; S1 review answer 2 |
 | `TST-1.M2.X1`, Inputs | 5 litres of stock and 51 g of salt | Also 1 litre and 16 g of salt for the "just right" walk of `TST-1.M2.L2` | The lesson's walk needs its own litre; S1 review answer 2 |
 | `EGG-1.M4.L1`, the Safety concept | Only the stirred custard named | The baked custard probed in the centre, every part at least 71 °C (§9, egg-thickened desserts) | As the lesson already does; S1 review answer 2 |
+| `HEA-2.M4.X1`, the thermometer check | "in boiling water" | "in boiling water, where it reads about 100 °C" | The lesson needs the reading, as for `EQP-1.M3.L3` |
+| `HEA-2.M4.L3`, double-fried chips | "a first fry at a lower temperature" | "a first fry at a lower temperature (about 150 °C)" | The chip recipe needs the figure; 150 °C is the course's own "too cool for a crust" point |
+| `HEA-2.M5.L1`, the braise | "often in a low oven" | "often in a low oven (about 150 °C)" | The braise and the methods lab need an oven setting |
 
 ## 6. End of the pilot
 
