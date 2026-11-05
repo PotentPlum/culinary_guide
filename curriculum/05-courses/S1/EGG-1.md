@@ -559,7 +559,8 @@ the seven elements of `TS-EGG` level 3.
   slight wobble in the centre. It needs several hours to chill.
 - **Rescuing early curdling:** off the heat at once, into a cold bowl, then a stick blender, and strained. This works
   only when caught early.
-- **Safety:** a custard brought to *nappe* is cooked; it is cooled quickly and kept in the fridge (§9).
+- **Safety:** a custard brought to *nappe* is cooked; a baked custard is probed in the centre, every part at least
+  71 °C (§9, egg-thickened desserts). Both are cooled quickly and kept in the fridge (§9).
 
 **Sessions:**
 1. Both custards (2 h active, plus about 4 h chilling): a stirred custard with its temperature logged, and baked

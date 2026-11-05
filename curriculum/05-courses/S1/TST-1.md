@@ -298,7 +298,8 @@ Coded cups and a hidden key, prepared by a helper. The acid series runs on a sec
 exercise so that the level 2 calibration is complete in one module (see the exercise scope notes in the overview, §5).
 
 **Inputs:**
-- **Salt:** 5 litres of unsalted vegetable stock (made from trim or a salt-free base) and 51 g of fine salt.
+- **Salt:** 5 litres of unsalted vegetable stock (made from trim or a salt-free base) and 51 g of fine salt, plus 1
+  litre of the same stock and 16 g of salt for the "just right" walk of `TST-1.M2.L2` (4 to 16 g/l).
 - **Acid:** 5 litres of the same stock salted at 10 g/l, and 50 ml of white-wine vinegar.
 - **Tasting:** 15–20 coded cups.
 
@@ -336,8 +337,8 @@ differs.
 
 **Procedure:**
 1. Cook half in salted water (10 g/l).
-2. Cook half in unsalted water and salt it at the end with the same amount that the first half absorbed (estimated by
-   weighing the salt and the water).
+2. Cook half in unsalted water and salt it at the end with the same amount that the first half absorbed, estimated as
+   about half of its drained weight times the water's strength (about 1 g for 250 g at 10 g/l).
 3. A household member tastes both blind and says which is better seasoned.
 4. The learner writes why.
 

@@ -1,9 +1,10 @@
 # Phase 6 — Lesson development
 
-Status: **S1 ready for review** (2026-11-05, §7). Phase 5 is complete ([its overview](05-course-development.md)). The
+Status: **S2 in progress** (2026-11-05). Phase 5 is complete ([its overview](05-course-development.md)). The
 second reader's worksheet is open ([`06-safety-review.md`](06-safety-review.md)). This phase runs in parallel with it
 (S5 review answer 4): lesson files are drafts until the reader's log is in (§3). The pilot (`ORI-1` and `SAF-1`, §6) was
-reviewed on 2026-11-05, and its answers are applied (§2, §5, §6.3). All ten S1 lesson files are written (§7).
+reviewed on 2026-11-05, and its answers are applied (§2, §5, §6.3). All ten S1 lesson files are written, and their
+review answers are applied (§7).
 
 **Courses developed:** ORI-1, SAF-1, WRK-1, EQP-1, KNF-1, TST-1, HEA-1, EGG-1, VEG-1, STA-1
 
@@ -162,6 +163,10 @@ Changes to an agreed structure are logged here.
 | `tools/validate_curriculum.py`, the temperature check (§1.4) | Only the last number of a list ("150, 180 and 220 °C") was read | Every number of a list or range is read, in lesson files and in the allowed figures | A list in a lesson ("62, 65 and 70 °C") would otherwise slip past the check; found with `EQP-1` |
 | `EQP-1.M3.L3`, the thermometer check | "checked in ice water" | "checked in ice water, where it reads 0 °C" | The lesson needs the reading, and figures in lessons come from the course file or §9 |
 | `EGG-1.M4.L1`, the baked custard | "in a moderate oven" | "in a moderate oven (about 150 °C)" | The lesson's recipe needs an oven setting, and figures in lessons come from the course file or §9 |
+| `STA-1.M4.X1`, Inputs | "a vinaigrette" | "a vinaigrette (about 3 parts oil to 1 part vinegar or lemon, salted, balanced by taste as in `TST-1.M3`)" | No S1 course teaches a vinaigrette; S1 review answer 2 |
+| `TST-1.M2.X2`, Procedure 2 | "estimated by weighing the salt and the water" | "estimated as about half of its drained weight times the water's strength (about 1 g for 250 g at 10 g/l)" | The method the lesson uses; S1 review answer 2 |
+| `TST-1.M2.X1`, Inputs | 5 litres of stock and 51 g of salt | Also 1 litre and 16 g of salt for the "just right" walk of `TST-1.M2.L2` | The lesson's walk needs its own litre; S1 review answer 2 |
+| `EGG-1.M4.L1`, the Safety concept | Only the stirred custard named | The baked custard probed in the centre, every part at least 71 °C (§9, egg-thickened desserts) | As the lesson already does; S1 review answer 2 |
 
 ## 6. End of the pilot
 
@@ -254,11 +259,12 @@ At this rate the remaining stages come to roughly 250,000 words more, less where
    routine is taught in module 4, so the routine is also set out in its Before you start. `TST-1` (tasting rules),
    `HEA-1` (the cue log) and `EGG-1` (the risk-group paragraph) do the same.
 
-### 7.3 Questions for the review
+### 7.3 Questions for the review (review answers, 2026-11-05)
 
 1. **The S1 lessons.** Are they right for a home learner: the level of detail, the recipes, the Dutch seasonal choices?
    I recommend reviewing two or three files closely (`HEA-1`, `EGG-1` and `STA-1` carry the most safety content) and
    the rest by sampling.
+   **Answer:** accepted as written. The files stay drafts until the reader's log is in.
 2. **Gaps found in the course files.** None changes a structure; each is a choice made in the lesson. I recommend
    moving the first four into their course files, with logged edits, and leaving the rest as written:
    - **`STA-1.M4.X1` lists a vinaigrette, but no S1 course teaches one** (it comes in S2). The lesson gives a 3 : 1
@@ -278,12 +284,17 @@ At this rate the remaining stages come to roughly 250,000 words more, less where
      jammy runs and `EGG-1.M2.X1` for two.
    - **Held poached eggs** (`EGG-1.M3`): §9 has no row for soft eggs held in ice water. The lesson says "used the same
      morning; in the fridge if well ahead", without a figure.
+
+   **Answer:** as recommended. The first four are in their course files, logged in §5; the rest stay as written.
 3. **The second reader** (§6.3, answer 4). The worksheet is still at 0 of 278 items, so all ten files stay drafts. Who
    reads it, and when? I recommend starting the reading now with the 48 S1 items, so S1 can be finalised while S2 is
    written.
+   **Answer:** as recommended. The worksheet names the reading order; who reads it is still open.
 4. **S2 next.** I recommend writing S2 in outline order (`SCI-2`, `HEA-2`, `KNF-2`, `STK-2`, `SAU-2`, `POU-2`, `MEA-2`,
    `FSH-2`, `LEG-2`, `BAK-2`, `BRD-2`), one commit per course, and stopping for review at the end of S2, as for S1.
+   **Answer:** as recommended.
 
 ### 7.4 Next
 
-After this review I apply the answers, move the agreed gaps into the course files with logged edits, then write S2.
+The answers are applied. S2 is written in outline order, one commit per course, with a stop for review at the end of
+S2 (§8).
