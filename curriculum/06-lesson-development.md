@@ -5,7 +5,7 @@ Status: **in progress: pilot** (2026-11-05). Phase 5 is complete
 ([`06-safety-review.md`](06-safety-review.md)). This phase starts in parallel with it (S5 review answer 4): lesson
 files are drafts until the reader's log is in (§3). The pilot is `ORI-1` and `SAF-1`, the first two courses of S1.
 
-**Courses developed:** —
+**Courses developed:** ORI-1
 
 This phase writes the lessons that the course files of Phase 5 outline. For each course it gives one lesson file with:
 - every lesson, written for the learner: why it matters, what is needed, the explanation, the practice sessions step
