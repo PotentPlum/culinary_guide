@@ -48,8 +48,8 @@ item. Pass mark 80 %, with every safety item correct.
 <!-- END generated:lesson-hea-1-m1-l1 -->
 
 **Why it matters:** when a dish cooks too fast outside and too slowly inside, or browns on top and stays pale
-underneath, the reason is almost always the way heat is reaching it. Naming the main mode of heat transfer tells you what
-to change: the pan, the shelf, the fan, the distance or the thickness.
+underneath, the reason is almost always the way heat is reaching it. Naming the main mode of heat transfer tells you
+what to change: the pan, the shelf, the fan, the distance or the thickness.
 
 **You need:** this lesson and the journal.
 
@@ -75,9 +75,9 @@ conduction from the tray. Naming the **main** mode at each step explains what to
 - a gratin too pale: radiation, so a higher shelf, closer to the grill.
 
 **Practice:** theory only (1.5 h): for six familiar dishes, write the steps and name the main mode of heat transfer at
-each: pancakes in a pan; boiled potatoes; a chicken roasted in a fan oven; a cauliflower gratin finished under the grill;
-toast under the grill; vegetables sautéed in a wok or pan. For each dish, write one change that would speed it up and
-the mode it works through.
+each: pancakes in a pan; boiled potatoes; a chicken roasted in a fan oven; a cauliflower gratin finished under the
+grill; toast under the grill; vegetables sautéed in a wok or pan. For each dish, write one change that would speed it up
+and the mode it works through.
 
 **Look for:** you can explain why the top of a gratin browns under the grill but its base doesn't.
 
@@ -180,9 +180,10 @@ more juice onto the board.
 
 *Using carryover safely.* You can take a roast out a little below its target and let carryover finish it, but you
 **check after resting with the probe**, and you never assume the rise. For the pork tenderloin, an intact cut, the safe
-core temperature is 63 °C held for 15 seconds ([assessment §9](../../04-assessment.md#9-safety-figures-used-in-assessment)):
-take it out at around 60 °C, rest it, and confirm at least 63 °C before slicing. Poultry is different: it comes out
-only once it has reached 75 °C at the core, and carryover is a bonus, not part of the plan.
+core temperature is 63 °C held for 15 seconds ([assessment
+§9](../../04-assessment.md#9-safety-figures-used-in-assessment)): take it out at around 60 °C, rest it, and confirm at
+least 63 °C before slicing. Poultry is different: it comes out only once it has reached 75 °C at the core, and carryover
+is a bonus, not part of the plan.
 
 **Practice:**
 1. **Measure carryover (45 min, within a meal).** Salt and oil the tenderloin and roast it at 200 °C. Start probing the
@@ -332,8 +333,8 @@ of burning. Quick, high-heat "caramelised" onions are burnt outside and raw insi
 the inside has softened and released its sugar.
 
 **Practice:**
-1. **Onions three ways (60 min).** Slice the onions thinly and divide them into three equal piles, each with a tablespoon
-   of oil and a pinch of salt.
+1. **Onions three ways (60 min).** Slice the onions thinly and divide them into three equal piles, each with a
+   tablespoon of oil and a pinch of salt.
    - **Pan 1, high heat, 10 minutes**, stirred now and then.
    - **Pan 2, moderate heat, 40 minutes**, stirred every few minutes, with a splash of water whenever the fond is deep
      brown.
@@ -353,8 +354,8 @@ bitter.
 | Black spots on the base of the pan | The fond not deglazed, so it burnt | A splash of water whenever the fond is deep brown |
 | Bitter onions | "Darker is better", past the acrid smell | Stop at deep brown, when the smell is still sweet |
 
-**Safety:** pan 3 smokes: extractor on, window open, and take the pan off the heat as soon as it smells acrid. A pan that
-smokes heavily is moved off the heat, not left (`SAF-1.M4.L2`).
+**Safety:** pan 3 smokes: extractor on, window open, and take the pan off the heat as soon as it smells acrid. A pan
+that smokes heavily is moved off the heat, not left (`SAF-1.M4.L2`).
 
 **Record:** the three photos and a tasting line for each. The slow onions go on toast, into a soup or on a burger.
 
@@ -463,8 +464,8 @@ dinners there are, and two of the easiest to spoil: torn skin, burnt skin, or sk
 won by the start in the pan and by patience.
 
 **You need:** for session 1, a skin-on fish fillet per person (mackerel, saithe or farmed sea bass), bought that day;
-for session 2, 2 boneless, skin-on chicken thighs per person; neutral oil; salt; the skillet or a heavy pan; the fish spatula;
-tongs; paper towels; the probe; the cue log.
+for session 2, 2 boneless, skin-on chicken thighs per person; neutral oil; salt; the skillet or a heavy pan; the fish
+spatula; tongs; paper towels; the probe; the cue log.
 
 **Explanation:**
 
@@ -493,11 +494,12 @@ Write the cue first (the fish opaque to the top, the chicken juices clear), then
 1. **A fish fillet (60 min).** Pat the skin dry and salt it. Heat a tablespoon of oil until it shimmers. Lay the fillet
    in skin-side down, away from you, and press for 15 seconds. Cook until the flesh is opaque most of the way up (about
    3–4 minutes), turn, and finish for 30–60 seconds. Write the cue, then probe. Photograph the skin.
-2. **A chicken thigh (60 min).** Pat the thighs dry and salt them. Heat the pan over moderate heat with a teaspoon of oil, and lay
-   them in skin-side down. Leave them for 12–15 minutes, until the skin is deep golden and
+2. **A chicken thigh (60 min).** Pat the thighs dry and salt them. Heat the pan over moderate heat with a teaspoon of
+   oil, and lay them in skin-side down. Leave them for 12–15 minutes, until the skin is deep golden and
    releases. Turn and cook another 8–10 minutes. Cue first, then probe to 75 °C.
 
-**Look for:** the skin crisp and golden over its whole surface; the fish releasing by itself; the probe reading in range.
+**Look for:** the skin crisp and golden over its whole surface; the fish releasing by itself; the probe reading in
+range.
 
 **If it goes wrong:**
 
@@ -507,8 +509,8 @@ Write the cue first (the fish opaque to the top, the chicken juices clear), then
 | Chicken skin black and the fat still under it | Too hot a pan for the chicken | A moderate pan; the fat must render first |
 | Greasy, soft food | Oil too cool, so the food soaks it up | Measure shallow-frying oil: 160–180 °C |
 
-**Safety:** hot oil is never left alone. If it catches fire, cover the pan with its lid or the fire blanket and switch off
-the heat; never water (`SAF-1.M4.L2`). Wash your hands, the board and the tongs after the raw chicken (`SAF-1.M2`).
+**Safety:** hot oil is never left alone. If it catches fire, cover the pan with its lid or the fire blanket and switch
+off the heat; never water (`SAF-1.M4.L2`). Wash your hands, the board and the tongs after the raw chicken (`SAF-1.M2`).
 
 **Record:** both photos and both cue-log entries.
 
@@ -525,8 +527,8 @@ skill is in the timing: turning when the crust is ready and not before, and know
 to burnt.
 
 **You need:** for each session, three or four pieces of one item: halloumi in 1 cm slices, celeriac in 1.5 cm slices, or
-burgers; neutral oil; salt; a heavy stainless pan or the skillet (not non-stick); for session 2, 150 ml of stock or water
-and 10 g of butter; tongs; the probe for burgers.
+burgers; neutral oil; salt; a heavy stainless pan or the skillet (not non-stick); for session 2, 150 ml of stock or
+water and 10 g of butter; tongs; the probe for burgers.
 
 **Explanation:**
 
@@ -581,8 +583,8 @@ minutes until a knife meets no resistance. *Burgers* are minced meat: they must 
 **Why it matters:** the pan tells you what is happening long before the food is ruined, if you listen and look. A cook
 who reads the pan adjusts the heat before anything goes wrong; a cook who watches only the clock finds out afterwards.
 
-**You need:** a simple dinner that uses a pan, for example sautéed vegetables with seared halloumi or a pan-fried chicken
-thigh; the probe; a knife; the cue log.
+**You need:** a simple dinner that uses a pan, for example sautéed vegetables with seared halloumi or a pan-fried
+chicken thigh; the probe; a knife; the cue log.
 
 **Explanation:**
 
@@ -612,9 +614,9 @@ the probe or by cutting a piece, and note whether the cue was right. Over time t
 | Acrid smell | Burning | Off the heat; lift the food out |
 
 **Practice:**
-1. **Cue log (45 min).** Cook the dinner, and stop at four moments: when the fat goes in, when the food goes in, halfway,
-   and when you think it is done. At each, write the cue, the verdict and the action in the cue log; then probe or cut to
-   check, and note whether they agreed.
+1. **Cue log (45 min).** Cook the dinner, and stop at four moments: when the fat goes in, when the food goes in,
+   halfway, and when you think it is done. At each, write the cue, the verdict and the action in the cue log; then probe
+   or cut to check, and note whether they agreed.
 
 **Look for:** at least three of four verdicts confirmed by the check.
 
@@ -626,8 +628,8 @@ the probe or by cutting a piece, and note whether the cue was right. Over time t
 | Smoke before you noticed anything | Ignoring the smell until there is smoke | Act on the first acrid smell |
 | Wet food boiled in its juices | Heat turned up when the food is quiet because it is wet | Take out half the food, and pat the rest dry next time |
 
-**Safety:** a smoking pan comes off the heat at once. If the fat catches fire: lid or fire blanket, heat off, never water
-(`SAF-1.M4.L2`).
+**Safety:** a smoking pan comes off the heat at once. If the fat catches fire: lid or fire blanket, heat off, never
+water (`SAF-1.M4.L2`).
 
 **Record:** the four cue-log entries.
 
@@ -689,8 +691,8 @@ paper towels; your hob map (`EQP-1.M2.X1`); a timer; a phone.
 
 Celeriac needs cooking through after the test: cover the pan over low heat until a knife meets no resistance.
 
-**Show:** the three results side by side, with the notes. It supports `TS-DRY` level 2: even colour and no burning at the
-chosen heat.
+**Show:** the three results side by side, with the notes. It supports `TS-DRY` level 2: even colour and no burning at
+the chosen heat.
 
 **Time:** 30 min.
 
@@ -724,8 +726,8 @@ or a piece of squash; 30 ml oil; salt; a few sprigs of thyme or rosemary; two sh
 - **temperature:** set from your oven table, usually 200–220 °C;
 - **turning:** once, halfway, so two sides colour.
 
-*Mixed trays.* Dense roots (carrot, beetroot, celeriac, parsnip) take longer than onions or squash. Two ways to make them
-finish together:
+*Mixed trays.* Dense roots (carrot, beetroot, celeriac, parsnip) take longer than onions or squash. Two ways to make
+them finish together:
 - **cut them smaller:** dense roots in 2 cm pieces, onion and squash in 3–4 cm wedges;
 - **start them earlier:** the dense roots go in first, the onion and squash 10–15 minutes later.
 
@@ -737,8 +739,9 @@ is only a guide.
 **Practice:**
 1. **A tray of roots (75 min).** Heat the oven to the setting from your table. Cut the dense roots into 2 cm pieces and
    the onion and squash into wedges. Toss the dense roots with two-thirds of the oil and some salt, spread them over the
-   sheet pans with space between, and roast. After 15 minutes, add the onion and squash, tossed with the rest of the oil.
-   Turn everything halfway, add the herbs for the last 10 minutes, and test each kind with the knife. Photograph the tray.
+   sheet pans with space between, and roast. After 15 minutes, add the onion and squash, tossed with the rest of the
+   oil. Turn everything halfway, add the herbs for the last 10 minutes, and test each kind with the knife. Photograph
+   the tray.
 
 **Look for:** browned edges, tender centres, no burnt small pieces.
 
@@ -887,8 +890,8 @@ evenly, so the outside isn't overcooked by the time the centre is done.
 **Practice:**
 1. **Read the bubbles (45 min).** Put the water on a medium heat with the thermometer in it, its tip in the middle of
    the water. As it heats, stop at each range: first write what the surface looks like and which range you think it is,
-   then read the thermometer. Photograph the surface at each. Then let it come to a full boil, turn it down, and find the
-   setting that holds a simmer.
+   then read the thermometer. Photograph the surface at each. Then let it come to a full boil, turn it down, and find
+   the setting that holds a simmer.
 
 **Look for:** you name the range from the surface alone, then confirm it with the thermometer.
 
@@ -1026,8 +1029,8 @@ and that releases a lot of heat at once, so steaming transfers heat fast. The fo
 <!-- END generated:lesson-hea-1-m5-l4 -->
 
 **Why it matters:** a chicken breast is lean and dries out easily. Poached gently in a flavoured liquid, held below a
-simmer, it stays juicy from edge to centre, and the liquid becomes a soup. It is also the first time you hold a liquid at
-a set temperature for a whole cooking time.
+simmer, it stays juicy from edge to centre, and the liquid becomes a soup. It is also the first time you hold a liquid
+at a set temperature for a whole cooking time.
 
 **You need:** 2 chicken breasts, about 200 g each; for the court bouillon: 1.5 litres of water, 1 onion, 1 carrot, 1
 celery stick, a bay leaf, a few parsley stalks, 10 peppercorns, 15 g of salt and 30 ml of white-wine vinegar; a
@@ -1055,10 +1058,10 @@ soup.
 
 **Practice:**
 1. **Poach (75 min).** Put the water, the roughly chopped vegetables, herbs, peppercorns, salt and vinegar in the
-   saucepan, and simmer for 15 minutes. Turn the heat down and let it settle to the poaching range. Put in the breasts and
-   bring the liquid to about 75–80 °C. Log the liquid temperature every 5 minutes, adjusting the burner to stay in range.
-   After 20 minutes, check by the cue, then probe. Lift the breasts out at 75 °C at the core and rest them briefly before
-   slicing.
+   saucepan, and simmer for 15 minutes. Turn the heat down and let it settle to the poaching range. Put in the breasts
+   and bring the liquid to about 75–80 °C. Log the liquid temperature every 5 minutes, adjusting the burner to stay in
+   range. After 20 minutes, check by the cue, then probe. Lift the breasts out at 75 °C at the core and rest them
+   briefly before slicing.
 
 **Look for:** the liquid held without bubbles; the breast juicy, and 75 °C at the core.
 
@@ -1070,8 +1073,8 @@ soup.
 | Dry outside, underdone centre | Starting it in boiling liquid | Start in warm liquid and bring it up gently |
 | Unknown safety | Not probing | Probe the thickest part: 75 °C |
 
-**Safety:** chicken to 75 °C at the core (§9). Wash your hands and the board after the raw chicken (`SAF-1.M2`). Cool the
-strained bouillon and put it in the fridge within 2 hours; use it within 2 days.
+**Safety:** chicken to 75 °C at the core (§9). Wash your hands and the board after the raw chicken (`SAF-1.M2`). Cool
+the strained bouillon and put it in the fridge within 2 hours; use it within 2 days.
 
 **Record:** the liquid temperature log, the cue and the core reading.
 
@@ -1135,13 +1138,13 @@ beetroot and green beans (or kale in winter).
 *framework, framework* — Poached chicken with blanched and steamed vegetables.
 <!-- END generated:exercise-hea-1-m5-x1 -->
 
-**Task:** three moist-heat methods in one dinner, each with the liquid temperature measured, without a recipe. You choose
-the vegetables by season.
+**Task:** three moist-heat methods in one dinner, each with the liquid temperature measured, without a recipe. You
+choose the vegetables by season.
 
 **You need:** for 2–3: two chicken breasts; aromatics for the court bouillon (onion, carrot, celery, bay, parsley
-stalks, peppercorns), salt and vinegar; a green vegetable for blanching (beans or broccoli, or peas in summer); a root or
-cabbage for steaming; butter; three pans and a steamer; a bowl of ice water; the thermometer and the probe; a timer; the
-cue log.
+stalks, peppercorns), salt and vinegar; a green vegetable for blanching (beans or broccoli, or peas in summer); a root
+or cabbage for steaming; butter; three pans and a steamer; a bowl of ice water; the thermometer and the probe; a timer;
+the cue log.
 
 **Framework:** three methods on one timeline.
 

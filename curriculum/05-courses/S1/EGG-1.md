@@ -554,9 +554,9 @@ the seven elements of `TS-EGG` level 3.
 - **A stirred custard** (*crème anglaise*) is milk or cream, yolks and sugar, cooked gently while stirring until it
   coats the back of a spoon and a finger drawn through it leaves a clean line (*nappe*). That is at about 80–84 °C.
   Above that it curdles.
-- **A baked custard** (a *crème caramel* or a *flan*) sets in a water bath in a moderate oven. The water keeps the heat
-  gentle and even, so the custard sets smooth, without bubbles or a curdled edge, and keeps a slight wobble in the
-  centre. It needs several hours to chill.
+- **A baked custard** (a *crème caramel* or a *flan*) sets in a water bath in a moderate oven (about 150 °C). The
+  water keeps the heat gentle and even, so the custard sets smooth, without bubbles or a curdled edge, and keeps a
+  slight wobble in the centre. It needs several hours to chill.
 - **Rescuing early curdling:** off the heat at once, into a cold bowl, then a stick blender, and strained. This works
   only when caught early.
 - **Safety:** a custard brought to *nappe* is cooked; it is cooled quickly and kept in the fridge (§9).

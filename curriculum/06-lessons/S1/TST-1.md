@@ -28,9 +28,10 @@ samples or to taste blind, so plan them on evenings when someone is home. The so
 - A clean spoon for every taste, never back into the pot (`SAF-1`).
 - Write as you taste, not afterwards.
 
-**Have ready:** the 1 g kitchen scale (`ORI-1`); measuring spoons and, if you have one, a dropper or pipette; five 1-litre
-jugs or clean bottles; 20 small glasses or cups with removable codes (masking tape and a pen); printed tasting forms and
-key sheets; plain crackers and a jug of water; a notebook; a household member who will code samples and taste blind.
+**Have ready:** the 1 g kitchen scale (`ORI-1`); measuring spoons and, if you have one, a dropper or pipette; five
+1-litre jugs or clean bottles; 20 small glasses or cups with removable codes (masking tape and a pen); printed tasting
+forms and key sheets; plain crackers and a jug of water; a notebook; a household member who will code samples and taste
+blind.
 
 ## TST-1.M1 — How we taste
 
@@ -45,8 +46,8 @@ key sheets; plain crackers and a jug of water; a notebook; a household member wh
 <!-- END generated:lesson-tst-1-m1-l1 -->
 
 **Why it matters:** "it needs something" is not a diagnosis. Before you can fix a dish you need to know where an
-impression comes from: the tongue, the nose, or the nerves of touch and pain. Each has its own levers, and confusing them
-leads to the wrong fix, such as more salt for a dish that lacks aroma.
+impression comes from: the tongue, the nose, or the nerves of touch and pain. Each has its own levers, and confusing
+them leads to the wrong fix, such as more salt for a dish that lacks aroma.
 
 **You need:** 3 fruit sweets or a spoon each of 3 jams of different flavours; a piece of mature cheese; a sprig of a
 herb such as dill or parsley; a mint leaf; a small fresh chilli; a glass of sparkling water; water and plain crackers; a
@@ -63,8 +64,8 @@ strawberry sweet and a lemon sweet taste almost alike: sweet and a little sour, 
 arrives [S18]. This is why food tastes of little when you have a cold.
 
 *Trigeminal sensations.* The burn of chilli, the cool of mint, the tingle of carbonation and the bite of mustard are not
-tastes. They are sensed by the nerves of touch and pain in the mouth and nose. They build and fade at their own pace, and
-they can drown out the tastes for a while.
+tastes. They are sensed by the nerves of touch and pain in the mouth and nose. They build and fade at their own pace,
+and they can drown out the tastes for a while.
 
 *Texture and temperature.* They change what you perceive.
 - Warmth increases sweetness and aroma; cold mutes them. A sauce that is balanced hot can taste sharp when cold.
@@ -75,9 +76,9 @@ So taste a dish at the temperature at which it will be served.
 
 **Practice:**
 1. **Nose-pinch test (45 min).** For each sweet or jam: pinch your nose, chew, and write what you notice; then let go
-   and write what arrives. Do the same with the cheese and the herb. Then taste the mint leaf, a thin slice of the chilli
-   and a sip of the sparkling water, and write what each one does: hot, cold, tingling, and how long it lasts. Water and
-   a cracker between samples; the chilli last, because its burn lingers.
+   and write what arrives. Do the same with the cheese and the herb. Then taste the mint leaf, a thin slice of the
+   chilli and a sip of the sparkling water, and write what each one does: hot, cold, tingling, and how long it lasts.
+   Water and a cracker between samples; the chilli last, because its burn lingers.
 
 **Look for:** for each food, three columns filled in: what came from the tongue, what from the nose, and what was touch
 or pain.
@@ -126,8 +127,8 @@ crackers; a household member with their own forms.
 Smell comes before taste because the first sniff is the clearest; after a few bites the nose tires.
 
 *The tasting form.* One line per stage. Under it, a balance score from "needs a lot" through "needs a little" to "just
-right", and a line for what you would change. Fill it in while you taste, not afterwards: memory smooths impressions into
-"nice".
+right", and a line for what you would change. Fill it in while you taste, not afterwards: memory smooths impressions
+into "nice".
 
 *A shared vocabulary.* Words that you and your tasters use the same way: **flat, bright, round, sharp, heavy, clean,
 muddy**, plus the five tastes and words for texture (crisp, creamy, grainy, chewy). "Nice" and "good" say what you think
@@ -282,9 +283,9 @@ if not, it was a guess [S20].
 
 **Practice:**
 1. **The series (90 min).** The "just right" walk first: the helper salts the litre at 4 g/l, warms it, and gives you a
-   cup; then adds 2 g at a time, to 16 g/l, giving you a cup at each step without telling you the level. Mark each cup on
-   the form as flat, full or too salty, and choose your "just right". Then run the ranking test of `TST-1.M2.X1`, and the
-   triangle trials if time allows.
+   cup; then adds 2 g at a time, to 16 g/l, giving you a cup at each step without telling you the level. Mark each cup
+   on the form as flat, full or too salty, and choose your "just right". Then run the ranking test of `TST-1.M2.X1`, and
+   the triangle trials if time allows.
 
 **Look for:** the ranking passed; your "just right" between about 8 and 12 g/l, and close to the tasters' choice.
 
@@ -415,8 +416,8 @@ colander; two plates marked underneath; a household member.
 **Recipe:**
 1. **Prepare.** Top the beans, or peel the carrots and cut them into even rounds about 1 cm thick. Divide them into two
    equal halves by weight.
-2. **Pan A, salted early.** 1 litre of water with 10 g of salt. Bring to the boil and cook half A until just tender (beans
-   about 5–7 minutes, carrots about 10). Drain and weigh.
+2. **Pan A, salted early.** 1 litre of water with 10 g of salt. Bring to the boil and cook half A until just tender
+   (beans about 5–7 minutes, carrots about 10). Drain and weigh.
 3. **Pan B, salted late.** 1 litre of unsalted water, the same cooking time. Drain.
 4. **Estimate the salt that A absorbed.** Vegetables cooked in salted water end up less salty than the water itself, so
    A's drained weight times the water's strength is the most it can hold (250 g × 10 g/l = 2.5 g). Take about half of
@@ -470,8 +471,8 @@ Too much tastes sharp, thin, or harsh at the back of the throat.
 - **buttermilk, yoghurt and fermented vegetables** such as sauerkraut: a soft, rounded sour;
 - **sour apples**, grated into a salad or a stew.
 
-*Adding in steps.* A few drops, stir, taste; then a few more. Acid added late keeps its freshness; boiled for a long time,
-vinegar loses its aroma and leaves only sharpness.
+*Adding in steps.* A few drops, stir, taste; then a few more. Acid added late keeps its freshness; boiled for a long
+time, vinegar loses its aroma and leaves only sharpness.
 
 *Salt first, then acid.* A dish that lacks salt also tastes flat, and acid will not fix it. Check the salt first.
 
@@ -481,7 +482,8 @@ vinegar loses its aroma and leaves only sharpness.
    until the soup turns sharp. For each acid, note the step at which the soup went from flat to bright, and from bright
    to sharp.
 
-**Look for:** the moment the soup suddenly "opens up" with a few drops; that point noted in drops per bowl, for each acid.
+**Look for:** the moment the soup suddenly "opens up" with a few drops; that point noted in drops per bowl, for each
+acid.
 
 **If it goes wrong:**
 
@@ -512,8 +514,8 @@ bowls; the tasting form; a watch with seconds.
 
 **Explanation:**
 
-*Fat carries flavour.* Many aroma compounds dissolve better in fat than in water. Fat holds them and releases them slowly
-as you eat, so a dish with a little fat tastes rounder, and its flavour lasts longer after you swallow.
+*Fat carries flavour.* Many aroma compounds dissolve better in fat than in water. Fat holds them and releases them
+slowly as you eat, so a dish with a little fat tastes rounder, and its flavour lasts longer after you swallow.
 
 *Mouthfeel.* Fat coats the mouth. It softens sharp acid and bitterness and makes a thin soup feel fuller.
 
@@ -529,8 +531,8 @@ heavier. Too much fat dulls a dish: the flavours blur and the finish turns greas
 **Practice:**
 1. **Finish with fat (45 min).** Pour four bowls of about 180 ml. Keep one plain. Finish the others with 1 teaspoon of
    oil, 10 g of butter stirred in, and 1 tablespoon of crème fraîche. Taste all four side by side with the form. For
-   each, count the seconds the flavour stays after swallowing. Then add a second dose to one bowl and taste what too much
-   does.
+   each, count the seconds the flavour stays after swallowing. Then add a second dose to one bowl and taste what too
+   much does.
 
 **Look for:** the fat-finished bowls taste rounder and their flavour lasts longer than the plain one; the double dose
 tastes heavier, not better.
@@ -684,8 +686,8 @@ watch with seconds; the tasting form; a little yoghurt.
 *Chilli heat (capsaicin)* dissolves in fat, not in water. It builds in the mouth over a minute and lingers. A sip of
 water spreads it; yoghurt, milk or another fat-rich food soothes it.
 
-*Black pepper (piperine)* is sharp and warming, with a fresh, woody aroma. The aroma fades with long cooking, so pepper is
-ground fresh and added late.
+*Black pepper (piperine)* is sharp and warming, with a fresh, woody aroma. The aroma fades with long cooking, so pepper
+is ground fresh and added late.
 
 *Mustard, horseradish and radish* owe their bite to volatile compounds that flash up the nose and fade within seconds.
 They weaken with heat, so mustard is stirred into a sauce off the heat, and horseradish is grated just before serving.
@@ -702,8 +704,8 @@ one.
 **Practice:**
 1. **Heat in steps (45 min).** Pour four bowls of about 180 ml. Keep one plain. Add to each of the others in measured
    steps: a pinch of chilli flakes; two turns of the pepper mill; a quarter teaspoon of mustard, stirred in. After each
-   step, wait a minute and taste. Note on the form the step at which each became noticeable, the step at which it was too
-   much, and how many seconds the heat lasted after swallowing.
+   step, wait a minute and taste. Note on the form the step at which each became noticeable, the step at which it was
+   too much, and how many seconds the heat lasted after swallowing.
 
 **Look for:** you can say how each heat behaves (builds, lingers or flashes) and where "just enough" lies, in steps per
 bowl.
@@ -716,7 +718,8 @@ bowl.
 | The mustard sauce tastes of nothing | Mustard boiled in, so its bite was lost | Stir it in off the heat |
 | The pepper tastes dusty | Pre-ground pepper, or added early | Grind fresh, add late |
 
-**Safety:** wash your hands after handling chilli, and don't touch your eyes. A spoon of yoghurt soothes a burning mouth.
+**Safety:** wash your hands after handling chilli, and don't touch your eyes. A spoon of yoghurt soothes a burning
+mouth.
 
 **Record:** the form, with the steps to "noticeable" and "too much", and the seconds each heat lasted.
 
@@ -800,8 +803,8 @@ the pot (`SAF-1`).
 
 **Practice:**
 1. **Checkpoints (45 min).** Write the six checkpoints on the plan. Sweat the sliced leeks and onion in the butter, add
-   the diced potato, the stock and the 5 g of salt, and simmer uncovered for about 25 minutes, then blend. Taste and note
-   at each checkpoint, but adjust only once, before serving. Taste once more on the plate.
+   the diced potato, the stock and the 5 g of salt, and simmer uncovered for about 25 minutes, then blend. Taste and
+   note at each checkpoint, but adjust only once, before serving. Taste once more on the plate.
 
 **Look for:** the notes changing across the checkpoints the way the theory predicts: saltier and fuller after the
 reduction; one adjustment at the end.
@@ -864,7 +867,8 @@ for another: too salty becomes salty and sharp.
 At the next monthly calibration evening, ask the helper for the faults you didn't have this time, so that you have met
 all five.
 
-**Look for:** the diagnosis written before the first correction, and right; the corrected samples close to the reference.
+**Look for:** the diagnosis written before the first correction, and right; the corrected samples close to the
+reference.
 
 **If it goes wrong:**
 
@@ -981,9 +985,9 @@ small spoons; a die and a coin; key sheets; water and crackers.
 **Recipe:**
 1. **Write the question** and the decision it will lead to: "Does butter make my mash better than oil? If no one can
    tell, I'll use whichever is at hand."
-2. **Make the two versions.** Boil the peeled potatoes in salted water until tender, drain and mash. Divide into two equal
-   halves. Into one, beat 50 ml of warm milk and the butter; into the other, 50 ml of warm milk and the oil. The same
-   salt, the same texture.
+2. **Make the two versions.** Boil the peeled potatoes in salted water until tender, drain and mash. Divide into two
+   equal halves. Into one, beat 50 ml of warm milk and the butter; into the other, 50 ml of warm milk and the oil. The
+   same salt, the same texture.
 3. **The helper codes** two bowls, keeps the key, and for each trial rolls the die for the odd cup's position (1–2
    left, 3–4 middle, 5–6 right) and tosses the coin for which version is odd.
 4. **Run six trials per taster,** with a sip of water between them. Each taster writes the code of the cup they think is
@@ -997,6 +1001,6 @@ detectable difference, is a further calibration point for `FL-SENS` level 2.
 **Time:** 1 h; the mash is part of dinner.
 
 **After the course.** Repeat the salt and acid ranking tests of `TST-1.M2.X1` every month for the rest of S1, on an
-evening when the helper is home; they keep your tasting forms valid ([assessment §5.5](../../04-assessment.md#55-validity)).
-At `MS-S1` the full series is repeated as part of the milestone, and your form for the meal is compared with the
-tasters' cards.
+evening when the helper is home; they keep your tasting forms valid ([assessment
+§5.5](../../04-assessment.md#55-validity)). At `MS-S1` the full series is repeated as part of the milestone, and your
+form for the meal is compared with the tasters' cards.
