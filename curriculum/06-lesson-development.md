@@ -1,10 +1,10 @@
 # Phase 6 — Lesson development
 
-Status: **S2 lessons ready for review** (2026-11-05). Phase 5 is complete ([its overview](05-course-development.md)).
-The second reader's worksheet is open ([`06-safety-review.md`](06-safety-review.md)). This phase runs in parallel with
-it (S5 review answer 4): lesson files are drafts until the reader's log is in (§3). The pilot (`ORI-1` and `SAF-1`, §6)
-was reviewed on 2026-11-05, and its answers are applied (§2, §5, §6.3). All ten S1 lesson files are written, and their
-review answers are applied (§7). All eleven S2 lesson files are written (§8).
+Status: **S3 in progress** (2026-11-05). Phase 5 is complete ([its overview](05-course-development.md)). The second
+reader's worksheet is open ([`06-safety-review.md`](06-safety-review.md)). This phase runs in parallel with it (S5
+review answer 4): lesson files are drafts until the reader's log is in (§3). The pilot (`ORI-1` and `SAF-1`, §6) was
+reviewed on 2026-11-05, and its answers are applied (§2, §5, §6.3). All ten S1 lesson files are written, and their
+review answers are applied (§7). All eleven S2 lesson files are written, and their review answers are applied (§8).
 
 **Courses developed:** ORI-1, SAF-1, WRK-1, EQP-1, KNF-1, TST-1, HEA-1, EGG-1, VEG-1, STA-1, SCI-2, HEA-2, KNF-2, STK-2, SAU-2, POU-2, MEA-2, FSH-2, LEG-2, BAK-2, BRD-2
 
@@ -171,6 +171,17 @@ Changes to an agreed structure are logged here.
 | `HEA-2.M4.L3`, double-fried chips | "a first fry at a lower temperature" | "a first fry at a lower temperature (about 150 °C)" | The chip recipe needs the figure; 150 °C is the course's own "too cool for a crust" point |
 | `HEA-2.M5.L1`, the braise | "often in a low oven" | "often in a low oven (about 150 °C)" | The braise and the methods lab need an oven setting |
 | `SAU-2`, Assessment criteria | "or kept beyond 2 days" | "or kept beyond 24 hours" | The §9 raw-egg row and `SAU-2.M4.L2` keep a raw-yolk sauce at most 24 hours; the criteria said 2 days |
+| `STK-2.M4.L2`, the *liaison* | "stirred in off the heat" | Also "brought back to at least 71 °C on the probe without boiling (the egg-thickened row of assessment §9)" | The lesson's safety step; S2 review answer 2 |
+| `STK-2.M3.L1`, the *heldere soep* | "meatballs" | "meatballs, simmered until the probe reads 75 °C (minced meat, assessment §9)" | As the lesson does; S2 review answer 2 |
+| `POU-2.M5.L2`, the giblets | "the liver for a pâté or a pan sauce" | Also "cooked to 75 °C (poultry offal, assessment §9)" | As the lesson does; S2 review answer 2 |
+| `BAK-2.M3.X1` and `BAK-2.M5.L2`, the quiche and the baked custard | Judged by the wobble only | Also probed in the centre to at least 71 °C (the egg-thickened row of §9, whose source covers dishes containing eggs) | As `EGG-1.M4.L1` does; S2 review answer 2 |
+| `BRD-2.M3.L1`, Safety | Gloves, paper, no water on glass | Also the lid lifted away from you, the water poured with the arm clear of the steam, a metal or ovenproof knob | The lesson's loading rules; S2 review answer 2 |
+| `POU-2.M1.L1`, labels | "free range (*scharrel*, *vrije uitloop*)" | "free range (*vrije uitloop*); *scharrel*, indoor housing with more space than standard" | *Scharrel* is not free range; S2 review answer 3 |
+| `FSH-2.M4.L2`, grey shrimp | "*garnalenkroketten* filling, shrimp on toast, or a stuffed tomato" | "shrimp on toast, or a stuffed tomato" | A croquette needs a thick roux and deep-frying; as the lesson; S2 review answer 3 |
+| `SCI-2.M4.L2` and the `SCI-2` budget | "a quick mayonnaise from one yolk"; "eggs" | "one pasteurised yolk (the raw-egg row of assessment §9)"; "pasteurised egg yolks" | The §9 raw-egg rule; S2 review answer 3 |
+| `SAU-2.M4.L1`, by blender | "a whole egg" | "a whole pasteurised egg (from a carton, about 50 g)" | The §9 raw-egg rule; S2 review answer 3 |
+| `KNF-2.M1.L1` and the `TS` tolerances | No size for *chiffonade* | Ribbons 1–2 mm wide | `TS-KNF` level 4 asks for it "within range"; S2 review answer 3 |
+| `KNF-2.M3.L2`, the edge log | "a self-score" | "a self-score in four bands: 1 tears the paper, 2 catches, 3 slices with a few catches, 4 slices cleanly" | The bands the lesson and the AI review use; S2 review answer 3 |
 
 ## 6. End of the pilot
 
@@ -348,10 +359,11 @@ words.
 6. **No unsourced claims.** Statements such as "the most eaten meat" or shelf lives without a source were taken out
    while writing.
 
-### 8.3 Questions for the review
+### 8.3 Questions for the review (review answers, 2026-11-05)
 
 1. **The S2 lessons.** Are they right for a home learner? I recommend reviewing three files closely and sampling the
    rest. The three are `SAU-2` (raw and warm egg), `POU-2` (poultry) and `BAK-2` (custards and creams).
+   **Answer:** as recommended. The files stay drafts until the reader's log is in.
 2. **Safety readings the course files don't state.** I recommend moving each into its course file as a logged edit:
    - **`STK-2.M4.L2`:** a soup thickened with a liaison is heated to at least 71 °C without boiling. The lesson takes
      this from the egg-thickened row of §9, by analogy.
@@ -361,6 +373,10 @@ words.
      (the poultry-offal row).
    - **`BRD-2.M3.L1` adds loading rules:** the lid is lifted away from you, the water is poured with your arm clear of
      the steam, and the pot has an ovenproof knob. Check them against the module's two safety items.
+
+   **Answer:** as recommended. All four are in their course files (§5). §9 is unchanged: its egg-thickened row cites
+   a source that covers dishes containing eggs [S38], and the `BAK-2` course file now says so, so the worksheet's row
+   mapping stays as it is.
 3. **Corrections to course files:**
    - **`POU-2.M1.L1`** groups *scharrel* with free range, but *scharrel* is indoor housing; the lesson separates them.
    - **`FSH-2`** names a *garnalenkroket*. The lesson replaces it with shrimp on toast or a stuffed tomato, because a
@@ -371,8 +387,12 @@ words.
      adding a range (for example 1–2 mm ribbons) and the four bands.
    - **`POU-2.M6`:** the brining comparison keeps the course file's unsalted control. A control salted just before
      roasting would test the timing of the salt; is that the better design?
+
+   **Answer:** the first four as recommended, logged in §5; the chiffonade range is also in the `TS` tolerances. The
+   croquette is dropped from `FSH-2`, as in the lesson. The brining control stays unsalted.
 4. **Oven figures.** I recommend keeping the oven-table references in `STK-2` and `MEA-2`. A figure would have to be
    checked against a source first, and the learner's own oven table is already the course's method (`EQP-1.M2.X1`).
+   **Answer:** as recommended.
 5. **Quantities chosen in the lessons.** I recommend leaving these in the lessons, since each course file hands them to
    Phase 6:
    - the `SCI-2` starch, brine and dough ratios;
@@ -384,14 +404,20 @@ words.
    - the `LEG-2` comparison pots and the *paneer*;
    - the `BAK-2` formulas, oven settings and the milk-free swap;
    - the `BRD-2` formulas (the lean loaf at 68 %, the soft rolls).
+
+   **Answer:** as recommended.
 6. **Materials still to make:** the reference images for the AI review of every course, and the five photos of faulty
    cakes for `BAK-2.M4.L3`. I recommend making them while the bakes are tested, before Phase 7.
+   **Answer:** as recommended.
 7. **The second reader.** The worksheet is still at 0 of 278 items, so all 21 files stay drafts. I recommend reading
    the 48 S1 items and then the 62 S2 items, so both stages can be finalised together.
+   **Answer:** as recommended. The worksheet names the reading order; who reads it is still open.
 8. **S3 next.** I recommend writing S3 in outline order (`SAF-3`, `FLV-3`, `BUT-3`, `SLW-3`, `FIR-3`, `GRD-3`, `PRS-3`,
    `VEG-3`, `PST-3`, `BRD-3`, `CUI-3`, `KMG-3`, `NUT-3`), one commit per course, and stopping for review at the end of
    S3. It has 107 safety items, the most of any stage.
+   **Answer:** as recommended.
 
 ### 8.4 Next
 
-Waiting for the answers to §8.3.
+The answers are applied. S3 is written in outline order, one commit per course, with a stop for review at the end of
+S3 (§9).

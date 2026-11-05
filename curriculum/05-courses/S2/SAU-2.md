@@ -637,8 +637,8 @@ weighs every ingredient and logs the weights. The poached chicken is cooked to t
   - **rate:** the oil goes in drop by drop until the emulsion forms, then in a thin stream. Too much oil too early
     floods the emulsifier.
 - **By hand:** a bowl on a damp cloth, a whisk, and the oil from a jug with a spout.
-- **By blender:** a whole egg in a narrow beaker with a stick blender, the oil on top; the blender drawn up slowly.
-  It is faster and more forgiving, and gives a lighter, paler sauce.
+- **By blender:** a whole pasteurised egg (from a carton, about 50 g) in a narrow beaker with a stick blender, the oil
+  on top; the blender drawn up slowly. It is faster and more forgiving, and gives a lighter, paler sauce.
 - **Rescuing a broken mayonnaise:** start again with a fresh yolk, or with a teaspoon of mustard or water in a clean
   bowl, then whisk the broken sauce in slowly, as if it were the oil.
 - **Seasoning:** salt, acid (vinegar or lemon) and mustard. A thick mayonnaise is thinned with a few drops of water.

@@ -474,7 +474,8 @@ and long, each explained, with this module's quiz at 80 %: the `SC-STRC` level 3
   new emulsion (a fresh yolk or a spoon of water) and adds the broken one slowly (`SAU-2`).
 
 **Sessions:**
-1. Temporary and stable (45 min): a vinaigrette shaken without and with mustard; a quick mayonnaise from one yolk.
+1. Temporary and stable (45 min): a vinaigrette shaken without and with mustard; a quick mayonnaise from one pasteurised
+   yolk (the raw-egg row of assessment §9).
 2. Too fast (45 min): a second mayonnaise with the oil added too fast so that it breaks, then repaired with a new yolk.
 
 **Cues:** the mustard vinaigrette stays cloudy and thick for minutes; the repaired mayonnaise thick and glossy.
@@ -830,7 +831,8 @@ The experiments of this course are the template for the comparisons in every lat
 - The onions go into a soup or onto burgers.
 - The batch soup used for cooling is the week's lunches.
 
-**Indicative ingredient budget:** about €25 (the chicken, the starches, butter for clarifying, eggs, oil and onions).
+**Indicative ingredient budget:** about €25 (the chicken, the starches, butter for clarifying, pasteurised egg yolks,
+oil and onions).
 
 ## Validation
 

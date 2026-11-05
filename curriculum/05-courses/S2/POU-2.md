@@ -109,7 +109,7 @@ At 5 / 6.5 / 8 hours a week the course takes about **4.9 / 3.8 / 3.1 weeks** of 
 - **Labels in Dutch shops:**
   - ***Beter Leven*** stars (1 to 3) for animal welfare;
   - **organic (EU leaf, *biologisch*);**
-  - **free range (*scharrel*, *vrije uitloop*);**
+  - **free range (*vrije uitloop*);** *scharrel*, indoor housing with more space than standard;
   - **"slow-growing"** breeds;
   - **the use-by date (*te gebruiken tot*)** on fresh poultry: a safety date, not a quality one.
 - **Choosing by use and budget:**
@@ -792,8 +792,8 @@ The learner writes the doneness target and the pull temperature before cooking.
   - **the skin and fat:** rendered slowly in a pan for chicken fat (*schmaltz*) for roasting potatoes, with crisp
     skin as a snack or garnish;
   - **the cooked meat** left after a meal: salads, soups, a pie, fried rice or a sandwich;
-  - **the giblets**, where a bird comes with them: the liver for a pâté or a pan sauce, the heart and gizzard for the
-    stock.
+  - **the giblets**, where a bird comes with them: the liver for a pâté or a pan sauce, cooked to 75 °C (poultry offal,
+    assessment §9), the heart and gizzard for the stock.
 - **Safe storage of leftovers** (assessment §9):
   - cooked chicken into the fridge within 2 hours, in a shallow container;
   - eaten within 2 days or frozen;

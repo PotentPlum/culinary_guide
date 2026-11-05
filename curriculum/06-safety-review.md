@@ -8,7 +8,8 @@ read a condition for Phase 6 ([Phase 5 §9.3](05-course-development.md#93-gaps-a
 **a person other than the author reads every safety item and logs the result.** The author drafted the items and the
 mapping, so the author can't be the reader. The program's owner can be.
 
-**Reading order:** S1 first (48 items), so S1 can be finalised while S2 is written (Phase 6 §7.3, answer 3).
+**Reading order:** S1 first (48 items), then S2 (62 items), so both can be finalised while S3 is written (Phase 6
+§7.3, answer 3, and §8.3, answer 7).
 
 Phase 6 runs in parallel (S5 review answer 4). The lesson files it writes stay drafts until this log is complete and
 every disagreement is resolved ([Phase 6 §3](06-lesson-development.md#3-from-draft-to-final)).

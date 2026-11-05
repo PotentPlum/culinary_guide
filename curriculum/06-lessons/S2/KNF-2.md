@@ -26,7 +26,7 @@ runs through the whole stage:
 | Brunoise | 2–3 mm |
 | Small dice | 5–7 mm |
 | *Paysanne* | 10–12 mm across, 2–3 mm thick |
-| *Chiffonade* | Fine, even ribbons (`KNF-1.M2.L3`) |
+| *Chiffonade* | Ribbons 1–2 mm wide (`KNF-1.M2.L3`) |
 
 "8 of 10" means 8 of 10 randomly picked pieces fall within the range.
 

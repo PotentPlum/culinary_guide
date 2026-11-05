@@ -76,9 +76,9 @@ At 5 / 6.5 / 8 hours a week the course takes about **2.1 / 1.6 / 1.3 weeks** of 
 <!-- END generated:lesson-knf-2-m1-l1 -->
 
 **Concepts:**
-- **The S2 targets:** the `MS-S1` cut list plus *paysanne* and *chiffonade*, all within range for 8 of 10 pieces, in
-  30 minutes (the `TS-KNF` level 4 row). Tolerances as in the framework
-  ([TS tolerances](../../04-competencies/TS.md)).
+- **The S2 targets:** the `MS-S1` cut list plus *paysanne* and *chiffonade* (ribbons 1–2 mm wide), all within range for
+  8 of 10 pieces, in 30 minutes (the `TS-KNF` level 4 row). Tolerances as in the framework ([TS
+  tolerances](../../04-competencies/TS.md)).
 - **Where time is lost:**
   - handling a piece twice;
   - an untidy board;
@@ -384,7 +384,7 @@ every milestone.
   - the date;
   - the test result;
   - the action (honed or sharpened);
-  - a self-score.
+  - a self-score in four bands: 1 tears the paper, 2 catches, 3 slices with a few catches, 4 slices cleanly.
 
   Kept weekly for four weeks, with a photo of the paper test that AI review scores, so the learner's judgment is
   checked against an outside view.

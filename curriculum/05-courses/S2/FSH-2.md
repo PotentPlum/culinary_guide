@@ -799,8 +799,8 @@ moment. It is scored as in `FSH-2.M3.X1`.
 **Sessions:**
 1. Peel, devein and pan-fry (40 min): king prawns with garlic; probe two of the largest; shells into the freezer for
    stock.
-2. Grey shrimp (40 min): peel cooked grey shrimp by hand; use them in a classic dish (*garnalenkroketten* filling,
-   shrimp on toast, or a stuffed tomato in summer).
+2. Grey shrimp (40 min): peel cooked grey shrimp by hand; use them in a classic dish (shrimp on toast, or a stuffed
+   tomato in summer).
 
 **Cues:**
 - A "C" shape, pink and opaque, still juicy.

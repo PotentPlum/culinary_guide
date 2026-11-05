@@ -508,7 +508,8 @@ instead of the clock.
   steam is gone.
 - **Safety:**
   - a preheated Dutch oven and stone are about 250 °C, so dry oven gloves go on both hands;
-  - the loaf is lowered in on baking paper;
+  - the loaf is lowered in on baking paper, and the lid is lifted away from you;
+  - boiling water is poured with the arm clear of the steam, and the pot has a metal or ovenproof knob;
   - water never touches a hot stone, glass or the oven door, which can crack.
 - **The calibration log** (`KM-EQPT`): the oven temperature with the thermometer at the baking setting, and the
   preheat time the stone or pot needs.

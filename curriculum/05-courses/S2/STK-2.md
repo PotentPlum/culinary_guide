@@ -479,7 +479,8 @@ tomato ends; no brassicas); water; a *bouquet garni*.
 **Concepts:**
 - **A clear soup is only as good as its stock.** The garnish is cut small and evenly and cooked to the right point: in
   the broth if it cooks quickly, separately if it would cloud it (pasta, rice).
-- **The Dutch *heldere soep***: a clear beef or chicken broth with fine vegetables, vermicelli and meatballs.
+- **The Dutch *heldere soep***: a clear beef or chicken broth with fine vegetables, vermicelli and meatballs, simmered
+  until the probe reads 75 °C (minced meat, assessment §9).
 - **Consommé** is a stock clarified with a raft of egg white and minced meat, which traps every particle. It is named
   here and made in `CLS-4`.
 
@@ -633,8 +634,9 @@ summer); noodles; herbs; soy or a Parmesan rind.
 **Concepts:**
 - **The classical cream soup:** a *velouté* (stock thickened with a blond roux) flavoured with the main vegetable,
   blended, finished with cream, or with a *liaison* of yolks and cream.
-- **The *liaison*:** yolks and cream tempered with hot soup, stirred in off the heat. It thickens and enriches, but
-  curdles if boiled (`EGG-1.M4`).
+- **The *liaison*:** yolks and cream tempered with hot soup, stirred in off the heat, then brought back to at least
+  71 °C on the probe without boiling (the egg-thickened row of assessment §9). It thickens and enriches, but curdles if
+  boiled (`EGG-1.M4`).
 - **Avoiding a split:** acid and boiling curdle cream. Acidic ingredients go in before the cream, and the soup is not
   boiled after it.
 

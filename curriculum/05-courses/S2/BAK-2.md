@@ -607,7 +607,8 @@ cream). The filling follows the season:
 - leek and cheese, or onion and bacon, in winter;
 - asparagus or courgette in summer.
 
-The filling is baked until it is just set, with a slight wobble at the centre.
+The filling is baked until it is just set, with a slight wobble at the centre, and probed in the centre to at least
+71 °C (the egg-thickened row of assessment §9, whose source covers dishes containing eggs).
 
 **Inputs:** for a 23 cm tart:
 - 200 g of flour, 100 g of butter;
@@ -1088,7 +1089,8 @@ photograph the cut slice.
 - ***Crème caramel*:** a dry or wet caramel poured into the moulds first. The custard sets on it, and the caramel
   dissolves into a sauce in the fridge. It is chilled for at least 4 hours before unmoulding.
 - **Judging the wobble:** done when the edges are set and the centre wobbles like a jelly, not a liquid, when the
-  ramekin is nudged. It sets further as it cools. A knife in the centre comes out with a thin coat.
+  ramekin is nudged. It sets further as it cools. A knife in the centre comes out with a thin coat, and the probe reads
+  at least 71 °C in the centre (the egg-thickened row of assessment §9).
 - **Adapting:** a larger dish takes longer than ramekins at the same heat. The learner adapts the timing and checks the
   wobble.
 
