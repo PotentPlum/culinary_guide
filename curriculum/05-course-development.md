@@ -1,9 +1,10 @@
 # Phase 5 — Course development
 
-Status: **S5 in progress** (2026-11-05). S1 to S4 are reviewed and their answers applied (§7.3, §8.3, §9.3 and
-§10.3). S5 is being developed in the same format.
+Status: **S5 ready for review** (2026-11-05). S1 to S4 are reviewed and their answers applied (§7.3, §8.3, §9.3 and
+§10.3). S5 is developed in the same format, so every course now has a course file. The end of the S5 batch, with its
+decisions, gaps and questions and what Phase 6 needs first, is in §11.
 
-**Stages developed:** S1, S2, S3, S4
+**Stages developed:** S1, S2, S3, S4, S5
 
 This phase develops every course of the outline in depth. For each course it gives:
 - an introduction;
@@ -203,7 +204,7 @@ each level. ✗ marks a stage target that no exercise up to that stage evidences
 row rests on the quiz alone.
 
 <!-- BEGIN generated:reachability -->
-| Competency | S1 | S2 | S3 | S4 | S5 (in progress) | Exercises at L2 · L3 · L4 · L5 |
+| Competency | S1 | S2 | S3 | S4 | S5 | Exercises at L2 · L3 · L4 · L5 |
 |---|---|---|---|---|---|---|
 | `CK-TERM` | 2 (quiz) | 3 | 3 | 4 | 4 | 0 · 2 · 2 · 0 |
 | `CK-METH` | 2 | 3 | 4 | 4 | 5 | 1 · 2 · 2 · 1 |
@@ -1231,3 +1232,141 @@ Hours, lessons and `Moves` entries are unchanged.
    (ignoring italics), which would have caught the drafted titles of decision 7.
 5. **`REV-5` consolidation** can draw on the knowledge checks of S1–S4 (1,362 items), once the second reader has checked
    the safety items.
+
+## 11. End of the S5 batch
+
+### 11.1 What was delivered
+
+S5 is developed in three course files in [`05-courses/S5/`](05-courses/S5/): `REV-5`, `IND-5` and `RDV-5`. The capstone
+`CAP-5` is an assessment, not a course. Its brief and rubric are complete in
+[assessment §8](04-assessment.md#8-the-capstone-cap-5), so it has no course file, as for the milestones (§1). In S5:
+- 28 lesson outlines, each with a session plan that matches the outline's practical sessions;
+- 11 exercise specs, every one a brief, framework or project as the outline gives it;
+- 32 knowledge-check items in 4 checks, 10 of them safety items;
+- 30 evidence rows against the Phase 4 success rows.
+
+Eight modules have no quiz:
+- `IND-5.M2` and `RDV-5.M2` have no [K] or [J] objective;
+- `IND-5.M3`, `IND-5.M4`, `RDV-5.M1` and `REV-5.M1` have only [J] objectives, which their evidence shows. `REV-5.M1`
+  instead retakes the S1–S4 checks of each gap competency (decision 3).
+
+Three modules with only [J] objectives keep a quiz, for their safety points: `IND-5.M5` (the probe under time pressure,
+fire, allergens), `IND-5.M6` (rescues and verification) and `RDV-5.M3` (the triangle test and the tasting day).
+
+Every S5 stage target is evidenced by an exercise at that level (§4). `**Stages developed:**` now reads S1 to S5, so
+**every course of the program has a course file**.
+
+**Totals for the program (S1–S5):**
+
+| Stage | Course files | Lessons | Exercises | Items (safety) | Evidence rows | Budget |
+|---|---|---|---|---|---|---|
+| S1 | 10 | 119 | 58 | 314 (48) | 78 | €265 |
+| S2 | 11 | 131 | 71 | 408 (62) | 153 | €725 |
+| S3 | 13 | 157 | 85 | 392 (107) | 173 | €1,305 |
+| S4 | 8 | 84 | 47 | 248 (51) | 94 | €1,185 |
+| S5 | 3 | 28 | 11 | 32 (10) | 30 | €850 |
+| **Total** | **45** | **519** | **272** | **1,394 (278)** | **528** | **€4,330** |
+
+**The indicative ingredient budget** for S5 is about **€850**:
+- `IND-5` €400: five baskets, the recreations, two guest dinners and charcoal;
+- `RDV-5` €350: 18 versions and a tasting day;
+- `REV-5` €100, depending on the gaps.
+
+The capstone's own budget is set by its brief (assessment §8.1). S5 runs over at least 8 weeks, because the level-5
+rows ask for it; at 6.5 hours a week its 147.5 hours (including `CAP-5`) take about 23 weeks. Most of the budget is
+household and guest meals.
+
+### 11.2 Decisions and assumptions
+
+1. **No new §9 rows.** S5 uses the existing rows: core temperatures, leftovers, holding, cooling, the fish row, the egg
+   rows as decided at the S4 review, live fire (`FIR-3`) and allergens (`NUT-3`). Two rules are written into the
+   courses rather than §9:
+   - a brief, a basket or a historical text never overrides §9;
+   - doneness judged by the senses is checked with the probe before a §9 food is served (`IND-5.M6.L2`).
+2. **Templates and catalogues for the learner's choice** (S4 recommendation 3), following the pattern of `CUI-4`:
+   - `REV-5` has one gap-analysis template and a **gap catalogue** of five worked gap types: safety, a capstone
+     technique, a judgement, old evidence, and a self-assessment that disagrees. A safety gap is always block 1.
+   - `RDV-5` has one development-cycle template for the six dishes and a **point-of-view catalogue**: season, region,
+     technique and ingredient.
+3. **`REV-5` and the personal competencies.** The outline moves only `JD-REFL` in `REV-5`, so the exercise is tagged
+   `JD-REFL→5` alone. The new evidence for each gap goes into the record against that competency's own success row. The
+   module has no quiz of its own; the learner retakes the S1–S4 knowledge checks of each gap competency at the same pass
+   rule (S4 recommendation 5). Until the second reader has checked the safety items, a safety item that disagrees with
+   §9 follows §9.
+4. **Where the stage-spanning rows complete** (S4 recommendation 2). Level 5 asks for at least five demonstrations
+   under three conditions over at least 8 weeks (Phase 1 §10.3), so most S5 rows are built in the courses and completed
+   by the capstone. The record marks them "in progress" until `CAP-5` is scored.
+
+   | Competency | Level | Built in | Completed by |
+   |---|---|---|---|
+   | `CR-IMPV` | 4 | `IND-5.M3.X1` | `IND-5.M2.X1` (round 3, for guests) |
+   | `JD-CHSE` | 5 | `IND-5.M1.X1`, `IND-5.M4.X1`, `IND-5.M4.X2`, the round 3 analysis | the capstone brief (`CAP-5.R1`) |
+   | `CK-METH` | 5 | `IND-5.M1.X1` (with the guide) | the capstone brief (`CAP-5.R1`) |
+   | `RD-ADPT` | 5 | `IND-5.M3.X1`, `IND-5.M4.X2`, `IND-5.M5.X1` (with the guide) | the capstone dietary adaptation (`CAP-5.R1`) |
+   | `KM-PLAN` | 5 | `IND-5.M2.X1`, `IND-5.M5.X1`, the tasting day of `RDV-5.M3.X1` | the capstone timing (`CAP-5.R11`) |
+   | `TS-DRY` | 5 | `IND-5.M2.X1`, `IND-5.M5.X1` (with the note) | the capstone main (`CAP-5.R6`) |
+   | `JD-TRBL`, `FL-CORR` | 5 | `IND-5.M6.X1` (with the guides) | the capstone log and service (`CAP-5.R12`, `CAP-5.R7`) |
+   | `JD-CUES` | 5 | `IND-5.M6.X1` (ten predictions and the guide), entries in `IND-5.M2`, `IND-5.M5`, `RDV-5.M2` | the capstone main (`CAP-5.R6`) |
+   | `FL-SENS` | 5 | `IND-5.M4.X1`, `IND-5.M6.X1` (calibration), `RDV-5.M3.X1` (triangle test and guide) | the capstone form against the guests' cards (`CAP-5.R7`) |
+   | `IN-VEG` | 5 | `IND-5.M1.X1`, `IND-5.M2.X1`, `IND-5.M3.X1`, `RDV-5.M2.X1` (with the guide) | the capstone vegetable course (`CAP-5.R6`) |
+   | `CR-ORIG` | 4 | `RDV-5.M2.X1`, `RDV-5.M3.X1` | the capstone dish and defence (`CAP-5.R1`) |
+   | `JD-REFL` | 5 | `REV-5.M1.X1` (the agreement log over 8 weeks), `RDV-5.M3.X1` (style) | the capstone defence (`CAP-5.R12`) |
+   | `SA-HYG`, `SA-PHYS` | 5 | `SAF-3.M2.X1`, `FIR-3.M1.X1` (S3) | the capstone food-safety gate (`CAP-5.R3`) |
+   | `TS-FIRE` | 4 | `FIR-3.M4.X1`, `FIR-3.M6.X1`, `IND-5.M5.X1` | logged household cooks in S5 (question 1) |
+
+   `RD-TEST` 4, `RD-WRIT` 4 and `CK-CLAS` 4 were reached in S4; S5 adds further evidence.
+5. **`TS-FIRE` 4 has too few outline hours.** Level 4 asks for three low-and-slow cooks and three live-fire meals in at
+   least two conditions. `FIR-3` gives the first of each. In S5 only `IND-5.M5.L2` moves `TS-FIRE`, with two sessions,
+   so one of them is a live-fire meal for at least four guests (the second meal). The third meal and the second and
+   third low-and-slow cooks have no outline hours. They are logged as household cooks during S5, and `REV-5` can take
+   them up as a gap. The notes in `FIR-3` that said S4 and the capstone complete the row were wrong (neither moves
+   `TS-FIRE`) and are corrected.
+6. **Exercise scope notes** (the outline's one-line description is kept; the spec does more):
+   - `IND-5.M1.X1` adds the written guide to method choice that the `CK-METH` level 5 row asks for.
+   - `IND-5.M4.X1` adds the tasted dish, because `IND-5.M4.L2` has no exercise of its own and the `FL-SENS` evidence
+     needs it.
+   - `IND-5.M5.X1` makes the equipment challenge a live-fire meal for guests (decision 5), and adds the dry-heat note and
+     the adaptation guide of the level-5 rows.
+   - `IND-5.M6.X1` adds the salt and acid tests retaken in S5 and the guides to faults and cues.
+   - `RDV-5.M2.X1` adds the vegetable guide and the dessert cooked by another person.
+   - `RDV-5.M3.X1` adds the triangle test, the tasting guide and the reflection on style.
+   - `REV-5.M1.X1` runs the agreement log over every S5 entry from block 1, at least 8 weeks.
+7. **Session counts kept to the outline.** `IND-5.M3.L1` has three sessions for four weekly meals, so its third session
+   covers weeks 3 and 4.
+8. **Lesson titles** now match the outline in every course file: the validator checks it (S4 recommendation 4), and
+   S1–S4 passed without change.
+
+**Assumptions:**
+- The learner has outdoor space for live fire. Without it, `TS-FIRE` stays at level 2 and the record says so (`FIR-3`).
+- The household can choose baskets, introduce faults and taste blind; a panel of 4–6 can be found for the tasting day.
+- A dish tasted in a restaurant can be replaced by one cooked by someone else (`IND-5.M4.L2`).
+
+### 11.3 Gaps and open questions
+
+1. **`TS-FIRE` 4** (decision 5).
+   - Option 1: keep it as written, with the remaining cooks logged as household cooks in S5 and taken up by `REV-5` if
+     missing. This is my recommendation: the cooks are long but mostly unattended, and the success row stays unchanged.
+   - Option 2: add a lesson to the outline (for example `IND-5.M5.L4`, about 6 hours with three sessions) for the
+     remaining cooks.
+2. **Warm egg sauces** (new, from the S4 review answer 3). The egg rule now covers egg that is raw when served and
+   desserts with lightly cooked egg. The warm emulsions (*hollandaise* and its family, *sabayon*) and soft whole eggs
+   keep the risk-group row.
+   - Option 1: extend the pasteurised rule to the warm egg sauces, for every guest, because the checked source covers
+     recipes where eggs are "raw or undercooked when served" [S38]. Soft whole eggs (soft-boiled, poached, the 63 °C
+     egg) keep the risk-group row until Phase 6 has checked the Voedingscentrum. This is my recommendation.
+   - Option 2: keep it as it is.
+3. **The budget.** About €850 for S5, against €1,185 for S4. Is it acceptable?
+4. **The second reader** now covers about 278 safety items across S1–S5. It is still a condition for starting
+   Phase 6.
+5. **Sources.** S5 added none. The Phase 6 list stands: the S3 and S4 lists, and the Voedingscentrum page on raw egg
+   (the page tried was missing on 2026-11-05).
+
+### 11.4 Phase 5 complete, and what Phase 6 needs first
+
+With S5, every course has a course file, and the validator checks the whole program. After this review, Phase 5 can
+close. Before Phase 6 (detailed lesson development) starts, three things are needed:
+1. **The second reader's log** of every safety item (question 4).
+2. **The source list re-checked** (§9.3, §10.3 and §11.3): the Voedingscentrum pages, the FSIS poultry and egg pages,
+   the Dutch nitrous-oxide rules, *Alcoholwet* article 20, and the NVWA guidance on game.
+3. **An order for Phase 6:** I recommend following the stages (S1 first), so lessons can be written and used while
+   later ones are developed. Each course file's outlines, cues and faults are the brief for its lessons.

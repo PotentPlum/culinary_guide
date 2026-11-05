@@ -35,8 +35,8 @@ corn, spring onions), roots and onions for the embers in autumn and winter; Dutc
 (mackerel, herring) whole for the grill.
 
 **In the spiral.**
-- `TS-FIRE` reaches level 3; level 4 (three low-and-slow cooks and three live-fire meals in two conditions) is built up
-  over S3 and S4 and completed in the capstone.
+- `TS-FIRE` reaches level 3; level 4 (three low-and-slow cooks and three live-fire meals in two conditions) starts here
+  and continues in S5: the second live-fire meal in `IND-5.M5.X1`, the remaining cooks logged as household cooks.
 - `TS-PRO`, `TS-DRY`, `TS-SAU`, `SC-PROT`, `JD-CUES`, `SA-HRPR` and `KM-PLAN` reach level 4 with `SLW-3`, which does the
   same indoors.
 - `MS-S3` cooks one element of its two-course evening over live fire (`MS-S3.M1.L3`).
@@ -954,8 +954,8 @@ rows are met; and every protein in the logs reached its §9 figure. Without outd
 `TS-FIRE` stops at level 2 and which exercises were done on a grill pan and the oven grill.
 
 **What it feeds.** `MS-S3` cooks one element of its two-course evening over live fire (`MS-S3.M1.L3`, `TS-FIRE` 3). The
-low-and-slow cook and the live-fire meal are the first occasions of `TS-FIRE` level 4, which S4 and the capstone
-complete.
+low-and-slow cook and the live-fire meal are the first occasions of `TS-FIRE` level 4, which S5 completes
+(`IND-5.M5.X1` and logged household cooks).
 
 ## Materials and equipment
 
