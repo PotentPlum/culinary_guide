@@ -47,9 +47,17 @@ files exactly once, under its course's heading and word for word (so a later edi
 mapped to the rows of assessment §9 it rests on (by the Topic up to its first bracket) or to a course rule
 (`— <lesson ID in backticks>`); a verdict is empty, `agrees` or `disagrees`, and a disagreement has a note.
 
+Phase 6 (curriculum/06-lesson-development.md, 06-lessons/<stage>/<course>.md) adds, for each lesson file:
+- A file for every course under **Courses developed:**, with a course file to be written from; a **Status:** line.
+- Every lesson and exercise of the course under its heading (lessons with the outline's title, exercises with the course
+  file's), each lesson with every lesson field and as many numbered Practice items as the course file's sessions, each
+  exercise with Task, You need, Show and Time, plus Recipe or Framework exactly when its support level asks for one.
+- Every temperature (`N °C`) appears in assessment §9's figures or in the course file.
+- `final` only once every safety item of the course is agreed in the safety review.
+
 The generated blocks (between `<!-- BEGIN generated:NAME -->` and `<!-- END generated:NAME -->`) in
 02-curriculum-outline.md, 04-competency-framework.md, 04-assessment.md, 04-competencies/*.md,
-05-course-development.md, 05-courses/*/*.md and 06-safety-review.md must match what this script produces; `--write` regenerates them.
+05-course-development.md, 05-courses/*/*.md, 06-safety-review.md and 06-lessons/*/*.md must match what this script produces; `--write` regenerates them.
 
 Usage:
     python3 tools/validate_curriculum.py          # check
@@ -583,6 +591,7 @@ def check(root: Path) -> tuple[Report, dict[str, list[Course]], Phase1, Phase4, 
     phase4 = check_phase4(root, stages, phase1, report)
     phase5 = check_phase5(root, stages, phase1, phase4, report)
     check_safety_review(root, stages, phase5, report)
+    check_phase6(root, stages, phase5, report)
     return report, stages, phase1, phase4, phase5
 
 
@@ -1052,6 +1061,7 @@ NUMBERED_RE = re.compile(r"^\d+\. ")
 @dataclass
 class ExerciseDoc:
     id: str
+    title: str = ""
     tags: dict[str, int] = field(default_factory=dict)
     fields: list[str] = field(default_factory=list)
     evidence: list[str] = field(default_factory=list)
@@ -1092,6 +1102,9 @@ class Phase5:
     overview: Path | None = None
     # The second reader's worksheet (06-safety-review.md): item id -> (stage, verdict); empty when there is no file.
     review: dict[str, tuple[str, str]] = field(default_factory=dict)
+    # Phase 6 (06-lesson-development.md, 06-lessons/<stage>/<course>.md).
+    lessons_developed: list[str] = field(default_factory=list)
+    lesson_docs: dict[str, "LessonDoc"] = field(default_factory=dict)
 
 
 def split_methods(cell: str, where: str, report: Report) -> list[str]:
@@ -1153,7 +1166,7 @@ def parse_course_doc(path: Path, root: Path, report: Report) -> CourseDoc | None
                 report.error(f"{where}: exercise {exercise} is not under its module heading")
             if exercise in doc.exercises:
                 report.error(f"{where}: {exercise} has two specs")
-            doc.exercises[exercise] = ExerciseDoc(exercise)
+            doc.exercises[exercise] = ExerciseDoc(exercise, m.group(2).strip())
             continue
         if line.strip() == "#### Module check":
             lesson = exercise = None
@@ -1388,6 +1401,217 @@ def check_safety_review(root: Path, stages: dict[str, list[Course]], phase5: Pha
         report.error(f"{SAFETY_REVIEW}: safety item {ident} ({items[ident][0]}) is missing")
 
 
+LESSONS_OVERVIEW = "06-lesson-development.md"
+LESSON_DOC_FIELDS = ("Why it matters", "You need", "Explanation", "Practice", "Look for", "If it goes wrong", "Safety", "Record")
+LESSON_EXERCISE_FIELDS = ("Task", "You need", "Recipe", "Framework", "Show", "Time")
+COURSES_DEVELOPED_RE = re.compile(r"^\*\*Courses developed:\*\* (.+)$", re.M)
+STATUS_RE = re.compile(r"^\*\*Status:\*\* (draft|final)\b")
+LESSON_DOC_MODULE_RE = re.compile(rf"^## ({COURSE}\.M\d+) — (.+)$")
+LESSON_DOC_UNIT_RE = re.compile(rf"^### ({COURSE}\.M\d+\.[LX]\d+) — (.+)$")
+TEMP_RE = re.compile(r"([−-]?\d+(?:\.\d+)?)(?:\s*[–-]\s*([−-]?\d+(?:\.\d+)?))?\s*°C")
+
+
+@dataclass
+class LessonDoc:
+    id: str
+    path: Path
+    status: str = ""
+    modules: list[str] = field(default_factory=list)
+    titles: dict[str, str] = field(default_factory=dict)  # lesson or exercise id -> heading title
+    fields: dict[str, list[str]] = field(default_factory=dict)  # lesson or exercise id -> fields
+    practice: dict[str, int] = field(default_factory=dict)  # lesson id -> numbered Practice items
+    temperatures: list[tuple[int, str]] = field(default_factory=list)  # (line, value)
+
+
+def temperatures(text: str) -> list[str]:
+    """Every temperature written as `N °C` or `N–M °C`, normalised (`−18` and `-18` are the same)."""
+    found = []
+    for m in TEMP_RE.finditer(text):
+        for g in m.groups():
+            if g is not None:
+                found.append(str(float(g.replace("−", "-"))))
+    return found
+
+
+def parse_lesson_doc(path: Path, root: Path, report: Report) -> LessonDoc | None:
+    rel = path.relative_to(root)
+    lines = path.read_text(encoding="utf-8").splitlines()
+    first = next((l for l in lines if l.strip()), "")
+    m = H1_RE.match(first)
+    if not m:
+        report.error(f"{rel}: the first line must be '# <course ID> — <title>'")
+        return None
+    doc = LessonDoc(m.group(1), path)
+    if path.stem != doc.id:
+        report.error(f"{rel}: holds {doc.id}; the file must be named {doc.id}.md")
+    unit = None
+    field_ = ""
+    generated = False
+    for number_, line in enumerate(lines, 1):
+        if line.startswith("<!-- BEGIN generated:"):
+            generated = True
+            continue
+        if line.startswith("<!-- END generated:"):
+            generated = False
+            continue
+        if generated:
+            continue
+        doc.temperatures += [(number_, value) for value in temperatures(line)]
+        if (s := STATUS_RE.match(line)) and not doc.status:
+            doc.status = s.group(1)
+            continue
+        if m := LESSON_DOC_MODULE_RE.match(line):
+            doc.modules.append(m.group(1))
+            unit, field_ = None, ""
+            continue
+        if m := LESSON_DOC_UNIT_RE.match(line):
+            unit, field_ = m.group(1), ""
+            if unit in doc.titles:
+                report.error(f"{rel}:{number_}: {unit} appears twice")
+            doc.titles[unit] = m.group(2).strip()
+            doc.fields[unit] = []
+            doc.practice[unit] = 0
+            continue
+        if line.startswith("## ") or line.startswith("### "):
+            unit, field_ = None, ""
+            continue
+        if unit is None:
+            continue
+        known = LESSON_DOC_FIELDS if ".L" in unit else LESSON_EXERCISE_FIELDS
+        if (fm := FIELD_RE.match(line)) and fm.group(1) in known:
+            field_ = fm.group(1)
+            if field_ in doc.fields[unit]:
+                report.error(f"{rel}:{number_}: {unit} has **{field_}:** twice")
+            else:
+                doc.fields[unit].append(field_)
+        elif field_ == "Practice" and NUMBERED_RE.match(line):
+            doc.practice[unit] += 1
+    if not doc.status:
+        report.error(f"{rel}: no **Status:** draft or final line")
+    return doc
+
+
+def allowed_temperatures(root: Path, course_doc: CourseDoc | None) -> set[str]:
+    """Temperatures a lesson file may use: those in assessment §9's figures and in its course file."""
+    path = root / "04-assessment.md"
+    text = path.read_text(encoding="utf-8") if path.exists() else ""
+    m = re.search(r"^## 9\..*?$(.*?)(?=^## |\Z)", text, re.M | re.S)
+    allowed = set(temperatures(m.group(1) if m else ""))
+    if course_doc is not None:
+        allowed |= set(temperatures(course_doc.path.read_text(encoding="utf-8")))
+    return allowed
+
+
+def check_phase6(root: Path, stages: dict[str, list[Course]], phase5: Phase5, report: Report) -> None:
+    """Lesson files (Phase 6): one per developed course, every lesson and exercise written with its fields."""
+    overview = root / LESSONS_OVERVIEW
+    if overview.exists():
+        m = COURSES_DEVELOPED_RE.search(overview.read_text(encoding="utf-8"))
+        if m is None:
+            report.error(f"{LESSONS_OVERVIEW}: no **Courses developed:** line")
+        else:
+            phase5.lessons_developed = [c.strip() for c in m.group(1).split(",") if c.strip() not in ("", "—")]
+    courses = {c.id: c for cs in stages.values() for c in cs}
+    folder = root / "06-lessons"
+    for path in sorted(folder.glob("*/*.md")) if folder.exists() else []:
+        doc = parse_lesson_doc(path, root, report)
+        if doc is None:
+            continue
+        rel = path.relative_to(root)
+        course = courses.get(doc.id)
+        if course is None or course.is_milestone:
+            report.error(f"{rel}: {doc.id} is not a course in the outline")
+            continue
+        if path.parent.name != course.stage:
+            report.error(f"{rel}: {doc.id} is in {course.stage}; the file belongs in 06-lessons/{course.stage}/")
+        if doc.id not in phase5.docs:
+            report.error(f"{rel}: {doc.id} has no course file in 05-courses/, which its lessons are written from")
+            continue
+        phase5.lesson_docs[doc.id] = doc
+        check_lesson_doc(doc, course, phase5.docs[doc.id], allowed_temperatures(root, phase5.docs[doc.id]), phase5, report)
+    for ident in phase5.lessons_developed:
+        if ident not in courses or courses[ident].is_milestone:
+            report.error(f"{LESSONS_OVERVIEW}: {ident} under **Courses developed:** is not a course in the outline")
+        elif ident not in phase5.lesson_docs:
+            stage = courses[ident].stage
+            report.error(f"{ident}: its lessons are developed, but 06-lessons/{stage}/{ident}.md is missing")
+
+
+def check_lesson_doc(
+    doc: LessonDoc, course: Course, course_doc: CourseDoc, allowed: set[str], phase5: Phase5, report: Report
+) -> None:
+    rel = f"06-lessons/{course.stage}/{doc.path.name}"
+    expected: dict[str, str] = {}
+    for m in course.modules:
+        if m.id not in doc.modules:
+            report.error(f"{doc.id}: no '## {m.id}' heading in the lesson file")
+        for l in m.lessons:
+            expected[l.id] = l.title
+        for e_id, _, _ in m.exercises:
+            spec = course_doc.exercises.get(e_id)
+            expected[e_id] = spec.title if spec else ""
+    for unit in expected:
+        if unit not in doc.titles:
+            report.error(f"{unit}: not written in the lesson file")
+    for unit, title in doc.titles.items():
+        if unit not in expected:
+            report.error(f"{doc.id}: {unit} is not a lesson or exercise of the course")
+        elif expected[unit] and plain_title(title) != plain_title(expected[unit]):
+            source = "the outline" if ".L" in unit else "the course file"
+            report.error(f"{unit}: titled {title!r} in the lesson file, {source} says {expected[unit]!r}")
+    supports = {e_id: support for m in course.modules for e_id, _, support in m.exercises}
+    for unit, fields in doc.fields.items():
+        if unit not in expected:
+            continue
+        if ".L" in unit:
+            for name in LESSON_DOC_FIELDS:
+                if name not in fields:
+                    report.error(f"{unit}: missing **{name}:** in the lesson file")
+            sessions = course_doc.sessions.get(unit, 0)
+            if doc.practice[unit] != sessions:
+                report.error(f"{unit}: {doc.practice[unit]} numbered Practice item(s), the course file has {sessions} session(s)")
+        else:
+            for name in ("Task", "You need", "Show", "Time"):
+                if name not in fields:
+                    report.error(f"{unit}: missing **{name}:** in the lesson file")
+            support = supports.get(unit)
+            for name, level in (("Recipe", "recipe"), ("Framework", "framework")):
+                if support == level and name not in fields:
+                    report.error(f"{unit}: support level {support} needs **{name}:**")
+                if support != level and name in fields:
+                    report.error(f"{unit}: support level {support} has no **{name}:** (Phase 1 §6.6)")
+    for number_, value in doc.temperatures:
+        if value not in allowed:
+            shown = value.removesuffix(".0")
+            report.error(f"{rel}:{number_}: {shown} °C is in neither assessment §9 nor the course file")
+    if doc.status == "final":
+        items = [i.id for items in course_doc.items.values() for i in items if i.safety]
+        open_ = [i for i in items if phase5.review.get(i, ("", ""))[1] != "agrees"]
+        if open_:
+            report.error(f"{doc.id}: final while {len(open_)} safety item(s) are not agreed in the safety review")
+
+
+def lesson_tables(stages: dict[str, list[Course]], phase5: Phase5) -> dict[Path, dict[str, str]]:
+    """The generated blocks of each lesson file: the header, and the line under each lesson and exercise."""
+    courses = {c.id: c for cs in stages.values() for c in cs}
+    result: dict[Path, dict[str, str]] = {}
+    for ident, doc in phase5.lesson_docs.items():
+        course = courses[ident]
+        lessons = [l for m in course.modules for l in m.lessons]
+        exercises = [e for m in course.modules for e in m.exercises]
+        tables = {
+            "header": f"**Stage:** {course.stage} · **Hours:** {fmt(course.hours)} h · **Lessons:** {len(lessons)} · "
+            f"**Exercises:** {len(exercises)} · **Course file:** [`{ident}`](../../05-courses/{course.stage}/{ident}.md)"
+        }
+        for m in course.modules:
+            for l in m.lessons:
+                tables[f"lesson-{block(l.id)}"] = lesson_line(l)
+            for e_id, kind, support in m.exercises:
+                tables[f"exercise-{block(e_id)}"] = exercise_line(m, e_id, kind, support)
+        result[doc.path] = tables
+    return result
+
+
 def review_summary(phase5: Phase5) -> str:
     """The generated log summary of the worksheet: items per stage by verdict."""
     rows = ["| Stage | Safety items | Agrees | Disagrees | Not yet read |", "|---|---|---|---|---|"]
@@ -1543,6 +1767,25 @@ def block(ident: str) -> str:
     return ident.lower().replace(".", "-")
 
 
+def lesson_line(l: Lesson) -> str:
+    """The generated line under a lesson heading, in course files and lesson files."""
+    return "\n".join(
+        [
+            f"*{fmt(l.hours)} h · {l.practice} practical session{'s' if l.practice != 1 else ''}"
+            + (f" · elapsed {l.elapsed}" if l.elapsed != "—" else "")
+            + (f" · builds on {', '.join(f'`{p}`' for p in l.prereqs)}" if l.prereqs else "")
+            + f" · moves {', '.join(f'{c}→{lv}' for c, lv in l.moves.items()) or '—'}*",
+            "",
+            f"*Objectives:* {l.objectives}",
+        ]
+    )
+
+
+def exercise_line(m: Module, e_id: str, kind: str, support: str) -> str:
+    """The generated line under an exercise heading, in course files and lesson files."""
+    return f"*{kind}, {support}* — {m.descriptions.get(e_id, '')}"
+
+
 def weeks(hours: float) -> str:
     return " / ".join(f"{hours / w:.1f}" for w in WEEKLY)
 
@@ -1636,18 +1879,9 @@ def phase5_tables(
                 ]
             )
             for l in m.lessons:
-                tables[f"lesson-{block(l.id)}"] = "\n".join(
-                    [
-                        f"*{fmt(l.hours)} h · {l.practice} practical session{'s' if l.practice != 1 else ''}"
-                        + (f" · elapsed {l.elapsed}" if l.elapsed != "—" else "")
-                        + (f" · builds on {', '.join(f'`{p}`' for p in l.prereqs)}" if l.prereqs else "")
-                        + f" · moves {', '.join(f'{c}→{lv}' for c, lv in l.moves.items()) or '—'}*",
-                        "",
-                        f"*Objectives:* {l.objectives}",
-                    ]
-                )
+                tables[f"lesson-{block(l.id)}"] = lesson_line(l)
             for e_id, kind, support in m.exercises:
-                tables[f"exercise-{block(e_id)}"] = f"*{kind}, {support}* — {m.descriptions.get(e_id, '')}"
+                tables[f"exercise-{block(e_id)}"] = exercise_line(m, e_id, kind, support)
             k, j, low, high = blueprint(m)
             size = "no quiz (no [K] or [J] objective)" if high == 0 else (
                 f"{low} items" if low == high else f"{low}–{high} items"
@@ -1769,6 +2003,8 @@ def main(argv: list[str] | None = None) -> int:
         sync_generated(path, tables, args.write, report, optional=True)
     for path, tables in phase5_tables(stages, phase1, phase4, phase5).items():
         sync_generated(path, tables, args.write, report)
+    for path, tables in lesson_tables(stages, phase5).items():
+        sync_generated(path, tables, args.write, report)
     if (args.root / SAFETY_REVIEW).exists():
         sync_generated(args.root / SAFETY_REVIEW, {"summary": review_summary(phase5)}, args.write, report)
     for warning in report.warnings:
@@ -1793,6 +2029,7 @@ def main(argv: list[str] | None = None) -> int:
             if phase5.review
             else ""
         )
+        + (f"; {len(phase5.lesson_docs)} lesson file(s)" if phase5.lesson_docs else "")
     )
     return 0
 

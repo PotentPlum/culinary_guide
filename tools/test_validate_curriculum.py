@@ -160,6 +160,32 @@ def course_doc(
     return "\n".join(lines)
 
 
+def lesson_doc(
+    lessons: tuple[str, ...] = ("KNF-1.M1.L1", "KNF-1.M1.L2"),
+    practice: int = 2,
+    exercise_fields: tuple[str, ...] = ("Task", "You need", "Framework", "Show", "Time"),
+    status: str = "draft — awaiting the second reader",
+    extra: str = "",
+) -> str:
+    """A Phase 6 lesson file for KNF-1 of course_doc(), with empty generated blocks."""
+
+    def gen(name: str) -> list[str]:
+        return [f"<!-- BEGIN generated:{name} -->", f"<!-- END generated:{name} -->", ""]
+
+    lines = ["# KNF-1 — Knives", ""] + gen("header") + [f"**Status:** {status}", "", "## KNF-1.M1 — Cuts", ""]
+    for ident in lessons:
+        title = {"KNF-1.M1.L1": "Grip", "KNF-1.M1.L2": "Dice"}.get(ident, "Lesson")
+        lines += [f"### {ident} — {title}", ""] + gen(f"lesson-{ident.lower().replace('.', '-')}")
+        for name in vc.LESSON_DOC_FIELDS:
+            lines.append(f"**{name}:** x")
+            if name == "Practice":
+                lines += [f"{n}. A session." for n in range(1, practice + 1)]
+        lines += [extra, ""]
+    lines += ["### KNF-1.M1.X1 — Dice", ""] + gen("exercise-knf-1-m1-x1")
+    lines += [f"**{name}:** x" for name in exercise_fields] + [""]
+    return "\n".join(lines)
+
+
 class ValidateCurriculumTest(unittest.TestCase):
     def setUp(self) -> None:
         self.tmp = tempfile.TemporaryDirectory()
@@ -466,6 +492,52 @@ class ValidateCurriculumTest(unittest.TestCase):
         self.assertEqual(self.review_errors(good.replace("|  |  |", "| disagrees | B is also right |")), [])
         errors = self.review_errors(good.replace("|  |  |", "| maybe |  |"))
         self.assertIn("06-safety-review.md:9: verdict 'maybe' is not one of agrees, disagrees (or empty)", errors)
+
+    def lesson_errors(self, lessons: str, developed: str = "KNF-1") -> list[str]:
+        """Errors with the course file of course_doc() and the given lesson file for KNF-1."""
+        (self.root / vc.LESSONS_OVERVIEW).write_text(f"# Phase 6\n\n**Courses developed:** {developed}\n", encoding="utf-8")
+        folder = self.root / "06-lessons" / "S1"
+        folder.mkdir(parents=True, exist_ok=True)
+        (folder / "KNF-1.md").write_text(lessons, encoding="utf-8")
+        self.course_errors(course_doc())
+        report, stages, phase1, phase4, phase5 = vc.check(self.root)
+        for path, blocks in vc.lesson_tables(stages, phase5).items():
+            vc.sync_generated(path, blocks, False, report)
+        return report.errors
+
+    def test_a_complete_lesson_file_passes(self) -> None:
+        self.assertEqual(self.lesson_errors(lesson_doc()), [])
+
+    def test_lesson_files_hold_every_lesson_and_exercise_with_its_fields(self) -> None:
+        errors = self.lesson_errors(lesson_doc(lessons=("KNF-1.M1.L1",)))
+        self.assertIn("KNF-1.M1.L2: not written in the lesson file", errors)
+        errors = self.lesson_errors(lesson_doc().replace("### KNF-1.M1.L1 — Grip", "### KNF-1.M1.L1 — The grip"))
+        self.assertIn("KNF-1.M1.L1: titled 'The grip' in the lesson file, the outline says 'Grip'", errors)
+        errors = self.lesson_errors(lesson_doc(practice=1))
+        self.assertIn("KNF-1.M1.L1: 1 numbered Practice item(s), the course file has 2 session(s)", errors)
+        errors = self.lesson_errors(lesson_doc().replace("**Record:** x", "", 1))
+        self.assertIn("KNF-1.M1.L1: missing **Record:** in the lesson file", errors)
+        errors = self.lesson_errors(lesson_doc(), developed="KNF-1, SAF-1")
+        self.assertIn("SAF-1: its lessons are developed, but 06-lessons/S1/SAF-1.md is missing", errors)
+
+    def test_an_exercise_is_written_to_its_support_level(self) -> None:
+        errors = self.lesson_errors(lesson_doc(exercise_fields=("Task", "You need", "Recipe", "Show", "Time")))
+        self.assertIn("KNF-1.M1.X1: support level framework needs **Framework:**", errors)
+        self.assertIn("KNF-1.M1.X1: support level framework has no **Recipe:** (Phase 1 §6.6)", errors)
+
+    def test_lesson_temperatures_come_from_section_9_or_the_course_file(self) -> None:
+        errors = self.lesson_errors(lesson_doc(extra="Cook it to 71 °C."))
+        self.assertIn("06-lessons/S1/KNF-1.md:29: 71 °C is in neither assessment §9 nor the course file", errors)
+        (self.root / "04-assessment.md").write_text(
+            "# A\n\n## 9. Safety\n\n| Topic | Figure | Source |\n|---|---|---|\n| Eggs | 70–71 °C | x |\n", encoding="utf-8"
+        )
+        self.assertEqual(self.lesson_errors(lesson_doc(extra="Cook it to 71 °C.")), [])
+
+    def test_a_lesson_file_is_final_only_once_its_safety_items_are_agreed(self) -> None:
+        self.assertIn(
+            "KNF-1: final while 1 safety item(s) are not agreed in the safety review",
+            self.lesson_errors(lesson_doc(status="final")),
+        )
 
     def test_a_knowledge_check_replaces_an_exercise_only_for_quiz_only_rows(self) -> None:
         row = "| TS-KNF | 2 | knowledge check | quiz — the cut names |"
