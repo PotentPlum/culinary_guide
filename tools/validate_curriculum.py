@@ -42,9 +42,14 @@ Phase 5 (curriculum/05-course-development.md, 05-courses/<stage>/<course>.md) ad
 - Every exercise ID named in a course file is an exercise of the outline, with a spec once its stage is developed;
   every module and lesson ID named is in the outline, and a named lesson has its outline once its stage is developed.
 
+The second reader's worksheet (curriculum/06-safety-review.md), once it exists, holds every safety item of the course
+files exactly once, under its course's heading and word for word (so a later edit to an item shows as drift), each
+mapped to the rows of assessment §9 it rests on (by the Topic up to its first bracket) or to a course rule
+(`— <lesson ID in backticks>`); a verdict is empty, `agrees` or `disagrees`, and a disagreement has a note.
+
 The generated blocks (between `<!-- BEGIN generated:NAME -->` and `<!-- END generated:NAME -->`) in
 02-curriculum-outline.md, 04-competency-framework.md, 04-assessment.md, 04-competencies/*.md,
-05-course-development.md and 05-courses/*/*.md must match what this script produces; `--write` regenerates them.
+05-course-development.md, 05-courses/*/*.md and 06-safety-review.md must match what this script produces; `--write` regenerates them.
 
 Usage:
     python3 tools/validate_curriculum.py          # check
@@ -577,6 +582,7 @@ def check(root: Path) -> tuple[Report, dict[str, list[Course]], Phase1, Phase4, 
                 report.error(f"{path.relative_to(root)}: broken link {link}")
     phase4 = check_phase4(root, stages, phase1, report)
     phase5 = check_phase5(root, stages, phase1, phase4, report)
+    check_safety_review(root, stages, phase5, report)
     return report, stages, phase1, phase4, phase5
 
 
@@ -1058,6 +1064,8 @@ class Item:
     lesson: str
     safety: bool
     answer: str
+    question: str = ""
+    why: str = ""
 
 
 @dataclass
@@ -1082,6 +1090,8 @@ class Phase5:
     developed: list[str] = field(default_factory=list)
     docs: dict[str, CourseDoc] = field(default_factory=dict)
     overview: Path | None = None
+    # The second reader's worksheet (06-safety-review.md): item id -> (stage, verdict); empty when there is no file.
+    review: dict[str, tuple[str, str]] = field(default_factory=dict)
 
 
 def split_methods(cell: str, where: str, report: Report) -> list[str]:
@@ -1187,12 +1197,12 @@ def parse_course_doc(path: Path, root: Path, report: Report) -> CourseDoc | None
                 spec.evidence = split_methods(value, where, report)
         elif in_check and module is not None:
             if m := ITEM_RE.match(line):
-                ident, kind, tested, safety, _, answer, _ = (g.strip() for g in m.groups())
+                ident, kind, tested, safety, question, answer, why = (g.strip() for g in m.groups())
                 if not ident.startswith(module + "."):
                     report.error(f"{where}: item {ident} is not in {module}'s check")
                 if kind not in ITEM_TYPES:
                     report.error(f"{where}: item type {kind!r} is not one of {', '.join(ITEM_TYPES)}")
-                doc.items[module].append(Item(ident, kind, tested.strip("`"), safety == "yes", answer))
+                doc.items[module].append(Item(ident, kind, tested.strip("`"), safety == "yes", answer, question, why))
             elif re.match(rf"^\| {COURSE}\.M\d+\.Q", line):
                 report.error(f"{where}: malformed knowledge-check item")
             elif (m := EVROW_RE.match(line)) and m.group(1) != "Competency":
@@ -1303,6 +1313,92 @@ def check_phase5(root: Path, stages: dict[str, list[Course]], phase1: Phase1, ph
             ):
                 report.error(f"reachability: no exercise up to {stage} evidences {comp} at its {stage} target {target}")
     return phase5
+
+
+SAFETY_REVIEW = "06-safety-review.md"
+REVIEW_COURSE_RE = re.compile(rf"^### ({COURSE}) — (.+)$")
+REVIEW_ROW_RE = re.compile(rf"^\| ({COURSE}\.M\d+\.Q\d+) \| (.+?) \| (.+?) \| (.+?) \| (.+?) \| (.*?) \| (.*?) \|$")
+COURSE_RULE_RE = re.compile(rf"^— `({COURSE}\.M\d+\.L\d+)`$")
+VERDICTS = ("", "agrees", "disagrees")
+
+
+def safety_topics(root: Path) -> set[str]:
+    """The short names of the §9 rows of 04-assessment.md: each Topic up to its first bracket."""
+    path = root / "04-assessment.md"
+    text = path.read_text(encoding="utf-8") if path.exists() else ""
+    m = re.search(r"^## 9\..*?$(.*?)(?=^## |\Z)", text, re.M | re.S)
+    topics = set()
+    for line in (m.group(1) if m else "").splitlines():
+        if line.startswith("| ") and not line.startswith("| Topic |"):
+            topics.add(line.split(" | ")[0][2:].split(" (")[0].strip())
+    return topics
+
+
+def check_safety_review(root: Path, stages: dict[str, list[Course]], phase5: Phase5, report: Report) -> None:
+    """The second reader's worksheet holds every safety item once, word for word, mapped to the §9 row it rests on."""
+    path = root / SAFETY_REVIEW
+    if not path.exists():
+        return
+    courses = {c.id: c for cs in stages.values() for c in cs}
+    lessons = {l.id for c in courses.values() for m in c.modules for l in m.lessons}
+    items = {
+        item.id: (doc.id, item)
+        for doc in phase5.docs.values()
+        for module_items in doc.items.values()
+        for item in module_items
+        if item.safety
+    }
+    topics = safety_topics(root)
+    course = None
+    for number_, line in enumerate(path.read_text(encoding="utf-8").splitlines(), 1):
+        where = f"{SAFETY_REVIEW}:{number_}"
+        if m := REVIEW_COURSE_RE.match(line):
+            course = m.group(1)
+            continue
+        if not (m := REVIEW_ROW_RE.match(line)):
+            if re.match(rf"^\| {COURSE}\.M\d+\.Q", line):
+                report.error(f"{where}: malformed worksheet row")
+            continue
+        ident, question, answer, why, rests_on, verdict, note = (g.strip() for g in m.groups())
+        if ident in phase5.review:
+            report.error(f"{where}: {ident} appears twice")
+            continue
+        if ident not in items:
+            report.error(f"{where}: {ident} is not a safety item of a course file")
+            continue
+        owner, item = items[ident]
+        if course != owner:
+            report.error(f"{where}: {ident} belongs under the heading of {owner}")
+        for name, mine, theirs in (("question", question, item.question), ("answer", answer, item.answer), ("why", why, item.why)):
+            if mine != theirs:
+                report.error(f"{where}: {ident}'s {name} differs from {owner}.md; copy it again and clear the verdict")
+        if c := COURSE_RULE_RE.match(rests_on):
+            if c.group(1) not in lessons:
+                report.error(f"{where}: {ident} rests on {c.group(1)}, which is not a lesson in the outline")
+        else:
+            for topic in rests_on.split("; "):
+                if topic not in topics:
+                    report.error(f"{where}: {ident} names §9 row {topic!r}, which is not a row of assessment §9")
+        if verdict not in VERDICTS:
+            report.error(f"{where}: verdict {verdict!r} is not one of agrees, disagrees (or empty)")
+        elif verdict == "disagrees" and not note:
+            report.error(f"{where}: {ident} disagrees without a note")
+        phase5.review[ident] = (courses[owner].stage, verdict)
+    for ident in sorted(set(items) - set(phase5.review)):
+        report.error(f"{SAFETY_REVIEW}: safety item {ident} ({items[ident][0]}) is missing")
+
+
+def review_summary(phase5: Phase5) -> str:
+    """The generated log summary of the worksheet: items per stage by verdict."""
+    rows = ["| Stage | Safety items | Agrees | Disagrees | Not yet read |", "|---|---|---|---|---|"]
+    totals = [0, 0, 0, 0]
+    for stage in STAGES:
+        verdicts = [v for s, v in phase5.review.values() if s == stage]
+        counts = [len(verdicts), verdicts.count("agrees"), verdicts.count("disagrees"), verdicts.count("")]
+        totals = [a + b for a, b in zip(totals, counts)]
+        rows.append(f"| {stage} | " + " | ".join(str(n) for n in counts) + " |")
+    rows.append("| **Total** | " + " | ".join(f"**{n}**" for n in totals) + " |")
+    return "\n".join(rows)
 
 
 def plain_title(title: str) -> str:
@@ -1673,6 +1769,8 @@ def main(argv: list[str] | None = None) -> int:
         sync_generated(path, tables, args.write, report, optional=True)
     for path, tables in phase5_tables(stages, phase1, phase4, phase5).items():
         sync_generated(path, tables, args.write, report)
+    if (args.root / SAFETY_REVIEW).exists():
+        sync_generated(args.root / SAFETY_REVIEW, {"summary": review_summary(phase5)}, args.write, report)
     for warning in report.warnings:
         print(f"warning: {warning}")
     for error in report.errors:
@@ -1690,6 +1788,11 @@ def main(argv: list[str] | None = None) -> int:
         f"{len(phase5.docs)} course file(s), {sum(len(d.exercises) for d in phase5.docs.values())} exercise specs, "
         f"{sum(len(v) for d in phase5.docs.values() for v in d.items.values())} knowledge-check items"
         + (f" (developed: {', '.join(phase5.developed)})" if phase5.developed else "")
+        + (
+            f"; safety review: {sum(1 for _, v in phase5.review.values() if v)} of {len(phase5.review)} items logged"
+            if phase5.review
+            else ""
+        )
     )
     return 0
 

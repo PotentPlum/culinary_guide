@@ -1369,7 +1369,7 @@ household and guest meals.
    Phase 6.
 
    **Answer:** it stays a condition. Phase 6 starts in parallel: the worksheet for the reader is
-   `06-safety-review.md`, and lesson files stay drafts until the reader's log is in and every
+   [`06-safety-review.md`](06-safety-review.md), and lesson files stay drafts until the reader's log is in and every
    flagged item is fixed (Phase 6, `06-lesson-development.md`).
 5. **Sources.** S5 added none. The Phase 6 list stands: the S3 and S4 lists, and the Voedingscentrum page on raw egg
    (the page tried was missing on 2026-11-05).

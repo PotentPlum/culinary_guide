@@ -430,6 +430,43 @@ class ValidateCurriculumTest(unittest.TestCase):
         text = course_doc().replace("#### KNF-1.M1.L1 — Grip", "#### KNF-1.M1.L1 — The grip")
         self.assertIn("KNF-1.M1.L1: titled 'The grip', the outline says 'Grip'", self.course_errors(text))
 
+    def review_errors(self, row: str) -> list[str]:
+        """Errors of the second reader's worksheet holding `row` under KNF-1, with a one-row §9 table."""
+        (self.root / "04-assessment.md").write_text(
+            "# Assessment\n\n## 9. Safety figures\n\n| Topic | Figure | Source |\n|---|---|---|\n"
+            "| Fridge (at home) | 4 °C | x |\n\n## 10. Next\n",
+            encoding="utf-8",
+        )
+        (self.root / vc.SAFETY_REVIEW).write_text(
+            "# Safety review\n\n## S1\n\n### KNF-1 — Knives\n\n| Item | Question | Answer | Why | §9 row | Verdict | Note |\n"
+            f"|---|---|---|---|---|---|---|\n{row}\n",
+            encoding="utf-8",
+        )
+        return self.course_errors(course_doc())
+
+    def test_the_safety_review_holds_every_safety_item_word_for_word(self) -> None:
+        good = "| KNF-1.M1.Q1 | Q? A) x B) y | A | Because. | Fridge |  |  |"
+        self.assertEqual(self.review_errors(good), [])
+        self.assertEqual(self.review_errors(good.replace("| Fridge |", "| — `KNF-1.M1.L2` |")), [])
+        self.assertEqual(self.review_errors(good.replace("|  |  |", "| agrees |  |")), [])
+        errors = self.review_errors("| KNF-1.M1.Q2 | Q? A) x B) y | A | Because. | Fridge |  |  |")
+        self.assertIn("06-safety-review.md:9: KNF-1.M1.Q2 is not a safety item of a course file", errors)
+        self.assertIn("06-safety-review.md: safety item KNF-1.M1.Q1 (KNF-1) is missing", errors)
+        errors = self.review_errors(good.replace("| A |", "| B |"))
+        self.assertIn("06-safety-review.md:9: KNF-1.M1.Q1's answer differs from KNF-1.md; copy it again and clear the verdict", errors)
+
+    def test_the_safety_review_names_real_rows_and_explains_disagreements(self) -> None:
+        good = "| KNF-1.M1.Q1 | Q? A) x B) y | A | Because. | Fridge |  |  |"
+        errors = self.review_errors(good.replace("| Fridge |", "| Fridge; Freezer |"))
+        self.assertIn("06-safety-review.md:9: KNF-1.M1.Q1 names §9 row 'Freezer', which is not a row of assessment §9", errors)
+        errors = self.review_errors(good.replace("| Fridge |", "| — `KNF-1.M1.L9` |"))
+        self.assertIn("06-safety-review.md:9: KNF-1.M1.Q1 rests on KNF-1.M1.L9, which is not a lesson in the outline", errors)
+        errors = self.review_errors(good.replace("|  |  |", "| disagrees |  |"))
+        self.assertIn("06-safety-review.md:9: KNF-1.M1.Q1 disagrees without a note", errors)
+        self.assertEqual(self.review_errors(good.replace("|  |  |", "| disagrees | B is also right |")), [])
+        errors = self.review_errors(good.replace("|  |  |", "| maybe |  |"))
+        self.assertIn("06-safety-review.md:9: verdict 'maybe' is not one of agrees, disagrees (or empty)", errors)
+
     def test_a_knowledge_check_replaces_an_exercise_only_for_quiz_only_rows(self) -> None:
         row = "| TS-KNF | 2 | knowledge check | quiz — the cut names |"
         self.write_entries(knf=entry("TS-KNF", "Knife skills", {2: "quiz", 3: "measure, photo"}))
