@@ -1,10 +1,11 @@
 # Phase 6 — Lesson development
 
-Status: **S3 in progress** (2026-11-05). Phase 5 is complete ([its overview](05-course-development.md)). The second
-reader's worksheet is open ([`06-safety-review.md`](06-safety-review.md)). This phase runs in parallel with it (S5
-review answer 4): lesson files are drafts until the reader's log is in (§3). The pilot (`ORI-1` and `SAF-1`, §6) was
-reviewed on 2026-11-05, and its answers are applied (§2, §5, §6.3). All ten S1 lesson files are written, and their
-review answers are applied (§7). All eleven S2 lesson files are written, and their review answers are applied (§8).
+Status: **S3 lessons ready for review** (2026-11-05). Phase 5 is complete ([its overview](05-course-development.md)).
+The second reader's worksheet is open ([`06-safety-review.md`](06-safety-review.md)). This phase runs in parallel with
+it (S5 review answer 4): lesson files are drafts until the reader's log is in (§3). The pilot (`ORI-1` and `SAF-1`, §6)
+was reviewed on 2026-11-05, and its answers are applied (§2, §5, §6.3). All ten S1 lesson files are written, and their
+review answers are applied (§7). All eleven S2 lesson files are written, and their review answers are applied (§8). All
+thirteen S3 lesson files are written and wait for review (§9).
 
 **Courses developed:** ORI-1, SAF-1, WRK-1, EQP-1, KNF-1, TST-1, HEA-1, EGG-1, VEG-1, STA-1, SCI-2, HEA-2, KNF-2, STK-2, SAU-2, POU-2, MEA-2, FSH-2, LEG-2, BAK-2, BRD-2, SAF-3, FLV-3, BUT-3, SLW-3, FIR-3, GRD-3, PRS-3, VEG-3, PST-3, BRD-3, CUI-3, KMG-3, NUT-3
 
@@ -421,3 +422,120 @@ words.
 
 The answers are applied. S3 is written in outline order, one commit per course, with a stop for review at the end of
 S3 (§9).
+
+## 9. End of S3
+
+### 9.1 What was delivered
+
+All thirteen S3 courses have a lesson file, every one a draft until the second reader's log is in (§3). Words are
+counted without the generated blocks.
+
+| Course | Lessons | Exercises | Words | Words per lesson (range, average) | Words per exercise (range, average) |
+|---|---|---|---|---|---|
+| [`SAF-3`](06-lessons/S3/SAF-3.md) | 5 | 2 | about 4,000 | 490–620, about 550 | 330–420, about 370 |
+| [`FLV-3`](06-lessons/S3/FLV-3.md) | 14 | 7 | about 9,000 | 390–520, about 440 | 260–430, about 340 |
+| [`BUT-3`](06-lessons/S3/BUT-3.md) | 9 | 4 | about 6,000 | 390–520, about 440 | 350–410, about 380 |
+| [`SLW-3`](06-lessons/S3/SLW-3.md) | 12 | 7 | about 8,200 | 390–510, about 430 | 230–430, about 370 |
+| [`FIR-3`](06-lessons/S3/FIR-3.md) | 12 | 7 | about 8,200 | 390–530, about 420 | 230–430, about 360 |
+| [`GRD-3`](06-lessons/S3/GRD-3.md) | 11 | 6 | about 7,100 | 380–460, about 410 | 230–430, about 340 |
+| [`PRS-3`](06-lessons/S3/PRS-3.md) | 10 | 7 | about 8,800 | 480–620, about 560 | 300–420, about 360 |
+| [`VEG-3`](06-lessons/S3/VEG-3.md) | 10 | 6 | about 7,100 | 400–480, about 450 | 240–430, about 350 |
+| [`PST-3`](06-lessons/S3/PST-3.md) | 14 | 7 | about 9,500 | 400–590, about 470 | 240–420, about 330 |
+| [`BRD-3`](06-lessons/S3/BRD-3.md) | 11 | 6 | about 7,100 | 390–510, about 430 | 240–380, about 320 |
+| [`CUI-3`](06-lessons/S3/CUI-3.md) | 34 | 18 | about 21,500 | 390–500, about 440 | 240–420, about 320 |
+| [`KMG-3`](06-lessons/S3/KMG-3.md) | 9 | 5 | about 6,300 | 400–520, about 460 | 250–400, about 340 |
+| [`NUT-3`](06-lessons/S3/NUT-3.md) | 6 | 3 | about 4,100 | 440–510, about 480 | 240–310, about 280 |
+| **S3** | **157** | **85** | **about 106,700** | about 450 | about 340 |
+
+Every lesson and exercise is within the ranges (380–620 and 230–430 words). S1 to S3 together come to about 283,000
+words in 34 lesson files.
+
+### 9.2 Decisions
+
+1. **The format and the length are kept,** as in S1 and S2 (§7.2, §8.2). Every file passes the validator's checks.
+2. **No course file was edited while S3 was written.** Where a course file and assessment §9 disagree, the lesson
+   follows assessment §9 and the difference is a question in §9.3. Examples: a mousse with raw egg kept 24 hours, not 2
+   days (`PST-3`); a reheated pie "steaming hot throughout", not 74 °C (`PST-3`); a broken emulsion repaired with a
+   pasteurised yolk (`GRD-3`).
+3. **Preserving follows tested recipes only** (assessment §9, home canning and home preserving [S27]). `PRS-3` names
+   three NCHFP recipes, checked on the site on 2026-11-05: *Pickled Beets*, *Plum Jam with Powdered Pectin* and *Apple
+   Chutney*. Each is followed in its US measures; the metric figures are for reading only. Figures on the NCHFP pages
+   that are not in assessment §9 or the course file (storage temperatures, the jelly set point) are given in words:
+   "stored cool", "the temperature the tested recipe gives".
+4. **Safety lines the course files imply are written out,** each from an assessment §9 row: the liaison of the
+   *blanquette* and the custard tarts at 71 °C; small fish on the plancha at 63 °C; cured meats and soft-set eggs not
+   served to risk groups; the bean rule for *rajma* and Mexican beans; confits "within days" given as 2 days; the full
+   cooling standard for terrines and batches. Allergens are named wherever a dish brings one (sesame, tree nuts,
+   crustaceans, fish, soy, lupin, milk, gluten).
+5. **Oven settings the course files lack** are left out, as the S2 review agreed (§8.3, answer 4): the probe, the skewer
+   or the course file's own core figure judges the result (`BUT-3` roasts, `VEG-3` whole roasting, `BRD-3` rye).
+6. **Recipes and quantities that a course file leaves to Phase 6** are written in the lesson and listed in §9.3. None is
+   a safety figure.
+7. **No unsourced claims.** While writing, these were taken out or reworded: a formula for Hamelman's water
+   temperature (`BRD-3`); a method for stabilising yoghurt (`CUI-3`); a claim that frozen food stays safe in
+   the freezer (`KMG-3`).
+
+### 9.3 Questions for the review
+
+1. **The S3 lessons.** Are they right for a home learner? I recommend reviewing three files closely and sampling the
+   rest: `PRS-3` (canning, curing and fermenting), `GRD-3` (cured fish, terrines, raw-egg emulsions) and `CUI-3` (the
+   largest file, eight traditions).
+2. **Safety readings the course files don't state.** I recommend moving each into its course file as a logged edit (§5):
+   - **`SLW-3.M2.L2`:** the *blanquette* liaison brought back to at least 71 °C on the probe without boiling (the
+     egg-thickened row), as `STK-2` was after the S2 review;
+   - **`PST-3.M3.L2`:** custard tarts and the *quiche* probed in the centre to at least 71 °C, as `BAK-2` was;
+   - **`FIR-3.M5.L1`:** small fish on the plancha probed to 63 °C (the fish row);
+   - **`CUI-3.M4` and `M8`:** cured meats and soft-set eggs (*tortilla*, *oyakodon*) named for risk groups; the bean
+     rule for *rajma* (`CUI-3.M6.L3`) and Mexican beans (`CUI-3.M9.L1`);
+   - **`PRS-3` and `VEG-3`:** confits and dried food in oil "within days" given as 2 days (the leftovers row, with the
+     garlic-in-oil row);
+   - **`GRD-3`:** the terrine cooled by the full standard (57 °C to 21 °C within 2 hours, 5 °C or below within 6), where
+     the course file says "within the 2-hour limit";
+   - **`VEG-3.M4.X1`:** an allergen note (lupin, soy, sesame, milk, mustard), since lupin is one of the 14 groups.
+3. **Corrections to course files.** I recommend each, logged in §5:
+   - **`SAF-3.M1.L3`:** "a cool room" for sauerkraut sits beside the assessment §9 figure of 21–24 °C; drop "cool";
+   - **`FLV-3`, Assessment criteria:** "the one safety item" should read "every safety item": there are two
+     (`FLV-3.M1.Q7`, `FLV-3.M4.Q8`);
+   - **`FIR-3.M6.X1`:** its evidence line says `TS-FIRE` level 4 is completed "in S4 and the capstone"; the intro and
+     "What it feeds" say S5 (`IND-5.M5.X1`). Align it to S5;
+   - **`GRD-3.M2.L1`:** "a fresh yolk" for repairing a broken emulsion becomes "a pasteurised yolk" (the raw-egg row);
+   - **`PST-3.M4.L3`:** a mousse with raw egg is kept at most 24 hours (the raw-egg row), one on a cooked base at most
+     2 days; the course file says 2 days for every mousse;
+   - **`PST-3.M3.L3`:** drop "(74 °C)" after "steaming hot"; assessment §9's reheating row gives no figure;
+   - **`CUI-3.M6.L2`:** yoghurt "added off the boil or stabilised": drop "or stabilised", or name a sourced method.
+4. **Tested recipes in `PRS-3`.**
+   - NCHFP has no tested refrigerator-pickle recipe. The lesson's floor is the pickling solution of its *Quick
+     Fresh-Pack Dill Pickles* (3 parts 5 % vinegar to 4 parts water), with no keeping time beyond the learner's own
+     quality date. I recommend accepting this.
+   - NCHFP has no tested canned pumpkin, beetroot or red onion chutney, so the lesson uses its *Apple Chutney*, which
+     includes raisins and a red pepper. I recommend changing the course file's example to the tested chutney, rather
+     than allowing an untested one.
+5. **Quantities chosen in the lessons.** I recommend leaving these in the lessons, since each course file hands them to
+   Phase 6, and none is a safety figure:
+   - the `GRD-3` gravad ratio (5 % salt and 5 % sugar) and the terrine's salt (1.6 %);
+   - the `PRS-3` equilibrium cure (2.5 % salt and 1 % sugar);
+   - the `FLV-3` carrot comparison;
+   - the `PST-3` formulas (choux, rough puff, *crème anglaise*, the mousse ratios);
+   - the `BRD-3` sourdough, *poolish* and rye formulas, and the starter routine;
+   - the `KMG-3` example week and worked costing;
+   - the `CUI-3` and `NUT-3` example menus.
+6. **Smaller design questions:**
+   - **`BUT-3`:** the duck breast is cooked to 75 °C, as the course file says. Should S4 offer the low-temperature
+     poultry table of assessment §9 for a pinker breast? I recommend leaving it to S4.
+   - **`NUT-3` and `KMG-3`:** the `CR-MENU` balance checklist says fish twice a week; the *Schijf van Vijf* says once a
+     week [S48]. I recommend aligning the checklist to "fish at least once a week" and citing [S48].
+   - **`KMG-3.M5`:** the lesson lists allergens under a house recipe's ingredients. I recommend adding that line to the
+     house-recipe template in the course file.
+   - **`CUI-3.M9.L4`:** the *agua fresca* uses rhubarb; the lesson says "the stalks only". I recommend the same words in
+     the course file.
+7. **Materials still to make:** the reference images for the AI review of every S3 course. I recommend making them
+   while the dishes are tested, before Phase 7, as for S2.
+8. **The second reader.** The worksheet is still at 0 of 278 items, so all 34 files stay drafts. I recommend reading in
+   stage order: the 48 S1 items, the 62 S2 items, then the 107 S3 items.
+9. **S4 next.** I recommend writing S4 in the order of the course table (`CLS-4`, `CUI-4`, `PRO-4`, `PST-4`, `MOD-4`,
+   `PLT-4`, `RDV-4`, `MNU-4`), one commit per course, and stopping for review at the end of S4. It has 84 lessons, 47
+   exercises and 51 safety items.
+
+### 9.4 Next
+
+After this review I apply the answers (the course-file edits logged in §5), then write S4 as answered in §9.3.
