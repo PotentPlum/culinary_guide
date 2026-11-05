@@ -1,10 +1,10 @@
 # Phase 6 — Lesson development
 
-Status: **S2 in progress** (2026-11-05). Phase 5 is complete ([its overview](05-course-development.md)). The
-second reader's worksheet is open ([`06-safety-review.md`](06-safety-review.md)). This phase runs in parallel with it
-(S5 review answer 4): lesson files are drafts until the reader's log is in (§3). The pilot (`ORI-1` and `SAF-1`, §6) was
-reviewed on 2026-11-05, and its answers are applied (§2, §5, §6.3). All ten S1 lesson files are written, and their
-review answers are applied (§7).
+Status: **S2 lessons ready for review** (2026-11-05). Phase 5 is complete ([its overview](05-course-development.md)).
+The second reader's worksheet is open ([`06-safety-review.md`](06-safety-review.md)). This phase runs in parallel with
+it (S5 review answer 4): lesson files are drafts until the reader's log is in (§3). The pilot (`ORI-1` and `SAF-1`, §6)
+was reviewed on 2026-11-05, and its answers are applied (§2, §5, §6.3). All ten S1 lesson files are written, and their
+review answers are applied (§7). All eleven S2 lesson files are written (§8).
 
 **Courses developed:** ORI-1, SAF-1, WRK-1, EQP-1, KNF-1, TST-1, HEA-1, EGG-1, VEG-1, STA-1, SCI-2, HEA-2, KNF-2, STK-2, SAU-2, POU-2, MEA-2, FSH-2, LEG-2, BAK-2, BRD-2
 
@@ -300,5 +300,98 @@ At this rate the remaining stages come to roughly 250,000 words more, less where
 
 ### 7.4 Next
 
-The answers are applied. S2 is written in outline order, one commit per course, with a stop for review at the end of
-S2 (§8).
+The answers are applied. S2 is written in outline order, one commit per course; its review is in §8.
+
+## 8. End of S2
+
+### 8.1 What was delivered
+
+All eleven S2 courses have a lesson file, every one a draft until the second reader's log is in (§3). Words are counted
+without the generated blocks.
+
+| Course | Lessons | Exercises | Words | Words per lesson (range, average) | Words per exercise (range, average) |
+|---|---|---|---|---|---|
+| [`SCI-2`](06-lessons/S2/SCI-2.md) | 11 | 6 | about 7,400 | 370–500, about 470 | 220–330, about 280 |
+| [`HEA-2`](06-lessons/S2/HEA-2.md) | 12 | 7 | about 8,400 | 410–590, about 480 | 250–390, about 300 |
+| [`KNF-2`](06-lessons/S2/KNF-2.md) | 5 | 4 | about 4,300 | 420–600, about 520 | 290–350, about 320 |
+| [`STK-2`](06-lessons/S2/STK-2.md) | 14 | 7 | about 8,900 | 390–510, about 440 | 240–420, about 320 |
+| [`SAU-2`](06-lessons/S2/SAU-2.md) | 12 | 9 | about 10,500 | 470–620, about 550 | 260–410, about 370 |
+| [`POU-2`](06-lessons/S2/POU-2.md) | 13 | 6 | about 9,200 | 390–580, about 500 | 270–420, about 370 |
+| [`MEA-2`](06-lessons/S2/MEA-2.md) | 14 | 7 | about 9,800 | 400–550, about 470 | 240–430, about 360 |
+| [`FSH-2`](06-lessons/S2/FSH-2.md) | 12 | 6 | about 8,200 | 400–590, about 470 | 240–420, about 340 |
+| [`LEG-2`](06-lessons/S2/LEG-2.md) | 10 | 5 | about 7,200 | 380–560, about 490 | 270–400, about 350 |
+| [`BAK-2`](06-lessons/S2/BAK-2.md) | 17 | 9 | about 12,800 | 390–580, about 500 | 350–430, about 400 |
+| [`BRD-2`](06-lessons/S2/BRD-2.md) | 11 | 5 | about 8,000 | 430–610, about 490 | 380–420, about 410 |
+| **S2** | **131** | **71** | **about 94,600** | about 490 | about 350 |
+
+Three `SCI-2` units run short of the ranges (`SCI-2.M5.L2`, `SCI-2.M4.X1` and `SCI-2.M5.X1`): they are fixed
+comparisons with short recipes, and nothing was padded to reach a count. S1 and S2 together come to about 176,000
+words.
+
+### 8.2 Decisions
+
+1. **The format and the length are kept,** as in S1 (§7.2). Every file passes the validator's checks.
+2. **Figures in lessons come only from §9 or the course file.** Four course-file edits were needed and are logged in
+   §5: three in `HEA-2` (the boiling-water check, the first fry and the braising oven) and one in `SAU-2` (a raw-yolk
+   sauce kept at most 24 hours, not 2 days).
+3. **Oven settings the course file lacks:**
+   - in `STK-2` (brown stock) and `MEA-2` (the steak finish, the reverse sear), the lesson points to "your oven table's
+     setting";
+   - in `BAK-2` and `BRD-2`, each recipe uses one of the course file's own figures (for example 170–180 °C for butter
+     cakes, 230–250 °C for bread), and the bake is judged by the skewer, the wobble or the probe, not the clock.
+4. **Recipes, frameworks and checklists that a course file leaves "for Phase 6 to write" are written in the lesson.**
+   For example: the mayonnaise and the hollandaise, the six fault cards (`SAU-2.M7.X1`), the freshness checklist
+   (`FSH-2.M1.X1`), the butcher questions (`MEA-2.M2.X1`), and every `BAK-2` and `BRD-2` formula. They are listed in
+   §8.3 so the review can move any of them into its course file.
+5. **Comparisons stay within §9.** Raw and warm egg sauces use pasteurised egg and are kept at most 24 hours. Rare meat
+   goes only to tasters outside the risk groups. The bean comparison uses chickpeas, as its course file says.
+6. **No unsourced claims.** Statements such as "the most eaten meat" or shelf lives without a source were taken out
+   while writing.
+
+### 8.3 Questions for the review
+
+1. **The S2 lessons.** Are they right for a home learner? I recommend reviewing three files closely and sampling the
+   rest. The three are `SAU-2` (raw and warm egg), `POU-2` (poultry) and `BAK-2` (custards and creams).
+2. **Safety readings the course files don't state.** I recommend moving each into its course file as a logged edit:
+   - **`STK-2.M4.L2`:** a soup thickened with a liaison is heated to at least 71 °C without boiling. The lesson takes
+     this from the egg-thickened row of §9, by analogy.
+   - **The quiche and the baked custards of `BAK-2`:** probed to at least 71 °C, as `EGG-1.M4.L1` does. §9's row names
+     desserts; should its wording also name savoury custards?
+   - **Two dishes probed to 75 °C:** the *soepballetjes* in `STK-2` (minced meat) and the chicken liver in `POU-2.M5.L2`
+     (the poultry-offal row).
+   - **`BRD-2.M3.L1` adds loading rules:** the lid is lifted away from you, the water is poured with your arm clear of
+     the steam, and the pot has an ovenproof knob. Check them against the module's two safety items.
+3. **Corrections to course files:**
+   - **`POU-2.M1.L1`** groups *scharrel* with free range, but *scharrel* is indoor housing; the lesson separates them.
+   - **`FSH-2`** names a *garnalenkroket*. The lesson replaces it with shrimp on toast or a stuffed tomato, because a
+     croquette needs the thick roux and deep-frying. Should the croquette stay as an option?
+   - **`SCI-2.M4.L2` and `SAU-2`:** pasteurised egg is missing from their Materials. The `SAU-2` blender mayonnaise
+     uses pasteurised whole egg, where the course file says "a whole egg".
+   - **`KNF-2`:** the chiffonade has no tolerance, and the edge-log bands are defined only in the lesson. I recommend
+     adding a range (for example 1–2 mm ribbons) and the four bands.
+   - **`POU-2.M6`:** the brining comparison keeps the course file's unsalted control. A control salted just before
+     roasting would test the timing of the salt; is that the better design?
+4. **Oven figures.** I recommend keeping the oven-table references in `STK-2` and `MEA-2`. A figure would have to be
+   checked against a source first, and the learner's own oven table is already the course's method (`EQP-1.M2.X1`).
+5. **Quantities chosen in the lessons.** I recommend leaving these in the lessons, since each course file hands them to
+   Phase 6:
+   - the `SCI-2` starch, brine and dough ratios;
+   - the `STK-2` fix-test quantities;
+   - the `SAU-2` sauce ratios (1 yolk to 175 ml of oil; 3 yolks to 200 g of butter);
+   - the `POU-2` traybake (about 200 °C, 40–50 minutes);
+   - the `MEA-2` price-per-portion example;
+   - the `FSH-2` cooking times;
+   - the `LEG-2` comparison pots and the *paneer*;
+   - the `BAK-2` formulas, oven settings and the milk-free swap;
+   - the `BRD-2` formulas (the lean loaf at 68 %, the soft rolls).
+6. **Materials still to make:** the reference images for the AI review of every course, and the five photos of faulty
+   cakes for `BAK-2.M4.L3`. I recommend making them while the bakes are tested, before Phase 7.
+7. **The second reader.** The worksheet is still at 0 of 278 items, so all 21 files stay drafts. I recommend reading
+   the 48 S1 items and then the 62 S2 items, so both stages can be finalised together.
+8. **S3 next.** I recommend writing S3 in outline order (`SAF-3`, `FLV-3`, `BUT-3`, `SLW-3`, `FIR-3`, `GRD-3`, `PRS-3`,
+   `VEG-3`, `PST-3`, `BRD-3`, `CUI-3`, `KMG-3`, `NUT-3`), one commit per course, and stopping for review at the end of
+   S3. It has 107 safety items, the most of any stage.
+
+### 8.4 Next
+
+Waiting for the answers to §8.3.
