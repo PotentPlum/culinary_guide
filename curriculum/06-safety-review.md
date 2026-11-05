@@ -9,7 +9,7 @@ read a condition for Phase 6 ([Phase 5 §9.3](05-course-development.md#93-gaps-a
 mapping, so the author can't be the reader. The program's owner can be.
 
 Phase 6 runs in parallel (S5 review answer 4). The lesson files it writes stay drafts until this log is complete and
-every disagreement is resolved (Phase 6 §3, in `06-lesson-development.md`).
+every disagreement is resolved ([Phase 6 §3](06-lesson-development.md#3-from-draft-to-final)).
 
 ## How to read
 

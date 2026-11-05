@@ -2,7 +2,7 @@
 
 Status: **Phase 5 complete** (2026-11-05). S1 to S5 are reviewed and their answers applied (§7.3, §8.3, §9.3, §10.3
 and §11.3), so every course has a reviewed course file. What Phase 6 needs first is in §11.4; Phase 6 itself is in
-`06-lesson-development.md`.
+[`06-lesson-development.md`](06-lesson-development.md).
 
 **Stages developed:** S1, S2, S3, S4, S5
 
@@ -1370,11 +1370,11 @@ household and guest meals.
 
    **Answer:** it stays a condition. Phase 6 starts in parallel: the worksheet for the reader is
    [`06-safety-review.md`](06-safety-review.md), and lesson files stay drafts until the reader's log is in and every
-   flagged item is fixed (Phase 6, `06-lesson-development.md`).
+   flagged item is fixed ([Phase 6](06-lesson-development.md)).
 5. **Sources.** S5 added none. The Phase 6 list stands: the S3 and S4 lists, and the Voedingscentrum page on raw egg
    (the page tried was missing on 2026-11-05).
 
-   **Answer:** Phase 6 re-checks them first (Phase 6 §2).
+   **Answer:** Phase 6 re-checks them first ([Phase 6 §2](06-lesson-development.md#2-source-re-checks)).
 
 ### 11.4 Phase 5 complete, and what Phase 6 needs first
 
