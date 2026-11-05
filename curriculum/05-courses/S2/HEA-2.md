@@ -250,7 +250,7 @@ celeriac, red cabbage, and one unfamiliar ingredient (Jerusalem artichoke, salsi
   - always confirm the safe core temperature
     ([assessment §9](../../04-assessment.md#9-safety-figures-used-in-assessment)) after the rest.
 
-  For poultry that means 74 °C, for a whole roast the time-temperature table.
+  For poultry that means 75 °C, for a whole roast the time-temperature table.
 - **Why resting works:** the gradient evens out, and the juices thicken slightly as the meat cools, so less runs out on
   slicing.
 
@@ -311,7 +311,7 @@ check are done before the roast, as part of the exercise.
 | HEA-2.M2.Q2 | multiple choice | HEA-2.M2.L1 | — | What is a "reverse sear"? A) searing after boiling B) roasting low until nearly done, then a hot sear or blast for the crust C) searing both sides twice D) cooling then searing | B | It gives an even interior and a crust. |
 | HEA-2.M2.Q3 | multiple choice | HEA-2.M2.L1 | — | Why roast on a rack? A) for show B) so hot air reaches the underside and it doesn't stew in its juices C) to catch fat only D) to cook faster | B | Air all round, a crisp underside. |
 | HEA-2.M2.Q4 | multiple choice | HEA-2.M2.L2 | — | Which roast has the largest carryover? A) a small chicken thigh from a low oven B) a large joint from a hot oven C) a thin steak D) a fish fillet | B | Size and a hot oven store more heat in the outer layers. |
-| HEA-2.M2.Q5 | multiple choice | HEA-2.M2.L2 | yes | You took a whole chicken out at 70 °C, expecting carryover. What must you do? A) carve it at once B) probe it again after resting and confirm 74 °C in the thickest part C) assume it is fine D) put it back for an hour | B | Carryover is never assumed for safety. |
+| HEA-2.M2.Q5 | multiple choice | HEA-2.M2.L2 | yes | You took a whole chicken out at 70 °C, expecting carryover. What must you do? A) carve it at once B) probe it again after resting and confirm 75 °C in the thickest part C) assume it is fine D) put it back for an hour | B | Carryover is never assumed for safety. |
 | HEA-2.M2.Q6 | multiple choice | HEA-2.M2.L2 | — | Why does a rested roast lose less juice on slicing? A) it is colder B) the gradient evens out and the juices thicken slightly as it cools C) it absorbs the juice D) it doesn't | B | Rest by size: minutes for a steak, longer for a joint. |
 | HEA-2.M2.Q7 | multiple choice | HEA-2.M2.L2 | — | Why rest a roast loosely covered rather than tightly wrapped? A) hygiene B) tight wrapping traps steam and softens the crust C) to cool it D) it doesn't matter | B | Keep the crust you roasted for. |
 | HEA-2.M2.Q8 | calculation | HEA-2.M2.L2 | — | Your joints usually rise 4 °C while resting. You want a final 63 °C. At what core do you take it out? | 59 °C | 63 − 4, then confirm after resting. |
@@ -752,7 +752,7 @@ sauce.
 1. Write why this cut and vegetable suit a braise.
 2. Brown, deglaze and braise in the oven.
 3. Test for tenderness.
-4. Probe the meat to 74 °C or above.
+4. Probe the meat to 75 °C or above.
 5. Reduce the sauce.
 6. Photograph the plate and a spoon of sauce.
 7. Collect the household cards.
@@ -809,7 +809,7 @@ sauce.
 
 **Concepts:**
 - **A fair comparison of methods** (`SCI-2.M1`):
-  - the same cut (chicken thighs), salted the same, to the same safe core temperature (74 °C);
+  - the same cut (chicken thighs), salted the same, to the same safe core temperature (75 °C);
   - only the method changes: roasted, braised, pan-fried.
 - **What to measure:**
   - time;
@@ -827,7 +827,7 @@ sauce.
 
 **Faults:**
 - Different seasoning per batch.
-- Taking one batch further than 74 °C.
+- Taking one batch further than 75 °C.
 - An unblinded tasting.
 
 #### HEA-2.M6.X1 — The three-method lab
@@ -846,7 +846,7 @@ sauce.
 
 **Procedure:**
 1. Write the plan.
-2. Cook the three batches to 74 °C, weighing before and after.
+2. Cook the three batches to 75 °C, weighing before and after.
 3. Code the samples; the tasters rank them blind.
 4. Write the conclusion and the method for a weeknight dinner and for a Sunday.
 

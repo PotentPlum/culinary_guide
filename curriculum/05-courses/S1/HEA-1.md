@@ -152,7 +152,7 @@ At 5 / 6.5 / 8 hours a week the course takes about **6.1 / 4.7 / 3.8 weeks** of 
 **Faults:**
 - Probing only once at removal.
 - Slicing at once.
-- Relying on carryover for poultry to reach 74 °C without checking.
+- Relying on carryover for poultry to reach 75 °C without checking.
 
 #### HEA-1.M1.X1 — Boiled, steamed and roasted potato
 
@@ -393,12 +393,12 @@ AI review compares the browning colour and evenness. Reference set for Phase 6:
   - press a fish fillet gently for the first seconds so it doesn't curl;
   - in both cases, leave it until it releases.
 - **Doneness** is checked with the probe ([assessment §9](../../04-assessment.md#9-safety-figures-used-in-assessment)):
-  chicken 74 °C; fish 63 °C, or opaque and flaking.
+  chicken 75 °C; fish 63 °C, or opaque and flaking.
 
 **Sessions:**
 1. A fish fillet (60 min): a skin-on fillet (mackerel, saithe or farmed sea bass) pan-fried skin-side down; probe and
    photograph the skin.
-2. A chicken thigh (60 min): skin-side down from a moderate pan until crisp, turned, probed to 74 °C.
+2. A chicken thigh (60 min): skin-side down from a moderate pan until crisp, turned, probed to 75 °C.
 
 **Cues:** the skin crisp and golden over its whole surface; the fish releasing by itself; the probe reading in range.
 
@@ -600,7 +600,7 @@ and no burning at the chosen heat.
 **Concepts:**
 - **Roasting a protein** to a measured core temperature
   ([assessment §9](../../04-assessment.md#9-safety-figures-used-in-assessment)):
-  - chicken thighs: 74 °C;
+  - chicken thighs: 75 °C;
   - a pork tenderloin, an intact cut: 63 °C held for 15 seconds.
 
   Roasting is not done by time.
@@ -643,7 +643,7 @@ chooses the roots by season.
 
 **Evidence:** photo, measure, log:
 - `TS-DRY` level 2: even browning on the vegetables and the skin;
-- `SA-TEMP` level 3: the chicken probed to 74 °C and logged, and the leftovers into the fridge within 2 hours, logged.
+- `SA-TEMP` level 3: the chicken probed to 75 °C and logged, and the leftovers into the fridge within 2 hours, logged.
 
 AI review checks the browning and the spacing. Reference set for Phase 6:
 - *Competent*: browned, spaced pieces;
@@ -665,7 +665,7 @@ directly. The core temperatures themselves are checked in `SAF-1.M3` and at `MS-
 | Competency | Level | Exercises | Evidence |
 |---|---|---|---|
 | TS-DRY | 2 | `HEA-1.M4.X1` | photo — vegetables and chicken skin evenly browned without burning |
-| SA-TEMP | 3 | `HEA-1.M4.X1` | measure, log — chicken probed to 74 °C after resting and logged; leftovers into the fridge within 2 hours, logged |
+| SA-TEMP | 3 | `HEA-1.M4.X1` | measure, log — chicken probed to 75 °C after resting and logged; leftovers into the fridge within 2 hours, logged |
 
 ### HEA-1.M5 — Moist heat
 
@@ -778,7 +778,7 @@ directly. The core temperatures themselves are checked in `SAF-1.M3` and at `MS-
   to give flavour.
 - **Poaching chicken breast below a simmer** cooks it gently and evenly, so it stays juicy.
   - Start the breast in the warm liquid, bring the liquid to about 75–80 °C and hold it there.
-  - The breast is done at 74 °C at the core ([assessment §9](../../04-assessment.md#9-safety-figures-used-in-assessment)).
+  - The breast is done at 75 °C at the core ([assessment §9](../../04-assessment.md#9-safety-figures-used-in-assessment)).
 - **Doneness by cue and probe:** firm but springy when pressed, juices clear; confirmed with the probe (cue first, then
   reading).
 
@@ -786,7 +786,7 @@ directly. The core temperatures themselves are checked in `SAF-1.M3` and at `MS-
 1. Poach (75 min): a court bouillon and two chicken breasts poached, with the liquid temperature logged every 5 minutes
    and the core probed at the end.
 
-**Cues:** the liquid held without bubbles; the breast juicy, and 74 °C at the core.
+**Cues:** the liquid held without bubbles; the breast juicy, and 75 °C at the core.
 
 **Faults:**
 - Boiling the breast, which makes it stringy and dry.
@@ -891,7 +891,7 @@ before checking.
 | HEA-1.M5.Q3 | multiple choice | HEA-1.M5.L2 | — | Why blanch in a large pot of water? A) to dilute the salt B) so the temperature stays up when the vegetables go in C) to save time heating D) for colour only | B | A small pot drops below the boil and the vegetables stew. |
 | HEA-1.M5.Q4 | multiple choice | HEA-1.M5.L2 | — | Why are blanched beans shocked in ice water? A) to wash them B) to stop the cooking and keep them bright and crisp C) to salt them D) to soften them | B | Residual heat keeps cooking them otherwise. |
 | HEA-1.M5.Q5 | multiple choice | HEA-1.M5.L3 | — | Compared with boiling, steaming vegetables: A) leaches out more vitamins B) leaches out fewer water-soluble nutrients and less flavour C) is slower than roasting D) seasons them from the water | B | The food isn't in the water. |
-| HEA-1.M5.Q6 | multiple choice | HEA-1.M5.L4 | yes | When is a poached chicken breast safe to eat? A) when it is white outside B) at 74 °C at the core C) after 10 minutes D) at 63 °C | B | Poultry: 74 °C, measured at the core. |
+| HEA-1.M5.Q6 | multiple choice | HEA-1.M5.L4 | yes | When is a poached chicken breast safe to eat? A) when it is white outside B) at 75 °C at the core C) after 10 minutes D) at 63 °C | B | Poultry: 75 °C, measured at the core. |
 | HEA-1.M5.Q7 | scenario | HEA-1.M5.L5 | — | Which method would you choose for a thin cod fillet that should stay moist and delicate, and why? | Poaching or steaming: gentle moist heat cooks the fragile flesh evenly without drying or breaking it. | The structure and the wanted result decide the method. |
 | HEA-1.M5.Q8 | scenario | HEA-1.M5.L5 | — | You want carrots that taste sweet and have colour. Roast or boil? Why? | Roast: dry heat browns and concentrates their sugars; boiling can't brown. | Colour and concentration need dry heat. |
 

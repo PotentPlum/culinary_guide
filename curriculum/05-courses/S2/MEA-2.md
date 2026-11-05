@@ -31,7 +31,7 @@ Then it applies it to the four methods a home cook uses most:
 **Doneness** is chosen, not guessed. The learner states a target before cooking and is judged against it after
 resting. The safe figures come from assessment §9:
 - **pork, lamb and other intact meat:** 63 °C for 15 seconds;
-- **minced meat:** 70 °C;
+- **minced meat:** 75 °C;
 - **whole roasts:** the time-temperature table;
 - **beef steaks:** may be served rare when seared on both faces with the colour changed on every outside surface.
 
@@ -148,7 +148,7 @@ pan, and what will happen in a stew.
   - a whole-muscle, intact beef steak may be served rare once it is seared on top and bottom with the colour changed
     on every outside surface, because the bacteria are on the outside;
   - pork, lamb and other intact meat reach 63 °C for 15 seconds;
-  - minced meat reaches 70 °C;
+  - minced meat reaches 75 °C;
   - nothing rare is served to risk groups.
 - **Juiciness against doneness:** the hotter the core, the more the fibres contract and the more juice is lost. The
   learner will weigh it (`SCI-2.M2.L1`).
@@ -845,9 +845,9 @@ cards.
 - **Why mince carries more risk:** bacteria live on the surface of meat. In a steak they stay there and are killed by
   the sear. Mincing spreads the surface through the whole mass, so the centre of a burger is as contaminated as the
   outside.
-- **The figure:** minced meat reaches 70 °C at the core (assessment §9). The Food Code also allows 68 °C for 17 seconds,
-  66 °C for 1 minute or 63 °C for 3 minutes, but the program uses 70 °C because it needs no timing. A pink centre in
-  a burger is never "medium".
+- **The figure:** minced meat reaches 75 °C at the core (assessment §9), the Voedingscentrum's figure. The Food Code
+  also allows 68 °C for 17 seconds, 66 °C for 1 minute or 63 °C for 3 minutes, but the program uses 75 °C because it
+  needs no timing. A pink centre in a burger is never "medium".
 - **Storage:**
   - mince in the fridge at 4 °C, on the bottom shelf;
   - used by its use-by date, or frozen on the day it is bought;
@@ -899,18 +899,18 @@ cards.
   - a tender meatball with a *panade*;
   - a firm, springy one for a soup.
 - **Doneness:**
-  - the probe goes into the centre of the thickest piece: 70 °C;
+  - the probe goes into the centre of the thickest piece: 75 °C;
   - a dimple pressed into the centre of a burger stops it doming.
 
 **Sessions:**
-1. Burgers (60 min): two burgers from 20 % fat mince, one salted in the mix and one on the surface; probed to 70 °C;
+1. Burgers (60 min): two burgers from 20 % fat mince, one salted in the mix and one on the surface; probed to 75 °C;
    cut and compared.
-2. Meatballs (60 min): a batch of meatballs browned and finished in a tomato sauce; probed to 70 °C.
+2. Meatballs (60 min): a batch of meatballs browned and finished in a tomato sauce; probed to 75 °C.
 
 **Cues:**
 - A juicy, loosely textured burger.
 - Meatballs that hold their shape but are tender inside.
-- 70 °C at the centre.
+- 75 °C at the centre.
 
 **Faults:**
 - Lean mince for burgers.
@@ -949,14 +949,14 @@ and cool and reheat the batch within the limits.
 2. Make the two batches, coding them.
 3. Film the shaping.
 4. Brown the meatballs and finish them in the sauce.
-5. Probe the largest of each batch to 70 °C.
+5. Probe the largest of each batch to 75 °C.
 6. Cut one of each and photograph the cross-sections.
 7. Blind tasting on the form.
 8. Cool the leftovers in a shallow container with the core logged until 5 °C.
 9. Reheat them to 74 °C the next day.
 
 **Evidence:** measure, photo, form, video, checklist, written, log:
-- **`TS-PRO` level 3, the mince part:** meatballs at a stated 70 °C, within 3 °C, with an even cross-section.
+- **`TS-PRO` level 3, the mince part:** meatballs at a stated 75 °C, within 3 °C, with an even cross-section.
 - **`FL-TEXT` level 2:** the intended textures named and hit, with a cross-section photo and the tasters' forms.
 - **`SA-HYG` level 4, the mince part:** at least three minutes of raw-mince handling on video with no
   cross-contamination, and a work order with raw protein last. AI review uses the checklist and reference clips of
@@ -975,7 +975,7 @@ and cool and reheat the batch within the limits.
 | ID | Type | Lesson | Safety | Item | Answer | Why |
 |---|---|---|---|---|---|---|
 | MEA-2.M5.Q1 | multiple choice | MEA-2.M5.L1 | yes | Why must a burger be cooked through when a steak may be rare? A) burgers are thinner B) mincing spreads surface bacteria through the whole mass C) beef in burgers is lower quality D) it isn't necessary | B | The surface becomes the centre. |
-| MEA-2.M5.Q2 | multiple choice | MEA-2.M5.L1 | yes | What core temperature does the program use for minced meat? A) 55 °C B) 63 °C C) 70 °C D) 85 °C | C | Assessment §9: 70 °C instantaneous. |
+| MEA-2.M5.Q2 | multiple choice | MEA-2.M5.L1 | yes | What core temperature does the program use for minced meat? A) 55 °C B) 63 °C C) 75 °C D) 85 °C | C | Assessment §9: 75 °C instantaneous. |
 | MEA-2.M5.Q3 | multiple choice | MEA-2.M5.L1 | yes | How is frozen mince thawed? A) on the counter overnight B) in the fridge C) in warm water D) in the sun | B | Keep it at 4 °C or below while it thaws. |
 | MEA-2.M5.Q4 | scenario | MEA-2.M5.L1 | yes | You've shaped meatballs and the pan is hot, and you need salt from the jar. What do you do? | Wash your hands first (or use salt measured out beforehand); then cook; wash the bowl and board in hot water right away. | Raw-mince hands contaminate whatever they touch. |
 | MEA-2.M5.Q5 | multiple choice | MEA-2.M5.L2 | — | What does a *panade* do in meatballs? A) adds flavour only B) holds moisture and interrupts the protein network, so they stay tender C) makes them firmer D) replaces the egg | B | Bread and milk keep meatballs soft. |
@@ -989,7 +989,7 @@ and cool and reheat the batch within the limits.
 |---|---|---|---|
 | SA-TEMP | 4 | `MEA-2.M5.X1` | log, measure — a meatball batch cooled from 57 °C to 21 °C within 2 hours and to 5 °C within 6 hours, logged; reheated to 74 °C or more |
 | SA-HYG | 4 | `MEA-2.M5.X1` | video, checklist, written — at least three minutes of raw-mince handling with no cross-contamination, and a work order with raw protein last |
-| TS-PRO | 3 | `MEA-2.M5.X1` | measure, photo — the mince part: meatballs at a stated 70 °C, within 3 °C, with an even cross-section |
+| TS-PRO | 3 | `MEA-2.M5.X1` | measure, photo — the mince part: meatballs at a stated 75 °C, within 3 °C, with an even cross-section |
 | FL-TEXT | 2 | `MEA-2.M5.X1` | photo, form — the intended textures named and hit, with cross-sections and blind tasters' forms |
 
 ### MEA-2.M6 — Stews introduced
@@ -1174,7 +1174,7 @@ time, apply the same framework to a different classic.
 **Completing the course.** Every module check is passed: the knowledge checks at 80 %, with every safety item correct,
 and the evidence rows met. The following are a *Not yet* for the module, however good the meat:
 - a pork or lamb reading below 63 °C after resting, served as it was;
-- a mince reading below 70 °C, served as it was;
+- a mince reading below 75 °C, served as it was;
 - a roast log outside the table of assessment §9;
 - a rare steak not seared on every outside surface, or served to a risk-group guest.
 

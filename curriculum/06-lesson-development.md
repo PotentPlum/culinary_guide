@@ -1,10 +1,9 @@
 # Phase 6 — Lesson development
 
-Status: **pilot ready for review** (2026-11-05). Phase 5 is complete
-([its overview](05-course-development.md)). The second reader's worksheet is open
-([`06-safety-review.md`](06-safety-review.md)). This phase starts in parallel with it (S5 review answer 4): lesson
-files are drafts until the reader's log is in (§3). The pilot is `ORI-1` and `SAF-1`, the first two courses of S1. Its
-results and the questions for the review are in §6.
+Status: **S1 in progress** (2026-11-05). Phase 5 is complete ([its overview](05-course-development.md)). The second
+reader's worksheet is open ([`06-safety-review.md`](06-safety-review.md)). This phase runs in parallel with it (S5
+review answer 4): lesson files are drafts until the reader's log is in (§3). The pilot (`ORI-1` and `SAF-1`, §6) was
+reviewed on 2026-11-05, and its answers are applied (§2, §5, §6.3).
 
 **Courses developed:** ORI-1, SAF-1
 
@@ -98,7 +97,7 @@ and §11.3). Each was read once on 2026-11-05; no page that failed or refused be
 | NVWA guidance on game and *Trichinella* | No NVWA page found; a 2012 parliamentary answer refused automated access | The wild-boar row stands; it is stricter (inspected supplier only); no change |
 | FSIS poultry and egg pages | Not tried again: the site refused automated access before | The poultry table stays on [S34], the egg rule on [S38]; no change |
 
-**Questions for the review** (§6 collects them at the end of the pilot):
+**Questions for the review** (§6 collects them at the end of the pilot; answered 2026-11-05):
 1. **Core temperatures.** The Voedingscentrum gives at least 75 °C for meat and chicken [S47]. §9 uses the Food Code:
    poultry 74 °C, minced meat 70 °C instantaneous. §9's own rule says the Dutch home advice wins where it is stricter.
    I recommend 75 °C as the instantaneous figure for poultry and for minced meat in §9. Keep the Food Code's
@@ -106,15 +105,23 @@ and §11.3). Each was read once on 2026-11-05; no page that failed or refused be
    S2 and S3, keep intact meat and fish at 63 °C (stricter than the Voedingscentrum's 60 °C for fish), and keep the
    steak row. "74 °C" appears about 150 times in 26 course files, in about 26 safety items, and 70 °C about 50 times;
    the reheating row (74 °C for 15 seconds) would stay, so each mention is checked by hand.
+   **Answer:** as recommended. Applied to §9 (poultry, stuffed foods, wild game, and the instantaneous figure for minced
+   meat, minced fish and offal) and to 141 mentions in the course files and `SAF-1`; reheating, doneness and egg
+   figures, and wrong answer options that stay wrong, were left as they are.
 2. **Dishes with raw egg.** The Voedingscentrum keeps them at most 24 hours [S44]; §9 applies the 2-day leftovers row
    (`SAU-2` mayonnaise). I recommend 24 hours, also for pasteurised egg, because the page makes no exception.
+   **Answer:** as recommended. Added to the raw-egg row of §9; `SAU-2`, `PST-3` and `PST-4` changed.
 3. **The risk-group row.** I recommend adding cold-smoked fish, raw sprouts and, in pregnancy, liver [S46], and noting
    that hard raw-milk cheese is safe.
+   **Answer:** as recommended. The row also names cold cuts made from raw meat, soft raw-milk cheese and raw milk,
+   which the same page lists; smoked fish is any smoked fish "served cold", since the page includes chilled smoked
+   salmon. `GRD-3` and `PRO-4` changed (liver pâté and liver in pregnancy, smoked mackerel, the cheese board).
 4. **Chargers for the siphon.** I recommend adding one line to the tier 3 rule: chargers bought for food use, a few at
    a time.
+   **Answer:** as recommended. Added to the tier 3 rule of §9 and to `MOD-4`.
 
-Until these are answered, lessons use §9 as it stands, and a lesson that rests on a figure under question says so in
-its Safety field.
+Lessons rest on §9 as it now stands. A later source finding that would change a figure is raised here as a question
+first, and the lessons that depend on it say so in their Safety field until it is answered.
 
 ## 3. From draft to final
 
@@ -145,7 +152,13 @@ Changes to an agreed structure are logged here.
 
 | Where | Was | Now | Why |
 |---|---|---|---|
-| — | — | — | — |
+| [Assessment §9](04-assessment.md#9-safety-figures-used-in-assessment), poultry, stuffed foods and wild game | 74 °C instantaneous (Food Code) | 75 °C instantaneous | The Voedingscentrum's *minimaal 75* for meat and chicken [S47] is stricter; pilot review question 1 |
+| §9, minced meat, minced fish and offal | 70 °C instantaneous, or the time table | 75 °C instantaneous, or the time table | As above; the Food Code's times stay as the measured alternative, because the Voedingscentrum gives none |
+| §9, raw-egg row | Kept as leftovers (2 days) | At most 24 hours, also with pasteurised egg | [S44]; pilot review question 2 |
+| §9, risk-group row | Raw or lightly cooked fish, rare meat, soft eggs | Also smoked fish served cold, cold cuts made from raw meat, soft raw-milk cheese and raw milk, raw sprouts; no liver in pregnancy; hard raw-milk cheese is safe | [S46]; pilot review question 3 |
+| §9, tier 3 rule | "The Dutch rules on nitrous oxide are to be checked" | Chargers bought for food use, a few at a time; never inhaled | [S50]; pilot review question 4 |
+| 26 course files and `06-lessons/S1/SAF-1.md` | 74 °C and 70 °C as safe core figures | 75 °C; the 24 worksheet rows whose text changed copied again, their verdicts empty | Follows the §9 change |
+| `BAK-2.M4.L4`, Swiss meringue buttercream | "hot, about 70 °C on the probe" | every part at least 71 °C on the probe | It contradicted the egg-thickened desserts row of §9 (71 °C); found while checking the 70 °C mentions |
 
 ## 6. End of the pilot
 
@@ -177,18 +190,22 @@ Changes to an agreed structure are logged here.
 5. **Figures under question are flagged in the lesson.** `SAF-1.M3.L2` gives the §9 core temperatures and names review
    question 1 in its Safety field.
 
-### 6.3 Questions for the review
+### 6.3 Questions for the review (review answers, 2026-11-05)
 
 1. **The format** (§1.2 and §1.3). Is the lesson layout right: why it matters, you need, explanation, practice, look
    for, faults table, safety, record? I recommend keeping it. The validator holds every later file to it.
+   **Answer:** as recommended.
 2. **The length.** About 430–490 words per lesson or exercise. At that rate the 519 lessons and 272 exercises come to
    about 360,000 words. I recommend keeping it for S1 and S2, where most exercises carry a full recipe, and expecting
    shorter exercise texts from S3, where frameworks and briefs replace recipes.
+   **Answer:** as recommended.
 3. **The four source questions** of §2: 75 °C for poultry and minced meat; 24 hours for dishes with raw egg; cold-smoked
    fish, raw sprouts and liver in the risk-group row; chargers for the siphon. My recommendation for each is in §2.
    Question 1 changes `SAF-1.M3.L2` and many later items, so I recommend answering it before the rest of S1 is written.
+   **Answer:** all four as recommended, applied before the rest of S1 (§2, §5).
 4. **The second reader.** The worksheet is ready, with 0 of 278 items read. Who reads it, and when? Every lesson file
    stays a draft until it is done.
+   **Answer:** open. The lessons go on as drafts, and the question comes back at the end of S1.
 
 ### 6.4 Next
 

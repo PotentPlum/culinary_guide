@@ -548,7 +548,7 @@ room thermometer; pH strips (optional).
 
 **Concepts:**
 - **Duck confit:** the legs (from `BUT-3.M1.X1`) salted by weight overnight in the fridge, rinsed and dried, then cooked
-  slowly submerged in duck fat in a low oven until very tender (the core passes 74 °C long before); cooled in the fat.
+  slowly submerged in duck fat in a low oven until very tender (the core passes 75 °C long before); cooled in the fat.
 - **Garlic confit:** cloves cooked gently in oil until soft and sweet. Garlic in oil is a botulism risk (§9): kept in
   the fridge and used within days, or frozen.
 - **[K] Safe storage in fat:**

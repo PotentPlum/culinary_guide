@@ -162,7 +162,7 @@ At 5 / 6.5 / 8 hours a week the course takes about **4.3 / 3.3 / 2.7 weeks** of 
 **Aim:** break down a duck and a chicken without guidance, record the yield, and use every part.
 
 **Conditions:** framework support: the yield sheet and the three-dish framework. A whole duck broken down into breasts,
-legs, fat and carcass, used in three dishes: the breasts pan-roasted to 74 °C at the core (duck is poultry under assessment §9; a
+legs, fat and carcass, used in three dishes: the breasts pan-roasted to 75 °C at the core (duck is poultry under assessment §9; a
 pink duck breast has no figure there and is not taught), the legs confit (`PRS-3.M4.X1`), and potatoes in
 the rendered fat. The extension: a whole chicken broken down without a video (supremes, legs, wings, the inner fillets),
 because the `TS-FAB` level 3 row asks for a chicken.
@@ -430,7 +430,7 @@ plan and the waste log of `BUT-3.M2.X1`.
 - **Stuffing:** a stuffing that adds moisture and flavour (herbs, breadcrumbs, mushrooms, apple or dried fruit, sausage
   meat), cooled before it goes in; spread thin, leaving a border.
 - **Rolling and tying:** rolled tightly from the long side, the seam underneath, tied every 2–3 cm.
-- **Safety:** a stuffed joint is cooked until the stuffing's centre reaches 74 °C (stuffed foods, assessment §9).
+- **Safety:** a stuffed joint is cooked until the stuffing's centre reaches 75 °C (stuffed foods, assessment §9).
   Stuffing with sausage meat follows the same rule.
 - **Resting and slicing:** rested, the strings cut away, sliced across into rounds that show the spiral.
 
@@ -441,7 +441,7 @@ plan and the waste log of `BUT-3.M2.X1`.
 **Cues:**
 - Even thickness when opened.
 - A neat spiral in the slice.
-- The stuffing's centre at 74 °C.
+- The stuffing's centre at 75 °C.
 
 **Faults:**
 - Uneven thickness.
@@ -460,7 +460,7 @@ plan and the waste log of `BUT-3.M2.X1`.
 
 **Conditions:** framework support: the stuffed-roast framework. A joint trimmed, butterflied, stuffed, rolled and tied
 by the learner without guidance, for four to six people; the trim used for a stock or a sauce; the stuffing's centre
-probed to 74 °C.
+probed to 75 °C.
 
 **Inputs:** a pork loin or shoulder, or a lamb leg, from a Dutch butcher (about 1.5–2 kg); stuffing ingredients from the
 season; kitchen string.
@@ -473,7 +473,7 @@ season; kitchen string.
 5. Use the trim in a stock or the sauce.
 
 **Evidence:** photo, measure — the roast part of the `TS-FAB` level 3 row: a roast trimmed and tied (photographed), the
-slice photographed, the trim used for stock; the stuffing at 74 °C logged. The bird and the fish are in `BUT-3.M1.X1`
+slice photographed, the trim used for stock; the stuffing at 75 °C logged. The bird and the fish are in `BUT-3.M1.X1`
 and `BUT-3.M2.X1`.
 
 **Time:** 2 h active, plus roasting.

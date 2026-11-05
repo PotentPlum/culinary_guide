@@ -558,7 +558,7 @@ season:
 
 **Conditions:** a ratio card only: roux per litre for a coating sauce, and the cream to finish. No recipe. The learner
 weighs every ingredient and logs the weights. The poached chicken is cooked to the poultry figure of assessment §9
-(74 °C), checked with the probe. The poaching method itself comes in `POU-2.M5`.
+(75 °C), checked with the probe. The poaching method itself comes in `POU-2.M5`.
 
 **Inputs:** for 4 portions:
 - 750 ml of white chicken stock from the freezer;
@@ -570,7 +570,7 @@ weighs every ingredient and logs the weights. The poached chicken is cooked to t
 **Procedure:**
 1. Write the quantities from the ratio card for 750 ml.
 2. Make a blond roux and the *velouté*, simmering and skimming it.
-3. Poach the chicken gently in more stock until the probe reads 74 °C.
+3. Poach the chicken gently in more stock until the probe reads 75 °C.
 4. Finish the sauce with cream as a *suprême*.
 5. Photograph it on a spoon, and taste on the form.
 6. Log the weights.
@@ -678,8 +678,9 @@ weighs every ingredient and logs the weights. The poached chicken is cooked to t
     (assessment §9). This matters most for people in risk groups: pregnant people, young children, older people and
     anyone with weakened immunity.
   - **Eggs:** fresh, clean and uncracked, from the fridge; shells kept away from the finished sauce.
-  - **Storage:** a home-made mayonnaise goes into the fridge at 4 °C, covered, and is used within 2 days. It is out of
-    the fridge for no longer than 2 hours in total (assessment §9).
+  - **Storage:** a home-made mayonnaise goes into the fridge at 4 °C, covered, and is used within 24 hours, also when it
+    is made with pasteurised yolk (the raw-egg row, assessment §9 [S44]). It is out of the fridge for no longer than
+    2 hours in total.
   - **Garlic in oil** needs refrigeration (§9). An *aïoli* is made for the meal; garlic oil is never kept at room
     temperature.
 - **Labelling:** the date on the jar (`SAF-1`).
@@ -760,7 +761,7 @@ They become a meal with boiled potatoes, eggs or seasonal vegetables.
 | SAU-2.M4.Q3 | multiple choice | SAU-2.M4.L1 | — | Your mayonnaise won't thicken, and the yolk and oil came straight from the fridge. What is the likely cause? A) too much salt B) cold ingredients emulsify poorly C) too much mustard D) the wrong whisk | B | Use yolk and oil at room temperature. |
 | SAU-2.M4.Q4 | scenario | SAU-2.M4.L1 | — | Your mayonnaise has split into a thin, oily mess halfway through. Describe the rescue. | Put a fresh yolk (or a teaspoon of mustard or water) in a clean bowl and whisk the broken sauce into it drop by drop, then in a stream, as if it were the oil. | A new emulsion takes up the broken one. |
 | SAU-2.M4.Q5 | multiple choice | SAU-2.M4.L1 | — | A mayonnaise has become too stiff to spread. What do you add? A) more oil B) a few drops of water or acid C) another yolk D) salt | B | A little water loosens a tight emulsion. |
-| SAU-2.M4.Q6 | multiple choice | SAU-2.M4.L2 | yes | How long can home-made mayonnaise be kept? A) a week at room temperature B) at most 2 days, covered, in the fridge at 4 °C C) a month in the fridge D) as long as it smells fine | B | Assessment §9: leftovers at most 2 days in the fridge, set to 4 °C. |
+| SAU-2.M4.Q6 | multiple choice | SAU-2.M4.L2 | yes | How long can home-made mayonnaise be kept? A) a week at room temperature B) at most 24 hours, covered, in the fridge at 4 °C C) a month in the fridge D) as long as it smells fine | B | Assessment §9, the raw-egg row: a dish with raw egg at most 24 hours, in the fridge set to 4 °C. |
 | SAU-2.M4.Q7 | scenario | SAU-2.M4.L2 | yes | You plan an *aïoli* for a dinner, and one friend is pregnant. Which yolks do you use, and how is it served? | Pasteurised egg yolk, for every guest and not only the pregnant friend; kept chilled and served from the fridge, not left out for more than 2 hours. | §9: raw-yolk sauces are made with pasteurised egg for every guest; §9 limits time out of the fridge. |
 | SAU-2.M4.Q8 | multiple choice | SAU-2.M4.L2 | yes | You have garlic oil left over from an *aïoli*. Where does it go? A) in a bottle in the cupboard B) covered in the fridge, used soon, or thrown away C) on the windowsill D) in the freezer only after a week | B | Garlic in oil needs refrigeration (§9). |
 

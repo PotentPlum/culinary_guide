@@ -300,8 +300,8 @@ plan of `RDV-5.M1.X1`, checked against the checklist.
   protein's method from its structure (`PRO-4`).
 - **Test economically:** early versions on a cheaper cut or a smaller portion where the variable allows, the full
   protein in the final version.
-- **Safety:** every version probed against its §9 row (poultry 74 °C or the poultry table, intact meat and fish 63 °C
-  for 15 seconds, minced meat and offal their rows, wild game 74 °C); doneness choices only within those rows.
+- **Safety:** every version probed against its §9 row (poultry 75 °C or the poultry table, intact meat and fish 63 °C
+  for 15 seconds, minced meat and offal their rows, wild game 75 °C); doneness choices only within those rows.
 
 **Sessions:**
 1. Version 1 (60 min): from the plan; probed; photographed; scored.

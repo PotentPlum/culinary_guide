@@ -23,7 +23,7 @@ controls the heat source itself:
 - **a live-fire meal** for guests, planned like a service.
 
 Every protein reaches its figure in [assessment §9](../../04-assessment.md#9-safety-figures-used-in-assessment):
-poultry 74 °C, minced meat 70 °C, fish and intact meat 63 °C for 15 seconds, intact beef steaks by the steak row. Fire
+poultry 75 °C, minced meat 75 °C, fish and intact meat 63 °C for 15 seconds, intact beef steaks by the steak row. Fire
 gives uneven heat, so the probe matters more outdoors than indoors.
 
 **Without outdoor space.** A cast-iron grill pan and the oven grill teach the browning and the doneness, but not fire
@@ -256,7 +256,7 @@ two seasonal vegetables.
 - **Reverse sear:** a thick steak cooked in the cool zone with the lid on until about 10 °C below the target, then
   seared hard over the coals; even inside, a crust outside.
 - **The cuts:** steaks (by the steak row of §9: seared on every surface, intact), pork chops (63 °C for 15 seconds),
-  sausages and burgers (minced meat: 70 °C), chicken thighs on skewers (74 °C).
+  sausages and burgers (minced meat: 75 °C), chicken thighs on skewers (75 °C).
 - **[J] Managing flare-ups:** move the food to the cool zone, close the lid briefly to starve the flames; never water.
 - **Doneness:** cue first (feel, colour of the juices), then the probe in the thickest part; carryover after the grill.
 
@@ -413,7 +413,7 @@ outdoors, as `SLW-3.M5.X1` does indoors.
 | ID | Type | Lesson | Safety | Item | Answer | Why |
 |---|---|---|---|---|---|---|
 | FIR-3.M2.Q1 | multiple choice | FIR-3.M2.L1 | — | How is a 4 cm steak reverse-seared? A) seared, then rested B) cooked in the cool zone with the lid on to about 10 °C below the target, then seared hard C) boiled first D) cut thin | B | Even inside, crust outside. |
-| FIR-3.M2.Q2 | multiple choice | FIR-3.M2.L1 | yes | What core temperature do grilled burgers need? A) 55 °C B) 63 °C C) 70 °C D) 50 °C | C | Minced meat (assessment §9). |
+| FIR-3.M2.Q2 | multiple choice | FIR-3.M2.L1 | yes | What core temperature do grilled burgers need? A) 55 °C B) 63 °C C) 75 °C D) 50 °C | C | Minced meat (assessment §9). |
 | FIR-3.M2.Q3 | multiple choice | FIR-3.M2.L1 | — | Fat drips and flames lick a chop. What do you do? A) spray water B) move it to the cool zone; close the lid briefly C) add more fat D) leave it | B | [J] flare-ups. |
 | FIR-3.M2.Q4 | multiple choice | FIR-3.M2.L2 | — | Why does fish stick to the grate? A) fresh fish always sticks B) a dirty or not-hot-enough grate, or turning it too soon C) too much salt D) the wrong fish | B | A clean, hot, oiled grate. |
 | FIR-3.M2.Q5 | multiple choice | FIR-3.M2.L2 | yes | A grilled mackerel is done when: A) the skin is black B) 63 °C at the thickest part, the flesh opaque at the bone C) it has been on for 2 minutes D) the eyes pop | B | Fish 63 °C for 15 seconds (§9). |
@@ -458,7 +458,7 @@ outdoors, as `SLW-3.M5.X1` does indoors.
 - **[J] Holding the temperature:** about 180–200 °C for a chicken, by the vents; a few lit coals added from a chimney
   for a long cook.
 - **[K] Carryover outdoors:** wind, cold and an open lid change it; the bird is probed in the thickest part of the thigh
-  and the breast, and must read 74 °C (assessment §9); the rise after the grill is predicted and logged, but not relied
+  and the breast, and must read 75 °C (assessment §9); the rise after the grill is predicted and logged, but not relied
   on for safety.
 - **Crisp skin:** dry skin (salted the day before, uncovered in the fridge), a hot finish over direct heat for a minute
   if needed.
@@ -468,7 +468,7 @@ outdoors, as `SLW-3.M5.X1` does indoors.
 
 **Cues:**
 - The lid within ±15 °C of the target.
-- 74 °C in thigh and breast.
+- 75 °C in thigh and breast.
 - Crisp, golden skin.
 
 **Faults:**
@@ -520,7 +520,7 @@ outdoors, as `SLW-3.M5.X1` does indoors.
 **Aim:** roast a bird indirectly to a safe core, hold the fire, and use smoke as a planned flavour layer.
 
 **Conditions:** framework support: the indirect-roast framework and the fire log. A spatchcocked chicken by indirect
-heat at about 180–200 °C, a lid and core temperature log, the core at 74 °C in thigh and breast; a written flavour plan
+heat at about 180–200 °C, a lid and core temperature log, the core at 75 °C in thigh and breast; a written flavour plan
 with smoke as a layer (base: rub; middle: smoke; top: a herb sauce from `FLV-3.M1`). The adaptation from the oven
 roast of `POU-2.M3` is written down. The smoked vegetables of `FIR-3.M3.L2` are written up with the same plan.
 
@@ -534,7 +534,7 @@ roast of `POU-2.M3` is written down. The smoked vegetables of `FIR-3.M3.L2` are 
 5. Serve with the sauce; household cards.
 
 **Evidence:** log, measure, photo, written, form, tasters:
-- **`TS-FIRE` level 3, the indirect part:** a bird roasted indirectly to a safe core (74 °C), with the lid held and
+- **`TS-FIRE` level 3, the indirect part:** a bird roasted indirectly to a safe core (75 °C), with the lid held and
   logged. With `FIR-3.M1.X1` and `FIR-3.M2.X1` the row is complete.
 - **`TS-DRY` level 4, in part:** indirect roasting on a new heat source, the adaptation reasoned in writing, the result
   to standard. The sear after the bath is in `SLW-3.M5.X2` and direct grilling in `FIR-3.M2.X1`.
@@ -552,7 +552,7 @@ roast of `POU-2.M3` is written down. The smoked vegetables of `FIR-3.M3.L2` are 
 | ID | Type | Lesson | Safety | Item | Answer | Why |
 |---|---|---|---|---|---|---|
 | FIR-3.M3.Q1 | multiple choice | FIR-3.M3.L1 | — | Where does the food go for indirect cooking? A) over the coals B) in the cool zone, lid on, top vent over the food C) on the coals D) beside the grill | B | The grill as an oven. |
-| FIR-3.M3.Q2 | multiple choice | FIR-3.M3.L1 | yes | A spatchcocked chicken reads 74 °C in the breast and 69 °C in the thigh. Is it done? A) yes B) no: every part must read 74 °C C) yes after resting, without checking D) yes if the juices run clear | B | Poultry 74 °C (§9); carryover is not relied on. |
+| FIR-3.M3.Q2 | multiple choice | FIR-3.M3.L1 | yes | A spatchcocked chicken reads 75 °C in the breast and 69 °C in the thigh. Is it done? A) yes B) no: every part must read 75 °C C) yes after resting, without checking D) yes if the juices run clear | B | Poultry 75 °C (§9); carryover is not relied on. |
 | FIR-3.M3.Q3 | multiple choice | FIR-3.M3.L1 | — | Why spatchcock a chicken for the grill? A) it looks better B) flat, it cooks faster and more evenly C) it needs less salt D) tradition | B | Even thickness. |
 | FIR-3.M3.Q4 | multiple choice | FIR-3.M3.L1 | — | What makes carryover outdoors less predictable? A) nothing B) wind, cold and opening the lid C) the charcoal brand D) the rub | B | Conditions change heat loss. |
 | FIR-3.M3.Q5 | multiple choice | FIR-3.M3.L2 | — | Which smoke gives a clean flavour? A) thick white smoke B) thin, blue, almost invisible smoke C) black smoke D) any smoke | B | Clean combustion. |
@@ -564,7 +564,7 @@ roast of `POU-2.M3` is written down. The smoked vegetables of `FIR-3.M3.L2` are 
 
 | Competency | Level | Exercises | Evidence |
 |---|---|---|---|
-| TS-FIRE | 3 | `FIR-3.M3.X1` | log, measure, photo — a bird roasted indirectly to 74 °C with the lid held and logged; with `FIR-3.M1.X1` and `FIR-3.M2.X1` the row is complete |
+| TS-FIRE | 3 | `FIR-3.M3.X1` | log, measure, photo — a bird roasted indirectly to 75 °C with the lid held and logged; with `FIR-3.M1.X1` and `FIR-3.M2.X1` the row is complete |
 | TS-DRY | 4 | `FIR-3.M3.X1` | photo, measure, written — indirect roasting on a new heat source, the adaptation reasoned, the result to standard; the sear after the bath is in `SLW-3.M5.X2` and direct grilling in `FIR-3.M2.X1` |
 | FL-ARCH | 3 | `FIR-3.M3.X1` | written, form, tasters — the chicken and the smoked vegetables with written flavour plans; the barbecue plate of `FIR-3.M4.X1` is the third dish |
 

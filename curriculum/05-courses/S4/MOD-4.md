@@ -26,7 +26,8 @@ takes it further. Hydrocolloids are dosed by weight on a 0.01 g scale.
 **Safety in this course** (assessment §9):
 - eggs cooked below 71 °C (the soft textures of `MOD-4.M2`) are raw or lightly cooked when served: not for risk groups;
 - the siphon is used only as its maker's instructions say: the maker's chargers (N₂O for cream), never above the fill
-  line, never inhaled; the Dutch rules on nitrous oxide are to be checked before Phase 6 (assessment §9);
+  line, never inhaled; chargers bought for food use, a few at a time (the Dutch ban on nitrous oxide does not cover food
+  use [S50]; assessment §9);
 - dehydration is for vegetables, fruit and starches only; no meat is dried in this course.
 
 Vegetables and fruit are Dutch and in season; the hydrocolloids (agar, xanthan, soy lecithin, gellan optional) come in a
@@ -441,8 +442,8 @@ goes with.
 - **Whipped foams:** a base stabilised with gelatin or with cream, whipped in a mixer; firmer and longer-lasting.
 - **The siphon (optional):** a warm or cold base (a purée, a cream-based mixture, or a liquid with gelatin) in the
   siphon, charged with N₂O, shaken, dispensed. Used only as its maker's instructions say: the maker's chargers, never
-  above the fill line, the head screwed on straight, the pressure released before opening, never inhaled (assessment
-  §9).
+  above the fill line, the head screwed on straight, the pressure released before opening, never inhaled; the chargers
+  bought for food use, a few at a time (assessment §9 [S50]).
 
 **Sessions:**
 1. Airs (60 min): a lecithin air from a stock or juice; its life timed; photographed at 0, 2 and 5 minutes.

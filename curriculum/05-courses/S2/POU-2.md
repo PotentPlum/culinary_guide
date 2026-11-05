@@ -27,7 +27,7 @@ spread from board, hands and tap matters as much as the core temperature.
 
 It ends with a lab that sets the learner's eye and fingers against the thermometer, and puts brining to a blind test.
 
-**Doneness** is the thread. Every piece is probed. The safe figure for poultry is 74 °C (assessment §9), reached after
+**Doneness** is the thread. Every piece is probed. The safe figure for poultry is 75 °C (assessment §9), reached after
 resting, and the learner learns to pull a breast early enough that carryover takes it there without overshooting. Legs
 are cooked further, because their connective tissue needs it.
 
@@ -139,7 +139,7 @@ usable meat.
 <!-- END generated:lesson-pou-2-m1-l2 -->
 
 **Concepts:**
-- **The risks:** raw poultry often carries *Campylobacter* and *Salmonella*. Cooking to 74 °C (assessment §9) kills
+- **The risks:** raw poultry often carries *Campylobacter* and *Salmonella*. Cooking to 75 °C (assessment §9) kills
   them in the meat. The danger at home is spreading them, by hands, boards, knives, taps, towels and splashes, to food
   that will not be cooked.
 - **No rinsing.** Washing a chicken under the tap does not make it safer. It splashes bacteria over the sink and the
@@ -199,7 +199,7 @@ usable meat.
 3. Prepare the salad and put it away.
 4. Set up the raw station.
 5. Film the handling: unpack, pat dry, season, into the tin, clean down.
-6. Cook the chicken to 74 °C, probed.
+6. Cook the chicken to 75 °C, probed.
 7. Note anything forgotten on the list.
 
 **Evidence:** video, checklist, written:
@@ -393,7 +393,7 @@ No knowledge check: the module has no [K] or [J] objective. The handling rules i
 <!-- END generated:lesson-pou-2-m3-l1 -->
 
 **Concepts:**
-- **The problem of the whole bird:** the breast is done at 74 °C and dries out quickly above it. The legs are better
+- **The problem of the whole bird:** the breast is done at 75 °C and dries out quickly above it. The legs are better
   well above that: around 80–85 °C, where their connective tissue softens. Everything in roasting a chicken is about
   closing that gap:
   - **dry skin:** pat dry, or dry-brine uncovered in the fridge overnight (`SCI-2.M2.L2`), for crisp skin and seasoned
@@ -406,7 +406,7 @@ No knowledge check: the module has no [K] or [J] objective. The handling rules i
   - the breast at its thickest part;
   - the thigh near the bone, without touching it.
 
-  The breast comes out a few degrees below 74 °C. During the rest it must reach 74 °C or more (assessment §9),
+  The breast comes out a few degrees below 75 °C. During the rest it must reach 75 °C or more (assessment §9),
   confirmed by the probe, and the legs must be well above that.
 - **Resting:** 15–20 minutes, loosely covered (`HEA-2.M2.L2`). The juices of the tin go into the gravy.
 - **Carving:** legs off first, then the breasts off the bone in one piece and sliced across.
@@ -502,7 +502,7 @@ time.
 **Aim:** roast a whole chicken to a stated doneness, with a gravy and two vegetables, on the learner's own timeline.
 
 **Conditions:** framework only. Before cooking, the learner writes:
-- **the doneness targets:** the breast at 74 °C or more after resting; the thigh above 80 °C;
+- **the doneness targets:** the breast at 75 °C or more after resting; the thigh above 80 °C;
 - **the timeline**, from `POU-2.M3.L3`;
 - **the choice of the bird,** with one line on why its method suits it, from the labels of `POU-2.M1.L1`.
 
@@ -531,7 +531,7 @@ The carcass goes into `POU-2.M5.X1`.
 
 **Evidence:** measure, photo, written, log, form:
 - **`TS-PRO` level 3, the poultry part:**
-  - the breast at its stated doneness, within 3 °C of the target after resting and not below 74 °C, with an even
+  - the breast at its stated doneness, within 3 °C of the target after resting and not below 75 °C, with an even
     cross-section;
   - the thigh above its target.
 
@@ -553,7 +553,7 @@ The carcass goes into `POU-2.M5.X1`.
 
 | ID | Type | Lesson | Safety | Item | Answer | Why |
 |---|---|---|---|---|---|---|
-| POU-2.M3.Q1 | multiple choice | POU-2.M3.L1 | yes | What is the minimum core temperature for poultry, after resting? A) 63 °C B) 68 °C C) 74 °C D) 85 °C | C | Assessment §9: poultry 74 °C. |
+| POU-2.M3.Q1 | multiple choice | POU-2.M3.L1 | yes | What is the minimum core temperature for poultry, after resting? A) 63 °C B) 68 °C C) 75 °C D) 85 °C | C | Assessment §9: poultry 75 °C. |
 | POU-2.M3.Q2 | multiple choice | POU-2.M3.L1 | — | Why are chicken legs cooked further than the breast? A) to kill more bacteria B) their connective tissue softens at higher temperatures; the lean breast dries out C) for colour D) they're thinner | B | Dark meat needs heat to turn tender. |
 | POU-2.M3.Q3 | scenario | POU-2.M3.L1 | — | The breast reads 72 °C, the thigh 70 °C. What do you do? | Keep roasting: the thigh is far below its target. Shield the breast with foil if it is browning too fast, and probe both again in 10 minutes. | The thigh decides when a whole bird is done. |
 | POU-2.M3.Q4 | multiple choice | POU-2.M3.L1 | — | What does trussing a chicken tightly do to the thighs? A) cooks them faster B) shields them, so they cook more slowly than the breast C) nothing D) makes them juicier | B | Untrussed or loosely tied cooks more evenly. |
@@ -566,7 +566,7 @@ The carcass goes into `POU-2.M5.X1`.
 
 | Competency | Level | Exercises | Evidence |
 |---|---|---|---|
-| TS-PRO | 3 | `POU-2.M3.X1` | measure, photo — the poultry part: a roast breast within 3 °C of its stated target after resting and at or above 74 °C, with an even cross-section; the meat and fish follow in `MEA-2.M3` and `FSH-2` |
+| TS-PRO | 3 | `POU-2.M3.X1` | measure, photo — the poultry part: a roast breast within 3 °C of its stated target after resting and at or above 75 °C, with an even cross-section; the meat and fish follow in `MEA-2.M3` and `FSH-2` |
 | IN-MEA | 3 | `POU-2.M3.X1` | quiz, photo, measure — the poultry part: a bird bought and roasted by the right method, with the result confirming the match; the other animals follow in `MEA-2.M2` |
 | TS-SAU | 3 | `POU-2.M3.X1` | photo, form — a gravy from the roasting tin, at a pouring consistency, glossy and seasoned, as further evidence for the pan sauce element of `SAU-2` |
 | KM-PLAN | 3 | `POU-2.M3.X1` | written, log — the learner's own timeline for a roast with two sides and gravy, with parallel tasks; every component out within 5 minutes of the plan |
@@ -602,9 +602,9 @@ The carcass goes into `POU-2.M5.X1`.
 
   The sear gives colour and the oven cooks it evenly.
 - **Pulling at the right temperature:** carryover in a breast is small but real, a few degrees.
-  - **When to pull:** a few degrees below 74 °C.
+  - **When to pull:** a few degrees below 75 °C.
   - **The rest:** 5 minutes.
-  - **The check:** probe again after the rest. The reading must be 74 °C or more (assessment §9).
+  - **The check:** probe again after the rest. The reading must be 75 °C or more (assessment §9).
 
   The learner writes the pull temperature they choose and the reading after the rest, and adjusts next time.
 - **Skin-on or skinless:** skin protects the meat and crisps. A skinless breast needs a gentler finish.
@@ -612,7 +612,7 @@ The carcass goes into `POU-2.M5.X1`.
 **Sessions:**
 1. Two breasts (45 min): one flattened and one not, pan-roasted together; both probed and cut; compare the
    cross-sections.
-2. A pull-temperature trial (45 min): two breasts pulled at two chosen temperatures below 74 °C; rest, probe again and
+2. A pull-temperature trial (45 min): two breasts pulled at two chosen temperatures below 75 °C; rest, probe again and
    taste.
 
 **Cues:**
@@ -637,7 +637,7 @@ The carcass goes into `POU-2.M5.X1`.
 **Concepts:**
 - **The sauté** (*poulet sauté*): pieces browned skin side down in a heavy pan, then cooked through, partly covered or
   in the oven. The pan sauce is built on the fond (`SAU-2.M2.L2`).
-- **Thighs forgive:** they stay juicy well above 74 °C and are the easiest piece to sauté.
+- **Thighs forgive:** they stay juicy well above 75 °C and are the easiest piece to sauté.
 - **The pan:** heavy, not crowded, so the pieces brown rather than steam (`HEA-1.M3`).
 - **Composing a plate** (`CR-COMP` level 1):
   - the protein as the focus;
@@ -692,7 +692,7 @@ The learner writes the doneness target and the pull temperature before cooking.
 6. Photograph a cross-section of the chicken and the plate.
 
 **Evidence:** measure, photo:
-- **`TS-PRO` level 3:** the chicken within 3 °C of the stated target after resting, at or above 74 °C, with an even
+- **`TS-PRO` level 3:** the chicken within 3 °C of the stated target after resting, at or above 75 °C, with an even
   cross-section.
 - **`TS-DRY` level 3, the sauté part of the row:** even browning and the right interior without a recipe. The roasting,
   grilling and frying parts are in `HEA-2`.
@@ -711,10 +711,10 @@ The learner writes the doneness target and the pull temperature before cooking.
 
 | ID | Type | Lesson | Safety | Item | Answer | Why |
 |---|---|---|---|---|---|---|
-| POU-2.M4.Q1 | scenario | POU-2.M4.L1 | yes | You pulled a breast at 71 °C. After a 5-minute rest it reads 73 °C. What do you do? | Return it to the oven or pan briefly and probe again until it reads 74 °C or more; next time pull slightly later. | Below the §9 figure is not safe, whatever it looks like. |
+| POU-2.M4.Q1 | scenario | POU-2.M4.L1 | yes | You pulled a breast at 71 °C. After a 5-minute rest it reads 73 °C. What do you do? | Return it to the oven or pan briefly and probe again until it reads 75 °C or more; next time pull slightly later. | Below the §9 figure is not safe, whatever it looks like. |
 | POU-2.M4.Q2 | multiple choice | POU-2.M4.L1 | — | Why flatten the thick end of a chicken breast? A) to make it bigger B) so it cooks evenly, and the thin end doesn't dry before the thick end is done C) to tenderise the skin D) to save time only | B | Even thickness, even cooking. |
 | POU-2.M4.Q3 | multiple choice | POU-2.M4.L1 | — | What is pan-roasting? A) cooking in a covered pan with water B) searing in a pan, then finishing in the oven C) roasting in a tin with vegetables D) deep-frying | B | Sear for colour; oven for even cooking. |
-| POU-2.M4.Q4 | scenario | POU-2.M4.L1 | — | Your last three breasts were dry after resting, all reading about 80 °C. What do you change? | Pull earlier (a few degrees below 74 °C) and check the reading after the rest; flatten the breasts for even thickness. | Set the pull temperature from your own carryover. |
+| POU-2.M4.Q4 | scenario | POU-2.M4.L1 | — | Your last three breasts were dry after resting, all reading about 80 °C. What do you change? | Pull earlier (a few degrees below 75 °C) and check the reading after the rest; flatten the breasts for even thickness. | Set the pull temperature from your own carryover. |
 | POU-2.M4.Q5 | multiple choice | POU-2.M4.L2 | — | Why are chicken thighs easier to sauté well than breasts? A) they're smaller B) they stay juicy well above the safe temperature, thanks to their fat and connective tissue C) they cook faster D) they have no skin | B | Dark meat forgives. |
 | POU-2.M4.Q6 | multiple choice | POU-2.M4.L2 | — | Six thighs in a 24 cm pan turn pale and wet. Why? A) the pan was too hot B) the pan was crowded, so they steamed instead of browning C) too little salt D) the skin was dry | B | Crowding drops the pan temperature. |
 | POU-2.M4.Q7 | multiple choice | POU-2.M4.L2 | — | Where does the pan sauce go on a plate of crisp-skinned chicken? A) poured over the skin B) under or beside the chicken, so the skin stays crisp C) in a separate bowl only D) it doesn't matter | B | Composition protects texture. |
@@ -724,7 +724,7 @@ The learner writes the doneness target and the pull temperature before cooking.
 
 | Competency | Level | Exercises | Evidence |
 |---|---|---|---|
-| TS-PRO | 3 | `POU-2.M4.X1` | measure, photo — the poultry part: chicken from a brief within 3 °C of the stated target after resting, at or above 74 °C, with an even cross-section; the meat and fish follow in `MEA-2.M3` and `FSH-2` |
+| TS-PRO | 3 | `POU-2.M4.X1` | measure, photo — the poultry part: chicken from a brief within 3 °C of the stated target after resting, at or above 75 °C, with an even cross-section; the meat and fish follow in `MEA-2.M3` and `FSH-2` |
 | TS-DRY | 3 | `POU-2.M4.X1` | photo, measure — the sauté part of the row: even browning and the right interior without a recipe; the roasting, grilling and frying parts are in `HEA-2` |
 
 ### POU-2.M5 — Poaching and the whole bird
@@ -754,7 +754,7 @@ The learner writes the doneness target and the pull temperature before cooking.
   - **starting cold** gives a clearer broth and even cooking of a whole bird;
   - **starting hot** is faster for parts.
 - **Checking doneness:**
-  - probe the thickest part of the thigh and of the breast: 74 °C or more (assessment §9);
+  - probe the thickest part of the thigh and of the breast: 75 °C or more (assessment §9);
   - the juices run clear;
   - the leg moves loosely.
 
@@ -851,7 +851,7 @@ Each meal is costed. The learner keeps a waste log for the week. The leftovers f
 7. Photograph each meal.
 
 **Evidence:** measure, photo, written, log:
-- **`TS-MOI` level 4, the poultry poach part:** chicken poached in liquid held at 70–85 °C, logged, and probed to 74 °C
+- **`TS-MOI` level 4, the poultry poach part:** chicken poached in liquid held at 70–85 °C, logged, and probed to 75 °C
   or more, with the method choice reasoned. It is a new food for the learner's poaching. The fish poach follows in
   `FSH-2.M3`, and the simmer was shown in `STK-2.M2.X1`.
 - **`KM-WAST` level 3:** the soup and the leftovers dish as meals from planned leftovers and trim, with the waste log
@@ -869,7 +869,7 @@ Each meal is costed. The learner keeps a waste log for the week. The leftovers f
 | ID | Type | Lesson | Safety | Item | Answer | Why |
 |---|---|---|---|---|---|---|
 | POU-2.M5.Q1 | multiple choice | POU-2.M5.L1 | — | At what liquid temperature is chicken poached gently? A) a rolling boil B) about 70–85 °C, the surface barely trembling C) 50 °C D) 100 °C under a lid | B | A gentle poach keeps the meat tender. |
-| POU-2.M5.Q2 | scenario | POU-2.M5.L1 | — | The breast of a poached chicken reads 76 °C, the thigh 68 °C. What do you do? | Keep poaching until the thigh reads 74 °C or more; take the breast off the bird to finish separately if it's getting overdone. | In a whole bird, the thigh decides. |
+| POU-2.M5.Q2 | scenario | POU-2.M5.L1 | — | The breast of a poached chicken reads 76 °C, the thigh 68 °C. What do you do? | Keep poaching until the thigh reads 75 °C or more; take the breast off the bird to finish separately if it's getting overdone. | In a whole bird, the thigh decides. |
 | POU-2.M5.Q3 | multiple choice | POU-2.M5.L1 | — | Why is a poached chicken started in cold liquid? A) to save energy B) for a clearer broth and more even cooking of a whole bird C) to keep the skin crisp D) to kill bacteria | B | The temperature rises evenly through the bird. |
 | POU-2.M5.Q4 | multiple choice | POU-2.M5.L2 | yes | How long can cooked chicken leftovers be kept in the fridge? A) a week B) at most 2 days, covered; freeze them to keep longer C) until they smell D) 5 days | B | Assessment §9. |
 | POU-2.M5.Q5 | multiple choice | POU-2.M5.L2 | yes | After dinner, the roast chicken has been on the table for an hour. What now? A) leave it until tomorrow B) strip the meat into a shallow container and refrigerate it within 2 hours of serving C) put the whole hot carcass in the fridge in its tin D) freeze it whole | B | §9: into the fridge within 2 hours, cooled in a shallow container. |
@@ -881,7 +881,7 @@ Each meal is costed. The learner keeps a waste log for the week. The leftovers f
 
 | Competency | Level | Exercises | Evidence |
 |---|---|---|---|
-| TS-MOI | 4 | `POU-2.M5.X1` | measure, photo, written — the poultry poach part: chicken poached at 70–85 °C, logged, probed to 74 °C, with the method choice reasoned; the fish poach follows in `FSH-2.M3` and the simmer was shown in `STK-2.M2.X1` |
+| TS-MOI | 4 | `POU-2.M5.X1` | measure, photo, written — the poultry poach part: chicken poached at 70–85 °C, logged, probed to 75 °C, with the method choice reasoned; the fish poach follows in `FSH-2.M3` and the simmer was shown in `STK-2.M2.X1` |
 | KM-WAST | 3 | `POU-2.M5.X1` | log, photo — two meals from planned leftovers and trim, with the waste log against the first week; with `STK-2.M2.X2` this gives the three meals of the row |
 
 ### POU-2.M6 — Brining and doneness lab
@@ -951,7 +951,7 @@ Each meal is costed. The learner keeps a waste log for the week. The leftovers f
   3. Probe, and log the difference.
 
   Ten entries, with at least eight within ±3 °C, show the learner's cues are calibrated (`JD-CUES` level 3).
-- **The thermometer still decides.** A cue can say "close", but the safe figure is confirmed by the probe: 74 °C for
+- **The thermometer still decides.** A cue can say "close", but the safe figure is confirmed by the probe: 75 °C for
   poultry (assessment §9).
 - **Cooling and reheating leftovers** from the lab, with the figures of §9:
   - cooled from 57 °C to 21 °C within 2 hours, and to 5 °C or below within 6 hours in total, in shallow containers;
@@ -1028,7 +1028,7 @@ thermometer, and cool and reheat the leftovers within the limits.
 | POU-2.M6.Q3 | multiple choice | POU-2.M6.L1 | — | Why does dry-brining reduce cooking loss? A) salt adds water B) salt dissolves part of the muscle proteins, which then hold water better while cooking C) salt seals the surface D) it doesn't | B | `SCI-2.M2.L2`. |
 | POU-2.M6.Q4 | scenario | POU-2.M6.L1 | — | Three of four tasters preferred the brined chicken in one trial. How do you write the conclusion? | The brined chicken was preferred in this trial (3 of 4); it agrees with the cooking-loss figures, but one trial is a hint, so repeat it before treating it as settled. | A conclusion no stronger than the data. |
 | POU-2.M6.Q5 | multiple choice | POU-2.M6.L2 | — | What should you do before probing in a cue-then-reading entry? A) nothing B) write down your predicted temperature from touch, juices and look C) cut the meat open D) rest it | B | The prediction comes first. |
-| POU-2.M6.Q6 | multiple choice | POU-2.M6.L2 | yes | The juices of a thick chicken breast run clear and it feels firm. Is it safe to serve? A) yes B) only if the probe reads 74 °C or more C) only after resting longer D) only if the skin is brown | B | Cues guide; the probe confirms the §9 figure. |
+| POU-2.M6.Q6 | multiple choice | POU-2.M6.L2 | yes | The juices of a thick chicken breast run clear and it feels firm. Is it safe to serve? A) yes B) only if the probe reads 75 °C or more C) only after resting longer D) only if the skin is brown | B | Cues guide; the probe confirms the §9 figure. |
 | POU-2.M6.Q7 | multiple choice | POU-2.M6.L2 | yes | What is the cooling standard for a batch of cooked chicken? A) overnight on the hob B) from 57 °C to 21 °C within 2 hours, and to 5 °C or below within 6 hours in total C) to room temperature within 4 hours D) straight into the freezer while hot | B | Assessment §9, Food Code §3-501.14. |
 | POU-2.M6.Q8 | multiple choice | POU-2.M6.L2 | yes | Leftover brined chicken is reheated for lunch. To what temperature? A) warm to the touch B) 74 °C or more, steaming hot throughout, once C) 57 °C D) 63 °C | B | §9: reheating to 74 °C, steaming hot, once. |
 
@@ -1057,7 +1057,7 @@ thermometer, and cool and reheat the leftovers within the limits.
 <!-- END generated:assessment -->
 
 **Completing the course.** Every module check is passed: the knowledge checks at 80 %, with every safety item correct,
-and the evidence rows met. Any poultry probe reading below 74 °C after resting, served without being cooked further, is
+and the evidence rows met. Any poultry probe reading below 75 °C after resting, served without being cooked further, is
 a *Not yet* for the module, and so is a raw-poultry video showing cross-contamination. The same gates
 return at `MS-S2.R7` (core temperature) and `MS-S2.R10` (hygiene video).
 

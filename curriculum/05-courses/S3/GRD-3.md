@@ -24,8 +24,9 @@ The course builds on the vinaigrettes and mayonnaise of `SAU-2` and the fish of 
 Food held cold is still food at risk. The rules of
 [assessment §9](../../04-assessment.md#9-safety-figures-used-in-assessment) apply throughout: the fridge at 4 °C,
 platters out of the fridge for at most 2 hours, leftovers kept at most 2 days. Raw and lightly cooked animal foods
-(cured or marinated fish, raw-milk cheese and raw cured meats) are not served to risk groups, raw-yolk sauces are made
-with pasteurised egg for every guest, and fish eaten raw or cured is frozen first.
+(cured or marinated fish, smoked fish served cold, soft raw-milk cheese and raw cured meats) are not served to risk
+groups, nor liver pâté in pregnancy; raw-yolk sauces are made with pasteurised egg for every guest, and fish eaten raw
+or cured is frozen first.
 
 Leaves and vegetables follow the Dutch seasons: lettuces, rocket and spinach from spring to autumn; chicory (*witlof*),
 lamb's lettuce (*veldsla*), winter purslane, red cabbage, kale and roots in winter. Cheeses are Dutch where possible
@@ -129,8 +130,9 @@ At 5 / 6.5 / 8 hours a week the course takes about **5.1 / 3.9 / 3.2 weeks** of 
   tender elements added cold.
 - **Balance:** taste, texture, temperature and colour; the component table names what each part brings.
 - **Main-course salads:** enough protein and starch to satisfy; dense enough to be a meal.
-- **Seasonal examples:** a warm potato and smoked-mackerel salad with mustard dressing; a lentil, roasted beetroot and
-  goat's cheese salad; a barley, kale and apple salad; a *salade niçoise*-style plate in summer.
+- **Seasonal examples:** a warm potato and smoked-mackerel salad with mustard dressing (for a guest in a risk group the
+  mackerel is heated through, because smoked fish served cold is in the risk-group row of §9); a lentil, roasted
+  beetroot and goat's cheese salad; a barley, kale and apple salad; a *salade niçoise*-style plate in summer.
 
 **Sessions:**
 1. A grain or legume salad (75 min): dressed warm, finished cold; tasted after an hour.
@@ -524,12 +526,13 @@ fridge temperature, cure time, storage).
   covered.
 - **Baking in a water bath:** the mould in a roasting tin of hot water in a moderate oven (about 150–160 °C), so the edges
   don't overcook before the centre is done.
-- **The core temperature** (assessment §9): a terrine of minced pork reaches 70 °C at the centre; one containing poultry
-  or chicken livers reaches 74 °C. The probe goes into the very centre.
+- **The core temperature** (assessment §9): a terrine of minced pork, or one containing poultry or chicken livers,
+  reaches 75 °C at the centre (the minced and poultry rows). The probe goes into the very centre.
 - **Pressing and resting:** weighted overnight in the fridge (a board and tins) so it slices cleanly; cooled by the
   cooling standard first (out of the water bath, onto a rack, into the fridge within the 2-hour limit).
-- **A chicken-liver pâté** is the smooth alternative: livers cooked in butter to 74 °C at the centre, blended with butter
-  and a little alcohol, set in ramekins and sealed with butter.
+- **A chicken-liver pâté** is the smooth alternative: livers cooked in butter to 75 °C at the centre, blended with butter
+  and a little alcohol, set in ramekins and sealed with butter. It is not served in pregnancy (liver, the risk-group
+  row of §9 [S46]); a pork terrine without liver is the alternative.
 - **Storing:** in the fridge, at most the 2 days of the leftovers rule once cut, unless the guided recipe's tested
   method says otherwise.
 
@@ -590,8 +593,8 @@ an egg, bread, streaky bacon for lining; a loaf tin; a thermometer.
 | GRD-3.M4.Q2 | multiple choice | GRD-3.M4.L1 | — | What does salt do in a forcemeat besides seasoning? A) nothing B) dissolves proteins that bind the mix C) colours it D) dries it | B | Myosin binding. |
 | GRD-3.M4.Q3 | multiple choice | GRD-3.M4.L1 | yes | How do you check the seasoning of a raw pork forcemeat? A) taste it raw B) fry a small test patty and taste it C) smell it D) guess | B | Raw mince is not tasted. |
 | GRD-3.M4.Q4 | multiple choice | GRD-3.M4.L1 | — | What is a *panade*? A) a garnish B) bread soaked in milk or cream, used as a binder C) a fat D) a mould | B | A binder. |
-| GRD-3.M4.Q5 | multiple choice | GRD-3.M4.L2 | yes | To what core temperature is a country terrine of minced pork baked? A) 55 °C B) 63 °C C) 70 °C at the centre D) 50 °C | C | Minced meat (assessment §9). |
-| GRD-3.M4.Q6 | multiple choice | GRD-3.M4.L2 | yes | Your terrine contains chicken livers. What core temperature? A) 63 °C B) 70 °C C) 74 °C D) 60 °C | C | Poultry (assessment §9). |
+| GRD-3.M4.Q5 | multiple choice | GRD-3.M4.L2 | yes | To what core temperature is a country terrine of minced pork baked? A) 55 °C B) 63 °C C) 75 °C at the centre D) 50 °C | C | Minced meat (assessment §9). |
+| GRD-3.M4.Q6 | multiple choice | GRD-3.M4.L2 | yes | Your terrine contains chicken livers. What core temperature? A) 63 °C B) 70 °C C) 75 °C D) 60 °C | C | Poultry (assessment §9). |
 | GRD-3.M4.Q7 | multiple choice | GRD-3.M4.L2 | — | Why is a terrine baked in a water bath? A) for steam B) so the edges don't overcook before the centre is done C) it is faster D) to make jelly | B | Gentle, even heat. |
 | GRD-3.M4.Q8 | multiple choice | GRD-3.M4.L2 | — | Why is a terrine pressed overnight? A) to cool it faster B) so it sets dense and slices cleanly C) to remove fat D) it isn't | B | Pressing and resting. |
 
@@ -631,8 +634,8 @@ an egg, bread, streaky bacon for lining; a loaf tin; a thermometer.
 - **A balanced board:** three to five cheeses across families, textures and milks; a cooked and a cured meat at most
   (rookworst slices, a terrine, ham); accompaniments that contrast: pickles, a chutney (`PRS-3`), seasonal apples or
   pears, bread or crackers, seeds.
-- **Risk groups:** raw-milk cheeses and raw or dry-cured meats are raw animal foods; a guest in a risk group gets
-  pasteurised cheeses and cooked meats (the risk-group row of §9).
+- **Risk groups:** soft raw-milk cheeses and raw or dry-cured meats are raw animal foods; a guest in a risk group gets
+  pasteurised cheeses, hard cheeses (hard raw-milk cheese is safe) and cooked meats (the risk-group row of §9 [S46]).
 - **Amounts:** about 100–150 g of cheese per person as a course.
 
 **Sessions:**

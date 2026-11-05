@@ -825,8 +825,8 @@ It is scored as in `BAK-2.M3.X1`.
 **Concepts:**
 - **American buttercream:** soft butter beaten with icing sugar and a little milk. It is quick, sweet and stable.
 - **Swiss meringue buttercream:**
-  1. Whisk egg whites and sugar over a bain-marie until the sugar dissolves and the mixture is hot, about 70 °C on the
-     probe.
+  1. Whisk egg whites and sugar over a bain-marie until the sugar dissolves and every part reaches at least
+     71 °C on the probe (egg-thickened desserts, assessment §9).
   2. Whip it to a stiff, glossy meringue, and cool it to room temperature.
   3. Beat in soft butter piece by piece.
 

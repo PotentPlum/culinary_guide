@@ -184,7 +184,7 @@ the `RD-TEST` level 2 success row (a guided comparison with one variable changed
 **Concepts:**
 - **Heat unfolds muscle proteins**, which then tighten and squeeze out water. The hotter the meat, the tighter the
   proteins and the more juice is lost. This is why doneness, not time, decides juiciness, and why a chicken breast at
-  80 °C is drier than one taken to the safe 74 °C and rested.
+  80 °C is drier than one taken to the safe 75 °C and rested.
 - **The safe minimums** ([assessment §9](../../04-assessment.md#9-safety-figures-used-in-assessment)) and the
   juiciness ladder sit together: cooking a little above the safe minimum, not far above, is the craft.
 - **Collagen**, the connective tissue, behaves the other way. It is tough at the temperatures that keep muscle juicy,
@@ -192,7 +192,7 @@ the `RD-TEST` level 2 success row (a guided comparison with one variable changed
   rich cuts slowly (`MEA-2`, `SLW-3`).
 
 **Sessions:**
-1. Weigh the loss (60 min): two equal pieces of chicken breast cooked to 74 °C and to about 82 °C, weighed before and
+1. Weigh the loss (60 min): two equal pieces of chicken breast cooked to 75 °C and to about 82 °C, weighed before and
    after, sliced and tasted.
 
 **Cues:** a clearly higher weight loss and a drier texture in the overcooked piece.
@@ -244,7 +244,7 @@ the `RD-TEST` level 2 success row (a guided comparison with one variable changed
 **Aim:** measure what salting does to cooking loss, with everything else held constant.
 
 **Conditions:** recipe support: a fixed comparison. Three pieces of the same size from the same pack; the same pan,
-heat and final core temperature (74 °C, probed); only the salting differs.
+heat and final core temperature (75 °C, probed); only the salting differs.
 
 **Inputs:** 3 chicken breasts (or 6 thighs); salt; a fridge-safe container for the wet brine.
 
@@ -252,7 +252,7 @@ heat and final core temperature (74 °C, probed); only the salting differs.
 1. Weigh the pieces.
 2. Dry-brine one (1 % salt) uncovered in the fridge overnight; wet-brine one (5 % brine) for 2 hours before cooking;
    leave one unsalted.
-3. Pat dry, weigh again, cook to 74 °C, rest and weigh.
+3. Pat dry, weigh again, cook to 75 °C, rest and weigh.
 4. Calculate the cooking loss in % for each.
 5. Taste blind (seasoning the unsalted one at the table).
 6. Write the explanation.
@@ -272,7 +272,7 @@ heat and final core temperature (74 °C, probed); only the salting differs.
 |---|---|---|---|---|---|---|
 | SCI-2.M2.Q1 | multiple choice | SCI-2.M2.L1 | — | Why does overcooked meat taste dry? A) the fat melts away B) the proteins tighten further and squeeze out more water C) the salt evaporates D) the fibres dissolve | B | Juice loss rises with temperature. |
 | SCI-2.M2.Q2 | multiple choice | SCI-2.M2.L1 | — | What happens to collagen at the temperatures that keep a steak juicy? A) it melts B) it stays tough; it needs long moist cooking to become gelatin C) it disappears D) it turns to fat | B | That is why tough cuts are braised. |
-| SCI-2.M2.Q3 | multiple choice | SCI-2.M2.L1 | yes | You want a juicy, safe chicken breast. What do you aim for? A) 63 °C B) 74 °C at the core, then rest C) 85 °C to be sure D) whatever the recipe time says | B | The safe minimum for poultry, not far above it. |
+| SCI-2.M2.Q3 | multiple choice | SCI-2.M2.L1 | yes | You want a juicy, safe chicken breast. What do you aim for? A) 63 °C B) 75 °C at the core, then rest C) 85 °C to be sure D) whatever the recipe time says | B | The safe minimum for poultry, not far above it. |
 | SCI-2.M2.Q4 | calculation | SCI-2.M2.L1 | — | A breast weighs 220 g raw and 165 g cooked. What is the cooking loss? | 25 % | (220 − 165) ÷ 220. |
 | SCI-2.M2.Q5 | multiple choice | SCI-2.M2.L2 | — | Why does brined meat lose less juice? A) it absorbs fat B) salt dissolves part of the muscle proteins, which then hold water better C) it cooks faster D) the salt seals the surface | B | Salt changes how proteins hold water. |
 | SCI-2.M2.Q6 | multiple choice | SCI-2.M2.L2 | — | Why is a dry-brined chicken left uncovered in the fridge? A) to cool it B) so the surface dries and browns well C) to save space D) to add flavour | B | A dry skin crisps; a wet one steams. |

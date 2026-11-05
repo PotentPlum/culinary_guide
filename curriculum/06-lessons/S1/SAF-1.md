@@ -4,8 +4,8 @@
 **Stage:** S1 · **Hours:** 15.5 h · **Lessons:** 10 · **Exercises:** 5 · **Course file:** [`SAF-1`](../../05-courses/S1/SAF-1.md)
 <!-- END generated:header -->
 
-**Status:** draft — awaiting the second reader's log ([`06-safety-review.md`](../../06-safety-review.md)), the review
-question on core temperatures ([Phase 6 §2](../../06-lesson-development.md#2-source-re-checks)) and the pilot review.
+**Status:** draft — awaiting the second reader's log ([`06-safety-review.md`](../../06-safety-review.md)) and the S1
+review.
 
 **Before you start.** This course makes safe practice a habit before your first knife or pan lesson. Every later
 practical assumes it, and every milestone re-tests it as a gate that no score can make up for. It is the one course the
@@ -477,16 +477,18 @@ reading by it, or adjust the thermometer if it allows.
 - Wait until the reading stops climbing before you read it.
 - Clean the probe between raw and cooked food.
 
-*The core temperatures* the program uses (assessment §9, FDA *Food Code* [S25]):
+*The core temperatures* the program uses (assessment §9: the Voedingscentrum [S47], and the FDA *Food Code* [S25] where
+it gives a time):
 
 | Food | Core temperature |
 |---|---|
-| Poultry, and stuffed foods | 74 °C |
-| Minced meat and minced fish | 70 °C instantaneous, or 68 °C held for 17 seconds |
+| Poultry, and stuffed foods | 75 °C |
+| Minced meat and minced fish | 75 °C instantaneous, or 68 °C held for 17 seconds |
 | Fish and whole cuts of meat | 63 °C for 15 seconds |
 | Whole roasts | A time-and-temperature table, taught in `MEA-2` |
 
-The Dutch rule "right through" (*door en door gaar*) is the same rule without a number [S21].
+The Dutch rule "right through" (*door en door gaar*) [S21] is the same rule; the Voedingscentrum's number for meat
+and chicken is at least 75 °C at the core [S47].
 
 *Why minced meat needs more than a steak.* On a whole cut of meat, bacteria sit on the outside, and searing kills them.
 Mincing spreads the outside through the whole piece, so the centre must get hot enough too.
@@ -508,12 +510,10 @@ part; a reading that has stopped climbing.
 | A reading far higher than expected | The tip touches the bone or the pan | Move it away from the bone and the pan |
 | A reading that is too low | Read too early | Wait until the number stops climbing |
 | Readings that don't match each other | An uncalibrated probe | Calibrate it in ice water and note the offset |
-| Chicken served pink at the bone, or dry | Judging by the colour of the juice | Probe it: 74 °C at the core |
+| Chicken served pink at the bone, or dry | Judging by the colour of the juice | Probe it: 75 °C at the core |
 
-**Safety:** poultry 74 °C, minced meat 70 °C instantaneous (or 68 °C for 17 seconds), fish and whole cuts 63 °C for
-15 seconds (assessment §9: the poultry, minced meat, and fish and intact meat rows). These figures are under review
-question 1 of [Phase 6 §2](../../06-lesson-development.md#2-source-re-checks): the Voedingscentrum gives at least 75 °C
-for meat and chicken [S47]. Until it is answered, the program uses §9 as it stands.
+**Safety:** poultry 75 °C, minced meat 75 °C instantaneous (or 68 °C for 17 seconds), fish and whole cuts 63 °C for
+15 seconds (assessment §9: the poultry, minced meat, and fish and intact meat rows).
 
 **Record:** the calibration readings and the offset; for each piece, the reading and where the probe went.
 
@@ -643,7 +643,7 @@ Day 1:
    heat until the onion is soft and translucent.
 3. **Simmer (30 min).** Add the tomatoes and the water or stock. Bring to the boil, cover, lower the heat and simmer
    gently, stirring now and then, until the carrots are tender.
-4. **Probe it.** Probe the sauce in the centre of the pan: the minced meat must reach 70 °C (assessment §9; a simmering
+4. **Probe it.** Probe the sauce in the centre of the pan: the minced meat must reach 75 °C (assessment §9; a simmering
    sauce is well above it). Write down the reading and the time. Taste, and season with salt and pepper.
 5. **Serve** the portions you eat tonight.
 6. **Cool (up to 2 hours).** Divide the rest into the shallow containers, no more than about 5 cm deep. Stand them in

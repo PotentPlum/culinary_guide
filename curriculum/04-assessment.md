@@ -480,7 +480,9 @@ Gates and safety quiz items check against these figures. They follow two kinds o
   kitchens and is used here only as the measurable standard, because a gate needs a number. The Phase 4 review accepted
   it as the reference.
 
-The figures were checked on the pages and in the sections named on 2026-11-04.
+The figures were checked on the pages and in the sections named on 2026-11-04, and the Voedingscentrum pages
+[S44]–[S47] on 2026-11-05. Where the Voedingscentrum gives a number that is stricter (75 °C for meat and chicken),
+it is used.
 
 | Topic | Figure | Source |
 |---|---|---|
@@ -494,25 +496,25 @@ The figures were checked on the pages and in the sections named on 2026-11-04.
 | Cooling methods | Shallow pans, smaller portions, an ice-water bath with stirring, ice as an ingredient | §3-501.15 [S25] |
 | Hot and cold holding | 57 °C or above; 5 °C or below | §3-501.16 [S25] |
 | Reheating for hot holding | Every part at least 74 °C for 15 seconds, reached within 2 hours | §3-403.11 [S25] |
-| Cooking poultry, and stuffed foods | 74 °C, instantaneous | §3-401.11(A)(3) [S25] |
-| Cooking minced meat and minced fish | 68 °C for 17 seconds, or 63 °C for 3 minutes, 66 °C for 1 minute, 70 °C instantaneous | §3-401.11(A)(2) [S25] |
+| Cooking poultry, and stuffed foods | 75 °C, instantaneous (the Voedingscentrum's *minimaal 75* for meat and chicken, stricter than the Food Code's 74 °C) | Voedingscentrum, *Hoe braad ik?* [S47]; §3-401.11(A)(3) [S25] |
+| Cooking minced meat and minced fish | 75 °C instantaneous; or, measured with a probe and a timer, 68 °C for 17 seconds, 63 °C for 3 minutes, 66 °C for 1 minute | [S47]; time and temperature §3-401.11(A)(2) [S25] |
 | Cooking fish and intact meat | 63 °C for 15 seconds | §3-401.11(A)(1) [S25] |
 | Whole-muscle, intact beef steaks served rare | Cooked on top and bottom to a surface temperature of 63 °C or above, with a cooked colour change on all outside surfaces; the steak kept intact (not pierced, needle-tenderised or rolled); not served to risk groups | §3-401.11(C) [S25] |
 | Whole meat roasts | A time-temperature table, from 54.4 °C held for 112 minutes to 62.8 °C held for 4 minutes (the holding time may include the rise after the oven) | §3-401.11(B) [S25] |
-| Poultry cooked at low temperature (sous vide) | Held at the core for the time in this table (the slowest column, for 12 % fat, used for all poultry): 60.0 °C for 35 minutes (times rounded up), 61.1 °C for 24 minutes, 62.2 °C for 17 minutes, 63.3 °C for 11.5 minutes, 64.4 °C for 8 minutes, 65.6 °C for 5 minutes, 66.7 °C for 3 minutes, 68.9 °C for 1 minute, 70.0 °C for 41 seconds; 74 °C instantaneous. The program uses no rows below 60 °C | USDA FSIS, poultry time-temperature tables (Notice 16-05, 2005) [S34] |
+| Poultry cooked at low temperature (sous vide) | Held at the core for the time in this table (the slowest column, for 12 % fat, used for all poultry): 60.0 °C for 35 minutes (times rounded up), 61.1 °C for 24 minutes, 62.2 °C for 17 minutes, 63.3 °C for 11.5 minutes, 64.4 °C for 8 minutes, 65.6 °C for 5 minutes, 66.7 °C for 3 minutes, 68.9 °C for 1 minute, 70.0 °C for 41 seconds; 75 °C instantaneous (the poultry row). The program uses no rows below 60 °C | USDA FSIS, poultry time-temperature tables (Notice 16-05, 2005) [S34] |
 | Sous vide and cook-chill food kept for later | Sealed, cooked to a row of this table, then cooled to the cooling rule above and kept as leftovers (at most 2 days in the fridge) or frozen. The Food Code's professional limits (up to 7 days at 5 °C under a HACCP plan) are not used at home | §3-502.12(D) [S25]; [S22] |
 | Fish eaten raw, cured, acid-marinated or cooked below 60 °C at the core | Frozen first to kill parasites: −20 °C or below in all parts for at least 24 hours (EU rule for businesses, so fish bought with that treatment qualifies), or in a home freezer shown by a thermometer to hold −20 °C or below, for 7 days. A freezer at −18 °C does not qualify. Salt, sugar and acid do not replace freezing. Heating to 60 °C at the core for 1 minute also kills the parasites | Regulation (EC) 853/2004, Annex III, Section VIII, Chapter III, Part D, as amended by Regulation (EU) 1276/2011 [S35]; Food Code §3-402.11 [S25] |
-| Raw or partly cooked animal foods (raw or lightly cooked fish, rare meat, soft eggs from raw eggs) | Not served to risk groups (pregnant people, young children, older people, people with weakened immunity); for them, pasteurised egg replaces raw egg. Preparations in which the egg is raw when served, and warm egg sauces, follow the row for raw egg below, for every guest | §3-801.11(B) and (C) [S25] |
+| Raw or partly cooked animal foods (raw or lightly cooked fish, smoked fish not heated after smoking, rare meat, cold cuts made from raw meat, soft eggs from raw eggs, soft raw-milk cheese and raw milk, raw sprouts) | Not served to risk groups (pregnant people, young children, older people, people with weakened immunity); for them, pasteurised egg replaces raw egg, and an egg is cooked until fully set. In pregnancy also no liver or liver dishes (too much vitamin A). Hard raw-milk cheese is safe. Preparations in which the egg is raw when served, and warm egg sauces, follow the row for raw egg below, for every guest | §3-801.11(B) and (C) [S25]; Voedingscentrum, pregnancy [S46] and eggs [S44][S45] |
 | Acidity and botulism | Foods at pH 4.6 or below are acid foods (fruit, pickles, sauerkraut, jams); above 4.6 is low-acid (meat, fish, poultry, milk, all fresh vegetables except most tomatoes) | NCHFP, *Ensuring Safe Canned Foods* [S27] |
 | Home canning | Acid foods only, in a boiling-water canner, by a tested recipe and its processing time, followed exactly. Low-acid foods need pressure canning, which the program does not teach | [S27] |
 | Lacto-fermented vegetables (sauerkraut) | Salt at 2.25–2.5 % of the vegetables' weight; fermented at 21–24 °C for about 3–4 weeks (5–6 weeks at 16–18 °C; below about 16 °C it may not ferment) | UW-Extension, *Make your own sauerkraut* [S36]; NCHFP sauerkraut [S27] |
 | Nitrite curing salt | Used only where a tested recipe needs it; the added nitrite at most 80 mg per kg of meat (as the nitrite ion), weighed from the nitrite content on the salt's label | Regulation (EC) 1333/2008, Annex II, as amended by Regulation (EU) 2023/2108, from 9 October 2025 (FSAI summary) [S37] |
 | Dried kidney beans and other common beans (*Phaseolus vulgaris*) | Soaked for at least 5 hours with the water poured away, then boiled in fresh water for at least 30 minutes; never cooked in a slow cooker (which may reach only 75 °C) | FDA *Bad Bug Book* (2nd ed.), Phytohaemagglutinin [S33] |
 | Egg-thickened desserts cooked for later (custard and ice-cream bases, *crème anglaise*, curds, Swiss meringue) | Every part to at least 71 °C, checked with a probe | FDA, *What You Need to Know About Egg Safety*: dishes containing eggs to 160 °F [S38]; it also meets Food Code §3-401.11(A)(2) for raw eggs not cooked to order (70 °C instantaneous) [S25] |
-| Raw egg in a preparation (raw-yolk sauces such as mayonnaise and *aïoli*, raw-egg mousses, an uncooked ice-cream base), desserts in which the egg is lightly cooked when served (a mousse with uncooked meringue, Italian meringue below the row above), and warm egg sauces in which the yolk is lightly cooked when served (*hollandaise* and its family, *sabayon*) | Made with pasteurised eggs or egg products, for every guest: one rule for the whole program since the S4 review, extended to the warm egg sauces at the S5 review | [S38]; risk groups §3-801.11 [S25] |
-| Game animals | Farmed (commercially raised) deer and other game, intact: 63 °C for 15 seconds; minced: the minced row. Wild game animals (hunted deer, wild boar, hare): 74 °C, instantaneous | §3-401.11(A)(1) and (A)(3), §3-201.17 [S25] |
+| Raw egg in a preparation (raw-yolk sauces such as mayonnaise and *aïoli*, raw-egg mousses, an uncooked ice-cream base), desserts in which the egg is lightly cooked when served (a mousse with uncooked meringue, Italian meringue below the row above), and warm egg sauces in which the yolk is lightly cooked when served (*hollandaise* and its family, *sabayon*) | Made with pasteurised eggs or egg products, for every guest: one rule for the whole program since the S4 review, extended to the warm egg sauces at the S5 review. A dish with raw egg is kept covered in the fridge for at most 24 hours, also with pasteurised egg | [S38]; risk groups §3-801.11 [S25]; 24 hours: Voedingscentrum, *5x veilig met eieren* [S44] |
+| Game animals | Farmed (commercially raised) deer and other game, intact: 63 °C for 15 seconds; minced: the minced row. Wild game animals (hunted deer, wild boar, hare): 75 °C, instantaneous | §3-401.11(A)(1) and (A)(3), §3-201.17 [S25]; [S47] |
 | Duck, goose, pigeon and game birds (pheasant, partridge) | Poultry: the poultry row, or the low-temperature poultry table | Food Code definition of poultry, §1-201.10 [S25]; [S34] |
-| Offal (liver, kidneys, sweetbreads) | Not whole muscle, so cooked as non-intact meat: 68 °C for 17 seconds, or 63 °C for 3 minutes, 66 °C for 1 minute, 70 °C instantaneous. Heart and tongue are whole muscle (the intact-meat row). Poultry offal (chicken livers) follows the poultry row | Definitions of meat and intact meat (§1-201.10); §3-401.11(A)(2) and (A)(3) [S25] |
+| Offal (liver, kidneys, sweetbreads) | Not whole muscle, so cooked as non-intact meat: the minced row (75 °C instantaneous; or 68 °C for 17 seconds, 63 °C for 3 minutes, 66 °C for 1 minute). Heart and tongue are whole muscle (the intact-meat row). Poultry offal (chicken livers) follows the poultry row | Definitions of meat and intact meat (§1-201.10); §3-401.11(A)(2) and (A)(3) [S25]; [S47] |
 | Wild boar | Only meat from a carcass sampled and examined for *Trichinella*, as EU law requires for every wild-boar carcass in a game-handling establishment: bought from a supplier of inspected game, never untested meat from a hunt; cooked as wild game | Regulation (EU) 2015/1375, Article 2(2) and Annex III [S39]; [S25] |
 | Live crabs and lobsters | Not dispatched at home in the program. Bought cooked, or dispatched by a trained fishmonger (double spiking for crabs, whole-body splitting for lobsters, ideally after electrical stunning) and cooked without delay. Boiling alive, drowning in fresh water, chilling in a freezer or on ice, and live dismemberment are inhumane. Cooked shellfish are kept as leftovers | LSE *Review of the Evidence of Sentience in Cephalopod Molluscs and Decapod Crustaceans* (2021) [S40]; Crustacean Compassion, *Stunning and slaughter* [S41]; [S22] |
 | Alcohol in cooking | Alcohol stays after cooking. Retained: 85 % stirred into a boiling liquid and taken off the heat; 75 % flamed; 70 % stored overnight without heat; 45 % baked 25 minutes without stirring in; stirred in and baked or simmered: 40 % after 15 minutes, 35 % after 30 minutes, 25 % after 1 hour, 20 % after 1.5 hours, 10 % after 2 hours, 5 % after 2.5 hours. A dish cooked with alcohol is not alcohol-free | USDA *Table of Nutrient Retention Factors*, Release 6 (2007), alcohol rows [S42] |
@@ -534,12 +536,23 @@ The figures were checked on the pages and in the sections named on 2026-11-04.
   the S4 review. At that review the raw-egg rule became one rule for the program: pasteurised egg for every guest
   wherever egg is raw when served. At the S5 review it was extended to the warm egg sauces (*hollandaise* and its
   family, *sabayon*), because the source covers eggs "raw or undercooked when served" [S38]. Soft whole eggs
-  (soft-boiled, poached, a soft omelette, the 63 °C egg) keep the risk-group row until Phase 6 has checked the
-  Voedingscentrum's advice.
+  (soft-boiled, poached, a soft omelette, the 63 °C egg) keep the risk-group row, which the Voedingscentrum confirms
+  [S44][S45].
+- At the Phase 6 pilot review (2026-11-05), after the Voedingscentrum pages were read [S44]–[S47]:
+  - poultry, stuffed foods, wild game and the instantaneous figure for minced meat, minced fish and offal became 75 °C,
+    the Dutch figure for meat and chicken [S47], under the rule that the stricter Dutch advice wins. The Food Code's
+    time-and-temperature tables (minced meat, roasts, low-temperature poultry) stay as the measured alternative,
+    because the Voedingscentrum gives no times. Intact meat and fish stay at 63 °C, stricter than its 55 °C (rosé
+    whole cuts) and 60 °C (fish). Reheating for hot holding stays at 74 °C for 15 seconds;
+  - dishes with raw egg are kept at most 24 hours [S44];
+  - the risk-group row gained smoked fish, cold cuts made from raw meat, soft raw-milk cheese and raw milk, raw sprouts,
+    and liver in pregnancy [S46];
+  - the siphon line below gained its chargers [S50].
 - Tier 3 equipment (the whipping siphon, the blowtorch) is used only as its maker's instructions say: the siphon with
   the maker's chargers and never above its fill line, the blowtorch refilled away from flames and never pointed at a
-  person. The course files give no pressure or gas figures. The Dutch rules on nitrous oxide are to be checked before
-  Phase 6.
+  person. The course files give no pressure or gas figures. Chargers are bought for food use, a few at a time: the
+  Dutch ban on nitrous oxide does not cover its use as a food additive, and for a private person more than 10 chargers
+  is a strong sign of other use [S50]. The gas is never inhaled.
 - The Dutch home advice wins where it is stricter, for example 4 °C rather than 5 °C in the fridge.
 - The Food Code's oven chart for roasts (§3-401.11(B)(2): a still oven at 177 °C or more for roasts under 4.5 kg) is
   not adopted for home roasting. Whole roasts are judged by the core time-temperature table above, whatever the oven

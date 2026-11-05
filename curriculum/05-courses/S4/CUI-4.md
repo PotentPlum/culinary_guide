@@ -38,7 +38,7 @@ allowed and named in every exercise, with their effect:
 - nuts are replaced by seeds by default, as in S3, with the allergen rule where a learner uses them.
 
 **Safety** follows assessment §9 in every tradition: forcemeats and minced fillings to the minced row (68 °C for
-17 seconds or a row of its table), poultry to 74 °C or the poultry table, fish to 63 °C or, for raw fish in *sushi*,
+17 seconds or a row of its table), poultry to 75 °C or the poultry table, fish to 63 °C or, for raw fish in *sushi*,
 only fish frozen first by the fish row and never for risk groups; cooked rice and stocks cooled by the cooling rule;
 frying by `HEA-2.M4`; allergens named for guests.
 
@@ -69,7 +69,7 @@ menu frame, the special equipment (Good and Best) and the usual Dutch substituti
   the garnish cooked separately, the sauce finished (`SLW-3`, `CLS-4.M3`).
 - *Technique II:* *Pâtés* and *terrines*. A forcemeat by ratio (meat, fat, salt about 1.5–1.8 %, a panade or egg),
   seasoned and tested by poaching a spoonful, baked in a water bath to the minced row of §9 at the core (68 °C for
-  17 seconds; 74 °C with poultry), pressed, cooled by the cooling rule, kept at most 2 days or frozen.
+  17 seconds; 75 °C with poultry), pressed, cooled by the cooling rule, kept at most 2 days or frozen.
 - *Menu frame:* a regional starter (a *terrine*, a vegetable *velouté*), a braise or roast with its garnish, a regional
   dessert (a *tarte Tatin* in Normandy, a *kugelhopf* in Alsace).
 - *Equipment:* terrine mould (Good: a loaf tin; Best: an enamelled cast-iron *terrine* with a press).
@@ -121,7 +121,7 @@ menu frame, the special equipment (Good and Best) and the usual Dutch substituti
 - *Regions:* Punjab, Gujarat, Bengal, Kerala and Tamil Nadu, Goa.
 - *Extended pantry:* whole and ground spices, *ghee*, mustard oil, pulses (*urad*, *chana*, *toor*, *moong*), basmati and
   short-grain rice, *atta*, *besan*, *jaggery*, tamarind, curry leaves, *asafoetida*, coconut.
-- *Technique I:* The *tandoor* adapted for home. Yoghurt and spice marinades; chicken (to 74 °C) and paneer cooked under
+- *Technique I:* The *tandoor* adapted for home. Yoghurt and spice marinades; chicken (to 75 °C) and paneer cooked under
   a very hot grill, on a steel or in a lidded grill; naan baked on a steel or a hot cast-iron pan.
 - *Technique II:* Fermented batters. *Idli* and *dosa* from soaked, ground rice and *urad* dal, fermented overnight in a
   warm place, steamed or spread thin on a hot pan, with *sambar* and a coconut chutney.
@@ -425,7 +425,7 @@ asks.
 | CUI-4.M1.Q2 | multiple choice | CUI-4.M1.L1 | — | Why choose one region for the menu? A) it is cheaper B) a tradition is a set of regions with their own produce and dishes; one region gives the meal a logic C) it is shorter D) tradition | B | Regional variation. |
 | CUI-4.M1.Q3 | scenario | CUI-4.M1.L1 | — | A pantry item for your menu can't be found in Dutch shops. What do you do? | Find what it does in the dish (fat, acid, aroma, texture), choose a substitute that does the same, name the substitution and its effect in the exercise. | Substitution by function, named. |
 | CUI-4.M1.Q4 | multiple choice | CUI-4.M1.L1 | — | When is a deep dive best placed in the year? A) any time B) in a season that suits the chosen region's produce and dishes, mapped onto the Dutch seasons C) winter only D) when the shops have a sale | B | Seasonality. |
-| CUI-4.M1.Q5 | multiple choice | CUI-4.M1.L1 | yes | A *terrine* of pork forcemeat is baked in a water bath. To what core temperature? A) 55 °C B) the minced row of §9: 68 °C for 17 seconds (or a row of its table); 74 °C with poultry C) 63 °C D) until set | B | Minced and poultry rows. |
+| CUI-4.M1.Q5 | multiple choice | CUI-4.M1.L1 | yes | A *terrine* of pork forcemeat is baked in a water bath. To what core temperature? A) 55 °C B) the minced row of §9: 68 °C for 17 seconds (or a row of its table); 75 °C with poultry C) 63 °C D) until set | B | Minced and poultry rows. |
 | CUI-4.M1.Q6 | scenario | CUI-4.M1.L4 | — | Your planned regional menu is a rich braise, a creamy gratin and a custard dessert. What is wrong, and how do you change it? | Three rich dishes compete; swap one for a fresh or acidic dish of the region (a salad, a pickled vegetable, a fruit dessert) for balance. | [J] balance through the lens. |
 | CUI-4.M1.Q7 | multiple choice | CUI-4.M1.L4 | — | What does "recreated from a description alone" mean? A) from a recipe B) from a description, menu or memory, with your own plan and a fallback C) from a video D) by a friend | B | No recipe. |
 | CUI-4.M1.Q8 | multiple choice | CUI-4.M1.L4 | yes | Which drinks does every menu with drinks include? A) wine only B) a non-alcoholic pairing for every guest C) beer D) none | B | Alcohol and guests row, assessment §9. |

@@ -557,8 +557,9 @@ and confirmed by photos, as the three situations of the `SC-BRWN` level 4 row.
     the frozen dessert.
 - **Planning the flavours:** one main flavour, one contrast, one texture accent; each component tasted alone and
   together.
-- **Making ahead:** the insert and sponge on day 1; the components kept covered in the fridge (cooked creams and
-  mousses within 2 days, assessment §9) or frozen.
+- **Making ahead:** the insert and sponge on day 1; the components kept covered in the fridge (cooked creams within
+  2 days; a mousse with raw or lightly cooked egg, such as uncooked Italian meringue, within 24 hours; assessment §9)
+  or frozen.
 
 **Sessions:**
 1. The components (3.5 h over a day): a sponge sheet, a frozen insert, a crunch layer and a mousse base prepared; each
@@ -645,7 +646,7 @@ corrected in writing.
 | PST-4.M4.Q1 | multiple choice | PST-4.M4.L1 | — | What is the insert of an *entremets*? A) the sponge B) a contrasting centre, frozen first so it holds its shape C) the glaze D) the crunch | B | It gives the surprise in the slice. |
 | PST-4.M4.Q2 | multiple choice | PST-4.M4.L1 | — | How does a crunch layer stay crisp under a mousse? A) it is baked twice B) fat (chocolate or praline) coats it against moisture C) it is frozen D) it is added at serving | B | Fat seals out water. |
 | PST-4.M4.Q3 | multiple choice | PST-4.M4.L1 | — | Which component is usually soaked with a syrup? A) the glaze B) the sponge C) the insert D) the crunch | B | For moisture and flavour. |
-| PST-4.M4.Q4 | multiple choice | PST-4.M4.L1 | yes | A mousse made yesterday waits in the fridge. How long may it wait before assembly? A) a week B) at most 2 days at 5 °C or below C) any time while it's set D) overnight at room temperature | B | Cooked chilled food, assessment §9. |
+| PST-4.M4.Q4 | multiple choice | PST-4.M4.L1 | yes | A mousse lightened with uncooked Italian meringue of pasteurised whites waits in the fridge. How long may it be kept before it is eaten? A) a week B) at most 24 hours, covered, in the fridge C) any time while it's set D) overnight at room temperature | B | The raw-egg row, assessment §9: a dish with raw egg at most 24 hours. |
 | PST-4.M4.Q5 | ordering | PST-4.M4.L2 | — | Put the steps in order: glaze; thaw in the fridge; assemble in a ring; freeze overnight | assemble in a ring, freeze overnight, glaze, thaw in the fridge | The glaze goes on the frozen dessert. |
 | PST-4.M4.Q6 | multiple choice | PST-4.M4.L2 | — | Your mirror glaze ran off and left the dessert bare. Most likely cause? A) too cold B) too hot when poured C) too much gelatin D) the rack | B | Pour at the measured temperature. |
 | PST-4.M4.Q7 | scenario | PST-4.M4.L2 | — | Dinner is Saturday at 19:00. Write the key steps of a two-day plan for a layered dessert. | Friday: components (sponge, insert frozen, crunch, mousse), assemble and freeze overnight. Saturday morning: glaze the frozen dessert, then thaw in the fridge from about midday; slice with a hot knife at service. Check the freezer space first. | [J] backwards from service. |

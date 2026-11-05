@@ -267,7 +267,7 @@ from `STK-2`.
 - ***Fricassée*:** the meat sweated in butter without colour, dusted with flour, then simmered in stock; finished with
   cream.
 - **The velvety sauce:** strained, reduced and skimmed; seasoned with a few drops of lemon.
-- **Doneness:** chicken to 74 °C at the core (assessment §9), veal and pork tender.
+- **Doneness:** chicken to 75 °C at the core (assessment §9), veal and pork tender.
 
 **Sessions:**
 1. A *fricassée* (90 min active, 3 h in total): a chicken-leg or pork *fricassée* with mushrooms and leeks; the sauce at
@@ -410,7 +410,7 @@ liquid) are shown in the logged braises of `SLW-3.M2.X1` and `SLW-3.M2.X2`.
   - little liquid (a few centimetres, or only the juices);
   - often a tender or medium cut (a whole chicken, a pork loin, a rolled shoulder), served sliced and juicy;
   - the lid comes off at the end to colour the skin.
-- **Doneness by the §9 figures:** a chicken to 74 °C in the thickest part of the thigh; pork to 63 °C for 15 seconds; a
+- **Doneness by the §9 figures:** a chicken to 75 °C in the thickest part of the thigh; pork to 63 °C for 15 seconds; a
   rolled shoulder cooked longer, until tender.
 - **Carryover in a pot:** a covered pot holds heat, so the core keeps rising after the oven; the rise is predicted and
   logged (`HEA-2.M2`).
@@ -428,7 +428,7 @@ liquid) are shown in the logged braises of `SLW-3.M2.X1` and `SLW-3.M2.X2`.
 **Faults:**
 - Too much liquid, so the joint boils.
 - No colour.
-- Pulling a chicken below 74 °C and hoping.
+- Pulling a chicken below 75 °C and hoping.
 
 #### SLW-3.M3.L2 — From braising liquid to sauce
 
@@ -504,7 +504,7 @@ the sauce chosen for the dish with a reason and finished at *nappe*; household o
 | ID | Type | Lesson | Safety | Item | Answer | Why |
 |---|---|---|---|---|---|---|
 | SLW-3.M3.Q1 | multiple choice | SLW-3.M3.L1 | — | How does a pot-roast differ from a braise? A) more liquid B) little liquid, often a tender or medium cut served sliced C) no lid D) no oven | B | It steams and roasts at once. |
-| SLW-3.M3.Q2 | multiple choice | SLW-3.M3.L1 | yes | A pot-roasted chicken reads 71 °C in the thigh after resting. What do you do? A) serve it B) return it to the oven and probe again until 74 °C C) slice it thin D) serve the breast only | B | Poultry 74 °C (assessment §9). |
+| SLW-3.M3.Q2 | multiple choice | SLW-3.M3.L1 | yes | A pot-roasted chicken reads 71 °C in the thigh after resting. What do you do? A) serve it B) return it to the oven and probe again until 75 °C C) slice it thin D) serve the breast only | B | Poultry 75 °C (assessment §9). |
 | SLW-3.M3.Q3 | multiple choice | SLW-3.M3.L1 | — | Why does a pot-roast's core keep rising after the oven? A) the lid holds heat; the outer layers are hotter than the core B) the sauce C) it doesn't D) the thermometer is wrong | A | Carryover. |
 | SLW-3.M3.Q4 | multiple choice | SLW-3.M3.L1 | — | When does the lid come off a pot-roast? A) never B) at the end, to colour the skin C) at the start D) halfway, for good | B | Colour comes last. |
 | SLW-3.M3.Q5 | multiple choice | SLW-3.M3.L2 | — | When is a reduced sauce salted? A) before reducing B) at the end, after reducing C) never D) halfway | B | Salt concentrates as it reduces. |
@@ -577,7 +577,7 @@ the sauce chosen for the dish with a reason and finished at *nappe*; household o
 - **The slow cooker** heats a ceramic pot gently for 4–10 hours. Little evaporation, so less liquid; no browning, so
   brown first in a pan.
 - **[K] The safety limits** (assessment §9):
-  - the food must still end at the §9 figures (poultry 74 °C, braises until tender and hot throughout);
+  - the food must still end at the §9 figures (poultry 75 °C, braises until tender and hot throughout);
   - dried common beans are never cooked in a slow cooker (the bean row of §9): they are cooked first by the bean rule;
   - frozen meat is thawed in the fridge first, so that it does not spend hours in the growth range;
   - leftovers are cooled by the standard, not left in the switched-off pot.

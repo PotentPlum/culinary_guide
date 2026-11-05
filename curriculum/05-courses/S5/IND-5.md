@@ -28,7 +28,7 @@ The course is a series of briefs:
 
 **Rules for every brief.**
 - **Safety first:** assessment §9 applies to every dish. A brief, a basket or a historical text never overrides it:
-  poultry to 74 °C, minced meat to its row, leftovers within 2 days and reheated once, raw egg and warm egg sauces
+  poultry to 75 °C, minced meat to its row, leftovers within 2 days and reheated once, raw egg and warm egg sauces
   pasteurised for every guest. Doneness judged by the senses is checked with the probe before a §9 food is served.
 - **Ingredients:** Dutch seasonal vegetables (velt.nu harvest windows) and MSC or seasonal North Sea fish. A basket or
   an "unfamiliar ingredient" is bought, not foraged.
@@ -982,7 +982,7 @@ breads and custards. The variable is the fault, then the food. The extensions:
 | IND-5.M6.Q2 | scenario | IND-5.M6.L1 | yes | A mayonnaise splits just before guests arrive. How do you rescue it? | Whisk the broken sauce slowly into a fresh pasteurised yolk (or a spoon of water); every yolk in an uncooked sauce is pasteurised, for every guest (assessment §9). | Rescue within §9. |
 | IND-5.M6.Q3 | multiple choice | IND-5.M6.L1 | — | The base of a stew has caught and burnt. What first? A) stir it in B) move the stew to a clean pan at once without scraping, then taste C) add sugar D) add more liquid | B | Scraping spreads the burnt taste. |
 | IND-5.M6.Q4 | scenario | IND-5.M6.L1 | — | A duck breast is overcooked for the guests' course. What are your options? | Not served as the planned doneness: sliced thin and sauced, or turned into another dish (a salad or a ragù); the menu adjusted quietly. | Overcooking can't be undone. |
-| IND-5.M6.Q5 | scenario | IND-5.M6.L2 | yes | Your press test says a chicken thigh is done; the probe says 69 °C. What do you do? | Cook on until 74 °C at the core (assessment §9) and note the difference in the log; the reading decides, not the press. | Verify, then serve. |
+| IND-5.M6.Q5 | scenario | IND-5.M6.L2 | yes | Your press test says a chicken thigh is done; the probe says 69 °C. What do you do? | Cook on until 75 °C at the core (assessment §9) and note the difference in the log; the reading decides, not the press. | Verify, then serve. |
 | IND-5.M6.Q6 | multiple choice | IND-5.M6.L2 | — | When do you write the doneness prediction? A) after the reading B) before any instrument is used C) only for proteins D) never | B | Otherwise the log measures nothing. |
 | IND-5.M6.Q7 | scenario | IND-5.M6.L2 | yes | A stirred custard coats the spoon nicely, but you haven't probed it. It will be kept for tomorrow. What do you do? | Probe it: every part to at least 71 °C (assessment §9), then cool by the cooling rule and keep it in the fridge. | Egg-thickened desserts kept for later. |
 | IND-5.M6.Q8 | multiple choice | IND-5.M6.L2 | — | A loaf sounds hollow, but it feels heavy for its size. What does that suggest? A) done B) possibly underbaked inside: check the core C) overproofed D) too much salt | B | Two cues disagree, so verify. |

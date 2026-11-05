@@ -835,7 +835,7 @@ vegetables for the garnish.
 
 **Concepts:**
 - ***Suprême de volaille*:** the supreme (`BUT-3.M1.L1`) seasoned, browned skin-side in butter, finished in the oven to
-  74 °C at the core or by the low-temperature poultry table (assessment §9), rested, with a *suprême* sauce or a brown
+  75 °C at the core or by the low-temperature poultry table (assessment §9), rested, with a *suprême* sauce or a brown
   derivative.
 - ***Tournedos*:** a thick round of beef fillet, tied, seared and cooked to the chosen doneness (the steak row of
   assessment §9 for rare and medium-rare), served on a crouton with a classical sauce and garnish (*tournedos

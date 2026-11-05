@@ -37,7 +37,7 @@ logic behind them, not a single "authentic" version. Adaptations to a Dutch kitc
 - **meat and fish** are Dutch or North Sea, by the rules of the earlier courses.
 
 Safety follows [assessment §9](../../04-assessment.md#9-safety-figures-used-in-assessment) in every tradition: minced
-fillings to 70 °C, poultry to 74 °C, fish to 63 °C (no raw-fish dishes are taught here; `GRD-3.M3` covers the rules),
+fillings to 75 °C, poultry to 75 °C, fish to 63 °C (no raw-fish dishes are taught here; `GRD-3.M3` covers the rules),
 cooked rice cooled fast and kept cold, soft-set egg dishes and cured meats not served to risk groups, allergens (sesame,
 peanuts, tree nuts, soy, fish, crustaceans, gluten) named for guests.
 
@@ -724,7 +724,7 @@ in writing and cooked.
   releases more starch and goes creamy, which is wrong here. The variety is chosen with a reason (`IN-STA`).
 - **A home stove:** a pan wider than the burner heats unevenly; the pan is moved and turned, two burners are used, or the
   rice finishes in the oven; the adaptation is noted.
-- **Safety:** chicken browned and cooked through (74 °C), seafood to 63 °C; leftover rice cooled fast (`SCI-2.M6`).
+- **Safety:** chicken browned and cooked through (75 °C), seafood to 63 °C; leftover rice cooled fast (`SCI-2.M6`).
 
 **Sessions:**
 1. A vegetable rice (75 min): a wide-pan rice with seasonal vegetables (for example green beans, artichokes in season,
@@ -996,7 +996,7 @@ mushrooms, potatoes); prawns or a cured sausage if wanted.
 - **Couscous steamed in two stages:** the grains moistened and rubbed with oil, steamed over the stew (or in a steamer)
   for about 15 minutes, turned out, sprinkled with salted water and broken up, then steamed again until fluffy; quick
   "pour-over" couscous is the shortcut, and the difference is tasted.
-- **Doneness:** lamb tender to a fork; chicken to 74 °C.
+- **Doneness:** lamb tender to a fork; chicken to 75 °C.
 
 **Sessions:**
 1. A tagine (75 min active, 2 h in total): lamb shoulder or chicken legs with fruit or preserved lemon, in a casserole or a
@@ -1192,7 +1192,7 @@ dish with a written reason; spices layered (start and finish); couscous steamed 
   *masala* with water, stock, yoghurt or coconut milk; finished with *garam masala* and fresh coriander.
 - **[J] Balancing heat and acid:** chilli in steps (`FLV-3.M2.L4`); acid from tomato, yoghurt, tamarind, lemon or
   vinegar; a pinch of sugar or jaggery to round; salt last.
-- **Safety:** chicken to 74 °C; yoghurt added off the boil or stabilised so it doesn't split.
+- **Safety:** chicken to 75 °C; yoghurt added off the boil or stabilised so it doesn't split.
 
 **Sessions:**
 1. A *masala* (60 min): the base built step by step; the "oil separates" stage photographed.
@@ -1431,7 +1431,7 @@ substitutions named; household cards on balance and recognition.
 - **The sauce at the end:** the premixed sauce (soy, wine, stock, sugar, cornflour) poured in at the end and tossed until
   glossy and coating.
 - **Safety:** a smoking wok and oil: no water near the oil, a lid at hand, the extraction on (`HEA-2.M4`); chicken to
-  74 °C, pork and beef slices cooked through for a family meal.
+  75 °C, pork and beef slices cooked through for a family meal.
 
 **Sessions:**
 1. A stir-fry (75 min): a velveted chicken or pork stir-fry with seasonal vegetables (for example pointed cabbage, leeks,
@@ -1465,7 +1465,7 @@ substitutions named; household cards on balance and recognition.
 - **Two folds:** a half-moon with pleats, and a simple pinched fold; sealed well.
 - **Cooking:** boiled (added to boiling water, brought back to the boil with a splash of cold water, until they float
   and the filling is cooked); or pan-fried (*guotie*: browned, then steamed with water under a lid, then crisped). A
-  minced-pork filling reaches 70 °C (§9); one dumpling is cut and probed.
+  minced-pork filling reaches 75 °C (§9); one dumpling is cut and probed.
 - **Steamed fish with ginger and spring onion:** a whole fish (a North Sea fish or a Dutch-farmed trout) steamed over
   boiling water until it reaches 63 °C at the bone (§9), then topped with shredded ginger and spring onion, hot oil and a
   light soy dressing.
@@ -1476,7 +1476,7 @@ substitutions named; household cards on balance and recognition.
 
 **Cues:**
 - Thin, sealed wrappers.
-- A juicy, cooked filling at 70 °C.
+- A juicy, cooked filling at 75 °C.
 - Fish just opaque at the bone.
 
 **Faults:**
@@ -1577,7 +1577,7 @@ pepper or black vinegar) analysed in writing and cooked; household cards on bala
 **Aim:** make dumplings from scratch and cook them two ways, with the moist methods controlled.
 
 **Conditions:** framework support: the dumpling framework. A hot-water dough, a filling, two folds; boiled and pan-fried
-(steamed under a lid); the filling probed to 70 °C (minced meat, §9); the steamed fish of `CUI-3.M7.L3` logged the same
+(steamed under a lid); the filling probed to 75 °C (minced meat, §9); the steamed fish of `CUI-3.M7.L3` logged the same
 way (63 °C at the bone); the method for each reasoned; photos of the folds and the cooked dumplings.
 
 **Inputs:** flour, minced pork or a vegetarian filling, cabbage, ginger, spring onion, soy, Shaoxing wine; a whole fish
@@ -1609,7 +1609,7 @@ for the steaming.
 | CUI-3.M7.Q3 | multiple choice | CUI-3.M7.L1 | — | What is dark soy sauce mostly for? A) saltiness B) colour and a little sweetness C) acidity D) frying | B | The pantry. |
 | CUI-3.M7.Q4 | multiple choice | CUI-3.M7.L1 | — | Which cuisine is known for steaming, quick stir-fries and *dim sum*? A) Hunan B) Cantonese C) Sichuan D) Beijing | B | Regional China. |
 | CUI-3.M7.Q5 | multiple choice | CUI-3.M7.L3 | — | Why is hot water used for a steamed-dumpling dough? A) it is faster B) it partly cooks the starch and weakens the gluten, so the dough is soft and rolls thin C) it adds flavour D) it makes it chewier | B | [K] hot- versus cold-water dough. |
-| CUI-3.M7.Q6 | multiple choice | CUI-3.M7.L3 | yes | To what core temperature is a minced-pork dumpling filling cooked? A) 55 °C B) 63 °C C) 70 °C D) 50 °C | C | Minced meat (§9). |
+| CUI-3.M7.Q6 | multiple choice | CUI-3.M7.L3 | yes | To what core temperature is a minced-pork dumpling filling cooked? A) 55 °C B) 63 °C C) 75 °C D) 50 °C | C | Minced meat (§9). |
 | CUI-3.M7.Q7 | multiple choice | CUI-3.M7.L3 | yes | A whole steamed fish is done when: A) the eyes turn white B) 63 °C at the bone, the flesh just opaque C) after 2 minutes D) the skin splits | B | Fish (§9). |
 | CUI-3.M7.Q8 | multiple choice | CUI-3.M7.L1 | — | How is a Chinese family meal usually served? A) one plate per person B) rice for each and several dishes shared C) courses in sequence D) a set tray | B | Meal structure. |
 
@@ -1718,7 +1718,7 @@ for the steaming.
   and miso last because their aroma fades with heat.
 - ***Yakimono*:** salt-grilled fish (*shioyaki*: a whole mackerel or fillets salted 20–30 minutes ahead, grilled until
   crisp and cooked to 63 °C at the bone), or *teriyaki* (chicken thighs or fish glazed with soy, *mirin* and sugar, the
-  glaze added near the end so it doesn't burn; chicken to 74 °C).
+  glaze added near the end so it doesn't burn; chicken to 75 °C).
 - **Seasoning by taste:** each dish's balance adjusted and noted (`FL-SEAS`).
 
 **Sessions:**
@@ -1746,7 +1746,7 @@ for the steaming.
 **Concepts:**
 - ***Donburi*:** a bowl of rice topped with a simmered or grilled topping: *oyakodon* (chicken and egg simmered in
   seasoned *dashi*), *gyūdon* (beef and onion), a vegetable or tofu version. A soft-set egg is not served to risk groups
-  (§9); for them it is cooked through. Chicken to 74 °C.
+  (§9); for them it is cooked through. Chicken to 75 °C.
 - ***Onigiri*:** rice balls shaped with wet, salted hands around a filling (salted salmon, pickled plum, a cooked
   vegetable), wrapped in *nori*; eaten the same day, kept cool; cooked rice treated by the rules of §9.
 - ***Tsukemono*:** quick pickles of cucumber, cabbage, radish or turnip with salt (and *kombu*, rice vinegar or miso),
@@ -1841,7 +1841,7 @@ cards on recognition.
 | CUI-3.M8.Q4 | multiple choice | CUI-3.M8.L2 | — | Why is Japanese rice washed until the water runs almost clear? A) to clean dirt B) to remove surface starch, so the grains are sticky but distinct C) to add water D) tradition | B | [K] rice. |
 | CUI-3.M8.Q5 | multiple choice | CUI-3.M8.L2 | — | Why is miso added off the boil? A) it burns B) boiling dulls its aroma C) it curdles D) it thickens | B | Miso soup. |
 | CUI-3.M8.Q6 | multiple choice | CUI-3.M8.L3 | — | In the *sa-shi-su-se-so* order, what goes in first? A) soy sauce B) sugar C) miso D) vinegar | B | Sugar penetrates slowly; soy and miso last for aroma. |
-| CUI-3.M8.Q7 | multiple choice | CUI-3.M8.L3 | yes | A chicken *teriyaki* is glazed and shiny. When is it done? A) when the glaze is dark B) at 74 °C at the core C) after 5 minutes D) when it smells sweet | B | Poultry (§9). |
+| CUI-3.M8.Q7 | multiple choice | CUI-3.M8.L3 | yes | A chicken *teriyaki* is glazed and shiny. When is it done? A) when the glaze is dark B) at 75 °C at the core C) after 5 minutes D) when it smells sweet | B | Poultry (§9). |
 | CUI-3.M8.Q8 | scenario | CUI-3.M8.L4 | yes | You have three-day-old cooked rice and yesterday's grilled fish. Which can go into *onigiri* today? | The fish (within its 2 days); the rice is past the 2-day limit (§9) and is thrown away, so cook fresh rice. | Leftovers within their limits. |
 
 **Evidence check:**
@@ -1910,7 +1910,7 @@ cards on recognition.
 - **Cooked salsas:** tomatoes, tomatillos (or green tomatoes from a Dutch late-season glut as a stand-in), chillies, onion
   and garlic charred on a dry pan (`VEG-3.M2`) and blended; a toasted-dried-chilli salsa.
 - **A braise in a chilli sauce:** dried chillies toasted, soaked and blended with aromatics and spices into a sauce,
-  fried briefly to deepen it, then pork shoulder or chicken legs braised in it until tender (`SLW-3`); chicken to 74 °C.
+  fried briefly to deepen it, then pork shoulder or chicken legs braised in it until tender (`SLW-3`); chicken to 75 °C.
 - **Balance:** heat against acid, salt and a little sweetness; the salsa chosen to contrast the braise.
 
 **Sessions:**

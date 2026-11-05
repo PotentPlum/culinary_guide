@@ -24,10 +24,11 @@ Several of these foods have their own safety rules, and the course follows them 
 - **Duck and game birds are poultry.** Their "pink" is reached with the low-temperature poultry table (for example
   60 °C held for 35 minutes at the core), not with a pan-only rare breast.
 - **Farmed game is meat; wild game is not.** Farmed venison is cooked like intact meat (63 °C for 15 seconds); hunted
-  game (wild boar, wild deer, hare) to 74 °C, which suits braising. Wild boar is bought only from a supplier of game
+  game (wild boar, wild deer, hare) to 75 °C, which suits braising. Wild boar is bought only from a supplier of game
   examined for *Trichinella*.
 - **Offal is not whole muscle.** Liver and kidneys are cooked as non-intact meat (for example 66 °C held for 1 minute),
-  which still leaves calf's liver rosy.
+  which still leaves calf's liver rosy. Liver is not served in pregnancy (the risk-group row of §9: too much
+  vitamin A).
 - **Fish with a translucent centre** below 60 °C is fish that was frozen first by the fish row of §9, and is not served
   to risk groups.
 - **Live crabs and lobsters are not dispatched at home.** The checked welfare sources [S40][S41] say manual dispatch
@@ -109,7 +110,7 @@ At 5 / 6.5 / 8 hours a week the course takes about **6.3 / 4.8 / 3.9 weeks** of 
   - with a circulator (`SLW-3`): the breast sealed and held in the bath until the core has been at 60 °C for 35 minutes
     (or 63.3 °C for 11.5 minutes, a little less pink), then skin-side down in the pan to crisp;
   - without one: the stove-top water bath of `SLW-3.M5.L1`, the core probed and the time counted from 60 °C;
-  - a pan-only breast is cooked to 74 °C at the core.
+  - a pan-only breast is cooked to 75 °C at the core.
   A pan-only rare breast (around 55 °C) has no row in §9 and is not taught.
 - **Resting:** 5 minutes skin-up, so the skin stays crisp; sliced across the grain.
 - **Seasonal sauces:** a duck *jus* with Dutch cherries in summer, apples or pears in autumn, or a *bigarade*-style
@@ -117,7 +118,7 @@ At 5 / 6.5 / 8 hours a week the course takes about **6.3 / 4.8 / 3.9 weeks** of 
 
 **Sessions:**
 1. The water-bath breast (90 min): one breast held by the table, then crisped; probe log; cross-section photographed.
-2. Pan-only to 74 °C (45 min): a second breast rendered and roasted to 74 °C for comparison; both tasted side by side.
+2. Pan-only to 75 °C (45 min): a second breast rendered and roasted to 75 °C for comparison; both tasted side by side.
 
 **Cues:**
 - Skin thin, brown and crisp, with no white fat left under it.
@@ -148,7 +149,7 @@ At 5 / 6.5 / 8 hours a week the course takes about **6.3 / 4.8 / 3.9 weeks** of 
   the stronger the taste. Wild birds come in the autumn and winter shooting season; the poulterer's offer shows what is
   in season. Shot may be left in the meat: the learner feels for it and warns guests.
 - **Safety:** game birds are poultry (assessment §9): the breasts by the low-temperature poultry table for a rosy
-  centre, or 74 °C; the legs braised.
+  centre, or 75 °C; the legs braised.
 - **Roasting without drying:**
   - barding (a thin sheet of pork fat or bacon over the breast) or basting with butter;
   - a hot oven for a short time for the whole bird, then rested, with the breasts finished to the table if needed;
@@ -255,7 +256,7 @@ stock.
 - **Farmed or wild** (assessment §9):
   - farmed deer (commercially raised): intact cuts cooked like other intact meat, 63 °C for 15 seconds at the core,
     which leaves the loin rosy-pink; the steak row is for beef only;
-  - wild game (hunted deer, wild boar, hare): 74 °C, so the tender cuts are better used in braises and the loin is for
+  - wild game (hunted deer, wild boar, hare): 75 °C, so the tender cuts are better used in braises and the loin is for
     farmed deer;
   - wild boar only from a supplier of inspected game, whose carcasses are examined for *Trichinella* as EU law requires.
 - **[K] Marinade myths:** a marinade flavours the surface; it does not tenderise lean meat deeply, and acid left long
@@ -287,7 +288,7 @@ stock.
 
 **Concepts:**
 - **The game braise** (`SLW-3.M2.L1`): shoulder, neck or leg of wild boar, wild venison or hare, browned in batches,
-  braised with red wine and stock at a bare simmer until tender (2.5–3.5 hours, judged by a fork), well above the 74 °C
+  braised with red wine and stock at a bare simmer until tender (2.5–3.5 hours, judged by a fork), well above the 75 °C
   of wild game.
 - **[J] Balancing gamey flavours:**
   - fruit for sweetness against the depth (Dutch apples, pears, plums, red currants or cranberries in season);
@@ -356,10 +357,10 @@ juniper, red wine, stock; seasonal vegetables (red cabbage, celeriac, Brussels s
 |---|---|---|---|---|---|---|
 | PRO-4.M2.Q1 | multiple choice | PRO-4.M2.L1 | — | Why does venison loin dry out so easily? A) it is wet B) it has almost no fat in the muscle, so a few degrees too far dries it C) it is always old D) it is salted | B | Lean meat has no marbling to protect it. |
 | PRO-4.M2.Q2 | multiple choice | PRO-4.M2.L1 | yes | A farmed venison loin: what does §9 ask at the core? A) 55 °C B) 63 °C for 15 seconds C) 74 °C D) nothing | B | Commercially raised game is intact meat. |
-| PRO-4.M2.Q3 | scenario | PRO-4.M2.L1 | yes | A hunter friend offers you a wild-boar shoulder from their own hunt, untested. What do you do? | Decline it for the program: wild boar only from a supplier of inspected game, examined for *Trichinella*; and wild game is cooked to 74 °C. | Wild-boar and game rows, §9. |
+| PRO-4.M2.Q3 | scenario | PRO-4.M2.L1 | yes | A hunter friend offers you a wild-boar shoulder from their own hunt, untested. What do you do? | Decline it for the program: wild boar only from a supplier of inspected game, examined for *Trichinella*; and wild game is cooked to 75 °C. | Wild-boar and game rows, §9. |
 | PRO-4.M2.Q4 | multiple choice | PRO-4.M2.L1 | — | What does an overnight red-wine marinade do to a venison loin? A) tenderises it throughout B) flavours the surface; long acid makes the outside mushy C) makes it safe D) removes the gamey taste | B | Marinades work on the surface. |
 | PRO-4.M2.Q5 | calculation | PRO-4.M2.L1 | — | A loin rises 4 °C while it rests. At what core temperature do you take it out to reach 63 °C? | 59 °C | 63 − 4. |
-| PRO-4.M2.Q6 | multiple choice | PRO-4.M2.L2 | yes | Why is the loin of a hunted deer better braised in this program? A) it is tough B) wild game is cooked to 74 °C, which suits a braise better than a loin C) it tastes stronger D) tradition | B | Game-animal row, §9. |
+| PRO-4.M2.Q6 | multiple choice | PRO-4.M2.L2 | yes | Why is the loin of a hunted deer better braised in this program? A) it is tough B) wild game is cooked to 75 °C, which suits a braise better than a loin C) it tastes stronger D) tradition | B | Game-animal row, §9. |
 | PRO-4.M2.Q7 | scenario | PRO-4.M2.L2 | — | Your wild-boar sauce tastes heavy and flat. Name two adjustments. | A little acid (vinegar or reduced wine) to lift it; fruit or *stroop* for sweetness, or juniper and pepper for aromatic lift, added in small steps and tasted. | Balance depth with acid and aromatics. |
 | PRO-4.M2.Q8 | multiple choice | PRO-4.M2.L2 | — | Which tells you a game braise is done? A) the time in the recipe B) a fork slides in and the meat comes apart easily C) the colour D) the sauce is thick | B | Tenderness is the cue. |
 
@@ -425,7 +426,8 @@ juniper, red wine, stock; seasonal vegetables (red cabbage, celeriac, Brussels s
 
 **Concepts:**
 - **The rule** (assessment §9): offal is not whole muscle, so it is cooked as non-intact meat: 68 °C for 17 seconds, or
-  66 °C for 1 minute, 63 °C for 3 minutes, 70 °C instantaneous. Chicken livers are poultry (74 °C).
+  66 °C for 1 minute, 63 °C for 3 minutes, 75 °C instantaneous. Chicken livers are poultry (75 °C). In pregnancy no
+  liver at all, however it is cooked (the risk-group row of §9 [S46]).
 - **Calf's liver pink:** floured lightly, seared in hot butter about 1–2 minutes a side, then rested off the heat in a
   warm pan until the core has held 66 °C for 1 minute: rosy, tender and moist. *Lever met uien*, the Dutch classic, is
   the same liver with slowly cooked onions.
@@ -493,8 +495,8 @@ The extensions:
 | PRO-4.M3.Q1 | multiple choice | PRO-4.M3.L1 | — | Which is a sign of fresh liver? A) dull and dry B) glossy, firm, a clean sweet smell C) a strong smell D) grey edges | B | Offal spoils fast; freshness shows. |
 | PRO-4.M3.Q2 | multiple choice | PRO-4.M3.L1 | yes | How is fresh offal handled before cooking? A) kept a week in the fridge to age B) bought close to cooking, kept at 4 °C and cooked soon C) left out to come to room temperature for hours D) washed and kept in water | B | Offal spoils faster than muscle meat; the fridge at 4 °C (§9). |
 | PRO-4.M3.Q3 | multiple choice | PRO-4.M3.L1 | — | Why are sweetbreads pressed after blanching? A) to remove fat B) so they hold an even shape for slicing and crisping C) to cook them D) to drain blood | B | Pressing firms the shape. |
-| PRO-4.M3.Q4 | multiple choice | PRO-4.M3.L2 | yes | Which §9 rule applies to calf's liver? A) intact meat at 63 °C for 15 seconds B) non-intact meat: for example 66 °C for 1 minute C) poultry at 74 °C D) none | B | Liver is not whole muscle. |
-| PRO-4.M3.Q5 | multiple choice | PRO-4.M3.L2 | yes | And chicken livers? A) 63 °C B) 74 °C, as poultry C) 66 °C for 1 minute D) any pink | B | Poultry offal follows the poultry row. |
+| PRO-4.M3.Q4 | multiple choice | PRO-4.M3.L2 | yes | Which §9 rule applies to calf's liver? A) intact meat at 63 °C for 15 seconds B) non-intact meat: for example 66 °C for 1 minute C) poultry at 75 °C D) none | B | Liver is not whole muscle. |
+| PRO-4.M3.Q5 | multiple choice | PRO-4.M3.L2 | yes | And chicken livers? A) 63 °C B) 75 °C, as poultry C) 66 °C for 1 minute D) any pink | B | Poultry offal follows the poultry row. |
 | PRO-4.M3.Q6 | scenario | PRO-4.M3.L2 | — | Your liver is grey and grainy. What happened, and what will you change? | It went past the window: cooked too long or too hot inside. Next time: thinner even slices, a hot quick sear, then rest off the heat to the target and probe; cook it last. | The narrow window. |
 | PRO-4.M3.Q7 | multiple choice | PRO-4.M3.L2 | — | Why are kidneys seared in batches? A) to save butter B) a crowded pan drops in temperature and they stew in their juice C) for colour only D) tradition | B | Hot and fast. |
 | PRO-4.M3.Q8 | scenario | PRO-4.M3.L2 | — | On a plate of liver, mash and onions, which element do you cook last, and why? | The liver: its doneness window is narrow, so it waits for nothing; the onions and mash hold. | Plan around the most sensitive element. |
@@ -970,7 +972,7 @@ prep days (`MS-S4.M1.L3`).
 | Shallow containers with lids | — | See `SAF-1` | See `SAF-1` |
 
 The circulator is optional: without it, the duck and game-bird breasts use the stove-top water bath of `SLW-3.M5.L1`,
-or are cooked to 74 °C.
+or are cooked to 75 °C.
 
 **Ingredient choices.** Good: a frozen duck breast, farmed pigeon or a pheasant from the supermarket freezer in season,
 venison steaks from the freezer section, frozen MSC scallops (already frozen, so a translucent centre is allowed),

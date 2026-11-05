@@ -25,8 +25,8 @@ thermometer, and each element judged in cross-section. Fruit is Dutch and season
 summer, plums in late summer, apples and pears from autumn); chocolate, vanilla and citrus are pantry goods.
 
 Pastry has its own safety points (assessment §9): pastry cream and custards cooled by the cooling standard and kept at
-most 2 days; raw-egg mousses made with pasteurised egg for every guest; cream fillings kept in the fridge and
-out of it for at most 2 hours.
+most 2 days; raw-egg mousses made with pasteurised egg for every guest and kept at most 24 hours; cream fillings kept
+in the fridge and out of it for at most 2 hours.
 
 **In the spiral.**
 - `TS-BAK` reaches level 4 across the course: six of its seven elements, with laminated pastry, two adapted formulas and
