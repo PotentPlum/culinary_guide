@@ -424,7 +424,7 @@ gaps.
 
 **Concepts:**
 - **Measuring tools drift.** A scale is checked against a known weight: ten €1 coins weigh 75 g, a calibration weight is
-  better. A thermometer is checked in ice water monthly and after a drop (`SAF-1.M3.L2`).
+  better. A thermometer is checked in ice water, where it reads 0 °C, monthly and after a drop (`SAF-1.M3.L2`).
 - **Care:**
   - peelers and graters are cleaned with a brush straight away and dried;
   - sieves are rinsed before the starch dries;

@@ -195,7 +195,7 @@ recipes, and a recognisable point of view.
 | REV-5.M1.L3 | Targeted practice, block 2 | [S] deliberate practice on the second gap | REV-5.M1.L2 | 4.5 | 3 | 3 wk | JD-REFL→5 |
 | REV-5.M1.L4 | Targeted practice, block 3 | [S] a third block on the weakest remaining gap, under a condition not yet used (time, guests or no recipe); [J] decide whether the gap is closed | REV-5.M1.L3 | 4.5 | 3 | 3 wk | JD-REFL→5 |
 
-- `REV-5.M1.X1` *brief, brief* — The gap-practice plan and the two blocks, with new evidence for each gap.
+- `REV-5.M1.X1` *brief, brief* — The gap-practice plan and the three blocks, with new evidence for each gap.
 
 **Assessment:** new evidence against the gap competencies' criteria.
 

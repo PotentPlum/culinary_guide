@@ -1,9 +1,10 @@
 # Phase 5 — Course development
 
-Status: **S1 reviewed; answers applied** (2026-11-04). S2–S5 follow one stage at a time, in the format agreed on S1.
-The end of the S1 batch, with its decisions and the review answers, is in §7.
+Status: **Phase 5 complete** (2026-11-05). S1 to S5 are reviewed and their answers applied (§7.3, §8.3, §9.3, §10.3
+and §11.3), so every course has a reviewed course file. What Phase 6 needs first is in §11.4; Phase 6 itself is in
+[`06-lesson-development.md`](06-lesson-development.md).
 
-**Stages developed:** S1
+**Stages developed:** S1, S2, S3, S4, S5
 
 This phase develops every course of the outline in depth. For each course it gives:
 - an introduction;
@@ -159,41 +160,41 @@ evidence record over the stage, not in a single check.
 | S1 | [`EGG-1`](05-courses/S1/EGG-1.md) | 11 / 11 | 6 / 6 | 32 | 2 | 9 | €30 |
 | S1 | [`VEG-1`](05-courses/S1/VEG-1.md) | 15 / 15 | 7 / 7 | 40 | 1 | 12 | €35 |
 | S1 | [`STA-1`](05-courses/S1/STA-1.md) | 11 / 11 | 5 / 5 | 32 | 5 | 10 | €20 |
-| S2 | `SCI-2` | 0 / 11 | — | — | — | — | — |
-| S2 | `HEA-2` | 0 / 12 | — | — | — | — | — |
-| S2 | `KNF-2` | 0 / 5 | — | — | — | — | — |
-| S2 | `STK-2` | 0 / 14 | — | — | — | — | — |
-| S2 | `SAU-2` | 0 / 12 | — | — | — | — | — |
-| S2 | `POU-2` | 0 / 13 | — | — | — | — | — |
-| S2 | `MEA-2` | 0 / 14 | — | — | — | — | — |
-| S2 | `FSH-2` | 0 / 12 | — | — | — | — | — |
-| S2 | `LEG-2` | 0 / 10 | — | — | — | — | — |
-| S2 | `BAK-2` | 0 / 17 | — | — | — | — | — |
-| S2 | `BRD-2` | 0 / 11 | — | — | — | — | — |
-| S3 | `SAF-3` | 0 / 5 | — | — | — | — | — |
-| S3 | `FLV-3` | 0 / 14 | — | — | — | — | — |
-| S3 | `BUT-3` | 0 / 9 | — | — | — | — | — |
-| S3 | `SLW-3` | 0 / 12 | — | — | — | — | — |
-| S3 | `FIR-3` | 0 / 12 | — | — | — | — | — |
-| S3 | `GRD-3` | 0 / 11 | — | — | — | — | — |
-| S3 | `PRS-3` | 0 / 10 | — | — | — | — | — |
-| S3 | `VEG-3` | 0 / 10 | — | — | — | — | — |
-| S3 | `PST-3` | 0 / 14 | — | — | — | — | — |
-| S3 | `BRD-3` | 0 / 11 | — | — | — | — | — |
-| S3 | `CUI-3` | 0 / 34 | — | — | — | — | — |
-| S3 | `KMG-3` | 0 / 9 | — | — | — | — | — |
-| S3 | `NUT-3` | 0 / 6 | — | — | — | — | — |
-| S4 | `CLS-4` | 0 / 13 | — | — | — | — | — |
-| S4 | `CUI-4` | 0 / 12 | — | — | — | — | — |
-| S4 | `PRO-4` | 0 / 11 | — | — | — | — | — |
-| S4 | `PST-4` | 0 / 11 | — | — | — | — | — |
-| S4 | `MOD-4` | 0 / 7 | — | — | — | — | — |
-| S4 | `PLT-4` | 0 / 6 | — | — | — | — | — |
-| S4 | `RDV-4` | 0 / 10 | — | — | — | — | — |
-| S4 | `MNU-4` | 0 / 14 | — | — | — | — | — |
-| S5 | `IND-5` | 0 / 15 | — | — | — | — | — |
-| S5 | `RDV-5` | 0 / 9 | — | — | — | — | — |
-| S5 | `REV-5` | 0 / 4 | — | — | — | — | — |
+| S2 | [`SCI-2`](05-courses/S2/SCI-2.md) | 11 / 11 | 6 / 6 | 48 | 7 | 10 | €25 |
+| S2 | [`HEA-2`](05-courses/S2/HEA-2.md) | 12 / 12 | 7 / 7 | 40 | 5 | 18 | €75 |
+| S2 | [`KNF-2`](05-courses/S2/KNF-2.md) | 5 / 5 | 4 / 4 | 0 | 0 | 6 | €40 |
+| S2 | [`STK-2`](05-courses/S2/STK-2.md) | 14 / 14 | 7 / 7 | 40 | 3 | 20 | €45 |
+| S2 | [`SAU-2`](05-courses/S2/SAU-2.md) | 12 / 12 | 9 / 9 | 56 | 4 | 15 | €65 |
+| S2 | [`POU-2`](05-courses/S2/POU-2.md) | 13 / 13 | 6 / 6 | 40 | 12 | 16 | €75 |
+| S2 | [`MEA-2`](05-courses/S2/MEA-2.md) | 14 / 14 | 7 / 7 | 48 | 9 | 19 | €150 |
+| S2 | [`FSH-2`](05-courses/S2/FSH-2.md) | 12 / 12 | 6 / 6 | 32 | 8 | 14 | €110 |
+| S2 | [`LEG-2`](05-courses/S2/LEG-2.md) | 10 / 10 | 5 / 5 | 32 | 9 | 8 | €35 |
+| S2 | [`BAK-2`](05-courses/S2/BAK-2.md) | 17 / 17 | 9 / 9 | 40 | 3 | 16 | €80 |
+| S2 | [`BRD-2`](05-courses/S2/BRD-2.md) | 11 / 11 | 5 / 5 | 32 | 2 | 11 | €25 |
+| S3 | [`SAF-3`](05-courses/S3/SAF-3.md) | 5 / 5 | 2 / 2 | 16 | 16 | 4 | €15 |
+| S3 | [`FLV-3`](05-courses/S3/FLV-3.md) | 14 / 14 | 7 / 7 | 32 | 2 | 13 | €60 |
+| S3 | [`BUT-3`](05-courses/S3/BUT-3.md) | 9 / 9 | 4 / 4 | 8 | 3 | 7 | €130 |
+| S3 | [`SLW-3`](05-courses/S3/SLW-3.md) | 12 / 12 | 7 / 7 | 32 | 8 | 13 | €150 |
+| S3 | [`FIR-3`](05-courses/S3/FIR-3.md) | 12 / 12 | 7 / 7 | 40 | 13 | 20 | €190 |
+| S3 | [`GRD-3`](05-courses/S3/GRD-3.md) | 11 / 11 | 6 / 6 | 32 | 12 | 11 | €135 |
+| S3 | [`PRS-3`](05-courses/S3/PRS-3.md) | 10 / 10 | 7 / 7 | 40 | 21 | 12 | €70 |
+| S3 | [`VEG-3`](05-courses/S3/VEG-3.md) | 10 / 10 | 6 / 6 | 24 | 1 | 16 | €80 |
+| S3 | [`PST-3`](05-courses/S3/PST-3.md) | 14 / 14 | 7 / 7 | 32 | 3 | 12 | €95 |
+| S3 | [`BRD-3`](05-courses/S3/BRD-3.md) | 11 / 11 | 6 / 6 | 32 | 2 | 11 | €40 |
+| S3 | [`CUI-3`](05-courses/S3/CUI-3.md) | 34 / 34 | 18 / 18 | 72 | 12 | 37 | €300 |
+| S3 | [`KMG-3`](05-courses/S3/KMG-3.md) | 9 / 9 | 5 / 5 | 16 | 6 | 13 | €0 |
+| S3 | [`NUT-3`](05-courses/S3/NUT-3.md) | 6 / 6 | 3 / 3 | 16 | 8 | 4 | €40 |
+| S4 | [`CLS-4`](05-courses/S4/CLS-4.md) | 13 / 13 | 8 / 8 | 32 | 4 | 15 | €230 |
+| S4 | [`CUI-4`](05-courses/S4/CUI-4.md) | 12 / 12 | 6 / 6 | 24 | 5 | 12 | €210 |
+| S4 | [`PRO-4`](05-courses/S4/PRO-4.md) | 11 / 11 | 7 / 7 | 40 | 17 | 15 | €260 |
+| S4 | [`PST-4`](05-courses/S4/PST-4.md) | 11 / 11 | 5 / 5 | 40 | 8 | 12 | €110 |
+| S4 | [`MOD-4`](05-courses/S4/MOD-4.md) | 7 / 7 | 5 / 5 | 32 | 3 | 10 | €45 |
+| S4 | [`PLT-4`](05-courses/S4/PLT-4.md) | 6 / 6 | 4 / 4 | 16 | 1 | 6 | €60 |
+| S4 | [`RDV-4`](05-courses/S4/RDV-4.md) | 10 / 10 | 5 / 5 | 24 | 2 | 10 | €70 |
+| S4 | [`MNU-4`](05-courses/S4/MNU-4.md) | 14 / 14 | 7 / 7 | 40 | 11 | 14 | €200 |
+| S5 | [`IND-5`](05-courses/S5/IND-5.md) | 15 / 15 | 7 / 7 | 24 | 8 | 20 | €400 |
+| S5 | [`RDV-5`](05-courses/S5/RDV-5.md) | 9 / 9 | 3 / 3 | 8 | 2 | 9 | €350 |
+| S5 | [`REV-5`](05-courses/S5/REV-5.md) | 4 / 4 | 1 / 1 | 0 | 0 | 1 | €100 |
 <!-- END generated:status -->
 
 ## 4. Exercise reachability (generated)
@@ -203,54 +204,75 @@ each level. ✗ marks a stage target that no exercise up to that stage evidences
 row rests on the quiz alone.
 
 <!-- BEGIN generated:reachability -->
-| Competency | S1 | Exercises at L2 · L3 · L4 · L5 |
-|---|---|---|
-| `CK-TERM` | 2 (quiz) | 0 · 0 · 0 · 0 |
-| `CK-METH` | 2 | 1 · 0 · 0 · 0 |
-| `CK-RCPT` | 3 | 0 · 2 · 0 · 0 |
-| `IN-SEL` | 2 | 1 · 0 · 0 · 0 |
-| `IN-STO` | 3 | 1 · 4 · 0 · 0 |
-| `IN-VEG` | 2 | 3 · 0 · 0 · 0 |
-| `IN-STA` | 2 | 4 · 0 · 0 · 0 |
-| `IN-DAI` | 2 | 2 · 0 · 0 · 0 |
-| `IN-MEA` | 1 | 0 · 0 · 0 · 0 |
-| `IN-FSH` | 1 | 0 · 0 · 0 · 0 |
-| `IN-ARO` | 1 | 0 · 0 · 0 · 0 |
-| `TS-MEP` | 3 | 1 · 1 · 0 · 0 |
-| `TS-KNF` | 3 | 4 · 3 · 0 · 0 |
-| `TS-DRY` | 2 | 3 · 0 · 0 · 0 |
-| `TS-MOI` | 3 | 0 · 2 · 0 · 0 |
-| `TS-EGG` | 3 | 1 · 3 · 0 · 0 |
-| `TS-VEG` | 3 | 0 · 4 · 0 · 0 |
-| `TS-STA` | 3 | 1 · 2 · 0 · 0 |
-| `TS-PRO` | 1 | 0 · 0 · 0 · 0 |
-| `TS-PLT` | 1 | 0 · 0 · 0 · 0 |
-| `SC-HEAT` | 2 | 3 · 0 · 0 · 0 |
-| `SC-BRWN` | 2 | 1 · 0 · 0 · 0 |
-| `SC-PROT` | 2 | 1 · 0 · 0 · 0 |
-| `SC-STRC` | 2 (quiz) | 0 · 0 · 0 · 0 |
-| `SC-EMUL` | 1 | 0 · 0 · 0 · 0 |
-| `SC-MICR` | 1 | 0 · 0 · 0 · 0 |
-| `FL-SENS` | 2 | 3 · 0 · 0 · 0 |
-| `FL-SEAS` | 2 | 4 · 0 · 0 · 0 |
-| `FL-TEXT` | 1 | 0 · 0 · 0 · 0 |
-| `FL-CORR` | 1 | 0 · 0 · 0 · 0 |
-| `KM-PLAN` | 2 | 2 · 0 · 0 · 0 |
-| `KM-MATH` | 2 | 1 · 0 · 0 · 0 |
-| `KM-PURC` | 1 | 0 · 0 · 0 · 0 |
-| `KM-WAST` | 2 | 2 · 0 · 0 · 0 |
-| `KM-EQPT` | 2 | 3 · 0 · 0 · 0 |
-| `SA-HYG` | 3 | 1 · 1 · 0 · 0 |
-| `SA-TEMP` | 3 | 1 · 3 · 0 · 0 |
-| `SA-PHYS` | 3 | 0 · 2 · 0 · 0 |
-| `SA-ALLG` | 2 | 1 · 0 · 0 · 0 |
-| `RD-ADPT` | 1 | 0 · 0 · 0 · 0 |
-| `RD-TEST` | 1 | 0 · 0 · 0 · 0 |
-| `RD-WRIT` | 2 | 1 · 0 · 0 · 0 |
-| `JD-CUES` | 2 | 4 · 0 · 0 · 0 |
-| `JD-CHSE` | 1 | 0 · 0 · 0 · 0 |
-| `JD-TRBL` | 1 | 0 · 0 · 0 · 0 |
-| `JD-REFL` | 2 | 4 · 0 · 0 · 0 |
+| Competency | S1 | S2 | S3 | S4 | S5 | Exercises at L2 · L3 · L4 · L5 |
+|---|---|---|---|---|---|---|
+| `CK-TERM` | 2 (quiz) | 3 | 3 | 4 | 4 | 0 · 2 · 2 · 0 |
+| `CK-METH` | 2 | 3 | 4 | 4 | 5 | 1 · 2 · 2 · 1 |
+| `CK-RCPT` | 3 | 3 | 4 | 4 | 4 | 0 · 2 · 1 · 0 |
+| `CK-CLAS` | – | 2 | 2 | 4 | 4 | 2 · 1 · 4 · 0 |
+| `CK-CUIS` | – | 1 | 3 | 4 | 4 | 0 · 17 · 3 · 0 |
+| `CK-BEVR` | – | – | 1 | 3 | 3 | 0 · 2 · 0 · 0 |
+| `IN-SEL` | 2 | 3 | 4 | 4 | 4 | 1 · 2 · 3 · 0 |
+| `IN-STO` | 3 | 3 | 4 | 4 | 4 | 1 · 5 · 3 · 0 |
+| `IN-VEG` | 2 | 3 | 4 | 4 | 5 | 3 · 3 · 2 · 2 |
+| `IN-STA` | 2 | 3 | 4 | 4 | 4 | 4 · 3 · 3 · 0 |
+| `IN-DAI` | 2 | 3 | 4 | 4 | 4 | 2 · 2 · 2 · 0 |
+| `IN-MEA` | 1 | 3 | 3 | 4 | 4 | 0 · 3 · 2 · 0 |
+| `IN-FSH` | 1 | 3 | 3 | 4 | 4 | 0 · 3 · 2 · 0 |
+| `IN-ARO` | 1 | 2 | 4 | 4 | 4 | 1 · 0 · 7 · 0 |
+| `IN-BAK` | – | 3 | 3 | 4 | 4 | 0 · 3 · 2 · 0 |
+| `TS-MEP` | 3 | 4 | 4 | 5 | 5 | 1 · 1 · 2 · 1 |
+| `TS-KNF` | 3 | 4 | 4 | 5 | 5 | 4 · 3 · 2 · 1 |
+| `TS-DRY` | 2 | 3 | 4 | 4 | 5 | 3 · 9 · 3 · 2 |
+| `TS-MOI` | 3 | 4 | 4 | 4 | 4 | 0 · 2 · 4 · 0 |
+| `TS-CMB` | – | 2 | 4 | 4 | 4 | 2 · 0 · 5 · 0 |
+| `TS-FIRE` | – | – | 3 | 3 | 4 | 1 · 5 · 1 · 0 |
+| `TS-EGG` | 3 | 4 | 4 | 4 | 4 | 1 · 3 · 4 · 0 |
+| `TS-VEG` | 3 | 4 | 4 | 5 | 5 | 0 · 4 · 8 · 1 |
+| `TS-STA` | 3 | 3 | 4 | 4 | 4 | 1 · 4 · 4 · 0 |
+| `TS-STK` | – | 3 | 4 | 4 | 4 | 0 · 5 · 3 · 0 |
+| `TS-SAU` | – | 3 | 4 | 5 | 5 | 0 · 8 · 5 · 2 |
+| `TS-PRO` | 1 | 3 | 4 | 5 | 5 | 0 · 8 · 4 · 5 |
+| `TS-FAB` | – | 2 | 3 | 3 | 3 | 4 · 4 · 0 · 0 |
+| `TS-BAK` | – | 3 | 4 | 4 | 4 | 0 · 6 · 10 · 0 |
+| `TS-BRD` | – | 2 | 3 | 3 | 3 | 3 · 4 · 0 · 0 |
+| `TS-GRD` | – | – | 3 | 3 | 3 | 0 · 3 · 0 · 0 |
+| `TS-PRS` | – | – | 3 | 3 | 3 | 0 · 5 · 0 · 0 |
+| `TS-MOD` | – | – | 1 | 2 | 2 | 4 · 0 · 0 · 0 |
+| `TS-PLT` | 1 | 2 | 2 | 4 | 4 | 2 · 1 · 5 · 0 |
+| `SC-HEAT` | 2 | 3 | 4 | 4 | 4 | 3 · 2 · 2 · 0 |
+| `SC-BRWN` | 2 | 3 | 4 | 4 | 4 | 1 · 4 · 2 · 0 |
+| `SC-PROT` | 2 | 3 | 4 | 4 | 4 | 1 · 4 · 3 · 0 |
+| `SC-STRC` | 2 (quiz) | 3 | 4 | 4 | 4 | 0 · 2 · 2 · 0 |
+| `SC-EMUL` | 1 | 3 | 3 | 4 | 4 | 0 · 6 · 2 · 0 |
+| `SC-MICR` | 1 | 3 | 3 | 3 | 3 | 0 · 4 · 0 · 0 |
+| `FL-SENS` | 2 | 3 | 4 | 4 | 5 | 3 · 1 · 1 · 3 |
+| `FL-SEAS` | 2 | 3 | 4 | 5 | 5 | 4 · 2 · 2 · 3 |
+| `FL-TEXT` | 1 | 2 | 3 | 4 | 4 | 4 · 4 · 4 · 0 |
+| `FL-ARCH` | – | 2 | 3 | 4 | 4 | 2 · 12 · 6 · 0 |
+| `FL-CORR` | 1 | 3 | 4 | 4 | 5 | 0 · 2 · 1 · 1 |
+| `KM-PLAN` | 2 | 3 | 4 | 4 | 5 | 2 · 2 · 8 · 2 |
+| `KM-MATH` | 2 | 3 | 4 | 4 | 4 | 1 · 1 · 4 · 0 |
+| `KM-PURC` | 1 | 2 | 4 | 4 | 4 | 3 · 1 · 3 · 0 |
+| `KM-WAST` | 2 | 3 | 4 | 4 | 4 | 2 · 3 · 4 · 0 |
+| `KM-EQPT` | 2 | 3 | 3 | 4 | 4 | 3 · 5 · 2 · 0 |
+| `SA-HYG` | 3 | 4 | 5 | 5 | 5 | 1 · 1 · 5 · 1 |
+| `SA-TEMP` | 3 | 4 | 4 | 5 | 5 | 1 · 3 · 5 · 2 |
+| `SA-PHYS` | 3 | 4 | 5 | 5 | 5 | 0 · 2 · 2 · 2 |
+| `SA-ALLG` | 2 | 3 | 4 | 4 | 4 | 1 · 2 · 2 · 0 |
+| `SA-HRPR` | – | 1 | 4 | 4 | 4 | 0 · 0 · 6 · 0 |
+| `RD-RATO` | – | 2 | 3 | 4 | 4 | 4 · 5 · 2 · 0 |
+| `RD-ADPT` | 1 | 2 | 3 | 4 | 5 | 3 · 2 · 1 · 3 |
+| `RD-TEST` | 1 | 2 | 3 | 4 | 4 | 4 · 2 · 2 · 0 |
+| `RD-WRIT` | 2 | 2 | 3 | 4 | 4 | 1 · 2 · 3 · 0 |
+| `JD-CUES` | 2 | 3 | 4 | 4 | 5 | 4 · 5 · 5 · 1 |
+| `JD-CHSE` | 1 | 2 | 3 | 4 | 5 | 2 · 5 · 5 · 3 |
+| `JD-TRBL` | 1 | 3 | 4 | 4 | 5 | 1 · 3 · 2 · 1 |
+| `JD-REFL` | 2 | 3 | 4 | 4 | 5 | 4 · 3 · 4 · 2 |
+| `CR-COMP` | – | 1 | 3 | 4 | 4 | 2 · 7 · 2 · 0 |
+| `CR-MENU` | – | – | 2 | 4 | 4 | 1 · 0 · 2 · 0 |
+| `CR-IMPV` | – | 1 | 3 | 3 | 4 | 0 · 2 · 2 · 0 |
+| `CR-ORIG` | – | – | 1 | 3 | 4 | 0 · 2 · 2 · 0 |
 <!-- END generated:reachability -->
 
 ## 5. Decisions and change log
@@ -277,8 +299,17 @@ row rests on the quiz alone.
 |---|---|---|---|
 | `SAF-1` purpose, `SAF-1.M3.L2` | USDA FSIS chart [S24] | FDA *Food Code* [S25] | Phase 4 stopped using [S24] (it refused automated access), and the review accepted the Food Code as the reference. |
 | `SAF-1.M3.L1` objective | growth "between about 7 and 60 °C" | growth between the cold and hot holding limits (5 and 57 °C) | The rounded range disagreed with the figures the gates use ([assessment §9](04-assessment.md#9-safety-figures-used-in-assessment)). |
+| [Assessment §9](04-assessment.md#9-safety-figures-used-in-assessment) (S2) | Intact meat only at 63 °C for 15 seconds | A row for whole-muscle, intact beef steaks served rare (Food Code §3-401.11(C)), and a gate rule for it | `MEA-2` teaches steaks to a chosen doneness, and its outline asks for rare to well done. Without the row, every rare steak would be a gate *Fail*. Kept at the S2 review. |
+| [Assessment §9](04-assessment.md#9-safety-figures-used-in-assessment) (S2 review) | No figure for raw-bean lectins; no word on the Food Code's roast oven chart | A row for dried common beans (soak at least 5 h, boil at least 30 min, no slow cooker; FDA *Bad Bug Book* [S33]); a rule that the oven chart is not adopted | S2 review answers 2 and 3. `LEG-2.M1.L1`, `LEG-2.M1.L2`, `LEG-2.M1.X2` (now chickpeas, so the unsoaked pots stay within the rule) and `LEG-2.M1.Q4` follow the row. |
+| [Assessment §9](04-assessment.md#9-safety-figures-used-in-assessment) (S3) | No figures for low-temperature poultry, cook-chill storage, raw fish, risk groups, acidity, canning, fermentation salt or nitrite | Rows for each, from sources checked on 2026-11-04 ([S25], [S27], [S34]–[S37]); the sous vide rule now names which table applies to which food | S2 recommendations 2 and 3: `SAF-3`, `SLW-3`, `GRD-3`, `PRS-3` and `CUI-3` need these figures, and no figure is written from memory. To be confirmed at the S3 review. |
+| `PRS-3.M3.L1` objective | salt by weight (2 %) | salt by weight (2.25–2.5 %) | The checked source [S36] gives 2.25–2.5 %; 2 % is below it. |
+| [Assessment §9](04-assessment.md#9-safety-figures-used-in-assessment) (S4) | No figures for egg-thickened desserts, raw-egg desserts, game, game birds, offal, wild boar, live crustaceans or alcohol; no rule for tier 3 equipment | Rows for each, from sources checked on 2026-11-04 ([S25], [S38]–[S43]); a rule that the siphon and blowtorch follow the maker's instructions | S3 recommendations 2 and 3: `PST-4`, `MOD-4`, `PRO-4` and `MNU-4` need them, and no figure is written from memory. To be confirmed at the S4 review. |
+| `PRO-4.M5` objective, `PRO-4.M5.L1` objective | [S] handle and cook live crustaceans humanely; [S] humane dispatch | [S] handle and cook crustaceans humanely; [K] humane dispatch (by a trained fishmonger) and why it is not done at home | The checked welfare sources [S40][S41] say manual dispatch may fail in untrained hands and that humane slaughter cannot be done at home. The skill becomes buying, handling and cooking; dispatch is knowledge. To be confirmed at the S4 review. |
+| [Assessment §9](04-assessment.md#9-safety-figures-used-in-assessment) (S4 review) | Raw-yolk sauces (`SAU-2`) and raw-egg mousses (`PST-3`) made with pasteurised egg only for risk groups | Pasteurised egg for every guest wherever egg is raw when served, and in desserts where it is lightly cooked; soft and lightly cooked egg dishes (soft eggs, *hollandaise* and its family, the 63 °C egg) keep the risk-group row | S4 review answer 3 ([S38]). `SAU-2.M4.L2`, `SAU-2.M4.Q7`, the `SAU-2` completion note, `PST-3.M4.L3`, `PST-3.M4.Q7` and the safety lines of `PST-3`, `GRD-3` and `SAF-3` follow the row. |
+| [Assessment §9](04-assessment.md#9-safety-figures-used-in-assessment) (S5 review) | Warm egg sauces (*hollandaise* and its family, *sabayon*) in the risk-group row | In the raw-egg row: pasteurised egg yolk for every guest; soft whole eggs (soft-boiled, poached, the 63 °C egg) keep the risk-group row | S5 review answer 2 ([S38]: eggs "raw or undercooked when served"). `SAU-2.M5.L1`, `SAU-2.M5.X1`, the `SAU-2` completion note, `CLS-4.M3.L4`, `CLS-4.M3.Q8` and the safety lines of `IND-5` and `RDV-5` follow the row. |
+| `REV-5.M1.X1` description | the gap-practice plan and the two blocks | the gap-practice plan and the three blocks | Revision R10 ([Phase 3](03-validation.md)) added the third block (`REV-5.M1.L4`) but left the exercise line unchanged. |
 
-No course, module, lesson, hour, exercise or `Moves` entry has changed.
+No course, module, lesson, hour, exercise or `Moves` entry has been added, removed or moved; only the objective wording above changed.
 
 **Exercise scope notes** (the outline's one-line description is kept; the spec does more):
 - `TST-1.M2.X1` runs the acid series of [assessment §5.2](04-assessment.md#52-acid-series) as well as the salt series,
@@ -301,60 +332,188 @@ No course, module, lesson, hour, exercise or `Moves` entry has changed.
 |---|---|---|
 | Bowl for ice water | 0 | `HEA-1` |
 | Bread knife | 0 | `EQP-1` |
-| Cast-iron or carbon-steel skillet | 0 | `EQP-1`, `HEA-1` |
-| Chef's knife (20 cm) | 0 | `EQP-1`, `KNF-1` |
-| Digital scale (1 g) | 0 | `ORI-1`, `TST-1`, `WRK-1` |
-| Heavy saucepan with a lid | 0 | `STA-1` |
-| Heavy stainless sauté pan | 0 | `EQP-1`, `HEA-1`, `VEG-1` |
+| Cast-iron or carbon-steel skillet | 0 | `EQP-1`, `HEA-1`, `MEA-2`, `CUI-3`, `FIR-3`, `VEG-3`, `PRO-4` |
+| Chef's knife (20 cm) | 0 | `EQP-1`, `KNF-1`, `KNF-2`, `POU-2` |
+| Deep heavy pot for frying | 0 | `HEA-2`, `CUI-4` |
+| Deep pot with a rack | 0 | `PRS-3` |
+| Digital scale (1 g) | 0 | `ORI-1`, `TST-1`, `WRK-1`, `BAK-2`, `BRD-2`, `KNF-2`, `SCI-2`, `BRD-3`, `BUT-3`, `FLV-3`, `KMG-3`, `PRS-3`, `RDV-4` |
+| Heavy saucepan with a lid | 0 | `STA-1`, `LEG-2`, `SAU-2`, `PRS-3`, `PST-4` |
+| Heavy stainless sauté pan | 0 | `EQP-1`, `HEA-1`, `VEG-1`, `POU-2`, `SAU-2`, `VEG-3`, `CLS-4`, `PRO-4` |
 | Honing steel | 0 | `EQP-1`, `KNF-1` |
-| Instant-read thermometer | 0 | `EGG-1`, `EQP-1`, `HEA-1`, `ORI-1`, `SAF-1` |
+| Instant-read thermometer | 0 | `EGG-1`, `EQP-1`, `HEA-1`, `ORI-1`, `SAF-1`, `BRD-2`, `FSH-2`, `HEA-2`, `LEG-2`, `MEA-2`, `POU-2`, `SAU-2`, `SCI-2`, `STK-2`, `BUT-3`, `CUI-3`, `GRD-3`, `PST-3`, `SAF-3`, `SLW-3`, `CLS-4`, `CUI-4`, `MNU-4`, `MOD-4`, `PRO-4`, `PST-4` |
+| Labels and a marker | 0 | `KMG-3`, `NUT-3`, `PRS-3`, `SAF-3`, `MNU-4` |
 | Large stable board | 0 | `EQP-1`, `KNF-1` |
-| Mixing bowls | 0 | `WRK-1` |
-| Oven thermometer | 0 | `EQP-1`, `ORI-1` |
+| Mixing bowls | 0 | `WRK-1`, `BAK-2`, `SCI-2`, `GRD-3` |
+| Oven thermometer | 0 | `EQP-1`, `ORI-1`, `BAK-2`, `BRD-2`, `RDV-4` |
+| Oven thermometer for the grate | 0 | `FIR-3` |
 | Paring knife | 0 | `EQP-1`, `KNF-1` |
-| Saucepans | 0 | `EQP-1`, `HEA-1`, `VEG-1` |
+| Probe thermometer | 0 | `FIR-3`, `PRO-4`, `IND-5`, `RDV-5`, `REV-5` |
+| Saucepans | 0 | `EQP-1`, `HEA-1`, `VEG-1`, `SCI-2` |
+| Shallow containers | 0 | `SAF-3` |
 | Sheet pan as a tray | 0 | `WRK-1` |
-| Sheet pans | 0 | `EQP-1`, `HEA-1`, `STA-1`, `VEG-1` |
+| Sheet pans | 0 | `EQP-1`, `HEA-1`, `STA-1`, `VEG-1`, `LEG-2` |
 | Sieve | 0 | `STA-1` |
-| Small saucepan | 0 | `EGG-1` |
-| Stockpot | 0 | `EQP-1` |
+| Small saucepan | 0 | `EGG-1`, `SAU-2`, `CLS-4` |
+| Small saucepans and a skillet | 0 | `FLV-3` |
+| Stockpot | 0 | `EQP-1`, `FSH-2`, `POU-2`, `STK-2`, `SAF-3`, `CLS-4`, `PRO-4` |
 | Stockpot or large pot | 0 | `STA-1` |
 | Tongs | 0 | `HEA-1` |
-| Calibration kit: coded cups | — | `TST-1` |
+| Baking stone or steel | 1 | `BRD-2`, `PST-3`, `CUI-4` |
+| Bench scraper | 1 | `BAK-2`, `BRD-2`, `BRD-3` |
+| Fine sieve | 1 | `EGG-1`, `LEG-2`, `SAU-2`, `SCI-2`, `STK-2`, `SLW-3`, `VEG-3`, `CLS-4`, `MOD-4` |
+| Frying thermometer | 1 | `HEA-2`, `CUI-4` |
+| Heavy lidded casserole (*braadpan*) | 1 | `BRD-2`, `HEA-2`, `LEG-2`, `MEA-2`, `BRD-3`, `CUI-3`, `SLW-3`, `VEG-3`, `CUI-4`, `PRO-4`, `IND-5` |
+| Loaf tin | 1 | `BAK-2`, `BRD-2`, `BRD-3`, `GRD-3` |
+| Mixer | 1 | `BAK-2`, `PST-4` |
+| Rolling pin | 1 | `BAK-2`, `PST-3` |
+| Tart tin | 1 | `BAK-2`, `PST-3` |
+| Whetstone | 1 | `KNF-2` |
+| Chimney starter | 2 | `FIR-3`, `IND-5` |
+| Fermentation jars and weights | 2 | `PRS-3` |
+| Heat-resistant gloves | 2 | `FIR-3`, `IND-5` |
+| Lidded charcoal grill | 2 | `FIR-3`, `IND-5` |
+| Mandoline | 2 | `SAF-3`, `VEG-3`, `MOD-4` |
+| Pressure cooker | 2 | `SAF-3`, `SLW-3` |
+| Scale (0.01 g) | 2 | `PRS-3`, `MOD-4` |
+| Sous vide circulator | 2 | `SLW-3`, `MOD-4`, `PRO-4` |
+| Zip-top or vacuum bags | 2 | `SLW-3`, `MOD-4`, `PRO-4` |
+| Hydrocolloid starter set | 3 | `MOD-4` |
+| Ice-cream machine (optional) | 3 | `PST-4` |
+| Kitchen blowtorch | 3 | `PST-4` |
+| Piping bags and nozzles | 3 | `PST-3`, `PST-4` |
+| Plating tools | 3 | `PLT-4`, `PST-4` |
+| Whipping siphon (optional) | 3 | `MOD-4` |
+| Acetate strips | — | `PST-4` |
+| Airtight boxes with a desiccant | — | `MOD-4` |
+| Baking beans | — | `BAK-2` |
+| Balloon whisk | — | `SAU-2`, `CLS-4` |
+| Blender | — | `STK-2`, `VEG-3`, `MOD-4` |
+| Boning knife | — | `KNF-2`, `POU-2`, `BUT-3` |
+| Calibration cups and the 1 g scale | — | `IND-5`, `RDV-5` |
+| Calibration kit: coded cups | — | `TST-1`, `FLV-3`, `VEG-3` |
 | Calibration kit: key sheets | — | `TST-1` |
-| Camera | — | `ORI-1` |
-| Deep roasting tin for a water bath | — | `EGG-1` |
-| Fine sieve | — | `EGG-1` |
-| Fire blanket | — | `SAF-1` |
+| Camera | — | `ORI-1`, `PLT-4` |
+| Canning jars with new lids | — | `PRS-3` |
+| Carving board | — | `MEA-2` |
+| Carving knife | — | `MEA-2` |
+| Cazuela | — | `CUI-4` |
+| Cheese knives and a board | — | `GRD-3` |
+| Chinois | — | `CLS-4` |
+| Closed-cell foam tape | — | `SLW-3` |
+| Coloured boards and tools for allergen-free cooking | — | `NUT-3`, `MNU-4` |
+| Containers with lids | — | `KNF-2` |
+| Couscoussier | — | `CUI-4` |
+| Cut-resistant glove | — | `BUT-3` |
+| Deep roasting tin for a water bath | — | `EGG-1`, `GRD-3` |
+| Dough container | — | `BRD-2`, `BRD-3` |
+| Drinks thermometer | — | `MNU-4` |
+| Equipment for each gap | — | `REV-5` |
+| Filleting knife | — | `FSH-2`, `BUT-3`, `PRO-4` |
+| Fire blanket | — | `SAF-1`, `HEA-2`, `FIR-3`, `MNU-4`, `IND-5` |
 | First-aid kit | — | `SAF-1` |
-| Fish spatula | — | `HEA-1` |
+| Fish knife and serving spoon | — | `PRO-4` |
+| Fish scaler | — | `FSH-2`, `BUT-3` |
+| Fish spatula | — | `HEA-1`, `FSH-2`, `PRO-4` |
+| Fish tweezers | — | `FSH-2`, `BUT-3` |
+| Freezer containers | — | `LEG-2`, `STK-2`, `KMG-3`, `CLS-4` |
+| Freezer thermometer | — | `GRD-3`, `KMG-3`, `SAF-3` |
 | Fridge thermometer | — | `SAF-1` |
-| Grid board or ruler | — | `KNF-1`, `ORI-1` |
+| Gratin dish | — | `VEG-3` |
+| Grid board or ruler | — | `KNF-1`, `ORI-1`, `KNF-2`, `CLS-4`, `PLT-4`, `REV-5` |
+| Grill brush | — | `FIR-3` |
+| Grill pan | — | `HEA-2` |
 | Hand towels and dish cloths | — | `SAF-1` |
+| Heatproof bowl for a bain-marie | — | `SAU-2`, `PST-3` |
+| Jar for the starter | — | `BRD-3` |
+| Jar lifter and funnel | — | `PRS-3` |
+| Jars with lids | — | `SCI-2` |
 | Journal | — | `ORI-1` |
+| Kitchen shears | — | `POU-2`, `FIR-3`, `PRO-4` |
+| Kitchen string | — | `MEA-2`, `STK-2`, `BUT-3`, `CLS-4` |
 | Kitchen timer | — | `KNF-1`, `WRK-1` |
-| Labels and pen | — | `ORI-1`, `SAF-1` |
+| Labels and pen | — | `ORI-1`, `SAF-1`, `LEG-2`, `RDV-4` |
 | Ladle | — | `STA-1` |
+| Ladle and skimmer | — | `STK-2`, `SLW-3` |
+| Lame or blade | — | `BRD-2`, `BRD-3` |
+| Long lighter | — | `MNU-4` |
+| Long tongs | — | `FIR-3` |
 | Measuring jug and spoons | — | `WRK-1` |
 | Measuring jugs or bottles (1 l) | — | `TST-1` |
 | Measuring spoons and a pipette | — | `TST-1` |
+| Melon baller | — | `CLS-4` |
+| Metal ash bucket with a lid | — | `FIR-3` |
+| Mortar and pestle | — | `CUI-3`, `FLV-3`, `CUI-4` |
+| Moulds or rings for mousses | — | `PST-3`, `PST-4` |
+| Muffin tin | — | `BAK-2` |
+| Muslin or cheesecloth | — | `LEG-2`, `STK-2`, `CLS-4` |
 | Non-slip mat or damp towel | — | `KNF-1` |
+| Offset spatula | — | `PLT-4` |
 | Omelette pan (20 cm) | — | `EGG-1` |
+| Oven gloves | — | `BRD-2`, `BRD-3` |
+| Palette knife | — | `BAK-2` |
+| Parchment paper | — | `FSH-2` |
+| Pasta machine | — | `CUI-3`, `CUI-4` |
 | Peeler | — | `KNF-1` |
-| Phone stand | — | `KNF-1` |
+| pH strips | — | `SCI-2`, `PRS-3` |
+| Phone stand | — | `KNF-1`, `FSH-2`, `MEA-2`, `POU-2`, `SAU-2`, `BUT-3`, `NUT-3`, `CLS-4`, `PLT-4` |
+| Phone stand and photo corner | — | `IND-5`, `REV-5` |
+| Photo background | — | `PLT-4` |
+| Photo corner | — | `RDV-5` |
+| Pie dish | — | `PST-3` |
+| Planning templates | — | `KMG-3`, `MNU-4` |
+| Plates for 6–8 | — | `MNU-4` |
+| Plates in different sizes and colours | — | `PLT-4` |
+| Platters and serving bowls | — | `MNU-4`, `PLT-4` |
 | Potato masher | — | `VEG-1` |
-| Precision scale (0.1 g) | — | `TST-1` |
-| Ramekins | — | `EGG-1` |
-| Salad spinner | — | `VEG-1` |
-| Seasonal calendar | — | `VEG-1` |
-| Second cutting board for raw protein | — | `SAF-1` |
-| Shallow containers with lids | — | `SAF-1`, `STA-1` |
+| Precision scale (0.1 g) | — | `TST-1`, `BAK-2`, `GRD-3`, `PST-3`, `PST-4`, `RDV-4` |
+| Proofing basket | — | `BRD-2`, `BRD-3` |
+| Ramekins | — | `EGG-1`, `BAK-2`, `CLS-4` |
+| Recipe and test log | — | `RDV-4` |
+| Refractometer (optional) | — | `PST-4` |
+| Rice pan with a tight lid | — | `CUI-3`, `CUI-4` |
+| Roasting rack | — | `HEA-2` |
+| Roasting tin | — | `MEA-2`, `POU-2`, `BUT-3`, `PRO-4` |
+| Room thermometer | — | `BRD-3`, `PRS-3` |
+| Round cake tins | — | `BAK-2` |
+| Salad spinner | — | `VEG-1`, `GRD-3` |
+| Score cards and coded labels | — | `RDV-5` |
+| Seasonal calendar | — | `VEG-1`, `VEG-3` |
+| Second cutting board for raw protein | — | `SAF-1`, `FSH-2`, `KNF-2`, `MEA-2`, `POU-2`, `BUT-3`, `NUT-3`, `PRO-4` |
+| Separate boards and tools for allergens | — | `IND-5`, `RDV-5` |
+| Shallow containers with lids | — | `SAF-1`, `STA-1`, `MEA-2`, `POU-2`, `KMG-3`, `MNU-4`, `PRO-4` |
+| Shallow freezer tray | — | `MOD-4`, `PST-4` |
+| Shellfish tools | — | `PRO-4` |
+| Silicone baking mat | — | `MOD-4`, `PST-4` |
 | Slotted spoon | — | `EGG-1` |
+| Slow cooker | — | `SLW-3` |
+| Small moulds for aspic | — | `CLS-4` |
 | Small prep bowls | — | `WRK-1` |
-| Steamer | — | `HEA-1`, `VEG-1` |
-| Stick blender | — | `EGG-1` |
-| Tasting cups | — | `ORI-1` |
-| Tasting form | — | `TST-1` |
+| Spice grinder | — | `CUI-3`, `FLV-3`, `CUI-4` |
+| Spice jars and labels | — | `FLV-3` |
+| Spider or slotted spoon | — | `HEA-2` |
+| Squeeze bottles | — | `PLT-4` |
+| Steamer | — | `HEA-1`, `VEG-1`, `FSH-2`, `CUI-3`, `CUI-4` |
+| Stick blender | — | `EGG-1`, `SAU-2`, `PST-3`, `MOD-4` |
+| Stick blender or blender | — | `FLV-3`, `PST-4` |
+| Sugar thermometer | — | `PST-4` |
+| Sushi tub and mat | — | `CUI-4` |
+| Tagine | — | `CUI-4` |
+| Tasting cups | — | `ORI-1`, `RDV-4` |
+| Tasting form | — | `TST-1`, `MNU-4`, `RDV-4` |
+| Tawa* or *comal | — | `CUI-4` |
+| Terrine mould | — | `CUI-4` |
+| The full home kitchen | — | `IND-5`, `RDV-5` |
+| The record and journal | — | `REV-5` |
+| Tortilla press | — | `CUI-3`, `CUI-4` |
+| Tuile stencil | — | `MOD-4` |
+| Turning knife | — | `CLS-4` |
+| Vacuum flask | — | `SAU-2`, `MNU-4` |
+| Weights for pressing | — | `GRD-3` |
+| Wide shallow pan for rice | — | `CUI-3` |
+| Wine glasses | — | `MNU-4` |
+| Wire rack | — | `BAK-2`, `BRD-2`, `HEA-2`, `FLV-3`, `PST-3`, `PST-4` |
+| Wok | — | `CUI-3`, `CUI-4` |
+| Wood chunks | — | `FIR-3` |
 | Wooden spoon | — | `STA-1` |
 <!-- END generated:equipment -->
 
@@ -426,3 +585,803 @@ The decisions are numbered in §5. The assumptions:
 4. **`SCI-2` and the protein courses** use the doneness and cooling figures of assessment §9. The sous vide table that
    `SLW-3` needs is a separate S3 question.
 
+## 8. End of the S2 batch
+
+### 8.1 What was delivered
+
+S2 is developed in eleven course files in [`05-courses/S2/`](05-courses/S2/). In total:
+- 131 lesson outlines, each with a session plan that matches the outline's practical sessions;
+- 71 exercise specs, each tagged with the competencies it evidences;
+- 408 knowledge-check items in 51 checks, 62 of them safety items;
+- 153 evidence rows against the Phase 4 success rows.
+
+Eight modules have no quiz:
+- `KNF-2.M1`, `KNF-2.M2` and `KNF-2.M3`, `POU-2.M2` and `FSH-2.M5` have no [K] or [J] objective;
+- `HEA-2.M6`, `BAK-2.M6` and `BRD-2.M5` have only a [J] objective that their evidence shows better than scenario items
+  (decision 7).
+
+Every S2 stage target is evidenced by an exercise at that level, or by the quiz where its success row asks only for the
+quiz (§4). `**Stages developed:**` now reads S1, S2, so the validator holds both stages to that. The milestone `MS-S2`
+is unchanged ([assessment §7.2](04-assessment.md#72-ms-s2--core-techniques-16-h)).
+
+**The indicative ingredient budget** for the S2 exercises is about **€725**, over about 40 weeks at 6.5 hours a week
+(260 hours, including `MS-S2`). Meat (€150) and fish (€110) are the largest items. Nearly all of it is household meals,
+so the true extra cost is much lower; the course files give Good options throughout.
+
+### 8.2 Decisions and assumptions
+
+1. **A row added to [assessment §9](04-assessment.md#9-safety-figures-used-in-assessment): rare beef steaks.**
+   - **What changed:** §9 had only "intact meat, 63 °C for 15 seconds". `MEA-2` teaches steaks to a chosen doneness, and
+     its outline asks for rare to well done, so every rare steak would have been a gate *Fail*.
+   - **The new row:** the Food Code's rule for whole-muscle, intact beef steaks (§3-401.11(C)). They may be served rare
+     when seared on top and bottom to a surface of 63 °C with the colour changed on every outside surface, kept intact,
+     and not served to risk groups. A gate rule says how it is checked.
+   - **Status:** logged in the outline-changes table of §5, and question 1 below.
+2. **What S2 does not teach**, because §9 has no figure for it:
+   - a beef roast below the roast table (rare roast beef);
+   - fish below 63 °C, raw or lightly cooked;
+   - a stock or sauce held below 57 °C for long.
+
+   Hollandaise and *beurre blanc* are made for the meal and thrown away after it.
+3. **Rows that span courses** (decision 6) are more common in S2 than in S1, because S2's competencies run across the
+   ingredient courses. Where each part is shown:
+
+   | Row | Parts and where they are shown |
+   |---|---|
+   | `SC-EMUL` 3 | Mayonnaise: `SCI-2.M4.X1`, `SAU-2.M4.X1`. Warm butter emulsion: `SAU-2.M2.X1`. Further foam and buttercream evidence: `BAK-2.M4` |
+   | `TS-PRO` 3 | Poultry: `POU-2.M3.X1`, `POU-2.M4.X1`. Meat: `MEA-2.M3`, `MEA-2.M5.X1`. Fish and shellfish: `FSH-2.M3`, `FSH-2.M4.X1` |
+   | `TS-FAB` 2 | Portioning: `KNF-2.M2.X1`. Chicken: `POU-2.M2.X1`. Carving and tying: `MEA-2.M4.X1`. Round fish: `FSH-2.M2.X1` |
+   | `TS-MOI` 4 | Simmer: `STK-2.M2.X1`. Poultry poach: `POU-2.M5.X1`. Fish poach and steaming: `FSH-2.M3.X1` |
+   | `TS-EGG` 4 | *Sabayon* and poached eggs for four: `SAU-2.M5.X1`. Stirred and baked custards: `BAK-2.M5.X1` |
+   | `IN-DAI` 3 | The explanation and a cream sauce: `LEG-2.M3.X1`. A stirred custard: `BAK-2.M5.X1` |
+   | `TS-SAU` 3 | One element each in `SAU-2.M2` to `SAU-2.M6`, four of the five needed |
+   | `KM-WAST` 3 | `STK-2.M2.X2`, `POU-2.M5.X1` (two meals), `LEG-2.M2.X1` |
+   | `FL-SEAS` 3 | `STK-2.M3.X1` and the two stews of `MEA-2.M6.X1` |
+   | `IN-SEL` 3 | Two trips: `MEA-2.M2.X1`. Seasonal quiz and a third trip: `FSH-2.M1.X1` |
+   | `IN-MEA` 3 | Poultry: `POU-2.M3.X1`. Buying: `MEA-2.M2.X1`. Cooking: `MEA-2.M3`, `MEA-2.M6` |
+   | `IN-FSH` 3 | Round fish: `FSH-2.M1.X1`. Bivalve: `FSH-2.M4.X1` |
+   | `RD-RATO` 2 | Ratios: `STK-2.M5.X1`. Roux sauce: `SAU-2.M3.X2`. Vinaigrette: `SAU-2.M6.X1`. Baking: `BAK-2.M1.X1` |
+   | `KM-MATH` 3 | Formulas and scaling: `BAK-2.M1.X1`. The bread formula baked: `BRD-2.M2.X1` |
+   | `KM-EQPT` 3 | Thermometer and oven: `HEA-2`. Knife: `KNF-2.M3.X1`. Baking oven, scale and tins: `BAK-2.M1.X1`. Bread oven: `BRD-2.M3.X1` |
+   | `SA-HYG` 4 | Raw-protein portioning: `KNF-2.M2.X1`. Raw chicken: `POU-2.M1.X1`. Further evidence in `MEA-2.M5`, `FSH-2.M2` and `FSH-2.M4` |
+   | `SC-STRC` 3 | Starches: `SCI-2.M3.X1`. Dough: `BRD-2.M1.X1` |
+   | `SC-MICR` 3 | Hurdles of five foods: `SCI-2.M6.X1`. Fermentation: `BRD-2.M1.X1`. The learner's own preserves: `PRS-3` (S3) |
+
+4. **One cross-reference corrected:** `SCI-2` had pointed the warm butter emulsion to `SAU-2.M5`. The module that moves
+   `SC-EMUL` is `SAU-2.M2` (mounting with butter), so the reference now points there.
+5. **The pressure cooker** stays optional in `LEG-2`. It is tier 2 in Phase 1 §9.4, above the S2 limit, so the course
+   never requires it.
+6. **Assumptions,** as in S1:
+   - prices are rough;
+   - produce follows the Dutch seasons, with fish MSC- or ASC-labelled or seasonal North Sea fish;
+   - one household member codes samples and introduces faults (`SAU-2.M7.X1`);
+   - reference images are to be made in Phase 6.
+
+   Fruit appears only as Dutch seasonal fruit or rhubarb in `BAK-2`, and lemon as a pantry acid.
+
+**Exercise scope notes for S2** (the outline's one-line description is kept, as the S1 review decided; the spec does
+more so its module can meet the Phase 4 success row):
+- **`SCI-2`:**
+  - `M3.X1` includes the short- and long-mixed doughs (`SC-STRC` 3);
+  - `M6.X1` logs the batch cooling (`SA-TEMP` 4).
+- **`HEA-2`:**
+  - `M1.X1` adds a sixth, unfamiliar ingredient;
+  - `M2.X1` adds the probe and oven checks (`KM-EQPT` 3);
+  - `M4.X1` films the frying station.
+- **`KNF-2`:**
+  - `M2.X1` films three minutes of raw-protein handling, with a work order (`SA-HYG` 4);
+  - `M3.X1` keeps the edge log for four weeks (`JD-REFL` 3).
+- **`STK-2`:**
+  - `M1.X1` adds a written framework with ten terms (`CK-TERM` 3);
+  - `M2.X1` adds the brown stock;
+  - `M3.X1` runs the triangle tests in the same week;
+  - `M5.X1` reports the fix test.
+- **`SAU-2`:**
+  - `M1.X1` adds a one-page framework (`CK-TERM` 3);
+  - `M2.X1` breaks and repairs a mounted sauce (`SC-EMUL` 3);
+  - `M5.X1` adapts the eggs and the sauce for quantity and timing, with a temperature log (`TS-EGG` 4);
+  - `M7.X1` runs two sessions, structural and flavour faults, in sauces of the learner's own cooking (`JD-TRBL` 3,
+    `FL-CORR` 3).
+- **`POU-2`:**
+  - `M1.X1` adds the shopping list (`KM-PURC` 2);
+  - `M5.X1` poaches the bird with the liquid logged (`TS-MOI` 4);
+  - `M6.X1` cools and reheats the leftovers (`SA-TEMP` 4), with the prediction log spread over three sessions.
+- **`MEA-2`:**
+  - `M1.X1` weighs the pieces for cooking loss (`SC-PROT` 3);
+  - `M2.X1` adds a second shopping trip and photos (`IN-SEL` 3);
+  - `M4.X1` adds the sear-first against reverse-sear comparison, caramelised onions, and trimming and tying (`SC-BRWN`
+    3, `TS-FAB` 2);
+  - `M5.X1` films the shaping and cools and reheats the batch (`SA-HYG` 4, `SA-TEMP` 4);
+  - `M6.X1` is made twice, with two classic stews (`FL-SEAS` 3).
+- **`FSH-2`:**
+  - `M2.X1` fillets a whole round fish, films the work and photographs the week's fridge (`TS-FAB` 2, `SA-HYG` 4,
+    `IN-STO` 3);
+  - `M4.X1` adds a starter of probed prawns, and films the mussel check (`TS-PRO` 3, `SA-HYG` 4).
+- **`LEG-2`:**
+  - `M3.X1` adds a reduced cream sauce and a written explanation (`IN-DAI` 3);
+  - `M4.X1` adds an allergen-free constraint and a predicted substitution (`SA-ALLG` 3, `RD-ADPT` 2).
+- **`BAK-2`:**
+  - `M1.X1` adds a flour comparison bake, a milk-free batch, and the oven, scale and tin checks (`IN-BAK` 3, `SA-ALLG`
+    3, `KM-EQPT` 3);
+  - `M4.X2` adds a correcting third bake (`JD-TRBL` 3);
+  - `M5.X1` adds a *crème anglaise* and baked custards in two sizes (`TS-EGG` 4, `IN-DAI` 3);
+  - `M6.X1` adds the baking-log review (`JD-REFL` 3).
+- **`BRD-2`:**
+  - `M2.X1` keeps the cue-then-reading entries (`JD-CUES` 3);
+  - `M3.X1` logs the oven and preheat times (`KM-EQPT` 3);
+  - `M5.X1` adds a dinner as a parallel task and the bread-log review (`KM-PLAN` 3, `JD-REFL` 3).
+
+Hours, lessons and `Moves` entries are unchanged.
+
+### 8.3 Gaps and open questions (review answers, 2026-11-04)
+
+1. **The steak row in §9** (decision 1).
+   - Option 1: keep it. Rare and medium-rare steaks are taught, checked by the surface rule, and not served to risk
+     groups. This is my recommendation: it is the Food Code's own rule for professional kitchens, and it follows the
+     common reasoning that the bacteria of an intact steak are on its surface. The Voedingscentrum page on meat should
+     be checked for the Dutch wording before Phase 6.
+   - Option 2: remove it, and teach steaks to 63 °C only. `MEA-2.M1.X1` and `MEA-2.M3.X1` would then lose their rare
+     and medium-rare targets.
+
+   **Answer:** option 1. The row stays.
+2. **The Food Code's oven chart for roasts** (§3-401.11(B)(2): a still oven at 177 °C or more for roasts under 4.5 kg)
+   is not in §9. The reverse sear of `MEA-2.M4` uses a low oven and meets §9's core time-temperature table.
+   - Option 1: keep §9 as it is, and add a note that the oven chart is not adopted for home roasting. This is my
+     recommendation.
+   - Option 2: adopt the chart. `MEA-2.M4` would then drop the reverse sear for small joints.
+
+   **Answer:** option 1. §9 now says the chart is not adopted for home roasting; roasts are judged by the core table.
+3. **No figure for raw-bean lectins.** `LEG-2.M1.L1` says to boil dried kidney beans hard for several minutes before
+   simmering, without a number, because §9 has none. I recommend adding a checked figure, with its source in
+   `sources.md`, before Phase 6 writes the lesson.
+
+   **Answer:** added. The FDA *Bad Bug Book* [S33] gives the figure: soaked at least 5 hours with the water poured
+   away, then boiled in fresh water for at least 30 minutes, never in a slow cooker. It applies to the common beans
+   (*Phaseolus vulgaris*), not to chickpeas, lentils or split peas. The source differs from the "several minutes" the
+   draft assumed, which is why no figure was written from memory. `LEG-2.M1.X2` now compares chickpeas, because its
+   unsoaked pots would break the rule for common beans.
+4. **The knowledge-check items have not been reviewed by a second reader** (as in S1). There are 408 items, 62 of them
+   safety items. A read-through of the safety items is worth it.
+
+   **Answer:** done for all 62 safety items, each checked against §9 and its *Why* line. Four were changed:
+   - `LEG-2.M1.Q4`: the bean figure above;
+   - `HEA-2.M4.Q3`: the ordering item put "call 112" after "leave it covered until cold", which made no sense. It now
+     orders three steps, and the *Why* says when to leave and call 112;
+   - `SCI-2.M6.Q7`: the model answer also names the 6-hour step of the cooling rule;
+   - `FSH-2.M4.Q3`: the *Why* now gives the reason for discarding mussels that stay shut.
+
+   No other answer disagreed with §9. This was a careful reading by the author, not an independent check. A second
+   human reader is still advised for the safety items of every stage before Phase 6 publishes them.
+5. **The budget.** About €725 for S2, against €265 for S1, mostly meat and fish that replace household meals.
+   - Is that acceptable?
+   - Or should the Good options become the default in the specs (for example frozen MSC fish, *kogelbiefstuk*, chicken
+     legs), which would bring it to roughly €550?
+
+   **Answer:** €725 is acceptable. The specs stay as they are, with the cheaper options as alternatives.
+
+### 8.4 Recommendations for S3
+
+1. **Keep mapping before writing.** Checking each module's evidence row against its success row first caught every
+   exercise extension above before the course was written.
+2. **Settle the low-temperature figures before `SLW-3`.** Sous vide, confit and slow cooking need tested
+   pasteurisation tables in §9, and possibly the lightly cooked fish of `CUI-3`. They should be agreed before S3 is
+   written, as the S1 recommendations already noted.
+3. **`PRS-3` and `SA-HRPR`:** the home-preserving rule of §9 ("tested methods only") needs named, checkable sources
+   for each method taught (water-bath canning, fermentation, curing salts).
+4. **Tier 2 equipment** (a circulator, fermentation jars, a 0.01 g scale, a mandoline, the `FIR-3` grill) gets its Good
+   and Best where it first appears in S3.
+5. **Write `CUI-3` (34 lessons) as its own batch.** It is the largest course of the program.
+6. **A small validator addition:** check that every exercise ID named in an evidence row's text exists. The S2 rows
+   name exercises in other courses (§8.2, decision 3); the check would keep those references from drifting.
+
+## 9. End of the S3 batch
+
+### 9.1 What was delivered
+
+S3 is developed in thirteen course files in [`05-courses/S3/`](05-courses/S3/). In total:
+- 157 lesson outlines, each with a session plan that matches the outline's practical sessions;
+- 85 exercise specs, each tagged with the competencies it evidences;
+- 392 knowledge-check items in 49 checks, 107 of them safety items;
+- 173 evidence rows against the Phase 4 success rows.
+
+Eighteen modules have no quiz:
+- `BUT-3.M1`, `BUT-3.M3`, `PRS-3.M6`, `PST-3.M6` and `VEG-3.M3` have no [K] or [J] objective;
+- `FLV-3.M3`, `FLV-3.M6`, `BUT-3.M2`, `SLW-3.M2`, `FIR-3.M5`, `GRD-3.M1`, `VEG-3.M5`, `PST-3.M3`, `BRD-3.M5`,
+  `KMG-3.M1`, `KMG-3.M2`, `KMG-3.M5` and `NUT-3.M2` have only a [J] objective that their evidence shows better than
+  scenario items (decision 7).
+
+Two modules with only a [J] objective keep a quiz because they carry safety items: `BUT-3.M4` (boning safety) and
+`PRS-3.M2` (canning).
+
+Every S3 stage target is evidenced by an exercise at that level, or by the quiz where its success row asks only for the
+quiz (§4). `**Stages developed:**` now reads S1, S2, S3. The milestone `MS-S3` is unchanged
+([assessment §7.3](04-assessment.md#73-ms-s3--integration-20-h-over-about-a-week)).
+
+`CUI-3` is one file with its two sections (`CUI-3.SEC1`, `M1`–`M5`; `CUI-3.SEC2`, `M6`–`M9`), because the validator
+checks a course as a whole. It was written as its own batch, as recommended, but committed in one piece for the same
+reason.
+
+**The indicative ingredient budget** for the S3 exercises is about **€1,305**, over about 42 weeks at 6.5 hours a week
+(270 hours, including `MS-S3`). The largest items are `CUI-3` (€300 for eight traditions), `FIR-3` (€190, with
+charcoal), `SLW-3` (€150), `GRD-3` (€135) and `BUT-3` (€130). Nearly all of it is household and guest meals, and
+`KMG-3` adds nothing beyond normal food spending; the course files give Good options throughout.
+
+### 9.2 Decisions and assumptions
+
+1. **New rows in [assessment §9](04-assessment.md#9-safety-figures-used-in-assessment)** (S2 recommendations 2 and 3),
+   each from a source checked on 2026-11-04 and logged in the outline-changes table of §5:
+
+   | Row | Figure | Source |
+   |---|---|---|
+   | Low-temperature poultry | The FSIS time-temperature table, slowest column, from 60 °C for 35 minutes to 74 °C instantaneous; nothing below 60 °C | [S34], read in a secondary reproduction because FSIS refused automated access |
+   | Sous vide and cook-chill storage | Cooled by the standard and kept as leftovers (2 days) or frozen; the Food Code's 7 days under a HACCP plan not used at home | Food Code §3-502.12(D) [S25]; [S22] |
+   | Raw, cured, marinated or lightly cooked fish | Frozen to −20 °C in all parts for 24 hours (or bought so treated), or 7 days in a home freezer shown to hold −20 °C; −18 °C does not qualify; acid and salt don't replace it | EU 853/2004 as amended by 1276/2011 [S35]; Food Code §3-402.11 [S25] |
+   | Risk groups | Not served raw or lightly cooked animal foods; pasteurised egg for raw-egg sauces | Food Code §3-801.11 [S25] |
+   | Acidity | pH 4.6 or below is an acid food | NCHFP [S27] |
+   | Home canning | Acid foods only, by a tested recipe; no pressure canning taught | NCHFP [S27] |
+   | Sauerkraut | Salt 2.25–2.5 %; about 3–4 weeks at 21–24 °C | UW-Extension [S36]; NCHFP [S27] |
+   | Nitrite curing salt | Only where a tested recipe needs it; at most 80 mg of nitrite per kg of meat | EU 2023/2108 via FSAI [S37] |
+
+   The `PRS-3.M3.L1` objective follows the checked salt range (2.25–2.5 % instead of 2 %); it is logged in §5.
+2. **Where S3 is stricter than tradition**, because §9 has no checked figure for longer storage or lower temperatures:
+   - gravad salmon and other cures are eaten within 2 days of finishing; confit is kept 2 days in the fridge, or frozen
+     in its fat (`PRS-3.M4.X1` meets "used two weeks later" by freezing);
+   - the program's meat cures are cooked before eating and use plain salt; nitrite is taught as knowledge only;
+   - fridge pickles keep for the time of the tested recipe Phase 6 names;
+   - poultry sous vide starts at 60 °C; duck breast is cooked to 74 °C (a pink duck breast has no figure and is not
+     taught);
+   - a missed cooling limit means discarding the batch (§9 has no reheat-and-recool rule);
+   - raw-milk cheese and raw cured meats are treated as raw animal foods for risk groups (`GRD-3.M5`, `CUI-3.M4`).
+3. **What S3 does not teach:** pressure canning; cold smoking and smoked cures (Phase 3 §2); raw-fish dishes such as
+   sushi and *ceviche* from unfrozen fish; air-dried or fermented meats.
+4. **Rows that span courses** (decision 6). Where each part is shown:
+
+   | Row | Parts and where they are shown |
+   |---|---|
+   | `SA-HRPR` 4 | Unsafe recipe refused: `SAF-3.M1.X1`, `PRS-3.M1.X1`. Plans followed in logs: `SLW-3.M5.X2`, `GRD-3.M3.X1`, `PRS-3.M2.X2`, `FIR-3.M4.X1` |
+   | `SA-HYG` 5, `SA-PHYS` 5 | The plan and first production: `SAF-3.M2.X1`. Further productions: `SLW-3.M5.X2`, `FIR-3.M1.X1`, `FIR-3.M6.X1`, `PRS-3.M6.X1`, `MS-S3`. The capstone completes both |
+   | `IN-ARO` 4 | Herbs and spices blind (12 of 16): `FLV-3.M1.X1`, `FLV-3.M2.X2`. A blend with a reason: `FLV-3.M2.X2`, `CUI-3.M5.X2`. The `MS-S3` test |
+   | `IN-STO` 4 | Spices: `FLV-3.M2.X2`. Freezer: `KMG-3.M4.X1`. Preserves: `PRS-3.M6.X1` |
+   | `TS-FAB` 3 | Bird: `BUT-3.M1.X1`. Flat fish: `BUT-3.M2.X1`. Tied roast: `BUT-3.M3.X1` |
+   | `TS-CMB` 4 | Braise: `SLW-3.M2.X1`. Pot-roast: `SLW-3.M3.X1`. Sous vide log: `SLW-3.M5.X1`. Further: `FIR-3.M4.X1`, `CUI-3.M5.X2` |
+   | `TS-SAU` 4 | Braising sauce: `SLW-3.M3.X1`. Repaired emulsion and cold sauces: `GRD-3.M2.X1`. Barbecue sauce: `FIR-3.M4.X1`. Further: `VEG-3.M3.X1`, `CUI-3.M6.X1` |
+   | `SC-PROT` 4 | Long-cook plan: `SLW-3.M1.X1`, `FIR-3.M4.X1`. Carryover log: `SLW-3.M3.X1` |
+   | `TS-PRO` 4 | Indoors: `SLW-3.M5.X1`. Outdoors: `FIR-3.M2.X2` |
+   | `TS-DRY` 4 | Sear after the bath: `SLW-3.M5.X2`. Grilling: `FIR-3.M2.X1`. Indirect roasting: `FIR-3.M3.X1`. Stir-frying: `CUI-3.M7.X1` |
+   | `JD-CUES` 4 | `SLW-3.M5.X1`, `SLW-3.M5.X2`, `FIR-3.M1.X1`, `PRS-3.M3.X1`, `BRD-3.M2.X2` |
+   | `TS-FIRE` 3 | Lid log: `FIR-3.M1.X1`. Grilled protein: `FIR-3.M2.X1`. Indirect bird: `FIR-3.M3.X1` |
+   | `TS-VEG` 4 | Timing: `FIR-3.M2.X1`. Glaze, purée and garnishes: `VEG-3.M3.X1`. Further: `VEG-3.M2.X1`, `VEG-3.M4.X1`, `FIR-3.M5.X1` |
+   | `TS-GRD` 3 | Cure: `GRD-3.M3.X1`. Terrine: `GRD-3.M4.X1`. Cold starter: `GRD-3.M5.X1` |
+   | `TS-PRS` 3 | Pickles: `PRS-3.M2.X1`, `PRS-3.M2.X2`. Ferment: `PRS-3.M3.X1`. Cure: `PRS-3.M4.X1`. Sugar preserve: `PRS-3.M5.X1` |
+   | `TS-BAK` 4 | Choux and a diagnosed failure: `PST-3.M1.X1`. Laminated: `PST-3.M2.X1`. Tarts and an adapted formula: `PST-3.M3.X1`, `PST-3.M3.X2`. Creams and a second adapted formula: `PST-3.M4.X1`. Chocolate: `PST-3.M5.X1`. Short pastry: `BAK-2` |
+   | `SC-STRC` 4 | `PST-3.M2.X1`, `PST-3.M3.X1`; further `BRD-3.M4.X1` |
+   | `TS-BRD` 3 | Lean: `BRD-3.M1.X1`. Sourdough: `BRD-3.M2.X1`. Enriched: `BRD-2` |
+   | `TS-STA` 4 | Fresh and filled pasta: `CUI-3.M3.X1`. Wide-pan rice: `CUI-3.M4.X1`. Basmati and flatbreads: `CUI-3.M6.X1`. Tortillas: `CUI-3.M9.X2` |
+   | `IN-STA` 4 | `CUI-3.M4.X1` (with the variety comparison), `CUI-3.M6.X1`, `CUI-3.M8.X1` |
+   | `TS-STK` 4 | A stock adapted and a soup from a stock chosen for its use: `CUI-3.M8.X1`. The consommé follows in S4 |
+   | `CK-CUIS` 3 | Two dishes and the quiz per tradition: `CUI-3.M2` to `CUI-3.M9` |
+   | `IN-MEA` 3 | `SLW-3.M1.X1`, `SLW-3.M2.X1`, `SLW-3.M3.X1` |
+   | `SA-PHYS` 4 | Boning station: `BUT-3.M4.X1`. Deep-frying: `HEA-2.M4.X1` |
+   | `JD-REFL` 4 | The stage reflection: `KMG-3.M5.X1`. Its second half (the plan worked) at `MS-S4` |
+
+5. **Tags only where the module moves the competency.** Where an exercise shows a part of a row that its module does not
+   move (the sous vide log for `TS-CMB` in `SLW-3.M5`, the carryover log for `SC-PROT` in `SLW-3.M3`, the cold starter
+   for `TS-GRD` in `GRD-3.M5`, the second texture fault for `SC-STRC` in `PST-3.M3`), the spec says so and files the
+   evidence with the row of the module that does.
+6. **Validator addition** (S2 recommendation 6): every exercise ID named in a course file must be an exercise of the
+   outline, with a spec once its stage is developed. It found no drifted reference in S1 or S2.
+7. **Assumptions,** as in S1 and S2:
+   - prices are rough;
+   - produce follows the Dutch seasons, with fish MSC- or ASC-labelled or seasonal North Sea fish; spices, rice, pasta,
+     chocolate, citrus and the pantry goods of `CUI-3` are bought as pantry goods, and every substitution for Dutch
+     produce is named in its exercise;
+   - nuts are replaced by seeds, bread or grains by default (`FLV-3.M4`, `GRD-3.M2`, `PST-3.M3`), with the allergen rule
+     where a learner uses them;
+   - outdoor space for `FIR-3`; without it, `TS-FIRE` stops at level 2 and the record says so;
+   - reference images are to be made in Phase 6.
+
+**Exercise scope notes for S3** (the outline's one-line description is kept; the spec does more so its module can meet
+the Phase 4 success row):
+- **`SAF-3`:**
+  - `M1.X1` adds judging one preserving or oil recipe (`SA-HRPR` 4);
+  - `M2.X1` adds two equipment videos and logs the first production (`SA-HYG` 5, `SA-PHYS` 5).
+- **`FLV-3`:**
+  - `M1.X1` and `M2.X2` add the two halves of the blind aroma test (`IN-ARO` 4); `M2.X2` adds a spice storage plan
+    (`IN-STO` 4);
+  - `M3.X1`, `M4.X1` and `M5.X1` write up the module's session dishes, so that three dishes meet their rows (`FL-SEAS` 4,
+    `FL-TEXT` 3, `FL-ARCH` 3);
+  - `M6.X1` adds the fault-diagnosis test of assessment §5.3 and forms against the tasters (`FL-CORR` 4, `FL-SENS` 4).
+- **`BUT-3`:**
+  - `M1.X1` adds a chicken broken down without guidance (`TS-FAB` 3);
+  - `M2.X1` adds a week planned around one fish or the duck, with a waste log (`KM-WAST` 4);
+  - `M4.X1` adds a costed guest menu, a shopping list and the filmed boning station (`KM-MATH` 4, `KM-PURC` 3,
+    `SA-PHYS` 4).
+- **`SLW-3`:**
+  - `M1.X1` adds a long-cook plan and method choices for three unfamiliar cuts (`SC-PROT` 4, `CK-METH` 4);
+  - `M3.X1` adds a predicted carryover log and the sauce choice (`TS-SAU` 4);
+  - `M4.X1` adds three substitutions (`RD-ADPT` 3);
+  - `M5.X1` adds four proteins judged by cue and a stove-top against circulator comparison (`TS-PRO` 4, `SC-HEAT` 4);
+  - `M5.X2` adds the control-point log, the sear and cue entries (`SA-HRPR` 4, `TS-DRY` 4, `JD-CUES` 4).
+- **`FIR-3`:**
+  - `M1.X1` adds grilling a simple protein and vegetables, the video and the hand-test estimates (`TS-FIRE` 2, `SA-PHYS`
+    5, `JD-CUES` 4);
+  - `M2.X1` adds a whole fish bought and judged, and the vegetable timing (`IN-FSH` 3, `TS-VEG` 4);
+  - `M2.X2` logs two more proteins cue-first (`TS-PRO` 4);
+  - `M3.X1` adds a flavour plan with smoke and the adaptation from the oven (`FL-ARCH` 3, `TS-DRY` 4);
+  - `M4.X1` adds the long-cook plan, the control points and the sauce choice (`SC-PROT` 4, `SA-HRPR` 4, `TS-SAU` 4).
+- **`GRD-3`:**
+  - `M2.X1` adds a repaired emulsion on video and a changed ratio (`TS-SAU` 4, `RD-RATO` 3);
+  - `M3.X1` logs the freezing proof and the control points (`SA-HRPR` 4);
+  - `M5.X1` adds dairy and egg choices in three dishes and a substitution (`IN-DAI` 4);
+  - `M5.X2` names the textures of three items (`FL-TEXT` 3).
+- **`PRS-3`:**
+  - `M1.X1` adds the hurdles of two of the learner's own preserves (`SC-MICR` 3);
+  - `M2.X1` changes the sugar on purpose (`RD-RATO` 3);
+  - `M3.X1` adds cue-then-check predictions (`JD-CUES` 4);
+  - `M5.X1` adds a heat, acid and alkali comparison (`IN-VEG` 3).
+- **`VEG-3`:**
+  - `M1.X1` adds a market-built week with receipts and a waste log (`IN-SEL` 4, `KM-WAST` 4);
+  - `M2.X1` adds three steered browning situations and three unfamiliar vegetables (`SC-BRWN` 4, `CK-METH` 4);
+  - `M3.X1` plates three garnishes timed with a main (`TS-VEG` 4);
+  - `M4.X1` adds three unfamiliar plant ingredients (`JD-CHSE` 3);
+  - `M5.X1` adds a follow-up comparison of the learner's own design (`RD-TEST` 3).
+- **`PST-3`:**
+  - `M1.X1` adds a diagnosed failure (`TS-BAK` 4);
+  - `M2.X1` adds a texture fault and the butter choice (`SC-STRC` 4, `IN-DAI` 4);
+  - `M3.X1` adds an adapted formula and a second texture fault;
+  - `M4.X1` adds a changed ratio, a split ganache and the *crème anglaise* on three occasions (`RD-RATO` 3, `SC-EMUL` 3,
+    `TS-EGG` 4);
+  - `M5.X1` adds a comparison bake (`IN-BAK` 3).
+- **`BRD-3`:**
+  - `M1.X1` adds a second bake at a changed hydration (`RD-RATO` 3);
+  - `M2.X2` adds the starter's hurdles and predicted peaks (`SC-MICR` 3, `JD-CUES` 4);
+  - `M4.X1` adds a texture fault (`SC-STRC` 4);
+  - `M5.X1` adds three loaf faults and a comparison (`JD-TRBL` 4, `RD-TEST` 3).
+- **`CUI-3`:**
+  - `M1.X1` adds three unfamiliar ingredients, planted errors and a recipe adapted from other conventions (`JD-CHSE` 3,
+    `CK-RCPT` 4);
+  - `M3.X1` adds a filled shape and a scaled batch (`TS-STA` 4);
+  - `M4.X1` adds a rice-variety comparison and the stove adaptation (`IN-STA` 4); `M4.X2` adds a two-day plan with
+    control points (`KM-PLAN` 4);
+  - `M5.X2` adds the learner's own *ras el hanout* and a predicted braising time (`IN-ARO` 4, `TS-CMB` 4);
+  - `M7.X3` logs the steamed fish (`TS-MOI` 4);
+  - `M8.X1` adds an adapted *dashi* and noted seasoning adjustments (`TS-STK` 4, `FL-SEAS` 4);
+  - the tradition modules each add one ingredient new to the learner, analysed in writing (`JD-CHSE` 3).
+- **`KMG-3`:**
+  - `M1.X1` adds a three-course menu checked against the balance checklist (`CR-MENU` 2);
+  - `M2.X1` adds a budget and Good or Best decisions (`KM-PURC` 4);
+  - `M4.X1` adds a four-week freezer inventory (`IN-STO` 4);
+  - `M5.X1` adds repeats a week later and the stage reflection (`RD-WRIT` 3, `JD-REFL` 4).
+- **`NUT-3`:**
+  - `M1.X1` adds a substitution from a guide (`RD-ADPT` 2);
+  - `M3.X1` cooks the planned dinner and has the tasters compare (`SA-ALLG` 4).
+
+Hours, lessons and `Moves` entries are unchanged.
+
+### 9.3 Gaps and open questions (review answers, 2026-11-04)
+
+1. **The new §9 rows** (decision 1).
+   - Option 1: keep them as written. This is my recommendation: each comes from a checked source, and where the home rule
+     is stricter, the stricter one is taught.
+   - Option 2: remove some, and drop the dependent lessons (sous vide poultry below 74 °C, cured fish, canning, nitrite
+     knowledge).
+
+   The FSIS poultry table was read in Baldwin's reproduction, because the FSIS site refused automated access; it should
+   be checked against the FSIS text before Phase 6.
+
+   **Answer:** option 1 (the review followed the recommendations). The rows stay; the FSIS table stays on the Phase 6
+   re-check list (question 5).
+2. **The stricter storage rules** (decision 2): cures and confit at 2 days or frozen, poultry sous vide from 60 °C, duck
+   breast at 74 °C.
+   - Option 1: keep them, and look for checked sources for longer limits before Phase 6. This is my recommendation.
+   - Option 2: accept the traditional limits without a source. I don't recommend it, because the program's rule is that
+     safety figures come only from §9.
+
+   **Answer:** option 1. Longer limits come in only with a checked source.
+3. **The budget.** About €1,305 for S3, against €725 for S2. Most of it replaces household meals, and the course files
+   give Good options throughout. Is it acceptable?
+
+   **Answer:** accepted, as €725 was for S2. The specs stay as they are, with the Good options as alternatives.
+4. **The knowledge-check items have not been reviewed by a second reader.** There are 392 items, 107 of them safety
+   items. I checked them against §9 while writing, but an independent human read of the safety items of S1 to S3 (about
+   217 items) is still advised before Phase 6.
+
+   **Answer:** recommended and accepted. It cannot be done by the author, so it is recorded as a condition for starting
+   Phase 6: a person other than the author reads every safety item of the developed stages and logs the result.
+5. **Sources Phase 6 must add or re-check:** the Voedingscentrum pages on meat (the steak row), pregnancy (raw-milk cheese
+   and cured meats) and the *Schijf van Vijf* (`NUT-3`); the Dutch Red Cross on burns (S1 question 3); the FSIS poultry
+   table (question 1).
+
+   **Answer:** kept as the Phase 6 list. Phase 6 adds or re-checks these before it writes the lessons that rest on them.
+
+### 9.4 Recommendations for S4
+
+1. **Keep mapping before writing.** It caught every exercise extension above before the course was written, and the
+   exercise-ID check now keeps the cross-references honest.
+2. **Tier 3 equipment** (a blowtorch, piping bags, an ice-cream machine, a whipping siphon, hydrocolloids, plating tools)
+   gets its Good and Best where it first appears in S4. The siphon (pressurised gas chargers) and the blowtorch need
+   equipment-safety lines in `SA-PHYS`.
+3. **Settle the S4 safety figures before writing:** ice-cream bases (cooked custard, raw-egg alternatives for risk
+   groups), the consommé and *aspic* of `CLS-4`, and any modern technique in `MOD-4` that holds food at low temperatures
+   for long.
+4. **Rows that S3 begins and a later stage completes:** `TS-FIRE` 4 (low-and-slow cooks and live-fire meals in two
+   conditions), `TS-STK` 4 (the consommé), `JD-REFL` 4 (the plan worked), and the productions of `SA-HYG` 5 and
+   `SA-PHYS` 5. The course files that complete them should name where each is completed.
+
+   *Correction (2026-11-04):* this item first said S4 completes all five. The S4 outline moves only `TS-STK` 4
+   (`CLS-4.M4`) and `JD-REFL` 4 (`PRO-4.M6`, `PLT-4`, `MNU-4`, `MS-S4`); `TS-FIRE` 4, `SA-HYG` 5 and `SA-PHYS` 5
+   complete in S5 (`S5-mastery.md`).
+5. **A small validator addition:** extend the ID check to module and lesson IDs named in course files (for example
+   `SAU-2.M2` or `FLV-3.M2.L1`), which S3 uses often in its text.
+
+## 10. End of the S4 batch
+
+### 10.1 What was delivered
+
+S4 is developed in eight course files in [`05-courses/S4/`](05-courses/S4/). In total:
+- 84 lesson outlines, each with a session plan that matches the outline's practical sessions;
+- 47 exercise specs, each tagged with the competencies it evidences;
+- 248 knowledge-check items in 31 checks, 51 of them safety items;
+- 94 evidence rows against the Phase 4 success rows.
+
+Nine modules have no quiz:
+- `CLS-4.M5`, `MOD-4.M5` and `PLT-4.M4` have no [K] or [J] objective;
+- `CLS-4.M2`, `PRO-4.M6`, `PLT-4.M2`, `RDV-4.M2`, `RDV-4.M5` and `MNU-4.M6` have only [J] objectives that their evidence
+  shows better than scenario items (decision 7 of §5).
+
+Six modules with only [J] objectives keep a quiz: `PRO-4.M4` (fish safety), `RDV-4.M3` and `RDV-4.M4` (substitution
+and test design are worth checking), `MNU-4.M2` (quantities), and `MNU-4.M3` and `MNU-4.M5`, which move `SA-TEMP` and
+`SA-ALLG` and so need safety items.
+
+Every S4 stage target is evidenced by an exercise at that level, or by the quiz where its success row asks only for the
+quiz (§4). `**Stages developed:**` now reads S1, S2, S3, S4. The milestone `MS-S4` is unchanged
+([assessment §7.4](04-assessment.md#74-ms-s4--advanced-20-h-over-about-two-weeks)).
+
+**The indicative ingredient budget** for the S4 exercises is about **€1,185**, over about 38 weeks at 6.5 hours a week
+(248.5 hours, including `MS-S4`). The largest items are `PRO-4` (€260: duck, game, offal, a whole fish, shellfish),
+`CLS-4` (€230: bones, steaks, a beef fillet, sole), `CUI-4` (€210 for three deep dives) and `MNU-4` (€200, with the
+tastings and the dinner project). Nearly all of it is household and guest meals; the course files give Good options
+throughout.
+
+### 10.2 Decisions and assumptions
+
+1. **New rows in [assessment §9](04-assessment.md#9-safety-figures-used-in-assessment)** (S3 recommendations 2 and 3),
+   each from a source checked on 2026-11-04 and logged in the outline-changes table of §5:
+
+   | Row | Figure | Source |
+   |---|---|---|
+   | Egg-thickened desserts cooked for later | Every part to at least 71 °C, probed | FDA egg safety [S38]; it also meets Food Code §3-401.11(A)(2) [S25] |
+   | Desserts with raw or lightly cooked egg | Pasteurised eggs or egg products, for every guest in S4 | [S38] |
+   | Game animals | Farmed game intact at 63 °C for 15 seconds; wild game (hunted deer, wild boar, hare) at 74 °C | Food Code §3-401.11, §3-201.17 [S25] |
+   | Duck, goose, pigeon and game birds | Poultry: the poultry row or the low-temperature poultry table | Food Code definition of poultry [S25]; [S34] |
+   | Offal | Liver, kidneys and sweetbreads are non-intact meat (for example 66 °C for 1 minute); chicken livers are poultry | Food Code definitions and §3-401.11 [S25] |
+   | Wild boar | Only from carcasses examined for *Trichinella*; cooked as wild game | EU 2015/1375 [S39] |
+   | Live crabs and lobsters | Not dispatched at home: bought cooked or dispatched by a trained fishmonger, cooked without delay | LSE sentience review [S40]; Crustacean Compassion [S41] |
+   | Alcohol in cooking | 5–85 % of the alcohol remains, by method; a dish cooked with alcohol is not alcohol-free | USDA retention factors [S42] |
+   | Alcohol and guests | None under 18, none in pregnancy, not while breastfeeding; a non-alcoholic pairing on every menu | Voedingscentrum [S43] |
+
+   A rule was added for tier 3 equipment: the siphon and the blowtorch are used only as their makers' instructions say,
+   with no pressure or gas figures in the course files. The offal row was added while `PRO-4` was written, when the
+   Food Code's definition of intact meat (whole muscle) showed that liver is not covered by the 63 °C row.
+2. **How the outline's objectives are met under §9:**
+   - **Pink duck and game-bird breasts** (`PRO-4.M1`) are cooked by the low-temperature poultry table (for example 60 °C
+     held for 35 minutes at the core), then crisped. A pan-only rare breast has no row and is not taught, as S3
+     decided.
+   - **The venison loin** (`PRO-4.M2.L1`) is from farmed deer, cooked to 63 °C; wild venison and wild boar are braised to
+     74 °C or more.
+   - **Calf's liver "pink"** (`PRO-4.M3`) is rosy at 66 °C held for 1 minute.
+   - **Translucent fish and scallops** (`PRO-4.M4`, `PRO-4.M5`) only from fish frozen first by the fish row, and never
+     for risk groups.
+   - **Humane dispatch** (`PRO-4.M5`) becomes knowledge, not a skill: an outline change logged in §5.
+   - **Eggs:** custards and Swiss meringue reach 71 °C; Italian meringue and other uncooked uses take pasteurised
+     eggs for every guest (question 3).
+3. **What S4 does not teach:** dispatching live crustaceans; dried meat or jerky (`MOD-4.M5` dries vegetables, fruit
+   and starches only); raw-fish dishes from unfrozen fish; pressure canning; rare beef other than steaks (the steak
+   row).
+4. **`CUI-4` and the learner's choice.** The outline says Phase 5 writes the content for each available tradition. The
+   course file has one 14-hour template, used in all three modules, and a **deep-dive catalogue** in its introduction:
+   for each of the eight `CUI-3` traditions, the regions, the extended pantry, two signature techniques with their §9
+   rows, a menu frame, the equipment (Good and Best) and the Dutch substitutions. `CUI-4.M2` adds a written comparison
+   of two traditions; `CUI-4.M3` is planned from the learner's own entry, so a tradition outside the catalogue is
+   possible there. (The outline's purpose speaks of a "10-hour template"; its lessons add up to 14 hours per module,
+   which the course file follows.)
+5. **Rows that span courses or stages** (decision 6 of §5). Where each part is shown:
+
+   | Row | Parts and where they are shown |
+   |---|---|
+   | `TS-STK` 4 | Stock adapted and soup: `CUI-3.M8.X1`, `CLS-4.M3.X1`. Consommé: `CLS-4.M4.X1`, which completes the row |
+   | `CK-CLAS` 4 | Quiz: the `CLS-4.M3` check. Three preparations from their names: `CLS-4.M5.X1`. Adaptation: `CLS-4.M6.X1` |
+   | `TS-SAU` 5, `FL-SEAS` 5 | Five services: `CLS-4.M3.X1` (three), `CLS-4.M3.X2` (guests and a timed service). Further: `MNU-4.M4.X1`; re-tested at `MS-S4` |
+   | `TS-PRO` 5 | Five services: `PRO-4.M2.X1`, `PRO-4.M3.X1`, `PRO-4.M4.X1`, `PRO-4.M5.X2`, `PRO-4.M6.X1` (with the note on faults) |
+   | `IN-MEA` 4 | Substitutions: `PRO-4.M1.X1`, `PRO-4.M3.X1`. Less common cuts: duck, game birds, offal |
+   | `IN-FSH` 4 | Substitutions and sustainability: `PRO-4.M4.X1`. Shellfish choice: `PRO-4.M5.X1` |
+   | `SA-TEMP` 5 | Five productions and a cooling plan: `PRO-4.M5.X1`. Re-tested with guests: `MNU-4.M3.X1`, `MS-S4.M1.L3` |
+   | `IN-BAK` 4 | Substitution one: `PST-4.M1.X1`. Substitution two: `PST-4.M2.X1` |
+   | `RD-RATO` 4 | Sweet formulas: `PST-4.M2.X1`. Savoury formulas: `RDV-4.M1.X1` |
+   | `FL-TEXT` 4 | Dish one: `PST-4.M2.X1`. Dish two and the menu: `PST-4.M5.X1`. Dish three: `MOD-4.M4.X1`; further `MOD-4.M5.X1` |
+   | `CR-COMP` 4 | Dish one: `PST-4.M5.X1`. Dishes two and three: `PLT-4.M3.X1` |
+   | `TS-PLT` 4 | Courses: `PST-4.M5.X1`, `PLT-4.M2.X1`, `PLT-4.M3.X1`. AI-review photos: `PLT-4.M4.X1`. For 6–8: `MNU-4.M3.X1` |
+   | `TS-MOD` 2 | Egg in a dish: `MOD-4.M2.X1`. Gel: `MOD-4.M3.X1`. Foam and xanthan sauce: `MOD-4.M4.X1`. Crisps: `MOD-4.M5.X1` |
+   | `SC-EMUL` 4 | Gel: `MOD-4.M3.X1`. Foam: `MOD-4.M4.X1` |
+   | `KM-EQPT` 4 | Calibration and workaround: `MOD-4.M2.X1`. Equipment plan for a guest dinner: `MNU-4.M3.X1` |
+   | `JD-CHSE` 4 | Dishes from a description: `MOD-4.M1.X1`, `RDV-4.M2.X1`, and two in each regional menu of `CUI-4` |
+   | `FL-ARCH` 4 | New combinations: `CLS-4.M6.X1`, `PRO-4.M2.X1`, `RDV-4.M2.X1`, and two in each deep dive of `CUI-4` |
+   | `CK-CUIS` 4 | Three regional meals: `CUI-4.M1.X2`, `CUI-4.M2.X2` (with the comparison), `CUI-4.M3.X2` |
+   | `IN-ARO` 4 | Blind and correction parts: S3. A blend per tradition: `CUI-4.M1.X1`, `CUI-4.M2.X1`, `CUI-4.M3.X1` |
+   | `KM-PLAN` 4 | Make-ahead plan: `MNU-4.M2.X1`. Timeline: `MNU-4.M3.X1`. Followed in the log: `MNU-4.M6.X1` |
+   | `CR-MENU` 4 | Menus: `MNU-4.M1.X1`. The guests' cards: `MNU-4.M6.X1` |
+   | `JD-REFL` 4 | The stage reflection began in `KMG-3.M5.X1`. Patterns and plans: `PRO-4.M6.X1`, `PLT-4.M4.X1`, `MNU-4.M5.X1`. Plans checked: `PLT-4.M4.X1`, `MNU-4.M5.X1`. Completed at `MS-S4.M1.L6` |
+   | `TS-FIRE` 4, `SA-HYG` 5, `SA-PHYS` 5 | Not moved in S4; completed in S5 (`IND-5`, `CAP-5`) |
+
+6. **Validator addition** (S3 recommendation 5): every module and lesson ID named in a course file must be in the
+   outline, and a named lesson of a developed stage must have its outline. It found no drifted reference in S1–S3.
+7. **Lesson titles.** Some S4 lesson headings were first drafted with other words than the outline's titles (`PLT-4`,
+   `RDV-4`, `MNU-4`); they were set back to the outline's titles before committing. S1–S3 differ from the outline only
+   in italics.
+8. **Assumptions,** as before:
+   - prices are rough;
+   - produce follows the Dutch seasons; fish is MSC-labelled or seasonal North Sea fish; game is in season from a game
+     supplier; pantry goods of `CUI-4` come from specialist shops, and every substitution is named in its exercise;
+   - nuts are replaced by seeds by default (`PST-4.M3`, `CUI-4`);
+   - Dutch fruit in season appears in desserts (`PST-4`), as in `BAK-2` and `PST-3`;
+   - alcohol is tasted, not drunk; the alcohol-free route through `MNU-4.M4` is complete on its own;
+   - reference images are to be made in Phase 6.
+
+**Exercise scope notes for S4** (the outline's one-line description is kept; the spec does more so its module can meet
+the Phase 4 success rows):
+- **`CLS-4`:**
+  - `M1.X1` adds six derivatives explained and two made, and an own menu and two recipes in classical terms;
+  - `M2.X1` runs five sessions over eight weeks with a teaching note; `M2.X2` is the first of five vegetable-led
+    courses;
+  - `M3.X1` adds the stock adapted to the bones and blind seasoning cards; `M3.X2` adds a fifth, timed service;
+  - `M4.X1` adds the soup course and a gelatin prediction;
+  - `M5.X1` adds three preparations from their names and four proteins probed after a written cue;
+  - `M6.X1` adds a second new combination.
+- **`PRO-4`:**
+  - `M1.X1` adds four proteins probed after cues and two cut substitutions;
+  - `M2.X1` to `M6.X1` (with `M5.X2`) are the five `TS-PRO` services; `M2.X1` adds two flavour combinations;
+  - `M3.X1` adds a substitution within offal;
+  - `M4.X1` adds filleting at the table, species substitutions and the prediction log to ten entries;
+  - `M5.X1` adds the five production logs and a cooling plan;
+  - `M6.X1` adds the pattern and practice plan.
+- **`PST-4`:**
+  - `M1.X1` and `M2.X1` each add a formula substitution; `M2.X1` serves the ice cream and sorbet as one dish with a named
+    contrast;
+  - `M3.X1` adds three caramel colours named in advance;
+  - `M5.X1` closes a three-course menu with contrasts named for every course.
+- **`MOD-4`:**
+  - `M1.X1` adds a dish recreated from a description;
+  - `M2.X1` adds an egg texture used in a dish, the calibration and a workaround;
+  - `M3.X1` and `M4.X1` add stated textures and timed stability checks; `M4.X1` makes both a foam and a xanthan sauce and
+    names a texture contrast.
+- **`PLT-4`:**
+  - `M2.X1` uses the best saucing on a course for four guests;
+  - `M3.X1` plates the formal version for four guests with written ideas for both versions;
+  - `M4.X1` re-shoots the three courses and reviews the photo record and the doneness plan.
+- **`RDV-4`:**
+  - `M1.X1` adds two savoury formulas and a costed week;
+  - `M2.X1` adds two new combinations and three improvised meals;
+  - `M3.X1` adds a dish adapted for an allergen or diet;
+  - `M4.X1` adds three recipes repeated a week later;
+  - `M5.X1` adds a second recipe cooked by someone else.
+- **`CUI-4`:** in each deep dive, `X1` makes the second practice of each technique a predicted new combination and adds
+  a spice blend; `X2` recreates two dishes from descriptions; `M2.X2` adds the comparison of two traditions.
+- **`MNU-4`:**
+  - `M1.X1` adds drinks and a dietary need to every menu;
+  - `M2.X1` adds the purchase reconciliation and the logged control points;
+  - `M3.X1` adds the equipment plan, the five productions, the cooling plan and a course plated for six to eight;
+  - `M4.X1` adds seasoning adjusted for the pairing, judged blind;
+  - `M5.X1` adds a guest with an allergen and the stage review.
+
+Hours, lessons and `Moves` entries are unchanged.
+
+### 10.3 Gaps and open questions (review answers, 2026-11-05)
+
+1. **The new §9 rows** (decision 1) and how the outline's objectives are met under them (decision 2).
+   - Option 1: keep them as written. This is my recommendation: each comes from a checked source, and where the home
+     rule is stricter than habit (wild game at 74 °C, duck pink only by the poultry table, no home dispatch of
+     crustaceans), the stricter one is taught.
+   - Option 2: remove some, and drop or rewrite the lessons that rest on them.
+
+   **Answer:** option 1 (the review followed the recommendations). The rows stay, with the duck, venison, liver and
+   translucent-fish limits of decision 2; `04-assessment.md` §9 now says so.
+2. **Crustaceans** (the outline change to `PRO-4.M5`). Two checked welfare sources say humane dispatch can't reliably be
+   done at home.
+   - Option 1: keep dispatch as knowledge, with crab and lobster bought cooked or dispatched by the fishmonger. This is my
+     recommendation.
+   - Option 2: restore the skill (double spiking, whole-body splitting), with the welfare risk the sources describe.
+
+   **Answer:** option 1. The `PRO-4.M5` change stands.
+3. **Raw egg in one rule or two.** S4 uses pasteurised eggs for every guest where egg is served raw or lightly cooked
+   (the FDA's consumer advice [S38]); the raw-yolk sauces of `SAU-2` and the mousses of `PST-3` use them only for risk
+   groups.
+   - Option 1: one rule for the program, pasteurised eggs for every guest in raw-egg preparations, by updating `SAU-2`
+     and `PST-3` and the §9 risk-group row. This is my recommendation, because a single rule is easier to follow and
+     check; Phase 6 should confirm the Voedingscentrum's advice on raw egg first.
+   - Option 2: keep both as they are: S4 desserts for everyone, earlier sauces for risk groups only.
+
+   **Answer:** option 1, applied now. The stricter rule is already sourced [S38], so it needs no wait; the Voedingscentrum
+   page could not be read (the page tried was missing, 2026-11-05) and stays on the Phase 6 list. The rule covers egg
+   that is raw when served (raw-yolk sauces, raw-egg mousses, uncooked bases) and desserts with lightly cooked egg; the
+   soft and lightly cooked savoury egg dishes (soft eggs, *hollandaise* and its family, the 63 °C egg of `MOD-4`) keep
+   the risk-group row. The §9 rows, `SAU-2`, `PST-3`, `GRD-3` and `SAF-3` are updated (§5 change table). Whether the
+   savoury lightly cooked dishes should follow too is a new question at the S5 review.
+4. **The budget.** About €1,185 for S4, against €1,305 for S3. Is it acceptable?
+
+   **Answer:** accepted, as for S2 and S3.
+5. **The knowledge-check items have not been reviewed by a second reader.** Recorded as a condition for Phase 6 at the
+   S3 review; S4 adds 51 safety items, so about 268 across S1–S4.
+
+   **Answer:** it stays a condition for starting Phase 6, now covering about 268 safety items (and those of S5).
+6. **Sources Phase 6 must add or re-check,** in addition to the S3 list:
+   - the Dutch rules on nitrous oxide (the siphon rule; the Rijksoverheid pages refused or were missing);
+   - the verbatim text of *Alcoholwet* article 20 (only a summary could be read);
+   - Dutch guidance on wild game and *Trichinella* for hunters' own meat (NVWA; the pages found were missing);
+   - the FSIS egg pages, which refused automated access.
+
+   **Answer:** they join the Phase 6 list, with the Voedingscentrum page on raw egg (answer 3).
+
+### 10.4 Recommendations for S5
+
+1. **Keep mapping before writing.** S5 is mostly projects (`IND-5`, `RDV-5`, `REV-5`) and the capstone; their rows are
+   at level 4 or 5 and will span courses again.
+2. **Name where the stage-spanning rows complete:** `TS-FIRE` 4 (`IND-5`), `SA-HYG` 5 and `SA-PHYS` 5 (`CAP-5`), and
+   `JD-REFL` 5.
+3. **Use the `CUI-4` pattern for learner's-choice work:** where `RDV-5` or `IND-5` lets the learner choose the subject,
+   write one template and a short catalogue of worked options rather than one module per option.
+4. **A small validator addition:** check that each lesson heading in a course file matches the outline's lesson title
+   (ignoring italics), which would have caught the drafted titles of decision 7.
+5. **`REV-5` consolidation** can draw on the knowledge checks of S1–S4 (1,362 items), once the second reader has checked
+   the safety items.
+
+## 11. End of the S5 batch
+
+### 11.1 What was delivered
+
+S5 is developed in three course files in [`05-courses/S5/`](05-courses/S5/): `REV-5`, `IND-5` and `RDV-5`. The capstone
+`CAP-5` is an assessment, not a course. Its brief and rubric are complete in
+[assessment §8](04-assessment.md#8-the-capstone-cap-5), so it has no course file, as for the milestones (§1). In S5:
+- 28 lesson outlines, each with a session plan that matches the outline's practical sessions;
+- 11 exercise specs, every one a brief, framework or project as the outline gives it;
+- 32 knowledge-check items in 4 checks, 10 of them safety items;
+- 30 evidence rows against the Phase 4 success rows.
+
+Eight modules have no quiz:
+- `IND-5.M2` and `RDV-5.M2` have no [K] or [J] objective;
+- `IND-5.M3`, `IND-5.M4`, `RDV-5.M1` and `REV-5.M1` have only [J] objectives, which their evidence shows. `REV-5.M1`
+  instead retakes the S1–S4 checks of each gap competency (decision 3).
+
+Three modules with only [J] objectives keep a quiz, for their safety points: `IND-5.M5` (the probe under time pressure,
+fire, allergens), `IND-5.M6` (rescues and verification) and `RDV-5.M3` (the triangle test and the tasting day).
+
+Every S5 stage target is evidenced by an exercise at that level (§4). `**Stages developed:**` now reads S1 to S5, so
+**every course of the program has a course file**.
+
+**Totals for the program (S1–S5):**
+
+| Stage | Course files | Lessons | Exercises | Items (safety) | Evidence rows | Budget |
+|---|---|---|---|---|---|---|
+| S1 | 10 | 119 | 58 | 314 (48) | 78 | €265 |
+| S2 | 11 | 131 | 71 | 408 (62) | 153 | €725 |
+| S3 | 13 | 157 | 85 | 392 (107) | 173 | €1,305 |
+| S4 | 8 | 84 | 47 | 248 (51) | 94 | €1,185 |
+| S5 | 3 | 28 | 11 | 32 (10) | 30 | €850 |
+| **Total** | **45** | **519** | **272** | **1,394 (278)** | **528** | **€4,330** |
+
+**The indicative ingredient budget** for S5 is about **€850**:
+- `IND-5` €400: five baskets, the recreations, two guest dinners and charcoal;
+- `RDV-5` €350: 18 versions and a tasting day;
+- `REV-5` €100, depending on the gaps.
+
+The capstone's own budget is set by its brief (assessment §8.1). S5 runs over at least 8 weeks, because the level-5
+rows ask for it; at 6.5 hours a week its 147.5 hours (including `CAP-5`) take about 23 weeks. Most of the budget is
+household and guest meals.
+
+### 11.2 Decisions and assumptions
+
+1. **No new §9 rows.** S5 uses the existing rows: core temperatures, leftovers, holding, cooling, the fish row, the egg
+   rows as decided at the S4 review, live fire (`FIR-3`) and allergens (`NUT-3`). Two rules are written into the
+   courses rather than §9:
+   - a brief, a basket or a historical text never overrides §9;
+   - doneness judged by the senses is checked with the probe before a §9 food is served (`IND-5.M6.L2`).
+2. **Templates and catalogues for the learner's choice** (S4 recommendation 3), following the pattern of `CUI-4`:
+   - `REV-5` has one gap-analysis template and a **gap catalogue** of five worked gap types: safety, a capstone
+     technique, a judgement, old evidence, and a self-assessment that disagrees. A safety gap is always block 1.
+   - `RDV-5` has one development-cycle template for the six dishes and a **point-of-view catalogue**: season, region,
+     technique and ingredient.
+3. **`REV-5` and the personal competencies.** The outline moves only `JD-REFL` in `REV-5`, so the exercise is tagged
+   `JD-REFL→5` alone. The new evidence for each gap goes into the record against that competency's own success row. The
+   module has no quiz of its own; the learner retakes the S1–S4 knowledge checks of each gap competency at the same pass
+   rule (S4 recommendation 5). Until the second reader has checked the safety items, a safety item that disagrees with
+   §9 follows §9.
+4. **Where the stage-spanning rows complete** (S4 recommendation 2). Level 5 asks for at least five demonstrations
+   under three conditions over at least 8 weeks (Phase 1 §10.3), so most S5 rows are built in the courses and completed
+   by the capstone. The record marks them "in progress" until `CAP-5` is scored.
+
+   | Competency | Level | Built in | Completed by |
+   |---|---|---|---|
+   | `CR-IMPV` | 4 | `IND-5.M3.X1` | `IND-5.M2.X1` (round 3, for guests) |
+   | `JD-CHSE` | 5 | `IND-5.M1.X1`, `IND-5.M4.X1`, `IND-5.M4.X2`, the round 3 analysis | the capstone brief (`CAP-5.R1`) |
+   | `CK-METH` | 5 | `IND-5.M1.X1` (with the guide) | the capstone brief (`CAP-5.R1`) |
+   | `RD-ADPT` | 5 | `IND-5.M3.X1`, `IND-5.M4.X2`, `IND-5.M5.X1` (with the guide) | the capstone dietary adaptation (`CAP-5.R1`) |
+   | `KM-PLAN` | 5 | `IND-5.M2.X1`, `IND-5.M5.X1`, the tasting day of `RDV-5.M3.X1` | the capstone timing (`CAP-5.R11`) |
+   | `TS-DRY` | 5 | `IND-5.M2.X1`, `IND-5.M5.X1` (with the note) | the capstone main (`CAP-5.R6`) |
+   | `JD-TRBL`, `FL-CORR` | 5 | `IND-5.M6.X1` (with the guides) | the capstone log and service (`CAP-5.R12`, `CAP-5.R7`) |
+   | `JD-CUES` | 5 | `IND-5.M6.X1` (ten predictions and the guide), entries in `IND-5.M2`, `IND-5.M5`, `RDV-5.M2` | the capstone main (`CAP-5.R6`) |
+   | `FL-SENS` | 5 | `IND-5.M4.X1`, `IND-5.M6.X1` (calibration), `RDV-5.M3.X1` (triangle test and guide) | the capstone form against the guests' cards (`CAP-5.R7`) |
+   | `IN-VEG` | 5 | `IND-5.M1.X1`, `IND-5.M2.X1`, `IND-5.M3.X1`, `RDV-5.M2.X1` (with the guide) | the capstone vegetable course (`CAP-5.R6`) |
+   | `CR-ORIG` | 4 | `RDV-5.M2.X1`, `RDV-5.M3.X1` | the capstone dish and defence (`CAP-5.R1`) |
+   | `JD-REFL` | 5 | `REV-5.M1.X1` (the agreement log over 8 weeks), `RDV-5.M3.X1` (style) | the capstone defence (`CAP-5.R12`) |
+   | `SA-HYG`, `SA-PHYS` | 5 | `SAF-3.M2.X1`, `FIR-3.M1.X1` (S3) | the capstone food-safety gate (`CAP-5.R3`) |
+   | `TS-FIRE` | 4 | `FIR-3.M4.X1`, `FIR-3.M6.X1`, `IND-5.M5.X1` | logged household cooks in S5 (question 1) |
+
+   `RD-TEST` 4, `RD-WRIT` 4 and `CK-CLAS` 4 were reached in S4; S5 adds further evidence.
+5. **`TS-FIRE` 4 has too few outline hours.** Level 4 asks for three low-and-slow cooks and three live-fire meals in at
+   least two conditions. `FIR-3` gives the first of each. In S5 only `IND-5.M5.L2` moves `TS-FIRE`, with two sessions,
+   so one of them is a live-fire meal for at least four guests (the second meal). The third meal and the second and
+   third low-and-slow cooks have no outline hours. They are logged as household cooks during S5, and `REV-5` can take
+   them up as a gap. The notes in `FIR-3` that said S4 and the capstone complete the row were wrong (neither moves
+   `TS-FIRE`) and are corrected.
+6. **Exercise scope notes** (the outline's one-line description is kept; the spec does more):
+   - `IND-5.M1.X1` adds the written guide to method choice that the `CK-METH` level 5 row asks for.
+   - `IND-5.M4.X1` adds the tasted dish, because `IND-5.M4.L2` has no exercise of its own and the `FL-SENS` evidence
+     needs it.
+   - `IND-5.M5.X1` makes the equipment challenge a live-fire meal for guests (decision 5), and adds the dry-heat note and
+     the adaptation guide of the level-5 rows.
+   - `IND-5.M6.X1` adds the salt and acid tests retaken in S5 and the guides to faults and cues.
+   - `RDV-5.M2.X1` adds the vegetable guide and the dessert cooked by another person.
+   - `RDV-5.M3.X1` adds the triangle test, the tasting guide and the reflection on style.
+   - `REV-5.M1.X1` runs the agreement log over every S5 entry from block 1, at least 8 weeks.
+7. **Session counts kept to the outline.** `IND-5.M3.L1` has three sessions for four weekly meals, so its third session
+   covers weeks 3 and 4.
+8. **Lesson titles** now match the outline in every course file: the validator checks it (S4 recommendation 4), and
+   S1–S4 passed without change.
+
+**Assumptions:**
+- The learner has outdoor space for live fire. Without it, `TS-FIRE` stays at level 2 and the record says so (`FIR-3`).
+- The household can choose baskets, introduce faults and taste blind; a panel of 4–6 can be found for the tasting day.
+- A dish tasted in a restaurant can be replaced by one cooked by someone else (`IND-5.M4.L2`).
+
+### 11.3 Gaps and open questions (review answers, 2026-11-05)
+
+1. **`TS-FIRE` 4** (decision 5).
+   - Option 1: keep it as written, with the remaining cooks logged as household cooks in S5 and taken up by `REV-5` if
+     missing. This is my recommendation: the cooks are long but mostly unattended, and the success row stays unchanged.
+   - Option 2: add a lesson to the outline (for example `IND-5.M5.L4`, about 6 hours with three sessions) for the
+     remaining cooks.
+
+   **Answer:** option 1. The outline is unchanged. The `REV-5` gap catalogue now names a missing household cook as a
+   gap of the "old or missing evidence" type.
+2. **Warm egg sauces** (new, from the S4 review answer 3). The egg rule now covers egg that is raw when served and
+   desserts with lightly cooked egg. The warm emulsions (*hollandaise* and its family, *sabayon*) and soft whole eggs
+   keep the risk-group row.
+   - Option 1: extend the pasteurised rule to the warm egg sauces, for every guest, because the checked source covers
+     recipes where eggs are "raw or undercooked when served" [S38]. Soft whole eggs (soft-boiled, poached, the 63 °C
+     egg) keep the risk-group row until Phase 6 has checked the Voedingscentrum. This is my recommendation.
+   - Option 2: keep it as it is.
+
+   **Answer:** option 1. The raw-egg row of §9 now covers the warm egg sauces, for every guest; the courses that teach
+   them follow it (§5 change table).
+3. **The budget.** About €850 for S5, against €1,185 for S4. Is it acceptable?
+
+   **Answer:** accepted, as for S2 to S4.
+4. **The second reader** now covers about 278 safety items across S1–S5. It is still a condition for starting
+   Phase 6.
+
+   **Answer:** it stays a condition. Phase 6 starts in parallel: the worksheet for the reader is
+   [`06-safety-review.md`](06-safety-review.md), and lesson files stay drafts until the reader's log is in and every
+   flagged item is fixed ([Phase 6](06-lesson-development.md)).
+5. **Sources.** S5 added none. The Phase 6 list stands: the S3 and S4 lists, and the Voedingscentrum page on raw egg
+   (the page tried was missing on 2026-11-05).
+
+   **Answer:** Phase 6 re-checks them first ([Phase 6 §2](06-lesson-development.md#2-source-re-checks)).
+
+### 11.4 Phase 5 complete, and what Phase 6 needs first
+
+With S5, every course has a course file, and the validator checks the whole program. After this review, Phase 5 can
+close. Before Phase 6 (detailed lesson development) starts, three things are needed:
+1. **The second reader's log** of every safety item (question 4).
+2. **The source list re-checked** (§9.3, §10.3 and §11.3): the Voedingscentrum pages, the FSIS poultry and egg pages,
+   the Dutch nitrous-oxide rules, *Alcoholwet* article 20, and the NVWA guidance on game.
+3. **An order for Phase 6:** I recommend following the stages (S1 first), so lessons can be written and used while
+   later ones are developed. Each course file's outlines, cues and faults are the brief for its lessons.
