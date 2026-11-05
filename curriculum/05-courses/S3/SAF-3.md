@@ -183,7 +183,8 @@ At 5 / 6.5 / 8 hours a week the course takes about **1.4 / 1.1 / 0.9 weeks** of 
   freezer at −18 °C does not qualify. Salt, sugar and acid do not kill the parasites; heat to 60 °C at the core for
   1 minute does.
 - **Risk groups** (§9): pregnant people, young children, older people and people with weakened immunity are not served
-  raw or lightly cooked fish, rare meat, soft eggs from raw eggs or raw-yolk sauces.
+  raw or lightly cooked fish, rare meat or soft eggs from raw eggs. Raw-yolk sauces and raw-egg desserts are made with
+  pasteurised egg for every guest.
 - **When to throw away:** a bulging lid or a jar that spurts, a broken seal, mould on a sugar or acid preserve beyond
   what its tested method allows, sous vide food kept beyond 2 days in the fridge, a cooling log that missed its limit.
 

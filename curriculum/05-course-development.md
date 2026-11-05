@@ -1,8 +1,7 @@
 # Phase 5 — Course development
 
-Status: **S4 ready for review** (2026-11-04). S1, S2 and S3 are reviewed and their answers applied (§7.3, §8.3 and
-§9.3). S4 is developed in the same format; the end of the S4 batch, with its decisions, gaps and questions, is in §10.
-S5 follows.
+Status: **S5 in progress** (2026-11-05). S1 to S4 are reviewed and their answers applied (§7.3, §8.3, §9.3 and
+§10.3). S5 is being developed in the same format.
 
 **Stages developed:** S1, S2, S3, S4
 
@@ -305,6 +304,7 @@ row rests on the quiz alone.
 | `PRS-3.M3.L1` objective | salt by weight (2 %) | salt by weight (2.25–2.5 %) | The checked source [S36] gives 2.25–2.5 %; 2 % is below it. |
 | [Assessment §9](04-assessment.md#9-safety-figures-used-in-assessment) (S4) | No figures for egg-thickened desserts, raw-egg desserts, game, game birds, offal, wild boar, live crustaceans or alcohol; no rule for tier 3 equipment | Rows for each, from sources checked on 2026-11-04 ([S25], [S38]–[S43]); a rule that the siphon and blowtorch follow the maker's instructions | S3 recommendations 2 and 3: `PST-4`, `MOD-4`, `PRO-4` and `MNU-4` need them, and no figure is written from memory. To be confirmed at the S4 review. |
 | `PRO-4.M5` objective, `PRO-4.M5.L1` objective | [S] handle and cook live crustaceans humanely; [S] humane dispatch | [S] handle and cook crustaceans humanely; [K] humane dispatch (by a trained fishmonger) and why it is not done at home | The checked welfare sources [S40][S41] say manual dispatch may fail in untrained hands and that humane slaughter cannot be done at home. The skill becomes buying, handling and cooking; dispatch is knowledge. To be confirmed at the S4 review. |
+| [Assessment §9](04-assessment.md#9-safety-figures-used-in-assessment) (S4 review) | Raw-yolk sauces (`SAU-2`) and raw-egg mousses (`PST-3`) made with pasteurised egg only for risk groups | Pasteurised egg for every guest wherever egg is raw when served, and in desserts where it is lightly cooked; soft and lightly cooked egg dishes (soft eggs, *hollandaise* and its family, the 63 °C egg) keep the risk-group row | S4 review answer 3 ([S38]). `SAU-2.M4.L2`, `SAU-2.M4.Q7`, the `SAU-2` completion note, `PST-3.M4.L3`, `PST-3.M4.Q7` and the safety lines of `PST-3`, `GRD-3` and `SAF-3` follow the row. |
 
 No course, module, lesson, hour, exercise or `Moves` entry has been added, removed or moved; only the objective wording above changed.
 
@@ -1164,18 +1164,23 @@ the Phase 4 success rows):
 
 Hours, lessons and `Moves` entries are unchanged.
 
-### 10.3 Gaps and open questions
+### 10.3 Gaps and open questions (review answers, 2026-11-05)
 
 1. **The new §9 rows** (decision 1) and how the outline's objectives are met under them (decision 2).
    - Option 1: keep them as written. This is my recommendation: each comes from a checked source, and where the home
      rule is stricter than habit (wild game at 74 °C, duck pink only by the poultry table, no home dispatch of
      crustaceans), the stricter one is taught.
    - Option 2: remove some, and drop or rewrite the lessons that rest on them.
+
+   **Answer:** option 1 (the review followed the recommendations). The rows stay, with the duck, venison, liver and
+   translucent-fish limits of decision 2; `04-assessment.md` §9 now says so.
 2. **Crustaceans** (the outline change to `PRO-4.M5`). Two checked welfare sources say humane dispatch can't reliably be
    done at home.
    - Option 1: keep dispatch as knowledge, with crab and lobster bought cooked or dispatched by the fishmonger. This is my
      recommendation.
    - Option 2: restore the skill (double spiking, whole-body splitting), with the welfare risk the sources describe.
+
+   **Answer:** option 1. The `PRO-4.M5` change stands.
 3. **Raw egg in one rule or two.** S4 uses pasteurised eggs for every guest where egg is served raw or lightly cooked
    (the FDA's consumer advice [S38]); the raw-yolk sauces of `SAU-2` and the mousses of `PST-3` use them only for risk
    groups.
@@ -1183,14 +1188,27 @@ Hours, lessons and `Moves` entries are unchanged.
      and `PST-3` and the §9 risk-group row. This is my recommendation, because a single rule is easier to follow and
      check; Phase 6 should confirm the Voedingscentrum's advice on raw egg first.
    - Option 2: keep both as they are: S4 desserts for everyone, earlier sauces for risk groups only.
+
+   **Answer:** option 1, applied now. The stricter rule is already sourced [S38], so it needs no wait; the Voedingscentrum
+   page could not be read (the page tried was missing, 2026-11-05) and stays on the Phase 6 list. The rule covers egg
+   that is raw when served (raw-yolk sauces, raw-egg mousses, uncooked bases) and desserts with lightly cooked egg; the
+   soft and lightly cooked savoury egg dishes (soft eggs, *hollandaise* and its family, the 63 °C egg of `MOD-4`) keep
+   the risk-group row. The §9 rows, `SAU-2`, `PST-3`, `GRD-3` and `SAF-3` are updated (§5 change table). Whether the
+   savoury lightly cooked dishes should follow too is a new question at the S5 review.
 4. **The budget.** About €1,185 for S4, against €1,305 for S3. Is it acceptable?
+
+   **Answer:** accepted, as for S2 and S3.
 5. **The knowledge-check items have not been reviewed by a second reader.** Recorded as a condition for Phase 6 at the
    S3 review; S4 adds 51 safety items, so about 268 across S1–S4.
+
+   **Answer:** it stays a condition for starting Phase 6, now covering about 268 safety items (and those of S5).
 6. **Sources Phase 6 must add or re-check,** in addition to the S3 list:
    - the Dutch rules on nitrous oxide (the siphon rule; the Rijksoverheid pages refused or were missing);
    - the verbatim text of *Alcoholwet* article 20 (only a summary could be read);
    - Dutch guidance on wild game and *Trichinella* for hunters' own meat (NVWA; the pages found were missing);
    - the FSIS egg pages, which refused automated access.
+
+   **Answer:** they join the Phase 6 list, with the Voedingscentrum page on raw egg (answer 3).
 
 ### 10.4 Recommendations for S5
 

@@ -24,8 +24,8 @@ The course builds on the vinaigrettes and mayonnaise of `SAU-2` and the fish of 
 Food held cold is still food at risk. The rules of
 [assessment §9](../../04-assessment.md#9-safety-figures-used-in-assessment) apply throughout: the fridge at 4 °C,
 platters out of the fridge for at most 2 hours, leftovers kept at most 2 days. Raw and lightly cooked animal foods
-(cured or marinated fish, raw-yolk sauces, raw-milk cheese and raw cured meats) are not served to risk groups, and fish
-eaten raw or cured is frozen first.
+(cured or marinated fish, raw-milk cheese and raw cured meats) are not served to risk groups, raw-yolk sauces are made
+with pasteurised egg for every guest, and fish eaten raw or cured is frozen first.
 
 Leaves and vegetables follow the Dutch seasons: lettuces, rocket and spinach from spring to autumn; chicory (*witlof*),
 lamb's lettuce (*veldsla*), winter purslane, red cabbage, kale and roots in winter. Cheeses are Dutch where possible

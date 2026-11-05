@@ -674,8 +674,9 @@ weighs every ingredient and logs the weights. The poached chicken is cooked to t
   - **tartare sauce:** gherkins, capers, shallot and herbs, sometimes chopped boiled egg;
   - **herb mayonnaise:** chopped soft herbs, or a green purée.
 - **Raw-yolk safety:**
-  - **Raw eggs can carry *Salmonella*.** People in risk groups are not served raw-yolk sauces: pregnant people, young
-    children, older people and anyone with weakened immunity. For them the sauce is made with pasteurised egg yolk.
+  - **Raw eggs can carry *Salmonella*.** A raw-yolk sauce is made with pasteurised egg yolk, for every guest
+    (assessment §9). This matters most for people in risk groups: pregnant people, young children, older people and
+    anyone with weakened immunity.
   - **Eggs:** fresh, clean and uncracked, from the fridge; shells kept away from the finished sauce.
   - **Storage:** a home-made mayonnaise goes into the fridge at 4 °C, covered, and is used within 2 days. It is out of
     the fridge for no longer than 2 hours in total (assessment §9).
@@ -693,7 +694,7 @@ weighs every ingredient and logs the weights. The poached chicken is cooked to t
 
 **Faults:**
 - Watery additions, such as wet herbs or undrained gherkins, that thin the sauce.
-- A raw-yolk sauce served to a pregnant guest.
+- A raw-yolk sauce made with unpasteurised yolk.
 - A bowl of mayonnaise left on the table all evening.
 - Garlic oil stored at room temperature.
 
@@ -760,7 +761,7 @@ They become a meal with boiled potatoes, eggs or seasonal vegetables.
 | SAU-2.M4.Q4 | scenario | SAU-2.M4.L1 | — | Your mayonnaise has split into a thin, oily mess halfway through. Describe the rescue. | Put a fresh yolk (or a teaspoon of mustard or water) in a clean bowl and whisk the broken sauce into it drop by drop, then in a stream, as if it were the oil. | A new emulsion takes up the broken one. |
 | SAU-2.M4.Q5 | multiple choice | SAU-2.M4.L1 | — | A mayonnaise has become too stiff to spread. What do you add? A) more oil B) a few drops of water or acid C) another yolk D) salt | B | A little water loosens a tight emulsion. |
 | SAU-2.M4.Q6 | multiple choice | SAU-2.M4.L2 | yes | How long can home-made mayonnaise be kept? A) a week at room temperature B) at most 2 days, covered, in the fridge at 4 °C C) a month in the fridge D) as long as it smells fine | B | Assessment §9: leftovers at most 2 days in the fridge, set to 4 °C. |
-| SAU-2.M4.Q7 | scenario | SAU-2.M4.L2 | yes | A pregnant friend is coming to dinner, and you planned an *aïoli*. What do you change? | Make it with pasteurised egg yolk (or serve a sauce without raw egg); keep it chilled and serve it from the fridge, not left out for more than 2 hours. | Risk groups are not served raw-yolk sauces; §9 limits time out of the fridge. |
+| SAU-2.M4.Q7 | scenario | SAU-2.M4.L2 | yes | You plan an *aïoli* for a dinner, and one friend is pregnant. Which yolks do you use, and how is it served? | Pasteurised egg yolk, for every guest and not only the pregnant friend; kept chilled and served from the fridge, not left out for more than 2 hours. | §9: raw-yolk sauces are made with pasteurised egg for every guest; §9 limits time out of the fridge. |
 | SAU-2.M4.Q8 | multiple choice | SAU-2.M4.L2 | yes | You have garlic oil left over from an *aïoli*. Where does it go? A) in a bottle in the cupboard B) covered in the fridge, used soon, or thrown away C) on the windowsill D) in the freezer only after a week | B | Garlic in oil needs refrigeration (§9). |
 
 **Evidence check:**
@@ -1245,7 +1246,7 @@ The two sessions are on different days. The repair test is re-tested at `MS-S2`.
 
 **Completing the course.** Every module check is passed: the knowledge checks at 80 %, with every safety item correct in
 `SAU-2.M4` and `SAU-2.M5`, and the evidence rows met. `TS-SAU` level 3 needs four of the five elements from frameworks
-across `SAU-2.M2` to `SAU-2.M6`. A raw-yolk sauce served to a risk-group guest, or kept beyond 2 days, is a *Not yet* for
+across `SAU-2.M2` to `SAU-2.M6`. A raw-yolk sauce made with unpasteurised yolk, or kept beyond 2 days, is a *Not yet* for
 the module, however good the sauce.
 
 **What it feeds.**

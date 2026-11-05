@@ -25,7 +25,7 @@ thermometer, and each element judged in cross-section. Fruit is Dutch and season
 summer, plums in late summer, apples and pears from autumn); chocolate, vanilla and citrus are pantry goods.
 
 Pastry has its own safety points (assessment §9): pastry cream and custards cooled by the cooling standard and kept at
-most 2 days; raw-egg mousses not served to risk groups (pasteurised egg for them); cream fillings kept in the fridge and
+most 2 days; raw-egg mousses made with pasteurised egg for every guest; cream fillings kept in the fridge and
 out of it for at most 2 hours.
 
 **In the spiral.**
@@ -640,8 +640,8 @@ shown in the slice photos of `PST-3.M3.X1` and `PST-3.M3.X2`.
   - some fruits (fresh pineapple, kiwi) contain enzymes that stop it setting unless cooked first;
   - gelatine is an animal product (pork or beef), which matters for vegetarians and some faiths (`NUT-3`).
 - **Ratios:** a mousse by ratio (base, foam, setting agent), written down so it can be varied.
-- **Safety:** raw-egg mousses are not served to risk groups; pasteurised egg, or a cooked base (Italian meringue, *crème
-  anglaise*) for them (§9); kept in the fridge at most 2 days.
+- **Safety:** a mousse with raw egg is made with pasteurised egg for every guest, or on a base cooked to 71 °C (a
+  *crème anglaise*; §9); kept in the fridge at most 2 days.
 
 **Sessions:**
 1. A chocolate mousse (60 min active, 4 h in total): chocolate as the setting agent; folded; set.
@@ -706,7 +706,7 @@ different fruit) with the effect recorded; photos and tasting forms. The extensi
 | PST-3.M4.Q4 | multiple choice | PST-3.M4.L2 | — | Your ganache looks oily and grainy. How do you fix it? A) heat it hard B) blend in a spoon of warm milk or cream from the centre C) add chocolate D) whisk vigorously | B | Re-emulsify. |
 | PST-3.M4.Q5 | multiple choice | PST-3.M4.L3 | — | Why is gelatine dosed by weight? A) it's tradition B) sheets differ in strength, so weight is the reliable measure C) to save money D) it isn't | B | Dosing by weight. |
 | PST-3.M4.Q6 | multiple choice | PST-3.M4.L3 | — | Why does a gelatine-set mousse melt in the mouth? A) it contains butter B) gelatine melts close to body temperature C) sugar D) air | B | Setting and melting points. |
-| PST-3.M4.Q7 | multiple choice | PST-3.M4.L3 | yes | A chocolate mousse with raw eggs is planned, and a guest is pregnant. What do you do? A) serve it B) use pasteurised egg, or a cooked base, for the guest's portion C) add more chocolate D) chill it longer | B | Assessment §9, risk groups. |
+| PST-3.M4.Q7 | multiple choice | PST-3.M4.L3 | yes | A chocolate mousse with uncooked eggs is planned for six guests. What do you do? A) use fresh eggs from the fridge B) use pasteurised egg, or a base cooked to 71 °C, for every guest C) add more chocolate D) chill it longer | B | Assessment §9: raw-egg desserts are made with pasteurised egg for every guest. |
 | PST-3.M4.Q8 | multiple choice | PST-3.M4.L3 | — | Gelatine set in strings in your fruit mousse. Why? A) too much sugar B) it was added to a base that was too cold C) the fruit was too ripe D) too much cream | B | Compatible temperatures. |
 
 **Evidence check:**
