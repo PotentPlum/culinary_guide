@@ -30,8 +30,9 @@ Phase 4 (curriculum/04-competencies/*.md, 04-assessment.md) adds:
   verifiable and self-assessed evidence in every rubric.
 
 Phase 5 (curriculum/05-course-development.md, 05-courses/<stage>/<course>.md) adds:
-- Every course of a developed stage has a file; each file has the fixed sections, an outline for every lesson (with a
-  numbered session plan matching the outline's practical sessions) and a spec for every exercise, and nothing else.
+- Every course of a developed stage has a file; each file has the fixed sections, an outline for every lesson (headed by
+  the outline's title, italics aside, with a numbered session plan matching the outline's practical sessions) and a
+  spec for every exercise, and nothing else.
 - Exercise tags (`TS-KNF→3`): competencies the module's lessons move, at level 2 up to the level the module reaches.
 - Module checks: knowledge-check items within the blueprint (assessment §4.1), every [K] lesson tested, a safety item
   wherever the module moves `SA-*`; evidence rows for every competency the module moves to level 2 or more, at the
@@ -1066,6 +1067,7 @@ class CourseDoc:
     sections: list[str] = field(default_factory=list)
     modules: dict[str, str] = field(default_factory=dict)  # module id -> title
     lessons: dict[str, list[str]] = field(default_factory=dict)  # lesson id -> fields
+    lesson_titles: dict[str, str] = field(default_factory=dict)  # lesson id -> heading title
     sessions: dict[str, int] = field(default_factory=dict)  # lesson id -> numbered session items
     exercises: dict[str, ExerciseDoc] = field(default_factory=dict)
     checks: set[str] = field(default_factory=set)  # module ids with a "Module check" heading
@@ -1132,6 +1134,7 @@ def parse_course_doc(path: Path, root: Path, report: Report) -> CourseDoc | None
             if lesson in doc.lessons:
                 report.error(f"{where}: {lesson} has two outlines")
             doc.lessons[lesson] = []
+            doc.lesson_titles[lesson] = m.group(2).strip()
             doc.sessions[lesson] = 0
             continue
         if m := DOC_EXERCISE_RE.match(line):
@@ -1302,6 +1305,11 @@ def check_phase5(root: Path, stages: dict[str, list[Course]], phase1: Phase1, ph
     return phase5
 
 
+def plain_title(title: str) -> str:
+    """A heading title without its italics, so `*Mise en place*` and `Mise en place` compare equal."""
+    return re.sub(r"[*_]", "", title).strip()
+
+
 def check_course_doc(doc: CourseDoc, course: Course, phase4: Phase4, report: Report) -> None:
     name = str(doc.path.name)
     if doc.sections != list(COURSE_SECTIONS):
@@ -1324,6 +1332,8 @@ def check_course_doc(doc: CourseDoc, course: Course, phase4: Phase4, report: Rep
             for f in LESSON_FIELDS:
                 if f not in fields:
                     report.error(f"{lesson.id}: missing **{f}:**")
+            if plain_title(doc.lesson_titles[lesson.id]) != plain_title(lesson.title):
+                report.error(f"{lesson.id}: titled {doc.lesson_titles[lesson.id]!r}, the outline says {lesson.title!r}")
             if doc.sessions[lesson.id] != lesson.practice:
                 report.error(
                     f"{lesson.id}: {doc.sessions[lesson.id]} numbered session(s) under **Sessions:**, "

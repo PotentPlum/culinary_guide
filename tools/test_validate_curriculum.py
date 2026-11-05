@@ -140,7 +140,8 @@ def course_doc(
     lines += ["## Module structure and hours", ""] + gen("modules")
     lines += ["## Modules", "", "### KNF-1.M1 — Cuts", ""] + gen("module-knf-1-m1")
     for ident in lessons:
-        lines += [f"#### {ident} — Lesson", ""] + gen(f"lesson-{ident.lower().replace('.', '-')}")
+        title = {"KNF-1.M1.L1": "Grip", "KNF-1.M1.L2": "*Dice*"}.get(ident, "Lesson")
+        lines += [f"#### {ident} — {title}", ""] + gen(f"lesson-{ident.lower().replace('.', '-')}")
         lines += ["**Concepts:** x", "", "**Sessions:**"] + [f"{n}. Practise." for n in range(1, sessions + 1)]
         lines += ["", "**Cues:** x", "", "**Faults:** x", ""]
     lines += ["#### KNF-1.M1.X1 — Dice", ""] + gen("exercise-knf-1-m1-x1")
@@ -423,6 +424,11 @@ class ValidateCurriculumTest(unittest.TestCase):
         errors = self.course_errors(course_doc(evidence_row=row))
         self.assertIn("KNF-1: names KNF-1.M1.L7, which is not a lesson in the outline", errors)
         self.assertIn("KNF-1: names KNF-1.M8, which is not a module in the outline", errors)
+
+    def test_lesson_headings_must_match_the_outline_titles_apart_from_italics(self) -> None:
+        self.assertEqual(self.course_errors(course_doc()), [])
+        text = course_doc().replace("#### KNF-1.M1.L1 — Grip", "#### KNF-1.M1.L1 — The grip")
+        self.assertIn("KNF-1.M1.L1: titled 'The grip', the outline says 'Grip'", self.course_errors(text))
 
     def test_a_knowledge_check_replaces_an_exercise_only_for_quiz_only_rows(self) -> None:
         row = "| TS-KNF | 2 | knowledge check | quiz — the cut names |"
