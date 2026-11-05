@@ -1249,8 +1249,8 @@ The two sessions are on different days. The repair test is re-tested at `MS-S2`.
 
 **Completing the course.** Every module check is passed: the knowledge checks at 80 %, with every safety item correct in
 `SAU-2.M4` and `SAU-2.M5`, and the evidence rows met. `TS-SAU` level 3 needs four of the five elements from frameworks
-across `SAU-2.M2` to `SAU-2.M6`. A raw-yolk sauce made with unpasteurised yolk, or kept beyond 2 days, is a *Not yet* for
-the module, however good the sauce, and so is a warm egg sauce made with unpasteurised yolk.
+across `SAU-2.M2` to `SAU-2.M6`. A raw-yolk sauce made with unpasteurised yolk, or kept beyond 24 hours, is a *Not yet*
+for the module, however good the sauce, and so is a warm egg sauce made with unpasteurised yolk.
 
 **What it feeds.**
 - **`POU-2`, `MEA-2` and `FSH-2`:** pan sauces, *velouté* and *beurre blanc* finish their proteins.

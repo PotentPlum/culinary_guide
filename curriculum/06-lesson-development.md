@@ -6,7 +6,7 @@ second reader's worksheet is open ([`06-safety-review.md`](06-safety-review.md))
 reviewed on 2026-11-05, and its answers are applied (§2, §5, §6.3). All ten S1 lesson files are written, and their
 review answers are applied (§7).
 
-**Courses developed:** ORI-1, SAF-1, WRK-1, EQP-1, KNF-1, TST-1, HEA-1, EGG-1, VEG-1, STA-1, SCI-2, HEA-2, KNF-2, STK-2
+**Courses developed:** ORI-1, SAF-1, WRK-1, EQP-1, KNF-1, TST-1, HEA-1, EGG-1, VEG-1, STA-1, SCI-2, HEA-2, KNF-2, STK-2, SAU-2
 
 This phase writes the lessons that the course files of Phase 5 outline. For each course it gives one lesson file with:
 - every lesson, written for the learner: why it matters, what is needed, the explanation, the practice sessions step
@@ -170,6 +170,7 @@ Changes to an agreed structure are logged here.
 | `HEA-2.M4.X1`, the thermometer check | "in boiling water" | "in boiling water, where it reads about 100 °C" | The lesson needs the reading, as for `EQP-1.M3.L3` |
 | `HEA-2.M4.L3`, double-fried chips | "a first fry at a lower temperature" | "a first fry at a lower temperature (about 150 °C)" | The chip recipe needs the figure; 150 °C is the course's own "too cool for a crust" point |
 | `HEA-2.M5.L1`, the braise | "often in a low oven" | "often in a low oven (about 150 °C)" | The braise and the methods lab need an oven setting |
+| `SAU-2`, Assessment criteria | "or kept beyond 2 days" | "or kept beyond 24 hours" | The §9 raw-egg row and `SAU-2.M4.L2` keep a raw-yolk sauce at most 24 hours; the criteria said 2 days |
 
 ## 6. End of the pilot
 
