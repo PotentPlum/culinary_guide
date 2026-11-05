@@ -6,7 +6,7 @@ second reader's worksheet is open ([`06-safety-review.md`](06-safety-review.md))
 reviewed on 2026-11-05, and its answers are applied (§2, §5, §6.3). All ten S1 lesson files are written, and their
 review answers are applied (§7).
 
-**Courses developed:** ORI-1, SAF-1, WRK-1, EQP-1, KNF-1, TST-1, HEA-1, EGG-1, VEG-1, STA-1, SCI-2, HEA-2, KNF-2, STK-2, SAU-2, POU-2
+**Courses developed:** ORI-1, SAF-1, WRK-1, EQP-1, KNF-1, TST-1, HEA-1, EGG-1, VEG-1, STA-1, SCI-2, HEA-2, KNF-2, STK-2, SAU-2, POU-2, MEA-2
 
 This phase writes the lessons that the course files of Phase 5 outline. For each course it gives one lesson file with:
 - every lesson, written for the learner: why it matters, what is needed, the explanation, the practice sessions step
