@@ -191,7 +191,7 @@ evidence record over the stage, not in a single check.
 | S4 | [`PLT-4`](05-courses/S4/PLT-4.md) | 6 / 6 | 4 / 4 | 16 | 1 | 6 | €60 |
 | S4 | [`RDV-4`](05-courses/S4/RDV-4.md) | 10 / 10 | 5 / 5 | 24 | 2 | 10 | €70 |
 | S4 | [`MNU-4`](05-courses/S4/MNU-4.md) | 14 / 14 | 7 / 7 | 40 | 11 | 14 | €200 |
-| S5 | `IND-5` | 0 / 15 | — | — | — | — | — |
+| S5 | [`IND-5`](05-courses/S5/IND-5.md) | 15 / 15 | 7 / 7 | 24 | 8 | 20 | €400 |
 | S5 | `RDV-5` | 0 / 9 | — | — | — | — | — |
 | S5 | [`REV-5`](05-courses/S5/REV-5.md) | 4 / 4 | 1 / 1 | 0 | 0 | 1 | €100 |
 <!-- END generated:status -->
@@ -206,14 +206,14 @@ row rests on the quiz alone.
 | Competency | S1 | S2 | S3 | S4 | S5 (in progress) | Exercises at L2 · L3 · L4 · L5 |
 |---|---|---|---|---|---|---|
 | `CK-TERM` | 2 (quiz) | 3 | 3 | 4 | 4 | 0 · 2 · 2 · 0 |
-| `CK-METH` | 2 | 3 | 4 | 4 | 5 ✗ | 1 · 2 · 2 · 0 |
+| `CK-METH` | 2 | 3 | 4 | 4 | 5 | 1 · 2 · 2 · 1 |
 | `CK-RCPT` | 3 | 3 | 4 | 4 | 4 | 0 · 2 · 1 · 0 |
-| `CK-CLAS` | – | 2 | 2 | 4 | 4 | 2 · 1 · 3 · 0 |
+| `CK-CLAS` | – | 2 | 2 | 4 | 4 | 2 · 1 · 4 · 0 |
 | `CK-CUIS` | – | 1 | 3 | 4 | 4 | 0 · 17 · 3 · 0 |
 | `CK-BEVR` | – | – | 1 | 3 | 3 | 0 · 2 · 0 · 0 |
 | `IN-SEL` | 2 | 3 | 4 | 4 | 4 | 1 · 2 · 3 · 0 |
 | `IN-STO` | 3 | 3 | 4 | 4 | 4 | 1 · 5 · 3 · 0 |
-| `IN-VEG` | 2 | 3 | 4 | 4 | 5 ✗ | 3 · 3 · 2 · 0 |
+| `IN-VEG` | 2 | 3 | 4 | 4 | 5 | 3 · 3 · 2 · 1 |
 | `IN-STA` | 2 | 3 | 4 | 4 | 4 | 4 · 3 · 3 · 0 |
 | `IN-DAI` | 2 | 3 | 4 | 4 | 4 | 2 · 2 · 2 · 0 |
 | `IN-MEA` | 1 | 3 | 3 | 4 | 4 | 0 · 3 · 2 · 0 |
@@ -222,10 +222,10 @@ row rests on the quiz alone.
 | `IN-BAK` | – | 3 | 3 | 4 | 4 | 0 · 3 · 2 · 0 |
 | `TS-MEP` | 3 | 4 | 4 | 5 | 5 | 1 · 1 · 2 · 1 |
 | `TS-KNF` | 3 | 4 | 4 | 5 | 5 | 4 · 3 · 2 · 1 |
-| `TS-DRY` | 2 | 3 | 4 | 4 | 5 ✗ | 3 · 9 · 3 · 0 |
+| `TS-DRY` | 2 | 3 | 4 | 4 | 5 | 3 · 9 · 3 · 2 |
 | `TS-MOI` | 3 | 4 | 4 | 4 | 4 | 0 · 2 · 4 · 0 |
 | `TS-CMB` | – | 2 | 4 | 4 | 4 | 2 · 0 · 5 · 0 |
-| `TS-FIRE` | – | – | 3 | 3 | 4 ✗ | 1 · 5 · 0 · 0 |
+| `TS-FIRE` | – | – | 3 | 3 | 4 | 1 · 5 · 1 · 0 |
 | `TS-EGG` | 3 | 4 | 4 | 4 | 4 | 1 · 3 · 4 · 0 |
 | `TS-VEG` | 3 | 4 | 4 | 5 | 5 | 0 · 4 · 8 · 1 |
 | `TS-STA` | 3 | 3 | 4 | 4 | 4 | 1 · 4 · 4 · 0 |
@@ -245,12 +245,12 @@ row rests on the quiz alone.
 | `SC-STRC` | 2 (quiz) | 3 | 4 | 4 | 4 | 0 · 2 · 2 · 0 |
 | `SC-EMUL` | 1 | 3 | 3 | 4 | 4 | 0 · 6 · 2 · 0 |
 | `SC-MICR` | 1 | 3 | 3 | 3 | 3 | 0 · 4 · 0 · 0 |
-| `FL-SENS` | 2 | 3 | 4 | 4 | 5 ✗ | 3 · 1 · 1 · 0 |
+| `FL-SENS` | 2 | 3 | 4 | 4 | 5 | 3 · 1 · 1 · 2 |
 | `FL-SEAS` | 2 | 3 | 4 | 5 | 5 | 4 · 2 · 2 · 3 |
 | `FL-TEXT` | 1 | 2 | 3 | 4 | 4 | 4 · 4 · 4 · 0 |
 | `FL-ARCH` | – | 2 | 3 | 4 | 4 | 2 · 12 · 6 · 0 |
-| `FL-CORR` | 1 | 3 | 4 | 4 | 5 ✗ | 0 · 2 · 1 · 0 |
-| `KM-PLAN` | 2 | 3 | 4 | 4 | 5 ✗ | 2 · 2 · 8 · 0 |
+| `FL-CORR` | 1 | 3 | 4 | 4 | 5 | 0 · 2 · 1 · 1 |
+| `KM-PLAN` | 2 | 3 | 4 | 4 | 5 | 2 · 2 · 8 · 2 |
 | `KM-MATH` | 2 | 3 | 4 | 4 | 4 | 1 · 1 · 4 · 0 |
 | `KM-PURC` | 1 | 2 | 4 | 4 | 4 | 3 · 1 · 3 · 0 |
 | `KM-WAST` | 2 | 3 | 4 | 4 | 4 | 2 · 3 · 4 · 0 |
@@ -261,16 +261,16 @@ row rests on the quiz alone.
 | `SA-ALLG` | 2 | 3 | 4 | 4 | 4 | 1 · 2 · 2 · 0 |
 | `SA-HRPR` | – | 1 | 4 | 4 | 4 | 0 · 0 · 6 · 0 |
 | `RD-RATO` | – | 2 | 3 | 4 | 4 | 4 · 5 · 2 · 0 |
-| `RD-ADPT` | 1 | 2 | 3 | 4 | 5 ✗ | 3 · 2 · 1 · 0 |
+| `RD-ADPT` | 1 | 2 | 3 | 4 | 5 | 3 · 2 · 1 · 3 |
 | `RD-TEST` | 1 | 2 | 3 | 4 | 4 | 4 · 2 · 1 · 0 |
 | `RD-WRIT` | 2 | 2 | 3 | 4 | 4 | 1 · 2 · 1 · 0 |
-| `JD-CUES` | 2 | 3 | 4 | 4 | 5 ✗ | 4 · 5 · 5 · 0 |
-| `JD-CHSE` | 1 | 2 | 3 | 4 | 5 ✗ | 2 · 5 · 5 · 0 |
-| `JD-TRBL` | 1 | 3 | 4 | 4 | 5 ✗ | 1 · 3 · 2 · 0 |
+| `JD-CUES` | 2 | 3 | 4 | 4 | 5 | 4 · 5 · 5 · 1 |
+| `JD-CHSE` | 1 | 2 | 3 | 4 | 5 | 2 · 5 · 5 · 3 |
+| `JD-TRBL` | 1 | 3 | 4 | 4 | 5 | 1 · 3 · 2 · 1 |
 | `JD-REFL` | 2 | 3 | 4 | 4 | 5 | 4 · 3 · 4 · 1 |
 | `CR-COMP` | – | 1 | 3 | 4 | 4 | 2 · 7 · 2 · 0 |
 | `CR-MENU` | – | – | 2 | 4 | 4 | 1 · 0 · 2 · 0 |
-| `CR-IMPV` | – | 1 | 3 | 3 | 4 ✗ | 0 · 2 · 0 · 0 |
+| `CR-IMPV` | – | 1 | 3 | 3 | 4 | 0 · 2 · 2 · 0 |
 | `CR-ORIG` | – | – | 1 | 3 | 4 ✗ | 0 · 1 · 0 · 0 |
 <!-- END generated:reachability -->
 
@@ -345,7 +345,7 @@ No course, module, lesson, hour, exercise or `Moves` entry has been added, remov
 | Oven thermometer | 0 | `EQP-1`, `ORI-1`, `BAK-2`, `BRD-2`, `RDV-4` |
 | Oven thermometer for the grate | 0 | `FIR-3` |
 | Paring knife | 0 | `EQP-1`, `KNF-1` |
-| Probe thermometer | 0 | `FIR-3`, `PRO-4`, `REV-5` |
+| Probe thermometer | 0 | `FIR-3`, `PRO-4`, `IND-5`, `REV-5` |
 | Saucepans | 0 | `EQP-1`, `HEA-1`, `VEG-1`, `SCI-2` |
 | Shallow containers | 0 | `SAF-3` |
 | Sheet pan as a tray | 0 | `WRK-1` |
@@ -360,16 +360,16 @@ No course, module, lesson, hour, exercise or `Moves` entry has been added, remov
 | Bench scraper | 1 | `BAK-2`, `BRD-2`, `BRD-3` |
 | Fine sieve | 1 | `EGG-1`, `LEG-2`, `SAU-2`, `SCI-2`, `STK-2`, `SLW-3`, `VEG-3`, `CLS-4`, `MOD-4` |
 | Frying thermometer | 1 | `HEA-2`, `CUI-4` |
-| Heavy lidded casserole (*braadpan*) | 1 | `BRD-2`, `HEA-2`, `LEG-2`, `MEA-2`, `BRD-3`, `CUI-3`, `SLW-3`, `VEG-3`, `CUI-4`, `PRO-4` |
+| Heavy lidded casserole (*braadpan*) | 1 | `BRD-2`, `HEA-2`, `LEG-2`, `MEA-2`, `BRD-3`, `CUI-3`, `SLW-3`, `VEG-3`, `CUI-4`, `PRO-4`, `IND-5` |
 | Loaf tin | 1 | `BAK-2`, `BRD-2`, `BRD-3`, `GRD-3` |
 | Mixer | 1 | `BAK-2`, `PST-4` |
 | Rolling pin | 1 | `BAK-2`, `PST-3` |
 | Tart tin | 1 | `BAK-2`, `PST-3` |
 | Whetstone | 1 | `KNF-2` |
-| Chimney starter | 2 | `FIR-3` |
+| Chimney starter | 2 | `FIR-3`, `IND-5` |
 | Fermentation jars and weights | 2 | `PRS-3` |
-| Heat-resistant gloves | 2 | `FIR-3` |
-| Lidded charcoal grill | 2 | `FIR-3` |
+| Heat-resistant gloves | 2 | `FIR-3`, `IND-5` |
+| Lidded charcoal grill | 2 | `FIR-3`, `IND-5` |
 | Mandoline | 2 | `SAF-3`, `VEG-3`, `MOD-4` |
 | Pressure cooker | 2 | `SAF-3`, `SLW-3` |
 | Scale (0.01 g) | 2 | `PRS-3`, `MOD-4` |
@@ -387,6 +387,7 @@ No course, module, lesson, hour, exercise or `Moves` entry has been added, remov
 | Balloon whisk | — | `SAU-2`, `CLS-4` |
 | Blender | — | `STK-2`, `VEG-3`, `MOD-4` |
 | Boning knife | — | `KNF-2`, `POU-2`, `BUT-3` |
+| Calibration cups and the 1 g scale | — | `IND-5` |
 | Calibration kit: coded cups | — | `TST-1`, `FLV-3`, `VEG-3` |
 | Calibration kit: key sheets | — | `TST-1` |
 | Camera | — | `ORI-1`, `PLT-4` |
@@ -406,7 +407,7 @@ No course, module, lesson, hour, exercise or `Moves` entry has been added, remov
 | Drinks thermometer | — | `MNU-4` |
 | Equipment for each gap | — | `REV-5` |
 | Filleting knife | — | `FSH-2`, `BUT-3`, `PRO-4` |
-| Fire blanket | — | `SAF-1`, `HEA-2`, `FIR-3`, `MNU-4` |
+| Fire blanket | — | `SAF-1`, `HEA-2`, `FIR-3`, `MNU-4`, `IND-5` |
 | First-aid kit | — | `SAF-1` |
 | Fish knife and serving spoon | — | `PRO-4` |
 | Fish scaler | — | `FSH-2`, `BUT-3` |
@@ -453,7 +454,7 @@ No course, module, lesson, hour, exercise or `Moves` entry has been added, remov
 | Peeler | — | `KNF-1` |
 | pH strips | — | `SCI-2`, `PRS-3` |
 | Phone stand | — | `KNF-1`, `FSH-2`, `MEA-2`, `POU-2`, `SAU-2`, `BUT-3`, `NUT-3`, `CLS-4`, `PLT-4` |
-| Phone stand and photo corner | — | `REV-5` |
+| Phone stand and photo corner | — | `IND-5`, `REV-5` |
 | Photo background | — | `PLT-4` |
 | Pie dish | — | `PST-3` |
 | Planning templates | — | `KMG-3`, `MNU-4` |
@@ -474,6 +475,7 @@ No course, module, lesson, hour, exercise or `Moves` entry has been added, remov
 | Salad spinner | — | `VEG-1`, `GRD-3` |
 | Seasonal calendar | — | `VEG-1`, `VEG-3` |
 | Second cutting board for raw protein | — | `SAF-1`, `FSH-2`, `KNF-2`, `MEA-2`, `POU-2`, `BUT-3`, `NUT-3`, `PRO-4` |
+| Separate boards and tools for allergens | — | `IND-5` |
 | Shallow containers with lids | — | `SAF-1`, `STA-1`, `MEA-2`, `POU-2`, `KMG-3`, `MNU-4`, `PRO-4` |
 | Shallow freezer tray | — | `MOD-4`, `PST-4` |
 | Shellfish tools | — | `PRO-4` |
@@ -496,6 +498,7 @@ No course, module, lesson, hour, exercise or `Moves` entry has been added, remov
 | Tasting form | — | `TST-1`, `MNU-4`, `RDV-4` |
 | Tawa* or *comal | — | `CUI-4` |
 | Terrine mould | — | `CUI-4` |
+| The full home kitchen | — | `IND-5` |
 | The record and journal | — | `REV-5` |
 | Tortilla press | — | `CUI-3`, `CUI-4` |
 | Tuile stencil | — | `MOD-4` |
