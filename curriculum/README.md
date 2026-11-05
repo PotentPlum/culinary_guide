@@ -23,8 +23,8 @@ silently change an agreed structure: changes are explained and logged in the pha
 | 2 | Complete curriculum outline (courses → modules → lessons, objectives, prerequisites, hours) | [`02-curriculum-outline.md`](02-curriculum-outline.md) and [`02-outline/`](02-outline/) | ✅ Reviewed; revised in Phase 3 |
 | 3 | Curriculum validation and optimization (benchmarks, realistic hours, barbecue added) | [`03-validation.md`](03-validation.md) | ✅ Reviewed; answers applied |
 | 4 | Full competency framework and assessment design (milestones, capstone rubrics) | [`04-competency-framework.md`](04-competency-framework.md) and [`04-assessment.md`](04-assessment.md) | ✅ Reviewed; answers applied |
-| 5 | Detailed course development (stage by stage) | [`05-course-development.md`](05-course-development.md) and [`05-courses/`](05-courses/) | 🔄 S5 ready for review (all courses developed) |
-| 6 | Detailed lesson development | — | Pending |
+| 5 | Detailed course development (stage by stage) | [`05-course-development.md`](05-course-development.md) and [`05-courses/`](05-courses/) | ✅ Reviewed; answers applied (S1–S5) |
+| 6 | Detailed lesson development (safety review, then course by course) | `06-lesson-development.md`, `06-safety-review.md` and `06-lessons/` | 🔄 In progress (safety review and pilot) |
 | 7 | App content architecture (entities, IDs, relationships, progress tracking) | — | Pending |
 
 Sources are numbered `[S#]` across all phases and listed in [`sources.md`](sources.md).

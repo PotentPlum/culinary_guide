@@ -24,7 +24,7 @@ The subject is the learner's choice, so this file follows the pattern of `CUI-4`
 **Rules for every dish.**
 - **Original:** not a course exercise or a published recipe with small changes. The dish starts from an idea written in
   one sentence (`CR-COMP`), and the test log shows how it got from there to the final version.
-- **Safety:** assessment §9 applies to every version: proteins to their figures, raw egg pasteurised for every guest,
+- **Safety:** assessment §9 applies to every version: proteins to their figures, raw egg and warm egg sauces pasteurised for every guest,
   preserves by a tested method only, and test portions kept as leftovers (at most 2 days).
 - **Ingredients:** Dutch seasonal vegetables (velt.nu harvest windows), MSC or seasonal North Sea fish, and Dutch meat
   and dairy; no imported year-round produce. A dish developed in one season is written with its seasonal window.

@@ -509,9 +509,9 @@ result of `CLS-4.M2.X2`.
     finished with chopped tarragon and chervil;
   - *choron*: *béarnaise* with a little reduced tomato;
   - *maltaise*: hollandaise with the juice and grated zest of an orange (a pantry citrus; a blood orange in winter).
-- **Safety:** the yolks are cooked in the *sabayon*; a warm emulsion is served at once or kept warm for a short time at
-  57 °C or above (assessment §9), which it tolerates only briefly, so it is made close to service. For risk groups,
-  pasteurised egg yolk (assessment §9).
+- **Safety:** the yolks are only lightly cooked in the *sabayon*, so they are pasteurised egg yolk, for every guest
+  (assessment §9, the raw-egg row). A warm emulsion is served at once or kept warm for a short time at 57 °C or above
+  (assessment §9), which it tolerates only briefly, so it is made close to service.
 - **The classical tomato sauce:** *mirepoix* and bacon or a little pork sweated, tomato (Dutch tomatoes in late summer,
   tinned out of season), a little stock, simmered and passed; a *roux* in the old method, reduction in the modern one.
 - **[J] Precise final seasoning:** tasted at serving temperature, salt and acid adjusted in small steps, compared with
@@ -627,7 +627,7 @@ seasonal vegetables.
 | CLS-4.M3.Q5 | multiple choice | CLS-4.M3.L2 | — | Why is the mustard in a sauce *Robert* added off the heat? A) for colour B) boiled mustard turns bitter and loses its bite C) to thicken it D) tradition only | B | Finish off the heat. |
 | CLS-4.M3.Q6 | scenario | CLS-4.M3.L3 | — | You will hold an *allemande* for a few minutes before plating. How do you finish it, and what must you avoid? | Temper the yolk and cream liaison with hot sauce, stir it in and heat until it thickens, below the boil; keep it warm, not boiling. | A boiled liaison curdles. |
 | CLS-4.M3.Q7 | multiple choice | CLS-4.M3.L4 | — | What turns a *béarnaise* into a *choron*? A) orange B) reduced tomato C) mustard D) cream | B | *Maltaise* is orange. |
-| CLS-4.M3.Q8 | scenario | CLS-4.M3.L4 | yes | A guest is pregnant and you planned *béarnaise*. What do you do? | Make it with pasteurised egg yolk (or choose another sauce), serve it at once and keep it at 57 °C or above for only a short time. | Risk-group row and hot holding, assessment §9. |
+| CLS-4.M3.Q8 | scenario | CLS-4.M3.L4 | yes | You plan *béarnaise* for a dinner, and one guest is pregnant. Which yolks do you use, and how is it served? | Pasteurised egg yolk, for every guest and not only the pregnant one; served at once, or kept at 57 °C or above for only a short time. | Raw-egg row (warm egg sauces) and hot holding, assessment §9. |
 
 **Evidence check:**
 

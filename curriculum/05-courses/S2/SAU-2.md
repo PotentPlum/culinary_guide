@@ -814,6 +814,8 @@ They become a meal with boiled potatoes, eggs or seasonal vegetables.
   - held hot at 57 °C or above (assessment §9), below the point where the yolk scrambles.
 
   It is not cooled and reheated, and what is left after the meal is thrown away.
+- **Safety:** the yolks in a *sabayon* or *hollandaise* are only lightly cooked when served, so they are pasteurised
+  egg yolk, for every guest (assessment §9, the raw-egg row).
 - **Adapting:** the method scales from 1 to 6 yolks; a larger batch takes longer, and it is timed against the rest of
   the plate.
 
@@ -893,7 +895,7 @@ They become a meal with boiled potatoes, eggs or seasonal vegetables.
 The plate is completed with toast or an English muffin, and ham or sautéed spinach or chard in season.
 
 **Inputs:** for 4:
-- 6–7 eggs, of which 2–3 yolks for the sauce;
+- 4 eggs to poach, and 2–3 pasteurised egg yolks for the sauce (assessment §9);
 - 200 g of butter;
 - vinegar, a shallot, a lemon;
 - bread;
@@ -913,7 +915,7 @@ The plate is completed with toast or an English muffin, and ham or sautéed spin
   splitting. The spoon photo is scored as in `SAU-2.M2.X1`; the *Not yet* image shows a grainy or split sauce.
 - **`TS-EGG` level 4, the yolk-cooking and poaching part:**
   - yolks cooked to a stable *sabayon* for a *hollandaise*, with the temperature log;
-  - poached eggs for four with compact whites and runny yolks;
+  - poached eggs for four with compact whites and runny yolks (cooked firm for a guest in a risk group, §9);
   - both adapted for quantity and timing, as written up.
 
   The stirred and baked custards, and the third occasion of the row, are in `BAK-2.M5`.
@@ -1247,7 +1249,7 @@ The two sessions are on different days. The repair test is re-tested at `MS-S2`.
 **Completing the course.** Every module check is passed: the knowledge checks at 80 %, with every safety item correct in
 `SAU-2.M4` and `SAU-2.M5`, and the evidence rows met. `TS-SAU` level 3 needs four of the five elements from frameworks
 across `SAU-2.M2` to `SAU-2.M6`. A raw-yolk sauce made with unpasteurised yolk, or kept beyond 2 days, is a *Not yet* for
-the module, however good the sauce.
+the module, however good the sauce, and so is a warm egg sauce made with unpasteurised yolk.
 
 **What it feeds.**
 - **`POU-2`, `MEA-2` and `FSH-2`:** pan sauces, *velouté* and *beurre blanc* finish their proteins.

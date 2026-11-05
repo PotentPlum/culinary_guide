@@ -1,8 +1,8 @@
 # Phase 5 — Course development
 
-Status: **S5 ready for review** (2026-11-05). S1 to S4 are reviewed and their answers applied (§7.3, §8.3, §9.3 and
-§10.3). S5 is developed in the same format, so every course now has a course file. The end of the S5 batch, with its
-decisions, gaps and questions and what Phase 6 needs first, is in §11.
+Status: **Phase 5 complete** (2026-11-05). S1 to S5 are reviewed and their answers applied (§7.3, §8.3, §9.3, §10.3
+and §11.3), so every course has a reviewed course file. What Phase 6 needs first is in §11.4; Phase 6 itself is in
+`06-lesson-development.md`.
 
 **Stages developed:** S1, S2, S3, S4, S5
 
@@ -306,6 +306,7 @@ row rests on the quiz alone.
 | [Assessment §9](04-assessment.md#9-safety-figures-used-in-assessment) (S4) | No figures for egg-thickened desserts, raw-egg desserts, game, game birds, offal, wild boar, live crustaceans or alcohol; no rule for tier 3 equipment | Rows for each, from sources checked on 2026-11-04 ([S25], [S38]–[S43]); a rule that the siphon and blowtorch follow the maker's instructions | S3 recommendations 2 and 3: `PST-4`, `MOD-4`, `PRO-4` and `MNU-4` need them, and no figure is written from memory. To be confirmed at the S4 review. |
 | `PRO-4.M5` objective, `PRO-4.M5.L1` objective | [S] handle and cook live crustaceans humanely; [S] humane dispatch | [S] handle and cook crustaceans humanely; [K] humane dispatch (by a trained fishmonger) and why it is not done at home | The checked welfare sources [S40][S41] say manual dispatch may fail in untrained hands and that humane slaughter cannot be done at home. The skill becomes buying, handling and cooking; dispatch is knowledge. To be confirmed at the S4 review. |
 | [Assessment §9](04-assessment.md#9-safety-figures-used-in-assessment) (S4 review) | Raw-yolk sauces (`SAU-2`) and raw-egg mousses (`PST-3`) made with pasteurised egg only for risk groups | Pasteurised egg for every guest wherever egg is raw when served, and in desserts where it is lightly cooked; soft and lightly cooked egg dishes (soft eggs, *hollandaise* and its family, the 63 °C egg) keep the risk-group row | S4 review answer 3 ([S38]). `SAU-2.M4.L2`, `SAU-2.M4.Q7`, the `SAU-2` completion note, `PST-3.M4.L3`, `PST-3.M4.Q7` and the safety lines of `PST-3`, `GRD-3` and `SAF-3` follow the row. |
+| [Assessment §9](04-assessment.md#9-safety-figures-used-in-assessment) (S5 review) | Warm egg sauces (*hollandaise* and its family, *sabayon*) in the risk-group row | In the raw-egg row: pasteurised egg yolk for every guest; soft whole eggs (soft-boiled, poached, the 63 °C egg) keep the risk-group row | S5 review answer 2 ([S38]: eggs "raw or undercooked when served"). `SAU-2.M5.L1`, `SAU-2.M5.X1`, the `SAU-2` completion note, `CLS-4.M3.L4`, `CLS-4.M3.Q8` and the safety lines of `IND-5` and `RDV-5` follow the row. |
 | `REV-5.M1.X1` description | the gap-practice plan and the two blocks | the gap-practice plan and the three blocks | Revision R10 ([Phase 3](03-validation.md)) added the third block (`REV-5.M1.L4`) but left the exercise line unchanged. |
 
 No course, module, lesson, hour, exercise or `Moves` entry has been added, removed or moved; only the objective wording above changed.
@@ -1341,13 +1342,16 @@ household and guest meals.
 - The household can choose baskets, introduce faults and taste blind; a panel of 4–6 can be found for the tasting day.
 - A dish tasted in a restaurant can be replaced by one cooked by someone else (`IND-5.M4.L2`).
 
-### 11.3 Gaps and open questions
+### 11.3 Gaps and open questions (review answers, 2026-11-05)
 
 1. **`TS-FIRE` 4** (decision 5).
    - Option 1: keep it as written, with the remaining cooks logged as household cooks in S5 and taken up by `REV-5` if
      missing. This is my recommendation: the cooks are long but mostly unattended, and the success row stays unchanged.
    - Option 2: add a lesson to the outline (for example `IND-5.M5.L4`, about 6 hours with three sessions) for the
      remaining cooks.
+
+   **Answer:** option 1. The outline is unchanged. The `REV-5` gap catalogue now names a missing household cook as a
+   gap of the "old or missing evidence" type.
 2. **Warm egg sauces** (new, from the S4 review answer 3). The egg rule now covers egg that is raw when served and
    desserts with lightly cooked egg. The warm emulsions (*hollandaise* and its family, *sabayon*) and soft whole eggs
    keep the risk-group row.
@@ -1355,11 +1359,22 @@ household and guest meals.
      recipes where eggs are "raw or undercooked when served" [S38]. Soft whole eggs (soft-boiled, poached, the 63 °C
      egg) keep the risk-group row until Phase 6 has checked the Voedingscentrum. This is my recommendation.
    - Option 2: keep it as it is.
+
+   **Answer:** option 1. The raw-egg row of §9 now covers the warm egg sauces, for every guest; the courses that teach
+   them follow it (§5 change table).
 3. **The budget.** About €850 for S5, against €1,185 for S4. Is it acceptable?
+
+   **Answer:** accepted, as for S2 to S4.
 4. **The second reader** now covers about 278 safety items across S1–S5. It is still a condition for starting
    Phase 6.
+
+   **Answer:** it stays a condition. Phase 6 starts in parallel: the worksheet for the reader is
+   `06-safety-review.md`, and lesson files stay drafts until the reader's log is in and every
+   flagged item is fixed (Phase 6, `06-lesson-development.md`).
 5. **Sources.** S5 added none. The Phase 6 list stands: the S3 and S4 lists, and the Voedingscentrum page on raw egg
    (the page tried was missing on 2026-11-05).
+
+   **Answer:** Phase 6 re-checks them first (Phase 6 §2).
 
 ### 11.4 Phase 5 complete, and what Phase 6 needs first
 

@@ -71,6 +71,8 @@ requirement, then the oldest evidence, then the rest.
   - *Lesson revisited:* `KNF-2`.
   - *Practice:* timed cuts against the grid, varying the vegetable.
   - *Closed when:* the row's tolerances are met again, with the new date in the record.
+  - The same type covers **missing evidence**: for example a low-and-slow cook or a live-fire meal of `TS-FIRE` 4 not
+    yet logged as a household cook in S5 (`IND-5.M5.L2`). It is planned as a block and logged with its date.
 - **A self-assessment that disagrees** (any competency).
   - *Record:* two or more entries where the learner's band and the outside band differ by two bands (assessment §3.4).
   - *Lesson revisited:* the lesson of the competency, and `ORI-1` on scoring.

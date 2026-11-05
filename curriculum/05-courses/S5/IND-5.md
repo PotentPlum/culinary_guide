@@ -28,8 +28,8 @@ The course is a series of briefs:
 
 **Rules for every brief.**
 - **Safety first:** assessment §9 applies to every dish. A brief, a basket or a historical text never overrides it:
-  poultry to 74 °C, minced meat to its row, leftovers within 2 days and reheated once, raw egg pasteurised for every
-  guest. Doneness judged by the senses is checked with the probe before a §9 food is served.
+  poultry to 74 °C, minced meat to its row, leftovers within 2 days and reheated once, raw egg and warm egg sauces
+  pasteurised for every guest. Doneness judged by the senses is checked with the probe before a §9 food is served.
 - **Ingredients:** Dutch seasonal vegetables (velt.nu harvest windows) and MSC or seasonal North Sea fish. A basket or
   an "unfamiliar ingredient" is bought, not foraged.
 - **The pantry:** salt, oils, vinegars, flour, sugar, dried spices and herbs, stocks from the freezer, dried pulses and
@@ -879,7 +879,7 @@ allergen information.
 - **The rescues:**
   - **over-salted:** dilute with unsalted liquid or more of the main ingredient, add fat or starch to carry it; acid and
     sugar do not remove salt;
-  - **split emulsion:** a fresh yolk (pasteurised for an uncooked sauce, assessment §9) or a spoon of water, and the
+  - **split emulsion:** a fresh yolk (pasteurised, for a mayonnaise or a warm egg sauce, assessment §9) or a spoon of water, and the
     broken sauce whisked in slowly;
   - **overcooked protein:** sliced thin and sauced, or turned into another dish, never served as the planned doneness;
   - **burnt base:** moved at once to a clean pan without scraping, and tasted.
