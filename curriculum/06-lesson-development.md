@@ -1,9 +1,9 @@
 # Phase 6 — Lesson development
 
-Status: **S1 in progress** (2026-11-05). Phase 5 is complete ([its overview](05-course-development.md)). The second
-reader's worksheet is open ([`06-safety-review.md`](06-safety-review.md)). This phase runs in parallel with it (S5
-review answer 4): lesson files are drafts until the reader's log is in (§3). The pilot (`ORI-1` and `SAF-1`, §6) was
-reviewed on 2026-11-05, and its answers are applied (§2, §5, §6.3).
+Status: **S1 ready for review** (2026-11-05, §7). Phase 5 is complete ([its overview](05-course-development.md)). The
+second reader's worksheet is open ([`06-safety-review.md`](06-safety-review.md)). This phase runs in parallel with it
+(S5 review answer 4): lesson files are drafts until the reader's log is in (§3). The pilot (`ORI-1` and `SAF-1`, §6) was
+reviewed on 2026-11-05, and its answers are applied (§2, §5, §6.3). All ten S1 lesson files are written (§7).
 
 **Courses developed:** ORI-1, SAF-1, WRK-1, EQP-1, KNF-1, TST-1, HEA-1, EGG-1, VEG-1, STA-1
 
@@ -215,3 +215,75 @@ Changes to an agreed structure are logged here.
 After this review I apply the answers, then write the rest of S1 in outline order (`WRK-1`, `EQP-1`, `KNF-1`, `TST-1`,
 `HEA-1`, `EGG-1`, `VEG-1`, `STA-1`), one commit per course, and stop for review at the end of S1.
 
+## 7. End of S1
+
+### 7.1 What was delivered
+
+All ten S1 courses have a lesson file, every one a draft until the second reader's log is in (§3). Words are counted
+without the generated blocks.
+
+| Course | Lessons | Exercises | Words | Words per lesson (range, average) | Words per exercise (range, average) |
+|---|---|---|---|---|---|
+| [`ORI-1`](06-lessons/S1/ORI-1.md) | 7 | 5 | about 5,000 | 410–690, about 520 | 140–300, about 220 |
+| [`SAF-1`](06-lessons/S1/SAF-1.md) | 10 | 5 | about 7,100 | 420–680, about 510 | 210–540, about 320 |
+| [`WRK-1`](06-lessons/S1/WRK-1.md) | 11 | 6 | about 8,100 | 470–580, about 510 | 280–530, about 350 |
+| [`EQP-1`](06-lessons/S1/EQP-1.md) | 9 | 3 | about 6,000 | 460–570, about 520 | 290–350, about 320 |
+| [`KNF-1`](06-lessons/S1/KNF-1.md) | 15 | 7 | about 9,200 | 370–570, about 460 | 200–290, about 250 |
+| [`TST-1`](06-lessons/S1/TST-1.md) | 13 | 6 | about 9,100 | 460–600, about 500 | 280–440, about 340 |
+| [`HEA-1`](06-lessons/S1/HEA-1.md) | 17 | 8 | about 11,700 | 400–600, about 520 | 240–350, about 300 |
+| [`EGG-1`](06-lessons/S1/EGG-1.md) | 11 | 6 | about 8,200 | 470–680, about 520 | 270–410, about 320 |
+| [`VEG-1`](06-lessons/S1/VEG-1.md) | 15 | 7 | about 9,800 | 420–580, about 480 | 240–340, about 290 |
+| [`STA-1`](06-lessons/S1/STA-1.md) | 11 | 5 | about 7,400 | 430–530, about 480 | 270–430, about 340 |
+| **S1** | **119** | **58** | **about 81,600** | about 500 | about 310 |
+
+At this rate the remaining stages come to roughly 250,000 words more, less where frameworks and briefs replace recipes
+(§6.3, answer 2).
+
+### 7.2 Decisions
+
+1. **The format and the length are kept** (§6.3, answers 1 and 2). Every file passes the validator's checks of headings,
+   fields, practice counts, support levels and temperatures.
+2. **Figures in lessons come only from §9 or the course file.** Where a lesson needed a figure the course file lacked,
+   the course file was edited and the edit logged (§5: `EQP-1.M3.L3`, `EGG-1.M4.L1`). Where the setting is the learner's
+   own, the lesson points to it instead of a number: roasting and baking use "your oven table's setting"
+   (`EQP-1.M2.X1`), throughout `VEG-1`.
+3. **The temperature check reads every number of a list or range** (§5), with a test.
+4. **Quantities beyond the course file's Inputs** are chosen in the lesson when a recipe needs them (ratios, butter,
+   wine, a sixth litre of stock), and listed in §7.3 so the review can move any of them into the course file.
+5. **Routines are put before the first session that needs them.** `STA-1` cooks rice from module 1, but its cooling
+   routine is taught in module 4, so the routine is also set out in its Before you start. `TST-1` (tasting rules),
+   `HEA-1` (the cue log) and `EGG-1` (the risk-group paragraph) do the same.
+
+### 7.3 Questions for the review
+
+1. **The S1 lessons.** Are they right for a home learner: the level of detail, the recipes, the Dutch seasonal choices?
+   I recommend reviewing two or three files closely (`HEA-1`, `EGG-1` and `STA-1` carry the most safety content) and
+   the rest by sampling.
+2. **Gaps found in the course files.** None changes a structure; each is a choice made in the lesson. I recommend
+   moving the first four into their course files, with logged edits, and leaving the rest as written:
+   - **`STA-1.M4.X1` lists a vinaigrette, but no S1 course teaches one** (it comes in S2). The lesson gives a 3 : 1
+     starting point in the framework. Add it to the course file, or link `TST-1.M3`.
+   - **`TST-1.M2.X2`** says the salt absorbed is "estimated by weighing the salt and the water". The lesson uses half of
+     drained weight × water strength (about 1 g for 250 g); the course file could state the method.
+   - **`TST-1.M2.L2`**: the "just right" walk needs a sixth litre of stock beyond the Inputs of `TST-1.M2.X1`.
+   - **`EGG-1.M4.L1`**: the baked custard is probed to 71 °C by the egg-thickened desserts row of §9; the course file
+     names that row only for the crème anglaise.
+   - **Ratios and quantities** the course files leave open: the glazing ratio (`VEG-1.M4.L1`), the rice ratios for
+     jasmine and brown rice and the quinoa ratio (`STA-1.M2.L1`, `STA-1.M4.L2`), the risotto quantities
+     (`STA-1.M2.X1`).
+   - **Readings of ambiguous course text:** "250 g spread against 250 g piled" (`HEA-1.M2.X1`, read as two batches of
+     125 g); "a roast or a thick piece of meat" (`HEA-1.M1.L3`, a pork tenderloin); the four bean batches of
+     `VEG-1.M3.X1`, run two at a time.
+   - **Overlaps kept as written:** `TST-1.M4.L2` and `TST-1.M4.X1` are the same session; `EGG-1.M2.L2` asks for three
+     jammy runs and `EGG-1.M2.X1` for two.
+   - **Held poached eggs** (`EGG-1.M3`): §9 has no row for soft eggs held in ice water. The lesson says "used the same
+     morning; in the fridge if well ahead", without a figure.
+3. **The second reader** (§6.3, answer 4). The worksheet is still at 0 of 278 items, so all ten files stay drafts. Who
+   reads it, and when? I recommend starting the reading now with the 48 S1 items, so S1 can be finalised while S2 is
+   written.
+4. **S2 next.** I recommend writing S2 in outline order (`SCI-2`, `HEA-2`, `KNF-2`, `STK-2`, `SAU-2`, `POU-2`, `MEA-2`,
+   `FSH-2`, `LEG-2`, `BAK-2`, `BRD-2`), one commit per course, and stopping for review at the end of S2, as for S1.
+
+### 7.4 Next
+
+After this review I apply the answers, move the agreed gaps into the course files with logged edits, then write S2.
