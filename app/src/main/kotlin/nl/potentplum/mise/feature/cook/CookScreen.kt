@@ -37,6 +37,7 @@ import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.Checkbox
 import androidx.compose.material3.ExperimentalMaterial3Api
+import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.LinearProgressIndicator
@@ -78,9 +79,11 @@ import nl.potentplum.mise.content.model.Technique
 import nl.potentplum.mise.core.designsystem.MiseTheme
 import nl.potentplum.mise.core.designsystem.component.EmptyState
 import nl.potentplum.mise.core.designsystem.component.Eyebrow
+import nl.potentplum.mise.core.designsystem.component.LoadingState
 import nl.potentplum.mise.core.designsystem.component.LocalMiseSnackbar
 import nl.potentplum.mise.core.designsystem.component.TimerChip
 import nl.potentplum.mise.core.designsystem.component.TimerChipState
+import nl.potentplum.mise.core.designsystem.component.avoidedBySnackbar
 import nl.potentplum.mise.core.designsystem.component.durationLabel
 import nl.potentplum.mise.feature.recipes.IngredientGroupLines
 
@@ -135,9 +138,11 @@ fun CookScreen(
                     IconButton(onClick = exit) { Icon(Icons.Outlined.Close, contentDescription = stringResource(R.string.cook_close)) }
                 },
                 actions = {
+                    // Labelled: an unexplained list icon is easy to miss with flour on your hands.
                     if (!landscape && state.ingredients.isNotEmpty()) {
-                        IconButton(onClick = { showIngredients = true }) {
-                            Icon(Icons.AutoMirrored.Outlined.ListAlt, contentDescription = stringResource(R.string.cook_ingredients))
+                        TextButton(onClick = { showIngredients = true }) {
+                            Icon(Icons.AutoMirrored.Outlined.ListAlt, contentDescription = null)
+                            Text(stringResource(R.string.cook_ingredients), Modifier.padding(start = 6.dp), maxLines = 1)
                         }
                     }
                 },
@@ -151,7 +156,7 @@ fun CookScreen(
         ) {
             when {
                 state.loading -> {
-                    Unit
+                    LoadingState()
                 }
 
                 state.notFound -> {
@@ -335,11 +340,26 @@ private fun StepPane(
                         }
                     }
                 }
+                // What comes next, so you can get it ready while this step runs.
+                state.steps.getOrNull(page + 1)?.let { next ->
+                    HorizontalDivider(color = MaterialTheme.colorScheme.outlineVariant)
+                    Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
+                        Eyebrow(stringResource(R.string.cook_next_preview))
+                        Text(
+                            next.text,
+                            style = MaterialTheme.typography.bodyLarge,
+                            color = MiseTheme.colors.inkSoft,
+                            maxLines = 3,
+                            overflow = TextOverflow.Ellipsis,
+                        )
+                    }
+                }
             }
         }
         Row(
             Modifier
                 .fillMaxWidth()
+                .avoidedBySnackbar()
                 .navigationBarsPadding()
                 .padding(16.dp),
             horizontalArrangement = Arrangement.spacedBy(12.dp),

@@ -1,6 +1,7 @@
 package nl.potentplum.mise.feature.curriculum
 
 import androidx.compose.foundation.BorderStroke
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -12,7 +13,11 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.outlined.ExpandLess
+import androidx.compose.material.icons.outlined.ExpandMore
 import androidx.compose.material3.Button
+import androidx.compose.material3.Icon
 import androidx.compose.material3.LinearProgressIndicator
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
@@ -20,12 +25,16 @@ import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.saveable.rememberSaveable
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.semantics.heading
 import androidx.compose.ui.semantics.semantics
+import androidx.compose.ui.semantics.stateDescription
 import androidx.compose.ui.unit.dp
 import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
@@ -35,6 +44,7 @@ import nl.potentplum.mise.core.designsystem.MiseTheme
 import nl.potentplum.mise.core.designsystem.component.EmptyState
 import nl.potentplum.mise.core.designsystem.component.Eyebrow
 import nl.potentplum.mise.core.designsystem.component.HeroHeader
+import nl.potentplum.mise.core.designsystem.component.LoadingState
 import nl.potentplum.mise.core.designsystem.component.MiseTopAppBar
 import nl.potentplum.mise.core.designsystem.component.OverflowItem
 import nl.potentplum.mise.core.designsystem.styledStringResource
@@ -57,7 +67,7 @@ internal fun <T> CurriculumScaffold(
                 .padding(padding),
         ) {
             when (state) {
-                Loadable.Loading -> Unit
+                Loadable.Loading -> LoadingState()
                 Loadable.NotFound -> EmptyState(title = stringResource(R.string.error_not_found))
                 is Loadable.Loaded -> content(state.value)
             }
@@ -65,7 +75,7 @@ internal fun <T> CurriculumScaffold(
     }
 }
 
-/** Opleiding (spec §6.17): the five stages with their courses, the overall progress and the next open step. */
+/** Opleiding (spec §6.17): the overall progress, the next open step, then the five stages; only the current one starts open. */
 @Composable
 fun CurriculumScreen(
     onBack: () -> Unit,
@@ -78,6 +88,13 @@ fun CurriculumScreen(
 ) {
     val state by viewModel.state.collectAsStateWithLifecycle()
     CurriculumScaffold(stringResource(R.string.curriculum_title), state, onBack, onOverflowItem) { home ->
+        // Only the stage the learner is in starts open: five stages of course cards is a long scroll.
+        val current =
+            home.next
+                ?.course
+                ?.id
+                ?.let { id -> home.stages.firstOrNull { s -> s.courses.any { it.course.id == id } } }
+        var openStages by rememberSaveable { mutableStateOf(setOfNotNull(current?.stage?.id)) }
         LazyColumn(contentPadding = PaddingValues(16.dp), verticalArrangement = Arrangement.spacedBy(16.dp)) {
             item {
                 Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
@@ -103,24 +120,48 @@ fun CurriculumScreen(
                 }
             }
             home.stages.forEach { section ->
+                val open = section.stage.id in openStages
                 item(key = section.stage.id) {
-                    Column(Modifier.padding(top = 8.dp), verticalArrangement = Arrangement.spacedBy(4.dp)) {
-                        Eyebrow(stringResource(R.string.curriculum_stage_eyebrow, section.number))
-                        Text(
-                            section.stage.titleNl,
-                            style = MaterialTheme.typography.headlineSmall,
-                            modifier = Modifier.semantics { heading() },
-                        )
-                        Text(
-                            stringResource(R.string.curriculum_steps, section.steps.done, section.steps.total),
-                            style = MaterialTheme.typography.bodySmall,
-                            color = MiseTheme.colors.inkSoft,
-                        )
+                    StageHeader(section, open) {
+                        openStages = if (open) openStages - section.stage.id else openStages + section.stage.id
                     }
                 }
-                items(section.courses, key = { it.course.id }) { row -> CourseCard(row) { onCourse(row.course.id) } }
+                if (open) items(section.courses, key = { it.course.id }) { row -> CourseCard(row) { onCourse(row.course.id) } }
             }
         }
+    }
+}
+
+/** A stage's name and progress; tapping it shows or hides its courses. */
+@Composable
+private fun StageHeader(
+    section: StageSection,
+    open: Boolean,
+    onToggle: () -> Unit,
+) {
+    val toggleLabel = stringResource(if (open) R.string.curriculum_stage_hide else R.string.curriculum_stage_show)
+    Row(
+        Modifier
+            .fillMaxWidth()
+            .clickable(onClickLabel = toggleLabel, onClick = onToggle)
+            .semantics { stateDescription = toggleLabel }
+            .padding(top = 8.dp, bottom = 4.dp),
+        verticalAlignment = Alignment.CenterVertically,
+    ) {
+        Column(Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(4.dp)) {
+            Eyebrow(stringResource(R.string.curriculum_stage_eyebrow, section.number))
+            Text(
+                section.stage.titleNl,
+                style = MaterialTheme.typography.headlineSmall,
+                modifier = Modifier.semantics { heading() },
+            )
+            Text(
+                stringResource(R.string.curriculum_steps, section.steps.done, section.steps.total),
+                style = MaterialTheme.typography.bodySmall,
+                color = MiseTheme.colors.inkSoft,
+            )
+        }
+        Icon(if (open) Icons.Outlined.ExpandLess else Icons.Outlined.ExpandMore, contentDescription = null)
     }
 }
 

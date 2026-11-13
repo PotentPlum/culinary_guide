@@ -31,6 +31,7 @@ import nl.potentplum.mise.core.designsystem.MiseTheme
 import nl.potentplum.mise.core.designsystem.component.DifficultyBadge
 import nl.potentplum.mise.core.designsystem.component.EmptyState
 import nl.potentplum.mise.core.designsystem.component.Eyebrow
+import nl.potentplum.mise.core.designsystem.component.LoadingState
 import nl.potentplum.mise.core.designsystem.component.MiseTopAppBar
 import nl.potentplum.mise.core.designsystem.component.OverflowItem
 import nl.potentplum.mise.core.designsystem.component.VegToken
@@ -56,7 +57,7 @@ fun TechniqueScreen(
                 .padding(padding),
         ) {
             when (val current = state) {
-                TechniqueUiState.Loading -> Unit
+                TechniqueUiState.Loading -> LoadingState()
                 TechniqueUiState.NotFound -> EmptyState(title = stringResource(R.string.error_not_found))
                 is TechniqueUiState.Loaded -> TechniqueDetail(current, onTechnique, onVegetable, onQuest)
             }

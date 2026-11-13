@@ -207,7 +207,8 @@ elevation. Touch targets are at least 48 dp.
 `FilterPills`, `FacetChips`, `RecipeCard`, `SuggestionCard` (recipe + reason line + total time + "Niet vandaag" / "Dit kook ik vanavond"),
 `TonightCard`, `TechniqueCard`, `DifficultyBadge`, `Eyebrow` (mono label), `HeroHeader` (styled headline), `DisciplineBars`,
 `SeasonTally` (count of vegetables cooked at peak + "nog te proberen" tokens), `ScoreScale` (5 labelled steps, §6.12),
-`TimerChip` (idle / running with remaining time / done), `RecipeActionBar` (sticky bottom actions), `EmptyState`, `ErrorState`.
+`TimerChip` (idle / running with remaining time / done), `RecipeActionBar` (sticky bottom actions), `EmptyState`, `ErrorState`,
+`LoadingState` (a centred spinner, shown only when loading takes longer than 300 ms, so a screen is never blank while it reads its data).
 
 **Vocabulary** (one word per concept, everywhere in the UI, notifications and content):
 
@@ -231,7 +232,9 @@ Internal enums keep their names (`BEGINNER` / `INTERMEDIATE` / `ADVANCED`, `easy
   **Vandaag · Seizoen · Recepten · Boodschappen · Dagboek**. The Boodschappen icon shows a badge with the number of unticked items.
 - Quests have no tab: they start from the **Quest van vandaag** card on Vandaag (and "Quest met …" / "Oefen in een quest" on vegetable
   and technique detail), and their history lives in **Dagboek › Quests** (§6.13). Completed quests are journal entries anyway.
-- Each top app bar has an overflow menu (⋮) with **Technieken, Opleiding, Instellingen, Over Mise**.
+- The top app bar of each tab's own screen has an overflow menu (⋮) with **Technieken, Opleiding, Instellingen, Over Mise**.
+  A detail screen's ⋮ holds only that screen's own actions (recipe detail: Dit kook ik vanavond, Bewerken, Delen,
+  Verwijderen), and a detail screen without any has no ⋮; the app-wide items are one tap back.
   Techniques are mostly reached through links (§6.6).
 - System back and predictive back work everywhere, and each tab keeps its own back stack.
 - Share targets (§6.9) open the import flow on top of the current stack.
@@ -272,6 +275,8 @@ The seasonal tally lives on Dagboek only (§6.13); Vandaag stays about today. Wo
 - Rows: `VegToken` next to `nl`, family, status dot + label (§5 vocabulary), `SeasonBadge`s, mini `PeakBar`. Order per §11.1.
 - Search matches `nl`, `nameEn` (a hidden alias) and `family`; case- and diacritic-insensitive.
 - A segmented toggle switches between **Nu** and **Kalender** (§6.4).
+- No hero headline: the top bar already says Seizoen, so the list starts right under the toggle, search and filters.
+  The Kalender view keeps only its legend line ("Gevuld = op z'n best, half = verkrijgbaar").
 
 ### 6.4 Kalender
 
@@ -301,10 +306,10 @@ The seasonal tally lives on Dagboek only (§6.13); Vandaag stays about today. Wo
 
 - Reached from the overflow menu and, mainly, through links: the recipe detail and cook mode ("Technieken in dit recept"),
   quest results, vegetable detail, and the Dagboek.
-- Categories, in this order, labelled from `techniques_category_*`: Snijdtechnieken, Garingsmethoden, Smaakgebouw,
+- Categories, in this order, labelled from `techniques_category_*`: Snijtechnieken, Garingsmethoden, Smaakopbouw,
   Eiwitten, Sauzen & Fonds, Groentenvoorbereiding, Gereedschap, Conservering. Within a category, techniques are grouped by `subcategory`.
 - Filter by level (Basis / Gemiddeld / Gevorderd); search on `nl` + `subtitle`.
-- Detail: subtitle, `body` paragraphs, **Tips**, **Benodigde kookgerei**, **Aanbevolen groenten** (chips → vegetable detail),
+- Detail: subtitle, `body` paragraphs, **Tips**, **Benodigd kookgerei**, **Aanbevolen groenten** (chips → vegetable detail),
   **Verwante technieken**, "Bouwt voort op" (`parentId`), "Vervolgtechnieken" (children), and "Zo vaak geoefend: {n}×"
   from the journal. Action: **"Oefen in een quest"** pre-fills the quest technique.
 - Cookware guides (`discipline = null`) are read-only reference pages. They are never tagged on recipes and never sent to Claude as techniques.
@@ -316,8 +321,9 @@ The seasonal tally lives on Dagboek only (§6.13); Vandaag stays about today. Wo
 - Quick filter chips: **Seizoen nu** (§11.4) · **Favorieten** · **Nooit gekookt** · dish type. **Meer filters** opens a
   sheet with cuisine, main ingredient, technique and time (prep time derived from `totalMinutes`, §8.4).
   The empty state with filters active offers "Wis zoekopdracht en filters".
-- Card: image (or a cuisine-coloured placeholder), title, source, total time, cooked count ("3× gekookt"),
-  in-season vegetable chips.
+- Card: image, title, source, total time, cooked count ("3× gekookt"), in-season vegetable chips. Without an image the card
+  is compact: a small cuisine-coloured swatch beside the title instead of a full-width placeholder, so a photo-less library
+  stays scannable.
 - FAB **"Recept toevoegen"** opens a sheet: Link plakken · Foto's maken · Foto's kiezen · Zelf invoeren.
 - Empty library: "Nog geen recepten" plus a CTA.
 
@@ -368,7 +374,7 @@ The seasonal tally lives on Dagboek only (§6.13); Vandaag stays about today. Wo
 - **Sharing is the main way in** (§3), so the `ACTION_SEND` share targets for links and images ship in P1, not later.
 - **Enrichment:** after a URL import or a manual save, the local ingredient parser runs immediately. When a key is set,
   a background job then calls Claude once per recipe for structured ingredients **and** tags (§8.4). The recipe shows
-  "wordt verrijkt…" and a failure never blocks the save. Photo and page imports already return structured
+  "Ingrediënten worden aangevuld…" and a failure never blocks the save. Photo and page imports already return structured
   ingredients and tags, so they skip this step.
 - Duplicate detection: the same canonical URL already in the library → "Dit recept heb je al", with the option to open it or import a copy.
 - Images are downloaded and stored locally (§7.4), so the library works offline.
@@ -378,7 +384,9 @@ The seasonal tally lives on Dagboek only (§6.13); Vandaag stays about today. Wo
 - A full-screen, step-by-step pager: one step per page, large type (scales with the system font), group name as an eyebrow,
   progress "Stap 3 van 9" with a thin progress bar. Swipe or tap the large previous/next buttons.
 - **Landscape** (phone propped up sideways): two panes, the step on the left and the ingredients list on the right. In portrait the
-  ingredients panel is one tap away (bottom sheet). Both show the scaled amounts.
+  ingredients panel is one tap away (bottom sheet) behind a labelled **Ingrediënten** button in the top bar. Both show the
+  scaled amounts.
+- Below each step (except the last) a **Hierna** preview shows the next step's text, so it can be got ready in time.
 - The screen stays on (`FLAG_KEEP_SCREEN_ON`) while cook mode is visible.
 - **Cook session:** one open session at a time (§7.3): recipe, current step, servings, ingredient ticks and started timers. It is
   saved on every change, so leaving and coming back (or process death) resumes at the same step: the recipe's Kookmodus button reads
@@ -448,6 +456,8 @@ A cooking journal first, statistics second. Three segments at the top: **Tijdlij
 **Tijdlijn**
 - Attempts grouped by month (newest first), each with photo, title, scores (step labels), notes, and recipe or quest.
   Filter: alles / recepten / quests. Tapping an entry edits it (scores, notes, photo, date) or opens the recipe.
+- Empty journal: "Leg je eerste gekookte recept of quest vast…" with a **Naar Vandaag** button (where cooking starts). A filter
+  that matches nothing shows the same text without the button.
 
 **Quests** (the quest history)
 - All quests, newest first: filter on Open / Voltooid, plus type and difficulty. Each item can be reopened, retried with the same
@@ -469,7 +479,8 @@ A cooking journal first, statistics second. Three segments at the top: **Tijdlij
 - A bottom-bar tab (§6.1), because it is used in the shop with one hand. Items arrive from recipe detail ("Op boodschappenlijst")
   and the Vanavond card.
 - Items from several recipes are **combined** by ingredient name and compatible unit (§11.7): "3 uien" from two recipes
-  is one line, with the source recipes as small chips. Unparsed lines stay separate.
+  is one line, with the source recipes as small chips. Unparsed lines stay separate. When every item comes from one recipe,
+  the chips are left out and the recipe is named once under the section heading ("Voor Boerenkoolstamppot").
 - Sections: combined items (A–Z) and "Los" (manual items). Tick off, swipe to delete, add manual items.
   Ticked items move to the bottom of their section.
 - Clear ticked items, or clear everything (with undo). "Delen" shares the list as plain text.
@@ -479,9 +490,10 @@ A cooking journal first, statistics second. Three segments at the top: **Tijdlij
 
 - **Claude**: key status (none / valid / invalid), add/replace/delete key (§9), "Sleutel testen", **Kwaliteit**
   (Snel / Gebalanceerd / Beste, A8), usage this month (tokens + estimated €), a tip to set a monthly spend limit
-  in the Anthropic Console, and **Quest-kaart tonen op Vandaag** (`showQuestCard`, §6.2).
+  in the Anthropic Console, and **Quest-kaart tonen op Vandaag** (`showQuestCard`, §6.2). Kwaliteit, usage and the tip
+  only show once a key is stored; without one the section is the explanation and **Sleutel toevoegen**.
 - **Gegevens**: export a backup, restore a backup (this also restores converted web-app data, §13.3), automatic
-  backup (folder + frequency, last run), "Ingrediënten verrijken" for all unparsed recipes (shows an estimated cost first),
+  backup (folder + frequency, last run), "Ingrediënten aanvullen" for all unparsed recipes (shows an estimated cost first),
   delete all data (typed confirmation "VERWIJDER").
 - **Meldingen**: seasonal notification on/off.
 - **Over**: version, data sources (velt.nu), open-source licences (including the fonts), privacy statement (§15.1).
@@ -503,7 +515,9 @@ English and each content screen says so ("Lesinhoud in het Engels").
 
 - **Opleiding** (home): hero, overall progress ("12 van 965 stappen gedaan"), a **Volgende stap** card that opens the first open
   step in curriculum order, then the five stages by their Dutch names (Fundament, Kerntechnieken, Integratie, Gevorderd,
-  Meesterschap) with their courses: id, title, hours, step progress and the **Concept** label (D10).
+  Meesterschap) with their courses: id, title, hours, step progress and the **Concept** label (D10, outlined in ink-soft: most
+  courses are drafts, so a filled badge would shout on every card). Only the stage holding the next step starts open; tapping a
+  stage's header shows or hides its courses (all start closed once every step is done).
 - **Cursus**: stage, hours, purpose, the Concept explanation with the second reader's count ("3 van 12 gelezen"), prerequisites
   (links), progress, the introduction, then each module with its lessons, exercises (support level and best band) and the knowledge
   check (item count, safety items, best attempt). A module without items shows the lesson file's note instead.
@@ -885,7 +899,7 @@ Input: all attempts. "Matches discipline D" means at least one technique id in t
 - Restore: pick a file → validate format and version → show a summary ("42 recepten, 17 quests, 88 pogingen") → choose
   **Samenvoegen** (by id; newer `updatedAt` wins) or **Vervangen** (wipe first, with typed confirmation) → run inside one DB transaction.
   Curriculum progress merges by id and is only added; Vervangen wipes it too.
-- After a restore, recipes with unparsed ingredients are offered "Ingrediënten verrijken" (§6.15).
+- After a restore, recipes with unparsed ingredients are offered "Ingrediënten aanvullen" (§6.15).
 - Automatic backup: the user picks a folder (`OpenDocumentTree`, persisted permission). WorkManager writes daily or weekly
   (only when charging or with battery not low) and keeps the newest 5 files. A failure raises a low-priority notification.
 - Android Auto Backup may include the DB and images. The secrets file is excluded (§9).
@@ -910,7 +924,7 @@ There is no legacy code in the app. A one-off script converts the old exports in
      ```
 2. Convert: `python3 tools/legacy_to_backup.py mise-legacy-supabase.json [mise-legacy-local.json] -o Mise-backup-legacy.zip`
    (stdlib only, mapping in Appendix A, output validated against `backup.schema.json`, prints a report of anything skipped).
-3. Restore the zip in the app (§13.2), then run "Ingrediënten verrijken".
+3. Restore the zip in the app (§13.2), then run "Ingrediënten aanvullen".
 
 ---
 
@@ -950,6 +964,9 @@ There is no legacy code in the app. A one-off script converts the old exports in
   vegetable fills checked by the data validator.
 - Headlines with italic emphasis are single string resources (§5), so TalkBack reads them as one sentence.
 - Every way to finish an action is a visible button; swipes (cook-mode pager, swipe to delete) always have a button or undo next to them.
+- Labels never break mid-word or clip on a phone: bottom-bar labels shrink to fit (down to 9 sp), button and
+  badge labels stay on one line and their row wraps instead. Snackbars appear above a screen's bottom action bar (Kookmodus /
+  Gekookt, the cook-mode step buttons, Bewaren / Aanpassen), never on top of it. `PhoneLayoutTest` checks these at 393 dp.
 
 ### 15.4 Language
 - Every user-visible string lives in `res/values/strings.xml` (Dutch is the default and only locale). Lint `HardcodedText`

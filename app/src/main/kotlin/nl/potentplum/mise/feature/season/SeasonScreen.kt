@@ -2,7 +2,8 @@ package nl.potentplum.mise.feature.season
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.ExperimentalLayoutApi
+import androidx.compose.foundation.layout.FlowRow
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
@@ -31,7 +32,7 @@ import nl.potentplum.mise.core.designsystem.MiseTheme
 import nl.potentplum.mise.core.designsystem.component.EmptyState
 import nl.potentplum.mise.core.designsystem.component.FilterPillOption
 import nl.potentplum.mise.core.designsystem.component.FilterPills
-import nl.potentplum.mise.core.designsystem.component.HeroHeader
+import nl.potentplum.mise.core.designsystem.component.LoadingState
 import nl.potentplum.mise.core.designsystem.component.MiseSearchField
 import nl.potentplum.mise.core.designsystem.component.MiseTopAppBar
 import nl.potentplum.mise.core.designsystem.component.OverflowItem
@@ -41,7 +42,6 @@ import nl.potentplum.mise.core.designsystem.component.SeasonBadgeKind
 import nl.potentplum.mise.core.designsystem.component.StatusDot
 import nl.potentplum.mise.core.designsystem.component.VegToken
 import nl.potentplum.mise.core.designsystem.hexColor
-import nl.potentplum.mise.core.designsystem.styledStringResource
 import nl.potentplum.mise.domain.CalendarGrouping
 import nl.potentplum.mise.domain.CalendarSection
 import nl.potentplum.mise.domain.SeasonFilter
@@ -70,7 +70,10 @@ fun SeasonScreen(
                     description = stringResource(R.string.controls_search_aria_label),
                 )
             }
-            if (state.loading) return@Column
+            if (state.loading) {
+                LoadingState()
+                return@Column
+            }
             when (state.mode) {
                 SeasonMode.NOW -> {
                     NowList(state, viewModel::setFilter, onVegetable)
@@ -121,15 +124,9 @@ private fun NowList(
             FilterPillOption(SeasonFilter.SOON, stringResource(R.string.filter_soon), state.counts[SeasonFilter.SOON]),
         )
     LazyColumn(Modifier.fillMaxSize()) {
-        item(key = "hero") {
-            HeroHeader(
-                title = styledStringResource(R.string.hero_title),
-                subtitle = stringResource(R.string.hero_hero_sub),
-                modifier = Modifier.padding(horizontal = 16.dp),
-            )
-        }
+        // The top bar already says Seizoen: the list starts right under the filters (no hero).
         item(key = "filters") {
-            FilterPills(options, state.filter, onFilter, Modifier.padding(horizontal = 16.dp, vertical = 4.dp))
+            FilterPills(options, state.filter, onFilter, Modifier.padding(horizontal = 16.dp, vertical = 8.dp))
         }
         if (state.rows.isEmpty()) {
             item(key = "empty") { EmptyState(title = stringResource(R.string.empty_state)) }
@@ -141,6 +138,7 @@ private fun NowList(
     }
 }
 
+@OptIn(ExperimentalLayoutApi::class)
 @Composable
 private fun VegetableRow(
     row: VegetableInSeason,
@@ -156,10 +154,11 @@ private fun VegetableRow(
             verticalArrangement = Arrangement.spacedBy(6.dp),
         ) {
             VegToken(vegetable.nl, hexColor(vegetable.color), nameStyle = MaterialTheme.typography.titleMedium)
-            Row(
+            FlowRow(
                 Modifier.padding(start = 52.dp),
-                verticalAlignment = Alignment.CenterVertically,
                 horizontalArrangement = Arrangement.spacedBy(8.dp),
+                verticalArrangement = Arrangement.spacedBy(4.dp),
+                itemVerticalAlignment = Alignment.CenterVertically,
             ) {
                 Text(
                     vegetable.family.nl,
@@ -186,10 +185,12 @@ private fun CalendarView(
     onVegetable: (String) -> Unit,
 ) {
     Column(Modifier.fillMaxSize()) {
-        HeroHeader(
-            title = styledStringResource(R.string.calendar_title),
-            subtitle = stringResource(R.string.calendar_hero_sub),
-            modifier = Modifier.padding(horizontal = 16.dp),
+        // Only the legend: the grid needs it, the headline did not.
+        Text(
+            stringResource(R.string.calendar_hero_sub),
+            style = MaterialTheme.typography.bodySmall,
+            color = MiseTheme.colors.inkSoft,
+            modifier = Modifier.padding(start = 16.dp, end = 16.dp, top = 8.dp),
         )
         FilterPills(
             options =

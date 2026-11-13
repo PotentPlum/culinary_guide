@@ -132,32 +132,35 @@ fun SettingsScreen(
                     TextButton(onClick = { confirmDelete = true }) { Text(stringResource(R.string.settings_key_delete)) }
                 }
 
-                Text(stringResource(R.string.settings_quality_title), style = MaterialTheme.typography.titleMedium)
-                Text(
-                    stringResource(R.string.settings_quality_sub),
-                    style = MaterialTheme.typography.bodySmall,
-                    color = MiseTheme.colors.inkSoft,
-                )
-                Column(Modifier.selectableGroup()) {
-                    Quality.entries.forEach { quality ->
-                        QualityRow(quality, selected = state.settings.quality == quality) { viewModel.setQuality(quality) }
+                // Model choice and spend mean nothing before there is a key to spend with.
+                if (state.key.masked != null) {
+                    Text(stringResource(R.string.settings_quality_title), style = MaterialTheme.typography.titleMedium)
+                    Text(
+                        stringResource(R.string.settings_quality_sub),
+                        style = MaterialTheme.typography.bodySmall,
+                        color = MiseTheme.colors.inkSoft,
+                    )
+                    Column(Modifier.selectableGroup()) {
+                        Quality.entries.forEach { quality ->
+                            QualityRow(quality, selected = state.settings.quality == quality) { viewModel.setQuality(quality) }
+                        }
                     }
-                }
 
-                Text(stringResource(R.string.settings_usage_title), style = MaterialTheme.typography.titleMedium)
-                Text(
-                    stringResource(
-                        R.string.settings_usage_value,
-                        DutchNumbers.grouped(state.usage.inputTokens + state.usage.outputTokens),
-                        DutchNumbers.euros(state.usage.costMicroUsd),
-                    ),
-                    style = MaterialTheme.typography.bodyLarge,
-                )
-                Text(
-                    stringResource(R.string.settings_usage_tip),
-                    style = MaterialTheme.typography.bodySmall,
-                    color = MiseTheme.colors.inkSoft,
-                )
+                    Text(stringResource(R.string.settings_usage_title), style = MaterialTheme.typography.titleMedium)
+                    Text(
+                        stringResource(
+                            R.string.settings_usage_value,
+                            DutchNumbers.grouped(state.usage.inputTokens + state.usage.outputTokens),
+                            DutchNumbers.euros(state.usage.costMicroUsd),
+                        ),
+                        style = MaterialTheme.typography.bodyLarge,
+                    )
+                    Text(
+                        stringResource(R.string.settings_usage_tip),
+                        style = MaterialTheme.typography.bodySmall,
+                        color = MiseTheme.colors.inkSoft,
+                    )
+                }
 
                 SwitchRow(
                     label = stringResource(R.string.settings_show_quest_card),

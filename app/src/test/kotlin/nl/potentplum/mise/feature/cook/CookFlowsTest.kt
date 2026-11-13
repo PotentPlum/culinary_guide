@@ -1,10 +1,12 @@
 package nl.potentplum.mise.feature.cook
 
 import androidx.compose.ui.semantics.SemanticsActions
+import androidx.compose.ui.test.assertCountEquals
 import androidx.compose.ui.test.hasClickAction
 import androidx.compose.ui.test.hasContentDescription
 import androidx.compose.ui.test.hasText
 import androidx.compose.ui.test.junit4.createAndroidComposeRule
+import androidx.compose.ui.test.onAllNodesWithContentDescription
 import androidx.compose.ui.test.onAllNodesWithText
 import androidx.compose.ui.test.onFirst
 import androidx.compose.ui.test.performSemanticsAction
@@ -176,6 +178,22 @@ class CookFlowsTest {
         click("Verder bij stap 3")
         waitFor("Stap 3 van 4")
         waitFor("Rooster de pompoen 25 minuten")
+    }
+
+    @Test
+    fun `each step shows the next one, and the labelled Ingredienten button opens the list`() {
+        startCooking()
+        // Step 1 previews step 2 under "Hierna" (the eyebrow's content description is its sentence-case label).
+        compose.onAllNodesWithContentDescription("Hierna").assertCountEquals(1)
+        assertTrue(shown("Blancheer de boerenkool 3 minuten."))
+
+        repeat(3) { click("Volgende stap") }
+        waitFor("Stap 4 van 4")
+        // Nothing after the last step.
+        compose.waitUntil(REVEAL_TIMEOUT_MILLIS) { compose.onAllNodesWithContentDescription("Hierna").fetchSemanticsNodes().isEmpty() }
+
+        click("Ingrediënten")
+        waitFor("1 kg pompoen")
     }
 
     @Test

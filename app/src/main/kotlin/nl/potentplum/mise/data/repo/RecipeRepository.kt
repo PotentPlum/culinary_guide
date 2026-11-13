@@ -93,7 +93,7 @@ class RecipeRepository
         /** Duplicate detection: the same canonical URL already in the library (spec §6.9). */
         suspend fun findInLibraryByUrl(url: String): String? = recipeDao.findInLibraryBySourceUrl(url)?.id
 
-        /** Ids of every library recipe, newest first ("Ingrediënten verrijken", spec §6.15). */
+        /** Ids of every library recipe, newest first ("Ingrediënten aanvullen", spec §6.15). */
         suspend fun libraryIds(): List<String> = recipeDao.libraryIds()
 
         suspend fun parser(): IngredientParser = IngredientParser(content.content().units)

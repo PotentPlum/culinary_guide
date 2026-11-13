@@ -39,6 +39,7 @@ import nl.potentplum.mise.core.designsystem.component.EmptyState
 import nl.potentplum.mise.core.designsystem.component.ErrorState
 import nl.potentplum.mise.core.designsystem.component.MiseTopAppBar
 import nl.potentplum.mise.core.designsystem.component.OverflowItem
+import nl.potentplum.mise.core.designsystem.component.avoidedBySnackbar
 import nl.potentplum.mise.data.repo.Recipe
 import nl.potentplum.mise.ingest.RecipeImportError
 
@@ -182,7 +183,7 @@ fun ImportPreviewBar(
     onSave: () -> Unit,
     onEdit: () -> Unit,
 ) {
-    Surface(color = MaterialTheme.colorScheme.surface) {
+    Surface(Modifier.avoidedBySnackbar(), color = MaterialTheme.colorScheme.surface) {
         Column {
             HorizontalDivider(color = MaterialTheme.colorScheme.outlineVariant)
             Row(

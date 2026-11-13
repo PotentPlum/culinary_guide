@@ -36,7 +36,7 @@ private const val REPLACE_CONFIRMATION = "VERVANGEN"
 
 /**
  * Back-up maken and Back-up terugzetten (spec §6.15, §13): the system file picker, the summary, Samenvoegen / Vervangen
- * (typed confirmation), and "Ingrediënten verrijken" offered afterwards through [onEnrich].
+ * (typed confirmation), and "Ingrediënten aanvullen" offered afterwards through [onEnrich].
  */
 @Composable
 fun BackupSection(

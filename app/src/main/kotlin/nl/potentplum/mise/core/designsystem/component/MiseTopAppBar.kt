@@ -33,7 +33,11 @@ data class MenuEntry(
     val onClick: () -> Unit,
 )
 
-/** A top app bar with an optional back arrow, screen [actions], and the ⋮ menu: Technieken, Opleiding, Instellingen, Over Mise. */
+/**
+ * A top app bar with an optional back arrow, screen [actions] and a ⋮ menu. On a tab's own screen (no [onBack]) the menu
+ * holds the app-wide items: Technieken, Opleiding, Instellingen, Over Mise. On a detail screen it holds only that
+ * screen's [menuEntries] (spec §6.1), and there is no ⋮ when it has none: the app-wide items are one tap back.
+ */
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun MiseTopAppBar(
@@ -55,6 +59,8 @@ fun MiseTopAppBar(
         },
         actions = {
             actions()
+            val appWide = onBack == null
+            if (!appWide && menuEntries.isEmpty()) return@TopAppBar
             IconButton(onClick = { menuOpen = true }) {
                 Icon(Icons.Outlined.MoreVert, contentDescription = stringResource(R.string.menu_more))
             }
@@ -68,6 +74,7 @@ fun MiseTopAppBar(
                         },
                     )
                 }
+                if (!appWide) return@DropdownMenu
                 if (menuEntries.isNotEmpty()) HorizontalDivider()
                 OverflowItem.entries.forEach { item ->
                     DropdownMenuItem(

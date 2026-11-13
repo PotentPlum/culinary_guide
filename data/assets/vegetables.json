@@ -709,7 +709,7 @@
       "id": "courgette",
       "nl": "Courgette",
       "nameEn": "Courgette",
-      "family": "Pompoen",
+      "family": "Pompoenachtige",
       "color": "#507838",
       "accent": "#284A18",
       "peak": [
@@ -746,7 +746,7 @@
       "id": "cucumber",
       "nl": "Komkommer",
       "nameEn": "Cucumber",
-      "family": "Pompoen",
+      "family": "Pompoenachtige",
       "color": "#8FC87A",
       "accent": "#3A7040",
       "peak": [
@@ -1145,7 +1145,7 @@
           "title": "Bieten carpaccio met dille en kappertjes",
           "url": "https://www.wateetons.nl/recepten/bieten-carpaccio/",
           "source": "Wat Eet Ons",
-          "why": "Rauwe jonge bieten (juni–juli) zijn mals genoeg om papierdun te snijden — deze bereidingswijze zonder koken toont hun heldere kleur en knapperige textuur.",
+          "why": "Papierdun gesneden is een rauwe biet mals genoeg om zonder koken te eten; jonge zomerbieten zijn het zachtst, een bewaarbiet vraagt een scherp mes of een mandoline. Zo blijven de heldere kleur en de knapperige textuur.",
           "difficulty": "easy",
           "timeMinutes": 15
         },
@@ -1409,7 +1409,7 @@
       "id": "pumpkin",
       "nl": "Pompoen",
       "nameEn": "Pumpkin / squash",
-      "family": "Pompoen",
+      "family": "Pompoenachtige",
       "color": "#D07828",
       "accent": "#904010",
       "peak": [

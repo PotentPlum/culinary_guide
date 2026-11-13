@@ -42,6 +42,7 @@ import nl.potentplum.mise.core.designsystem.component.LocalMiseSnackbar
 import nl.potentplum.mise.core.designsystem.component.MenuEntry
 import nl.potentplum.mise.core.designsystem.component.MiseTopAppBar
 import nl.potentplum.mise.core.designsystem.component.OverflowItem
+import nl.potentplum.mise.core.designsystem.component.avoidedBySnackbar
 import nl.potentplum.mise.core.ui.claudeErrorMessage
 import nl.potentplum.mise.data.db.entity.QuestEntity
 import nl.potentplum.mise.data.db.entity.QuestStatus
@@ -189,7 +190,7 @@ private fun QuestActionBar(
     onCook: () -> Unit,
     onCompleted: () -> Unit,
 ) {
-    Surface(color = MaterialTheme.colorScheme.surface) {
+    Surface(Modifier.avoidedBySnackbar(), color = MaterialTheme.colorScheme.surface) {
         Column(
             Modifier.navigationBarsPadding().padding(horizontal = 16.dp, vertical = 12.dp),
             verticalArrangement = Arrangement.spacedBy(8.dp),

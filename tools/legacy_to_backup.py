@@ -4,7 +4,7 @@
 Usage:
   python3 tools/legacy_to_backup.py mise-legacy-supabase.json [mise-legacy-local.json] -o Mise-backup-legacy.zip
 
-Restore the zip in the app (Instellingen › Back-up terugzetten), then run "Ingrediënten verrijken": ingredients are
+Restore the zip in the app (Instellingen › Back-up terugzetten), then run "Ingrediënten aanvullen": ingredients are
 written as text only. Stdlib only. The output is checked against data/schemas/backup.schema.json before the zip is
 written, and the report lists everything that was skipped or guessed. Exit code 0 = zip written, 1 = nothing written.
 
@@ -785,7 +785,7 @@ def main(argv: list[str]) -> int:
     if converter.report.lines:
         print(f"\nReport ({len(converter.report.lines)}):")
         print("\n".join(f"  {line}" for line in converter.report.lines))
-    print("\nNext: restore the zip in the app (Instellingen › Back-up terugzetten), then run Ingrediënten verrijken.")
+    print("\nNext: restore the zip in the app (Instellingen › Back-up terugzetten), then run Ingrediënten aanvullen.")
     return 0
 
 

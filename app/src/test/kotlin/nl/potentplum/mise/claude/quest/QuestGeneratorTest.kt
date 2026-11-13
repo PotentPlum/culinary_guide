@@ -114,7 +114,7 @@ class QuestGeneratorTest {
             val text = f.requestText()
             assertTrue(text, text.startsWith("Ingrediënt: ${veg.nl.lowercase()} (seizoensgroente, id: ${veg.id})"))
             assertTrue(text, text.contains("Moeilijkheid: basis (BEGINNER)"))
-            assertTrue(text, text.contains("Focus: oefen vooral Mechanisch Meesterschap"))
+            assertTrue(text, text.contains("Focus: oefen vooral Snijden"))
             assertFalse(text, text.contains("Groenten in het seizoen"))
             assertFalse(text, text.contains("Niet herhalen"))
 

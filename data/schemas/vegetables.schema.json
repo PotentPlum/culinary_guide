@@ -31,7 +31,7 @@
         "family": {
           "enum": [
             "Wortel", "Blad", "Brassica", "Allium", "Peulvrucht", "Stengel",
-            "Pompoen", "Knolgewas", "Vruchtgroente", "Paddenstoel", "Kruid"
+            "Pompoenachtige", "Knolgewas", "Vruchtgroente", "Paddenstoel", "Kruid"
           ]
         },
         "color": { "$ref": "#/$defs/hex" },

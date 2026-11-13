@@ -44,6 +44,7 @@ fun JournalScreen(
     onVegetable: (String) -> Unit = {},
     onAllVegetables: () -> Unit = {},
     onTechnique: (String) -> Unit = {},
+    onToday: () -> Unit = {},
     viewModel: JournalViewModel = hiltViewModel(),
     initialSegment: JournalSegment = JournalSegment.TIMELINE,
     /** A segment another screen asked for ("Alle quests" on Vandaag); cleared through [onSegmentRequestHandled]. */
@@ -101,7 +102,7 @@ fun JournalScreen(
                 }
 
                 JournalSegment.TIMELINE -> {
-                    JournalTimeline(state, onFilter = viewModel::setFilter, onEdit = { editing = it.attempt.id })
+                    JournalTimeline(state, onFilter = viewModel::setFilter, onEdit = { editing = it.attempt.id }, onToday = onToday)
                 }
 
                 JournalSegment.INSIGHTS -> {

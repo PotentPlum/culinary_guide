@@ -16,6 +16,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.AnnotatedString
 import androidx.compose.ui.text.SpanStyle
 import androidx.compose.ui.text.buildAnnotatedString
@@ -142,13 +143,18 @@ private fun TableRow(
 /** "Concept" on a course whose safety items a second reader hasn't all logged (spec §0 D10). */
 @Composable
 fun DraftLabel(modifier: Modifier = Modifier) {
-    // Terracotta is for fills only; white on it is 4.9:1.
-    Surface(shape = RoundedCornerShape(50), color = MaterialTheme.colorScheme.tertiary, modifier = modifier) {
+    // Outlined, not filled: most courses are drafts, so a loud badge on every card would drown the titles.
+    Surface(
+        shape = RoundedCornerShape(50),
+        color = Color.Transparent,
+        border = BorderStroke(1.dp, MiseTheme.colors.line),
+        modifier = modifier,
+    ) {
         Text(
             androidx.compose.ui.res
                 .stringResource(R.string.curriculum_draft),
             style = MaterialTheme.typography.labelMedium,
-            color = MaterialTheme.colorScheme.onTertiary,
+            color = MiseTheme.colors.inkSoft,
             modifier = Modifier.padding(horizontal = 10.dp, vertical = 2.dp),
         )
     }

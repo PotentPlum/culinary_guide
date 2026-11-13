@@ -77,7 +77,7 @@ android.sourceSets {
 - Every vegetable `color` must reach 4.5:1 with ink (`#1E1A14`) or white, because it is the background for the `VegToken` initials
   and the detail header (the validator checks this). `accent` is decorative only and has no contrast requirement (spec §5).
 - `strings.xml` allows only `<i>` and `<b>` markup, for emphasis inside one string; never split a sentence across keys.
-- `family` must be one of: Wortel, Blad, Brassica, Allium, Peulvrucht, Stengel, Pompoen, Knolgewas,
+- `family` must be one of: Wortel, Blad, Brassica, Allium, Peulvrucht, Stengel, Pompoenachtige, Knolgewas,
   Vruchtgroente, Paddenstoel, Kruid.
 
 ## Known content gaps (tracked in todo.md)

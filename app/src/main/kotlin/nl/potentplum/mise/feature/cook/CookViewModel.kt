@@ -7,6 +7,7 @@ import androidx.navigation.toRoute
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.ExperimentalCoroutinesApi
+import kotlinx.coroutines.Job
 import kotlinx.coroutines.channels.Channel
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.SharingStarted
@@ -162,6 +163,9 @@ class CookViewModel
         private val _events = Channel<CookEvent>(Channel.BUFFERED)
         val events = _events.receiveAsFlow()
 
+        /** Starts (or finds) this recipe's session; [update] waits for it. */
+        private lateinit var sessionReady: Job
+
         init {
             viewModelScope.launch {
                 var seen = false
@@ -174,16 +178,17 @@ class CookViewModel
                 }
             }
             // One open session: start this recipe's, unless it is already the open one.
-            viewModelScope.launch {
-                val current = settings.cookSession.first()
-                if (current?.recipeId != recipeId) {
-                    val recipe = recipes.get(recipeId) ?: return@launch
-                    settings.saveCookSession(CookSession(recipeId, 0, recipe.servings?.let { route.servings ?: it }, updatedAt = 0))
-                } else {
-                    val steps = recipes.get(recipeId)?.steps?.size ?: 0
-                    if (steps > 0 && current.stepIndex >= steps - 1) savedState[KEY_REACHED_END] = true
+            sessionReady =
+                viewModelScope.launch {
+                    val current = settings.cookSession.first()
+                    if (current?.recipeId != recipeId) {
+                        val recipe = recipes.get(recipeId) ?: return@launch
+                        settings.saveCookSession(CookSession(recipeId, 0, recipe.servings?.let { route.servings ?: it }, updatedAt = 0))
+                    } else {
+                        val steps = recipes.get(recipeId)?.steps?.size ?: 0
+                        if (steps > 0 && current.stepIndex >= steps - 1) savedState[KEY_REACHED_END] = true
+                    }
                 }
-            }
         }
 
         fun goTo(index: Int) {
@@ -230,6 +235,8 @@ class CookViewModel
          */
         private fun update(change: (CookSession) -> CookSession) {
             viewModelScope.launch {
+                // A step turned before the session exists would update nothing and be lost.
+                sessionReady.join()
                 if (ended) return@launch
                 settings.updateCookSession { session -> if (session?.recipeId == recipeId) change(session) else session }
             }

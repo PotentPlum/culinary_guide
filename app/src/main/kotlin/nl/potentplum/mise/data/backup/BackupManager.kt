@@ -72,7 +72,7 @@ data class RestoreResult(
     val recipes: Int,
     val quests: Int,
     val attempts: Int,
-    /** Restored library recipes whose ingredients are not all structured: offer "Ingrediënten verrijken" (spec §13.2). */
+    /** Restored library recipes whose ingredients are not all structured: offer "Ingrediënten aanvullen" (spec §13.2). */
     val needsEnrichment: Int,
 )
 

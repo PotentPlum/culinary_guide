@@ -61,6 +61,8 @@ class MiseAppShellTest {
         compose.onNodeWithContentDescription("Meer opties").performClick()
         compose.onNodeWithText("Instellingen").performClick()
         compose.onNodeWithContentDescription("Terug").assertExists()
+        // A detail screen without actions of its own has no ⋮: the app-wide items live on the tab screens (spec §6.1).
+        compose.onNodeWithContentDescription("Meer opties").assertDoesNotExist()
         compose.onNodeWithContentDescription("Terug").performClick()
         compose.onNodeWithText("Wat kook ik vandaag?").assertExists()
     }

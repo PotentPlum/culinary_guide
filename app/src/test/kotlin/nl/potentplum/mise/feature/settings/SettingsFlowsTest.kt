@@ -1,6 +1,7 @@
 package nl.potentplum.mise.feature.settings
 
 import androidx.compose.ui.semantics.SemanticsActions
+import androidx.compose.ui.test.assertCountEquals
 import androidx.compose.ui.test.hasAnyAncestor
 import androidx.compose.ui.test.hasClickAction
 import androidx.compose.ui.test.hasSetTextAction
@@ -151,5 +152,8 @@ class SettingsFlowsTest {
         compose.reveal("Geen sleutel ingesteld")
         assertEquals(ClaudeKeyStatus.NONE, keyStatus())
         assertNull(runBlocking { secrets.readClaudeKey() })
+        // Without a key there is nothing to choose a model for or spend.
+        compose.onAllNodesWithText("Kwaliteit").assertCountEquals(0)
+        compose.onAllNodesWithText("Gebruik deze maand").assertCountEquals(0)
     }
 }

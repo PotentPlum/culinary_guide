@@ -58,6 +58,7 @@ import nl.potentplum.mise.core.designsystem.component.EmptyState
 import nl.potentplum.mise.core.designsystem.component.Eyebrow
 import nl.potentplum.mise.core.designsystem.component.FacetChip
 import nl.potentplum.mise.core.designsystem.component.FacetChips
+import nl.potentplum.mise.core.designsystem.component.LoadingState
 import nl.potentplum.mise.core.designsystem.component.LocalMiseSnackbar
 import nl.potentplum.mise.core.designsystem.component.MenuEntry
 import nl.potentplum.mise.core.designsystem.component.MiseTopAppBar
@@ -167,7 +168,7 @@ fun RecipeDetailScreen(
         ) {
             when {
                 state.loading -> {
-                    Unit
+                    LoadingState()
                 }
 
                 recipe == null -> {
