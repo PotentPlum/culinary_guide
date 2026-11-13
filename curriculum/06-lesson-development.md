@@ -758,3 +758,59 @@ the owner overruling it.
 ### 11.4 Next
 
 The answers are applied (§5). Writing is finished. What still blocks closing this phase is in §12.
+
+## 12. End of writing
+
+### 12.1 Where the phase stands
+
+Every course file of Phase 5 has a lesson file, and every lesson file is a draft (§3):
+
+| Stage | Lesson files | Words | Safety items in the worksheet | Logged |
+|---|---|---|---|---|
+| S1 | 10 (§6, §7) | about 81,600 | 48 | 0 |
+| S2 | 11 (§8) | about 94,600 | 62 | 0 |
+| S3 | 13 (§9) | about 106,700 | 107 | 0 |
+| S4 | 8 (§10) | about 58,800 | 51 | 0 |
+| S5 | 3 (§11) | about 17,300 | 10 | 0 |
+| **All** | **45** | **about 359,000** | **278** | **0** |
+
+The review answers of the pilot, S1 and S2 came from the owner. Those of S3, S4 and S5 (§9.3, §10.3, §11.3) are my
+recommendations, applied because the owner asked to continue up to Phase 7; each is logged in §5 and stays open to the
+owner overruling it.
+
+### 12.2 What still blocks closing Phase 6
+
+None of these can be done by writing. Each needs a person, or real cooking.
+
+1. **The second reader.** A person other than the author reads every safety item in
+   [`06-safety-review.md`](06-safety-review.md) and logs a verdict. Who reads is still open. I recommend this order, so
+   that each stage can be finalised as soon as its items are read:
+   1. the 48 S1 items;
+   2. the 62 S2 items;
+   3. the 107 S3 items;
+   4. the 51 S4 items;
+   5. the 10 S5 items.
+2. **Fixes from the reader's log.** Every item the reader disagrees with is fixed in its course file, the worksheet row
+   is copied again, and the fix is logged in §5 and in the worksheet.
+3. **The owner's review of §9.3, §10.3 and §11.3.** Any answer the owner overrules is applied as a logged change,
+   and the lesson files it touches are read again.
+4. **Materials that need real cooking:**
+   - the reference images for the AI review of every course (slice, crumb, plate and cross-section photos above all);
+   - the five photos of faulty cakes for `BAK-2.M4.L3`;
+   - a blank tasting-day card for `RDV-5.M3.X1`.
+5. **Setting each file to final.** When steps 1–3 hold for a course, its lesson file is read again against the course
+   file and its status becomes `**Status:** final` (§3). The validator refuses `final` while any safety item of the
+   course is unread or marked *disagrees*. Phase 6 is closed when all 45 files are final.
+
+### 12.3 Phase 7 is not started
+
+Phase 7 maps the curriculum onto the app's content model. It waits for two things:
+- **Phase 6 closed** (§12.2), so that it maps final content;
+- **the owner's decisions** on the three clashes named in
+  [Phase 1 §13.3](01-vision-architecture.md#133-forward-notes-for-phase-7-app-architecture):
+  - spec **D5** forbids quest checkpoints and success criteria, which competency assessment needs;
+  - the app's **content scope** (Dutch vegetables only, no fruit) is narrower than the curriculum (fruit in pastry and
+    preserving, imported ingredients in world cuisines);
+  - the app's **score scale** (2/4/6/8/10) differs from the per-criterion rubrics.
+
+Until then, nothing in `curriculum/` changes `spec.md`, `data/` or the app.
