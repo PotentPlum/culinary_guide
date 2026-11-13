@@ -1,10 +1,11 @@
 package nl.potentplum.mise
 
 import androidx.annotation.StringRes
+import androidx.compose.foundation.layout.BoxWithConstraints
+import androidx.compose.foundation.layout.RowScope
 import androidx.compose.foundation.layout.WindowInsets
 import androidx.compose.foundation.layout.consumeWindowInsets
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.text.TextAutoSize
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.MenuBook
 import androidx.compose.material.icons.automirrored.outlined.MenuBook
@@ -37,10 +38,15 @@ import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.res.pluralStringResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.semantics.contentDescription
 import androidx.compose.ui.semantics.semantics
+import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.text.rememberTextMeasurer
+import androidx.compose.ui.unit.Dp
+import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.navigation.NavDestination.Companion.hasRoute
@@ -474,27 +480,58 @@ private fun MiseNavigationBar(
             TopLevelDestination.entries.firstOrNull { destination.hasRoute(it.graph::class) }
         }
     if (inTab != null && inTab != selectedTab) selectedTab = inTab
-    NavigationBar(containerColor = MaterialTheme.colorScheme.surfaceContainerLow) {
+    BoxWithConstraints {
+        val labelStyle = rememberTabLabelStyle(maxWidth)
+        NavigationBar(containerColor = MaterialTheme.colorScheme.surfaceContainerLow) {
+            TabItems(navController, selectedTab, { selectedTab = it }, uncheckedShoppingCount, labelStyle)
+        }
+    }
+}
+
+/**
+ * One size for all five labels: the largest (up to labelMedium) at which the widest still fits a fifth of the bar, so a
+ * large font setting shrinks them together instead of clipping one or giving each its own size.
+ */
+@Composable
+private fun rememberTabLabelStyle(barWidth: Dp): TextStyle {
+    val base = MaterialTheme.typography.labelMedium
+    val labels = TopLevelDestination.entries.map { stringResource(it.labelRes) }
+    val measurer = rememberTextMeasurer()
+    val density = LocalDensity.current
+    return remember(labels, barWidth, base, density) {
+        // NavigationBar spaces its items 8dp apart; a label may use its whole item.
+        val itemWidth = with(density) { ((barWidth - 8.dp * (labels.size - 1)) / labels.size - 4.dp).toPx() }
+        var size = base.fontSize
+        // At least 10dp on screen whatever the system text size: sp would scale this floor up with the text it must shrink.
+        val min = (10f / density.fontScale).sp
+        while (size.value > min.value) {
+            val style = base.copy(fontSize = size)
+            if (labels.all { measurer.measure(it, style, maxLines = 1, softWrap = false).size.width <= itemWidth }) break
+            size = (size.value - 0.5f).sp
+        }
+        base.copy(fontSize = size)
+    }
+}
+
+@Composable
+private fun RowScope.TabItems(
+    navController: NavHostController,
+    selectedTab: TopLevelDestination,
+    onSelect: (TopLevelDestination) -> Unit,
+    uncheckedShoppingCount: Int,
+    labelStyle: TextStyle,
+) {
+    run {
         TopLevelDestination.entries.forEach { destination ->
             val selected = destination == selectedTab
             NavigationBarItem(
                 selected = selected,
                 onClick = {
-                    selectedTab = destination
+                    onSelect(destination)
                     navController.navigateToTab(destination)
                 },
                 icon = { TabIcon(destination, selected, uncheckedShoppingCount) },
-                // "Boodschappen" is wider than a fifth of a phone at the default label size: shrink rather than clip.
-                label = {
-                    val style = MaterialTheme.typography.labelMedium
-                    Text(
-                        stringResource(destination.labelRes),
-                        maxLines = 1,
-                        softWrap = false,
-                        style = style,
-                        autoSize = TextAutoSize.StepBased(minFontSize = 9.sp, maxFontSize = style.fontSize, stepSize = 0.5.sp),
-                    )
-                },
+                label = { Text(stringResource(destination.labelRes), maxLines = 1, softWrap = false, style = labelStyle) },
                 colors =
                     NavigationBarItemDefaults.colors(
                         selectedIconColor = MaterialTheme.colorScheme.primary,

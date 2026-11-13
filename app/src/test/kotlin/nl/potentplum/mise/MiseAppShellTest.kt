@@ -47,7 +47,7 @@ class MiseAppShellTest {
     @Test
     fun `the bottom bar switches between the five tabs`() {
         launch()
-        listOf("Seizoen", "Recepten", "Boodschappen", "Dagboek", "Vandaag").forEach { label ->
+        listOf("Seizoen", "Recepten", "Lijstje", "Dagboek", "Vandaag").forEach { label ->
             tab(label).performClick()
             // The tab label and the screen's top bar title.
             compose.onAllNodesWithText(label, useUnmergedTree = true).assertCountEquals(2)

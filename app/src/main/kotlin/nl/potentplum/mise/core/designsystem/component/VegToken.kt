@@ -7,7 +7,6 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
-import androidx.compose.foundation.layout.widthIn
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
@@ -20,7 +19,6 @@ import androidx.compose.ui.semantics.clearAndSetSemantics
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
-import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
@@ -50,8 +48,6 @@ fun VegToken(
             Text(
                 text = name,
                 style = nameStyle,
-                maxLines = if (layout == VegTokenLayout.Vertical) 2 else 1,
-                overflow = TextOverflow.Ellipsis,
                 textAlign = if (layout == VegTokenLayout.Vertical) TextAlign.Center else TextAlign.Start,
             )
         }
@@ -65,7 +61,7 @@ fun VegToken(
 
         VegTokenLayout.Vertical -> {
             Column(
-                modifier.widthIn(max = size * 2.2f),
+                modifier,
                 horizontalAlignment = Alignment.CenterHorizontally,
                 verticalArrangement = Arrangement.spacedBy(6.dp),
             ) {

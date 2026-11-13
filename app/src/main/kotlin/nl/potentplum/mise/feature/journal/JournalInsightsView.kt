@@ -37,6 +37,7 @@ import nl.potentplum.mise.R
 import nl.potentplum.mise.content.Content
 import nl.potentplum.mise.core.designsystem.MiseTheme
 import nl.potentplum.mise.core.designsystem.component.EmptyState
+import nl.potentplum.mise.core.designsystem.component.EvenRow
 import nl.potentplum.mise.core.designsystem.component.Eyebrow
 import nl.potentplum.mise.core.designsystem.component.SeasonTally
 import nl.potentplum.mise.core.designsystem.component.VegTokenData
@@ -133,11 +134,11 @@ fun JournalInsightsView(
 
 @Composable
 private fun HeaderStats(insights: JournalInsights) {
-    // As tall as the tallest tile: a label on two lines must not leave its neighbours shorter.
-    Row(Modifier.fillMaxWidth().height(IntrinsicSize.Min), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-        Stat(insights.attemptsThisMonth, stringResource(R.string.journal_stat_month), Modifier.weight(1f).fillMaxHeight())
-        Stat(insights.totalAttempts, stringResource(R.string.journal_stat_total), Modifier.weight(1f).fillMaxHeight())
-        Stat(insights.questsCompleted, stringResource(R.string.journal_stat_quests), Modifier.weight(1f).fillMaxHeight())
+    // Equal tiles, as tall as the tallest; stacked when a label's longest word no longer fits a third of the width.
+    EvenRow(Modifier.fillMaxWidth()) {
+        Stat(insights.attemptsThisMonth, stringResource(R.string.journal_stat_month), Modifier)
+        Stat(insights.totalAttempts, stringResource(R.string.journal_stat_total), Modifier)
+        Stat(insights.questsCompleted, stringResource(R.string.journal_stat_quests), Modifier)
     }
 }
 

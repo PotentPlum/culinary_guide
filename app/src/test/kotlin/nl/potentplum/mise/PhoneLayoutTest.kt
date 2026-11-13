@@ -109,7 +109,7 @@ class PhoneLayoutTest {
     fun `every bottom bar label fits on one line`() {
         launch()
         waitFor("Vandaag")
-        listOf("Vandaag", "Seizoen", "Recepten", "Boodschappen", "Dagboek").forEach(::assertOneFullLine)
+        listOf("Vandaag", "Seizoen", "Recepten", "Lijstje", "Dagboek").forEach(::assertOneFullLine)
     }
 
     @Test

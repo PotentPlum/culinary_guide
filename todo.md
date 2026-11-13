@@ -226,6 +226,19 @@ The web app keeps running from its last Vercel deployment until you turn it off,
 - [ ] Accessibility pass: TalkBack walkthrough of every screen, 200% font scale, contrast check of the status colours.
 - [ ] Performance pass: library search with 1,000 synthetic recipes (add FTS if needed).
 
+### Second UX review (Nov 2026; spec §15.3)
+- [x] Nothing clips: `LayoutAuditTest` (393 dp, 360 dp at 130 % and 200 %) over every screen; tab "Lijstje" with one shared
+  label size; `ActionRow` / `EvenRow` / `TrailingRow` / `SegmentedChoice`; Kookmodus icon back button; ingredients action
+  under its heading; Kalender names wrap or stack; Dutch hyphenation for recipe titles; no add button on an empty library;
+  one badge per Vandaag tile.
+- [ ] Speak the user's language: Opleiding shows titles, not IDs; no stop dot on an empty progress bar; evaluation asks
+  "Hoe lukte het?" / "Hoe smaakte het?"; timer chip "Timer · 5 min"; empty Dagboek title; techniques content in Dutch and
+  without parent/child duplicates in "Gerelateerd", both enforced by `tools/validate_data.py`.
+- [ ] Never lose your place: no bottom bar on app-wide pages (Technieken, Opleiding, Instellingen, Over) and task screens;
+  pairing and substitution chips that lead somewhere or look like plain text; season rows say when a vegetable is at its best.
+- [ ] Close the loop: after logging a cook, offer to clear the recipe from the shopping list (with undo); "Verder leren" on
+  Vandaag once Opleiding has started.
+
 ---
 
 ## Opleiding — the culinary curriculum (spec §6.17, D7–D10; `curriculum/07-app-architecture.md`)

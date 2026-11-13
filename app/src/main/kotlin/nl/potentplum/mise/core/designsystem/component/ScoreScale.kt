@@ -4,7 +4,6 @@ import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.heightIn
 import androidx.compose.foundation.layout.padding
@@ -44,11 +43,12 @@ fun ScoreScale(
     val selectedStep = value?.let(ScoreSteps::stepOf)
     Column(modifier, verticalArrangement = Arrangement.spacedBy(8.dp)) {
         Text(label, style = MaterialTheme.typography.titleSmall)
-        Row(
+        // Five in a row; at a large font size, where a label no longer fits a fifth, a list of five.
+        EvenRow(
             Modifier
                 .fillMaxWidth()
                 .selectableGroup(),
-            horizontalArrangement = Arrangement.spacedBy(4.dp),
+            spacing = 4.dp,
         ) {
             steps.forEachIndexed { step, stepLabel ->
                 val selected = step == selectedStep
@@ -59,7 +59,6 @@ fun ScoreScale(
                     border = if (selected) null else BorderStroke(1.dp, MaterialTheme.colorScheme.outline),
                     modifier =
                         Modifier
-                            .weight(1f)
                             .selectable(
                                 selected = selected,
                                 role = Role.RadioButton,
@@ -67,7 +66,7 @@ fun ScoreScale(
                             ),
                 ) {
                     Box(Modifier.heightIn(min = 48.dp).padding(horizontal = 2.dp), contentAlignment = Alignment.Center) {
-                        Text(stepLabel, style = MaterialTheme.typography.labelMedium, textAlign = TextAlign.Center, maxLines = 2)
+                        Text(stepLabel, style = MaterialTheme.typography.labelMedium, textAlign = TextAlign.Center)
                     }
                 }
             }

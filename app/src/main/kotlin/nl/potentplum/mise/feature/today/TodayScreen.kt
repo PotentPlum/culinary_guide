@@ -38,6 +38,7 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.platform.LocalResources
 import androidx.compose.ui.platform.LocalUriHandler
 import androidx.compose.ui.res.stringResource
@@ -280,25 +281,31 @@ private fun PeakShortlist(
             SectionTitle(stringResource(R.string.home_spotlight_title), Modifier.weight(1f))
             TextButton(onClick = actions.onAllVegetables) { Text(stringResource(R.string.home_spotlight_more, availableCount)) }
         }
+        val fontScale = LocalDensity.current.fontScale.coerceIn(1f, 2f)
         LazyRow(horizontalArrangement = Arrangement.spacedBy(12.dp)) {
             items(peak, key = { it.vegetable.id }) { row ->
                 Surface(onClick = { actions.onVegetable(row.vegetable.id) }, color = Color.Transparent) {
+                    // Tiles grow with the font size, so a name keeps fitting in two lines.
                     Column(
                         Modifier
-                            .width(96.dp)
+                            .width(96.dp * fontScale)
                             .padding(vertical = 4.dp),
                         horizontalAlignment = Alignment.CenterHorizontally,
                         verticalArrangement = Arrangement.spacedBy(4.dp),
                     ) {
+                        // The tile shows the main name ("Zoete aardappel"); the alias is on the vegetable's own page.
                         VegToken(
-                            row.vegetable.nl,
+                            row.vegetable.nl.substringBefore(" / "),
                             hexColor(row.vegetable.color),
                             layout = VegTokenLayout.Vertical,
                             size = 48.dp,
                             nameStyle = MaterialTheme.typography.bodyMedium,
                         )
-                        if (row.lastChance) SeasonBadge(SeasonBadgeKind.LastChance)
-                        if (row.shortSeason) SeasonBadge(SeasonBadgeKind.ShortSeason)
+                        // One badge at most, so the row stays even: the season ending matters more than its length.
+                        when {
+                            row.lastChance -> SeasonBadge(SeasonBadgeKind.LastChance)
+                            row.shortSeason -> SeasonBadge(SeasonBadgeKind.ShortSeason)
+                        }
                     }
                 }
             }

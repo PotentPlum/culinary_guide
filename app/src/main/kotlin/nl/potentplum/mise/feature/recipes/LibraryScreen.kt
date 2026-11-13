@@ -91,11 +91,14 @@ fun LibraryScreen(
             )
         },
         floatingActionButton = {
-            ExtendedFloatingActionButton(
-                onClick = { addSheet = true },
-                icon = { Icon(Icons.Outlined.Add, contentDescription = null) },
-                text = { Text(stringResource(R.string.recipes_add)) },
-            )
+            // An empty library has its own "Eerste recept toevoegen": one way in, not two.
+            if (state.loading || !state.libraryEmpty) {
+                ExtendedFloatingActionButton(
+                    onClick = { addSheet = true },
+                    icon = { Icon(Icons.Outlined.Add, contentDescription = null) },
+                    text = { Text(stringResource(R.string.recipes_add)) },
+                )
+            }
         },
     ) { padding ->
         LazyColumn(

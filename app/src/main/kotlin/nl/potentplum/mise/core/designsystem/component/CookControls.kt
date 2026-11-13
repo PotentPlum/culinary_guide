@@ -22,6 +22,7 @@ import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalResources
 import androidx.compose.ui.res.stringResource
@@ -128,22 +129,23 @@ fun RecipeActionBar(
     Surface(modifier = modifier.fillMaxWidth().avoidedBySnackbar(), color = MaterialTheme.colorScheme.surface) {
         Column {
             HorizontalDivider(color = MaterialTheme.colorScheme.outlineVariant)
-            Row(
+            // Side by side with the cook button taking the spare width; stacked when a label would not fit on one line.
+            ActionRow(
                 Modifier
+                    .fillMaxWidth()
                     .navigationBarsPadding()
                     .padding(horizontal = 16.dp, vertical = 12.dp),
-                horizontalArrangement = Arrangement.spacedBy(12.dp),
+                alignment = Alignment.Start,
+                fill = true,
+                spacing = 12.dp,
             ) {
-                Button(onClick = onCook, modifier = Modifier.weight(1f)) {
+                Button(onClick = onCook) {
                     Text(
-                        text =
-                            if (resumeStep != null) {
-                                stringResource(R.string.cook_resume, resumeStep)
-                            } else {
-                                stringResource(R.string.recipes_cooking_mode)
-                            },
-                        maxLines = 1,
-                        overflow = TextOverflow.Ellipsis,
+                        if (resumeStep != null) {
+                            stringResource(R.string.cook_resume, resumeStep)
+                        } else {
+                            stringResource(R.string.recipes_cooking_mode)
+                        },
                     )
                 }
                 OutlinedButton(onClick = onCooked) { Text(stringResource(R.string.recipe_action_cooked)) }

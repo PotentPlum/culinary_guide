@@ -229,7 +229,9 @@ Internal enums keep their names (`BEGINNER` / `INTERMEDIATE` / `ADVANCED`, `easy
 ### 6.1 App shell
 
 - Single activity, edge-to-edge, Material 3 `NavigationBar` with 5 destinations:
-  **Vandaag · Seizoen · Recepten · Boodschappen · Dagboek**. The Boodschappen icon shows a badge with the number of unticked items.
+  **Vandaag · Seizoen · Recepten · Lijstje · Dagboek**. The tab is labelled "Lijstje" (a fifth of a phone has no room for
+  "Boodschappen" at large text sizes); its screen is titled **Boodschappen**. Its icon shows a badge with the number of unticked items.
+  All five labels share one size: the largest that fits the widest, never below 10 dp on screen.
 - Quests have no tab: they start from the **Quest van vandaag** card on Vandaag (and "Quest met …" / "Oefen in een quest" on vegetable
   and technique detail), and their history lives in **Dagboek › Quests** (§6.13). Completed quests are journal entries anyway.
 - The top app bar of each tab's own screen has an overflow menu (⋮) with **Technieken, Opleiding, Instellingen, Over Mise**.
@@ -964,9 +966,22 @@ There is no legacy code in the app. A one-off script converts the old exports in
   vegetable fills checked by the data validator.
 - Headlines with italic emphasis are single string resources (§5), so TalkBack reads them as one sentence.
 - Every way to finish an action is a visible button; swipes (cook-mode pager, swipe to delete) always have a button or undo next to them.
-- Labels never break mid-word or clip on a phone: bottom-bar labels shrink to fit (down to 9 sp), button and
-  badge labels stay on one line and their row wraps instead. Snackbars appear above a screen's bottom action bar (Kookmodus /
-  Gekookt, the cook-mode step buttons, Bewaren / Aanpassen), never on top of it. `PhoneLayoutTest` checks these at 393 dp.
+- Text is never cut off, clipped or split mid-word, at any width or font scale. Layouts change shape instead of truncating:
+  - bottom-bar labels share one size that fits (§6.1);
+  - button rows (`ActionRow`) sit side by side while every label fits on one line and otherwise stack full width, primary
+    action on top; Kookmodus "Vorige stap" is an icon button so "Volgende stap" gets the full width;
+  - equal tiles and choices (`EvenRow`: Inzichten stats, score steps) and a trailing badge or button (`TrailingRow`:
+    technique level, the evaluation date) move to their own line when the longest word no longer fits;
+  - view switchers (`SegmentedChoice`) drop the check mark, then become a wrapping row of chips;
+  - the Kalender puts each name above a full-width month bar when its longest word does not fit the name column;
+  - long user text (recipe titles) is hyphenated with Dutch rules (`dutchHyphenated()`).
+
+  Only text marked `allowTruncation()` may be cut short: a top-bar title that repeats the screen's heading, and a preview of
+  a longer text. `LayoutAuditTest` opens every screen of a fresh install and of a used app on a 393 dp phone, a 360 dp phone at
+  130 % and at 200 % text, scrolls each to the end and fails on any ellipsis, hidden line, clipped or off-screen text, mid-word
+  break (except a single word wider than a full-width line) or button label on two lines (except a full-width button).
+  `LAYOUT_AUDIT_SHOTS=<dir>` also saves each screen as a PNG. Snackbars appear above a screen's bottom action bar (Kookmodus /
+  Gekookt, the cook-mode step buttons, Bewaren / Aanpassen), never on top of it.
 
 ### 15.4 Language
 - Every user-visible string lives in `res/values/strings.xml` (Dutch is the default and only locale). Lint `HardcodedText`

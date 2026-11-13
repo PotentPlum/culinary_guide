@@ -12,9 +12,6 @@ import androidx.compose.foundation.lazy.items
 import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
-import androidx.compose.material3.SegmentedButton
-import androidx.compose.material3.SegmentedButtonDefaults
-import androidx.compose.material3.SingleChoiceSegmentedButtonRow
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -39,6 +36,7 @@ import nl.potentplum.mise.core.designsystem.component.OverflowItem
 import nl.potentplum.mise.core.designsystem.component.PeakBar
 import nl.potentplum.mise.core.designsystem.component.SeasonBadge
 import nl.potentplum.mise.core.designsystem.component.SeasonBadgeKind
+import nl.potentplum.mise.core.designsystem.component.SegmentedChoice
 import nl.potentplum.mise.core.designsystem.component.StatusDot
 import nl.potentplum.mise.core.designsystem.component.VegToken
 import nl.potentplum.mise.core.designsystem.hexColor
@@ -98,17 +96,12 @@ private fun ModeToggle(
     mode: SeasonMode,
     onMode: (SeasonMode) -> Unit,
 ) {
-    SingleChoiceSegmentedButtonRow(Modifier.fillMaxWidth()) {
-        SeasonMode.entries.forEachIndexed { index, entry ->
-            SegmentedButton(
-                selected = mode == entry,
-                onClick = { onMode(entry) },
-                shape = SegmentedButtonDefaults.itemShape(index, SeasonMode.entries.size),
-            ) {
-                Text(stringResource(if (entry == SeasonMode.NOW) R.string.season_mode_now else R.string.nav_calendar))
-            }
-        }
-    }
+    SegmentedChoice(
+        options = SeasonMode.entries,
+        selected = mode,
+        labels = SeasonMode.entries.map { stringResource(if (it == SeasonMode.NOW) R.string.season_mode_now else R.string.nav_calendar) },
+        onSelect = onMode,
+    )
 }
 
 @Composable

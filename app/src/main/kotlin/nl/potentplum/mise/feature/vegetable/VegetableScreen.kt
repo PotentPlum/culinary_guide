@@ -218,7 +218,11 @@ private fun Header(state: VegetableUiState.Loaded) {
 private fun Legend() {
     val colors = MiseTheme.colors
     val shape = RoundedCornerShape(2.dp)
-    Row(horizontalArrangement = Arrangement.spacedBy(16.dp), verticalAlignment = Alignment.CenterVertically) {
+    FlowRow(
+        horizontalArrangement = Arrangement.spacedBy(16.dp),
+        verticalArrangement = Arrangement.spacedBy(4.dp),
+        itemVerticalAlignment = Alignment.CenterVertically,
+    ) {
         Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(6.dp)) {
             Box(Modifier.size(12.dp).background(colors.peak, shape))
             Text(stringResource(R.string.detail_legend_peak), style = MaterialTheme.typography.labelMedium)

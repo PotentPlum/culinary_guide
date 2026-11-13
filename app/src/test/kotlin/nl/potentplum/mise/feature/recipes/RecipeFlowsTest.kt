@@ -2,6 +2,7 @@ package nl.potentplum.mise.feature.recipes
 
 import androidx.compose.ui.semantics.SemanticsProperties
 import androidx.compose.ui.state.ToggleableState
+import androidx.compose.ui.test.assertCountEquals
 import androidx.compose.ui.test.assertIsDisplayed
 import androidx.compose.ui.test.hasScrollAction
 import androidx.compose.ui.test.hasText
@@ -26,6 +27,7 @@ import nl.potentplum.mise.core.designsystem.MiseTheme
 import nl.potentplum.mise.data.repo.RecipeRepository
 import nl.potentplum.mise.domain.LibraryItem
 import nl.potentplum.mise.testing.FakePageFetcher
+import nl.potentplum.mise.testing.reveal
 import org.junit.Assert.assertEquals
 import org.junit.Before
 import org.junit.Rule
@@ -79,7 +81,13 @@ class RecipeFlowsTest {
         }
 
     private fun importLink(link: String) {
-        click("Recept toevoegen")
+        // An empty library offers only its own first-recipe button, not the add button too.
+        if (library().isEmpty()) {
+            compose.onAllNodesWithText("Recept toevoegen", useUnmergedTree = true).assertCountEquals(0)
+            click("Eerste recept toevoegen")
+        } else {
+            click("Recept toevoegen")
+        }
         click("Link plakken")
         compose.onNodeWithText("Receptlink").performTextInput(link)
         click("Laden")
@@ -132,7 +140,7 @@ class RecipeFlowsTest {
 
     @Test
     fun `manual entry, edit in place and the unsaved-changes guard`() {
-        click("Recept toevoegen")
+        click("Eerste recept toevoegen")
         click("Zelf invoeren")
         click("Opslaan")
         compose.onNodeWithText("Geef het recept een naam.").assertExists()
@@ -163,7 +171,7 @@ class RecipeFlowsTest {
         waitForText("Kookmodus")
         compose.onNodeWithContentDescription("Meer porties").performClick()
         compose.onNodeWithContentDescription("Meer porties").performClick()
-        compose.onNodeWithText("750 g pompoen").assertExists()
+        compose.reveal("750 g pompoen")
         click("750 g pompoen")
         compose.waitUntil(5_000) {
             compose.onNodeWithText("750 g pompoen").fetchSemanticsNode().config[SemanticsProperties.ToggleableState] == ToggleableState.On

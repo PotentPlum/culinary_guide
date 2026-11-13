@@ -57,6 +57,7 @@ import coil3.compose.AsyncImage
 import nl.potentplum.mise.R
 import nl.potentplum.mise.core.designsystem.component.LocalMiseSnackbar
 import nl.potentplum.mise.core.designsystem.component.ScoreScale
+import nl.potentplum.mise.core.designsystem.component.TrailingRow
 import nl.potentplum.mise.core.util.DutchDates
 import nl.potentplum.mise.core.util.MiseClock
 import java.io.File
@@ -149,17 +150,20 @@ fun EvaluationSheet(
                     Text(stringResource(R.string.evaluation_photo_gallery), Modifier.padding(start = 6.dp))
                 }
             }
-            Row(verticalAlignment = Alignment.CenterVertically) {
-                Text(
-                    stringResource(R.string.evaluation_date_label, DutchDates.day(form.date.toEpochMillis())),
-                    style = MaterialTheme.typography.bodyMedium,
-                    modifier = Modifier.weight(1f),
-                )
-                TextButton(onClick = { pickingDate = true }) {
-                    Icon(Icons.Outlined.Event, contentDescription = null, modifier = Modifier.size(18.dp))
-                    Text(stringResource(R.string.evaluation_date_change), Modifier.padding(start = 6.dp))
-                }
-            }
+            TrailingRow(
+                main = {
+                    Text(
+                        stringResource(R.string.evaluation_date_label, DutchDates.day(form.date.toEpochMillis())),
+                        style = MaterialTheme.typography.bodyMedium,
+                    )
+                },
+                trailing = {
+                    TextButton(onClick = { pickingDate = true }) {
+                        Icon(Icons.Outlined.Event, contentDescription = null, modifier = Modifier.size(18.dp))
+                        Text(stringResource(R.string.evaluation_date_change), Modifier.padding(start = 6.dp))
+                    }
+                },
+            )
             Button(onClick = { viewModel.log(recipeId, withScores = true) }, enabled = !form.saving, modifier = Modifier.fillMaxWidth()) {
                 Text(stringResource(R.string.evaluation_submit_btn))
             }

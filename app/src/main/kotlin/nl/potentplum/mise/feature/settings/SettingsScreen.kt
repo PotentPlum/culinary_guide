@@ -185,7 +185,12 @@ fun SettingsScreen(
 
             HorizontalDivider()
             Section(stringResource(R.string.menu_about)) {
-                OutlinedButton(onClick = onAbout) { Text(stringResource(R.string.settings_about_open)) }
+                Text(
+                    stringResource(R.string.settings_about_open),
+                    style = MaterialTheme.typography.bodySmall,
+                    color = MiseTheme.colors.inkSoft,
+                )
+                OutlinedButton(onClick = onAbout) { Text(stringResource(R.string.settings_about_button)) }
             }
         }
     }

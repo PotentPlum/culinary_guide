@@ -75,7 +75,7 @@ class ShoppingFlowsTest {
 
     private fun launch() {
         compose.setContent { MiseTheme { MiseAppShell(today = LocalDate.of(2026, 10, 22), uncheckedShoppingCount = 0) } }
-        click("Boodschappen")
+        click("Lijstje")
     }
 
     private fun click(text: String) {

@@ -24,6 +24,7 @@ import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import nl.potentplum.mise.R
 import nl.potentplum.mise.core.designsystem.MiseTheme
+import nl.potentplum.mise.core.designsystem.component.ActionRow
 import nl.potentplum.mise.core.designsystem.component.DifficultyBadge
 import nl.potentplum.mise.core.designsystem.component.Eyebrow
 import nl.potentplum.mise.core.ui.claudeErrorMessage
@@ -48,7 +49,7 @@ fun TodayQuestCard(
         TodayQuestUiState.NoKey -> {
             QuestCardFrame(modifier) {
                 Text(stringResource(R.string.quest_card_no_key), style = MaterialTheme.typography.bodyMedium)
-                Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                ActionRow(Modifier.fillMaxWidth(), alignment = Alignment.Start) {
                     Button(onClick = onAddKey) { Text(stringResource(R.string.quest_card_add_key)) }
                     TextButton(onClick = viewModel::hide) { Text(stringResource(R.string.quest_card_hide)) }
                 }
@@ -104,7 +105,7 @@ private fun ReadyContent(
 
         is QuestGenState.Failed -> {
             Text(claudeErrorMessage(gen.error), style = MaterialTheme.typography.bodyMedium)
-            Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+            ActionRow(Modifier.fillMaxWidth(), alignment = Alignment.Start) {
                 Button(onClick = viewModel::start, enabled = state.online) { Text(stringResource(R.string.quest_retry)) }
                 TextButton(onClick = viewModel::dismissError) { Text(stringResource(R.string.common_cancel)) }
             }
@@ -118,7 +119,7 @@ private fun ReadyContent(
                     DifficultyBadge(quest.difficulty)
                     Text(quest.skill, style = MaterialTheme.typography.bodySmall, color = MiseTheme.colors.inkSoft)
                 }
-                FlowRow(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                ActionRow(Modifier.fillMaxWidth(), alignment = Alignment.Start) {
                     Button(onClick = { onOpenQuest(quest.id) }) { Text(stringResource(R.string.quest_open)) }
                     TextButton(onClick = onRefine) { Text(stringResource(R.string.quest_params_title)) }
                     TextButton(onClick = onAllQuests) { Text(stringResource(R.string.today_all_quests)) }
@@ -132,7 +133,7 @@ private fun ReadyContent(
                         color = MiseTheme.colors.inkSoft,
                     )
                 }
-                FlowRow(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                ActionRow(Modifier.fillMaxWidth(), alignment = Alignment.Start) {
                     Button(onClick = viewModel::start, enabled = state.online) { Text(stringResource(R.string.quest_submit_btn)) }
                     TextButton(onClick = onRefine) { Text(stringResource(R.string.quest_params_title)) }
                     TextButton(onClick = onAllQuests) { Text(stringResource(R.string.today_all_quests)) }

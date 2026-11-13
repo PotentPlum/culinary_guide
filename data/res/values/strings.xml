@@ -250,7 +250,7 @@
     <string name="today_reason_join">%1$s · %2$s</string>
     <string name="today_quick_empty">Geen recepten van 30 minuten of minder meer voor vandaag.</string>
     <string name="nav_today">Vandaag</string>
-    <string name="nav_shopping">Boodschappen</string>
+    <string name="nav_shopping">Lijstje</string>
     <string name="shopping_empty_title">Je lijst is leeg</string>
     <string name="shopping_empty_sub">Voeg ingrediënten toe vanuit een recept of typ zelf iets.</string>
     <string name="recipe_add_to_shopping">Op boodschappenlijst</string>
@@ -513,7 +513,8 @@
         <item quantity="one">%1$d recept wordt aangevuld</item>
         <item quantity="other">%1$d recepten worden aangevuld</item>
     </plurals>
-    <string name="settings_about_open">Versie, bronnen, privacy en licenties</string>
+    <string name="settings_about_open">Versie, bronnen, privacy en licenties.</string>
+    <string name="settings_about_button">Bekijken</string>
     <string name="key_title">Claude-sleutel</string>
     <string name="key_intro">Mise gebruikt je eigen Claude-sleutel voor quests, recepten van foto\'s en het aanvullen van ingrediënten. Je betaalt per gebruik aan Anthropic; een quest kost meestal een paar cent.</string>
     <string name="key_storage">De sleutel wordt versleuteld met de Android Keystore op deze telefoon bewaard. Hij komt nooit in een back-up; op een nieuwe telefoon voer je hem opnieuw in.</string>

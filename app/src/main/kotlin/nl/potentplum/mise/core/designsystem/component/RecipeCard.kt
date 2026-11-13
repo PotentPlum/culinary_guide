@@ -34,6 +34,7 @@ import coil3.compose.AsyncImage
 import nl.potentplum.mise.R
 import nl.potentplum.mise.core.designsystem.Contrast
 import nl.potentplum.mise.core.designsystem.MiseTheme
+import nl.potentplum.mise.core.designsystem.dutchHyphenated
 import nl.potentplum.mise.core.designsystem.hexColor
 import java.io.File
 
@@ -90,9 +91,7 @@ private fun CardDetails(
         Row(verticalAlignment = Alignment.Top) {
             Text(
                 title,
-                style = MaterialTheme.typography.titleMedium,
-                maxLines = 2,
-                overflow = TextOverflow.Ellipsis,
+                style = MaterialTheme.typography.titleMedium.dutchHyphenated(),
                 modifier = Modifier.weight(1f),
             )
             if (isFavorite) Icon(Icons.Filled.Favorite, contentDescription = null, tint = MaterialTheme.colorScheme.tertiary)
