@@ -84,8 +84,26 @@ fun EvaluationSheet(
         viewModel.events.collect { event ->
             when (event) {
                 is EvaluationEvent.Logged -> {
-                    val message = if (event.questCompleted) R.string.quest_completed_msg else R.string.evaluation_logged
-                    snackbar.show(resources.getString(message))
+                    if (event.shoppingLines == 0) {
+                        snackbar.show(
+                            resources.getString(if (event.questCompleted) R.string.quest_completed_msg else R.string.evaluation_logged),
+                        )
+                    } else {
+                        // Cooked, so its groceries are probably used: offer to clear them, with undo; never do it silently.
+                        val plural = if (event.questCompleted) R.plurals.quest_shopping_left else R.plurals.evaluation_shopping_left
+                        snackbar.show(
+                            resources.getQuantityString(plural, event.shoppingLines, event.shoppingLines),
+                            resources.getString(R.string.evaluation_shopping_remove),
+                            onAction = {
+                                val removed = viewModel.removeFromShopping(recipeId)
+                                snackbar.show(
+                                    resources.getString(R.string.shopping_removed),
+                                    resources.getString(R.string.common_undo),
+                                    onAction = { viewModel.restoreShopping(removed) },
+                                )
+                            },
+                        )
+                    }
                     onLogged()
                 }
             }

@@ -56,4 +56,10 @@ class SeasonalMatcherTest {
         assertEquals(PrepTimeBucket.OVER_60, PrepTimeBucket.of(60))
         assertEquals(null, PrepTimeBucket.of(null))
     }
+
+    @Test
+    fun `vegetables come in the order of the ingredients, the first being the main one`() {
+        assertEquals(listOf("leek", "pumpkin"), named("prei", "zout", "pompoen").toList())
+        assertEquals(listOf("pumpkin", "leek"), named("pompoen", "prei").toList())
+    }
 }

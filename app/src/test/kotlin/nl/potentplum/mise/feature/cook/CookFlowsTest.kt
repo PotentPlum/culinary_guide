@@ -33,6 +33,7 @@ import nl.potentplum.mise.data.repo.IngredientGroup
 import nl.potentplum.mise.data.repo.QuestRepository
 import nl.potentplum.mise.data.repo.Recipe
 import nl.potentplum.mise.data.repo.RecipeRepository
+import nl.potentplum.mise.data.repo.ShoppingRepository
 import nl.potentplum.mise.data.repo.Step
 import nl.potentplum.mise.data.repo.StepGroup
 import nl.potentplum.mise.data.repo.Tag
@@ -76,6 +77,9 @@ class CookFlowsTest {
 
     @Inject
     lateinit var quests: QuestRepository
+
+    @Inject
+    lateinit var shopping: ShoppingRepository
 
     private val recipe =
         Recipe(
@@ -268,6 +272,38 @@ class CookFlowsTest {
         val attempt = runBlocking { attempts.all() }.single()
         assertNull(attempt.score)
         assertNull(attempt.tasteScore)
+    }
+
+    @Test
+    fun `after logging, the recipe's groceries can be taken off the list, with undo`() {
+        runBlocking {
+            shopping.addRecipe(recipe, recipes.scaler())
+            shopping.addManual("Koffie")
+        }
+        launch()
+        click("Gekookt")
+        waitFor("Hoe ging het?")
+        click("Zonder cijfers vastleggen")
+        // Offered, never done silently: both lines are still there until Weghalen.
+        waitFor("Vastgelegd. Nog 2 boodschappen van dit recept op je lijst.")
+        assertEquals(3, runBlocking { shopping.observe().first() }.size)
+
+        click("Weghalen")
+        waitFor("Verwijderd van je lijst")
+        assertEquals(listOf("Koffie"), runBlocking { shopping.observe().first() }.map { it.text })
+
+        click("Ongedaan maken")
+        compose.waitUntil(REVEAL_TIMEOUT_MILLIS) { runBlocking { shopping.observe().first() }.size == 3 }
+    }
+
+    @Test
+    fun `without groceries on the list, logging just says so`() {
+        launch()
+        click("Gekookt")
+        waitFor("Hoe ging het?")
+        click("Zonder cijfers vastleggen")
+        waitFor("Vastgelegd in je dagboek")
+        compose.onAllNodesWithText("Weghalen").assertCountEquals(0)
     }
 
     @Test

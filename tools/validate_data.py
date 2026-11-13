@@ -17,6 +17,7 @@ from __future__ import annotations
 import json
 import re
 import sys
+import unicodedata
 import xml.etree.ElementTree as ET
 from pathlib import Path
 
@@ -82,6 +83,7 @@ facet_doc = load("assets/facets.json", "facets.schema.json")
 disc_doc = load("assets/disciplines.json", "disciplines.schema.json")
 arch_doc = load("assets/archetypes.json", "archetypes.schema.json")
 unit_doc = load("assets/units.json", "units.schema.json")
+dept_doc = load("assets/departments.json", "departments.schema.json")
 
 vegs = veg_doc.get("vegetables", [])
 veg_ids = unique("vegetables.id", [v.get("id", "") for v in vegs])
@@ -238,6 +240,37 @@ for dimension, base in base_units.items():
         err("units", f"missing base unit {base!r} for {dimension}")
 
 
+def plain_words(text: str) -> list[str]:
+    """Lowercase words without diacritics, as the app's DepartmentClassifier splits them."""
+    folded = unicodedata.normalize("NFD", text.lower())
+    return re.findall(r"[a-z]+", "".join(c for c in folded if not unicodedata.combining(c)))
+
+
+# Shop departments (spec §6.14, §11.7): a fixed set in a fixed order, with string resources and unambiguous keywords.
+DEPARTMENT_IDS = ["groente", "zuivel-eieren", "vlees-vis", "brood", "voorraad", "overig"]
+departments = dept_doc.get("departments", [])
+if [d.get("id") for d in departments] != DEPARTMENT_IDS:
+    err("departments", f"ids must be exactly {DEPARTMENT_IDS}, in that order (the app shows them in this order)")
+# The app counts each vegetable as groente by its name (the last word of each " / " part), so those need no keyword.
+veg_words = {plain_words(part)[-1] for v in vegs for part in v.get("nl", "").split(" / ") if plain_words(part)}
+seen_keywords: dict[str, str] = {}
+for d in departments:
+    did, keywords = d.get("id", ""), d.get("keywords", [])
+    where = f"departments[{did}]"
+    if did == "overig" and keywords:
+        err(where, "overig is the fallback and has no keywords")
+    if did != "overig" and not keywords:
+        err(where, "needs keywords")
+    for k in keywords:
+        if k in seen_keywords:
+            err(where, f"keyword {k!r} is also in {seen_keywords[k]}")
+        seen_keywords[k] = did
+        if k in veg_words:
+            err(where, f"keyword {k!r} is a vegetable name, which is always groente")
+    if tree is not None and f"shopping_department_{did.replace('-', '_')}" not in names:
+        err(where, f"missing string resource shopping_department_{did.replace('-', '_')}")
+
+
 def status_for(veg: dict, month: int) -> str:
     """Reference implementation of the seasonality rule (spec.md §11.1)."""
     peak, shoulder = veg["peak"], veg["shoulder"]
@@ -350,6 +383,6 @@ if errors:
     sys.exit(1)
 print(
     f"data OK — {len(vegs)} vegetables, {len(techs)} techniques, {len(facets)} facets, "
-    f"{len(archs)} archetypes, {len(units)} units, {len(names) if tree is not None else 0} string resources, "
+    f"{len(archs)} archetypes, {len(units)} units, {len(departments)} departments, {len(names) if tree is not None else 0} string resources, "
     f"{len(golden.get('cases', []))} golden cases, {len(course_ids)} curriculum courses ({curriculum_units} lessons and exercises)"
 )

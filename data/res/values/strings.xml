@@ -170,6 +170,7 @@
     <string name="evaluation_date_label">Gekookt op %1$s</string>
     <string name="evaluation_date_change">Datum wijzigen</string>
     <string name="evaluation_logged">Vastgelegd in je dagboek</string>
+    <string name="evaluation_shopping_remove">Weghalen</string>
     <string name="common_ok">OK</string>
     <string name="quest_page_title">Quest</string>
     <string name="quest_page_subtitle">Een gerichte kookoefening rond één ingrediënt en één techniek.</string>
@@ -607,8 +608,12 @@
         <item>Material Design-iconen · Apache License 2.0</item>
     </string-array>
     <!-- P1: Boodschappen. -->
-    <string name="shopping_section_recipes">Uit recepten</string>
-    <string name="shopping_section_manual">Los</string>
+    <string name="shopping_department_groente">Groente</string>
+    <string name="shopping_department_zuivel_eieren">Zuivel &amp; eieren</string>
+    <string name="shopping_department_vlees_vis">Vlees &amp; vis</string>
+    <string name="shopping_department_brood">Brood</string>
+    <string name="shopping_department_voorraad">Voorraad</string>
+    <string name="shopping_department_overig">Overig</string>
     <string name="shopping_single_recipe">Voor %1$s</string>
     <string name="shopping_add_label">Iets toevoegen</string>
     <string name="shopping_add">Toevoegen</string>
@@ -711,6 +716,7 @@
     <string name="curriculum_title">Opleiding</string>
     <string name="curriculum_hero">Leer koken, <i>stap voor stap</i></string>
     <string name="curriculum_intro">Vijf fases, van fundament tot meesterschap. De lessen, vragen en opdrachten zijn in het Engels.</string>
+    <string name="today_learning_eyebrow">Verder leren</string>
     <string name="curriculum_overall">%1$d van %2$d stappen gedaan</string>
     <string name="curriculum_next_eyebrow">Volgende stap</string>
     <string name="curriculum_next_lesson">Les</string>
@@ -817,5 +823,13 @@
     <plurals name="curriculum_not_started">
         <item quantity="one">Nog niet begonnen · %1$d stap</item>
         <item quantity="other">Nog niet begonnen · %1$d stappen</item>
+    </plurals>
+    <plurals name="evaluation_shopping_left">
+        <item quantity="one">Vastgelegd. Nog %1$d boodschap van dit recept op je lijst.</item>
+        <item quantity="other">Vastgelegd. Nog %1$d boodschappen van dit recept op je lijst.</item>
+    </plurals>
+    <plurals name="quest_shopping_left">
+        <item quantity="one">Goed gedaan! Nog %1$d boodschap van dit recept op je lijst.</item>
+        <item quantity="other">Goed gedaan! Nog %1$d boodschappen van dit recept op je lijst.</item>
     </plurals>
 </resources>

@@ -269,6 +269,9 @@ Vandaag answers "wat kook ik vandaag?" and gets you from the answer to cooking. 
    the card shows it instead (open or completed). "Verfijn" opens the full quest form (§6.11). "Alle quests" opens Dagboek › Quests.
    Without a Claude key, the card explains what is needed with **Sleutel toevoegen** (→ Instellingen) and **Verbergen**. Hidden, the
    card stays away until a key is added or it is turned back on in Instellingen (`showQuestCard`).
+   Once Opleiding has started (§6.17), a **Verder leren** card follows: the next step in curriculum order (lesson, exercise or
+   knowledge check) with its course and the overall progress, and **Openen**. It stays away until the first step is done and once
+   every step is done.
 5. **Nu op z'n best**: a horizontal shortlist of at most 8 peak vegetables, ordered by §11.1, with `SeasonBadge`s.
    "Alle groenten →" goes to Seizoen.
 
@@ -332,8 +335,9 @@ The seasonal tally lives on Dagboek only (§6.13); Vandaag stays about today. Wo
   sheet with cuisine, main ingredient, technique and time (prep time derived from `totalMinutes`, §8.4).
   The empty state with filters active offers "Wis zoekopdracht en filters".
 - Card: image, title, source, total time, cooked count ("3× gekookt"), in-season vegetable chips. Without an image the card
-  is compact: a small cuisine-coloured swatch beside the title instead of a full-width placeholder, so a photo-less library
-  stays scannable.
+  is compact: a small swatch beside the title instead of a full-width placeholder, so a photo-less library stays scannable.
+  The swatch is the recipe's main vegetable (the first one in its ingredients) in that vegetable's colour with its initials, like
+  `VegToken`; a recipe without a vegetable gets its cuisine colour with a fork icon.
 - FAB **"Recept toevoegen"** opens a sheet: Link plakken · Foto's maken · Foto's kiezen · Zelf invoeren.
 - Empty library: "Nog geen recepten" plus a CTA.
 
@@ -465,6 +469,9 @@ Quest van vandaag card on Vandaag; their history is **Dagboek › Quests** (§6.
 - **Vastleggen** logs an attempt (§7.2) with snapshots of techniques, cuisines and the vegetables used (§11.4).
   **Zonder cijfers vastleggen** logs it without scores. Dismissing the sheet logs nothing.
 - The recipe's cooked count and last cooked date update right away; the cook session and a Vanavond pin for the recipe are cleared.
+- If the recipe still has lines on the shopping list, the confirmation snackbar says how many ("Vastgelegd. Nog 3 boodschappen van
+  dit recept op je lijst.") and offers **Weghalen**; that removes them, with **Ongedaan maken** in the next snackbar. Nothing is ever
+  removed without that tap: some items are bought for more than one meal.
 
 ### 6.13 Dagboek (replaces "Profiel")
 
@@ -497,9 +504,11 @@ A cooking journal first, statistics second. Three segments at the top: **Tijdlij
   and the Vanavond card.
 - Items from several recipes are **combined** by ingredient name and compatible unit (§11.7): "3 uien" from two recipes
   is one line, with the source recipes as small chips. Unparsed lines stay separate. When every item comes from one recipe,
-  the chips are left out and the recipe is named once under the section heading ("Voor Boerenkoolstamppot").
-- Sections: combined items (A–Z) and "Los" (manual items). Tick off, swipe to delete, add manual items.
-  Ticked items move to the bottom of their section.
+  the chips are left out and the recipe is named once above the list ("Voor Boerenkoolstamppot").
+- Sections by **shop department** (§11.7), in the order of a walk through the shop: Groente · Zuivel & eieren · Vlees & vis ·
+  Brood · Voorraad · Overig; empty ones are left out. Manual items are sorted in too ("melk" goes under Zuivel & eieren).
+  Within a department: lines from recipes A–Z, then manual items in the order added. Tick off, swipe to delete, add manual items.
+  Ticked items move to the bottom of their department. "Delen" lists the unticked lines in the same order.
 - Clear ticked items, or clear everything (with undo). "Delen" shares the list as plain text.
 - Empty state: "Je lijst is leeg" with a hint to add ingredients from a recipe.
 
@@ -563,7 +572,7 @@ exercises, then the check. Prerequisites are shown, never enforced.
 ### 7.1 Static content (APK assets)
 
 `ContentRepository` loads `vegetables.json`, `techniques.json`, `facets.json`, `disciplines.json`, `archetypes.json`
-(and `units.json`, §11.2) once, on a background dispatcher, with kotlinx.serialization (`ignoreUnknownKeys = false` in tests
+(and `units.json`, §11.2, and `departments.json`, §11.7) once, on a background dispatcher, with kotlinx.serialization (`ignoreUnknownKeys = false` in tests
 and `true` in release). Files whose `schemaVersion` is unsupported fail loudly in debug builds. Models mirror
 `data/schemas/*.schema.json` exactly. Content is read-only at runtime. Lookups by id are O(1) maps.
 
@@ -874,6 +883,13 @@ score    = season + recency + (favourite ? 0.4 : 0)
   as separate lines under the same name ("2 teen knoflook" + "1 tl knoflookpoeder" do not merge).
 - Items without a `name` are never merged.
 - Scaling is applied before items are added to the list.
+- **Departments** (`departments.json`, in display order): Groente · Zuivel & eieren · Vlees & vis · Brood · Voorraad · Overig. A
+  line goes by its `name` (else its text) to the department of its best-matching keyword. The words of the line are lowercased
+  without diacritics; a whole word beats the end of a compound (the Dutch head: "paprikapoeder" is a poeder, "kippenbouillon" a
+  bouillon), which beats the start ("uien", "kippendijen"); then the longer keyword, then the earlier department. Plural and
+  diminutive endings are ignored ("cherrytomaatjes"). Endings only match keywords of 4+ letters, so "prei" is not an egg.
+  Every vegetable in `vegetables.json` is Groente by its own name; exceptions are whole keywords ("pindakaas", "kokosmelk").
+  No match: Overig.
 
 ---
 

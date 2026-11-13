@@ -9,6 +9,8 @@ import androidx.compose.ui.test.hasText
 import androidx.compose.ui.test.junit4.createAndroidComposeRule
 import androidx.compose.ui.test.onAllNodesWithText
 import androidx.compose.ui.test.onFirst
+import androidx.compose.ui.test.onLast
+import androidx.compose.ui.test.onNodeWithTag
 import androidx.compose.ui.test.performClick
 import androidx.compose.ui.test.performScrollTo
 import androidx.compose.ui.test.performSemanticsAction
@@ -22,6 +24,7 @@ import dagger.hilt.android.testing.HiltAndroidTest
 import dagger.hilt.android.testing.HiltTestApplication
 import kotlinx.coroutines.runBlocking
 import nl.potentplum.mise.core.designsystem.MiseTheme
+import nl.potentplum.mise.core.designsystem.component.vegSwatchTag
 import nl.potentplum.mise.core.navigation.RecipeRoute
 import nl.potentplum.mise.core.navigation.VegetableRoute
 import nl.potentplum.mise.data.db.entity.ParseSource
@@ -151,6 +154,27 @@ class PhoneLayoutTest {
         // Zoete aardappel opens that vegetable; Butternut squash is not in Mise, so it must not look or act like a link.
         compose.onAllNodes(hasText("Zoete aardappel") and hasClickAction()).assertCountEquals(1)
         compose.onAllNodes(hasText("Butternut squash", substring = true) and hasClickAction()).assertCountEquals(0)
+    }
+
+    @Test
+    fun `a recipe without a photo shows its first vegetable as its picture`() {
+        runBlocking {
+            val lines = listOf("zout", "1 stuk pompoen", "2 stengels prei")
+            recipes.save(
+                Recipe(
+                    id = "soup",
+                    title = "Pompoensoep",
+                    sourceType = RecipeSourceType.MANUAL,
+                    ingredientGroups = listOf(IngredientGroup(items = lines.map { Ingredient(text = it) })),
+                ),
+            )
+        }
+        launch()
+        compose.onAllNodesWithText("Recepten", useUnmergedTree = true).onLast().performClick()
+        waitFor("Pompoensoep")
+        // Pumpkin comes first in the ingredients (leek comes first in the content): pumpkin's colour and initials.
+        compose.onNodeWithTag(vegSwatchTag("pumpkin"), useUnmergedTree = true).assertExists()
+        compose.onNodeWithTag(vegSwatchTag("leek"), useUnmergedTree = true).assertDoesNotExist()
     }
 
     @Test

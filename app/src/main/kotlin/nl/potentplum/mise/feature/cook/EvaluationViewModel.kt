@@ -12,6 +12,7 @@ import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.channels.Channel
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
+import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.receiveAsFlow
 import kotlinx.coroutines.flow.stateIn
@@ -21,8 +22,10 @@ import kotlinx.serialization.Serializable
 import kotlinx.serialization.json.Json
 import nl.potentplum.mise.core.util.IoDispatcher
 import nl.potentplum.mise.core.util.MiseClock
+import nl.potentplum.mise.data.db.entity.ShoppingItemEntity
 import nl.potentplum.mise.data.repo.AttemptRepository
 import nl.potentplum.mise.data.repo.Evaluation
+import nl.potentplum.mise.data.repo.ShoppingRepository
 import nl.potentplum.mise.ingest.ImageStore
 import java.io.File
 import java.time.LocalDate
@@ -45,6 +48,8 @@ data class EvaluationForm(
 sealed interface EvaluationEvent {
     data class Logged(
         val questCompleted: Boolean,
+        /** Lines of this recipe still on the shopping list, offered for removal (spec §6.12, never removed silently). */
+        val shoppingLines: Int = 0,
     ) : EvaluationEvent
 }
 
@@ -54,6 +59,7 @@ class EvaluationViewModel
     @Inject
     constructor(
         private val attempts: AttemptRepository,
+        private val shopping: ShoppingRepository,
         private val images: ImageStore,
         private val clock: MiseClock,
         @param:ApplicationContext private val context: Context,
@@ -142,9 +148,27 @@ class EvaluationViewModel
                         ),
                     )
                 savedState[KEY_FORM] = null
-                if (attempt != null) _events.send(EvaluationEvent.Logged(questCompleted = attempt.questId != null))
+                if (attempt != null) {
+                    val onList = shopping.observe().first().count { it.recipeId == recipeId }
+                    _events.send(EvaluationEvent.Logged(questCompleted = attempt.questId != null, shoppingLines = onList))
+                }
             }
         }
+
+        /**
+         * Takes [recipeId]'s lines off the shopping list and returns them for undo. Suspends in the caller's scope (the
+         * app-wide snackbar's), not [viewModelScope]: after a cook the screen that owns this view model may be gone.
+         */
+        suspend fun removeFromShopping(recipeId: String): List<ShoppingItemEntity> =
+            shopping.deleteForUndo(
+                shopping
+                    .observe()
+                    .first()
+                    .filter { it.recipeId == recipeId }
+                    .map { it.id },
+            )
+
+        suspend fun restoreShopping(items: List<ShoppingItemEntity>) = shopping.restore(items)
 
         /** Dismissing logs nothing; a staged photo is dropped. */
         fun discard() {

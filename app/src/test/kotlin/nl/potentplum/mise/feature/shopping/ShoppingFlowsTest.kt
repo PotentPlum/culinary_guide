@@ -45,7 +45,7 @@ import org.robolectric.annotation.Config
 import java.time.LocalDate
 import javax.inject.Inject
 
-/** Spec §6.14: adding a selection from a recipe, combined lines with source chips, ticking, manual items, clearing with undo. */
+/** Spec §6.14: adding a selection from a recipe, combined lines with source chips, departments, ticking, manual items, clearing with undo. */
 @HiltAndroidTest
 @RunWith(RobolectricTestRunner::class)
 @Config(application = HiltTestApplication::class)
@@ -122,15 +122,27 @@ class ShoppingFlowsTest {
     }
 
     @Test
-    fun `manual items go under Los, and clearing the list can be undone`() {
+    fun `the list is grouped by department, manual items too, and clearing it can be undone`() {
         seed()
         launch()
         compose.reveal("3 ui")
         compose.onAllNodes(hasSetTextAction()).onFirst().performTextInput("Koffiefilters")
         compose.onAllNodes(hasSetTextAction()).onFirst().performImeAction()
         compose.reveal("Koffiefilters")
-        // Eyebrows carry their label as a content description.
-        compose.reveal(hasContentDescription("Los"))
+        // Eyebrows carry their label as a content description: Groente for the onions and carrots, Overig for the filters.
+        compose.reveal(hasContentDescription("Groente"))
+        compose.reveal(hasContentDescription("Overig"))
+        val groente =
+            compose
+                .onNode(hasContentDescription("Groente"))
+                .fetchSemanticsNode()
+                .boundsInRoot.top
+        val overig =
+            compose
+                .onNode(hasContentDescription("Overig"))
+                .fetchSemanticsNode()
+                .boundsInRoot.top
+        assertTrue(groente < overig)
 
         compose.onNodeWithContentDescription("Meer opties").performClick()
         click("Hele lijst wissen")

@@ -5,6 +5,7 @@ import nl.potentplum.mise.content.model.Discipline
 import nl.potentplum.mise.content.model.Facet
 import nl.potentplum.mise.content.model.FacetKey
 import nl.potentplum.mise.content.model.MeasureUnit
+import nl.potentplum.mise.content.model.ShopDepartment
 import nl.potentplum.mise.content.model.Technique
 import nl.potentplum.mise.content.model.Vegetable
 
@@ -17,6 +18,8 @@ class Content(
     val disciplines: List<Discipline>,
     val archetypes: List<Archetype>,
     val units: List<MeasureUnit>,
+    /** Shopping-list departments in display order (spec §6.14). */
+    val departments: List<ShopDepartment> = emptyList(),
 ) {
     val vegetablesById: Map<String, Vegetable> = vegetables.associateBy { it.id }
     val techniquesById: Map<String, Technique> = techniques.associateBy { it.id }

@@ -65,6 +65,7 @@ import nl.potentplum.mise.core.designsystem.hexColor
 import nl.potentplum.mise.core.designsystem.styledStringResource
 import nl.potentplum.mise.domain.CuratedSuggestion
 import nl.potentplum.mise.domain.VegetableInSeason
+import nl.potentplum.mise.feature.curriculum.ContinueLearningCard
 import nl.potentplum.mise.feature.quests.TodayQuestCard
 import nl.potentplum.mise.feature.shopping.AddToShoppingSheet
 import java.time.LocalDate
@@ -82,6 +83,9 @@ data class TodayActions(
     val onRefineQuest: () -> Unit,
     val onAllQuests: () -> Unit,
     val onAddKey: () -> Unit,
+    val onLesson: (String) -> Unit = {},
+    val onExercise: (String) -> Unit = {},
+    val onCheck: (String) -> Unit = {},
 )
 
 /** Vandaag (spec §6.2): hero, Vanavond, suggestions, Quest van vandaag and "Nu op z'n best". Works offline. */
@@ -143,6 +147,9 @@ fun TodayScreen(
                     onAllQuests = actions.onAllQuests,
                     modifier = Modifier.padding(vertical = 4.dp),
                 )
+            }
+            item(key = "learning") {
+                ContinueLearningCard(onLesson = actions.onLesson, onExercise = actions.onExercise, onCheck = actions.onCheck)
             }
             if (state.peak.isNotEmpty()) {
                 item(key = "peak") { PeakShortlist(state.peak, state.availableCount, actions) }

@@ -19,6 +19,7 @@ python3 tools/validate_data.py
 | `assets/facets.json` | Recipe tag vocabulary: cuisine (with colours), dish type, main ingredient, prep time | APK asset; also the enum source for Claude output schemas (spec §8) |
 | `assets/disciplines.json` | The 3 skill disciplines (Dagboek bars) with Dutch labels, in display order | APK asset |
 | `assets/units.json` | 28 measurement units: Dutch singular/plural, parser aliases, dimension (MASS / VOLUME / COUNT / OTHER) and factor to g / ml / stuks | APK asset → local ingredient parser, scaling, shopping list (spec §11.2) |
+| `assets/departments.json` | The 6 shopping-list departments in display order (Groente … Overig) with matching keywords; vegetables need none, they are Groente by name | APK asset → `DepartmentClassifier`, Boodschappen (spec §6.14, §11.7) |
 | `assets/archetypes.json` | 7 Dagboek badges as typed rules (`techniques`, `distinctPeakVegetables`, `peakMonths`) | APK asset → `BadgeEvaluator` (spec §12) |
 | `assets/curriculum/` | The culinary curriculum, **generated** from `curriculum/` by `tools/export_curriculum.py --write`: `index.json` (stages, 50 course summaries, rubrics, competency titles) and `courses/<ID>.json` (45 courses as text blocks with their knowledge-check items). English prose (spec D7); never edit by hand | APK asset → `CurriculumRepository` (spec §6.17, §7.1); `validate_data.py` fails when stale |
 | `res/values/strings.xml` | Dutch UI strings, plurals and string arrays (`months_short` / `months_long` / `months_initial`, `score_steps`) | Android resource dir (`res.srcDir`) |

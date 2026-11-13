@@ -145,6 +145,7 @@ fun LibraryScreen(
                     cookedCount = card.item.cookedCount,
                     imagePath = card.item.imagePath,
                     placeholderColor = card.placeholderColor,
+                    mainVegetable = card.mainVegetable,
                     isFavorite = card.item.isFavorite,
                     inSeason = card.inSeason,
                     onClick = { onRecipe(card.item.id) },

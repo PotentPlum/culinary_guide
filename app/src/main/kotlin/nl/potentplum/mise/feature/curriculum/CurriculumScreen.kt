@@ -187,18 +187,23 @@ internal fun Progress(
     }
 }
 
+/** The next open step: on Opleiding ("Volgende stap") and, once started, on Vandaag ("Verder leren", with [progress]). */
 @Composable
-private fun NextStepCard(
+internal fun NextStepCard(
     next: NextStep,
+    modifier: Modifier = Modifier,
+    eyebrow: String = stringResource(R.string.curriculum_next_eyebrow),
+    progress: String? = null,
     onOpen: () -> Unit,
 ) {
     Surface(
         shape = RoundedCornerShape(12.dp),
         color = MaterialTheme.colorScheme.surfaceContainerLow,
         border = BorderStroke(1.dp, MiseTheme.colors.line),
+        modifier = modifier.fillMaxWidth(),
     ) {
         Column(Modifier.padding(16.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
-            Eyebrow(stringResource(R.string.curriculum_next_eyebrow))
+            Eyebrow(eyebrow)
             val kind =
                 when (next) {
                     is NextStep.Lesson -> stringResource(R.string.curriculum_next_lesson)
@@ -214,6 +219,7 @@ private fun NextStepCard(
                 }
             Text(title, style = MaterialTheme.typography.titleLarge)
             Text(next.course.title, style = MaterialTheme.typography.bodyMedium, color = MiseTheme.colors.inkSoft)
+            if (progress != null) Text(progress, style = MaterialTheme.typography.bodySmall, color = MiseTheme.colors.inkSoft)
             Button(onClick = onOpen) { Text(stringResource(R.string.curriculum_next_open)) }
         }
     }

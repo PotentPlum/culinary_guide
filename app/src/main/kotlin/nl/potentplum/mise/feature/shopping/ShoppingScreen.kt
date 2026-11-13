@@ -56,7 +56,7 @@ import nl.potentplum.mise.core.designsystem.component.MiseTopAppBar
 import nl.potentplum.mise.core.designsystem.component.OverflowItem
 import nl.potentplum.mise.domain.ShoppingListLine
 
-/** Boodschappen (spec §6.14): one-handed in the shop. Combined lines A–Z with source chips, then "Los". */
+/** Boodschappen (spec §6.14): one-handed in the shop. Lines by department, combined across recipes, with source chips. */
 @Composable
 fun ShoppingScreen(
     onOverflowItem: (OverflowItem) -> Unit,
@@ -94,7 +94,7 @@ fun ShoppingScreen(
                             val send =
                                 Intent(Intent.ACTION_SEND)
                                     .setType("text/plain")
-                                    .putExtra(Intent.EXTRA_TEXT, ShoppingViewModel.shareText(shareTitle, state.list))
+                                    .putExtra(Intent.EXTRA_TEXT, ShoppingViewModel.shareText(shareTitle, state.sections))
                             context.startActivity(Intent.createChooser(send, shareTitle))
                         }) { Icon(Icons.Outlined.Share, contentDescription = stringResource(R.string.shopping_share)) }
                     }
@@ -119,25 +119,27 @@ fun ShoppingScreen(
                     )
                 }
             }
-            if (state.list.combined.isNotEmpty()) {
-                // One recipe: name it once under the heading. Several: each line shows which recipes it is for.
-                val sources =
-                    state.list.combined
-                        .flatMap { it.recipes }
-                        .distinct()
-                item(key = "combined-header") {
-                    Column(Modifier.padding(top = 12.dp), verticalArrangement = Arrangement.spacedBy(2.dp)) {
-                        Eyebrow(stringResource(R.string.shopping_section_recipes))
-                        sources.singleOrNull()?.let {
-                            Text(
-                                stringResource(R.string.shopping_single_recipe, it),
-                                style = MaterialTheme.typography.bodySmall,
-                                color = MiseTheme.colors.inkSoft,
-                            )
-                        }
-                    }
+            // One recipe: name it once, above the list. Several: each line shows which recipes it is for.
+            val sources =
+                state.list.combined
+                    .flatMap { it.recipes }
+                    .distinct()
+            sources.singleOrNull()?.let { recipe ->
+                item(key = "single-recipe") {
+                    Text(
+                        stringResource(R.string.shopping_single_recipe, recipe),
+                        style = MaterialTheme.typography.bodySmall,
+                        color = MiseTheme.colors.inkSoft,
+                        modifier = Modifier.padding(top = 8.dp),
+                    )
                 }
-                items(state.list.combined, key = { it.key }) { line ->
+            }
+            // By department, in the order of a walk through the shop (spec §6.14).
+            state.sections.forEach { section ->
+                item(key = "department-${section.department}") {
+                    Eyebrow(departmentLabel(section.department), Modifier.padding(top = 12.dp))
+                }
+                items(section.lines, key = { it.key }) { line ->
                     LineRow(
                         line,
                         showRecipes = sources.size > 1,
@@ -146,15 +148,28 @@ fun ShoppingScreen(
                     )
                 }
             }
-            if (state.list.manual.isNotEmpty()) {
-                item(key = "manual-header") { Eyebrow(stringResource(R.string.shopping_section_manual), Modifier.padding(top = 12.dp)) }
-                items(state.list.manual, key = { it.key }) { line ->
-                    LineRow(line, onToggle = { viewModel.toggle(line) }, onDelete = { viewModel.delete(line) })
-                }
-            }
         }
     }
 }
+
+@Composable
+private fun departmentLabel(id: String): String =
+    stringResource(
+        when (id) {
+            "groente" -> R.string.shopping_department_groente
+
+            "zuivel-eieren" -> R.string.shopping_department_zuivel_eieren
+
+            "vlees-vis" -> R.string.shopping_department_vlees_vis
+
+            "brood" -> R.string.shopping_department_brood
+
+            "voorraad" -> R.string.shopping_department_voorraad
+
+            // The validator keeps departments.json to these ids; anything else is shown as Overig.
+            else -> R.string.shopping_department_overig
+        },
+    )
 
 @Composable
 private fun AddItemField(onAdd: (String) -> Unit) {

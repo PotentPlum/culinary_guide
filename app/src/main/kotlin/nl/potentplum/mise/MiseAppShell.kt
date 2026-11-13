@@ -242,6 +242,9 @@ fun MiseAppShell(
                                             ?.set(KEY_JOURNAL_SEGMENT, JournalSegment.QUESTS)
                                     },
                                     onAddKey = onAddKey,
+                                    onLesson = onLesson,
+                                    onExercise = onExercise,
+                                    onCheck = onCheck,
                                 ),
                             onOverflowItem = onOverflowItem,
                         )
