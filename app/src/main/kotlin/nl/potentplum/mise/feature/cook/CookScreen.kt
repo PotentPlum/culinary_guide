@@ -81,6 +81,7 @@ import nl.potentplum.mise.content.model.Technique
 import nl.potentplum.mise.core.designsystem.MiseTheme
 import nl.potentplum.mise.core.designsystem.component.EmptyState
 import nl.potentplum.mise.core.designsystem.component.Eyebrow
+import nl.potentplum.mise.core.designsystem.component.KeepScreenOn
 import nl.potentplum.mise.core.designsystem.component.LoadingState
 import nl.potentplum.mise.core.designsystem.component.LocalMiseSnackbar
 import nl.potentplum.mise.core.designsystem.component.TimerChip
@@ -111,11 +112,7 @@ fun CookScreen(
     var technique by rememberSaveable { mutableStateOf<String?>(null) }
     val landscape = LocalConfiguration.current.orientation == Configuration.ORIENTATION_LANDSCAPE
 
-    val view = LocalView.current
-    DisposableEffect(view) {
-        view.keepScreenOn = true
-        onDispose { view.keepScreenOn = false }
-    }
+    KeepScreenOn()
     LaunchedEffect(viewModel) {
         viewModel.events.collect { event ->
             when (event) {

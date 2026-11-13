@@ -58,8 +58,12 @@ object WprmExtractor {
         return IngredientItem(usText)
     }
 
-    /** `String(value ?? "").trim()`. */
-    private fun field(value: JsonElement?): String = if (value == null || value == JsonNull) "" else Js.trim(Js.string(value))
+    /**
+     * The field as plain text. WPRM stores names and notes as HTML (links to other recipes, `&amp;`), so they are cleaned
+     * like JSON-LD text before anything shows them.
+     */
+    private fun field(value: JsonElement?): String =
+        if (value == null || value == JsonNull) "" else JsonLdRecipeParser.cleanText(Js.string(value))
 
     private fun text(
         amount: String,

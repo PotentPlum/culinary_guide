@@ -102,7 +102,7 @@ fun TonightCard(
             Eyebrow(stringResource(R.string.today_tonight_title), color = MaterialTheme.colorScheme.primary)
             Text(title, style = MaterialTheme.typography.headlineSmall.dutchHyphenated())
             TotalTime(totalMinutes)
-            Button(onClick = onCook, modifier = Modifier.fillMaxWidth()) { Text(stringResource(R.string.recipes_cooking_mode)) }
+            Button(onClick = onCook, modifier = Modifier.fillMaxWidth()) { Text(stringResource(R.string.cook_step_by_step)) }
             ActionRow(Modifier.fillMaxWidth(), alignment = Alignment.Start, fill = true) {
                 OutlinedButton(onClick = onAddToShopping) { Text(stringResource(R.string.recipe_add_to_shopping)) }
                 TextButton(onClick = onUnpin) { Text(stringResource(R.string.today_tonight_unpin)) }

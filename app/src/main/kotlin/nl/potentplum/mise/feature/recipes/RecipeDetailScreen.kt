@@ -59,6 +59,7 @@ import nl.potentplum.mise.core.designsystem.component.EmptyState
 import nl.potentplum.mise.core.designsystem.component.Eyebrow
 import nl.potentplum.mise.core.designsystem.component.FacetChip
 import nl.potentplum.mise.core.designsystem.component.FacetChips
+import nl.potentplum.mise.core.designsystem.component.KeepScreenOn
 import nl.potentplum.mise.core.designsystem.component.LoadingState
 import nl.potentplum.mise.core.designsystem.component.LocalMiseSnackbar
 import nl.potentplum.mise.core.designsystem.component.MenuEntry
@@ -91,6 +92,9 @@ fun RecipeDetailScreen(
     val recipe = state.recipe
     var evaluating by rememberSaveable { mutableStateOf(false) }
     var addingToShopping by rememberSaveable { mutableStateOf(false) }
+    // Kookmodus: the screen stays on while this page is open (spec §6.8). Off by default; kept across Stap voor stap.
+    var cookingMode by rememberSaveable { mutableStateOf(false) }
+    if (cookingMode) KeepScreenOn()
     LaunchedEffect(viewModel) {
         viewModel.events.collect { event ->
             when (event) {
@@ -156,6 +160,8 @@ fun RecipeDetailScreen(
             if (recipe != null) {
                 RecipeActionBar(
                     resumeStep = state.resumeStep,
+                    cookingMode = cookingMode,
+                    onCookingMode = { cookingMode = it },
                     onCook = { onCook(recipe.id, state.servings) },
                     onCooked = { evaluating = true },
                 )

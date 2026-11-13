@@ -45,7 +45,14 @@ class EnrichmentFixture(
             .inMemoryDatabaseBuilder(ApplicationProvider.getApplicationContext<Context>(), MiseDatabase::class.java)
             .allowMainThreadQueries()
             .build()
-    val recipes = RecipeRepository(db.recipeDao(), db.attemptDao(), FakeContentRepository(), MiseClock.fixed(LocalDate.of(2026, 10, 22)))
+    val recipes =
+        RecipeRepository(
+            db.recipeDao(),
+            db.attemptDao(),
+            db.questDao(),
+            FakeContentRepository(),
+            MiseClock.fixed(LocalDate.of(2026, 10, 22)),
+        )
     val secrets =
         SecretStore(
             PreferenceDataStoreFactory.create(scope = scope) { File(folder, "secrets.preferences_pb") },

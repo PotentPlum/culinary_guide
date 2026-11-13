@@ -254,7 +254,7 @@ Vandaag answers "wat kook ik vandaag?" and gets you from the answer to cooking. 
 
 1. Hero: eyebrow "NEDERLAND · {Maand} {jaar}", title "Wat kook ik *vandaag*?" (`today_hero_title`).
 2. **Vanavond** (only when a recipe is pinned for today): `TonightCard` with the recipe, total time and three actions:
-   **Kookmodus**, **Op boodschappenlijst** (scaled, §6.14) and **Toch niet** (unpins). The pin expires at the end of the day and is
+   **Stap voor stap**, **Op boodschappenlijst** (scaled, §6.14) and **Toch niet** (unpins). The pin expires at the end of the day and is
    cleared when an attempt is logged for that recipe. While a recipe is pinned, the suggestions below are collapsed under "Andere ideeën".
 3. **Suggesties**: 3 recipes from the library, ranked by §11.5. Each `SuggestionCard` shows the total time and a reason line, e.g.
    "Pompoen en boerenkool zijn op hun best · 6 weken niet gekookt", plus two actions:
@@ -358,8 +358,10 @@ The seasonal tally lives on Dagboek only (§6.13); Vandaag stays about today. Wo
   and the attempts for this recipe with photos.
 - Imported website metadata (rating, date published, keywords, diet labels, nutrition, video) is stored in `sourceMeta`
   but **not displayed**.
-- **Layout of actions:** a sticky `RecipeActionBar` at the bottom with **Kookmodus** (primary; "Verder bij stap {n}" when a cook
-  session for this recipe is open, §6.10) and **Gekookt** (→ evaluation §6.12). The top app bar holds the favourite toggle and ⋮ with
+- **Layout of actions:** a sticky `RecipeActionBar` at the bottom. On top a **Kookmodus** switch ("Scherm blijft aan"): while it
+  is on, the screen stays on as long as the recipe page (or Stap voor stap, opened from it) is open, so you can cook from the
+  page itself. It starts off on every visit. Below it **Stap voor stap** (primary; "Verder bij stap {n}" when a cook session for
+  this recipe is open, §6.10) and **Gekookt** (→ evaluation §6.12). The top app bar holds the favourite toggle and ⋮ with
   **Dit kook ik vanavond**, Bewerken, Delen (as text) and Verwijderen (with undo). "Op boodschappenlijst" sits with the ingredients.
 - **Order of sections** (cook-first): image and title, times and servings, ingredients, steps, Technieken in dit recept, then the
   reference material (extra fields, tags, notes, cooked count, attempts).
@@ -396,7 +398,9 @@ The seasonal tally lives on Dagboek only (§6.13); Vandaag stays about today. Wo
 - Duplicate detection: the same canonical URL already in the library → "Dit recept heb je al", with the option to open it or import a copy.
 - Images are downloaded and stored locally (§7.4), so the library works offline.
 
-### 6.10 Kookmodus
+### 6.10 Stap voor stap
+
+"Kookmodus" means the screen stays on (§6.8), as in the web app; the guided view below is **Stap voor stap**.
 
 - A full-screen, step-by-step pager: one step per page, large type (scales with the system font), group name as an eyebrow,
   progress "Stap 3 van 9" with a thin progress bar. Swipe or tap the large buttons: a 56 dp **Vorige stap** icon button and a
@@ -406,9 +410,10 @@ The seasonal tally lives on Dagboek only (§6.13); Vandaag stays about today. Wo
   ingredients panel is one tap away (bottom sheet) behind a labelled **Ingrediënten** button in the top bar. Both show the
   scaled amounts.
 - Below each step (except the last) a **Hierna** preview shows the next step's text, so it can be got ready in time.
-- The screen stays on (`FLAG_KEEP_SCREEN_ON`) while cook mode is visible.
+- The screen stays on (`FLAG_KEEP_SCREEN_ON`) while Stap voor stap is visible. Keeping the screen on is counted per screen
+  (`KeepScreenOn`), so the recipe page in Kookmodus and Stap voor stap never switch it off for each other.
 - **Cook session:** one open session at a time (§7.3): recipe, current step, servings, ingredient ticks and started timers. It is
-  saved on every change, so leaving and coming back (or process death) resumes at the same step: the recipe's Kookmodus button reads
+  saved on every change, so leaving and coming back (or process death) resumes at the same step: the recipe's Stap voor stap button reads
   "Verder bij stap {n}". It is cleared when an attempt is logged for the recipe, or after 24 hours.
 - **Timers use the phone's Clock app:** tapping a timer chip (§11.3) fires `AlarmClock.ACTION_SET_TIMER` with
   `EXTRA_LENGTH`, `EXTRA_MESSAGE` = "Mise · Stap 4" and `EXTRA_SKIP_UI = true`, so the timer starts without leaving cook mode.
@@ -608,6 +613,8 @@ IDs are UUID strings; timestamps are epoch millis (UTC). Lists that are only eve
 - Derived values (never stored): cooked count, last cooked date, prep-time bucket (§8.4).
 - Attempts keep **snapshots**, so the journal doesn't change when a recipe is edited later.
 - Deleting a recipe keeps its attempts (`recipeId` set to null) so journal history survives. Deleting a quest deletes its hidden recipe.
+  Deleting a quest's recipe that was saved to the library (Bewaar recept in bibliotheek) only takes it out of the library: the
+  quest keeps its recipe, and undo puts it back.
 - Schema changes go through numbered Room migrations with a `MigrationTestHelper` test. **Never** use destructive migration.
   v1 → v2 (`MIGRATION_1_2`) adds the three curriculum tables, with indexes on `curriculum_check(moduleId, takenAt)` and
   `curriculum_evidence(exerciseId, loggedAt)`. Curriculum rows refer to curriculum ids, which never change, so a content update

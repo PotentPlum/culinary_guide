@@ -133,6 +133,13 @@ interface RecipeDao {
     @Query("SELECT t.* FROM recipe_tag t JOIN recipe r ON t.recipeId = r.id WHERE r.inLibrary = 1")
     fun observeLibraryTags(): Flow<List<RecipeTagEntity>>
 
+    /** Leaves `updatedAt` alone: moving a quest's recipe in or out of the library is not an edit. */
+    @Query("UPDATE recipe SET inLibrary = :inLibrary WHERE id = :id")
+    suspend fun setInLibrary(
+        id: String,
+        inLibrary: Boolean,
+    )
+
     @Query("UPDATE recipe SET isFavorite = :favorite, updatedAt = :now WHERE id = :id")
     suspend fun setFavorite(
         id: String,

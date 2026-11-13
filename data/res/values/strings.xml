@@ -104,6 +104,7 @@
     <string name="recipes_search_clear_aria_label">Zoekopdracht wissen</string>
     <string name="recipes_cooking_mode">Kookmodus</string>
     <string name="recipes_cooking_mode_active">Scherm blijft aan</string>
+    <string name="cook_step_by_step">Stap voor stap</string>
     <string name="recipes_label_author">Recept van</string>
     <string name="recipes_empty_title">Nog geen recepten</string>
     <string name="recipes_empty_sub">Voeg je eerste recept toe via een link of een foto van een kookboek.</string>
@@ -292,7 +293,7 @@
     <string name="cook_timers_title">Lopende timers</string>
     <string name="cook_previous">Vorige stap</string>
     <string name="cook_next">Volgende stap</string>
-    <string name="cook_close">Kookmodus sluiten</string>
+    <string name="cook_close">Stap voor stap sluiten</string>
     <string name="cook_ingredients">Ingrediënten</string>
     <string name="cook_next_preview">Hierna</string>
     <string name="cook_technique_info">Over %1$s</string>

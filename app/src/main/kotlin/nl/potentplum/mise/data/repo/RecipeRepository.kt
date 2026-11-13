@@ -7,6 +7,7 @@ import kotlinx.coroutines.flow.map
 import nl.potentplum.mise.content.ContentRepository
 import nl.potentplum.mise.core.util.MiseClock
 import nl.potentplum.mise.data.db.dao.AttemptDao
+import nl.potentplum.mise.data.db.dao.QuestDao
 import nl.potentplum.mise.data.db.dao.RecipeDao
 import nl.potentplum.mise.data.db.entity.EnrichState
 import nl.potentplum.mise.data.db.entity.TagKey
@@ -21,6 +22,8 @@ import javax.inject.Singleton
 data class DeletedRecipe(
     val recipe: Recipe,
     val attemptIds: List<String>,
+    /** A quest's recipe that was only taken out of the library; the quest still has it. */
+    val keptForQuest: Boolean = false,
 )
 
 /** Recipes: the whole graph read and written in one transaction, and the library as [LibraryItem]s (spec §6.7, §7.2). */
@@ -30,6 +33,7 @@ class RecipeRepository
     constructor(
         private val recipeDao: RecipeDao,
         private val attemptDao: AttemptDao,
+        private val questDao: QuestDao,
         private val content: ContentRepository,
         private val clock: MiseClock,
     ) {
@@ -65,18 +69,31 @@ class RecipeRepository
             state: EnrichState,
         ) = recipeDao.setEnrichState(id, state)
 
-        /** Attempts keep their snapshots; their `recipeId` becomes null (spec §7.2). */
-        suspend fun delete(id: String) = recipeDao.delete(id)
+        /**
+         * Attempts keep their snapshots; their `recipeId` becomes null (spec §7.2). A quest's recipe saved to the library
+         * only leaves the library: the quest still needs it (and the database would refuse the delete).
+         */
+        suspend fun delete(id: String) {
+            if (questDao.forRecipe(id) != null) recipeDao.setInLibrary(id, false) else recipeDao.delete(id)
+        }
 
         /** Deletes the recipe but remembers it and its attempts, so [restore] can undo it exactly. */
         suspend fun deleteForUndo(id: String): DeletedRecipe? {
             val recipe = get(id) ?: return null
+            if (questDao.forRecipe(id) != null) {
+                recipeDao.setInLibrary(id, false)
+                return DeletedRecipe(recipe, emptyList(), keptForQuest = true)
+            }
             val attemptIds = attemptDao.idsForRecipe(id)
             recipeDao.delete(id)
             return DeletedRecipe(recipe, attemptIds)
         }
 
         suspend fun restore(deleted: DeletedRecipe) {
+            if (deleted.keptForQuest) {
+                recipeDao.setInLibrary(deleted.recipe.id, deleted.recipe.inLibrary)
+                return
+            }
             val rows = RecipeRows(deleted.recipe)
             recipeDao.replaceGraph(
                 rows.recipe,

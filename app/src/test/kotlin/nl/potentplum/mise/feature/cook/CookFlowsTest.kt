@@ -1,14 +1,19 @@
 package nl.potentplum.mise.feature.cook
 
+import android.view.View
+import android.view.ViewGroup
 import androidx.compose.ui.semantics.SemanticsActions
 import androidx.compose.ui.test.assertCountEquals
 import androidx.compose.ui.test.hasClickAction
 import androidx.compose.ui.test.hasContentDescription
 import androidx.compose.ui.test.hasText
+import androidx.compose.ui.test.isOn
+import androidx.compose.ui.test.isToggleable
 import androidx.compose.ui.test.junit4.createAndroidComposeRule
 import androidx.compose.ui.test.onAllNodesWithContentDescription
 import androidx.compose.ui.test.onAllNodesWithText
 import androidx.compose.ui.test.onFirst
+import androidx.compose.ui.test.performClick
 import androidx.compose.ui.test.performSemanticsAction
 import dagger.hilt.android.testing.HiltAndroidRule
 import dagger.hilt.android.testing.HiltAndroidTest
@@ -44,6 +49,7 @@ import nl.potentplum.mise.testing.FakeClockTimers
 import nl.potentplum.mise.testing.REVEAL_TIMEOUT_MILLIS
 import nl.potentplum.mise.testing.reveal
 import org.junit.Assert.assertEquals
+import org.junit.Assert.assertFalse
 import org.junit.Assert.assertNull
 import org.junit.Assert.assertTrue
 import org.junit.Before
@@ -161,8 +167,45 @@ class CookFlowsTest {
     private fun startCooking() {
         launch()
         waitFor("Pompoen met boerenkool")
-        click("Kookmodus")
+        click("Stap voor stap")
         waitFor("Stap 1 van 4")
+    }
+
+    /** Whether any view in the window asks to keep the screen on (that sets `FLAG_KEEP_SCREEN_ON`). */
+    private fun screenOn(): Boolean {
+        fun on(view: View): Boolean = view.keepScreenOn || (view is ViewGroup && (0 until view.childCount).any { on(view.getChildAt(it)) })
+        return on(compose.activity.window.decorView)
+    }
+
+    @Test
+    fun `Kookmodus keeps the screen on from the recipe page, also through Stap voor stap`() {
+        launch()
+        waitFor("Pompoen met boerenkool")
+        assertFalse(screenOn())
+        compose.onNode(hasText("Kookmodus") and isToggleable()).performClick()
+        compose.waitUntil(REVEAL_TIMEOUT_MILLIS) { screenOn() }
+
+        // Stap voor stap keeps it on too; coming back, the recipe page still has Kookmodus on.
+        click("Stap voor stap")
+        waitFor("Stap 1 van 4")
+        assertTrue(screenOn())
+        clickDescribed("Stap voor stap sluiten")
+        compose.waitUntil(REVEAL_TIMEOUT_MILLIS) { compose.onAllNodes(hasText("Kookmodus") and isOn()).fetchSemanticsNodes().isNotEmpty() }
+        compose.waitForIdle()
+        assertTrue(screenOn())
+
+        compose.onNode(hasText("Kookmodus") and isToggleable()).performClick()
+        compose.waitUntil(REVEAL_TIMEOUT_MILLIS) { !screenOn() }
+    }
+
+    @Test
+    fun `Stap voor stap alone keeps the screen on only while it is open`() {
+        startCooking()
+        assertTrue(screenOn())
+        clickDescribed("Stap voor stap sluiten")
+        waitFor("Kookmodus")
+        compose.waitForIdle()
+        assertFalse(screenOn())
     }
 
     @Test
@@ -174,7 +217,7 @@ class CookFlowsTest {
         waitFor("Stap 3 van 4")
         compose.waitUntil(REVEAL_TIMEOUT_MILLIS) { session()?.stepIndex == 2 }
 
-        clickDescribed("Kookmodus sluiten")
+        clickDescribed("Stap voor stap sluiten")
         // Not at the last step yet: no question, straight back.
         waitFor("Verder bij stap 3")
         assertTrue(!shown("Heb je dit gekookt?"))
@@ -239,7 +282,7 @@ class CookFlowsTest {
         waitFor("Stap 4 van 4")
         waitFor("Klaar met koken")
 
-        clickDescribed("Kookmodus sluiten")
+        clickDescribed("Stap voor stap sluiten")
         waitFor("Heb je dit gekookt?")
         click("Vastleggen")
         waitFor("Hoe ging het?")
