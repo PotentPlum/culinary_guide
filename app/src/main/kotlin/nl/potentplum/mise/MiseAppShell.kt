@@ -57,11 +57,16 @@ import nl.potentplum.mise.core.designsystem.component.LocalMiseSnackbar
 import nl.potentplum.mise.core.designsystem.component.MiseSnackbar
 import nl.potentplum.mise.core.designsystem.component.OverflowItem
 import nl.potentplum.mise.core.navigation.AboutRoute
+import nl.potentplum.mise.core.navigation.CheckRoute
 import nl.potentplum.mise.core.navigation.CookRoute
+import nl.potentplum.mise.core.navigation.CourseRoute
+import nl.potentplum.mise.core.navigation.CurriculumRoute
+import nl.potentplum.mise.core.navigation.ExerciseRoute
 import nl.potentplum.mise.core.navigation.ImportLinkRoute
 import nl.potentplum.mise.core.navigation.JournalGraph
 import nl.potentplum.mise.core.navigation.JournalRoute
 import nl.potentplum.mise.core.navigation.KeyRoute
+import nl.potentplum.mise.core.navigation.LessonRoute
 import nl.potentplum.mise.core.navigation.OnboardingRoute
 import nl.potentplum.mise.core.navigation.PhotoImportRoute
 import nl.potentplum.mise.core.navigation.QuestRefineRoute
@@ -82,6 +87,11 @@ import nl.potentplum.mise.core.navigation.TodayRoute
 import nl.potentplum.mise.core.navigation.VegetableRoute
 import nl.potentplum.mise.feature.PlaceholderScreen
 import nl.potentplum.mise.feature.cook.CookScreen
+import nl.potentplum.mise.feature.curriculum.CheckScreen
+import nl.potentplum.mise.feature.curriculum.CourseScreen
+import nl.potentplum.mise.feature.curriculum.CurriculumScreen
+import nl.potentplum.mise.feature.curriculum.ExerciseScreen
+import nl.potentplum.mise.feature.curriculum.LessonScreen
 import nl.potentplum.mise.feature.journal.JournalScreen
 import nl.potentplum.mise.feature.journal.JournalSegment
 import nl.potentplum.mise.feature.onboarding.FirstRecipeChoice
@@ -139,6 +149,7 @@ fun MiseAppShell(
         navController.navigate(
             when (item) {
                 OverflowItem.Techniques -> TechniquesRoute
+                OverflowItem.Curriculum -> CurriculumRoute
                 OverflowItem.Settings -> SettingsRoute
                 OverflowItem.About -> AboutRoute
             },
@@ -147,6 +158,10 @@ fun MiseAppShell(
     val onBack: () -> Unit = { navController.navigateUp() }
     val onVegetable: (String) -> Unit = { navController.navigate(VegetableRoute(it)) }
     val onTechnique: (String) -> Unit = { navController.navigate(TechniqueRoute(it)) }
+    val onCourse: (String) -> Unit = { navController.navigate(CourseRoute(it)) }
+    val onLesson: (String) -> Unit = { navController.navigate(LessonRoute(it)) }
+    val onExercise: (String) -> Unit = { navController.navigate(ExerciseRoute(it)) }
+    val onCheck: (String) -> Unit = { navController.navigate(CheckRoute(it)) }
     val onRecipe: (String) -> Unit = { navController.navigate(RecipeRoute(it)) }
     val onAddKey: () -> Unit = { navController.navigate(KeyRoute) { launchSingleTop = true } }
 
@@ -271,6 +286,36 @@ fun MiseAppShell(
                         onOverflowItem = onOverflowItem,
                     )
                 }
+                composable<CurriculumRoute> {
+                    CurriculumScreen(
+                        onBack = onBack,
+                        onCourse = onCourse,
+                        onLesson = onLesson,
+                        onExercise = onExercise,
+                        onCheck = onCheck,
+                        onOverflowItem = onOverflowItem,
+                    )
+                }
+                composable<CourseRoute> {
+                    CourseScreen(
+                        onBack = onBack,
+                        onCourse = onCourse,
+                        onLesson = onLesson,
+                        onExercise = onExercise,
+                        onCheck = onCheck,
+                        onOverflowItem = onOverflowItem,
+                    )
+                }
+                composable<LessonRoute> {
+                    LessonScreen(
+                        onBack = onBack,
+                        // The next lesson replaces this one, so back returns to the course.
+                        onLesson = { next -> navController.navigate(LessonRoute(next)) { popUpTo<LessonRoute> { inclusive = true } } },
+                        onOverflowItem = onOverflowItem,
+                    )
+                }
+                composable<ExerciseRoute> { ExerciseScreen(onBack = onBack, onOverflowItem = onOverflowItem) }
+                composable<CheckRoute> { CheckScreen(onBack = onBack, onOverflowItem = onOverflowItem) }
                 composable<SettingsRoute> {
                     SettingsScreen(
                         onBack = onBack,

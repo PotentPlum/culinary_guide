@@ -12,7 +12,6 @@ import nl.potentplum.mise.domain.CheckResult
 import nl.potentplum.mise.domain.CurriculumProgress
 import nl.potentplum.mise.ingest.ImageStore
 import java.time.LocalDate
-import java.time.ZoneId
 import java.util.UUID
 import javax.inject.Inject
 import javax.inject.Singleton
@@ -107,12 +106,8 @@ class CurriculumProgressRepository
             } else {
                 day
                     .atTime(12, 0)
-                    .atZone(ZONE)
+                    .atZone(MiseClock.ZONE)
                     .toInstant()
                     .toEpochMilli()
             }
-
-        private companion object {
-            val ZONE: ZoneId = ZoneId.of("Europe/Amsterdam")
-        }
     }

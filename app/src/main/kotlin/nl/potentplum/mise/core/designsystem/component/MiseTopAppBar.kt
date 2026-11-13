@@ -25,7 +25,7 @@ import nl.potentplum.mise.R
 import nl.potentplum.mise.core.designsystem.MiseTheme
 
 /** The overflow menu every top app bar carries (spec §6.1). */
-enum class OverflowItem { Techniques, Settings, About }
+enum class OverflowItem { Techniques, Curriculum, Settings, About }
 
 /** A screen's own ⋮ entry, listed above the app-wide ones. */
 data class MenuEntry(
@@ -33,7 +33,7 @@ data class MenuEntry(
     val onClick: () -> Unit,
 )
 
-/** A top app bar with an optional back arrow, screen [actions], and the ⋮ menu: Technieken, Instellingen, Over Mise. */
+/** A top app bar with an optional back arrow, screen [actions], and the ⋮ menu: Technieken, Opleiding, Instellingen, Over Mise. */
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun MiseTopAppBar(
@@ -92,6 +92,7 @@ private val OverflowItem.labelRes: Int
     get() =
         when (this) {
             OverflowItem.Techniques -> R.string.nav_techniques
+            OverflowItem.Curriculum -> R.string.nav_curriculum
             OverflowItem.Settings -> R.string.menu_settings
             OverflowItem.About -> R.string.menu_about
         }

@@ -40,6 +40,10 @@ data object JournalRoute
 @Serializable
 data object TechniquesRoute
 
+/** Opleiding, the culinary curriculum (spec §6.17). */
+@Serializable
+data object CurriculumRoute
+
 @Serializable
 data object SettingsRoute
 
@@ -116,4 +120,27 @@ data class CookRoute(
     val recipeId: String,
     /** The servings chosen on recipe detail; an open session's servings win. */
     val servings: Int? = null,
+)
+
+// Opleiding (spec §6.17). Ids are curriculum ids ("EGG-1", "EGG-1.M2.L1"), which never change.
+
+@Serializable
+data class CourseRoute(
+    val id: String,
+)
+
+@Serializable
+data class LessonRoute(
+    val id: String,
+)
+
+@Serializable
+data class ExerciseRoute(
+    val id: String,
+)
+
+/** A module's knowledge check. */
+@Serializable
+data class CheckRoute(
+    val moduleId: String,
 )
