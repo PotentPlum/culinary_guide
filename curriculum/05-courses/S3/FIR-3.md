@@ -771,7 +771,7 @@ charcoal; the sauce and slaw ingredients.
 - **Steak on the coals:** a thick steak laid directly on glowing lump charcoal (ash blown off), turned once; by the
   steak row of §9.
 - **Plancha or skillet over the fire:** a cast-iron pan on the grate for food that would fall through or needs fat:
-  small fish, mushrooms, eggs, flatbread with oil.
+  small fish, mushrooms, eggs, flatbread with oil. The fish is probed to 63 °C (the fish row of §9).
 - **[J] Char as flavour or as burnt:** the char on a skin that is peeled away, or a thin blistering, is flavour; black,
   bitter char on the eaten surface is a fault.
 
@@ -904,8 +904,8 @@ fire safety); guest cards; a written post-mortem.
 **Evidence:** written, log, photo, tasters:
 - **`KM-PLAN` level 4:** a two-day plan with control points for the menu; the log shows every control point met or a
   reasoned change.
-- **`TS-FIRE` level 3, further evidence:** the first of the live-fire meals that level 4 asks for (three occasions in
-  at least two conditions, completed in S4 and the capstone).
+- **`TS-FIRE` level 3, further evidence:** the first of the live-fire meals that level 4 asks for (three occasions in at
+  least two conditions, completed in S5, `IND-5.M5.X1`).
 - The log also counts as one of the productions of `SA-HYG` and `SA-PHYS` level 5 (`SAF-3.M2.X1`).
 
 **Time:** 2 h planning and shopping, 3.5 h on the day.

@@ -270,7 +270,7 @@ records the fix in the log below; the reader then reads the row again.
 
 | Item | Question | Answer | Why | §9 row | Verdict | Note |
 |---|---|---|---|---|---|---|
-| FLV-3.M1.Q7 | How is a homemade herb oil stored? A) in a bottle on the shelf B) in the fridge, used within days C) in the sun D) for months in the cupboard | B | Herbs in oil need refrigeration (assessment §9). | Garlic or herbs in oil |  |  |
+| FLV-3.M1.Q7 | How is a homemade herb oil stored? A) in a bottle on the shelf B) in the fridge, used within 2 days C) in the sun D) for months in the cupboard | B | Herbs in oil need refrigeration (assessment §9). | Garlic or herbs in oil |  |  |
 | FLV-3.M4.Q8 | A guest has a tree-nut allergy and your recipe uses toasted hazelnuts for crunch. What do you do? A) use fewer B) replace them with toasted seeds or crumbs, check those labels, and keep tools apart C) pick them off the guest's plate D) nothing | B | Allergen rule (`SAF-1.M4`). | — `FLV-3.M4.L2` |  |  |
 
 ### BUT-3 — Home butchery and fabrication
@@ -351,7 +351,7 @@ records the fix in the log below; the reader then reads the row again.
 | PRS-3.M4.Q3 | A curing salt contains 0.6 % sodium nitrite. Roughly how much nitrite ion is added per kg of meat with 20 g of this salt? (Sodium nitrite × 0.67 = nitrite ion.) | About 80 mg (20 g × 0.006 = 120 mg sodium nitrite; × 0.67 ≈ 80 mg) | At the §9 limit of 80 mg/kg. | Nitrite curing salt |  |  |
 | PRS-3.M4.Q4 | Your pork belly has been cured with plain salt. How is it eaten? A) raw, thinly sliced B) cooked to its §9 figure C) air-dried for a month D) smoked cold | B | No nitrite, so it is cooked. | Nitrite curing salt; Cooking fish and intact meat |  |  |
 | PRS-3.M4.Q5 | How long is duck confit kept in the fridge in this program? A) months under fat B) at most 2 days; frozen in its fat for longer C) a week D) until it smells | B | §9 leftovers rule; no checked longer figure. | Leftovers in the fridge |  |  |
-| PRS-3.M4.Q6 | Garlic confit in oil is stored: A) on the shelf B) in the fridge and used within days, or frozen C) in the sun D) for months | B | Garlic in oil (§9). | Garlic or herbs in oil |  |  |
+| PRS-3.M4.Q6 | Garlic confit in oil is stored: A) on the shelf B) in the fridge and used within 2 days, or frozen C) in the sun D) for months | B | Garlic in oil (§9). | Garlic or herbs in oil |  |  |
 | PRS-3.M5.Q3 | You put home-dried tomatoes into oil. How is the jar kept? A) on the shelf B) in the fridge and used soon C) in the sun D) for a year | B | An oil preserve (§9). | Garlic or herbs in oil; Home preserving |  |  |
 | PRS-3.M5.Q8 | You made a low-sugar plum jam without a tested canning method. How is it kept? A) in the cupboard for a year B) in the fridge or the freezer C) on the windowsill D) under wax | B | Less sugar, less preserving power. | Home preserving |  |  |
 

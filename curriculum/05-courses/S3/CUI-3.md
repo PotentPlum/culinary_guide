@@ -1192,7 +1192,7 @@ dish with a written reason; spices layered (start and finish); couscous steamed 
   *masala* with water, stock, yoghurt or coconut milk; finished with *garam masala* and fresh coriander.
 - **[J] Balancing heat and acid:** chilli in steps (`FLV-3.M2.L4`); acid from tomato, yoghurt, tamarind, lemon or
   vinegar; a pinch of sugar or jaggery to round; salt last.
-- **Safety:** chicken to 75 °C; yoghurt added off the boil or stabilised so it doesn't split.
+- **Safety:** chicken to 75 °C; yoghurt added off the boil so it doesn't split.
 
 **Sessions:**
 1. A *masala* (60 min): the base built step by step; the "oil separates" stage photographed.
@@ -1970,9 +1970,9 @@ cards on recognition.
 <!-- END generated:lesson-cui-3-m9-l4 -->
 
 **Concepts:**
-- **The meal:** warm tortillas, two salsas (one fresh, one cooked), a braise or a grilled centre (`FIR-3`), beans, a fresh
-  side (a cabbage and radish slaw, sliced radishes, pickled onions), and an *agua fresca* (for example with Dutch
-  rhubarb, cucumber and lime, or dried hibiscus flowers).
+- **The meal:** warm tortillas, two salsas (one fresh, one cooked), a braise or a grilled centre (`FIR-3`), beans, a
+  fresh side (a cabbage and radish slaw, sliced radishes, pickled onions), and an *agua fresca* (for example with Dutch
+  rhubarb, the stalks only, cucumber and lime, or dried hibiscus flowers).
 - **[J] Heat levels for the table:** the main dishes moderately hot; the heat added at the table through salsas of
   different strengths, labelled; a mild option for children and guests who don't like heat.
 - **Timing:** the braise ahead, the salsas and slaw ahead (kept cold), the tortillas cooked last and kept warm.

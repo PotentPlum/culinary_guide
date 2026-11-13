@@ -221,8 +221,8 @@ of `GRD-3.M1.L1` and the cards of `GRD-3.M1.X1`.
     herbs; tahini dressing: tahini, lemon, water and garlic.
 - **[K] Stability:** a temporary emulsion (vinaigrette) separates and is re-shaken; an emulsifier (mustard, egg yolk,
   tahini, honey) holds it; dairy bases are stable but thin with acid and salt over hours.
-- **Repairing a broken emulsion:** a fresh yolk or a spoon of mustard in a clean bowl, the broken sauce whisked in drop
-  by drop (`SAU-2.M4`).
+- **Repairing a broken emulsion:** a pasteurised yolk (the raw-egg row of §9) or a spoon of mustard in a clean bowl, the
+  broken sauce whisked in drop by drop (`SAU-2.M4`).
 - **Storing:** dressings with dairy, egg or fresh garlic in the fridge, used within 2 days (assessment §9); a plain
   vinaigrette keeps longer in the fridge.
 
@@ -318,7 +318,7 @@ broken emulsion repaired on video; each sauce chosen for a dish with a reason; t
 |---|---|---|---|---|---|---|
 | GRD-3.M2.Q1 | multiple choice | GRD-3.M2.L1 | — | What is the classic vinaigrette ratio by volume? A) 1 oil : 1 acid B) about 3 oil : 1 acid C) 10 oil : 1 acid D) 1 oil : 3 acid | B | A starting point, varied to taste. |
 | GRD-3.M2.Q2 | multiple choice | GRD-3.M2.L1 | — | Which ingredient makes a vinaigrette hold longer? A) salt B) mustard C) pepper D) water | B | An emulsifier. |
-| GRD-3.M2.Q3 | multiple choice | GRD-3.M2.L1 | — | A dressing based on mayonnaise breaks. How do you repair it? A) add more oil quickly B) whisk it drop by drop into a fresh yolk or a spoon of mustard in a clean bowl C) heat it D) add water all at once | B | Restart the emulsion. |
+| GRD-3.M2.Q3 | multiple choice | GRD-3.M2.L1 | — | A dressing based on mayonnaise breaks. How do you repair it? A) add more oil quickly B) whisk it drop by drop into a pasteurised yolk or a spoon of mustard in a clean bowl C) heat it D) add water all at once | B | Restart the emulsion. |
 | GRD-3.M2.Q4 | multiple choice | GRD-3.M2.L1 | yes | How long does a buttermilk-herb dressing with fresh garlic keep? A) a month B) at most 2 days in the fridge C) a week on the counter D) indefinitely | B | Assessment §9 leftovers rule; garlic needs refrigeration. |
 | GRD-3.M2.Q5 | multiple choice | GRD-3.M2.L2 | — | Why is cucumber salted and drained for *tzatziki*? A) for colour B) to draw out water so the sauce stays thick C) to soften it D) tradition | B | Otherwise it turns watery. |
 | GRD-3.M2.Q6 | multiple choice | GRD-3.M2.L2 | — | Which sauce suits a grilled steak? A) *tzatziki* B) *chimichurri* C) custard D) *béchamel* | B | Herby and acid against grilled meat. |
@@ -529,7 +529,8 @@ fridge temperature, cure time, storage).
 - **The core temperature** (assessment §9): a terrine of minced pork, or one containing poultry or chicken livers,
   reaches 75 °C at the centre (the minced and poultry rows). The probe goes into the very centre.
 - **Pressing and resting:** weighted overnight in the fridge (a board and tins) so it slices cleanly; cooled by the
-  cooling standard first (out of the water bath, onto a rack, into the fridge within the 2-hour limit).
+  cooling standard first (out of the water bath onto a rack, from 57 °C to 21 °C within 2 hours and to 5 °C or below
+  within 6 hours in total, in the fridge; assessment §9).
 - **A chicken-liver pâté** is the smooth alternative: livers cooked in butter to 75 °C at the centre, blended with butter
   and a little alcohol, set in ramekins and sealed with butter. It is not served in pregnancy (liver, the risk-group
   row of §9 [S46]); a pork terrine without liver is the alternative.

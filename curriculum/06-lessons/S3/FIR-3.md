@@ -364,7 +364,7 @@ a crumble.
 | Lost vegetables | Thin courgette ribbons falling through the grate | Cut thick, or lengthwise |
 | Doughy bread | A thick flatbread raw inside | Roll it thin |
 
-**Safety:** the herb oil from the fridge, used within days (assessment §9); hot peppers peeled when cool enough to hold.
+**Safety:** the herb oil from the fridge, used within 2 days (assessment §9); hot peppers peeled when cool enough to hold.
 
 **Record:** photos; a note on which vegetable you blanched and why.
 
@@ -767,8 +767,8 @@ served on the side, or tossed through pulled meat just before serving.
 | A heavy plate | No acid on the plate | A vinegar sauce, a slaw or a pickle |
 | A watery slaw | A slaw dressed hours ahead | Dress it shortly before serving |
 
-**Safety:** a sauce brush used on raw meat is not used on cooked meat; the sauces are kept in the fridge and used
-within days. The slaw is kept cold until it is served.
+**Safety:** a sauce brush used on raw meat is not used on cooked meat; the sauces are kept in the fridge and used within
+2 days (assessment §9). The slaw is kept cold until it is served.
 
 **Record:** both sauces as recipe cards; the tasting form.
 

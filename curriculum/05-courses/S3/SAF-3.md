@@ -166,7 +166,7 @@ At 5 / 6.5 / 8 hours a week the course takes about **1.4 / 1.1 / 0.9 weeks** of 
 
   The cures of `PRS-3` are cooked or frozen before eating and use plain salt; the nitrite rule is taught so the learner
   can read a recipe that asks for it.
-- **Fermentation** (§9). Salt at 2.25–2.5 % of the vegetables' weight, the vegetables under the brine, and a cool room
+- **Fermentation** (§9). Salt at 2.25–2.5 % of the vegetables' weight, the vegetables under the brine, and a room
   (sauerkraut ferments in about 3–4 weeks at 21–24 °C). Discard a ferment with fuzzy or coloured mould, a slimy or soft
   texture, or a rotten smell; a flat white film (*kahm* yeast) is skimmed. `PRS-3.M3` practises it.
 - **Sous vide and low-temperature cooking** (§9):

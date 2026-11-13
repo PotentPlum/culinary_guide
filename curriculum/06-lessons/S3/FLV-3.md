@@ -124,7 +124,7 @@ stick blender; a strainer and a coffee filter for the oil; a bowl of soup to fin
 - cover the surface with oil.
 
 *Herb oils:* herbs blended with oil, warmed briefly and strained clear. A herb oil is herbs in oil, so it follows the
-garlic-in-oil row of assessment §9: kept in the fridge and used within days, never on the shelf.
+garlic-in-oil row of assessment §9: kept in the fridge and used within 2 days (the leftovers row), never on the shelf.
 
 *Seasoning:* the salt and acid are balanced by tasting the sauce on a neutral carrier (a slice of potato or bread), the
 way it will be eaten, not from the spoon.
@@ -143,11 +143,11 @@ way it will be eaten, not from the spoon.
 |---|---|---|
 | Dull, khaki paste | Blending for minutes until warm | Blend cold, in short bursts |
 | Brown sauce within the hour | Lemon juice added at the start | Acid at the end, just before serving |
-| A food-safety risk | Herb oil kept on the shelf | In the fridge, used within days (§9) |
+| A food-safety risk | Herb oil kept on the shelf | In the fridge, used within 2 days (§9) |
 | A one-note paste | A paste that tastes of raw garlic only | Less garlic, more herb and the savoury element |
 
-**Safety:** herb oil and herb pastes covered in oil are kept in the fridge and used within days (the garlic-in-oil row
-of assessment §9); the blender blade is handled as a knife.
+**Safety:** herb oil and herb pastes covered in oil are kept in the fridge and used within 2 days (the garlic-in-oil and
+leftovers rows of assessment §9); the blender blade is handled as a knife.
 
 **Record:** the three photos after 2 hours; the oil's label and the date.
 
@@ -175,7 +175,7 @@ household meals; eight herbs, coded by a household member, for the blind test; t
 | Acid | Vinegar or citrus, added at the end | Which, how much |
 | Savoury element | Cheese, capers, anchovy, mustard or seeds | One per sauce |
 | Flavour plan | Base, middle and top of the dish, with the sauce as one layer | Written before cooking |
-| Storage | In the fridge, covered with oil, used within days | — |
+| Storage | In the fridge, covered with oil, used within 2 days | — |
 
 *Procedure:*
 1. Write the three flavour plans.

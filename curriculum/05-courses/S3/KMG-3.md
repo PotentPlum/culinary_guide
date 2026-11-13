@@ -81,9 +81,9 @@ At 5 / 6.5 / 8 hours a week the course takes about **3.9 / 3.0 / 2.4 weeks** of 
 <!-- END generated:lesson-kmg-3-m1-l1 -->
 
 **Concepts:**
-- **Balance across a week:** a range of proteins (legumes, fish twice, poultry, meat, eggs), vegetables at every meal,
-  whole grains, and no main technique, colour or dominant taste repeated two days running (the balance checklist of
-  `CR-MENU`).
+- **Balance across a week:** a range of proteins (legumes, fish at least once a week [S48], poultry, meat, eggs),
+  vegetables at every meal, whole grains, and no main technique, colour or dominant taste repeated two days running (the
+  balance checklist of `CR-MENU`).
 - **Season:** the week starts from what is best and cheapest now (`VEG-3.M1`), not from a fixed rotation.
 - **[J] Around a busy schedule:** quick meals on the busy days (15–30 minutes, from prepared components), a longer cook
   when there is time; cook once, eat twice (a braise on Sunday, its second portion on Tuesday within the 2-day limit or
@@ -611,6 +611,7 @@ storage method, container, label and a quality use-by date per item, and the qua
   - the yield (portions, or a batch size);
   - ingredients by weight in the order of use;
   - numbered steps with cues ("until the onions are soft and golden, about 10 minutes"), temperatures and times;
+    - the allergens it contains (the 14 groups [S23]);
   - storage (fridge days within §9, freezing) and reheating notes;
   - a costing line (`KMG-3.M3`).
 - **Testing it:** the learner cooks it again a week later from the page only; then a household member cooks it from the

@@ -424,6 +424,8 @@ vegetables, cheese, or chicken); sugar.
   without bubbling or curdling (`EGG-1`); a lemon tart (citrus as a pantry good) is the classic sharp version.
 - **[J] Judging the set:** a custard is set when the edge is firm and the centre wobbles like jelly as a whole, not in
   waves; it finishes setting as it cools. A *frangipane* is set when a skewer comes out clean and the top springs back.
+- **Safety:** the custard probed in the centre, every part at least 71 °C (the egg-thickened row of §9), as in
+  `BAK-2.M5.L2`.
 - **Cooling:** at room temperature briefly, then into the fridge within the 2-hour limit (§9).
 
 **Sessions:**
@@ -456,7 +458,8 @@ vegetables, cheese, or chicken); sugar.
   - the filling cold when it goes in;
   - baked low in the oven.
 - **Safety:** meat and poultry fillings were cooked to their §9 figures before going in, cooled by the standard; the
-  pie's centre reaches steaming hot (74 °C) when it is baked from cold filling.
+  pie's centre reaches steaming hot when it is baked from cold filling; the *quiche* custard is probed in the centre,
+  every part at least 71 °C (the egg-thickened row of §9).
 
 **Sessions:**
 1. A *quiche*-style tart (60 min): blind-baked base, a leek and cheese custard; the base checked when sliced.
@@ -640,8 +643,9 @@ shown in the slice photos of `PST-3.M3.X1` and `PST-3.M3.X2`.
   - some fruits (fresh pineapple, kiwi) contain enzymes that stop it setting unless cooked first;
   - gelatine is an animal product (pork or beef), which matters for vegetarians and some faiths (`NUT-3`).
 - **Ratios:** a mousse by ratio (base, foam, setting agent), written down so it can be varied.
-- **Safety:** a mousse with raw egg is made with pasteurised egg for every guest, or on a base cooked to 71 °C (a
-  *crème anglaise*; §9); kept in the fridge at most 2 days.
+- **Safety:** a mousse with raw egg is made with pasteurised egg for every guest, or on a base cooked to 71 °C (a *crème
+  anglaise*; §9). A mousse with raw egg is kept in the fridge at most 24 hours (the raw-egg row of §9), one on a cooked
+  base at most 2 days.
 
 **Sessions:**
 1. A chocolate mousse (60 min active, 4 h in total): chocolate as the setting agent; folded; set.

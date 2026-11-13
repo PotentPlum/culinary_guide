@@ -128,7 +128,7 @@ At 5 / 6.5 / 8 hours a week the course takes about **6.0 / 4.6 / 3.8 weeks** of 
   - add acid at the end, because acid turns chlorophyll olive-brown;
   - cover the surface with oil.
 - **Herb oils:** herbs blended with oil, warmed briefly and strained clear. They are stored in the fridge and used
-  within days, like garlic in oil (assessment §9).
+  within 2 days (the leftovers row), like garlic in oil (assessment §9).
 - **Seasoning:** salt and acid balanced on a neutral carrier (a slice of potato or bread), not from the spoon.
 
 **Sessions:**
@@ -193,7 +193,7 @@ household meals; eight herbs for the blind test.
 | FLV-3.M1.Q4 | multiple choice | FLV-3.M1.L1 | — | Which herb dries poorly? A) oregano B) dill C) bay D) sage | B | Tender herbs lose their character dried. |
 | FLV-3.M1.Q5 | multiple choice | FLV-3.M1.L2 | — | Why does lemon go into a green sauce last? A) it curdles the oil B) acid turns chlorophyll olive-brown C) it is too sour D) tradition | B | Acid dulls the green. |
 | FLV-3.M1.Q6 | multiple choice | FLV-3.M1.L2 | — | How do you keep a blended herb paste bright? A) blend for longer B) blanch and chill the herbs, blend cold and briefly, oil on the surface C) add sugar D) keep it warm | B | Heat and air dull it. |
-| FLV-3.M1.Q7 | multiple choice | FLV-3.M1.L2 | yes | How is a homemade herb oil stored? A) in a bottle on the shelf B) in the fridge, used within days C) in the sun D) for months in the cupboard | B | Herbs in oil need refrigeration (assessment §9). |
+| FLV-3.M1.Q7 | multiple choice | FLV-3.M1.L2 | yes | How is a homemade herb oil stored? A) in a bottle on the shelf B) in the fridge, used within 2 days C) in the sun D) for months in the cupboard | B | Herbs in oil need refrigeration (assessment §9). |
 | FLV-3.M1.Q8 | scenario | FLV-3.M1.L2 | — | Your *salsa verde* tastes harsh and flat at once. What do you check? | Taste it on a neutral carrier; it likely lacks salt (flat) while raw garlic or vinegar dominates (harsh): add salt, soften with more oil or herbs, and check again. | Season on a carrier, one change at a time. |
 
 **Evidence check:**
@@ -948,7 +948,7 @@ calibration tests, which have known answers ([assessment §5](../../04-assessmen
 **Re-tested at the next milestone:** `MS-S3.M1.L3` (CR-COMP→3), `MS-S3.M1.L3` (FL-ARCH→3), `MS-S3.M1.L4` (FL-CORR→4), `MS-S3.M1.L4` (FL-SENS→4), `MS-S3.M1.L4` (IN-ARO→4), `MS-S3.M1.L4` (JD-TRBL→4)
 <!-- END generated:assessment -->
 
-**Completing the course.** The four knowledge checks are passed at 80 %, with the one safety item correct; the evidence
+**Completing the course.** The four knowledge checks are passed at 80 %, with every safety item correct; the evidence
 rows are met; the calibration tests of `FLV-3.M6.L2` are passed (or retaken after a week). The flavour plans and the
 tasters' cards of every dish are kept in the journal, because `CUI-3` and `VEG-3` build on them.
 

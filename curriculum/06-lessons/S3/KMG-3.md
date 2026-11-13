@@ -53,7 +53,7 @@ the seasonal calendar (`VEG-1`, `VEG-3.M1`); your house recipes and frameworks s
 **Explanation:**
 
 *Balance across a week.* Check the week against the balance checklist:
-- a range of proteins: legumes, fish twice, poultry, meat, eggs;
+- a range of proteins: legumes, fish at least once a week (the *Schijf van Vijf* [S48]), poultry, meat, eggs;
 - vegetables at every meal;
 - whole grains;
 - no main technique, colour or dominant taste repeated two days running.

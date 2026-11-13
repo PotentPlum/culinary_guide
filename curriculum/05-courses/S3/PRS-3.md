@@ -550,7 +550,7 @@ room thermometer; pH strips (optional).
 - **Duck confit:** the legs (from `BUT-3.M1.X1`) salted by weight overnight in the fridge, rinsed and dried, then cooked
   slowly submerged in duck fat in a low oven until very tender (the core passes 75 °C long before); cooled in the fat.
 - **Garlic confit:** cloves cooked gently in oil until soft and sweet. Garlic in oil is a botulism risk (§9): kept in
-  the fridge and used within days, or frozen.
+  the fridge and used within 2 days (the leftovers row), or frozen.
 - **[K] Safe storage in fat:**
   - fat keeps out air, which is also what *C. botulinum* likes, so the fat is not a safety hurdle on its own;
   - confit is cooled by the standard, kept covered in its fat in the fridge, and used within 2 days, or frozen in its
@@ -560,7 +560,7 @@ room thermometer; pH strips (optional).
   (pickles, a chicory salad).
 
 **Sessions:**
-1. Garlic confit (30 min active, 1 h in total): a small batch, cooled and refrigerated; used within days.
+1. Garlic confit (30 min active, 1 h in total): a small batch, cooled and refrigerated; used within 2 days.
 
 **Cues:**
 - Garlic soft and golden, not brown.
@@ -612,7 +612,7 @@ tested method, labelled, judged on quality after two weeks' storage. The ferment
 | PRS-3.M4.Q3 | calculation | PRS-3.M4.L1 | yes | A curing salt contains 0.6 % sodium nitrite. Roughly how much nitrite ion is added per kg of meat with 20 g of this salt? (Sodium nitrite × 0.67 = nitrite ion.) | About 80 mg (20 g × 0.006 = 120 mg sodium nitrite; × 0.67 ≈ 80 mg) | At the §9 limit of 80 mg/kg. |
 | PRS-3.M4.Q4 | multiple choice | PRS-3.M4.L1 | yes | Your pork belly has been cured with plain salt. How is it eaten? A) raw, thinly sliced B) cooked to its §9 figure C) air-dried for a month D) smoked cold | B | No nitrite, so it is cooked. |
 | PRS-3.M4.Q5 | multiple choice | PRS-3.M4.L2 | yes | How long is duck confit kept in the fridge in this program? A) months under fat B) at most 2 days; frozen in its fat for longer C) a week D) until it smells | B | §9 leftovers rule; no checked longer figure. |
-| PRS-3.M4.Q6 | multiple choice | PRS-3.M4.L2 | yes | Garlic confit in oil is stored: A) on the shelf B) in the fridge and used within days, or frozen C) in the sun D) for months | B | Garlic in oil (§9). |
+| PRS-3.M4.Q6 | multiple choice | PRS-3.M4.L2 | yes | Garlic confit in oil is stored: A) on the shelf B) in the fridge and used within 2 days, or frozen C) in the sun D) for months | B | Garlic in oil (§9). |
 | PRS-3.M4.Q7 | multiple choice | PRS-3.M4.L2 | — | Why does fat not make confit safe on its own? A) it melts B) it keeps air out, which botulism bacteria like; cold and cooking are the hurdles C) it is too salty D) it does | B | Hurdles of confit. |
 | PRS-3.M4.Q8 | multiple choice | PRS-3.M4.L2 | — | How is the skin of a confit leg crisped? A) boiled B) skin-side down in a hot pan or in a hot oven C) under water D) in the microwave | B | Serving confit. |
 
@@ -691,13 +691,13 @@ tested method, labelled, judged on quality after two weeks' storage. The ferment
   a method and is optional (Seville oranges in January).
 - **Chutney:** vegetables or fruit with vinegar, sugar and spices, cooked down until a spoon drawn across the pan leaves
   a channel; mellows after a few weeks. Canned only by a tested recipe; otherwise kept in the fridge.
-- **Seasonal choices:** rhubarb and strawberry in June, plums in August, apples and pears in autumn; pumpkin, beetroot,
-  red onion or green tomato chutney in autumn.
+- **Seasonal choices:** rhubarb and strawberry in June, plums in August, apples and pears in autumn; an apple chutney in
+  autumn by a tested recipe (NCHFP's *Apple Chutney* [S27], with raisins and a red pepper).
 
 **Sessions:**
 1. A jam (75 min): a seasonal jam by a tested recipe, the set tested, jarred and processed or refrigerated.
-2. A chutney (90 min): a seasonal chutney cooked to a channel, jarred; a red-onion comparison with and without vinegar
-   photographed for colour.
+2. A chutney (90 min): the tested apple chutney cooked to a channel, jarred; a red-onion comparison with and without
+   vinegar photographed for colour.
 
 **Cues:**
 - A wrinkling set on the cold plate.
@@ -720,10 +720,11 @@ tested method, labelled, judged on quality after two weeks' storage. The ferment
 **Aim:** make a set jam and a chutney from seasonal produce, and explain what heat, acid and sugar do to them.
 
 **Conditions:** framework support: the tested jam and chutney ratios (from [S27] or an equivalent tested source). A jam
-from Dutch fruit in season, set to the tested point, and a chutney from seasonal vegetables (for example pumpkin,
-beetroot or red onion); jarred, processed by the tested method or refrigerated, labelled; one jar of each judged after a
-month. The extension: a written explanation of what heat, acid and alkali do to the colour and texture of vegetables,
-shown by a comparison (red onion cooked with and without vinegar, or a pinch of baking soda).
+from Dutch fruit in season, set to the tested point, and a tested chutney (NCHFP's *Apple Chutney* [S27]; a tested
+canned pumpkin, beetroot or red onion chutney is not available); jarred, processed by the tested method or refrigerated,
+labelled; one jar of each judged after a month. The extension: a written explanation of what heat, acid and alkali do to
+the colour and texture of vegetables, shown by a comparison (red onion cooked with and without vinegar, or a pinch of
+baking soda).
 
 **Inputs:** seasonal fruit and vegetables, sugar, vinegar, spices, jars, labels; pectin if the fruit needs it.
 

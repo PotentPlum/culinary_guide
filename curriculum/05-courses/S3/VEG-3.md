@@ -370,8 +370,8 @@ and contrast; one unfamiliar vegetable.
   butter, salt and a little sugar, partly covered, until tender just as the liquid reduces to a syrupy glaze that coats
   them. *À blanc* (no colour) or *à brun* (taken on to colour).
 - **Confit:** vegetables cooked slowly submerged in oil or butter at a low heat until meltingly soft (fennel, shallots,
-  tomatoes, garlic, potatoes); kept in the fridge and used within days, because vegetables in oil are a botulism risk
-  (§9).
+  tomatoes, garlic, potatoes); kept in the fridge and used within 2 days (the leftovers row), because vegetables in oil
+  are a botulism risk (§9).
 - **Butter-basting:** a whole or halved vegetable (a cabbage wedge, a celeriac steak, a carrot) browned in a pan, then
   butter and aromatics added and spooned over continuously as the butter foams.
 - **Timing:** the cut size decides the time; the liquid is measured so that it is gone when the vegetable is tender.
@@ -564,7 +564,8 @@ timeline of `VEG-3.M3.X1`.
 was meant to be meat-free) scoring at least *Goed*; a written flavour plan; the variety and method chosen with a reason.
 The two session dishes of the module are written up with flavour plans, so that three dishes have one. The extension:
 three unfamiliar plant ingredients (for example tempeh, lupin beans and a pulse new to the learner) analysed in writing
-(origin, texture, flavour, how they cook) and cooked by a chosen approach, one of them in this main.
+(origin, texture, flavour, how they cook) and cooked by a chosen approach, one of them in this main. The allergens among
+them are named on the household cards (lupin, soy, sesame, milk and mustard are among the 14 groups [S23]).
 
 **Inputs:** seasonal vegetables, legumes, umami sources, fats; the three unfamiliar ingredients.
 

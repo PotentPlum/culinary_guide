@@ -263,7 +263,8 @@ from `STK-2`.
 **Concepts:**
 - **No browning:** the meat (veal, chicken, rabbit, pork) is blanched or sweated without colour, so the sauce stays pale.
 - ***Blanquette*:** the meat simmered in white stock with aromatics; the liquid thickened at the end with a *roux*
-  (`SAU-2.M3`) and finished with cream and egg yolk (*liaison*), not boiled after the yolks go in.
+  (`SAU-2.M3`) and finished with cream and egg yolk (*liaison*), then brought back to at least 71 °C on the probe
+  without boiling (the egg-thickened row of assessment §9).
 - ***Fricassée*:** the meat sweated in butter without colour, dusted with flour, then simmered in stock; finished with
   cream.
 - **The velvety sauce:** strained, reduced and skimmed; seasoned with a few drops of lemon.
