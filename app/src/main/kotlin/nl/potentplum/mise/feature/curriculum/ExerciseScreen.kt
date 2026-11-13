@@ -83,8 +83,8 @@ fun ExerciseScreen(
     val title =
         (state as? Loadable.Loaded)
             ?.value
-            ?.exercise
-            ?.id
+            ?.course
+            ?.title
             .orEmpty()
     CurriculumScaffold(title, state, onBack, onOverflowItem) { detail ->
         Column(
@@ -94,7 +94,7 @@ fun ExerciseScreen(
             verticalArrangement = Arrangement.spacedBy(16.dp),
         ) {
             Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
-                Eyebrow(listOf(detail.course.id, stringResource(detail.summary.support.labelRes)).joinToString(" · "))
+                Eyebrow(stringResource(detail.summary.support.labelRes))
                 Text(detail.exercise.title, style = MaterialTheme.typography.headlineLarge, modifier = Modifier.semantics { heading() })
                 Text(
                     stringResource(R.string.curriculum_language_note),

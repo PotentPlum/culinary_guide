@@ -27,7 +27,6 @@
         "Mandoline (optioneel)"
       ],
       "relatedTechniqueIds": [
-        "brunoise",
         "chiffonade"
       ],
       "relatedVegIds": [
@@ -62,9 +61,7 @@
         "Koksmes (20–25 cm)",
         "Snijplank"
       ],
-      "relatedTechniqueIds": [
-        "julienne"
-      ],
+      "relatedTechniqueIds": [],
       "relatedVegIds": [
         "carrot",
         "celeriac",
@@ -228,7 +225,6 @@
         "Houten spatel of tang"
       ],
       "relatedTechniqueIds": [
-        "groenten-roerbakken",
         "schroeien"
       ],
       "relatedVegIds": [
@@ -262,9 +258,7 @@
         "Tang"
       ],
       "relatedTechniqueIds": [
-        "sauteren",
-        "vlees-schroeien",
-        "vis-pansearen"
+        "sauteren"
       ],
       "relatedVegIds": []
     },
@@ -325,9 +319,7 @@
         "Koekenpan voor aanbraden"
       ],
       "relatedTechniqueIds": [
-        "sudderen",
-        "vlees-smoren",
-        "groenten-smoren"
+        "sudderen"
       ],
       "relatedVegIds": [
         "celeriac",
@@ -361,9 +353,7 @@
         "Schuimspaan"
       ],
       "relatedTechniqueIds": [
-        "smoren",
-        "kippenfond",
-        "groentebouillon"
+        "smoren"
       ],
       "relatedVegIds": [
         "carrot",
@@ -436,7 +426,7 @@
     {
       "id": "langzaam-garen",
       "nl": "Langzaam garen",
-      "subtitle": "Slow cooking in oven of pan",
+      "subtitle": "Uren garen in oven of pan",
       "category": "garing",
       "subcategory": "Laag vuur",
       "parentId": null,
@@ -562,8 +552,7 @@
       ],
       "relatedTechniqueIds": [
         "marineren",
-        "fond-deglaceren",
-        "pekelen"
+        "fond-deglaceren"
       ],
       "relatedVegIds": []
     },
@@ -591,7 +580,6 @@
         "Koelkast"
       ],
       "relatedTechniqueIds": [
-        "zout-timing",
         "marineren"
       ],
       "relatedVegIds": []
@@ -650,13 +638,7 @@
         "Staafmixer",
         "Kom"
       ],
-      "relatedTechniqueIds": [
-        "hollandaise",
-        "mayonaise",
-        "vinaigrette",
-        "beurre-blanc",
-        "monteren"
-      ],
+      "relatedTechniqueIds": [],
       "relatedVegIds": []
     },
     {
@@ -810,7 +792,6 @@
         "Lepel voor basten"
       ],
       "relatedTechniqueIds": [
-        "schroeien",
         "vlees-braden",
         "fond-deglaceren"
       ],
@@ -841,7 +822,6 @@
         "Kernthermometer"
       ],
       "relatedTechniqueIds": [
-        "smoren",
         "vlees-schroeien",
         "fond-deglaceren"
       ],
@@ -966,7 +946,6 @@
         "Kookthermometer"
       ],
       "relatedTechniqueIds": [
-        "sudderen",
         "kippenfond"
       ],
       "relatedVegIds": [
@@ -1062,7 +1041,6 @@
         "Tang"
       ],
       "relatedTechniqueIds": [
-        "schroeien",
         "vis-pocheren"
       ],
       "relatedVegIds": []
@@ -1238,7 +1216,6 @@
         "Staafmixer"
       ],
       "relatedTechniqueIds": [
-        "emulgeren",
         "hollandaise",
         "mayonaise"
       ],
@@ -1340,7 +1317,6 @@
         "Houten lepel"
       ],
       "relatedTechniqueIds": [
-        "smoren",
         "groenten-roasten"
       ],
       "relatedVegIds": [
@@ -1375,7 +1351,6 @@
         "Wokspatel of tang"
       ],
       "relatedTechniqueIds": [
-        "sauteren",
         "blancheren"
       ],
       "relatedVegIds": [
@@ -1447,10 +1422,7 @@
         "Steelpan",
         "Garde"
       ],
-      "relatedTechniqueIds": [
-        "bechamel",
-        "veloute"
-      ],
+      "relatedTechniqueIds": [],
       "relatedVegIds": []
     },
     {
@@ -1576,7 +1548,6 @@
         "Steelpan"
       ],
       "relatedTechniqueIds": [
-        "emulgeren",
         "eieren-emulsies"
       ],
       "relatedVegIds": [
@@ -1609,7 +1580,6 @@
         "Potje met deksel voor bewaren"
       ],
       "relatedTechniqueIds": [
-        "emulgeren",
         "marineren"
       ],
       "relatedVegIds": [
@@ -1643,7 +1613,6 @@
         "Kom of maatbeker"
       ],
       "relatedTechniqueIds": [
-        "emulgeren",
         "eieren-emulsies",
         "vinaigrette"
       ],
@@ -1674,7 +1643,6 @@
         "Zeef"
       ],
       "relatedTechniqueIds": [
-        "emulgeren",
         "fond-deglaceren"
       ],
       "relatedVegIds": [
@@ -1707,8 +1675,7 @@
         "Garde of panhandvat"
       ],
       "relatedTechniqueIds": [
-        "beurre-blanc",
-        "emulgeren"
+        "beurre-blanc"
       ],
       "relatedVegIds": []
     },
@@ -1738,7 +1705,6 @@
         "Kaasdoek"
       ],
       "relatedTechniqueIds": [
-        "sudderen",
         "veloute",
         "smoren"
       ],
@@ -1774,7 +1740,6 @@
         "Fijne zeef"
       ],
       "relatedTechniqueIds": [
-        "sudderen",
         "veloute"
       ],
       "relatedVegIds": [

@@ -205,11 +205,14 @@ abstract class LayoutAuditTest {
         go(RecipeRoute("kale"))
         audit.screen("Recept")
         click("Gekookt")
+        waitFor("Hoe lukte het?")
         audit.screen("Hoe ging het?")
         back()
         go(CookRoute("kale"))
+        waitFor("Stap 1 van 4")
         audit.screen("Kookmodus stap 1")
         repeat(3) { click("Volgende stap") }
+        waitFor("Klaar met koken")
         audit.screen("Kookmodus laatste stap")
         back()
 
@@ -227,6 +230,7 @@ abstract class LayoutAuditTest {
         go(TechniqueRoute("julienne"))
         audit.screen("Julienne")
         go(CurriculumRoute)
+        waitFor("Openen")
         audit.screen("Opleiding")
         go(CourseRoute("ORI-1"))
         audit.screen("Cursus")

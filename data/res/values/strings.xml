@@ -154,6 +154,8 @@
     <string name="evaluation_title">Hoe ging het?</string>
     <string name="evaluation_label_score">Uitvoering</string>
     <string name="evaluation_label_taste">Smaak</string>
+    <string name="evaluation_question_score">Hoe lukte het?</string>
+    <string name="evaluation_question_taste">Hoe smaakte het?</string>
     <string name="evaluation_label_notes">Notities (optioneel)</string>
     <string name="evaluation_submit_btn">Vastleggen</string>
     <string name="evaluation_skip_btn">Zonder cijfers vastleggen</string>
@@ -224,6 +226,8 @@
     <string name="journal_quests_empty">Nog geen quests</string>
     <string name="journal_empty">Leg je eerste gekookte recept of quest vast om je dagboek te beginnen.</string>
     <string name="journal_empty_action">Naar Vandaag</string>
+    <string name="journal_empty_title">Nog niets gekookt</string>
+    <string name="journal_empty_filtered">Niets gevonden met dit filter.</string>
     <string name="journal_top_cuisines">Meest gekookte keukens</string>
     <!-- UI/UX review (spec Appendix D): copy for the new interactions. -->
     <string name="today_hero_title">Wat kook ik <i>vandaag</i>?</string>
@@ -269,6 +273,7 @@
     <string name="cook_exit_log">Vastleggen</string>
     <string name="cook_exit_not_now">Nu niet</string>
     <string name="cook_resume">Verder bij stap %1$d</string>
+    <string name="cook_timer_idle">Timer · %1$s</string>
     <string name="cook_timer_running">Stap %1$d · nog ~%2$d min</string>
     <string name="cook_timer_done">Stap %1$d · klaar</string>
     <string name="cook_duration_seconds">%1$d sec</string>
@@ -700,9 +705,10 @@
     <string name="curriculum_intro">Vijf fases, van fundament tot meesterschap. De lessen, vragen en opdrachten zijn in het Engels.</string>
     <string name="curriculum_overall">%1$d van %2$d stappen gedaan</string>
     <string name="curriculum_next_eyebrow">Volgende stap</string>
-    <string name="curriculum_next_lesson">Les · %1$s</string>
-    <string name="curriculum_next_exercise">Oefening · %1$s</string>
-    <string name="curriculum_next_check">Kennistoets · %1$s</string>
+    <string name="curriculum_next_lesson">Les</string>
+    <string name="curriculum_next_exercise">Oefening</string>
+    <string name="curriculum_next_check">Kennistoets</string>
+    <string name="curriculum_course">Cursus</string>
     <string name="curriculum_next_open">Openen</string>
     <string name="curriculum_all_done">Alles afgerond. Gefeliciteerd!</string>
     <string name="curriculum_stage_eyebrow">Fase %1$d</string>
@@ -719,7 +725,7 @@
     <string name="curriculum_rubric_weight">Weging %1$d%%</string>
     <string name="curriculum_rubric_gate">Voorwaarde: moet voldoende zijn</string>
     <string name="curriculum_rubric_evidence">Bewijs: %1$s</string>
-    <string name="curriculum_prerequisites">Eerst: %1$s</string>
+    <string name="curriculum_prerequisites">Eerst afronden:</string>
     <string name="curriculum_introduction">Inleiding</string>
     <string name="curriculum_module_eyebrow">Module %1$d</string>
     <string name="curriculum_lessons">Lessen</string>
@@ -800,4 +806,8 @@
         <item>November</item>
         <item>December</item>
     </string-array>
+    <plurals name="curriculum_not_started">
+        <item quantity="one">Nog niet begonnen · %1$d stap</item>
+        <item quantity="other">Nog niet begonnen · %1$d stappen</item>
+    </plurals>
 </resources>

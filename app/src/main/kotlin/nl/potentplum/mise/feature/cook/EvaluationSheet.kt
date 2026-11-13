@@ -112,8 +112,8 @@ fun EvaluationSheet(
                 style = MaterialTheme.typography.headlineSmall,
                 modifier = Modifier.semantics { heading() },
             )
-            ScoreScale(stringResource(R.string.evaluation_label_score), form.score, viewModel::setScore)
-            ScoreScale(stringResource(R.string.evaluation_label_taste), form.tasteScore, viewModel::setTaste)
+            ScoreScale(stringResource(R.string.evaluation_question_score), form.score, viewModel::setScore)
+            ScoreScale(stringResource(R.string.evaluation_question_taste), form.tasteScore, viewModel::setTaste)
             OutlinedTextField(
                 value = form.notes,
                 onValueChange = viewModel::setNotes,

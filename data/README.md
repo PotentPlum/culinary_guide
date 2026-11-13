@@ -76,6 +76,11 @@ android.sourceSets {
   exception: their prose is English, and they are exempt from the vegetables-only rule (spec D7, D9).
 - Every vegetable `color` must reach 4.5:1 with ink (`#1E1A14`) or white, because it is the background for the `VegToken` initials
   and the detail header (the validator checks this). `accent` is decorative only and has no contrast requirement (spec §5).
+- The validator rejects words that are only English (`the`, `slow`, `cooking`, `sauce`, …; see `ENGLISH_WORDS`) in the
+  shown text of techniques (`nl`, `subtitle`, `body`, `tips`) and vegetables (`nl`, `blurb`, `storage`, `prep`, `technique`,
+  `pairings`, `substitutions`). Dutch homographs such as "pan" and "oven" are not on the list.
+- A technique's `relatedTechniqueIds` never holds its parent or one of its variants: the detail page shows those in their own
+  sections, so "Gerelateerd" would repeat them (the validator checks this).
 - `strings.xml` allows only `<i>` and `<b>` markup, for emphasis inside one string; never split a sentence across keys.
 - `family` must be one of: Wortel, Blad, Brassica, Allium, Peulvrucht, Stengel, Pompoenachtige, Knolgewas,
   Vruchtgroente, Paddenstoel, Kruid.

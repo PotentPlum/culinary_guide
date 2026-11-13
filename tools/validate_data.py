@@ -99,13 +99,21 @@ disc_ids = unique("disciplines.id", [d.get("id", "") for d in disc_doc.get("disc
 
 techs = tech_doc.get("techniques", [])
 tech_ids = unique("techniques.id", [t.get("id", "") for t in techs])
+tech_children: dict[str, set[str]] = {}
+for t in techs:
+    if t.get("parentId"):
+        tech_children.setdefault(t["parentId"], set()).add(t.get("id", ""))
 for t in techs:
     where = f"techniques[{t.get('id')}]"
     if t.get("parentId") is not None and (t["parentId"] not in tech_ids or t["parentId"] == t.get("id")):
         err(where, f"parentId {t['parentId']!r} does not resolve")
+    # The detail page lists the parent and the variants in their own sections; "Gerelateerd" must not repeat them.
+    family = tech_children.get(t.get("id", ""), set()) | ({t["parentId"]} if t.get("parentId") else set())
     for rid in t.get("relatedTechniqueIds", []):
         if rid not in tech_ids or rid == t.get("id"):
             err(where, f"relatedTechniqueIds {rid!r} does not resolve")
+        elif rid in family:
+            err(where, f"relatedTechniqueIds {rid!r} is its parent or a variant, already shown on the page")
     for vid in t.get("relatedVegIds", []):
         if vid not in veg_ids:
             err(where, f"relatedVegIds {vid!r} does not resolve")
@@ -114,6 +122,32 @@ for t in techs:
             err(where, "only cookware guides (category gereedschap) may have no discipline")
     elif t["discipline"] not in disc_ids:
         err(where, f"discipline {t['discipline']!r} not in disciplines.json")
+
+# Everything shown is Dutch (CLAUDE.md, spec §15.4). Words that are only English, never Dutch: "pan" and "oven" are both.
+ENGLISH_WORDS = {
+    "the", "and", "with", "from", "into", "until", "your", "you", "this", "that", "slow", "cook", "cooking", "cooked",
+    "fry", "fried", "frying", "boil", "boiling", "roast", "roasted", "roasting", "bake", "baking", "baked", "steam",
+    "steamed", "steaming", "sauce", "heat", "chopped", "sliced", "stir", "braise", "braised", "serve", "fresh",
+}
+
+
+def english_words(text: str) -> list[str]:
+    return sorted({w for w in re.findall(r"[A-Za-z]+", text) if w.lower() in ENGLISH_WORDS})
+
+
+def check_dutch(where: str, item: dict, fields: list[str]) -> None:
+    for field in fields:
+        value = item.get(field)
+        text = " ".join(map(str, value)) if isinstance(value, list) else str(value or "")
+        found = english_words(text)
+        if found:
+            err(where, f"{field} has English words {found}: {text[:60]!r}")
+
+
+for t in techs:
+    check_dutch(f"techniques[{t.get('id')}]", t, ["nl", "subtitle", "body", "tips"])
+for v in vegs:
+    check_dutch(f"vegetables[{v.get('id')}]", v, ["nl", "blurb", "storage", "prep", "technique", "pairings", "substitutions"])
 
 facets = facet_doc.get("facets", [])
 unique("facets.key", [f.get("key", "") for f in facets])

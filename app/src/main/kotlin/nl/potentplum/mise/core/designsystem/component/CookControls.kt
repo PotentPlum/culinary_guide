@@ -75,7 +75,7 @@ fun durationLabel(
 @Composable
 fun durationLabel(seconds: Int): String = durationLabel(LocalResources.current, seconds)
 
-/** A timer chip in cook mode (spec §6.10): idle "12 min", running "Stap 4 · nog ~9 min", done "Stap 4 · klaar". */
+/** A timer chip in cook mode (spec §6.10): idle "Timer · 12 min", running "Stap 4 · nog ~9 min", done "Stap 4 · klaar". */
 @Composable
 fun TimerChip(
     state: TimerChipState,
@@ -85,7 +85,8 @@ fun TimerChip(
     val (label, icon) =
         when (state) {
             is TimerChipState.Idle -> {
-                durationLabel(state.seconds) to Icons.Outlined.Timer
+                // "Timer · 5 min": a bare "5 min" reads as information, not as something to tap.
+                stringResource(R.string.cook_timer_idle, durationLabel(state.seconds)) to Icons.Outlined.Timer
             }
 
             is TimerChipState.Running -> {

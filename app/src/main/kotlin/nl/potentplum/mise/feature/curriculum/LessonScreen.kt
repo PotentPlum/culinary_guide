@@ -37,8 +37,8 @@ fun LessonScreen(
     val title =
         (state as? Loadable.Loaded)
             ?.value
-            ?.lesson
-            ?.id
+            ?.course
+            ?.title
             .orEmpty()
     CurriculumScaffold(title, state, onBack, onOverflowItem) { detail ->
         Column(
@@ -48,7 +48,7 @@ fun LessonScreen(
             verticalArrangement = Arrangement.spacedBy(16.dp),
         ) {
             Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
-                Eyebrow(listOf(detail.course.id, detail.module.title).joinToString(" · "))
+                Eyebrow(detail.module.title)
                 Text(detail.lesson.title, style = MaterialTheme.typography.headlineLarge, modifier = Modifier.semantics { heading() })
                 Text(
                     stringResource(R.string.curriculum_language_note),

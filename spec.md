@@ -384,7 +384,9 @@ The seasonal tally lives on Dagboek only (§6.13); Vandaag stays about today. Wo
 ### 6.10 Kookmodus
 
 - A full-screen, step-by-step pager: one step per page, large type (scales with the system font), group name as an eyebrow,
-  progress "Stap 3 van 9" with a thin progress bar. Swipe or tap the large previous/next buttons.
+  progress "Stap 3 van 9" with a thin progress bar. Swipe or tap the large buttons: a 56 dp **Vorige stap** icon button and a
+  full-width **Volgende stap** (**Klaar met koken** on the last step). The top bar has no recipe title (on a phone it is cut to a
+  few letters); the step is what matters.
 - **Landscape** (phone propped up sideways): two panes, the step on the left and the ingredients list on the right. In portrait the
   ingredients panel is one tap away (bottom sheet) behind a labelled **Ingrediënten** button in the top bar. Both show the
   scaled amounts.
@@ -395,7 +397,7 @@ The seasonal tally lives on Dagboek only (§6.13); Vandaag stays about today. Wo
   "Verder bij stap {n}". It is cleared when an attempt is logged for the recipe, or after 24 hours.
 - **Timers use the phone's Clock app:** tapping a timer chip (§11.3) fires `AlarmClock.ACTION_SET_TIMER` with
   `EXTRA_LENGTH`, `EXTRA_MESSAGE` = "Mise · Stap 4" and `EXTRA_SKIP_UI = true`, so the timer starts without leaving cook mode.
-  A snackbar confirms "Timer van 12 min gestart". If no app handles the intent, chips are hidden and a one-time hint explains why.
+  An unstarted chip reads "Timer · 12 min", so it reads as a button rather than a fact. A snackbar confirms "Timer van 12 min gestart". If no app handles the intent, chips are hidden and a one-time hint explains why.
   In-app timers are P3 (§18).
 - **Running timers stay visible:** Mise records each start time in the cook session and shows a `TimerChip` strip at the top of cook
   mode ("Stap 4 · nog ~9 min", then "Stap 4 · klaar"), computed locally; it is an estimate, the Clock app rings. Tapping a running
@@ -441,7 +443,9 @@ Quest van vandaag card on Vandaag; their history is **Dagboek › Quests** (§6.
 
 - A bottom sheet, reached from every place that ends a cook: **Gekookt** on recipe detail, **Klaar met koken** and the exit prompt in
   cook mode, and **Quest voltooid**.
-- **Uitvoering** and **Smaak** (both optional) are each a `ScoreScale`: one row of 5 labelled steps, one tap each, at least 48 dp:
+- **Uitvoering** and **Smaak** (both optional) are each a `ScoreScale`, asked as a question in the sheet ("Hoe lukte het?",
+  "Hoe smaakte het?"; recipe detail and Dagboek keep the short names): one row of 5 labelled steps (a list of five when a label no
+  longer fits a fifth of the width), one tap each, at least 48 dp:
   **Mislukt · Matig · Oké · Goed · Top**, stored as **2 · 4 · 6 · 8 · 10** in the 1–10 fields (§7.2). Tapping the selected step clears it.
   The thresholds in §11.6 (≥ 8 up, ≤ 5 down) and the badges' `minAvgScore` keep working on the stored values. Older attempts with
   other values (restored web data) show the nearest step label (1–2 Mislukt, 3–4 Matig, 5–6 Oké, 7–8 Goed, 9–10 Top) and keep
@@ -458,8 +462,8 @@ A cooking journal first, statistics second. Three segments at the top: **Tijdlij
 **Tijdlijn**
 - Attempts grouped by month (newest first), each with photo, title, scores (step labels), notes, and recipe or quest.
   Filter: alles / recepten / quests. Tapping an entry edits it (scores, notes, photo, date) or opens the recipe.
-- Empty journal: "Leg je eerste gekookte recept of quest vast…" with a **Naar Vandaag** button (where cooking starts). A filter
-  that matches nothing shows the same text without the button.
+- Empty journal: **Nog niets gekookt**, "Leg je eerste gekookte recept of quest vast…" and a **Naar Vandaag** button (where
+  cooking starts). A filter that matches nothing says "Niets gevonden met dit filter." (the filter row above is the way out).
 
 **Quests** (the quest history)
 - All quests, newest first: filter on Open / Voltooid, plus type and difficulty. Each item can be reopened, retried with the same
@@ -517,11 +521,14 @@ English and each content screen says so ("Lesinhoud in het Engels").
 
 - **Opleiding** (home): hero, overall progress ("12 van 965 stappen gedaan"), a **Volgende stap** card that opens the first open
   step in curriculum order, then the five stages by their Dutch names (Fundament, Kerntechnieken, Integratie, Gevorderd,
-  Meesterschap) with their courses: id, title, hours, step progress and the **Concept** label (D10, outlined in ink-soft: most
+  Meesterschap) with their courses: kind (Cursus, Mijlpaal, Eindproject), title, hours, step progress ("Nog niet begonnen · 15
+  stappen" before the first, with no stop dot on the empty bar) and the **Concept** label (D10, outlined in ink-soft: most
   courses are drafts, so a filled badge would shout on every card). Only the stage holding the next step starts open; tapping a
   stage's header shows or hides its courses (all start closed once every step is done).
+- No screen shows a course, lesson or exercise ID (`ORI-1`, `ORI-1.M1.L1`): top bars carry the course title, eyebrows the module or
+  support level, the Volgende stap card its kind ("Les", "Oefening", "Kennistoets"). IDs are for the data, not the learner.
 - **Cursus**: stage, hours, purpose, the Concept explanation with the second reader's count ("3 van 12 gelezen"), prerequisites
-  (links), progress, the introduction, then each module with its lessons, exercises (support level and best band) and the knowledge
+  ("Eerst afronden:" and a link per course with its title and hours), progress, the introduction, then each module with its lessons, exercises (support level and best band) and the knowledge
   check (item count, safety items, best attempt). A module without items shows the lesson file's note instead.
   Milestones (`MS-S1`…`MS-S4`) and the capstone (`CAP-5`) have no lessons in the app: they show their rubric (criteria, weights,
   the food-safety gate and the evidence each row looks at).
@@ -1001,7 +1008,7 @@ There is no legacy code in the app. A one-off script converts the old exports in
 
 | Level | What |
 |---|---|
-| Data | `python3 tools/validate_data.py` (schemas, cross-references, strings.xml incl. markup and plurals, vegetable colour contrast, seasonality drift) in CI and as a Claude Code hook |
+| Data | `python3 tools/validate_data.py` (schemas, cross-references, strings.xml incl. markup and plurals, vegetable colour contrast, seasonality drift, English words in shown content, related techniques that repeat a parent or variant) in CI and as a Claude Code hook |
 | Unit (JVM) | Asset deserialisation of every file (`ignoreUnknownKeys = false`); seasonality goldens + presentation order and badges; parser goldens; local ingredient parser (table-driven: fractions, ranges, comma decimals, aliases, notes, pack sizes); scaling + rounding + Dutch formatting; shopping aggregation; duration detection; seasonal matcher; suggestion ranking (fixed dates); quest defaults; journal aggregation; badges; Claude schema builders + response mapping (recorded JSON responses, no live calls); backup round-trip |
 | Tools | `tools/legacy_to_backup.py` tested with synthetic legacy fixtures covering every branch of Appendix A; its output validates against `backup.schema.json` and restores in an instrumented test |
 | Integration | Room DAOs + `MigrationTestHelper` (1 → 2); curriculum assets parse strictly and match the index; progress rules and the check pass rule; `SecretStore` on Robolectric/instrumented (encrypt → decrypt, invalidation path) |

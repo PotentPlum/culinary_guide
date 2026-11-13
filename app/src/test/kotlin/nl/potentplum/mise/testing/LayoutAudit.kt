@@ -25,7 +25,8 @@ private const val FULL_WIDTH = 0.7f
 
 /**
  * Set `LAYOUT_AUDIT_SHOTS` to a directory to also save the first page of every audited screen there as a PNG, one folder per
- * test class: a quick visual gallery of the app at that size (spec §15.3).
+ * test class: a quick visual gallery of the app at that size (spec §15.3). Robolectric draws dialog and sheet windows
+ * without their content, so for those the gallery shows the screen underneath; the audit itself does read their text.
  */
 class LayoutAudit(
     private val compose: ComposeTestRule,

@@ -231,7 +231,7 @@ The web app keeps running from its last Vercel deployment until you turn it off,
   label size; `ActionRow` / `EvenRow` / `TrailingRow` / `SegmentedChoice`; Kookmodus icon back button; ingredients action
   under its heading; Kalender names wrap or stack; Dutch hyphenation for recipe titles; no add button on an empty library;
   one badge per Vandaag tile.
-- [ ] Speak the user's language: Opleiding shows titles, not IDs; no stop dot on an empty progress bar; evaluation asks
+- [x] Speak the user's language: Opleiding shows titles, not IDs; no stop dot on an empty progress bar; evaluation asks
   "Hoe lukte het?" / "Hoe smaakte het?"; timer chip "Timer · 5 min"; empty Dagboek title; techniques content in Dutch and
   without parent/child duplicates in "Gerelateerd", both enforced by `tools/validate_data.py`.
 - [ ] Never lose your place: no bottom bar on app-wide pages (Technieken, Opleiding, Instellingen, Over) and task screens;

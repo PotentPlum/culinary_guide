@@ -96,9 +96,13 @@ fun JournalTimeline(
         }
         if (!state.loading && state.timeline.isEmpty()) {
             item(key = "empty") {
-                EmptyState(title = stringResource(R.string.journal_empty)) {
-                    // A filter that hides everything needs no way out; an empty journal needs somewhere to start.
-                    if (!state.hasAny) Button(onClick = onToday) { Text(stringResource(R.string.journal_empty_action)) }
+                if (state.hasAny) {
+                    // A filter that hides everything needs no way out: the filter row above is it.
+                    EmptyState(title = stringResource(R.string.journal_empty_filtered))
+                } else {
+                    EmptyState(title = stringResource(R.string.journal_empty_title), body = stringResource(R.string.journal_empty)) {
+                        Button(onClick = onToday) { Text(stringResource(R.string.journal_empty_action)) }
+                    }
                 }
             }
         }
@@ -220,8 +224,8 @@ fun EditEntrySheet(
                 style = MaterialTheme.typography.headlineSmall,
                 modifier = Modifier.semantics { heading() },
             )
-            ScoreScale(stringResource(R.string.evaluation_label_score), score, { score = it })
-            ScoreScale(stringResource(R.string.evaluation_label_taste), taste, { taste = it })
+            ScoreScale(stringResource(R.string.evaluation_question_score), score, { score = it })
+            ScoreScale(stringResource(R.string.evaluation_question_taste), taste, { taste = it })
             OutlinedTextField(
                 value = notes,
                 onValueChange = { notes = it },
