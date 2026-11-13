@@ -2,7 +2,8 @@ package nl.potentplum.mise.feature.season
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.ExperimentalLayoutApi
+import androidx.compose.foundation.layout.FlowRow
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
@@ -32,6 +33,7 @@ import nl.potentplum.mise.core.designsystem.component.EmptyState
 import nl.potentplum.mise.core.designsystem.component.FilterPillOption
 import nl.potentplum.mise.core.designsystem.component.FilterPills
 import nl.potentplum.mise.core.designsystem.component.HeroHeader
+import nl.potentplum.mise.core.designsystem.component.LoadingState
 import nl.potentplum.mise.core.designsystem.component.MiseSearchField
 import nl.potentplum.mise.core.designsystem.component.MiseTopAppBar
 import nl.potentplum.mise.core.designsystem.component.OverflowItem
@@ -70,7 +72,10 @@ fun SeasonScreen(
                     description = stringResource(R.string.controls_search_aria_label),
                 )
             }
-            if (state.loading) return@Column
+            if (state.loading) {
+                LoadingState()
+                return@Column
+            }
             when (state.mode) {
                 SeasonMode.NOW -> {
                     NowList(state, viewModel::setFilter, onVegetable)
@@ -141,6 +146,7 @@ private fun NowList(
     }
 }
 
+@OptIn(ExperimentalLayoutApi::class)
 @Composable
 private fun VegetableRow(
     row: VegetableInSeason,
@@ -156,10 +162,11 @@ private fun VegetableRow(
             verticalArrangement = Arrangement.spacedBy(6.dp),
         ) {
             VegToken(vegetable.nl, hexColor(vegetable.color), nameStyle = MaterialTheme.typography.titleMedium)
-            Row(
+            FlowRow(
                 Modifier.padding(start = 52.dp),
-                verticalAlignment = Alignment.CenterVertically,
                 horizontalArrangement = Arrangement.spacedBy(8.dp),
+                verticalArrangement = Arrangement.spacedBy(4.dp),
+                itemVerticalAlignment = Alignment.CenterVertically,
             ) {
                 Text(
                     vegetable.family.nl,

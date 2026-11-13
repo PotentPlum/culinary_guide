@@ -78,9 +78,11 @@ import nl.potentplum.mise.content.model.Technique
 import nl.potentplum.mise.core.designsystem.MiseTheme
 import nl.potentplum.mise.core.designsystem.component.EmptyState
 import nl.potentplum.mise.core.designsystem.component.Eyebrow
+import nl.potentplum.mise.core.designsystem.component.LoadingState
 import nl.potentplum.mise.core.designsystem.component.LocalMiseSnackbar
 import nl.potentplum.mise.core.designsystem.component.TimerChip
 import nl.potentplum.mise.core.designsystem.component.TimerChipState
+import nl.potentplum.mise.core.designsystem.component.avoidedBySnackbar
 import nl.potentplum.mise.core.designsystem.component.durationLabel
 import nl.potentplum.mise.feature.recipes.IngredientGroupLines
 
@@ -151,7 +153,7 @@ fun CookScreen(
         ) {
             when {
                 state.loading -> {
-                    Unit
+                    LoadingState()
                 }
 
                 state.notFound -> {
@@ -340,6 +342,7 @@ private fun StepPane(
         Row(
             Modifier
                 .fillMaxWidth()
+                .avoidedBySnackbar()
                 .navigationBarsPadding()
                 .padding(16.dp),
             horizontalArrangement = Arrangement.spacedBy(12.dp),

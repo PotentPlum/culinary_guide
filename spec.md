@@ -207,7 +207,8 @@ elevation. Touch targets are at least 48 dp.
 `FilterPills`, `FacetChips`, `RecipeCard`, `SuggestionCard` (recipe + reason line + total time + "Niet vandaag" / "Dit kook ik vanavond"),
 `TonightCard`, `TechniqueCard`, `DifficultyBadge`, `Eyebrow` (mono label), `HeroHeader` (styled headline), `DisciplineBars`,
 `SeasonTally` (count of vegetables cooked at peak + "nog te proberen" tokens), `ScoreScale` (5 labelled steps, §6.12),
-`TimerChip` (idle / running with remaining time / done), `RecipeActionBar` (sticky bottom actions), `EmptyState`, `ErrorState`.
+`TimerChip` (idle / running with remaining time / done), `RecipeActionBar` (sticky bottom actions), `EmptyState`, `ErrorState`,
+`LoadingState` (a centred spinner, shown only when loading takes longer than 300 ms, so a screen is never blank while it reads its data).
 
 **Vocabulary** (one word per concept, everywhere in the UI, notifications and content):
 
@@ -950,6 +951,9 @@ There is no legacy code in the app. A one-off script converts the old exports in
   vegetable fills checked by the data validator.
 - Headlines with italic emphasis are single string resources (§5), so TalkBack reads them as one sentence.
 - Every way to finish an action is a visible button; swipes (cook-mode pager, swipe to delete) always have a button or undo next to them.
+- Labels never break mid-word or clip on a phone: bottom-bar labels shrink to fit (down to 9 sp), button and
+  badge labels stay on one line and their row wraps instead. Snackbars appear above a screen's bottom action bar (Kookmodus /
+  Gekookt, the cook-mode step buttons, Bewaren / Aanpassen), never on top of it. `PhoneLayoutTest` checks these at 393 dp.
 
 ### 15.4 Language
 - Every user-visible string lives in `res/values/strings.xml` (Dutch is the default and only locale). Lint `HardcodedText`

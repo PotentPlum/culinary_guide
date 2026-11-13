@@ -35,6 +35,7 @@ import nl.potentplum.mise.core.designsystem.MiseTheme
 import nl.potentplum.mise.core.designsystem.component.EmptyState
 import nl.potentplum.mise.core.designsystem.component.Eyebrow
 import nl.potentplum.mise.core.designsystem.component.HeroHeader
+import nl.potentplum.mise.core.designsystem.component.LoadingState
 import nl.potentplum.mise.core.designsystem.component.MiseTopAppBar
 import nl.potentplum.mise.core.designsystem.component.OverflowItem
 import nl.potentplum.mise.core.designsystem.styledStringResource
@@ -57,7 +58,7 @@ internal fun <T> CurriculumScaffold(
                 .padding(padding),
         ) {
             when (state) {
-                Loadable.Loading -> Unit
+                Loadable.Loading -> LoadingState()
                 Loadable.NotFound -> EmptyState(title = stringResource(R.string.error_not_found))
                 is Loadable.Loaded -> content(state.value)
             }

@@ -48,6 +48,7 @@ import nl.potentplum.mise.core.designsystem.component.DifficultyBadge
 import nl.potentplum.mise.core.designsystem.component.EmptyState
 import nl.potentplum.mise.core.designsystem.component.FacetChip
 import nl.potentplum.mise.core.designsystem.component.FacetChips
+import nl.potentplum.mise.core.designsystem.component.LoadingState
 import nl.potentplum.mise.core.designsystem.component.MiseTopAppBar
 import nl.potentplum.mise.core.designsystem.component.OverflowItem
 import nl.potentplum.mise.core.designsystem.component.PeakBar
@@ -84,7 +85,7 @@ fun VegetableScreen(
                 .padding(padding),
         ) {
             when (val current = state) {
-                VegetableUiState.Loading -> Unit
+                VegetableUiState.Loading -> LoadingState()
                 VegetableUiState.NotFound -> EmptyState(title = stringResource(R.string.error_not_found))
                 is VegetableUiState.Loaded -> VegetableDetail(current, onVegetable, onTechnique, onQuest, onRecipe, onImportLink)
             }
@@ -113,7 +114,12 @@ private fun VegetableDetail(
             Section(stringResource(R.string.detail_section_technique)) { Body(vegetable.technique) }
             Section(stringResource(R.string.detail_section_pairings)) { FacetChips(vegetable.pairings.map { FacetChip(it) }) }
             Section(stringResource(R.string.detail_section_subs)) {
-                FlowRow(horizontalArrangement = Arrangement.spacedBy(6.dp), verticalArrangement = Arrangement.spacedBy(6.dp)) {
+                // A chip that opens another vegetable has a 48 dp touch target, so it is taller than the plain ones: centre them.
+                FlowRow(
+                    horizontalArrangement = Arrangement.spacedBy(6.dp),
+                    verticalArrangement = Arrangement.spacedBy(6.dp),
+                    itemVerticalAlignment = Alignment.CenterVertically,
+                ) {
                     state.substitutions.forEach { substitution ->
                         val target = substitution.vegetableId
                         FacetChips(

@@ -85,6 +85,8 @@ fun StatusDot(
                 text = seasonStatusLabel(status),
                 style = MaterialTheme.typography.labelMedium,
                 color = colors.statusForeground(status),
+                maxLines = 1,
+                softWrap = false,
             )
         }
     }
@@ -111,7 +113,14 @@ fun SeasonBadge(
         contentColor = color,
         border = BorderStroke(1.dp, color),
     ) {
-        Text(label, style = MaterialTheme.typography.labelSmall, modifier = Modifier.padding(horizontal = 8.dp, vertical = 2.dp))
+        // A badge is one pill: the row it sits in wraps it to the next line rather than breaking the label.
+        Text(
+            label,
+            style = MaterialTheme.typography.labelSmall,
+            maxLines = 1,
+            softWrap = false,
+            modifier = Modifier.padding(horizontal = 8.dp, vertical = 2.dp),
+        )
     }
 }
 

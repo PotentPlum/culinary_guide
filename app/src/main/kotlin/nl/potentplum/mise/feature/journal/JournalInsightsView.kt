@@ -2,9 +2,12 @@ package nl.potentplum.mise.feature.journal
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.IntrinsicSize
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.rememberScrollState
@@ -130,10 +133,11 @@ fun JournalInsightsView(
 
 @Composable
 private fun HeaderStats(insights: JournalInsights) {
-    Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-        Stat(insights.attemptsThisMonth, stringResource(R.string.journal_stat_month), Modifier.weight(1f))
-        Stat(insights.totalAttempts, stringResource(R.string.journal_stat_total), Modifier.weight(1f))
-        Stat(insights.questsCompleted, stringResource(R.string.journal_stat_quests), Modifier.weight(1f))
+    // As tall as the tallest tile: a label on two lines must not leave its neighbours shorter.
+    Row(Modifier.fillMaxWidth().height(IntrinsicSize.Min), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+        Stat(insights.attemptsThisMonth, stringResource(R.string.journal_stat_month), Modifier.weight(1f).fillMaxHeight())
+        Stat(insights.totalAttempts, stringResource(R.string.journal_stat_total), Modifier.weight(1f).fillMaxHeight())
+        Stat(insights.questsCompleted, stringResource(R.string.journal_stat_quests), Modifier.weight(1f).fillMaxHeight())
     }
 }
 

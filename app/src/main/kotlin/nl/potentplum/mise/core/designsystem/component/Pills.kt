@@ -88,7 +88,12 @@ fun FacetChips(
     modifier: Modifier = Modifier,
     onClick: ((FacetChip) -> Unit)? = null,
 ) {
-    FlowRow(modifier, horizontalArrangement = Arrangement.spacedBy(6.dp), verticalArrangement = Arrangement.spacedBy(6.dp)) {
+    FlowRow(
+        modifier,
+        horizontalArrangement = Arrangement.spacedBy(6.dp),
+        verticalArrangement = Arrangement.spacedBy(6.dp),
+        itemVerticalAlignment = Alignment.CenterVertically,
+    ) {
         chips.forEach { chip ->
             val shape = CircleShape
             val border = BorderStroke(1.dp, MaterialTheme.colorScheme.outlineVariant)

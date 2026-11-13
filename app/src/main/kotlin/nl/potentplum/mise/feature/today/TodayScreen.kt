@@ -2,6 +2,8 @@ package nl.potentplum.mise.feature.today
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.ExperimentalLayoutApi
+import androidx.compose.foundation.layout.FlowRow
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
@@ -150,6 +152,7 @@ fun TodayScreen(
     addingToShopping?.let { recipeId -> AddToShoppingSheet(recipeId = recipeId, servings = null, onDismiss = { addingToShopping = null }) }
 }
 
+@OptIn(ExperimentalLayoutApi::class)
 private fun LazyListScope.suggestions(
     state: TodayUiState,
     viewModel: TodayViewModel,
@@ -162,14 +165,18 @@ private fun LazyListScope.suggestions(
                 body = stringResource(R.string.today_empty_library_sub),
                 icon = Icons.Outlined.MenuBook,
             ) {
-                Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                // Side by side when they fit, otherwise one under the other: never a label broken over two lines.
+                FlowRow(
+                    horizontalArrangement = Arrangement.spacedBy(8.dp, Alignment.CenterHorizontally),
+                    verticalArrangement = Arrangement.spacedBy(8.dp),
+                ) {
                     Button(onClick = actions.onImportLink) {
                         Icon(Icons.Outlined.Link, contentDescription = null)
-                        Text(stringResource(R.string.recipes_add_link), Modifier.padding(start = 6.dp))
+                        Text(stringResource(R.string.recipes_add_link), Modifier.padding(start = 6.dp), maxLines = 1, softWrap = false)
                     }
                     OutlinedButton(onClick = actions.onPhotos) {
                         Icon(Icons.Outlined.PhotoCamera, contentDescription = null)
-                        Text(stringResource(R.string.recipes_add_camera), Modifier.padding(start = 6.dp))
+                        Text(stringResource(R.string.recipes_add_camera), Modifier.padding(start = 6.dp), maxLines = 1, softWrap = false)
                     }
                 }
             }

@@ -4,6 +4,7 @@ import androidx.annotation.StringRes
 import androidx.compose.foundation.layout.WindowInsets
 import androidx.compose.foundation.layout.consumeWindowInsets
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.text.TextAutoSize
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.MenuBook
 import androidx.compose.material.icons.automirrored.outlined.MenuBook
@@ -23,7 +24,6 @@ import androidx.compose.material3.NavigationBar
 import androidx.compose.material3.NavigationBarItem
 import androidx.compose.material3.NavigationBarItemDefaults
 import androidx.compose.material3.Scaffold
-import androidx.compose.material3.SnackbarHost
 import androidx.compose.material3.SnackbarHostState
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -41,6 +41,7 @@ import androidx.compose.ui.res.pluralStringResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.semantics.contentDescription
 import androidx.compose.ui.semantics.semantics
+import androidx.compose.ui.unit.sp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.navigation.NavDestination.Companion.hasRoute
 import androidx.navigation.NavDestination.Companion.hierarchy
@@ -54,8 +55,11 @@ import androidx.navigation.compose.rememberNavController
 import androidx.navigation.toRoute
 import kotlinx.coroutines.flow.first
 import nl.potentplum.mise.core.designsystem.component.LocalMiseSnackbar
+import nl.potentplum.mise.core.designsystem.component.LocalSnackbarObstacles
 import nl.potentplum.mise.core.designsystem.component.MiseSnackbar
+import nl.potentplum.mise.core.designsystem.component.MiseSnackbarHost
 import nl.potentplum.mise.core.designsystem.component.OverflowItem
+import nl.potentplum.mise.core.designsystem.component.SnackbarObstacles
 import nl.potentplum.mise.core.navigation.AboutRoute
 import nl.potentplum.mise.core.navigation.CheckRoute
 import nl.potentplum.mise.core.navigation.CookRoute
@@ -144,6 +148,7 @@ fun MiseAppShell(
     val snackbarHost = remember { SnackbarHostState() }
     val scope = rememberCoroutineScope()
     val snackbar = remember(snackbarHost, scope) { MiseSnackbar(snackbarHost, scope) }
+    val snackbarObstacles = remember { SnackbarObstacles() }
 
     val onOverflowItem: (OverflowItem) -> Unit = { item ->
         navController.navigate(
@@ -194,7 +199,7 @@ fun MiseAppShell(
         onShareHandled()
     }
 
-    CompositionLocalProvider(LocalMiseSnackbar provides snackbar) {
+    CompositionLocalProvider(LocalMiseSnackbar provides snackbar, LocalSnackbarObstacles provides snackbarObstacles) {
         Scaffold(
             contentWindowInsets = WindowInsets(0),
             bottomBar = {
@@ -203,7 +208,7 @@ fun MiseAppShell(
                 val fullScreen = entry?.destination?.let { it.hasRoute<CookRoute>() || it.hasRoute<OnboardingRoute>() } == true
                 if (!fullScreen) MiseNavigationBar(navController, uncheckedShoppingCount)
             },
-            snackbarHost = { SnackbarHost(snackbarHost) },
+            snackbarHost = { MiseSnackbarHost(snackbarHost, snackbarObstacles) },
         ) { padding ->
             NavHost(
                 navController = navController,
@@ -478,7 +483,17 @@ private fun MiseNavigationBar(
                     navController.navigateToTab(destination)
                 },
                 icon = { TabIcon(destination, selected, uncheckedShoppingCount) },
-                label = { Text(stringResource(destination.labelRes), maxLines = 1) },
+                // "Boodschappen" is wider than a fifth of a phone at the default label size: shrink rather than clip.
+                label = {
+                    val style = MaterialTheme.typography.labelMedium
+                    Text(
+                        stringResource(destination.labelRes),
+                        maxLines = 1,
+                        softWrap = false,
+                        style = style,
+                        autoSize = TextAutoSize.StepBased(minFontSize = 9.sp, maxFontSize = style.fontSize, stepSize = 0.5.sp),
+                    )
+                },
                 colors =
                     NavigationBarItemDefaults.colors(
                         selectedIconColor = MaterialTheme.colorScheme.primary,
