@@ -883,7 +883,7 @@ vegetables in summer, or a fennel salad); the probe.
 1. Write the target and the reason; name molluscs on the guests' cards.
 2. Dry the scallops (or clean the squid) and heat the pan until it smokes lightly.
 3. Cook four portions in batches; probe one; cut one for the cross-section.
-4. Plate and photograph; collect cards.
+4. Plate and photograph; collect cards; write whether the target held in every portion.
 
 **Show:** measure, photo, written. **`TS-PRO` level 5, service four of five** (varied proteins): portions at the chosen
 target within 2 °C and matching in cross-section.
