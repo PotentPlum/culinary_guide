@@ -1,0 +1,3105 @@
+{
+ "schemaVersion": 1,
+ "id": "VEG-3",
+ "introduction": [
+  {
+   "type": "paragraph",
+   "text": "**Before you start.** `VEG-1` taught the vegetable families, cuts and basic methods, and S2 used vegetables as sides, soups and braises. This course puts the vegetable at the centre of the plate. A home cook who follows the seasons cooks vegetables more than anything else, and a vegetable-led main is where technique, flavour architecture and composition meet. The course has five parts:"
+  },
+  {
+   "type": "list",
+   "items": [
+    {
+     "level": 0,
+     "marker": "",
+     "text": "**thinking vegetable-first:** the anatomy of a vegetable main, and one vegetable followed through its season, used whole;"
+    },
+    {
+     "level": 0,
+     "marker": "",
+     "text": "**high heat:** charring and blistering without bitterness, whole-roasting and salt-baking;"
+    },
+    {
+     "level": 0,
+     "marker": "",
+     "text": "**gentle heat:** glazing, confit and basting; silky purées and vegetable emulsions;"
+    },
+    {
+     "level": 0,
+     "marker": "",
+     "text": "**satisfying plant-based mains:** umami, fat, texture and protein without meat; vegetable steaks, gratins and bakes;"
+    },
+    {
+     "level": 0,
+     "marker": "",
+     "text": "**the vegetable lab:** one vegetable tested five ways, and your own vegetable-led main."
+    }
+   ]
+  },
+  {
+   "type": "paragraph",
+   "text": "The produce is Dutch and in season, which is the point of the course:"
+  },
+  {
+   "type": "list",
+   "items": [
+    {
+     "level": 0,
+     "marker": "",
+     "text": "**spring:** asparagus, peas and young carrots;"
+    },
+    {
+     "level": 0,
+     "marker": "",
+     "text": "**summer:** courgettes, beans, tomatoes, sweetcorn and peppers;"
+    },
+    {
+     "level": 0,
+     "marker": "",
+     "text": "**autumn:** pumpkin, celeriac, beetroot, cauliflower, cabbages and leeks;"
+    },
+    {
+     "level": 0,
+     "marker": "",
+     "text": "**winter:** kale, savoy, chicory, salsify (*schorseneren*), Jerusalem artichoke (*aardpeer*), parsnip and stored roots."
+    }
+   ]
+  },
+  {
+   "type": "paragraph",
+   "text": "Plant proteins come from legumes (`LEG-2`), eggs and dairy, and, if you choose, tofu or tempeh. Plan about four weeks of active work. The seasonal project of `VEG-3.M1.X1` runs alongside for about eight weeks, so start the course at the beginning of a vegetable's season."
+  },
+  {
+   "type": "paragraph",
+   "text": "**Have ready:** the heavy casserole (*braadpan*); the cast-iron or carbon-steel skillet; the heavy sauté pan; a jug blender; a fine sieve; the mandoline with its guard or a cut-resistant glove; a gratin dish of about 25 × 20 cm; a skewer; the probe; coded cups for blind tasting; the seasonal calendar; the scale; the component table; the household cards; the journal."
+  }
+ ],
+ "modules": [
+  {
+   "id": "VEG-3.M1",
+   "title": "Vegetables as the main event",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** the 8 items of `VEG-3.M1` in the course file. Pass mark 80 %."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "VEG-3.M1.L1",
+     "title": "Thinking vegetable-first",
+     "prerequisites": [
+      "FLV-3.M5.L1"
+     ],
+     "competencies": [
+      {
+       "id": "CR-COMP",
+       "level": 3
+      },
+      {
+       "id": "IN-VEG",
+       "level": 4
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** most vegetable dishes that disappoint as a main were built as a side and simply made bigger. A vegetable main is designed differently, from the centre outwards, and once you know its parts you can build one from whatever the season offers."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** a familiar vegetable side to rebuild (for example roasted carrots); a sauce base (butter, yoghurt, tahini or a vegetable purée); something crunchy or sharp; a source of richness (cheese, eggs, a legume or a grain); the component table of `FLV-3.M4`; the household cards."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*The anatomy of a vegetable-led main.* Four parts:"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**a centrepiece:** a vegetable cooked to show its best: a whole-roasted celeriac, a charred cabbage wedge, a vegetable steak;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**a sauce** that brings richness or depth: a brown butter, a vegetable emulsion, a nut-free *romesco*, a yoghurt sauce;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**a contrast:** crunch, acid, bitterness or freshness;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**richness and satiety:** fat, a starch or legume, cheese or eggs, umami (`FLV-3.M3`)."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Why vegetable-led dishes fail.* They feel like a side without its main. Usually something is missing: richness, umami, protein or a texture contrast. Or the vegetable was cooked timidly, steamed pale where it could have been browned, charred or glazed."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Composition.* Use the component table of `FLV-3.M4` with the vegetable in the \"main\" row. One vegetable is the centre; the others support it. A plate of six vegetables, all equal, has no centre."
+      },
+      {
+       "type": "paragraph",
+       "text": "*An example, rebuilt.* Roasted carrots as a side: carrots, oil, salt. As a main:"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**centrepiece:** whole carrots roasted until deeply caramelised;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**sauce:** a garlic yoghurt underneath;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**contrast:** a spoon of quick-pickled red onion and toasted seeds;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**richness:** a handful of warm lentils or a soft-boiled egg, and a brown butter with cumin over the top."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Rebuild a side into a main (60 min).** A familiar vegetable side rebuilt as a main with a sauce, a contrast and richness; the component table written first; served to the household with cards."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "the household calls it a main, not a side;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "each of the four parts is on the plate and can be named."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "A plate of steamed vegetables",
+         "Timid cooking, no centre",
+         "Brown, char or glaze the centrepiece"
+        ],
+        [
+         "\"Nice, but where's dinner?\"",
+         "No fat or umami",
+         "Add a sauce with fat, and an umami source"
+        ],
+        [
+         "Nothing stands out",
+         "Six vegetables competing",
+         "One centrepiece; the rest in supporting roles"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** a nut-free *romesco* keeps the sauce safe for nut-allergic guests (`SAF-1.M4`); if nuts are used, label them."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the component table, a photo, and the household cards."
+      }
+     ]
+    },
+    {
+     "id": "VEG-3.M1.L2",
+     "title": "One vegetable, whole and through its season",
+     "prerequisites": [
+      "VEG-1.M2.L1"
+     ],
+     "competencies": [
+      {
+       "id": "IN-SEL",
+       "level": 4
+      },
+      {
+       "id": "KM-WAST",
+       "level": 4
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** a vegetable is not the same in June and in November. Cooking it for its stage of the season, and using all of it, is what separates seasonal cooking from buying vegetables that happen to be in season."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** one vegetable bought whole with its leaves and stems (beetroot with its leaves, carrots with tops, a cauliflower with its leaves, a kohlrabi); the scale; the waste log; the seasonal calendar."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*The whole vegetable:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**leaves:** beetroot and kohlrabi leaves (cooked like chard), cauliflower leaves (roasted until crisp at the edges), carrot tops (in a pesto or a soup);"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**stems:** broccoli and chard stems, peeled and sliced, cooked a little before the florets or leaves;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**peels:** potato peels roasted as crisps; celeriac peel in a stock;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**tops and trimmings:** leek greens in a stock; pumpkin seeds cleaned and toasted."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*How a vegetable changes through its season:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**early:** small, tender, sweet and thin-skinned. Little cooking: raw or barely cooked. Young carrots with their tops, new potatoes;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**peak:** full flavour, cheapest, most abundant. Any method suits it;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**late and stored:** larger, starchier or more fibrous, with a thicker skin. Long cooking, roasting, purées and soups: stored carrots, late celeriac."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Buying at the market.* Judge what is best this week by look, smell, firmness and weight for size; note its price and what you want it for. Plan the week from it, with a fallback if it isn't there (`IN-SEL`). A vegetable box (*groentetas*) makes this natural: the box decides, you plan."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Whole use (60 min).** One vegetable bought whole with its leaves and stems; every part used in a meal, for example beetroot roasted, its leaves wilted with garlic, its stems pickled quickly; the waste weighed."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "nothing edible in the bin;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "the method chosen for the stage of the season."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Carrot tops in the bin",
+         "Habit",
+         "A carrot-top pesto or a soup garnish"
+        ],
+        [
+         "Woody raw carrots",
+         "Old stored carrots served raw",
+         "Roast or purée late-season roots"
+        ],
+        [
+         "Mushy early vegetables",
+         "Cooked like late ones",
+         "Early produce gets seconds, not minutes"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** leaves and tops hold soil and grit: soak and lift them out of the water as for salad (`GRD-3.M1.L1`), and wash stems and peels before cooking."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** each part and its use, the weight of the waste, and a note on the vegetable's stage."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "VEG-3.M1.X1",
+     "title": "One vegetable through its season",
+     "description": "Follow one vegetable through its season: three dishes, early, peak and late.",
+     "competencies": [
+      {
+       "id": "CR-COMP",
+       "level": 3
+      },
+      {
+       "id": "IN-VEG",
+       "level": 4
+      },
+      {
+       "id": "IN-SEL",
+       "level": 4
+      },
+      {
+       "id": "KM-WAST",
+       "level": 4
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** follow one Dutch vegetable through its season in three dishes, early, peak and late, choosing the variety and the method for each stage. Follow it (for example carrots, beetroot, courgettes, pumpkin or kale) for about eight weeks. Each dish has a component table, a reason for the variety and method, and household cards; the trimmings of one dish go into another. Plan the peak week at the market, with a change on the day reasoned and the waste logged."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** the vegetable at three stages of its season; the other ingredients of the three dishes; the scale; the waste log; the household cards."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Framework:** the seasonal project."
+      },
+      {
+       "type": "table",
+       "header": [
+        "Part",
+        "What it is",
+        "Your decisions"
+       ],
+       "rows": [
+        [
+         "Vegetable",
+         "One Dutch vegetable with a season of about eight weeks or more",
+         "Which"
+        ],
+        [
+         "Early dish",
+         "Little cooking, for tenderness and sweetness",
+         "Variety, method, reason"
+        ],
+        [
+         "Peak dish",
+         "The week planned from the market (quality, price, purpose; receipts); a change reasoned",
+         "Variety, method"
+        ],
+        [
+         "Late dish",
+         "Long cooking, roasting, a purée or a soup",
+         "Variety, method, reason"
+        ],
+        [
+         "Trimmings",
+         "From one dish into another",
+         "Which part, which dish"
+        ]
+       ]
+      },
+      {
+       "type": "table",
+       "header": [
+        "Waste",
+        "The peak week's waste logged by weight, under 5 %",
+        "—"
+       ],
+       "rows": []
+      },
+      {
+       "type": "paragraph",
+       "text": "*Procedure:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "Choose the vegetable; plan the three dishes against the season."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "Early: buy, judge, cook, photograph, cards; keep the trimmings for the next dish."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "Peak: plan the week at the market; reason the change on the day; cook; keep the receipts; log the waste."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "Late: buy, judge, cook, photograph, cards."
+        },
+        {
+         "level": 0,
+         "marker": "5.",
+         "text": "Write up how the vegetable changed and how the methods followed it."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`IN-VEG` level 4:** for three dishes, variety and method chosen with a reason; the trimmings of one dish used in another; the results meet their texture targets."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`CR-COMP` level 3:** plates composed from briefs with component tables; the tasters judge the balance."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`IN-SEL` level 4:** a week plan built from what was best in season, a change on the day reasoned, quality, price and purpose noted, and the receipts confirming the plan."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`KM-WAST` level 4, further evidence:** whole-vegetable use, the waste logged by weight."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "AI review reads the write-up and the logs: *competent* is three methods that follow the season, each reasoned, and waste under 5 %; *not yet* is the same method three times."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** about 4 h over eight weeks, plus the household meals."
+      }
+     ]
+    }
+   ],
+   "items": [
+    {
+     "id": "VEG-3.M1.Q1",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "VEG-3.M1.L1",
+     "safety": false,
+     "question": "A roasted-carrot main feels like a side dish. What is it most likely missing?",
+     "options": [
+      {
+       "key": "A",
+       "text": "more carrots"
+      },
+      {
+       "key": "B",
+       "text": "richness, umami or a sauce, and a contrast"
+      },
+      {
+       "key": "C",
+       "text": "more salt only"
+      },
+      {
+       "key": "D",
+       "text": "a garnish of parsley"
+      }
+     ],
+     "answer": "B",
+     "why": "The anatomy of a vegetable-led main."
+    },
+    {
+     "id": "VEG-3.M1.Q2",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "VEG-3.M1.L1",
+     "safety": false,
+     "question": "Which is the centrepiece of a vegetable main?",
+     "options": [
+      {
+       "key": "A",
+       "text": "the sauce"
+      },
+      {
+       "key": "B",
+       "text": "the vegetable cooked to show its best"
+      },
+      {
+       "key": "C",
+       "text": "the bread"
+      },
+      {
+       "key": "D",
+       "text": "the garnish"
+      }
+     ],
+     "answer": "B",
+     "why": "Vegetable-first."
+    },
+    {
+     "id": "VEG-3.M1.Q3",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "VEG-3.M1.L1",
+     "safety": false,
+     "question": "Which element adds satiety to a vegetable main?",
+     "options": [
+      {
+       "key": "A",
+       "text": "more leaves"
+      },
+      {
+       "key": "B",
+       "text": "a legume, grain, cheese or eggs, and fat"
+      },
+      {
+       "key": "C",
+       "text": "water"
+      },
+      {
+       "key": "D",
+       "text": "a herb"
+      }
+     ],
+     "answer": "B",
+     "why": "Richness and satiety."
+    },
+    {
+     "id": "VEG-3.M1.Q4",
+     "type": "SCENARIO",
+     "lessonId": "VEG-3.M1.L1",
+     "safety": false,
+     "question": "Write the component table for a whole-roasted celeriac main.",
+     "options": [],
+     "answer": "For example: centrepiece: celeriac roasted whole and basted; sauce: brown butter with sage or a celeriac-and-yoghurt emulsion; contrast: pickled shallots or crisp toasted seeds and chicory; richness: lentils or a soft egg.",
+     "why": "Centrepiece, sauce, contrast, richness."
+    },
+    {
+     "id": "VEG-3.M1.Q5",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "VEG-3.M1.L2",
+     "safety": false,
+     "question": "How do early-season carrots differ from stored winter carrots?",
+     "options": [
+      {
+       "key": "A",
+       "text": "no difference"
+      },
+      {
+       "key": "B",
+       "text": "early: small, tender, sweet, little cooking; stored: larger, starchier, need longer cooking"
+      },
+      {
+       "key": "C",
+       "text": "stored ones are sweeter raw"
+      },
+      {
+       "key": "D",
+       "text": "early ones need hours"
+      }
+     ],
+     "answer": "B",
+     "why": "[J] through the season."
+    },
+    {
+     "id": "VEG-3.M1.Q6",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "VEG-3.M1.L2",
+     "safety": false,
+     "question": "What can beetroot leaves become?",
+     "options": [
+      {
+       "key": "A",
+       "text": "nothing"
+      },
+      {
+       "key": "B",
+       "text": "a sautéed green or a soup"
+      },
+      {
+       "key": "C",
+       "text": "compost only"
+      },
+      {
+       "key": "D",
+       "text": "a dessert"
+      }
+     ],
+     "answer": "B",
+     "why": "Whole-vegetable use."
+    },
+    {
+     "id": "VEG-3.M1.Q7",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "VEG-3.M1.L2",
+     "safety": false,
+     "question": "At the market the kale looks tired but the savoy cabbage is superb and cheap. Your plan had kale. What do you do?",
+     "options": [
+      {
+       "key": "A",
+       "text": "buy the kale anyway"
+      },
+      {
+       "key": "B",
+       "text": "switch to the savoy and adapt the dish, noting why"
+      },
+      {
+       "key": "C",
+       "text": "skip the dish"
+      },
+      {
+       "key": "D",
+       "text": "buy both"
+      }
+     ],
+     "answer": "B",
+     "why": "Plan from what is best, with a fallback."
+    },
+    {
+     "id": "VEG-3.M1.Q8",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "VEG-3.M1.L2",
+     "safety": false,
+     "question": "Which part of a leek goes into stock?",
+     "options": [
+      {
+       "key": "A",
+       "text": "none"
+      },
+      {
+       "key": "B",
+       "text": "the dark green tops, washed"
+      },
+      {
+       "key": "C",
+       "text": "the roots only"
+      },
+      {
+       "key": "D",
+       "text": "the white only"
+      }
+     ],
+     "answer": "B",
+     "why": "Trimmings into stock."
+    }
+   ]
+  },
+  {
+   "id": "VEG-3.M2",
+   "title": "High-heat techniques",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** the 8 items of `VEG-3.M2` in the course file. Pass mark 80 %."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "VEG-3.M2.L1",
+     "title": "Charring and blistering",
+     "prerequisites": [
+      "HEA-2.M3.L1"
+     ],
+     "competencies": [
+      {
+       "id": "SC-BRWN",
+       "level": 4
+      },
+      {
+       "id": "TS-VEG",
+       "level": 4
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** high heat gives vegetables the sweetness and smokiness that make them taste like a main. The skill is stopping at the right moment: a little char is delicious, a lot is bitter."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** a pointed cabbage (*spitskool*); leeks; peppers (summer); onions; oil; salt; the cast-iron skillet; tongs; a bowl and a plate to cover it; the extractor fan on."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*High, dry heat* browns the surface by the Maillard reaction and caramelisation (`SC-BRWN`), and at the extreme chars it. Use a cast-iron pan, a grill, the oven's top heat or a gas flame."
+      },
+      {
+       "type": "paragraph",
+       "text": "*What chars well:* cabbage wedges, leeks, spring onions, peppers, chicory, broccoli, sweetcorn, onion halves cut side down. Dense vegetables are part-cooked first, so the inside is tender when the outside is done."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Where char stops being pleasant:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "a thin, blistered char on part of the surface is smoky and sweet;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "a thick black crust over the whole surface is bitter and acrid;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "skins that are peeled off (peppers, aubergine) can go fully black;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "surfaces you eat should be dark brown, with patches of black at most."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Steering browning.* You control it with:"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**a dry surface:** water steams before it browns;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**the right fat:** a thin film of oil that tolerates the heat;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**space:** the pan not crowded;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**patience:** the cut face down and left alone;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**sugar and acid:** a glaze browns faster, acid slows it."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "Brown a sweet vegetable more, a delicate one less."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Blistered peppers.* Char them whole in the pan, under the grill or over a flame until black all over; cover them in a bowl for 10 minutes so the steam loosens the skin; peel, seed and tear them. Don't rinse them: the juice is flavour."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Cabbage and leeks (60 min).** A pointed-cabbage wedge and leeks charred in cast iron: one taken less far, one further; tasted side by side, and the point where pleasant became bitter noted."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Peppers and onions (60 min).** Peppers blistered and peeled; onion halves charred cut side down, then softened in the oven."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "deep brown with blistered patches;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "a sweet, smoky taste with no acrid bitterness."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "A pale, steamed vegetable",
+         "Wet surface, or a crowded pan",
+         "Dry it; fewer pieces; a hotter pan"
+        ],
+        [
+         "Patchy, uneven colour",
+         "Moved constantly",
+         "Cut face down and leave it"
+        ],
+        [
+         "A bitter, black surface",
+         "Taken too far",
+         "Stop at dark brown with patches of black"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** a very hot dry pan smokes: the extractor on, oil in a thin film, and a lid within reach. Tongs, not fingers, for turning (`HEA-2.M3`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** photos of the less and more charred versions, with your tasting notes."
+      }
+     ]
+    },
+    {
+     "id": "VEG-3.M2.L2",
+     "title": "Whole-roasting and salt-baking",
+     "prerequisites": [
+      "VEG-1.M4.L1"
+     ],
+     "competencies": [
+      {
+       "id": "TS-VEG",
+       "level": 4
+      },
+      {
+       "id": "CK-METH",
+       "level": 4
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** a whole vegetable brought to the table is a centrepiece in the way a roast is. Roasted whole, a celeriac or a cauliflower becomes concentrated and soft inside, caramelised outside, and it needs very little else."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** a whole celeriac or cauliflower; beetroot; butter or oil; thyme, garlic and bay; coarse salt; egg whites or flour for the crust; a roasting tin; a spoon for basting; a skewer; the probe."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Whole-roasting.* A whole celeriac, cauliflower, beetroot, pumpkin or small cabbage is roasted slowly in a moderate oven until tender to the centre, basted every 20–30 minutes with butter or oil and aromatics. The outside caramelises; the inside turns soft and concentrated. Scrub a celeriac well and roast it in its skin, or peel it for a crisper crust; trim a cauliflower's outer leaves but keep the inner ones, which crisp."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Salt-baking.* A whole vegetable (celeriac, beetroot, potatoes) is enclosed in a crust of salt and egg white, or salt and flour with water, and baked. The crust seals in moisture and seasons gently. Crack it open at the table and brush away the salt before serving; the crust itself is not eaten."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Judging doneness inside.* A skewer or a thin knife slides through to the centre with no resistance. A core of around 95 °C in a dense root is a guide. A large celeriac can take two hours or more, so start early."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Finishing.* Slice the vegetable into wedges or steaks, brown the cut faces in butter, and sauce it: a brown butter, a herb oil, a yoghurt sauce."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**A whole-roasted vegetable (75 min active, 2 h in total).** A whole celeriac or cauliflower roasted and basted; skewered and probed at the end; carved into wedges at the table."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Salt-baked beetroot (45 min active, 1.5 h in total).** Beetroot in a salt crust; cracked, peeled and served with a sharp dressing."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "skewer-soft to the centre;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "caramelised outside;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "seasoned but not salty."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Raw in the centre",
+         "Not enough time",
+         "Skewer it; give it longer, lower if the outside is dark"
+        ],
+        [
+         "Burnt outside, hard inside",
+         "The oven too hot",
+         "A moderate oven and more time; cover it loosely"
+        ],
+        [
+         "A crust that cracks open while baking",
+         "Too dry or too thin",
+         "Wetter, thicker crust, pressed tight around the vegetable"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** the salt crust uses egg white, an allergen (`SAF-1.M4`): use the flour crust for an egg-allergic guest, and tell guests about gluten if it is flour. Lift a heavy tin with both hands and dry oven gloves."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the times, the skewer and probe results, and photos of the whole and the carved vegetable."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "VEG-3.M2.X1",
+     "title": "A whole-roasted vegetable centrepiece with a sauce",
+     "description": "A whole-roasted vegetable centrepiece with a sauce.",
+     "competencies": [
+      {
+       "id": "SC-BRWN",
+       "level": 4
+      },
+      {
+       "id": "TS-VEG",
+       "level": 4
+      },
+      {
+       "id": "CK-METH",
+       "level": 4
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** make a whole-roasted (or salt-baked) vegetable the centrepiece of a meal, with a sauce and a contrast, steering its browning on purpose. Name the browning variable in advance (basting with butter, a glaze, the oven heat) and photograph the result. Across the module, show three situations where browning was steered on purpose: the charred cabbage, the onions and this centrepiece. Also choose and justify a method for three unfamiliar vegetables (for example salsify, Jerusalem artichoke and kohlrabi) from their properties, and cook one."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** a whole seasonal vegetable (celeriac, cauliflower, pumpkin or cabbage); butter or oil and aromatics; the sauce and the contrast; one unfamiliar vegetable; a skewer; the probe; the photos of `VEG-3.M2.L1`."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Framework:** the whole roast."
+      },
+      {
+       "type": "table",
+       "header": [
+        "Part",
+        "What it is",
+        "Your decisions"
+       ],
+       "rows": [
+        [
+         "Vegetable",
+         "Whole, seasonal, scrubbed or trimmed",
+         "Which"
+        ],
+        [
+         "Method",
+         "Whole-roasted and basted, or salt-baked",
+         "Which, and why"
+        ],
+        [
+         "Browning variable",
+         "Named before cooking; photographed after",
+         "Basting, glaze or heat"
+        ],
+        [
+         "Doneness",
+         "Skewer-soft to the centre (about 95 °C as a guide)",
+         "—"
+        ],
+        [
+         "Sauce and contrast",
+         "A sauce with richness; something sharp or crunchy",
+         "Which"
+        ],
+        [
+         "Unfamiliar vegetables",
+         "Three, with a method from their properties; one cooked",
+         "Which three, which methods"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Procedure:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "Write the plan, the browning variable and the method choices for the three unfamiliar vegetables."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "Roast the centrepiece; baste; judge doneness by skewer; photograph."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "Cook one of the unfamiliar vegetables by the chosen method."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "Serve with the sauce and the contrast; household cards."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`SC-BRWN` level 4:** three situations where browning was steered on purpose, the variable named in advance and the photos confirming it."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`CK-METH` level 4:** three unfamiliar vegetables with a method justified from their properties; the one cooked confirms the reasoning."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`TS-VEG` level 4, in part:** a whole vegetable cooked to standard with the method reasoned. The garnishes timed with a main, the glaze and the purée of the row are in `VEG-3.M3.X1`."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "AI review reads the plan and the photos: *competent* is a variable named before cooking and visible in the photo, and methods argued from density, water and flavour; *not yet* is a variable named after the fact, or a raw centre."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 2 h active, plus roasting."
+      }
+     ]
+    }
+   ],
+   "items": [
+    {
+     "id": "VEG-3.M2.Q1",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "VEG-3.M2.L1",
+     "safety": false,
+     "question": "When does char stop being pleasant?",
+     "options": [
+      {
+       "key": "A",
+       "text": "never"
+      },
+      {
+       "key": "B",
+       "text": "when a thick black crust covers the eaten surface and tastes bitter"
+      },
+      {
+       "key": "C",
+       "text": "at the first brown spot"
+      },
+      {
+       "key": "D",
+       "text": "only on meat"
+      }
+     ],
+     "answer": "B",
+     "why": "Where char stops."
+    },
+    {
+     "id": "VEG-3.M2.Q2",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "VEG-3.M2.L1",
+     "safety": false,
+     "question": "Your cabbage wedge steams instead of charring. Why?",
+     "options": [
+      {
+       "key": "A",
+       "text": "the pan is too hot"
+      },
+      {
+       "key": "B",
+       "text": "the cabbage was wet, or the pan crowded or not hot enough"
+      },
+      {
+       "key": "C",
+       "text": "too little salt"
+      },
+      {
+       "key": "D",
+       "text": "the variety"
+      }
+     ],
+     "answer": "B",
+     "why": "A dry surface and a hot pan."
+    },
+    {
+     "id": "VEG-3.M2.Q3",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "VEG-3.M2.L1",
+     "safety": false,
+     "question": "You want a delicate chicory to brown less. What do you change?",
+     "options": [
+      {
+       "key": "A",
+       "text": "add sugar"
+      },
+      {
+       "key": "B",
+       "text": "lower the heat and keep the cut face browning briefly, no glaze"
+      },
+      {
+       "key": "C",
+       "text": "more fat only"
+      },
+      {
+       "key": "D",
+       "text": "longer time"
+      }
+     ],
+     "answer": "B",
+     "why": "Steering browning."
+    },
+    {
+     "id": "VEG-3.M2.Q4",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "VEG-3.M2.L1",
+     "safety": false,
+     "question": "Which vegetable may be charred fully black and then peeled?",
+     "options": [
+      {
+       "key": "A",
+       "text": "a cabbage wedge"
+      },
+      {
+       "key": "B",
+       "text": "a pepper"
+      },
+      {
+       "key": "C",
+       "text": "a leek eaten whole"
+      },
+      {
+       "key": "D",
+       "text": "chicory"
+      }
+     ],
+     "answer": "B",
+     "why": "The charred skin is removed."
+    },
+    {
+     "id": "VEG-3.M2.Q5",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "VEG-3.M2.L2",
+     "safety": false,
+     "question": "How do you know a whole-roasted celeriac is done?",
+     "options": [
+      {
+       "key": "A",
+       "text": "by colour"
+      },
+      {
+       "key": "B",
+       "text": "a skewer slides to the centre with no resistance"
+      },
+      {
+       "key": "C",
+       "text": "by time only"
+      },
+      {
+       "key": "D",
+       "text": "when it smells"
+      }
+     ],
+     "answer": "B",
+     "why": "[J] doneness inside."
+    },
+    {
+     "id": "VEG-3.M2.Q6",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "VEG-3.M2.L2",
+     "safety": false,
+     "question": "What does a salt crust do?",
+     "options": [
+      {
+       "key": "A",
+       "text": "makes it salty"
+      },
+      {
+       "key": "B",
+       "text": "seals in moisture and seasons gently"
+      },
+      {
+       "key": "C",
+       "text": "browns it"
+      },
+      {
+       "key": "D",
+       "text": "nothing"
+      }
+     ],
+     "answer": "B",
+     "why": "Salt-baking."
+    },
+    {
+     "id": "VEG-3.M2.Q7",
+     "type": "SCENARIO",
+     "lessonId": "VEG-3.M2.L2",
+     "safety": false,
+     "question": "A whole cauliflower is brown outside but hard inside after an hour. What do you do now, and next time?",
+     "options": [],
+     "answer": "Now: cover it loosely and lower the oven so the inside catches up, then uncover to finish; next time: steam or parboil it first, or roast at a lower heat for longer.",
+     "why": "Dense vegetables need time or precooking."
+    },
+    {
+     "id": "VEG-3.M2.Q8",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "VEG-3.M2.L2",
+     "safety": false,
+     "question": "Which suits salt-baking best?",
+     "options": [
+      {
+       "key": "A",
+       "text": "lettuce"
+      },
+      {
+       "key": "B",
+       "text": "beetroot or celeriac"
+      },
+      {
+       "key": "C",
+       "text": "peas"
+      },
+      {
+       "key": "D",
+       "text": "spinach"
+      }
+     ],
+     "answer": "B",
+     "why": "Dense roots."
+    }
+   ]
+  },
+  {
+   "id": "VEG-3.M3",
+   "title": "Gentle techniques",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** none for this module. Its techniques are judged from the texture photos and the timeline of `VEG-3.M3.X1`."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "VEG-3.M3.L1",
+     "title": "Glazing, confit and basting",
+     "prerequisites": [
+      "VEG-1.M4.L1"
+     ],
+     "competencies": [
+      {
+       "id": "TS-VEG",
+       "level": 4
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** gentle heat gives vegetables a different kind of luxury: a glaze that shines, a confit that melts, a basted steak that tastes of butter and thyme. These are the garnishes of a restaurant plate, made at home."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** carrots or turnips; small onions or radishes; fennel or shallots; a celeriac; butter; olive oil; sugar; salt; stock or water; thyme and garlic; the sauté pan; a cartouche (a circle of baking paper); a small deep pan; the skillet; a spoon."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Glazing* (*glacer*). Cut the vegetables evenly (carrots, turnips, small onions, radishes). Cook them in a little water or stock with butter, salt and a little sugar, partly covered or under a cartouche, until they are tender just as the liquid reduces to a syrupy glaze. Toss them to coat. *À blanc* means no colour; *à brun* means taking them on until the glaze colours."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Timing.* The cut size decides the time, so measure the liquid to be gone when the vegetable is tender: just enough to come halfway up. If the liquid runs out first, add a splash; if the vegetables are tender first, lift them out, reduce the liquid, and return them."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Confit.* Vegetables cooked slowly, submerged in oil or butter over low heat, until meltingly soft: fennel, shallots, tomatoes, garlic, potatoes. Vegetables in oil are a botulism risk (§9): keep a confit in the fridge and use it within 2 days."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Butter-basting.* Brown a whole or halved vegetable (a cabbage wedge, a celeriac steak, a carrot) in a little oil. Then add butter, thyme and crushed garlic, tilt the pan, and spoon the foaming butter over it continuously until it is tender and glossy."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Glazed vegetables (45 min).** Carrots or turnips glazed *à blanc* and *à brun*, side by side."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Confit and basting (60 min).** Fennel or shallots confit in olive oil; a celeriac steak butter-basted."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "a shiny glaze that coats, no liquid left in the pan;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "tender to the knife;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "the confit soft, not browned."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Burnt glaze, hard vegetables",
+         "The liquid gone too early",
+         "More liquid, or a lower heat, next time"
+        ],
+        [
+         "Tender vegetables in a pool of liquid",
+         "Too much liquid",
+         "Lift them out; reduce; toss back in"
+        ],
+        [
+         "Confit on the shelf",
+         "Oil seen as a seal",
+         "In the fridge, within 2 days (§9)"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** foaming butter spits: tilt the pan away from you and keep your sleeves clear. Confit is cooled and kept in the fridge (§9)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** photos of both glazes, the confit and the steak, with the times."
+      }
+     ]
+    },
+    {
+     "id": "VEG-3.M3.L2",
+     "title": "Purées and vegetable emulsions",
+     "prerequisites": [
+      "STK-2.M4.L1"
+     ],
+     "competencies": [
+      {
+       "id": "FL-TEXT",
+       "level": 3
+      },
+      {
+       "id": "TS-SAU",
+       "level": 4
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** a silky purée and a glossy vegetable sauce turn a few vegetables into a plate. The method is exact, and the texture is the test."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** a celeriac; carrots; a red pepper (summer) or more carrots; butter; cream; milk or stock; salt; the jug blender; a fine sieve; a spatula; a covered pan."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*A silky purée:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "cook the vegetable fully tender, in milk, stock or water, or roast it for depth;"
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "drain it well; blend it hot in a jug blender with a little of the liquid, the lid vented and held with a cloth (`STK-2.M4`);"
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "mount it with cold butter or cream while blending;"
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "pass it through a fine sieve;"
+        },
+        {
+         "level": 0,
+         "marker": "5.",
+         "text": "season it."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "Starchy vegetables (potatoes) turn gluey in a blender: press them through a ricer instead. Non-starchy ones (celeriac, cauliflower, carrot, parsnip, pumpkin) blend silky."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Vegetable emulsions and sauces.* A vegetable juice or purée emulsified with butter or oil: a carrot-butter sauce, a *beurre blanc* made with vegetable juice, a red-pepper emulsion. Or a vegetable reduction as a sauce base. Whisk or blend cold butter into the warm, reduced vegetable liquid, off the boil, a piece at a time."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Consistency.* A purée holds a soft peak and spreads slowly on the plate. A sauce reaches *nappe*: it coats the back of a spoon and a finger drawn through leaves a clean line."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Holding.* Keep it warm in a covered pan or a bain-marie at 57 °C or above (§9). A knob of butter on top, or a lid, stops a skin."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Two purées (60 min).** Celeriac and carrot, blended and passed; one mounted with butter, one with cream; compared."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**A vegetable sauce (45 min).** A carrot or red-pepper emulsion with butter, at *nappe*."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "smooth on the tongue;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "glossy, holding a soft peak;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "the sauce at *nappe*, not splitting."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Gluey potato purée",
+         "Blended",
+         "Press potatoes through a ricer"
+        ],
+        [
+         "Fibrous, grainy purée",
+         "Not passed",
+         "Pass it through a fine sieve"
+        ],
+        [
+         "A watery purée",
+         "Vegetables not drained",
+         "Drain well; add liquid back a little at a time"
+        ],
+        [
+         "A split sauce",
+         "Boiled after the butter",
+         "Off the boil; whisk in a spoon of cold water"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** hot liquids expand in a blender: fill it no more than half, vent the lid and hold it with a cloth (`STK-2.M4`). Purées held warm stay at 57 °C or above (§9)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** photos of the two purées and the sauce, with your texture notes."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "VEG-3.M3.X1",
+     "title": "A purée and a glazed vegetable on one plate",
+     "description": "A purée and a glazed vegetable on one plate.",
+     "competencies": [
+      {
+       "id": "TS-VEG",
+       "level": 4
+      },
+      {
+       "id": "FL-TEXT",
+       "level": 3
+      },
+      {
+       "id": "TS-SAU",
+       "level": 4
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** plate a main with three vegetable garnishes timed to finish together, among them a glazed vegetable and a silky purée, with a vegetable sauce at *nappe*. The main can be vegetable-led or have a protein. Reason the method for each garnish in writing, name the textures in advance and photograph them at service. Photograph the two session dishes of the module the same way, so that three dishes have their textures named and hit."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** seasonal vegetables for the three garnishes and the sauce; the main; butter and cream; the blender and sieve; the timeline sheet; the phone for photos."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Framework:** the garnishes and the timeline."
+      },
+      {
+       "type": "table",
+       "header": [
+        "Part",
+        "What it is",
+        "Your decisions"
+       ],
+       "rows": [
+        [
+         "Main",
+         "Vegetable-led or with a protein",
+         "Which"
+        ],
+        [
+         "Garnish 1",
+         "A glazed vegetable, *à blanc* or *à brun*",
+         "Which, and why"
+        ],
+        [
+         "Garnish 2",
+         "A silky purée, passed",
+         "Which, and why"
+        ],
+        [
+         "Garnish 3",
+         "A third method: charred, basted or confit",
+         "Which, and why"
+        ],
+        [
+         "Sauce",
+         "A vegetable emulsion at *nappe*",
+         "Which, and why for this plate"
+        ],
+        [
+         "Timeline",
+         "Written backwards from serving; finish times logged",
+         "The order"
+        ],
+        [
+         "Textures",
+         "Named before cooking; photographed at service",
+         "Silky, glazed, crisp"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Procedure:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "Write the timeline backwards from serving and the reasons for each method."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "Cook the garnishes and the main to the timeline; log the finish times."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "Plate; photograph at service."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "Note where the timing slipped."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`TS-VEG` level 4:** three vegetable garnishes timed to finish together with a main, each method reasoned, a glaze and a purée to standard. With `VEG-3.M2.X1`, `FIR-3.M2.X1` and `FIR-3.M5.X1` the row is met several times."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`FL-TEXT` level 3, further evidence:** three dishes with their textures (silky, glazed, crisp) hit and kept until the plate, photographed at service."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`TS-SAU` level 4, further evidence:** a vegetable emulsion at *nappe*, chosen for the plate with a reason."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "AI review reads the photos and the timeline: *competent* is a glaze that shines, a purée that holds a soft peak, a sauce at *nappe*, and finish times within a few minutes; *not yet* is a dull glaze, a grainy purée, or one garnish cold."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 2 h."
+      }
+     ]
+    }
+   ],
+   "items": []
+  },
+  {
+   "id": "VEG-3.M4",
+   "title": "Satisfying plant-based dishes",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** the 8 items of `VEG-3.M4` in the course file, 1 of them a safety item. Pass mark 80 %, with every safety item correct."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "VEG-3.M4.L1",
+     "title": "Building a satisfying plant dish",
+     "prerequisites": [
+      "FLV-3.M3.L1"
+     ],
+     "competencies": [
+      {
+       "id": "FL-ARCH",
+       "level": 3
+      },
+      {
+       "id": "IN-VEG",
+       "level": 4
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** a plant-based main satisfies when it has what meat usually brings: umami, fat, something to chew, and protein. Built in on purpose, these make the household forget to ask where the meat is."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** mushrooms (fresh and dried); lentils; tomato paste; miso or soy sauce; an aged cheese; onions and garlic; olive oil or butter; herbs; breadcrumbs or seeds for a crisp top; the flavour plan of `FLV-3.M5`."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*What makes a meal satisfying, and the plant sources:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**umami:** mushrooms (fresh and dried), tomato paste, miso, soy, aged cheese, seaweed, fermented vegetables (`FLV-3.M3`);"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**fat:** butter, oils, cheese, eggs, seeds and tahini;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**texture:** something to chew (a seared vegetable steak, mushrooms, lentils, grains) and something crisp;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**protein:** legumes, eggs, dairy, tofu and tempeh, grains; combined over the day rather than in one bite."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Layering them in one dish* (`FLV-3.M5`):"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**a base** of browned aromatics and umami: onions taken to deep gold, tomato paste fried until it darkens, miso;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**a middle** of the vegetable and the legume;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**a top** of acid, herbs and crunch."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Brown, don't boil.* Browning (the Maillard reaction) gives the savoury depth that boiled vegetables lack. Sear the mushrooms in batches until they are brown and their liquid is gone; fry the tomato paste; roast the vegetables rather than steaming them."
+      },
+      {
+       "type": "paragraph",
+       "text": "*An example: a mushroom and lentil ragù.*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**umami:** seared mushrooms, soaked dried mushrooms and their liquid, fried tomato paste, a spoon of miso;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**fat:** olive oil, and an aged cheese grated over at the end;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**chew:** green lentils, cooked until tender but whole;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**crunch:** toasted breadcrumbs with garlic and parsley on top;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**acid:** a splash of red wine vinegar at the end."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**A layered dish (75 min).** A mushroom and lentil ragù, or a bean and cabbage bake, with three umami sources, fat, a chewy element and a crisp top; the flavour plan written first."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "\"I didn't miss the meat\" on a household card;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "each layer of the flavour plan can be tasted."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Flat, watery flavour",
+         "Vegetables boiled, not browned",
+         "Sear in batches; fry the tomato paste"
+        ],
+        [
+         "Thin, unsatisfying",
+         "No fat",
+         "Finish with oil, butter or cheese"
+        ],
+        [
+         "Soft and monotonous",
+         "One texture throughout",
+         "A crisp top; legumes kept whole"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** soy, sesame (tahini), milk and mustard are allergens (`SAF-1.M4`): ask in advance and label them. Dried kidney and other common beans are soaked and boiled by the §9 row before use."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the flavour plan, a photo, and the household cards."
+      }
+     ]
+    },
+    {
+     "id": "VEG-3.M4.L2",
+     "title": "Vegetable steaks, gratins and layered dishes",
+     "prerequisites": [
+      "VEG-3.M2.L2"
+     ],
+     "competencies": [
+      {
+       "id": "TS-VEG",
+       "level": 4
+      },
+      {
+       "id": "JD-CHSE",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** steaks, gratins and layered bakes give vegetables the shape and weight of a main course. Each has a method that depends on the vegetable, and choosing it is the judgment of this lesson."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** a celeriac or cauliflower; potatoes; cream, stock or milk; Gouda or another hard cheese; garlic; butter; the mandoline with its guard or a cut-resistant glove; the gratin dish; the skillet; a skewer."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Vegetable steaks.* Cut thick slices, 3–4 cm, of celeriac, cauliflower, cabbage or pumpkin. Part-cook dense ones (steamed or roasted) until a skewer meets only slight resistance. Then sear them in a hot pan and butter-baste them (`VEG-3.M3.L1`). Serve them with a sauce, like a steak."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Gratins.* Slice thin and even, on the mandoline with its guard. Layer the slices with cream, stock or a *béchamel*, and cheese; bake until tender and browned: potato, celeriac, pumpkin, leek, fennel. A celeriac and potato gratin gives the potato's body and the celeriac's flavour."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Layered bakes.* A vegetable lasagne-style bake, a *tian* of sliced vegetables in rows, or a shepherd's-pie-style bake with a lentil base under a mash."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Choosing the method by vegetable:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**density:** dense roots (celeriac, pumpkin) are part-cooked first, or they stay raw inside;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**water content:** watery vegetables (courgette) are salted and drained, or roasted first, or the dish turns watery;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**flavour:** sweet vegetables (carrot, pumpkin, parsnip) brown more, and take bitter or sharp partners."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Using the mandoline* (`SAF-3.M2.L2`). Use the guard, or a cut-resistant glove; stop before the last few centimetres and cut the end by knife. Never push with the palm, and slice with steady strokes, not fast ones."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**A vegetable steak (60 min).** A celeriac or cauliflower steak, part-cooked, seared and basted, with a sauce."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**A gratin (75 min).** A celeriac and potato gratin, sliced on the mandoline, baked until tender and browned."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "the steak browned and tender to the centre;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "the gratin tender, creamy and browned on top, not watery."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "A raw-centred steak",
+         "Not part-cooked",
+         "Steam or roast it until a skewer meets slight resistance"
+        ],
+        [
+         "Some slices hard, some mushy",
+         "Uneven slices",
+         "The mandoline at one setting, used with the guard"
+        ],
+        [
+         "A watery gratin",
+         "Courgettes not drained",
+         "Salt and drain watery vegetables first"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** the mandoline is the sharpest tool in the kitchen: the guard or a cut-resistant glove, the last few centimetres by knife (`SAF-3.M2.L2`). A gratin straight from the oven is very hot; rest it 10 minutes."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** photos of the steak and the gratin, with the method choices and their reasons."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "VEG-3.M4.X1",
+     "title": "A plant-based main a meat-eating household rates \"Goed\"",
+     "description": "A plant-based main that a meat-eating household rates at least \"Goed\".",
+     "competencies": [
+      {
+       "id": "FL-ARCH",
+       "level": 3
+      },
+      {
+       "id": "IN-VEG",
+       "level": 4
+      },
+      {
+       "id": "TS-VEG",
+       "level": 4
+      },
+      {
+       "id": "JD-CHSE",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** cook a plant-based main that satisfies meat-eaters, by design."
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**The brief:** a plant-based main course for a meat-eating household."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**The constraints:** a written flavour plan; the variety and method chosen with a reason; the two session dishes of the module written up with flavour plans too, so that three dishes have one."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**The criteria:** household cards, blind to the brief (they don't know it was meant to be meat-free), scoring at least *Goed*."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**The extension:** three unfamiliar plant ingredients (for example tempeh, lupin beans and a pulse new to you) analysed in writing (origin, texture, flavour, how they cook) and cooked by a chosen approach, one of them in this main."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**The record:** the flavour plans, the analyses, photos of each ingredient cooked, the cards and your reflection."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** seasonal vegetables; legumes; umami sources; fats; the three unfamiliar ingredients; the flavour plan; the household cards."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Procedure:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "Analyse the three unfamiliar ingredients in writing; plan their approach."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "Write the flavour plan for the main."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "Cook the three unfamiliar ingredients over the module; photograph each."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "Cook the main; household cards, blind to the brief."
+        },
+        {
+         "level": 0,
+         "marker": "5.",
+         "text": "Reflect: what made it satisfying, or what was missing."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`FL-ARCH` level 3:** three dishes with written flavour plans; the tasters find depth and balance (the main rated at least *Goed*)."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`JD-CHSE` level 3:** three unfamiliar ingredients analysed in writing and cooked by a chosen approach; each result acceptable."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`IN-VEG` level 4 and `TS-VEG` level 4, further evidence:** the variety and method chosen with a reason, to the texture targets."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "AI review reads the plans, the analyses and the cards: *competent* is a main at *Goed* or better from a household that didn't know the brief, and analyses that predict how each ingredient cooked; *not yet* is a card that names the missing meat, or an analysis copied from a packet."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 2.5 h."
+      }
+     ]
+    }
+   ],
+   "items": [
+    {
+     "id": "VEG-3.M4.Q1",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "VEG-3.M4.L1",
+     "safety": false,
+     "question": "Which adds umami to a plant dish?",
+     "options": [
+      {
+       "key": "A",
+       "text": "cucumber"
+      },
+      {
+       "key": "B",
+       "text": "dried mushrooms or miso"
+      },
+      {
+       "key": "C",
+       "text": "lettuce"
+      },
+      {
+       "key": "D",
+       "text": "rice"
+      }
+     ],
+     "answer": "B",
+     "why": "Plant umami sources."
+    },
+    {
+     "id": "VEG-3.M4.Q2",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "VEG-3.M4.L1",
+     "safety": false,
+     "question": "Why brown the vegetables in a plant main?",
+     "options": [
+      {
+       "key": "A",
+       "text": "for colour only"
+      },
+      {
+       "key": "B",
+       "text": "browning gives savoury depth that boiling lacks"
+      },
+      {
+       "key": "C",
+       "text": "to cook them faster"
+      },
+      {
+       "key": "D",
+       "text": "it doesn't matter"
+      }
+     ],
+     "answer": "B",
+     "why": "Maillard depth."
+    },
+    {
+     "id": "VEG-3.M4.Q3",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "VEG-3.M4.L1",
+     "safety": false,
+     "question": "A lentil stew is filling but tastes flat and one-textured. What do you add?",
+     "options": [
+      {
+       "key": "A",
+       "text": "water"
+      },
+      {
+       "key": "B",
+       "text": "a top layer of acid and herbs, and a crisp element"
+      },
+      {
+       "key": "C",
+       "text": "more lentils"
+      },
+      {
+       "key": "D",
+       "text": "sugar"
+      }
+     ],
+     "answer": "B",
+     "why": "Layers and texture."
+    },
+    {
+     "id": "VEG-3.M4.Q4",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "VEG-3.M4.L1",
+     "safety": false,
+     "question": "Which is a plant source of protein?",
+     "options": [
+      {
+       "key": "A",
+       "text": "cucumber"
+      },
+      {
+       "key": "B",
+       "text": "lentils, beans, tofu or tempeh"
+      },
+      {
+       "key": "C",
+       "text": "lettuce"
+      },
+      {
+       "key": "D",
+       "text": "apples"
+      }
+     ],
+     "answer": "B",
+     "why": "Legumes and soy."
+    },
+    {
+     "id": "VEG-3.M4.Q5",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "VEG-3.M4.L2",
+     "safety": false,
+     "question": "Why is a celeriac steak part-cooked before searing?",
+     "options": [
+      {
+       "key": "A",
+       "text": "for colour"
+      },
+      {
+       "key": "B",
+       "text": "it is dense, so the centre would stay raw when the outside is browned"
+      },
+      {
+       "key": "C",
+       "text": "to remove water"
+      },
+      {
+       "key": "D",
+       "text": "it isn't"
+      }
+     ],
+     "answer": "B",
+     "why": "[J] method by density."
+    },
+    {
+     "id": "VEG-3.M4.Q6",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "VEG-3.M4.L2",
+     "safety": false,
+     "question": "Your courgette gratin is watery. What should you have done?",
+     "options": [
+      {
+       "key": "A",
+       "text": "more cream"
+      },
+      {
+       "key": "B",
+       "text": "salted and drained or roasted the courgette first"
+      },
+      {
+       "key": "C",
+       "text": "a hotter oven only"
+      },
+      {
+       "key": "D",
+       "text": "thinner slices only"
+      }
+     ],
+     "answer": "B",
+     "why": "Watery vegetables."
+    },
+    {
+     "id": "VEG-3.M4.Q7",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "VEG-3.M4.L2",
+     "safety": true,
+     "question": "You slice potatoes for a gratin on a mandoline. What is safe?",
+     "options": [
+      {
+       "key": "A",
+       "text": "bare hands to the last centimetre"
+      },
+      {
+       "key": "B",
+       "text": "the guard or a cut-resistant glove; stop before the last few centimetres"
+      },
+      {
+       "key": "C",
+       "text": "push with the palm"
+      },
+      {
+       "key": "D",
+       "text": "fast strokes"
+      }
+     ],
+     "answer": "B",
+     "why": "`SAF-3.M2.L2`."
+    },
+    {
+     "id": "VEG-3.M4.Q8",
+     "type": "SCENARIO",
+     "lessonId": "VEG-3.M4.L2",
+     "safety": false,
+     "question": "Choose a method for pumpkin, celeriac and leeks in a winter main, with one reason each.",
+     "options": [],
+     "answer": "For example: pumpkin roasted in wedges (sweet, browns well); celeriac as a part-cooked, basted steak (dense); leeks braised or charred (layered, sweet when softened).",
+     "why": "[J] method by vegetable."
+    }
+   ]
+  },
+  {
+   "id": "VEG-3.M5",
+   "title": "Vegetable lab",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** none for this module. The test method was checked in `SCI-2.M1`, and the judgments are shown in the reports of `VEG-3.M5.X1` and `VEG-3.M5.X2`."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "VEG-3.M5.L1",
+     "title": "One vegetable, five ways",
+     "prerequisites": [
+      "SCI-2.M1.L1"
+     ],
+     "competencies": [
+      {
+       "id": "RD-TEST",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** \"roasted is best\" is a habit, not a finding. A structured test tells you which method suits which purpose for a vegetable, and trains you to draw conclusions no bigger than your data."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** about 1.5 kg of one seasonal vegetable from one batch; oil, butter and salt; the methods' equipment; coded cups; the test plan and report template of `SCI-2.M1`; at least two tasters; the scale; the phone for photos."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*A structured test* (`SCI-2.M1`):"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**one vegetable,** five methods: for example raw, steamed, roasted, charred and confit, or salt-baked;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**everything else held constant:** the variety, the batch, the cut, the salt;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**coded samples,** tasted blind by at least two tasters on a form with the same questions."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*What to record:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "the time each method takes;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "the yield: weight before and after;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "texture, flavour and preference, from the form;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "a photo of each."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Running it.* Weigh out five equal portions from one batch and cut them identically. Cook them side by side, so that they finish close together. Code the cups (A to E) out of the tasters' sight, and keep the key on a separate sheet. Serve them in a different order to each taster."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Concluding.*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**Which method suits which purpose:** a side, a main, a purée. The best raw carrot is not the best carrot for a main."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**What the data support:** two tasters is a small sample; say \"both tasters preferred\", not \"roasting is best\"."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**The next question:** a follow-up test of one variable on the best method, for example salting before or after roasting."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**The test (2 h).** The five methods cooked side by side, coded and tasted blind; the results tabled; the conclusion and the next question written."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "a plan another person could repeat;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "conclusions no bigger than the data."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Results you can't compare",
+         "Different cuts per method",
+         "One cut, weighed portions, one batch"
+        ],
+        [
+         "Biased results",
+         "Tasters knew which was which",
+         "Code the cups out of sight; vary the order"
+        ],
+        [
+         "\"Roasted is best\"",
+         "One purpose assumed",
+         "Conclude per purpose: side, main, purée"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** five methods at once means several hot pans and an oven: plan the order, keep the handles turned in, and clear the hob as each finishes."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the plan, the table of results, the photos and the conclusions."
+      }
+     ]
+    },
+    {
+     "id": "VEG-3.M5.L2",
+     "title": "Your own vegetable-led main",
+     "prerequisites": [
+      "VEG-3.M4.L1"
+     ],
+     "competencies": [
+      {
+       "id": "CR-ORIG",
+       "level": 1
+      },
+      {
+       "id": "CR-COMP",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** everything in this course meets in a dish of your own. At this level, original means a combination you built from principles rather than followed from a recipe, written so that someone else can cook it."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** a vegetable at its peak; the best method from your lab; the component table; the scale; a notebook for the draft; the recipe template; the household cards."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Designing a dish:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "start from a vegetable at its peak and a method from the lab;"
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "give it a sauce, a contrast and richness (`VEG-3.M1.L1`);"
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "test the key element small: the sauce, the char, the glaze;"
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "cook it; taste it against the plan;"
+        },
+        {
+         "level": 0,
+         "marker": "5.",
+         "text": "revise."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Originality at level 1.* A combination you haven't followed from a recipe, built on the principles of the course. It doesn't have to be new to the world. A recipe copied with one change is not it; a charred leek with a nut-free *romesco*, white beans and pickled shallot that you composed from the component table is."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Writing it up as a recipe:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**a title** and the idea in one sentence;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**ingredients by weight,** in the order they are used;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**the method** in numbered steps, each with a cue (\"until the cut face is deep brown\", \"until a skewer slides in\");"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**the yield and the time.**"
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "Another cook should be able to follow it without asking you anything. The best test is to watch someone try."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Draft and test (60 min).** The dish drafted with its component table; its key element tested small."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Cook and write (90 min).** The dish cooked, tasted, revised and written up."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** a recipe another household member can follow."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Not really your dish",
+         "A recipe copied with one change",
+         "Start from the vegetable and the component table"
+        ],
+        [
+         "A recipe nobody can repeat",
+         "No weights in the write-up",
+         "Weigh as you cook; write it down"
+        ],
+        [
+         "\"How do I know when?\"",
+         "No cues in the steps",
+         "One sensory cue per step"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** a recipe written for others names its allergens (`SAF-1.M4`) and any §9 figure it relies on."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the draft, the test, the final recipe and the cards."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "VEG-3.M5.X1",
+     "title": "The five-method test",
+     "description": "The five-method test.",
+     "competencies": [
+      {
+       "id": "RD-TEST",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** answer \"what is the best way to cook this vegetable for this purpose?\" with data. Test one seasonal vegetable by five methods, with controlled variables, coded samples, blind tasting by at least two tasters, and a written conclusion. Then design a follow-up comparison of your own on the winning method (for example salting before or after roasting), with its own question, variable, control and blind tasting, so that two comparisons of your own design are logged."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** about 1.5 kg of one seasonal vegetable from one batch; the fats and seasonings; coded cups; the test plan and report template; at least two tasters; the scale."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Framework:** the test plan and report."
+      },
+      {
+       "type": "table",
+       "header": [
+        "Part",
+        "What it is",
+        "Your decisions"
+       ],
+       "rows": [
+        [
+         "Question",
+         "What is the best method for a stated purpose?",
+         "The vegetable and the purpose"
+        ],
+        [
+         "Methods",
+         "Five, side by side",
+         "Which five"
+        ],
+        [
+         "Controls",
+         "Variety, batch, cut, salt, portion weight",
+         "—"
+        ],
+        [
+         "Tasting",
+         "Coded, blind, at least two tasters, one form",
+         "The questions"
+        ],
+        [
+         "Record",
+         "Time, yield, texture, flavour, preference, photos",
+         "—"
+        ],
+        [
+         "Conclusion",
+         "What the data support, per purpose; the next question",
+         "—"
+        ],
+        [
+         "Follow-up",
+         "One variable on the winning method; its own control and blind tasting",
+         "The variable"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Procedure:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "Write the plan: question, methods, controls, the result table."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "Cook, code and taste blind; record."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "Conclude; write the next question."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "Run the follow-up comparison; conclude."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:** two comparisons of your own design (question, variable, control, blind tasting), logged, with conclusions the data support. This meets the `RD-TEST` level 3 row."
+      },
+      {
+       "type": "paragraph",
+       "text": "AI review reads the two reports: *competent* is a plan another cook could repeat, controls held, coding kept from the tasters, and conclusions that stay within the data; *not yet* is a changed cut, unblinded tasting, or a general claim from two tasters."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 3 h."
+      }
+     ]
+    },
+    {
+     "id": "VEG-3.M5.X2",
+     "title": "Your own vegetable-led main, written up",
+     "description": "Your own vegetable-led main, written up as a recipe.",
+     "competencies": [
+      {
+       "id": "CR-COMP",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** design, cook and document an original vegetable-led main."
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**The brief:** an original vegetable-led main from a vegetable in season and a method from the lab."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**The constraints:** a component table written before cooking; the key element tested small; ingredients weighed."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**The criteria:** household cards on balance; a recipe write-up another household member can follow, tested by them if possible."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**The record:** the component table, photos, the cards, the recipe, and, if it was cooked by someone else, their notes."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** the vegetable and the other ingredients; the component table; the recipe template; the scale; the household cards."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Procedure:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "Draft the idea and the component table."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "Test the key element small; cook the dish; household cards."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "Revise; write the recipe; if possible, have it cooked by someone else."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:** a plate composed from a brief, with a component table and the tasters' judgment of balance; with `VEG-3.M1.X1` and `GRD-3.M1.X1` the `CR-COMP` level 3 row is met several times. The dish is your first `CR-ORIG` (level 1) record."
+      },
+      {
+       "type": "paragraph",
+       "text": "AI review reads the recipe, the table and the cards: *competent* is a dish that isn't a known recipe with one change, a recipe with weights and a cue in every step, and balance confirmed by the tasters; *not yet* is missing weights or cues, or a dish the tasters find unbalanced."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 2.5 h."
+      }
+     ]
+    }
+   ],
+   "items": []
+  }
+ ]
+}

@@ -1,0 +1,1991 @@
+{
+ "schemaVersion": 1,
+ "id": "EQP-1",
+ "introduction": [
+  {
+   "type": "paragraph",
+   "text": "**Before you start.** The same recipe gives different results on a gas ring and on induction, in thin aluminium and in cast iron, in an oven that runs hot and one that runs cold. Professional kitchens hide this behind standard equipment; a home kitchen doesn't. This course makes your own equipment known and measured: how your pans behave, where your hob's hot spots are, what your oven really does at each setting, and how to keep knives and measuring tools accurate."
+  },
+  {
+   "type": "paragraph",
+   "text": "It is also the first applied science in the program. Conduction and heat capacity explain why a cast-iron pan sears and a thin pan scorches; your oven table explains why a recipe's 40 minutes became 55. `HEA-1` builds on both."
+  },
+  {
+   "type": "paragraph",
+   "text": "Plan about a week and a half alongside `SAF-1`. The hob map and the oven calibration need an evening each; the pan comparison doubles as a dinner. What you make here (the hob map, the oven table and the calibration log) is used in every later practical."
+  },
+  {
+   "type": "paragraph",
+   "text": "**Have ready:** your pans (at least one thin or non-stick pan and one heavy pan), the oven thermometer and the instant-read thermometer from `ORI-1`, the chef's knife and a honing steel, plain flour, a magnet if your hob is induction, ten €1 coins, and the journal."
+  }
+ ],
+ "modules": [
+  {
+   "id": "EQP-1.M1",
+   "title": "Cookware and heat",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** the 8 items of `EQP-1.M1` in the course file. Pass mark 80 %."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "EQP-1.M1.L1",
+     "title": "Pan materials",
+     "prerequisites": [],
+     "competencies": [
+      {
+       "id": "SC-HEAT",
+       "level": 1
+      },
+      {
+       "id": "KM-EQPT",
+       "level": 1
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** a pan is a tool for moving heat into food, and different metals do it differently. Once you know the three properties that matter, you can predict how any pan will behave: whether it will scorch, whether it will recover after cold food goes in, and whether it will spoil an acid sauce."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** a thin pan (aluminium, thin stainless or non-stick) and a heavy pan (cast iron, carbon steel or thick stainless), about 30 g of plain flour, a teaspoon, the hob."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Conductivity* is how fast heat spreads through the metal. A pan that conducts well heats evenly and responds quickly when you change the heat. Copper and aluminium conduct well; iron and stainless steel conduct poorly, so they heat where the flame or coil is and stay cooler elsewhere."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Heat capacity* is how much heat the pan stores. A pan with a lot of stored heat stays hot when cold food goes in, so the food browns instead of stewing. Thick cast iron stores a lot; thin aluminium stores little. This is why cast iron, a poor conductor, still sears well: it is slow to heat, but once hot it stays hot."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Reactivity.* Bare aluminium, iron and copper react with acid (tomato, wine, vinegar, rhubarb). The food takes on a metallic taste and can discolour, and a seasoned iron pan loses its coating. Stainless steel and enamel don't react."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Construction.* Makers combine materials to get the best of each:"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "clad stainless has an aluminium or copper core inside stainless steel: even heat with an inert surface;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "a thick base evens out the hot spots of a burner;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "non-stick coatings release food easily, but tolerate neither high heat in an empty pan nor metal tools."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "So \"heavy\" is not always \"better\": a heavy cast-iron pan is ideal for searing and poor for a quick sauce you need to cool down fast."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Feel the difference (45 min).** Put the two pans on the same burner size, one after the other, at the same medium setting. After 2 minutes, sprinkle a thin, even layer of flour over each. Watch where it browns and how fast, and photograph both. Then turn the heat down and note how quickly the browning slows in each. Tip the flour out once the pans have cooled a little, and wipe them."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** you predict which pan will scorch first and which will recover after cold food goes in."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Steak grey in the heavy pan, burnt in the thin one",
+         "Thinking \"heavy\" always means \"better\", or \"thin\" always means \"fast\"",
+         "Match the pan to the task: heat capacity for searing, conductivity for quick control"
+        ],
+        [
+         "A metallic, dull tomato sauce",
+         "Simmering acid for hours in bare cast iron or aluminium",
+         "Use stainless steel or enamel for acid dishes"
+        ],
+        [
+         "A non-stick pan that stops releasing",
+         "Preheating it empty on full heat",
+         "Medium heat, with the oil in the pan"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** the pans get very hot; use a dry cloth or oven glove for the handles, and keep handles turned away from the front of the hob (`SAF-1.M4`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the two flour photos, which pan browned first and where, and how each responded when turned down."
+      }
+     ]
+    },
+    {
+     "id": "EQP-1.M1.L2",
+     "title": "The right pan for the job",
+     "prerequisites": [
+      "EQP-1.M1.L1"
+     ],
+     "competencies": [
+      {
+       "id": "KM-EQPT",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** the right pan makes a technique easy; the wrong one makes it nearly impossible. This lesson turns the properties of `EQP-1.M1.L1` into choices for real tasks, and shows you which gaps in your own kit the S1 courses will feel."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** all your pans and pots, a tape measure, and the journal."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*The task decides the pan.*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**Searing** (meat, fish, thick vegetable slices): high heat capacity, so the surface stays hot: cast iron, carbon steel or heavy stainless."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**Sauces and reductions:** even heat and an inert surface, and a wide pan so liquid evaporates fast: a wide stainless or enamelled pan."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**Braising:** a heavy pot with a tight lid that holds a low, steady heat for hours."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**Eggs and delicate fish:** a surface that releases: non-stick, or a well-seasoned carbon-steel pan."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Size against burner.* Heat enters where the flame or coil is. A pan much wider than the burner has a hot centre and cool edges, so food at the edge stews. A pan much smaller than a gas flame lets the flame lick up the sides and heat the handle. Measure your pan bases and your burners; pair them."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Crowding.* Even the right pan fails when it is too full. Food releases water; if there is no room for it to evaporate, the food steams in it instead of browning. Leave space between pieces, or cook in batches."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Good and Best.* You don't need many pans. The program's tier 0 list (in the course file) asks for a heavy stainless sauté pan, a cast-iron or carbon-steel skillet, two saucepans, a stockpot and two sheet pans. One good heavy pan covers more tasks than three cheap ones; money spent on a clad sauté pan or a carbon-steel skillet goes furthest."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:** theory only (1 h): list your pans with their material, base diameter and weight. Match them to these ten tasks: an omelette, a seared steak, a pan sauce, a tomato sauce simmered for an hour, a braise, boiled pasta, a stock, rice, sautéed mushrooms, roast vegetables. For each, write the pan and one reason. Note the tasks with no good match: those are your gaps."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** a pan chosen for each task, with a one-line reason based on material and size."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "A pale sear and a damaged coating",
+         "One non-stick pan for everything, including searing",
+         "Keep non-stick for eggs and delicate fish; sear in iron or heavy stainless"
+        ],
+        [
+         "Food at the edge of the pan stays pale",
+         "A 28 cm pan on the smallest ring",
+         "Match the pan base to the burner"
+        ],
+        [
+         "Mushrooms in a puddle",
+         "A crowded pan",
+         "Fewer pieces, or two batches"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** no special risks beyond the kitchen basics (`SAF-1`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** your pan list, the ten matches, and your gaps."
+      }
+     ]
+    },
+    {
+     "id": "EQP-1.M1.L3",
+     "title": "Seasoning and care",
+     "prerequisites": [
+      "EQP-1.M1.L1"
+     ],
+     "competencies": [
+      {
+       "id": "KM-EQPT",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** a seasoned iron pan releases food almost like non-stick and lasts a lifetime; a neglected one rusts and sticks. Non-stick pans last years instead of months when treated well. This lesson gives you the care routine for each, and how to rescue a burnt pan."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "a cast-iron or carbon-steel pan, a neutral oil with a high smoke point (sunflower or rapeseed), kitchen paper;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "a burnt pan if you have one, bicarbonate of soda, a wooden spatula;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "oven gloves; an egg for the test."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*What seasoning is.* Seasoning is a thin layer of oil that heat has turned into a hard, slick coating bonded to the iron (the oil polymerises). It protects the pan from rust and lets food release. It builds up from many thin layers; one thick layer stays sticky."
+      },
+      {
+       "type": "paragraph",
+       "text": "*How to season.*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "Wash the pan, dry it fully on the heat."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "Rub a few drops of oil over every surface, inside and out, then wipe it off again with clean paper until the pan looks almost dry."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "Bake it upside down in the oven at 220 °C for an hour, with a tray below in case it drips; let it cool in the oven."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "Repeat two or three times for a new or stripped pan."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Daily care of iron pans.* Rinse and scrub while the pan is still warm (a little washing-up liquid doesn't harm a good seasoning), dry it on the heat, then wipe on a thin film of oil. Never leave it to soak: iron rusts when it stays wet."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Non-stick.* Medium heat, always with oil or food in the pan; wooden or silicone tools; no dishwasher if the maker advises against it. Replace it once the coating is scratched or flaking."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Burnt pans.* Soak in warm water; then simmer a little water with a spoonful of bicarbonate for 10 minutes; scrape with a wooden spatula. No steel wool on coatings or seasoned surfaces."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Season and restore (60 min, plus oven time).** Photograph the iron pan, season it as above (one layer during the session, more on later days if it needs them), and photograph it again. Clean the burnt pan with the bicarbonate method, with photos before and after. When the iron pan has cooled, fry an egg in it over medium heat with a little oil and see whether it releases."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** an even, dark, slightly glossy surface that isn't sticky; a fried egg that releases."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "A sticky, blotchy surface",
+         "A thick layer of oil",
+         "Wipe until the pan looks dry before baking; heat it again to finish the sticky layer"
+        ],
+        [
+         "Rust spots",
+         "The pan left to soak or put away wet",
+         "Scrub the rust off, dry on the heat, re-season"
+        ],
+        [
+         "A grey, bare patch",
+         "Scouring a seasoned surface back to bare metal",
+         "Re-season that area; scrape, don't scour"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** the pan comes out of a 220 °C oven: oven gloves, and let it cool before you handle it bare-handed. The oil smokes during seasoning; open a window or turn on the extractor (`SAF-1.M4`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the before and after photos of both pans, and the egg test."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "EQP-1.M1.X1",
+     "title": "Two pans, one task",
+     "description": "Heat the same amount of water and sear the same item in two different pans; compare.",
+     "competencies": [
+      {
+       "id": "KM-EQPT",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** see conductivity and heat capacity in action, then choose pans for real recipes from what you saw. Two pans of different materials (for example thin aluminium or non-stick, and cast iron or heavy stainless) go on the same burner at the same setting."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** the two pans; a timer; 1 litre of water; two equal slices of celeriac about 2 cm thick (or two burgers of the same weight); 15 ml oil per pan; salt; the thermometer if you use burgers."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Recipe:** the comparison procedure."
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Boil.** Put 1 litre of cold water in the first pan on the burner at its highest setting; time how long it takes to reach a full boil. Repeat with the second pan on the same burner, starting from cold water again."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Preheat.** Dry the first pan and heat it for 3 minutes on a medium-high setting, then add 15 ml oil."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "**Sear.** Salt a celeriac slice and lay it in the pan. Listen: a steady sizzle, or a sizzle that dies away? Cook without moving it for 4 minutes, turn it, and cook 4 minutes more, until tender to a knife. Photograph both sides."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "**Repeat** with the second pan, the same setting, the same times."
+        },
+        {
+         "level": 0,
+         "marker": "5.",
+         "text": "**Compare** the times to boil, the sound when the food went in (the temperature drop) and how fast it came back (the recovery), and the colour and evenness of each sear."
+        },
+        {
+         "level": 0,
+         "marker": "6.",
+         "text": "**Choose.** Pick a pan for three recipes you will cook in S1, and write the reason for each."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "If you use burgers, cook each until a probe in the centre reads 75 °C."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:** the boiling times, the side-by-side photos of the sear, and the three pan choices with reasons. With this module's quiz at 80 %, this meets the `KM-EQPT` level 2 success row. AI review compares the evenness and colour of the two sears: *competent* is an even, deep golden crust; *not yet* is pale in the middle and burnt at the edge."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 45 min; the seared pieces are part of a meal."
+      }
+     ]
+    }
+   ],
+   "items": [
+    {
+     "id": "EQP-1.M1.Q1",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "EQP-1.M1.L1",
+     "safety": false,
+     "question": "Which pan material conducts heat best?",
+     "options": [
+      {
+       "key": "A",
+       "text": "stainless steel"
+      },
+      {
+       "key": "B",
+       "text": "cast iron"
+      },
+      {
+       "key": "C",
+       "text": "copper"
+      },
+      {
+       "key": "D",
+       "text": "enamel"
+      }
+     ],
+     "answer": "C",
+     "why": "Copper, then aluminium; iron and stainless are poor conductors."
+    },
+    {
+     "id": "EQP-1.M1.Q2",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "EQP-1.M1.L1",
+     "safety": false,
+     "question": "Cast iron conducts heat poorly, yet sears well. Why?",
+     "options": [
+      {
+       "key": "A",
+       "text": "it is non-stick"
+      },
+      {
+       "key": "B",
+       "text": "it stores a lot of heat, so it stays hot when cold food goes in"
+      },
+      {
+       "key": "C",
+       "text": "it heats quickly"
+      },
+      {
+       "key": "D",
+       "text": "it is thin"
+      }
+     ],
+     "answer": "B",
+     "why": "High heat capacity keeps the surface hot enough to brown."
+    },
+    {
+     "id": "EQP-1.M1.Q3",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "EQP-1.M1.L1",
+     "safety": false,
+     "question": "Which pan suits a long-simmered tomato sauce?",
+     "options": [
+      {
+       "key": "A",
+       "text": "bare aluminium"
+      },
+      {
+       "key": "B",
+       "text": "bare cast iron"
+      },
+      {
+       "key": "C",
+       "text": "stainless steel or enamelled cast iron"
+      },
+      {
+       "key": "D",
+       "text": "unlined copper"
+      }
+     ],
+     "answer": "C",
+     "why": "Acid reacts with bare aluminium, iron and copper."
+    },
+    {
+     "id": "EQP-1.M1.Q4",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "EQP-1.M1.L1",
+     "safety": false,
+     "question": "Why do good stainless pans have an aluminium or copper core?",
+     "options": [
+      {
+       "key": "A",
+       "text": "for weight"
+      },
+      {
+       "key": "B",
+       "text": "to spread heat evenly"
+      },
+      {
+       "key": "C",
+       "text": "to make them non-stick"
+      },
+      {
+       "key": "D",
+       "text": "for induction"
+      }
+     ],
+     "answer": "B",
+     "why": "Stainless conducts poorly; the core spreads the heat."
+    },
+    {
+     "id": "EQP-1.M1.Q5",
+     "type": "SCENARIO",
+     "lessonId": "EQP-1.M1.L2",
+     "safety": false,
+     "question": "Which pan would you choose for (a) a French omelette, (b) searing a steak, (c) reducing a sauce?",
+     "options": [],
+     "answer": "(a) non-stick or seasoned carbon steel; (b) cast iron or carbon steel, or heavy stainless; (c) a wide stainless or enamelled pan.",
+     "why": "Release for eggs, heat capacity for searing, surface and inertness for reducing."
+    },
+    {
+     "id": "EQP-1.M1.Q6",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "EQP-1.M1.L2",
+     "safety": false,
+     "question": "A large pan sits on a small burner. What happens?",
+     "options": [
+      {
+       "key": "A",
+       "text": "even heat"
+      },
+      {
+       "key": "B",
+       "text": "a hot centre and cool edges"
+      },
+      {
+       "key": "C",
+       "text": "faster browning everywhere"
+      },
+      {
+       "key": "D",
+       "text": "nothing"
+      }
+     ],
+     "answer": "B",
+     "why": "Heat enters where the flame or coil is."
+    },
+    {
+     "id": "EQP-1.M1.Q7",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "EQP-1.M1.L3",
+     "safety": false,
+     "question": "How do you look after a carbon-steel pan after cooking?",
+     "options": [
+      {
+       "key": "A",
+       "text": "soak overnight"
+      },
+      {
+       "key": "B",
+       "text": "rinse and scrub, dry on the heat, wipe on a thin film of oil"
+      },
+      {
+       "key": "C",
+       "text": "dishwasher"
+      },
+      {
+       "key": "D",
+       "text": "scour to bare metal"
+      }
+     ],
+     "answer": "B",
+     "why": "Iron rusts when wet; the oil film protects the seasoning."
+    },
+    {
+     "id": "EQP-1.M1.Q8",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "EQP-1.M1.L3",
+     "safety": false,
+     "question": "What shortens the life of a non-stick pan?",
+     "options": [
+      {
+       "key": "A",
+       "text": "medium heat"
+      },
+      {
+       "key": "B",
+       "text": "wooden spoons"
+      },
+      {
+       "key": "C",
+       "text": "heating it empty on full power and using metal tools"
+      },
+      {
+       "key": "D",
+       "text": "washing by hand"
+      }
+     ],
+     "answer": "C",
+     "why": "High empty heat and scratches damage the coating."
+    }
+   ]
+  },
+  {
+   "id": "EQP-1.M2",
+   "title": "Knowing your stove and oven",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** the 8 items of `EQP-1.M2` in the course file. Pass mark 80 %."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "EQP-1.M2.L1",
+     "title": "Gas, ceramic and induction",
+     "prerequisites": [
+      "EQP-1.M1.L1"
+     ],
+     "competencies": [
+      {
+       "id": "SC-HEAT",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** every recipe assumes a hob, and most assume gas. Your hob may respond in a second or in a minute, and it changes how you control heat. This lesson tells you how yours behaves and what to do about it."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** your hob and its manual if you have it, your pans, and a fridge magnet."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Gas.* A flame heats the base of the pan and, at high settings, its sides. Gas responds at once: turn it down and the heat drops straight away. The power differs between burners, so the big ring and the small ring are different tools."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Ceramic and electric plates* heat by radiation and by contact. They respond slowly: the plate stays hot for minutes after you turn it down, and it takes a while to heat up. When something is about to boil over, turning the dial won't help in time. The cure is to lift the pan off the plate at once, or to keep a second plate on a lower setting and move the pan to it."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Induction* heats the pan itself through a magnetic field, so only a pan with a magnetic base works: if a magnet sticks firmly to the base, it will heat. Induction is very fast and very precise, which also means a thin pan can scorch in seconds and can warp. It heats only where the pan sits on the coil zone, so a pan much wider than the zone has cool edges."
+      },
+      {
+       "type": "paragraph",
+       "text": "*How technique changes.*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "On gas, use the speed: turn down the moment the pan is too hot."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "On ceramic, plan ahead: lower the heat before you need it lower, and use the second-plate trick."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "On induction, use medium settings more than you expect, watch the first minute closely, and use pans with a heavy, flat base."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:** theory only (1 h): identify your hob type and, from the manual or the plate markings, its power per zone. If it is induction, test each pan with the magnet. Write down the three adjustments your hob calls for, in your own words."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** you can say how fast your hob responds and what you do about it."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "The milk boils over although you turned it down",
+         "Expecting a ceramic plate to cool like gas",
+         "Lift the pan off at once; keep a second plate on low"
+        ],
+        [
+         "The induction hob shows an error, or nothing heats",
+         "A non-magnetic pan",
+         "Test with a magnet; use a pan whose base it sticks to"
+        ],
+        [
+         "Food at the edge of the pan stays pale on induction",
+         "A pan wider than the induction zone",
+         "Use the larger zone, or a smaller pan"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** a ceramic or induction surface stays hot after it is switched off; most show a warning light. Keep tea towels and paper away from all hobs (`SAF-1.M4`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** your hob type and power, the magnet test results, and your three adjustments."
+      }
+     ]
+    },
+    {
+     "id": "EQP-1.M2.L2",
+     "title": "Mapping hot spots",
+     "prerequisites": [],
+     "competencies": [
+      {
+       "id": "KM-EQPT",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** almost every burner heats some parts of a pan more than others. Once you can see the pattern, you know where food will brown first and where to put the piece that needs most heat. The map you draw here is part of `EQP-1.M2.X1`."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** your main frying pan, clean and completely dry; plain flour (about 2 tablespoons per test); a sieve or spoon to spread it; a timer; a phone camera; the journal. Sliced white bread works instead of flour."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Where hot spots come from.* The heat comes from the shape of the flame (a ring of flame heats a ring of the pan) or of the coil, and a thin pan base passes the pattern straight to the food. A thick or clad base spreads it out."
+      },
+      {
+       "type": "paragraph",
+       "text": "*The flour test.* An even layer of flour in a dry pan browns where the pan is hottest, so the pattern appears in a few minutes. A slice of bread in the dry pan does the same, toasting in a pattern."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Doing it fairly.* Same pan, same setting, same time on every burner; otherwise you compare the test, not the burner. A greasy pan makes the flour clump, so the pan must be clean and dry."
+      },
+      {
+       "type": "paragraph",
+       "text": "*The map.* For each burner: the pattern (ring, centre, one side), the time until browning starts, and a note on use: for example \"large ring: hot ring 3 cm from the edge; sear here, put the thickest piece on the ring\"."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Flour test (45 min).** On the medium setting, heat the dry pan on the first burner for 2 minutes. Sift an even layer of flour over the base. Watch, and photograph the pattern as soon as it is clear (before it burns). Tip out the flour, let the pan cool, wipe it, and repeat on every burner at the same setting. Draw the map."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** clear patterns, and you know where in the pan food will brown first."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Patterns that can't be compared",
+         "Testing at different settings",
+         "One setting for every burner"
+        ],
+        [
+         "Flour in clumps, no clear pattern",
+         "A greasy or damp pan",
+         "Wash and dry the pan on the heat first"
+        ],
+        [
+         "A map you can't use later",
+         "Forgetting to note the pan used",
+         "Write the pan and setting on the map"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** flour burns and smokes if left too long; photograph as soon as the pattern appears and take the pan off the heat. Handle the pan with a dry cloth."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the photo of each pattern and the hob map."
+      }
+     ]
+    },
+    {
+     "id": "EQP-1.M2.L3",
+     "title": "Oven calibration",
+     "prerequisites": [],
+     "competencies": [
+      {
+       "id": "KM-EQPT",
+       "level": 2
+      },
+      {
+       "id": "SC-HEAT",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** an oven dial is a guess. Many domestic ovens are off by tens of degrees, and they cycle above and below their setting. With a table of what your oven really does, a recipe's temperature becomes something you can set, and roasting and baking times start to make sense."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** the oven thermometer, a timer, the journal, and an evening at home (most of the session is waiting)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*The true temperature.* An oven heats until it passes its setting, switches off, cools, and switches on again, so the temperature swings around the setting. A dial can also simply be wrong. An oven thermometer on the middle rack, read after the oven has stabilised (about 20 minutes after it reaches temperature), gives the real figure. Read it through the door if the glass is clear, or open the door briefly; every opening drops the temperature."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Fan against conventional* (*hetelucht* against *boven- en onderwarmte*). Moving air carries heat to the food faster, because it strips away the layer of cooler air around it. So at the same setting a fan oven cooks faster, and recipes often give a lower setting for fan. How much lower depends on your oven: the table shows it."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Rack positions.* In a conventional oven the top browns more (heat rises, and the top element radiates onto it), the bottom heats the base more, and the middle is the most even. The back and the door are often hotter or cooler than the centre."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Preheating time.* Note how long your oven takes to reach each temperature; the preheat light often goes off before the oven has really arrived."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Calibration table (90 min, mostly waiting).** Put the oven thermometer in the centre of the middle rack. Set the oven to 150 °C on conventional; note the time it takes for the preheat light to go off. Wait 20 minutes more, read the thermometer, and write it down. Repeat at 180 °C and 220 °C, then the same three settings on fan. Finally, at 180 °C, move the thermometer to the top rack and to the bottom rack, 10 minutes each. Fill in the table."
+        }
+       ]
+      },
+      {
+       "type": "table",
+       "header": [
+        "Setting",
+        "Mode",
+        "Rack",
+        "Thermometer",
+        "Time to preheat"
+       ],
+       "rows": [
+        [
+         "150 °C",
+         "conventional",
+         "middle",
+         "",
+         ""
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** a table you trust, and the corrected setting for each recipe temperature."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "The reading jumps around",
+         "Reading through a steamed-up door, or with the door open too long",
+         "Wipe the glass; open the door only briefly"
+        ],
+        [
+         "Readings far below the setting",
+         "Reading before the oven has stabilised",
+         "Wait 20 minutes after it reaches temperature"
+        ],
+        [
+         "The oven never settles",
+         "Opening the door every two minutes",
+         "Set a timer and open it only to read"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** use oven gloves to move the thermometer; the racks are as hot as the oven (`SAF-1.M4`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the completed calibration table."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "EQP-1.M2.X1",
+     "title": "Hob map and oven table",
+     "description": "Burner hot-spot map and an oven calibration table, kept in the journal.",
+     "competencies": [
+      {
+       "id": "KM-EQPT",
+       "level": 2
+      },
+      {
+       "id": "SC-HEAT",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** make a written record of how your hob and oven behave, and use it from now on to set them. Then test one setting with a tray of root vegetables."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** the hob map from `EQP-1.M2.L2` and the oven table from `EQP-1.M2.L3`; the oven thermometer; a sheet pan; for the test, about 600 g of root vegetables by season (carrot, beetroot, celeriac or parsnip), 30 ml oil, salt."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Recipe:** the procedure and the template."
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "Copy the hob map and the oven table into the journal, on one page you can find quickly."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "Write the setting you will use for each recipe temperature, in this template:"
+        }
+       ]
+      },
+      {
+       "type": "table",
+       "header": [
+        "Recipe says",
+        "Mode",
+        "Set the dial to",
+        "Notes (rack, time to preheat)"
+       ],
+       "rows": [
+        [
+         "160 °C",
+         "",
+         "",
+         ""
+        ],
+        [
+         "180 °C",
+         "",
+         "",
+         ""
+        ],
+        [
+         "200 °C",
+         "",
+         "",
+         ""
+        ],
+        [
+         "220 °C",
+         "",
+         "",
+         ""
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "Fill the gaps from your measurements: if 180 °C on the dial gave 165 °C on the thermometer, set the dial about 15 °C higher, and check again."
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "**Test one setting.** Peel the vegetables and cut them into slices about 1 cm thick. Toss them with the oil and a pinch of salt and spread them in one layer on the sheet pan. Roast at your corrected setting for 200 °C, on the middle rack, until tender and browned at the edges, about 25–35 minutes; check after 20. Note whether the browning is even across the tray and whether the time matched."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:** the map, the table and the photos of the flour patterns, with a photo of the roasted tray. The module's quiz at 80 % meets the `SC-HEAT` and `KM-EQPT` level 2 success rows; the table is the objective evidence the outline names."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 30 min beyond the lessons."
+      }
+     ]
+    }
+   ],
+   "items": [
+    {
+     "id": "EQP-1.M2.Q1",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "EQP-1.M2.L1",
+     "safety": false,
+     "question": "Which hob responds most slowly when you turn it down?",
+     "options": [
+      {
+       "key": "A",
+       "text": "gas"
+      },
+      {
+       "key": "B",
+       "text": "induction"
+      },
+      {
+       "key": "C",
+       "text": "ceramic"
+      },
+      {
+       "key": "D",
+       "text": "they are all the same"
+      }
+     ],
+     "answer": "C",
+     "why": "The plate stores heat and keeps heating the pan."
+    },
+    {
+     "id": "EQP-1.M2.Q2",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "EQP-1.M2.L1",
+     "safety": false,
+     "question": "How do you check whether a pan works on induction?",
+     "options": [
+      {
+       "key": "A",
+       "text": "it must be heavy"
+      },
+      {
+       "key": "B",
+       "text": "a magnet sticks to its base"
+      },
+      {
+       "key": "C",
+       "text": "it must be stainless"
+      },
+      {
+       "key": "D",
+       "text": "it must be new"
+      }
+     ],
+     "answer": "B",
+     "why": "Induction heats magnetic metal."
+    },
+    {
+     "id": "EQP-1.M2.Q3",
+     "type": "SCENARIO",
+     "lessonId": "EQP-1.M2.L1",
+     "safety": false,
+     "question": "A sauce is about to boil over on a ceramic hob. What do you do?",
+     "options": [],
+     "answer": "Lift the pan off the plate at once, then turn the plate down or move the pan to a cooler plate.",
+     "why": "Turning a ceramic plate down takes minutes to work."
+    },
+    {
+     "id": "EQP-1.M2.Q4",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "EQP-1.M2.L2",
+     "safety": false,
+     "question": "What does the flour test show?",
+     "options": [
+      {
+       "key": "A",
+       "text": "the oven temperature"
+      },
+      {
+       "key": "B",
+       "text": "where a pan on a burner heats most"
+      },
+      {
+       "key": "C",
+       "text": "whether flour is fresh"
+      },
+      {
+       "key": "D",
+       "text": "the pan's material"
+      }
+     ],
+     "answer": "B",
+     "why": "The flour browns first over the hot spots."
+    },
+    {
+     "id": "EQP-1.M2.Q5",
+     "type": "SCENARIO",
+     "lessonId": "EQP-1.M2.L3",
+     "safety": false,
+     "question": "Your oven set to 180 °C reads 165 °C on the oven thermometer after 20 minutes. What do you do?",
+     "options": [],
+     "answer": "Set it about 15 °C higher for that temperature, check again, and record it in the table.",
+     "why": "The thermometer, not the dial, is the reference."
+    },
+    {
+     "id": "EQP-1.M2.Q6",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "EQP-1.M2.L3",
+     "safety": false,
+     "question": "Why do fan settings cook faster than conventional at the same temperature?",
+     "options": [
+      {
+       "key": "A",
+       "text": "the fan heats the air more"
+      },
+      {
+       "key": "B",
+       "text": "moving air transfers heat to the food faster"
+      },
+      {
+       "key": "C",
+       "text": "fan ovens are smaller"
+      },
+      {
+       "key": "D",
+       "text": "they don't"
+      }
+     ],
+     "answer": "B",
+     "why": "Moving air strips away the cool layer around the food."
+    },
+    {
+     "id": "EQP-1.M2.Q7",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "EQP-1.M2.L3",
+     "safety": false,
+     "question": "Where in a conventional oven do the tops of a tray brown most?",
+     "options": [
+      {
+       "key": "A",
+       "text": "bottom rack"
+      },
+      {
+       "key": "B",
+       "text": "middle rack"
+      },
+      {
+       "key": "C",
+       "text": "top rack"
+      },
+      {
+       "key": "D",
+       "text": "everywhere the same"
+      }
+     ],
+     "answer": "C",
+     "why": "Heat rises and the top element radiates onto it."
+    },
+    {
+     "id": "EQP-1.M2.Q8",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "EQP-1.M2.L3",
+     "safety": false,
+     "question": "When do you read the oven thermometer?",
+     "options": [
+      {
+       "key": "A",
+       "text": "as soon as the preheat light goes off"
+      },
+      {
+       "key": "B",
+       "text": "after the oven has stabilised, without opening the door repeatedly"
+      },
+      {
+       "key": "C",
+       "text": "only with food inside"
+      },
+      {
+       "key": "D",
+       "text": "through the closed door only once a year"
+      }
+     ],
+     "answer": "B",
+     "why": "Ovens overshoot and cycle; an early reading misleads."
+    }
+   ]
+  },
+  {
+   "id": "EQP-1.M3",
+   "title": "Knives and tools",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** the 8 items of `EQP-1.M3` in the course file. Pass mark 80 %."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "EQP-1.M3.L1",
+     "title": "Knife anatomy and choice",
+     "prerequisites": [],
+     "competencies": [
+      {
+       "id": "KM-EQPT",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** a knife that suits your hand and holds an edge makes every cut easier and safer. You need only three knives for S1. This lesson teaches you to look at a knife and know what it will do, so you can judge the ones you have and buy the right ones when you need more."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** your knives, laid out on a towel, and the journal."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Anatomy.* From the front: the **tip** (fine work), the **edge**, the curved **belly** (rocking cuts), the **heel** (the strongest part, for hard cuts), the **spine** (the blunt top), the **bolster** (the thick part between blade and handle, on forged knives), the **tang** (the metal running into the handle) and the **handle**. A full tang and a weight balanced near the bolster make a knife easier to control."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Steels.*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**Stainless steel** is forgiving: it doesn't rust easily, but it holds an edge less long."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**Carbon steel** takes a keener edge, but it stains and rusts if left wet."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**Western knives** usually have a wider edge angle and softer steel: robust, easy to hone."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**Japanese knives** are often harder, with a narrower angle: very sharp, but more brittle, so they can chip on bone or frozen food."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*The three essential knives* (tier 0):"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "a **chef's knife** of about 20 cm: almost every cutting job;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "a **paring knife**: peeling, trimming, small work in the hand;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "a **serrated bread knife** of 20–25 cm: bread, and tomatoes when the chef's knife is dull."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "Other knives (boning, slicing, a cleaver) come when a course needs them. A block of ten mediocre knives is worth less than these three, good."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Choosing.* Hold it before you buy it. The grip, the weight and the length matter more than the brand. A chef's knife should be long enough to rock through an onion with the tip on the board, and the handle should leave room for your knuckles above the board."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:** theory only (1 h): hold and compare your knives. For each, name its parts, its likely steel (does it stain? does a magnet tell you anything? what does the maker say?) and its use. Note what is missing from the three essentials, and whether your chef's knife suits your hand."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** you can say why your chef's knife suits or doesn't suit your hand."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Ten knives, none sharp",
+         "A block of mediocre knives",
+         "Three good knives, kept sharp"
+        ],
+        [
+         "Knuckles hit the board; no rocking cut",
+         "A chef's knife that is too short",
+         "About 20 cm, with room for the knuckles"
+        ],
+        [
+         "Rust spots on the blade",
+         "Carbon steel left wet",
+         "Wash, dry at once, and a drop of oil now and then"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** lay knives flat on a towel with the edges facing away from you; never leave a knife in the washing-up water (`SAF-1.M4`, `KNF-1.M1`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** your knife list with parts, steels and uses, and the gaps."
+      }
+     ]
+    },
+    {
+     "id": "EQP-1.M3.L2",
+     "title": "Honing and sharpening",
+     "prerequisites": [
+      "EQP-1.M3.L1"
+     ],
+     "competencies": [
+      {
+       "id": "KM-EQPT",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** a dull knife is more dangerous than a sharp one, because it needs force and slips. Honing keeps an edge working between sharpenings; it is a two-minute habit before every cutting job, and `KNF-1` assumes it."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** the chef's knife, a honing steel, a damp tea towel, a sheet of printer paper, a tomato, a second knife that hasn't been honed, and a phone to film from the side."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Honing against sharpening.* In use, the thin edge of a knife rolls over to one side, like the tip of a page folding. It feels dull, but the metal is still there. **Honing** pushes that edge back into line; it removes almost no metal and can be done every session. **Sharpening** grinds away metal to make a new edge, on a whetstone or by a sharpening service. It is needed when honing no longer brings the bite back, typically every few months at home."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Safe honing.*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "Stand the steel vertically, its tip resting on a folded damp towel so it can't slip."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "Hold the knife at a constant angle to the steel: about 15–20°, the narrower angle for a Japanese knife. Roughly, half of 45° and then half again is about the right lean."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "Draw the blade down and towards your body, from heel to tip, in one slow, even stroke, so the blade always moves away from the hand holding the steel."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "Alternate sides, with light pressure: the weight of the knife is almost enough."
+        },
+        {
+         "level": 0,
+         "marker": "5.",
+         "text": "Five to ten strokes a side."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*The paper test.* Hold a sheet of paper by one corner so it hangs. A sharp edge slices down through it cleanly; a dull edge catches and tears."
+      },
+      {
+       "type": "paragraph",
+       "text": "*The whetstone.* A whetstone sharpens by grinding the edge at a set angle on a wet stone. It is introduced here and bought with tier 1 in S2, where you will learn to use it."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Hone and test (45 min).** Do the paper test with the chef's knife and write down what happens. Hone it, ten strokes a side, while someone films from the side (or the phone on a stand). Do the paper test again. Then cut a tomato with the honed knife and with the unhoned one, and compare."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** the knife slides into a tomato skin without pressure; the strokes are slow and even, at one angle."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "The edge gets worse after honing",
+         "Waving the knife at the steel at a changing angle",
+         "Slow strokes at one angle; watch the video"
+        ],
+        [
+         "A near miss on the holding hand",
+         "Honing towards the hand that holds the steel",
+         "Steel vertical on a towel; strokes down and towards you"
+        ],
+        [
+         "Scratches but no bite",
+         "Heavy pressure",
+         "Light pressure, more strokes"
+        ],
+        [
+         "A nick in the edge stays",
+         "Expecting a steel to fix a chipped edge",
+         "Chips need sharpening on a stone or by a service"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** the steel stands on a damp towel, the strokes move away from the holding hand, and nobody stands in front of the blade. Wipe the knife from the spine side, never along the edge (`SAF-1.M4`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the paper test before and after, the tomato comparison, and the video."
+      }
+     ]
+    },
+    {
+     "id": "EQP-1.M3.L3",
+     "title": "Small tools and measuring",
+     "prerequisites": [
+      "SAF-1.M3.L2"
+     ],
+     "competencies": [
+      {
+       "id": "KM-EQPT",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** your safety readings and your recipes depend on two instruments: the thermometer and the scale. Both drift, and you won't notice unless you check. Small tools last longer and work better when cleaned at once. This lesson starts the calibration log you keep from now on."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** the scale, ten €1 coins (or a calibration weight), the instant-read thermometer, a glass of crushed ice and a little cold water, your peeler, grater, sieves and wooden tools, a brush, the journal."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Measuring tools drift.* A digital scale can read wrong because of a weak battery, a knock, or an uneven surface. Check it against a known weight: ten €1 coins weigh 75 g together (7.5 g each); a calibration weight is better. A thermometer can drift after a drop or with age. Check it in ice water: crushed ice with a little water, stirred for half a minute, reads 0 °C. Do this monthly and after every drop (`SAF-1.M3.L2`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "*What a small error does.* A scale that reads 72 g for 75 g is 4 % light: in bread, salt and yeast are then under-dosed. A thermometer that reads 3 degrees high makes undercooked chicken look done. That is why the log exists."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Care of small tools.*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "Peelers and graters: brush them clean straight away, before the food dries on, and dry them."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "Sieves: rinse before the starch dries; a dried-on sieve takes ten times as long."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "Wooden spoons and boards: wash by hand, dry upright, and oil them now and then with a food-safe oil."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "Probe thermometers: wipe the probe, never soak the body unless the maker says it is waterproof."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*The calibration log.* One page in the journal: the date, the instrument, the known value, the reading, the error, and what you did. Level 3 of `KM-EQPT` asks for it, so it starts today."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Check and care (45 min).** Weigh the ten coins on the scale; write the reading. Check the thermometer in the ice water; write the reading. Start the calibration log with both. Then clean and sort the small tools, and give the wooden ones a thin coat of oil."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** a log with dated readings; tools clean, dry and in their place."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Bread that never rises well",
+         "A scale that is never checked because it is digital",
+         "Check it monthly with the coins; replace the battery"
+        ],
+        [
+         "A thermometer that stops working",
+         "A probe dunked in the washing-up water",
+         "Wipe the probe; keep the body dry"
+        ],
+        [
+         "A grater clogged with dried cheese",
+         "A grater put away dirty",
+         "Brush it clean straight away"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** a thermometer that reads wrong makes every safety reading wrong; if it is more than 1 degree off and can't be adjusted, note the offset on it or replace it (`SAF-1.M3.L2`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the first two entries of the calibration log."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "EQP-1.M3.X1",
+     "title": "Paper test, honing and scale check",
+     "description": "The paper test before and after honing; a scale check.",
+     "competencies": [
+      {
+       "id": "KM-EQPT",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** a sharp knife kept sharp, and instruments you can trust. Hone the chef's knife on camera, prove the result with the paper test, and check the scale and the thermometer."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** the chef's knife and the honing steel, a damp towel, a sheet of printer paper, ten €1 coins, crushed ice and water, the thermometer, a phone on a stand to film from the side, the calibration log."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Recipe:** the procedure."
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Paper test.** Hang the sheet by one corner and slice down through it. Note: clean slice, catch, or tear."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Hone.** Steel vertical, tip on the damp towel. Ten strokes a side, alternating, heel to tip, down and towards you, at one angle of about 15–20°, light pressure. Film it from the side so the angle is visible."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "**Paper test again.** Note the difference."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "**Scale check.** Weigh the ten coins: they should read 75 g."
+        },
+        {
+         "level": 0,
+         "marker": "5.",
+         "text": "**Thermometer check.** Stir the ice and water for half a minute and put the probe in without touching the glass: it should read 0 °C."
+        },
+        {
+         "level": 0,
+         "marker": "6.",
+         "text": "**Log it.** Enter the date, both readings, the errors and what you did."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:** the honing video, for AI review; the paper test before and after; the log entries. With this module's quiz at 80 % this meets the `KM-EQPT` level 2 success row. AI review scores a constant angle, a vertical steel resting on a towel, alternating strokes and light pressure: *competent* is a side view of safe, even strokes; *not yet* is a steel held in the air, a changing angle, or strokes towards the hand. A *not yet* means another video after practice."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 30 min."
+      }
+     ]
+    }
+   ],
+   "items": [
+    {
+     "id": "EQP-1.M3.Q1",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "EQP-1.M3.L1",
+     "safety": false,
+     "question": "Which three knives make up the basic kit?",
+     "options": [
+      {
+       "key": "A",
+       "text": "cleaver, boning knife, filleting knife"
+      },
+      {
+       "key": "B",
+       "text": "chef's knife, paring knife, bread knife"
+      },
+      {
+       "key": "C",
+       "text": "santoku, nakiri, petty"
+      },
+      {
+       "key": "D",
+       "text": "steak knives"
+      }
+     ],
+     "answer": "B",
+     "why": "They cover almost every S1 task."
+    },
+    {
+     "id": "EQP-1.M3.Q2",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "EQP-1.M3.L1",
+     "safety": false,
+     "question": "What is the trade-off of a carbon-steel blade?",
+     "options": [
+      {
+       "key": "A",
+       "text": "it can't be sharpened"
+      },
+      {
+       "key": "B",
+       "text": "a keener edge, but it stains and rusts if left wet"
+      },
+      {
+       "key": "C",
+       "text": "it is heavier"
+      },
+      {
+       "key": "D",
+       "text": "it doesn't need honing"
+      }
+     ],
+     "answer": "B",
+     "why": "Stainless is more forgiving; carbon steel needs drying."
+    },
+    {
+     "id": "EQP-1.M3.Q3",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "EQP-1.M3.L2",
+     "safety": false,
+     "question": "What does a honing steel do?",
+     "options": [
+      {
+       "key": "A",
+       "text": "removes metal to form a new edge"
+      },
+      {
+       "key": "B",
+       "text": "realigns an edge that has rolled over"
+      },
+      {
+       "key": "C",
+       "text": "polishes the blade"
+      },
+      {
+       "key": "D",
+       "text": "nothing for modern knives"
+      }
+     ],
+     "answer": "B",
+     "why": "Sharpening removes metal; honing straightens."
+    },
+    {
+     "id": "EQP-1.M3.Q4",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "EQP-1.M3.L2",
+     "safety": false,
+     "question": "When does a knife need sharpening rather than honing?",
+     "options": [
+      {
+       "key": "A",
+       "text": "every day"
+      },
+      {
+       "key": "B",
+       "text": "when honing no longer restores the bite"
+      },
+      {
+       "key": "C",
+       "text": "never"
+      },
+      {
+       "key": "D",
+       "text": "after every use"
+      }
+     ],
+     "answer": "B",
+     "why": "Honing can't create an edge that has worn away."
+    },
+    {
+     "id": "EQP-1.M3.Q5",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "EQP-1.M3.L2",
+     "safety": false,
+     "question": "How do you hold the steel for safe honing?",
+     "options": [
+      {
+       "key": "A",
+       "text": "in the air, pointing at you"
+      },
+      {
+       "key": "B",
+       "text": "vertical, tip down on a damp towel, drawing the blade down and towards you"
+      },
+      {
+       "key": "C",
+       "text": "horizontal over the sink"
+      },
+      {
+       "key": "D",
+       "text": "any way that is quick"
+      }
+     ],
+     "answer": "B",
+     "why": "The tip on a towel can't slip, and the blade moves away from the hand."
+    },
+    {
+     "id": "EQP-1.M3.Q6",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "EQP-1.M3.L2",
+     "safety": false,
+     "question": "What does the paper test show?",
+     "options": [
+      {
+       "key": "A",
+       "text": "the steel of the knife"
+      },
+      {
+       "key": "B",
+       "text": "whether the edge slices cleanly or tears"
+      },
+      {
+       "key": "C",
+       "text": "the balance"
+      },
+      {
+       "key": "D",
+       "text": "the angle"
+      }
+     ],
+     "answer": "B",
+     "why": "A clean slice means a sharp edge."
+    },
+    {
+     "id": "EQP-1.M3.Q7",
+     "type": "CALCULATION",
+     "lessonId": "EQP-1.M3.L3",
+     "safety": false,
+     "question": "Ten €1 coins weigh 75 g. Your scale shows 72 g. What is the error, and what do you do?",
+     "options": [],
+     "answer": "−3 g (4 %). Note it in the log; re-check with a second known weight; replace or correct for it if it persists.",
+     "why": "A scale that reads light under-doses salt and leavening."
+    },
+    {
+     "id": "EQP-1.M3.Q8",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "EQP-1.M3.L3",
+     "safety": false,
+     "question": "How often is the probe thermometer checked in ice water?",
+     "options": [
+      {
+       "key": "A",
+       "text": "never"
+      },
+      {
+       "key": "B",
+       "text": "monthly, and after it has been dropped"
+      },
+      {
+       "key": "C",
+       "text": "once when new"
+      },
+      {
+       "key": "D",
+       "text": "only when food tastes wrong"
+      }
+     ],
+     "answer": "B",
+     "why": "A thermometer that drifts makes every safety reading wrong."
+    }
+   ]
+  }
+ ]
+}

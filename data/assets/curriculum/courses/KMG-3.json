@@ -1,0 +1,2789 @@
+{
+ "schemaVersion": 1,
+ "id": "KMG-3",
+ "introduction": [
+  {
+   "type": "paragraph",
+   "text": "**Before you start.** A professional kitchen runs on plans, lists, costs and storage. A household kitchen runs on the same things, usually without writing them down. This course writes them down, so that cooking well every day fits your time and your money:"
+  },
+  {
+   "type": "list",
+   "items": [
+    {
+     "level": 0,
+     "marker": "",
+     "text": "**weekly planning:** a balanced, seasonal week of meals around your real schedule, with one prep day;"
+    },
+    {
+     "level": 0,
+     "marker": "",
+     "text": "**purchasing:** quantities per person, one consolidated shopping list, and where to buy what (Good or Best);"
+    },
+    {
+     "level": 0,
+     "marker": "",
+     "text": "**cost and yield:** cost per portion from the yields of `BUT-3`, and a budget week that keeps its quality;"
+    },
+    {
+     "level": 0,
+     "marker": "",
+     "text": "**leftovers and the freezer:** cooked food turned into new dishes within the safety limits, and a freezer that is used rather than filled;"
+    },
+    {
+     "level": 0,
+     "marker": "",
+     "text": "**house recipes:** the household's best dishes written so that anyone can cook them."
+    }
+   ]
+  },
+  {
+   "type": "paragraph",
+   "text": "The safety figures of assessment §9 run through every module:"
+  },
+  {
+   "type": "list",
+   "items": [
+    {
+     "level": 0,
+     "marker": "",
+     "text": "leftovers into the fridge within 2 hours, and kept at most 2 days;"
+    },
+    {
+     "level": 0,
+     "marker": "",
+     "text": "the fridge at 4 °C, the freezer at −18 °C or colder;"
+    },
+    {
+     "level": 0,
+     "marker": "",
+     "text": "reheated until steaming hot throughout, and only once;"
+    },
+    {
+     "level": 0,
+     "marker": "",
+     "text": "batches cooled by the standard: from 57 °C to 21 °C within 2 hours, and to 5 °C or below within 6 hours in total."
+    }
+   ]
+  },
+  {
+   "type": "paragraph",
+   "text": "The course runs on the household's real weeks: plan about four weeks, each module one week of planning, shopping, cooking and logging. Keep every plan, list, costing and log: `MS-S3` asks for the same documents."
+  },
+  {
+   "type": "paragraph",
+   "text": "**Have ready:** the planning, list, costing and comparison templates (a notebook, or a spreadsheet with them linked); the balance checklist (`CR-MENU`); your yield log from `BUT-3.M4`; the 1 g scale; shallow containers with lids; freezer boxes and flat freezer bags; labels and a marker; the fridge and freezer thermometers; the journal."
+  }
+ ],
+ "modules": [
+  {
+   "id": "KMG-3.M1",
+   "title": "Weekly planning",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** none for this module. Its judgment, planning around a busy schedule, is shown in the plan against actual of `KMG-3.M1.X1`."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "KMG-3.M1.L1",
+     "title": "A week of meals",
+     "prerequisites": [
+      "WRK-1.M2.L3"
+     ],
+     "competencies": [
+      {
+       "id": "CR-MENU",
+       "level": 2
+      },
+      {
+       "id": "KM-PLAN",
+       "level": 4
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** a plan decides the week before the week decides for you. Without one, the busy evenings become takeaway and the vegetables go limp in the drawer."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** the planning template; the household's calendar for the coming week; the balance checklist (`CR-MENU`); the seasonal calendar (`VEG-1`, `VEG-3.M1`); your house recipes and frameworks so far."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Balance across a week.* Check the week against the balance checklist:"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "a range of proteins: legumes, fish at least once a week (the *Schijf van Vijf* [S48]), poultry, meat, eggs;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "vegetables at every meal;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "whole grains;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "no main technique, colour or dominant taste repeated two days running."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Season.* Start from what is best and cheapest now (`VEG-3.M1`), not from a fixed rotation. In November that means cabbages, leeks, roots, pumpkin and *witlof*; in June, the first peas, broad beans and lettuces."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Around a busy schedule.* Read the calendar first, then fill in the meals:"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**busy days:** quick meals of 15–30 minutes, built from prepared components;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**free days:** a longer cook;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**cook once, eat twice:** a braise on Sunday, its second portion on Tuesday, within the 2-day limit, or frozen;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**a fallback:** one meal from the pantry, for the evening the plan breaks."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*One dinner as a menu.* Once a week, plan a three-course dinner as a menu and check it against the balance checklist: the courses differ in technique, colour and richness, and the dessert doesn't repeat the main's dominant taste."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Lunches.* Write down which lunches come from which dinners: a portion of soup, a grain salad from Monday's grains. Those portions go on the shopping list too."
+      },
+      {
+       "type": "paragraph",
+       "text": "*An example week, in November:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "Monday (busy): soup from the stock made on Sunday, with smoked-mackerel toast;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "Tuesday (busy): the second portion of Sunday's beef braise, with mash;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "Wednesday: a white-bean and leek stew with a crisp crumb;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "Thursday (busy): an omelette with *witlof* salad;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "Friday: baked mackerel with beetroot and barley;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "Saturday: a three-course dinner, a roast chicken as the main;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "Sunday: the braise, and a pot of grains for the week."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Plan the week (60 min).** Seven dinners and the lunches that come from them, on the planning template, checked against the balance checklist and the household's calendar."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** every busy day has a quick meal; every long cook feeds two days; the checklist passes."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "A week of pasta",
+         "Planned from habit",
+         "Run the balance checklist; vary the base"
+        ],
+        [
+         "A two-hour recipe on the busiest evening",
+         "The calendar not read first",
+         "Calendar first; long cooks on free days"
+        ],
+        [
+         "Takeaway on Thursday",
+         "No fallback",
+         "One pantry meal in every plan"
+        ],
+        [
+         "The second portion goes off",
+         "Eaten too late",
+         "Within 2 days, or frozen the day it is cooked"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** a second portion planned within 2 days of cooking, or frozen the same day (§9)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the plan, the checklist, and a note on the calendar's busy days."
+      }
+     ]
+    },
+    {
+     "id": "KMG-3.M1.L2",
+     "title": "A prep day",
+     "prerequisites": [
+      "KMG-3.M1.L1"
+     ],
+     "competencies": [
+      {
+       "id": "KM-PLAN",
+       "level": 4
+      },
+      {
+       "id": "TS-MEP",
+       "level": 4
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** an afternoon of batch cooking makes the busy evenings quick. It only works with a written task list and the fridge's 2-day limit in mind."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** the week's plan; the ingredients for the components; the oven; large pans; shallow containers with lids; labels and a marker; a timer; a phone for timed photos; the probe."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*What to batch:* components that keep, and that save time later:"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "a pot of grains or legumes;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "a stock;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "a sauce base;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "roasted vegetables;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "washed and dried leaves;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "a dressing, a marinade, a dough."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*The task list.* Write it in a reasoned order:"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "the longest tasks and the oven tasks first;"
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "the stock in the background;"
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "washing and cutting while things cook;"
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "cold tasks last."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "Where you can, share one oven temperature for everything that roasts."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Clean as you go.* A bin bowl on the board; a clean board between tasks; the sink emptied between stages. Take a photo of the station at set times (every 30 minutes); they show whether you kept it clean."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Storage:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "every component cooled by the standard: shallow containers, smaller portions, an ice-water bath for a stock;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "labelled containers (name, date);"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "at most 2 days in the fridge, unless frozen (§9);"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "the plan says which day each component is used. What is needed after day 2 goes into the freezer today."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*The fridge limit.* Prepping for seven days does not work when the fridge allows 2. Prep for the first half of the week, freeze for the second, or run two short prep sessions."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**The prep day (2.5 h).** The components of the week's plan batched from a written task list; timed station photos; everything labelled and stored."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** no forgotten item; a clean station at each timed photo; every container labelled with name and date."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Thursday's grains are out of date",
+         "Prepped for seven days",
+         "Fridge for days 1–2; freezer for the rest"
+        ],
+        [
+         "A warm, crowded fridge",
+         "Warm containers stacked",
+         "Cool first, in shallow containers; then the fridge"
+        ],
+        [
+         "An item forgotten",
+         "The task list in the head",
+         "Write it; tick it off"
+        ],
+        [
+         "A cluttered station",
+         "No bin bowl, no reset between tasks",
+         "Bin bowl; clean board between tasks"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** batches cooled from 57 °C to 21 °C within 2 hours and to 5 °C or below within 6 hours (§9); probe a large batch to check; the fridge at 4 °C."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the task list with actual times, the station photos, and the labels' contents."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "KMG-3.M1.X1",
+     "title": "A week with one prep day",
+     "description": "Plan and run a week with one prep day; log actual time spent.",
+     "competencies": [
+      {
+       "id": "CR-MENU",
+       "level": 2
+      },
+      {
+       "id": "KM-PLAN",
+       "level": 4
+      },
+      {
+       "id": "TS-MEP",
+       "level": 4
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** plan and run a real week with a prep day, and log the time it actually took."
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**The brief:** a week of dinners for the household with one prep day, on the planning template."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**The constraints:** control points in the plan (cooling, storage days, reheating); the prep day run from a written task list with timed station photos; one dinner planned as a three-course menu and checked against the balance checklist."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**The criteria:** the time spent each day logged against the plan; every control point met or changed with a reason."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**The record:** the plan, the task list, the photos, the daily log and the review."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** the week's ingredients; containers and labels; the probe; the templates."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Procedure:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "Write the plan, the control points and the prep-day task list."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "Run the prep day; take the timed photos; label and store."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "Cook the week; log the time and every control point."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "Review the plan against actual: which days ran over, and why."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`KM-PLAN` level 4:** a multi-day plan with control points; the log shows every control point met or a reasoned change."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`TS-MEP` level 4:** three multi-component dishes prepped from a written task list in a reasoned order, no forgotten item, clean as you go in timed photos."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`CR-MENU` level 2:** a three-course menu checked against the balance checklist."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "AI review reads the plan, the log and the photos: *competent* is a plan with control points that the log shows met or changed with a reason, a task list in a reasoned order, and clean stations in the photos; *not yet* is control points missing from the plan, or components kept past 2 days."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 5 h over the week, besides the daily cooking."
+      }
+     ]
+    }
+   ],
+   "items": []
+  },
+  {
+   "id": "KMG-3.M2",
+   "title": "Purchasing",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** none for this module. Its judgment, where to buy, is shown in the notes and receipts of `KMG-3.M2.X1`."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "KMG-3.M2.L1",
+     "title": "Quantities per person",
+     "prerequisites": [
+      "WRK-1.M3.L2"
+     ],
+     "competencies": [
+      {
+       "id": "KM-PURC",
+       "level": 4
+      },
+      {
+       "id": "KM-MATH",
+       "level": 4
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** buying per recipe gives three half-used bunches of parsley and no onions on Thursday. One list for the week, from portions you have checked, buys what you will use."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** the week's plan and its recipes; your yield log from `BUT-3.M4`; the pantry inventory; the list template; a calculator."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Working portions.* Start from standard amounts per main portion, adjust them to your household's appetites, record them once and reuse them:"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "raw boneless meat or fish: about 125–150 g;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "dry pasta or rice: 75–100 g;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "vegetables: 200–250 g;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "dry legumes: 60–80 g."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*From plan to list:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "Scale every recipe's quantities to the household."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "Add them up across the week, item by item."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "Subtract what is already in the pantry (the inventory)."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Yield in purchasing.* A whole bird, a vegetable with its trim, a fish on the bone are bought by the as-purchased weight that gives the usable portion (`BUT-3.M4`). Divide the usable weight you need by the yield factor in your log. For example, if your log shows that leeks give 0.6 usable, 600 g of trimmed leek needs 600 ÷ 0.6 = 1,000 g bought."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Not everything scales in a straight line.* Seasoning, braising liquid, oven times and frying oil change less than the number of portions. A double batch of stew in a wider pot needs less than double the liquid; the salt is added to taste, not doubled. Write the reason beside each item you don't scale straight."
+      },
+      {
+       "type": "paragraph",
+       "text": "*The consolidated list.* Grouped by shop and by section (vegetables, butcher, dairy, dry goods), with quantities and units. Check it against the plan, item by item, before you leave."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**The list (60 min).** The coming week's plan turned into a consolidated list, scaled, with the yields applied and the pantry subtracted."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** a list that matches the plan item by item."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Half-used bunches and missing staples",
+         "Buying per recipe",
+         "Add up across the week, by item"
+        ],
+        [
+         "Too little for the dish",
+         "The trim forgotten",
+         "Divide by the yield factor"
+        ],
+        [
+         "An over-salted double batch",
+         "Salt doubled with the portions",
+         "Salt to taste; note the non-linear items"
+        ],
+        [
+         "Two jars of cumin",
+         "The pantry not checked",
+         "Subtract the inventory first"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** the cold items grouped on the list so they are bought last and go straight into the fridge."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the working portions, the scaled list with yields, and the non-linear items with reasons."
+      }
+     ]
+    },
+    {
+     "id": "KMG-3.M2.L2",
+     "title": "Where and how to buy",
+     "prerequisites": [
+      "VEG-1.M2.L1"
+     ],
+     "competencies": [
+      {
+       "id": "KM-PURC",
+       "level": 4
+      },
+      {
+       "id": "IN-SEL",
+       "level": 4
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** where you buy changes what you pay and what you cook with. A reasoned choice puts the money where it changes the result."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** the consolidated list; a budget; a notebook or phone for notes; bags, and a cool bag for fish and meat."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Where:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**the supermarket** for staples and convenience;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**the market and farm shops** for seasonal produce at its peak;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**specialists** (butcher, fishmonger, cheese shop, an Asian or Turkish grocer) for quality, advice and particular items;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**online and vegetable-box schemes** for regular deliveries."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Seasonal buying.* The cheapest and best produce is the produce in season. The seasonal calendar (`VEG-1`) and what the market has this week set the plan, not the other way round."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Good or Best.* Where the better product changes the result, it is worth paying for:"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "fish freshness;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "bread flour;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "a cheese eaten on its own."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "Where it doesn't (cooking onions, canned tomatoes), Good is good enough. Write each decision with its reason."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Judging at the shop.* Look, smell, firmness, dates, origin (`IN-SEL`). When something is not good (limp leeks, dull-eyed fish), make a reasoned change: another vegetable from the same family, another fish of the same type, or the dish moved to another day. Note the change."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Receipts.* Keep them. They are the data for `KMG-3.M3`, where the costing is checked against them."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**The shopping round (60 min).** The week's list bought across at least two kinds of shop. Note the Good or Best decisions with reasons, and make one reasoned change at the shop."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** every main item's quality, price and purpose noted."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Poor fish bought because it was on the list",
+         "Buying the plan whatever the quality",
+         "Judge first; change the item or the day"
+        ],
+        [
+         "Over budget",
+         "Best prices for Good uses",
+         "Best only where it changes the result"
+        ],
+        [
+         "No costing possible later",
+         "No receipts kept",
+         "Keep every receipt with the week's list"
+        ],
+        [
+         "Warm fish at home",
+         "The cold items bought first",
+         "Cold items last; a cool bag"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** fish, meat and dairy in a cool bag and into the fridge at 4 °C as soon as you are home; dates checked at the shop."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the shops, the decisions and their reasons, the change made, and the receipts."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "KMG-3.M2.X1",
+     "title": "A shopping list for the week, bought against used",
+     "description": "A shopping list for the week's plan; compare bought against used.",
+     "competencies": [
+      {
+       "id": "KM-PURC",
+       "level": 4
+      },
+      {
+       "id": "KM-MATH",
+       "level": 4
+      },
+      {
+       "id": "IN-SEL",
+       "level": 4
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** buy a week within budget and close to what is used, by plan. Write a consolidated list for a week's plan, scaled, with a reason for every non-linear item. Buy it within a set budget, noting the Good or Best decisions and the quality. At the end of the week, compare bought against used, item by item, with the waste and the shortfall. Keep the receipts."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** the week's plan; the list and comparison templates; the yield log; the receipts; the scale for weighing what is left."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Framework:** the list and the comparison."
+      },
+      {
+       "type": "table",
+       "header": [
+        "Part",
+        "What it is",
+        "Your decisions"
+       ],
+       "rows": [
+        [
+         "Portions",
+         "Working portions for the household",
+         "Adjusted to appetites"
+        ],
+        [
+         "List",
+         "Scaled, added up by item, the pantry subtracted",
+         "—"
+        ],
+        [
+         "Yields",
+         "As-purchased weight from the yield factor",
+         "—"
+        ],
+        [
+         "Non-linear items",
+         "Seasoning, liquid, oil; not scaled straight",
+         "The reason for each"
+        ],
+        [
+         "Budget",
+         "Set before shopping",
+         "The amount"
+        ],
+        [
+         "Buying",
+         "At least two kinds of shop; quality judged",
+         "Good or Best, with reasons"
+        ],
+        [
+         "Comparison",
+         "Bought against used per item; waste and shortfall",
+         "What to change"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Procedure:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "Write the list from the plan, scaled; set the budget."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "Buy it; note the quality, the price and the decisions; keep the receipts."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "Log what was used and what was left or thrown away."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "Compare bought against used; write what to change."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`KM-PURC` level 4:** a week bought within budget, quantities within 10 % of what was used, quality judged, the receipts against the plan."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`KM-MATH` level 4, further evidence:** the scaling with non-linear items reasoned; the per-portion costing follows in `KMG-3.M3.X1` and was met in `BUT-3.M4.X1`."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`IN-SEL` level 4, further evidence:** quality, price and purpose of the main items noted, and a reasoned change at the shop; the row was met in `VEG-3.M1.X1`."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "AI review reads the list, the receipts and the comparison: *competent* is a week within budget, quantities within 10 % of what was used, and every non-linear item reasoned; *not yet* is a comparison missing, or quantities far from use."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 2 h, plus the shopping."
+      }
+     ]
+    }
+   ],
+   "items": []
+  },
+  {
+   "id": "KMG-3.M3",
+   "title": "Cost and yield",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** the 8 items of `KMG-3.M3` in the course file, 1 of them a safety item. Pass mark 80 %, with every safety item correct."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "KMG-3.M3.L1",
+     "title": "Cost per portion",
+     "prerequisites": [
+      "BUT-3.M4.L1"
+     ],
+     "competencies": [
+      {
+       "id": "KM-MATH",
+       "level": 4
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** knowing what a portion costs tells you where the money goes, and which changes would save it. A costing that ignores the trim, the oil and the waste is wrong in the same direction every time: too cheap."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** three of the week's recipes; the receipts; your yield log (`BUT-3.M4`); the costing sheet; a calculator."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Costing a recipe:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "Each ingredient's quantity **as purchased**, with its yield factor from `BUT-3.M4`."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "Its price per unit, from the receipt."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "Its cost: quantity × price."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "The total for the recipe."
+        },
+        {
+         "level": 0,
+         "marker": "5.",
+         "text": "Divided by the number of portions."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "Small items (spices, oil, salt) are added as a flat percentage of the total rather than weighed one by one. Choose the percentage once, from a few recipes you have weighed, and write it on the sheet."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Yield factors:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**trim:** usable weight ÷ purchased weight;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**cooking loss** for protein served by weight: cooked weight ÷ raw weight."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*A worked example.* A recipe costs €14.40 in total and serves six: €14.40 ÷ 6 = €2.40 per portion. If the leeks in it were costed at their trimmed weight, the cost is too low: 600 g of trimmed leek at a yield of 0.6 is 1,000 g bought, and at €3.00 per kg that is €3.00, not €1.80."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Where the money goes.* In most home menus the protein and the dairy are most of the cost. Seasonal vegetables, grains and legumes are cheap. Waste is a hidden cost: food bought and thrown away is paid for too."
+      },
+      {
+       "type": "paragraph",
+       "text": "*The costing sheet.* Keep one for each house recipe, and update it when prices change. It becomes the costing line of the house recipe in `KMG-3.M5`."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Cost three dishes (60 min).** Three of the week's dishes costed per portion with yield factors, on the sheet; checked against the receipts."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** a costing within 10 % of the receipts."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "The costing is too low",
+         "Trimmed weight costed at the whole price",
+         "Cost the as-purchased weight"
+        ],
+        [
+         "A few percent short every time",
+         "Oil and butter forgotten",
+         "Add them, or the flat percentage"
+        ],
+        [
+         "The week costs more than the dishes",
+         "Waste ignored",
+         "Log the waste; it is part of the cost"
+        ],
+        [
+         "A meat portion short",
+         "Cooking loss ignored",
+         "Use the cooked-weight factor"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** cost cutting never changes a §9 figure; a cheaper cut is still cooked to its figure."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the three costing sheets, the receipts, and the difference between them."
+      }
+     ]
+    },
+    {
+     "id": "KMG-3.M3.L2",
+     "title": "Budget menus",
+     "prerequisites": [
+      "KMG-3.M3.L1"
+     ],
+     "competencies": [
+      {
+       "id": "KM-PURC",
+       "level": 4
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** a cheaper week can still be a good week. The skill is knowing which savings cost nothing in quality, and which two things are never cut."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** the costing sheets; the seasonal calendar; the planning template; the pantry and preserves; the household cards."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Cutting cost without cutting quality:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**cheaper cuts cooked well** (`SLW-3`): shin, cheek, shoulder, chicken legs, braised slowly;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**whole birds and fish,** with every part used (`BUT-3`): the carcass for stock, the trim for a filling;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**legumes and grains as the base,** protein as the accent;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**seasonal produce** at its peak;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**the pantry and preserves** used (`PRS-3`);"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**leftovers planned in** (`KMG-3.M4`);"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**Best only** where it changes the result."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Where quality must not be cut:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**freshness of fish and meat:** a cheap fish that is not fresh is not a saving;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**safety:** a cheap cut is still cooked to its §9 figure, and a leftover still kept within 2 days."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*A budget week:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "Set an amount per person per day."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "Design the menu to it."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "Cost it in advance, dish by dish."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "Check it against the receipts."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Variety on a budget.* A budget met by eating the same thing every day fails the household cards. Vary the base and the technique: a lentil soup, a chicken-leg braise, a vegetable gratin, an egg dish, a whole mackerel. Keep the vegetables: they are among the cheapest items on the list."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**A budget week (60 min of planning, then the week).** A week of dinners designed to a set budget and costed in advance."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** within budget, and the household cards don't drop."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Tough, cheap meat",
+         "A braising cut cooked fast",
+         "Slow, moist heat until tender (`SLW-3`)"
+        ],
+        [
+         "The household tires of it",
+         "The same dish every day",
+         "Vary the base and the technique"
+        ],
+        [
+         "Few vegetables",
+         "Skipped to save money",
+         "Seasonal vegetables are cheap; keep them"
+        ],
+        [
+         "Over budget by Thursday",
+         "Not costed in advance",
+         "Cost every dish before shopping"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** cheaper cuts cooked to their §9 figures; whole birds and offal by their rows; leftovers within 2 days."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the budget, the costed menu, the receipts, and the cards."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "KMG-3.M3.X1",
+     "title": "A week of dinners within a set budget",
+     "description": "A week of dinners within a set budget, costed.",
+     "competencies": [
+      {
+       "id": "KM-MATH",
+       "level": 4
+      },
+      {
+       "id": "KM-PURC",
+       "level": 4
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** feed the household well for a week within a set budget, costed in advance and checked."
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**The brief:** seven dinners for the household within a set budget per person per day."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**The constraints:** each dish costed per portion from measured yields, in advance."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**The criteria:** the receipts compared with the costing; household cards across the week judging the food as good as a normal week."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**The record:** the budget, the costing sheets, the receipts, the comparison, the cards and the review."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** the week's ingredients; the costing sheet; the yield log; the receipts; the household cards."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Procedure:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "Set the budget; design and cost the menu, dish by dish, from measured yields."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "Buy, cook and log the week."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "Compare the costing with the receipts; collect the household cards."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "Write what held and what to change."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`KM-MATH` level 4:** a menu costed per portion from measured yields, within 10 % of the receipts."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`KM-PURC` level 4, further evidence:** a week bought within budget, receipts against the plan."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "AI review reads the costing sheets, the receipts and the cards: *competent* is every dish costed from measured yields, the total within 10 % of the receipts and within budget, and cards that hold up across the week; *not yet* is a costing from trimmed weights, or cards that drop."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 2 h of planning and costing, besides the week's cooking."
+      }
+     ]
+    }
+   ],
+   "items": [
+    {
+     "id": "KMG-3.M3.Q1",
+     "type": "CALCULATION",
+     "lessonId": "KMG-3.M3.L1",
+     "safety": false,
+     "question": "A recipe costs €14.40 in total and serves six. What is the cost per portion?",
+     "options": [],
+     "answer": "€2.40",
+     "why": "14.40 ÷ 6."
+    },
+    {
+     "id": "KMG-3.M3.Q2",
+     "type": "CALCULATION",
+     "lessonId": "KMG-3.M3.L1",
+     "safety": false,
+     "question": "Leeks cost €3 per kg with a 60 % usable yield. What does a usable kilo cost?",
+     "options": [],
+     "answer": "€5",
+     "why": "3 ÷ 0.6."
+    },
+    {
+     "id": "KMG-3.M3.Q3",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "KMG-3.M3.L1",
+     "safety": false,
+     "question": "In a typical home menu, where does most of the money go?",
+     "options": [
+      {
+       "key": "A",
+       "text": "spices"
+      },
+      {
+       "key": "B",
+       "text": "protein and dairy"
+      },
+      {
+       "key": "C",
+       "text": "vegetables in season"
+      },
+      {
+       "key": "D",
+       "text": "salt"
+      }
+     ],
+     "answer": "B",
+     "why": "Where the money goes."
+    },
+    {
+     "id": "KMG-3.M3.Q4",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "KMG-3.M3.L1",
+     "safety": false,
+     "question": "How are oil, salt and spices usually costed?",
+     "options": [
+      {
+       "key": "A",
+       "text": "ignored"
+      },
+      {
+       "key": "B",
+       "text": "as a flat percentage of the recipe's cost"
+      },
+      {
+       "key": "C",
+       "text": "weighed to the gram"
+      },
+      {
+       "key": "D",
+       "text": "as one euro"
+      }
+     ],
+     "answer": "B",
+     "why": "Practical costing."
+    },
+    {
+     "id": "KMG-3.M3.Q5",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "KMG-3.M3.L1",
+     "safety": false,
+     "question": "Why is waste a cost?",
+     "options": [
+      {
+       "key": "A",
+       "text": "it isn't"
+      },
+      {
+       "key": "B",
+       "text": "food thrown away was paid for, so it raises the real cost per portion eaten"
+      },
+      {
+       "key": "C",
+       "text": "it costs to dispose of only"
+      },
+      {
+       "key": "D",
+       "text": "only in restaurants"
+      }
+     ],
+     "answer": "B",
+     "why": "Hidden cost."
+    },
+    {
+     "id": "KMG-3.M3.Q6",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "KMG-3.M3.L2",
+     "safety": false,
+     "question": "Which saves money without losing quality?",
+     "options": [
+      {
+       "key": "A",
+       "text": "cheap steak fried fast"
+      },
+      {
+       "key": "B",
+       "text": "beef shin braised slowly"
+      },
+      {
+       "key": "C",
+       "text": "skipping vegetables"
+      },
+      {
+       "key": "D",
+       "text": "one dish all week"
+      }
+     ],
+     "answer": "B",
+     "why": "Cheaper cuts cooked well."
+    },
+    {
+     "id": "KMG-3.M3.Q7",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "KMG-3.M3.L2",
+     "safety": true,
+     "question": "To save money, you consider keeping cooked rice for five days in the fridge. What does §9 say?",
+     "options": [
+      {
+       "key": "A",
+       "text": "fine"
+      },
+      {
+       "key": "B",
+       "text": "at most 2 days in the fridge; freeze portions to keep longer"
+      },
+      {
+       "key": "C",
+       "text": "a week if covered"
+      },
+      {
+       "key": "D",
+       "text": "on the counter"
+      }
+     ],
+     "answer": "B",
+     "why": "Safety is not cut (assessment §9)."
+    },
+    {
+     "id": "KMG-3.M3.Q8",
+     "type": "SCENARIO",
+     "lessonId": "KMG-3.M3.L2",
+     "safety": false,
+     "question": "Your weekly budget is short by €15. Name three changes that keep quality.",
+     "options": [],
+     "answer": "For example: a whole chicken instead of breasts, with the frame for a soup; a legume-based dinner instead of a meat one; seasonal vegetables instead of out-of-season ones; leftovers planned into a second meal.",
+     "why": "[J] cutting cost without cutting quality."
+    }
+   ]
+  },
+  {
+   "id": "KMG-3.M4",
+   "title": "Leftovers and the freezer",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** the 8 items of `KMG-3.M4` in the course file, 5 of them safety items. Pass mark 80 %, with every safety item correct."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "KMG-3.M4.L1",
+     "title": "Transforming leftovers",
+     "prerequisites": [
+      "SAF-3.M1.L1"
+     ],
+     "competencies": [
+      {
+       "id": "CR-IMPV",
+       "level": 3
+      },
+      {
+       "id": "KM-WAST",
+       "level": 4
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** a leftover reheated on a plate is yesterday's dinner. Turned into a new dish, it is a quick meal that nobody minds, and less food in the bin. Both only within the limits of §9."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** the week's leftovers, each labelled with its date; the pantry; eggs and flour for binding; fresh herbs, lemons, vinegar; the frameworks from `FLV-3`; a timer; a phone for the \"before\" photo; the probe."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*New dishes, not reheated plates:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**soups:** roasted vegetables blended with stock;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**fritters and croquettes:** mash, grains or vegetables bound with egg and flour;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**gratins and bakes:** vegetables, pasta, a sauce, a crust;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**fried rice and grain bowls:** cold cooked rice fries best;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**salads:** grains, legumes, roasted vegetables, a sharp dressing;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**fillings:** a braise in a pie, a roast in a sandwich;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "***stamppot*** and hash."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Changing texture and flavour* (`FLV-3`). A crisp element, a fresh herb, an acid and a new sauce turn yesterday's dish into a new one. Roasted roots become a soup with a spoon of yoghurt and toasted seeds; a braise becomes a pie with a crisp crust."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Safety limits* (assessment §9):"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "leftovers into the fridge within 2 hours of cooking, cooled quickly, covered;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "at most 2 days in the fridge, or frozen;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "reheated until steaming hot throughout, **and only once**: a leftover that was already reheated is not reheated again;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "cooked rice cooled quickly and kept cold (*Bacillus cereus*, `SCI-2.M6`);"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "when in doubt, throw it out."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "A fritter made from a leftover counts as its reheating: it is eaten that meal, not kept and reheated again."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Improvising quickly.* Photograph what is at hand first. Choose a framework (soup, fritter, gratin, fried rice, salad). Put a meal on the table in 45 minutes."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Two transformations (90 min).** Two leftovers from the week turned into new dishes from frameworks, each within 45 minutes."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**A pantry meal (45 min).** A meal from what is at hand, photographed first, without a recipe."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** a new dish, not a reheated plate; within 45 minutes; every leftover within its 2 days."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "A dish reheated twice",
+         "Leftovers of leftovers kept",
+         "Reheat once; eat it that meal"
+        ],
+        [
+         "A leftover \"until it smells\"",
+         "No date on the box",
+         "Label every box; at most 2 days"
+        ],
+        [
+         "A fritter falls apart",
+         "Too little binder",
+         "More egg and flour; chill before frying"
+        ],
+        [
+         "It tastes like yesterday",
+         "Nothing changed",
+         "Add a crisp element, an acid, a fresh herb"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** the dates checked before cooking; reheated until steaming hot throughout, once; rice cooled fast and kept cold; anything past 2 days or of unknown age thrown out (§9)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the \"before\" photos, the framework chosen, the times, and the leftovers' ages."
+      }
+     ]
+    },
+    {
+     "id": "KMG-3.M4.L2",
+     "title": "Freezer management",
+     "prerequisites": [
+      "SAF-1.M3.L3"
+     ],
+     "competencies": [
+      {
+       "id": "IN-STO",
+       "level": 4
+      },
+      {
+       "id": "KM-WAST",
+       "level": 4
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** a freezer is a store of quick meals, or a box of unlabelled ice. Freezing well, and an inventory you actually use, decide which."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** the freezer; the freezer thermometer; flat freezer bags and shallow boxes; labels and a marker; a cool box for the audit; the inventory template (on paper on the door, or on the phone)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*What freezes well:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "stocks, soups, braises, sauces;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "cooked legumes and grains;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "doughs and baked bread;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "raw meat and fish;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "blanched vegetables;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "herbs in oil or butter, kept frozen;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "fruit for cooking."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*What freezes badly:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "raw salad vegetables and cucumber: they go limp;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "cooked potatoes in large pieces: grainy;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "dairy-heavy sauces: they split;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "mayonnaise;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "fried foods: soggy;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "cooked egg whites: rubbery."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Freezing well:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "cooled first, by the standard; never hot into the freezer;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "flat bags or shallow containers, the air pressed out (against freezer burn);"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "portioned for one meal;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "labelled with the content, the date, and a use-by date for quality."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*The freezer at −18 °C or colder* (§9). Check it with a thermometer, not the dial."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Thawing.* In the fridge, or cooked from frozen. Never on the counter."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Rotation.* Keep an inventory on the door or on the phone: first in, first out, checked monthly. Give each item a quality limit (for example, most cooked dishes within a few months). The limit is for quality: over the months, frozen food dries and loses flavour."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Freezer audit (45 min).** Everything taken out into a cool box, listed, labelled and dated. What is past its quality limit is used first or discarded. The inventory is set up."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** an inventory that matches the freezer; every item labelled and dated."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Unlabelled tubs of \"brown stew\"",
+         "No label at freezing",
+         "Content, date, use-by on every item"
+        ],
+        [
+         "Ice crystals, dry patches",
+         "Air left in the bag",
+         "Press the air out; flat bags"
+        ],
+        [
+         "A warm freezer and a thawed edge",
+         "Hot food put in",
+         "Cool by the standard first"
+        ],
+        [
+         "A stew thawed on the counter",
+         "No plan for thawing",
+         "Into the fridge the day before"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** the freezer at −18 °C or colder (§9); food cooled before freezing; thawed in the fridge or cooked from frozen; the audit done quickly, with the food in a cool box."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the freezer temperature, the inventory, and what was used or discarded."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "KMG-3.M4.X1",
+     "title": "Three new dishes from one week's leftovers",
+     "description": "Three new dishes from one week's leftovers.",
+     "competencies": [
+      {
+       "id": "CR-IMPV",
+       "level": 3
+      },
+      {
+       "id": "KM-WAST",
+       "level": 4
+      },
+      {
+       "id": "IN-STO",
+       "level": 4
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** turn a week's leftovers into three new dishes, and run the freezer for quality."
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**The brief:** three new dishes from one week's leftovers and what is at hand."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**The constraints:** each photographed first, made within 45 minutes without a recipe; every leftover within the §9 limits; the week's waste logged by weight."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**The criteria:** the tasters judge each dish good."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**The extension:** the freezer inventory of `KMG-3.M4.L2` kept for four weeks, with the storage method, container, label and a quality use-by date per item, and the quality noted when each item is used."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**The record:** the photos, the times, the leftovers' ages, the waste log, the inventory and the quality notes."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** the week's leftovers; the pantry; the freezer; the scale for the waste; the probe; the household cards."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Procedure:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "Photograph what is at hand; choose a framework; cook within 45 minutes; collect the tasters' cards."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "Repeat for the three dishes; log the times and the leftovers' ages."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "Log the week's waste by weight."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "Keep the freezer inventory for four weeks; note the quality on use."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`CR-IMPV` level 3:** three meals from what was at hand (photographed first) within 45 minutes, without a recipe; the tasters judge each good."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`KM-WAST` level 4, further evidence:** leftovers used, waste under 5 % by weight logged."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`IN-STO` level 4:** the freezer run as a batch storage plan with method, container, label and a quality use-by date per item, and the quality notes on use showing nothing lost to storage. With `FLV-3.M2.X2` and `PRS-3.M6.X1`, the row is met for every kind of storage."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "AI review reads the photos, the logs and the inventory: *competent* is three new dishes within 45 minutes, every leftover within 2 days, waste under 5 %, and an inventory with quality notes; *not yet* is a leftover past its days, a reheated plate instead of a new dish, or unlabelled freezer items."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 2.5 h over a week, plus the freezer log."
+      }
+     ]
+    }
+   ],
+   "items": [
+    {
+     "id": "KMG-3.M4.Q1",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "KMG-3.M4.L1",
+     "safety": true,
+     "question": "How long may a leftover stew stay in the fridge?",
+     "options": [
+      {
+       "key": "A",
+       "text": "a week"
+      },
+      {
+       "key": "B",
+       "text": "at most 2 days; freeze it to keep longer"
+      },
+      {
+       "key": "C",
+       "text": "until it smells"
+      },
+      {
+       "key": "D",
+       "text": "5 days"
+      }
+     ],
+     "answer": "B",
+     "why": "Assessment §9."
+    },
+    {
+     "id": "KMG-3.M4.Q2",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "KMG-3.M4.L1",
+     "safety": true,
+     "question": "Monday's soup was reheated on Tuesday and some is left. What now?",
+     "options": [
+      {
+       "key": "A",
+       "text": "reheat it again on Wednesday"
+      },
+      {
+       "key": "B",
+       "text": "discard it: leftovers are reheated only once"
+      },
+      {
+       "key": "C",
+       "text": "freeze it"
+      },
+      {
+       "key": "D",
+       "text": "eat it cold"
+      }
+     ],
+     "answer": "B",
+     "why": "§9: reheated once."
+    },
+    {
+     "id": "KMG-3.M4.Q3",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "KMG-3.M4.L1",
+     "safety": true,
+     "question": "Why is cooked rice cooled quickly and kept cold?",
+     "options": [
+      {
+       "key": "A",
+       "text": "for texture"
+      },
+      {
+       "key": "B",
+       "text": "*Bacillus cereus* spores survive cooking and grow in warm rice"
+      },
+      {
+       "key": "C",
+       "text": "it dries out"
+      },
+      {
+       "key": "D",
+       "text": "it doesn't matter"
+      }
+     ],
+     "answer": "B",
+     "why": "`SCI-2.M6`."
+    },
+    {
+     "id": "KMG-3.M4.Q4",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "KMG-3.M4.L1",
+     "safety": false,
+     "question": "Which leftover makes the best fried rice?",
+     "options": [
+      {
+       "key": "A",
+       "text": "hot freshly cooked rice"
+      },
+      {
+       "key": "B",
+       "text": "cold cooked rice from the fridge"
+      },
+      {
+       "key": "C",
+       "text": "frozen raw rice"
+      },
+      {
+       "key": "D",
+       "text": "rice pudding"
+      }
+     ],
+     "answer": "B",
+     "why": "Drier grains fry better."
+    },
+    {
+     "id": "KMG-3.M4.Q5",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "KMG-3.M4.L2",
+     "safety": false,
+     "question": "Which freezes badly?",
+     "options": [
+      {
+       "key": "A",
+       "text": "a beef stew"
+      },
+      {
+       "key": "B",
+       "text": "a cucumber salad"
+      },
+      {
+       "key": "C",
+       "text": "chicken stock"
+      },
+      {
+       "key": "D",
+       "text": "bread"
+      }
+     ],
+     "answer": "B",
+     "why": "Raw salad vegetables go limp."
+    },
+    {
+     "id": "KMG-3.M4.Q6",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "KMG-3.M4.L2",
+     "safety": true,
+     "question": "How is a frozen stew thawed?",
+     "options": [
+      {
+       "key": "A",
+       "text": "on the counter overnight"
+      },
+      {
+       "key": "B",
+       "text": "in the fridge, or reheated from frozen"
+      },
+      {
+       "key": "C",
+       "text": "in warm water"
+      },
+      {
+       "key": "D",
+       "text": "in the sun"
+      }
+     ],
+     "answer": "B",
+     "why": "Never on the counter."
+    },
+    {
+     "id": "KMG-3.M4.Q7",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "KMG-3.M4.L2",
+     "safety": true,
+     "question": "At what temperature does the freezer run?",
+     "options": [
+      {
+       "key": "A",
+       "text": "−5 °C"
+      },
+      {
+       "key": "B",
+       "text": "−18 °C or colder"
+      },
+      {
+       "key": "C",
+       "text": "0 °C"
+      },
+      {
+       "key": "D",
+       "text": "−10 °C"
+      }
+     ],
+     "answer": "B",
+     "why": "Assessment §9."
+    },
+    {
+     "id": "KMG-3.M4.Q8",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "KMG-3.M4.L2",
+     "safety": false,
+     "question": "What prevents freezer burn?",
+     "options": [
+      {
+       "key": "A",
+       "text": "more ice"
+      },
+      {
+       "key": "B",
+       "text": "pressing the air out of bags and wrapping well"
+      },
+      {
+       "key": "C",
+       "text": "a warmer freezer"
+      },
+      {
+       "key": "D",
+       "text": "salt"
+      }
+     ],
+     "answer": "B",
+     "why": "Air dries the surface."
+    }
+   ]
+  },
+  {
+   "id": "KMG-3.M5",
+   "title": "House recipes",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** none for this module. Its judgment, reviewing what worked, is shown in the stage reflection of `KMG-3.M5.X1`."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "KMG-3.M5.L1",
+     "title": "Writing house recipes",
+     "prerequisites": [
+      "WRK-1.M4.L2"
+     ],
+     "competencies": [
+      {
+       "id": "RD-WRIT",
+       "level": 3
+      },
+      {
+       "id": "JD-REFL",
+       "level": 4
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** a dish the household loves is lost if only you can cook it, and only on a good day. Written well, it comes out the same every time, and someone else can cook it from the page."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** three dishes from S3 that the household wants again; the house-recipe template and checklist; the 1 g scale; the costing sheets (`KMG-3.M3`); a household member willing to cook; the journal."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*A house recipe:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**a title** and one line on what it is;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**the yield:** portions, or a batch size;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**ingredients by weight,** in the order of use;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**numbered steps with cues,** temperatures and times: \"until the onions are soft and golden, about 10 minutes\";"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**storage:** fridge days within §9, freezing;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**reheating notes:** until steaming hot throughout, once;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**a costing line** (`KMG-3.M3`)."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Cues, not just times.* A time depends on your pan and your stove; a cue doesn't. Give both: the cue to judge by, the time as a guide. Where a probe decides (a chicken, a minced filling), give the §9 figure."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Seasoning.* \"Season to taste\" helps nobody who doesn't know the dish. Give a starting amount by weight, and say what to taste for: \"6 g of salt; taste, and add more until the broth tastes full, not salty\"."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Testing it:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "Cook it again a week later from the page only. Note every place where you needed your memory."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "A household member cooks it from the page while you watch without helping. Write down every question they ask."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "Write the gaps into the next version."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Reviewing the course.* Which planning, buying and storage habits saved time and money; which didn't stick, and why. Look for a pattern across the logs (the prep day that always ran over; the item always thrown away), and set a practice plan for S4."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Write and repeat (75 min).** Three house recipes written; each cooked again from the page a week later and compared."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Someone else cooks (75 min).** A household member cooks one recipe from the page; you note every question they ask."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** a recipe another person can follow without asking; the repeat matches the first."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "The cook asks \"how much salt?\"",
+         "\"Season to taste\"",
+         "A starting weight and what to taste for"
+        ],
+        [
+         "Different every time",
+         "Cups and handfuls",
+         "Weights, from the scale"
+        ],
+        [
+         "A leftover kept too long",
+         "No storage notes",
+         "Fridge days, freezing, reheating on every recipe"
+        ],
+        [
+         "The cook stalls at a step",
+         "A time without a cue",
+         "Add the cue you judge by"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** every house recipe carries its §9 figures (core temperatures, fridge days, reheating once); allergens listed under the ingredients."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the three recipes, the side-by-side photos, the questions asked, and the revised versions."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "KMG-3.M5.X1",
+     "title": "Five house recipes, one cooked by someone else",
+     "description": "Write up five house recipes; another household member cooks one.",
+     "competencies": [
+      {
+       "id": "RD-WRIT",
+       "level": 3
+      },
+      {
+       "id": "JD-REFL",
+       "level": 4
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** write the household's best dishes so they can be repeated, and review the stage's management habits. Write five house recipes from dishes cooked in S3, with weights, cues, timings, storage and reheating notes and a costing line. Repeat three of them a week later from the page, to the same result (photographed). Have a household member cook one from the page. As the extension, write a stage reflection across at least ten journal entries of S3, naming a pattern and setting a practice plan for S4."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** the dishes' ingredients; the house-recipe template and checklist; the costing sheets; the journal; the scale; a household member."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Framework:** the house recipe."
+      },
+      {
+       "type": "table",
+       "header": [
+        "Part",
+        "What it is",
+        "Your decisions"
+       ],
+       "rows": [
+        [
+         "Title and line",
+         "What the dish is",
+         "—"
+        ],
+        [
+         "Yield",
+         "Portions or batch size",
+         "—"
+        ],
+        [
+         "Ingredients",
+         "By weight, in the order of use; allergens listed",
+         "—"
+        ],
+        [
+         "Steps",
+         "Numbered, with cues, temperatures and times",
+         "The cues you judge by"
+        ],
+        [
+         "Storage",
+         "Fridge days within §9; freezing",
+         "—"
+        ],
+        [
+         "Reheating",
+         "Until steaming hot throughout, once",
+         "—"
+        ],
+        [
+         "Costing",
+         "Per portion, from the sheet",
+         "—"
+        ],
+        [
+         "Test",
+         "Repeated from the page; cooked by someone else",
+         "Which recipe"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Procedure:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "Write the five recipes on the template; check them against the checklist."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "Repeat three of them a week later from the page; photograph both versions."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "Have one cooked by a household member; note the questions; revise."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "Write the stage reflection and the practice plan."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`RD-WRIT` level 3:** three recipes with weights, cues and timings, each repeated by the learner a week later to the same result (photographed side by side)."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`JD-REFL` level 4:** a stage reflection that finds a pattern across at least ten entries and sets a practice plan; S4's entries show whether it worked (the second half of the row, checked at `MS-S4`)."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "AI review reads the recipes against the checklist, the photos and the reflection: *competent* is recipes with weights, cues, storage and reheating, repeats that match, and a reflection that names a pattern and a plan; *not yet* is \"to taste\" without guidance, or a reflection without a pattern."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 3 h, plus the repeats."
+      }
+     ]
+    }
+   ],
+   "items": []
+  }
+ ]
+}

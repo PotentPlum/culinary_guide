@@ -1,0 +1,3261 @@
+{
+ "schemaVersion": 1,
+ "id": "BRD-3",
+ "introduction": [
+  {
+   "type": "paragraph",
+   "text": "**Before you start.** `BRD-2` baked lean and enriched yeast breads with commercial yeast, a first shaped loaf in a Dutch oven, and a bread log. This course adds what makes bread a lifelong craft: **time and culture**."
+  },
+  {
+   "type": "list",
+   "items": [
+    {
+     "level": 0,
+     "marker": "",
+     "text": "**preferments** (*poolish*, *biga*) for flavour and a flexible schedule, and wetter doughs;"
+    },
+    {
+     "level": 0,
+     "marker": "",
+     "text": "**a sourdough culture:** started, kept, read and used for a first sourdough loaf;"
+    },
+    {
+     "level": 0,
+     "marker": "",
+     "text": "**shaping and scoring** of high-hydration dough, for tension and a controlled opening (an \"ear\");"
+    },
+    {
+     "level": 0,
+     "marker": "",
+     "text": "**whole grain and rye,** which behave differently from white wheat;"
+    },
+    {
+     "level": 0,
+     "marker": "",
+     "text": "**a schedule around a working week,** and diagnosing loaves from the crumb."
+    }
+   ]
+  },
+  {
+   "type": "paragraph",
+   "text": "The method follows Hamelman's *Bread* [S13]: formulas in baker's percentages, dough temperatures logged, each loaf judged by its crumb. Flour from a Dutch mill (*molenmeel*, stone-ground wholemeal, rye) suits the course and is widely sold; Dutch *roggebrood* is the country's rye tradition."
+  },
+  {
+   "type": "paragraph",
+   "text": "Plan about eight weeks. The starter takes about two weeks to become reliable, and the last module is four weeks of baking for the household alongside other courses."
+  },
+  {
+   "type": "paragraph",
+   "text": "**Have ready:** the heavy lidded casserole (*braadpan*) as a Dutch oven; a proofing basket; a lame or a razor blade; a bench scraper; a 1-litre glass jar with a loose lid and a rubber band; a room thermometer; the instant-read thermometer for the dough; a loaf tin (a heavy one for rye); a dough container; the 1 g scale; dry oven gloves; rice flour for the basket; the bread log."
+  }
+ ],
+ "modules": [
+  {
+   "id": "BRD-3.M1",
+   "title": "Preferments and hydration",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** the 8 items of `BRD-3.M1` in the course file. Pass mark 80 %."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "BRD-3.M1.L1",
+     "title": "*Poolish* and *biga*",
+     "prerequisites": [
+      "BRD-2.M2.L2"
+     ],
+     "competencies": [
+      {
+       "id": "TS-BRD",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** a preferment costs fifteen minutes the evening before and gives a loaf more flavour, a more open crumb and a longer keeping time. It also splits the work over two days, which makes good bread fit a busy week."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** bread flour from a Dutch mill; water; salt; instant yeast; two bowls with covers; the 1 g scale and a 0.1 g scale for the yeast; the thermometer; the Dutch oven; the bread log."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*A preferment* is part of the flour and water, with a little yeast, mixed hours before the final dough:"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "***poolish*:** equal weights of flour and water (100 % hydration), a pinch of yeast, 12–16 hours at room temperature. It gives an extensible dough and a creamy, slightly nutty flavour;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "***biga*:** a stiff preferment, about 50–60 % hydration, more yeast-forward, for a stronger dough;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**ready at its peak:** domed, bubbly, and just beginning to recede at the centre."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Flavour.* The long, slow fermentation makes organic acids and aromatic compounds that a straight dough has no time to make. The bread also keeps longer."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Scheduling.* Make the preferment in the evening and mix the final dough the next morning. Reduce the yeast in the final dough, because the preferment already brings active yeast. The timing moves with the room's temperature."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Baker's percentages* (`BRD-2`). Count the preferment's flour and water in the totals, so you know the overall hydration. A worked example for one loaf, flour 100 %:"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Ingredient",
+        "Total",
+        "In the *poolish*",
+        "In the final dough"
+       ],
+       "rows": [
+        [
+         "Flour (100 %)",
+         "500 g",
+         "150 g",
+         "350 g"
+        ],
+        [
+         "Water (70 %)",
+         "350 g",
+         "150 g",
+         "200 g"
+        ],
+        [
+         "Salt (2 %)",
+         "10 g",
+         "—",
+         "10 g"
+        ],
+        [
+         "Instant yeast",
+         "about 2 g",
+         "0.1 g (a pinch)",
+         "2 g"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**The *poolish* (15 min in the evening).** Mixed, covered, left at room temperature; its peak photographed in the morning."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**The bread (2 h active over the day).** The final dough mixed from the *poolish*, fermented, shaped and baked; a straight dough of the same totals baked alongside for comparison."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "the *poolish* domed and bubbly at its peak;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "the *poolish* loaf more aromatic, with a more open crumb, than the straight dough."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "A collapsed *poolish* that smells of alcohol",
+         "Over-fermented",
+         "Less yeast, or a cooler spot; use it earlier"
+        ],
+        [
+         "A wetter or drier dough than planned",
+         "The preferment's flour and water not counted",
+         "Count them in the totals"
+        ],
+        [
+         "A dough that over-proofs",
+         "The same yeast as a straight dough",
+         "Reduce the final dough's yeast"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** none beyond the kitchen basics; the Dutch oven is handled as in `BRD-3.M2.L3`."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the formula with the preferment counted, the times and temperatures, and crumb photos of both loaves."
+      }
+     ]
+    },
+    {
+     "id": "BRD-3.M1.L2",
+     "title": "Hydration",
+     "prerequisites": [
+      "BAK-2.M1.L1"
+     ],
+     "competencies": [
+      {
+       "id": "TS-BRD",
+       "level": 3
+      },
+      {
+       "id": "RD-RATO",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** the open, glossy crumb of a good artisan loaf comes from water, and a wet dough is handled with technique rather than more flour. Learning that changes what you can bake."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** bread flour; water; salt; instant yeast; a dough container; wet hands; a bench scraper; the thermometer; the bread log."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Hydration* is water as a percentage of the flour's weight. More water gives a more open, irregular crumb and a thinner, crisper crust, but a stickier dough."
+      },
+      {
+       "type": "paragraph",
+       "text": "*By flour type.* Stronger white flour takes more water; wholemeal and rye absorb much more (bran and pentosans); a weak or old flour takes less. The same hydration feels different from one flour to the next, so you judge the feel as well as the number."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Handling wet dough (70–80 %):*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**wet hands and a bench scraper,** instead of extra flour;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**stretch-and-folds or coil folds** in the container instead of kneading: lift the dough from one side, fold it over, turn the container, repeat; three or four sets, 30 minutes apart;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**an autolyse:** the flour and water mixed and rested for 30–60 minutes before the salt and yeast, for extensibility;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**bassinage:** some of the water held back and added late, once the gluten has formed."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Dough temperature.* Aim for about 24–26 °C, set by the water's temperature, measured and logged: it sets the pace of the fermentation. Hamelman's method calculates the water temperature from the dough temperature you want and the temperatures of the room and the flour [S13]. In a cool Dutch kitchen in winter, that often means warm water."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Two hydrations (75 min).** The same formula at 68 and 76 % hydration, mixed with folds, logged and baked."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**A high-hydration loaf (75 min).** A 78 % dough handled with an autolyse and coil folds; baked; crumb photographed."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "a smooth, extensible dough after the folds;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "the dough temperature in range;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "a more open crumb at the higher hydration."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "A dry, tight dough and crumb",
+         "The bench floured heavily",
+         "Wet hands and a scraper instead"
+        ],
+        [
+         "A torn, sticky mess",
+         "A wet dough kneaded on the bench",
+         "Folds in the container"
+        ],
+        [
+         "A fermentation that runs fast or slow",
+         "Water at any temperature",
+         "Calculate the water temperature; log the dough's"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** none beyond the kitchen basics."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** both hydrations, the dough temperatures, the folds, and the crumb photos side by side."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "BRD-3.M1.X1",
+     "title": "A *poolish* loaf from baker's percentages",
+     "description": "A *poolish* loaf from baker's percentages.",
+     "competencies": [
+      {
+       "id": "TS-BRD",
+       "level": 3
+      },
+      {
+       "id": "RD-RATO",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** bake a *poolish* loaf from a formula sheet, and change its hydration on purpose. Write the formula from memory in baker's percentages, with the preferment counted in the totals, and weigh it. Log the dough temperature. Bake it a second time with the hydration changed on purpose, and record the effect in the crumb."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** bread flour from a Dutch mill; water; salt; a little yeast; the scales; the thermometer; the Dutch oven; the formula sheet; the bread log."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Framework:** the formula sheet."
+      },
+      {
+       "type": "table",
+       "header": [
+        "Part",
+        "What it is",
+        "Your decisions"
+       ],
+       "rows": [
+        [
+         "Totals",
+         "Flour 100 %, water, salt 2 %, yeast",
+         "The hydration"
+        ],
+        [
+         "*Poolish*",
+         "A share of the flour, at 100 % hydration, a pinch of yeast, 12–16 h",
+         "Its share"
+        ],
+        [
+         "Final dough",
+         "The rest of the flour and water, the salt, reduced yeast",
+         "—"
+        ],
+        [
+         "Dough temperature",
+         "About 24–26 °C, by the water's temperature",
+         "The water temperature"
+        ],
+        [
+         "Bulk and shape",
+         "Folds; shaped with tension; scored",
+         "Times, logged"
+        ],
+        [
+         "Bake",
+         "The Dutch oven, lid on, then off",
+         "—"
+        ],
+        [
+         "The change",
+         "A second bake at a different hydration",
+         "Up or down, and why"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Procedure:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "Write the formula and the overall hydration; weigh."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "Make the *poolish* and the loaf; log temperatures and times; bake; photograph the crumb."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "Bake again at a different hydration; compare."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`TS-BRD` level 3, in part:** a lean preferment loaf shaped with tension, scored, with good oven spring and the intended crumb, and a fermentation log with dough temperatures. The sourdough loaf of the row follows in `BRD-3.M2.X1`; the enriched loaf was baked in `BRD-2`."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`RD-RATO` level 3, further evidence:** a formula from memory in baker's percentages, weighed, one ratio (hydration) changed on purpose with the effect recorded."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "AI review reads the formula, the log and the crumbs: *competent* is a formula with the preferment counted, dough temperatures in range, and a crumb difference explained by the hydration; *not yet* is a formula looked up, or no dough temperature."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 2.5 h over two days per bake."
+      }
+     ]
+    }
+   ],
+   "items": [
+    {
+     "id": "BRD-3.M1.Q1",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "BRD-3.M1.L1",
+     "safety": false,
+     "question": "What is a *poolish*?",
+     "options": [
+      {
+       "key": "A",
+       "text": "a stiff dough"
+      },
+      {
+       "key": "B",
+       "text": "equal weights of flour and water with a pinch of yeast, fermented for hours"
+      },
+      {
+       "key": "C",
+       "text": "a sourdough starter"
+      },
+      {
+       "key": "D",
+       "text": "a glaze"
+      }
+     ],
+     "answer": "B",
+     "why": "A liquid preferment."
+    },
+    {
+     "id": "BRD-3.M1.Q2",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "BRD-3.M1.L1",
+     "safety": false,
+     "question": "Why does a preferment improve flavour?",
+     "options": [
+      {
+       "key": "A",
+       "text": "more salt"
+      },
+      {
+       "key": "B",
+       "text": "slow fermentation makes acids and aromatic compounds"
+      },
+      {
+       "key": "C",
+       "text": "more yeast"
+      },
+      {
+       "key": "D",
+       "text": "a hotter oven"
+      }
+     ],
+     "answer": "B",
+     "why": "Time builds flavour."
+    },
+    {
+     "id": "BRD-3.M1.Q3",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "BRD-3.M1.L1",
+     "safety": false,
+     "question": "When is a *poolish* ready?",
+     "options": [
+      {
+       "key": "A",
+       "text": "after 2 hours"
+      },
+      {
+       "key": "B",
+       "text": "domed and bubbly, just starting to recede"
+      },
+      {
+       "key": "C",
+       "text": "when it smells of alcohol"
+      },
+      {
+       "key": "D",
+       "text": "when it has collapsed"
+      }
+     ],
+     "answer": "B",
+     "why": "Its peak."
+    },
+    {
+     "id": "BRD-3.M1.Q4",
+     "type": "CALCULATION",
+     "lessonId": "BRD-3.M1.L2",
+     "safety": false,
+     "question": "A dough has 1,000 g flour and 750 g water. What is its hydration?",
+     "options": [],
+     "answer": "75 %",
+     "why": "750 ÷ 1,000 × 100."
+    },
+    {
+     "id": "BRD-3.M1.Q5",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "BRD-3.M1.L2",
+     "safety": false,
+     "question": "Which flour absorbs the most water?",
+     "options": [
+      {
+       "key": "A",
+       "text": "cake flour"
+      },
+      {
+       "key": "B",
+       "text": "wholemeal or rye"
+      },
+      {
+       "key": "C",
+       "text": "white bread flour"
+      },
+      {
+       "key": "D",
+       "text": "all the same"
+      }
+     ],
+     "answer": "B",
+     "why": "Bran and pentosans."
+    },
+    {
+     "id": "BRD-3.M1.Q6",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "BRD-3.M1.L2",
+     "safety": false,
+     "question": "How do you handle a 78 % dough?",
+     "options": [
+      {
+       "key": "A",
+       "text": "knead on a floured bench"
+      },
+      {
+       "key": "B",
+       "text": "wet hands, a scraper and folds in the bowl"
+      },
+      {
+       "key": "C",
+       "text": "add flour until it stops sticking"
+      },
+      {
+       "key": "D",
+       "text": "a rolling pin"
+      }
+     ],
+     "answer": "B",
+     "why": "Handling wet dough."
+    },
+    {
+     "id": "BRD-3.M1.Q7",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "BRD-3.M1.L2",
+     "safety": false,
+     "question": "What sets the pace of fermentation that the baker controls most directly?",
+     "options": [
+      {
+       "key": "A",
+       "text": "the bowl"
+      },
+      {
+       "key": "B",
+       "text": "the dough temperature, through the water temperature"
+      },
+      {
+       "key": "C",
+       "text": "the salt brand"
+      },
+      {
+       "key": "D",
+       "text": "the oven"
+      }
+     ],
+     "answer": "B",
+     "why": "Dough temperature."
+    },
+    {
+     "id": "BRD-3.M1.Q8",
+     "type": "CALCULATION",
+     "lessonId": "BRD-3.M1.L1",
+     "safety": false,
+     "question": "A formula uses a *poolish* of 300 g flour and 300 g water, plus 700 g flour and 400 g water in the final dough. What is the overall hydration?",
+     "options": [],
+     "answer": "70 % (700 g water ÷ 1,000 g flour)",
+     "why": "The preferment counts in the totals."
+    }
+   ]
+  },
+  {
+   "id": "BRD-3.M2",
+   "title": "Sourdough",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** the 8 items of `BRD-3.M2` in the course file, 2 of them safety items. Pass mark 80 %, with every safety item correct."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "BRD-3.M2.L1",
+     "title": "Starting and keeping a starter",
+     "prerequisites": [
+      "BRD-2.M1.L1"
+     ],
+     "competencies": [
+      {
+       "id": "SC-MICR",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** a starter is a living culture you keep for years. Starting one takes two weeks of a few minutes a day; keeping it takes a feed a week."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** wholemeal wheat or rye flour (stone-ground, from a Dutch mill if possible); water; a 1-litre glass jar with a loose lid; a rubber band; a spoon; the 1 g scale; a room thermometer; the starter log."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*What lives in a starter.* Wild yeasts, which raise the bread, and lactic acid bacteria, which sour it and make flavour, in a stable community. Their acid lowers the pH, which keeps unwanted organisms out (`SCI-2.M6`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Starting one.* Mix 50 g wholemeal or rye flour with 50 g water in the jar. Each day, discard all but 50 g and feed it with 50 g flour and 50 g water. After a few days of erratic activity, often a burst of bubbles and then nothing, it settles into a predictable rise and fall. It is usually reliable within about two weeks."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Feeding ratios.* Starter, flour and water by weight: for example 1 : 1 : 1, or 1 : 5 : 5 for a slower rise. A stiffer or colder starter is more sour and slower."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Temperature.* Warm, about 24–26 °C, for activity. Between bakes, keep it in the fridge and feed it once a week."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Storage and hygiene:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "a clean jar with a loose lid, never sealed: the gas must escape;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "the level marked with the rubber band after each feed, so you can see the rise;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "the discard used in pancakes or crackers;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "a pink or orange tint, or fuzzy mould, means the starter is thrown away and started again."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Start it (20 min, then daily for two weeks).** The starter mixed and fed; the log of `BRD-3.M2.X2` begun."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "a predictable doubling within 4–8 hours of feeding;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "a pleasant sour, yoghurty smell."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "\"It's dead\" on day 3",
+         "The early burst has passed",
+         "Keep feeding; it settles after a few days"
+        ],
+        [
+         "A cracked jar or a burst lid",
+         "A sealed jar",
+         "A loose lid"
+        ],
+        [
+         "A slow starter",
+         "Chlorinated or very cold water, a cold room",
+         "Water at room temperature; a warmer spot"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** a pink or orange tint, or fuzzy mould, means the whole starter is thrown away, the jar washed, and a new one started; it is never scraped and kept."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the daily log: feed ratio, room temperature, the rise against the band, and the smell."
+      }
+     ]
+    },
+    {
+     "id": "BRD-3.M2.L2",
+     "title": "Reading the starter",
+     "prerequisites": [
+      "BRD-3.M2.L1"
+     ],
+     "competencies": [
+      {
+       "id": "JD-CUES",
+       "level": 4
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** a loaf made with a starter at its peak rises; one made with a hungry starter doesn't. Reading the starter by eye and nose, then checking, is the judgment behind every sourdough bake."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** your starter, freshly fed; the jar with its rubber band; a glass of water; a spoon; the phone for photos; the starter log."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*The cues of a ready starter:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "at or just after its peak: domed, risen to about double, full of bubbles through the jar;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "a pleasant sour, fruity smell; a smell of nail varnish means it is hungry;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "a spoonful floats in water: a rough guide, not always reliable for wholemeal or rye starters;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "a web of gluten when you pull a spoonful away."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Hungry or over-ripe.* Collapsed, a liquid (*hooch*) on top, an acetone smell: feed it again and wait for the next peak before using it."
+      },
+      {
+       "type": "paragraph",
+       "text": "*The rise and fall.* After a feed, the starter climbs slowly, then quickly, peaks, and falls back. The peak moves with temperature and ratio: a warm kitchen and a 1 : 1 : 1 feed bring it in a few hours; a cold kitchen and a 1 : 5 : 5 feed can take most of a day. That is how you plan a bake around it."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Cue, then check.* Predict \"ready\" from the look and the smell, write it down, then check with the band (the rise) and the float test. Log both. Over two weeks your predictions should close in on the observed peak."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Read it (60 min over a day).** The starter fed, then photographed and smelled every two hours; the peak predicted, then checked; logged."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** predictions within an hour of the observed peak."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "A flat, dense loaf",
+         "Starter used at the bottom of its curve",
+         "Use it at or just after its peak"
+        ],
+        [
+         "A misleading \"ready\"",
+         "Only the float test trusted",
+         "Combine rise, smell, bubbles and float"
+        ],
+        [
+         "Missed peaks",
+         "No band on the jar",
+         "Mark the level after every feed"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** a starter that shows pink, orange or fuzzy mould is thrown away, not read (`BRD-3.M2.L1`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the photos every two hours, the predicted and observed peaks, and the gap between them."
+      }
+     ]
+    },
+    {
+     "id": "BRD-3.M2.L3",
+     "title": "A first sourdough loaf",
+     "prerequisites": [
+      "BRD-3.M2.L2"
+     ],
+     "competencies": [
+      {
+       "id": "TS-BRD",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** a sourdough loaf brings the course together: a live culture, a wet dough, judgment of fermentation by the dough, and an overnight retard that fits the bake to your day."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** the ripe starter; bread flour and some wholemeal; water; salt; a dough container; a proofing basket dusted with rice flour; a tea towel; a lame; the Dutch oven; baking paper; dry oven gloves; the thermometer; the bread log."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*The stages:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**levain:** some starter fed and left to peak;"
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**mix:** flour and water (an autolyse), then the levain and the salt;"
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "**bulk fermentation:** with folds, until the dough has grown by roughly half, is domed and jiggly, with bubbles at the sides. The time depends on the dough temperature: often 4–6 hours at 24–26 °C;"
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "**pre-shape and shape** with tension (`BRD-3.M3.L1`);"
+        },
+        {
+         "level": 0,
+         "marker": "5.",
+         "text": "**retard:** the shaped loaf in its basket in the fridge overnight, for flavour, for the schedule, and for easier scoring;"
+        },
+        {
+         "level": 0,
+         "marker": "6.",
+         "text": "**bake:** cold from the fridge in a preheated Dutch oven, lid on, then off."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Judging bulk by the dough, not the clock.* Volume (a straight-sided container with a mark helps), a domed surface, bubbles at the sides and on top, and a jiggle when you shake the container. A recipe's time is a guide for its temperature; your kitchen decides."
+      },
+      {
+       "type": "paragraph",
+       "text": "*The Dutch oven.* Preheat it with the lid at about 250 °C. The lid traps the loaf's steam for the first part of the bake, so the crust stays soft and the loaf can spring and open; the lid comes off for the crust to colour."
+      },
+      {
+       "type": "paragraph",
+       "text": "*After the bake.* Cool the loaf on a rack for at least an hour before slicing: the crumb is still setting."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Mix and bulk (90 min active over a day).** Levain, mix, folds, bulk judged by the dough; shaped and retarded."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Bake (60 min the next morning).** Scored and baked; the crumb photographed after cooling."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "a domed, jiggly dough at the end of bulk;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "a tall loaf with an open, even crumb."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "A dense or over-proofed loaf",
+         "Bulk ended by the clock",
+         "Judge by volume, dome, bubbles and jiggle"
+        ],
+        [
+         "A tight crumb with a few large holes",
+         "Under-fermented",
+         "Longer bulk, or a warmer dough"
+        ],
+        [
+         "A gummy crumb",
+         "Sliced hot",
+         "Cool it for at least an hour"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** the Dutch oven at about 250 °C: dry oven gloves on both hands, the lid set down on a heatproof surface, the loaf lowered in on baking paper, never by hand (`BRD-2.M3`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the fermentation log (dough temperature, folds, bulk time and its cues), and the crumb photo."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "BRD-3.M2.X1",
+     "title": "A first sourdough loaf, baked twice",
+     "description": "A first sourdough loaf, baked twice.",
+     "competencies": [
+      {
+       "id": "TS-BRD",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** bake a sourdough loaf by the guided recipe twice, on separate days, improving the second from the first. Keep a fermentation log for each (dough temperatures, bulk judged by the dough), shape with tension, score, and retard overnight. Photograph the crumb for AI review, and correct the second bake from what the first showed."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** for one loaf: 100 g ripe levain (at 100 % hydration); 450 g bread flour and 50 g wholemeal from a Dutch mill; 360 g water at the calculated temperature; 10 g salt; the container, basket, lame, Dutch oven and gloves; the thermometer; the bread log."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Recipe:** a first sourdough (overall hydration about 75 %)."
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Levain:** feed the starter the evening before or in the morning; use it at its peak."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Autolyse:** mix the flours with 340 g of the water; rest 30–60 minutes."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "**Mix:** add the levain, then the salt with the last 20 g of water; squeeze it through until even. Log the dough temperature (aim for 24–26 °C)."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "**Bulk:** four sets of coil folds, 30 minutes apart, then left until the dough has grown by about half, domed and jiggly (often 4–6 hours at 24–26 °C)."
+        },
+        {
+         "level": 0,
+         "marker": "5.",
+         "text": "**Shape:** pre-shape, rest 20–30 minutes, shape into a *boule* or *bâtard* with tension; into the floured basket."
+        },
+        {
+         "level": 0,
+         "marker": "6.",
+         "text": "**Retard:** covered, in the fridge overnight."
+        },
+        {
+         "level": 0,
+         "marker": "7.",
+         "text": "**Bake:** the Dutch oven preheated at about 250 °C; the loaf turned onto baking paper, scored, lowered in; lid on for 20 minutes, then off until deep brown, about 20–25 minutes more."
+        },
+        {
+         "level": 0,
+         "marker": "8.",
+         "text": "**Cool** at least an hour; slice; photograph the crumb; write what to change next time."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:** the sourdough part of `TS-BRD` level 3: shaped with tension, scored, good oven spring, an open crumb as intended, a fermentation log with dough temperatures. With `BRD-3.M1.X1` and the enriched loaf of `BRD-2`, the row is complete."
+      },
+      {
+       "type": "paragraph",
+       "text": "AI review reads the crumbs and the logs: *competent* is a tall loaf with an open, even crumb, a bulk ended by its cues, and a second bake that shows the planned correction; *not yet* is a tight or gummy crumb, or a log without dough temperatures."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 2.5 h active per bake, over two days."
+      }
+     ]
+    },
+    {
+     "id": "BRD-3.M2.X2",
+     "title": "The starter log over two weeks",
+     "description": "The starter log over two weeks.",
+     "competencies": [
+      {
+       "id": "SC-MICR",
+       "level": 3
+      },
+      {
+       "id": "JD-CUES",
+       "level": 4
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** keep a starter for two weeks and learn to read it. Keep a daily log: the feed ratio, the room temperature, the rise (band marks), the smell; and from the second week, your predicted peak against the observed one. Then explain in writing what keeps the starter healthy and safe."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** wholemeal or rye flour; water; the jar; a rubber band; a room thermometer; the scale; the starter log."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Recipe:** the starter routine."
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Feed** daily: keep 50 g, add 50 g flour and 50 g water (1 : 1 : 1); stir; mark the level with the band."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Log** the time, the room temperature, the ratio, and the smell."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "**Watch** the rise: note the height against the band at a few points through the day."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "**From day 8,** write the predicted peak time after each feed, then the observed one."
+        },
+        {
+         "level": 0,
+         "marker": "5.",
+         "text": "**Discard** anything pink, orange or mouldy, and start again; log why."
+        },
+        {
+         "level": 0,
+         "marker": "6.",
+         "text": "**Explain** in writing the starter's hurdles: the acid, the established culture, and cleanliness."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`JD-CUES` level 4, further evidence:** cue-then-check entries in an unfamiliar situation (a new culture), at least 8 of 10 within an hour of the observed peak."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`SC-MICR` level 3, further evidence:** the starter's hurdles explained in writing; the items at 80 %. The row was completed with your own preserves in `PRS-3.M1.X1`."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "AI review reads the log and the explanation: *competent* is a complete daily log, 8 of 10 predictions within an hour, and hurdles explained (acid, culture, hygiene); *not yet* is gaps in the log, or predictions written after the check."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 10 minutes a day for two weeks."
+      }
+     ]
+    }
+   ],
+   "items": [
+    {
+     "id": "BRD-3.M2.Q1",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "BRD-3.M2.L1",
+     "safety": false,
+     "question": "What raises a sourdough loaf?",
+     "options": [
+      {
+       "key": "A",
+       "text": "baking soda"
+      },
+      {
+       "key": "B",
+       "text": "wild yeasts in the starter"
+      },
+      {
+       "key": "C",
+       "text": "lactic acid bacteria only"
+      },
+      {
+       "key": "D",
+       "text": "eggs"
+      }
+     ],
+     "answer": "B",
+     "why": "The yeasts raise; the bacteria sour."
+    },
+    {
+     "id": "BRD-3.M2.Q2",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "BRD-3.M2.L1",
+     "safety": false,
+     "question": "What keeps unwanted organisms out of a healthy starter?",
+     "options": [
+      {
+       "key": "A",
+       "text": "the lid"
+      },
+      {
+       "key": "B",
+       "text": "the acid of the lactic acid bacteria and the established culture"
+      },
+      {
+       "key": "C",
+       "text": "sugar"
+      },
+      {
+       "key": "D",
+       "text": "the fridge only"
+      }
+     ],
+     "answer": "B",
+     "why": "Low pH."
+    },
+    {
+     "id": "BRD-3.M2.Q3",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "BRD-3.M2.L1",
+     "safety": true,
+     "question": "Your starter has fuzzy mould and a pink tint. What do you do?",
+     "options": [
+      {
+       "key": "A",
+       "text": "scrape it off"
+      },
+      {
+       "key": "B",
+       "text": "throw it away and start again"
+      },
+      {
+       "key": "C",
+       "text": "feed it more"
+      },
+      {
+       "key": "D",
+       "text": "use it in bread"
+      }
+     ],
+     "answer": "B",
+     "why": "Discard on mould or colour."
+    },
+    {
+     "id": "BRD-3.M2.Q4",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "BRD-3.M2.L1",
+     "safety": false,
+     "question": "A feed of 1:5:5 compared with 1:1:1 will:",
+     "options": [
+      {
+       "key": "A",
+       "text": "rise faster"
+      },
+      {
+       "key": "B",
+       "text": "rise more slowly"
+      },
+      {
+       "key": "C",
+       "text": "be the same"
+      },
+      {
+       "key": "D",
+       "text": "not rise"
+      }
+     ],
+     "answer": "B",
+     "why": "More food per culture, slower peak."
+    },
+    {
+     "id": "BRD-3.M2.Q5",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "BRD-3.M2.L2",
+     "safety": false,
+     "question": "Your starter smells of nail varnish and has liquid on top. What does it mean?",
+     "options": [
+      {
+       "key": "A",
+       "text": "it is ready"
+      },
+      {
+       "key": "B",
+       "text": "it is hungry: feed it again before use"
+      },
+      {
+       "key": "C",
+       "text": "it is spoiled"
+      },
+      {
+       "key": "D",
+       "text": "it needs salt"
+      }
+     ],
+     "answer": "B",
+     "why": "Over-ripe."
+    },
+    {
+     "id": "BRD-3.M2.Q6",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "BRD-3.M2.L2",
+     "safety": false,
+     "question": "Which is the best sign that the starter is ready?",
+     "options": [
+      {
+       "key": "A",
+       "text": "the clock"
+      },
+      {
+       "key": "B",
+       "text": "domed, about doubled, bubbly, a pleasant sour smell"
+      },
+      {
+       "key": "C",
+       "text": "liquid on top"
+      },
+      {
+       "key": "D",
+       "text": "it has sunk"
+      }
+     ],
+     "answer": "B",
+     "why": "[J] reading the starter."
+    },
+    {
+     "id": "BRD-3.M2.Q7",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "BRD-3.M2.L3",
+     "safety": false,
+     "question": "How do you know bulk fermentation is done?",
+     "options": [
+      {
+       "key": "A",
+       "text": "after exactly 4 hours"
+      },
+      {
+       "key": "B",
+       "text": "the dough has grown by roughly half, is domed, jiggly, with bubbles at the sides"
+      },
+      {
+       "key": "C",
+       "text": "it doubles three times"
+      },
+      {
+       "key": "D",
+       "text": "it smells of alcohol"
+      }
+     ],
+     "answer": "B",
+     "why": "Judge by the dough."
+    },
+    {
+     "id": "BRD-3.M2.Q8",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "BRD-3.M2.L3",
+     "safety": true,
+     "question": "How is a loaf put into a preheated Dutch oven?",
+     "options": [
+      {
+       "key": "A",
+       "text": "a damp tea towel as a glove"
+      },
+      {
+       "key": "B",
+       "text": "dry oven gloves on both hands, lowered in on baking paper"
+      },
+      {
+       "key": "C",
+       "text": "bare hands quickly"
+      },
+      {
+       "key": "D",
+       "text": "dropped from a height"
+      }
+     ],
+     "answer": "B",
+     "why": "The pot is very hot (`BRD-2.M3`)."
+    }
+   ]
+  },
+  {
+   "id": "BRD-3.M3",
+   "title": "Shaping and scoring",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** the 8 items of `BRD-3.M3` in the course file. Pass mark 80 %."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "BRD-3.M3.L1",
+     "title": "Advanced shaping",
+     "prerequisites": [
+      "BRD-2.M2.L3"
+     ],
+     "competencies": [
+      {
+       "id": "TS-BRD",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** a wet dough only becomes a tall loaf if it is shaped with tension. Shaping is a movement of the hands that improves with every bake, so this lesson is about repetition."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** a batch of dough (the *poolish* or sourdough formula), enough for three loaves, or three single batches over the week; a bench scraper; a little flour; proofing baskets or bowls lined with a floured tea towel; rice flour; the phone for filming."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Tension.* A tight skin on the surface of the loaf holds its shape, directs the oven spring upwards, and helps the scoring open. Without it, the loaf spreads."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Pre-shape and bench rest.* Divide the dough and round each piece loosely with the scraper. Rest it, uncovered or lightly covered, for 20–30 minutes, so the gluten relaxes and the final shape doesn't tear."
+      },
+      {
+       "type": "paragraph",
+       "text": "*The boule:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "turn the dough seam up on a lightly floured patch;"
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "fold the edges in to the centre, all the way round;"
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "flip it seam down onto an unfloured patch of bench;"
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "drag it towards you with cupped hands, turning it a little each time, so the surface tightens against the bench."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*The bâtard:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "turn the dough seam up and pat it into a rough rectangle;"
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "fold the top third down and the bottom third up, like a letter;"
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "roll it from the top, pressing in with the thumbs at each turn;"
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "seal the seam with the heel of the hand; even, with tapered or blunt ends."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*High hydration.* A lightly floured surface for the first fold and none for the tightening; the bench scraper as a second hand; quick, confident movements. A well-floured basket (rice flour sticks least), the loaf in seam up."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Checking tension.* Poke the shaped loaf gently: it should spring back slowly, and the surface should look taut and smooth, without tears."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "***Boules* (45 min).** Three pre-shaped and shaped; the tension checked by a poke and photographed."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "***Bâtards* (45 min).** Three shaped; filmed for AI review."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "**Wet dough (45 min).** A 78 % dough shaped into both forms; compared."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "a taut, smooth surface;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "the loaf holds its shape when turned out;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "a sealed seam."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "A torn surface",
+         "Over-tightened",
+         "Stop when it is taut; rest more before shaping"
+        ],
+        [
+         "The dough slides instead of tightening",
+         "Too much flour on the bench",
+         "An unfloured patch for the drag"
+        ],
+        [
+         "A shape that springs back and tears",
+         "No bench rest",
+         "Rest 20–30 minutes after pre-shaping"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** none beyond the kitchen basics."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the poke photos, the shaping video, and one thing to change next time."
+      }
+     ]
+    },
+    {
+     "id": "BRD-3.M3.L2",
+     "title": "Scoring",
+     "prerequisites": [
+      "BRD-2.M3.L2"
+     ],
+     "competencies": [
+      {
+       "id": "TS-BRD",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** a loaf will burst somewhere in the oven; scoring decides where. A confident cut at the right angle gives the \"ear\" that marks a well-made loaf."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** three shaped *bâtards* and three *boules* over the module (cold from a retard); a lame or a razor blade; baking paper; the Dutch oven; dry oven gloves; the phone for photos."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Why scoring directs the spring.* The loaf expands fast in the first minutes of the bake. A cut gives it a planned place to open, instead of bursting at a weak point."
+      },
+      {
+       "type": "paragraph",
+       "text": "*The ear.* A single long cut along a *bâtard*, slightly off the centre line:"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "the blade held at a shallow angle, about 30° to the surface;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "about 5–10 mm deep;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "in one confident stroke, from end to end."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "The flap lifts in the oven and bakes into a crisp ridge."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Patterns:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "a cross or a square on a *boule*;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "parallel cuts;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "decorative shallow cuts, plus one deep expansion cut that does the work."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Conditions.* A cold, retarded loaf is firmer and easier to score. Steam, here the Dutch oven's lid, keeps the surface soft for the first minutes, so the cut can open before the crust sets."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Holding the lame.* Lightly, between thumb and fingers, the arm moving rather than the wrist; the other hand steadying the baking paper, not the loaf."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Single cut (30 min).** The ear cut on three *bâtards* at different angles; the openings compared."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Patterns (30 min).** Three *boules* scored with different patterns."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "**Combined (30 min).** The best shape and cut on one bake, photographed."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "a clean cut in one stroke;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "an even, raised ear;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "the bloom where it was planned."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "A ragged, torn cut",
+         "The blade sawed",
+         "One stroke, a sharp blade"
+        ],
+        [
+         "No ear",
+         "Cut straight down",
+         "A shallow angle, about 30°"
+        ],
+        [
+         "A cut that closes up",
+         "Too shallow on a warm, slack loaf",
+         "Score cold from the fridge; cut 5–10 mm deep"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** a razor blade is mounted on its lame or holder and stored covered; the hot Dutch oven is handled with dry gloves on both hands (`BRD-3.M2.L3`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** photos of each opening, labelled with the angle and pattern."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "BRD-3.M3.X1",
+     "title": "Shaping and scoring across four bakes",
+     "description": "Shaping and scoring practice across four bakes; photos of each.",
+     "competencies": [
+      {
+       "id": "TS-BRD",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** build shaping and scoring into a reliable skill through repetition. Over four bakes, film or photograph each loaf's shaping and photograph its opening for AI review of the shape and the opening. After each bake, note one improvement for the next."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** flour; the starter or yeast; salt; a lame or blade; a proofing basket; the Dutch oven; the phone; the bread log."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Recipe:** the sourdough or *poolish* recipe of the course, each bake."
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Pre-shape** and rest 20–30 minutes."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Shape** a *boule* or a *bâtard* with tension; film it."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "**Proof or retard** in the basket."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "**Score** cold: one ear cut on a *bâtard*, or a pattern on a *boule*; photograph the cut."
+        },
+        {
+         "level": 0,
+         "marker": "5.",
+         "text": "**Bake** in the Dutch oven, lid on, then off."
+        },
+        {
+         "level": 0,
+         "marker": "6.",
+         "text": "**Photograph** the opening and the crumb."
+        },
+        {
+         "level": 0,
+         "marker": "7.",
+         "text": "**Note** one improvement for the next bake; apply it."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:** further evidence for `TS-BRD` level 3: shaped with tension and scored for a controlled opening on four bakes, with the improvements logged."
+      },
+      {
+       "type": "paragraph",
+       "text": "AI review watches the shaping and reads the photos: *competent* is a taut surface without tears, a clean single cut, and an opening that grows more even across the four bakes; *not yet* is a loaf that spreads, or a burst at the side."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 1 h of shaping and scoring per bake, within the bakes of the course."
+      }
+     ]
+    }
+   ],
+   "items": [
+    {
+     "id": "BRD-3.M3.Q1",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "BRD-3.M3.L2",
+     "safety": false,
+     "question": "Why is a loaf scored?",
+     "options": [
+      {
+       "key": "A",
+       "text": "decoration only"
+      },
+      {
+       "key": "B",
+       "text": "to give the expansion a planned place to open"
+      },
+      {
+       "key": "C",
+       "text": "to let air out"
+      },
+      {
+       "key": "D",
+       "text": "to check doneness"
+      }
+     ],
+     "answer": "B",
+     "why": "Scoring directs the spring."
+    },
+    {
+     "id": "BRD-3.M3.Q2",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "BRD-3.M3.L2",
+     "safety": false,
+     "question": "How is the blade held for an ear?",
+     "options": [
+      {
+       "key": "A",
+       "text": "straight down"
+      },
+      {
+       "key": "B",
+       "text": "at a shallow angle, about 30° to the surface"
+      },
+      {
+       "key": "C",
+       "text": "flat"
+      },
+      {
+       "key": "D",
+       "text": "at 90° deep"
+      }
+     ],
+     "answer": "B",
+     "why": "The ear."
+    },
+    {
+     "id": "BRD-3.M3.Q3",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "BRD-3.M3.L2",
+     "safety": false,
+     "question": "Why is a retarded, cold loaf easier to score?",
+     "options": [
+      {
+       "key": "A",
+       "text": "it is drier"
+      },
+      {
+       "key": "B",
+       "text": "it is firmer, so the blade cuts cleanly"
+      },
+      {
+       "key": "C",
+       "text": "it rises less"
+      },
+      {
+       "key": "D",
+       "text": "it is smaller"
+      }
+     ],
+     "answer": "B",
+     "why": "Conditions for scoring."
+    },
+    {
+     "id": "BRD-3.M3.Q4",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "BRD-3.M3.L2",
+     "safety": false,
+     "question": "Your loaf burst on its side. Why?",
+     "options": [
+      {
+       "key": "A",
+       "text": "too much salt"
+      },
+      {
+       "key": "B",
+       "text": "the score was too shallow or missing, so it opened at a weak point"
+      },
+      {
+       "key": "C",
+       "text": "too hot an oven"
+      },
+      {
+       "key": "D",
+       "text": "too much flour"
+      }
+     ],
+     "answer": "B",
+     "why": "Plan the opening."
+    },
+    {
+     "id": "BRD-3.M3.Q5",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "BRD-3.M3.L2",
+     "safety": false,
+     "question": "What role does steam play in the first minutes?",
+     "options": [
+      {
+       "key": "A",
+       "text": "browning"
+      },
+      {
+       "key": "B",
+       "text": "it keeps the surface soft so the score can open"
+      },
+      {
+       "key": "C",
+       "text": "it cools the bread"
+      },
+      {
+       "key": "D",
+       "text": "none"
+      }
+     ],
+     "answer": "B",
+     "why": "Steam and spring."
+    },
+    {
+     "id": "BRD-3.M3.Q6",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "BRD-3.M3.L1",
+     "safety": false,
+     "question": "Why does a loaf need surface tension?",
+     "options": [
+      {
+       "key": "A",
+       "text": "for colour"
+      },
+      {
+       "key": "B",
+       "text": "to hold its shape and direct the spring upwards"
+      },
+      {
+       "key": "C",
+       "text": "to rise faster"
+      },
+      {
+       "key": "D",
+       "text": "to need less flour"
+      }
+     ],
+     "answer": "B",
+     "why": "Tension."
+    },
+    {
+     "id": "BRD-3.M3.Q7",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "BRD-3.M3.L1",
+     "safety": false,
+     "question": "Your dough slides on the bench instead of tightening. Why?",
+     "options": [
+      {
+       "key": "A",
+       "text": "too wet"
+      },
+      {
+       "key": "B",
+       "text": "too much flour on the bench"
+      },
+      {
+       "key": "C",
+       "text": "too cold"
+      },
+      {
+       "key": "D",
+       "text": "too much salt"
+      }
+     ],
+     "answer": "B",
+     "why": "A little friction is needed."
+    },
+    {
+     "id": "BRD-3.M3.Q8",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "BRD-3.M3.L1",
+     "safety": false,
+     "question": "Which flour stops a loaf sticking to the basket best?",
+     "options": [
+      {
+       "key": "A",
+       "text": "bread flour"
+      },
+      {
+       "key": "B",
+       "text": "rice flour"
+      },
+      {
+       "key": "C",
+       "text": "cornflour"
+      },
+      {
+       "key": "D",
+       "text": "none"
+      }
+     ],
+     "answer": "B",
+     "why": "Rice flour sticks least."
+    }
+   ]
+  },
+  {
+   "id": "BRD-3.M4",
+   "title": "Whole grain and rye",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** the 8 items of `BRD-3.M4` in the course file. Pass mark 80 %."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "BRD-3.M4.L1",
+     "title": "Whole wheat",
+     "prerequisites": [
+      "SCI-2.M3.L2"
+     ],
+     "competencies": [
+      {
+       "id": "SC-STRC",
+       "level": 4
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** wholemeal bread tastes of the grain, but it doesn't behave like white bread. Treated on its own terms, with more water and gentler handling, it is moist and well risen rather than heavy."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** fresh stone-ground wholemeal wheat flour from a Dutch mill; water; salt; levain or a little yeast; a container; a loaf tin or the Dutch oven; the thermometer; the bread log."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Bran and water.* The bran and germ absorb much more water than white flour, and the bran's sharp edges cut gluten strands. So a wholemeal dough needs:"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**more water:** often 80 % or more, where white bread takes 65–75 %;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**a longer autolyse,** or a soaker (the flour and water mixed hours ahead), so the bran softens;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**gentle handling:** folds rather than long kneading."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Flavour.* Nutty and fuller, and it pairs well with a preferment or sourdough. The germ's oils make the flour go stale and rancid faster, so buy it fresh, in small amounts, and keep it cool and airtight. Smell it before use: rancid flour smells bitter, like old nuts or paint."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Expectations.* A denser, less open crumb than white bread. Good wholemeal bread is moist and well risen, not heavy or crumbly."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Blends.* A share of wholemeal, 20–50 %, in a white loaf is a step up, and a good weekday bread. Raise the water with the share of wholemeal, and judge the dough by its feel: it should be soft and slightly sticky, never stiff."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Fermentation.* Bran brings nutrients that speed the yeast and the bacteria, so a wholemeal dough often ferments faster than a white one at the same temperature. Watch the dough, not the clock."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**A wholemeal loaf (75 min active, 1 day in total).** 100 % wholemeal with a long autolyse at a higher hydration; baked; the crumb photographed."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "a moist, risen crumb;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "not crumbly, not gummy."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "A dry, dense loaf",
+         "White-bread hydration",
+         "More water; a longer autolyse"
+        ],
+        [
+         "A tight, tough loaf",
+         "Over-kneaded",
+         "Folds, not long kneading"
+        ],
+        [
+         "A bitter taste",
+         "Rancid flour from the back of the cupboard",
+         "Buy fresh; store cool; smell before use"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** none beyond the kitchen basics."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the hydration, the autolyse time, and the crumb photo."
+      }
+     ]
+    },
+    {
+     "id": "BRD-3.M4.L2",
+     "title": "Rye",
+     "prerequisites": [
+      "BRD-3.M2.L3"
+     ],
+     "competencies": [
+      {
+       "id": "TS-BRD",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** rye is the bread of the Dutch and northern European tradition, and it follows different rules from wheat. Once you work with them, a dense, moist, keeping rye loaf is one of the easiest breads to bake well."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** rye flour (wholemeal rye, *roggemeel*); a rye starter (your starter fed with rye); water; salt; seeds if you like (sunflower, linseed); a heavy loaf tin, greased; a wet spatula; the bread log."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Pentosans and acidity.* Rye has little gluten-forming protein. Its structure comes from pentosans, gums that hold water and make a sticky paste. Rye flour is also rich in enzymes that break down starch, so without acid the crumb turns gummy. A sourdough's acidity tames them, which is why rye breads are traditionally sourdough breads."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Handling.* A paste rather than a dough: mixed, not kneaded; shaped with wet hands or simply spread into a tin with a wet spatula; scored little or not at all. Don't look for gluten development: there won't be any."
+      },
+      {
+       "type": "paragraph",
+       "text": "*A starting formula.* Rye flour 100 %, with about 40 % of it pre-fermented as a rye levain; water about 80 %; salt 2 %; seeds as you like. Proof in the tin until the surface shows small cracks."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Baking and resting.* Baked long, and often lower than a wheat loaf. Rest it, wrapped, for a day before slicing, so the crumb sets. Cut too soon, it is sticky inside."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Traditions.* Dutch *roggebrood*: dark, dense and long-baked. German and Scandinavian ryes, often with seeds. A *pain de seigle*-style mixed loaf of rye and wheat is an easier start."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**A rye loaf (75 min active, 2 days in total).** A sourdough rye in a tin, baked, rested a day, sliced and photographed."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "a moist but set crumb after a day;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "no gummy streak at the base."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "A dense, tough loaf",
+         "Kneaded like wheat",
+         "Mix to a paste; don't knead"
+        ],
+        [
+         "A sticky crumb",
+         "Sliced warm",
+         "Rest it wrapped for a day"
+        ],
+        [
+         "A gummy rye",
+         "Yeasted, without acid",
+         "Use a rye sourdough"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** a long bake in a heavy tin: dry gloves on both hands, and the tin cooled on a rack before the loaf is turned out."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the formula, the proof cues, the bake, and the crumb photo after a day."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "BRD-3.M4.X1",
+     "title": "A rye or whole wheat loaf from a formula",
+     "description": "A rye or whole wheat loaf from a formula.",
+     "competencies": [
+      {
+       "id": "TS-BRD",
+       "level": 3
+      },
+      {
+       "id": "SC-STRC",
+       "level": 4
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** bake a whole-grain loaf from a formula, and diagnose its texture from the science. Bake a rye or wholemeal loaf from a formula in baker's percentages, with a fermentation log, and photograph the crumb. Diagnose in writing, from the science, a texture fault in a whole-grain bake (a gummy rye crumb, a dry and crumbly wholemeal); correct it in the next bake, and confirm the fix in a photo."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** wholemeal or rye flour from a Dutch mill; the starter; salt; water; a loaf tin for rye; the scale; the thermometer; the formula sheet; the bread log."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Framework:** the whole-grain formula sheet."
+      },
+      {
+       "type": "table",
+       "header": [
+        "Part",
+        "What it is",
+        "Your decisions"
+       ],
+       "rows": [
+        [
+         "Flour",
+         "Wholemeal wheat or rye, 100 %",
+         "Which"
+        ],
+        [
+         "Water",
+         "Higher than for white bread (rye about 80 %)",
+         "The hydration, and why"
+        ],
+        [
+         "Levain",
+         "A share of the flour pre-fermented",
+         "Its share"
+        ],
+        [
+         "Salt",
+         "2 %",
+         "—"
+        ],
+        [
+         "Handling",
+         "Wholemeal: autolyse and folds. Rye: a paste, in a tin",
+         "—"
+        ],
+        [
+         "Rest",
+         "Rye: a day before slicing",
+         "—"
+        ],
+        [
+         "Diagnosis",
+         "A texture fault, its cause from the science, the fix, a photo",
+         "Which fault"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Procedure:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "Write the formula; weigh; log."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "Bake; rest (a day for rye); photograph the crumb."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "Diagnose the texture; adjust; bake again; photograph."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`TS-BRD` level 3, further evidence:** a whole-grain loaf from a formula with a fermentation log."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`SC-STRC` level 4, further evidence:** a bread texture fault diagnosed from the science, fixed and confirmed in a photo; the row was met in `PST-3.M2.X1` and `PST-3.M3.X1`."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "AI review reads the crumbs and the diagnosis: *competent* is a moist, set crumb, and a fault explained by bran, water, enzymes or acid with a fix that worked; *not yet* is a gummy or crumbly loaf with no cause named."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 2 h active per bake."
+      }
+     ]
+    }
+   ],
+   "items": [
+    {
+     "id": "BRD-3.M4.Q1",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "BRD-3.M4.L1",
+     "safety": false,
+     "question": "Why does wholemeal dough need more water?",
+     "options": [
+      {
+       "key": "A",
+       "text": "it is drier flour"
+      },
+      {
+       "key": "B",
+       "text": "the bran and germ absorb much more water"
+      },
+      {
+       "key": "C",
+       "text": "it has more gluten"
+      },
+      {
+       "key": "D",
+       "text": "it doesn't"
+      }
+     ],
+     "answer": "B",
+     "why": "Bran and water absorption."
+    },
+    {
+     "id": "BRD-3.M4.Q2",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "BRD-3.M4.L1",
+     "safety": false,
+     "question": "How does bran affect gluten?",
+     "options": [
+      {
+       "key": "A",
+       "text": "strengthens it"
+      },
+      {
+       "key": "B",
+       "text": "its sharp edges cut gluten strands"
+      },
+      {
+       "key": "C",
+       "text": "no effect"
+      },
+      {
+       "key": "D",
+       "text": "it melts it"
+      }
+     ],
+     "answer": "B",
+     "why": "Gentler handling, a soaker."
+    },
+    {
+     "id": "BRD-3.M4.Q3",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "BRD-3.M4.L1",
+     "safety": false,
+     "question": "Why does wholemeal flour go stale faster?",
+     "options": [
+      {
+       "key": "A",
+       "text": "more bran"
+      },
+      {
+       "key": "B",
+       "text": "the germ's oils go rancid"
+      },
+      {
+       "key": "C",
+       "text": "less sugar"
+      },
+      {
+       "key": "D",
+       "text": "it doesn't"
+      }
+     ],
+     "answer": "B",
+     "why": "Buy fresh, keep cool."
+    },
+    {
+     "id": "BRD-3.M4.Q4",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "BRD-3.M4.L1",
+     "safety": false,
+     "question": "What is a good first step from white to wholemeal bread?",
+     "options": [
+      {
+       "key": "A",
+       "text": "100 % at once"
+      },
+      {
+       "key": "B",
+       "text": "a 20–50 % share of wholemeal in a white loaf"
+      },
+      {
+       "key": "C",
+       "text": "cake flour"
+      },
+      {
+       "key": "D",
+       "text": "rye only"
+      }
+     ],
+     "answer": "B",
+     "why": "Blends."
+    },
+    {
+     "id": "BRD-3.M4.Q5",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "BRD-3.M4.L2",
+     "safety": false,
+     "question": "What gives rye bread its structure?",
+     "options": [
+      {
+       "key": "A",
+       "text": "gluten"
+      },
+      {
+       "key": "B",
+       "text": "pentosans (gums) that hold water"
+      },
+      {
+       "key": "C",
+       "text": "eggs"
+      },
+      {
+       "key": "D",
+       "text": "fat"
+      }
+     ],
+     "answer": "B",
+     "why": "Rye's structure."
+    },
+    {
+     "id": "BRD-3.M4.Q6",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "BRD-3.M4.L2",
+     "safety": false,
+     "question": "Why are rye breads traditionally made with sourdough?",
+     "options": [
+      {
+       "key": "A",
+       "text": "for colour"
+      },
+      {
+       "key": "B",
+       "text": "the acid tames rye's starch-breaking enzymes, which would make the crumb gummy"
+      },
+      {
+       "key": "C",
+       "text": "for rise only"
+      },
+      {
+       "key": "D",
+       "text": "tradition only"
+      }
+     ],
+     "answer": "B",
+     "why": "Acidity in rye."
+    },
+    {
+     "id": "BRD-3.M4.Q7",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "BRD-3.M4.L2",
+     "safety": false,
+     "question": "When is a dense rye loaf sliced?",
+     "options": [
+      {
+       "key": "A",
+       "text": "hot from the oven"
+      },
+      {
+       "key": "B",
+       "text": "after resting about a day"
+      },
+      {
+       "key": "C",
+       "text": "after an hour"
+      },
+      {
+       "key": "D",
+       "text": "frozen"
+      }
+     ],
+     "answer": "B",
+     "why": "The crumb sets."
+    },
+    {
+     "id": "BRD-3.M4.Q8",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "BRD-3.M4.L2",
+     "safety": false,
+     "question": "How is a rye paste handled?",
+     "options": [
+      {
+       "key": "A",
+       "text": "kneaded hard"
+      },
+      {
+       "key": "B",
+       "text": "mixed, shaped with wet hands or put into a tin"
+      },
+      {
+       "key": "C",
+       "text": "laminated"
+      },
+      {
+       "key": "D",
+       "text": "rolled thin"
+      }
+     ],
+     "answer": "B",
+     "why": "A paste, not a dough."
+    }
+   ]
+  },
+  {
+   "id": "BRD-3.M5",
+   "title": "Schedule and diagnosis",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** none for this module. Its judgments, adjusting to the season and diagnosing loaves, are shown in the four-week log and the crumb diagnoses of `BRD-3.M5.X1`."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "BRD-3.M5.L1",
+     "title": "Sourdough around a working week",
+     "prerequisites": [
+      "BRD-2.M5.L1"
+     ],
+     "competencies": [
+      {
+       "id": "KM-PLAN",
+       "level": 4
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** sourdough seems to demand someone at home all day. With the fridge as a pause button, it fits around work, and a schedule written for your real week is what keeps a household in bread."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** your diary for the next four weeks; the starter; the bread log; a room thermometer; the fridge."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*The fridge as a tool:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "the starter kept in the fridge and fed the evening before a bake;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "the shaped loaf retarded overnight, or up to a day or two, so bake day can move."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*A weekday schedule (one example):*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**morning, before work:** feed the levain;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**after work:** mix; autolyse; add the levain and salt;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**evening:** bulk with folds, judged by the dough;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**before bed:** shape; into the fridge;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**next morning or evening:** bake from cold."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Adjusting to the season:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**winter:** warmer water, a warm spot (the oven with only its light on), longer bulk;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**summer:** cooler water, less levain, shorter bulk;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**always:** the dough temperature logged, and the schedule adjusted from it."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*A control point on time.* If the dough is ready before you are, the fridge pauses it. If it isn't ready, the bake moves. Never bake an over- or under-proofed loaf to keep to the clock."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Writing the plan.* Four weeks, about two loaves a week, each bake with its control points: levain ready, dough temperature, bulk end, retard window, bake. Leave one evening free each week for a slip."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Plan (30 min).** A four-week schedule written around your actual week."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**First week (2 h active over the week).** Baked to the schedule; deviations logged."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "**Adjust (30 min).** The schedule changed from the first week's log."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "a schedule that fits the real week;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "changes made from the log, not guessed."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "A plan you can't keep",
+         "It needs someone at home at noon",
+         "Put the long steps overnight, in the fridge"
+        ],
+        [
+         "Bulk that runs fast or slow",
+         "The room temperature ignored",
+         "Adjust water and levain by season; log it"
+        ],
+        [
+         "Flat loaves on busy days",
+         "Over-proofed loaves baked anyway",
+         "Pause in the fridge; move the bake"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** none beyond the kitchen basics; an oven used as a warm spot is switched off, with only its light on, and checked before preheating."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the four-week plan, the first week's log against it, and the changes."
+      }
+     ]
+    },
+    {
+     "id": "BRD-3.M5.L2",
+     "title": "Diagnosing loaves",
+     "prerequisites": [
+      "BRD-3.M2.L3"
+     ],
+     "competencies": [
+      {
+       "id": "JD-TRBL",
+       "level": 4
+      },
+      {
+       "id": "RD-TEST",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** every loaf tells you what happened to it, if you know how to read the crumb and the shape. A diagnosis turns a disappointing loaf into the reason the next one is better."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** a dough for two loaves; the bread log and crumb photos from your earlier bakes; a serrated knife; coded plates for a blind tasting; one taster at least."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Reading the crumb and the shape:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**under-proofed:** a dense, tight crumb with a few large irregular holes under the crust; a burst side; a pale, gummy feel;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**over-proofed:** a flat, spreading loaf; a weak ear; an even, large-holed crumb that has collapsed; sour;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**dense crumb:** too little fermentation, too little water, a weak starter, or too much whole grain without adjustment;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**flat loaf:** weak shaping, over-proofing, too slack a dough, or a cold oven."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*From cause to fix.* Choose one cause from the evidence (the log and the photos), change one variable, and compare the next loaf. Two changes at once tell you nothing."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Testing one variable.* For example, bulk extended by an hour, or the retard shortened. Bake two loaves from the same dough, one changed, and compare the crumbs side by side; taste them blind (`VEG-3.M5.L1`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Using the log.* The dough temperature and the bulk time explain most faults. A fault with no log is a guess; a fault with a log and a photo is a lesson."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Diagnose and test (90 min over a bake).** Two loaves of the same dough, one variable changed; crumbs compared and tasted blind; the diagnosis written."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** a cause named from the evidence, and a fix that works on the next loaf."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "No idea what worked",
+         "Everything changed at once",
+         "One variable per bake"
+        ],
+        [
+         "The same fault every week",
+         "The flour blamed every time",
+         "Read the log: temperature and time first"
+        ],
+        [
+         "A diagnosis you can't check",
+         "No photos to compare",
+         "Photograph every crumb, cut the same way"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** a serrated knife cuts away from the hand holding the loaf."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the two crumbs side by side, the variable, the blind result and the diagnosis."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "BRD-3.M5.X1",
+     "title": "Bread for the household for four weeks on your own schedule",
+     "description": "Bread for the household for four weeks on your own schedule.",
+     "competencies": [
+      {
+       "id": "KM-PLAN",
+       "level": 4
+      },
+      {
+       "id": "JD-TRBL",
+       "level": 4
+      },
+      {
+       "id": "RD-TEST",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** keep the household in bread for four weeks around a working week, diagnosing and improving as you go."
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**The brief:** about eight loaves over four weeks, on a schedule around your real week."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**The constraints:** control points for every bake (levain ready, dough temperature, bulk end, retard window, bake), logged; every crumb photographed."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**The criteria:** the log shows every control point met or a reasoned change; at least three loaf faults diagnosed from the crumb and the science, with the fix confirmed on the next loaf; one comparison of your own design (one variable, blind-tasted)."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**The record:** the plan, the log, the crumb photos, the diagnoses, the comparison and a review of the four weeks."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** flour for about eight loaves; the starter; salt; the bread log; the household as tasters."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Procedure:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "Write the four-week plan with control points."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "Bake to it; log every control point and change."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "Photograph every crumb; diagnose faults; fix them."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "Run one comparison of your own design."
+        },
+        {
+         "level": 0,
+         "marker": "5.",
+         "text": "Review the four weeks against the plan."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`KM-PLAN` level 4:** a multi-week plan with control points; the log shows every control point met or a reasoned change."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`JD-TRBL` level 4, further evidence:** three unfamiliar faults diagnosed from the science and recovered; the fault-diagnosis test was passed in `FLV-3.M6.X1`."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`RD-TEST` level 3, further evidence:** a comparison of your own design, logged and blind-tasted; the row was met in `VEG-3.M5.X1`."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "AI review reads the plan, the log and the photos: *competent* is a log with every control point, three faults with causes and confirmed fixes, and a controlled comparison; *not yet* is missing control points, or a fault \"fixed\" by changing several things at once."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** about 2 h a week for four weeks."
+      }
+     ]
+    }
+   ],
+   "items": []
+  }
+ ]
+}

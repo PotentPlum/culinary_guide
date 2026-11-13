@@ -1,0 +1,3873 @@
+{
+ "schemaVersion": 1,
+ "id": "MNU-4",
+ "introduction": [
+  {
+   "type": "paragraph",
+   "text": "**Before you start.** This course comes last in S4 because it brings the stage together: the plating of `PLT-4`, the recipe development of `RDV-4` and the kitchen management of `KMG-3`, applied to a dinner for guests. You will learn to:"
+  },
+  {
+   "type": "list",
+   "items": [
+    {
+     "level": 0,
+     "marker": "",
+     "text": "**design menus:** progression from light to rich; variety of technique, colour, texture and temperature; a season or a theme; and knowing what to cut;"
+    },
+    {
+     "level": 0,
+     "marker": "",
+     "text": "**make them feasible:** portions and a consolidated order for six to eight, a make-ahead plan, and where to buy what;"
+    },
+    {
+     "level": 0,
+     "marker": "",
+     "text": "**run the kitchen:** a timeline from a week before (T−7) to service, several courses on four burners and one oven, holding, reheating and plating for six to eight;"
+    },
+    {
+     "level": 0,
+     "marker": "",
+     "text": "**pair drinks:** wine, beer, cider and fortified wines, the non-alcoholic drinks, the principles of pairing, and cooking with alcohol; this module is required, following the CIA's *Wine and Beverage Studies* [S1];"
+    },
+    {
+     "level": 0,
+     "marker": "",
+     "text": "**host:** the table, the order and pace of service, guests' allergens and needs, and a post-mortem with guest cards;"
+    },
+    {
+     "level": 0,
+     "marker": "",
+     "text": "**deliver:** a dinner project for four to six guests, which rehearses `MS-S4`."
+    }
+   ]
+  },
+  {
+   "type": "paragraph",
+   "text": "**Drinks and guests** (assessment §9):"
+  },
+  {
+   "type": "list",
+   "items": [
+    {
+     "level": 0,
+     "marker": "",
+     "text": "every menu with drinks has a non-alcoholic pairing for every course;"
+    },
+    {
+     "level": 0,
+     "marker": "",
+     "text": "no alcohol for anyone under 18, none in pregnancy, and the advice not to drink while breastfeeding;"
+    },
+    {
+     "level": 0,
+     "marker": "",
+     "text": "a dish cooked with alcohol is not alcohol-free: 85 % of the alcohol remains when it is stirred into a boiling liquid and taken off the heat, 75 % when flamed, still 5 % after 2.5 hours of simmering."
+    }
+   ]
+  },
+  {
+   "type": "paragraph",
+   "text": "The course teaches tasting and pairing, not drinking: tastings are small sips, spitting is normal, and the alcohol-free route through the module is complete on its own."
+  },
+  {
+   "type": "paragraph",
+   "text": "Produce is Dutch and in season. The drinks include Dutch wines (Limburg, Gelderland, Zeeland), Dutch beers and ciders, and Dutch alcohol-free drinks and juices."
+  },
+  {
+   "type": "paragraph",
+   "text": "Plan about five weeks at 6.5 hours a week. Every module builds towards the dinner project: the order list (`MNU-4.M2`), the timeline (`MNU-4.M3`), the pairings (`MNU-4.M4`) and the guest cards (`MNU-4.M5`) are all made for the menu you cook in `MNU-4.M6`."
+  },
+  {
+   "type": "paragraph",
+   "text": "**Have ready:** the planning templates and labels of `KMG-3`; the instant-read probe; shallow containers with lids; a vacuum flask; plates for six to eight (borrowed where needed) and platters; one glass per guest, and tasting glasses if you have them; the tasting form (`TST-1`); a long lighter, a pan lid and the fire blanket; the coloured boards and tools for allergen-free cooking (`NUT-3`)."
+  }
+ ],
+ "modules": [
+  {
+   "id": "MNU-4.M1",
+   "title": "Menu principles",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** the 8 items of `MNU-4.M1` in the course file, 1 of them a safety item. Pass mark 80 %, with every safety item correct."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "MNU-4.M1.L1",
+     "title": "Progression and balance",
+     "prerequisites": [
+      "KMG-3.M1.L1"
+     ],
+     "competencies": [
+      {
+       "id": "CR-MENU",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** good courses can still make a tiring menu. A menu that rises and falls, varies its techniques and never repeats itself leaves guests wanting the next course, and that is a skill separate from cooking each dish."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** three published menus (restaurant websites, cookbooks or menus you kept); the checklist below; a pen in two colours."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Light to rich.* A menu rises from light, fresh and acidic towards the richest course, usually the main, then steps down to a dessert that refreshes or comforts without overwhelming."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Variety:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**technique:** not two braises or two fried courses; a raw or cured element, a roast or sear, a slow cook;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**colour:** each course with its own colours; the menu not all brown or all white;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**texture:** crisp, creamy, tender and chewy spread across the courses (`FL-TEXT`);"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**temperature:** a cold starter, a hot main, a frozen or warm dessert."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Avoiding repetition.*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "No main ingredient twice (cream in three courses, tomato in two)."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "No flavour that tires (garlic in every course)."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "No two courses with the same structure (a mousse and a terrine)."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Portions across the menu* (`PLT-4.M1.L2`). The sum matters: a four-course menu has smaller courses than a two-course one."
+      },
+      {
+       "type": "paragraph",
+       "text": "*The checklist:*"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Point",
+        "Ask"
+       ],
+       "rows": [
+        [
+         "Progression",
+         "Does it rise to the main and step down?"
+        ],
+        [
+         "Technique",
+         "Is each course cooked a different way?"
+        ],
+        [
+         "Colour, texture, temperature",
+         "Does each course bring something new?"
+        ],
+        [
+         "Repetition",
+         "Any ingredient, flavour or structure twice?"
+        ],
+        [
+         "Portions",
+         "Does the sum fit the number of courses?"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Menus marked (45 min).** Mark three published menus against the checklist for progression, variety and repetition. Rewrite one."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** you can mark the progression, the variety and any repetition on a given menu."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "The main feels heavy and dull",
+         "A rich starter that blunts it",
+         "A light, acidic starter"
+        ],
+        [
+         "Guests tire by the main",
+         "Cream, butter or cheese in every course",
+         "One rich course; acid and freshness around it"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** a menu planned for guests notes every allergen per course from the start (`NUT-3`), so the checklist covers it before the shopping does."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the three marked menus; your rewrite, with what you changed and why."
+      }
+     ]
+    },
+    {
+     "id": "MNU-4.M1.L2",
+     "title": "Seasonal and themed menus",
+     "prerequisites": [
+      "MNU-4.M1.L1"
+     ],
+     "competencies": [
+      {
+       "id": "CR-MENU",
+       "level": 4
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** a season or a theme gives a menu its reason. Planning the drinks and a guest's need from the start, and cutting what doesn't serve the idea, turn a list of dishes into a menu."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** the Dutch seasonal calendar (`VEG-1`); your repertoire from S1–S4; the checklist of `MNU-4.M1.L1`; paper."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*A seasonal menu.* Build it from what is at its best (the Dutch seasonal calendar, `VEG-1`):"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Season",
+        "At its best"
+       ],
+       "rows": [
+        [
+         "Spring",
+         "Asparagus, new potatoes, rhubarb, lamb"
+        ],
+        [
+         "Summer",
+         "Tomatoes, beans, courgettes, strawberries"
+        ],
+        [
+         "Autumn",
+         "Pumpkin, mushrooms, game, apples and pears"
+        ],
+        [
+         "Winter",
+         "Roots, cabbages, chicory, kale, mussels"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*A themed menu.* A tradition (`CUI-4`), a region, a memory, a colour or a technique, carried by every course without forcing it."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Drinks and a dietary need.* Give each menu a drink idea per course, alcoholic and non-alcoholic, and plan one guest's need (an allergen, vegetarian, no alcohol) in from the start rather than adding it later."
+      },
+      {
+       "type": "paragraph",
+       "text": "*The rationale.* A short written reason for each course and for the order."
+      },
+      {
+       "type": "paragraph",
+       "text": "*What to cut.* Cut a course or component that repeats, overloads the stove, or doesn't serve the theme. A menu is often better with one element fewer."
+      },
+      {
+       "type": "paragraph",
+       "text": "A worked example, an autumn menu:"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Course",
+        "Dish",
+        "Drink",
+        "Non-alcoholic"
+       ],
+       "rows": [
+        [
+         "Starter",
+         "Raw celeriac and apple salad, toasted seeds",
+         "A dry Dutch white",
+         "Cloudy apple juice with soda"
+        ],
+        [
+         "Main",
+         "Braised venison, roasted pumpkin, red cabbage",
+         "A light red",
+         "A smoked tea, cooled"
+        ],
+        [
+         "Dessert",
+         "Pear poached in cider, its sorbet",
+         "A sweet cider",
+         "A pear shrub"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "The guest's need: a dairy-free guest, so the pumpkin is roasted in oil and the dessert has no cream. Cut: a mushroom soup between starter and main (a second earthy course)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**A seasonal menu (45 min).** Write one with its rationale, drinks and a dietary need; check it against the criteria."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**A themed menu (45 min).** The same; cut one element and write the reason."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "menus that pass the progression and variety checklist;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "a cut that makes the menu clearer."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "A \"seasonal\" winter menu with summer produce",
+         "Imported produce",
+         "Use the calendar"
+        ],
+        [
+         "A gimmick",
+         "A theme forced on every course",
+         "Let the theme lead, not dictate"
+        ],
+        [
+         "A half-empty plate for one guest",
+         "The dietary need solved by leaving things out",
+         "Plan their dish as a full dish"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** the guest's need written into the menu from the start; a dish cooked with alcohol not offered as alcohol-free (assessment §9)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** both menus with rationales; the element you cut and why."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "MNU-4.M1.X1",
+     "title": "Three menus with rationales",
+     "description": "Design three menus (spring, autumn, a theme), with rationales.",
+     "competencies": [
+      {
+       "id": "CR-MENU",
+       "level": 4
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** design three menus that flow (spring, autumn and a theme), three or four courses each, with a reason for every choice. Give each menu a drink, alcoholic and non-alcoholic, per course, and plan one guest's dietary need in. Choose one of the three for the dinner project of `MNU-4.M6`. Choose the one you can cook well for four to six guests in your own kitchen; the others stay on file for `MS-S4`."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** the seasonal calendar; your repertoire from S1–S4; the menu checklist of `MNU-4.M1.L1`."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Procedure:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "Write the three menus with the courses, drinks, the dietary need and the rationale."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "Check each against the checklist (progression, variety, repetition, portions, feasibility at first sight)."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "Cut one element from at least one menu; write why."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "Choose the menu for the dinner project."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:** three themed or seasonal menus of three or four courses, with drinks, a dietary need and a rationale, checked against the criteria, as the written part of the `CR-MENU` level 4 row. The guests' cards confirming the progression and balance of the chosen menu follow in `MNU-4.M6.X1`."
+      },
+      {
+       "type": "paragraph",
+       "text": "AI review reads the three menus and their checklists: *competent* is menus that pass every point, a non-alcoholic drink for every course, a dietary need planned as a full dish, and a cut with a reason; *not yet* is a repeated ingredient or technique, a missing non-alcoholic drink, or out-of-season produce."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 2 h."
+      }
+     ]
+    }
+   ],
+   "items": [
+    {
+     "id": "MNU-4.M1.Q1",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "MNU-4.M1.L1",
+     "safety": false,
+     "question": "How does a classic menu progress?",
+     "options": [
+      {
+       "key": "A",
+       "text": "rich to light"
+      },
+      {
+       "key": "B",
+       "text": "light to rich, then a dessert that steps down"
+      },
+      {
+       "key": "C",
+       "text": "all rich"
+      },
+      {
+       "key": "D",
+       "text": "random"
+      }
+     ],
+     "answer": "B",
+     "why": "The main is usually the peak."
+    },
+    {
+     "id": "MNU-4.M1.Q2",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "MNU-4.M1.L1",
+     "safety": false,
+     "question": "Which menu repeats a technique?",
+     "options": [
+      {
+       "key": "A",
+       "text": "a raw starter, a roast main, a frozen dessert"
+      },
+      {
+       "key": "B",
+       "text": "a fried starter, a fried main, a fried dessert"
+      },
+      {
+       "key": "C",
+       "text": "a soup, a sear, a tart"
+      },
+      {
+       "key": "D",
+       "text": "a salad, a braise, a mousse"
+      }
+     ],
+     "answer": "B",
+     "why": "Variety of technique."
+    },
+    {
+     "id": "MNU-4.M1.Q3",
+     "type": "SCENARIO",
+     "lessonId": "MNU-4.M1.L1",
+     "safety": false,
+     "question": "A menu: a cream soup, a fish in beurre blanc, a cheese gratin, a crème brûlée. What is the problem, and what do you change?",
+     "options": [],
+     "answer": "Cream and dairy in every course: too rich and repetitive. Swap the soup for a clear or acidic starter and the gratin for a fresh vegetable; keep one rich course.",
+     "why": "Avoiding repetition."
+    },
+    {
+     "id": "MNU-4.M1.Q4",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "MNU-4.M1.L1",
+     "safety": false,
+     "question": "Why are the courses of a four-course menu smaller?",
+     "options": [
+      {
+       "key": "A",
+       "text": "to save money"
+      },
+      {
+       "key": "B",
+       "text": "the sum of the courses is what guests eat"
+      },
+      {
+       "key": "C",
+       "text": "tradition"
+      },
+      {
+       "key": "D",
+       "text": "for plating"
+      }
+     ],
+     "answer": "B",
+     "why": "Portions across the menu."
+    },
+    {
+     "id": "MNU-4.M1.Q5",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "MNU-4.M1.L1",
+     "safety": false,
+     "question": "A cold starter, a hot main and a frozen dessert give variety in:",
+     "options": [
+      {
+       "key": "A",
+       "text": "colour"
+      },
+      {
+       "key": "B",
+       "text": "temperature"
+      },
+      {
+       "key": "C",
+       "text": "technique"
+      },
+      {
+       "key": "D",
+       "text": "cost"
+      }
+     ],
+     "answer": "B",
+     "why": "Temperature contrast across courses."
+    },
+    {
+     "id": "MNU-4.M1.Q6",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "MNU-4.M1.L2",
+     "safety": false,
+     "question": "Which is a seasonal Dutch autumn menu?",
+     "options": [
+      {
+       "key": "A",
+       "text": "asparagus, lamb, strawberries"
+      },
+      {
+       "key": "B",
+       "text": "pumpkin soup, game with mushrooms, a pear dessert"
+      },
+      {
+       "key": "C",
+       "text": "tomatoes, courgettes, cherries"
+      },
+      {
+       "key": "D",
+       "text": "kale, mussels, rhubarb"
+      }
+     ],
+     "answer": "B",
+     "why": "Pumpkin, game, mushrooms and pears in autumn."
+    },
+    {
+     "id": "MNU-4.M1.Q7",
+     "type": "SCENARIO",
+     "lessonId": "MNU-4.M1.L2",
+     "safety": false,
+     "question": "Your menu has five courses and you are the only cook. The main overloads the oven. What do you do?",
+     "options": [],
+     "answer": "Cut a course or a component (the one that repeats or serves the theme least), or move one course to make-ahead; a clearer menu often has one element fewer.",
+     "why": "[J] what to cut."
+    },
+    {
+     "id": "MNU-4.M1.Q8",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "MNU-4.M1.L2",
+     "safety": true,
+     "question": "One guest is pregnant and the menu has drinks. What is planned in from the start?",
+     "options": [
+      {
+       "key": "A",
+       "text": "a smaller glass"
+      },
+      {
+       "key": "B",
+       "text": "a non-alcoholic pairing for every course, and no raw-fish or raw-egg dishes for that guest"
+      },
+      {
+       "key": "C",
+       "text": "water only"
+      },
+      {
+       "key": "D",
+       "text": "nothing"
+      }
+     ],
+     "answer": "B",
+     "why": "Alcohol and risk-group rows, assessment §9."
+    }
+   ]
+  },
+  {
+   "id": "MNU-4.M2",
+   "title": "Feasibility and procurement",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** the 8 items of `MNU-4.M2` in the course file, 1 of them a safety item. Pass mark 80 %, with every safety item correct."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "MNU-4.M2.L1",
+     "title": "Quantities and procurement",
+     "prerequisites": [
+      "KMG-3.M2.L1"
+     ],
+     "competencies": [
+      {
+       "id": "KM-PURC",
+       "level": 4
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** a dinner for eight fails at the shop as easily as at the stove: too little of the main, fish bought too early, a budget blown. A consolidated order list, worked out from yields, prevents all three."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** the chosen menu; your yield records (`BUT-3`, `KMG-3`); shop prices; the portion table of `PLT-4.M1.L2`; a spreadsheet or the planning template."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Portions for 6–8 across courses.* Multiply the portion per course (`PLT-4.M1.L2`) by the guests and add a margin: about 10 % on the main protein, none on the dessert. Turn portions into purchase weights with your own yields."
+      },
+      {
+       "type": "paragraph",
+       "text": "A worked example, a main of 170 g of cooked venison for eight:"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "170 g × 8 = 1,360 g cooked;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "plus 10 % margin: about 1,500 g cooked;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "your braising yield is 65 % (from your records): 1,500 ÷ 0.65 = about 2.3 kg raw to order."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*A consolidated order list.* Sum every recipe's ingredients across the courses. Group them by shop and by day of purchase, and cross off what is already in the pantry."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Where to buy what.*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "The butcher or fishmonger: ordered a few days ahead for the main item."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "Produce: from a market or farm shop the day before."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "Pantry goods and drinks: early."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "Good and Best: chosen where the choice changes the result."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*The budget.* Work out the expected cost per guest from the list; compare the receipts afterwards."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**The order list (60 min).** Write the quantities and the consolidated list for the chosen menu, with the shops, days and budget."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** a list a second person could shop from, with the reason for each quantity."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Too little or far too much",
+         "A recipe for four multiplied by two without yields",
+         "Portions × guests ÷ yield"
+        ],
+        [
+         "Fish not fresh on the day",
+         "One trip for everything",
+         "Fish and produce last, the day before or on the day"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** chilled food bought last and taken home cold; the fridge space checked before the big shop; allergen-free products' labels photographed for the allergen plan (`MNU-4.M5`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the list with quantities, shops, days and budget."
+      }
+     ]
+    },
+    {
+     "id": "MNU-4.M2.L2",
+     "title": "Make-ahead analysis",
+     "prerequisites": [
+      "KMG-3.M1.L2"
+     ],
+     "competencies": [
+      {
+       "id": "KM-PLAN",
+       "level": 4
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** a dinner for guests is cooked over several days, or the cook spends the evening at the stove. Knowing what keeps, and placing every component on a day with a control point, is what makes the evening calm and safe."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** the chosen menu with its recipes; the planning template; the §9 storage rows; labels."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*What keeps and what doesn't:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**keeps or improves:** stocks, braises, sauce bases, doughs, pickles, ice cream, terrines, many desserts;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**must be last-minute:** searing, frying, dressing leaves, emulsions, plating, anything crisp;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**in between:** blanched vegetables (refreshed and finished at service), par-cooked starches."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*The make-ahead plan.* Give each component the day it is made, how it is stored and how it is finished. Work through the menu one course at a time, then read the plan by day to see whether any day is overloaded. Storage is labelled, dated, cooled by the cooling rule, and kept in the fridge at most 2 days or frozen (assessment §9)."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Control points.* The moments where something is checked, each with its target and what to do if it fails:"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Control point",
+        "Target",
+        "If it fails"
+       ],
+       "rows": [
+        [
+         "Stock cooled",
+         "57 °C to 21 °C within 2 hours, to 5 °C within 6 in total (§9)",
+         "Smaller containers, an ice bath; log it and act at once"
+        ],
+        [
+         "Braise reheated",
+         "74 °C in every part (§9)",
+         "Keep heating; stir; probe again"
+        ],
+        [
+         "Dough risen",
+         "Doubled, springs back slowly",
+         "More time somewhere warmer"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**The plan (60 min).** Write the make-ahead plan for the chosen menu, with storage, control points and fallbacks."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** every component placed on a day, with storage and a control point where it needs one."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "A frantic last day",
+         "Everything left to the day",
+         "Move what keeps to T−2 and T−1"
+        ],
+        [
+         "Food past its time at the dinner",
+         "Made too early",
+         "At most 2 days in the fridge, or frozen (§9)"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** every make-ahead item labelled, dated, cooled by the cooling rule and kept within 2 days or frozen; reheated to 74 °C before hot holding (assessment §9)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the plan with days, storage, control points and fallbacks."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "MNU-4.M2.X1",
+     "title": "The order list and make-ahead plan",
+     "description": "The order list and make-ahead plan for one of your menus.",
+     "competencies": [
+      {
+       "id": "KM-PURC",
+       "level": 4
+      },
+      {
+       "id": "KM-PLAN",
+       "level": 4
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** make the chosen menu feasible: what to buy, when, and what to make ahead. Write the order list and make-ahead plan for the menu of the dinner project. Buy the order for the dinner project and reconcile it afterwards (quantities against what was used, quality judged, receipts against the budget), and log the plan's control points at the dinner."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** the chosen menu; your yield records; shop prices; the receipts after the dinner."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Framework:** the feasibility checklist."
+      },
+      {
+       "type": "table",
+       "header": [
+        "Point",
+        "Check"
+       ],
+       "rows": [
+        [
+         "Quantities",
+         "Portions × guests, margin, ÷ yield"
+        ],
+        [
+         "Order list",
+         "Grouped by shop and day; pantry crossed off"
+        ],
+        [
+         "Budget",
+         "Cost per guest"
+        ],
+        [
+         "Make-ahead",
+         "Every component on a day, stored by §9"
+        ],
+        [
+         "Control points",
+         "Target and fallback for each"
+        ],
+        [
+         "Space",
+         "Fridge, freezer and oven checked"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Procedure:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "Write the quantities, the consolidated list and the budget."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "Write the make-ahead plan with storage and control points."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "Check both against the feasibility checklist."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "After the dinner project, reconcile the purchases and receipts and mark each control point met or changed."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`KM-PURC` level 4:** the guest dinner bought within budget, quantities within 10 % of what was used, quality judged, the receipts against the plan."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`KM-PLAN` level 4, the make-ahead part:** a multi-day plan with control points; the log of `MNU-4.M6.X1` shows each met or a reasoned change."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "AI review reads the list, the plan, the receipts and the reconciliation: *competent* is quantities within 10 % of use, receipts within budget, and every control point marked; *not yet* is a list without yields, a component stored beyond §9, or no reconciliation."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 2 h, plus 30 min after the dinner."
+      }
+     ]
+    }
+   ],
+   "items": [
+    {
+     "id": "MNU-4.M2.Q1",
+     "type": "CALCULATION",
+     "lessonId": "MNU-4.M2.L1",
+     "safety": false,
+     "question": "A main course of 160 g cooked fish per guest, for 6 guests, with a fillet yield of 80 % after cooking and a 10 % margin. How much raw fillet do you buy?",
+     "options": [],
+     "answer": "About 1,320 g",
+     "why": "160 × 6 = 960 g; ÷ 0.8 = 1,200 g; + 10 % = 1,320 g."
+    },
+    {
+     "id": "MNU-4.M2.Q2",
+     "type": "CALCULATION",
+     "lessonId": "MNU-4.M2.L1",
+     "safety": false,
+     "question": "The list costs €96 for 6 guests. What is the cost per guest?",
+     "options": [],
+     "answer": "€16",
+     "why": "96 ÷ 6."
+    },
+    {
+     "id": "MNU-4.M2.Q3",
+     "type": "SCENARIO",
+     "lessonId": "MNU-4.M2.L1",
+     "safety": false,
+     "question": "Dinner is Saturday. When do you buy the fish, the vegetables, the pantry goods and the drinks?",
+     "options": [],
+     "answer": "Fish ordered a few days ahead and collected Friday or Saturday; vegetables on Friday; pantry goods and drinks early in the week.",
+     "why": "[J] where and when to buy."
+    },
+    {
+     "id": "MNU-4.M2.Q4",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "MNU-4.M2.L1",
+     "safety": false,
+     "question": "What makes an order list \"consolidated\"?",
+     "options": [
+      {
+       "key": "A",
+       "text": "it is short"
+      },
+      {
+       "key": "B",
+       "text": "all courses' ingredients summed and grouped by shop and day, pantry stock crossed off"
+      },
+      {
+       "key": "C",
+       "text": "it is typed"
+      },
+      {
+       "key": "D",
+       "text": "it has prices"
+      }
+     ],
+     "answer": "B",
+     "why": "One list for the whole menu."
+    },
+    {
+     "id": "MNU-4.M2.Q5",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "MNU-4.M2.L2",
+     "safety": false,
+     "question": "Which component must be last-minute?",
+     "options": [
+      {
+       "key": "A",
+       "text": "a braise"
+      },
+      {
+       "key": "B",
+       "text": "a beurre blanc"
+      },
+      {
+       "key": "C",
+       "text": "a stock"
+      },
+      {
+       "key": "D",
+       "text": "an ice cream"
+      }
+     ],
+     "answer": "B",
+     "why": "Warm emulsions don't hold long."
+    },
+    {
+     "id": "MNU-4.M2.Q6",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "MNU-4.M2.L2",
+     "safety": true,
+     "question": "A braise is made on Thursday for Saturday. How is it stored and served?",
+     "options": [
+      {
+       "key": "A",
+       "text": "on the stove until Saturday"
+      },
+      {
+       "key": "B",
+       "text": "cooled by the cooling rule, in the fridge (at most 2 days), reheated to 74 °C"
+      },
+      {
+       "key": "C",
+       "text": "at room temperature"
+      },
+      {
+       "key": "D",
+       "text": "frozen and served cold"
+      }
+     ],
+     "answer": "B",
+     "why": "Cooling, leftovers and reheating rows, §9."
+    },
+    {
+     "id": "MNU-4.M2.Q7",
+     "type": "SCENARIO",
+     "lessonId": "MNU-4.M2.L2",
+     "safety": false,
+     "question": "Name a control point for a make-ahead stock and what you do if it fails.",
+     "options": [],
+     "answer": "The stock cooled from 57 °C to 21 °C within 2 hours (logged); if it misses, it is discarded and the fallback (a frozen stock or a simpler sauce) is used.",
+     "why": "Control points with fallbacks."
+    },
+    {
+     "id": "MNU-4.M2.Q8",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "MNU-4.M2.L2",
+     "safety": false,
+     "question": "Which improves when made a day ahead?",
+     "options": [
+      {
+       "key": "A",
+       "text": "a green salad"
+      },
+      {
+       "key": "B",
+       "text": "a braise"
+      },
+      {
+       "key": "C",
+       "text": "fried food"
+      },
+      {
+       "key": "D",
+       "text": "a seared scallop"
+      }
+     ],
+     "answer": "B",
+     "why": "Braises gain flavour."
+    }
+   ]
+  },
+  {
+   "id": "MNU-4.M3",
+   "title": "Timelines and execution",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** the 8 items of `MNU-4.M3` in the course file, 3 of them safety items. Pass mark 80 %, with every safety item correct."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "MNU-4.M3.L1",
+     "title": "Backwards timelines",
+     "prerequisites": [
+      "MNU-4.M2.L2"
+     ],
+     "competencies": [
+      {
+       "id": "KM-PLAN",
+       "level": 4
+      },
+      {
+       "id": "TS-MEP",
+       "level": 5
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** a dinner runs on time only if it is planned back from the moment the guests sit down. A timeline from a week before, with buffers and a named first thing to drop, absorbs the slips every dinner has."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** the menu, the order list and the make-ahead plan of `MNU-4.M2`; the planning template; the timeline checklist below; labels and the log (`KMG-3`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Working backwards from service.* Start with the time the guests sit down. Set each course's serving time, then count each component's finishing, cooking and prep times back from there."
+      },
+      {
+       "type": "paragraph",
+       "text": "*From T−7 days:*"
+      },
+      {
+       "type": "table",
+       "header": [
+        "When",
+        "What"
+       ],
+       "rows": [
+        [
+         "T−7 to T−5",
+         "Menu final, orders placed, pantry and drinks bought, equipment checked"
+        ],
+        [
+         "T−3 to T−2",
+         "Stocks, doughs, desserts that freeze, pickles"
+        ],
+        [
+         "T−1",
+         "Braises, sauce bases, desserts, vegetables prepped, table planned, fish and produce collected"
+        ],
+        [
+         "The day",
+         "Mise en place by the early afternoon, the oven plan, plating stations, a rest before guests arrive"
+        ],
+        [
+         "Service",
+         "A minute-by-minute plan for the last hour"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Buffers.* Leave 15–20 minutes of slack before each course, and name a \"first thing to drop\" if time runs out (a garnish, an amuse-bouche, a second sauce)."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Labels and the log* (`KMG-3`). Label and date every make-ahead item; record each control point in the log."
+      },
+      {
+       "type": "paragraph",
+       "text": "*The timeline checklist:* buffers before each course; a first thing to drop; no two last-minute steps at once; a rest before the guests arrive; every control point on the timeline."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**The timeline (60 min).** Write the full timeline from T−7 for the dinner project's menu and check it against the checklist."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** a timeline with buffers and a named first thing to drop."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "A tired, rushed host",
+         "No rest before guests arrive",
+         "Mise en place done by the early afternoon"
+        ],
+        [
+         "Two courses go wrong at once",
+         "Their last-minute steps at the same moment",
+         "Move one step earlier, or change it"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** the cooling and reheating control points of `MNU-4.M2.L2` placed on the timeline with times; chilled deliveries into the fridge at once."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the timeline; the first thing to drop."
+      }
+     ]
+    },
+    {
+     "id": "MNU-4.M3.L2",
+     "title": "Scheduling the stove and oven",
+     "prerequisites": [
+      "EQP-1.M2.L3"
+     ],
+     "competencies": [
+      {
+       "id": "KM-EQPT",
+       "level": 4
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** a home kitchen has four burners and one oven, and a four-course dinner wants more. A grid of time against equipment shows the clashes on paper, where they cost nothing to fix."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** the timeline of `MNU-4.M3.L1`; squared paper or a spreadsheet; the dinner's pans; water for the rehearsal; a timer."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*The equipment plan.* A grid of time against equipment (four burners, one oven, the circulator, the grill, the fridge and freezer space), with each component placed. Clashes show at a glance."
+      },
+      {
+       "type": "table",
+       "header": [
+        "Time",
+        "Burner 1",
+        "Burner 2",
+        "Burner 3",
+        "Burner 4",
+        "Oven"
+       ],
+       "rows": [
+        [
+         "18:30",
+         "Sauce reheating",
+         "",
+         "Water for vegetables",
+         "",
+         "Venison braise, 74 °C check"
+        ],
+        [
+         "19:00",
+         "Sauce held low",
+         "Pan for searing",
+         "Vegetables",
+         "",
+         "Plates warming"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Reordering to avoid clashes:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "one oven temperature at a time: group dishes by temperature, or cook one ahead and reheat it;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "free burners by moving components to the oven, the circulator or a vacuum flask;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "use resting time for the oven's next job;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "change a component (roasted vegetables to glazed on the hob) when it can't fit."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Reading the grid.* Two entries in one cell are a clash. A long run of one burner is a component that could move to the oven or a flask. An empty oven during the main course is room for warming plates."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Workarounds.* Replace a missing tool with a reason (`MOD-4.M2.X1`); a borrowed induction plate is a plan B for a fifth burner."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**The equipment plan (60 min).** Draw the grid for the dinner project; find and resolve two clashes. Rehearse the last hour with water in the pans."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** a grid without clashes and a rehearsal that runs to time."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Three dishes need the oven at three temperatures",
+         "Not grouped",
+         "Group by temperature; cook one ahead"
+        ],
+        [
+         "Make-ahead dishes with nowhere to go",
+         "Fridge space forgotten",
+         "Put the fridge and freezer on the grid"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** a vacuum flask or held pan kept at 57 °C or above, probed (assessment §9); pan handles turned in when every burner is in use."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the grid with the two clashes and how you resolved them; the rehearsal times."
+      }
+     ]
+    },
+    {
+     "id": "MNU-4.M3.L3",
+     "title": "Holding, reheating and plating for several",
+     "prerequisites": [
+      "SAF-3.M1.L1",
+      "PLT-4.M3.L1"
+     ],
+     "competencies": [
+      {
+       "id": "SA-TEMP",
+       "level": 5
+      },
+      {
+       "id": "TS-PLT",
+       "level": 4
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** at a dinner, food waits: held hot, reheated, plated eight times. Doing that safely and without losing quality is where a guest dinner most often goes wrong."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** one course for eight (household and neighbours, or frozen portions); eight plates; a low oven; a water bath or a covered pan; the probe; the plating tools; a timer; the sketch of the plate."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Holding safely* (assessment §9). Hot food at 57 °C or above (a low oven, a covered pan on the lowest heat, a water bath); cold food at 5 °C or below. Probe held food."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Reheating without loss.*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "Braises and sauces: brought to 74 °C in every part within 2 hours, gently and stirred."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "Vegetables: refreshed earlier, finished in butter at service."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "Meat: rested and sliced at the last moment, not reheated in slices."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Plating 6–8 consistently* (`PLT-4`). Warm the plates and line them up. Add each component to all plates in turn, with a second pair of hands if possible. Check the first plate against the sketch and match the rest to it. Sauce and the frozen or crisp element go on last, just before the plates leave."
+      },
+      {
+       "type": "paragraph",
+       "text": "*The cooling plan for leftovers.* Write before the dinner what is cooled, how, and by when: by the cooling rule, in shallow containers, into the fridge."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**A rehearsal for eight (60 min).** Hold, reheat and plate one course for eight, timed and probed. Photograph the plates together."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "eight matching plates in under ten minutes;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "every held and reheated item probed in range."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Food in the danger zone",
+         "\"Kept warm\" at 45 °C for an hour",
+         "Hold at 57 °C or above; probe it"
+        ],
+        [
+         "Grey, dry meat",
+         "Sliced meat reheated",
+         "Rest whole; slice at the last moment"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** hot holding at 57 °C or above, cold at 5 °C or below; reheating to 74 °C in every part within 2 hours; leftovers cooled by the cooling rule and kept at most 2 days (assessment §9)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the probe readings; the plating time; the photo of the eight plates; the cooling plan."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "MNU-4.M3.X1",
+     "title": "A full timeline for a four-course dinner",
+     "description": "A full timeline for a four-course dinner, rehearsed in the dinner project.",
+     "competencies": [
+      {
+       "id": "KM-PLAN",
+       "level": 4
+      },
+      {
+       "id": "TS-MEP",
+       "level": 5
+      },
+      {
+       "id": "KM-EQPT",
+       "level": 4
+      },
+      {
+       "id": "SA-TEMP",
+       "level": 5
+      },
+      {
+       "id": "TS-PLT",
+       "level": 4
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** plan a four-course dinner from T−7 to service so that the kitchen runs on time and safely, and rehearse it in the dinner project (`MNU-4.M6.X1`). The extensions:"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "the equipment plan for the dinner (what goes in which pan and oven, and when), followed in the log;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "the five productions of the `TS-MEP` level 5 row: the dinner project and four earlier S4 productions (for example the timed service of `CLS-4.M3.X2`, the formal dinner of `PLT-4.M3.X1`, the menu of `PST-4.M5.X1` and a regional meal of `CUI-4`), each with a make-ahead plan, labels and a log, over at least eight weeks, with slips absorbed without a late course;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "the dinner's written cooling plan and its holding and reheating log;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "one course plated for six to eight, the plates matching and hot."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** the menu, the order list and make-ahead plan of `MNU-4.M2.X1`; the logs of the earlier productions; the timeline checklist of `MNU-4.M3.L1`; the probe."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Procedure:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "Write the timeline from T−7 with buffers and the first thing to drop."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "Write the equipment grid; resolve clashes; rehearse the last hour."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "Write the cooling plan and the holding and reheating control points."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "Run the dinner project from the plan; log every control point and every slip."
+        },
+        {
+         "level": 0,
+         "marker": "5.",
+         "text": "Collect the five productions' plans, labels and logs; note how each slip was absorbed."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`KM-PLAN` level 4, the timeline part:** the multi-day timeline with control points, each met in the log or changed with a reason."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`TS-MEP` level 5:** five productions over at least eight weeks, including a guest dinner and a timed service, each with a make-ahead plan, labels and a log; slips absorbed without a late course."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`KM-EQPT` level 4, the plan part:** the equipment plan followed in the log. The calibration and workaround were shown in `MOD-4.M2.X1`."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`SA-TEMP` level 5, re-tested with guests:** the cooling plan and every holding and reheating control point logged in range. The five productions of the row are in `PRO-4.M5.X1`."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`TS-PLT` level 4, a further course:** six to eight plates matching and hot; the row was completed in `PLT-4.M3.X1`."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "AI review reads the timeline, the grid, the logs and the plate photo: *competent* is every control point met or changed with a reason, holding and reheating readings in range, five productions over eight weeks, and matching hot plates; *not yet* is a reading out of range without action, a late course, or a missing production log."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 3 h of planning, plus the dinner."
+      }
+     ]
+    }
+   ],
+   "items": [
+    {
+     "id": "MNU-4.M3.Q1",
+     "type": "ORDERING",
+     "lessonId": "MNU-4.M3.L1",
+     "safety": false,
+     "question": "Put in order for a Saturday dinner: collect the fish; place the butcher's order; make the stock; plate the starter",
+     "options": [],
+     "answer": "place the butcher's order, make the stock, collect the fish, plate the starter",
+     "why": "Backwards from service."
+    },
+    {
+     "id": "MNU-4.M3.Q2",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "MNU-4.M3.L1",
+     "safety": false,
+     "question": "What is a buffer in a timeline?",
+     "options": [
+      {
+       "key": "A",
+       "text": "extra food"
+      },
+      {
+       "key": "B",
+       "text": "15–20 minutes of slack before each course"
+      },
+      {
+       "key": "C",
+       "text": "a second oven"
+      },
+      {
+       "key": "D",
+       "text": "a rest day"
+      }
+     ],
+     "answer": "B",
+     "why": "Slips are absorbed."
+    },
+    {
+     "id": "MNU-4.M3.Q3",
+     "type": "SCENARIO",
+     "lessonId": "MNU-4.M3.L2",
+     "safety": false,
+     "question": "The main needs the oven at 220 °C and the dessert at 160 °C, both in the last hour. Give two ways to resolve it.",
+     "options": [],
+     "answer": "Bake the dessert ahead and serve it cool or reheat it gently; cook the main's garnish on the hob; or change the dessert to one that needs no oven.",
+     "why": "[J] reorder to avoid clashes."
+    },
+    {
+     "id": "MNU-4.M3.Q4",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "MNU-4.M3.L2",
+     "safety": false,
+     "question": "Which frees a burner during service?",
+     "options": [
+      {
+       "key": "A",
+       "text": "a bigger pan"
+      },
+      {
+       "key": "B",
+       "text": "holding a sauce in a vacuum flask or a low oven"
+      },
+      {
+       "key": "C",
+       "text": "cooking faster"
+      },
+      {
+       "key": "D",
+       "text": "a lid"
+      }
+     ],
+     "answer": "B",
+     "why": "Move components off the hob."
+    },
+    {
+     "id": "MNU-4.M3.Q5",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "MNU-4.M3.L3",
+     "safety": true,
+     "question": "How is a sauce held hot for service?",
+     "options": [
+      {
+       "key": "A",
+       "text": "at 45 °C"
+      },
+      {
+       "key": "B",
+       "text": "at 57 °C or above, probed"
+      },
+      {
+       "key": "C",
+       "text": "on the counter"
+      },
+      {
+       "key": "D",
+       "text": "at 50 °C covered"
+      }
+     ],
+     "answer": "B",
+     "why": "Hot holding row, §9."
+    },
+    {
+     "id": "MNU-4.M3.Q6",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "MNU-4.M3.L3",
+     "safety": true,
+     "question": "A braise made yesterday is reheated for guests. To what?",
+     "options": [
+      {
+       "key": "A",
+       "text": "warm to the touch"
+      },
+      {
+       "key": "B",
+       "text": "every part to 74 °C, within 2 hours"
+      },
+      {
+       "key": "C",
+       "text": "57 °C"
+      },
+      {
+       "key": "D",
+       "text": "until it bubbles at the edge"
+      }
+     ],
+     "answer": "B",
+     "why": "Reheating row, §9."
+    },
+    {
+     "id": "MNU-4.M3.Q7",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "MNU-4.M3.L3",
+     "safety": false,
+     "question": "Why is roast meat not reheated in slices?",
+     "options": [
+      {
+       "key": "A",
+       "text": "it is safer"
+      },
+      {
+       "key": "B",
+       "text": "slices grey and dry; rest the joint and slice at the last moment"
+      },
+      {
+       "key": "C",
+       "text": "it is quicker"
+      },
+      {
+       "key": "D",
+       "text": "tradition"
+      }
+     ],
+     "answer": "B",
+     "why": "Reheat without loss."
+    },
+    {
+     "id": "MNU-4.M3.Q8",
+     "type": "SCENARIO",
+     "lessonId": "MNU-4.M3.L3",
+     "safety": true,
+     "question": "After the dinner, a pan of braise and a bowl of sauce are left. What does your cooling plan say?",
+     "options": [],
+     "answer": "Cool them in shallow containers or an ice bath from 57 °C to 21 °C within 2 hours and to 5 °C within 6 hours, label, refrigerate (at most 2 days) or freeze; nothing left out more than 2 hours.",
+     "why": "Cooling and leftovers rows."
+    }
+   ]
+  },
+  {
+   "id": "MNU-4.M4",
+   "title": "Beverage basics and food–drink pairing",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** the 8 items of `MNU-4.M4` in the course file, 3 of them safety items. Pass mark 80 %, with every safety item correct."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "MNU-4.M4.L1",
+     "title": "Wine basics",
+     "prerequisites": [
+      "FLV-3.M6.L2"
+     ],
+     "competencies": [
+      {
+       "id": "CK-BEVR",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** wine is described by its structure (acidity, tannin, body, sweetness), and structure, not colour, decides a pairing. A structured tasting turns \"I like it\" into notes you can pair with."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** three wines of different structure (for example a crisp white, a light red and a fuller red), or their alcohol-free equivalents; a glass per wine; the tasting form (`TST-1`); the probe or a drinks thermometer; water, plain bread and a spittoon (a jug or bowl)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Main grapes and styles:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**white:** Sauvignon Blanc (crisp, herbaceous), Riesling (high acid, dry to sweet), Chardonnay (unoaked and fresh, or oaked and rich), Pinot Gris and Grüner Veltliner. The Dutch whites from Limburg and Gelderland (Johanniter, Solaris, Auxerrois) fit here."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**red:** Pinot Noir (light, red fruit), Gamay, Cabernet Sauvignon and Merlot (fuller, tannic), Syrah (spicy), Tempranillo and Sangiovese."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**rosé, sparkling** (traditional method and others) **and sweet wines.**"
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Structure:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**acidity:** mouth-watering;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**tannin:** drying, from the skins and oak;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**body:** light to full, mostly from alcohol and extract;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**sweetness:** dry to sweet."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Serving temperature:*"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Style",
+        "Serve at"
+       ],
+       "rows": [
+        [
+         "Sparkling and sweet whites",
+         "Cold, about 6–8 °C"
+        ],
+        [
+         "Most whites",
+         "Cool, 8–12 °C"
+        ],
+        [
+         "Light reds",
+         "Slightly cool, 12–14 °C"
+        ],
+        [
+         "Fuller reds",
+         "A cool room temperature, 16–18 °C"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Structured tasting.*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Look:** colour and clarity."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Smell:** fruit, flowers, spice, oak."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "**Taste:** acidity, tannin, body, sweetness, length."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "**Conclude:** what the wine is, and what it would go with."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "Take small sips; spitting is normal; water and bread between wines. The same method works for alcohol-free wines."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**A structured tasting (60 min).** Taste three wines of different structure (or their alcohol-free equivalents) with the form, and measure their serving temperatures."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** tasting notes that describe structure, not only flavour."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Notes that say \"red, fruity\"",
+         "Judging by colour",
+         "Write acidity, tannin, body, sweetness"
+        ],
+        [
+         "A soft, hot-tasting red",
+         "Served warm from a heated room",
+         "Cool it to 16–18 °C"
+        ],
+        [
+         "A muddled palate",
+         "Drinking rather than tasting",
+         "Small sips; spit"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** no alcohol for anyone under 18, none in pregnancy, and the advice not to drink while breastfeeding (assessment §9); small sips and spitting; the alcohol-free route is complete on its own."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the three tasting forms; the serving temperatures."
+      }
+     ]
+    },
+    {
+     "id": "MNU-4.M4.L2",
+     "title": "Beer, cider, fortified wines and cooking with alcohol",
+     "prerequisites": [
+      "MNU-4.M4.L1"
+     ],
+     "competencies": [
+      {
+       "id": "CK-BEVR",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** beer, cider and fortified wines pair with food that wine struggles with, and they cook well. Cooking with alcohol also brings two safety facts: the alcohol stays in the dish, and a flambé is a real fire."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** a beer, a cider and a fortified wine (or alcohol-free versions); glasses; the tasting form; for the pan sauce, a piece of pork or chicken, 150 ml of cider and stock; for the flambé, 30 ml of a spirit in a small jug, a pan with a lid, a long lighter; the fire blanket within reach."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Beer.* Lager and pilsner (crisp, bitter), wheat beer (soft, spicy), pale ale and IPA (hoppy, bitter), brown ales, *bokbier* in autumn, stouts and porters (roasted), Belgian and Dutch abbey beers (*dubbel*, *tripel*), sour beers. Bitterness, carbonation and malt sweetness are what pair."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Cider.* Dry to sweet, still or sparkling; Dutch and Normandy ciders; apple and pear."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Fortified wines.* Sherry (*fino* dry and salty, *oloroso* nutty, *Pedro Ximénez* sweet), port (ruby, tawny), madeira. Small glasses, with specific foods: *fino* with salty snacks, tawny with cheese."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Cooking with alcohol:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "reduce wine before stock or cream goes in, so it doesn't taste raw (`CLS-4.M3`);"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "deglaze with wine, beer or cider;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "beer goes into braises (*stoofvlees*) and batters;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "spirits are added at the end, or flamed;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "the alcohol stays after cooking (assessment §9), so a dish cooked with alcohol is not served as alcohol-free."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Flambé safety:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "The extractor hood off; nothing flammable above the pan; children away."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "The spirit measured into a jug, never poured from the bottle into a hot pan."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "The pan taken off the heat to add it."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "Lit with a long lighter, at arm's length."
+        },
+        {
+         "level": 0,
+         "marker": "5.",
+         "text": "A lid ready to put out the flame."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Beer, cider and a fortified wine, with cooking (60 min).** Taste one of each with the form. Deglaze a pan sauce with cider. Flambé by the safety steps."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "the flambé done with the hood off and the lid in hand;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "a pan sauce without a raw-wine taste."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Flame runs up into the bottle",
+         "Spirit poured from the bottle into a flaming pan",
+         "Always measure into a jug first"
+        ],
+        [
+         "Flames drawn upwards",
+         "The hood running",
+         "Hood off before you light"
+        ],
+        [
+         "A sharp, raw sauce",
+         "Wine or cider not reduced",
+         "Reduce before the stock goes in"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** the flambé steps above; the lid in hand and the fire blanket in reach (`SAF-1`); alcohol retained in cooked dishes, so they are not served as alcohol-free (assessment §9)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the three tasting forms; the sauce photo; the flambé steps ticked off."
+      }
+     ]
+    },
+    {
+     "id": "MNU-4.M4.L3",
+     "title": "Non-alcoholic pairing",
+     "prerequisites": [
+      "MNU-4.M4.L1"
+     ],
+     "competencies": [
+      {
+       "id": "CK-BEVR",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** every guest gets a drink chosen for their course, and for many guests that drink has no alcohol. Non-alcoholic drinks are described and paired by structure, like wines, and some are best made at home."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** for the shrub, 300 g of seasonal Dutch fruit (rhubarb, red currants or apples), 150 g of sugar and 150 ml of cider vinegar; a clean jar with a lid; a sieve and a clean bottle; sparkling water; three non-alcoholic drinks to taste (a tea, a kombucha or Dutch juice, an alcohol-free wine or beer); glasses; the tasting form."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*The non-alcoholic drinks:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**teas:** green (grassy, light tannin), black (tannic), oolong, smoked teas; herbal infusions (mint, verbena, chamomile);"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**kombucha and other ferments** (water kefir): acidity and fizz;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**juices:** Dutch apple and pear juices (cloudy, single-variety), vegetable juices;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**shrubs:** fruit, sugar and vinegar, diluted with sparkling water; acid like a wine;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**alcohol-free wines and beers:** improving, and best chosen by structure (acidity, bitterness), not by imitation."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Building structure without alcohol:*"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Structure",
+        "From"
+       ],
+       "rows": [
+        [
+         "Acidity",
+         "Vinegar, citrus, ferments"
+        ],
+        [
+         "Tannin",
+         "Tea"
+        ],
+        [
+         "Bitterness",
+         "Hops or herbs"
+        ],
+        [
+         "Body",
+         "Sugar, or a little salt"
+        ],
+        [
+         "Fizz",
+         "Carbonation"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*A shrub.* Steep seasonal Dutch fruit with sugar and vinegar in the fridge for a few days, strain it and keep it in the fridge. Dilute about one part shrub with three or four parts sparkling water, and taste for the balance of sweet and sharp. Or make a cold-brewed tea or herb infusion."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**A shrub and a tasting (60 min).** Make a seasonal shrub. Taste three non-alcoholic drinks with the form, by structure."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** non-alcoholic drinks described by structure, like wines."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Guests without alcohol get only cola",
+         "Sweet soft drinks as the only option",
+         "Plan a drink per course"
+        ],
+        [
+         "A cloying or harsh shrub",
+         "No acidity balance",
+         "Adjust sugar or vinegar; dilute more"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** the shrub made in a clean jar and kept in the fridge; fruit washed; every drink offered as alcohol-free checked on its label."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the shrub's proportions and dilution; the three tasting forms."
+      }
+     ]
+    },
+    {
+     "id": "MNU-4.M4.L4",
+     "title": "Pairing principles",
+     "prerequisites": [
+      "MNU-4.M4.L3"
+     ],
+     "competencies": [
+      {
+       "id": "CK-BEVR",
+       "level": 3
+      },
+      {
+       "id": "FL-SEAS",
+       "level": 5
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** a pairing works or fails for reasons you can name: acid, tannin, sweetness, salt and heat. Knowing them lets you pair a whole menu, with and without alcohol, and adjust the dish to the drink."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** one dish (for example a pan-fried mackerel with a sharp beetroot salad); four drinks (two alcoholic, two not; for example a crisp white, a tannic red, a rhubarb shrub, a smoked tea); the tasting form; the menu of the dinner project; blind tasters for the second session."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Match and contrast.* A drink matches the dish's weight and intensity (light with light). Then it either echoes a flavour (an earthy Pinot Noir with mushrooms) or contrasts it (a crisp, acid wine with a rich, fatty dish)."
+      },
+      {
+       "type": "paragraph",
+       "text": "*The interactions:*"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Element",
+        "Rule"
+       ],
+       "rows": [
+        [
+         "Acid",
+         "The drink needs at least the dish's acidity, or it tastes flat"
+        ],
+        [
+         "Tannin",
+         "Softened by fat and protein (red meat); harsh with oily fish, and made metallic by it"
+        ],
+        [
+         "Sweetness",
+         "The drink at least as sweet as the dessert, or it tastes sour"
+        ],
+        [
+         "Salt",
+         "Softens tannin and bitterness; loves acid and sweet (salty cheese with sweet wine)"
+        ],
+        [
+         "Heat (chilli)",
+         "Made hotter by alcohol and tannin; cooled by low alcohol, a little sweetness and fizz"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Pairing a menu with both.* Give each course an alcoholic and a non-alcoholic drink with the same reason, for example an acidic white and a rhubarb shrub with a rich fish."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Seasoning for the drink* (`FL-SEAS`). Adjust the dish's acid and salt slightly when a pairing is planned: a touch more acid in the dish for a high-acid wine. The tasters judge it blind."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Principles tested (60 min).** Taste one dish with four drinks (two alcoholic, two not) to show the acid, tannin, sweetness and heat interactions; note each."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**A menu paired (60 min).** Pair one menu course by course with both kinds of drink. Adjust the seasoning for the pairing and have it judged blind."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** pairings explained by structure; the blind tasters judge the adjusted seasoning balanced."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "A metallic taste",
+         "A tannic red with oily fish",
+         "A white, or a low-tannin drink"
+        ],
+        [
+         "The wine tastes sour",
+         "A dry wine with a sweet dessert",
+         "A drink at least as sweet"
+        ],
+        [
+         "A burning mouth",
+         "A strong alcoholic drink with a hot chilli dish",
+         "Low alcohol, a little sweetness, fizz"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** small sips and spitting; a non-alcoholic pairing for every course (assessment §9)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the four-drink notes; the paired menu with reasons; the blind tasters' forms."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "MNU-4.M4.X1",
+     "title": "Three drinks with three dishes",
+     "description": "A tasting of three wines (or alcohol-free equivalents) with three dishes; notes on each pairing.",
+     "competencies": [
+      {
+       "id": "CK-BEVR",
+       "level": 3
+      },
+      {
+       "id": "FL-SEAS",
+       "level": 5
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** taste how drink and food change each other, and record it precisely: three wines (or alcohol-free equivalents) with three dishes, with notes on each pairing. Adjust the dishes' seasoning for the planned pairings, and have blind tasters judge it with the calibrated form."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** three drinks of different structure (for example a crisp white, a light red and a sweet wine, or a shrub, a smoked tea and an alcohol-free sparkling wine); three small dishes of contrasting structure; blind tasters."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Framework:** the tasting and pairing form."
+      },
+      {
+       "type": "table",
+       "header": [
+        "Drink",
+        "Alone",
+        "With dish 1",
+        "With dish 2",
+        "With dish 3"
+       ],
+       "rows": [
+        [
+         "Acidity, tannin, body, sweetness",
+         "",
+         "What changed, and why",
+         "",
+         ""
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Procedure:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "Taste each drink alone with the form; then each with each dish; note what changes."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "Adjust the seasoning of each dish for its best pairing; serve blind to tasters with the form."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "Write the notes on each pairing by structure."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`CK-BEVR` level 3, the tasting part:** structured notes on three drinks and nine pairings, explained by acidity, tannin, sweetness, salt and heat. The menu pairing is in `MNU-4.M4.X2`."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`FL-SEAS` level 5, a further service:** the seasoning adjusted for the pairing, judged balanced blind with the calibrated form. The five services of the row were completed in `CLS-4.M3.X1` and `CLS-4.M3.X2`."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "AI review reads the forms and the blind tasters' results: *competent* is nine pairings each explained by structure and adjusted seasoning judged balanced blind; *not yet* is notes by flavour only, or no blind judgment."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 1.5 h."
+      }
+     ]
+    },
+    {
+     "id": "MNU-4.M4.X2",
+     "title": "An alcoholic and a non-alcoholic pairing for one menu",
+     "description": "An alcoholic and a non-alcoholic pairing for one of your menus.",
+     "competencies": [
+      {
+       "id": "CK-BEVR",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** pair a whole menu with drinks for every guest: an alcoholic and a non-alcoholic pairing for each course of the dinner-project menu, each with a written reason. Serve them at the dinner project, and have the tasters judge each pairing on their cards."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** the menu; the drinks (one Dutch wine, beer or cider among them, and one home-made shrub or infusion); the glasses; a thermometer for serving temperatures; the guest cards of `MNU-4.M5`."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Procedure:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "Write the pairing for each course, both kinds, with the reason."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "Taste each pairing with the dish before the dinner; adjust."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "Serve at the dinner project at the right temperatures; collect the cards."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "Write notes on any pairing that didn't work, and why."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:** for a three-course menu, an alcoholic and a non-alcoholic drink per course with a written reason; at the table, most tasters judge each pairing to work, and the notes explain any that didn't. With `MNU-4.M4.X1`, this is the `CK-BEVR` level 3 row."
+      },
+      {
+       "type": "paragraph",
+       "text": "AI review reads the pairing plan and the cards: *competent* is both drinks for every course with a reason by structure, most cards judging each pairing to work, and notes on the rest; *not yet* is a course without a non-alcoholic drink, or a failed pairing left unexplained."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 1.5 h, plus the dinner."
+      }
+     ]
+    }
+   ],
+   "items": [
+    {
+     "id": "MNU-4.M4.Q1",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "MNU-4.M4.L1",
+     "safety": false,
+     "question": "Which grape typically gives a light, red-fruited red wine?",
+     "options": [
+      {
+       "key": "A",
+       "text": "Cabernet Sauvignon"
+      },
+      {
+       "key": "B",
+       "text": "Pinot Noir"
+      },
+      {
+       "key": "C",
+       "text": "Syrah"
+      },
+      {
+       "key": "D",
+       "text": "Tempranillo"
+      }
+     ],
+     "answer": "B",
+     "why": "Light body, red fruit."
+    },
+    {
+     "id": "MNU-4.M4.Q2",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "MNU-4.M4.L1",
+     "safety": false,
+     "question": "Where does tannin in wine come from?",
+     "options": [
+      {
+       "key": "A",
+       "text": "sugar"
+      },
+      {
+       "key": "B",
+       "text": "grape skins, seeds and oak"
+      },
+      {
+       "key": "C",
+       "text": "acid"
+      },
+      {
+       "key": "D",
+       "text": "alcohol"
+      }
+     ],
+     "answer": "B",
+     "why": "It dries the mouth."
+    },
+    {
+     "id": "MNU-4.M4.Q3",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "MNU-4.M4.L2",
+     "safety": false,
+     "question": "Which sherry is dry and salty, for salty snacks?",
+     "options": [
+      {
+       "key": "A",
+       "text": "*Pedro Ximénez*"
+      },
+      {
+       "key": "B",
+       "text": "*fino*"
+      },
+      {
+       "key": "C",
+       "text": "*oloroso*"
+      },
+      {
+       "key": "D",
+       "text": "cream sherry"
+      }
+     ],
+     "answer": "B",
+     "why": "*PX* is sweet."
+    },
+    {
+     "id": "MNU-4.M4.Q4",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "MNU-4.M4.L2",
+     "safety": true,
+     "question": "How do you flambé safely?",
+     "options": [
+      {
+       "key": "A",
+       "text": "pour from the bottle into the hot pan"
+      },
+      {
+       "key": "B",
+       "text": "hood off, spirit measured into a jug, pan off the heat to add it, lit at arm's length, lid ready"
+      },
+      {
+       "key": "C",
+       "text": "under the running hood"
+      },
+      {
+       "key": "D",
+       "text": "with the pan on full heat"
+      }
+     ],
+     "answer": "B",
+     "why": "Flambé safety steps."
+    },
+    {
+     "id": "MNU-4.M4.Q5",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "MNU-4.M4.L2",
+     "safety": true,
+     "question": "Wine stirred into a boiling sauce that is taken off the heat at once keeps about how much of its alcohol?",
+     "options": [
+      {
+       "key": "A",
+       "text": "none"
+      },
+      {
+       "key": "B",
+       "text": "about 85 %"
+      },
+      {
+       "key": "C",
+       "text": "10 %"
+      },
+      {
+       "key": "D",
+       "text": "50 %"
+      }
+     ],
+     "answer": "B",
+     "why": "USDA retention, assessment §9."
+    },
+    {
+     "id": "MNU-4.M4.Q6",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "MNU-4.M4.L3",
+     "safety": false,
+     "question": "Which non-alcoholic drink brings tannin, like a red wine?",
+     "options": [
+      {
+       "key": "A",
+       "text": "apple juice"
+      },
+      {
+       "key": "B",
+       "text": "black or smoked tea"
+      },
+      {
+       "key": "C",
+       "text": "sparkling water"
+      },
+      {
+       "key": "D",
+       "text": "a shrub"
+      }
+     ],
+     "answer": "B",
+     "why": "Tea has tannin."
+    },
+    {
+     "id": "MNU-4.M4.Q7",
+     "type": "SCENARIO",
+     "lessonId": "MNU-4.M4.L4",
+     "safety": false,
+     "question": "A rich fish in butter sauce: suggest an alcoholic and a non-alcoholic pairing, with the reason.",
+     "options": [],
+     "answer": "A crisp, high-acid white (a Sauvignon Blanc or a Dutch Johanniter) and a rhubarb or apple shrub with sparkling water: acid cuts the richness.",
+     "why": "Contrast with acid."
+    },
+    {
+     "id": "MNU-4.M4.Q8",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "MNU-4.M4.L4",
+     "safety": true,
+     "question": "A guest is 16. What do you serve them with the paired menu?",
+     "options": [
+      {
+       "key": "A",
+       "text": "a small glass of wine"
+      },
+      {
+       "key": "B",
+       "text": "the non-alcoholic pairing"
+      },
+      {
+       "key": "C",
+       "text": "beer"
+      },
+      {
+       "key": "D",
+       "text": "water only"
+      }
+     ],
+     "answer": "B",
+     "why": "*Geen 18, geen alcohol*, assessment §9."
+    }
+   ]
+  },
+  {
+   "id": "MNU-4.M5",
+   "title": "Hosting and service at home",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** the 8 items of `MNU-4.M5` in the course file, 3 of them safety items. Pass mark 80 %, with every safety item correct."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "MNU-4.M5.L1",
+     "title": "Service at home",
+     "prerequisites": [
+      "NUT-3.M3.L2"
+     ],
+     "competencies": [
+      {
+       "id": "SA-ALLG",
+       "level": 4
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** the guests meet the food at the table. A table set before they arrive, a steady pace and an allergen plan that runs from the shop to the plate let the cook host calmly and every guest eat safely."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** the table, cutlery, glasses and plates for the dinner project; the menu and timeline; the guest's allergen information; coloured boards and tools for allergen-free cooking (`NUT-3`); labels; a phone for label photos."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Table setting.* Cutlery from the outside in, in the order of the courses; a water glass and a glass per drink. Set the table before the guests come."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Order and pace of service.*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "A welcome drink and a small bite."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "Courses about 20–30 minutes apart, adjusted to the table."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "Plates cleared together when everyone has finished."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "The cook sits down with the guests where the plan allows."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Communicating allergens and needs* (`NUT-3`, the 14 allergen groups):"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "Ask when you invite; write it down and confirm it."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "Make an allergen plan from shopping to plate: labels checked and photographed; separate boards, tools and pans; the allergen-free dish made first and covered; plated with its own utensils and served first."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "Tell the guest what is in each dish."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "Make their dish as good as the others, not a reduced version."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*The host's calm.* Follow the timeline; give a helper clear tasks; absorb mistakes without telling the table."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**A service run-through (60 min).** Set the table and rehearse the service order for the dinner project. Write the allergen plan."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** a table and a service plan a helper could follow; the allergen plan complete."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "No time to shop for the guest's need",
+         "Asked about allergies on the day",
+         "Ask when you invite"
+        ],
+        [
+         "Cross-contact at the table",
+         "One spoon in the allergen-free dish and the others",
+         "Its own utensils, served first"
+        ],
+        [
+         "The cook never sits down",
+         "A course served while still plating the next",
+         "Follow the timeline's buffers"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** the allergen plan above, with labels photographed and separate tools; the allergen-free dish made first, covered and served first (`NUT-3`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the allergen plan; the table photo; the service order."
+      }
+     ]
+    },
+    {
+     "id": "MNU-4.M5.L2",
+     "title": "Debrief and feedback",
+     "prerequisites": [
+      "ORI-1.M1.L2"
+     ],
+     "competencies": [
+      {
+       "id": "JD-REFL",
+       "level": 4
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** a dinner teaches most in the week after it, if you collect honest feedback and look for causes. A structured card and a post-mortem that reaches across the whole stage turn one evening into a practice plan."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** paper or a template for the guest card; the post-mortem template; a recent household dinner to try them on; your records from S4 (dinners, logs, prediction entries)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Guest evaluation cards.* Short, structured cards per course: taste, texture, temperature, presentation and the pairing, each on a scale, with one open question. Guests fill them in after the meal, anonymously if they prefer."
+      },
+      {
+       "type": "table",
+       "header": [
+        "Course",
+        "Taste",
+        "Texture",
+        "Temperature",
+        "Presentation",
+        "Pairing"
+       ],
+       "rows": [
+        [
+         "Starter",
+         "1–5",
+         "1–5",
+         "1–5",
+         "1–5",
+         "1–5"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "One open question: \"What would you change about this course?\""
+      },
+      {
+       "type": "paragraph",
+       "text": "*Reading the cards.* Average each attribute per course, then read the open answers. A low score from most guests is a pattern; one low score is a note. Compare the cards with your own log: a course rated cold that left the kitchen late shows the cause."
+      },
+      {
+       "type": "paragraph",
+       "text": "*A structured post-mortem:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "The timeline against the actual times, course by course."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "The control points met or missed."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "The cards summarised."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "What went well and why; what went wrong, its cause and the fix."
+        },
+        {
+         "level": 0,
+         "marker": "5.",
+         "text": "A pattern across the stage's records (at least ten entries: dinners, logs, prediction entries)."
+        },
+        {
+         "level": 0,
+         "marker": "6.",
+         "text": "A practice plan for `MS-S4` and S5."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**The cards and the template (60 min).** Make the guest card and the post-mortem template, and try them on a recent household dinner."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** a post-mortem that ends with a practice plan based on a pattern, not a single evening."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Polite, useless feedback",
+         "Cards that ask only \"did you like it?\"",
+         "Scales per attribute, one open question"
+        ],
+        [
+         "The same mistakes next time",
+         "A list without causes",
+         "Ask why until you reach a cause you can fix"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** a reading out of range or an allergen near-miss written into the post-mortem with its cause, never left out."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the card; the template; the trial post-mortem."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "MNU-4.M5.X1",
+     "title": "A guest card and a post-mortem, used in the dinner project",
+     "description": "A guest evaluation card and a post-mortem template, used in the dinner project.",
+     "competencies": [
+      {
+       "id": "SA-ALLG",
+       "level": 4
+      },
+      {
+       "id": "JD-REFL",
+       "level": 4
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** host guests safely, including one with an allergen, and learn from the evening and the stage, using a guest evaluation card and a post-mortem template at the dinner project. The extensions:"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "one guest has an allergen (or the menu is cooked as if one has, with a household member as the guest), with an allergen plan from shopping to plate, labels photographed and separate tools, and the guest's dish judged as good as the others by the tasters;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "the post-mortem finds a pattern across at least ten entries of the stage and sets a practice plan, and checks whether the plans of `PRO-4.M6.X1` and `PLT-4.M4.X1` worked."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** the templates; the guest's allergen information; the stage's records; separate boards and tools."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Framework:** the card and post-mortem templates of `MNU-4.M5.L2`."
+      },
+      {
+       "type": "table",
+       "header": [
+        "Part",
+        "Contents"
+       ],
+       "rows": [
+        [
+         "Card",
+         "Per course: taste, texture, temperature, presentation, pairing (1–5); one open question"
+        ],
+        [
+         "Post-mortem",
+         "Timeline against actual; control points; cards; causes and fixes; pattern; practice plan"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Procedure:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "Write the allergen plan; photograph the labels; set up separate tools."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "Use the cards at the dinner project; collect them."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "Write the post-mortem: timeline against actual, control points, cards, causes and fixes."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "Review at least ten entries of the stage; write the pattern and the practice plan; check the earlier plans."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`SA-ALLG` level 4:** an allergen plan from shopping to plate, labels photographed, separate tools; the guest's dish as good as the others by the tasters' cards."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`JD-REFL` level 4, the stage review:** a pattern across ten or more entries and a practice plan; the earlier plans checked. `MS-S4.M1.L6` shows whether this plan worked."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "AI review reads the allergen plan, the label photos, the cards and the post-mortem: *competent* is a complete plan with labels and separate tools, the guest's dish scored like the others, and a pattern drawn from ten or more entries with a practice plan; *not yet* is a missing label, shared tools, or a post-mortem without causes."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 2 h, plus the dinner."
+      }
+     ]
+    }
+   ],
+   "items": [
+    {
+     "id": "MNU-4.M5.Q1",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "MNU-4.M5.L1",
+     "safety": false,
+     "question": "How is cutlery laid?",
+     "options": [
+      {
+       "key": "A",
+       "text": "all on the right"
+      },
+      {
+       "key": "B",
+       "text": "from the outside in, in the order of the courses"
+      },
+      {
+       "key": "C",
+       "text": "at random"
+      },
+      {
+       "key": "D",
+       "text": "on the plate"
+      }
+     ],
+     "answer": "B",
+     "why": "The guest works inwards."
+    },
+    {
+     "id": "MNU-4.M5.Q2",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "MNU-4.M5.L1",
+     "safety": true,
+     "question": "When do you ask guests about allergies?",
+     "options": [
+      {
+       "key": "A",
+       "text": "on the day"
+      },
+      {
+       "key": "B",
+       "text": "when inviting, written down and confirmed"
+      },
+      {
+       "key": "C",
+       "text": "after dinner"
+      },
+      {
+       "key": "D",
+       "text": "never"
+      }
+     ],
+     "answer": "B",
+     "why": "The plan starts at shopping."
+    },
+    {
+     "id": "MNU-4.M5.Q3",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "MNU-4.M5.L1",
+     "safety": true,
+     "question": "How is the allergen-free dish prepared?",
+     "options": [
+      {
+       "key": "A",
+       "text": "last, with the same tools"
+      },
+      {
+       "key": "B",
+       "text": "first, with separate boards, tools and pans, covered, plated with its own utensils"
+      },
+      {
+       "key": "C",
+       "text": "in the same pan after rinsing"
+      },
+      {
+       "key": "D",
+       "text": "any time"
+      }
+     ],
+     "answer": "B",
+     "why": "Prevent cross-contact."
+    },
+    {
+     "id": "MNU-4.M5.Q4",
+     "type": "SCENARIO",
+     "lessonId": "MNU-4.M5.L1",
+     "safety": true,
+     "question": "A guest has a sesame allergy, and your dessert uses a seed praline. What do you check and do?",
+     "options": [],
+     "answer": "Check every label for sesame (seeds and blends), make their dessert first with separate tools or choose another crunch, label it, and tell the guest what is in each dish.",
+     "why": "Allergen plan from shopping to plate."
+    },
+    {
+     "id": "MNU-4.M5.Q5",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "MNU-4.M5.L1",
+     "safety": false,
+     "question": "When are plates cleared?",
+     "options": [
+      {
+       "key": "A",
+       "text": "as each guest finishes"
+      },
+      {
+       "key": "B",
+       "text": "together, when everyone has finished"
+      },
+      {
+       "key": "C",
+       "text": "during the next course"
+      },
+      {
+       "key": "D",
+       "text": "never"
+      }
+     ],
+     "answer": "B",
+     "why": "The table's pace."
+    },
+    {
+     "id": "MNU-4.M5.Q6",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "MNU-4.M5.L2",
+     "safety": false,
+     "question": "Which card question gives the most useful feedback?",
+     "options": [
+      {
+       "key": "A",
+       "text": "\"Did you like it?\""
+      },
+      {
+       "key": "B",
+       "text": "per course: taste, texture, temperature, presentation on a scale, and one open question"
+      },
+      {
+       "key": "C",
+       "text": "\"Rate the evening\""
+      },
+      {
+       "key": "D",
+       "text": "none"
+      }
+     ],
+     "answer": "B",
+     "why": "Structured cards."
+    },
+    {
+     "id": "MNU-4.M5.Q7",
+     "type": "SCENARIO",
+     "lessonId": "MNU-4.M5.L2",
+     "safety": false,
+     "question": "The main course was 25 minutes late. What does the post-mortem record?",
+     "options": [],
+     "answer": "The planned and actual times, the cause (for example the oven clash or a late start), the fix for next time, and whether it fits a pattern in earlier records.",
+     "why": "[J] causes and fixes."
+    },
+    {
+     "id": "MNU-4.M5.Q8",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "MNU-4.M5.L2",
+     "safety": false,
+     "question": "What should a post-mortem end with?",
+     "options": [
+      {
+       "key": "A",
+       "text": "an apology"
+      },
+      {
+       "key": "B",
+       "text": "a practice plan based on a pattern across records"
+      },
+      {
+       "key": "C",
+       "text": "the menu"
+      },
+      {
+       "key": "D",
+       "text": "the guests' names"
+      }
+     ],
+     "answer": "B",
+     "why": "It feeds the next stage."
+    }
+   ]
+  },
+  {
+   "id": "MNU-4.M6",
+   "title": "Dinner project",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** none for this module. Its judgment objective (adapting during service) is shown by the log of changes and reasons in `MNU-4.M6.X1`."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "MNU-4.M6.L1",
+     "title": "A three-course dinner rehearsal",
+     "prerequisites": [
+      "MNU-4.M3.L3"
+     ],
+     "competencies": [
+      {
+       "id": "CR-MENU",
+       "level": 4
+      },
+      {
+       "id": "KM-PLAN",
+       "level": 4
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** the dinner project puts every plan of this course to work at one table, with the same structure as the milestone `MS-S4`. Meeting every part once before the gate, and adapting calmly when something slips, is the point."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** everything made in this course: the menu (`MNU-4.M1`), order list and make-ahead plan (`MNU-4.M2`), timeline, equipment grid and cooling plan (`MNU-4.M3`), pairings (`MNU-4.M4`), service plan, allergen plan and cards (`MNU-4.M5`); the ingredients and drinks; plates for six to eight; the probe; the log."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Executing the plan.* Follow the plans for four to six guests: the prep days from the make-ahead plan, then the evening from the timeline and the grid. Log every control point as it happens."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Adapting during service.* When something slips (a sauce splits, a course runs late, a guest is delayed):"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "Stop and name the problem."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "Choose: use the buffer, the fallback or the \"first thing to drop\"."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "Decide calmly, and tell a helper what changes."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "Record the change and its reason in the log."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "A log line: \"19:42, beurre blanc split. Fallback: reduced stock with a little butter whisked in off the heat; fish served at 19:50, 3 minutes inside the buffer.\""
+      },
+      {
+       "type": "paragraph",
+       "text": "*A rehearsal for `MS-S4`.* The dinner uses the same structure as the milestone: menu, plan, prep days, service, guest cards, post-mortem. You meet every part once before the gate."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**The dinner (the evening, after the prep days).** Cook and serve from the plan; keep the log; photograph every course; collect the cards."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "courses served within the buffers;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "every change logged with a reason;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "calm in the kitchen and at the table."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "The evening falls apart after one slip",
+         "The plan abandoned at the first slip",
+         "Use the buffer and the fallback; keep to the plan"
+        ],
+        [
+         "The post-mortem can't find the cause",
+         "A missed control point hidden",
+         "Log every miss, with what you did"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** every holding, reheating and cooling control point probed and logged (assessment §9); the allergen plan followed from the first prep day; the non-alcoholic pairing served to every guest who wants it."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the log with every control point and change; photos of every course; the cards."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "MNU-4.M6.X1",
+     "title": "A three-course dinner for 4–6 guests",
+     "description": "A three-course dinner for 4–6 guests.",
+     "competencies": [
+      {
+       "id": "CR-MENU",
+       "level": 4
+      },
+      {
+       "id": "KM-PLAN",
+       "level": 4
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** deliver a three-course dinner for four to six guests from your own plan: the menu chosen in `MNU-4.M1.X1` (with drinks and a dietary need), the plans of `MNU-4.M2.X1` and `MNU-4.M3.X1`, the pairings of `MNU-4.M4.X2` and the cards of `MNU-4.M5.X1`."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** the menu's ingredients and drinks, bought from the order list; the full home kitchen; plates for six to eight; the probe; the log."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Procedure:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "Run the prep days from the make-ahead plan; log the control points."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "Cook and serve the dinner from the timeline; log the actual times and every change."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "Photograph every course; collect the guests' cards."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "Compare the timeline with the actual times; hand the results to the post-mortem of `MNU-4.M5.X1`."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`CR-MENU` level 4:** the themed menu with drinks and a dietary need and its rationale, and the guests' cards confirming the progression and balance."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`KM-PLAN` level 4:** the multi-day plan with control points, the log showing every control point met or a reasoned change."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "AI review reads the menu, the log, the photos and the cards: *competent* is every course served within its buffer or a logged change with a reason, control points met, and cards that confirm the progression and balance; *not yet* is a missed control point without action, a course without a photo, or a log written afterwards from memory."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** two prep days and the evening."
+      }
+     ]
+    }
+   ],
+   "items": []
+  }
+ ]
+}

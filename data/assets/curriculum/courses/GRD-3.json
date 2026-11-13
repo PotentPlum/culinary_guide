@@ -1,0 +1,3306 @@
+{
+ "schemaVersion": 1,
+ "id": "GRD-3",
+ "introduction": [
+  {
+   "type": "paragraph",
+   "text": "**Before you start.** The *garde manger* is the cold station of a classical kitchen: salads, dressings, cold sauces, cured fish, terrines, cheese and charcuterie, cold starters and canapés. For a home cook it is the station of **preparing ahead**: almost everything here is made hours or days before it is served, which makes it the backbone of cooking for guests. The course builds on the vinaigrettes and mayonnaise of `SAU-2` and the fish of `FSH-2`:"
+  },
+  {
+   "type": "list",
+   "items": [
+    {
+     "level": 0,
+     "marker": "",
+     "text": "**salads** as main courses, leafy and composed, with grains and legumes;"
+    },
+    {
+     "level": 0,
+     "marker": "",
+     "text": "**dressings and cold sauces** by ratio, across cuisines;"
+    },
+    {
+     "level": 0,
+     "marker": "",
+     "text": "**cured and marinated fish,** with the parasite rule of assessment §9;"
+    },
+    {
+     "level": 0,
+     "marker": "",
+     "text": "**a terrine,** the first forcemeat cooked to a core temperature and pressed;"
+    },
+    {
+     "level": 0,
+     "marker": "",
+     "text": "**cold platters:** a cheese and charcuterie board, a plated cold starter, sandwiches, toasts and canapés."
+    }
+   ]
+  },
+  {
+   "type": "paragraph",
+   "text": "*Food held cold is still food at risk.* The rules of assessment §9 apply throughout:"
+  },
+  {
+   "type": "list",
+   "items": [
+    {
+     "level": 0,
+     "marker": "",
+     "text": "the fridge at 4 °C; platters out of the fridge for at most 2 hours; leftovers kept at most 2 days;"
+    },
+    {
+     "level": 0,
+     "marker": "",
+     "text": "fish eaten raw or cured is frozen first;"
+    },
+    {
+     "level": 0,
+     "marker": "",
+     "text": "raw-yolk sauces are made with pasteurised egg for every guest;"
+    },
+    {
+     "level": 0,
+     "marker": "",
+     "text": "raw and lightly cooked animal foods (cured or marinated fish, smoked fish served cold, soft raw-milk cheese, raw cured meats) are not served to risk groups, nor liver pâté in pregnancy."
+    }
+   ]
+  },
+  {
+   "type": "paragraph",
+   "text": "Leaves and vegetables follow the Dutch seasons: lettuces, rocket and spinach from spring to autumn; chicory (*witlof*), lamb's lettuce (*veldsla*), winter purslane, red cabbage, kale and roots in winter. Cheeses are Dutch where possible: farmhouse Gouda, aged Gouda, goat's cheese, a Dutch blue. Plan about four weeks: the cure takes two days and the terrine two, and the salads are the week's main courses."
+  },
+  {
+   "type": "paragraph",
+   "text": "**Have ready:** a salad spinner; a loaf tin or terrine mould; a deep roasting tin for a water bath; the 0.1 g scale; the freezer thermometer; the probe; a board and two food tins for pressing; mixing bowls; cheese knives and a board; pasteurised egg yolks; the curing log; the component table; the journal."
+  }
+ ],
+ "modules": [
+  {
+   "id": "GRD-3.M1",
+   "title": "Salads",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** none for this module. Its judgment, matching leaves and dressing, is shown on the forms of `GRD-3.M1.L1` and the cards of `GRD-3.M1.X1`."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "GRD-3.M1.L1",
+     "title": "Leafy salads",
+     "prerequisites": [
+      "SAU-2.M6.L1"
+     ],
+     "competencies": [
+      {
+       "id": "TS-GRD",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** a green salad is the simplest dish in this course and the one most often spoiled: wet leaves, a dressing poured on too early, the wrong dressing for the leaf. Done well, it is a minute's work."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** three leaves: a tender one (butter lettuce or lamb's lettuce), a bitter one (chicory, radicchio or frisée) and a peppery one (rocket or watercress); oil, vinegars, mustard, honey or apple syrup; a crème fraîche or buttermilk base; the salad spinner; a wide bowl; a clean towel; the tasting form."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Washing and drying.* Soak the leaves in plenty of cold water and lift them out, so the grit stays at the bottom. Spin them completely dry: wet leaves dilute the dressing and won't hold it."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Keeping.* Dried leaves rolled in a damp towel, in a container in the fridge, stay crisp for a day or two."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Dressing at the last moment:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "the dressing in the bottom of a wide bowl;"
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "the leaves on top;"
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "tossed by hand just before serving, with just enough to coat."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "Seasoned leaves taste better than a seasoned dressing poured over."
+      },
+      {
+       "type": "paragraph",
+       "text": "*The judgment: matching leaves and dressing.*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**tender leaves** (butter lettuce, lamb's lettuce) take a light vinaigrette;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**sturdy and bitter leaves** (chicory, radicchio, kale, frisée) take a robust, creamy or warm dressing;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**peppery leaves** (rocket, watercress) like acid and a little sweetness."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Adding interest:* herbs as leaves, shaved raw vegetables, a crunchy element (`FLV-3.M4`), a cheese."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Three leaves, three dressings (45 min).** Dress each of the three leaves two ways: a light vinaigrette and a creamy or sweetened dressing. Taste them, and reason the best match for each on the form."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**A side salad for dinner (30 min).** Wash, dry and dress a salad at the table, and photograph it within a minute."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** leaves glossy, not wet or soggy; no dressing pooling in the bowl; each leaf seasoned."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Limp, soggy leaves",
+         "Dressing an hour ahead",
+         "Dress at the last moment"
+        ],
+        [
+         "A watery, bland salad",
+         "Wet leaves",
+         "Spin them completely dry"
+        ],
+        [
+         "Collapsed lettuce",
+         "A heavy dressing on tender leaves",
+         "A light vinaigrette for tender leaves"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** leaves washed even when bought \"ready to eat\" if they look soiled; kept in the fridge at 4 °C."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the form with the six pairings; the photo."
+      }
+     ]
+    },
+    {
+     "id": "GRD-3.M1.L2",
+     "title": "Composed, grain and legume salads",
+     "prerequisites": [
+      "GRD-3.M1.L1"
+     ],
+     "competencies": [
+      {
+       "id": "TS-GRD",
+       "level": 3
+      },
+      {
+       "id": "CR-COMP",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** a composed salad is a whole meal on a plate, built like any other dish: a base, a main element, a contrast and a dressing that ties it together. With grains or legumes it satisfies as a main course."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** a grain or legume (barley, spelt, lentils or beans); a roasted vegetable; a protein or a cheese; leaves; herbs; seeds; a dressing; the component table."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*The parts of a composed salad:*"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Part",
+        "Examples"
+       ],
+       "rows": [
+        [
+         "Base",
+         "Leaves, grains, legumes, potatoes"
+        ],
+        [
+         "Main element",
+         "A protein, or a roasted vegetable"
+        ],
+        [
+         "Contrast",
+         "Crunch, acid, bitterness"
+        ],
+        [
+         "Dressing",
+         "The part that ties it together"
+        ],
+        [
+         "Garnish",
+         "Herbs, seeds"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Grains and legumes* are dressed while still warm, because they absorb the dressing (and the salt) as they cool. The tender elements are added cold, afterwards."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Balance:* taste, texture, temperature and colour. The component table names what each part brings."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Main-course salads* need enough protein and starch to satisfy, and are dense enough to be a meal."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Seasonal examples:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "a warm potato and smoked-mackerel salad with a mustard dressing. Smoked fish served cold is in the risk-group row of §9, so for a guest in a risk group the mackerel is heated through;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "a lentil, roasted beetroot and goat's cheese salad;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "a barley, kale and apple salad;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "a *salade niçoise*-style plate in summer."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**A grain or legume salad (75 min).** Cook the grain or legume, dress it warm, and finish it with the cold elements. Taste it again after an hour."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**A composed plate (75 min).** Assemble a composed salad from its components, write its component table, and photograph it."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** grains seasoned through; each component distinct; a clear contrast."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Grains that taste flat inside",
+         "Grains dressed cold",
+         "Dress them while warm"
+        ],
+        [
+         "A mush",
+         "Everything chopped together",
+         "Keep each component distinct"
+        ],
+        [
+         "A dull salad",
+         "No acid",
+         "Acid in the dressing, or a pickle"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** cooked grains and legumes cooled quickly and kept in the fridge at most 2 days; smoked fish heated through for risk groups (assessment §9)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the component table; the photos."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "GRD-3.M1.X1",
+     "title": "Three seasonal salads as main courses",
+     "description": "Three seasonal salads as main courses across a week.",
+     "competencies": [
+      {
+       "id": "TS-GRD",
+       "level": 3
+      },
+      {
+       "id": "CR-COMP",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** make three salads that satisfy as main courses, each composed on purpose."
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**The brief:** three salads across a week, each a main course for the household, from seasonal produce."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**The constraints:** each salad has a component table (base, main, contrast, dressing, garnish), written before cooking; grains and legumes dressed warm; leaves dressed at the last moment; the dressings of `SAU-2.M6`."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**The criteria:**"
+        },
+        {
+         "level": 1,
+         "marker": "",
+         "text": "each salad satisfying as a main course;"
+        },
+        {
+         "level": 1,
+         "marker": "",
+         "text": "the components distinct, with a clear contrast;"
+        },
+        {
+         "level": 1,
+         "marker": "",
+         "text": "the household's cards judge the balance;"
+        },
+        {
+         "level": 1,
+         "marker": "",
+         "text": "the photos pass AI review."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**The record:**"
+        },
+        {
+         "level": 1,
+         "marker": "1.",
+         "text": "Plan the three salads and their component tables."
+        },
+        {
+         "level": 1,
+         "marker": "2.",
+         "text": "Make each; dress at the right moment; photograph at service."
+        },
+        {
+         "level": 1,
+         "marker": "3.",
+         "text": "The household fills in cards on balance and satisfaction."
+        },
+        {
+         "level": 1,
+         "marker": "4.",
+         "text": "Note what you would change."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** seasonal leaves, grains or legumes, vegetables, and a protein or cheese for each salad; the dressings; the component table; the cards."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`CR-COMP` level 3:** plates composed from briefs, with component tables and the tasters' judgment of balance."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`TS-GRD` level 3, in part:** salads composed and dressed to standard. The cured fish, the terrine and the cold starter of the row follow in `GRD-3.M3.X1`, `GRD-3.M4.X1` and `GRD-3.M5.X1`."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "AI review scores the photos: *competent* is glossy, freshly dressed leaves and distinct components; *not yet* is a wilted or pooled salad, or a plate with no contrast."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 3 h over a week."
+      }
+     ]
+    }
+   ],
+   "items": []
+  },
+  {
+   "id": "GRD-3.M2",
+   "title": "Dressings and cold sauces",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** the 8 items of `GRD-3.M2` in the course file, 2 of them safety items. Pass mark 80 %, with every safety item correct."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "GRD-3.M2.L1",
+     "title": "Emulsified and creamy dressings",
+     "prerequisites": [
+      "SAU-2.M4.L1"
+     ],
+     "competencies": [
+      {
+       "id": "TS-SAU",
+       "level": 4
+      },
+      {
+       "id": "RD-RATO",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** a handful of ratios gives you most of the dressings you will ever need. Knowing why some hold and others separate lets you make them stable, and fix them when they break."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** oil; vinegar; mustard; buttermilk; yoghurt; tahini; lemon; garlic; herbs; pasteurised egg yolks and pasteurised mayonnaise or the ingredients for it; four jars; a whisk; the phone for filming."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Ratios:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**a vinaigrette:** about three parts oil to one part acid by volume, varied to taste (`SAU-2.M6`);"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**a mustard-emulsified dressing:** mustard as the emulsifier, holding the oil longer;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**creamy dressings:** yoghurt, buttermilk, crème fraîche or mayonnaise as the base, thinned with acid and water, with herbs;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**a tahini dressing:** tahini, lemon, water and garlic. Add the water a little at a time: tahini seizes before it loosens."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Stability:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "a temporary emulsion (a vinaigrette) separates and is shaken again;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "an emulsifier (mustard, egg yolk, tahini, honey) holds it;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "dairy bases are stable, but thin with acid and salt over hours."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Repairing a broken emulsion* (`SAU-2.M4`): a pasteurised yolk or a spoon of mustard in a clean bowl, and the broken sauce whisked in drop by drop."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Storing.* Dressings with dairy, egg or fresh garlic go in the fridge, used within 2 days; a plain vinaigrette keeps longer in the fridge. Any yolk that stays raw in the dressing is pasteurised, for every guest (assessment §9)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Four dressings (45 min).** Make a mustard vinaigrette, a buttermilk-herb, a yoghurt and a tahini dressing, by ratio. Check their stability after 30 minutes."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Break and repair (30 min).** Make a mayonnaise-based dressing from a pasteurised yolk, break it on purpose by adding the oil too fast, and repair it. Film the repair."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** each dressing at a coating consistency; the repaired emulsion glossy and stable."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "A dressing that separates on the leaves",
+         "No emulsifier in a dressing meant to hold",
+         "Mustard, honey or a yolk"
+        ],
+        [
+         "Thick, clumped tahini",
+         "The water went in too fast",
+         "A little water at a time, whisking"
+        ],
+        [
+         "A sour, risky dressing",
+         "A creamy dressing kept a week",
+         "Within 2 days, in the fridge"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** raw yolks pasteurised; dressings with dairy, egg or garlic kept in the fridge and used within 2 days (assessment §9)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the four ratios; the repair video."
+      }
+     ]
+    },
+    {
+     "id": "GRD-3.M2.L2",
+     "title": "Cold sauces",
+     "prerequisites": [
+      "GRD-3.M2.L1"
+     ],
+     "competencies": [
+      {
+       "id": "TS-SAU",
+       "level": 4
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** a cold sauce, made ahead, turns plain cold meat, fish or vegetables into a dish. Five classics from five cuisines rest on two base ratios."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** eggs for hard-boiling; capers; gherkins; herbs; strained yoghurt; cucumber; garlic; dill; parsley; oregano; chilli; vinegar; olive oil; the dishes to pair them with."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Five cold sauces and their logic:*"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Sauce",
+        "Origin",
+        "Built from",
+        "For"
+       ],
+       "rows": [
+        [
+         "*Gribiche*",
+         "France",
+         "An emulsion on hard-boiled yolk, with capers, gherkins and herbs",
+         "Fish, asparagus, cold meat"
+        ],
+        [
+         "*Salsa verde*",
+         "Italy",
+         "Chopped herbs, capers, anchovy, oil and vinegar (`FLV-3.M1`)",
+         "Fish, boiled meat"
+        ],
+        [
+         "*Tzatziki*",
+         "Greece",
+         "Strained yoghurt, salted and drained cucumber, garlic, dill",
+         "Lamb, grilled vegetables"
+        ],
+        [
+         "*Chimichurri*",
+         "Argentina",
+         "Parsley, oregano, garlic, chilli, vinegar and oil",
+         "Grilled meat"
+        ],
+        [
+         "*Romesco*",
+         "Catalonia",
+         "Roasted peppers and tomatoes, bread, olive oil, vinegar",
+         "Grilled vegetables, fish"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Romesco* is traditionally made with almonds or hazelnuts. Here it is made with toasted bread and seeds, or with nuts only where no guest is allergic."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Two base ratios* cover most cold sauces:"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**an emulsion base:** yolk or mustard, and oil;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**a herb-acid base:** herbs, acid, oil and salt."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "The variation is in the flavourings."
+      },
+      {
+       "type": "paragraph",
+       "text": "*The judgment: pairing.*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "rich with sharp: *gribiche* with cold beef;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "grilled with herby and acid: *chimichurri* with steak;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "spicy with cooling: *tzatziki* with lamb."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Two sauces of each family (75 min).** Make *gribiche* and *tzatziki*, then *salsa verde* and *chimichurri*."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Pair them (45 min).** Serve each with a dish (cold beef, asparagus or a winter vegetable, grilled meat, roast lamb), and write the reason for each choice."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** each sauce balanced and at its consistency; the pairings reasoned."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Watery *tzatziki*",
+         "Unsalted cucumber",
+         "Salt and drain it for 20 minutes first"
+        ],
+        [
+         "A green purée",
+         "*Chimichurri* blended",
+         "Chop by hand"
+        ],
+        [
+         "A dish you can't taste",
+         "A sauce that drowns the dish",
+         "A spoonful beside or under, not over"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** nuts are an allergen (`SAF-1.M4`): *romesco* with nuts only where no guest is allergic, and labelled; the sauces kept in the fridge and used within 2 days."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the four sauces and the reasons for each pairing."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "GRD-3.M2.X1",
+     "title": "Four cold sauces from two base ratios",
+     "description": "Four cold sauces from two base ratios.",
+     "competencies": [
+      {
+       "id": "TS-SAU",
+       "level": 4
+      },
+      {
+       "id": "RD-RATO",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** make four cold sauces from two base ratios from memory, change one ratio on purpose, and repair a broken emulsion. Make two sauces from each base, weighed as you go; change one ratio on purpose (for example more acid in the herb base) and record the effect; repair a broken emulsion on video; choose each sauce for a dish with a reason."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** pasteurised egg yolks and hard-boiled eggs; mustard; oil; vinegar; herbs; capers; gherkins; yoghurt; cucumber; the dishes they go with; the scale; the tasting forms; the phone for filming."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Framework:** the two base ratios."
+      },
+      {
+       "type": "table",
+       "header": [
+        "Part",
+        "What it is",
+        "Your decisions"
+       ],
+       "rows": [
+        [
+         "Emulsion base",
+         "Yolk (pasteurised) or mustard, and oil, whisked in slowly",
+         "Your ratio, from memory"
+        ],
+        [
+         "Herb-acid base",
+         "Herbs, acid, oil and salt",
+         "Your ratio, from memory"
+        ],
+        [
+         "Four sauces",
+         "Two from each base, weighed",
+         "Which four"
+        ],
+        [
+         "The change",
+         "One ratio changed on purpose; the effect recorded",
+         "Which ratio, which way"
+        ],
+        [
+         "The repair",
+         "One emulsion broken and repaired on video",
+         "—"
+        ],
+        [
+         "Pairing",
+         "Each sauce with a dish, with the reason",
+         "Which dish"
+        ],
+        [
+         "Storage",
+         "In the fridge, used within 2 days",
+         "—"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Procedure:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "Write the two ratios from memory; weigh as you go."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "Make the four sauces; change one ratio on purpose; record the effect."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "Break and repair one emulsion on video."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "Serve each with its dish; fill in the forms; write why each sauce suits its dish."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`TS-SAU` level 4, in part:** a broken emulsion repaired, the cold sauces at their consistency, and the sauce for a dish chosen with a reason (the second dish of the row). The braising sauce is in `SLW-3.M3.X1` and the barbecue sauce in `FIR-3.M4.X1`."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`RD-RATO` level 3:** sauces from ratios from memory, weighed and to standard; one ratio changed on purpose with the effect recorded. The forcemeat ratio of `GRD-3.M4.X1` adds a third preparation."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "AI review watches the repair and reads the forms: *competent* is a glossy, stable repaired emulsion and a reason for each pairing; *not yet* is a repair that breaks again, or ratios looked up rather than recalled."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 2 h."
+      }
+     ]
+    }
+   ],
+   "items": [
+    {
+     "id": "GRD-3.M2.Q1",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "GRD-3.M2.L1",
+     "safety": false,
+     "question": "What is the classic vinaigrette ratio by volume?",
+     "options": [
+      {
+       "key": "A",
+       "text": "1 oil : 1 acid"
+      },
+      {
+       "key": "B",
+       "text": "about 3 oil : 1 acid"
+      },
+      {
+       "key": "C",
+       "text": "10 oil : 1 acid"
+      },
+      {
+       "key": "D",
+       "text": "1 oil : 3 acid"
+      }
+     ],
+     "answer": "B",
+     "why": "A starting point, varied to taste."
+    },
+    {
+     "id": "GRD-3.M2.Q2",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "GRD-3.M2.L1",
+     "safety": false,
+     "question": "Which ingredient makes a vinaigrette hold longer?",
+     "options": [
+      {
+       "key": "A",
+       "text": "salt"
+      },
+      {
+       "key": "B",
+       "text": "mustard"
+      },
+      {
+       "key": "C",
+       "text": "pepper"
+      },
+      {
+       "key": "D",
+       "text": "water"
+      }
+     ],
+     "answer": "B",
+     "why": "An emulsifier."
+    },
+    {
+     "id": "GRD-3.M2.Q3",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "GRD-3.M2.L1",
+     "safety": false,
+     "question": "A dressing based on mayonnaise breaks. How do you repair it?",
+     "options": [
+      {
+       "key": "A",
+       "text": "add more oil quickly"
+      },
+      {
+       "key": "B",
+       "text": "whisk it drop by drop into a pasteurised yolk or a spoon of mustard in a clean bowl"
+      },
+      {
+       "key": "C",
+       "text": "heat it"
+      },
+      {
+       "key": "D",
+       "text": "add water all at once"
+      }
+     ],
+     "answer": "B",
+     "why": "Restart the emulsion."
+    },
+    {
+     "id": "GRD-3.M2.Q4",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "GRD-3.M2.L1",
+     "safety": true,
+     "question": "How long does a buttermilk-herb dressing with fresh garlic keep?",
+     "options": [
+      {
+       "key": "A",
+       "text": "a month"
+      },
+      {
+       "key": "B",
+       "text": "at most 2 days in the fridge"
+      },
+      {
+       "key": "C",
+       "text": "a week on the counter"
+      },
+      {
+       "key": "D",
+       "text": "indefinitely"
+      }
+     ],
+     "answer": "B",
+     "why": "Assessment §9 leftovers rule; garlic needs refrigeration."
+    },
+    {
+     "id": "GRD-3.M2.Q5",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "GRD-3.M2.L2",
+     "safety": false,
+     "question": "Why is cucumber salted and drained for *tzatziki*?",
+     "options": [
+      {
+       "key": "A",
+       "text": "for colour"
+      },
+      {
+       "key": "B",
+       "text": "to draw out water so the sauce stays thick"
+      },
+      {
+       "key": "C",
+       "text": "to soften it"
+      },
+      {
+       "key": "D",
+       "text": "tradition"
+      }
+     ],
+     "answer": "B",
+     "why": "Otherwise it turns watery."
+    },
+    {
+     "id": "GRD-3.M2.Q6",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "GRD-3.M2.L2",
+     "safety": false,
+     "question": "Which sauce suits a grilled steak?",
+     "options": [
+      {
+       "key": "A",
+       "text": "*tzatziki*"
+      },
+      {
+       "key": "B",
+       "text": "*chimichurri*"
+      },
+      {
+       "key": "C",
+       "text": "custard"
+      },
+      {
+       "key": "D",
+       "text": "*béchamel*"
+      }
+     ],
+     "answer": "B",
+     "why": "Herby and acid against grilled meat."
+    },
+    {
+     "id": "GRD-3.M2.Q7",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "GRD-3.M2.L2",
+     "safety": false,
+     "question": "*Gribiche* is built on:",
+     "options": [
+      {
+       "key": "A",
+       "text": "raw yolk only"
+      },
+      {
+       "key": "B",
+       "text": "cooked egg yolk as the emulsion base, with capers, gherkins and herbs"
+      },
+      {
+       "key": "C",
+       "text": "cream"
+      },
+      {
+       "key": "D",
+       "text": "tomato"
+      }
+     ],
+     "answer": "B",
+     "why": "The classic French cold sauce."
+    },
+    {
+     "id": "GRD-3.M2.Q8",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "GRD-3.M2.L2",
+     "safety": true,
+     "question": "A *romesco* traditionally contains nuts. A guest has a tree-nut allergy. What do you do?",
+     "options": [
+      {
+       "key": "A",
+       "text": "use fewer nuts"
+      },
+      {
+       "key": "B",
+       "text": "make it with toasted bread and seeds, check every label, and use clean tools"
+      },
+      {
+       "key": "C",
+       "text": "serve it anyway"
+      },
+      {
+       "key": "D",
+       "text": "pick out the nuts"
+      }
+     ],
+     "answer": "B",
+     "why": "Allergen rule (`SAF-1.M4`)."
+    }
+   ]
+  },
+  {
+   "id": "GRD-3.M3",
+   "title": "Cured and marinated fish",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** the 8 items of `GRD-3.M3` in the course file, 5 of them safety items. Pass mark 80 %, with every safety item correct."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "GRD-3.M3.L1",
+     "title": "Gravad salmon",
+     "prerequisites": [
+      "SAF-3.M1.L3",
+      "FSH-2.M2.L1"
+     ],
+     "competencies": [
+      {
+       "id": "TS-GRD",
+       "level": 3
+      },
+      {
+       "id": "SA-HRPR",
+       "level": 4
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** gravad salmon is the Nordic classic of the cold kitchen, and the first raw-fish dish of the program. It is simple to make, and safe only if you follow the freezing rule before you start."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** the salmon of `GRD-3.M3.X1`, frozen first; salt; sugar; dill; pepper; the 0.1 g scale; a dish; cling film; a board and a light weight; the freezer thermometer; the curing log; a long, thin knife."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*What a cure does.* Salt draws out water and seasons the flesh; sugar balances the salt and adds to the firming. The flesh becomes denser, silkier and translucent. A cure seasons and changes texture. It does **not** make the fish safe from parasites."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Freezing first* (assessment §9). Fish eaten cured or raw is:"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "frozen to −20 °C or below in all parts for at least 24 hours, or bought with that treatment (ask the fishmonger for fish frozen for raw use);"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "or frozen at home only in a freezer shown by a thermometer to hold −20 °C or below, for 7 days."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "A freezer at −18 °C does not qualify. The fish is thawed in the fridge."
+      },
+      {
+       "type": "paragraph",
+       "text": "*The cure by ratio.* Salt and sugar are weighed as a percentage of the fish's weight, and written in the log, with dill and pepper. The fillet goes skin-on, covered, pressed under a light weight, into the fridge at 4 °C for about two days, turned once a day, with the liquid poured off."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Finishing.* Rinse or scrape off the cure, dry the fillet, and slice it thin, at an angle, off the skin."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Storing and serving.* Wrapped, in the fridge at 4 °C, and eaten within 2 days of finishing the cure: the program applies the leftovers rule of §9, having no checked figure for longer. It is not served to risk groups (§9)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**The cure (45 min, then 2 days).** Weigh, cure and press the salmon of `GRD-3.M3.X1`; turn it daily; then finish and slice it."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** firm, translucent, evenly coloured flesh; thin slices that hold together."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "A parasite risk",
+         "Unfrozen fresh salmon",
+         "Frozen first by the §9 rule, with proof"
+        ],
+        [
+         "Too salty, or soft",
+         "The cure guessed, not weighed",
+         "Weigh it against the fish"
+        ],
+        [
+         "Ragged, chewy slices",
+         "Slicing thick and against the grain",
+         "Thin, at an angle, a long knife"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** the raw-fish and risk-group rows of assessment §9: frozen first, with the proof kept; thawed and cured in the fridge at 4 °C; eaten within 2 days; not served to risk groups."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the curing log, from the freezer to the plate."
+      }
+     ]
+    },
+    {
+     "id": "GRD-3.M3.L2",
+     "title": "Acid-marinated fish",
+     "prerequisites": [
+      "GRD-3.M3.L1"
+     ],
+     "competencies": [
+      {
+       "id": "TS-GRD",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** a *ceviche* looks cooked: the fish turns white and firm in the lime. It isn't, and knowing the difference is what makes it safe."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** firm white fish frozen first by the §9 rule (for example cod or pollack sold frozen for raw use); limes or lemons; salt; a red onion; chilli; coriander or parsley; two bowls; a timer."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*What acid does.* It denatures the proteins at the surface, so the fish turns opaque and firm as if cooked. It is not cooked: **acid does not kill pathogens the way heat does, and it does not kill parasites.**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*The rules* (assessment §9):"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "the fish frozen first, as for the cure;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "very fresh, kept cold, marinated briefly and served at once;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "not served to risk groups."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Ceviche-style:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "small cubes or thin slices of firm white fish, previously frozen;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "lime or lemon juice, salt, onion, chilli and herbs;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "marinated 10–20 minutes for a tender bite, longer for a firmer texture."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Other traditions.* Soused herring (*zure haring*) and pickled fish use vinegar, and are sold frozen-treated by law. The home version starts from fish frozen first."
+      },
+      {
+       "type": "paragraph",
+       "text": "*A guest in a risk group* gets a different starter, or a cooked version of the fish, to 63 °C (the fish row of §9). Plan it when you invite them, not at the table."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**A *ceviche*-style starter (45 min active, 1 h in total).** Marinate the fish in two bowls, one for 10 minutes and one for 30 minutes; compare the texture, and serve at once."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** opaque outside, slightly translucent inside at the shorter time; bright and fresh."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "A parasite risk",
+         "Fresh unfrozen wild fish",
+         "Frozen first by the §9 rule"
+        ],
+        [
+         "Chalky, dry fish",
+         "Marinating for hours",
+         "10–20 minutes, then serve"
+        ],
+        [
+         "A guest put at risk",
+         "Serving it to a pregnant guest",
+         "A different starter, or the fish cooked to 63 °C"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** the raw-fish and risk-group rows of assessment §9; the fish kept cold until it is marinated, and served at once."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the texture notes at 10 and 30 minutes; the proof of freezing."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "GRD-3.M3.X1",
+     "title": "Gravad salmon by ratio",
+     "description": "Gravad salmon by ratio, with a curing log.",
+     "competencies": [
+      {
+       "id": "TS-GRD",
+       "level": 3
+      },
+      {
+       "id": "SA-HRPR",
+       "level": 4
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** cure a salmon fillet by a weighed ratio, safely, with a complete log. The fillet is frozen first by the §9 rule, with the proof kept (the label or the freezer log), thawed in the fridge, cured by weight ratio, pressed for about two days, sliced and served. The log shows every control point: freezing, thawing, the fridge temperature, the cure time and the storage."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** a skin-on salmon fillet of about 500–700 g (MSC- or ASC-labelled); salt; sugar; dill; pepper; the 0.1 g scale; a dish, a board and a weight; the freezer thermometer; the curing log."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Framework:** the cure."
+      },
+      {
+       "type": "table",
+       "header": [
+        "Part",
+        "What it is",
+        "Your decisions"
+       ],
+       "rows": [
+        [
+         "Freezing",
+         "Bought frozen for raw use (label kept), or −20 °C or below for 7 days in a freezer proven by thermometer",
+         "Which"
+        ],
+        [
+         "Thawing",
+         "In the fridge",
+         "—"
+        ],
+        [
+         "Ratio",
+         "Salt and sugar as a percentage of the fish's weight; a starting point is 5 % salt and 5 % sugar",
+         "Your ratio, and why"
+        ],
+        [
+         "Flavour",
+         "Dill and pepper",
+         "Any additions"
+        ],
+        [
+         "Cure",
+         "Skin-on, covered, pressed lightly, in the fridge at 4 °C for about two days, turned daily",
+         "—"
+        ],
+        [
+         "Finish",
+         "Cure rinsed or scraped off, dried, sliced thin at an angle",
+         "—"
+        ],
+        [
+         "Storage",
+         "Wrapped, at 4 °C, eaten within 2 days",
+         "—"
+        ],
+        [
+         "Guests",
+         "Not served to risk groups",
+         "—"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Procedure:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "Freeze the fish (or buy it frozen-treated) and log it; thaw it in the fridge."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "Weigh the fish; calculate and weigh the cure; log it."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "Cure, press and turn; log the fridge temperature daily."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "Finish, slice and photograph the slices; serve to eaters outside the risk groups."
+        },
+        {
+         "level": 0,
+         "marker": "5.",
+         "text": "Store in the fridge, and use within 2 days."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`TS-GRD` level 3, the cured-fish part:** a cured fish by weight ratio, salt and sugar to fish logged, sliced thin (photographed). The terrine and the cold starter follow in `GRD-3.M4.X1` and `GRD-3.M5.X1`."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`SA-HRPR` level 4, further evidence:** a high-risk process (raw fish) by a tested rule, every control point logged; the scenario items at 100 %."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "AI review reads the log: *competent* is proof of freezing and every control point with its figure; *not yet* is fresh fish, or a gap."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 1 h active over two days."
+      }
+     ]
+    }
+   ],
+   "items": [
+    {
+     "id": "GRD-3.M3.Q1",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "GRD-3.M3.L1",
+     "safety": true,
+     "question": "Does a salt and sugar cure kill parasites in salmon?",
+     "options": [
+      {
+       "key": "A",
+       "text": "yes"
+      },
+      {
+       "key": "B",
+       "text": "no: the fish is frozen first (−20 °C in all parts for 24 hours, or bought with that treatment)"
+      },
+      {
+       "key": "C",
+       "text": "yes, after 3 days"
+      },
+      {
+       "key": "D",
+       "text": "only with dill"
+      }
+     ],
+     "answer": "B",
+     "why": "Assessment §9, the raw fish row."
+    },
+    {
+     "id": "GRD-3.M3.Q2",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "GRD-3.M3.L1",
+     "safety": true,
+     "question": "Your freezer holds −18 °C. Can you use it to treat salmon for gravad?",
+     "options": [
+      {
+       "key": "A",
+       "text": "yes, 24 hours"
+      },
+      {
+       "key": "B",
+       "text": "no: it must hold −20 °C or below (then 7 days); otherwise buy fish frozen for raw use"
+      },
+      {
+       "key": "C",
+       "text": "yes, a week"
+      },
+      {
+       "key": "D",
+       "text": "yes, if the salmon is farmed"
+      }
+     ],
+     "answer": "B",
+     "why": "§9: −18 °C does not qualify."
+    },
+    {
+     "id": "GRD-3.M3.Q3",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "GRD-3.M3.L1",
+     "safety": false,
+     "question": "Why is the cure weighed against the fish?",
+     "options": [
+      {
+       "key": "A",
+       "text": "for the log only"
+      },
+      {
+       "key": "B",
+       "text": "so salt and sugar are a set percentage of the fish's weight, and the result repeats"
+      },
+      {
+       "key": "C",
+       "text": "it isn't necessary"
+      },
+      {
+       "key": "D",
+       "text": "to save salt"
+      }
+     ],
+     "answer": "B",
+     "why": "A cure by ratio."
+    },
+    {
+     "id": "GRD-3.M3.Q4",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "GRD-3.M3.L1",
+     "safety": false,
+     "question": "What does the cure do to the flesh?",
+     "options": [
+      {
+       "key": "A",
+       "text": "cooks it"
+      },
+      {
+       "key": "B",
+       "text": "draws out water and seasons it, making it denser and silkier"
+      },
+      {
+       "key": "C",
+       "text": "kills all bacteria"
+      },
+      {
+       "key": "D",
+       "text": "nothing"
+      }
+     ],
+     "answer": "B",
+     "why": "Salt and sugar change texture."
+    },
+    {
+     "id": "GRD-3.M3.Q5",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "GRD-3.M3.L2",
+     "safety": true,
+     "question": "Does lime juice in a *ceviche* make fish safe like cooking?",
+     "options": [
+      {
+       "key": "A",
+       "text": "yes"
+      },
+      {
+       "key": "B",
+       "text": "no: acid doesn't kill pathogens the way heat does, nor parasites"
+      },
+      {
+       "key": "C",
+       "text": "yes, after an hour"
+      },
+      {
+       "key": "D",
+       "text": "only with chilli"
+      }
+     ],
+     "answer": "B",
+     "why": "Acid is not heat (§9)."
+    },
+    {
+     "id": "GRD-3.M3.Q6",
+     "type": "SCENARIO",
+     "lessonId": "GRD-3.M3.L2",
+     "safety": true,
+     "question": "A guest who is pregnant is coming, and you planned a *ceviche* starter. What do you do?",
+     "options": [],
+     "answer": "Serve the guest a different starter (or a cooked version of the fish, to 63 °C): risk groups are not served raw or acid-marinated fish.",
+     "why": "§9 risk-group row."
+    },
+    {
+     "id": "GRD-3.M3.Q7",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "GRD-3.M3.L2",
+     "safety": false,
+     "question": "What happens to fish left in lime juice for hours?",
+     "options": [
+      {
+       "key": "A",
+       "text": "it improves"
+      },
+      {
+       "key": "B",
+       "text": "it turns chalky and dry"
+      },
+      {
+       "key": "C",
+       "text": "it becomes safe"
+      },
+      {
+       "key": "D",
+       "text": "nothing"
+      }
+     ],
+     "answer": "B",
+     "why": "The acid keeps denaturing it."
+    },
+    {
+     "id": "GRD-3.M3.Q8",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "GRD-3.M3.L2",
+     "safety": true,
+     "question": "Where does the fish for a *ceviche* come from?",
+     "options": [
+      {
+       "key": "A",
+       "text": "any fresh fish"
+      },
+      {
+       "key": "B",
+       "text": "fish frozen first by the §9 rule, kept cold and used very fresh"
+      },
+      {
+       "key": "C",
+       "text": "yesterday's leftovers"
+      },
+      {
+       "key": "D",
+       "text": "tinned fish"
+      }
+     ],
+     "answer": "B",
+     "why": "Freezing first and freshness."
+    }
+   ]
+  },
+  {
+   "id": "GRD-3.M4",
+   "title": "Terrines and pâtés introduced",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** the 8 items of `GRD-3.M4` in the course file, 3 of them safety items. Pass mark 80 %, with every safety item correct."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "GRD-3.M4.L1",
+     "title": "Forcemeat principles",
+     "prerequisites": [
+      "MEA-2.M5.L2"
+     ],
+     "competencies": [
+      {
+       "id": "TS-GRD",
+       "level": 3
+      },
+      {
+       "id": "RD-RATO",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** a forcemeat is the base of every terrine, pâté and sausage. A good one slices cleanly when cold and is juicy; a bad one is crumbly, or greasy where the fat has smeared."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** about 400 g of pork shoulder and 200 g of back fat or belly, cut in cubes and chilled; salt; a shallot; herbs; *quatre épices* (`FLV-3.M2`); an egg; bread and milk for a *panade*; a mincer or a food processor, its parts chilled; the scale; a frying pan."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*A forcemeat* (*farce*) is minced meat and fat, seasoned and bound so it slices cleanly when cold:"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**meat and fat:** the fat carries flavour and keeps it moist; a country terrine is coarse, with a high proportion of pork fat;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**salt:** weighed as a percentage of the meat, it seasons, and it dissolves the proteins (myosin) that bind the mix (`MEA-2.M5`);"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**binders:** egg, and a *panade* (bread soaked in milk or cream);"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**flavour:** shallots, garlic, herbs, *quatre épices*, a little alcohol."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Temperature during mixing.* Keep the meat, the fat and the equipment very cold, below about 4 °C (fridge temperature), so the fat doesn't smear and the bind holds. Chill the mincer parts and the bowl before you start, and work in small batches, returning the mix to the fridge between steps."
+      },
+      {
+       "type": "paragraph",
+       "text": "*The test patty.* Raw forcemeat is never tasted. Fry a small patty until cooked through, taste it, and adjust the seasoning before the mix goes into the mould."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Hygiene.* Minced meat is a high-risk raw food: the mincer parts and bowls are washed in hot soapy water at once."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**A forcemeat and a test (60 min).** Mix a small pork forcemeat cold, by a weighed ratio. Fry a test patty, taste it, and adjust the seasoning; check the bind by pressing a little of the mix between your fingers. Freeze the forcemeat in a labelled bag, or cook it as patties for dinner."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** the mix sticky and bound; the fat in distinct pieces, not smeared; the test patty well seasoned."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "A greasy, crumbly slice",
+         "Warm meat and a smeared mix",
+         "Everything chilled; small batches"
+        ],
+        [
+         "A food-safety risk",
+         "Tasting raw forcemeat",
+         "Fry a test patty"
+        ],
+        [
+         "Too salty, or bland",
+         "Salt by eye",
+         "Weigh it against the meat"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** raw forcemeat is never tasted; the test patty is cooked through (minced meat, 75 °C, assessment §9); the equipment washed hot."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the ratio, the seasoning before and after the test."
+      }
+     ]
+    },
+    {
+     "id": "GRD-3.M4.L2",
+     "title": "A terrine or pâté",
+     "prerequisites": [
+      "GRD-3.M4.L1"
+     ],
+     "competencies": [
+      {
+       "id": "TS-GRD",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** a terrine is a whole starter for eight, made two days ahead. Getting the centre to temperature without drying the edges is the skill, and the water bath is how it is done."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** the forcemeat and mould of `GRD-3.M4.X1`; a deep roasting tin; a kettle of hot water; the probe; a rack; a board cut to the tin and two food tins for pressing; the cooling log."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*The mould:* a terrine mould or a loaf tin, lined with streaky bacon or baking paper, packed without air pockets, and covered."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Baking in a water bath.* The mould sits in a roasting tin of hot water in a moderate oven, about 150–160 °C, so that the edges don't overcook before the centre is done."
+      },
+      {
+       "type": "paragraph",
+       "text": "*The core temperature* (assessment §9). A terrine of minced pork, or one containing poultry or chicken livers, reaches 75 °C at the centre (the minced and poultry rows). The probe goes into the very centre, not near the edge."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Cooling, pressing and resting.* Lift the terrine out of the water bath onto a rack, and cool it by the standard: from 57 °C to 21 °C within 2 hours, and to 5 °C within 6 hours. Then weight it overnight in the fridge with the board and tins, so it slices cleanly."
+      },
+      {
+       "type": "paragraph",
+       "text": "*A chicken-liver pâté* is the smooth alternative: livers cooked in butter to 75 °C at the centre, blended with butter and a little alcohol, set in ramekins and sealed with butter. It is not served in pregnancy (liver, the risk-group row of §9); a pork terrine without liver is the alternative."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Storing.* In the fridge; once cut, eaten within the 2 days of the leftovers rule, unless a tested method says otherwise."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**The terrine (90 min active, 2 days in total).** Pack, bake, cool, press and slice the terrine of `GRD-3.M4.X1`."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** the core at its §9 figure; a clean slice that holds; a thin layer of set jelly round the edge."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Dry edges",
+         "No water bath",
+         "Bake it in a water bath"
+        ],
+        [
+         "An undercooked centre",
+         "Probing near the edge",
+         "Probe the very centre"
+        ],
+        [
+         "A crumbling slice",
+         "Slicing before it has set overnight",
+         "Press it overnight in the fridge"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** the centre to 75 °C (assessment §9); the cooling standard logged; liver dishes not served in pregnancy."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the core log; the cooling log; the slice photo."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "GRD-3.M4.X1",
+     "title": "A country terrine with a core temperature log",
+     "description": "A country terrine with a core temperature log.",
+     "competencies": [
+      {
+       "id": "TS-GRD",
+       "level": 3
+      },
+      {
+       "id": "RD-RATO",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** make a country terrine that is safe and slices cleanly, by a weighed forcemeat ratio, with the core logged every 10 minutes in the last half hour."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** for a 1 kg loaf tin (8–10 slices): 600 g pork shoulder, 300 g back fat or fatty belly, 100 g pork or chicken liver (from a Dutch butcher), all well chilled; 16 g salt; 2 shallots; 1 garlic clove; 1 tsp thyme leaves; 2 g *quatre épices*; 1 egg; 30 g bread without crust and 50 ml milk for the *panade*; 2 tbsp brandy (optional); about 10 slices of streaky bacon for lining; the scale, the mincer, the probe, a roasting tin and the pressing weights."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Recipe:** a country terrine."
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Chill** the meat, fat, liver and mincer parts. Soak the bread in the milk. Sweat the shallots and garlic; cool them."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Mince** the shoulder and the fat coarsely, and the liver finely, in small batches."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "**Mix** in a cold bowl with the salt, spices, thyme, shallots, egg, *panade* and brandy, until the mix is sticky and bound. Weigh and log the ratio: meat, fat, liver and salt."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "**Test:** fry a small patty until cooked through; taste; adjust the seasoning."
+        },
+        {
+         "level": 0,
+         "marker": "5.",
+         "text": "**Line** the tin with the bacon, the ends hanging over. Pack the mix in without air pockets; fold the bacon over; cover with foil."
+        },
+        {
+         "level": 0,
+         "marker": "6.",
+         "text": "**Bake** in a roasting tin of hot water, halfway up the mould, in a moderate oven (about 150–160 °C). Probe the very centre from the first hour; in the last half hour, log it every 10 minutes until it reads 75 °C."
+        },
+        {
+         "level": 0,
+         "marker": "7.",
+         "text": "**Cool** on a rack, out of the water bath; log the cooling by the standard. Refrigerate it."
+        },
+        {
+         "level": 0,
+         "marker": "8.",
+         "text": "**Press** overnight in the fridge under the board and two tins."
+        },
+        {
+         "level": 0,
+         "marker": "9.",
+         "text": "**Turn out,** slice with a hot knife, and photograph a slice for AI review."
+        },
+        {
+         "level": 0,
+         "marker": "10.",
+         "text": "**Serve** with pickles and bread; the rest is eaten within 2 days once cut."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`TS-GRD` level 3, the terrine part:** a terrine that slices cleanly (photographed), the core at its §9 figure logged. The cured fish and the cold starter are in `GRD-3.M3.X1` and `GRD-3.M5.X1`."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`RD-RATO` level 3, the third preparation:** the forcemeat by weighed ratio, to standard."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "AI review reads the slice photo and the log: *competent* is a clean slice and the centre logged at 75 °C; *not yet* is a crumbling slice, or a log without the centre's figure."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 2 h active over two days."
+      }
+     ]
+    }
+   ],
+   "items": [
+    {
+     "id": "GRD-3.M4.Q1",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "GRD-3.M4.L1",
+     "safety": false,
+     "question": "Why is a forcemeat kept very cold while mixing?",
+     "options": [
+      {
+       "key": "A",
+       "text": "for hygiene only"
+      },
+      {
+       "key": "B",
+       "text": "so the fat doesn't smear and the bind holds"
+      },
+      {
+       "key": "C",
+       "text": "to save time"
+      },
+      {
+       "key": "D",
+       "text": "to keep the colour"
+      }
+     ],
+     "answer": "B",
+     "why": "Temperature during mixing."
+    },
+    {
+     "id": "GRD-3.M4.Q2",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "GRD-3.M4.L1",
+     "safety": false,
+     "question": "What does salt do in a forcemeat besides seasoning?",
+     "options": [
+      {
+       "key": "A",
+       "text": "nothing"
+      },
+      {
+       "key": "B",
+       "text": "dissolves proteins that bind the mix"
+      },
+      {
+       "key": "C",
+       "text": "colours it"
+      },
+      {
+       "key": "D",
+       "text": "dries it"
+      }
+     ],
+     "answer": "B",
+     "why": "Myosin binding."
+    },
+    {
+     "id": "GRD-3.M4.Q3",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "GRD-3.M4.L1",
+     "safety": true,
+     "question": "How do you check the seasoning of a raw pork forcemeat?",
+     "options": [
+      {
+       "key": "A",
+       "text": "taste it raw"
+      },
+      {
+       "key": "B",
+       "text": "fry a small test patty and taste it"
+      },
+      {
+       "key": "C",
+       "text": "smell it"
+      },
+      {
+       "key": "D",
+       "text": "guess"
+      }
+     ],
+     "answer": "B",
+     "why": "Raw mince is not tasted."
+    },
+    {
+     "id": "GRD-3.M4.Q4",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "GRD-3.M4.L1",
+     "safety": false,
+     "question": "What is a *panade*?",
+     "options": [
+      {
+       "key": "A",
+       "text": "a garnish"
+      },
+      {
+       "key": "B",
+       "text": "bread soaked in milk or cream, used as a binder"
+      },
+      {
+       "key": "C",
+       "text": "a fat"
+      },
+      {
+       "key": "D",
+       "text": "a mould"
+      }
+     ],
+     "answer": "B",
+     "why": "A binder."
+    },
+    {
+     "id": "GRD-3.M4.Q5",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "GRD-3.M4.L2",
+     "safety": true,
+     "question": "To what core temperature is a country terrine of minced pork baked?",
+     "options": [
+      {
+       "key": "A",
+       "text": "55 °C"
+      },
+      {
+       "key": "B",
+       "text": "63 °C"
+      },
+      {
+       "key": "C",
+       "text": "75 °C at the centre"
+      },
+      {
+       "key": "D",
+       "text": "50 °C"
+      }
+     ],
+     "answer": "C",
+     "why": "Minced meat (assessment §9)."
+    },
+    {
+     "id": "GRD-3.M4.Q6",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "GRD-3.M4.L2",
+     "safety": true,
+     "question": "Your terrine contains chicken livers. What core temperature?",
+     "options": [
+      {
+       "key": "A",
+       "text": "63 °C"
+      },
+      {
+       "key": "B",
+       "text": "70 °C"
+      },
+      {
+       "key": "C",
+       "text": "75 °C"
+      },
+      {
+       "key": "D",
+       "text": "60 °C"
+      }
+     ],
+     "answer": "C",
+     "why": "Poultry (assessment §9)."
+    },
+    {
+     "id": "GRD-3.M4.Q7",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "GRD-3.M4.L2",
+     "safety": false,
+     "question": "Why is a terrine baked in a water bath?",
+     "options": [
+      {
+       "key": "A",
+       "text": "for steam"
+      },
+      {
+       "key": "B",
+       "text": "so the edges don't overcook before the centre is done"
+      },
+      {
+       "key": "C",
+       "text": "it is faster"
+      },
+      {
+       "key": "D",
+       "text": "to make jelly"
+      }
+     ],
+     "answer": "B",
+     "why": "Gentle, even heat."
+    },
+    {
+     "id": "GRD-3.M4.Q8",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "GRD-3.M4.L2",
+     "safety": false,
+     "question": "Why is a terrine pressed overnight?",
+     "options": [
+      {
+       "key": "A",
+       "text": "to cool it faster"
+      },
+      {
+       "key": "B",
+       "text": "so it sets dense and slices cleanly"
+      },
+      {
+       "key": "C",
+       "text": "to remove fat"
+      },
+      {
+       "key": "D",
+       "text": "it isn't"
+      }
+     ],
+     "answer": "B",
+     "why": "Pressing and resting."
+    }
+   ]
+  },
+  {
+   "id": "GRD-3.M5",
+   "title": "Cold platters",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** the 8 items of `GRD-3.M5` in the course file, 2 of them safety items. Pass mark 80 %, with every safety item correct."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "GRD-3.M5.L1",
+     "title": "Cheese and charcuterie",
+     "prerequisites": [
+      "LEG-2.M3.L2"
+     ],
+     "competencies": [
+      {
+       "id": "IN-DAI",
+       "level": 4
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** a board of cheese and cold meats is the easiest course to serve to guests, and easy to get dull: five similar cheeses, straight from the fridge. Building it by families makes it a course."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** three to five cheeses across families and milks; a cooked or cured meat (rookworst slices, a slice of your terrine, ham); pickles; a chutney (`PRS-3`) or seasonal apples or pears; bread or crackers; seeds; a board; a knife for each cheese; small labels."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Cheese families:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**fresh:** curd, ricotta, fresh goat's cheese;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**soft-ripened,** with a bloomy rind;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**washed-rind:** the Dutch range has none, so this family adds a Belgian or French cheese;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**semi-hard and hard:** Gouda at different ages, Edam, farmhouse cheeses;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**blue.**"
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Serving temperature.* Take the cheese out of the fridge about an hour before serving, so the flavour opens up, within the 2-hour limit of §9 for the board. Cut cheese is wrapped in paper, not cling film, and goes back into the fridge."
+      },
+      {
+       "type": "paragraph",
+       "text": "*A balanced board:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "three to five cheeses across families, textures and milks;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "a cooked and a cured meat at most;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "accompaniments that contrast: pickles, a chutney, seasonal apples or pears, bread or crackers, seeds."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Risk groups.* Soft raw-milk cheeses and raw or dry-cured meats are raw animal foods. A guest in a risk group gets pasteurised cheeses, hard cheeses (hard raw-milk cheese is safe) and cooked meats (the risk-group row of §9)."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Amounts:* about 100–150 g of cheese per person as a course."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**A board (60 min).** Build a board for four from the families; label each cheese with its name and milk; serve it at temperature, and put it back in the fridge within 2 hours."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** varied families, textures and milks; each cheese with its own knife; served at temperature."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "A dull board",
+         "Five Goudas",
+         "Different families, textures and milks"
+        ],
+        [
+         "No flavour",
+         "Cheese straight from the fridge",
+         "Out an hour before"
+        ],
+        [
+         "A food-safety risk",
+         "A board left out all evening",
+         "Back in the fridge within 2 hours"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** the 2-hour limit for the board; the risk-group row for soft raw-milk cheese and raw cured meats (assessment §9); a knife for each cheese."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the board's labels and a photo."
+      }
+     ]
+    },
+    {
+     "id": "GRD-3.M5.L2",
+     "title": "Cold starters",
+     "prerequisites": [
+      "GRD-3.M3.L1"
+     ],
+     "competencies": [
+      {
+       "id": "CR-COMP",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** a cold starter is ready before the guests arrive, which frees you for the main. Built from this course's components, it is mostly assembly."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** components from the course: the cured salmon, the terrine, a cold sauce, a salad, pickles, a crisp element; chilled plates; the component table."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Built from the course's components:* the cured salmon, the terrine, a cold sauce, a salad, pickles, a crisp element."
+      },
+      {
+       "type": "paragraph",
+       "text": "*The plated cold starter* is small, bright and appetising:"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "a main element, a sauce, a garnish and a contrast;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "served chilled, but not fridge-cold: the salmon and the terrine 10–15 minutes out of the fridge before plating."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Holding.* Prepare the components ahead and keep them cold. Assemble the plate at the last moment, and dress the leaves last."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Examples:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "gravad salmon with a mustard-dill sauce, pickled cucumber and rye crisps;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "a slice of terrine with *gribiche*, chicory and quick pickles."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Size.* A starter opens the meal; it shouldn't fill the guest. One slice of terrine or a few slices of salmon, a spoon of sauce, a small handful of leaves."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Risk groups.* The cured salmon is raw fish, and the terrine may contain liver: a guest in a risk group gets a starter that avoids both, planned in advance."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**A plated starter (60 min).** Plate a cold starter for two from the course's components, write its component table, and photograph it."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** each component distinct; a clear contrast; plated cleanly at the last moment. Check the photo as a guest would see it: does each element have a reason to be there, and could one be left off without loss? If so, leave it off next time."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "A flavourless plate",
+         "Everything ice-cold",
+         "10–15 minutes out of the fridge"
+        ],
+        [
+         "Wilted leaves",
+         "Leaves wilting under a sauce",
+         "Sauce beside or under; leaves last"
+        ],
+        [
+         "A guest too full for the main",
+         "Too big for a starter",
+         "Smaller portions"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** components kept in the fridge until plating; the plates served within the 2-hour limit; the risk-group row for raw fish and liver (assessment §9)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the component table and the photo."
+      }
+     ]
+    },
+    {
+     "id": "GRD-3.M5.L3",
+     "title": "Sandwiches, toasts and canapés",
+     "prerequisites": [
+      "GRD-3.M2.L1"
+     ],
+     "competencies": [
+      {
+       "id": "CR-COMP",
+       "level": 3
+      },
+      {
+       "id": "FL-TEXT",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** sandwiches and canapés feed a crowd standing up. The skill is structural: a barrier against soggy bread, a base that stays crisp, and sizes that can be eaten in a bite or two."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** breads (sourdough, rye, a soft roll); butter and spreads; cheese for a *tosti*; fillings and toppings from the course (the terrine, the salmon, the sauces, pickles); cucumber and chicory leaves; a platter; the phone."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*The structure of a sandwich,* in order:"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**the bread;**"
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**a barrier:** butter, a thick spread or cheese, which keeps moisture from the bread;"
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "**the filling;**"
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "**a contrast:** crunch, acid, a fresh herb."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Hot and cold sandwiches:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "a toasted cheese sandwich (*tosti*) with even colour and a melted centre;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "a club or a *broodje* with a layered filling;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "an open sandwich on rye (*smørrebrød*-style)."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Open toasts and canapés:* a sturdy base (toasted bread, rye crisps, cucumber or chicory leaves, a blini), a topping and a garnish; one or two bites each."
+      },
+      {
+       "type": "paragraph",
+       "text": "*The judgment: what holds up for an hour on a platter?*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "firm bases, barriers, toppings that don't weep;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "leaves and crisp elements added at the last moment;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "nothing hot that should be eaten hot;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "everything back in the fridge or thrown away within the 2-hour limit out of the fridge (§9)."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Amounts:* for a gathering, about six to eight canapés per person per hour before dinner, more if they replace it."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**A sandwich platter and canapés (75 min).** Make two sandwiches and three canapés; photograph them at once and again after an hour."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** bases still crisp after an hour; each canapé one or two bites; clean edges."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Soggy bread",
+         "A filling with no barrier",
+         "Butter or a thick spread first"
+        ],
+        [
+         "Awkward, messy eating",
+         "Canapés too big to eat in two bites",
+         "One or two bites each"
+        ],
+        [
+         "A food-safety risk",
+         "A platter out for the whole afternoon",
+         "Within 2 hours, then cleared"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** the 2-hour limit out of the fridge (assessment §9); allergens labelled on the platter (`SAF-1.M4`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the two sets of photos, and what held."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "GRD-3.M5.X1",
+     "title": "A cold starter course for four guests",
+     "description": "A cold starter course for four guests.",
+     "competencies": [
+      {
+       "id": "IN-DAI",
+       "level": 4
+      },
+      {
+       "id": "CR-COMP",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** compose and serve a cold starter for guests from the course's components, held cold and served to standard."
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**The brief:** a plated cold starter for four guests, from a framework, with a component table."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**The constraints:** components prepared ahead, kept cold and assembled at the last moment; the risk groups among the guests asked about in advance."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**The extension:** in three dishes of the course (this starter, the cheese board of `GRD-3.M5.L1` and a creamy dressing of `GRD-3.M2.L1`), the dairy product or egg function chosen with a written reason; and one substitution (for example buttermilk for yoghurt, or crème fraîche for mayonnaise) with its effect predicted and confirmed."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**The criteria:** each component distinct; the plate held cold and served to standard; the guests' cards judge the balance; the substitution's effect confirmed or refuted on the forms."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**The record:**"
+        },
+        {
+         "level": 1,
+         "marker": "1.",
+         "text": "Write the plan, the component table and the dairy choices with reasons; predict the substitution's effect."
+        },
+        {
+         "level": 1,
+         "marker": "2.",
+         "text": "Prepare the components ahead; log the fridge."
+        },
+        {
+         "level": 1,
+         "marker": "3.",
+         "text": "Plate at the last moment; photograph; the guests fill in cards."
+        },
+        {
+         "level": 1,
+         "marker": "4.",
+         "text": "Confirm or refute the substitution's effect on the forms."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** the components (a cure, a terrine, sauces, pickles, leaves, a crisp element); the dairy products; chilled plates; the component table; the cards."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`IN-DAI` level 4:** the dairy product or egg function chosen with a reason in three dishes; one substitution with the effect predicted and confirmed."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`CR-COMP` level 3, further evidence:** a plate composed from a brief with a component table; the guests judge the balance."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "The cold starter, held cold and served to standard, is the third part of the `TS-GRD` level 3 row, recorded with the rows of `GRD-3.M3` and `GRD-3.M4` (this module does not move `TS-GRD`)."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "AI review reads the photo, the table and the reasons: *competent* is a clean, balanced plate and a reason for each dairy choice; *not yet* is a plate assembled hours ahead, or choices without reasons."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 2 h."
+      }
+     ]
+    },
+    {
+     "id": "GRD-3.M5.X2",
+     "title": "Canapés and a sandwich platter for a gathering",
+     "description": "Canapés and a sandwich platter for a gathering of six or more.",
+     "competencies": [
+      {
+       "id": "FL-TEXT",
+       "level": 3
+      },
+      {
+       "id": "CR-COMP",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** feed a gathering of six or more with canapés and sandwiches that hold up."
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**The brief:** at least three kinds of canapé and a sandwich platter for six or more guests."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**The constraints:** planned for amounts and holding; three items (two canapés and a sandwich) with their textures named in advance; served within the 2-hour limit out of the fridge."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**The criteria:** crisp bases still crisp after an hour; amounts enough without waste; the guests' cards."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**The record:**"
+        },
+        {
+         "level": 1,
+         "marker": "1.",
+         "text": "Plan the items, the amounts, the timing, and what is added at the last moment."
+        },
+        {
+         "level": 1,
+         "marker": "2.",
+         "text": "Prepare ahead; assemble; photograph at service."
+        },
+        {
+         "level": 1,
+         "marker": "3.",
+         "text": "Photograph again after an hour; note what held and what didn't."
+        },
+        {
+         "level": 1,
+         "marker": "4.",
+         "text": "Clear the platters within 2 hours; the guests fill in cards."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** breads, spreads, fillings and toppings from the course and the season; platters; labels for allergens; the phone; the cards."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`FL-TEXT` level 3:** three items with their textures named, hit and kept until eaten (crisp bases still crisp after an hour), photographed."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`CR-COMP` level 3, further evidence:** the platter composed for balance; the guests' cards."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "AI review compares the two sets of photos: *competent* is the named textures still there after an hour; *not yet* is soggy bases, or a platter out beyond 2 hours."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 2.5 h."
+      }
+     ]
+    }
+   ],
+   "items": [
+    {
+     "id": "GRD-3.M5.Q1",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "GRD-3.M5.L1",
+     "safety": false,
+     "question": "Which is a washed-rind cheese?",
+     "options": [
+      {
+       "key": "A",
+       "text": "young Gouda"
+      },
+      {
+       "key": "B",
+       "text": "Époisses or a Belgian abbey cheese"
+      },
+      {
+       "key": "C",
+       "text": "ricotta"
+      },
+      {
+       "key": "D",
+       "text": "Roquefort"
+      }
+     ],
+     "answer": "B",
+     "why": "Cheese families."
+    },
+    {
+     "id": "GRD-3.M5.Q2",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "GRD-3.M5.L1",
+     "safety": false,
+     "question": "When does cheese come out of the fridge before serving?",
+     "options": [
+      {
+       "key": "A",
+       "text": "the night before"
+      },
+      {
+       "key": "B",
+       "text": "about an hour before"
+      },
+      {
+       "key": "C",
+       "text": "at the moment of serving"
+      },
+      {
+       "key": "D",
+       "text": "never"
+      }
+     ],
+     "answer": "B",
+     "why": "Flavour opens up at room temperature."
+    },
+    {
+     "id": "GRD-3.M5.Q3",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "GRD-3.M5.L1",
+     "safety": true,
+     "question": "A pregnant guest is coming. What do you put on the guest's side of the board?",
+     "options": [
+      {
+       "key": "A",
+       "text": "raw-milk soft cheese"
+      },
+      {
+       "key": "B",
+       "text": "pasteurised cheeses and cooked meats"
+      },
+      {
+       "key": "C",
+       "text": "dry-cured raw ham"
+      },
+      {
+       "key": "D",
+       "text": "a raw-milk blue"
+      }
+     ],
+     "answer": "B",
+     "why": "§9 risk-group row: raw animal foods are avoided."
+    },
+    {
+     "id": "GRD-3.M5.Q4",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "GRD-3.M5.L1",
+     "safety": true,
+     "question": "How long may a cheese and charcuterie board stay out?",
+     "options": [
+      {
+       "key": "A",
+       "text": "all evening"
+      },
+      {
+       "key": "B",
+       "text": "at most 2 hours, then back in the fridge"
+      },
+      {
+       "key": "C",
+       "text": "overnight"
+      },
+      {
+       "key": "D",
+       "text": "until it looks dry"
+      }
+     ],
+     "answer": "B",
+     "why": "Assessment §9."
+    },
+    {
+     "id": "GRD-3.M5.Q5",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "GRD-3.M5.L3",
+     "safety": false,
+     "question": "What is the barrier in a sandwich?",
+     "options": [
+      {
+       "key": "A",
+       "text": "the lid"
+      },
+      {
+       "key": "B",
+       "text": "butter, a thick spread or cheese that keeps moisture from the bread"
+      },
+      {
+       "key": "C",
+       "text": "the lettuce"
+      },
+      {
+       "key": "D",
+       "text": "the plate"
+      }
+     ],
+     "answer": "B",
+     "why": "Structure of a sandwich."
+    },
+    {
+     "id": "GRD-3.M5.Q6",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "GRD-3.M5.L3",
+     "safety": false,
+     "question": "Which canapé holds best for an hour?",
+     "options": [
+      {
+       "key": "A",
+       "text": "a dressed leaf on soft bread"
+      },
+      {
+       "key": "B",
+       "text": "a rye crisp with a firm spread and a topping that doesn't weep"
+      },
+      {
+       "key": "C",
+       "text": "a hot croquette"
+      },
+      {
+       "key": "D",
+       "text": "a soft sandwich with tomato"
+      }
+     ],
+     "answer": "B",
+     "why": "[J] what holds up."
+    },
+    {
+     "id": "GRD-3.M5.Q7",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "GRD-3.M5.L3",
+     "safety": false,
+     "question": "How many canapés per person per hour before dinner?",
+     "options": [
+      {
+       "key": "A",
+       "text": "one"
+      },
+      {
+       "key": "B",
+       "text": "about six to eight"
+      },
+      {
+       "key": "C",
+       "text": "twenty"
+      },
+      {
+       "key": "D",
+       "text": "three in total"
+      }
+     ],
+     "answer": "B",
+     "why": "Amounts for a gathering."
+    },
+    {
+     "id": "GRD-3.M5.Q8",
+     "type": "SCENARIO",
+     "lessonId": "GRD-3.M5.L3",
+     "safety": false,
+     "question": "Your open sandwiches went soggy within half an hour. What do you change?",
+     "options": [],
+     "answer": "Toast or use a sturdier base, add a barrier (butter or a thick spread), drain wet toppings, and add leaves and crisp elements at the last moment.",
+     "why": "Barrier and timing."
+    }
+   ]
+  }
+ ]
+}

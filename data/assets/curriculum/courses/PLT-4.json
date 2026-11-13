@@ -1,0 +1,1802 @@
+{
+ "schemaVersion": 1,
+ "id": "PLT-4",
+ "introduction": [
+  {
+   "type": "paragraph",
+   "text": "**Before you start.** Until now the program asked for food that is cooked well and served hot. This course adds intent to how it looks:"
+  },
+  {
+   "type": "list",
+   "items": [
+    {
+     "level": 0,
+     "marker": "",
+     "text": "**composition:** colour, height, negative space, a focal point, odd numbers; the plate's size, shape and colour; portions that fit the course;"
+    },
+    {
+     "level": 0,
+     "marker": "",
+     "text": "**saucing and garnish:** pools, lines and dots, sauce at the table, and garnish that is edible and adds flavour;"
+    },
+    {
+     "level": 0,
+     "marker": "",
+     "text": "**styles:** classical, family-style and modern, and which suits which occasion;"
+    },
+    {
+     "level": 0,
+     "marker": "",
+     "text": "**photography for evidence:** a photo corner that makes every later photo reliable for AI review and for your own record."
+    }
+   ]
+  },
+  {
+   "type": "paragraph",
+   "text": "Plating serves the food: a plate is judged hot and good to eat first, then composed. The dishes are your own repertoire, cooked with Dutch seasonal produce, so the course costs little beyond household meals."
+  },
+  {
+   "type": "paragraph",
+   "text": "Plan about two weeks at 6.5 hours a week, or run it alongside another S4 course: each lesson is plated on household meals, with two guest dinners."
+  },
+  {
+   "type": "paragraph",
+   "text": "**Have ready:** plain white plates in three sizes, and a bowl; one dark plate if you have one; a platter and serving bowls with a spoon for each; two spoons, a small offset spatula and a squeeze bottle; a damp cloth for rims; the instant-read probe; paper and a pencil for sketches; for the photo corner, a window, a plain matt grey or white board, a white card, a phone stand, a ruler or the grid board."
+  }
+ ],
+ "modules": [
+  {
+   "id": "PLT-4.M1",
+   "title": "Visual composition",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** the 8 items of `PLT-4.M1` in the course file. Pass mark 80 %."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "PLT-4.M1.L1",
+     "title": "Composition",
+     "prerequisites": [],
+     "competencies": [
+      {
+       "id": "TS-PLT",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** a few principles decide whether a plate reads clearly or looks crowded. Sketching the plate first, and plating it hot and fast, lets you choose the look instead of finding it by accident."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** a household main course with at least three components (for example a fish, a seasonal vegetable purée and glazed vegetables); three warm plates of the same kind; the probe; two spoons and an offset spatula; paper for three sketches; a phone for photos."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*The principles:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**colour:** contrast between the components (green against brown, white against dark). The colour comes from the food, not from decoration."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**height:** a little height draws the eye and shows care. Lean the components against each other; don't build towers that fall."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**negative space:** empty plate around the food, so it reads clearly; on a composed plate, leave about a third of the plate free."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**focal point:** one place the eye goes first, usually the main item, often slightly off-centre."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**odd numbers:** three or five pieces look natural; even numbers look arranged."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**flow:** place the components so the guest can eat them together, in the order you intend."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*The sketch.* Draw the plate from above before you plate: where each item goes, how large, and the empty space."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Hot food first.* Warm the plates to about 60 °C, in a low oven, or with hot water and then dried. Plate fast; the plate leaves within a minute. A beautiful cold plate of hot food is a failure."
+      },
+      {
+       "type": "paragraph",
+       "text": "Three layouts to sketch:"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Layout",
+        "Focal point",
+        "Suits"
+       ],
+       "rows": [
+        [
+         "Centred",
+         "The main item in the middle, the rest around it",
+         "Classical dishes"
+        ],
+        [
+         "Off-centre",
+         "The main item a third of the way across, sauce and garnish leading to it",
+         "Modern composed plates"
+        ],
+        [
+         "Linear",
+         "The components in a line or a gentle curve",
+         "Several small elements"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**One dish three ways (60 min).** Plate a household main course three ways from three sketches: centred, off-centre and linear. Photograph each from above and at 45°, and compare."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "a clear focal point in each version;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "the food hot when the photo is taken."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "A crowded plate",
+         "Food spread to the rim",
+         "Leave about a third free; use a larger plate"
+        ],
+        [
+         "A stack that topples on the way",
+         "Built too high",
+         "Lean components; keep height low and stable"
+        ],
+        [
+         "Decoration left on the plate",
+         "Inedible garnish",
+         "Only what is eaten (`PLT-4.M2.L1`)"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** plates warmed in a low oven handled with dry cloths; hot food kept hot until plated, at 57 °C or above if it waits (assessment §9)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the three sketches next to the three photos; which you prefer and why."
+      }
+     ]
+    },
+    {
+     "id": "PLT-4.M1.L2",
+     "title": "Plates and portions",
+     "prerequisites": [
+      "PLT-4.M1.L1"
+     ],
+     "competencies": [
+      {
+       "id": "TS-PLT",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** the same food looks lost on one plate and crowded on another, and a menu of large portions tires a guest before dessert. The plate and the portion are choices you make for the whole menu."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** a starter of your repertoire; three plates of different size and colour (a large white, a small white, a dark or coloured one); the scale; a phone for photos."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*The plate.*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "White and plain shows food best; dark plates suit pale food."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "A wide rim frames a small portion."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "A bowl holds sauce and keeps food warm."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "Match the size to the portion: a starter on a large plate looks lost; a main course on a small plate looks crowded."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Shape.* Round plates for most food; rectangular or oval for long items (a whole fish, a slice of terrine)."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Portion size for the course.* Judge the portion against the whole menu, not only the dish:"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Course",
+        "Main item"
+       ],
+       "rows": [
+        [
+         "Starter",
+         "About 80–120 g"
+        ],
+        [
+         "Main course",
+         "150–200 g of protein, with vegetables and starch"
+        ],
+        [
+         "Dessert",
+         "Small and intense"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "Weigh the main item the first time, so your eye learns what 100 g looks like on a plate."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Judging the menu.* Write the portions of every course in a column and read them together. If the starter is rich, make the main course lighter or smaller; if the main course is large, keep the dessert small. A guest should finish every course and still want the next."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Plate choices (60 min).** Put the same starter on three plates of different size and colour. Photograph each, and write which you would choose and why."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** your choice of plate and portion has a reason a guest would see."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "The menu feels too heavy",
+         "A large portion on every course",
+         "Plan the portions across the menu"
+        ],
+        [
+         "The plate fights the food",
+         "A coloured pattern plate",
+         "Plain plates; dark only for pale food"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** none beyond the kitchen routine: hot food kept hot, cold food cold (assessment §9)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the three photos; the plate you chose and the portion weight."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "PLT-4.M1.X1",
+     "title": "One dish plated three ways",
+     "description": "One dish plated three ways; photos compared.",
+     "competencies": [
+      {
+       "id": "TS-PLT",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** plate a composed dish deliberately from a sketch, and learn from comparing versions. Plate one composed dish three ways from three sketches, served hot, and compare the photos against the composition checklist."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** a household main course with at least three components (for example a fish, a seasonal vegetable purée and glazed vegetables); warm plates; the probe; a phone."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Framework:** the composition checklist."
+      },
+      {
+       "type": "table",
+       "header": [
+        "Point",
+        "Check"
+       ],
+       "rows": [
+        [
+         "Focal point",
+         "One place the eye goes first, as sketched"
+        ],
+        [
+         "Colour contrast",
+         "Neighbouring components contrast"
+        ],
+        [
+         "Height",
+         "Some height, stable"
+        ],
+        [
+         "Negative space",
+         "About a third free"
+        ],
+        [
+         "Hot",
+         "The main item probed on the plate"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Procedure:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "Draw three sketches: focal point, colour contrast, height."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "Plate each version; probe the main item on the plate; photograph each from above and at 45°."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "Compare the photos with the sketches; choose the best and write why."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:** a plate designed from a sketch for a composed dish, with focal point, colour contrast and height as sketched, served hot (the probe reading on the plate), as the `TS-PLT` level 3 row asks."
+      },
+      {
+       "type": "paragraph",
+       "text": "AI review reads the sketches, the photos and the probe readings: *competent* is plates that match their sketches on every point of the checklist, served hot; *not yet* is a plate without a clear focal point, food to the rim, or no probe reading."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 1.5 h."
+      }
+     ]
+    }
+   ],
+   "items": [
+    {
+     "id": "PLT-4.M1.Q1",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "PLT-4.M1.L1",
+     "safety": false,
+     "question": "What is negative space on a plate?",
+     "options": [
+      {
+       "key": "A",
+       "text": "the dark part of the food"
+      },
+      {
+       "key": "B",
+       "text": "the empty plate around the food, which lets it read clearly"
+      },
+      {
+       "key": "C",
+       "text": "the rim pattern"
+      },
+      {
+       "key": "D",
+       "text": "the sauce"
+      }
+     ],
+     "answer": "B",
+     "why": "About a third left free."
+    },
+    {
+     "id": "PLT-4.M1.Q2",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "PLT-4.M1.L1",
+     "safety": false,
+     "question": "Why are three scallops placed rather than four?",
+     "options": [
+      {
+       "key": "A",
+       "text": "cost"
+      },
+      {
+       "key": "B",
+       "text": "odd numbers look natural"
+      },
+      {
+       "key": "C",
+       "text": "they're smaller"
+      },
+      {
+       "key": "D",
+       "text": "tradition only"
+      }
+     ],
+     "answer": "B",
+     "why": "Even numbers look arranged."
+    },
+    {
+     "id": "PLT-4.M1.Q3",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "PLT-4.M1.L1",
+     "safety": false,
+     "question": "Where is the focal point usually placed?",
+     "options": [
+      {
+       "key": "A",
+       "text": "on the rim"
+      },
+      {
+       "key": "B",
+       "text": "the main item, often slightly off-centre"
+      },
+      {
+       "key": "C",
+       "text": "the garnish"
+      },
+      {
+       "key": "D",
+       "text": "anywhere"
+      }
+     ],
+     "answer": "B",
+     "why": "One place the eye goes first."
+    },
+    {
+     "id": "PLT-4.M1.Q4",
+     "type": "SCENARIO",
+     "lessonId": "PLT-4.M1.L1",
+     "safety": false,
+     "question": "Your plate looks beautiful in the photo, but the guest found the food lukewarm. What went wrong, and what changes?",
+     "options": [],
+     "answer": "Plating took too long on a cold plate. Warm the plates, prepare the sketch and tools first, and plate within a minute.",
+     "why": "Hot food first."
+    },
+    {
+     "id": "PLT-4.M1.Q5",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "PLT-4.M1.L1",
+     "safety": false,
+     "question": "Which is a good use of height?",
+     "options": [
+      {
+       "key": "A",
+       "text": "a tall tower"
+      },
+      {
+       "key": "B",
+       "text": "components leaning against each other, a little height"
+      },
+      {
+       "key": "C",
+       "text": "everything flat"
+      },
+      {
+       "key": "D",
+       "text": "a garnish stuck upright"
+      }
+     ],
+     "answer": "B",
+     "why": "Height that stays standing."
+    },
+    {
+     "id": "PLT-4.M1.Q6",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "PLT-4.M1.L2",
+     "safety": false,
+     "question": "A small starter on a large white plate with a wide rim: what does the rim do?",
+     "options": [
+      {
+       "key": "A",
+       "text": "hides the food"
+      },
+      {
+       "key": "B",
+       "text": "frames a small portion"
+      },
+      {
+       "key": "C",
+       "text": "cools the food"
+      },
+      {
+       "key": "D",
+       "text": "nothing"
+      }
+     ],
+     "answer": "B",
+     "why": "Plate size matched to portion."
+    },
+    {
+     "id": "PLT-4.M1.Q7",
+     "type": "SCENARIO",
+     "lessonId": "PLT-4.M1.L2",
+     "safety": false,
+     "question": "A four-course menu: everyone was full after the main. What do you change in the portions?",
+     "options": [],
+     "answer": "Smaller starter and main (for example 80–120 g for the starter and 150 g of protein in the main), a small intense dessert, judged against the whole menu.",
+     "why": "[J] portion for the course."
+    },
+    {
+     "id": "PLT-4.M1.Q8",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "PLT-4.M1.L2",
+     "safety": false,
+     "question": "Which plate suits a pale white fish with a cream sauce?",
+     "options": [
+      {
+       "key": "A",
+       "text": "a white plate"
+      },
+      {
+       "key": "B",
+       "text": "a darker plate that contrasts"
+      },
+      {
+       "key": "C",
+       "text": "a patterned plate"
+      },
+      {
+       "key": "D",
+       "text": "a bowl only"
+      }
+     ],
+     "answer": "B",
+     "why": "Dark plates suit pale food."
+    }
+   ]
+  },
+  {
+   "id": "PLT-4.M2",
+   "title": "Saucing and garnishing",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** none for this module. Its one judgment objective (garnish with purpose) is shown on the guests' cards and plates of `PLT-4.M2.X1`."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "PLT-4.M2.L1",
+     "title": "Saucing and garnishing",
+     "prerequisites": [
+      "PLT-4.M1.L1"
+     ],
+     "competencies": [
+      {
+       "id": "TS-PLT",
+       "level": 4
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** where the sauce goes changes how a dish eats as much as how it looks. A garnish that adds flavour earns its place; one that only adds colour is left on the plate."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** about 300 ml of one sauce (a vegetable purée, a reduction or a fluid gel from `MOD-4.M3.L2`); ten white plates; spoons of two sizes; a squeeze bottle; a small jug; a damp cloth; for the guest course, a course of your repertoire for four."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Sauce placement:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**pool:** under or beside the main item, spooned and tilted to spread; for sauces the item sits in;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**line or swoosh:** a spoonful dragged with the back of the spoon; for thick sauces and purées;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**dots:** from a squeeze bottle, for intense sauces in small amounts (a reduction, a fluid gel);"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**at the table:** poured from a jug in front of the guest, for sauces that would spoil a crisp skin or set (*beurre blanc*, a consommé over a garnish)."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Clean edges.* Wipe the rim with a damp cloth or paper. Never put sauce under a crisp skin."
+      },
+      {
+       "type": "paragraph",
+       "text": "*The amount.* Enough sauce to go with every bite, no more: about 40–60 ml for a main course."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Every garnish is edible and adds flavour.*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "A herb leaf that belongs to the dish."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "A crisp that adds texture (`MOD-4.M5`)."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "A pickle that adds acid (`PRS-3`)."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "No inedible decoration, and no garnish that only adds colour."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Saucing drill (60 min).** Place one sauce ten ways on ten plates: pools, lines, swooshes, dots, and one poured at the table. Photograph them together."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**A course for guests (60 min).** Use the best saucing and a purposeful garnish on a course for four."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "clean, deliberate lines and pools;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "every garnish eaten, and mentioned on the cards."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "A soggy skin",
+         "Sauce under or over the crisp skin",
+         "Sauce beside it, or at the table"
+        ],
+        [
+         "Uneven dots",
+         "Squeezed at different pressures",
+         "Same bottle, same pressure, same height"
+        ],
+        [
+         "Smears on the rim",
+         "Plated without wiping",
+         "Wipe with a damp cloth before it leaves"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** sauces kept hot at 57 °C or above until plated, or cold at 5 °C or below (assessment §9); a herb garnish washed and dried."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the drill photo with the best three marked; the course photo; what the guests said about the garnish."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "PLT-4.M2.X1",
+     "title": "Saucing practice: one sauce, ten ways",
+     "description": "Saucing practice on plates with one sauce, ten ways.",
+     "competencies": [
+      {
+       "id": "TS-PLT",
+       "level": 4
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** control sauce placement, and use it on a course for guests. Place one sauce ten ways (pools, lines, dots, sauce at the table). Then use the best placement on a course designed with a sketch and plated for at least four guests, the plates matching and hot."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** one sauce (a purée, a reduction or a fluid gel) for the drill; a course of your repertoire for the guests; the plates and tools; the probe; guest cards."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Recipe:** the saucing reference sheet."
+      },
+      {
+       "type": "table",
+       "header": [
+        "Placement",
+        "Tool",
+        "Amount",
+        "For"
+       ],
+       "rows": [
+        [
+         "Pool",
+         "Spoon, plate tilted",
+         "40–60 ml for a main",
+         "Sauces the item sits in"
+        ],
+        [
+         "Line or swoosh",
+         "Back of a spoon",
+         "One spoonful",
+         "Thick sauces, purées"
+        ],
+        [
+         "Dots",
+         "Squeeze bottle",
+         "Small, even",
+         "Intense sauces, fluid gels"
+        ],
+        [
+         "At the table",
+         "Jug",
+         "Poured in front of the guest",
+         "Sauces that spoil a crisp skin or set"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Procedure:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "Plate the ten versions; photograph them together; mark the best three."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "Sketch the guest course with the chosen saucing."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "Plate it for four or more guests; probe one plate; photograph the plates together."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "Collect guest cards."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:** the drill photos, and course two of three of the `TS-PLT` level 4 row: sketched, plated for at least four guests, the plates matching, hot, and judged by the AI review and the guests as composed with intent. The first course is in `PST-4.M5.X1`, the third in `PLT-4.M3.X1`."
+      },
+      {
+       "type": "paragraph",
+       "text": "AI review reads the drill photo, the sketch, the plate photos, the probe reading and the cards: *competent* is clean placements, four matching plates that follow the sketch, served hot; *not yet* is smears or uneven dots, plates that differ, or no probe reading."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 2 h."
+      }
+     ]
+    }
+   ],
+   "items": []
+  },
+  {
+   "id": "PLT-4.M3",
+   "title": "Styles",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** the 8 items of `PLT-4.M3` in the course file, 1 of them a safety item. Pass mark 80 %, with every safety item correct."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "PLT-4.M3.L1",
+     "title": "Classical, family-style and modern",
+     "prerequisites": [
+      "PLT-4.M2.L1"
+     ],
+     "competencies": [
+      {
+       "id": "TS-PLT",
+       "level": 4
+      },
+      {
+       "id": "CR-COMP",
+       "level": 4
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** the same food can be served in three styles, and each suits a different table. Knowing them, and how to send out a platter that guests can serve from safely, lets you choose the style for the occasion."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** a household main course (a roast or a braise with seasonal vegetables); a platter and serving bowls, warmed; a carving knife and board; a serving spoon for every dish; a small jug for the sauce."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*The three styles:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**classical:** the main item at the front, the garnish arranged around it, the sauce beside or under; the plate ordered and symmetrical (`CLS-4.M5`);"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**family-style:** platters and bowls on the table, guests serving themselves; generous, warm and relaxed, the food arranged to look abundant and easy to serve;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**modern:** a composed plate built in the kitchen, often asymmetric, with height, negative space and several textures; one idea per plate (`PST-4.M5`, `MOD-4`)."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Platters and shared dishes:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "warm the platter;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "carve or portion the main item before it goes out, so guests can serve themselves easily;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "put the sauce in a jug and the garnish in its own bowl, or scatter it over;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "give every dish its own serving spoon;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "keep allergen-free dishes apart, each with its own spoon, and tell the guest which they are (`NUT-3`)."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*The idea behind the plate* (`CR-COMP`). One sentence says what the dish is about, and every style keeps it."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**A family-style platter (60 min).** Serve a main course for the household on a platter with shared bowls, and photograph the table."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "a platter that looks generous and is easy to serve from;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "each style recognisable in the photos."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Guests struggle with the meat",
+         "A whole joint sent out uncut",
+         "Carve it in the kitchen; arrange the slices"
+        ],
+        [
+         "Food spills on the table",
+         "The platter piled too high",
+         "A larger platter, or two"
+        ],
+        [
+         "An allergen reaches the wrong plate",
+         "One spoon shared between dishes",
+         "A spoon per dish; allergen-free dishes apart"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** a spoon per dish, allergen-free dishes kept apart with their own spoons and named to the guest (`NUT-3`); food on the table eaten within the meal, and leftovers cooled and kept by the leftover rows (assessment §9)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the table photo; the idea of the dish in one sentence."
+      }
+     ]
+    },
+    {
+     "id": "PLT-4.M3.L2",
+     "title": "One dish, three styles",
+     "prerequisites": [
+      "PLT-4.M3.L1"
+     ],
+     "competencies": [
+      {
+       "id": "CR-COMP",
+       "level": 4
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** choosing the style is a judgment about the guests, the occasion and the cook's time. Plating one dish three ways shows that the idea stays while the presentation changes."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** a main course of your repertoire with three or more components; a platter and bowls; two plates; the plating tools; a sketch for the modern plate; a phone."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*One dish in each style.* Plate the same components classically, family-style and modern. For example, a braised beef with root vegetables and a sauce:"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Style",
+        "How"
+       ],
+       "rows": [
+        [
+         "Classical",
+         "Slices at the front, vegetables turned and arranged behind, sauce under the meat"
+        ],
+        [
+         "Family-style",
+         "Sliced on a platter in its sauce, vegetables in a bowl, sauce in a jug"
+        ],
+        [
+         "Modern",
+         "One piece off-centre, a root vegetable purée swooshed, crisp vegetable shards for height"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Which suits which occasion:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "a family dinner or a crowd: family-style (warmer, quicker, less washing-up, guests choose their portions);"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "a formal dinner or a celebration: plated (classical or modern), each guest served the same;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "a dish whose texture or temperature must be exact (a soufflé, a seared scallop): plated in the kitchen;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "the cook's time: plating for eight takes help or practice (`MNU-4.M3`)."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*The idea stays the same.* Whatever the style, the dish's idea and flavours are the same; only the presentation changes. Write the idea first, then check each version against it in the photos."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**One dish, three styles (60 min).** Plate a dish in each style, photograph each, and write the occasion it suits."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** each version suits a named occasion, and the same idea is clear in all three."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "The food waits and cools",
+         "Every course plated for a casual meal",
+         "Family-style for an informal table"
+        ],
+        [
+         "A formal dinner feels careless",
+         "Served from pans on the table",
+         "Plate it, or use proper platters"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** plating three versions takes time: keep the food hot at 57 °C or above while you work (assessment §9), and serve the household the version plated last."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the three photos with their occasions; the dish's idea in one sentence."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "PLT-4.M3.X1",
+     "title": "A family dinner and a formal dinner",
+     "description": "The same main course for a family dinner and for a formal dinner.",
+     "competencies": [
+      {
+       "id": "TS-PLT",
+       "level": 4
+      },
+      {
+       "id": "CR-COMP",
+       "level": 4
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** present the same main course for two occasions, keeping its idea: a family dinner (family-style) and a formal dinner (plated). Design the formal version with a sketch and plate it for at least four guests, the plates matching and hot. Compose both versions with a written idea for their menu."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** a main course of your repertoire with seasonal Dutch vegetables; platters and plates; the probe; household and guest cards."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Procedure:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "Write the idea of the dish and of each version; sketch the formal plate."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "Serve the family dinner; photograph the table; collect household cards."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "Serve the formal dinner for at least four; probe one plate; photograph the plates together; collect guest cards."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "Write what each version kept and changed."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`TS-PLT` level 4, course three of three:** the formal plate sketched and plated for at least four guests, matching and hot. With `PST-4.M5.X1` and `PLT-4.M2.X1`, the three courses are complete; the photos are re-taken for AI review in `PLT-4.M4.X1`."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`CR-COMP` level 4, dishes two and three:** two compositions with a written idea, each element serving it in the photos and cards. With `PST-4.M5.X1`, the row is complete."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "AI review reads the ideas, the sketch, the photos, the probe reading and the cards: *competent* is two versions that keep one idea, a formal plate that follows the sketch on four matching hot plates, and a platter that is easy to serve from; *not yet* is an idea lost in one version, plates that differ, or no probe reading."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 2 dinners of about 2.5 h."
+      }
+     ]
+    }
+   ],
+   "items": [
+    {
+     "id": "PLT-4.M3.Q1",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "PLT-4.M3.L1",
+     "safety": false,
+     "question": "Which describes family-style service?",
+     "options": [
+      {
+       "key": "A",
+       "text": "composed plates from the kitchen"
+      },
+      {
+       "key": "B",
+       "text": "platters and bowls on the table, guests serving themselves"
+      },
+      {
+       "key": "C",
+       "text": "a buffet in another room"
+      },
+      {
+       "key": "D",
+       "text": "tasting spoons"
+      }
+     ],
+     "answer": "B",
+     "why": "Shared and generous."
+    },
+    {
+     "id": "PLT-4.M3.Q2",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "PLT-4.M3.L1",
+     "safety": false,
+     "question": "Which is typical of the modern style?",
+     "options": [
+      {
+       "key": "A",
+       "text": "the garnish around the main item in order"
+      },
+      {
+       "key": "B",
+       "text": "an asymmetric composed plate with height and space"
+      },
+      {
+       "key": "C",
+       "text": "platters"
+      },
+      {
+       "key": "D",
+       "text": "silver cloches"
+      }
+     ],
+     "answer": "B",
+     "why": "Classical is ordered and symmetrical."
+    },
+    {
+     "id": "PLT-4.M3.Q3",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "PLT-4.M3.L1",
+     "safety": false,
+     "question": "A roast goes out family-style. How?",
+     "options": [
+      {
+       "key": "A",
+       "text": "whole and uncut"
+      },
+      {
+       "key": "B",
+       "text": "carved before it goes out, with the sauce in a jug"
+      },
+      {
+       "key": "C",
+       "text": "on each plate"
+      },
+      {
+       "key": "D",
+       "text": "in the roasting tin"
+      }
+     ],
+     "answer": "B",
+     "why": "Easy to serve from."
+    },
+    {
+     "id": "PLT-4.M3.Q4",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "PLT-4.M3.L1",
+     "safety": true,
+     "question": "A guest has a sesame allergy and dinner is family-style. What do you do?",
+     "options": [
+      {
+       "key": "A",
+       "text": "share all spoons"
+      },
+      {
+       "key": "B",
+       "text": "keep the sesame-free dishes apart, each with its own spoon, and tell the guest which they are"
+      },
+      {
+       "key": "C",
+       "text": "skip sesame in one dish only"
+      },
+      {
+       "key": "D",
+       "text": "nothing"
+      }
+     ],
+     "answer": "B",
+     "why": "Allergen rules (`NUT-3`)."
+    },
+    {
+     "id": "PLT-4.M3.Q5",
+     "type": "SCENARIO",
+     "lessonId": "PLT-4.M3.L2",
+     "safety": false,
+     "question": "You cook for twelve relatives on a Sunday, alone. Which style, and why?",
+     "options": [],
+     "answer": "Family-style: quicker for one cook, keeps the food hot, guests choose their portions.",
+     "why": "[J] the occasion and the cook's time."
+    },
+    {
+     "id": "PLT-4.M3.Q6",
+     "type": "SCENARIO",
+     "lessonId": "PLT-4.M3.L2",
+     "safety": false,
+     "question": "For a celebration dinner for six you serve seared scallops as a starter. Plated or shared? Why?",
+     "options": [],
+     "answer": "Plated in the kitchen: the sear and the temperature must be exact and every guest served the same.",
+     "why": "Exact textures are plated."
+    },
+    {
+     "id": "PLT-4.M3.Q7",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "PLT-4.M3.L2",
+     "safety": false,
+     "question": "What stays the same when a dish changes style?",
+     "options": [
+      {
+       "key": "A",
+       "text": "the plate"
+      },
+      {
+       "key": "B",
+       "text": "the idea and the flavours"
+      },
+      {
+       "key": "C",
+       "text": "the portion"
+      },
+      {
+       "key": "D",
+       "text": "the garnish placement"
+      }
+     ],
+     "answer": "B",
+     "why": "Only the presentation changes."
+    },
+    {
+     "id": "PLT-4.M3.Q8",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "PLT-4.M3.L2",
+     "safety": false,
+     "question": "What is the risk of plating every course at a casual meal for many?",
+     "options": [
+      {
+       "key": "A",
+       "text": "none"
+      },
+      {
+       "key": "B",
+       "text": "the food waits and cools while one cook plates"
+      },
+      {
+       "key": "C",
+       "text": "it looks too good"
+      },
+      {
+       "key": "D",
+       "text": "more washing-up only"
+      }
+     ],
+     "answer": "B",
+     "why": "Plating for many takes time or help."
+    }
+   ]
+  },
+  {
+   "id": "PLT-4.M4",
+   "title": "Food photography for evidence",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** none for this module. It has no knowledge or judgment objective; the photos are checked against the evidence checklist."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "PLT-4.M4.L1",
+     "title": "Evidence photos",
+     "prerequisites": [
+      "ORI-1.M1.L2"
+     ],
+     "competencies": [
+      {
+       "id": "TS-PLT",
+       "level": 4
+      },
+      {
+       "id": "JD-REFL",
+       "level": 4
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** AI review and your own record compare photos over months. A change of light, angle or background can look like a change in the food, so a consistent set-up makes the evidence reliable (assessment §6)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** a window with daylight and no direct sun; a plain, matt grey or white board; a white card (A4 or larger); a phone stand; a ruler or the grid board; a sharp knife and a damp cloth; three dishes to photograph."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*The photo corner:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**daylight** from one side (a window), no direct sun and no kitchen lamps mixed in; a white card opposite softens the shadows;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**background:** a plain, matt surface, such as a grey or white board;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**angles:** from above (90°) for composition, at 45° for height, level for layers and cross-sections;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**scale:** a ruler or the grid board in the frame for cuts, crumbs and portions;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**the camera:** a phone on a stand at a fixed distance, the lens wiped, no zoom, no filters."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "Photograph the set-up itself once it works, with the stand's position marked, so you can rebuild it the same way."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Cross-sections.* Cut with a sharp, clean knife, wiped between cuts, and photograph level and at once."
+      },
+      {
+       "type": "paragraph",
+       "text": "*The evidence checklist.*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "Light: daylight from one side, nothing mixed in."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "Angle: the one the evidence asks for."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "Background: plain and matt."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "Scale: in the frame where size matters."
+        },
+        {
+         "level": 0,
+         "marker": "5.",
+         "text": "Focus: sharp on the food."
+        },
+        {
+         "level": 0,
+         "marker": "6.",
+         "text": "File name: the date and the exercise ID, for example `2026-11-20_PLT-4.M4.X1_1.jpg`."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Reviewing the record.* Look through your photos since S1 for a pattern: what makes some hard to judge? Then write a plan to fix it."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Setting up the corner (60 min).** Build the corner. Take three test shots and check them against the checklist. Photograph the set-up so you can repeat it."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Re-shoots (60 min).** Re-shoot three dishes in the corner, including a cross-section."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "photos that pass every point of the checklist;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "the same light and angle on different days."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Yellow or blue food",
+         "Daylight mixed with kitchen lamps",
+         "Lamps off; one window"
+        ],
+        [
+         "The food gets lost",
+         "A busy background",
+         "A plain, matt board"
+        ],
+        [
+         "Torn, smeared cross-sections",
+         "A blunt knife",
+         "A sharp knife, wiped between cuts"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** hot food photographed quickly and then served or cooled by the cooling rule (assessment §9); the knife wiped and laid flat."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the set-up photo; the test shots with their checklist; the three re-shoots."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "PLT-4.M4.X1",
+     "title": "A photo corner and three dishes re-shot",
+     "description": "Set up a photo corner and re-shoot three dishes.",
+     "competencies": [
+      {
+       "id": "TS-PLT",
+       "level": 4
+      },
+      {
+       "id": "JD-REFL",
+       "level": 4
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** make every later photo reliable as evidence, and check two practice plans against your record. Set up a photo corner and re-shoot three dishes in it. The three dishes are the three courses of the `TS-PLT` level 4 row (from `PST-4.M5.X1`, `PLT-4.M2.X1` and `PLT-4.M3.X1`), cooked again and photographed for the AI review. Review your photo record since S1 for a pattern across at least ten entries (what made photos hard to judge), with a practice plan that the re-shoots show worked. Check the doneness plan of `PRO-4.M6.X1` against the cross-sections taken since."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** a window, a plain board, a white card, the phone stand, the grid; the three courses."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Recipe:** the evidence checklist of `PLT-4.M4.L1` (light, angle, background, scale, focus, file name)."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Procedure:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "Review at least ten earlier evidence photos against the checklist; write the pattern and the plan."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "Set up the corner; take the test shots; record the set-up."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "Cook and re-shoot the three courses, with a cross-section where it applies."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "Check the doneness plan of `PRO-4.M6.X1` against the cross-sections since; write whether it worked."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`TS-PLT` level 4, the AI-review photos:** the three courses in consistent evidence photos, judged by the AI review as composed with intent; the guests' judgment was given at the dinners."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`JD-REFL` level 4, the plans checked:** a pattern across ten photo entries and a plan that the re-shoots show worked; the doneness plan of `PRO-4.M6.X1` checked against the later entries. `MNU-4.M5.X1` and `MS-S4.M1.L6` complete the row."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "AI review reads the review notes, the set-up photo and the re-shoots: *competent* is a pattern named from ten entries, re-shoots that pass every point of the checklist with matching light and angle, and a written check of the doneness plan; *not yet* is fewer than ten entries, mixed light or a busy background, or no check of the plan."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 3 h."
+      }
+     ]
+    }
+   ],
+   "items": []
+  }
+ ]
+}

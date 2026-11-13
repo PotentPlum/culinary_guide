@@ -140,7 +140,8 @@ def course_doc(
     lines += ["## Module structure and hours", ""] + gen("modules")
     lines += ["## Modules", "", "### KNF-1.M1 — Cuts", ""] + gen("module-knf-1-m1")
     for ident in lessons:
-        lines += [f"#### {ident} — Lesson", ""] + gen(f"lesson-{ident.lower().replace('.', '-')}")
+        title = {"KNF-1.M1.L1": "Grip", "KNF-1.M1.L2": "*Dice*"}.get(ident, "Lesson")
+        lines += [f"#### {ident} — {title}", ""] + gen(f"lesson-{ident.lower().replace('.', '-')}")
         lines += ["**Concepts:** x", "", "**Sessions:**"] + [f"{n}. Practise." for n in range(1, sessions + 1)]
         lines += ["", "**Cues:** x", "", "**Faults:** x", ""]
     lines += ["#### KNF-1.M1.X1 — Dice", ""] + gen("exercise-knf-1-m1-x1")
@@ -156,6 +157,32 @@ def course_doc(
     lines += ["## Materials and equipment", "", "| Item | Tier | Good | Best |", "|---|---|---|---|"]
     lines += ["| Chef's knife | 0 | Any | Forged |", "", "**Indicative ingredient budget:** about €10.", ""]
     lines += ["## Validation", ""] + gen("validation")
+    return "\n".join(lines)
+
+
+def lesson_doc(
+    lessons: tuple[str, ...] = ("KNF-1.M1.L1", "KNF-1.M1.L2"),
+    practice: int = 2,
+    exercise_fields: tuple[str, ...] = ("Task", "You need", "Framework", "Show", "Time"),
+    status: str = "draft — awaiting the second reader",
+    extra: str = "",
+) -> str:
+    """A Phase 6 lesson file for KNF-1 of course_doc(), with empty generated blocks."""
+
+    def gen(name: str) -> list[str]:
+        return [f"<!-- BEGIN generated:{name} -->", f"<!-- END generated:{name} -->", ""]
+
+    lines = ["# KNF-1 — Knives", ""] + gen("header") + [f"**Status:** {status}", "", "## KNF-1.M1 — Cuts", ""]
+    for ident in lessons:
+        title = {"KNF-1.M1.L1": "Grip", "KNF-1.M1.L2": "Dice"}.get(ident, "Lesson")
+        lines += [f"### {ident} — {title}", ""] + gen(f"lesson-{ident.lower().replace('.', '-')}")
+        for name in vc.LESSON_DOC_FIELDS:
+            lines.append(f"**{name}:** x")
+            if name == "Practice":
+                lines += [f"{n}. A session." for n in range(1, practice + 1)]
+        lines += [extra, ""]
+    lines += ["### KNF-1.M1.X1 — Dice", ""] + gen("exercise-knf-1-m1-x1")
+    lines += [f"**{name}:** x" for name in exercise_fields] + [""]
     return "\n".join(lines)
 
 
@@ -406,6 +433,117 @@ class ValidateCurriculumTest(unittest.TestCase):
         errors = self.course_errors(course_doc(evidence_row="| SA-HYG | 1 | `KNF-1.M1.X1` | photo — x |"))
         self.assertIn("KNF-1.M1: no evidence row for TS-KNF (level 2)", errors)
         self.assertIn("KNF-1.M1: evidence row SA-HYG 1: level 1 is shown by the quiz", errors)
+
+    def test_exercise_ids_named_in_a_course_file_must_exist(self) -> None:
+        row = "| TS-KNF | 2 | `KNF-1.M1.X1` | photo — even dice; the hygiene part in `SAF-1.M1.X1` |"
+        self.assertEqual(self.course_errors(course_doc(evidence_row=row)), [])
+        row = "| TS-KNF | 2 | `KNF-1.M1.X1` | photo — even dice; the rest in `KNF-1.M9.X1` |"
+        self.assertIn(
+            "KNF-1: names KNF-1.M9.X1, which is not an exercise in the outline",
+            self.course_errors(course_doc(evidence_row=row)),
+        )
+
+    def test_module_and_lesson_ids_named_in_a_course_file_must_exist(self) -> None:
+        row = "| TS-KNF | 2 | `KNF-1.M1.X1` | photo — even dice, as taught in `KNF-1.M1.L1` of `KNF-1.M1` |"
+        self.assertEqual(self.course_errors(course_doc(evidence_row=row)), [])
+        row = "| TS-KNF | 2 | `KNF-1.M1.X1` | photo — even dice, as taught in `KNF-1.M1.L7` and `KNF-1.M8` |"
+        errors = self.course_errors(course_doc(evidence_row=row))
+        self.assertIn("KNF-1: names KNF-1.M1.L7, which is not a lesson in the outline", errors)
+        self.assertIn("KNF-1: names KNF-1.M8, which is not a module in the outline", errors)
+
+    def test_lesson_headings_must_match_the_outline_titles_apart_from_italics(self) -> None:
+        self.assertEqual(self.course_errors(course_doc()), [])
+        text = course_doc().replace("#### KNF-1.M1.L1 — Grip", "#### KNF-1.M1.L1 — The grip")
+        self.assertIn("KNF-1.M1.L1: titled 'The grip', the outline says 'Grip'", self.course_errors(text))
+
+    def review_errors(self, row: str) -> list[str]:
+        """Errors of the second reader's worksheet holding `row` under KNF-1, with a one-row §9 table."""
+        (self.root / "04-assessment.md").write_text(
+            "# Assessment\n\n## 9. Safety figures\n\n| Topic | Figure | Source |\n|---|---|---|\n"
+            "| Fridge (at home) | 4 °C | x |\n\n## 10. Next\n",
+            encoding="utf-8",
+        )
+        (self.root / vc.SAFETY_REVIEW).write_text(
+            "# Safety review\n\n## S1\n\n### KNF-1 — Knives\n\n| Item | Question | Answer | Why | §9 row | Verdict | Note |\n"
+            f"|---|---|---|---|---|---|---|\n{row}\n",
+            encoding="utf-8",
+        )
+        return self.course_errors(course_doc())
+
+    def test_the_safety_review_holds_every_safety_item_word_for_word(self) -> None:
+        good = "| KNF-1.M1.Q1 | Q? A) x B) y | A | Because. | Fridge |  |  |"
+        self.assertEqual(self.review_errors(good), [])
+        self.assertEqual(self.review_errors(good.replace("| Fridge |", "| — `KNF-1.M1.L2` |")), [])
+        self.assertEqual(self.review_errors(good.replace("|  |  |", "| agrees |  |")), [])
+        errors = self.review_errors("| KNF-1.M1.Q2 | Q? A) x B) y | A | Because. | Fridge |  |  |")
+        self.assertIn("06-safety-review.md:9: KNF-1.M1.Q2 is not a safety item of a course file", errors)
+        self.assertIn("06-safety-review.md: safety item KNF-1.M1.Q1 (KNF-1) is missing", errors)
+        errors = self.review_errors(good.replace("| A |", "| B |"))
+        self.assertIn("06-safety-review.md:9: KNF-1.M1.Q1's answer differs from KNF-1.md; copy it again and clear the verdict", errors)
+
+    def test_the_safety_review_names_real_rows_and_explains_disagreements(self) -> None:
+        good = "| KNF-1.M1.Q1 | Q? A) x B) y | A | Because. | Fridge |  |  |"
+        errors = self.review_errors(good.replace("| Fridge |", "| Fridge; Freezer |"))
+        self.assertIn("06-safety-review.md:9: KNF-1.M1.Q1 names §9 row 'Freezer', which is not a row of assessment §9", errors)
+        errors = self.review_errors(good.replace("| Fridge |", "| — `KNF-1.M1.L9` |"))
+        self.assertIn("06-safety-review.md:9: KNF-1.M1.Q1 rests on KNF-1.M1.L9, which is not a lesson in the outline", errors)
+        errors = self.review_errors(good.replace("|  |  |", "| disagrees |  |"))
+        self.assertIn("06-safety-review.md:9: KNF-1.M1.Q1 disagrees without a note", errors)
+        self.assertEqual(self.review_errors(good.replace("|  |  |", "| disagrees | B is also right |")), [])
+        errors = self.review_errors(good.replace("|  |  |", "| maybe |  |"))
+        self.assertIn("06-safety-review.md:9: verdict 'maybe' is not one of agrees, disagrees (or empty)", errors)
+
+    def lesson_errors(self, lessons: str, developed: str = "KNF-1") -> list[str]:
+        """Errors with the course file of course_doc() and the given lesson file for KNF-1."""
+        (self.root / vc.LESSONS_OVERVIEW).write_text(f"# Phase 6\n\n**Courses developed:** {developed}\n", encoding="utf-8")
+        folder = self.root / "06-lessons" / "S1"
+        folder.mkdir(parents=True, exist_ok=True)
+        (folder / "KNF-1.md").write_text(lessons, encoding="utf-8")
+        self.course_errors(course_doc())
+        report, stages, phase1, phase4, phase5 = vc.check(self.root)
+        for path, blocks in vc.lesson_tables(stages, phase5).items():
+            vc.sync_generated(path, blocks, False, report)
+        return report.errors
+
+    def test_a_complete_lesson_file_passes(self) -> None:
+        self.assertEqual(self.lesson_errors(lesson_doc()), [])
+
+    def test_lesson_files_hold_every_lesson_and_exercise_with_its_fields(self) -> None:
+        errors = self.lesson_errors(lesson_doc(lessons=("KNF-1.M1.L1",)))
+        self.assertIn("KNF-1.M1.L2: not written in the lesson file", errors)
+        errors = self.lesson_errors(lesson_doc().replace("### KNF-1.M1.L1 — Grip", "### KNF-1.M1.L1 — The grip"))
+        self.assertIn("KNF-1.M1.L1: titled 'The grip' in the lesson file, the outline says 'Grip'", errors)
+        errors = self.lesson_errors(lesson_doc(practice=1))
+        self.assertIn("KNF-1.M1.L1: 1 numbered Practice item(s), the course file has 2 session(s)", errors)
+        errors = self.lesson_errors(lesson_doc().replace("**Record:** x", "", 1))
+        self.assertIn("KNF-1.M1.L1: missing **Record:** in the lesson file", errors)
+        errors = self.lesson_errors(lesson_doc(), developed="KNF-1, SAF-1")
+        self.assertIn("SAF-1: its lessons are developed, but 06-lessons/S1/SAF-1.md is missing", errors)
+
+    def test_an_exercise_is_written_to_its_support_level(self) -> None:
+        errors = self.lesson_errors(lesson_doc(exercise_fields=("Task", "You need", "Recipe", "Show", "Time")))
+        self.assertIn("KNF-1.M1.X1: support level framework needs **Framework:**", errors)
+        self.assertIn("KNF-1.M1.X1: support level framework has no **Recipe:** (Phase 1 §6.6)", errors)
+
+    def test_lesson_temperatures_come_from_section_9_or_the_course_file(self) -> None:
+        errors = self.lesson_errors(lesson_doc(extra="Cook it to 71 °C."))
+        self.assertIn("06-lessons/S1/KNF-1.md:29: 71 °C is in neither assessment §9 nor the course file", errors)
+        (self.root / "04-assessment.md").write_text(
+            "# A\n\n## 9. Safety\n\n| Topic | Figure | Source |\n|---|---|---|\n| Eggs | 70–71 °C | x |\n", encoding="utf-8"
+        )
+        self.assertEqual(self.lesson_errors(lesson_doc(extra="Cook it to 71 °C.")), [])
+
+    def test_every_number_of_a_temperature_list_is_checked(self) -> None:
+        self.assertEqual(vc.temperatures("62, 65 and 70 °C; 21–24 °C; −18 °C"), ["62.0", "65.0", "70.0", "21.0", "24.0", "-18.0"])
+        errors = self.lesson_errors(lesson_doc(extra="Hold it at 62, 65 and 70 °C."))
+        self.assertIn("06-lessons/S1/KNF-1.md:29: 62 °C is in neither assessment §9 nor the course file", errors)
+        self.assertIn("06-lessons/S1/KNF-1.md:29: 65 °C is in neither assessment §9 nor the course file", errors)
+
+    def test_a_lesson_file_is_final_only_once_its_safety_items_are_agreed(self) -> None:
+        self.assertIn(
+            "KNF-1: final while 1 safety item(s) are not agreed in the safety review",
+            self.lesson_errors(lesson_doc(status="final")),
+        )
 
     def test_a_knowledge_check_replaces_an_exercise_only_for_quiz_only_rows(self) -> None:
         row = "| TS-KNF | 2 | knowledge check | quiz — the cut names |"

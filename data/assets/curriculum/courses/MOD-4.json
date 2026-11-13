@@ -1,0 +1,2543 @@
+{
+ "schemaVersion": 1,
+ "id": "MOD-4",
+ "introduction": [
+  {
+   "type": "paragraph",
+   "text": "**Before you start.** In S3 you used a sous vide circulator (`SLW-3.M5`) and set a mousse with gelatin (`PST-3.M4`). This course widens that into the toolkit of modern cooking [S19], with one question in front: does the technique make the dish better, or only different?"
+  },
+  {
+   "type": "list",
+   "items": [
+    {
+     "level": 0,
+     "marker": "",
+     "text": "**judgment:** where modernist cooking came from, and how to tell technique in service of flavour from novelty;"
+    },
+    {
+     "level": 0,
+     "marker": "",
+     "text": "**precision cooking II:** eggs and vegetables at exact temperatures, texture tables, a calibrated circulator;"
+    },
+    {
+     "level": 0,
+     "marker": "",
+     "text": "**gels:** gelatin and agar by percentage, set gels, fluid gels and gel sheets;"
+    },
+    {
+     "level": 0,
+     "marker": "",
+     "text": "**foams and stabilised emulsions:** lecithin airs, whipped foams, an optional siphon, xanthan in sauces and dressings;"
+    },
+    {
+     "level": 0,
+     "marker": "",
+     "text": "**dehydration and crisps:** dried vegetables, tuiles, crisps and powders."
+    }
+   ]
+  },
+  {
+   "type": "paragraph",
+   "text": "Every element you make goes into a dish with a written reason. Hydrocolloids work at tiny doses, so you weigh them on the 0.01 g scale, never by the teaspoon."
+  },
+  {
+   "type": "paragraph",
+   "text": "Three safety rules run through the course (assessment §9):"
+  },
+  {
+   "type": "list",
+   "items": [
+    {
+     "level": 0,
+     "marker": "",
+     "text": "eggs cooked below 71 °C (the soft textures of `MOD-4.M2`) are raw or lightly cooked when served: not for risk groups;"
+    },
+    {
+     "level": 0,
+     "marker": "",
+     "text": "the siphon is used only as its maker's instructions say: the maker's chargers, never above the fill line, never inhaled; chargers bought for food use, a few at a time [S50];"
+    },
+    {
+     "level": 0,
+     "marker": "",
+     "text": "you dry vegetables, fruit and starches only; no meat is dried in this course."
+    }
+   ]
+  },
+  {
+   "type": "paragraph",
+   "text": "Vegetables and fruit are Dutch and in season. The hydrocolloids (agar, xanthan, soy lecithin; gellan if you like) come in a small starter set that lasts well beyond the course."
+  },
+  {
+   "type": "paragraph",
+   "text": "Plan about three weeks at 6.5 hours a week, or run the course alongside another S4 course. Gels and foams are quick; drying takes a day in a low oven."
+  },
+  {
+   "type": "paragraph",
+   "text": "**Have ready:** the sous vide circulator and bags; the calibrated instant-read probe; the 0.01 g scale; a stick blender and a blender; a fine sieve; the hydrocolloid starter set; a shallow tray for gels; the mandoline with its guard; a silicone mat; a tuile stencil (cut one from a plastic lid); airtight boxes with a bag of dry rice; the siphon and the maker's chargers if you have them (not needed)."
+  }
+ ],
+ "modules": [
+  {
+   "id": "MOD-4.M1",
+   "title": "When modern technique adds value",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** the 8 items of `MOD-4.M1` in the course file. Pass mark 80 %."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "MOD-4.M1.L1",
+     "title": "Modernist cooking in context",
+     "prerequisites": [
+      "SLW-3.M5.L3"
+     ],
+     "competencies": [
+      {
+       "id": "JD-CHSE",
+       "level": 4
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** modern techniques are easy to copy and easy to misuse. Knowing where they came from, and asking what each one adds, keeps you from putting a foam on a plate because you can."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** a notebook; access to a book, menu or video showing modern dishes; [S19] if you can borrow it."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*History.* Food science entered restaurant kitchens from the 1980s, when Hervé This and Nicholas Kurti spoke of \"molecular gastronomy\". In the 1990s and 2000s chefs such as Ferran Adrià (elBulli) and Heston Blumenthal used foams, gels, spherification and low-temperature cooking on the plate. *Modernist Cuisine* [S19] gathered the techniques for cooks in 2011. Many are now ordinary: sous vide, a xanthan-thickened dressing, a fluid gel."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Principles.*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "Control of temperature and texture through physics and chemistry."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "Ingredients used as tools: hydrocolloids that thicken and set, emulsifiers that hold oil and water together."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "Measuring instead of guessing."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "Testing, and writing the results down."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Criticism.* The same foam on every plate; technique for show; food that surprises but doesn't satisfy. A backlash followed, towards produce and fire."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Technique in service of flavour and texture.* A modern technique earns its place when it:"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "gives a texture you couldn't get otherwise (a fluid gel that holds on a plate, a light air of a strong flavour);"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "improves control or consistency (an egg at exactly 64 °C every time);"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "concentrates or clarifies a flavour;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "and the dish is better for it, as the tasters can say."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "Three questions test it: what does it add? Would the classic way do as well? Would a guest miss it?"
+      },
+      {
+       "type": "paragraph",
+       "text": "A worked example. A beetroot dish with a beetroot fluid gel:"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Question",
+        "Answer"
+       ],
+       "rows": [
+        [
+         "What does it add?",
+         "A sharp, glossy sauce that stays where it is put, so each bite gets some"
+        ],
+        [
+         "The classic way?",
+         "A reduced beetroot *jus*: it runs across the plate and into the other elements"
+        ],
+        [
+         "Would a guest miss it?",
+         "Test it: serve both, ask which they prefer and why"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:** None: theory only."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** for any modern element, you can name what it adds and what the classic alternative would be."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "A technique praised because it is new",
+         "Judging by novelty",
+         "Ask the three questions"
+        ],
+        [
+         "An element on the plate without a reason",
+         "Added because it is possible",
+         "Write its reason, or leave it out"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** none specific; the safety rules of the techniques are in the lessons that teach them."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** for one modern dish you know, the three questions and your answers."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "MOD-4.M1.X1",
+     "title": "Three modern dishes analysed",
+     "description": "Analyse three modern dishes: what does each technique add?",
+     "competencies": [
+      {
+       "id": "JD-CHSE",
+       "level": 4
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** judge what modern technique adds, and cook from a description alone. Analyse three modern dishes from books, menus or videos in writing: each technique, what it adds, the classic alternative and a verdict. Then recreate one of the three, or a dish you know only from a menu description, from the description alone (no recipe), with a written plan and a fallback, and serve it to tasters who know the description."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** the sources of the three dishes; for the recreation, seasonal produce and the techniques you already have; tasters' cards."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Procedure:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "Analyse the three dishes in writing."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "Choose one to recreate; write the plan and the fallback for its riskiest step."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "Cook it; photograph it; ask the tasters whether they recognise the description."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "Note what the fallback was needed for, if anything."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:** the analysis, and dish one of two of the `JD-CHSE` level 4 row: recreated from a description with a written plan and fallback, recognised by the tasters. The second dish is in `RDV-4.M2.X1`."
+      },
+      {
+       "type": "paragraph",
+       "text": "AI review reads the analysis, the plan, the photo and the cards: *competent* is three analyses that each name what the technique adds and a classic alternative with a verdict, and a recreated dish the tasters recognise, with a plan and a fallback written before cooking; *not yet* is a verdict without a reason, a recipe used, or no fallback."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 1.5 h for the analysis; 2 h for the dish."
+      }
+     ]
+    }
+   ],
+   "items": [
+    {
+     "id": "MOD-4.M1.Q1",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "MOD-4.M1.L1",
+     "safety": false,
+     "question": "Who coined \"molecular gastronomy\" in the 1980s?",
+     "options": [
+      {
+       "key": "A",
+       "text": "Escoffier"
+      },
+      {
+       "key": "B",
+       "text": "Hervé This and Nicholas Kurti"
+      },
+      {
+       "key": "C",
+       "text": "Bocuse"
+      },
+      {
+       "key": "D",
+       "text": "Myhrvold"
+      }
+     ],
+     "answer": "B",
+     "why": "Scientists before chefs."
+    },
+    {
+     "id": "MOD-4.M1.Q2",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "MOD-4.M1.L1",
+     "safety": false,
+     "question": "Which modern technique is now ordinary in many home kitchens?",
+     "options": [
+      {
+       "key": "A",
+       "text": "spherification"
+      },
+      {
+       "key": "B",
+       "text": "sous vide"
+      },
+      {
+       "key": "C",
+       "text": "liquid nitrogen"
+      },
+      {
+       "key": "D",
+       "text": "centrifuges"
+      }
+     ],
+     "answer": "B",
+     "why": "Circulators are cheap now."
+    },
+    {
+     "id": "MOD-4.M1.Q3",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "MOD-4.M1.L1",
+     "safety": false,
+     "question": "What is a core principle of modernist cooking?",
+     "options": [
+      {
+       "key": "A",
+       "text": "more butter"
+      },
+      {
+       "key": "B",
+       "text": "controlling temperature and texture by measurement and testing"
+      },
+      {
+       "key": "C",
+       "text": "only raw food"
+      },
+      {
+       "key": "D",
+       "text": "no recipes"
+      }
+     ],
+     "answer": "B",
+     "why": "Measure instead of guess."
+    },
+    {
+     "id": "MOD-4.M1.Q4",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "MOD-4.M1.L1",
+     "safety": false,
+     "question": "What is the common criticism of modernist plates?",
+     "options": [
+      {
+       "key": "A",
+       "text": "too cheap"
+      },
+      {
+       "key": "B",
+       "text": "technique for show, the same foam everywhere"
+      },
+      {
+       "key": "C",
+       "text": "too few vegetables"
+      },
+      {
+       "key": "D",
+       "text": "too hot"
+      }
+     ],
+     "answer": "B",
+     "why": "Novelty over flavour."
+    },
+    {
+     "id": "MOD-4.M1.Q5",
+     "type": "SCENARIO",
+     "lessonId": "MOD-4.M1.L1",
+     "safety": false,
+     "question": "A friend wants to put a beetroot foam on a beetroot salad. What questions do you ask before agreeing?",
+     "options": [],
+     "answer": "What does the foam add (a texture, a lighter intensity) that roasted or raw beetroot doesn't? Would the classic way do as well? Would a guest miss it?",
+     "why": "[J] technique in service of the dish."
+    },
+    {
+     "id": "MOD-4.M1.Q6",
+     "type": "SCENARIO",
+     "lessonId": "MOD-4.M1.L1",
+     "safety": false,
+     "question": "When does sous vide clearly earn its place for an egg?",
+     "options": [],
+     "answer": "When the exact texture matters and must be repeated for many guests: a yolk at the same set every time, which the pan can't give as reliably.",
+     "why": "Control and consistency."
+    },
+    {
+     "id": "MOD-4.M1.Q7",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "MOD-4.M1.L1",
+     "safety": false,
+     "question": "A fluid gel of apple holds its place on the plate where a juice would run. What does it add?",
+     "options": [
+      {
+       "key": "A",
+       "text": "nothing"
+      },
+      {
+       "key": "B",
+       "text": "a texture and placement a sauce couldn't give, with the full flavour"
+      },
+      {
+       "key": "C",
+       "text": "colour only"
+      },
+      {
+       "key": "D",
+       "text": "sweetness"
+      }
+     ],
+     "answer": "B",
+     "why": "It does something the classic can't."
+    },
+    {
+     "id": "MOD-4.M1.Q8",
+     "type": "SCENARIO",
+     "lessonId": "MOD-4.M1.L1",
+     "safety": false,
+     "question": "Your tasters liked the classic version of a dish better than your modern one. What do you conclude?",
+     "options": [],
+     "answer": "The technique didn't serve the dish here; keep the classic, or change what the modern element is meant to add and test again.",
+     "why": "The tasters decide."
+    }
+   ]
+  },
+  {
+   "id": "MOD-4.M2",
+   "title": "Precision cooking II",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** the 8 items of `MOD-4.M2` in the course file, 1 of them a safety item. Pass mark 80 %, with every safety item correct."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "MOD-4.M2.L1",
+     "title": "Time, temperature and texture",
+     "prerequisites": [
+      "SLW-3.M5.L2"
+     ],
+     "competencies": [
+      {
+       "id": "TS-MOD",
+       "level": 2
+      },
+      {
+       "id": "KM-EQPT",
+       "level": 4
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** a precise bath gives the same texture every time, but only if the bath is right and you know which temperature gives which texture. A tested table and a calibrated circulator turn a guess into a choice."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** the circulator and a deep container; the calibrated probe; a glass of ice water; six or more eggs; 500 g of carrots or celeriac, peeled and cut evenly; zip-top bags; a slotted spoon; small bowls for opening the eggs; a pan for boiling; labels; a timer."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Texture tables.* For eggs and vegetables, the texture depends on the temperature reached and the time held:"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**eggs in the shell:** the white and yolk proteins set at different temperatures, so a 45–60 minute bath gives a distinct texture at each degree between about 60 and 70 °C: a barely set, custardy white and a runny yolk at the low end; a fudgy yolk around 64–65 °C; firm at the high end;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**vegetables:** the pectin in the cell walls softens only above about 80–85 °C, so root vegetables cooked at 83–85 °C become evenly, densely tender, and the flavour stays in the bag."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "Tables in [S19] and similar sources give the starting points; your own table follows from your tests."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Safety.* Eggs held below 71 °C are lightly cooked when served: not for risk groups (assessment §9). Pasteurised eggs exist for them."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Calibrating the circulator.*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "Check the probe in ice water: it should read 0 °C (`ORI-1`)."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "Set the bath to a temperature, for example 64 °C, and let it settle."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "Read the water with the probe next to the circulator's sensor."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "Note the offset (the probe minus the display) and correct the setting by it."
+        },
+        {
+         "level": 0,
+         "marker": "5.",
+         "text": "Check the water level and that the water circulates; descale as the manual says."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Workarounds.* Without a circulator, use a pan on the hob with a probe and frequent adjustment (`SLW-3.M5.L1`). Without a vacuum sealer, use a zip-top bag by water displacement: lower the open bag into the water so the pressure pushes the air out, then seal it just above the surface."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Calibration and eggs (90 min).** Calibrate the circulator and log the offset. Hold eggs at five temperatures, one bath after another, each for the same time. Open them in a row and photograph the textures."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Vegetables (75 min).** Cook carrots or celeriac in a bag at 84 °C, and the same cut boiled. Taste and compare."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "a calibration log with the offset;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "a row of five eggs with a visible, graded texture;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "vegetables tender and bright, dense rather than soggy."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Textures that don't match the table",
+         "Display trusted without a check",
+         "Calibrate; correct by the offset"
+        ],
+        [
+         "Uneven eggs in one batch",
+         "Bath too crowded, so it dropped",
+         "Fewer eggs; wait until the bath recovers"
+        ],
+        [
+         "Vegetables still crunchy after hours",
+         "Bath at 70 °C",
+         "Above 80 °C; 83–85 °C for roots"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** soft eggs not for risk groups; for them, pasteurised eggs or an egg cooked until fully set (assessment §9). The circulator's water changed after use."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the calibration log; the bath temperature and time for each egg; the photos; your carrot comparison."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "MOD-4.M2.X1",
+     "title": "Eggs at five temperatures",
+     "description": "Eggs at five temperatures; textures compared.",
+     "competencies": [
+      {
+       "id": "TS-MOD",
+       "level": 2
+      },
+      {
+       "id": "KM-EQPT",
+       "level": 4
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** build a personal texture table for eggs and use the right one in a dish. Cook eggs at five temperatures (for example 61, 63, 64.5, 66 and 68 °C, held 45 minutes) and compare the textures. The extensions: one egg texture used in a dish, with a written reason that shows what it adds; the circulator calibrated against the reference thermometer; and one missing tool worked around, with the reason (for example a zip-top bag by water displacement instead of a vacuum sealer)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** a dozen Dutch eggs; seasonal vegetables for the dish; the circulator; the calibrated probe."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Framework:** the comparison sheet."
+      },
+      {
+       "type": "table",
+       "header": [
+        "Temperature",
+        "Bath read by probe",
+        "White",
+        "Yolk",
+        "Use"
+       ],
+       "rows": [
+        [
+         "61 °C",
+         "",
+         "",
+         "",
+         ""
+        ],
+        [
+         "63 °C",
+         "",
+         "",
+         "",
+         ""
+        ],
+        [
+         "64.5 °C",
+         "",
+         "",
+         "",
+         ""
+        ],
+        [
+         "66 °C",
+         "",
+         "",
+         "",
+         ""
+        ],
+        [
+         "68 °C",
+         "",
+         "",
+         "",
+         ""
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Procedure:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "Calibrate the circulator; log the offset."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "Cook the eggs at five temperatures; log the bath temperatures; photograph them opened in a row."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "Write the texture table."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "Choose one texture for a dish (for example the 64.5 °C egg on a celeriac purée); write the reason; serve it."
+        },
+        {
+         "level": 0,
+         "marker": "5.",
+         "text": "Write the workaround used and why."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`TS-MOD` level 2, the precision part:** the egg textures from the table, logged, and one used in a dish with a written reason. The gel, foam and xanthan sauce of the row follow in `MOD-4.M3.X1` and `MOD-4.M4.X1`."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`KM-EQPT` level 4, the calibration and workaround part:** the calibration log and one missing tool worked around with the reason. The equipment plan for a guest dinner is in `MNU-4.M3.X1`."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "AI review reads the sheet, the logs, the row photo and the dish photo: *competent* is a calibration log with the offset, five graded textures matching the logged temperatures, and a dish whose egg has a reason; *not yet* is no calibration, textures that don't step, or a soft egg served to a risk group."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 2.5 h."
+      }
+     ]
+    }
+   ],
+   "items": [
+    {
+     "id": "MOD-4.M2.Q1",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "MOD-4.M2.L1",
+     "safety": false,
+     "question": "Why does an egg at 63 °C have a different texture from one at 67 °C?",
+     "options": [
+      {
+       "key": "A",
+       "text": "the shell"
+      },
+      {
+       "key": "B",
+       "text": "white and yolk proteins set at different temperatures"
+      },
+      {
+       "key": "C",
+       "text": "the water"
+      },
+      {
+       "key": "D",
+       "text": "the time only"
+      }
+     ],
+     "answer": "B",
+     "why": "Each degree sets more proteins."
+    },
+    {
+     "id": "MOD-4.M2.Q2",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "MOD-4.M2.L1",
+     "safety": false,
+     "question": "Why are root vegetables cooked sous vide at about 84 °C, not 60 °C?",
+     "options": [
+      {
+       "key": "A",
+       "text": "speed only"
+      },
+      {
+       "key": "B",
+       "text": "their pectin only softens above about 80–85 °C"
+      },
+      {
+       "key": "C",
+       "text": "safety"
+      },
+      {
+       "key": "D",
+       "text": "colour"
+      }
+     ],
+     "answer": "B",
+     "why": "Below that they stay crunchy."
+    },
+    {
+     "id": "MOD-4.M2.Q3",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "MOD-4.M2.L1",
+     "safety": true,
+     "question": "Who should not be served a 63 °C egg?",
+     "options": [
+      {
+       "key": "A",
+       "text": "nobody"
+      },
+      {
+       "key": "B",
+       "text": "risk groups: pregnant people, young children, older people, people with weakened immunity"
+      },
+      {
+       "key": "C",
+       "text": "everyone over 60"
+      },
+      {
+       "key": "D",
+       "text": "vegetarians"
+      }
+     ],
+     "answer": "B",
+     "why": "Risk-group row of assessment §9."
+    },
+    {
+     "id": "MOD-4.M2.Q4",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "MOD-4.M2.L1",
+     "safety": false,
+     "question": "How do you check a circulator's display?",
+     "options": [
+      {
+       "key": "A",
+       "text": "trust it"
+      },
+      {
+       "key": "B",
+       "text": "against a calibrated probe in the bath, the probe checked in ice water"
+      },
+      {
+       "key": "C",
+       "text": "by touch"
+      },
+      {
+       "key": "D",
+       "text": "by the time"
+      }
+     ],
+     "answer": "B",
+     "why": "Calibrate, then correct the offset."
+    },
+    {
+     "id": "MOD-4.M2.Q5",
+     "type": "CALCULATION",
+     "lessonId": "MOD-4.M2.L1",
+     "safety": false,
+     "question": "The display reads 64.0 °C; your calibrated probe reads 63.2 °C. What do you set for a true 64.5 °C?",
+     "options": [],
+     "answer": "65.3 °C",
+     "why": "The bath runs 0.8 °C low: 64.5 + 0.8."
+    },
+    {
+     "id": "MOD-4.M2.Q6",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "MOD-4.M2.L1",
+     "safety": false,
+     "question": "You have no vacuum sealer. What works for sous vide?",
+     "options": [
+      {
+       "key": "A",
+       "text": "cling film"
+      },
+      {
+       "key": "B",
+       "text": "a zip-top bag lowered into water to push the air out"
+      },
+      {
+       "key": "C",
+       "text": "no bag"
+      },
+      {
+       "key": "D",
+       "text": "foil"
+      }
+     ],
+     "answer": "B",
+     "why": "Water displacement."
+    },
+    {
+     "id": "MOD-4.M2.Q7",
+     "type": "SCENARIO",
+     "lessonId": "MOD-4.M2.L1",
+     "safety": false,
+     "question": "Your eggs came out less set than your table predicts. Name two causes to check.",
+     "options": [],
+     "answer": "The bath ran below the set temperature (calibration, a crowded bath), or the eggs went in fridge-cold and were not held long enough.",
+     "why": "Calibrate and keep the bath stable."
+    },
+    {
+     "id": "MOD-4.M2.Q8",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "MOD-4.M2.L1",
+     "safety": false,
+     "question": "What do texture tables give you?",
+     "options": [
+      {
+       "key": "A",
+       "text": "a guarantee"
+      },
+      {
+       "key": "B",
+       "text": "starting points to test and refine into your own table"
+      },
+      {
+       "key": "C",
+       "text": "safety figures"
+      },
+      {
+       "key": "D",
+       "text": "recipes"
+      }
+     ],
+     "answer": "B",
+     "why": "Your own tests decide."
+    }
+   ]
+  },
+  {
+   "id": "MOD-4.M3",
+   "title": "Gels",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** the 8 items of `MOD-4.M3` in the course file. Pass mark 80 %."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "MOD-4.M3.L1",
+     "title": "Gelatin and agar",
+     "prerequisites": [
+      "PST-3.M4.L3"
+     ],
+     "competencies": [
+      {
+       "id": "SC-EMUL",
+       "level": 4
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** gelatin and agar both set a liquid, but they behave in opposite ways. Knowing which melts in the mouth and which can be served warm, and dosing each by percentage, lets you choose the set before you start."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** 1 litre of apple or beetroot juice (Dutch, or pressed yourself); gelatin sheets of known bloom strength (`CLS-4.M4.L2`); agar powder; the 0.01 g scale; two small pans; a whisk; three small trays or tins lined with clingfilm; a ruler; a knife."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Two gelling agents compared:*"
+      },
+      {
+       "type": "table",
+       "header": [
+        "",
+        "Gelatin",
+        "Agar"
+       ],
+       "rows": [
+        [
+         "Source",
+         "Animal collagen (pork or beef)",
+         "Red seaweed (vegetarian)"
+        ],
+        [
+         "Dissolves",
+         "In warm liquid (about 50 °C), never boiled",
+         "Only when boiled (about 1–2 minutes)"
+        ],
+        [
+         "Sets",
+         "Slowly, in the fridge (below about 15 °C)",
+         "Quickly, at about 35–40 °C"
+        ],
+        [
+         "Melts",
+         "At about 30–35 °C, in the mouth",
+         "Only above about 80–85 °C, so it can be served warm"
+        ],
+        [
+         "Texture",
+         "Elastic, melting",
+         "Firm, brittle, clean"
+        ],
+        [
+         "Acid",
+         "Weakened by strong acid",
+         "Tolerates acid better"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "Raw kiwi and pineapple also weaken gelatin, but they are not in this curriculum's produce."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Strength by percentage.* The dose is a percentage of the liquid's weight:"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**agar:** about 0.5–1 % for a sliceable gel, less for a soft one;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**gelatin:** by sheets of known bloom strength, or about 1.5–2 % for powder in a soft set."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "For 400 g of juice, 1 % agar is 4.00 g; 0.5 % is 2.00 g."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Set gels by percentage.*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "Weigh the dose on the 0.01 g scale."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "Disperse it in the cold liquid (agar whisked in; gelatin sheets soaked in cold water and squeezed)."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "Heat as the agent needs: agar boiled for 1–2 minutes; gelatin dissolved in warm liquid, never boiled."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "Pour into a tray or mould; let it set."
+        },
+        {
+         "level": 0,
+         "marker": "5.",
+         "text": "Cut into cubes or shapes."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Gelatin against agar (60 min).** Set the same juice with each. Serve a cube of each warm and cold, and compare."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Strength by percentage (60 min).** Set agar at three doses (for example 0.4, 0.7 and 1 %). Cut them and photograph them side by side."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "doses logged to 0.01 g;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "the agar gel holding its shape warm while the gelatin melts."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Agar doesn't set",
+         "Not boiled",
+         "Boil 1–2 minutes, whisking"
+        ],
+        [
+         "A weak gelatin set",
+         "Gelatin boiled",
+         "Dissolve it warm, off the boil"
+        ],
+        [
+         "Results you can't repeat",
+         "Doses by teaspoon",
+         "Weigh on the 0.01 g scale"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** boiling agar spits: a deep pan and a long whisk. Gels made from a stock or a dairy base are kept like leftovers (assessment §9)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the doses in grams and percent; the photos; which agent you would use for a warm plate and why."
+      }
+     ]
+    },
+    {
+     "id": "MOD-4.M3.L2",
+     "title": "Fluid gels and sheets",
+     "prerequisites": [
+      "MOD-4.M3.L1"
+     ],
+     "competencies": [
+      {
+       "id": "TS-MOD",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** a fluid gel and a gel sheet carry a strong flavour in a shape a sauce or a purée can't hold. Both start from the set gel of `MOD-4.M3.L1`; the blender or the tray decides what it becomes."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** 500 g of a seasonal juice or a well-seasoned stock (apple, beetroot, celeriac or mushroom); agar; the 0.01 g scale; a pan; a blender; a fine sieve; a spatula; a flat tray or a sheet pan lined with clingfilm; a ruler; a squeeze bottle."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*The fluid gel.* A firm agar gel (about 0.8–1 %), blended to a smooth, glossy purée. It pours and spreads when stirred, but holds its place on the plate, carrying a strong flavour: an apple, a beetroot, a herb or a stock."
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "Make the gel as in `MOD-4.M3.L1`; let it set firm."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "Cut it up and blend it until smooth, adding a spoon of the liquid if it is stiff."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "Pass it through a fine sieve."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "Remove the air bubbles by resting it or tapping the container."
+        },
+        {
+         "level": 0,
+         "marker": "5.",
+         "text": "Fill a squeeze bottle."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Gel sheets.* Pour a thin layer (2–3 mm) of a stronger gel onto a flat tray, let it set, cut it and drape it over a dish: a stock or vegetable sheet over a vegetable dish or a piece of fish. A level tray gives an even sheet."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Flavour first.* Season the base before gelling. Gels mute flavour slightly, so make the base a little stronger than you would serve it."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**A fluid gel (60 min).** Make an agar fluid gel from a seasonal juice or stock, blend and sieve it, and use it as a sauce."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**A gel sheet (60 min).** Pour a sheet, cut it and drape it over a dish; measure its thickness."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "a fluid gel that flows when stirred and stands on a plate with a glossy surface;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "a sheet that lifts without tearing."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "A grainy fluid gel",
+         "Too little blending, or the gel too firm",
+         "Blend longer; lower the dose next time"
+        ],
+        [
+         "A sheet that tears at one side",
+         "Poured unevenly",
+         "Level the tray; pour from the centre"
+        ],
+        [
+         "A bland gel",
+         "The base seasoned for drinking",
+         "Season it a little stronger"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** a gel made from a stock is kept like leftovers: cooled by the cooling rule, in the fridge, used within 2 days (assessment §9). The blender lid held on with a cloth when blending warm."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the dose; the photos of the gel on a plate; the sheet's thickness; where you used each."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "MOD-4.M3.X1",
+     "title": "A fluid gel used as a sauce",
+     "description": "A fluid gel used as a sauce.",
+     "competencies": [
+      {
+       "id": "SC-EMUL",
+       "level": 4
+      },
+      {
+       "id": "TS-MOD",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** make a gel for a stated texture from a formula, and use it as a sauce where it improves the dish. Before you make it, write the target texture and choose the ratio for it. Time the gel's hold on the plate: no spreading after 10 minutes."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** agar; a seasonal juice or a stock (for example apple, beetroot, celeriac or a mushroom stock); the dish it goes with; the 0.01 g scale; a blender; a fine sieve."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Framework:** the percentage log."
+      },
+      {
+       "type": "table",
+       "header": [
+        "Line",
+        "Your entry"
+       ],
+       "rows": [
+        [
+         "Target texture",
+         "In words: how it pours, how it stands"
+        ],
+        [
+         "Base and weight",
+         "g"
+        ],
+        [
+         "Agar",
+         "% and g (to 0.01 g), with the reason"
+        ],
+        [
+         "Hold at 0 and 10 minutes",
+         "Photo and a note"
+        ],
+        [
+         "Verdict",
+         "Matched? Improved the dish?"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Procedure:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "Write the target texture and the dose (percentage and grams) with the reason."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "Weigh to 0.01 g; make the gel; blend and sieve; photograph it."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "Plate it with the dish; time the hold; photograph it at 0 and 10 minutes."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "Write whether the texture matched and whether it improved the dish."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`SC-EMUL` level 4, the gel part:** the gel set for a stated texture with the ratio chosen in writing, confirmed by photos and the timed hold. The foam part follows in `MOD-4.M4.X1`."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`TS-MOD` level 2, the gel:** made from a formula with doses weighed to 0.1 g or better, used in a dish with a written reason."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "AI review reads the log and the photos: *competent* is a dose chosen before making it, a smooth, glossy gel and no spreading between the two photos; *not yet* is a dose not logged, a grainy gel, or a gel that spreads."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 1.5 h."
+      }
+     ]
+    }
+   ],
+   "items": [
+    {
+     "id": "MOD-4.M3.Q1",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "MOD-4.M3.L1",
+     "safety": false,
+     "question": "Which gel can be served warm?",
+     "options": [
+      {
+       "key": "A",
+       "text": "gelatin"
+      },
+      {
+       "key": "B",
+       "text": "agar"
+      },
+      {
+       "key": "C",
+       "text": "both"
+      },
+      {
+       "key": "D",
+       "text": "neither"
+      }
+     ],
+     "answer": "B",
+     "why": "Agar melts only above about 80–85 °C."
+    },
+    {
+     "id": "MOD-4.M3.Q2",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "MOD-4.M3.L1",
+     "safety": false,
+     "question": "How is agar dissolved?",
+     "options": [
+      {
+       "key": "A",
+       "text": "in cold water"
+      },
+      {
+       "key": "B",
+       "text": "boiled for about 1–2 minutes"
+      },
+      {
+       "key": "C",
+       "text": "at 50 °C"
+      },
+      {
+       "key": "D",
+       "text": "by blending"
+      }
+     ],
+     "answer": "B",
+     "why": "It must boil."
+    },
+    {
+     "id": "MOD-4.M3.Q3",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "MOD-4.M3.L1",
+     "safety": false,
+     "question": "A guest is vegetarian. Which gelling agent do you choose?",
+     "options": [
+      {
+       "key": "A",
+       "text": "gelatin"
+      },
+      {
+       "key": "B",
+       "text": "agar"
+      },
+      {
+       "key": "C",
+       "text": "either"
+      },
+      {
+       "key": "D",
+       "text": "neither"
+      }
+     ],
+     "answer": "B",
+     "why": "Gelatin comes from animals."
+    },
+    {
+     "id": "MOD-4.M3.Q4",
+     "type": "CALCULATION",
+     "lessonId": "MOD-4.M3.L1",
+     "safety": false,
+     "question": "How much agar for 400 g of juice at 0.8 %?",
+     "options": [],
+     "answer": "3.2 g",
+     "why": "400 × 0.008."
+    },
+    {
+     "id": "MOD-4.M3.Q5",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "MOD-4.M3.L1",
+     "safety": false,
+     "question": "Why does gelatin melt in the mouth?",
+     "options": [
+      {
+       "key": "A",
+       "text": "it is soft"
+      },
+      {
+       "key": "B",
+       "text": "it melts at about 30–35 °C, below body temperature"
+      },
+      {
+       "key": "C",
+       "text": "saliva"
+      },
+      {
+       "key": "D",
+       "text": "it is sweet"
+      }
+     ],
+     "answer": "B",
+     "why": "Melting point."
+    },
+    {
+     "id": "MOD-4.M3.Q6",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "MOD-4.M3.L1",
+     "safety": false,
+     "question": "Why weigh hydrocolloids on a 0.01 g scale?",
+     "options": [
+      {
+       "key": "A",
+       "text": "tradition"
+      },
+      {
+       "key": "B",
+       "text": "the doses are a few grams or less, where a small error changes the texture"
+      },
+      {
+       "key": "C",
+       "text": "for safety"
+      },
+      {
+       "key": "D",
+       "text": "it is faster"
+      }
+     ],
+     "answer": "B",
+     "why": "Small doses, big effect."
+    },
+    {
+     "id": "MOD-4.M3.Q7",
+     "type": "SCENARIO",
+     "lessonId": "MOD-4.M3.L1",
+     "safety": false,
+     "question": "Your agar jelly didn't set. What went wrong?",
+     "options": [],
+     "answer": "The agar wasn't boiled long enough to dissolve, or the dose was too low (weighed wrong).",
+     "why": "Agar needs a boil."
+    },
+    {
+     "id": "MOD-4.M3.Q8",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "MOD-4.M3.L2",
+     "safety": false,
+     "question": "What makes a fluid gel?",
+     "options": [
+      {
+       "key": "A",
+       "text": "a thin gel"
+      },
+      {
+       "key": "B",
+       "text": "a firm gel blended smooth, so it flows when stirred and holds on the plate"
+      },
+      {
+       "key": "C",
+       "text": "gelatin in hot liquid"
+      },
+      {
+       "key": "D",
+       "text": "xanthan"
+      }
+     ],
+     "answer": "B",
+     "why": "Shearing a set gel."
+    }
+   ]
+  },
+  {
+   "id": "MOD-4.M4",
+   "title": "Foams and stabilised emulsions",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** the 8 items of `MOD-4.M4` in the course file, 2 of them safety items. Pass mark 80 %, with every safety item correct."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "MOD-4.M4.L1",
+     "title": "Foams and airs",
+     "prerequisites": [
+      "SCI-2.M4.L2"
+     ],
+     "competencies": [
+      {
+       "id": "SC-EMUL",
+       "level": 4
+      },
+      {
+       "id": "TS-MOD",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** a foam carries a flavour in a light texture, but most foams collapse within minutes. Knowing what holds a foam up, and how long each kind lasts, decides which one reaches the table intact."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** 300 ml of a thin, well-flavoured liquid (a vegetable stock, an apple juice, the whey from making cheese); soy lecithin; gelatin; 200 ml of cream; the 0.01 g scale; a stick blender; a wide, shallow container; a mixer or whisk; a timer; the siphon and the maker's chargers if you have them."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Foam stability.* A foam is gas held in a liquid by a film. It lasts when the film is strengthened (proteins, fat crystals, lecithin, gelatin) and when the liquid is thick enough (sugar, xanthan) to slow drainage. Without them, bubbles merge and collapse within minutes."
+      },
+      {
+       "type": "paragraph",
+       "text": "*The lecithin air.*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "Weigh soy lecithin at about 0.3–1 % of the liquid: for 300 g, 0.90–3.00 g."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "Blend it into the liquid."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "Hold the stick blender at an angle at the surface, half in and half out, so it draws in air."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "Let the air settle for a minute; spoon it off the top just before serving."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "It lasts a few minutes."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Whipped foams.* A base stabilised with gelatin or with cream, whipped in a mixer: firmer, and it lasts longer."
+      },
+      {
+       "type": "paragraph",
+       "text": "*The siphon (optional).* A warm or cold base (a purée, a cream-based mixture, or a liquid with gelatin) goes into the siphon, is charged with N₂O, shaken and dispensed. Use it only as its maker's instructions say:"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "the maker's chargers only;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "never fill above the fill line;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "screw the head on straight;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "release the pressure before opening;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "never inhale the gas;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "buy chargers for food use, a few at a time (assessment §9 [S50])."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Airs (60 min).** Make a lecithin air from a stock or juice. Time its life; photograph it at 0, 2 and 5 minutes."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Whipped or siphon foam (60 min).** Whip a stabilised foam (or make one in the siphon) and time its stability against the air."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "an air of fine, even bubbles with a clear flavour;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "a stabilised foam that holds its shape for the time you stated."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "No air forms",
+         "The base too thick",
+         "Thin it, or strain it"
+        ],
+        [
+         "A soapy taste",
+         "Too much lecithin",
+         "Stay within 0.3–1 %"
+        ],
+        [
+         "The siphon sprays or leaks",
+         "Filled above the line, or opened under pressure",
+         "Fill to the line; release the pressure first"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** the siphon rules above; a hot base handled as hot liquid, the siphon held with a cloth. A foam made from a cream or stock base is kept like leftovers (assessment §9)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the doses; the timed photos of both foams; which lasted and why."
+      }
+     ]
+    },
+    {
+     "id": "MOD-4.M4.L2",
+     "title": "Stabilised emulsions",
+     "prerequisites": [
+      "MOD-4.M4.L1"
+     ],
+     "competencies": [
+      {
+       "id": "SC-EMUL",
+       "level": 4
+      },
+      {
+       "id": "FL-TEXT",
+       "level": 4
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** a pinch of xanthan keeps a vinaigrette from splitting on the plate and gives a *jus* body without butter or flour. It is so strong that the dose is judged in tenths of a percent."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** for the vinaigrette, 150 g of oil, 50 g of cider vinegar, mustard and salt; for the *jus*, 300 g of a reduced vegetable or mushroom stock; xanthan gum; the 0.01 g scale; a stick blender; a tall jug; spoons; white plates; a timer."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Xanthan gum.* A polysaccharide made by microbes that thickens cold or hot liquids at tiny doses (about 0.1–0.5 % of the liquid's weight) and keeps emulsions from separating. It gives a clinging, pourable body, slightly slick at higher doses."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Dispersing it.* Sprinkle it into the liquid while blending, or mix it with sugar or oil first, so it doesn't form lumps. It thickens at once."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Uses:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "a vinaigrette that doesn't split on the plate;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "a vegetable *jus* with body without butter or flour;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "a purée that doesn't weep."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Dose by texture.* Start low and add in steps:"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Step",
+        "Dose",
+        "For 300 g"
+       ],
+       "rows": [
+        [
+         "Start",
+         "0.1 %",
+         "0.30 g"
+        ],
+        [
+         "Then",
+         "+0.05 %",
+         "+0.15 g"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "Judge each step by the coat on a spoon and the line it leaves on a plate. Stop before it turns slick. Blend for half a minute after each step, then wait a moment: the body you see then is the body on the plate."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Two stabilised sauces (60 min).** Make a vinaigrette and a vegetable *jus*, dosing each in steps. Plate each step, and log the doses and textures."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "a vinaigrette that stays emulsified on the plate for 15 minutes;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "a *jus* that coats a spoon and holds a clean line, without slickness."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Lumps",
+         "Xanthan dumped in",
+         "Sprinkle it into the vortex while blending"
+        ],
+        [
+         "A slimy sauce",
+         "An overdose",
+         "Start again lower; add in 0.05 % steps"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** a *jus* from a stock kept like leftovers (assessment §9); the blender started below the surface, so hot liquid doesn't spray."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the dose at each step; the plate photos; the dose you chose and why."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "MOD-4.M4.X1",
+     "title": "A foam or stabilised sauce where it improves a dish",
+     "description": "Add one foam or stabilised sauce to a dish where it improves it, with a rationale.",
+     "competencies": [
+      {
+       "id": "SC-EMUL",
+       "level": 4
+      },
+      {
+       "id": "TS-MOD",
+       "level": 2
+      },
+      {
+       "id": "FL-TEXT",
+       "level": 4
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** add one foam or stabilised sauce to a dish where it makes the dish better, with a rationale, and prove it. Make both a stable foam and a xanthan-thickened sauce from formulas, with doses weighed to 0.1 g or better: the foam with its target texture and ratio stated in writing and a timed stability check. Serve the dish with a texture contrast named in advance and confirmed on the guests' cards."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** soy lecithin, xanthan, gelatin; the dish's ingredients (seasonal); the siphon if you have one; the 0.01 g scale; tasters' cards."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Procedure:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "Write the rationale, the target foam texture and ratio, and the named contrast."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "Make the foam and the sauce; weigh to 0.01 g; time the foam's stability."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "Cook and serve the dish twice, with and without the element, to tasters."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "Photograph both; collect cards; write whether the element improved the dish."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`SC-EMUL` level 4, the foam part:** a stable foam for a stated texture with the ratio chosen in writing, confirmed by photos and the timed stability check. The gel part is in `MOD-4.M3.X1`."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`TS-MOD` level 2:** the stable foam and the xanthan-thickened sauce from formulas with doses weighed, one used in the dish with the written reason. With the gel of `MOD-4.M3.X1`, the row is complete."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`FL-TEXT` level 4, dish three of three:** the contrast named in advance, confirmed by the cards and photos. With `PST-4.M2.X1` and `PST-4.M5.X1` (the menu), the row is complete."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "AI review reads the rationale, the doses, the timed photos and the cards: *competent* is a foam that holds for the time stated, a sauce with body and no slickness, a contrast the tasters name, and a verdict drawn from the two versions; *not yet* is doses not weighed, a foam that collapses before serving, or no comparison."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 2.5 h."
+      }
+     ]
+    }
+   ],
+   "items": [
+    {
+     "id": "MOD-4.M4.Q1",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "MOD-4.M4.L1",
+     "safety": false,
+     "question": "What makes a foam last?",
+     "options": [
+      {
+       "key": "A",
+       "text": "more air"
+      },
+      {
+       "key": "B",
+       "text": "a strengthened film (proteins, lecithin, gelatin) and a thicker liquid that slows drainage"
+      },
+      {
+       "key": "C",
+       "text": "a colder plate"
+      },
+      {
+       "key": "D",
+       "text": "salt"
+      }
+     ],
+     "answer": "B",
+     "why": "Foam stability."
+    },
+    {
+     "id": "MOD-4.M4.Q2",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "MOD-4.M4.L1",
+     "safety": false,
+     "question": "How long does a lecithin air last?",
+     "options": [
+      {
+       "key": "A",
+       "text": "hours"
+      },
+      {
+       "key": "B",
+       "text": "a few minutes, so it's made just before serving"
+      },
+      {
+       "key": "C",
+       "text": "a day"
+      },
+      {
+       "key": "D",
+       "text": "a week in the fridge"
+      }
+     ],
+     "answer": "B",
+     "why": "It is the least stable foam."
+    },
+    {
+     "id": "MOD-4.M4.Q3",
+     "type": "CALCULATION",
+     "lessonId": "MOD-4.M4.L1",
+     "safety": false,
+     "question": "How much lecithin for 300 g of stock at 0.5 %?",
+     "options": [],
+     "answer": "1.5 g",
+     "why": "300 × 0.005."
+    },
+    {
+     "id": "MOD-4.M4.Q4",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "MOD-4.M4.L1",
+     "safety": true,
+     "question": "How is a whipping siphon used safely?",
+     "options": [
+      {
+       "key": "A",
+       "text": "filled to the top for more foam"
+      },
+      {
+       "key": "B",
+       "text": "as its maker's instructions say: the maker's chargers, never above the fill line, pressure released before opening"
+      },
+      {
+       "key": "C",
+       "text": "with any gas cartridge"
+      },
+      {
+       "key": "D",
+       "text": "opened while charged to check"
+      }
+     ],
+     "answer": "B",
+     "why": "Equipment rule, assessment §9."
+    },
+    {
+     "id": "MOD-4.M4.Q5",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "MOD-4.M4.L1",
+     "safety": true,
+     "question": "May the gas from the chargers be inhaled?",
+     "options": [
+      {
+       "key": "A",
+       "text": "yes, a little"
+      },
+      {
+       "key": "B",
+       "text": "never"
+      },
+      {
+       "key": "C",
+       "text": "only outside"
+      },
+      {
+       "key": "D",
+       "text": "only N₂O"
+      }
+     ],
+     "answer": "B",
+     "why": "The chargers are for food only."
+    },
+    {
+     "id": "MOD-4.M4.Q6",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "MOD-4.M4.L2",
+     "safety": false,
+     "question": "What dose of xanthan thickens a sauce?",
+     "options": [
+      {
+       "key": "A",
+       "text": "5 %"
+      },
+      {
+       "key": "B",
+       "text": "about 0.1–0.5 % of the liquid's weight"
+      },
+      {
+       "key": "C",
+       "text": "2 tablespoons per litre"
+      },
+      {
+       "key": "D",
+       "text": "10 %"
+      }
+     ],
+     "answer": "B",
+     "why": "Tiny doses."
+    },
+    {
+     "id": "MOD-4.M4.Q7",
+     "type": "SCENARIO",
+     "lessonId": "MOD-4.M4.L2",
+     "safety": false,
+     "question": "Your xanthan sauce tastes slimy. What do you do next time?",
+     "options": [],
+     "answer": "Start at 0.1 %, add in steps of 0.05 %, judge by the coat and the line on a plate, and stop before slickness.",
+     "why": "[J] dose by texture."
+    },
+    {
+     "id": "MOD-4.M4.Q8",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "MOD-4.M4.L2",
+     "safety": false,
+     "question": "How do you avoid lumps of xanthan?",
+     "options": [
+      {
+       "key": "A",
+       "text": "add it to boiling liquid"
+      },
+      {
+       "key": "B",
+       "text": "sprinkle it in while blending, or mix it with sugar or oil first"
+      },
+      {
+       "key": "C",
+       "text": "stir by hand"
+      },
+      {
+       "key": "D",
+       "text": "soak it"
+      }
+     ],
+     "answer": "B",
+     "why": "It thickens on contact."
+    }
+   ]
+  },
+  {
+   "id": "MOD-4.M5",
+   "title": "Dehydration and crisps",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** none for this module. It has no knowledge or judgment objective; the safe use of the mandoline was checked in `SAF-3.M2`."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "MOD-4.M5.L1",
+     "title": "Crisps, tuiles and powders",
+     "prerequisites": [
+      "PRS-3.M5.L1"
+     ],
+     "competencies": [
+      {
+       "id": "TS-MOD",
+       "level": 2
+      },
+      {
+       "id": "FL-TEXT",
+       "level": 4
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** a crisp element gives a soft dish the contrast it lacks. Drying, baking thin and grinding turn seasonal vegetables and fruit into crisps, tuiles and powders that keep for days, if they are kept dry."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** two vegetables or fruits (beetroot, parsnip, carrot, celeriac, apple, pear), about 300 g each; the mandoline with its guard; sheet pans with parchment or a silicone mat; for tuiles, 50 g each of soft butter, sugar, egg white and flour; a tuile stencil; an offset spatula; a rolling pin to shape them; the scale; airtight boxes with a bag of dry rice; a spice grinder (optional)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Dehydrating in a low oven* (`PRS-3.M5.L1`). Slice vegetables or fruit thin and even, with the mandoline and its guard (`SAF-3.M2.L2`). Dry them at about 60–90 °C with the door slightly open, or in a dehydrator, until brittle. Weigh them before and after: the loss shows how much water left. Vegetables, fruit and starches only; no meat in this course."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Tuiles.*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "Mix a thin batter of equal weights of butter, sugar, egg white and flour (or a savoury version with cheese or seeds)."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "Spread it thin through the stencil onto the mat."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "Bake until golden at the edges."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "Shape while warm, over a rolling pin; they set as they cool."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Vegetable crisps.* Thin slices, fried or baked; or a purée spread thin and dried into a sheet, then broken into shards."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Powders (optional).* Grind a dried vegetable fine. A fat powder is made from a flavoured oil and tapioca maltodextrin: it turns the oil into a powder that melts in the mouth."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Keeping crisp.* In an airtight box with a little dry rice or a desiccant sachet; added to the plate at the last moment."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Dried crisps (60 min active, a day of drying).** Slice and dry two vegetables; log their weights before and after."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Tuiles and a shard (60 min).** Make a tuile and a purée shard; one powder if you like."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "crisps that snap, with even colour;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "tuiles thin and even, shaped without cracks;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "a clear flavour in each crisp element."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Some burnt, some leathery",
+         "Uneven slices",
+         "The mandoline at one setting; turn the trays"
+        ],
+        [
+         "A soft tuile",
+         "Spread too thick",
+         "Scrape it level with the stencil"
+        ],
+        [
+         "Soft crisps within an hour",
+         "Left out",
+         "Airtight, with rice; add at the last moment"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** the mandoline with its guard (`SAF-3.M2.L2`); hot trays with dry cloths; no meat dried."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the weights before and after; photos of each element; how long each stayed crisp."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "MOD-4.M5.X1",
+     "title": "Two crisp elements added to an existing dish",
+     "description": "Two crisp elements added to an existing dish.",
+     "competencies": [
+      {
+       "id": "TS-MOD",
+       "level": 2
+      },
+      {
+       "id": "FL-TEXT",
+       "level": 4
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** add two crisp elements to a dish from your repertoire where they improve its texture. Name the texture contrast in advance and write a reason for each element. The dish stays as it was; only the crisps are new, so the comparison shows what they add."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** seasonal vegetables or fruit; butter, flour and egg whites for a tuile; the existing dish; the mandoline with its guard; airtight boxes; tasters' cards."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Procedure:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "Write the contrast the crisps should bring and the reason for each."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "Make the two crisp elements; keep them airtight."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "Serve the dish with and without them; collect tasters' cards; photograph both."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "Write whether they improved the dish."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`TS-MOD` level 2, a further element:** crisp elements made with guidance and used in a dish with a written reason. The gel, foam and sauce of the row are in `MOD-4.M3.X1` and `MOD-4.M4.X1`."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`FL-TEXT` level 4, a further dish:** the crisp contrast named in advance and confirmed by the cards and photos. The row is complete with `MOD-4.M4.X1`."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "AI review reads the reasons, the two photos and the cards: *competent* is two crisp elements that are still crisp on the plate, each with a reason, and a contrast the tasters name; *not yet* is soft crisps, an element without a reason, or no comparison with the dish as it was."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 2 h, plus drying."
+      }
+     ]
+    }
+   ],
+   "items": []
+  }
+ ]
+}

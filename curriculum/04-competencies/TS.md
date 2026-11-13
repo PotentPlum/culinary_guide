@@ -7,9 +7,10 @@ generated from the outline.
 **Tolerances.** The cut sizes, core temperatures and times below are the program's working standards. They are measured
 against a grid board, a ruler or a probe thermometer, and photographed. The same figures are used in the milestone
 rubrics ([`04-assessment.md`](../04-assessment.md)):
-- **Classical cuts:** julienne 2–3 mm thick and 5–6 cm long; *bâtonnet* 5–7 mm square and 5–6 cm long; brunoise
-  2–3 mm; fine brunoise 1–2 mm; small dice 5–7 mm; medium dice 12 mm; large dice 20 mm; *paysanne* 10–12 mm across and
-  2–3 mm thick (the last two sizes added in Phase 5 from `KNF-1`).
+- **Classical cuts:** julienne 2–3 mm thick and 5–6 cm long; *bâtonnet* 5–7 mm square and 5–6 cm long; brunoise 2–3 mm;
+  fine brunoise 1–2 mm; small dice 5–7 mm; medium dice 12 mm; large dice 20 mm; *paysanne* 10–12 mm across and 2–3 mm
+  thick (the last two sizes added in Phase 5 from `KNF-1`); *chiffonade* ribbons 1–2 mm wide (added in Phase 6 from
+  `KNF-2`).
 - **Accuracy:** "8 of 10" means that 8 of 10 randomly picked pieces fall within the range.
 
 ### TS-MEP — Mise en place

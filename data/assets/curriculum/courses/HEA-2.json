@@ -1,0 +1,3797 @@
+{
+ "schemaVersion": 1,
+ "id": "HEA-2",
+ "introduction": [
+  {
+   "type": "paragraph",
+   "text": "**Before you start.** `HEA-1` taught the basic methods one at a time. This course puts them in a **matrix** (dry, moist and combination, by medium and temperature) and adds the methods that need more control:"
+  },
+  {
+   "type": "list",
+   "items": [
+    {
+     "level": 0,
+     "marker": "",
+     "text": "**roasting** a large piece at two temperatures, with the rest planned;"
+    },
+    {
+     "level": 0,
+     "marker": "",
+     "text": "**grilling** with radiant heat and two heat zones;"
+    },
+    {
+     "level": 0,
+     "marker": "",
+     "text": "**deep-frying**, safely and at the right temperature;"
+    },
+    {
+     "level": 0,
+     "marker": "",
+     "text": "**braising**, to make a tough cut tender."
+    }
+   ]
+  },
+  {
+   "type": "paragraph",
+   "text": "It ends with a lab that cooks one protein three ways."
+  },
+  {
+   "type": "paragraph",
+   "text": "*Frying safety comes first.* Deep-frying is the most dangerous thing a home cook does with heat. Module 4 treats the station as the first skill: the oil level, the thermometer, the lid within reach, and never leaving hot oil. It is assessed on video, and an unsafe station is *not yet* however good the chips are."
+  },
+  {
+   "type": "paragraph",
+   "text": "*Choosing a method.* From here, each framework and brief asks you to say why a method suits the ingredient and the goal. Write the reason and a prediction before you cook; the result then confirms or corrects you."
+  },
+  {
+   "type": "paragraph",
+   "text": "*The instruments.* Before the roast, the probe is checked in ice water and the oven at three settings; before frying, the frying thermometer is checked in boiling water. All three go into the calibration log (`EQP-1`)."
+  },
+  {
+   "type": "paragraph",
+   "text": "Plan about four weeks. The roast, the braise and the fried dinners need a weekend slot; the method plan of module 1 runs over two weeks of normal cooking. The roast chicken's carcass goes into stock for `STK-2`."
+  },
+  {
+   "type": "paragraph",
+   "text": "**Have ready:** the probe and the oven thermometer, and the calibration log (`EQP-1`); a clip-on frying thermometer reading to 200 °C or more; a deep, heavy pot (the stockpot will do); a spider or slotted spoon; a wire rack over a sheet pan; a heavy lidded casserole (*braadpan*) of 4–5 litres; the sheet pans and the sauté pan; the fire blanket and a lid that fits the frying pot; long tongs; the journal and the cue log; a phone on a stand for the frying video."
+  }
+ ],
+ "modules": [
+  {
+   "id": "HEA-2.M1",
+   "title": "The method matrix",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** the 8 items of `HEA-2.M1` in the course file. Pass mark 80 %."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "HEA-2.M1.L1",
+     "title": "Classifying methods",
+     "prerequisites": [
+      "HEA-1.M5.L5"
+     ],
+     "competencies": [
+      {
+       "id": "CK-METH",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** recipes name dozens of methods, but they reduce to three families with predictable results. Place a dish in the matrix, and you know what it will taste like, how long it takes and what can go wrong, before you read the recipe."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** this lesson; a cookbook or a list of 20 dishes you know; the journal."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*The matrix:*"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Family",
+        "Medium",
+        "Methods",
+        "Typical outcome"
+       ],
+       "rows": [
+        [
+         "Dry heat",
+         "Air, fat, metal or radiation",
+         "Roast, bake, grill, sauté, pan-fry, deep-fry",
+         "A browned crust; a gradient from surface to core"
+        ],
+        [
+         "Moist heat",
+         "Water or steam",
+         "Poach, simmer, boil, steam",
+         "No crust; even cooking; gentle at the surface"
+        ],
+        [
+         "Combination",
+         "Fat first, then water",
+         "Braise, stew, pot-roast",
+         "A browned start, then tenderising in liquid"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "Deep-frying belongs to dry heat: the medium is fat, not water, and it browns."
+      },
+      {
+       "type": "paragraph",
+       "text": "*For each method,* name three things:"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**the medium:** what carries the heat;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**the temperature range:** a simmer is far below an oven or a frying pot (`HEA-1`);"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**the outcome:** a crust or none; even or a gradient; tenderising or not."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Surface against core.* The surface of a food in a hot oven or pan gets far hotter than the core, which is why a steak can be crusted outside and pink inside. In moist heat the surface can't go above the boil, so there is no crust and little gradient. A grey steak throughout is one cooked in its own juices: moist heat by accident."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Words that mislead.* A pot roast is not roasting: it is braised in a covered pot. A stew and a braise are cousins: small pieces fully covered in a stew, large pieces partly covered in a braise (`HEA-2.M5`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:** theory only (1.5 h): place 20 dishes in the matrix (for example *hachee*, *kibbeling*, roast chicken, poached egg, *stamppot*, grilled mackerel, chips, steamed mussels) and write the medium, the temperature range and the outcome of each, with the reason in one line."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** every dish placed, with the reason in one line."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "A pot roast in the dry-heat column",
+         "Calling a pot roast \"roasting\"",
+         "Ask: is there liquid, and a lid?"
+        ],
+        [
+         "Stew and braise swapped",
+         "Confusing a stew and a braise",
+         "Piece size and liquid level decide"
+        ],
+        [
+         "Chips under moist heat",
+         "Forgetting deep-frying is dry heat",
+         "The medium is fat"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** no special risks beyond the kitchen basics (`SAF-1`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the matrix of 20 dishes in the journal."
+      }
+     ]
+    },
+    {
+     "id": "HEA-2.M1.L2",
+     "title": "Choosing a method",
+     "prerequisites": [
+      "HEA-2.M1.L1"
+     ],
+     "competencies": [
+      {
+       "id": "JD-CHSE",
+       "level": 2
+      },
+      {
+       "id": "CK-METH",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** a recipe chooses the method for you; a cook chooses it from the ingredient and the result wanted. Four questions settle most choices, and a written prediction turns every dinner into a test of your reasoning."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** an ingredient you have not cooked before (in winter Jerusalem artichoke, salsify or kohlrabi; in summer fennel or broad beans); the pans for two methods; the journal."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*The analysis questions:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**How tender is it?** A little connective tissue or a lot? Tender cuts and young vegetables suit fast dry heat; tough cuts need moist or combination heat."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**How large and thick is it?** A thick piece needs gentle heat to cook through before the outside burns; a thin one needs high heat to brown before it overcooks."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "**How much fat does it have?** Fatty pieces (pork belly, mackerel, chicken thighs) survive high heat and long cooking; lean ones (breast, white fish) dry out."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "**What result do I want?** A crust, juiciness, tenderness, a sauce?"
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Combining methods* when one alone can't do it:"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "sear, then roast, for a thick cut;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "blanch, then grill, for a dense vegetable;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "brown, then braise, for a tough cut."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Size changes the answer.* A whole celeriac roasts for hours, or is boiled; celeriac in small dice sautés in minutes."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Write a prediction* before cooking: \"roasted in wedges, the artichoke will be crisp outside and creamy inside in about 35 minutes\". The result confirms or corrects your reasoning."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Analyse and cook (75 min).** Answer the four questions for the unfamiliar ingredient, choose between two methods (for example roast or sauté Jerusalem artichokes; braise or grill fennel), and write the prediction. Cook it by the method you chose, and a small portion by the other. Compare both with the prediction."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** a choice reasoned from the ingredient, not from a recipe; a prediction the result confirms."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Everything sautéed",
+         "Choosing by habit",
+         "Answer the four questions first"
+        ],
+        [
+         "A burnt outside, hard centre",
+         "Ignoring size: a whole celeriac and a celeriac dice need different methods",
+         "Ask how thick it is, and choose for that"
+        ],
+        [
+         "Nothing learned from the dinner",
+         "No prediction written",
+         "One line before cooking"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** no special risks beyond the kitchen basics (`SAF-1`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the four answers, the prediction and the result (in `HEA-2.M1.X1`)."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "HEA-2.M1.X1",
+     "title": "A method plan for six ingredients",
+     "description": "A method plan for five ingredients, cooked over two weeks and checked against the predictions.",
+     "competencies": [
+      {
+       "id": "CK-METH",
+       "level": 3
+      },
+      {
+       "id": "JD-CHSE",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** choose methods by reasoning, then let two weeks of cooking test the predictions. Six ingredients: five you know, and one unfamiliar one, analysed with the questions."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** six ingredients from the season and the shop, for example chicken legs, a piece of pork belly, mackerel, celeriac, red cabbage, and one unfamiliar ingredient (Jerusalem artichoke, salsify or kohlrabi); the pans for each method; the journal; a phone."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Framework:** the analysis questions and the matrix, on one plan."
+      },
+      {
+       "type": "table",
+       "header": [
+        "Part",
+        "What it is",
+        "Your decisions"
+       ],
+       "rows": [
+        [
+         "Ingredient",
+         "One of the six",
+         "Which six"
+        ],
+        [
+         "Analysis",
+         "Tenderness, size, fat, result wanted (`HEA-2.M1.L2`)",
+         "The answers"
+        ],
+        [
+         "Method",
+         "From the matrix (`HEA-2.M1.L1`); combined if needed",
+         "Which, and why"
+        ],
+        [
+         "Key variable",
+         "The one thing that decides success: heat, time, liquid level, cut size",
+         "Which"
+        ],
+        [
+         "Prediction",
+         "The result you expect, in one line",
+         "—"
+        ],
+        [
+         "Outcome",
+         "The result, photographed",
+         "Whether the prediction held"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "For the unfamiliar ingredient, compare two approaches with the questions, and explain your choice."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Procedure:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "For each ingredient, write the method, the key variable and the predicted result."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "For the unfamiliar ingredient, choose between two approaches with the analysis questions."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "Cook each over the two weeks."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "Photograph each and note whether the prediction held."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:** the plan and the outcomes, with this module's scenario items at 80 %:"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "`CK-METH` level 3: six ingredients with a suitable method and its key variable;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "`JD-CHSE` level 2: the unfamiliar ingredient, two approaches compared and the choice explained."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 1 h of planning; the cooking is two weeks of dinners."
+      }
+     ]
+    }
+   ],
+   "items": [
+    {
+     "id": "HEA-2.M1.Q1",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "HEA-2.M1.L1",
+     "safety": false,
+     "question": "A pot roast belongs to which family?",
+     "options": [
+      {
+       "key": "A",
+       "text": "dry heat"
+      },
+      {
+       "key": "B",
+       "text": "moist heat"
+      },
+      {
+       "key": "C",
+       "text": "combination"
+      },
+      {
+       "key": "D",
+       "text": "none"
+      }
+     ],
+     "answer": "C",
+     "why": "Browned, then cooked covered with a little liquid."
+    },
+    {
+     "id": "HEA-2.M1.Q2",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "HEA-2.M1.L1",
+     "safety": false,
+     "question": "What separates a braise from a stew?",
+     "options": [
+      {
+       "key": "A",
+       "text": "the meat"
+      },
+      {
+       "key": "B",
+       "text": "a braise uses larger pieces partly covered in liquid; a stew uses small pieces fully covered"
+      },
+      {
+       "key": "C",
+       "text": "the pan"
+      },
+      {
+       "key": "D",
+       "text": "nothing"
+      }
+     ],
+     "answer": "B",
+     "why": "Cut size and liquid level."
+    },
+    {
+     "id": "HEA-2.M1.Q3",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "HEA-2.M1.L1",
+     "safety": false,
+     "question": "Which method gives a crust and an even interior on a thick steak?",
+     "options": [
+      {
+       "key": "A",
+       "text": "boiling"
+      },
+      {
+       "key": "B",
+       "text": "searing, then finishing in a moderate oven"
+      },
+      {
+       "key": "C",
+       "text": "poaching"
+      },
+      {
+       "key": "D",
+       "text": "steaming"
+      }
+     ],
+     "answer": "B",
+     "why": "Combine a hot surface with gentle heat for the core."
+    },
+    {
+     "id": "HEA-2.M1.Q4",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "HEA-2.M1.L2",
+     "safety": false,
+     "question": "A cut has a lot of connective tissue. Which method?",
+     "options": [
+      {
+       "key": "A",
+       "text": "a quick sear"
+      },
+      {
+       "key": "B",
+       "text": "long moist heat (braise or stew)"
+      },
+      {
+       "key": "C",
+       "text": "grilling"
+      },
+      {
+       "key": "D",
+       "text": "deep-frying"
+      }
+     ],
+     "answer": "B",
+     "why": "Collagen needs time to turn to gelatin."
+    },
+    {
+     "id": "HEA-2.M1.Q5",
+     "type": "SCENARIO",
+     "lessonId": "HEA-2.M1.L2",
+     "safety": false,
+     "question": "Salsify, which you have never cooked: it is a long, firm root that discolours when peeled. Two options: boil it or roast it. Which do you choose for a side with colour, and how do you handle the peeling?",
+     "options": [],
+     "answer": "Roast it for colour, after peeling into acidulated water to stop it browning; or blanch, then roast, if it is very thick.",
+     "why": "Analyse firmness, size and the result wanted."
+    },
+    {
+     "id": "HEA-2.M1.Q6",
+     "type": "SCENARIO",
+     "lessonId": "HEA-2.M1.L2",
+     "safety": false,
+     "question": "A whole celeriac and a celeriac cut into 2 cm dice: does the method change?",
+     "options": [],
+     "answer": "Yes: whole, it needs long, gentle heat (salt-baking or slow roasting); diced, it roasts or sautés quickly.",
+     "why": "Size changes the method."
+    },
+    {
+     "id": "HEA-2.M1.Q7",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "HEA-2.M1.L2",
+     "safety": false,
+     "question": "Why write the predicted result before cooking?",
+     "options": [
+      {
+       "key": "A",
+       "text": "to fill the journal"
+      },
+      {
+       "key": "B",
+       "text": "so the result can confirm or correct the reasoning"
+      },
+      {
+       "key": "C",
+       "text": "for the tasters"
+      },
+      {
+       "key": "D",
+       "text": "it isn't needed"
+      }
+     ],
+     "answer": "B",
+     "why": "A prediction turns a cook into a test."
+    },
+    {
+     "id": "HEA-2.M1.Q8",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "HEA-2.M1.L2",
+     "safety": false,
+     "question": "Mackerel is oily and thin. Which suits it?",
+     "options": [
+      {
+       "key": "A",
+       "text": "a long braise"
+      },
+      {
+       "key": "B",
+       "text": "a hot grill or pan, briefly"
+      },
+      {
+       "key": "C",
+       "text": "boiling"
+      },
+      {
+       "key": "D",
+       "text": "a stew"
+      }
+     ],
+     "answer": "B",
+     "why": "Fat keeps it moist under fierce, short heat."
+    }
+   ]
+  },
+  {
+   "id": "HEA-2.M2",
+   "title": "Roasting and resting",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** the 8 items of `HEA-2.M2` in the course file, 1 of them a safety item. Pass mark 80 %, with every safety item correct."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "HEA-2.M2.L1",
+     "title": "Oven control for roasting",
+     "prerequisites": [
+      "EQP-1.M2.L3",
+      "HEA-1.M4.L2"
+     ],
+     "competencies": [
+      {
+       "id": "TS-DRY",
+       "level": 3
+      },
+      {
+       "id": "KM-EQPT",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** the oven temperature you choose for a roast decides the inside as much as the outside. A hot oven gives a fine crust and a grey band under it; a low oven gives an even, pink or juicy interior from edge to edge. Knowing when to use which is the core of roasting."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** two equal pieces of pork loin of about 500 g each (or two chicken legs); salt; oil; two sheet pans or low-sided tins with racks (or a bed of sliced onion and carrot); the probe and the oven thermometer; the oven table (`EQP-1.M2.X1`); a board and a sharp knife."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Two ways to roast:*"
+      },
+      {
+       "type": "table",
+       "header": [
+        "",
+        "High temperature",
+        "Low temperature"
+       ],
+       "rows": [
+        [
+         "Oven",
+         "200–230 °C",
+         "Around 120–150 °C"
+        ],
+        [
+         "Crust",
+         "Deep, fast",
+         "Little: added at the end with a hot blast or a sear (the \"reverse sear\")"
+        ],
+        [
+         "Inside",
+         "A steep gradient: a band of overcooked meat under the crust",
+         "Even colour edge to edge"
+        ],
+        [
+         "Suits",
+         "Small birds, quick roasts",
+         "Large joints"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Convection* (the fan) moves hot air over the surface: it browns faster and dries the surface. Most oven tables need a lower setting with the fan."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Rack and pan.*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**A rack** (or a bed of vegetables) lets hot air reach the underside, so it doesn't sit in its juice."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**A low-sided pan** keeps the sides from steaming; a deep one traps steam."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**The oven table** of `EQP-1` sets the real temperature; the dial may be off by 20 degrees or more."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Check the oven* with the oven thermometer before a long roast, and enter it in the calibration log (`KM-EQPT`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Opening the door* lets the heat out, and the oven takes minutes to recover. Use the probe's cable, or check quickly."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Two ovens (75 min).** Salt both pieces of pork. Roast one hot, at 230 °C by your oven table, and the other low, at 120 °C, finishing the low one with 10 minutes at 230 °C or a sear in a hot pan. Take each out when the core is a few degrees below 63 °C, rest it, and confirm 63 °C. Slice both across the middle and photograph the cut surfaces side by side."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** a grey band under the crust on the hot roast; an even colour edge to edge on the low roast."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Over- or undercooked at the planned time",
+         "Trusting the dial instead of the oven table",
+         "Set the oven from your table"
+        ],
+        [
+         "A pale, steamed roast",
+         "A deep pan that steams the roast",
+         "A low-sided pan"
+        ],
+        [
+         "A soggy underside",
+         "No rack",
+         "A rack, or a bed of vegetables"
+        ],
+        [
+         "A roast that takes far longer",
+         "Opening the oven door often",
+         "Probe with the cable, or check quickly"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** pork and other intact meat at 63 °C at the core (assessment §9), confirmed after the rest. Lift the tins out with dry oven gloves; the fat in them spits."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the oven settings, the core readings and the photo of the two cross-sections."
+      }
+     ]
+    },
+    {
+     "id": "HEA-2.M2.L2",
+     "title": "Resting and carryover",
+     "prerequisites": [
+      "HEA-1.M1.L3"
+     ],
+     "competencies": [
+      {
+       "id": "TS-DRY",
+       "level": 3
+      },
+      {
+       "id": "SC-HEAT",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** a roast keeps cooking after it leaves the oven. Plan for it, and you take the meat out at the right moment and serve it juicy and done; ignore it, and a perfect roast is overcooked on the board, or a chicken that looked done is not."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** for session 1, the roast of `HEA-2.M2.X1` and the probe; for session 2, 4 boneless chicken thighs (or two steaks), salt, oil, the sauté pan, two boards with a rim or two plates, the scale; a timer."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Carryover* (`HEA-1.M1.L3`): the hot outer layers keep pushing heat inwards after the oven, so the core rises. How far depends on:"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**size:** a large roast rises more than a small one;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**oven temperature:** from a hot oven, 5 °C or more; from a low oven, hardly at all;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**shape:** a round joint more than a flat one."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Planning the rest:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "Take the roast out below the target and let carryover finish it."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "Rest it uncovered, or loosely tented with foil; a tight cover steams the crust."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "Always confirm the safe core temperature after the rest (assessment §9): 75 °C for poultry, 63 °C for intact meat such as a pork loin."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "If it hasn't reached the figure, it goes back into the oven."
+      },
+      {
+       "type": "paragraph",
+       "text": "*How long to rest.* About 10 minutes for a chicken or a pork loin, 5 for a steak or thighs. A thin piece rested too long goes cold; serve it on warm plates."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Why resting works.* The gradient evens out, and the juices thicken slightly as the meat cools from its peak, so less runs out on slicing."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Predict the rise (45 min, within a roast).** During `HEA-2.M2.X1`, write your predicted carryover before the roast comes out, then log the core every 5 minutes while it rests until it stops rising."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Rest or no rest (45 min).** Cook the thighs together to 75 °C. Slice two at once on one board, and rest two for 5 minutes before slicing them on the other. Weigh the juice on each board (weigh the board before and after)."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** the predicted rise within a few degrees; less juice on the board after resting."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Undercooked poultry served",
+         "Taking poultry out early and never checking it after the rest",
+         "Probe again after the rest: 75 °C"
+        ],
+        [
+         "A soft, steamed crust",
+         "Covering tightly, which steams the crust",
+         "Uncovered, or foil loosely over the top"
+        ],
+        [
+         "A cold steak",
+         "Resting a thin piece for so long that it goes cold",
+         "About 5 minutes; warm plates"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** the safe core temperature is checked after the rest, not assumed from the carryover (assessment §9)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the carryover log with your prediction, and the two juice weights."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "HEA-2.M2.X1",
+     "title": "A joint or a whole bird to a target core temperature",
+     "description": "Roast a joint or whole bird to a target core temperature; log carryover.",
+     "competencies": [
+      {
+       "id": "TS-DRY",
+       "level": 3
+      },
+      {
+       "id": "KM-EQPT",
+       "level": 3
+      },
+      {
+       "id": "SC-HEAT",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** a roast taken to its target by measurement, with carryover planned and logged, and the instruments checked first. No recipe: the roasting and resting framework."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** a whole chicken of about 1.5 kg, or a pork loin roast of about 1 kg; salt; oil; vegetables for the tray (onion, carrot, celeriac); a roasting tin with a rack, or the vegetables as the rack; ice and water; the probe and the oven thermometer; the calibration log; a board; a phone."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Framework:** roasting and resting."
+      },
+      {
+       "type": "table",
+       "header": [
+        "Part",
+        "What it is",
+        "Your decisions"
+       ],
+       "rows": [
+        [
+         "Instruments",
+         "Probe in ice water (0 °C ± 1 °C); the oven at three settings, logged",
+         "—"
+        ],
+        [
+         "Salting",
+         "Dry-brined the day before, about 1 % of the weight (`SCI-2.M2.L2`)",
+         "—"
+        ],
+        [
+         "Oven",
+         "High for a chicken (200–230 °C); low, then a hot finish, for a pork loin",
+         "Which, by your oven table"
+        ],
+        [
+         "Set-up",
+         "On a rack or vegetables, in a low tin",
+         "The vegetables"
+        ],
+        [
+         "Out of the oven",
+         "A few degrees below the target, by your carryover prediction",
+         "The out-temperature"
+        ],
+        [
+         "Target after the rest",
+         "Chicken: 75 °C in the thickest part of the thigh and the breast; pork loin: 63 °C",
+         "—"
+        ],
+        [
+         "Rest",
+         "Uncovered or loosely tented; the core logged every 5 minutes",
+         "How long"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Procedure:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "Check the probe in ice water and log it."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "Check the oven at three settings with the oven thermometer and log them."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "Dry-brine the meat the day before."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "Roast to just below the target, writing your carryover prediction."
+        },
+        {
+         "level": 0,
+         "marker": "5.",
+         "text": "Log the core every 5 minutes while resting."
+        },
+        {
+         "level": 0,
+         "marker": "6.",
+         "text": "Confirm the safe core temperature."
+        },
+        {
+         "level": 0,
+         "marker": "7.",
+         "text": "Carve and photograph the cross-section."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`TS-DRY` level 3, the roasting part:** an even, browned roast with the right interior, without a recipe. The grilling and frying parts follow in `HEA-2.M3` and `HEA-2.M4`."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`KM-EQPT` level 3, the thermometer and oven part:** the calibration log entries."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`SC-HEAT` level 3:** the probe within 0 °C ± 1 °C, the oven at three settings, and the carryover explained."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 2.5 h, mostly waiting. The carcass goes into stock for `STK-2`."
+      }
+     ]
+    }
+   ],
+   "items": [
+    {
+     "id": "HEA-2.M2.Q1",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "HEA-2.M2.L1",
+     "safety": false,
+     "question": "A large pork loin roasted at 230 °C the whole time shows:",
+     "options": [
+      {
+       "key": "A",
+       "text": "an even pink interior"
+      },
+      {
+       "key": "B",
+       "text": "a thick grey band under the crust"
+      },
+      {
+       "key": "C",
+       "text": "no crust"
+      },
+      {
+       "key": "D",
+       "text": "a raw centre and nothing else"
+      }
+     ],
+     "answer": "B",
+     "why": "High heat gives a steep gradient."
+    },
+    {
+     "id": "HEA-2.M2.Q2",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "HEA-2.M2.L1",
+     "safety": false,
+     "question": "What is a \"reverse sear\"?",
+     "options": [
+      {
+       "key": "A",
+       "text": "searing after boiling"
+      },
+      {
+       "key": "B",
+       "text": "roasting low until nearly done, then a hot sear or blast for the crust"
+      },
+      {
+       "key": "C",
+       "text": "searing both sides twice"
+      },
+      {
+       "key": "D",
+       "text": "cooling then searing"
+      }
+     ],
+     "answer": "B",
+     "why": "It gives an even interior and a crust."
+    },
+    {
+     "id": "HEA-2.M2.Q3",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "HEA-2.M2.L1",
+     "safety": false,
+     "question": "Why roast on a rack?",
+     "options": [
+      {
+       "key": "A",
+       "text": "for show"
+      },
+      {
+       "key": "B",
+       "text": "so hot air reaches the underside and it doesn't stew in its juices"
+      },
+      {
+       "key": "C",
+       "text": "to catch fat only"
+      },
+      {
+       "key": "D",
+       "text": "to cook faster"
+      }
+     ],
+     "answer": "B",
+     "why": "Air all round, a crisp underside."
+    },
+    {
+     "id": "HEA-2.M2.Q4",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "HEA-2.M2.L2",
+     "safety": false,
+     "question": "Which roast has the largest carryover?",
+     "options": [
+      {
+       "key": "A",
+       "text": "a small chicken thigh from a low oven"
+      },
+      {
+       "key": "B",
+       "text": "a large joint from a hot oven"
+      },
+      {
+       "key": "C",
+       "text": "a thin steak"
+      },
+      {
+       "key": "D",
+       "text": "a fish fillet"
+      }
+     ],
+     "answer": "B",
+     "why": "Size and a hot oven store more heat in the outer layers."
+    },
+    {
+     "id": "HEA-2.M2.Q5",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "HEA-2.M2.L2",
+     "safety": true,
+     "question": "You took a whole chicken out at 70 °C, expecting carryover. What must you do?",
+     "options": [
+      {
+       "key": "A",
+       "text": "carve it at once"
+      },
+      {
+       "key": "B",
+       "text": "probe it again after resting and confirm 75 °C in the thickest part"
+      },
+      {
+       "key": "C",
+       "text": "assume it is fine"
+      },
+      {
+       "key": "D",
+       "text": "put it back for an hour"
+      }
+     ],
+     "answer": "B",
+     "why": "Carryover is never assumed for safety."
+    },
+    {
+     "id": "HEA-2.M2.Q6",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "HEA-2.M2.L2",
+     "safety": false,
+     "question": "Why does a rested roast lose less juice on slicing?",
+     "options": [
+      {
+       "key": "A",
+       "text": "it is colder"
+      },
+      {
+       "key": "B",
+       "text": "the gradient evens out and the juices thicken slightly as it cools"
+      },
+      {
+       "key": "C",
+       "text": "it absorbs the juice"
+      },
+      {
+       "key": "D",
+       "text": "it doesn't"
+      }
+     ],
+     "answer": "B",
+     "why": "Rest by size: minutes for a steak, longer for a joint."
+    },
+    {
+     "id": "HEA-2.M2.Q7",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "HEA-2.M2.L2",
+     "safety": false,
+     "question": "Why rest a roast loosely covered rather than tightly wrapped?",
+     "options": [
+      {
+       "key": "A",
+       "text": "hygiene"
+      },
+      {
+       "key": "B",
+       "text": "tight wrapping traps steam and softens the crust"
+      },
+      {
+       "key": "C",
+       "text": "to cool it"
+      },
+      {
+       "key": "D",
+       "text": "it doesn't matter"
+      }
+     ],
+     "answer": "B",
+     "why": "Keep the crust you roasted for."
+    },
+    {
+     "id": "HEA-2.M2.Q8",
+     "type": "CALCULATION",
+     "lessonId": "HEA-2.M2.L2",
+     "safety": false,
+     "question": "Your joints usually rise 4 °C while resting. You want a final 63 °C. At what core do you take it out?",
+     "options": [],
+     "answer": "59 °C",
+     "why": "63 − 4, then confirm after resting."
+    }
+   ]
+  },
+  {
+   "id": "HEA-2.M3",
+   "title": "Grilling and broiling",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** the 8 items of `HEA-2.M3` in the course file, 1 of them a safety item. Pass mark 80 %, with every safety item correct."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "HEA-2.M3.L1",
+     "title": "Radiant heat",
+     "prerequisites": [
+      "HEA-1.M1.L1"
+     ],
+     "competencies": [
+      {
+       "id": "TS-DRY",
+       "level": 3
+      },
+      {
+       "id": "SC-HEAT",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** an oven grill or a barbecue cooks by radiation, and radiation behaves unlike a pan: move the food a few centimetres and the heat changes completely. Once you can map your grill's zones, you can grill a thin fillet and a thick slice of celeriac in the same session without burning either."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** the oven grill (or a barbecue); a sheet pan or the oven rack; 6 slices of bread, or in summer 2 courgettes in 1 cm slices; oil; long tongs; oven gloves; a timer; a ruler; a phone."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Radiant heat* travels in straight lines from a hot source (the grill element, glowing coals) and falls off sharply with distance: close to the source is much hotter. Distance is the main control on an oven grill (*grill*) and on a barbecue."
+      },
+      {
+       "type": "paragraph",
+       "text": "*A grill pan* works differently: the hot ridges cook by conduction and give the marks; between them, the food cooks by radiation from the pan."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Two heat zones:*"
+      },
+      {
+       "type": "table",
+       "header": [
+        "",
+        "Hot zone",
+        "Cooler zone"
+       ],
+       "rows": [
+        [
+         "Purpose",
+         "Marks and crust",
+         "Finishing thick pieces without burning them"
+        ],
+        [
+         "Oven grill",
+         "The top rack, close to the element",
+         "A rack lower down"
+        ],
+        [
+         "Barbecue",
+         "Coals heaped on one side",
+         "The side without coals (`FIR-3` goes deeper)"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Preheating.* An oven grill needs about 5–10 minutes to reach full heat, a grill pan longer, and a barbecue until the coals are covered in grey ash. A cold grill steams the food."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Fat and flare-ups.* Fat dripping onto coals or an element flares up and leaves soot on the food. Trim excess fat, and move the food to the cooler zone until the flames die down."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Map the grill (60 min).** Preheat the oven grill. Put a slice of bread (or courgette) on the top rack, one in the middle and one at the bottom, and time how long each takes to brown, measuring the distance from the element with the ruler. Photograph them side by side. Repeat once with the door open if your oven grills that way."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** a predictable difference between the zones; you know how far from the element to grill a thick and a thin piece."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Thin pieces burnt, thick ones raw",
+         "Everything at one distance",
+         "Hot zone for thin, cooler zone to finish thick"
+        ],
+        [
+         "Pale, steamed food",
+         "The grill not preheated",
+         "5–10 minutes first; coals ashed over"
+        ],
+        [
+         "Soot and a bitter taste",
+         "Ignoring a flare-up",
+         "Trim fat; move to the cooler zone"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** an oven grill heats the door, the rack and the tray: oven gloves and long tongs. A flare-up is moved away from, not doused with water (`SAF-1.M4`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the distances and times for each zone, in the journal."
+      }
+     ]
+    },
+    {
+     "id": "HEA-2.M3.L2",
+     "title": "Grilling vegetables and fish",
+     "prerequisites": [
+      "HEA-2.M3.L1"
+     ],
+     "competencies": [
+      {
+       "id": "TS-VEG",
+       "level": 4
+      },
+      {
+       "id": "IN-VEG",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** grilling gives vegetables and oily fish a smoky, charred flavour that no pan can, but it punishes mistakes: food that sticks and tears, a raw centre under black marks. A short sequence, followed every time, prevents most of them."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** for session 1, three seasonal vegetables: in winter chicory, leek and celeriac; in summer courgette, a pepper and fennel; a pan of salted water for blanching; for session 2, 2 whole mackerel or 4 fillets with skin; oil; salt; lemon; the grill or a grill pan; tongs; a fish spatula; the probe."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*The sequence:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Oil the food, not the grill:** a thin coat, so it doesn't stick or smoke."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Preheat thoroughly.**"
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "**Lay it down and leave it** until it releases; it sticks until a crust has formed."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "**Turn once** for marks."
+        },
+        {
+         "level": 0,
+         "marker": "5.",
+         "text": "**Finish in the cooler zone** if it is thick."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Vegetables that suit the grill:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**firm and juicy:** courgette, peppers, leeks, spring onions, fennel, chicory, aubergine in summer;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**dense roots** (celeriac, beetroot, carrot, salsify) are blanched first, because the outside would char before the inside is done;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "pat everything dry: wet vegetables steam and don't mark."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "What heat does to colour and texture (`VEG-1.M3`) decides the choice: a green vegetable grilled long turns olive."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Fish that suits the grill:* oily and firm (mackerel, herring, salmon), or a whole fish with the skin on. The skin protects the flesh and crisps. Delicate white fillets need a grill basket or the pan. Probe the thickest part to 63 °C."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Leeks and chicory.* Leeks are blanched for a few minutes, then grilled until marked; chicory is halved lengthwise and grilled cut side first. Both get a little oil, salt and lemon."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Grilled vegetables (60 min).** Grill the three vegetables; blanch the densest (celeriac, or fennel in summer) in slices for about 4 minutes first, and grill one slice unblanched beside it. Photograph the marks and the cross-sections."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Grilled fish (60 min).** Oil and salt the mackerel, grill it skin side to the heat first, turn once, and probe it to 63 °C."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** clean dark marks without black soot; the fish lifting off cleanly; the vegetables tender inside."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Pale, steaming vegetables",
+         "Wet vegetables",
+         "Pat dry, then oil"
+        ],
+        [
+         "Torn food stuck to the grill",
+         "Turning too early, which tears the food",
+         "Leave it until it releases"
+        ],
+        [
+         "Black outside, raw inside",
+         "A raw centre in a thick slice of celeriac",
+         "Blanch dense roots first"
+        ],
+        [
+         "A fillet in pieces",
+         "Delicate fish falling through the bars",
+         "A grill basket, or the pan"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** fish at 63 °C at the thickest part (assessment §9). Keep the raw fish's plate apart from the cooked fish (`SAF-1.M2`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the photos, and a line on the blanched against the raw-grilled slice."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "HEA-2.M3.X1",
+     "title": "A grilled vegetable and fish dinner",
+     "description": "A grilled vegetable and fish dinner from a method outline.",
+     "competencies": [
+      {
+       "id": "TS-DRY",
+       "level": 3
+      },
+      {
+       "id": "SC-HEAT",
+       "level": 3
+      },
+      {
+       "id": "TS-VEG",
+       "level": 4
+      },
+      {
+       "id": "IN-VEG",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** a grilled dinner from a method outline, without a recipe."
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**The goal:** a grilled fish with three seasonal vegetable garnishes, all ready together."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**The constraints:** the oven grill or the barbecue; 90 minutes; one of the vegetables dense enough to need blanching."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**The criteria:** clean marks and an even colour; the fish at 63 °C and lifting cleanly; each vegetable tender inside and its method reasoned; everything finished within a few minutes of the fish."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "Plan the timing backwards and the zone for each item; write why each vegetable gets its method; blanch the dense one and compare a slice with a raw-grilled slice; grill; probe the fish; plate and photograph; log the finish times."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** for 2–4: a whole oily fish or fillets with skin; three seasonal vegetables; oil, lemon, herbs; your grill; the probe; a phone. Budget about €15."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`TS-DRY` level 3, the grilling part:** clean marks and the right interior, without a recipe."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`TS-VEG` level 4, the timing part:** three garnishes finished with the main, each method reasoned. The glaze and the purée follow in `STK-2.M4`."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`IN-VEG` level 3:** the blanched-against-raw comparison, explained in writing."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`SC-HEAT` level 3, the explanation part:** the two-zone result explained from radiant heat."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "AI review scores the colour and the char: *competent* is clean dark marks and an even colour; *not yet* is soot-black patches, or pale with no marks."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 1.5 h; dinner."
+      }
+     ]
+    }
+   ],
+   "items": [
+    {
+     "id": "HEA-2.M3.Q1",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "HEA-2.M3.L1",
+     "safety": false,
+     "question": "Moving food closer to a grill element:",
+     "options": [
+      {
+       "key": "A",
+       "text": "changes nothing"
+      },
+      {
+       "key": "B",
+       "text": "heats it much faster, because radiant heat falls off sharply with distance"
+      },
+      {
+       "key": "C",
+       "text": "slows it down"
+      },
+      {
+       "key": "D",
+       "text": "only changes the colour"
+      }
+     ],
+     "answer": "B",
+     "why": "Distance is the main control."
+    },
+    {
+     "id": "HEA-2.M3.Q2",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "HEA-2.M3.L1",
+     "safety": false,
+     "question": "Why set up two heat zones?",
+     "options": [
+      {
+       "key": "A",
+       "text": "to cook two dishes"
+      },
+      {
+       "key": "B",
+       "text": "a hot zone for marks and crust, a cooler one to finish thick pieces without burning them"
+      },
+      {
+       "key": "C",
+       "text": "to save fuel"
+      },
+      {
+       "key": "D",
+       "text": "for safety only"
+      }
+     ],
+     "answer": "B",
+     "why": "Crust and core need different heat."
+    },
+    {
+     "id": "HEA-2.M3.Q3",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "HEA-2.M3.L1",
+     "safety": true,
+     "question": "Fat drips and the barbecue flares up under a pork chop. What do you do?",
+     "options": [
+      {
+       "key": "A",
+       "text": "spray water"
+      },
+      {
+       "key": "B",
+       "text": "move the chop to the cooler zone until the flare dies down"
+      },
+      {
+       "key": "C",
+       "text": "add more fat"
+      },
+      {
+       "key": "D",
+       "text": "leave it"
+      }
+     ],
+     "answer": "B",
+     "why": "Moving the food stops the burning; water can scatter hot fat and ash."
+    },
+    {
+     "id": "HEA-2.M3.Q4",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "HEA-2.M3.L2",
+     "safety": false,
+     "question": "Why oil the food rather than the grill?",
+     "options": [
+      {
+       "key": "A",
+       "text": "it uses less oil and stops the food sticking without smoke from oil on the bars"
+      },
+      {
+       "key": "B",
+       "text": "the grill rusts"
+      },
+      {
+       "key": "C",
+       "text": "for flavour only"
+      },
+      {
+       "key": "D",
+       "text": "it doesn't matter"
+      }
+     ],
+     "answer": "A",
+     "why": "Oil on the hot bars burns."
+    },
+    {
+     "id": "HEA-2.M3.Q5",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "HEA-2.M3.L2",
+     "safety": false,
+     "question": "Which fish suits a grill best?",
+     "options": [
+      {
+       "key": "A",
+       "text": "a thin sole fillet"
+      },
+      {
+       "key": "B",
+       "text": "an oily, firm fish such as mackerel"
+      },
+      {
+       "key": "C",
+       "text": "cod loin without skin"
+      },
+      {
+       "key": "D",
+       "text": "smoked fish"
+      }
+     ],
+     "answer": "B",
+     "why": "Fat and firmness survive fierce heat."
+    },
+    {
+     "id": "HEA-2.M3.Q6",
+     "type": "SCENARIO",
+     "lessonId": "HEA-2.M3.L2",
+     "safety": false,
+     "question": "You want grilled celeriac slices 1.5 cm thick. What do you do first, and why?",
+     "options": [],
+     "answer": "Blanch or parboil them until nearly tender, then grill for colour; raw, the outside chars before the inside is done.",
+     "why": "Dense roots need a head start."
+    },
+    {
+     "id": "HEA-2.M3.Q7",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "HEA-2.M3.L2",
+     "safety": false,
+     "question": "When do you turn a slice of courgette on the grill?",
+     "options": [
+      {
+       "key": "A",
+       "text": "every 30 seconds"
+      },
+      {
+       "key": "B",
+       "text": "once it releases and shows marks"
+      },
+      {
+       "key": "C",
+       "text": "never"
+      },
+      {
+       "key": "D",
+       "text": "immediately"
+      }
+     ],
+     "answer": "B",
+     "why": "Turning too early tears it and leaves no marks."
+    },
+    {
+     "id": "HEA-2.M3.Q8",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "HEA-2.M3.L2",
+     "safety": false,
+     "question": "Which is a sign that grilling went wrong?",
+     "options": [
+      {
+       "key": "A",
+       "text": "dark, clean marks"
+      },
+      {
+       "key": "B",
+       "text": "soot-black patches with a bitter taste"
+      },
+      {
+       "key": "C",
+       "text": "a soft inside"
+      },
+      {
+       "key": "D",
+       "text": "lifted easily"
+      }
+     ],
+     "answer": "B",
+     "why": "Too hot or too close: char, not marks."
+    }
+   ]
+  },
+  {
+   "id": "HEA-2.M4",
+   "title": "Frying",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** the 8 items of `HEA-2.M4` in the course file, 3 of them safety items. Pass mark 80 %, with every safety item correct."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "HEA-2.M4.L1",
+     "title": "Oil, temperature and safety",
+     "prerequisites": [
+      "SAF-1.M4.L2",
+      "SCI-2.M4.L1"
+     ],
+     "competencies": [
+      {
+       "id": "SA-PHYS",
+       "level": 4
+      },
+      {
+       "id": "KM-EQPT",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** a pot of hot oil is the most dangerous thing in a home kitchen. Fat fires and burns from spilt oil happen in seconds, almost always because of one missing step. A safe station, set up the same way every time, makes deep-frying routine."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** a deep, heavy pot (the stockpot); 1.5–2 litres of refined oil (rapeseed or sunflower); the frying thermometer; a lid that fits the pot; the fire blanket; a spider or slotted spoon; a wire rack over a sheet pan; a slice of bread; a phone on a stand."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Oils for frying:* refined, neutral oils with a high smoke point: rapeseed, sunflower, or groundnut where nobody has a peanut allergy. Butter and extra virgin olive oil smoke too early (`SCI-2.M4.L1`). Used oil darkens, foams and smokes earlier each time. Cool it, strain it, keep it covered, reuse it once or twice for the same kind of food, and discard it when it is dark or smells. Cooled used oil goes back into its bottle and to a collection point (many supermarkets and the *milieustraat* take it), never down the sink."
+      },
+      {
+       "type": "paragraph",
+       "text": "*The safe frying station:*"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Item",
+        "Why"
+       ],
+       "rows": [
+        [
+         "A deep, heavy pot on a back burner, handle turned in",
+         "Stable, out of reach, hard to knock"
+        ],
+        [
+         "Oil no more than a third of the pot",
+         "Room for the oil to rise and bubble when food goes in"
+        ],
+        [
+         "The frying thermometer clipped on",
+         "The temperature is known, not guessed"
+        ],
+        [
+         "A lid and the fire blanket within reach",
+         "For a fire"
+        ],
+        [
+         "A spider or slotted spoon; a rack over a tray",
+         "Food in and out without splashing"
+        ],
+        [
+         "Dry food, lowered away from the body",
+         "Water makes oil spit and foam"
+        ],
+        [
+         "Nobody and no water nearby",
+         "No knocks, no splashes"
+        ],
+        [
+         "Never leave hot oil; heat off before it smokes",
+         "Smoke comes before fire"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Fat-fire response* (`SAF-1.M4.L2`): turn the heat off; slide the lid or the fire blanket over the pot; leave it until it is completely cold. Never water, never move the pot."
+      },
+      {
+       "type": "paragraph",
+       "text": "*The frying thermometer* is checked in boiling water, where it reads about 100 °C, and logged in the calibration log."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Set up and film (45 min).** Set up the station and film it, reading the checklist aloud and pointing to each item. Heat the oil to 170 °C, watching the thermometer, and fry a cube of bread as a test."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** every checklist item visible on the video; the oil holding 170 °C; the bread browning in about a minute."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Oil foaming over the rim",
+         "A pot more than half full",
+         "A third full at most"
+        ],
+        [
+         "A pot within reach of a sleeve or a child",
+         "A front burner with the handle out",
+         "A back burner, handle turned in"
+        ],
+        [
+         "Violent spitting",
+         "Wet chips into hot oil",
+         "Dry them well first"
+        ],
+        [
+         "A fire with nothing to smother it",
+         "No lid at hand",
+         "Lid and blanket beside the pot before heating"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** this lesson is the safety rule: the station checklist, never leaving hot oil, and a lid or the fire blanket for a fat fire, never water (`SAF-1.M4.L2`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the video, and the frying thermometer's check in the calibration log."
+      }
+     ]
+    },
+    {
+     "id": "HEA-2.M4.L2",
+     "title": "Batters and breadings",
+     "prerequisites": [
+      "HEA-2.M4.L1"
+     ],
+     "competencies": [
+      {
+       "id": "TS-DRY",
+       "level": 3
+      },
+      {
+       "id": "SC-BRWN",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** a crisp, golden coating keeps fried food juicy inside and makes it a pleasure to eat: think of *kibbeling* or a good schnitzel. A greasy, pale or patchy coating comes from a few avoidable mistakes in the coating and in the oil temperature."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** 400 g of white fish (saithe, *koolvis*, or pollock) or thick slices of celeriac; for the breading, 50 g of flour, 2 eggs, 100 g of breadcrumbs (*paneermeel*) or panko; for the batter, 100 g of flour, 25 g of corn starch, about 150 ml of very cold sparkling water or beer, salt; three shallow dishes; a whisk; the frying station; kitchen paper."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*The standard breading* (*paneren*):"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Flour** (dry): a thin, even coat, tapped off."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Egg** (glue): beaten, the excess dripped off."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "**Crumbs** (crust): pressed on."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "Use one hand for the dry dishes and the other for the egg, so your fingers don't clump into \"club hands\". Rest the breaded pieces for 10 minutes on a rack so the coating sets."
+      },
+      {
+       "type": "paragraph",
+       "text": "*A light batter:* flour, a little starch, and cold sparkling water or beer, barely mixed, with lumps left. Cold batter in hot oil sets instantly, with little gluten (`SCI-2.M3.L2`), so it is crisp and light. Warm, overmixed batter is heavy and greasy. Mix it just before frying, and keep it cold."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Temperature and colour:*"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Oil",
+        "Result"
+       ],
+       "rows": [
+        [
+         "170–180 °C",
+         "The coating browns as the inside cooks: golden and crisp"
+        ],
+        [
+         "Too cool (150 °C)",
+         "The coating soaks up oil before it sets: pale and greasy"
+        ],
+        [
+         "Too hot",
+         "The outside burns before the inside is done"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Small batches.* Every piece you add cools the oil. Fry a few at a time, and let the oil come back to temperature before the next batch."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Breaded and battered (75 min).** Bread half the fish or celeriac and batter the rest. Fry in small batches at 175 °C until golden, and drain on the rack. Fry one battered piece at 150 °C for comparison. Probe a piece of fish to 63 °C. Photograph the crusts and a cut piece."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** an even golden crust that stays crisp; the low-temperature batch pale and greasy."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Patchy breading, crumb-caked fingers",
+         "Clumped \"club hands\"",
+         "One dry hand, one wet hand"
+        ],
+        [
+         "A heavy, bready coating",
+         "Batter mixed smooth like a cake",
+         "Barely mix; lumps are fine"
+        ],
+        [
+         "Greasy, pale pieces",
+         "Overloading the pot so the oil temperature crashes",
+         "Small batches; wait for the oil to recover"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** lower each piece into the oil away from you with the spider; the frying station rules hold throughout (`HEA-2.M4.L1`). Fish at 63 °C at the thickest part (assessment §9)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the oil temperatures and the photos."
+      }
+     ]
+    },
+    {
+     "id": "HEA-2.M4.L3",
+     "title": "Frying vegetables and potatoes",
+     "prerequisites": [
+      "HEA-2.M4.L1"
+     ],
+     "competencies": [
+      {
+       "id": "TS-VEG",
+       "level": 4
+      },
+      {
+       "id": "TS-DRY",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** proper Dutch *friet* is fried twice, and once you understand why, you can make chips at home that are crisp outside and fluffy inside. The same logic, of cooking the inside and crisping the outside, gives vegetable fritters that are golden and cooked through."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** for session 1, the inputs of `HEA-2.M4.X1`; for session 2, 400 g of vegetables (in winter celeriac and onion, grated; in summer courgette, grated and squeezed), the batter of `HEA-2.M4.L2`, salt; the frying station; a clean tea towel."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Double-fried chips* (*friet*):"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Floury potatoes** (*kruimig*, `VEG-1.M5.L1`), peeled and cut into even sticks about 1 cm thick."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Rinsed** in cold water to remove surface starch, then dried very well in a tea towel."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "**First fry** at about 150 °C, in batches, until soft but still pale: about 5–6 minutes."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "**Rest** on the rack, at least 30 minutes; they can wait for hours, covered, in the fridge."
+        },
+        {
+         "level": 0,
+         "marker": "5.",
+         "text": "**Second fry** at about 180 °C, in small batches, until crisp and golden: about 2–3 minutes."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "The first fry cooks the inside; the second makes the crust."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Vegetable fritters.* Grated or thinly sliced vegetables in a light batter, dropped by the spoonful: small and flat, so they cook through before they brown. Squeeze watery vegetables (courgette) dry first. Fry at 170–180 °C."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Holding crisp:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "drain on a rack, not stacked on paper, where steam softens them;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "salt straight away, while the surface is still oily;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "serve quickly, or hold briefly in a low oven on a rack."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Chips (75 min).** Make the double-fried chips of `HEA-2.M4.X1`, with the oil temperature logged."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Fritters (60 min).** Mix the grated vegetables with just enough batter to bind them, fry spoonfuls at 175 °C, turning once, and drain on the rack. Salt and taste."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** chips crisp outside and fluffy inside; fritters golden and cooked through."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Burnt outside, raw inside",
+         "One fry at high heat",
+         "Two fries: low, then hot"
+        ],
+        [
+         "Spitting oil, soft chips",
+         "Wet potatoes",
+         "Dry them well in a tea towel"
+        ],
+        [
+         "Soggy chips",
+         "Chips piled on paper until soggy",
+         "A rack, in one layer"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** potatoes go into the oil dry and in small batches, lowered with the spider; the pot never more than a third full (`HEA-2.M4.L1`). When you finish, turn the heat off and leave the oil to cool completely in place."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the oil log and photos (in `HEA-2.M4.X1`), and a photo of the fritters."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "HEA-2.M4.X1",
+     "title": "Double-fried chips with an oil temperature log",
+     "description": "Double-fried chips with an oil temperature log.",
+     "competencies": [
+      {
+       "id": "SA-PHYS",
+       "level": 4
+      },
+      {
+       "id": "KM-EQPT",
+       "level": 3
+      },
+      {
+       "id": "TS-DRY",
+       "level": 3
+      },
+      {
+       "id": "TS-VEG",
+       "level": 4
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** a safe deep-frying session, filmed and logged, producing good chips, from the chip recipe and the safety checklist of `HEA-2.M4.L1`."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** 1 kg of floury potatoes; 1.5–2 litres of refined oil; salt; the frying station (`HEA-2.M4.L1`); a pan of boiling water for the thermometer check; a clean tea towel; the calibration log; a phone on a stand."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Recipe:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Check** the frying thermometer in boiling water, where it reads about 100 °C, and log it."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Cut** the peeled potatoes into even sticks about 1 cm thick. Rinse them in cold water and dry them very well."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "**Set up and film** the station, reading the checklist aloud."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "**First fry:** heat the oil to 150 °C. Fry the chips in three or four batches for 5–6 minutes each, until soft and still pale. Log the oil temperature before and after each batch. Drain on the rack."
+        },
+        {
+         "level": 0,
+         "marker": "5.",
+         "text": "**Rest** at least 30 minutes."
+        },
+        {
+         "level": 0,
+         "marker": "6.",
+         "text": "**Second fry:** heat the oil to 180 °C. Fry in small batches for 2–3 minutes until crisp and golden, logging the temperature before and after each; hold it between 170 and 180 °C. Drain on the rack and salt at once."
+        },
+        {
+         "level": 0,
+         "marker": "7.",
+         "text": "**Photograph** the chips and a broken chip."
+        },
+        {
+         "level": 0,
+         "marker": "8.",
+         "text": "**Turn the heat off.** When the oil is completely cold, strain it into its bottle for one more use, or take it to a collection point."
+        },
+        {
+         "level": 0,
+         "marker": "9.",
+         "text": "**Write** why the station is laid out as it is."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`SA-PHYS` level 4:** the video shows the oil level, the temperature and a lid ready; the layout is reasoned in writing."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`TS-DRY` level 3, the frying part:** the oil held at 170–180 °C for the second fry, logged."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`KM-EQPT` level 3, the frying-thermometer part:** its calibration entry."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`TS-VEG` level 4:** a potato garnish to standard, counting towards the row."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "AI review checks the station against the safety checklist: *competent* is a back burner, a third full, a thermometer, a lid at hand; *not yet* is a front burner, half full, no lid, a wet basket."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 1.25 h."
+      }
+     ]
+    },
+    {
+     "id": "HEA-2.M4.X2",
+     "title": "Breaded fish or vegetables",
+     "description": "Breaded fish or vegetables from the standard breading outline.",
+     "competencies": [
+      {
+       "id": "TS-DRY",
+       "level": 3
+      },
+      {
+       "id": "SC-BRWN",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** an even, deep golden breaded crust on a protein or vegetable, from the standard breading outline, deep-fried or shallow-fried. You choose the item and the frying method."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** for 2–4: white fish fillets (saithe or pollock) or thick slices of celeriac; flour, eggs, crumbs; oil; salt and lemon; three shallow dishes; the frying station, or a heavy pan for shallow-frying; the frying thermometer; the probe; a rack; a phone."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Framework:** the standard breading outline."
+      },
+      {
+       "type": "table",
+       "header": [
+        "Part",
+        "What it is",
+        "Your decisions"
+       ],
+       "rows": [
+        [
+         "Item",
+         "Fish fillets or thick celeriac slices, even in thickness",
+         "Which, and how thick"
+        ],
+        [
+         "Seasoning",
+         "Salt on the item, or in the flour",
+         "Where"
+        ],
+        [
+         "Flour, egg, crumbs",
+         "Two-hand method; pressed on; rested on a rack",
+         "Panko or *paneermeel*; herbs or cheese in the crumbs"
+        ],
+        [
+         "Frying",
+         "Deep, or shallow (oil about 1 cm deep, turned once), at 170–180 °C, logged",
+         "Deep or shallow"
+        ],
+        [
+         "Doneness",
+         "Fish probed to 63 °C; celeriac tender to a knife",
+         "—"
+        ],
+        [
+         "Draining",
+         "On a rack; salted at once",
+         "—"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Procedure:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "Bread with the two-hand method."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "Rest."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "Fry at 170–180 °C, logged."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "Probe the fish to 63 °C."
+        },
+        {
+         "level": 0,
+         "marker": "5.",
+         "text": "Photograph the crust and a cut piece."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`SC-BRWN` level 3:** the crust even and deep golden with no burnt spots. With the onions of `SCI-2.M5.X1` this completes the row."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`TS-DRY` level 3:** further frying evidence without a recipe."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 1 h; dinner."
+      }
+     ]
+    }
+   ],
+   "items": [
+    {
+     "id": "HEA-2.M4.Q1",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "HEA-2.M4.L1",
+     "safety": true,
+     "question": "How full do you fill a pot for deep-frying?",
+     "options": [
+      {
+       "key": "A",
+       "text": "to the brim"
+      },
+      {
+       "key": "B",
+       "text": "no more than a third"
+      },
+      {
+       "key": "C",
+       "text": "half to three-quarters"
+      },
+      {
+       "key": "D",
+       "text": "it doesn't matter"
+      }
+     ],
+     "answer": "B",
+     "why": "Room for the oil to rise and bubble when food goes in."
+    },
+    {
+     "id": "HEA-2.M4.Q2",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "HEA-2.M4.L1",
+     "safety": true,
+     "question": "The frying oil starts to smoke. What do you do?",
+     "options": [
+      {
+       "key": "A",
+       "text": "add food to cool it"
+      },
+      {
+       "key": "B",
+       "text": "turn the heat off and let it cool before going on"
+      },
+      {
+       "key": "C",
+       "text": "add water"
+      },
+      {
+       "key": "D",
+       "text": "cover it and keep heating"
+      }
+     ],
+     "answer": "B",
+     "why": "Smoke is the step before ignition."
+    },
+    {
+     "id": "HEA-2.M4.Q3",
+     "type": "ORDERING",
+     "lessonId": "HEA-2.M4.L1",
+     "safety": true,
+     "question": "The oil catches fire. Put in order: (a) leave the lid on until the oil is cold (b) turn off the heat if you can reach it safely (c) slide the lid or a fire blanket over the pan",
+     "options": [],
+     "answer": "b, c, a",
+     "why": "Never water, never move the pot. If the fire is not out, leave the room, close the door and call 112."
+    },
+    {
+     "id": "HEA-2.M4.Q4",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "HEA-2.M4.L1",
+     "safety": false,
+     "question": "Which oil suits deep-frying?",
+     "options": [
+      {
+       "key": "A",
+       "text": "extra virgin olive oil"
+      },
+      {
+       "key": "B",
+       "text": "refined rapeseed or sunflower oil"
+      },
+      {
+       "key": "C",
+       "text": "butter"
+      },
+      {
+       "key": "D",
+       "text": "used oil that has darkened"
+      }
+     ],
+     "answer": "B",
+     "why": "High smoke point and neutral flavour."
+    },
+    {
+     "id": "HEA-2.M4.Q5",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "HEA-2.M4.L2",
+     "safety": false,
+     "question": "Why is a light batter made with cold sparkling water and barely mixed?",
+     "options": [
+      {
+       "key": "A",
+       "text": "for flavour"
+      },
+      {
+       "key": "B",
+       "text": "cold and little gluten make a crisp, light crust in hot oil"
+      },
+      {
+       "key": "C",
+       "text": "it keeps longer"
+      },
+      {
+       "key": "D",
+       "text": "to thicken it"
+      }
+     ],
+     "answer": "B",
+     "why": "Warm, overmixed batter turns heavy and greasy."
+    },
+    {
+     "id": "HEA-2.M4.Q6",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "HEA-2.M4.L2",
+     "safety": false,
+     "question": "What is the order of the standard breading?",
+     "options": [
+      {
+       "key": "A",
+       "text": "egg, flour, crumbs"
+      },
+      {
+       "key": "B",
+       "text": "flour, egg, crumbs"
+      },
+      {
+       "key": "C",
+       "text": "crumbs, egg, flour"
+      },
+      {
+       "key": "D",
+       "text": "flour, crumbs, egg"
+      }
+     ],
+     "answer": "B",
+     "why": "Dry, glue, crust."
+    },
+    {
+     "id": "HEA-2.M4.Q7",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "HEA-2.M4.L2",
+     "safety": false,
+     "question": "Breaded fish fried at 150 °C comes out:",
+     "options": [
+      {
+       "key": "A",
+       "text": "crisp and golden"
+      },
+      {
+       "key": "B",
+       "text": "pale and greasy"
+      },
+      {
+       "key": "C",
+       "text": "burnt"
+      },
+      {
+       "key": "D",
+       "text": "perfect"
+      }
+     ],
+     "answer": "B",
+     "why": "Too cool: the coating soaks up oil before it sets."
+    },
+    {
+     "id": "HEA-2.M4.Q8",
+     "type": "SCENARIO",
+     "lessonId": "HEA-2.M4.L3",
+     "safety": false,
+     "question": "Your chips are brown outside and raw inside. What went wrong, and what is the fix?",
+     "options": [],
+     "answer": "They were fried once at high heat; fry first at a lower temperature until soft, rest, then fry again at about 180 °C to crisp.",
+     "why": "The first fry cooks, the second crisps."
+    }
+   ]
+  },
+  {
+   "id": "HEA-2.M5",
+   "title": "Braising and stewing introduced",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** the 8 items of `HEA-2.M5` in the course file. Pass mark 80 %."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "HEA-2.M5.L1",
+     "title": "Braise versus stew",
+     "prerequisites": [
+      "HEA-2.M1.L1"
+     ],
+     "competencies": [
+      {
+       "id": "TS-CMB",
+       "level": 2
+      },
+      {
+       "id": "CK-METH",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** the cheapest, toughest cuts make the best braises and stews, and the Dutch kitchen is full of them: *hachee*, *draadjesvlees*, *stoofvlees*. Their secret is not a recipe but a principle: long, gentle, moist heat that turns connective tissue into gelatin."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** this lesson; a list of six cuts and vegetables (for example beef shin, chicken legs, pork shoulder, chicken breast, leeks, red cabbage); the journal."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Braise and stew:*"
+      },
+      {
+       "type": "table",
+       "header": [
+        "",
+        "Braise",
+        "Stew (*stoofpot*)"
+       ],
+       "rows": [
+        [
+         "Pieces",
+         "Large: legs, a shank, a whole joint, halved leeks",
+         "Small: cubes"
+        ],
+        [
+         "Browning",
+         "Yes, well",
+         "Usually yes"
+        ],
+        [
+         "Liquid",
+         "Partway up the pieces",
+         "Fully covering"
+        ],
+        [
+         "Lid",
+         "Yes",
+         "Yes"
+        ],
+        [
+         "Heat",
+         "Gentle: a low oven (about 150 °C) or the lowest hob setting",
+         "The same"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Why tough cuts need time.* Collagen turns to gelatin only after long cooking at a gentle simmer (`SCI-2.M2.L1`). A boil tightens the muscle fibres and squeezes out their juice, so the meat turns stringy and dry even in liquid. The liquid should barely tremble: a bubble now and then. A low oven does this most reliably, because it heats the pot from all sides."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Which cuts.* Cuts that work hard are rich in collagen: shin, cheek, shoulder, chicken legs. They suit braising. Lean, tender cuts (breast, loin, tenderloin) have little collagen: braised for hours, they only dry out."
+      },
+      {
+       "type": "paragraph",
+       "text": "*The Dutch oven* (*braadpan*, tier 1): heavy cast iron or enamelled cast iron holds heat evenly, and its tight lid traps steam, so little liquid is lost."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:** theory only (1.5 h): for six cuts and vegetables, decide braise, stew or neither, and write the piece size, the liquid level and the oven temperature for each, with the reason. Plan the braise of `HEA-2.M5.L2` with the same table."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** the choice and the liquid level reasoned from cut size and toughness."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Stringy, dry meat in liquid",
+         "Boiling a stew",
+         "A bare tremble; a low oven"
+        ],
+        [
+         "Boiled, not braised",
+         "Too much liquid in a braise, which then boils",
+         "Partway up the pieces"
+        ],
+        [
+         "Dry, chalky breast",
+         "Lean, tender cuts braised for hours until dry",
+         "Collagen-rich cuts only"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** no special risks beyond the kitchen basics (`SAF-1`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the table of six, and the braise plan."
+      }
+     ]
+    },
+    {
+     "id": "HEA-2.M5.L2",
+     "title": "A first braise",
+     "prerequisites": [
+      "HEA-2.M5.L1"
+     ],
+     "competencies": [
+      {
+       "id": "TS-CMB",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** a braise brings together browning, deglazing and slow moist heat in one pot, and gives a dish with tender meat and its own sauce. Chicken legs are the ideal first braise: forgiving, cheap, and ready in under two hours."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** the inputs of `HEA-2.M5.X1`: 4 chicken legs, 3 leeks, stock or white wine, butter, thyme; salt and pepper; the *braadpan*; tongs; a wooden spoon; a ladle and a small bowl for skimming; the probe; a fork."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*The steps:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Dry and season** the meat: salt it an hour ahead, or the day before (`SCI-2.M2.L2`)."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Brown it well in batches,** skin side first, in a little fat over medium-high heat, until deep golden. A crowded pot steams."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "**Soften the aromatics** (the leeks) in the fat left behind."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "**Deglaze the fond** with the wine or stock, scraping the base (`HEA-1.M3`)."
+        },
+        {
+         "level": 0,
+         "marker": "5.",
+         "text": "**Add liquid partway up** the legs, skin side up and above the liquid."
+        },
+        {
+         "level": 0,
+         "marker": "6.",
+         "text": "**Cover and cook gently** in the low oven until tender."
+        },
+        {
+         "level": 0,
+         "marker": "7.",
+         "text": "**Reduce the sauce:** lift out the meat, skim the fat, and boil the liquid until it coats a spoon and shines."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Judging tenderness:* a fork slides in and the meat gives with almost no resistance; it holds together and is not stringy. With chicken legs, the meat starts to pull from the bone. Poultry passes 75 °C long before it is tender: tenderness, not the core figure, says when a braise is done."
+      },
+      {
+       "type": "paragraph",
+       "text": "*The sauce.* Skim the fat with a ladle or spoon. Reduce until it coats a spoon and shines; finish it with a knob of cold butter off the heat, and taste it for salt and acid."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**A braise (3 h active, spread over the cooking).** Braise the chicken legs with leeks in the *braadpan* at about 150 °C. Test the meat for tenderness with a fork every 15 minutes from 45 minutes, and note when it is done."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** deep browning before the liquid goes in; a liquid that barely trembles; tender meat and a glossy, reduced sauce."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "A pale, flat braise",
+         "Pale meat",
+         "Brown it deep golden first"
+        ],
+        [
+         "Grey meat in its own juice",
+         "A crowded pan that steams",
+         "Batches"
+        ],
+        [
+         "A thin, dull sauce",
+         "Fond left in the pan",
+         "Deglaze and scrape"
+        ],
+        [
+         "A greasy, watery sauce",
+         "A thin, greasy sauce",
+         "Skim, then reduce"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** the *braadpan* and its lid are heavy and hot from the oven: oven gloves, and a cloth on the lid handle as a reminder. Lift the lid away from you. Raw chicken has its own board; wash hands and tongs after (`SAF-1.M2`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the times, the tenderness tests and the photos (in `HEA-2.M5.X1`)."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "HEA-2.M5.X1",
+     "title": "Braised chicken legs with leeks",
+     "description": "Braised chicken legs with leeks.",
+     "competencies": [
+      {
+       "id": "TS-CMB",
+       "level": 2
+      },
+      {
+       "id": "CK-METH",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** a braise with tender meat and a reduced, glossy sauce, with the method choice written down. The braising framework; the quantities from your plan."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** for 4: 4 chicken legs; 3 leeks; stock or white wine; butter; thyme; salt and pepper; the *braadpan*; the probe; a fork; warm plates; the household's cards; a phone."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Framework:** the braising framework."
+      },
+      {
+       "type": "table",
+       "header": [
+        "Part",
+        "What it is",
+        "Your decisions"
+       ],
+       "rows": [
+        [
+         "Why this method",
+         "Chicken legs: collagen, fat, size; leeks: sweet and silky when braised",
+         "The reason, in writing"
+        ],
+        [
+         "Seasoning",
+         "Salted ahead",
+         "How far ahead"
+        ],
+        [
+         "Browning",
+         "Deep golden, skin side first, in batches",
+         "The fat"
+        ],
+        [
+         "Aromatics",
+         "Leeks, washed and in thick pieces; thyme",
+         "How many, how cut"
+        ],
+        [
+         "Deglazing",
+         "Wine or stock, the fond scraped up",
+         "Which liquid"
+        ],
+        [
+         "Liquid level",
+         "Partway up; the skin above it",
+         "How much"
+        ],
+        [
+         "Oven",
+         "Covered, about 150 °C, until fork-tender",
+         "When to test"
+        ],
+        [
+         "Sauce",
+         "Skimmed, reduced until it coats a spoon; butter off the heat",
+         "Thickness"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Procedure:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "Write why this cut and vegetable suit a braise."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "Brown, deglaze and braise in the oven."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "Test for tenderness."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "Probe the meat to 75 °C or above."
+        },
+        {
+         "level": 0,
+         "marker": "5.",
+         "text": "Reduce the sauce."
+        },
+        {
+         "level": 0,
+         "marker": "6.",
+         "text": "Photograph the plate and a spoon of sauce."
+        },
+        {
+         "level": 0,
+         "marker": "7.",
+         "text": "Collect the household cards."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`TS-CMB` level 2:** tender meat, not stringy, with a reduced, glossy sauce."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`CK-METH` level 3:** the written reason for the method, with this module's scenario items at 80 %."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 3 h, mostly in the oven; dinner."
+      }
+     ]
+    }
+   ],
+   "items": [
+    {
+     "id": "HEA-2.M5.Q1",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "HEA-2.M5.L1",
+     "safety": false,
+     "question": "Why does a tough cut need long, gentle cooking?",
+     "options": [
+      {
+       "key": "A",
+       "text": "to kill bacteria"
+      },
+      {
+       "key": "B",
+       "text": "collagen turns to gelatin only after long cooking at a gentle simmer"
+      },
+      {
+       "key": "C",
+       "text": "to brown it"
+      },
+      {
+       "key": "D",
+       "text": "it doesn't"
+      }
+     ],
+     "answer": "B",
+     "why": "Time, not high heat, tenderises connective tissue."
+    },
+    {
+     "id": "HEA-2.M5.Q2",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "HEA-2.M5.L1",
+     "safety": false,
+     "question": "Why shouldn't a stew boil?",
+     "options": [
+      {
+       "key": "A",
+       "text": "it spills"
+      },
+      {
+       "key": "B",
+       "text": "a boil tightens the muscle fibres and makes the meat stringy and dry"
+      },
+      {
+       "key": "C",
+       "text": "it browns too much"
+      },
+      {
+       "key": "D",
+       "text": "it doesn't matter"
+      }
+     ],
+     "answer": "B",
+     "why": "The liquid should barely tremble."
+    },
+    {
+     "id": "HEA-2.M5.Q3",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "HEA-2.M5.L1",
+     "safety": false,
+     "question": "How high does the liquid come in a braise?",
+     "options": [
+      {
+       "key": "A",
+       "text": "above the meat"
+      },
+      {
+       "key": "B",
+       "text": "partway up the pieces"
+      },
+      {
+       "key": "C",
+       "text": "none at all"
+      },
+      {
+       "key": "D",
+       "text": "to the rim of the pot"
+      }
+     ],
+     "answer": "B",
+     "why": "A stew is fully covered; a braise partly."
+    },
+    {
+     "id": "HEA-2.M5.Q4",
+     "type": "SCENARIO",
+     "lessonId": "HEA-2.M5.L1",
+     "safety": false,
+     "question": "Would you braise a pork tenderloin? Why or why not?",
+     "options": [],
+     "answer": "No: it is lean and tender, with little collagen; long braising would only dry it out. Roast or pan-fry it.",
+     "why": "Braise what has collagen."
+    },
+    {
+     "id": "HEA-2.M5.Q5",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "HEA-2.M5.L2",
+     "safety": false,
+     "question": "Why brown the meat before braising?",
+     "options": [
+      {
+       "key": "A",
+       "text": "to seal in juices"
+      },
+      {
+       "key": "B",
+       "text": "for flavour and colour from the Maillard reaction"
+      },
+      {
+       "key": "C",
+       "text": "to cook it through"
+      },
+      {
+       "key": "D",
+       "text": "for safety"
+      }
+     ],
+     "answer": "B",
+     "why": "Searing doesn't seal; it flavours."
+    },
+    {
+     "id": "HEA-2.M5.Q6",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "HEA-2.M5.L2",
+     "safety": false,
+     "question": "How do you judge that braised chicken legs are done?",
+     "options": [
+      {
+       "key": "A",
+       "text": "the timer"
+      },
+      {
+       "key": "B",
+       "text": "a fork slides in, the meat gives easily and holds together, and the core is safe"
+      },
+      {
+       "key": "C",
+       "text": "the colour"
+      },
+      {
+       "key": "D",
+       "text": "the sauce is thick"
+      }
+     ],
+     "answer": "B",
+     "why": "Tenderness by feel, safety by the probe."
+    },
+    {
+     "id": "HEA-2.M5.Q7",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "HEA-2.M5.L2",
+     "safety": false,
+     "question": "The braising liquid is thin and greasy. What do you do?",
+     "options": [
+      {
+       "key": "A",
+       "text": "add flour at once"
+      },
+      {
+       "key": "B",
+       "text": "skim the fat and reduce it until it coats a spoon"
+      },
+      {
+       "key": "C",
+       "text": "add water"
+      },
+      {
+       "key": "D",
+       "text": "serve it as it is"
+      }
+     ],
+     "answer": "B",
+     "why": "Skim, then reduce."
+    },
+    {
+     "id": "HEA-2.M5.Q8",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "HEA-2.M5.L2",
+     "safety": false,
+     "question": "Why deglaze the pan after browning?",
+     "options": [
+      {
+       "key": "A",
+       "text": "to clean it"
+      },
+      {
+       "key": "B",
+       "text": "to lift the fond into the sauce"
+      },
+      {
+       "key": "C",
+       "text": "to cool it"
+      },
+      {
+       "key": "D",
+       "text": "to add acid only"
+      }
+     ],
+     "answer": "B",
+     "why": "The fond is flavour."
+    }
+   ]
+  },
+  {
+   "id": "HEA-2.M6",
+   "title": "Methods lab",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** none for this module. Its only quiz objective is a judgment (comparing and concluding), which the lab report shows directly."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "HEA-2.M6.L1",
+     "title": "One protein, three methods",
+     "prerequisites": [
+      "SCI-2.M1.L1"
+     ],
+     "competencies": [
+      {
+       "id": "RD-TEST",
+       "level": 2
+      },
+      {
+       "id": "JD-CHSE",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** \"what is the best way to cook chicken thighs?\" has no answer. \"What is the best way for crisp skin on a weeknight?\" does. This lab compares three methods fairly and turns the result into a choice for a purpose, which is how you will choose methods from now on."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** the inputs of `HEA-2.M6.X1`; a sheet pan with a rack; the *braadpan*; the sauté pan; the scale; the probe; three coded plates; the household as tasters; the report template (`SCI-2.M1.X1`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*A fair comparison of methods* (`SCI-2.M1`):"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**the same cut:** chicken thighs, bone in and skin on, of similar size;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**salted the same:** the same percentage, the same time ahead;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**to the same safe core temperature:** 75 °C, probed;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**only the method changes:** roasted, braised, pan-fried."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*The three methods:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**Roasted:** on a rack, skin up, at 200 °C by your oven table, until the skin is crisp."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**Braised:** browned, then covered with liquid partway up in the low oven (about 150 °C), until tender (`HEA-2.M5.L2`)."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**Pan-fried:** skin side down in a little oil over medium heat, pressed flat, for most of the time, then turned to finish."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*What to measure:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "the time;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "the weight loss (`SCI-2.M2.L1`);"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "the skin: crisp or soft;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "the texture: tender, juicy;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "the household's blind ranking."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*The conclusion* names the best method for a purpose, not \"the best method\": crisp skin for a weeknight, tenderness and a sauce for a Sunday. Note what each method costs in time and attention."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**The lab (2 h).** Run `HEA-2.M6.X1`: the three methods side by side, weighed, tasted blind and written up."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** a conclusion that names the purpose each method serves."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "A result that reflects the salt, not the method",
+         "Different seasoning per batch",
+         "Weigh the salt for each batch the same"
+        ],
+        [
+         "One batch drier for the wrong reason",
+         "Taking one batch further than 75 °C",
+         "Probe each; take it off at the figure (the braise excepted)"
+        ],
+        [
+         "Everyone prefers \"their\" method",
+         "An unblinded tasting",
+         "Coded plates"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** chicken at 75 °C for every batch (assessment §9). Three raw batches means three times the cross-contamination risk: one board, washed between, and hands washed every time."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the plan and the report (in `HEA-2.M6.X1`)."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "HEA-2.M6.X1",
+     "title": "The three-method lab",
+     "description": "The three-method lab with household tasters scoring blind.",
+     "competencies": [
+      {
+       "id": "RD-TEST",
+       "level": 2
+      },
+      {
+       "id": "JD-CHSE",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** settle \"roast, braise or pan-fry?\" for chicken thighs by a fair test, and choose a method for two purposes, with household tasters scoring blind."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** 9 chicken thighs, bone in and skin on (three per method); stock; oil; salt; the pans of `HEA-2.M6.L1`; the scale; the probe; coded plates; the household's forms; the report template; a phone."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Framework:** the report template of `SCI-2.M1`, for three versions."
+      },
+      {
+       "type": "table",
+       "header": [
+        "Part",
+        "What it is",
+        "Your decisions"
+       ],
+       "rows": [
+        [
+         "Question",
+         "Which method suits chicken thighs for which purpose?",
+         "The two purposes"
+        ],
+        [
+         "Variable",
+         "The method: roasted, braised, pan-fried",
+         "—"
+        ],
+        [
+         "Controlled",
+         "The cut, the salting, the target core (75 °C), the serving",
+         "The salt percentage"
+        ],
+        [
+         "Measures",
+         "Time, weight before and after, skin, texture",
+         "How you score the skin"
+        ],
+        [
+         "Tasting",
+         "Coded plates; household ranks blind",
+         "Who tastes"
+        ],
+        [
+         "Conclusion",
+         "The method for a weeknight dinner and for a Sunday, explained",
+         "—"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Procedure:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "Write the plan."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "Cook the three batches to 75 °C, weighing before and after."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "Code the samples; the tasters rank them blind."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "Write the conclusion and the method for a weeknight dinner and for a Sunday."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`RD-TEST` level 2:** the comparison on the template."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`JD-CHSE` level 2:** the choice between approaches for two purposes, explained."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 2 h; the chicken feeds two meals."
+      }
+     ]
+    }
+   ],
+   "items": []
+  }
+ ]
+}

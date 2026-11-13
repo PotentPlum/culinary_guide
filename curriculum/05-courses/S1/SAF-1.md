@@ -412,14 +412,15 @@ AI review checks the video for hand washing, board and tool changes, and wiping.
   sea level it reads about 100 °C. An offset is noted, or corrected if the thermometer allows it.
 - **Probing:** the thickest part, away from bone, fat and the pan; from the side in thin pieces; wait until the reading
   is stable; clean the probe between raw and cooked.
-- **The core temperatures** the program uses ([assessment §9](../../04-assessment.md#9-safety-figures-used-in-assessment),
-  FDA *Food Code* [S25]):
-  - poultry and stuffed foods: 74 °C;
-  - minced meat and minced fish: 70 °C instantaneous, or 68 °C held for 17 seconds;
+- **The core temperatures** the program uses ([assessment §9](../../04-assessment.md#9-safety-figures-used-in-assessment):
+  the Voedingscentrum [S47], and the FDA *Food Code* [S25] where it gives a time):
+  - poultry and stuffed foods: 75 °C;
+  - minced meat and minced fish: 75 °C instantaneous, or 68 °C held for 17 seconds;
   - fish and whole cuts of meat: 63 °C for 15 seconds;
   - whole roasts follow a time and temperature table, taught in `MEA-2`.
 
-  The Dutch rule "right through" (*door en door gaar*) is the same rule without a number [S21].
+  The Dutch rule "right through" (*door en door gaar*) [S21] is the same rule; the Voedingscentrum's number for meat and
+  chicken is at least 75 °C [S47].
 
 **Sessions:**
 1. Calibrate and probe (60 min): calibrate the thermometer, then probe a chicken thigh and a burger or meatball as part
@@ -535,8 +536,8 @@ stock; shallow containers with lids; a sink or bowl for a cold-water bath.
 | SAF-1.M3.Q1 | multiple choice | SAF-1.M3.L1 | yes | What temperature should a home fridge hold? A) 8 °C B) 6 °C C) 4 °C D) 0 °C | C | The Voedingscentrum rule, stricter than the 5 °C professional limit. |
 | SAF-1.M3.Q2 | multiple choice | SAF-1.M3.L1 | yes | How cold must the freezer be? A) −5 °C B) −10 °C C) −18 °C or colder D) 0 °C | C | At −18 °C growth stops. |
 | SAF-1.M3.Q3 | multiple choice | SAF-1.M3.L2 | yes | You calibrate your probe in stirred crushed ice with a little water. What should it read? A) −4 °C B) 0 °C C) 4 °C D) 10 °C | B | Melting ice is 0 °C; any other reading is the offset. |
-| SAF-1.M3.Q4 | multiple choice | SAF-1.M3.L2 | yes | What core temperature must chicken thighs reach? A) 57 °C B) 63 °C C) 68 °C D) 74 °C | D | Poultry: 74 °C, instantaneous. |
-| SAF-1.M3.Q5 | multiple choice | SAF-1.M3.L2 | yes | A burger of minced beef is safe at which core reading, without a holding time? A) 57 °C B) 63 °C C) 70 °C D) 54 °C | C | Minced meat: 70 °C instantaneous (or 68 °C for 17 s); mincing spreads surface bacteria through the meat. |
+| SAF-1.M3.Q4 | multiple choice | SAF-1.M3.L2 | yes | What core temperature must chicken thighs reach? A) 57 °C B) 63 °C C) 68 °C D) 75 °C | D | Poultry: 75 °C, instantaneous. |
+| SAF-1.M3.Q5 | multiple choice | SAF-1.M3.L2 | yes | A burger of minced beef is safe at which core reading, without a holding time? A) 57 °C B) 63 °C C) 75 °C D) 54 °C | C | Minced meat: 75 °C instantaneous (or 68 °C for 17 s); mincing spreads surface bacteria through the meat. |
 | SAF-1.M3.Q6 | scenario | SAF-1.M3.L3 | yes | At 18:00 you finish 3 litres of chili for later in the week. How do you cool and store it? | Divide it into shallow containers, cool them in a cold-water bath, stirring; into the fridge within 2 hours, labelled and dated; eaten within 2 days or frozen. | Shallow and cold cool fastest; a full pot stays warm for hours. |
 | SAF-1.M3.Q7 | multiple choice | SAF-1.M3.L3 | yes | Cooked rice stood in the warm rice cooker all afternoon. Why won't reheating make it safe? A) rice can't be reheated B) *B. cereus* forms a toxin that heat does not destroy C) the rice is too dry D) it will be safe | B | Spores survive cooking; the toxin they make in warm rice survives reheating. |
 | SAF-1.M3.Q8 | multiple choice | SAF-1.M3.L3 | yes | How do you reheat leftovers? A) until warm in the middle B) until steaming hot throughout (74 °C), and once only C) twice to be safe D) just to serving temperature | B | Steaming hot throughout; reheating twice gives growth two chances. |

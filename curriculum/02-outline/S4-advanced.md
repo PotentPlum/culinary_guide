@@ -242,11 +242,11 @@ under different methods.
 
 #### PRO-4.M5 — Shellfish (6 h)
 **Scope:** crab and lobster; scallops and squid.
-**Objectives:** [S] handle and cook live crustaceans humanely; cook scallops and squid precisely.
+**Objectives:** [S] handle and cook crustaceans humanely; cook scallops and squid precisely.
 
 | ID | Lesson | Objectives | Prereqs | h | Practice | Elapsed | Moves |
 |---|---|---|---|---|---|---|---|
-| PRO-4.M5.L1 | Crab and lobster | [S] humane dispatch, cooking times, extracting meat; [K] storage and safety of live and cooked shellfish | FSH-2.M4.L1 | 3 | 1 | — | IN-FSH→4, SA-TEMP→5 |
+| PRO-4.M5.L1 | Crab and lobster | [K] humane dispatch (by a trained fishmonger) and why it is not done at home; [S] cooking times, extracting meat; [K] storage and safety of live and cooked shellfish | FSH-2.M4.L1 | 3 | 1 | — | IN-FSH→4, SA-TEMP→5 |
 | PRO-4.M5.L2 | Scallops and squid | [S] sear scallops; squid either very fast or very slow; [K] why | FSH-2.M4.L2 | 3 | 2 | — | TS-PRO→5 |
 
 - `PRO-4.M5.X1` *framework, framework* — Crab or lobster dish with the shells used for a stock or butter.

@@ -1,0 +1,2886 @@
+{
+ "schemaVersion": 1,
+ "id": "WRK-1",
+ "introduction": [
+  {
+   "type": "paragraph",
+   "text": "**Before you start.** Most of what goes wrong in a home kitchen goes wrong before the pan is hot: the garlic burns while the onion is still being cut, the sauce waits for potatoes that have only just gone on, the one step that matters is hidden in a long paragraph. This course gives you a professional way of working before the technique courses ask for speed and precision. You learn to set everything out before you cook (*mise en place*, NL *klaarzetten*), to read a recipe for what it is really doing, to plan a meal backwards from the moment you eat, to do the arithmetic of the kitchen, and to use its vocabulary."
+  },
+  {
+   "type": "paragraph",
+   "text": "It is also the first step from recipes to briefs (Phase 1 §6.6). Once you can see what a recipe is doing, you can later cook from a framework, and then from a brief."
+  },
+  {
+   "type": "paragraph",
+   "text": "Plan two to three weeks alongside `SAF-1` and `EQP-1`. The timed mise en place and the cook-twice soup belong on days with time to cook; the math and the glossary fit short evening slots. Every cooked exercise is a household dinner."
+  },
+  {
+   "type": "paragraph",
+   "text": "**Have ready:** the digital scale from `ORI-1`, a sheet pan to use as a tray, three or four mixing bowls, small prep bowls (cereal bowls and cups are fine), a timer, a measuring jug and spoons, the journal, and a damp tea towel for under the board."
+  }
+ ],
+ "modules": [
+  {
+   "id": "WRK-1.M1",
+   "title": "Mise en place",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** the 8 items of `WRK-1.M1` in the course file. Pass mark 80 %."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "WRK-1.M1.L1",
+     "title": "The mise en place mindset",
+     "prerequisites": [
+      "ORI-1.M2.L2"
+     ],
+     "competencies": [
+      {
+       "id": "TS-MEP",
+       "level": 1
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** professional cooks prepare everything before the heat goes on, because once it is on there is no time to look for anything. This lesson gives you the habit and the judgment behind it: what can be prepared ahead, and what must wait until the last minute. Every practical in the program starts with it."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** two recipes you would like to cook, on paper or on screen, and the journal."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Why everything first.* Once the pan is hot, the steps follow each other in seconds or minutes. Onions soften in five minutes, garlic burns in one, a sauce reduces while you are still looking for the cumin. If the dicing, weighing and searching happen before the heat, the cooking itself becomes calm: you watch the pan instead of the chopping board. There is a second gain. A missing ingredient shows up while there is still time to change the plan, not halfway through the dish."
+      },
+      {
+       "type": "paragraph",
+       "text": "*The sequence.* Every mise en place follows the same order:"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "read the whole recipe, to the end, before anything else;"
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "gather the equipment: pans, boards, knives, bowls, the tray;"
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "gather the ingredients;"
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "prepare them: wash, peel, cut, weigh, mix;"
+        },
+        {
+         "level": 0,
+         "marker": "5.",
+         "text": "cook, and clean as you go."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*What keeps and what doesn't.* Not everything should be prepared hours ahead. The question for each item is how long it stays good once prepared."
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "Keeps well: diced onion and carrot, weighed dry goods such as rice or flour, a mixed sauce or dressing, a stock."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "Prepared last: cut herbs, which bruise and darken; cut apples and potatoes, which brown or must wait in water; dressed salads, which wilt; raw meat, fish and poultry, which wait in the fridge until you need them."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "So \"prepare everything first\" means: prepare everything that keeps, and plan the moment for everything that doesn't."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:** theory only (1 h): take the two recipes. For each component, write when it is prepared (ahead or last minute), why, and where it waits (a bowl on the tray, the fridge, a pan of water). Mark the one item in each recipe that would suffer most from being prepared too early."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** a plan that names, for each component, when it is prepared and where it waits."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "The pan is hot and the onion is still whole",
+         "Starting the pan before the knife work is done",
+         "Finish the cutting first; light the heat only when the tray is full"
+        ],
+        [
+         "Brown, limp basil at dinner",
+         "Prepping everything hours ahead, the herbs included",
+         "Cut herbs at the last minute; wash and dry them ahead if you like"
+        ],
+        [
+         "Raw chicken sits on the counter while you peel vegetables",
+         "Taking the protein out at the start",
+         "Leave it in the fridge until its turn; it is prepared last"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** raw meat, fish and poultry wait in the fridge, set to 4 °C, until they are prepared, and go back into it if cooking is delayed (`SAF-1.M2`; assessment §9, the fridge row)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the two annotated recipes, with the item that must be prepared last and why."
+      }
+     ]
+    },
+    {
+     "id": "WRK-1.M1.L2",
+     "title": "Setting up a station",
+     "prerequisites": [],
+     "competencies": [
+      {
+       "id": "TS-MEP",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** a station is the small area where you work: board, bowls, tools. Set up well, it keeps you fast, clean and safe, and it is what every later course means by \"set up your station\". This lesson builds it around a simple soup."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "a chopping board, a damp tea towel or a piece of non-slip mat, a chef's knife and a peeler;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "a sheet pan as a tray, small bowls, a larger waste bowl, a dry towel;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "for the soup (4 portions): 2 onions (about 250 g), 3 carrots (about 300 g), 2 potatoes (about 300 g), 1 l of stock or water with a stock cube, 15 ml oil, salt and pepper; in autumn and winter add a leek, in summer a courgette."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*The station.* Five things make a station:"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "a stable board, standing on a damp towel so it can't slide;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "a tray or bowls for prepared items, grouped by the moment they go into the pan;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "a waste bowl for peelings and trimmings, so you never walk to the bin;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "a dry towel for hands and the knife;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "the tools within reach, not in a drawer."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "The board in the middle, the uncut vegetables on one side, the prepared bowls on the other: work moves in one direction across the counter."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Clean as you go.* Wipe the board between items. Empty the waste bowl when it is full. Wash the tools while the soup simmers. Done this way, the kitchen is clean when the food is ready, and you sit down to eat instead of to a pile of dishes."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Grouping.* Items that go into the pan together sit together, in the order you will use them. For this soup that means one bowl of onion, one of carrot and potato together (they go in at the same moment), and the leek or courgette separately if it goes in later."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Station drill (60 min).** Set up the station as above. Prepare the soup's vegetables: onion diced, carrot and potato in pieces of about 1.5 cm, leek or courgette sliced. Photograph the station before the heat goes on. Cook the soup: soften the onion in the oil for about 5 minutes, add the rest and the stock, simmer until the vegetables are tender (about 20 minutes), season, and blend if you like. Start a timer when you finish eating, and stop it when the kitchen is clean."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** nothing on the board but the item you are cutting; no walking to the bin during prep; the counter clear when the soup is served."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "The board moves as you cut",
+         "Nothing under it",
+         "A damp towel or a non-slip mat under the board"
+        ],
+        [
+         "Peelings pushed around the board with each cut",
+         "No waste bowl, or it is out of reach",
+         "A waste bowl next to the board; sweep scraps into it after each item"
+        ],
+        [
+         "Prepared items in random bowls, and one forgotten",
+         "No order on the tray",
+         "Group by the moment of use, in the order of the method"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** a stable board is the first knife-safety rule; the grip and the cuts follow in `KNF-1`. Wash your hands before you start and after handling raw food (`SAF-1.M2`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the station photo and the clean-up time."
+      }
+     ]
+    },
+    {
+     "id": "WRK-1.M1.L3",
+     "title": "Mise en place practice",
+     "prerequisites": [
+      "WRK-1.M1.L2"
+     ],
+     "competencies": [
+      {
+       "id": "TS-MEP",
+       "level": 3
+      },
+      {
+       "id": "KM-PLAN",
+       "level": 1
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** a time limit shows you the order of your work, and where it jams. In this lesson you prepare a three-component meal twice, a week apart: first with a written prep list, then without it. The second attempt should be faster and cleaner, and it is the practice for `WRK-1.M1.X1`."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** the station of `WRK-1.M1.L2`, a timer, the journal, and two dinners for 2–4 people. For the first, use the recipe of `WRK-1.M1.X1` (chicken thighs, roast root vegetables, a white cabbage salad); for the second, a meal of the same size, for example an omelette, roast beetroot and a carrot salad."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*A time limit makes the order visible.* With a clock running you notice what wastes time. The order that saves it:"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "clean items first (vegetables that are only washed, dry goods weighed), then aromatics (onion, garlic, herbs);"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "raw protein last on the board, so the board is washed once, at the end;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "long jobs first: the oven vegetables are cut before the salad, so they can roast while you work;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "small jobs in the gaps: weigh the dressing while the vegetables drain."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*The prep list.* Before you start, write every item with its cut or measure and the bowl it goes into. For example: \"carrot: batons 1 × 1 × 5 cm, bowl 1 (oven); white cabbage: fine shreds, bowl 2 (salad); dressing: mixed, jar\". The list is a plan, and it is also the checklist you tick off."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Reflection.* After each attempt, log the time, the bottleneck (the step that held everything up) and why. The next attempt then has a target, not a hope."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Timed mise en place (75 min).** With the prep list: write it, set up the station, start the timer, prepare everything, stop the timer when the tray is full and the heat could go on. Photograph the tray. Cook and eat the meal. Log the time and the bottleneck."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Repeat without the list (75 min),** a week later, with the second meal. Read the recipe, then work without writing a list. Time it, photograph the tray, cook, and compare the two times and the two bottlenecks in the journal."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** the second attempt faster, with no forgotten item and a clean station at the end."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "The board needs washing three times",
+         "Starting with the raw protein",
+         "Protein last; then wash the board and knife once"
+        ],
+        [
+         "Herbs bruised and wet",
+         "Washing herbs after cutting them",
+         "Wash and dry them whole, then cut"
+        ],
+        [
+         "Two spices in one bowl, but they go in at different moments",
+         "Measuring by ingredient, not by moment",
+         "One bowl per moment of use"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** wash the board, knife and hands after the raw chicken, before anything that is eaten raw (`SAF-1.M2`). The chicken waits in the fridge until its turn."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** both times, both tray photos, the two bottlenecks, and the target for `WRK-1.M1.X1`."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "WRK-1.M1.X1",
+     "title": "Timed mise en place",
+     "description": "Timed mise en place for a given recipe; photograph the tray.",
+     "competencies": [
+      {
+       "id": "TS-MEP",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** a full mise en place for a two- or three-component meal, before the heat goes on, within a planned time and without a checklist. Attempt 1 uses the recipe below and the prep list; the time it takes sets the target. Attempt 2, on another day, uses another meal of the same size, without the list."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** the station; a sheet pan for the oven and a frying pan; the thermometer; for attempt 2, a protein (an egg dish or a pulse), a vegetable for the oven (carrot, beetroot or celeriac, by season) and a salad (white cabbage, carrot or chicory)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Recipe:** chicken thighs, roast root vegetables and a white cabbage salad, for 4."
+      },
+      {
+       "type": "table",
+       "header": [
+        "Ingredient",
+        "Amount"
+       ],
+       "rows": [
+        [
+         "Chicken thighs, boneless with skin",
+         "8 (about 800 g)"
+        ],
+        [
+         "Carrots, and celeriac or beetroot (by season)",
+         "800 g together"
+        ],
+        [
+         "White cabbage",
+         "400 g"
+        ],
+        [
+         "Rapeseed or sunflower oil",
+         "45 ml in all"
+        ],
+        [
+         "Cider vinegar",
+         "15 ml"
+        ],
+        [
+         "Mustard",
+         "5 g"
+        ],
+        [
+         "Fine salt",
+         "about 10 g in all"
+        ],
+        [
+         "Black pepper, a few thyme sprigs",
+         "to taste"
+        ]
+       ]
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Read and list (5 min).** Read the recipe to the end. Write the prep list: each item, its cut, its bowl."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Set up (5 min).** Station, tray, waste bowl. Heat the oven to 180 °C (about 20 degrees lower for a fan oven)."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "**Oven vegetables first (15 min).** Peel the carrots and the celeriac or beetroot; cut into batons about 1.5 cm thick. Toss them on the sheet pan with 30 ml oil, half the salt and the thyme."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "**Salad (10 min).** Quarter the cabbage, cut out the core, slice it into fine shreds. In a jar, shake the vinegar, mustard, 15 ml oil, a pinch of salt and pepper. Keep the dressing apart from the cabbage until serving."
+        },
+        {
+         "level": 0,
+         "marker": "5.",
+         "text": "**Chicken last (5 min).** Take the chicken from the fridge, pat it dry, salt it. Wash the board, knife and hands. Stop the clock: the tray is complete."
+        },
+        {
+         "level": 0,
+         "marker": "6.",
+         "text": "**Photograph** the tray and the station."
+        },
+        {
+         "level": 0,
+         "marker": "7.",
+         "text": "**Cook.** Roast the vegetables until tender and browned at the edges, about 40 minutes, turning once. After about 20 minutes, put the chicken skin-side down in a cold frying pan, set it over medium heat, and cook until the skin is crisp and golden, about 12–15 minutes; turn it and cook until a probe in the thickest part reads 75 °C."
+        },
+        {
+         "level": 0,
+         "marker": "8.",
+         "text": "**Serve** with the cabbage dressed at the last minute. Clean the station."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:** the two time logs and the two tray photos. The second attempt meets the `TS-MEP` level 3 success row: no checklist, everything prepared before the heat, in a logical order, within the planned time, the station clean at the end. AI review compares the tray photo with the prep list: *competent* is grouped bowls in the order of use, an empty board and a waste bowl; *not yet* is items scattered and peelings on the board."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 2 × 75 min, of which about 40 minutes is preparation each time."
+      }
+     ]
+    },
+    {
+     "id": "WRK-1.M1.X2",
+     "title": "Cook it twice",
+     "description": "Cook the same recipe twice: once without and once with full mise en place, then compare.",
+     "competencies": [
+      {
+       "id": "TS-MEP",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** cook the same soup twice. The first time, prepare as the recipe goes, the way many home cooks do. Another day, cook it with a full mise en place. Then compare, so you feel what mise en place changes rather than just hear it."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** a large pan with a lid, a stick blender (optional), the station, a timer, and the ingredients below twice. One batch goes into the freezer, in a container with a dated label."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Recipe:** onion, carrot and lentil soup, for 4."
+      },
+      {
+       "type": "table",
+       "header": [
+        "Ingredient",
+        "Amount"
+       ],
+       "rows": [
+        [
+         "Onions",
+         "2 (about 250 g), diced"
+        ],
+        [
+         "Carrots",
+         "3 (about 300 g), diced"
+        ],
+        [
+         "Garlic",
+         "2 cloves, chopped"
+        ],
+        [
+         "Red lentils",
+         "150 g, rinsed"
+        ],
+        [
+         "Ground cumin",
+         "5 g"
+        ],
+        [
+         "Stock, or water with a stock cube",
+         "1.2 l"
+        ],
+        [
+         "Rapeseed oil",
+         "15 ml"
+        ],
+        [
+         "Salt, pepper, and a little vinegar or lemon",
+         "to taste"
+        ]
+       ]
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "Heat the oil in the pan over medium heat. Add the onion and cook, stirring now and then, until soft and translucent, about 5–8 minutes."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "Add the carrot and the garlic; cook 2 minutes more. Add the cumin and stir for 30 seconds, until it smells toasted."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "Add the lentils and the stock. Bring to the boil, lower the heat and simmer, partly covered, until the lentils have fallen apart and the carrot is tender, about 20 minutes."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "Blend if you like. Season with salt, pepper and a few drops of vinegar; taste again."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*First cook:* start the onion in the pan, then dice the carrot while it cooks, then find and chop the garlic, then measure the cumin. *Second cook:* everything diced, weighed and grouped on the tray before the heat goes on."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:** photos of the station during both cooks, and a comparison note: the total time, the moments of stress, and anything that caught or burned. The second cook is prepared against the checklist, as the `TS-MEP` level 2 success row asks."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 2 × 45 min."
+      }
+     ]
+    }
+   ],
+   "items": [
+    {
+     "id": "WRK-1.M1.Q1",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "WRK-1.M1.L1",
+     "safety": false,
+     "question": "Why do professionals prepare everything before cooking?",
+     "options": [
+      {
+       "key": "A",
+       "text": "it looks tidy"
+      },
+      {
+       "key": "B",
+       "text": "once the heat is on, steps follow too fast to cut or search, and missing items show up in time"
+      },
+      {
+       "key": "C",
+       "text": "it makes food taste better by itself"
+      },
+      {
+       "key": "D",
+       "text": "recipes say so"
+      }
+     ],
+     "answer": "B",
+     "why": "Mise en place moves the slow work to before the moment it matters."
+    },
+    {
+     "id": "WRK-1.M1.Q2",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "WRK-1.M1.L1",
+     "safety": false,
+     "question": "Which item is best prepared at the last minute?",
+     "options": [
+      {
+       "key": "A",
+       "text": "chopped basil"
+      },
+      {
+       "key": "B",
+       "text": "diced onion"
+      },
+      {
+       "key": "C",
+       "text": "weighed rice"
+      },
+      {
+       "key": "D",
+       "text": "a mixed dressing"
+      }
+     ],
+     "answer": "A",
+     "why": "Cut herbs bruise and darken; the others keep."
+    },
+    {
+     "id": "WRK-1.M1.Q3",
+     "type": "SCENARIO",
+     "lessonId": "WRK-1.M1.L1",
+     "safety": false,
+     "question": "You cook rice, a vegetable stir-fry and a peanut sauce. What do you prepare ahead, and what at the last minute?",
+     "options": [],
+     "answer": "Ahead: rice on first; vegetables cut and grouped; the sauce mixed. Last minute: the stir-fry itself and the herbs.",
+     "why": "The stir-fry takes minutes and must be eaten at once; everything else can wait."
+    },
+    {
+     "id": "WRK-1.M1.Q4",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "WRK-1.M1.L2",
+     "safety": false,
+     "question": "What is the waste bowl for?",
+     "options": [
+      {
+       "key": "A",
+       "text": "storing peelings for stock only"
+      },
+      {
+       "key": "B",
+       "text": "keeping the board clear without trips to the bin"
+      },
+      {
+       "key": "C",
+       "text": "washing vegetables"
+      },
+      {
+       "key": "D",
+       "text": "holding prepped items"
+      }
+     ],
+     "answer": "B",
+     "why": "A clear board is a faster and safer board."
+    },
+    {
+     "id": "WRK-1.M1.Q5",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "WRK-1.M1.L2",
+     "safety": false,
+     "question": "Why does the board stand on a damp towel?",
+     "options": [
+      {
+       "key": "A",
+       "text": "to keep it clean"
+      },
+      {
+       "key": "B",
+       "text": "so it cannot slide"
+      },
+      {
+       "key": "C",
+       "text": "to dry the knife"
+      },
+      {
+       "key": "D",
+       "text": "to catch juice"
+      }
+     ],
+     "answer": "B",
+     "why": "A sliding board causes cuts."
+    },
+    {
+     "id": "WRK-1.M1.Q6",
+     "type": "ORDERING",
+     "lessonId": "WRK-1.M1.L3",
+     "safety": false,
+     "question": "Put in order: (a) cut the raw chicken (b) read the whole recipe (c) gather equipment and ingredients (d) wash and cut the vegetables (e) weigh the dry ingredients",
+     "options": [],
+     "answer": "b, c, d, e, a",
+     "why": "Clean items first, raw protein last; weighing fits while things drain."
+    },
+    {
+     "id": "WRK-1.M1.Q7",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "WRK-1.M1.L3",
+     "safety": false,
+     "question": "Spices go into a dish at two moments. How do you set them out?",
+     "options": [
+      {
+       "key": "A",
+       "text": "all in one bowl"
+      },
+      {
+       "key": "B",
+       "text": "in two bowls, one per moment"
+      },
+      {
+       "key": "C",
+       "text": "straight from the jars"
+      },
+      {
+       "key": "D",
+       "text": "after cooking"
+      }
+     ],
+     "answer": "B",
+     "why": "Group by the moment of use."
+    },
+    {
+     "id": "WRK-1.M1.Q8",
+     "type": "SCENARIO",
+     "lessonId": "WRK-1.M1.L3",
+     "safety": false,
+     "question": "Your mise en place took 55 minutes against a 40-minute target. What do you log?",
+     "options": [],
+     "answer": "The time, the step that took longest and why, and a concrete change and target for the next attempt.",
+     "why": "A log with a bottleneck and a target turns practice into progress."
+    }
+   ]
+  },
+  {
+   "id": "WRK-1.M2",
+   "title": "Recipe literacy",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** the 8 items of `WRK-1.M2` in the course file. Pass mark 80 %."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "WRK-1.M2.L1",
+     "title": "Anatomy of a recipe",
+     "prerequisites": [],
+     "competencies": [
+      {
+       "id": "CK-RCPT",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** a recipe looks complete, but it always leans on things it doesn't say. Once you know its parts and can list what it assumes, you stop being surprised by a recipe that \"didn't work\". This is the first step of reading a recipe critically."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** a recipe you like and haven't cooked often, a pen in a second colour, and the ingredients to cook it."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*The parts of a recipe.* A complete recipe has:"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "a title and a yield (how many portions, or how much);"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "the ingredients, ideally by weight and in the order of use;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "the equipment, including the size of the pan or dish;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "the method, step by step;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "cues and times: what to look for, and roughly how long;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "holding and serving: how long it keeps, how it is reheated, what goes with it."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "Most recipes leave out at least two of these."
+      },
+      {
+       "type": "paragraph",
+       "text": "*What recipes assume.* The writer knows their own kitchen; you don't. A recipe silently assumes:"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "the pan size (a recipe for a 28 cm pan, cooked in a 20 cm pan, steams instead of browning);"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "what \"medium heat\" means on their stove;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "the size of \"a medium onion\" (anything from 100 to 250 g);"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "the amount of salt behind \"season to taste\";"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "the skill to judge \"until golden\" or \"until thick\"."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Resolving ambiguous terms.* Three habits remove most of the guessing:"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "turn pieces into weights (\"1 onion\" becomes about 200 g);"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "turn times into cues (\"5 minutes\" becomes \"until soft and translucent, about 5 minutes\");"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "check the yield against the quantities: 200 g of pasta \"for four\" is a starter, not a dinner."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Dissect a recipe (45 min).** In the second colour, mark each part of the recipe and note which parts are missing. List every assumption it makes: at least five. Write next to each how you will resolve it (a weight, a pan size, a cue). Then cook it with those assumptions written out, and note which one mattered most."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** at least five assumptions found in an ordinary recipe."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Burnt onions after \"5 minutes\"",
+         "Trusting the time over what the pan shows",
+         "Cook to the cue; treat the time as a rough guide"
+        ],
+        [
+         "Dinner for four feeds two",
+         "Missing the yield, or not checking it",
+         "Check the yield against the quantities before you shop"
+        ],
+        [
+         "The dish is watery or dry",
+         "A different pan size from the writer's",
+         "Note the pan size; adjust the liquid or the heat"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** a recipe's time is not a safety check. Meat, fish and poultry are judged by the probe (`SAF-1.M3.L2`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the dissected recipe, your list of assumptions, and the one that mattered most."
+      }
+     ]
+    },
+    {
+     "id": "WRK-1.M2.L2",
+     "title": "Reading for intent",
+     "prerequisites": [
+      "WRK-1.M2.L1"
+     ],
+     "competencies": [
+      {
+       "id": "CK-RCPT",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** every recipe is trying to do one main thing. When you know what that is, you know where to pay attention, where you can relax, and which errors in the recipe matter. This is the skill that later lets you cook from a framework instead of a recipe."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** two recipes for the same dish from different sources (for example two recipes for *hutspot*, a leek and potato soup, or braised red cabbage), and two pen colours."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*The key technique.* Every recipe succeeds or fails on one technique: the sear on a steak, the emulsion of a mayonnaise, the reduction of a sauce, the slow softening of onions for a soup. Everything else supports it. Ask: if I got only one step right, which one would save the dish?"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Critical moments.* Some steps can be repaired later; some can't. A critical moment is a point of no return: eggs added to a liquid that is too hot, pasta water left unsalted, garlic in a pan that is too hot. Mark them before you cook, because they come quickly."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Doneness cues.* A cue tells you what the food looks, smells, sounds or feels like when a step is done. \"Cook for 5 minutes\" is a guess about someone else's stove; \"cook until the onions are soft and translucent\" works on any stove. Cues are the most valuable lines in a recipe, and the most often missing."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Errors and gaps.* Recipes contain mistakes: quantities that don't add up, a missing step (the onion appears in the list but never in the method), an oven temperature that doesn't suit the method. Comparing two recipes for the same dish is the quickest way to find them. Where the two agree, you have found the essentials; where they disagree, one of them is making a choice, or a mistake."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Two recipes, one dish (45 min).** In one colour, mark in each recipe the key technique, the critical moments and the cues. In the other, mark where the two disagree (quantities, order, times, heat) and write why you think they do. End with one line stating the intent of the dish."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** a one-line statement of the recipe's intent, for example \"a quick braise that keeps the vegetables bright\"."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Every line underlined",
+         "Annotating everything equally",
+         "Mark one key technique and two or three critical moments, no more"
+        ],
+        [
+         "The dish fails on a step that looked minor",
+         "Missing that the \"secret\" of the recipe is one step",
+         "Ask which single step would save the dish, and give it your attention"
+        ],
+        [
+         "You copy one recipe's error",
+         "Reading only one recipe",
+         "Compare two; where they differ, ask why"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** no special risks beyond the kitchen basics (`SAF-1`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the two annotated recipes and your intent line."
+      }
+     ]
+    },
+    {
+     "id": "WRK-1.M2.L3",
+     "title": "Planning from a recipe",
+     "prerequisites": [
+      "WRK-1.M2.L2"
+     ],
+     "competencies": [
+      {
+       "id": "CK-RCPT",
+       "level": 3
+      },
+      {
+       "id": "KM-PLAN",
+       "level": 2
+      },
+      {
+       "id": "KM-PURC",
+       "level": 1
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** a meal is ready when all its parts are ready at the same moment. Planning backwards from that moment turns \"I hope it works out\" into a timeline you can follow, and a shopping list that doesn't send you back to the shop. Planning grows into menus and service timelines later in the program."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** a recipe for a two-component dinner (a main and a side), the journal, a timer, and the ingredients you will shop for."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*A backwards timeline.* Start from the moment you want to eat, then work back:"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "write the serving time at the bottom of the page;"
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "for each component, subtract its cooking time and any resting time;"
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "then subtract its preparation time;"
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "mark the moments when two things happen at once, and check that they don't need the same burner or the same hands."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "An example. Dinner at 19:00; potatoes take 10 minutes to peel and 25 minutes in boiling water, the water 10 minutes to boil; the fish takes 8 minutes in the pan and is served at once. Fish into the pan at 18:52. Potatoes into the water at 18:35. Water on at 18:25, which is also when you start peeling."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Hidden times.* Preheating the oven, bringing water to the boil and resting meat are the times most often forgotten. They belong on the timeline."
+      },
+      {
+       "type": "paragraph",
+       "text": "*From timeline to lists.* The prep list follows the timeline: what is cut, weighed and grouped, and by when. The shopping list follows the prep list: scaled to the number of portions, and grouped by the sections of the shop (vegetables, dairy, butcher, dry goods), so you walk through the shop once."
+      },
+      {
+       "type": "paragraph",
+       "text": "*The plan against the actual.* While you cook, write the actual time of each step beside the plan. The difference is not a failure: it is what makes the next plan better."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Plan a dinner (2 h, including cooking).** Write the backwards timeline, the prep list and the shopping list for the dinner. Shop from the list. Cook, writing the actual time of each step beside the plan. Note when each component was ready."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** the components ready within 10 minutes of each other and of the plan."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "The main is ready but the oven isn't hot yet",
+         "Forgetting preheating or resting times",
+         "Put preheating, boiling water and resting on the timeline"
+        ],
+        [
+         "Two pans fight for one burner",
+         "Two things planned for the same burner at once",
+         "Check the burners and the oven at each moment of parallel work"
+        ],
+        [
+         "Back to the shop for the cream",
+         "A shopping list in recipe order",
+         "Group the list by shop section, scaled to the portions"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** a plan includes the safe moments: raw food from the fridge at its turn, and leftovers back into the fridge within 2 hours of cooking (assessment §9, the leftovers rows)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the timeline with the actual times beside it, and the largest gap and its cause."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "WRK-1.M2.X1",
+     "title": "Annotate three recipes",
+     "description": "Annotate three recipes (key technique, critical points, missing information).",
+     "competencies": [
+      {
+       "id": "CK-RCPT",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** read three unfamiliar recipes for their intent, and fill in what they leave out. They are written the way many published recipes are: short, with times instead of cues. You will cook one of them in `WRK-1.M2.X2`."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** the three recipes below, two pen colours, and the journal."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Recipe:** the three recipes to annotate."
+      },
+      {
+       "type": "paragraph",
+       "text": "*A. Braised red cabbage.* 1 red cabbage, 2 apples, 1 onion, 2 tbsp butter, 3 tbsp vinegar, 2 tbsp sugar, 2 cloves, 1 bay leaf, salt. Slice the cabbage. Fry the onion in the butter. Add everything and cook for 1 hour. Season."
+      },
+      {
+       "type": "paragraph",
+       "text": "*B. Leek and potato soup.* 3 leeks, 4 potatoes, 1 l stock, 50 g butter, a little cream. Sweat the leeks in the butter. Add the potatoes and the stock and simmer for 20 minutes. Blend, add the cream and season to taste."
+      },
+      {
+       "type": "paragraph",
+       "text": "*C. Plaice in a pan.* 2 plaice fillets, flour, butter, lemon, parsley. Season the fish and dust it with flour. Fry it in the butter for 3 minutes a side. Serve with lemon and parsley."
+      },
+      {
+       "type": "paragraph",
+       "text": "For each recipe, write:"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "the intent, in one line;"
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "the key technique;"
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "the critical moments;"
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "the missing cues, rewritten as cues (\"until the leeks are soft and bright green, not brown, about 10 minutes\");"
+        },
+        {
+         "level": 0,
+         "marker": "5.",
+         "text": "the missing pan size and weights;"
+        },
+        {
+         "level": 0,
+         "marker": "6.",
+         "text": "the key ratio (for example the stock to the vegetables in B, the vinegar and sugar to the cabbage in A)."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:** the three annotated recipes. With the cook of `WRK-1.M2.X2`, which follows your annotation and succeeds, they meet the `CK-RCPT` level 3 success row."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 1 h active."
+      }
+     ]
+    },
+    {
+     "id": "WRK-1.M2.X2",
+     "title": "Plan and cook from your own timeline",
+     "description": "Plan and cook a dinner from your own timeline; log the actual against the plan.",
+     "competencies": [
+      {
+       "id": "CK-RCPT",
+       "level": 3
+      },
+      {
+       "id": "KM-PLAN",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** cook a dinner to your own plan and test the plan against the clock. The dish is one of the three you annotated in `WRK-1.M2.X1`, with one simple side of your choice (boiled potatoes, rice, a salad, bread)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** the annotated recipe, the timeline template below, a timer, the journal, and the ingredients for 2–4 people from your own shopping list. For the plaice, the thermometer."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Framework:** the timeline template. Copy it into the journal and fill it in before you shop."
+      },
+      {
+       "type": "table",
+       "header": [
+        "Clock time",
+        "Component",
+        "Step",
+        "Planned minutes",
+        "Actual time",
+        "Note"
+       ],
+       "rows": [
+        [
+         "(serving time)",
+         "all",
+         "serve",
+         "—",
+         "",
+         ""
+        ],
+        [
+         "…",
+         "",
+         "",
+         "",
+         "",
+         ""
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "The decisions are yours:"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "the serving time, and the order in which the components are finished;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "where the parallel work goes, and what waits where (a warm oven, a lid, a bowl on the tray);"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "the cues you will cook to, taken from your annotation;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "the quantities, scaled to your portions, and the shopping list by shop section."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "The fixed points: every hidden time (preheating, boiling water, resting) is on the timeline, and nothing needs the same burner twice at the same moment."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:** the plan, the log with the actual time of every step, and a photo of the plate. Both components are out within 10 minutes of the plan (the `KM-PLAN` level 2 success row), and the annotated recipe is followed to a good result (`CK-RCPT` level 3). Note the biggest gap between plan and actual, and its cause."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 2 h, including cooking."
+      }
+     ]
+    }
+   ],
+   "items": [
+    {
+     "id": "WRK-1.M2.Q1",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "WRK-1.M2.L1",
+     "safety": false,
+     "question": "What do recipes most often leave out?",
+     "options": [
+      {
+       "key": "A",
+       "text": "the title"
+      },
+      {
+       "key": "B",
+       "text": "the pan size, the heat level and the doneness cues"
+      },
+      {
+       "key": "C",
+       "text": "the ingredient list"
+      },
+      {
+       "key": "D",
+       "text": "the serving suggestion"
+      }
+     ],
+     "answer": "B",
+     "why": "They assume knowledge the reader may not have."
+    },
+    {
+     "id": "WRK-1.M2.Q2",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "WRK-1.M2.L1",
+     "safety": false,
+     "question": "Why is \"200 g onion\" better than \"1 medium onion\"?",
+     "options": [
+      {
+       "key": "A",
+       "text": "it's shorter"
+      },
+      {
+       "key": "B",
+       "text": "onions vary a lot in size, a weight does not"
+      },
+      {
+       "key": "C",
+       "text": "onions are sold by weight"
+      },
+      {
+       "key": "D",
+       "text": "it isn't better"
+      }
+     ],
+     "answer": "B",
+     "why": "Weights make a recipe reproducible."
+    },
+    {
+     "id": "WRK-1.M2.Q3",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "WRK-1.M2.L1",
+     "safety": false,
+     "question": "What does \"season to taste\" assume?",
+     "options": [
+      {
+       "key": "A",
+       "text": "nothing"
+      },
+      {
+       "key": "B",
+       "text": "that you taste and know what the dish should taste like"
+      },
+      {
+       "key": "C",
+       "text": "that you add no salt"
+      },
+      {
+       "key": "D",
+       "text": "that the recipe is salted already"
+      }
+     ],
+     "answer": "B",
+     "why": "It hands the judgment to the cook."
+    },
+    {
+     "id": "WRK-1.M2.Q4",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "WRK-1.M2.L2",
+     "safety": false,
+     "question": "Which instruction is a doneness cue?",
+     "options": [
+      {
+       "key": "A",
+       "text": "\"cook for 5 minutes\""
+      },
+      {
+       "key": "B",
+       "text": "\"cook until the onions are soft and translucent\""
+      },
+      {
+       "key": "C",
+       "text": "\"cook on medium\""
+      },
+      {
+       "key": "D",
+       "text": "\"cook for a while\""
+      }
+     ],
+     "answer": "B",
+     "why": "A cue tells you what to look for, whatever the stove."
+    },
+    {
+     "id": "WRK-1.M2.Q5",
+     "type": "SCENARIO",
+     "lessonId": "WRK-1.M2.L2",
+     "safety": false,
+     "question": "A recipe says: \"Sear the chicken breasts for 5 minutes, then bake for 20 minutes at 180 °C.\" What is missing?",
+     "options": [],
+     "answer": "The pan and heat level, the thickness of the breasts, the cue for a good sear, and the core temperature of 75 °C as the doneness check.",
+     "why": "Time alone cannot judge doneness of pieces that vary in size."
+    },
+    {
+     "id": "WRK-1.M2.Q6",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "WRK-1.M2.L2",
+     "safety": false,
+     "question": "In a recipe for mayonnaise, which is the critical moment?",
+     "options": [
+      {
+       "key": "A",
+       "text": "choosing the bowl"
+      },
+      {
+       "key": "B",
+       "text": "adding the oil slowly at first so the emulsion forms"
+      },
+      {
+       "key": "C",
+       "text": "salting at the end"
+      },
+      {
+       "key": "D",
+       "text": "serving"
+      }
+     ],
+     "answer": "B",
+     "why": "A broken emulsion at the start fails the dish."
+    },
+    {
+     "id": "WRK-1.M2.Q7",
+     "type": "CALCULATION",
+     "lessonId": "WRK-1.M2.L3",
+     "safety": false,
+     "question": "Dinner at 19:00. Potatoes need 10 minutes of peeling and 25 minutes in water that is already boiling; the fish needs 8 minutes in the pan and is served at once. When do you start peeling, and when does the fish go in?",
+     "options": [],
+     "answer": "Peeling at 18:25; fish in the pan at 18:52.",
+     "why": "Work backwards from the serving time."
+    },
+    {
+     "id": "WRK-1.M2.Q8",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "WRK-1.M2.L3",
+     "safety": false,
+     "question": "How is a shopping list best organised?",
+     "options": [
+      {
+       "key": "A",
+       "text": "in recipe order"
+      },
+      {
+       "key": "B",
+       "text": "by the sections of the shop, with quantities scaled to the portions"
+      },
+      {
+       "key": "C",
+       "text": "alphabetically"
+      },
+      {
+       "key": "D",
+       "text": "by price"
+      }
+     ],
+     "answer": "B",
+     "why": "It saves time and prevents forgotten items."
+    }
+   ]
+  },
+  {
+   "id": "WRK-1.M3",
+   "title": "Kitchen math I",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** the 8 items of `WRK-1.M3` in the course file, all calculations. Pass mark 80 %; it can be marked automatically."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "WRK-1.M3.L1",
+     "title": "Weight, volume and conversions",
+     "prerequisites": [],
+     "competencies": [
+      {
+       "id": "KM-MATH",
+       "level": 1
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** a recipe can only be repeated if its quantities mean the same thing every time. Grams do; cups and spoons don't. This lesson shows you, on your own scale, how much a cup of flour varies, and gives you the conversions to read recipes from anywhere."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** the digital scale, a measuring cup or a mug of about 240 ml, measuring spoons, flour, fine salt and flaky salt, water and oil, a small bowl."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Weight against volume.* A cup of flour can weigh anything from about 120 to 160 g depending on whether it is spooned in loosely or scooped and packed. A tablespoon of fine salt weighs about twice as much as a tablespoon of flaky salt. A gram of flour is always a gram. That is why the program weighs: a recipe in grams gives the same result in every kitchen."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Liquids.* For water and most watery liquids (stock, milk, wine), 1 ml weighs about 1 g, so a jug and a scale agree. Oil is lighter (100 ml weighs about 90 g); honey and syrup are heavier."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Metric units.* 1 kg = 1,000 g; 1 l = 10 dl = 100 cl = 1,000 ml. Dutch recipes often use the deciliter: 2 dl of cream is 200 ml."
+      },
+      {
+       "type": "paragraph",
+       "text": "*American measures.* A US cup is about 240 ml; a tablespoon 15 ml; a teaspoon 5 ml. Ounces (oz) and pounds (lb) are weights: about 28 g and 454 g. Oven temperatures in Fahrenheit convert to Celsius by subtracting 32 and multiplying by 5/9: 350 °F is about 175 °C."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Taring.* Put the bowl on the scale, press tare (or zero), then add. Tare again before each new ingredient in the same bowl."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Weigh the volumes (45 min).** Weigh a cup of flour three ways: spooned in loosely and levelled, scooped straight from the bag, and scooped and pressed down. Weigh a tablespoon of fine salt and of flaky salt. Weigh 100 ml of water and 100 ml of oil from the jug. Write every weight in a table and work out the spread."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** your own record of how much a cup of flour varies."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "A cake recipe from the US turns out dry",
+         "Converting a cup of flour as if it were water (240 g)",
+         "Use about 120–130 g per cup, or find a recipe in grams"
+        ],
+        [
+         "Soup far too salty",
+         "Tablespoons and teaspoons mixed up",
+         "Write \"tbsp\" and \"tsp\" in full; better, weigh the salt"
+        ],
+        [
+         "Every weight is too high",
+         "Not taring the scale",
+         "Tare with the bowl on, and again before each ingredient"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** no special risks beyond the kitchen basics (`SAF-1`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the table of weights and the spread for the flour."
+      }
+     ]
+    },
+    {
+     "id": "WRK-1.M3.L2",
+     "title": "Scaling a recipe",
+     "prerequisites": [
+      "WRK-1.M3.L1"
+     ],
+     "competencies": [
+      {
+       "id": "KM-MATH",
+       "level": 2
+      },
+      {
+       "id": "RD-ADPT",
+       "level": 1
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** you will often cook for a different number of people than the recipe. Multiplying is easy; knowing what not to multiply is the skill. This lesson scales a real dish and writes down what had to change beyond the arithmetic."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** a simple recipe for 4 that you know (a stew, a soup, a pasta sauce), its ingredients scaled for 6, a pan large enough, the journal."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*The scaling factor.* Divide the new yield by the old yield: from 4 to 6 portions the factor is 6 ÷ 4 = 1.5. Multiply every ingredient by it and round sensibly: 2 eggs × 1.5 = 3 eggs; 1 onion × 1.5 is best done by weight (200 g becomes 300 g)."
+      },
+      {
+       "type": "paragraph",
+       "text": "*What does not scale in a straight line.*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**Salt and spices.** Start with less than the factor gives, then taste and add. Seasoning depends partly on the surface and on reduction, not only on the amount."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**Pan size.** A double batch in the same pan is crowded: the food steams in its own liquid instead of browning. Use a bigger pan, or brown in batches."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**Evaporation.** It depends on the surface of the liquid, not its volume. A bigger batch in a pan of the same width reduces more slowly, so it may need less liquid or a longer reduction."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**Cooking and cooling times.** A bigger pot takes longer to heat and much longer to cool, which matters for food safety (`SAF-1.M3.L3`)."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**Baking.** Times and temperatures change with the size of the tin; baking is rescaled with care (`BAK-2`)."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Scaling down.* Halving has its own limits: a sauce too shallow to whisk, an egg that can't be halved by eye (beat it and weigh half)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Scale and cook (45 min).** Scale the recipe from 4 to 6 portions on paper, with every ingredient multiplied and rounded, and the salt and spices started at about the original amount. Cook it. Write down everything that had to change beyond the multiplication: the pan, the time, the salt, the liquid."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** a scaled recipe that tastes like the original, with the non-linear changes written down."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "The scaled dish is too salty",
+         "Doubling the salt with everything else",
+         "Start lower, taste, then add"
+        ],
+        [
+         "Grey, stewed meat instead of browned",
+         "Crowding the pan",
+         "A bigger pan, or brown in batches"
+        ],
+        [
+         "The middle of a big stew is still cold",
+         "Keeping the original cooking time for a bigger pot",
+         "Cook to the cue and the probe, not the original time"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** a larger batch must still be cooled within 2 hours (assessment §9, the cooling rows). Divide it into shallow containers, as in `SAF-1.M3.L3`."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the scaled recipe with your non-linear notes."
+      }
+     ]
+    },
+    {
+     "id": "WRK-1.M3.L3",
+     "title": "Percentages",
+     "prerequisites": [
+      "WRK-1.M3.L2"
+     ],
+     "competencies": [
+      {
+       "id": "KM-MATH",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** a percentage is a quantity that scales by itself. Salt at 1 % of the weight tastes the same in a small pot and a large one, and a vegetable's yield tells you how much to buy. Both come back in costing (`KMG-3`) and in baking (`BAK-2`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** the scale, a kilo of carrots, a peeler and knife, a pot of unsalted soup (the soup of `WRK-1.M1.L2` made without salt is ideal), fine salt, two spoons."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Salt as a percentage of the food's weight.* Weigh the food, multiply by the percentage, and you have the salt: 800 g of minced meat at 1.5 % needs 800 × 0.015 = 12 g of salt. Typical ranges are 1–1.5 % for minced meat or the solids of a soup, and 1 % in the tasting series of `TST-1`. The point is reproducibility: whatever the quantity, the seasoning is the same."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Which weight.* Take the weight of the whole dish you are seasoning: for a soup, the liquid and the vegetables together, not the liquid alone."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Yield.* Yield is the usable weight divided by the purchased weight. If 1,000 g of carrots gives 850 g after peeling and trimming, the yield is 850 ÷ 1,000 = 85 %. Turned around, it tells you what to buy: the amount needed divided by the yield. For 600 g of peeled celeriac at a yield of 75 %, buy 600 ÷ 0.75 = 800 g. Yield continues in `KMG-3`, where it becomes the basis of costing."
+      },
+      {
+       "type": "paragraph",
+       "text": "*A preview: baker's percentages.* In baking, every ingredient is written as a percentage of the flour: a bread with 1,000 g of flour and 650 g of water is \"65 % water\". `BAK-2` works this way."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Weigh and season (30 min).** Weigh the carrots, peel and trim them, weigh again, and work out the yield. Weigh the pot of soup (subtract the weight of the empty pot) and salt it at 1 %. Before salting, set aside a spoonful; taste the two side by side."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** you can say the yield of your carrots and what 1 % salt tastes like in a soup."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "The soup is under-salted",
+         "Taking the percentage of the liquid only",
+         "Weigh the whole soup, solids and liquid together"
+        ],
+        [
+         "Not enough celeriac for the recipe",
+         "Buying for the peeled weight",
+         "Divide the amount needed by the yield"
+        ],
+        [
+         "The percentage comes out absurd",
+         "The weight of the pot included",
+         "Weigh the empty pot first and subtract it"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** no special risks beyond the kitchen basics (`SAF-1`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the carrot weights and yield, the soup's weight and salt, and your tasting note."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "WRK-1.M3.X1",
+     "title": "Conversions and scaling worksheet",
+     "description": "A worksheet of conversions and scaling, with three recipes scaled for 2 and 6 people.",
+     "competencies": [
+      {
+       "id": "KM-MATH",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** fluent conversions, scaling and percentages, first on paper, then in real recipes. Complete the worksheet and check your own answers, then scale three recipes to 2 and to 6 portions."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** the worksheet below, a calculator, three recipes in mixed units (one of them American, in cups and °F), and the ingredients for the one you cook."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Recipe:** the worksheet. Answers are at the end; cover them while you work."
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "2 US cups of milk is about how many ml?"
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "3 dl of cream is how many ml?"
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "1.5 kg is how many grams?"
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "350 °F is about how many °C?"
+        },
+        {
+         "level": 0,
+         "marker": "5.",
+         "text": "8 oz of cheese is about how many grams?"
+        },
+        {
+         "level": 0,
+         "marker": "6.",
+         "text": "A recipe for 4 uses 300 g of pasta. How much for 6?"
+        },
+        {
+         "level": 0,
+         "marker": "7.",
+         "text": "A recipe for 6 uses 900 g of potatoes. How much for 2?"
+        },
+        {
+         "level": 0,
+         "marker": "8.",
+         "text": "What is the scaling factor from 4 to 10 portions?"
+        },
+        {
+         "level": 0,
+         "marker": "9.",
+         "text": "You salt 1,200 g of soup at 1 %. How much salt?"
+        },
+        {
+         "level": 0,
+         "marker": "10.",
+         "text": "You salt 800 g of minced meat at 1.5 %. How much salt?"
+        },
+        {
+         "level": 0,
+         "marker": "11.",
+         "text": "1,000 g of carrots gives 850 g peeled. What is the yield?"
+        },
+        {
+         "level": 0,
+         "marker": "12.",
+         "text": "You need 600 g of peeled celeriac, at a yield of 75 %. How much do you buy?"
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Answers:* 1. about 480 ml. 2. 300 ml. 3. 1,500 g. 4. about 175 °C. 5. about 225 g. 6. 450 g. 7. 300 g. 8. 2.5."
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "9.",
+         "text": "12 g. 10. 12 g. 11. 85 %. 12. 800 g."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "Then scale each of the three recipes to 2 and to 6 portions. Convert the American one to grams, ml and °C. For each, add the non-linear notes of `WRK-1.M3.L2`: the pan, the salt, the liquid, the time."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:** the completed worksheet and the scaled recipes. `KM-MATH` level 2 rests on the calculation quiz of `WRK-1.M3` at 80 % (its success row); the worksheet is the practice for it."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 1 h for the worksheet and the scaling; the cook is part of `WRK-1.M3.L2`."
+      }
+     ]
+    }
+   ],
+   "items": [
+    {
+     "id": "WRK-1.M3.Q1",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "WRK-1.M3.L1",
+     "safety": false,
+     "question": "Why does the program weigh flour rather than measure it in cups?",
+     "options": [
+      {
+       "key": "A",
+       "text": "cups are imprecise only for water"
+      },
+      {
+       "key": "B",
+       "text": "the weight of a cup of flour varies with how it is scooped"
+      },
+      {
+       "key": "C",
+       "text": "flour is sold by weight"
+      },
+      {
+       "key": "D",
+       "text": "weighing is faster"
+      }
+     ],
+     "answer": "B",
+     "why": "Grams don't depend on packing."
+    },
+    {
+     "id": "WRK-1.M3.Q2",
+     "type": "CALCULATION",
+     "lessonId": "WRK-1.M3.L1",
+     "safety": false,
+     "question": "A recipe says 2 US cups of milk. About how many millilitres is that?",
+     "options": [],
+     "answer": "About 480 ml",
+     "why": "One US cup is about 240 ml."
+    },
+    {
+     "id": "WRK-1.M3.Q3",
+     "type": "CALCULATION",
+     "lessonId": "WRK-1.M3.L1",
+     "safety": false,
+     "question": "An American recipe bakes at 350 °F. What is that in Celsius, to the nearest 5 °C?",
+     "options": [],
+     "answer": "175 °C (176.7)",
+     "why": "(350 − 32) × 5/9."
+    },
+    {
+     "id": "WRK-1.M3.Q4",
+     "type": "CALCULATION",
+     "lessonId": "WRK-1.M3.L2",
+     "safety": false,
+     "question": "A recipe for 4 uses 300 g of pasta. How much for 6?",
+     "options": [],
+     "answer": "450 g",
+     "why": "The factor is 6 ÷ 4 = 1.5."
+    },
+    {
+     "id": "WRK-1.M3.Q5",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "WRK-1.M3.L2",
+     "safety": false,
+     "question": "You triple a stew recipe. What should you *not* simply triple?",
+     "options": [
+      {
+       "key": "A",
+       "text": "the meat"
+      },
+      {
+       "key": "B",
+       "text": "the vegetables"
+      },
+      {
+       "key": "C",
+       "text": "the salt and spices, which are added gradually and tasted"
+      },
+      {
+       "key": "D",
+       "text": "the stock"
+      }
+     ],
+     "answer": "C",
+     "why": "Seasoning, pan size, evaporation and time don't scale linearly."
+    },
+    {
+     "id": "WRK-1.M3.Q6",
+     "type": "CALCULATION",
+     "lessonId": "WRK-1.M3.L3",
+     "safety": false,
+     "question": "You salt 800 g of minced meat at 1.5 %. How much salt?",
+     "options": [],
+     "answer": "12 g",
+     "why": "800 × 0.015."
+    },
+    {
+     "id": "WRK-1.M3.Q7",
+     "type": "CALCULATION",
+     "lessonId": "WRK-1.M3.L3",
+     "safety": false,
+     "question": "1,000 g of carrots give 850 g after peeling and trimming. What is the yield?",
+     "options": [],
+     "answer": "85 %",
+     "why": "Usable ÷ purchased."
+    },
+    {
+     "id": "WRK-1.M3.Q8",
+     "type": "CALCULATION",
+     "lessonId": "WRK-1.M3.L3",
+     "safety": false,
+     "question": "You need 600 g of peeled celeriac, and its yield is 75 %. How much do you buy?",
+     "options": [],
+     "answer": "800 g",
+     "why": "Needed ÷ yield = 600 ÷ 0.75."
+    }
+   ]
+  },
+  {
+   "id": "WRK-1.M4",
+   "title": "Kitchen language and notes",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** the 8 items of `WRK-1.M4` in the course file. Pass mark 80 %."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "WRK-1.M4.L1",
+     "title": "Core terminology",
+     "prerequisites": [],
+     "competencies": [
+      {
+       "id": "CK-TERM",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** kitchen words name techniques precisely, so a recipe can say in one word what would otherwise take a sentence. You will meet them in Dutch and French recipes, in shops and on menus. This lesson starts your own glossary, which grows with every course."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** the journal or a set of index cards, and a French or Dutch recipe to test yourself on."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Methods* (French / Dutch / English):"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "*sauter* / sauteren / sauté: cook quickly in a little fat over high heat, tossing or stirring (from *sauter*, to jump);"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "*blanchir* / blancheren / blanch: cook briefly in boiling water, often followed by cold water, to set the colour, loosen skins or pre-cook;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "*pocher* / pocheren / poach: cook gently in liquid well below the boil;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "*braiser* / smoren / braise: brown, then cook slowly, covered, with a little liquid;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "*rôtir* / braden or roosteren / roast: cook in dry heat, uncovered, in the oven or a pan;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "*gratiner* / gratineren / gratinate: brown the top under strong heat, often with cheese or crumbs."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Cuts:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "*julienne*: thin matchsticks, about 2 × 2 mm and 5 cm long;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "*brunoise*: a fine dice of 2–3 mm, a julienne cut across;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "*macédoine*: a dice of about 5 mm;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "*paysanne*: thin, flat pieces of a similar size;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "*chiffonade*: leaves rolled and cut into fine ribbons."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "`KNF-1` teaches each cut with the knife; here you learn the words."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Tools and stages:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "*mise en place* / klaarzetten: everything in its place before cooking;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "*bain-marie* / waterbad: a bowl or pan set over or in hot water, for gentle heat;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "*roux*: flour cooked in fat, the base of a white sauce;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "*fond* / bouillon / stock;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "*al dente*: cooked through, with a slight bite in the centre (\"to the tooth\")."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Why the terms matter.* \"Braise the leeks\" tells an experienced cook the heat, the lid and the liquid. Confusing two terms, such as *braiser* and *rôtir*, gives a different dish."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Your glossary.* Each term gets the three languages, a one-line meaning, and the lesson where you practise it. Start with the terms above and add your own until you have 40."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:** theory only (1.5 h): build the first 40 terms of the glossary. Then review them as flash cards: the term on one side, the meaning and the other two languages on the other, until you know each one twice in a row. Finish by reading the French or Dutch recipe and writing what each term asks you to do."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** you read a French or Dutch recipe and know what each term asks you to do."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "You know the word but not what to do",
+         "Learning the words without the technique",
+         "Link each term to the lesson where it is practised"
+        ],
+        [
+         "Leeks roasted dry instead of braised",
+         "Confusing *braiser* (with liquid, covered) with *rôtir* (dry heat)",
+         "Note the liquid and the lid in the glossary entry"
+        ],
+        [
+         "Any thin strip called a julienne",
+         "No size in the definition",
+         "Write the size: about 2 × 2 mm, 5 cm long"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** no special risks beyond the kitchen basics (`SAF-1`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the glossary of 40 terms, and the terms you got wrong on the first review."
+      }
+     ]
+    },
+    {
+     "id": "WRK-1.M4.L2",
+     "title": "Writing recipe notes",
+     "prerequisites": [
+      "WRK-1.M2.L3"
+     ],
+     "competencies": [
+      {
+       "id": "RD-WRIT",
+       "level": 2
+      },
+      {
+       "id": "JD-REFL",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** your journal will hold hundreds of dishes. A note is only useful if someone, including you in a year's time, can cook from it without guessing. Writing clear notes is also the start of developing your own recipes."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** a dish you cooked this week, the note template of `WRK-1.M4.X1`, the journal, and a household member who will cook from your note."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*A reproducible note has:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "the yield (how many portions, or how much);"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "the ingredients by weight, in the order of use;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "the equipment and the pan size;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "numbered steps, each with a cue and a rough time;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "holding and serving notes: how long it keeps, how to reheat, what goes with it."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Cues over times.* Write what to look for, with the time in brackets: \"cook the onion until it is soft and just colouring at the edges (about 8 minutes)\". The cue works on any stove; the time only tells the reader whether they are far off."
+      },
+      {
+       "type": "paragraph",
+       "text": "*The words to avoid.* \"A handful\", \"a splash\", \"cook until done\": each one hands the decision to a reader who doesn't know what you meant. Replace them with a weight, a volume or a cue."
+      },
+      {
+       "type": "paragraph",
+       "text": "*The review after cooking.* The real test is someone else cooking from the note while you watch and say nothing. Every hesitation, question or wrong move points to a gap. Afterwards, ask: what was unclear, what was missing, what did they have to guess? A failure by the reader is usually a gap in the note."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Write and test (60 min, plus the household cook).** Write the note for the dish on the template. Check it against the checklist. A household member cooks from it while you watch without helping, and you write down every hesitation. Taste the result, then revise the note."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** the other cook finishes without asking a question, and the result matches yours."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "The reader asks \"how much is a splash?\"",
+         "Vague quantities",
+         "A weight or a volume for every ingredient"
+        ],
+        [
+         "An ingredient turns up in step 4 that isn't in the list",
+         "Writing the method first and the list from memory",
+         "Write the list in the order of use, then check each step against it"
+        ],
+        [
+         "The garlic goes in before the onion",
+         "Steps out of order",
+         "Read the note in order while picturing the cooking, or cook from it yourself once"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** include the safety cues the reader needs: the core temperature for meat, fish or poultry, and how long the dish keeps in the fridge (assessment §9)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the first note, the hesitation list, and the revised note."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "WRK-1.M4.X1",
+     "title": "A note someone else cooks from",
+     "description": "Write up a dish you cooked this week; a household member cooks from the note and gives feedback.",
+     "competencies": [
+      {
+       "id": "RD-WRIT",
+       "level": 2
+      },
+      {
+       "id": "JD-REFL",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** write up a dish you cooked this week so well that a household member can cook it without you. Watch them cook from the note in silence, then revise it and reflect."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** the ingredients of the dish once more, for 2–4 portions; the template and checklist below; the journal; a phone for photos."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Recipe:** the note template and its checklist."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Template:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**Title** and **yield** (portions or weight)"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**Equipment** (with the pan or dish size)"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**Ingredients** (by weight or volume, in the order of use)"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**Method** (numbered steps; each with a cue and a time in brackets)"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**Safety** (core temperature where it applies; how long it keeps and how to reheat)"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**Serving** (what goes with it)"
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Checklist:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "Every ingredient in the method is in the list, and the other way round."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "Every quantity is a weight, a volume or a count that can't be misread."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "Every step that ends in a judgment has a cue."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "The pan size and the heat level are given."
+        },
+        {
+         "level": 0,
+         "marker": "5.",
+         "text": "The steps are in the order they are done."
+        },
+        {
+         "level": 0,
+         "marker": "6.",
+         "text": "The yield is stated and matches the quantities."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Procedure:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "Write the note on the template."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "Check it against the checklist and correct it."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "The other cook follows it while you watch silently and note every hesitation."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "Taste both results, or compare theirs with a photo of yours."
+        },
+        {
+         "level": 0,
+         "marker": "5.",
+         "text": "Revise the note, then write a short reflection."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:** the note, complete by the checklist (the `RD-WRIT` level 2 success row); the hesitation list; the other cook's feedback; and the revised note with a reflection that names one improvement and one weakness, with evidence (`JD-REFL` level 2)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 1.5 h active, plus the household member's cooking."
+      }
+     ]
+    }
+   ],
+   "items": [
+    {
+     "id": "WRK-1.M4.Q1",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "WRK-1.M4.L1",
+     "safety": false,
+     "question": "What does *mise en place* mean?",
+     "options": [
+      {
+       "key": "A",
+       "text": "the plating"
+      },
+      {
+       "key": "B",
+       "text": "everything in its place, prepared before cooking"
+      },
+      {
+       "key": "C",
+       "text": "a kind of sauce"
+      },
+      {
+       "key": "D",
+       "text": "the order of courses"
+      }
+     ],
+     "answer": "B",
+     "why": "Literally \"putting in place\" (*klaarzetten*)."
+    },
+    {
+     "id": "WRK-1.M4.Q2",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "WRK-1.M4.L1",
+     "safety": false,
+     "question": "What is *blancheren* (*blanchir*)?",
+     "options": [
+      {
+       "key": "A",
+       "text": "cooking slowly in fat"
+      },
+      {
+       "key": "B",
+       "text": "briefly cooking in boiling water, often followed by cold water"
+      },
+      {
+       "key": "C",
+       "text": "browning in the oven"
+      },
+      {
+       "key": "D",
+       "text": "poaching in milk"
+      }
+     ],
+     "answer": "B",
+     "why": "Used to set colour, loosen skins or pre-cook."
+    },
+    {
+     "id": "WRK-1.M4.Q3",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "WRK-1.M4.L1",
+     "safety": false,
+     "question": "What is *sauteren* (*sauter*)?",
+     "options": [
+      {
+       "key": "A",
+       "text": "cooking quickly in a little fat over high heat, tossing or stirring"
+      },
+      {
+       "key": "B",
+       "text": "simmering in stock"
+      },
+      {
+       "key": "C",
+       "text": "steaming"
+      },
+      {
+       "key": "D",
+       "text": "deep-frying"
+      }
+     ],
+     "answer": "A",
+     "why": "From *sauter*, to jump."
+    },
+    {
+     "id": "WRK-1.M4.Q4",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "WRK-1.M4.L1",
+     "safety": false,
+     "question": "What is a *brunoise*?",
+     "options": [
+      {
+       "key": "A",
+       "text": "thin sticks"
+      },
+      {
+       "key": "B",
+       "text": "a fine dice of 2–3 mm"
+      },
+      {
+       "key": "C",
+       "text": "thin round slices"
+      },
+      {
+       "key": "D",
+       "text": "a rough chop"
+      }
+     ],
+     "answer": "B",
+     "why": "A *julienne* cut across into cubes."
+    },
+    {
+     "id": "WRK-1.M4.Q5",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "WRK-1.M4.L1",
+     "safety": false,
+     "question": "What does *smoren* (*braiser*) involve?",
+     "options": [
+      {
+       "key": "A",
+       "text": "dry heat, uncovered"
+      },
+      {
+       "key": "B",
+       "text": "browning, then slow cooking covered with a little liquid"
+      },
+      {
+       "key": "C",
+       "text": "cooking in boiling water"
+      },
+      {
+       "key": "D",
+       "text": "grilling"
+      }
+     ],
+     "answer": "B",
+     "why": "Not to be confused with roasting (*rôtir*)."
+    },
+    {
+     "id": "WRK-1.M4.Q6",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "WRK-1.M4.L1",
+     "safety": false,
+     "question": "Pasta *al dente* is:",
+     "options": [
+      {
+       "key": "A",
+       "text": "soft throughout"
+      },
+      {
+       "key": "B",
+       "text": "cooked through but with a slight bite in the centre"
+      },
+      {
+       "key": "C",
+       "text": "undercooked and chalky"
+      },
+      {
+       "key": "D",
+       "text": "cooked in stock"
+      }
+     ],
+     "answer": "B",
+     "why": "\"To the tooth\"."
+    },
+    {
+     "id": "WRK-1.M4.Q7",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "WRK-1.M4.L2",
+     "safety": false,
+     "question": "How are ingredients listed in a good recipe note?",
+     "options": [
+      {
+       "key": "A",
+       "text": "alphabetically"
+      },
+      {
+       "key": "B",
+       "text": "in the order of use, by weight"
+      },
+      {
+       "key": "C",
+       "text": "by price"
+      },
+      {
+       "key": "D",
+       "text": "by shop section"
+      }
+     ],
+     "answer": "B",
+     "why": "The reader prepares and uses them in that order."
+    },
+    {
+     "id": "WRK-1.M4.Q8",
+     "type": "SCENARIO",
+     "lessonId": "WRK-1.M4.L2",
+     "safety": false,
+     "question": "Your partner cooked from your note and the butter sauce split. What do you review?",
+     "options": [],
+     "answer": "Whether the note gave the heat level and the key cue (for example \"off the heat, add the cold butter piece by piece\"), and whether the step was in the right order; revise the note.",
+     "why": "A failure by the reader is usually a gap in the note."
+    }
+   ]
+  }
+ ]
+}

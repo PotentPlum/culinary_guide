@@ -12,6 +12,7 @@ import nl.potentplum.mise.core.util.IoDispatcher
 import nl.potentplum.mise.core.util.MiseClock
 import nl.potentplum.mise.data.db.MiseDatabase
 import nl.potentplum.mise.data.db.dao.BackupDao
+import nl.potentplum.mise.data.db.dao.CurriculumDao
 import nl.potentplum.mise.data.db.dao.RecipeDao
 import nl.potentplum.mise.data.db.entity.ParseSource
 import nl.potentplum.mise.data.db.entity.QuestStatus
@@ -34,7 +35,7 @@ enum class RestoreMode {
     /** By id; a recipe with a newer `updatedAt` wins, everything else is only added (spec §13.2). */
     MERGE,
 
-    /** Wipes recipes, quests, attempts and the shopping list first. */
+    /** Wipes recipes, quests, attempts, the shopping list and curriculum progress first. */
     REPLACE,
 }
 
@@ -75,7 +76,7 @@ data class RestoreResult(
     val needsEnrichment: Int,
 )
 
-private val ENTRY = Regex("""backup\.json|(images|journal)/[A-Za-z0-9_-]{1,64}\.jpg""")
+private val ENTRY = Regex("""backup\.json|(images|journal|evidence)/[A-Za-z0-9_-]{1,64}\.jpg""")
 
 /**
  * Export and restore of `Mise-backup-*.zip` (spec §13): `backup.json` plus recipe images and journal photos. The API
@@ -90,6 +91,7 @@ class BackupManager
         private val db: MiseDatabase,
         private val backupDao: BackupDao,
         private val recipeDao: RecipeDao,
+        private val curriculumDao: CurriculumDao,
         private val images: ImageStore,
         private val settings: SettingsRepository,
         private val clock: MiseClock,
@@ -116,6 +118,12 @@ class BackupManager
                             )
                         },
                     shoppingItems = backupDao.shoppingItems().map { it.toBackup() },
+                    lessonProgress = curriculumDao.lessons().map { it.toBackup() },
+                    checkAttempts = curriculumDao.checks().map { it.toBackup() },
+                    evidence =
+                        curriculumDao.evidence().map {
+                            it.toBackup(hasPhoto = it.photoPath != null && images.evidencePhoto(it.id).isFile)
+                        },
                     settings =
                         BackupSettings(
                             quality = current.quality,
@@ -136,6 +144,7 @@ class BackupManager
                 zip.closeEntry()
                 backup.recipes.forEach { recipe -> recipe.image?.let { zip.addFile(it, images.recipeImage(recipe.id)) } }
                 backup.attempts.forEach { attempt -> attempt.photo?.let { zip.addFile(it, images.journalPhoto(attempt.id)) } }
+                backup.evidence.forEach { item -> item.photo?.let { zip.addFile(it, images.evidencePhoto(item.id)) } }
                 zip.finish()
                 zip.flush()
             }
@@ -200,6 +209,9 @@ class BackupManager
                 backupDao.deleteAttempts()
                 backupDao.deleteQuests()
                 backupDao.deleteRecipes()
+                curriculumDao.deleteAllLessons()
+                curriculumDao.deleteAllChecks()
+                curriculumDao.deleteAllEvidence()
             }
 
             val versions = backupDao.recipeVersions().associate { it.id to it.updatedAt }
@@ -243,6 +255,18 @@ class BackupManager
             val localItems = backupDao.shoppingItems().mapTo(mutableSetOf()) { it.id }
             backupDao.upsertShoppingItems(
                 file.shoppingItems.filter { it.id !in localItems }.map { it.toEntity(it.recipeId?.takeIf { id -> id in recipeIds }) },
+            )
+
+            // Curriculum progress is only added: a lesson done or a check taken stays as it is locally.
+            val localLessons = curriculumDao.lessons().mapTo(mutableSetOf()) { it.lessonId }
+            curriculumDao.upsertLessons(file.lessonProgress.filter { it.lessonId !in localLessons }.map { it.toEntity() })
+            val localChecks = curriculumDao.checks().mapTo(mutableSetOf()) { it.id }
+            curriculumDao.upsertChecks(file.checkAttempts.filter { it.id !in localChecks }.map { it.toEntity() })
+            val localEvidence = curriculumDao.evidence().mapTo(mutableSetOf()) { it.id }
+            curriculumDao.upsertEvidence(
+                file.evidence.filter { it.id !in localEvidence }.map { incoming ->
+                    incoming.toEntity(backup.entry(incoming.photo)?.let { copy(it, images.evidencePhoto(incoming.id)) })
+                },
             )
 
             val needsEnrichment =

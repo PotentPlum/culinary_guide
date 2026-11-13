@@ -20,6 +20,7 @@ import sys
 import xml.etree.ElementTree as ET
 from pathlib import Path
 
+import export_curriculum
 import legacy_to_backup
 from schema_check import check_backup_references
 from schema_check import validate as validate_schema
@@ -251,6 +252,54 @@ errors.extend(check_backup_references(legacy_expected, veg_ids, f"{LEGACY}/expec
 if legacy_converted != legacy_expected:
     err(f"{LEGACY}/expected-backup.json", "differs from what tools/legacy_to_backup.py makes of the fixtures (rerun with --write-fixtures if intended)")
 
+# ── Curriculum assets (spec §7.1; generated from curriculum/ by tools/export_curriculum.py) ─────────────────────
+
+CURRICULUM = "assets/curriculum"
+try:
+    curriculum_files = export_curriculum.export()
+except ValueError as e:
+    curriculum_files = {}
+    err(CURRICULUM, str(e))
+for rel in export_curriculum.stale(curriculum_files) if curriculum_files else []:
+    err(f"{CURRICULUM}/{rel}", "out of date with curriculum/ (run tools/export_curriculum.py --write)")
+curriculum_index = load(f"{CURRICULUM}/index.json", "curriculum-index.schema.json")
+curriculum_courses = curriculum_index.get("courses", [])
+course_ids = unique("curriculum.courses.id", [c.get("id", "") for c in curriculum_courses])
+competency_ids = unique("curriculum.competencies.id", [c.get("id", "") for c in curriculum_index.get("competencies", [])])
+staged = [cid for s in curriculum_index.get("stages", []) for cid in s.get("courseIds", [])]
+if sorted(staged) != sorted(course_ids):
+    err(f"{CURRICULUM}/index.json", "every course must be listed in exactly one stage")
+curriculum_units = 0
+for c in curriculum_courses:
+    where = f"{CURRICULUM}/courses/{c.get('id')}.json"
+    for pid in c.get("prerequisites", []):
+        if pid not in course_ids:
+            err(f"curriculum.courses[{c.get('id')}]", f"prerequisite {pid!r} does not resolve")
+    if not c.get("hasContent"):
+        continue
+    doc = load(where, "curriculum-course.schema.json")
+    outline = {m["id"]: m for m in c.get("modules", [])}
+    if [m.get("id") for m in doc.get("modules", [])] != list(outline):
+        err(where, "modules differ from the index")
+        continue
+    for m in doc.get("modules", []):
+        lesson_ids = [l["id"] for l in m.get("lessons", [])]
+        if lesson_ids != [l["id"] for l in outline[m["id"]]["lessons"]]:
+            err(where, f"{m['id']}: lessons differ from the index")
+        if [x["id"] for x in m.get("exercises", [])] != [x["id"] for x in outline[m["id"]]["exercises"]]:
+            err(where, f"{m['id']}: exercises differ from the index")
+        curriculum_units += len(lesson_ids) + len(m.get("exercises", []))
+        for unit in m.get("lessons", []) + m.get("exercises", []):
+            for tag in unit.get("competencies", []):
+                if tag["id"] not in competency_ids:
+                    err(where, f"{unit['id']}: competency {tag['id']!r} does not resolve")
+        for item in m.get("items", []):
+            if item["lessonId"] not in lesson_ids:
+                err(where, f"{item['id']}: lesson {item['lessonId']!r} is not in its module")
+            keys = [o["key"] for o in item["options"]]
+            if (item["type"] == "MULTIPLE_CHOICE") != bool(keys) or (keys and item["answer"] not in keys):
+                err(where, f"{item['id']}: options and answer do not fit its type")
+
 velt = load("reference/velt-vegetables.json")
 if not isinstance(velt, list) or not all(isinstance(v, dict) and v.get("name") and v.get("url") for v in velt):
     err("reference/velt-vegetables.json", "expected a list of objects with name + url")
@@ -268,5 +317,5 @@ if errors:
 print(
     f"data OK — {len(vegs)} vegetables, {len(techs)} techniques, {len(facets)} facets, "
     f"{len(archs)} archetypes, {len(units)} units, {len(names) if tree is not None else 0} string resources, "
-    f"{len(golden.get('cases', []))} golden cases"
+    f"{len(golden.get('cases', []))} golden cases, {len(course_ids)} curriculum courses ({curriculum_units} lessons and exercises)"
 )

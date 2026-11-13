@@ -640,7 +640,8 @@ salad of the exercise.
 chooses the grain and the seasonal vegetables.
 
 **Inputs:** for 4: 250 g of barley, spelt or bulgur; seasonal vegetables (roasted roots in winter, beans and tomato in
-summer); herbs; a vinaigrette; seeds.
+summer); herbs; a vinaigrette (about 3 parts oil to 1 part vinegar or lemon, salted,
+balanced by taste as in `TST-1.M3`); seeds.
 
 **Procedure:**
 1. Cook the grain.

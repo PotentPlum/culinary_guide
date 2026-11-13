@@ -1,0 +1,3053 @@
+{
+ "schemaVersion": 1,
+ "id": "STA-1",
+ "introduction": [
+  {
+   "type": "paragraph",
+   "text": "**Before you start.** Rice, pasta and grains are cooked so often that their faults go unnoticed: rice that is gluey or crunchy, pasta that is soft and sits in a pool of sauce, a grain salad that is bland because the grain was cooked in plain water. This course gives them the same care as any other technique. It starts from the science that explains every one of those faults:"
+  },
+  {
+   "type": "list",
+   "items": [
+    {
+     "level": 0,
+     "marker": "",
+     "text": "**gelatinisation:** starch granules absorbing water and softening;"
+    },
+    {
+     "level": 0,
+     "marker": "",
+     "text": "**retrogradation:** cooked starch firming as it cools."
+    }
+   ]
+  },
+  {
+   "type": "paragraph",
+   "text": "Then it teaches the methods: absorption rice, pilaf and a basic risotto; dried pasta cooked *al dente* and finished in its sauce; couscous, bulgur, barley and quinoa."
+  },
+  {
+   "type": "paragraph",
+   "text": "*The starch routine.* Cooked rice and grains are high-risk when they cool slowly, because of *Bacillus cereus* (`SAF-1.M3.L3`). From the first session, every batch you don't eat at once follows the same routine, taught in full in `STA-1.M4.L3`:"
+  },
+  {
+   "type": "list",
+   "items": [
+    {
+     "level": 0,
+     "marker": "",
+     "text": "spread it thin on a tray to cool;"
+    },
+    {
+     "level": 0,
+     "marker": "",
+     "text": "into the fridge within 2 hours, covered, labelled and dated;"
+    },
+    {
+     "level": 0,
+     "marker": "",
+     "text": "eaten within 2 days;"
+    },
+    {
+     "level": 0,
+     "marker": "",
+     "text": "reheated once only, until steaming hot (74 °C)."
+    }
+   ]
+  },
+  {
+   "type": "paragraph",
+   "text": "*Weigh, don't measure by cup.* Every ratio in this course is by weight: put the pan on the scale, zero it, and pour the water in. Your own ratios, written for your own pans, go into the journal as you correct them."
+  },
+  {
+   "type": "paragraph",
+   "text": "Plan about three weeks. Nearly every session is a dinner or a packed lunch, and the absorption drill runs over three evenings."
+  },
+  {
+   "type": "paragraph",
+   "text": "**Have ready:** the heavy 3 l saucepan with a tight lid and the stockpot (`EQP-1`); a sieve; a ladle; a wooden spoon; a sheet pan for cooling; shallow containers with lids, masking tape and a pen; the scale; the probe thermometer (`SAF-1`); the journal and the tasting form (`TST-1`); a phone for photos."
+  }
+ ],
+ "modules": [
+  {
+   "id": "STA-1.M1",
+   "title": "Starch science",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** the 8 items of `STA-1.M1` in the course file, 1 of them a safety item. Pass mark 80 %, with every safety item correct."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "STA-1.M1.L1",
+     "title": "Gelatinisation and retrogradation",
+     "prerequisites": [
+      "HEA-1.M1.L2"
+     ],
+     "competencies": [
+      {
+       "id": "SC-STRC",
+       "level": 2
+      },
+      {
+       "id": "IN-STA",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** two processes explain nearly everything that goes right or wrong with rice, pasta and grains, and with every sauce thickened by flour. Understand them, and you know when to rinse rice, why cold rice is hard and why yesterday's rice makes the best fried rice."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** the inputs of `STA-1.M1.X1`; the journal."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Gelatinisation.* Heated in water, starch granules absorb water, swell and soften, and some starch leaks out into the liquid and thickens it. This is what cooks rice and pasta and what thickens a sauce [S16]. It needs both water and heat: dry heat browns starch, it does not gelatinise it."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Retrogradation.* As cooked starch cools, its molecules realign and squeeze out water, so the starch firms and dries. You see it in stale bread, hard cold rice and the skin on a cooled sauce. Reheating reverses part of it, which is why cold rice softens again when warmed."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Two kinds of starch.* Starch is made of two kinds of molecule:"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Starch",
+        "Rich in it",
+        "When cooked",
+        "When cold"
+       ],
+       "rows": [
+        [
+         "Amylose (long, straight)",
+         "Long-grain rice: basmati, most long-grain",
+         "Separate, fluffy grains",
+         "Firms a lot"
+        ],
+        [
+         "Amylopectin (branched)",
+         "Short-grain risotto and sushi rice",
+         "Creamy and sticky",
+         "Stays softer"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Rinsing.* Rinsing removes the loose starch on the surface of the grains:"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**Rinse** basmati and rice for a pilaf, so the grains stay separate."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**Never rinse** risotto rice: that surface starch makes the creaminess."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Why day-old rice fries well.* Its grains have retrograded and dried, so they don't clump or turn mushy in a hot pan. Fresh rice is soft and sticky. Day-old rice is only safe if it was cooled fast and kept cold (§9), so plan it: cook the rice the day before, spread it out, and refrigerate it."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Rinsed against unrinsed (60 min).** Run the comparison of `STA-1.M1.X1`, with a spoonful of each kept overnight in the fridge to see the retrogradation."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** the rinsed rice in separate grains; the unrinsed rice clumping; both firmer and drier the next day."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "A risotto that never turns creamy",
+         "Rinsing risotto rice",
+         "Never rinse it"
+        ],
+        [
+         "An upset stomach after rice",
+         "Leaving cooked rice out to cool on the counter",
+         "A tray, then the fridge within 2 hours"
+        ],
+        [
+         "A mushy, clumped fried rice",
+         "Expecting freshly cooked rice to fry like day-old rice",
+         "Cook the rice the day before, cooled by the routine"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** cooked rice cools on a tray and is in the fridge within 2 hours (assessment §9). *B. cereus* forms a toxin that reheating does not destroy, so slow cooling cannot be put right later (`SAF-1.M3.L3`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the photos and your explanation (in `STA-1.M1.X1`)."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "STA-1.M1.X1",
+     "title": "Rinsed against unrinsed rice",
+     "description": "Rinsed versus unrinsed rice, cooked the same way.",
+     "competencies": [
+      {
+       "id": "IN-STA",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** see the effect of surface starch, with everything else held constant: the same rice, water and pan size, and only the rinsing differs."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** 400 g of long-grain or basmati rice; 600 g of water; 6 g of salt; two saucepans of the same size with lids; a sieve; the scale; two plates; two small containers with lids; masking tape and a pen; a phone."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Recipe:** the absorption method at 1 : 1.5 by weight."
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Divide** the rice into two batches of 200 g."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Rinse** batch 1 in the sieve under cold running water, rubbing it gently with your fingers, until the water runs clear. Shake it well. Leave batch 2 unrinsed."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "**Weigh** 300 g of water and 3 g of salt into each pan. Add the rice and bring to the boil."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "**Cover** both pans and turn the heat to the lowest setting. Cook for 12 minutes without lifting the lids."
+        },
+        {
+         "level": 0,
+         "marker": "5.",
+         "text": "**Rest** both, off the heat and still covered, for 10 minutes."
+        },
+        {
+         "level": 0,
+         "marker": "6.",
+         "text": "**Compare.** Put a spoonful of each on its own plate and photograph them side by side. Fluff each with a fork, and note the separation and the stickiness."
+        },
+        {
+         "level": 0,
+         "marker": "7.",
+         "text": "**Keep a portion of each.** Spread a spoonful of each thin in its labelled container, let it steam off for a few minutes, and refrigerate it within 2 hours. The rest is a side dish, or tomorrow's fried rice under the same routine."
+        },
+        {
+         "level": 0,
+         "marker": "8.",
+         "text": "**The next day,** taste both cold, and note the firmness."
+        },
+        {
+         "level": 0,
+         "marker": "9.",
+         "text": "**Explain** the difference in a few sentences, by surface starch, then by retrogradation."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:** the rice cooked from a recipe to the stated texture, photographed, with this module's quiz on types and ratios at 80 %. This is the rice part of the `IN-STA` level 2 row; pasta follows in `STA-1.M3.X1`, and the potatoes were cooked in `VEG-1.M5`."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 45 min, and a taste the next day."
+      }
+     ]
+    }
+   ],
+   "items": [
+    {
+     "id": "STA-1.M1.Q1",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "STA-1.M1.L1",
+     "safety": false,
+     "question": "What is gelatinisation?",
+     "options": [
+      {
+       "key": "A",
+       "text": "starch turning to sugar"
+      },
+      {
+       "key": "B",
+       "text": "starch granules absorbing water and swelling when heated"
+      },
+      {
+       "key": "C",
+       "text": "starch browning"
+      },
+      {
+       "key": "D",
+       "text": "starch dissolving in fat"
+      }
+     ],
+     "answer": "B",
+     "why": "It cooks rice and pasta and thickens sauces."
+    },
+    {
+     "id": "STA-1.M1.Q2",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "STA-1.M1.L1",
+     "safety": false,
+     "question": "Cold leftover rice is hard and dry. Why?",
+     "options": [
+      {
+       "key": "A",
+       "text": "it lost its salt"
+      },
+      {
+       "key": "B",
+       "text": "retrogradation: the cooled starch molecules realign and squeeze out water"
+      },
+      {
+       "key": "C",
+       "text": "it was undercooked"
+      },
+      {
+       "key": "D",
+       "text": "the fridge freezes it"
+      }
+     ],
+     "answer": "B",
+     "why": "Reheating reverses part of it."
+    },
+    {
+     "id": "STA-1.M1.Q3",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "STA-1.M1.L1",
+     "safety": false,
+     "question": "Which rice gives separate, fluffy grains?",
+     "options": [
+      {
+       "key": "A",
+       "text": "short-grain risotto rice"
+      },
+      {
+       "key": "B",
+       "text": "long-grain rice high in amylose"
+      },
+      {
+       "key": "C",
+       "text": "sushi rice"
+      },
+      {
+       "key": "D",
+       "text": "pudding rice"
+      }
+     ],
+     "answer": "B",
+     "why": "Amylose keeps grains separate; amylopectin makes them creamy and sticky."
+    },
+    {
+     "id": "STA-1.M1.Q4",
+     "type": "SCENARIO",
+     "lessonId": "STA-1.M1.L1",
+     "safety": false,
+     "question": "You make a pilaf with basmati and a risotto with carnaroli. Which do you rinse, and why?",
+     "options": [],
+     "answer": "Rinse the basmati so the grains stay separate; don't rinse the carnaroli, because its surface starch makes the risotto creamy.",
+     "why": "Rinsing removes surface starch."
+    },
+    {
+     "id": "STA-1.M1.Q5",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "STA-1.M1.L1",
+     "safety": false,
+     "question": "Why does day-old rice fry better than fresh rice?",
+     "options": [
+      {
+       "key": "A",
+       "text": "it has more flavour"
+      },
+      {
+       "key": "B",
+       "text": "its retrograded, drier grains don't clump"
+      },
+      {
+       "key": "C",
+       "text": "it is colder"
+      },
+      {
+       "key": "D",
+       "text": "it absorbs less oil"
+      }
+     ],
+     "answer": "B",
+     "why": "Fresh rice is soft and sticky."
+    },
+    {
+     "id": "STA-1.M1.Q6",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "STA-1.M1.L1",
+     "safety": false,
+     "question": "Which rice is used for risotto?",
+     "options": [
+      {
+       "key": "A",
+       "text": "basmati"
+      },
+      {
+       "key": "B",
+       "text": "jasmine"
+      },
+      {
+       "key": "C",
+       "text": "arborio or carnaroli"
+      },
+      {
+       "key": "D",
+       "text": "wild rice"
+      }
+     ],
+     "answer": "C",
+     "why": "Short or medium grain, rich in amylopectin."
+    },
+    {
+     "id": "STA-1.M1.Q7",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "STA-1.M1.L1",
+     "safety": true,
+     "question": "Cooked rice for tomorrow's fried rice: how do you handle it?",
+     "options": [
+      {
+       "key": "A",
+       "text": "leave it in the pan overnight"
+      },
+      {
+       "key": "B",
+       "text": "spread it out to cool and refrigerate it within 2 hours"
+      },
+      {
+       "key": "C",
+       "text": "keep it warm in the cooker"
+      },
+      {
+       "key": "D",
+       "text": "freeze it hot in a deep tub"
+      }
+     ],
+     "answer": "B",
+     "why": "Slowly cooling rice lets *B. cereus* grow."
+    },
+    {
+     "id": "STA-1.M1.Q8",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "STA-1.M1.L1",
+     "safety": false,
+     "question": "A sauce thickened with flour forms a skin and sets firmer when cold. This is:",
+     "options": [
+      {
+       "key": "A",
+       "text": "gelatinisation"
+      },
+      {
+       "key": "B",
+       "text": "retrogradation"
+      },
+      {
+       "key": "C",
+       "text": "caramelisation"
+      },
+      {
+       "key": "D",
+       "text": "emulsification"
+      }
+     ],
+     "answer": "B",
+     "why": "Cooling starch firms."
+    }
+   ]
+  },
+  {
+   "id": "STA-1.M2",
+   "title": "Rice",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** the 8 items of `STA-1.M2` in the course file. Pass mark 80 %."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "STA-1.M2.L1",
+     "title": "Rice types",
+     "prerequisites": [
+      "STA-1.M1.L1"
+     ],
+     "competencies": [
+      {
+       "id": "IN-STA",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** the word \"rice\" covers grains that behave quite differently. The wrong rice makes a gluey pilaf or a risotto that never turns creamy, and one water ratio for every rice gives a pan that is wet one day and scorched the next."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** this lesson; three rice types from your cupboard or the shop (basmati, jasmine and risotto rice); a plate; the journal."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Rice by grain length:*"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Rice",
+        "Grain",
+        "Cooked",
+        "For"
+       ],
+       "rows": [
+        [
+         "Basmati",
+         "Long, slender",
+         "Aromatic, separate, fluffy grains",
+         "Pilaf, a side of absorption rice"
+        ],
+        [
+         "Jasmine",
+         "Long",
+         "Fragrant, softer and slightly sticky",
+         "A side of steamed rice"
+        ],
+        [
+         "Risotto rice (arborio, carnaroli)",
+         "Medium to short, plump",
+         "Creamy outside, a bite in the centre",
+         "Risotto"
+        ],
+        [
+         "Sushi rice",
+         "Short, round",
+         "Sticky",
+         "Sushi, rice bowls"
+        ],
+        [
+         "Pudding rice",
+         "Short, round",
+         "Very soft and creamy",
+         "Rice pudding (*rijstepap*)"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Ratios by weight.* Absorption rice needs a set weight of water per weight of rice. The ratio depends on the rice and on how much steam your pan loses, so it is a starting point that you correct:"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Rice",
+        "Starting ratio, rice : water by weight",
+        "Cooking time, covered, lowest heat"
+       ],
+       "rows": [
+        [
+         "Basmati, rinsed",
+         "1 : 1.5",
+         "12 min, then 10 min rest"
+        ],
+        [
+         "Jasmine, rinsed",
+         "1 : 1.3",
+         "12 min, then 10 min rest"
+        ],
+        [
+         "Brown long-grain",
+         "1 : 2",
+         "35–40 min, then 10 min rest"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "For 250 g of basmati: 375 g of water. A cup measures volume, and rice packs differently each time: weigh it."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Brown rice* keeps its bran, which slows the water getting in. It needs more water and much more time, and cooked like white rice it stays hard."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Reading the packet.* The packet's own ratio is usually by volume and for a generic pan. Use it as a check, not as the rule."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:** theory only (1 h): compare the labels and the dry grains of three rice types on a plate: length, shape and how they feel. Write a starting ratio and use for each in the journal, and the dish you would make with it this week."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** the right rice chosen for a pilaf, a risotto and a side of steamed rice."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Wet jasmine, dry basmati",
+         "Using one ratio for every rice",
+         "A ratio per type, written in the journal"
+        ],
+        [
+         "The same rice different every time",
+         "Cups instead of weight",
+         "Weigh rice and water"
+        ],
+        [
+         "Hard, chewy grains",
+         "Brown rice cooked like white",
+         "More water and 35–40 minutes"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** no special risks beyond the kitchen basics (`SAF-1`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the three rice types with their starting ratio and use."
+      }
+     ]
+    },
+    {
+     "id": "STA-1.M2.L2",
+     "title": "The absorption method",
+     "prerequisites": [
+      "STA-1.M2.L1"
+     ],
+     "competencies": [
+      {
+       "id": "TS-STA",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** a pan of plain rice with separate, tender grains and no crust is the foundation of half the world's meals. The absorption method gets there every time once you have your own ratio for your own pan, and it needs no draining and no guessing."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** the inputs of `STA-1.M2.X2`: 600 g of rice over three sessions (basmati and jasmine); salt; the heavy 3 l saucepan with a tight lid; a sieve; the scale; a timer; a clean tea towel."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*The method:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Rinse** the rice until the water runs clear (`STA-1.M1.L1`), and shake it well."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Weigh** the rice and the water by the ratio, with salt: about 1 g per 100 g of water, since all of it is absorbed."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "**Bring to the boil**, uncovered, then cover tightly and turn the heat to the lowest setting."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "**Cook** for the time in the ratio table (`STA-1.M2.L1`) without lifting the lid."
+        },
+        {
+         "level": 0,
+         "marker": "5.",
+         "text": "**Rest** off the heat, still covered, for 10 minutes, so the moisture evens out and the top grains finish in the steam."
+        },
+        {
+         "level": 0,
+         "marker": "6.",
+         "text": "**Fluff** with a fork."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "No stirring after the boil: it breaks the grains and releases starch, which makes them gluey."
+      },
+      {
+       "type": "paragraph",
+       "text": "*The pan matters.* A heavy base spreads the heat and prevents scorching; a tight lid keeps the steam in. If your lid rattles or lets steam out, lay a sheet of foil under it."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Fixes:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**Wet rice:** uncover it over a very low heat for a few minutes, or rest it longer off the heat with a clean tea towel under the lid to take up the steam."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**Undercooked and dry:** sprinkle on a few spoons of boiling water, cover, give it 5 minutes on the lowest heat, and rest it again."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Basmati (45 min).** Cook 200 g of basmati at the starting ratio. Photograph a spoonful on a plate and the base of the pan. Note the texture."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Jasmine (45 min).** Cook 200 g of jasmine at its ratio, and photograph it the same way."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "**Basmati again (45 min).** Cook it with the ratio or the time corrected from session 1, one change only."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** small steam holes on the surface when the water is absorbed; separate, tender grains; no crust stuck to the base."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Uneven, half-hard rice",
+         "Lifting the lid, which lets the steam out",
+         "Leave it closed until the rest is over"
+        ],
+        [
+         "Broken, gluey grains",
+         "Stirring",
+         "Fork it only after the rest"
+        ],
+        [
+         "A scorched base",
+         "Too high a heat",
+         "The lowest setting, a heavy pan"
+        ],
+        [
+         "Wet on top, sticky",
+         "Skipping the rest",
+         "10 minutes off the heat, covered"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** lift the lid away from you, so the steam doesn't reach your face. Rice not eaten at once goes through the starch routine (Before you start)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** each batch with its photos, its texture and the correction (in `STA-1.M2.X2`)."
+      }
+     ]
+    },
+    {
+     "id": "STA-1.M2.L3",
+     "title": "Pilaf",
+     "prerequisites": [
+      "STA-1.M2.L2"
+     ],
+     "competencies": [
+      {
+       "id": "TS-STA",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** a pilaf turns plain rice into a dish of its own: each grain coated in fat, nutty and fragrant, cooked in stock instead of water. The method stays the same whatever you put in it, so once you know it you can make a different pilaf every week."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** 300 g of basmati; 1 onion; 30 g of butter or 2 tablespoons of oil; 450 g of hot stock, vegetable or chicken; salt; a bay leaf; the heavy saucepan with a tight lid; a wooden spoon; the scale; a vegetable side for dinner."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*The pilaf method:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Rinse** the rice and let it drain well in the sieve."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Sweat** the finely chopped onion in the fat over low heat until soft, without colour (`VEG-1.M4.L4`)."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "**Toast** the rice: add it and stir over medium heat for 2–3 minutes, until every grain is coated and translucent at the edges, and it smells nutty."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "**Add the hot stock** by weight, at the ratio of the rice (1 : 1.5 for basmati), and the bay leaf. Taste the stock first and add salt only if it needs it."
+        },
+        {
+         "level": 0,
+         "marker": "5.",
+         "text": "**Cover** and cook on the lowest heat for 12 minutes, without stirring."
+        },
+        {
+         "level": 0,
+         "marker": "6.",
+         "text": "**Rest** off the heat, covered, for 10 minutes; take out the bay leaf, and fluff with a fork."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Why toast.* The fat coats the grains and the light toasting firms their surface, so they absorb the stock evenly and stay separate, with a nutty flavour. Hot stock keeps the pan at the boil; cold stock stops it and the grains go soft outside first."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Variations.* The structure stays; the flavour changes:"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**spices** in the fat before the rice: cumin, cardamom, a cinnamon stick;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**another stock**: a mushroom or a vegetable-trim stock (`VEG-1.M2.X1`);"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**vegetables** folded in at the end: peas, roasted squash, sautéed leek."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Pilaf (75 min).** Cook the pilaf with stock and onion, and serve it with a vegetable side. Photograph a spoonful spread on a plate. This is the first, recipe-supported pilaf of `STA-1.M2.X1`."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** grains glistening and separate; fragrant; no gluey patches."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Sticky, bland pilaf",
+         "Skipping the toasting",
+         "Toast until translucent at the edges"
+        ],
+        [
+         "Soft outside, hard centre",
+         "Cold stock",
+         "Bring the stock to the boil first"
+        ],
+        [
+         "Gluey patches",
+         "Unrinsed rice",
+         "Rinse until the water runs clear"
+        ],
+        [
+         "Broken grains",
+         "Stirring after the stock goes in",
+         "Cover and leave it"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** hot stock poured into a pan of hot fat and rice spits: pour it in steadily and stand back (`SAF-1.M4`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the photo and a tasting line."
+      }
+     ]
+    },
+    {
+     "id": "STA-1.M2.L4",
+     "title": "Risotto basics",
+     "prerequisites": [
+      "STA-1.M2.L2"
+     ],
+     "competencies": [
+      {
+       "id": "TS-STA",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** risotto is the opposite of a pilaf. Instead of keeping the grains apart, you rub starch from them on purpose to make a creamy sauce around grains that stay intact. Done right it flows on the plate; done wrong it is a stiff mound or a porridge."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** the inputs of `STA-1.M2.X1` (the risotto); a second saucepan to keep the stock hot; a ladle; a wooden spoon; warm plates."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*The steps:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Toast** (*tostatura*): the rice, unrinsed, in fat with a sweated onion, until the grains are hot and translucent at the edges."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Wine:** a splash, stirred until it has evaporated."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "**Hot stock, a ladle at a time,** at a steady simmer; stir regularly, and add the next ladle when the last has nearly been absorbed."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "**Taste** from about 15 minutes: stop when the grain is tender with a slight bite in the centre."
+        },
+        {
+         "level": 0,
+         "marker": "5.",
+         "text": "**Off the heat** (*mantecatura*): beat in cold butter and grated cheese, then rest for a minute."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Why stirring releases starch.* The friction between the grains rubs starch from their surface into the liquid, which thickens it into a creamy sauce. That starch is the sauce: there is no cream in a classic risotto."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Why hot stock.* Each ladle should keep the pan simmering. Cold stock stops the cooking, so the grains cook unevenly."
+      },
+      {
+       "type": "paragraph",
+       "text": "*The result:* a risotto that flows in a gentle wave on the plate (*all'onda*), not a stiff mound. If it is stiff, a last splash of stock before the *mantecatura* loosens it. It stiffens as it waits, so it goes onto warm plates at once."
+      },
+      {
+       "type": "paragraph",
+       "text": "*The cheese.* Parmigiano is traditional; an aged Dutch cheese (*oude kaas*) works too."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Risotto (75 min).** Cook the risotto of `STA-1.M2.X1` from its recipe, with a seasonal vegetable: pumpkin or leek in autumn and winter, peas in summer. Photograph it as it spreads on the plate."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** creamy and flowing; the grains separate and *al dente*; glossy after the *mantecatura*."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Uneven grains, chalky in places",
+         "Cold stock, which stops the cooking",
+         "Keep the stock simmering beside it"
+        ],
+        [
+         "Boiled rice in a thin liquid",
+         "All the stock at once",
+         "A ladle at a time, stirring"
+        ],
+        [
+         "No creaminess",
+         "Rinsed rice",
+         "Risotto rice straight from the packet"
+        ],
+        [
+         "A porridge",
+         "Overcooking",
+         "Taste from 15 minutes; stop at a slight bite"
+        ],
+        [
+         "Greasy, separated finish",
+         "Butter beaten in over the heat",
+         "Off the heat, cold butter"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** keep the pan of simmering stock on a back burner with its handle turned in (`SAF-1.M4`). Risotto is best eaten at once; leftovers go through the starch routine and become *arancini* or a rice cake."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the photo, and the texture against the target (in `STA-1.M2.X1`)."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "STA-1.M2.X1",
+     "title": "Pilaf and a basic risotto",
+     "description": "Pilaf and a basic risotto.",
+     "competencies": [
+      {
+       "id": "TS-STA",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** the two rice methods that cook in fat: the pilaf a second time without a recipe, and a risotto from a recipe. The first pilaf is the lesson's (`STA-1.M2.L3`); the second, on another day, is from memory, with a different stock or spice."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**Pilaf:** 300 g of basmati; an onion; stock; fat; your choice of spice."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**Risotto, for 4:** 300 g of risotto rice; 1 onion, finely chopped; 30 g of butter and 1 tablespoon of oil; 100 ml of dry white wine; 1.2 litres of stock; 40 g of cold butter in cubes; 50 g of grated hard cheese; a seasonal vegetable (300 g of pumpkin in 1 cm cubes, 2 leeks, or 200 g of peas); salt and pepper."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Recipe:** the risotto."
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Heat the stock** to a simmer in its own pan, and keep it there."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Sweat the onion** in the butter and oil over low heat until soft and translucent, about 8 minutes. If you use leek, sliced and washed (`VEG-1.M4.L4`), sweat it with the onion. Add the pumpkin cubes now if you use them."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "**Toast the rice:** add it and stir for 2 minutes over medium heat, until the grains are hot and translucent at the edges."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "**Add the wine** and stir until it has evaporated."
+        },
+        {
+         "level": 0,
+         "marker": "5.",
+         "text": "**Add the stock a ladle at a time,** stirring regularly, at a steady simmer. Add the next ladle when the last has nearly been absorbed. Add the peas, if you use them, with the last two ladles."
+        },
+        {
+         "level": 0,
+         "marker": "6.",
+         "text": "**Taste from 15 minutes.** Stop when the grains are tender with a slight bite, about 18–20 minutes in all, and the risotto still flows. You may not need all the stock."
+        },
+        {
+         "level": 0,
+         "marker": "7.",
+         "text": "**Mantecatura:** off the heat, beat in the cold butter and the cheese for 30 seconds. Season. Rest 1 minute."
+        },
+        {
+         "level": 0,
+         "marker": "8.",
+         "text": "**Serve** at once on warm plates. Photograph it as it spreads on the plate."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "The pilaf, from memory: cook it, then photograph a spoonful spread on a plate."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**The pilaf element of the `TS-STA` level 3 row:** a pilaf with separate grains, without a recipe."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**The risotto:** the flow of a level 2 risotto from a recipe."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "Write the textures against the targets. The pasta element follows in `STA-1.M3.X1`; the mash was made in `VEG-1.M5`. AI review checks grain separation and the flow: *competent* is separate, glistening grains and a risotto that flows; *not yet* is a gluey pilaf, or a stiff mound of risotto."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 2.5 h over two days."
+      }
+     ]
+    },
+    {
+     "id": "STA-1.M2.X2",
+     "title": "The absorption method three times",
+     "description": "The absorption method three times (two rice types), photographed.",
+     "competencies": [
+      {
+       "id": "IN-STA",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** a reliable absorption method for two rice types in your own pan, from given starting ratios, correcting one variable each time."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** 600 g of rice over three sessions: 400 g of basmati and 200 g of jasmine; salt; the heavy saucepan with a tight lid; a sieve; the scale; a timer; a phone; the journal."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Recipe:** the absorption method of `STA-1.M2.L2`, three times."
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Batch 1, basmati:** 200 g of rice, rinsed; 300 g of water (1 : 1.5); 3 g of salt. Bring to the boil, cover, lowest heat for 12 minutes, rest for 10."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Batch 2, jasmine:** 200 g of rice, rinsed; 260 g of water (1 : 1.3); 3 g of salt. The same timing."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "**Batch 3, basmati:** as batch 1, with one correction from it:"
+        },
+        {
+         "level": 1,
+         "marker": "",
+         "text": "wet or soft: 20 g less water;"
+        },
+        {
+         "level": 1,
+         "marker": "",
+         "text": "dry or a little hard: 20 g more water, or 2 minutes longer;"
+        },
+        {
+         "level": 1,
+         "marker": "",
+         "text": "a crust on the base: a lower heat, or a heavier pan."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "**After each batch,** photograph a spoonful on a plate and the base of the pan, and note the texture and the correction."
+        },
+        {
+         "level": 0,
+         "marker": "5.",
+         "text": "**Write the final ratio and time** for each type in the journal, with the pan you used."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "Each batch is a side dish, or rice for a fried rice the next day under the starch routine."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:** three photographed batches, the final two to the stated texture, with this module's quiz on types and ratios at 80 %: the rice part of `IN-STA` level 2."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 3 × 45 min (the sessions of `STA-1.M2.L2`)."
+      }
+     ]
+    }
+   ],
+   "items": [
+    {
+     "id": "STA-1.M2.Q1",
+     "type": "CALCULATION",
+     "lessonId": "STA-1.M2.L1",
+     "safety": false,
+     "question": "Your basmati ratio is 1 : 1.5 by weight. How much water for 250 g of rice?",
+     "options": [],
+     "answer": "375 g",
+     "why": "250 × 1.5."
+    },
+    {
+     "id": "STA-1.M2.Q2",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "STA-1.M2.L1",
+     "safety": false,
+     "question": "Which rice gives slightly sticky, fragrant grains for a side of steamed rice?",
+     "options": [
+      {
+       "key": "A",
+       "text": "arborio"
+      },
+      {
+       "key": "B",
+       "text": "jasmine"
+      },
+      {
+       "key": "C",
+       "text": "pudding rice"
+      },
+      {
+       "key": "D",
+       "text": "wild rice"
+      }
+     ],
+     "answer": "B",
+     "why": "Jasmine is long grain but softer and stickier than basmati."
+    },
+    {
+     "id": "STA-1.M2.Q3",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "STA-1.M2.L1",
+     "safety": false,
+     "question": "Why does brown rice need more water and time?",
+     "options": [
+      {
+       "key": "A",
+       "text": "it is older"
+      },
+      {
+       "key": "B",
+       "text": "the bran layer slows water getting in"
+      },
+      {
+       "key": "C",
+       "text": "it is bigger"
+      },
+      {
+       "key": "D",
+       "text": "it doesn't"
+      }
+     ],
+     "answer": "B",
+     "why": "The bran is a barrier."
+    },
+    {
+     "id": "STA-1.M2.Q4",
+     "type": "SCENARIO",
+     "lessonId": "STA-1.M2.L2",
+     "safety": false,
+     "question": "Your absorption rice is cooked but wet. What do you do?",
+     "options": [],
+     "answer": "Uncover it over a very low heat for a few minutes, or rest it off the heat with a clean towel under the lid.",
+     "why": "Let the excess water evaporate without stirring."
+    },
+    {
+     "id": "STA-1.M2.Q5",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "STA-1.M2.L2",
+     "safety": false,
+     "question": "Why rest absorption rice covered off the heat?",
+     "options": [
+      {
+       "key": "A",
+       "text": "to cool it for safety"
+      },
+      {
+       "key": "B",
+       "text": "so the moisture evens out and the grains finish cooking"
+      },
+      {
+       "key": "C",
+       "text": "to make it sticky"
+      },
+      {
+       "key": "D",
+       "text": "to save energy only"
+      }
+     ],
+     "answer": "B",
+     "why": "The top grains finish in the steam."
+    },
+    {
+     "id": "STA-1.M2.Q6",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "STA-1.M2.L4",
+     "safety": false,
+     "question": "Why is a risotto stirred?",
+     "options": [
+      {
+       "key": "A",
+       "text": "to stop it burning only"
+      },
+      {
+       "key": "B",
+       "text": "friction rubs starch from the grains into the liquid, making it creamy"
+      },
+      {
+       "key": "C",
+       "text": "to cool it"
+      },
+      {
+       "key": "D",
+       "text": "to break the grains"
+      }
+     ],
+     "answer": "B",
+     "why": "That starch is the sauce."
+    },
+    {
+     "id": "STA-1.M2.Q7",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "STA-1.M2.L4",
+     "safety": false,
+     "question": "Why is the stock for risotto kept hot?",
+     "options": [
+      {
+       "key": "A",
+       "text": "for safety"
+      },
+      {
+       "key": "B",
+       "text": "cold stock stops the simmer and the rice cooks unevenly"
+      },
+      {
+       "key": "C",
+       "text": "it tastes better"
+      },
+      {
+       "key": "D",
+       "text": "it doesn't matter"
+      }
+     ],
+     "answer": "B",
+     "why": "Each ladle should keep the pot simmering."
+    },
+    {
+     "id": "STA-1.M2.Q8",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "STA-1.M2.L4",
+     "safety": false,
+     "question": "What is the *mantecatura*?",
+     "options": [
+      {
+       "key": "A",
+       "text": "toasting the rice"
+      },
+      {
+       "key": "B",
+       "text": "beating in cold butter and cheese off the heat, for a creamy, glossy finish"
+      },
+      {
+       "key": "C",
+       "text": "adding wine"
+      },
+      {
+       "key": "D",
+       "text": "resting the risotto"
+      }
+     ],
+     "answer": "B",
+     "why": "It makes the risotto flow."
+    }
+   ]
+  },
+  {
+   "id": "STA-1.M3",
+   "title": "Pasta",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** the 8 items of `STA-1.M3` in the course file. Pass mark 80 %."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "STA-1.M3.L1",
+     "title": "Cooking dried pasta",
+     "prerequisites": [
+      "STA-1.M1.L1",
+      "TST-1.M2.L3"
+     ],
+     "competencies": [
+      {
+       "id": "TS-STA",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** cooking pasta looks like the simplest job in the kitchen, but its faults are everywhere: bland pasta, clumped spaghetti, soft penne cooked to the packet time. Getting it right takes a big pot, the right salt and a habit of tasting."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** 250 g of dried pasta (spaghetti or penne); salt; the stockpot or a large pot; a wooden spoon or tongs; a small knife; a slotted spoon; a timer; a plate; a phone."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Water and salt.*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**Enough water** for the pasta to move freely: about 1 litre per 100 g, and at least 3 litres for 250–500 g."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**Salted to taste,** starting around 10 g per litre (`TST-1.M2.L3`). The pasta is seasoned only from its water, so unsalted water gives bland pasta that no sauce can fix."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Stirring.* In the first two minutes the surface of the pasta is sticky with starch, and pieces that touch glue together. Stirring then prevents clumping. Oil in the water does not: it just floats on top."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Al dente.* Pasta is *al dente* when it is cooked through with a slight bite. Cut a piece across: a thin, pale dot or line in the centre shows that it is just *al dente*, and it disappears about a minute later. The packet time is only a guide, since pasta, pot and stove all differ. Start tasting a few minutes before it."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Myths:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**Oil in the water** only floats on top."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**Rinsing** washes off the surface starch that helps the sauce cling, so pasta is rinsed only for some cold salads."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**Throwing it at the wall** tells you nothing about the centre: taste it."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Keep some water.* Before draining, scoop out a mugful of the cooking water: it binds the sauce (`STA-1.M3.L2`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Taste the minutes (45 min).** Bring the water to the boil and salt it. Add the pasta and stir for the first two minutes. From 4 minutes before the packet time, lift out a piece every minute, taste it, cut it in half and lay it on the plate in a row. Photograph the row and mark the *al dente* point. Note how many minutes before or after the packet time it came."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** a thin white dot in the centre of the cut at *al dente*, disappearing a minute later."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Bland pasta",
+         "Unsalted water",
+         "About 10 g per litre, tasted"
+        ],
+        [
+         "Gummy, clumped pasta",
+         "A small pot, or not stirring at first",
+         "1 litre per 100 g; stir for the first two minutes"
+        ],
+        [
+         "Soft, swollen pasta",
+         "Trusting the packet time",
+         "Taste from 4 minutes before it"
+        ],
+        [
+         "A sauce that slides off",
+         "Rinsing",
+         "Don't rinse pasta for a hot dish"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** a large pot of boiling water is heavy: drain it into a colander in the sink, pouring away from you, or lift the pasta out with tongs or a spider (`SAF-1.M4`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the photo of the row, with the *al dente* minute."
+      }
+     ]
+    },
+    {
+     "id": "STA-1.M3.L2",
+     "title": "Saucing with pasta water",
+     "prerequisites": [
+      "STA-1.M3.L1"
+     ],
+     "competencies": [
+      {
+       "id": "TS-STA",
+       "level": 3
+      },
+      {
+       "id": "SC-EMUL",
+       "level": 1
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** the difference between pasta in Italy and pasta at most home tables is the last minute: the pasta finished in the sauce with some of its own cooking water, so the sauce clings to every piece and shines. This is your first emulsion."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** the inputs of `STA-1.M3.X1`; the sauté pan; tongs; a mug; warm plates."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Finishing the pasta in the sauce.* Drain the pasta a minute before *al dente* and cook it for that last minute in the pan of sauce, tossing. It absorbs flavour from the sauce, and the sauce coats it instead of sitting on top."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Pasta water.*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "The starchy cooking water binds fat and water into a glossy emulsion that clings to the pasta."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "It is the first emulsion of the program; the theory of emulsions (`SC-EMUL`) comes in `SAU-2`."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "Keep a mugful before draining; you will often use half."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Adjusting the sauce:*"
+      },
+      {
+       "type": "table",
+       "header": [
+        "The sauce is",
+        "Do"
+       ],
+       "rows": [
+        [
+         "Too thick or dry",
+         "A splash of pasta water, and toss"
+        ],
+        [
+         "Too thin or watery",
+         "Keep tossing over the heat, so the water reduces"
+        ],
+        [
+         "Oily, with a pool",
+         "A splash of pasta water and vigorous tossing over moderate heat"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "Add fat (oil, butter, cheese) off the fiercest heat: a fierce boil splits the emulsion."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Aglio e olio.* Garlic, sliced thin, warmed gently in plenty of olive oil until pale golden, with a pinch of chilli. The pasta goes in with a splash of pasta water, and the pan is tossed until the oil and water turn into a glossy coating. Chopped parsley at the end."
+      },
+      {
+       "type": "paragraph",
+       "text": "*A quick tomato sauce.* Onion or garlic in oil or butter, then tomatoes (tinned, or fresh Dutch tomatoes in summer), simmered until thickened. The pasta finishes in it with pasta water."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "***Aglio e olio* (60 min).** Cook the pasta and finish it in the garlic oil with pasta water until glossy."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**A tomato pasta (60 min).** Make a quick tomato sauce and finish the pasta in it with pasta water."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "Photograph each lifted on a fork, and the plate after eating."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** a sauce that clings and shines, with no oily pool or watery puddle under the pasta."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "A dry pasta you can't loosen",
+         "Draining all the water away",
+         "A mugful kept before draining"
+        ],
+        [
+         "Plain pasta under a heap of sauce",
+         "Sauce poured on top of plain pasta",
+         "The last minute in the pan, tossed"
+        ],
+        [
+         "Oil separating in a pool",
+         "No starch or movement",
+         "Pasta water, and toss hard"
+        ],
+        [
+         "Bitter garlic",
+         "Garlic browned too far",
+         "Low heat; pale golden only"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** pasta water and oil spit when they meet; add the water in a splash, not a pour, and keep your face back (`SAF-1.M4`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the photos and the adjustments you made (in `STA-1.M3.X1`)."
+      }
+     ]
+    },
+    {
+     "id": "STA-1.M3.L3",
+     "title": "Shapes and sauces",
+     "prerequisites": [
+      "STA-1.M3.L1"
+     ],
+     "competencies": [
+      {
+       "id": "IN-STA",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** the hundreds of pasta shapes are not decoration. Each catches and holds a sauce in its own way, and the traditional pairings work because the sauce meets the surface well. Choose the shape for the sauce, and the same sauce eats better."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** this lesson; the pasta in your cupboard, or the shelf at the shop; the journal."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*The traditional pairings, and why they work:*"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Shape",
+        "Examples",
+        "Sauce",
+        "Why"
+       ],
+       "rows": [
+        [
+         "Long, thin",
+         "Spaghetti, linguine",
+         "Smooth, oil-based or seafood sauces",
+         "Strands coat evenly; nothing to hold chunks"
+        ],
+        [
+         "Ribbons",
+         "Tagliatelle, pappardelle",
+         "Butter and meat sauces",
+         "A wide surface carries a rich sauce"
+        ],
+        [
+         "Tubes and ridged shapes",
+         "Penne, rigatoni",
+         "Chunky sauces and ragù",
+         "They trap the pieces inside and in the ridges"
+        ],
+        [
+         "Shells and twists",
+         "Conchiglie, fusilli",
+         "Pieces and cream",
+         "The cups and spirals catch them"
+        ],
+        [
+         "Small shapes",
+         "Orzo, ditalini, alphabet",
+         "Soups",
+         "They fit on a spoon"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Bronze-die pasta.* Pasta pressed through bronze dies has a rough, matt surface that holds sauce better than the shiny surface of pasta pressed through plastic-coated dies. The packet usually says *trafilata al bronzo*."
+      },
+      {
+       "type": "paragraph",
+       "text": "*The pairings are a guide.* A shape outside its tradition can work, but ask how the sauce will meet its surface: a delicate oil sauce slides off a thick tube, and chunks of ragù fall off thin spaghetti."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Dutch seasonal sauces.* The sauce follows the season (`VEG-1.M2`): roasted squash or a leek and cream sauce with shells in winter; courgette or tomato with spaghetti in summer; kale with garlic and chilli on orecchiette or penne."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:** theory only (1 h): match six shapes from your cupboard or the shop with a sauce each, and write why the pairing works. Then plan two dinners for next week from the pairings, with the seasonal vegetables of the month."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** a pairing explained by how the sauce meets the surface."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "A sauce that slides off",
+         "Delicate oil sauces on thick tubes",
+         "Long, thin pasta for oil sauces"
+        ],
+        [
+         "Chunks left in the bowl",
+         "Chunky ragù on thin spaghetti",
+         "Tubes, ribbons or ridged shapes"
+        ],
+        [
+         "Slippery pasta",
+         "Smooth pasta",
+         "Bronze-die pasta, finished in the sauce"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** no special risks beyond the kitchen basics (`SAF-1`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the six pairings and the two dinner plans."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "STA-1.M3.X1",
+     "title": "Aglio e olio and a tomato pasta",
+     "description": "*Aglio e olio* and a tomato-based pasta, with the emulsion photographed.",
+     "competencies": [
+      {
+       "id": "TS-STA",
+       "level": 3
+      },
+      {
+       "id": "IN-STA",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** pasta *al dente* and sauced with an emulsion, from two frameworks, without a recipe. You choose the quantities."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** for 2 each time: 200 g of dried pasta; for the first, garlic, chilli, parsley and olive oil; for the second, tinned or fresh seasonal tomatoes, an onion or garlic, and butter or oil; salt; the stockpot; the sauté pan; tongs; a mug; a phone."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Framework:** two sauces, one structure."
+      },
+      {
+       "type": "table",
+       "header": [
+        "Part",
+        "What it is",
+        "Your decisions"
+       ],
+       "rows": [
+        [
+         "Water",
+         "About 1 litre per 100 g of pasta, salted around 10 g per litre",
+         "The salt, by taste"
+        ],
+        [
+         "Pasta",
+         "Stirred at first; tasted from 4 minutes before the packet time",
+         "The shape, for the sauce (`STA-1.M3.L3`)"
+        ],
+        [
+         "*Aglio e olio*",
+         "Olive oil and sliced garlic, warmed gently until pale golden; chilli; parsley at the end",
+         "How much garlic and chilli; a starting point is 4 tablespoons of oil for 200 g of pasta"
+        ],
+        [
+         "Tomato sauce",
+         "Fat and aromatics, then tomatoes, simmered until thickened",
+         "Butter or oil; how long to cook it down"
+        ],
+        [
+         "Pasta water",
+         "A mugful kept before draining",
+         "How much, and when"
+        ],
+        [
+         "Finish",
+         "The pasta a minute before *al dente* into the sauce; tossed with pasta water until glossy",
+         "Thicker or looser"
+        ]
+       ]
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "Cook the pasta, tasting for *al dente*."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "Finish it in the sauce with pasta water."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "Photograph the pasta lifted with a fork, and the plate after eating to show what is left."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "`TS-STA` level 3: the pasta *al dente* and sauced, without a recipe, the second element of the row."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "`IN-STA` level 2: the pasta part, cooked to the stated texture."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "AI review checks the coating and the gloss: *competent* is a glossy coating with no pool; *not yet* is oil pooling, or dry pasta under a sauce."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 2 × 45 min (the sessions of `STA-1.M3.L2`)."
+      }
+     ]
+    }
+   ],
+   "items": [
+    {
+     "id": "STA-1.M3.Q1",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "STA-1.M3.L1",
+     "safety": false,
+     "question": "Does oil in the cooking water stop pasta sticking?",
+     "options": [
+      {
+       "key": "A",
+       "text": "yes"
+      },
+      {
+       "key": "B",
+       "text": "no: stirring in the first minutes and enough water do"
+      },
+      {
+       "key": "C",
+       "text": "only for spaghetti"
+      },
+      {
+       "key": "D",
+       "text": "only fresh pasta"
+      }
+     ],
+     "answer": "B",
+     "why": "The oil floats on the water."
+    },
+    {
+     "id": "STA-1.M3.Q2",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "STA-1.M3.L1",
+     "safety": false,
+     "question": "Why not rinse cooked pasta for a hot dish?",
+     "options": [
+      {
+       "key": "A",
+       "text": "it cools"
+      },
+      {
+       "key": "B",
+       "text": "it washes off the surface starch that helps the sauce cling"
+      },
+      {
+       "key": "C",
+       "text": "it removes salt only"
+      },
+      {
+       "key": "D",
+       "text": "it is unhygienic"
+      }
+     ],
+     "answer": "B",
+     "why": "Rinse only for some cold salads."
+    },
+    {
+     "id": "STA-1.M3.Q3",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "STA-1.M3.L1",
+     "safety": false,
+     "question": "How do you tell pasta is *al dente*?",
+     "options": [
+      {
+       "key": "A",
+       "text": "it sticks to the wall"
+      },
+      {
+       "key": "B",
+       "text": "bite it, or cut it: a thin pale core remains"
+      },
+      {
+       "key": "C",
+       "text": "the packet time"
+      },
+      {
+       "key": "D",
+       "text": "it floats"
+      }
+     ],
+     "answer": "B",
+     "why": "Taste from a few minutes before the packet time."
+    },
+    {
+     "id": "STA-1.M3.Q4",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "STA-1.M3.L1",
+     "safety": false,
+     "question": "Why is pasta water salted?",
+     "options": [
+      {
+       "key": "A",
+       "text": "it boils faster"
+      },
+      {
+       "key": "B",
+       "text": "the pasta is seasoned only from the water"
+      },
+      {
+       "key": "C",
+       "text": "it stops sticking"
+      },
+      {
+       "key": "D",
+       "text": "to raise the temperature"
+      }
+     ],
+     "answer": "B",
+     "why": "Start around 10 g per litre and taste."
+    },
+    {
+     "id": "STA-1.M3.Q5",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "STA-1.M3.L3",
+     "safety": false,
+     "question": "Which sauce suits rigatoni best?",
+     "options": [
+      {
+       "key": "A",
+       "text": "a light olive oil and garlic sauce"
+      },
+      {
+       "key": "B",
+       "text": "a chunky ragù"
+      },
+      {
+       "key": "C",
+       "text": "a clear broth"
+      },
+      {
+       "key": "D",
+       "text": "a thin butter sauce"
+      }
+     ],
+     "answer": "B",
+     "why": "Tubes and ridges trap chunks."
+    },
+    {
+     "id": "STA-1.M3.Q6",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "STA-1.M3.L3",
+     "safety": false,
+     "question": "Why does bronze-die pasta hold sauce better?",
+     "options": [
+      {
+       "key": "A",
+       "text": "it is thicker"
+      },
+      {
+       "key": "B",
+       "text": "its surface is rougher"
+      },
+      {
+       "key": "C",
+       "text": "it is saltier"
+      },
+      {
+       "key": "D",
+       "text": "it is fresh"
+      }
+     ],
+     "answer": "B",
+     "why": "The rough surface gives the sauce something to cling to."
+    },
+    {
+     "id": "STA-1.M3.Q7",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "STA-1.M3.L2",
+     "safety": false,
+     "question": "What does starchy pasta water do in the sauce?",
+     "options": [
+      {
+       "key": "A",
+       "text": "dilutes it only"
+      },
+      {
+       "key": "B",
+       "text": "binds fat and water into a glossy emulsion that clings"
+      },
+      {
+       "key": "C",
+       "text": "thickens it like flour"
+      },
+      {
+       "key": "D",
+       "text": "nothing"
+      }
+     ],
+     "answer": "B",
+     "why": "The starch stabilises the emulsion."
+    },
+    {
+     "id": "STA-1.M3.Q8",
+     "type": "SCENARIO",
+     "lessonId": "STA-1.M3.L2",
+     "safety": false,
+     "question": "Your *aglio e olio* has a pool of oil under the pasta. How do you fix it?",
+     "options": [],
+     "answer": "Add a splash of pasta water and toss vigorously over moderate heat until it turns glossy and clings.",
+     "why": "Starch and movement emulsify the oil."
+    }
+   ]
+  },
+  {
+   "id": "STA-1.M4",
+   "title": "Grains",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** the 8 items of `STA-1.M4` in the course file, 4 of them safety items. Pass mark 80 %, with every safety item correct."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "STA-1.M4.L1",
+     "title": "Couscous and bulgur",
+     "prerequisites": [
+      "STA-1.M1.L1"
+     ],
+     "competencies": [
+      {
+       "id": "TS-STA",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** couscous and bulgur are the fastest grains in the kitchen: ready in ten minutes without a pan on the heat. They are also the easiest to make bland or pasty, because whatever you pour over them is all the flavour they get."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** 200 g of couscous; 200 g of fine bulgur; about 250 ml of stock and 250 ml of water; a lemon; olive oil or butter; salt; two heatproof bowls; two plates or lids to cover them; a fork; a measuring jug; the kettle."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Steeping.* Couscous and fine bulgur are already cooked or parboiled, so they only need to absorb hot liquid:"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Pour** boiling, seasoned liquid over them, at about equal volume: measure the grain in a jug, then the same volume of liquid."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Cover** for 5–10 minutes."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "**Fluff** with a fork, adding a little oil or butter, to separate the grains."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Season the liquid,* not the grain afterwards. Stock, salt, spices or lemon juice in the liquid reach every grain; salt stirred in afterwards stays on the surface. Taste the liquid: it should be pleasantly seasoned, a little more than you would want to drink."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Fork, not spoon.* A spoon presses the grains together into a paste; a fork lifts and separates them."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Coarse bulgur* is larger and may need a short simmer, about 10 minutes, with the liquid, then a rest. Check the packet."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Using them.* Couscous with roasted roots and herbs in winter; bulgur with tomato, cucumber, parsley and lemon in summer (a tabbouleh). Both make a good base for a grain salad (`STA-1.M4.X1`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Steep and fluff (45 min).** Steep the couscous in hot stock and the bulgur in boiling water with lemon juice and salt. Steep a spoonful of couscous in plain, unsalted water as well. Fluff each, and taste the three side by side: note the difference the seasoned liquid makes."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** separate, fluffy grains; seasoned throughout."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Bland couscous",
+         "Plain water",
+         "Stock, or salted and spiced water"
+        ],
+        [
+         "A paste",
+         "Too much liquid",
+         "Equal volume; less next time"
+        ],
+        [
+         "Clumps",
+         "Stirring with a spoon instead of fluffing with a fork",
+         "Fork and a little fat"
+        ],
+        [
+         "Hard bulgur",
+         "Coarse bulgur only steeped",
+         "A short simmer for coarse bulgur"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** pour boiling liquid from the kettle slowly, with the bowl standing on the counter (`SAF-1.M4`). Leftovers follow the starch routine."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the tasting notes from the three bowls."
+      }
+     ]
+    },
+    {
+     "id": "STA-1.M4.L2",
+     "title": "Whole grains",
+     "prerequisites": [
+      "STA-1.M1.L1"
+     ],
+     "competencies": [
+      {
+       "id": "IN-STA",
+       "level": 2
+      },
+      {
+       "id": "TS-STA",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** whole grains add chew, nuttiness and body to soups, salads and side dishes, and some of them, like pearl barley and spelt, are grown in the Netherlands. They are forgiving to cook, once you know the two methods and stop timing them instead of tasting."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** 150 g of pearl barley (*parelgort*); 150 g of quinoa; salt; a large pot and a saucepan with a lid; a fine sieve; the scale; a spoon for tasting."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Two methods:*"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Method",
+        "How",
+        "Best for"
+       ],
+       "rows": [
+        [
+         "Boil like pasta",
+         "In plenty of salted water, then drained",
+         "Pearl barley, farro, spelt: forgiving, and the texture is easy to control"
+        ],
+        [
+         "Absorption",
+         "A measured weight of liquid, covered, then rested",
+         "Quinoa, and a richer pilaf-style grain cooked in stock"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Quinoa* is rinsed in a fine sieve before cooking, to remove its bitter natural coating, which can taste soapy. A starting ratio is 1 : 1.7 by weight with water or stock, simmered covered for about 15 minutes, then rested for 5."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Pearl barley* has had its outer layers polished off, so it cooks in 30–40 minutes. Boiled like pasta, it stays separate and plump. Spelt and farro, as whole grains, take longer; check the packet, and soak them overnight to shorten the time."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Doneness* is tasted, not timed: tender with a slight chew."
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**Barley:** plump; some grains starting to split."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**Quinoa:** fluffy, with the little white \"tail\" (the germ) curling out of each seed."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Dutch-grown options:* pearl barley (*parelgort*) and spelt (*spelt*) both grow here, and are part of old Dutch dishes like *gortepap*. They make a local grain salad or a barley \"risotto\"."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Barley and quinoa (60 min).** Boil the pearl barley like pasta in salted water, tasting it every 5 minutes from 25 minutes. Meanwhile, rinse the quinoa and cook it by absorption. Taste both at the end and note the doneness signs."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** barley plump, tender and chewy; quinoa fluffy with its little tails visible."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Bitter, soapy quinoa",
+         "Unrinsed quinoa",
+         "Rinse it well in a fine sieve"
+        ],
+        [
+         "Hard, chalky barley",
+         "Barley undercooked and hard",
+         "Keep tasting; it may need 40 minutes"
+        ],
+        [
+         "Bland grains",
+         "Grains boiled in unsalted water",
+         "Salt the water as for pasta"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** drain the large pot into a colander in the sink, pouring away from you (`SAF-1.M4`). Cooked grains not eaten at once follow the starch routine."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the times and the doneness signs, in the journal."
+      }
+     ]
+    },
+    {
+     "id": "STA-1.M4.L3",
+     "title": "Cooling and storing starches",
+     "prerequisites": [
+      "SAF-1.M3.L3"
+     ],
+     "competencies": [
+      {
+       "id": "SA-TEMP",
+       "level": 3
+      },
+      {
+       "id": "IN-STO",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** cooked rice and grains are among the few foods where the danger comes from the cooling, not from undercooking. A pot of rice left on the hob overnight looks and smells fine, and reheating it does not make it safe. The routine in this lesson makes batch cooking safe."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** this lesson; a sheet of paper and a pen, or a printed card for the fridge door; tape; the probe thermometer; a sheet pan; shallow containers; masking tape for labels."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Bacillus cereus* (`SAF-1.M3.L3`):"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**its spores survive cooking,** so they are in cooked rice and grains;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**they grow** while the cooked starch cools slowly, in the pot, on the hob or in a deep tub;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**they form a toxin** that reheating does not destroy."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "So the only defence is to prevent growth by cooling fast."
+      },
+      {
+       "type": "paragraph",
+       "text": "*The routine* (assessment §9):"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Step",
+        "How"
+       ],
+       "rows": [
+        [
+         "Cool fast",
+         "Spread the cooked starch on a tray in a thin layer, not in the pot"
+        ],
+        [
+         "Into the fridge within 2 hours",
+         "Covered, labelled and dated; the fridge at 4 °C or colder"
+        ],
+        [
+         "Eat within 2 days",
+         "Or freeze it"
+        ],
+        [
+         "Reheat once",
+         "Until steaming hot (74 °C), checked with the probe in the centre; never reheat twice"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Batch cooking.* Cooking a pot of grains for the week's lunches is safe with this routine. Portion it into shallow containers once it is cool, so you take out one portion at a time and reheat only that."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Hot holding.* Rice kept warm for a long time in a rice cooker or an oven is a risk too. Serve it, then cool what is left."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:** theory only (1 h): write the cooling and storing routine onto a card for the fridge door, with the four steps, and tape it up. Then plan the grain salad of `STA-1.M4.X1` with the routine: when the grain will be cooked, when it will be in the fridge, and which day the last portion is eaten."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** rice on a tray, not in the pot; a dated label; a reheating reading at 74 °C or above."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Rice left in the cooker overnight",
+         "Rice cooling overnight in the cooker",
+         "A tray, then the fridge within 2 hours"
+        ],
+        [
+         "A tub still warm in the middle hours later",
+         "Deep tubs of warm grains in the fridge",
+         "A thin layer first, shallow tubs after"
+        ],
+        [
+         "Rice warmed for lunch, then again for dinner",
+         "Reheating twice",
+         "Reheat one portion, once"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** this lesson is the safety rule: cool fast, refrigerate within 2 hours, eat within 2 days, reheat once until steaming hot (assessment §9)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the photo of the card on the fridge door, and the salad plan."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "STA-1.M4.X1",
+     "title": "A grain salad from a framework",
+     "description": "A grain salad from a framework (grain, vegetables, dressing, herbs).",
+     "competencies": [
+      {
+       "id": "TS-STA",
+       "level": 2
+      },
+      {
+       "id": "IN-STA",
+       "level": 2
+      },
+      {
+       "id": "SA-TEMP",
+       "level": 3
+      },
+      {
+       "id": "IN-STO",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** a grain salad built from a framework, with the grain cooled and stored by the routine. You choose the grain and the seasonal vegetables."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** for 4: 250 g of barley, spelt or bulgur; seasonal vegetables (roasted roots in winter, beans and tomato in summer); herbs; oil and vinegar or lemon for a vinaigrette; seeds; salt; a pot; a sheet pan; the probe thermometer; shallow containers; masking tape and a pen; the journal; a phone."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Framework:** five parts, built in this order."
+      },
+      {
+       "type": "table",
+       "header": [
+        "Part",
+        "What it is",
+        "Your decisions"
+       ],
+       "rows": [
+        [
+         "Grain",
+         "Cooked in salted water or stock, to tender with a slight chew (`STA-1.M4.L1`, `STA-1.M4.L2`)",
+         "Which grain; boiled or steeped"
+        ],
+        [
+         "Vegetables",
+         "Raw and cooked, by season: roasted roots or squash in winter; beans, tomato, cucumber in summer",
+         "Which, and how cooked (`VEG-1.M4`)"
+        ],
+        [
+         "Dressing",
+         "A vinaigrette, about 3 parts oil to 1 part vinegar or lemon, salted; mixed in once the grain has cooled",
+         "The acid and the balance, by taste (`TST-1.M3`)"
+        ],
+        [
+         "Herbs",
+         "A generous handful: parsley, dill, chives",
+         "Which"
+        ],
+        [
+         "Crunch",
+         "Toasted seeds (pumpkin, sunflower)",
+         "Which; toasted dry in a pan"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Procedure:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "Cook the grain."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "Spread it on a tray to cool. Log the time it came off the heat, a probe reading or two while it cools, and the time it went into the fridge."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "Assemble the salad, and taste it for seasoning and acid."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "Portion the rest into shallow containers, label and date them, and refrigerate."
+        },
+        {
+         "level": 0,
+         "marker": "5.",
+         "text": "Photograph the salad."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "`TS-STA` and `IN-STA` level 2: the grain cooked to the stated texture."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "The cooling part of `SA-TEMP` level 3: the grain in the fridge within 2 hours, logged. The probing part was shown in `SAF-1.M3.X2` and `HEA-1.M4.X1`."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "The storage part of `IN-STO` level 3: labelled and dated."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 1 h; lunches for two days."
+      }
+     ]
+    }
+   ],
+   "items": [
+    {
+     "id": "STA-1.M4.Q1",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "STA-1.M4.L1",
+     "safety": false,
+     "question": "How is couscous cooked?",
+     "options": [
+      {
+       "key": "A",
+       "text": "boiled for 15 minutes"
+      },
+      {
+       "key": "B",
+       "text": "steeped in boiling, seasoned liquid, covered, then fluffed with a fork"
+      },
+      {
+       "key": "C",
+       "text": "fried"
+      },
+      {
+       "key": "D",
+       "text": "baked"
+      }
+     ],
+     "answer": "B",
+     "why": "It is pre-cooked; it only absorbs liquid."
+    },
+    {
+     "id": "STA-1.M4.Q2",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "STA-1.M4.L1",
+     "safety": false,
+     "question": "Why season the liquid for couscous rather than the couscous afterwards?",
+     "options": [
+      {
+       "key": "A",
+       "text": "it is faster"
+      },
+      {
+       "key": "B",
+       "text": "a steeped grain can't be seasoned evenly afterwards"
+      },
+      {
+       "key": "C",
+       "text": "salt stops it absorbing"
+      },
+      {
+       "key": "D",
+       "text": "it doesn't matter"
+      }
+     ],
+     "answer": "B",
+     "why": "The liquid carries the seasoning into every grain."
+    },
+    {
+     "id": "STA-1.M4.Q3",
+     "type": "SCENARIO",
+     "lessonId": "STA-1.M4.L2",
+     "safety": false,
+     "question": "How do you check that pearl barley is done?",
+     "options": [],
+     "answer": "Taste it: tender with a slight chew, some grains starting to split.",
+     "why": "Doneness is tasted, not timed."
+    },
+    {
+     "id": "STA-1.M4.Q4",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "STA-1.M4.L2",
+     "safety": false,
+     "question": "Why is quinoa rinsed?",
+     "options": [
+      {
+       "key": "A",
+       "text": "to remove dust only"
+      },
+      {
+       "key": "B",
+       "text": "to remove its bitter natural coating"
+      },
+      {
+       "key": "C",
+       "text": "to soften it"
+      },
+      {
+       "key": "D",
+       "text": "for colour"
+      }
+     ],
+     "answer": "B",
+     "why": "Unrinsed quinoa can taste soapy and bitter."
+    },
+    {
+     "id": "STA-1.M4.Q5",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "STA-1.M4.L3",
+     "safety": true,
+     "question": "How do you cool a large batch of cooked rice fast?",
+     "options": [
+      {
+       "key": "A",
+       "text": "leave it in the pot"
+      },
+      {
+       "key": "B",
+       "text": "spread it thin on a tray, then into the fridge within 2 hours"
+      },
+      {
+       "key": "C",
+       "text": "put the hot pot straight into the fridge"
+      },
+      {
+       "key": "D",
+       "text": "leave it overnight"
+      }
+     ],
+     "answer": "B",
+     "why": "A thin layer cools fast; slow cooling lets *B. cereus* grow."
+    },
+    {
+     "id": "STA-1.M4.Q6",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "STA-1.M4.L3",
+     "safety": true,
+     "question": "How do you reheat cooked rice?",
+     "options": [
+      {
+       "key": "A",
+       "text": "until warm"
+      },
+      {
+       "key": "B",
+       "text": "until steaming hot (74 °C), once only"
+      },
+      {
+       "key": "C",
+       "text": "twice to be safe"
+      },
+      {
+       "key": "D",
+       "text": "cold is always fine"
+      }
+     ],
+     "answer": "B",
+     "why": "Steaming hot, and only once."
+    },
+    {
+     "id": "STA-1.M4.Q7",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "STA-1.M4.L3",
+     "safety": true,
+     "question": "How long may cooked grains be kept in the fridge?",
+     "options": [
+      {
+       "key": "A",
+       "text": "a week"
+      },
+      {
+       "key": "B",
+       "text": "at most 2 days, or frozen"
+      },
+      {
+       "key": "C",
+       "text": "until they smell"
+      },
+      {
+       "key": "D",
+       "text": "4 days"
+      }
+     ],
+     "answer": "B",
+     "why": "The Voedingscentrum rule for leftovers."
+    },
+    {
+     "id": "STA-1.M4.Q8",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "STA-1.M4.L3",
+     "safety": true,
+     "question": "Why is reheating not enough to make warm-held rice safe?",
+     "options": [
+      {
+       "key": "A",
+       "text": "rice can't be reheated"
+      },
+      {
+       "key": "B",
+       "text": "*B. cereus* forms a toxin that heat does not destroy"
+      },
+      {
+       "key": "C",
+       "text": "the rice is too dry"
+      },
+      {
+       "key": "D",
+       "text": "it is safe"
+      }
+     ],
+     "answer": "B",
+     "why": "Prevent growth by cooling fast."
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,3981 @@
+{
+ "schemaVersion": 1,
+ "id": "FLV-3",
+ "introduction": [
+  {
+   "type": "paragraph",
+   "text": "**Before you start.** `TST-1` taught you to taste and season, and S2 put that to work in sauces, stocks and proteins. This course turns seasoning into design. A dish is built in layers:"
+  },
+  {
+   "type": "list",
+   "items": [
+    {
+     "level": 0,
+     "marker": "",
+     "text": "**a base** of aromatics, fat and browning;"
+    },
+    {
+     "level": 0,
+     "marker": "",
+     "text": "**a middle** of the main flavours and umami;"
+    },
+    {
+     "level": 0,
+     "marker": "",
+     "text": "**a top** of acid, fresh herbs and texture."
+    }
+   ]
+  },
+  {
+   "type": "paragraph",
+   "text": "You learn to plan those layers before you cook, and to diagnose a dish that has gone wrong in ways more complex than \"needs salt\". The course has three parts: the aromatics (herbs and spices), the balance (umami, acid, texture and pairing), and the palate (complex faults and the second calibration round, with the fault-diagnosis test of assessment §5.3)."
+  },
+  {
+   "type": "paragraph",
+   "text": "*Three habits run through every session:*"
+  },
+  {
+   "type": "list",
+   "items": [
+    {
+     "level": 0,
+     "marker": "",
+     "text": "**a flavour plan before cooking:** base, middle, top and texture, written in a few lines;"
+    },
+    {
+     "level": 0,
+     "marker": "",
+     "text": "**a tasting form after:** your own, compared with the household's cards;"
+    },
+    {
+     "level": 0,
+     "marker": "",
+     "text": "**one change at a time,** tasted on a neutral carrier (a slice of potato or bread), never from the spoon alone."
+    }
+   ]
+  },
+  {
+   "type": "paragraph",
+   "text": "Herbs are Dutch and seasonal, from a pot on the windowsill or the market. Spices are pantry goods, bought whole where possible. Plan four to five weeks. Most sessions are a dinner for the household with a tasting form. The calibration and fault tests need a household member to prepare and code samples for you."
+  },
+  {
+   "type": "paragraph",
+   "text": "**Have ready:** the scale; small saucepans and a skillet; a mortar and pestle; a blade grinder kept for spices only; small jars and dated labels; a stick blender; the coded cups of the calibration kit; a wire rack; the flavour-plan form and the tasting forms; the journal."
+  }
+ ],
+ "modules": [
+  {
+   "id": "FLV-3.M1",
+   "title": "Herbs",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** the 8 items of `FLV-3.M1` in the course file, 1 of them a safety item. Pass mark 80 %, with every safety item correct."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "FLV-3.M1.L1",
+     "title": "Herb families and timing",
+     "prerequisites": [
+      "STK-2.M1.L2"
+     ],
+     "competencies": [
+      {
+       "id": "IN-ARO",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** the same handful of parsley can make a dish taste fresh or of nothing, depending on when it goes in. Knowing which herbs need heat and which can't stand it is the first step from seasoning to design."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** five tender herbs and one woody herb, fresh; a dried herb for comparison; a pan sauce or a vinaigrette; a pot of beans or potatoes; the tasting form."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Two families, two timings:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**tender herbs** (parsley, chervil, dill, chives, tarragon, basil, mint, coriander): their aromas are fragile, so they go in at the end or raw. Their stems carry flavour too, and go into stocks and pastes;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**woody herbs** (thyme, rosemary, sage, bay, oregano, savory): their aromas survive heat and need time to come out, so they go in early, in fat or in a long cook. Bay leaves are taken out before serving."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Fresh against dried:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "woody herbs dry well; tender herbs mostly lose their character (dried dill and parsley taste of hay);"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "dried herbs are stronger by weight: use roughly a third of the fresh amount, added early;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "dried herbs fade within months, so buy small jars and smell them before use."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Families and partners.* The classic bundles: a *bouquet garni* (thyme, bay and parsley stalks, tied, for stocks and braises) and *fines herbes* (parsley, chervil, chives and tarragon, chopped, for eggs and fish). And herbs that meet Dutch seasonal produce: dill and potatoes, tarragon and chicken, sage and pumpkin, savory and beans."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Handling:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "wash and spin dry;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "keep tender herbs like flowers in a glass of water, or wrapped in damp paper in the fridge;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "cut with a sharp knife, so the leaves are sliced rather than bruised;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "chop close to serving."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Taste and time (60 min).** Make one pan sauce or vinaigrette and divide it into five; finish each with a different tender herb. Cook a pot of beans or potatoes with a woody herb added at the start, and another with the same herb added at the end. Taste side by side, and note on the form what each timing does."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** for each herb, you can say when it goes in and why; you can tell a fresh bunch from a tired one by the leaves and the smell."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "A grey, flavourless garnish",
+         "Parsley boiled for an hour",
+         "Tender herbs at the end; the stalks in the pot"
+        ],
+        [
+         "Hard, resinous needles",
+         "Rosemary scattered raw over a finished dish",
+         "Woody herbs early, in fat or a long cook"
+        ],
+        [
+         "A dish that tastes of hay",
+         "Dried tender herbs used like fresh",
+         "Fresh tender herbs, or a woody herb dried"
+        ],
+        [
+         "Black edges",
+         "Basil chopped an hour before serving",
+         "Chop just before serving"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** knife work as in `KNF-1`; herbs washed like any raw leaf."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the tasting form with the timing of each herb."
+      }
+     ]
+    },
+    {
+     "id": "FLV-3.M1.L2",
+     "title": "Herb pastes, oils and green sauces",
+     "prerequisites": [
+      "FLV-3.M1.L1"
+     ],
+     "competencies": [
+      {
+       "id": "IN-ARO",
+       "level": 4
+      },
+      {
+       "id": "FL-ARCH",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** a spoon of green sauce can finish a plain dish in a minute: roast vegetables, a piece of fish, a bowl of beans. Green sauces follow one ratio, and keeping them green is a matter of a few rules."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** two large bunches of one tender herb family (for example parsley with chives); oil; vinegar; salt; a savoury element (capers, anchovy, aged cheese or toasted seeds); a garlic clove; a bowl of ice water; the mortar or the stick blender; a strainer and a coffee filter for the oil; a bowl of soup to finish."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*The green-sauce ratio:* herbs, an oil, an acid, salt, and a savoury or rich element, varied by family:"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**a *pesto*-style paste:** pounded or blended herbs with oil, cheese or seeds;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**a *salsa verde*:** chopped by hand, with vinegar and capers;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**a *gremolata*:** dry, chopped parsley with garlic and zest;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**a chimichurri-style sauce:** chopped, and vinegar-forward."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Keeping them green:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "blanch tough or quick-oxidising herbs for a few seconds, then chill them at once in ice water;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "blend cold and briefly, because the heat of the blade dulls them;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "add the acid at the end, because acid turns chlorophyll olive-brown;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "cover the surface with oil."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Herb oils:* herbs blended with oil, warmed briefly and strained clear. A herb oil is herbs in oil, so it follows the garlic-in-oil row of assessment §9: kept in the fridge and used within 2 days (the leftovers row), never on the shelf."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Seasoning:* the salt and acid are balanced by tasting the sauce on a neutral carrier (a slice of potato or bread), the way it will be eaten, not from the spoon."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Two green sauces (60 min).** From the same herbs, make a pounded paste and a chopped vinegar sauce. Make half of the paste with blanched herbs and half with raw ones. Photograph all three after 2 hours, side by side."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**A herb oil (45 min).** Blend, warm briefly and strain the oil; photograph it in a glass. Use it on a soup that evening, and refrigerate the rest, labelled."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** bright green after 2 hours; a distinct herb flavour, not grassy or bitter; balanced on the carrier."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Dull, khaki paste",
+         "Blending for minutes until warm",
+         "Blend cold, in short bursts"
+        ],
+        [
+         "Brown sauce within the hour",
+         "Lemon juice added at the start",
+         "Acid at the end, just before serving"
+        ],
+        [
+         "A food-safety risk",
+         "Herb oil kept on the shelf",
+         "In the fridge, used within 2 days (§9)"
+        ],
+        [
+         "A one-note paste",
+         "A paste that tastes of raw garlic only",
+         "Less garlic, more herb and the savoury element"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** herb oil and herb pastes covered in oil are kept in the fridge and used within 2 days (the garlic-in-oil and leftovers rows of assessment §9); the blender blade is handled as a knife."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the three photos after 2 hours; the oil's label and the date."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "FLV-3.M1.X1",
+     "title": "Three green sauces from one ratio",
+     "description": "Three green sauces from one ratio, each paired with a different dish.",
+     "competencies": [
+      {
+       "id": "IN-ARO",
+       "level": 4
+      },
+      {
+       "id": "FL-ARCH",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** make three green sauces from different herb families by one ratio, each designed for a dish, and take the herb half of the blind aroma test. Each dish gets a written flavour plan before cooking. For example:"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "dill and mustard with potatoes;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "parsley and caper with fish;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "sage and a pumpkin-seed paste with roast pumpkin."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** three seasonal herb bunches; oil; vinegar; salt; a savoury element for each sauce; the three dishes as household meals; eight herbs, coded by a household member, for the blind test; the flavour-plan form; tasters' cards."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Framework:** the green-sauce ratio and the flavour plan."
+      },
+      {
+       "type": "table",
+       "header": [
+        "Part",
+        "What it is",
+        "Your decisions"
+       ],
+       "rows": [
+        [
+         "Herbs",
+         "The main family of each sauce; blanched if tough or quick to darken",
+         "Which three families"
+        ],
+        [
+         "Oil",
+         "Enough to loosen to a spoonable sauce",
+         "Which oil, how much"
+        ],
+        [
+         "Acid",
+         "Vinegar or citrus, added at the end",
+         "Which, how much"
+        ],
+        [
+         "Savoury element",
+         "Cheese, capers, anchovy, mustard or seeds",
+         "One per sauce"
+        ],
+        [
+         "Flavour plan",
+         "Base, middle and top of the dish, with the sauce as one layer",
+         "Written before cooking"
+        ],
+        [
+         "Storage",
+         "In the fridge, covered with oil, used within 2 days",
+         "—"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Procedure:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "Write the three flavour plans."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "Make the sauces by the ratio, adjusting each for its dish, tasted on a carrier."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "Serve each with its dish; the tasters fill in cards."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "Take the blind herb test: smell (and if needed taste) eight coded herbs and name them."
+        },
+        {
+         "level": 0,
+         "marker": "5.",
+         "text": "Compare the plans, your forms and the cards."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`FL-ARCH` level 3:** three dishes with a written flavour plan; the tasters find depth and balance."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`IN-ARO` level 4, in part:** the herb half of the blind identification, at least 6 of 8. The spice half and the blend with its written reason follow in `FLV-3.M2.X2` (12 of 16 together), and the `MS-S3` test completes the row."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "AI review reads the plans against the cards: *competent* is three plans written before cooking whose layers the tasters recognise; *not yet* is a plan written afterwards, or three sauces that taste the same."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 2.5 h over three meals."
+      }
+     ]
+    }
+   ],
+   "items": [
+    {
+     "id": "FLV-3.M1.Q1",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "FLV-3.M1.L1",
+     "safety": false,
+     "question": "Which herb goes in at the start of a long braise?",
+     "options": [
+      {
+       "key": "A",
+       "text": "chervil"
+      },
+      {
+       "key": "B",
+       "text": "thyme"
+      },
+      {
+       "key": "C",
+       "text": "basil"
+      },
+      {
+       "key": "D",
+       "text": "chives"
+      }
+     ],
+     "answer": "B",
+     "why": "Woody herbs need heat and time."
+    },
+    {
+     "id": "FLV-3.M1.Q2",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "FLV-3.M1.L1",
+     "safety": false,
+     "question": "When does tarragon go into a cream sauce?",
+     "options": [
+      {
+       "key": "A",
+       "text": "at the start"
+      },
+      {
+       "key": "B",
+       "text": "at the end"
+      },
+      {
+       "key": "C",
+       "text": "halfway"
+      },
+      {
+       "key": "D",
+       "text": "it doesn't matter"
+      }
+     ],
+     "answer": "B",
+     "why": "Tender herbs lose their aroma with long heat."
+    },
+    {
+     "id": "FLV-3.M1.Q3",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "FLV-3.M1.L1",
+     "safety": false,
+     "question": "How much dried thyme replaces a tablespoon of fresh?",
+     "options": [
+      {
+       "key": "A",
+       "text": "the same"
+      },
+      {
+       "key": "B",
+       "text": "about a third"
+      },
+      {
+       "key": "C",
+       "text": "twice as much"
+      },
+      {
+       "key": "D",
+       "text": "none"
+      }
+     ],
+     "answer": "B",
+     "why": "Dried herbs are stronger by weight."
+    },
+    {
+     "id": "FLV-3.M1.Q4",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "FLV-3.M1.L1",
+     "safety": false,
+     "question": "Which herb dries poorly?",
+     "options": [
+      {
+       "key": "A",
+       "text": "oregano"
+      },
+      {
+       "key": "B",
+       "text": "dill"
+      },
+      {
+       "key": "C",
+       "text": "bay"
+      },
+      {
+       "key": "D",
+       "text": "sage"
+      }
+     ],
+     "answer": "B",
+     "why": "Tender herbs lose their character dried."
+    },
+    {
+     "id": "FLV-3.M1.Q5",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "FLV-3.M1.L2",
+     "safety": false,
+     "question": "Why does lemon go into a green sauce last?",
+     "options": [
+      {
+       "key": "A",
+       "text": "it curdles the oil"
+      },
+      {
+       "key": "B",
+       "text": "acid turns chlorophyll olive-brown"
+      },
+      {
+       "key": "C",
+       "text": "it is too sour"
+      },
+      {
+       "key": "D",
+       "text": "tradition"
+      }
+     ],
+     "answer": "B",
+     "why": "Acid dulls the green."
+    },
+    {
+     "id": "FLV-3.M1.Q6",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "FLV-3.M1.L2",
+     "safety": false,
+     "question": "How do you keep a blended herb paste bright?",
+     "options": [
+      {
+       "key": "A",
+       "text": "blend for longer"
+      },
+      {
+       "key": "B",
+       "text": "blanch and chill the herbs, blend cold and briefly, oil on the surface"
+      },
+      {
+       "key": "C",
+       "text": "add sugar"
+      },
+      {
+       "key": "D",
+       "text": "keep it warm"
+      }
+     ],
+     "answer": "B",
+     "why": "Heat and air dull it."
+    },
+    {
+     "id": "FLV-3.M1.Q7",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "FLV-3.M1.L2",
+     "safety": true,
+     "question": "How is a homemade herb oil stored?",
+     "options": [
+      {
+       "key": "A",
+       "text": "in a bottle on the shelf"
+      },
+      {
+       "key": "B",
+       "text": "in the fridge, used within 2 days"
+      },
+      {
+       "key": "C",
+       "text": "in the sun"
+      },
+      {
+       "key": "D",
+       "text": "for months in the cupboard"
+      }
+     ],
+     "answer": "B",
+     "why": "Herbs in oil need refrigeration (assessment §9)."
+    },
+    {
+     "id": "FLV-3.M1.Q8",
+     "type": "SCENARIO",
+     "lessonId": "FLV-3.M1.L2",
+     "safety": false,
+     "question": "Your *salsa verde* tastes harsh and flat at once. What do you check?",
+     "options": [],
+     "answer": "Taste it on a neutral carrier; it likely lacks salt (flat) while raw garlic or vinegar dominates (harsh): add salt, soften with more oil or herbs, and check again.",
+     "why": "Season on a carrier, one change at a time."
+    }
+   ]
+  },
+  {
+   "id": "FLV-3.M2",
+   "title": "Spices",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** the 8 items of `FLV-3.M2` in the course file. Pass mark 80 %."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "FLV-3.M2.L1",
+     "title": "Spice technique",
+     "prerequisites": [
+      "SCI-2.M4.L1"
+     ],
+     "competencies": [
+      {
+       "id": "IN-ARO",
+       "level": 4
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** the same teaspoon of cumin can taste dusty or alive. Toasting, blooming and grinding are what turn a jar of powder into flavour, and each takes a minute."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** whole coriander and cumin seeds; a jar of pre-ground cumin; a heavy dry pan; the mortar or the grinder; red lentils, onion and stock for a dal or lentil soup; oil or butter; the tasting form."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Whole against ground.* Whole spices keep their aroma for a year or more. Ground spices lose most of it within months, because grinding exposes the volatile oils to the air."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Toasting,* dry in a pan:"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "whole seeds only, moved constantly, until fragrant and a shade darker;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "tipped out of the pan at once, because the hot pan keeps cooking them;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "burnt spices are bitter and are thrown away; start again."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Blooming* (*tadka* or *tarka*): whole or ground spices fried briefly in fat, at the start of a dish or poured over at the end. Many aroma compounds dissolve in fat, not in water, so blooming carries them through the dish."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Grinding:* a mortar for small amounts and pastes, a blade grinder for larger batches; always just before use, once the toasted seeds have cooled."
+      },
+      {
+       "type": "paragraph",
+       "text": "*The order in a dish:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "whole spices first, because they need longer;"
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "ground spices after, because they burn quickly;"
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "a final bloom or a pinch of freshly ground spice at the end, for the top notes."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Toast and grind (40 min).** Toast coriander and cumin seeds separately, cool them, and grind them. Smell each against the pre-ground jar, and describe the difference on the form."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Bloom (45 min).** Make a dal or lentil soup and divide it in two. Bloom half the spices in fat and pour them into one pot; stir the other half straight into the water of the second. Taste side by side."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** toasted seeds fragrant and a shade darker, not smoking; the bloomed version rounder and more aromatic."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Scorched, bitter powder",
+         "Toasting ground spices in a dry pan",
+         "Toast whole seeds; bloom ground spices in fat, briefly"
+        ],
+        [
+         "Burnt seeds",
+         "Walking away from the pan",
+         "Stay and keep them moving; tip out at once"
+        ],
+        [
+         "A bitter dish",
+         "Ground spices added to very hot oil and burnt",
+         "Lower the heat first; seconds, not minutes"
+        ],
+        [
+         "No aroma at all",
+         "A jar of paprika from three years ago",
+         "Smell before use; replace it"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** a dry pan heats fast: the handle turned in, and the spices tipped onto a cold plate, away from you."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** both tasting notes."
+      }
+     ]
+    },
+    {
+     "id": "FLV-3.M2.L2",
+     "title": "Spice blends of the world",
+     "prerequisites": [
+      "FLV-3.M2.L1"
+     ],
+     "competencies": [
+      {
+       "id": "FL-ARCH",
+       "level": 3
+      },
+      {
+       "id": "CK-CUIS",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** every cuisine has blends that carry its character. Learning how a few are built teaches the logic of balancing spices, and gives the pantry of four traditions (`CK-CUIS` level 2) that `CUI-3` cooks from."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** whole spices for *garam masala* and for *za'atar* or five-spice; dried thyme or oregano; sumac; sesame seeds; the dry pan; the grinder; the scale; a recipe card; lentils and a flatbread for the dishes."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*A blend is a flavour plan:* warm, sweet, earthy, floral, sharp and hot spices balanced for a use."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Five classic blends:*"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Blend",
+        "Origin",
+        "Built from",
+        "Used"
+       ],
+       "rows": [
+        [
+         "*Garam masala*",
+         "North India",
+         "Warm and sweet: cinnamon, cardamom, clove, black pepper, cumin, coriander",
+         "Near the end"
+        ],
+        [
+         "*Ras el hanout*",
+         "Morocco",
+         "Many spices, floral and warm",
+         "Tagines and couscous"
+        ],
+        [
+         "Five-spice",
+         "China",
+         "Star anise, cassia, clove, Sichuan pepper, fennel",
+         "Braises and roasts"
+        ],
+        [
+         "*Za'atar*",
+         "The Levant",
+         "Wild thyme or oregano, sumac, sesame",
+         "Raw, or with oil on bread"
+        ],
+        [
+         "*Quatre épices*",
+         "France",
+         "Pepper, nutmeg, clove, ginger",
+         "*Charcuterie* and stews"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Making a blend:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "toast each whole spice separately, because each browns at its own rate;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "cool, grind and mix by weight;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "write it down, so it can be repeated or corrected."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Using a blend.* A blend has its own timing. *Garam masala* goes in near the end, because its sweet top notes cook flat; *za'atar* is used raw. The recipe card names the moment as well as the weights."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Two blends (75 min).** Make *garam masala* and either *za'atar* or five-spice, weighed and written up on a card."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Use them (60 min).** Use each in a dish: for example a lentil *dal* finished with *garam masala*, and flatbread with *za'atar* and oil."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** each blend smells balanced, with no single spice dominating unless intended; the card has weights and the moment of use."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Some spices burnt, others raw",
+         "All spices toasted together",
+         "Each spice toasted on its own"
+        ],
+        [
+         "A flat, dull curry",
+         "*Garam masala* added at the start and cooked flat",
+         "Add it near the end"
+        ],
+        [
+         "A blend you can't repeat",
+         "A blend not written down",
+         "Weigh and write every blend"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** sesame is an allergen (`SAF-1.M4`): *za'atar* is labelled with it."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** both recipe cards; the dishes' tasting forms."
+      }
+     ]
+    },
+    {
+     "id": "FLV-3.M2.L3",
+     "title": "Buying and storing spices",
+     "prerequisites": [],
+     "competencies": [
+      {
+       "id": "IN-STO",
+       "level": 4
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** most of what goes wrong with spices happens before they reach the pan: a stale jar, bought too large, kept by the stove. A small system keeps the drawer fresh and saves money."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** your spice drawer or shelf; labels and a marker; the journal."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Buying:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "whole where possible, and in small amounts;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "from shops with a high turnover: an Asian, Turkish or Moroccan grocer often sells fresher spices more cheaply than a supermarket jar;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "only what you will use within its limit."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Freshness checks:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**colour:** bright, not faded (paprika red, not brown; turmeric yellow-orange);"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**smell:** rubbed between the fingers, it should be strong at once;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**date:** the date of purchase on the label."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Storing:* airtight, dark, cool and dry, away from the stove and the oven; each jar labelled with the name and the date."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Rotation:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "ground spices used within about six months, whole spices within about a year;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "an inventory once a season: what is fading is used first or replaced;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "new jars go to the back."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*The judgment: whole or ground?*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**whole:** for what is toasted, or used often;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**ground:** for what is used rarely and in small amounts, or is hard to grind at home (turmeric, ground ginger, cinnamon bark)."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:** theory only (1 h): audit your spice drawer against the checks above. Label every jar with its name and a date (for jars without one, the date of the audit, and mark them to check soon). Throw away what has no smell. Move the drawer away from the stove if you can. Write a short buying list: what to replace, in what form, and where."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** a spice drawer where every jar has a name and a date, and nothing is older than its limit."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Faded, caked spices",
+         "Jars above the stove",
+         "A dark, cool, dry cupboard"
+        ],
+        [
+         "No idea which jar is stale",
+         "No dates",
+         "A date on every label"
+        ],
+        [
+         "Money thrown away",
+         "Buying the large supermarket jar of a spice used twice a year",
+         "Small amounts, from a shop with turnover"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** none beyond the usual: spices are dry goods, kept airtight and dry."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the audit list and the buying list; a photo of the drawer after."
+      }
+     ]
+    },
+    {
+     "id": "FLV-3.M2.L4",
+     "title": "Chillies",
+     "prerequisites": [
+      "TST-1.M3.L5"
+     ],
+     "competencies": [
+      {
+       "id": "IN-ARO",
+       "level": 4
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** chilli is the one spice that can make a dish inedible. Controlling it means a dish that is as hot as you meant, for the people at the table, with the flavour of the chilli rather than only its burn."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** fresh chillies (Dutch greenhouse chillies in summer); one dried chilli (*ancho*, *chipotle* or *Kashmiri*); disposable gloves; beans or vegetables for a stew without tomato; yoghurt; the tasting form."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Heat* comes from capsaicin, mostly in the white ribs and the seeds. It dissolves in fat and alcohol, not in water."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Flavour* varies: fruity, smoky, grassy. Fresh chillies taste green and bright; dried chillies taste deep and sweet."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Forms:* fresh, dried whole, flakes, powders, pastes and fermented sauces. Each behaves differently: dried chillies are soaked or toasted, flakes are bloomed in fat, and pastes and sauces are often added at the end."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Controlling heat:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "remove the ribs and seeds for less heat;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "add in steps and taste, because heat builds over a dish's cooking;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "balance with fat, sugar, acid and starch: dairy and fat calm it, water doesn't;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "when a dish is too hot, increase the rest of it (more beans, more stock, more vegetables) rather than trying to \"cover\" the heat with something else;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "for a mixed table, keep the heat mild in the pot and serve chilli on the side."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Handling:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "wear gloves, or wash your hands well straight after;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "never touch your eyes;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "toast dried chillies briefly, with the extractor on and a window open, because their fumes sting."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Heat in steps (45 min).** Make a bean or vegetable stew without tomato, mild. Raise its heat in three steps with fresh and dried chilli; taste each step and note on the form how hot it is and what the chilli adds. Before the last step, write how hot you predict the dish will end; serve it with yoghurt on the side."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** you can predict roughly how hot a dish will end, and fix one that is too hot."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Inedibly hot",
+         "All the chilli in at once",
+         "In steps, tasted"
+        ],
+        [
+         "A family meal nobody can eat",
+         "Seeds left in",
+         "Ribs and seeds out; chilli on the side"
+        ],
+        [
+         "Burning gets worse",
+         "Water to cool the mouth",
+         "Yoghurt, bread or rice"
+        ],
+        [
+         "Stinging eyes",
+         "Rubbing the eyes",
+         "Gloves, or wash your hands at once"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** gloves or washed hands; dried chillies toasted with ventilation; the fumes kept away from children."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the tasting form with each step and the prediction."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "FLV-3.M2.X1",
+     "title": "Ground against toasted-and-ground cumin",
+     "description": "Ground versus toasted-and-ground cumin in the same dish.",
+     "competencies": [
+      {
+       "id": "IN-ARO",
+       "level": 4
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** show by a blind test whether toasting and fresh grinding change a dish. The same carrot soup is made twice: one with pre-ground cumin, one with cumin seed toasted and ground fresh, at the same weight. A household member codes the bowls, and the tasters choose and describe."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** for two pots, each for 4: 500 g Dutch carrots (or pumpkin in autumn), 1 onion, 20 g butter or 2 tbsp oil, 750 ml stock, 3 g cumin, salt. Pre-ground cumin and whole cumin; two pans; the stick blender; the scale; coded cups; the tasting forms."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Recipe:** two cumin soups."
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Write** the prediction: which bowl the tasters will prefer, and how they will describe it."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Toast** 3 g of whole cumin in a dry pan, moving it, until fragrant and a shade darker; tip it onto a plate, cool and grind. Weigh 3 g of the pre-ground cumin."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "**Soften** the sliced onion in the butter or oil in each pan without colouring, about 8 minutes."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "**Add** the cumin, ground in one pan and pre-ground in the other, and stir for 30 seconds in the fat."
+        },
+        {
+         "level": 0,
+         "marker": "5.",
+         "text": "**Add** the sliced carrots and the stock; simmer until the carrots are soft, about 20 minutes."
+        },
+        {
+         "level": 0,
+         "marker": "6.",
+         "text": "**Blend** both smooth; season both with the same weight of salt, tasted on a spoon."
+        },
+        {
+         "level": 0,
+         "marker": "7.",
+         "text": "**Code** the bowls: a household member labels them A and B and keeps the key."
+        },
+        {
+         "level": 0,
+         "marker": "8.",
+         "text": "**Taste** blind: the tasters choose the one they prefer and describe both."
+        },
+        {
+         "level": 0,
+         "marker": "9.",
+         "text": "**Write** the result and whether it changes how you buy cumin."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:** the blind comparison and its written conclusion, as part of the `IN-ARO` level 4 evidence, completed in `FLV-3.M2.X2`."
+      },
+      {
+       "type": "paragraph",
+       "text": "AI review reads the conclusion: *competent* is a result stated against the prediction, with the tasters' words; *not yet* is a conclusion the tasting doesn't support."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 1.5 h."
+      }
+     ]
+    },
+    {
+     "id": "FLV-3.M2.X2",
+     "title": "Your own spice blend, used in two dishes",
+     "description": "Your own spice blend, used in two dishes.",
+     "competencies": [
+      {
+       "id": "IN-ARO",
+       "level": 4
+      },
+      {
+       "id": "FL-ARCH",
+       "level": 3
+      },
+      {
+       "id": "IN-STO",
+       "level": 4
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** compose a blend of five to eight spices for a stated dish, with a written reason for each spice; use it in two dishes, each with a flavour plan; store it for quality; and take the spice half of the blind aroma test. For example, a blend for a winter root-vegetable roast, or for a braise of beans and savoy cabbage."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** whole spices; the dry pan; the grinder; the scale; jars and labels; the two dishes as household meals; eight spices, coded by a household member, for the blind test; the flavour-plan form; tasters' cards."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Framework:** a blend for a purpose."
+      },
+      {
+       "type": "table",
+       "header": [
+        "Part",
+        "What it is",
+        "Your decisions"
+       ],
+       "rows": [
+        [
+         "Purpose",
+         "The dish the blend is designed for",
+         "Which dish"
+        ],
+        [
+         "Structure",
+         "Warm, sweet, earthy, floral, sharp, hot",
+         "Which roles, and which leads"
+        ],
+        [
+         "Spices",
+         "Five to eight, each with a written reason",
+         "Which, and why"
+        ],
+        [
+         "Method",
+         "Each toasted separately, cooled, ground, mixed by weight",
+         "—"
+        ],
+        [
+         "Moment",
+         "When the blend goes into the dish",
+         "Early, bloomed, or at the end"
+        ],
+        [
+         "Storage",
+         "Airtight, dark, labelled with name, date and a use-by date chosen for quality",
+         "The use-by date"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Procedure:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "Write the purpose and the reason for each spice."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "Toast, grind and weigh the blend; write it down."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "Cook the two dishes with flavour plans; the tasters fill in cards."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "Take the blind spice test."
+        },
+        {
+         "level": 0,
+         "marker": "5.",
+         "text": "Store the blend, audit the drawer, write the storage plan."
+        },
+        {
+         "level": 0,
+         "marker": "6.",
+         "text": "Note the blend's quality on the day you next use it."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`IN-ARO` level 4:** the blend for a stated dish with a written reason, judged balanced by the tasters; the spice half of the blind identification (with `FLV-3.M1.X1`, at least 12 of 16 in total). The `MS-S3` test completes the row."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`FL-ARCH` level 3:** the two dishes with flavour plans and the cumin soup of `FLV-3.M2.X1` make three; the tasters find depth and balance."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`IN-STO` level 4, in part:** the storage plan with method, container, label and use-by date per item, and the quality note on the day of use. The batch-cooking part follows in `KMG-3.M4.X1` and `PRS-3.M6.X1`."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "AI review checks the reasons: *competent* is a role for each spice that the tasters' cards bear out; *not yet* is a list of spices without reasons, or a blend one spice dominates by accident."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 2.5 h over two meals."
+      }
+     ]
+    }
+   ],
+   "items": [
+    {
+     "id": "FLV-3.M2.Q1",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "FLV-3.M2.L1",
+     "safety": false,
+     "question": "Why are spices bloomed in fat?",
+     "options": [
+      {
+       "key": "A",
+       "text": "to cool them"
+      },
+      {
+       "key": "B",
+       "text": "many aroma compounds dissolve in fat and are carried through the dish"
+      },
+      {
+       "key": "C",
+       "text": "to save time"
+      },
+      {
+       "key": "D",
+       "text": "to remove bitterness"
+      }
+     ],
+     "answer": "B",
+     "why": "Fat-soluble flavour."
+    },
+    {
+     "id": "FLV-3.M2.Q2",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "FLV-3.M2.L1",
+     "safety": false,
+     "question": "Which goes into the pan first?",
+     "options": [
+      {
+       "key": "A",
+       "text": "ground turmeric"
+      },
+      {
+       "key": "B",
+       "text": "whole cumin seed"
+      },
+      {
+       "key": "C",
+       "text": "both together"
+      },
+      {
+       "key": "D",
+       "text": "neither"
+      }
+     ],
+     "answer": "B",
+     "why": "Whole spices need longer; ground spices burn quickly."
+    },
+    {
+     "id": "FLV-3.M2.Q3",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "FLV-3.M2.L2",
+     "safety": false,
+     "question": "Which blend is built from wild thyme or oregano, sumac and sesame?",
+     "options": [
+      {
+       "key": "A",
+       "text": "*garam masala*"
+      },
+      {
+       "key": "B",
+       "text": "five-spice"
+      },
+      {
+       "key": "C",
+       "text": "*za'atar*"
+      },
+      {
+       "key": "D",
+       "text": "*quatre épices*"
+      }
+     ],
+     "answer": "C",
+     "why": "The Levantine blend."
+    },
+    {
+     "id": "FLV-3.M2.Q4",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "FLV-3.M2.L2",
+     "safety": false,
+     "question": "Which tradition uses star anise, cassia, clove, Sichuan pepper and fennel as one blend?",
+     "options": [
+      {
+       "key": "A",
+       "text": "French"
+      },
+      {
+       "key": "B",
+       "text": "Chinese"
+      },
+      {
+       "key": "C",
+       "text": "Moroccan"
+      },
+      {
+       "key": "D",
+       "text": "Indian"
+      }
+     ],
+     "answer": "B",
+     "why": "Five-spice."
+    },
+    {
+     "id": "FLV-3.M2.Q5",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "FLV-3.M2.L2",
+     "safety": false,
+     "question": "When does *garam masala* usually go in?",
+     "options": [
+      {
+       "key": "A",
+       "text": "at the start, fried for long"
+      },
+      {
+       "key": "B",
+       "text": "near the end"
+      },
+      {
+       "key": "C",
+       "text": "never cooked"
+      },
+      {
+       "key": "D",
+       "text": "in the marinade only"
+      }
+     ],
+     "answer": "B",
+     "why": "Its warm top notes fade with long cooking."
+    },
+    {
+     "id": "FLV-3.M2.Q6",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "FLV-3.M2.L3",
+     "safety": false,
+     "question": "Where do spices keep best?",
+     "options": [
+      {
+       "key": "A",
+       "text": "above the stove"
+      },
+      {
+       "key": "B",
+       "text": "airtight, dark, cool and dry, labelled with a date"
+      },
+      {
+       "key": "C",
+       "text": "in the fridge door"
+      },
+      {
+       "key": "D",
+       "text": "in an open rack by the window"
+      }
+     ],
+     "answer": "B",
+     "why": "Heat, light and air fade them."
+    },
+    {
+     "id": "FLV-3.M2.Q7",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "FLV-3.M2.L4",
+     "safety": false,
+     "question": "A curry is too hot. What helps most?",
+     "options": [
+      {
+       "key": "A",
+       "text": "a glass of water"
+      },
+      {
+       "key": "B",
+       "text": "more of the other ingredients, with yoghurt, coconut milk or a starch"
+      },
+      {
+       "key": "C",
+       "text": "more chilli to balance"
+      },
+      {
+       "key": "D",
+       "text": "salt only"
+      }
+     ],
+     "answer": "B",
+     "why": "Capsaicin dissolves in fat; dilution lowers it."
+    },
+    {
+     "id": "FLV-3.M2.Q8",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "FLV-3.M2.L4",
+     "safety": false,
+     "question": "Where is most of a chilli's heat?",
+     "options": [
+      {
+       "key": "A",
+       "text": "the skin"
+      },
+      {
+       "key": "B",
+       "text": "the white ribs and seeds"
+      },
+      {
+       "key": "C",
+       "text": "the stalk"
+      },
+      {
+       "key": "D",
+       "text": "the tip"
+      }
+     ],
+     "answer": "B",
+     "why": "Remove them for a milder dish."
+    }
+   ]
+  },
+  {
+   "id": "FLV-3.M3",
+   "title": "Umami, salt and acid in depth",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** none for this module. Its judgment, choosing and timing the acid, is shown by the written adjustments and the blind panel of `FLV-3.M3.X1`."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "FLV-3.M3.L1",
+     "title": "Layering umami",
+     "prerequisites": [
+      "TST-1.M3.L4"
+     ],
+     "competencies": [
+      {
+       "id": "FL-SEAS",
+       "level": 4
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** \"deep\" is the word people use for a dish they love without knowing why. Most of the time it means umami from several sources, built in layers. It is how a vegetable dish gets the depth of a meat one."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** kombu and dried mushrooms; tomato paste; miso; soy sauce; a Parmesan or aged Gouda rind; vegetables for a stock; pearl barley and fresh mushrooms; the flavour-plan form; coded cups for the blind tasting."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Two kinds of umami* (`TST-1.M3.L4`):"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**glutamate:** aged cheese, tomato paste, miso, soy sauce, seaweed, mushrooms;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**the nucleotides:** dried mushrooms, anchovy, meat and fish."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "Together they are much stronger than either alone: that is synergy."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Sources, and how to use them:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**tomato paste:** fried in the fat until brick-red;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**dried mushrooms:** soaked, the liquid strained and used;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**a Parmesan or aged Gouda rind:** simmered in a soup and taken out;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**anchovy:** melted into the fat until it disappears;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**miso:** stirred in off the boil, because boiling dulls it;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**kombu:** steeped below the boil, and taken out before it turns slimy;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**soy or fish sauce:** as part of the salt."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Layering.* One source in the base (fried with the aromatics), one in the middle (in the liquid) and one at the end (grated cheese, a few drops of soy). Depth then comes from several places, and no single ingredient stands out."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Salt in the umami sources.* Soy, miso, anchovy and cheese are salty, so the added salt drops. Add them first, taste, then salt."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**A layered stock (60 min).** Make two vegetable stocks the same way, one with kombu and dried mushrooms added; have them coded, and taste them blind."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**A layered dish (60 min).** Write a plan for a mushroom and barley dish, cooked like a risotto, with three umami layers (for example tomato paste in the base, the mushroom liquid in the middle, cheese at the end); cook it and taste it against the plan."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** \"deep\" or \"round\" on the tasters' cards, without any single ingredient being named."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Flat, grainy miso",
+         "Miso boiled",
+         "Stirred in off the boil"
+        ],
+        [
+         "Fishy bites",
+         "Anchovy in lumps",
+         "Melt it into the fat until it disappears"
+        ],
+        [
+         "Too salty",
+         "Salt added before the soy",
+         "Umami sources first, then salt to taste"
+        ],
+        [
+         "One flavour sticks out",
+         "One source in a large dose instead of three small ones",
+         "Three small layers"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** anchovy, fish sauce, soy (wheat and soy), miso (soy) and cheese (milk) are allergens; the household's allergies are checked first (`SAF-1.M4`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** both blind results; the plan and the form of the layered dish."
+      }
+     ]
+    },
+    {
+     "id": "FLV-3.M3.L2",
+     "title": "Choosing and timing acid",
+     "prerequisites": [
+      "TST-1.M3.L1"
+     ],
+     "competencies": [
+      {
+       "id": "FL-SEAS",
+       "level": 4
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** acid is the quickest way to make a dish taste alive, and each acid tastes different. Choosing the right one, and when it goes in, is a judgment a recipe rarely spells out."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** a pot of braised lentils for 4; five acids, for example wine vinegar, cider vinegar, sherry vinegar, lemon and buttermilk; five bowls; the tasting form."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Acids differ in flavour:*"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Acid",
+        "Character"
+       ],
+       "rows": [
+        [
+         "Wine vinegar",
+         "Sharp"
+        ],
+        [
+         "Cider vinegar",
+         "Fruity"
+        ],
+        [
+         "Sherry or balsamic vinegar",
+         "Deep and sweet"
+        ],
+        [
+         "Rice vinegar",
+         "Mild"
+        ],
+        [
+         "Lemon",
+         "Bright and perfumed"
+        ],
+        [
+         "Wine",
+         "Cooked into the base"
+        ],
+        [
+         "Fermented acids: yoghurt, buttermilk, sauerkraut juice, pickling liquid",
+         "Soft, with a fermented note"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Cooked against raw.* Acid cooked in (wine reduced with the aromatics) becomes part of the base and loses its edge. Acid added at the end lifts and sharpens. Many dishes use both: wine in the base, a few drops of vinegar at the end."
+      },
+      {
+       "type": "paragraph",
+       "text": "*The judgment: which acid?* Match it to the dish's character:"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "cider vinegar with apples and pork;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "sherry vinegar with mushrooms;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "lemon with fish and herbs;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "buttermilk with potatoes."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "Match it to the dish's richness as well: fatty dishes need more."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Finishing.* A few drops, taste, then more. Acid also reduces the salt the dish seems to need, so taste for salt again after the acid."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Five acids (45 min).** Divide the braised lentils into five bowls, and finish each with a different acid, adding a little at a time until it tastes right. Judge each on the form, and write which matches best, and why."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** you can name the acid that fits a dish and explain why."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Every dish tastes the same",
+         "Balsamic vinegar on everything",
+         "Match the acid to the dish"
+        ],
+        [
+         "No lift at all",
+         "Lemon juice simmered for an hour",
+         "Lemon at the end; wine or vinegar in the base"
+        ],
+        [
+         "A heavy, dull plate",
+         "A rich dish with no acid at all",
+         "A few drops at the end, tasted"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** acids are kept in glass or stainless steel, not in reactive pans for long (`EQP-1`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the form with the five acids and your choice."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "FLV-3.M3.X1",
+     "title": "A lentil soup that tastes deep without meat",
+     "description": "Make a plain lentil soup taste \"deep\" without meat: brief with criteria.",
+     "competencies": [
+      {
+       "id": "FL-SEAS",
+       "level": 4
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** make a plain lentil soup taste deep by design, and balance three dishes with several tastes in play."
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**The brief:** a meat-free lentil soup that a blind household panel prefers to the plain version and describes as \"deep\". You choose the umami layers and the acid."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**The constraints:** Dutch seasonal vegetables (onion, carrot, celeriac, leek); the plain version made first, as the control; each addition and adjustment noted with its reason."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**The criteria:**"
+        },
+        {
+         "level": 1,
+         "marker": "",
+         "text": "the panel prefers the deep soup, tasted blind;"
+        },
+        {
+         "level": 1,
+         "marker": "",
+         "text": "three dishes are written up with at least three tastes in play: the soup, and the two session dishes of the module (the layered barley dish and the lentils with their best acid);"
+        },
+        {
+         "level": 1,
+         "marker": "",
+         "text": "the tasters judge all three balanced."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**The record:**"
+        },
+        {
+         "level": 1,
+         "marker": "1.",
+         "text": "Make the plain version as the control."
+        },
+        {
+         "level": 1,
+         "marker": "2.",
+         "text": "Plan and make the deep version, noting each addition and adjustment."
+        },
+        {
+         "level": 1,
+         "marker": "3.",
+         "text": "Have both coded; the household panel tastes blind and chooses."
+        },
+        {
+         "level": 1,
+         "marker": "4.",
+         "text": "Write up the three dishes: the tastes in play, each adjustment and why."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** lentils; the vegetables; the umami sources and the acid you choose; coded cups; tasting forms and cards."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:** three dishes balanced with at least three tastes in play, each adjustment noted with its reason; the panel prefers the deep soup and the tasters judge all three balanced. This meets the `FL-SEAS` level 4 row."
+      },
+      {
+       "type": "paragraph",
+       "text": "AI review reads the adjustments: *competent* is each change with a reason from the module and a tasted result; *not yet* is a soup built by adding everything at once, with no record of what did what."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 2 h."
+      }
+     ]
+    }
+   ],
+   "items": []
+  },
+  {
+   "id": "FLV-3.M4",
+   "title": "Texture and contrast",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** the 8 items of `FLV-3.M4` in the course file, 1 of them a safety item. Pass mark 80 %, with every safety item correct."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "FLV-3.M4.L1",
+     "title": "Texture design",
+     "prerequisites": [
+      "TST-1.M1.L1"
+     ],
+     "competencies": [
+      {
+       "id": "FL-TEXT",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** a dish can taste right and still be boring by the fifth bite. The cause is usually texture: one soft thing all the way through. Contrast is designed, like seasoning."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** one soft base (a purée or a soup) for 4; four toppings of different textures, for example toasted seeds, crisp croutons, a spoon of yoghurt and quickly pickled raw shallot; the tasting form."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*The vocabulary.* Precise words make texture something you can plan:"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Word",
+        "Means"
+       ],
+       "rows": [
+        [
+         "Crisp",
+         "Breaks cleanly; often thin and dry"
+        ],
+        [
+         "Crunchy",
+         "Breaks with resistance; often thick"
+        ],
+        [
+         "Creamy, smooth",
+         "No particles; coats the mouth"
+        ],
+        [
+         "Chewy",
+         "Resists the teeth, and springs back"
+        ],
+        [
+         "Tender",
+         "Gives easily"
+        ],
+        [
+         "Juicy",
+         "Releases liquid"
+        ],
+        [
+         "Silky, gelatinous",
+         "Slippery, rich in gelatine"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Why contrast matters.* The palate adapts to a single texture within a few bites, and the dish becomes dull. A contrast (soft and crisp, creamy and crunchy, tender and chewy) keeps each bite interesting."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Keeping textures until the plate:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "crisp elements are added at the last moment, or kept apart from wet ones;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "steam ruins crispness, so fried things rest on a rack, not piled on paper;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "salads are dressed just before serving."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Planning.* The flavour plan gets a texture line: the main texture and the contrast, named before cooking. When the dish is served, check whether both are still there."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**A texture tasting (60 min).** Serve the soft base in five small bowls: one plain, and four each with one of the toppings. Before tasting, predict which contrast will work best. Describe each pairing on the form with the vocabulary above, and compare with your prediction."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** the form uses precise texture words; you can predict which contrast works best."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "A vague form",
+         "\"Crunchy\" for everything",
+         "Use the vocabulary: crisp, crunchy, chewy…"
+        ],
+        [
+         "A soggy topping",
+         "A crisp topping added an hour before serving",
+         "At the last moment"
+        ],
+        [
+         "A dull plate",
+         "Three soft elements on one plate",
+         "One soft, one crisp, one fresh"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** none beyond the module's: the allergen rule applies to every topping (`SAF-1.M4`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the form with the prediction and the five descriptions."
+      }
+     ]
+    },
+    {
+     "id": "FLV-3.M4.L2",
+     "title": "Crunchy elements",
+     "prerequisites": [
+      "HEA-2.M4.L1"
+     ],
+     "competencies": [
+      {
+       "id": "FL-TEXT",
+       "level": 3
+      },
+      {
+       "id": "CR-COMP",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** a spoon of something crisp lifts a soft dish more than any other single change. A few crunchy elements, made ahead and kept airtight, are always ready to finish a weeknight dinner."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** stale bread and a garlic clove for *pangrattato*; pumpkin, sunflower or sesame seeds; shallots; oil; the frying thermometer; a small heavy pan; a wire rack; jars or tins for storing."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*The usual crunchy elements:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "toasted breadcrumbs (*pangrattato*) with garlic and herbs;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "toasted seeds (pumpkin, sunflower, sesame) and buckwheat;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "vegetable crisps: thin slices of root vegetables or kale, baked or fried;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "fried shallots or onions;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "croutons, crackling, crisp-fried capers."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Nuts* are a classic crunch, but the program's produce scope uses seeds and grains instead. Where you use nuts, the allergen rule applies (`SAF-1.M4`): a guest with a nut allergy gets toasted seeds or crumbs, their labels checked, made with clean tools."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Frying small elements* (`HEA-2.M4`): shallow oil in a small heavy pan, the thermometer in the oil, small batches, drained on a rack and salted at once."
+      },
+      {
+       "type": "paragraph",
+       "text": "*The judgment: when to add them?* At the last moment, on top, where they won't sit in sauce. And only where they serve the dish: a crunchy element that fights the dish is a fault, not a contrast."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Storing.* Cooled completely, then airtight; most keep a few days."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Three crunchy elements (60 min).** Make *pangrattato*, toasted seeds and fried shallots. Cool them on the rack and store them airtight. The next day, check each for crispness and note it."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** evenly golden and crisp after cooling; fried shallots golden, not dark brown, because they keep cooking off the heat."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Bitter shallots",
+         "Shallots fried until dark brown in the pan",
+         "Lift them out when golden"
+        ],
+        [
+         "Burnt crumbs",
+         "Crumbs burnt at the edges",
+         "Medium heat, stirring; tip out when even"
+        ],
+        [
+         "Soft by morning",
+         "Elements stored warm and gone soft",
+         "Cool completely before closing the jar"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** frying as in `HEA-2.M4`: a pan no more than a third full, the thermometer, a lid ready, never water. Nuts are an allergen: a guest's allergy means seeds or crumbs instead, the labels checked and the tools kept apart."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the next-day crispness check."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "FLV-3.M4.X1",
+     "title": "Two texture elements on a soft dish",
+     "description": "Add two texture elements to a soft dish; compare with and without.",
+     "competencies": [
+      {
+       "id": "FL-TEXT",
+       "level": 3
+      },
+      {
+       "id": "CR-COMP",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** design texture contrast into a soft dish, and show by comparison that it improves it. A soft dish (for example a celeriac purée with braised leeks, a pumpkin soup, or a bean stew) is served twice: plain, and with two texture elements chosen for it, tasted side by side. The two session dishes of the module are written up the same way, so that three dishes have their textures named and photographed at service."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** the soft dish as a household meal; the crunchy elements of `FLV-3.M4.L2`; the component table; tasters' cards; the phone for photos."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Framework:** the texture plan and the component table."
+      },
+      {
+       "type": "table",
+       "header": [
+        "Part",
+        "What it is",
+        "Your decisions"
+       ],
+       "rows": [
+        [
+         "Main texture",
+         "The soft dish",
+         "Which dish"
+        ],
+        [
+         "Contrast 1",
+         "A crisp or crunchy element",
+         "Which, and why"
+        ],
+        [
+         "Contrast 2",
+         "A second texture: crunchy, chewy, juicy or fresh",
+         "Which, and why"
+        ],
+        [
+         "Component table",
+         "Each part, and what it contributes",
+         "—"
+        ],
+        [
+         "Timing",
+         "Elements added at the last moment",
+         "—"
+        ],
+        [
+         "Plating",
+         "From the table, photographed at service",
+         "How"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Procedure:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "Write the texture plan and the component table."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "Make the dish and the two elements; add them at the last moment."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "Serve it plain and with the elements; photograph both at service; the tasters fill in cards."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "Write up the three dishes of the module: the textures intended, hit and kept until the plate."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`FL-TEXT` level 3:** three dishes with their textures hit and kept until the plate (crisp elements still crisp), photographed at service."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`CR-COMP` level 2:** the parts of the dish and what each contributes, in the component table; the dish plated from the framework."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "AI review compares the photos with the plan: *competent* is both elements visible and crisp at service, and cards that prefer the version with them; *not yet* is a soggy element, or one that has nothing to do with the dish."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 1.5 h."
+      }
+     ]
+    }
+   ],
+   "items": [
+    {
+     "id": "FLV-3.M4.Q1",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "FLV-3.M4.L1",
+     "safety": false,
+     "question": "Why does a dish of one texture become boring?",
+     "options": [
+      {
+       "key": "A",
+       "text": "it is badly seasoned"
+      },
+      {
+       "key": "B",
+       "text": "the palate adapts within a few bites"
+      },
+      {
+       "key": "C",
+       "text": "it is too hot"
+      },
+      {
+       "key": "D",
+       "text": "it isn't"
+      }
+     ],
+     "answer": "B",
+     "why": "Contrast keeps each bite interesting."
+    },
+    {
+     "id": "FLV-3.M4.Q2",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "FLV-3.M4.L1",
+     "safety": false,
+     "question": "What is the difference between crisp and crunchy?",
+     "options": [
+      {
+       "key": "A",
+       "text": "none"
+      },
+      {
+       "key": "B",
+       "text": "crisp breaks cleanly and is thin; crunchy breaks with more resistance"
+      },
+      {
+       "key": "C",
+       "text": "crunchy is wet"
+      },
+      {
+       "key": "D",
+       "text": "crisp is soft"
+      }
+     ],
+     "answer": "B",
+     "why": "The texture vocabulary."
+    },
+    {
+     "id": "FLV-3.M4.Q3",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "FLV-3.M4.L1",
+     "safety": false,
+     "question": "Fried croutons go soft on the plate. Why?",
+     "options": [
+      {
+       "key": "A",
+       "text": "too little oil"
+      },
+      {
+       "key": "B",
+       "text": "they sat in the sauce or in steam"
+      },
+      {
+       "key": "C",
+       "text": "too much salt"
+      },
+      {
+       "key": "D",
+       "text": "the bread was fresh"
+      }
+     ],
+     "answer": "B",
+     "why": "Moisture ruins crispness."
+    },
+    {
+     "id": "FLV-3.M4.Q4",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "FLV-3.M4.L1",
+     "safety": false,
+     "question": "When is a salad dressed?",
+     "options": [
+      {
+       "key": "A",
+       "text": "an hour ahead"
+      },
+      {
+       "key": "B",
+       "text": "just before serving"
+      },
+      {
+       "key": "C",
+       "text": "the day before"
+      },
+      {
+       "key": "D",
+       "text": "it doesn't matter"
+      }
+     ],
+     "answer": "B",
+     "why": "Dressing wilts leaves."
+    },
+    {
+     "id": "FLV-3.M4.Q5",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "FLV-3.M4.L2",
+     "safety": false,
+     "question": "Your fried shallots are perfect in the pan. What happens if you leave them?",
+     "options": [
+      {
+       "key": "A",
+       "text": "nothing"
+      },
+      {
+       "key": "B",
+       "text": "they keep cooking and darken, turning bitter"
+      },
+      {
+       "key": "C",
+       "text": "they go soft"
+      },
+      {
+       "key": "D",
+       "text": "they shrink"
+      }
+     ],
+     "answer": "B",
+     "why": "Take them out just before they look done."
+    },
+    {
+     "id": "FLV-3.M4.Q6",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "FLV-3.M4.L2",
+     "safety": false,
+     "question": "Where do fried crunchy elements drain?",
+     "options": [
+      {
+       "key": "A",
+       "text": "in a pile on paper"
+      },
+      {
+       "key": "B",
+       "text": "on a rack in one layer"
+      },
+      {
+       "key": "C",
+       "text": "in the pan"
+      },
+      {
+       "key": "D",
+       "text": "in a bowl"
+      }
+     ],
+     "answer": "B",
+     "why": "Steam softens a pile."
+    },
+    {
+     "id": "FLV-3.M4.Q7",
+     "type": "SCENARIO",
+     "lessonId": "FLV-3.M4.L2",
+     "safety": false,
+     "question": "A creamy soup needs crunch. Which element would you choose, and when do you add it?",
+     "options": [],
+     "answer": "Toasted seeds or *pangrattato* (or fried shallots), on top at the last moment, so they don't sit in the soup.",
+     "why": "Contrast, added late."
+    },
+    {
+     "id": "FLV-3.M4.Q8",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "FLV-3.M4.L2",
+     "safety": true,
+     "question": "A guest has a tree-nut allergy and your recipe uses toasted hazelnuts for crunch. What do you do?",
+     "options": [
+      {
+       "key": "A",
+       "text": "use fewer"
+      },
+      {
+       "key": "B",
+       "text": "replace them with toasted seeds or crumbs, check those labels, and keep tools apart"
+      },
+      {
+       "key": "C",
+       "text": "pick them off the guest's plate"
+      },
+      {
+       "key": "D",
+       "text": "nothing"
+      }
+     ],
+     "answer": "B",
+     "why": "Allergen rule (`SAF-1.M4`)."
+    }
+   ]
+  },
+  {
+   "id": "FLV-3.M5",
+   "title": "Pairing and composition",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** the 8 items of `FLV-3.M5` in the course file. Pass mark 80 %."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "FLV-3.M5.L1",
+     "title": "Pairing principles",
+     "prerequisites": [
+      "FLV-3.M3.L2"
+     ],
+     "competencies": [
+      {
+       "id": "FL-ARCH",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** good cooks don't pair at random. Most pairings that work do so for one of three reasons, and knowing them lets you build on a classic or test a new idea before cooking a whole dish."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** small amounts of twelve ingredients for six spoon tests (the examples below, or your own); teaspoons; the tasting form."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Three ways to pair* (Segnit [S18]):"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**complement:** flavours that share a character, for example mushroom and thyme, beetroot and dill, pork and apple;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**contrast:** flavours that oppose and balance, for example rich and sharp (mackerel and rhubarb), sweet and salty, fatty and bitter (duck and chicory);"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**bridge:** a third ingredient that links two that don't meet on their own, often a herb or spice that goes with both."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Classic pairings, and why they work,* with Dutch seasonal examples:"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Pairing",
+        "Type"
+       ],
+       "rows": [
+        [
+         "Potatoes and dill",
+         "Complement: fresh herb on a mild starch"
+        ],
+        [
+         "White asparagus, egg and butter",
+         "Complement: mild, rich and round"
+        ],
+        [
+         "Kale and smoked sausage",
+         "Contrast: bitter green and fatty smoke"
+        ],
+        [
+         "Pumpkin and sage",
+         "Contrast: sweet against resinous"
+        ],
+        [
+         "Leeks and mustard",
+         "Contrast: sweet against sharp"
+        ],
+        [
+         "Red cabbage, apple and clove",
+         "Bridge: clove links the cabbage and the apple"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Regional logic:* \"what grows together goes together\" is a useful start, not a rule."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Testing a pairing small:* taste the two together on a spoon before building a dish around them. It takes a minute and saves a dinner."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Pairing tests (60 min).** Taste six small spoon tests of two ingredients each: two complements, two contrasts and two bridged by a third ingredient. Judge each on the form: does it work, and which type is it?"
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** you can name the pairing type and the reason it works."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "A clever idea that tastes odd",
+         "Pairing by novelty alone",
+         "Name the type and the reason first"
+        ],
+        [
+         "A muddled dish",
+         "A bridge that becomes a third main flavour",
+         "Use only a little of the bridge"
+        ],
+        [
+         "A failed dinner",
+         "Not tasting the pair before cooking",
+         "Test it on a spoon"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** raw tastes only of foods that are safe raw; cooked elements are cooked first."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the form with the six tests."
+      }
+     ]
+    },
+    {
+     "id": "FLV-3.M5.L2",
+     "title": "Building flavour in layers",
+     "prerequisites": [
+      "FLV-3.M5.L1"
+     ],
+     "competencies": [
+      {
+       "id": "FL-ARCH",
+       "level": 3
+      },
+      {
+       "id": "CR-ORIG",
+       "level": 1
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** this lesson pulls the course together. The flavour plan you have written for every dish becomes the tool for designing one of your own."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** the pairing you liked best from `FLV-3.M5.L1`; the ingredients for a dish for 4 built around it; the flavour-plan form; tasters' cards."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Three layers:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**the base:** the aromatics, fat and browning that cook in, for example a *soffritto*, a *mirepoix* or toasted spices;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**the middle:** the main ingredient, its liquid, the umami layers;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**the top:** what goes in at the end and is tasted first: acid, fresh herbs, a finishing fat, texture."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*A flavour plan* names each layer before cooking; the tasting form checks it after. An example:"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Layer",
+        "Plan, for a dish of pumpkin and sage"
+       ],
+       "rows": [
+        [
+         "Base",
+         "Onion and garlic in butter; sage leaves fried in the butter"
+        ],
+        [
+         "Middle",
+         "Roast pumpkin, stock, a Parmesan rind"
+        ],
+        [
+         "Top",
+         "Cider vinegar, a few drops; the crisp sage; toasted pumpkin seeds"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*The judgment: an own combination.*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "Start from a pairing that worked on the spoon (`FLV-3.M5.L1`)."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "Give it a base and a top."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "Test it small (a spoon of the base with the main ingredient, then with the top) before cooking the whole dish."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Too much is a fault too.* Each layer has one or two elements; more than that and they fight."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**A dish in three layers (75 min).** Design a dish from your pairing, write its plan of base, middle and top, cook it, and taste it against the plan with the household."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** the tasters can describe a beginning, a middle and an end to each mouthful."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "The dish tastes flat",
+         "No top layer",
+         "Acid, herbs or texture at the end"
+        ],
+        [
+         "A muddle",
+         "Too many layers fighting",
+         "One or two elements per layer"
+        ],
+        [
+         "A plan that teaches nothing",
+         "The plan written after cooking",
+         "Write it before you shop"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** the usual kitchen rules; a new dish served to guests is checked for their allergies first (`SAF-1.M4`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the plan, the form and the tasters' cards."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "FLV-3.M5.X1",
+     "title": "A dish around an unusual pairing",
+     "description": "A dish built around an unusual pairing you choose, with a written rationale.",
+     "competencies": [
+      {
+       "id": "FL-ARCH",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** build a dish deliberately around a pairing you chose, and justify it."
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**The brief:** a pairing you have not cooked before, for example beetroot and coffee, mackerel and rhubarb, or celeriac and the anise of tarragon."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**The constraints:** a written rationale before cooking: the pairing type, why it should work, and the layers; the pairing tested on a spoon first; Dutch seasonal produce."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**The criteria:**"
+        },
+        {
+         "level": 1,
+         "marker": "",
+         "text": "three dishes have a written flavour plan (base, layers, finish): this dish and the two session dishes of the module, written up with the same plan;"
+        },
+        {
+         "level": 1,
+         "marker": "",
+         "text": "the tasters find depth and balance in them."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**The record:**"
+        },
+        {
+         "level": 1,
+         "marker": "1.",
+         "text": "Test the pairing on a spoon."
+        },
+        {
+         "level": 1,
+         "marker": "2.",
+         "text": "Write the rationale and the flavour plan."
+        },
+        {
+         "level": 1,
+         "marker": "3.",
+         "text": "Cook the dish; the tasters fill in cards."
+        },
+        {
+         "level": 1,
+         "marker": "4.",
+         "text": "Compare the cards with the plan, and write what held and what didn't."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** the chosen ingredients as a household meal; the flavour-plan form; tasters' cards."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:** three dishes with written flavour plans (base, layers, finish), among them the dish around the unusual pairing with its rationale; the tasters find depth and balance. This meets the `FL-ARCH` level 3 row; the level 4 row (two new combinations with a prediction) follows in S4."
+      },
+      {
+       "type": "paragraph",
+       "text": "AI review reads the rationale against the cards: *competent* is a pairing type and reason that the tasters' cards bear out, or an honest account of why it didn't work; *not yet* is a rationale written after the meal."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 2 h."
+      }
+     ]
+    }
+   ],
+   "items": [
+    {
+     "id": "FLV-3.M5.Q1",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "FLV-3.M5.L1",
+     "safety": false,
+     "question": "Duck with bitter chicory is a pairing by:",
+     "options": [
+      {
+       "key": "A",
+       "text": "complement"
+      },
+      {
+       "key": "B",
+       "text": "contrast"
+      },
+      {
+       "key": "C",
+       "text": "bridge"
+      },
+      {
+       "key": "D",
+       "text": "chance"
+      }
+     ],
+     "answer": "B",
+     "why": "Fatty against bitter."
+    },
+    {
+     "id": "FLV-3.M5.Q2",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "FLV-3.M5.L1",
+     "safety": false,
+     "question": "Mushroom and thyme pair by:",
+     "options": [
+      {
+       "key": "A",
+       "text": "complement: they share earthy, woody character"
+      },
+      {
+       "key": "B",
+       "text": "contrast"
+      },
+      {
+       "key": "C",
+       "text": "bridge"
+      },
+      {
+       "key": "D",
+       "text": "colour"
+      }
+     ],
+     "answer": "A",
+     "why": "Shared character."
+    },
+    {
+     "id": "FLV-3.M5.Q3",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "FLV-3.M5.L1",
+     "safety": false,
+     "question": "What does a bridge ingredient do?",
+     "options": [
+      {
+       "key": "A",
+       "text": "adds crunch"
+      },
+      {
+       "key": "B",
+       "text": "links two flavours through something both share"
+      },
+      {
+       "key": "C",
+       "text": "replaces salt"
+      },
+      {
+       "key": "D",
+       "text": "colours the dish"
+      }
+     ],
+     "answer": "B",
+     "why": "The third way to pair."
+    },
+    {
+     "id": "FLV-3.M5.Q4",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "FLV-3.M5.L1",
+     "safety": false,
+     "question": "Before building a dish around a new pairing, you:",
+     "options": [
+      {
+       "key": "A",
+       "text": "cook the whole dish"
+      },
+      {
+       "key": "B",
+       "text": "taste the two together on a spoon"
+      },
+      {
+       "key": "C",
+       "text": "ask the internet"
+      },
+      {
+       "key": "D",
+       "text": "add more salt"
+      }
+     ],
+     "answer": "B",
+     "why": "Test small first."
+    },
+    {
+     "id": "FLV-3.M5.Q5",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "FLV-3.M5.L2",
+     "safety": false,
+     "question": "In the three-layer model, where do fresh herbs and a squeeze of acid belong?",
+     "options": [
+      {
+       "key": "A",
+       "text": "the base"
+      },
+      {
+       "key": "B",
+       "text": "the middle"
+      },
+      {
+       "key": "C",
+       "text": "the top"
+      },
+      {
+       "key": "D",
+       "text": "nowhere"
+      }
+     ],
+     "answer": "C",
+     "why": "Added last, tasted first."
+    },
+    {
+     "id": "FLV-3.M5.Q6",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "FLV-3.M5.L2",
+     "safety": false,
+     "question": "A stew tastes rich but flat. Which layer is missing?",
+     "options": [
+      {
+       "key": "A",
+       "text": "the base"
+      },
+      {
+       "key": "B",
+       "text": "the top: acid, fresh herbs"
+      },
+      {
+       "key": "C",
+       "text": "the middle"
+      },
+      {
+       "key": "D",
+       "text": "none"
+      }
+     ],
+     "answer": "B",
+     "why": "Without a top, a dish tastes flat."
+    },
+    {
+     "id": "FLV-3.M5.Q7",
+     "type": "SCENARIO",
+     "lessonId": "FLV-3.M5.L2",
+     "safety": false,
+     "question": "Write a flavour plan for a pumpkin soup in three layers.",
+     "options": [],
+     "answer": "For example: base: onion and sage sweated in butter, toasted cumin; middle: roasted pumpkin and stock with a Parmesan rind; top: a few drops of cider vinegar, crisp sage and toasted seeds.",
+     "why": "Base, middle, top."
+    },
+    {
+     "id": "FLV-3.M5.Q8",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "FLV-3.M5.L2",
+     "safety": false,
+     "question": "Which is a base layer?",
+     "options": [
+      {
+       "key": "A",
+       "text": "chopped parsley at the end"
+      },
+      {
+       "key": "B",
+       "text": "a *soffritto* cooked slowly in oil"
+      },
+      {
+       "key": "C",
+       "text": "a squeeze of lemon"
+      },
+      {
+       "key": "D",
+       "text": "crisp shallots"
+      }
+     ],
+     "answer": "B",
+     "why": "Aromatics that cook in."
+    }
+   ]
+  },
+  {
+   "id": "FLV-3.M6",
+   "title": "Fixing dishes and calibration II",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** none for this module. Its judgments are shown by the fault-diagnosis test and the calibration tests, which have known answers (assessment §5)."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "FLV-3.M6.L1",
+     "title": "Complex faults",
+     "prerequisites": [
+      "FLV-3.M5.L2"
+     ],
+     "competencies": [
+      {
+       "id": "FL-CORR",
+       "level": 4
+      },
+      {
+       "id": "JD-TRBL",
+       "level": 4
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** the S1 checklist handles salt, acid, sweetness and bitterness. Many dishes that disappoint have nothing wrong with any of those: they are flat, muddy, heavy or harsh. Naming the fault is half the fix."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** a dish for 4, for example a vegetable soup; a household member to spoil four portions in different ways and keep the key; acids, herbs, fat and stock for fixing; neutral carriers; the tasting form."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Beyond salt and acid:*"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "What it tastes like",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "One-dimensional",
+         "All middle, no base or top",
+         "A top layer (acid, herbs), or more depth (umami, browned aromatics)"
+        ],
+        [
+         "Muddy",
+         "Too many flavours, none clear; often brown, overcooked herbs and spices",
+         "Brighten with acid and fresh herbs; next time, fewer elements"
+        ],
+        [
+         "Heavy",
+         "Too much fat or starch, no lift",
+         "Acid, a fresh or bitter element, a lighter garnish; thin a sauce"
+        ],
+        [
+         "Harsh",
+         "Raw garlic or alcohol, burnt spices, too much acid or bitterness",
+         "Cook longer if raw; round with fat or a little sweetness; dilute. Burnt can't be fixed"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*The diagnosis order:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "salt first, because most faults are salt;"
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "then acid;"
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "then the layers: base, middle, top;"
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "then texture."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "One change at a time, tasted on a carrier."
+      },
+      {
+       "type": "paragraph",
+       "text": "*The judgment: fix or restart?* Burnt, scorched and badly over-salted dishes are often better restarted, or turned into something else: an over-salted soup becomes the base for a larger pot with more unsalted vegetables and stock."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Diagnose (60 min).** A household member spoils four portions of one dish, each in a different way. Taste each, name the fault in one or two words, and write the fix and its reason."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Fix (60 min).** Fix two of them, and have them tasted blind against an unspoiled portion."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** the fault named in one or two words, with the fix and its reason."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "A salty, still-flat dish",
+         "Adding salt to every fault",
+         "Follow the diagnosis order"
+        ],
+        [
+         "No idea what worked",
+         "Changing three things at once",
+         "One change, tasted, then the next"
+        ],
+        [
+         "A burnt, spicy dish",
+         "Covering a burnt taste with more spice",
+         "Restart; burnt can't be fixed"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** portions for tasting are kept hot or chilled between rounds as in `SAF-1`; tasting spoons are used once."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the four diagnoses and the two blind results."
+      }
+     ]
+    },
+    {
+     "id": "FLV-3.M6.L2",
+     "title": "Calibration II",
+     "prerequisites": [
+      "TST-1.M4.L3"
+     ],
+     "competencies": [
+      {
+       "id": "FL-SENS",
+       "level": 4
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** your tasting forms are evidence only while your palate is shown to be reliable. A palate drifts, so the evidence rule asks for a calibration passed in the last 6 months behind every sensory form (assessment §5.5)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** a household member to prepare and code the samples, with the key sheet; the coded cups; water and plain crackers for rinsing; salt, an acid, strong tea and stock with soy or miso for the samples; your `TST-1` results."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*The tests* (assessment §5), prepared and coded by a household member:"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**the salt and acid triangle tests,** repeated from S1: three cups, two the same, one different; you pick the odd one;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**a bitterness ranking:** for example strong tea at five strengths, put in order;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**an umami ranking:** stock with five amounts of soy or miso, put in order."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*How to taste reliably:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "the samples prepared by someone else, or with a delay, so you can't remember which is which;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "rinse with water and a cracker between cups;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "taste slowly, and in the order given;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "write your answer before looking at the key."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Comparing with S1.* Set the results against your `TST-1` baseline. A weaker result is not a failure of the course: it is retaken after a week of tasting practice (tasting and naming a salt and an acid level with every meal)."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Logging.* The date, the results and the key sheet go into the journal; the 6-month validity of your sensory forms is updated from this date."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**The tests (60 min).** Take the salt and acid triangles, then the bitterness and umami rankings. Compare the results with the baseline, and log them with the key sheet."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** results logged with the date and the key sheet; the 6-month validity updated."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "A result that proves nothing",
+         "Preparing and coding your own samples without a delay",
+         "Someone else codes them"
+        ],
+        [
+         "Muddled answers",
+         "Tasting too fast without rinsing",
+         "Rinse between every cup"
+        ],
+        [
+         "Forms resting on an old result",
+         "Skipping the retake after a fail",
+         "A week's practice, then retake"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** samples are tasted and spat or swallowed in small amounts; the tea is cooled before tasting."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the results, the key sheet and the comparison with S1."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "FLV-3.M6.X1",
+     "title": "Fix three faulty dishes",
+     "description": "Fix three faulty dishes prepared by a household member.",
+     "competencies": [
+      {
+       "id": "FL-CORR",
+       "level": 4
+      },
+      {
+       "id": "JD-TRBL",
+       "level": 4
+      },
+      {
+       "id": "FL-SENS",
+       "level": 4
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** diagnose and fix faults in dishes you didn't make, and pass the fault-diagnosis test."
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**The brief:** a household member prepares three faulty dishes from your shopping list, one fault each, chosen from the complex faults and the §5.3 list and unknown to you."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**The constraints:** each diagnosis written before you fix; one change at a time; a restart allowed where a fix isn't sensible, with the reason."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**The extension:** the fault-diagnosis test of assessment §5.3 itself: five coded versions of one base (a soup or a sauce), with two corrections tasted blind; and the sensory forms of five dishes from this course compared with the tasters' cards."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**The record:**"
+        },
+        {
+         "level": 1,
+         "marker": "1.",
+         "text": "Taste each faulty dish; write the diagnosis and the reason from the science."
+        },
+        {
+         "level": 1,
+         "marker": "2.",
+         "text": "Fix it, or restart where a fix isn't sensible, and log what was done."
+        },
+        {
+         "level": 1,
+         "marker": "3.",
+         "text": "The household tastes the fixes."
+        },
+        {
+         "level": 1,
+         "marker": "4.",
+         "text": "Take the §5.3 test: name the faults, write the corrections, and correct two; the tasters compare blind."
+        },
+        {
+         "level": 1,
+         "marker": "5.",
+         "text": "Compare the sensory forms of five dishes from this course with the tasters' cards."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** the three dishes and the test base, prepared by the household member; acids, herbs, fat and stock for fixing; coded cups; the forms and the cards."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`FL-CORR` level 4:** the fault-diagnosis test passed: four of five faults named, both corrections judged good."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`JD-TRBL` level 4:** three unfamiliar faults diagnosed from the science and recovered (or a reasoned restart), logged; the fault-diagnosis test passed."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`FL-SENS` level 4:** the fault-diagnosis test passed, and forms that match the tasters in at least 4 of 5 dishes; the blind aroma identification (12 of 16) is in `FLV-3.M1.X1` and `FLV-3.M2.X2`."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "AI review reads the diagnoses against the key: *competent* is each fault named with a reason before the fix; *not yet* is a diagnosis written after the fix, or every fault treated with salt."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 2 h, plus the household member's preparation."
+      }
+     ]
+    }
+   ],
+   "items": []
+  }
+ ]
+}

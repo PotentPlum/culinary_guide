@@ -117,7 +117,7 @@ def check_backup_references(backup: dict, veg_ids: set[str], where: str) -> list
 
     recipes = {r["id"] for r in backup.get("recipes", [])}
     quests = {q["id"] for q in backup.get("quests", [])}
-    for kind in ("recipes", "quests", "attempts", "shoppingItems"):
+    for kind in ("recipes", "quests", "attempts", "shoppingItems", "checkAttempts", "evidence"):
         unique(f"{where}.{kind}", [x["id"] for x in backup.get(kind, [])])
     # Groups, ingredients and steps are rows with their own primary key, so their ids are unique across recipes.
     for groups, children in (("ingredientGroups", "items"), ("stepGroups", "steps")):
@@ -140,6 +140,10 @@ def check_backup_references(backup: dict, veg_ids: set[str], where: str) -> list
             err(at, "peakVegIds must be a subset of vegIds")
         if a.get("photo") and a["photo"] != f"journal/{a['id']}.jpg":
             err(at, "photo must be journal/{id}.jpg")
+    unique(f"{where}.lessonProgress", [x["lessonId"] for x in backup.get("lessonProgress", [])])
+    for e in backup.get("evidence", []):
+        if e.get("photo") and e["photo"] != f"evidence/{e['id']}.jpg":
+            err(f"{where}.evidence.{e['id']}", "photo must be evidence/{id}.jpg")
     for r in backup.get("recipes", []):
         if r.get("image") and r["image"] != f"images/{r['id']}.jpg":
             err(f"{where}.recipes.{r['id']}", "image must be images/{id}.jpg")

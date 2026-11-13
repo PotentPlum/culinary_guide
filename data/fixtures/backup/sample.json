@@ -113,5 +113,12 @@
     { "id": "sh1", "text": "1 kg flespompoen", "quantity": 1.0, "unit": "kg", "name": "flespompoen", "recipeId": "r-pompoensoep", "checked": false, "position": 0, "createdAt": 1791700000000 },
     { "id": "sh2", "text": "Koffiefilters", "checked": true, "position": 1, "createdAt": 1791700000000 }
   ],
+  "lessonProgress": [{ "lessonId": "EGG-1.M1.L1", "completedAt": 1791800000000 }],
+  "checkAttempts": [
+    { "id": "c1", "moduleId": "EGG-1.M1", "takenAt": 1791810000000, "total": 10, "correct": 9, "safetyTotal": 2, "safetyCorrect": 2, "passed": true, "wrongItemIds": ["EGG-1.M1.Q3"] }
+  ],
+  "evidence": [
+    { "id": "e1", "exerciseId": "EGG-1.M1.X1", "loggedAt": 1791820000000, "band": "COMPETENT", "notes": "Gelijkmatig gestold, zacht in het midden." }
+  ],
   "settings": { "quality": "BALANCED", "seasonalNotificationsEnabled": false, "librarySort": "RECENTLY_ADDED", "showQuestCard": true }
 }

@@ -1,0 +1,2528 @@
+{
+ "schemaVersion": 1,
+ "id": "RDV-4",
+ "introduction": [
+  {
+   "type": "paragraph",
+   "text": "**Before you start.** Until now you cooked from recipes, frameworks and briefs. This course turns you into someone who makes recipes:"
+  },
+  {
+   "type": "list",
+   "items": [
+    {
+     "level": 0,
+     "marker": "",
+     "text": "**ratios:** the proportions behind doughs, batters, custards, stocks, vinaigrettes, brines and cures [S14], so you no longer need a recipe for the basics, and can read any recipe as a ratio;"
+    },
+    {
+     "level": 0,
+     "marker": "",
+     "text": "**deconstruction:** taking a restaurant or cookbook dish apart into components, techniques and flavour logic, and recreating it from a menu description or a memory;"
+    },
+    {
+     "level": 0,
+     "marker": "",
+     "text": "**substitution and adaptation:** replacing what an ingredient *does*, and adapting a recipe to another oven, pan, quantity, season or diet;"
+    },
+    {
+     "level": 0,
+     "marker": "",
+     "text": "**testing:** one variable at a time, controls, blind panels and versions, until the dish is better or the test says stop [S17];"
+    },
+    {
+     "level": 0,
+     "marker": "",
+     "text": "**writing:** a recipe someone else can cook to the same result, and a first original dish."
+    }
+   ]
+  },
+  {
+   "type": "paragraph",
+   "text": "The test kitchen is your household kitchen, and the tasters are the household and guests, as in every course. Produce follows the Dutch seasons: adapting a recipe \"to the season\" means to what is grown here now."
+  },
+  {
+   "type": "paragraph",
+   "text": "Plan about four weeks at 6.5 hours a week. The test series of `RDV-4.M4` and the original dish of `RDV-4.M5` need several rounds a few days apart, so they overlap with the next course."
+  },
+  {
+   "type": "paragraph",
+   "text": "**Have ready:** the 1 g scale and the 0.1 g scale; a notebook or spreadsheet for numbered versions; tasting cups and the tasting form (`TST-1`); the oven thermometer; labels and a pen; your recipe file; the receipts of a week's shopping."
+  }
+ ],
+ "modules": [
+  {
+   "id": "RDV-4.M1",
+   "title": "Working from ratios",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** the 8 items of `RDV-4.M1` in the course file, 1 of them a safety item. Pass mark 80 %, with every safety item correct."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "RDV-4.M1.L1",
+     "title": "The core ratios",
+     "prerequisites": [
+      "BAK-2.M1.L1"
+     ],
+     "competencies": [
+      {
+       "id": "RD-RATO",
+       "level": 4
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** a handful of ratios sits behind most basic preparations. Knowing them by heart lets you cook any quantity without a recipe, see at once what a recipe is doing, and vary the flavour without breaking the structure."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** flour, water, salt, yeast; milk and eggs; oil and vinegar; a cut of meat or poultry for a brine (or a piece of pork belly for a cure); the 1 g scale; bowls; a container with a lid for the brine; labels."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*The core ratios* [S14], by weight:"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Preparation",
+        "Ratio",
+        "Note"
+       ],
+       "rows": [
+        [
+         "Bread dough",
+         "5 flour : 3 water (60 % hydration)",
+         "Salt 2 % of the flour; yeast to taste (`BRD-2`)"
+        ],
+        [
+         "Pasta",
+         "3 flour : 2 egg",
+         "`CUI-3.M3`"
+        ],
+        [
+         "Pie dough (*pâte brisée*)",
+         "3 flour : 2 fat : 1 water",
+         ""
+        ],
+        [
+         "Pound cake",
+         "1 flour : 1 butter : 1 egg : 1 sugar",
+         ""
+        ],
+        [
+         "Crêpe batter",
+         "1 flour : 2 liquid : 1 egg",
+         ""
+        ],
+        [
+         "Custard",
+         "2 milk or cream : 1 egg",
+         "A set custard; a pouring custard uses yolks only"
+        ],
+        [
+         "Stock",
+         "3 water : 2 bones",
+         ""
+        ],
+        [
+         "Vinaigrette",
+         "3 oil : 1 acid",
+         ""
+        ],
+        [
+         "Roux",
+         "1 flour : 1 fat",
+         "About 60–100 g roux per litre for a *velouté* or *béchamel*"
+        ],
+        [
+         "Brine",
+         "5–6 % salt by weight of the water",
+         "For meat and poultry (`SLW-3`, `GRD-3`)"
+        ],
+        [
+         "Dry cure",
+         "Salt about 2.5–3 % of the meat's weight",
+         "The equilibrium method; nitrite only where a tested recipe needs it (assessment §9)"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Scaling.* Choose the amount of the base ingredient, then work out the rest. For a crêpe batter for four with 125 g of flour: 250 g of milk and 125 g of egg (two to three eggs)."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Ratios are starting points.* Flours, eggs and fats differ, so adjust by feel and write the change down."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Three from ratios (60 min).** Make a bread dough, a crêpe batter and a vinaigrette from the ratios alone, scaled to your household. Write the weights before you cook."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Two more (60 min).** Make a custard and a brine or a cure from the ratios alone, and photograph the results."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "each preparation within standard without a recipe;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "the scaled weights written before cooking."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "A dough or batter far off",
+         "Measured by volume",
+         "Weigh everything"
+        ],
+        [
+         "A wet dough or batter",
+         "The fruit's or vegetable's own water forgotten",
+         "Count it as liquid"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** brined and curing meat kept covered in the fridge at 4 °C, as the Dutch home advice says (assessment §9); nitrite curing salt only where a tested recipe needs it, at most 80 mg of nitrite per kg of meat, weighed from the label (§9). A custard baked until set."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the five sets of scaled weights; the photos; any adjustment and why."
+      }
+     ]
+    },
+    {
+     "id": "RDV-4.M1.L2",
+     "title": "From recipe to ratio",
+     "prerequisites": [
+      "RDV-4.M1.L1"
+     ],
+     "competencies": [
+      {
+       "id": "RD-RATO",
+       "level": 4
+      },
+      {
+       "id": "KM-MATH",
+       "level": 4
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** once a recipe is written as a ratio, you can compare it with the core and see whether it is a different preparation or a mistake. This is how you read a new recipe before you trust it."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** five recipes from books, websites or your own file, at least one in cups and spoons; a conversion table for the ingredients in cups (by ingredient, since a cup of flour and a cup of sugar weigh differently); a calculator; the ratio sheet of `RDV-4.M1.L1`."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Converting a recipe.*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "Turn every ingredient into grams; convert cups and spoons with the table."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "Divide each by the base ingredient: flour for doughs, liquid for custards, meat for brines."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "Write the result as parts or percentages."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "A worked example, a recipe for a \"pound cake\":"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Ingredient",
+        "Grams",
+        "Parts (flour = 1)"
+       ],
+       "rows": [
+        [
+         "Flour",
+         "200",
+         "1"
+        ],
+        [
+         "Butter",
+         "100",
+         "0.5"
+        ],
+        [
+         "Egg",
+         "200",
+         "1"
+        ],
+        [
+         "Sugar",
+         "200",
+         "1"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "The butter is half the core ratio: either a lighter cake by design or a mistake. You decide which, from the method and the result."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Spotting outliers.* A recipe far from the core (a \"pound cake\" with half the butter, a vinaigrette at 1:1) is either a different preparation or a mistake. Not every difference is a mistake."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Baker's percentages* (`BRD-2`). Every ingredient as a percentage of the flour. The same idea works for other bases: salt as a percentage of the meat, sugar as a percentage of the fruit."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Scaling with a reason.* Salt, spices, leavening and cooking times don't always scale in a straight line (`KM-MATH`): a doubled stew needs less than double the salt at first, and a thicker loaf takes longer, not twice as long."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Five recipes into ratios (60 min).** Convert five recipes from books or your file. Mark the outliers and explain each."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** each recipe written as a ratio, compared with the core, and its outliers explained."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Ratios that make no sense",
+         "Volumes converted without a table",
+         "Use a table per ingredient"
+        ],
+        [
+         "Every recipe looks wrong",
+         "Every difference called a mistake",
+         "Ask what the difference does first"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** none beyond reading: where a converted recipe has a cure, a brine or a safety figure, check it against assessment §9 before you cook it."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the five ratio tables; the outliers and your verdict on each."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "RDV-4.M1.X1",
+     "title": "A week of cooking from ratios",
+     "description": "A week of cooking from ratios only.",
+     "competencies": [
+      {
+       "id": "RD-RATO",
+       "level": 4
+      },
+      {
+       "id": "KM-MATH",
+       "level": 4
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** cook for a week from ratios only (no recipes), derive new formulas, and cost the week precisely. Derive two formulas for new preparations (for example a brine for a cut you haven't brined before, a custard for a savoury flan of a seasonal vegetable), written in percentages, cooked and to standard. Cost the week's menu per portion from measured yields, within 10 % of the receipts, with non-linear scaling reasoned."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** the week's seasonal produce and staples; the ratio sheets; the receipts; the scale."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Procedure:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "Plan the week's dishes and their ratios; scale them to the household."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "Derive the two new formulas; write them in percentages."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "Cook through the week; photograph each dish; log any adjustment."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "Weigh the yields; cost each portion; compare with the receipts."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`RD-RATO` level 4:** two new formulas in percentages, cooked and to standard. The sweet formulas are in `PST-4.M2.X1`."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`KM-MATH` level 4:** the week costed per portion from measured yields, within 10 % of the receipts, non-linear scaling reasoned."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "AI review reads the plan, the formulas, the photos and the costing: *competent* is two formulas in percentages that cooked to standard, a costing within 10 % of the receipts, and scaling decisions with reasons; *not yet* is a recipe used, a costing from list prices instead of yields, or a cure outside the §9 rows."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** the week's cooking, plus 2 h for formulas and costing."
+      }
+     ]
+    }
+   ],
+   "items": [
+    {
+     "id": "RDV-4.M1.Q1",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "RDV-4.M1.L1",
+     "safety": false,
+     "question": "What is the classic vinaigrette ratio?",
+     "options": [
+      {
+       "key": "A",
+       "text": "1 oil to 1 acid"
+      },
+      {
+       "key": "B",
+       "text": "3 oil to 1 acid"
+      },
+      {
+       "key": "C",
+       "text": "5 oil to 1 acid"
+      },
+      {
+       "key": "D",
+       "text": "1 oil to 3 acid"
+      }
+     ],
+     "answer": "B",
+     "why": "Adjusted by taste from there."
+    },
+    {
+     "id": "RDV-4.M1.Q2",
+     "type": "CALCULATION",
+     "lessonId": "RDV-4.M1.L1",
+     "safety": false,
+     "question": "Bread dough at 5 parts flour to 3 parts water: how much water for 750 g flour?",
+     "options": [],
+     "answer": "450 g",
+     "why": "750 ÷ 5 × 3."
+    },
+    {
+     "id": "RDV-4.M1.Q3",
+     "type": "CALCULATION",
+     "lessonId": "RDV-4.M1.L1",
+     "safety": false,
+     "question": "A 5 % brine: how much salt for 2 litres (2,000 g) of water?",
+     "options": [],
+     "answer": "100 g",
+     "why": "2,000 × 0.05."
+    },
+    {
+     "id": "RDV-4.M1.Q4",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "RDV-4.M1.L1",
+     "safety": false,
+     "question": "Which ratio describes a pound cake?",
+     "options": [
+      {
+       "key": "A",
+       "text": "3:2:1"
+      },
+      {
+       "key": "B",
+       "text": "1:1:1:1 flour, butter, egg, sugar"
+      },
+      {
+       "key": "C",
+       "text": "5:3"
+      },
+      {
+       "key": "D",
+       "text": "2:1"
+      }
+     ],
+     "answer": "B",
+     "why": "Its name."
+    },
+    {
+     "id": "RDV-4.M1.Q5",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "RDV-4.M1.L1",
+     "safety": true,
+     "question": "When may nitrite curing salt go into a cure developed from a ratio?",
+     "options": [
+      {
+       "key": "A",
+       "text": "always"
+      },
+      {
+       "key": "B",
+       "text": "only where a tested recipe needs it, within the §9 limit"
+      },
+      {
+       "key": "C",
+       "text": "never"
+      },
+      {
+       "key": "D",
+       "text": "by taste"
+      }
+     ],
+     "answer": "B",
+     "why": "Nitrite row of assessment §9."
+    },
+    {
+     "id": "RDV-4.M1.Q6",
+     "type": "SCENARIO",
+     "lessonId": "RDV-4.M1.L2",
+     "safety": false,
+     "question": "A recipe's crêpe batter is 1 flour, 1 liquid, 1 egg. What do you conclude?",
+     "options": [],
+     "answer": "It is far from the core (1:2:1): either a thicker batter for a different use (pancakes) or a mistake; check the purpose before deciding.",
+     "why": "Outliers."
+    },
+    {
+     "id": "RDV-4.M1.Q7",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "RDV-4.M1.L2",
+     "safety": false,
+     "question": "Why convert a recipe to weights before finding the ratio?",
+     "options": [
+      {
+       "key": "A",
+       "text": "tradition"
+      },
+      {
+       "key": "B",
+       "text": "volumes of flour and sugar vary, weights don't"
+      },
+      {
+       "key": "C",
+       "text": "it's quicker"
+      },
+      {
+       "key": "D",
+       "text": "for cost"
+      }
+     ],
+     "answer": "B",
+     "why": "Ratios are by weight."
+    },
+    {
+     "id": "RDV-4.M1.Q8",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "RDV-4.M1.L2",
+     "safety": false,
+     "question": "You scale a stew from 4 to 12 portions. What does not triple?",
+     "options": [
+      {
+       "key": "A",
+       "text": "the meat"
+      },
+      {
+       "key": "B",
+       "text": "the vegetables"
+      },
+      {
+       "key": "C",
+       "text": "the cooking time"
+      },
+      {
+       "key": "D",
+       "text": "the stock"
+      }
+     ],
+     "answer": "C",
+     "why": "Non-linear scaling."
+    }
+   ]
+  },
+  {
+   "id": "RDV-4.M2",
+   "title": "Deconstructing dishes",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** none for this module. Its one judgment objective (analysing a dish) is shown by the written analysis and the side-by-side notes of `RDV-4.M2.X1`."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "RDV-4.M2.L1",
+     "title": "Analysing a dish",
+     "prerequisites": [
+      "FLV-3.M5.L1"
+     ],
+     "competencies": [
+      {
+       "id": "JD-CHSE",
+       "level": 4
+      },
+      {
+       "id": "FL-ARCH",
+       "level": 4
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** every dish you eat out is a lesson, if you can take it apart. A grid for components, techniques and flavour logic turns a good meal into a plan you can cook."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** a restaurant meal (notes and photos taken at the table) or a cookbook photo with its title; the analysis grid below; the flavour notes of `FLV-3`."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*The analysis grid.* For a dish eaten out or read in a book:"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Line",
+        "Ask"
+       ],
+       "rows": [
+        [
+         "Components",
+         "The main item, sauce, garnish, texture elements"
+        ],
+        [
+         "Techniques",
+         "How each was cooked, how it was cut, what was made ahead"
+        ],
+        [
+         "Flavour logic (`FLV-3`)",
+         "The base, the contrast, the acid, the fat, the aromatics, the season"
+        ],
+        [
+         "Contrasts",
+         "Texture and temperature"
+        ],
+        [
+         "Intent",
+         "What the cook wanted the guest to notice"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Reading from taste.*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "The tongue and nose tell you salt, acid, sweetness, bitterness, umami and the aromatics."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "The texture tells you about the technique: a confit is silky, a quick sear firm at the edge."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "The colour tells you about browning."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Uncertainty.* Mark each line as certain, likely or a guess, and write how a test would decide. \"The sauce is thickened with butter (likely: glossy, rich, split slightly as it cooled); a test: mount a reduction and compare.\""
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Two dishes analysed (60 min).** One from a restaurant meal, with notes and photos taken at the table; one from a cookbook photo and its title. Write each in the grid, with the certainty marked on every line."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** each component, technique and flavour role named, with the certainty marked."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "A list of ingredients",
+         "Their role not named",
+         "Write what each does"
+        ],
+        [
+         "A plan built on a wrong guess",
+         "A guess treated as a fact",
+         "Mark certainty; test the guesses small"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** a dish recreated from a restaurant follows the safety rows of assessment §9 at home, whatever the restaurant did; note anything served raw or rare, and who you would not serve it to."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** both grids; the photos; the guesses you would test first, and how you would test each one small."
+      }
+     ]
+    },
+    {
+     "id": "RDV-4.M2.L2",
+     "title": "Recreating from a description",
+     "prerequisites": [
+      "RDV-4.M2.L1"
+     ],
+     "competencies": [
+      {
+       "id": "CR-IMPV",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** recreating a dish turns analysis into cooking, with the risk that the uncertain part fails at the table. A plan with a fallback, and the habit of improvising from what is at hand, make you a cook who doesn't depend on a recipe."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** one of the analysed dishes of `RDV-4.M2.L1` with its grid; seasonal produce; your repertoire of frameworks and ratios; for the improvised meal, only what is in the fridge and pantry; a timer."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*From analysis to plan.* Turn each component into a method from your repertoire (a framework, a ratio). Test the uncertain parts small first."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Fallbacks.* For the riskiest step, have a simpler alternative ready: a pan sauce if the emulsion splits; a purée if the gel doesn't set."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Working from what's at hand.* A recreation often meets a missing ingredient: choose the substitute by function (`RDV-4.M3`). You can improvise a whole meal from the fridge and pantry the same way:"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "Photograph what is there."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "Choose one main item and one idea."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "Add one contrast (acid, crunch, freshness) and stop."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "Cook within 45 minutes."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Side-by-side notes.* Compare the recreation with the memory or description: what matched, what didn't, and why. Write them the same evening, while the taste of both is fresh, and mark which differences you would test next."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**A recreation (60 min).** Cook one of the analysed dishes from your plan."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**An improvised meal (45 min).** Photograph what is in the fridge and pantry, then cook a meal within 45 minutes without a recipe."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "a dish the tasters recognise from the description;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "an improvised meal on the table within 45 minutes."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "The dinner fails at one component",
+         "The most uncertain part cooked first at the dinner",
+         "Test it small beforehand; keep the fallback ready"
+        ],
+        [
+         "A muddled improvised meal",
+         "Everything added",
+         "One idea, one contrast"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** leftovers used in an improvised meal only within their 2 days and reheated until steaming hot, once (assessment §9); a missing ingredient replaced with its allergens checked."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the plan with its fallback; the side-by-side notes; the fridge photo and the meal photo with the time."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "RDV-4.M2.X1",
+     "title": "Recreate a dish you ate out",
+     "description": "Recreate a dish you ate out, from memory and a menu description.",
+     "competencies": [
+      {
+       "id": "JD-CHSE",
+       "level": 4
+      },
+      {
+       "id": "FL-ARCH",
+       "level": 4
+      },
+      {
+       "id": "CR-IMPV",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** recreate a restaurant dish from memory and its menu description, and build on it, with a written analysis, a plan, a fallback and side-by-side notes. The extensions:"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "tasters who know the menu description judge whether they recognise the dish;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "two new combinations developed from it (for example the dish moved to another Dutch season), each with a written prediction, cooked, and judged by tasters with the form;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "three meals improvised from what was at hand during the module (photographed first, within 45 minutes, without a recipe), judged good by the tasters."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** the menu description and notes or photos from the meal; seasonal produce; tasters' cards and the form."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Procedure:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "Write the analysis, the plan and the fallback."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "Cook the recreation; photograph it; collect tasters' cards; write the side-by-side notes."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "Write two new combinations with predictions; cook them; collect cards and the form."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "Over the module, improvise three meals: photograph what is at hand, cook within 45 minutes, collect cards."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`JD-CHSE` level 4, dish two of two:** recreated from a description with a written plan and fallback, recognised by the tasters. The first is in `MOD-4.M1.X1`."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`FL-ARCH` level 4:** two new combinations with predictions, cooked; cards and form show whether they held."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`CR-IMPV` level 3:** three improvised meals within 45 minutes without a recipe, judged good."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "AI review reads the analysis, the plan, the photos, the cards and the forms: *competent* is a recreation the tasters recognise, two predictions checked against the form, and three timed improvised meals; *not yet* is no fallback, a prediction written after cooking, or a meal over 45 minutes."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 2.5 h for the recreation; 1 h for each combination; three 45-minute meals."
+      }
+     ]
+    }
+   ],
+   "items": []
+  },
+  {
+   "id": "RDV-4.M3",
+   "title": "Substitution and adaptation",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** the 8 items of `RDV-4.M3` in the course file, 1 of them a safety item. Pass mark 80 %, with every safety item correct."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "RDV-4.M3.L1",
+     "title": "Function-first substitution",
+     "prerequisites": [
+      "NUT-3.M2.L1"
+     ],
+     "competencies": [
+      {
+       "id": "RD-ADPT",
+       "level": 4
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** an ingredient is replaced well only if you know what it does. Naming its functions first, and covering each one, gives a substitute that works and doesn't bring a new allergen to the table."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** a batter, a crumble and a cream sauce from your repertoire, with their ingredients twice; for the substitutes, ground flaxseed and water, a dairy-free spread or a neutral oil, and an oat or soy cream; the labels of every substitute; the scale."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*What an ingredient does.* Before you replace it, name its functions:"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**structure:** gluten (flour), egg proteins, starch, gelatin;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**moisture:** water, milk, fruit and vegetable purées;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**fat:** tenderness, richness, carrying flavour, browning;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**flavour:** taste, aroma, acidity, sweetness;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**other:** leavening, emulsifying (egg yolk, mustard), colour, binding."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Replacing the function.* A substitute must do the same job. If it does only part, cover the rest with another ingredient: an egg in a cake replaced by a flax \"egg\" for binding, plus a little extra leavening for lift."
+      },
+      {
+       "type": "paragraph",
+       "text": "A worked example, butter in a crumble:"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Function of butter",
+        "Replaced by"
+       ],
+       "rows": [
+        [
+         "Fat: binds the crumbs, makes them tender",
+         "A dairy-free spread or oil"
+        ],
+        [
+         "Browning and flavour",
+         "A little extra sugar; a longer bake if pale"
+        ],
+        [
+         "Water (butter is partly water)",
+         "Check the spread's label; adjust if the crumbs are dry"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Allergens and diets* (`NUT-3`)."
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "Gluten-free flour blends need a binder (xanthan, psyllium)."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "Dairy-free butter substitutes differ in water content."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "Nuts are replaced by seeds."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "The 14 allergen groups are checked on every label: a substitute carries allergens of its own."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Predicting the change.* Write it before cooking; check it against the result."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Three substitutions by function (60 min).** For example egg in a batter, butter in a crumble, cream in a sauce. Predict each, cook it against the original, and compare."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** the prediction names the function lost and how it is replaced; the result is close to the original."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "A crumbly or flat result",
+         "Swapped by name (any flour for any flour)",
+         "Name the function; replace each part"
+        ],
+        [
+         "A new allergen on the table",
+         "The substitute's label not read",
+         "Read every label against the guest's allergies"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** every substitute's label read for the 14 allergen groups and the guest's other allergies (`NUT-3`); the substitute's label kept with the dish."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the three predictions and results; the labels you checked."
+      }
+     ]
+    },
+    {
+     "id": "RDV-4.M3.L2",
+     "title": "Adapting to equipment, scale and season",
+     "prerequisites": [
+      "SLW-3.M4.L2"
+     ],
+     "competencies": [
+      {
+       "id": "RD-ADPT",
+       "level": 4
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** a recipe is written for one oven, one pan, one quantity and one season. Predicting what changes when any of these changes is what lets you cook the recipe anywhere, for anyone, all year."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** a household dish you know well, with twice its ingredients; a dish from the other half of the year and your notes or memory of it; the oven thermometer; a larger pan or a second one."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Another oven.* Check it with the oven thermometer (`EQP-1`). Fan ovens run about 20 °C lower than conventional ones for the same result. Turn the trays around if the oven has hot spots."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Another pan.* A wider pan reduces faster and browns more; a smaller pan crowds. Cast iron holds heat; stainless steel responds faster."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Another quantity.*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "Scale the weights."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "Adjust the salt and spices by taste."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "Judge cooking times by thickness rather than weight."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "Split batches when the pan or oven can't take them (`KM-MATH`)."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Another season.* A summer dish moved to winter keeps its idea with the vegetables of the season (courgette becomes celeriac; fresh herbs become dried, or parsley root), and its cooking adjusts (roasting rather than raw)."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Predicting what changes.* Write it before cooking (time, texture, browning, seasoning) and check it after. For a doubled stew in the same pan, for example: deeper liquid, so a longer simmer; less browning per batch, so sear in two rounds."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Twice the quantity (60 min).** Double a household dish. Write the predicted changes and check them."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Another season (60 min).** Adapt a dish from the other half of the year to the current season, and taste it against your notes or memory of the original."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** predictions that hold, or a clear reason why not."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Too salty, overcooked",
+         "Salt and time doubled",
+         "Salt by taste; time by thickness"
+        ],
+        [
+         "Hard, raw winter roots",
+         "A summer dish's raw method kept",
+         "Roast or braise them"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** a doubled batch cooled by the cooling rule, in shallow containers (assessment §9); the core temperatures of §9 checked with the probe, not taken from the original time."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the predictions next to what happened; photos of both dishes."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "RDV-4.M3.X1",
+     "title": "A favourite recipe adapted",
+     "description": "Adapt a favourite recipe to a new season and to twice the quantity.",
+     "competencies": [
+      {
+       "id": "RD-ADPT",
+       "level": 4
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** adapt recipes to new conditions and needs, with predictions, so the result is as good as the original. Adapt a favourite recipe to a new season and to twice the quantity. Then adapt a second dish for a diet or allergen (for example gluten-free or dairy-free for a guest), with the functions named and replaced. Cook each adaptation beside its original, so the tasters compare like with like."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** the favourite recipe; the season's produce; for the second dish, the substitutes, checked for the guest's allergens; tasters' cards."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Procedure:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "Write the predictions for the seasonal, doubled version; cook it; compare with the original."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "Name the functions in the second dish; choose the substitutes; predict; cook it alongside the original."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "Serve both originals and adaptations to tasters; collect cards."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "Write whether the predictions held."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:** two dishes adapted (one for an allergen or diet, one for quantity and season) with predictions; the tasters judge each adapted dish as good as the original, as the `RD-ADPT` level 4 row asks."
+      },
+      {
+       "type": "paragraph",
+       "text": "AI review reads the predictions, the function list, the labels and the cards: *competent* is predictions written before cooking, each function replaced, labels checked, and tasters who rate the adaptations as good as the originals; *not yet* is a substitute with an unchecked allergen, or no comparison with the original."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 2 sessions of 1.5 h."
+      }
+     ]
+    }
+   ],
+   "items": [
+    {
+     "id": "RDV-4.M3.Q1",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "RDV-4.M3.L1",
+     "safety": false,
+     "question": "What do eggs do in a cake?",
+     "options": [
+      {
+       "key": "A",
+       "text": "only flavour"
+      },
+      {
+       "key": "B",
+       "text": "structure, binding, moisture and some lift"
+      },
+      {
+       "key": "C",
+       "text": "colour only"
+      },
+      {
+       "key": "D",
+       "text": "sweetness"
+      }
+     ],
+     "answer": "B",
+     "why": "Name every function before replacing."
+    },
+    {
+     "id": "RDV-4.M3.Q2",
+     "type": "SCENARIO",
+     "lessonId": "RDV-4.M3.L1",
+     "safety": false,
+     "question": "You replace wheat flour with a gluten-free blend in a bread. What else must change, and why?",
+     "options": [],
+     "answer": "Add a binder (psyllium or xanthan) to replace the structure gluten gave, and usually more water; expect a different crumb.",
+     "why": "Replace the function, not the name."
+    },
+    {
+     "id": "RDV-4.M3.Q3",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "RDV-4.M3.L1",
+     "safety": true,
+     "question": "You replace butter with a seed butter for a dairy-free guest. What do you check?",
+     "options": [
+      {
+       "key": "A",
+       "text": "nothing"
+      },
+      {
+       "key": "B",
+       "text": "the label for allergens (sesame, for example) and the guest's other allergies"
+      },
+      {
+       "key": "C",
+       "text": "the colour"
+      },
+      {
+       "key": "D",
+       "text": "the price"
+      }
+     ],
+     "answer": "B",
+     "why": "A substitute carries its own allergens."
+    },
+    {
+     "id": "RDV-4.M3.Q4",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "RDV-4.M3.L1",
+     "safety": false,
+     "question": "Which ingredient emulsifies a dressing?",
+     "options": [
+      {
+       "key": "A",
+       "text": "vinegar"
+      },
+      {
+       "key": "B",
+       "text": "mustard or egg yolk"
+      },
+      {
+       "key": "C",
+       "text": "salt"
+      },
+      {
+       "key": "D",
+       "text": "sugar"
+      }
+     ],
+     "answer": "B",
+     "why": "Emulsifiers hold oil and water."
+    },
+    {
+     "id": "RDV-4.M3.Q5",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "RDV-4.M3.L2",
+     "safety": false,
+     "question": "You move a recipe from a conventional oven to a fan oven. What do you do first?",
+     "options": [
+      {
+       "key": "A",
+       "text": "nothing"
+      },
+      {
+       "key": "B",
+       "text": "lower the temperature by about 20 °C and check with an oven thermometer"
+      },
+      {
+       "key": "C",
+       "text": "raise it"
+      },
+      {
+       "key": "D",
+       "text": "double the time"
+      }
+     ],
+     "answer": "B",
+     "why": "Fan ovens cook faster."
+    },
+    {
+     "id": "RDV-4.M3.Q6",
+     "type": "SCENARIO",
+     "lessonId": "RDV-4.M3.L2",
+     "safety": false,
+     "question": "You double a braise in the same pot. Predict two changes.",
+     "options": [],
+     "answer": "It takes longer to come to temperature and may need longer overall (judged by tenderness); the browning must be done in more batches; seasoning adjusted by taste.",
+     "why": "Scaling isn't linear."
+    },
+    {
+     "id": "RDV-4.M3.Q7",
+     "type": "SCENARIO",
+     "lessonId": "RDV-4.M3.L2",
+     "safety": false,
+     "question": "A summer salad of raw courgette and herbs must work in January. How do you adapt it?",
+     "options": [],
+     "answer": "Keep the idea (fresh, sharp, herby) with winter produce: shaved raw celeriac or kohlrabi, or roasted roots, parsley and pickled shallot; adjust the acid.",
+     "why": "Season, idea kept."
+    },
+    {
+     "id": "RDV-4.M3.Q8",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "RDV-4.M3.L2",
+     "safety": false,
+     "question": "A wider pan for a sauce means:",
+     "options": [
+      {
+       "key": "A",
+       "text": "slower reduction"
+      },
+      {
+       "key": "B",
+       "text": "faster reduction and more browning"
+      },
+      {
+       "key": "C",
+       "text": "no change"
+      },
+      {
+       "key": "D",
+       "text": "less flavour"
+      }
+     ],
+     "answer": "B",
+     "why": "More surface."
+    }
+   ]
+  },
+  {
+   "id": "RDV-4.M4",
+   "title": "Test plans and iteration",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** the 8 items of `RDV-4.M4` in the course file. Pass mark 80 %."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "RDV-4.M4.L1",
+     "title": "Designing tests",
+     "prerequisites": [
+      "SCI-2.M1.L1"
+     ],
+     "competencies": [
+      {
+       "id": "RD-TEST",
+       "level": 4
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** a dish improves only if you know which change made the difference. One variable, a control and a blind panel turn tasting into a test whose result you can trust [S17]."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** oil, vinegar, mustard and salt for two small vinaigrettes; the scale; tasting cups labelled with three-digit codes; the tasting form (`TST-1`); two or three tasters; plain bread or lettuce to taste on."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*One variable at a time.* Each round changes one thing (the salt, the time, the fat), so the result can be traced to it."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Controls.* Cook the unchanged version alongside, so day-to-day differences (the oven, the ingredients) don't hide the effect."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Blind panels* (`TST-1`, [S20])."
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "Code the samples with three-digit numbers."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "Serve them in a random order."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "Tasters score on a form, without talking."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "A triangle test (two the same, one different; which is the odd one?) checks whether a difference can be tasted at all."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Scoring forms.* List the attributes that matter for the dish (texture, seasoning, aroma), each on a fixed scale, with room for comments."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Small batches.* Test at a small scale to save food; cook the final version at full size."
+      },
+      {
+       "type": "paragraph",
+       "text": "A test plan for a vinaigrette:"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Line",
+        "Entry"
+       ],
+       "rows": [
+        [
+         "Aim",
+         "A sharper vinaigrette for a winter salad"
+        ],
+        [
+         "Variable",
+         "Acid: 3:1 (control) against 2.5:1"
+        ],
+        [
+         "Coded samples",
+         "418 (control), 762 (test)"
+        ],
+        [
+         "Form",
+         "Sharpness, balance, would you use it? (1–5), comments"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**A test design (60 min).** Write a test plan for one variable with a control and a blind panel, and run it once on a small batch (for example a vinaigrette at two acid levels)."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** a plan with one variable, a control, coded samples and a form; results that can be read."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Results you can't explain",
+         "Recipe and oven changed together",
+         "One variable per round"
+        ],
+        [
+         "A biased panel",
+         "Tasters know which is which",
+         "Codes and a random order"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** tasting cups and spoons used once per taster; tasters asked about allergies before the panel."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the test plan; the forms; what the panel found."
+      }
+     ]
+    },
+    {
+     "id": "RDV-4.M4.L2",
+     "title": "Iteration",
+     "prerequisites": [
+      "RDV-4.M4.L1"
+     ],
+     "competencies": [
+      {
+       "id": "RD-TEST",
+       "level": 4
+      },
+      {
+       "id": "RD-WRIT",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** a dish improves over versions, and versions are easy to lose. A log, and a rule for what to change next and when to stop, keep the work going forward instead of in circles."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** the results of `RDV-4.M4.L1`; the dish's ingredients for two more rounds; the test log (a notebook with numbered versions, or a spreadsheet with a tab per round); the panel; a camera."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Version control.* Write each version in full, with a number and date, what changed, why, and the result. Keep the log with photos."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Deciding what to change next.* Sort the panel's comments by how often they appear and how much they matter. Test the largest problem first."
+      },
+      {
+       "type": "paragraph",
+       "text": "*When to stop.*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "The panel can't tell the new version from the last (a triangle test fails)."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "The remaining comments contradict each other."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "The dish meets its aim."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Writing so it repeats.* The final recipe has weights, cues and timings. Cook it again a week later to check it gives the same result. If it doesn't, the recipe is missing something you did without writing it down: find it, add it, and cook it once more."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Spacing the rounds.* Leave a few days between rounds, so the panel tastes fresh and you have time to read the forms."
+      },
+      {
+       "type": "paragraph",
+       "text": "A log line:"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Version",
+        "Date",
+        "Changed",
+        "Why",
+        "Result"
+       ],
+       "rows": [
+        [
+         "2",
+         "14 Nov",
+         "Acid 3:1 → 2.5:1",
+         "Panel: \"flat\" (3 of 3)",
+         "Sharper; 2 of 3 prefer it"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Round two (60 min).** Make the second version from round one's results; run the panel; log it."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Round three and the write-up (60 min).** Make the third version; write the decision; write the recipe in full."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** a log that shows why each change was made and what it did."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "The dish drifts to the cook's taste",
+         "The panel ignored",
+         "Follow the panel, or write why not"
+        ],
+        [
+         "You can't go back to a better version",
+         "Earlier versions lost",
+         "Write every version in full"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** test batches kept like leftovers (assessment §9); food that waits for a panel kept hot or cold, not warm."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the full log with photos; the decision to stop and why."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "RDV-4.M4.X1",
+     "title": "Improve one dish through three versions",
+     "description": "Improve one dish through at least three documented versions.",
+     "competencies": [
+      {
+       "id": "RD-TEST",
+       "level": 4
+      },
+      {
+       "id": "RD-WRIT",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** improve a dish of your repertoire through at least three documented versions, each with one variable, a control and a blind panel, and write recipes that repeat. Write the final version and two other recipes of yours with weights, cues and timings, and repeat each a week later to the same result."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** the dish's ingredients for small test batches; the panel (household or friends); coded cups and forms; the test-plan template of `RDV-4.M4.L1` (aim, variable, control, coded samples, form, result, decision)."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Procedure:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "Write the aim and the test plan."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "Run three or more rounds; code the samples; collect the forms; log each version."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "Decide when to stop; blind-taste the final against the original."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "Write the three recipes; repeat each a week later; photograph both cooks."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`RD-TEST` level 4:** a test series over at least three rounds, the changes and results logged, the final version better than the original by blind tasting."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`RD-WRIT` level 3:** three recipes with weights, cues and timings, each repeated a week later to the same result."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "AI review reads the log, the forms, the recipes and the paired photos: *competent* is one variable per round with a control and coded samples, a final version preferred blind, and repeats that match; *not yet* is two variables in a round, an unblinded panel, or a repeat that differs."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** three rounds of 1 h over two weeks; 1 h of writing; three repeats."
+      }
+     ]
+    }
+   ],
+   "items": [
+    {
+     "id": "RDV-4.M4.Q1",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "RDV-4.M4.L1",
+     "safety": false,
+     "question": "Why change one variable per round?",
+     "options": [
+      {
+       "key": "A",
+       "text": "it's quicker"
+      },
+      {
+       "key": "B",
+       "text": "so the result can be traced to that change"
+      },
+      {
+       "key": "C",
+       "text": "tasters prefer it"
+      },
+      {
+       "key": "D",
+       "text": "to save food"
+      }
+     ],
+     "answer": "B",
+     "why": "Otherwise the cause is unknown."
+    },
+    {
+     "id": "RDV-4.M4.Q2",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "RDV-4.M4.L1",
+     "safety": false,
+     "question": "What is the control in a test round?",
+     "options": [
+      {
+       "key": "A",
+       "text": "the best version"
+      },
+      {
+       "key": "B",
+       "text": "the unchanged version cooked alongside"
+      },
+      {
+       "key": "C",
+       "text": "the panel"
+      },
+      {
+       "key": "D",
+       "text": "the scoring form"
+      }
+     ],
+     "answer": "B",
+     "why": "It shows day-to-day differences."
+    },
+    {
+     "id": "RDV-4.M4.Q3",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "RDV-4.M4.L1",
+     "safety": false,
+     "question": "What does a triangle test check?",
+     "options": [
+      {
+       "key": "A",
+       "text": "which sample is best"
+      },
+      {
+       "key": "B",
+       "text": "whether a difference can be tasted at all"
+      },
+      {
+       "key": "C",
+       "text": "saltiness"
+      },
+      {
+       "key": "D",
+       "text": "the price"
+      }
+     ],
+     "answer": "B",
+     "why": "Two the same, one different."
+    },
+    {
+     "id": "RDV-4.M4.Q4",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "RDV-4.M4.L1",
+     "safety": false,
+     "question": "Why are samples coded and served in a random order?",
+     "options": [
+      {
+       "key": "A",
+       "text": "for fun"
+      },
+      {
+       "key": "B",
+       "text": "so tasters judge without knowing which is which, and order doesn't bias them"
+      },
+      {
+       "key": "C",
+       "text": "to save time"
+      },
+      {
+       "key": "D",
+       "text": "it's tradition"
+      }
+     ],
+     "answer": "B",
+     "why": "Blind panels."
+    },
+    {
+     "id": "RDV-4.M4.Q5",
+     "type": "SCENARIO",
+     "lessonId": "RDV-4.M4.L2",
+     "safety": false,
+     "question": "After round two, three tasters say \"too salty\", one says \"a bit dry\", one says \"too sour\". What do you test next?",
+     "options": [],
+     "answer": "The salt: it is the most frequent and likely most important comment; one variable, with a control.",
+     "why": "[J] the largest problem first."
+    },
+    {
+     "id": "RDV-4.M4.Q6",
+     "type": "SCENARIO",
+     "lessonId": "RDV-4.M4.L2",
+     "safety": false,
+     "question": "In round four, the panel can't pick the new version in a triangle test. What does it tell you?",
+     "options": [],
+     "answer": "The change made no tastable difference: stop changing that variable, or stop the series if the dish meets its aim.",
+     "why": "[J] when to stop."
+    },
+    {
+     "id": "RDV-4.M4.Q7",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "RDV-4.M4.L2",
+     "safety": false,
+     "question": "What does a version entry contain?",
+     "options": [
+      {
+       "key": "A",
+       "text": "the photo only"
+      },
+      {
+       "key": "B",
+       "text": "the full recipe, number and date, what changed and why, and the result"
+      },
+      {
+       "key": "C",
+       "text": "the cook's opinion"
+      },
+      {
+       "key": "D",
+       "text": "the score only"
+      }
+     ],
+     "answer": "B",
+     "why": "Version control."
+    },
+    {
+     "id": "RDV-4.M4.Q8",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "RDV-4.M4.L2",
+     "safety": false,
+     "question": "How do you check a recipe repeats?",
+     "options": [
+      {
+       "key": "A",
+       "text": "read it again"
+      },
+      {
+       "key": "B",
+       "text": "cook it again a week later from the text and compare"
+      },
+      {
+       "key": "C",
+       "text": "ask a taster"
+      },
+      {
+       "key": "D",
+       "text": "photograph it"
+      }
+     ],
+     "answer": "B",
+     "why": "The repeat is the test."
+    }
+   ]
+  },
+  {
+   "id": "RDV-4.M5",
+   "title": "Writing recipes and a first original dish",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** none for this module. Its judgment objectives (testing with another cook, what makes a dish your own) are shown by the other cooks' results and your note in `RDV-4.M5.X1`."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "RDV-4.M5.L1",
+     "title": "Writing for others",
+     "prerequisites": [
+      "KMG-3.M5.L1"
+     ],
+     "competencies": [
+      {
+       "id": "RD-WRIT",
+       "level": 4
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** a recipe works only if someone else can cook it to your result. Writing for another cook, and watching them cook from your text in silence, shows every gap in it."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** one of your recipes; a household member who will cook it; the ingredients; a notebook for the silent test."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*The recipe's parts:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Title and yield:** portions and weight."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Ingredients** in the order of use, by weight, with their state (diced, softened), and the allergens marked."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "**Equipment** that matters: the pan size, a thermometer."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "**Steps** in order, one action each, with the cue that ends the step (golden, coats a spoon, 63 °C at the core) and the time as a range."
+        },
+        {
+         "level": 0,
+         "marker": "5.",
+         "text": "**Make-ahead and storage notes** within assessment §9."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Writing for another cook.* No unexplained terms (`CK-TERM`); cues before times; the safety figure where there is one."
+      },
+      {
+       "type": "paragraph",
+       "text": "Before and after:"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Before",
+        "After"
+       ],
+       "rows": [
+        [
+         "Season to taste",
+         "Add 4 g of salt; taste, and add more a pinch at a time"
+        ],
+        [
+         "Cook the onions, add garlic and spices and simmer the sauce",
+         "1. Cook the onions over medium heat until soft and golden, 10–12 minutes. 2. Add the garlic; stir for 1 minute. 3. …"
+        ],
+        [
+         "Bake for 30 minutes",
+         "Bake until golden and a skewer comes out clean, 25–35 minutes"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Testing with another cook.* A household member cooks from the text alone while you watch silently and note every hesitation. Rewrite the recipe where they hesitated."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**A recipe rewritten (60 min).** Write one of your recipes for another cook."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**The silent test (60 min).** A household member cooks it; note the hesitations; revise the recipe."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** another cook's result matches yours, and their hesitations led to clear changes."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Under- or over-seasoned",
+         "\"Season to taste\" without a starting amount",
+         "Give a starting amount"
+        ],
+        [
+         "Overcooked or raw",
+         "Times without cues",
+         "Cue first, time as a range"
+        ],
+        [
+         "Steps missed",
+         "Three actions in one step",
+         "One action per step"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** every safety figure (core temperatures, cooling, storage) written in the recipe as assessment §9 gives it; the allergens marked in the ingredient list."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the first and revised versions; the hesitation notes; photos of both results."
+      }
+     ]
+    },
+    {
+     "id": "RDV-4.M5.L2",
+     "title": "An original dish",
+     "prerequisites": [
+      "RDV-4.M4.L2"
+     ],
+     "competencies": [
+      {
+       "id": "CR-ORIG",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** an original dish brings together everything in this course: an idea, a test plan, rounds of tasting and a recipe someone else can cook. What makes it yours is a choice you can explain, not novelty."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** Dutch produce in season as the starting point; the test log; the panel; two rounds' ingredients; the recipe format of `RDV-4.M5.L1`."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*The idea.* One sentence (`CR-COMP`): a season, a memory, a technique or an ingredient pairing. For example, \"late autumn: smoked celeriac with the sharpness of pickled red onion and the crunch of toasted seeds\"."
+      },
+      {
+       "type": "paragraph",
+       "text": "*The test plan* (`RDV-4.M4`). Write what is uncertain about the idea and how two or more rounds will settle it."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Iterations.* Cook the dish, have tasters judge it, change one thing at a time, and log it. Two rounds is the minimum; stop when the dish meets its idea, by the rules of `RDV-4.M4.L2`."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Starting from the season.* Begin with what is at its best now in the Dutch harvest, then choose the technique and balance that show it. An idea that needs an imported ingredient to work is the wrong idea for this course."
+      },
+      {
+       "type": "paragraph",
+       "text": "*The final recipe.* Written for others (`RDV-4.M5.L1`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "*What makes it yours.* Not novelty for its own sake, but a choice of ingredients, technique or balance that reflects your taste and place. Write it in a short note: what you chose, and why it is yours."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Idea and first round (60 min).** Write the idea and the test plan; cook the first version; have it judged."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Second round (60 min).** Cook the second version from the results; have it judged; write the recipe."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** a logged development, a final recipe and a note on what makes it your own."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "A dish that doesn't come together",
+         "An idea with too many parts",
+         "Cut the idea to one sentence; drop what doesn't serve it"
+        ],
+        [
+         "You can't tell what helped",
+         "Everything changed between rounds",
+         "One change per round"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** the dish's safety figures from assessment §9 written into its recipe; tasters asked about allergies first."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the idea; the test log; the recipe; the note on what makes it yours."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "RDV-4.M5.X1",
+     "title": "An original dish, cooked by someone else from your recipe",
+     "description": "An original dish, written up and cooked by a household member from your recipe.",
+     "competencies": [
+      {
+       "id": "RD-WRIT",
+       "level": 4
+      },
+      {
+       "id": "CR-ORIG",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** develop an original dish end to end, and write it so someone else can cook it. Develop it over at least two test rounds, write it up, and have a household member cook it from the recipe alone. A second recipe of yours is also cooked by another person from the text alone."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** seasonal Dutch produce for the dish; the test log; a household member or friend willing to cook; tasters' cards."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Procedure:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "Write the idea and the test plan; run two or more rounds; log them."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "Write the final recipe; give it and a second recipe to the other cooks."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "Watch silently; photograph their results beside your own versions."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "Collect tasters' cards for the original dish; write the note on what makes it your own."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`RD-WRIT` level 4:** two recipes cooked by another person from the text alone, the results photographed and matching your version."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`CR-ORIG` level 3:** an original dish developed over at least two logged test rounds, written as a recipe, and judged good by the tasters."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "AI review reads the log, the recipes, the paired photos, the cards and the note: *competent* is two rounds logged, a recipe another cook followed to a matching result, and tasters who judge the dish good; *not yet* is a recipe the other cook could not follow, results that differ, or no test log."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** two rounds of 1–1.5 h; 1 h writing; the other cooks' sessions."
+      }
+     ]
+    }
+   ],
+   "items": []
+  }
+ ]
+}

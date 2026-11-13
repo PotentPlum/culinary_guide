@@ -1,0 +1,4443 @@
+{
+ "schemaVersion": 1,
+ "id": "SAU-2",
+ "introduction": [
+  {
+   "type": "paragraph",
+   "text": "**Before you start.** A sauce turns cooked food into a dish. It brings moisture, richness, acidity or contrast, and it carries the flavour of the pan, the stock or the vegetable into every bite. Sauces have a reputation for being difficult, but most of that difficulty comes down to three physical rules:"
+  },
+  {
+   "type": "list",
+   "items": [
+    {
+     "level": 0,
+     "marker": "",
+     "text": "how far to reduce;"
+    },
+    {
+     "level": 0,
+     "marker": "",
+     "text": "how starch thickens;"
+    },
+    {
+     "level": 0,
+     "marker": "",
+     "text": "how fat stays suspended in water."
+    }
+   ]
+  },
+  {
+   "type": "paragraph",
+   "text": "The course teaches those rules through the five sauce elements of `TS-SAU`: pan sauces and reductions, starch-thickened sauces, cold emulsions, warm emulsions and vinaigrettes. It ends with a sauce clinic, where you repair faults you did not cause and did not see coming."
+  },
+  {
+   "type": "paragraph",
+   "text": "*Consistency is the thread.* Every sauce is judged on a spoon. Dip the back of a spoon in it and lift it out: at *nappe* it coats the spoon as a thin, even layer, and a line drawn through it with a finger stays clean. Photograph that line for every element, on a plain spoon in good light, so the AI review and you judge the same thing."
+  },
+  {
+   "type": "paragraph",
+   "text": "*The freezer is the main ingredient.* The stocks and *glace* of `STK-2` give pan sauces and *veloutés* their body. If the freezer is empty, make a white stock before module 2."
+  },
+  {
+   "type": "paragraph",
+   "text": "*Eggs.* The raw-yolk and warm egg sauces of modules 4 and 5 are made with pasteurised egg yolk, for every guest (assessment §9, the raw-egg row). Supermarkets sell it chilled in cartons; about 20 g is one yolk. Eggs for poaching are ordinary fresh eggs."
+  },
+  {
+   "type": "paragraph",
+   "text": "Plan about five weeks. Most sessions are a weeknight: the sauces sit on meals the household eats anyway, such as a pan sauce on a sear, a gratin, mayonnaise with boiled potatoes, and *hollandaise* at a weekend brunch."
+  },
+  {
+   "type": "paragraph",
+   "text": "**Have ready:** the heavy saucepan, a small saucepan and the stainless sauté pan; a balloon whisk (and a small flat whisk if you have one); a heatproof bowl that sits on a saucepan without touching the water; a fine sieve; a stick blender and its narrow beaker; a wide-mouthed vacuum flask; the probe; teaspoons and a plain dessert spoon for the *nappe* photos; a phone and a phone stand; frozen stock and *glace* from `STK-2`; the scale; the tasting form; the journal and the fault log."
+  }
+ ],
+ "modules": [
+  {
+   "id": "SAU-2.M1",
+   "title": "Sauce foundations",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** the 8 items of `SAU-2.M1` in the course file. Pass mark 80 %."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "SAU-2.M1.L1",
+     "title": "What a sauce does",
+     "prerequisites": [
+      "STK-2.M2.L1"
+     ],
+     "competencies": [
+      {
+       "id": "CK-CLAS",
+       "level": 2
+      },
+      {
+       "id": "CK-TERM",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** there are thousands of sauces, but only a handful of ways to hold one together. Once you can say what holds a sauce together, you know how to make it, how it will fail, and how to rescue it."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** this lesson; the journal; your memory of five sauces you have made or eaten."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*What a sauce adds to a dish:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**flavour,** often concentrated;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**moisture,** for lean or dry food;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**contrast,** such as acid against fat, or a cold sauce on warm fish;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**richness:** a little fat that carries aroma."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*The families, by what holds them together:*"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Family",
+        "What holds it",
+        "Example"
+       ],
+       "rows": [
+        [
+         "Reductions",
+         "Water evaporated until the gelatin and dissolved solids give body",
+         "A *jus*, a pan sauce"
+        ],
+        [
+         "Starch-thickened",
+         "Gelatinised starch from a roux, a slurry or *beurre manié* (`SCI-2.M3.L1`)",
+         "*Béchamel*, gravy"
+        ],
+        [
+         "Emulsions",
+         "Fat suspended in water, or water in fat, held by an emulsifier (`SCI-2.M4.L2`)",
+         "Mayonnaise, *hollandaise*"
+        ],
+        [
+         "Purées",
+         "Vegetable fibre and starch",
+         "A pepper or tomato sauce"
+        ],
+        [
+         "Vinaigrettes",
+         "A temporary emulsion of oil and acid",
+         "A salad dressing"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "A creamy look doesn't make a sauce an emulsion: a *béchamel* is creamy because of starch."
+      },
+      {
+       "type": "paragraph",
+       "text": "*The five mother sauces* (*sauces mères*) are a map of the classical system, not five recipes to learn:"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Mother sauce",
+        "Liquid",
+        "Thickener",
+        "Derivatives"
+       ],
+       "rows": [
+        [
+         "*Béchamel*",
+         "Milk",
+         "White roux",
+         "*Mornay*, *soubise*, cream sauce"
+        ],
+        [
+         "*Velouté*",
+         "White stock",
+         "Blond roux",
+         "*Suprême*, *allemande*, Bercy"
+        ],
+        [
+         "*Espagnole*",
+         "Brown stock",
+         "Brown roux and tomato",
+         "*Demi-glace*, *bordelaise*, Robert"
+        ],
+        [
+         "Tomato",
+         "Tomato and stock",
+         "Reduction (classically a roux)",
+         "Provençale, Creole, Portuguese"
+        ],
+        [
+         "*Hollandaise*",
+         "Butter",
+         "Egg yolk emulsion",
+         "*Béarnaise*, *mousseline*, *maltaise*"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "The table is the point of the lesson: a derivative is its mother sauce plus a flavouring or a finish. *Espagnole* and *demi-glace* are named here and cooked in `CLS-4`."
+      },
+      {
+       "type": "paragraph",
+       "text": "*The terms.* Into the glossary, in French, Dutch and English, and used from now on: *nappe*, *monter au beurre*, *roux*, *liaison*, *beurre manié*, *réduction*, *jus*, *sabayon*, *émulsion*."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:** theory only (1.5 h): build the family table in your own words, with one sauce from your own cooking in each row. Then take five sauces you have made and name the family of each, and what holds it together."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** for any sauce, you can say what holds it together and which family it belongs to."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Lost in hundreds of names",
+         "Treating the mother sauces as recipes to learn rather than as a map",
+         "Learn the five rows; derive the rest"
+        ],
+        [
+         "A gravy called a *jus*",
+         "Confusing a reduction with a starch-thickened sauce (a *jus* with flour in it)",
+         "Ask what thickens it"
+        ],
+        [
+         "*Béchamel* filed as an emulsion",
+         "Calling every creamy sauce an emulsion",
+         "Ask what holds it: starch or an emulsifier"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** no special risks beyond the kitchen basics (`SAF-1`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the family table and the five sauces placed in it."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "SAU-2.M1.X1",
+     "title": "Ten dishes on the map",
+     "description": "Map the sauces in ten dishes you know onto the families.",
+     "competencies": [
+      {
+       "id": "CK-CLAS",
+       "level": 2
+      },
+      {
+       "id": "CK-TERM",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** place ten familiar sauces in the families and the classical system, and describe them in the program's terms. No cooking. Choose ten dishes you know, from home cooking, restaurants or other cuisines; at least two must be outside French cooking, such as a Thai curry, a pesto or a Dutch gravy (*jus* in Dutch, though it is usually thickened)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** the family table from `SAU-2.M1.L1`; the journal; about an hour."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Recipe:** the mapping."
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**List** the ten dishes and their sauces."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**For each sauce, name:**"
+        },
+        {
+         "level": 1,
+         "marker": "",
+         "text": "its family;"
+        },
+        {
+         "level": 1,
+         "marker": "",
+         "text": "what thickens or holds it;"
+        },
+        {
+         "level": 1,
+         "marker": "",
+         "text": "where it applies, its classical relative (a cheese sauce is a *Mornay*; a hollandaise with tarragon is a *béarnaise*)."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "**Look out** for the hard cases. A Thai curry is often a coconut-milk emulsion with a purée of aromatics; a pesto is a purée held loosely by oil, close to a broken emulsion; a Dutch gravy is a reduction, often with a starch."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "**Write a one-page framework,** \"how a sauce holds together\", in your own words, using at least ten of the course's terms. Underline each term."
+        },
+        {
+         "level": 0,
+         "marker": "5.",
+         "text": "**Take** the module's knowledge check."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`CK-CLAS` level 2, the naming part:** the five mother sauces with their base, thickener and three derivatives each at 80 % in the quiz, and the ten dishes mapped. The derivative you make is in `SAU-2.M3.X1`."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`CK-TERM` level 3:** the framework with ten terms used correctly, and this check at 80 %."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 1 h."
+      }
+     ]
+    }
+   ],
+   "items": [
+    {
+     "id": "SAU-2.M1.Q1",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "SAU-2.M1.L1",
+     "safety": false,
+     "question": "Which of these is not one of the five classical mother sauces?",
+     "options": [
+      {
+       "key": "A",
+       "text": "*béchamel*"
+      },
+      {
+       "key": "B",
+       "text": "*velouté*"
+      },
+      {
+       "key": "C",
+       "text": "mayonnaise"
+      },
+      {
+       "key": "D",
+       "text": "*hollandaise*"
+      }
+     ],
+     "answer": "C",
+     "why": "Mayonnaise is a cold emulsion; the mothers are *béchamel*, *velouté*, *espagnole*, tomato and *hollandaise*."
+    },
+    {
+     "id": "SAU-2.M1.Q2",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "SAU-2.M1.L1",
+     "safety": false,
+     "question": "A *velouté* is:",
+     "options": [
+      {
+       "key": "A",
+       "text": "milk thickened with a white roux"
+      },
+      {
+       "key": "B",
+       "text": "white stock thickened with a blond roux"
+      },
+      {
+       "key": "C",
+       "text": "brown stock with a brown roux"
+      },
+      {
+       "key": "D",
+       "text": "butter held by egg yolks"
+      }
+     ],
+     "answer": "B",
+     "why": "The liquid names the mother sauce."
+    },
+    {
+     "id": "SAU-2.M1.Q3",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "SAU-2.M1.L1",
+     "safety": false,
+     "question": "*Mornay* is a derivative of which mother sauce?",
+     "options": [
+      {
+       "key": "A",
+       "text": "*béchamel*, finished with cheese"
+      },
+      {
+       "key": "B",
+       "text": "*hollandaise*"
+      },
+      {
+       "key": "C",
+       "text": "*espagnole*"
+      },
+      {
+       "key": "D",
+       "text": "tomato"
+      }
+     ],
+     "answer": "A",
+     "why": "Mother sauce plus a finish."
+    },
+    {
+     "id": "SAU-2.M1.Q4",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "SAU-2.M1.L1",
+     "safety": false,
+     "question": "*Béarnaise* is built on:",
+     "options": [
+      {
+       "key": "A",
+       "text": "a brown roux"
+      },
+      {
+       "key": "B",
+       "text": "the *hollandaise* method, with a tarragon and shallot reduction"
+      },
+      {
+       "key": "C",
+       "text": "a *velouté*"
+      },
+      {
+       "key": "D",
+       "text": "a vinaigrette"
+      }
+     ],
+     "answer": "B",
+     "why": "It is *hollandaise* flavoured with a reduction."
+    },
+    {
+     "id": "SAU-2.M1.Q5",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "SAU-2.M1.L1",
+     "safety": false,
+     "question": "Which sauce is held together mainly by reduction?",
+     "options": [
+      {
+       "key": "A",
+       "text": "*béchamel*"
+      },
+      {
+       "key": "B",
+       "text": "a *jus* reduced until it coats a spoon"
+      },
+      {
+       "key": "C",
+       "text": "mayonnaise"
+      },
+      {
+       "key": "D",
+       "text": "a cornflour gravy"
+      }
+     ],
+     "answer": "B",
+     "why": "Evaporation concentrates gelatin and solids."
+    },
+    {
+     "id": "SAU-2.M1.Q6",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "SAU-2.M1.L1",
+     "safety": false,
+     "question": "Which group lists three derivatives of *velouté*?",
+     "options": [
+      {
+       "key": "A",
+       "text": "*suprême*, *allemande*, Bercy"
+      },
+      {
+       "key": "B",
+       "text": "*Mornay*, *soubise*, cream"
+      },
+      {
+       "key": "C",
+       "text": "*bordelaise*, Robert, *demi-glace*"
+      },
+      {
+       "key": "D",
+       "text": "*maltaise*, *mousseline*, *béarnaise*"
+      }
+     ],
+     "answer": "A",
+     "why": "B is *béchamel*, C *espagnole*, D *hollandaise*."
+    },
+    {
+     "id": "SAU-2.M1.Q7",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "SAU-2.M1.L1",
+     "safety": false,
+     "question": "What does *nappe* describe?",
+     "options": [
+      {
+       "key": "A",
+       "text": "a sauce thick enough to coat the back of a spoon, with a clean line when a finger is drawn through it"
+      },
+      {
+       "key": "B",
+       "text": "a sauce reduced to a glaze"
+      },
+      {
+       "key": "C",
+       "text": "a broken sauce"
+      },
+      {
+       "key": "D",
+       "text": "a sauce strained through muslin"
+      }
+     ],
+     "answer": "A",
+     "why": "The consistency target of the course."
+    },
+    {
+     "id": "SAU-2.M1.Q8",
+     "type": "SCENARIO",
+     "lessonId": "SAU-2.M1.L1",
+     "safety": false,
+     "question": "A friend calls every creamy sauce \"an emulsion\". Give two counter-examples and say what holds each together.",
+     "options": [],
+     "answer": "For example: *béchamel* (gelatinised starch from a roux) and a puréed vegetable sauce (fibre and starch); a reduced *jus* (gelatin).",
+     "why": "Families are defined by what holds the sauce, not by how it looks."
+    }
+   ]
+  },
+  {
+   "id": "SAU-2.M2",
+   "title": "Reductions and pan sauces",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** the 8 items of `SAU-2.M2` in the course file. Pass mark 80 %."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "SAU-2.M2.L1",
+     "title": "Deglazing and pan sauces",
+     "prerequisites": [
+      "HEA-1.M3.L3",
+      "STK-2.M2.L5"
+     ],
+     "competencies": [
+      {
+       "id": "TS-SAU",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** the brown crust a sear leaves in the pan is the most concentrated flavour in the kitchen. Five minutes and a little stock turn it into a sauce, and this is the sauce you will make most often."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** for 2 portions: 2 chicken thighs or pork chops; a shallot; 150 ml of stock from the freezer (a gelled one); 100 ml of dry white wine or dry cider for session 2; butter; salt and pepper; the sauté pan; a wooden spatula; a spoon for the *nappe* photo."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*The fond:* the browned juices stuck to the pan after a sear (`HEA-1.M3.L3`). Brown is flavour; black is bitter, and a black fond is wiped out, not deglazed."
+      },
+      {
+       "type": "paragraph",
+       "text": "*The pan-sauce sequence:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Pour off** most of the fat, leaving a film."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Sweat** a finely chopped shallot over medium heat, for a minute."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "**Deglaze** with wine, vinegar, cider or water, scraping the fond loose."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "**Reduce** almost dry, until the sharp smell of alcohol has gone."
+        },
+        {
+         "level": 0,
+         "marker": "5.",
+         "text": "**Add the stock** (`STK-2.M2.L5`)."
+        },
+        {
+         "level": 0,
+         "marker": "6.",
+         "text": "**Reduce** to the consistency you want."
+        },
+        {
+         "level": 0,
+         "marker": "7.",
+         "text": "**Add the resting juices** of the meat."
+        },
+        {
+         "level": 0,
+         "marker": "8.",
+         "text": "**Season,** and finish with butter, cream or herbs."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Judging the consistency.* As the sauce thickens, the bubbles change from small and fast to larger and slower. Dip the spoon: the sauce coats it, and the line stays clean. Salt goes in only at the end, because reduction concentrates it."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Gelatin does the work.* A stock that gelled in the fridge gives a pan sauce body without flour. A thin, unset stock never reaches *nappe* by reduction alone: it becomes too salty or too strong first. If your stock is thin, add a cube of *glace*."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Proportions:* about 100–150 ml of stock for two portions, reduced by roughly half."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**A weeknight pan sauce (30 min).** Sear the chicken or pork, rest it on a warm plate, and make the sauce with water to deglaze and stock to finish. Reduce to *nappe* and photograph the spoon."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**With wine or cider (30 min).** The same sauce, deglazed with wine or cider. Compare the body, colour and acidity with the first."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** large, slow bubbles as the sauce reaches *nappe*; a clean line on the spoon; a glossy surface."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "A bitter sauce",
+         "Deglazing a burnt fond",
+         "Wipe out a black fond; deglaze only brown"
+        ],
+        [
+         "Too salty once reduced",
+         "Adding salt before reducing",
+         "Salt at the end"
+        ],
+        [
+         "Too strong, still thin",
+         "Reducing a thin stock until it is too strong to eat",
+         "A gelled stock, or a cube of *glace*"
+        ],
+        [
+         "A raw, boozy taste",
+         "Leaving the alcohol raw by adding stock too soon",
+         "Reduce the wine almost dry first"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** the pan is hot and the fat spits when the cold liquid goes in: pour away from you, and keep the handle turned in. The meat is cooked to its §9 figure before it rests (poultry 75 °C, probed)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the two spoon photos and a line comparing the sauces."
+      }
+     ]
+    },
+    {
+     "id": "SAU-2.M2.L2",
+     "title": "Reductions and *monter au beurre*",
+     "prerequisites": [
+      "SAU-2.M2.L1",
+      "SCI-2.M4.L2"
+     ],
+     "competencies": [
+      {
+       "id": "TS-SAU",
+       "level": 3
+      },
+      {
+       "id": "SC-EMUL",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** a few cubes of cold butter swirled into a reduction turn it glossy, round and restaurant-smooth. It is also the easiest emulsion to break, so it is the best place to learn how emulsions fail and how to save them."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** 500 ml of stock; 80 g of cold butter in 1 cm cubes, kept in the fridge until used; a small saucepan; a whisk; a spoon of cold water in a cup; two spoons and two warm plates for comparing; the phone."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Reducing to nappe.* A stock reduced by about two thirds coats a spoon. Reduced further, it becomes a *glace* that sets firm when cold (`STK-2.M2.L5`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Mounting with butter (monter au beurre):*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "Take the reduction off the boil."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "Swirl the pan, or whisk, as you add cold butter a few cubes at a time."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "The butter melts into tiny droplets of fat that the gelatin of the reduction and the milk solids of the butter hold in suspension. This is a warm butter emulsion (`SCI-2.M4.L2`): the sauce turns glossy and slightly paler."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Why it breaks.* Brought back to a simmer or above, the fat droplets merge and the milk proteins tighten: the emulsion separates into a greasy layer on a thin liquid. Too much butter for the liquid does the same. Melted butter doesn't form the emulsion at all; cold butter melts slowly into it."
+      },
+      {
+       "type": "paragraph",
+       "text": "*The repair:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "Take the pan off the heat."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "Add a spoon of cold water or stock."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "Whisk hard; or whisk the broken sauce slowly into a fresh spoon of reduction."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Serve soon.* A mounted sauce is made at the last moment and held warm, never boiled again."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Mount and hold (40 min).** Reduce the stock to *nappe*. Pour half into a second pan, and mount it with about 40 g of cold butter. Compare the two halves on a spoon and on a warm plate: gloss, body, taste."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Break and repair (40 min).** Mount a fresh reduction, then bring it to a boil until it breaks. Photograph it, repair it, and photograph the result."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** a glossier, slightly paler sauce as the butter goes in; the broken sauce with oil beads that runs off the spoon; the repaired sauce coating the spoon again."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "A greasy sauce from the start",
+         "Melted butter in place of cold",
+         "Cold cubes, a few at a time"
+        ],
+        [
+         "Splits as you mount",
+         "Mounting over full heat",
+         "Off the boil, swirling"
+        ],
+        [
+         "Oil on a thin sauce",
+         "Too much butter for too little reduction",
+         "Less butter; reduce more first"
+        ],
+        [
+         "Breaks at the table",
+         "Reheating a mounted sauce to a boil",
+         "Hold it warm; never boil again"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** no special risks beyond the kitchen basics (`SAF-1`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the four photos (two halves, broken, repaired), and the cause of the break in a sentence."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "SAU-2.M2.X1",
+     "title": "One sear, three pan sauces",
+     "description": "Pan sauce after searing, three times with different liquids.",
+     "competencies": [
+      {
+       "id": "TS-SAU",
+       "level": 3
+      },
+      {
+       "id": "SC-EMUL",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** make a pan sauce to *nappe* from a framework, three times with a different deglazing liquid, on three evenings after a sear; on one evening, mount the sauce with butter, break it by boiling, and repair it, photographing each step."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** for 3 × 2 portions: chicken thighs, pork chops or a cheap steak; shallots; 500 ml of frozen stock from `STK-2`; wine or cider; vinegar and honey; 100 g of butter; the sauté pan; the probe; a spoon; the tasting form."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Framework:** the pan sauce."
+      },
+      {
+       "type": "table",
+       "header": [
+        "Part",
+        "What it is",
+        "Your decisions"
+       ],
+       "rows": [
+        [
+         "Sear",
+         "The protein, seared and rested (to its §9 figure)",
+         "Which protein"
+        ],
+        [
+         "Fat",
+         "Poured off to a film; a shallot sweated in it",
+         "—"
+        ],
+        [
+         "Deglazing liquid",
+         "Evening 1: water and stock. Evening 2: wine or cider. Evening 3: vinegar with a little honey (a *gastrique*-style sauce)",
+         "How far to reduce it"
+        ],
+        [
+         "Stock",
+         "100–150 ml for two, reduced by about half to *nappe*",
+         "When it is at *nappe*"
+        ],
+        [
+         "Finish",
+         "Resting juices; salt at the end; butter, cream or herbs",
+         "Which finish"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Procedure:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "Sear the protein and rest it."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "Make the pan sauce from the framework."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "Photograph it on a spoon with a line drawn through it."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "Taste it on the form."
+        },
+        {
+         "level": 0,
+         "marker": "5.",
+         "text": "On one evening, mount, break and repair as in `SAU-2.M2.L2`, photographing each step."
+        },
+        {
+         "level": 0,
+         "marker": "6.",
+         "text": "Write the cause and the repair in two sentences."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`TS-SAU` level 3, the pan-sauce element:** three pan sauces at *nappe* from a framework, seasoned and smooth, each with its spoon photo and tasting form."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`SC-EMUL` level 3, the warm butter emulsion part:** the mounted sauce broken and repaired on purpose, photographed at each step, with the cause and the repair explained, and this module's quiz at 80 %. The mayonnaise part is in `SCI-2.M4.X1` and `SAU-2.M4.X1`."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "AI review scores the spoon photos: coats the spoon, the line stays clean, the surface is glossy without beads of fat. *Competent* is a sauce that coats the back of the spoon with a clean line and a glossy surface; *not yet* is a sauce that runs off and floods the line, or a greasy, broken one."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 3 × 40 min, on three evenings."
+      }
+     ]
+    }
+   ],
+   "items": [
+    {
+     "id": "SAU-2.M2.Q1",
+     "type": "ORDERING",
+     "lessonId": "SAU-2.M2.L1",
+     "safety": false,
+     "question": "Put the pan sauce in order: A) reduce to *nappe* B) deglaze and scrape C) pour off the fat D) add stock E) season and finish with butter",
+     "options": [],
+     "answer": "C, B, D, A, E",
+     "why": "Fat out first, salt and butter last."
+    },
+    {
+     "id": "SAU-2.M2.Q2",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "SAU-2.M2.L1",
+     "safety": false,
+     "question": "Why is a pan sauce salted at the end?",
+     "options": [
+      {
+       "key": "A",
+       "text": "salt stops the reduction"
+      },
+      {
+       "key": "B",
+       "text": "reduction concentrates the salt already in the stock and fond"
+      },
+      {
+       "key": "C",
+       "text": "salt clouds the sauce"
+      },
+      {
+       "key": "D",
+       "text": "for tradition"
+      }
+     ],
+     "answer": "B",
+     "why": "Season after reducing."
+    },
+    {
+     "id": "SAU-2.M2.Q3",
+     "type": "SCENARIO",
+     "lessonId": "SAU-2.M2.L1",
+     "safety": false,
+     "question": "The fond in your pan is black in places after the sear. What do you do before making the sauce?",
+     "options": [],
+     "answer": "Wipe out the burnt parts (or the whole pan) and build the sauce on fresh fat and shallot; burnt fond makes the sauce bitter.",
+     "why": "Brown is flavour; black is bitter."
+    },
+    {
+     "id": "SAU-2.M2.Q4",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "SAU-2.M2.L1",
+     "safety": false,
+     "question": "You reduce a pan sauce made with a thin, unset stock. What is likely to happen?",
+     "options": [
+      {
+       "key": "A",
+       "text": "it reaches *nappe* quickly"
+      },
+      {
+       "key": "B",
+       "text": "it becomes too strong and salty before it has body"
+      },
+      {
+       "key": "C",
+       "text": "it turns into a gel"
+      },
+      {
+       "key": "D",
+       "text": "it breaks"
+      }
+     ],
+     "answer": "B",
+     "why": "Body comes from gelatin; a thin stock has little."
+    },
+    {
+     "id": "SAU-2.M2.Q5",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "SAU-2.M2.L2",
+     "safety": false,
+     "question": "Why is the butter for *monter au beurre* cold?",
+     "options": [
+      {
+       "key": "A",
+       "text": "it is easier to cut"
+      },
+      {
+       "key": "B",
+       "text": "it melts slowly into small droplets that stay suspended, instead of pooling as oil"
+      },
+      {
+       "key": "C",
+       "text": "it cools the sauce for serving"
+      },
+      {
+       "key": "D",
+       "text": "it adds less fat"
+      }
+     ],
+     "answer": "B",
+     "why": "Slow melting keeps the droplets small."
+    },
+    {
+     "id": "SAU-2.M2.Q6",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "SAU-2.M2.L2",
+     "safety": false,
+     "question": "A mounted sauce turns greasy and thin after it comes back to the boil. Why?",
+     "options": [
+      {
+       "key": "A",
+       "text": "the butter was salted"
+      },
+      {
+       "key": "B",
+       "text": "heat merged the fat droplets and the emulsion separated"
+      },
+      {
+       "key": "C",
+       "text": "the stock was too gelatinous"
+      },
+      {
+       "key": "D",
+       "text": "it was not reduced enough"
+      }
+     ],
+     "answer": "B",
+     "why": "Warm butter emulsions don't survive boiling."
+    },
+    {
+     "id": "SAU-2.M2.Q7",
+     "type": "SCENARIO",
+     "lessonId": "SAU-2.M2.L2",
+     "safety": false,
+     "question": "Your *beurre monté* pan sauce has just broken. Describe the repair.",
+     "options": [],
+     "answer": "Off the heat; add a spoon of cold water or stock and whisk hard, or whisk the broken sauce slowly into a fresh spoon of reduction; serve without boiling again.",
+     "why": "A new continuous phase takes up the fat again."
+    },
+    {
+     "id": "SAU-2.M2.Q8",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "SAU-2.M2.L2",
+     "safety": false,
+     "question": "A stock reduced much further than *nappe*, until it sets firm when cold, is called:",
+     "options": [
+      {
+       "key": "A",
+       "text": "a *roux*"
+      },
+      {
+       "key": "B",
+       "text": "a *glace*"
+      },
+      {
+       "key": "C",
+       "text": "a *velouté*"
+      },
+      {
+       "key": "D",
+       "text": "a *liaison*"
+      }
+     ],
+     "answer": "B",
+     "why": "*Glace* is the concentrated end of reduction."
+    }
+   ]
+  },
+  {
+   "id": "SAU-2.M3",
+   "title": "Starch-thickened sauces",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** the 8 items of `SAU-2.M3` in the course file. Pass mark 80 %."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "SAU-2.M3.L1",
+     "title": "Roux",
+     "prerequisites": [
+      "SCI-2.M3.L1"
+     ],
+     "competencies": [
+      {
+       "id": "TS-SAU",
+       "level": 2
+      },
+      {
+       "id": "RD-RATO",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** a roux is the most reliable way to thicken a sauce, and it scales from a cup of gravy to a pan of croquette filling. With three colours and three ratios, you can thicken anything to the exact consistency you want."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** 150 g of butter and 150 g of flour; 750 ml of stock; three small pans; a flat-ended wooden spatula; a whisk; the scale; three spoons; the phone."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*A roux* is equal weights of fat (usually butter) and flour, cooked together. The fat coats the starch granules so that they disperse in the liquid without clumping; they swell and thicken as the sauce comes to the boil (`SCI-2.M3.L1`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Three colours,* by cooking time over moderate heat, stirring:"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Roux",
+        "Cooking",
+        "Use",
+        "Thickening power"
+       ],
+       "rows": [
+        [
+         "White",
+         "2–3 min, no colour; smells of biscuit rather than raw flour",
+         "*Béchamel*",
+         "Highest"
+        ],
+        [
+         "Blond",
+         "5–8 min, pale straw",
+         "*Velouté*",
+         "Slightly lower"
+        ],
+        [
+         "Brown",
+         "15–30 min, hazelnut to brown",
+         "Brown sauces, gumbo",
+         "Clearly lower: browning breaks down some starch"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Ratios per litre of liquid* (white roux, equal weights of butter and flour):"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Thickness",
+        "Roux per litre",
+        "Use"
+       ],
+       "rows": [
+        [
+         "Thin",
+         "About 60 g (30 g butter, 30 g flour)",
+         "Soups, a pouring sauce"
+        ],
+        [
+         "Medium",
+         "About 100 g (50 g, 50 g)",
+         "A coating sauce at *nappe*"
+        ],
+        [
+         "Thick",
+         "About 160 g (80 g, 80 g)",
+         "A binding sauce: croquettes, a soufflé base"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "A brown roux needs more for the same thickness. Copy both tables onto a ratio card for the kitchen wall."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Avoiding lumps.* Add the liquid to the roux gradually, whisking. One of the two should be hot and the other cool or warm: a hot roux with cool liquid, or a cooled roux with hot liquid. Both hot causes lumps."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Judge at the boil.* The sauce reaches its full thickness only at the boil, so don't adjust it before. Then simmer it for several minutes, stirring, to cook out the taste of raw flour."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Three roux (40 min).** Make a white, a blond and a brown roux, each from 25 g of butter and 25 g of flour, and photograph them side by side. Thicken 250 ml of stock with each (the medium ratio), bring to the boil, simmer for 5 minutes, and compare them on a spoon."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** the smell turning from raw flour to biscuit, then hazelnut; the sauce thickening sharply at the boil; the brown-roux sauce visibly thinner."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Black specks, a bitter smell",
+         "A burnt roux",
+         "Throw it away; start again"
+        ],
+        [
+         "Lumps",
+         "Adding all the liquid at once",
+         "Gradually, whisking; strain if needed"
+        ],
+        [
+         "Too thick once it boils",
+         "Judging the thickness before the boil",
+         "Bring to the boil, then adjust"
+        ],
+        [
+         "A floury taste",
+         "Not cooking the sauce long enough",
+         "Simmer several minutes, stirring"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** a roux is very hot and sticks to skin: stir with a long spatula, and add the liquid slowly, away from you, because it steams hard."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the photo of the three roux and a line on the three sauces; the ratio card."
+      }
+     ]
+    },
+    {
+     "id": "SAU-2.M3.L2",
+     "title": "*Béchamel* and derivatives",
+     "prerequisites": [
+      "SAU-2.M3.L1"
+     ],
+     "competencies": [
+      {
+       "id": "TS-SAU",
+       "level": 3
+      },
+      {
+       "id": "CK-CLAS",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** *béchamel* is behind the Dutch kitchen's gratins, lasagne, croquettes and cauliflower with cheese sauce. Once it is smooth every time, a whole family of sauces is a single step away."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** for session 1: 500 ml of milk; half an onion; a bay leaf; a clove; 25 g each of butter and flour; salt, white pepper, nutmeg; a heavy saucepan; a whisk; a fine sieve. For session 2, the *Mornay* inputs of `SAU-2.M3.X1`."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*A béchamel:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Infuse** the milk: warm it with the onion, the bay leaf and the clove, and leave it for 15 minutes; strain."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Make a white roux** at the ratio for its use (the medium ratio coats at *nappe*)."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "**Whisk in** the warm milk gradually, stirring into the corners."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "**Simmer** for several minutes, stirring."
+        },
+        {
+         "level": 0,
+         "marker": "5.",
+         "text": "**Season** with salt, white pepper and a grating of nutmeg."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*The derivatives,* each one step from the *béchamel*:"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "***Mornay*:** grated cheese, off the heat, for gratins;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "***soubise*:** sweated, puréed onion;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**cream sauce:** finished with cream;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**parsley sauce:** chopped parsley."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Adjusting the thickness.* Too thick: whisk in hot milk. Too thin: simmer it down, or whisk in a little *beurre manié* (`SAU-2.M3.L3`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Keeping it smooth:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "stir to the corners of the pan, where it catches and burns;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "strain it through a fine sieve if lumps form;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "press buttered paper or film on the surface against a skin."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Cheese* goes in off the boil: boiling makes it stringy and greasy."
+      },
+      {
+       "type": "paragraph",
+       "text": "*A gratin* needs the vegetables cooked and drained well first. Their water dilutes the sauce in the oven."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**A béchamel (40 min).** Make a *béchamel* at the medium ratio, infused, simmered, adjusted to *nappe*, and photographed on a spoon."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**A weeknight gratin (45 min).** A *Mornay* for a gratin of a seasonal vegetable: cauliflower, leek, chicory or celeriac in winter, courgette in summer. This can be the gratin of `SAU-2.M3.X1`."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** a smooth, glossy sauce that coats the spoon; no taste of raw flour; the cheese melted in without strings."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Lumps",
+         "Adding the milk too fast",
+         "Gradually, whisking; strain"
+        ],
+        [
+         "Burnt flecks, a scorched taste",
+         "A sauce that catches on the bottom",
+         "Stir into the corners; a heavy pan; moderate heat"
+        ],
+        [
+         "A skin on the surface",
+         "Left uncovered",
+         "Paper or film pressed on the surface"
+        ],
+        [
+         "A watery gratin",
+         "The vegetables were not drained",
+         "Drain well, or dry them in the pan"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** a thick *béchamel* spits as it bubbles: a long whisk, and a lid ready. A gratin dish comes out of the oven with oven gloves."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the spoon photo and the gratin."
+      }
+     ]
+    },
+    {
+     "id": "SAU-2.M3.L3",
+     "title": "*Velouté*, slurries and *beurre manié*",
+     "prerequisites": [
+      "SAU-2.M3.L1",
+      "STK-2.M2.L2"
+     ],
+     "competencies": [
+      {
+       "id": "TS-SAU",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** a *velouté* is a *béchamel* made with stock, and it is only as good as the stock. The quick thickeners are the everyday tools that save a sauce that is already made but too thin."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** for session 1, the inputs of `SAU-2.M3.X2`, or 500 ml of white stock, 25 g each of butter and flour, and 50 ml of cream. For session 2: 750 ml of thin stock in three pans; cornflour or potato starch; soft butter and flour; an egg yolk and 50 ml of cream; three spoons."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*A velouté:* white stock thickened with a blond roux, simmered gently and skimmed until silky. Its quality is the quality of the stock (`STK-2.M2.L2`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "*A suprême:* a chicken *velouté* finished with cream: the natural sauce for poached chicken."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Quick thickeners* for a sauce that is already made:"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Thickener",
+        "How",
+        "Result"
+       ],
+       "rows": [
+        [
+         "Slurry",
+         "Cornflour or potato starch mixed with twice its volume of cold liquid, whisked into a simmering sauce",
+         "Thickens at the boil; glossy and clear (cornflour slightly cloudy); thins again if boiled long or stirred hard"
+        ],
+        [
+         "*Beurre manié*",
+         "Equal weights of soft butter and flour kneaded together, whisked in small pieces into the simmering sauce",
+         "Body and gloss; needs a few minutes of simmering to cook the flour"
+        ],
+        [
+         "*Liaison*",
+         "Egg yolk and cream, tempered with hot sauce and stirred in off the boil",
+         "Richness and a light body; curdles if boiled"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*How much.* Start small, about a teaspoon of starch for 250 ml, because a slurry or *beurre manié* only thickens fully at the boil. Add a second teaspoon if it is still thin."
+      },
+      {
+       "type": "paragraph",
+       "text": "*The liaison* is tempered as in `STK-2.M4.L2`: a ladle of hot sauce whisked into the yolk and cream, then the mixture stirred into the sauce off the heat, and the sauce warmed gently, without boiling."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**A chicken velouté (60 min).** From frozen white stock, at the medium ratio, skimmed, and finished with cream as a *suprême*. This can be the *velouté* of `SAU-2.M3.X2`."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Three rescues (30 min).** Bring the three pans of thin stock to a simmer. Thicken one with a slurry, one with *beurre manié* and one with a *liaison*. Compare the gloss, the body and the taste on three spoons."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** a *velouté* that tastes of the stock, not of flour; the slurry sauce turning clear and glossy at the boil; the *liaison* thickening without curdling."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Lumps of starch",
+         "Starch added dry, so it forms lumps",
+         "Mix it with cold liquid first"
+        ],
+        [
+         "Grainy flecks of egg",
+         "A *liaison* boiled after it goes in",
+         "Gentle heat; never boil"
+        ],
+        [
+         "A sauce that thins again",
+         "A slurry sauce boiled hard for a long time",
+         "Bring to the boil, then serve"
+        ],
+        [
+         "A flat, floury *velouté*",
+         "A *velouté* from a weak stock",
+         "Start from a gelled stock"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** a sauce with a *liaison* is eaten hot and not kept warm for hours; leftovers are cooled and kept as leftovers: in the fridge within 2 hours, eaten within 2 days (assessment §9)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the spoon photo of the *suprême*, and the three rescues compared."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "SAU-2.M3.X1",
+     "title": "*Béchamel* for a gratin",
+     "description": "*Béchamel* for a gratin.",
+     "competencies": [
+      {
+       "id": "TS-SAU",
+       "level": 3
+      },
+      {
+       "id": "CK-CLAS",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** a lump-free *béchamel* at the right ratio, from a framework, turned into a derivative and used in a gratin. You choose the derivative (*Mornay* or *soubise*) and the vegetable from the season: courgette or green beans in summer; cauliflower, leek, chicory or celeriac in winter."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** for 4: 600 ml of milk; 30 g each of butter and flour, from the ratio card; 80 g of a hard cheese (an aged Gouda works well), or two onions; 800 g of a seasonal vegetable; an onion, a bay leaf and a clove for the infusion; a gratin dish; a spoon; the tasting form."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Framework:** the *béchamel* and its derivative."
+      },
+      {
+       "type": "table",
+       "header": [
+        "Part",
+        "What it is",
+        "Your decisions"
+       ],
+       "rows": [
+        [
+         "Ratio",
+         "From the ratio card, for the thickness the gratin needs",
+         "Thin or medium, written down with the reason"
+        ],
+        [
+         "Milk",
+         "Infused with onion, bay and clove, strained",
+         "How long"
+        ],
+        [
+         "Roux and sauce",
+         "A white roux, the warm milk whisked in, simmered",
+         "When it is at *nappe*"
+        ],
+        [
+         "Derivative",
+         "*Mornay*: cheese off the heat. *Soubise*: two onions, sweated soft and puréed",
+         "Which"
+        ],
+        [
+         "Vegetable",
+         "Cooked until just tender and drained well",
+         "Which, and how cooked"
+        ],
+        [
+         "Gratin",
+         "Vegetable and sauce in the dish, a little cheese on top, baked until bubbling and golden",
+         "—"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Procedure:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "Calculate the roux from the ratio card and write it down."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "Infuse the milk, make the roux and the sauce, and simmer."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "Photograph it on a spoon, with a line drawn through it."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "Make the derivative; assemble and bake the gratin."
+        },
+        {
+         "level": 0,
+         "marker": "5.",
+         "text": "Taste on the form."
+        },
+        {
+         "level": 0,
+         "marker": "6.",
+         "text": "Write one line on why this sauce is a derivative of *béchamel*."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`TS-SAU` level 3, the starch-thickened element:** a smooth *béchamel* at *nappe* from a framework, seasoned, with its spoon photo and the tasting form."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`CK-CLAS` level 2, the making part:** the derivative made from a framework, with the line on its family. This completes the row begun in `SAU-2.M1.X1`."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "AI review scores the spoon photo as in `SAU-2.M2.X1`: *competent* is a smooth sauce with a clean line; *not yet* is a lumpy sauce, or one that floods the line."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 1.25 h, including the oven."
+      }
+     ]
+    },
+    {
+     "id": "SAU-2.M3.X2",
+     "title": "A *velouté* by ratio",
+     "description": "A *velouté* by ratio, finished as a sauce for poached chicken.",
+     "competencies": [
+      {
+       "id": "TS-SAU",
+       "level": 3
+      },
+      {
+       "id": "RD-RATO",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** a *velouté* from a ratio card rather than a recipe, finished as a *suprême* for poached chicken. Weigh every ingredient and log the weights. The poaching method itself is taught in `POU-2.M5`; here, the chicken simply simmers gently in stock until done."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** for 4: 750 ml of white chicken stock from the freezer, plus about 750 ml more for poaching; butter and flour from the ratio card; 100 ml of cream; 4 chicken thighs or 2 breasts; a seasonal vegetable (carrots, leeks or peas); the probe; the scale; a spoon; the tasting form."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Framework:** the ratio card."
+      },
+      {
+       "type": "table",
+       "header": [
+        "Part",
+        "What it is",
+        "Your decisions"
+       ],
+       "rows": [
+        [
+         "Liquid",
+         "750 ml of white stock",
+         "—"
+        ],
+        [
+         "Roux",
+         "The medium ratio for a coating sauce: about 100 g per litre, equal weights",
+         "The grams for 750 ml, written first"
+        ],
+        [
+         "Cooking",
+         "A blond roux; the hot stock whisked in; simmered and skimmed 15–20 min",
+         "When it is silky"
+        ],
+        [
+         "Finish",
+         "100 ml of cream, as a *suprême*; salt and a little lemon",
+         "The seasoning"
+        ],
+        [
+         "Chicken",
+         "Poached gently in stock until the probe reads 75 °C at the thickest part (assessment §9)",
+         "Thighs or breasts"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Procedure:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "Write the quantities for 750 ml from the ratio card."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "Make the blond roux and the *velouté*, simmering and skimming it."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "Poach the chicken gently in the second pan of stock until the probe reads 75 °C."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "Finish the sauce with cream as a *suprême*."
+        },
+        {
+         "level": 0,
+         "marker": "5.",
+         "text": "Photograph it on a spoon, and taste on the form."
+        },
+        {
+         "level": 0,
+         "marker": "6.",
+         "text": "Log the weights."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`TS-SAU` level 3:** the *velouté* at *nappe*, scored as in `SAU-2.M2.X1`, with the tasting form."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`RD-RATO` level 2, the roux part:** a roux-thickened sauce made from a ratio card, with the weights logged and the ratio questions of this check at 80 %. The vinaigrette part of the row is in `SAU-2.M6.X1`."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "AI review scores the spoon photo: *competent* is a silky sauce with a clean line; *not yet* is a thin or lumpy one."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 1.25 h."
+      }
+     ]
+    }
+   ],
+   "items": [
+    {
+     "id": "SAU-2.M3.Q1",
+     "type": "CALCULATION",
+     "lessonId": "SAU-2.M3.L1",
+     "safety": false,
+     "question": "A medium *béchamel* uses about 100 g of roux per litre of milk, half butter and half flour. How much butter and flour do you need for 600 ml?",
+     "options": [],
+     "answer": "30 g of butter and 30 g of flour (60 g of roux).",
+     "why": "100 g × 0.6 = 60 g, split equally."
+    },
+    {
+     "id": "SAU-2.M3.Q2",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "SAU-2.M3.L1",
+     "safety": false,
+     "question": "Which roux has the least thickening power for the same weight?",
+     "options": [
+      {
+       "key": "A",
+       "text": "white"
+      },
+      {
+       "key": "B",
+       "text": "blond"
+      },
+      {
+       "key": "C",
+       "text": "brown"
+      },
+      {
+       "key": "D",
+       "text": "they're the same"
+      }
+     ],
+     "answer": "C",
+     "why": "Browning breaks down part of the starch."
+    },
+    {
+     "id": "SAU-2.M3.Q3",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "SAU-2.M3.L1",
+     "safety": false,
+     "question": "Why does a sauce made with hot roux and hot milk tend to go lumpy?",
+     "options": [
+      {
+       "key": "A",
+       "text": "the milk curdles"
+      },
+      {
+       "key": "B",
+       "text": "the starch gelatinises on contact before it can disperse"
+      },
+      {
+       "key": "C",
+       "text": "the butter separates"
+      },
+      {
+       "key": "D",
+       "text": "it doesn't"
+      }
+     ],
+     "answer": "B",
+     "why": "One of the two should be cooler."
+    },
+    {
+     "id": "SAU-2.M3.Q4",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "SAU-2.M3.L1",
+     "safety": false,
+     "question": "When does a roux sauce reach its full thickness?",
+     "options": [
+      {
+       "key": "A",
+       "text": "as soon as the liquid goes in"
+      },
+      {
+       "key": "B",
+       "text": "at the boil, after which it simmers to cook out the flour"
+      },
+      {
+       "key": "C",
+       "text": "after cooling"
+      },
+      {
+       "key": "D",
+       "text": "after straining"
+      }
+     ],
+     "answer": "B",
+     "why": "Starch gelatinises fully near the boil."
+    },
+    {
+     "id": "SAU-2.M3.Q5",
+     "type": "SCENARIO",
+     "lessonId": "SAU-2.M3.L2",
+     "safety": false,
+     "question": "Your *béchamel* is too thick for a gratin and starts to catch. What do you do?",
+     "options": [],
+     "answer": "Lower the heat, whisk in hot milk a little at a time until it coats the spoon at *nappe*, stir into the corners, and check the seasoning again.",
+     "why": "Adjust thickness with liquid; prevent catching."
+    },
+    {
+     "id": "SAU-2.M3.Q6",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "SAU-2.M3.L2",
+     "safety": false,
+     "question": "When does the cheese go into a *Mornay*?",
+     "options": [
+      {
+       "key": "A",
+       "text": "into the roux"
+      },
+      {
+       "key": "B",
+       "text": "off the boil, at the end"
+      },
+      {
+       "key": "C",
+       "text": "with the cold milk"
+      },
+      {
+       "key": "D",
+       "text": "after baking"
+      }
+     ],
+     "answer": "B",
+     "why": "Boiling makes cheese stringy and greasy."
+    },
+    {
+     "id": "SAU-2.M3.Q7",
+     "type": "CALCULATION",
+     "lessonId": "SAU-2.M3.L1",
+     "safety": false,
+     "question": "A thin sauce uses about 60 g of roux per litre and a thick one about 160 g. How much more flour does 500 ml of thick sauce need than 500 ml of thin?",
+     "options": [],
+     "answer": "25 g more flour (40 g against 15 g).",
+     "why": "Thick: 80 g roux = 40 g flour; thin: 30 g roux = 15 g flour."
+    },
+    {
+     "id": "SAU-2.M3.Q8",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "SAU-2.M3.L3",
+     "safety": false,
+     "question": "A sauce is too thin just before serving. Which quick fix adds body without lumps?",
+     "options": [
+      {
+       "key": "A",
+       "text": "dry flour sprinkled in"
+      },
+      {
+       "key": "B",
+       "text": "a slurry of cornflour in cold liquid, whisked in and brought to the boil"
+      },
+      {
+       "key": "C",
+       "text": "more stock"
+      },
+      {
+       "key": "D",
+       "text": "a raw egg"
+      }
+     ],
+     "answer": "B",
+     "why": "A slurry or *beurre manié* thickens at the boil without lumps."
+    }
+   ]
+  },
+  {
+   "id": "SAU-2.M4",
+   "title": "Cold emulsions",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** the 8 items of `SAU-2.M4` in the course file, 3 of them safety items. Pass mark 80 %, with every safety item correct."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "SAU-2.M4.L1",
+     "title": "Mayonnaise",
+     "prerequisites": [
+      "SCI-2.M4.L2"
+     ],
+     "competencies": [
+      {
+       "id": "TS-SAU",
+       "level": 3
+      },
+      {
+       "id": "SC-EMUL",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** a home-made mayonnaise is a different thing from a jar: thick, glossy and tasting of the oil you chose. Made by hand, it is the clearest lesson in emulsions, because you can watch the moment it forms."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** per batch, 1 pasteurised yolk (about 20 g), 1 teaspoon of mustard, 1 tablespoon of vinegar or lemon, about 175 ml of neutral oil at room temperature, and salt; a bowl on a damp cloth; a balloon whisk; a jug with a spout; for session 2, 50 g of pasteurised whole egg (or 2 yolks) for the blender and 1 yolk for the rescue, and the stick blender with its beaker."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Mayonnaise is oil in water:* tiny droplets of oil suspended in the water of the yolk and the acid, held apart by the yolk's lecithin and proteins (`SCI-2.M4.L2`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "*The three variables:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**ratio:** one yolk holds about 150–200 ml of oil comfortably in a home batch. More is possible, but the sauce becomes stiff and needs a little water."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**temperature:** yolk and oil at room temperature. Cold oil and cold yolk emulsify poorly."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**rate:** the oil goes in drop by drop until the emulsion forms, then in a thin stream. Too much oil too early floods the emulsifier."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*By hand.* Whisk the yolk, mustard, a pinch of salt and half the acid, then add the oil from the jug a few drops at a time, whisking constantly. After about a quarter of the oil, the sauce turns from translucent to opaque and thick: the emulsion has formed."
+      },
+      {
+       "type": "paragraph",
+       "text": "*By blender.* The egg (or yolks), mustard, acid and salt in the narrow beaker, all the oil poured on top. Start the blender on the bottom and draw it up slowly. It is faster and more forgiving, and gives a lighter, paler sauce."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Rescuing a broken mayonnaise.* Start again in a clean bowl with a fresh yolk, or with a teaspoon of mustard or water, and whisk the broken sauce in slowly, as if it were the oil."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Seasoning:* salt, the rest of the acid, mustard. A thick mayonnaise is thinned with a few drops of water."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**By hand (40 min).** One yolk, about 175 ml of oil. Photograph the stages: the first drops, the thickening, the finished sauce."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**By blender, and a rescue (40 min).** A blender mayonnaise. Then a hand mayonnaise broken on purpose by pouring the oil too fast at the start, rescued, and photographed at each step."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** the sauce turning opaque and thick in the first minutes; a ribbon that holds on the whisk; a broken sauce turning thin and oily, with a curdled look."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "It never thickens",
+         "Cold ingredients straight from the fridge",
+         "Room temperature; rescue as below"
+        ],
+        [
+         "Breaks at the start",
+         "Pouring the oil too fast at the start",
+         "Drop by drop until it forms"
+        ],
+        [
+         "A bitter mayonnaise",
+         "Strong extra-virgin olive oil as the only oil, which turns bitter when whisked hard",
+         "A neutral oil; olive oil only as a part"
+        ],
+        [
+         "A wasted batch",
+         "Giving up on a broken sauce instead of rescuing it",
+         "A fresh yolk; whisk the broken sauce in"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** mayonnaise is made with pasteurised yolk, for every guest, and kept covered in the fridge at 4 °C for at most 24 hours (assessment §9, the raw-egg row). It is out of the fridge for no longer than 2 hours in total."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the stage photos, and the cause of the break in a sentence."
+      }
+     ]
+    },
+    {
+     "id": "SAU-2.M4.L2",
+     "title": "Derivatives and safety",
+     "prerequisites": [
+      "SAU-2.M4.L1",
+      "SAF-1.M1.L1"
+     ],
+     "competencies": [
+      {
+       "id": "TS-SAU",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** one bowl of mayonnaise becomes three sauces in ten minutes. Because it contains raw yolk, it is also the sauce with the strictest rules in the course, and they are knowledge-check safety items."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** one batch of mayonnaise (`SAU-2.M4.L1`); for the *aïoli*, 2 cloves of garlic, coarse salt and olive oil; for the *rémoulade*, a teaspoon of mustard, 2 gherkins, a tablespoon of capers, parsley, chives or tarragon; for the herb mayonnaise, a handful of soft herbs; a mortar or a knife; three small bowls; a jar with a lid; a label; boiled potatoes and seasonal vegetables."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*The derivatives,* from a framework:"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "***aïoli*:** garlic pounded to a paste with a pinch of coarse salt, the mayonnaise made on it with part olive oil;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "***rémoulade*:** mustard, chopped gherkins, capers and herbs;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**tartare sauce:** gherkins, capers, shallot and herbs, sometimes chopped boiled egg;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**herb mayonnaise:** chopped soft herbs, or a green purée of blanched herbs."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "Wet additions thin the sauce: pat herbs dry, and drain and squeeze the gherkins and capers."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Raw yolk and safety* (assessment §9):"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**Raw eggs can carry *Salmonella*.** A raw-yolk sauce is made with pasteurised egg yolk, for every guest, not only for people in risk groups (pregnant people, young children, older people and anyone with weakened immunity). Those are the people for whom it matters most."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**The eggs** in the kitchen are fresh, clean and uncracked, from the fridge, and their shells are kept away from the finished sauce."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**Storage:** home-made mayonnaise goes into the fridge at 4 °C, covered, and is used within 24 hours, also when it is made with pasteurised yolk. It is out of the fridge for no longer than 2 hours in total: a bowl goes on the table for the meal and back into the fridge after it."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**Garlic in oil** needs refrigeration (§9). An *aïoli* is made for the meal; garlic oil is never kept at room temperature."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**Labelling:** the sauce and the date on the jar (`SAF-1`)."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Three derivatives (45 min).** From one batch of mayonnaise, make an *aïoli*, a *rémoulade* and a herb mayonnaise. Serve them with boiled potatoes and seasonal vegetables (in winter beetroot and carrots; in summer green beans and new potatoes). Label and chill what is left before the meal ends."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** each derivative recognisable by its flavour; the jar labelled and in the fridge before the meal ends."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "A thin, runny derivative",
+         "Watery additions, such as wet herbs or undrained gherkins, that thin the sauce",
+         "Dry and drain; a thick base"
+        ],
+        [
+         "A guest put at risk",
+         "A raw-yolk sauce made with unpasteurised yolk",
+         "Pasteurised yolk, for every guest"
+        ],
+        [
+         "A bowl warm by dessert",
+         "A bowl of mayonnaise left on the table all evening",
+         "Back into the fridge after the meal"
+        ],
+        [
+         "A botulism risk",
+         "Garlic oil stored at room temperature",
+         "Fridge; make *aïoli* for the meal"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** this lesson is the safety rule: pasteurised yolk for every guest; in the fridge at 4 °C, covered, for at most 24 hours; at most 2 hours out of it; garlic in oil in the fridge (assessment §9)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** a tasting line per derivative, and a photo of the labelled jar in the fridge."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "SAU-2.M4.X1",
+     "title": "Mayonnaise by hand, twice",
+     "description": "Mayonnaise by hand, twice; break one on purpose and rescue it.",
+     "competencies": [
+      {
+       "id": "TS-SAU",
+       "level": 3
+      },
+      {
+       "id": "SC-EMUL",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** a stable mayonnaise by hand from the recipe, then again on another day from the framework alone (ratio, temperature, rate), filmed. One of the two batches is broken on purpose and rescued. The framework batch is the `TS-SAU` evidence."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** for 2 batches: 3 pasteurised egg yolks (about 60 g; one for the rescue); 500 ml of a neutral oil (rapeseed or sunflower); mustard; wine vinegar or lemon; salt; the bowl, cloth, whisk and jug; the phone stand; a jar and a label."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Recipe:** the first batch, by hand."
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Take** the yolk carton and the oil out 20 minutes before; set the bowl on a damp cloth."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Whisk** 1 yolk (20 g), 1 teaspoon of mustard, 2 g of salt and 1 teaspoon of vinegar for 30 seconds."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "**Add** 175 ml of oil a few drops at a time, whisking constantly, until the sauce thickens and turns opaque: about the first quarter of the oil."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "**Break it:** pour the next 50 ml in one go, and whisk. Photograph the thin, oily sauce."
+        },
+        {
+         "level": 0,
+         "marker": "5.",
+         "text": "**Rescue it:** a fresh yolk in a clean bowl; whisk the broken sauce into it a few drops at a time, then in a thin stream. Whisk in the rest of the oil. Photograph it."
+        },
+        {
+         "level": 0,
+         "marker": "6.",
+         "text": "**Season** with 2 more teaspoons of vinegar, and salt to taste. Thin with a few drops of water if it is stiff."
+        },
+        {
+         "level": 0,
+         "marker": "7.",
+         "text": "**Chill** it in a labelled jar."
+        },
+        {
+         "level": 0,
+         "marker": "8.",
+         "text": "**Write** the cause of the break and the rescue in two sentences."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*The second batch* is made on another day from the framework only: the ratio, the temperature and the rate. Film it on the phone stand from the first drops to the finished sauce, then season it and photograph it on a spoon."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`TS-SAU` level 3, the cold emulsion element:** the framework batch, thick, glossy and seasoned, with the tasting form."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`SC-EMUL` level 3, the mayonnaise part:** the broken and rescued batch photographed at each step, with the cause and rescue explained, and this check at 80 %. With `SAU-2.M2.X1`, this completes the row."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "AI review scores the video: *competent* shows the oil added drop by drop until the emulsion forms, then in a thin stream, and a thick, glossy sauce; *not yet* shows the oil poured in a stream from the start, and a sauce that turns thin and oily."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 2 × 30 min on two days."
+      }
+     ]
+    }
+   ],
+   "items": [
+    {
+     "id": "SAU-2.M4.Q1",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "SAU-2.M4.L1",
+     "safety": false,
+     "question": "In mayonnaise, what keeps the oil droplets apart?",
+     "options": [
+      {
+       "key": "A",
+       "text": "the vinegar"
+      },
+      {
+       "key": "B",
+       "text": "the lecithin and proteins of the yolk"
+      },
+      {
+       "key": "C",
+       "text": "the salt"
+      },
+      {
+       "key": "D",
+       "text": "the cold"
+      }
+     ],
+     "answer": "B",
+     "why": "The yolk is the emulsifier."
+    },
+    {
+     "id": "SAU-2.M4.Q2",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "SAU-2.M4.L1",
+     "safety": false,
+     "question": "Why does the oil go in drop by drop at the start?",
+     "options": [
+      {
+       "key": "A",
+       "text": "to save oil"
+      },
+      {
+       "key": "B",
+       "text": "so the emulsifier can coat each new droplet before more oil floods it"
+      },
+      {
+       "key": "C",
+       "text": "to keep it cold"
+      },
+      {
+       "key": "D",
+       "text": "for flavour"
+      }
+     ],
+     "answer": "B",
+     "why": "Rate matters most before the emulsion forms."
+    },
+    {
+     "id": "SAU-2.M4.Q3",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "SAU-2.M4.L1",
+     "safety": false,
+     "question": "Your mayonnaise won't thicken, and the yolk and oil came straight from the fridge. What is the likely cause?",
+     "options": [
+      {
+       "key": "A",
+       "text": "too much salt"
+      },
+      {
+       "key": "B",
+       "text": "cold ingredients emulsify poorly"
+      },
+      {
+       "key": "C",
+       "text": "too much mustard"
+      },
+      {
+       "key": "D",
+       "text": "the wrong whisk"
+      }
+     ],
+     "answer": "B",
+     "why": "Use yolk and oil at room temperature."
+    },
+    {
+     "id": "SAU-2.M4.Q4",
+     "type": "SCENARIO",
+     "lessonId": "SAU-2.M4.L1",
+     "safety": false,
+     "question": "Your mayonnaise has split into a thin, oily mess halfway through. Describe the rescue.",
+     "options": [],
+     "answer": "Put a fresh yolk (or a teaspoon of mustard or water) in a clean bowl and whisk the broken sauce into it drop by drop, then in a stream, as if it were the oil.",
+     "why": "A new emulsion takes up the broken one."
+    },
+    {
+     "id": "SAU-2.M4.Q5",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "SAU-2.M4.L1",
+     "safety": false,
+     "question": "A mayonnaise has become too stiff to spread. What do you add?",
+     "options": [
+      {
+       "key": "A",
+       "text": "more oil"
+      },
+      {
+       "key": "B",
+       "text": "a few drops of water or acid"
+      },
+      {
+       "key": "C",
+       "text": "another yolk"
+      },
+      {
+       "key": "D",
+       "text": "salt"
+      }
+     ],
+     "answer": "B",
+     "why": "A little water loosens a tight emulsion."
+    },
+    {
+     "id": "SAU-2.M4.Q6",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "SAU-2.M4.L2",
+     "safety": true,
+     "question": "How long can home-made mayonnaise be kept?",
+     "options": [
+      {
+       "key": "A",
+       "text": "a week at room temperature"
+      },
+      {
+       "key": "B",
+       "text": "at most 24 hours, covered, in the fridge at 4 °C"
+      },
+      {
+       "key": "C",
+       "text": "a month in the fridge"
+      },
+      {
+       "key": "D",
+       "text": "as long as it smells fine"
+      }
+     ],
+     "answer": "B",
+     "why": "Assessment §9, the raw-egg row: a dish with raw egg at most 24 hours, in the fridge set to 4 °C."
+    },
+    {
+     "id": "SAU-2.M4.Q7",
+     "type": "SCENARIO",
+     "lessonId": "SAU-2.M4.L2",
+     "safety": true,
+     "question": "You plan an *aïoli* for a dinner, and one friend is pregnant. Which yolks do you use, and how is it served?",
+     "options": [],
+     "answer": "Pasteurised egg yolk, for every guest and not only the pregnant friend; kept chilled and served from the fridge, not left out for more than 2 hours.",
+     "why": "§9: raw-yolk sauces are made with pasteurised egg for every guest; §9 limits time out of the fridge."
+    },
+    {
+     "id": "SAU-2.M4.Q8",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "SAU-2.M4.L2",
+     "safety": true,
+     "question": "You have garlic oil left over from an *aïoli*. Where does it go?",
+     "options": [
+      {
+       "key": "A",
+       "text": "in a bottle in the cupboard"
+      },
+      {
+       "key": "B",
+       "text": "covered in the fridge, used soon, or thrown away"
+      },
+      {
+       "key": "C",
+       "text": "on the windowsill"
+      },
+      {
+       "key": "D",
+       "text": "in the freezer only after a week"
+      }
+     ],
+     "answer": "B",
+     "why": "Garlic in oil needs refrigeration (§9)."
+    }
+   ]
+  },
+  {
+   "id": "SAU-2.M5",
+   "title": "Warm emulsions",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** the 8 items of `SAU-2.M5` in the course file, 1 of them a safety item. Pass mark 80 %, with every safety item correct."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "SAU-2.M5.L1",
+     "title": "*Sabayon* and *hollandaise*",
+     "prerequisites": [
+      "SAU-2.M4.L1",
+      "EGG-1.M4.L1"
+     ],
+     "competencies": [
+      {
+       "id": "TS-SAU",
+       "level": 3
+      },
+      {
+       "id": "TS-EGG",
+       "level": 4
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** *hollandaise* is the sauce cooks fear most, because it can scramble, split or set within a minute. Its secret is a *sabayon*: yolks cooked gently to a stable foam."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** 5 pasteurised yolks (2 per session, 1 for the rescue); white-wine vinegar, a shallot and peppercorns for the reduction; 150 g of butter; lemon, salt, cayenne; the heatproof bowl and a saucepan; a balloon whisk; the probe; the vacuum flask; a small pan; a timer."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*A sabayon:* egg yolks whisked with a little liquid (water, a reduction or wine) over a bain-marie until they thicken to a pale foam."
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**The ribbon stage:** a trail from the whisk holds on the surface for a few seconds."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**The heat:** with water and acid in the mix, the yolks thicken at a higher temperature than a plain yolk (`EGG-1.M2.L1`), and they scramble if the bowl gets too hot. Probe it at the ribbon and note the reading."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**The bowl** sits over barely simmering water without touching it, and comes off the heat whenever the edges start to set."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Hollandaise:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**The reduction:** the vinegar, water, chopped shallot and crushed peppercorns, reduced to about a tablespoon and strained. Or simply water and lemon."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**The sabayon:** the yolks and the reduction whisked to the ribbon."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "**The butter:** warm melted or clarified butter whisked in slowly, roughly 50–75 g per yolk, off and on the heat."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "**Seasoning:** salt, lemon, a pinch of cayenne."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "It is a warm butter emulsion, thickened by the cooked yolk."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Saving it from overheating.* Lift the bowl off the heat and whisk in a spoon of cold water. If it has split, whisk it slowly into a fresh yolk with a spoon of water over gentle heat."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Holding it.* *Hollandaise* is made for the meal, and held either in a bowl over warm water off the heat or in a pre-warmed vacuum flask, at 57 °C or above (assessment §9), below the point where the yolk scrambles. It is not cooled and reheated, and what is left after the meal is thrown away."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Adapting.* The method scales from 1 to 6 yolks; a larger batch takes longer, so time it against the rest of the plate."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "***Sabayon* to ribbon (40 min).** Two yolks with the reduction. Photograph the ribbon; probe it at the ribbon and note the reading."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "***Hollandaise* and rescue (50 min).** A two-yolk *hollandaise*. Overheat a spoonful in the small pan until it splits, and rescue it. Hold the rest in the flask for 30 minutes, probing every 10 minutes."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** the volume about tripled; a ribbon that holds; a *hollandaise* that coats the spoon and shines; no grains of cooked yolk."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Scrambled at the edges",
+         "Water boiling under the bowl",
+         "Barely simmering; lift off often"
+        ],
+        [
+         "Thin and oily",
+         "Butter added too fast or too hot",
+         "Slowly; warm, not sizzling"
+        ],
+        [
+         "A grainy sauce",
+         "Graininess from scrambled yolk",
+         "Strain; next time, lower heat"
+        ],
+        [
+         "Split by serving time",
+         "A sauce held on the stove until it splits",
+         "Off the heat, in the flask"
+        ],
+        [
+         "A safety risk",
+         "A sauce kept for the next day",
+         "Made for the meal; leftovers thrown away"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** the yolks in a *sabayon* or *hollandaise* are only lightly cooked, so they are pasteurised, for every guest (assessment §9, the raw-egg row). Held at 57 °C or above for the meal, then thrown away (`SAU-2.M5.Q4`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the ribbon photo and its reading; the holding log."
+      }
+     ]
+    },
+    {
+     "id": "SAU-2.M5.L2",
+     "title": "*Beurre blanc*",
+     "prerequisites": [
+      "SAU-2.M2.L2"
+     ],
+     "competencies": [
+      {
+       "id": "TS-SAU",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** *beurre blanc* is little more than a sharp reduction and a lot of butter, and it is the classic sauce for fish and leeks. It has no egg; temperature alone holds it together, so it teaches heat control more purely than any other sauce."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** for session 1: 2 shallots; 100 ml of dry white wine; 2 tablespoons of white-wine vinegar; 150 g of cold butter in cubes; salt; a small heavy saucepan; a whisk; a sieve; the vacuum flask. For session 2: red wine or dry cider in place of the white wine, and a weeknight fish or vegetable dish."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Beurre blanc:* finely chopped shallot with white wine and white-wine vinegar, reduced almost dry, to about a tablespoon. Then cold butter is whisked in piece by piece, over low heat, until the sauce is pale, creamy and coats a spoon. It has no yolk: the milk solids of the butter and the reduction hold the emulsion (`SAU-2.M2.L2`). Strain out the shallot, or leave it in."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Why temperature control matters:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "too hot, and the butterfat melts out of the emulsion: the sauce turns oily;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "too cool, and the butter stops melting into it: the sauce thickens and sets."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "The working range is warm to the touch, never near a simmer. Move the pan on and off the heat as you whisk."
+      },
+      {
+       "type": "paragraph",
+       "text": "*A spoon of cream* in the reduction (*beurre nantais*) makes it more forgiving."
+      },
+      {
+       "type": "paragraph",
+       "text": "*The reduction must be reduced.* Not reduced enough, the sauce is thin and sour, and there is too much water for the butter."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Holding.* In a warm bain-marie off the heat, or a pre-warmed vacuum flask, for the length of the meal, and out of the fridge for no longer than 2 hours (assessment §9). Never next to the burner."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Variations:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "***beurre rouge*:** with red wine;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**with herbs**, chopped in at the end;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**with cider:** a reduction of dry cider and cider vinegar, good with pork and with fish."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "***Beurre blanc* (40 min).** The shallot reduction, then the 150 g of cold butter. Strain, or leave the shallot in. Hold it in the flask for 20 minutes, and check it."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**A variation (40 min).** A *beurre rouge* or a cider version, for a weeknight fish or vegetable dish (leeks in winter, asparagus in spring)."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** a pale, creamy sauce that coats the spoon; the butter melting into a sauce rather than into oil; no separation in the flask after 20 minutes."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "A thin, sour sauce",
+         "A reduction that is not reduced enough",
+         "Reduce to about a tablespoon"
+        ],
+        [
+         "Oil from the start",
+         "Butter added all at once",
+         "Piece by piece, whisking"
+        ],
+        [
+         "An oily, separated sauce",
+         "Too much heat",
+         "Off the heat; a cold cube to cool it"
+        ],
+        [
+         "Split while waiting",
+         "Holding it next to the burner",
+         "Bain-marie off the heat, or the flask"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** no special risks beyond the kitchen basics (`SAF-1`); the 2-hour limit out of the fridge applies to the sauce (assessment §9)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** a spoon photo and a line on the flask check."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "SAU-2.M5.X1",
+     "title": "*Hollandaise* on an eggs Benedict-style plate",
+     "description": "Eggs Benedict-style plate with *hollandaise*.",
+     "competencies": [
+      {
+       "id": "TS-SAU",
+       "level": 3
+      },
+      {
+       "id": "TS-EGG",
+       "level": 4
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** time a warm emulsion and poached eggs together for a household brunch for 4, adapting the recipe for quantity (*hollandaise* for everyone, one poached egg each) and for timing (the sauce is held while the eggs poach). Then write two lines on what you adapted and how it worked."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** for 4: 4 fresh eggs to poach; 3 pasteurised egg yolks (about 60 g) for the sauce (assessment §9); 200 g of butter; vinegar, a shallot, a lemon; 4 slices of bread or English muffins; ham, or 400 g of spinach or chard in season; the bain-marie bowl; the flask; the probe; a wide pan and a slotted spoon; a bowl of warm water."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Recipe:** the brunch."
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Plan** the timing in writing: reduction, sauce, hold, eggs, toast, plate."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Reduce** 3 tablespoons of vinegar, 3 of water, the chopped shallot and 6 crushed peppercorns to about a tablespoon; strain."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "**Melt** the butter and keep it warm."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "**Whisk** the 3 yolks and the reduction over barely simmering water to the ribbon."
+        },
+        {
+         "level": 0,
+         "marker": "5.",
+         "text": "**Whisk in** the warm butter slowly, off and on the heat. Season with salt, lemon and a pinch of cayenne."
+        },
+        {
+         "level": 0,
+         "marker": "6.",
+         "text": "**Hold** it in the pre-warmed flask, and probe it: 57 °C or above. Log the reading."
+        },
+        {
+         "level": 0,
+         "marker": "7.",
+         "text": "**Poach** the eggs one or two at a time, about 3 minutes each, in water just below a simmer (`EGG-1.M3.L1`); keep them in the bowl of warm water. Wilt the spinach, or warm the ham. Toast the bread."
+        },
+        {
+         "level": 0,
+         "marker": "8.",
+         "text": "**Probe** the sauce again at the end of the hold and log it. Plate: bread, ham or greens, egg, sauce."
+        },
+        {
+         "level": 0,
+         "marker": "9.",
+         "text": "**Photograph** the sauce on a spoon, the plate, and one egg cut open."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`TS-SAU` level 3, the warm emulsion element:** the *hollandaise* at *nappe*, smooth and glossy, held without splitting."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`TS-EGG` level 4, the yolk-cooking and poaching part:** yolks cooked to a stable *sabayon*, with the temperature log; poached eggs for four with compact whites and runny yolks (cooked firm for a guest in a risk group, §9); both adapted for quantity and timing, as written up. The custards and the third occasion are in `BAK-2.M5`."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "AI review scores the spoon photo as in `SAU-2.M2.X1`: *competent* is a smooth, glossy sauce with a clean line; *not yet* is a grainy or split sauce."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 1.25 h."
+      }
+     ]
+    },
+    {
+     "id": "SAU-2.M5.X2",
+     "title": "Fish with *beurre blanc*",
+     "description": "Fish with *beurre blanc*.",
+     "competencies": [
+      {
+       "id": "TS-SAU",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** a *beurre blanc* from a framework, served at the right temperature on fish. The fish is MSC-labelled or a seasonal North Sea fish (plaice, whiting or coley), cooked to the fish figure of assessment §9 (63 °C), checked with the probe. The fish methods themselves come in `FSH-2`: here, pan-fry or steam it simply."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** for 2: 2 fish fillets; 1 shallot; 100 ml of white wine and a splash of white-wine vinegar; 125 g of cold butter; a seasonal vegetable (leeks, samphire in summer, or potatoes); the probe; the flask; a spoon; the tasting form."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Framework:** the *beurre blanc*."
+      },
+      {
+       "type": "table",
+       "header": [
+        "Part",
+        "What it is",
+        "Your decisions"
+       ],
+       "rows": [
+        [
+         "Reduction",
+         "Shallot, wine and vinegar, reduced to about a tablespoon",
+         "Cream in it (*beurre nantais*) or not"
+        ],
+        [
+         "Butter",
+         "125 g of cold cubes, whisked in piece by piece over low heat",
+         "When to move the pan off the heat"
+        ],
+        [
+         "Seasoning",
+         "Salt; a drop of lemon",
+         "—"
+        ],
+        [
+         "Hold",
+         "Bain-marie off the heat or the warm flask, briefly",
+         "Strained or not"
+        ],
+        [
+         "Fish",
+         "Cooked to 63 °C at the thickest part, probed",
+         "Pan-fried or steamed"
+        ],
+        [
+         "Vegetable",
+         "In season, cooked to be ready with the fish",
+         "Which"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Procedure:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "Make the reduction."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "Cook the fish and the vegetable."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "Mount the *beurre blanc* and hold it briefly."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "Probe the fish."
+        },
+        {
+         "level": 0,
+         "marker": "5.",
+         "text": "Plate."
+        },
+        {
+         "level": 0,
+         "marker": "6.",
+         "text": "Photograph the sauce on a spoon and on the plate."
+        },
+        {
+         "level": 0,
+         "marker": "7.",
+         "text": "Taste on the form."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:** the *beurre blanc* creamy, at *nappe* and seasoned, with no oiling on the plate, for the warm emulsion element of `TS-SAU` level 3, with the tasting form."
+      },
+      {
+       "type": "paragraph",
+       "text": "AI review scores the photos as in `SAU-2.M2.X1`: *competent* is a creamy sauce that coats the spoon and sits on the plate without oiling; *not yet* is a sauce with a ring of oil around it on the plate."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 45 min."
+      }
+     ]
+    }
+   ],
+   "items": [
+    {
+     "id": "SAU-2.M5.Q1",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "SAU-2.M5.L1",
+     "safety": false,
+     "question": "What does the \"ribbon stage\" of a *sabayon* look like?",
+     "options": [
+      {
+       "key": "A",
+       "text": "the yolks are still liquid"
+      },
+      {
+       "key": "B",
+       "text": "a trail from the whisk holds on the surface for a few seconds"
+      },
+      {
+       "key": "C",
+       "text": "the yolks have set firm"
+      },
+      {
+       "key": "D",
+       "text": "bubbles break on the surface"
+      }
+     ],
+     "answer": "B",
+     "why": "The ribbon shows the yolks are cooked and aerated."
+    },
+    {
+     "id": "SAU-2.M5.Q2",
+     "type": "SCENARIO",
+     "lessonId": "SAU-2.M5.L1",
+     "safety": false,
+     "question": "Your *hollandaise* is starting to look grainy at the edges of the bowl. What do you do at once?",
+     "options": [],
+     "answer": "Lift the bowl off the heat, whisk in a spoon of cold water, and lower the heat under the bain-marie before going on.",
+     "why": "The yolk is starting to scramble."
+    },
+    {
+     "id": "SAU-2.M5.Q3",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "SAU-2.M5.L1",
+     "safety": false,
+     "question": "Why is the bowl for a *sabayon* kept clear of the water?",
+     "options": [
+      {
+       "key": "A",
+       "text": "to save water"
+      },
+      {
+       "key": "B",
+       "text": "so the yolks heat gently and don't scramble"
+      },
+      {
+       "key": "C",
+       "text": "to make it froth"
+      },
+      {
+       "key": "D",
+       "text": "for hygiene"
+      }
+     ],
+     "answer": "B",
+     "why": "Gentle, indirect heat."
+    },
+    {
+     "id": "SAU-2.M5.Q4",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "SAU-2.M5.L1",
+     "safety": true,
+     "question": "You hold *hollandaise* for a brunch. Which is right?",
+     "options": [
+      {
+       "key": "A",
+       "text": "warm, at 57 °C or above, made for the meal and thrown away after it"
+      },
+      {
+       "key": "B",
+       "text": "cooled, refrigerated and reheated the next day"
+      },
+      {
+       "key": "C",
+       "text": "on the stove at a simmer"
+      },
+      {
+       "key": "D",
+       "text": "at room temperature for the afternoon"
+      }
+     ],
+     "answer": "A",
+     "why": "§9: hot holding at 57 °C or above; a raw-yolk sauce is not kept."
+    },
+    {
+     "id": "SAU-2.M5.Q5",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "SAU-2.M5.L2",
+     "safety": false,
+     "question": "What holds a *beurre blanc* together?",
+     "options": [
+      {
+       "key": "A",
+       "text": "egg yolk"
+      },
+      {
+       "key": "B",
+       "text": "the milk solids of the butter and the reduction, kept warm but not hot"
+      },
+      {
+       "key": "C",
+       "text": "flour"
+      },
+      {
+       "key": "D",
+       "text": "cream alone"
+      }
+     ],
+     "answer": "B",
+     "why": "It has no yolk; temperature keeps it stable."
+    },
+    {
+     "id": "SAU-2.M5.Q6",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "SAU-2.M5.L2",
+     "safety": false,
+     "question": "A *beurre blanc* turns oily. Why?",
+     "options": [
+      {
+       "key": "A",
+       "text": "the butter was cold"
+      },
+      {
+       "key": "B",
+       "text": "it got too hot and the butterfat melted out of the emulsion"
+      },
+      {
+       "key": "C",
+       "text": "too much reduction"
+      },
+      {
+       "key": "D",
+       "text": "not enough salt"
+      }
+     ],
+     "answer": "B",
+     "why": "Too hot breaks it; too cold sets it."
+    },
+    {
+     "id": "SAU-2.M5.Q7",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "SAU-2.M5.L2",
+     "safety": false,
+     "question": "Why is the butter for a *beurre blanc* added piece by piece?",
+     "options": [
+      {
+       "key": "A",
+       "text": "to count it"
+      },
+      {
+       "key": "B",
+       "text": "so each piece melts into the emulsion while the sauce stays in its warm range"
+      },
+      {
+       "key": "C",
+       "text": "to cool the reduction"
+      },
+      {
+       "key": "D",
+       "text": "for colour"
+      }
+     ],
+     "answer": "B",
+     "why": "The same principle as *monter au beurre*."
+    },
+    {
+     "id": "SAU-2.M5.Q8",
+     "type": "SCENARIO",
+     "lessonId": "SAU-2.M5.L2",
+     "safety": false,
+     "question": "Your guests are 20 minutes late and the *beurre blanc* is ready. How do you hold it?",
+     "options": [],
+     "answer": "Off the heat in a warm bain-marie or a pre-warmed vacuum flask, whisked now and then, never back near a simmer; serve within the meal.",
+     "why": "Hold warm, not hot."
+    }
+   ]
+  },
+  {
+   "id": "SAU-2.M6",
+   "title": "Vinaigrettes and dressings",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** the 8 items of `SAU-2.M6` in the course file. Pass mark 80 %."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "SAU-2.M6.L1",
+     "title": "Vinaigrettes",
+     "prerequisites": [
+      "SCI-2.M4.L2",
+      "TST-1.M3.L1"
+     ],
+     "competencies": [
+      {
+       "id": "TS-SAU",
+       "level": 3
+      },
+      {
+       "id": "RD-RATO",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** a vinaigrette is the sauce you make most often and think about least. A ratio, the right order and tasting on a leaf turn a salad from an afterthought into part of the meal."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** a neutral oil and a good olive oil; wine vinegar and cider vinegar; a lemon; mustard; honey or apple syrup (*appelstroop*); salt and pepper; small jars with lids; a timer; two leaves to taste on: a delicate one (butterhead or lamb's lettuce) and a bitter one (chicory or endive)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*The ratio:* about 3 parts oil to 1 part acid by volume, then adjusted by taste."
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**Sharper, 2 : 1:** for bitter or robust leaves such as chicory and endive, or a potato salad that absorbs it."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**Softer, 4 : 1:** for delicate leaves such as butterhead lettuce or lamb's lettuce."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*The order:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "Dissolve the salt in the acid first: salt does not dissolve in oil."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "Add the mustard."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "Add the oil."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Emulsified or broken:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**emulsified:** with mustard, shaken or whisked hard, or blended; it clings to leaves and holds for a while;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**broken:** oil and acid only, or drizzled separately; lighter, for delicate leaves and grilled vegetables."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Adjusting:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**acid and sweetness to the leaves:** bitter leaves take a touch of honey or apple syrup; sweet leaves take more acid;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**dress late,** just before serving, because salt and acid wilt leaves;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**taste on a leaf,** not from a spoon (`TST-1.M3.L1`): on a spoon, any vinaigrette tastes too sharp."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Acids and oils.* Acids: wine vinegar, cider vinegar, lemon. Oils: rapeseed and sunflower (neutral), olive, walnut. Dutch cold-pressed rapeseed oil has a nutty, green taste of its own."
+      },
+      {
+       "type": "paragraph",
+       "text": "*A ratio card.* Add the three ratios to the card from `SAU-2.M3.L1`."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Three ratios (30 min).** Make 2 : 1, 3 : 1 and 4 : 1 with the same oil and vinegar, salted the same. Taste each on the same leaf; note which ratio suits which leaf."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Broken and emulsified (30 min).** The same 3 : 1 dressing, shaken with and without mustard. Time how long each takes to separate in the jar. Then taste each on the delicate and the bitter leaf."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** an emulsified dressing that coats a leaf; a balance where neither the oil nor the acid stands out on the leaf; leaves still crisp at the table."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Gritty grains of salt",
+         "Salt in the oil",
+         "Salt into the acid first"
+        ],
+        [
+         "Delicate leaves wilted and sour",
+         "Too much acid for delicate leaves",
+         "4 : 1, or a broken dressing"
+        ],
+        [
+         "A limp, soggy salad",
+         "A salad dressed an hour before the meal",
+         "Dress just before serving"
+        ],
+        [
+         "A dressing that tastes harsh but suits the leaves",
+         "Tasting from the spoon",
+         "Taste on a leaf"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** no special risks beyond the kitchen basics (`SAF-1`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the three ratios with the leaf each suited, and the separation times."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "SAU-2.M6.X1",
+     "title": "Three vinaigrettes, three salads",
+     "description": "Three vinaigrettes for three different salads, by ratio.",
+     "competencies": [
+      {
+       "id": "TS-SAU",
+       "level": 3
+      },
+      {
+       "id": "RD-RATO",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** three vinaigrettes from a ratio card, each matched to a different salad, with the household tasting on the form. The leaves follow the season: in summer butterhead lettuce, cucumber, tomatoes and green beans; in winter lamb's lettuce, chicory, endive, red cabbage, roasted beetroot and potato."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** three salads for 4; vinegars, oils, mustard and honey or apple syrup from the pantry; the ratio card; three jars; the tasting forms."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Framework:** the ratio card."
+      },
+      {
+       "type": "table",
+       "header": [
+        "Part",
+        "What it is",
+        "Your decisions"
+       ],
+       "rows": [
+        [
+         "Ratio",
+         "2 : 1 robust, 3 : 1 standard, 4 : 1 delicate, by volume",
+         "Which, for each salad"
+        ],
+        [
+         "Acid",
+         "Wine vinegar, cider vinegar or lemon, with the salt dissolved in it",
+         "Which"
+        ],
+        [
+         "Oil",
+         "Neutral, olive, walnut or cold-pressed rapeseed",
+         "Which"
+        ],
+        [
+         "Emulsion",
+         "Emulsified with mustard, or broken",
+         "Which, for the leaves"
+        ],
+        [
+         "Balance",
+         "Honey or apple syrup for bitter leaves; more acid for sweet ones",
+         "How much, tasted on a leaf"
+        ],
+        [
+         "Timing",
+         "Dressed just before serving",
+         "—"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Procedure:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "Write the ratio and the choices for each salad, with one line of reasoning each."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "Make the dressings and taste them on a leaf; adjust."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "Dress the salads just before serving."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "Photograph them."
+        },
+        {
+         "level": 0,
+         "marker": "5.",
+         "text": "Collect the household's forms."
+        },
+        {
+         "level": 0,
+         "marker": "6.",
+         "text": "Note the final ratio of each."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`TS-SAU` level 3, the vinaigrette element:** three vinaigrettes from a ratio card, balanced on the form and matched to the leaves. With the elements of `SAU-2.M2` to `SAU-2.M5`, this gives four or five of the five elements of the row."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`RD-RATO` level 2, the vinaigrette part:** a vinaigrette made from a ratio card, with the ratio items of this check at 80 %. With `SAU-2.M3.X2`, this completes the row."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 45 min, as part of a meal."
+      }
+     ]
+    }
+   ],
+   "items": [
+    {
+     "id": "SAU-2.M6.Q1",
+     "type": "CALCULATION",
+     "lessonId": "SAU-2.M6.L1",
+     "safety": false,
+     "question": "You want 120 ml of vinaigrette at 3 : 1. How much oil and how much vinegar?",
+     "options": [],
+     "answer": "90 ml of oil and 30 ml of vinegar.",
+     "why": "120 ÷ 4 = 30 ml per part."
+    },
+    {
+     "id": "SAU-2.M6.Q2",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "SAU-2.M6.L1",
+     "safety": false,
+     "question": "Why is the salt dissolved in the vinegar before the oil goes in?",
+     "options": [
+      {
+       "key": "A",
+       "text": "for colour"
+      },
+      {
+       "key": "B",
+       "text": "salt doesn't dissolve in oil"
+      },
+      {
+       "key": "C",
+       "text": "to stop the vinegar going off"
+      },
+      {
+       "key": "D",
+       "text": "to thicken it"
+      }
+     ],
+     "answer": "B",
+     "why": "Dissolve the salt in the acid."
+    },
+    {
+     "id": "SAU-2.M6.Q3",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "SAU-2.M6.L1",
+     "safety": false,
+     "question": "What does mustard do in a vinaigrette?",
+     "options": [
+      {
+       "key": "A",
+       "text": "only adds flavour"
+      },
+      {
+       "key": "B",
+       "text": "acts as an emulsifier, so the dressing holds and clings"
+      },
+      {
+       "key": "C",
+       "text": "preserves it"
+      },
+      {
+       "key": "D",
+       "text": "sweetens it"
+      }
+     ],
+     "answer": "B",
+     "why": "Mustard stabilises the emulsion."
+    },
+    {
+     "id": "SAU-2.M6.Q4",
+     "type": "SCENARIO",
+     "lessonId": "SAU-2.M6.L1",
+     "safety": false,
+     "question": "You're dressing chicory, which is bitter. How do you adjust a 3 : 1 vinaigrette?",
+     "options": [],
+     "answer": "Make it sharper (towards 2 : 1) and add a touch of sweetness (honey or apple syrup), tasted on a leaf.",
+     "why": "Bitter leaves take more acid and a little sweetness."
+    },
+    {
+     "id": "SAU-2.M6.Q5",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "SAU-2.M6.L1",
+     "safety": false,
+     "question": "Which salad suits a light, broken dressing best?",
+     "options": [
+      {
+       "key": "A",
+       "text": "a potato salad"
+      },
+      {
+       "key": "B",
+       "text": "delicate lamb's lettuce"
+      },
+      {
+       "key": "C",
+       "text": "a red cabbage slaw"
+      },
+      {
+       "key": "D",
+       "text": "chicory"
+      }
+     ],
+     "answer": "B",
+     "why": "Heavy dressings crush delicate leaves."
+    },
+    {
+     "id": "SAU-2.M6.Q6",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "SAU-2.M6.L1",
+     "safety": false,
+     "question": "Why is a green salad dressed just before serving?",
+     "options": [
+      {
+       "key": "A",
+       "text": "the oil goes rancid"
+      },
+      {
+       "key": "B",
+       "text": "salt and acid draw water and wilt the leaves"
+      },
+      {
+       "key": "C",
+       "text": "it gets cold"
+      },
+      {
+       "key": "D",
+       "text": "for tradition"
+      }
+     ],
+     "answer": "B",
+     "why": "Dress late."
+    },
+    {
+     "id": "SAU-2.M6.Q7",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "SAU-2.M6.L1",
+     "safety": false,
+     "question": "How do you taste a vinaigrette for a salad?",
+     "options": [
+      {
+       "key": "A",
+       "text": "from a spoon"
+      },
+      {
+       "key": "B",
+       "text": "on a leaf of the salad it will dress"
+      },
+      {
+       "key": "C",
+       "text": "by smell"
+      },
+      {
+       "key": "D",
+       "text": "on bread"
+      }
+     ],
+     "answer": "B",
+     "why": "The leaf changes the balance."
+    },
+    {
+     "id": "SAU-2.M6.Q8",
+     "type": "CALCULATION",
+     "lessonId": "SAU-2.M6.L1",
+     "safety": false,
+     "question": "A 4 : 1 dressing for delicate leaves needs 20 ml of vinegar. How much oil?",
+     "options": [],
+     "answer": "80 ml.",
+     "why": "Four parts oil to one part acid."
+    }
+   ]
+  },
+  {
+   "id": "SAU-2.M7",
+   "title": "Diagnosing and repairing sauces",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** the 8 items of `SAU-2.M7` in the course file. Pass mark 80 %."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "SAU-2.M7.L1",
+     "title": "Sauce clinic",
+     "prerequisites": [
+      "SAU-2.M5.L2"
+     ],
+     "competencies": [
+      {
+       "id": "JD-TRBL",
+       "level": 3
+      },
+      {
+       "id": "FL-CORR",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** in a real kitchen, sauces go wrong at the last minute, and nobody tells you why. The clinic trains the habit that saves them: look, taste and name the cause before reaching for anything."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** a helper; the fault cards of `SAU-2.M7.X1`; the ingredients for three sauces from your own cooking per session (stock, milk, butter and flour, eggs and oil, vinegar and a shallot); the clinic table; a spoon; the phone; the fault log; the household's tasting forms."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Diagnosis first.* The same symptom has different causes in different families. A thin sauce can be under-reduced, under-thickened, a broken emulsion, or a slurry boiled too long. Name the cause in the log before you add anything."
+      },
+      {
+       "type": "paragraph",
+       "text": "*The clinic table,* cause and fix per family:"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Reduction or pan sauce",
+        "Starch-thickened",
+        "Emulsion"
+       ],
+       "rows": [
+        [
+         "Broken or greasy",
+         "Over-boiled after mounting: cold liquid, whisk",
+         "Fat floating from too much roux fat: skim, whisk",
+         "Rescue with fresh yolk or water"
+        ],
+        [
+         "Lumpy",
+         "—",
+         "Strain, or blend and simmer",
+         "Grainy yolk: strain, rescue"
+        ],
+        [
+         "Too thin",
+         "Reduce, or mount with butter",
+         "Simmer down, *beurre manié*, slurry",
+         "More oil (cold) or a further ribbon (warm)"
+        ],
+        [
+         "Too thick",
+         "Add stock",
+         "Add hot liquid",
+         "Add water a few drops at a time"
+        ],
+        [
+         "Flat",
+         "Salt, acid, a reduction of wine",
+         "Salt, nutmeg, cheese",
+         "Salt, acid, mustard"
+        ],
+        [
+         "Too salty",
+         "Dilute with unsalted stock, add cream or butter",
+         "Add more unsalted sauce base",
+         "Make more unsalted sauce and combine"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Flavour faults* are fixed with the tools of `FL-CORR` (`TST-1`, `STK-2.M5.L1`): acid lifts a flat sauce; fat or sweetness softens a harsh one; salt is corrected by dilution, never masked with sugar."
+      },
+      {
+       "type": "paragraph",
+       "text": "*One change at a time,* tasted after each."
+      },
+      {
+       "type": "paragraph",
+       "text": "*The fault cards* are in `SAU-2.M7.X1`: the helper draws one per sauce, cards 1–3 for session 1 and 4–6 for session 2."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Write it up:* the fault, the cause, the fix and why it worked: the entries of your fault log."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Structural faults (60 min).** Three sauces from your own cooking, each given one structural fault by the helper, unseen. Diagnose, name the cause, repair, and photograph before and after."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Flavour faults (60 min).** Three sauces again, each with one flavour fault. Taste, correct, write up the reason; the household tastes before and after."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** the cause named before anything is added; one change at a time, tasted after each; a repaired sauce at *nappe* and balanced."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "A broken emulsion turned to paste",
+         "Adding flour to a broken emulsion",
+         "Rescue an emulsion with yolk or water"
+        ],
+        [
+         "A salty sauce that is now sweet",
+         "Masking salt with sugar",
+         "Dilute with unsalted base"
+        ],
+        [
+         "A sauce nobody can read",
+         "Adding several corrections at once",
+         "One change, then taste"
+        ],
+        [
+         "A waste",
+         "Throwing away a sauce that could be saved",
+         "Check the clinic table first"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** the usual rules hold: pasteurised yolk in the egg sauces, and a split *hollandaise* rescued for the meal or thrown away, never kept (assessment §9)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** each fault, cause, fix and result in the fault log, with the photos."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "SAU-2.M7.X1",
+     "title": "The sauce clinic",
+     "description": "Repair three faulty sauces prepared by a household member, without instructions.",
+     "competencies": [
+      {
+       "id": "JD-TRBL",
+       "level": 3
+      },
+      {
+       "id": "FL-CORR",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** diagnose and repair faults in sauces, with no warning and no instructions."
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**The goal:** six sauces back to *nappe* and balance, over two sessions on different days."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**The setup:** for each session, make three sauces from different families for a meal. While you are out of the kitchen, a household member applies one fault card from `SAU-2.M7.L1` to each. You are told only that each sauce has one fault."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**The constraints:** no notes beyond the clinic table."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**Session 1, structure:** diagnose each sauce by look and spoon; name the cause in the log; repair it; photograph before and after."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**Session 2, flavour:** taste each sauce; name the fault and the cause; correct it; the tasters score it before and after on the form."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**The criteria:** the cause named before the fix; the sauce at *nappe* and balanced; all six written up (fault, cause, fix, why it worked)."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*The fault cards,* for the helper, who draws one per sauce and applies it unseen:"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Card",
+        "Fault",
+        "What the helper does"
+       ],
+       "rows": [
+        [
+         "1",
+         "Too thick",
+         "Whisks an extra tablespoon of roux, or *beurre manié*, into a starch sauce and simmers it"
+        ],
+        [
+         "2",
+         "Broken",
+         "Brings a mounted sauce to the boil, or warms a *hollandaise* until it splits"
+        ],
+        [
+         "3",
+         "Too thin",
+         "Adds 50 ml of water to a sauce"
+        ],
+        [
+         "4",
+         "Too salty",
+         "Adds a pinch (about 1 g) of salt per 100 ml"
+        ],
+        [
+         "5",
+         "Too sour",
+         "Adds a teaspoon of vinegar per 100 ml"
+        ],
+        [
+         "6",
+         "Flat",
+         "Makes the sauce without salt, or dilutes it"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "Session 1 uses cards 1–3, session 2 cards 4–6."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** the components of six sauces across two meals (stock; milk, butter and flour; pasteurised yolks and oil; vinegar and a shallot), served on the household's meals; the clinic table; the fault log; the tasting forms."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`JD-TRBL` level 3:** the three structural faults from session 1, in sauces of your own cooking, recovered, with photos before and after and the cause named in the log."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`FL-CORR` level 3:** the three flavour faults from session 2, named, fixed and written up with the reason, with the tasters confirming each fix on the form."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "The repair test is run again at `MS-S2`."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 2 × 1 h."
+      }
+     ]
+    }
+   ],
+   "items": [
+    {
+     "id": "SAU-2.M7.Q1",
+     "type": "SCENARIO",
+     "lessonId": "SAU-2.M7.L1",
+     "safety": false,
+     "question": "A *béchamel* is lumpy. Name the likely cause and the fix.",
+     "options": [],
+     "answer": "Milk added too fast, or hot liquid on a hot roux; strain it (or blend it), then simmer and adjust the thickness.",
+     "why": "Starch gelatinised before it dispersed."
+    },
+    {
+     "id": "SAU-2.M7.Q2",
+     "type": "SCENARIO",
+     "lessonId": "SAU-2.M7.L1",
+     "safety": false,
+     "question": "A *hollandaise* has split into butter and grainy yolk. Cause and fix?",
+     "options": [],
+     "answer": "Overheated (or butter added too fast); off the heat, whisk it slowly into a fresh yolk with a spoon of water over gentle heat.",
+     "why": "A new emulsion takes up the broken one."
+    },
+    {
+     "id": "SAU-2.M7.Q3",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "SAU-2.M7.L1",
+     "safety": false,
+     "question": "A cornflour-thickened gravy thinned again after a long, hard boil. Why?",
+     "options": [
+      {
+       "key": "A",
+       "text": "the cornflour was old"
+      },
+      {
+       "key": "B",
+       "text": "prolonged boiling and stirring break down the swollen starch"
+      },
+      {
+       "key": "C",
+       "text": "too much salt"
+      },
+      {
+       "key": "D",
+       "text": "the stock was weak"
+      }
+     ],
+     "answer": "B",
+     "why": "Starch gels can thin with long boiling."
+    },
+    {
+     "id": "SAU-2.M7.Q4",
+     "type": "SCENARIO",
+     "lessonId": "SAU-2.M7.L1",
+     "safety": false,
+     "question": "A pan sauce tastes flat but has enough salt. What do you try first?",
+     "options": [],
+     "answer": "A few drops of acid (vinegar, lemon or wine reduction), tasted after each; then fresh herbs if needed.",
+     "why": "Acid lifts a flat sauce."
+    },
+    {
+     "id": "SAU-2.M7.Q5",
+     "type": "SCENARIO",
+     "lessonId": "SAU-2.M7.L1",
+     "safety": false,
+     "question": "A *velouté* is too salty. What fixes it, and what doesn't?",
+     "options": [],
+     "answer": "Dilute it: more unsalted stock thickened to the same consistency, or cream; sugar or masking flavours don't remove salt.",
+     "why": "Salt is fixed by dilution."
+    },
+    {
+     "id": "SAU-2.M7.Q6",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "SAU-2.M7.L1",
+     "safety": false,
+     "question": "A vinaigrette is harsh and sour. Which fix fits?",
+     "options": [
+      {
+       "key": "A",
+       "text": "more salt"
+      },
+      {
+       "key": "B",
+       "text": "more oil, or a touch of honey, tasted on a leaf"
+      },
+      {
+       "key": "C",
+       "text": "more vinegar"
+      },
+      {
+       "key": "D",
+       "text": "more mustard only"
+      }
+     ],
+     "answer": "B",
+     "why": "Fat and sweetness soften acid."
+    },
+    {
+     "id": "SAU-2.M7.Q7",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "SAU-2.M7.L1",
+     "safety": false,
+     "question": "A mayonnaise is thin and oily. Which fix is wrong?",
+     "options": [
+      {
+       "key": "A",
+       "text": "a fresh yolk, whisking the broken sauce in slowly"
+      },
+      {
+       "key": "B",
+       "text": "a teaspoon of mustard in a clean bowl, then the sauce slowly"
+      },
+      {
+       "key": "C",
+       "text": "whisking in a spoon of flour"
+      },
+      {
+       "key": "D",
+       "text": "a spoon of water in a clean bowl, then the sauce slowly"
+      }
+     ],
+     "answer": "C",
+     "why": "Flour doesn't rebuild an emulsion."
+    },
+    {
+     "id": "SAU-2.M7.Q8",
+     "type": "ORDERING",
+     "lessonId": "SAU-2.M7.L1",
+     "safety": false,
+     "question": "Put the clinic in order: A) taste again B) name the cause C) make one correction D) look and taste",
+     "options": [],
+     "answer": "D, B, C, A",
+     "why": "Diagnose before you fix; one change at a time."
+    }
+   ]
+  }
+ ]
+}

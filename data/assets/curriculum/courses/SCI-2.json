@@ -1,0 +1,3445 @@
+{
+ "schemaVersion": 1,
+ "id": "SCI-2",
+ "introduction": [
+  {
+   "type": "paragraph",
+   "text": "**Before you start.** In S1, science explained single results: why a dry surface browns, why an egg sets. In S2 you use it to **predict** a result and then **test** it. This course comes first in the stage because every later S2 course leans on it:"
+  },
+  {
+   "type": "list",
+   "items": [
+    {
+     "level": 0,
+     "marker": "",
+     "text": "**proteins:** what heat and salt do to meat, poultry and fish;"
+    },
+    {
+     "level": 0,
+     "marker": "",
+     "text": "**starches and gluten:** what thickens a sauce and builds a dough;"
+    },
+    {
+     "level": 0,
+     "marker": "",
+     "text": "**fats and emulsions:** the base of the sauces in `SAU-2`;"
+    },
+    {
+     "level": 0,
+     "marker": "",
+     "text": "**water, salt, sugar and acid:** from browning to leavening;"
+    },
+    {
+     "level": 0,
+     "marker": "",
+     "text": "**microbiology:** why some risks survive cooking, and how hurdles keep food safe."
+    }
+   ]
+  },
+  {
+   "type": "paragraph",
+   "text": "*One experiment per module.* Module 1 teaches the method: one variable, a control, blind tasting, and a plan written before you cook. Every later module runs one such experiment, and you write it up the same way. By the end you can answer a cooking question with data instead of opinion."
+  },
+  {
+   "type": "paragraph",
+   "text": "*The experiment log.* Start a section of the journal for it. Each entry has the question, the plan, the result table, the photos and the conclusion. The template is in `SCI-2.M1.X1`."
+  },
+  {
+   "type": "paragraph",
+   "text": "Plan about three weeks of evening sessions. The brining comparison needs a day of waiting, and the starch samples are checked again after chilling and freezing. Nearly everything you cook here is eaten: the chicken is dinner, the stock becomes soup, the onions go into a soup, and the cooled batch is the week's lunches."
+  },
+  {
+   "type": "paragraph",
+   "text": "**Have ready:** the scale (1 g); the probe thermometer; saucepans and the sauté pan (`EQP-1`); three mixing bowls; two or three clean jars with lids; a fine sieve; masking tape and a pen for codes; a helper for the blind tastings; the journal; a phone for photos. pH strips are optional."
+  }
+ ],
+ "modules": [
+  {
+   "id": "SCI-2.M1",
+   "title": "Experimental method",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** the 8 items of `SCI-2.M1` in the course file. Pass mark 80 %."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "SCI-2.M1.L1",
+     "title": "Designing a kitchen experiment",
+     "prerequisites": [
+      "HEA-1.M6.L1"
+     ],
+     "competencies": [
+      {
+       "id": "RD-TEST",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** cooks argue endlessly about what works: salt the water or not, sear to \"seal in\" juices, rest the dough. A fair test settles it in an evening. It is also how you will improve your own recipes for the rest of the program: change one thing, compare, and keep what the data supports."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** 400 g of dried pasta; salt; two pots; the scale; coded bowls; a helper; the journal."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*The question comes first,* written so that it can be answered. \"Does dry-brining make chicken juicier?\" can be tested; \"what is the best chicken?\" cannot."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Variables:*"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Variable",
+        "What it is",
+        "Example (pasta water)"
+       ],
+       "rows": [
+        [
+         "Independent",
+         "What you change: one only",
+         "Salt at 10 or 20 g/l"
+        ],
+        [
+         "Dependent",
+         "What you measure or judge",
+         "The taster's choice; \"under\", \"right\" or \"over\""
+        ],
+        [
+         "Controlled",
+         "Everything held the same",
+         "Pasta, pot, water volume, cooking time, serving"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*A control* is the unchanged version you compare against: here, the usual 10 g/l (`TST-1.M2.L3`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Blind tasting.* Samples are coded by a helper, so neither you nor the taster knows which is which (assessment §5, [S20]). Expectation changes what people taste."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Repetition.* One trial can be luck. Two or three trials, or several tasters, make a result worth trusting. Say how many you had."
+      },
+      {
+       "type": "paragraph",
+       "text": "*The plan and the result table* are written before you cook. Afterwards, the conclusion says only what the data support (\"two of three tasters preferred…\"), and names the next question."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Plan and run a small test (90 min).** Write a plan for the question \"does salting pasta water at 10 or 20 g/l change the taste of the pasta?\": the variable, the controls, the result table. Cook 200 g of pasta in each pot, the same shape and time. The helper codes the bowls. Taste blind with the helper and anyone else at home, and fill in the table."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** a plan another person could repeat; a conclusion no bigger than the data."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "You can't tell what caused the difference",
+         "Changing two things at once",
+         "One variable; everything else in the controlled list"
+        ],
+        [
+         "Nothing to compare against",
+         "No control",
+         "Keep the usual version as the control"
+        ],
+        [
+         "The result matches what you hoped",
+         "The cook tasting unblinded",
+         "A helper codes the samples"
+        ],
+        [
+         "A firm claim from one bite",
+         "A conclusion from one taste",
+         "Several tasters or trials; say how many"
+        ],
+        [
+         "A plan that fits the result",
+         "Writing the plan after the result",
+         "Plan and table first"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** no special risks beyond the kitchen basics (`SAF-1`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the plan, the filled-in table and the conclusion in the experiment log."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "SCI-2.M1.X1",
+     "title": "A test of your own design",
+     "description": "Design and run a two-variable test of your choice, with a written plan.",
+     "competencies": [
+      {
+       "id": "RD-TEST",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** answer a cooking question of your choice with a fair test: two versions that differ in one variable, with a control, blind tasting by at least one other person, and a written plan before cooking."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** the ingredients for your question, something cheap and quick: for example roasted carrots at 180 against 220 °C, or mashed potato with the butter added hot against cold; coded plates; a helper; the scale; a timer; a phone."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Framework:** the plan and report template."
+      },
+      {
+       "type": "table",
+       "header": [
+        "Part",
+        "What it is",
+        "Your decisions"
+       ],
+       "rows": [
+        [
+         "Question",
+         "One sentence that can be answered by tasting or measuring",
+         "The question"
+        ],
+        [
+         "Variable",
+         "The one thing that differs, at two levels",
+         "Which, and the two levels"
+        ],
+        [
+         "Control",
+         "The usual version",
+         "Which of the two it is"
+        ],
+        [
+         "Controlled",
+         "Everything held the same: ingredient, size, pan, heat, time, serving",
+         "The list"
+        ],
+        [
+         "Measures",
+         "What is measured (time, weight, a colour photo) and what is tasted",
+         "Which"
+        ],
+        [
+         "Result table",
+         "Rows for each version, columns for each measure and each taster",
+         "The layout"
+        ],
+        [
+         "Tasting",
+         "Coded by a helper; at least one taster besides you",
+         "Who"
+        ],
+        [
+         "Conclusion",
+         "What the data support, and the next question",
+         "—"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Procedure:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "Write the question, the variable, the controls and the result table."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "Cook both versions."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "Code them and have them tasted blind."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "Measure what can be measured: time, weight, a colour photo."
+        },
+        {
+         "level": 0,
+         "marker": "5.",
+         "text": "Write the conclusion and the next question."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:** the plan and the filled-in result table on the template, with the tasters' forms. This meets the `RD-TEST` level 2 success row: a guided comparison with one variable changed, recorded on a template."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 1 h."
+      }
+     ]
+    }
+   ],
+   "items": [
+    {
+     "id": "SCI-2.M1.Q1",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "SCI-2.M1.L1",
+     "safety": false,
+     "question": "Which question can be tested in a kitchen experiment?",
+     "options": [
+      {
+       "key": "A",
+       "text": "\"What is the best roast potato?\""
+      },
+      {
+       "key": "B",
+       "text": "\"Do potatoes parboiled for 8 minutes roast crisper than those parboiled for 4?\""
+      },
+      {
+       "key": "C",
+       "text": "\"Is cooking an art?\""
+      },
+      {
+       "key": "D",
+       "text": "\"Which chef is right?\""
+      }
+     ],
+     "answer": "B",
+     "why": "It names one variable and a measurable result."
+    },
+    {
+     "id": "SCI-2.M1.Q2",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "SCI-2.M1.L1",
+     "safety": false,
+     "question": "In a test of oven temperature on roast carrots, the oven temperature is the:",
+     "options": [
+      {
+       "key": "A",
+       "text": "control"
+      },
+      {
+       "key": "B",
+       "text": "independent variable"
+      },
+      {
+       "key": "C",
+       "text": "dependent variable"
+      },
+      {
+       "key": "D",
+       "text": "result"
+      }
+     ],
+     "answer": "B",
+     "why": "It is the one thing the cook changes."
+    },
+    {
+     "id": "SCI-2.M1.Q3",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "SCI-2.M1.L1",
+     "safety": false,
+     "question": "In the same test, which must be held constant?",
+     "options": [
+      {
+       "key": "A",
+       "text": "the carrot variety, cut size, oil and salt"
+      },
+      {
+       "key": "B",
+       "text": "only the oven"
+      },
+      {
+       "key": "C",
+       "text": "nothing"
+      },
+      {
+       "key": "D",
+       "text": "the taster"
+      }
+     ],
+     "answer": "A",
+     "why": "Controlled variables keep the comparison fair."
+    },
+    {
+     "id": "SCI-2.M1.Q4",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "SCI-2.M1.L1",
+     "safety": false,
+     "question": "What is a control?",
+     "options": [
+      {
+       "key": "A",
+       "text": "the best version"
+      },
+      {
+       "key": "B",
+       "text": "the unchanged version the change is compared with"
+      },
+      {
+       "key": "C",
+       "text": "the thermometer"
+      },
+      {
+       "key": "D",
+       "text": "the taster"
+      }
+     ],
+     "answer": "B",
+     "why": "Without it, there is nothing to compare with."
+    },
+    {
+     "id": "SCI-2.M1.Q5",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "SCI-2.M1.L1",
+     "safety": false,
+     "question": "Why are the samples coded?",
+     "options": [
+      {
+       "key": "A",
+       "text": "to hide the result from the cook"
+      },
+      {
+       "key": "B",
+       "text": "so expectations don't steer the tasting"
+      },
+      {
+       "key": "C",
+       "text": "for hygiene"
+      },
+      {
+       "key": "D",
+       "text": "to save time"
+      }
+     ],
+     "answer": "B",
+     "why": "Blind tasting removes bias."
+    },
+    {
+     "id": "SCI-2.M1.Q6",
+     "type": "SCENARIO",
+     "lessonId": "SCI-2.M1.L1",
+     "safety": false,
+     "question": "One taster preferred the brined chicken, once. What may you conclude?",
+     "options": [],
+     "answer": "Very little: one trial with one taster can be chance. Repeat it, or use more tasters, before concluding.",
+     "why": "Repetition makes a result trustworthy."
+    },
+    {
+     "id": "SCI-2.M1.Q7",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "SCI-2.M1.L1",
+     "safety": false,
+     "question": "A test changed both the pan and the heat. The second version browned better. What do you know?",
+     "options": [
+      {
+       "key": "A",
+       "text": "the pan is better"
+      },
+      {
+       "key": "B",
+       "text": "the heat is better"
+      },
+      {
+       "key": "C",
+       "text": "not which change caused it"
+      },
+      {
+       "key": "D",
+       "text": "both are better"
+      }
+     ],
+     "answer": "C",
+     "why": "Two variables at once confound the result."
+    },
+    {
+     "id": "SCI-2.M1.Q8",
+     "type": "ORDERING",
+     "lessonId": "SCI-2.M1.L1",
+     "safety": false,
+     "question": "Put in order: (a) cook both versions (b) write the question and the result table (c) taste blind and record (d) conclude and name the next question (e) choose the variable and the controls",
+     "options": [],
+     "answer": "b, e, a, c, d",
+     "why": "The plan is written before the cooking."
+    }
+   ]
+  },
+  {
+   "id": "SCI-2.M2",
+   "title": "Proteins",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** the 8 items of `SCI-2.M2` in the course file, 1 of them a safety item. Pass mark 80 %, with every safety item correct."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "SCI-2.M2.L1",
+     "title": "Denaturation and water loss",
+     "prerequisites": [
+      "EGG-1.M1.L2"
+     ],
+     "competencies": [
+      {
+       "id": "SC-PROT",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** a dry chicken breast is the most common fault in home cooking, and its cause is simple: it was cooked too far. Weighing what the meat loses turns \"juicy\" from an opinion into a number, and shows you why the thermometer, not the clock, decides."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** 2 chicken breasts of the same size from one pack; salt; oil; the sauté pan; the probe thermometer; the scale; a board kept for raw meat (`SAF-1.M2`); a plate; a timer."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Heat unfolds muscle proteins.* Raw proteins are folded tight. Heat unfolds them (denaturation), and they then bond to each other (coagulation) and tighten. As they tighten, they squeeze out water. The hotter the meat, the tighter the proteins and the more juice is lost. This is why doneness, not time, decides juiciness: a chicken breast at 80 °C is drier than one taken to the safe 75 °C and rested."
+      },
+      {
+       "type": "paragraph",
+       "text": "*The safe minimum and the juiciness ladder sit together* (assessment §9):"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "poultry, minced meat and offal: 75 °C;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "fish and intact meat: 63 °C."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "The craft is to cook a little above the safe minimum, not far above it. Probe the thickest part, take the meat off at the figure, and let it rest."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Collagen,* the connective tissue, behaves the other way. It is tough at the temperatures that keep muscle juicy, and only turns into gelatin after long, moist cooking at a simmer. So tender cuts are cooked fast and briefly, and collagen-rich cuts (shin, cheek, thigh) slowly (`MEA-2`, `SLW-3`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Weighing the loss.* Weigh raw, cook, rest 5 minutes, weigh again. Loss in % = (raw − cooked) ÷ raw × 100."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Weigh the loss (60 min).** Weigh both breasts. Salt them lightly and cook them in the same pan over medium heat, turning now and then. Take one off when the thickest part reads 75 °C, the other at about 82 °C. Rest both, weigh them, and calculate the loss. Slice and taste them side by side."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** a clearly higher weight loss and a drier texture in the overcooked piece."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Juice on the board, a dry breast",
+         "Cutting into the meat to check",
+         "Probe instead of cutting"
+        ],
+        [
+         "An undercooked centre, or a dry one",
+         "Probing once and too early",
+         "Probe the thickest part, more than once near the end"
+        ],
+        [
+         "\"They taste the same\"",
+         "Judging juiciness without weighing",
+         "Weigh before and after"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** poultry is safe at 75 °C at the thickest part (assessment §9). Raw chicken has its own board and is never rinsed (`SAF-1.M2`); wash your hands and the probe after touching it."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the weights, the loss in % and a tasting note for each piece."
+      }
+     ]
+    },
+    {
+     "id": "SCI-2.M2.L2",
+     "title": "Salting, brining and marinating",
+     "prerequisites": [
+      "SCI-2.M2.L1"
+     ],
+     "competencies": [
+      {
+       "id": "SC-PROT",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** salting meat ahead of time is the cheapest way to make it juicier and better seasoned. Knowing what dry-brining, wet-brining and marinating each do, and what they can't do, lets you choose one for a dish instead of following a recipe's habit."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** the inputs of `SCI-2.M2.X1`; a rack or plate; a fridge-safe container with a lid; the scale."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Salt changes the proteins.* Salt dissolves part of the muscle proteins, which then hold water better while cooking: salted meat loses less juice, and it is seasoned through."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Three methods:*"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Method",
+        "How",
+        "Effect",
+        "Watch"
+       ],
+       "rows": [
+        [
+         "Dry-brine",
+         "Salt rubbed on, about 1–1.5 % of the weight; rested uncovered in the fridge for hours or overnight",
+         "Seasons through, holds juice; the dry surface browns well",
+         "Give it time: the salt draws out moisture first, then it is drawn back in"
+        ],
+        [
+         "Wet-brine",
+         "Soaked in salted water (for example 5 %) in the fridge",
+         "Adds water as well as salt: juicier, but the skin is harder to crisp",
+         "Needs fridge space and a time limit"
+        ],
+        [
+         "Marinade",
+         "Oil, acid, aromatics, often salt",
+         "Flavours the surface: salt travels in, most other flavours only a few millimetres",
+         "Strong acid left long makes the surface mushy or chalky"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "For a 200 g breast at 1 %: 2 g of salt. For a 5 % brine: 50 g of salt in 1 litre of water."
+      },
+      {
+       "type": "paragraph",
+       "text": "*What a marinade can't do.* It doesn't tenderise a tough cut: collagen needs slow cooking. And a marinade with raw meat in it is raw meat: it stays in the fridge, and it is boiled before it is used as a sauce, or thrown away (`SAF-1.M1.Q6`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Salt the chicken (30 min).** Set up the pieces of `SCI-2.M2.X1` the evening before: weigh them, dry-brine one on a rack, leave one unsalted, both in the fridge."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Cook and weigh (60 min).** The next day, wet-brine the third piece for 2 hours, then run the exercise."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** the dry-brined surface matt and dry; the brined pieces seasoned through when tasted."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "A risk, and no benefit",
+         "Brining at room temperature",
+         "Always in the fridge"
+        ],
+        [
+         "Spongy, salty meat",
+         "A wet brine left too long",
+         "Time it: about 2 hours for a breast"
+        ],
+        [
+         "A grey, steaming sear",
+         "Salting a surface just before searing and leaving it wet",
+         "Salt well ahead, or pat dry just before"
+        ],
+        [
+         "A tough stew after a night in wine",
+         "Expecting a marinade to tenderise a tough cut",
+         "Slow, moist cooking for collagen"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** brines and marinades with raw meat stay in the fridge, covered, on the bottom shelf, and are thrown away after use or boiled before serving (`SAF-1.M1`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the setup times and weights (in `SCI-2.M2.X1`)."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "SCI-2.M2.X1",
+     "title": "Chicken breast: unsalted, dry-brined and wet-brined",
+     "description": "Chicken breast: unsalted, dry-brined and wet-brined; weigh before and after cooking.",
+     "competencies": [
+      {
+       "id": "SC-PROT",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** measure what salting does to cooking loss, with everything else held constant: three pieces of the same size from the same pack, the same pan, heat and final core temperature; only the salting differs."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** 3 chicken breasts (or 6 thighs, two per version); fine salt; 1 litre of water; a fridge-safe container with a lid; a rack; kitchen paper; oil; the sauté pan; the probe thermometer; the scale; three coded plates; a helper."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Recipe:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Weigh** each piece and label it A, B or C."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**The evening before:** dry-brine A with 1 % of its weight in salt, rubbed on all over; set it on the rack in the fridge, uncovered. Put B, unsalted, in the fridge, covered."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "**Two hours before cooking:** dissolve 50 g of salt in the litre of cold water (5 %) in the container, and submerge C in it, covered, in the fridge."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "**Pat** all three dry with kitchen paper and weigh them again."
+        },
+        {
+         "level": 0,
+         "marker": "5.",
+         "text": "**Cook** them together in the oiled pan over medium heat, turning now and then, each to 75 °C at the thickest part, probed. Take each off when it reaches 75 °C."
+        },
+        {
+         "level": 0,
+         "marker": "6.",
+         "text": "**Rest** 5 minutes and weigh. Calculate the cooking loss in % from the weight before cooking."
+        },
+        {
+         "level": 0,
+         "marker": "7.",
+         "text": "**Taste blind.** The helper slices and codes them; season B at the table, so seasoning doesn't decide."
+        },
+        {
+         "level": 0,
+         "marker": "8.",
+         "text": "**Explain** the results by what salt does to the proteins."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:** the weights and the loss in %, with the explanation, and this module's quiz at 80 %: the `SC-PROT` level 3 success row, a dry-brined and an unsalted piece compared by cooking loss and explained."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 1.5 h over two days; the chicken is dinner."
+      }
+     ]
+    }
+   ],
+   "items": [
+    {
+     "id": "SCI-2.M2.Q1",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "SCI-2.M2.L1",
+     "safety": false,
+     "question": "Why does overcooked meat taste dry?",
+     "options": [
+      {
+       "key": "A",
+       "text": "the fat melts away"
+      },
+      {
+       "key": "B",
+       "text": "the proteins tighten further and squeeze out more water"
+      },
+      {
+       "key": "C",
+       "text": "the salt evaporates"
+      },
+      {
+       "key": "D",
+       "text": "the fibres dissolve"
+      }
+     ],
+     "answer": "B",
+     "why": "Juice loss rises with temperature."
+    },
+    {
+     "id": "SCI-2.M2.Q2",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "SCI-2.M2.L1",
+     "safety": false,
+     "question": "What happens to collagen at the temperatures that keep a steak juicy?",
+     "options": [
+      {
+       "key": "A",
+       "text": "it melts"
+      },
+      {
+       "key": "B",
+       "text": "it stays tough; it needs long moist cooking to become gelatin"
+      },
+      {
+       "key": "C",
+       "text": "it disappears"
+      },
+      {
+       "key": "D",
+       "text": "it turns to fat"
+      }
+     ],
+     "answer": "B",
+     "why": "That is why tough cuts are braised."
+    },
+    {
+     "id": "SCI-2.M2.Q3",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "SCI-2.M2.L1",
+     "safety": true,
+     "question": "You want a juicy, safe chicken breast. What do you aim for?",
+     "options": [
+      {
+       "key": "A",
+       "text": "63 °C"
+      },
+      {
+       "key": "B",
+       "text": "75 °C at the core, then rest"
+      },
+      {
+       "key": "C",
+       "text": "85 °C to be sure"
+      },
+      {
+       "key": "D",
+       "text": "whatever the recipe time says"
+      }
+     ],
+     "answer": "B",
+     "why": "The safe minimum for poultry, not far above it."
+    },
+    {
+     "id": "SCI-2.M2.Q4",
+     "type": "CALCULATION",
+     "lessonId": "SCI-2.M2.L1",
+     "safety": false,
+     "question": "A breast weighs 220 g raw and 165 g cooked. What is the cooking loss?",
+     "options": [],
+     "answer": "25 %",
+     "why": "(220 − 165) ÷ 220."
+    },
+    {
+     "id": "SCI-2.M2.Q5",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "SCI-2.M2.L2",
+     "safety": false,
+     "question": "Why does brined meat lose less juice?",
+     "options": [
+      {
+       "key": "A",
+       "text": "it absorbs fat"
+      },
+      {
+       "key": "B",
+       "text": "salt dissolves part of the muscle proteins, which then hold water better"
+      },
+      {
+       "key": "C",
+       "text": "it cooks faster"
+      },
+      {
+       "key": "D",
+       "text": "the salt seals the surface"
+      }
+     ],
+     "answer": "B",
+     "why": "Salt changes how proteins hold water."
+    },
+    {
+     "id": "SCI-2.M2.Q6",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "SCI-2.M2.L2",
+     "safety": false,
+     "question": "Why is a dry-brined chicken left uncovered in the fridge?",
+     "options": [
+      {
+       "key": "A",
+       "text": "to cool it"
+      },
+      {
+       "key": "B",
+       "text": "so the surface dries and browns well"
+      },
+      {
+       "key": "C",
+       "text": "to save space"
+      },
+      {
+       "key": "D",
+       "text": "to add flavour"
+      }
+     ],
+     "answer": "B",
+     "why": "A dry skin crisps; a wet one steams."
+    },
+    {
+     "id": "SCI-2.M2.Q7",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "SCI-2.M2.L2",
+     "safety": false,
+     "question": "How deep do most marinade flavours penetrate in a few hours?",
+     "options": [
+      {
+       "key": "A",
+       "text": "right through"
+      },
+      {
+       "key": "B",
+       "text": "only a few millimetres, except salt"
+      },
+      {
+       "key": "C",
+       "text": "half way"
+      },
+      {
+       "key": "D",
+       "text": "not at all"
+      }
+     ],
+     "answer": "B",
+     "why": "Marinades flavour the surface."
+    },
+    {
+     "id": "SCI-2.M2.Q8",
+     "type": "CALCULATION",
+     "lessonId": "SCI-2.M2.L2",
+     "safety": false,
+     "question": "How much salt for a 1 % dry brine on 1.6 kg of chicken?",
+     "options": [],
+     "answer": "16 g",
+     "why": "1,600 × 0.01."
+    }
+   ]
+  },
+  {
+   "id": "SCI-2.M3",
+   "title": "Starches and gluten",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** the 8 items of `SCI-2.M3` in the course file. Pass mark 80 %."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "SCI-2.M3.L1",
+     "title": "Starch thickening",
+     "prerequisites": [
+      "STA-1.M1.L1"
+     ],
+     "competencies": [
+      {
+       "id": "SC-STRC",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** flour, corn starch, potato starch and arrowroot all thicken, but they give different sauces: cloudy or clear, stable or thinning, freezing well or weeping. Choosing the right one is the difference between a glossy fruit glaze and a gluey one, or a gravy that survives the freezer."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** the inputs of `SCI-2.M3.X1`: 1.5 litres of stock and the starches; three small saucepans; a whisk; three cups; the scale."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Starches thicken by gelatinising* (`STA-1.M1.L1`): heated in liquid, the granules swell and thicken it. Each starch has its own behaviour:"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Starch",
+        "Look",
+        "Thickens",
+        "Weak points",
+        "Use"
+       ],
+       "rows": [
+        [
+         "Wheat flour",
+         "Cloudy, opaque",
+         "Needs to simmer a while to lose its raw taste",
+         "Less thickening per gram",
+         "A roux, gravies, stews; stable in long cooking"
+        ],
+        [
+         "Corn starch (*maïzena*)",
+         "Fairly clear",
+         "Near the boil",
+         "Thins with long stirring or strong acid; weeps after freezing",
+         "A quick sauce served at once"
+        ],
+        [
+         "Potato starch (*aardappelzetmeel*)",
+         "Very clear",
+         "Below the boil",
+         "Breaks down if boiled long",
+         "A last-minute glaze"
+        ],
+        [
+         "Arrowroot",
+         "Clear and glossy",
+         "Below the boil; tolerates acid",
+         "Expensive",
+         "Acid sauces, sauces to freeze"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Slurry or roux.* Dry starch stirred into hot liquid lumps: the outside of each clump gels and seals the dry powder inside. So the starch is first dispersed: in cold liquid (a slurry) or in fat (a roux, `SAU-2`). Then the granules swell separately."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Cold and frozen.* As the sauce cools, some starch gels set firm and others weep water (retrogradation). If a sauce will be chilled or frozen, choose the starch for that."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Predict first.* Before you cook, write down which sauce you expect to be clearest, thickest and best after freezing."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Three starches (60 min).** Run the comparison of `SCI-2.M3.X1`, tasted and photographed hot. Chill and freeze the portions for the next days."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** clear differences in gloss, clarity and body, and your predictions confirmed or explained."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Lumps",
+         "Dry starch into hot liquid",
+         "A slurry in cold liquid first"
+        ],
+        [
+         "A pasty, floury taste",
+         "Too little cooking for flour",
+         "Simmer several minutes after thickening"
+        ],
+        [
+         "A sauce that thins again",
+         "Boiling potato starch hard",
+         "Off the heat as soon as it thickens"
+        ],
+        [
+         "A spongy, weeping sauce after thawing",
+         "Freezing a corn-starch sauce",
+         "Flour or arrowroot for the freezer"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** a thickened sauce spits as it boils: stir with a long spoon and keep your face back (`SAF-1.M4`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the predictions and the hot results (in `SCI-2.M3.X1`)."
+      }
+     ]
+    },
+    {
+     "id": "SCI-2.M3.L2",
+     "title": "Gluten",
+     "prerequisites": [
+      "SCI-2.M3.L1"
+     ],
+     "competencies": [
+      {
+       "id": "SC-STRC",
+       "level": 3
+      },
+      {
+       "id": "IN-BAK",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** gluten is why bread is chewy and pastry is short, and why the same flour can give both. Once you know what builds it and what weakens it, the rules of `BAK-2` and `BRD-2` (rest the dough, don't overwork the pastry, use strong flour for bread) stop being rules and start making sense."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** 300 g of plain flour (*bloem*) and a little strong bread flour if you have it; water; 25 g of cold butter; three bowls; the scale; a timer; cling film; a phone."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Gluten forms* when two wheat proteins meet water and are worked:"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**glutenin** gives strength and elasticity;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**gliadin** gives extensibility, the stretch."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "Mixing and kneading line them up into a stretchy network that traps gas: the structure of bread."
+      },
+      {
+       "type": "paragraph",
+       "text": "*The controls:*"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Control",
+        "More of it",
+        "Effect on gluten"
+       ],
+       "rows": [
+        [
+         "Water",
+         "More water",
+         "More gluten forms"
+        ],
+        [
+         "Mixing and kneading",
+         "More work",
+         "More, stronger gluten"
+        ],
+        [
+         "Rest",
+         "Time",
+         "The network relaxes and is easier to shape"
+        ],
+        [
+         "Fat",
+         "Rubbed in first",
+         "Coats the proteins and \"shortens\" them: pastry is short"
+        ],
+        [
+         "Sugar",
+         "More sugar",
+         "Competes for water and weakens the network"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Flour types* (`IN-BAK`): strong bread flour has more protein, so more gluten; plain flour (*bloem*) is in the middle; cake flour has less. Dutch packets show the protein per 100 g."
+      },
+      {
+       "type": "paragraph",
+       "text": "*When gluten is wanted, and when not.* Bread and pasta: yes. Pastry, cakes and pancakes: as little as possible, so they are mixed briefly, and pastry is made with cold fat and rested."
+      },
+      {
+       "type": "paragraph",
+       "text": "*The windowpane test.* Stretch a small piece of dough between your fingers: well-developed gluten stretches into a thin, translucent sheet without tearing."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Short and long (60 min).** Make three small doughs of 100 g of flour and 60 g of water each. Mix dough 1 for 1 minute; knead dough 2 for 8 minutes; for dough 3, rub the butter into the flour first, then mix for 1 minute. Wrap and rest all three for 15 minutes. Stretch each, try the windowpane test, and photograph them."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** the long-mixed dough stretches thin without tearing; the short one tears; the buttered one crumbles."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Tough, shrinking pastry",
+         "Overworking pastry",
+         "Mix briefly; cold fat; rest it"
+        ],
+        [
+         "A dense loaf",
+         "Too little kneading for bread",
+         "Knead to the windowpane"
+        ],
+        [
+         "Dough that springs back",
+         "Shaping without resting",
+         "Rest it, covered, 10–15 minutes"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** raw flour can carry bacteria: don't taste raw dough, and wash hands and surfaces after (`SAF-1.M2`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the photos of the three doughs, for `SCI-2.M3.X1`."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "SCI-2.M3.X1",
+     "title": "Three starches, then chill and freeze",
+     "description": "The same liquid thickened with three starches; compare, then chill and freeze.",
+     "competencies": [
+      {
+       "id": "SC-STRC",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** see how starches differ, hot and cold, with the same liquid, the same amount of each starch by weight and the same heating. The short- and long-mixed doughs of `SCI-2.M3.L2` go into the same report, so both parts of the `SC-STRC` level 3 row are in one exercise."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** 1.5 litres of vegetable stock; 20 g each of flour, corn starch and potato starch (and arrowroot if available, with 500 ml more stock); three small saucepans; a whisk; small containers with lids, two per starch, coded; the dough photos from `SCI-2.M3.L2`; a phone."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Recipe:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Slurry.** For each starch, whisk the 20 g into 100 ml of the cold stock until smooth."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Heat** 400 ml of stock in each pan to a simmer. Whisk in its slurry, and bring back to a simmer, whisking. Simmer the flour sauce for 5 minutes; take the corn-starch sauce off as soon as it has thickened at the boil, and the potato-starch sauce as soon as it thickens."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "**Hot.** Lift a spoon of each and photograph them side by side; note gloss, clarity and body, and taste."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "**Chill** a portion of each in its coded container in the fridge for at least 4 hours; photograph a spoonful."
+        },
+        {
+         "level": 0,
+         "marker": "5.",
+         "text": "**Freeze** a second portion of each overnight; thaw it in the fridge, stir, and photograph it."
+        },
+        {
+         "level": 0,
+         "marker": "6.",
+         "text": "**Add** the dough photos."
+        },
+        {
+         "level": 0,
+         "marker": "7.",
+         "text": "**Explain** each result by gelatinisation, retrogradation and gluten."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "The rest of the thickened stock becomes soup, eaten within 2 days."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:** the three starches photographed hot, cold and thawed, and the doughs mixed short and long, each explained, with this module's quiz at 80 %: the `SC-STRC` level 3 success row."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 1 h, plus chilling and freezing."
+      }
+     ]
+    }
+   ],
+   "items": [
+    {
+     "id": "SCI-2.M3.Q1",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "SCI-2.M3.L1",
+     "safety": false,
+     "question": "Which starch gives the clearest, glossiest sauce and freezes well?",
+     "options": [
+      {
+       "key": "A",
+       "text": "flour"
+      },
+      {
+       "key": "B",
+       "text": "arrowroot"
+      },
+      {
+       "key": "C",
+       "text": "corn starch"
+      },
+      {
+       "key": "D",
+       "text": "potato flakes"
+      }
+     ],
+     "answer": "B",
+     "why": "Arrowroot is clear, acid-tolerant and freeze-stable."
+    },
+    {
+     "id": "SCI-2.M3.Q2",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "SCI-2.M3.L1",
+     "safety": false,
+     "question": "Why is a flour-thickened sauce simmered for a while?",
+     "options": [
+      {
+       "key": "A",
+       "text": "to thin it"
+      },
+      {
+       "key": "B",
+       "text": "to cook out the raw flour taste"
+      },
+      {
+       "key": "C",
+       "text": "to make it clear"
+      },
+      {
+       "key": "D",
+       "text": "it isn't"
+      }
+     ],
+     "answer": "B",
+     "why": "Flour needs time to lose its raw taste."
+    },
+    {
+     "id": "SCI-2.M3.Q3",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "SCI-2.M3.L1",
+     "safety": false,
+     "question": "A corn-starch sauce turned spongy and watery after freezing. Why?",
+     "options": [
+      {
+       "key": "A",
+       "text": "the freezer was too cold"
+      },
+      {
+       "key": "B",
+       "text": "retrogradation: the gel tightened and squeezed out water"
+      },
+      {
+       "key": "C",
+       "text": "too much salt"
+      },
+      {
+       "key": "D",
+       "text": "it was undercooked"
+      }
+     ],
+     "answer": "B",
+     "why": "Choose arrowroot or flour for freezing."
+    },
+    {
+     "id": "SCI-2.M3.Q4",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "SCI-2.M3.L1",
+     "safety": false,
+     "question": "Why is starch mixed with cold liquid (a slurry) before it goes into a hot sauce?",
+     "options": [
+      {
+       "key": "A",
+       "text": "to cool the sauce"
+      },
+      {
+       "key": "B",
+       "text": "so the granules separate and don't lump"
+      },
+      {
+       "key": "C",
+       "text": "to cook it"
+      },
+      {
+       "key": "D",
+       "text": "for colour"
+      }
+     ],
+     "answer": "B",
+     "why": "Dry starch in hot liquid gelatinises on the outside of clumps."
+    },
+    {
+     "id": "SCI-2.M3.Q5",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "SCI-2.M3.L2",
+     "safety": false,
+     "question": "Which two proteins form gluten?",
+     "options": [
+      {
+       "key": "A",
+       "text": "albumin and casein"
+      },
+      {
+       "key": "B",
+       "text": "glutenin and gliadin"
+      },
+      {
+       "key": "C",
+       "text": "myosin and actin"
+      },
+      {
+       "key": "D",
+       "text": "collagen and elastin"
+      }
+     ],
+     "answer": "B",
+     "why": "Glutenin gives strength, gliadin stretch."
+    },
+    {
+     "id": "SCI-2.M3.Q6",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "SCI-2.M3.L2",
+     "safety": false,
+     "question": "Why is pastry dough worked as little as possible?",
+     "options": [
+      {
+       "key": "A",
+       "text": "to keep it cold only"
+      },
+      {
+       "key": "B",
+       "text": "to keep gluten weak, so it stays short and tender"
+      },
+      {
+       "key": "C",
+       "text": "to save time"
+      },
+      {
+       "key": "D",
+       "text": "to keep it moist"
+      }
+     ],
+     "answer": "B",
+     "why": "More working builds a tougher network."
+    },
+    {
+     "id": "SCI-2.M3.Q7",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "SCI-2.M3.L2",
+     "safety": false,
+     "question": "What does resting a dough do?",
+     "options": [
+      {
+       "key": "A",
+       "text": "adds gluten"
+      },
+      {
+       "key": "B",
+       "text": "relaxes the gluten network, so it is easier to shape"
+      },
+      {
+       "key": "C",
+       "text": "kills the yeast"
+      },
+      {
+       "key": "D",
+       "text": "dries it"
+      }
+     ],
+     "answer": "B",
+     "why": "Tension eases with time."
+    },
+    {
+     "id": "SCI-2.M3.Q8",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "SCI-2.M3.L2",
+     "safety": false,
+     "question": "Which flour suits a crusty bread?",
+     "options": [
+      {
+       "key": "A",
+       "text": "cake flour"
+      },
+      {
+       "key": "B",
+       "text": "strong bread flour, higher in protein"
+      },
+      {
+       "key": "C",
+       "text": "corn starch"
+      },
+      {
+       "key": "D",
+       "text": "rice flour"
+      }
+     ],
+     "answer": "B",
+     "why": "More protein, more gluten."
+    }
+   ]
+  },
+  {
+   "id": "SCI-2.M4",
+   "title": "Fats and emulsions",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** the 8 items of `SCI-2.M4` in the course file. Pass mark 80 %."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "SCI-2.M4.L1",
+     "title": "Fats and oils",
+     "prerequisites": [],
+     "competencies": [
+      {
+       "id": "SC-EMUL",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** the fat you choose decides whether a steak sears or the pan smokes out the kitchen, whether a sauce tastes of butter, and whether a pastry is flaky. Choosing a fat is a decision with three questions: how hot, what flavour, what texture."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** 250 g of unsalted butter; a neutral refined oil (rapeseed or sunflower); three small, identical pans; a small saucepan; a spoon; a fine sieve lined with kitchen paper or muslin; a small jar; a timer."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Saturation.*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**Saturated fats** (butter, lard, coconut fat) are solid when cool."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**Unsaturated oils** (rapeseed, sunflower, olive) are liquid."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "This decides texture in baking (solid fat makes flakes and shortness) and mouthfeel in sauces."
+      },
+      {
+       "type": "paragraph",
+       "text": "*The smoke point* is where a fat starts to break down and smoke, giving acrid flavours. Refined oils have a high smoke point. Extra virgin olive oil and whole butter have a lower one, because of their flavour compounds and, in butter, the milk solids, which brown and then burn."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Clarified butter.* Butter is fat, water and milk solids. Melted slowly, the water bubbles off, the milk solids sink or float as foam, and the clear yellow fat can be poured off. It has the flavour of butter and a much higher smoke point, and keeps for weeks in the fridge."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Choosing a fat:*"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Purpose",
+        "Fat"
+       ],
+       "rows": [
+        [
+         "High heat: searing, stir-frying",
+         "A refined oil, or clarified butter"
+        ],
+        [
+         "Flavour at the end",
+         "Raw olive oil, or a knob of butter"
+        ],
+        [
+         "Baking texture",
+         "Solid fats: butter, lard"
+        ],
+        [
+         "Basting at medium heat",
+         "Butter added to oil after the sear (`HEA-2`)"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Clarify and compare (45 min).** Melt 200 g of butter over low heat and let it bubble gently until the foam has separated; skim it, and pour the clear fat through the lined sieve into the jar. Then put 2 tablespoons each of oil, whole butter and clarified butter into the three pans over the same medium-high heat. Note when each browns or smokes, and take each off as soon as it smokes."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** whole butter browning and smoking first; the clarified butter clear and calm."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Burnt, bitter crust",
+         "Searing in whole butter from the start",
+         "Oil or clarified butter; butter at the end"
+        ],
+        [
+         "Acrid smoke, wasted oil",
+         "Deep-frying in extra virgin olive oil",
+         "A refined oil for frying"
+        ],
+        [
+         "Off flavours in the next dish",
+         "Reusing burnt fat",
+         "Discard fat that has smoked or darkened"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** heat the fats with the extractor on, never leave them, and keep a lid beside the pans: a fat fire is smothered with a lid or the fire blanket, never water (`SAF-1.M4`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the order in which the fats browned and smoked; the jar of clarified butter, labelled and dated."
+      }
+     ]
+    },
+    {
+     "id": "SCI-2.M4.L2",
+     "title": "Emulsions",
+     "prerequisites": [
+      "SCI-2.M4.L1",
+      "EGG-1.M4.L2"
+     ],
+     "competencies": [
+      {
+       "id": "SC-EMUL",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** vinaigrette, mayonnaise, hollandaise, a buttery pan sauce and the pasta of `STA-1` are all emulsions. Knowing what holds one together lets you make it reliably, and rescue it when it breaks."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** the jars, oil, vinegar and mustard of `SCI-2.M4.X1`; for two mayonnaises, 2 pasteurised egg yolks (a carton of pasteurised yolk, about 20 g a yolk) plus 1 more for the repair, 400 ml of neutral oil, lemon juice or vinegar, salt; two bowls; a whisk; a damp cloth under the bowl; a measuring jug."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*An emulsion* is droplets of one liquid dispersed in another that doesn't mix with it:"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**oil-in-water:** oil droplets in water, as in a vinaigrette, mayonnaise or hollandaise;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**water-in-oil:** water droplets in fat, as in butter."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*What keeps it stable:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**emulsifiers** sit between oil and water and keep droplets apart: lecithin in egg yolk, mucilage in mustard;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**small droplets,** from vigorous whisking, settle slowly;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**thickness:** a thicker continuous phase slows separation;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**temperature:** too hot and egg emulsions curdle, too cold and butter sets."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Why they break:* oil added too fast at the start, too much oil for the emulsifier, or the wrong temperature."
+      },
+      {
+       "type": "paragraph",
+       "text": "*The repair* starts a new emulsion and adds the broken one to it slowly: a fresh yolk (or a spoon of water or mustard) in a clean bowl, then the broken sauce whisked in, a teaspoon at a time at first (`SAU-2`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "*A mayonnaise from one yolk:* the yolk with a pinch of salt and a teaspoon of lemon juice; then 150–200 ml of oil, drop by drop at first, then in a thin stream once it thickens."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Temporary and stable (45 min).** Make the two vinaigrettes of `SCI-2.M4.X1`, shaken without and with mustard, and start their timer. Meanwhile, make a mayonnaise from one yolk."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Too fast (45 min).** Make a second mayonnaise and pour the oil in a stream from the start, so that it breaks. Photograph it broken. Repair it with a new yolk in a clean bowl, and photograph each step."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** the mustard vinaigrette stays cloudy and thick for minutes; the repaired mayonnaise thick and glossy."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "A greasy, split sauce at once",
+         "Oil in a stream at the start",
+         "Drops first, a stream once it thickens"
+        ],
+        [
+         "It won't take",
+         "Cold yolks straight from the fridge with warm oil",
+         "Both at room temperature"
+        ],
+        [
+         "A bowl of broken sauce thrown away",
+         "Giving up on a broken emulsion",
+         "A new yolk, and the broken sauce added slowly"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** mayonnaise is made with pasteurised yolk, for every guest, and kept covered in the fridge for at most 24 hours (assessment §9, raw egg). Leftover mayonnaise past that is thrown away."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the photos of the broken and repaired mayonnaise (in `SCI-2.M4.X1`)."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "SCI-2.M4.X1",
+     "title": "Vinaigrette with and without mustard, timed",
+     "description": "Vinaigrette with and without mustard; time how long until it separates.",
+     "competencies": [
+      {
+       "id": "SC-EMUL",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** measure what an emulsifier does to stability: the same oil, vinegar and ratio (3 : 1), shaken the same way in the same jars; only the mustard differs."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** 300 ml of oil; 100 ml of vinegar; 2 teaspoons of mustard; salt; two identical jars with lids, labelled; a timer; a phone on a stand, or a helper to photograph."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Recipe:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Jar A:** 150 ml of oil, 50 ml of vinegar and a pinch of salt."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Jar B:** the same, with the 2 teaspoons of mustard whisked into the vinegar first."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "**Shake** both together, hard, for 30 seconds, and stand them side by side in good light. Start the timer."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "**Photograph** both jars at 1, 5, 15 and 30 minutes."
+        },
+        {
+         "level": 0,
+         "marker": "5.",
+         "text": "**Note** the time when the first clear layer of oil appears in each."
+        },
+        {
+         "level": 0,
+         "marker": "6.",
+         "text": "**Add** the break-and-repair photos of the mayonnaise from `SCI-2.M4.L2`."
+        },
+        {
+         "level": 0,
+         "marker": "7.",
+         "text": "**Explain** both results by emulsifiers and droplet size."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "Both vinaigrettes are used in the week: shake again before dressing a salad."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:** the timed photos with the separation times, and the broken and repaired mayonnaise photographed at each step, each explained, with this module's quiz at 80 %. This is the mayonnaise part of the `SC-EMUL` level 3 row; the warm butter emulsion follows in `SAU-2.M2`."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 45 min."
+      }
+     ]
+    }
+   ],
+   "items": [
+    {
+     "id": "SCI-2.M4.Q1",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "SCI-2.M4.L1",
+     "safety": false,
+     "question": "Why does whole butter burn when searing?",
+     "options": [
+      {
+       "key": "A",
+       "text": "its fat is weak"
+      },
+      {
+       "key": "B",
+       "text": "its milk solids brown and burn at a lower temperature"
+      },
+      {
+       "key": "C",
+       "text": "it contains salt"
+      },
+      {
+       "key": "D",
+       "text": "it is too cold"
+      }
+     ],
+     "answer": "B",
+     "why": "Clarified butter, without the solids, takes far more heat."
+    },
+    {
+     "id": "SCI-2.M4.Q2",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "SCI-2.M4.L1",
+     "safety": false,
+     "question": "Which fat suits deep-frying?",
+     "options": [
+      {
+       "key": "A",
+       "text": "extra virgin olive oil"
+      },
+      {
+       "key": "B",
+       "text": "a refined neutral oil with a high smoke point"
+      },
+      {
+       "key": "C",
+       "text": "whole butter"
+      },
+      {
+       "key": "D",
+       "text": "lard that has burnt before"
+      }
+     ],
+     "answer": "B",
+     "why": "It stays stable at frying temperature."
+    },
+    {
+     "id": "SCI-2.M4.Q3",
+     "type": "SCENARIO",
+     "lessonId": "SCI-2.M4.L1",
+     "safety": false,
+     "question": "You want to sear a steak and finish it with the flavour of butter. Which fats, when?",
+     "options": [],
+     "answer": "Sear in a refined oil or clarified butter; add whole butter near the end, at lower heat, to baste.",
+     "why": "High heat first, flavour last."
+    },
+    {
+     "id": "SCI-2.M4.Q4",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "SCI-2.M4.L2",
+     "safety": false,
+     "question": "Mayonnaise is:",
+     "options": [
+      {
+       "key": "A",
+       "text": "water-in-oil"
+      },
+      {
+       "key": "B",
+       "text": "oil-in-water: oil droplets in the water of the yolk and acid"
+      },
+      {
+       "key": "C",
+       "text": "a suspension"
+      },
+      {
+       "key": "D",
+       "text": "not an emulsion"
+      }
+     ],
+     "answer": "B",
+     "why": "Butter is the water-in-oil example."
+    },
+    {
+     "id": "SCI-2.M4.Q5",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "SCI-2.M4.L2",
+     "safety": false,
+     "question": "What does mustard do in a vinaigrette?",
+     "options": [
+      {
+       "key": "A",
+       "text": "adds only flavour"
+      },
+      {
+       "key": "B",
+       "text": "acts as an emulsifier that slows separation"
+      },
+      {
+       "key": "C",
+       "text": "thickens by starch"
+      },
+      {
+       "key": "D",
+       "text": "preserves it"
+      }
+     ],
+     "answer": "B",
+     "why": "Its mucilage sits between oil and vinegar."
+    },
+    {
+     "id": "SCI-2.M4.Q6",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "SCI-2.M4.L2",
+     "safety": false,
+     "question": "Why does a mayonnaise break if the oil goes in too fast at the start?",
+     "options": [
+      {
+       "key": "A",
+       "text": "the yolk cooks"
+      },
+      {
+       "key": "B",
+       "text": "the droplets can't be broken up and coated fast enough"
+      },
+      {
+       "key": "C",
+       "text": "the oil is too cold"
+      },
+      {
+       "key": "D",
+       "text": "it doesn't"
+      }
+     ],
+     "answer": "B",
+     "why": "Start drop by drop until the emulsion forms."
+    },
+    {
+     "id": "SCI-2.M4.Q7",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "SCI-2.M4.L2",
+     "safety": false,
+     "question": "How is a broken mayonnaise repaired?",
+     "options": [
+      {
+       "key": "A",
+       "text": "whisk it faster"
+      },
+      {
+       "key": "B",
+       "text": "start with a fresh yolk (or a spoon of water) and add the broken one slowly"
+      },
+      {
+       "key": "C",
+       "text": "add more oil"
+      },
+      {
+       "key": "D",
+       "text": "heat it"
+      }
+     ],
+     "answer": "B",
+     "why": "A new emulsion takes up the broken one."
+    },
+    {
+     "id": "SCI-2.M4.Q8",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "SCI-2.M4.L2",
+     "safety": false,
+     "question": "Which change makes an emulsion more stable?",
+     "options": [
+      {
+       "key": "A",
+       "text": "larger droplets"
+      },
+      {
+       "key": "B",
+       "text": "smaller droplets from vigorous whisking"
+      },
+      {
+       "key": "C",
+       "text": "less emulsifier"
+      },
+      {
+       "key": "D",
+       "text": "a thinner liquid"
+      }
+     ],
+     "answer": "B",
+     "why": "Small droplets settle more slowly."
+    }
+   ]
+  },
+  {
+   "id": "SCI-2.M5",
+   "title": "Water, salt, sugar and acid",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** the 8 items of `SCI-2.M5` in the course file, 1 of them a safety item. Pass mark 80 %, with every safety item correct."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "SCI-2.M5.L1",
+     "title": "Water activity",
+     "prerequisites": [],
+     "competencies": [
+      {
+       "id": "SC-MICR",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** jam is wet but keeps for months; cooked rice is wet and is unsafe in a day. The difference is not how much water a food holds but how much of it is free. That idea explains preserving, curing and why salted cabbage goes limp."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** in winter 400 g of white cabbage, finely shredded; in summer 400 g of cucumber or courgette, thinly sliced; 4 g of salt; 4 g of sugar; two bowls with two sieves; the scale; a small jug; a timer."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Water activity* is how much of a food's water is free: free to be used by microbes, and free to take part in reactions. It is not the same as water content. Jam is wet, but its water is bound by sugar; dry crackers have little water at all."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Salt and sugar bind water.* Dissolved, they hold water molecules, so microbes can't get the water they need. That is how these keep:"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**jam and candied peel:** sugar;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**cures and salted fish:** salt (and drying);"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**hard cheese:** salt, drying and acid."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Osmosis in the kitchen.* Salt or sugar on the surface of a vegetable draws water out of its cells, towards the stronger solution outside:"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "salting courgette or cucumber before cooking, so it browns instead of stewing (`VEG-1.M4.L5`);"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "salting cabbage for coleslaw, so it softens and doesn't water down the dressing;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "sugar keeping cakes moist, because it holds on to their water."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Weight for weight,* salt draws more water than sugar: a gram of salt holds more water molecules than a gram of sugar."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Salt and sugar draw water (45 min).** Divide the vegetable between the two sieves set over the bowls. Toss one half with the salt and the other with the sugar. After 30 minutes, press each gently and weigh the liquid in each bowl. Taste a piece of each."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** a clear pool of liquid under both, more under the salt per gram."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "\"Dried, so it keeps\"",
+         "Confusing \"dry\" with \"low water activity\"",
+         "Ask what binds the water, and how much is free"
+        ],
+        [
+         "Mould on a homemade jam",
+         "Thinking a low-sugar jam keeps like a full-sugar one",
+         "Low-sugar jam lives in the fridge, and is eaten soon"
+        ],
+        [
+         "No liquid to weigh",
+         "Too short a wait, or thick pieces",
+         "Thin slices; 30 minutes"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** no special risks beyond the kitchen basics (`SAF-1`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the two weights of liquid, and a line explaining the difference."
+      }
+     ]
+    },
+    {
+     "id": "SCI-2.M5.L2",
+     "title": "Acids and bases",
+     "prerequisites": [
+      "HEA-1.M2.L1"
+     ],
+     "competencies": [
+      {
+       "id": "SC-BRWN",
+       "level": 3
+      },
+      {
+       "id": "IN-BAK",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** a pinch of baking soda or a spoon of vinegar changes colour, texture, browning and rise. You have seen pieces of this in `VEG-1` (pigments, firmness) and `HEA-1` (browning). Here they come together, so you can use pH on purpose."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** the inputs of `SCI-2.M5.X1`; pH strips if you have them; the journal."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*pH in cooking.* Acids (lemon, vinegar, buttermilk, wine) have a low pH; bases or alkalis (baking soda) a high one."
+      },
+      {
+       "type": "table",
+       "header": [
+        "",
+        "Alkali (baking soda)",
+        "Acid (lemon, vinegar)"
+       ],
+       "rows": [
+        [
+         "Browning",
+         "Speeds it: onions and pretzels brown fast",
+         "Slows it"
+        ],
+        [
+         "Vegetables",
+         "Softens them, even to mush (`VEG-1.M1.L1`)",
+         "Firms them"
+        ],
+        [
+         "Colour",
+         "Red cabbage turns blue; greens stay bright",
+         "Red cabbage stays red; greens turn olive (`VEG-1.M3.L1`)"
+        ],
+        [
+         "Milk",
+         "—",
+         "Curdles it (*hangop*, paneer)"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Leavening.*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**Baking soda** (*zuiveringszout*) is a base. It needs an acid (buttermilk, yoghurt, brown sugar, honey) to release carbon dioxide, and it works as soon as it is wet: bake at once."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**Baking powder** (*bakpoeder*) carries its own acid, so it needs only water and heat."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**Too much soda** tastes soapy and metallic, and browns too much."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Measuring pH at home* with strips is optional; the effects are visible."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Small amounts.* A pinch of baking soda is enough to change browning in a pan of onions: about 0.5 g, an eighth of a teaspoon. More softens them to a paste."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Soda onions (45 min).** Run the comparison of `SCI-2.M5.X1`."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** the soda onions brown far faster and turn soft and jammy."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Mushy, soapy onions",
+         "Too much soda",
+         "A small pinch only"
+        ],
+        [
+         "A difference you can't trust",
+         "Comparing at different heats",
+         "Two identical pans on burners of the same size"
+        ],
+        [
+         "A flat, soapy cake",
+         "Soda without an acid in the batter",
+         "Pair soda with buttermilk or yoghurt, or use baking powder"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** no special risks beyond the kitchen basics (`SAF-1`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the photos and times (in `SCI-2.M5.X1`)."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "SCI-2.M5.X1",
+     "title": "Onions with and without baking soda",
+     "description": "Onions browned with and without a pinch of baking soda.",
+     "competencies": [
+      {
+       "id": "SC-BRWN",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** see pH steer browning, with one variable changed: two identical pans of sliced onions, the same fat, heat and time; one with a small pinch of baking soda."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** 4 onions; 4 tablespoons of oil; baking soda; salt; two identical pans on burners of the same size; two wooden spoons; a timer; a phone."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Recipe:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Slice** the onions thinly and evenly (`KNF-1`), and divide them into two equal weights."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Heat** 2 tablespoons of oil in each pan over the same medium heat. Add an onion batch to each, with a pinch of salt."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "**Pan B only:** add a small pinch of baking soda (about 0.5 g) and stir it in."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "**Cook** both side by side, stirring both the same way every minute or two."
+        },
+        {
+         "level": 0,
+         "marker": "5.",
+         "text": "**Photograph** both pans together every 5 minutes."
+        },
+        {
+         "level": 0,
+         "marker": "6.",
+         "text": "**Note** the time each takes to reach deep brown."
+        },
+        {
+         "level": 0,
+         "marker": "7.",
+         "text": "**Taste** both: texture, sweetness, any soapy note."
+        },
+        {
+         "level": 0,
+         "marker": "8.",
+         "text": "**Explain** the difference by pH and browning."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:** the two versions photographed side by side and explained, the comparison part of the `SC-BRWN` level 3 row, with this module's quiz at 80 %. The seared protein with an even, deep colour follows in `HEA-2.M4` and `MEA-2.M4`."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 45 min; the onions go into a soup or onto a burger."
+      }
+     ]
+    }
+   ],
+   "items": [
+    {
+     "id": "SCI-2.M5.Q1",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "SCI-2.M5.L1",
+     "safety": false,
+     "question": "Jam is wet, yet keeps for months. Why?",
+     "options": [
+      {
+       "key": "A",
+       "text": "it is acidic only"
+      },
+      {
+       "key": "B",
+       "text": "sugar binds its water, so microbes can't use it"
+      },
+      {
+       "key": "C",
+       "text": "it is cooked"
+      },
+      {
+       "key": "D",
+       "text": "it is sealed"
+      }
+     ],
+     "answer": "B",
+     "why": "Low water activity, not low water content."
+    },
+    {
+     "id": "SCI-2.M5.Q2",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "SCI-2.M5.L1",
+     "safety": true,
+     "question": "A low-sugar jam:",
+     "options": [
+      {
+       "key": "A",
+       "text": "keeps as long as a normal jam"
+      },
+      {
+       "key": "B",
+       "text": "has more free water, so it must be refrigerated and used sooner"
+      },
+      {
+       "key": "C",
+       "text": "is safer"
+      },
+      {
+       "key": "D",
+       "text": "needs no lid"
+      }
+     ],
+     "answer": "B",
+     "why": "Less sugar, less preserving power."
+    },
+    {
+     "id": "SCI-2.M5.Q3",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "SCI-2.M5.L1",
+     "safety": false,
+     "question": "Why do you salt sliced courgette before frying?",
+     "options": [
+      {
+       "key": "A",
+       "text": "colour"
+      },
+      {
+       "key": "B",
+       "text": "salt draws out water, so it browns instead of steaming"
+      },
+      {
+       "key": "C",
+       "text": "to soften the skin"
+      },
+      {
+       "key": "D",
+       "text": "to preserve it"
+      }
+     ],
+     "answer": "B",
+     "why": "Salt binds and draws out water."
+    },
+    {
+     "id": "SCI-2.M5.Q4",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "SCI-2.M5.L1",
+     "safety": false,
+     "question": "Water activity measures:",
+     "options": [
+      {
+       "key": "A",
+       "text": "the total water in a food"
+      },
+      {
+       "key": "B",
+       "text": "how much water is free for microbes and reactions"
+      },
+      {
+       "key": "C",
+       "text": "the boiling point"
+      },
+      {
+       "key": "D",
+       "text": "the salt content"
+      }
+     ],
+     "answer": "B",
+     "why": "Bound water doesn't count."
+    },
+    {
+     "id": "SCI-2.M5.Q5",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "SCI-2.M5.L2",
+     "safety": false,
+     "question": "A pinch of baking soda on onions:",
+     "options": [
+      {
+       "key": "A",
+       "text": "slows browning"
+      },
+      {
+       "key": "B",
+       "text": "speeds browning and softens them"
+      },
+      {
+       "key": "C",
+       "text": "keeps them white"
+      },
+      {
+       "key": "D",
+       "text": "has no effect"
+      }
+     ],
+     "answer": "B",
+     "why": "Alkaline conditions speed the Maillard reaction."
+    },
+    {
+     "id": "SCI-2.M5.Q6",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "SCI-2.M5.L2",
+     "safety": false,
+     "question": "Baking soda in a batter needs:",
+     "options": [
+      {
+       "key": "A",
+       "text": "heat only"
+      },
+      {
+       "key": "B",
+       "text": "an acid, such as buttermilk or yoghurt, to release carbon dioxide"
+      },
+      {
+       "key": "C",
+       "text": "yeast"
+      },
+      {
+       "key": "D",
+       "text": "salt"
+      }
+     ],
+     "answer": "B",
+     "why": "Baking powder carries its own acid."
+    },
+    {
+     "id": "SCI-2.M5.Q7",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "SCI-2.M5.L2",
+     "safety": false,
+     "question": "Too much baking soda in pancakes gives:",
+     "options": [
+      {
+       "key": "A",
+       "text": "more rise and no other effect"
+      },
+      {
+       "key": "B",
+       "text": "a soapy taste and dark colour"
+      },
+      {
+       "key": "C",
+       "text": "a sour taste"
+      },
+      {
+       "key": "D",
+       "text": "nothing"
+      }
+     ],
+     "answer": "B",
+     "why": "Unreacted soda tastes soapy and over-browns."
+    },
+    {
+     "id": "SCI-2.M5.Q8",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "SCI-2.M5.L2",
+     "safety": false,
+     "question": "Which keeps red cabbage red?",
+     "options": [
+      {
+       "key": "A",
+       "text": "baking soda"
+      },
+      {
+       "key": "B",
+       "text": "vinegar or apple"
+      },
+      {
+       "key": "C",
+       "text": "hard water"
+      },
+      {
+       "key": "D",
+       "text": "a lid"
+      }
+     ],
+     "answer": "B",
+     "why": "Anthocyanins are red in acid (`VEG-1.M3.L1`)."
+    }
+   ]
+  },
+  {
+   "id": "SCI-2.M6",
+   "title": "Microbiology for cooks",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** the 8 items of `SCI-2.M6` in the course file, 5 of them safety items. Pass mark 80 %, with every safety item correct. A safety item failed means a resit."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "SCI-2.M6.L1",
+     "title": "Growth, spores and toxins",
+     "prerequisites": [
+      "SAF-1.M3.L3"
+     ],
+     "competencies": [
+      {
+       "id": "SC-MICR",
+       "level": 3
+      },
+      {
+       "id": "SA-HRPR",
+       "level": 1
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** \"cooking kills everything\" is the most dangerous belief in a home kitchen. Some organisms survive cooking as spores, and some leave toxins that no amount of reheating removes. Knowing which, and why, is what makes the rules of `SAF-1` make sense, and what lets you judge a situation the rules don't cover."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** this lesson; six foods from your own kitchen or fridge; the journal."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*What microbes need to grow:* time, a suitable temperature, moisture, nutrients, the right acidity, and, for some, the absence of oxygen. Take one away, and growth slows or stops."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Spore-formers* survive cooking as spores and grow when cooked food cools slowly or is held warm:"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "*Bacillus cereus*: rice, pasta and grains (`STA-1.M4.L3`);"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "*Clostridium perfringens*: large pots of stew, gravy and braised meat cooled slowly;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "*Clostridium botulinum*: grows without oxygen in low-acid food. That is why garlic or herbs in oil need refrigeration (assessment §9), and why preserves need tested methods [S27]."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Heat-stable toxins.* *Staphylococcus aureus* (from hands) and *B. cereus* form toxins that reheating does not destroy. Once they have formed, the food is unsafe, however hot you make it. So the defence is to prevent growth: fast cooling, cold storage, clean hands."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Fermentation* is controlled growth. In yoghurt, sauerkraut and sourdough, lactic acid bacteria lower the pH and crowd out pathogens. It is safe because of the conditions (salt, acid, temperature, a tested ratio), not by luck."
+      },
+      {
+       "type": "table",
+       "header": [
+        "Food",
+        "Organism of most concern",
+        "Does cooking remove it?"
+       ],
+       "rows": [
+        [
+         "Cooked rice kept for tomorrow",
+         "*B. cereus*",
+         "No: the toxin survives; cool fast"
+        ],
+        [
+         "Raw chicken",
+         "*Campylobacter*, *Salmonella*",
+         "Yes, at 75 °C; watch cross-contamination"
+        ],
+        [
+         "Garlic in oil",
+         "*C. botulinum*",
+         "Not relevant: it is stored raw; keep it in the fridge"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:** theory only (1.5 h): for six foods in your kitchen, name the organism of most concern and why cooking does or doesn't remove it, in a table like the one above. Then explain, in a few sentences, why reheated rice can make people ill."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** you explain why reheated rice can make people ill."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Food kept \"because it will be cooked again\"",
+         "\"Cooking kills everything\"",
+         "Ask: spores? A toxin?"
+        ],
+        [
+         "A jar of garlic oil in the cupboard",
+         "Infused oils left in the cupboard",
+         "The fridge, and used within days"
+        ],
+        [
+         "A soft, foul ferment",
+         "A home ferment without salt or without a tested ratio",
+         "Tested ratios only (`PRS-3`)"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** the risks in this lesson are prevented by the §9 rules you already use: fast cooling, the fridge at 4 °C, leftovers within 2 days, garlic or herbs in oil in the fridge, and tested methods for preserves."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the table of six foods and the rice explanation."
+      }
+     ]
+    },
+    {
+     "id": "SCI-2.M6.L2",
+     "title": "Hurdles",
+     "prerequisites": [
+      "SCI-2.M6.L1"
+     ],
+     "competencies": [
+      {
+       "id": "SC-MICR",
+       "level": 3
+      },
+      {
+       "id": "SA-TEMP",
+       "level": 4
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** no single factor keeps most foods safe. A pickle is safe because it is acidic and salted and cold; a cured ham because it is salted, dried and stored cool. Seeing food as a stack of hurdles lets you judge your own leftovers, batches and preserves, and see when a process needs a tested method."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** a batch of soup or braise of 2–3 litres (the week's lunches, for example the vegetable soup of `TST-1.M4`); two or three shallow containers, or a sink or large bowl with ice and water; the probe thermometer; a clock; the journal."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Hurdles* are the factors that slow microbes:"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**temperature:** cold, or hot holding;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**acid:** a low pH;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**salt or sugar:** a low water activity (`SCI-2.M5.L1`);"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**oxygen:** its absence or presence;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**competing microbes:** fermentation;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**preservatives:** such as nitrite in a cure."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Hurdles combine.* One alone may not be enough; two or three together make a food safe. A quick pickle is acidic, salted and kept in the fridge. Hard cheese is salted, dry and acidic."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Applying them at home:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**leftovers** rely on temperature: fast cooling and the fridge;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**a home preserve** relies on a tested combination, followed exactly [S27]."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Cooling a batch by the measurable standard* (assessment §9):"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "from 57 °C to 21 °C within 2 hours;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "then to 5 °C or below within 6 hours in total."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "A large pot cools far too slowly. Divide it into shallow containers, or stand the pot in a sink of ice water and stir. Log the probe reading in the centre every 30 minutes."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**A hurdle plan (60 min).** Write the hurdle plan for three foods you make, for example the batch soup, quick pickles and a garlic oil: each food's hurdles, with a number for each (a temperature, a time, a salt or acid level). Then cool the soup by the plan, with a log, for `SCI-2.M6.X1`."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** each food has at least one named hurdle with a number; the cooling log meets the standard."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "\"It smells fine\"",
+         "Relying on smell",
+         "Pathogens and toxins don't smell; follow the hurdles"
+        ],
+        [
+         "A pot of soup out overnight",
+         "Leaving a pot of soup to cool on the stove overnight",
+         "Shallow containers or an ice bath, then the fridge"
+        ],
+        [
+         "Garlic oil on the shelf",
+         "Making garlic oil and storing it at room temperature",
+         "In the fridge, used within days"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** this lesson is the cooling rule: from 57 °C to 21 °C within 2 hours, and to 5 °C or below within 6 hours, then reheated once to 74 °C (assessment §9)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the hurdle plan and the cooling log (in `SCI-2.M6.X1`)."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "SCI-2.M6.X1",
+     "title": "The hurdles in five foods",
+     "description": "Map the hurdles in five foods in your kitchen (e.g. jam, pickles, cheese, cured ham, yoghurt).",
+     "competencies": [
+      {
+       "id": "SC-MICR",
+       "level": 3
+      },
+      {
+       "id": "SA-TEMP",
+       "level": 4
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** read the safety of familiar foods as combinations of hurdles, and apply the cooling standard to one batch. The batch cooling of `SCI-2.M6.L2` is logged in the same report."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** five foods from your kitchen and their labels (for example jam, pickles, a hard cheese, a cured ham, yoghurt); the batch soup or braise of 2–3 litres; shallow containers or an ice bath; the probe thermometer; the journal."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Recipe:** the hurdle table and the cooling log."
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**The hurdle table.** One row per food, with columns for temperature, pH or acid, salt or sugar, oxygen and microbes. Fill each in from the label and what you know, then mark the hurdle that matters most and explain why."
+        }
+       ]
+      },
+      {
+       "type": "table",
+       "header": [
+        "Food",
+        "Temperature",
+        "Acid",
+        "Salt or sugar",
+        "Oxygen",
+        "Microbes",
+        "Most important, and why"
+       ],
+       "rows": [
+        [
+         "Jam",
+         "Cupboard, fridge once open",
+         "Fruit acid",
+         "High sugar",
+         "Sealed jar",
+         "—",
+         "Sugar: low water activity"
+        ]
+       ]
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Cool the batch.** Off the heat, divide it into shallow containers, or stand the pot in ice water and stir. Probe the centre and log the time and temperature at the start (57 °C or the first reading below it), then every 30 minutes, until it reads 5 °C or below. It should pass 21 °C within 2 hours and reach 5 °C within 6 hours."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "**Label and date** the containers; into the fridge."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "**Reheat** one portion until every part reads at least 74 °C on the probe, and log it. Eat it; don't reheat it again."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`SC-MICR` level 3, in part:** the hurdle table and the scenario items at 80 %. The explanation for your own preserves follows in `PRS-3`."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`SA-TEMP` level 4:** the batch cooled from 57 °C to 21 °C within 2 hours and to 5 °C within 6 hours, logged, then reheated to 74 °C."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 1 h, plus the cooling."
+      }
+     ]
+    }
+   ],
+   "items": [
+    {
+     "id": "SCI-2.M6.Q1",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "SCI-2.M6.L1",
+     "safety": true,
+     "question": "Why can reheating fail to make food safe?",
+     "options": [
+      {
+       "key": "A",
+       "text": "it is never hot enough"
+      },
+      {
+       "key": "B",
+       "text": "some bacteria leave heat-stable toxins, and spores survive cooking"
+      },
+      {
+       "key": "C",
+       "text": "reheating adds bacteria"
+      },
+      {
+       "key": "D",
+       "text": "it never fails"
+      }
+     ],
+     "answer": "B",
+     "why": "Prevent growth: cool fast and keep cold."
+    },
+    {
+     "id": "SCI-2.M6.Q2",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "SCI-2.M6.L1",
+     "safety": true,
+     "question": "Why must homemade garlic oil be refrigerated?",
+     "options": [
+      {
+       "key": "A",
+       "text": "for flavour"
+      },
+      {
+       "key": "B",
+       "text": "low-acid food without oxygen lets *C. botulinum* spores grow"
+      },
+      {
+       "key": "C",
+       "text": "the oil goes rancid"
+      },
+      {
+       "key": "D",
+       "text": "garlic sprouts"
+      }
+     ],
+     "answer": "B",
+     "why": "It needs time and temperature control (assessment §9)."
+    },
+    {
+     "id": "SCI-2.M6.Q3",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "SCI-2.M6.L1",
+     "safety": false,
+     "question": "What makes sauerkraut safe?",
+     "options": [
+      {
+       "key": "A",
+       "text": "luck"
+      },
+      {
+       "key": "B",
+       "text": "salt and the lactic acid that bacteria produce, lowering the pH"
+      },
+      {
+       "key": "C",
+       "text": "cooking"
+      },
+      {
+       "key": "D",
+       "text": "the jar"
+      }
+     ],
+     "answer": "B",
+     "why": "Fermentation is controlled growth."
+    },
+    {
+     "id": "SCI-2.M6.Q4",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "SCI-2.M6.L1",
+     "safety": true,
+     "question": "Which organism forms spores that survive cooking rice?",
+     "options": [
+      {
+       "key": "A",
+       "text": "*Salmonella*"
+      },
+      {
+       "key": "B",
+       "text": "*Bacillus cereus*"
+      },
+      {
+       "key": "C",
+       "text": "norovirus"
+      },
+      {
+       "key": "D",
+       "text": "*Listeria*"
+      }
+     ],
+     "answer": "B",
+     "why": "Its spores grow when cooked rice cools slowly."
+    },
+    {
+     "id": "SCI-2.M6.Q5",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "SCI-2.M6.L2",
+     "safety": false,
+     "question": "A pickle is safe because of:",
+     "options": [
+      {
+       "key": "A",
+       "text": "one hurdle"
+      },
+      {
+       "key": "B",
+       "text": "a combination of hurdles, such as acid and salt"
+      },
+      {
+       "key": "C",
+       "text": "the colour"
+      },
+      {
+       "key": "D",
+       "text": "refrigeration only"
+      }
+     ],
+     "answer": "B",
+     "why": "Hurdles combine."
+    },
+    {
+     "id": "SCI-2.M6.Q6",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "SCI-2.M6.L2",
+     "safety": true,
+     "question": "Cooling a batch of stock by the measurable standard means:",
+     "options": [
+      {
+       "key": "A",
+       "text": "overnight on the stove"
+      },
+      {
+       "key": "B",
+       "text": "from 57 °C to 21 °C within 2 hours and to 5 °C within 6 hours in total"
+      },
+      {
+       "key": "C",
+       "text": "to room temperature in 4 hours"
+      },
+      {
+       "key": "D",
+       "text": "into the freezer hot"
+      }
+     ],
+     "answer": "B",
+     "why": "The Food Code cooling rule (assessment §9)."
+    },
+    {
+     "id": "SCI-2.M6.Q7",
+     "type": "SCENARIO",
+     "lessonId": "SCI-2.M6.L2",
+     "safety": true,
+     "question": "You have 4 litres of hot soup at 20:00 and must go to bed at 22:00. How do you cool it?",
+     "options": [],
+     "answer": "Divide it into shallow containers, cool them in an ice-water bath with stirring, and get them into the fridge; log the temperature so it is at 21 °C or below within 2 hours, and at 5 °C or below within 6 hours in total.",
+     "why": "Shallow and iced cool fast enough."
+    },
+    {
+     "id": "SCI-2.M6.Q8",
+     "type": "SCENARIO",
+     "lessonId": "SCI-2.M6.L2",
+     "safety": false,
+     "question": "You want to keep a homemade chutney for months. Which hurdles must it have, and where do you get the method?",
+     "options": [],
+     "answer": "Enough acid and sugar, a heat-processed or refrigerated jar, from a tested method (NCHFP or equivalent), not improvised.",
+     "why": "Home preserves rely on tested combinations of hurdles."
+    }
+   ]
+  }
+ ]
+}

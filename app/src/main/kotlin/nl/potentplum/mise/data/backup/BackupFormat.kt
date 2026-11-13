@@ -4,8 +4,12 @@ import kotlinx.serialization.Serializable
 import nl.potentplum.mise.content.model.DisciplineId
 import nl.potentplum.mise.data.db.entity.AttemptEntity
 import nl.potentplum.mise.data.db.entity.AttemptSourceType
+import nl.potentplum.mise.data.db.entity.Band
+import nl.potentplum.mise.data.db.entity.CheckAttemptEntity
 import nl.potentplum.mise.data.db.entity.EnrichState
+import nl.potentplum.mise.data.db.entity.EvidenceEntity
 import nl.potentplum.mise.data.db.entity.IngredientMode
+import nl.potentplum.mise.data.db.entity.LessonProgressEntity
 import nl.potentplum.mise.data.db.entity.ParseSource
 import nl.potentplum.mise.data.db.entity.QuestEntity
 import nl.potentplum.mise.data.db.entity.QuestStatus
@@ -46,6 +50,10 @@ data class BackupFile(
     val quests: List<BackupQuest> = emptyList(),
     val attempts: List<BackupAttempt> = emptyList(),
     val shoppingItems: List<BackupShoppingItem> = emptyList(),
+    /** Curriculum progress (spec §6.17); optional, so older backups and older apps keep working. */
+    val lessonProgress: List<BackupLessonProgress> = emptyList(),
+    val checkAttempts: List<BackupCheckAttempt> = emptyList(),
+    val evidence: List<BackupEvidence> = emptyList(),
     /** The non-secret settings, without the day and session state (spec §7.3). */
     val settings: BackupSettings? = null,
 )
@@ -185,6 +193,36 @@ data class BackupShoppingItem(
 )
 
 @Serializable
+data class BackupLessonProgress(
+    val lessonId: String,
+    val completedAt: Long,
+)
+
+@Serializable
+data class BackupCheckAttempt(
+    val id: String,
+    val moduleId: String,
+    val takenAt: Long,
+    val total: Int,
+    val correct: Int,
+    val safetyTotal: Int,
+    val safetyCorrect: Int,
+    val passed: Boolean,
+    val wrongItemIds: List<String> = emptyList(),
+)
+
+@Serializable
+data class BackupEvidence(
+    val id: String,
+    val exerciseId: String,
+    val loggedAt: Long,
+    val band: Band,
+    val notes: String? = null,
+    /** "evidence/{id}.jpg" when the zip holds the photo. */
+    val photo: String? = null,
+)
+
+@Serializable
 data class BackupSettings(
     val quality: Quality? = null,
     val seasonalNotificationsEnabled: Boolean? = null,
@@ -197,6 +235,8 @@ data class BackupSettings(
 fun imageEntry(recipeId: String) = "images/$recipeId.jpg"
 
 fun photoEntry(attemptId: String) = "journal/$attemptId.jpg"
+
+fun evidenceEntry(evidenceId: String) = "evidence/$evidenceId.jpg"
 
 fun Recipe.toBackup(hasImage: Boolean) =
     BackupRecipe(
@@ -379,3 +419,18 @@ fun ShoppingItemEntity.toBackup() = BackupShoppingItem(id, text, quantity, unit,
 
 fun BackupShoppingItem.toEntity(recipeId: String?) =
     ShoppingItemEntity(id, text, quantity, unit, name, recipeId, checked, position, createdAt)
+
+fun LessonProgressEntity.toBackup() = BackupLessonProgress(lessonId, completedAt)
+
+fun BackupLessonProgress.toEntity() = LessonProgressEntity(lessonId, completedAt)
+
+fun CheckAttemptEntity.toBackup() =
+    BackupCheckAttempt(id, moduleId, takenAt, total, correct, safetyTotal, safetyCorrect, passed, wrongItemIds)
+
+fun BackupCheckAttempt.toEntity() =
+    CheckAttemptEntity(id, moduleId, takenAt, total, correct, safetyTotal, safetyCorrect, passed, wrongItemIds)
+
+fun EvidenceEntity.toBackup(hasPhoto: Boolean) =
+    BackupEvidence(id, exerciseId, loggedAt, band, notes, if (hasPhoto) evidenceEntry(id) else null)
+
+fun BackupEvidence.toEntity(photoPath: String?) = EvidenceEntity(id, exerciseId, loggedAt, band, notes, photoPath)
