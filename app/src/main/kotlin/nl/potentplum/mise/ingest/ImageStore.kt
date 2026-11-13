@@ -92,6 +92,9 @@ class ImageStore
 
         fun journalPhoto(attemptId: String): File = File(File(context.filesDir, "journal"), "$attemptId.jpg")
 
+        /** The photo of a piece of curriculum evidence (spec §6.17). */
+        fun evidencePhoto(evidenceId: String): File = File(File(context.filesDir, "evidence"), "$evidenceId.jpg")
+
         /** Downloads and stores an imported recipe's image; null when it can't be fetched or decoded (never fatal). */
         suspend fun downloadRecipeImage(
             recipeId: String,
@@ -169,6 +172,18 @@ class ImageStore
             withContext(dispatcher) {
                 val staged = File(stagedPath)
                 val stored = runCatching { store(journalPhoto(attemptId), staged.readBytes()) }.getOrNull()
+                staged.delete()
+                stored
+            }
+
+        /** Moves a staged photo (camera or picker, in the import folder) to the evidence folder; null when it is not an image. */
+        suspend fun saveEvidencePhoto(
+            evidenceId: String,
+            stagedPath: String,
+        ): String? =
+            withContext(dispatcher) {
+                val staged = File(stagedPath)
+                val stored = runCatching { store(evidencePhoto(evidenceId), staged.readBytes()) }.getOrNull()
                 staged.delete()
                 stored
             }

@@ -15,6 +15,9 @@
     "quests": { "type": "array", "items": { "$ref": "#/$defs/quest" } },
     "attempts": { "type": "array", "items": { "$ref": "#/$defs/attempt" } },
     "shoppingItems": { "type": "array", "items": { "$ref": "#/$defs/shoppingItem" } },
+    "lessonProgress": { "type": "array", "items": { "$ref": "#/$defs/lessonProgress" } },
+    "checkAttempts": { "type": "array", "items": { "$ref": "#/$defs/checkAttempt" } },
+    "evidence": { "type": "array", "items": { "$ref": "#/$defs/evidence" } },
     "settings": { "oneOf": [{ "type": "null" }, { "$ref": "#/$defs/settings" }] }
   },
   "$defs": {
@@ -207,6 +210,45 @@
         "checked": { "type": "boolean" },
         "position": { "type": "integer", "minimum": 0 },
         "createdAt": { "$ref": "#/$defs/millis" }
+      }
+    },
+    "curriculumId": { "type": "string", "pattern": "^[A-Z]{2,3}-S?[1-5](\\.M[0-9]+(\\.[LX][0-9]+)?)?$" },
+    "lessonProgress": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["lessonId", "completedAt"],
+      "properties": {
+        "lessonId": { "$ref": "#/$defs/curriculumId" },
+        "completedAt": { "$ref": "#/$defs/millis" }
+      }
+    },
+    "checkAttempt": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "moduleId", "takenAt", "total", "correct", "safetyTotal", "safetyCorrect", "passed"],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "moduleId": { "$ref": "#/$defs/curriculumId" },
+        "takenAt": { "$ref": "#/$defs/millis" },
+        "total": { "type": "integer", "minimum": 0 },
+        "correct": { "type": "integer", "minimum": 0 },
+        "safetyTotal": { "type": "integer", "minimum": 0 },
+        "safetyCorrect": { "type": "integer", "minimum": 0 },
+        "passed": { "type": "boolean" },
+        "wrongItemIds": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "evidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "exerciseId", "loggedAt", "band"],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "exerciseId": { "$ref": "#/$defs/curriculumId" },
+        "loggedAt": { "$ref": "#/$defs/millis" },
+        "band": { "enum": ["NOT_YET", "DEVELOPING", "COMPETENT", "EXCELLENT"] },
+        "notes": { "$ref": "#/$defs/optionalString" },
+        "photo": { "type": ["string", "null"], "pattern": "^evidence/[A-Za-z0-9_-]{1,64}\\.jpg$" }
       }
     },
     "settings": {

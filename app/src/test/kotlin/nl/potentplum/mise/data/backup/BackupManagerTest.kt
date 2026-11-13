@@ -5,9 +5,14 @@ import dagger.hilt.android.testing.HiltAndroidTest
 import dagger.hilt.android.testing.HiltTestApplication
 import kotlinx.coroutines.runBlocking
 import nl.potentplum.mise.data.db.dao.BackupDao
+import nl.potentplum.mise.data.db.dao.CurriculumDao
 import nl.potentplum.mise.data.db.entity.AttemptEntity
 import nl.potentplum.mise.data.db.entity.AttemptSourceType
+import nl.potentplum.mise.data.db.entity.Band
+import nl.potentplum.mise.data.db.entity.CheckAttemptEntity
+import nl.potentplum.mise.data.db.entity.EvidenceEntity
 import nl.potentplum.mise.data.db.entity.IngredientMode
+import nl.potentplum.mise.data.db.entity.LessonProgressEntity
 import nl.potentplum.mise.data.db.entity.ParseSource
 import nl.potentplum.mise.data.db.entity.QuestEntity
 import nl.potentplum.mise.data.db.entity.QuestStatus
@@ -63,6 +68,8 @@ class BackupManagerTest {
 
     @Inject lateinit var backupDao: BackupDao
 
+    @Inject lateinit var curriculumDao: CurriculumDao
+
     @Inject lateinit var images: ImageStore
 
     @Inject lateinit var secrets: SecretStore
@@ -72,6 +79,7 @@ class BackupManagerTest {
     private val key = "sk-ant-api03-SECRET-never-in-a-backup-1234"
     private val imageBytes = byteArrayOf(-1, -40, -1, 1, 2, 3, 4)
     private val photoBytes = byteArrayOf(-1, -40, -1, 9, 8, 7)
+    private val evidenceBytes = byteArrayOf(-1, -40, -1, 5, 5, 5)
 
     @Before
     fun setUp() {
@@ -168,6 +176,24 @@ class BackupManagerTest {
                     ShoppingItemEntity("sh2", "Koffiefilters", checked = true, position = 1, createdAt = 7_000),
                 ),
             )
+            curriculumDao.upsertLessons(listOf(LessonProgressEntity("EGG-1.M1.L1", 8_000)))
+            curriculumDao.upsertChecks(
+                listOf(CheckAttemptEntity("c1", "EGG-1.M1", 9_000, 10, 9, 2, 2, passed = true, wrongItemIds = listOf("EGG-1.M1.Q3"))),
+            )
+            images.evidencePhoto("e1").apply { parentFile?.mkdirs() }.writeBytes(evidenceBytes)
+            curriculumDao.upsertEvidence(
+                listOf(
+                    EvidenceEntity(
+                        "e1",
+                        "EGG-1.M1.X1",
+                        10_000,
+                        Band.COMPETENT,
+                        "Gelijkmatig gestold",
+                        images.evidencePhoto("e1").absolutePath,
+                    ),
+                    EvidenceEntity("e2", "EGG-1.M1.X1", 11_000, Band.EXCELLENT),
+                ),
+            )
             secrets.saveClaudeKey(key)
             settings.setQuality(Quality.BEST)
         }
@@ -187,6 +213,10 @@ class BackupManagerTest {
             backupDao.deleteRecipes()
             images.recipeImage("soup").delete()
             images.journalPhoto("a1").delete()
+            curriculumDao.deleteAllLessons()
+            curriculumDao.deleteAllChecks()
+            curriculumDao.deleteAllEvidence()
+            images.evidencePhoto("e1").delete()
             settings.setQuality(Quality.FAST)
         }
 
@@ -216,6 +246,10 @@ class BackupManagerTest {
         assertEquals(1, result.needsEnrichment)
         assertArrayEquals(imageBytes, images.recipeImage("soup").readBytes())
         assertArrayEquals(photoBytes, images.journalPhoto("a1").readBytes())
+        assertArrayEquals(evidenceBytes, images.evidencePhoto("e1").readBytes())
+        assertEquals(1, before.lessonProgress.size)
+        assertEquals(1, before.checkAttempts.size)
+        assertEquals(listOf("evidence/e1.jpg", null), before.evidence.map { it.photo })
         assertEquals(images.recipeImage("soup").absolutePath, runBlocking { recipes.get("soup") }!!.imagePath)
         assertEquals(Quality.BEST, runBlocking { settings.current() }.quality)
     }
@@ -225,7 +259,7 @@ class BackupManagerTest {
         seed()
         val zip = export()
         val all = entries(zip)
-        assertEquals(setOf("backup.json", "images/soup.jpg", "journal/a1.jpg"), all.keys)
+        assertEquals(setOf("backup.json", "images/soup.jpg", "journal/a1.jpg", "evidence/e1.jpg"), all.keys)
         val json = all.getValue("backup.json").toString(Charsets.UTF_8)
         assertFalse(json.contains(key))
         assertFalse(json.contains("sk-ant-"))
@@ -245,9 +279,14 @@ class BackupManagerTest {
             recipes.save(recipes.get("soup")!!.copy(title = "Pompoensoep (nieuw)"))
             backupDao.deleteAttempts()
             backupDao.deleteShoppingItems()
+            curriculumDao.deleteEvidence("e2")
         }
         val result = restore(zip, RestoreMode.MERGE)
         assertEquals(0, result.recipes)
+        // Curriculum progress is added by id, never duplicated.
+        assertEquals(2, runBlocking { curriculumDao.evidence() }.size)
+        assertEquals(1, runBlocking { curriculumDao.checks() }.size)
+        assertEquals(1, runBlocking { curriculumDao.lessons() }.size)
         assertEquals(2, result.attempts)
         assertEquals("Pompoensoep (nieuw)", runBlocking { recipes.get("soup") }!!.title)
         assertEquals(2, runBlocking { backupDao.shoppingItems() }.size)
@@ -329,8 +368,11 @@ class BackupManagerTest {
         )
         assertEquals(QuestStatus.COMPLETED, file.quests.single().status)
         assertEquals("journal/a1.jpg", file.attempts[0].photo)
+        assertEquals(listOf("EGG-1.M1.L1"), file.lessonProgress.map { it.lessonId })
+        assertEquals(Band.COMPETENT, file.evidence.single().band)
         val result = restore(zipOf(file), RestoreMode.REPLACE)
         assertEquals(3, result.attempts)
+        assertEquals(1, runBlocking { curriculumDao.checks() }.size)
         assertEquals("Pompoensoep met salie", runBlocking { recipes.get("r-pompoensoep") }!!.title)
     }
 

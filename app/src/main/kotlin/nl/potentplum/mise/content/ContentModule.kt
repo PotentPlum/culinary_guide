@@ -10,4 +10,7 @@ import dagger.hilt.components.SingletonComponent
 interface ContentModule {
     @Binds
     fun contentRepository(impl: AssetContentRepository): ContentRepository
+
+    @Binds
+    fun curriculumRepository(impl: AssetCurriculumRepository): CurriculumRepository
 }
