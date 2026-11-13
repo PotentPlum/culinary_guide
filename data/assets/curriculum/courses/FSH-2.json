@@ -1,0 +1,3785 @@
+{
+ "schemaVersion": 1,
+ "id": "FSH-2",
+ "introduction": [
+  {
+   "type": "paragraph",
+   "text": "**Before you start.** Fish is quick to cook and easy to ruin. Its muscle has little connective tissue and its proteins set at low temperatures, so the difference between moist and dry is a minute or two. It also spoils faster than meat, and the choice at the counter is the start of every good fish dish: is it fresh, is it sustainable, is it in season?"
+  },
+  {
+   "type": "paragraph",
+   "text": "The course follows the fish from the counter to the plate: knowing and buying fish; scaling, gutting, filleting and portioning; cooking it five ways (pan-fried skin-on, poached, steamed, roasted or *en papillote*, and grilled); live mussels and prawns; and a fish plate composed from a brief."
+  },
+  {
+   "type": "paragraph",
+   "text": "*Doneness is again the thread.* Fish reaches 63 °C for 15 seconds at the core (assessment §9). You learn to pull it just before, as the flesh turns from translucent to opaque and begins to flake, because fish overshoots fast. A reading below 63 °C after the rest means it goes back for a moment more. Raw, cured and lightly cooked fish (*sushi*, ceviche, the raw *Hollandse Nieuwe*) are not taught at this stage."
+  },
+  {
+   "type": "paragraph",
+   "text": "*Sourcing.* The exercises use MSC-labelled fish or a seasonal North Sea fish: whiting (*wijting*), coley (*koolvis*), mackerel (*makreel*) and herring among the round fish; plaice (*schol*) and dab (*schar*) among the flat ones; farmed fish with the ASC label. Mussels come from Zeeland, roughly from July to April. Every exercise gives a choice, so the course works in any month."
+  },
+  {
+   "type": "paragraph",
+   "text": "*Raw fish* uses the station of `POU-2.M1.L2`: a separate board, raw protein last, hands washed after every raw touch, and a full clean-down."
+  },
+  {
+   "type": "paragraph",
+   "text": "*Buy fish on the day you cook it, or the day before.* Plan the sessions around your fishmonger's days."
+  },
+  {
+   "type": "paragraph",
+   "text": "Plan about four weeks. Almost everything fits a weeknight."
+  },
+  {
+   "type": "paragraph",
+   "text": "**Have ready:** a fish spatula; flat-ended or pin-bone tweezers; the boning knife or a flexible filleting knife, sharp; the back of a knife or a fish scaler; the raw board; a steamer; the stockpot; baking paper; the probe, with a thin tip; a container that drains, and ice; freezer bags and labels; the scale; the phone and phone stand; the freshness checklist (in `FSH-2.M1.X1`); the prediction log; the journal."
+  }
+ ],
+ "modules": [
+  {
+   "id": "FSH-2.M1",
+   "title": "Fish knowledge and buying",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** the 8 items of `FSH-2.M1` in the course file. Pass mark 80 %."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "FSH-2.M1.L1",
+     "title": "Fish types and structure",
+     "prerequisites": [
+      "SCI-2.M2.L1"
+     ],
+     "competencies": [
+      {
+       "id": "IN-FSH",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** two questions tell you how to cook almost any fish: is it round or flat, and is it lean or oily? The answers decide how you fillet it, how hot you cook it, and how long you have before it dries."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** a visit to a fish counter or market stall, or photos of ten fish from a fishmonger's website; the journal."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Round and flat:*"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Type",
+        "Body",
+        "Fillets",
+        "Examples"
+       ],
+       "rows": [
+        [
+         "Round",
+         "Eyes on both sides, swims upright",
+         "Two fillets, one from each side",
+         "Cod, whiting, coley, mackerel, herring, salmon"
+        ],
+        [
+         "Flat",
+         "Both eyes on the top side, lies on the seabed",
+         "Four fillets, two from each side",
+         "Plaice, dab, sole, turbot"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Lean and oily:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**lean (white) fish** store fat in the liver: cod, whiting, coley, plaice;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**oily fish** store it in the flesh: mackerel, herring, salmon, sardines."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "Oily fish stay moist on high heat and suit the grill; lean fish dry out quickly and suit gentle or quick methods."
+      },
+      {
+       "type": "paragraph",
+       "text": "*The structure:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**flakes:** fish muscle is short blocks of fibres (*myotomes*), separated by thin sheets of connective tissue that turn to gelatin at low temperatures. That is why cooked fish flakes;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**little collagen:** there is little connective tissue, and no long cooking is needed;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**why it cooks fast:** the proteins set at lower temperatures than those of meat, so fish cooks in minutes and overcooks in a minute more (`SCI-2.M2.L1`)."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Terms,* into the glossary:"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**fillet:** a side of the fish, off the bone;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "***suprême*:** a neat, trimmed portion of a fillet;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**steak (*moot*):** a slice across a round fish, through the bone;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "***darne*:** the French word for such a steak;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**pin bones:** the fine bones along the centre of a round fish's fillet;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**bloodline:** the dark strip along the spine."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Method follows type.* A thin, lean fillet wants a quick pan or a gentle poach; an oily fish wants the grill; a thick fillet can be roasted; a whole fish can be roasted or steamed. The clock is a poor guide: the cues and the probe decide (`FSH-2.M3.L4`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Look and feel (30 min).** At the counter, or with photos, name and place ten fish as round or flat, lean or oily, with a method for each."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** you name the type of any fish on the counter and say how it should be cooked."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "A dry, chalky fillet",
+         "Grilling a thin lean fillet until it dries",
+         "Lean and thin: quick pan or poach"
+        ],
+        [
+         "Confusion at the board",
+         "Expecting four fillets from a round fish",
+         "Round: two; flat: four"
+        ],
+        [
+         "Overcooked fish",
+         "Cooking fish \"until it's done\" by the clock",
+         "Cues and the probe"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** no special risks beyond the kitchen basics (`SAF-1`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the ten fish, placed, with a method each; the terms in the glossary."
+      }
+     ]
+    },
+    {
+     "id": "FSH-2.M1.L2",
+     "title": "Freshness and sustainability",
+     "prerequisites": [
+      "FSH-2.M1.L1"
+     ],
+     "competencies": [
+      {
+       "id": "IN-FSH",
+       "level": 3
+      },
+      {
+       "id": "IN-SEL",
+       "level": 3
+      },
+      {
+       "id": "KM-PURC",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** fresh fish needs almost nothing done to it; tired fish can't be saved by any recipe. Knowing the signs, the labels and the seasons lets you buy the best fish on the counter, not the most expensive."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** the freshness checklist of `FSH-2.M1.X1`; the *VISwijzer* app or website; a fishmonger or a supermarket fish counter."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Freshness signs in a whole fish:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**eyes:** clear and bulging, not cloudy or sunken;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**gills:** bright red, not brown;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**skin:** shiny, with a natural slime and firmly attached scales;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**flesh:** firm, springing back when pressed;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**smell:** of the sea, not of fish or ammonia."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Freshness in a fillet:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "translucent, moist flesh without gaps between the flakes;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "no browning at the edges;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "no liquid in the pack."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Sustainability:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "the **MSC** label: wild-caught, from an assessed fishery;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "the **ASC** label: farmed, to standards;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "the Dutch ***VISwijzer*** guide, which rates species by origin and method;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "choosing species that are plentiful: whiting, coley, mackerel and herring rather than the most popular few."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Seasons in the Netherlands:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "*Hollandse Nieuwe* herring from June;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "Zeeland mussels from about July to April;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "plaice at its best in summer;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "mackerel in summer;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "grey shrimp most of the year."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "A fish plate in season pairs these with the vegetables of the month (`VEG-1`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Ask.* \"Where was it caught, and how? Has it been frozen?\" A good fishmonger answers at once. Fish that has been thawed is not frozen again."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Good and Best:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**Good:** a frozen MSC fillet (frozen at sea, often fresher than \"fresh\"), or a cheap seasonal round fish such as whiting, coley or mackerel;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**Best:** a whole line-caught fish from a fishmonger."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**A fishmonger visit (45 min).** The visit of `FSH-2.M1.X1`, with the freshness checklist."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** for a whole fish and a fillet, you can name three freshness signs and a label, and decide to buy or not."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "A tired fish that looked bright",
+         "Buying by colour alone",
+         "Check eyes, gills, flesh, smell"
+        ],
+        [
+         "An unsustainable choice",
+         "Ignoring the label",
+         "MSC, ASC, *VISwijzer*"
+        ],
+        [
+         "Mushy fish after freezing",
+         "Buying \"fresh\" fish that has been thawed, without asking",
+         "Ask; never refreeze it"
+        ],
+        [
+         "Fish past its best",
+         "Buying fish for three days ahead",
+         "Buy on the day, or the day before"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** fish goes home cold, in a cool bag with an ice pack, and into the fridge at 4 °C at once (assessment §9)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the checklist and the answers (in `FSH-2.M1.X1`)."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "FSH-2.M1.X1",
+     "title": "A fishmonger visit",
+     "description": "A fishmonger visit with a freshness checklist.",
+     "competencies": [
+      {
+       "id": "IN-FSH",
+       "level": 3
+      },
+      {
+       "id": "IN-SEL",
+       "level": 3
+      },
+      {
+       "id": "KM-PURC",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** judge the freshness of whole fish and fillets with a checklist, buy a whole round fish (mackerel, whiting or herring in season) for `FSH-2.M2.X1` and the fish for the week's sessions, and choose sustainably and in season. The shopping list comes from the recipe for the week's first fish meal. Every fresh item is photographed and judged; the visit counts as a shopping trip for the `IN-SEL` row."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** the checklist and questions below; the shopping list; a cool bag and ice packs; the phone; about €20."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Recipe:** the visit."
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Write** the list and copy the checklist:"
+        }
+       ]
+      },
+      {
+       "type": "table",
+       "header": [
+        "Sign",
+        "Fresh",
+        "Not fresh"
+       ],
+       "rows": [
+        [
+         "Eyes",
+         "Clear, bulging",
+         "Cloudy, sunken"
+        ],
+        [
+         "Gills",
+         "Bright red",
+         "Brown, grey"
+        ],
+        [
+         "Skin",
+         "Shiny, natural slime, scales firm",
+         "Dull, dry, scales loose"
+        ],
+        [
+         "Flesh",
+         "Firm, springs back",
+         "Soft, dented"
+        ],
+        [
+         "Smell",
+         "Of the sea",
+         "Fishy, ammonia"
+        ],
+        [
+         "Fillet",
+         "Translucent, moist, flakes tight",
+         "Gaps, brown edges, liquid in the pack"
+        ]
+       ]
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**At the counter,** judge three whole fish and two fillets with the checklist, and photograph them."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "**Ask:** \"Where and how was this caught?\" \"Has it been frozen?\" \"What is best this week?\" Record the answers."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "**Buy** the whole fish and the fillets; note the label (MSC, ASC) or the catch area, and the season of each."
+        },
+        {
+         "level": 0,
+         "marker": "5.",
+         "text": "**Store** them on ice in the fridge as soon as you are home."
+        },
+        {
+         "level": 0,
+         "marker": "6.",
+         "text": "**Tick off** the list, and note anything forgotten."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`IN-FSH` level 3, the round fish part:** a whole round fish bought, its freshness judged with photos, and cooked by a suitable method in `FSH-2.M3`; the freshness items at 80 %. The bivalve is in `FSH-2.M4.X1`."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`IN-SEL` level 3, the seasonal part:** the seasonal calendar items of this check at 80 %, and the photos of this trip. With the two trips of `MEA-2.M2.X1`, the row is complete."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`KM-PURC` level 2:** a complete shopping list from a recipe, nothing forgotten."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 1 h."
+      }
+     ]
+    }
+   ],
+   "items": [
+    {
+     "id": "FSH-2.M1.Q1",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "FSH-2.M1.L1",
+     "safety": false,
+     "question": "How many fillets does a flat fish such as plaice give?",
+     "options": [
+      {
+       "key": "A",
+       "text": "one"
+      },
+      {
+       "key": "B",
+       "text": "two"
+      },
+      {
+       "key": "C",
+       "text": "four"
+      },
+      {
+       "key": "D",
+       "text": "six"
+      }
+     ],
+     "answer": "C",
+     "why": "Two from each side."
+    },
+    {
+     "id": "FSH-2.M1.Q2",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "FSH-2.M1.L1",
+     "safety": false,
+     "question": "Which fish is oily?",
+     "options": [
+      {
+       "key": "A",
+       "text": "whiting"
+      },
+      {
+       "key": "B",
+       "text": "plaice"
+      },
+      {
+       "key": "C",
+       "text": "mackerel"
+      },
+      {
+       "key": "D",
+       "text": "coley"
+      }
+     ],
+     "answer": "C",
+     "why": "Oily fish store fat in the flesh."
+    },
+    {
+     "id": "FSH-2.M1.Q3",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "FSH-2.M1.L1",
+     "safety": false,
+     "question": "Why does fish cook so much faster than meat?",
+     "options": [
+      {
+       "key": "A",
+       "text": "it is thinner"
+      },
+      {
+       "key": "B",
+       "text": "it has little connective tissue and its proteins set at lower temperatures"
+      },
+      {
+       "key": "C",
+       "text": "it contains more water"
+      },
+      {
+       "key": "D",
+       "text": "it is lower in fat"
+      }
+     ],
+     "answer": "B",
+     "why": "Structure explains timing."
+    },
+    {
+     "id": "FSH-2.M1.Q4",
+     "type": "IMAGE_IDENTIFICATION",
+     "lessonId": "FSH-2.M1.L2",
+     "safety": false,
+     "question": "Image: two whole mackerel side by side, one with clear, bulging eyes and red gills, one with cloudy, sunken eyes and brown gills. Which do you buy, and name two signs.",
+     "options": [],
+     "answer": "The first: clear, bulging eyes and bright red gills (also shiny skin, firm flesh).",
+     "why": "Freshness signs from photos."
+    },
+    {
+     "id": "FSH-2.M1.Q5",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "FSH-2.M1.L2",
+     "safety": false,
+     "question": "What does the MSC label tell you?",
+     "options": [
+      {
+       "key": "A",
+       "text": "the fish is organic"
+      },
+      {
+       "key": "B",
+       "text": "it comes from a wild fishery assessed as sustainable"
+      },
+      {
+       "key": "C",
+       "text": "it was farmed"
+      },
+      {
+       "key": "D",
+       "text": "it is local"
+      }
+     ],
+     "answer": "B",
+     "why": "ASC is the label for farmed fish."
+    },
+    {
+     "id": "FSH-2.M1.Q6",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "FSH-2.M1.L2",
+     "safety": false,
+     "question": "A fillet has gaps between the flakes and liquid in the pack. What does that suggest?",
+     "options": [
+      {
+       "key": "A",
+       "text": "it is very fresh"
+      },
+      {
+       "key": "B",
+       "text": "it is old or has been badly thawed"
+      },
+      {
+       "key": "C",
+       "text": "it is oily fish"
+      },
+      {
+       "key": "D",
+       "text": "it is wild"
+      }
+     ],
+     "answer": "B",
+     "why": "Fresh fillets are firm and moist, with tight flakes."
+    },
+    {
+     "id": "FSH-2.M1.Q7",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "FSH-2.M1.L2",
+     "safety": false,
+     "question": "Which pairing is in season in the Netherlands in February?",
+     "options": [
+      {
+       "key": "A",
+       "text": "plaice with asparagus"
+      },
+      {
+       "key": "B",
+       "text": "Zeeland mussels with leeks and celeriac"
+      },
+      {
+       "key": "C",
+       "text": "*Hollandse Nieuwe* herring with new potatoes"
+      },
+      {
+       "key": "D",
+       "text": "mackerel with broad beans"
+      }
+     ],
+     "answer": "B",
+     "why": "Mussels run to about April; leeks and celeriac are winter vegetables."
+    },
+    {
+     "id": "FSH-2.M1.Q8",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "FSH-2.M1.L2",
+     "safety": false,
+     "question": "Which pairing belongs to June?",
+     "options": [
+      {
+       "key": "A",
+       "text": "*Hollandse Nieuwe* herring with new potatoes and green beans"
+      },
+      {
+       "key": "B",
+       "text": "mussels with Brussels sprouts"
+      },
+      {
+       "key": "C",
+       "text": "plaice with red cabbage"
+      },
+      {
+       "key": "D",
+       "text": "coley with chicory and swede"
+      }
+     ],
+     "answer": "A",
+     "why": "Herring from June; new potatoes and beans in early summer."
+    }
+   ]
+  },
+  {
+   "id": "FSH-2.M2",
+   "title": "Handling and portioning",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** the 8 items of `FSH-2.M2` in the course file, 3 of them safety items. Pass mark 80 %, with every safety item correct."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "FSH-2.M2.L1",
+     "title": "Preparing fillets",
+     "prerequisites": [
+      "KNF-2.M2.L1"
+     ],
+     "competencies": [
+      {
+       "id": "TS-FAB",
+       "level": 2
+      },
+      {
+       "id": "SA-HYG",
+       "level": 4
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** a whole fish is cheaper than fillets, fresher by every sign you can check, and gives you a frame for a *fumet*. Filleting it is a ten-minute job once you have done it a few times."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** for session 1, a whole round fish (the fish of `FSH-2.M1.X1`); for session 2, two shop fillets with skin; the filleting or boning knife, sharp; a scaler or the back of a knife; scissors; tweezers; the raw board on a damp cloth; a large plastic bag; kitchen paper; a tray; the course video on the phone stand."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Scaling:* from tail to head with the back of a knife or a scaler, inside a large bag or under water in the sink, so the scales don't fly. Mackerel and herring need no scaling."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Gutting a whole fish:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "Cut from the vent to the head along the belly, with the knife tip shallow."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "Pull out the innards."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "Scrape out the bloodline along the spine with a teaspoon or a thumbnail."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "Rinse the cavity briefly under cold running water, and pat it dry."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "Unlike poultry, the cavity of a fish is rinsed, because blood and innards spoil it. Then the sink is cleaned."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Filleting a round fish:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "Cut behind the head, down to the bone."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "Cut along the back, keeping the knife flat against the bones."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "Lift the fillet in long strokes, the blade sliding over the ribs."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "Turn the fish and repeat."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "The frame goes into a *fumet* (`STK-2.M2.L4`), once the gills are removed."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Pin-boning:* run a finger along the centre of the fillet to find the pin bones; pull each with tweezers in the direction it lies, holding the flesh down with a finger."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Skinning:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "Lay the fillet skin side down, and hold the tail end with a pinch of salt for grip."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "Angle the knife slightly towards the skin."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "Move the skin rather than the knife: pull it from side to side while the knife stays still."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Hygiene:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "the separate board, the raw-protein station of `POU-2.M1.L2`, and raw fish last in the work order;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "the frame and trim straight into a bag in the fridge or freezer;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "the board, knife and sink cleaned and disinfected."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**A whole round fish (60 min).** With the course video: scale if needed, gut, fillet both sides. Photograph the fillets and the frame."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Pin-bone and skin (45 min).** Two shop fillets, pin-boned and skinned. Photograph them."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** fillets in one piece, with little flesh left on the frame; no pin bones felt under a fingertip; skin removed in one strip with no flesh on it."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Ragged fillets",
+         "Sawing",
+         "Long, smooth strokes"
+        ],
+        [
+         "Flesh left on the frame",
+         "A knife angled up into the flesh",
+         "Keep it flat against the bones"
+        ],
+        [
+         "Torn flesh",
+         "Pin bones pulled against the grain, tearing the flesh",
+         "Pull in the direction they lie"
+        ],
+        [
+         "A kitchen full of scales",
+         "Scales over the kitchen",
+         "In a bag, or under water"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** a sharp, flexible knife: cut away from the hand that holds the fish. Fish bones and fins are sharp: handle the fish with a cloth. Raw fish follows the raw station, and the sink is cleaned after gutting (`SAF-1.M2`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the photos and a line on what to do better."
+      }
+     ]
+    },
+    {
+     "id": "FSH-2.M2.L2",
+     "title": "Portioning and storing",
+     "prerequisites": [
+      "SAF-1.M3.L1"
+     ],
+     "competencies": [
+      {
+       "id": "IN-STO",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** even portions cook evenly; well-stored fish stays fresh until you cook it. Both are simple, and both are where most home fish goes wrong before it reaches the pan."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** the fillets of `FSH-2.M2.L1`; the scale; a sharp knife; a container that drains (a colander in a bowl, or a rack in a tray) and ice; cling film or freezer bags; labels and a pen."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Portioning by weight:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "about 120–150 g of fillet per main course;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "an even thickness within a portion, so it cooks evenly;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "the thin tail end folded under, or kept for a fish cake."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Storing fresh fish:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "in the coldest part of the fridge (set to 4 °C, assessment §9);"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "on a tray, covered;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "ideally on ice in a container that drains, so it stays cold and doesn't sit in water;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "cooked on the day it is bought, or the day after."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Freezing fish* (`IN-STO`):"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "wrap it tightly and airtight, to prevent freezer burn;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "label and date it;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "store it at −18 °C (§9);"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "thaw it in the fridge, overnight, on a plate."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "Oily fish keeps less well in the freezer than lean fish, because the fat goes rancid. Fish frozen at sea and kept frozen is often of better quality than \"fresh\" fish several days old."
+      },
+      {
+       "type": "paragraph",
+       "text": "*The fridge by zone:* raw fish and meat on the bottom shelf; ready-to-eat food above; everything covered, labelled and dated (`SAF-1`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Portion and store (40 min).** Portion the fillets of `FSH-2.M2.L1` by weight. Store two for the week on ice in the fridge; freeze two, labelled."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** portions within about 10 g of the target; fish on ice on the bottom shelf; every pack labelled and dated."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Soft, waterlogged fish",
+         "Fish sitting in its own liquid",
+         "A container that drains"
+        ],
+        [
+         "Drips on the food below",
+         "Fish on the top shelf",
+         "Bottom shelf, on a tray"
+        ],
+        [
+         "A mystery bag in the freezer",
+         "Unlabelled freezer bags",
+         "Label and date"
+        ],
+        [
+         "Warm outside, frozen inside",
+         "Thawing on the counter",
+         "In the fridge, overnight"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** this lesson is the safety rule: 4 °C in the fridge, −18 °C in the freezer, thawed in the fridge, raw fish on the bottom shelf (assessment §9, `SAF-1`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the portion weights and the fridge photo."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "FSH-2.M2.X1",
+     "title": "Pin-bone, skin and portion",
+     "description": "Pin-bone and skin two fillets; portion them; weigh the trim.",
+     "competencies": [
+      {
+       "id": "TS-FAB",
+       "level": 2
+      },
+      {
+       "id": "SA-HYG",
+       "level": 4
+      },
+      {
+       "id": "IN-STO",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** fillet a round fish following the course video, pin-bone, skin and portion the fillets cleanly and hygienically, weigh the trim, and store the week's food by zone. Film the session from above on the phone stand, including the station set-up and the clean-down. After the week's shop, arrange the fridge by zone, labelled and dated, and photograph it."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** the whole fish of `FSH-2.M1.X1`; 2 fillets of a lean white fish (MSC); ice; freezer bags and labels; the knives, tweezers and scaler; the raw station; the scale; the phone stand."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Recipe:** the session."
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Write** the work order: ready-to-eat food first, raw fish last."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Set up** the station, and start filming."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "**Fillet** the round fish (`FSH-2.M2.L1`): scale if needed, gut, fillet both sides."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "**Pin-bone and skin** all the fillets."
+        },
+        {
+         "level": 0,
+         "marker": "5.",
+         "text": "**Portion** them by weight, about 120–150 g each."
+        },
+        {
+         "level": 0,
+         "marker": "6.",
+         "text": "**Weigh** the portions, the trim and the frame; log the yield."
+        },
+        {
+         "level": 0,
+         "marker": "7.",
+         "text": "**Photograph** the portions."
+        },
+        {
+         "level": 0,
+         "marker": "8.",
+         "text": "**Store and label** them: two on ice for the week, the rest frozen; the frame into the freezer for a *fumet*."
+        },
+        {
+         "level": 0,
+         "marker": "9.",
+         "text": "**Clean down** in order, and stop filming."
+        },
+        {
+         "level": 0,
+         "marker": "10.",
+         "text": "**Photograph** the fridge by zone."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`TS-FAB` level 2, the round fish part:** a round fish filleted following a video, the fillets pin-boned, skinned and portioned, with the pieces photographed and the trim weighed. With `POU-2.M2.X1` and `KNF-2.M2.X1`, the row is complete."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`SA-HYG` level 4, the fish part:** the video of at least three minutes of raw-fish handling with no cross-contamination, and the work order with raw fish last."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`IN-STO` level 3:** the fridge photographed by zone with everything labelled and dated, and the storage items of this check at 80 %."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "AI review scores the video with the checklist of `POU-2.M1.X1` and fish reference clips: *competent* shows hands washed at each change, the raw board apart and a full clean-down; *not yet* shows a raw-handed touch on a tap, a jar or ready-to-eat food."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 1.25 h."
+      }
+     ]
+    }
+   ],
+   "items": [
+    {
+     "id": "FSH-2.M2.Q1",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "FSH-2.M2.L2",
+     "safety": false,
+     "question": "About how much fillet do you portion for a main course?",
+     "options": [
+      {
+       "key": "A",
+       "text": "50 g"
+      },
+      {
+       "key": "B",
+       "text": "120–150 g"
+      },
+      {
+       "key": "C",
+       "text": "300 g"
+      },
+      {
+       "key": "D",
+       "text": "500 g"
+      }
+     ],
+     "answer": "B",
+     "why": "A standard main-course portion."
+    },
+    {
+     "id": "FSH-2.M2.Q2",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "FSH-2.M2.L2",
+     "safety": true,
+     "question": "Where is fresh fish stored at home?",
+     "options": [
+      {
+       "key": "A",
+       "text": "in the door"
+      },
+      {
+       "key": "B",
+       "text": "on the bottom shelf, covered, ideally on ice, in a fridge at 4 °C"
+      },
+      {
+       "key": "C",
+       "text": "on the counter until dinner"
+      },
+      {
+       "key": "D",
+       "text": "in a bag of water"
+      }
+     ],
+     "answer": "B",
+     "why": "Coldest place, can't drip; §9 fridge at 4 °C."
+    },
+    {
+     "id": "FSH-2.M2.Q3",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "FSH-2.M2.L2",
+     "safety": false,
+     "question": "Why does oily fish keep less well in the freezer than lean fish?",
+     "options": [
+      {
+       "key": "A",
+       "text": "it has more water"
+      },
+      {
+       "key": "B",
+       "text": "its fat goes rancid"
+      },
+      {
+       "key": "C",
+       "text": "it is softer"
+      },
+      {
+       "key": "D",
+       "text": "it doesn't"
+      }
+     ],
+     "answer": "B",
+     "why": "Fat oxidises over time, even frozen."
+    },
+    {
+     "id": "FSH-2.M2.Q4",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "FSH-2.M2.L2",
+     "safety": true,
+     "question": "How is frozen fish thawed?",
+     "options": [
+      {
+       "key": "A",
+       "text": "on the counter"
+      },
+      {
+       "key": "B",
+       "text": "in the fridge"
+      },
+      {
+       "key": "C",
+       "text": "in hot water"
+      },
+      {
+       "key": "D",
+       "text": "in the sun"
+      }
+     ],
+     "answer": "B",
+     "why": "It stays at 4 °C or below while it thaws."
+    },
+    {
+     "id": "FSH-2.M2.Q5",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "FSH-2.M2.L2",
+     "safety": false,
+     "question": "What prevents freezer burn on fish?",
+     "options": [
+      {
+       "key": "A",
+       "text": "freezing it unwrapped"
+      },
+      {
+       "key": "B",
+       "text": "wrapping it tightly and airtight"
+      },
+      {
+       "key": "C",
+       "text": "adding salt"
+      },
+      {
+       "key": "D",
+       "text": "freezing it slowly"
+      }
+     ],
+     "answer": "B",
+     "why": "Air dries and oxidises the surface."
+    },
+    {
+     "id": "FSH-2.M2.Q6",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "FSH-2.M2.L2",
+     "safety": true,
+     "question": "At what temperature does the freezer run?",
+     "options": [
+      {
+       "key": "A",
+       "text": "0 °C"
+      },
+      {
+       "key": "B",
+       "text": "−5 °C"
+      },
+      {
+       "key": "C",
+       "text": "−18 °C or colder"
+      },
+      {
+       "key": "D",
+       "text": "4 °C"
+      }
+     ],
+     "answer": "C",
+     "why": "Assessment §9."
+    },
+    {
+     "id": "FSH-2.M2.Q7",
+     "type": "SCENARIO",
+     "lessonId": "FSH-2.M2.L2",
+     "safety": false,
+     "question": "You bought fish on Saturday for dinner on Wednesday. What should you have done instead?",
+     "options": [],
+     "answer": "Bought it on Wednesday (or Tuesday), or frozen it on Saturday, wrapped, labelled and dated, and thawed it in the fridge for Wednesday.",
+     "why": "Fresh fish is cooked on the day of purchase or the next."
+    },
+    {
+     "id": "FSH-2.M2.Q8",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "FSH-2.M2.L2",
+     "safety": false,
+     "question": "Why portion fillets to an even thickness?",
+     "options": [
+      {
+       "key": "A",
+       "text": "to look neat"
+      },
+      {
+       "key": "B",
+       "text": "so each portion cooks evenly, without a dry thin end and an underdone thick one"
+      },
+      {
+       "key": "C",
+       "text": "to save fish"
+      },
+      {
+       "key": "D",
+       "text": "for the freezer"
+      }
+     ],
+     "answer": "B",
+     "why": "Even thickness, even cooking."
+    }
+   ]
+  },
+  {
+   "id": "FSH-2.M3",
+   "title": "Cooking fish",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** the 8 items of `FSH-2.M3` in the course file, 1 of them a safety item. Pass mark 80 %, with every safety item correct."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "FSH-2.M3.L1",
+     "title": "Pan-frying skin-on",
+     "prerequisites": [
+      "HEA-1.M3.L2"
+     ],
+     "competencies": [
+      {
+       "id": "TS-PRO",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** a fillet with glass-crisp skin over moist, just-set flesh is restaurant cooking at weeknight speed. It depends on three things: dry skin, a hot pan, and patience on the skin side."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** for each session, 2 skin-on fillets (sea bass, mackerel, whiting or a plaice fillet); salt; oil; 30 g of butter and a lemon for a *beurre noisette*; a non-stick or well-seasoned steel pan; the fish spatula; the probe; kitchen paper."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Dry skin.* Pat the skin dry, or leave the fillet uncovered in the fridge for an hour. Scrape the skin with the back of a knife to remove moisture and any last scales. Salt just before cooking."
+      },
+      {
+       "type": "paragraph",
+       "text": "*The pan:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "hot, with a thin film of oil;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "non-stick or a well-seasoned steel pan (`EQP-1`);"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "not crowded."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Press.* Lay the fillet skin side down, away from you. Press it flat with the fish spatula for the first 20–30 seconds, because the skin contracts and lifts the fillet into a curve."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Mostly skin side.* Cook about 80 % of the time on the skin, until the flesh is opaque most of the way up the side. Turn it for the last moments, or baste it with butter, off the heat."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Doneness:* 63 °C at the core (assessment §9). Pull a little before, because the residual heat finishes it. Probe from the side into the thickest part."
+      },
+      {
+       "type": "paragraph",
+       "text": "*A beurre noisette:* butter heated in the pan until it foams and smells of hazelnut, the solids golden; a squeeze of lemon stops it. Spooned over the flesh, never the skin."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Two fillets (40 min).** One pressed and one not; compare the skins."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**A weeknight fish (40 min).** A skin-on fillet, crisp, probed, with a quick sauce or a *beurre noisette*."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** the fillet releasing from the pan on its own when the skin is crisp; a rising line of opaque flesh up the side; the probe at or just above 63 °C after a minute's rest."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Skin stuck and torn",
+         "Wet skin that sticks and tears",
+         "Dry it; a hot pan"
+        ],
+        [
+         "A bowed fillet, pale in the middle",
+         "A curled fillet that wasn't pressed",
+         "Press for 20–30 seconds"
+        ],
+        [
+         "Torn skin",
+         "Turning too early",
+         "Wait until it releases"
+        ],
+        [
+         "Dry flesh",
+         "Cooking it equally on both sides, so it dries",
+         "About 80 % skin side"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** at or above 63 °C, probed (assessment §9). Lay the fillet away from you: the oil spits as the skin hits it."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the photos of the two skins and the probe readings."
+      }
+     ]
+    },
+    {
+     "id": "FSH-2.M3.L2",
+     "title": "Poaching and steaming",
+     "prerequisites": [
+      "HEA-1.M5.L4"
+     ],
+     "competencies": [
+      {
+       "id": "TS-MOI",
+       "level": 4
+      },
+      {
+       "id": "TS-PRO",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** a lean white fish poached or steamed is moist, delicate and very hard to overcook, because the water around it can't get hotter than the method allows. It is the kindest way to cook the cheap North Sea fish."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** for session 1, 2 portions of a lean white fish; for the *court bouillon*, 1.5 litres of water, 150 ml of white wine or 2 tablespoons of vinegar, an onion, a carrot, a bay leaf, parsley stalks, 8 peppercorns, salt; a wide pan; the probe; a fish slice; for session 2, 2 fillets, a thumb of ginger and 2 spring onions (or a fennel bulb and herbs), a steamer, a heatproof plate."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Poaching in court bouillon:* water with wine or vinegar, sliced onion and carrot, herbs and peppercorns, lightly salted (about 10 g per litre), simmered for 20 minutes, then brought down to a poaching heat."
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**The liquid temperature:** about 70–85 °C, the surface barely trembling (`POU-2.M5.L1`). Log it."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**The time:** a fillet of 2 cm is done in about 6–8 minutes."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**A whole fish** starts in cold liquid, so the outside doesn't overcook before the centre warms."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Poaching in oil:* fish submerged in olive or rapeseed oil at a low temperature, around 60–70 °C on the probe, for a silky texture. The fish still reaches 63 °C at the core (§9). It needs a thermometer in the oil throughout."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Steaming* over aromatics (ginger and spring onion, or fennel and herbs):"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "the fish on a plate in a steamer over simmering water, covered;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "gentle and moist;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "the plate collects the juices for the sauce."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "A fillet of 2 cm takes about 6–8 minutes. Check it at the earliest time: the lid hides overcooking."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Why moist heat for lean fish:* the fish can't overshoot the water temperature, so the window between done and dry is wider."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Poach (45 min).** A white fish in *court bouillon*, the liquid logged at 70–85 °C; probed; served with a sauce from `SAU-2` (*beurre blanc* or a herb *velouté*)."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Steam (40 min).** A fillet steamed over ginger and spring onion, or fennel; finished with hot oil and soy sauce, or olive oil and lemon."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** the poaching liquid barely trembling; fish opaque and just flaking; moist, intact portions."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Broken, dry fish",
+         "Boiling the fish",
+         "Hold 70–85 °C"
+        ],
+        [
+         "Bland fish",
+         "An unseasoned *court bouillon*",
+         "Salt and acid in the liquid"
+        ],
+        [
+         "Dry, shrunken fillets",
+         "Overcooking in the steamer while the lid is closed",
+         "Check at the earliest time"
+        ],
+        [
+         "Greasy or raw fish",
+         "Oil-poaching without a thermometer",
+         "A thermometer in the oil"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** at or above 63 °C at the core, probed (assessment §9). Steam scalds: lift the steamer lid away from you. The *court bouillon* is strained, cooled by the standard and frozen for the next poach."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the liquid log, the probe readings and a tasting line."
+      }
+     ]
+    },
+    {
+     "id": "FSH-2.M3.L3",
+     "title": "Roasting and *en papillote*",
+     "prerequisites": [
+      "HEA-2.M2.L1"
+     ],
+     "competencies": [
+      {
+       "id": "TS-PRO",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** a whole roast mackerel or a fish in a parcel is a meal with almost no work: the oven does it while you make a salad. A parcel also teaches timing, because the fish and the vegetables have to be done at the same moment."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** a whole mackerel or whiting, gutted; a portion of white fish of about 140 g; a leek and a carrot, or a fennel bulb; butter; white wine; herbs (parsley, dill, thyme); lemon; baking paper; an oiled tray; the probe."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Roasting portions:* thick fillets in a hot oven (about 200–220 °C) on an oiled tray, often after a quick sear."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Roasting a whole fish:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "scored on both sides, down to the bone, every 2–3 cm, so the heat penetrates;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "stuffed with herbs and lemon;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "probed at the thickest part, behind the head, not near the tail."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "A mackerel of about 300 g takes 12–15 minutes in a hot oven."
+      },
+      {
+       "type": "paragraph",
+       "text": "*En papillote:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "the fish and finely cut vegetables in a sealed parcel of baking paper, with a little liquid and fat;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "baked in a hot oven, where they steam in their own juices;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "opened at the table."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "To seal it: fold a large sheet in half, place the food on one side near the fold, and crimp the edges in small, overlapping folds all the way round."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Matching the vegetables.* They are cut thin enough to cook in the time the fish needs: julienned leek and carrot, thin fennel, spinach, or courgette ribbons in summer."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Checking a parcel.* Time it (about 12–15 minutes for a 2 cm portion), then probe through the paper into one parcel. The steam on opening shows the timing was right."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**A whole fish and a parcel (60 min).** A whole mackerel or whiting roasted; a portion *en papillote*. Probe both and compare."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** the skin crisp on the roast fish; a puffed parcel; vegetables tender and the fish just flaking."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Crunchy vegetables, done fish",
+         "Vegetables cut too thick for the fish's time",
+         "Julienne or ribbons"
+        ],
+        [
+         "A dry parcel",
+         "Parcels that leak",
+         "Small, overlapping folds"
+        ],
+        [
+         "Underdone near the head",
+         "A whole fish probed near the tail",
+         "Probe behind the head"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** at or above 63 °C at the thickest part, probed (assessment §9). Open the parcel away from your face: the steam scalds."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the probe readings and the photos."
+      }
+     ]
+    },
+    {
+     "id": "FSH-2.M3.L4",
+     "title": "Fish doneness",
+     "prerequisites": [
+      "FSH-2.M3.L1"
+     ],
+     "competencies": [
+      {
+       "id": "JD-CUES",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** \"until it flakes easily\", the line in many recipes, means overcooked. Fish is done a moment earlier, and the cues for that moment are learned the same way as for meat: predict, then probe."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** three portions of fish of different thickness (a thin fillet, a medium one, a thick piece); the method of your choice; the probe with a thin tip; the prediction log."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*The cues:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**translucency:** raw fish is translucent and turns opaque as it cooks; look at the side of a fillet, where the opaque line rises;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**flake:** at done, a gentle press with a fingertip or a fork tip separates the flakes, which still look moist;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**bone:** the flesh lifts from the bone of a whole fish;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**the probe:** a thin probe into the thickest part, from the side."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*The figure:* 63 °C for 15 seconds at the core (assessment §9). Lightly cooked or raw fish (*sushi*, ceviche) is not taught at this stage."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Carryover in fish* is small, a degree or two in a fillet. Pull it just before 63 °C, rest it for a minute, and probe again. If it is below 63 °C, give it a moment more."
+      },
+      {
+       "type": "paragraph",
+       "text": "*White beading.* Small white drops on the surface of a cooked fillet are albumin, squeezed out by fibres that contracted too far: a sign of overcooking."
+      },
+      {
+       "type": "paragraph",
+       "text": "*The cue-then-reading entry* (`POU-2.M6.L2`): predict, write, probe. The fish entries extend your log. Write the thickness of each piece beside the entry: thickness is the best predictor of time."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Predict and probe (40 min).** Three portions of different thickness, cooked by the same method. Predict the core from translucency and flake, then probe; log each entry."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** predictions within ±3 °C of the reading."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Dry or raw fish",
+         "Judging by the clock",
+         "Cues and the probe"
+        ],
+        [
+         "A false reading",
+         "Probing the thin end",
+         "The thickest part"
+        ],
+        [
+         "A dry portion",
+         "Cutting the fish open to look, so it dries",
+         "Read the side; probe"
+        ],
+        [
+         "White beading, dry flakes",
+         "Waiting for \"flakes easily\", which means overcooked",
+         "Pull as it just starts to flake"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** at or above 63 °C after the rest, probed (assessment §9)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the three entries in the prediction log."
+      }
+     ]
+    },
+    {
+     "id": "FSH-2.M3.L5",
+     "title": "Oily fish on the grill",
+     "prerequisites": [
+      "HEA-2.M3.L1"
+     ],
+     "competencies": [
+      {
+       "id": "TS-DRY",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** mackerel and herring are cheap, plentiful in the North Sea, and at their best under fierce heat. Grilled with blistered skin and a sharp sauce, they are one of the best fish meals there is."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** 2 whole mackerel, gutted (or herring); oil; salt; a mustard or horseradish sauce (mustard and *crème fraîche*, or grated horseradish with yoghurt); a sharp salad of the season (cucumber in summer, a vinaigrette on red cabbage or chicory in winter); the oven grill, a grill pan or a barbecue; the probe; a fish spatula."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Why oily fish suits high heat:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "the fat in the flesh keeps it moist through a fierce sear;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "the skin crisps and chars;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "a sharp sauce (mustard, vinegar, horseradish) cuts the richness."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*The grill:* the oven grill, a grill pan or a barbecue (`HEA-2.M3`)."
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**Skin:** whole mackerel or herring, scored and grilled skin-on; salmon fillets skin side to the heat first."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**Sticking:** a clean, very hot, oiled grill, and a fish that isn't moved until it releases."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**Time:** a whole mackerel takes about 4–5 minutes a side under a hot grill."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Doneness:* 63 °C (§9), probed at the thickest part, behind the head."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Lean fish on the grill* dries before it colours. If you grill a lean fish, choose a thick piece, oil it well, and keep it brief, or wrap it."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Grilled mackerel (45 min).** Whole mackerel scored, grilled skin-on, probed, with a mustard or horseradish sauce and a sharp salad of the season."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** blistered, charred skin without tearing; moist flesh that lifts from the bone."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Skin stuck to the grill",
+         "A cold grill",
+         "Preheat; clean and oil it"
+        ],
+        [
+         "Torn skin",
+         "Moving the fish too early",
+         "Wait until it releases"
+        ],
+        [
+         "A dry, chalky fillet",
+         "A lean fillet grilled hard until dry",
+         "Oily fish on the grill"
+        ],
+        [
+         "A heavy, cloying plate",
+         "No acid with oily fish",
+         "A sharp sauce or salad"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** at or above 63 °C, probed (assessment §9). A grill flares as the fat drips: keep the fish under watch and a lid or tray at hand, never water."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the probe reading and a photo of the skin."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "FSH-2.M3.X1",
+     "title": "The five methods, across three weeks",
+     "description": "The five methods across three weeks, with doneness photos.",
+     "competencies": [
+      {
+       "id": "TS-PRO",
+       "level": 3
+      },
+      {
+       "id": "TS-MOI",
+       "level": 4
+      },
+      {
+       "id": "JD-CUES",
+       "level": 3
+      },
+      {
+       "id": "TS-DRY",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** cook fish by the five methods of the module from frameworks, to 63 °C and not much beyond, with a cue-then-reading entry and a cross-section photo for each: five sessions over three weeks. Use a different seasonal or MSC fish where possible. State the target before each cook, and predict the core before each probe. For the poach, log the liquid at 70–85 °C, and write one line on why poaching suits this fish."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** for 2, five times: 2 portions of fish (or 2 whole small fish), with vegetables and potatoes or bread in season; the pans, steamer and grill of the lessons; the probe; the prediction log; the phone."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Framework:** the five methods."
+      },
+      {
+       "type": "table",
+       "header": [
+        "Method",
+        "Fish",
+        "Key points",
+        "Your decisions"
+       ],
+       "rows": [
+        [
+         "Pan-fried skin-on",
+         "A skin-on fillet",
+         "Dry skin, hot pan, press, about 80 % skin side",
+         "The fish; the finish"
+        ],
+        [
+         "Poached in *court bouillon*",
+         "A lean white fish",
+         "Liquid at 70–85 °C, logged",
+         "The liquid; the sauce"
+        ],
+        [
+         "Steamed",
+         "A lean fillet",
+         "Over aromatics, covered, checked early",
+         "The aromatics"
+        ],
+        [
+         "Roasted",
+         "A thick fillet or a whole fish",
+         "Hot oven (about 200–220 °C); a whole fish scored",
+         "Whole or portion"
+        ],
+        [
+         "Grilled",
+         "An oily fish",
+         "A very hot grill, skin-on, a sharp sauce",
+         "Grill or pan"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Procedure:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "State the target and the method."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "Cook the fish."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "Predict the core, then probe at the pull and after a minute's rest."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "Photograph the flaked cross-section."
+        },
+        {
+         "level": 0,
+         "marker": "5.",
+         "text": "Log each entry."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`TS-PRO` level 3, the fish part:** fish at a stated target within 3 °C after resting, at or above 63 °C, with an even, moist flake."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`TS-MOI` level 4, the fish poach:** a delicate poach at 70–85 °C, logged, with the method choice reasoned; with the steaming here, `STK-2.M2.X1` and `POU-2.M5.X1`, the row's methods and occasions are covered."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`JD-CUES` level 3:** at least ten fish entries over the five sessions, at least eight within ±3 °C."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`TS-DRY` level 3:** the pan-frying and grilling parts, with crisp skin and the right interior."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "AI review scores the cross-sections: opaque throughout, moist flakes, no white beading. *Competent* shows opaque, moist flakes that just separate; *not yet* shows a translucent centre, or dry, shrunken flakes with white albumin beading."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 5 × 40 min over three weeks."
+      }
+     ]
+    },
+    {
+     "id": "FSH-2.M3.X2",
+     "title": "Fish *en papillote* with vegetables",
+     "description": "Fish *en papillote* with vegetables.",
+     "competencies": [
+      {
+       "id": "TS-PRO",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** time fish and vegetables together in a sealed parcel, from a framework. Choose the fish (MSC white fish or a North Sea fish in season), the vegetables (cut to suit the fish's time: leek and carrot in winter, fennel and courgette in summer), and the liquid and the fat. Probe one parcel through the paper."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** for 2: 2 portions of fish of about 140 g; 300 g of vegetables; wine or stock; butter or oil; herbs; baking paper; a baking tray; the probe; the phone."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Framework:** the parcel."
+      },
+      {
+       "type": "table",
+       "header": [
+        "Part",
+        "What it is",
+        "Your decisions"
+       ],
+       "rows": [
+        [
+         "Fish",
+         "A portion of about 140 g, about 2 cm thick",
+         "Which fish"
+        ],
+        [
+         "Vegetables",
+         "Cut thin enough to cook in the fish's time: julienne, thin slices, ribbons",
+         "Which, and the cut"
+        ],
+        [
+         "Liquid",
+         "A tablespoon or two of wine or stock",
+         "Which"
+        ],
+        [
+         "Fat and flavour",
+         "A knob of butter or a spoon of oil; herbs; lemon",
+         "Which"
+        ],
+        [
+         "Seal",
+         "Small overlapping folds all round",
+         "—"
+        ],
+        [
+         "Oven",
+         "Hot, about 200–220 °C; about 12–15 minutes",
+         "The time, from the thickness"
+        ],
+        [
+         "Check",
+         "Probe one parcel through the paper: 63 °C or a little above",
+         "—"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Procedure:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "Cut the vegetables to suit the fish's cooking time."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "Assemble and seal the parcels."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "Bake them."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "Probe one through the paper."
+        },
+        {
+         "level": 0,
+         "marker": "5.",
+         "text": "Open the parcels at the table."
+        },
+        {
+         "level": 0,
+         "marker": "6.",
+         "text": "Photograph the open parcel and a cross-section."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:** the fish at 63 °C or a little above, moist, with the vegetables tender at the same moment, for the fish part of `TS-PRO` level 3."
+      },
+      {
+       "type": "paragraph",
+       "text": "AI review scores the cross-section as in `FSH-2.M3.X1`: *competent* is moist, just-flaking fish with tender vegetables; *not yet* is a translucent centre, or dry fish with crunchy vegetables."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 40 min."
+      }
+     ]
+    }
+   ],
+   "items": [
+    {
+     "id": "FSH-2.M3.Q1",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "FSH-2.M3.L5",
+     "safety": false,
+     "question": "Why does mackerel suit a hot grill better than whiting?",
+     "options": [
+      {
+       "key": "A",
+       "text": "it is bigger"
+      },
+      {
+       "key": "B",
+       "text": "the fat in its flesh keeps it moist under fierce heat"
+      },
+      {
+       "key": "C",
+       "text": "it has no skin"
+      },
+      {
+       "key": "D",
+       "text": "it is cheaper"
+      }
+     ],
+     "answer": "B",
+     "why": "Oily fish forgive high heat."
+    },
+    {
+     "id": "FSH-2.M3.Q2",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "FSH-2.M3.L5",
+     "safety": false,
+     "question": "What goes well with grilled oily fish?",
+     "options": [
+      {
+       "key": "A",
+       "text": "a cream sauce"
+      },
+      {
+       "key": "B",
+       "text": "something sharp, such as mustard, vinegar or horseradish, to cut the richness"
+      },
+      {
+       "key": "C",
+       "text": "more oil"
+      },
+      {
+       "key": "D",
+       "text": "sugar"
+      }
+     ],
+     "answer": "B",
+     "why": "Acid balances fat."
+    },
+    {
+     "id": "FSH-2.M3.Q3",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "FSH-2.M3.L5",
+     "safety": false,
+     "question": "Grilled mackerel sticks and tears. The likely cause?",
+     "options": [
+      {
+       "key": "A",
+       "text": "the grill was too hot"
+      },
+      {
+       "key": "B",
+       "text": "the grill was not hot or clean enough, or the fish was moved too early"
+      },
+      {
+       "key": "C",
+       "text": "too much salt"
+      },
+      {
+       "key": "D",
+       "text": "the fish was too fresh"
+      }
+     ],
+     "answer": "B",
+     "why": "A hot, clean, oiled grill; let it release."
+    },
+    {
+     "id": "FSH-2.M3.Q4",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "FSH-2.M3.L4",
+     "safety": true,
+     "question": "What is the safe core figure for fish?",
+     "options": [
+      {
+       "key": "A",
+       "text": "50 °C"
+      },
+      {
+       "key": "B",
+       "text": "55 °C"
+      },
+      {
+       "key": "C",
+       "text": "63 °C for 15 seconds"
+      },
+      {
+       "key": "D",
+       "text": "74 °C"
+      }
+     ],
+     "answer": "C",
+     "why": "Assessment §9."
+    },
+    {
+     "id": "FSH-2.M3.Q5",
+     "type": "SCENARIO",
+     "lessonId": "FSH-2.M3.L4",
+     "safety": false,
+     "question": "A cod fillet is opaque at the edges but translucent in the centre, and the probe reads 58 °C. What do you do?",
+     "options": [],
+     "answer": "Keep cooking gently for a minute or two, then probe again; pull just before 63 °C and rest a minute, confirming 63 °C.",
+     "why": "Cues and probe agree it isn't done."
+    },
+    {
+     "id": "FSH-2.M3.Q6",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "FSH-2.M3.L4",
+     "safety": false,
+     "question": "White beads of protein appear on a fillet and the flakes look dry. What does that tell you?",
+     "options": [
+      {
+       "key": "A",
+       "text": "it is perfectly done"
+      },
+      {
+       "key": "B",
+       "text": "it is overcooked"
+      },
+      {
+       "key": "C",
+       "text": "it is raw"
+      },
+      {
+       "key": "D",
+       "text": "it is very fresh"
+      }
+     ],
+     "answer": "B",
+     "why": "Albumin is squeezed out by overcooking."
+    },
+    {
+     "id": "FSH-2.M3.Q7",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "FSH-2.M3.L2",
+     "safety": false,
+     "question": "At what liquid temperature is fish poached?",
+     "options": [
+      {
+       "key": "A",
+       "text": "a rolling boil"
+      },
+      {
+       "key": "B",
+       "text": "about 70–85 °C, the surface barely trembling"
+      },
+      {
+       "key": "C",
+       "text": "40 °C"
+      },
+      {
+       "key": "D",
+       "text": "100 °C covered"
+      }
+     ],
+     "answer": "B",
+     "why": "A delicate poach."
+    },
+    {
+     "id": "FSH-2.M3.Q8",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "FSH-2.M3.L1",
+     "safety": false,
+     "question": "Why is a skin-on fillet pressed down in the pan for the first seconds?",
+     "options": [
+      {
+       "key": "A",
+       "text": "to cook it faster"
+      },
+      {
+       "key": "B",
+       "text": "the skin contracts and lifts the fillet; pressing keeps it flat so the skin crisps evenly"
+      },
+      {
+       "key": "C",
+       "text": "to squeeze out fat"
+      },
+      {
+       "key": "D",
+       "text": "to stop it sticking"
+      }
+     ],
+     "answer": "B",
+     "why": "Contact makes even, crisp skin."
+    }
+   ]
+  },
+  {
+   "id": "FSH-2.M4",
+   "title": "Shellfish",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** the 8 items of `FSH-2.M4` in the course file, 4 of them safety items. Pass mark 80 %, with every safety item correct."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "FSH-2.M4.L1",
+     "title": "Mussels",
+     "prerequisites": [
+      "SAF-1.M1.L1"
+     ],
+     "competencies": [
+      {
+       "id": "IN-FSH",
+       "level": 3
+      },
+      {
+       "id": "SA-HYG",
+       "level": 4
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** a pot of Zeeland mussels is one of the cheapest feasts in the Netherlands and one of the quickest. Mussels are also alive until you cook them, and a few simple rules decide whether they are a feast or a risk."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** 1–2 kg of mussels; 2 shallots and 2 cloves of garlic; 200 ml of dry white wine; 30 g of butter or a splash of cream; parsley; a large pot with a lid; a colander; a bowl and a damp cloth; a bin for the discards."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Live shellfish.* Mussels are bought alive and must be alive when they are cooked. A dead mussel spoils quickly."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Storing them:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "in the fridge at 4 °C (§9), in a bowl covered with a damp cloth;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "never in water, which drowns them;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "never in a closed plastic bag, which suffocates them;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "cooked as soon as possible, ideally on the day they are bought."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Checking them,* just before cooking:"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "discard any with cracked or broken shells;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "tap an open mussel on the worktop: if it doesn't close within a few seconds, it is dead and goes in the bin;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "after cooking, discard any that stay firmly shut."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Cleaning them:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "rinse in cold water;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "pull off the beard (*byssus*), the tuft of threads, towards the hinge;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "scrape off barnacles if needed."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Steaming (moules marinières):*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "Sweat the shallot and garlic in a little butter."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "Add the white wine, and bring to the boil."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "Add the mussels, and cover."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "Steam over high heat, shaking the pot, for about 4–6 minutes, until they open."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "The juices make the sauce, finished with butter or cream and parsley. Pour the last of the broth carefully: any sand settles at the bottom."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Allergens.* Molluscs and crustaceans are both EU allergen groups. Ask guests before serving them (`SA-ALLG`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Mussels (60 min).** Check, clean and steam 1–2 kg of mussels. Count the discarded ones before and after cooking."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** shells tightly closed, or closing when tapped, before cooking; open and plump after a few minutes' steaming; a broth that tastes of the sea, not of sand."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "A bowl of dead mussels",
+         "Mussels stored in water or a sealed bag",
+         "A bowl under a damp cloth, in the fridge"
+        ],
+        [
+         "A food-poisoning risk",
+         "Cooking dead or cracked mussels",
+         "Check and tap; discard"
+        ],
+        [
+         "Small, rubbery mussels",
+         "Overcooking until they shrink",
+         "Lift them out as they open"
+        ],
+        [
+         "A guest's reaction",
+         "Not asking about shellfish allergies",
+         "Ask before the meal"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** this lesson is the safety rule: live, checked mussels only; stored at 4 °C under a damp cloth; the closed ones after cooking discarded; guests asked about allergies (assessment §9, `SA-ALLG`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the counts of discards, before and after."
+      }
+     ]
+    },
+    {
+     "id": "FSH-2.M4.L2",
+     "title": "Shrimp and prawns",
+     "prerequisites": [
+      "STK-2.M2.L4"
+     ],
+     "competencies": [
+      {
+       "id": "TS-PRO",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** prawns cook in two minutes and turn rubbery in three; Dutch grey shrimp are already cooked and need only your hands. Knowing which is which, and when to stop, is the whole skill."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** for session 1, 300 g of raw king prawns (ASC), 2 cloves of garlic, a pinch of chilli, oil, parsley, a small knife, the probe; for session 2, 250 g of unpeeled grey shrimp (*Hollandse garnalen*), and the ingredients for the dish you choose (bread and butter; or tomatoes, mayonnaise and chives)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*What is sold:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**North Sea grey shrimp (*Hollandse garnalen*)** are cooked on board and sold cooked, peeled or unpeeled. They need only peeling and no further cooking. They are ready-to-eat food: kept in the fridge at 4 °C and used by their date;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**raw king prawns** are usually imported and farmed; ASC-labelled ones are the better choice."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Preparing raw prawns:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "peel them, leaving the tail on or not;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "devein: cut a shallow slit along the back and lift out the dark intestine;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "keep the shells and heads for a quick shellfish stock (`STK-2.M2.L4`)."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Cooking fast.* Prawns are done in 1–3 minutes, depending on size. Cues:"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "they turn from grey and translucent to pink and opaque;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "they curl into a loose \"C\"; a tight \"O\" means overcooked;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "large ones reach 63 °C at the thickest part (§9), probed with a thin probe."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Methods:* a hot pan with garlic and chilli; the grill; poached in a sauce at the end."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Peeling grey shrimp.* Hold the head and tail, bend the shrimp, twist and pull the tail, then pinch the body out of the shell. Slow at first; quick after twenty."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Peel, devein and pan-fry (40 min).** King prawns with garlic and chilli. Predict and probe two of the largest. Shells into the freezer for stock."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Grey shrimp (40 min).** Peel cooked grey shrimp by hand, and use them in a classic dish: shrimp on buttered toast, or a stuffed tomato with a little mayonnaise in summer."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** a \"C\" shape, pink and opaque, still juicy; the intestine removed in one piece."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Tough \"O\"-shaped prawns",
+         "Overcooked, rubbery prawns",
+         "Off the heat at the \"C\""
+        ],
+        [
+         "Dry, shrunken shrimp",
+         "Cooking grey shrimp a second time",
+         "They are already cooked"
+        ],
+        [
+         "A lost stock",
+         "Throwing the shells away",
+         "Freeze them for stock"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** raw prawns follow the raw station and reach 63 °C (assessment §9); cooked grey shrimp are ready-to-eat and are kept apart from the raw prawns. Shellfish are allergens: ask first (`SA-ALLG`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the prediction entries and a photo of the dish."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "FSH-2.M4.X1",
+     "title": "*Moules marinières*",
+     "description": "Mussels steamed with white wine and herbs (*moules marinières*).",
+     "competencies": [
+      {
+       "id": "IN-FSH",
+       "level": 3
+      },
+      {
+       "id": "SA-HYG",
+       "level": 4
+      },
+      {
+       "id": "TS-PRO",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** buy, check, clean and steam live mussels safely, and serve them after a starter of prawns cooked to a precise doneness. Buy the mussels from a fishmonger or supermarket in season (Zeeland, roughly July to April), and photograph their freshness and liveness. Film the check and the cleaning. Ask the guests about shellfish allergies beforehand."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** for 4: 2 kg of mussels; shallots, garlic, white wine, butter, parsley; 300 g of raw king prawns (ASC); bread, or chips from `HEA-2`; the pot; the raw board; the probe; the phone stand."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Framework:** mussels and prawns."
+      },
+      {
+       "type": "table",
+       "header": [
+        "Part",
+        "What it is",
+        "Your decisions"
+       ],
+       "rows": [
+        [
+         "Allergies",
+         "Every guest asked beforehand",
+         "—"
+        ],
+        [
+         "Storage",
+         "Fridge at 4 °C, bowl, damp cloth; cooked on the day",
+         "—"
+        ],
+        [
+         "Check",
+         "Cracked ones and open ones that don't close when tapped, discarded and counted",
+         "—"
+        ],
+        [
+         "Clean",
+         "Rinsed, debearded, barnacles scraped",
+         "—"
+        ],
+        [
+         "Steam",
+         "Aromatics, wine, mussels, covered, high heat, 4–6 minutes; closed ones discarded",
+         "The aromatics and the finish"
+        ],
+        [
+         "Starter",
+         "Prawns peeled, deveined, pan-fried; two probed to 63 °C",
+         "The flavouring"
+        ],
+        [
+         "Hygiene",
+         "Raw shellfish apart from the bread and cooked food; clean-down",
+         "—"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Procedure:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "Ask about allergies."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "Buy and store the mussels correctly."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "Film the check and the cleaning."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "Count and discard dead or cracked ones."
+        },
+        {
+         "level": 0,
+         "marker": "5.",
+         "text": "Steam the mussels."
+        },
+        {
+         "level": 0,
+         "marker": "6.",
+         "text": "Discard any that stay shut."
+        },
+        {
+         "level": 0,
+         "marker": "7.",
+         "text": "Pan-fry the prawns, predicting and then probing two."
+        },
+        {
+         "level": 0,
+         "marker": "8.",
+         "text": "Photograph the open pot and the prawns."
+        },
+        {
+         "level": 0,
+         "marker": "9.",
+         "text": "Freeze the shells."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`IN-FSH` level 3, the bivalve part:** mussels bought and judged with photos, checked and handled safely as live shellfish, and steamed; the safety items of this check correct. With `FSH-2.M1.X1`, the row is complete."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`SA-HYG` level 4, the shellfish part:** the check and cleaning filmed, with dead and cracked mussels discarded, the raw shellfish kept apart from the cooked food and the bread, and a clean-down."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`TS-PRO` level 3, the shellfish part:** prawns at 63 °C or a little above at the thickest part, opaque and in a loose \"C\"."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 1.25 h."
+      }
+     ]
+    }
+   ],
+   "items": [
+    {
+     "id": "FSH-2.M4.Q1",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "FSH-2.M4.L1",
+     "safety": true,
+     "question": "How do you store live mussels until dinner?",
+     "options": [
+      {
+       "key": "A",
+       "text": "in a bowl of tap water"
+      },
+      {
+       "key": "B",
+       "text": "in the fridge in a bowl covered with a damp cloth"
+      },
+      {
+       "key": "C",
+       "text": "in a sealed plastic bag"
+      },
+      {
+       "key": "D",
+       "text": "on the counter"
+      }
+     ],
+     "answer": "B",
+     "why": "They must stay cold and able to breathe."
+    },
+    {
+     "id": "FSH-2.M4.Q2",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "FSH-2.M4.L1",
+     "safety": true,
+     "question": "An open mussel doesn't close when tapped. What do you do?",
+     "options": [
+      {
+       "key": "A",
+       "text": "cook it anyway"
+      },
+      {
+       "key": "B",
+       "text": "throw it away: it is dead"
+      },
+      {
+       "key": "C",
+       "text": "soak it"
+      },
+      {
+       "key": "D",
+       "text": "cook it longer"
+      }
+     ],
+     "answer": "B",
+     "why": "Only live mussels are cooked."
+    },
+    {
+     "id": "FSH-2.M4.Q3",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "FSH-2.M4.L1",
+     "safety": true,
+     "question": "After steaming, a few mussels stay firmly shut. What do you do?",
+     "options": [
+      {
+       "key": "A",
+       "text": "force them open and eat them"
+      },
+      {
+       "key": "B",
+       "text": "discard them"
+      },
+      {
+       "key": "C",
+       "text": "steam them for 10 more minutes"
+      },
+      {
+       "key": "D",
+       "text": "serve them separately"
+      }
+     ],
+     "answer": "B",
+     "why": "The conservative rule: a shell that stays shut may have held a dead mussel or mud, and is not worth the risk."
+    },
+    {
+     "id": "FSH-2.M4.Q4",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "FSH-2.M4.L1",
+     "safety": true,
+     "question": "Before serving mussels and prawns to guests, what do you ask?",
+     "options": [
+      {
+       "key": "A",
+       "text": "nothing"
+      },
+      {
+       "key": "B",
+       "text": "whether anyone is allergic to molluscs or crustaceans"
+      },
+      {
+       "key": "C",
+       "text": "whether they like garlic"
+      },
+      {
+       "key": "D",
+       "text": "whether they want bread"
+      }
+     ],
+     "answer": "B",
+     "why": "Both are EU allergen groups."
+    },
+    {
+     "id": "FSH-2.M4.Q5",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "FSH-2.M4.L1",
+     "safety": false,
+     "question": "Which way do you pull off a mussel's beard?",
+     "options": [
+      {
+       "key": "A",
+       "text": "towards the open end"
+      },
+      {
+       "key": "B",
+       "text": "towards the hinge"
+      },
+      {
+       "key": "C",
+       "text": "it is left on"
+      },
+      {
+       "key": "D",
+       "text": "with a knife only"
+      }
+     ],
+     "answer": "B",
+     "why": "Pulling towards the hinge doesn't tear the mussel."
+    },
+    {
+     "id": "FSH-2.M4.Q6",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "FSH-2.M4.L1",
+     "safety": false,
+     "question": "How long do mussels steam over high heat?",
+     "options": [
+      {
+       "key": "A",
+       "text": "30 seconds"
+      },
+      {
+       "key": "B",
+       "text": "about 4–6 minutes, until they open"
+      },
+      {
+       "key": "C",
+       "text": "20 minutes"
+      },
+      {
+       "key": "D",
+       "text": "an hour"
+      }
+     ],
+     "answer": "B",
+     "why": "They open when cooked; longer shrinks them."
+    },
+    {
+     "id": "FSH-2.M4.Q7",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "FSH-2.M4.L1",
+     "safety": false,
+     "question": "Why is a closed plastic bag the wrong way to keep mussels?",
+     "options": [
+      {
+       "key": "A",
+       "text": "it leaks"
+      },
+      {
+       "key": "B",
+       "text": "they suffocate and die"
+      },
+      {
+       "key": "C",
+       "text": "it is too cold"
+      },
+      {
+       "key": "D",
+       "text": "it smells"
+      }
+     ],
+     "answer": "B",
+     "why": "Live shellfish need air."
+    },
+    {
+     "id": "FSH-2.M4.Q8",
+     "type": "IMAGE_IDENTIFICATION",
+     "lessonId": "FSH-2.M4.L1",
+     "safety": false,
+     "question": "Image: four mussels before cooking: one tightly closed, one gaping open, one with a cracked shell, one slightly open. Which can be cooked?",
+     "options": [],
+     "answer": "The tightly closed one, and the slightly open one if it closes when tapped; the gaping one (if it doesn't close) and the cracked one are discarded.",
+     "why": "The live check from a photo."
+    }
+   ]
+  },
+  {
+   "id": "FSH-2.M5",
+   "title": "A fish plate",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** none for this module: it has no [K] or [J] objective. `CR-COMP` level 1 is checked by the items of `POU-2.M4`."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "FSH-2.M5.L1",
+     "title": "Composing a fish plate",
+     "prerequisites": [
+      "SAU-2.M5.L2"
+     ],
+     "competencies": [
+      {
+       "id": "CR-COMP",
+       "level": 1
+      },
+      {
+       "id": "TS-PLT",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** a fish plate has the least margin of any plate: the fish is ready a minute before it is overcooked, the skin goes soft under sauce, and a cold plate kills it. Composing it well is mostly a matter of order."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** for two plates of two portions each: a lean fish (plaice, whiting or coley) and an oily fish (mackerel or herring); the ingredients for a *beurre blanc* (`SAU-2.M5.L2`) and leeks; a mustard or horseradish sauce and a salad; warm plates; a cloth for the rims; the probe; the phone."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Fish with a suitable sauce* (`SAU-2`):"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "***beurre blanc*** or a herb *velouté* for lean, delicate fish;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**a sharp mustard or horseradish sauce,** or a vinaigrette, for oily fish;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**a *beurre noisette*** for a pan-fried fillet."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*A vegetable* in season, for colour and texture:"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "leeks or spinach in winter;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "samphire, green beans or new potatoes in summer."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Plating* (`TS-PLT` level 2):"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "a clear focal point: the fish, skin up when it is crisp;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "a sensible portion of 120–150 g;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "the sauce under or beside the fish, never over crisp skin;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "a clean rim, wiped before the plate leaves the kitchen."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Timing.* Fish waits for nothing. The sauce is made and held (`SAU-2.M5`), the vegetables are cooked and kept warm, the plates are warming, and the fish is cooked last. Write the order before you start:"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Order",
+        "Task"
+       ],
+       "rows": [
+        [
+         "1",
+         "Plates into a low oven or under hot water"
+        ],
+        [
+         "2",
+         "The sauce, made and held"
+        ],
+        [
+         "3",
+         "The vegetables, cooked and kept warm"
+        ],
+        [
+         "4",
+         "The fish, cooked and probed"
+        ],
+        [
+         "5",
+         "Plate, wipe the rims, serve"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Two fish plates (60 min).** One lean fish with *beurre blanc* and leeks; one oily fish with a sharp sauce and a salad. Photograph and compare them."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** the eye going first to the fish; crisp skin staying crisp; a clean rim; the fish hot."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Soggy skin",
+         "Sauce over the skin",
+         "Sauce under or beside"
+        ],
+        [
+         "A lukewarm fish",
+         "A cold plate",
+         "Warm the plates"
+        ],
+        [
+         "Dry, tepid fish",
+         "Fish cooked first and left waiting",
+         "Fish last"
+        ],
+        [
+         "A beige plate",
+         "A pale, colourless plate",
+         "A green vegetable; herbs"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** the fish at or above 63 °C, probed (assessment §9)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the two plate photos and a line comparing them."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "FSH-2.M5.X1",
+     "title": "A fish main for two",
+     "description": "\"A fish main for two\": brief with constraints and criteria.",
+     "competencies": [
+      {
+       "id": "TS-PLT",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** compose and plate a fish main course from a brief."
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**The brief:** \"a fish main for two, for a weeknight dinner\"."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**The constraints:** an MSC or seasonal North Sea fish; a sauce from `SAU-2`; a vegetable in season; a budget of about €15; 45 minutes."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**The criteria:** the fish at 63 °C; a clear focal point; the sauce at the right consistency; a clean rim; the plates hot."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**The record:** write the plan and the timing, with the fish last; cook and plate; photograph both plates from above and at 45°; collect the household's cards, and taste the sauce on the form."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** for 2: 2 fish portions, the sauce ingredients and a seasonal vegetable, within the budget; a pan or a steamer, by your plan; the probe; warm plates; a cloth for the rims; the tasting form; the phone; the household cards."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:** `TS-PLT` level 2, with these plates and the three of `MEA-2.M4.X1`: plates with a clear focal point, a sensible portion and clean rims, photographed."
+      },
+      {
+       "type": "paragraph",
+       "text": "AI review scores the plate photos: a clear focal point, a sensible portion, a clean rim. *Competent* is a fish portion with crisp skin up, the sauce beside it at *nappe*, a vegetable for colour and a clean rim; *not yet* is sauce over the skin, a flooded plate, or smears on the rim."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 45 min."
+      }
+     ]
+    }
+   ],
+   "items": []
+  }
+ ]
+}

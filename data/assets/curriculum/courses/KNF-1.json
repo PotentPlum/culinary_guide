@@ -1,0 +1,3191 @@
+{
+ "schemaVersion": 1,
+ "id": "KNF-1",
+ "introduction": [
+  {
+   "type": "paragraph",
+   "text": "**Before you start.** Almost every savoury dish starts on the board, and how it is cut decides how it cooks: uneven dice brown at the edges and stay raw in the centre, a bruised herb darkens, a slipped knife ends the session. This course builds the knife work every later course assumes: a safe grip and a stable board, the basic motions, the onions, garlic and herbs that start most dishes, the classical cuts to stated sizes, awkward vegetables broken down safely, and the first timed drills."
+  },
+  {
+   "type": "paragraph",
+   "text": "The order is deliberate: **safety, then accuracy, then speed.** Speed built on a poor grip or on ragged cuts has to be unlearned later."
+  },
+  {
+   "type": "paragraph",
+   "text": "*The sizes* (the program's tolerances, TS):"
+  },
+  {
+   "type": "table",
+   "header": [
+    "Cut",
+    "Size"
+   ],
+   "rows": [
+    [
+     "*Julienne*",
+     "2–3 mm thick, 5–6 cm long"
+    ],
+    [
+     "*Bâtonnet*",
+     "5–7 mm square, 5–6 cm long"
+    ],
+    [
+     "*Brunoise*",
+     "2–3 mm cubes"
+    ],
+    [
+     "Small dice (*macédoine*)",
+     "5–7 mm cubes"
+    ],
+    [
+     "Medium dice",
+     "about 12 mm cubes"
+    ],
+    [
+     "Large dice",
+     "about 20 mm cubes"
+    ],
+    [
+     "*Paysanne*",
+     "10–12 mm squares or triangles, 2–3 mm thick"
+    ]
+   ]
+  },
+  {
+   "type": "paragraph",
+   "text": "\"8 of 10\" means 8 of 10 pieces picked at random fall within the range."
+  },
+  {
+   "type": "paragraph",
+   "text": "Plan about four weeks of active work. The timed drills of module 5 then run weekly for about 8 weeks, alongside the other courses. Drill vegetables become soups, stocks and side dishes, so most sessions are also a meal."
+  },
+  {
+   "type": "paragraph",
+   "text": "**Have ready:** the chef's knife and paring knife, honed (`EQP-1.M3.L2`); the large board; a damp tea towel or a non-slip mat; the grid board or a ruler (`ORI-1`); a sharp peeler; a timer; a phone stand (a stack of books works); a trim bowl and a waste bowl; the fire blanket within reach (`SAF-1.M4.L2`)."
+  }
+ ],
+ "modules": [
+  {
+   "id": "KNF-1.M1",
+   "title": "Safety, grip and board",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** the 8 items of `KNF-1.M1` in the course file, 6 of them safety items. Pass mark 80 %, with every safety item correct."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "KNF-1.M1.L1",
+     "title": "Grip, claw and a stable board",
+     "prerequisites": [
+      "SAF-1.M4.L2",
+      "EQP-1.M3.L2"
+     ],
+     "competencies": [
+      {
+       "id": "TS-KNF",
+       "level": 1
+      },
+      {
+       "id": "SA-PHYS",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** the grip and the guiding hand are the whole of knife safety. With them, the blade can't reach your fingertips; without them, speed only makes cuts more likely. Everything in this course, and every milestone after it, starts from what you learn here."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** the chef's knife, honed; the board on a damp towel; 1 cucumber (or a courgette); 2 carrots; a phone on a stand to film from the side."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*The pinch grip.* Pinch the blade just in front of the bolster between your thumb and the side of your bent index finger; wrap the other three fingers around the handle. This gives you control over the angle and the edge. Holding the handle alone lets the blade wobble, and putting the index finger on the spine pushes the edge off line."
+      },
+      {
+       "type": "paragraph",
+       "text": "*The claw.* The guiding hand holds the food. Curl the fingertips back, so the middle knuckles are forward and touch the flat of the blade; tuck the thumb behind the fingers. The blade can only touch knuckles, and it rides up and down along them. As you cut, the claw walks back along the food in small steps, and the knife follows."
+      },
+      {
+       "type": "paragraph",
+       "text": "*A stable board.* A damp towel or a non-slip mat underneath, so it can't slide; the board at a comfortable height; and nothing round left to roll. Cut a thin slice off a round vegetable first, and lay it on that flat side."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Why cuts happen.*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "A dull knife needs force, and it slips off the skin."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "Fingertips forward, in the path of the blade."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "A board that slides."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "Rushing."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "A round vegetable that rolls."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "Every one of them is fixed by a habit you can practise."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Grip and claw (45 min).** Set up the board on the damp towel. Take the pinch grip. Cut a thin slice off the cucumber to make a flat side, lay it down, and cut slow, even slices with the claw, the knuckles touching the blade. Film 30 seconds from the side."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Repeat the next day (45 min)** on a carrot: flat side first, then slices. Watch yesterday's video against the cues below, choose one thing to correct, and film again."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** knuckles touching the blade; fingertips out of sight from above; the board doesn't move when you push it."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "The edge wanders off line",
+         "The index finger on the spine",
+         "Pinch the blade in front of the bolster"
+        ],
+        [
+         "A nick on a fingertip",
+         "Fingertips flat, in front of the knuckles",
+         "Curl them back; the knuckles lead"
+        ],
+        [
+         "The thumb close to the blade",
+         "The thumb sticking out",
+         "Tuck it behind the fingers"
+        ],
+        [
+         "The board shifts mid-cut",
+         "The board on a wet counter without a towel",
+         "A damp towel or a mat, every time"
+        ],
+        [
+         "The carrot rolls",
+         "Cutting a whole round carrot without a flat side",
+         "Slice off a flat side and lay it on it"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** this lesson is the first rule of knife safety. A cut that bleeds is pressed with a clean cloth and covered; a deep cut, or one that won't stop bleeding, needs medical help (`SAF-1.M4.L2`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** both videos, and the one thing you corrected."
+      }
+     ]
+    },
+    {
+     "id": "KNF-1.M1.L2",
+     "title": "The basic motions",
+     "prerequisites": [
+      "KNF-1.M1.L1"
+     ],
+     "competencies": [
+      {
+       "id": "TS-KNF",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** there are four ways to move a knife through food, and each suits a different food. The right motion lets the edge do the work, so you cut cleanly, quietly and without force. This lesson also gives you your first measured cuts."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** the chef's knife; the board on a towel; 1 cucumber; 4 carrots; a ripe tomato; a bunch of parsley; the grid board or a ruler."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*The rocking motion.* The tip stays on the board; the heel rises and falls while the guiding hand (flat on the spine near the tip, or the claw) moves the food under it. For herbs and fine chopping."
+      },
+      {
+       "type": "paragraph",
+       "text": "*The push cut.* Forward and down through the food in one movement, using the whole edge, the tip finishing on the board. For most vegetables: carrots, onions, celeriac."
+      },
+      {
+       "type": "paragraph",
+       "text": "*The pull cut.* Back and down, often with the tip. For fine slicing, and for the vertical cuts in an onion."
+      },
+      {
+       "type": "paragraph",
+       "text": "*The slicing cut.* A long draw along the edge with very little downward pressure. For tomatoes, cooked meat, and bread with the serrated knife."
+      },
+      {
+       "type": "paragraph",
+       "text": "*The motion follows the food.* Firm, round produce gets a push cut on a flat side. Soft skins (tomato, plum) get a long draw, never a press: pressing squashes the flesh before the skin gives."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Rhythm.* Start slowly and evenly; speed comes later, from rhythm, not from force. A sharp knife used well makes a quiet, regular sound."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Motion drills (45 min).** Each motion slowly, then at an even rhythm: rocking on the parsley; push cuts on cucumber and carrot slices; pull cuts on half a cucumber; long slicing draws on the tomato."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Slices, sticks and dice (45 min).** With the push cut, cut carrot into even slices, then sticks, then dice. Measure 10 sticks against the julienne range (2–3 mm) and 10 dice against the small-dice range (5–7 mm), and write down how many were within range."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** a quiet, rhythmic sound; the knife doing the work; slices of even thickness."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Loud chopping, crushed pieces",
+         "Chopping straight down with force",
+         "Push forward and down; let the edge cut"
+        ],
+        [
+         "Ragged surfaces",
+         "Sawing back and forth",
+         "One long stroke per cut"
+        ],
+        [
+         "Tired arm, uneven slices",
+         "Lifting the whole knife high off the board",
+         "Keep the tip near or on the board"
+        ],
+        [
+         "A flattened tomato",
+         "Pressing instead of drawing",
+         "A long slicing draw, light pressure"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** the claw of `KNF-1.M1.L1` stays on for every motion; with the rocking motion, the guiding hand stays flat on the spine or in the claw, never under the blade."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the counts within range for the sticks and the dice."
+      }
+     ]
+    },
+    {
+     "id": "KNF-1.M1.L3",
+     "title": "Posture and knife handling",
+     "prerequisites": [],
+     "competencies": [
+      {
+       "id": "SA-PHYS",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** most kitchen injuries don't happen during the cut: they happen while a knife is carried, passed, washed or dropped, or when a hot pan is moved. This lesson makes the area around your cutting work as safe as the cut itself."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** the board and knife; a pot with 2 litres of water; a dry tea towel or oven gloves; the fire blanket; a phone for a photo."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Posture.* Stand with your feet a little apart, square to the board. The board should be at hip height or a little above; if it is too low, stand it on a second board. Keep your cutting elbow free to move, not jammed against your side."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Handling knives.*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "Carry a knife with the point down, by your side."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "Pass it by laying it on the counter for the other person to pick up, never hand to hand."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "Never leave it in the washing-up water, where nobody can see it."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "Wash and dry it straight away, wiping from the spine."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "Store it in a block, on a magnetic strip, or with a blade guard; never loose in a drawer."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "Never leave it at the edge of the board, where it can be knocked off."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*A falling knife is never caught.* Step back and let it fall."
+      },
+      {
+       "type": "paragraph",
+       "text": "*The station around the cutting work.* Turn pan handles on the hob inwards, so they can't be knocked. Use a dry towel or oven gloves for hot handles: a wet towel passes the heat straight to your hand. Keep the fire blanket within reach (`SAF-1.M4.L2`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Station safety check (30 min).** Set up the board and the hob as for a meal. Bring the pot of water to the boil. Turn every pan handle inwards. Move the pot from the hob to the sink with a dry towel, walking a clear path. Pour the water away. Photograph the station, with the fire blanket in view."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** no knife ever loose in a sink; pan handles never over the edge of the hob."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "A near miss while talking",
+         "Gesturing with the knife",
+         "Put the knife down to talk"
+        ],
+        [
+         "A knife falls off the board",
+         "Leaving it at the edge of the board",
+         "Lay it flat, back from the edge, the edge facing away"
+        ],
+        [
+         "A scalded hand",
+         "A wet towel used as an oven glove",
+         "A dry towel or oven gloves"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** burns are cooled straight away under lukewarm, gently running tap water for 10 to 20 minutes (`SAF-1.M4.L2`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the station photo."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "KNF-1.M1.X1",
+     "title": "Motion drills with video review",
+     "description": "Motion drills on cucumber and carrot; a short video for AI review of the grip.",
+     "competencies": [
+      {
+       "id": "TS-KNF",
+       "level": 2
+      },
+      {
+       "id": "SA-PHYS",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** show a safe grip, the claw and the four motions on video, and measure your first cuts. No time limit."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** 2 cucumbers (or courgettes in summer); 1 kg of carrots; the grid board or a ruler; a phone on a stand; the pot and dry towel of `KNF-1.M1.L3`; the fire blanket."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Recipe:** the drill sequence and the video set-up."
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Set up the camera** at the side of the board, at board height, so the guiding hand and the blade are both in view."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Film 60 seconds of each motion:** rocking (parsley or the cucumber skin), push cut (carrot slices), pull cut (cucumber), slicing (cucumber in long draws)."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "**Cut and measure.** Cut 10 small dice (5–7 mm) and 10 julienne (2–3 mm × 5–6 cm) from carrot. Photograph them on the grid and count how many of each are within range."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "**Move hot water.** Film yourself moving a pot of hot water from the hob to the sink with a dry towel, the handles of the other pans turned in."
+        },
+        {
+         "level": 0,
+         "marker": "5.",
+         "text": "**Photograph the station** with the fire blanket in view."
+        },
+        {
+         "level": 0,
+         "marker": "6.",
+         "text": "**Cook.** The cut vegetables go into a soup."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "for `TS-KNF` level 2: the claw and a stable board on video, and 6 of 10 small dice and julienne within range;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "for `SA-PHYS` level 3: a safe grip, handles turned in, a dry towel, and the fire blanket within reach."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "AI review scores the grip, the claw and the motion. *Competent*: a side view with tucked fingertips, knuckles against the blade, and the tip on the board while rocking. *Not yet*: flat fingertips, a finger on the spine, chopping from height."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 1 h."
+      }
+     ]
+    }
+   ],
+   "items": [
+    {
+     "id": "KNF-1.M1.Q1",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "KNF-1.M1.L1",
+     "safety": true,
+     "question": "In the claw grip, what touches the side of the blade?",
+     "options": [
+      {
+       "key": "A",
+       "text": "the fingertips"
+      },
+      {
+       "key": "B",
+       "text": "the knuckles, with fingertips tucked back"
+      },
+      {
+       "key": "C",
+       "text": "the thumb"
+      },
+      {
+       "key": "D",
+       "text": "nothing"
+      }
+     ],
+     "answer": "B",
+     "why": "Tucked fingertips are out of the blade's path."
+    },
+    {
+     "id": "KNF-1.M1.Q2",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "KNF-1.M1.L1",
+     "safety": true,
+     "question": "Why does the board stand on a damp towel?",
+     "options": [
+      {
+       "key": "A",
+       "text": "hygiene"
+      },
+      {
+       "key": "B",
+       "text": "so it cannot slide"
+      },
+      {
+       "key": "C",
+       "text": "to dry the knife"
+      },
+      {
+       "key": "D",
+       "text": "to protect the counter"
+      }
+     ],
+     "answer": "B",
+     "why": "A sliding board is a common cause of cuts."
+    },
+    {
+     "id": "KNF-1.M1.Q3",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "KNF-1.M1.L1",
+     "safety": true,
+     "question": "Which knife is more likely to cut you?",
+     "options": [
+      {
+       "key": "A",
+       "text": "a sharp knife"
+      },
+      {
+       "key": "B",
+       "text": "a dull knife, because it needs force and slips"
+      },
+      {
+       "key": "C",
+       "text": "a short knife"
+      },
+      {
+       "key": "D",
+       "text": "a heavy knife"
+      }
+     ],
+     "answer": "B",
+     "why": "Force and slipping cause injuries."
+    },
+    {
+     "id": "KNF-1.M1.Q4",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "KNF-1.M1.L1",
+     "safety": true,
+     "question": "How do you start cutting a whole carrot safely?",
+     "options": [
+      {
+       "key": "A",
+       "text": "hold it upright"
+      },
+      {
+       "key": "B",
+       "text": "cut a flat side, lay it on that side, then cut"
+      },
+      {
+       "key": "C",
+       "text": "roll it as you cut"
+      },
+      {
+       "key": "D",
+       "text": "cut it in the air"
+      }
+     ],
+     "answer": "B",
+     "why": "A round vegetable rolls; a flat side keeps it still."
+    },
+    {
+     "id": "KNF-1.M1.Q5",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "KNF-1.M1.L2",
+     "safety": false,
+     "question": "Which motion keeps the tip on the board while the heel rises and falls?",
+     "options": [
+      {
+       "key": "A",
+       "text": "push cut"
+      },
+      {
+       "key": "B",
+       "text": "pull cut"
+      },
+      {
+       "key": "C",
+       "text": "rocking"
+      },
+      {
+       "key": "D",
+       "text": "slicing"
+      }
+     ],
+     "answer": "C",
+     "why": "Rocking is used for herbs and fine chopping."
+    },
+    {
+     "id": "KNF-1.M1.Q6",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "KNF-1.M1.L2",
+     "safety": false,
+     "question": "Which motion suits a ripe tomato?",
+     "options": [
+      {
+       "key": "A",
+       "text": "a hard chop"
+      },
+      {
+       "key": "B",
+       "text": "a long slicing draw with a sharp blade"
+      },
+      {
+       "key": "C",
+       "text": "pressing down"
+      },
+      {
+       "key": "D",
+       "text": "a rocking motion"
+      }
+     ],
+     "answer": "B",
+     "why": "Pressure squashes the soft flesh; a long draw cuts the skin."
+    },
+    {
+     "id": "KNF-1.M1.Q7",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "KNF-1.M1.L3",
+     "safety": true,
+     "question": "How do you hand a knife to someone?",
+     "options": [
+      {
+       "key": "A",
+       "text": "blade first"
+      },
+      {
+       "key": "B",
+       "text": "handle first, quickly"
+      },
+      {
+       "key": "C",
+       "text": "lay it on the counter for them to pick up"
+      },
+      {
+       "key": "D",
+       "text": "toss it gently"
+      }
+     ],
+     "answer": "C",
+     "why": "No two hands on one knife."
+    },
+    {
+     "id": "KNF-1.M1.Q8",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "KNF-1.M1.L3",
+     "safety": true,
+     "question": "A knife slips off the counter. What do you do?",
+     "options": [
+      {
+       "key": "A",
+       "text": "catch it"
+      },
+      {
+       "key": "B",
+       "text": "step back and let it fall"
+      },
+      {
+       "key": "C",
+       "text": "kick it away"
+      },
+      {
+       "key": "D",
+       "text": "grab the handle"
+      }
+     ],
+     "answer": "B",
+     "why": "Catching a falling knife is a classic injury."
+    }
+   ]
+  },
+  {
+   "id": "KNF-1.M2",
+   "title": "Alliums, garlic and herbs",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** the 8 items of `KNF-1.M2` in the course file. Pass mark 80 %."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "KNF-1.M2.L1",
+     "title": "Onions",
+     "prerequisites": [
+      "KNF-1.M1.L2"
+     ],
+     "competencies": [
+      {
+       "id": "TS-KNF",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** the onion is the most cut vegetable in the kitchen. The professional dice is fast, even and keeps your eyes dry; it is the first cut timed in module 5 and at `MS-S1`."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** 10 onions over two sessions; the chef's knife, honed; the grid board; a pan and a little oil for the comparison; containers for the cut onion (it keeps covered in the fridge for a day or two and goes into meals)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*The professional dice.*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "Cut off the stem end. Halve the onion through the root."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "Peel each half, keeping the root on: it holds the layers together until the last cut."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "Lay the half flat. Optional: one or two horizontal cuts towards the root, parallel to the board. Fewer than people think: the layers already separate the onion."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "Vertical cuts from the root towards the stem end, with the tip, not quite through the root, at the width of the dice you want."
+        },
+        {
+         "level": 0,
+         "marker": "5.",
+         "text": "Cross-cuts at the same width, the claw walking back towards the root."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "The dice falls apart evenly at the last cut. The root end goes into the trim bowl for stock."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Three sizes and their uses.*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "Fine (*brunoise*, 2–3 mm): sauces and dressings, where the onion should almost disappear."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "Small (5–7 mm): soffritto, stews, soups."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "Medium (about 12 mm): roasting and rustic dishes."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Slices.* Cut along the grain (root to stem) and the slices hold their shape when cooked; across the grain they soften and collapse faster."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Why onions sting.* Cutting breaks cells, and enzymes turn sulphur compounds into a volatile irritant that reaches your eyes. Less of it forms when fewer cells are crushed (a sharp knife), and less escapes from a cold onion. It is most concentrated at the root end, so the root is cut last, or not at all."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Fine and small dice (60 min).** Five onions: some in fine dice, some in small dice. Measure three samples on the grid."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Medium dice and slices (60 min).** Five onions in medium dice and in slices, along and across the grain. Sweat one portion of each kind of slice gently in a little oil for 10 minutes and compare how they hold their shape."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** dice falling apart evenly at the last cut; no long strips; dry eyes with a sharp knife."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "The onion falls apart before you finish",
+         "Cutting the root off first",
+         "Keep the root on until the end"
+        ],
+        [
+         "The layers slide and the dice are uneven",
+         "Too many horizontal cuts",
+         "One or two, or none"
+        ],
+        [
+         "Watery, crushed dice and stinging eyes",
+         "A dull knife",
+         "Hone before you start; chill the onions"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** onions are slippery once peeled; lay each half on its flat side, and keep the claw."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the three grid photos and the shape comparison of the slices."
+      }
+     ]
+    },
+    {
+     "id": "KNF-1.M2.L2",
+     "title": "Garlic",
+     "prerequisites": [
+      "KNF-1.M1.L2"
+     ],
+     "competencies": [
+      {
+       "id": "TS-KNF",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** garlic changes character with the cut. Sliced it is sweet and mild; as a paste it is sharp and strong. Knowing which cut gives which taste, and how fast garlic burns, lets you use it on purpose."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** 1 head of garlic; the chef's knife; fine salt; a small pan; 60 ml olive or rapeseed oil; four small bowls; some bread."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Crushing.* Lay the clove under the flat of the blade and press down with the heel of your hand. The skin loosens and slips off, and the clove is bruised. Crushed whole cloves give a gentle flavour to oil or a braise and are often taken out."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Slicing.* Thin, even slices with the tip of the knife give mild, sweet garlic that browns evenly."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Mincing and paste.* Slice, then rock the knife through until fine: minced. For a paste, sprinkle a pinch of salt over the minced garlic and work it under the flat of the blade, pressing and dragging, until smooth. The salt grinds the garlic. The more cells are broken, the more of the pungent compounds form, so a paste is the strongest of the four."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Heat changes it.* Small pieces of garlic burn and turn bitter within seconds in hot fat. So minced garlic goes in late, after the onion has softened, or into warm fat, not smoking fat. Slices tolerate a little more."
+      },
+      {
+       "type": "paragraph",
+       "text": "*A garlic press* makes something close to a paste. It is fine for some dishes, but it can't slice, and it makes every dish taste of strong garlic."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Four ways (45 min).** Prepare one portion of garlic each way: crushed, sliced, minced, paste. Warm each gently in 15 ml oil in the small pan until it just smells cooked, about a minute, and tip it into its bowl. Taste each on bread, and write down how they differ."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** slices of even thickness; a smooth paste with no lumps; the four tastes clearly different."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Bitter, dark garlic",
+         "Minced garlic added with the onions at high heat",
+         "Add it once the onion is soft, for the last minute"
+        ],
+        [
+         "Every dish tastes the same",
+         "A garlic press used for everything",
+         "Choose the cut for the dish"
+        ],
+        [
+         "A lumpy paste",
+         "Too little salt, or not enough pressing",
+         "A pinch more salt; press and drag with the flat of the blade"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** garlic in oil keeps only in the fridge (assessment §9, garlic or herbs in oil). Make it for the meal; keep any left over covered in the fridge and use it within the leftovers limit of 2 days, never at room temperature."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** your tasting notes on the four ways."
+      }
+     ]
+    },
+    {
+     "id": "KNF-1.M2.L3",
+     "title": "Herbs",
+     "prerequisites": [
+      "KNF-1.M1.L2"
+     ],
+     "competencies": [
+      {
+       "id": "TS-KNF",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** cut well, herbs stay bright and fragrant; cut badly, they turn dark and bitter on the board. This lesson teaches the difference between tender and woody herbs and the cuts for each."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** a bunch each of flat-leaf parsley and chives; basil in summer or sage in winter; a sprig of thyme or rosemary; a salad spinner or a clean towel; the chef's knife, honed; a timer."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Tender herbs* (parsley, basil, chervil, dill, chives, coriander) have soft leaves that bruise and darken when crushed. Cut them with a sharp knife, in as few strokes as you can, just before use."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Woody herbs* (thyme, rosemary, sage, savoury) have tough stems and sturdy leaves. Strip the leaves by running your fingers down the stem against the direction of growth, then chop them fine. They tolerate long cooking and go in early."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Dry first.* Wash herbs whole, then dry them thoroughly in a salad spinner or rolled in a towel. Wet herbs clump, stick to the knife and turn into paste."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Chopping.* Gather the leaves into a tight pile, slice through once, turn the pile, and rock through a few times. Stop when they are as fine as you need; every extra stroke bruises."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Chives* are cut into rounds: line them up in a bundle and slice across with a clean pull cut, not a rock."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Chiffonade* (fine ribbons): stack the leaves, roll them into a tight cigar, and slice across finely. For basil, sorrel and sage."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Chop and ribbon (45 min).** Wash and dry all the herbs. Chop the parsley fine; cut the chives into rounds; cut the basil or sage in chiffonade; strip and chop the thyme or rosemary. Set a timer for 10 minutes and photograph them on the board when it rings."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** bright green and dry on the board after 10 minutes; chives in clean rounds, not crushed."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Herbs clump and stick",
+         "Wet herbs",
+         "Spin or towel them dry first"
+        ],
+        [
+         "A dark green paste",
+         "Chopping over and over with a dull knife",
+         "Hone; fewer strokes"
+        ],
+        [
+         "Black basil at dinner",
+         "Cutting basil hours ahead",
+         "Cut it at the last minute"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** no special risks beyond the kitchen basics (`SAF-1`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the photo after 10 minutes, with a note on which herb kept its colour best."
+      }
+     ]
+    },
+    {
+     "id": "KNF-1.M2.L4",
+     "title": "Shallots and leeks",
+     "prerequisites": [
+      "KNF-1.M2.L1"
+     ],
+     "competencies": [
+      {
+       "id": "TS-KNF",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** shallots give the fine dice that classic sauces and dressings ask for, and leeks are one of the great Dutch winter vegetables. Both have a trick: the shallot's root, and the soil hidden between a leek's layers."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** 10 shallots; 3 leeks (autumn to spring); the grid board; a pan for soup with 1 litre of stock or water, 15 ml oil, a potato and salt; a container for the leek trim (it goes into stock)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Shallots* are diced like a small onion, and finer, for sauces and dressings: halve through the root, peel, make vertical cuts towards the root (a horizontal cut is rarely needed), then cross-cuts. The root holds the pieces until the last cut; cutting it off early is the main reason shallot dice come out uneven. Target: a fine dice of 2–3 mm."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Leeks* carry soil between their layers, because the soil is heaped up around them as they grow to keep them white."
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "Trim the root and the toughest dark green tops."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "Halve the leek lengthwise."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "Rinse each half under running water, fanning the layers open with your fingers, root end up, so the soil runs out."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "Then slice into half-moons, cut into a julienne (in 5–6 cm lengths, then lengthwise strips), or dice finely."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*The green tops* are full of flavour. Wash them and put them in the trim container for stock (`KM-WAST`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Shallots (60 min).** Ten shallots in fine dice. Measure 10 pieces on the grid. Keep the dice covered in the fridge for a dressing or sauce this week."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Leeks (60 min).** Clean the three leeks as above. Cut one into half-moons and one into julienne, and keep the third for practice of both. Make a soup: soften the leek in the oil for about 10 minutes, add a diced potato and the stock, simmer until the potato is tender, about 20 minutes, and season. Set the trim aside for stock."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** no grit in the soup; shallot dice 2–3 mm and even."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Gritty soup",
+         "Slicing the leeks before washing them",
+         "Halve and rinse first, then cut"
+        ],
+        [
+         "Half the leek in the bin",
+         "Discarding all the green",
+         "Keep the pale green for the dish and the dark green for stock"
+        ],
+        [
+         "Uneven shallot dice",
+         "The root was cut off",
+         "Keep the root on until the last cut"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** no special risks beyond the kitchen basics (`SAF-1`). Store the leek trim in the fridge and use it within 2 days, or freeze it."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the shallot grid photo and count, and a photo of the soup."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "KNF-1.M2.X1",
+     "title": "Three onion dice on the grid",
+     "description": "Three onion dice sizes, photographed on a grid.",
+     "competencies": [
+      {
+       "id": "TS-KNF",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** the three onion dice to size, measured. No time limit, but time each one: it is your baseline for module 5."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** 3 onions; the chef's knife, honed; the grid board; a timer; a phone for photos; a container for the cut onion, which goes into the soffritto of `KNF-1.M2.X2`."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Recipe:** the cut sequence and the sizes."
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "Set up the station. Hone the knife."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Onion 1, fine dice (2–3 mm).** Start the timer. Halve through the root, peel, make vertical cuts about 2–3 mm apart, one horizontal cut if the onion is large, then cross-cuts at the same width. Stop the timer."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "**Onion 2, small dice (5–7 mm).** The same sequence, cuts 5–7 mm apart. Time it."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "**Onion 3, medium dice (about 12 mm).** Cuts about 12 mm apart; no horizontal cut. Time it."
+        },
+        {
+         "level": 0,
+         "marker": "5.",
+         "text": "Photograph each dice on the grid board."
+        },
+        {
+         "level": 0,
+         "marker": "6.",
+         "text": "Pick 10 pieces of each at random (close your eyes, or take them from a spoonful) and measure them. Count how many are within range."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:** the three grid photos and the counts. 6 of 10 within range for each size meets `TS-KNF` level 2. AI review checks the size and the uniformity against the grid: *competent* is even cubes within range; *not yet* is strips and mixed sizes."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 30 min."
+      }
+     ]
+    },
+    {
+     "id": "KNF-1.M2.X2",
+     "title": "A soffritto-based soup",
+     "description": "A dish that uses all of them (e.g. a soffritto-based soup).",
+     "competencies": [
+      {
+       "id": "TS-KNF",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** use every cut of the module in one dish, and taste what even cuts do. You choose the vegetables by season."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** for 4: 2 onions (or the dice of `KNF-1.M2.X1`), 2 carrots, 2 celery sticks or a piece of celeriac, 2 cloves of garlic, 1 leek, 1 litre of stock or water, a tin of beans or 100 g of small pasta, a bunch of parsley; 30 ml oil; salt and pepper; a large pan."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Framework:** a soup in five parts."
+      },
+      {
+       "type": "table",
+       "header": [
+        "Part",
+        "What it is",
+        "Your decisions"
+       ],
+       "rows": [
+        [
+         "Soffritto",
+         "Onion, carrot and celery or celeriac in small dice, sweated slowly in oil until soft and sweet, without colour (about 10 minutes); garlic for the last minute",
+         "The size of the dice, and how long to sweat"
+        ],
+        [
+         "Liquid",
+         "Stock or water, about 1 litre for 4",
+         "Stock or water; how thick you want it"
+        ],
+        [
+         "Main vegetables",
+         "The leek, and a seasonal vegetable (cabbage or squash in winter, courgette or green beans in summer)",
+         "Which vegetables, which cut, and in what order they go in (the slowest first)"
+        ],
+        [
+         "Starch",
+         "Beans (drained) or small pasta, cooked in the soup until tender",
+         "Which one, and when"
+        ],
+        [
+         "Finish",
+         "Chopped parsley at the last minute; salt and pepper",
+         "How much, and whether a little oil or vinegar lifts it"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "Taste as you go: season lightly at the start and finally at the end."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:** a photo of the board of cut vegetables on the grid before cooking, and of the finished soup."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 1 h."
+      }
+     ]
+    }
+   ],
+   "items": [
+    {
+     "id": "KNF-1.M2.Q1",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "KNF-1.M2.L1",
+     "safety": false,
+     "question": "Why does cutting an onion make your eyes sting?",
+     "options": [
+      {
+       "key": "A",
+       "text": "the juice is acidic"
+      },
+      {
+       "key": "B",
+       "text": "broken cells release enzymes that form a volatile sulphur irritant"
+      },
+      {
+       "key": "C",
+       "text": "onion skin is irritating"
+      },
+      {
+       "key": "D",
+       "text": "the knife heats the onion"
+      }
+     ],
+     "answer": "B",
+     "why": "The irritant forms only when cells are broken."
+    },
+    {
+     "id": "KNF-1.M2.Q2",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "KNF-1.M2.L1",
+     "safety": false,
+     "question": "Which helps most against tears?",
+     "options": [
+      {
+       "key": "A",
+       "text": "a dull knife"
+      },
+      {
+       "key": "B",
+       "text": "a sharp knife, a chilled onion and the root cut last"
+      },
+      {
+       "key": "C",
+       "text": "cutting faster with force"
+      },
+      {
+       "key": "D",
+       "text": "breathing through the mouth only"
+      }
+     ],
+     "answer": "B",
+     "why": "Fewer crushed cells and a cold onion release less."
+    },
+    {
+     "id": "KNF-1.M2.Q3",
+     "type": "IMAGE_IDENTIFICATION",
+     "lessonId": "KNF-1.M2.L1",
+     "safety": false,
+     "question": "Three photos of onion dice on a 1 cm grid: (a) pieces of 2–3 mm, (b) pieces of 5–7 mm, (c) pieces of about 12 mm. Which is the small dice?",
+     "options": [],
+     "answer": "b",
+     "why": "Small dice is 5–7 mm; (a) is a brunoise, (c) a medium dice."
+    },
+    {
+     "id": "KNF-1.M2.Q4",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "KNF-1.M2.L2",
+     "safety": false,
+     "question": "Which garlic preparation gives the strongest, most pungent flavour?",
+     "options": [
+      {
+       "key": "A",
+       "text": "whole cloves"
+      },
+      {
+       "key": "B",
+       "text": "thin slices"
+      },
+      {
+       "key": "C",
+       "text": "a paste with salt"
+      },
+      {
+       "key": "D",
+       "text": "crushed and removed"
+      }
+     ],
+     "answer": "C",
+     "why": "The more cells are broken, the more pungent compounds form."
+    },
+    {
+     "id": "KNF-1.M2.Q5",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "KNF-1.M2.L2",
+     "safety": false,
+     "question": "Why is minced garlic added late to hot fat?",
+     "options": [
+      {
+       "key": "A",
+       "text": "it would fall apart"
+      },
+      {
+       "key": "B",
+       "text": "it burns and turns bitter within seconds"
+      },
+      {
+       "key": "C",
+       "text": "it loses its colour"
+      },
+      {
+       "key": "D",
+       "text": "it absorbs too much fat"
+      }
+     ],
+     "answer": "B",
+     "why": "Small pieces with a lot of sugar burn fast."
+    },
+    {
+     "id": "KNF-1.M2.Q6",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "KNF-1.M2.L3",
+     "safety": false,
+     "question": "Which is a woody herb?",
+     "options": [
+      {
+       "key": "A",
+       "text": "basil"
+      },
+      {
+       "key": "B",
+       "text": "chervil"
+      },
+      {
+       "key": "C",
+       "text": "rosemary"
+      },
+      {
+       "key": "D",
+       "text": "dill"
+      }
+     ],
+     "answer": "C",
+     "why": "Woody herbs are stripped and chopped and tolerate long cooking."
+    },
+    {
+     "id": "KNF-1.M2.Q7",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "KNF-1.M2.L3",
+     "safety": false,
+     "question": "How do you keep cut basil green?",
+     "options": [
+      {
+       "key": "A",
+       "text": "chop it finely for a long time"
+      },
+      {
+       "key": "B",
+       "text": "cut it dry, with a sharp knife, in few strokes, just before use"
+      },
+      {
+       "key": "C",
+       "text": "cut it in the morning for the evening"
+      },
+      {
+       "key": "D",
+       "text": "rinse it after cutting"
+      }
+     ],
+     "answer": "B",
+     "why": "Bruising and time darken tender herbs."
+    },
+    {
+     "id": "KNF-1.M2.Q8",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "KNF-1.M2.L4",
+     "safety": false,
+     "question": "How do you clean a leek?",
+     "options": [
+      {
+       "key": "A",
+       "text": "rinse the outside only"
+      },
+      {
+       "key": "B",
+       "text": "halve it lengthwise and rinse between the layers before slicing"
+      },
+      {
+       "key": "C",
+       "text": "soak it whole overnight"
+      },
+      {
+       "key": "D",
+       "text": "peel off half the layers"
+      }
+     ],
+     "answer": "B",
+     "why": "Soil sits between the layers."
+    }
+   ]
+  },
+  {
+   "id": "KNF-1.M3",
+   "title": "Classical cuts",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** the 8 items of `KNF-1.M3` in the course file. Pass mark 80 %."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "KNF-1.M3.L1",
+     "title": "Squaring off and planks",
+     "prerequisites": [
+      "KNF-1.M1.L2"
+     ],
+     "competencies": [
+      {
+       "id": "TS-KNF",
+       "level": 2
+      },
+      {
+       "id": "KM-WAST",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** every classical cut starts from a stable block cut into planks of one thickness. If the planks are even, the sticks and dice that follow will be too. And the trim from squaring off is food, not waste."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** 1 kg of carrots and 500 g of potatoes; the chef's knife and the peeler; the scale; a ruler; a trim bowl; a pan for stock or mash."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Squaring off.* Peel the vegetable. Cut a thin slice off one long side and lay the vegetable on it. Cut off the opposite side, then the two remaining sides, so you have a rectangular block with flat faces. Trim the ends square. For a carrot, cut it first into lengths of 5–6 cm, the length of a julienne or bâtonnet."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Planks.* Lay the block on a flat face and cut it lengthwise into planks of a set thickness: 2–3 mm for julienne and brunoise, 5–7 mm for bâtonnet and small dice. Keep the blade vertical: a tilted knife makes wedge-shaped planks, thick at one edge and thin at the other."
+      },
+      {
+       "type": "paragraph",
+       "text": "*The trade-off.* A perfect block wastes more. For classical cuts it is worth it; for a rustic stew it isn't. Choose how square to go for the dish."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Trim is planned, not wasted.* The rounded sides go into a trim bowl and from there into a stock, a purée, a soup or a mash, the same day or the next (`KM-WAST`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Weigh the trim.* The block weight against the starting weight is the yield of the cut (`WRK-1.M3.L3`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Planks (60 min).** Weigh the carrots and potatoes. Peel and square them off. Cut planks of 2–3 mm from some blocks and 5–7 mm from others; check them with the ruler. Weigh the blocks and the trim. Cook the potato trim into a mash and the carrot trim into a quick stock or a soup."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** planks of even thickness from end to end; a trim bowl with a use."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Planks thick at one edge",
+         "A tilted knife",
+         "Keep the blade vertical; check from the front"
+        ],
+        [
+         "Half the vegetable in the trim",
+         "Trimming too much",
+         "Take thin slices; a slightly rounded edge is fine for most dishes"
+        ],
+        [
+         "Trim in the bin",
+         "No plan for it",
+         "Decide the stock, purée or mash before you start"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** squaring off removes the rolling: always cut the first flat side, then work on it. Keep the claw on the narrow planks."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the starting, block and trim weights, the yield, and what the trim became."
+      }
+     ]
+    },
+    {
+     "id": "KNF-1.M3.L2",
+     "title": "*Bâtonnet* and *julienne*",
+     "prerequisites": [
+      "KNF-1.M3.L1"
+     ],
+     "competencies": [
+      {
+       "id": "TS-KNF",
+       "level": 2
+      },
+      {
+       "id": "CK-TERM",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** the stick cuts are the step between planks and dice, and garnishes in their own right. Getting the stick right is what makes the dice right."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** carrots, a piece of celeriac (or kohlrabi in summer) and a leek; the chef's knife; the grid board and ruler; for the second session, a dressing or a wok for a quick stir-fry."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*The sizes.*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "*Bâtonnet*: sticks 5–7 mm square and 5–6 cm long, cut from 5–7 mm planks."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "*Julienne*: sticks 2–3 mm thick and 5–6 cm long, cut from 2–3 mm planks."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Their uses.* Bâtonnet for crudités, for roasting and as the stick that small dice is cut from. Julienne for garnishes, salads, quick stir-fries, and as the stick for brunoise."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Stacking.* Lay two or three planks on top of each other and cut them into sticks together. It speeds the work, but only if the planks are even and the stack is low: a high stack slides, and the sticks come out uneven."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Leek julienne.* Cut a cleaned leek into 5–6 cm lengths, halve them, flatten the layers into a stack, and cut lengthwise into fine strips."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Bâtonnet (75 min).** Carrot and celeriac (or kohlrabi) into bâtonnet. Measure 10 sticks of each. Use them in a roast or as crudités."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Julienne (75 min).** Carrot and leek into julienne. Measure 10 sticks of the carrot. Use them in a salad with a simple dressing, or in a quick stir-fry."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** sticks that lie flat and parallel, with square ends."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Sticks of mixed sizes",
+         "Stacks too high, sliding",
+         "Two or three planks at most"
+        ],
+        [
+         "Thick and thin sticks in one batch",
+         "Planks of mixed thickness",
+         "Check the planks before you cut sticks"
+        ],
+        [
+         "\"Julienne\" that is really a thin bâtonnet",
+         "Planks cut too thick",
+         "2–3 mm planks; measure one first"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** keep the claw on the stack and press it flat with the fingertips tucked; a sliding stack is a slipping knife."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the counts within range for each stick."
+      }
+     ]
+    },
+    {
+     "id": "KNF-1.M3.L3",
+     "title": "Dice: *macédoine* and *brunoise*",
+     "prerequisites": [
+      "KNF-1.M3.L2"
+     ],
+     "competencies": [
+      {
+       "id": "TS-KNF",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** dice are the cuts you will use most, and the ones `MS-S1` times. Even dice cook evenly, look professional, and show that every earlier step was right."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** carrots, potatoes, a beetroot and a piece of celeriac; the chef's knife; the grid board; containers; gloves for the beetroot if you like."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Dice are cut from sticks.*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "*Macédoine* (small dice, 5–7 mm): from bâtonnet."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "*Brunoise* (2–3 mm): from julienne."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "The stick decides the dice. If the sticks are uneven, no amount of care at this stage will fix it."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Gather and cut across.* Gather the sticks into a tight bundle, lined up at one end. Hold them with the claw and cut across at the same width as the sticks are thick, walking the claw back evenly. The result is cubes, not tiles."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Keeping the width.* As you speed up, the width tends to grow. Slow down when you notice it; uniformity first."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Using the dice.* Raw potato dice wait in cold water so they don't brown. Brunoise goes into sauce bases, dressings and soups. Beetroot stains: cut it last, and wash the board straight away."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Macédoine (75 min).** Carrot, potato and beetroot into small dice. Measure 10 of each. Use them in a soup, a roast, or a potato salad."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Brunoise (75 min).** Carrot and celeriac into brunoise. Measure 10. Use them in a sauce base or a soup."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** cubes, not flat tiles; the same size from the first to the last cut."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Dice of different sizes",
+         "Dice cut from uneven sticks",
+         "Check the sticks first"
+        ],
+        [
+         "Flat tiles instead of cubes",
+         "Flattening or splaying the sticks",
+         "Keep the bundle tight and upright"
+        ],
+        [
+         "The dice grow towards the end",
+         "Speeding up and losing the width",
+         "Slow down; measure a few as you go"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** the bundle gets short at the end; stop when your claw can no longer hold it safely, and put the last piece in the trim bowl."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the counts within range for each dice."
+      }
+     ]
+    },
+    {
+     "id": "KNF-1.M3.L4",
+     "title": "*Paysanne*, rounds, bias and roll cuts",
+     "prerequisites": [
+      "KNF-1.M3.L1"
+     ],
+     "competencies": [
+      {
+       "id": "TS-KNF",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** not every dish wants cubes. Flat, round and angled cuts each suit a cooking method and a time, and a roll cut makes the best roast carrots you will eat. This lesson teaches the cuts and when to choose each."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** carrots, parsnips, a leek and a turnip (or kohlrabi); the chef's knife; the grid board; a sheet pan, oil and salt; the scale."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Paysanne.* Flat pieces 10–12 mm across and 2–3 mm thick, as squares, triangles or rounds that follow the vegetable's shape. Cut the vegetable into sticks of about 10–12 mm, then slice across thinly. Thin pieces cook quickly, so paysanne suits soups and braises with a short cooking time."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Rounds* (*rondelles*). Slices across a round vegetable, at an even thickness."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Bias cuts.* The same, at an angle of about 45°. A bias gives more surface per piece, so it cooks faster and browns more, and it looks good in stir-fries and roasts. Hold the angle steady for every cut."
+      },
+      {
+       "type": "paragraph",
+       "text": "*The roll cut.* Cut on the bias, roll the vegetable a quarter turn towards you, cut on the bias again, and repeat. You get even chunks with many faces: more surface to brown, and an even cook. For roasting and braising."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Choosing the cut.* Ask how long the piece will cook and how: thin and flat for minutes in a soup, angled for a quick stir-fry, roll-cut chunks for 30 minutes or more in the oven."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Flat cuts (60 min).** Paysanne from carrot, leek and turnip (or kohlrabi); rounds and bias cuts from carrot and parsnip. Photograph each on the grid. Use them in a soup."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Roll cuts (60 min).** Roll-cut 300 g of carrots and parsnips, and cut another 300 g into rounds of similar thickness. Toss each with oil and salt and roast them side by side on one sheet pan, at the setting you used for root vegetables in `EQP-1.M2.X1`, until tender and browned, turning once. Compare colour, texture and taste."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** paysanne of even thickness; roll-cut pieces of similar size with many faces."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Some paysanne mushy, some firm",
+         "Different thicknesses",
+         "Slice at an even 2–3 mm"
+        ],
+        [
+         "Bias pieces of different shapes",
+         "A bias angle that wanders",
+         "Fix the angle with the first cut and keep it"
+        ],
+        [
+         "Roll cuts burnt and raw on one tray",
+         "Pieces of random size",
+         "A quarter turn each time; keep the chunks the same size"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** use oven gloves for the hot sheet pan (`SAF-1.M4`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the grid photos, and your roast comparison."
+      }
+     ]
+    },
+    {
+     "id": "KNF-1.M3.L5",
+     "title": "Why uniformity matters",
+     "prerequisites": [
+      "KNF-1.M3.L3"
+     ],
+     "competencies": [
+      {
+       "id": "TS-KNF",
+       "level": 3
+      },
+      {
+       "id": "SC-HEAT",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** this lesson explains the reason behind all the measuring: the size of a piece decides how fast it cooks. It is the first link between knife work and heat, which `HEA-1` builds on."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** 2 large carrots; the chef's knife; one frying pan; oil and salt; a timer; two plates."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Heat travels from the surface to the centre.* A piece of food heats from the outside in. The thicker it is, the longer the heat takes to reach the centre, and the time rises steeply with thickness: roughly, a piece twice as thick takes much more than twice as long."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Surface per volume.* A small piece has much more surface for each gram than a large one, so it heats, browns and dries faster. For a cube, the surface per volume is 6 divided by the length of its side. A 10 mm cube has 0.6 per mm; a 5 mm cube has 1.2 per mm: twice as much."
+      },
+      {
+       "type": "paragraph",
+       "text": "*A pan of mixed sizes.* When large and small pieces cook together, the small ones burn or turn to mush before the large ones are done. The cook has to choose: take it off with raw pieces, or keep cooking with burnt ones. Even pieces remove the choice."
+      },
+      {
+       "type": "paragraph",
+       "text": "*A fair comparison.* Change one thing only: the evenness of the dice. Same pan, same fat, same heat, same time."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Mixed against even (45 min).** Cut one carrot into careful small dice (5–7 mm) and the other into mixed sizes, from 3 mm to 15 mm. Sauté the even dice in 15 ml oil over medium heat for 8 minutes, stirring now and then, and tip them onto a plate. Wipe the pan and repeat with the mixed dice, same heat and time. Photograph both and taste."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** in the even pan, the pieces are all done at once; in the mixed pan, burnt and raw pieces sit side by side."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "The comparison shows nothing",
+         "Changing two things at once, such as size and heat",
+         "Same pan, fat, heat and time; only the dice differ"
+        ],
+        [
+         "Both pans look the same",
+         "The \"mixed\" dice not mixed enough",
+         "Make the range wide: 3 mm to 15 mm"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** no special risks beyond the kitchen basics (`SAF-1`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the two photos and your explanation of what happened, in your own words."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "KNF-1.M3.X1",
+     "title": "The classical cut set, measured",
+     "description": "The classical cut set on carrot, celeriac and potato, measured on a grid.",
+     "competencies": [
+      {
+       "id": "TS-KNF",
+       "level": 3
+      },
+      {
+       "id": "KM-WAST",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** the classical cuts to size, 8 of 10 within range, on three vegetables, with the trim used. Two attempts on different days: once on carrot, once on celeriac and potato (kohlrabi and potato in summer)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** per attempt about 1 kg of carrot, or 1 celeriac and 500 g of potatoes; the chef's knife and peeler; the scale; the grid board; containers; a pan for stock or mash; the journal for a week's waste log."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Recipe:** the cut list and sizes."
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Weigh** the vegetables."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Square off** into blocks of 5–6 cm long; weigh the trim."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "**Cut planks** of 5–7 mm and of 2–3 mm."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "**Cut the set:**"
+        },
+        {
+         "level": 1,
+         "marker": "",
+         "text": "bâtonnet (5–7 mm × 5–6 cm), and from part of it small dice (5–7 mm);"
+        },
+        {
+         "level": 1,
+         "marker": "",
+         "text": "julienne (2–3 mm × 5–6 cm), and from part of it brunoise (2–3 mm);"
+        },
+        {
+         "level": 1,
+         "marker": "",
+         "text": "paysanne (10–12 mm, 2–3 mm thick) from the remaining block."
+        },
+        {
+         "level": 0,
+         "marker": "5.",
+         "text": "**Photograph** each cut on the grid."
+        },
+        {
+         "level": 0,
+         "marker": "6.",
+         "text": "**Measure** 10 random pieces of each; count those within range."
+        },
+        {
+         "level": 0,
+         "marker": "7.",
+         "text": "**Use** the cuts in the week's meals (a soup, a salad, a roast)."
+        },
+        {
+         "level": 0,
+         "marker": "8.",
+         "text": "**Make a stock or a mash from the trim**, and photograph it."
+        },
+        {
+         "level": 0,
+         "marker": "9.",
+         "text": "**Keep a waste log for the week:** what was thrown away, its weight, and why."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:** for `TS-KNF` level 3, brunoise, small dice and julienne within range for 8 of 10 pieces, on both days; for `KM-WAST` level 2, the trim used in a stock or mash, and the week's waste log. AI review checks the grid photos against the size ranges, with *competent* and *not yet* examples of each cut."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 2 × 75 min."
+      }
+     ]
+    },
+    {
+     "id": "KNF-1.M3.X2",
+     "title": "Uneven against even dice",
+     "description": "Sauté uneven versus even dice and compare doneness.",
+     "competencies": [
+      {
+       "id": "TS-KNF",
+       "level": 2
+      },
+      {
+       "id": "SC-HEAT",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** see and taste why uniform cuts matter, with only one variable changed. This repeats the comparison of `KNF-1.M3.L5` as a recorded exercise, with a different vegetable if you like."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** 2 large carrots or a piece of squash (about 500 g); 30 ml oil; salt; one frying pan; a timer; two plates."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Recipe:** the fixed comparison."
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "Cut half the vegetable into careful small dice (5–7 mm). Cut the other half into mixed sizes, from very small to large."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "Heat the pan over medium heat with 15 ml oil. Add the even dice and a pinch of salt; sauté for 8 minutes, stirring every minute. Tip onto a plate."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "Wipe the pan, return it to the same heat with 15 ml oil, and sauté the mixed dice for the same 8 minutes, the same way. Tip onto the second plate."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "Photograph both pans' contents side by side, and a spoonful of each."
+        },
+        {
+         "level": 0,
+         "marker": "5.",
+         "text": "Taste and write what happened, and why, using surface per volume."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:** the side-by-side photos and your explanation. `SC-HEAT` level 2 rests on this module's quiz (its success row); the comparison is the practice behind it."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 30 min."
+      }
+     ]
+    }
+   ],
+   "items": [
+    {
+     "id": "KNF-1.M3.Q1",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "KNF-1.M3.L2",
+     "safety": false,
+     "question": "What are the dimensions of a *julienne*?",
+     "options": [
+      {
+       "key": "A",
+       "text": "5–7 mm square sticks"
+      },
+      {
+       "key": "B",
+       "text": "2–3 mm thick, 5–6 cm long"
+      },
+      {
+       "key": "C",
+       "text": "12 mm cubes"
+      },
+      {
+       "key": "D",
+       "text": "thin rounds"
+      }
+     ],
+     "answer": "B",
+     "why": "The program's working size."
+    },
+    {
+     "id": "KNF-1.M3.Q2",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "KNF-1.M3.L2",
+     "safety": false,
+     "question": "Which cut is the stick that small dice (*macédoine*) is cut from?",
+     "options": [
+      {
+       "key": "A",
+       "text": "julienne"
+      },
+      {
+       "key": "B",
+       "text": "bâtonnet"
+      },
+      {
+       "key": "C",
+       "text": "paysanne"
+      },
+      {
+       "key": "D",
+       "text": "chiffonade"
+      }
+     ],
+     "answer": "B",
+     "why": "Bâtonnet (5–7 mm) gives 5–7 mm dice; julienne gives brunoise."
+    },
+    {
+     "id": "KNF-1.M3.Q3",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "KNF-1.M3.L2",
+     "safety": false,
+     "question": "A *brunoise* is cut from:",
+     "options": [
+      {
+       "key": "A",
+       "text": "bâtonnet"
+      },
+      {
+       "key": "B",
+       "text": "julienne"
+      },
+      {
+       "key": "C",
+       "text": "planks of 12 mm"
+      },
+      {
+       "key": "D",
+       "text": "rounds"
+      }
+     ],
+     "answer": "B",
+     "why": "Julienne cut across gives 2–3 mm cubes."
+    },
+    {
+     "id": "KNF-1.M3.Q4",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "KNF-1.M3.L4",
+     "safety": false,
+     "question": "What is *paysanne*?",
+     "options": [
+      {
+       "key": "A",
+       "text": "thin flat pieces of about 1 cm, 2–3 mm thick"
+      },
+      {
+       "key": "B",
+       "text": "long sticks"
+      },
+      {
+       "key": "C",
+       "text": "a fine dice"
+      },
+      {
+       "key": "D",
+       "text": "a roll cut"
+      }
+     ],
+     "answer": "A",
+     "why": "Thin and quick-cooking, for soups and braises."
+    },
+    {
+     "id": "KNF-1.M3.Q5",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "KNF-1.M3.L4",
+     "safety": false,
+     "question": "Why cut carrots on the bias for a stir-fry?",
+     "options": [
+      {
+       "key": "A",
+       "text": "it uses less carrot"
+      },
+      {
+       "key": "B",
+       "text": "more surface, so faster cooking, and an attractive shape"
+      },
+      {
+       "key": "C",
+       "text": "it is traditional"
+      },
+      {
+       "key": "D",
+       "text": "it keeps them raw"
+      }
+     ],
+     "answer": "B",
+     "why": "The cut suits a short cooking time."
+    },
+    {
+     "id": "KNF-1.M3.Q6",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "KNF-1.M3.L5",
+     "safety": false,
+     "question": "Why must pieces in one pan be the same size?",
+     "options": [
+      {
+       "key": "A",
+       "text": "for the photo"
+      },
+      {
+       "key": "B",
+       "text": "so they are all cooked at the same time"
+      },
+      {
+       "key": "C",
+       "text": "it doesn't matter"
+      },
+      {
+       "key": "D",
+       "text": "to save oil"
+      }
+     ],
+     "answer": "B",
+     "why": "Size decides cooking time."
+    },
+    {
+     "id": "KNF-1.M3.Q7",
+     "type": "CALCULATION",
+     "lessonId": "KNF-1.M3.L5",
+     "safety": false,
+     "question": "A cube of 10 mm and a cube of 5 mm: how much more surface per unit of volume does the small cube have?",
+     "options": [],
+     "answer": "Twice as much",
+     "why": "Surface per volume of a cube is 6 ÷ side: 0.6 against 1.2 per mm."
+    },
+    {
+     "id": "KNF-1.M3.Q8",
+     "type": "SCENARIO",
+     "lessonId": "KNF-1.M3.L1",
+     "safety": false,
+     "question": "Squaring off 1 kg of carrots leaves 250 g of trim. What do you do with it?",
+     "options": [],
+     "answer": "Weigh and log it, and use it the same day or the next in a stock, purée, soup or mash.",
+     "why": "Planned trim is not waste."
+    }
+   ]
+  },
+  {
+   "id": "KNF-1.M4",
+   "title": "Peeling and awkward vegetables",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** none for this module (its lessons have no [K] or [J] objective). The safety rules for awkward vegetables are tested in the `KNF-1.M1` check and at `MS-S1`."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "KNF-1.M4.L1",
+     "title": "Peeling and *concassé*",
+     "prerequisites": [
+      "KNF-1.M3.L1"
+     ],
+     "competencies": [
+      {
+       "id": "TS-KNF",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** peeling well saves food and time, and the right tool depends on the skin. Tomato *concassé* (peeled, seeded and diced tomato) teaches blanching and shocking, which come back with many vegetables."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** carrots and potatoes; the peeler and the paring knife; the scale; in late summer, 4 ripe tomatoes, a saucepan of boiling water, a bowl of iced water and a slotted spoon; in winter, a red pepper and a gas flame or the oven grill."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Knife against peeler.* A sharp peeler takes thin skins (carrot, parsnip, potato) with very little loss: long, even strokes away from you, turning the vegetable. A knife is for thick or knobbly skins (celeriac, squash), and only after the vegetable stands on a flat base (`KNF-1.M4.L2`). A knife on a thin-skinned root takes far too much."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Tomato concassé.*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "Cut out the stem core and score a small cross in the base."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "Blanch: lower the tomatoes into boiling water for 10–20 seconds, until the skin at the cross starts to lift."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "Shock: lift them straight into iced water, so the flesh doesn't cook."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "Peel: the skin slips off from the cross."
+        },
+        {
+         "level": 0,
+         "marker": "5.",
+         "text": "Quarter, scoop out the seeds and jelly with a small knife or a spoon (they go into a sauce or stock), and dice the flesh evenly."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "Late-summer Dutch tomatoes, ripe and in season, are best for this."
+      },
+      {
+       "type": "paragraph",
+       "text": "*In winter,* peel a red pepper instead: char the skin over a gas flame or under the grill until black all over, put it in a covered bowl for 10 minutes, then rub off the skin and cut the flesh."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Peel and concassé (75 min).** Weigh 500 g of carrots and 500 g of potatoes. Peel half of each with the peeler and half with the knife; weigh the peel from each method. Then make the concassé (or the charred pepper in winter) and use it in a salad, a sauce or on toast."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** thin, even peel; tomato skin slipping off; concassé in even dice without seeds."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Soft, cooked tomato flesh",
+         "Blanching too long",
+         "10–20 seconds, until the skin just lifts"
+        ],
+        [
+         "The skin sticks again, the flesh warms",
+         "Skipping the ice water",
+         "Shock at once in iced water"
+        ],
+        [
+         "Thick peel on carrots and potatoes",
+         "Using a knife on thin-skinned roots",
+         "Use the peeler"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** lower the tomatoes into the boiling water with a slotted spoon, never by hand, and keep the pan's handle turned in. Peel away from your hand with the peeler (`KNF-1.M1.L3`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the peel weights by method, and a photo of the concassé."
+      }
+     ]
+    },
+    {
+     "id": "KNF-1.M4.L2",
+     "title": "Round and awkward vegetables",
+     "prerequisites": [
+      "KNF-1.M3.L1"
+     ],
+     "competencies": [
+      {
+       "id": "TS-KNF",
+       "level": 3
+      },
+      {
+       "id": "SA-PHYS",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** the vegetables of the Dutch winter (celeriac, squash, cabbage, beetroot) are round, hard and heavy, and they cause more knife injuries than anything else. One rule makes them safe: stabilise first, then break down."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** a celeriac; a white or red cabbage; a squash (autumn and winter) or a kohlrabi (late summer); a fennel bulb; the chef's knife, honed; the board on a towel; a dry board surface; containers."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Stabilise, then break down.*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "Cut a flat base first, so the vegetable can't rock."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "Halve large, hard vegetables by placing the knife on top, then pressing down with the flat of your other hand on the spine, the hand flat and well above the edge. Never swing the knife into a round vegetable."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "Work with the flat side down from then on."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Celeriac.* Slice off the top and the root end so it stands. Cut the peel away in strips from top to bottom, following the curve. Cut out any soft or woody centre."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Squash.* Cut off the stem and a thin slice from one side, lay it on that side and halve it with the press method. Scoop out the seeds. Lay each half on its flat side and peel it with the knife in strips, or roast it with the skin on."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Cabbage.* Quarter it through the core, lying on its flat side after the first cut. Cut the core out of each quarter at an angle, then slice into shreds or cut into wedges."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Fennel.* Trim the top and the base, halve it through the root, cut out the core wedge, and slice."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Beetroot.* Peel it after cooking, when the skin rubs off, or raw with a peeler, wearing gloves against the stain."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Celeriac and cabbage (60 min).** Break down the celeriac into small dice and the cabbage into fine shreds. Use them in a soup, a mash or a salad this week."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Squash and fennel (60 min).** Break down the squash and the fennel (or, in late summer, a kohlrabi and the fennel). Roast or braise them."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** the vegetable never rocks under the knife; the guiding hand always above the blade, never in front of it."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "The knife sticks halfway, the squash spins",
+         "Hacking at a whole squash",
+         "A flat base first; place the knife and press with the flat hand"
+        ],
+        [
+         "The hand near the edge as you press",
+         "The hand in front of the blade",
+         "Press on the spine, the hand flat and above the blade"
+        ],
+        [
+         "The squash slides",
+         "A wet board",
+         "Dry the board and the vegetable; towel underneath"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** this lesson is part of `SA-PHYS` level 3. If the knife gets stuck, don't lever or wiggle it at speed: pull it out slowly, cut a flatter base, and start again."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** photos of each vegetable on its flat base and broken down."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "KNF-1.M4.X1",
+     "title": "Squash and celeriac, with the trim weighed",
+     "description": "Break down a squash and a celeriac into even dice; weigh the trim.",
+     "competencies": [
+      {
+       "id": "TS-KNF",
+       "level": 3
+      },
+      {
+       "id": "SA-PHYS",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** break down awkward vegetables safely into even dice, and know their yield. Two vegetables; in summer, kohlrabi and a large courgette replace them."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** 1 squash (about 1 kg) and 1 celeriac; the chef's knife, honed; the board on a towel; the scale; the grid board; a phone on a stand; a sheet pan or a soup pan."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Recipe:** the breakdown sequence."
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Weigh** each whole vegetable."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Film from the side** while you halve and peel each one."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "**Squash:** stem off; a thin slice off one side for a flat base; halve by pressing with the flat hand on the spine; scoop out the seeds; peel each half on its flat side."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "**Celeriac:** top and root end off; peel in strips from top to bottom."
+        },
+        {
+         "level": 0,
+         "marker": "5.",
+         "text": "**Dice both** into small dice (5–7 mm): planks, sticks, dice."
+        },
+        {
+         "level": 0,
+         "marker": "6.",
+         "text": "**Photograph** the dice on the grid and measure 10 pieces of each."
+        },
+        {
+         "level": 0,
+         "marker": "7.",
+         "text": "**Weigh** the trim and the dice of each vegetable, and work out the yield (dice ÷ whole)."
+        },
+        {
+         "level": 0,
+         "marker": "8.",
+         "text": "**Cook:** roast the dice, or make a soup with them and the cleaned trim."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:** the video shows a flat base, the press with the flat hand and the guiding hand above the blade (`SA-PHYS` level 3); 8 of 10 dice within range (`TS-KNF` level 3); and the yield of each vegetable. AI review checks the safety of the breakdown: *competent* is a squash halved on a flat base with the hand on the spine; *not yet* is a knife swung into a round squash."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 1 h."
+      }
+     ]
+    }
+   ],
+   "items": []
+  },
+  {
+   "id": "KNF-1.M5",
+   "title": "Speed with accuracy",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** none for this module; the drill log shows the tracking of progress better than a quiz would."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "KNF-1.M5.L1",
+     "title": "Timed drills and logging",
+     "prerequisites": [
+      "KNF-1.M3.L3"
+     ],
+     "competencies": [
+      {
+       "id": "TS-KNF",
+       "level": 3
+      },
+      {
+       "id": "JD-REFL",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** speed matters once the cuts are safe and even: in a real kitchen, and at `MS-S1`, the mise en place is cut against the clock. Here you build speed the way athletes do: a fixed drill, timed, measured, with one thing to improve each week. It is the start of the knife thread that runs through S2."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** per week, 2 onions and 2 carrots (or a piece of celeriac from week 4); the chef's knife, honed; the grid board; a timer; the drill log in the journal; in week 6, a phone on a stand."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Speed comes from rhythm and economy of movement, not force.*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "The knife stays close to the board; the tip barely lifts."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "The guiding hand moves back steadily, a fixed step each cut."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "No piece is handled twice: everything is set out so you pick up, cut and move on."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Deliberate practice.* The same drill each time, timed, with uniformity measured each time, and one thing to improve. Speed never at the cost of the grip or the size: a fast set that is out of range doesn't count."
+      },
+      {
+       "type": "paragraph",
+       "text": "*The targets.*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "An onion in small dice in under 3 minutes, with 8 of 10 pieces within range (the `TS-KNF` level 3 row)."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "A carrot in julienne at a steady pace."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Changing one variable at a time.* After three weeks, the onion size changes; after four, the carrot becomes celeriac. Each change tests whether the skill is real or only a memorised movement."
+      },
+      {
+       "type": "paragraph",
+       "text": "*The log.* One line per drill: date, cut, time, count within range, what limited the speed, and the next target."
+      },
+      {
+       "type": "table",
+       "header": [
+        "Date",
+        "Cut",
+        "Time",
+        "Within range (of 10)",
+        "What limited it",
+        "Next target"
+       ],
+       "rows": []
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Week 1 (40 min):** baseline drill. Onion in small dice, timed; 10 pieces measured. Carrot in julienne, timed; 10 pieces measured. Log it."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Week 2 (40 min):** the same drill, with the target from week 1."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "**Week 3 (40 min):** the same, with the onion in a different size (fine or medium dice)."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "**Week 4 (40 min):** the same, with celeriac in place of the carrot."
+        },
+        {
+         "level": 0,
+         "marker": "5.",
+         "text": "**Week 6 (40 min):** the same, filmed from the side for a grip check against `KNF-1.M1.X1`."
+        },
+        {
+         "level": 0,
+         "marker": "6.",
+         "text": "**Week 8 (40 min):** the final drill, measured for the module check."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** the times falling while the count within range stays at 8 of 10 or more; the grip unchanged in the week 6 video."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Faster, but fingertips creep forward",
+         "Rushing and losing the claw",
+         "Slow down until the claw holds; speed returns"
+        ],
+        [
+         "The log looks better than the dice",
+         "Measuring only the best pieces",
+         "Pick 10 at random, every time"
+        ],
+        [
+         "No progress for weeks",
+         "Skipping weeks and then cramming",
+         "One drill a week, on a fixed day"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** the grip and the claw come before the clock. If the week 6 video shows the claw slipping, the next two drills are untimed."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the drill log, every week."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "KNF-1.M5.X1",
+     "title": "Weekly timed drills",
+     "description": "Weekly timed drills (onion, carrot *julienne*) for the rest of S1.",
+     "competencies": [
+      {
+       "id": "TS-KNF",
+       "level": 3
+      },
+      {
+       "id": "JD-REFL",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** build speed with accuracy week by week, and log it, until the end of S1. This exercise is the record of the drills of `KNF-1.M5.L1`."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** per week, 2 onions and 2 carrots (or a piece of celeriac); they go into that week's meals. The knife, honed; the grid board; a timer; the log; in week 6, a phone on a stand."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Recipe:** the drill."
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "Set up the station: board on a towel, knife honed, a bowl for the cut onion, a trim bowl."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "Start the timer; dice an onion into small dice; stop the timer."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "Measure 10 random pieces."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "Start the timer; cut a carrot into julienne; stop the timer."
+        },
+        {
+         "level": 0,
+         "marker": "5.",
+         "text": "Measure 10 random pieces."
+        },
+        {
+         "level": 0,
+         "marker": "6.",
+         "text": "Log both results."
+        },
+        {
+         "level": 0,
+         "marker": "7.",
+         "text": "Write one line: what limited the speed today, and the target for next week."
+        },
+        {
+         "level": 0,
+         "marker": "8.",
+         "text": "In week 6, film the drill from the side."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:** for `TS-KNF` level 3, the 8-week log, with an onion small-diced in under 3 minutes and 8 of 10 in range on at least two different days, and a safe grip in the week 6 video; for `JD-REFL` level 2, the weekly notes naming what improved and what limited it, with the evidence."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 6 × 40 min over 8 weeks."
+      }
+     ]
+    }
+   ],
+   "items": []
+  }
+ ]
+}

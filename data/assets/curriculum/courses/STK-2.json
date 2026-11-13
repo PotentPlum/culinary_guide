@@ -1,0 +1,3998 @@
+{
+ "schemaVersion": 1,
+ "id": "STK-2",
+ "introduction": [
+  {
+   "type": "paragraph",
+   "text": "**Before you start.** A good stock is the quiet foundation of sauces, braises, risottos and soups. Making it well teaches three things:"
+  },
+  {
+   "type": "list",
+   "items": [
+    {
+     "level": 0,
+     "marker": "",
+     "text": "**patience:** a stock is never boiled;"
+    },
+    {
+     "level": 0,
+     "marker": "",
+     "text": "**observation:** skimming, clarity, gel;"
+    },
+    {
+     "level": 0,
+     "marker": "",
+     "text": "**economy:** bones and trim that would be thrown away become the base of a week's cooking."
+    }
+   ]
+  },
+  {
+   "type": "paragraph",
+   "text": "The course covers the aromatic bases of several traditions; the four domestic stocks (white chicken, brown, vegetable and a fast fish *fumet*); storing and reducing them safely; the soups (clear, purée, cream and hearty); and a soup lab that fixes faults and ends with a soup from a brief."
+  },
+  {
+   "type": "paragraph",
+   "text": "*The bags in the freezer.* From now on, keep two bags in the freezer: one for bones (the carcass of the `HEA-2` roast, wing tips, pork trim) and one for clean vegetable trim (onion and leek ends, carrot peel, celery leaves, mushroom stalks, herb stalks; no brassicas, no potato peel). Label each with the date you started it. They are the inputs of module 2."
+  },
+  {
+   "type": "paragraph",
+   "text": "*Cooling a stock is a safety skill.* A large pot of stock is the classic case of slow cooling (`SCI-2.M6`). Every stock in this course is cooled by the measurable standard of assessment §9, and logged: from 57 °C to 21 °C within 2 hours, and to 5 °C or below within 6 hours in total. A log outside the limits is *not yet*, however good the stock is."
+  },
+  {
+   "type": "paragraph",
+   "text": "*Seasoning reaches level 3.* Broths are salted to your calibrated range from `TST-1`, weighed, and checked blind by the household; soups are tasted at every stage."
+  },
+  {
+   "type": "paragraph",
+   "text": "Plan about four weeks. The stocks need weekend days: a white stock simmers for about 5 hours, a brown stock for about 7. The soups fit weeknights once the freezer holds stock."
+  },
+  {
+   "type": "paragraph",
+   "text": "**Have ready:** the stockpot and a second large pot (`EQP-1`); a fine sieve and muslin or a thin, clean tea towel; a ladle and a skimmer or slotted spoon; kitchen string; a stick blender (or a jug blender with a vented lid); the probe; shallow containers, 500 ml freezer tubs and an ice-cube tray; ice and a sink or large bowl for an ice bath; labels; the scale; the tasting form and the household's cards; the journal."
+  }
+ ],
+ "modules": [
+  {
+   "id": "STK-2.M1",
+   "title": "Aromatic foundations",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** the 8 items of `STK-2.M1` in the course file. Pass mark 80 %."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "STK-2.M1.L1",
+     "title": "Aromatic bases",
+     "prerequisites": [
+      "VEG-1.M4.L4"
+     ],
+     "competencies": [
+      {
+       "id": "FL-ARCH",
+       "level": 2
+      },
+      {
+       "id": "CK-TERM",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** almost every savoury dish of every cuisine starts with a few aromatic vegetables cooked in fat. The combination tells you where a dish comes from, and how they are cooked (pale or browned) sets the tone of everything that follows."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** 2 onions; 2 carrots; 2 sticks of celery or a piece of celeriac; 4 cloves of garlic; a tomato or a spoon of tomato paste; half a red pepper (or a roasted pepper from a jar in winter); a thumb of ginger; 2 spring onions; olive oil and a neutral oil; four small pans; 500 ml of stock or water; four cups; the journal."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*The aromatic bases:*"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Base",
+        "Tradition",
+        "Ingredients",
+        "How"
+       ],
+       "rows": [
+        [
+         "*Mirepoix*",
+         "France",
+         "Onion, carrot, celery, roughly 2 : 1 : 1",
+         "Cut to the cooking time; sweated or browned"
+        ],
+        [
+         "*Soffritto*",
+         "Italy",
+         "The same",
+         "Finely cut, slowly in olive oil"
+        ],
+        [
+         "*Sofrito*",
+         "Spain",
+         "Onion, garlic, tomato, peppers",
+         "Slowly in olive oil until jammy"
+        ],
+        [
+         "The \"holy trinity\"",
+         "Louisiana",
+         "Onion, celery, green pepper",
+         "Often with a dark roux"
+        ],
+        [
+         "Ginger, garlic and spring onion",
+         "Chinese cooking",
+         "Ginger, garlic, spring onion",
+         "Briefly, in hot oil, until fragrant"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Sweated or browned* (`VEG-1.M4.L4`):"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**sweated:** low heat, no colour; sweet and mild, for light soups and white stocks;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**browned:** more heat, colour on the edges; deep and savoury, for brown stocks and stews."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Cut size follows cooking time.* Large chunks for a stock that simmers for hours, so they give their flavour without falling apart; a fine dice for a quick sauce or soup."
+      },
+      {
+       "type": "paragraph",
+       "text": "*The words.* *Mirepoix*, *soffritto*, *sofrito*, *bouquet garni*, *sachet*, *fumet*, *velouté*, *liaison*: each goes into your glossary with its meaning and, where it helps, its Dutch word (`CK-TERM`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Four bases (60 min).** Make a small *mirepoix*, *soffritto*, *sofrito* and ginger-garlic base, each in its own pan and cooked its own way. Put a spoonful of each into a cup of hot stock or water, and taste them. Then have a helper code the cups and name each base blind."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** each base with its own character; you name it blind."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "A beige, stewy white soup",
+         "Browning a base meant to stay pale",
+         "Low heat, a lid, a pinch of salt"
+        ],
+        [
+         "Mush in a long stock",
+         "Cutting a long-stock *mirepoix* small, so it turns to mush",
+         "Large chunks for long cooking"
+        ],
+        [
+         "A bitter base",
+         "Burning the garlic in a quick base",
+         "Garlic last, briefly"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** no special risks beyond the kitchen basics (`SAF-1`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the four bases with a tasting line each, and the new terms in the glossary."
+      }
+     ]
+    },
+    {
+     "id": "STK-2.M1.L2",
+     "title": "*Bouquet garni* and *sachet d'épices*",
+     "prerequisites": [],
+     "competencies": [
+      {
+       "id": "IN-ARO",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** herbs and spices left loose in a stock end up in every spoonful and keep extracting until they turn bitter. Tied in a bundle, they go in when you choose and come out when the flavour is right."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** a leek (the green part) or a stick of celery; parsley stalks; thyme; 2 bay leaves; 10 peppercorns; 2 cloves; kitchen string; muslin or a paper tea filter; 1 litre of stock; two small pans; a timer; two cups."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*A bouquet garni:* parsley stalks, thyme and a bay leaf, wrapped in a strip of leek green or between two pieces of celery, and tied with string, with a long end tied to the pan handle so it lifts out in one piece."
+      },
+      {
+       "type": "paragraph",
+       "text": "*A sachet d'épices:* peppercorns, a bay leaf, thyme, parsley stalks and sometimes cloves, in a square of muslin tied into a bag, or in a paper tea filter."
+      },
+      {
+       "type": "paragraph",
+       "text": "*When aromatics go in and come out:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**whole spices and woody herbs early:** they release slowly and need time;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**delicate herbs at the end:** they fade with heat;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**the bundle comes out** when the flavour is right, before bitterness builds (bay and cloves turn bitter and medicinal when cooked too long)."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Fresh and dried.* Dried herbs are stronger per gram and go in earlier; fresh soft herbs (parsley leaves, chives, basil, dill) at the end. Dried basil is no substitute for fresh at the end."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Toasting whole spices* in a dry pan for a minute, shaking, until fragrant, wakes up their oils. Watch them: they burn within seconds once they smoke."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Tie and time (45 min).** Tie a bouquet and a sachet. Simmer the stock in two small pans, each with a bouquet. Take the first bouquet out after 20 minutes; leave the second in for 90. Taste both cups side by side."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** a bouquet that holds together and lifts out in one piece; the long-simmered pan noticeably more bitter or woody."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Thyme stalks in the soup",
+         "Loose herbs that end up in the soup",
+         "Tie them, or use a sachet"
+        ],
+        [
+         "A bitter, medicinal stock",
+         "A bundle forgotten for hours",
+         "Taste and lift it out on time"
+        ],
+        [
+         "A dull, dusty finish",
+         "Dried basil in place of fresh at the end",
+         "Fresh soft herbs at the end"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** no special risks beyond the kitchen basics (`SAF-1`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the two tasting notes and a photo of the bouquet and the sachet."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "STK-2.M1.X1",
+     "title": "Sweated against browned aromatics",
+     "description": "One soup base made with sweated versus browned aromatics.",
+     "competencies": [
+      {
+       "id": "FL-ARCH",
+       "level": 2
+      },
+      {
+       "id": "IN-ARO",
+       "level": 2
+      },
+      {
+       "id": "CK-TERM",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** taste what the cooking of the base does to a soup, and describe the layers in the program's terms. One soup made twice, once on a sweated base and once on a browned one, with the same *bouquet garni*, toasted spices and finishing herbs. Then write the framework of an aromatic base in your own words, using at least ten terms."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** for 2 × 4 portions: 2 onions, 2 carrots, 2 sticks of celery or 150 g of celeriac, 1 leek, 2 litres of stock or water, 2 *bouquets garnis*, 1 teaspoon each of coriander seed and peppercorns, butter, salt, a bunch of parsley; two pots; a dry pan; a stick blender; coded bowls; the tasting form."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Recipe:** the soup, twice."
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Cut** the vegetables into a fine dice and divide them into two equal batches."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Toast** the spices in the dry pan until fragrant; crush them lightly and divide them between the bouquets (tied in with the herbs, or in a sachet)."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "**Pot A, sweated:** 20 g of butter, the vegetables and a pinch of salt over low heat, partly covered, for 12 minutes, without colour."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "**Pot B, browned:** 20 g of butter over medium-high heat, the vegetables stirred now and then for 12 minutes, until brown on the edges."
+        },
+        {
+         "level": 0,
+         "marker": "5.",
+         "text": "**Simmer** each with 1 litre of stock and its bouquet for 25 minutes. Remove the bouquets."
+        },
+        {
+         "level": 0,
+         "marker": "6.",
+         "text": "**Blend** each until smooth; season both to the same salt by weight (about 8 g per litre, then taste). Stir chopped parsley into both just before serving."
+        },
+        {
+         "level": 0,
+         "marker": "7.",
+         "text": "**Taste** them with the form: the base, the layers and the finish."
+        },
+        {
+         "level": 0,
+         "marker": "8.",
+         "text": "**The household** tastes them blind and says which they prefer, and why."
+        },
+        {
+         "level": 0,
+         "marker": "9.",
+         "text": "**Write the framework** of an aromatic base in your own words, using at least ten terms correctly."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "`FL-ARCH` level 2: an aromatic base built and layered into a dish from a recipe, with the layers on the form."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "`IN-ARO` level 2: a dish with toasted whole spices and finishing herbs, with this module's when-to-add items at 80 %."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "`CK-TERM` level 3: the written framework, with ten terms used correctly, and the S2 terms of this check at 80 %."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 1.25 h; soup for two days."
+      }
+     ]
+    }
+   ],
+   "items": [
+    {
+     "id": "STK-2.M1.Q1",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "STK-2.M1.L1",
+     "safety": false,
+     "question": "What is a classic *mirepoix*?",
+     "options": [
+      {
+       "key": "A",
+       "text": "onion, carrot and celery, about 2 : 1 : 1"
+      },
+      {
+       "key": "B",
+       "text": "onion, garlic and tomato"
+      },
+      {
+       "key": "C",
+       "text": "ginger, garlic and spring onion"
+      },
+      {
+       "key": "D",
+       "text": "onion, celery and green pepper"
+      }
+     ],
+     "answer": "A",
+     "why": "The others are *sofrito*, a Chinese base and the \"holy trinity\"."
+    },
+    {
+     "id": "STK-2.M1.Q2",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "STK-2.M1.L1",
+     "safety": false,
+     "question": "Which base suits a pale chicken soup?",
+     "options": [
+      {
+       "key": "A",
+       "text": "a browned *mirepoix*"
+      },
+      {
+       "key": "B",
+       "text": "a sweated *mirepoix*"
+      },
+      {
+       "key": "C",
+       "text": "a deeply caramelised base"
+      },
+      {
+       "key": "D",
+       "text": "a charred base"
+      }
+     ],
+     "answer": "B",
+     "why": "Sweating gives a sweet, mild base without colour."
+    },
+    {
+     "id": "STK-2.M1.Q3",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "STK-2.M1.L1",
+     "safety": false,
+     "question": "Why is a *mirepoix* for a five-hour stock cut large?",
+     "options": [
+      {
+       "key": "A",
+       "text": "it looks better"
+      },
+      {
+       "key": "B",
+       "text": "small pieces break down to mush and cloud the stock"
+      },
+      {
+       "key": "C",
+       "text": "it's faster"
+      },
+      {
+       "key": "D",
+       "text": "for colour"
+      }
+     ],
+     "answer": "B",
+     "why": "Cut size follows cooking time."
+    },
+    {
+     "id": "STK-2.M1.Q4",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "STK-2.M1.L1",
+     "safety": false,
+     "question": "The Spanish *sofrito* is built on:",
+     "options": [
+      {
+       "key": "A",
+       "text": "carrot and celery"
+      },
+      {
+       "key": "B",
+       "text": "onion, garlic, tomato and peppers"
+      },
+      {
+       "key": "C",
+       "text": "ginger and soy"
+      },
+      {
+       "key": "D",
+       "text": "leek and potato"
+      }
+     ],
+     "answer": "B",
+     "why": "Each tradition has its own base."
+    },
+    {
+     "id": "STK-2.M1.Q5",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "STK-2.M1.L2",
+     "safety": false,
+     "question": "What is a *bouquet garni*?",
+     "options": [
+      {
+       "key": "A",
+       "text": "a garnish of flowers"
+      },
+      {
+       "key": "B",
+       "text": "a tied bundle of parsley stalks, thyme and bay that can be lifted out"
+      },
+      {
+       "key": "C",
+       "text": "a spice blend"
+      },
+      {
+       "key": "D",
+       "text": "a stock"
+      }
+     ],
+     "answer": "B",
+     "why": "It flavours and then comes out."
+    },
+    {
+     "id": "STK-2.M1.Q6",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "STK-2.M1.L2",
+     "safety": false,
+     "question": "When do delicate herbs such as chervil or basil go into a soup?",
+     "options": [
+      {
+       "key": "A",
+       "text": "at the start"
+      },
+      {
+       "key": "B",
+       "text": "at the end, because their aroma fades with heat"
+      },
+      {
+       "key": "C",
+       "text": "halfway"
+      },
+      {
+       "key": "D",
+       "text": "they don't"
+      }
+     ],
+     "answer": "B",
+     "why": "Woody herbs early, soft herbs late."
+    },
+    {
+     "id": "STK-2.M1.Q7",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "STK-2.M1.L2",
+     "safety": false,
+     "question": "Why is a sachet with cloves and bay taken out after a while?",
+     "options": [
+      {
+       "key": "A",
+       "text": "it falls apart"
+      },
+      {
+       "key": "B",
+       "text": "left too long, they turn bitter or overpowering"
+      },
+      {
+       "key": "C",
+       "text": "for hygiene"
+      },
+      {
+       "key": "D",
+       "text": "to save it"
+      }
+     ],
+     "answer": "B",
+     "why": "Aromatics have a right time to come out."
+    },
+    {
+     "id": "STK-2.M1.Q8",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "STK-2.M1.L2",
+     "safety": false,
+     "question": "Why toast whole spices before use?",
+     "options": [
+      {
+       "key": "A",
+       "text": "to sterilise them"
+      },
+      {
+       "key": "B",
+       "text": "heat releases and deepens their aromatic oils"
+      },
+      {
+       "key": "C",
+       "text": "to soften them"
+      },
+      {
+       "key": "D",
+       "text": "to remove bitterness only"
+      }
+     ],
+     "answer": "B",
+     "why": "Toasting wakes up whole spices."
+    }
+   ]
+  },
+  {
+   "id": "STK-2.M2",
+   "title": "Stocks",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** the 8 items of `STK-2.M2` in the course file, 2 of them safety items. Pass mark 80 %, with every safety item correct."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "STK-2.M2.L1",
+     "title": "Stock principles",
+     "prerequisites": [
+      "HEA-1.M5.L1"
+     ],
+     "competencies": [
+      {
+       "id": "TS-STK",
+       "level": 2
+      },
+      {
+       "id": "SC-PROT",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** the difference between a clear, golden stock that sets to a jelly and a cloudy, greasy one is not the recipe but four principles: cold start, the right ratio, a bare simmer and the right time. Learn them once and every stock follows."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** this lesson; the journal; the bones and trim in your freezer, to plan with."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Extraction.* Flavour, minerals and gelatin move from bones, meat and vegetables into the water. Gelatin comes from collagen in bones, joints and skin (`SCI-2.M2.L1`). A good stock sets to a soft gel when chilled: the sign that the collagen has been extracted."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Ratios:*"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Part",
+        "Ratio"
+       ],
+       "rows": [
+        [
+         "Bones",
+         "1 kg"
+        ],
+        [
+         "Cold water",
+         "1–1.5 litres, just covering the bones, never drowning them"
+        ],
+        [
+         "Aromatics (*mirepoix*)",
+         "About 10–20 % of the bone weight: 100–200 g per kg"
+        ],
+        [
+         "Herbs",
+         "A *bouquet garni*"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "Too much water gives a thin stock that never gels."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Clarity:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**start cold,** so the proteins come out slowly and coagulate into a foam you can skim;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**bring slowly to a bare simmer** and skim the foam (coagulated proteins);"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**never boil:** boiling churns fat and particles into the liquid and clouds it for good."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*The bones decide the time:*"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Stock",
+        "Time"
+       ],
+       "rows": [
+        [
+         "Chicken",
+         "3–5 hours"
+        ],
+        [
+         "Beef or veal",
+         "6–8 hours"
+        ],
+        [
+         "Fish",
+         "20–30 minutes"
+        ],
+        [
+         "Vegetables",
+         "About an hour"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "Beyond those times, bitterness and cloudiness build."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Salt* goes in later, at the dish: stock is reduced, and a salted stock turns too salty."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:** theory only (1.5 h): write the plan for a white and a brown stock: the bones (from your freezer bag or the butcher), the weight, the water and aromatics by ratio, the timing, the skimming, and the cooling method by the standard."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** a plan with a ratio, a time and a cooling method."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "A cloudy stock from the start",
+         "Starting with hot water",
+         "Cold water, brought up slowly"
+        ],
+        [
+         "Cloudy, greasy, emulsified",
+         "Boiling",
+         "A bare simmer, the surface trembling"
+        ],
+        [
+         "Sauces too salty when reduced",
+         "Salting the stock",
+         "Salt at the dish"
+        ],
+        [
+         "A stock that never gels",
+         "Too much water, which gives a thin stock that never gels",
+         "1–1.5 litres per kg; just covering"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** plan the cooling before you start: the containers, the ice and the fridge space (assessment §9)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the two plans."
+      }
+     ]
+    },
+    {
+     "id": "STK-2.M2.L2",
+     "title": "White chicken stock",
+     "prerequisites": [
+      "STK-2.M2.L1"
+     ],
+     "competencies": [
+      {
+       "id": "TS-STK",
+       "level": 3
+      },
+      {
+       "id": "TS-MOI",
+       "level": 4
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** white chicken stock is the most used stock in a home kitchen: for soups, risotto, sauces and braises. It is also the best training in holding a bare simmer for hours, the moist-heat skill behind every delicate poach."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** the inputs of `STK-2.M2.X1` for the white stock; the stockpot; a ladle and a skimmer; the probe; a fine sieve lined with muslin; a large bowl; a timer."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*The steps:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Blanch** the bones briefly if you want a very clear stock (optional): cover with cold water, bring to the boil, drain and rinse."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Cover** with cold water."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "**Bring slowly to a bare simmer** and skim the grey foam as it rises."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "**Add the *mirepoix* and the *bouquet garni*** after the first skim."
+        },
+        {
+         "level": 0,
+         "marker": "5.",
+         "text": "**Simmer, uncovered,** at about 85–95 °C, logged with the probe every 30 minutes. Skim now and then."
+        },
+        {
+         "level": 0,
+         "marker": "6.",
+         "text": "**Strain** through the lined sieve without pressing the solids."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Wings, backs and feet* give the most gelatin for the money; the carcass of a roast chicken adds flavour."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Holding the simmer.* The surface only trembles, with a bubble breaking now and then (`TS-MOI`). Find the burner setting that holds 85–95 °C, and note it for next time: it is the setting for every stock."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Straining.* Ladle the stock out first, rather than tipping the pot, so the sediment stays behind. Let it drip; pressing pushes particles through and clouds it."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**The stock (2 h active over about 5 h).** Make the white stock of `STK-2.M2.X1`, with the simmer logged."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** a clear, golden liquid that smells of chicken, not of boiled vegetables; a firm wobble after chilling."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Cloudy, greasy stock",
+         "A rolling boil",
+         "Lower the heat; find the setting that holds 85–95 °C"
+        ],
+        [
+         "Cloudy stock",
+         "Stirring",
+         "Leave it; only skim"
+        ],
+        [
+         "Murky at the bottom",
+         "Pressing the solids through the sieve, which clouds the stock",
+         "Ladle out, let it drip"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** raw chicken bones are raw poultry: their own board, hands washed after (`SAF-1.M2`). A full stockpot is heavy: ladle it out to strain, rather than lifting and tipping it."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the simmer log (in `STK-2.M2.X1`)."
+      }
+     ]
+    },
+    {
+     "id": "STK-2.M2.L3",
+     "title": "Brown stock",
+     "prerequisites": [
+      "STK-2.M2.L2",
+      "HEA-1.M2.L1"
+     ],
+     "competencies": [
+      {
+       "id": "TS-STK",
+       "level": 3
+      },
+      {
+       "id": "SC-BRWN",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** brown stock is the base of gravies, braises and the deep sauces of `SAU-2`. Its colour and depth come entirely from browning before the water goes in: done well it is rich and clear, done badly it is pale or bitter."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** the inputs of `STK-2.M2.X1` for the brown stock: about 2 kg of beef or veal bones (or chicken wings for a lighter one), the *mirepoix*, 2 tablespoons of tomato paste, a *bouquet garni*; a roasting tin; the stockpot; a wooden spatula; the probe."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Colour and depth come from browning:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Roast the bones** in one layer in a hot oven (the high setting from your oven table), turning once, until a deep, even brown: about 45–60 minutes."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Add the *mirepoix*** in large chunks for the last 20–30 minutes, so it browns but doesn't burn."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "**Cook the tomato paste** in the stockpot with a little fat, stirring, until it darkens to rust (*pincé*). Raw tomato paste tastes sharp and tinny; cooked, it adds depth and colour."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "**Deglaze the roasting tin:** pour off the fat, add a little water, scrape up the brown fond, and pour it into the pot (`HEA-1.M3`)."
+        },
+        {
+         "level": 0,
+         "marker": "5.",
+         "text": "**Cover with cold water,** bring slowly to a bare simmer, skim, add the *bouquet garni*, and simmer at 85–95 °C."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*The domestic brown stock* simmers for 6–8 hours. It can finish overnight in a low oven, the lid ajar, at the lowest setting your oven table holds near a simmer."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Burnt bones* give a bitter stock that cannot be fixed. Pieces that have blackened are discarded before they go in the pot."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**The stock (2.5 h active over about 7 h).** Roast, *pincé*, deglaze, simmer and strain; photograph the roasted bones before they go into the pot. Log it as part of `STK-2.M2.X1`."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** bones and vegetables a deep, even brown; a dark, clear stock that gels."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "A thin, light-coloured stock",
+         "Pale bones",
+         "Roast longer, to a deep brown"
+        ],
+        [
+         "A bitter stock",
+         "Burnt bits",
+         "Discard any blackened piece"
+        ],
+        [
+         "A sharp, tinny taste",
+         "Tomato paste added raw",
+         "Cook it to rust first"
+        ],
+        [
+         "Colour lost",
+         "The roasting-tin fond left behind",
+         "Deglaze the tin into the pot"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** the roasting tin holds hot fat: pour it off carefully into a heatproof bowl, away from you, with oven gloves. An overnight stock in the oven is checked before bed and in the morning; it is never left on an open burner unattended."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the photo of the roasted bones and the simmer log."
+      }
+     ]
+    },
+    {
+     "id": "STK-2.M2.L4",
+     "title": "Vegetable stock and *fumet*",
+     "prerequisites": [
+      "STK-2.M2.L1"
+     ],
+     "competencies": [
+      {
+       "id": "TS-STK",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** not every stock takes a day. A vegetable stock from the trim bag takes an hour, a fish *fumet* half that, and both are the base of light soups, risottos and the fish sauces of `FSH-2`. Both are ruined by overcooking."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** for session 1, about 1 kg of frozen vegetable trim from the bag, an onion, a leek green, a few mushroom stalks, a tomato, a *bouquet garni*, oil; for session 2, about 1 kg of bones and heads of lean white fish (cod, plaice, sole; ask the fishmonger, who usually gives them away), 150 g of onion and leek white, a stick of celery or some fennel, 100 ml of dry white wine, parsley stalks; a pot; the fine sieve and muslin; scissors."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Vegetable stock:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "sweated aromatics, leek greens, mushroom trim, a little tomato, herbs;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "about 2 litres of water per kg of trim and aromatics (1 : 2 by weight);"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "about 45–60 minutes: longer turns it dull and sweet;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "no brassicas, which turn sulphurous, and no starchy vegetables (potato), which cloud it."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*A fish fumet:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**White fish bones and heads from lean fish,** not oily ones (mackerel, herring, salmon), which turn the stock rancid and strong."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Gills removed** with scissors, because they are bitter and bloody, and the bones rinsed under cold water."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "**Sweated** with the aromatics for a few minutes, without colour."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "**Wine, then cold water** to cover (about 1.5 litres per kg)."
+        },
+        {
+         "level": 0,
+         "marker": "5.",
+         "text": "**Simmered for only 20–30 minutes,** skimmed, then strained."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Why fish stock is short:* fish bones are thin and their collagen gives up quickly. Longer cooking extracts bitter, gluey compounds and a fishy smell."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Vegetable stock (60 min).** Weigh the trim and aromatics, sweat them in a little oil, add the water by ratio and the bouquet, and simmer for 45 minutes. Strain and taste."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "***Fumet* (60 min).** Make the *fumet* from the fishmonger's bones; strain after 25 minutes."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** a fresh, clear vegetable stock; a pale, clean-smelling *fumet*."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "A sulphurous vegetable stock",
+         "Cabbage in the vegetable stock",
+         "No brassicas in the trim bag"
+        ],
+        [
+         "A strong, rancid fish stock",
+         "Mackerel bones in a *fumet*",
+         "Lean white fish only"
+        ],
+        [
+         "A bitter, gluey *fumet*",
+         "A *fumet* simmered for an hour",
+         "20–30 minutes"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** fish bones are raw fish: a separate board, and the stock cooled by the standard and used within 2 days or frozen (assessment §9). Gill scissors and bones are sharp: handle the heads with a cloth."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the weights, the ratio and a tasting line for each stock."
+      }
+     ]
+    },
+    {
+     "id": "STK-2.M2.L5",
+     "title": "Storing and reducing",
+     "prerequisites": [
+      "SAF-1.M3.L3"
+     ],
+     "competencies": [
+      {
+       "id": "TS-STK",
+       "level": 3
+      },
+      {
+       "id": "KM-WAST",
+       "level": 3
+      },
+      {
+       "id": "SA-TEMP",
+       "level": 4
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** five litres of stock are only useful if they are safe and to hand. Cooling a big batch fast, portioning it, and reducing some to *glace* turn a weekend's stock into a month of quick sauces and soups."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** a batch of strained stock (from `STK-2.M2.X1`); two or three shallow containers; a sink or large bowl with ice and water; a spoon for stirring; the probe; 500 ml tubs and an ice-cube tray; labels; a small saucepan."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Cooling a stock by the measurable standard* (assessment §9):"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "from 57 °C to 21 °C within 2 hours, and to 5 °C or below within 6 hours in total;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "by splitting it into shallow containers, set in an ice-water bath and stirred;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "logged: the time and the probe reading every 30 minutes."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "A full pot in the fridge stays warm in the middle for many hours and warms everything around it."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Storing:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "in the fridge, covered, for at most 2 days (§9);"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "or frozen in labelled portions: 500 ml tubs for soups, an ice-cube tray for small amounts for sauces;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "once cold, the fat sets on top: lift it off before freezing."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Reducing to glace.* Simmer an unsalted stock until it has reduced to about a tenth, a syrup that coats a spoon. Chilled, it sets firm. A cube of *glace* gives a pan sauce body and depth in seconds. Freeze it in the ice-cube tray."
+      },
+      {
+       "type": "paragraph",
+       "text": "*The trim and bone bags* (`KM-WAST`): what was waste is now the next stock. Note in the waste log what went into each stock."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Cool and portion (45 min, plus waiting).** Cool the batch by the standard, logging it. Portion and freeze it, labelled. Reduce one 500 ml portion to *glace*, and set it in the fridge."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** a log within the limits; labelled portions; a *glace* that coats a spoon and sets in the fridge."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Still warm at bedtime",
+         "A full pot cooling on the stove",
+         "Shallow containers in an ice bath"
+        ],
+        [
+         "A freezer of unknown tubs",
+         "Unlabelled tubs",
+         "Label the stock and the date"
+        ],
+        [
+         "A bitter, salty *glace*",
+         "Reducing salted stock, which turns too salty",
+         "Never salt a stock"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** this lesson is the safety rule: the cooling standard, 2 days in the fridge, and every reheated portion at least 74 °C, once (assessment §9)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the cooling log, and the portions in the freezer list."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "STK-2.M2.X1",
+     "title": "White chicken stock, with clarity and gel photographed",
+     "description": "White chicken stock with a clarity and gel photo after chilling.",
+     "competencies": [
+      {
+       "id": "TS-STK",
+       "level": 3
+      },
+      {
+       "id": "TS-MOI",
+       "level": 4
+      },
+      {
+       "id": "SC-PROT",
+       "level": 3
+      },
+      {
+       "id": "SC-BRWN",
+       "level": 3
+      },
+      {
+       "id": "SA-TEMP",
+       "level": 4
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** a clear, gelatinous stock, simmered under control and cooled safely, with the brown stock of `STK-2.M2.L3` documented the same way."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**White stock:** 2 kg of chicken wings and backs (or a carcass and wings); 3 litres of cold water; a *mirepoix* of 150 g of onion, 75 g of carrot and 75 g of celery in large chunks; a *bouquet garni*."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**Brown stock:** 2 kg of beef or veal bones; the same *mirepoix* and bouquet; 2 tablespoons of tomato paste; 3 litres of cold water."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "The stockpot; the probe; a skimmer; the fine sieve and muslin; shallow containers and an ice bath; tubs; labels; a glass; a phone."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Recipe:** the white stock."
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Blanch (optional)** as in `STK-2.M2.L2`."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Cover** the bones with the 3 litres of cold water and bring slowly to a bare simmer, skimming the foam."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "**Add** the *mirepoix* and the bouquet after the first skim."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "**Simmer** uncovered at 85–95 °C for 4–5 hours. Log the temperature every 30 minutes; skim and note the foam."
+        },
+        {
+         "level": 0,
+         "marker": "5.",
+         "text": "**Strain** through the lined sieve, ladling, without pressing."
+        },
+        {
+         "level": 0,
+         "marker": "6.",
+         "text": "**Cool** by the standard in shallow containers in an ice bath, logged every 30 minutes; then into the fridge."
+        },
+        {
+         "level": 0,
+         "marker": "7.",
+         "text": "**Next day,** lift off the fat. Photograph the stock in a glass in front of printed text (clarity), and a spoonful turned out on a plate (gel)."
+        },
+        {
+         "level": 0,
+         "marker": "8.",
+         "text": "**Portion** and freeze, labelled. **Reheat** one portion to 74 °C and log it."
+        },
+        {
+         "level": 0,
+         "marker": "9.",
+         "text": "**Explain** the gel from collagen."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "The brown stock follows `STK-2.M2.L3`, logged and photographed the same way."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`TS-STK` level 3, the stock part:** a white and a brown stock that are clear and set to a gel when chilled."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`TS-MOI` level 4, the simmer part:** the simmer held and logged at 85–95 °C."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`SC-PROT` level 3, the extraction part:** the gel explained from collagen, with this module's items at 80 %."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`SC-BRWN` level 3, the browning part:** the bones evenly deep brown, with no burnt pieces."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`SA-TEMP` level 4:** cooled from 57 °C to 21 °C within 2 hours and to 5 °C within 6 hours, then reheated to 74 °C, logged."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "AI review scores the clarity in the glass and the gel: *competent* is print readable through a clear stock and a gel that holds its shape; *not yet* is a cloudy, greasy stock that runs."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** two stock days (about 2 h active each)."
+      }
+     ]
+    },
+    {
+     "id": "STK-2.M2.X2",
+     "title": "A vegetable stock from the trim bag, by ratio",
+     "description": "A vegetable stock from the trim bag, by ratio only.",
+     "competencies": [
+      {
+       "id": "TS-STK",
+       "level": 3
+      },
+      {
+       "id": "KM-WAST",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** a clear vegetable stock from saved trim, by ratio only, and a waste log that shows the trim being used. The trim comes from two weeks of cooking, frozen."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** about 1 kg of frozen trim (onion and leek ends, carrot peel, celery leaves, mushroom stalks, herb stalks, tomato ends; no brassicas); water; a *bouquet garni*; oil; a pot; the scale; the fine sieve; a glass; the waste log."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Framework:** the vegetable-stock ratio."
+      },
+      {
+       "type": "table",
+       "header": [
+        "Part",
+        "What it is",
+        "Your decisions"
+       ],
+       "rows": [
+        [
+         "Trim and aromatics",
+         "Weighed; fresh onion or leek added if the bag is thin on them",
+         "What to add"
+        ],
+        [
+         "Water",
+         "2 litres per kg of trim and aromatics (1 : 2 by weight)",
+         "—"
+        ],
+        [
+         "Sweating",
+         "A few minutes in a little oil, without colour",
+         "—"
+        ],
+        [
+         "Time",
+         "About 45–60 minutes at a simmer",
+         "When to stop, by taste"
+        ],
+        [
+         "Straining",
+         "Fine sieve, without pressing",
+         "—"
+        ],
+        [
+         "Use",
+         "Soups, risotto, the sauces of `SAU-2`",
+         "Fridge for 2 days, or frozen"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Procedure:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "Weigh the trim."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "Calculate the water."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "Sweat, simmer for about an hour, strain."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "Photograph the stock in a glass."
+        },
+        {
+         "level": 0,
+         "marker": "5.",
+         "text": "Compare this fortnight's waste log with the first one (from `KNF-1` or `VEG-1`)."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`TS-STK`:** further stock evidence, from a framework."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`KM-WAST` level 3, in part:** the first of the three meals that use planned trim, with the waste log against the first week. The others follow in `POU-2.M5.X1` and `LEG-2.M2.X1`."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "This stock counts as one of the three dishes of the `TS-MEP` level 4 row if you prep it from a written task list (`KNF-2.M1.X2`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 1.25 h."
+      }
+     ]
+    }
+   ],
+   "items": [
+    {
+     "id": "STK-2.M2.Q1",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "STK-2.M2.L1",
+     "safety": false,
+     "question": "Why is a stock never boiled?",
+     "options": [
+      {
+       "key": "A",
+       "text": "it evaporates"
+      },
+      {
+       "key": "B",
+       "text": "boiling churns fat and particles into the liquid and makes it cloudy"
+      },
+      {
+       "key": "C",
+       "text": "it loses salt"
+      },
+      {
+       "key": "D",
+       "text": "it cooks too fast"
+      }
+     ],
+     "answer": "B",
+     "why": "A bare simmer keeps it clear."
+    },
+    {
+     "id": "STK-2.M2.Q2",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "STK-2.M2.L1",
+     "safety": false,
+     "question": "What makes a stock set to a gel when chilled?",
+     "options": [
+      {
+       "key": "A",
+       "text": "salt"
+      },
+      {
+       "key": "B",
+       "text": "gelatin from the collagen in bones, joints and skin"
+      },
+      {
+       "key": "C",
+       "text": "fat"
+      },
+      {
+       "key": "D",
+       "text": "starch"
+      }
+     ],
+     "answer": "B",
+     "why": "Wings, feet and joints give the most."
+    },
+    {
+     "id": "STK-2.M2.Q3",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "STK-2.M2.L1",
+     "safety": false,
+     "question": "Why is stock not salted?",
+     "options": [
+      {
+       "key": "A",
+       "text": "salt clouds it"
+      },
+      {
+       "key": "B",
+       "text": "it will be reduced or used in dishes, where the salt would concentrate"
+      },
+      {
+       "key": "C",
+       "text": "salt stops gelatin"
+      },
+      {
+       "key": "D",
+       "text": "tradition"
+      }
+     ],
+     "answer": "B",
+     "why": "Season the final dish."
+    },
+    {
+     "id": "STK-2.M2.Q4",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "STK-2.M2.L4",
+     "safety": false,
+     "question": "Why does a fish *fumet* simmer for only 20–30 minutes?",
+     "options": [
+      {
+       "key": "A",
+       "text": "fish is delicate in taste only"
+      },
+      {
+       "key": "B",
+       "text": "longer extracts bitter, gluey compounds from the thin bones"
+      },
+      {
+       "key": "C",
+       "text": "to save gas"
+      },
+      {
+       "key": "D",
+       "text": "it sets otherwise"
+      }
+     ],
+     "answer": "B",
+     "why": "Fish bones give up their flavour and gelatin quickly."
+    },
+    {
+     "id": "STK-2.M2.Q5",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "STK-2.M2.L4",
+     "safety": false,
+     "question": "Which doesn't belong in a vegetable stock?",
+     "options": [
+      {
+       "key": "A",
+       "text": "leek greens"
+      },
+      {
+       "key": "B",
+       "text": "cabbage"
+      },
+      {
+       "key": "C",
+       "text": "mushroom stalks"
+      },
+      {
+       "key": "D",
+       "text": "parsley stalks"
+      }
+     ],
+     "answer": "B",
+     "why": "Brassicas turn sulphurous; starchy vegetables cloud it."
+    },
+    {
+     "id": "STK-2.M2.Q6",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "STK-2.M2.L5",
+     "safety": true,
+     "question": "How fast must a batch of stock cool by the measurable standard?",
+     "options": [
+      {
+       "key": "A",
+       "text": "to room temperature overnight"
+      },
+      {
+       "key": "B",
+       "text": "57 °C to 21 °C within 2 hours, and to 5 °C within 6 hours in total"
+      },
+      {
+       "key": "C",
+       "text": "in the fridge in its pot"
+      },
+      {
+       "key": "D",
+       "text": "within 12 hours"
+      }
+     ],
+     "answer": "B",
+     "why": "Assessment §9, the Food Code cooling rule."
+    },
+    {
+     "id": "STK-2.M2.Q7",
+     "type": "SCENARIO",
+     "lessonId": "STK-2.M2.L5",
+     "safety": true,
+     "question": "You have 5 litres of hot stock in the pot at 21:00. How do you cool it?",
+     "options": [],
+     "answer": "Strain it into several shallow containers, set them in an ice-water bath and stir, log the temperature, and refrigerate as soon as it allows; portion and freeze what won't be used within 2 days.",
+     "why": "Shallow and iced cool fast enough; a full pot does not."
+    },
+    {
+     "id": "STK-2.M2.Q8",
+     "type": "SCENARIO",
+     "lessonId": "STK-2.M2.L5",
+     "safety": false,
+     "question": "A recipe calls for 2 tablespoons of *glace*. You have frozen stock. What do you do, and what must the stock not be?",
+     "options": [],
+     "answer": "Reduce some stock until it is syrupy and coats a spoon; the stock must be unsalted, or the *glace* will be far too salty.",
+     "why": "Reduction concentrates everything."
+    }
+   ]
+  },
+  {
+   "id": "STK-2.M3",
+   "title": "Clear soups",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** the 8 items of `STK-2.M3` in the course file. Pass mark 80 %."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "STK-2.M3.L1",
+     "title": "Broth-based soups",
+     "prerequisites": [
+      "STK-2.M2.L2"
+     ],
+     "competencies": [
+      {
+       "id": "TS-STK",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** a clear soup hides nothing. The stock is the soup, and the garnish shows your knife and your timing. The Dutch *heldere soep* (clear soup) is the everyday test of both."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** 1.5 litres of your white chicken stock; a carrot, a small leek and a piece of celeriac for a fine *brunoise*; 50 g of vermicelli; parsley or chervil; salt; two pots; a fine sieve; warm bowls."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*A clear soup is only as good as its stock.* A cloudy stock can't be saved by a garnish. Start from a clear one, brought gently to a simmer, never boiled."
+      },
+      {
+       "type": "paragraph",
+       "text": "*The garnish:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**cut small and evenly,** so it cooks in minutes and sits on a spoon: a *brunoise* (2–3 mm) or fine julienne of carrot, leek and celeriac (`KNF-1.M3`);"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**cooked in the broth** if it cooks quickly and doesn't cloud it: vegetables, a few minutes;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**cooked separately** if it would cloud it: pasta and rice release starch, so they are boiled in salted water, drained and added to the bowl."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*The Dutch heldere soep:* a clear beef or chicken broth with fine vegetables, vermicelli and small meatballs (*soepballetjes*). Meatballs are minced meat: poached in the broth until 75 °C at the centre, probed (assessment §9)."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Consommé* is a stock clarified with a raft of egg white and minced meat, which traps every particle and gives a crystal-clear soup. It is named here and made in `CLS-4`."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Season at the end,* when the garnish is in: salt and a few drops of acid, tasted (`STK-2.M3.L2`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**A clear soup (75 min).** Cut a fine *brunoise* of carrot, leek and celeriac. Bring the stock to a simmer and cook the *brunoise* in it until just tender, about 3–4 minutes. Cook the vermicelli separately in salted water and drain it. Season the broth, put the vermicelli in warm bowls, ladle the broth over, and finish with herbs."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** a clear broth; a garnish that is tender but holds its shape."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "A cloudy, starchy broth",
+         "Pasta cooked in the broth, which clouds it",
+         "Cook it separately"
+        ],
+        [
+         "Clumsy chunks on the spoon",
+         "A garnish cut too large",
+         "A fine, even *brunoise*"
+        ],
+        [
+         "A dull, murky soup",
+         "A cloudy stock that no garnish can save",
+         "Start from a clear stock"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** meatballs in a clear soup are probed to 75 °C at the centre (assessment §9, minced meat)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** a photo of the bowl and a tasting line."
+      }
+     ]
+    },
+    {
+     "id": "STK-2.M3.L2",
+     "title": "Seasoning a broth",
+     "prerequisites": [
+      "TST-1.M2.L2"
+     ],
+     "competencies": [
+      {
+       "id": "FL-SEAS",
+       "level": 3
+      },
+      {
+       "id": "FL-SENS",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** a broth shows seasoning nakedly: a gram too little and it tastes of hot water, a few too many and it is undrinkable. Seasoning one by weight and checking it blind against the household is the clearest test of your calibrated palate."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** 1.5 litres of stock; fine salt; the scale; lemon juice or vinegar; a source of umami (a Parmesan rind, a dried mushroom, soy sauce); coded cups; the household; the tasting form; the salt and acid series for the triangle tests (`TST-1.M2.X1`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Salt to your range.* A broth is salted to your calibrated range from `TST-1` (around 8–12 g/l): weigh the salt for the volume, stir, taste, and adjust by the gram. Note every addition. Taste it hot, as it will be eaten, from a clean spoon each time."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Acid and umami:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**acid:** a few drops of lemon or vinegar lift a flat broth, but only once the salt is right;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**umami:** a Parmesan rind or a dried mushroom simmered in it, or a dash of soy, deepens it."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "Add one thing at a time, taste, and note it. Stop when it tastes complete."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Blind checking.* The household tastes the broth without knowing the target and marks it on their cards: under, right or over. Their cards and your calibrated form are compared."
+      },
+      {
+       "type": "paragraph",
+       "text": "*This month's calibration.* Run the salt and acid triangle tests of assessment §5 in the same week, as in `TST-1.M2.X1`."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Season and check (60 min).** Season the broth by weight and taste, recording every adjustment. The household judges it blind. Then run the triangle tests."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** your form and the tasters' cards agree; the triangle tests passed; every adjustment written down."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Different every time",
+         "Salting by eye",
+         "Weigh the salt for the volume"
+        ],
+        [
+         "A sharp but still flat broth",
+         "Adding acid to a broth that needs salt",
+         "Salt first, then acid"
+        ],
+        [
+         "A broth that tastes of soy",
+         "Over-correcting with umami until it tastes of soy",
+         "A few drops, tasted between"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** no special risks beyond the kitchen basics (`SAF-1`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the salt weighed, each adjustment, the cards and the triangle results."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "STK-2.M3.X1",
+     "title": "A vegetable and noodle broth",
+     "description": "A vegetable and noodle broth from a framework.",
+     "competencies": [
+      {
+       "id": "TS-STK",
+       "level": 3
+      },
+      {
+       "id": "FL-SEAS",
+       "level": 3
+      },
+      {
+       "id": "FL-SENS",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** a clear soup from a framework, seasoned at every stage and checked blind against calibrated tasters. You choose the quantities and the seasoning; the salt and acid triangle tests are run in the same week."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** for 4: 1.5 litres of homemade stock; seasonal vegetables (leek, carrot and savoy cabbage in winter; peas and spring onion in summer); 150 g of noodles; herbs; soy or a Parmesan rind; salt; the scale; two pots; coded cups; the tasting form and the cards; a phone."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Framework:** broth, aromatics, garnish, noodles, finish."
+      },
+      {
+       "type": "table",
+       "header": [
+        "Part",
+        "What it is",
+        "Your decisions"
+       ],
+       "rows": [
+        [
+         "Broth",
+         "Homemade stock, simmered with an aromatic (ginger, garlic, a leek green)",
+         "Which aromatic"
+        ],
+        [
+         "Seasoning",
+         "Salt weighed to your range, then acid and umami by taste",
+         "The amounts, recorded"
+        ],
+        [
+         "Garnish",
+         "Seasonal vegetables cut small, cooked in the broth to just tender",
+         "Which; the cut"
+        ],
+        [
+         "Noodles",
+         "Cooked separately in salted water",
+         "Which noodles"
+        ],
+        [
+         "Finish",
+         "Herbs, spring onion, a drop of oil or acid",
+         "Which"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Procedure:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "Season the broth at each stage, weighing the salt."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "Cook the garnish and the noodles separately."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "Assemble."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "The tasters judge it blind."
+        },
+        {
+         "level": 0,
+         "marker": "5.",
+         "text": "Fill in the form."
+        },
+        {
+         "level": 0,
+         "marker": "6.",
+         "text": "Photograph it."
+        },
+        {
+         "level": 0,
+         "marker": "7.",
+         "text": "Run and record the triangle tests."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`TS-STK` level 3:** the first of the three soups."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`FL-SEAS` level 3:** the first of three framework dishes seasoned at every stage, with the salt weighed, and the calibrated form and the tasters agreeing."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`FL-SENS` level 3, in part:** the triangle tests passed and the first of the three forms confirmed by the tasters."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 1 h."
+      }
+     ]
+    }
+   ],
+   "items": [
+    {
+     "id": "STK-2.M3.Q1",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "STK-2.M3.L1",
+     "safety": false,
+     "question": "Why are noodles for a clear soup cooked separately?",
+     "options": [
+      {
+       "key": "A",
+       "text": "to save time"
+      },
+      {
+       "key": "B",
+       "text": "their starch would cloud the broth"
+      },
+      {
+       "key": "C",
+       "text": "they need salt"
+      },
+      {
+       "key": "D",
+       "text": "they cook faster"
+      }
+     ],
+     "answer": "B",
+     "why": "Starch clouds a clear soup."
+    },
+    {
+     "id": "STK-2.M3.Q2",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "STK-2.M3.L1",
+     "safety": false,
+     "question": "What is a consommé?",
+     "options": [
+      {
+       "key": "A",
+       "text": "a thick soup"
+      },
+      {
+       "key": "B",
+       "text": "a stock clarified with a raft of egg white and minced meat"
+      },
+      {
+       "key": "C",
+       "text": "a cold soup"
+      },
+      {
+       "key": "D",
+       "text": "a purée"
+      }
+     ],
+     "answer": "B",
+     "why": "The technique comes in `CLS-4`."
+    },
+    {
+     "id": "STK-2.M3.Q3",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "STK-2.M3.L1",
+     "safety": false,
+     "question": "The garnish of a clear soup should be:",
+     "options": [
+      {
+       "key": "A",
+       "text": "large and rustic"
+      },
+      {
+       "key": "B",
+       "text": "small, evenly cut and cooked just to tender"
+      },
+      {
+       "key": "C",
+       "text": "raw"
+      },
+      {
+       "key": "D",
+       "text": "puréed"
+      }
+     ],
+     "answer": "B",
+     "why": "It should be eaten from a spoon without cutting."
+    },
+    {
+     "id": "STK-2.M3.Q4",
+     "type": "CALCULATION",
+     "lessonId": "STK-2.M3.L2",
+     "safety": false,
+     "question": "You want 1.5 litres of broth at 10 g of salt per litre and it already contains 4 g. How much more?",
+     "options": [],
+     "answer": "11 g",
+     "why": "15 − 4."
+    },
+    {
+     "id": "STK-2.M3.Q5",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "STK-2.M3.L2",
+     "safety": false,
+     "question": "A well-salted broth tastes flat. What do you try?",
+     "options": [
+      {
+       "key": "A",
+       "text": "more salt"
+      },
+      {
+       "key": "B",
+       "text": "a few drops of acid, or a little umami"
+      },
+      {
+       "key": "C",
+       "text": "water"
+      },
+      {
+       "key": "D",
+       "text": "sugar"
+      }
+     ],
+     "answer": "B",
+     "why": "Salt is right; the broth needs lift or depth."
+    },
+    {
+     "id": "STK-2.M3.Q6",
+     "type": "SCENARIO",
+     "lessonId": "STK-2.M3.L2",
+     "safety": false,
+     "question": "Your form says \"just right\" but two of three tasters call the broth under-salted. What do you do?",
+     "options": [],
+     "answer": "Check the calibration (retake the triangle tests); add salt in small weighed steps and re-taste blind; note the difference for future guests.",
+     "why": "Tasters' cards keep self-assessment honest."
+    },
+    {
+     "id": "STK-2.M3.Q7",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "STK-2.M3.L2",
+     "safety": false,
+     "question": "Why is the salt weighed even when you season by taste?",
+     "options": [
+      {
+       "key": "A",
+       "text": "to save salt"
+      },
+      {
+       "key": "B",
+       "text": "so the seasoning is reproducible and the record can show what \"right\" was"
+      },
+      {
+       "key": "C",
+       "text": "for safety"
+      },
+      {
+       "key": "D",
+       "text": "it isn't"
+      }
+     ],
+     "answer": "B",
+     "why": "A weight makes the next time predictable."
+    },
+    {
+     "id": "STK-2.M3.Q8",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "STK-2.M3.L2",
+     "safety": false,
+     "question": "Which adds umami to a vegetable broth?",
+     "options": [
+      {
+       "key": "A",
+       "text": "sugar"
+      },
+      {
+       "key": "B",
+       "text": "a Parmesan rind or dried mushrooms"
+      },
+      {
+       "key": "C",
+       "text": "lemon"
+      },
+      {
+       "key": "D",
+       "text": "more water"
+      }
+     ],
+     "answer": "B",
+     "why": "Glutamates and nucleotides (`TST-1.M3.L4`)."
+    }
+   ]
+  },
+  {
+   "id": "STK-2.M4",
+   "title": "Thick soups",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** the 8 items of `STK-2.M4` in the course file, 1 of them a safety item. Pass mark 80 %, with every safety item correct."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "STK-2.M4.L1",
+     "title": "Purée soups",
+     "prerequisites": [
+      "STK-2.M2.L4"
+     ],
+     "competencies": [
+      {
+       "id": "TS-VEG",
+       "level": 4
+      },
+      {
+       "id": "FL-TEXT",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** a purée soup is the most useful soup there is: one vegetable, an aromatic base and stock, blended smooth. Its quality is all in the texture: velvety and flowing, or grainy, gluey or thin."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** 1 kg of a seasonal vegetable (squash, celeriac or carrot in autumn and winter; peas in summer); an onion or leek; 1–1.2 litres of stock; butter; salt; a stick blender (or a jug blender); a fine sieve and a ladle; a spoon."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*The method:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Sweat** the aromatics in butter."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Add** the main vegetable, cut evenly, and the stock to just cover."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "**Simmer until fully tender**: a piece crushes against the side of the pot."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "**Blend** until smooth."
+        },
+        {
+         "level": 0,
+         "marker": "5.",
+         "text": "**Pass** through a sieve for a fine texture, pushing with a ladle."
+        },
+        {
+         "level": 0,
+         "marker": "6.",
+         "text": "**Adjust the body**, then season."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Body:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**from starch:** a potato, a little rice, or a starchy vegetable thickens the soup;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**from the vegetable itself:** squash, peas and celeriac are thick enough alone."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "Too thin: reduce, or blend in more vegetable. Too thick: loosen with hot stock. Too much potato turns gluey when blended."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Blending hot liquids safely.* Steam expands in a closed blender and can blow the lid off and spray boiling soup:"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "a jug blender is filled no more than a third, the lid's centre cap removed and a folded towel held over it, starting on low;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "a stick blender in the pot, off the heat, is safer."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Name the texture before cooking:* velvety, coarse, or smooth with a crisp garnish (`FL-TEXT`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**A purée soup (75 min).** Make a seasonal purée soup, blended and passed. Photograph a spoonful falling from the spoon."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** a soup that coats a spoon and flows; no fibres; bright colour."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "A grainy soup",
+         "Undercooked vegetables that blend grainy",
+         "Simmer until they crush easily"
+        ],
+        [
+         "Soup on the ceiling, a burn",
+         "A blender lid blown off by steam",
+         "A third full, vented, towel over; or a stick blender"
+        ],
+        [
+         "A gluey, elastic soup",
+         "Too much potato, which goes gluey",
+         "Less potato; don't over-blend it"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** blend hot soup with a stick blender off the heat, or a jug blender a third full with the lid vented under a towel (`STK-2.M4.Q2`). Leftover soup is cooled and in the fridge within 2 hours, and kept at most 2 days (assessment §9)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the texture target and the photo."
+      }
+     ]
+    },
+    {
+     "id": "STK-2.M4.L2",
+     "title": "Cream and *velouté* soups",
+     "prerequisites": [
+      "STK-2.M2.L2"
+     ],
+     "competencies": [
+      {
+       "id": "TS-STK",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** the classical cream soup has a satin texture that a plain purée doesn't: a stock thickened with a roux, flavoured with the vegetable, finished with cream or a *liaison* of yolks and cream. It teaches two finishes that the sauces of `SAU-2` use constantly."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** for 4: 500 g of leeks, mushrooms or cauliflower; 40 g of butter and 40 g of flour; 1 litre of white chicken or vegetable stock, hot; 2 egg yolks and 100 ml of cream; salt, pepper, nutmeg; a pot; a whisk; a small bowl; a stick blender; the probe."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*The classical cream soup:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**A blond roux:** melt the butter, whisk in the flour, and cook it gently for 2–3 minutes until it smells of biscuit, not raw flour, without colour."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**The velouté:** whisk in the hot stock gradually, bring to a simmer, and cook for 15–20 minutes to lose the taste of flour."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "**The vegetable:** sweated separately in butter, added and simmered until tender."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "**Blend** until smooth."
+        },
+        {
+         "level": 0,
+         "marker": "5.",
+         "text": "**Finish** with cream, or with a *liaison*."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*The liaison:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "whisk the yolks and the cream in a bowl;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "temper them: whisk in a ladle of the hot soup, then another;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "stir the mixture into the soup, off the heat;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "return to a gentle heat, stirring, until the soup thickens slightly and the probe reads at least 71 °C, without letting it boil."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "It thickens and enriches, but curdles if boiled (`EGG-1.M4`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Avoiding a split.* Acid and boiling curdle cream. Acidic ingredients (wine, lemon) go in before the cream, and the soup is not boiled after it."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**A cream soup (75 min).** Make a leek, mushroom or cauliflower cream soup on a *velouté*, finished with a *liaison*. Probe it after the *liaison*."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** a satin texture; no taste of raw flour; no curdling after the *liaison*."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "A pasty, floury taste",
+         "A raw-tasting roux",
+         "Cook the roux, then simmer the velouté 15–20 minutes"
+        ],
+        [
+         "Grainy flecks of egg",
+         "Boiling after the *liaison*",
+         "Gentle heat, stirring; never boil"
+        ],
+        [
+         "A split, grainy soup",
+         "Lemon added after the cream",
+         "Acid before the cream"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** a soup with a *liaison* is heated, stirring, until it reaches at least 71 °C, the §9 figure for egg-thickened dishes, without boiling. It is eaten hot, and leftovers are cooled and kept as leftovers (assessment §9)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the probe reading after the *liaison*, and a photo of the soup."
+      }
+     ]
+    },
+    {
+     "id": "STK-2.M4.L3",
+     "title": "Hearty soups",
+     "prerequisites": [
+      "STK-2.M2.L4"
+     ],
+     "competencies": [
+      {
+       "id": "IN-VEG",
+       "level": 3
+      },
+      {
+       "id": "TS-STK",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** a pan of *erwtensoep* or minestrone is a whole meal in a bowl, and the most forgiving soup there is, except in one way: everything has its own cooking time. Added in the right order, every ingredient arrives tender and still recognisable."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** for a pea soup for 6: 500 g of split green peas, rinsed; 2 litres of water or stock; 1 leek, 1 onion, 2 carrots, half a celeriac, 2 potatoes; a smoked sausage (*rookworst*) or a piece of smoked bacon, or none; celery leaves; salt and pepper; the stockpot; a timer. For a minestrone, see `STK-2.M4.X2`."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Hearty soups* (minestrone, chowder, a pea or pulse soup, the Dutch *erwtensoep*) are chunky meals in a bowl. They are built in layers."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Layering by cooking time,* from the structure of each ingredient (`VEG-1.M1`):"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Order",
+        "What",
+        "Why"
+       ],
+       "rows": [
+        [
+         "1",
+         "Dried pulses, dense roots",
+         "They need the longest"
+        ],
+        [
+         "2",
+         "Softer vegetables: leek, potato, celeriac",
+         "20–30 minutes"
+        ],
+        [
+         "3",
+         "Pasta or greens",
+         "A few minutes"
+        ],
+        [
+         "4",
+         "Herbs",
+         "At the end"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Body* comes from the pulses, potatoes or a little starch. The texture of each ingredient should still be recognisable, except in a pea soup, where the peas fall apart into the body on purpose."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Dried pulses.* Split peas need no soaking; whole dried beans need soaking and long simmering (`LEG-2`). Dried kidney beans and other common beans are soaked for at least 5 hours, the water poured away, then boiled in fresh water for at least 30 minutes (assessment §9). Acid (tomato) and very hard water slow their softening: add tomato once they are soft."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Erwtensoep* is traditionally so thick that a spoon stands in it, and better the next day."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**A hearty soup (75 min, plus about 2 hours simmering).** Make a pea soup or a minestrone, adding the ingredients in layers and timing each layer. For the pea soup: the peas in the water, simmered about an hour, stirring now and then; then the diced vegetables and the sausage for 30–40 minutes; the celery leaves at the end."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** every ingredient cooked through and still distinct; a body that holds a spoon briefly."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Grey greens, hard pulses",
+         "Everything in at once, so the greens turn grey and the pulses stay hard",
+         "Layer by cooking time"
+        ],
+        [
+         "Mushy pasta",
+         "Pasta cooked to mush",
+         "Add it for the last minutes, or cook it separately"
+        ],
+        [
+         "Beans still hard after hours",
+         "Tomato added before the pulses soften",
+         "Tomato once they are soft"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** a thick pulse soup scorches and spits: stir from the bottom, with a long spoon. A big pot is cooled by the standard before the fridge, or portioned and frozen (assessment §9)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the timing of each layer, and a photo of a spoonful."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "STK-2.M4.X1",
+     "title": "A seasonal purée soup and a cream soup",
+     "description": "A seasonal purée soup and a cream soup.",
+     "competencies": [
+      {
+       "id": "TS-VEG",
+       "level": 4
+      },
+      {
+       "id": "FL-TEXT",
+       "level": 2
+      },
+      {
+       "id": "TS-STK",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** two thick soups to a stated texture, from frameworks: a purée and a cream soup, with the vegetables by season and the target texture written before cooking."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** for 4 each: 1 kg of a seasonal vegetable (squash, celeriac, peas, leeks, cauliflower); homemade stock; butter and flour; cream and yolks; salt; a stick blender; a sieve; the probe; the texture form; the household's cards; a phone."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Framework:** the purée and the velouté."
+      },
+      {
+       "type": "table",
+       "header": [
+        "Part",
+        "Purée soup",
+        "Cream soup"
+       ],
+       "rows": [
+        [
+         "Base",
+         "Aromatics sweated in butter",
+         "A blond roux, then hot stock: a velouté"
+        ],
+        [
+         "Vegetable",
+         "About 1 kg, cut evenly",
+         "500–600 g, sweated separately"
+        ],
+        [
+         "Liquid",
+         "Stock to just cover",
+         "About 1 litre of stock in the velouté"
+        ],
+        [
+         "Body",
+         "From the vegetable or a little potato",
+         "From the roux"
+        ],
+        [
+         "Finish",
+         "Blended, passed; body adjusted",
+         "Blended; cream or a *liaison*, to at least 71 °C, never boiled"
+        ],
+        [
+         "Your decisions",
+         "The vegetable, the body, the garnish",
+         "The vegetable, cream or *liaison*, the garnish"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Procedure:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "Write the target texture."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "Make both soups."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "Photograph a spoonful falling and a bowl with its garnish."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "Fill in the texture form."
+        },
+        {
+         "level": 0,
+         "marker": "5.",
+         "text": "The household fills in its cards."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`TS-VEG` level 4, the purée part:** a vegetable purée to standard. The timing part was shown in `HEA-2.M3.X1`, and the glaze in `VEG-1.M4.X2`."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`FL-TEXT` level 2:** the intended textures named and hit, photographed."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`TS-STK` level 3:** the second and third soups of the row."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "AI review scores the flow and the smoothness: *competent* is a velvety soup that coats a spoon and flows; *not yet* is grainy, split or gluey."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 2 × 75 min."
+      }
+     ]
+    },
+    {
+     "id": "STK-2.M4.X2",
+     "title": "A hearty soup from a framework",
+     "description": "A hearty soup from a framework (base, liquid, main vegetables, garnish).",
+     "competencies": [
+      {
+       "id": "TS-STK",
+       "level": 3
+      },
+      {
+       "id": "IN-VEG",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** a hearty soup built from a framework, with the ingredients layered by their structure. You choose by season, and write the order of addition with the reason."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** for 6: a base (onion, carrot, celery or leek); 2 litres of stock; dried peas or beans (soaked by the §9 rule for beans) or potatoes; seasonal vegetables (in winter celeriac, kale, savoy cabbage; in summer courgette, beans, tomato); greens or small pasta; herbs; the stockpot; a timer; the tasting form; a phone."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Framework:** base, liquid, main vegetables, a starch or pulse, a garnish."
+      },
+      {
+       "type": "table",
+       "header": [
+        "Part",
+        "What it is",
+        "Your decisions"
+       ],
+       "rows": [
+        [
+         "Base",
+         "Sweated aromatics (`STK-2.M1.L1`)",
+         "Which tradition"
+        ],
+        [
+         "Liquid",
+         "Stock, about 2 litres for 6",
+         "Which stock"
+        ],
+        [
+         "Starch or pulse",
+         "Split peas (no soak), soaked beans (5 hours soaked, water poured away, boiled 30 minutes), or potatoes",
+         "Which, and when it goes in"
+        ],
+        [
+         "Main vegetables",
+         "Layered by cooking time",
+         "Which, and the order"
+        ],
+        [
+         "Garnish",
+         "Greens or pasta for the last minutes; herbs at the end",
+         "Which"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Procedure:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "Write the order of addition and why: what heat does to each vegetable's texture."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "Cook, timing each layer."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "Photograph a spoonful."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "Taste and fill in the form."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`TS-STK` level 3:** a hearty soup to standard."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`IN-VEG` level 3:** the order explained from what heat does to each vegetable, shown in the photo, with this module's items at 80 %."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 1.25 h, plus simmering; six portions."
+      }
+     ]
+    }
+   ],
+   "items": [
+    {
+     "id": "STK-2.M4.Q1",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "STK-2.M4.L1",
+     "safety": false,
+     "question": "Where does the body of a squash soup come from?",
+     "options": [
+      {
+       "key": "A",
+       "text": "cream only"
+      },
+      {
+       "key": "B",
+       "text": "the squash itself, which is starchy and thick enough alone"
+      },
+      {
+       "key": "C",
+       "text": "flour"
+      },
+      {
+       "key": "D",
+       "text": "eggs"
+      }
+     ],
+     "answer": "B",
+     "why": "Some vegetables need no added starch."
+    },
+    {
+     "id": "STK-2.M4.Q2",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "STK-2.M4.L1",
+     "safety": true,
+     "question": "How do you blend a hot soup safely in a jug blender?",
+     "options": [
+      {
+       "key": "A",
+       "text": "fill it to the top and blend on high"
+      },
+      {
+       "key": "B",
+       "text": "fill it no more than a third, vent the lid and cover it with a towel"
+      },
+      {
+       "key": "C",
+       "text": "seal it tight"
+      },
+      {
+       "key": "D",
+       "text": "blend it boiling"
+      }
+     ],
+     "answer": "B",
+     "why": "Steam pressure can blow the lid off."
+    },
+    {
+     "id": "STK-2.M4.Q3",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "STK-2.M4.L1",
+     "safety": false,
+     "question": "Why is a purée soup passed through a sieve?",
+     "options": [
+      {
+       "key": "A",
+       "text": "to cool it"
+      },
+      {
+       "key": "B",
+       "text": "for a fine, fibre-free texture"
+      },
+      {
+       "key": "C",
+       "text": "to thin it"
+      },
+      {
+       "key": "D",
+       "text": "to season it"
+      }
+     ],
+     "answer": "B",
+     "why": "Blending leaves fibres; passing removes them."
+    },
+    {
+     "id": "STK-2.M4.Q4",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "STK-2.M4.L2",
+     "safety": false,
+     "question": "What is a *velouté*?",
+     "options": [
+      {
+       "key": "A",
+       "text": "a cold soup"
+      },
+      {
+       "key": "B",
+       "text": "a stock thickened with a blond roux"
+      },
+      {
+       "key": "C",
+       "text": "a cream sauce"
+      },
+      {
+       "key": "D",
+       "text": "a purée"
+      }
+     ],
+     "answer": "B",
+     "why": "It is the base of the classical cream soup."
+    },
+    {
+     "id": "STK-2.M4.Q5",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "STK-2.M4.L2",
+     "safety": false,
+     "question": "Why must a soup not boil after a *liaison* of yolks and cream goes in?",
+     "options": [
+      {
+       "key": "A",
+       "text": "it thins"
+      },
+      {
+       "key": "B",
+       "text": "the yolks curdle"
+      },
+      {
+       "key": "C",
+       "text": "the cream burns"
+      },
+      {
+       "key": "D",
+       "text": "it loses colour"
+      }
+     ],
+     "answer": "B",
+     "why": "Stir it in off the heat."
+    },
+    {
+     "id": "STK-2.M4.Q6",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "STK-2.M4.L3",
+     "safety": false,
+     "question": "In a minestrone, what goes in first?",
+     "options": [
+      {
+       "key": "A",
+       "text": "the pasta"
+      },
+      {
+       "key": "B",
+       "text": "the dense roots and the pulses"
+      },
+      {
+       "key": "C",
+       "text": "the herbs"
+      },
+      {
+       "key": "D",
+       "text": "the greens"
+      }
+     ],
+     "answer": "B",
+     "why": "Layer by cooking time."
+    },
+    {
+     "id": "STK-2.M4.Q7",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "STK-2.M4.L3",
+     "safety": false,
+     "question": "Why add the tomatoes to a bean soup after the beans have softened?",
+     "options": [
+      {
+       "key": "A",
+       "text": "for colour"
+      },
+      {
+       "key": "B",
+       "text": "acid slows the softening of the beans"
+      },
+      {
+       "key": "C",
+       "text": "to keep the tomatoes fresh"
+      },
+      {
+       "key": "D",
+       "text": "tradition"
+      }
+     ],
+     "answer": "B",
+     "why": "Acid keeps pectin firm (`VEG-1.M3.L2`)."
+    },
+    {
+     "id": "STK-2.M4.Q8",
+     "type": "SCENARIO",
+     "lessonId": "STK-2.M4.L3",
+     "safety": false,
+     "question": "Your pea soup is so thick a spoon stands up in it, and your guests prefer it pourable. What do you do?",
+     "options": [],
+     "answer": "Loosen it with hot stock in small amounts, re-season, and bring it back to a simmer.",
+     "why": "Adjust the body, then the seasoning."
+    }
+   ]
+  },
+  {
+   "id": "STK-2.M5",
+   "title": "Soup lab",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** the 8 items of `STK-2.M5` in the course file. Pass mark 80 %."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "STK-2.M5.L1",
+     "title": "Fixing soups",
+     "prerequisites": [
+      "TST-1.M4.L2",
+      "STK-2.M4.L1"
+     ],
+     "competencies": [
+      {
+       "id": "FL-CORR",
+       "level": 3
+      },
+      {
+       "id": "JD-TRBL",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** every cook makes a soup that is too thin, too salty or flat. The skill is to taste, name the fault before reaching for anything, and fix it in a way that leaves no trace. The fix test makes you do that blind, against a correct version."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** a helper; 2 litres of a leek and potato soup finished with cream (or another cream soup), unsalted; extra unsalted stock; salt; lemon juice; butter and flour; cold cream; a stick blender; six coded cups; the fault log."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Diagnose, then fix:*"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Too thin",
+         "Reduce; blend in more of the vegetable; or whisk in a little *beurre manié* (equal parts butter and flour, kneaded) and simmer for a few minutes"
+        ],
+        [
+         "Too thick",
+         "Loosen with hot stock"
+        ],
+        [
+         "Flat",
+         "Salt first, then acid"
+        ],
+        [
+         "Too salty",
+         "Dilute with unsalted stock, or add more vegetable and re-blend; acid doesn't fix it"
+        ],
+        [
+         "Split (a cream soup boiled with acid)",
+         "Blend hard, and add a little cold cream off the heat"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Taste in order:* salt, then acid, then body, then texture. Name the fault in writing before you fix it, so you don't fix the wrong thing."
+      },
+      {
+       "type": "paragraph",
+       "text": "*The fault log* (`JD-TRBL`): for each fault, the cause and the fix, so the cause is not repeated."
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Diagnosis",
+        "Likely cause",
+        "Fix",
+        "Result"
+       ],
+       "rows": []
+      },
+      {
+       "type": "paragraph",
+       "text": "*The fix test.* The helper divides the soup into five portions of 400 ml and makes:"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**A, correct:** salted to 10 g/l;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**B, thin:** salted, then diluted with 200 ml of unsalted stock and re-salted to 10 g/l;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**C, too salty:** salted to 16 g/l;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**D, flat:** unsalted;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**E, split:** salted, then boiled hard with a tablespoon of lemon juice."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**The fix test (75 min).** The helper codes A to E. Taste each, write your diagnosis for each before fixing anything, then fix B to E. The household tastes the fixes blind against A."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** diagnoses written before any fix and right; fixes the tasters can't tell from the correct soup, or prefer."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "A sour, still-salty soup",
+         "Fixing too salty with acid",
+         "Dilute, or add vegetable"
+        ],
+        [
+         "A floury, lumpy soup",
+         "Thickening with raw flour",
+         "*Beurre manié*, simmered"
+        ],
+        [
+         "A worse split",
+         "Fixing a split soup by boiling it",
+         "Blend hard; cold cream off the heat"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** no special risks beyond the kitchen basics (`SAF-1`). Blending hot soup: a stick blender off the heat (`STK-2.M4.L1`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the diagnoses, the fixes and the blind verdicts in the fault log (in `STK-2.M5.X1`)."
+      }
+     ]
+    },
+    {
+     "id": "STK-2.M5.L2",
+     "title": "A soup by ratio",
+     "prerequisites": [
+      "STK-2.M4.L3"
+     ],
+     "competencies": [
+      {
+       "id": "RD-RATO",
+       "level": 2
+      },
+      {
+       "id": "RD-ADPT",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** with a ratio, you no longer need a soup recipe: you weigh what you have and calculate the rest. With a sense of which vegetables behave alike, you can swap by season and predict the result."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** about 2.5 kg of vegetables by season; stock; butter or oil; a finish (cream, yoghurt, lemon, herbs); the scale; a pot; a stick blender; the journal."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*A soup ratio* by weight:"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Part",
+        "Ratio",
+        "For 4–6"
+       ],
+       "rows": [
+        [
+         "Aromatic base",
+         "1",
+         "200 g"
+        ],
+        [
+         "Main vegetable",
+         "4",
+         "800 g"
+        ],
+        [
+         "Liquid",
+         "5–6",
+         "1–1.2 litres"
+        ],
+        [
+         "Finish",
+         "—",
+         "Fat, acid, herbs, to taste"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "It is a starting point that works for any season. A starchy main vegetable needs the upper end of the liquid; a watery one the lower end."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Substituting by season.* A vegetable is replaced by another of similar structure and body (`VEG-1.M1.L2`):"
+      },
+      {
+       "type": "table",
+       "header": [
+        "In place of",
+        "Use",
+        "Effect to expect"
+       ],
+       "rows": [
+        [
+         "Potato",
+         "Celeriac",
+         "Lighter body, more flavour; may need a little potato for thickness"
+        ],
+        [
+         "Carrot",
+         "Squash",
+         "Thicker, sweeter"
+        ],
+        [
+         "Onion",
+         "Leek",
+         "Milder, silkier"
+        ],
+        [
+         "Peas",
+         "Broad beans",
+         "More earthy; may need passing"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "Write the effect you predict, then taste."
+      },
+      {
+       "type": "paragraph",
+       "text": "*From ratio to brief.* With a ratio, a recipe is no longer needed. With a brief (`STK-2.M5.X1`), you choose the ratio too."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Ratio soup (75 min).** Make a soup from the ratio with one seasonal substitution. Weigh the main vegetable, calculate the base and the liquid, and write the predicted effect of the substitution. Taste and note the result."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** a balanced soup without a recipe; the substitution's effect predicted and confirmed."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "A thin soup",
+         "Too much liquid, which gives a thin soup",
+         "The lower end of the ratio; add liquid at the end"
+        ],
+        [
+         "A watery soup after a swap",
+         "Swapping a starchy vegetable for a watery one without adjusting the body",
+         "Less liquid, or a potato for body"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** no special risks beyond the kitchen basics (`SAF-1`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the weights, the calculation, the prediction and the result."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "STK-2.M5.X1",
+     "title": "\"A soup from what's in season this week\"",
+     "description": "\"A soup from what's in season this week\": goal, constraints and criteria only.",
+     "competencies": [
+      {
+       "id": "FL-CORR",
+       "level": 3
+      },
+      {
+       "id": "JD-TRBL",
+       "level": 2
+      },
+      {
+       "id": "RD-RATO",
+       "level": 2
+      },
+      {
+       "id": "RD-ADPT",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** fix faults reliably, then cook a seasonal soup from a brief, with no recipe."
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**The goal:** a soup that showcases this week's best vegetable, chosen at the market or from the garden."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**The constraints:** 90 minutes; the stock in the freezer."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**The criteria:** texture, seasoning and colour."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "The fix test of `STK-2.M5.L1` is run in the same week and reported here. Report the fix test (diagnoses, fixes, blind verdicts); write the soup plan (the ratio, the substitution, the target texture); cook; photograph it; collect the household's evaluation; log any fault met while cooking and its fix."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** the week's seasonal vegetables; stock from the freezer; the household's faulty samples for the fix test; the tasting form; the fault log; a phone; a budget of about €10."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`FL-CORR` level 3:** three faults named, fixed and written up with the reason, with the tasters confirming the fixes (written, form, tasters)."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`JD-TRBL` level 2:** the fault items of this check at 80 %, and a fault logged with its recovery (quiz, log)."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`RD-RATO` level 2, in part:** the core ratios at 80 % and the soup built from its ratio (quiz, photo). The vinaigrette and roux sauce of the row follow in `SAU-2`."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`RD-ADPT` level 2:** a seasonal substitution with its effect noted (written, form)."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 2.5 h over the week."
+      }
+     ]
+    }
+   ],
+   "items": [
+    {
+     "id": "STK-2.M5.Q1",
+     "type": "SCENARIO",
+     "lessonId": "STK-2.M5.L1",
+     "safety": false,
+     "question": "A purée soup is watery. Name two fixes.",
+     "options": [],
+     "answer": "Reduce it; or blend in more of the cooked vegetable; or whisk in a little *beurre manié* and simmer.",
+     "why": "Body comes from reduction, vegetable or starch."
+    },
+    {
+     "id": "STK-2.M5.Q2",
+     "type": "SCENARIO",
+     "lessonId": "STK-2.M5.L1",
+     "safety": false,
+     "question": "A soup is too salty. What do you do?",
+     "options": [],
+     "answer": "Dilute with unsalted stock or water and add more of the main vegetable, then re-blend and re-season.",
+     "why": "Acid or a potato doesn't remove salt."
+    },
+    {
+     "id": "STK-2.M5.Q3",
+     "type": "SCENARIO",
+     "lessonId": "STK-2.M5.L1",
+     "safety": false,
+     "question": "A cream soup has split after you added lemon and let it boil. What do you do?",
+     "options": [],
+     "answer": "Take it off the heat, blend it hard, and whisk in a little cold cream; next time add the acid before the cream and don't boil.",
+     "why": "Acid and heat curdle cream."
+    },
+    {
+     "id": "STK-2.M5.Q4",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "STK-2.M5.L1",
+     "safety": false,
+     "question": "What is *beurre manié*?",
+     "options": [
+      {
+       "key": "A",
+       "text": "brown butter"
+      },
+      {
+       "key": "B",
+       "text": "equal parts soft butter and flour kneaded together, whisked in to thicken"
+      },
+      {
+       "key": "C",
+       "text": "clarified butter"
+      },
+      {
+       "key": "D",
+       "text": "a roux cooked brown"
+      }
+     ],
+     "answer": "B",
+     "why": "It thickens at the end without lumps."
+    },
+    {
+     "id": "STK-2.M5.Q5",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "STK-2.M5.L1",
+     "safety": false,
+     "question": "Why log a fault with its cause?",
+     "options": [
+      {
+       "key": "A",
+       "text": "for the grade"
+      },
+      {
+       "key": "B",
+       "text": "so the cause can be fixed next time, not just the symptom"
+      },
+      {
+       "key": "C",
+       "text": "to remember the soup"
+      },
+      {
+       "key": "D",
+       "text": "it isn't needed"
+      }
+     ],
+     "answer": "B",
+     "why": "The fault log builds `JD-TRBL`."
+    },
+    {
+     "id": "STK-2.M5.Q6",
+     "type": "CALCULATION",
+     "lessonId": "STK-2.M5.L2",
+     "safety": false,
+     "question": "With a ratio of 1 base : 4 vegetable : 5 liquid by weight, how much liquid for 800 g of vegetable?",
+     "options": [],
+     "answer": "1,000 g (1 litre)",
+     "why": "800 ÷ 4 × 5."
+    },
+    {
+     "id": "STK-2.M5.Q7",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "STK-2.M5.L2",
+     "safety": false,
+     "question": "You swap the potato in a leek soup for celeriac. What do you expect?",
+     "options": [
+      {
+       "key": "A",
+       "text": "no change"
+      },
+      {
+       "key": "B",
+       "text": "a slightly thinner, more aromatic soup, so it may need reducing"
+      },
+      {
+       "key": "C",
+       "text": "a gluey soup"
+      },
+      {
+       "key": "D",
+       "text": "a sweeter, orange soup"
+      }
+     ],
+     "answer": "B",
+     "why": "Celeriac has less starch than potato."
+    },
+    {
+     "id": "STK-2.M5.Q8",
+     "type": "SCENARIO",
+     "lessonId": "STK-2.M5.L2",
+     "safety": false,
+     "question": "It is February. A summer pea soup ratio calls for fresh peas. What do you substitute, and what changes?",
+     "options": [],
+     "answer": "Frozen peas keep the dish; or swap to a winter vegetable of similar body (celeriac, parsnip) and accept a different soup, adjusting the liquid and the finish.",
+     "why": "Substitute by structure and body, and note the effect."
+    }
+   ]
+  }
+ ]
+}

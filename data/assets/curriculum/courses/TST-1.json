@@ -1,0 +1,3192 @@
+{
+ "schemaVersion": 1,
+ "id": "TST-1",
+ "introduction": [
+  {
+   "type": "paragraph",
+   "text": "**Before you start.** \"Season to taste\" is the most common instruction in any recipe, and the least explained. It hands the most important judgment of a dish to you. This course trains that judgment directly. You learn to taste with a method, to name what you taste in words other people can check, to use salt as a measured tool, and to balance a dish with acid, fat, sweet, bitter, umami and heat. At the end, you diagnose and fix the simple faults."
+  },
+  {
+   "type": "paragraph",
+   "text": "It also makes your palate **measurable**. Taste can't be photographed, but it can be calibrated with tests that have a known answer: coded cups, a hidden key, and a pass mark (assessment §5). From this course on, your own tasting forms count as evidence only while a passed salt and acid calibration stands behind them. So the calibration of module 2 is the heart of the course, and you repeat it every month for the rest of S1."
+  },
+  {
+   "type": "paragraph",
+   "text": "Plan about three weeks of short evening sessions of an hour or so. Most sessions need a household member, to code the samples or to taste blind, so plan them on evenings when someone is home. The soups and stocks become dinners."
+  },
+  {
+   "type": "paragraph",
+   "text": "*The tasting rules for every session:*"
+  },
+  {
+   "type": "list",
+   "items": [
+    {
+     "level": 0,
+     "marker": "",
+     "text": "Samples of one test at the same temperature, all warm or all at room temperature."
+    },
+    {
+     "level": 0,
+     "marker": "",
+     "text": "A sip of water and a bite of plain cracker between samples."
+    },
+    {
+     "level": 0,
+     "marker": "",
+     "text": "No strong smells around: no perfume, no frying in the next pan, no coffee just before."
+    },
+    {
+     "level": 0,
+     "marker": "",
+     "text": "A clean spoon for every taste, never back into the pot (`SAF-1`)."
+    },
+    {
+     "level": 0,
+     "marker": "",
+     "text": "Write as you taste, not afterwards."
+    }
+   ]
+  },
+  {
+   "type": "paragraph",
+   "text": "**Have ready:** the 1 g kitchen scale (`ORI-1`); measuring spoons and, if you have one, a dropper or pipette; five 1-litre jugs or clean bottles; 20 small glasses or cups with removable codes (masking tape and a pen); printed tasting forms and key sheets; plain crackers and a jug of water; a notebook; a household member who will code samples and taste blind."
+  }
+ ],
+ "modules": [
+  {
+   "id": "TST-1.M1",
+   "title": "How we taste",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** the 8 items of `TST-1.M1` in the course file. Pass mark 80 %."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "TST-1.M1.L1",
+     "title": "Taste, aroma and texture",
+     "prerequisites": [
+      "ORI-1.M3.L2"
+     ],
+     "competencies": [
+      {
+       "id": "FL-SENS",
+       "level": 1
+      },
+      {
+       "id": "FL-TEXT",
+       "level": 1
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** \"it needs something\" is not a diagnosis. Before you can fix a dish you need to know where an impression comes from: the tongue, the nose, or the nerves of touch and pain. Each has its own levers, and confusing them leads to the wrong fix, such as more salt for a dish that lacks aroma."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** 3 fruit sweets or a spoon each of 3 jams of different flavours; a piece of mature cheese; a sprig of a herb such as dill or parsley; a mint leaf; a small fresh chilli; a glass of sparkling water; water and plain crackers; a notebook."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*The five tastes.* The tongue senses only five: **salt, sour, sweet, bitter and umami** (savoury). That's all. Taste tells you whether a dish is seasoned and balanced, but not what it is."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Flavour is mostly aroma.* What we call flavour is taste plus aroma, and most of it is **retronasal aroma**: volatile compounds that rise from the back of the mouth into the nose while you chew and swallow. With your nose pinched, a strawberry sweet and a lemon sweet taste almost alike: sweet and a little sour, and nothing more. Let go, and the fruit arrives [S18]. This is why food tastes of little when you have a cold."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Trigeminal sensations.* The burn of chilli, the cool of mint, the tingle of carbonation and the bite of mustard are not tastes. They are sensed by the nerves of touch and pain in the mouth and nose. They build and fade at their own pace, and they can drown out the tastes for a while."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Texture and temperature.* They change what you perceive."
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "Warmth increases sweetness and aroma; cold mutes them. A sauce that is balanced hot can taste sharp when cold."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "Fat coats the mouth and carries aroma."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "Crunch and creaminess change how long a flavour stays."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "So taste a dish at the temperature at which it will be served."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Nose-pinch test (45 min).** For each sweet or jam: pinch your nose, chew, and write what you notice; then let go and write what arrives. Do the same with the cheese and the herb. Then taste the mint leaf, a thin slice of the chilli and a sip of the sparkling water, and write what each one does: hot, cold, tingling, and how long it lasts. Water and a cracker between samples; the chilli last, because its burn lingers."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** for each food, three columns filled in: what came from the tongue, what from the nose, and what was touch or pain."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Every note says \"tastes of …\"",
+         "Calling everything taste",
+         "Ask of each impression: did it go when I pinched my nose? Then it was aroma"
+        ],
+        [
+         "The cheese is called \"sour\" when it is bitter, or the other way round",
+         "Sour and bitter confused",
+         "Sour makes the mouth water and is sharp at once; bitter comes later, at the back"
+        ],
+        [
+         "The later samples taste of nothing",
+         "The mouth still burning or coated from the previous sample",
+         "Water and a cracker, wait a minute, and keep the chilli for last"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** wash your hands after cutting the chilli, and don't touch your eyes. Ask your tasters about allergies before every session in this course: cheese, mustard and the celery in a stock are common ones."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the three-column notes for each food."
+      }
+     ]
+    },
+    {
+     "id": "TST-1.M1.L2",
+     "title": "Tasting method and vocabulary",
+     "prerequisites": [
+      "TST-1.M1.L1"
+     ],
+     "competencies": [
+      {
+       "id": "FL-SENS",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** a palate improves when its impressions are written in words that can be compared: with a taster's, with last month's, with a fix you tried. The tasting form gives every tasting the same order and the same words. You use it for the rest of the program."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** the tasting form (below) for each food; the vocabulary list; five different foods, for example a crisp apple, a piece of mature Gouda, a square of dark chocolate, a pickled gherkin and a slice of rye bread; water and plain crackers; a household member with their own forms."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*A structured tasting* has five stages, always in this order:"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Stage",
+        "What you note"
+       ],
+       "rows": [
+        [
+         "Look",
+         "Colour, sheen, texture you can see"
+        ],
+        [
+         "Smell",
+         "The aroma before tasting (through the nose, orthonasal)"
+        ],
+        [
+         "Taste",
+         "The five tastes, and which one leads"
+        ],
+        [
+         "Feel",
+         "Texture, temperature, fat, trigeminal sensations"
+        ],
+        [
+         "Finish",
+         "What stays after swallowing, and for how long"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "Smell comes before taste because the first sniff is the clearest; after a few bites the nose tires."
+      },
+      {
+       "type": "paragraph",
+       "text": "*The tasting form.* One line per stage. Under it, a balance score from \"needs a lot\" through \"needs a little\" to \"just right\", and a line for what you would change. Fill it in while you taste, not afterwards: memory smooths impressions into \"nice\"."
+      },
+      {
+       "type": "paragraph",
+       "text": "*A shared vocabulary.* Words that you and your tasters use the same way: **flat, bright, round, sharp, heavy, clean, muddy**, plus the five tastes and words for texture (crisp, creamy, grainy, chewy). \"Nice\" and \"good\" say what you think of the food, not what it is. \"Bright acid, a bitter finish that lingers\" can be compared and acted on."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Neutral conditions.* Water and a plain cracker between samples; samples at the same temperature; no strong smells around. Otherwise you measure the conditions, not the food."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Five foods with the form (45 min).** You and the household member each taste the five foods with a form, without talking. Then compare the forms stage by stage. Underline the words you both used, and circle the ones that differed."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** every stage of every form filled in, with specific words; you and the taster finding the same main features, such as the acid of the gherkin and the bitterness of the chocolate."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "\"Nice\" and \"good\" as the only words",
+         "No vocabulary yet",
+         "Keep the vocabulary list beside the form, and use at least one word from it per stage"
+        ],
+        [
+         "The smell line is empty",
+         "The smell stage skipped",
+         "Smell before the first bite, every time"
+        ],
+        [
+         "The forms are vague and alike",
+         "The form written afterwards",
+         "Fill in each stage before moving on to the next"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** no special risks beyond the kitchen basics (`SAF-1`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** both sets of forms, with the words that differed marked."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "TST-1.M1.X1",
+     "title": "Nose-pinch test and five foods",
+     "description": "The nose-pinch test; tasting five foods with the form.",
+     "competencies": [
+      {
+       "id": "FL-SENS",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** separate taste from flavour on yourself, and use the form and the vocabulary for the first time, with a household member tasting along. This exercise is the record of the sessions of `TST-1.M1.L1` and `TST-1.M1.L2`; if you did them on separate evenings, bring the notes together here."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** a few sweets or jams of different fruit flavours; a mint leaf; a small chilli; sparkling water; five foods for the form (as in `TST-1.M1.L2`); water and plain crackers; six printed forms each for you and the household member; the vocabulary list."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Recipe:** the tasting, in order."
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "Set the table: the foods on small plates, water, crackers, the forms and a pen each. No talking during the tasting."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Nose-pinch test.** Each sweet or jam: nose pinched, chew, note; let go, note what arrives. Then the mint, the chilli and the sparkling water, noting the sensation and how long it lasts."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "**Five foods.** One at a time, through the five stages of the form: look, smell, taste, feel, finish. Score the balance and write one thing you would change."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "Water and a cracker between foods."
+        },
+        {
+         "level": 0,
+         "marker": "5.",
+         "text": "**Compare.** Read the forms side by side, stage by stage. Mark every word that differed, and talk about why: a different word for the same thing, or a different impression?"
+        },
+        {
+         "level": 0,
+         "marker": "6.",
+         "text": "Add any useful new word to your vocabulary list."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:** the forms for the five foods, written with the vocabulary for taste, aroma and texture, and the nose-pinch notes. This is the **form part** of the `FL-SENS` level 2 success row; the ranking tests of `TST-1.M2.X1` complete it."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 1 h."
+      }
+     ]
+    }
+   ],
+   "items": [
+    {
+     "id": "TST-1.M1.Q1",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "TST-1.M1.L1",
+     "safety": false,
+     "question": "Which of these is *not* one of the five basic tastes?",
+     "options": [
+      {
+       "key": "A",
+       "text": "umami"
+      },
+      {
+       "key": "B",
+       "text": "bitter"
+      },
+      {
+       "key": "C",
+       "text": "spicy hot"
+      },
+      {
+       "key": "D",
+       "text": "sour"
+      }
+     ],
+     "answer": "C",
+     "why": "The burn of chilli is a trigeminal sensation, not a taste."
+    },
+    {
+     "id": "TST-1.M1.Q2",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "TST-1.M1.L1",
+     "safety": false,
+     "question": "With your nose pinched, a strawberry sweet and a lemon sweet taste almost the same. Why?",
+     "options": [
+      {
+       "key": "A",
+       "text": "the tongue is tired"
+      },
+      {
+       "key": "B",
+       "text": "most of flavour is aroma reaching the nose from the mouth"
+      },
+      {
+       "key": "C",
+       "text": "they contain the same sugar"
+      },
+      {
+       "key": "D",
+       "text": "the nose has taste buds"
+      }
+     ],
+     "answer": "B",
+     "why": "Retronasal aroma makes up most of what we call flavour."
+    },
+    {
+     "id": "TST-1.M1.Q3",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "TST-1.M1.L1",
+     "safety": false,
+     "question": "The cool of mint is:",
+     "options": [
+      {
+       "key": "A",
+       "text": "a taste"
+      },
+      {
+       "key": "B",
+       "text": "a trigeminal sensation"
+      },
+      {
+       "key": "C",
+       "text": "an aroma only"
+      },
+      {
+       "key": "D",
+       "text": "a texture"
+      }
+     ],
+     "answer": "B",
+     "why": "Menthol triggers cold receptors."
+    },
+    {
+     "id": "TST-1.M1.Q4",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "TST-1.M1.L1",
+     "safety": false,
+     "question": "A sauce tastes balanced when hot and sharper when cold. Why?",
+     "options": [
+      {
+       "key": "A",
+       "text": "acid increases as it cools"
+      },
+      {
+       "key": "B",
+       "text": "warmth increases sweetness and aroma, which round out the acid"
+      },
+      {
+       "key": "C",
+       "text": "the salt dissolves"
+      },
+      {
+       "key": "D",
+       "text": "it doesn't change"
+      }
+     ],
+     "answer": "B",
+     "why": "Taste with the temperature at which the food is served."
+    },
+    {
+     "id": "TST-1.M1.Q5",
+     "type": "ORDERING",
+     "lessonId": "TST-1.M1.L2",
+     "safety": false,
+     "question": "Put the stages of a structured tasting in order: (a) taste (b) finish (c) look (d) feel (e) smell",
+     "options": [],
+     "answer": "c, e, a, d, b",
+     "why": "Look, smell, taste, feel, finish."
+    },
+    {
+     "id": "TST-1.M1.Q6",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "TST-1.M1.L2",
+     "safety": false,
+     "question": "Why are samples tasted at the same temperature?",
+     "options": [
+      {
+       "key": "A",
+       "text": "hygiene"
+      },
+      {
+       "key": "B",
+       "text": "temperature changes how strong tastes and aromas seem"
+      },
+      {
+       "key": "C",
+       "text": "to save time"
+      },
+      {
+       "key": "D",
+       "text": "only for wine"
+      }
+     ],
+     "answer": "B",
+     "why": "Otherwise the comparison measures temperature."
+    },
+    {
+     "id": "TST-1.M1.Q7",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "TST-1.M1.L2",
+     "safety": false,
+     "question": "What goes between samples?",
+     "options": [
+      {
+       "key": "A",
+       "text": "nothing"
+      },
+      {
+       "key": "B",
+       "text": "a sip of water and a plain cracker"
+      },
+      {
+       "key": "C",
+       "text": "a strong coffee"
+      },
+      {
+       "key": "D",
+       "text": "the next sample at once"
+      }
+     ],
+     "answer": "B",
+     "why": "It resets the mouth without adding flavour."
+    },
+    {
+     "id": "TST-1.M1.Q8",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "TST-1.M1.L2",
+     "safety": false,
+     "question": "Which note is most useful on a tasting form?",
+     "options": [
+      {
+       "key": "A",
+       "text": "\"nice\""
+      },
+      {
+       "key": "B",
+       "text": "\"salty enough, bright acid, a bitter finish that lingers\""
+      },
+      {
+       "key": "C",
+       "text": "\"good\""
+      },
+      {
+       "key": "D",
+       "text": "\"I like it\""
+      }
+     ],
+     "answer": "B",
+     "why": "Specific words can be compared and acted on."
+    }
+   ]
+  },
+  {
+   "id": "TST-1.M2",
+   "title": "Salt",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** the 8 items of `TST-1.M2` in the course file. Pass mark 80 %."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "TST-1.M2.L1",
+     "title": "Salt types and measuring",
+     "prerequisites": [],
+     "competencies": [
+      {
+       "id": "FL-SEAS",
+       "level": 1
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** salt is the one seasoning almost every savoury dish needs, and the easiest to get wrong. A recipe in grams is reliable; a recipe in spoons is not, because salts differ in weight per spoon; and a pinch means nothing until you know what yours weighs. This lesson gives you that number."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** fine table salt or fine sea salt; a coarse or flaky salt; the 1 g scale; a teaspoon; a small bowl; a notebook."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Salt types.*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**Fine table salt and fine sea salt:** small, dense crystals that dissolve fast. The everyday salt for cooking and for the calibration series."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**Coarse and flaky salts:** larger or hollow crystals, much lighter per spoon, and crunchy. Mainly for finishing."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**Salts with iodine or anti-caking agents:** the taste difference is small; they work like fine salt."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Volume against weight.* A teaspoon of fine salt weighs about twice a teaspoon of flaky salt, because flakes leave air between them. Swapping one for the other by the spoon halves or doubles the salt. A recipe in grams avoids the problem."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Calibrating the pinch.* Many recipes and most cooks salt by the pinch. Your pinch can be made reliable by weighing it."
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "A **two-finger pinch** (thumb and index finger) is small; a **three-finger pinch** (thumb, index and middle finger) is larger."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "One pinch is too light for a 1 g scale, so weigh ten at a time and divide by ten."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "Do three sets of ten. The difference between the sets shows how consistent your pinch is."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "With your pinch in grams, \"add 3 g of salt\" becomes a number of pinches, and a pinch you added becomes a weight you can record."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Weigh the salts and the pinch (45 min).** Weigh a level teaspoon of each salt, three times each, and note the averages. Then, with the bowl on the scale and the scale set to zero, add ten three-finger pinches of fine salt and read the weight. Empty the bowl and repeat twice more. Do the same with ten two-finger pinches. Work out the average pinch and the spread between the sets."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** three sets of ten pinches within a gram or two of each other; your pinch written in grams in your notebook, where you will see it."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "A dish far too salty or too flat after following a recipe by the spoon",
+         "One salt swapped for another by the spoon",
+         "Weigh, or convert by the weights you measured today"
+        ],
+        [
+         "The three sets differ a lot",
+         "A pinch that varies with the mood: more fingers one time, a deeper grab the next",
+         "Use the same fingers and the same depth into the salt every time, and weigh again"
+        ],
+        [
+         "The scale shows 0 g for a pinch",
+         "One pinch is below the scale's 1 g step",
+         "Always weigh ten together"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** no special risks beyond the kitchen basics (`SAF-1`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the teaspoon weights of each salt; your two-finger and three-finger pinch in grams, with the spread."
+      }
+     ]
+    },
+    {
+     "id": "TST-1.M2.L2",
+     "title": "Salt calibration series",
+     "prerequisites": [
+      "TST-1.M2.L1"
+     ],
+     "competencies": [
+      {
+       "id": "FL-SENS",
+       "level": 2
+      },
+      {
+       "id": "FL-SEAS",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** this is the test that makes your palate count as evidence. You find where a stock goes from flat to full to too salty, and then you show, against a hidden key, that you can rank salt levels and tell close ones apart."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** a helper; 1 litre of unsalted vegetable stock for the \"just right\" walk, plus the 5 litres and the salt of `TST-1.M2.X1`; 16 g of fine salt for the walk; the scale; coded cups; key sheets; the tasting form; water and crackers."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*\"Just right\".* Tasted across a range of salt levels, from 4 to 16 g per litre (0.4–1.6 %), a stock goes from flat (it tastes of water and vegetables, and fades fast), through full (the vegetables taste of themselves, round and lasting), to too salty (salt is the first and the last thing you taste). Your preferred point is noted and compared with the tasters' choice. Most people's lies between about 8 and 12 g/l."
+      },
+      {
+       "type": "paragraph",
+       "text": "*The calibration test.* The test that counts as evidence follows the protocol of assessment §5.1:"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**Ranking test:** five coded samples at 6, 8, 10, 12 and 15 g/l, in random order. You put them in order. **Pass:** at most one swap of neighbouring samples."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**Triangle test:** three cups, two the same and one different (10 against 12 g/l); you pick the odd one out. Six trials, with the odd cup's position and concentration varied. **Pass:** at least 4 of 6. Guessing alone passes in about 10 % of attempts."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Why a full litre per sample.* On a 1 g scale, a weighing error of half a gram is small against 10 g in a litre, but large against 1 g in 100 ml. Full litres keep the samples accurate."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Blind repetition.* If you choose \"just right\" twice, blind, and land on the same level, your preference is stable; if not, it was a guess [S20]."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**The series (90 min).** The \"just right\" walk first: the helper salts the litre at 4 g/l, warms it, and gives you a cup; then adds 2 g at a time, to 16 g/l, giving you a cup at each step without telling you the level. Mark each cup on the form as flat, full or too salty, and choose your \"just right\". Then run the ranking test of `TST-1.M2.X1`, and the triangle trials if time allows."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** the ranking passed; your \"just right\" between about 8 and 12 g/l, and close to the tasters' choice."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "The ranking is muddled in the middle",
+         "Samples at different temperatures",
+         "Pour all cups at once from samples warmed together"
+        ],
+        [
+         "Neighbouring samples taste the same",
+         "Too little base, so weighing errors swamp the differences",
+         "A full litre per sample on a 1 g scale"
+        ],
+        [
+         "A suspiciously perfect result",
+         "Peeking at the key, or the helper's hints",
+         "The key folded shut until you have written your answer; the helper says nothing"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** the walk stock and the samples are kept warm only for the session; the untasted remainder goes into the fridge (4 °C) within 2 hours and becomes soup within 2 days (assessment §9). Cups are never poured back."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the walk notes, your \"just right\" in g/l, and the ranking and triangle results against the key."
+      }
+     ]
+    },
+    {
+     "id": "TST-1.M2.L3",
+     "title": "When to salt",
+     "prerequisites": [
+      "TST-1.M2.L2"
+     ],
+     "competencies": [
+      {
+       "id": "FL-SEAS",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** the same amount of salt tastes different depending on when it goes in. Salt added early seasons a food through; salt added late sits on the surface; salt added before a long reduction can end up too strong. Knowing the moment saves dishes that the right amount alone wouldn't."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** the inputs of `TST-1.M2.X2`: 500 g of green beans in summer, or carrots in winter; salt; two pans; the scale; a household member to taste blind."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Salting water.* Vegetables, potatoes and pasta cooked in salted water are seasoned from the outside in, as they cook. The level is a choice you taste: start around 10 g per litre, the middle of your calibration series, and adjust. Salting only after cooking leaves the inside flat."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Pre-salting proteins.* Meat or fish salted some time before cooking lets the salt move in, and it changes texture and juiciness. Here it is only a preview; the science, and the timings, come in `SCI-2`."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Seasoning in layers.*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Some salt early**, so it penetrates the food and seasons the base."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Adjust at the end**, after any reduction, because evaporation takes water and leaves the salt."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "**Finishing salt**, if you like, for crunch on the plate."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Choosing the moment.*"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Salt early",
+        "Salt late"
+       ],
+       "rows": [
+        [
+         "What must be seasoned through: potatoes, a braise, a pre-salted steak, beans and vegetables in their cooking water",
+         "What reduces: a sauce, a stock"
+        ],
+        [
+         "",
+         "What must stay crisp: a dressed salad (salt draws water out of the leaves), crisp skin"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "A dish that will reduce gets a little salt early and the rest after reducing and tasting."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Early against late (60 min).** Run the comparison of `TST-1.M2.X2`: the same vegetable, cut, water and salt in two pans, salted at the start in one and at the end in the other. A household member tastes both blind."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** the vegetables salted in the water taste seasoned throughout; the ones salted at the end taste salty on the outside and flat inside."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "A stock too salty to use",
+         "Salted at the start, then reduced",
+         "Salt stocks at the end, or not at all if they go into a sauce"
+        ],
+        [
+         "A wilted, watery salad",
+         "Salted long before serving",
+         "Salt and dress just before serving"
+        ],
+        [
+         "A salty pasta dish",
+         "The water forgotten, then the sauce over-salted to make up",
+         "Salt the water; season the sauce for the seasoned pasta"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** drain boiling water away from you, with the colander in the sink (`SAF-1.M4`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the taster's choice and your explanation (in `TST-1.M2.X2`)."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "TST-1.M2.X1",
+     "title": "The calibration series (salt and acid)",
+     "description": "The salt calibration series, with household tasters as a blind panel.",
+     "competencies": [
+      {
+       "id": "FL-SENS",
+       "level": 2
+      },
+      {
+       "id": "FL-SEAS",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** calibrate your palate for salt and for acid against a known key, with the household as a blind panel. The salt series runs on one evening (with the walk of `TST-1.M2.L2`), the acid series on a second."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**Salt evening:** 5 litres of unsalted vegetable stock (made from trim, or from a salt-free base) and 51 g of fine salt."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**Acid evening:** 5 litres of the same stock salted at 10 g/l (50 g of salt), and 50 ml of white-wine vinegar (about 6 % acidity)."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "Five 1-litre jugs; 15–20 coded cups; key sheets; a die and a coin; the scale; a measuring spoon or pipette."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Recipe:** the helper's preparation, then the tests."
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Make the salt samples.** One litre of stock per jug, with 6, 8, 10, 12 and 15 g of salt. Stir until dissolved."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Code them.** Give each jug a three-digit code on tape; write the codes and their levels on the key sheet and fold it shut. Warm the five together, so they are the same temperature."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "**Ranking test.** One cup from each jug, in an order the helper draws by lot. Taste, with water between, and write the order from least to most salty. Hand it to the helper before the key is opened."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "**Triangle test (10 against 12 g/l).** For each of six trials the helper rolls the die for the odd cup's position (1–2 left, 3–4 middle, 5–6 right) and tosses the coin for which level is odd (heads 12, tails 10). Write your choice for each trial."
+        },
+        {
+         "level": 0,
+         "marker": "5.",
+         "text": "**Tasters.** Each household taster takes one triangle test of six trials (assessment §5.4)."
+        },
+        {
+         "level": 0,
+         "marker": "6.",
+         "text": "**Preferences.** You and each taster name the level you would serve."
+        },
+        {
+         "level": 0,
+         "marker": "7.",
+         "text": "**Acid evening.** The same steps with 0, 5, 10, 15 and 20 ml of vinegar per litre of the salted stock; the triangle test is 10 against 15 ml/l."
+        },
+        {
+         "level": 0,
+         "marker": "8.",
+         "text": "Open the keys and score."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:** the ranking and triangle results for salt and acid against the keys, with the tasters' results and the preferences."
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "Both ranking tests passed (at most one swap of neighbours) complete `FL-SENS` level 2, with the forms of `TST-1.M1.X1`. They are also the calibration part of `FL-SEAS` level 2."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "The triangle tests passed (at least 4 of 6) start the 6-month validity of your sensory forms (assessment §5.5)."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "A failed test is retaken after a week of tasting practice."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 2 × 60 min, plus the helper's preparation. The untasted remainder of the stock becomes soup: mixed together, the five salt litres come to about 10 g/l."
+      }
+     ]
+    },
+    {
+     "id": "TST-1.M2.X2",
+     "title": "Salted early against salted late",
+     "description": "Vegetables salted at the start versus only at the end.",
+     "competencies": [
+      {
+       "id": "FL-SEAS",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** taste what the moment of salting does, with one variable changed: the same vegetable, cut, water and total salt, and only the moment differs."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** 500 g of green beans in summer, or carrots in winter; fine salt; two pans of the same size; the scale; a colander; two plates marked underneath; a household member."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Recipe:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Prepare.** Top the beans, or peel the carrots and cut them into even rounds about 1 cm thick. Divide them into two equal halves by weight."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Pan A, salted early.** 1 litre of water with 10 g of salt. Bring to the boil and cook half A until just tender (beans about 5–7 minutes, carrots about 10). Drain and weigh."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "**Pan B, salted late.** 1 litre of unsalted water, the same cooking time. Drain."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "**Estimate the salt that A absorbed.** Vegetables cooked in salted water end up less salty than the water itself, so A's drained weight times the water's strength is the most it can hold (250 g × 10 g/l = 2.5 g). Take about half of that, about 1 g, and record the estimate and how you made it."
+        },
+        {
+         "level": 0,
+         "marker": "5.",
+         "text": "**Salt B.** Sprinkle that amount over half B and toss."
+        },
+        {
+         "level": 0,
+         "marker": "6.",
+         "text": "**Blind taste.** The helper plates both halves on the marked plates, without telling you which is which. The household member tastes both and says which is better seasoned, and why."
+        },
+        {
+         "level": 0,
+         "marker": "7.",
+         "text": "**Explain.** Write why the result came out as it did."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:** the blind taster's choice and your explanation. With `TST-1.M2.X1`, vegetables seasoned at the stage the method names, and called neither under- nor over-seasoned by the tasters, meet `FL-SEAS` level 2."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 45 min; the vegetables are a side dish."
+      }
+     ]
+    }
+   ],
+   "items": [
+    {
+     "id": "TST-1.M2.Q1",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "TST-1.M2.L1",
+     "safety": false,
+     "question": "Why can't you swap fine salt for flaky salt by the teaspoon?",
+     "options": [
+      {
+       "key": "A",
+       "text": "they taste different"
+      },
+      {
+       "key": "B",
+       "text": "a spoon of flaky salt weighs much less"
+      },
+      {
+       "key": "C",
+       "text": "flaky salt doesn't dissolve"
+      },
+      {
+       "key": "D",
+       "text": "fine salt has iodine"
+      }
+     ],
+     "answer": "B",
+     "why": "Volume depends on crystal size; weight doesn't."
+    },
+    {
+     "id": "TST-1.M2.Q2",
+     "type": "CALCULATION",
+     "lessonId": "TST-1.M2.L1",
+     "safety": false,
+     "question": "Ten of your pinches weigh 6 g in total. A soup needs 3 g more salt. How many pinches?",
+     "options": [],
+     "answer": "5",
+     "why": "One pinch is 0.6 g."
+    },
+    {
+     "id": "TST-1.M2.Q3",
+     "type": "CALCULATION",
+     "lessonId": "TST-1.M2.L2",
+     "safety": false,
+     "question": "How much salt goes into 1.5 litres of stock to reach 10 g/l?",
+     "options": [],
+     "answer": "15 g",
+     "why": "10 g per litre × 1.5."
+    },
+    {
+     "id": "TST-1.M2.Q4",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "TST-1.M2.L2",
+     "safety": false,
+     "question": "In a triangle test, what is the chance of picking the odd sample by guessing?",
+     "options": [
+      {
+       "key": "A",
+       "text": "1 in 2"
+      },
+      {
+       "key": "B",
+       "text": "1 in 3"
+      },
+      {
+       "key": "C",
+       "text": "1 in 6"
+      },
+      {
+       "key": "D",
+       "text": "none"
+      }
+     ],
+     "answer": "B",
+     "why": "Three cups, one odd; that is why several trials are needed."
+    },
+    {
+     "id": "TST-1.M2.Q5",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "TST-1.M2.L3",
+     "safety": false,
+     "question": "Why is a stock salted only at the end?",
+     "options": [
+      {
+       "key": "A",
+       "text": "salt stops it simmering"
+      },
+      {
+       "key": "B",
+       "text": "reduction concentrates the salt"
+      },
+      {
+       "key": "C",
+       "text": "salt clouds the stock"
+      },
+      {
+       "key": "D",
+       "text": "it isn't"
+      }
+     ],
+     "answer": "B",
+     "why": "A stock salted early and reduced turns too salty."
+    },
+    {
+     "id": "TST-1.M2.Q6",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "TST-1.M2.L3",
+     "safety": false,
+     "question": "Why salt potato cooking water rather than only the cooked potatoes?",
+     "options": [
+      {
+       "key": "A",
+       "text": "the water boils faster"
+      },
+      {
+       "key": "B",
+       "text": "the potatoes are seasoned throughout, not just on the surface"
+      },
+      {
+       "key": "C",
+       "text": "it prevents sticking"
+      },
+      {
+       "key": "D",
+       "text": "it doesn't matter"
+      }
+     ],
+     "answer": "B",
+     "why": "Salt moves in during cooking."
+    },
+    {
+     "id": "TST-1.M2.Q7",
+     "type": "SCENARIO",
+     "lessonId": "TST-1.M2.L3",
+     "safety": false,
+     "question": "You make a green salad an hour before dinner. When do you salt and dress it?",
+     "options": [],
+     "answer": "Just before serving.",
+     "why": "Salt draws water out of the leaves and they wilt."
+    },
+    {
+     "id": "TST-1.M2.Q8",
+     "type": "SCENARIO",
+     "lessonId": "TST-1.M2.L3",
+     "safety": false,
+     "question": "A tomato sauce will reduce by half over an hour. How do you season it?",
+     "options": [],
+     "answer": "A little salt early so it seasons the base; the final adjustment at the end, after reducing and tasting.",
+     "why": "Season in layers, and adjust after reduction."
+    }
+   ]
+  },
+  {
+   "id": "TST-1.M3",
+   "title": "Acid, fat, sweet, bitter, umami and heat",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** the 10 items of `TST-1.M3` in the course file. Pass mark 80 %."
+    },
+    {
+     "type": "paragraph",
+     "text": "*The base soup* for the lessons of this module: for 4, sweat 1 chopped onion in 20 g of butter, add 750 g of peeled, diced pumpkin, carrot or celeriac in winter (or courgette or peas in summer) and 1 litre of unsalted stock, simmer until soft (about 20 minutes), and blend. Salt it to your \"just right\" from `TST-1.M2.L2`: 10 g/l is 10 g for the litre of stock. One batch covers two lessons; the rest keeps covered in the fridge (4 °C) for up to 2 days."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "TST-1.M3.L1",
+     "title": "Acid",
+     "prerequisites": [
+      "TST-1.M2.L2"
+     ],
+     "competencies": [
+      {
+       "id": "FL-SEAS",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** a dish can be well salted and still taste dull. Most often the missing lever is acid. A few drops lift it, cut through richness and make the other flavours sharper. Too much makes it thin and sharp. The gap between the two is small, so you learn to add acid in steps."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** the base soup, warm, about 750 ml; three acids, for example white-wine vinegar, cider vinegar and a lemon; a dropper or a quarter teaspoon; three bowls and a fourth for the plain soup; the tasting form."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*What acid does.*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "It **brightens**: a flat dish suddenly tastes of itself again."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "It **cuts richness**: a fatty stew or a creamy soup tastes lighter."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "It **sharpens other flavours** without adding salt."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "Too much tastes sharp, thin, or harsh at the back of the throat."
+      },
+      {
+       "type": "paragraph",
+       "text": "*The acids of a Dutch kitchen.* Each brings its own aroma as well as its acid:"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**wine and cider vinegars**: clean, fruity;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**lemon**: fresh and aromatic;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**buttermilk, yoghurt and fermented vegetables** such as sauerkraut: a soft, rounded sour;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**sour apples**, grated into a salad or a stew."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Adding in steps.* A few drops, stir, taste; then a few more. Acid added late keeps its freshness; boiled for a long time, vinegar loses its aroma and leaves only sharpness."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Salt first, then acid.* A dish that lacks salt also tastes flat, and acid will not fix it. Check the salt first."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Acid in a soup (45 min).** Pour four bowls of about 180 ml. Keep one plain. To each of the others add one acid in steps: 5 drops (or a quarter teaspoon), stir, taste against the plain bowl, and note the step on the form; repeat until the soup turns sharp. For each acid, note the step at which the soup went from flat to bright, and from bright to sharp."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** the moment the soup suddenly \"opens up\" with a few drops; that point noted in drops per bowl, for each acid."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "The soup goes from flat to sharp with nothing in between",
+         "Acid added in one go",
+         "Steps of a few drops, tasting between them"
+        ],
+        [
+         "More acid doesn't help, and the soup gets sharper and still flat",
+         "A lack of salt mistaken for a lack of acid",
+         "Check the salt first; add acid only to a seasoned dish"
+        ],
+        [
+         "Vinegar makes the soup harsh, not bright",
+         "Vinegar boiled for long, so its aroma is lost",
+         "Add it at the end, off the boil"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** no special risks beyond the kitchen basics (`SAF-1`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the form, with the flat-to-bright and bright-to-sharp points for each acid."
+      }
+     ]
+    },
+    {
+     "id": "TST-1.M3.L2",
+     "title": "Fat",
+     "prerequisites": [
+      "TST-1.M2.L2"
+     ],
+     "competencies": [
+      {
+       "id": "FL-SEAS",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** fat is a seasoning as much as a cooking medium. A spoon of good oil or a knob of butter at the end changes how a dish tastes, how it feels and how long it stays with you. Each fat pushes the dish in a different direction, and too much flattens it."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** the base soup, warm, about 750 ml; a raw rapeseed or olive oil; cold butter; crème fraîche or cream; four bowls; the tasting form; a watch with seconds."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Fat carries flavour.* Many aroma compounds dissolve better in fat than in water. Fat holds them and releases them slowly as you eat, so a dish with a little fat tastes rounder, and its flavour lasts longer after you swallow."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Mouthfeel.* Fat coats the mouth. It softens sharp acid and bitterness and makes a thin soup feel fuller."
+      },
+      {
+       "type": "paragraph",
+       "text": "*The finishing fats.* Added at the end, off the heat, each changes the dish in its own way:"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**a raw rapeseed or olive oil**: green, peppery or nutty, depending on the oil; it stays as drops on the surface and you taste it first;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**a knob of butter**: round and sweet, it makes the soup glossy;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**a spoon of cream or crème fraîche**: soft, and crème fraîche brings a little acid of its own."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Fat is not seasoning.* A dish that lacks salt doesn't need fat. Fat makes a flat dish rounder, but it stays flat, only heavier. Too much fat dulls a dish: the flavours blur and the finish turns greasy."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Finish with fat (45 min).** Pour four bowls of about 180 ml. Keep one plain. Finish the others with 1 teaspoon of oil, 10 g of butter stirred in, and 1 tablespoon of crème fraîche. Taste all four side by side with the form. For each, count the seconds the flavour stays after swallowing. Then add a second dose to one bowl and taste what too much does."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** the fat-finished bowls taste rounder and their flavour lasts longer than the plain one; the double dose tastes heavier, not better."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "The rich bowl still tastes dull",
+         "Fat added to fix a lack of salt",
+         "Check salt and acid first; fat comes last"
+        ],
+        [
+         "The soup tastes greasy and the vegetable is lost",
+         "Too much fat",
+         "A teaspoon or a small knob per bowl, then taste"
+        ],
+        [
+         "Oil sits in a greasy layer",
+         "Too much oil, or stirred in hot for long",
+         "Drizzle a little on the surface just before serving"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** no special risks beyond the kitchen basics (`SAF-1`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the form, with the length of the finish in seconds for each bowl."
+      }
+     ]
+    },
+    {
+     "id": "TST-1.M3.L3",
+     "title": "Sweet and bitter",
+     "prerequisites": [
+      "TST-1.M2.L2"
+     ],
+     "competencies": [
+      {
+       "id": "FL-SEAS",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** bitterness gives depth and appetite, and it is the character of some of the best Dutch winter vegetables. Balanced well, a chicory salad is fresh and lively; balanced badly, it is either harsh or sweet and bland. Sweet and salt are the levers that tame bitterness without hiding it."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** 2 heads of chicory (*witlof*) in winter, or a crisp endive (*andijvie*) or radicchio in summer and autumn; cider vinegar; rapeseed or olive oil; honey or sugar; fine salt; four small plates; the tasting form."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Sweetness* softens both bitterness and acid. A little sugar or honey rounds a sharp tomato sauce or a dressing. It is a small dose: once you taste sweet as sweet, it has gone too far."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Bitterness* adds depth and makes you want the next bite. It comes from chicory, endive and radicchio, from coffee and cocoa, and from charred food. A dish with no bitterness at all can taste flat and heavy."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Salt suppresses bitterness* too. This is why a pinch of salt matters so much in a dressing for bitter leaves."
+      },
+      {
+       "type": "paragraph",
+       "text": "*The bitter-leaf dressing.* Each part does its own job:"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**acid** for freshness;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**fat** to coat the leaf and soften the edges;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**a touch of sweet** to round off the bitterness;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**enough salt** to suppress the bitterness further and make the leaf taste of itself."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "Together they make chicory pleasant without hiding its character. Built one at a time, you can taste what each adds."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Balance a bitter leaf (45 min).** Slice the chicory into rings, discarding the hard core, and divide it over four plates. Dress them in a building sequence, and taste in order:"
+        },
+        {
+         "level": 1,
+         "marker": "",
+         "text": "plate 1: 1 teaspoon of vinegar;"
+        },
+        {
+         "level": 1,
+         "marker": "",
+         "text": "plate 2: 1 teaspoon of vinegar and 2 teaspoons of oil;"
+        },
+        {
+         "level": 1,
+         "marker": "",
+         "text": "plate 3: as plate 2, plus a quarter teaspoon of honey;"
+        },
+        {
+         "level": 1,
+         "marker": "",
+         "text": "plate 4: as plate 3, plus a two-finger pinch of salt."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "Fill in a form for each plate, and note where the bitterness stopped dominating."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** on the last plate, the bitterness present but no longer dominant; the dressing holding the leaf without drowning it."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "The salad tastes sweet and bland",
+         "Bitterness masked with a lot of sugar",
+         "A quarter teaspoon at a time; salt does part of the work"
+        ],
+        [
+         "Still harsh after the sweet",
+         "Salt forgotten in the dressing",
+         "A pinch of salt, then taste again"
+        ],
+        [
+         "Leaves wet and limp",
+         "Dressed too long before eating",
+         "Dress just before serving"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** no special risks beyond the kitchen basics (`SAF-1`). Wash the leaves, and dry them well."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the four forms, and the plate where the balance came right."
+      }
+     ]
+    },
+    {
+     "id": "TST-1.M3.L4",
+     "title": "Umami",
+     "prerequisites": [
+      "TST-1.M2.L2"
+     ],
+     "competencies": [
+      {
+       "id": "FL-SEAS",
+       "level": 2
+      },
+      {
+       "id": "IN-ARO",
+       "level": 1
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** umami gives depth and length. It is what makes a stock taste of something and a vegetable dish taste complete. It also lets a dish taste full with less salt. And two umami sources together are much stronger than either alone, which is one of the most useful tricks in cooking."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** 1.25 litres of plain vegetable broth, salted lightly; 2 tablespoons of tomato paste; a piece of old Gouda rind, about 30 g; 10 g of dried mushrooms; small pans; five bowls; the tasting form."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Umami* is the savoury taste of **glutamate**. It is found in ripe tomato, in aged cheese such as an old Gouda (ageing frees glutamate), in soy sauce, and in stock made from meat or vegetables."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Nucleotides and synergy.* A second group of compounds, the **nucleotides**, multiply the effect of glutamate: inosinate in meat and fish, guanylate in dried mushrooms. Together they taste much stronger than either alone. This is **synergy**: stock with dried mushrooms, tomato with anchovy, cheese on a mushroom dish."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Adding umami.* It gives depth and length, especially to vegetable dishes, and to food with less salt."
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**Tomato paste:** fried briefly in the pan, or stirred in."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**Old Gouda rind:** simmered in a soup or a sauce, then removed."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**Dried mushrooms:** soaked or simmered; their soaking water is full of flavour."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**Soy sauce:** a few drops, remembering that it is salty."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "A stock cube tastes savoury mostly because of its salt, so it is not the same thing."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Build depth (45 min).** Divide the broth over five small pans of 250 ml each:"
+        },
+        {
+         "level": 1,
+         "marker": "",
+         "text": "pan 1: plain;"
+        },
+        {
+         "level": 1,
+         "marker": "",
+         "text": "pan 2: 1 tablespoon of tomato paste;"
+        },
+        {
+         "level": 1,
+         "marker": "",
+         "text": "pan 3: the cheese rind;"
+        },
+        {
+         "level": 1,
+         "marker": "",
+         "text": "pan 4: 5 g of dried mushrooms;"
+        },
+        {
+         "level": 1,
+         "marker": "",
+         "text": "pan 5: half a tablespoon of tomato paste and 2.5 g of dried mushrooms, so the total addition is no larger than in the single pans."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "Simmer each for 10 minutes, take out the rind and the mushrooms, and taste all five with the form. Note the saltiness separately, so you know the difference isn't just salt."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** the combination pan tasting clearly deeper than either addition alone."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "The \"umami\" pan just tastes salty",
+         "A stock cube used for depth",
+         "Use the real sources: tomato, cheese, mushroom"
+        ],
+        [
+         "A dish turned salty",
+         "Too much soy sauce",
+         "Drops, not spoons, and taste between them"
+        ],
+        [
+         "No difference between the pans",
+         "Too little added, or not simmered long enough",
+         "Use the amounts above and give each pan its full 10 minutes"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** a Gouda rind usually has a plastic or wax coating; cut it off and use only the hard cheese beneath."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the five forms, with the depth ranked."
+      }
+     ]
+    },
+    {
+     "id": "TST-1.M3.L5",
+     "title": "Heat and pungency",
+     "prerequisites": [
+      "TST-1.M2.L2"
+     ],
+     "competencies": [
+      {
+       "id": "FL-SEAS",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** heat is the easiest lever to overshoot, because most heat builds after you taste it. Each kind behaves differently: chilli builds and lingers, pepper warms, mustard and horseradish flash up the nose and vanish. Knowing how each behaves lets you add just enough."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** the base soup, warm, about 750 ml; dried chilli flakes or a small fresh chilli, finely chopped; black pepper in a mill; a sharp mustard, such as a Zaanse mustard; horseradish or a radish if you have one; four bowls; a watch with seconds; the tasting form; a little yoghurt."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Chilli heat (capsaicin)* dissolves in fat, not in water. It builds in the mouth over a minute and lingers. A sip of water spreads it; yoghurt, milk or another fat-rich food soothes it."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Black pepper (piperine)* is sharp and warming, with a fresh, woody aroma. The aroma fades with long cooking, so pepper is ground fresh and added late."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Mustard, horseradish and radish* owe their bite to volatile compounds that flash up the nose and fade within seconds. They weaken with heat, so mustard is stirred into a sauce off the heat, and horseradish is grated just before serving."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Adding heat in steps.* Add a little, wait a full minute, and taste again. Heat builds; the second taste is the honest one."
+      },
+      {
+       "type": "table",
+       "header": [
+        "Kind",
+        "Builds",
+        "Lingers",
+        "Fades with cooking"
+       ],
+       "rows": [
+        [
+         "Chilli",
+         "Slowly, over a minute",
+         "Long",
+         "Little"
+        ],
+        [
+         "Black pepper",
+         "Quickly",
+         "A while",
+         "The aroma does"
+        ],
+        [
+         "Mustard, horseradish",
+         "At once, up the nose",
+         "Seconds",
+         "Yes"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Heat in steps (45 min).** Pour four bowls of about 180 ml. Keep one plain. Add to each of the others in measured steps: a pinch of chilli flakes; two turns of the pepper mill; a quarter teaspoon of mustard, stirred in. After each step, wait a minute and taste. Note on the form the step at which each became noticeable, the step at which it was too much, and how many seconds the heat lasted after swallowing."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** you can say how each heat behaves (builds, lingers or flashes) and where \"just enough\" lies, in steps per bowl."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "The soup too hot to eat",
+         "Chilli added to taste immediately, so it overshot",
+         "One step, a full minute, then taste"
+        ],
+        [
+         "The mustard sauce tastes of nothing",
+         "Mustard boiled in, so its bite was lost",
+         "Stir it in off the heat"
+        ],
+        [
+         "The pepper tastes dusty",
+         "Pre-ground pepper, or added early",
+         "Grind fresh, add late"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** wash your hands after handling chilli, and don't touch your eyes. A spoon of yoghurt soothes a burning mouth."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the form, with the steps to \"noticeable\" and \"too much\", and the seconds each heat lasted."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "TST-1.M3.X1",
+     "title": "One soup, five ways",
+     "description": "One base (a simple soup) adjusted five ways; taste side by side.",
+     "competencies": [
+      {
+       "id": "FL-SEAS",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** feel each lever of balance on the same base, side by side, and see whether a blind taster prefers the bowl you would choose."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** for 6: 1 onion; 1 kg of pumpkin, carrot or celeriac in winter, or courgette or peas in summer; 1.5 litres of unsalted stock; 30 g of butter; salt to your \"just right\"; for the adjustments, a vinegar or a lemon, butter or oil, a little honey, old Gouda or dried mushrooms, and chilli or mustard; six bowls marked underneath; the tasting form."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Recipe:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**The base.** Sweat the chopped onion in the butter until soft, add the diced vegetable and the stock, and simmer until soft (about 20 minutes). Blend. Salt to your \"just right\" from `TST-1.M2.L2`."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Divide.** Six bowls of about 250 ml: one plain, five to be adjusted."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "**Adjust in measured steps.** One lever per bowl, from the same salted base, tasting between the steps:"
+        },
+        {
+         "level": 1,
+         "marker": "",
+         "text": "**acid:** 5 drops of vinegar or lemon per step;"
+        },
+        {
+         "level": 1,
+         "marker": "",
+         "text": "**fat:** a teaspoon of oil or 5 g of butter per step;"
+        },
+        {
+         "level": 1,
+         "marker": "",
+         "text": "**sweet:** a quarter teaspoon of honey per step;"
+        },
+        {
+         "level": 1,
+         "marker": "",
+         "text": "**umami:** 5 g of finely grated old Gouda per step, or the soup of this bowl simmered with 3 g of dried mushrooms;"
+        },
+        {
+         "level": 1,
+         "marker": "",
+         "text": "**heat:** a pinch of chilli flakes or a quarter teaspoon of mustard per step."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "Stop when the bowl tastes best to you. Record the amount added to each."
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "**Taste.** All six with the form, the plain one first."
+        },
+        {
+         "level": 0,
+         "marker": "5.",
+         "text": "**Blind taster.** A helper moves the bowls into a new order. A household member tastes all six and names the bowl they prefer."
+        },
+        {
+         "level": 0,
+         "marker": "6.",
+         "text": "**Combine.** Make one bowl with your best two adjustments, at the amounts you recorded, and taste it."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:** the forms, the amounts in grams or drops, and the taster's choice. This is practice for `FL-SEAS` level 2 under a new variable; the level itself was shown in `TST-1.M2`."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 1 h; the soup is dinner."
+      }
+     ]
+    }
+   ],
+   "items": [
+    {
+     "id": "TST-1.M3.Q1",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "TST-1.M3.L1",
+     "safety": false,
+     "question": "A soup tastes flat even though it is salted well. What do you try first?",
+     "options": [
+      {
+       "key": "A",
+       "text": "more salt"
+      },
+      {
+       "key": "B",
+       "text": "a few drops of acid"
+      },
+      {
+       "key": "C",
+       "text": "more water"
+      },
+      {
+       "key": "D",
+       "text": "sugar"
+      }
+     ],
+     "answer": "B",
+     "why": "Acid brightens a dish that is seasoned but dull."
+    },
+    {
+     "id": "TST-1.M3.Q2",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "TST-1.M3.L1",
+     "safety": false,
+     "question": "Why add vinegar near the end rather than at the start of a long simmer?",
+     "options": [
+      {
+       "key": "A",
+       "text": "it curdles"
+      },
+      {
+       "key": "B",
+       "text": "its aroma and freshness boil away"
+      },
+      {
+       "key": "C",
+       "text": "it thickens"
+      },
+      {
+       "key": "D",
+       "text": "it doesn't matter"
+      }
+     ],
+     "answer": "B",
+     "why": "Acid added late stays bright."
+    },
+    {
+     "id": "TST-1.M3.Q3",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "TST-1.M3.L2",
+     "safety": false,
+     "question": "Why does a soup finished with butter taste rounder?",
+     "options": [
+      {
+       "key": "A",
+       "text": "butter is salty"
+      },
+      {
+       "key": "B",
+       "text": "fat carries aroma and coats the mouth, softening sharp edges"
+      },
+      {
+       "key": "C",
+       "text": "it cools the soup"
+      },
+      {
+       "key": "D",
+       "text": "it adds acid"
+      }
+     ],
+     "answer": "B",
+     "why": "Fat is a flavour carrier and changes mouthfeel."
+    },
+    {
+     "id": "TST-1.M3.Q4",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "TST-1.M3.L2",
+     "safety": false,
+     "question": "A dish tastes underseasoned. Is adding fat the fix?",
+     "options": [
+      {
+       "key": "A",
+       "text": "yes, always"
+      },
+      {
+       "key": "B",
+       "text": "no: first check salt and acid"
+      },
+      {
+       "key": "C",
+       "text": "yes, if it is butter"
+      },
+      {
+       "key": "D",
+       "text": "only for soups"
+      }
+     ],
+     "answer": "B",
+     "why": "Fat rounds, it doesn't season."
+    },
+    {
+     "id": "TST-1.M3.Q5",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "TST-1.M3.L3",
+     "safety": false,
+     "question": "Which two tastes does sweetness soften?",
+     "options": [
+      {
+       "key": "A",
+       "text": "salt and umami"
+      },
+      {
+       "key": "B",
+       "text": "bitterness and acidity"
+      },
+      {
+       "key": "C",
+       "text": "umami and heat"
+      },
+      {
+       "key": "D",
+       "text": "none"
+      }
+     ],
+     "answer": "B",
+     "why": "A little sugar rounds sharp or bitter food."
+    },
+    {
+     "id": "TST-1.M3.Q6",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "TST-1.M3.L3",
+     "safety": false,
+     "question": "Besides sugar, what suppresses the bitterness of chicory?",
+     "options": [
+      {
+       "key": "A",
+       "text": "salt"
+      },
+      {
+       "key": "B",
+       "text": "water"
+      },
+      {
+       "key": "C",
+       "text": "cold"
+      },
+      {
+       "key": "D",
+       "text": "more chicory"
+      }
+     ],
+     "answer": "A",
+     "why": "Salt reduces perceived bitterness."
+    },
+    {
+     "id": "TST-1.M3.Q7",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "TST-1.M3.L4",
+     "safety": false,
+     "question": "What is umami synergy?",
+     "options": [
+      {
+       "key": "A",
+       "text": "two salty foods together"
+      },
+      {
+       "key": "B",
+       "text": "glutamate and nucleotides together taste much stronger than either alone"
+      },
+      {
+       "key": "C",
+       "text": "umami cancelling bitterness"
+      },
+      {
+       "key": "D",
+       "text": "umami from sugar"
+      }
+     ],
+     "answer": "B",
+     "why": "Tomato with anchovy, stock with dried mushrooms."
+    },
+    {
+     "id": "TST-1.M3.Q8",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "TST-1.M3.L4",
+     "safety": false,
+     "question": "Which food is rich in glutamate?",
+     "options": [
+      {
+       "key": "A",
+       "text": "cucumber"
+      },
+      {
+       "key": "B",
+       "text": "aged Gouda"
+      },
+      {
+       "key": "C",
+       "text": "white rice"
+      },
+      {
+       "key": "D",
+       "text": "apple"
+      }
+     ],
+     "answer": "B",
+     "why": "Ageing frees glutamate."
+    },
+    {
+     "id": "TST-1.M3.Q9",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "TST-1.M3.L5",
+     "safety": false,
+     "question": "Chilli heat is too strong. What soothes it best?",
+     "options": [
+      {
+       "key": "A",
+       "text": "water"
+      },
+      {
+       "key": "B",
+       "text": "yoghurt or another fat-rich dairy"
+      },
+      {
+       "key": "C",
+       "text": "more salt"
+      },
+      {
+       "key": "D",
+       "text": "vinegar"
+      }
+     ],
+     "answer": "B",
+     "why": "Capsaicin dissolves in fat, not water."
+    },
+    {
+     "id": "TST-1.M3.Q10",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "TST-1.M3.L5",
+     "safety": false,
+     "question": "Why is mustard stirred into a sauce off the heat?",
+     "options": [
+      {
+       "key": "A",
+       "text": "it curdles"
+      },
+      {
+       "key": "B",
+       "text": "its pungent compounds are volatile and fade with heat"
+      },
+      {
+       "key": "C",
+       "text": "it thickens too much"
+      },
+      {
+       "key": "D",
+       "text": "it turns bitter"
+      }
+     ],
+     "answer": "B",
+     "why": "Heat drives off the bite."
+    }
+   ]
+  },
+  {
+   "id": "TST-1.M4",
+   "title": "Seasoning in practice",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** the 8 items of `TST-1.M4` in the course file. Pass mark 80 %."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "TST-1.M4.L1",
+     "title": "Tasting at every stage",
+     "prerequisites": [
+      "TST-1.M2.L3"
+     ],
+     "competencies": [
+      {
+       "id": "FL-SEAS",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** a dish changes as it cooks: aromatics sweeten, liquid reduces, salt concentrates. Tasting only at the end means finding a problem when it is hardest to fix. Tasting at set points tells you what each stage did, and lets you make one well-judged correction instead of many small ones."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** for a leek and potato soup for 4 (or, in summer, courgette and potato): 2 leeks, 1 onion, 500 g of floury potatoes, 20 g of butter, 1.2 litres of unsalted stock, 5 g of salt; a pan; a stack of clean teaspoons; a ladle; the plan with the checkpoints written on it."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*The taste checkpoints.* Each has its own question:"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Checkpoint",
+        "The question"
+       ],
+       "rows": [
+        [
+         "The raw ingredients",
+         "What do they bring? Is the stock salted already?"
+        ],
+        [
+         "After the aromatics",
+         "Are they sweet and soft, or raw?"
+        ],
+        [
+         "When the liquid goes in",
+         "Is the base seasoned enough to build on?"
+        ],
+        [
+         "Halfway",
+         "Is it on course? How much will still reduce?"
+        ],
+        [
+         "Before serving",
+         "Salt, acid, fat: what does it need?"
+        ],
+        [
+         "On the plate",
+         "Does it taste right at the temperature it is eaten?"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Early and late seasoning taste different.* Salt added early dissolves into the whole dish and seasons it through; it tastes integrated. Salt added at the end sits on the surface and is tasted first, so it tastes saltier per gram. This is why you salt early and adjust late, with small amounts."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Reduction concentrates.* What tastes right halfway through will taste saltier once more water has evaporated. At the halfway checkpoint you note and plan; you correct at the end."
+      },
+      {
+       "type": "paragraph",
+       "text": "*A clean tasting spoon each time.* Taste from a ladle poured onto a clean spoon, and never put a used spoon back into the pot (`SAF-1`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Checkpoints (45 min).** Write the six checkpoints on the plan. Sweat the sliced leeks and onion in the butter, add the diced potato, the stock and the 5 g of salt, and simmer uncovered for about 25 minutes, then blend. Taste and note at each checkpoint, but adjust only once, before serving. Taste once more on the plate."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** the notes changing across the checkpoints the way the theory predicts: saltier and fuller after the reduction; one adjustment at the end."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "A problem found only when the soup is served",
+         "Tasting only at the end",
+         "Taste at every checkpoint on the plan"
+        ],
+        [
+         "The soup overshoots: too salty, then too sour",
+         "Adjusting at every checkpoint",
+         "Note at the checkpoints; adjust once, at the end"
+        ],
+        [
+         "Several people tasting from the pot with the same spoon",
+         "Double-dipping",
+         "A stack of clean spoons; pour from the ladle"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** a clean spoon for every taste (`SAF-1`). Leftover soup goes into the fridge (4 °C) within 2 hours and is eaten within 2 days."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the checkpoint notes, and the one adjustment you made."
+      }
+     ]
+    },
+    {
+     "id": "TST-1.M4.L2",
+     "title": "Correcting a dish",
+     "prerequisites": [
+      "TST-1.M3.L5"
+     ],
+     "competencies": [
+      {
+       "id": "FL-CORR",
+       "level": 1
+      },
+      {
+       "id": "JD-TRBL",
+       "level": 1
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** sooner or later every cook has a dish that tastes wrong. The cook who can say what is wrong, and which lever fixes it, saves the dish; the cook who guesses usually makes it worse. Diagnosis comes first; the fix follows from it."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** the inputs of `TST-1.M4.X1`: a helper, 2 litres of broth, salt, vinegar, sugar, chilli and coded cups; the tasting form; a notebook."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Diagnose first.* Taste, and answer two questions in writing before you touch the dish: what is wrong, and which lever fixes it?"
+      },
+      {
+       "type": "paragraph",
+       "text": "*The fixes:*"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "It tastes",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Flat",
+         "Of water; fades at once",
+         "Salt first, then acid"
+        ],
+        [
+         "Too salty",
+         "Salt first and last",
+         "Dilute with unsalted base, or add bulk (more of the main vegetable); acid and fat mask a little"
+        ],
+        [
+         "Too sour",
+         "Sharp, thin",
+         "Sweet, fat, dilution"
+        ],
+        [
+         "Too sweet",
+         "Cloying, heavy",
+         "Acid, salt, a bitter element"
+        ],
+        [
+         "Too hot",
+         "Burning, lasting",
+         "Dilution, fat or dairy, a little sweetness"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*A potato does not \"draw out\" salt.* It absorbs salty liquid, so the soup gets less of it, but the salt that remains is just as strong. Dilution is the only real fix for too much salt."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Correct in small steps.* Each correction is a small amount, stirred in, and tasted. A big correction trades one fault for another: too salty becomes salty and sharp."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Diagnose (45 min).** The helper prepares three samples of the broth, each with one fault, and codes them, as in `TST-1.M4.X1`. Taste each and write your diagnosis and the planned fix before correcting anything."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Correct (45 min).** Correct each sample in steps, recording every addition. The helper tastes the corrected samples against the correct reference."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "At the next monthly calibration evening, ask the helper for the faults you didn't have this time, so that you have met all five."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** the diagnosis written before the first correction, and right; the corrected samples close to the reference."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "The fix made it worse",
+         "Correcting before diagnosing",
+         "Write the diagnosis and the planned lever first"
+        ],
+        [
+         "Sharp and still salty",
+         "Too salty fixed with more acid",
+         "Dilute; acid only masks a little"
+        ],
+        [
+         "Overshot in the other direction",
+         "One big correction instead of small steps",
+         "Small amounts, tasted between them"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** a clean spoon for every taste (`SAF-1`); the cups are never poured back into the broth."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the written diagnoses, the corrections, and the helper's judgment (in `TST-1.M4.X1`)."
+      }
+     ]
+    },
+    {
+     "id": "TST-1.M4.L3",
+     "title": "Blind triangle test",
+     "prerequisites": [
+      "TST-1.M1.L2"
+     ],
+     "competencies": [
+      {
+       "id": "FL-SENS",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** cooks argue about whether a change makes a dish better: expensive butter, a different salt, an extra step. Opinion is easily fooled. A blind test settles the question with a known chance level. It is the same test you passed in module 2, now used as a tool for your own cooking questions."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** the inputs of `TST-1.M4.X2`: two versions of a simple dish that differ in one thing; a helper; household tasters; coded cups; a die and a coin; key sheets."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Why blind tests beat opinion.* Knowing which sample is which changes what we taste. Expectation, the brand, the price and the effort we put in all push the judgment, often without our noticing. A blind test with a known chance level shows whether a difference is real [S20]."
+      },
+      {
+       "type": "paragraph",
+       "text": "*The triangle test.*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "Three coded cups, two the same and one different. The taster picks the odd one out."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "The position of the odd cup varies, and so does which version is the odd one, so a taster can't learn a pattern."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "By guessing, a taster is right one time in three. With six trials, guessing gives about two right."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Reading the result.* With six trials, 4 right happens by guessing in about 10 % of attempts, and 5 right in about 2 %. So \"5 of 6\" means the taster can tell the difference; \"2 of 6\" means no detectable difference. With several tasters, add up their trials: 18 trials give about 6 right by guessing."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Using it.* Before adopting a change that costs money or time, test whether anyone can taste it. If no one can, keep the cheaper or quicker version. If tasters can, ask which version they prefer."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Run a triangle test (60 min).** Run `TST-1.M4.X2`: two versions of the same dish that differ in one thing, for example mashed potato with butter or with oil, or a soup salted at 10 or 12 g/l (1 % or 1.2 %), with household tasters in six trials each."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** a result you can interpret and state in one line: \"the tasters could tell (5 of 6)\", or \"could not (2 of 6)\"."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Tasters know which is which",
+         "Labelled cups, or cups that look different",
+         "Three-digit codes underneath; the same cups and amounts"
+        ],
+        [
+         "A taster scores well by pattern",
+         "The odd cup always in the same position",
+         "Roll the die for each trial"
+        ],
+        [
+         "A result that means nothing",
+         "Too few trials to tell a difference from luck",
+         "Six trials per taster, at least"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** the dish waits on the table only during the test; leftovers go into the fridge (4 °C) within 2 hours."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the trial results against the key, and the conclusion (in `TST-1.M4.X2`)."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "TST-1.M4.X1",
+     "title": "Fix three unbalanced samples",
+     "description": "Fix three deliberately unbalanced samples prepared by a household member.",
+     "competencies": [
+      {
+       "id": "FL-SEAS",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** diagnose and correct three simple faults, against a correct reference that the helper keeps. This exercise is the record of the two sessions of `TST-1.M4.L2`."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** 2 litres of vegetable broth; fine salt, white-wine vinegar, sugar and chilli flakes; coded cups; small pans or jugs; a measuring spoon or pipette; the scale; the tasting form."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Recipe:** the helper's preparation, then the corrections."
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**The helper divides the broth.** 500 ml stays unsalted, for dilution. The other 1.5 litres is salted at 10 g/l (15 g) and divided into four jugs of about 375 ml: one stays correct as the reference, and three are given one fault each. For example:"
+        },
+        {
+         "level": 1,
+         "marker": "",
+         "text": "**flat:** made from unsalted broth instead;"
+        },
+        {
+         "level": 1,
+         "marker": "",
+         "text": "**too sour:** 8 ml of vinegar (about 20 ml/l, the top of your acid series);"
+        },
+        {
+         "level": 1,
+         "marker": "",
+         "text": "**too sweet:** 2 teaspoons of sugar."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "Other faults for later evenings: **too salty** (2 g more salt) or **too hot** (two pinches of chilli flakes)."
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**The helper codes** the three faulty jugs and writes the key, folded shut."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "**Diagnose.** Taste each and write the fault and the planned fix."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "**Correct in small steps,** recording every addition: salt by the pinch, vinegar by 5 drops, unsalted broth by 50 ml, and so on. Taste between steps."
+        },
+        {
+         "level": 0,
+         "marker": "5.",
+         "text": "**The helper's judgment.** The helper tastes each corrected sample against the reference and says whether they can tell them apart, and whether it is under-seasoned, over-seasoned or neither."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:** the written diagnoses, the corrections in grams, drops or millilitres, and the helper's judgment. Corrected samples called neither under- nor over-seasoned add to `FL-SEAS` level 2. The diagnosis practice prepares `FL-CORR` and `JD-TRBL`, which this course takes to level 1."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 1.5 h."
+      }
+     ]
+    },
+    {
+     "id": "TST-1.M4.X2",
+     "title": "A triangle test on two versions of a dish",
+     "description": "A triangle test on two versions of the same dish.",
+     "competencies": [
+      {
+       "id": "FL-SENS",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** settle a cooking question by a blind test instead of by opinion. One variable differs between the two versions; you and the household tasters take six trials each."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** for mashed potato for 4: 1 kg of floury potatoes, salt for the cooking water (10 g/l), 100 ml of milk, 40 g of butter and 40 ml of rapeseed or olive oil. Or a soup salted at 10 or 12 g/l (two 1-litre batches). Coded cups or small spoons; a die and a coin; key sheets; water and crackers."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Recipe:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Write the question** and the decision it will lead to: \"Does butter make my mash better than oil? If no one can tell, I'll use whichever is at hand.\""
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Make the two versions.** Boil the peeled potatoes in salted water until tender, drain and mash. Divide into two equal halves. Into one, beat 50 ml of warm milk and the butter; into the other, 50 ml of warm milk and the oil. The same salt, the same texture."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "**The helper codes** two bowls, keeps the key, and for each trial rolls the die for the odd cup's position (1–2 left, 3–4 middle, 5–6 right) and tosses the coin for which version is odd."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "**Run six trials per taster,** with a sip of water between them. Each taster writes the code of the cup they think is odd; no talking."
+        },
+        {
+         "level": 0,
+         "marker": "5.",
+         "text": "**Score** against the key. Compare with chance: about 2 of 6 by guessing; 5 or 6 of 6 is a clear difference."
+        },
+        {
+         "level": 0,
+         "marker": "6.",
+         "text": "**Write the conclusion** and the decision. If the tasters could tell, ask which version they preferred."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:** the trial results against the key, and the conclusion and decision. Your own result, at least 4 of 6 on a detectable difference, is a further calibration point for `FL-SENS` level 2."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 1 h; the mash is part of dinner."
+      },
+      {
+       "type": "paragraph",
+       "text": "**After the course.** Repeat the salt and acid ranking tests of `TST-1.M2.X1` every month for the rest of S1, on an evening when the helper is home; they keep your tasting forms valid (assessment §5.5). At `MS-S1` the full series is repeated as part of the milestone, and your form for the meal is compared with the tasters' cards."
+      }
+     ]
+    }
+   ],
+   "items": [
+    {
+     "id": "TST-1.M4.Q1",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "TST-1.M4.L1",
+     "safety": false,
+     "question": "Why does a sauce taste saltier after reducing?",
+     "options": [
+      {
+       "key": "A",
+       "text": "salt forms during cooking"
+      },
+      {
+       "key": "B",
+       "text": "water evaporates and the salt stays"
+      },
+      {
+       "key": "C",
+       "text": "the tongue tires"
+      },
+      {
+       "key": "D",
+       "text": "it doesn't"
+      }
+     ],
+     "answer": "B",
+     "why": "Taste after reducing, not before."
+    },
+    {
+     "id": "TST-1.M4.Q2",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "TST-1.M4.L1",
+     "safety": false,
+     "question": "Why does salt added at the end taste saltier per gram than salt added early?",
+     "options": [
+      {
+       "key": "A",
+       "text": "it is a different salt"
+      },
+      {
+       "key": "B",
+       "text": "it sits on the surface instead of being absorbed and integrated"
+      },
+      {
+       "key": "C",
+       "text": "it is hotter"
+      },
+      {
+       "key": "D",
+       "text": "it doesn't"
+      }
+     ],
+     "answer": "B",
+     "why": "Early salt seasons through; late salt is tasted first."
+    },
+    {
+     "id": "TST-1.M4.Q3",
+     "type": "SCENARIO",
+     "lessonId": "TST-1.M4.L2",
+     "safety": false,
+     "question": "A soup is too salty and there is no unsalted stock. What do you do?",
+     "options": [],
+     "answer": "Add bulk or unsalted liquid (water with more of the main vegetable, simmered); a little acid or cream can soften the impression; a potato will not remove the salt.",
+     "why": "Dilution is the only real fix."
+    },
+    {
+     "id": "TST-1.M4.Q4",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "TST-1.M4.L2",
+     "safety": false,
+     "question": "A dressing is too sour. Which correction fits?",
+     "options": [
+      {
+       "key": "A",
+       "text": "more vinegar"
+      },
+      {
+       "key": "B",
+       "text": "a little honey and oil"
+      },
+      {
+       "key": "C",
+       "text": "more salt only"
+      },
+      {
+       "key": "D",
+       "text": "water"
+      }
+     ],
+     "answer": "B",
+     "why": "Sweet and fat balance acid."
+    },
+    {
+     "id": "TST-1.M4.Q5",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "TST-1.M4.L2",
+     "safety": false,
+     "question": "A curry is too hot for the guests. What helps?",
+     "options": [
+      {
+       "key": "A",
+       "text": "water"
+      },
+      {
+       "key": "B",
+       "text": "yoghurt or coconut milk, and more of the base"
+      },
+      {
+       "key": "C",
+       "text": "more chilli"
+      },
+      {
+       "key": "D",
+       "text": "lemon only"
+      }
+     ],
+     "answer": "B",
+     "why": "Dilute and add fat or dairy."
+    },
+    {
+     "id": "TST-1.M4.Q6",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "TST-1.M4.L3",
+     "safety": false,
+     "question": "Why is a triangle test blind?",
+     "options": [
+      {
+       "key": "A",
+       "text": "to make it harder"
+      },
+      {
+       "key": "B",
+       "text": "knowing which sample is which changes what people taste"
+      },
+      {
+       "key": "C",
+       "text": "for hygiene"
+      },
+      {
+       "key": "D",
+       "text": "it is quicker"
+      }
+     ],
+     "answer": "B",
+     "why": "Expectation biases perception."
+    },
+    {
+     "id": "TST-1.M4.Q7",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "TST-1.M4.L3",
+     "safety": false,
+     "question": "In six triangle trials a taster is right twice. What does that suggest?",
+     "options": [
+      {
+       "key": "A",
+       "text": "they can clearly tell the difference"
+      },
+      {
+       "key": "B",
+       "text": "about what guessing gives, so no detectable difference"
+      },
+      {
+       "key": "C",
+       "text": "the test failed"
+      },
+      {
+       "key": "D",
+       "text": "the samples were the same"
+      }
+     ],
+     "answer": "B",
+     "why": "Guessing is right one time in three."
+    },
+    {
+     "id": "TST-1.M4.Q8",
+     "type": "SCENARIO",
+     "lessonId": "TST-1.M4.L3",
+     "safety": false,
+     "question": "You wonder whether expensive butter makes your mashed potato better. How do you find out?",
+     "options": [],
+     "answer": "A triangle test: two versions differing only in the butter, coded cups, the odd cup's position varied, six trials per taster; adopt the change only if the tasters detect it and prefer it.",
+     "why": "A blind test settles it, not the price."
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,3281 @@
+{
+ "schemaVersion": 1,
+ "id": "PST-4",
+ "introduction": [
+  {
+   "type": "paragraph",
+   "text": "**Before you start.** `PST-3` completed the six pastry elements of `TS-BAK` level 4: choux, laminated dough, tarts, creams, mousses and chocolate. This course adds the components of the restaurant dessert and teaches how to put them together:"
+  },
+  {
+   "type": "list",
+   "items": [
+    {
+     "level": 0,
+     "marker": "",
+     "text": "**meringues:** French, Swiss and Italian, and what each is for;"
+    },
+    {
+     "level": 0,
+     "marker": "",
+     "text": "**ice cream and sorbet:** the science of freezing point, fat and air; a custard-base ice cream with or without a machine; sorbets by ratio;"
+    },
+    {
+     "level": 0,
+     "marker": "",
+     "text": "**sugar work:** the sugar stages, dry and wet caramel, caramel sauce, praline and brittle;"
+    },
+    {
+     "level": 0,
+     "marker": "",
+     "text": "**a layered dessert:** sponge, mousse, insert, crunch and glaze, planned over two days;"
+    },
+    {
+     "level": 0,
+     "marker": "",
+     "text": "**the plated dessert:** contrast of temperature, texture and taste, plated four times alike."
+    }
+   ]
+  },
+  {
+   "type": "paragraph",
+   "text": "Eggs follow the egg rows of assessment §9:"
+  },
+  {
+   "type": "list",
+   "items": [
+    {
+     "level": 0,
+     "marker": "",
+     "text": "an egg-thickened base cooked for later (custard, ice-cream base, Swiss meringue) reaches 71 °C in every part, checked with a probe;"
+    },
+    {
+     "level": 0,
+     "marker": "",
+     "text": "where the egg is raw or lightly cooked when served (an uncooked ice-cream base, a mousse lightened with uncooked meringue, an Italian meringue that stays below 71 °C), use pasteurised eggs or egg products, for every guest, and keep the dish at most 24 hours."
+    }
+   ]
+  },
+  {
+   "type": "paragraph",
+   "text": "Fruit is Dutch and in season: rhubarb, strawberries, red currants, cherries, plums, apples and pears. Chocolate, vanilla and citrus are pantry goods. Nuts are replaced by seeds by default, as in S3: the praline is made with pumpkin or sunflower seeds, and if you use nuts you apply the allergen rule (`SA-ALLG`)."
+  },
+  {
+   "type": "paragraph",
+   "text": "Plan about five weeks at 6.5 hours a week. The layered dessert spans two days and needs freezer space; the ice cream needs a day for the base to chill. Serve the desserts at household and guest meals."
+  },
+  {
+   "type": "paragraph",
+   "text": "**Have ready:** a mixer; a heavy saucepan; the sugar thermometer and the instant-read probe; a silicone mat or parchment; rings or moulds with acetate strips; a wire rack; the precision scale (0.1 g); piping bags and nozzles; a stick blender; plating tools; the blowtorch; the ice-cream machine and refractometer if you have them (neither is needed); pasteurised egg white and yolk in cartons; a bowl of cold water for sugar tests."
+  }
+ ],
+ "modules": [
+  {
+   "id": "PST-4.M1",
+   "title": "Meringues",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** the 8 items of `PST-4.M1` in the course file, 3 of them safety items. Pass mark 80 %, with every safety item correct."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "PST-4.M1.L1",
+     "title": "Three meringues",
+     "prerequisites": [
+      "BAK-2.M4.L2"
+     ],
+     "competencies": [
+      {
+       "id": "TS-BAK",
+       "level": 4
+      },
+      {
+       "id": "IN-BAK",
+       "level": 4
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** the three meringues use the same egg white and sugar, but differ in stability and in safety. Knowing which one a dessert needs, and why, comes before every pavlova, buttercream and mousse in this course."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** 300 g of egg white (about 10 eggs; pasteurised white from a carton for the Italian meringue) and 600 g of caster sugar, in three batches of 100 g and 200 g; a mixer with a clean, dry, grease-free bowl; a heatproof bowl over a pan of simmering water; a small heavy pan; the sugar thermometer and the probe; a spatula."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*How sugar and heat stabilise egg foam.* Whisking unfolds the egg-white proteins, which line the air bubbles. Sugar dissolves into the water between the bubbles and makes it thicker, so the foam drains and collapses more slowly. Heat sets the proteins and makes the foam permanent. Fat (a trace of yolk, a greasy bowl) stops the foam forming."
+      },
+      {
+       "type": "paragraph",
+       "text": "*The three meringues:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "***French*:** whites whisked to soft peaks, then the sugar added a spoon at a time until stiff and glossy. The least stable; baked dry (meringues, pavlova) or folded into batters. Raw when used uncooked."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "***Swiss*:** whites and sugar warmed together over the water bath, whisking, until the sugar dissolves and the mixture reaches 71 °C on the probe (assessment §9); then whisked off the heat until stiff and cool. Dense, glossy and stable."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "***Italian*:** a sugar syrup cooked to 118–121 °C and poured in a thin stream onto whites whisked to soft peaks, then whisked until cool. The most stable, used for mousses, buttercream and toppings. The hot syrup alone does not bring every part to 71 °C, so where it stays uncooked, use pasteurised whites (§9)."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*The ratio.* About twice the sugar to the egg white by weight for a firm meringue (100 g of white to 200 g of sugar); less for soft toppings."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**French and Swiss (60 min).** Make 100 g of white and 200 g of sugar both ways. Probe the Swiss to 71 °C before whisking off the heat. Leave a spoonful of each on a plate for 30 minutes and compare how much each weeps or slumps."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Italian (60 min).** Cook 200 g of sugar with 60 ml of water to 118–121 °C on the thermometer, and pour it down the side of the bowl onto 100 g of pasteurised whites at soft peaks, the mixer running. Whisk until cool; top a dessert with it."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "a glossy meringue that holds a stiff peak and feels smooth between the fingers (no sugar grains);"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "the Swiss mixture at 71 °C on the probe before you whisk it off the heat."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Whites that won't whip",
+         "A trace of yolk or a greasy bowl",
+         "A clean bowl; separate eggs one at a time into a cup"
+        ],
+        [
+         "Low volume",
+         "Sugar added too early or all at once",
+         "Soft peaks first, then sugar gradually"
+        ],
+        [
+         "Grainy, dry whites",
+         "Overwhipped",
+         "Stop at glossy and stiff"
+        ],
+        [
+         "Threads of sugar on the whisk",
+         "Syrup poured onto the whisk",
+         "Pour down the side of the bowl"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** the Swiss meringue to 71 °C on the probe; pasteurised whites for an Italian meringue served uncooked, and for French meringue served raw (§9, the raw-egg row). Syrup at 118–121 °C burns deeply: long sleeves, and pour away from you (`SAF-3.M2.L2`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the probe reading of the Swiss meringue; the syrup temperature; photos of the three after 30 minutes and which held best."
+      }
+     ]
+    },
+    {
+     "id": "PST-4.M1.L2",
+     "title": "Meringue applications",
+     "prerequisites": [
+      "PST-4.M1.L1"
+     ],
+     "competencies": [
+      {
+       "id": "TS-BAK",
+       "level": 4
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** a pavlova, an Italian meringue buttercream and a torched topping are three desserts from one foam. Making them shows what the stability of each meringue is good for."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** for the pavlova, 4 egg whites (about 130 g), 260 g of caster sugar, 1 teaspoon of cornflour and 1 teaspoon of white-wine vinegar; 250 ml of cream; seasonal Dutch fruit (rhubarb poached, strawberries, red currants, plums or pears); for the topping and buttercream, the Italian meringue of `PST-4.M1.L1` with pasteurised whites, and 200 g of soft butter; a shortcrust tart base (`BAK-2`) or a lemon tart (`PST-3`); piping bags with plain and star nozzles; the blowtorch; parchment and a baking tray."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Pavlova.* A French meringue with a little cornflour and vinegar, which keep the inside soft. Shape it as a nest on parchment. Bake it at a low temperature (about 120 °C) until crisp outside and marshmallowy inside, then cool it in the switched-off oven with the door ajar, to avoid cracks. Top it at the last moment with whipped cream and seasonal fruit."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Italian meringue at work:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**in a mousse:** folded into a fruit purée or a cream for lightness and body (with pasteurised whites; such a mousse is kept at most 24 hours, §9);"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**in buttercream:** soft butter beaten into the cooled meringue a piece at a time (Italian meringue buttercream). It may look curdled halfway; keep beating until it turns smooth."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*A toasted topping.* Swiss or Italian meringue piped onto a tart or a dessert and coloured with a blowtorch. Use the torch as its maker's instructions say: on a stable surface, away from your body and anything that burns, the flame moving, the gas closed after use (assessment §9)."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Piping* (`PST-3`). A bag with a plain or star nozzle, filled half full, twisted shut, and squeezed with even pressure from the top while the other hand guides."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**A pavlova (60 min active, 2 h elapsed).** Bake and cool it in the oven; top it with cream and seasonal fruit just before serving."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Toppings and fillings (60 min).** Pipe an Italian meringue on a tart and torch it. Make an Italian meringue buttercream and pipe a few rosettes."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "a pavlova crisp outside, soft inside, with few cracks;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "even, golden peaks from the blowtorch;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "a smooth buttercream that holds its shape."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "A brown pavlova weeping sugar",
+         "Baked too hot",
+         "About 120 °C; check your oven with a thermometer"
+        ],
+        [
+         "A soft, wet pavlova",
+         "Cream and fruit added hours early",
+         "Top it just before serving"
+        ],
+        [
+         "Black peaks",
+         "Blowtorch too close",
+         "Keep the flame moving, a hand's width away"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** the blowtorch by its maker's instructions (assessment §9, tier 3); pasteurised whites wherever the meringue is served uncooked; desserts with cream in the fridge, out of it for at most 2 hours."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the oven temperature and baking time; photos of the pavlova whole and cut; the torched tart."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "PST-4.M1.X1",
+     "title": "A pavlova with a seasonal topping",
+     "description": "A pavlova with a seasonal topping.",
+     "competencies": [
+      {
+       "id": "TS-BAK",
+       "level": 4
+      },
+      {
+       "id": "IN-BAK",
+       "level": 4
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** bake a pavlova to standard and use one substitution to learn how the formula behaves. Make a pavlova with a topping of Dutch fruit in season. Then make a second pavlova with one substitution (for example light brown sugar for caster sugar, or less sugar), predict the effect in writing, and confirm it in cross-section and with tasters."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** eggs, caster sugar, cornflour, vinegar, cream; seasonal Dutch fruit (rhubarb, strawberries, red currants, plums or pears); the substitute; two baking trays; tasters' cards."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Framework:** the meringue framework."
+      },
+      {
+       "type": "table",
+       "header": [
+        "Part",
+        "Fixed",
+        "Your decisions"
+       ],
+       "rows": [
+        [
+         "Ratio",
+         "Sugar about twice the white by weight",
+         "The substitution"
+        ],
+        [
+         "Method",
+         "French: soft peaks, sugar gradually, stiff and glossy; cornflour and vinegar folded in",
+         "—"
+        ],
+        [
+         "Bake",
+         "Low, about 120 °C; cooled in the oven",
+         "The size and shape"
+        ],
+        [
+         "Topping",
+         "Whipped cream and seasonal fruit, at the last moment",
+         "The fruit and how it is prepared"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Procedure:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "Write the formula and the prediction for the substitution."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "Bake both pavlovas side by side; cool them in the oven."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "Photograph each whole and in cross-section; serve to tasters with cards."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "Write whether the prediction held."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`TS-BAK` level 4, a further element:** the pavlova to standard, crisp outside and soft inside (cross-section photo)."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`IN-BAK` level 4, substitution one of two:** the effect predicted and confirmed in cross-section and by tasters; the second is in `PST-4.M2.X1`."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "AI review reads the cross-section photos against the reference and the prediction: *competent* is a crisp shell and a soft centre, a prediction written before baking and checked against both pavlovas; *not yet* is a pavlova browned or weeping, or a prediction written after the result."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 2.5 h."
+      }
+     ]
+    }
+   ],
+   "items": [
+    {
+     "id": "PST-4.M1.Q1",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "PST-4.M1.L1",
+     "safety": false,
+     "question": "Why does sugar make a meringue more stable?",
+     "options": [
+      {
+       "key": "A",
+       "text": "it adds air"
+      },
+      {
+       "key": "B",
+       "text": "it thickens the water between the bubbles, so the foam drains more slowly"
+      },
+      {
+       "key": "C",
+       "text": "it sets the proteins"
+      },
+      {
+       "key": "D",
+       "text": "it removes fat"
+      }
+     ],
+     "answer": "B",
+     "why": "Heat sets the proteins; sugar slows drainage."
+    },
+    {
+     "id": "PST-4.M1.Q2",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "PST-4.M1.L1",
+     "safety": false,
+     "question": "Which meringue is the most stable?",
+     "options": [
+      {
+       "key": "A",
+       "text": "French"
+      },
+      {
+       "key": "B",
+       "text": "Swiss"
+      },
+      {
+       "key": "C",
+       "text": "Italian"
+      },
+      {
+       "key": "D",
+       "text": "all the same"
+      }
+     ],
+     "answer": "C",
+     "why": "The hot syrup cooks and stabilises the foam."
+    },
+    {
+     "id": "PST-4.M1.Q3",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "PST-4.M1.L1",
+     "safety": true,
+     "question": "To what temperature is a Swiss meringue mixture heated before whisking off the heat?",
+     "options": [
+      {
+       "key": "A",
+       "text": "50 °C"
+      },
+      {
+       "key": "B",
+       "text": "71 °C, checked with a probe"
+      },
+      {
+       "key": "C",
+       "text": "100 °C"
+      },
+      {
+       "key": "D",
+       "text": "until warm"
+      }
+     ],
+     "answer": "B",
+     "why": "Egg row of assessment §9."
+    },
+    {
+     "id": "PST-4.M1.Q4",
+     "type": "SCENARIO",
+     "lessonId": "PST-4.M1.L1",
+     "safety": true,
+     "question": "A mousse is lightened with Italian meringue and not cooked again. Which eggs do you use, and why?",
+     "options": [],
+     "answer": "Pasteurised whites: the syrup does not bring every part to 71 °C, and the egg is lightly cooked when served.",
+     "why": "§9: pasteurised eggs where the egg is raw or lightly cooked."
+    },
+    {
+     "id": "PST-4.M1.Q5",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "PST-4.M1.L1",
+     "safety": false,
+     "question": "Your whites won't whip. The most likely cause?",
+     "options": [
+      {
+       "key": "A",
+       "text": "too little sugar"
+      },
+      {
+       "key": "B",
+       "text": "a trace of yolk or fat in the bowl"
+      },
+      {
+       "key": "C",
+       "text": "cold eggs"
+      },
+      {
+       "key": "D",
+       "text": "the whisk"
+      }
+     ],
+     "answer": "B",
+     "why": "Fat stops the foam."
+    },
+    {
+     "id": "PST-4.M1.Q6",
+     "type": "CALCULATION",
+     "lessonId": "PST-4.M1.L1",
+     "safety": false,
+     "question": "A firm meringue uses twice the sugar to egg white by weight. How much sugar for 120 g of egg white?",
+     "options": [],
+     "answer": "240 g",
+     "why": "120 × 2."
+    },
+    {
+     "id": "PST-4.M1.Q7",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "PST-4.M1.L2",
+     "safety": false,
+     "question": "Why is a pavlova cooled in the switched-off oven?",
+     "options": [
+      {
+       "key": "A",
+       "text": "to keep it warm"
+      },
+      {
+       "key": "B",
+       "text": "slow cooling limits cracking"
+      },
+      {
+       "key": "C",
+       "text": "to dry the fruit"
+      },
+      {
+       "key": "D",
+       "text": "for colour"
+      }
+     ],
+     "answer": "B",
+     "why": "Sudden cold cracks the shell."
+    },
+    {
+     "id": "PST-4.M1.Q8",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "PST-4.M1.L2",
+     "safety": true,
+     "question": "How do you use a blowtorch on a meringue topping?",
+     "options": [
+      {
+       "key": "A",
+       "text": "close to the face to see"
+      },
+      {
+       "key": "B",
+       "text": "on a stable surface, away from the body and anything that burns, the gas closed after use"
+      },
+      {
+       "key": "C",
+       "text": "over the hob flame"
+      },
+      {
+       "key": "D",
+       "text": "on a wooden board held in the hand"
+      }
+     ],
+     "answer": "B",
+     "why": "Equipment rule, assessment §9; `SAF-3.M2.L2`."
+    }
+   ]
+  },
+  {
+   "id": "PST-4.M2",
+   "title": "Ice cream and sorbet",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** the 8 items of `PST-4.M2` in the course file, 2 of them safety items. Pass mark 80 %, with every safety item correct."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "PST-4.M2.L1",
+     "title": "Ice cream science",
+     "prerequisites": [
+      "PST-3.M4.L1"
+     ],
+     "competencies": [
+      {
+       "id": "IN-BAK",
+       "level": 4
+      },
+      {
+       "id": "FL-TEXT",
+       "level": 4
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** an ice cream is a balance of water, sugar, fat, solids and air. Writing it as a balance sheet in percentages lets you predict why one batch is icy and another syrupy, and change one thing at a time."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** for one base: 500 g of whole milk, 250 g of cream (35 % fat), 6 egg yolks (about 120 g) and 150 g of caster sugar; 30 g of dextrose; the precision scale; a saucepan; the probe; three small freezer tubs with lids, labelled; a freezer thermometer; the balance-sheet template."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Sugar and freezing point.* Dissolved sugar lowers the freezing point, so part of the water stays liquid at freezer temperature and the ice cream stays scoopable. Too little sugar gives a hard, icy block; too much a soft, syrupy one. Glucose syrup, dextrose and invert sugar lower it more than sucrose does for the same sweetness."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Fat.* Milk fat, about 10–16 % of the mix in a custard ice cream, gives creaminess and slows melting. Egg yolk adds fat and emulsifiers that keep the texture smooth."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Solids.* Milk solids, sugar and fat together, about 36–42 % of the mix, bind water, so fewer, smaller ice crystals form."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Air.* Churning beats in air (the overrun) while freezing. Home machines reach about 20–30 %, which keeps the ice cream dense and rich."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Ice crystals.* Fast freezing and constant stirring give small crystals: smooth. Slow freezing and temperature swings give large ones: icy. A pre-chilled base and a cold machine bowl help."
+      },
+      {
+       "type": "paragraph",
+       "text": "*The balance sheet.* Write the formula in percentages of the total mix, so it can be checked and changed:"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Ingredient",
+        "Weight",
+        "% of mix",
+        "Fat (from the label)"
+       ],
+       "rows": [
+        [
+         "Whole milk",
+         "500 g",
+         "49 %",
+         "3.5 % of 500 g = 17.5 g"
+        ],
+        [
+         "Cream",
+         "250 g",
+         "24 %",
+         "35 % of 250 g = 87.5 g"
+        ],
+        [
+         "Yolks",
+         "120 g",
+         "12 %",
+         "From a food composition table"
+        ],
+        [
+         "Sugar",
+         "150 g",
+         "15 %",
+         "—"
+        ],
+        [
+         "**Total**",
+         "**1,020 g**",
+         "**100 %**",
+         "Add the yolk fat; divide by 1,020"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "Use the fat figures on your own labels; Dutch whole milk and *slagroom* state them."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**One base, three changes (60 min, then frozen overnight).** Make the base as a custard (`PST-4.M2.L2`), probed to 71 °C and cooled. Divide it in three: as written; with 3 % less sugar (about 10 g less per third); and with part of the sugar replaced by dextrose (10 g). Still-freeze all three in labelled tubs, side by side. Scoop and compare them the next day, at the same freezer temperature."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** you can explain each result (harder, softer, smoother) from the balance sheet."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Results you can't explain",
+         "Two variables changed at once",
+         "Change one thing per sample"
+        ],
+        [
+         "An unfair comparison",
+         "Samples at different freezer temperatures",
+         "Same shelf, same time"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** the custard base to 71 °C in every part, checked with a probe, and cooled by the cooling rule (assessment §9); the freezer at −18 °C or below."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the balance sheet; the three samples' hardness and texture; your explanation of each."
+      }
+     ]
+    },
+    {
+     "id": "PST-4.M2.L2",
+     "title": "Custard-base ice cream",
+     "prerequisites": [
+      "PST-4.M2.L1"
+     ],
+     "competencies": [
+      {
+       "id": "TS-BAK",
+       "level": 4
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** the custard base is the classic ice cream, and it can be made with or without a machine. Cooked to 71 °C, aged overnight and frozen fast, it gives a smooth, dense scoop that is safe for every guest."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** the base of `PST-4.M2.L1` (milk, cream, yolks, sugar); an infusion (a vanilla pod, a few sprigs of lemon verbena, or 30 g of toasted pumpkin seeds); a heavy saucepan; a whisk and spatula; the probe; a fine sieve; an ice bath; a lidded container; the ice-cream machine if you have one (bowl frozen the day before); a shallow metal tray and a fork for still-freezing."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*The base* (`PST-3.M4.L1`):"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "Heat the milk and cream with the infusion; cover and leave for 20 minutes."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "Whisk the yolks and sugar."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "Pour the warm milk onto the yolks, whisking (tempering), and return all to the pan."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "Cook, stirring with a spatula over low heat, until the custard coats a spoon (*nappe*) and every part reads above 71 °C on the probe (assessment §9), but below about 84 °C, where it curdles."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Cooling and ageing.* Strain the custard, cool it fast in an ice bath (the cooling rule of §9), and age it in the fridge for at least 4 hours or overnight: the fat crystallises and the proteins hydrate, which makes a smoother ice cream."
+      },
+      {
+       "type": "paragraph",
+       "text": "*With a machine.* Freeze the bowl (or run the compressor) before churning. Churn the cold base until it looks like soft-serve, then harden it in the freezer for a few hours."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Without a machine (still-frozen).* Freeze the base in a shallow tray and stir it hard with a fork or whisk every 30 minutes for 2–3 hours. Or freeze it solid in cubes and blend. For smoother results, fold whipped cream into a richer base (a *parfait*), so the air comes from the cream."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Storage.* At −18 °C or below (assessment §9), covered with paper pressed onto the surface; best within a week or two for texture. Melted ice cream is not refrozen."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**The base (45 min, aged overnight).** A vanilla or seasonal infusion; log the probe readings and the cooling."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Churned and still-frozen (60 min).** Churn half in a machine, if you have one, and still-freeze the other half. Compare their texture at the same temperature."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "a custard that coats a spoon, with the probe log above 71 °C;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "a smooth, dense scoop that melts cleanly."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "A curdled custard",
+         "Boiled",
+         "Low heat, stir; take it off below 84 °C; blend if it is only slightly grainy"
+        ],
+        [
+         "Never freezes properly in the machine",
+         "A warm base churned",
+         "Age it cold overnight"
+        ],
+        [
+         "Icy, crunchy ice cream",
+         "Left soft on the counter and refrozen",
+         "Serve and return quickly; never refreeze melted"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** every part of the custard above 71 °C (the egg-thickened row); cooled by the cooling rule; stored at −18 °C or below; melted ice cream not refrozen (assessment §9)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the probe and cooling logs; the infusion and time; photos of both scoops; which texture was smoother."
+      }
+     ]
+    },
+    {
+     "id": "PST-4.M2.L3",
+     "title": "Sorbets and granitas",
+     "prerequisites": [
+      "PST-4.M2.L1"
+     ],
+     "competencies": [
+      {
+       "id": "RD-RATO",
+       "level": 4
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** a sorbet is fruit, sugar and water, and the sugar decides everything. Balancing it by measurement and by taste, and tasting for the serving temperature, gives a sorbet that scoops and tastes fresh."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** 500 g of a seasonal Dutch fruit purée (rhubarb poached and blended, strawberries, red currants, plums); a second fruit for the sorbet by taste; caster sugar and water for a syrup; a lemon; the refractometer if you have one; a clean, washed raw egg for the egg test; the scale; a shallow tray and a fork; the machine or tubs for still-freezing."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*The sorbet.* Fruit purée or juice, sugar syrup and water; no dairy. The sugar decides the texture: about 25–30 % of the mix for most fruit sorbets, counting the fruit's own sugar."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Measuring sugar.*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**By measurement:** a refractometer reads the sugar as °Brix (aim for around 25–30 °Brix). Without one, calculate it: read the purée's sugar first, then add sugar until the whole mix reaches the target. A worked example: 500 g of purée that reads 8 °Brix (40 g of sugar), with 100 g of water, needs about 180 g of added sugar to reach 28 %: (40 + 180) ÷ (600 + 180) is 0.28."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**By the egg test:** a clean, washed egg floated in the mix shows a circle about the size of a coin above the surface when the sugar is right. Quick, but rough."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Sweetness and serving temperature.* Cold dulls sweetness, so a base tasted at room temperature must taste slightly too sweet. Acid (lemon, or a tart fruit) keeps it fresh."
+      },
+      {
+       "type": "paragraph",
+       "text": "*The granita.* A looser mix with less sugar, frozen in a tray and scraped with a fork every 30 minutes into flakes."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Seasonal Dutch fruit.* Rhubarb, strawberries, red currants, cherries, plums, apples (with cider or *appelstroop*), and pears."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**A sorbet by measurement (60 min, then frozen).** Balance a fruit sorbet by calculation or refractometer; churn or still-freeze it."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**A sorbet by taste and a granita (60 min, then frozen).** Balance a second fruit by taste and the egg test. Make a granita from the rest with less sugar."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "a sorbet that scoops smoothly from the freezer;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "sweetness that seems right when cold, with a fresh finish;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "a granita of separate, glittering flakes."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Rock hard",
+         "Too little sugar",
+         "Measure; aim for 25–30 %"
+        ],
+        [
+         "Flat and too sweet, or sour, when served",
+         "Tasted only cold from the fridge",
+         "Taste at room temperature too"
+        ],
+        [
+         "A block, not flakes",
+         "The granita left to freeze",
+         "Scrape every 30 minutes"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** the egg for the test washed before and after, and not eaten; fruit washed; the freezer at −18 °C or below."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the calculation or the °Brix readings; the egg-test result; photos of the scoops and the granita."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "PST-4.M2.X1",
+     "title": "An ice cream and a sorbet by ratio",
+     "description": "An ice cream and a sorbet by ratio.",
+     "competencies": [
+      {
+       "id": "IN-BAK",
+       "level": 4
+      },
+      {
+       "id": "FL-TEXT",
+       "level": 4
+      },
+      {
+       "id": "TS-BAK",
+       "level": 4
+      },
+      {
+       "id": "RD-RATO",
+       "level": 4
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** derive an ice cream and a sorbet from ratios for flavours you have not made, and serve them as one dessert with a named texture contrast. Write each in percentages for a new flavour. The extensions: one substitution in the ice-cream formula (for example dextrose for part of the sugar, or more yolk for less cream), predicted and confirmed by tasters and a scoop photo; the two served together as one dish, with a texture contrast named in advance and checked on the guests' cards."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** milk, cream, eggs, sugar, dextrose, an infusion; seasonal Dutch fruit for the sorbet; the scale; the probe; the refractometer or the egg test; tasters' cards."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Framework:** the balance-sheet framework."
+      },
+      {
+       "type": "table",
+       "header": [
+        "Part",
+        "Fixed",
+        "Your decisions"
+       ],
+       "rows": [
+        [
+         "Ice cream",
+         "Fat about 10–16 %, solids about 36–42 %; custard to 71 °C, cooled, aged",
+         "The flavour and infusion"
+        ],
+        [
+         "Sorbet",
+         "Sugar about 25–30 % of the mix, the fruit's own sugar counted",
+         "The fruit and the acid"
+        ],
+        [
+         "Substitution",
+         "One change, predicted in writing",
+         "Which"
+        ],
+        [
+         "Dish",
+         "The two together, one contrast named before serving",
+         "The contrast"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Procedure:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "Write both formulas in percentages, with the balance sheet; predict the substitution's effect and the contrast."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "Make the base (probe and cooling logs) and the sorbet mix; freeze."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "Photograph the scoops; serve with the named contrast; collect cards."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "Write whether the predictions held."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`IN-BAK` level 4, substitution two of two:** predicted and confirmed (the first in `PST-4.M1.X1`)."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`FL-TEXT` level 4, dish one of three:** the contrast named in advance, confirmed by the cards and photos."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`TS-BAK` level 4, a further element:** a smooth ice cream and sorbet to standard."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`RD-RATO` level 4:** two formulas derived for new preparations, written in percentages, made and to standard."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "AI review reads the balance sheets, the logs, the scoop photos and the cards: *competent* is both formulas within their ranges, a probe log above 71 °C, smooth scoops, and a contrast the guests name; *not yet* is a formula outside its range without a reason, a missing probe log, or an icy scoop."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 2.5 h over two days."
+      }
+     ]
+    }
+   ],
+   "items": [
+    {
+     "id": "PST-4.M2.Q1",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "PST-4.M2.L1",
+     "safety": false,
+     "question": "Why does sugar keep ice cream scoopable?",
+     "options": [
+      {
+       "key": "A",
+       "text": "it adds air"
+      },
+      {
+       "key": "B",
+       "text": "it lowers the freezing point, so some water stays liquid"
+      },
+      {
+       "key": "C",
+       "text": "it adds fat"
+      },
+      {
+       "key": "D",
+       "text": "it sets the custard"
+      }
+     ],
+     "answer": "B",
+     "why": "Freezing-point depression."
+    },
+    {
+     "id": "PST-4.M2.Q2",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "PST-4.M2.L1",
+     "safety": false,
+     "question": "Which gives smaller ice crystals?",
+     "options": [
+      {
+       "key": "A",
+       "text": "slow freezing"
+      },
+      {
+       "key": "B",
+       "text": "fast freezing with constant stirring of a pre-chilled base"
+      },
+      {
+       "key": "C",
+       "text": "refreezing"
+      },
+      {
+       "key": "D",
+       "text": "more water"
+      }
+     ],
+     "answer": "B",
+     "why": "Fast and stirred."
+    },
+    {
+     "id": "PST-4.M2.Q3",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "PST-4.M2.L1",
+     "safety": false,
+     "question": "What does fat do in ice cream?",
+     "options": [
+      {
+       "key": "A",
+       "text": "lowers the freezing point"
+      },
+      {
+       "key": "B",
+       "text": "gives creaminess and slows melting"
+      },
+      {
+       "key": "C",
+       "text": "adds sweetness"
+      },
+      {
+       "key": "D",
+       "text": "makes it icy"
+      }
+     ],
+     "answer": "B",
+     "why": "Fat and its emulsifiers."
+    },
+    {
+     "id": "PST-4.M2.Q4",
+     "type": "CALCULATION",
+     "lessonId": "PST-4.M2.L1",
+     "safety": false,
+     "question": "A 1,000 g base contains 180 g sugar. What percentage is that?",
+     "options": [],
+     "answer": "18 %",
+     "why": "180 ÷ 1,000 × 100."
+    },
+    {
+     "id": "PST-4.M2.Q5",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "PST-4.M2.L2",
+     "safety": true,
+     "question": "To what temperature is a custard ice-cream base cooked?",
+     "options": [
+      {
+       "key": "A",
+       "text": "until warm"
+      },
+      {
+       "key": "B",
+       "text": "every part to at least 71 °C, checked with a probe, below the point where it curdles"
+      },
+      {
+       "key": "C",
+       "text": "to the boil"
+      },
+      {
+       "key": "D",
+       "text": "60 °C"
+      }
+     ],
+     "answer": "B",
+     "why": "Egg row of assessment §9."
+    },
+    {
+     "id": "PST-4.M2.Q6",
+     "type": "SCENARIO",
+     "lessonId": "PST-4.M2.L2",
+     "safety": true,
+     "question": "You want an ice cream from an uncooked base of yolks, sugar and cream. What do you do?",
+     "options": [],
+     "answer": "Use pasteurised yolks (or egg product), for every guest; or cook the base to 71 °C instead.",
+     "why": "§9: pasteurised eggs where the egg is raw when served."
+    },
+    {
+     "id": "PST-4.M2.Q7",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "PST-4.M2.L3",
+     "safety": false,
+     "question": "Your sorbet base tastes right at room temperature. How will it taste frozen?",
+     "options": [
+      {
+       "key": "A",
+       "text": "sweeter"
+      },
+      {
+       "key": "B",
+       "text": "less sweet, because cold dulls sweetness"
+      },
+      {
+       "key": "C",
+       "text": "the same"
+      },
+      {
+       "key": "D",
+       "text": "more sour"
+      }
+     ],
+     "answer": "B",
+     "why": "So the base should taste slightly too sweet."
+    },
+    {
+     "id": "PST-4.M2.Q8",
+     "type": "SCENARIO",
+     "lessonId": "PST-4.M2.L3",
+     "safety": false,
+     "question": "Your sorbet froze rock hard. What do you change?",
+     "options": [],
+     "answer": "Raise the sugar (counting the fruit's own sugar) towards about 25–30 % of the mix, or replace part of the sugar with dextrose or glucose; check by measurement.",
+     "why": "Too little sugar."
+    }
+   ]
+  },
+  {
+   "id": "PST-4.M3",
+   "title": "Sugar work",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** the 8 items of `PST-4.M3` in the course file, 2 of them safety items. Pass mark 80 %, with every safety item correct."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "PST-4.M3.L1",
+     "title": "Sugar stages and caramel",
+     "prerequisites": [
+      "HEA-1.M2.L2",
+      "SAF-3.M2.L2"
+     ],
+     "competencies": [
+      {
+       "id": "SC-BRWN",
+       "level": 4
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** sugar changes with every degree, from syrup to fudge to toffee to caramel. Reading the stages, and making caramel without burns, opens every sugar component of the course."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** 1 kg of caster sugar; water; a heavy saucepan with a light-coloured inside; a pastry brush and a cup of water; the sugar thermometer; a bowl of cold water for the tests; a white plate; long sleeves; a timer."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Stages by temperature.* As a syrup boils, water leaves and the temperature rises with the sugar concentration:"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Stage",
+        "Temperature",
+        "Use"
+       ],
+       "rows": [
+        [
+         "Thread",
+         "about 110 °C",
+         "Syrups"
+        ],
+        [
+         "Soft ball",
+         "112–116 °C",
+         "Fudge"
+        ],
+        [
+         "Firm ball",
+         "118–120 °C",
+         "Italian meringue"
+        ],
+        [
+         "Hard ball",
+         "121–130 °C",
+         "Nougat, marshmallow"
+        ],
+        [
+         "Soft crack",
+         "132–143 °C",
+         "Toffee"
+        ],
+        [
+         "Hard crack",
+         "146–154 °C",
+         "Brittle, spun sugar"
+        ],
+        [
+         "Caramel",
+         "from about 160 °C",
+         "Light to dark"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "A sugar thermometer reads them; the cold-water test confirms them: drop a little syrup into cold water and feel it."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Dry against wet caramel:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**dry:** sugar melted alone in a heavy pan, stirred only once it starts to melt at the edges; fast, but easy to burn;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**wet:** sugar with water, boiled without stirring, the sides brushed with water, until it colours; slower and more even, but it can crystallise if stirred or seeded with stray crystals."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Browning steered on purpose* (`SC-BRWN`). Choose the colour for the use: light for a glaze, deep amber for flavour. Stop it at once by taking the pan off the heat and adding the liquid, or by dipping the base of the pan in cold water."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Safety with hot sugar* (`SAF-3.M2.L2`). Caramel at 170 °C sticks to skin and burns deeply:"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "long sleeves, a dry heavy pan, the handle turned in, no children nearby;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "a bowl of cold water ready for testing;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "cream added off the heat and slowly, because it boils up;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "a burn cooled at once under lukewarm running water, for as long as the first-aid guidance says (`SAF-1`, [S49])."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**The stages (60 min).** Take a syrup of 300 g of sugar and 100 ml of water through the stages. Confirm each with the cold-water test, and photograph it."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Dry and wet caramel (45 min).** One of each with 150 g of sugar, stopped at the same colour; log the times and temperatures."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "the cold-water test matching the thermometer;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "an even amber caramel with no burnt smell."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "A cloudy, grainy wet caramel",
+         "Stirred, or stray crystals",
+         "Swirl, don't stir; brush the sides"
+        ],
+        [
+         "Burnt caramel",
+         "Looked away at 170 °C",
+         "Stay with the pan; stop it a shade early"
+        ],
+        [
+         "Spitting caramel",
+         "Cold cream poured in fast",
+         "Warm cream, off the heat, in stages"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** hot-sugar rules as above; the thermometer clipped to the pan, never held over it; the pan cooled before washing."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the stage photos with the thermometer readings; the times and colours of the two caramels."
+      }
+     ]
+    },
+    {
+     "id": "PST-4.M3.L2",
+     "title": "Caramel sauces, praline and brittle",
+     "prerequisites": [
+      "PST-4.M3.L1"
+     ],
+     "competencies": [
+      {
+       "id": "TS-BAK",
+       "level": 4
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** caramel becomes three of the most useful dessert components: a sauce, a paste and a crisp. Each needs the caramel taken to a real colour, and each keeps only if it is stored the right way."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** caster sugar (about 600 g over both sessions); 200 ml of cream (35 % fat), warmed; 60 g of butter; salt; 250 g of pumpkin or sunflower seeds; a pinch of bicarbonate of soda; a heavy saucepan; the sugar thermometer; a silicone mat or parchment on a sheet pan; an offset spatula; a blender or food processor; airtight jars; long sleeves."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Salted caramel sauce.* Take a dry or wet caramel (`PST-4.M3.L1`) to deep amber. Off the heat, add the warm cream in stages, stirring; it boils up hard. Then stir in the butter and salt, about 1 % of the sauce's weight. More cream gives a thinner sauce, less a thicker one: write down your amount."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Praline paste.*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "Toast the seeds until they smell nutty; keep them warm on the mat."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "Make a caramel and pour it over the seeds."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "Cool it completely, then break it into pieces."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "Blend until the oil is released and the crumbs turn to a smooth paste. This takes several minutes; stop to scrape down the sides, and let the motor rest if it warms."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "Hazelnuts or almonds are used only with the allergen rule: every guest asked, and the label says so."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Brittle.* Take sugar to hard crack (146–154 °C) with a little butter, stir in the seeds and a pinch of bicarbonate for an airy texture, and spread it thin on the mat at once. Break it when it is cold."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Storage.* Brittle and praline in an airtight jar: humidity softens sugar work. Caramel sauce in the fridge, covered."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Caramel sauce and brittle (60 min).** Make both. Photograph the brittle's colour against a white plate, and snap a piece to show the break."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Praline paste (60 min).** Make a seed praline and blend it to a paste. Use it in a cream (folded into whipped cream, for example) or as a spread."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "a sauce that coats a spoon and pours when warm;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "a brittle that snaps cleanly;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "a praline paste that is smooth and glossy."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "A sauce that is only sweet",
+         "Caramel too pale",
+         "Take it to deep amber before the cream"
+        ],
+        [
+         "A sandy praline",
+         "Blended too briefly",
+         "Keep blending until the oil releases"
+        ],
+        [
+         "Sticky brittle the next day",
+         "Left open overnight",
+         "Into a jar as soon as it is cold"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** the hot-sugar rules of `PST-4.M3.L1`; cream added off the heat and in stages; the caramel left to cool on the mat before touching it. Seeds and any nuts listed for guests; nuts only with the allergen rule."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the cream amount and the sauce's thickness; the brittle photo; the blending time for the praline."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "PST-4.M3.X1",
+     "title": "Caramel sauce and a praline, used in a dessert",
+     "description": "Caramel sauce and a praline, used in a dessert.",
+     "competencies": [
+      {
+       "id": "SC-BRWN",
+       "level": 4
+      },
+      {
+       "id": "TS-BAK",
+       "level": 4
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** steer caramelisation precisely and use sugar work in a dessert. Make a caramel sauce and a seed praline and use them in a dessert of your choice. The extension: three colours of caramel chosen for three uses (a light caramel for a glaze, a medium one for the sauce, a deep amber one for the praline), each named in advance with the variable that steers it (time and temperature) and confirmed by photos."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** sugar, cream, butter, salt, seeds; the dessert's other components; the sugar thermometer; a white plate."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Procedure:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "Write the three target colours, their uses and the stopping temperatures."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "Cook the three caramels; log the temperatures; photograph each colour against a white plate."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "Make the sauce and the praline; build and serve the dessert."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "Write whether each colour matched its use."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`SC-BRWN` level 4:** three caramels steered to a colour named in advance, the variable named, the photos confirming it."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`TS-BAK` level 4, a further element:** the caramel sauce, brittle or praline to standard, with the temperature log."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "AI review reads the plan, the temperature log, the three colour photos and the dessert photo: *competent* is three colours that match their written targets and uses, a sauce that coats and a praline or brittle to standard; *not yet* is colours that drift from the targets without an explanation, or a burnt or crystallised caramel."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 2 h."
+      }
+     ]
+    }
+   ],
+   "items": [
+    {
+     "id": "PST-4.M3.Q1",
+     "type": "ORDERING",
+     "lessonId": "PST-4.M3.L1",
+     "safety": false,
+     "question": "Put the sugar stages in order of rising temperature: hard crack; soft ball; caramel; thread",
+     "options": [],
+     "answer": "thread, soft ball, hard crack, caramel",
+     "why": "Water leaves; temperature rises."
+    },
+    {
+     "id": "PST-4.M3.Q2",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "PST-4.M3.L1",
+     "safety": false,
+     "question": "Which stage is used for brittle?",
+     "options": [
+      {
+       "key": "A",
+       "text": "soft ball"
+      },
+      {
+       "key": "B",
+       "text": "firm ball"
+      },
+      {
+       "key": "C",
+       "text": "hard crack"
+      },
+      {
+       "key": "D",
+       "text": "thread"
+      }
+     ],
+     "answer": "C",
+     "why": "Brittle must snap."
+    },
+    {
+     "id": "PST-4.M3.Q3",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "PST-4.M3.L1",
+     "safety": false,
+     "question": "Why does a wet caramel crystallise?",
+     "options": [
+      {
+       "key": "A",
+       "text": "too much water"
+      },
+      {
+       "key": "B",
+       "text": "stirring or stray crystals seed it"
+      },
+      {
+       "key": "C",
+       "text": "too much heat"
+      },
+      {
+       "key": "D",
+       "text": "the pan"
+      }
+     ],
+     "answer": "B",
+     "why": "Brush the sides; don't stir."
+    },
+    {
+     "id": "PST-4.M3.Q4",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "PST-4.M3.L1",
+     "safety": true,
+     "question": "How do you add cream to a hot caramel?",
+     "options": [
+      {
+       "key": "A",
+       "text": "cold, all at once, on the heat"
+      },
+      {
+       "key": "B",
+       "text": "warm, off the heat, slowly and in stages, standing back"
+      },
+      {
+       "key": "C",
+       "text": "with the hand over the pan"
+      },
+      {
+       "key": "D",
+       "text": "it can't be done"
+      }
+     ],
+     "answer": "B",
+     "why": "It boils up and spits."
+    },
+    {
+     "id": "PST-4.M3.Q5",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "PST-4.M3.L1",
+     "safety": true,
+     "question": "Caramel splashes on your hand. What do you do first?",
+     "options": [
+      {
+       "key": "A",
+       "text": "wipe it off with a cloth"
+      },
+      {
+       "key": "B",
+       "text": "cool it at once under lukewarm running water"
+      },
+      {
+       "key": "C",
+       "text": "apply butter"
+      },
+      {
+       "key": "D",
+       "text": "ignore it"
+      }
+     ],
+     "answer": "B",
+     "why": "First aid for burns (`SAF-1`)."
+    },
+    {
+     "id": "PST-4.M3.Q6",
+     "type": "SCENARIO",
+     "lessonId": "PST-4.M3.L1",
+     "safety": false,
+     "question": "You want a light caramel for a glaze and a deep one for flavour. What controls the difference, and how do you stop each?",
+     "options": [],
+     "answer": "How far the sugar cooks (time and temperature, about 160 °C upwards); stop by taking the pan off the heat and adding the liquid or pouring it out.",
+     "why": "Browning steered on purpose."
+    },
+    {
+     "id": "PST-4.M3.Q7",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "PST-4.M3.L2",
+     "safety": false,
+     "question": "Why does praline paste turn smooth when blended long?",
+     "options": [
+      {
+       "key": "A",
+       "text": "it melts"
+      },
+      {
+       "key": "B",
+       "text": "the seeds release their oil, which loosens the paste"
+      },
+      {
+       "key": "C",
+       "text": "the sugar dissolves"
+      },
+      {
+       "key": "D",
+       "text": "air"
+      }
+     ],
+     "answer": "B",
+     "why": "Keep blending."
+    },
+    {
+     "id": "PST-4.M3.Q8",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "PST-4.M3.L2",
+     "safety": false,
+     "question": "Your brittle turned sticky overnight. Why?",
+     "options": [
+      {
+       "key": "A",
+       "text": "too much butter"
+      },
+      {
+       "key": "B",
+       "text": "sugar takes up moisture from the air; it needs an airtight jar"
+      },
+      {
+       "key": "C",
+       "text": "too cold"
+      },
+      {
+       "key": "D",
+       "text": "too much salt"
+      }
+     ],
+     "answer": "B",
+     "why": "Sugar work is hygroscopic."
+    }
+   ]
+  },
+  {
+   "id": "PST-4.M4",
+   "title": "Layered desserts introduced",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** the 8 items of `PST-4.M4` in the course file, 1 of them a safety item. Pass mark 80 %, with every safety item correct."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "PST-4.M4.L1",
+     "title": "Components",
+     "prerequisites": [
+      "PST-3.M4.L3"
+     ],
+     "competencies": [
+      {
+       "id": "TS-BAK",
+       "level": 4
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** a layered dessert (an *entremets*) is a set of separate components built into one slice. Each must be right on its own, and made at the right time, before assembly can work."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** for a 18 cm ring: 3 eggs, 90 g of sugar and 90 g of flour for a thin sponge sheet; 300 g of seasonal fruit (rhubarb, plums or apples) with sugar and 2 sheets of gelatin for the insert; 60 g of the seed praline of `PST-4.M3` with 30 g of puffed rice and 20 g of melted chocolate for the crunch; the mousse ingredients of `PST-3.M4.L3`; a smaller ring or a silicone mould for the insert; sheet pans and parchment; the freezer; clingfilm; labels."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*The components of an* entremets:"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**a sponge base** (a *génoise* or a *biscuit*), thin and even, sometimes soaked with a syrup;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**a mousse** (`PST-3.M4.L3`) set with gelatin: the body of the dessert;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**an insert:** a contrasting centre (a fruit *compote* set with gelatin or pectin, a *crémeux*, a caramel), frozen first so it holds its shape;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**a crunch:** a thin crisp layer, such as the seed praline of `PST-4.M3` with puffed rice or crushed wafers;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**a glaze:** a shiny mirror glaze (sugar, glucose, condensed milk, chocolate and gelatin) or a fruit glaze, poured over the frozen dessert."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Planning the flavours.* Choose one main flavour, one contrast and one texture accent. Taste each component alone and then together, before you build."
+      },
+      {
+       "type": "paragraph",
+       "text": "*The crunch.* Fat in the crunch (the praline's oil, the melted chocolate) seals it, so it stays crisp under the mousse. Spread it thin, in a circle the size of the sponge, and chill it."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Making ahead.* Make the insert and sponge on day 1. Keep the components covered in the fridge, or freeze them:"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "cooked creams within 2 days;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "a mousse with raw or lightly cooked egg (such as uncooked Italian meringue) within 24 hours (assessment §9)."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**The components (3.5 h over a day).** Bake a sponge sheet and cut a disc a little smaller than the ring. Cook the fruit insert, set it in the smaller mould and freeze it. Make the crunch layer. Prepare the mousse base (the whipped elements are finished at assembly in `PST-4.M4.L2`). Taste and photograph each one."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "an even, springy sponge;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "an insert frozen solid, the size of the ring's inner mould;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "a crunch that stays crisp."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "The sponge dominates the slice",
+         "Too thick",
+         "Spread it thinner; cut it in half horizontally"
+        ],
+        [
+         "The insert melts during assembly",
+         "Not frozen solid",
+         "Freeze overnight; take it out at the last moment"
+        ],
+        [
+         "A soggy crunch",
+         "No fat to seal it",
+         "Bind it with praline or melted chocolate"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** the gelatin insert and the creams cooled by the cooling rule and kept at 5 °C or below; cooked creams used within 2 days, a raw-egg mousse within 24 hours (assessment §9); every component labelled with its date."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** each component's photo and taste note; the freezer and fridge labels."
+      }
+     ]
+    },
+    {
+     "id": "PST-4.M4.L2",
+     "title": "Assembling, setting and glazing",
+     "prerequisites": [
+      "PST-4.M4.L1"
+     ],
+     "competencies": [
+      {
+       "id": "TS-BAK",
+       "level": 4
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** assembly turns the components into one clean slice. It works only if each step happens at the right temperature, and if the two days are planned backwards from the moment of serving."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** the components of `PST-4.M4.L1`; the 18 cm ring; acetate strips the height of the ring; a flat board lined with clingfilm or acetate; a piping bag; an offset spatula; the mirror-glaze ingredients (sugar, glucose, condensed milk, chocolate, gelatin); the thermometer; a wire rack over a tray; a stick blender; a long knife and a jug of hot water."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Assembling in a ring.* Line the ring with acetate. Upside down:"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "Pipe in half the mousse and spread it up the sides."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "Press in the frozen insert."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "Pipe in more mousse."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "Lay the crunch, then the sponge last."
+        },
+        {
+         "level": 0,
+         "marker": "5.",
+         "text": "Smooth the top flat."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "Right way up is the reverse."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Freezing.* Freeze it overnight, so the dessert is solid enough to glaze and unmould cleanly."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Glazing.*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "Bring the glaze to its pouring temperature: about 30–35 °C for a mirror glaze. The thermometer decides."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "Blend it with the stick blender kept under the surface, so no air goes in."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "Pour it over the frozen dessert on a rack in one movement."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "Let the excess drip off, then move the dessert to a board."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Thawing.* Thaw it in the fridge for several hours before serving, at 5 °C or below, and eat it within 2 days of thawing."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Slicing.* A long knife dipped in hot water and wiped dry between cuts."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Planning over two days.* Write a plan backwards from service: components, assembly, freezing, glazing, thawing. Check the fridge and freezer space before you start."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Assembly, glazing and slicing (over two days).**"
+        },
+        {
+         "level": 1,
+         "marker": "",
+         "text": "Day 1 (2 h): assemble the dessert from `PST-4.M4.L1`'s components and freeze it overnight."
+        },
+        {
+         "level": 1,
+         "marker": "",
+         "text": "Day 2 (1.5 h): glaze, thaw and slice it with a hot knife; photograph the cross-section."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "straight sides and clean layers in the slice;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "an even, glossy glaze with no bubbles;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "the plan followed without a rush."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "The glaze runs off thin",
+         "Too hot",
+         "Cool it to its pouring temperature"
+        ],
+        [
+         "The glaze sets in lumps",
+         "Too cold",
+         "Warm it gently and blend again"
+        ],
+        [
+         "The glaze melts the surface",
+         "Not frozen solid",
+         "Freeze overnight"
+        ],
+        [
+         "Torn sides",
+         "No acetate",
+         "Always line the ring"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** the thawed dessert kept at 5 °C or below and eaten within 2 days of thawing; a dessert with a raw-egg component within its 24 hours (assessment §9); the knife wiped and kept flat on the board."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the two-day plan with what actually happened; the glaze temperature; the slice photo."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "PST-4.M4.X1",
+     "title": "A layered dessert for six",
+     "description": "A layered dessert for six with your own flavour combination.",
+     "competencies": [
+      {
+       "id": "TS-BAK",
+       "level": 4
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** plan, build and set a layered dessert for six with your own flavour combination, planned over two days. Choose the main flavour, the contrast and the texture accent yourself; the components are those of `PST-4.M4.L1` (sponge, mousse, insert, crunch, glaze), each made to the standard of its lesson. Write the plan backwards from the moment you serve, and check the fridge and freezer space before you start."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** eggs, flour, sugar, butter, cream, gelatin, chocolate; Dutch seasonal fruit for the insert; seeds for the crunch; the ring and acetate; the thermometer; guest cards."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Procedure:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "Write the flavour idea and the two-day plan."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "Make the components; assemble; freeze."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "Glaze, thaw and slice; photograph a slice and the whole."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "Serve to six; collect guest cards."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:** a further `TS-BAK` level 4 element: clean layers in the slice photo, the plan followed, guest cards. If one of the components or the glazing fails, diagnose and correct it in writing: what you saw, the cause, and what you changed."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** the components kept within their times; the thawed dessert at 5 °C or below and eaten within 2 days; a raw-egg component within 24 hours (assessment §9). Ask the six guests about allergens before you choose the crunch."
+      },
+      {
+       "type": "paragraph",
+       "text": "AI review reads the plan, the slice and whole photos and the cards: *competent* is clean, even layers with straight sides, a glossy glaze and a plan that was followed; *not yet* is blurred or collapsed layers, a glaze with lumps or bubbles, or a failure without a written diagnosis."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 4 h over two days."
+      }
+     ]
+    }
+   ],
+   "items": [
+    {
+     "id": "PST-4.M4.Q1",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "PST-4.M4.L1",
+     "safety": false,
+     "question": "What is the insert of an *entremets*?",
+     "options": [
+      {
+       "key": "A",
+       "text": "the sponge"
+      },
+      {
+       "key": "B",
+       "text": "a contrasting centre, frozen first so it holds its shape"
+      },
+      {
+       "key": "C",
+       "text": "the glaze"
+      },
+      {
+       "key": "D",
+       "text": "the crunch"
+      }
+     ],
+     "answer": "B",
+     "why": "It gives the surprise in the slice."
+    },
+    {
+     "id": "PST-4.M4.Q2",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "PST-4.M4.L1",
+     "safety": false,
+     "question": "How does a crunch layer stay crisp under a mousse?",
+     "options": [
+      {
+       "key": "A",
+       "text": "it is baked twice"
+      },
+      {
+       "key": "B",
+       "text": "fat (chocolate or praline) coats it against moisture"
+      },
+      {
+       "key": "C",
+       "text": "it is frozen"
+      },
+      {
+       "key": "D",
+       "text": "it is added at serving"
+      }
+     ],
+     "answer": "B",
+     "why": "Fat seals out water."
+    },
+    {
+     "id": "PST-4.M4.Q3",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "PST-4.M4.L1",
+     "safety": false,
+     "question": "Which component is usually soaked with a syrup?",
+     "options": [
+      {
+       "key": "A",
+       "text": "the glaze"
+      },
+      {
+       "key": "B",
+       "text": "the sponge"
+      },
+      {
+       "key": "C",
+       "text": "the insert"
+      },
+      {
+       "key": "D",
+       "text": "the crunch"
+      }
+     ],
+     "answer": "B",
+     "why": "For moisture and flavour."
+    },
+    {
+     "id": "PST-4.M4.Q4",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "PST-4.M4.L1",
+     "safety": true,
+     "question": "A mousse lightened with uncooked Italian meringue of pasteurised whites waits in the fridge. How long may it be kept before it is eaten?",
+     "options": [
+      {
+       "key": "A",
+       "text": "a week"
+      },
+      {
+       "key": "B",
+       "text": "at most 24 hours, covered, in the fridge"
+      },
+      {
+       "key": "C",
+       "text": "any time while it's set"
+      },
+      {
+       "key": "D",
+       "text": "overnight at room temperature"
+      }
+     ],
+     "answer": "B",
+     "why": "The raw-egg row, assessment §9: a dish with raw egg at most 24 hours."
+    },
+    {
+     "id": "PST-4.M4.Q5",
+     "type": "ORDERING",
+     "lessonId": "PST-4.M4.L2",
+     "safety": false,
+     "question": "Put the steps in order: glaze; thaw in the fridge; assemble in a ring; freeze overnight",
+     "options": [],
+     "answer": "assemble in a ring, freeze overnight, glaze, thaw in the fridge",
+     "why": "The glaze goes on the frozen dessert."
+    },
+    {
+     "id": "PST-4.M4.Q6",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "PST-4.M4.L2",
+     "safety": false,
+     "question": "Your mirror glaze ran off and left the dessert bare. Most likely cause?",
+     "options": [
+      {
+       "key": "A",
+       "text": "too cold"
+      },
+      {
+       "key": "B",
+       "text": "too hot when poured"
+      },
+      {
+       "key": "C",
+       "text": "too much gelatin"
+      },
+      {
+       "key": "D",
+       "text": "the rack"
+      }
+     ],
+     "answer": "B",
+     "why": "Pour at the measured temperature."
+    },
+    {
+     "id": "PST-4.M4.Q7",
+     "type": "SCENARIO",
+     "lessonId": "PST-4.M4.L2",
+     "safety": false,
+     "question": "Dinner is Saturday at 19:00. Write the key steps of a two-day plan for a layered dessert.",
+     "options": [],
+     "answer": "Friday: components (sponge, insert frozen, crunch, mousse), assemble and freeze overnight. Saturday morning: glaze the frozen dessert, then thaw in the fridge from about midday; slice with a hot knife at service. Check the freezer space first.",
+     "why": "[J] backwards from service."
+    },
+    {
+     "id": "PST-4.M4.Q8",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "PST-4.M4.L2",
+     "safety": false,
+     "question": "Why is acetate placed inside the ring?",
+     "options": [
+      {
+       "key": "A",
+       "text": "for decoration"
+      },
+      {
+       "key": "B",
+       "text": "so the sides unmould clean and smooth"
+      },
+      {
+       "key": "C",
+       "text": "to keep it cold"
+      },
+      {
+       "key": "D",
+       "text": "to hold the glaze"
+      }
+     ],
+     "answer": "B",
+     "why": "It releases cleanly."
+    }
+   ]
+  },
+  {
+   "id": "PST-4.M5",
+   "title": "Plated desserts",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** the 8 items of `PST-4.M5` in the course file. Pass mark 80 %."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "PST-4.M5.L1",
+     "title": "Components of a plated dessert",
+     "prerequisites": [
+      "FLV-3.M4.L1"
+     ],
+     "competencies": [
+      {
+       "id": "FL-TEXT",
+       "level": 4
+      },
+      {
+       "id": "CR-COMP",
+       "level": 4
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** a plated dessert is built from a handful of components, each chosen for the contrast it brings. One idea holds them together; a component without a reason is left out."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** the components you know from `PST-3` and this course; seasonal Dutch fruit; paper and a pencil for sketches; one plate and the ingredients for a test plate."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Contrast* (`FLV-3.M4.L1`):"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**temperature:** hot and cold (a warm cake with an ice cream);"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**texture:** soft and crisp (a cream with a tuile or a crumble);"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**taste:** sweet and sharp (a rich element with a sharp fruit or a sorbet), with a touch of salt or bitterness."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*The components.* A main element, a sauce, a frozen element, a crisp element and a fresh element: choose three to five, each with a reason."
+      },
+      {
+       "type": "paragraph",
+       "text": "*The idea first* (`CR-COMP`). Write one sentence that says what the dessert is about, for example \"autumn apple: warm, sharp and crisp\". Every component serves it, or goes."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Choosing from what you know.* Components from `PST-3` and this course; seasonal Dutch fruit; a modern element from `MOD-4` if it serves the idea."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Timing.* Decide what is made ahead (frozen elements, sauces, crisps in an airtight box) and what is done at service (warm elements, the last plating)."
+      },
+      {
+       "type": "paragraph",
+       "text": "A worked example, \"autumn apple: warm, sharp and crisp\":"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Component",
+        "Contrast",
+        "Made"
+       ],
+       "rows": [
+        [
+         "Apple baked with butter and sugar",
+         "Warm, soft",
+         "At service"
+        ],
+        [
+         "Apple and cider sorbet",
+         "Cold, sharp",
+         "Ahead"
+        ],
+        [
+         "Seed brittle",
+         "Crisp",
+         "Ahead, in a jar"
+        ],
+        [
+         "Salted caramel sauce",
+         "Rich, a touch of salt",
+         "Ahead, warmed"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Designing and testing (90 min).** Sketch two dessert ideas with their components and contrasts. Test one as a single plate, and adjust the components."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** each component named with the contrast it brings and the idea it serves."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "A crowded plate",
+         "Too many components, no idea",
+         "Write the idea; drop what doesn't serve it"
+        ],
+        [
+         "A flat, heavy dessert",
+         "Everything soft and sweet",
+         "Add a crisp and a sharp element"
+        ],
+        [
+         "The crisp goes soft on the plate",
+         "It touches a wet sauce",
+         "Put it on a dry spot; add it last"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** components kept within their times (assessment §9); a raw-egg element marked, and offered to risk groups only in its pasteurised form; allergens listed for each component."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** both sketches; the test plate photo; what you changed and why."
+      }
+     ]
+    },
+    {
+     "id": "PST-4.M5.L2",
+     "title": "Building and plating",
+     "prerequisites": [
+      "PST-4.M5.L1"
+     ],
+     "competencies": [
+      {
+       "id": "TS-PLT",
+       "level": 4
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** guests judge a plated dessert first by its look, and by whether every plate matches. Plating four alike, with the warm element warm and the frozen one firm, takes a sketch, a line and a plan for timing."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** four matching plates; the components of `PST-4.M5.L1`'s dessert; the plating tools (two spoons, an offset spatula, a squeeze bottle); the sketch; a timer; a camera."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*The sketch.* Draw the plate from above: where each component goes, its size and the space left empty."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Plating several alike.* Line the plates up and add each component to all plates in turn, as an assembly line, with the same spoon, nozzle and portion. The frozen element goes on last, just before the plates leave."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Timing at service.* Desserts are plated after the main course is cleared, so you need a plan:"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "warm the oven for the warm element during the main course;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "temper the ice cream in the fridge for 10 minutes so it scoops;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "bring the sauces to temperature."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Portions.* Weigh or measure each component for the first plate and repeat the same amount: one scoop size, one spoon of sauce, one piece of crisp. Keep the plate rims clean; wipe drips with a damp cloth before the plate leaves."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Checking the plates.* Photograph the four together and compare them with the sketch. Fix any plate that differs before it leaves."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**A practice plating (60 min).** Plate four of a simple dessert to a sketch; photograph them together."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**A timed service (90 min).** Plate the full dessert for four after a household main course, timed from clearing to serving."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "four plates that match the sketch and each other;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "the warm element warm and the frozen element firm when served."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "The first plate waits and melts",
+         "Each plate finished before the next",
+         "Plate in a line, component by component"
+        ],
+        [
+         "Melted ice cream",
+         "Scooped too early",
+         "Scoop last, just before serving"
+        ],
+        [
+         "A crowded plate",
+         "No empty space",
+         "Follow the sketch's empty space"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** the oven and hot pans handled with dry cloths; plates wiped with a clean cloth, not with fingers."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the sketch next to the photo of the four plates; the times from clearing to serving."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "PST-4.M5.X1",
+     "title": "A plated dessert for four",
+     "description": "A plated dessert for four, from your own design.",
+     "competencies": [
+      {
+       "id": "FL-TEXT",
+       "level": 4
+      },
+      {
+       "id": "CR-COMP",
+       "level": 4
+      },
+      {
+       "id": "TS-PLT",
+       "level": 4
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** design a plated dessert from your own idea, with contrasts named in advance, and plate it consistently for four guests, with a sketch and a written idea. The dessert closes a three-course menu for the guests, and you name the contrast of every course in advance."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** the components you choose; seasonal Dutch fruit; the menu's other courses as household cooking; four plates; the plating tools; guest cards."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Procedure:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "Write the idea, the components with their contrasts, the sketch and the service plan."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "Name the contrast of each course of the menu in advance."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "Prepare ahead; serve the menu; plate the dessert for four at a timed service."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "Photograph the four plates together and each course; collect guests' cards."
+        },
+        {
+         "level": 0,
+         "marker": "5.",
+         "text": "Write whether the contrasts and the idea came through."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`FL-TEXT` level 4, dish two of three and the menu:** contrasts named in advance and confirmed by the guests' cards and photos in every course. The first dish is in `PST-4.M2.X1`, the third in `MOD-4.M4.X1` or `MOD-4.M5.X1`."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`CR-COMP` level 4, dish one of three:** composed with a written idea; photos and cards show every element serving it. The other two are in `PLT-4.M3.X1`."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`TS-PLT` level 4, course one of three:** designed with a sketch and plated for four guests, the plates matching, and judged by the AI review and the guests as composed with intent. The others follow in `PLT-4.M2.X1` and `PLT-4.M3.X1`."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "AI review reads the idea, the sketch, the photos and the cards: *competent* is four plates that match the sketch and each other, contrasts the guests name in every course, and every component serving the idea; *not yet* is plates that differ, a component with no reason, or a contrast the guests did not notice."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 3 h, plus the menu."
+      }
+     ]
+    }
+   ],
+   "items": [
+    {
+     "id": "PST-4.M5.Q1",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "PST-4.M5.L1",
+     "safety": false,
+     "question": "Which pairing gives a temperature contrast?",
+     "options": [
+      {
+       "key": "A",
+       "text": "a cream and a mousse"
+      },
+      {
+       "key": "B",
+       "text": "a warm cake and an ice cream"
+      },
+      {
+       "key": "C",
+       "text": "a sorbet and a granita"
+      },
+      {
+       "key": "D",
+       "text": "two sauces"
+      }
+     ],
+     "answer": "B",
+     "why": "Hot against cold."
+    },
+    {
+     "id": "PST-4.M5.Q2",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "PST-4.M5.L1",
+     "safety": false,
+     "question": "A dessert is all soft and sweet. Which addition helps most?",
+     "options": [
+      {
+       "key": "A",
+       "text": "more cream"
+      },
+      {
+       "key": "B",
+       "text": "a crisp element and a sharp fruit or sorbet"
+      },
+      {
+       "key": "C",
+       "text": "more sugar"
+      },
+      {
+       "key": "D",
+       "text": "a second mousse"
+      }
+     ],
+     "answer": "B",
+     "why": "Texture and taste contrast."
+    },
+    {
+     "id": "PST-4.M5.Q3",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "PST-4.M5.L1",
+     "safety": false,
+     "question": "What decides whether a component stays on the plate?",
+     "options": [
+      {
+       "key": "A",
+       "text": "how hard it was to make"
+      },
+      {
+       "key": "B",
+       "text": "whether it serves the dessert's idea"
+      },
+      {
+       "key": "C",
+       "text": "the colour only"
+      },
+      {
+       "key": "D",
+       "text": "the number of components"
+      }
+     ],
+     "answer": "B",
+     "why": "The idea first."
+    },
+    {
+     "id": "PST-4.M5.Q4",
+     "type": "SCENARIO",
+     "lessonId": "PST-4.M5.L1",
+     "safety": false,
+     "question": "Your tuile goes soft on the plate within minutes. What do you change?",
+     "options": [],
+     "answer": "Keep it in an airtight box until the last moment, place it away from the sauce or on a dry element, and add it last.",
+     "why": "Crisp elements are moisture-sensitive."
+    },
+    {
+     "id": "PST-4.M5.Q5",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "PST-4.M5.L2",
+     "safety": false,
+     "question": "How do you plate four desserts alike?",
+     "options": [
+      {
+       "key": "A",
+       "text": "one complete plate at a time"
+      },
+      {
+       "key": "B",
+       "text": "an assembly line: each component on all plates in turn, same tools and portions"
+      },
+      {
+       "key": "C",
+       "text": "by eye only"
+      },
+      {
+       "key": "D",
+       "text": "as fast as possible"
+      }
+     ],
+     "answer": "B",
+     "why": "Consistency and speed."
+    },
+    {
+     "id": "PST-4.M5.Q6",
+     "type": "SCENARIO",
+     "lessonId": "PST-4.M5.L2",
+     "safety": false,
+     "question": "The main course is being eaten. What do you do now so the dessert arrives on time?",
+     "options": [],
+     "answer": "Warm the oven for the warm element, move the ice cream to the fridge to temper, bring sauces to temperature, line up plates and tools.",
+     "why": "[J] timing at service."
+    },
+    {
+     "id": "PST-4.M5.Q7",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "PST-4.M5.L2",
+     "safety": false,
+     "question": "When is the frozen element added?",
+     "options": [
+      {
+       "key": "A",
+       "text": "first"
+      },
+      {
+       "key": "B",
+       "text": "last, just before the plates leave"
+      },
+      {
+       "key": "C",
+       "text": "in the middle"
+      },
+      {
+       "key": "D",
+       "text": "before the main course"
+      }
+     ],
+     "answer": "B",
+     "why": "So it stays firm."
+    },
+    {
+     "id": "PST-4.M5.Q8",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "PST-4.M5.L2",
+     "safety": false,
+     "question": "What is the sketch for?",
+     "options": [
+      {
+       "key": "A",
+       "text": "decoration"
+      },
+      {
+       "key": "B",
+       "text": "a plan of placement, size and space, so every plate matches"
+      },
+      {
+       "key": "C",
+       "text": "the photo"
+      },
+      {
+       "key": "D",
+       "text": "the guests"
+      }
+     ],
+     "answer": "B",
+     "why": "Plates match the sketch."
+    }
+   ]
+  }
+ ]
+}

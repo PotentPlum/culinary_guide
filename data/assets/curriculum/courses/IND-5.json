@@ -1,0 +1,3645 @@
+{
+ "schemaVersion": 1,
+ "id": "IND-5",
+ "introduction": [
+  {
+   "type": "paragraph",
+   "text": "**Before you start.** This course asks the stage question in practice: can you cook anything well without a recipe? The teaching is done. What remains is consistent, independent cooking under conditions that change: an unfamiliar ingredient, a basket someone else chose, what is left in the fridge, a dish known only from a description or a taste, too little time, the wrong equipment, a guest's diet, and faults introduced while you cook. Almost every exercise is a brief: a goal, constraints and criteria, and nothing else."
+  },
+  {
+   "type": "paragraph",
+   "text": "The course is a series of briefs:"
+  },
+  {
+   "type": "list",
+   "items": [
+    {
+     "level": 0,
+     "marker": "",
+     "text": "**first principles** (`IND-5.M1`): a decision framework from structure to method to flavour, used on three unfamiliar ingredients;"
+    },
+    {
+     "level": 0,
+     "marker": "",
+     "text": "**mystery baskets** (`IND-5.M2`): a method, then three rounds of increasing difficulty;"
+    },
+    {
+     "level": 0,
+     "marker": "",
+     "text": "**pantry and leftovers** (`IND-5.M3`): a weekly habit for four weeks;"
+    },
+    {
+     "level": 0,
+     "marker": "",
+     "text": "**recreating dishes** (`IND-5.M4`): from a written description, a tasted dish, and a classical text without quantities;"
+    },
+    {
+     "level": 0,
+     "marker": "",
+     "text": "**constraints** (`IND-5.M5`): time, equipment and diet;"
+    },
+    {
+     "level": 0,
+     "marker": "",
+     "text": "**a troubleshooting clinic** (`IND-5.M6`): rescues under pressure, and doneness by the senses alone."
+    }
+   ]
+  },
+  {
+   "type": "paragraph",
+   "text": "**Rules for every brief.**"
+  },
+  {
+   "type": "list",
+   "items": [
+    {
+     "level": 0,
+     "marker": "",
+     "text": "**Safety first.** Assessment §9 applies to every dish. A brief, a basket or a historical text never overrides it: poultry to 75 °C, minced meat to its row, leftovers within 2 days and reheated once, raw egg and warm egg sauces pasteurised for every guest. Doneness judged by the senses is checked with the probe before a §9 food is served."
+    },
+    {
+     "level": 0,
+     "marker": "",
+     "text": "**Ingredients.** Dutch seasonal vegetables (velt.nu harvest windows) and MSC or seasonal North Sea fish. A basket or an \"unfamiliar ingredient\" is bought, not foraged."
+    },
+    {
+     "level": 0,
+     "marker": "",
+     "text": "**The pantry.** Salt, oils, vinegars, flour, sugar, dried spices and herbs, stocks from the freezer, dried pulses and grains are always available unless the brief removes them."
+    },
+    {
+     "level": 0,
+     "marker": "",
+     "text": "**The record.** Every session logs the plan, timestamps, photos, your own band, then the outside band (the agreement log of `REV-5`)."
+    }
+   ]
+  },
+  {
+   "type": "paragraph",
+   "text": "Most competencies here reach level 5, which asks for at least five demonstrations under three conditions over at least 8 weeks. Each exercise says which part of a row it gives and where the rest is."
+  },
+  {
+   "type": "paragraph",
+   "text": "Plan about 43.5 hours over at least 8 weeks, at about 5 hours a week, alongside `RDV-5` and the blocks of `REV-5`. The pantry meals run once a week for four weeks."
+  },
+  {
+   "type": "paragraph",
+   "text": "**Have ready:** the full kitchen of S1–S4; the probe; the lidded charcoal grill, chimney starter and heat-resistant gloves if you have outdoor space; the fire blanket; separate boards and tools for allergens (`NUT-3`); the calibration cups and the 1 g scale (`TST-1`); the photo corner (`PLT-4`); a notebook for plans and timestamps."
+  }
+ ],
+ "modules": [
+  {
+   "id": "IND-5.M1",
+   "title": "Cooking from first principles",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** the 8 items of `IND-5.M1` in the course file, 1 of them a safety item. Pass mark 80 %, with every safety item correct."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "IND-5.M1.L1",
+     "title": "A decision framework",
+     "prerequisites": [
+      "HEA-2.M1.L2",
+      "RDV-4.M2.L1"
+     ],
+     "competencies": [
+      {
+       "id": "JD-CHSE",
+       "level": 5
+      },
+      {
+       "id": "CK-METH",
+       "level": 5
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** faced with something new, a cook without a recipe starts from what the ingredient is made of. A framework from structure to method to flavour turns everything you have learned into a way to choose, and to explain the choice."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** a familiar vegetable (a leek or a celeriac, about 500 g); the pantry; a notebook; the probe."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*From structure to method:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**water:** high-water vegetables (courgette, cucumber, spinach) collapse and release liquid, so they suit fast, hot methods or salting first; dense, starchy roots (celeriac, parsnip, potato) need time to soften and take browning well (`VEG-3`, `HEA-2.M1.L2`);"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**fat:** fatty fish and cuts tolerate high heat and longer cooking; lean ones dry out and want gentle or fast methods;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**protein:** coagulates and tightens with heat, so the target doneness sets the method (`SCI-2`);"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**connective tissue:** much collagen needs long, moist cooking until it becomes gelatine; little allows a fast method (`PRO-4`, `SLW-3`);"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**starch:** needs water and heat to gelatinise, and retrogrades as it cools (`STA-1`)."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Then flavour, then texture.* What the ingredient brings (sweet, bitter, umami), what it needs (acid, fat, salt), and the texture contrast it lacks (`FLV-3`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "*The transfer questions* (Phase 1 §2.3). What is it and what is it for? How is it done? Why does it work? What happens physically and chemically? Which variables change it? Which mistakes are common, how do you recognise them, and how do you correct them? Where else does it transfer?"
+      },
+      {
+       "type": "paragraph",
+       "text": "*The written analysis:*"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Line",
+        "For a celeriac"
+       ],
+       "rows": [
+        [
+         "Structure",
+         "Dense, starchy, low water"
+        ],
+        [
+         "Chosen method",
+         "Roasted in wedges: time to soften, browning for sweetness"
+        ],
+        [
+         "Rejected",
+         "Sautéed (stays raw inside); boiled (watery, no browning)"
+        ],
+        [
+         "Flavour",
+         "Sweet and earthy; needs acid and salt (a sharp dressing)"
+        ],
+        [
+         "Texture",
+         "Soft; needs crunch (toasted seeds)"
+        ],
+        [
+         "Done when",
+         "A knife slides in with no resistance; edges deep golden"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Framework on a known ingredient (60 min).** Analyse a familiar vegetable in writing with the framework, cook it by the chosen method, and check the analysis against what happened."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "the analysis predicts the result before cooking;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "every rejected method has a named risk, not only \"I don't like it\"."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "The analysis just describes a dish you know",
+         "Started from the dish, not the structure",
+         "Fill in the structure line first"
+        ],
+        [
+         "A protein with no target reading",
+         "The safety figure forgotten",
+         "Every protein's §9 row in the \"done when\" line"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** every protein in an analysis carries its §9 figure in the \"done when\" line; the senses suggest, the probe decides."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the analysis; the result; what the analysis got right and wrong."
+      }
+     ]
+    },
+    {
+     "id": "IND-5.M1.L2",
+     "title": "Unfamiliar ingredients",
+     "prerequisites": [
+      "IND-5.M1.L1"
+     ],
+     "competencies": [
+      {
+       "id": "JD-CHSE",
+       "level": 5
+      },
+      {
+       "id": "IN-VEG",
+       "level": 5
+      },
+      {
+       "id": "CK-METH",
+       "level": 5
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** the test of the framework is an ingredient you have never cooked. Cooking each one twice, for different reasons, shows which method suits which use, and teaches more than one good result would."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** three ingredients your record shows you have never cooked, bought in season: for example kohlrabi, salsify, Jerusalem artichoke, sea kale, purslane, or a North Sea fish not yet used (dab, gurnard, witch); about 300–500 g of each vegetable, one whole fish or two fillets; the probe; a reliable reference [S16]."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Choosing the three.* Check your record, and choose from the season. At least two should be vegetables."
+      },
+      {
+       "type": "paragraph",
+       "text": "*First contact.*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "Look at it, smell it, and taste a small piece raw (vegetables only)."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "Cut a sample: how hard, how wet, how fibrous?"
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "Read a reliable source [S16] for its structure and any known risks."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Twice, with different reasoning.* Cook each ingredient by two methods chosen for different reasons, and compare them on the same plate. For example, salsify roasted for browning, and simmered then glazed for tenderness."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Safety.*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "A new fish follows the fish row of §9 (63 °C for 15 seconds), unless it was frozen first for serving translucent (assessment §9)."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "A vegetable new to you is checked for any known need to cook it, as with dried beans (§9)."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Ingredients one and two (90 min).** Analyse each, cook it two ways, taste the versions side by side, and photograph them."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Ingredient three (60 min).** Analyse it and cook it two ways; serve it in a meal and collect household cards."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "both versions of each ingredient are good, and they differ for the reason you wrote;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "you can say which method suits which use."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Two versions that taste the same",
+         "Two methods that are really one (roasted and baked)",
+         "Choose methods with different heat and moisture"
+        ],
+        [
+         "A fish judged by \"looks done\"",
+         "No reading",
+         "Probe it: 63 °C for 15 seconds"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** the fish row of §9 for a new fish; a new vegetable's cooking need checked in the source before it is served."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the analyses; the paired photos; which method you would choose for which use."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "IND-5.M1.X1",
+     "title": "Three unfamiliar ingredients, each cooked twice",
+     "description": "Three unfamiliar ingredients, each cooked twice with different reasoning.",
+     "competencies": [
+      {
+       "id": "JD-CHSE",
+       "level": 5
+      },
+      {
+       "id": "CK-METH",
+       "level": 5
+      },
+      {
+       "id": "IN-VEG",
+       "level": 5
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** reason from structure to method for three ingredients you have never cooked, at least two of them vegetables, and explain the choice well enough for someone else to follow. Cook each twice with different reasoning. Then write a short guide to the method choice for one ingredient group."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** three ingredients new to you, bought in season (about 300–500 g of each vegetable, one whole fish or two fillets); the pantry; the probe; household cards."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Procedure:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "Write the analysis for each ingredient: structure, the chosen methods and the rejected ones with their risks, the flavour and texture plan, the cue and the reading."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "Cook each twice; photograph both versions together; probe the fish."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "Collect household cards; write what the analysis got right and wrong."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "Write the guide to the method choice for one ingredient group (for example the roots, or the leafy brassicas): the structure, the methods that suit it, the ones that fail and why."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`JD-CHSE` level 5, brief one of five:** the written analysis naming alternatives and risks, and the result to standard. The further briefs are `IND-5.M4.X1`, `IND-5.M4.X2`, the round 3 analysis of `IND-5.M2.X1`, and the capstone (`CAP-5.M1.L1`)."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`CK-METH` level 5, in part:** method choices reasoned from principles with the rejected alternatives named, and the written guide. The capstone brief completes the row (`CAP-5.R1`)."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`IN-VEG` level 5, the unfamiliar-vegetable condition:** two vegetable-led dishes reasoned from structure. The other conditions are in `IND-5.M2.X1`, `IND-5.M3.X1`, `RDV-5.M2.X1` and the capstone."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "AI review reads the analyses, the paired photos, the probe reading and the guide: *competent* is two genuinely different methods per ingredient, each reasoned with its risks, both results to standard, and a guide another cook could use; *not yet* is two versions of one method, a fish without a reading, or a guide that lists without reasons."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 2.5 h, plus the written guide."
+      }
+     ]
+    }
+   ],
+   "items": [
+    {
+     "id": "IND-5.M1.Q1",
+     "type": "ORDERING",
+     "lessonId": "IND-5.M1.L1",
+     "safety": false,
+     "question": "Put the transfer questions in teaching order: A) why does it work B) what is it and what is it for C) which variables change it D) how is it done",
+     "options": [],
+     "answer": "B, D, A, C",
+     "why": "What → how → why → variables (Phase 1 §2.3)."
+    },
+    {
+     "id": "IND-5.M1.Q2",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "IND-5.M1.L1",
+     "safety": false,
+     "question": "Which transfer question asks how you notice a mistake?",
+     "options": [
+      {
+       "key": "A",
+       "text": "what is it for"
+      },
+      {
+       "key": "B",
+       "text": "how do you recognise it (sight, sound, smell, touch, taste, temperature)"
+      },
+      {
+       "key": "C",
+       "text": "where else does it transfer"
+      },
+      {
+       "key": "D",
+       "text": "why does it work"
+      }
+     ],
+     "answer": "B",
+     "why": "Recognising comes before correcting."
+    },
+    {
+     "id": "IND-5.M1.Q3",
+     "type": "SCENARIO",
+     "lessonId": "IND-5.M1.L1",
+     "safety": false,
+     "question": "A cut of beef you have never seen is full of connective tissue. Which family of methods do you choose, and why?",
+     "options": [],
+     "answer": "Long, moist cooking (a braise), because the collagen needs time and moisture to turn to gelatine; a fast method would leave it tough.",
+     "why": "Structure → method."
+    },
+    {
+     "id": "IND-5.M1.Q4",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "IND-5.M1.L1",
+     "safety": false,
+     "question": "A vegetable is about 95 % water. Which plan suits it best?",
+     "options": [
+      {
+       "key": "A",
+       "text": "a long braise"
+      },
+      {
+       "key": "B",
+       "text": "a fast, hot method, or salting first to draw water"
+      },
+      {
+       "key": "C",
+       "text": "deep roasting for an hour"
+      },
+      {
+       "key": "D",
+       "text": "boiling for 30 minutes"
+      }
+     ],
+     "answer": "B",
+     "why": "High-water vegetables collapse with long heat."
+    },
+    {
+     "id": "IND-5.M1.Q5",
+     "type": "SCENARIO",
+     "lessonId": "IND-5.M1.L1",
+     "safety": false,
+     "question": "Your analysis of a new ingredient lists only the method you chose. What is missing?",
+     "options": [],
+     "answer": "At least two rejected methods with their risks, the flavour and texture plan, and the cue and reading for doneness.",
+     "why": "The written analysis names alternatives."
+    },
+    {
+     "id": "IND-5.M1.Q6",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "IND-5.M1.L1",
+     "safety": false,
+     "question": "Which question is about transfer?",
+     "options": [
+      {
+       "key": "A",
+       "text": "what happens to the proteins"
+      },
+      {
+       "key": "B",
+       "text": "which mistakes are common"
+      },
+      {
+       "key": "C",
+       "text": "where else does this work: other ingredients, dishes, cuisines"
+      },
+      {
+       "key": "D",
+       "text": "how is it done"
+      }
+     ],
+     "answer": "C",
+     "why": "Question 9."
+    },
+    {
+     "id": "IND-5.M1.Q7",
+     "type": "SCENARIO",
+     "lessonId": "IND-5.M1.L2",
+     "safety": true,
+     "question": "You cook gurnard for the first time and want it barely set. What decides when it is safe to serve?",
+     "options": [],
+     "answer": "The fish row of assessment §9: 63 °C for 15 seconds at the core, read with the probe; served translucent only if it was frozen first as §9 sets out.",
+     "why": "§9 applies to new ingredients too."
+    },
+    {
+     "id": "IND-5.M1.Q8",
+     "type": "SCENARIO",
+     "lessonId": "IND-5.M1.L2",
+     "safety": false,
+     "question": "You roasted salsify and also simmered and glazed it. Both were good. What do you write?",
+     "options": [],
+     "answer": "Why each method was chosen (browning and depth against tenderness and gloss), how they differed on the plate, and which use suits each.",
+     "why": "Twice with different reasoning."
+    }
+   ]
+  },
+  {
+   "id": "IND-5.M2",
+   "title": "Mystery baskets",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** none for this module. It has no knowledge or judgment objective; the rounds are checked by their timestamps, photos and cards."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "IND-5.M2.L1",
+     "title": "The mystery basket method",
+     "prerequisites": [
+      "MNU-4.M3.L1"
+     ],
+     "competencies": [
+      {
+       "id": "CR-IMPV",
+       "level": 4
+      },
+      {
+       "id": "KM-PLAN",
+       "level": 5
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** a basket someone else chose is the purest test of cooking without a recipe. A fixed method for the first 15 minutes turns the surprise into a plan, and the plan is what gets the meal out on time."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** a notebook and a timer; the framework of `IND-5.M1`; the timeline method of `MNU-4.M3.L1`; a household member willing to choose baskets."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*The basket.* Someone else chooses it from a list of what is in season and in budget, with the pantry available. The chooser notes any allergen or diet of the people who will eat."
+      },
+      {
+       "type": "paragraph",
+       "text": "*The first 15 minutes,* written down:"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Inventory:** every item, its weight and state, and what is perishable."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Constraints:** the time, the guests, the equipment, the diet."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "**Menu:** each item given a role (main, support, accent), with the method chosen from the framework of `IND-5.M1`."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "**Timeline:** worked back from the serving time, the longest task first, and a control point for each protein (`MNU-4.M3.L1`)."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*The fallback.* Decide in the plan a simpler version of each dish, to use if a step fails."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Everything used, nothing forced.* An item that doesn't fit is kept for another meal rather than spoiling a dish."
+      },
+      {
+       "type": "paragraph",
+       "text": "A worked plan for a winter basket (leeks, celeriac, red cabbage, two eggs, a lemon), two courses in 90 minutes:"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Line",
+        "Entry"
+       ],
+       "rows": [
+        [
+         "Inventory",
+         "Leeks 600 g, celeriac 800 g, red cabbage 1 kg, 2 eggs, 1 lemon"
+        ],
+        [
+         "Menu",
+         "Starter: leeks charred, with a lemon dressing and a chopped hard-boiled egg; main: celeriac roasted in wedges, red cabbage salad"
+        ],
+        [
+         "Timeline",
+         "0:00 oven on; 0:10 celeriac in; 0:20 eggs boiled; 0:40 leeks on; 1:20 dress and plate"
+        ],
+        [
+         "Fallback",
+         "Leeks soft? Braise them in stock instead"
+        ],
+        [
+         "Kept",
+         "Half the red cabbage, for a later braise"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:** None: theory only."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "the plan is written and timed before the first knife cut;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "every basket item has a role or a reason to keep it."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Chaos after 30 minutes",
+         "Cooking started before the plan was complete",
+         "Fifteen minutes of writing first"
+        ],
+        [
+         "Every course tastes of the same thing",
+         "Every item used in every course",
+         "One role per item"
+        ],
+        [
+         "One failure sinks the meal",
+         "No fallback",
+         "A simpler version in the plan"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** each protein's §9 figure written into the timeline as a control point; the chooser's allergen or diet note read before the menu is written."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** a practice plan for a basket you imagine from this week's season."
+      }
+     ]
+    },
+    {
+     "id": "IND-5.M2.L2",
+     "title": "Round 1: vegetables and pantry",
+     "prerequisites": [
+      "IND-5.M2.L1"
+     ],
+     "competencies": [
+      {
+       "id": "CR-IMPV",
+       "level": 4
+      },
+      {
+       "id": "TS-DRY",
+       "level": 5
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** a basket of vegetables and the pantry, with no protein, asks for depth from technique alone. Dry heat gives it, and two courses that differ in method keep the meal from tasting twice of the same thing."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** two baskets of three to five seasonal vegetables, each chosen by a household member (about €10–15 each); the pantry; sheet pans, a heavy pan, the grill pan if you have one; a timer; the notebook."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*The round.* A household member picks a basket of three to five seasonal vegetables. You make two courses within 90 minutes, from the vegetables and the pantry."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Dry heat as the backbone* (`TS-DRY`). With no protein, browning, roasting, grilling and frying give depth. Vary the method between the two courses: for example, a starter of charred leeks from the grill pan and a main of roasted roots."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Browning well.* Dry the vegetables, give them space on the tray or in the pan, and use enough heat. A crowded tray steams; an empty corner burns. Turn once when the underside is deep golden."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Using the whole vegetable* (`KMG-3`). Leaves, stalks and peel become a garnish, crisps or a quick stock: celeriac peel in a stock, beetroot leaves wilted, carrot tops in a herb sauce."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Improving the plan.* After basket A, read its log: which step ran late, which dish was weaker, which item went unused. Change one thing in the plan for basket B."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Round 1, basket A (90 min).** Write the 15-minute plan; cook two courses; log timestamps and photos; collect household cards."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Round 1, basket B (90 min).** A second basket from another season, or with a vegetable not used in A. Improve the plan from A's log."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "both courses on the table within 90 minutes;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "each course uses a different dry-heat method, to standard."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Two courses that taste the same",
+         "Same fat, spice and method",
+         "Change the method, the fat and the accent"
+        ],
+        [
+         "Pale, steamed vegetables",
+         "A crowded tray",
+         "Two trays; space between the pieces"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** a hot oven and pan handled with dry cloths; trimmings for stock cooled by the cooling rule and kept 2 days or frozen (assessment §9)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** both plans with timestamps; the photos; the cards; what you changed for basket B."
+      }
+     ]
+    },
+    {
+     "id": "IND-5.M2.L3",
+     "title": "Round 2: protein and season",
+     "prerequisites": [
+      "IND-5.M2.L2"
+     ],
+     "competencies": [
+      {
+       "id": "CR-IMPV",
+       "level": 4
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** with a protein in the basket, the meal is planned around its safety figure, its cooking and its rest. A side that contrasts with it and finishes at the same moment is what makes it a dish rather than two."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** two baskets, each with one protein (a chicken leg, a pork chop, a fish, eggs or a pulse) and seasonal produce (about €15–25 each); the pantry; the probe; a timer; the notebook."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*The round.* A basket with one protein and seasonal produce: you make a main and a side."
+      },
+      {
+       "type": "paragraph",
+       "text": "*The protein first.*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "Write its §9 figure: 75 °C for chicken, 63 °C for 15 seconds for fish and intact pork, and for dried beans the bean row (soaked at least 5 hours, the water poured away, then boiled at least 30 minutes; assessment §9)."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "Choose the method from its structure (`IND-5.M1.L1`): a chicken leg's connective tissue wants time; a pork chop wants a fast sear and a gentle finish."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "Build the timeline around its cooking and its rest."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*The side as a partner.* Choose a contrast in texture and flavour with the main, and time it to finish with it: a crisp, sharp salad with a braised leg; a soft purée with a seared chop."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Resting.* Rested meat waits under loose foil while the side finishes; it is not left to go cold."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Round 2, basket A (90 min).** Plan, cook the main and side, log the probe reading, and collect household cards."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Round 2, basket B (90 min).** A different protein; improve the plan from A."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "the protein at its target doneness and above its §9 figure, rested;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "the side ready at the same moment."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "A cold main",
+         "The protein cooked first and left",
+         "Time it to finish with the side, plus its rest"
+        ],
+        [
+         "A dull plate",
+         "The side repeats the main's texture",
+         "Add crunch or acid to the side"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** the protein probed against its §9 row and the reading logged; raw meat and fish on their own board, the board washed before the side's vegetables are cut."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** both plans; the probe readings; the photos; the cards."
+      }
+     ]
+    },
+    {
+     "id": "IND-5.M2.L4",
+     "title": "Round 3: for guests, against the clock",
+     "prerequisites": [
+      "IND-5.M2.L3"
+     ],
+     "competencies": [
+      {
+       "id": "KM-PLAN",
+       "level": 5
+      },
+      {
+       "id": "CR-IMPV",
+       "level": 4
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** three courses for four guests from a basket, with a fixed serving time, is the round that shows you can cook without a recipe when it counts. The plan must be written fast and then kept."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** a basket for three courses for four, chosen by a household member (about €40–60); the pantry; the guests' allergen and diet information from the chooser; plates for four; the probe; the timeline as a checklist on the counter; guest cards."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*The round.* Three courses for four from a basket, with a fixed serving time, within 3 hours of opening the basket. The written plan is made in the first 15 minutes."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Running service* (`MNU-4.M3`)."
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "Use the timeline as a checklist: tick each step as it is done."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "Aim for each course within 5 minutes of its planned time."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "Write slips down as they happen, and absorb them with the buffer or the fallback."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Guests.* An allergen or diet named by the chooser is handled as in `NUT-3`, from the basket to the plate."
+      },
+      {
+       "type": "paragraph",
+       "text": "*The dessert.* Plan it early: something made in the first hour that sets or chills (a poached fruit, a custard, a sorbet base), or something quick that needs no oven at the end."
+      },
+      {
+       "type": "paragraph",
+       "text": "*The written analysis.* For each course, write the alternatives you considered and their risks, so the round counts as a brief for `JD-CHSE`."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Round 3 (3 h).** Open the basket, plan in 15 minutes, and serve three courses for four on time. Log timestamps, take photos, collect guest cards."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "every course out within 5 minutes of the plan;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "the guests judge every course good."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "No time for dessert",
+         "The dessert left to the end",
+         "Start it in the first hour"
+        ],
+        [
+         "The main waits while you plate",
+         "Plating for four took longer than planned",
+         "Plates and tools out before the main is done"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** the allergen plan from basket to plate (`NUT-3`); every protein probed; held food at 57 °C or above (assessment §9)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the plan; the timestamps against the plan; the analysis; the photos; the cards."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "IND-5.M2.X1",
+     "title": "Three rounds of mystery baskets",
+     "description": "The three rounds, each with a plan, timestamps and photos.",
+     "competencies": [
+      {
+       "id": "CR-IMPV",
+       "level": 4
+      },
+      {
+       "id": "KM-PLAN",
+       "level": 5
+      },
+      {
+       "id": "TS-DRY",
+       "level": 5
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** turn a basket chosen by someone else into a good meal on time, with a plan made fast and kept. Three rounds of increasing difficulty: vegetables and pantry (two baskets), protein and season (two baskets), and three courses for four guests against the clock. Round 3 is within 3 hours of opening the basket, with the plan written in the first 15 minutes."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** five baskets put together by a household member from seasonal produce, within a budget (about €10–15 for a round 1 basket, €15–25 for round 2, €40–60 for round 3); the pantry; the probe; household and guest cards."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Procedure:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "For each basket: the 15-minute plan (inventory, constraints, menu, timeline, fallback), then cook."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "Log timestamps at each control point; photograph each course; probe each protein."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "Collect household cards (rounds 1 and 2) and guest cards (round 3)."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "After each round, write what changed in the plan and why."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`CR-IMPV` level 4:** round 3, three courses for four guests within 3 hours, the plan written in the first 15 minutes, every course judged good. With rounds 1 and 2 and the pantry meals of `IND-5.M3.X1`, the row is complete."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`KM-PLAN` level 5, productions one and two:** rounds 2 and 3, every course within 5 minutes of the plan, slips recorded and absorbed. The others are `IND-5.M5.X1`, `RDV-5.M3.X1` and the capstone (`CAP-5.R11`)."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`TS-DRY` level 5, in part:** dry-heat methods to standard on unfamiliar baskets, without a recipe, and for guests in round 3. The time-pressure condition and the written note are in `IND-5.M5.X1`."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**Further evidence:** the round 3 analysis is brief four of five for `JD-CHSE`; the basket dishes count towards the without-recipe condition of `IN-VEG` level 5."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "AI review reads the plans, the timestamps, the photos, the probe readings and the cards: *competent* is a plan written within 15 minutes each time, round 3 on time with every course judged good, and every protein probed; *not yet* is a plan written after cooking started, a course more than 5 minutes late without a logged reason, or a protein without a reading."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 9 h over the five baskets."
+      }
+     ]
+    }
+   ],
+   "items": []
+  },
+  {
+   "id": "IND-5.M3",
+   "title": "Pantry and leftover cooking",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** none for this module. Its one judgment objective (adapt freely) is shown in the predicted and confirmed adaptations of `IND-5.M3.X1`; the leftover rules of assessment §9 are checked in the log and in `IND-5.M5`."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "IND-5.M3.L1",
+     "title": "Cooking from what's there",
+     "prerequisites": [
+      "KMG-3.M4.L1"
+     ],
+     "competencies": [
+      {
+       "id": "CR-IMPV",
+       "level": 4
+      },
+      {
+       "id": "RD-ADPT",
+       "level": 5
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** most home cooking starts from what is already in the house. A weekly meal from the pantry, the fridge and the leftovers, made safely and well, is the habit that makes a cook independent of the shop as well as the recipe."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** whatever the week leaves in the fridge and pantry, with their dates; the notebook; the probe; no shopping for these meals."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*The weekly habit* (`KMG-3.M4.L1`). One meal a week, for four weeks, from what is in the pantry, the fridge and the leftovers, with no shopping for it."
+      },
+      {
+       "type": "paragraph",
+       "text": "*The inventory first.* Write what must be used soonest, and what is safe to use:"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "leftovers within 2 days in the fridge, covered, and reheated until steaming hot, only once (assessment §9);"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "anything out of the fridge for more than 2 hours in total is thrown away, not cooked (§9)."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Adapting known dishes.* Choose a dish family you know (a frittata, a soup, a gratin, a fried rice, a pie) and adapt it to what is there. Keep the structure; swap the ingredients by their role (`RDV-4`). Predict the adaptation in writing, and check it on the plate."
+      },
+      {
+       "type": "table",
+       "header": [
+        "Dish family",
+        "Structure kept",
+        "Swapped by role"
+       ],
+       "rows": [
+        [
+         "Frittata",
+         "Eggs, a filling, a hot pan then a low finish",
+         "Leftover roast roots and wilted greens as the filling"
+        ],
+        [
+         "Soup",
+         "A base, a liquid, a body, a finish",
+         "Yesterday's braising liquid as the liquid; a potato for body"
+        ],
+        [
+         "Gratin",
+         "A starch, a liquid, a crust",
+         "Cooked squash with a little cream and crumbs"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Making it a meal.* Add a contrast from the pantry: a quick pickle, toasted crumbs, a herb oil, an acid at the end."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Week 1 (45 min).** Write the inventory; cook the first meal; predict its adaptation and confirm it."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Week 2 (45 min).** The second meal, from a different dish family."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "**Weeks 3 and 4 (2 × 45 min).** The third and fourth meals; compare the four in the log."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "every meal is one the household would choose to eat again;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "nothing past its limit goes into a dish."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Unsafe leftovers",
+         "Reheated a second time",
+         "Reheat only the portion you will eat, once"
+        ],
+        [
+         "A muddled pot",
+         "Everything thrown in without a plan",
+         "Choose one dish family; leave out what doesn't fit"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** leftovers within 2 days and reheated until steaming hot, only once; food out of the fridge for more than 2 hours in total thrown away; a reheated dish with a §9 core figure probed (assessment §9)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** each week's inventory with dates; the dish family; the prediction and the result; the photos and cards."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "IND-5.M3.X1",
+     "title": "Four pantry meals, logged",
+     "description": "The four pantry meals, logged.",
+     "competencies": [
+      {
+       "id": "CR-IMPV",
+       "level": 4
+      },
+      {
+       "id": "RD-ADPT",
+       "level": 5
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** make cooking from what is there a habit, with adaptations predicted and confirmed. Cook one meal a week for four weeks from the pantry, fridge and leftovers, with no shopping for it. Each meal adapts a known dish family, predicted in writing before cooking."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** whatever the week leaves, within the §9 limits; the pantry; the notebook; household cards."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Procedure:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "Each week: the inventory with dates, the dish family and the predicted adaptation."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "Cook; photograph; collect household cards."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "Write whether the prediction held and what to change."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`CR-IMPV` level 4, further evidence:** four meals improvised from what was there, judged good by the household. The row's guest condition is in round 3 of `IND-5.M2.X1`."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`RD-ADPT` level 5, adaptations one to four:** each predicted and confirmed, on the day and without a recipe. The diet and equipment conditions are in `IND-5.M5.X1`, the classical text in `IND-5.M4.X2`, and the capstone dietary adaptation completes the row."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "AI review reads the inventories, the predictions, the photos and the cards: *competent* is four meals from four dish families, each prediction written before cooking and checked after, every leftover within its date, and cards that judge them good; *not yet* is a leftover past 2 days, a prediction written after the meal, or a meal the household would not eat again."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 3 h over four weeks."
+      }
+     ]
+    }
+   ],
+   "items": []
+  },
+  {
+   "id": "IND-5.M4",
+   "title": "Recreating dishes",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** none for this module. Its two judgment objectives (inferring what a description leaves out, and comparing side by side) are shown in the written plans and comparisons of `IND-5.M4.X1` and `IND-5.M4.X2`; the classical knowledge was checked in `CLS-4`."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "IND-5.M4.L1",
+     "title": "From a written description",
+     "prerequisites": [
+      "RDV-4.M2.L2"
+     ],
+     "competencies": [
+      {
+       "id": "JD-CHSE",
+       "level": 5
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** a menu line names a dish and leaves out almost everything needed to cook it. Inferring the missing parts from the frameworks and ratios you know, and testing the least sure part, is how a cook works from a description."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** a menu line or cookbook headnote chosen by a household member; the ratio sheets of `RDV-4.M1`; the classical frameworks (`CLS-4`, `SAU-2`, `BAK-2`); seasonal ingredients for two attempts; the notebook."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Reading a description.* A menu line or a cookbook headnote names components and techniques. What it leaves out (proportions, temperatures, order) you infer from the classical frameworks and ratios."
+      },
+      {
+       "type": "paragraph",
+       "text": "*The inference table.* Each component, its likely technique, its proportion from a known ratio, and how sure you are. The least sure gets a test."
+      },
+      {
+       "type": "paragraph",
+       "text": "A worked example, \"Roasted North Sea plaice, brown butter, capers, celeriac purée\":"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Component",
+        "Technique",
+        "Proportion",
+        "Sure?"
+       ],
+       "rows": [
+        [
+         "Plaice",
+         "Roasted whole or on the bone; 63 °C for 15 seconds",
+         "One fish per guest",
+         "Likely"
+        ],
+        [
+         "Brown butter",
+         "Butter cooked until nutty and brown (`SAU-2`)",
+         "About 20 g per portion",
+         "Sure"
+        ],
+        [
+         "Capers",
+         "Rinsed, added to the butter at the end",
+         "A spoonful per portion",
+         "Sure"
+        ],
+        [
+         "Celeriac purée",
+         "Simmered in milk, blended",
+         "Roughly equal weights of celeriac and liquid, reduced",
+         "Guess: test it small"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*The plan and the fallback.* As in the mystery-basket method (`IND-5.M2.L1`), with a simpler version of the least sure component: here, a celeriac mash if the purée is too loose."
+      },
+      {
+       "type": "paragraph",
+       "text": "*The second attempt.* Change only the least sure component, for the reason the first attempt showed."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**A description (75 min).** A household member chooses a menu line. Write the inference table, cook the dish, and collect a photo and household cards."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**The second attempt (75 min).** Change the least sure component from what the first attempt showed, and compare."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "the household member recognises the dish they chose;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "the second attempt is closer, for a reason you wrote down."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "The dish has something the menu didn't say",
+         "A component invented",
+         "Cook only what the description names"
+        ],
+        [
+         "A proportion far off",
+         "Guessed where a known ratio exists",
+         "Use the ratio; test the guess"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** every protein in the table carries its §9 figure; a dish the description serves raw or rare is cooked to §9 for risk groups (the risk-group row)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the inference table; both attempts' photos; what changed and why."
+      }
+     ]
+    },
+    {
+     "id": "IND-5.M4.L2",
+     "title": "From a tasted dish",
+     "prerequisites": [
+      "FLV-3.M6.L2"
+     ],
+     "competencies": [
+      {
+       "id": "FL-SENS",
+       "level": 5
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** recreating a dish from its taste asks your senses to measure. Calibrated tasting notes, and a side- by-side comparison with the original, show whether your palate can be trusted as an instrument."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** a dish tasted at a restaurant, or cooked by someone else (a portion kept if possible); the tasting form of `FLV-3.M6.L2`; your salt and acid test results from the last 6 months; seasonal ingredients for the recreation; a household member as blind taster."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Tasting to take apart* (`FLV-3.M6.L2`). Taste the dish with the calibrated method, and note each with an estimate:"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "salt, acid, sweetness, bitterness and umami;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "fat;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "aromatics;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "texture;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "temperature."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "Estimates in measurable terms help: \"more acid than a usual vinaigrette\", \"salt like a well-seasoned stock\"."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Recreating it.* Infer the components and techniques from the notes, then cook. Start with the balance you noted, not the look: a dish that tastes right but looks a little different is closer than the reverse."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Side by side.* Where possible, taste the original and the recreation together: a kept portion, or the other cook making it again. A household member tastes them blind, coded and in random order (`RDV-4.M4.L1`). Otherwise, compare against your notes."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Calibration still holds.* Your salt and acid tests passed in the last 6 months stand behind your sensory notes (assessment §5.5). If they are older, retake them first (`TST-1`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Tasting and first recreation (75 min).** Write the tasting notes and the inferred plan; cook the dish."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Side by side (75 min).** Adjust the recreation and taste it next to the original; name the differences."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "the tasting notes name the balance in measurable terms;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "the blind taster can't easily tell the two apart, or names one clear difference."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "It looks right but tastes off",
+         "The look recreated, not the balance",
+         "Recreate from the tasting notes, not the photo"
+        ],
+        [
+         "Notes you can't rely on",
+         "No calibration test in the last 6 months",
+         "Retake the salt and acid tests"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** a kept portion stored as leftovers: covered, in the fridge, within 2 days, reheated once until steaming hot (assessment §9)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the tasting notes; the plan; the side-by-side result and the differences named."
+      }
+     ]
+    },
+    {
+     "id": "IND-5.M4.L3",
+     "title": "From a recipe without quantities",
+     "prerequisites": [
+      "CLS-4.M1.L2"
+     ],
+     "competencies": [
+      {
+       "id": "RD-ADPT",
+       "level": 5
+      },
+      {
+       "id": "CK-CLAS",
+       "level": 4
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** classical texts assume a trained cook and give only ingredients and method. Filling in the rest from ratios, techniques and cues, while modern safety rules win every conflict, is the test of a trained cook."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** a classical text: Escoffier [S11] or an older cookbook, for a vegetable, egg or fish preparation; the ratio sheets; the seasonal Dutch ingredient closest to the text's; the probe; the notebook."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Classical and historical texts.* Escoffier [S11] and older cookbooks often give ingredients and method, but no quantities, temperatures or times."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Filling in:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**quantities** from ratios (`RDV-4.M1`);"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**temperatures** from the techniques taught;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**times** from the cues;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**the result** from the classical name (`CLS-4.M1.L2`): the name tells you what the dish must be."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Modern rules first.* Where the text conflicts with assessment §9 (raw egg, rare poultry, long storage at room temperature), §9 wins, and you write the change down. Use the seasonal Dutch ingredient closest to the text's."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Adapting with judgement.* Keep the logic of the dish; adjust the produce, the fat and the portion for a modern plate."
+      },
+      {
+       "type": "table",
+       "header": [
+        "Line",
+        "Example: a fish *bonne femme*"
+       ],
+       "rows": [
+        [
+         "Text gives",
+         "Fish, shallots, mushrooms, white wine, fish stock, butter; poached, the liquor reduced and mounted"
+        ],
+        [
+         "Filled in",
+         "150 g fish per portion; a cartouche; poached gently, probed to 63 °C; the liquor reduced by about two-thirds"
+        ],
+        [
+         "§9 change",
+         "None needed beyond the fish row"
+        ],
+        [
+         "Season",
+         "North Sea plaice or dab; Dutch mushrooms"
+        ],
+        [
+         "Modern plate",
+         "Less butter in the sauce; a leek garnish for colour"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Reading and first cook (75 min).** Write the filled-in plan for a classical vegetable, egg or fish preparation from the text, and cook it."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Second cook (75 min).** Adjust it and compare the result with the text's description."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "the dish is recognisably the one the name describes;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "every change for safety or season is written with its reason."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "A step §9 forbids",
+         "The historical method followed",
+         "§9 wins; write the change"
+        ],
+        [
+         "The classical dish disappears",
+         "Modern ideas added until it's another dish",
+         "Keep the logic; change only produce, fat and portion"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** §9 wins every conflict with the text; raw egg replaced by pasteurised for every guest (the raw-egg row); the protein probed to its row."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the filled-in plan with its §9 and season changes; both cooks' photos; the comparison with the text."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "IND-5.M4.X1",
+     "title": "A dish from a description, and a tasted dish",
+     "description": "Recreate a dish from a description chosen by a household member.",
+     "competencies": [
+      {
+       "id": "JD-CHSE",
+       "level": 5
+      },
+      {
+       "id": "FL-SENS",
+       "level": 5
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** infer what a description or a taste leaves out, and recreate the dish faithfully. Recreate twice a dish from a description chosen by a household member. Then recreate a tasted dish (from a restaurant, or cooked by someone else) and compare it side by side."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** the description; the tasted dish or a kept portion; seasonal ingredients for two attempts at each; the tasting form; household cards."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Procedure:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "For the description: the inference table, the plan and fallback, two attempts, photos and household cards."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "For the tasted dish: the tasting notes, the plan, the recreation, then the side-by-side or blind comparison."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "Write what was inferred correctly and what was not, for both dishes."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`JD-CHSE` level 5, brief two of five:** the description analysed with alternatives and risks, and the dish recognised by the household member."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`FL-SENS` level 5, in part:** the calibrated tasting notes and a side-by-side comparison, with the salt and acid tests of the last 6 months behind them. The calibration held over 8 weeks is checked in `IND-5.M6.X1`; the triangle test and the tasting guide are in `RDV-5.M3.X1`, and the capstone completes the row."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "AI review reads the inference table, the tasting notes, the photos and the comparison: *competent* is a dish the household member recognises, a second attempt closer for a written reason, and tasting notes in measurable terms backed by a recent calibration; *not yet* is an invented component, notes without estimates, or no comparison."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 5 h over four sessions."
+      }
+     ]
+    },
+    {
+     "id": "IND-5.M4.X2",
+     "title": "A classical dish from a text without quantities",
+     "description": "Recreate a dish from Escoffier or another classical text without quantities [S11].",
+     "competencies": [
+      {
+       "id": "JD-CHSE",
+       "level": 5
+      },
+      {
+       "id": "RD-ADPT",
+       "level": 5
+      },
+      {
+       "id": "CK-CLAS",
+       "level": 4
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** cook from a classical text that gives only ingredients and method, filling in what is missing within modern safety rules. Cook a dish from Escoffier [S11] or another classical text with no quantities, twice. Use seasonal Dutch ingredients where the text allows, and write down every change for safety or season."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** the text; seasonal vegetables, eggs or North Sea fish as the dish needs; the probe; household cards."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Procedure:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "Write the filled-in plan: quantities from ratios, temperatures, times and cues; the §9 changes."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "Cook; photograph; collect household cards."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "Adjust and cook again; compare with the text's description of the result."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`JD-CHSE` level 5, brief three of five:** the filled-in plan with alternatives and risks, the result to standard."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`RD-ADPT` level 5, adaptation five:** a classical dish adapted with reasons, predicted and confirmed."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`CK-CLAS` level 4, further evidence:** one more classical preparation from its name and text alone, recognisably correct, with a written adaptation for a modern plate that keeps the logic."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "AI review reads the plan, the photos and the comparison: *competent* is a plan that fills every gap from a ratio, a technique or a cue, every §9 and season change written, and a dish the name describes; *not yet* is a step §9 forbids, a gap filled by guesswork without a test, or a dish that no longer matches its name."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 2.5 h."
+      }
+     ]
+    }
+   ],
+   "items": []
+  },
+  {
+   "id": "IND-5.M5",
+   "title": "Constraint challenges",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** the 8 items of `IND-5.M5` in the course file, 4 of them safety items. Pass: 80 % and every safety item correct."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "IND-5.M5.L1",
+     "title": "Time",
+     "prerequisites": [
+      "IND-5.M2.L1"
+     ],
+     "competencies": [
+      {
+       "id": "KM-PLAN",
+       "level": 5
+      },
+      {
+       "id": "TS-DRY",
+       "level": 5
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** most home cooking happens on a weekday evening. A two-course dinner as good as an S4 dinner, in 30 minutes from a clean kitchen to the table, shows that the methods hold when the clock is short."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** seasonal vegetables; a thin protein (fish fillets, thin chops or a chicken breast cut flat); the probe; a timer; a dessert or starter that needs no cooking; household cards."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*The standard.* Both courses as good as an S4 dinner, on the table in 30 minutes from a clean kitchen."
+      },
+      {
+       "type": "paragraph",
+       "text": "*What makes it possible:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "fast dry-heat methods: sauté, pan-fry, grill;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "thin or small pieces;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "a hot oven or pan started first;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "a sauce made in the pan;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "one course that needs no cooking (a raw salad of seasonal roots, or a starter assembled cold);"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "the mise en place in the order of use (`IND-5.M2.L1`)."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*What never gets cut:* the probe reading against §9, resting where it matters, and seasoning at the end."
+      },
+      {
+       "type": "paragraph",
+       "text": "*The timeline in minutes.* Written in two minutes and kept on the counter:"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Minute",
+        "Step"
+       ],
+       "rows": [
+        [
+         "0",
+         "Oven or pan on; water on"
+        ],
+        [
+         "2–10",
+         "Vegetables cut; the cold course assembled"
+        ],
+        [
+         "10–20",
+         "Vegetables in; protein seasoned and in the pan"
+        ],
+        [
+         "20–25",
+         "Protein probed and resting; pan sauce"
+        ],
+        [
+         "25–30",
+         "Plated; seasoning checked; served"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**First 30-minute dinner (45 min with the plan).** Timed, photographed and probed; household cards."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Second 30-minute dinner (45 min).** A different protein and season, with the slips of the first removed."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "both courses on the table in 30 minutes, hot and to standard;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "the probe reading in the log."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "The protein still raw at minute 25",
+         "Too thick for the time",
+         "Cut it thin or choose a thin cut"
+        ],
+        [
+         "No reading in the log",
+         "Skipped to save a minute",
+         "It never is: the reading takes seconds"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** the probe is never skipped: intact meat and fish to 63 °C for 15 seconds, poultry to 75 °C (assessment §9). Under time pressure, raw and cooked boards stay apart."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the timeline with actual times; the probe readings; photos of both courses; the slips."
+      }
+     ]
+    },
+    {
+     "id": "IND-5.M5.L2",
+     "title": "Equipment",
+     "prerequisites": [
+      "RDV-4.M3.L2"
+     ],
+     "competencies": [
+      {
+       "id": "RD-ADPT",
+       "level": 5
+      },
+      {
+       "id": "TS-FIRE",
+       "level": 4
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** a holiday kitchen, a broken oven or a garden fire takes away tools you rely on. Knowing what each method needs, and how to get it another way, keeps the standard when the kitchen changes."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** one heavy pan with a lid; the hob; for the live-fire meal, a covered kettle grill or a fire pit with charcoal or wood, the fire plan of `FIR-3.M6.L1`, water or a fire blanket; the probe; ingredients for at least four guests."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*The constraints:* one pan for a whole meal; no oven (the hob only); or live fire only."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Adapting methods.* Each method needs dry heat, moisture or an enclosed space. Get it another way:"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "a lid and low heat on the hob as an oven;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "a covered kettle grill as an oven;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "a heavy pan for searing and then braising;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "ember cooking for vegetables (`FIR-3`)."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*One pan.* Order by cleanliness and fat:"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "vegetables first, kept warm;"
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "the protein;"
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "the sauce in the fond."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "Keep earlier items warm while the pan is reused, in a low place on the hob or under a lid."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Live fire for guests.* The fire plan of `FIR-3.M6.L1`, for at least four guests, served on time:"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "the zones;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "when to refuel;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "the order of dishes."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "Fire safety (`FIR-3.M1.L1`):"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "outdoors only, never in a closed space (carbon monoxide);"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "the grill on a stable surface, away from anything that burns;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "water or a fire blanket at hand."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*No outdoor space.* Both sessions use the other two constraints, and `TS-FIRE` stays at level 2 in the record."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**One pan or no oven (60 min).** A full meal under the constraint you haven't tried; write the adaptation."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Live fire for guests (90 min).** A meal for at least four from a fire plan, served on time; fire and meat logs; guest cards."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "the meal under the constraint is as good as one from the full kitchen;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "every course over the fire is on time, and the fire never ran out."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "The last item cooked in burnt fond",
+         "The order ignored cleanliness and fat",
+         "Vegetables first, sauce last; deglaze before it burns"
+        ],
+        [
+         "The main cooks on a dying fire",
+         "Refuelled too late",
+         "Refuel at the times in the plan"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** a charcoal or wood fire outdoors only; if it rains, the cooking moves indoors to the hob, never the grill into a garage or porch. Every protein probed to its §9 row."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the adaptation written; the fire plan and fire log; probe readings; guest cards."
+      }
+     ]
+    },
+    {
+     "id": "IND-5.M5.L3",
+     "title": "Diet",
+     "prerequisites": [
+      "NUT-3.M3.L2"
+     ],
+     "competencies": [
+      {
+       "id": "RD-ADPT",
+       "level": 5
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** a guest with a diet or an allergy should eat as well as everyone else. An adaptation that keeps the dish's idea, and an allergen plan without gaps, shows care and skill together."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** the guest's diet or allergy, asked in advance and written down; the menu; labels of every product used; separate boards, tools and oil for an allergy; household and guest cards."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*The guest's need.* A diet (vegetarian, vegan, gluten-free, lower in salt) or an allergy, asked in advance and written down (`NUT-3.M3.L2`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Full quality.* The adaptation keeps the dish's idea and its structure:"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "the fat;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "the acid;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "the texture contrast."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "It is not a lesser version with a part left out. Predict the adapted dish in writing, and confirm it by tasting (`RD-ADPT`)."
+      },
+      {
+       "type": "table",
+       "header": [
+        "Original",
+        "Adapted for a vegan guest",
+        "Structure kept by"
+       ],
+       "rows": [
+        [
+         "Cream of celeriac soup",
+         "Roasted celeriac and white beans, blended with rapeseed oil",
+         "Body from the beans, fat from the oil, acid and salt checked at the end"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*For an allergy.* An allergen plan from shopping to plate (`NUT-3.M3`, EU Regulation 1169/2011 [S23]):"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "labels photographed;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "separate tools and boards;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "the dish plated and served first;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "the guest told what it contains."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*For the others.* Ideally everyone eats the adapted dish, so there is only one version to keep apart."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**The plan and a trial (60 min).** Predict the adapted dishes and cook them for the household."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**The dinner (90 min).** The adapted menu for the guest and others; guest cards, the guest's included."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "the guest scores their dish as high as the others score theirs;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "the allergen plan has no gap from shopping to plate."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "A \"free-from\" dish that is simply missing something",
+         "A part left out, not replaced",
+         "Rebuild the structure: fat, acid, texture"
+        ],
+        [
+         "The allergen reaches the guest's plate",
+         "Shared spoons or oil",
+         "Separate tools; one version for everyone"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** for an allergy, the allergen plan from shopping to plate, labels checked, separate tools; when in doubt about a product, leave it out."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the guest's need; the prediction and the tasting; the allergen plan; guest cards."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "IND-5.M5.X1",
+     "title": "Three constraint challenges",
+     "description": "The three constraint challenges.",
+     "competencies": [
+      {
+       "id": "KM-PLAN",
+       "level": 5
+      },
+      {
+       "id": "TS-DRY",
+       "level": 5
+      },
+      {
+       "id": "RD-ADPT",
+       "level": 5
+      },
+      {
+       "id": "TS-FIRE",
+       "level": 4
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** keep the standard under time, equipment and dietary constraints, one constraint at a time:"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "time: two 30-minute dinners;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "equipment: one pan or no oven, and live fire for at least four guests, from a fire plan and on time;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "diet: a dinner adapted to a guest's diet or allergy."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "Then write a short note on the variables and faults of dry heat, and a short guide to adapting one dish family."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** seasonal produce and a protein for each challenge; charcoal or wood for the fire; the guest's diet or allergen information; the probe; household and guest cards."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Procedure:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "For each challenge: the plan with the constraint, the timeline and the predicted adaptation."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "Cook; log timestamps, probe readings and, for the fire, the fire log; photograph each course."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "Collect household and guest cards."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "Write the dry-heat note and the adaptation guide."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`KM-PLAN` level 5, productions three and four:** the 30-minute dinner and the live-fire meal, every course within 5 minutes of the plan."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`TS-DRY` level 5, in part:** dry heat under time pressure, on unfamiliar equipment and over fire, to standard, and the written note. With `IND-5.M2.X1`, the capstone main completes the six methods."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`RD-ADPT` level 5, adaptations six and seven:** equipment and diet, each predicted and confirmed, and the guide. The capstone dietary adaptation completes the row."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`TS-FIRE` level 4, in part:** the second live-fire meal for at least four guests, on time, under a new condition. With `FIR-3.M4.X1` and `FIR-3.M6.X1`, the record needs one more live-fire meal and two more low-and-slow cooks, logged as household cooks in S5. Without outdoor space, `TS-FIRE` stays at level 2."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "AI review reads the plans, timelines, logs, photos, cards, note and guide: *competent* is every course within 5 minutes of the plan, every reading at its §9 row, adaptations predicted and confirmed, and a guest's card as high as the others'; *not yet* is a missing reading, a course late without a logged reason, or an adapted dish missing part of its structure."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 6.5 h over six sessions."
+      }
+     ]
+    }
+   ],
+   "items": [
+    {
+     "id": "IND-5.M5.Q1",
+     "type": "SCENARIO",
+     "lessonId": "IND-5.M5.L1",
+     "safety": true,
+     "question": "You have 30 minutes and pork chops. Minutes before serving, you want to skip the probe. What do you do?",
+     "options": [],
+     "answer": "Probe anyway: intact pork to 63 °C for 15 seconds (assessment §9); thinner chops cook faster, so choose thin ones next time rather than skip the reading.",
+     "why": "§9 is not cut under time pressure."
+    },
+    {
+     "id": "IND-5.M5.Q2",
+     "type": "SCENARIO",
+     "lessonId": "IND-5.M5.L1",
+     "safety": false,
+     "question": "Which choices make a two-course dinner possible in 30 minutes?",
+     "options": [],
+     "answer": "Fast dry-heat methods, small or thin pieces, the pan or oven heated first, a pan sauce, a course that needs no cooking, mise en place in order of use.",
+     "why": "The time constraint shapes the menu."
+    },
+    {
+     "id": "IND-5.M5.Q3",
+     "type": "SCENARIO",
+     "lessonId": "IND-5.M5.L2",
+     "safety": false,
+     "question": "No oven, and you want a braise. How?",
+     "options": [],
+     "answer": "A heavy pan or casserole with a tight lid on low heat on the hob, after searing in the same pan; the lid and low heat replace the oven.",
+     "why": "Adapting the method to the equipment."
+    },
+    {
+     "id": "IND-5.M5.Q4",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "IND-5.M5.L2",
+     "safety": true,
+     "question": "It rains during the live-fire meal. Where may the charcoal grill go?",
+     "options": [
+      {
+       "key": "A",
+       "text": "the garage with the door half open"
+      },
+      {
+       "key": "B",
+       "text": "a closed porch"
+      },
+      {
+       "key": "C",
+       "text": "outdoors in the open, or the cooking moves indoors to the hob"
+      },
+      {
+       "key": "D",
+       "text": "the kitchen by an open window"
+      }
+     ],
+     "answer": "C",
+     "why": "Carbon monoxide: never indoors or in a closed space (`FIR-3.M1.L1`)."
+    },
+    {
+     "id": "IND-5.M5.Q5",
+     "type": "SCENARIO",
+     "lessonId": "IND-5.M5.L2",
+     "safety": false,
+     "question": "A one-pan meal: vegetables, a fish fillet and a sauce. In what order, and why?",
+     "options": [],
+     "answer": "Vegetables first (kept warm), then the fish, then the sauce in the fond; order by cleanliness and fat, so the last item is not cooked in burnt fond.",
+     "why": "One-pan sequencing."
+    },
+    {
+     "id": "IND-5.M5.Q6",
+     "type": "SCENARIO",
+     "lessonId": "IND-5.M5.L3",
+     "safety": true,
+     "question": "A guest has a peanut allergy. You plan a satay-style dish. What do you do?",
+     "options": [],
+     "answer": "Change the dish so it has no peanut for anyone (for example a sunflower-seed sauce); allergen plan from shopping to plate; labels checked; separate tools; the guest told what it contains.",
+     "why": "Allergen rules (`NUT-3`)."
+    },
+    {
+     "id": "IND-5.M5.Q7",
+     "type": "SCENARIO",
+     "lessonId": "IND-5.M5.L3",
+     "safety": false,
+     "question": "Your vegan version of a cream soup tastes flat next to the original. What is missing, and how do you fix it?",
+     "options": [],
+     "answer": "The fat and the body: a purée of roasted roots or white beans with olive or rapeseed oil, and acid and salt checked at the end; the structure kept, not just the cream left out.",
+     "why": "Full quality, not a lesser version."
+    },
+    {
+     "id": "IND-5.M5.Q8",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "IND-5.M5.L3",
+     "safety": true,
+     "question": "A gluten-free guest: which is the cross-contact risk?",
+     "options": [
+      {
+       "key": "A",
+       "text": "rice"
+      },
+      {
+       "key": "B",
+       "text": "a wooden board and a sieve last used for wheat flour"
+      },
+      {
+       "key": "C",
+       "text": "potatoes"
+      },
+      {
+       "key": "D",
+       "text": "olive oil"
+      }
+     ],
+     "answer": "B",
+     "why": "Separate tools; flour dust and shared sieves carry gluten."
+    }
+   ]
+  },
+  {
+   "id": "IND-5.M6",
+   "title": "Troubleshooting clinic",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** the 8 items of `IND-5.M6` in the course file, 3 of them safety items. Pass: 80 % and every safety item correct."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "IND-5.M6.L1",
+     "title": "Rescue under pressure",
+     "prerequisites": [
+      "FLV-3.M6.L1",
+      "SAU-2.M7.L1"
+     ],
+     "competencies": [
+      {
+       "id": "JD-TRBL",
+       "level": 5
+      },
+      {
+       "id": "FL-CORR",
+       "level": 5
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** faults happen in every kitchen, usually at the worst moment. Diagnosing fast by the senses and rescuing quietly, so guests never notice, is what separates a trained cook from a recipe follower."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** a household member willing to introduce faults without warning; household meals for three sessions, the third for guests; spare stock, a pasteurised yolk, starch, a clean pan; a camera for before and after photos."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*The clinic.* A household member introduces a fault mid-cook without warning: too much salt, a split sauce, overcooking, too much acid, or a burnt base (`FLV-3.M6.L1`, `SAU-2.M7.L1`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Diagnose by the senses first.* Taste, look, smell; then the cause from the science; then the fix or a reasoned restart."
+      },
+      {
+       "type": "paragraph",
+       "text": "*The rescues:*"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Rescue",
+        "Never"
+       ],
+       "rows": [
+        [
+         "Over-salted",
+         "Dilute with unsalted liquid or more of the main ingredient; add fat or starch to carry it",
+         "Sugar or acid: they don't remove salt"
+        ],
+        [
+         "Split emulsion",
+         "A fresh pasteurised yolk or a spoon of water; whisk the broken sauce in slowly",
+         "A raw unpasteurised yolk in an uncooked sauce"
+        ],
+        [
+         "Overcooked protein",
+         "Sliced thin and sauced, or turned into another dish",
+         "Served as the planned doneness"
+        ],
+        [
+         "Burnt base",
+         "Moved at once to a clean pan without scraping; tasted",
+         "Stirred in"
+        ],
+        [
+         "Too much acid",
+         "Rounded with fat or a little sweetness, or diluted with more of the main ingredient (`FLV-3.M6.L1`)",
+         "Served without tasting again"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Guests unaware.* The rescue is fast and quiet, and the dish is served without apology when it meets the standard."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Fault one (45 min).** A meal with one fault introduced; diagnosed, rescued and logged with before and after photos."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Fault two (45 min).** Another fault in another dish."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "**Fault three (45 min).** A fault while cooking for guests, who aren't told."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "the diagnosis names the fault and its cause within a minute;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "the rescued dish passes the household's or the guests' card."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "The salt is still there under sweetness",
+         "Masked with sugar or acid",
+         "Dilute or carry it with fat or starch"
+        ],
+        [
+         "The rest of the meal is lost",
+         "The rescue took too long",
+         "Decide within a minute: rescue or a reasoned restart"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** a split mayonnaise or warm egg sauce is rescued with a pasteurised yolk, for every guest (assessment §9). A rescued protein still meets its §9 row."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** for each fault, the time noticed, the diagnosis, the cause, the fix, before and after photos, and the cards."
+      }
+     ]
+    },
+    {
+     "id": "IND-5.M6.L2",
+     "title": "Doneness by the senses",
+     "prerequisites": [
+      "PRO-4.M6.L1"
+     ],
+     "competencies": [
+      {
+       "id": "JD-CUES",
+       "level": 5
+      },
+      {
+       "id": "FL-SENS",
+       "level": 5
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** an experienced cook knows a dish is done before the probe confirms it. Writing a prediction and then measuring turns the senses into a calibrated instrument, while the reading still decides what is served."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** a roast or several pieces of protein; vegetables; a loaf; a baked custard and a stirred one; the probe; a log with columns for prediction, reading, difference and tolerance."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*The senses first.* The cues for each family (`PRO-4.M6.L1`, `JD-CUES`):"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**proteins:** the press, the colour of the juices, the shrinkage;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**vegetables:** the knife's resistance and the colour;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**breads:** the hollow sound, the crust colour, the weight;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**custards:** the wobble and the coating of the spoon."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*The prediction.* Before any instrument, write the doneness and the estimated reading."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Then verify.* The probe or thermometer, every time. For a §9 food (poultry, minced meat, fish, custard), the reading decides whether it is served, whatever the senses said."
+      },
+      {
+       "type": "paragraph",
+       "text": "*The log:*"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Food",
+        "Prediction",
+        "Reading",
+        "Difference",
+        "Tolerance",
+        "Within?"
+       ],
+       "rows": [
+        [
+         "Chicken thigh",
+         "Done, about 75 °C",
+         "69 °C",
+         "6 degrees under",
+         "±3 °C",
+         "No: cooked on to 75 °C"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "The tolerance depends on the technique: ±3 °C for a protein, for example (the `JD-CUES` framework row)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Proteins (45 min).** A roast or several pieces; predictions, then readings."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Vegetables and breads (45 min).** Predictions, then knife and probe checks; a loaf judged by sound and weight, then its core."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "**Custards (45 min).** A baked custard and a stirred one, by wobble and spoon, then the probe against 71 °C."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "at least 8 of 10 predictions within tolerance;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "no §9 food served on the senses alone."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Predictions that are always right",
+         "The probe read before the prediction was written",
+         "Write first, every time"
+        ],
+        [
+         "A low reading overruled",
+         "A good guess trusted",
+         "The reading decides"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** poultry to 75 °C, minced meat to 75 °C, fish and intact meat to 63 °C for 15 seconds, and egg-thickened desserts kept for later to 71 °C in every part (assessment §9), whatever the senses said."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the prediction log; the count within tolerance; the readings that decided a dish."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "IND-5.M6.X1",
+     "title": "Rescue clinic and doneness predictions",
+     "description": "The rescue clinic (three faults) and a doneness prediction log (ten predictions).",
+     "competencies": [
+      {
+       "id": "JD-TRBL",
+       "level": 5
+      },
+      {
+       "id": "FL-CORR",
+       "level": 5
+      },
+      {
+       "id": "JD-CUES",
+       "level": 5
+      },
+      {
+       "id": "FL-SENS",
+       "level": 5
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** diagnose and rescue fast under pressure, and judge doneness by the senses, checked by instruments:"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "the rescue clinic: three faults introduced by a household member, the third while cooking for guests;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "a doneness prediction log: ten predictions across proteins, vegetables, breads and custards."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "Retake the salt and acid tests (assessment §5.1–5.2), so that two passes in S5 stand behind your sensory evidence. Write a short guide to the faults of one technique, and a short guide to the cues of one technique."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** household meals for the clinic; proteins, vegetables, a loaf and a custard for the predictions; the probe; the salt and acid test sets."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Procedure:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "Clinic: for each fault, log the time it was noticed, the diagnosis, the cause, the fix, and before and after photos; collect cards."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "Predictions: write each prediction, then take the reading; log the difference."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "Retake the salt and acid tests."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "Write the two guides."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`JD-TRBL` level 5, recoveries one to three:** three faults diagnosed and recovered, one for guests who were unaware, and the guide. The capstone log completes the row (`CAP-5.R12`)."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`FL-CORR` level 5, in part:** faults caught and fixed during cooking, under time pressure and for guests, and the guide. The capstone service completes the row (`CAP-5.R7`)."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`JD-CUES` level 5, in part:** ten predictions, at least 8 within tolerance, and the guide. Further entries come from `IND-5.M2.X1`, `IND-5.M5.X1` and `RDV-5.M2.X1`; the capstone main completes the twenty."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`FL-SENS` level 5, the calibration:** the salt and acid tests passed again, so that calibration holds over the 8 weeks of S5. The triangle test and the tasting guide are in `RDV-5.M3.X1`."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "AI review reads the clinic log, the photos, the prediction log, the test results and the guides: *competent* is each fault named with its cause within a minute and rescued to the cards' standard, at least 8 of 10 predictions within tolerance with every prediction written before its reading, and both tests passed; *not yet* is salt masked with sugar, a §9 food served on the senses alone, or a failed test."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 4.5 h over six sessions, plus the guides."
+      }
+     ]
+    }
+   ],
+   "items": [
+    {
+     "id": "IND-5.M6.Q1",
+     "type": "SCENARIO",
+     "lessonId": "IND-5.M6.L1",
+     "safety": false,
+     "question": "A soup is clearly over-salted ten minutes before serving. What do you do?",
+     "options": [],
+     "answer": "Dilute with unsalted stock or more of the main vegetable puréed in, or add a starch or fat to carry it; taste again. Sugar or acid won't remove the salt.",
+     "why": "Salt is diluted, not masked."
+    },
+    {
+     "id": "IND-5.M6.Q2",
+     "type": "SCENARIO",
+     "lessonId": "IND-5.M6.L1",
+     "safety": true,
+     "question": "A mayonnaise splits just before guests arrive. How do you rescue it?",
+     "options": [],
+     "answer": "Whisk the broken sauce slowly into a fresh pasteurised yolk (or a spoon of water); every yolk in an uncooked sauce is pasteurised, for every guest (assessment §9).",
+     "why": "Rescue within §9."
+    },
+    {
+     "id": "IND-5.M6.Q3",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "IND-5.M6.L1",
+     "safety": false,
+     "question": "The base of a stew has caught and burnt. What first?",
+     "options": [
+      {
+       "key": "A",
+       "text": "stir it in"
+      },
+      {
+       "key": "B",
+       "text": "move the stew to a clean pan at once without scraping, then taste"
+      },
+      {
+       "key": "C",
+       "text": "add sugar"
+      },
+      {
+       "key": "D",
+       "text": "add more liquid"
+      }
+     ],
+     "answer": "B",
+     "why": "Scraping spreads the burnt taste."
+    },
+    {
+     "id": "IND-5.M6.Q4",
+     "type": "SCENARIO",
+     "lessonId": "IND-5.M6.L1",
+     "safety": false,
+     "question": "A duck breast is overcooked for the guests' course. What are your options?",
+     "options": [],
+     "answer": "Not served as the planned doneness: sliced thin and sauced, or turned into another dish (a salad or a ragù); the menu adjusted quietly.",
+     "why": "Overcooking can't be undone."
+    },
+    {
+     "id": "IND-5.M6.Q5",
+     "type": "SCENARIO",
+     "lessonId": "IND-5.M6.L2",
+     "safety": true,
+     "question": "Your press test says a chicken thigh is done; the probe says 69 °C. What do you do?",
+     "options": [],
+     "answer": "Cook on until 75 °C at the core (assessment §9) and note the difference in the log; the reading decides, not the press.",
+     "why": "Verify, then serve."
+    },
+    {
+     "id": "IND-5.M6.Q6",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "IND-5.M6.L2",
+     "safety": false,
+     "question": "When do you write the doneness prediction?",
+     "options": [
+      {
+       "key": "A",
+       "text": "after the reading"
+      },
+      {
+       "key": "B",
+       "text": "before any instrument is used"
+      },
+      {
+       "key": "C",
+       "text": "only for proteins"
+      },
+      {
+       "key": "D",
+       "text": "never"
+      }
+     ],
+     "answer": "B",
+     "why": "Otherwise the log measures nothing."
+    },
+    {
+     "id": "IND-5.M6.Q7",
+     "type": "SCENARIO",
+     "lessonId": "IND-5.M6.L2",
+     "safety": true,
+     "question": "A stirred custard coats the spoon nicely, but you haven't probed it. It will be kept for tomorrow. What do you do?",
+     "options": [],
+     "answer": "Probe it: every part to at least 71 °C (assessment §9), then cool by the cooling rule and keep it in the fridge.",
+     "why": "Egg-thickened desserts kept for later."
+    },
+    {
+     "id": "IND-5.M6.Q8",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "IND-5.M6.L2",
+     "safety": false,
+     "question": "A loaf sounds hollow, but it feels heavy for its size. What does that suggest?",
+     "options": [
+      {
+       "key": "A",
+       "text": "done"
+      },
+      {
+       "key": "B",
+       "text": "possibly underbaked inside: check the core"
+      },
+      {
+       "key": "C",
+       "text": "overproofed"
+      },
+      {
+       "key": "D",
+       "text": "too much salt"
+      }
+     ],
+     "answer": "B",
+     "why": "Two cues disagree, so verify."
+    }
+   ]
+  }
+ ]
+}

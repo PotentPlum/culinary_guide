@@ -1,0 +1,1948 @@
+{
+ "schemaVersion": 1,
+ "id": "NUT-3",
+ "introduction": [
+  {
+   "type": "paragraph",
+   "text": "**Before you start.** A cook who feeds a household and guests needs to know three things: what a balanced meal is, how to adapt a dish for someone who eats differently, and how to cook for someone with an allergy without putting them at risk. This course is applied. It doesn't teach dietetics; it teaches cooking decisions:"
+  },
+  {
+   "type": "list",
+   "items": [
+    {
+     "level": 0,
+     "marker": "",
+     "text": "**applied nutrition:** what protein, carbohydrate, fat and fibre do in a dish and for satiety; a balanced plate and a balanced week; what cooking methods do to nutrients;"
+    },
+    {
+     "level": 0,
+     "marker": "",
+     "text": "**adapting to diets:** vegetarian and vegan (replacing the functions of meat, egg and dairy), gluten-free, lactose-free and lower-salt cooking, without losing quality;"
+    },
+    {
+     "level": 0,
+     "marker": "",
+     "text": "**allergens:** the 14 groups of EU Regulation 1169/2011 [S23] in depth, their hidden sources, and a cross-contact plan from shopping to plate for an allergic guest."
+    }
+   ]
+  },
+  {
+   "type": "paragraph",
+   "text": "The reference for a balanced diet in the Netherlands is the Voedingscentrum's *Schijf van Vijf* [S48]. Personal amounts are in the Voedingscentrum's separate tool, not on that page."
+  },
+  {
+   "type": "paragraph",
+   "text": "*No individual advice.* The course gives no medical or dietary advice for individuals. A guest's doctor or dietitian decides what they may eat, and the cook follows it. The guest's word on their allergy decides; the cook doesn't guess."
+  },
+  {
+   "type": "paragraph",
+   "text": "Plan about three weeks, after `VEG-3` and `KMG-3`. The dishes are household meals and one guest dinner. Every item of the allergen check (`NUT-3.M3`) is a safety item, and `MS-S3` tests the 14 groups again in its safety quiz."
+  },
+  {
+   "type": "paragraph",
+   "text": "**Have ready:** the balance checklist and the plate model; last week's plan and journal (`KMG-3`); the tasting forms and household cards; a separate, marked board and spoon for allergen-free dishes (Best: a colour-coded set with a pan); labels and a marker; the phone for photographing labels; the list of the 14 groups (`SAF-1.M4`)."
+  }
+ ],
+ "modules": [
+  {
+   "id": "NUT-3.M1",
+   "title": "Applied nutrition",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** the 8 items of `NUT-3.M1` in the course file. Pass mark 80 %."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "NUT-3.M1.L1",
+     "title": "Macronutrients in cooking",
+     "prerequisites": [
+      "SCI-2.M2.L1"
+     ],
+     "competencies": [
+      {
+       "id": "RD-ADPT",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** protein, carbohydrate, fat and fibre each do a job in the pan and a job on the plate. A cook who knows both can make a dish lighter or more filling without making it worse."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** pasta (white and wholemeal); cream and thick yoghurt; seasonal vegetables (leeks and mushrooms in autumn, courgette in summer); Parmesan-style cheese; the scale; the tasting form, with a line for satiety (\"hungry again after how long?\")."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Protein* (`SCI-2.M2`):"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**on the plate:** it satisfies for longest;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**in cooking:** it sets, binds, browns and holds structure: eggs, meat, legumes, dairy."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Carbohydrate:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**starches** give energy, body and texture: thickening, crisping, the base of a meal;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**sugars** sweeten, brown and preserve."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Fat:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "carries flavour and aroma, because many aroma compounds are fat-soluble;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "gives richness and a satisfying mouthfeel;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "browns and crisps;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "is energy-dense, so the amount matters."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Fibre:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "from vegetables, legumes and whole grains;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "adds bulk and satiety, and slows digestion;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "changes texture: a wholemeal dough behaves differently (`BRD-3.M4`)."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Satiety in a dish.* Protein, fibre and some fat together make a meal satisfying. A plate of only starch, or only vegetables, leaves people hungry soon."
+      },
+      {
+       "type": "paragraph",
+       "text": "*A substitution from a guide.* Change one thing and note its effect on taste and texture:"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "wholemeal pasta for white: nuttier and firmer; note whether it keeps you full for longer;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "yoghurt for some of the cream: lighter and tangier. Yoghurt splits if it boils, so stir it in off the heat."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Fat is not the enemy of a dish.* Removing all of it loses flavour and mouthfeel. Reduce it and keep some, where it is tasted: a spoon of good olive oil on top, rather than a lot in the pan."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**One dish, three ways (60 min).** A pasta dish made three ways: white pasta with a cream sauce; wholemeal pasta with the same sauce; and white pasta with half the cream replaced by yoghurt and more vegetables. Note the satiety and the taste of each on the form."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** you can say what each macronutrient contributes to a dish, in cooking and on the plate."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "A flat, dull \"light\" version",
+         "All the fat removed",
+         "Keep some fat where it is tasted"
+        ],
+        [
+         "Hungry an hour later",
+         "A plate of only starch or only vegetables",
+         "Protein, fibre and some fat together"
+        ],
+        [
+         "A grainy, split sauce",
+         "Yoghurt boiled",
+         "Off the heat; stir in at the end"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** milk (cream, yoghurt, cheese) and gluten (pasta) named for anyone eating; the cream and yoghurt back in the fridge."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the three versions, the taste and satiety notes, and the substitution's effect."
+      }
+     ]
+    },
+    {
+     "id": "NUT-3.M1.L2",
+     "title": "The balanced plate",
+     "prerequisites": [
+      "KMG-3.M1.L1"
+     ],
+     "competencies": [
+      {
+       "id": "CR-COMP",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** a balanced week is mostly small changes to the meals you already cook. Knowing the plate model and what cooking does to nutrients is enough to make them."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** last week's plan and journal (`KMG-3`); the plate model; the *Schijf van Vijf* page [S48]; a dinner plate; the ingredients for one rebuilt meal; a steamer."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*A balanced meal:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "about **half the plate vegetables** (and fruit across the day);"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**a quarter whole grains or potatoes;**"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**a quarter protein:** legumes, fish, eggs, dairy, poultry, meat;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "a modest amount of healthy fats;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "water as the drink."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*The* Schijf van Vijf [S48] frames a balanced week in five sections: vegetables and fruit; wholegrain products and potatoes; water, tea and coffee without sugar; spreadable and liquid fats; and a section that includes unsalted nuts and dairy or fortified alternatives. It asks for mainly plant-based eating, and sustainable fish once a week."
+      },
+      {
+       "type": "paragraph",
+       "text": "*A balanced week* (`KMG-3.M1`): legumes and fish more often; red and processed meat less often; vegetables at every meal; variety across the week."
+      },
+      {
+       "type": "paragraph",
+       "text": "*How cooking methods affect nutrients:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**water-soluble vitamins** (C, several B vitamins) leach into cooking water: steaming, or using the cooking water in a soup, keeps more;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**long cooking and keeping warm** destroy more vitamin C;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**fat-soluble carotenoids** (carrots, pumpkin, tomatoes) are absorbed better with a little fat;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**deep-frying** adds fat; grilling and roasting need little."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Checking a menu.* Hold the week's plan against the plate model and the week guidelines. Make one or two changes, not a rebuild: a vegetable side added to Tuesday; Thursday's sausages swapped for a lentil dish; Friday's chips roasted instead of fried. A tomato sauce counts towards vegetables; a spoon of ketchup does not."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Check a week (60 min).** Last week's meals checked against the plate model; one meal rebuilt and plated, with half the plate vegetables, steamed or roasted."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** a menu check that names specific, small changes."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Soft, grey vegetables, the water poured away",
+         "Boiled long",
+         "Steam, or use the water in a soup"
+        ],
+        [
+         "The plan \"has vegetables\" every day",
+         "Ketchup or a garnish counted",
+         "Count real portions; half the plate"
+        ],
+        [
+         "Nobody follows the new plan",
+         "The whole week rebuilt",
+         "One or two changes a week"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** no advice for individuals: a guest's or household member's diet set by a doctor or dietitian is followed as given."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the week's check, the changes, and the photo of the rebuilt plate."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "NUT-3.M1.X1",
+     "title": "Last week's meals reviewed for balance",
+     "description": "Review last week's meals for balance; adjust next week's plan.",
+     "competencies": [
+      {
+       "id": "RD-ADPT",
+       "level": 2
+      },
+      {
+       "id": "CR-COMP",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** review real meals for balance, and adjust next week's plan with small, tasty changes. Review last week's meals. For three composed dishes, name their parts and what each contributes to flavour, texture and nutrition. Plate one from the framework. Adjust next week's plan, with one substitution from a guide and its effect noted."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** last week's plan and journal; next week's plan; the balance checklist; the plate model; the ingredients for the plated dish and the substitution; the tasting form."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Framework:** the balance review."
+      },
+      {
+       "type": "table",
+       "header": [
+        "Part",
+        "What it is",
+        "Your decisions"
+       ],
+       "rows": [
+        [
+         "Review",
+         "Last week against the checklist and the plate model",
+         "—"
+        ],
+        [
+         "Three dishes",
+         "Each part named with what it contributes",
+         "Which dishes"
+        ],
+        [
+         "Contributions",
+         "Flavour, texture, nutrition",
+         "—"
+        ],
+        [
+         "Plated dish",
+         "Half vegetables, a quarter grains, a quarter protein",
+         "Which dish"
+        ],
+        [
+         "Adjustments",
+         "One or two small changes to next week",
+         "Which"
+        ],
+        [
+         "Substitution",
+         "From a guide; effect on taste and texture noted",
+         "Which"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Procedure:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "Review last week against the checklist."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "For three dishes, name each part and what it contributes."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "Plate one dish from the framework; photograph."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "Adjust next week's plan; make the substitution and note its effect."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`CR-COMP` level 2:** the parts of three composed dishes named with what each contributes; one plated from the framework."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`RD-ADPT` level 2:** a substitution from a guide with the effect noted."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "AI review reads the review, the photo and the notes: *competent* is three dishes with every part's contribution named, a plate that follows the model, and a substitution with its effect; *not yet* is a review without specific changes, or a substitution with no effect noted."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 1.5 h."
+      }
+     ]
+    }
+   ],
+   "items": [
+    {
+     "id": "NUT-3.M1.Q1",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "NUT-3.M1.L1",
+     "safety": false,
+     "question": "Which nutrient satisfies for longest?",
+     "options": [
+      {
+       "key": "A",
+       "text": "sugar"
+      },
+      {
+       "key": "B",
+       "text": "protein"
+      },
+      {
+       "key": "C",
+       "text": "water"
+      },
+      {
+       "key": "D",
+       "text": "salt"
+      }
+     ],
+     "answer": "B",
+     "why": "Satiety."
+    },
+    {
+     "id": "NUT-3.M1.Q2",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "NUT-3.M1.L1",
+     "safety": false,
+     "question": "Why does a fat-free sauce often taste flat?",
+     "options": [
+      {
+       "key": "A",
+       "text": "no salt"
+      },
+      {
+       "key": "B",
+       "text": "many aroma compounds dissolve in fat, which carries them"
+      },
+      {
+       "key": "C",
+       "text": "no sugar"
+      },
+      {
+       "key": "D",
+       "text": "it is too thick"
+      }
+     ],
+     "answer": "B",
+     "why": "Fat carries flavour."
+    },
+    {
+     "id": "NUT-3.M1.Q3",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "NUT-3.M1.L1",
+     "safety": false,
+     "question": "What does fibre add to a meal?",
+     "options": [
+      {
+       "key": "A",
+       "text": "nothing"
+      },
+      {
+       "key": "B",
+       "text": "bulk and satiety, and texture"
+      },
+      {
+       "key": "C",
+       "text": "sweetness"
+      },
+      {
+       "key": "D",
+       "text": "fat"
+      }
+     ],
+     "answer": "B",
+     "why": "Fibre's role."
+    },
+    {
+     "id": "NUT-3.M1.Q4",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "NUT-3.M1.L1",
+     "safety": false,
+     "question": "What does protein do in a fritter?",
+     "options": [
+      {
+       "key": "A",
+       "text": "sweetens"
+      },
+      {
+       "key": "B",
+       "text": "binds and sets"
+      },
+      {
+       "key": "C",
+       "text": "thins"
+      },
+      {
+       "key": "D",
+       "text": "nothing"
+      }
+     ],
+     "answer": "B",
+     "why": "Protein in cooking."
+    },
+    {
+     "id": "NUT-3.M1.Q5",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "NUT-3.M1.L2",
+     "safety": false,
+     "question": "In the plate model, about how much of the plate is vegetables?",
+     "options": [
+      {
+       "key": "A",
+       "text": "a quarter"
+      },
+      {
+       "key": "B",
+       "text": "about half"
+      },
+      {
+       "key": "C",
+       "text": "none"
+      },
+      {
+       "key": "D",
+       "text": "all"
+      }
+     ],
+     "answer": "B",
+     "why": "The balanced plate."
+    },
+    {
+     "id": "NUT-3.M1.Q6",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "NUT-3.M1.L2",
+     "safety": false,
+     "question": "How do you keep more vitamin C in green vegetables?",
+     "options": [
+      {
+       "key": "A",
+       "text": "boil long"
+      },
+      {
+       "key": "B",
+       "text": "steam them, or use the cooking water"
+      },
+      {
+       "key": "C",
+       "text": "keep them warm for an hour"
+      },
+      {
+       "key": "D",
+       "text": "add baking soda"
+      }
+     ],
+     "answer": "B",
+     "why": "Water-soluble vitamins."
+    },
+    {
+     "id": "NUT-3.M1.Q7",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "NUT-3.M1.L2",
+     "safety": false,
+     "question": "Why add a little fat to carrots?",
+     "options": [
+      {
+       "key": "A",
+       "text": "for colour only"
+      },
+      {
+       "key": "B",
+       "text": "carotenoids are absorbed better with fat"
+      },
+      {
+       "key": "C",
+       "text": "to cook faster"
+      },
+      {
+       "key": "D",
+       "text": "no reason"
+      }
+     ],
+     "answer": "B",
+     "why": "Fat-soluble nutrients."
+    },
+    {
+     "id": "NUT-3.M1.Q8",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "NUT-3.M1.L2",
+     "safety": false,
+     "question": "Which change makes a week more balanced?",
+     "options": [
+      {
+       "key": "A",
+       "text": "more processed meat"
+      },
+      {
+       "key": "B",
+       "text": "legumes and fish more often, vegetables at every meal"
+      },
+      {
+       "key": "C",
+       "text": "fewer vegetables"
+      },
+      {
+       "key": "D",
+       "text": "the same dish daily"
+      }
+     ],
+     "answer": "B",
+     "why": "A balanced week."
+    }
+   ]
+  },
+  {
+   "id": "NUT-3.M2",
+   "title": "Adapting to diets",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** none for this module. Its judgment, what to tell guests, is shown in the adaptations and notes of `NUT-3.M2.X1`; the allergen items follow in `NUT-3.M3`."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "NUT-3.M2.L1",
+     "title": "Vegetarian and vegan",
+     "prerequisites": [
+      "VEG-3.M4.L1"
+     ],
+     "competencies": [
+      {
+       "id": "RD-ADPT",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** a meat dish with the meat taken out is a dish with a hole in it. Asking what the meat, egg or dairy did, and replacing that, gives a dish that is good on its own terms."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** a meat dish the household likes (a *ragù*, a stew, a shepherd's pie); legumes, tofu or tempeh; mushrooms, miso, soy, tomato paste, *kombu*; olive oil, tahini, white beans or cauliflower; a vegetable stock (`STK-2`); the tasting form; the household cards."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Replacing functions, not ingredients.* Ask what the meat, egg or dairy does in the dish, then replace that function:"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**protein and substance:** legumes, tofu, tempeh; eggs and cheese (vegetarian); seitan (wheat gluten, so not for gluten-free guests);"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**umami and depth:** mushrooms, miso, soy, tomato paste, seaweed, browned onions (`FLV-3.M3`);"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**binding** (egg): a flax or chia \"egg\", aquafaba (chickpea water), starch, mashed legumes;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**richness** (butter, cream): olive oil, plant creams, tahini, coconut milk, a purée of white beans or cauliflower;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**stock:** a vegetable stock with mushrooms and *kombu* (`STK-2`)."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*An example: a* ragù:"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "the minced beef gave substance and browning: brown lentils, and mushrooms chopped fine and browned hard;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "it gave umami: tomato paste fried until dark, a spoon of miso;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "the butter or milk gave richness: olive oil (vegan), or butter kept (vegetarian)."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Hidden animal products.* Read the labels for:"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "gelatine (`PST-3.M4`);"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "fish sauce and anchovy (in Worcestershire sauce too);"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "meat stock;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "rennet in some cheeses;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "lard in pastry;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "honey, for vegans."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Vegan baking.* Egg and butter do several jobs at once in a bake (structure, rising, moisture, browning). A straight swap often fails; use a tested vegan formula."
+      },
+      {
+       "type": "paragraph",
+       "text": "*New allergens.* Some replacements bring allergens of their own: soy (tofu, tempeh, miso), sesame (tahini), gluten (seitan), lupin (some plant products). Name them."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**A vegetarian version (60 min).** A meat dish adapted to vegetarian, with its functions replaced; compared with the original."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**A vegan version (75 min).** The same dish adapted further to vegan; compared by the household."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** the adapted dish has the depth, richness and texture of the original."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Thin and bland",
+         "The meat removed and nothing added",
+         "Replace substance, umami and richness"
+        ],
+        [
+         "Not vegetarian after all",
+         "Meat stock in the soup",
+         "Vegetable stock; check stock cubes"
+        ],
+        [
+         "Not vegan after all",
+         "Gelatine in the dessert",
+         "A plant-based setter, by a tested recipe"
+        ],
+        [
+         "A dense, flat vegan cake",
+         "A straight swap for egg and butter",
+         "A tested vegan formula"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** the new allergens in the replacements (soy, sesame, gluten, lupin) named for guests."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the function table for the dish, the two versions, and the household's comparison."
+      }
+     ]
+    },
+    {
+     "id": "NUT-3.M2.L2",
+     "title": "Gluten-free, lactose-free and lower salt",
+     "prerequisites": [
+      "NUT-3.M2.L1"
+     ],
+     "competencies": [
+      {
+       "id": "RD-ADPT",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** each of these adaptations has a technique, and each has a hidden trap. What you tell the guest afterwards must match what you actually did."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** cornflour, potato or rice starch; a gluten-free flour blend and a tested formula; lactose-free milk and cream; aged Gouda or Parmesan; a soup recipe; lemons, herbs, spices, mushrooms or miso; the labels of your stock cubes, soy sauce and spice blends; the tasting forms."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Gluten-free:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**thickening** with cornflour, potato or rice starch instead of a flour *roux*: mixed with cold liquid first, stirred in, brought to the simmer;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**baking** with gluten-free flour blends by a tested formula: the structure comes from starches, eggs and gums;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**hidden gluten:** soy sauce (tamari is usually gluten-free; check the label), stock cubes, breadcrumbs, beer, malt, spice blends;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**oats** only if labelled gluten-free;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "for **coeliac guests,** gluten is also a cross-contact risk, handled like an allergen (`NUT-3.M3`)."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Lactose-free:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "lactose-free milk and cream behave like the normal ones in cooking;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "aged hard cheeses (old Gouda, Parmesan) are naturally very low in lactose;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "butter contains little."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "A milk *allergy* is different: every milk protein is excluded, including butter and aged cheese (`NUT-3.M3`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Lower salt:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "reduce gradually: taste adapts within weeks;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "build flavour with acid, herbs, spices, umami and browning;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "salt at the end, on the surface, where it is tasted most;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "count the salt in stock cubes, soy, cheese and cured meats."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*What to tell guests.* Say what the dish contains and what was replaced, clearly, and don't promise more than you did. \"Made without gluten-containing ingredients, in a kitchen that also uses flour\" is honest. \"It's gluten-free\" is not, for a coeliac guest, if it was cooked next to flour."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Gluten-free and lactose-free (75 min).** A sauce thickened without flour, and a gratin made lactose-free; each compared with the original."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Lower salt (45 min).** A soup made with a third less salt, built up with acid, herbs and umami; tasted blind against the original."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** a gluten-free sauce with the same body; a lower-salt soup the tasters don't call flat."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Gluten in a \"gluten-free\" dish",
+         "Ordinary soy sauce or a stock cube",
+         "Read every label; tamari checked"
+        ],
+        [
+         "A coeliac guest misled",
+         "\"Gluten-free\" said of a dish cooked next to flour",
+         "Say exactly what was done"
+        ],
+        [
+         "A flat, lower-salt soup",
+         "The salt simply left out",
+         "Add acid, herbs, umami; salt on the surface"
+        ],
+        [
+         "Lumps in the starch-thickened sauce",
+         "Starch added to hot liquid dry",
+         "Mix with cold liquid first"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** gluten and milk are allergen groups: for a coeliac guest or a milk allergy, the cross-contact plan of `NUT-3.M3` applies, not just the substitution."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the comparisons, the blind tasting of the soup, and the words you would use for a guest."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "NUT-3.M2.X1",
+     "title": "One favourite dish adapted to two diets",
+     "description": "Adapt one of your favourite dishes to two different diets.",
+     "competencies": [
+      {
+       "id": "RD-ADPT",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** adapt a favourite dish to two diets, keeping its quality."
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**The brief:** one of your favourite dishes adapted to two different diets, for example vegan and gluten-free, or vegetarian and lower-salt."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**The constraints:** at least three substitutions reasoned from the ingredient's function, with the effect predicted in writing."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**The criteria:** the original and both adaptations tasted by the household, who compare them on cards."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**The record:** the function analysis, the predictions, the cards, and each prediction confirmed or refuted."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** the dish's ingredients and the substitutes, with their labels; the tasting forms; the household cards."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Procedure:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "Analyse the dish: what each ingredient does (substance, umami, binding, richness, thickening, seasoning)."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "Plan the two adaptations; predict each substitution's effect in writing."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "Cook the original and the two adaptations; collect the household cards."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "Confirm or refute each prediction."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`RD-ADPT` level 3:** three substitutions reasoned from function, the effect predicted in writing and confirmed. This meets the `RD-ADPT` level 3 row, as `SLW-3.M4.X1` did for ingredients in a braise."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "AI review reads the analysis, the predictions and the cards: *competent* is three substitutions each tied to a function, predictions written before cooking and checked against the cards, and adaptations the household rates close to the original; *not yet* is substitutions without a stated function, or predictions written after the tasting."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 2.5 h."
+      }
+     ]
+    }
+   ],
+   "items": []
+  },
+  {
+   "id": "NUT-3.M3",
+   "title": "Allergens",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** the 8 items of `NUT-3.M3` in the course file, 8 of them safety items. Pass mark 80 %, with every safety item correct; since every item is a safety item, the check is passed only with all 8 correct."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "NUT-3.M3.L1",
+     "title": "The 14 allergens in depth",
+     "prerequisites": [
+      "SAF-1.M4.L1"
+     ],
+     "competencies": [
+      {
+       "id": "SA-ALLG",
+       "level": 4
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** most allergen mistakes come from an ingredient nobody thought of: the celery in a stock cube, the fish in Worcestershire sauce. Reading labels well is the first line of defence."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** ten products from your pantry (stock cubes, soy sauce, a spice blend, mayonnaise, pesto, bread, sausages, dried fruit, a sauce, a biscuit); the list of the 14 groups; the phone for photos; a notebook."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*The 14 groups* (EU Regulation 1169/2011, Annex II [S23], `SAF-1.M4`):"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "cereals containing gluten;"
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "crustaceans;"
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "eggs;"
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "fish;"
+        },
+        {
+         "level": 0,
+         "marker": "5.",
+         "text": "peanuts;"
+        },
+        {
+         "level": 0,
+         "marker": "6.",
+         "text": "soybeans;"
+        },
+        {
+         "level": 0,
+         "marker": "7.",
+         "text": "milk;"
+        },
+        {
+         "level": 0,
+         "marker": "8.",
+         "text": "tree nuts;"
+        },
+        {
+         "level": 0,
+         "marker": "9.",
+         "text": "celery;"
+        },
+        {
+         "level": 0,
+         "marker": "10.",
+         "text": "mustard;"
+        },
+        {
+         "level": 0,
+         "marker": "11.",
+         "text": "sesame;"
+        },
+        {
+         "level": 0,
+         "marker": "12.",
+         "text": "sulphites (above a threshold);"
+        },
+        {
+         "level": 0,
+         "marker": "13.",
+         "text": "lupin;"
+        },
+        {
+         "level": 0,
+         "marker": "14.",
+         "text": "molluscs."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Hidden sources:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**sauces and condiments:** soy sauce (soy, wheat), Worcestershire sauce (fish), mayonnaise (egg, mustard), pesto (nuts, milk), *romesco* (nuts);"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**stocks and bouillon:** celery, milk, gluten;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**spice mixes:** mustard, celery, gluten as a carrier;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**processed foods:** milk in sausages and bread, egg in pasta, sesame in breads, lupin flour in some baked goods, sulphites in dried fruit and wine."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Labels:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "the 14 groups are emphasised in the ingredients list, for example in bold;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "\"may contain\" warnings are voluntary, but for a severe allergy they count;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "a maker can change a recipe, so a product needs a new check each time it is bought for an allergic guest. Last year's label is not this year's."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Labelling for guests.* A menu card, or a word at the table, that names the allergens in each dish. Name the group (\"tree nuts: walnut\") rather than a vague \"nuts\"."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**A label hunt (60 min).** Ten pantry products read for the 14 groups and their hidden sources. Then a dish's ingredient labels photographed and its allergens listed."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** you find every allergen on ten labels."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "An allergen missed",
+         "Only the front of the pack read",
+         "Read the ingredients list; look for the emphasis"
+        ],
+        [
+         "A reaction from traces",
+         "\"May contain\" ignored for a severe allergy",
+         "It counts; choose another product"
+        ],
+        [
+         "A changed recipe missed",
+         "Last year's label trusted",
+         "Check the label at every purchase"
+        ],
+        [
+         "Celery missed in a soup",
+         "The stock cube not read",
+         "Read every component, stock included"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** every item of this module's check is a safety item; for a guest, the guest's word on the allergy decides."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the ten labels with their allergens, the photos of the dish's labels, and the dish's allergen list."
+      }
+     ]
+    },
+    {
+     "id": "NUT-3.M3.L2",
+     "title": "Cooking for an allergic guest",
+     "prerequisites": [
+      "NUT-3.M3.L1"
+     ],
+     "competencies": [
+      {
+       "id": "SA-ALLG",
+       "level": 4
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** for an allergic guest, a trace on a shared spoon can be enough. A written plan from shopping to plate removes the chances for that to happen, and makes the guest's dish as good as the others."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** the cross-contact plan template and checklist; a guest with a stated allergy (real or role-played, for example milk or celery); the menu's ingredients; a separate, marked board and spoon (Best: a colour-coded set and a pan); labels and cling film; the phone for label photos."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Ask first:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "the allergen;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "how severe: traces, or only ingredients;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "what the guest usually does."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "The guest's word decides; the cook doesn't guess."
+      },
+      {
+       "type": "paragraph",
+       "text": "*The cross-contact plan, from shopping to plate:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**menu:** the whole meal free of the allergen where possible, so nothing can be mixed up. Otherwise, the guest's dish designed to be as good as the others;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**shopping:** every ingredient's label read and photographed; no product with a \"may contain\" warning for a severe allergy;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**storage:** the guest's ingredients kept apart and labelled;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**preparation:** the guest's dish first, on cleaned surfaces with washed tools, pans and boards; hands washed; no shared oil, spoons or tasting spoons;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**cooking and serving:** covered, labelled, plated first and served first; no garnish from a shared bowl;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**communication:** the guest told what is in each dish."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*An example, for a milk allergy.* A whole meal without milk: a celeriac soup finished with olive oil; a chicken roasted with herbs and potatoes in oil; a pear poached in wine. Nothing to mix up, and nobody's dish is the \"special\" one."
+      },
+      {
+       "type": "paragraph",
+       "text": "*If something goes wrong.* A dish that may be contaminated is not served: it is made again, or replaced. Picking the allergen off a plate does not remove it. For a reaction: the guest's own plan (their medication), and call 112."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Plan (60 min).** A cross-contact plan written for a guest with a stated allergy, checked against the checklist."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Cook (2 h).** The meal cooked by the plan; the guest's dish and the others tasted by the household."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** every step of the plan done in order; the guest's dish as good as the others."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "The allergen picked off a plate",
+         "A mistake \"rescued\"",
+         "Not served; make it again"
+        ],
+        [
+         "Cross-contact between pots",
+         "The same spoon for both",
+         "A marked spoon for the guest's pot"
+        ],
+        [
+         "Celery in the \"safe\" soup",
+         "A stock cube nobody checked",
+         "Every label read and photographed"
+        ],
+        [
+         "A dull \"special\" plate",
+         "The guest's dish an afterthought",
+         "The whole meal allergen-free where possible"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** the guest's dish prepared first, with washed tools; no shared oil or tasting spoons; any doubt means the dish is not served; 112 for a reaction."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the plan, the label photos, the log of each step, and the tasters' comparison."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "NUT-3.M3.X1",
+     "title": "A dinner plan for a guest with a stated allergy",
+     "description": "A dinner plan for a guest with a stated allergy, with a cross-contact plan.",
+     "competencies": [
+      {
+       "id": "SA-ALLG",
+       "level": 4
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** cook a dinner for a guest with an allergy, safely and well."
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**The brief:** a menu for a real or role-played guest with a stated allergen (one of the 14 groups)."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**The constraints:** an allergen plan from shopping to plate; every ingredient's label photographed; separate tools in the plan."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**The criteria:** the plan reviewed against the checklist; any safety item failed means a resit."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**The extension:** the dinner cooked by the plan, and the tasters judging the guest's dish as good as the others."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**The record:** the guest's answers, the menu, the plan, the label photos, the checklist, the step log and the cards."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** the menu's ingredients, checked; clean, separate tools; the plan template and checklist; labels; the phone; the tasters' cards."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Procedure:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "Ask about the allergy; write the menu and the plan."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "Shop; photograph every label; review the plan against the checklist."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "Cook by the plan; log each step."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "Serve; the tasters compare the guest's dish with the others."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`SA-ALLG` level 4:** a menu for a guest with an allergen: an allergen plan from shopping to plate, labels photographed, separate tools; the guest's dish as good as the others. This meets the `SA-ALLG` level 4 row."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "AI review reads the plan against the checklist, the label photos and the log: *competent* is every step of the plan present and logged in order, every label photographed, separate tools named, and a guest's dish the tasters rate as good as the others; *not yet* is any checklist safety item missing, which means a resit."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 3 h plus the dinner."
+      }
+     ]
+    }
+   ],
+   "items": [
+    {
+     "id": "NUT-3.M3.Q1",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "NUT-3.M3.L1",
+     "safety": true,
+     "question": "Which is one of the 14 EU allergen groups?",
+     "options": [
+      {
+       "key": "A",
+       "text": "tomato"
+      },
+      {
+       "key": "B",
+       "text": "celery"
+      },
+      {
+       "key": "C",
+       "text": "garlic"
+      },
+      {
+       "key": "D",
+       "text": "onion"
+      }
+     ],
+     "answer": "B",
+     "why": "Annex II of Regulation 1169/2011 [S23]."
+    },
+    {
+     "id": "NUT-3.M3.Q2",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "NUT-3.M3.L1",
+     "safety": true,
+     "question": "Which product may hide fish?",
+     "options": [
+      {
+       "key": "A",
+       "text": "ketchup"
+      },
+      {
+       "key": "B",
+       "text": "Worcestershire sauce"
+      },
+      {
+       "key": "C",
+       "text": "mustard"
+      },
+      {
+       "key": "D",
+       "text": "vinegar"
+      }
+     ],
+     "answer": "B",
+     "why": "It contains anchovy."
+    },
+    {
+     "id": "NUT-3.M3.Q3",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "NUT-3.M3.L1",
+     "safety": true,
+     "question": "Which may hide celery?",
+     "options": [
+      {
+       "key": "A",
+       "text": "olive oil"
+      },
+      {
+       "key": "B",
+       "text": "a stock cube"
+      },
+      {
+       "key": "C",
+       "text": "sugar"
+      },
+      {
+       "key": "D",
+       "text": "rice"
+      }
+     ],
+     "answer": "B",
+     "why": "Stocks and bouillon."
+    },
+    {
+     "id": "NUT-3.M3.Q4",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "NUT-3.M3.L1",
+     "safety": true,
+     "question": "How are the 14 groups shown on an ingredients list?",
+     "options": [
+      {
+       "key": "A",
+       "text": "on the front"
+      },
+      {
+       "key": "B",
+       "text": "emphasised in the list, for example in bold"
+      },
+      {
+       "key": "C",
+       "text": "not at all"
+      },
+      {
+       "key": "D",
+       "text": "only for nuts"
+      }
+     ],
+     "answer": "B",
+     "why": "EU labelling."
+    },
+    {
+     "id": "NUT-3.M3.Q5",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "NUT-3.M3.L2",
+     "safety": true,
+     "question": "A guest has a severe milk allergy. Which butter substitute and which bread do you choose?",
+     "options": [
+      {
+       "key": "A",
+       "text": "any margarine and any bread"
+      },
+      {
+       "key": "B",
+       "text": "a margarine and a bread whose labels show no milk and no \"may contain milk\""
+      },
+      {
+       "key": "C",
+       "text": "butter, a little"
+      },
+      {
+       "key": "D",
+       "text": "lactose-free butter"
+      }
+     ],
+     "answer": "B",
+     "why": "Labels, and lactose-free is not milk-free."
+    },
+    {
+     "id": "NUT-3.M3.Q6",
+     "type": "ORDERING",
+     "lessonId": "NUT-3.M3.L2",
+     "safety": true,
+     "question": "Put in order for an allergic guest's dish: (a) plate and serve it first, covered (b) clean the surfaces and tools (c) read and photograph every label (d) cook the guest's dish first",
+     "options": [],
+     "answer": "c, b, d, a",
+     "why": "From shopping to plate."
+    },
+    {
+     "id": "NUT-3.M3.Q7",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "NUT-3.M3.L2",
+     "safety": true,
+     "question": "You notice the guest's dish was stirred with the spoon from the other pan. What do you do?",
+     "options": [
+      {
+       "key": "A",
+       "text": "serve it anyway"
+      },
+      {
+       "key": "B",
+       "text": "don't serve it; make it again if you can, and tell the guest"
+      },
+      {
+       "key": "C",
+       "text": "pick out visible bits"
+      },
+      {
+       "key": "D",
+       "text": "reheat it"
+      }
+     ],
+     "answer": "B",
+     "why": "A possibly contaminated dish is not served."
+    },
+    {
+     "id": "NUT-3.M3.Q8",
+     "type": "SCENARIO",
+     "lessonId": "NUT-3.M3.L2",
+     "safety": true,
+     "question": "A guest says they are allergic to sesame. What do you ask, and what is the first thing you change in your plan?",
+     "options": [],
+     "answer": "Ask how severe it is (traces or only ingredients) and what they usually do; then check every label for sesame and \"may contain sesame\" (breads, oils, spice mixes, tahini), and plan their dish first with clean tools.",
+     "why": "Ask first, then plan from shopping to plate."
+    }
+   ]
+  }
+ ]
+}

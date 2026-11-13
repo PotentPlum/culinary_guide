@@ -1,0 +1,2020 @@
+{
+ "schemaVersion": 1,
+ "id": "ORI-1",
+ "introduction": [
+  {
+   "type": "paragraph",
+   "text": "**Before you start.** This course teaches no cooking technique yet. It sets up three things every later course uses: a way of working (plan, cook, evaluate, with evidence), a kitchen laid out for that work, and a baseline to measure your progress against. Plan one or two weeks for it. Module 1 and the audit fit into weekday evenings; the diagnostic cook needs a free afternoon. Start the journal on the first day, because every later exercise writes into it."
+  },
+  {
+   "type": "paragraph",
+   "text": "Until you have passed `SAF-1`, the next course, don't cook raw meat, fish or eggs for the program. The diagnostic cook in Module 3 is a dish you already make for your household, cooked as you always do."
+  }
+ ],
+ "modules": [
+  {
+   "id": "ORI-1.M1",
+   "title": "How the program works",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** the 8 items of `ORI-1.M1` in the course file, after both lessons. Pass mark 80 %."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "ORI-1.M1.L1",
+     "title": "Learning to cook, not recipes",
+     "prerequisites": [],
+     "competencies": [
+      {
+       "id": "JD-REFL",
+       "level": 1
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** a recipe gives you one dish, under one set of conditions. This program aims at something that carries over: the ability to get a good result with a different cut, a different pan or less time. This lesson explains how the program measures that ability, so that you know from the first week what to practise and what to record."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** your diary or calendar, and the journal you set up in the next lesson (a notebook is fine for now)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Recipes and competencies.* A recipe is a set of instructions that worked for its writer, in their kitchen, with their ingredients. A competency is what lets you adapt when those conditions change: you know why the onions go in first, what \"golden\" looks like, and what to do when they brown too fast. The program is built on competencies. Recipes are the vehicle, and they thin out as you progress: most S1 exercises come with a full recipe, S3 and S4 give you frameworks (a ratio, a structure, the decisions left to you), and in S5 you cook from a brief alone."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Four dimensions and five levels.* Every competency is described in four dimensions:"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**knowledge** [K]: what you understand;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**skill** [S]: what your hands can do;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**judgment** [J]: what you can decide on your own;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**mastery** [M]: doing it consistently and adapting it."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "Each competency is measured on a scale from 1 to 5:"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Level",
+        "Name",
+        "What it means for you"
+       ],
+       "rows": [
+        [
+         "1",
+         "Awareness",
+         "You recognise and understand it."
+        ],
+        [
+         "2",
+         "Guided execution",
+         "You can do it with instructions."
+        ],
+        [
+         "3",
+         "Independent execution",
+         "You can do it without instructions, with acceptable results."
+        ],
+        [
+         "4",
+         "Adaptation",
+         "You adapt it to new ingredients, equipment or constraints, and can say why."
+        ],
+        [
+         "5",
+         "Mastery",
+         "You do it consistently, diagnose and improve it, and could teach it."
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Evidence.* A level is never reached because you feel ready. It is reached when evidence shows it, and at least part of that evidence must be objective or partly verifiable: a reading, a measurement, a photo against a reference. Your own tasting form or checklist counts, but never on its own. Level 3 needs two demonstrations on different days; level 4 needs three, under at least two different conditions."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Gates.* Each module ends with a check, and each stage ends with a milestone. To move to the next stage, you pass the milestone and reach the stage targets. Up to two competencies may be carried one level short into the next stage, but never a safety competency: those are always closed first."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Your weekly rhythm.* The program assumes 5 to 8 hours a week. Short weekday slots suit theory, drills and write-ups. Lessons with elapsed time (a stock that simmers for hours, a dough that rises, a ferment) need a longer slot, usually at the weekend."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:** theory only (1 h): read this lesson, then draft your weekly schedule in the journal. Give it at least three short slots and one long slot of three hours or more."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** for any lesson in the program, you can say which competency it moves and what evidence will show it."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "You skip the evidence and just cook the recipes",
+         "Treating the program as a recipe collection",
+         "Before each lesson, read which competency it moves; after it, record the evidence it asks for"
+        ],
+        [
+         "Lessons with elapsed time never fit",
+         "A schedule with no slot longer than an hour",
+         "Keep one slot of three hours or more each week"
+        ],
+        [
+         "You count a level as reached because you feel confident",
+         "Taking a self-score as enough",
+         "Add the objective evidence the level asks for: a reading, a measurement or a photo against a reference"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** no cooking in this lesson."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the draft weekly schedule, on the first page of the journal."
+      }
+     ]
+    },
+    {
+     "id": "ORI-1.M1.L2",
+     "title": "The kitchen journal",
+     "prerequisites": [],
+     "competencies": [
+      {
+       "id": "JD-REFL",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** the journal is where your evidence lives. Every exercise in the program ends with an entry, and the milestones are judged from them. A good entry lets you, or a reviewer, see what you cooked, how, and how it turned out, without having been there."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "a notebook, a document or a notes app that holds photos;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "a phone camera;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "a steel ruler or a cutting board with a printed grid;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "one vegetable to cut for the practice photos (a carrot or a courgette)."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Plan, cook, evaluate.* Every entry follows the same cycle:"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**plan:** the target (what you are aiming for), the criteria (how you will know you got there) and the timeline;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**cook:** the record of what happened, with times, readings and photos, written while you cook;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**evaluate:** a score against each criterion, the likely causes of anything that went wrong, and one next step."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*The entry template.* Copy this onto the first page and use it for every entry:"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Field",
+        "Example"
+       ],
+       "rows": [
+        [
+         "Date",
+         "12 January"
+        ],
+        [
+         "Lesson or exercise",
+         "`KNF-1.M2.X1`"
+        ],
+        [
+         "Competencies",
+         "`TS-KNF`"
+        ],
+        [
+         "Conditions",
+         "2 onions, chef's knife, recipe support"
+        ],
+        [
+         "Evidence",
+         "photo on the grid board; 10 pieces measured"
+        ],
+        [
+         "Self-score per criterion",
+         "size: *Competent*; evenness: *Developing*"
+        ],
+        [
+         "Causes",
+         "the claw slipped on the last third of each onion"
+        ],
+        [
+         "Next step",
+         "slow down on the last third; re-cut on Thursday"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Photos that count as evidence.* A photo is evidence only when it shows what is being judged:"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "daylight or neutral light, never a yellow lamp at night;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "a reference object in the frame: the grid board, a ruler or a spoon;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "a cross-section where doneness or crumb matters;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "the whole plate from above and at 45°;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "side-by-side shots when you compare two attempts."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Describing and diagnosing.* \"The onions were dark\" describes. \"The onions burnt because the pan was too hot when they went in\" diagnoses: it names a cause the next attempt can change. An evaluation needs at least one diagnosis."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:** theory only (1 h): set up the template in your journal and take three practice photos of a cut vegetable: one top-down on the grid, one at 45°, one of a cross-section. The exercise below uses them."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** someone who wasn't there could reconstruct what you cooked, how, and how it turned out from the entry alone."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Entries are vague or wrong",
+         "Written days later, from memory",
+         "Write the cook record while you cook; finish the evaluation the same day"
+        ],
+        [
+         "A photo can't be judged",
+         "No reference object, yellow light, or the evidence cropped out",
+         "Retake it in daylight on the grid, with the whole piece in frame"
+        ],
+        [
+         "The evaluation only says what happened",
+         "Describing instead of diagnosing",
+         "Add \"because…\" to each problem, then name one change for next time"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** no cooking in this lesson; a knife is used only for the practice photos."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the template, and the three practice photos labelled with what each shows."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "ORI-1.M1.X1",
+     "title": "Journal and study plan",
+     "description": "Set up the journal and a weekly study plan.",
+     "competencies": [
+      {
+       "id": "JD-REFL",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** start the journal in the form the whole program uses, and plan your first month realistically. One sitting, at the start of the course."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** the journal from `ORI-1.M1.L2`; your calendar; a dish you cooked at home in the past week, and one photo of it if you have one."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Recipe:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Set up the journal (15 min).** Copy the entry template from `ORI-1.M1.L2` onto the first page. Start an index at the back, with one line per competency, where you will list the entries that give evidence for it."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Write the four-week plan (20 min).** For each of the next four weeks, write down:"
+        },
+        {
+         "level": 1,
+         "marker": "",
+         "text": "the fixed slots (for example Monday, Wednesday and Thursday evening, an hour each);"
+        },
+        {
+         "level": 1,
+         "marker": "",
+         "text": "one long slot of three hours or more, for lessons with elapsed time;"
+        },
+        {
+         "level": 1,
+         "marker": "",
+         "text": "a short review slot at the end of the week to finish entries."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "Then place the first lessons of `ORI-1`, `SAF-1` and `WRK-1` in the slots."
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "**Write the first reflection (25 min).** About the dish from last week, answer three prompts:"
+        },
+        {
+         "level": 1,
+         "marker": "",
+         "text": "What went well, and how do you know? Point to something you can show: the photo, a time, what your household said."
+        },
+        {
+         "level": 1,
+         "marker": "",
+         "text": "What would you change, and why do you think it went that way?"
+        },
+        {
+         "level": 1,
+         "marker": "",
+         "text": "What will you try differently next time?"
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:** the template, the four-week plan and the first reflection. The reflection names one improvement and one weakness and points to the evidence for each, which is the `JD-REFL` level 2 success row. The module check includes a set-up checklist: template present, index started, four weeks planned with a long slot each week, reflection with evidence."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 1 h active."
+      }
+     ]
+    }
+   ],
+   "items": [
+    {
+     "id": "ORI-1.M1.Q1",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "ORI-1.M1.L1",
+     "safety": false,
+     "question": "Which level means \"performs the task without instructions, with acceptable results\"?",
+     "options": [
+      {
+       "key": "A",
+       "text": "2"
+      },
+      {
+       "key": "B",
+       "text": "3"
+      },
+      {
+       "key": "C",
+       "text": "4"
+      },
+      {
+       "key": "D",
+       "text": "5"
+      }
+     ],
+     "answer": "B",
+     "why": "Level 2 is guided; 4 adds adaptation; 5 adds consistency and teaching."
+    },
+    {
+     "id": "ORI-1.M1.Q2",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "ORI-1.M1.L1",
+     "safety": false,
+     "question": "Which evidence can never carry a level on its own?",
+     "options": [
+      {
+       "key": "A",
+       "text": "a temperature log"
+      },
+      {
+       "key": "B",
+       "text": "a photo on a grid board"
+      },
+      {
+       "key": "C",
+       "text": "your own tasting form plus a checklist"
+      },
+      {
+       "key": "D",
+       "text": "a written explanation"
+      }
+     ],
+     "answer": "C",
+     "why": "Forms and checklists are self-assessed; every level needs at least one objective or partly verifiable source."
+    },
+    {
+     "id": "ORI-1.M1.Q3",
+     "type": "SCENARIO",
+     "lessonId": "ORI-1.M1.L1",
+     "safety": false,
+     "question": "At the end of S1, `TS-KNF` and `SA-HYG` are each one level short of their target; everything else is met and `MS-S1` is passed. Can you start S2?",
+     "options": [],
+     "answer": "No. `TS-KNF` may be carried, `SA-HYG` must be closed first.",
+     "why": "Up to two non-safety competencies may be carried one level; safety competencies have no allowance."
+    },
+    {
+     "id": "ORI-1.M1.Q4",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "ORI-1.M1.L1",
+     "safety": false,
+     "question": "How many demonstrations does level 3 need?",
+     "options": [
+      {
+       "key": "A",
+       "text": "one"
+      },
+      {
+       "key": "B",
+       "text": "two, on different days"
+      },
+      {
+       "key": "C",
+       "text": "three, under two conditions"
+      },
+      {
+       "key": "D",
+       "text": "five, over eight weeks"
+      }
+     ],
+     "answer": "B",
+     "why": "Level 4 needs three under two conditions, level 5 five over eight weeks."
+    },
+    {
+     "id": "ORI-1.M1.Q5",
+     "type": "SCENARIO",
+     "lessonId": "ORI-1.M1.L1",
+     "safety": false,
+     "question": "You have three weekday hours (Mon, Wed, Thu evening) and three hours on Saturday. Next week's lesson has 2 h of active work and a stock that simmers for 4 h. Where does it go, and what goes in the evenings?",
+     "options": [],
+     "answer": "The stock lesson on Saturday, when the simmer can run; theory, drills and write-ups in the evenings.",
+     "why": "Elapsed time needs a long slot; short slots suit work without waiting."
+    },
+    {
+     "id": "ORI-1.M1.Q6",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "ORI-1.M1.L2",
+     "safety": false,
+     "question": "What belongs in the *plan* step of a journal entry?",
+     "options": [
+      {
+       "key": "A",
+       "text": "the target, the criteria and a timeline"
+      },
+      {
+       "key": "B",
+       "text": "the photos"
+      },
+      {
+       "key": "C",
+       "text": "the self-score"
+      },
+      {
+       "key": "D",
+       "text": "the next step"
+      }
+     ],
+     "answer": "A",
+     "why": "Photos are the cook record; the score and the next step are the evaluation."
+    },
+    {
+     "id": "ORI-1.M1.Q7",
+     "type": "IMAGE_IDENTIFICATION",
+     "lessonId": "ORI-1.M1.L2",
+     "safety": false,
+     "question": "Four photos of the same diced carrot: (a) close-up, no reference; (b) top-down in daylight on a grid board; (c) at 45° under a yellow lamp; (d) a blurred pan shot. Which is valid evidence of dice size?",
+     "options": [],
+     "answer": "b",
+     "why": "Size needs a reference object, neutral light and a view that shows the cut faces."
+    },
+    {
+     "id": "ORI-1.M1.Q8",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "ORI-1.M1.L2",
+     "safety": false,
+     "question": "Which sentence is a diagnosis?",
+     "options": [
+      {
+       "key": "A",
+       "text": "\"The sauce was thin.\""
+      },
+      {
+       "key": "B",
+       "text": "\"The sauce was thin because I stopped reducing at 10 minutes, not when it coated the spoon.\""
+      },
+      {
+       "key": "C",
+       "text": "\"The sauce looked fine.\""
+      },
+      {
+       "key": "D",
+       "text": "\"Next time: better sauce.\""
+      }
+     ],
+     "answer": "B",
+     "why": "A diagnosis names a cause that the next attempt can change."
+    }
+   ]
+  },
+  {
+   "id": "ORI-1.M2",
+   "title": "Kitchen audit and set-up",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** the 8 items of `ORI-1.M2` in the course file, after the three lessons. Pass mark 80 %."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "ORI-1.M2.L1",
+     "title": "Equipment audit",
+     "prerequisites": [
+      "ORI-1.M1.L1"
+     ],
+     "competencies": [
+      {
+       "id": "KM-EQPT",
+       "level": 1
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** many criteria in the program depend on numbers: a core temperature, a weight, an oven temperature. Before you buy anything, you need to know what you have, what is missing, and what is unfit. Then you can spend money where a criterion depends on it."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "the tier 0 list (`EQP-1` and Phase 1 §9.4);"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "your instant-read thermometer, if you have one;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "a pan of water at a rolling boil, and a tall glass packed with crushed ice and topped up with cold water."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*The tier 0 kit.* Tier 0 is the equipment S1 assumes. Each item does something nothing else in the kitchen does: knives, pans of different materials, a scale to 1 g, an instant-read thermometer and an oven thermometer. An oven dial can be off by tens of degrees, so every oven lesson relies on the oven thermometer, not on the dial."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Good and Best.* For each item the course files name a Good option and a Best option. Good is enough to meet every criterion of the program. Best is faster, more precise or longer-lasting. A Best item never replaces a skill: an expensive knife doesn't make even dice."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Priorities.* Buy first what a criterion depends on: the thermometers and the scale, because the safety gates and the ratios need numbers. Then buy what the next course needs, and nothing more yet."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Audit (60 min).** Go through the tier 0 list item by item and mark each one *present*, *missing* or *unfit* (a pan that rocks on the hob, a knife that won't cut paper, a thermometer you have never tested). Test the thermometer:"
+        },
+        {
+         "level": 1,
+         "marker": "",
+         "text": "in the boiling water, with the tip in the water and away from the pan's bottom: it should read close to 100 °C at sea level (in the Netherlands, almost everywhere);"
+        },
+        {
+         "level": 1,
+         "marker": "",
+         "text": "in the iced water, after stirring for half a minute: it should read close to 0 °C."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "Write down both readings."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** a complete list, with a reason for every purchase. A thermometer that reads close to 100 °C in boiling water and close to 0 °C in iced water."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "The budget goes on a few expensive items",
+         "Buying a full Best set at once",
+         "Buy the Good option of what a criterion needs first"
+        ],
+        [
+         "Food cooks unevenly, oil pools at one side",
+         "A warped pan that rocks on the hob",
+         "Mark it *unfit*; replace it when a lesson needs it"
+        ],
+        [
+         "Readings that can't be trusted",
+         "The thermometer was never checked",
+         "Test it at both points and note the offset; `SAF-1.M3` re-tests it"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** keep the boiling pan at the back of the hob with the handle turned inwards, and hold the thermometer by its handle, not its stem."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the audit list (present, missing, unfit) and the two thermometer readings."
+      }
+     ]
+    },
+    {
+     "id": "ORI-1.M2.L2",
+     "title": "Work zones and layout",
+     "prerequisites": [],
+     "competencies": [
+      {
+       "id": "TS-MEP",
+       "level": 1
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** a kitchen laid out for the work saves steps and time, and keeps raw food away from food that is ready to eat. `SAF-1` builds its rules on cross-contamination on this layout."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** paper and a pen for a sketch; your phone camera; labels."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Four zones.* Every kitchen, however small, has four zones:"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**storage:** the fridge, the freezer and the cupboards;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**preparation:** the board and the counter space around it;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**cooking:** the hob and the oven;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**cleaning:** the sink, the dishwasher and the bin."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "Food moves one way: from storage, through preparation, to the hob and the plate. Dirty things move away from that path, to the sink."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Fewer steps, fewer crossings.* Every time you walk back across the kitchen with raw chicken in your hands, you lose time and risk dripping onto food that is ready to eat. A good layout makes the safe way also the quick way."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Store things where they are used.* Knives and boards go by the preparation zone, pans and oil by the hob, and the salt where you can reach it while you cook."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Re-organise (75 min).** Photograph the kitchen as it is. Sketch it from above and mark the four zones and the path from storage to plate. Move the tools and the food to match. Photograph it again from the same points."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** a simple dish, cooked in the new layout, needs fewer steps, and raw and ready-to-eat food never cross."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Peelings and packaging pile up on the board",
+         "The board is far from the bin or the sink",
+         "Move the board next to the bin, or keep a scrap bowl on the board"
+        ],
+        [
+         "Drips from raw meat reach other food",
+         "Raw meat stored above ready-to-eat food",
+         "Raw meat and fish on the bottom shelf of the fridge, in a closed container"
+        ],
+        [
+         "The layout looks tidy but the cooking is slow",
+         "Zones arranged for looks, not for the work",
+         "Walk through a dish you cook often, and move what you reach for"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** raw meat and fish go on the bottom shelf of the fridge, covered, so they can't drip onto other food. `SAF-1.M2` teaches why."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the before and after photos, the sketch, and a note on what changed."
+      }
+     ]
+    },
+    {
+     "id": "ORI-1.M2.L3",
+     "title": "Pantry baseline",
+     "prerequisites": [],
+     "competencies": [
+      {
+       "id": "IN-STO",
+       "level": 1
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** most lessons assume a small set of staples is always there. Knowing what each one is for, and keeping it in good condition, means you can cook a lesson without an extra trip to the shop."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** your pantry, labels and a pen, and the list below."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Staples by function.* The program groups staples by what they do in a dish:"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Function",
+        "Staples",
+        "What they do"
+       ],
+       "rows": [
+        [
+         "Salt",
+         "fine sea salt for cooking and weighing; flaky salt for finishing",
+         "Seasons; draws out water"
+        ],
+        [
+         "Fat",
+         "a neutral oil (sunflower or rapeseed); olive oil; butter",
+         "Carries heat and flavour"
+        ],
+        [
+         "Acid",
+         "white-wine vinegar; cider vinegar; a lemon",
+         "Brightens and balances"
+        ],
+        [
+         "Aromatics",
+         "onions; garlic; dried herbs; whole spices (black pepper, cumin, coriander seed)",
+         "Build the base flavour"
+        ],
+        [
+         "Starch",
+         "rice; pasta; plain flour",
+         "Body and bulk"
+        ],
+        [
+         "Stock base",
+         "a good stock cube or powder (read the label for allergens)",
+         "A quick base until `STK-2`"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Why salt is weighed.* Salt crystals differ in size. A spoonful of flaky salt weighs much less than a spoonful of fine salt, so a recipe that says \"a teaspoon\" gives different results with different salts. The program weighs salt."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Storage.* Oils are kept cool, dark and closed, because light and heat speed up oxidation, which makes them rancid. Whole spices keep their aroma longer than ground ones, because grinding exposes far more surface to the air. Use the oldest first: first in, first out."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Stock-take and storage (45 min).** List what you have against the table above. Label each staple with its name and the date you opened or bought it. Arrange them by function, with the salt and oil near the hob but not on it."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** every staple has a place, a label and a date, and you can name what each one is for."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Five kinds of salt and no vinegar",
+         "Buying what looks interesting, not what each function needs",
+         "Cover each function once before buying a second of anything"
+        ],
+        [
+         "Ground spices that smell of little",
+         "Spices of unknown age",
+         "Date them; replace ground spices that have lost their smell; buy whole where you can"
+        ],
+        [
+         "Oil that smells of crayons or old nuts",
+         "Oil stored next to the hob or in the light",
+         "Store it in a closed cupboard away from the hob"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** no special risks."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the stock-take list, and what you plan to buy for the missing functions."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "ORI-1.M2.X1",
+     "title": "Audit and shopping list",
+     "description": "Equipment audit and shopping list for missing tier 0 items.",
+     "competencies": [],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** know exactly what your kitchen has, and what to buy first and why. The module only reaches level 1, so this exercise prepares you for the quiz and for `EQP-1`."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** the tier 0 list; a pan of boiling water and a glass of iced water for the thermometer test (as in `ORI-1.M2.L1`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Recipe:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Mark the list (20 min).** Mark every tier 0 item *present*, *missing* or *unfit*, with one word on why it is unfit."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Test the thermometer (10 min).** In boiling water, then in iced water. Write down both readings and the offset from 100 °C and 0 °C."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "**Write the shopping list (30 min).** Put the missing and unfit items in order of priority:"
+        },
+        {
+         "level": 1,
+         "marker": "1.",
+         "text": "what a safety gate needs (the instant-read thermometer, if it is missing or off);"
+        },
+        {
+         "level": 1,
+         "marker": "2.",
+         "text": "what ratios need (the 1 g scale);"
+        },
+        {
+         "level": 1,
+         "marker": "3.",
+         "text": "what the next course needs."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "For each, write Good or Best and a one-line reason."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:** the audit list, the two thermometer readings and the priority list, with a photo of the thermometer in each test."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 1 h active."
+      }
+     ]
+    },
+    {
+     "id": "ORI-1.M2.X2",
+     "title": "Work zones before and after",
+     "description": "Re-organise the kitchen into zones; photograph before and after.",
+     "competencies": [],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** lay the kitchen out for the work the program asks for."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** the kitchen as it is; labels; containers for staples if needed."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Recipe:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Before (10 min).** Photograph the kitchen from two or three fixed points (for example the door and each end of the counter). Note where you stood."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Sketch (20 min).** Draw the kitchen from above. Mark the four zones and draw the path from storage to plate."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "**Move (45 min).** Move tools and food so each sits in the zone where it is used."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "**After (10 min).** Photograph the kitchen again from the same points."
+        },
+        {
+         "level": 0,
+         "marker": "5.",
+         "text": "**Note (5 min).** In the journal, write what changed and why."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:** the before and after photos from the same points, the sketch and the note."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 1.5 h active."
+      }
+     ]
+    }
+   ],
+   "items": [
+    {
+     "id": "ORI-1.M2.Q1",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "ORI-1.M2.L1",
+     "safety": false,
+     "question": "Why is an oven thermometer part of the basic kit?",
+     "options": [
+      {
+       "key": "A",
+       "text": "ovens hold temperature perfectly"
+      },
+      {
+       "key": "B",
+       "text": "the dial can be off by tens of degrees"
+      },
+      {
+       "key": "C",
+       "text": "it replaces the core thermometer"
+      },
+      {
+       "key": "D",
+       "text": "only for baking bread"
+      }
+     ],
+     "answer": "B",
+     "why": "Every oven lesson assumes a known temperature."
+    },
+    {
+     "id": "ORI-1.M2.Q2",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "ORI-1.M2.L1",
+     "safety": false,
+     "question": "Which item is not in tier 0?",
+     "options": [
+      {
+       "key": "A",
+       "text": "instant-read thermometer"
+      },
+      {
+       "key": "B",
+       "text": "1 g digital scale"
+      },
+      {
+       "key": "C",
+       "text": "sous vide circulator"
+      },
+      {
+       "key": "D",
+       "text": "honing steel"
+      }
+     ],
+     "answer": "C",
+     "why": "The circulator is tier 2, needed from S3."
+    },
+    {
+     "id": "ORI-1.M2.Q3",
+     "type": "SCENARIO",
+     "lessonId": "ORI-1.M2.L1",
+     "safety": false,
+     "question": "You can make one purchase this month: a Best chef's knife, or a Good knife plus an instant-read thermometer. Which, and why?",
+     "options": [],
+     "answer": "The Good knife and the thermometer.",
+     "why": "Good meets every criterion; the thermometer is needed for the safety gates from `SAF-1`; the Best knife can come later."
+    },
+    {
+     "id": "ORI-1.M2.Q4",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "ORI-1.M2.L1",
+     "safety": false,
+     "question": "Your thermometer reads 94 °C in boiling water at sea level. What do you do?",
+     "options": [
+      {
+       "key": "A",
+       "text": "nothing"
+      },
+      {
+       "key": "B",
+       "text": "note the offset or recalibrate, and re-test in iced water"
+      },
+      {
+       "key": "C",
+       "text": "only use it for meat"
+      },
+      {
+       "key": "D",
+       "text": "add 6 °C to every reading without testing again"
+      }
+     ],
+     "answer": "B",
+     "why": "A thermometer must be checked at two known points before its readings count as evidence."
+    },
+    {
+     "id": "ORI-1.M2.Q5",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "ORI-1.M2.L3",
+     "safety": false,
+     "question": "Which staple belongs to the acid group?",
+     "options": [
+      {
+       "key": "A",
+       "text": "cider vinegar"
+      },
+      {
+       "key": "B",
+       "text": "rapeseed oil"
+      },
+      {
+       "key": "C",
+       "text": "rice"
+      },
+      {
+       "key": "D",
+       "text": "bay leaf"
+      }
+     ],
+     "answer": "A",
+     "why": "Acids brighten and balance; the others are a fat, a starch and an aromatic."
+    },
+    {
+     "id": "ORI-1.M2.Q6",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "ORI-1.M2.L3",
+     "safety": false,
+     "question": "Why does the program weigh salt instead of measuring it by the spoon?",
+     "options": [
+      {
+       "key": "A",
+       "text": "spoons are unhygienic"
+      },
+      {
+       "key": "B",
+       "text": "crystal size differs, so a spoonful of flaky salt weighs much less than one of fine salt"
+      },
+      {
+       "key": "C",
+       "text": "salt absorbs water"
+      },
+      {
+       "key": "D",
+       "text": "scales are faster"
+      }
+     ],
+     "answer": "B",
+     "why": "Weight is the same whatever the crystal; volume is not."
+    },
+    {
+     "id": "ORI-1.M2.Q7",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "ORI-1.M2.L3",
+     "safety": false,
+     "question": "Where should olive oil be kept?",
+     "options": [
+      {
+       "key": "A",
+       "text": "next to the hob, for convenience"
+      },
+      {
+       "key": "B",
+       "text": "on a sunny shelf"
+      },
+      {
+       "key": "C",
+       "text": "cool, dark and closed"
+      },
+      {
+       "key": "D",
+       "text": "in an open jug"
+      }
+     ],
+     "answer": "C",
+     "why": "Light, heat and air speed oxidation, which makes oil rancid."
+    },
+    {
+     "id": "ORI-1.M2.Q8",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "ORI-1.M2.L3",
+     "safety": false,
+     "question": "Why do whole spices keep their aroma longer than ground ones?",
+     "options": [
+      {
+       "key": "A",
+       "text": "they contain more oil"
+      },
+      {
+       "key": "B",
+       "text": "grinding exposes far more surface to air"
+      },
+      {
+       "key": "C",
+       "text": "they are dried longer"
+      },
+      {
+       "key": "D",
+       "text": "they are stored colder"
+      }
+     ],
+     "answer": "B",
+     "why": "Aroma compounds evaporate and oxidise from the surface."
+    }
+   ]
+  },
+  {
+   "id": "ORI-1.M3",
+   "title": "Baseline diagnostic",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** the 8 items of `ORI-1.M3` in the course file, after both lessons. Pass mark 80 %."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "ORI-1.M3.L1",
+     "title": "Diagnostic cook",
+     "prerequisites": [
+      "ORI-1.M1.L2"
+     ],
+     "competencies": [
+      {
+       "id": "JD-REFL",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** progress is a comparison with a recorded start, not a feeling. You cook a familiar dish now, record it in full, and cook the same dish again at `MS-S1`, so that the two can be set side by side. If the evidence shows level 3 in knife work, egg cookery or starch cookery, it can also let you skip lessons in `KNF-1`, `EGG-1` or `STA-1`."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** the ingredients of a dish you cook often, for 2–4 portions; your usual equipment; the journal; a phone camera; a clock you can see while you cook."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Choosing the dish.* Choose a dish you cook often and would serve to guests, one that includes knife work, heat and seasoning: a soup, a stew, a pasta dish, an omelette with a salad. Not a showpiece you have made once: the point is to record how you usually cook."
+      },
+      {
+       "type": "paragraph",
+       "text": "*The rubric.* Score the cook in six rows, each in four bands:"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Row",
+        "What it covers"
+       ],
+       "rows": [
+        [
+         "Mise en place",
+         "Everything prepared and to hand before the heat goes on"
+        ],
+        [
+         "Knife work",
+         "Even pieces, the right size for the dish"
+        ],
+        [
+         "Heat control",
+         "The right heat at each step, and corrected when needed"
+        ],
+        [
+         "Seasoning",
+         "Tasted and adjusted during cooking and before serving"
+        ],
+        [
+         "Timing",
+         "The parts ready together, at the planned time"
+        ],
+        [
+         "Cleanliness",
+         "The workspace kept clean while cooking"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "The bands are *Not yet*, *Developing*, *Competent* and *Excellent*. Score each row against *Competent* (good, reliable home cooking), not against the best you have ever done, and give one line of evidence for each score."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Strengths and gaps.* After scoring, name three strengths and three gaps, each tied to evidence: a time, a photo, a reading. They set your first priorities."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Diagnostic cook (2.5 h, including the write-up).**"
+        },
+        {
+         "level": 1,
+         "marker": "1.",
+         "text": "Write the plan: the dish, the target, the timeline, and the photo points."
+        },
+        {
+         "level": 1,
+         "marker": "2.",
+         "text": "Cook as you usually do. Write the time at each step (\"onions in at 18:12, translucent at 18:21, medium heat\")."
+        },
+        {
+         "level": 1,
+         "marker": "3.",
+         "text": "Photograph at four fixed points: the mise en place, during cooking, the finished plate, and a cross-section if the dish has one."
+        },
+        {
+         "level": 1,
+         "marker": "4.",
+         "text": "Score each rubric row with one line of evidence, and name three strengths and three gaps."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** a timeline that matches the clock; photos that show what the rubric asks for; scores that differ from row to row."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "The baseline shows a dish you never cook",
+         "Choosing a showpiece",
+         "Cook your usual dish; the point is to measure your normal cooking"
+        ],
+        [
+         "Gaps in the timeline",
+         "Forgetting to record during cooking",
+         "Keep the journal open next to the hob and write each step as it happens"
+        ],
+        [
+         "Every row has the same score",
+         "Scoring a mood, not each row",
+         "Score each row against *Competent* with its own line of evidence"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** you haven't done `SAF-1` yet, so cook a dish you already make safely for your household. If it contains raw meat, fish or eggs, cook it as you always do; the program's rules for them start in `SAF-1`."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the full entry: plan, timestamped log, photos, scores with evidence, three strengths and three gaps. Keep the photos for `MS-S1`."
+      }
+     ]
+    },
+    {
+     "id": "ORI-1.M3.L2",
+     "title": "Tasting baseline",
+     "prerequisites": [],
+     "competencies": [
+      {
+       "id": "FL-SENS",
+       "level": 1
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** seasoning is judged by taste, and taste can be trained. This lesson records how well you tell strengths of salt, sweet and sour apart today. `TST-1` starts the calibration that counts as evidence; `MS-S1` repeats this test to show the change."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** the samples of `ORI-1.M3.X2` (15 cups of coded solutions), a jug of plain water for rinsing, plain crackers, and a helper to code the cups if possible."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Ranking as a test.* You taste five samples of one series in random order and put them in order of strength. The cups carry codes, not labels, and the key is hidden until you have written your ranking down."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Bias, and how the method removes it.*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**Expectation:** if you know which cup is strongest, you will taste it as strongest. Codes and a hidden key remove this."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**Order:** the first sample sets a reference for the rest. A random order spreads this effect."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**Fatigue:** taste dulls after several strong samples. Rinse with water, pause, and eat a plain cracker between samples."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**Temperature:** the same concentration tastes different warm and cold. All samples are at room temperature."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*A baseline, not a score.* The result is recorded, not scored. Nothing in this lesson counts for or against a level."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Ranking (60 min).** Three series in water, five samples each:"
+        },
+        {
+         "level": 1,
+         "marker": "",
+         "text": "salt: 6, 8, 10, 12 and 15 g per litre;"
+        },
+        {
+         "level": 1,
+         "marker": "",
+         "text": "sugar: 10, 20, 30, 40 and 60 g per litre;"
+        },
+        {
+         "level": 1,
+         "marker": "",
+         "text": "white-wine vinegar: 0, 5, 10, 15 and 20 ml per litre."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "Taste one series at a time. For each sample, take a small sip, hold it for a moment, spit or swallow, and rinse. Write your ranking from weakest to strongest. Only then read the key and record how many places you swapped."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** you taste slowly, rinse between samples, and write the ranking before reading the key."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "The ranking is perfect, but you knew the answer",
+         "You prepared and coded the samples yourself with a visible key",
+         "Ask a helper to code the cups; otherwise shuffle them with the codes facing down and seal the key in an envelope"
+        ],
+        [
+         "The results jump around",
+         "Cold and warm samples tasted side by side",
+         "Let all samples stand until they are at room temperature"
+        ],
+        [
+         "The ranking changes after the key is read",
+         "Correcting after the fact",
+         "Write the ranking in ink first; record any swaps as they are"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** the solutions are mild. Spit rather than swallow if you are on a salt-restricted diet."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the three rankings, the number of swaps in each series, and the date. This is the baseline for `TST-1` and `MS-S1`."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "ORI-1.M3.X1",
+     "title": "Diagnostic cook with a full journal entry",
+     "description": "Diagnostic cook with a full journal entry.",
+     "competencies": [
+      {
+       "id": "JD-REFL",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** record a documented starting point, and make a first honest self-assessment. Cook your usual dish for the household, without time pressure."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** the ingredients of your chosen dish for 2–4 portions; the journal; the rubric from `ORI-1.M3.L1`; a phone camera."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Recipe:** your own usual recipe for the dish, followed by this procedure:"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Plan (15 min).** Write the target, the timeline and the four photo points."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Cook with timestamps.** Write the time at each step."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "**Photograph** at the four fixed points."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "**Taste** before serving, and note any corrections you made."
+        },
+        {
+         "level": 0,
+         "marker": "5.",
+         "text": "**Score (20 min).** Score each rubric row with one line of evidence. Name three strengths and three gaps."
+        },
+        {
+         "level": 0,
+         "marker": "6.",
+         "text": "**Ask your household** for one sentence each about the dish, and add them to the entry."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:** the full entry: plan, timestamped log, photos, scores with evidence, three strengths and three gaps. This is the `JD-REFL` level 2 success row. The photos are kept for the side-by-side comparison at `MS-S1`. Where they show level 3 cuts, egg cookery or starch cookery, they are the basis for waiving lessons."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 2.5 h active."
+      }
+     ]
+    },
+    {
+     "id": "ORI-1.M3.X2",
+     "title": "Taste-ranking baseline",
+     "description": "Taste-ranking baseline (salt, sweet, sour series).",
+     "competencies": [],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** record a starting point for your palate. The module reaches `FL-SENS` level 1, so the result is a baseline, not evidence. A helper codes the cups if possible."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "15 litres of drinking water in total, one litre per sample;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "about 51 g of fine salt, 160 g of sugar and 50 ml of white-wine vinegar;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "15 cups or glasses with removable labels, and a pen;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "a 1 g scale, and a measuring jug;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "a sheet of paper for the key, and an envelope."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Recipe:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Prepare (30 min).** Weigh or measure into one litre of water each:"
+        }
+       ]
+      },
+      {
+       "type": "table",
+       "header": [
+        "Series",
+        "Sample amounts per litre"
+       ],
+       "rows": [
+        [
+         "Salt",
+         "6 g, 8 g, 10 g, 12 g, 15 g"
+        ],
+        [
+         "Sugar",
+         "10 g, 20 g, 30 g, 40 g, 60 g"
+        ],
+        [
+         "Vinegar",
+         "0 ml, 5 ml, 10 ml, 15 ml, 20 ml"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "Stir until fully dissolved. Pour some of each into a cup."
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Code (10 min).** The helper gives each cup a three-digit code, writes the key on the sheet and seals it in the envelope. Without a helper, label the cups on the bottom, shuffle them, and write new codes on the side."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "**Rest (about 30 min).** Let the cups stand until they are all at room temperature."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "**Rank.** Taste and rank each series as in `ORI-1.M3.L2`, writing the ranking down."
+        },
+        {
+         "level": 0,
+         "marker": "5.",
+         "text": "**Check.** Open the key, and note how many places you swapped in each series."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:** the three rankings and the number of swaps per series, written before the key was read. This is the baseline for `TST-1` and `MS-S1`."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 1 h active; the samples need about 30 minutes to reach room temperature."
+      }
+     ]
+    }
+   ],
+   "items": [
+    {
+     "id": "ORI-1.M3.Q1",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "ORI-1.M3.L1",
+     "safety": false,
+     "question": "Which dish suits the diagnostic cook best?",
+     "options": [
+      {
+       "key": "A",
+       "text": "a dish you have never made"
+      },
+      {
+       "key": "B",
+       "text": "a dish you cook often, with knife work, heat and seasoning"
+      },
+      {
+       "key": "C",
+       "text": "a bought ready meal, reheated"
+      },
+      {
+       "key": "D",
+       "text": "a dessert from a pastry book"
+      }
+     ],
+     "answer": "B",
+     "why": "The baseline must show your usual cooking across several competencies."
+    },
+    {
+     "id": "ORI-1.M3.Q2",
+     "type": "SCENARIO",
+     "lessonId": "ORI-1.M3.L1",
+     "safety": false,
+     "question": "Your diagnostic dish went well and you scored every rubric row *Excellent*. What does the method ask you to do?",
+     "options": [],
+     "answer": "Score each row separately against *Competent*, with one line of evidence each, and name three strengths and three gaps.",
+     "why": "Uniform scores signal a mood, not an assessment."
+    },
+    {
+     "id": "ORI-1.M3.Q3",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "ORI-1.M3.L1",
+     "safety": false,
+     "question": "Which line belongs in the cook record?",
+     "options": [
+      {
+       "key": "A",
+       "text": "\"Onions in at 18:12, translucent at 18:21, medium heat\""
+      },
+      {
+       "key": "B",
+       "text": "\"Felt good\""
+      },
+      {
+       "key": "C",
+       "text": "\"Should cook more often\""
+      },
+      {
+       "key": "D",
+       "text": "\"Nice colour\""
+      }
+     ],
+     "answer": "A",
+     "why": "Times, readings and observations make a record that can be compared later."
+    },
+    {
+     "id": "ORI-1.M3.Q4",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "ORI-1.M3.L1",
+     "safety": false,
+     "question": "The diagnostic evidence can waive lessons in which course?",
+     "options": [
+      {
+       "key": "A",
+       "text": "`SAF-1`"
+      },
+      {
+       "key": "B",
+       "text": "`KNF-1`"
+      },
+      {
+       "key": "C",
+       "text": "`ORI-1`"
+      },
+      {
+       "key": "D",
+       "text": "any course"
+      }
+     ],
+     "answer": "B",
+     "why": "Lessons in `KNF-1`, `EGG-1` and `STA-1` can be waived at level 3; `SAF-1` never."
+    },
+    {
+     "id": "ORI-1.M3.Q5",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "ORI-1.M3.L2",
+     "safety": false,
+     "question": "Why are tasting samples coded and served in random order?",
+     "options": [
+      {
+       "key": "A",
+       "text": "to save time"
+      },
+      {
+       "key": "B",
+       "text": "so that expectation and order do not steer the judgment"
+      },
+      {
+       "key": "C",
+       "text": "because the key gets lost"
+      },
+      {
+       "key": "D",
+       "text": "to make it harder for the helper"
+      }
+     ],
+     "answer": "B",
+     "why": "Labels and a fixed order bias what we taste."
+    },
+    {
+     "id": "ORI-1.M3.Q6",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "ORI-1.M3.L2",
+     "safety": false,
+     "question": "Why are all samples served at the same temperature?",
+     "options": [
+      {
+       "key": "A",
+       "text": "hygiene"
+      },
+      {
+       "key": "B",
+       "text": "temperature changes perceived intensity"
+      },
+      {
+       "key": "C",
+       "text": "warm samples evaporate"
+      },
+      {
+       "key": "D",
+       "text": "cold samples are cheaper"
+      }
+     ],
+     "answer": "B",
+     "why": "The same concentration tastes different when warm or cold."
+    },
+    {
+     "id": "ORI-1.M3.Q7",
+     "type": "CALCULATION",
+     "lessonId": "ORI-1.M3.L2",
+     "safety": false,
+     "question": "A sample has 10 g of salt in 1 litre of water. What percentage is that?",
+     "options": [],
+     "answer": "1 %",
+     "why": "10 g in 1,000 g of water is 1 %."
+    },
+    {
+     "id": "ORI-1.M3.Q8",
+     "type": "ORDERING",
+     "lessonId": "ORI-1.M3.L2",
+     "safety": false,
+     "question": "Put in order: (a) read the key; (b) rank the samples; (c) record the ranking; (d) bring the samples to the same temperature; (e) code the cups",
+     "options": [],
+     "answer": "e, d, b, c, a",
+     "why": "The ranking is recorded before the key is read, or it is no longer a test."
+    }
+   ]
+  }
+ ]
+}

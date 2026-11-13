@@ -1,0 +1,2925 @@
+{
+ "schemaVersion": 1,
+ "id": "SAF-1",
+ "introduction": [
+  {
+   "type": "paragraph",
+   "text": "**Before you start.** This course makes safe practice a habit before your first knife or pan lesson. Every later practical assumes it, and every milestone re-tests it as a gate that no score can make up for. It is the one course the `ORI-1` diagnostic can never let you skip."
+  },
+  {
+   "type": "paragraph",
+   "text": "Every figure in this course comes from assessment §9:"
+  },
+  {
+   "type": "list",
+   "items": [
+    {
+     "level": 0,
+     "marker": "",
+     "text": "the Dutch Voedingscentrum's home rules where they exist [S21][S22];"
+    },
+    {
+     "level": 0,
+     "marker": "",
+     "text": "the FDA *Food Code* where a gate needs a number [S25];"
+    },
+    {
+     "level": 0,
+     "marker": "",
+     "text": "the stricter of the two where they differ."
+    }
+   ]
+  },
+  {
+   "type": "paragraph",
+   "text": "Plan two to three weeks. The fridge log runs for a week, the cleaning routine is repeated after two weeks, and the cooling lesson takes two days. `WRK-1` and `EQP-1` can run alongside."
+  },
+  {
+   "type": "paragraph",
+   "text": "**Have ready:** the instant-read thermometer you tested in `ORI-1`, a fridge thermometer, a second cutting board in a different colour for raw meat and fish, a few shallow containers with lids (about 5 cm deep), labels and a pen, a fire blanket, and a first-aid kit."
+  }
+ ],
+ "modules": [
+  {
+   "id": "SAF-1.M1",
+   "title": "How food makes people ill",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** the 8 items of `SAF-1.M1` in the course file, all safety items. Pass mark 80 %, with every safety item correct."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "SAF-1.M1.L1",
+     "title": "Microbes, toxins and high-risk foods",
+     "prerequisites": [],
+     "competencies": [
+      {
+       "id": "SC-MICR",
+       "level": 1
+      },
+      {
+       "id": "SA-HYG",
+       "level": 1
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** you can't see, smell or taste most of what makes food unsafe. To keep food safe you need to know what grows in it, under which conditions, and what stops it. This lesson is the basis of every rule in the program."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** nothing but the journal."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Bacteria.* Bacteria are living cells that multiply in food when they have time, warmth, moisture and nutrients. The longer food stays warm, the more of them there are. The ones that matter most at home are *Salmonella* (poultry, eggs), *Campylobacter* (poultry), *Listeria* (chilled ready-to-eat foods) and *Bacillus cereus* (cooked rice and other starches)."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Viruses.* Viruses such as norovirus don't grow in food. They are carried onto it by hands and surfaces. That is why nobody cooks for others while they are ill with vomiting or diarrhoea. Norovirus stays infectious after the symptoms stop, so in the days just after, let someone else cook if you can; if you must cook, wash your hands thoroughly and often."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Toxins.* Some bacteria produce toxins in the food as they grow. Heat kills the bacteria but not every toxin, so reheating can't rescue food that stood warm for too long."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Spores.* *B. cereus* and *Clostridium perfringens* form spores, a resting form that survives cooking. When cooked food cools slowly, the spores wake up and multiply. That is why cooling fast matters (`SAF-1.M3.L3`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "*High-risk foods.* Some foods need more care because pathogens grow in them easily or are often present:"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "poultry and minced meat;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "raw and lightly cooked eggs;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "shellfish;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "cooked rice and other starches kept warm;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "cooked foods held for later;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "for vulnerable people, also soft cheeses and smoked fish."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Vulnerable people.* Young children, pregnant people, people over 70 and people with weakened immunity fall ill more easily, and more seriously. For them a mild illness can become dangerous. From S2 on you will cook some dishes differently for them."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:** theory only (1.5 h): read this lesson, then sort this list by risk (high or lower) and write the reason for each: a roast chicken, a bowl of cooked rice left on the stove, a raw carrot, a soft-boiled egg, dry pasta, a leftover stew, bread, mussels, a hard cheese, minced beef."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** for any food, you can say what could grow in it, under which conditions, and what stops it."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Food that smells fine is served after hours on the counter",
+         "Thinking smell and look reveal unsafe food",
+         "Judge by time and temperature, not by smell: most pathogens change neither"
+        ],
+        [
+         "Leftovers that stood warm are \"made safe\" by reheating",
+         "Believing reheating always works",
+         "Remember the toxins and spores; keep to the 2-hour rule (`SAF-1.M1.L2`)"
+        ],
+        [
+         "Rice or pasta left in the pan all evening",
+         "Not seeing starches as a risk",
+         "Treat cooked rice and pasta like cooked meat: cool fast, keep cold"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** the rules this lesson explains are taught as figures in `SAF-1.M1.L2` and `SAF-1.M3`."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the sorted list with a reason for each food."
+      }
+     ]
+    },
+    {
+     "id": "SAF-1.M1.L2",
+     "title": "The four core rules",
+     "prerequisites": [
+      "SAF-1.M1.L1"
+     ],
+     "competencies": [
+      {
+       "id": "SA-HYG",
+       "level": 2
+      },
+      {
+       "id": "SA-TEMP",
+       "level": 1
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** the Voedingscentrum sums up home food safety in four rules [S21]. Each stops one route by which food makes people ill. This lesson turns them from a list into moments in your own week of cooking."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** next week's meal plan (or the meals you expect to cook), and the journal."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*The four rules* [S21]:"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**clean** (*schoon*): hands, tools and surfaces;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**separate** (*gescheiden*): raw food away from food that is ready to eat;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**heat** (*verhitten*): right through;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**chill** (*koelen*): fast, and cold enough."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Each rule stops one route.* Clean and separate stop pathogens moving from raw food to food that won't be cooked again. Heat kills them. Chill slows their growth."
+      },
+      {
+       "type": "paragraph",
+       "text": "*The household figures* that frame this course [S22]:"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Rule",
+        "Figure"
+       ],
+       "rows": [
+        [
+         "The fridge",
+         "Set to 4 °C"
+        ],
+        [
+         "Leftovers out of the fridge",
+         "No longer than 2 hours"
+        ],
+        [
+         "Leftovers in the fridge",
+         "At most 2 days, covered; freeze them to keep longer"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Rules as moments.* \"Clean, separate, heat, chill\" is easy to recite and easy to forget. It works when you know where in a meal each rule applies: the chicken goes on the board last, and the board is washed straight away; the leftovers go into the fridge before you sit down to coffee."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Rule audit (60 min).** Take one week of planned home cooking. For each meal, mark the step where each rule applies: where hands are washed, where raw and ready-to-eat food could meet, what must be heated through, what goes into the fridge and when. Then list the three riskiest moments of the week and what you will change."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** for each meal, a named control point, for example \"chicken last on the board; board washed straight away\"."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "You can say the rules but miss them while cooking",
+         "The rules learned as a list, not as moments",
+         "Write the control point into each meal's plan"
+        ],
+        [
+         "Raw meat leaks onto vegetables",
+         "Forgetting \"separate\" in the shopping bag and the fridge",
+         "Pack raw meat and fish separately; store them at the bottom of the fridge"
+        ],
+        [
+         "Leftovers sit out during a long dinner",
+         "Leftovers not planned",
+         "Plan the moment they go into the fridge, within 2 hours"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** the fridge at 4 °C, leftovers out for no more than 2 hours, and kept at most 2 days in the fridge (assessment §9: the fridge, leftovers out of the fridge and leftovers in the fridge rows)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the week's audit, with the three riskiest moments and the changes."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "SAF-1.M1.X1",
+     "title": "Risk walk-through of three meals",
+     "description": "Risk walk-through of the learner's last three cooked meals.",
+     "competencies": [
+      {
+       "id": "SA-HYG",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** look at your own cooking through the four rules, and fix its weakest moments. Use your last three cooked meals, from memory and the journal."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** the journal; the four-rule checklist below."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Recipe:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**List the steps (15 min).** For each of the three meals, list the steps from shopping to leftovers."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Mark the rules (15 min).** Mark every point where a rule applied, and whether it was kept. Use the checklist:"
+        }
+       ]
+      },
+      {
+       "type": "table",
+       "header": [
+        "Rule",
+        "Check"
+       ],
+       "rows": [
+        [
+         "Clean",
+         "Hands washed before cooking and after raw meat, fish or eggs; a clean cloth; a clean board"
+        ],
+        [
+         "Separate",
+         "Raw meat and fish packed, stored and cut apart from ready-to-eat food; tools changed or washed"
+        ],
+        [
+         "Heat",
+         "Meat, poultry and eggs heated right through; leftovers reheated until steaming hot, once"
+        ],
+        [
+         "Chill",
+         "Leftovers in the fridge within 2 hours; the fridge at 4 °C; leftovers eaten within 2 days"
+        ]
+       ]
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "**Name the riskiest point (15 min).** For each meal, name the riskiest point and the change that removes it."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "**Cook with the checklist.** Cook your next meal with the checklist beside you, and tick each check as you do it."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:** the three walk-throughs and the ticked checklist for one meal. With the module check at 100 % on the hygiene items, this meets the `SA-HYG` level 2 success row."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 1 h active."
+      }
+     ]
+    }
+   ],
+   "items": [
+    {
+     "id": "SAF-1.M1.Q1",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "SAF-1.M1.L1",
+     "safety": true,
+     "question": "Which of these is a high-risk food?",
+     "options": [
+      {
+       "key": "A",
+       "text": "dry pasta"
+      },
+      {
+       "key": "B",
+       "text": "cooked rice kept warm on the stove"
+      },
+      {
+       "key": "C",
+       "text": "raw carrots"
+      },
+      {
+       "key": "D",
+       "text": "bread"
+      }
+     ],
+     "answer": "B",
+     "why": "Spores of *B. cereus* survive cooking and grow in warm cooked rice."
+    },
+    {
+     "id": "SAF-1.M1.Q2",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "SAF-1.M1.L1",
+     "safety": true,
+     "question": "Which group is *not* usually counted as vulnerable?",
+     "options": [
+      {
+       "key": "A",
+       "text": "pregnant people"
+      },
+      {
+       "key": "B",
+       "text": "young children"
+      },
+      {
+       "key": "C",
+       "text": "people over 70"
+      },
+      {
+       "key": "D",
+       "text": "healthy adults aged 20–50"
+      }
+     ],
+     "answer": "D",
+     "why": "The others fall ill more easily or more seriously."
+    },
+    {
+     "id": "SAF-1.M1.Q3",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "SAF-1.M1.L1",
+     "safety": true,
+     "question": "Why can reheating fail to make food safe that stood warm for hours?",
+     "options": [
+      {
+       "key": "A",
+       "text": "it never gets hot enough"
+      },
+      {
+       "key": "B",
+       "text": "some bacteria make toxins that survive heating"
+      },
+      {
+       "key": "C",
+       "text": "reheating adds bacteria"
+      },
+      {
+       "key": "D",
+       "text": "it can't fail"
+      }
+     ],
+     "answer": "B",
+     "why": "Heat kills the bacteria, not every toxin they made."
+    },
+    {
+     "id": "SAF-1.M1.Q4",
+     "type": "SCENARIO",
+     "lessonId": "SAF-1.M1.L1",
+     "safety": true,
+     "question": "You were sick with diarrhoea yesterday and feel fine today. Friends come to dinner tonight. Should you cook?",
+     "options": [],
+     "answer": "Preferably not: let someone else cook. If you must, wash hands thoroughly and often, and prepare nothing that is eaten raw.",
+     "why": "Norovirus is spread by hands and stays infectious after the symptoms stop."
+    },
+    {
+     "id": "SAF-1.M1.Q5",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "SAF-1.M1.L2",
+     "safety": true,
+     "question": "Which are the four core rules?",
+     "options": [
+      {
+       "key": "A",
+       "text": "wash, peel, cook, eat"
+      },
+      {
+       "key": "B",
+       "text": "clean, separate, heat, chill"
+      },
+      {
+       "key": "C",
+       "text": "buy, store, cook, serve"
+      },
+      {
+       "key": "D",
+       "text": "taste, season, plate, serve"
+      }
+     ],
+     "answer": "B",
+     "why": "The Voedingscentrum's rules, each stopping one route."
+    },
+    {
+     "id": "SAF-1.M1.Q6",
+     "type": "SCENARIO",
+     "lessonId": "SAF-1.M1.L2",
+     "safety": true,
+     "question": "You marinated chicken in yoghurt and spices and want to serve the leftover marinade as a sauce. What do you do?",
+     "options": [],
+     "answer": "Bring it to the boil before serving, or set part of the marinade aside before the raw chicken goes in.",
+     "why": "Marinade that touched raw poultry is raw poultry juice until it is heated."
+    },
+    {
+     "id": "SAF-1.M1.Q7",
+     "type": "SCENARIO",
+     "lessonId": "SAF-1.M1.L2",
+     "safety": true,
+     "question": "The leftover roast stood on the counter from 14:00 until 19:00. Can it go in the fridge for tomorrow?",
+     "options": [],
+     "answer": "No, discard it.",
+     "why": "Leftovers may be out of the fridge for 2 hours at most."
+    },
+    {
+     "id": "SAF-1.M1.Q8",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "SAF-1.M1.L2",
+     "safety": true,
+     "question": "Which action belongs to the \"chill\" rule?",
+     "options": [
+      {
+       "key": "A",
+       "text": "leftovers into the fridge within 2 hours"
+      },
+      {
+       "key": "B",
+       "text": "washing your hands"
+      },
+      {
+       "key": "C",
+       "text": "a separate board for raw meat"
+      },
+      {
+       "key": "D",
+       "text": "cooking chicken through"
+      }
+     ],
+     "answer": "A",
+     "why": "Chill slows growth; the others are clean, separate and heat."
+    }
+   ]
+  },
+  {
+   "id": "SAF-1.M2",
+   "title": "Hygiene and cross-contamination",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** the 8 items of `SAF-1.M2` in the course file, all safety items. Pass mark 80 %, with every safety item correct. This module is re-tested at every milestone."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "SAF-1.M2.L1",
+     "title": "Hands, cloths and sponges",
+     "prerequisites": [
+      "SAF-1.M1.L2"
+     ],
+     "competencies": [
+      {
+       "id": "SA-HYG",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** hands and cloths carry more pathogens around a kitchen than anything else. A good routine for both removes most of the risk before any cooking starts."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** soap, a timer (your phone), a clean hand towel, a clean dish cloth, and someone to watch or a phone to film."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Washing hands properly.* Use warm water and soap, and cover every surface: the palms, the backs, between the fingers, the thumbs and the nails. Rinse, then dry on a clean towel or a paper towel. Wash:"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "before you start cooking;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "after touching raw meat, fish or eggs;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "after the bin, your phone, your face or the toilet."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Cloths and sponges.* A cloth or sponge stays damp and warm, which is ideal for bacteria. A cloth wiped over a raw-meat spill spreads it everywhere it goes next."
+      },
+      {
+       "type": "paragraph",
+       "text": "*The routine:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "one cloth for the counter, and a separate towel for hands;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "cloths and tea towels replaced daily and washed hot;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "sponges replaced often, or replaced by a dish brush that dries between uses;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "paper towels for raw-meat spills, thrown away at once."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Hand-washing drill and towel routine (30 min).** Wash your hands with the timer running while someone watches (or film it). Check that you covered every surface, and note how long a thorough wash takes you. Set up the cloth and towel routine: hang the hand towel apart from the dish cloth, and put a stack of fresh cloths where you will reach for them. Then list the moments in a usual meal when you must wash your hands."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** you wash your hands without a reminder at every change from raw to ready-to-eat food, and there is a fresh cloth every day."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Hands wiped on the apron or the dish towel",
+         "No hand towel within reach",
+         "Hang a hand towel at the sink, used only for hands"
+        ],
+        [
+         "A spill from raw chicken spreads across the counter",
+         "One cloth for everything",
+         "Paper for raw spills; a separate cloth for the counter"
+        ],
+        [
+         "The sponge smells",
+         "A sponge kept for weeks",
+         "Replace it often, or switch to a brush that dries"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** this lesson is the \"clean\" rule of `SAF-1.M1.L2`."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the list of hand-washing moments in a usual meal, and how long your thorough wash took."
+      }
+     ]
+    },
+    {
+     "id": "SAF-1.M2.L2",
+     "title": "Separating raw and cooked",
+     "prerequisites": [],
+     "competencies": [
+      {
+       "id": "SA-HYG",
+       "level": 3
+      },
+      {
+       "id": "IN-STO",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** raw meat, poultry and fish often carry pathogens that cooking kills. The risk is that they reach food that won't be cooked again, such as a salad or bread. Separating them is the \"separate\" rule made concrete."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** the second cutting board (a different colour), a label or marker, the fridge, and a phone camera."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Cross-contamination.* Raw meat, poultry, fish and unwashed produce can carry pathogens to ready-to-eat food by hands, boards, knives, cloths and drips."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Separate tools.* Keep a separate board for raw meat and fish, in a colour you will recognise at a glance. With one board, cut the ready-to-eat food first and the raw protein last, then wash the board, the knife and your hands. Change or wash knives and tongs between raw and cooked: the tongs that turned raw chicken on the barbecue don't serve it."
+      },
+      {
+       "type": "paragraph",
+       "text": "*The fridge order* [S22]:"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Shelf",
+        "What goes there",
+        "Why"
+       ],
+       "rows": [
+        [
+         "Bottom shelf",
+         "Raw meat and fish, covered, in a container that catches drips",
+         "Nothing below can be dripped on"
+        ],
+        [
+         "Middle and top shelves",
+         "Ready-to-eat and cooked food, leftovers",
+         "Kept above anything raw"
+        ],
+        [
+         "Drawer",
+         "Vegetables",
+         "Kept moist, apart from raw meat"
+        ],
+        [
+         "Door",
+         "Drinks and sauces",
+         "The warmest part of the fridge"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Don't rinse raw chicken.* Rinsing splashes bacteria around the sink and onto anything nearby. Pat it dry with paper instead, and throw the paper away."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Fridge and board set-up (45 min).** Reorganise the fridge by the order above. Put raw meat and fish in a container on the bottom shelf. Label the raw-protein board. Photograph the fridge, shelf by shelf, and the board."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** nothing raw above anything ready to eat, and a raw board you recognise at a glance."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Raw mince on the top shelf",
+         "Putting the newest shopping on top",
+         "Raw meat and fish always go to the bottom, however full the fridge"
+        ],
+        [
+         "Cooked chicken served with the tongs that turned it raw",
+         "One set of tongs",
+         "A second pair, or wash the tongs before the food is cooked"
+        ],
+        [
+         "Water splashed from the sink onto the salad",
+         "Raw chicken rinsed in the sink",
+         "Don't rinse it; pat it dry with paper"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** raw meat and fish at the bottom of the fridge, covered [S22]; one board for raw protein; nothing raw touches ready-to-eat food."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the photos of the fridge order and the labelled board."
+      }
+     ]
+    },
+    {
+     "id": "SAF-1.M2.L3",
+     "title": "Cleaning versus disinfecting",
+     "prerequisites": [],
+     "competencies": [
+      {
+       "id": "SA-HYG",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** a board that looks clean can still carry what raw chicken left on it. Knowing the difference between cleaning and disinfecting, and when each is needed, gives you a routine that works without making the kitchen a laboratory."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** washing-up liquid, hot water, a scrubbing brush, a household disinfectant (optional; used as its label says), and a sheet of paper for the schedule."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Cleaning* uses detergent, hot water and friction. It removes dirt, grease and most microbes."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Disinfecting* kills or removes most of the microbes that are left on a surface that is already clean. Dirt shields microbes and weakens disinfectants, so cleaning always comes first."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Disinfecting at home* is done by heat (a hot dishwasher cycle, or boiling water poured over a board) or by a household disinfectant used exactly as its label says."
+      },
+      {
+       "type": "paragraph",
+       "text": "*When disinfecting is needed:* after raw meat, poultry, fish or eggs, and when someone in the house has been ill. Everyday surfaces need cleaning, not disinfectant."
+      },
+      {
+       "type": "paragraph",
+       "text": "*The board cycle after raw protein:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "scrape off the residue into the bin;"
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "wash with hot water and detergent, scrubbing;"
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "rinse;"
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "disinfect: the dishwasher, boiling water, or the disinfectant as the label says;"
+        },
+        {
+         "level": 0,
+         "marker": "5.",
+         "text": "dry upright, in the air."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*The routine:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "boards and knives: after each use;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "the counter: after each cooking session;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "the sink and the fridge: once a week, on a schedule taped to the fridge door."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Routine set-up (40 min).** Clean the fridge and the sink. Write the weekly schedule and tape it to the fridge. After your next raw-protein prep, do the board cycle step by step."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Repeat after two weeks (20 min).** Run the routine again from the schedule alone, without this lesson, and note what slipped."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** a schedule you actually follow; boards that air-dry upright; no smell from the sink or the cloths."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Disinfectant sprayed on a greasy board",
+         "Disinfecting instead of cleaning",
+         "Clean first, then disinfect"
+        ],
+        [
+         "A raw-chicken board rinsed under the cold tap",
+         "Rinsing is not cleaning",
+         "The full board cycle, with hot water and detergent"
+        ],
+        [
+         "Clean boards dried with the hand towel",
+         "The hand towel used for everything",
+         "Let boards dry upright in the air"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** a household disinfectant is used only as its label says, never mixed with another product."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the schedule, the board cycle you followed, and the note from the repeat after two weeks."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "SAF-1.M2.X1",
+     "title": "Kitchen hygiene audit, twice",
+     "description": "Kitchen hygiene audit with a checklist, repeated after two weeks.",
+     "competencies": [
+      {
+       "id": "SA-HYG",
+       "level": 3
+      },
+      {
+       "id": "IN-STO",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** show hygiene by habit on two different days while working with raw protein. Two audits two weeks apart, each during a meal in which you prepare raw chicken, minced meat or fish. Do the second without looking at the checklist until afterwards."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "the usual ingredients of two meals with raw protein, for example chicken thighs with a winter salad of white cabbage and carrot, or minced beef with a summer salad of cucumber and lettuce;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "the fridge thermometer;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "a phone on a stand, to film the station."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Recipe:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Audit the kitchen (10 min).** Before cooking, check it against the audit checklist:"
+        }
+       ]
+      },
+      {
+       "type": "table",
+       "header": [
+        "Area",
+        "Check"
+       ],
+       "rows": [
+        [
+         "Cloths",
+         "A fresh dish cloth; a separate hand towel; paper towels to hand"
+        ],
+        [
+         "Boards",
+         "The raw-protein board labelled and clean; a separate board or a plan for ready-to-eat food"
+        ],
+        [
+         "Fridge",
+         "Raw meat and fish on the bottom shelf, covered; the thermometer reading 4 °C or below"
+        ],
+        [
+         "Sink",
+         "Clean, with soap at hand"
+        ]
+       ]
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Film the station.** Set the phone so it sees the board and the sink. Film from the first contact with the raw protein until the board is cleaned. Cut the salad first, then the raw protein."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "**Photograph the fridge** shelf by shelf, with the thermometer reading visible."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "**Score the video** against the checklist: hands washed after raw protein, board and tools changed or washed, the counter wiped with the right cloth."
+        },
+        {
+         "level": 0,
+         "marker": "5.",
+         "text": "**Repeat after two weeks** with a different meal, without looking at the checklist until afterwards, and compare the two scores."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:** two videos that show hand washing, separate boards and cleaning at the right moments without reminders (the `SA-HYG` level 3 success row). The fridge-order photo and a fridge reading of 4 °C or below meet the `IN-STO` level 2 row with this module's quiz. The video is scored as:"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "*Competent*: a labelled raw board, and the moments of hand washing and cleaning visible;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "*Not yet*: the same board used for raw chicken and then for salad, or one cloth wiped across both."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 2 × 30 min of audit and filming within the meals; the meals themselves are dinner."
+      }
+     ]
+    }
+   ],
+   "items": [
+    {
+     "id": "SAF-1.M2.Q1",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "SAF-1.M2.L3",
+     "safety": true,
+     "question": "Why must a surface be cleaned before it is disinfected?",
+     "options": [
+      {
+       "key": "A",
+       "text": "disinfectant smells better on a clean surface"
+      },
+      {
+       "key": "B",
+       "text": "dirt shields microbes and weakens the disinfectant"
+      },
+      {
+       "key": "C",
+       "text": "cleaning is optional"
+      },
+      {
+       "key": "D",
+       "text": "it saves disinfectant"
+      }
+     ],
+     "answer": "B",
+     "why": "Disinfecting works on clean surfaces only."
+    },
+    {
+     "id": "SAF-1.M2.Q2",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "SAF-1.M2.L3",
+     "safety": true,
+     "question": "Which is a disinfecting step at home?",
+     "options": [
+      {
+       "key": "A",
+       "text": "a hot dishwasher cycle"
+      },
+      {
+       "key": "B",
+       "text": "wiping with a damp cloth"
+      },
+      {
+       "key": "C",
+       "text": "rinsing under the cold tap"
+      },
+      {
+       "key": "D",
+       "text": "drying with a tea towel"
+      }
+     ],
+     "answer": "A",
+     "why": "Heat disinfects; the others move microbes around."
+    },
+    {
+     "id": "SAF-1.M2.Q3",
+     "type": "ORDERING",
+     "lessonId": "SAF-1.M2.L3",
+     "safety": true,
+     "question": "Put in order for a board used for raw chicken: (a) air-dry upright (b) wash with hot water and detergent (c) scrape off the residue (d) disinfect with heat or a disinfectant (e) rinse",
+     "options": [],
+     "answer": "c, b, e, d, a",
+     "why": "Remove, wash, rinse, disinfect, dry."
+    },
+    {
+     "id": "SAF-1.M2.Q4",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "SAF-1.M2.L1",
+     "safety": true,
+     "question": "When must you wash your hands?",
+     "options": [
+      {
+       "key": "A",
+       "text": "only before cooking"
+      },
+      {
+       "key": "B",
+       "text": "after handling raw meat and before touching ready-to-eat food"
+      },
+      {
+       "key": "C",
+       "text": "only after the toilet"
+      },
+      {
+       "key": "D",
+       "text": "only when they look dirty"
+      }
+     ],
+     "answer": "B",
+     "why": "Hands carry pathogens from raw to ready-to-eat food."
+    },
+    {
+     "id": "SAF-1.M2.Q5",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "SAF-1.M2.L1",
+     "safety": true,
+     "question": "Why are dish cloths and sponges a hygiene risk?",
+     "options": [
+      {
+       "key": "A",
+       "text": "they are too rough"
+      },
+      {
+       "key": "B",
+       "text": "they stay damp and warm, so bacteria multiply in them"
+      },
+      {
+       "key": "C",
+       "text": "they absorb detergent"
+      },
+      {
+       "key": "D",
+       "text": "they are not a risk"
+      }
+     ],
+     "answer": "B",
+     "why": "Replace cloths daily and wash them hot."
+    },
+    {
+     "id": "SAF-1.M2.Q6",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "SAF-1.M2.L2",
+     "safety": true,
+     "question": "Where does raw meat go in the fridge?",
+     "options": [
+      {
+       "key": "A",
+       "text": "top shelf"
+      },
+      {
+       "key": "B",
+       "text": "door"
+      },
+      {
+       "key": "C",
+       "text": "bottom shelf, covered"
+      },
+      {
+       "key": "D",
+       "text": "vegetable drawer"
+      }
+     ],
+     "answer": "C",
+     "why": "Drips cannot reach ready-to-eat food below it."
+    },
+    {
+     "id": "SAF-1.M2.Q7",
+     "type": "SCENARIO",
+     "lessonId": "SAF-1.M2.L2",
+     "safety": true,
+     "question": "You have one board. You must cut raw chicken and slice cucumber for a salad. How do you work?",
+     "options": [],
+     "answer": "Cut the cucumber first; then the chicken; then wash the board, knife and hands. If the chicken came first, wash and dry the board and knife and wash your hands before the cucumber.",
+     "why": "Ready-to-eat food must not touch what raw protein touched."
+    },
+    {
+     "id": "SAF-1.M2.Q8",
+     "type": "IMAGE_IDENTIFICATION",
+     "lessonId": "SAF-1.M2.L2",
+     "safety": true,
+     "question": "A photo of a fridge: raw minced beef in a tray on the top shelf, a cheese board below it, leftovers in the middle, vegetables in the drawer. What is wrong?",
+     "options": [],
+     "answer": "The mince: it must go to the bottom shelf in a covered container.",
+     "why": "Drips from raw meat contaminate the food below."
+    }
+   ]
+  },
+  {
+   "id": "SAF-1.M3",
+   "title": "Temperature control",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** the 8 items of `SAF-1.M3` in the course file, all safety items. Pass mark 80 %, with every safety item correct."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "SAF-1.M3.L1",
+     "title": "The danger zone and the fridge",
+     "prerequisites": [
+      "SAF-1.M1.L2"
+     ],
+     "competencies": [
+      {
+       "id": "SA-TEMP",
+       "level": 2
+      },
+      {
+       "id": "IN-STO",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** temperature is the main control you have over bacterial growth. This lesson gives you the limits the program uses, and a fridge you know holds its temperature, because you have measured it."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** the fridge thermometer, the journal, and a week."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*The growth range.* Most pathogens multiply between fridge temperature and cooking temperature, fastest around body temperature. The program uses the measurable limits of assessment §9: cold food at 5 °C or below, hot food at 57 °C or above [S25]. Between them, time counts: the longer food stays there, the more the bacteria grow."
+      },
+      {
+       "type": "paragraph",
+       "text": "*The fridge and the freezer.* The fridge is set to 4 °C and the freezer to −18 °C or colder [S22]. The Dutch fridge rule is stricter than the 5 °C limit, so 4 °C applies."
+      },
+      {
+       "type": "paragraph",
+       "text": "*A dial is not a thermometer.* The numbers on a fridge dial are settings, not temperatures. The temperature differs from shelf to shelf, rises when the door opens and when warm food goes in, and is usually lowest at the back of the bottom shelf. Only a thermometer tells you what the fridge really holds."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Freezing.* Freezing stops growth but kills few bacteria. When the food thaws, they start again. Food thaws in the fridge, not on the counter."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Fridge log (15 minutes a day, for a week).** Put the fridge thermometer on the middle shelf. Read it every morning and evening, before opening the door for anything else, and write down the reading, how often the door was opened, and any warm food that went in. If it reads above 4 °C, turn the setting colder and read it again the next day, until it holds 4 °C. Read the freezer once during the week."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** a reading stable at 4 °C or below on the middle shelf, and back there within an hour after the weekly shop."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "The fridge is warmer than you think",
+         "Trusting the dial",
+         "Measure with the thermometer and adjust the setting"
+        ],
+        [
+         "A high reading that is gone an hour later",
+         "Reading straight after the door was open",
+         "Read before opening the door for anything else"
+        ],
+        [
+         "Some shelves stay warm",
+         "The fridge packed so full that air can't circulate",
+         "Leave space between items and around the back wall"
+        ],
+        [
+         "Meat thawing on the counter",
+         "Old habit",
+         "Thaw it in the fridge, on the bottom shelf, in a container"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** the fridge at 4 °C, the freezer at −18 °C or colder (assessment §9, the fridge and freezer rows); cold holding at 5 °C or below and hot holding at 57 °C or above (the hot and cold holding row)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the week's log: morning and evening readings, door openings, warm food added, the setting changes, and the freezer reading."
+      }
+     ]
+    },
+    {
+     "id": "SAF-1.M3.L2",
+     "title": "Thermometers and core temperatures",
+     "prerequisites": [],
+     "competencies": [
+      {
+       "id": "SA-TEMP",
+       "level": 2
+      },
+      {
+       "id": "KM-EQPT",
+       "level": 1
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** \"cooked right through\" is a temperature at the centre of the food, not a colour. A thermometer you trust, placed in the right spot, is the only way to know. Every later lesson with meat, poultry or fish relies on this one."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "the instant-read thermometer;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "a tall glass of crushed ice topped up with a little cold water, and a pan of water at a rolling boil;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "for the meal: 2 chicken thighs (bone in) and 250 g of minced beef shaped into 2 burgers or 6 meatballs, with whatever you usually serve with them;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "a clean cloth or paper and hot soapy water to clean the probe."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Calibration.* Stir the ice slurry for half a minute and put the probe in, without touching the glass. It should read 0 °C. In water at a rolling boil at sea level it reads about 100 °C. If it is off, note the offset and correct each reading by it, or adjust the thermometer if it allows."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Probing.*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "Put the tip in the thickest part of the food, away from bone, fat and the pan."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "In thin pieces (a chicken breast, a burger), go in from the side so the tip sits in the centre."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "Wait until the reading stops climbing before you read it."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "Clean the probe between raw and cooked food."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*The core temperatures* the program uses (assessment §9: the Voedingscentrum [S47], and the FDA *Food Code* [S25] where it gives a time):"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Food",
+        "Core temperature"
+       ],
+       "rows": [
+        [
+         "Poultry, and stuffed foods",
+         "75 °C"
+        ],
+        [
+         "Minced meat and minced fish",
+         "75 °C instantaneous, or 68 °C held for 17 seconds"
+        ],
+        [
+         "Fish and whole cuts of meat",
+         "63 °C for 15 seconds"
+        ],
+        [
+         "Whole roasts",
+         "A time-and-temperature table, taught in `MEA-2`"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "The Dutch rule \"right through\" (*door en door gaar*) [S21] is the same rule; the Voedingscentrum's number for meat and chicken is at least 75 °C at the core [S47]."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Why minced meat needs more than a steak.* On a whole cut of meat, bacteria sit on the outside, and searing kills them. Mincing spreads the outside through the whole piece, so the centre must get hot enough too."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Calibrate and probe (60 min, as part of a meal).** Calibrate the thermometer in the ice slurry and in boiling water, and write down both readings. Cook the chicken thighs and the burgers or meatballs your usual way. Probe each in the thickest part, write down the reading and where the probe went, and keep cooking any piece that is below its figure. Clean the probe between pieces."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** a reading of 0 °C in the ice slurry (or a known offset); the probe tip in the centre of the thickest part; a reading that has stopped climbing."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "A high reading, but the centre is underdone",
+         "The probe at the surface",
+         "Push the tip to the centre of the thickest part"
+        ],
+        [
+         "A reading far higher than expected",
+         "The tip touches the bone or the pan",
+         "Move it away from the bone and the pan"
+        ],
+        [
+         "A reading that is too low",
+         "Read too early",
+         "Wait until the number stops climbing"
+        ],
+        [
+         "Readings that don't match each other",
+         "An uncalibrated probe",
+         "Calibrate it in ice water and note the offset"
+        ],
+        [
+         "Chicken served pink at the bone, or dry",
+         "Judging by the colour of the juice",
+         "Probe it: 75 °C at the core"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** poultry 75 °C, minced meat 75 °C instantaneous (or 68 °C for 17 seconds), fish and whole cuts 63 °C for 15 seconds (assessment §9: the poultry, minced meat, and fish and intact meat rows)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the calibration readings and the offset; for each piece, the reading and where the probe went."
+      }
+     ]
+    },
+    {
+     "id": "SAF-1.M3.L3",
+     "title": "Cooling, storing and reheating",
+     "prerequisites": [
+      "SAF-1.M3.L1"
+     ],
+     "competencies": [
+      {
+       "id": "SA-TEMP",
+       "level": 3
+      },
+      {
+       "id": "IN-STO",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** spores that survive cooking grow while food cools slowly. A big pot of soup left to cool on the stove overnight is one of the most common causes of food poisoning at home. This lesson makes cooling fast, and reheating once, a habit."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** a batch dish (see `SAF-1.M3.X2`), shallow containers with lids about 5 cm deep, a sink or a bowl for a cold-water bath, labels, the thermometer, and two days."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Cooling fast.* The deeper the pot, the longer its centre stays warm. Spread the food out to cool it faster."
+      },
+      {
+       "type": "paragraph",
+       "text": "*At home* [S22]: leftovers go into the fridge within 2 hours. Cool them faster first, in shallow containers or in a pan standing in cold water, and stir now and then."
+      },
+      {
+       "type": "paragraph",
+       "text": "*The measurable standard* for batches and stocks [S25]: from 57 °C to 21 °C within 2 hours, and to 5 °C or below within 6 hours in total. You will use it from `STK-2` on; here you meet it."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Storing.* Cover the food, label it with what it is and the date, and keep it at most 2 days in the fridge, or freeze it [S22]."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Reheating.* Reheat until steaming hot right through (*stomend heet*) [S21]. Measured, that is 74 °C at the centre [S25]. Reheat leftovers once only: each cooling and reheating gives the bacteria another chance."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Rice.* *B. cereus* spores survive cooking. If cooked rice stands warm, the bacteria make a toxin that reheating does not destroy. Cool rice quickly, keep it in the fridge, and reheat it once only."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Cool, store, reheat (90 min over two days, plus waiting).** Cook the batch dish of `SAF-1.M3.X2`. Cool it in shallow containers in a cold-water bath, taking its temperature every 30 minutes, and put it in the fridge within 2 hours. Label it. On day two, reheat one portion until steaming hot and probe the centre."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** the food in the fridge within 2 hours; labels with a date; a reheating reading of 74 °C or above at the centre."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "The soup's centre is still warm the next morning",
+         "A full pot put in the fridge to cool overnight",
+         "Divide it into shallow containers and cool them in cold water first"
+        ],
+        [
+         "Food takes hours to cool",
+         "Containers too deep",
+         "Use containers about 5 cm deep"
+        ],
+        [
+         "You can't tell how old a leftover is",
+         "No date on the label",
+         "Label every container with the contents and the date"
+        ],
+        [
+         "Leftovers reheated a second time",
+         "Reheating the whole batch each time",
+         "Reheat only the portion you will eat"
+        ],
+        [
+         "Rice kept warm in the cooker all afternoon",
+         "Treating rice as harmless",
+         "Cool it fast and refrigerate it; never keep it warm for hours"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** leftovers in the fridge within 2 hours, cooled in shallow containers or a cold-water bath; at most 2 days in the fridge; reheated once, until steaming hot (74 °C at the centre); for batches, 57 °C to 21 °C within 2 hours and to 5 °C or below within 6 hours (assessment §9: the leftovers, cooling, reheating and cooling cooked food rows)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the cooling log (time and temperature every 30 minutes), the label, and the reheating reading."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "SAF-1.M3.X1",
+     "title": "Thermometer calibration and fridge log",
+     "description": "Thermometer calibration and fridge temperature log (one week).",
+     "competencies": [
+      {
+       "id": "SA-TEMP",
+       "level": 2
+      },
+      {
+       "id": "IN-STO",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** show that your instruments can be trusted, and that the fridge holds its temperature with a week's shopping in it. One week, through a full shopping cycle."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** the instant-read thermometer, the fridge thermometer, crushed ice, a pan of boiling water, labels and a pen."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Recipe:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Calibrate (10 min).** Test the probe in the ice slurry and in boiling water, as in `SAF-1.M3.L2`. Write down both readings and the offset."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Log the fridge for a week (5 min, twice a day).** Use this template:"
+        }
+       ]
+      },
+      {
+       "type": "table",
+       "header": [
+        "Day",
+        "Morning reading",
+        "Evening reading",
+        "Door openings",
+        "Warm food added",
+        "Setting changed?"
+       ],
+       "rows": [
+        [
+         "Mon",
+         "",
+         "",
+         "",
+         "",
+         ""
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "Read the freezer once during the week."
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "**Store the weekly shop (20 min).** Store the food by the fridge order of `SAF-1.M2.L2`. Label and date every opened or prepared item. Photograph each shelf."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:** the calibration readings, the week's log with the fridge at 4 °C or below, and the photos of the stocked fridge by zone with labels. With this module's quiz, this meets the `SA-TEMP` level 2 and `IN-STO` level 3 success rows."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 1 h active over a week."
+      }
+     ]
+    },
+    {
+     "id": "SAF-1.M3.X2",
+     "title": "Cool, store and reheat a batch",
+     "description": "Cool, store and reheat a batch of leftovers with a temperature log.",
+     "competencies": [
+      {
+       "id": "SA-TEMP",
+       "level": 3
+      },
+      {
+       "id": "IN-STO",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** measure the full temperature chain of a home batch: cooked through, cooled fast, stored, reheated once. Use your usual recipe for a stew or sauce with minced meat or chicken, or the one below. Two days."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "a pan with a lid, a wooden spoon, the thermometer;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "three or four shallow containers with lids, about 5 cm deep;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "a sink or a large bowl with cold water (and ice if you have it) for the cold-water bath;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "labels and a pen;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "the ingredients below, for 4–6 portions."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Recipe:** minced-beef and vegetable sauce, for 4–6 portions."
+      },
+      {
+       "type": "table",
+       "header": [
+        "Ingredient",
+        "Amount"
+       ],
+       "rows": [
+        [
+         "Minced beef",
+         "500 g"
+        ],
+        [
+         "Onions",
+         "2 (about 250 g), chopped"
+        ],
+        [
+         "Carrots",
+         "2 (about 200 g), diced"
+        ],
+        [
+         "Leek (in autumn and winter) or a courgette (in summer)",
+         "1, sliced"
+        ],
+        [
+         "Chopped tomatoes",
+         "1 tin of 400 g"
+        ],
+        [
+         "Water or stock",
+         "200 ml"
+        ],
+        [
+         "Sunflower or rapeseed oil",
+         "15 ml"
+        ],
+        [
+         "Fine salt",
+         "5 g, then to taste"
+        ],
+        [
+         "Black pepper",
+         "to taste"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "Day 1:"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Brown the meat (10 min).** Heat the oil in the pan over medium-high heat. Add the mince and break it up with the spoon until no pink is left on the outside. Wash your hands and the spoon after handling the raw mince."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Soften the vegetables (10 min).** Add the onions, carrots and leek or courgette, with the salt. Stir over medium heat until the onion is soft and translucent."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "**Simmer (30 min).** Add the tomatoes and the water or stock. Bring to the boil, cover, lower the heat and simmer gently, stirring now and then, until the carrots are tender."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "**Probe it.** Probe the sauce in the centre of the pan: the minced meat must reach 75 °C (assessment §9; a simmering sauce is well above it). Write down the reading and the time. Taste, and season with salt and pepper."
+        },
+        {
+         "level": 0,
+         "marker": "5.",
+         "text": "**Serve** the portions you eat tonight."
+        },
+        {
+         "level": 0,
+         "marker": "6.",
+         "text": "**Cool (up to 2 hours).** Divide the rest into the shallow containers, no more than about 5 cm deep. Stand them in the cold-water bath, uncovered, and stir now and then. Take the temperature in the centre of one container every 30 minutes and write it down."
+        },
+        {
+         "level": 0,
+         "marker": "7.",
+         "text": "**Refrigerate.** Within 2 hours of the end of cooking, put the lids on, label each container with \"beef sauce\" and the date, and put them in the fridge."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "Day 2:"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "8.",
+         "text": "**Reheat one portion** in a small pan over medium heat, stirring, until it is steaming hot right through. Probe the centre: it must read 74 °C or above. Write it down."
+        },
+        {
+         "level": 0,
+         "marker": "9.",
+         "text": "**Use the rest** within the 2 days, or freeze it before then. Don't reheat the same portion twice."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:** the core temperature at cooking; the cooling log, showing the dish in the fridge within 2 hours; the reheating reading of 74 °C or above (the `SA-TEMP` level 3 success row); and a photo of the labels (`IN-STO`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 1.5 h active over two days; the meal is dinner on both days."
+      }
+     ]
+    }
+   ],
+   "items": [
+    {
+     "id": "SAF-1.M3.Q1",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "SAF-1.M3.L1",
+     "safety": true,
+     "question": "What temperature should a home fridge hold?",
+     "options": [
+      {
+       "key": "A",
+       "text": "8 °C"
+      },
+      {
+       "key": "B",
+       "text": "6 °C"
+      },
+      {
+       "key": "C",
+       "text": "4 °C"
+      },
+      {
+       "key": "D",
+       "text": "0 °C"
+      }
+     ],
+     "answer": "C",
+     "why": "The Voedingscentrum rule, stricter than the 5 °C professional limit."
+    },
+    {
+     "id": "SAF-1.M3.Q2",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "SAF-1.M3.L1",
+     "safety": true,
+     "question": "How cold must the freezer be?",
+     "options": [
+      {
+       "key": "A",
+       "text": "−5 °C"
+      },
+      {
+       "key": "B",
+       "text": "−10 °C"
+      },
+      {
+       "key": "C",
+       "text": "−18 °C or colder"
+      },
+      {
+       "key": "D",
+       "text": "0 °C"
+      }
+     ],
+     "answer": "C",
+     "why": "At −18 °C growth stops."
+    },
+    {
+     "id": "SAF-1.M3.Q3",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "SAF-1.M3.L2",
+     "safety": true,
+     "question": "You calibrate your probe in stirred crushed ice with a little water. What should it read?",
+     "options": [
+      {
+       "key": "A",
+       "text": "−4 °C"
+      },
+      {
+       "key": "B",
+       "text": "0 °C"
+      },
+      {
+       "key": "C",
+       "text": "4 °C"
+      },
+      {
+       "key": "D",
+       "text": "10 °C"
+      }
+     ],
+     "answer": "B",
+     "why": "Melting ice is 0 °C; any other reading is the offset."
+    },
+    {
+     "id": "SAF-1.M3.Q4",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "SAF-1.M3.L2",
+     "safety": true,
+     "question": "What core temperature must chicken thighs reach?",
+     "options": [
+      {
+       "key": "A",
+       "text": "57 °C"
+      },
+      {
+       "key": "B",
+       "text": "63 °C"
+      },
+      {
+       "key": "C",
+       "text": "68 °C"
+      },
+      {
+       "key": "D",
+       "text": "75 °C"
+      }
+     ],
+     "answer": "D",
+     "why": "Poultry: 75 °C, instantaneous."
+    },
+    {
+     "id": "SAF-1.M3.Q5",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "SAF-1.M3.L2",
+     "safety": true,
+     "question": "A burger of minced beef is safe at which core reading, without a holding time?",
+     "options": [
+      {
+       "key": "A",
+       "text": "57 °C"
+      },
+      {
+       "key": "B",
+       "text": "63 °C"
+      },
+      {
+       "key": "C",
+       "text": "75 °C"
+      },
+      {
+       "key": "D",
+       "text": "54 °C"
+      }
+     ],
+     "answer": "C",
+     "why": "Minced meat: 75 °C instantaneous (or 68 °C for 17 s); mincing spreads surface bacteria through the meat."
+    },
+    {
+     "id": "SAF-1.M3.Q6",
+     "type": "SCENARIO",
+     "lessonId": "SAF-1.M3.L3",
+     "safety": true,
+     "question": "At 18:00 you finish 3 litres of chili for later in the week. How do you cool and store it?",
+     "options": [],
+     "answer": "Divide it into shallow containers, cool them in a cold-water bath, stirring; into the fridge within 2 hours, labelled and dated; eaten within 2 days or frozen.",
+     "why": "Shallow and cold cool fastest; a full pot stays warm for hours."
+    },
+    {
+     "id": "SAF-1.M3.Q7",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "SAF-1.M3.L3",
+     "safety": true,
+     "question": "Cooked rice stood in the warm rice cooker all afternoon. Why won't reheating make it safe?",
+     "options": [
+      {
+       "key": "A",
+       "text": "rice can't be reheated"
+      },
+      {
+       "key": "B",
+       "text": "*B. cereus* forms a toxin that heat does not destroy"
+      },
+      {
+       "key": "C",
+       "text": "the rice is too dry"
+      },
+      {
+       "key": "D",
+       "text": "it will be safe"
+      }
+     ],
+     "answer": "B",
+     "why": "Spores survive cooking; the toxin they make in warm rice survives reheating."
+    },
+    {
+     "id": "SAF-1.M3.Q8",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "SAF-1.M3.L3",
+     "safety": true,
+     "question": "How do you reheat leftovers?",
+     "options": [
+      {
+       "key": "A",
+       "text": "until warm in the middle"
+      },
+      {
+       "key": "B",
+       "text": "until steaming hot throughout (74 °C), and once only"
+      },
+      {
+       "key": "C",
+       "text": "twice to be safe"
+      },
+      {
+       "key": "D",
+       "text": "just to serving temperature"
+      }
+     ],
+     "answer": "B",
+     "why": "Steaming hot throughout; reheating twice gives growth two chances."
+    }
+   ]
+  },
+  {
+   "id": "SAF-1.M4",
+   "title": "Allergens and kitchen accidents",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** the 8 items of `SAF-1.M4` in the course file, all safety items. Pass mark 80 %, with every safety item correct."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "SAF-1.M4.L1",
+     "title": "The 14 allergens and cross-contact",
+     "prerequisites": [],
+     "competencies": [
+      {
+       "id": "SA-ALLG",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** for someone with a food allergy, a trace of the wrong ingredient can cause a severe reaction. Cooking for others means knowing where allergens hide and keeping them out of a dish, from the shop to the plate."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** five prepacked products from your pantry (for example a stock cube, a sausage, a sauce, bread and a biscuit), and the journal."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*The 14 groups* that EU law requires to be declared [S23]:"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Cereals containing gluten (wheat, rye, barley, oats, spelt)",
+        "Crustaceans",
+        "Eggs"
+       ],
+       "rows": [
+        [
+         "Fish",
+         "Peanuts",
+         "Soybeans"
+        ],
+        [
+         "Milk",
+         "Nuts (tree nuts)",
+         "Celery"
+        ],
+        [
+         "Mustard",
+         "Sesame",
+         "Sulphites (above 10 mg/kg or 10 mg/l)"
+        ],
+        [
+         "Lupin",
+         "Molluscs",
+         ""
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Where they hide.* Some allergens turn up where you would not expect them:"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "milk in sausages and bread;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "celery in stock cubes and spice mixes;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "mustard in dressings;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "fish in Worcestershire sauce (it contains anchovies);"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "sulphites in wine and dried fruit;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "lupin flour in some breads and gluten-free products;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "soy in many processed foods."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Reading labels.* On a prepacked product, the allergens are emphasised in the ingredient list itself, for example in bold, including inside compound ingredients [S23]. Read the whole list, not only the front of the pack. \"May contain\" warnings are voluntary: their absence doesn't prove a product is free of traces."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Cross-contact.* Cooking does not remove allergens, and a trace can be enough to harm an allergic guest. Prevent cross-contact by:"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "cooking the allergen-free dish first, and covering it;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "using clean tools and pans;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "keeping separate spoons for tasting."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Label hunt (45 min).** Read the ingredient lists of your five products. For each, list every allergen group, including the ones hidden in compound ingredients. Then plan one household meal free of a named allergen (for example celery): which products you can't use, what replaces them, and in what order you cook."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** every allergen on a label found, including the ones in bold inside compound ingredients."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "An allergen missed",
+         "Reading only the \"contains\" line on the front",
+         "Read the full ingredient list; look for the emphasised words"
+        ],
+        [
+         "Celery in a \"plain\" soup",
+         "Assuming a homemade stock is free of celery",
+         "Check every ingredient of the stock, including the cube"
+        ],
+        [
+         "Traces of nuts in the allergen-free dish",
+         "Nuts toasted in the same pan",
+         "Cook the allergen-free dish first, with clean pans"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** an allergic guest's dish is cooked first, with clean tools, covered and kept apart. When in doubt about a product, leave it out."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the five allergen lists, and the allergen-free meal plan."
+      }
+     ]
+    },
+    {
+     "id": "SAF-1.M4.L2",
+     "title": "Burns, cuts and fires",
+     "prerequisites": [],
+     "competencies": [
+      {
+       "id": "SA-PHYS",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** most kitchen accidents have a few common causes and can be prevented. When one happens anyway, the first minute decides how bad it gets. You learn the actions now, so that you don't have to think when it counts."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** a lid that fits your largest frying pan, the fire blanket, the first-aid kit, and a cold, empty pan."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Causes of accidents.*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**Burns:** steam from a lid or a pan; handles turned outwards and knocked; splashing oil; wet towels used as oven gloves, which let the heat straight through."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**Cuts:** dull knives that slip; knives left in the washing-up water, out of sight; cutting towards your hand."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**Fires:** oil left unattended on the heat."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*A fat fire.* If oil in a pan catches fire:"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "turn off the heat, if you can reach it safely;"
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "cover the pan with a lid or the fire blanket;"
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "leave it covered until it is completely cold;"
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "if the fire doesn't go out, leave the kitchen, close the door and call 112."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "Never use water: it turns to steam at once and throws burning fat out of the pan. Never carry the pan to the sink or outside."
+      },
+      {
+       "type": "paragraph",
+       "text": "*First aid.*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**Burns:** cool the burned skin at once for 10 to 20 minutes, preferably under lukewarm, gently running tap water, with the stream just above the burn so the water runs over it [S49]. Cool only the burn, not the whole person. Leave blisters intact. Afterwards, cover a burn that has blistered or broken the skin with cling film or a sterile non-stick dressing, and call the GP urgently while you cool it. Call 112, or have someone call, while you cool a"
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "serious or large burn [S49]."
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**Cuts:** press a clean cloth or dressing on the cut until it stops bleeding, then clean and cover it."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**Get medical help** for deep cuts, and for large or deep burns."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Prevention.*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "a dry towel or oven gloves, never a wet one;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "handles turned inwards, away from the edge of the hob;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "a lid and the fire blanket within reach whenever there is oil in a pan;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "knives washed straight after use, never left in the water;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "a falling knife is let fall: step back."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:** theory only (1.5 h): study the procedures. Then mount the fire blanket within reach of the hob (not behind it) and put the first-aid kit where you can find it without looking. With a cold, empty pan on the hob, walk through the fat-fire steps aloud: reach for the switch, slide the lid on from the front, leave it."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** you say the fat-fire steps in order without hesitating; the lid and the blanket are within reach of the hob."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Water thrown on burning oil",
+         "Reflex",
+         "Practise the steps aloud until \"lid, not water\" is the reflex"
+        ],
+        [
+         "A burning pan carried to the sink",
+         "Trying to get the fire away",
+         "Leave the pan where it is; cover it"
+        ],
+        [
+         "The fire blanket can't be reached in time",
+         "Stored in a cupboard or the cellar",
+         "Mount it near the hob, where you can reach it without leaning over the pans"
+        ],
+        [
+         "A cut hand",
+         "Catching a falling knife",
+         "Step back and let it fall"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** this lesson is the safety. For burns, the Dutch Red Cross [S49]; for fires, call 112 if a fire doesn't go out."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** where the fire blanket and the first-aid kit are, and the fat-fire steps in your own words."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "SAF-1.M4.X1",
+     "title": "Label reading",
+     "description": "Label-reading exercise: find the allergens in five pantry products.",
+     "competencies": [
+      {
+       "id": "SA-ALLG",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** find every allergen on real labels, including the hidden ones."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** five prepacked products from the pantry, for example a stock cube, a sausage, a sauce, bread and a biscuit; the list of the 14 groups from `SAF-1.M4.L1`; the worksheet below."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Recipe:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Photograph** each ingredient list."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Fill in the worksheet** for each product:"
+        }
+       ]
+      },
+      {
+       "type": "table",
+       "header": [
+        "Product",
+        "Allergen groups in the list",
+        "Where each hides (which ingredient)",
+        "\"May contain\" warnings"
+       ],
+       "rows": []
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "**Mark the \"may contain\" warnings** in their own column: they are not part of the ingredient list."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "**Check your answers** against the key below, then against the module's quiz."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**The key: where to look first.** This tells you what to check, not what is in your product. The label decides."
+      },
+      {
+       "type": "table",
+       "header": [
+        "Product",
+        "Check for"
+       ],
+       "rows": [
+        [
+         "Stock cube or powder",
+         "Celery (often inside \"vegetable extract\" or \"spices\"); milk, in many cubes"
+        ],
+        [
+         "Sausage",
+         "Milk"
+        ],
+        [
+         "Sauces and dressings",
+         "Mustard; fish in Worcestershire sauce"
+        ],
+        [
+         "Bread",
+         "Cereals with gluten; milk; lupin flour in some breads and gluten-free products"
+        ],
+        [
+         "Biscuits",
+         "Cereals with gluten"
+        ],
+        [
+         "Dried fruit, wine",
+         "Sulphites"
+        ],
+        [
+         "Any processed food",
+         "Soy"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:** the five label photos and the completed worksheet. `SA-ALLG` level 2 rests on the module's quiz at 100 % (its success row); the worksheet is the practice for it, and for level 3 in S2."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 45 min active."
+      }
+     ]
+    }
+   ],
+   "items": [
+    {
+     "id": "SAF-1.M4.Q1",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "SAF-1.M4.L1",
+     "safety": true,
+     "question": "Which of these is one of the 14 EU allergen groups?",
+     "options": [
+      {
+       "key": "A",
+       "text": "celery"
+      },
+      {
+       "key": "B",
+       "text": "tomato"
+      },
+      {
+       "key": "C",
+       "text": "garlic"
+      },
+      {
+       "key": "D",
+       "text": "black pepper"
+      }
+     ],
+     "answer": "A",
+     "why": "Celery is often hidden in stock cubes and spice mixes."
+    },
+    {
+     "id": "SAF-1.M4.Q2",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "SAF-1.M4.L1",
+     "safety": true,
+     "question": "How does an EU ingredient list show allergens?",
+     "options": [
+      {
+       "key": "A",
+       "text": "only on the front of the pack"
+      },
+      {
+       "key": "B",
+       "text": "emphasised in the ingredient list, for example in bold"
+      },
+      {
+       "key": "C",
+       "text": "in a separate leaflet"
+      },
+      {
+       "key": "D",
+       "text": "it doesn't have to"
+      }
+     ],
+     "answer": "B",
+     "why": "The emphasis makes them visible inside compound ingredients too."
+    },
+    {
+     "id": "SAF-1.M4.Q3",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "SAF-1.M4.L1",
+     "safety": true,
+     "question": "Where are sulphites often found?",
+     "options": [
+      {
+       "key": "A",
+       "text": "fresh carrots"
+      },
+      {
+       "key": "B",
+       "text": "wine and dried apricots"
+      },
+      {
+       "key": "C",
+       "text": "plain rice"
+      },
+      {
+       "key": "D",
+       "text": "fresh fish"
+      }
+     ],
+     "answer": "B",
+     "why": "Sulphites above 10 mg/kg must be declared."
+    },
+    {
+     "id": "SAF-1.M4.Q4",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "SAF-1.M4.L1",
+     "safety": true,
+     "question": "Which allergen group can hide in Worcestershire sauce?",
+     "options": [
+      {
+       "key": "A",
+       "text": "fish"
+      },
+      {
+       "key": "B",
+       "text": "sesame"
+      },
+      {
+       "key": "C",
+       "text": "lupin"
+      },
+      {
+       "key": "D",
+       "text": "peanuts"
+      }
+     ],
+     "answer": "A",
+     "why": "It is made with anchovies."
+    },
+    {
+     "id": "SAF-1.M4.Q5",
+     "type": "SCENARIO",
+     "lessonId": "SAF-1.M4.L1",
+     "safety": true,
+     "question": "A guest has a tree-nut allergy. Your menu has a salad with toasted walnuts for the others. How do you cook?",
+     "options": [],
+     "answer": "Make the guest's dish first, cover it and keep it apart; toast the nuts last in a separate pan; use clean tools and separate tasting spoons; plate the guest's dish first.",
+     "why": "Cooking does not remove allergens, and traces are enough."
+    },
+    {
+     "id": "SAF-1.M4.Q6",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "SAF-1.M4.L2",
+     "safety": true,
+     "question": "Oil in a pan catches fire. What do you do?",
+     "options": [
+      {
+       "key": "A",
+       "text": "pour water on it"
+      },
+      {
+       "key": "B",
+       "text": "carry the pan outside"
+      },
+      {
+       "key": "C",
+       "text": "turn off the heat if safe and cover the pan with a lid or fire blanket"
+      },
+      {
+       "key": "D",
+       "text": "blow on it"
+      }
+     ],
+     "answer": "C",
+     "why": "Water turns to steam and throws burning fat out; covering takes away the oxygen."
+    },
+    {
+     "id": "SAF-1.M4.Q7",
+     "type": "ORDERING",
+     "lessonId": "SAF-1.M4.L2",
+     "safety": true,
+     "question": "Put the fat-fire steps in order: (a) leave the lid on until the pan is cold (b) turn off the heat if you can reach it safely (c) call 112 if it does not go out (d) cover the pan with a lid or fire blanket",
+     "options": [],
+     "answer": "b, d, a, c",
+     "why": "Heat off, smother, wait, call for help if needed."
+    },
+    {
+     "id": "SAF-1.M4.Q8",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "SAF-1.M4.L2",
+     "safety": true,
+     "question": "Which habit prevents cuts?",
+     "options": [
+      {
+       "key": "A",
+       "text": "catching a falling knife"
+      },
+      {
+       "key": "B",
+       "text": "leaving knives in the washing-up water"
+      },
+      {
+       "key": "C",
+       "text": "washing a knife straight after use and putting it away"
+      },
+      {
+       "key": "D",
+       "text": "using a blunt knife because it is safer"
+      }
+     ],
+     "answer": "C",
+     "why": "Hidden knives in water and blunt knives that slip cause most cuts."
+    }
+   ]
+  }
+ ]
+}

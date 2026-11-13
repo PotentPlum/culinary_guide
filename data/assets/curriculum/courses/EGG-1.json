@@ -1,0 +1,2861 @@
+{
+ "schemaVersion": 1,
+ "id": "EGG-1",
+ "introduction": [
+  {
+   "type": "paragraph",
+   "text": "**Before you start.** The egg is your first protein and the best doneness lab there is. It is cheap, it cooks in minutes, and every difference of a few degrees or a minute shows in the cross-section. What you learn here about eggs is the logic that the meat and fish courses depend on:"
+  },
+  {
+   "type": "list",
+   "items": [
+    {
+     "level": 0,
+     "marker": "",
+     "text": "proteins set at defined temperatures;"
+    },
+    {
+     "level": 0,
+     "marker": "",
+     "text": "carryover continues after the heat is off;"
+    },
+    {
+     "level": 0,
+     "marker": "",
+     "text": "gentle heat gives a tender result, and harsh heat a rubbery one."
+    }
+   ]
+  },
+  {
+   "type": "paragraph",
+   "text": "The course moves from egg science, through the classical preparations (boiled, poached, fried, scrambled and the omelette, each to a stated standard), to a stirred and a baked custard, and ends with a breakfast for four served on time. Most of the evidence is cross-section photos: a boiled egg cut in half shows exactly what happened inside."
+  },
+  {
+   "type": "paragraph",
+   "text": "*Eggs and risk groups.* Soft eggs (a runny or jammy yolk, a soft omelette, soft scrambled eggs, the water-bath eggs of module 1) are not served to pregnant people, young children, older people or people with weakened immunity. For them, an egg is cooked until it is fully set (assessment §9, the risk-group row). Ask before you cook for guests."
+  },
+  {
+   "type": "paragraph",
+   "text": "Plan about three weeks. Most lessons are breakfasts or light dinners. The omelette series and the boiled-egg series each need a dozen eggs in one session, so buy eggs by the size class you will use for the timing table (M or L), and keep using that class. Every egg is eaten: boiled eggs become lunch, omelettes become breakfast or supper, and the whites left over from the custards are frozen for meringue in `BAK-2`."
+  },
+  {
+   "type": "paragraph",
+   "text": "**Have ready:** a small saucepan and a larger one; a 20 cm non-stick or seasoned omelette pan; a 24–26 cm ovenproof frying pan; the instant-read thermometer; a slotted spoon; a small sieve or tea strainer; a large bowl for ice water; four ramekins or heatproof cups and a deep oven dish; a stick blender if you have one; a timer; a phone for photos; the cue log (`HEA-1`)."
+  }
+ ],
+ "modules": [
+  {
+   "id": "EGG-1.M1",
+   "title": "Egg science",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** the 8 items of `EGG-1.M1` in the course file, 2 of them safety items. Pass mark 80 %, with every safety item correct."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "EGG-1.M1.L1",
+     "title": "Anatomy, freshness and safety",
+     "prerequisites": [
+      "SAF-1.M1.L1"
+     ],
+     "competencies": [
+      {
+       "id": "IN-DAI",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** an egg's age changes how it behaves: a fresh egg poaches into a neat oval, an older one spreads into wisps but peels easily once boiled. And an egg is a high-risk food, so how you store and handle it matters from the moment you bring it home."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** six eggs of different ages: a few from a fresh box and a few older ones from the fridge, each marked in pencil with its best-before date; a tall glass of cold water; a flat white plate; a phone; a helper to number the eggs."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Anatomy.*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**The shell** is porous, so moisture and air pass through it slowly. Under it lie two **membranes**."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**The air cell** sits between the membranes at the broad end. It grows as the egg ages and loses moisture."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**The white** has two parts: a **thick white** around the yolk and a **thin white** outside it. With age, the thick white thins."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**The yolk** is held in the centre by two twisted cords, the **chalazae**."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Sizes.* EU size classes go by weight: S (under 53 g), M (53–63 g), L (63–73 g) and XL (73 g and over). A recipe's \"one egg\" can mean anything from a small to an extra-large egg, a difference of 20 g or more, so baking recipes weigh them."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Freshness.*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**The water test:** a fresh egg lies flat on the bottom; an older one tilts or stands on its end, because its air cell has grown; one that floats is old."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**On a plate:** a fresh egg has a high, domed yolk and a thick white that holds its shape around it; an old egg spreads flat and thin."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Safety.* Eggs are a high-risk food because of *Salmonella* (`SAF-1.M1.L1`)."
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "Keep them in their box, in the fridge, unwashed. Washing removes the protective layer on the shell."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "Don't use cracked or dirty eggs."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "Wash your hands after cracking them."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "Risk groups avoid raw and runny eggs [S21] (assessment §9)."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "The best-before date assumes the eggs were kept cool."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Grade a box (45 min).** The helper numbers the six eggs and keeps the dates hidden. Water-test each and note how it lies. Then crack each, one at a time, onto the plate, and photograph it from the side and from above. Rank the six from freshest to oldest, from the yolk and the white alone. Then check your ranking against the dates. The cracked eggs go into scrambled eggs or an omelette the same day."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** the eggs ranked by age correctly from the white and the yolk alone."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Eggs washed \"to be safe\"",
+         "Washing eggs, which removes the protective layer",
+         "Store unwashed; wash your hands, not the eggs"
+        ],
+        [
+         "Bits of shell in the egg",
+         "Cracking eggs on the bowl's rim, which pushes shell inside",
+         "Crack on the flat counter"
+        ],
+        [
+         "A runny egg served to a pregnant guest",
+         "Not asking about risk groups",
+         "Ask; for risk groups, fully set eggs only"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** wash your hands after handling raw eggs; the cracked eggs are cooked the same day or covered in the fridge."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the water-test notes, the photos, your ranking and the dates."
+      }
+     ]
+    },
+    {
+     "id": "EGG-1.M1.L2",
+     "title": "How eggs set",
+     "prerequisites": [
+      "EGG-1.M1.L1"
+     ],
+     "competencies": [
+      {
+       "id": "SC-PROT",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** every egg preparation, and later every piece of meat and fish, is a question of how far the proteins have set. Once you know at what temperatures the white and the yolk set, you can predict a soft-boiled egg, rescue a custard, and understand why scrambled eggs weep."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** the inputs of `EGG-1.M1.X1`: 6 eggs; a saucepan with about 3 litres of water; the thermometer; a bowl of ice water; a timer; labels."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Denaturation and coagulation.* Egg proteins start as tight, folded coils. Heat unfolds them (**denaturation**), and the unfolded proteins bond to each other into a network that traps water (**coagulation**). A liquid becomes a soft gel, then a solid. Too much heat tightens the network so far that it squeezes out its water: rubbery whites, and scrambled eggs sitting in a puddle [S16]."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Different proteins set at different temperatures.*"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Part",
+        "What happens"
+       ],
+       "rows": [
+        [
+         "White",
+         "Begins to set in the low sixties, but its main protein needs about 80 °C to be firm"
+        ],
+        [
+         "Yolk",
+         "Thickens from about 65 °C and sets by about 70 °C"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "That is why a soft-boiled egg can have a set white and a runny yolk: in boiling water the white, on the outside, gets far hotter than the yolk in the centre. And it is why an egg held at 65 °C for an hour is the reverse: a barely set white around a thick, fudgy yolk."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Dilution raises the setting temperature.* Sugar and milk keep the egg proteins apart, so a custard thickens only around 80 °C instead of setting at 70 °C. That gives you room to work, and it is why a custard can be cooked on the stove at all (`EGG-1.M4`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Holding a temperature.* The test only works if the water stays at its temperature for the whole 45 minutes. Use the method of `HEA-1.M5.X2`: adjust the burner by the surface first, then check the thermometer, and log it."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Water-bath test (45 min active, about 2 h elapsed).** Run `EGG-1.M1.X1`: two eggs at each of 62, 65 and 70 °C, held for 45 minutes each, the water temperature logged every 10 minutes. Before you crack each pair, write what you expect to see."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** three clearly different cross-sections, in the order the theory predicts."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Two temperatures look alike",
+         "Letting the bath drift by several degrees",
+         "Log every 10 minutes and adjust; keep a kettle of hot water ready"
+        ],
+        [
+         "The eggs look raw",
+         "Cracking the eggs too early",
+         "The full 45 minutes"
+        ],
+        [
+         "Photos that can't be told apart afterwards",
+         "Not photographing each egg with its temperature label",
+         "A label next to every egg in every photo"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** these eggs are soft eggs: eat them yourself, or serve them only to guests outside the risk groups (§9)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the water log, the predictions and the labelled photos (in `EGG-1.M1.X1`)."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "EGG-1.M1.X1",
+     "title": "Eggs held at 62, 65 and 70 °C",
+     "description": "Eggs held at 62, 65 and 70 °C; photograph the cross-sections.",
+     "competencies": [
+      {
+       "id": "SC-PROT",
+       "level": 2
+      },
+      {
+       "id": "IN-DAI",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** see the setting temperatures of the white and the yolk, and check the freshness of the eggs you use. One pot, held at each temperature in turn for 45 minutes, with the thermometer in the water."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** 6 eggs, from the fridge; a saucepan with about 3 litres of water; the thermometer; a slotted spoon; a bowl of ice water; two small bowls; a sharp knife; labels (62, 65, 70); a kettle; a timer; the journal; a phone."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Recipe:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Freshness.** Water-test the six eggs and note how each lies. Photograph the test."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**62 °C.** Heat the water to 62 °C, checking with the thermometer. Lower two eggs in on the slotted spoon. Hold the water at 62 °C for 45 minutes, logging its temperature every 10 minutes; add a little hot water from the kettle, or lower the heat, to correct it."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "**Cool and open.** Lift the eggs into the ice water for 1 minute. Crack one into a small bowl. Cut the other in half in its shell with the knife, over the second bowl. Photograph both with the label."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "**65 °C and 70 °C.** Raise the water to 65 °C and repeat with the next two eggs; then 70 °C with the last two."
+        },
+        {
+         "level": 0,
+         "marker": "5.",
+         "text": "**Explain** each result in two or three sentences by the setting temperatures of the white and the yolk."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*What to expect:* at 62 °C, a milky, barely set white and a liquid yolk; at 65 °C, a soft, jelly-like white and a thick yolk; at 70 °C, a softly set white and a yolk that holds its shape."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "The water log, the labelled cross-sections and the explanation. `SC-PROT` level 2 rests on this module's quiz."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "For `IN-DAI` level 2, in part: the freshness test photographed, with this module's items on freshness, structure and safe handling at 80 %. The custard part of the row follows in `EGG-1.M4.X1`."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "AI review checks that the cross-sections match the expected pattern: *competent* is the three eggs, each at its temperature and correctly labelled."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 45 min active; about 2 h 30 min elapsed."
+      }
+     ]
+    }
+   ],
+   "items": [
+    {
+     "id": "EGG-1.M1.Q1",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "EGG-1.M1.L1",
+     "safety": false,
+     "question": "In the water test, an egg stands on its end. What does that tell you?",
+     "options": [
+      {
+       "key": "A",
+       "text": "it is very fresh"
+      },
+      {
+       "key": "B",
+       "text": "it is older: its air cell has grown"
+      },
+      {
+       "key": "C",
+       "text": "it is cracked"
+      },
+      {
+       "key": "D",
+       "text": "it is unsafe to eat"
+      }
+     ],
+     "answer": "B",
+     "why": "The air cell grows as moisture leaves through the shell."
+    },
+    {
+     "id": "EGG-1.M1.Q2",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "EGG-1.M1.L1",
+     "safety": false,
+     "question": "Cracked onto a plate, a fresh egg has:",
+     "options": [
+      {
+       "key": "A",
+       "text": "a flat yolk and a runny white"
+      },
+      {
+       "key": "B",
+       "text": "a domed yolk and a thick white that holds its shape"
+      },
+      {
+       "key": "C",
+       "text": "a pale yolk"
+      },
+      {
+       "key": "D",
+       "text": "no difference from an old egg"
+      }
+     ],
+     "answer": "B",
+     "why": "The thick white thins as the egg ages."
+    },
+    {
+     "id": "EGG-1.M1.Q3",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "EGG-1.M1.L1",
+     "safety": true,
+     "question": "Who should avoid raw and runny eggs?",
+     "options": [
+      {
+       "key": "A",
+       "text": "nobody"
+      },
+      {
+       "key": "B",
+       "text": "vulnerable groups: young children, pregnant people, older people, people with weak immunity"
+      },
+      {
+       "key": "C",
+       "text": "only children"
+      },
+      {
+       "key": "D",
+       "text": "athletes"
+      }
+     ],
+     "answer": "B",
+     "why": "Eggs are a high-risk food because of *Salmonella*."
+    },
+    {
+     "id": "EGG-1.M1.Q4",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "EGG-1.M1.L1",
+     "safety": true,
+     "question": "How do you store eggs at home?",
+     "options": [
+      {
+       "key": "A",
+       "text": "washed, in a bowl on the counter"
+      },
+      {
+       "key": "B",
+       "text": "unwashed, in their box, in the fridge"
+      },
+      {
+       "key": "C",
+       "text": "in the freezer in their shells"
+      },
+      {
+       "key": "D",
+       "text": "in water"
+      }
+     ],
+     "answer": "B",
+     "why": "Washing removes the protective layer; cool storage keeps them safe."
+    },
+    {
+     "id": "EGG-1.M1.Q5",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "EGG-1.M1.L1",
+     "safety": false,
+     "question": "Why do baking recipes give eggs by weight?",
+     "options": [
+      {
+       "key": "A",
+       "text": "eggs are sold by weight"
+      },
+      {
+       "key": "B",
+       "text": "eggs of the same nominal size can differ by about 20 g"
+      },
+      {
+       "key": "C",
+       "text": "to avoid cracking them"
+      },
+      {
+       "key": "D",
+       "text": "for hygiene"
+      }
+     ],
+     "answer": "B",
+     "why": "That difference changes a batter."
+    },
+    {
+     "id": "EGG-1.M1.Q6",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "EGG-1.M1.L2",
+     "safety": false,
+     "question": "What happens when egg proteins set?",
+     "options": [
+      {
+       "key": "A",
+       "text": "they melt"
+      },
+      {
+       "key": "B",
+       "text": "they unfold and bond into a network that traps water"
+      },
+      {
+       "key": "C",
+       "text": "they turn into sugar"
+      },
+      {
+       "key": "D",
+       "text": "they evaporate"
+      }
+     ],
+     "answer": "B",
+     "why": "Denaturation, then coagulation."
+    },
+    {
+     "id": "EGG-1.M1.Q7",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "EGG-1.M1.L2",
+     "safety": false,
+     "question": "An egg is held at 65 °C for an hour. What do you expect?",
+     "options": [
+      {
+       "key": "A",
+       "text": "a hard-boiled egg"
+      },
+      {
+       "key": "B",
+       "text": "a white that is barely set and a thick, fudgy yolk"
+      },
+      {
+       "key": "C",
+       "text": "a raw egg"
+      },
+      {
+       "key": "D",
+       "text": "a green ring"
+      }
+     ],
+     "answer": "B",
+     "why": "The yolk thickens around 65 °C; the white needs about 80 °C to be firm."
+    },
+    {
+     "id": "EGG-1.M1.Q8",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "EGG-1.M1.L2",
+     "safety": false,
+     "question": "Why do overcooked scrambled eggs weep?",
+     "options": [
+      {
+       "key": "A",
+       "text": "they were too fresh"
+      },
+      {
+       "key": "B",
+       "text": "the protein network tightens and squeezes out water"
+      },
+      {
+       "key": "C",
+       "text": "too much salt"
+      },
+      {
+       "key": "D",
+       "text": "the pan was cold"
+      }
+     ],
+     "answer": "B",
+     "why": "Excess heat over-tightens the network."
+    }
+   ]
+  },
+  {
+   "id": "EGG-1.M2",
+   "title": "Eggs in the shell",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** the 8 items of `EGG-1.M2` in the course file. Pass mark 80 %."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "EGG-1.M2.L1",
+     "title": "Boiled eggs",
+     "prerequisites": [
+      "EGG-1.M1.L2"
+     ],
+     "competencies": [
+      {
+       "id": "TS-EGG",
+       "level": 2
+      },
+      {
+       "id": "JD-CUES",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** a boiled egg is the simplest dish there is, and the one where a minute shows most. You learn to predict the yolk before you cut it, to avoid the grey-green ring, and to peel an egg cleanly."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** 6 eggs of one size class, from the fridge; a saucepan with enough water to cover them by 2 cm; a slotted spoon; a bowl of ice water; a timer; a knife; a board; the cue log; a phone."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Into boiling water, from the fridge.* Lower fridge-cold eggs gently into water that is already boiling, on a spoon, and start the timer. This gives consistent timing: the water and the eggs start from the same point every time. A cold start depends on the pan and the hob. Eggs started in boiling water also peel more easily."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Shocking.* Lift the eggs straight into ice water. That stops the carryover (`HEA-1.M1.L3`), so the yolk stays as you timed it, and the white contracts slightly from the shell, which helps peeling."
+      },
+      {
+       "type": "paragraph",
+       "text": "*The green ring* is iron from the yolk reacting with sulphur from the white when the egg is overcooked. It smells and tastes sulphurous. Avoid it by not overcooking, and by cooling at once."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Peeling.* Very fresh eggs peel badly, because the white sticks to the membrane. Eggs a week or more old peel more easily. Crack the shell all over on the counter, then peel under water, starting at the broad end, where the air cell is."
+      },
+      {
+       "type": "paragraph",
+       "text": "*A starting table* for M or L eggs from the fridge, timed from when they go in:"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Time",
+        "Yolk"
+       ],
+       "rows": [
+        [
+         "6 minutes",
+         "Runny, white just set"
+        ],
+        [
+         "8 minutes",
+         "Jammy: soft and sticky at the centre"
+        ],
+        [
+         "10 minutes",
+         "Set through, still yellow and moist"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "Your own table, for your eggs and your pan, comes in `EGG-1.M2.L2`."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Soft to hard (45 min).** Boil two eggs each for a soft, a jammy and a hard yolk, using the starting table. Shock them, peel them and cut them in half. Before cutting each egg, write the yolk you predict in the cue log; then cut, photograph, and note whether you were right."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** clean whites, no green ring, the yolk as predicted."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Cracked shells, white leaking into the water",
+         "The eggs went in too fast, or dropped",
+         "Lower them on a spoon"
+        ],
+        [
+         "All eggs undercooked",
+         "Overcrowding the pan, so the water stopped boiling",
+         "Enough water to cover by 2 cm; fewer eggs, or a larger pan"
+        ],
+        [
+         "A green ring, a chalky yolk",
+         "Skipping the ice water, so carryover overcooked them",
+         "Ice water at once, for at least 5 minutes"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** lower the eggs on a spoon, and keep your hand out of the steam. Only the fully set eggs go to risk groups (§9)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the cue-log entries (prediction, then cut) and the photos."
+      }
+     ]
+    },
+    {
+     "id": "EGG-1.M2.L2",
+     "title": "Timing by size and temperature",
+     "prerequisites": [
+      "EGG-1.M2.L1"
+     ],
+     "competencies": [
+      {
+       "id": "TS-EGG",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** a recipe's \"7 minutes\" was right for someone else's eggs, pan and hob. Control means building your own table and hitting the same yolk every time, and, when it misses, knowing which variable to change."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** for session 1, the inputs of `EGG-1.M2.X1`; for session 2, 3 eggs of the same size class; the saucepan; a slotted spoon; ice water; a timer; a knife; a phone."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*The variables.*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**Egg size:** a larger egg takes longer to heat through."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**Starting temperature:** eggs from the fridge take longer than eggs at room temperature."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**How many eggs against how much water:** more cold eggs in less water take longer to come back to the boil."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**Altitude:** water boils at a lower temperature high up, but in the Netherlands this hardly matters."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "Shell colour has no effect."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Your own table.* Times for your eggs, your pan and your hob, built from the series in `EGG-1.M2.X1`. Write down the conditions with it: the size class, fridge or room temperature, the pan, how much water, and whether you time from when the eggs go in or from when the water returns to the boil. Choose one way of timing and keep it."
+      },
+      {
+       "type": "table",
+       "header": [
+        "Size",
+        "Start",
+        "Water",
+        "Time",
+        "Yolk"
+       ],
+       "rows": [
+        [
+         "L",
+         "Fridge",
+         "1.5 l, 4 eggs",
+         "6 min",
+         "…"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Hitting a target* three times running is the test of control. When a run misses, ask what changed, and change only one variable at a time to correct it. If you change the size and the starting temperature together, you can't tell which one did it."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Build the table (45 min).** Run the timing series of `EGG-1.M2.X1`: 6, 7, 8 and 10 minutes, two eggs per time, and write your table."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Hit the target (45 min, another day).** Choose your time for a jammy yolk. Without the table at hand, boil three eggs one after another at that time, under the same conditions. Halve and photograph each."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** three matching cross-sections."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "A miss you can't explain",
+         "Changing the size and the starting temperature at the same time",
+         "One variable at a time"
+        ],
+        [
+         "The same time gives different results",
+         "Timing from when the eggs went in one day, and from the return to the boil the next",
+         "Choose one, write it in the table, keep it"
+        ],
+        [
+         "The third egg is harder than the first two",
+         "The eggs left in the hot pan while the others were cut",
+         "Into the ice water as soon as the time is up"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** no special risks beyond the kitchen basics (`SAF-1`) and the risk-group rule above."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** your table with its conditions, and the three photos."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "EGG-1.M2.X1",
+     "title": "Boiled-egg timing series",
+     "description": "Boiled-egg timing series (6, 7, 8, 10 minutes), cross-sections photographed.",
+     "competencies": [
+      {
+       "id": "TS-EGG",
+       "level": 3
+      },
+      {
+       "id": "JD-CUES",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** build your own boiled-egg table, then hit a stated yolk on two days without it: a set white and a runny yolk."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** 12 eggs of one size class, from the fridge; a saucepan; a slotted spoon; a bowl of ice water; a timer; a board; a knife; small cards to write the times on; a phone; the cue log."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Recipe:** the series, then the two target days."
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**The series.** Bring the water to the boil. Lower in eight eggs, two at a time and a minute apart, or all together if the pan is large enough to keep boiling. Lift out two each at 6, 7, 8 and 10 minutes, straight into the ice water."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Peel and halve** them, and photograph them in a row on the board, each pair with its time on a card."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "**Write the table**, with the conditions: size class, fridge, pan, water volume, timing from when the eggs went in."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "**Target day 1.** Boil two eggs for a soft egg: a set white and a runny yolk. Use your memory of the series, not the table or a recipe. Before cutting, write the yolk you predict; then cut and photograph."
+        },
+        {
+         "level": 0,
+         "marker": "5.",
+         "text": "**Target day 2.** The same, on another day."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "`TS-EGG` level 3, in part: the soft-boiled egg with a set white and a runny yolk on two occasions, without a recipe. The other elements follow in `EGG-1.M3`."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "`JD-CUES` level 2: the cue-then-reading entries (prediction, then cut), with this module's cue items at 80 %."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "AI review compares each cross-section with the target: *competent* is a set white and a runny yolk; *not yet* is a translucent white, or a chalky yolk with a green ring."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 1.5 h over three sessions. The series eggs become egg salad or sandwiches."
+      }
+     ]
+    }
+   ],
+   "items": [
+    {
+     "id": "EGG-1.M2.Q1",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "EGG-1.M2.L1",
+     "safety": false,
+     "question": "What causes the green ring around a hard-boiled yolk?",
+     "options": [
+      {
+       "key": "A",
+       "text": "old eggs"
+      },
+      {
+       "key": "B",
+       "text": "iron in the yolk reacting with sulphur from the white when overcooked"
+      },
+      {
+       "key": "C",
+       "text": "salt in the water"
+      },
+      {
+       "key": "D",
+       "text": "the shell colour"
+      }
+     ],
+     "answer": "B",
+     "why": "Overcooking and slow cooling cause it."
+    },
+    {
+     "id": "EGG-1.M2.Q2",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "EGG-1.M2.L1",
+     "safety": false,
+     "question": "How do you avoid the green ring?",
+     "options": [
+      {
+       "key": "A",
+       "text": "add vinegar"
+      },
+      {
+       "key": "B",
+       "text": "don't overcook, and shock the eggs in ice water"
+      },
+      {
+       "key": "C",
+       "text": "use brown eggs"
+      },
+      {
+       "key": "D",
+       "text": "start in cold water"
+      }
+     ],
+     "answer": "B",
+     "why": "Less heat, stopped quickly."
+    },
+    {
+     "id": "EGG-1.M2.Q3",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "EGG-1.M2.L1",
+     "safety": false,
+     "question": "Why do very fresh eggs peel badly?",
+     "options": [
+      {
+       "key": "A",
+       "text": "their shell is thicker"
+      },
+      {
+       "key": "B",
+       "text": "their white sticks to the membrane"
+      },
+      {
+       "key": "C",
+       "text": "they are colder"
+      },
+      {
+       "key": "D",
+       "text": "they have more yolk"
+      }
+     ],
+     "answer": "B",
+     "why": "Eggs a week or so old peel more easily."
+    },
+    {
+     "id": "EGG-1.M2.Q4",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "EGG-1.M2.L1",
+     "safety": false,
+     "question": "Why lower the eggs into water that is already boiling?",
+     "options": [
+      {
+       "key": "A",
+       "text": "it is faster"
+      },
+      {
+       "key": "B",
+       "text": "the timing is more consistent and they peel more easily"
+      },
+      {
+       "key": "C",
+       "text": "they won't crack"
+      },
+      {
+       "key": "D",
+       "text": "it doesn't matter"
+      }
+     ],
+     "answer": "B",
+     "why": "Cold starts vary with the pan and the hob."
+    },
+    {
+     "id": "EGG-1.M2.Q5",
+     "type": "IMAGE_IDENTIFICATION",
+     "lessonId": "EGG-1.M2.L1",
+     "safety": false,
+     "question": "Four halved boiled eggs: (a) runny yolk, set white; (b) jammy yolk; (c) chalky yolk with a green ring; (d) translucent white. Which is overcooked?",
+     "options": [],
+     "answer": "c",
+     "why": "The green ring and chalky yolk show overcooking; (d) is undercooked."
+    },
+    {
+     "id": "EGG-1.M2.Q6",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "EGG-1.M2.L2",
+     "safety": false,
+     "question": "Which does *not* change the boiling time?",
+     "options": [
+      {
+       "key": "A",
+       "text": "egg size"
+      },
+      {
+       "key": "B",
+       "text": "starting temperature"
+      },
+      {
+       "key": "C",
+       "text": "shell colour"
+      },
+      {
+       "key": "D",
+       "text": "the number of eggs against the amount of water"
+      }
+     ],
+     "answer": "C",
+     "why": "Colour has no effect; the others do."
+    },
+    {
+     "id": "EGG-1.M2.Q7",
+     "type": "SCENARIO",
+     "lessonId": "EGG-1.M2.L2",
+     "safety": false,
+     "question": "Your 7-minute eggs were perfect with M eggs from the fridge. Today you have XL eggs at room temperature. How do you adjust?",
+     "options": [],
+     "answer": "The size adds time and the warmer start takes some away: start from 7 minutes, test one egg, and adjust one variable at a time in the table.",
+     "why": "Change and record one variable at a time."
+    },
+    {
+     "id": "EGG-1.M2.Q8",
+     "type": "SCENARIO",
+     "lessonId": "EGG-1.M2.L2",
+     "safety": false,
+     "question": "Three runs at 7 minutes give jammy, jammy, then set yolks. What do you check?",
+     "options": [],
+     "answer": "Whether something else changed in the third run: egg size, starting temperature, more eggs so the boil returned slowly, or timing from a different moment.",
+     "why": "Consistency means holding every variable but the one being tested."
+    }
+   ]
+  },
+  {
+   "id": "EGG-1.M3",
+   "title": "Eggs out of the shell",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** the 8 items of `EGG-1.M3` in the course file. Pass mark 80 %."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "EGG-1.M3.L1",
+     "title": "Poached eggs",
+     "prerequisites": [
+      "EGG-1.M1.L2",
+      "HEA-1.M5.L1"
+     ],
+     "competencies": [
+      {
+       "id": "TS-EGG",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** a poached egg is the test of a gentle hand: a compact white with no wisps around a runny yolk. And once you can poach ahead and reheat, you can serve poached eggs to a table of eight at once, the way restaurants do."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** for session 1, 4 fresh eggs; for session 2, 4 fresh eggs and 4 slices of bread; a wide pan with water about 8 cm deep; a small sieve; a cup; a slotted spoon; a bowl of ice water; a kettle; paper towels; a timer."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Fresh eggs* have more thick white, which holds a compact shape around the yolk. Older eggs have more thin white, which spreads into wisps. Use eggs from a recent box (`EGG-1.M1.L1`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "*A sieve* drains off the thin white. Crack the egg into the sieve over a bowl, swirl gently for 20–30 seconds while the thin white runs through, then tip what is left into a cup."
+      },
+      {
+       "type": "paragraph",
+       "text": "*The water* should be just below a simmer: a few small bubbles rising from the base, the surface shivering but not breaking (`HEA-1.M5.L1`). It should be deep enough for the egg to set before it touches the bottom. A spoon of vinegar per litre helps the surface of the white set, but it is optional with fresh, drained eggs, and it can be tasted."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Timing.* Slide the egg from the cup into the water, close to the surface. About 3 minutes gives a set white and a runny yolk. Lift it out with the slotted spoon and press the white gently with a finger: it should feel set, with the yolk soft beneath. Rest it on a paper towel to drain."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Poaching ahead.* Lift each poached egg straight into ice water. Just before serving, reheat them in hot water from the kettle, in a pan off the heat, for under a minute. The yolk stays runny, and you can poach in calm batches and serve everyone together."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Poach (60 min).** Poach one egg at a time, then two at a time. Photograph each on its paper towel, then cut one open."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Poach ahead (60 min).** Poach four eggs, one or two at a time, and hold them in the ice water. Toast the bread. Reheat the eggs together and serve them on the toast."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** a compact white with no wisps; a runny yolk under a soft, opaque white."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "The egg torn, white everywhere",
+         "A rolling boil",
+         "Just below a simmer"
+        ],
+        [
+         "Wisps and a flat white",
+         "Old eggs",
+         "A fresh box for poaching"
+        ],
+        [
+         "A cloud of white around the egg",
+         "Cracking straight into the pan without draining",
+         "Sieve first, then the cup"
+        ],
+        [
+         "Eggs stuck together, cooked unevenly",
+         "Too many eggs at once",
+         "One or two at a time"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** poached eggs with runny yolks are soft eggs: fully set for risk groups (§9). Eggs held in ice water are used the same morning; keep the bowl in the fridge if you poach well ahead."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the photos from both sessions."
+      }
+     ]
+    },
+    {
+     "id": "EGG-1.M3.L2",
+     "title": "Fried eggs",
+     "prerequisites": [
+      "HEA-1.M3.L1"
+     ],
+     "competencies": [
+      {
+       "id": "TS-EGG",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** a fried egg seems trivial until you try to get the white fully set while the yolk stays runny. The three styles each need their own heat and fat, which makes this a short lesson in reading the pan (`HEA-1.M3.L4`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** 3 eggs; butter; neutral oil; salt and pepper; a 24 cm non-stick or seasoned frying pan with a lid; a spoon; a cup; a fish spatula; a phone."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Three styles and their heat.*"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Style",
+        "Heat and fat",
+        "Method",
+        "Result"
+       ],
+       "rows": [
+        [
+         "Sunny side up",
+         "Low to medium; butter or oil",
+         "A lid for the last 1–2 minutes, so steam sets the top of the white",
+         "No colour; a glossy, runny yolk"
+        ],
+        [
+         "Basted",
+         "Medium; 2 tablespoons of butter or oil",
+         "Tilt the pan and spoon the hot fat over the white around the yolk",
+         "Lightly golden edges; the white set on top"
+        ],
+        [
+         "Crispy-edged",
+         "High; 2 tablespoons of oil, shimmering",
+         "Leave it until the edges are lacy and brown, 1–2 minutes",
+         "Crisp, brown lace; a runny yolk"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Fat choice.* Butter tastes best, but its milk solids burn above moderate heat. Oil takes high heat."
+      },
+      {
+       "type": "paragraph",
+       "text": "*The white must set while the yolk stays runny.* The thick white around the yolk is the last part to set, because it is thickest and closest to the cool yolk. That is where you look, and where the lid or the basting is aimed."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Cracking.* Crack each egg into a cup first, so a broken yolk or a piece of shell stays out of the pan, and slide it in from low down."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Three ways (45 min).** Fry one egg in each style. Photograph each from above and from the side, then cut into the white next to the yolk to check it is set."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** no raw white around the yolk; the style's colour (none, light or lacy-brown) as intended."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "A brown, crisp base and a raw top",
+         "High heat for sunny side up, so the base burns before the top sets",
+         "Low to medium heat and a lid"
+        ],
+        [
+         "A pale, oily egg with no lace",
+         "Low heat for crispy edges, so the egg stews in oil",
+         "Oil shimmering before the egg goes in"
+        ],
+        [
+         "Raw white around the yolk",
+         "Taken out too soon",
+         "Lid, or baste aimed at the thick white"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** hot oil spits when an egg goes in: slide it in from the cup, away from you. For risk groups, fry the egg on both sides until the yolk is fully set (§9)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the six photos, and a line on each style."
+      }
+     ]
+    },
+    {
+     "id": "EGG-1.M3.L3",
+     "title": "Scrambled eggs",
+     "prerequisites": [
+      "EGG-1.M1.L2"
+     ],
+     "competencies": [
+      {
+       "id": "TS-EGG",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** scrambled eggs can be anything from a creamy, almost pourable spoonful to dry, rubbery lumps in a puddle, from the same eggs. The difference is heat, stirring and the moment you stop. It is the clearest lesson there is in how cooking shapes a protein network."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** 6 eggs; 40 g of butter; salt; two small pans, or one used twice; a silicone spatula; two warm plates; a phone."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Two styles.*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**Soft French style:** low heat, butter, and constant stirring. The curds are tiny, the texture creamy and almost pourable. Take the pan off the heat just before the eggs look done, because the heat of the pan and the eggs carries on cooking them."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**Large curds:** medium heat, and gentle folding with a spatula at intervals. The curds are big, soft and moist."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Why.*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**Stirring** breaks the setting network into pieces as it forms: constant stirring gives small curds; occasional folding gives large ones."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**Heat** decides how tight the network becomes: low heat keeps it tender; high heat tightens it until it squeezes out water."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**Salt** beaten into the eggs a few minutes before cooking gives a more tender curd."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Weeping.* Scrambled eggs sitting in liquid have either been overcooked, or had wet additions (raw tomato, raw mushroom) stirred in. Cook mushrooms first, until their water has gone."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Serving.* Scrambled eggs go on a warm plate at once. Left in the hot pan, they overcook in a minute."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Two styles (45 min).** Beat the eggs with a two-finger pinch of salt, and leave them for a few minutes. Divide the mix in two."
+        },
+        {
+         "level": 1,
+         "marker": "",
+         "text": "**French:** melt 20 g of butter in a small pan over low heat, add half the eggs, and stir constantly, scraping the base and the sides, for about 6–10 minutes. Off the heat just before they look done; stir in a little more butter; serve."
+        },
+        {
+         "level": 1,
+         "marker": "",
+         "text": "**Large curds:** melt the rest of the butter over medium heat, add the eggs, and fold them from the edge to the centre every 20–30 seconds, about 2–3 minutes in all; off the heat while still moist."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "Photograph and taste both."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** small, glossy curds that flow slowly in the French style; soft, moist folds in the large-curd style."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Dry, rubbery curds in a puddle",
+         "High heat",
+         "Low heat for French style, medium for large curds"
+        ],
+        [
+         "Perfect in the pan, dry on the plate",
+         "Serving from the hot pan, so it overcooks on the plate",
+         "Off the heat early; onto a warm plate at once"
+        ],
+        [
+         "Grey liquid around the eggs",
+         "Raw mushrooms stirred in",
+         "Cook additions first, until dry"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** soft scrambled eggs are soft eggs: for risk groups, cook them until fully set (§9)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the two photos and a tasting line on each."
+      }
+     ]
+    },
+    {
+     "id": "EGG-1.M3.L4",
+     "title": "Omelettes",
+     "prerequisites": [
+      "EGG-1.M3.L3"
+     ],
+     "competencies": [
+      {
+       "id": "TS-EGG",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** the French omelette is a classic test of a cook: pale, smooth and rolled, soft inside, made in under two minutes. The flat omelette, the Dutch *boerenomelet* or a frittata, is its opposite: slow, filled and set through. Between them, they teach heat control at both ends."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** for session 1, the inputs of `EGG-1.M3.X1`; for session 2, 6 eggs, about 400 g of seasonal vegetables (cooked potato, onion and leek in winter; courgette, spring onion and fresh herbs in summer), 20 g of butter, a tablespoon of oil, salt and pepper, the ovenproof frying pan and the oven grill."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*The French omelette.*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "2–3 eggs, beaten with a pinch of salt until no streaks of white remain."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "A 20 cm pan over medium heat, with 10 g of butter, foaming but not browning."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "Pour in the eggs and stir quickly with the back of a fork, flat against the base, while shaking the pan, until the eggs are a soft curd: about 20–30 seconds."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "Spread them flat and let the base set for a few seconds."
+        },
+        {
+         "level": 0,
+         "marker": "5.",
+         "text": "Tilt the pan, roll the top third over with the fork, and roll the omelette out of the pan onto the plate, seam down."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "The result is pale, with no colour, smooth outside and soft (*baveuse*) inside."
+      },
+      {
+       "type": "paragraph",
+       "text": "*The flat omelette* is cooked slowly with its fillings until set throughout, then often finished under the grill to set and colour the top. The fillings are cooked first, so they are tender and dry."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Fixes.*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**Browning:** the pan is too hot. Lower the heat, and add the eggs while the butter foams, before it turns brown."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**Tearing:** the egg is overcooked or sticking. Roll it sooner, while the top is still soft; use enough butter; use a well-seasoned or non-stick pan."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**French omelettes (75 min).** The series of `EGG-1.M3.X1`: five in a row, one correction each time."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**A flat omelette (75 min).** Cook the vegetables in the butter and oil in the ovenproof pan until tender and lightly coloured. Heat the grill. Beat the eggs with salt and pepper, pour them over the vegetables, and cook over low heat without stirring for about 10 minutes, until the base is set and the top still a little liquid. Finish under the grill for 2–3 minutes until set and golden. Slide out, cut into wedges, and photograph a wedge."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** a pale, smooth, rolled omelette with a soft centre; a flat omelette set through, golden on top."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "A brown French omelette",
+         "The butter browned before the eggs went in",
+         "Medium heat; eggs in while the butter foams"
+        ],
+        [
+         "A dry, overcooked centre",
+         "Rolled too late",
+         "Roll while the top is still soft"
+        ],
+        [
+         "A watery flat omelette",
+         "Fillings added raw and wet",
+         "Cook them first, until dry"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** the pan handle is as hot as the grill: use an oven glove, and leave a cloth over the handle afterwards as a warning (`SAF-1.M4`). A *baveuse* omelette is a soft egg: for risk groups, the flat omelette, set through (§9)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the photos and corrections of the series (in `EGG-1.M3.X1`), and the flat-omelette photo."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "EGG-1.M3.X1",
+     "title": "Omelette series",
+     "description": "Omelette series: five in one session, each photographed.",
+     "competencies": [
+      {
+       "id": "TS-EGG",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** five French omelettes in one session, each photographed, becoming consistent. You correct one thing each time, and make the last two without looking at the method."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** 15 eggs; 50 g of butter; salt; a 20 cm non-stick or seasoned pan; a fork; five warm plates; a knife; a phone; the journal; household members to eat them."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Recipe:** each omelette."
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "Beat 3 eggs with a two-finger pinch of salt until no streaks remain."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "Heat the pan over medium heat. Add 10 g of butter and let it foam, not brown."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "Pour in the eggs. Stir quickly with the back of the fork, flat on the base, while shaking the pan, until the eggs are a soft curd, about 20–30 seconds."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "Spread them flat. Let the base set for a few seconds."
+        },
+        {
+         "level": 0,
+         "marker": "5.",
+         "text": "Tilt the pan away from you, roll the top third over with the fork, and roll the omelette out onto the plate, seam down. Tidy the shape with a clean towel if needed."
+        },
+        {
+         "level": 0,
+         "marker": "6.",
+         "text": "Photograph it whole, then cut it open and photograph the centre."
+        },
+        {
+         "level": 0,
+         "marker": "7.",
+         "text": "Write one correction for the next: heat, timing, the roll."
+        },
+        {
+         "level": 0,
+         "marker": "8.",
+         "text": "Wipe the pan and make the next."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "Make omelettes 4 and 5 without looking at the method."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:** the five photos and the corrections. The last two pale, smooth and soft inside meet the omelette element of `TS-EGG` level 3: a pale French omelette without colour. AI review scores the colour, the shape and the centre: *competent* is pale, a smooth roll, a soft centre; *not yet* is browned, folded and cracked, a dry centre."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 1.25 h; the household eats them."
+      }
+     ]
+    },
+    {
+     "id": "EGG-1.M3.X2",
+     "title": "Poached eggs on toast with a green salad",
+     "description": "Poached eggs on toast with a simple green salad.",
+     "competencies": [
+      {
+       "id": "TS-EGG",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** poached eggs to standard in a simple dish, without a recipe. You choose the leaves by season: lamb's lettuce (*veldsla*) or chicory in winter, lettuce in summer."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** for 2: 4 fresh eggs; 2–4 slices of good bread; about 100 g of salad leaves; a vinegar, an oil and mustard; salt and pepper; the poaching set-up of `EGG-1.M3.L1`; a jar or small bowl for the dressing; a phone."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Framework:** a poached-egg plate in five parts."
+      },
+      {
+       "type": "table",
+       "header": [
+        "Part",
+        "What it is",
+        "Your decisions"
+       ],
+       "rows": [
+        [
+         "Dressing",
+         "Acid, fat and salt, with mustard to hold them together: about 1 part vinegar to 3 parts oil (`TST-1.M3.L3`)",
+         "Which vinegar and oil; how much mustard; tasted on a leaf"
+        ],
+        [
+         "Leaves",
+         "Washed, dried well, dressed just before plating",
+         "Which leaf; how much dressing"
+        ],
+        [
+         "Toast",
+         "Toasted at the last moment",
+         "How dark; butter or not"
+        ],
+        [
+         "Eggs",
+         "Fresh, drained in the sieve, poached just below a simmer, about 3 minutes; ahead in ice water if serving four",
+         "Vinegar or not; one at a time or two"
+        ],
+        [
+         "Plate",
+         "Eggs on the toast, salad beside, salt and pepper on the yolk",
+         "The layout"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:** a photo of the plate and of a cut egg: a poached egg with a compact white and a runny yolk, made without a recipe. With the boiled egg (`EGG-1.M2.X1`), the omelette (`EGG-1.M3.X1`), and the fried and scrambled eggs of the lessons, this completes five of the seven elements of `TS-EGG` level 3."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 45 min."
+      }
+     ]
+    }
+   ],
+   "items": [
+    {
+     "id": "EGG-1.M3.Q1",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "EGG-1.M3.L1",
+     "safety": false,
+     "question": "Why are fresh eggs best for poaching?",
+     "options": [
+      {
+       "key": "A",
+       "text": "they taste better"
+      },
+      {
+       "key": "B",
+       "text": "they have more thick white, which holds a compact shape"
+      },
+      {
+       "key": "C",
+       "text": "they cook faster"
+      },
+      {
+       "key": "D",
+       "text": "the yolk is bigger"
+      }
+     ],
+     "answer": "B",
+     "why": "The thin white of older eggs spreads into wisps."
+    },
+    {
+     "id": "EGG-1.M3.Q2",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "EGG-1.M3.L1",
+     "safety": false,
+     "question": "Why drain the cracked egg in a sieve first?",
+     "options": [
+      {
+       "key": "A",
+       "text": "to remove shell"
+      },
+      {
+       "key": "B",
+       "text": "to remove the thin white that makes wisps"
+      },
+      {
+       "key": "C",
+       "text": "to cool it"
+      },
+      {
+       "key": "D",
+       "text": "to salt it"
+      }
+     ],
+     "answer": "B",
+     "why": "Only the thick white stays."
+    },
+    {
+     "id": "EGG-1.M3.Q3",
+     "type": "SCENARIO",
+     "lessonId": "EGG-1.M3.L1",
+     "safety": false,
+     "question": "You must serve poached eggs to eight people at once. How?",
+     "options": [],
+     "answer": "Poach them ahead, plunge them into ice water, and reheat them in hot water for under a minute just before serving.",
+     "why": "Restaurant practice; the yolk stays runny."
+    },
+    {
+     "id": "EGG-1.M3.Q4",
+     "type": "SCENARIO",
+     "lessonId": "EGG-1.M3.L2",
+     "safety": false,
+     "question": "You want a fried egg with lacy, crisp edges and a runny yolk. Which heat and fat?",
+     "options": [],
+     "answer": "High heat and hot oil.",
+     "why": "Butter would burn; low heat would stew the egg."
+    },
+    {
+     "id": "EGG-1.M3.Q5",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "EGG-1.M3.L3",
+     "safety": false,
+     "question": "For soft, creamy scrambled eggs with small curds, you:",
+     "options": [
+      {
+       "key": "A",
+       "text": "use high heat and leave them"
+      },
+      {
+       "key": "B",
+       "text": "use low heat and stir constantly"
+      },
+      {
+       "key": "C",
+       "text": "add milk and boil"
+      },
+      {
+       "key": "D",
+       "text": "fold every minute on high heat"
+      }
+     ],
+     "answer": "B",
+     "why": "Stirring breaks the network into small curds; low heat keeps it tender."
+    },
+    {
+     "id": "EGG-1.M3.Q6",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "EGG-1.M3.L3",
+     "safety": false,
+     "question": "When do you take soft scrambled eggs off the heat?",
+     "options": [
+      {
+       "key": "A",
+       "text": "when they look dry"
+      },
+      {
+       "key": "B",
+       "text": "just before they look done, because carryover finishes them"
+      },
+      {
+       "key": "C",
+       "text": "after 10 minutes"
+      },
+      {
+       "key": "D",
+       "text": "when they brown"
+      }
+     ],
+     "answer": "B",
+     "why": "They keep cooking from the pan's heat."
+    },
+    {
+     "id": "EGG-1.M3.Q7",
+     "type": "SCENARIO",
+     "lessonId": "EGG-1.M3.L4",
+     "safety": false,
+     "question": "Your French omelette came out brown on the outside. What do you change?",
+     "options": [],
+     "answer": "Lower the heat, and add the eggs when the butter foams but before it browns.",
+     "why": "A French omelette has no colour."
+    },
+    {
+     "id": "EGG-1.M3.Q8",
+     "type": "SCENARIO",
+     "lessonId": "EGG-1.M3.L4",
+     "safety": false,
+     "question": "Your omelette tears when you roll it. What are the likely causes and fixes?",
+     "options": [],
+     "answer": "It is overcooked or sticking: roll it sooner while the top is still soft, use enough butter, and a well-seasoned or non-stick pan.",
+     "why": "A soft omelette is flexible; a dry one cracks."
+    }
+   ]
+  },
+  {
+   "id": "EGG-1.M4",
+   "title": "Custards and eggs as binders",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** the 8 items of `EGG-1.M4` in the course file. Pass mark 80 %."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "EGG-1.M4.L1",
+     "title": "Stirred and baked custards",
+     "prerequisites": [
+      "EGG-1.M1.L2"
+     ],
+     "competencies": [
+      {
+       "id": "TS-EGG",
+       "level": 2
+      },
+      {
+       "id": "SC-PROT",
+       "level": 2
+      },
+      {
+       "id": "JD-TRBL",
+       "level": 1
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** custards are the first of the pastry foundations, and they return in `BAK-2` and `PST-3`. A stirred custard is a lesson in stopping at exactly the right moment; a baked custard is a lesson in gentle, even heat. Both turn on the setting temperatures of `EGG-1.M1.L2`."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** for the stirred custard, the inputs of `EGG-1.M4.X1`. For four baked custards (*crème caramel*): 140 g of sugar (80 g for the caramel, 60 g for the custard), 400 ml of milk, 2 eggs and 2 yolks, a vanilla pod or extract; four ramekins; a deep oven dish; a kettle; a small heavy saucepan; the probe."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*A stirred custard* (*crème anglaise*) is milk or cream, yolks and sugar, cooked gently while you stir, until it coats the back of a spoon and a finger drawn through it leaves a clean line: the **coating stage** (*nappe*), at about 80–84 °C. Above that the proteins tighten and it curdles into sweet scrambled egg. The thickening comes suddenly near the end, so you stir constantly and watch the spoon."
+      },
+      {
+       "type": "paragraph",
+       "text": "*A baked custard* (a *crème caramel* or a *flan*) sets in a water bath in a moderate oven, about 150 °C. The water around the ramekins keeps the heat gentle and even, so the custard sets smooth, without bubbles or a curdled edge, and keeps a slight wobble in the centre. It needs several hours in the fridge to chill and firm."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Rescuing early curdling.* At the first tiny lumps, take the pan off the heat at once, pour the custard into a cold bowl, blend it with a stick blender, and strain it. This works only when caught early; a fully curdled custard can't be saved."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Safety.* An egg-thickened dessert is cooked when every part has reached at least 71 °C, checked with a probe (assessment §9). A custard at the coating stage is past that. It is cooled quickly and kept covered in the fridge."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Both custards (2 h active, plus about 4 h chilling).** Make the caramel first: melt 80 g of sugar with 2 tablespoons of water over medium heat, without stirring, swirling the pan, until amber; pour it into the ramekins. Heat the oven. Warm the milk with the vanilla; whisk the eggs, yolks and 60 g of sugar; pour the milk on while whisking; strain into the ramekins. Set them in the oven dish, pour hot water from the kettle halfway up their sides, and bake for about 35–45 minutes, until set with a wobble at the centre. Probe the centre of one: at least 71 °C. Cool, and chill. While they bake, make the stirred custard of `EGG-1.M4.X1`, with its temperature logged. Serve it with stewed apple or pear in winter, rhubarb in spring, or strawberries in summer; the baked custards next day, turned out."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** the custard thickens suddenly near the end; the line on the spoon stays clean; the baked custard trembles as a whole when shaken gently."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Grainy, curdled custard",
+         "High heat",
+         "Low heat; at the first lumps, the rescue"
+        ],
+        [
+         "Lumps on the base of the pan",
+         "Stopping stirring",
+         "Stir constantly, scraping the base and corners"
+        ],
+        [
+         "Bubbled, rubbery baked custards",
+         "No water bath",
+         "A water bath, halfway up the ramekins"
+        ],
+        [
+         "A custard that curdles after it came off the heat",
+         "Leaving the custard in the hot pan after it is done",
+         "Straight into a cold bowl"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** caramel is far hotter than boiling water and sticks to skin: pour it carefully, keep children away, and cool any burn at once (`SAF-1.M4.L2`). Lift the water bath out with oven gloves. Both custards into the fridge within 2 hours, eaten within 2 days. Freeze the spare whites in a labelled box for `BAK-2`."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the stirred custard's log and spoon photo (in `EGG-1.M4.X1`), the baked custard's probe reading, and a photo of one turned out."
+      }
+     ]
+    },
+    {
+     "id": "EGG-1.M4.L2",
+     "title": "What eggs do",
+     "prerequisites": [
+      "EGG-1.M1.L2"
+     ],
+     "competencies": [
+      {
+       "id": "IN-DAI",
+       "level": 2
+      },
+      {
+       "id": "SC-EMUL",
+       "level": 1
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** eggs do different jobs in different dishes, and often two at once. When you later adapt a recipe or replace an ingredient (`RD-ADPT`), you need to know which job the egg was doing. This lesson is a map of those jobs and of the courses where each returns."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** this lesson, and eight recipes from a cookbook, a website or the program."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*The functions of eggs:*"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Function",
+        "How it works",
+        "Example",
+        "Returns in"
+       ],
+       "rows": [
+        [
+         "Binding",
+         "Proteins set and hold the mixture together",
+         "Meatballs, *gehakt*, croquettes",
+         "`MEA-2`"
+        ],
+        [
+         "Leavening",
+         "Whipped whites trap air, which expands in the oven",
+         "A sponge, a soufflé",
+         "`BAK-2`, `PST-3`"
+        ],
+        [
+         "Emulsifying",
+         "The lecithin in the yolk holds oil and water together",
+         "Mayonnaise, hollandaise",
+         "`SAU-2`"
+        ],
+        [
+         "Glazing",
+         "Proteins and sugars brown and shine",
+         "Egg wash on pastry and bread",
+         "`BAK-2`, `BRD-2`"
+        ],
+        [
+         "Clarifying",
+         "A raft of whites traps particles as it sets",
+         "Consommé",
+         "`CLS-4`"
+        ],
+        [
+         "Thickening",
+         "Proteins set gently in a liquid",
+         "Custards, some sauces",
+         "`EGG-1.M4.L1`, `PST-3`"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Two functions at once.* Many recipes use eggs for more than one job."
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "In **croquettes**, egg binds the filling and also glues the breadcrumbs on."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "In a **soufflé**, the yolks thicken the base and the whites leaven it."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "In a **pancake** batter, egg binds and gives some lift and colour."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Reading a recipe for function.* Ask what would go wrong without the egg: would it fall apart (binding), stay flat (leavening), split (emulsifying), stay pale (glazing), stay cloudy (clarifying), or stay thin (thickening)? That is the job the egg was doing, and any replacement has to do the same one."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:** theory only (1 h): for eight recipes, name the function or functions of the eggs in each, and the course where it returns. Use these if you have no others: meatballs, a sponge cake, mayonnaise, egg-washed bread rolls, a consommé, a *crème anglaise*, croquettes and a cheese soufflé."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** each function named correctly, with the later course where it returns."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "\"Binding\" written for every recipe",
+         "Thinking eggs only \"hold things together\"",
+         "Ask what would go wrong without the egg"
+        ],
+        [
+         "One function named for croquettes or a soufflé",
+         "Missing that a recipe uses eggs for two functions",
+         "Look at each stage where egg is used"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** a preparation in which the egg is raw when served, such as mayonnaise, is made with pasteurised egg for every guest and kept at most 24 hours (assessment §9, the raw-egg row). It returns in `SAU-2`."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the eight recipes with their functions."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "EGG-1.M4.X1",
+     "title": "A stirred custard with its temperature logged",
+     "description": "A stirred custard (*crème anglaise*) with its temperature logged.",
+     "competencies": [
+      {
+       "id": "TS-EGG",
+       "level": 2
+      },
+      {
+       "id": "IN-DAI",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** a smooth stirred custard taken to the coating stage, from a recipe, with the temperature that the cue matches. You judge the cue first and read the thermometer second."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** 500 ml of milk (or 250 ml each of milk and cream); 5 yolks; 80 g of sugar; a vanilla pod or 1 teaspoon of extract; a heavy saucepan; a whisk; a silicone spatula; the thermometer; a fine sieve; a bowl set in a larger bowl of ice water; cling film; a wooden spoon for the spoon test; a timer; the journal; a phone."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Recipe:** *crème anglaise*, for 4–6."
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Infuse.** Split the vanilla pod, scrape out the seeds, and put both in the pan with the milk. Heat until steaming, with small bubbles at the edge; take it off the heat and leave it for 15 minutes. (With extract, add it at the end.)"
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Temper.** Whisk the yolks and sugar until pale. Reheat the milk to steaming, and pour about a third onto the yolks in a thin stream, whisking all the time. Pour the yolk mix back into the pan."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "**Cook.** Over low heat, stir constantly with the spatula in a figure of eight, scraping the base and the corners. Put the thermometer in and log the temperature every 30 seconds."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "**Judge by eye.** When the custard thickens, dip the wooden spoon, lift it, and draw a finger across the back. When the line stays clean, take the pan off the heat. Then read the thermometer, and log it: expect about 80–84 °C, and at least 71 °C (assessment §9)."
+        },
+        {
+         "level": 0,
+         "marker": "5.",
+         "text": "**Strain and chill.** Pour it at once through the sieve into the bowl in ice water, and stir for a few minutes to cool it. Cover with cling film on the surface and put it in the fridge."
+        },
+        {
+         "level": 0,
+         "marker": "6.",
+         "text": "**Photograph** the spoon test."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:** the coating-stage photo and the temperature log, with no curdling."
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "`TS-EGG` level 2: the custard element, from a recipe, to the stated doneness."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "`IN-DAI` level 2: a recipe custard that does not curdle; with the knowledge part shown in `EGG-1.M1`, this completes the row."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "AI review checks the line on the spoon and the smoothness: *competent* is a clean line on a coated spoon; *not yet* is thin, or grainy with curds."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 45 min; it keeps covered in the fridge for up to 2 days."
+      }
+     ]
+    }
+   ],
+   "items": [
+    {
+     "id": "EGG-1.M4.Q1",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "EGG-1.M4.L1",
+     "safety": false,
+     "question": "When is a stirred custard done?",
+     "options": [
+      {
+       "key": "A",
+       "text": "when it boils"
+      },
+      {
+       "key": "B",
+       "text": "when it coats the back of a spoon and a finger leaves a clean line"
+      },
+      {
+       "key": "C",
+       "text": "after 5 minutes"
+      },
+      {
+       "key": "D",
+       "text": "when it is lumpy"
+      }
+     ],
+     "answer": "B",
+     "why": "The *nappe* stage, about 80–84 °C."
+    },
+    {
+     "id": "EGG-1.M4.Q2",
+     "type": "SCENARIO",
+     "lessonId": "EGG-1.M4.L1",
+     "safety": false,
+     "question": "Your custard shows the first tiny lumps. What do you do?",
+     "options": [],
+     "answer": "Take it off the heat at once, pour it into a cold bowl, blend it with a stick blender and strain it.",
+     "why": "Caught early, curdling can be reversed."
+    },
+    {
+     "id": "EGG-1.M4.Q3",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "EGG-1.M4.L1",
+     "safety": false,
+     "question": "Why bake custards in a water bath?",
+     "options": [
+      {
+       "key": "A",
+       "text": "to add moisture"
+      },
+      {
+       "key": "B",
+       "text": "the water keeps the heat gentle and even, so they set smoothly"
+      },
+      {
+       "key": "C",
+       "text": "to make them faster"
+      },
+      {
+       "key": "D",
+       "text": "to brown the top"
+      }
+     ],
+     "answer": "B",
+     "why": "Direct oven heat makes them bubble and curdle at the edges."
+    },
+    {
+     "id": "EGG-1.M4.Q4",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "EGG-1.M4.L2",
+     "safety": false,
+     "question": "What do eggs do in mayonnaise?",
+     "options": [
+      {
+       "key": "A",
+       "text": "bind"
+      },
+      {
+       "key": "B",
+       "text": "emulsify: the yolk's lecithin holds oil and water together"
+      },
+      {
+       "key": "C",
+       "text": "leaven"
+      },
+      {
+       "key": "D",
+       "text": "glaze"
+      }
+     ],
+     "answer": "B",
+     "why": "Emulsifying returns in `SAU-2`."
+    },
+    {
+     "id": "EGG-1.M4.Q5",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "EGG-1.M4.L2",
+     "safety": false,
+     "question": "In meatballs, eggs mainly:",
+     "options": [
+      {
+       "key": "A",
+       "text": "leaven"
+      },
+      {
+       "key": "B",
+       "text": "bind"
+      },
+      {
+       "key": "C",
+       "text": "colour"
+      },
+      {
+       "key": "D",
+       "text": "emulsify"
+      }
+     ],
+     "answer": "B",
+     "why": "Setting proteins hold the mixture together."
+    },
+    {
+     "id": "EGG-1.M4.Q6",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "EGG-1.M4.L2",
+     "safety": false,
+     "question": "In a sponge cake, whipped whites:",
+     "options": [
+      {
+       "key": "A",
+       "text": "bind"
+      },
+      {
+       "key": "B",
+       "text": "leaven by trapping air"
+      },
+      {
+       "key": "C",
+       "text": "clarify"
+      },
+      {
+       "key": "D",
+       "text": "glaze"
+      }
+     ],
+     "answer": "B",
+     "why": "Air expands in the oven."
+    },
+    {
+     "id": "EGG-1.M4.Q7",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "EGG-1.M4.L2",
+     "safety": false,
+     "question": "A raft of egg white in a consommé:",
+     "options": [
+      {
+       "key": "A",
+       "text": "thickens it"
+      },
+      {
+       "key": "B",
+       "text": "traps particles as it sets, clarifying the stock"
+      },
+      {
+       "key": "C",
+       "text": "colours it"
+      },
+      {
+       "key": "D",
+       "text": "adds fat"
+      }
+     ],
+     "answer": "B",
+     "why": "Clarifying returns in `CLS-4`."
+    },
+    {
+     "id": "EGG-1.M4.Q8",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "EGG-1.M4.L2",
+     "safety": false,
+     "question": "Egg wash on bread:",
+     "options": [
+      {
+       "key": "A",
+       "text": "leavens it"
+      },
+      {
+       "key": "B",
+       "text": "glazes it for colour and shine"
+      },
+      {
+       "key": "C",
+       "text": "binds it"
+      },
+      {
+       "key": "D",
+       "text": "nothing"
+      }
+     ],
+     "answer": "B",
+     "why": "The proteins and sugars brown."
+    }
+   ]
+  },
+  {
+   "id": "EGG-1.M5",
+   "title": "Breakfast service",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** none for this module (it has no [K] or [J] objective). Its check is your timeline against the actual times."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "EGG-1.M5.L1",
+     "title": "Timing a breakfast plate",
+     "prerequisites": [
+      "WRK-1.M2.L3",
+      "EGG-1.M3.L4"
+     ],
+     "competencies": [
+      {
+       "id": "KM-PLAN",
+       "level": 2
+      },
+      {
+       "id": "TS-PLT",
+       "level": 1
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** cooking one egg well is a technique; serving four hot breakfasts at once is planning. Eggs and toast go cold in minutes, so everything has to arrive together. This is the backwards timeline of `WRK-1` at its tightest, and your first step into plating."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** the inputs of `EGG-1.M5.X1`; the timeline template (`WRK-1.M2.X2`); four plates; the journal."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*A backwards timeline for four* (`WRK-1.M2.L3`). Start from the moment you serve and work back:"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**What can be ready early and held:** roast tomatoes or mushrooms in the oven at its lowest setting; fried potatoes kept warm on a tray; poached eggs held in ice water; coffee in a flask."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**What must be last:** eggs cooked to order, and toast."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**What runs in parallel:** the toaster and the egg pan; the kettle and the plates warming."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "A sample, for serving at 9:00:"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Time",
+        "Task"
+       ],
+       "rows": [
+        [
+         "8:15",
+         "Potatoes on; oven on low for holding"
+        ],
+        [
+         "8:35",
+         "Mushrooms on; potatoes into the oven"
+        ],
+        [
+         "8:45",
+         "Coffee; plates into the oven or under the hot tap"
+        ],
+        [
+         "8:50",
+         "Eggs on; bread into the toaster"
+        ],
+        [
+         "8:57",
+         "Plate: sides, eggs, toast"
+        ],
+        [
+         "9:00",
+         "Serve"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Warm plates.* An egg cools fast on a cold plate. Warm them for a few minutes in the oven at its lowest setting, or under the hot tap and dried."
+      },
+      {
+       "type": "paragraph",
+       "text": "*A clean plate.* One clear focal point (the egg), the sides beside it, nothing piled, and the rims wiped. Four plates that look alike: set them out in a row and add each component to all four before moving on, rather than finishing one plate at a time. This is the first step of plating (`TS-PLT`), taught properly in `PLT-4`."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Breakfast for four (2 h including planning).** Run `EGG-1.M5.X1`: write the timeline, cook, log the actual times beside the plan, and serve."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** everything hot and on the table within 10 minutes of the plan; four plates that look alike."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Rubbery, cold eggs",
+         "Starting the eggs first",
+         "Eggs last; the sides first, held warm"
+        ],
+        [
+         "Cold, leathery toast",
+         "Toast made too early",
+         "Toast with the eggs, in the last minutes"
+        ],
+        [
+         "The first plate cold, the last overcooked",
+         "Four plates assembled one by one",
+         "All four in a row; each component onto all four"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** for a guest in a risk group, cook their egg until fully set (§9). Anything held warm is eaten at the meal; leftovers go into the fridge within 2 hours."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the timeline with the actual times (in `EGG-1.M5.X1`)."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "EGG-1.M5.X1",
+     "title": "Weekend breakfast from your own timeline",
+     "description": "Weekend breakfast for the household from your own timeline.",
+     "competencies": [
+      {
+       "id": "KM-PLAN",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** a hot breakfast for the household, served on time, from your own backwards timeline. You choose the egg preparation and two sides, by season: roast tomatoes in summer; mushrooms or fried potatoes in winter."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** for 4: 8 eggs; bread; the ingredients for two sides (for example 500 g of mushrooms, or 600 g of cooked potatoes, or 6 tomatoes); butter and oil; coffee or tea; the pans for your sides and your egg preparation; four plates; the timeline template; a taster's card for each household member (assessment §3); a phone."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Framework:** the breakfast plan."
+      },
+      {
+       "type": "table",
+       "header": [
+        "Part",
+        "What it is",
+        "Your decisions"
+       ],
+       "rows": [
+        [
+         "Menu",
+         "One egg preparation from this course; two sides; toast; a drink",
+         "Which egg, and which sides"
+        ],
+        [
+         "Timeline",
+         "Backwards from the serving time, with clock times and planned minutes (`WRK-1.M2.X2`)",
+         "The serving time; what is held and what is last"
+        ],
+        [
+         "Hold",
+         "Sides kept warm in the oven at its lowest setting; poached eggs in ice water",
+         "What can wait, and how"
+        ],
+        [
+         "Last minutes",
+         "Eggs to order and toast together; plates warm",
+         "The order"
+        ],
+        [
+         "Plate",
+         "Four plates in a row, each component onto all four; rims wiped",
+         "The layout"
+        ],
+        [
+         "Log",
+         "The actual time of each step beside the plan",
+         "—"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:** the timeline with every component out within 10 minutes of the plan (the `KM-PLAN` level 2 success row), a photo of one plate, and the household's taster's cards."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 2 h including planning."
+      }
+     ]
+    }
+   ],
+   "items": []
+  }
+ ]
+}

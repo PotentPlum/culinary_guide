@@ -1,0 +1,3997 @@
+{
+ "schemaVersion": 1,
+ "id": "VEG-1",
+ "introduction": [
+  {
+   "type": "paragraph",
+   "text": "**Before you start.** Vegetables are most of a home cook's work, and the part most often cooked by habit: too soft, grey or watery, or the same three vegetables all year. This course treats them as a subject of their own, the way a professional kitchen does:"
+  },
+  {
+   "type": "list",
+   "items": [
+    {
+     "level": 0,
+     "marker": "",
+     "text": "**structure:** cells, pectin and water, and why heat, acid and alkali change texture;"
+    },
+    {
+     "level": 0,
+     "marker": "",
+     "text": "**groups:** what a root, a brassica or a leaf has in common in the pan;"
+    },
+    {
+     "level": 0,
+     "marker": "",
+     "text": "**pigments:** why green turns olive and red cabbage turns blue;"
+    },
+    {
+     "level": 0,
+     "marker": "",
+     "text": "**the season:** buying by the Dutch calendar, and storing to keep quality;"
+    },
+    {
+     "level": 0,
+     "marker": "",
+     "text": "**method by group:** matching the method to the vegetable;"
+    },
+    {
+     "level": 0,
+     "marker": "",
+     "text": "**potatoes:** the preparations of the Dutch kitchen, from boiled to mashed to roast."
+    }
+   ]
+  },
+  {
+   "type": "paragraph",
+   "text": "It ends with a plate on which three vegetables, cooked three ways, share one clean plate."
+  },
+  {
+   "type": "paragraph",
+   "text": "*Dutch vegetables, by season.* Every lesson gives a winter and a summer choice, so you can start the course in any month. The seasonal calendar you build in module 2 is used in every later course. Roasting uses the settings of your own oven table (`EQP-1.M2.X1`, used in `HEA-1.M4.L1`)."
+  },
+  {
+   "type": "paragraph",
+   "text": "Plan about five weeks. The group dishes of module 4 run over two weeks of dinners, and the market visit fits a Saturday morning. The vegetables are the household's side dishes and soups; trim goes into stock, and comparison batches become soups or purées."
+  },
+  {
+   "type": "paragraph",
+   "text": "**Have ready:** the saucepans, the sauté pan and two sheet pans (`EQP-1`); the steamer (`HEA-1`); a potato masher, and a ricer if you have one; a salad spinner or a clean tea towel; a large bowl for washing leaves; the scale; a ruler or the grid board (`KNF-1`); a printed Dutch seasonal calendar; the journal and the cue log (`HEA-1`); a phone for photos."
+  }
+ ],
+ "modules": [
+  {
+   "id": "VEG-1.M1",
+   "title": "Structure and groups",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** the 8 items of `VEG-1.M1` in the course file. Pass mark 80 %."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "VEG-1.M1.L1",
+     "title": "Cells, pectin and water",
+     "prerequisites": [
+      "HEA-1.M1.L2"
+     ],
+     "competencies": [
+      {
+       "id": "IN-VEG",
+       "level": 1
+      },
+      {
+       "id": "SC-STRC",
+       "level": 1
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** every vegetable texture, from a crisp raw carrot to a silky purée, comes from what is happening to its cells. Once you know what holds them together and what loosens them, you can predict why beans in a tomato sauce stay hard, why bicarbonate turns vegetables to mush, and why a limp carrot can be revived."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** the inputs of `VEG-1.M1.X1`: 500 g of carrots; vinegar; bicarbonate of soda; three saucepans; a timer."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*A vegetable is mostly water in cells.* Each cell is a small bag of water inside a stiff wall. The pressure of that water against the wall is called **turgor**, and it is what makes a raw vegetable crisp. A limp carrot has lost water, and its cells have gone slack."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Pectin glues the cells together.* The cell walls are held to each other by **pectin**. Heat dissolves it gradually, so the cells separate and the vegetable softens. Starchy vegetables, like potatoes and parsnips, also soften as their starch absorbs water and swells [S16]."
+      },
+      {
+       "type": "paragraph",
+       "text": "*What changes the speed of softening:*"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Factor",
+        "Effect",
+        "In the kitchen"
+       ],
+       "rows": [
+        [
+         "Acid (tomato, wine, vinegar)",
+         "Slows the breakdown of pectin",
+         "Vegetables cooked in it stay firm"
+        ],
+        [
+         "Alkali (bicarbonate)",
+         "Speeds it",
+         "Vegetables turn mushy"
+        ],
+        [
+         "Calcium",
+         "Firms the cell walls",
+         "Hard tap water slows softening a little"
+        ],
+        [
+         "Salt",
+         "Speeds it slightly, and seasons",
+         "Salted water is still the default"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "This is why beans or potatoes added to a tomato sauce take much longer to soften: add the tomato later, or cook them first. And it is why the old trick of bicarbonate \"for colour\" ruins texture."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Three waters (60 min).** Run the comparison of `VEG-1.M1.X1`: the same carrot sticks for 15 minutes in plain, acidic and alkaline water. Before you taste, write down the order of softness you expect, and why."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** your prediction of the order of softness written before tasting, and checked."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Beans still hard after an hour in the sauce",
+         "Tomatoes added too early to beans that must soften",
+         "Soften the beans first, then add the tomato"
+        ],
+        [
+         "Mushy, slippery vegetables",
+         "Bicarbonate added \"for colour\"",
+         "Short cooking and an open pan keep the colour (`VEG-1.M3.L1`)"
+        ],
+        [
+         "No difference between the batches",
+         "Different stick sizes, or different times",
+         "One cut, one timer, three pans side by side"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** no special risks beyond the kitchen basics (`SAF-1`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** your prediction and the result (in `VEG-1.M1.X1`)."
+      }
+     ]
+    },
+    {
+     "id": "VEG-1.M1.L2",
+     "title": "The vegetable groups",
+     "prerequisites": [],
+     "competencies": [
+      {
+       "id": "IN-VEG",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** there are dozens of vegetables, but only a handful of groups, and the group predicts most of what a vegetable will do in the pan. Learn the groups, and a vegetable you have never cooked is no longer a mystery."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** this lesson, this week's vegetables (or a list of them), and the journal."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*The groups, and what each has in common in the kitchen:*"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Group",
+        "Examples",
+        "In the kitchen"
+       ],
+       "rows": [
+        [
+         "Roots",
+         "Carrot, beetroot, parsnip, celeriac",
+         "Dense and sweet; need time; roast, glaze, purée"
+        ],
+        [
+         "Tubers",
+         "Potato, Jerusalem artichoke",
+         "Starchy; the variety decides the texture (`VEG-1.M5`)"
+        ],
+        [
+         "Brassicas",
+         "Cabbages, Brussels sprouts, kale, cauliflower, broccoli",
+         "Turn sulphurous when overcooked; short cooking, or long braising"
+        ],
+        [
+         "Alliums",
+         "Onion, leek, garlic, shallot",
+         "The base of most dishes; sweat, brown or caramelise"
+        ],
+        [
+         "Leaves",
+         "Spinach, lettuces, chard, lamb's lettuce",
+         "Cook in seconds and shrink hugely; or eaten raw"
+        ],
+        [
+         "Stems and shoots",
+         "Asparagus, celery, fennel",
+         "Fibrous outside, tender inside; trim and peel"
+        ],
+        [
+         "Squash",
+         "Pumpkins and winter squash",
+         "Dense and sweet; roast, purée"
+        ],
+        [
+         "Fruit vegetables",
+         "Tomato, courgette, pepper, cucumber",
+         "Very watery; cook hot and fast, or cook down"
+        ],
+        [
+         "Pods and seeds",
+         "Beans, peas, broad beans",
+         "Sweet when young; quick cooking"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*The group predicts* density, water, sugar and the risk of overcooking. Dense roots take long, high heat; leaves take seconds; brassicas punish the middle ground."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Basic preparation by group.*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**Roots:** scrub young ones, peel old or waxed ones; not everything needs peeling."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**Brassicas:** trim the base and outer leaves; halve sprouts; cut cauliflower into florets."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**Leaves:** wash in a large bowl of water and lift them out, so the grit stays on the bottom; never pour them out with the water."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**Pods:** top and tail beans, and string them if they have strings."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:** theory only (1.5 h): sort this week's vegetables, or a list of twelve from the seasonal calendar, into groups. For each group, write the main cooking consequence and one method that suits it, and how you would prepare each vegetable before cooking."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** any vegetable placed in its group, with the method consequence."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Broccoli and spinach cooked the same way",
+         "Treating all \"green vegetables\" alike",
+         "Ask the group: brassica or leaf?"
+        ],
+        [
+         "Flavour and time lost to peeling",
+         "Peeling everything",
+         "Scrub young roots and new potatoes"
+        ],
+        [
+         "Grit in the spinach",
+         "Washing leaves under a running tap in the sink",
+         "A bowl of water; lift the leaves out"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** no special risks beyond the kitchen basics (`SAF-1`). Soil on vegetables is washed off before they meet the board you use for ready-to-eat food (`SAF-1.M2`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the sorted list with a consequence and a method per group."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "VEG-1.M1.X1",
+     "title": "Carrots in plain, acidic and alkaline water",
+     "description": "Carrots cooked in plain, acidic and alkaline water; compare texture and colour.",
+     "competencies": [
+      {
+       "id": "IN-VEG",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** see pectin chemistry at work, and prepare four vegetables of different groups correctly."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**The comparison:** 500 g of carrots; 2 tablespoons of vinegar; 1 teaspoon of bicarbonate of soda; three saucepans, each with 1 litre of water; a timer; three plates."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**The week's vegetables:** four from different groups, for example a leek, a cabbage, spinach and beetroot."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Recipe:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Cut** the carrots into sticks about 1 cm square and 6 cm long, all the same size. Divide them into three equal batches."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Prepare the waters:** pan 1 plain; pan 2 with the vinegar; pan 3 with the bicarbonate. Bring all three to the boil."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "**Cook** the three batches for 15 minutes, starting them together. Drain each onto its own plate."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "**Compare.** Photograph them side by side. Hold one stick of each by its end and photograph how far it bends. Taste each, and note texture, colour and taste."
+        },
+        {
+         "level": 0,
+         "marker": "5.",
+         "text": "**Explain** in a few sentences, by pectin, acid and alkali."
+        },
+        {
+         "level": 0,
+         "marker": "6.",
+         "text": "**The four vegetables.** Prepare each for cooking by its group: trim, wash, peel or not, and cut. Photograph each prepared. They become the week's dinners; the carrots go into a soup."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:** the comparison photos and the explanation, and the four vegetables prepared correctly for their group. With this module's quiz at 80 %, this meets the `IN-VEG` level 2 success row."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 1 h."
+      }
+     ]
+    }
+   ],
+   "items": [
+    {
+     "id": "VEG-1.M1.Q1",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "VEG-1.M1.L1",
+     "safety": false,
+     "question": "What makes a raw carrot crisp?",
+     "options": [
+      {
+       "key": "A",
+       "text": "its sugar"
+      },
+      {
+       "key": "B",
+       "text": "the water pressure in its cells (turgor)"
+      },
+      {
+       "key": "C",
+       "text": "its skin"
+      },
+      {
+       "key": "D",
+       "text": "its starch"
+      }
+     ],
+     "answer": "B",
+     "why": "A limp carrot has lost water."
+    },
+    {
+     "id": "VEG-1.M1.Q2",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "VEG-1.M1.L1",
+     "safety": false,
+     "question": "Why do vegetables soften when cooked?",
+     "options": [
+      {
+       "key": "A",
+       "text": "the water boils inside them"
+      },
+      {
+       "key": "B",
+       "text": "the pectin gluing the cells together dissolves"
+      },
+      {
+       "key": "C",
+       "text": "the salt dissolves them"
+      },
+      {
+       "key": "D",
+       "text": "they lose sugar"
+      }
+     ],
+     "answer": "B",
+     "why": "The cells separate."
+    },
+    {
+     "id": "VEG-1.M1.Q3",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "VEG-1.M1.L1",
+     "safety": false,
+     "question": "Carrots cooked in water with vinegar stay firmer than in plain water. Why?",
+     "options": [
+      {
+       "key": "A",
+       "text": "vinegar adds calcium"
+      },
+      {
+       "key": "B",
+       "text": "acid slows the breakdown of pectin"
+      },
+      {
+       "key": "C",
+       "text": "vinegar is colder"
+      },
+      {
+       "key": "D",
+       "text": "vinegar seals the surface"
+      }
+     ],
+     "answer": "B",
+     "why": "Acid keeps vegetables firm."
+    },
+    {
+     "id": "VEG-1.M1.Q4",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "VEG-1.M1.L1",
+     "safety": false,
+     "question": "What does bicarbonate in the cooking water do?",
+     "options": [
+      {
+       "key": "A",
+       "text": "keeps vegetables firm"
+      },
+      {
+       "key": "B",
+       "text": "speeds softening, so they turn mushy"
+      },
+      {
+       "key": "C",
+       "text": "adds sweetness"
+      },
+      {
+       "key": "D",
+       "text": "nothing"
+      }
+     ],
+     "answer": "B",
+     "why": "Alkali speeds pectin breakdown."
+    },
+    {
+     "id": "VEG-1.M1.Q5",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "VEG-1.M1.L2",
+     "safety": false,
+     "question": "Which is a brassica?",
+     "options": [
+      {
+       "key": "A",
+       "text": "leek"
+      },
+      {
+       "key": "B",
+       "text": "Brussels sprouts"
+      },
+      {
+       "key": "C",
+       "text": "celeriac"
+      },
+      {
+       "key": "D",
+       "text": "courgette"
+      }
+     ],
+     "answer": "B",
+     "why": "Cabbages, sprouts, kale, cauliflower and broccoli."
+    },
+    {
+     "id": "VEG-1.M1.Q6",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "VEG-1.M1.L2",
+     "safety": false,
+     "question": "A potato is a:",
+     "options": [
+      {
+       "key": "A",
+       "text": "root"
+      },
+      {
+       "key": "B",
+       "text": "tuber"
+      },
+      {
+       "key": "C",
+       "text": "stem"
+      },
+      {
+       "key": "D",
+       "text": "seed"
+      }
+     ],
+     "answer": "B",
+     "why": "Tubers store starch underground."
+    },
+    {
+     "id": "VEG-1.M1.Q7",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "VEG-1.M1.L2",
+     "safety": false,
+     "question": "Which group turns sulphurous when overcooked?",
+     "options": [
+      {
+       "key": "A",
+       "text": "roots"
+      },
+      {
+       "key": "B",
+       "text": "brassicas"
+      },
+      {
+       "key": "C",
+       "text": "squash"
+      },
+      {
+       "key": "D",
+       "text": "fruit vegetables"
+      }
+     ],
+     "answer": "B",
+     "why": "Long cooking releases sulphur compounds."
+    },
+    {
+     "id": "VEG-1.M1.Q8",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "VEG-1.M1.L2",
+     "safety": false,
+     "question": "How are spinach leaves best washed?",
+     "options": [
+      {
+       "key": "A",
+       "text": "under a running tap"
+      },
+      {
+       "key": "B",
+       "text": "in a bowl of water, lifted out so the grit stays behind"
+      },
+      {
+       "key": "C",
+       "text": "not at all"
+      },
+      {
+       "key": "D",
+       "text": "in hot water"
+      }
+     ],
+     "answer": "B",
+     "why": "Grit sinks; pouring the leaves out with the water brings it back."
+    }
+   ]
+  },
+  {
+   "id": "VEG-1.M2",
+   "title": "Seasonality, selection and storage",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** the 8 items of `VEG-1.M2` in the course file. Pass mark 80 %."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "VEG-1.M2.L1",
+     "title": "Seasons and freshness",
+     "prerequisites": [
+      "VEG-1.M1.L2"
+     ],
+     "competencies": [
+      {
+       "id": "IN-SEL",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** a vegetable in season is cheaper, fresher and better. Cooking by the season also widens what you cook: the Dutch calendar runs from kale and chicory to asparagus to beans and back. And at the shop, the freshest of several bunches is worth picking."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** a Dutch seasonal calendar (from a greengrocer, a vegetable box scheme or the program); the journal; a recent shopping receipt or your usual list."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*The Dutch seasonal calendar,* in outline:"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**Winter:** storage roots (carrot, beetroot, celeriac, parsnip) and cabbages, kale (*boerenkool*), Brussels sprouts, leeks, chicory (*witlof*)."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**Spring:** asparagus (*asperges*, roughly April to late June; the season traditionally ends around 24 June), early greens and radishes."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**Summer:** beans, courgettes, tomatoes, cucumbers, lettuces."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**Autumn:** squash, cauliflower, the first cabbages, and the start of the storage season."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "In November, for example, the list runs to kale, Brussels sprouts, leeks, red, white and savoy cabbage, celeriac, carrots, beetroot, parsnip, pumpkin, chicory, Jerusalem artichoke and lamb's lettuce. Keep your calendar in the journal, and add to it as the year goes round."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Judging freshness:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**firmness:** roots and stems that don't bend;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**colour:** bright, not faded;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**smell:** fresh, not sour or musty;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**cut ends:** moist, not dried out (asparagus, leeks), because cut ends dry with time;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**leaves:** without yellowing or slime;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**beans:** they snap crisply."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Choosing by use.* Not everything needs the best. A slightly limp carrot is fine for soup or stock; a raw salad needs the crispest. Matching quality to use saves money and waste."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**The calendar (45 min).** From the seasonal calendar, build this month's list of vegetables in the journal. Mark the ones you already cook and the ones that are new. Compare it with your last shopping receipt: what did you buy out of season? Write a shopping list for next week that matches the season, with the freshness sign to look for beside each item."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** a shopping list that matches the season; the freshness signs named for each item."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Expensive, tasteless tomatoes in January",
+         "Buying by recipe instead of by season",
+         "Start the week's menu from the calendar"
+        ],
+        [
+         "A large, woody vegetable",
+         "Choosing the biggest instead of the freshest",
+         "Firm, bright and heavy for its size"
+        ],
+        [
+         "Old asparagus or leeks",
+         "Ignoring the cut ends",
+         "Look at the cut: moist and pale is fresh"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** no special risks beyond the kitchen basics (`SAF-1`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** this month's list, and next week's seasonal shopping list."
+      }
+     ]
+    },
+    {
+     "id": "VEG-1.M2.L2",
+     "title": "Storing vegetables",
+     "prerequisites": [
+      "SAF-1.M3.L1"
+     ],
+     "competencies": [
+      {
+       "id": "IN-STO",
+       "level": 3
+      },
+      {
+       "id": "KM-WAST",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** vegetables keep their quality for days or weeks when stored well, and lose it overnight when stored badly. Good storage is also the cheapest way to waste less: most of the vegetables a household throws away were forgotten, or kept in the wrong place."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** this week's vegetables; bags that let a little moisture out (perforated, or a paper bag inside a plastic one); a cool, dark cupboard or a box in a cool place; masking tape and a pen; a limp carrot and a tired head of lettuce; two bowls of cold water; the journal."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Where each keeps:*"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Place",
+        "What",
+        "Why"
+       ],
+       "rows": [
+        [
+         "Fridge drawer (the fridge set to 4 °C)",
+         "Most vegetables: roots, brassicas, leaves, beans, leeks",
+         "Cold slows ageing; a loose bag keeps them from drying without making them wet"
+        ],
+        [
+         "Cool, dark and dry, not the fridge",
+         "Potatoes, onions, squash",
+         "The cold turns potato starch to sugar; light turns potatoes green"
+        ],
+        [
+         "Room temperature",
+         "Tomatoes",
+         "They lose flavour in the cold"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "Keep potatoes and onions apart: each speeds the other's spoiling."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Ethylene.* Apples, pears and ripening tomatoes release ethylene, a gas that speeds ripening and ageing. It yellows broccoli and leaves and makes cucumbers soft. Keep them in a different place from the vegetable drawer."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Reviving.* Limp roots and leaves regain crispness in cold water, because the cells take water back in (`VEG-1.M1.L1`). Stand a carrot in a glass of cold water, or plunge lettuce leaves into a bowl of cold water, for 30–60 minutes."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Using them up.*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**First in, first out:** new vegetables go behind the old ones."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**The tired ones** go into soup, stock or a stir-fry."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**Opened or half-used vegetables** are wrapped, labelled with the date, and used first."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**A weekly waste log** (`KM-WAST`): what you threw away, and why."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Storage and revival (45 min).** Store this week's vegetables by the rules: fridge drawer, cool store or counter. Label anything opened with the date. Photograph the fridge drawer and the cool store. Then revive the limp carrot and the lettuce in cold water, and compare them before and after."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** the revived vegetables crisp again; the fridge drawer organised; nothing forgotten at the back."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Potatoes that taste sweet and brown too fast when fried",
+         "Potatoes in the fridge",
+         "A cool, dark cupboard"
+        ],
+        [
+         "Sprouting potatoes, soft onions",
+         "Onions and potatoes stored together",
+         "Separate places"
+        ],
+        [
+         "Mealy, tasteless tomatoes",
+         "Tomatoes in the fridge",
+         "On the counter, eaten within a few days"
+        ],
+        [
+         "Yellow broccoli",
+         "Apples in the vegetable drawer",
+         "Fruit elsewhere"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** cut or cooked vegetables go into the fridge within 2 hours and are used within 2 days (assessment §9). Discard anything mouldy or slimy."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the storage photos, and the before and after of the revival."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "VEG-1.M2.X1",
+     "title": "A seasonal market or shop visit",
+     "description": "A seasonal market or shop visit with a buying checklist.",
+     "competencies": [
+      {
+       "id": "IN-SEL",
+       "level": 2
+      },
+      {
+       "id": "IN-STO",
+       "level": 3
+      },
+      {
+       "id": "KM-WAST",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** buy a week's vegetables by season and quality, store them well, and waste as little as possible. A market, a greengrocer or a supermarket; one week."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** the week's vegetable budget; this month's list from `VEG-1.M2.L1`; the buying checklist (below); bags and containers; masking tape and a pen; a phone; for the stock, a large pan, a sieve and containers; the waste log in the journal."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Recipe:** the visit, the storage and the week."
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Plan** the week's vegetables from the calendar and your menu."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**At the shop,** for each item, check it against the buying checklist, photograph your choice, and note its freshness signs:"
+        },
+        {
+         "level": 1,
+         "marker": "",
+         "text": "in season, by the calendar;"
+        },
+        {
+         "level": 1,
+         "marker": "",
+         "text": "firm, bright, fresh-smelling;"
+        },
+        {
+         "level": 1,
+         "marker": "",
+         "text": "cut ends moist; leaves without yellowing; beans that snap;"
+        },
+        {
+         "level": 1,
+         "marker": "",
+         "text": "the quality matched to the use."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "**At home,** store each item by the rules of `VEG-1.M2.L2`. Label and date anything opened. Photograph the fridge drawer and the cool store."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "**Trim stock.** Through the week, keep clean trim in a box in the fridge: onion and leek ends, carrot peel, celery leaves, parsley stalks; no brassica trim, which turns sulphurous, and no potato peel. At the end of the week, cover it with water (about 1.5 litres), simmer for 45 minutes, and strain. Photograph it. Cool it, then fridge or freeze it."
+        },
+        {
+         "level": 0,
+         "marker": "5.",
+         "text": "**Waste log.** Note everything you throw away, and why."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "`IN-SEL` level 2: each item photographed with its freshness signs named."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "`IN-STO` level 3: the week's vegetables stored by zone, labelled and dated where opened (photo)."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "`KM-WAST` level 2: the trim in a stock (photo) and the waste log."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "This module's quiz at 80 % completes the rows."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 1.5 h, plus normal cooking through the week. The stock goes into the week's soups; it keeps 2 days in the fridge, or longer frozen."
+      }
+     ]
+    }
+   ],
+   "items": [
+    {
+     "id": "VEG-1.M2.Q1",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "VEG-1.M2.L1",
+     "safety": false,
+     "question": "Which vegetable is in season in the Netherlands in January?",
+     "options": [
+      {
+       "key": "A",
+       "text": "kale (*boerenkool*)"
+      },
+      {
+       "key": "B",
+       "text": "white asparagus"
+      },
+      {
+       "key": "C",
+       "text": "courgette"
+      },
+      {
+       "key": "D",
+       "text": "field tomatoes"
+      }
+     ],
+     "answer": "A",
+     "why": "Kale and other cabbages are winter vegetables."
+    },
+    {
+     "id": "VEG-1.M2.Q2",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "VEG-1.M2.L1",
+     "safety": false,
+     "question": "Roughly when is the Dutch white asparagus season?",
+     "options": [
+      {
+       "key": "A",
+       "text": "January to March"
+      },
+      {
+       "key": "B",
+       "text": "April to late June"
+      },
+      {
+       "key": "C",
+       "text": "August"
+      },
+      {
+       "key": "D",
+       "text": "all year"
+      }
+     ],
+     "answer": "B",
+     "why": "It ends traditionally around 24 June."
+    },
+    {
+     "id": "VEG-1.M2.Q3",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "VEG-1.M2.L1",
+     "safety": false,
+     "question": "Which sign shows fresh green beans?",
+     "options": [
+      {
+       "key": "A",
+       "text": "they bend without breaking"
+      },
+      {
+       "key": "B",
+       "text": "they snap crisply and are bright"
+      },
+      {
+       "key": "C",
+       "text": "brown spots"
+      },
+      {
+       "key": "D",
+       "text": "a sweet smell"
+      }
+     ],
+     "answer": "B",
+     "why": "Old beans go limp."
+    },
+    {
+     "id": "VEG-1.M2.Q4",
+     "type": "SCENARIO",
+     "lessonId": "VEG-1.M2.L1",
+     "safety": false,
+     "question": "Two bags of carrots: one firm, one bendy with sprouting tops, half the price. Which do you buy for a raw salad, and which could do for a soup?",
+     "options": [],
+     "answer": "The firm ones for the salad; the bendy ones are acceptable for a soup or stock if they are not mouldy.",
+     "why": "Match the quality to the use."
+    },
+    {
+     "id": "VEG-1.M2.Q5",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "VEG-1.M2.L1",
+     "safety": false,
+     "question": "What do moist, not dried, cut ends on asparagus or leeks tell you?",
+     "options": [
+      {
+       "key": "A",
+       "text": "they were watered"
+      },
+      {
+       "key": "B",
+       "text": "they were cut recently"
+      },
+      {
+       "key": "C",
+       "text": "they are old"
+      },
+      {
+       "key": "D",
+       "text": "nothing"
+      }
+     ],
+     "answer": "B",
+     "why": "Cut ends dry out with time."
+    },
+    {
+     "id": "VEG-1.M2.Q6",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "VEG-1.M2.L2",
+     "safety": false,
+     "question": "Why keep apples away from broccoli?",
+     "options": [
+      {
+       "key": "A",
+       "text": "they bruise it"
+      },
+      {
+       "key": "B",
+       "text": "apples release ethylene, which yellows broccoli"
+      },
+      {
+       "key": "C",
+       "text": "they share pests"
+      },
+      {
+       "key": "D",
+       "text": "they don't need to be"
+      }
+     ],
+     "answer": "B",
+     "why": "Ethylene speeds ripening and ageing."
+    },
+    {
+     "id": "VEG-1.M2.Q7",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "VEG-1.M2.L2",
+     "safety": false,
+     "question": "Where do potatoes keep best?",
+     "options": [
+      {
+       "key": "A",
+       "text": "in the fridge"
+      },
+      {
+       "key": "B",
+       "text": "cool, dark and dry, not with onions"
+      },
+      {
+       "key": "C",
+       "text": "in the sun"
+      },
+      {
+       "key": "D",
+       "text": "in water"
+      }
+     ],
+     "answer": "B",
+     "why": "The cold turns starch to sugar; light turns them green."
+    },
+    {
+     "id": "VEG-1.M2.Q8",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "VEG-1.M2.L2",
+     "safety": false,
+     "question": "How do you revive a limp carrot?",
+     "options": [
+      {
+       "key": "A",
+       "text": "cook it"
+      },
+      {
+       "key": "B",
+       "text": "stand it in cold water"
+      },
+      {
+       "key": "C",
+       "text": "salt it"
+      },
+      {
+       "key": "D",
+       "text": "freeze it"
+      }
+     ],
+     "answer": "B",
+     "why": "The cells take water back in."
+    }
+   ]
+  },
+  {
+   "id": "VEG-1.M3",
+   "title": "Colour, texture and flavour",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** the 8 items of `VEG-1.M3` in the course file. Pass mark 80 %."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "VEG-1.M3.L1",
+     "title": "Pigments",
+     "prerequisites": [
+      "VEG-1.M1.L1"
+     ],
+     "competencies": [
+      {
+       "id": "IN-VEG",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** colour is the first thing anyone notices on a plate, and it tells you how a vegetable was cooked. Olive-grey beans, blue red cabbage and orange-stained butter all have a simple chemical cause, and each can be controlled."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** 400 g of red cabbage, finely shredded; 2 tablespoons of vinegar; 300 g of green beans (or broccoli, or Brussels sprouts in winter); salt; two small pans with lids and a large pan; a timer; a phone."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Chlorophyll* (green):"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "turns olive with long cooking and with acid;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "a lid traps the vegetable's own volatile acids, which then dull the colour;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "short cooking in plenty of boiling water, uncovered, then shocking or spreading out to cool, keeps it bright (`HEA-1.M5.L2`)."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Anthocyanins* (red, purple, blue: red cabbage, beetroot, red onion):"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "red in acid, blue or grey in alkali;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "this is why Dutch red cabbage is cooked with apple or vinegar;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "hard tap water, which is slightly alkaline, can turn it bluish."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Carotenoids* (orange and yellow: carrot, squash, pepper) are stable to acid and heat. They dissolve in fat, which is why carrots cooked in butter colour the butter orange, and why a little fat makes their colour glow."
+      },
+      {
+       "type": "table",
+       "header": [
+        "Pigment",
+        "Acid",
+        "Alkali",
+        "Long cooking",
+        "Fat"
+       ],
+       "rows": [
+        [
+         "Chlorophyll",
+         "Olive",
+         "Bright but mushy",
+         "Olive",
+         "—"
+        ],
+        [
+         "Anthocyanins",
+         "Red",
+         "Blue-grey",
+         "Fades",
+         "—"
+        ],
+        [
+         "Carotenoids",
+         "Stable",
+         "Stable",
+         "Stable",
+         "Dissolves and carries the colour"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Colour tests (45 min).** *Red cabbage:* divide it between the two small pans with 150 ml of water each; add the vinegar to one; cover both and cook gently for 20 minutes. *Beans:* bring the large pan of salted water to the boil; cook one half of the beans for 4 minutes and the other for 12, uncovered. Before lifting each lid or draining each batch, write the colour you predict. Photograph them side by side."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** your prediction of each colour written before lifting the lid, and checked."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Grey beans",
+         "Lemon juice in the green beans while they cook",
+         "Acid at the table, not in the pan"
+        ],
+        [
+         "Blue-grey red cabbage",
+         "Red cabbage with no acid",
+         "Apple and vinegar from the start"
+        ],
+        [
+         "Dull, olive greens",
+         "A lid on greens",
+         "Uncovered, at least for the first minutes"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** no special risks beyond the kitchen basics (`SAF-1`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the predictions and the photos."
+      }
+     ]
+    },
+    {
+     "id": "VEG-1.M3.L2",
+     "title": "Texture and firmness",
+     "prerequisites": [
+      "VEG-1.M1.L1"
+     ],
+     "competencies": [
+      {
+       "id": "IN-VEG",
+       "level": 2
+      },
+      {
+       "id": "SC-STRC",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** \"cook until tender\" hides a choice. A cauliflower for a salad, for a purée and for a gratin needs three different donenesses. Deciding the texture before you cook, and then cooking to it, is what separates a cook from someone following a timer."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** 600 g of one vegetable: cauliflower or carrots in winter, green beans in summer; a saucepan of salted water; a slotted spoon; a small knife; three plates; a phone; the journal."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Acid and calcium keep vegetables firm* (`VEG-1.M1.L1`):"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "potatoes in a tomato stew stay firm long after potatoes in water would have softened;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "vegetables cooked in hard, calcium-rich water soften a little more slowly;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "pickles stay crisp in their acid."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "Use it deliberately: add potatoes earlier, or tomatoes later, if you want the potatoes soft."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Overcooking.* Past the doneness you wanted, texture is lost for good, and so are colour and flavour, which leach into the water. Brassicas turn sulphurous. A vegetable left in the hot pan, or in a hot colander, keeps cooking: carryover works on vegetables too (`HEA-1.M1.L3`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Choosing a doneness:*"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Doneness",
+        "The knife",
+        "The bite",
+        "For"
+       ],
+       "rows": [
+        [
+         "Tender-crisp",
+         "Goes in with a little resistance in the centre",
+         "Crisp, with bite",
+         "A salad, a side with bite"
+        ],
+        [
+         "Just tender",
+         "Goes in easily, the piece holds its shape",
+         "Tender, still whole",
+         "A vegetable that will cook further in a sauce or gratin"
+        ],
+        [
+         "Fully tender",
+         "No resistance; the piece breaks when pressed",
+         "Soft throughout",
+         "A purée, a soup"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "Decide the doneness before cooking, write it down, and cook to it. Test with the knife, then bite a piece: the two together are more reliable than either alone."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Doneness (45 min).** Cut the vegetable into even pieces (cauliflower florets, carrot rounds or beans). Put it all into the boiling salted water. Lift out a third at tender-crisp, a third at just tender and the rest at fully tender, testing with the knife and by biting before each. Note the times. Photograph the three on their plates, and one piece of each cut in half."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** three clearly different textures, each matching its target."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Every vegetable soft",
+         "One doneness for every use",
+         "Write the target before cooking"
+        ],
+        [
+         "Hard one day, soft the next",
+         "Cooking by the clock only",
+         "Knife and bite; the time is only a guide"
+        ],
+        [
+         "Tender-crisp in the pan, soft on the plate",
+         "Forgetting the carryover in a vegetable left in the hot pan",
+         "Out of the water at once; spread out or shock"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** lift the vegetables out with the slotted spoon rather than carrying the pan of boiling water (`SAF-1.M4`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the times and the photos, with the target for each."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "VEG-1.M3.X1",
+     "title": "Green beans: lid and acid",
+     "description": "Green beans cooked with and without a lid, with and without early acid.",
+     "competencies": [
+      {
+       "id": "IN-VEG",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** see, in one vegetable, what the lid and early acid do to colour and texture: four batches, one variable at a time. Out of season, frozen green beans or broccoli florets work."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** 600 g of green beans; 4 teaspoons of lemon juice or vinegar; salt; two saucepans of the same size, one with a lid; a slotted spoon; a timer; four plates; a phone."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Recipe:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Prepare.** Top the beans and divide them into four batches of 150 g. Bring 1.5 litres of water with 15 g of salt to the boil in each pan."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Batch 1, uncovered:** 8 minutes in boiling water, no lid."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "**Batch 2, covered:** 8 minutes with the lid on."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "**Batch 3, acid from the start:** 2 teaspoons of lemon juice in the water, then 8 minutes uncovered. Rinse the pan afterwards."
+        },
+        {
+         "level": 0,
+         "marker": "5.",
+         "text": "**Batch 4, acid at the end:** 8 minutes uncovered, then drained and tossed with 2 teaspoons of lemon juice."
+        },
+        {
+         "level": 0,
+         "marker": "6.",
+         "text": "**Compare.** Drain each batch onto its plate as soon as its time is up. Photograph all four side by side in daylight."
+        },
+        {
+         "level": 0,
+         "marker": "7.",
+         "text": "**Taste** each, and write what happened and why, by chlorophyll, the lid and the acid."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "Run two batches at a time, one in each pan, so the timing is the same."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:** the comparison and the explanation, with this module's quiz at 80 %. This is further `IN-VEG` level 2 evidence, and the kind of comparison level 3 asks for in S3. AI review compares the colour of the four batches: *competent* is bright green beans (batches 1 and 4); *not yet* is olive beans."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 45 min; the beans are a side dish."
+      }
+     ]
+    }
+   ],
+   "items": [
+    {
+     "id": "VEG-1.M3.Q1",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "VEG-1.M3.L1",
+     "safety": false,
+     "question": "What turns green beans olive?",
+     "options": [
+      {
+       "key": "A",
+       "text": "salt"
+      },
+      {
+       "key": "B",
+       "text": "long cooking and acid"
+      },
+      {
+       "key": "C",
+       "text": "cold water"
+      },
+      {
+       "key": "D",
+       "text": "a big pot"
+      }
+     ],
+     "answer": "B",
+     "why": "Chlorophyll changes with heat over time and with acid."
+    },
+    {
+     "id": "VEG-1.M3.Q2",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "VEG-1.M3.L1",
+     "safety": false,
+     "question": "Why cook green vegetables uncovered for the first minutes?",
+     "options": [
+      {
+       "key": "A",
+       "text": "to save energy"
+      },
+      {
+       "key": "B",
+       "text": "so their own volatile acids escape instead of dulling the colour"
+      },
+      {
+       "key": "C",
+       "text": "to brown them"
+      },
+      {
+       "key": "D",
+       "text": "it makes no difference"
+      }
+     ],
+     "answer": "B",
+     "why": "A lid traps the acids."
+    },
+    {
+     "id": "VEG-1.M3.Q3",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "VEG-1.M3.L1",
+     "safety": false,
+     "question": "Why is Dutch red cabbage cooked with apple or vinegar?",
+     "options": [
+      {
+       "key": "A",
+       "text": "only for sweetness"
+      },
+      {
+       "key": "B",
+       "text": "acid keeps its anthocyanins red instead of blue-grey"
+      },
+      {
+       "key": "C",
+       "text": "to soften it"
+      },
+      {
+       "key": "D",
+       "text": "tradition only"
+      }
+     ],
+     "answer": "B",
+     "why": "Anthocyanins turn blue in alkali, red in acid."
+    },
+    {
+     "id": "VEG-1.M3.Q4",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "VEG-1.M3.L1",
+     "safety": false,
+     "question": "The orange of carrots:",
+     "options": [
+      {
+       "key": "A",
+       "text": "disappears with acid"
+      },
+      {
+       "key": "B",
+       "text": "is stable to heat and acid, and dissolves in fat"
+      },
+      {
+       "key": "C",
+       "text": "turns green with time"
+      },
+      {
+       "key": "D",
+       "text": "needs a lid"
+      }
+     ],
+     "answer": "B",
+     "why": "Carotenoids colour the butter or oil."
+    },
+    {
+     "id": "VEG-1.M3.Q5",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "VEG-1.M3.L2",
+     "safety": false,
+     "question": "Potatoes in a tomato stew stay firm longer. Why?",
+     "options": [
+      {
+       "key": "A",
+       "text": "tomatoes are cold"
+      },
+      {
+       "key": "B",
+       "text": "acid slows the breakdown of pectin"
+      },
+      {
+       "key": "C",
+       "text": "tomatoes have more salt"
+      },
+      {
+       "key": "D",
+       "text": "they don't"
+      }
+     ],
+     "answer": "B",
+     "why": "Add potatoes earlier or tomatoes later if you want them softer."
+    },
+    {
+     "id": "VEG-1.M3.Q6",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "VEG-1.M3.L2",
+     "safety": false,
+     "question": "What does calcium do to vegetables?",
+     "options": [
+      {
+       "key": "A",
+       "text": "softens them"
+      },
+      {
+       "key": "B",
+       "text": "firms their cell walls"
+      },
+      {
+       "key": "C",
+       "text": "colours them"
+      },
+      {
+       "key": "D",
+       "text": "nothing"
+      }
+     ],
+     "answer": "B",
+     "why": "It strengthens the pectin network."
+    },
+    {
+     "id": "VEG-1.M3.Q7",
+     "type": "SCENARIO",
+     "lessonId": "VEG-1.M3.L2",
+     "safety": false,
+     "question": "You cook cauliflower for a salad and for a purée. What doneness do you aim for in each?",
+     "options": [],
+     "answer": "Tender-crisp for the salad; fully tender for the purée.",
+     "why": "The use decides the doneness, set before cooking."
+    },
+    {
+     "id": "VEG-1.M3.Q8",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "VEG-1.M3.L2",
+     "safety": false,
+     "question": "Overcooked Brussels sprouts smell of:",
+     "options": [
+      {
+       "key": "A",
+       "text": "sugar"
+      },
+      {
+       "key": "B",
+       "text": "sulphur"
+      },
+      {
+       "key": "C",
+       "text": "nothing"
+      },
+      {
+       "key": "D",
+       "text": "butter"
+      }
+     ],
+     "answer": "B",
+     "why": "Long cooking releases sulphur compounds from brassicas."
+    }
+   ]
+  },
+  {
+   "id": "VEG-1.M4",
+   "title": "Methods by vegetable group",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** the 8 items of `VEG-1.M4` in the course file. Pass mark 80 %."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "VEG-1.M4.L1",
+     "title": "Roots",
+     "prerequisites": [
+      "HEA-1.M4.L1"
+     ],
+     "competencies": [
+      {
+       "id": "TS-VEG",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** roots are the backbone of the Dutch winter kitchen, and three methods cover most of what they can do: roasting for depth, glazing for a shiny side dish, and a purée for silk. Glazing also teaches you to cook by a ratio, so that the sauce and the vegetable are ready at the same moment."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** for session 1, 1 kg of carrots, 50 g of butter, 20 g of sugar, salt, two wide pans with lids; for session 2, 600 g of beetroot or parsnip, oil, salt, a sheet pan, and for the purée 600 g of celeriac, 30 g of butter, about 100 ml of milk or cream, a blender or a masher."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Roasting* (`HEA-1.M4.L1`) concentrates and browns: larger chunks, oiled, spaced, at your oven table's setting for roots."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Glazing* (*glacer*, *glaceren*) cooks small, even pieces in a little liquid with butter and a pinch of sugar, partly covered, until the liquid has reduced to a shiny coating just as the vegetables become tender. The ratio of vegetable to liquid decides whether the two arrive together:"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Per 100 g of vegetable",
+        "Amount"
+       ],
+       "rows": [
+        [
+         "Liquid (water or stock)",
+         "40 ml"
+        ],
+        [
+         "Butter",
+         "5 g"
+        ],
+        [
+         "Sugar",
+         "2 g"
+        ],
+        [
+         "Salt",
+         "A small pinch"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "For 500 g of carrots: 200 ml of water, 25 g of butter, 10 g of sugar. Cook partly covered over medium heat until the carrots are nearly tender, then uncover and let the liquid reduce, shaking the pan, until it coats them."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Purée.* Cook the vegetable fully tender (boiled or steamed), drain it very well and let it steam dry for a minute, then blend or press it. Enrich with butter or cream, and season. Water is the enemy: a wet vegetable gives a thin purée."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Cut size and method:* small, even pieces for glazing (bâtonnets or rounds, `KNF-1.M3`); larger chunks for roasting; any size for a purée."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Glazed carrots (60 min).** Cut the carrots into even rounds or bâtonnets and divide them into two batches of 500 g. Glaze batch 1 by the ratio (200 ml of water) and batch 2 with twice the liquid (400 ml), the butter and sugar the same. Note which finishes first in each pan, the liquid or the carrots, and photograph both."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Roast and purée (75 min).** Roast the beetroot or parsnip in chunks. Meanwhile, cook the celeriac in cubes until fully tender, drain and dry it, and blend it with the butter and enough warm milk for a purée that holds a soft peak. Season both."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** the glaze coats the carrots as they turn tender; the purée is smooth and holds a soft peak."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Soft carrots in a pool of liquid",
+         "Too much liquid, so the vegetables are soft before it reduces",
+         "Less liquid by the ratio; meanwhile, lift the carrots out and reduce"
+        ],
+        [
+         "Burnt glaze, hard carrots",
+         "Too little liquid",
+         "Add a splash of water and lower the heat"
+        ],
+        [
+         "A thin, watery purée",
+         "Vegetables not drained or dried",
+         "Drain well; steam dry before blending"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** a sugar glaze burns quickly once the water has gone: shake the pan and watch it. Use oven gloves for the sheet pan (`SAF-1.M4`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the two glazing results with your correction, and the photos."
+      }
+     ]
+    },
+    {
+     "id": "VEG-1.M4.L2",
+     "title": "Brassicas",
+     "prerequisites": [
+      "HEA-1.M5.L2"
+     ],
+     "competencies": [
+      {
+       "id": "TS-VEG",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** brassicas have a bad name, mostly from overcooking: grey sprouts and sulphurous cabbage. Cooked fast, or cooked long and gently with acid, they are some of the best vegetables of the Dutch winter."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** for session 1, 500 g of Brussels sprouts and a cauliflower; for session 2, half a white or savoy cabbage and a small red cabbage, with a sour apple (such as a Goudreinet), an onion, 2 tablespoons of vinegar, 1 tablespoon of sugar, a bay leaf and a clove (in summer: a pointed cabbage, *spitskool*, and a kohlrabi); oil; butter; salt; a large pan of salted water; the sauté pan; a heavy pan with a lid; sheet pans."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Four methods for brassicas:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**Blanch:** fast, in plenty of boiling salted water, for green brassicas like broccoli and kale (`HEA-1.M5.L2`)."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**Roast:** halved sprouts laid cut-side down; cauliflower in florets. Browning adds sweetness and limits the sulphur."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**Sauté:** shredded cabbage or sprouts, quick and hot, in batches (`HEA-1.M3.L1`)."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**Braise:** white or red cabbage cooked slowly with a little liquid, fat and acid until silky."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*The sulphur problem.* Brassicas hold sulphur compounds that are released, and multiply, as they cook. The way round them:"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**short cooking** (a few minutes), before many have formed;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**long, gentle braising with acid**, which softens the cabbage and mellows them."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "The middle ground, 15–20 minutes of boiling, smells worst."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Kale* (*boerenkool*) is tough: strip the leaves from the stems, blanch for 3–4 minutes, squeeze, then sauté with garlic. Undercooked it is tough; cooked to mush, it is grey."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Braised red cabbage.* Sweat the sliced onion in butter, add the shredded cabbage, the grated apple, the vinegar, sugar, bay, clove, salt and 100 ml of water. Cover and cook gently for about an hour, stirring now and then, until silky. The acid keeps it red (`VEG-1.M3.L1`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Sprouts and cauliflower (60 min).** Blanch half the sprouts until just tender. Halve the rest, toss them in oil and salt, and roast them cut-side down beside the cauliflower florets. Compare the two sprouts."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Cabbage (60 min).** Sauté the shredded white or savoy cabbage in batches in a hot pan. Braise the red cabbage with apple. In summer: sauté the pointed cabbage, and make a slaw of shredded kohlrabi with a little vinegar, oil and salt."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** roasted sprouts browned on the cut side and tender; braised red cabbage glossy and deep red."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Grey, sulphurous sprouts",
+         "Sprouts boiled to grey",
+         "A few minutes, or roast them"
+        ],
+        [
+         "Tough or mushy kale",
+         "Kale undercooked, or cooked to mush",
+         "Blanch 3–4 minutes, then sauté"
+        ],
+        [
+         "Blue, dull red cabbage",
+         "Red cabbage without acid",
+         "Apple and vinegar from the start"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** no special risks beyond the kitchen basics (`SAF-1`). The braised red cabbage keeps 2 days in the fridge and reheats well."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** photos of each dish, and a line comparing the blanched and the roasted sprouts."
+      }
+     ]
+    },
+    {
+     "id": "VEG-1.M4.L3",
+     "title": "Leaves",
+     "prerequisites": [
+      "HEA-1.M3.L1"
+     ],
+     "competencies": [
+      {
+       "id": "TS-VEG",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** leaves cook in seconds and shrink to almost nothing, which surprises every cook once. Washed and dried well, and cooked just until wilted, they are bright, glossy and full of flavour. Wet or overcooked, they are slimy and sit in a puddle."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** for session 1, 500 g of spinach; for session 2, a bunch of chard (summer and autumn) or 400 g of kale (winter); 2 cloves of garlic; oil and butter; salt; a large bowl; a salad spinner or a clean tea towel; the sauté pan; the scale; a sieve."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Washing and drying.* Wash leaves in a large bowl of water, swish them, and lift them out, so the grit stays on the bottom (`VEG-1.M1.L2`). Repeat if the water is gritty. Dry them in a salad spinner, or roll them in a tea towel. Wet leaves steam in the pan instead of sautéing, and they dilute a dressing."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Wilting.* Spinach and chard collapse to a small fraction of their raw volume. A pan piled high with leaves gives a small portion. For four people as a side, plan on about 1 kg of raw spinach. Add the leaves in handfuls, each one wilting before the next goes in."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Sautéing greens.* A hot pan, a little fat and sliced garlic; the leaves turned with tongs until just wilted. Then the water they release is squeezed out for a side dish, or kept for a soup."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Chard* has thick stems that take much longer than its leaves. Cut the stems out, slice them and cook them first; add the leaves near the end. Kale is the same: stripped from its stems, and the stems either discarded or cooked separately."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Weigh before and after.* It is the quickest way to learn how much to buy."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Spinach (45 min).** Wash and dry the spinach and weigh it. Wilt half in a dry, hot pan, turning it with tongs. Sauté the other half with garlic in a little oil. Weigh both after squeezing gently in a sieve, and note the fraction left. Taste them side by side."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Chard or kale (45 min).** Separate the stems from the leaves. Cook the sliced stems first in a little butter until tender, then add the leaves and turn until just wilted. Season."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** bright green, glossy, just wilted; no puddle on the plate."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Spinach stewing in grey water",
+         "Wet leaves in the pan",
+         "Spin or towel them dry"
+        ],
+        [
+         "A spoonful for four",
+         "Too little bought",
+         "About 1 kg raw spinach for four"
+        ],
+        [
+         "Slimy, dark leaves",
+         "Overcooking until slimy",
+         "Off the heat as soon as they wilt"
+        ],
+        [
+         "Raw stems, mushy leaves",
+         "Stems and leaves cooked together",
+         "Stems first, leaves at the end"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** wash leaves well: soil can carry bacteria (`SAF-1.M2`). Cooked spinach goes into the fridge within 2 hours and is eaten within 2 days."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the raw and cooked weights, and the photos."
+      }
+     ]
+    },
+    {
+     "id": "VEG-1.M4.L4",
+     "title": "Alliums",
+     "prerequisites": [
+      "HEA-1.M2.L2"
+     ],
+     "competencies": [
+      {
+       "id": "TS-VEG",
+       "level": 3
+      },
+      {
+       "id": "SC-BRWN",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** onions start more dishes than any other vegetable, and how you cook them sets the flavour of everything that follows. The same onion can be sweet and mild, savoury and deep, or jammy and rich: three different foundations from one ingredient."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** 3 onions; a leek; 3 tablespoons of oil or butter; salt; three small pans, or one used three times; a lid; about 300 ml of hot stock; three cups; a timer."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Three ways of cooking onions, and what each gives a dish:*"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Method",
+        "How",
+        "Result",
+        "For"
+       ],
+       "rows": [
+        [
+         "Sweating",
+         "Low heat, a little fat, often a lid; about 10 minutes",
+         "Soft and translucent, no colour; sweet and mild",
+         "Soups, risotto, white sauces"
+        ],
+        [
+         "Browning",
+         "Medium-high heat, stirred now and then; about 8–10 minutes",
+         "Colour on the edges; savoury depth",
+         "Stews, gravies, a pan sauce"
+        ],
+        [
+         "Caramelising",
+         "Long and slow, moderate heat, splashes of water to lift the fond; 30–45 minutes (`HEA-1.M2.L2`)",
+         "Deep, sweet and jammy",
+         "A topping, an onion soup"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "A pinch of salt at the start of sweating draws out moisture and helps the onion soften without colour."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Leeks* sweat sweet and silky, but their thin layers burn easily. They are best sweated, braised, or grilled after blanching. Wash them well: slit the green part lengthwise and rinse between the layers, where soil collects."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Why it matters in a dish.* A delicate white soup made with browned onions turns beige and tastes of stew. A beef stew made with sweated onions tastes flat. The method of the onion is chosen for the dish."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Three onions (60 min).** Slice the onions the same way. Sweat one, brown one and caramelise one. Photograph the three side by side. Put a spoonful of each into a cup of hot stock, and taste the three cups. Then sweat the sliced leek and taste it."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** three distinct colours and flavours, none burnt."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "\"Sweated\" onions with brown edges",
+         "\"Sweating\" at high heat, which browns them",
+         "Low heat, a lid, a pinch of salt"
+        ],
+        [
+         "A grey-beige white sauce",
+         "Browning leeks for a white sauce",
+         "Sweat them, without colour"
+        ],
+        [
+         "Burnt edges, raw centres",
+         "Rushing the caramelising",
+         "Moderate heat, 30–45 minutes"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** caramelising onions need watching at the end; take the pan off the heat at the first acrid smell (`SAF-1.M4.L2`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the photo of the three onions and a tasting line for each cup."
+      }
+     ]
+    },
+    {
+     "id": "VEG-1.M4.L5",
+     "title": "Squash and fruit vegetables",
+     "prerequisites": [
+      "HEA-1.M4.L1"
+     ],
+     "competencies": [
+      {
+       "id": "TS-VEG",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** squash and the fruit vegetables are opposites. Squash is dense and sweet and rewards long roasting; courgettes, tomatoes and peppers are mostly water and turn to a watery stew unless you cook them hot and fast or cook the water away."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** in autumn and winter, a squash of about 1 kg (a butternut, *flespompoen*, or a red kuri, *potimarron*), oil, salt, a sheet pan; in summer, also 2 courgettes, 500 g of tomatoes and 2 peppers; the sauté pan; tongs; a bowl with a plate to cover it."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Squash* is dense and sweet. It roasts well in wedges or cubes, and purées and makes soup well. Cut it safely: a flat side first, on a stable board (`KNF-1.M4.L2`). Red kuri skin softens in the oven and can be eaten; butternut is usually peeled."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Fruit vegetables* (courgette, tomato, pepper) are very watery:"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**Courgette:** salt the slices and let them drain in a colander for 20 minutes, or cook them hot and fast, in batches, in one layer, so they brown instead of stewing."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**Tomatoes:** cooked down slowly to concentrate them into a sauce, or roasted, halved, until their edges caramelise."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**Peppers:** charred whole over a gas flame, under the grill or in a hot oven until the skin blackens, then covered in a bowl for 10 minutes so the skin loosens, and peeled. Or roasted in strips."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Seasonality.* Squash is an autumn and winter vegetable; courgettes, tomatoes and peppers are summer ones. Out of season, this lesson uses squash and stored roots, and the fruit-vegetable part waits for summer, with a note in the journal to do it then."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Roast and sauté (75 min).** Cut the squash into wedges, toss with oil and salt, and roast at your oven table's setting for roots until tender and caramelised at the edges, turning once. In summer, also: sauté the courgette in batches in a hot pan; roast the halved tomatoes; char and peel a pepper."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** squash caramelised at the edges and tender; courgette browned, not watery."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Courgette grey and wet",
+         "A crowded pan of courgette in its own water",
+         "One layer, high heat, in batches"
+        ],
+        [
+         "Squash hard in the middle",
+         "Undercooked squash",
+         "Smaller wedges, or longer; test with a knife"
+        ],
+        [
+         "Peppers that taste of little",
+         "Peppers peeled under running water, which washes away flavour",
+         "Peel by hand; wipe off the black bits"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** cut squash on a stable board, flat side down; char peppers with long tongs and keep your sleeves clear of the flame (`SAF-1.M4`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the photos, and, out of season, the note for summer."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "VEG-1.M4.X1",
+     "title": "One dish per group over two weeks",
+     "description": "One dish per group across two weeks, with photos.",
+     "competencies": [
+      {
+       "id": "TS-VEG",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** cook each group by a suitable method to a stated texture and colour, across two weeks of dinners. You choose the vegetables by season and state the target texture before cooking: at least six vegetables from four groups, by four methods."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** the vegetables of two weeks' dinners, by season; the pans of this module; a ruler or the grid board; the tasting form; a phone; the journal."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Framework:** six or more dishes, planned on this table."
+      },
+      {
+       "type": "table",
+       "header": [
+        "Group",
+        "Methods from this module",
+        "Your decisions"
+       ],
+       "rows": [
+        [
+         "Roots",
+         "Roast, glaze, purée (`VEG-1.M4.L1`)",
+         "Which root, which method, which cut"
+        ],
+        [
+         "Brassicas",
+         "Blanch, roast, sauté, braise (`VEG-1.M4.L2`)",
+         "Short or long, and why"
+        ],
+        [
+         "Leaves",
+         "Wilt, sauté (`VEG-1.M4.L3`)",
+         "How much to buy"
+        ],
+        [
+         "Alliums",
+         "Sweat, brown, caramelise (`VEG-1.M4.L4`)",
+         "Which, for which dish"
+        ],
+        [
+         "Squash and fruit vegetables",
+         "Roast; hot and fast; cook down (`VEG-1.M4.L5`)",
+         "By season"
+        ],
+        [
+         "Potatoes",
+         "Boil, mash, roast, pan-fry (`VEG-1.M5`)",
+         "The variety for the use"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "For each dish:"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "Write the target texture (tender-crisp, just tender, fully tender) and colour."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "Cut evenly, and measure 10 pieces where the cut matters."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "Cook, judging by the cue, then the knife and a bite."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "Photograph the dish and a cut piece."
+        },
+        {
+         "level": 0,
+         "marker": "5.",
+         "text": "Score the texture on the form against your target."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:** six vegetables from at least four groups, by four methods, each photographed to the stated texture and colour, with even cuts: the `TS-VEG` level 3 success row. Glazed roots (`VEG-1.M4.X2`) and the potato preparations (`VEG-1.M5`) count among the six. AI review checks the colour and the doneness against your stated targets, with *competent* and *not yet* images for each group (grey sprouts, wet courgette, burnt squash are *not yet*)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 6–8 dinners over two weeks."
+      }
+     ]
+    },
+    {
+     "id": "VEG-1.M4.X2",
+     "title": "Glazed roots by ratio",
+     "description": "Glazed roots by ratio (vegetable, liquid, fat, sugar) without a recipe.",
+     "competencies": [
+      {
+       "id": "TS-VEG",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** glazed roots from a ratio, without a recipe, with the glaze and the tenderness arriving together. You choose the roots by season: carrots, turnips, parsnips or shallots."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** 500 g of roots; butter; sugar or honey; water or stock; salt; the scale; a wide pan with a lid; a phone."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Framework:** the glazing ratio and the decisions around it."
+      },
+      {
+       "type": "table",
+       "header": [
+        "Part",
+        "What it is",
+        "Your decisions"
+       ],
+       "rows": [
+        [
+         "Cut",
+         "Small, even pieces: rounds, bâtonnets, or whole small shallots",
+         "The size, which sets the cooking time"
+        ],
+        [
+         "Ratio",
+         "Per 100 g of vegetable: 40 ml liquid, 5 g butter, 2 g sugar, a small pinch of salt",
+         "Water or stock; sugar or honey"
+        ],
+        [
+         "Quantities",
+         "Weigh the cut vegetables; calculate the rest",
+         "—"
+        ],
+        [
+         "Cook",
+         "Partly covered over medium heat until nearly tender",
+         "The heat"
+        ],
+        [
+         "Reduce",
+         "Uncover; shake the pan until the liquid is a shiny coating",
+         "When to uncover"
+        ],
+        [
+         "Finish",
+         "Taste; a little more salt, pepper or chopped parsley",
+         "—"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "If the vegetables are tender with liquid left, lift them out and reduce it, then return them. If the liquid goes before they are tender, add a splash of water."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:** the weighed ratio, a photo of the shiny, tender roots, and a note on whether the liquid or the vegetables finished first, with the correction for next time. This is one of the four methods for `TS-VEG` level 3."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 45 min."
+      }
+     ]
+    }
+   ],
+   "items": [
+    {
+     "id": "VEG-1.M4.Q1",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "VEG-1.M4.L4",
+     "safety": false,
+     "question": "Which onion technique suits the base of a delicate white soup?",
+     "options": [
+      {
+       "key": "A",
+       "text": "caramelising"
+      },
+      {
+       "key": "B",
+       "text": "browning"
+      },
+      {
+       "key": "C",
+       "text": "sweating: soft, translucent, no colour"
+      },
+      {
+       "key": "D",
+       "text": "charring"
+      }
+     ],
+     "answer": "C",
+     "why": "Colour would darken and change the flavour."
+    },
+    {
+     "id": "VEG-1.M4.Q2",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "VEG-1.M4.L4",
+     "safety": false,
+     "question": "What does browning onions give a stew?",
+     "options": [
+      {
+       "key": "A",
+       "text": "sweetness only"
+      },
+      {
+       "key": "B",
+       "text": "savoury depth and colour"
+      },
+      {
+       "key": "C",
+       "text": "nothing"
+      },
+      {
+       "key": "D",
+       "text": "bitterness"
+      }
+     ],
+     "answer": "B",
+     "why": "Maillard flavour."
+    },
+    {
+     "id": "VEG-1.M4.Q3",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "VEG-1.M4.L1",
+     "safety": false,
+     "question": "When are glazed carrots done?",
+     "options": [
+      {
+       "key": "A",
+       "text": "when the liquid has gone, whatever the carrots"
+      },
+      {
+       "key": "B",
+       "text": "when the liquid has reduced to a shiny coating just as the carrots are tender"
+      },
+      {
+       "key": "C",
+       "text": "after 30 minutes"
+      },
+      {
+       "key": "D",
+       "text": "when they brown"
+      }
+     ],
+     "answer": "B",
+     "why": "The ratio makes both arrive together."
+    },
+    {
+     "id": "VEG-1.M4.Q4",
+     "type": "SCENARIO",
+     "lessonId": "VEG-1.M4.L1",
+     "safety": false,
+     "question": "Your glazed carrots were tender while a lot of liquid remained. What do you change next time?",
+     "options": [],
+     "answer": "Less liquid for the same weight of carrots, or larger pieces; and in the meantime lift the carrots out and reduce the liquid.",
+     "why": "Adjust the ratio, one variable at a time."
+    },
+    {
+     "id": "VEG-1.M4.Q5",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "VEG-1.M4.L2",
+     "safety": false,
+     "question": "Why roast halved Brussels sprouts cut-side down?",
+     "options": [
+      {
+       "key": "A",
+       "text": "they cook evenly"
+      },
+      {
+       "key": "B",
+       "text": "the flat side browns, adding sweetness and limiting the sulphur taste"
+      },
+      {
+       "key": "C",
+       "text": "they won't roll"
+      },
+      {
+       "key": "D",
+       "text": "for colour only"
+      }
+     ],
+     "answer": "B",
+     "why": "Browning and short cooking flatter brassicas."
+    },
+    {
+     "id": "VEG-1.M4.Q6",
+     "type": "SCENARIO",
+     "lessonId": "VEG-1.M4.L3",
+     "safety": false,
+     "question": "You want spinach as a side for four. A 300 g bag is in the fridge. Enough?",
+     "options": [],
+     "answer": "Probably not: spinach wilts to a small fraction of its raw volume; plan on about 1 kg raw for four.",
+     "why": "Leaves cook down dramatically."
+    },
+    {
+     "id": "VEG-1.M4.Q7",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "VEG-1.M4.L3",
+     "safety": false,
+     "question": "Why dry washed leaves before sautéing?",
+     "options": [
+      {
+       "key": "A",
+       "text": "they taste better"
+      },
+      {
+       "key": "B",
+       "text": "wet leaves steam and dilute the dish"
+      },
+      {
+       "key": "C",
+       "text": "for hygiene"
+      },
+      {
+       "key": "D",
+       "text": "they burn otherwise"
+      }
+     ],
+     "answer": "B",
+     "why": "Use a salad spinner."
+    },
+    {
+     "id": "VEG-1.M4.Q8",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "VEG-1.M4.L5",
+     "safety": false,
+     "question": "How do you stop courgettes turning watery in the pan?",
+     "options": [
+      {
+       "key": "A",
+       "text": "a lid"
+      },
+      {
+       "key": "B",
+       "text": "high heat, a single layer, cooking in batches"
+      },
+      {
+       "key": "C",
+       "text": "more oil"
+      },
+      {
+       "key": "D",
+       "text": "low heat for a long time"
+      }
+     ],
+     "answer": "B",
+     "why": "Water must evaporate faster than it is released."
+    }
+   ]
+  },
+  {
+   "id": "VEG-1.M5",
+   "title": "Potatoes",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** the 8 items of `VEG-1.M5` in the course file, 1 of them a safety item. Pass mark 80 %, with every safety item correct."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "VEG-1.M5.L1",
+     "title": "Potato types and starch",
+     "prerequisites": [
+      "VEG-1.M1.L1"
+     ],
+     "competencies": [
+      {
+       "id": "IN-STA",
+       "level": 1
+      },
+      {
+       "id": "IN-VEG",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** the Netherlands grows and eats potatoes like few other countries, and the bag tells you how each variety will behave. Choose the wrong class and the mash turns gluey or the salad falls apart, however well you cook."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** this lesson; three bags of potatoes, or their labels or descriptions online; the journal."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*The Dutch classes* are printed on the bag:"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Class",
+        "Texture when cooked",
+        "For"
+       ],
+       "rows": [
+        [
+         "*Vastkokend* (waxy)",
+         "Holds its shape, firm and smooth",
+         "Salads, boiled potatoes, gratins, pan-fried slices"
+        ],
+        [
+         "*Iets kruimig* (slightly floury)",
+         "Mostly holds its shape, a little dry",
+         "All-round: boiled, roast, pan-fried"
+        ],
+        [
+         "*Kruimig* (floury)",
+         "Falls apart into a light, dry texture",
+         "Mash, roast potatoes, chips"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "Varieties you will see include Annabelle and Nicola (*vastkokend*) and Eigenheimer (*kruimig*), but the label is what counts."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Starch.* Floury potatoes have more starch, and when cooked their cells separate easily, giving a light, crumbly texture. In waxy potatoes the cells stay together, so they hold their shape."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Storage.* Cool, dark and dry, not in the fridge (`VEG-1.M2.L2`). The cold turns starch to sugar, so the potatoes taste sweet and brown too fast when fried."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Greening.* Light makes potatoes green, and the greening goes with a rise in **solanine**, a bitter natural toxin."
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "Cut green parts and sprouts away generously."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "Discard potatoes that are very green."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "A bitter taste in a cooked potato is a warning: don't eat it."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "Peeling thinly does not remove the solanine under a green patch."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:** theory only (1 h): read the labels of three potato varieties, put each in its class, and plan a use for each: one for mash, one for a salad and one for roasting. Then check where your potatoes are stored at home, and move them if needed."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** the right class chosen for mash, salad and roast without looking it up."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Gluey mash",
+         "Waxy potatoes for mash",
+         "*Kruimig* for mash"
+        ],
+        [
+         "A potato salad that falls apart",
+         "Floury potatoes for a salad",
+         "*Vastkokend* for salads"
+        ],
+        [
+         "A bitter potato",
+         "Green potatoes used as they are",
+         "Cut the green away generously, or discard"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** green patches and sprouts are cut away generously, and very green potatoes are discarded; they contain solanine, a natural toxin."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the three varieties with their class and use."
+      }
+     ]
+    },
+    {
+     "id": "VEG-1.M5.L2",
+     "title": "Boiled and mashed",
+     "prerequisites": [
+      "VEG-1.M5.L1"
+     ],
+     "competencies": [
+      {
+       "id": "TS-VEG",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** boiled potatoes and mash are on Dutch tables more than any other dish, and both are easy to do badly: falling apart outside and hard inside, or a mash that is lumpy, wet or gluey. The fixes are small and exact."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** for session 1, 750 g of waxy potatoes; for session 2, 1 kg of floury potatoes, about 150 ml of milk, 40 g of butter, nutmeg, and the next time 500 g of floury potatoes and 100 g of butter for a *purée*; salt; a saucepan; a masher, and a ricer if you have one; a small pan for the milk; a knife."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Boiled potatoes* start in cold, salted water (10 g/l, `TST-1.M2.L3`), brought to the boil and then simmered, so the outside and the centre cook evenly. In boiling water from the start, the outside falls apart before the centre is done. They are done when a knife slides in without resistance. Drain them, and put them back in the hot pan off the heat for a minute, shaking, so the surface steams dry."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Mash.*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Floury potatoes,** peeled and cut into even pieces, boiled from cold until fully tender."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Drained and dried** in the pan for a minute."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "**Mashed or riced while hot.** Cold potatoes go lumpy."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "**Warm milk and butter** worked in gently with a spoon; a pinch of nutmeg and salt."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "Overworking bursts the cells and releases their starch into a gluey paste. A blender or a food processor does that in seconds. Use a masher or a ricer."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Purée* (*pommes purée*) is the fine version: the potatoes riced, then beaten over low heat with a lot of butter (about 100 g per 500 g of potatoes, in cold cubes), and loosened with a little warm milk, for a silky, smooth texture."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Boiled (45 min).** Peel the waxy potatoes, or scrub them if they are new, and cut them to an even size. Cover with cold water by 2 cm, add the salt, bring to the boil, and simmer until a knife slides in. Drain and steam dry. Photograph a potato cut in half."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Mashed (60 min).** Make the mash from the floury potatoes. On another day, make the riced *purée* and compare."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** a knife slides in without resistance; a fluffy, smooth mash with no lumps and no glue."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Ragged outside, hard centre",
+         "Potatoes into boiling water",
+         "Start them in cold water"
+        ],
+        [
+         "A cool, lumpy mash",
+         "Cold milk",
+         "Warm the milk first"
+        ],
+        [
+         "Gluey, elastic mash",
+         "A blender for mash",
+         "A masher or a ricer, and gentle mixing"
+        ],
+        [
+         "Watery mash",
+         "Undrained, watery potatoes",
+         "Drain well and steam dry"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** drain the potatoes in a colander in the sink, pouring away from you (`SAF-1.M4`). Leftover potatoes go into the fridge within 2 hours and are eaten within 2 days."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the photos, and a line comparing the mash and the *purée*."
+      }
+     ]
+    },
+    {
+     "id": "VEG-1.M5.L3",
+     "title": "Roast and pan-fried",
+     "prerequisites": [
+      "VEG-1.M5.L1",
+      "HEA-1.M3.L1"
+     ],
+     "competencies": [
+      {
+       "id": "TS-VEG",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** a crisp roast potato and a pan of golden *gebakken aardappelen* are among the best things a potato can become, and both are made by preparing the surface: roughed up for roasting, cooked and cooled for the pan."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** for session 1, 1.2 kg of floury potatoes, 60 ml of neutral oil, salt, a sheet pan or roasting tin, a colander; for session 2, about 600 g of potatoes boiled the day before and cooled in the fridge, 2 tablespoons of oil, 15 g of butter, salt and pepper, the skillet or sauté pan, a fish spatula."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Roast potatoes.*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Floury potatoes,** peeled and cut into chunks of about 5 cm."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Parboiled:** started in cold salted water, brought to the boil and simmered until the edges are soft but the centre is still firm, about 8 minutes."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "**Drained and shaken** in the colander or the pan to rough up the edges. The rough, starchy surface is what becomes the crisp crust."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "**Into hot fat in a hot oven:** heat the oil in the tin in the oven at your oven table's roasting setting for about 10 minutes, then add the potatoes, turn them in the fat, and roast for 45–60 minutes, turning once or twice, until deep golden."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Pan-fried potatoes* (*gebakken aardappelen*) are made from boiled potatoes, cooled, ideally overnight in the fridge. Cold, cooked potatoes hold together and brown evenly. Sautéed raw slices are possible, but they need a lid first to cook through, then high heat to brown."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Patience.* Potatoes stick at first and release once a crust forms. Turned too early, they break and leave their crust in the pan. Leave them for 4–5 minutes before the first turn."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Roast (60 min).** Parboil and rough up two-thirds of the potatoes. Cut the rest into plain cubes of the same size, not parboiled. Roast both in the hot fat on the same tray, and compare the crust and the inside."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Pan-fried (45 min).** Slice yesterday's boiled potatoes about 1 cm thick. Heat the oil and butter in the pan over medium-high heat, add the slices in one layer, and leave them until golden underneath before turning. Season."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** a deep golden, crisp crust and a fluffy inside; the pan-fried slices golden on both sides and intact."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Pale, greasy roast potatoes",
+         "Fat not hot enough",
+         "Heat the fat in the tin in the oven first"
+        ],
+        [
+         "Steamed, soft potatoes",
+         "A crowded tray",
+         "Space between them; two tins if needed"
+        ],
+        [
+         "Broken slices, crust left in the pan",
+         "Turning too early, which breaks the slices",
+         "Wait until they release"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** the tin of hot fat is the dangerous moment: take it out with oven gloves, set it on the hob, and add the potatoes with a spoon, away from you; never add wet potatoes. Boiled potatoes for the pan go into the fridge within 2 hours of cooking."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the photos of the two roast batches and the pan-fried slices."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "VEG-1.M5.X1",
+     "title": "Mash from a waxy and a floury variety",
+     "description": "Mash made from a waxy and a floury variety.",
+     "competencies": [
+      {
+       "id": "TS-VEG",
+       "level": 3
+      },
+      {
+       "id": "IN-VEG",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** see why the variety decides the result, with the method held constant: two varieties, the same weight, water, salt, butter and milk."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** 750 g each of a waxy (*vastkokend*) and a floury (*kruimig*) potato; 40 g of butter; 150 ml of milk; salt; two saucepans of the same size; a masher; a small pan for the milk; two bowls marked underneath; a helper; a phone; the tasting form."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Recipe:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Prepare.** Peel both varieties and cut them into pieces of about 4 cm, the same size."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Boil from cold, side by side:** each in its pan with 1.5 litres of cold water and 15 g of salt. Simmer until a knife slides in. Note the time of each."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "**Drain and dry** each in its pan for a minute."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "**Mash both the same way:** the masher, then 20 g of butter and 75 ml of warm milk each, worked in gently. Taste and add the same pinch of salt to each if needed."
+        },
+        {
+         "level": 0,
+         "marker": "5.",
+         "text": "**Photograph** them side by side, and a spoonful of each lifted from the bowl."
+        },
+        {
+         "level": 0,
+         "marker": "6.",
+         "text": "**Blind tasting.** The helper puts them in the marked bowls. You and the household taste both, and say which is the better mash and why."
+        },
+        {
+         "level": 0,
+         "marker": "7.",
+         "text": "**Explain** the difference by starch and cells."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "`TS-VEG`: the floury mash smooth and fluffy, one of the six vegetables of level 3."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "`IN-VEG`: the potatoes chosen and prepared correctly for their use, with this module's quiz at 80 %."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 1 h; the mash covers two meals, and the waxy mash becomes potato cakes."
+      }
+     ]
+    }
+   ],
+   "items": [
+    {
+     "id": "VEG-1.M5.Q1",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "VEG-1.M5.L1",
+     "safety": false,
+     "question": "Which potatoes make the best mash?",
+     "options": [
+      {
+       "key": "A",
+       "text": "*vastkokend* (waxy)"
+      },
+      {
+       "key": "B",
+       "text": "*kruimig* (floury)"
+      },
+      {
+       "key": "C",
+       "text": "new potatoes"
+      },
+      {
+       "key": "D",
+       "text": "any"
+      }
+     ],
+     "answer": "B",
+     "why": "Floury cells separate into a light texture."
+    },
+    {
+     "id": "VEG-1.M5.Q2",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "VEG-1.M5.L1",
+     "safety": false,
+     "question": "Which suits a potato salad?",
+     "options": [
+      {
+       "key": "A",
+       "text": "*kruimig*"
+      },
+      {
+       "key": "B",
+       "text": "*vastkokend*, which holds its shape"
+      },
+      {
+       "key": "C",
+       "text": "floury baking potatoes"
+      },
+      {
+       "key": "D",
+       "text": "old potatoes"
+      }
+     ],
+     "answer": "B",
+     "why": "Waxy potatoes don't fall apart."
+    },
+    {
+     "id": "VEG-1.M5.Q3",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "VEG-1.M5.L1",
+     "safety": true,
+     "question": "A potato has green patches under the skin. What do you do?",
+     "options": [
+      {
+       "key": "A",
+       "text": "eat it as it is"
+      },
+      {
+       "key": "B",
+       "text": "cut the green parts away generously, or discard it if it is very green"
+      },
+      {
+       "key": "C",
+       "text": "boil it longer"
+      },
+      {
+       "key": "D",
+       "text": "peel it thinly"
+      }
+     ],
+     "answer": "B",
+     "why": "Greening goes with solanine, a bitter natural toxin."
+    },
+    {
+     "id": "VEG-1.M5.Q4",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "VEG-1.M5.L1",
+     "safety": false,
+     "question": "Why are potatoes not kept in the fridge?",
+     "options": [
+      {
+       "key": "A",
+       "text": "they freeze"
+      },
+      {
+       "key": "B",
+       "text": "the cold turns starch into sugar, so they taste sweet and brown too fast"
+      },
+      {
+       "key": "C",
+       "text": "they go green"
+      },
+      {
+       "key": "D",
+       "text": "they sprout"
+      }
+     ],
+     "answer": "B",
+     "why": "Cool and dark, not cold."
+    },
+    {
+     "id": "VEG-1.M5.Q5",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "VEG-1.M5.L2",
+     "safety": false,
+     "question": "Why start boiled potatoes in cold water?",
+     "options": [
+      {
+       "key": "A",
+       "text": "it is faster"
+      },
+      {
+       "key": "B",
+       "text": "so the outside and the centre cook evenly"
+      },
+      {
+       "key": "C",
+       "text": "to keep them white"
+      },
+      {
+       "key": "D",
+       "text": "to save salt"
+      }
+     ],
+     "answer": "B",
+     "why": "In boiling water the outside falls apart before the centre is done."
+    },
+    {
+     "id": "VEG-1.M5.Q6",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "VEG-1.M5.L2",
+     "safety": false,
+     "question": "Why does mash made in a blender turn gluey?",
+     "options": [
+      {
+       "key": "A",
+       "text": "too much butter"
+      },
+      {
+       "key": "B",
+       "text": "the blades burst the cells and release starch"
+      },
+      {
+       "key": "C",
+       "text": "cold milk"
+      },
+      {
+       "key": "D",
+       "text": "the wrong salt"
+      }
+     ],
+     "answer": "B",
+     "why": "Use a masher or a ricer."
+    },
+    {
+     "id": "VEG-1.M5.Q7",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "VEG-1.M5.L3",
+     "safety": false,
+     "question": "Why parboil and rough up potatoes before roasting?",
+     "options": [
+      {
+       "key": "A",
+       "text": "to cook them faster only"
+      },
+      {
+       "key": "B",
+       "text": "the rough, starchy surface forms a crisp crust in hot fat"
+      },
+      {
+       "key": "C",
+       "text": "to remove the skin"
+      },
+      {
+       "key": "D",
+       "text": "to salt them"
+      }
+     ],
+     "answer": "B",
+     "why": "More surface, more crunch."
+    },
+    {
+     "id": "VEG-1.M5.Q8",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "VEG-1.M5.L3",
+     "safety": false,
+     "question": "Which potatoes give the best *gebakken aardappelen*?",
+     "options": [
+      {
+       "key": "A",
+       "text": "raw, wet slices"
+      },
+      {
+       "key": "B",
+       "text": "boiled potatoes cooled overnight"
+      },
+      {
+       "key": "C",
+       "text": "mashed potatoes"
+      },
+      {
+       "key": "D",
+       "text": "frozen chips"
+      }
+     ],
+     "answer": "B",
+     "why": "Cooled, cooked potatoes hold together and brown evenly."
+    }
+   ]
+  },
+  {
+   "id": "VEG-1.M6",
+   "title": "Vegetable plate lab",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** none for this module. Its only quiz objective is a judgment (evaluating against criteria), which the evaluation and the household's cards show directly."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "VEG-1.M6.L1",
+     "title": "A seasonal vegetable plate",
+     "prerequisites": [
+      "VEG-1.M4.L5",
+      "VEG-1.M5.L3"
+     ],
+     "competencies": [
+      {
+       "id": "TS-VEG",
+       "level": 3
+      },
+      {
+       "id": "JD-CUES",
+       "level": 2
+      },
+      {
+       "id": "TS-PLT",
+       "level": 1
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** this is your first composed plate: three vegetables, cooked three different ways, ready at the same moment and arranged on one plate. It brings together the methods of this course, the timing of `WRK-1` and the cue log of `HEA-1`, and it starts plating (`TS-PLT`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** the inputs of `VEG-1.M6.X1`; warm plates; the timeline template (`WRK-1.M2.X2`); the evaluation form; a taster's card for each household member (assessment §3)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Three vegetables, three methods, one plate.*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**Variety:** contrast in colour, texture and flavour. A purée, a roasted root and a quick-sautéed green give soft, caramelised and bright on one plate."
+        },
+        {
+         "level": 1,
+         "marker": "",
+         "text": "*Winter:* celeriac purée, roasted beetroot, sautéed kale or Brussels sprouts."
+        },
+        {
+         "level": 1,
+         "marker": "",
+         "text": "*Summer:* pea purée, roasted tomatoes, green beans blanched and tossed in butter."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**Timing:** everything ready and hot together. Plan backwards (`WRK-1.M2.L3`): the roast goes in first; the purée can be held warm, covered; the green is cooked last, in minutes."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**The plate:** a clear arrangement, clean rims, nothing piled. A spoon of purée as a base or to one side, the roasted root beside or on it, the green across. Wipe the rim before it leaves the kitchen."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Evaluating against criteria.* Score the plate on five criteria:"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**texture** as intended for each vegetable;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**colour:** bright greens, deep browns, no grey;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**seasoning;**"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**temperature** at serving;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**the plate:** clear, clean, nothing piled."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "The household's cards are then compared with your own scores. Where they differ, the photo and the tasting notes help you find out why."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Cue, then check.* For each vegetable, judge the doneness by eye and touch first and write it in the cue log; then confirm it with a knife and a taste."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**The plate (2 h).** Run `VEG-1.M6.X1`: plan, cook, plate, photograph and evaluate."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** three textures and colours that contrast; all three hot; the household's cards agreeing with your scores."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "A monotonous plate",
+         "Three vegetables done by one method",
+         "Three methods, chosen for contrast"
+        ],
+        [
+         "A plate swimming in purée",
+         "A purée that floods the plate",
+         "A thicker purée; a spoonful, not a ladle"
+        ],
+        [
+         "One cold element",
+         "Poor timing",
+         "Plan backwards; hold the purée covered; green last"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** no special risks beyond the kitchen basics (`SAF-1`). Leftovers into the fridge within 2 hours."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the plan, the cue log, the photos and the scores (in `VEG-1.M6.X1`)."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "VEG-1.M6.X1",
+     "title": "The vegetable plate without quantities",
+     "description": "The vegetable plate from a list of methods, with no recipe for quantities.",
+     "competencies": [
+      {
+       "id": "TS-VEG",
+       "level": 3
+      },
+      {
+       "id": "JD-CUES",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** a seasonal plate of three vegetables cooked by three methods, served together, without a recipe for quantities. You choose the vegetables by season, and the quantities."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** three seasonal vegetables for 2–4 people; fat, acid, herbs; the pans and the oven; warm plates; the timeline template; the cue log; the evaluation form; the household's cards; a phone."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Framework:** a list of methods and the plan around them."
+      },
+      {
+       "type": "table",
+       "header": [
+        "Part",
+        "What it is",
+        "Your decisions"
+       ],
+       "rows": [
+        [
+         "Vegetables",
+         "Three from at least two groups, by season",
+         "Which three, and the contrast they give"
+        ],
+        [
+         "Methods",
+         "Choose three different ones: purée, roast, glaze, sauté, blanch and butter, braise, wilt",
+         "Which method for which vegetable, and why"
+        ],
+        [
+         "Quantities",
+         "About 150–200 g of each vegetable per person, raw; more for leaves",
+         "How much to buy and cook"
+        ],
+        [
+         "Targets",
+         "The texture and colour of each, written before cooking",
+         "—"
+        ],
+        [
+         "Timeline",
+         "Backwards from serving; the longest first, the quickest last",
+         "The clock times"
+        ],
+        [
+         "Cue, then check",
+         "Doneness by eye and touch, then the knife and a taste",
+         "—"
+        ],
+        [
+         "Plate",
+         "Warm plates; a clear arrangement; rims wiped",
+         "The layout"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Procedure:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "Plan the timing backwards, and write the target texture of each vegetable."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "Cook. For each vegetable, write the cue's verdict, then check it with a knife and a taste."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "Plate on warm plates."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "Photograph from above and at 45°."
+        },
+        {
+         "level": 0,
+         "marker": "5.",
+         "text": "Collect the household's cards, and score it yourself on the five criteria."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "`TS-VEG` level 3: three vegetables to their stated texture and colour on one plate."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "`JD-CUES` level 2: the cue-then-check entries; the cue items were passed in `HEA-1`."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "AI review checks colour and doneness against the household's cards: *competent* is a clean plate with three contrasting, well-cooked vegetables; *not yet* is an overcooked, monochrome or crowded plate."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 2 h."
+      }
+     ]
+    }
+   ],
+   "items": []
+  }
+ ]
+}

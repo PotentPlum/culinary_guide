@@ -1,0 +1,3770 @@
+{
+ "schemaVersion": 1,
+ "id": "POU-2",
+ "introduction": [
+  {
+   "type": "paragraph",
+   "text": "**Before you start.** Chicken is the protein most home cooks cook most often, and the one they most often cook badly: breasts dry and stringy, legs underdone at the bone, a tin of pale skin. It is also the protein with the strictest hygiene. Raw poultry often carries *Campylobacter* and *Salmonella*, and the spread from board, hands and tap matters as much as the core temperature."
+  },
+  {
+   "type": "paragraph",
+   "text": "The course treats the bird as a whole: buying it by label and use, handling it cleanly, breaking it down, cooking it three ways (roasted, sautéed or pan-roasted, and poached), and using every part. It ends with a lab that sets your eye and fingers against the thermometer, and puts dry-brining to a blind test."
+  },
+  {
+   "type": "paragraph",
+   "text": "*Doneness is the thread.* Every piece is probed. The safe figure for poultry is 75 °C (assessment §9), reached after resting. You learn to pull a breast early enough that carryover takes it there without overshooting, and to cook the legs further, because their connective tissue needs it. A reading below 75 °C after resting means the piece goes back to cook further: it is never served."
+  },
+  {
+   "type": "paragraph",
+   "text": "*Hygiene is the other thread.* Every session with raw poultry uses the station of `POU-2.M1.L2`: a separate board, no rinsing, hands washed after every raw touch, and a full clean-down."
+  },
+  {
+   "type": "paragraph",
+   "text": "*Every bird is used completely.* Plan four whole chickens over the course: two for the breakdowns of module 2, whose pieces feed modules 3 to 5; one for the Sunday roast; one for the project of module 5. Their carcasses fill the stock bag."
+  },
+  {
+   "type": "paragraph",
+   "text": "Plan about four weeks. The roasts and the whole-bird project are weekend cooking; sautés and breasts fit weeknights."
+  },
+  {
+   "type": "paragraph",
+   "text": "**Have ready:** the chef's knife and the boning knife, sharpened; kitchen or poultry shears; the second board for raw protein, and a tray for raw meat and a plate for cooked; a roasting tin that fits a 2 kg bird; the sauté pan (ovenproof); the stockpot; the probe, checked in boiling water; shallow containers with lids; kitchen paper; the phone and phone stand; the scale; the hygiene checklist (`SAF-1`); the tasting form and the comparison template (`SCI-2`); the journal and the waste log."
+  }
+ ],
+ "modules": [
+  {
+   "id": "POU-2.M1",
+   "title": "Poultry knowledge and handling",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** the 8 items of `POU-2.M1` in the course file, 4 of them safety items. Pass mark 80 %, with every safety item correct."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "POU-2.M1.L1",
+     "title": "Types, labels and buying",
+     "prerequisites": [],
+     "competencies": [
+      {
+       "id": "IN-MEA",
+       "level": 2
+      },
+      {
+       "id": "KM-PURC",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** a slow-growing chicken can cost two or three times as much as a standard broiler, and it cooks differently. Reading the label and the price per kilo tells you what you are paying for, and which piece to buy for the dish you have in mind."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** a visit to a supermarket and, if there is one near you, a poulterer (*poelier*); the journal; a phone for photos of labels and prices."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*The birds:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**chicken:** from a fast-growing broiler of about six weeks to a slow-growing bird of two to three months, with firmer, more flavourful meat;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**duck:** dark, fatty meat, with a thick fat layer under the skin;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**turkey:** large and lean, mostly bought as parts in the Netherlands;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**guinea fowl (*parelhoen*):** between chicken and game."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*The parts and their method:*"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Part",
+        "Meat",
+        "Method"
+       ],
+       "rows": [
+        [
+         "Breast",
+         "Lean, quick to overcook",
+         "Sauté, pan-roast, poach"
+        ],
+        [
+         "Thigh",
+         "Dark, more fat and connective tissue",
+         "Sauté, braise, roast"
+        ],
+        [
+         "Drumstick",
+         "Dark, sinewy",
+         "Roast, braise"
+        ],
+        [
+         "Wing",
+         "Skin and gelatin",
+         "Roast, fry, stock"
+        ],
+        [
+         "Carcass and neck",
+         "Bone, gelatin",
+         "Stock"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Labels in Dutch shops:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "***Beter Leven*** stars (1 to 3) for animal welfare;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**organic** (the EU leaf, *biologisch*);"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**free range** (*vrije uitloop*: access to the outdoors) and ***scharrel*** (indoors, with more space than standard): neither is organic;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**\"slow-growing\"** breeds;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**the use-by date (*te gebruiken tot*)** on fresh poultry: a safety date, not a quality one. After it, the bird is thrown away, however it smells."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Choosing by use and budget:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**Good:** a whole standard chicken. It is cheaper per kilo than parts, and the carcass makes stock."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**Best:** a slow-growing or free-range bird of 1.5–2 kg, from a poulterer."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "For a quick weeknight sauté, thighs give more flavour per euro than breasts."
+      },
+      {
+       "type": "paragraph",
+       "text": "*The price per kilo of usable meat.* A whole bird gives a little over two thirds of its weight as pieces (`POU-2.M2.L1`); the rest is carcass for stock. Divide its price per kilo by about 0.7 to compare it with parts."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**A shop visit (45 min).** Compare whole birds and parts on label, weight and price per kilo, and work out the price per kilo of usable meat for one whole bird. Photograph three labels. Buy the bird for `POU-2.M2`."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** you can say what each label guarantees and what it doesn't; a price per kilo of usable meat worked out."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "A dry weeknight sauté",
+         "Buying breasts for a dish that wants thighs",
+         "Match the part to the method"
+        ],
+        [
+         "Paying organic prices for less",
+         "Reading \"*scharrel*\" as organic",
+         "Look for the EU leaf"
+        ],
+        [
+         "A food-poisoning risk",
+         "Using a bird past its use-by date because it smells fine",
+         "After the date, it is thrown away"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** the use-by date is a safety date; raw poultry goes home cool, in a cool bag in summer, and into the fridge at 4 °C at once (assessment §9)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the three label photos with a line each, and the price comparison."
+      }
+     ]
+    },
+    {
+     "id": "POU-2.M1.L2",
+     "title": "Handling raw poultry",
+     "prerequisites": [
+      "SAF-1.M2.L2"
+     ],
+     "competencies": [
+      {
+       "id": "SA-HYG",
+       "level": 4
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** cooking kills the bacteria on chicken, but only in the chicken. The food-poisoning cases at home come from what the raw bird touched on its way to the oven: a tap, a towel, the salad. A routine you follow without thinking is the only reliable protection."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** a chicken or chicken pieces; the raw board, a tray for the raw meat and a plate for the cooked; kitchen paper; salt in a small bowl (pre-portioned); soap at the sink; a bin within reach; the roasting tin; a helper with the hygiene checklist (`SAF-1`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*The risks.* Raw poultry often carries *Campylobacter* and *Salmonella*. Cooking to 75 °C (assessment §9) kills them in the meat. The danger at home is spreading them, by hands, boards, knives, taps, towels and splashes, to food that will not be cooked."
+      },
+      {
+       "type": "paragraph",
+       "text": "*No rinsing.* Washing a chicken under the tap does not make it safer. It splashes bacteria over the sink and the worktop, up to tens of centimetres away. Pat it dry with kitchen paper, and throw the paper straight into the bin."
+      },
+      {
+       "type": "paragraph",
+       "text": "*The station:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "a separate board for raw protein (`SAF-1`);"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "a tray or plate for the raw meat, and a different one for the cooked;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "the bin and the soap within reach;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "ready-to-eat food finished and put away first, so the raw protein comes last in the work order (`KNF-2.M2`)."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*During the work:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "wash your hands after touching raw poultry and before touching anything else: the tap, a spice jar, the phone, the fridge door;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "use one hand for the raw meat and the other for the salt, or pre-portion the salt into a small bowl;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "open the oven door and the bin before you pick up the bird."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Clean-down,* in order (`SAF-1.M2.L3`): remove, wash, rinse, disinfect, dry. The board and knife go into a hot dishwasher cycle or are washed in hot water with detergent; the worktop, the tap and any handles you touched are cleaned and disinfected. The cloth goes into the wash."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Storage:* in the fridge at 4 °C, on the bottom shelf, in a closed container, so it can't drip onto other food."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**A dry run (30 min).** Set up the station, handle a chicken (unpack, pat dry, season, into the tin), and clean down. The helper watches with the hygiene checklist and marks each contact point."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** hands washed after each touch of raw meat; no raw-contact item touching ready-to-eat food; a clean station at the end, with nothing left on the tap or handles."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Splashes across the sink",
+         "Rinsing the bird",
+         "Pat dry with paper; never rinse"
+        ],
+        [
+         "Bacteria on the salt and the phone",
+         "Touching the salt jar or the phone with raw hands",
+         "Pre-portion the salt; wash hands first"
+        ],
+        [
+         "Cooked meat recontaminated",
+         "Using the same tray for raw and cooked chicken",
+         "Two trays, or wash between"
+        ],
+        [
+         "Bacteria spread around the kitchen",
+         "Wiping the board with the dishcloth used for everything else",
+         "Hot wash; a fresh cloth"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** this lesson is the safety rule: no rinsing, hands washed after every raw touch, raw last in the work order, and a full clean-down (`SAF-1.M2`, assessment §9)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the helper's checklist, with each contact point and what you will change."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "POU-2.M1.X1",
+     "title": "A raw-poultry station, filmed",
+     "description": "A raw-poultry station set-up and clean-down, filmed for AI review.",
+     "competencies": [
+      {
+       "id": "SA-HYG",
+       "level": 4
+      },
+      {
+       "id": "KM-PURC",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** handle raw chicken for a meal with no cross-contamination at any point, and shop for that meal completely. Write the shopping list from the recipe and check it against the pantry before going. Write the work order before the session, with the salad first and the raw chicken last. Film the work in one take on the phone stand, from setting up to clean-down, with at least three minutes of handling raw chicken."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** for 4: 1 kg of chicken legs or thighs; 1 kg of vegetables for the traybake (onions, carrots and potatoes, or squash in autumn); salad leaves in season (lamb's lettuce in winter, butterhead in summer) and a vinaigrette (`SAU-2.M6`); olive oil, salt, pepper, thyme or rosemary; the station; the roasting tin; the probe."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Recipe:** a chicken traybake."
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Write** the shopping list and the work order. Shop, and tick off the list."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Make the salad** and the dressing, cover them and put them in the fridge."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "**Heat** the oven to about 200 °C. Cut the vegetables into 3 cm pieces, toss them with oil and salt in the tin."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "**Set up the raw station,** and start filming."
+        },
+        {
+         "level": 0,
+         "marker": "5.",
+         "text": "**Unpack** the chicken onto the raw tray; pat it dry; season it with the pre-portioned salt, pepper and herbs; lay it skin side up on the vegetables. Packaging and paper straight into the bin."
+        },
+        {
+         "level": 0,
+         "marker": "6.",
+         "text": "**Clean down** in order, then wash your hands. Stop filming."
+        },
+        {
+         "level": 0,
+         "marker": "7.",
+         "text": "**Roast** for 40–50 minutes, until the skin is golden and the thickest piece reads at least 75 °C near the bone (better 80–85 °C for legs). Probe two pieces and log them."
+        },
+        {
+         "level": 0,
+         "marker": "8.",
+         "text": "**Serve** with the salad, dressed at the table."
+        },
+        {
+         "level": 0,
+         "marker": "9.",
+         "text": "**Note** anything forgotten on the list."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`SA-HYG` level 4, the raw-chicken part:** the video of handling raw chicken with no cross-contamination, and the written work order with raw protein last. With `KNF-2.M2.X1`, this completes the row."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`KM-PURC` level 2:** the shopping list from the recipe, ticked off, with nothing forgotten."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "AI review scores the video against the hygiene checklist: hands washed at each change; no contact between raw and ready-to-eat items; no rinsing; clean-down in the right order. *Competent* shows hands washed after each raw touch, the raw board and tray kept apart, and a full clean-down; *not yet* shows a raw-handed touch on a tap, a jar or ready-to-eat food, or a rinsed bird."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 1 h, including the oven."
+      }
+     ]
+    }
+   ],
+   "items": [
+    {
+     "id": "POU-2.M1.Q1",
+     "type": "IMAGE_IDENTIFICATION",
+     "lessonId": "POU-2.M1.L1",
+     "safety": false,
+     "question": "Image: a whole chicken with five parts marked (breast, thigh, drumstick, wing, carcass). Name each and a method that suits it.",
+     "options": [],
+     "answer": "Breast: sauté or poach; thigh: sauté or braise; drumstick: roast or braise; wing: roast or stock; carcass: stock.",
+     "why": "Each part has its own meat and method."
+    },
+    {
+     "id": "POU-2.M1.Q2",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "POU-2.M1.L1",
+     "safety": false,
+     "question": "Which part suits a long braise best?",
+     "options": [
+      {
+       "key": "A",
+       "text": "the breast"
+      },
+      {
+       "key": "B",
+       "text": "the thigh and drumstick"
+      },
+      {
+       "key": "C",
+       "text": "the wing tip"
+      },
+      {
+       "key": "D",
+       "text": "the skin"
+      }
+     ],
+     "answer": "B",
+     "why": "Dark meat has the connective tissue that a braise softens."
+    },
+    {
+     "id": "POU-2.M1.Q3",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "POU-2.M1.L1",
+     "safety": false,
+     "question": "What does the *Beter Leven* mark tell you?",
+     "options": [
+      {
+       "key": "A",
+       "text": "the bird is organic"
+      },
+      {
+       "key": "B",
+       "text": "a level of animal welfare, from 1 to 3 stars"
+      },
+      {
+       "key": "C",
+       "text": "the bird is local"
+      },
+      {
+       "key": "D",
+       "text": "the bird is slow-growing in every case"
+      }
+     ],
+     "answer": "B",
+     "why": "Labels guarantee different things."
+    },
+    {
+     "id": "POU-2.M1.Q4",
+     "type": "SCENARIO",
+     "lessonId": "POU-2.M1.L1",
+     "safety": false,
+     "question": "You need chicken for a soup, a roast and a weeknight sauté on a tight budget. What do you buy?",
+     "options": [],
+     "answer": "A whole chicken (or two), broken down: legs for the roast or sauté, breasts for the sauté, carcass and wings for the soup.",
+     "why": "A whole bird is cheaper per kilo and gives the carcass."
+    },
+    {
+     "id": "POU-2.M1.Q5",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "POU-2.M1.L2",
+     "safety": true,
+     "question": "Should you rinse a raw chicken before cooking?",
+     "options": [
+      {
+       "key": "A",
+       "text": "yes, to remove bacteria"
+      },
+      {
+       "key": "B",
+       "text": "no: it spreads bacteria by splashing; pat it dry with kitchen paper instead"
+      },
+      {
+       "key": "C",
+       "text": "only the cavity"
+      },
+      {
+       "key": "D",
+       "text": "only with hot water"
+      }
+     ],
+     "answer": "B",
+     "why": "Rinsing spreads *Campylobacter* around the sink."
+    },
+    {
+     "id": "POU-2.M1.Q6",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "POU-2.M1.L2",
+     "safety": true,
+     "question": "Where is raw chicken stored in the fridge?",
+     "options": [
+      {
+       "key": "A",
+       "text": "top shelf"
+      },
+      {
+       "key": "B",
+       "text": "bottom shelf, in a closed container, in a fridge at 4 °C"
+      },
+      {
+       "key": "C",
+       "text": "in the door"
+      },
+      {
+       "key": "D",
+       "text": "anywhere, if wrapped"
+      }
+     ],
+     "answer": "B",
+     "why": "It can't drip onto other food; §9 fridge at 4 °C."
+    },
+    {
+     "id": "POU-2.M1.Q7",
+     "type": "SCENARIO",
+     "lessonId": "POU-2.M1.L2",
+     "safety": true,
+     "question": "Halfway through seasoning raw chicken, you need to answer the phone. What do you do?",
+     "options": [],
+     "answer": "Wash your hands first (or let it ring); after the call, wash again if the phone was touched with raw hands, and wipe the phone.",
+     "why": "Hands carry bacteria to everything they touch."
+    },
+    {
+     "id": "POU-2.M1.Q8",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "POU-2.M1.L2",
+     "safety": true,
+     "question": "You'll make a salad and a chicken traybake. In what order?",
+     "options": [
+      {
+       "key": "A",
+       "text": "chicken first, then the salad on the same board"
+      },
+      {
+       "key": "B",
+       "text": "salad first and put away, then the raw chicken last"
+      },
+      {
+       "key": "C",
+       "text": "both at once"
+      },
+      {
+       "key": "D",
+       "text": "it doesn't matter with a clean knife"
+      }
+     ],
+     "answer": "B",
+     "why": "Raw protein comes last in the work order."
+    }
+   ]
+  },
+  {
+   "id": "POU-2.M2",
+   "title": "Breaking down a chicken",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** none for this module: it has no [K] or [J] objective. The handling rules it applies were checked in `POU-2.M1`."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "POU-2.M2.L1",
+     "title": "Eight pieces",
+     "prerequisites": [
+      "KNF-2.M2.L1"
+     ],
+     "competencies": [
+      {
+       "id": "TS-FAB",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** a whole chicken costs much less per kilo than its parts, and gives you a carcass for stock. Breaking it down takes ten minutes once you know where the joints are, and it is the same skill a butcher uses on any animal: follow the structure, not the bone."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** a whole chicken of about 1.5 kg (the first bird of `POU-2.M2.X1`); the chef's or boning knife, sharp (`KNF-2.M2.L1`); shears; the raw station; the scale; a tray for the pieces; a freezer bag for the carcass; the course video on the phone stand."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Follow the joints, not the bone.* A knife goes through a joint without force. Where it meets bone, the cut is in the wrong place: move the tip a few millimetres and feel for the gap."
+      },
+      {
+       "type": "paragraph",
+       "text": "*The sequence:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**The legs.** Breast up, legs towards you. Cut the skin between leg and body; bend the leg back until the hip joint pops; cut through the joint, turning the knife along the back to keep the oyster (the small round of meat on the back) on the thigh."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Thigh and drumstick.** Skin side down, find the line of fat across the joint; cut along it, through the joint."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "**The wings.** Pull each wing out, find the shoulder joint, and cut through it. Cut off the tips for stock."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "**The breasts.** Off the bone, along each side of the breastbone, keeping the knife against the ribs; or on the bone, cutting through the ribs with the heel of the knife or with shears."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*The result:* eight pieces (two drumsticks, two thighs, two wings, two breasts), with the carcass, the wing tips and the trim frozen for stock (`STK-2`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Yield.* Weigh the bird, the pieces and the carcass. The pieces are usually a little over two thirds of the bird's weight. A lot of meat left on the carcass shows in the numbers."
+      },
+      {
+       "type": "paragraph",
+       "text": "*The station* is set up as in `POU-2.M1.L2`: the raw board, a tray, hands washed after each raw touch."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**A first breakdown (60 min).** Follow the course video, paused at each step."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**A second breakdown (45 min).** Without pausing. Weigh the pieces and the carcass, and log the yield."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** the knife finding the joints; the oyster on the thigh; the breastbone scraped clean; pieces of even size, with the skin intact."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Splinters of bone",
+         "Sawing through bone",
+         "Find the joint; move the tip"
+        ],
+        [
+         "A small thigh",
+         "Leaving the oyster on the carcass",
+         "Turn the knife along the back"
+        ],
+        [
+         "Torn skin on the breasts",
+         "Pulling, or cutting too close to the skin",
+         "Keep the knife against the ribs"
+        ],
+        [
+         "Slow work, slipping knife",
+         "A blunt knife, which makes the work slow and unsafe",
+         "Hone or sharpen first"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** a sharp knife and the raw station of `POU-2.M1.L2`; cut away from the hand that holds the bird. The pieces go into the fridge at once, covered, on the bottom shelf."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the weights and the yield."
+      }
+     ]
+    },
+    {
+     "id": "POU-2.M2.L2",
+     "title": "Spatchcock and boned thigh",
+     "prerequisites": [
+      "POU-2.M2.L1"
+     ],
+     "competencies": [
+      {
+       "id": "TS-FAB",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** a spatchcocked chicken roasts in about two thirds of the time of a whole one, and evenly, because the legs get more heat and the breast less. A boned thigh cooks in minutes and is the most forgiving piece of chicken there is."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** a whole chicken of 1.5–2 kg; two chicken thighs, bone in; shears or a heavy knife; the boning knife; the raw station; a roasting tin; the probe."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Spatchcocking:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Breast down,** cut along both sides of the backbone with shears or a heavy knife, and lift it out. The backbone goes into the stock bag."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Turn the bird over** and press it flat with the heel of your hand on the breastbone until it cracks."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "**Tuck the wing tips** behind the breast."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "It roasts or grills evenly and fast: the legs are exposed to more heat, and the breast less."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Boning a thigh:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Skin side down,** cut along the bone on the inside of the thigh."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Scrape** the meat free around the bone with the tip of the knife."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "**Cut under the knuckle** at each end, and lift the bone out."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "**Feel** for cartilage and cut it out."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "A boned thigh cooks quickly and evenly: for a sauté, a stuffing or the grill."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Roasting a spatchcocked bird.* Skin up in the tin, in a hot oven (about 200–220 °C), for about 45 minutes for a 1.5 kg bird. Probe the breast and the thigh, as in `POU-2.M3.L1`: 75 °C or more after the rest in the breast, and the thigh above that."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Spatchcock and bone (50 min).** Spatchcock a chicken and bone two thighs. Roast the spatchcocked bird for dinner, probed; freeze the thighs flat, or cook them in a sauté (`POU-2.M4.L2`)."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** the bird lying flat; the thigh bone coming out clean, with the meat in one piece."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "A split breast",
+         "Cutting through the breast in place of along the backbone",
+         "Breast down; cut beside the backbone"
+        ],
+        [
+         "Gristle in the bite",
+         "Leaving cartilage in the thigh",
+         "Feel for it and cut it out"
+        ],
+        [
+         "Torn, shrinking skin",
+         "Piercing the skin",
+         "Work from the inside of the thigh"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** shears and a heavy knife need a firm grip and a stable board; the raw station applies (`POU-2.M1.L2`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** a photo of the flat bird and the boned thighs, and the probe readings of the roast."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "POU-2.M2.X1",
+     "title": "Two chickens, two weeks",
+     "description": "Break down two chickens over two weeks; photograph the pieces and weigh them.",
+     "competencies": [
+      {
+       "id": "TS-FAB",
+       "level": 2
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** break a chicken into eight pieces cleanly and with a good yield, twice, a week apart, so that the second shows the progress. The first follows the course video, paused as needed; the second follows it without pausing, and is filmed from above on the phone stand. The station is set up as in `POU-2.M1.X1`."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** 2 whole chickens of about 1.5 kg; the knives and shears; the raw station; the scale; a tray; freezer bags; labels; the phone stand. The pieces become the meals of `POU-2.M3` to `POU-2.M5`, and the carcasses the stock."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Recipe:** the breakdown of `POU-2.M2.L1`, twice."
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Weigh** the bird and log it."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Legs:** cut the skin, pop the hip joint, cut through it, keeping the oyster on the thigh."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "**Thigh and drumstick:** cut along the line of fat through the joint."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "**Wings:** through the shoulder joint; tips into the stock bag."
+        },
+        {
+         "level": 0,
+         "marker": "5.",
+         "text": "**Breasts:** off the bone along the breastbone, scraping the ribs clean."
+        },
+        {
+         "level": 0,
+         "marker": "6.",
+         "text": "**Lay out** the eight pieces skin up and the carcass beside them, and photograph them from above."
+        },
+        {
+         "level": 0,
+         "marker": "7.",
+         "text": "**Weigh** the pieces and the carcass, and log the yield: pieces ÷ bird × 100."
+        },
+        {
+         "level": 0,
+         "marker": "8.",
+         "text": "**Store:** the pieces covered on the bottom shelf of the fridge, or frozen flat, labelled; the carcass and tips into the stock bag."
+        },
+        {
+         "level": 0,
+         "marker": "9.",
+         "text": "**Clean down** in order."
+        },
+        {
+         "level": 0,
+         "marker": "10.",
+         "text": "**The second bird,** a week later: the same, without pausing the video, and filmed. Compare the two: time, yield and the photos."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:** **`TS-FAB` level 2, the chicken part:** a chicken broken into eight pieces following a video, the pieces photographed, with the yield logged. The round fish follows in `FSH-2.M2`; the portioning was shown in `KNF-2.M2.X1`."
+      },
+      {
+       "type": "paragraph",
+       "text": "AI review scores the photo of the pieces and the carcass: eight pieces, skin intact, carcass clean. *Competent* shows eight even pieces with intact skin and a clean breastbone and back; *not yet* shows torn skin, uneven breasts, or a lot of meat left on the carcass."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 2 × 45 min, a week apart."
+      }
+     ]
+    }
+   ],
+   "items": []
+  },
+  {
+   "id": "POU-2.M3",
+   "title": "Roasting",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** the 8 items of `POU-2.M3` in the course file, 1 of them a safety item. Pass mark 80 %, with every safety item correct."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "POU-2.M3.L1",
+     "title": "Roasting a whole chicken",
+     "prerequisites": [
+      "HEA-2.M2.L2"
+     ],
+     "competencies": [
+      {
+       "id": "TS-PRO",
+       "level": 3
+      },
+      {
+       "id": "IN-MEA",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** a roast chicken is the classic home meal and the classic home failure, because the bird is two foods in one: a lean breast that dries out above 75 °C, and legs that are better well above it. Roasting it well is the art of closing that gap."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** for each roast, a whole chicken of 1.5–2 kg; salt; butter or oil; a lemon and thyme (optional); the roasting tin; kitchen string (optional); the probe; a timer; a board for carving; foil."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*The problem of the whole bird.* The breast is done at 75 °C and dries out quickly above it. The legs are better well above that, around 80–85 °C, where their connective tissue softens. Everything in roasting a chicken is about closing that gap:"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**dry skin:** pat it dry, or dry-brine it uncovered in the fridge overnight (`SCI-2.M2.L2`), for crisp skin and seasoned meat;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**trussing or not:** trussing gives a neat shape, but it shields the thighs and slows them down. An untrussed bird, or one with the legs loosely tied, cooks more evenly;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**position and heat:** a hot oven, about 200–220 °C; the legs towards the back of the oven, where it is usually hottest (check your oven table); a spatchcocked bird (`POU-2.M2.L2`) evens it out further."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Timing* is a guide only: about 1 hour to 1 hour 20 minutes for a 1.5–2 kg bird. The probe decides."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Probing:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "the breast at its thickest part, from the neck end, the tip in the centre;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "the thigh near the bone, without touching it."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "The breast comes out a few degrees below 75 °C. During the rest it must reach 75 °C or more (assessment §9), confirmed by the probe, and the legs must be well above that. If the breast reads below 75 °C after the rest, the bird goes back into the oven."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Resting:* 15–20 minutes, loosely covered with foil (`HEA-2.M2.L2`). The juices in the tin go into the gravy."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Carving:* the legs off first, through the hip joint; then each breast off the bone in one piece, sliced across."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**A first roast (90 min, plus resting).** With the probe log: the breast and the thigh every 10 minutes in the last half hour, and again after the rest."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**A second roast (90 min).** Spatchcocked or dry-brined, compared with the first."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** skin browned and crisp; the juices from the thigh running clear; the leg moving loosely in its joint; the probe reading after the rest at or above the figure."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Pink at the thigh bone",
+         "Pulling the bird on the breast reading alone, with the thighs underdone",
+         "Probe both; the thigh decides"
+        ],
+        [
+         "A dry, stringy breast",
+         "Roasting until the breast reads 80 °C or more",
+         "Pull a few degrees below 75 °C; let the rest finish it"
+        ],
+        [
+         "Pale, soft skin",
+         "A wet bird going into the oven",
+         "Pat dry, or dry-brine uncovered"
+        ],
+        [
+         "Juice all over the board",
+         "Carving without resting",
+         "Rest 15–20 minutes"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** the breast at 75 °C or more after the rest, and the thigh above it, probed and logged (assessment §9). The tin holds hot fat: lift it with both hands and oven gloves."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the probe logs of both roasts and a line comparing them."
+      }
+     ]
+    },
+    {
+     "id": "POU-2.M3.L2",
+     "title": "Gravy from the pan",
+     "prerequisites": [
+      "SAU-2.M2.L1",
+      "SAU-2.M3.L3"
+     ],
+     "competencies": [
+      {
+       "id": "TS-SAU",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** the roasting tin holds the most concentrated flavour of the whole meal. A gravy made from it in the twenty minutes the bird rests ties the plate together, and it is a pan sauce on a larger scale."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** the roasting tin of the first roast; a heatproof jug; a spoon; 300 ml of stock from the freezer; a glass of white wine or water; a tablespoon of flour, or cornflour for a slurry; a whisk; a sieve; a small saucepan."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*The tin is the fond:* the browned juices and the fat of the roast."
+      },
+      {
+       "type": "paragraph",
+       "text": "*The sequence,* applying `SAU-2.M2.L1` and `SAU-2.M3.L3`:"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Defat:** pour the juices into the jug and let the fat rise; spoon it off and keep it."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Deglaze** the tin on the hob with wine or water, scraping."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "**Add** the stock and the defatted juices."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "**Reduce.**"
+        },
+        {
+         "level": 0,
+         "marker": "5.",
+         "text": "**Thicken lightly:** a tablespoon of the fat cooked with a tablespoon of flour as a roux, a slurry, or *beurre manié*."
+        },
+        {
+         "level": 0,
+         "marker": "6.",
+         "text": "**Strain,** and season at the end."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*The consistency.* A pouring gravy is thinner than a *nappe* sauce: it coats the spoon lightly and runs."
+      },
+      {
+       "type": "paragraph",
+       "text": "*A black tin* gives a bitter gravy: if the fond has burnt, make the gravy in a saucepan from stock and the defatted juices, without deglazing."
+      },
+      {
+       "type": "paragraph",
+       "text": "*The fat you keep* roasts the potatoes of the next roast (`POU-2.M5.L2`). Keep it covered in the fridge."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**A gravy from the first roast (30 min).** Defat, deglaze, thicken, strain. Photograph it on a spoon."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** a glossy, brown gravy without a layer of fat; it tastes of the roast, not of flour."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "A greasy gravy",
+         "Not defatted",
+         "Let the fat rise; spoon it off"
+        ],
+        [
+         "Lumps",
+         "Lumps from dry flour",
+         "Cook it as a roux, or slurry it"
+        ],
+        [
+         "A bitter gravy",
+         "A burnt tin deglazed",
+         "Gravy from stock and juices alone"
+        ],
+        [
+         "Too salty",
+         "Salting before reducing",
+         "Salt at the end"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** the hot tin goes onto the hob with oven gloves; it holds its heat for a long time, so keep the handles covered with a cloth."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the spoon photo and a tasting line."
+      }
+     ]
+    },
+    {
+     "id": "POU-2.M3.L3",
+     "title": "A roast dinner timeline",
+     "prerequisites": [
+      "WRK-1.M2.L3"
+     ],
+     "competencies": [
+      {
+       "id": "KM-PLAN",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** the hard part of a Sunday roast is not the chicken but getting the chicken, two vegetables and a gravy to the table hot at the same moment. A timeline written backwards from the serving time makes it routine."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** this lesson; the journal; the menu of `POU-2.M3.X1` (the bird, two vegetables, the gravy); your oven table; a timer."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*The backwards timeline* (`WRK-1.M2.L3`) starts from the time the meal is served and works back through:"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "the rest (20 minutes), the roasting and the preheat;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "the sides, which have their own times;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "the gravy, made during the rest."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*The oven is the bottleneck.* The roast and a tray of vegetables share it at the same heat; or the vegetables cook on the hob; or they roast during the rest, at a higher heat, while the bird is out."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Parallel tasks* are the point of level 3: the gravy, a hob side and the carving happen while something else is cooking."
+      },
+      {
+       "type": "paragraph",
+       "text": "*An example,* for a 1.5 kg bird and dinner at 18:30:"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Time",
+        "Task",
+        "Oven"
+       ],
+       "rows": [
+        [
+         "16:30",
+         "Oven on; bird out of the fridge; vegetables prepared",
+         "Heating"
+        ],
+        [
+         "16:50",
+         "Bird in",
+         "Bird"
+        ],
+        [
+         "17:30",
+         "Root vegetables in, beside the bird",
+         "Bird and vegetables"
+        ],
+        [
+         "17:55",
+         "Probe; bird out to rest",
+         "Vegetables"
+        ],
+        [
+         "18:00",
+         "Gravy; hob side on (sprouts or beans)",
+         "Vegetables"
+        ],
+        [
+         "18:15",
+         "Probe after the rest; carve",
+         "Off"
+        ],
+        [
+         "18:30",
+         "Serve",
+         "—"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*The plan against the actual.* Each step gets a planned and an actual time in the log; every component should reach the table within 5 minutes of the plan."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:** theory only (1 h): write the timeline for the Sunday roast of `POU-2.M3.X1`, with the oven use and the parallel tasks marked."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** a timeline you can follow without looking anything else up, with the oven in use at only one temperature at a time."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Dinner 20 minutes late",
+         "Forgetting the rest or the preheat",
+         "Both on the timeline"
+        ],
+        [
+         "One dish waits for the oven",
+         "Two dishes needing the oven at different temperatures at the same time",
+         "One oven heat at a time; move a side to the hob"
+        ],
+        [
+         "Cold carved meat",
+         "Starting the gravy after the carving",
+         "Gravy during the rest"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** no special risks beyond the kitchen basics (`SAF-1`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the timeline."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "POU-2.M3.X1",
+     "title": "Sunday roast chicken",
+     "description": "Sunday roast chicken with gravy and two vegetables, from your own timeline.",
+     "competencies": [
+      {
+       "id": "TS-PRO",
+       "level": 3
+      },
+      {
+       "id": "IN-MEA",
+       "level": 3
+      },
+      {
+       "id": "TS-SAU",
+       "level": 3
+      },
+      {
+       "id": "KM-PLAN",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** roast a whole chicken to a stated doneness, with a gravy and two vegetables, on your own timeline. Before cooking, write the doneness targets, the timeline from `POU-2.M3.L3`, and the choice of the bird, with one line on why its method suits it (from the labels of `POU-2.M1.L1`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** for 4: a whole chicken of 1.5–2 kg; about 1 kg of vegetables for two sides (in summer green beans, new potatoes, courgette; in winter roast root vegetables, Brussels sprouts, red cabbage); stock from the freezer for the gravy; the probe; the timeline; the household cards. The carcass goes into `POU-2.M5.X1`."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Framework:** the roast dinner."
+      },
+      {
+       "type": "table",
+       "header": [
+        "Part",
+        "What it is",
+        "Your decisions"
+       ],
+       "rows": [
+        [
+         "Targets",
+         "The breast at 75 °C or more after resting; the thigh above 80 °C",
+         "Your pull temperature for the breast"
+        ],
+        [
+         "Bird",
+         "Dry, seasoned, trussed loosely or not, or spatchcocked",
+         "Which, and why"
+        ],
+        [
+         "Oven",
+         "About 200–220 °C, legs to the hottest part",
+         "The setting, from your oven table"
+        ],
+        [
+         "Rest",
+         "15–20 minutes, loosely covered",
+         "—"
+        ],
+        [
+         "Gravy",
+         "From the tin during the rest, at a pouring consistency",
+         "The thickener"
+        ],
+        [
+         "Sides",
+         "Two, in season, fitted to the oven and the hob",
+         "Which, and where they cook"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Procedure:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "Write the targets and the timeline."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "Roast the bird, logging the breast and thigh readings and the times."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "Make the gravy during the rest."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "Serve."
+        },
+        {
+         "level": 0,
+         "marker": "5.",
+         "text": "Photograph the carved breast in cross-section, the gravy on a spoon, and the plate."
+        },
+        {
+         "level": 0,
+         "marker": "6.",
+         "text": "Note the actual times against the plan."
+        },
+        {
+         "level": 0,
+         "marker": "7.",
+         "text": "Collect the household cards."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`TS-PRO` level 3, the poultry part:** the breast within 3 °C of its stated target after resting and not below 75 °C, with an even cross-section; the thigh above its target. The meat and fish follow in `MEA-2.M3` and `FSH-2`."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`IN-MEA` level 3, the poultry part:** the bird chosen and cooked by the right method, the result confirming the match."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`TS-SAU` level 3:** the gravy, scored as in `SAU-2.M2.X1` at a pouring consistency."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`KM-PLAN` level 3:** your own timeline with parallel tasks, and every component out within 5 minutes of the plan."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 2.5 h, including the oven."
+      }
+     ]
+    }
+   ],
+   "items": [
+    {
+     "id": "POU-2.M3.Q1",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "POU-2.M3.L1",
+     "safety": true,
+     "question": "What is the minimum core temperature for poultry, after resting?",
+     "options": [
+      {
+       "key": "A",
+       "text": "63 °C"
+      },
+      {
+       "key": "B",
+       "text": "68 °C"
+      },
+      {
+       "key": "C",
+       "text": "75 °C"
+      },
+      {
+       "key": "D",
+       "text": "85 °C"
+      }
+     ],
+     "answer": "C",
+     "why": "Assessment §9: poultry 75 °C."
+    },
+    {
+     "id": "POU-2.M3.Q2",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "POU-2.M3.L1",
+     "safety": false,
+     "question": "Why are chicken legs cooked further than the breast?",
+     "options": [
+      {
+       "key": "A",
+       "text": "to kill more bacteria"
+      },
+      {
+       "key": "B",
+       "text": "their connective tissue softens at higher temperatures; the lean breast dries out"
+      },
+      {
+       "key": "C",
+       "text": "for colour"
+      },
+      {
+       "key": "D",
+       "text": "they're thinner"
+      }
+     ],
+     "answer": "B",
+     "why": "Dark meat needs heat to turn tender."
+    },
+    {
+     "id": "POU-2.M3.Q3",
+     "type": "SCENARIO",
+     "lessonId": "POU-2.M3.L1",
+     "safety": false,
+     "question": "The breast reads 72 °C, the thigh 70 °C. What do you do?",
+     "options": [],
+     "answer": "Keep roasting: the thigh is far below its target. Shield the breast with foil if it is browning too fast, and probe both again in 10 minutes.",
+     "why": "The thigh decides when a whole bird is done."
+    },
+    {
+     "id": "POU-2.M3.Q4",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "POU-2.M3.L1",
+     "safety": false,
+     "question": "What does trussing a chicken tightly do to the thighs?",
+     "options": [
+      {
+       "key": "A",
+       "text": "cooks them faster"
+      },
+      {
+       "key": "B",
+       "text": "shields them, so they cook more slowly than the breast"
+      },
+      {
+       "key": "C",
+       "text": "nothing"
+      },
+      {
+       "key": "D",
+       "text": "makes them juicier"
+      }
+     ],
+     "answer": "B",
+     "why": "Untrussed or loosely tied cooks more evenly."
+    },
+    {
+     "id": "POU-2.M3.Q5",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "POU-2.M3.L1",
+     "safety": false,
+     "question": "Why is a chicken dried or dry-brined uncovered in the fridge before roasting?",
+     "options": [
+      {
+       "key": "A",
+       "text": "to chill it"
+      },
+      {
+       "key": "B",
+       "text": "a dry skin browns and crisps, and the salt seasons the meat"
+      },
+      {
+       "key": "C",
+       "text": "for hygiene"
+      },
+      {
+       "key": "D",
+       "text": "to shorten the roast"
+      }
+     ],
+     "answer": "B",
+     "why": "Water on the skin steams it pale."
+    },
+    {
+     "id": "POU-2.M3.Q6",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "POU-2.M3.L1",
+     "safety": false,
+     "question": "Where do you probe the thigh?",
+     "options": [
+      {
+       "key": "A",
+       "text": "through the skin into the bone"
+      },
+      {
+       "key": "B",
+       "text": "in the thickest part near the bone, without touching it"
+      },
+      {
+       "key": "C",
+       "text": "at the drumstick tip"
+      },
+      {
+       "key": "D",
+       "text": "in the cavity"
+      }
+     ],
+     "answer": "B",
+     "why": "Bone conducts heat and misleads the reading."
+    },
+    {
+     "id": "POU-2.M3.Q7",
+     "type": "ORDERING",
+     "lessonId": "POU-2.M3.L2",
+     "safety": false,
+     "question": "Put the gravy in order: A) strain and season B) deglaze the tin C) defat the juices D) thicken and reduce E) add stock and juices",
+     "options": [],
+     "answer": "C, B, E, D, A",
+     "why": "Fat off, fond up, then build and finish."
+    },
+    {
+     "id": "POU-2.M3.Q8",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "POU-2.M3.L3",
+     "safety": false,
+     "question": "In a backwards timeline for a roast, when is the gravy made?",
+     "options": [
+      {
+       "key": "A",
+       "text": "before the roast goes in"
+      },
+      {
+       "key": "B",
+       "text": "while the bird rests"
+      },
+      {
+       "key": "C",
+       "text": "after carving"
+      },
+      {
+       "key": "D",
+       "text": "the day before"
+      }
+     ],
+     "answer": "B",
+     "why": "The rest is the time for parallel tasks."
+    }
+   ]
+  },
+  {
+   "id": "POU-2.M4",
+   "title": "Sautéing and pan-roasting",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** the 8 items of `POU-2.M4` in the course file, 1 of them a safety item. Pass mark 80 %, with every safety item correct."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "POU-2.M4.L1",
+     "title": "Pan-roasting a breast",
+     "prerequisites": [
+      "HEA-2.M2.L2"
+     ],
+     "competencies": [
+      {
+       "id": "TS-PRO",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** a chicken breast is the easiest piece of meat to dry out. An even thickness, a sear, a short finish in the oven and a measured pull make it juicy every time."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** for each session, 2 chicken breasts, skin on if you can get them (the breasts of `POU-2.M2.X1`); salt; oil; an ovenproof sauté pan; baking paper and a rolling pin or small pan; the probe; a timer; a board."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Even thickness first.* A breast is thick at one end and thin at the other. Flatten the thick end gently between two sheets of baking paper, or cut it horizontally into two thinner pieces."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Pan-roasting:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Season,** and dry-brine if there is time (an hour or more, uncovered in the fridge)."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**Sear** skin side down in a hot ovenproof pan until golden, 4–5 minutes, without moving it."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "**Turn** the breast."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "**Finish** in an oven at about 200 °C, for about 8–12 minutes depending on the thickness."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "The sear gives colour, and the oven cooks it evenly."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Pulling at the right temperature.* Carryover in a breast is small but real: a few degrees."
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**When to pull:** a few degrees below 75 °C."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**The rest:** 5 minutes, on a warm plate."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**The check:** probe again after the rest. The reading must be 75 °C or more (assessment §9). If it is below, the breast goes back into the pan or the oven, and is probed again."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "Write the pull temperature you choose and the reading after the rest, and adjust next time."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Skin-on or skinless.* Skin protects the meat and crisps. A skinless breast needs a gentler finish: a lower setting, or a lid."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Two breasts (45 min).** One flattened and one not, pan-roasted together. Probe both, rest them, cut them, and compare the cross-sections."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**A pull-temperature trial (45 min).** Two breasts pulled at two temperatures you choose below 75 °C, for example 3 and 5 degrees below. Rest them, probe again, and taste. Any breast below 75 °C after the rest goes back to finish."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** an even, golden skin; meat moist and opaque to the centre, with juices that run clear; the probe after the rest at or above the figure."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Raw at one end, dry at the other",
+         "A thick end raw while the thin end dries",
+         "Flatten, or cut in two"
+        ],
+        [
+         "Under the figure after the rest",
+         "Pulling too early, so the rest doesn't reach the safe figure",
+         "Back in the pan; pull a degree later next time"
+        ],
+        [
+         "Juice on the board, dry meat",
+         "Cutting straight away, so the juices run out",
+         "Rest 5 minutes"
+        ],
+        [
+         "Pale skin",
+         "Pale skin from a cold pan",
+         "A hot pan; don't move it"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** 75 °C or more after the rest, probed; below it, the breast is cooked further (assessment §9). The probe is wiped between raw and cooked readings."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the pull temperatures, the readings after the rest, and the cross-section photos."
+      }
+     ]
+    },
+    {
+     "id": "POU-2.M4.L2",
+     "title": "Sautéed chicken with a pan sauce",
+     "prerequisites": [
+      "SAU-2.M2.L2"
+     ],
+     "competencies": [
+      {
+       "id": "TS-DRY",
+       "level": 3
+      },
+      {
+       "id": "CR-COMP",
+       "level": 1
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** a sauté of thighs with a pan sauce is the weeknight chicken dinner: 45 minutes, one pan, and almost impossible to dry out. It is also your first composed plate, where the protein, a vegetable and a sauce each have a place."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** for 2, per session: 4 chicken thighs, bone in or boned (`POU-2.M2.L2`); a shallot; 100 ml of wine or dry cider; 150 ml of stock; 20 g of cold butter; a green vegetable in season (beans or peas in summer, leeks or savoy cabbage in winter); salt and pepper; the heavy sauté pan with a lid; the probe; warm plates."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*The sauté* (*poulet sauté*): the pieces browned skin side down in a heavy pan, then cooked through, partly covered or in the oven. The pan sauce is built on the fond (`SAU-2.M2.L2`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Thighs forgive.* They stay juicy well above 75 °C and are the easiest piece to sauté. Bone-in thighs take about 25–30 minutes in all; boned thighs about 12–15."
+      },
+      {
+       "type": "paragraph",
+       "text": "*The pan.* Heavy, and not crowded, so the pieces brown rather than steam (`HEA-1.M3`). Leave a finger's width between them. Let the skin brown until it releases by itself: turned too early, it tears."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Composing a plate* (`CR-COMP` level 1):"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "the protein as the focus;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "a vegetable in season for colour and contrast;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "the sauce under or beside the meat, not over the crisp skin;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "a clean rim."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Before you plate,* look at it as a guest would: where does the eye go first? It should go to the chicken."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**A sauté of thighs (60 min).** Brown the thighs skin side down, turn them, and finish them partly covered until the thickest reads at least 75 °C near the bone. Rest them on a warm plate while you build a pan sauce with wine or cider, stock and cold butter. Cook a green vegetable."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "**A second sauté (60 min).** A different sauce (cream and mustard, or a *gastrique*) and a different vegetable. Plate both versions for the household, and photograph them."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** an even, crisp skin; a pan sauce at *nappe*; a plate where the eye goes first to the chicken."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Grey, steamed pieces",
+         "Crowding the pan",
+         "Fewer pieces, or two pans"
+        ],
+        [
+         "Torn skin",
+         "Turning the pieces too early, so the skin tears",
+         "Wait until it releases"
+        ],
+        [
+         "Soggy skin",
+         "The sauce poured over the crisp skin",
+         "Sauce under or beside"
+        ],
+        [
+         "A beige plate",
+         "A plate with no colour",
+         "A bright vegetable; herbs"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** at least 75 °C near the bone, probed (assessment §9). Hot fat spits when the pieces go in: lay them away from you."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the two plate photos and the probe readings."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "POU-2.M4.X1",
+     "title": "Chicken with a pan sauce and a seasonal vegetable",
+     "description": "Chicken with a pan sauce and a seasonal vegetable.",
+     "competencies": [
+      {
+       "id": "TS-PRO",
+       "level": 3
+      },
+      {
+       "id": "TS-DRY",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** a chicken plate from a brief, with the meat at a stated doneness, a pan sauce and a vegetable."
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**The brief:** \"a chicken dish for two with a pan sauce and a seasonal vegetable\"."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**Your choices:** the cut (a breast, pan-roasted, or thighs, sautéed); the sauce; the vegetable (for example peas and lettuce in early summer, leeks or chicory in winter)."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**Before cooking:** write the doneness target and the pull temperature."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**While cooking:** log the pull and the reading after the rest."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**The criteria:** the target hit after resting and never below 75 °C; even browning; a sauce at *nappe*, placed beside the meat; a bright vegetable; a clean rim. Photograph a cross-section of the chicken and the plate."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** for 2: 2 breasts or 4 thighs; a shallot, stock, wine or cider, butter; 400 g of a seasonal vegetable; the probe; about 45 minutes."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`TS-PRO` level 3:** the chicken within 3 °C of the stated target after resting, at or above 75 °C, with an even cross-section."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`TS-DRY` level 3, the sauté part:** even browning and the right interior without a recipe. The roasting, grilling and frying parts are in `HEA-2`."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "AI review scores the plate photo: even browning, the sauce at *nappe* and placed, a clean rim. *Competent* is browned, crisp-skinned chicken with a *nappe* sauce beside it, a bright vegetable and a clean rim; *not yet* is pale or torn skin, a sauce flooding the plate, or a plate without colour."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 45 min."
+      }
+     ]
+    }
+   ],
+   "items": [
+    {
+     "id": "POU-2.M4.Q1",
+     "type": "SCENARIO",
+     "lessonId": "POU-2.M4.L1",
+     "safety": true,
+     "question": "You pulled a breast at 71 °C. After a 5-minute rest it reads 73 °C. What do you do?",
+     "options": [],
+     "answer": "Return it to the oven or pan briefly and probe again until it reads 75 °C or more; next time pull slightly later.",
+     "why": "Below the §9 figure is not safe, whatever it looks like."
+    },
+    {
+     "id": "POU-2.M4.Q2",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "POU-2.M4.L1",
+     "safety": false,
+     "question": "Why flatten the thick end of a chicken breast?",
+     "options": [
+      {
+       "key": "A",
+       "text": "to make it bigger"
+      },
+      {
+       "key": "B",
+       "text": "so it cooks evenly, and the thin end doesn't dry before the thick end is done"
+      },
+      {
+       "key": "C",
+       "text": "to tenderise the skin"
+      },
+      {
+       "key": "D",
+       "text": "to save time only"
+      }
+     ],
+     "answer": "B",
+     "why": "Even thickness, even cooking."
+    },
+    {
+     "id": "POU-2.M4.Q3",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "POU-2.M4.L1",
+     "safety": false,
+     "question": "What is pan-roasting?",
+     "options": [
+      {
+       "key": "A",
+       "text": "cooking in a covered pan with water"
+      },
+      {
+       "key": "B",
+       "text": "searing in a pan, then finishing in the oven"
+      },
+      {
+       "key": "C",
+       "text": "roasting in a tin with vegetables"
+      },
+      {
+       "key": "D",
+       "text": "deep-frying"
+      }
+     ],
+     "answer": "B",
+     "why": "Sear for colour; oven for even cooking."
+    },
+    {
+     "id": "POU-2.M4.Q4",
+     "type": "SCENARIO",
+     "lessonId": "POU-2.M4.L1",
+     "safety": false,
+     "question": "Your last three breasts were dry after resting, all reading about 80 °C. What do you change?",
+     "options": [],
+     "answer": "Pull earlier (a few degrees below 75 °C) and check the reading after the rest; flatten the breasts for even thickness.",
+     "why": "Set the pull temperature from your own carryover."
+    },
+    {
+     "id": "POU-2.M4.Q5",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "POU-2.M4.L2",
+     "safety": false,
+     "question": "Why are chicken thighs easier to sauté well than breasts?",
+     "options": [
+      {
+       "key": "A",
+       "text": "they're smaller"
+      },
+      {
+       "key": "B",
+       "text": "they stay juicy well above the safe temperature, thanks to their fat and connective tissue"
+      },
+      {
+       "key": "C",
+       "text": "they cook faster"
+      },
+      {
+       "key": "D",
+       "text": "they have no skin"
+      }
+     ],
+     "answer": "B",
+     "why": "Dark meat forgives."
+    },
+    {
+     "id": "POU-2.M4.Q6",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "POU-2.M4.L2",
+     "safety": false,
+     "question": "Six thighs in a 24 cm pan turn pale and wet. Why?",
+     "options": [
+      {
+       "key": "A",
+       "text": "the pan was too hot"
+      },
+      {
+       "key": "B",
+       "text": "the pan was crowded, so they steamed instead of browning"
+      },
+      {
+       "key": "C",
+       "text": "too little salt"
+      },
+      {
+       "key": "D",
+       "text": "the skin was dry"
+      }
+     ],
+     "answer": "B",
+     "why": "Crowding drops the pan temperature."
+    },
+    {
+     "id": "POU-2.M4.Q7",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "POU-2.M4.L2",
+     "safety": false,
+     "question": "Where does the pan sauce go on a plate of crisp-skinned chicken?",
+     "options": [
+      {
+       "key": "A",
+       "text": "poured over the skin"
+      },
+      {
+       "key": "B",
+       "text": "under or beside the chicken, so the skin stays crisp"
+      },
+      {
+       "key": "C",
+       "text": "in a separate bowl only"
+      },
+      {
+       "key": "D",
+       "text": "it doesn't matter"
+      }
+     ],
+     "answer": "B",
+     "why": "Composition protects texture."
+    },
+    {
+     "id": "POU-2.M4.Q8",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "POU-2.M4.L2",
+     "safety": false,
+     "question": "What is the focus of a simple composed plate?",
+     "options": [
+      {
+       "key": "A",
+       "text": "the garnish"
+      },
+      {
+       "key": "B",
+       "text": "the protein, with the vegetable for colour and contrast"
+      },
+      {
+       "key": "C",
+       "text": "the sauce"
+      },
+      {
+       "key": "D",
+       "text": "the rim"
+      }
+     ],
+     "answer": "B",
+     "why": "Composition at level 1: a clear focus."
+    }
+   ]
+  },
+  {
+   "id": "POU-2.M5",
+   "title": "Poaching and the whole bird",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** the 8 items of `POU-2.M5` in the course file, 3 of them safety items. Pass mark 80 %, with every safety item correct."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "POU-2.M5.L1",
+     "title": "Poached poultry",
+     "prerequisites": [
+      "HEA-1.M5.L4"
+     ],
+     "competencies": [
+      {
+       "id": "TS-MOI",
+       "level": 4
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** poaching gives the most tender chicken there is, and a broth as a bonus. It is the meat for chicken salad, soup and the *suprême* of `SAU-2`, and it teaches the gentlest of the moist-heat methods."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** a whole chicken of about 1.5 kg, or 4 legs; 2.5–3 litres of water or light stock; an onion, a carrot, a leek green, a *bouquet garni* and a few peppercorns (`STK-2.M1`); salt; the stockpot; the probe; a timer; the fine sieve; shallow containers and an ice bath."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*A delicate poach:* poultry in liquid held at about 70–85 °C, below a simmer, the surface barely trembling (`HEA-1.M5.L4`). A gentle poach keeps the breast tender; a boil tightens the meat and clouds the broth. Find the burner setting that holds it, as for the stock in `STK-2.M2.L2`, and log the liquid every 15 minutes."
+      },
+      {
+       "type": "paragraph",
+       "text": "*The liquid:* water or light stock with aromatics, lightly salted (about 8 g per litre). The bird or the legs go in cold or into hot liquid:"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**starting cold** gives a clearer broth and even cooking of a whole bird;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**starting hot** is faster for parts."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "A whole bird of 1.5 kg takes about an hour to an hour and a quarter once the liquid is at temperature; legs about 40 minutes."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Checking doneness:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "probe the thickest part of the thigh and of the breast: 75 °C or more (assessment §9);"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "the juices run clear;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "the leg moves loosely."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "For a whole bird, the thigh decides: it is the last to get there."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Keep the broth.* It is a light stock for soups and risottos. Strain it, cool it within the limits of assessment §9 (from 57 °C to 21 °C within 2 hours, and to 5 °C within 6 hours in total), and freeze it (`STK-2.M2.L5`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Why poach:* for the *suprême* (`SAU-2.M3.X2`), salads, soups and sandwiches. The meat stays moist for cold dishes. For a cold dish, cool the meat by the same standard, in a shallow container."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**A poached chicken or legs (90 min).** Log the liquid temperature every 15 minutes and hold it at 70–85 °C; probe the core; strain the broth and cool it, logged."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** a surface that trembles but doesn't bubble; moist, tender meat; a clear broth."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "Tough meat, cloudy broth",
+         "Boiling the liquid",
+         "Lower the heat; hold 70–85 °C"
+        ],
+        [
+         "Pink at the thigh",
+         "Taking the bird out on the breast reading alone",
+         "Probe the thigh; it decides"
+        ],
+        [
+         "Broth still warm in the morning",
+         "Leaving the broth to cool overnight on the stove",
+         "Shallow containers in an ice bath"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** 75 °C or more in the thigh and the breast; the broth and any meat for cold dishes cooled by the standard, and used within 2 days or frozen (assessment §9)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the liquid log, the core readings and the cooling log."
+      }
+     ]
+    },
+    {
+     "id": "POU-2.M5.L2",
+     "title": "Using the whole bird",
+     "prerequisites": [
+      "STK-2.M2.L2"
+     ],
+     "competencies": [
+      {
+       "id": "KM-WAST",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** one chicken can feed a household three times: a roast, a soup and a leftovers dish. The bird costs the same; what changes is how much of it reaches the table, and how safely."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** the carcass and leftovers of a roast or poached chicken; the skin and any fat trimmed from the bird; the stockpot and the stock aromatics; a small heavy pan; a fine sieve; shallow containers, tubs and labels; the probe; the waste log; the receipt for the bird."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*Every part has a use:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**carcass, wing tips, neck and backbone:** stock (`STK-2.M2.L2`);"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**the skin and fat:** rendered slowly in a heavy pan over low heat for chicken fat (*schmaltz*), for roasting potatoes, with the crisp skin as a snack or garnish;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**the cooked meat** left after a meal: salads, soups, a pie, fried rice or a sandwich;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**the giblets,** where a bird comes with them: the liver for a pâté or a pan sauce, cooked to 75 °C like the rest of the bird (§9, poultry offal); the heart and gizzard for the stock."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Strip first.* Cooked meat is stripped from the carcass before the carcass goes into the stock pot or the freezer. Otherwise it is lost in the stock."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Safe storage of leftovers* (assessment §9):"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "cooked chicken into the fridge within 2 hours, in a shallow container;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "eaten within 2 days, or frozen;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "reheated once, to 74 °C, probed."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*The waste log.* At the end of the project, what is left is weighed and compared with the first week's log (`KNF-1` or `VEG-1`)."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Costing.* The price of the bird is divided across the meals it makes, together with the vegetables of each meal."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Carcass stock and rendered fat (40 min active, about 4 hours on the hob).** Strip the meat into a shallow container for the fridge. Start the carcass stock as in `STK-2.M2.L2`. Render the skin and fat slowly in the heavy pan until the skin is crisp and the fat clear; strain the fat into a jar. Cool and portion everything, with the cooling logged."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** nothing in the bin but bones that have been through the stock; every container labelled and dated."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "A pot of meat lost in the stock",
+         "Meat left on the carcass going into the stock and lost",
+         "Strip it first"
+        ],
+        [
+         "Leftovers past their time",
+         "Leftovers kept in the fridge for a week",
+         "2 days, or the freezer"
+        ],
+        [
+         "Brown, bitter fat",
+         "Rendering the fat too hot, so it browns and burns",
+         "Low heat, slowly"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** leftovers in the fridge within 2 hours, eaten within 2 days or frozen, reheated once to 74 °C; the stock cooled by the standard (assessment §9). Rendering fat spits if water is in the pan: start dry, over low heat."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the cooling log, the containers in the fridge and freezer lists, and the waste weighed."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "POU-2.M5.X1",
+     "title": "One chicken, three meals",
+     "description": "One chicken, three meals (roast, stock-based soup, leftovers).",
+     "competencies": [
+      {
+       "id": "TS-MOI",
+       "level": 4
+      },
+      {
+       "id": "KM-WAST",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** plan and cook three meals from one chicken over about a week, using every part, and poach the bird or its legs gently for one of them. Before buying, write the plan for the three meals, cost each one, and keep a waste log for the week. The leftovers follow the storage rules of `POU-2.M5.L2`."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** for 4: one chicken of 1.5–2 kg; vegetables in season for the three meals; rice, pasta or bread from the pantry; the stockpot; the probe; shallow containers; the waste log; the receipts."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Framework:** one bird, three meals."
+      },
+      {
+       "type": "table",
+       "header": [
+        "Part",
+        "What it is",
+        "Your decisions"
+       ],
+       "rows": [
+        [
+         "Meal 1: the poach",
+         "The whole bird poached at 70–85 °C; or the bird roasted and the legs poached",
+         "Which, reasoned in writing"
+        ],
+        [
+         "Broth and carcass",
+         "The poaching broth kept; the carcass stripped, then made into stock; the skin and fat rendered",
+         "—"
+        ],
+        [
+         "Meal 2: a soup",
+         "Built on the carcass stock or the broth (`STK-2.M3` or `STK-2.M4`)",
+         "Which soup, by season"
+        ],
+        [
+         "Meal 3: leftovers",
+         "A salad, a pie or fried rice, within 2 days of cooking",
+         "Which"
+        ],
+        [
+         "Storage",
+         "Fridge within 2 hours; 2 days; reheated once to 74 °C",
+         "—"
+        ],
+        [
+         "Cost",
+         "The bird and the vegetables, divided across the meals",
+         "—"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Procedure:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "Write and cost the plan."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "Cook the first meal, poaching at 70–85 °C with the liquid temperature and the core logged."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "Strip the carcass, make the stock and render the fat."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "Cook the soup and the leftovers dish within the storage limits."
+        },
+        {
+         "level": 0,
+         "marker": "5.",
+         "text": "Log the waste and weigh it."
+        },
+        {
+         "level": 0,
+         "marker": "6.",
+         "text": "Compare it with the first week's log."
+        },
+        {
+         "level": 0,
+         "marker": "7.",
+         "text": "Photograph each meal."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`TS-MOI` level 4, the poultry poach part:** chicken poached in liquid held at 70–85 °C, logged, and probed to 75 °C or more, with the method choice reasoned. The fish poach follows in `FSH-2.M3`; the simmer was shown in `STK-2.M2.X1`."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`KM-WAST` level 3:** the soup and the leftovers dish as meals from planned leftovers and trim, with the waste log showing less discarded than the first week. With `STK-2.M2.X2`, this gives the three meals of the row; `LEG-2.M2.X1` adds a further one."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** about 3 h active over a week."
+      }
+     ]
+    }
+   ],
+   "items": [
+    {
+     "id": "POU-2.M5.Q1",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "POU-2.M5.L1",
+     "safety": false,
+     "question": "At what liquid temperature is chicken poached gently?",
+     "options": [
+      {
+       "key": "A",
+       "text": "a rolling boil"
+      },
+      {
+       "key": "B",
+       "text": "about 70–85 °C, the surface barely trembling"
+      },
+      {
+       "key": "C",
+       "text": "50 °C"
+      },
+      {
+       "key": "D",
+       "text": "100 °C under a lid"
+      }
+     ],
+     "answer": "B",
+     "why": "A gentle poach keeps the meat tender."
+    },
+    {
+     "id": "POU-2.M5.Q2",
+     "type": "SCENARIO",
+     "lessonId": "POU-2.M5.L1",
+     "safety": false,
+     "question": "The breast of a poached chicken reads 76 °C, the thigh 68 °C. What do you do?",
+     "options": [],
+     "answer": "Keep poaching until the thigh reads 75 °C or more; take the breast off the bird to finish separately if it's getting overdone.",
+     "why": "In a whole bird, the thigh decides."
+    },
+    {
+     "id": "POU-2.M5.Q3",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "POU-2.M5.L1",
+     "safety": false,
+     "question": "Why is a poached chicken started in cold liquid?",
+     "options": [
+      {
+       "key": "A",
+       "text": "to save energy"
+      },
+      {
+       "key": "B",
+       "text": "for a clearer broth and more even cooking of a whole bird"
+      },
+      {
+       "key": "C",
+       "text": "to keep the skin crisp"
+      },
+      {
+       "key": "D",
+       "text": "to kill bacteria"
+      }
+     ],
+     "answer": "B",
+     "why": "The temperature rises evenly through the bird."
+    },
+    {
+     "id": "POU-2.M5.Q4",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "POU-2.M5.L2",
+     "safety": true,
+     "question": "How long can cooked chicken leftovers be kept in the fridge?",
+     "options": [
+      {
+       "key": "A",
+       "text": "a week"
+      },
+      {
+       "key": "B",
+       "text": "at most 2 days, covered; freeze them to keep longer"
+      },
+      {
+       "key": "C",
+       "text": "until they smell"
+      },
+      {
+       "key": "D",
+       "text": "5 days"
+      }
+     ],
+     "answer": "B",
+     "why": "Assessment §9."
+    },
+    {
+     "id": "POU-2.M5.Q5",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "POU-2.M5.L2",
+     "safety": true,
+     "question": "After dinner, the roast chicken has been on the table for an hour. What now?",
+     "options": [
+      {
+       "key": "A",
+       "text": "leave it until tomorrow"
+      },
+      {
+       "key": "B",
+       "text": "strip the meat into a shallow container and refrigerate it within 2 hours of serving"
+      },
+      {
+       "key": "C",
+       "text": "put the whole hot carcass in the fridge in its tin"
+      },
+      {
+       "key": "D",
+       "text": "freeze it whole"
+      }
+     ],
+     "answer": "B",
+     "why": "§9: into the fridge within 2 hours, cooled in a shallow container."
+    },
+    {
+     "id": "POU-2.M5.Q6",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "POU-2.M5.L2",
+     "safety": true,
+     "question": "How is a leftover chicken soup reheated?",
+     "options": [
+      {
+       "key": "A",
+       "text": "lukewarm"
+      },
+      {
+       "key": "B",
+       "text": "until steaming hot throughout, once"
+      },
+      {
+       "key": "C",
+       "text": "twice, to be safe"
+      },
+      {
+       "key": "D",
+       "text": "only in the microwave"
+      }
+     ],
+     "answer": "B",
+     "why": "§9: steaming hot, reheated once."
+    },
+    {
+     "id": "POU-2.M5.Q7",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "POU-2.M5.L2",
+     "safety": false,
+     "question": "What is rendered chicken fat good for?",
+     "options": [
+      {
+       "key": "A",
+       "text": "nothing"
+      },
+      {
+       "key": "B",
+       "text": "roasting potatoes and sautéing, with the crisp skin as a garnish"
+      },
+      {
+       "key": "C",
+       "text": "baking cakes"
+      },
+      {
+       "key": "D",
+       "text": "dressing salads"
+      }
+     ],
+     "answer": "B",
+     "why": "The whole bird has a use."
+    },
+    {
+     "id": "POU-2.M5.Q8",
+     "type": "CALCULATION",
+     "lessonId": "POU-2.M5.L2",
+     "safety": false,
+     "question": "A €12 chicken makes a roast for 4, a soup for 4 and a salad for 2. What is the chicken cost per portion?",
+     "options": [],
+     "answer": "€1.20 (10 portions).",
+     "why": "Costing across meals shows the value of the whole bird."
+    }
+   ]
+  },
+  {
+   "id": "POU-2.M6",
+   "title": "Brining and doneness lab",
+   "note": [
+    {
+     "type": "paragraph",
+     "text": "**Knowledge check:** the 8 items of `POU-2.M6` in the course file, 3 of them safety items. Pass mark 80 %, with every safety item correct."
+    }
+   ],
+   "lessons": [
+    {
+     "id": "POU-2.M6.L1",
+     "title": "Brined versus unbrined",
+     "prerequisites": [
+      "SCI-2.M2.L2"
+     ],
+     "competencies": [
+      {
+       "id": "RD-TEST",
+       "level": 2
+      },
+      {
+       "id": "SC-PROT",
+       "level": 3
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** every cooking magazine says that brining makes chicken juicier. In `SCI-2.M2.X1` you measured the effect on small pieces. Here you test it at the scale of a meal, with blind tasters, and find out whether your household can taste the difference."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** 4 chicken legs or breasts, matched in weight within about 10 %; coarse salt; the scale; a roasting tin; the probe; four coded plates; a helper to code them; the comparison template (`SCI-2.M1.L1`); the tasting forms."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*The question:* \"does dry-brining make roast chicken juicier and better seasoned at the table?\"."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Dry-brining* (`SCI-2.M2.L2`): salt at about 1–1.5 % of the weight, spread evenly, and the pieces rested uncovered in the fridge for about a day. The salt draws out juice, dissolves in it, and is drawn back in, seasoning the meat and changing its proteins so they hold more water. *Wet-brining* (soaking in salted water) is named for comparison and not tested here."
+      },
+      {
+       "type": "paragraph",
+       "text": "*The design* (`SCI-2.M1.L1`), on the comparison template:"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**one variable:** dry-brined or not;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**everything else the same:** the same cut, size, oven and pull temperature, roasted in the same tin;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**the measurements:** each piece weighed before and after cooking, for the cooking loss in %;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**the tasting:** blind, with plates coded by the helper and the household on the form."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Reading the result.* One trial is a hint, not a proof (`SCI-2.M1.Q6`). The conclusion says how sure it is: \"in this trial, with four tasters, the brined pieces lost 3 percentage points less and were preferred three times out of four\"."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**The comparison (60 min, plus a day of brining).** Two pairs of chicken pieces, one pair dry-brined; all roasted together to the same pull temperature, each confirmed at 75 °C or more after the rest; weighed, probed, and tasted blind."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** a template filled in before cooking; pieces matched in weight within about 10 %; plates coded by someone else."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "A result that means nothing",
+         "Changing two things at once (for example brined and a hotter oven)",
+         "One variable only"
+        ],
+        [
+         "Weights that don't compare",
+         "Unmatched pieces",
+         "Within about 10 %"
+        ],
+        [
+         "Tasters guessing what you hope",
+         "Tasters who know which is which",
+         "Plates coded by someone else"
+        ],
+        [
+         "A claim the data can't carry",
+         "A conclusion stronger than one trial supports",
+         "Say how sure it is"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** the brining pieces sit uncovered on a rack over a tray on the bottom shelf, away from other food; every piece reaches 75 °C or more (assessment §9)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the filled template, the weights, the cooking loss and the conclusion (in `POU-2.M6.X1`)."
+      }
+     ]
+    },
+    {
+     "id": "POU-2.M6.L2",
+     "title": "Doneness by cue and thermometer",
+     "prerequisites": [
+      "POU-2.M4.L1"
+     ],
+     "competencies": [
+      {
+       "id": "JD-CUES",
+       "level": 3
+      },
+      {
+       "id": "SA-TEMP",
+       "level": 4
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Why it matters:** experienced cooks can tell when chicken is nearly done by touch and look. That judgement is learned by predicting, then checking with the probe, until the two agree. The probe still has the last word."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** several chicken pieces for a sauté or pan-roast; the probe; the journal, ruled for the prediction log; shallow containers; an ice bath."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Explanation:**"
+      },
+      {
+       "type": "paragraph",
+       "text": "*The cues for poultry:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**touch:** a raw breast is soft, and a done one springs back firmly when pressed with a fingertip;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**juices:** pink and cloudy when raw, clear when done;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**look:** the flesh opaque at the thickest point;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**legs:** they move loosely, and the meat pulls away from the bone at the drumstick."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*The cue-then-reading entry:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "Predict the core temperature from the cues."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "Write the prediction down."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "Probe, and log the difference."
+        }
+       ]
+      },
+      {
+       "type": "table",
+       "header": [
+        "Date",
+        "Piece",
+        "Cues",
+        "Predicted (°C)",
+        "Probe (°C)",
+        "Difference"
+       ],
+       "rows": []
+      },
+      {
+       "type": "paragraph",
+       "text": "Ten entries, with at least eight within ±3 °C, show that your cues are calibrated (`JD-CUES` level 3)."
+      },
+      {
+       "type": "paragraph",
+       "text": "*The thermometer still decides.* A cue can say \"close\", but the safe figure is confirmed by the probe: 75 °C for poultry (assessment §9). Clear juices alone are not enough in a thick piece."
+      },
+      {
+       "type": "paragraph",
+       "text": "*Cooling and reheating leftovers* from the lab, with the figures of §9:"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "cooled from 57 °C to 21 °C within 2 hours, and to 5 °C or below within 6 hours in total, in shallow containers;"
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "reheated to 74 °C for the next day's meal."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Practice:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "**Predict and probe (60 min).** During a sauté or pan-roast of several pieces, predict and log at least four readings. Cool the leftover pieces in a shallow container, with the cooling logged."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Look for:** predictions that close in on the probe reading as the entries accumulate."
+      },
+      {
+       "type": "paragraph",
+       "text": "**If it goes wrong:**"
+      },
+      {
+       "type": "table",
+       "header": [
+        "Fault",
+        "Cause",
+        "Fix"
+       ],
+       "rows": [
+        [
+         "A log that proves nothing",
+         "Probing before writing the prediction",
+         "Write first, then probe"
+        ],
+        [
+         "Juices lost, a false feel",
+         "Pressing the meat with a fork rather than a finger",
+         "A fingertip, gently"
+        ],
+        [
+         "An underdone centre",
+         "Trusting clear juices alone in a thick piece",
+         "The probe decides"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Safety:** every piece confirmed at 75 °C or more by the probe; the leftovers cooled by the standard and reheated to 74 °C, once (assessment §9)."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Record:** the prediction log and the cooling log (in `POU-2.M6.X1`)."
+      }
+     ]
+    }
+   ],
+   "exercises": [
+    {
+     "id": "POU-2.M6.X1",
+     "title": "Brining comparison and a prediction log",
+     "description": "Brining comparison and a doneness prediction log (ten predictions).",
+     "competencies": [
+      {
+       "id": "RD-TEST",
+       "level": 2
+      },
+      {
+       "id": "SC-PROT",
+       "level": 3
+      },
+      {
+       "id": "JD-CUES",
+       "level": 3
+      },
+      {
+       "id": "SA-TEMP",
+       "level": 4
+      }
+     ],
+     "blocks": [
+      {
+       "type": "paragraph",
+       "text": "**Task:** test dry-brining at meal scale with blind tasters, calibrate your doneness cues against the thermometer, and cool and reheat the leftovers within the limits. The comparison has one variable, as in `POU-2.M6.L1`. The prediction log has ten cue-then-reading entries over at least three sessions: the comparison, the doneness session of `POU-2.M6.L2`, and one further weeknight chicken meal."
+      },
+      {
+       "type": "paragraph",
+       "text": "**You need:** 4 chicken legs or breasts of matched weight; coarse salt; chicken for one further meal; vegetables in season for the meals; the template; the probe; shallow containers; the tasting forms."
+      },
+      {
+       "type": "paragraph",
+       "text": "**Framework:** the comparison and the log."
+      },
+      {
+       "type": "table",
+       "header": [
+        "Part",
+        "What it is",
+        "Your decisions"
+       ],
+       "rows": [
+        [
+         "Question",
+         "Does dry-brining make roast chicken juicier and better seasoned?",
+         "Your prediction"
+        ],
+        [
+         "Variable",
+         "Dry-brined a day ahead at 1–1.5 %, or unsalted",
+         "The salt rate"
+        ],
+        [
+         "Constants",
+         "Cut, weight within 10 %, oven, tin, pull temperature",
+         "The pull temperature"
+        ],
+        [
+         "Measures",
+         "Weight before and after; core at the pull and after the rest; blind preference",
+         "—"
+        ],
+        [
+         "Predictions",
+         "Ten entries over three sessions, cue first",
+         "—"
+        ],
+        [
+         "Leftovers",
+         "Cooled in a shallow container, logged to 5 °C; reheated to 74 °C the next day",
+         "—"
+        ]
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "*Procedure:*"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "1.",
+         "text": "Fill in the template."
+        },
+        {
+         "level": 0,
+         "marker": "2.",
+         "text": "Weigh and brine the pieces."
+        },
+        {
+         "level": 0,
+         "marker": "3.",
+         "text": "The next day, roast all four together to the same pull temperature."
+        },
+        {
+         "level": 0,
+         "marker": "4.",
+         "text": "Weigh them after cooking."
+        },
+        {
+         "level": 0,
+         "marker": "5.",
+         "text": "Have the household taste blind on the form."
+        },
+        {
+         "level": 0,
+         "marker": "6.",
+         "text": "Write the conclusion."
+        },
+        {
+         "level": 0,
+         "marker": "7.",
+         "text": "Log the predictions and readings across the three sessions."
+        },
+        {
+         "level": 0,
+         "marker": "8.",
+         "text": "Cool the leftovers in a shallow container, logging the core temperature until 5 °C."
+        },
+        {
+         "level": 0,
+         "marker": "9.",
+         "text": "Reheat them to 74 °C the next day, probed."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Show:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`RD-TEST` level 2:** a guided comparison with one variable changed, on the template, with the blind tasting."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`SC-PROT` level 3:** the dry-brined and the unsalted pieces weighed before and after, with the cooking loss in % and the difference explained, and this check at 80 %."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`JD-CUES` level 3:** ten cue-then-reading entries over three sessions, at least eight within ±3 °C."
+        },
+        {
+         "level": 0,
+         "marker": "",
+         "text": "**`SA-TEMP` level 4:** the leftovers cooled from 57 °C to 21 °C within 2 hours and to 5 °C within 6 hours, logged, and reheated to 74 °C or more."
+        }
+       ]
+      },
+      {
+       "type": "paragraph",
+       "text": "**Time:** 1.5 h over two days, plus the prediction entries in other meals."
+      }
+     ]
+    }
+   ],
+   "items": [
+    {
+     "id": "POU-2.M6.Q1",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "POU-2.M6.L1",
+     "safety": false,
+     "question": "In a brining comparison, which must be the same for both pieces?",
+     "options": [
+      {
+       "key": "A",
+       "text": "only the oven"
+      },
+      {
+       "key": "B",
+       "text": "cut, size, oven and pull temperature; only the brining differs"
+      },
+      {
+       "key": "C",
+       "text": "only the salt"
+      },
+      {
+       "key": "D",
+       "text": "nothing"
+      }
+     ],
+     "answer": "B",
+     "why": "One variable at a time."
+    },
+    {
+     "id": "POU-2.M6.Q2",
+     "type": "CALCULATION",
+     "lessonId": "POU-2.M6.L1",
+     "safety": false,
+     "question": "A brined leg weighs 300 g raw and 228 g cooked; an unbrined one 300 g raw and 210 g cooked. What is the cooking loss of each?",
+     "options": [],
+     "answer": "Brined 24 %; unbrined 30 %.",
+     "why": "(300 − 228) ÷ 300 and (300 − 210) ÷ 300."
+    },
+    {
+     "id": "POU-2.M6.Q3",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "POU-2.M6.L1",
+     "safety": false,
+     "question": "Why does dry-brining reduce cooking loss?",
+     "options": [
+      {
+       "key": "A",
+       "text": "salt adds water"
+      },
+      {
+       "key": "B",
+       "text": "salt dissolves part of the muscle proteins, which then hold water better while cooking"
+      },
+      {
+       "key": "C",
+       "text": "salt seals the surface"
+      },
+      {
+       "key": "D",
+       "text": "it doesn't"
+      }
+     ],
+     "answer": "B",
+     "why": "`SCI-2.M2.L2`."
+    },
+    {
+     "id": "POU-2.M6.Q4",
+     "type": "SCENARIO",
+     "lessonId": "POU-2.M6.L1",
+     "safety": false,
+     "question": "Three of four tasters preferred the brined chicken in one trial. How do you write the conclusion?",
+     "options": [],
+     "answer": "The brined chicken was preferred in this trial (3 of 4); it agrees with the cooking-loss figures, but one trial is a hint, so repeat it before treating it as settled.",
+     "why": "A conclusion no stronger than the data."
+    },
+    {
+     "id": "POU-2.M6.Q5",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "POU-2.M6.L2",
+     "safety": false,
+     "question": "What should you do before probing in a cue-then-reading entry?",
+     "options": [
+      {
+       "key": "A",
+       "text": "nothing"
+      },
+      {
+       "key": "B",
+       "text": "write down your predicted temperature from touch, juices and look"
+      },
+      {
+       "key": "C",
+       "text": "cut the meat open"
+      },
+      {
+       "key": "D",
+       "text": "rest it"
+      }
+     ],
+     "answer": "B",
+     "why": "The prediction comes first."
+    },
+    {
+     "id": "POU-2.M6.Q6",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "POU-2.M6.L2",
+     "safety": true,
+     "question": "The juices of a thick chicken breast run clear and it feels firm. Is it safe to serve?",
+     "options": [
+      {
+       "key": "A",
+       "text": "yes"
+      },
+      {
+       "key": "B",
+       "text": "only if the probe reads 75 °C or more"
+      },
+      {
+       "key": "C",
+       "text": "only after resting longer"
+      },
+      {
+       "key": "D",
+       "text": "only if the skin is brown"
+      }
+     ],
+     "answer": "B",
+     "why": "Cues guide; the probe confirms the §9 figure."
+    },
+    {
+     "id": "POU-2.M6.Q7",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "POU-2.M6.L2",
+     "safety": true,
+     "question": "What is the cooling standard for a batch of cooked chicken?",
+     "options": [
+      {
+       "key": "A",
+       "text": "overnight on the hob"
+      },
+      {
+       "key": "B",
+       "text": "from 57 °C to 21 °C within 2 hours, and to 5 °C or below within 6 hours in total"
+      },
+      {
+       "key": "C",
+       "text": "to room temperature within 4 hours"
+      },
+      {
+       "key": "D",
+       "text": "straight into the freezer while hot"
+      }
+     ],
+     "answer": "B",
+     "why": "Assessment §9, Food Code §3-501.14."
+    },
+    {
+     "id": "POU-2.M6.Q8",
+     "type": "MULTIPLE_CHOICE",
+     "lessonId": "POU-2.M6.L2",
+     "safety": true,
+     "question": "Leftover brined chicken is reheated for lunch. To what temperature?",
+     "options": [
+      {
+       "key": "A",
+       "text": "warm to the touch"
+      },
+      {
+       "key": "B",
+       "text": "74 °C or more, steaming hot throughout, once"
+      },
+      {
+       "key": "C",
+       "text": "57 °C"
+      },
+      {
+       "key": "D",
+       "text": "63 °C"
+      }
+     ],
+     "answer": "B",
+     "why": "§9: reheating to 74 °C, steaming hot, once."
+    }
+   ]
+  }
+ ]
+}
