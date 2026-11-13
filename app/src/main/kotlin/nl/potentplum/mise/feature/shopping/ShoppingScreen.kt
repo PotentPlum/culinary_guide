@@ -84,7 +84,8 @@ fun ShoppingScreen(
     Scaffold(
         topBar = {
             MiseTopAppBar(
-                title = stringResource(R.string.nav_shopping),
+                // The tab says "Lijstje" (room); the screen says what it is.
+                title = stringResource(R.string.shopping_title),
                 onOverflowItem = onOverflowItem,
                 menuEntries = menu,
                 actions = {

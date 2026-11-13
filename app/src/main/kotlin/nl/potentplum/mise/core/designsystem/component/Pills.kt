@@ -9,10 +9,14 @@ import androidx.compose.foundation.layout.FlowRow
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.heightIn
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.selection.selectable
 import androidx.compose.foundation.selection.selectableGroup
 import androidx.compose.foundation.shape.CircleShape
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.automirrored.outlined.KeyboardArrowRight
+import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
@@ -109,7 +113,20 @@ fun FacetChips(
                                 Column(Modifier.padding(4.dp)) {}
                             }
                         }
-                        Text(chip.label, style = MaterialTheme.typography.labelMedium)
+                        // A chip that leads somewhere says so: primary text and a chevron. A plain chip is a label.
+                        Text(
+                            chip.label,
+                            style = MaterialTheme.typography.labelMedium,
+                            color = if (onClick != null) MaterialTheme.colorScheme.primary else Color.Unspecified,
+                        )
+                        if (onClick != null) {
+                            Icon(
+                                Icons.AutoMirrored.Outlined.KeyboardArrowRight,
+                                contentDescription = null,
+                                tint = MaterialTheme.colorScheme.primary,
+                                modifier = Modifier.size(16.dp),
+                            )
+                        }
                     }
                 }
             if (onClick != null) {

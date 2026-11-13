@@ -4,6 +4,7 @@ import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.ExperimentalLayoutApi
 import androidx.compose.foundation.layout.FlowRow
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
@@ -39,10 +40,15 @@ import nl.potentplum.mise.core.designsystem.component.SeasonBadgeKind
 import nl.potentplum.mise.core.designsystem.component.SegmentedChoice
 import nl.potentplum.mise.core.designsystem.component.StatusDot
 import nl.potentplum.mise.core.designsystem.component.VegToken
+import nl.potentplum.mise.core.designsystem.component.monthName
+import nl.potentplum.mise.core.designsystem.component.seasonStatusLabel
+import nl.potentplum.mise.core.designsystem.component.statusForeground
 import nl.potentplum.mise.core.designsystem.hexColor
 import nl.potentplum.mise.domain.CalendarGrouping
 import nl.potentplum.mise.domain.CalendarSection
 import nl.potentplum.mise.domain.SeasonFilter
+import nl.potentplum.mise.domain.SeasonLine
+import nl.potentplum.mise.domain.SeasonStatus
 import nl.potentplum.mise.domain.VegetableInSeason
 
 /** Seizoen (spec §6.3–6.4): the Nu list and the Kalender, with one search field for both. */
@@ -147,24 +153,29 @@ private fun VegetableRow(
             verticalArrangement = Arrangement.spacedBy(6.dp),
         ) {
             VegToken(vegetable.nl, hexColor(vegetable.color), nameStyle = MaterialTheme.typography.titleMedium)
+            // In words, not an unlabelled bar: "Op z'n best t/m november" says what the row is for (the bar is on the detail page).
+            Row(
+                Modifier.padding(start = 52.dp),
+                verticalAlignment = Alignment.CenterVertically,
+                horizontalArrangement = Arrangement.spacedBy(8.dp),
+            ) {
+                StatusDot(row.status, showLabel = false)
+                Text(
+                    seasonLine(SeasonLine.of(vegetable.peak, vegetable.shoulder, month)),
+                    style = MaterialTheme.typography.bodyMedium,
+                    color = MiseTheme.colors.statusForeground(row.status),
+                )
+            }
             FlowRow(
                 Modifier.padding(start = 52.dp),
                 horizontalArrangement = Arrangement.spacedBy(8.dp),
                 verticalArrangement = Arrangement.spacedBy(4.dp),
                 itemVerticalAlignment = Alignment.CenterVertically,
             ) {
-                Text(
-                    vegetable.family.nl,
-                    style = MaterialTheme.typography.bodySmall,
-                    color = MiseTheme.colors.inkSoft,
-                    maxLines = 1,
-                    overflow = TextOverflow.Ellipsis,
-                )
-                StatusDot(row.status)
+                Text(vegetable.family.nl, style = MaterialTheme.typography.bodySmall, color = MiseTheme.colors.inkSoft)
                 if (row.lastChance) SeasonBadge(SeasonBadgeKind.LastChance)
                 if (row.shortSeason) SeasonBadge(SeasonBadgeKind.ShortSeason)
             }
-            PeakBar(vegetable.peak, vegetable.shoulder, Modifier.padding(start = 52.dp), currentMonth = month, compact = true)
         }
     }
 }
@@ -202,3 +213,13 @@ private fun CalendarView(
         }
     }
 }
+
+@Composable
+private fun seasonLine(line: SeasonLine): String =
+    when (line) {
+        is SeasonLine.PeakUntil -> stringResource(R.string.season_line_peak_until, monthName(line.month))
+        SeasonLine.PeakAllYear -> stringResource(R.string.season_line_peak_all_year)
+        is SeasonLine.AvailableUntil -> stringResource(R.string.season_line_available_until, monthName(line.month))
+        is SeasonLine.PeakFrom -> stringResource(R.string.season_line_peak_from, monthName(line.month))
+        SeasonLine.None -> seasonStatusLabel(SeasonStatus.OFF)
+    }

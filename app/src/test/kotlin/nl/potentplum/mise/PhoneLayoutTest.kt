@@ -2,7 +2,9 @@ package nl.potentplum.mise
 
 import androidx.compose.runtime.remember
 import androidx.compose.ui.semantics.SemanticsActions
+import androidx.compose.ui.test.assertCountEquals
 import androidx.compose.ui.test.getBoundsInRoot
+import androidx.compose.ui.test.hasClickAction
 import androidx.compose.ui.test.hasText
 import androidx.compose.ui.test.junit4.createAndroidComposeRule
 import androidx.compose.ui.test.onAllNodesWithText
@@ -141,13 +143,14 @@ class PhoneLayoutTest {
     }
 
     @Test
-    fun `substitution chips on one line share a centre line`() {
+    fun `substitutes that are vegetables are links and the rest is plain text`() {
         launch()
         compose.runOnUiThread { nav.navigate(VegetableRoute("pumpkin")) }
         waitFor("Als je het niet hebt")
-        compose.onAllNodesWithText("Butternut squash").onFirst().performScrollTo()
-        // Butternut squash is plain text; Zoete aardappel opens that vegetable, so it has a 48 dp touch target.
-        assertTrue(abs((textCentreY("Butternut squash") - textCentreY("Zoete aardappel")).value) < 1f)
+        compose.onAllNodesWithText("Butternut squash", substring = true).onFirst().performScrollTo()
+        // Zoete aardappel opens that vegetable; Butternut squash is not in Mise, so it must not look or act like a link.
+        compose.onAllNodes(hasText("Zoete aardappel") and hasClickAction()).assertCountEquals(1)
+        compose.onAllNodes(hasText("Butternut squash", substring = true) and hasClickAction()).assertCountEquals(0)
     }
 
     @Test

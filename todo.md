@@ -234,8 +234,9 @@ The web app keeps running from its last Vercel deployment until you turn it off,
 - [x] Speak the user's language: Opleiding shows titles, not IDs; no stop dot on an empty progress bar; evaluation asks
   "Hoe lukte het?" / "Hoe smaakte het?"; timer chip "Timer · 5 min"; empty Dagboek title; techniques content in Dutch and
   without parent/child duplicates in "Gerelateerd", both enforced by `tools/validate_data.py`.
-- [ ] Never lose your place: no bottom bar on app-wide pages (Technieken, Opleiding, Instellingen, Over) and task screens;
-  pairing and substitution chips that lead somewhere or look like plain text; season rows say when a vegetable is at its best.
+- [x] Never lose your place: no bottom bar on app-wide pages (Technieken, Opleiding, Instellingen, Over) and task screens;
+  pairing and substitution chips that lead somewhere or look like plain text; season rows say when a vegetable is at its best;
+  tag picker sheet in recipe edit; the shopping screen keeps its title Boodschappen.
 - [ ] Close the loop: after logging a cook, offer to clear the recipe from the shopping list (with undo); "Verder leren" on
   Vandaag once Opleiding has started.
 

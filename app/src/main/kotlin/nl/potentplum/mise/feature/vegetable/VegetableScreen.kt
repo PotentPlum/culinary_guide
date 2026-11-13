@@ -112,22 +112,17 @@ private fun VegetableDetail(
             Section(stringResource(R.string.detail_section_storage)) { Body(vegetable.storage) }
             Section(stringResource(R.string.detail_section_prep)) { Body(vegetable.prep) }
             Section(stringResource(R.string.detail_section_technique)) { Body(vegetable.technique) }
-            Section(stringResource(R.string.detail_section_pairings)) { FacetChips(vegetable.pairings.map { FacetChip(it) }) }
+            // Pairings are ingredients, not places to go: plain text, so nothing looks tappable that is not.
+            Section(stringResource(R.string.detail_section_pairings)) { Body(vegetable.pairings.joinToString(" · ")) }
             Section(stringResource(R.string.detail_section_subs)) {
-                // A chip that opens another vegetable has a 48 dp touch target, so it is taller than the plain ones: centre them.
-                FlowRow(
-                    horizontalArrangement = Arrangement.spacedBy(6.dp),
-                    verticalArrangement = Arrangement.spacedBy(6.dp),
-                    itemVerticalAlignment = Alignment.CenterVertically,
-                ) {
-                    state.substitutions.forEach { substitution ->
-                        val target = substitution.vegetableId
-                        FacetChips(
-                            listOf(FacetChip(substitution.text)),
-                            onClick = if (target != null) ({ onVegetable(target) }) else null,
-                        )
-                    }
+                // Substitutes that are vegetables in Mise are links (chevron chips); the rest is text.
+                val (linked, plain) = state.substitutions.partition { it.vegetableId != null }
+                if (linked.isNotEmpty()) {
+                    FacetChips(linked.map { FacetChip(it.text) }, onClick = { chip ->
+                        linked.first { it.text == chip.label }.vegetableId?.let(onVegetable)
+                    })
                 }
+                if (plain.isNotEmpty()) Body(plain.joinToString(" · ") { it.text })
             }
             if (state.recipes.isNotEmpty()) {
                 Section(stringResource(R.string.detail_section_in_recipes)) {

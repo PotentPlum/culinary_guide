@@ -49,6 +49,7 @@ import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
+import androidx.navigation.NavDestination
 import androidx.navigation.NavDestination.Companion.hasRoute
 import androidx.navigation.NavDestination.Companion.hierarchy
 import androidx.navigation.NavGraph.Companion.findStartDestination
@@ -209,10 +210,8 @@ fun MiseAppShell(
         Scaffold(
             contentWindowInsets = WindowInsets(0),
             bottomBar = {
-                // Kookmodus is full screen (spec §6.10).
                 val entry by navController.currentBackStackEntryAsState()
-                val fullScreen = entry?.destination?.let { it.hasRoute<CookRoute>() || it.hasRoute<OnboardingRoute>() } == true
-                if (!fullScreen) MiseNavigationBar(navController, uncheckedShoppingCount)
+                if (entry?.destination?.hidesBottomBar() != true) MiseNavigationBar(navController, uncheckedShoppingCount)
             },
             snackbarHost = { MiseSnackbarHost(snackbarHost, snackbarObstacles) },
         ) { padding ->
@@ -465,6 +464,32 @@ private fun NavHostController.navigateToTab(destination: TopLevelDestination) =
         launchSingleTop = true
         restoreState = true
     }
+
+/**
+ * Screens without the bottom bar (spec §6.1): full-screen ones (Kookmodus, first run); the app-wide pages from ⋮, which belong
+ * to no tab, so any highlighted tab would be wrong; and task screens that end in save or cancel.
+ */
+private val withoutBottomBar =
+    listOf(
+        CookRoute::class,
+        OnboardingRoute::class,
+        TechniquesRoute::class,
+        TechniqueRoute::class,
+        CurriculumRoute::class,
+        CourseRoute::class,
+        LessonRoute::class,
+        ExerciseRoute::class,
+        CheckRoute::class,
+        SettingsRoute::class,
+        KeyRoute::class,
+        AboutRoute::class,
+        RecipeEditRoute::class,
+        ImportLinkRoute::class,
+        PhotoImportRoute::class,
+        QuestRefineRoute::class,
+    )
+
+private fun NavDestination.hidesBottomBar(): Boolean = withoutBottomBar.any { hasRoute(it) }
 
 @Composable
 private fun MiseNavigationBar(

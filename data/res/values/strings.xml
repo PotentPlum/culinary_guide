@@ -27,6 +27,10 @@
     <string name="status_peak">Op z\'n best</string>
     <string name="status_soon">Komt eraan</string>
     <string name="status_shoulder">Verkrijgbaar</string>
+    <string name="season_line_peak_until">Op z\'n best t/m %1$s</string>
+    <string name="season_line_peak_all_year">Het hele jaar op z\'n best</string>
+    <string name="season_line_available_until">Verkrijgbaar t/m %1$s</string>
+    <string name="season_line_peak_from">Op z\'n best vanaf %1$s</string>
     <string name="status_off">Buiten seizoen</string>
     <string name="badge_last_chance">Laatste kans</string>
     <string name="badge_short_season">Kort seizoen</string>
@@ -255,6 +259,7 @@
     <string name="today_quick_empty">Geen recepten van 30 minuten of minder meer voor vandaag.</string>
     <string name="nav_today">Vandaag</string>
     <string name="nav_shopping">Lijstje</string>
+    <string name="shopping_title">Boodschappen</string>
     <string name="shopping_empty_title">Je lijst is leeg</string>
     <string name="shopping_empty_sub">Voeg ingrediënten toe vanuit een recept of typ zelf iets.</string>
     <string name="recipe_add_to_shopping">Op boodschappenlijst</string>
@@ -415,7 +420,10 @@
     <string name="edit_image_add">Foto toevoegen</string>
     <string name="edit_image_replace">Foto vervangen</string>
     <string name="edit_image_remove">Foto verwijderen</string>
-    <string name="edit_techniques_pick">Technieken kiezen</string>
+    <string name="edit_tag_pick">Kiezen</string>
+    <string name="edit_tag_change">Aanpassen</string>
+    <string name="edit_tag_pick_for">%1$s kiezen</string>
+    <string name="edit_tag_remove">%1$s verwijderen</string>
     <string name="edit_discard_title">Wijzigingen weggooien?</string>
     <string name="edit_discard_body">Je aanpassingen aan dit recept worden niet bewaard.</string>
     <string name="edit_discard_confirm">Weggooien</string>

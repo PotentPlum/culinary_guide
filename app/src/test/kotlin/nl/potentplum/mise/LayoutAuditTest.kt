@@ -3,6 +3,7 @@ package nl.potentplum.mise
 import androidx.compose.runtime.remember
 import androidx.compose.ui.semantics.SemanticsActions
 import androidx.compose.ui.test.hasClickAction
+import androidx.compose.ui.test.hasContentDescription
 import androidx.compose.ui.test.hasText
 import androidx.compose.ui.test.junit4.createAndroidComposeRule
 import androidx.compose.ui.test.onAllNodesWithContentDescription
@@ -22,6 +23,7 @@ import nl.potentplum.mise.core.navigation.CourseRoute
 import nl.potentplum.mise.core.navigation.CurriculumRoute
 import nl.potentplum.mise.core.navigation.JournalGraph
 import nl.potentplum.mise.core.navigation.LessonRoute
+import nl.potentplum.mise.core.navigation.RecipeEditRoute
 import nl.potentplum.mise.core.navigation.RecipeRoute
 import nl.potentplum.mise.core.navigation.RecipesGraph
 import nl.potentplum.mise.core.navigation.SeasonGraph
@@ -124,6 +126,13 @@ abstract class LayoutAuditTest {
         settle()
     }
 
+    private fun clickDescribed(description: String) {
+        val matcher = hasContentDescription(description) and hasClickAction()
+        compose.reveal(matcher)
+        compose.onAllNodes(matcher).onFirst().performSemanticsAction(SemanticsActions.OnClick)
+        settle()
+    }
+
     private fun back() {
         compose.activityRule.scenario.onActivity { it.onBackPressedDispatcher.onBackPressed() }
         settle()
@@ -207,6 +216,14 @@ abstract class LayoutAuditTest {
         click("Gekookt")
         waitFor("Hoe lukte het?")
         audit.screen("Hoe ging het?")
+        back()
+        go(RecipeEditRoute(id = "kale"))
+        waitFor("Bereiding")
+        audit.screen("Recept bewerken")
+        clickDescribed("Keuken kiezen")
+        waitFor("Italiaans")
+        audit.screen("Keuken kiezen")
+        back()
         back()
         go(CookRoute("kale"))
         waitFor("Stap 1 van 4")

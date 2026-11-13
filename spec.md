@@ -238,6 +238,11 @@ Internal enums keep their names (`BEGINNER` / `INTERMEDIATE` / `ADVANCED`, `easy
   A detail screen's ⋮ holds only that screen's own actions (recipe detail: Dit kook ik vanavond, Bewerken, Delen,
   Verwijderen), and a detail screen without any has no ⋮; the app-wide items are one tap back.
   Techniques are mostly reached through links (§6.6).
+- The bottom bar shows on the tab screens and the details opened from them (recipe, vegetable, quest), which stack on that tab.
+  It is hidden on full-screen pages (Kookmodus, first run), on the app-wide pages from ⋮ and their sub-pages (Technieken and
+  technique detail, Opleiding and its courses, lessons, exercises and checks, Instellingen, Claude-sleutel, Over Mise), which
+  belong to no tab, so a highlighted tab would be wrong, and on task screens that end in save or cancel (recipe edit, import by
+  link or photo, quest settings). Back is the way out of all of them.
 - System back and predictive back work everywhere, and each tab keeps its own back stack.
 - Share targets (§6.9) open the import flow on top of the current stack.
 - The current month is always `LocalDate.now(ZoneId.of("Europe/Amsterdam")).monthValue`.
@@ -274,7 +279,9 @@ The seasonal tally lives on Dagboek only (§6.13); Vandaag stays about today. Wo
 - **Nu** view (default): filter pills with counts: **Verkrijgbaar** (PEAK + SHOULDER, default) / **Op z'n best** (PEAK) /
   **Komt eraan** (SOON). ENDING vegetables are not available, so they don't get a filter.
   The calendar still shows when the peak just ended.
-- Rows: `VegToken` next to `nl`, family, status dot + label (§5 vocabulary), `SeasonBadge`s, mini `PeakBar`. Order per §11.1.
+- Rows: `VegToken` next to `nl`; a status dot with the season in words in the status colour (`SeasonLine`: "Op z'n best t/m
+  november", "Verkrijgbaar t/m december", "Op z'n best vanaf mei", "Het hele jaar op z'n best"); family and `SeasonBadge`s.
+  The 12-month `PeakBar` is on the detail page, where it has a legend. Order per §11.1.
 - Search matches `nl`, `nameEn` (a hidden alias) and `family`; case- and diacritic-insensitive.
 - A segmented toggle switches between **Nu** and **Kalender** (§6.4).
 - No hero headline: the top bar already says Seizoen, so the list starts right under the toggle, search and filters.
@@ -295,8 +302,9 @@ The seasonal tally lives on Dagboek only (§6.13); Vandaag stays about today. Wo
 - Header on the vegetable's `color` (text in ink or white, §5): `nl`, family, current status, `SeasonBadge`s, and a 12-month
   `PeakBar` in the status colours with a legend (Op z'n best / Verkrijgbaar).
 - Sections: **Bewaren** (`storage`), **Bereiden** (`prep`), **Bereidingstip** (`technique`),
-  **Combineert goed met** (`pairings` chips), **Als je het niet hebt** (`substitutions` chips; a chip whose text
-  matches another vegetable's `nl` opens that vegetable).
+  **Combineert goed met** (`pairings` as a line of text: they are ingredients, not links), **Als je het niet hebt**
+  (`substitutions`: one whose text matches another vegetable's `nl` is a link chip, primary text with a chevron, that opens that
+  vegetable; the rest is a line of text). Only chips that lead somewhere look tappable.
 - **In jouw recepten**: library recipes that use this vegetable (§11.4), with cooked counts.
 - **Technieken**: techniques whose `relatedVegIds` contain this vegetable.
 - **Ideeën van het web**: `curatedRecipes` (open in the browser, or import).
@@ -355,6 +363,9 @@ The seasonal tally lives on Dagboek only (§6.13); Vandaag stays about today. Wo
 **Edit mode (in place)**
 - "Bewerken" switches the same screen to editable fields: title, description, servings, times, source label/URL, groups (add,
   rename, delete, reorder by drag), ingredient lines, steps, extra fields, tags, notes, image (replace or remove).
+- Tags (soort gerecht, keuken, hoofdingrediënt, technieken) show only the chosen ones, as removable chips, with **Kiezen** /
+  **Aanpassen** opening a sheet of all options (radio buttons for the one dish type, check boxes otherwise, a search field for
+  techniques). The four number fields sit two per row while their labels fit, one per row with large text.
 - Ingredient lines are edited as text. On save, changed lines are re-parsed: locally at once, then by Claude enrichment in the
   background when a key is set (§8.4). An ingredient whose structured fields were corrected by hand keeps them (`parseSource = MANUAL`).
 - Save / Annuleren. Leaving with unsaved changes asks for confirmation. `updatedAt` is set on save.

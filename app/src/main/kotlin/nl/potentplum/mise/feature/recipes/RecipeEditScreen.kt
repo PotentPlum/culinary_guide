@@ -5,6 +5,7 @@ import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.activity.result.PickVisualMediaRequest
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.BoxWithConstraints
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.ExperimentalLayoutApi
 import androidx.compose.foundation.layout.FlowRow
@@ -12,11 +13,18 @@ import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.heightIn
 import androidx.compose.foundation.layout.imePadding
+import androidx.compose.foundation.layout.navigationBarsPadding
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.selection.selectable
+import androidx.compose.foundation.selection.selectableGroup
+import androidx.compose.foundation.selection.toggleable
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
@@ -26,6 +34,7 @@ import androidx.compose.material.icons.outlined.Delete
 import androidx.compose.material.icons.outlined.DragIndicator
 import androidx.compose.material.icons.outlined.MoreVert
 import androidx.compose.material3.AlertDialog
+import androidx.compose.material3.Button
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.Checkbox
@@ -35,9 +44,13 @@ import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.FilterChip
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
+import androidx.compose.material3.InputChip
+import androidx.compose.material3.InputChipDefaults
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.ModalBottomSheet
 import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.OutlinedTextField
+import androidx.compose.material3.RadioButton
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
@@ -52,10 +65,15 @@ import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.semantics.Role
+import androidx.compose.ui.semantics.contentDescription
 import androidx.compose.ui.semantics.heading
+import androidx.compose.ui.semantics.onClick
 import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.text.input.KeyboardType
+import androidx.compose.ui.text.rememberTextMeasurer
 import androidx.compose.ui.unit.dp
 import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
@@ -165,11 +183,35 @@ private fun EditorFields(
         minLines = 2,
         modifier = Modifier.fillMaxWidth(),
     )
-    FlowRow(horizontalArrangement = Arrangement.spacedBy(8.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
-        NumberField(stringResource(R.string.recipes_label_servings), editor.servings) { v -> update { it.copy(servings = v) } }
-        NumberField(stringResource(R.string.recipes_label_prep_time), editor.prepMinutes) { v -> update { it.copy(prepMinutes = v) } }
-        NumberField(stringResource(R.string.recipes_label_cook_time), editor.cookMinutes) { v -> update { it.copy(cookMinutes = v) } }
-        NumberField(stringResource(R.string.recipes_label_total_time), editor.totalMinutes) { v -> update { it.copy(totalMinutes = v) } }
+    val numberLabels =
+        listOf(
+            R.string.recipes_label_servings,
+            R.string.recipes_label_prep_time,
+            R.string.recipes_label_cook_time,
+            R.string.recipes_label_total_time,
+        ).map { stringResource(it) }
+    val numberValues = listOf(editor.servings, editor.prepMinutes, editor.cookMinutes, editor.totalMinutes)
+    val measurer = rememberTextMeasurer()
+    val labelStyle = MaterialTheme.typography.bodyLarge
+    val longestLabel = remember(numberLabels, labelStyle) { numberLabels.maxOf { measurer.measure(it, labelStyle).size.width } }
+    BoxWithConstraints {
+        // Two per row while the longest label fits half the width (16dp padding each side); one per row with large text.
+        val half = (maxWidth - 8.dp) / 2
+        val width = if (with(LocalDensity.current) { longestLabel.toDp() } <= half - 32.dp) half else maxWidth
+        FlowRow(horizontalArrangement = Arrangement.spacedBy(8.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
+            numberLabels.forEachIndexed { index, label ->
+                NumberField(label, numberValues[index], Modifier.width(width)) { v ->
+                    update {
+                        when (index) {
+                            0 -> it.copy(servings = v)
+                            1 -> it.copy(prepMinutes = v)
+                            2 -> it.copy(cookMinutes = v)
+                            else -> it.copy(totalMinutes = v)
+                        }
+                    }
+                }
+            }
+        }
     }
     OutlinedTextField(
         value = editor.sourceLabel,
@@ -263,20 +305,27 @@ private fun EditorFields(
 
     // Tags.
     Heading(stringResource(R.string.recipes_edit_label_tags))
-    TagChips(state.options.dishTypeTitle, state.options.dishTypes.map { it.value to it.nl }, setOfNotNull(editor.dishType)) { value ->
-        update { it.copy(dishType = if (it.dishType == value) null else value) }
-    }
-    TagChips(state.options.titles.cuisine, state.options.cuisines.map { it.value to it.nl }, editor.cuisines) { value ->
+    // The chosen tags, and a picker for the rest: 37 tags and 74 techniques as chips would bury the form.
+    TagPicker(
+        state.options.dishTypeTitle,
+        state.options.dishTypes.map { it.value to it.nl },
+        setOfNotNull(editor.dishType),
+        single = true,
+    ) { value -> update { it.copy(dishType = if (it.dishType == value) null else value) } }
+    TagPicker(state.options.titles.cuisine, state.options.cuisines.map { it.value to it.nl }, editor.cuisines) { value ->
         update { it.copy(cuisines = it.cuisines.toggle(value)) }
     }
-    TagChips(
+    TagPicker(
         state.options.titles.mainIngredient,
         state.options.mainIngredients.map { it.value to it.nl },
         editor.mainIngredients,
-    ) { value ->
-        update { it.copy(mainIngredients = it.mainIngredients.toggle(value)) }
-    }
-    TechniquePicker(state, editor) { value -> update { it.copy(techniques = it.techniques.toggle(value)) } }
+    ) { value -> update { it.copy(mainIngredients = it.mainIngredients.toggle(value)) } }
+    TagPicker(
+        stringResource(R.string.recipes_filter_technique),
+        state.options.techniques.map { it.id to it.nl },
+        editor.techniques,
+        searchable = true,
+    ) { value -> update { it.copy(techniques = it.techniques.toggle(value)) } }
 
     // Notes.
     OutlinedTextField(
@@ -299,6 +348,7 @@ private fun Heading(text: String) {
 private fun NumberField(
     label: String,
     value: String,
+    modifier: Modifier,
     onValue: (String) -> Unit,
 ) {
     OutlinedTextField(
@@ -307,7 +357,7 @@ private fun NumberField(
         label = { Text(label) },
         keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number),
         singleLine = true,
-        modifier = Modifier.fillMaxWidth(0.47f),
+        modifier = modifier,
     )
 }
 
@@ -399,62 +449,102 @@ private fun GroupMenu(
     }
 }
 
-@OptIn(ExperimentalLayoutApi::class)
+/**
+ * One kind of tag: the chosen ones as removable chips, and **Kiezen** / **Aanpassen**, which opens a sheet with every option
+ * (radio buttons when [single], check boxes otherwise; a search field when [searchable]).
+ */
+@OptIn(ExperimentalLayoutApi::class, ExperimentalMaterial3Api::class)
 @Composable
-private fun TagChips(
+private fun TagPicker(
     title: String,
     options: List<Pair<String, String>>,
     selected: Set<String>,
-    onToggle: (String) -> Unit,
-) {
-    Text(title, style = MaterialTheme.typography.titleSmall)
-    FlowRow(horizontalArrangement = Arrangement.spacedBy(8.dp), verticalArrangement = Arrangement.spacedBy(4.dp)) {
-        options.forEach { (value, label) ->
-            FilterChip(selected = value in selected, onClick = { onToggle(value) }, label = { Text(label) })
-        }
-    }
-}
-
-@OptIn(ExperimentalLayoutApi::class)
-@Composable
-private fun TechniquePicker(
-    state: RecipeEditUiState,
-    editor: RecipeEditorState,
+    single: Boolean = false,
+    searchable: Boolean = false,
     onToggle: (String) -> Unit,
 ) {
     var open by rememberSaveable { mutableStateOf(false) }
-    val techniques = state.options.techniques
-    Text(stringResource(R.string.recipes_filter_technique), style = MaterialTheme.typography.titleSmall)
-    FlowRow(horizontalArrangement = Arrangement.spacedBy(8.dp), verticalArrangement = Arrangement.spacedBy(4.dp)) {
-        techniques.filter { it.id in editor.techniques }.forEach { technique ->
-            FilterChip(selected = true, onClick = { onToggle(technique.id) }, label = { Text(technique.nl) })
-        }
-        OutlinedButton(onClick = { open = true }) { Text(stringResource(R.string.edit_techniques_pick)) }
-    }
-    if (open) {
-        var query by rememberSaveable { mutableStateOf("") }
-        AlertDialog(
-            onDismissRequest = { open = false },
-            title = { Text(stringResource(R.string.edit_techniques_pick)) },
-            text = {
-                Column {
-                    MiseSearchField(
-                        query = query,
-                        onQuery = { query = it },
-                        placeholder = stringResource(R.string.techniques_search_placeholder),
-                        description = stringResource(R.string.techniques_search_aria_label),
+    val labels = options.toMap()
+    Text(title, style = MaterialTheme.typography.titleSmall)
+    FlowRow(
+        horizontalArrangement = Arrangement.spacedBy(8.dp),
+        verticalArrangement = Arrangement.spacedBy(4.dp),
+        itemVerticalAlignment = Alignment.CenterVertically,
+    ) {
+        options.filter { it.first in selected }.forEach { (value, label) ->
+            val remove = stringResource(R.string.edit_tag_remove, label)
+            InputChip(
+                selected = true,
+                onClick = { onToggle(value) },
+                label = { Text(label) },
+                trailingIcon = {
+                    Icon(
+                        Icons.Outlined.Close,
+                        contentDescription = null,
+                        modifier = Modifier.size(InputChipDefaults.IconSize),
                     )
-                    LazyColumn(Modifier.height(320.dp)) {
-                        items(techniques.filter { TextMatch.contains(it.nl, query) }, key = { it.id }) { technique ->
-                            Row(verticalAlignment = Alignment.CenterVertically) {
-                                Checkbox(checked = technique.id in editor.techniques, onCheckedChange = { onToggle(technique.id) })
-                                Text(technique.nl)
-                            }
+                },
+                modifier =
+                    Modifier.semantics {
+                        onClick(remove) {
+                            onToggle(value)
+                            true
                         }
+                    },
+            )
+        }
+        val pick = stringResource(R.string.edit_tag_pick_for, title)
+        TextButton(onClick = { open = true }, modifier = Modifier.semantics { contentDescription = pick }) {
+            Text(stringResource(if (selected.isEmpty()) R.string.edit_tag_pick else R.string.edit_tag_change))
+        }
+    }
+    if (!open) return
+    var query by rememberSaveable { mutableStateOf("") }
+    ModalBottomSheet(onDismissRequest = { open = false }) {
+        Column(Modifier.navigationBarsPadding().padding(bottom = 16.dp)) {
+            Text(
+                title,
+                style = MaterialTheme.typography.headlineSmall,
+                modifier = Modifier.padding(horizontal = 24.dp, vertical = 8.dp).semantics { heading() },
+            )
+            if (searchable) {
+                MiseSearchField(
+                    query = query,
+                    onQuery = { query = it },
+                    placeholder = stringResource(R.string.techniques_search_placeholder),
+                    description = stringResource(R.string.techniques_search_aria_label),
+                    modifier = Modifier.padding(horizontal = 16.dp, vertical = 8.dp),
+                )
+            }
+            val shown = options.filter { TextMatch.contains(it.second, query) }
+            LazyColumn(Modifier.weight(1f, fill = false).selectableGroup()) {
+                items(shown, key = { it.first }) { (value, label) ->
+                    val checked = value in selected
+                    Row(
+                        Modifier
+                            .fillMaxWidth()
+                            .heightIn(min = 48.dp)
+                            .then(
+                                if (single) {
+                                    Modifier.selectable(checked, role = Role.RadioButton) {
+                                        onToggle(value)
+                                        open = false
+                                    }
+                                } else {
+                                    Modifier.toggleable(checked, role = Role.Checkbox) { onToggle(value) }
+                                },
+                            ).padding(horizontal = 16.dp),
+                        verticalAlignment = Alignment.CenterVertically,
+                        horizontalArrangement = Arrangement.spacedBy(12.dp),
+                    ) {
+                        if (single) RadioButton(selected = checked, onClick = null) else Checkbox(checked = checked, onCheckedChange = null)
+                        Text(labels[value] ?: label, style = MaterialTheme.typography.bodyLarge)
                     }
                 }
-            },
-            confirmButton = { TextButton(onClick = { open = false }) { Text(stringResource(R.string.common_done)) } },
-        )
+            }
+            Button(onClick = { open = false }, modifier = Modifier.fillMaxWidth().padding(horizontal = 16.dp, vertical = 8.dp)) {
+                Text(stringResource(R.string.common_done))
+            }
+        }
     }
 }
