@@ -17,6 +17,10 @@ Decided by the owner:
 | D4 | Start from a fresh project; carry over only the curated content and test fixtures in `data/`. |
 | D5 | Apply the feature review (Appendix C), **except quest checkpoints**: quests do not get success criteria to tick off. Evaluation stays free scores + notes (§6.12). |
 | D6 | Apply the UI/UX review (Appendix D) in full: one season and difficulty vocabulary, Boodschappen as a tab with quest history in Dagboek, "Vanavond" pinning, a 5-step score scale, cook-mode resume, and the contrast rules in §5. |
+| D7 | The culinary curriculum (`curriculum/`) is in the app as **Opleiding** (§6.17). Its **lessons, knowledge-check items and exercises stay in English**; every label, button and message around them is Dutch (§15.4). Decided 2026-11-13. |
+| D8 | Opleiding is a **separate section with its own assessment**: knowledge checks (80 % and every safety item right) and exercise evidence in four bands (Nog niet / In ontwikkeling / Bekwaam / Uitstekend). Quests and the 5-step journal score are unchanged; D5 still holds. Decided 2026-11-13. |
+| D9 | The content scope (Dutch-grown vegetables only, §2) applies to Seizoen, the calendar, quests and suggestions. **Lesson text is exempt** and may name other ingredients. Decided 2026-11-13. |
+| D10 | Courses ship as **drafts labelled "Concept"** until a second reader has logged all their safety items (`curriculum/06-lesson-development.md` §3); nothing blocks the build. Decided 2026-11-13. |
 
 Assumptions; each one can be changed by editing this table:
 
@@ -43,10 +47,13 @@ Four parts feed that question and each other:
 3. **Quests**: AI-generated cooking exercises, one tap for today's quest on Vandaag, shaped by the season and your journal.
 4. **Dagboek**: what you cooked, how it went, your quests, and how seasonally and broadly you cook.
 
+Beside the loop sits **Opleiding** (§6.17), a five-stage cooking curriculum with lessons, knowledge checks and exercises.
+
 The loop: the season ranks recipes and quests (Vandaag) → you pick tonight's dish and shop for it (Boodschappen) → you cook
 (cook mode) → you log it (Dagboek) → your journal shapes the next suggestions and quests. The **technique library** supports every step.
 
-All UI text is **Dutch**. Code, identifiers, comments and filenames are English.
+All UI text is **Dutch**. Code, identifiers, comments and filenames are English. The one exception is the curriculum's own text
+(lessons, check items, exercises), which is English (D7).
 
 ## 2. Goals and non-goals
 
@@ -60,7 +67,7 @@ All UI text is **Dutch**. Code, identifiers, comments and filenames are English.
 
 **Non-goals**
 - Multi-user, sharing, cloud sync, accounts, login.
-- Imported or year-round produce, fruit, berries, nuts (content scope, `data/README.md`).
+- Imported or year-round produce, fruit, berries, nuts (content scope, `data/README.md`). Opleiding lessons are exempt (D9).
 - Nutrition tracking, meal planning, and showing a website's own ratings or metadata.
 - Quest checkpoints or success criteria (D5).
 - Custom in-app timers, farmer markets, foraging, biometric lock: deferred to P3 (§18).
@@ -131,6 +138,8 @@ Rules: features depend on `domain`/`data` interfaces, never on each other. Navig
 /data                   curated content, fixtures, schemas (see data/README.md)
 /tools/validate_data.py stdlib-only data validator (runs in CI and as a Claude Code hook)
 /tools/legacy_to_backup.py  one-off converter for the old web-app exports (§13.3)
+/tools/export_curriculum.py exports curriculum/ to data/assets/curriculum/ (§7.1)
+/curriculum             the culinary curriculum's design and lesson files (curriculum/README.md)
 /lint-checks            custom Android Lint rules (ComposeHardcodedText, §15.4); build tooling, not shipped
 /.github/workflows      CI + release
 ```
@@ -222,7 +231,7 @@ Internal enums keep their names (`BEGINNER` / `INTERMEDIATE` / `ADVANCED`, `easy
   **Vandaag · Seizoen · Recepten · Boodschappen · Dagboek**. The Boodschappen icon shows a badge with the number of unticked items.
 - Quests have no tab: they start from the **Quest van vandaag** card on Vandaag (and "Quest met …" / "Oefen in een quest" on vegetable
   and technique detail), and their history lives in **Dagboek › Quests** (§6.13). Completed quests are journal entries anyway.
-- Each top app bar has an overflow menu (⋮) with **Technieken, Instellingen, Over Mise**.
+- Each top app bar has an overflow menu (⋮) with **Technieken, Opleiding, Instellingen, Over Mise**.
   Techniques are mostly reached through links (§6.6).
 - System back and predictive back work everywhere, and each tab keeps its own back stack.
 - Share targets (§6.9) open the import flow on top of the current stack.
@@ -487,6 +496,32 @@ A cooking journal first, statistics second. Three segments at the top: **Tijdlij
    Vandaag, whose empty-library state repeats the same choice (§6.2).
 5. Notification permission is asked **only** when the seasonal notification is turned on.
 
+### 6.17 Opleiding
+
+The culinary curriculum (`curriculum/`, D7–D10), opened from the overflow menu. All labels are Dutch; the lesson content is
+English and each content screen says so ("Lesinhoud in het Engels").
+
+- **Opleiding** (home): hero, overall progress ("12 van 965 stappen gedaan"), a **Volgende stap** card that opens the first open
+  step in curriculum order, then the five stages by their Dutch names (Fundament, Kerntechnieken, Integratie, Gevorderd,
+  Meesterschap) with their courses: id, title, hours, step progress and the **Concept** label (D10).
+- **Cursus**: stage, hours, purpose, the Concept explanation with the second reader's count ("3 van 12 gelezen"), prerequisites
+  (links), progress, the introduction, then each module with its lessons, exercises (support level and best band) and the knowledge
+  check (item count, safety items, best attempt). A module without items shows the lesson file's note instead.
+  Milestones (`MS-S1`…`MS-S4`) and the capstone (`CAP-5`) have no lessons in the app: they show their rubric (criteria, weights,
+  the food-safety gate and the evidence each row looks at).
+- **Les**: the lesson's blocks (paragraphs, lists, tables that scroll sideways; inline bold, italic and code), its competencies, and
+  **Markeer als gedaan** / **Markeer als niet gedaan**, plus **Volgende les** within the module.
+- **Kennistoets**: one item at a time ("Vraag 3 van 12", "Veiligheid" on safety items). Multiple choice is marked at once, with the
+  right answer and the "why". Scenario, calculation, ordering and image items show **Toon modelantwoord** and the learner marks
+  their own answer Goed or Fout. At the end: Gehaald / Nog niet gehaald, the score, the safety score, the rule ("80 % goed én elke
+  veiligheidsvraag goed"), the items to re-read, **Opnieuw** and **Terug naar de cursus**. Every sitting is saved when it is finished.
+- **Oefening**: the brief and its blocks, competencies, then **Bewijs**: a band (Nog niet · In ontwikkeling · Bekwaam · Uitstekend),
+  notes and an optional photo (camera or gallery, as in §6.12). Logged evidence is listed newest first and can be deleted.
+
+Progress rules (`domain/CurriculumProgress.kt`): a lesson is a step when marked done; an exercise when evidence at Bekwaam or above
+is logged; a knowledge check when one sitting passed. The next step goes stage → course → module, and within a module lessons, then
+exercises, then the check. Prerequisites are shown, never enforced.
+
 ---
 
 ## 7. Data
@@ -497,6 +532,12 @@ A cooking journal first, statistics second. Three segments at the top: **Tijdlij
 (and `units.json`, §11.2) once, on a background dispatcher, with kotlinx.serialization (`ignoreUnknownKeys = false` in tests
 and `true` in release). Files whose `schemaVersion` is unsupported fail loudly in debug builds. Models mirror
 `data/schemas/*.schema.json` exactly. Content is read-only at runtime. Lookups by id are O(1) maps.
+
+The curriculum (§6.17) is exported by `tools/export_curriculum.py --write` into `data/assets/curriculum/`: `index.json` (stages,
+course summaries with modules, lessons, exercises, check counts, rubrics, status and safety-read counts, and competency titles)
+and `courses/<ID>.json` (introduction, modules with lessons, exercises and items, as blocks). Their schemas are
+`curriculum-index.schema.json` and `curriculum-course.schema.json`; `validate_data.py` fails when the assets are stale.
+`CurriculumRepository` keeps the index in memory and the last four course files.
 
 ### 7.2 Local database (Room)
 
@@ -515,6 +556,9 @@ IDs are UUID strings; timestamps are epoch millis (UTC). Lists that are only eve
 | `attempt` | `id`, `sourceType` (RECIPE / QUEST), `recipeId?`, `questId?`, `cookedAt`, `score?` (1–10; the UI writes 2/4/6/8/10, §6.12), `tasteScore?` (1–10, same), `notes?`, `photoPath?`, `techniques` (json snapshot), `cuisines` (json snapshot), `vegIds` (json snapshot, §11.4), `peakVegIds` (json: subset at PEAK on `cookedAt`) |
 | `shopping_item` | `id`, `text`, `quantity?`, `unit?`, `name?`, `recipeId?`, `checked`, `position`, `createdAt` |
 | `claude_usage` | `id`, `at`, `feature` (QUEST / PHOTO_IMPORT / PAGE_IMPORT / ENRICH / KEY_CHECK), `model`, `inputTokens`, `outputTokens`, `cacheReadTokens`, `costMicroUsd` |
+| `curriculum_lesson` (v2) | `lessonId` (PK, curriculum id), `completedAt` |
+| `curriculum_check` (v2) | `id`, `moduleId`, `takenAt`, `total`, `correct`, `safetyTotal`, `safetyCorrect`, `passed`, `wrongItemIds` (json) |
+| `curriculum_evidence` (v2) | `id`, `exerciseId`, `loggedAt`, `band` (NOT_YET / DEVELOPING / COMPETENT / EXCELLENT), `notes?`, `photoPath?` |
 
 - Indexes on all FKs, plus `recipe(inLibrary, updatedAt)`, `attempt(cookedAt)`, `attempt(recipeId)`, `quest(status, createdAt)`,
   `ingredient(name)`.
@@ -522,6 +566,9 @@ IDs are UUID strings; timestamps are epoch millis (UTC). Lists that are only eve
 - Attempts keep **snapshots**, so the journal doesn't change when a recipe is edited later.
 - Deleting a recipe keeps its attempts (`recipeId` set to null) so journal history survives. Deleting a quest deletes its hidden recipe.
 - Schema changes go through numbered Room migrations with a `MigrationTestHelper` test. **Never** use destructive migration.
+  v1 → v2 (`MIGRATION_1_2`) adds the three curriculum tables, with indexes on `curriculum_check(moduleId, takenAt)` and
+  `curriculum_evidence(exerciseId, loggedAt)`. Curriculum rows refer to curriculum ids, which never change, so a content update
+  keeps the progress.
 
 ### 7.3 Settings (DataStore `settings.preferences_pb`)
 
@@ -537,7 +584,8 @@ Day and session state (JSON strings in the same file; never backed up, §13.1):
 
 ### 7.4 Files
 
-- Recipe images: `filesDir/images/{recipeId}.jpg`; attempt photos: `filesDir/journal/{attemptId}.jpg`. Both are downscaled to at most
+- Recipe images: `filesDir/images/{recipeId}.jpg`; attempt photos: `filesDir/journal/{attemptId}.jpg`; curriculum evidence photos:
+  `filesDir/evidence/{evidenceId}.jpg`. All are downscaled to at most
   1600 px on the long edge, JPEG quality 85, EXIF stripped.
 - Import photos sent to Claude are temporary (`cacheDir/import/`) and deleted after a successful import. The user can keep
   the first one as the recipe image.
@@ -825,9 +873,10 @@ Input: all attempts. "Matches discipline D" means at least one technique id in t
 ### 13.1 Export
 
 - `Mise-backup-YYYYMMDD-HHmm.zip` via the system file picker (SAF `CreateDocument`) or the share sheet.
-- Contents: `backup.json` + `images/{recipeId}.jpg` + `journal/{attemptId}.jpg`. `backup.json` holds
+- Contents: `backup.json` + `images/{recipeId}.jpg` + `journal/{attemptId}.jpg` + `evidence/{evidenceId}.jpg`. `backup.json` holds
   `{ format: "mise-backup", schemaVersion: 1, exportedAt, appVersion, recipes[] (the full graph with groups, items, extra fields, tags),
-  quests[], attempts[], shoppingItems[], settings (non-secret subset, without the day and session state of §7.3) }`.
+  quests[], attempts[], shoppingItems[], lessonProgress[], checkAttempts[], evidence[], settings (non-secret subset, without the day
+  and session state of §7.3) }`. The curriculum lists are optional, so backups from before them restore and older apps ignore them.
 - **Never** includes the API key or Keystore material. `claude_usage` is left out.
 - The format is documented in `data/schemas/backup.schema.json` (todo P1), so the legacy converter and the app share one contract.
 
@@ -835,6 +884,7 @@ Input: all attempts. "Matches discipline D" means at least one technique id in t
 
 - Restore: pick a file → validate format and version → show a summary ("42 recepten, 17 quests, 88 pogingen") → choose
   **Samenvoegen** (by id; newer `updatedAt` wins) or **Vervangen** (wipe first, with typed confirmation) → run inside one DB transaction.
+  Curriculum progress merges by id and is only added; Vervangen wipes it too.
 - After a restore, recipes with unparsed ingredients are offered "Ingrediënten verrijken" (§6.15).
 - Automatic backup: the user picks a folder (`OpenDocumentTree`, persisted permission). WorkManager writes daily or weekly
   (only when charging or with battery not low) and keeps the newest 5 files. A failure raises a low-priority notification.
@@ -905,6 +955,8 @@ There is no legacy code in the app. A one-off script converts the old exports in
 - Every user-visible string lives in `res/values/strings.xml` (Dutch is the default and only locale). Lint `HardcodedText`
   and a unit test fail the build on hardcoded UI text. Plurals use `<plurals>`. Number and date formatting uses the `nl-NL` locale.
 - Content prose comes from the assets (already Dutch). `nameEn` and `nutrientsEn` are never displayed.
+- **Exception (D7):** the curriculum's lessons, check items and exercises are shown in English, as exported from `curriculum/`.
+  Everything around them (titles of screens, buttons, labels, bands, messages, stage names) is Dutch and lives in `strings.xml`.
 
 ### 15.5 Robustness
 - Every Claude or network operation is cancellable, shows progress, and returns to a stable state on failure with a retry button.
@@ -920,8 +972,8 @@ There is no legacy code in the app. A one-off script converts the old exports in
 | Data | `python3 tools/validate_data.py` (schemas, cross-references, strings.xml incl. markup and plurals, vegetable colour contrast, seasonality drift) in CI and as a Claude Code hook |
 | Unit (JVM) | Asset deserialisation of every file (`ignoreUnknownKeys = false`); seasonality goldens + presentation order and badges; parser goldens; local ingredient parser (table-driven: fractions, ranges, comma decimals, aliases, notes, pack sizes); scaling + rounding + Dutch formatting; shopping aggregation; duration detection; seasonal matcher; suggestion ranking (fixed dates); quest defaults; journal aggregation; badges; Claude schema builders + response mapping (recorded JSON responses, no live calls); backup round-trip |
 | Tools | `tools/legacy_to_backup.py` tested with synthetic legacy fixtures covering every branch of Appendix A; its output validates against `backup.schema.json` and restores in an instrumented test |
-| Integration | Room DAOs + `MigrationTestHelper`; `SecretStore` on Robolectric/instrumented (encrypt → decrypt, invalidation path) |
-| UI (Compose) | Vandaag with seeded data (Niet vandaag refill, ≤ 30 min chip, Vanavond pin), import from URL (fake fetcher; clean import saves in one tap), edit-in-place save/cancel, quest van vandaag (fake client, cancel while generating), key entry states, cook mode (timer chip intent, resume at step after leaving, exit prompt only after the last step), evaluation score steps |
+| Integration | Room DAOs + `MigrationTestHelper` (1 → 2); curriculum assets parse strictly and match the index; progress rules and the check pass rule; `SecretStore` on Robolectric/instrumented (encrypt → decrypt, invalidation path) |
+| UI (Compose) | Vandaag with seeded data (Niet vandaag refill, ≤ 30 min chip, Vanavond pin), import from URL (fake fetcher; clean import saves in one tap), edit-in-place save/cancel, quest van vandaag (fake client, cancel while generating), key entry states, cook mode (timer chip intent, resume at step after leaving, exit prompt only after the last step), evaluation score steps, Opleiding (menu → next step → lesson done; knowledge check marking) |
 | Manual checklist | Share from Chrome/Instagram, camera import, cook mode in landscape, TalkBack and 200% font scale on Vandaag, Kalender and cook mode, Clock timer from cook mode on 2 phones, restore on a fresh install, legacy restore with real data |
 
 CI must stay green on every push: validate data → `./gradlew lint ktlintCheck testDebugUnitTest :lint-checks:test assembleDebug`.

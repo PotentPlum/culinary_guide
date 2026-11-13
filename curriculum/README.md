@@ -8,9 +8,9 @@ America [S1].
 > **No qualification.** The program gives no diploma, accreditation or professional certification. It is benchmarked
 > against culinary schools, but it is not equivalent to them and does not stand in for their credentials.
 
-The design is **independent of any app**. A later Android app, possibly Mise in this repository, is only one way to
-deliver it. Phases 1–6 design the education; Phase 7 maps it onto an app content model. Until then, nothing here
-changes `spec.md` or `data/`.
+The design is **independent of any app**. Phases 1–6 design the education; Phase 7 maps it onto the Mise app in this
+repository, where it is the **Opleiding** section (`spec.md` §6.17). `tools/export_curriculum.py --write` turns this
+folder into the app's assets in `data/assets/curriculum/`; run it after every lesson or course edit.
 
 ## Phases
 
@@ -25,7 +25,7 @@ silently change an agreed structure: changes are explained and logged in the pha
 | 4 | Full competency framework and assessment design (milestones, capstone rubrics) | [`04-competency-framework.md`](04-competency-framework.md) and [`04-assessment.md`](04-assessment.md) | ✅ Reviewed; answers applied |
 | 5 | Detailed course development (stage by stage) | [`05-course-development.md`](05-course-development.md) and [`05-courses/`](05-courses/) | ✅ Reviewed; answers applied (S1–S5) |
 | 6 | Detailed lesson development (safety review, then course by course) | [`06-lesson-development.md`](06-lesson-development.md), [`06-safety-review.md`](06-safety-review.md) and `06-lessons/` | 🔄 All lesson files written (drafts); safety review open |
-| 7 | App content architecture (entities, IDs, relationships, progress tracking) | — | Pending |
+| 7 | App content architecture (entities, IDs, relationships, progress tracking) | [`07-app-architecture.md`](07-app-architecture.md) | ✅ Built (2026-11-13); courses ship as drafts until Phase 6 closes |
 
 Sources are numbered `[S#]` across all phases and listed in [`sources.md`](sources.md).
 
@@ -67,4 +67,4 @@ Example: *sauté* (FR) / *sauteren* (NL).
 | Course section | defined in Phase 3 | `CUI-3.SEC1` | Optional; groups consecutive modules of a large course into units of progress. |
 
 A retired entity keeps its ID, marked *retired*, so learner progress that refers to it stays valid. A materially changed
-entity keeps its ID and gets a new content version (detailed in Phase 7).
+entity keeps its ID; how the app treats content versions is in [Phase 7 §4](07-app-architecture.md#4-progress-tracking).

@@ -814,3 +814,7 @@ Phase 7 maps the curriculum onto the app's content model. It waits for two thing
   - the app's **score scale** (2/4/6/8/10) differs from the per-criterion rubrics.
 
 Until then, nothing in `curriculum/` changes `spec.md`, `data/` or the app.
+
+**Update (2026-11-13).** The owner decided the three clashes and asked to integrate the curriculum before Phase 6
+closes, with the lesson files shipped as labelled drafts. Phase 7 is in [`07-app-architecture.md`](07-app-architecture.md);
+§12.2 still holds in full.

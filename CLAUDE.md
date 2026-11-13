@@ -14,14 +14,16 @@ web app was removed; its last version is commit `e76778c` (`git show e76778c:web
   `ComposeHardcodedText` (Android's `HardcodedText` only covers XML layouts). P0 is done except the owner/device items;
   P1 features are in; what's left of P1 is in `todo.md` (mostly owner/device checks).
 - `tools/legacy_to_backup.py`: one-off converter of the old web-app exports into a backup zip (spec §13.3, Appendix A).
-- `curriculum/`: phased design of a competency-based culinary education program (`curriculum/README.md`). It is
-  app-independent until its Phase 7 and does not change `spec.md` or `data/`.
+- `curriculum/`: phased design of a competency-based culinary education program (`curriculum/README.md`). Phase 7
+  (`curriculum/07-app-architecture.md`) puts it in the app as **Opleiding** (spec §6.17, D7–D10):
+  `tools/export_curriculum.py --write` exports it to `data/assets/curriculum/`; re-run it after any course or lesson edit.
 
 ## Commands
 ```bash
 python3 tools/validate_data.py                   # validate data/ (also runs automatically after edits under data/)
 python3 tools/validate_data.py --write-fixtures  # regenerate the seasonality and legacy fixtures after intended edits
 python3 -m unittest discover -s tools            # tests for the Python tools (legacy converter, curriculum validator)
+python3 tools/export_curriculum.py --write         # re-export curriculum/ to data/assets/curriculum/ (validate_data fails when stale)
 python3 tools/validate_curriculum.py [--write]    # check curriculum/ (IDs, hours, prerequisites, coverage, practice, competency entries, rubrics, course files, safety review, lesson files); --write regenerates its tables
 ./gradlew lint ktlintCheck testDebugUnitTest :lint-checks:test assembleDebug   # the CI gate (spec §16–17)
 ./gradlew ktlintFormat                           # fix formatting (ktlint_official style)
@@ -41,14 +43,16 @@ gets HTTP 429, and warms the Gradle cache. Nothing environment-specific is commi
 ## Hard rules
 - **Dutch UI only.** Every user-visible string goes in `data/res/values/strings.xml` (wired in as an Android res dir).
   Never hardcode UI text in Kotlin; lint `HardcodedText` and `ComposeHardcodedText` are errors (`@Preview` sample data
-  is exempt). Code, identifiers and comments are in English.
+  is exempt). Code, identifiers and comments are in English. Exception (spec D7): the curriculum's lessons, check items
+  and exercises are shown in English from the assets; every label around them is still Dutch in `strings.xml`.
 - **Content scope:** Dutch locally grown vegetables only (velt.nu harvest windows). No imported year-round produce,
-  fruit, berries or nuts. `nameEn` and `nutrientsEn` are never displayed.
+  fruit, berries or nuts. `nameEn` and `nutrientsEn` are never displayed. Opleiding lesson text is exempt (spec D9).
 - **API key:** the Claude key lives only in the Keystore-encrypted `SecretStore` (spec §9). Never log it, never put it in
   settings, backups, exports or test fixtures, and never commit a real key.
 - **Claude API calls:** structured outputs (`output_config.format`). Never send `temperature`/`top_p`/`top_k`.
   Build enums from the content assets (spec §8).
 - **Quests have no checkpoints or success criteria.** The owner rejected them (spec §0 D5); evaluation is scores + notes + photo.
+  Opleiding has its own assessment (knowledge checks, evidence bands; spec D8) and never touches quests or the journal score.
 - **Room:** never use destructive migrations. Every schema change gets a numbered migration and a migration test.
 - **Data edits:** keep `data/schemas/*` and the Kotlin models in sync, and run the validator.
   The recipe parser must keep passing all cases in `data/fixtures/recipe-ingestion/golden.json`.

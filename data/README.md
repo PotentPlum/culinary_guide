@@ -20,10 +20,11 @@ python3 tools/validate_data.py
 | `assets/disciplines.json` | The 3 skill disciplines (Dagboek bars) with Dutch labels, in display order | APK asset |
 | `assets/units.json` | 28 measurement units: Dutch singular/plural, parser aliases, dimension (MASS / VOLUME / COUNT / OTHER) and factor to g / ml / stuks | APK asset → local ingredient parser, scaling, shopping list (spec §11.2) |
 | `assets/archetypes.json` | 7 Dagboek badges as typed rules (`techniques`, `distinctPeakVegetables`, `peakMonths`) | APK asset → `BadgeEvaluator` (spec §12) |
+| `assets/curriculum/` | The culinary curriculum, **generated** from `curriculum/` by `tools/export_curriculum.py --write`: `index.json` (stages, 50 course summaries, rubrics, competency titles) and `courses/<ID>.json` (45 courses as text blocks with their knowledge-check items). English prose (spec D7); never edit by hand | APK asset → `CurriculumRepository` (spec §6.17, §7.1); `validate_data.py` fails when stale |
 | `res/values/strings.xml` | Dutch UI strings, plurals and string arrays (`months_short` / `months_long` / `months_initial`, `score_steps`) | Android resource dir (`res.srcDir`) |
 | `fixtures/recipe-ingestion/golden.json` | 104 recorded input→output cases for the recipe parser, from the 94 passing TS tests | JVM unit-test resource; the Kotlin port must reproduce all of them |
 | `fixtures/seasonality/status.json` | Expected `peak/shoulder/soon/ending/off` for every vegetable × month (792 cells) | JVM unit-test resource |
-| `fixtures/backup/sample.json` | A small but complete `backup.json` (spec §13.1): recipes with groups, a hidden quest recipe, a quest, attempts, shopping items, settings | Validated against `backup.schema.json`; parsed and restored by `BackupManagerTest` |
+| `fixtures/backup/sample.json` | A small but complete `backup.json` (spec §13.1): recipes with groups, a hidden quest recipe, a quest, attempts, shopping items, curriculum progress, settings | Validated against `backup.schema.json`; parsed and restored by `BackupManagerTest` |
 | `fixtures/legacy/` | Synthetic old web-app exports (`supabase.json`, `local.json`) covering every branch of spec Appendix A, and `expected-backup.json`, what `tools/legacy_to_backup.py` makes of them | Checked by `tools/validate_data.py` (regenerate with `--write-fixtures`); restored by `BackupManagerTest` |
 | `schemas/*.schema.json` | JSON Schemas for every asset and fixture file | Used by `tools/validate_data.py`; Kotlin tests may reuse them |
 | `reference/velt-vegetables.json` | Original scraped velt.nu source data (77 vegetables, Dutch text, harvest months) | **Not shipped.** Third-party text for research and adding vegetables; do not copy its prose into the app |
@@ -71,7 +72,8 @@ android.sourceSets {
 
 - **Dutch locally grown vegetables only.** Seasonality means Dutch field/greenhouse harvest windows (velt.nu),
   not supermarket imports. No imported year-round produce (avocado, citrus, mango), no fruit, berries or nuts.
-- Every user-visible string is Dutch. `nameEn` / `nutrientsEn` are never shown as they are.
+- Every user-visible string is Dutch. `nameEn` / `nutrientsEn` are never shown as they are. The curriculum assets are the one
+  exception: their prose is English, and they are exempt from the vegetables-only rule (spec D7, D9).
 - Every vegetable `color` must reach 4.5:1 with ink (`#1E1A14`) or white, because it is the background for the `VegToken` initials
   and the detail header (the validator checks this). `accent` is decorative only and has no contrast requirement (spec §5).
 - `strings.xml` allows only `<i>` and `<b>` markup, for emphasis inside one string; never split a sentence across keys.

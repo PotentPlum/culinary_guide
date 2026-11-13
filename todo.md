@@ -228,6 +228,20 @@ The web app keeps running from its last Vercel deployment until you turn it off,
 
 ---
 
+## Opleiding — the culinary curriculum (spec §6.17, D7–D10; `curriculum/07-app-architecture.md`)
+
+- [x] Export `curriculum/` to `data/assets/curriculum/` (`tools/export_curriculum.py`), with schemas and a drift check in `validate_data.py`.
+- [x] Kotlin models and `CurriculumRepository`; every course file parses strictly in a unit test.
+- [x] Room v2: `curriculum_lesson`, `curriculum_check`, `curriculum_evidence`, `MIGRATION_1_2` and its migration test.
+- [x] Progress rules (80 % and every safety item; exercise done from Bekwaam; next step in curriculum order), unit-tested.
+- [x] Backup and restore carry lesson progress, check attempts and evidence with photos.
+- [x] Screens: Opleiding, Cursus (rubric for milestones and the capstone), Les, Kennistoets, Oefening with evidence; "Concept" label on drafts.
+- [ ] **[owner]** Phase 6 §12.2: a second reader logs the 278 safety items; fixes; set lesson files to `final`; re-export.
+- [ ] **[owner/device]** Walk through Opleiding on a phone: a lesson with tables, a full knowledge check, evidence with a camera photo, TalkBack.
+- [ ] Later: competency profile from evidence, practice-session logging, milestone evidence, reference images for image items.
+
+---
+
 ## Content (any phase)
 
 - [ ] **Vegetable techniques:** add techniques for the vegetable side of the app, e.g. snel inleggen (quick pickle), knolgewassen roosteren, bladgroenten stoven, groenten grillen, puree en crème, rauwkost snijden (schaven/linten), groenten confijten. Each needs `discipline`, `relatedVegIds` and Dutch body + tips. Check against the existing `groenten` (5) and `bewaren` entries first: `fermenteren`, `inmaken`, `groenten-roasten` and `groenten-smoren` already exist and may only need extending.
