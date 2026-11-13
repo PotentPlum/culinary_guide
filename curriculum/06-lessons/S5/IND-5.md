@@ -1050,7 +1050,7 @@ overcooking, too much acid, or a burnt base (`FLV-3.M6.L1`, `SAU-2.M7.L1`).
 | Split emulsion | A fresh pasteurised yolk or a spoon of water; whisk the broken sauce in slowly | A raw unpasteurised yolk in an uncooked sauce |
 | Overcooked protein | Sliced thin and sauced, or turned into another dish | Served as the planned doneness |
 | Burnt base | Moved at once to a clean pan without scraping; tasted | Stirred in |
-| Too much acid | More of the main ingredient, fat, or a little sweetness to balance | Salt alone |
+| Too much acid | Rounded with fat or a little sweetness, or diluted with more of the main ingredient (`FLV-3.M6.L1`) | Served without tasting again |
 
 *Guests unaware.* The rescue is fast and quiet, and the dish is served without apology when it meets the standard.
 

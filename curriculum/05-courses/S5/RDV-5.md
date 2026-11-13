@@ -272,6 +272,7 @@ plan of `RDV-5.M1.X1`, checked against the checklist.
   depth added by browning, umami and fat.
 - **The written guide:** a short guide to one vegetable group's behaviour (for example the roots or the brassicas):
   structure, methods that suit it, faults and fixes, with the dish as the worked example.
+- **Safety:** dried beans, if the dish uses them, follow the bean row of assessment §9.
 
 **Sessions:**
 1. Version 1 (60 min): from the plan; photographed; scored.
@@ -330,6 +331,8 @@ plan of `RDV-5.M1.X1`, checked against the checklist.
   shifts the others.
 - **Its place in the menu:** a bread for the table or a pastry element in a dish; it carries the point of view (a grain,
   a technique).
+- **Safety:** a pastry element with a cream or custard follows the egg-thickened row of assessment §9 (every part at
+  least 71 °C) and is cooled by the cooling rule.
 
 **Sessions:**
 1. Version 1 (60 min active, longer in total): from the plan; crumb or layers photographed; scored.
@@ -356,7 +359,7 @@ plan of `RDV-5.M1.X1`, checked against the checklist.
   sweetness balanced by acid or bitterness; Dutch dairy, grains, seasonal vegetables (rhubarb, beetroot, carrot,
   pumpkin) and honey rather than imported fruit.
 - **Safety:** egg-thickened components to 71 °C (assessment §9); raw or lightly cooked egg pasteurised, for every guest;
-  cooked creams cooled by the cooling rule.
+  cooked creams cooled by the cooling rule; rhubarb, the stalks only.
 - **Written for others:** the recipe tested by someone else from the text alone, as in `RDV-4.M5`.
 
 **Sessions:**

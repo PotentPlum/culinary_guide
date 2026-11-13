@@ -882,7 +882,9 @@ allergen information.
   - **split emulsion:** a fresh yolk (pasteurised, for a mayonnaise or a warm egg sauce, assessment §9) or a spoon of water, and the
     broken sauce whisked in slowly;
   - **overcooked protein:** sliced thin and sauced, or turned into another dish, never served as the planned doneness;
-  - **burnt base:** moved at once to a clean pan without scraping, and tasted.
+    - **burnt base:** moved at once to a clean pan without scraping, and tasted;
+  - **too much acid:** rounded with fat or a little sweetness, or diluted with more of the main ingredient
+    (`FLV-3.M6.L1`).
 - **Guests unaware:** the rescue fast and quiet, and the dish served without apology when it meets the standard.
 
 **Sessions:**

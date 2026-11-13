@@ -1,12 +1,14 @@
 # Phase 6 — Lesson development
 
-Status: **S5 lessons in progress** (2026-11-13). Phase 5 is complete ([its overview](05-course-development.md)).
+Status: **all lesson files written; safety review open** (2026-11-13). Phase 5 is complete ([its overview](05-course-development.md)).
 The second reader's worksheet is open ([`06-safety-review.md`](06-safety-review.md)). This phase runs in parallel with
 it (S5 review answer 4): lesson files are drafts until the reader's log is in (§3). The pilot (`ORI-1` and `SAF-1`, §6)
 was reviewed on 2026-11-05, and its answers are applied (§2, §5, §6.3). All ten S1 lesson files are written, and their
-review answers are applied (§7). All eleven S2 lesson files are written, and their review answers are applied (§8). All thirteen S3 lesson files are written, and their review answers are applied (§9). All eight S4 lesson files are written, and the recommendations of §10.3 are applied, open to the owner.
+review answers are applied (§7). All eleven S2 lesson files are written, and their review answers are applied (§8). All thirteen S3 lesson files are written, and their review answers are applied (§9). All eight S4 lesson files are written, and the recommendations of §10.3 are applied, open to the owner. All three S5
+lesson files are written, and the recommendations of §11.3 are applied, open to the owner. What still blocks closing
+this phase is in §12.
 
-**Courses developed:** ORI-1, SAF-1, WRK-1, EQP-1, KNF-1, TST-1, HEA-1, EGG-1, VEG-1, STA-1, SCI-2, HEA-2, KNF-2, STK-2, SAU-2, POU-2, MEA-2, FSH-2, LEG-2, BAK-2, BRD-2, SAF-3, FLV-3, BUT-3, SLW-3, FIR-3, GRD-3, PRS-3, VEG-3, PST-3, BRD-3, CUI-3, KMG-3, NUT-3, CLS-4, CUI-4, PRO-4, PST-4, MOD-4, PLT-4, RDV-4, MNU-4
+**Courses developed:** ORI-1, SAF-1, WRK-1, EQP-1, KNF-1, TST-1, HEA-1, EGG-1, VEG-1, STA-1, SCI-2, HEA-2, KNF-2, STK-2, SAU-2, POU-2, MEA-2, FSH-2, LEG-2, BAK-2, BRD-2, SAF-3, FLV-3, BUT-3, SLW-3, FIR-3, GRD-3, PRS-3, VEG-3, PST-3, BRD-3, CUI-3, KMG-3, NUT-3, CLS-4, CUI-4, PRO-4, PST-4, MOD-4, PLT-4, RDV-4, MNU-4, IND-5, RDV-5, REV-5
 
 This phase writes the lessons that the course files of Phase 5 outline. For each course it gives one lesson file with:
 - every lesson, written for the learner: why it matters, what is needed, the explanation, the practice sessions step
@@ -203,6 +205,12 @@ Changes to an agreed structure are logged here.
 | `CUI-4.M3.L3`, Safety | "the §9 row named in the entry and logged" | Also "if no row fits, another technique is chosen, with no safety figures from memory" | As the lesson does; S4 answer 2, applied as recommended and open to the owner |
 | `PLT-4.M1.L1`, hot food first | Warm plates, plating fast | Also "food that waits held at 57 °C or above" (the holding row of §9) | As the lesson does; S4 answer 2, applied as recommended and open to the owner |
 | `06-lessons/S4/CLS-4.md`, `CLS-4.M3.L3` Safety | "the yolk is pasteurised" | Dropped | A liaison brought to 71 °C follows the egg-thickened row, as in `STK-2` and `SLW-3`; S4 answer 3, applied as recommended and open to the owner |
+| `RDV-5.M2.L3`, Concepts | No safety line | "dried beans, if the dish uses them, follow the bean row of assessment §9" | As the lesson does; S5 answer 2, applied as recommended and open to the owner |
+| `RDV-5.M2.L5`, Concepts | No safety line | "a pastry element with a cream or custard follows the egg-thickened row (every part at least 71 °C) and is cooled by the cooling rule" | As the lesson does; S5 answer 2, applied as recommended and open to the owner |
+| `RDV-5.M2.L6`, Safety | Rhubarb not limited | "rhubarb, the stalks only" | As `CUI-3.M9.L4` (S3 answer 6); S5 answer 2, applied as recommended and open to the owner |
+| `REV-5.M1.L4`, *open* | An open gap goes into the capstone plan | Also "a safety gap is never left open, because the capstone's food-safety row is a gate (`CAP-5.R3`)" | As the lesson does; S5 answer 2, applied as recommended and open to the owner |
+| `REV-5`, Introduction | "under review by a second reader before Phase 6 (overview §10.3)" | "under review by a second reader ([`06-safety-review.md`](06-safety-review.md)); until that review is complete" | Phase 6 runs alongside the review (S5 review answer 4); S5 answer 3, applied as recommended and open to the owner |
+| `IND-5.M6.L1`, the rescues | Too much acid named as a fault, with no rescue | "rounded with fat or a little sweetness, or diluted with more of the main ingredient (`FLV-3.M6.L1`)" | The rescue `FLV-3.M6.L1` already teaches, as the lesson does; S5 answer 3, applied as recommended and open to the owner |
 
 ## 6. End of the pilot
 
@@ -676,3 +684,77 @@ the owner overruling it.
 ### 10.4 Next
 
 The answers are applied (§5). S5 is written in the order `IND-5`, `RDV-5`, `REV-5`, one commit per course (§11).
+
+## 11. End of S5
+
+### 11.1 What was delivered
+
+All three S5 courses have a lesson file, every one a draft until the second reader's log is in (§3). Words are counted
+without the generated blocks.
+
+| Course | Lessons | Exercises | Words | Words per lesson (range, average) | Words per exercise (range, average) |
+|---|---|---|---|---|---|
+| [`IND-5`](06-lessons/S5/IND-5.md) | 15 | 7 | about 9,250 | 380–490, about 430 | 230–370, about 310 |
+| [`RDV-5`](06-lessons/S5/RDV-5.md) | 9 | 3 | about 5,300 | 380–460, about 400 | 330–380, about 350 |
+| [`REV-5`](06-lessons/S5/REV-5.md) | 4 | 1 | about 2,750 | 430–480, about 440 | about 350 |
+| **S5** | **28** | **11** | **about 17,300** | about 420 | about 320 |
+
+Every lesson and exercise is within the ranges (380–620 and 230–430 words). Every course file of Phase 5 now has a
+lesson file: 45 files, about 359,000 words for S1 to S5.
+
+### 11.2 Decisions
+
+1. **The format and the length are kept.** The S5 lessons run shorter than S4's, because S5 teaches little new: most
+   exercises are briefs, and the lessons point back to the method of an earlier course.
+2. **Brief support is kept strictly.** No S5 exercise except `RDV-5.M1.X1` (framework support) gives a framework or a
+   recipe; the template the brief needs is in **You need** or in the lesson.
+3. **Worked examples are added where a course file gives a method in one line:**
+   - `IND-5`: an inference table for a menu line, a classical text filled in (a fish *bonne femme*), a 30-minute
+     timeline, a vegan soup adaptation, a rescue table, a doneness-log line;
+   - `RDV-5`: a portfolio-plan line, a test-log line, round tables for the soup, the protein and the bread, a celeriac
+     main, a rhubarb dessert;
+   - `REV-5`: the gap catalogue as one table, a per-gap plan, a dated plan change, a decision table with an open gap.
+
+   Each is layout or an example of the course file's own method, not a new fact.
+4. **Bands follow the rubric's names** (*Not yet*, *Developing*, *Competent*, *Excellent*). A draft used another word in
+   two example rows; it was corrected before the commit.
+5. **No unsourced claims.** While writing, "salt alone" as the wrong fix for too much acid was taken out (`IND-5`); the
+   lesson uses the fixes `FLV-3.M6.L1` teaches. A worked example's doneness reading uses the course file's own 69 °C.
+
+### 11.3 Questions for the review (answers, 2026-11-13: as recommended)
+
+The owner asked to continue up to Phase 7, so each recommendation below is applied and logged in §5, and stays open to
+the owner overruling it.
+
+1. **The S5 lessons.** Are they right for a home learner near the end of the program? I recommend reviewing `IND-5`
+   closely (live fire for guests, a guest's allergy, rescues under pressure, doneness by the senses) and sampling
+   `RDV-5` and `REV-5`.
+   **Answer:** as recommended; the files stay drafts until the reader's log is in.
+2. **Safety lines the course files don't state.** I recommend moving each into its course file as a logged edit (§5):
+   - **`RDV-5.M2.L3`:** dried beans, if used, follow the bean row;
+   - **`RDV-5.M2.L5`:** a pastry element with a cream or custard to 71 °C, cooled by the cooling rule;
+   - **`RDV-5.M2.L6`:** rhubarb, the stalks only, as `CUI-3`;
+   - **`REV-5.M1.L4`:** a safety gap is never left open, because the capstone's food-safety row is a gate
+     (`CAP-5.R3`).
+
+   **Answer:** as recommended, logged in §5.
+3. **Course-file lines the lessons outgrew.** I recommend two logged edits (§5):
+   - **`REV-5`, Introduction:** "under review by a second reader before Phase 6" is out of date, because Phase 6 runs
+     alongside the review; it now points to the worksheet;
+   - **`IND-5.M6.L1`:** too much acid is named as a fault with no rescue; it now names the rescue of `FLV-3.M6.L1`.
+
+   **Answer:** as recommended, logged in §5.
+4. **Quantities and examples chosen in the lessons** (the worked examples of §11.2): none is a safety figure, and each
+   course file hands them to Phase 6. I recommend leaving them in the lessons.
+   **Answer:** as recommended.
+5. **Materials still to make:** the reference images for the AI review of S5 (the 30-minute dinner, the live-fire meal,
+   the portfolio's dishes) and a blank tasting-day card. I recommend making them while the dishes are tested, as for
+   S4.
+   **Answer:** as recommended; they still need real cooking.
+6. **The second reader.** The worksheet is still at 0 of 278 items, so all 45 files stay drafts. I recommend reading in
+   stage order, S1 to S5 (the 10 S5 items last).
+   **Answer:** as recommended; who reads is still open.
+
+### 11.4 Next
+
+The answers are applied (§5). Writing is finished. What still blocks closing this phase is in §12.

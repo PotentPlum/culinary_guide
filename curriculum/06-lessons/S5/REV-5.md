@@ -280,7 +280,7 @@ competency holds outside practice, which levels 4 and 5 ask for.
 | An open gap hidden | Fear of a weak record | Plan for it: a fallback and a test cook |
 
 **Safety:** a meal for others follows assessment §9 for every dish, with allergens asked in advance (`NUT-3`); a safety
-gap is never left open into the capstone.
+gap is never left open into the capstone, whose food-safety row is a gate (`CAP-5.R3`).
 
 **Record:** the three sessions; the decision table; the agreement log count; the capstone plan entries for open gaps.
 

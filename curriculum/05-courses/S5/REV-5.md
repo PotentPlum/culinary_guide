@@ -37,7 +37,8 @@ outline moves.
   vegetable-led course) is always a candidate.
 - **Revision material:** the knowledge checks of S1–S4 (about 1,360 items) are the item bank for revision. The learner
   retakes the checks of the modules that taught each gap competency. The safety items are under review by a second
-  reader before Phase 6 (overview §10.3); until that review, a safety item that disagrees with assessment §9 follows §9.
+  reader ([`06-safety-review.md`](../../06-safety-review.md)); until that review is complete, a safety item that
+  disagrees with assessment §9 follows §9.
 
 **Pacing.** Three blocks of three sessions, each block spread over about three weeks, so the course takes about ten
 weeks of calendar time at about 1.5 hours a week, alongside `IND-5` and `RDV-5`.
@@ -224,7 +225,7 @@ At 5 / 6.5 / 8 hours a week the course takes about **3.0 / 2.3 / 1.9 weeks** of 
 - **[J] Closed or not:**
   - *closed:* the success row met with new evidence, and the outside band agrees within one band;
   - *open:* the row not met, so the gap goes into the capstone plan as a known risk, with a fallback dish and a test cook
-    (`CAP-5.M1.L5`).
+    (`CAP-5.M1.L5`); a safety gap is never left open, because the capstone's food-safety row is a gate (`CAP-5.R3`).
 - **The written decision:** for each gap, the evidence before and after, the decision, and why.
 
 **Sessions:**
