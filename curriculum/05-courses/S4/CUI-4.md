@@ -720,7 +720,8 @@ tradition, with a written rationale. The extensions:
 **Concepts:**
 - **The second technique or preparation family** of the third tradition, from the learner's entry, practised as in
   `CUI-4.M1.L3`.
-- **Safety:** the §9 row named in the entry and logged.
+- **Safety:** the §9 row named in the entry and logged; if no row fits, another technique is chosen, with no safety
+  figures from memory.
 - **Practising twice,** the second time a predicted new combination.
 
 **Sessions:**

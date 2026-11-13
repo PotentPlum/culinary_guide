@@ -92,7 +92,7 @@ At 5 / 6.5 / 8 hours a week the course takes about **2.8 / 2.2 / 1.8 weeks** of 
   - **flow:** the components placed so the guest can eat them together, in the order intended.
 - **The sketch:** a top-down drawing of the plate before plating: where each item goes, how large, the empty space.
 - **Hot food first:** warm plates (about 60 °C, from a low oven or hot water), plating fast, the plate leaving within a
-  minute; a beautiful cold plate of hot food is a failure.
+  minute, and food that waits held at 57 °C or above (assessment §9); a beautiful cold plate of hot food is a failure.
 
 **Sessions:**
 1. One dish three ways (60 min): a household main course plated three ways from three sketches (centred, off-centre,

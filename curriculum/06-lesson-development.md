@@ -1,12 +1,12 @@
 # Phase 6 — Lesson development
 
-Status: **S4 lessons in progress** (2026-11-13). Phase 5 is complete ([its overview](05-course-development.md)).
+Status: **S5 lessons in progress** (2026-11-13). Phase 5 is complete ([its overview](05-course-development.md)).
 The second reader's worksheet is open ([`06-safety-review.md`](06-safety-review.md)). This phase runs in parallel with
 it (S5 review answer 4): lesson files are drafts until the reader's log is in (§3). The pilot (`ORI-1` and `SAF-1`, §6)
 was reviewed on 2026-11-05, and its answers are applied (§2, §5, §6.3). All ten S1 lesson files are written, and their
-review answers are applied (§7). All eleven S2 lesson files are written, and their review answers are applied (§8). All thirteen S3 lesson files are written, and their review answers are applied (§9).
+review answers are applied (§7). All eleven S2 lesson files are written, and their review answers are applied (§8). All thirteen S3 lesson files are written, and their review answers are applied (§9). All eight S4 lesson files are written, and the recommendations of §10.3 are applied, open to the owner.
 
-**Courses developed:** ORI-1, SAF-1, WRK-1, EQP-1, KNF-1, TST-1, HEA-1, EGG-1, VEG-1, STA-1, SCI-2, HEA-2, KNF-2, STK-2, SAU-2, POU-2, MEA-2, FSH-2, LEG-2, BAK-2, BRD-2, SAF-3, FLV-3, BUT-3, SLW-3, FIR-3, GRD-3, PRS-3, VEG-3, PST-3, BRD-3, CUI-3, KMG-3, NUT-3
+**Courses developed:** ORI-1, SAF-1, WRK-1, EQP-1, KNF-1, TST-1, HEA-1, EGG-1, VEG-1, STA-1, SCI-2, HEA-2, KNF-2, STK-2, SAU-2, POU-2, MEA-2, FSH-2, LEG-2, BAK-2, BRD-2, SAF-3, FLV-3, BUT-3, SLW-3, FIR-3, GRD-3, PRS-3, VEG-3, PST-3, BRD-3, CUI-3, KMG-3, NUT-3, CLS-4, CUI-4, PRO-4, PST-4, MOD-4, PLT-4, RDV-4, MNU-4
 
 This phase writes the lessons that the course files of Phase 5 outline. For each course it gives one lesson file with:
 - every lesson, written for the learner: why it matters, what is needed, the explanation, the practice sessions step
@@ -199,6 +199,10 @@ Changes to an agreed structure are logged here.
 | `KMG-3.M1.L1`, the balance checklist of `CR-MENU` | "fish twice" | "fish at least once a week [S48]" | The *Schijf van Vijf* [S48]; S3 review answer 6 |
 | `KMG-3.M5.L1`, the house recipe | No allergen line | "the allergens it contains (the 14 groups [S23])" | As the lesson does; S3 review answer 6 |
 | `CUI-3.M9.L4`, the *agua fresca* | "Dutch rhubarb" | "Dutch rhubarb, the stalks only" | As the lesson does; S3 review answer 6 |
+| `CLS-4.M3.L3`, the liaison | "heated until it thickens, below the boil" | Also "reads at least 71 °C on the probe" (the egg-thickened row of §9) | As `STK-2` and `SLW-3`; S4 answer 2, applied as recommended and open to the owner |
+| `CUI-4.M3.L3`, Safety | "the §9 row named in the entry and logged" | Also "if no row fits, another technique is chosen, with no safety figures from memory" | As the lesson does; S4 answer 2, applied as recommended and open to the owner |
+| `PLT-4.M1.L1`, hot food first | Warm plates, plating fast | Also "food that waits held at 57 °C or above" (the holding row of §9) | As the lesson does; S4 answer 2, applied as recommended and open to the owner |
+| `06-lessons/S4/CLS-4.md`, `CLS-4.M3.L3` Safety | "the yolk is pasteurised" | Dropped | A liaison brought to 71 °C follows the egg-thickened row, as in `STK-2` and `SLW-3`; S4 answer 3, applied as recommended and open to the owner |
 
 ## 6. End of the pilot
 
@@ -573,3 +577,102 @@ words in 34 lesson files.
 ### 9.4 Next
 
 The answers are applied (§5). S4 is written in the order of the course table, one commit per course (§10).
+
+## 10. End of S4
+
+### 10.1 What was delivered
+
+All eight S4 courses have a lesson file, every one a draft until the second reader's log is in (§3). Words are counted
+without the generated blocks.
+
+| Course | Lessons | Exercises | Words | Words per lesson (range, average) | Words per exercise (range, average) |
+|---|---|---|---|---|---|
+| [`CLS-4`](06-lessons/S4/CLS-4.md) | 13 | 8 | about 10,400 | 470–620, about 530 | 270–430, about 370 |
+| [`CUI-4`](06-lessons/S4/CUI-4.md) | 12 | 6 | about 7,900 | 390–580, about 460 | 240–380, about 290 |
+| [`PRO-4`](06-lessons/S4/PRO-4.md) | 11 | 7 | about 8,900 | 450–620, about 520 | 240–430, about 340 |
+| [`PST-4`](06-lessons/S4/PST-4.md) | 11 | 5 | about 7,700 | 410–620, about 520 | 250–380, about 300 |
+| [`MOD-4`](06-lessons/S4/MOD-4.md) | 7 | 5 | about 5,400 | 400–570, about 480 | 240–350, about 300 |
+| [`PLT-4`](06-lessons/S4/PLT-4.md) | 6 | 4 | about 4,100 | 390–490, about 430 | 250–320, about 290 |
+| [`RDV-4`](06-lessons/S4/RDV-4.md) | 10 | 5 | about 5,900 | 380–530, about 420 | 240–300, about 260 |
+| [`MNU-4`](06-lessons/S4/MNU-4.md) | 14 | 7 | about 8,500 | 380–480, about 410 | 230–430, about 300 |
+| **S4** | **84** | **47** | **about 58,800** | about 470 | about 310 |
+
+Every lesson and exercise is within the ranges (380–620 and 230–430 words). S1 to S4 together come to about 342,000
+words in 42 lesson files.
+
+### 10.2 Decisions
+
+1. **The format and the length are kept,** as in S1 to S3. Every file passes the validator's checks.
+2. **No course file was edited while S4 was written.** Where a lesson needed a safety line the course file lacks, the
+   lesson took it from an assessment §9 row and the difference is a question in §10.3.
+3. **Worked examples are added where a course file states a method in one line:** the sorbet sugar by °Brix and the
+   ice-cream balance sheet (`PST-4`), an agar dose and a xanthan step table (`MOD-4`), a recipe turned into a ratio and
+   a test plan with coded samples (`RDV-4`), an order quantity from a yield, an equipment grid and a guest card
+   (`MNU-4`). Each is arithmetic or layout, not a new fact.
+4. **Oven settings and frying temperatures the course files lack are left out,** as agreed at the S2 review (§8.3): the
+   regional deep-fries of `CUI-4` point to `HEA-2.M4`, and the probe or the course file's core figure judges the result.
+5. **Alcohol follows assessment §9 throughout `MNU-4`:** a non-alcoholic pairing for every course, no alcohol under 18
+   or in pregnancy, and the retained-alcohol figures for any dish cooked with it. The alcohol-free route is complete on
+   its own.
+6. **No unsourced claims.** While writing, these were taken out or reworded: "a braise improves overnight" and two
+   regional claims (`CUI-4`); a rule on cracked eggs and a same-day limit for foams (`MOD-4`); "discard if missed" for a
+   cooling control point, replaced by "log it and act at once" (`MNU-4`); a claim that kombucha carries traces of
+   alcohol (`MNU-4`).
+
+### 10.3 Questions for the review (answers, 2026-11-13: as recommended)
+
+The owner asked to continue up to Phase 7, so each recommendation below is applied and logged in §5, and stays open to
+the owner overruling it.
+
+1. **The S4 lessons.** Are they right for a home learner? I recommend reviewing three files closely and sampling the
+   rest: `PRO-4` (game, offal, low-temperature poultry, raw and cured fish), `PST-4` (eggs and hot sugar) and `MNU-4`
+   (alcohol, allergens and a dinner for guests).
+   **Answer:** as recommended; the files stay drafts until the reader's log is in.
+2. **Safety readings the course files don't state.** I recommend moving each into its course file as a logged edit
+   (§5):
+   - **`CLS-4.M3.L3`:** the *allemande* liaison brought to at least 71 °C on the probe without boiling (the
+     egg-thickened row), as `STK-2` and `SLW-3` were;
+   - **`CUI-4.M3.L3`:** "if no row fits, choose another technique": no safety figures from memory;
+   - **`PLT-4.M1.L1`:** food that waits during plating held at 57 °C or above (the holding row).
+
+   **Answer:** as recommended, logged in §5.
+3. **A line in a lesson that goes beyond §9.** The `CLS-4` lesson asked for a pasteurised yolk in a liaison that is then
+   brought to 71 °C. §9's egg-thickened row already covers it, and `STK-2` and `SLW-3` don't ask for one. I recommend
+   dropping it.
+   **Answer:** as recommended, logged in §5.
+4. **Reheating to 74 °C in `PRO-4`.** The game braise is reheated "to 74 °C throughout", as its course file says, where
+   the S3 review dropped "(74 °C)" from a pie (`PST-3`). The braise is reheated for a guest dinner and may be held hot,
+   so §9's row for reheating for hot holding applies; the pie was served at once. I recommend no change.
+   **Answer:** as recommended.
+5. **Quantities chosen in the lessons.** I recommend leaving these in the lessons, since each course file hands them to
+   Phase 6, and none is a safety figure:
+   - the `CLS-4` stock, roux, reduction, glaze and consommé quantities;
+   - the `PRO-4` duck, boar braise, salt crust and sweetbread quantities;
+   - the `PST-4` meringue, ice-cream base, sugar-stage, caramel and *entremets* quantities;
+   - the `MOD-4` gel, foam, xanthan and tuile doses;
+   - the `RDV-4` scaling and test examples;
+   - the `MNU-4` example menu, order quantity and shrub.
+
+   **Answer:** as recommended.
+6. **Smaller design questions,** each with no change recommended:
+   - **`PST-4.M4.L2`:** the course file names the mirror glaze's ingredients and pouring temperature, not a formula. The
+     exercise is brief support, so the learner uses a published recipe.
+   - **`MOD-4.M2`:** soft eggs below 71 °C are a risk-group item. The §9 risk-group row decides per guest, and the
+     lesson says so; a default to pasteurised eggs for a mixed table is not needed.
+   - **`RDV-4.M3.L1`:** the 14 allergen groups are named, not listed; they are listed in `NUT-3`.
+   - **`MNU-4.M3.X1`:** the four earlier productions for `TS-MEP` level 5 stay examples, not a fixed list.
+
+   **Answer:** as recommended.
+7. **Materials still to make:** the reference images for the AI review of every S4 course (slice, plate and
+   cross-section photos above all). I recommend making them while the dishes are tested, before Phase 7.
+   **Answer:** as recommended; they still need real cooking.
+8. **The second reader.** The worksheet is still at 0 of 278 items, so all 42 files stay drafts. I recommend reading in
+   stage order: S1, S2, S3, then the 51 S4 items.
+   **Answer:** as recommended; who reads is still open.
+9. **S5 next.** I recommend writing S5 in the order `IND-5`, `RDV-5`, `REV-5`, one commit per course, and recording the
+   end of S5 the same way (§11).
+   **Answer:** as recommended.
+
+### 10.4 Next
+
+The answers are applied (§5). S5 is written in the order `IND-5`, `RDV-5`, `REV-5`, one commit per course (§11).

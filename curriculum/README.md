@@ -24,7 +24,7 @@ silently change an agreed structure: changes are explained and logged in the pha
 | 3 | Curriculum validation and optimization (benchmarks, realistic hours, barbecue added) | [`03-validation.md`](03-validation.md) | ✅ Reviewed; answers applied |
 | 4 | Full competency framework and assessment design (milestones, capstone rubrics) | [`04-competency-framework.md`](04-competency-framework.md) and [`04-assessment.md`](04-assessment.md) | ✅ Reviewed; answers applied |
 | 5 | Detailed course development (stage by stage) | [`05-course-development.md`](05-course-development.md) and [`05-courses/`](05-courses/) | ✅ Reviewed; answers applied (S1–S5) |
-| 6 | Detailed lesson development (safety review, then course by course) | [`06-lesson-development.md`](06-lesson-development.md), [`06-safety-review.md`](06-safety-review.md) and `06-lessons/` | 🔄 S1–S3 lessons written, S4 in progress; safety review open |
+| 6 | Detailed lesson development (safety review, then course by course) | [`06-lesson-development.md`](06-lesson-development.md), [`06-safety-review.md`](06-safety-review.md) and `06-lessons/` | 🔄 S1–S4 lessons written, S5 in progress; safety review open |
 | 7 | App content architecture (entities, IDs, relationships, progress tracking) | — | Pending |
 
 Sources are numbered `[S#]` across all phases and listed in [`sources.md`](sources.md).

@@ -607,7 +607,7 @@ cream.
 | A floury taste | Roux under-cooked | Simmer longer, skimming |
 
 **Safety:** the liaison is brought back to at least 71 °C on the probe without boiling (the egg-thickened row of
-assessment §9), as in `STK-2.M4.L2` and `SLW-3.M2.L2`; the yolk is pasteurised. Chicken to 75 °C; fish to 63 °C for
+assessment §9), as in `STK-2.M4.L2` and `SLW-3.M2.L2`. Chicken to 75 °C; fish to 63 °C for
 15 seconds.
 
 **Record:** the three sauces with photos; the liaison's probe reading; which finish you would choose for which dish,

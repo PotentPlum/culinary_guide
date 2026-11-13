@@ -476,7 +476,8 @@ result of `CLS-4.M2.X2`.
   - cream for body and richness, when the dish is lean (chicken, poached fish);
   - butter for gloss and flavour, at the last moment;
   - a liaison (yolk and cream) for a silky sauce that must not boil afterwards: tempered with some of the hot sauce,
-    then stirred back in and heated until it thickens, below the boil.
+    then stirred back in and heated until it thickens and reads at least 71 °C on the probe, below the boil (the
+    egg-thickened row of assessment §9).
 - **Seasoning:** salt, white pepper, a few drops of lemon to lift the cream.
 
 **Sessions:**
