@@ -60,7 +60,7 @@ class SeasonScreensTest {
     fun `technieken opens from the menu and links to a technique`() {
         compose.onNodeWithContentDescription("Meer opties").performClick()
         compose.onNodeWithText("Technieken").performClick()
-        compose.waitUntil { compose.onAllNodesWithText("Snijdtechnieken").fetchSemanticsNodes().isNotEmpty() }
+        compose.waitUntil { compose.onAllNodesWithText("Snijtechnieken").fetchSemanticsNodes().isNotEmpty() }
         compose.onNodeWithContentDescription("Technieken zoeken").performTextInput("julienne")
         compose.waitUntil { compose.onAllNodesWithText("Julienne").fetchSemanticsNodes().isNotEmpty() }
         compose.onAllNodesWithText("Julienne").onFirst().performClick()

@@ -59,8 +59,8 @@ enum class Family(
     @SerialName("Stengel")
     STENGEL("Stengel"),
 
-    @SerialName("Pompoen")
-    POMPOEN("Pompoen"),
+    @SerialName("Pompoenachtige")
+    POMPOEN("Pompoenachtige"),
 
     @SerialName("Knolgewas")
     KNOLGEWAS("Knolgewas"),

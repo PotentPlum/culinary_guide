@@ -11,6 +11,7 @@ import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Favorite
 import androidx.compose.material.icons.outlined.Restaurant
@@ -22,6 +23,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.pluralStringResource
@@ -36,10 +38,9 @@ import nl.potentplum.mise.core.designsystem.hexColor
 import java.io.File
 
 /**
- * A library card (spec §6.7): image or a cuisine-coloured placeholder, title, source, total time, cooked count and the
- * vegetables in it that are in season now.
+ * A library card (spec §6.7): the image on top, or without one a small cuisine-coloured swatch beside the text; then
+ * title, source, total time, cooked count and the vegetables in it that are in season now.
  */
-@OptIn(ExperimentalLayoutApi::class)
 @Composable
 fun RecipeCard(
     title: String,
@@ -61,35 +62,67 @@ fun RecipeCard(
         border = BorderStroke(1.dp, MaterialTheme.colorScheme.outlineVariant),
         elevation = CardDefaults.cardElevation(defaultElevation = 0.dp),
     ) {
-        RecipeImage(imagePath, placeholderColor, Modifier.fillMaxWidth().height(140.dp))
-        Column(Modifier.padding(12.dp), verticalArrangement = Arrangement.spacedBy(6.dp)) {
-            Row(verticalAlignment = Alignment.Top) {
+        if (imagePath != null) {
+            RecipeImage(imagePath, null, Modifier.fillMaxWidth().height(140.dp))
+            CardDetails(title, source, totalMinutes, cookedCount, isFavorite, inSeason, Modifier.padding(12.dp))
+        } else {
+            // Most recipes from cookbooks or typed in have no photo: a small swatch keeps the library dense.
+            Row(Modifier.padding(12.dp), horizontalArrangement = Arrangement.spacedBy(12.dp)) {
+                RecipeImage(null, placeholderColor, Modifier.size(64.dp).clip(MaterialTheme.shapes.small))
+                CardDetails(title, source, totalMinutes, cookedCount, isFavorite, inSeason, Modifier.weight(1f))
+            }
+        }
+    }
+}
+
+@OptIn(ExperimentalLayoutApi::class)
+@Composable
+private fun CardDetails(
+    title: String,
+    source: String,
+    totalMinutes: Int?,
+    cookedCount: Int,
+    isFavorite: Boolean,
+    inSeason: List<VegTokenData>,
+    modifier: Modifier = Modifier,
+) {
+    Column(modifier, verticalArrangement = Arrangement.spacedBy(6.dp)) {
+        Row(verticalAlignment = Alignment.Top) {
+            Text(
+                title,
+                style = MaterialTheme.typography.titleMedium,
+                maxLines = 2,
+                overflow = TextOverflow.Ellipsis,
+                modifier = Modifier.weight(1f),
+            )
+            if (isFavorite) Icon(Icons.Filled.Favorite, contentDescription = null, tint = MaterialTheme.colorScheme.tertiary)
+        }
+        FlowRow(
+            horizontalArrangement = Arrangement.spacedBy(12.dp),
+            verticalArrangement = Arrangement.spacedBy(4.dp),
+            itemVerticalAlignment = Alignment.CenterVertically,
+        ) {
+            if (source.isNotEmpty()) {
                 Text(
-                    title,
-                    style = MaterialTheme.typography.titleMedium,
-                    maxLines = 2,
+                    source,
+                    style = MaterialTheme.typography.bodySmall,
+                    color = MiseTheme.colors.inkSoft,
+                    maxLines = 1,
                     overflow = TextOverflow.Ellipsis,
-                    modifier = Modifier.weight(1f),
                 )
-                if (isFavorite) Icon(Icons.Filled.Favorite, contentDescription = null, tint = MaterialTheme.colorScheme.tertiary)
             }
-            Row(horizontalArrangement = Arrangement.spacedBy(12.dp), verticalAlignment = Alignment.CenterVertically) {
-                if (source.isNotEmpty()) {
-                    Text(source, style = MaterialTheme.typography.bodySmall, color = MiseTheme.colors.inkSoft, maxLines = 1)
-                }
-                TotalTime(totalMinutes)
-                if (cookedCount > 0) {
-                    Text(
-                        pluralStringResource(R.plurals.recipes_cooked_count, cookedCount, cookedCount),
-                        style = MaterialTheme.typography.labelMedium,
-                        color = MaterialTheme.colorScheme.primary,
-                    )
-                }
+            TotalTime(totalMinutes)
+            if (cookedCount > 0) {
+                Text(
+                    pluralStringResource(R.plurals.recipes_cooked_count, cookedCount, cookedCount),
+                    style = MaterialTheme.typography.labelMedium,
+                    color = MaterialTheme.colorScheme.primary,
+                )
             }
-            if (inSeason.isNotEmpty()) {
-                FlowRow(horizontalArrangement = Arrangement.spacedBy(10.dp), verticalArrangement = Arrangement.spacedBy(4.dp)) {
-                    inSeason.take(4).forEach { VegToken(it.name, it.color, size = 20.dp, nameStyle = MaterialTheme.typography.labelMedium) }
-                }
+        }
+        if (inSeason.isNotEmpty()) {
+            FlowRow(horizontalArrangement = Arrangement.spacedBy(10.dp), verticalArrangement = Arrangement.spacedBy(4.dp)) {
+                inSeason.take(4).forEach { VegToken(it.name, it.color, size = 20.dp, nameStyle = MaterialTheme.typography.labelMedium) }
             }
         }
     }

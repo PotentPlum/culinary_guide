@@ -3,15 +3,15 @@
   "disciplines": [
     {
       "id": "mechanical",
-      "nl": "Mechanisch Meesterschap"
+      "nl": "Snijden"
     },
     {
       "id": "thermal",
-      "nl": "Thermische Controle"
+      "nl": "Garen"
     },
     {
       "id": "flavor",
-      "nl": "Smaakcompositie"
+      "nl": "Smaak"
     }
   ]
 }

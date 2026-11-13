@@ -1,6 +1,7 @@
 package nl.potentplum.mise.feature.curriculum
 
 import androidx.compose.runtime.remember
+import androidx.compose.ui.test.assertCountEquals
 import androidx.compose.ui.test.junit4.createAndroidComposeRule
 import androidx.compose.ui.test.onAllNodesWithContentDescription
 import androidx.compose.ui.test.onAllNodesWithText
@@ -20,6 +21,7 @@ import nl.potentplum.mise.MiseAppShell
 import nl.potentplum.mise.core.designsystem.MiseTheme
 import nl.potentplum.mise.core.navigation.CheckRoute
 import nl.potentplum.mise.data.db.dao.CurriculumDao
+import nl.potentplum.mise.testing.reveal
 import org.junit.Assert.assertEquals
 import org.junit.Before
 import org.junit.Rule
@@ -73,6 +75,21 @@ class CurriculumScreensTest {
         compose.onNodeWithText("Markeer als gedaan").performScrollTo().performClick()
         waitForText("Markeer als niet gedaan")
         assertEquals(listOf("ORI-1.M1.L1"), runBlocking { dao.lessons() }.map { it.lessonId })
+    }
+
+    @Test
+    fun `only the stage with the next step starts open, and tapping another stage shows its courses`() {
+        compose.onNodeWithContentDescription("Meer opties").performClick()
+        compose.onNodeWithText("Opleiding").performClick()
+        waitForLabel("Volgende stap")
+        compose.reveal("Orientation and baseline")
+        compose.reveal("Kerntechnieken")
+        compose.onAllNodesWithText("Food science II").assertCountEquals(0)
+
+        compose.onNodeWithText("Kerntechnieken").performClick()
+        compose.reveal("Food science II")
+        compose.onNodeWithText("Kerntechnieken").performScrollTo().performClick()
+        compose.waitUntil(5_000) { compose.onAllNodesWithText("Food science II").fetchSemanticsNodes().isEmpty() }
     }
 
     @Test

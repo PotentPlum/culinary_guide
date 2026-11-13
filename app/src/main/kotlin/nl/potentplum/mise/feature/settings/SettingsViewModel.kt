@@ -29,7 +29,7 @@ data class SettingsUiState(
     val settings: Settings = Settings(),
     val usage: UsageTotals = UsageTotals(0, 0, 0),
     val testingKey: Boolean = false,
-    /** Set while the "Ingrediënten verrijken" confirmation is open. */
+    /** Set while the "Ingrediënten aanvullen" confirmation is open. */
     val enrichEstimate: EnrichAllEstimate? = null,
 )
 
@@ -47,7 +47,7 @@ sealed interface SettingsEvent {
     ) : SettingsEvent
 }
 
-/** Instellingen (spec §6.15): the Claude section and "Ingrediënten verrijken". Backups have their own view model. */
+/** Instellingen (spec §6.15): the Claude section and "Ingrediënten aanvullen". Backups have their own view model. */
 @HiltViewModel
 class SettingsViewModel
     @Inject

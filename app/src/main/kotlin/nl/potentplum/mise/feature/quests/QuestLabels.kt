@@ -44,7 +44,7 @@ fun timeLimitLabel(limit: TimeLimit?): String =
         },
     )
 
-/** "Seizoensgroente: pastinaak · Focus: Mechanisch Meesterschap · Gemiddeld" (spec §6.11). */
+/** "Seizoensgroente: pastinaak · Focus: Snijden · Gemiddeld" (spec §6.11). */
 @Composable
 fun questSummaryLine(summary: QuestPlanSummary): String {
     val ingredient =

@@ -119,9 +119,30 @@ fun ShoppingScreen(
                 }
             }
             if (state.list.combined.isNotEmpty()) {
-                item(key = "combined-header") { Eyebrow(stringResource(R.string.shopping_section_recipes), Modifier.padding(top = 12.dp)) }
+                // One recipe: name it once under the heading. Several: each line shows which recipes it is for.
+                val sources =
+                    state.list.combined
+                        .flatMap { it.recipes }
+                        .distinct()
+                item(key = "combined-header") {
+                    Column(Modifier.padding(top = 12.dp), verticalArrangement = Arrangement.spacedBy(2.dp)) {
+                        Eyebrow(stringResource(R.string.shopping_section_recipes))
+                        sources.singleOrNull()?.let {
+                            Text(
+                                stringResource(R.string.shopping_single_recipe, it),
+                                style = MaterialTheme.typography.bodySmall,
+                                color = MiseTheme.colors.inkSoft,
+                            )
+                        }
+                    }
+                }
                 items(state.list.combined, key = { it.key }) { line ->
-                    LineRow(line, onToggle = { viewModel.toggle(line) }, onDelete = { viewModel.delete(line) })
+                    LineRow(
+                        line,
+                        showRecipes = sources.size > 1,
+                        onToggle = { viewModel.toggle(line) },
+                        onDelete = { viewModel.delete(line) },
+                    )
                 }
             }
             if (state.list.manual.isNotEmpty()) {
@@ -163,6 +184,7 @@ private fun AddItemField(onAdd: (String) -> Unit) {
 @Composable
 private fun LineRow(
     line: ShoppingListLine,
+    showRecipes: Boolean = true,
     onToggle: () -> Unit,
     onDelete: () -> Unit,
 ) {
@@ -188,7 +210,7 @@ private fun LineRow(
                         textDecoration = if (line.checked) TextDecoration.LineThrough else null,
                         color = if (line.checked) MiseTheme.colors.inkSoft else MaterialTheme.colorScheme.onSurface,
                     )
-                    if (line.recipes.isNotEmpty()) {
+                    if (showRecipes && line.recipes.isNotEmpty()) {
                         FlowRow(horizontalArrangement = Arrangement.spacedBy(6.dp)) {
                             line.recipes.forEach { title ->
                                 Surface(shape = MaterialTheme.shapes.small, color = MaterialTheme.colorScheme.surfaceContainerHigh) {

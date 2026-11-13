@@ -13,13 +13,10 @@
     <string name="nav_techniques">Technieken</string>
     <string name="nav_curriculum">Opleiding</string>
     <string name="hero_eyebrow_loc">Nederland</string>
-    <string name="hero_title">Wat is er nu <i>in het seizoen</i></string>
     <string name="hero_stat_peak">op z\'n best</string>
     <string name="hero_stat_shoulder">verkrijgbaar</string>
     <string name="hero_stat_soon">komt eraan</string>
-    <string name="hero_hero_sub">Lokale groenten, gegroeid op Nederlandse bodem — gesorteerd op wat er nu op z\'n best is.</string>
     <string name="calendar_eyebrow_sub">Jaar in één oogopslag</string>
-    <string name="calendar_title">De <i>kalender</i></string>
     <string name="calendar_hero_sub">Wanneer elke groente op z\'n best is. Gevuld = op z\'n best, half = verkrijgbaar.</string>
     <string name="controls_search_placeholder">Zoeken…</string>
     <string name="controls_search_aria_label">Groenten zoeken</string>
@@ -115,9 +112,9 @@
     <string name="recipes_cooked_this_btn">Ik heb dit gekookt</string>
     <string name="techniques_page_title">Technieken</string>
     <string name="techniques_page_subtitle">Fundamentele bereidingsmethoden voor de Nederlandse keuken</string>
-    <string name="techniques_category_snijden">Snijdtechnieken</string>
+    <string name="techniques_category_snijden">Snijtechnieken</string>
     <string name="techniques_category_garing">Garingsmethoden</string>
-    <string name="techniques_category_smaak">Smaakgebouw</string>
+    <string name="techniques_category_smaak">Smaakopbouw</string>
     <string name="techniques_category_eiwitten">Eiwitten</string>
     <string name="techniques_category_sauzen">Sauzen &amp; Fonds</string>
     <string name="techniques_category_groenten">Groentenvoorbereiding</string>
@@ -148,7 +145,7 @@
     <string name="techniques_section_tips">Tips</string>
     <string name="techniques_section_related_veg">Aanbevolen groenten</string>
     <string name="techniques_section_related_techniques">Verwante technieken</string>
-    <string name="techniques_section_cookware">Benodigde kookgerei</string>
+    <string name="techniques_section_cookware">Benodigd kookgerei</string>
     <string name="techniques_search_placeholder">Techniek zoeken…</string>
     <string name="techniques_search_aria_label">Technieken zoeken</string>
     <string name="techniques_empty_state">Geen technieken gevonden. Probeer de zoekopdracht te wissen.</string>
@@ -226,6 +223,7 @@
     <string name="journal_neglected_empty">Alle disciplines zijn recent geoefend</string>
     <string name="journal_quests_empty">Nog geen quests</string>
     <string name="journal_empty">Leg je eerste gekookte recept of quest vast om je dagboek te beginnen.</string>
+    <string name="journal_empty_action">Naar Vandaag</string>
     <string name="journal_top_cuisines">Meest gekookte keukens</string>
     <!-- UI/UX review (spec Appendix D): copy for the new interactions. -->
     <string name="today_hero_title">Wat kook ik <i>vandaag</i>?</string>
@@ -285,6 +283,7 @@
     <string name="cook_next">Volgende stap</string>
     <string name="cook_close">Kookmodus sluiten</string>
     <string name="cook_ingredients">Ingrediënten</string>
+    <string name="cook_next_preview">Hierna</string>
     <string name="cook_technique_info">Over %1$s</string>
     <string name="cook_no_steps">Dit recept heeft nog geen bereidingsstappen.</string>
     <string name="journal_tab_timeline">Tijdlijn</string>
@@ -501,15 +500,15 @@
     <string name="settings_usage_title">Gebruik deze maand</string>
     <string name="settings_usage_value">%1$s tokens · ongeveer %2$s</string>
     <string name="settings_usage_tip">Tip: stel in de Anthropic Console een maandlimiet in voor deze sleutel. Dan kan een fout nooit veel kosten.</string>
-    <string name="settings_enrich_title">Ingrediënten verrijken</string>
+    <string name="settings_enrich_title">Ingrediënten aanvullen</string>
     <string name="settings_enrich_sub">Laat Claude de ingrediënten structureren en tags toevoegen bij alle recepten waar dat nog niet gebeurd is.</string>
-    <string name="settings_enrich_none">Alle recepten zijn al verrijkt.</string>
-    <string name="settings_enrich_confirm_title">Ingrediënten verrijken?</string>
+    <string name="settings_enrich_none">De ingrediënten van alle recepten zijn al aangevuld.</string>
+    <string name="settings_enrich_confirm_title">Ingrediënten aanvullen?</string>
     <plurals name="settings_enrich_confirm_body">
         <item quantity="one">%1$d recept wordt op de achtergrond aangevuld. Geschatte kosten: %2$s.</item>
         <item quantity="other">%1$d recepten worden op de achtergrond aangevuld. Geschatte kosten: %2$s.</item>
     </plurals>
-    <string name="settings_enrich_confirm">Verrijken</string>
+    <string name="settings_enrich_confirm">Aanvullen</string>
     <plurals name="settings_enrich_queued">
         <item quantity="one">%1$d recept wordt aangevuld</item>
         <item quantity="other">%1$d recepten worden aangevuld</item>
@@ -596,6 +595,7 @@
     <!-- P1: Boodschappen. -->
     <string name="shopping_section_recipes">Uit recepten</string>
     <string name="shopping_section_manual">Los</string>
+    <string name="shopping_single_recipe">Voor %1$s</string>
     <string name="shopping_add_label">Iets toevoegen</string>
     <string name="shopping_add">Toevoegen</string>
     <string name="shopping_delete_item">%1$s verwijderen</string>
@@ -671,7 +671,7 @@
     <string name="onboarding_key_title">Claude-sleutel (optioneel)</string>
     <string name="onboarding_restore_title">Back-up terugzetten (optioneel)</string>
     <string name="onboarding_restore_body">Heb je een back-up van Mise, of de omgezette gegevens van de oude web-app? Zet die dan nu terug.</string>
-    <string name="backup_restored_enrich_later">Dat kan later via Instellingen › Ingrediënten verrijken.</string>
+    <string name="backup_restored_enrich_later">Dat kan later via Instellingen › Ingrediënten aanvullen.</string>
     <string-array name="score_steps">
         <item>Mislukt</item>
         <item>Matig</item>
@@ -705,6 +705,8 @@
     <string name="curriculum_next_open">Openen</string>
     <string name="curriculum_all_done">Alles afgerond. Gefeliciteerd!</string>
     <string name="curriculum_stage_eyebrow">Fase %1$d</string>
+    <string name="curriculum_stage_show">Cursussen tonen</string>
+    <string name="curriculum_stage_hide">Cursussen verbergen</string>
     <string name="curriculum_steps">%1$d van %2$d stappen</string>
     <string name="curriculum_hours">%1$s uur</string>
     <string name="curriculum_draft">Concept</string>

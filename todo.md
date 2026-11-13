@@ -177,7 +177,7 @@ The web app keeps running from its last Vercel deployment until you turn it off,
   _Done: `feature/settings/KeyScreen.kt` (`IME_FLAG_NO_PERSONALIZED_LEARNING` through `InterceptPlatformTextInput`; the typed key is never in saved state). "Toch opslaan" when Claude can't be reached; "Sleutel testen" in Instellingen. `SettingsFlowsTest`._
 - [x] Kwaliteit setting (Snel / Gebalanceerd / Beste), usage this month, the Anthropic Console spend-limit tip, "Quest-kaart tonen op Vandaag".
   _Usage shows tokens and an estimate in euros at a fixed rough rate (`DutchNumbers.USD_TO_EUR`)._
-- [x] "Ingrediënten verrijken" for all unparsed recipes, with an estimated cost confirmation.
+- [x] "Ingrediënten aanvullen" for all unparsed recipes, with an estimated cost confirmation.
 - [x] Over screen: version, data sources, OSS licences (including fonts), privacy statement and the threat-model note.
 
 ### Backup and legacy (spec §13)

@@ -83,7 +83,7 @@ class EnrichmentQueue
         suspend fun requestAll(recipeIds: List<String>): Int = recipeIds.count { request(it) }
     }
 
-/** "Ingrediënten verrijken" for the whole library (spec §6.15): what would be sent, and its estimated cost. */
+/** "Ingrediënten aanvullen" for the whole library (spec §6.15): what would be sent, and its estimated cost. */
 data class EnrichAllEstimate(
     val recipeIds: List<String>,
     val costMicroUsd: Long,

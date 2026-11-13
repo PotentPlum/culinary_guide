@@ -128,8 +128,10 @@ class JournalFlowsTest {
     }
 
     @Test
-    fun `an empty journal invites the first entry`() {
+    fun `an empty journal invites the first entry and leads to Vandaag`() {
         launch()
         compose.reveal("Leg je eerste gekookte recept")
+        click("Naar Vandaag")
+        compose.reveal("Begin met je eerste recept")
     }
 }

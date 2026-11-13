@@ -67,6 +67,7 @@ fun JournalTimeline(
     onFilter: (TimelineFilter) -> Unit,
     onEdit: (AttemptRow) -> Unit,
     modifier: Modifier = Modifier,
+    onToday: () -> Unit = {},
 ) {
     val months = stringArrayResource(R.array.months_long)
     LazyColumn(modifier.fillMaxSize(), contentPadding = PaddingValues(16.dp), verticalArrangement = Arrangement.spacedBy(12.dp)) {
@@ -94,7 +95,12 @@ fun JournalTimeline(
             }
         }
         if (!state.loading && state.timeline.isEmpty()) {
-            item(key = "empty") { EmptyState(title = stringResource(R.string.journal_empty)) }
+            item(key = "empty") {
+                EmptyState(title = stringResource(R.string.journal_empty)) {
+                    // A filter that hides everything needs no way out; an empty journal needs somewhere to start.
+                    if (!state.hasAny) Button(onClick = onToday) { Text(stringResource(R.string.journal_empty_action)) }
+                }
+            }
         }
         state.timeline.forEach { month ->
             item(key = "month-${month.month}") {

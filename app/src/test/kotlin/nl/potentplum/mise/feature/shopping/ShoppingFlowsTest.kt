@@ -98,6 +98,18 @@ class ShoppingFlowsTest {
     }
 
     @Test
+    fun `with one recipe on the list it is named once, not as a chip on every line`() {
+        runBlocking {
+            recipes.save(Recipe(id = "soup", title = "Uiensoep", sourceType = RecipeSourceType.MANUAL))
+            shopping.add(listOf(ShoppingLine("2 uien", 2.0, null, "ui"), ShoppingLine("500 g wortel", 500.0, "g", "wortel")), "soup")
+        }
+        launch()
+        compose.reveal("Voor Uiensoep")
+        compose.reveal("500 g wortel")
+        assertTrue(!shown("Uiensoep"))
+    }
+
+    @Test
     fun `ticking a combined line ticks all its items`() {
         seed()
         launch()

@@ -279,6 +279,7 @@ fun MiseAppShell(
                             onVegetable = onVegetable,
                             onAllVegetables = { navController.navigateToTab(TopLevelDestination.Season) },
                             onTechnique = onTechnique,
+                            onToday = { navController.navigateToTab(TopLevelDestination.Today) },
                             requestedSegment = requested,
                             onSegmentRequestHandled = { entry.savedStateHandle[KEY_JOURNAL_SEGMENT] = null },
                         )
