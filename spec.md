@@ -441,8 +441,11 @@ Quest van vandaag card on Vandaag; their history is **Dagboek › Quests** (§6.
 
 **Verfijn (full form, collapsed by default)**
 - **Ingredient**, one of three modes:
-  - *Zelf kiezen*: free text (max 200 characters), with an optional quantity and unit (for using up leftovers).
-  - *Seizoensgroente*: a dropdown of in-season vegetables (§11.1 order).
+  - *Zelf kiezen*: one or more rows (up to 5), each free text (max 200 characters) with an optional quantity and unit (for
+    using up leftovers). **Nog een ingrediënt** adds a row; with more than one, rows are numbered and each can be removed.
+  - *Seizoensgroente*: up to 5 in-season vegetables (§11.1 order), chosen in a searchable picker sheet (chips with ✕, then
+    **Kiezen** / **Aanpassen**); the sheet disables the rest once 5 are chosen.
+  - Several ingredients go to Claude as "Ingrediënten (gebruik ze allemaal): …", to be used together in one dish.
   - *Verras me* (default): Claude chooses from the in-season list and returns its id.
 - **Soort quest** (chips): Maaltijd · Lunch · Bijgerecht · Saus · Bouillon / fond · Component · Laat Claude kiezen.
   "Component" means a building block such as a pickle, crumble, flavoured oil or dressing.
@@ -452,9 +455,10 @@ Quest van vandaag card on Vandaag; their history is **Dagboek › Quests** (§6.
 - "Geef quest". The button is disabled with an explanation when offline or when no key is set.
 
 **Result**
-- Quest text, skill, difficulty badge, time estimate, "Waarom deze quest?", result type (dish type), the chosen vegetable (if any),
+- Quest text, skill, difficulty badge, time estimate, "Waarom deze quest?", result type (dish type), the ingredients asked for
+  ("Ingrediënten: restje kool en zure room"),
   technique chips (→ technique detail) and a full recipe (ingredient groups, steps, tips).
-- Actions: **Start koken** (cook mode on the quest's recipe; primary), **Quest voltooid** (→ evaluation), **Andere quest**
+- Actions: **Start koken** (Stap voor stap on the quest's recipe; primary), **Quest voltooid** (→ evaluation), **Andere quest**
   (same parameters), and in ⋮ **Bewaar recept in bibliotheek** (sets `inLibrary = true`).
 - **One way to complete:** any attempt logged for the quest's recipe, whether from Quest voltooid, "Klaar met koken" in cook mode, or
   the cook-mode exit prompt, links the attempt to the quest (`questId`) and sets the quest to COMPLETED.
@@ -600,7 +604,7 @@ IDs are UUID strings; timestamps are epoch millis (UTC). Lists that are only eve
 | `step` | `id`, `groupId`, `position`, `text` |
 | `recipe_extra_field` | `id`, `recipeId`, `position`, `label`, `value` |
 | `recipe_tag` | `recipeId`, `key` (cuisine / dishType / mainIngredient / technique), `value` (PK all three) |
-| `quest` | `id`, `createdAt`, `isDaily`, `status` (OPEN / COMPLETED), `completedAt?`, `ingredientMode` (CUSTOM / SEASONAL / SURPRISE), `ingredient`, `vegId?`, `quantity?`, `unit?`, `questType`, `requestedDifficulty?`, `focusDiscipline?`, `requestedTechniqueId?`, `requestedCuisine?`, `timeLimit?`, `simpleAndSmall`, `text`, `skill`, `difficulty`, `timeEstimateMinutes`, `why`, `dishType`, `tips` (json), `recipeId` (FK → `recipe` with `sourceType = QUEST`) |
+| `quest` | `id`, `createdAt`, `isDaily`, `status` (OPEN / COMPLETED), `completedAt?`, `ingredientMode` (CUSTOM / SEASONAL / SURPRISE), `ingredient`, `vegId?`, `quantity?`, `unit?`, `questType`, `requestedDifficulty?`, `focusDiscipline?`, `requestedTechniqueId?`, `requestedCuisine?`, `timeLimit?`, `simpleAndSmall`, `text`, `skill`, `difficulty`, `timeEstimateMinutes`, `why`, `dishType`, `tips` (json), `recipeId` (FK → `recipe` with `sourceType = QUEST`), `moreIngredients` (json list of `{name, vegId?, quantity?, unit?}`: the ingredients after the first, which lives in `ingredient` / `vegId` / `quantity` / `unit`; v3) |
 | `attempt` | `id`, `sourceType` (RECIPE / QUEST), `recipeId?`, `questId?`, `cookedAt`, `score?` (1–10; the UI writes 2/4/6/8/10, §6.12), `tasteScore?` (1–10, same), `notes?`, `photoPath?`, `techniques` (json snapshot), `cuisines` (json snapshot), `vegIds` (json snapshot, §11.4), `peakVegIds` (json: subset at PEAK on `cookedAt`) |
 | `shopping_item` | `id`, `text`, `quantity?`, `unit?`, `name?`, `recipeId?`, `checked`, `position`, `createdAt` |
 | `claude_usage` | `id`, `at`, `feature` (QUEST / PHOTO_IMPORT / PAGE_IMPORT / ENRICH / KEY_CHECK), `model`, `inputTokens`, `outputTokens`, `cacheReadTokens`, `costMicroUsd` |
@@ -618,7 +622,8 @@ IDs are UUID strings; timestamps are epoch millis (UTC). Lists that are only eve
 - Schema changes go through numbered Room migrations with a `MigrationTestHelper` test. **Never** use destructive migration.
   v1 → v2 (`MIGRATION_1_2`) adds the three curriculum tables, with indexes on `curriculum_check(moduleId, takenAt)` and
   `curriculum_evidence(exerciseId, loggedAt)`. Curriculum rows refer to curriculum ids, which never change, so a content update
-  keeps the progress.
+  keeps the progress. v2 → v3 (`MIGRATION_2_3`) adds `quest.moreIngredients` (default `[]`), so existing quests keep their one
+  ingredient.
 
 ### 7.3 Settings (DataStore `settings.preferences_pb`)
 

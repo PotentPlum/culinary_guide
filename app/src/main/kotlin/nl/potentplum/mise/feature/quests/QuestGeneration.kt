@@ -19,7 +19,8 @@ import nl.potentplum.mise.domain.QuestParams
 /** "What was chosen", shown while a quest is generating (spec §6.11): ingredient · focus or technique · difficulty. */
 data class QuestPlanSummary(
     val mode: IngredientMode,
-    val ingredient: String?,
+    /** The ingredients' names, empty for Verras me. */
+    val ingredients: List<String>,
     val focus: String?,
     val technique: String?,
     val difficulty: Difficulty,
@@ -31,23 +32,7 @@ data class QuestPlanSummary(
         ): QuestPlanSummary =
             QuestPlanSummary(
                 mode = plan.params.ingredientMode,
-                ingredient =
-                    when (plan.params.ingredientMode) {
-                        IngredientMode.CUSTOM -> {
-                            plan.params.ingredient.trim()
-                        }
-
-                        IngredientMode.SEASONAL -> {
-                            plan.params.vegId
-                                ?.let(content::vegetable)
-                                ?.nl
-                                ?.lowercase()
-                        }
-
-                        IngredientMode.SURPRISE -> {
-                            null
-                        }
-                    },
+                ingredients = plan.params.chosenIngredients(content).map { it.name },
                 focus = plan.focus?.let { focus -> content.disciplines.firstOrNull { it.id == focus }?.nl },
                 technique =
                     plan.params.techniqueId

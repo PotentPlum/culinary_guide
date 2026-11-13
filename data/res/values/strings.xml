@@ -482,6 +482,16 @@
     <string name="quest_type_component_hint">Een bouwsteen zoals een pickle, crumble, gearomatiseerde olie of dressing.</string>
     <string name="quest_difficulty_label">Moeilijkheid</string>
     <string name="quest_no_unit">Geen eenheid</string>
+    <plurals name="quest_ingredients_label">
+        <item quantity="one">Ingrediënt</item>
+        <item quantity="other">Ingrediënten</item>
+    </plurals>
+    <string name="quest_ingredient_numbered">Ingrediënt %1$d</string>
+    <string name="quest_add_ingredient">Nog een ingrediënt</string>
+    <string name="quest_remove_ingredient">Ingrediënt %1$d verwijderen</string>
+    <string name="quest_seasonal_pick">Groenten</string>
+    <string name="picker_max">Je kunt er maximaal %1$d kiezen.</string>
+    <string name="list_and">%1$s en %2$s</string>
     <string name="quest_history_empty">Nog geen quests. Begin met de quest van vandaag of maak er zelf een.</string>
     <string name="quest_filter_all">Alle</string>
     <string name="quest_retry">Opnieuw</string>

@@ -8,14 +8,20 @@ import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.heightIn
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.foundation.verticalScroll
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.outlined.Add
+import androidx.compose.material.icons.outlined.Close
 import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.Button
 import androidx.compose.material3.FilterChip
+import androidx.compose.material3.Icon
+import androidx.compose.material3.IconButton
 import androidx.compose.material3.LinearProgressIndicator
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedButton
@@ -42,16 +48,20 @@ import androidx.compose.ui.unit.dp
 import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import nl.potentplum.mise.R
+import nl.potentplum.mise.content.model.MeasureUnit
 import nl.potentplum.mise.core.designsystem.MiseTheme
 import nl.potentplum.mise.core.designsystem.component.MiseSearchField
 import nl.potentplum.mise.core.designsystem.component.MiseTopAppBar
 import nl.potentplum.mise.core.designsystem.component.OverflowItem
+import nl.potentplum.mise.core.designsystem.component.TagPicker
 import nl.potentplum.mise.core.designsystem.component.difficultyLabel
 import nl.potentplum.mise.core.ui.claudeErrorMessage
 import nl.potentplum.mise.data.db.entity.IngredientMode
+import nl.potentplum.mise.data.db.entity.QuestIngredient
 import nl.potentplum.mise.data.db.entity.QuestType
 import nl.potentplum.mise.data.db.entity.TimeLimit
 import nl.potentplum.mise.domain.Difficulty
+import nl.potentplum.mise.domain.QuestParams
 import nl.potentplum.mise.domain.TextMatch
 
 /** The Verfijn quest form (spec §6.11), pre-filled from a vegetable or technique. */
@@ -92,41 +102,43 @@ fun QuestRefineScreen(
                 ) { mode -> viewModel.update { it.copy(ingredientMode = mode) } }
                 when (params.ingredientMode) {
                     IngredientMode.SEASONAL -> {
-                        PickerField(
-                            label = stringResource(R.string.quest_seasonal_label),
-                            value = params.vegId?.let { id -> options.vegetables.firstOrNull { it.id == id }?.nl },
-                            placeholder = stringResource(R.string.quest_seasonal_label),
+                        // Several vegetables for one dish (spec §6.11); the picker stops at the maximum.
+                        TagPicker(
+                            title = stringResource(R.string.quest_seasonal_pick),
                             options = options.vegetables.map { it.id to it.nl },
-                        ) { id -> viewModel.update { it.copy(vegId = id) } }
+                            selected = params.vegIds.toSet(),
+                            searchable = true,
+                            maxSelected = QuestParams.MAX_INGREDIENTS,
+                            onToggle = viewModel::toggleVegetable,
+                        )
                     }
 
                     IngredientMode.CUSTOM -> {
-                        OutlinedTextField(
-                            value = params.ingredient,
-                            onValueChange = viewModel::setIngredient,
-                            label = { Text(stringResource(R.string.quest_input_label)) },
-                            placeholder = { Text(stringResource(R.string.quest_input_placeholder)) },
-                            singleLine = true,
-                            modifier = Modifier.fillMaxWidth(),
-                        )
-                        Row(horizontalArrangement = Arrangement.spacedBy(8.dp), verticalAlignment = Alignment.CenterVertically) {
-                            OutlinedTextField(
-                                value = state.quantityText,
-                                onValueChange = viewModel::setQuantity,
-                                label = { Text(stringResource(R.string.quest_quantity_label)) },
-                                placeholder = { Text(stringResource(R.string.quest_quantity_placeholder)) },
-                                singleLine = true,
-                                keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Decimal),
-                                modifier = Modifier.weight(1f),
+                        val count = params.ingredients.size
+                        params.ingredients.forEachIndexed { index, item ->
+                            IngredientRow(
+                                number = index + 1,
+                                removable = count > 1,
+                                ingredient = item,
+                                quantityText = state.quantityTexts.getOrNull(index).orEmpty(),
+                                units = options.units,
+                                onName = { viewModel.setIngredient(index, it) },
+                                onQuantity = { viewModel.setQuantity(index, it) },
+                                onUnit = { viewModel.setUnit(index, it) },
+                                onRemove = { viewModel.removeIngredient(index) },
                             )
-                            PickerField(
-                                label = stringResource(R.string.quest_unit_label),
-                                value = params.unit?.let { id -> options.units.firstOrNull { it.id == id }?.plural },
-                                placeholder = stringResource(R.string.quest_no_unit),
-                                options = options.units.map { it.id to it.plural },
-                                modifier = Modifier.weight(1f),
-                                allowNone = true,
-                            ) { id -> viewModel.update { it.copy(unit = id) } }
+                        }
+                        if (count < QuestParams.MAX_INGREDIENTS) {
+                            TextButton(onClick = viewModel::addIngredient) {
+                                Icon(Icons.Outlined.Add, contentDescription = null, modifier = Modifier.size(18.dp))
+                                Text(stringResource(R.string.quest_add_ingredient), Modifier.padding(start = 8.dp))
+                            }
+                        } else {
+                            Text(
+                                stringResource(R.string.picker_max, QuestParams.MAX_INGREDIENTS),
+                                style = MaterialTheme.typography.bodySmall,
+                                color = MiseTheme.colors.inkSoft,
+                            )
                         }
                     }
 
@@ -331,4 +343,64 @@ private fun PickerRow(
                 .clickable(onClick = onClick)
                 .padding(vertical = 12.dp),
     )
+}
+
+/** One Zelf kiezen ingredient: name, then quantity and unit (spec §6.11). Numbered once there is more than one. */
+@Composable
+private fun IngredientRow(
+    number: Int,
+    removable: Boolean,
+    ingredient: QuestIngredient,
+    quantityText: String,
+    units: List<MeasureUnit>,
+    onName: (String) -> Unit,
+    onQuantity: (String) -> Unit,
+    onUnit: (String?) -> Unit,
+    onRemove: () -> Unit,
+) {
+    Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
+        Row(verticalAlignment = Alignment.CenterVertically) {
+            OutlinedTextField(
+                value = ingredient.name,
+                onValueChange = onName,
+                label = {
+                    Text(
+                        if (removable) {
+                            stringResource(R.string.quest_ingredient_numbered, number)
+                        } else {
+                            stringResource(R.string.quest_input_label)
+                        },
+                    )
+                },
+                placeholder = { Text(stringResource(R.string.quest_input_placeholder)) },
+                singleLine = true,
+                modifier = Modifier.weight(1f),
+            )
+            if (removable) {
+                IconButton(onClick = onRemove) {
+                    Icon(Icons.Outlined.Close, contentDescription = stringResource(R.string.quest_remove_ingredient, number))
+                }
+            }
+        }
+        Row(horizontalArrangement = Arrangement.spacedBy(8.dp), verticalAlignment = Alignment.CenterVertically) {
+            OutlinedTextField(
+                value = quantityText,
+                onValueChange = onQuantity,
+                label = { Text(stringResource(R.string.quest_quantity_label)) },
+                placeholder = { Text(stringResource(R.string.quest_quantity_placeholder)) },
+                singleLine = true,
+                keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Decimal),
+                modifier = Modifier.weight(1f),
+            )
+            PickerField(
+                label = stringResource(R.string.quest_unit_label),
+                value = ingredient.unit?.let { id -> units.firstOrNull { it.id == id }?.plural },
+                placeholder = stringResource(R.string.quest_no_unit),
+                options = units.map { it.id to it.plural },
+                modifier = Modifier.weight(1f),
+                allowNone = true,
+                onPick = onUnit,
+            )
+        }
+    }
 }

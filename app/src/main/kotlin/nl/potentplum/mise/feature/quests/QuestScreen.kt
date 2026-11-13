@@ -27,6 +27,7 @@ import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.pluralStringResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.semantics.heading
 import androidx.compose.ui.semantics.semantics
@@ -117,7 +118,7 @@ fun QuestScreen(
                         onToggle = null,
                         onAddToShopping = null,
                         onTechnique = onTechnique,
-                        leading = { item(key = "quest") { QuestHeader(quest, state.vegetableName) } },
+                        leading = { item(key = "quest") { QuestHeader(quest, state.ingredientNames) } },
                         trailing = {
                             if (quest.tips.isNotEmpty()) {
                                 item(key = "quest-tips") {
@@ -140,7 +141,7 @@ fun QuestScreen(
 @Composable
 private fun QuestHeader(
     quest: QuestEntity,
-    vegetableName: String?,
+    ingredientNames: List<String>,
 ) {
     Column(Modifier.padding(16.dp), verticalArrangement = Arrangement.spacedBy(10.dp)) {
         val status =
@@ -162,7 +163,9 @@ private fun QuestHeader(
                 Labeled(stringResource(R.string.quest_label_time), stringResource(R.string.minutes_short, quest.timeEstimateMinutes))
             }
             if (quest.dishType.isNotEmpty()) Labeled(stringResource(R.string.quest_label_output_type), quest.dishType)
-            vegetableName?.let { Labeled(stringResource(R.string.quest_ingredient_seasonal), it) }
+            if (ingredientNames.isNotEmpty()) {
+                Labeled(pluralStringResource(R.plurals.quest_ingredients_label, ingredientNames.size), dutchList(ingredientNames))
+            }
         }
         if (quest.why.isNotEmpty()) {
             Text(stringResource(R.string.quest_label_why), style = MaterialTheme.typography.titleMedium)

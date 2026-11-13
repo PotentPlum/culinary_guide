@@ -72,7 +72,8 @@
       "why": "Je oefent emulgeren.",
       "dishType": "Bijgerecht",
       "tips": ["Houd de saus lauw."],
-      "recipeId": "r-quest"
+      "recipeId": "r-quest",
+      "moreIngredients": [{ "name": "rode ui", "vegId": "red-onion" }]
     }
   ],
   "attempts": [

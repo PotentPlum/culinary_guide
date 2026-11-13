@@ -14,6 +14,8 @@ import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.receiveAsFlow
 import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.launch
+import kotlinx.serialization.builtins.ListSerializer
+import kotlinx.serialization.builtins.serializer
 import kotlinx.serialization.json.Json
 import nl.potentplum.mise.claude.ClaudeService
 import nl.potentplum.mise.claude.quest.QuestGenerator
@@ -26,6 +28,7 @@ import nl.potentplum.mise.core.navigation.QuestRefineRoute
 import nl.potentplum.mise.core.network.NetworkStatus
 import nl.potentplum.mise.core.util.MiseClock
 import nl.potentplum.mise.data.db.entity.IngredientMode
+import nl.potentplum.mise.data.db.entity.QuestIngredient
 import nl.potentplum.mise.domain.QuestParams
 import nl.potentplum.mise.domain.SeasonPresentation
 import javax.inject.Inject
@@ -41,7 +44,8 @@ data class RefineOptions(
 
 data class QuestRefineUiState(
     val params: QuestParams = QuestParams(),
-    val quantityText: String = "",
+    /** What is typed in each row's Hoeveelheid field ("0,5"), aligned with `params.ingredients`. */
+    val quantityTexts: List<String> = emptyList(),
     val options: RefineOptions = RefineOptions(),
     val hasKey: Boolean = true,
     val online: Boolean = true,
@@ -50,8 +54,8 @@ data class QuestRefineUiState(
     val ingredientReady: Boolean
         get() =
             when (params.ingredientMode) {
-                IngredientMode.CUSTOM -> params.ingredient.isNotBlank()
-                IngredientMode.SEASONAL -> params.vegId != null
+                IngredientMode.CUSTOM -> params.ingredients.any { it.name.isNotBlank() }
+                IngredientMode.SEASONAL -> params.vegIds.isNotEmpty()
                 IngredientMode.SURPRISE -> true
             }
 
@@ -80,7 +84,10 @@ class QuestRefineViewModel
             savedState
                 .getStateFlow(KEY_PARAMS, encode(initialParams()))
                 .map { Json.decodeFromString(QuestParams.serializer(), it) }
-        private val quantity = savedState.getStateFlow(KEY_QUANTITY, "")
+        private val quantities =
+            savedState
+                .getStateFlow(KEY_QUANTITIES, "[]")
+                .map { Json.decodeFromString(ListSerializer(String.serializer()), it) }
 
         init {
             viewModelScope.launch {
@@ -102,14 +109,14 @@ class QuestRefineViewModel
         }
 
         val state: StateFlow<QuestRefineUiState> =
-            combine(form, quantity, options, combine(claude.hasKey, network.online, ::Pair), generation.state) {
+            combine(form, quantities, options, combine(claude.hasKey, network.online, ::Pair), generation.state) {
                 params,
-                quantity,
+                quantities,
                 options,
                 (hasKey, online),
                 gen,
                 ->
-                QuestRefineUiState(params, quantity, options, hasKey, online, gen)
+                QuestRefineUiState(params, quantities, options, hasKey, online, gen)
             }.stateIn(viewModelScope, SharingStarted.WhileSubscribed(5_000), QuestRefineUiState())
 
         private fun initialParams(): QuestParams =
@@ -117,7 +124,7 @@ class QuestRefineViewModel
                 route.vegId != null -> {
                     QuestParams(
                         ingredientMode = IngredientMode.SEASONAL,
-                        vegId = route.vegId,
+                        vegIds = listOf(route.vegId),
                         techniqueId = route.techniqueId,
                     )
                 }
@@ -132,12 +139,18 @@ class QuestRefineViewModel
             savedState[KEY_PARAMS] = encode(transform(current))
         }
 
-        fun setIngredient(text: String) = update { it.copy(ingredient = text.take(QuestParams.MAX_INGREDIENT_LENGTH)) }
+        fun setIngredient(
+            index: Int,
+            text: String,
+        ) = updateRow(index) { it.copy(name = text.take(QuestParams.MAX_INGREDIENT_LENGTH)) }
 
         /** Dutch decimals ("0,5"); anything unparseable or ≤ 0 means no quantity. */
-        fun setQuantity(text: String) {
-            savedState[KEY_QUANTITY] = text
-            update {
+        fun setQuantity(
+            index: Int,
+            text: String,
+        ) {
+            setQuantityTexts(quantityTexts().padded(index + 1).toMutableList().also { it[index] = text })
+            updateRow(index) {
                 it.copy(
                     quantity =
                         text
@@ -148,6 +161,51 @@ class QuestRefineViewModel
                 )
             }
         }
+
+        fun setUnit(
+            index: Int,
+            unit: String?,
+        ) = updateRow(index) { it.copy(unit = unit) }
+
+        /** Another Zelf kiezen row, up to [QuestParams.MAX_INGREDIENTS]. */
+        fun addIngredient() =
+            update {
+                if (it.ingredients.size >= QuestParams.MAX_INGREDIENTS) it else it.copy(ingredients = it.ingredients + QuestIngredient(""))
+            }
+
+        fun removeIngredient(index: Int) {
+            setQuantityTexts(quantityTexts().filterIndexed { i, _ -> i != index })
+            update { params ->
+                val left = params.ingredients.filterIndexed { i, _ -> i != index }
+                params.copy(ingredients = left.ifEmpty { listOf(QuestIngredient("")) })
+            }
+        }
+
+        /** Seizoensgroente: in or out, up to [QuestParams.MAX_INGREDIENTS] (the picker disables the rest). */
+        fun toggleVegetable(id: String) =
+            update {
+                when {
+                    id in it.vegIds -> it.copy(vegIds = it.vegIds - id)
+                    it.vegIds.size >= QuestParams.MAX_INGREDIENTS -> it
+                    else -> it.copy(vegIds = it.vegIds + id)
+                }
+            }
+
+        private fun updateRow(
+            index: Int,
+            transform: (QuestIngredient) -> QuestIngredient,
+        ) = update { params ->
+            params.copy(ingredients = params.ingredients.mapIndexed { i, item -> if (i == index) transform(item) else item })
+        }
+
+        private fun quantityTexts(): List<String> =
+            Json.decodeFromString(ListSerializer(String.serializer()), savedState[KEY_QUANTITIES] ?: "[]")
+
+        private fun setQuantityTexts(texts: List<String>) {
+            savedState[KEY_QUANTITIES] = Json.encodeToString(ListSerializer(String.serializer()), texts)
+        }
+
+        private fun List<String>.padded(size: Int) = this + List((size - this.size).coerceAtLeast(0)) { "" }
 
         fun generate() {
             if (!state.value.canGenerate) return
@@ -163,6 +221,6 @@ class QuestRefineViewModel
 
         private companion object {
             const val KEY_PARAMS = "params"
-            const val KEY_QUANTITY = "quantity"
+            const val KEY_QUANTITIES = "quantities"
         }
     }

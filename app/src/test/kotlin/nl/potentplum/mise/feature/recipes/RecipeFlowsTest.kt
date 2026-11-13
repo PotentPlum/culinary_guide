@@ -189,7 +189,7 @@ class RecipeFlowsTest {
         compose.onNodeWithText("Ingrediënten (één per regel)").performTextInput("1 bos basilicum\n50 g pijnboompitten")
         click("Opslaan")
         waitForText("Kookmodus")
-        compose.onNodeWithText("50 g pijnboompitten").assertExists()
+        compose.reveal("50 g pijnboompitten")
 
         // Edit: change the title, then leave without saving → asked first; keep editing, then save.
         compose.onNodeWithContentDescription("Meer opties").performClick()

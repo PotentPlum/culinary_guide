@@ -241,6 +241,12 @@ The web app keeps running from its last Vercel deployment until you turn it off,
   Vandaag once Opleiding has started; a photo-less recipe shows its main vegetable as its picture; the shopping list is
   grouped by shop department (`departments.json`, checked by `tools/validate_data.py`).
 
+### Owner feedback (Nov 2026)
+- [x] Deleting a quest's recipe from Recepten crashed (the quest's foreign key); it now only leaves the library, with undo.
+- [x] Imported ingredients show no markup in the preview (WPRM names and notes, entity-encoded links).
+- [x] Kookmodus is a switch that keeps the screen on; the guided view is Stap voor stap.
+- [x] Quests take several ingredients (Zelf kiezen rows, several in-season vegetables); Room v3 with `MIGRATION_2_3`.
+
 ---
 
 ## Opleiding — the culinary curriculum (spec §6.17, D7–D10; `curriculum/07-app-architecture.md`)

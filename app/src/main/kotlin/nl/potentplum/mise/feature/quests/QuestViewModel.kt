@@ -22,6 +22,7 @@ import nl.potentplum.mise.core.navigation.QuestRoute
 import nl.potentplum.mise.core.network.NetworkStatus
 import nl.potentplum.mise.data.db.entity.QuestEntity
 import nl.potentplum.mise.data.db.entity.TagKey
+import nl.potentplum.mise.data.db.entity.ingredients
 import nl.potentplum.mise.data.repo.QuestRepository
 import nl.potentplum.mise.data.repo.Recipe
 import nl.potentplum.mise.data.repo.RecipeRepository
@@ -36,7 +37,8 @@ data class QuestUiState(
     val recipe: Recipe? = null,
     val ingredients: List<IngredientGroupLines> = emptyList(),
     val techniques: List<Technique> = emptyList(),
-    val vegetableName: String? = null,
+    /** Every ingredient the quest was asked to use. */
+    val ingredientNames: List<String> = emptyList(),
     val generation: QuestGenState = QuestGenState.Idle,
     val online: Boolean = true,
 ) {
@@ -82,7 +84,7 @@ class QuestViewModel
                     recipe = recipe,
                     ingredients = recipe?.let { ImportReview.lines(recipes.scaler(), it) }.orEmpty(),
                     techniques = recipe?.tagValues(TagKey.TECHNIQUE)?.mapNotNull(all::technique).orEmpty(),
-                    vegetableName = quest?.vegId?.let(all::vegetable)?.nl,
+                    ingredientNames = quest?.ingredients?.map { it.vegId?.let(all::vegetable)?.nl ?: it.name }.orEmpty(),
                     generation = gen,
                     online = online,
                 )

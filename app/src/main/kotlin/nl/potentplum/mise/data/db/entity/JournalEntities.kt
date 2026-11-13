@@ -1,9 +1,11 @@
 package nl.potentplum.mise.data.db.entity
 
+import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.ForeignKey
 import androidx.room.Index
 import androidx.room.PrimaryKey
+import kotlinx.serialization.Serializable
 import nl.potentplum.mise.content.model.DisciplineId
 import nl.potentplum.mise.domain.Difficulty
 
@@ -43,7 +45,23 @@ data class QuestEntity(
     val dishType: String,
     val tips: List<String> = emptyList(),
     val recipeId: String,
+    /** The ingredients after the first ([ingredient], [vegId], [quantity], [unit]), in the order given (spec §6.11). */
+    @ColumnInfo(defaultValue = "[]")
+    val moreIngredients: List<QuestIngredient> = emptyList(),
 )
+
+/** One ingredient a quest was asked to use (spec §6.11): free text, or an in-season vegetable by id. */
+@Serializable
+data class QuestIngredient(
+    val name: String,
+    val vegId: String? = null,
+    val quantity: Double? = null,
+    val unit: String? = null,
+)
+
+/** Every ingredient the quest was asked to use, the first one first (none for "Verras me" when Claude chose nothing). */
+val QuestEntity.ingredients: List<QuestIngredient>
+    get() = listOfNotNull(QuestIngredient(ingredient, vegId, quantity, unit).takeIf { ingredient.isNotBlank() }) + moreIngredients
 
 /**
  * A logged cook (spec §6.12) with snapshots, so the journal doesn't change when a recipe is edited. Deleting the recipe

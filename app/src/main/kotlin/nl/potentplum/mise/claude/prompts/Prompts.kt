@@ -4,6 +4,7 @@ import nl.potentplum.mise.content.Content
 import nl.potentplum.mise.content.model.DisciplineId
 import nl.potentplum.mise.core.util.DutchNumbers
 import nl.potentplum.mise.data.db.entity.IngredientMode
+import nl.potentplum.mise.data.db.entity.QuestIngredient
 import nl.potentplum.mise.data.db.entity.QuestType
 import nl.potentplum.mise.data.db.entity.TimeLimit
 import nl.potentplum.mise.domain.Difficulty
@@ -94,7 +95,8 @@ object Prompts {
         concreet, af gerecht, met een volledig recept.
 
         - Schrijf in het Nederlands, coachend en motiverend.
-        - Houd je strikt aan elke opgegeven parameter (ingrediënt, soort, moeilijkheid, techniek, keuken, tijd).
+        - Houd je strikt aan elke opgegeven parameter (ingrediënten, soort, moeilijkheid, techniek, keuken, tijd).
+        - Zijn er meerdere ingrediënten opgegeven, gebruik ze dan allemaal in hetzelfde gerecht.
         - De soort quest bepaalt wat er uitkomt: een saus-quest levert een saus op, geen hele maaltijd. Een component is
           een bouwsteen zoals een pickle, crumble, gearomatiseerde olie of dressing.
         - "Klein & eenvoudig" betekent weinig ingrediënten die je meestal in huis hebt.
@@ -122,18 +124,10 @@ object Prompts {
     ): String =
         buildString {
             when (params.ingredientMode) {
-                IngredientMode.CUSTOM -> {
-                    append("Ingrediënt: ${params.ingredient.trim()}")
-                    params.quantity?.let { quantity ->
-                        val unit = params.unit?.let { content.unit(it)?.let { u -> if (quantity == 1.0) u.singular else u.plural } }
-                        append(" (hoeveelheid: ${DutchNumbers.format(quantity)}${unit?.let { " $it" }.orEmpty()})")
-                    }
-                    appendLine()
-                }
-
-                IngredientMode.SEASONAL -> {
-                    val veg = params.vegId?.let(content::vegetable)
-                    appendLine("Ingrediënt: ${veg?.nl?.lowercase() ?: params.ingredient} (seizoensgroente, id: ${params.vegId})")
+                IngredientMode.CUSTOM, IngredientMode.SEASONAL -> {
+                    val chosen = params.chosenIngredients(content)
+                    append(if (chosen.size == 1) "Ingrediënt: " else "Ingrediënten (gebruik ze allemaal): ")
+                    appendLine(chosen.joinToString("; ") { ingredientText(content, it) })
                 }
 
                 IngredientMode.SURPRISE -> {
@@ -170,6 +164,20 @@ object Prompts {
         }.trimEnd()
 
     private const val FOCUS_EXAMPLES = 4
+
+    /** "restje kool (hoeveelheid: 0,5 kg)", "pompoen (seizoensgroente, id: pumpkin)". */
+    private fun ingredientText(
+        content: Content,
+        ingredient: QuestIngredient,
+    ): String =
+        buildString {
+            append(ingredient.name)
+            ingredient.vegId?.let { append(" (seizoensgroente, id: $it)") }
+            ingredient.quantity?.let { quantity ->
+                val unit = ingredient.unit?.let { content.unit(it)?.let { u -> if (quantity == 1.0) u.singular else u.plural } }
+                append(" (hoeveelheid: ${DutchNumbers.format(quantity)}${unit?.let { " $it" }.orEmpty()})")
+            }
+        }
 
     private fun questTypeText(type: QuestType): String =
         when (type) {

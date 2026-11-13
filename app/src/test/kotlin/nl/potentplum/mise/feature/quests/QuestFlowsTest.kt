@@ -1,8 +1,10 @@
 package nl.potentplum.mise.feature.quests
 
 import androidx.compose.ui.semantics.SemanticsActions
+import androidx.compose.ui.test.assertCountEquals
 import androidx.compose.ui.test.assertIsNotEnabled
 import androidx.compose.ui.test.hasClickAction
+import androidx.compose.ui.test.hasSetTextAction
 import androidx.compose.ui.test.hasText
 import androidx.compose.ui.test.junit4.createAndroidComposeRule
 import androidx.compose.ui.test.onAllNodesWithText
@@ -11,6 +13,7 @@ import androidx.compose.ui.test.onNodeWithContentDescription
 import androidx.compose.ui.test.performClick
 import androidx.compose.ui.test.performScrollToNode
 import androidx.compose.ui.test.performSemanticsAction
+import androidx.compose.ui.test.performTextInput
 import dagger.hilt.android.testing.HiltAndroidRule
 import dagger.hilt.android.testing.HiltAndroidTest
 import dagger.hilt.android.testing.HiltTestApplication
@@ -199,6 +202,66 @@ class QuestFlowsTest {
         compose.waitUntil(5_000) { runBlocking { quests.observeAll().first() }.isNotEmpty() }
         scrollHistoryTo("Geroosterde pastinaak")
         assertEquals(1, runBlocking { quests.observeAll().first() }.size)
+    }
+
+    private fun type(
+        label: String,
+        text: String,
+    ) {
+        val field = hasSetTextAction() and hasText(label)
+        compose.reveal(field)
+        compose.onNode(field).performTextInput(text)
+    }
+
+    private fun requestText() =
+        (
+            FakeClaudeClient.requests
+                .last()
+                .content
+                .single() as ContentPart.Text
+        ).text
+
+    @Test
+    fun `Zelf kiezen takes several ingredients, each with its own amount`() {
+        saveKey()
+        click("Verfijn")
+        click("Zelf kiezen")
+        type("Ingrediënt", "restje kool")
+        click("Nog een ingrediënt")
+        // With two rows they are numbered, and each can be removed.
+        type("Ingrediënt 2", "zure room")
+        // The first row's amount stays with the first ingredient.
+        compose.onAllNodes(hasSetTextAction() and hasText("Hoeveelheid"))[0].performTextInput("0,5")
+        click("Nog een ingrediënt")
+        type("Ingrediënt 3", "dille")
+        compose.onNodeWithContentDescription("Ingrediënt 3 verwijderen").performClick()
+        compose.onAllNodes(hasSetTextAction() and hasText("Ingrediënt 3")).assertCountEquals(0)
+        click("Geef quest")
+        waitForText("Start koken")
+        assertTrue(
+            requestText(),
+            requestText().startsWith("Ingrediënten (gebruik ze allemaal): restje kool (hoeveelheid: 0,5); zure room\n"),
+        )
+        // The quest names both.
+        waitForText("restje kool en zure room")
+    }
+
+    @Test
+    fun `Seizoensgroente takes several vegetables from the picker`() {
+        saveKey()
+        click("Verfijn")
+        click("Seizoensgroente")
+        compose.onNodeWithContentDescription("Groenten kiezen").performClick()
+        click("Pompoen")
+        click("Prei")
+        click("Klaar")
+        waitForText("Aanpassen")
+        click("Geef quest")
+        waitForText("Start koken")
+        assertTrue(
+            requestText(),
+            requestText().startsWith("Ingrediënten (gebruik ze allemaal): pompoen (seizoensgroente, id: pumpkin); prei"),
+        )
     }
 
     @Test

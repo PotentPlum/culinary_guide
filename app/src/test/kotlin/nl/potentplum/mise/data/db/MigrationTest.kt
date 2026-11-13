@@ -8,6 +8,8 @@ import kotlinx.coroutines.test.runTest
 import nl.potentplum.mise.data.db.entity.Band
 import nl.potentplum.mise.data.db.entity.EvidenceEntity
 import nl.potentplum.mise.data.db.entity.LessonProgressEntity
+import nl.potentplum.mise.data.db.entity.QuestIngredient
+import nl.potentplum.mise.data.db.entity.ingredients
 import org.junit.Assert.assertEquals
 import org.junit.Rule
 import org.junit.Test
@@ -45,6 +47,43 @@ class MigrationTest {
                 dao.upsertEvidence(listOf(EvidenceEntity("e1", "EGG-1.M1.X1", 6, Band.COMPETENT)))
                 assertEquals(listOf("EGG-1.M1.L1"), dao.lessons().map { it.lessonId })
                 assertEquals(Band.COMPETENT, dao.evidence().single().band)
+            } finally {
+                room.close()
+            }
+        }
+
+    @Test
+    fun `2 to 3 lets a quest have more ingredients, and existing quests keep their one`() =
+        runTest {
+            helper.createDatabase(DB, 2).use { db ->
+                insertRecipe(db)
+                db.execSQL(
+                    "INSERT INTO quest (id, createdAt, isDaily, status, ingredientMode, ingredient, vegId, questType, " +
+                        "simpleAndSmall, text, skill, difficulty, timeEstimateMinutes, why, dishType, tips, recipeId) VALUES " +
+                        "('q1', 1, 1, 'OPEN', 'SEASONAL', 'prei', 'leek', 'BIJGERECHT', 0, 'Brand prei.', 'Branden', " +
+                        "'BEGINNER', 30, 'Zoet.', 'Bijgerecht', '[]', 'r1')",
+                )
+            }
+            helper.runMigrationsAndValidate(DB, 3, true, MiseDatabase.MIGRATION_2_3).close()
+
+            val room =
+                Room
+                    .databaseBuilder(InstrumentationRegistry.getInstrumentation().targetContext, MiseDatabase::class.java, DB)
+                    .addMigrations(*MiseDatabase.MIGRATIONS)
+                    .allowMainThreadQueries()
+                    .build()
+            try {
+                val quest = room.questDao().get("q1")!!
+                assertEquals(listOf(QuestIngredient("prei", "leek")), quest.ingredients)
+                room.questDao().upsert(quest.copy(moreIngredients = listOf(QuestIngredient("rode ui", "red-onion"))))
+                assertEquals(
+                    listOf("leek", "red-onion"),
+                    room
+                        .questDao()
+                        .get("q1")!!
+                        .ingredients
+                        .map { it.vegId },
+                )
             } finally {
                 room.close()
             }
