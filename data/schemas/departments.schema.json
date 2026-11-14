@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "departments.schema.json",
+  "title": "Mise shop departments",
+  "description": "Departments of the shopping list (spec §6.14), in display order. A line goes to the department of its best-matching keyword (spec §11.7): whole word first, then the end of a compound word (the Dutch head: 'paprikapoeder' is a poeder), then the start ('uien', 'kippendijen'); a longer keyword beats a shorter one. Vegetables from vegetables.json always count as groente and need no keywords here. 'overig' is the fallback and has none. Labels are string resources shopping_department_<id with _>.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "departments"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "departments": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "keywords"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z]+(-[a-z]+)*$"
+          },
+          "keywords": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "pattern": "^[a-z]{2,}$"
+            }
+          }
+        }
+      }
+    }
+  }
+}

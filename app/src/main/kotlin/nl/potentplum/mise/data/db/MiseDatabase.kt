@@ -32,7 +32,7 @@ import nl.potentplum.mise.data.db.entity.StepGroupEntity
  * `MigrationTestHelper` test; destructive migration is never used (spec §7.2). Schemas are exported to `app/schemas/`.
  */
 @Database(
-    version = 2,
+    version = 3,
     exportSchema = true,
     entities = [
         RecipeEntity::class,
@@ -98,7 +98,15 @@ abstract class MiseDatabase : RoomDatabase() {
                 }
             }
 
+        /** v3: a quest can use several ingredients (spec §6.11); existing quests keep their one. */
+        val MIGRATION_2_3 =
+            object : Migration(2, 3) {
+                override fun migrate(db: SupportSQLiteDatabase) {
+                    db.execSQL("ALTER TABLE `quest` ADD COLUMN `moreIngredients` TEXT NOT NULL DEFAULT '[]'")
+                }
+            }
+
         /** Every schema change after v1 adds its migration here. */
-        val MIGRATIONS: Array<Migration> = arrayOf(MIGRATION_1_2)
+        val MIGRATIONS: Array<Migration> = arrayOf(MIGRATION_1_2, MIGRATION_2_3)
     }
 }

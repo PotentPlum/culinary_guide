@@ -103,6 +103,28 @@ class ShoppingAggregatorTest {
     }
 
     @Test
+    fun `by department in the order of the shop, recipes A-Z, then manual items, ticked last`() {
+        val classifier = DepartmentClassifier(TestContent.content.departments, TestContent.content.vegetables)
+        val sections =
+            aggregator
+                .aggregate(
+                    listOf(
+                        item("Koffiefilters", recipe = null),
+                        item("Melk", recipe = null),
+                        item("Peterselie", recipe = null),
+                        item("1 ui", 1.0, name = "ui", checked = true),
+                        item("200 g geitenkaas", 200.0, "g", "geitenkaas"),
+                        item("2 wortels", 2.0, name = "wortel"),
+                        item("500 g pompoen", 500.0, "g", "pompoen"),
+                    ),
+                ).byDepartment(classifier)
+        assertEquals(listOf("groente", "zuivel-eieren", "overig"), sections.map { it.department })
+        assertEquals(listOf("2 wortel", "500 g pompoen", "Peterselie", "1 ui"), sections[0].lines.map { it.text })
+        assertEquals(listOf("200 g geitenkaas", "Melk"), sections[1].lines.map { it.text })
+        assertEquals(listOf("Koffiefilters"), sections[2].lines.map { it.text })
+    }
+
+    @Test
     fun `a combined line is ticked only when all its items are`() {
         val partly =
             aggregator

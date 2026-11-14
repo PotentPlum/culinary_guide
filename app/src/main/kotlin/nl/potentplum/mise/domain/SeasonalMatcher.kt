@@ -25,9 +25,13 @@ class SeasonalMatcher(
             vegetable.id to Regex("(?<!\\p{L})(${forms.sortedByDescending { it.length }.joinToString("|") { Regex.escape(it) }})(?!\\p{L})")
         }
 
+    /** In the order of the ingredients, so the first is the recipe's main vegetable (its picture without a photo, spec §6.7). */
     fun vegetableIds(ingredients: List<IngredientRef>): Set<String> {
         val texts = ingredients.map { TextMatch.fold(it.name ?: it.text) }
-        return patterns.filter { (_, pattern) -> texts.any { pattern.containsMatchIn(it) } }.map { it.first }.toSet()
+        return patterns
+            .mapNotNull { (id, pattern) -> texts.indexOfFirst { pattern.containsMatchIn(it) }.takeIf { it >= 0 }?.let { id to it } }
+            .sortedBy { it.second }
+            .mapTo(LinkedHashSet()) { it.first }
     }
 
     companion object {

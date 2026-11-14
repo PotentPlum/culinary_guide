@@ -6,6 +6,8 @@ import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.intl.LocaleList
+import androidx.compose.ui.text.style.Hyphens
 import androidx.compose.ui.unit.em
 import androidx.compose.ui.unit.sp
 import nl.potentplum.mise.R
@@ -88,3 +90,9 @@ object MiseTextStyles {
             letterSpacing = 0.04.em,
         )
 }
+
+/**
+ * For user text that can hold one long Dutch compound ("Boerenkoolstamppot"): hyphenated with Dutch rules when a word is
+ * wider than its line, instead of being split at an arbitrary letter (spec §15.3).
+ */
+fun TextStyle.dutchHyphenated(): TextStyle = copy(hyphens = Hyphens.Auto, localeList = LocaleList("nl"))

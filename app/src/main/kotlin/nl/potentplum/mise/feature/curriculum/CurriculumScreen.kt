@@ -31,6 +31,7 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.pluralStringResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.semantics.heading
 import androidx.compose.ui.semantics.semantics
@@ -171,32 +172,43 @@ internal fun Progress(
     label: String,
 ) {
     Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
+        // No stop dot: at 0 % it reads as a step already taken.
         LinearProgressIndicator(
             progress = { steps.fraction },
             modifier = Modifier.fillMaxWidth(),
             trackColor = MiseTheme.colors.line,
+            drawStopIndicator = {},
         )
-        Text(label, style = MaterialTheme.typography.bodySmall, color = MiseTheme.colors.inkSoft)
+        Text(
+            if (steps.done == 0) pluralStringResource(R.plurals.curriculum_not_started, steps.total, steps.total) else label,
+            style = MaterialTheme.typography.bodySmall,
+            color = MiseTheme.colors.inkSoft,
+        )
     }
 }
 
+/** The next open step: on Opleiding ("Volgende stap") and, once started, on Vandaag ("Verder leren", with [progress]). */
 @Composable
-private fun NextStepCard(
+internal fun NextStepCard(
     next: NextStep,
+    modifier: Modifier = Modifier,
+    eyebrow: String = stringResource(R.string.curriculum_next_eyebrow),
+    progress: String? = null,
     onOpen: () -> Unit,
 ) {
     Surface(
         shape = RoundedCornerShape(12.dp),
         color = MaterialTheme.colorScheme.surfaceContainerLow,
         border = BorderStroke(1.dp, MiseTheme.colors.line),
+        modifier = modifier.fillMaxWidth(),
     ) {
         Column(Modifier.padding(16.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
-            Eyebrow(stringResource(R.string.curriculum_next_eyebrow))
+            Eyebrow(eyebrow)
             val kind =
                 when (next) {
-                    is NextStep.Lesson -> stringResource(R.string.curriculum_next_lesson, next.course.id)
-                    is NextStep.Exercise -> stringResource(R.string.curriculum_next_exercise, next.course.id)
-                    is NextStep.Check -> stringResource(R.string.curriculum_next_check, next.course.id)
+                    is NextStep.Lesson -> stringResource(R.string.curriculum_next_lesson)
+                    is NextStep.Exercise -> stringResource(R.string.curriculum_next_exercise)
+                    is NextStep.Check -> stringResource(R.string.curriculum_next_check)
                 }
             Text(kind, style = MaterialTheme.typography.labelLarge, color = MiseTheme.colors.inkSoft)
             val title =
@@ -207,6 +219,7 @@ private fun NextStepCard(
                 }
             Text(title, style = MaterialTheme.typography.titleLarge)
             Text(next.course.title, style = MaterialTheme.typography.bodyMedium, color = MiseTheme.colors.inkSoft)
+            if (progress != null) Text(progress, style = MaterialTheme.typography.bodySmall, color = MiseTheme.colors.inkSoft)
             Button(onClick = onOpen) { Text(stringResource(R.string.curriculum_next_open)) }
         }
     }
@@ -229,7 +242,7 @@ private fun CourseCard(
             Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(8.dp)) {
                 val kind =
                     when (course.kind) {
-                        CourseKind.COURSE -> course.id
+                        CourseKind.COURSE -> stringResource(R.string.curriculum_course)
                         CourseKind.MILESTONE -> stringResource(R.string.curriculum_milestone)
                         CourseKind.CAPSTONE -> stringResource(R.string.curriculum_capstone)
                     }

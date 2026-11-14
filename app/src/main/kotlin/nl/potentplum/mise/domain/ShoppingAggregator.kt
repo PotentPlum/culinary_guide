@@ -24,6 +24,14 @@ data class ShoppingListLine(
     /** The source recipes, as chips (spec §6.14). */
     val recipes: List<String>,
     val checked: Boolean,
+    /** The ingredient name, when parsed; it decides the department (spec §11.7). */
+    val name: String? = null,
+)
+
+/** One department of the list, e.g. Groente, with its lines. */
+data class ShoppingSection(
+    val department: String,
+    val lines: List<ShoppingListLine>,
 )
 
 data class ShoppingList(
@@ -34,6 +42,17 @@ data class ShoppingList(
 ) {
     val isEmpty: Boolean get() = combined.isEmpty() && manual.isEmpty()
     val lines: List<ShoppingListLine> get() = combined + manual
+
+    /**
+     * The lines by shop department, in the departments' order (spec §6.14). Within one: lines from recipes A–Z, then
+     * manual items in the order added; ticked lines last. Empty departments are left out.
+     */
+    fun byDepartment(classifier: DepartmentClassifier): List<ShoppingSection> {
+        val grouped = lines.groupBy { classifier.departmentOf(it.name ?: it.text) }
+        return classifier.departmentIds.mapNotNull { id ->
+            grouped[id]?.let { ShoppingSection(id, it.sortedBy(ShoppingListLine::checked)) }
+        }
+    }
 }
 
 /**
@@ -103,6 +122,7 @@ class ShoppingAggregator(
             itemIds = group.map { it.id },
             recipes = group.mapNotNull { it.recipeTitle }.distinct(),
             checked = group.all { it.checked },
+            name = first.name?.trim()?.takeIf { it.isNotEmpty() },
         )
     }
 

@@ -6,6 +6,7 @@ import kotlinx.serialization.json.int
 import kotlinx.serialization.json.jsonObject
 import kotlinx.serialization.json.jsonPrimitive
 import nl.potentplum.mise.content.model.ArchetypesFile
+import nl.potentplum.mise.content.model.DepartmentsFile
 import nl.potentplum.mise.content.model.DisciplinesFile
 import nl.potentplum.mise.content.model.FacetsFile
 import nl.potentplum.mise.content.model.TechniquesFile
@@ -38,6 +39,7 @@ class ContentParser(
             disciplines = decode(read, DISCIPLINES, DisciplinesFile.serializer()).disciplines,
             archetypes = decode(read, ARCHETYPES, ArchetypesFile.serializer()).archetypes,
             units = decode(read, UNITS, UnitsFile.serializer()).units,
+            departments = decode(read, DEPARTMENTS, DepartmentsFile.serializer()).departments,
         )
 
     private fun <T> decode(
@@ -67,5 +69,6 @@ class ContentParser(
         const val DISCIPLINES = "disciplines.json"
         const val ARCHETYPES = "archetypes.json"
         const val UNITS = "units.json"
+        const val DEPARTMENTS = "departments.json"
     }
 }

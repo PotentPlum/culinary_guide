@@ -19,6 +19,7 @@ import nl.potentplum.mise.content.model.DisciplineId
 import nl.potentplum.mise.core.util.MiseClock
 import nl.potentplum.mise.data.db.entity.IngredientMode
 import nl.potentplum.mise.data.db.entity.QuestEntity
+import nl.potentplum.mise.data.db.entity.QuestIngredient
 import nl.potentplum.mise.data.db.entity.TagKey
 import nl.potentplum.mise.data.db.entity.UsageFeature
 import nl.potentplum.mise.data.repo.QuestRepository
@@ -100,29 +101,21 @@ class QuestGenerator
                 throw ClaudeError.InvalidResponse
             }
             val chosenVeg = reply.string("chosenVegId")?.takeIf { it in plan.inSeason }?.let(content::vegetable)
-            val vegId =
+            // The first ingredient fills the quest's own columns; the rest go to moreIngredients (spec §6.11).
+            val chosen =
                 when (params.ingredientMode) {
-                    IngredientMode.CUSTOM -> null
-                    IngredientMode.SEASONAL -> params.vegId
-                    IngredientMode.SURPRISE -> chosenVeg?.id
-                }
-            val ingredient =
-                when (params.ingredientMode) {
-                    IngredientMode.CUSTOM -> {
-                        params.ingredient.trim()
-                    }
-
-                    IngredientMode.SEASONAL -> {
-                        params.vegId
-                            ?.let(content::vegetable)
-                            ?.nl
-                            ?.lowercase() ?: params.ingredient
-                    }
-
                     IngredientMode.SURPRISE -> {
-                        chosenVeg?.nl?.lowercase() ?: reply.string("chosenIngredient").orEmpty()
+                        listOf(
+                            chosenVeg?.let { QuestIngredient(it.nl.lowercase(), it.id) }
+                                ?: QuestIngredient(reply.string("chosenIngredient").orEmpty()),
+                        )
+                    }
+
+                    else -> {
+                        params.chosenIngredients(content)
                     }
                 }
+            val first = chosen.firstOrNull() ?: QuestIngredient("")
             val now = clock.nowMillis()
             val saved = recipe.copy(createdAt = now, updatedAt = now)
             val quest =
@@ -131,10 +124,10 @@ class QuestGenerator
                     createdAt = now,
                     isDaily = params.isDaily,
                     ingredientMode = params.ingredientMode,
-                    ingredient = ingredient,
-                    vegId = vegId,
-                    quantity = params.quantity.takeIf { params.ingredientMode == IngredientMode.CUSTOM },
-                    unit = params.unit.takeIf { params.ingredientMode == IngredientMode.CUSTOM },
+                    ingredient = first.name,
+                    vegId = first.vegId,
+                    quantity = first.quantity,
+                    unit = first.unit,
                     questType = params.questType,
                     requestedDifficulty = params.difficulty,
                     focusDiscipline = plan.focus,
@@ -150,6 +143,7 @@ class QuestGenerator
                     dishType = saved.tagValues(TagKey.DISH_TYPE).firstOrNull().orEmpty(),
                     tips = (reply["recipe"] as? JsonObject)?.strings("tips").orEmpty(),
                     recipeId = saved.id,
+                    moreIngredients = chosen.drop(1),
                 )
             quests.insert(quest, saved)
             return quest

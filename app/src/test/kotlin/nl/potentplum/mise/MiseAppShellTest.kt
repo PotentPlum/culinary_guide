@@ -3,6 +3,7 @@ package nl.potentplum.mise
 import androidx.compose.ui.test.assertCountEquals
 import androidx.compose.ui.test.junit4.createAndroidComposeRule
 import androidx.compose.ui.test.onAllNodesWithText
+import androidx.compose.ui.test.onFirst
 import androidx.compose.ui.test.onLast
 import androidx.compose.ui.test.onNodeWithContentDescription
 import androidx.compose.ui.test.onNodeWithText
@@ -11,6 +12,7 @@ import dagger.hilt.android.testing.HiltAndroidRule
 import dagger.hilt.android.testing.HiltAndroidTest
 import dagger.hilt.android.testing.HiltTestApplication
 import nl.potentplum.mise.core.designsystem.MiseTheme
+import nl.potentplum.mise.testing.reveal
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
@@ -47,11 +49,18 @@ class MiseAppShellTest {
     @Test
     fun `the bottom bar switches between the five tabs`() {
         launch()
-        listOf("Seizoen", "Recepten", "Boodschappen", "Dagboek", "Vandaag").forEach { label ->
+        // Each tab's label and the title of the screen it opens; "Lijstje" opens Boodschappen.
+        val titles = mapOf("Seizoen" to "Seizoen", "Recepten" to "Recepten", "Lijstje" to "Boodschappen", "Dagboek" to "Dagboek")
+        titles.forEach { (label, title) ->
             tab(label).performClick()
-            // The tab label and the screen's top bar title.
-            compose.onAllNodesWithText(label, useUnmergedTree = true).assertCountEquals(2)
+            if (label == title) {
+                compose.onAllNodesWithText(label, useUnmergedTree = true).assertCountEquals(2)
+            } else {
+                compose.onAllNodesWithText(label, useUnmergedTree = true).assertCountEquals(1)
+                compose.onAllNodesWithText(title, useUnmergedTree = true).assertCountEquals(1)
+            }
         }
+        tab("Vandaag").performClick()
         compose.onNodeWithText("Wat kook ik vandaag?").assertExists()
     }
 
@@ -70,16 +79,30 @@ class MiseAppShellTest {
     @Test
     fun `each tab keeps its own back stack`() {
         launch()
+        // A vegetable opened from Seizoen stacks on that tab.
+        tab("Seizoen").performClick()
+        compose.reveal("Pompoen")
+        compose.onAllNodesWithText("Pompoen").onFirst().performClick()
+        compose.onNodeWithContentDescription("Terug").assertExists()
+
+        tab("Recepten").performClick()
+        compose.onNodeWithContentDescription("Terug").assertDoesNotExist()
+
+        tab("Seizoen").performClick()
+        // Pompoen was opened from Seizoen, so it is restored there.
+        compose.onNodeWithContentDescription("Terug").assertExists()
+    }
+
+    @Test
+    fun `app-wide pages from the menu have no bottom bar`() {
+        launch()
         compose.onNodeWithContentDescription("Meer opties").performClick()
         compose.onNodeWithText("Over Mise").performClick()
         compose.onNodeWithContentDescription("Terug").assertExists()
-
-        tab("Seizoen").performClick()
-        compose.onNodeWithContentDescription("Terug").assertDoesNotExist()
-
-        tab("Vandaag").performClick()
-        // Over Mise was opened from Vandaag, so it is restored there.
-        compose.onNodeWithContentDescription("Terug").assertExists()
+        // They belong to no tab, so no tab can be highlighted; back is the way out (spec §6.1).
+        compose.onAllNodesWithText("Lijstje", useUnmergedTree = true).assertCountEquals(0)
+        compose.onNodeWithContentDescription("Terug").performClick()
+        tab("Lijstje").assertExists()
     }
 
     @Test

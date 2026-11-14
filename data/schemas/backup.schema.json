@@ -173,7 +173,22 @@
         "why": { "type": "string" },
         "dishType": { "type": "string" },
         "tips": { "$ref": "#/$defs/stringList" },
-        "recipeId": { "$ref": "#/$defs/id" }
+        "recipeId": { "$ref": "#/$defs/id" },
+        "moreIngredients": {
+          "type": "array",
+          "maxItems": 4,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["name"],
+            "properties": {
+              "name": { "type": "string", "minLength": 1 },
+              "vegId": { "$ref": "#/$defs/optionalString" },
+              "quantity": { "$ref": "#/$defs/optionalNumber" },
+              "unit": { "$ref": "#/$defs/optionalString" }
+            }
+          }
+        }
       }
     },
     "attempt": {

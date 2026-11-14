@@ -18,11 +18,13 @@ import nl.potentplum.mise.claude.enrich.EnrichmentFixture
 import nl.potentplum.mise.content.model.DisciplineId
 import nl.potentplum.mise.core.util.MiseClock
 import nl.potentplum.mise.data.db.entity.IngredientMode
+import nl.potentplum.mise.data.db.entity.QuestIngredient
 import nl.potentplum.mise.data.db.entity.QuestStatus
 import nl.potentplum.mise.data.db.entity.QuestType
 import nl.potentplum.mise.data.db.entity.RecipeSourceType
 import nl.potentplum.mise.data.db.entity.TagKey
 import nl.potentplum.mise.data.db.entity.TimeLimit
+import nl.potentplum.mise.data.db.entity.ingredients
 import nl.potentplum.mise.data.repo.QuestRepository
 import nl.potentplum.mise.data.settings.SettingsRepository
 import nl.potentplum.mise.domain.Difficulty
@@ -103,14 +105,14 @@ class QuestGeneratorTest {
             assertEquals(IngredientMode.SEASONAL, params.ingredientMode)
             assertTrue(params.isDaily)
             assertEquals(params, generator.dailyParams())
-            assertTrue(params.vegId != generator.dailyParams(offset = 1).vegId)
+            assertTrue(params.vegIds != generator.dailyParams(offset = 1).vegIds)
 
             val plan = generator.plan(params)
             assertEquals(Difficulty.BEGINNER, plan.difficulty)
             assertEquals(DisciplineId.MECHANICAL, plan.focus)
 
             val quest = generator.generate(plan)
-            val veg = TestContent.content.vegetable(params.vegId!!)!!
+            val veg = TestContent.content.vegetable(params.vegIds.single())!!
             val text = f.requestText()
             assertTrue(text, text.startsWith("Ingrediënt: ${veg.nl.lowercase()} (seizoensgroente, id: ${veg.id})"))
             assertTrue(text, text.contains("Moeilijkheid: basis (BEGINNER)"))
@@ -162,9 +164,7 @@ class QuestGeneratorTest {
             val params =
                 QuestParams(
                     ingredientMode = IngredientMode.CUSTOM,
-                    ingredient = "restje kool ",
-                    quantity = 0.5,
-                    unit = "kg",
+                    ingredients = listOf(QuestIngredient("restje kool ", quantity = 0.5, unit = "kg")),
                     techniqueId = "julienne",
                     cuisine = "Italiaans",
                     timeLimit = TimeLimit.UNDER_30,
@@ -183,7 +183,49 @@ class QuestGeneratorTest {
                 text.contains("Niet herhalen (eerdere quests, techniek en titel):\n- Groenten roosteren: Geroosterde pastinaak"),
             )
             assertEquals("restje kool", quest.ingredient)
-            assertEquals(params.copy(ingredient = "restje kool"), QuestParams.of(quest))
+            assertEquals(
+                params.copy(ingredients = listOf(QuestIngredient("restje kool", quantity = 0.5, unit = "kg"))),
+                QuestParams.of(quest),
+            )
+        }
+
+    @Test
+    fun `several ingredients all go to Claude and onto the quest, in order`() =
+        runTest {
+            val (generator, _, f) = setUp()
+            val custom =
+                QuestParams(
+                    ingredientMode = IngredientMode.CUSTOM,
+                    ingredients =
+                        listOf(
+                            QuestIngredient("restje kool", quantity = 0.5, unit = "kg"),
+                            QuestIngredient("  "),
+                            QuestIngredient("zure room"),
+                        ),
+                )
+            val quest = generator.generate(generator.plan(custom))
+            val text = f.requestText()
+            assertTrue(text, text.startsWith("Ingrediënten (gebruik ze allemaal): restje kool (hoeveelheid: 0,5 kg); zure room\n"))
+            assertEquals("restje kool", quest.ingredient)
+            assertEquals(0.5, quest.quantity)
+            assertEquals(listOf(QuestIngredient("zure room")), quest.moreIngredients)
+            // Andere quest asks for the same, without the empty row.
+            assertEquals(
+                listOf(QuestIngredient("restje kool", quantity = 0.5, unit = "kg"), QuestIngredient("zure room")),
+                QuestParams.of(quest).ingredients,
+            )
+
+            val seasonal = QuestParams(ingredientMode = IngredientMode.SEASONAL, vegIds = listOf("leek", "pumpkin"))
+            val veggie = generator.generate(generator.plan(seasonal))
+            assertTrue(
+                f.requestText(),
+                f.requestText().startsWith(
+                    "Ingrediënten (gebruik ze allemaal): prei (seizoensgroente, id: leek); pompoen (seizoensgroente, id: pumpkin)",
+                ),
+            )
+            assertEquals("leek", veggie.vegId)
+            assertEquals(listOf("leek", "pumpkin"), veggie.ingredients.map { it.vegId })
+            assertEquals(seasonal, QuestParams.of(veggie))
         }
 
     @Test

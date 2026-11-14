@@ -44,11 +44,17 @@ object JsonLdRecipeParser {
     private val BLOCK_CLOSERS = Regex("</(p|li|td|th|div|h[1-6]|section|article)>", RegexOption.IGNORE_CASE)
     private val BREAKS = Regex("<br[${Js.WHITESPACE}]*/?>[${Js.WHITESPACE}]*", RegexOption.IGNORE_CASE)
     private val TAGS = Regex("<[^>]+>")
+
+    /** A real tag after decoding (`&lt;a href=…&gt;`), not a comparison like "< 5 min". */
+    private val DECODED_TAGS = Regex("</?[a-zA-Z][^<>]*>")
     private val DECIMAL_ENTITY = Regex("&#(\\d+);")
     private val HEX_ENTITY = Regex("&#x([0-9a-f]+);", RegexOption.IGNORE_CASE)
     private val WHITESPACE_RUN = Regex("[${Js.WHITESPACE}]+")
 
-    /** Removes tags (block closers and `<br>` become a space) and decodes common entities. */
+    /**
+     * Removes tags (block closers and `<br>` become a space) and decodes common entities. Tags that only appear once
+     * entities are decoded (some sites encode their links twice) are removed too, so no markup reaches the preview.
+     */
     fun stripHtml(text: String): String {
         var result = BLOCK_CLOSERS.replace(text, " ")
         result = BREAKS.replace(result, " ")
@@ -63,7 +69,8 @@ object JsonLdRecipeParser {
                 .replace("&apos;", "'")
                 .replace("&nbsp;", " ")
         result = DECIMAL_ENTITY.replace(result) { fromCharCode(it.groupValues[1].toBigInteger()) }
-        return HEX_ENTITY.replace(result) { fromCharCode(it.groupValues[1].toBigInteger(16)) }
+        result = HEX_ENTITY.replace(result) { fromCharCode(it.groupValues[1].toBigInteger(16)) }
+        return DECODED_TAGS.replace(result, "")
     }
 
     /** `String.fromCharCode`: one UTF-16 unit, modulo 2^16. */

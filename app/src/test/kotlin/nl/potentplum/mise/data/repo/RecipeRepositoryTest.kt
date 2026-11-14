@@ -36,7 +36,14 @@ class RecipeRepositoryTest {
                     MiseDatabase::class.java,
                 ).allowMainThreadQueries()
                 .build()
-        repository = RecipeRepository(db.recipeDao(), db.attemptDao(), FakeContentRepository(), MiseClock.fixed(LocalDate.of(2026, 10, 22)))
+        repository =
+            RecipeRepository(
+                db.recipeDao(),
+                db.attemptDao(),
+                db.questDao(),
+                FakeContentRepository(),
+                MiseClock.fixed(LocalDate.of(2026, 10, 22)),
+            )
     }
 
     @After

@@ -26,7 +26,10 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.res.pluralStringResource
+import androidx.compose.ui.semantics.clearAndSetSemantics
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
@@ -34,12 +37,14 @@ import coil3.compose.AsyncImage
 import nl.potentplum.mise.R
 import nl.potentplum.mise.core.designsystem.Contrast
 import nl.potentplum.mise.core.designsystem.MiseTheme
+import nl.potentplum.mise.core.designsystem.dutchHyphenated
 import nl.potentplum.mise.core.designsystem.hexColor
 import java.io.File
 
 /**
- * A library card (spec §6.7): the image on top, or without one a small cuisine-coloured swatch beside the text; then
- * title, source, total time, cooked count and the vegetables in it that are in season now.
+ * A library card (spec §6.7): the image on top, or without one a small swatch beside the text: the recipe's main vegetable
+ * (its colour and initials, the token used everywhere), else the cuisine colour; then title, source, total time, cooked
+ * count and the vegetables in it that are in season now.
  */
 @Composable
 fun RecipeCard(
@@ -53,6 +58,7 @@ fun RecipeCard(
     inSeason: List<VegTokenData>,
     onClick: () -> Unit,
     modifier: Modifier = Modifier,
+    mainVegetable: VegTokenData? = null,
 ) {
     Card(
         onClick = onClick,
@@ -66,9 +72,11 @@ fun RecipeCard(
             RecipeImage(imagePath, null, Modifier.fillMaxWidth().height(140.dp))
             CardDetails(title, source, totalMinutes, cookedCount, isFavorite, inSeason, Modifier.padding(12.dp))
         } else {
-            // Most recipes from cookbooks or typed in have no photo: a small swatch keeps the library dense.
+            // Most recipes from cookbooks or typed in have no photo: a small swatch keeps the library dense, and the main
+            // vegetable's colour and initials make the list scan by what is in it (boerenkool green, bieten red).
             Row(Modifier.padding(12.dp), horizontalArrangement = Arrangement.spacedBy(12.dp)) {
-                RecipeImage(null, placeholderColor, Modifier.size(64.dp).clip(MaterialTheme.shapes.small))
+                val swatch = Modifier.size(64.dp).clip(MaterialTheme.shapes.small)
+                if (mainVegetable != null) VegSwatch(mainVegetable, swatch) else RecipeImage(null, placeholderColor, swatch)
                 CardDetails(title, source, totalMinutes, cookedCount, isFavorite, inSeason, Modifier.weight(1f))
             }
         }
@@ -90,9 +98,7 @@ private fun CardDetails(
         Row(verticalAlignment = Alignment.Top) {
             Text(
                 title,
-                style = MaterialTheme.typography.titleMedium,
-                maxLines = 2,
-                overflow = TextOverflow.Ellipsis,
+                style = MaterialTheme.typography.titleMedium.dutchHyphenated(),
                 modifier = Modifier.weight(1f),
             )
             if (isFavorite) Icon(Icons.Filled.Favorite, contentDescription = null, tint = MaterialTheme.colorScheme.tertiary)
@@ -142,6 +148,32 @@ fun RecipeImage(
         Box(modifier.background(fill), contentAlignment = Alignment.Center) {
             Icon(Icons.Outlined.Restaurant, contentDescription = null, tint = Contrast.inkOrWhiteOn(fill).copy(alpha = 0.6f))
         }
+    }
+}
+
+internal fun vegSwatchTag(vegetableId: String) = "veg-swatch:$vegetableId"
+
+/** A square of the vegetable's colour with its initials in ink or white, whichever reads better (spec §5). */
+@Composable
+private fun VegSwatch(
+    vegetable: VegTokenData,
+    modifier: Modifier,
+) {
+    // Decoration: the card is read by its title. The tag lets tests find which vegetable is shown.
+    Box(
+        modifier
+            .background(vegetable.color)
+            .testTag(vegSwatchTag(vegetable.id))
+            .clearAndSetSemantics {},
+        contentAlignment = Alignment.Center,
+    ) {
+        Text(
+            vegInitials(vegetable.name),
+            color = Contrast.inkOrWhiteOn(vegetable.color),
+            style = MaterialTheme.typography.titleLarge.copy(fontWeight = FontWeight.SemiBold),
+            maxLines = 1,
+            softWrap = false,
+        )
     }
 }
 

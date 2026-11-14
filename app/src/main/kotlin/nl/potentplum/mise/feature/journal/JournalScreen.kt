@@ -5,10 +5,6 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
-import androidx.compose.material3.SegmentedButton
-import androidx.compose.material3.SegmentedButtonDefaults
-import androidx.compose.material3.SingleChoiceSegmentedButtonRow
-import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
@@ -24,6 +20,7 @@ import nl.potentplum.mise.R
 import nl.potentplum.mise.core.designsystem.component.LocalMiseSnackbar
 import nl.potentplum.mise.core.designsystem.component.MiseTopAppBar
 import nl.potentplum.mise.core.designsystem.component.OverflowItem
+import nl.potentplum.mise.core.designsystem.component.SegmentedChoice
 import nl.potentplum.mise.feature.quests.QuestHistory
 
 enum class JournalSegment(
@@ -83,19 +80,13 @@ fun JournalScreen(
                 .fillMaxSize()
                 .padding(padding),
         ) {
-            SingleChoiceSegmentedButtonRow(
-                Modifier
-                    .fillMaxWidth()
-                    .padding(horizontal = 16.dp, vertical = 8.dp),
-            ) {
-                JournalSegment.entries.forEachIndexed { index, entry ->
-                    SegmentedButton(
-                        selected = segment == entry,
-                        onClick = { segment = entry },
-                        shape = SegmentedButtonDefaults.itemShape(index, JournalSegment.entries.size),
-                    ) { Text(stringResource(entry.label)) }
-                }
-            }
+            SegmentedChoice(
+                options = JournalSegment.entries,
+                selected = segment,
+                labels = JournalSegment.entries.map { stringResource(it.label) },
+                onSelect = { segment = it },
+                modifier = Modifier.padding(horizontal = 16.dp, vertical = 8.dp),
+            )
             when (segment) {
                 JournalSegment.QUESTS -> {
                     QuestHistory(onOpenQuest = onOpenQuest, onNewQuest = onNewQuest)

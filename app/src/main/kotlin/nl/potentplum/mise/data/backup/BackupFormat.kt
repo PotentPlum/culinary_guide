@@ -12,6 +12,7 @@ import nl.potentplum.mise.data.db.entity.IngredientMode
 import nl.potentplum.mise.data.db.entity.LessonProgressEntity
 import nl.potentplum.mise.data.db.entity.ParseSource
 import nl.potentplum.mise.data.db.entity.QuestEntity
+import nl.potentplum.mise.data.db.entity.QuestIngredient
 import nl.potentplum.mise.data.db.entity.QuestStatus
 import nl.potentplum.mise.data.db.entity.QuestType
 import nl.potentplum.mise.data.db.entity.RecipeSourceType
@@ -159,6 +160,8 @@ data class BackupQuest(
     val dishType: String,
     val tips: List<String> = emptyList(),
     val recipeId: String,
+    /** Ingredients after the first, for quests that use several (spec §6.11). */
+    val moreIngredients: List<QuestIngredient> = emptyList(),
 )
 
 @Serializable
@@ -347,6 +350,7 @@ fun QuestEntity.toBackup() =
         dishType,
         tips,
         recipeId,
+        moreIngredients,
     )
 
 fun BackupQuest.toEntity() =
@@ -376,6 +380,7 @@ fun BackupQuest.toEntity() =
         dishType,
         tips,
         recipeId,
+        moreIngredients,
     )
 
 fun AttemptEntity.toBackup(hasPhoto: Boolean) =

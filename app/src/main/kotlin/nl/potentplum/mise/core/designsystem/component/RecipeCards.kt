@@ -28,6 +28,7 @@ import androidx.compose.ui.unit.dp
 import nl.potentplum.mise.R
 import nl.potentplum.mise.content.model.CuratedRecipe
 import nl.potentplum.mise.core.designsystem.MiseTheme
+import nl.potentplum.mise.core.designsystem.dutchHyphenated
 import nl.potentplum.mise.domain.Difficulty
 
 /** "25 min" with a clock icon; nothing when the time is unknown. */
@@ -72,12 +73,12 @@ fun SuggestionCard(
 ) {
     MiseCard(onClick = onOpen, modifier = modifier) {
         Column(Modifier.padding(16.dp), verticalArrangement = Arrangement.spacedBy(6.dp)) {
-            Text(title, style = MaterialTheme.typography.titleMedium, maxLines = 2, overflow = TextOverflow.Ellipsis)
+            Text(title, style = MaterialTheme.typography.titleMedium.dutchHyphenated())
             TotalTime(totalMinutes)
             if (reason.isNotBlank()) {
                 Text(reason, style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
             }
-            Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(8.dp, Alignment.End)) {
+            ActionRow(Modifier.fillMaxWidth()) {
                 TextButton(onClick = onDismiss) { Text(stringResource(R.string.today_dismiss)) }
                 OutlinedButton(onClick = onCookTonight) { Text(stringResource(R.string.today_tonight_action)) }
             }
@@ -99,13 +100,11 @@ fun TonightCard(
     MiseCard(onClick = onOpen, modifier = modifier) {
         Column(Modifier.padding(16.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
             Eyebrow(stringResource(R.string.today_tonight_title), color = MaterialTheme.colorScheme.primary)
-            Text(title, style = MaterialTheme.typography.headlineSmall, maxLines = 3, overflow = TextOverflow.Ellipsis)
+            Text(title, style = MaterialTheme.typography.headlineSmall.dutchHyphenated())
             TotalTime(totalMinutes)
-            Button(onClick = onCook, modifier = Modifier.fillMaxWidth()) { Text(stringResource(R.string.recipes_cooking_mode)) }
-            Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-                OutlinedButton(onClick = onAddToShopping, modifier = Modifier.weight(1f)) {
-                    Text(stringResource(R.string.recipe_add_to_shopping), maxLines = 1, overflow = TextOverflow.Ellipsis)
-                }
+            Button(onClick = onCook, modifier = Modifier.fillMaxWidth()) { Text(stringResource(R.string.cook_step_by_step)) }
+            ActionRow(Modifier.fillMaxWidth(), alignment = Alignment.Start, fill = true) {
+                OutlinedButton(onClick = onAddToShopping) { Text(stringResource(R.string.recipe_add_to_shopping)) }
                 TextButton(onClick = onUnpin) { Text(stringResource(R.string.today_tonight_unpin)) }
             }
         }

@@ -8,6 +8,7 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.navigationBarsPadding
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.selection.toggleable
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.outlined.AlarmOn
 import androidx.compose.material.icons.outlined.CheckCircle
@@ -20,11 +21,14 @@ import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.Surface
+import androidx.compose.material3.Switch
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalResources
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.semantics.Role
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
@@ -74,7 +78,7 @@ fun durationLabel(
 @Composable
 fun durationLabel(seconds: Int): String = durationLabel(LocalResources.current, seconds)
 
-/** A timer chip in cook mode (spec §6.10): idle "12 min", running "Stap 4 · nog ~9 min", done "Stap 4 · klaar". */
+/** A timer chip in cook mode (spec §6.10): idle "Timer · 12 min", running "Stap 4 · nog ~9 min", done "Stap 4 · klaar". */
 @Composable
 fun TimerChip(
     state: TimerChipState,
@@ -84,7 +88,8 @@ fun TimerChip(
     val (label, icon) =
         when (state) {
             is TimerChipState.Idle -> {
-                durationLabel(state.seconds) to Icons.Outlined.Timer
+                // "Timer · 5 min": a bare "5 min" reads as information, not as something to tap.
+                stringResource(R.string.cook_timer_idle, durationLabel(state.seconds)) to Icons.Outlined.Timer
             }
 
             is TimerChipState.Running -> {
@@ -121,6 +126,8 @@ fun TimerChip(
 @Composable
 fun RecipeActionBar(
     resumeStep: Int?,
+    cookingMode: Boolean,
+    onCookingMode: (Boolean) -> Unit,
     onCook: () -> Unit,
     onCooked: () -> Unit,
     modifier: Modifier = Modifier,
@@ -128,22 +135,42 @@ fun RecipeActionBar(
     Surface(modifier = modifier.fillMaxWidth().avoidedBySnackbar(), color = MaterialTheme.colorScheme.surface) {
         Column {
             HorizontalDivider(color = MaterialTheme.colorScheme.outlineVariant)
+            // Kookmodus keeps the screen on while you cook from this page (spec §6.8); the whole row is the switch.
             Row(
                 Modifier
-                    .navigationBarsPadding()
-                    .padding(horizontal = 16.dp, vertical = 12.dp),
+                    .fillMaxWidth()
+                    .toggleable(value = cookingMode, onValueChange = onCookingMode, role = Role.Switch)
+                    .padding(start = 16.dp, end = 16.dp, top = 8.dp),
+                verticalAlignment = Alignment.CenterVertically,
                 horizontalArrangement = Arrangement.spacedBy(12.dp),
             ) {
-                Button(onClick = onCook, modifier = Modifier.weight(1f)) {
+                Column(Modifier.weight(1f)) {
+                    Text(stringResource(R.string.recipes_cooking_mode), style = MaterialTheme.typography.titleSmall)
                     Text(
-                        text =
-                            if (resumeStep != null) {
-                                stringResource(R.string.cook_resume, resumeStep)
-                            } else {
-                                stringResource(R.string.recipes_cooking_mode)
-                            },
-                        maxLines = 1,
-                        overflow = TextOverflow.Ellipsis,
+                        stringResource(R.string.recipes_cooking_mode_active),
+                        style = MaterialTheme.typography.bodySmall,
+                        color = MiseTheme.colors.inkSoft,
+                    )
+                }
+                Switch(checked = cookingMode, onCheckedChange = null)
+            }
+            // Side by side with the cook button taking the spare width; stacked when a label would not fit on one line.
+            ActionRow(
+                Modifier
+                    .fillMaxWidth()
+                    .navigationBarsPadding()
+                    .padding(horizontal = 16.dp, vertical = 12.dp),
+                alignment = Alignment.Start,
+                fill = true,
+                spacing = 12.dp,
+            ) {
+                Button(onClick = onCook) {
+                    Text(
+                        if (resumeStep != null) {
+                            stringResource(R.string.cook_resume, resumeStep)
+                        } else {
+                            stringResource(R.string.cook_step_by_step)
+                        },
                     )
                 }
                 OutlinedButton(onClick = onCooked) { Text(stringResource(R.string.recipe_action_cooked)) }
@@ -162,8 +189,8 @@ private fun CookControlsPreview() {
                 TimerChip(TimerChipState.Running(step = 4, remainingMinutes = 9), onClick = {})
                 TimerChip(TimerChipState.Done(step = 2), onClick = {})
             }
-            RecipeActionBar(resumeStep = null, onCook = {}, onCooked = {})
-            RecipeActionBar(resumeStep = 3, onCook = {}, onCooked = {})
+            RecipeActionBar(resumeStep = null, cookingMode = false, onCookingMode = {}, onCook = {}, onCooked = {})
+            RecipeActionBar(resumeStep = 3, cookingMode = true, onCookingMode = {}, onCook = {}, onCooked = {})
         }
     }
 }

@@ -19,6 +19,7 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.pluralStringResource
 import androidx.compose.ui.res.stringResource
@@ -27,6 +28,7 @@ import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import nl.potentplum.mise.R
 import nl.potentplum.mise.core.designsystem.MiseTheme
+import nl.potentplum.mise.core.designsystem.component.ActionRow
 import nl.potentplum.mise.core.designsystem.component.LocalMiseSnackbar
 import nl.potentplum.mise.data.backup.BackupException
 import nl.potentplum.mise.data.backup.RestoreMode
@@ -67,8 +69,8 @@ fun BackupSection(
     Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
         Text(stringResource(R.string.backup_title), style = MaterialTheme.typography.titleMedium)
         Text(stringResource(R.string.backup_sub), style = MaterialTheme.typography.bodySmall, color = MiseTheme.colors.inkSoft)
-        Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-            val idle = state != BackupState.Working
+        val idle = state != BackupState.Working
+        ActionRow(Modifier.fillMaxWidth(), alignment = Alignment.Start) {
             if (showExport) {
                 OutlinedButton(onClick = { exportLauncher.launch(viewModel.fileName()) }, enabled = idle) {
                     Text(stringResource(R.string.backup_export))

@@ -56,7 +56,7 @@ fun CourseScreen(
         (state as? Loadable.Loaded)
             ?.value
             ?.summary
-            ?.id
+            ?.title
             .orEmpty()
     CurriculumScaffold(title, state, onBack, onOverflowItem) { detail ->
         val summary = detail.summary
@@ -88,12 +88,14 @@ fun CourseScreen(
                     }
                     if (detail.prerequisites.isNotEmpty()) {
                         Text(
-                            stringResource(R.string.curriculum_prerequisites, detail.prerequisites.joinToString { it.id }),
+                            stringResource(R.string.curriculum_prerequisites),
                             style = MaterialTheme.typography.bodySmall,
                             color = MiseTheme.colors.inkSoft,
                         )
                         detail.prerequisites.forEach { prerequisite ->
-                            LinkRow(prerequisite.title, prerequisite.id) { onCourse(prerequisite.id) }
+                            LinkRow(prerequisite.title, stringResource(R.string.curriculum_hours, hoursLabel(prerequisite.hours))) {
+                                onCourse(prerequisite.id)
+                            }
                         }
                     }
                     if (detail.steps.total > 0) {

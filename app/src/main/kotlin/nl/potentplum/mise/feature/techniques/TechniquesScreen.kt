@@ -35,6 +35,7 @@ import nl.potentplum.mise.core.designsystem.component.FilterPills
 import nl.potentplum.mise.core.designsystem.component.MiseSearchField
 import nl.potentplum.mise.core.designsystem.component.MiseTopAppBar
 import nl.potentplum.mise.core.designsystem.component.OverflowItem
+import nl.potentplum.mise.core.designsystem.component.TrailingRow
 import nl.potentplum.mise.core.designsystem.component.difficultyLabel
 import nl.potentplum.mise.domain.Difficulty
 
@@ -116,26 +117,28 @@ private fun TechniqueRow(
     onClick: () -> Unit,
 ) {
     Surface(onClick = onClick, color = Color.Transparent) {
-        Row(
-            Modifier
-                .fillMaxWidth()
-                .padding(horizontal = 16.dp, vertical = 10.dp),
-            verticalAlignment = Alignment.CenterVertically,
-            horizontalArrangement = Arrangement.spacedBy(12.dp),
-        ) {
-            Column(Modifier.weight(1f)) {
-                Text(technique.nl, style = MaterialTheme.typography.titleMedium)
-                Text(technique.subtitle, style = MaterialTheme.typography.bodySmall, color = MiseTheme.colors.inkSoft)
-            }
-            if (technique.isSkill) {
-                DifficultyBadge(Difficulty.of(technique.level))
-            } else {
-                Text(
-                    stringResource(R.string.techniques_reference),
-                    style = MaterialTheme.typography.labelMedium,
-                    color = MiseTheme.colors.inkSoft,
-                )
-            }
-        }
+        TrailingRow(
+            main = {
+                Column {
+                    Text(technique.nl, style = MaterialTheme.typography.titleMedium)
+                    Text(technique.subtitle, style = MaterialTheme.typography.bodySmall, color = MiseTheme.colors.inkSoft)
+                }
+            },
+            trailing = {
+                if (technique.isSkill) {
+                    DifficultyBadge(Difficulty.of(technique.level))
+                } else {
+                    Text(
+                        stringResource(R.string.techniques_reference),
+                        style = MaterialTheme.typography.labelMedium,
+                        color = MiseTheme.colors.inkSoft,
+                    )
+                }
+            },
+            modifier =
+                Modifier
+                    .fillMaxWidth()
+                    .padding(horizontal = 16.dp, vertical = 10.dp),
+        )
     }
 }

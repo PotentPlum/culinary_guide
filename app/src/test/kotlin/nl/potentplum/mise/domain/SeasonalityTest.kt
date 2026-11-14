@@ -58,3 +58,32 @@ class SeasonalityTest {
         assertEquals(5, Seasonality.previousMonth(6))
     }
 }
+
+class SeasonLineTest {
+    private fun line(
+        peak: List<Int>,
+        shoulder: List<Int>,
+        month: Int,
+    ) = SeasonLine.of(peak, shoulder, month)
+
+    @Test
+    fun `in peak it says until when, across the year boundary`() {
+        assertEquals(SeasonLine.PeakUntil(11), line(listOf(9, 10, 11), listOf(8, 12), 10))
+        assertEquals(SeasonLine.PeakUntil(2), line(listOf(11, 12, 1, 2), listOf(3), 12))
+        assertEquals(SeasonLine.PeakAllYear, line((1..12).toList(), emptyList(), 5))
+    }
+
+    @Test
+    fun `in shoulder it says when the peak comes, or how long it stays`() {
+        assertEquals(SeasonLine.PeakFrom(9), line(listOf(9, 10), listOf(8, 11, 12), 8))
+        assertEquals(SeasonLine.AvailableUntil(12), line(listOf(9, 10), listOf(8, 11, 12), 11))
+    }
+
+    @Test
+    fun `out of season it says when the peak starts`() {
+        assertEquals(SeasonLine.PeakFrom(5), line(listOf(5, 6), listOf(4), 3))
+        assertEquals(SeasonLine.PeakFrom(5), line(listOf(5, 6), listOf(4), 7))
+        assertEquals(SeasonLine.PeakFrom(1), line(listOf(1, 2), emptyList(), 11))
+        assertEquals(SeasonLine.None, line(emptyList(), emptyList(), 3))
+    }
+}

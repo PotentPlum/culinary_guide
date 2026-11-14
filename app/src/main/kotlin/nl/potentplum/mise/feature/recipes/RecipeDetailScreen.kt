@@ -12,6 +12,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.heightIn
+import androidx.compose.foundation.layout.offset
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.lazy.LazyColumn
@@ -58,6 +59,7 @@ import nl.potentplum.mise.core.designsystem.component.EmptyState
 import nl.potentplum.mise.core.designsystem.component.Eyebrow
 import nl.potentplum.mise.core.designsystem.component.FacetChip
 import nl.potentplum.mise.core.designsystem.component.FacetChips
+import nl.potentplum.mise.core.designsystem.component.KeepScreenOn
 import nl.potentplum.mise.core.designsystem.component.LoadingState
 import nl.potentplum.mise.core.designsystem.component.LocalMiseSnackbar
 import nl.potentplum.mise.core.designsystem.component.MenuEntry
@@ -90,6 +92,9 @@ fun RecipeDetailScreen(
     val recipe = state.recipe
     var evaluating by rememberSaveable { mutableStateOf(false) }
     var addingToShopping by rememberSaveable { mutableStateOf(false) }
+    // Kookmodus: the screen stays on while this page is open (spec §6.8). Off by default; kept across Stap voor stap.
+    var cookingMode by rememberSaveable { mutableStateOf(false) }
+    if (cookingMode) KeepScreenOn()
     LaunchedEffect(viewModel) {
         viewModel.events.collect { event ->
             when (event) {
@@ -155,6 +160,8 @@ fun RecipeDetailScreen(
             if (recipe != null) {
                 RecipeActionBar(
                     resumeStep = state.resumeStep,
+                    cookingMode = cookingMode,
+                    onCookingMode = { cookingMode = it },
                     onCook = { onCook(recipe.id, state.servings) },
                     onCooked = { evaluating = true },
                 )
@@ -327,14 +334,15 @@ private fun LazyListScope.ingredients(
 ) {
     if (state.ingredients.isEmpty()) return
     item(key = "ingredients-title") {
-        Row(Modifier.fillMaxWidth().padding(start = 16.dp, end = 8.dp, top = 8.dp), verticalAlignment = Alignment.CenterVertically) {
+        // The action sits under the heading, not beside it: side by side, large text splits "Ingrediënten" mid-word.
+        Column(Modifier.fillMaxWidth().padding(start = 16.dp, end = 16.dp, top = 8.dp)) {
             Text(
                 stringResource(R.string.recipes_section_ingredients),
                 style = MaterialTheme.typography.headlineSmall,
-                modifier = Modifier.weight(1f).semantics { heading() },
+                modifier = Modifier.semantics { heading() },
             )
             if (onAddToShopping != null) {
-                TextButton(onClick = onAddToShopping) {
+                TextButton(onClick = onAddToShopping, modifier = Modifier.offset(x = (-12).dp)) {
                     Icon(Icons.Outlined.AddShoppingCart, contentDescription = null, modifier = Modifier.size(18.dp))
                     Text(stringResource(R.string.recipe_add_to_shopping), modifier = Modifier.padding(start = 6.dp))
                 }

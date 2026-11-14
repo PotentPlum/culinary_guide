@@ -47,10 +47,11 @@ fun timeLimitLabel(limit: TimeLimit?): String =
 /** "Seizoensgroente: pastinaak · Focus: Snijden · Gemiddeld" (spec §6.11). */
 @Composable
 fun questSummaryLine(summary: QuestPlanSummary): String {
+    val names = dutchList(summary.ingredients).takeIf { it.isNotEmpty() }
     val ingredient =
         when (summary.mode) {
-            IngredientMode.SEASONAL -> summary.ingredient?.let { stringResource(R.string.quest_chosen_seasonal, it) }
-            IngredientMode.CUSTOM -> summary.ingredient?.let { stringResource(R.string.quest_chosen_custom, it) }
+            IngredientMode.SEASONAL -> names?.let { stringResource(R.string.quest_chosen_seasonal, it) }
+            IngredientMode.CUSTOM -> names?.let { stringResource(R.string.quest_chosen_custom, it) }
             IngredientMode.SURPRISE -> stringResource(R.string.quest_chosen_surprise)
         }
     val focus =
@@ -58,3 +59,12 @@ fun questSummaryLine(summary: QuestPlanSummary): String {
             ?: summary.focus?.let { stringResource(R.string.quest_chosen_focus, it) }
     return listOfNotNull(ingredient, focus, difficultyLabel(summary.difficulty)).joinToString(" · ")
 }
+
+/** "pompoen", "pompoen en prei", "pompoen, prei en ui". */
+@Composable
+fun dutchList(items: List<String>): String =
+    if (items.size <= 1) {
+        items.firstOrNull().orEmpty()
+    } else {
+        stringResource(R.string.list_and, items.dropLast(1).joinToString(", "), items.last())
+    }

@@ -34,8 +34,10 @@ data class LibraryCard(
     val item: LibraryItem,
     /** Vegetables in the recipe that are at their best or available now. */
     val inSeason: List<VegTokenData>,
-    /** Placeholder colour from the first cuisine tag, when there is no image. */
+    /** Placeholder colour from the first cuisine tag, when there is no image and no vegetable. */
     val placeholderColor: String?,
+    /** The recipe's main vegetable (its first), shown as its picture when there is no photo. */
+    val mainVegetable: VegTokenData? = null,
 )
 
 /** Facet titles as written in `facets.json` (content, Dutch). */
@@ -113,6 +115,7 @@ class LibraryViewModel
         ) = LibraryCard(
             item = item,
             inSeason = item.vegIds.mapNotNull(available::get).map { VegTokenData(it.id, it.nl, hexColor(it.color)) },
+            mainVegetable = item.vegIds.firstNotNullOfOrNull(content::vegetable)?.let { VegTokenData(it.id, it.nl, hexColor(it.color)) },
             placeholderColor =
                 item.cuisines.firstNotNullOfOrNull { cuisine ->
                     content

@@ -2,6 +2,7 @@ package nl.potentplum.mise.feature.curriculum
 
 import androidx.compose.runtime.remember
 import androidx.compose.ui.test.assertCountEquals
+import androidx.compose.ui.test.hasContentDescription
 import androidx.compose.ui.test.junit4.createAndroidComposeRule
 import androidx.compose.ui.test.onAllNodesWithContentDescription
 import androidx.compose.ui.test.onAllNodesWithText
@@ -21,6 +22,7 @@ import nl.potentplum.mise.MiseAppShell
 import nl.potentplum.mise.core.designsystem.MiseTheme
 import nl.potentplum.mise.core.navigation.CheckRoute
 import nl.potentplum.mise.data.db.dao.CurriculumDao
+import nl.potentplum.mise.data.repo.CurriculumProgressRepository
 import nl.potentplum.mise.testing.reveal
 import org.junit.Assert.assertEquals
 import org.junit.Before
@@ -45,6 +47,8 @@ class CurriculumScreensTest {
 
     @Inject lateinit var dao: CurriculumDao
 
+    @Inject lateinit var progress: CurriculumProgressRepository
+
     private lateinit var nav: NavHostController
 
     @Before
@@ -61,6 +65,21 @@ class CurriculumScreensTest {
     /** Eyebrows show uppercase text and expose the sentence-case label as their content description. */
     private fun waitForLabel(label: String) =
         compose.waitUntil(5_000) { compose.onAllNodesWithContentDescription(label).fetchSemanticsNodes().isNotEmpty() }
+
+    @Test
+    fun `Vandaag shows Verder leren only once Opleiding has started, and it opens the next step`() {
+        // Scrolled past where the card would be (between the quest card and Nu op z'n best): not there yet.
+        compose.reveal("Nu op z")
+        compose.onAllNodesWithContentDescription("Verder leren").assertCountEquals(0)
+
+        runBlocking { progress.setLessonDone("ORI-1.M1.L1", done = true) }
+        compose.reveal(hasContentDescription("Verder leren"))
+        compose.reveal("The kitchen journal")
+        compose.reveal("1 van 965 stappen gedaan")
+        compose.onNodeWithText("Openen").performScrollTo().performClick()
+        waitForText("Markeer als gedaan")
+        compose.onNodeWithText("The kitchen journal").assertExists()
+    }
 
     @Test
     fun `opleiding opens from the menu, and the next step is the first lesson`() {

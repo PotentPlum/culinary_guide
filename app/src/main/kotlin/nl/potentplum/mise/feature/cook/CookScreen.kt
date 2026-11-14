@@ -44,6 +44,7 @@ import androidx.compose.material3.LinearProgressIndicator
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.ModalBottomSheet
 import androidx.compose.material3.OutlinedButton
+import androidx.compose.material3.OutlinedIconButton
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
@@ -68,6 +69,7 @@ import androidx.compose.ui.semantics.Role
 import androidx.compose.ui.semantics.contentDescription
 import androidx.compose.ui.semantics.heading
 import androidx.compose.ui.semantics.semantics
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextDecoration
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
@@ -79,10 +81,12 @@ import nl.potentplum.mise.content.model.Technique
 import nl.potentplum.mise.core.designsystem.MiseTheme
 import nl.potentplum.mise.core.designsystem.component.EmptyState
 import nl.potentplum.mise.core.designsystem.component.Eyebrow
+import nl.potentplum.mise.core.designsystem.component.KeepScreenOn
 import nl.potentplum.mise.core.designsystem.component.LoadingState
 import nl.potentplum.mise.core.designsystem.component.LocalMiseSnackbar
 import nl.potentplum.mise.core.designsystem.component.TimerChip
 import nl.potentplum.mise.core.designsystem.component.TimerChipState
+import nl.potentplum.mise.core.designsystem.component.allowTruncation
 import nl.potentplum.mise.core.designsystem.component.avoidedBySnackbar
 import nl.potentplum.mise.core.designsystem.component.durationLabel
 import nl.potentplum.mise.feature.recipes.IngredientGroupLines
@@ -108,11 +112,7 @@ fun CookScreen(
     var technique by rememberSaveable { mutableStateOf<String?>(null) }
     val landscape = LocalConfiguration.current.orientation == Configuration.ORIENTATION_LANDSCAPE
 
-    val view = LocalView.current
-    DisposableEffect(view) {
-        view.keepScreenOn = true
-        onDispose { view.keepScreenOn = false }
-    }
+    KeepScreenOn()
     LaunchedEffect(viewModel) {
         viewModel.events.collect { event ->
             when (event) {
@@ -133,7 +133,8 @@ fun CookScreen(
     Scaffold(
         topBar = {
             TopAppBar(
-                title = { Text(state.title, maxLines = 1, overflow = TextOverflow.Ellipsis) },
+                // No recipe title: on a phone it is cut to a few letters, and the step is what matters here.
+                title = {},
                 navigationIcon = {
                     IconButton(onClick = exit) { Icon(Icons.Outlined.Close, contentDescription = stringResource(R.string.cook_close)) }
                 },
@@ -351,6 +352,7 @@ private fun StepPane(
                             color = MiseTheme.colors.inkSoft,
                             maxLines = 3,
                             overflow = TextOverflow.Ellipsis,
+                            modifier = Modifier.allowTruncation(),
                         )
                     }
                 }
@@ -364,24 +366,24 @@ private fun StepPane(
                 .padding(16.dp),
             horizontalArrangement = Arrangement.spacedBy(12.dp),
         ) {
-            OutlinedButton(
+            // Back is an icon so the forward action, the one you need with busy hands, gets the full width and its whole label.
+            OutlinedIconButton(
                 onClick = { scope.launch { pager.animateScrollToPage(pager.currentPage - 1) } },
                 enabled = pager.currentPage > 0,
-                modifier = Modifier.weight(1f).heightIn(min = 56.dp),
+                modifier = Modifier.size(56.dp),
             ) {
-                Icon(Icons.AutoMirrored.Outlined.ArrowBack, contentDescription = null)
-                Text(stringResource(R.string.cook_previous), Modifier.padding(start = 6.dp), maxLines = 1, overflow = TextOverflow.Ellipsis)
+                Icon(Icons.AutoMirrored.Outlined.ArrowBack, contentDescription = stringResource(R.string.cook_previous))
             }
             if (pager.currentPage == state.steps.lastIndex) {
                 Button(onClick = onFinish, modifier = Modifier.weight(1f).heightIn(min = 56.dp)) {
-                    Text(stringResource(R.string.cook_finish_btn), maxLines = 1, overflow = TextOverflow.Ellipsis)
+                    Text(stringResource(R.string.cook_finish_btn), textAlign = TextAlign.Center)
                 }
             } else {
                 Button(
                     onClick = { scope.launch { pager.animateScrollToPage(pager.currentPage + 1) } },
                     modifier = Modifier.weight(1f).heightIn(min = 56.dp),
                 ) {
-                    Text(stringResource(R.string.cook_next), Modifier.padding(end = 6.dp), maxLines = 1, overflow = TextOverflow.Ellipsis)
+                    Text(stringResource(R.string.cook_next), Modifier.padding(end = 6.dp), textAlign = TextAlign.Center)
                     Icon(Icons.AutoMirrored.Outlined.ArrowForward, contentDescription = null)
                 }
             }

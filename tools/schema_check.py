@@ -127,6 +127,9 @@ def check_backup_references(backup: dict, veg_ids: set[str], where: str) -> list
     for q in backup.get("quests", []):
         if q["recipeId"] not in recipes:
             err(f"{where}.quests.{q['id']}", f"unknown recipeId {q['recipeId']!r}")
+        for vid in [q.get("vegId")] + [m.get("vegId") for m in q.get("moreIngredients", [])]:
+            if vid and vid not in veg_ids:
+                err(f"{where}.quests.{q['id']}", f"unknown vegetable {vid!r}")
     for a in backup.get("attempts", []):
         at = f"{where}.attempts.{a['id']}"
         if a.get("recipeId") and a["recipeId"] not in recipes:
